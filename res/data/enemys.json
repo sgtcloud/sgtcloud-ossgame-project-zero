@@ -1,0 +1,18 @@
+{
+  "10001":{
+    "name":"敌人1",
+    "animate":2.5,
+    "life_base":100,
+    "life_grow":10,
+    "attack_base":10,
+    "attack_grow":1
+  },
+  "10002":{
+    "name":"敌人1",
+    "animate":2.5,
+    "life_base":100,
+    "life_grow":10,
+    "attack_base":10,
+    "attack_grow":1
+  }
+}

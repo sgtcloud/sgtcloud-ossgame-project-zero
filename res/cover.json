@@ -1,0 +1,155 @@
+{
+  "ID": "444184c6-b268-45bc-b6da-9c74bf060999",
+  "Version": "2.3.2.0",
+  "Name": "cover",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 91,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "cover/cover_bg.jpg",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 960,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 92,
+            "ActionTag": -146370099,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "cover_bg",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "cover/cover_login_btn_b.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "cover/cover_login_btn_b.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "cover/cover_login_btn_a.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9Width": 240,
+            "Scale9Height": 81,
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 350.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.3646
+            },
+            "PreSize": {
+              "X": 0.375,
+              "Y": 0.0844
+            },
+            "LeftMargin": 200.0,
+            "RightMargin": 200.0,
+            "TopMargin": 569.5,
+            "BottomMargin": 309.5,
+            "CallBackType": "Click",
+            "CallBackName": "onClickLoginBtn",
+            "Tag": 93,
+            "ActionTag": 2076448327,
+            "Size": {
+              "X": 240.0,
+              "Y": 81.0
+            },
+            "Name": "cover_login_btn",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "cover_layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "cover/cover_bg.jpg",
+        "cover/cover_login_btn_a.png",
+        "cover/cover_login_btn_b.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

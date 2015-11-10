@@ -1,0 +1,15 @@
+{
+  "100001":{
+    "name":"技能1",
+    "desc":"说明1",
+    "icon":"",
+    "price_base":100,
+    "price_grow":100
+  },
+  "100002":{
+    "name":"技能2",
+    "desc":"说明2",
+    "price_base":100,
+    "price_grow":100
+  }
+}

@@ -1,0 +1,36 @@
+{"frames": {
+
+"list_hero_bg.png":
+{
+	"frame": {"x":2,"y":2,"w":584,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":584,"h":114},
+	"sourceSize": {"w":584,"h":114}
+},
+"menu_button_a.png":
+{
+	"frame": {"x":588,"y":2,"w":120,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":48},
+	"sourceSize": {"w":120,"h":48}
+},
+"menu_button_b.png":
+{
+	"frame": {"x":710,"y":2,"w":120,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":48},
+	"sourceSize": {"w":120,"h":48}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "ui_a.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:daf1e360c595a62e4d2302a5d42f032e:1/1$"
+}
+}

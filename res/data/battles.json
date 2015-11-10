@@ -1,0 +1,12 @@
+{
+  "101":{
+    "name":"战斗1",
+    "img":"res/battles/grassland.jpg",
+    "enemys":[
+      {"id":"10001","lv":1,"gold":1},
+      {"id":"10002","lv":10,"gold":2},
+      {"id":"10001","lv":20,"gold":3},
+      {"id":"10002","lv":30,"gold":4}
+    ]
+  }
+}
