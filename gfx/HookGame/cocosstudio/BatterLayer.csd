@@ -36,24 +36,13 @@
             <PreSize X="0.6906" Y="0.0253" />
             <ImageFileData Type="Normal" Path="ui/ui_enemy_b.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Enemy_name" ActionTag="-4990606" Tag="193" IconVisible="False" LeftMargin="103.2482" RightMargin="456.7518" TopMargin="12.3358" BottomMargin="717.6642" FontSize="20" LabelText="怪物名字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="80.0000" Y="20.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="143.2482" Y="727.6642" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2238" Y="0.9702" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="enemy_life_text" ActionTag="1058749964" Tag="194" IconVisible="False" LeftMargin="429.3572" RightMargin="100.6428" TopMargin="11.3363" BottomMargin="718.6637" FontSize="20" LabelText="99999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="enemy_life_text" ActionTag="1058749964" Tag="194" IconVisible="False" LeftMargin="290.1512" RightMargin="239.8488" TopMargin="12.3698" BottomMargin="717.6302" FontSize="20" LabelText="99999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="110.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="484.3572" Y="728.6637" />
+            <Position X="345.1512" Y="727.6302" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7568" Y="0.9716" />
+            <PrePosition X="0.5393" Y="0.9702" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -94,15 +83,80 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill_pane" ActionTag="23875433" Tag="200" IconVisible="True" TopMargin="500.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skillLayer_bg" ActionTag="-106001860" Tag="109" IconVisible="False" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="25" Scale9Height="25" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="250.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="0.3333" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="ui/layerBg.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="70.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="125.2951" Y="230.3575" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1958" Y="0.9214" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="tatk_text" ActionTag="1885514838" Tag="111" IconVisible="False" LeftMargin="557.3304" RightMargin="12.6696" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="70.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="592.3304" Y="230.3575" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.9255" Y="0.9214" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="atk" ActionTag="952086601" Tag="112" IconVisible="False" LeftMargin="9.5628" RightMargin="540.4373" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="英雄DPS：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="90.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="54.5628" Y="231.3578" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.0853" Y="0.9254" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="tatk" ActionTag="487734890" Tag="113" IconVisible="False" LeftMargin="446.3264" RightMargin="73.6736" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="点击攻击力：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="120.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="506.3264" Y="231.3578" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.7911" Y="0.9254" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ProjectNode_8" ActionTag="-1322476348" Tag="247" IconVisible="True" TopMargin="540.0000" BottomMargin="10.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="640.0000" Y="200.0000" />
+            <AnchorPoint />
+            <Position Y="10.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition Y="0.0133" />
+            <PreSize X="1.0000" Y="0.2667" />
             <FileData Type="Normal" Path="SkillLayer.csd" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="enemy_life_text_0" ActionTag="1850622725" Tag="451" IconVisible="False" LeftMargin="238.9696" RightMargin="341.0304" TopMargin="11.7195" BottomMargin="718.2805" FontSize="20" LabelText="剩余：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="268.9696" Y="728.2805" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4203" Y="0.9710" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

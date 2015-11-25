@@ -46,6 +46,7 @@
           <Image Name="ui_enemy_b.png" />
           <Image Name="gold.png" />
           <Image Name="reward_01.png" />
+          <Image Name="skill_icon.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_0.jpg" />
@@ -54,6 +55,7 @@
         <Project Name="EnemyList.csd" Type="Layer" />
         <Project Name="MenuLayer.csd" Type="Layer" />
         <Project Name="BatterLayer.csd" Type="Layer" />
+        <Project Name="Skillicon.csd" Type="Layer" />
         <Project Name="SkillLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>

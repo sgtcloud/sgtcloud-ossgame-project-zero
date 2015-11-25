@@ -1,169 +1,99 @@
 <GameProjectFile>
-  <PropertyGroup Type="Layer" Name="SkillLayer" ID="2382492e-128e-419a-be7d-944c311b829f" Version="2.3.2.3" />
+  <PropertyGroup Type="Layer" Name="SkillLayer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="2.3.2.3" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
-      <ObjectData Name="Layer" Tag="176" ctype="GameLayerObjectData">
-        <Size X="640.0000" Y="250.0000" />
+      <Animation Duration="0" Speed="1.0000">
+        <Timeline ActionTag="-1452498293" Property="Position">
+          <PointFrame FrameIndex="0" X="10.9998" Y="7.9998">
+            <EasingData Type="0" />
+          </PointFrame>
+        </Timeline>
+        <Timeline ActionTag="-1452498293" Property="ActionValue">
+          <InnerActionFrame FrameIndex="0" Tween="False" InnerActionType="SingleFrame" CurrentAniamtionName="-- ALL --" SingleFrameIndex="0" />
+        </Timeline>
+        <Timeline ActionTag="-1452498293" Property="Scale">
+          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+        <Timeline ActionTag="-1452498293" Property="RotationSkew">
+          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+      </Animation>
+      <ObjectData Name="Layer" Tag="204" ctype="GameLayerObjectData">
+        <Size X="640.0000" Y="200.0000" />
         <Children>
-          <AbstractNodeData Name="skillLayer_bg" ActionTag="-1471561611" Tag="177" IconVisible="False" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="25" Scale9Height="25" ctype="ImageViewObjectData">
-            <Size X="640.0000" Y="250.0000" />
+          <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9998" RightMargin="534.0002" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position />
+            <Position X="10.9998" Y="7.9998" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="ui/layerBg.png" Plist="" />
+            <PrePosition X="0.0172" Y="0.0400" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill1_btn" ActionTag="1117069442" Tag="178" IconVisible="False" LeftMargin="28.0347" RightMargin="531.9653" TopMargin="141.2831" BottomMargin="28.7169" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill2" ActionTag="277690000" Tag="211" IconVisible="True" LeftMargin="98.5002" RightMargin="446.4998" TopMargin="10.0033" BottomMargin="94.9967" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="28.0347" Y="28.7169" />
+            <Position X="98.5002" Y="94.9967" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0438" Y="0.1149" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill1.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill1.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill1.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.1539" Y="0.4750" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill2_btn" ActionTag="-446996682" Tag="179" IconVisible="False" LeftMargin="112.0601" RightMargin="447.9399" TopMargin="47.1743" BottomMargin="122.8257" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill3" ActionTag="1685468251" Tag="217" IconVisible="True" LeftMargin="185.3332" RightMargin="359.6668" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="112.0601" Y="122.8257" />
+            <Position X="185.3332" Y="7.9998" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1751" Y="0.4913" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill2.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill2.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill2.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.2896" Y="0.0400" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill3_btn" ActionTag="784774615" Tag="180" IconVisible="False" LeftMargin="196.6507" RightMargin="363.3493" TopMargin="141.2831" BottomMargin="28.7169" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill4" ActionTag="1903387533" Tag="223" IconVisible="True" LeftMargin="272.5012" RightMargin="272.4988" TopMargin="10.0036" BottomMargin="94.9964" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="196.6507" Y="28.7169" />
+            <Position X="272.5012" Y="94.9964" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3073" Y="0.1149" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill3.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill3.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill3.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.4258" Y="0.4750" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill4_btn" ActionTag="660635139" Tag="181" IconVisible="False" LeftMargin="281.0710" RightMargin="278.9290" TopMargin="47.1743" BottomMargin="122.8257" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill5" ActionTag="420806031" Tag="229" IconVisible="True" LeftMargin="359.6666" RightMargin="185.3334" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="281.0710" Y="122.8257" />
+            <Position X="359.6666" Y="7.9998" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4392" Y="0.4913" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill4.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill4.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill4.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.5620" Y="0.0400" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill5_btn" ActionTag="-1699195115" Tag="182" IconVisible="False" LeftMargin="365.2666" RightMargin="194.7334" TopMargin="141.2831" BottomMargin="28.7169" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill6" ActionTag="1873054001" Tag="235" IconVisible="True" LeftMargin="446.4988" RightMargin="98.5012" TopMargin="10.0031" BottomMargin="94.9969" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="365.2666" Y="28.7169" />
+            <Position X="446.4988" Y="94.9969" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5707" Y="0.1149" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill5.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill5.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill5.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.6977" Y="0.4750" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill6_btn" ActionTag="-1142655041" Tag="183" IconVisible="False" LeftMargin="448.0834" RightMargin="111.9166" TopMargin="47.1743" BottomMargin="122.8257" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
+          <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="534.0000" RightMargin="11.0000" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
-            <Position X="448.0834" Y="122.8257" />
+            <Position X="534.0000" Y="7.9998" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7001" Y="0.4913" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill6.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill6.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill6.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="skill7_btn" ActionTag="-430592041" Tag="184" IconVisible="False" LeftMargin="533.8822" RightMargin="26.1178" TopMargin="141.2831" BottomMargin="28.7169" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="80.0000" Y="80.0000" />
-            <AnchorPoint />
-            <Position X="533.8822" Y="28.7169" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8342" Y="0.1149" />
-            <PreSize X="0.1250" Y="0.3902" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="ui/skill7.png" Plist="" />
-            <PressedFileData Type="Normal" Path="ui/skill7.png" Plist="" />
-            <NormalFileData Type="Normal" Path="ui/skill7.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="atk_text" ActionTag="-780797052" Tag="186" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="70.0000" Y="20.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="125.2951" Y="230.3575" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1958" Y="0.9214" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="tatk_text" ActionTag="-2019785440" Tag="188" IconVisible="False" LeftMargin="557.3304" RightMargin="12.6696" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="70.0000" Y="20.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="592.3304" Y="230.3575" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.9255" Y="0.9214" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="atk" ActionTag="237248923" Tag="81" IconVisible="False" LeftMargin="9.5628" RightMargin="540.4373" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="英雄DPS：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="90.0000" Y="20.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="54.5628" Y="231.3578" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.0853" Y="0.9254" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="tatk" ActionTag="2104720009" Tag="82" IconVisible="False" LeftMargin="446.3264" RightMargin="73.6736" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="点击攻击力：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="120.0000" Y="20.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="506.3264" Y="231.3578" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.7911" Y="0.9254" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <PrePosition X="0.8344" Y="0.0400" />
+            <PreSize X="0.1484" Y="0.4750" />
+            <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
