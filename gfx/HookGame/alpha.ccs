@@ -1,0 +1,61 @@
+<Solution>
+  <PropertyGroup Name="alpha" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="ui">
+          <Image Name="slice130_@.png" />
+          <Image Name="slice178_@.png" />
+          <Image Name="slice179_@.png" />
+          <Image Name="slice223_@.png" />
+          <Image Name="slice227_@.png" />
+          <Image Name="slice230_@.png" />
+          <Image Name="slice232_@.png" />
+          <Image Name="slice289_@.png" />
+          <Image Name="slice296_@.png" />
+          <Image Name="slice328_@.png" />
+          <Image Name="slice347_@.png" />
+          <Image Name="slice350_@.png" />
+          <Image Name="layerBg.png" />
+          <Image Name="slice44_44.png" />
+          <Image Name="slice108_@.png" />
+          <Image Name="enemyicon.png" />
+          <Image Name="bg_01.png" />
+          <Image Name="btn_1.png" />
+          <Image Name="btn_2.png" />
+          <Image Name="btn_main.png" />
+          <Image Name="btn_hero.png" />
+          <Image Name="btn_equip.png" />
+          <Image Name="btn_pvp.png" />
+          <Image Name="btn_rank.png" />
+          <Image Name="btn_shop.png" />
+          <Image Name="skill1.png" />
+          <Image Name="skill2.png" />
+          <Image Name="skill3.png" />
+          <Image Name="skill4.png" />
+          <Image Name="skill5.png" />
+          <Image Name="skill6.png" />
+          <Image Name="skill7.png" />
+          <Image Name="slice08_08.png" />
+          <Image Name="slice07_07.png" />
+          <Image Name="enemy_life_a.png" />
+          <Image Name="enemy_life_b.png" />
+          <Image Name="ui_enemy_a_03.png" />
+          <Image Name="ui_enemy_b_03.png" />
+          <Image Name="ui_enemy_a.png" />
+          <Image Name="ui_enemy_b.png" />
+          <Image Name="gold.png" />
+          <Image Name="reward_01.png" />
+        </Folder>
+        <Folder Name="images">
+          <Image Name="battle_0.jpg" />
+        </Folder>
+        <Project Name="TitleLayer.csd" Type="Layer" />
+        <Project Name="EnemyList.csd" Type="Layer" />
+        <Project Name="MenuLayer.csd" Type="Layer" />
+        <Project Name="BatterLayer.csd" Type="Layer" />
+        <Project Name="SkillLayer.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
