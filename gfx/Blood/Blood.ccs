@@ -1,0 +1,14 @@
+<Solution>
+  <PropertyGroup Name="Blood" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="blood.csd" Type="Layer" />
+        <Folder Name="image">
+          <Image Name="blood_bar.png" />
+          <Image Name="blood_bg.png" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

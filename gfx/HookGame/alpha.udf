@@ -27,7 +27,11 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
-        <ActiveDocument />
+        <OpenedDocuments>
+          <FilePathData Path="Skillicon.csd" />
+          <FilePathData Path="BatterLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="BatterLayer.csd" />
       </Value>
     </Item>
   </Properties>
