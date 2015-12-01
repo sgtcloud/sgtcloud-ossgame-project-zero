@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="101" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="110.0000" />
         <Children>
-          <AbstractNodeData Name="title_bg" ActionTag="587429213" Tag="103" IconVisible="False" TopMargin="0.0002" BottomMargin="-0.0002" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="25" Scale9Height="25" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="title_bg" ActionTag="587429213" Tag="103" IconVisible="False" TopMargin="0.0002" BottomMargin="-0.0002" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="34" Scale9Height="34" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="110.0000" />
             <AnchorPoint ScaleY="1.0000" />
             <Position Y="109.9998" />
@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="1.0000" />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="ui/layerBg.png" Plist="" />
+            <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Panel_2" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="15.0001" BottomMargin="34.9999" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="135.0000" Y="60.0000" />
@@ -74,13 +74,13 @@
                 <PreSize X="0.4800" Y="0.2000" />
                 <FileData Type="Normal" Path="ui/slice44_44.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_text" ActionTag="-591758277" Tag="115" IconVisible="False" LeftMargin="41.0290" RightMargin="33.9710" TopMargin="6.4033" BottomMargin="35.5967" IsCustomSize="True" FontSize="18" LabelText="999999" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="gold_text" ActionTag="-591758277" Tag="115" IconVisible="False" LeftMargin="41.0291" RightMargin="33.9709" TopMargin="7.4033" BottomMargin="34.5967" IsCustomSize="True" FontSize="18" LabelText="999999" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="71.0290" Y="44.5967" />
+                <Position X="71.0291" Y="43.5967" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5261" Y="0.7433" />
+                <PrePosition X="0.5261" Y="0.7266" />
                 <PreSize X="0.3000" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />

@@ -15,7 +15,6 @@
           <Image Name="slice296_@.png" />
           <Image Name="slice328_@.png" />
           <Image Name="slice347_@.png" />
-          <Image Name="slice350_@.png" />
           <Image Name="layerBg.png" />
           <Image Name="slice44_44.png" />
           <Image Name="slice108_@.png" />
@@ -29,24 +28,20 @@
           <Image Name="btn_pvp.png" />
           <Image Name="btn_rank.png" />
           <Image Name="btn_shop.png" />
-          <Image Name="skill1.png" />
-          <Image Name="skill2.png" />
-          <Image Name="skill3.png" />
-          <Image Name="skill4.png" />
-          <Image Name="skill5.png" />
-          <Image Name="skill6.png" />
-          <Image Name="skill7.png" />
-          <Image Name="slice08_08.png" />
-          <Image Name="slice07_07.png" />
-          <Image Name="enemy_life_a.png" />
-          <Image Name="enemy_life_b.png" />
-          <Image Name="ui_enemy_a_03.png" />
-          <Image Name="ui_enemy_b_03.png" />
           <Image Name="ui_enemy_a.png" />
           <Image Name="ui_enemy_b.png" />
           <Image Name="gold.png" />
           <Image Name="reward_01.png" />
           <Image Name="skill_icon.png" />
+          <Image Name="bg_03.png" />
+          <Image Name="equip.png" />
+          <Image Name="hero.png" />
+          <Image Name="main.png" />
+          <Image Name="menu_btn1.png" />
+          <Image Name="menu_btn2.png" />
+          <Image Name="pvp.png" />
+          <Image Name="rank.png" />
+          <Image Name="shop.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_0.jpg" />
@@ -57,6 +52,7 @@
         <Project Name="BatterLayer.csd" Type="Layer" />
         <Project Name="Skillicon.csd" Type="Layer" />
         <Project Name="SkillLayer.csd" Type="Layer" />
+        <Project Name="MenuBtn.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

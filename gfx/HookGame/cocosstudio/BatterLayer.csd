@@ -83,15 +83,15 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skillLayer_bg" ActionTag="-106001860" Tag="109" IconVisible="False" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="25" Scale9Height="25" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="skillLayer_bg" ActionTag="-106001860" Tag="109" IconVisible="False" TopMargin="500.0000" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="34" Scale9Height="34" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="250.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="ui/layerBg.png" Plist="" />
+            <PreSize X="1.0000" Y="0.3333" />
+            <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="70.0000" Y="20.0000" />

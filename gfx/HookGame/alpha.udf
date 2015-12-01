@@ -30,8 +30,13 @@
         <OpenedDocuments>
           <FilePathData Path="Skillicon.csd" />
           <FilePathData Path="BatterLayer.csd" />
+          <FilePathData Path="EnemyList.csd" />
+          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="TitleLayer.csd" />
+          <FilePathData Path="MenuBtn.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="BatterLayer.csd" />
+        <ActiveDocument Path="MenuLayer.csd" />
       </Value>
     </Item>
   </Properties>

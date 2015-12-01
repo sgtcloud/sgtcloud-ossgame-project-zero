@@ -64,6 +64,34 @@
             <Image Name="hero102_stand05.png" />
             <Image Name="hero102_die03.png" />
           </Folder>
+          <Folder Name="hero103">
+            <Image Name="hero103_atk01.png" />
+            <Image Name="hero103_atk02.png" />
+            <Image Name="hero103_atk03.png" />
+            <Image Name="hero103_atk04.png" />
+            <Image Name="hero103_atk05.png" />
+            <Image Name="hero103_atk06.png" />
+            <Image Name="hero103_atk07.png" />
+            <Image Name="hero103_atk08.png" />
+            <Image Name="hero103_atk09.png" />
+            <Image Name="hero103_die01.png" />
+            <Image Name="hero103_die02.png" />
+            <Image Name="hero103_die03.png" />
+            <Image Name="hero103_die04.png" />
+            <Image Name="hero103_die05.png" />
+            <Image Name="hero103_hit01.png" />
+            <Image Name="hero103_hit02.png" />
+            <Image Name="hero103_hit03.png" />
+            <Image Name="hero103_hit04.png" />
+            <Image Name="hero103_hit05.png" />
+            <Image Name="hero103_hit06.png" />
+            <Image Name="hero103_hit07.png" />
+            <Image Name="hero103_stand01.png" />
+            <Image Name="hero103_stand02.png" />
+            <Image Name="hero103_stand03.png" />
+            <Image Name="hero103_stand04.png" />
+            <Image Name="hero103_stand05.png" />
+          </Folder>
         </Folder>
         <Project Name="hero102.csd" Type="Node" />
         <Project Name="enemy1001.csd" Type="Node" />
@@ -100,6 +128,7 @@
             <Image Name="enemy1001_stand05.png" />
           </Folder>
         </Folder>
+        <Project Name="hero103.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
