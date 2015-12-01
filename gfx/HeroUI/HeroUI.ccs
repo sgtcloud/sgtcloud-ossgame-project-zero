@@ -1,0 +1,29 @@
+<Solution>
+  <PropertyGroup Name="heroUI" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="HeroLayer.csd" Type="Layer" />
+        <Folder Name="heroUI">
+          <Image Name="bg.png" />
+          <Image Name="skill_icon.png" />
+          <Image Name="hero_bg.png" />
+          <Image Name="skill_bg.png" />
+          <Image Name="star1.png" />
+          <Image Name="star2.png" />
+          <Image Name="hero_icon.png" />
+          <Image Name="text_bg.png" />
+          <Image Name="btn1.png" />
+          <Image Name="btn2.png" />
+          <Image Name="gold.png" />
+          <Image Name="lock.png" />
+          <Image Name="diamond.png" />
+        </Folder>
+        <Project Name="Star.csd" Type="Layer" />
+        <Project Name="HeroView.csd" Type="Layer" />
+        <Project Name="Btn.csd" Type="Layer" />
+        <Project Name="SkillView.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
