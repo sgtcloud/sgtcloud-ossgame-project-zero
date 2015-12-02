@@ -42,13 +42,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="buff_text" ActionTag="676575225" Tag="285" IconVisible="False" LeftMargin="51.6943" RightMargin="39.3057" TopMargin="32.1572" BottomMargin="33.8428" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="buff_text" ActionTag="676575225" Tag="285" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="49.0000" Y="14.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="76.1943" Y="40.8428" />
+            <Position X="75.7139" Y="41.3231" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5442" Y="0.5105" />
+            <PrePosition X="0.5408" Y="0.5165" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

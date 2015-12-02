@@ -1,0 +1,25 @@
+<Solution>
+  <PropertyGroup Name="EquipUI" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="Equiplayer.csd" Type="Layer" />
+        <Folder Name="equipUI">
+          <Image Name="bg.png" />
+          <Image Name="btn1.png" />
+          <Image Name="btn2.png" />
+          <Image Name="diamond.png" />
+          <Image Name="gold.png" />
+          <Image Name="relic.png" />
+          <Image Name="equiptitle_bg.png" />
+          <Image Name="equip_bg.png" />
+          <Image Name="title.png" />
+          <Image Name="equip_icon.png" />
+        </Folder>
+        <Project Name="EquipView.csd" Type="Layer" />
+        <Project Name="EquipTitle.csd" Type="Layer" />
+        <Project Name="Btn.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
