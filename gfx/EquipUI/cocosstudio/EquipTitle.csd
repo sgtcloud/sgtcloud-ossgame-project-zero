@@ -26,13 +26,13 @@
             <PreSize X="0.2885" Y="0.9091" />
             <FileData Type="Normal" Path="equipUI/title.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="title_text" ActionTag="-1757913402" Tag="13" IconVisible="False" LeftMargin="215.0000" RightMargin="321.0000" TopMargin="9.0000" BottomMargin="79.0000" FontSize="22" LabelText="神器购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="title_text" ActionTag="-1757913402" Tag="13" IconVisible="False" LeftMargin="268.0000" RightMargin="268.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="神器购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="88.0000" Y="22.0000" />
             <AnchorPoint />
-            <Position X="215.0000" Y="79.0000" />
+            <Position X="268.0000" Y="75.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="165" B="0" />
-            <PrePosition X="0.3446" Y="0.7182" />
+            <PrePosition X="0.4295" Y="0.6818" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

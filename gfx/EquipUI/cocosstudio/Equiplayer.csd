@@ -16,14 +16,14 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="equipUI/bg.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="equip_list" Visible="False" ActionTag="825082945" Tag="204" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-            <Size X="640.0000" Y="500.0000" />
+          <AbstractNodeData Name="equip_list" ActionTag="825082945" Tag="204" IconVisible="False" TopMargin="120.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+            <Size X="640.0000" Y="380.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
+            <PreSize X="1.0000" Y="0.7600" />
             <SingleColor A="255" R="150" G="150" B="255" />
             <FirstColor A="255" R="150" G="150" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />

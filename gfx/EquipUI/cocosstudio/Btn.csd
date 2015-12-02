@@ -6,13 +6,13 @@
       <ObjectData Name="Layer" Tag="209" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-1285121696" Tag="210" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btn" ActionTag="-1285121696" Tag="210" IconVisible="False" LeftMargin="0.0001" RightMargin="-0.0001" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="140.0000" Y="80.0000" />
             <AnchorPoint />
-            <Position />
+            <Position X="0.0001" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
+            <PrePosition X="0.0000" />
             <PreSize X="1.0000" Y="1.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Normal" Path="equipUI/btn2.png" Plist="" />
@@ -42,24 +42,35 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="buy_text" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.6031" RightMargin="47.3969" TopMargin="41.2943" BottomMargin="22.7057" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="buy_text" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="32.0000" Y="16.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="76.6031" Y="30.7057" />
+            <AnchorPoint />
+            <Position X="60.0000" Y="22.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5472" Y="0.3838" />
+            <PrePosition X="0.4286" Y="0.2750" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="up_text" Visible="False" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.6031" RightMargin="47.3969" TopMargin="41.2943" BottomMargin="22.7057" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="up_text" Visible="False" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="32.0000" Y="16.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="76.6031" Y="30.7057" />
+            <AnchorPoint />
+            <Position X="60.0000" Y="22.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5472" Y="0.3838" />
+            <PrePosition X="0.4286" Y="0.2750" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="up_text_0" Visible="False" ActionTag="1839782717" Tag="53" IconVisible="False" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="20.0000" />
+            <AnchorPoint />
+            <Position X="40.0000" Y="30.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="0" />
+            <PrePosition X="0.2857" Y="0.3750" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
