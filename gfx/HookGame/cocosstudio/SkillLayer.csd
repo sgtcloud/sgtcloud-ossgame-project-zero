@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="SkillLayer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="SkillLayer" Type="Layer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000">
@@ -25,7 +25,7 @@
       <ObjectData Name="Layer" Tag="204" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="200.0000" />
         <Children>
-          <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9998" RightMargin="534.0002" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9998" RightMargin="534.0002" TopMargin="97.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="10.9998" Y="7.9998" />
@@ -35,7 +35,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill2" ActionTag="277690000" Tag="211" IconVisible="True" LeftMargin="98.5002" RightMargin="446.4998" TopMargin="10.0033" BottomMargin="94.9967" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill2" ActionTag="277690000" Tag="211" IconVisible="True" LeftMargin="98.5002" RightMargin="446.4998" TopMargin="10.0033" BottomMargin="94.9967" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="98.5002" Y="94.9967" />
@@ -45,7 +45,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill3" ActionTag="1685468251" Tag="217" IconVisible="True" LeftMargin="185.3332" RightMargin="359.6668" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill3" ActionTag="1685468251" Tag="217" IconVisible="True" LeftMargin="185.3332" RightMargin="359.6668" TopMargin="97.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="185.3332" Y="7.9998" />
@@ -55,7 +55,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill4" ActionTag="1903387533" Tag="223" IconVisible="True" LeftMargin="272.5012" RightMargin="272.4988" TopMargin="10.0036" BottomMargin="94.9964" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill4" ActionTag="1903387533" Tag="223" IconVisible="True" LeftMargin="272.5012" RightMargin="272.4988" TopMargin="10.0036" BottomMargin="94.9964" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="272.5012" Y="94.9964" />
@@ -65,7 +65,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill5" ActionTag="420806031" Tag="229" IconVisible="True" LeftMargin="359.6666" RightMargin="185.3334" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill5" ActionTag="420806031" Tag="229" IconVisible="True" LeftMargin="359.6666" RightMargin="185.3334" TopMargin="97.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="359.6666" Y="7.9998" />
@@ -75,7 +75,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill6" ActionTag="1873054001" Tag="235" IconVisible="True" LeftMargin="446.4988" RightMargin="98.5012" TopMargin="10.0031" BottomMargin="94.9969" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill6" ActionTag="1873054001" Tag="235" IconVisible="True" LeftMargin="446.4988" RightMargin="98.5012" TopMargin="10.0031" BottomMargin="94.9969" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="446.4988" Y="94.9969" />
@@ -85,7 +85,7 @@
             <PreSize X="0.1484" Y="0.4750" />
             <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="534.0000" RightMargin="11.0000" TopMargin="97.0002" BottomMargin="7.9998" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="534.0000" RightMargin="11.0000" TopMargin="97.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="95.0000" Y="95.0000" />
             <AnchorPoint />
             <Position X="534.0000" Y="7.9998" />
@@ -99,4 +99,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

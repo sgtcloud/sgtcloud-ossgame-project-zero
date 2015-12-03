@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="MenuBtn" ID="002fac0e-4e7a-4f3d-9629-1ab36976376e" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="MenuBtn" Type="Layer" ID="002fac0e-4e7a-4f3d-9629-1ab36976376e" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -85,4 +85,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

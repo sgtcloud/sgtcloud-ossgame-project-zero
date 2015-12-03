@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="TitleLayer" ID="6b818d14-1b46-40b2-a10e-878a08729a4d" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="TitleLayer" Type="Layer" ID="6b818d14-1b46-40b2-a10e-878a08729a4d" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -108,7 +108,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="enemyList" ActionTag="1026106168" Tag="128" IconVisible="True" LeftMargin="170.0000" RightMargin="170.0000" TopMargin="-0.0001" BottomMargin="0.0001" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="enemyList" ActionTag="1026106168" Tag="128" IconVisible="True" LeftMargin="170.0000" RightMargin="170.0000" TopMargin="-0.0001" BottomMargin="0.0001" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="300.0000" Y="110.0000" />
             <AnchorPoint />
             <Position X="170.0000" Y="0.0001" />
@@ -163,4 +163,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Node" Name="enemy1001" ID="8a44bfe0-4d43-4e78-844c-c385c62cec55" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="enemy1001" Type="Node" ID="8a44bfe0-4d43-4e78-844c-c385c62cec55" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="72" Speed="0.5000">
@@ -144,4 +144,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

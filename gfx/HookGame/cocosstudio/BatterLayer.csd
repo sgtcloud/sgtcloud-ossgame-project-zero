@@ -1,12 +1,12 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="BatterLayer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="BatterLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="174" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="400" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="500.0000" />
             <AnchorPoint />
             <Position Y="250.0000" />
@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="0.3333" />
             <PreSize X="1.0000" Y="0.6667" />
-            <FileData Type="Normal" Path="images/battle_0.jpg" Plist="" />
+            <FileData Type="Normal" Path="images/battle_1.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="enemy_life_bg" ActionTag="1621641045" Tag="191" IconVisible="False" LeftMargin="96.4785" RightMargin="95.5215" TopMargin="9.8854" BottomMargin="716.1146" Scale9Enable="True" LeftEage="29" RightEage="29" TopEage="5" BottomEage="5" Scale9OriginX="29" Scale9OriginY="5" Scale9Width="392" Scale9Height="15" ctype="ImageViewObjectData">
             <Size X="448.0000" Y="24.0000" />
@@ -43,7 +43,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5393" Y="0.9702" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1719" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -64,7 +64,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5301" Y="0.3667" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1891" Y="0.0293" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -93,51 +93,51 @@
             <PreSize X="1.0000" Y="0.3333" />
             <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="509.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="70.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="125.2951" Y="230.3575" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1958" Y="0.9214" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.1958" Y="0.3071" />
+            <PreSize X="0.1094" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="tatk_text" ActionTag="1885514838" Tag="111" IconVisible="False" LeftMargin="557.3304" RightMargin="12.6696" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="tatk_text" ActionTag="1885514838" Tag="111" IconVisible="False" LeftMargin="557.3304" RightMargin="12.6696" TopMargin="509.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="70.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="592.3304" Y="230.3575" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.9255" Y="0.9214" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.9255" Y="0.3071" />
+            <PreSize X="0.1094" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="atk" ActionTag="952086601" Tag="112" IconVisible="False" LeftMargin="9.5628" RightMargin="540.4373" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="英雄DPS：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="atk" ActionTag="952086601" Tag="112" IconVisible="False" LeftMargin="9.5628" RightMargin="540.4372" TopMargin="508.6422" BottomMargin="221.3578" FontSize="20" LabelText="英雄DPS：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="90.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="54.5628" Y="231.3578" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.0853" Y="0.9254" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.0853" Y="0.3085" />
+            <PreSize X="0.1406" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="tatk" ActionTag="487734890" Tag="113" IconVisible="False" LeftMargin="446.3264" RightMargin="73.6736" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="点击攻击力：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="tatk" ActionTag="487734890" Tag="113" IconVisible="False" LeftMargin="446.3264" RightMargin="73.6736" TopMargin="508.6422" BottomMargin="221.3578" FontSize="20" LabelText="点击攻击力：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="120.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="506.3264" Y="231.3578" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.7911" Y="0.9254" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.7911" Y="0.3085" />
+            <PreSize X="0.1875" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ProjectNode_8" ActionTag="-1322476348" Tag="247" IconVisible="True" TopMargin="540.0000" BottomMargin="10.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="ProjectNode_8" ActionTag="-1322476348" Tag="247" IconVisible="True" TopMargin="540.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="640.0000" Y="200.0000" />
             <AnchorPoint />
             <Position Y="10.0000" />
@@ -154,7 +154,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4203" Y="0.9710" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.0938" Y="0.0267" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -162,4 +162,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

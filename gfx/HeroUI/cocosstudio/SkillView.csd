@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="SkillView" ID="9053fd25-36c4-47db-a2f5-865d598d8b07" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="SkillView" Type="Layer" ID="9053fd25-36c4-47db-a2f5-865d598d8b07" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -48,7 +48,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="skill_btn" ActionTag="-349353495" Tag="308" IconVisible="True" LeftMargin="450.0000" RightMargin="10.0000" TopMargin="10.0000" BottomMargin="10.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="skill_btn" ActionTag="-349353495" Tag="308" IconVisible="True" LeftMargin="450.0000" RightMargin="10.0000" TopMargin="10.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="140.0000" Y="80.0000" />
             <AnchorPoint />
             <Position X="450.0000" Y="10.0000" />
@@ -73,4 +73,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

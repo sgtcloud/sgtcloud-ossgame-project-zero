@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="HeroView" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="HeroView" Type="Layer" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -33,7 +33,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1923" Y="0.7500" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.2115" Y="0.2200" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -44,11 +44,11 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1923" Y="0.5000" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1731" Y="0.1800" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="star1_icon" ActionTag="-1502342743" Tag="221" IconVisible="True" LeftMargin="118.9440" RightMargin="473.0560" TopMargin="53.8259" BottomMargin="16.1741" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="star1_icon" ActionTag="-1502342743" Tag="221" IconVisible="True" LeftMargin="118.9440" RightMargin="473.0560" TopMargin="53.8259" BottomMargin="16.1741" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="32.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="118.9440" Y="16.1741" />
@@ -58,7 +58,7 @@
             <PreSize X="0.0513" Y="0.3000" />
             <FileData Type="Normal" Path="Star.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="star2_icon" ActionTag="1496343919" Tag="225" IconVisible="True" LeftMargin="155.6814" RightMargin="436.3186" TopMargin="53.8259" BottomMargin="16.1741" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="star2_icon" ActionTag="1496343919" Tag="225" IconVisible="True" LeftMargin="155.6814" RightMargin="436.3186" TopMargin="53.8259" BottomMargin="16.1741" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="32.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="155.6814" Y="16.1741" />
@@ -68,7 +68,7 @@
             <PreSize X="0.0513" Y="0.3000" />
             <FileData Type="Normal" Path="Star.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="star3_icon" ActionTag="-127587470" Tag="229" IconVisible="True" LeftMargin="192.4190" RightMargin="399.5810" TopMargin="53.8259" BottomMargin="16.1741" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="star3_icon" ActionTag="-127587470" Tag="229" IconVisible="True" LeftMargin="192.4190" RightMargin="399.5810" TopMargin="53.8259" BottomMargin="16.1741" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="32.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="192.4190" Y="16.1741" />
@@ -78,7 +78,7 @@
             <PreSize X="0.0513" Y="0.3000" />
             <FileData Type="Normal" Path="Star.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="star4_icon" ActionTag="1743724822" Tag="233" IconVisible="True" LeftMargin="229.1562" RightMargin="362.8438" TopMargin="53.8259" BottomMargin="16.1741" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="star4_icon" ActionTag="1743724822" Tag="233" IconVisible="True" LeftMargin="229.1562" RightMargin="362.8438" TopMargin="53.8259" BottomMargin="16.1741" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="32.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="229.1562" Y="16.1741" />
@@ -88,7 +88,7 @@
             <PreSize X="0.0513" Y="0.3000" />
             <FileData Type="Normal" Path="Star.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="star5_icon" ActionTag="-1263934897" Tag="237" IconVisible="True" LeftMargin="265.8937" RightMargin="326.1063" TopMargin="53.8259" BottomMargin="16.1741" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="star5_icon" ActionTag="-1263934897" Tag="237" IconVisible="True" LeftMargin="265.8937" RightMargin="326.1063" TopMargin="53.8259" BottomMargin="16.1741" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="32.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="265.8937" Y="16.1741" />
@@ -98,7 +98,7 @@
             <PreSize X="0.0513" Y="0.3000" />
             <FileData Type="Normal" Path="Star.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_13" ActionTag="1373086883" Tag="256" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="26.9943" BottomMargin="13.0057" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="dps_bg" ActionTag="1373086883" Tag="256" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="26.9943" BottomMargin="13.0057" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
             <Size X="120.0000" Y="60.0000" />
             <AnchorPoint />
             <Position X="323.5455" Y="13.0057" />
@@ -115,7 +115,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5609" Y="0.7500" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1122" Y="0.2000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -126,11 +126,11 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5610" Y="0.3465" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1122" Y="0.2000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hero_btn" ActionTag="-1744808169" Tag="280" IconVisible="True" LeftMargin="469.9973" RightMargin="14.0027" TopMargin="5.0000" BottomMargin="15.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="hero_btn" ActionTag="-1744808169" Tag="280" IconVisible="True" LeftMargin="469.9973" RightMargin="14.0027" TopMargin="5.0000" BottomMargin="15.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="140.0000" Y="80.0000" />
             <AnchorPoint />
             <Position X="469.9973" Y="15.0000" />
@@ -140,25 +140,25 @@
             <PreSize X="0.2244" Y="0.8000" />
             <FileData Type="Normal" Path="Btn.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_15" ActionTag="272926486" Tag="381" IconVisible="False" LeftMargin="23.9524" RightMargin="528.0476" TopMargin="28.7929" BottomMargin="53.2071" FontSize="18" LabelText="复活时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="die_text" ActionTag="272926486" Tag="381" IconVisible="False" LeftMargin="23.9524" RightMargin="528.0476" TopMargin="28.7929" BottomMargin="53.2071" FontSize="18" LabelText="复活时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="72.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="59.9524" Y="62.2071" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="0" B="0" />
             <PrePosition X="0.0961" Y="0.6221" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.1154" Y="0.1800" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_15_0" ActionTag="1970479199" Tag="382" IconVisible="False" LeftMargin="40.6893" RightMargin="538.3107" TopMargin="48.7595" BottomMargin="33.2405" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="die_time_text" ActionTag="1970479199" Tag="382" IconVisible="False" LeftMargin="40.6893" RightMargin="538.3107" TopMargin="48.7595" BottomMargin="33.2405" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="45.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="63.1893" Y="42.2405" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="0" B="0" />
             <PrePosition X="0.1013" Y="0.4224" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.0721" Y="0.1800" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -166,4 +166,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

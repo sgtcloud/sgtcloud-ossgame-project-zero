@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="HeroUI" Version="2.3.2.3" Type="CocosStudio" />
+  <PropertyGroup Name="HeroUI" Version="2.3.3.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -23,6 +23,12 @@
         <Project Name="HeroView.csd" Type="Layer" />
         <Project Name="Btn.csd" Type="Layer" />
         <Project Name="SkillView.csd" Type="Layer" />
+        <Project Name="HeroDesc.csd" Type="Layer" />
+        <Folder Name="heroDescUI">
+          <Image Name="text_bg.png" />
+          <Image Name="close_icon.png" />
+          <Image Name="text_bg2.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

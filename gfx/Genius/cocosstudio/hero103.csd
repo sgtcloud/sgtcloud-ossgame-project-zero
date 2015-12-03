@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Node" Name="hero103" ID="db58cd5b-1632-4922-8b54-fbe4f8ef473c" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="hero103" Type="Node" ID="db58cd5b-1632-4922-8b54-fbe4f8ef473c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="69" Speed="0.5000">
@@ -93,7 +93,7 @@
       <ObjectData Name="Node" Tag="11" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="stand" ActionTag="-2104120387" Tag="13" IconVisible="False" LeftMargin="-130.3978" RightMargin="-43.6022" TopMargin="-135.3426" BottomMargin="-20.6574" ctype="SpriteObjectData">
+          <AbstractNodeData Name="stand" ActionTag="-2104120387" Tag="13" IconVisible="False" LeftMargin="-130.3956" RightMargin="-43.6044" TopMargin="-135.3456" BottomMargin="-20.6544" ctype="SpriteObjectData">
             <Size X="174.0000" Y="156.0000" />
             <AnchorPoint ScaleX="0.7494" ScaleY="0.1324" />
             <Position />
@@ -104,18 +104,18 @@
             <FileData Type="Normal" Path="hero/hero103/hero103_stand05.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hit" ActionTag="-2060256829" Tag="14" IconVisible="False" LeftMargin="-129.9857" RightMargin="-44.0143" TopMargin="-135.1411" BottomMargin="-20.8589" ctype="SpriteObjectData">
-            <Size X="166.0000" Y="158.0000" />
+          <AbstractNodeData Name="hit" ActionTag="-2060256829" Tag="14" IconVisible="False" LeftMargin="-124.0020" RightMargin="-41.9980" TopMargin="-136.8642" BottomMargin="-21.1358" ctype="SpriteObjectData">
+            <Size X="174.0000" Y="156.0000" />
             <AnchorPoint ScaleX="0.7470" ScaleY="0.1401" />
             <Position Y="1.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero103/hero103_hit03.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero103/hero103_hit01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="die" ActionTag="-336376586" Tag="15" IconVisible="False" LeftMargin="-130.7684" RightMargin="-43.2316" TopMargin="-135.9413" BottomMargin="-20.0587" ctype="SpriteObjectData">
+          <AbstractNodeData Name="die" ActionTag="-336376586" Tag="15" IconVisible="False" LeftMargin="-130.7692" RightMargin="-43.2308" TopMargin="-135.9400" BottomMargin="-20.0600" ctype="SpriteObjectData">
             <Size X="174.0000" Y="156.0000" />
             <AnchorPoint ScaleX="0.7458" ScaleY="0.1350" />
             <Position X="-1.0000" Y="1.0000" />
@@ -126,7 +126,7 @@
             <FileData Type="Normal" Path="hero/hero103/hero103_die01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="atk" ActionTag="-871840036" Tag="16" IconVisible="False" LeftMargin="-130.0113" RightMargin="-43.9887" TopMargin="-135.7404" BottomMargin="-20.2596" ctype="SpriteObjectData">
+          <AbstractNodeData Name="atk" ActionTag="-871840036" Tag="16" IconVisible="False" LeftMargin="-130.0128" RightMargin="-43.9872" TopMargin="-135.7372" BottomMargin="-20.2628" ctype="SpriteObjectData">
             <Size X="174.0000" Y="156.0000" />
             <AnchorPoint ScaleX="0.7472" ScaleY="0.1363" />
             <Position Y="1.0000" />
@@ -141,4 +141,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

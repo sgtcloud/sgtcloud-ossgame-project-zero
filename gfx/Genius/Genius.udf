@@ -1,4 +1,4 @@
-<UserData Version="2.3.2.3">
+<UserData Version="2.3.3.0">
   <Properties>
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
@@ -15,7 +15,7 @@
           <FilePathData Path="enemy1001.csd" />
           <FilePathData Path="hero103.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="hero101.csd" />
+        <ActiveDocument Path="hero102.csd" />
       </Value>
     </Item>
   </Properties>
