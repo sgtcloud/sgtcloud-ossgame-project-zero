@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="EquipTitle" ID="11ecf385-e795-4d39-9300-7c436ad63173" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="EquipTitle" Type="Layer" ID="11ecf385-e795-4d39-9300-7c436ad63173" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -48,7 +48,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="buy_btn" ActionTag="-1883323665" Tag="15" IconVisible="True" LeftMargin="470.0000" RightMargin="14.0000" TopMargin="15.0000" BottomMargin="15.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="buy_btn" ActionTag="-1883323665" Tag="15" IconVisible="True" LeftMargin="470.0000" RightMargin="14.0000" TopMargin="15.0000" BottomMargin="15.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="140.0000" Y="80.0000" />
             <AnchorPoint />
             <Position X="470.0000" Y="15.0000" />
@@ -62,4 +62,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

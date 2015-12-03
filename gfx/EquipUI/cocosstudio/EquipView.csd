@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="EquipView" ID="89694dc2-1e83-49cd-a473-f5f244c13c40" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="EquipView" Type="Layer" ID="89694dc2-1e83-49cd-a473-f5f244c13c40" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -26,7 +26,7 @@
             <PreSize X="0.1442" Y="0.8182" />
             <FileData Type="Normal" Path="equipUI/equip_icon.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="up_btn" ActionTag="-1038911736" Tag="25" IconVisible="True" LeftMargin="470.0000" RightMargin="14.0000" TopMargin="15.0000" BottomMargin="15.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="up_btn" ActionTag="-1038911736" Tag="25" IconVisible="True" LeftMargin="470.0000" RightMargin="14.0000" TopMargin="15.0000" BottomMargin="15.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="140.0000" Y="80.0000" />
             <AnchorPoint />
             <Position X="470.0000" Y="15.0000" />
@@ -73,4 +73,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

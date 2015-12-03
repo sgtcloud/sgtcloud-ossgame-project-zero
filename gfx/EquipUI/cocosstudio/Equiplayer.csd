@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="Equiplayer" ID="6129347d-6e44-40ea-98b2-4ceb23ecdf1f" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="Equiplayer" Type="Layer" ID="6129347d-6e44-40ea-98b2-4ceb23ecdf1f" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -33,4 +33,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>

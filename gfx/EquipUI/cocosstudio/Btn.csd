@@ -1,5 +1,5 @@
-<GameProjectFile>
-  <PropertyGroup Type="Layer" Name="Btn" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="Btn" Type="Layer" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -12,7 +12,7 @@
             <Position X="0.0001" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" />
+            <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Normal" Path="equipUI/btn2.png" Plist="" />
@@ -79,4 +79,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>
