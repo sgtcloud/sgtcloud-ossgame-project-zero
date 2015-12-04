@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="-1657820814" Tag="276" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="624.0000" Y="110.0000" />
             <Children>
-              <AbstractNodeData Name="equipTitle_bg" ActionTag="-8247890" Tag="207" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="equipTitle_bg" ActionTag="-8247890" Tag="207" IconVisible="False" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="624.0000" Y="110.0000" />
                 <AnchorPoint />
                 <Position />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="equipUI/equiptitle_bg.png" Plist="" />
+                <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="title" ActionTag="-1439782970" Tag="12" IconVisible="False" LeftMargin="15.0000" RightMargin="429.0000" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="180" Scale9Height="100" ctype="ImageViewObjectData">
                 <Size X="180.0000" Y="100.0000" />
@@ -29,7 +29,7 @@
                 <PreSize X="0.2885" Y="0.9091" />
                 <FileData Type="Normal" Path="equipUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_text" ActionTag="-1757913402" Tag="13" IconVisible="False" LeftMargin="268.0000" RightMargin="268.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="神器购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="title_text" ActionTag="-1757913402" Tag="13" IconVisible="False" LeftMargin="268.0000" RightMargin="268.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="装备购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="88.0000" Y="22.0000" />
                 <AnchorPoint />
                 <Position X="268.0000" Y="75.0000" />
@@ -40,7 +40,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="decs_text" ActionTag="-921512055" Tag="14" IconVisible="False" LeftMargin="215.0000" RightMargin="329.0000" TopMargin="40.0000" BottomMargin="50.0000" FontSize="20" LabelText="神器说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="decs_text" ActionTag="-921512055" Tag="14" IconVisible="False" LeftMargin="215.0000" RightMargin="329.0000" TopMargin="40.0000" BottomMargin="50.0000" FontSize="20" LabelText="装备说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="80.0000" Y="20.0000" />
                 <AnchorPoint />
                 <Position X="215.0000" Y="50.0000" />

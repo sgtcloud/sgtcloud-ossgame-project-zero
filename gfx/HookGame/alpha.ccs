@@ -46,6 +46,7 @@
           <Image Name="rank_btn2.png" />
           <Image Name="shop_btn1.png" />
           <Image Name="shop_btn2.png" />
+          <Image Name="textBg.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
@@ -59,7 +60,6 @@
         <Project Name="BatterLayer.csd" Type="Layer" />
         <Project Name="Skillicon.csd" Type="Layer" />
         <Project Name="SkillLayer.csd" Type="Layer" />
-        <Project Name="MenuBtn.csd" Type="Layer" />
         <Project Name="HeroDesc.csd" Type="Layer" />
         <Folder Name="heroDescUI">
           <Image Name="close_icon.png" />
@@ -106,6 +106,7 @@
         <Project Name="Equiplayer.csd" Type="Layer" />
         <Project Name="Btn.csd" Type="Layer" />
         <Project Name="Blood.csd" Type="Layer" />
+        <Project Name="EquipHeroView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
