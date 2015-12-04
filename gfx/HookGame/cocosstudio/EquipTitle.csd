@@ -19,13 +19,13 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title" ActionTag="-1439782970" Tag="12" IconVisible="False" LeftMargin="15.0000" RightMargin="429.0000" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="180" Scale9Height="100" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title" ActionTag="-1439782970" Tag="12" IconVisible="False" LeftMargin="4.0000" RightMargin="439.9999" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="180" Scale9Height="100" ctype="ImageViewObjectData">
                 <Size X="180.0000" Y="100.0000" />
                 <AnchorPoint />
-                <Position X="15.0000" Y="5.0000" />
+                <Position X="4.0000" Y="5.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0240" Y="0.0455" />
+                <PrePosition X="0.0064" Y="0.0455" />
                 <PreSize X="0.2885" Y="0.9091" />
                 <FileData Type="Normal" Path="equipUI/title.png" Plist="" />
               </AbstractNodeData>

@@ -29,16 +29,6 @@
                 <PreSize X="0.9531" Y="0.2917" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="close_icon" ActionTag="1223788645" Tag="48" IconVisible="False" LeftMargin="585.0000" RightMargin="-1.0000" TopMargin="22.0000" BottomMargin="880.0000" Scale9Width="56" Scale9Height="58" ctype="ImageViewObjectData">
-                <Size X="56.0000" Y="58.0000" />
-                <AnchorPoint />
-                <Position X="585.0000" Y="880.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9141" Y="0.9167" />
-                <PreSize X="0.0875" Y="0.0604" />
-                <FileData Type="Normal" Path="heroDescUI/close_icon.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="-2080288716" Tag="781" IconVisible="False" LeftMargin="340.0000" RightMargin="180.0000" TopMargin="95.0000" BottomMargin="805.0000" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
                 <AnchorPoint />
@@ -209,6 +199,26 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="hero_btn" ActionTag="-257561876" Tag="156" IconVisible="True" LeftMargin="470.0000" RightMargin="30.0000" TopMargin="225.0000" BottomMargin="655.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="140.0000" Y="80.0000" />
+                <AnchorPoint />
+                <Position X="470.0000" Y="655.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7344" Y="0.6823" />
+                <PreSize X="0.2188" Y="0.0833" />
+                <FileData Type="Normal" Path="HeroBtn.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="close_btn" ActionTag="1720747806" Tag="253" IconVisible="True" LeftMargin="585.0000" RightMargin="-1.0000" TopMargin="22.0000" BottomMargin="880.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="56.0000" Y="58.0000" />
+                <AnchorPoint />
+                <Position X="585.0000" Y="880.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9141" Y="0.9167" />
+                <PreSize X="0.0875" Y="0.0604" />
+                <FileData Type="Normal" Path="CloseBtn.csd" Plist="" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
@@ -220,16 +230,6 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="FileNode_2" ActionTag="-257561876" Tag="156" IconVisible="True" LeftMargin="470.0000" RightMargin="30.0000" TopMargin="225.0000" BottomMargin="655.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="140.0000" Y="80.0000" />
-            <AnchorPoint />
-            <Position X="470.0000" Y="655.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7344" Y="0.6823" />
-            <PreSize X="0.2188" Y="0.0833" />
-            <FileData Type="Normal" Path="HeroBtn.csd" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

@@ -109,6 +109,7 @@
         <Project Name="EquipHeroView.csd" Type="Layer" />
         <Project Name="EquipDesc.csd" Type="Layer" />
         <Project Name="HeroBtn.csd" Type="Layer" />
+        <Project Name="CloseBtn.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

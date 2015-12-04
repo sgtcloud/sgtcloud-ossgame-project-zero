@@ -32,8 +32,15 @@
           <FilePathData Path="HeroDesc.csd" />
           <FilePathData Path="EquipView.csd" />
           <FilePathData Path="EquipBtn.csd" />
+          <FilePathData Path="BatterLayer.csd" />
+          <FilePathData Path="Blood.csd" />
+          <FilePathData Path="EnemyList.csd" />
+          <FilePathData Path="EquipHeroView.csd" />
+          <FilePathData Path="CloseBtn.csd" />
+          <FilePathData Path="Equiplayer.csd" />
+          <FilePathData Path="EquipTitle.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="EquipDesc.csd" />
+        <ActiveDocument Path="EquipTitle.csd" />
       </Value>
     </Item>
   </Properties>
