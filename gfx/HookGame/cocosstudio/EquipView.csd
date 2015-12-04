@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7417" Y="0.1364" />
                 <PreSize X="0.2333" Y="0.7273" />
-                <FileData Type="Normal" Path="Btn.csd" Plist="" />
+                <FileData Type="Normal" Path="EquipBtn.csd" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="120.0001" RightMargin="359.9999" TopMargin="15.0000" BottomMargin="75.0000" FontSize="20" LabelText="神器名字六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
@@ -61,14 +61,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipDecs_text" ActionTag="-1671372399" Tag="46" IconVisible="False" LeftMargin="120.0000" RightMargin="372.0000" TopMargin="42.0000" BottomMargin="50.0000" FontSize="18" LabelText="神器详细描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="108.0000" Y="18.0000" />
+              <AbstractNodeData Name="equipBuffDecs_text" ActionTag="-1671372399" Tag="46" IconVisible="False" LeftMargin="120.0000" RightMargin="336.0000" TopMargin="42.0000" BottomMargin="50.0000" FontSize="18" LabelText="神器效果详细描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="144.0000" Y="18.0000" />
                 <AnchorPoint />
                 <Position X="120.0000" Y="50.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.2000" Y="0.4545" />
-                <PreSize X="0.1800" Y="0.1636" />
+                <PreSize X="0.2400" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

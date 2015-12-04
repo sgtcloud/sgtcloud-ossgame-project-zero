@@ -104,9 +104,11 @@
         <Project Name="EquipView.csd" Type="Layer" />
         <Project Name="EquipTitle.csd" Type="Layer" />
         <Project Name="Equiplayer.csd" Type="Layer" />
-        <Project Name="Btn.csd" Type="Layer" />
+        <Project Name="EquipBtn.csd" Type="Layer" />
         <Project Name="Blood.csd" Type="Layer" />
         <Project Name="EquipHeroView.csd" Type="Layer" />
+        <Project Name="EquipDesc.csd" Type="Layer" />
+        <Project Name="HeroBtn.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

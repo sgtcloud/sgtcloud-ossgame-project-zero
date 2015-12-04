@@ -59,7 +59,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7532" Y="0.1364" />
                 <PreSize X="0.2244" Y="0.7273" />
-                <FileData Type="Normal" Path="Btn.csd" Plist="" />
+                <FileData Type="Normal" Path="EquipBtn.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

@@ -28,9 +28,12 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="EquipDesc.csd" />
+          <FilePathData Path="HeroDesc.csd" />
+          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="EquipBtn.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="MenuLayer.csd" />
+        <ActiveDocument Path="EquipDesc.csd" />
       </Value>
     </Item>
   </Properties>

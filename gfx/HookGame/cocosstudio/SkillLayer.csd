@@ -25,7 +25,7 @@
       <ObjectData Name="Layer" Tag="204" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="200.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="534.0000" RightMargin="11.0000" TopMargin="97.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">

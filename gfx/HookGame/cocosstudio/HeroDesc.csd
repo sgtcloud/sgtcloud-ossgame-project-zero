@@ -39,16 +39,6 @@
                 <PreSize X="0.0875" Y="0.0604" />
                 <FileData Type="Normal" Path="heroDescUI/close_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero_btn" ActionTag="-618788066" Tag="637" IconVisible="True" LeftMargin="469.9998" RightMargin="30.0002" TopMargin="225.0000" BottomMargin="655.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="140.0000" Y="80.0000" />
-                <AnchorPoint />
-                <Position X="469.9998" Y="655.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7344" Y="0.6823" />
-                <PreSize X="0.2188" Y="0.0833" />
-                <FileData Type="Normal" Path="Btn.csd" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="-2080288716" Tag="781" IconVisible="False" LeftMargin="340.0000" RightMargin="180.0000" TopMargin="95.0000" BottomMargin="805.0000" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
                 <AnchorPoint />
@@ -230,6 +220,16 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="FileNode_2" ActionTag="-257561876" Tag="156" IconVisible="True" LeftMargin="470.0000" RightMargin="30.0000" TopMargin="225.0000" BottomMargin="655.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+            <Size X="140.0000" Y="80.0000" />
+            <AnchorPoint />
+            <Position X="470.0000" Y="655.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.7344" Y="0.6823" />
+            <PreSize X="0.2188" Y="0.0833" />
+            <FileData Type="Normal" Path="HeroBtn.csd" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

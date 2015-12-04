@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn" Type="Layer" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="2.3.3.0" />
+  <PropertyGroup Name="EquipBtn" Type="Layer" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -45,7 +45,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buy_text" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="buy_text" Visible="False" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="32.0000" Y="16.0000" />
                 <AnchorPoint />
                 <Position X="60.0000" Y="22.0000" />
@@ -56,7 +56,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="up_text" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="up_text" Visible="False" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="32.0000" Y="16.0000" />
                 <AnchorPoint />
                 <Position X="60.0000" Y="22.0000" />
@@ -67,7 +67,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upMax_text" ActionTag="1839782717" Tag="53" IconVisible="False" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="1839782717" Tag="53" IconVisible="False" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="20.0000" />
                 <AnchorPoint />
                 <Position X="40.0000" Y="30.0000" />
@@ -77,6 +77,27 @@
                 <PreSize X="0.4286" Y="0.2500" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="re_text" ActionTag="-1820096088" Tag="977" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="重铸" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="32.0000" Y="16.0000" />
+                <AnchorPoint />
+                <Position X="60.0000" Y="22.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="0" B="0" />
+                <PrePosition X="0.4286" Y="0.2750" />
+                <PreSize X="0.2286" Y="0.2000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="diamond_icon" ActionTag="-714353741" Tag="996" IconVisible="False" LeftMargin="47.8000" RightMargin="77.2000" TopMargin="18.0000" BottomMargin="47.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                <Size X="15.0000" Y="15.0000" />
+                <AnchorPoint />
+                <Position X="47.8000" Y="47.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3414" Y="0.5875" />
+                <PreSize X="0.1071" Y="0.1875" />
+                <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
