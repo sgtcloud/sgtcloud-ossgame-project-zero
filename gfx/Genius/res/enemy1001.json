@@ -1,0 +1,531 @@
+{
+  "ID": "8a44bfe0-4d43-4e78-844c-c385c62cec55",
+  "Version": "2.3.3.0",
+  "Name": "enemy1001",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 72,
+        "Speed": 0.5,
+        "Timelines": [
+          {
+            "ActionTag": 2065617120,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_stand01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_stand02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_stand03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_stand04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1234471893,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 16,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 22,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit06.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 25,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_hit07.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 28,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1449631893,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_die01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 29,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_die02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 32,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_die03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 35,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_die04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 38,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_die05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 41,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1510959012,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 42,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 45,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 48,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 51,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk06.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 54,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk07.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 57,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk08.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 60,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk09.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 63,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk10.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 66,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "enemy/enemy1001/enemy1001_atk11.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Default",
+                  "Path": "",
+                  "Plist": ""
+                },
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 18,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "enemy/enemy1001/enemy1001_stand01.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 0.002,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -69.498,
+            "RightMargin": -69.502,
+            "TopMargin": -163.0,
+            "Tag": 22,
+            "ActionTag": 2065617120,
+            "Size": {
+              "X": 138.0,
+              "Y": 162.0
+            },
+            "Name": "stand",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "enemy/enemy1001/enemy1001_hit01.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 0.0069,
+              "Y": 0.0693
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -68.9931,
+            "RightMargin": -69.0069,
+            "TopMargin": -162.0693,
+            "BottomMargin": 0.0693,
+            "Tag": 21,
+            "ActionTag": 1234471893,
+            "Size": {
+              "X": 138.0,
+              "Y": 162.0
+            },
+            "Name": "hit",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "enemy/enemy1001/enemy1001_die01.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 0.209,
+              "Y": 0.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -73.791,
+            "RightMargin": -74.209,
+            "TopMargin": -96.0001,
+            "BottomMargin": 0.0001,
+            "Tag": 20,
+            "ActionTag": 1449631893,
+            "Size": {
+              "X": 138.0,
+              "Y": 162.0
+            },
+            "Name": "die",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "enemy/enemy1001/enemy1001_atk01.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.4918
+            },
+            "Position": {
+              "X": -0.9711,
+              "Y": 0.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -68.8395,
+            "RightMargin": -69.1605,
+            "TopMargin": -162.0001,
+            "BottomMargin": 0.0001,
+            "Tag": 19,
+            "ActionTag": -1510959012,
+            "Size": {
+              "X": 138.0,
+              "Y": 162.0
+            },
+            "Name": "atk",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "enemy1001",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "enemy/enemy1001/enemy1001_atk01.png",
+        "enemy/enemy1001/enemy1001_atk03.png",
+        "enemy/enemy1001/enemy1001_atk04.png",
+        "enemy/enemy1001/enemy1001_atk05.png",
+        "enemy/enemy1001/enemy1001_atk06.png",
+        "enemy/enemy1001/enemy1001_atk07.png",
+        "enemy/enemy1001/enemy1001_atk08.png",
+        "enemy/enemy1001/enemy1001_atk09.png",
+        "enemy/enemy1001/enemy1001_atk10.png",
+        "enemy/enemy1001/enemy1001_atk11.png",
+        "enemy/enemy1001/enemy1001_die01.png",
+        "enemy/enemy1001/enemy1001_die02.png",
+        "enemy/enemy1001/enemy1001_die03.png",
+        "enemy/enemy1001/enemy1001_die04.png",
+        "enemy/enemy1001/enemy1001_die05.png",
+        "enemy/enemy1001/enemy1001_hit01.png",
+        "enemy/enemy1001/enemy1001_hit02.png",
+        "enemy/enemy1001/enemy1001_hit03.png",
+        "enemy/enemy1001/enemy1001_hit04.png",
+        "enemy/enemy1001/enemy1001_hit05.png",
+        "enemy/enemy1001/enemy1001_hit06.png",
+        "enemy/enemy1001/enemy1001_hit07.png",
+        "enemy/enemy1001/enemy1001_stand01.png",
+        "enemy/enemy1001/enemy1001_stand02.png",
+        "enemy/enemy1001/enemy1001_stand03.png",
+        "enemy/enemy1001/enemy1001_stand04.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

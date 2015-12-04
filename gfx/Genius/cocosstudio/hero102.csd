@@ -1,311 +1,153 @@
 <GameFile>
-  <PropertyGroup Name="hero102" Type="Node" ID="ba5723bf-1b3f-4244-8626-5d23c9ce9080" Version="2.3.3.0" />
+  <PropertyGroup Name="hero102" Type="Node" ID="1a6853f3-93a7-45b3-b6da-0024fdf2e187" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="72" Speed="0.5000">
-        <Timeline ActionTag="1890324609" Property="FileData">
+      <Animation Duration="63" Speed="0.5000">
+        <Timeline ActionTag="2020530987" Property="Position">
+          <PointFrame FrameIndex="0" X="-30.0000" Y="-5.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="3" X="62.0000" Y="-27.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="6" X="60.0000" Y="-43.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="9" X="-46.0000" Y="-23.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="12" X="-17.0000" Y="-6.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="15" X="-13.0000" Y="-4.8333">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="18" X="-14.5000" Y="-5.1667">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="21" X="-32.0000" Y="-4.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="24" X="-30.0000" Y="-5.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="27" X="-30.0000" Y="-27.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="39" X="-30.0000" Y="-6.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="42" X="-55.0000" Y="-8.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="45" X="-35.0000" Y="-8.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="48" X="-62.0000" Y="-7.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="51" X="-27.0000" Y="-5.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="54" X="-28.0000" Y="-5.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+        </Timeline>
+        <Timeline ActionTag="2020530987" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand03.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand04.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand05.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="13" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand05.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="32" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand05.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand05.png" Plist="" />
-          </TextureFrame>
-        </Timeline>
-        <Timeline ActionTag="1890324609" Property="Position">
-          <PointFrame FrameIndex="13" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="32" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="45" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="1890324609" Property="Scale">
-          <ScaleFrame FrameIndex="13" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1890324609" Property="RotationSkew">
-          <ScaleFrame FrameIndex="13" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="248842486" Property="FileData">
-          <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="13" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="16" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="19" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit03.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="22" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit04.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="25" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit05.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="28" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit06.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="31" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit07.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="32" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit07.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit07.png" Plist="" />
-          </TextureFrame>
-        </Timeline>
-        <Timeline ActionTag="248842486" Property="Position">
-          <PointFrame FrameIndex="0" X="0.6866" Y="0.0319">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="32" X="0.6866" Y="0.0319">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="45" X="0.6866" Y="0.0319">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="248842486" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="248842486" Property="RotationSkew">
-          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1409302801" Property="FileData">
-          <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="13" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="32" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="35" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="38" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die03.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="41" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die04.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="44" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die05.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_die05.png" Plist="" />
-          </TextureFrame>
-        </Timeline>
-        <Timeline ActionTag="1409302801" Property="Position">
-          <PointFrame FrameIndex="0" X="-0.3076" Y="0.2239">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="13" X="-0.3076" Y="0.2239">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="45" X="-0.3076" Y="0.2239">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="1409302801" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="13" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1409302801" Property="RotationSkew">
-          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="13" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="45" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="-2138956551" Property="FileData">
-          <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="13" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="32" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="48" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk02.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="51" Tween="False">
+          <TextureFrame FrameIndex="6" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk03.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="54" Tween="False">
+          <TextureFrame FrameIndex="9" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk04.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="57" Tween="False">
+          <TextureFrame FrameIndex="12" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk05.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="60" Tween="False">
+          <TextureFrame FrameIndex="15" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk06.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="63" Tween="False">
+          <TextureFrame FrameIndex="18" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk07.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="66" Tween="False">
+          <TextureFrame FrameIndex="21" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_atk08.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="69" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk09.png" Plist="" />
+          <TextureFrame FrameIndex="24" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="72" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero102/hero102_atk10.png" Plist="" />
+          <TextureFrame FrameIndex="27" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_die02.png" Plist="" />
           </TextureFrame>
-        </Timeline>
-        <Timeline ActionTag="-2138956551" Property="Position">
-          <PointFrame FrameIndex="0" X="0.6910" Y="0.4030">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="13" X="0.6910" Y="0.4030">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="32" X="0.6910" Y="0.4030">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="-2138956551" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="13" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="-2138956551" Property="RotationSkew">
-          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="13" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="32" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
+          <TextureFrame FrameIndex="30" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_die03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="33" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_die04.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="36" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_die05.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="39" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit01.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="42" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="45" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="48" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit04.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="51" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_hit05.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="54" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand01.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="57" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="60" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="63" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_stand04.png" Plist="" />
+          </TextureFrame>
         </Timeline>
       </Animation>
-      <ObjectData Name="hero102" Tag="13" ctype="GameNodeObjectData">
+      <AnimationList>
+        <AnimationInfo Name="atk" StartIndex="0" EndIndex="21">
+          <RenderColor A="150" R="255" G="215" B="0" />
+        </AnimationInfo>
+        <AnimationInfo Name="die" StartIndex="24" EndIndex="36">
+          <RenderColor A="150" R="255" G="248" B="220" />
+        </AnimationInfo>
+        <AnimationInfo Name="hit" StartIndex="39" EndIndex="51">
+          <RenderColor A="150" R="176" G="224" B="230" />
+        </AnimationInfo>
+        <AnimationInfo Name="stand" StartIndex="54" EndIndex="63">
+          <RenderColor A="150" R="244" G="164" B="96" />
+        </AnimationInfo>
+      </AnimationList>
+      <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="stand" ActionTag="1890324609" VisibleForFrame="False" Tag="17" IconVisible="False" LeftMargin="-91.6380" RightMargin="-43.3620" TopMargin="-185.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-99.5000" RightMargin="-35.5000" TopMargin="-180.5000" BottomMargin="-4.5000" ctype="SpriteObjectData">
             <Size X="135.0000" Y="185.0000" />
-            <AnchorPoint ScaleX="0.6788" />
-            <Position />
+            <AnchorPoint ScaleX="0.5000" />
+            <Position X="-32.0000" Y="-4.5000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_stand05.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="hit" ActionTag="248842486" VisibleForFrame="False" Tag="16" IconVisible="False" LeftMargin="-91.4914" RightMargin="-43.5086" TopMargin="-185.0319" BottomMargin="0.0319" ctype="SpriteObjectData">
-            <Size X="135.0000" Y="185.0000" />
-            <AnchorPoint ScaleX="0.6828" />
-            <Position X="0.6866" Y="0.0319" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_hit01.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="die" ActionTag="1409302801" VisibleForFrame="False" Tag="15" IconVisible="False" LeftMargin="-91.7296" RightMargin="-43.2704" TopMargin="-185.2239" BottomMargin="0.2239" ctype="SpriteObjectData">
-            <Size X="135.0000" Y="185.0000" />
-            <AnchorPoint ScaleX="0.6772" />
-            <Position X="-0.3076" Y="0.2239" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="atk" ActionTag="-2138956551" VisibleForFrame="False" Tag="14" IconVisible="False" LeftMargin="-91.3115" RightMargin="-43.6885" TopMargin="-185.4030" BottomMargin="0.4030" ctype="SpriteObjectData">
-            <Size X="135.0000" Y="185.0000" />
-            <AnchorPoint ScaleX="0.6815" />
-            <Position X="0.6910" Y="0.4030" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero102/hero102_atk08.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
