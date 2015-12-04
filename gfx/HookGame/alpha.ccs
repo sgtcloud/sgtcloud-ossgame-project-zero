@@ -22,12 +22,6 @@
           <Image Name="bg_01.png" />
           <Image Name="btn_1.png" />
           <Image Name="btn_2.png" />
-          <Image Name="btn_main.png" />
-          <Image Name="btn_hero.png" />
-          <Image Name="btn_equip.png" />
-          <Image Name="btn_pvp.png" />
-          <Image Name="btn_rank.png" />
-          <Image Name="btn_shop.png" />
           <Image Name="ui_enemy_a.png" />
           <Image Name="ui_enemy_b.png" />
           <Image Name="gold.png" />
@@ -37,11 +31,21 @@
           <Image Name="equip.png" />
           <Image Name="hero.png" />
           <Image Name="main.png" />
-          <Image Name="menu_btn1.png" />
-          <Image Name="menu_btn2.png" />
           <Image Name="pvp.png" />
           <Image Name="rank.png" />
           <Image Name="shop.png" />
+          <Image Name="equip_btn1.png" />
+          <Image Name="equip_btn2.png" />
+          <Image Name="hero_btn1.png" />
+          <Image Name="hero_btn2.png" />
+          <Image Name="main_btn1.png" />
+          <Image Name="main_btn2.png" />
+          <Image Name="pvp_btn1.png" />
+          <Image Name="pvp_btn2.png" />
+          <Image Name="rank_btn1.png" />
+          <Image Name="rank_btn2.png" />
+          <Image Name="shop_btn1.png" />
+          <Image Name="shop_btn2.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
@@ -56,6 +60,52 @@
         <Project Name="Skillicon.csd" Type="Layer" />
         <Project Name="SkillLayer.csd" Type="Layer" />
         <Project Name="MenuBtn.csd" Type="Layer" />
+        <Project Name="HeroDesc.csd" Type="Layer" />
+        <Folder Name="heroDescUI">
+          <Image Name="close_icon.png" />
+          <Image Name="text_bg.png" />
+          <Image Name="text_bg2.png" />
+        </Folder>
+        <Folder Name="heroUI">
+          <Image Name="bg.png" />
+          <Image Name="btn1.png" />
+          <Image Name="btn2.png" />
+          <Image Name="diamond.png" />
+          <Image Name="gold.png" />
+          <Image Name="hero_bg.png" />
+          <Image Name="hero_icon.png" />
+          <Image Name="lock.png" />
+          <Image Name="skill_bg.png" />
+          <Image Name="skill_icon.png" />
+          <Image Name="star1.png" />
+          <Image Name="star2.png" />
+          <Image Name="text_bg.png" />
+        </Folder>
+        <Folder Name="bloodUI">
+          <Image Name="blood_bar.png" />
+          <Image Name="blood_bg.png" />
+        </Folder>
+        <Folder Name="equipUI">
+          <Image Name="bg.png" />
+          <Image Name="btn1.png" />
+          <Image Name="btn2.png" />
+          <Image Name="diamond.png" />
+          <Image Name="equiptitle_bg.png" />
+          <Image Name="equip_bg.png" />
+          <Image Name="equip_icon.png" />
+          <Image Name="gold.png" />
+          <Image Name="relic.png" />
+          <Image Name="title.png" />
+        </Folder>
+        <Project Name="Star.csd" Type="Layer" />
+        <Project Name="SkillView.csd" Type="Layer" />
+        <Project Name="HeroView.csd" Type="Layer" />
+        <Project Name="HeroLayer.csd" Type="Layer" />
+        <Project Name="EquipView.csd" Type="Layer" />
+        <Project Name="EquipTitle.csd" Type="Layer" />
+        <Project Name="Equiplayer.csd" Type="Layer" />
+        <Project Name="Btn.csd" Type="Layer" />
+        <Project Name="Blood.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

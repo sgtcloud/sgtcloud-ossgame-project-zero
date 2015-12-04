@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="120" ctype="GameLayerObjectData">
         <Size X="300.0000" Y="110.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="1045868860" Tag="121" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1045868860" Tag="121" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="300" Scale9Height="110" ctype="PanelObjectData">
             <Size X="300.0000" Y="110.0000" />
             <Children>
               <AbstractNodeData Name="enemy_icon1" ActionTag="-1128263822" Tag="122" IconVisible="False" LeftMargin="13.4675" RightMargin="226.5325" TopMargin="18.4391" BottomMargin="31.5609" Scale9Width="80" Scale9Height="80" ctype="ImageViewObjectData">
@@ -46,7 +46,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1449" Y="0.1730" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PreSize X="0.1200" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -57,7 +57,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5056" Y="0.1730" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PreSize X="0.1200" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -68,7 +68,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.8662" Y="0.1730" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PreSize X="0.1200" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
