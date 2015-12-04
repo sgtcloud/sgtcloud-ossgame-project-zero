@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="174" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="750.0000" />
             <Children>
               <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
