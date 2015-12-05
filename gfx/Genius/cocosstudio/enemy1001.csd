@@ -111,16 +111,16 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="18">
-          <RenderColor A="150" R="173" G="255" B="47" />
+          <RenderColor A="255" R="173" G="255" B="47" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="21" EndIndex="33">
-          <RenderColor A="150" R="128" G="128" B="0" />
+          <RenderColor A="255" R="128" G="128" B="0" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="36" EndIndex="48">
-          <RenderColor A="150" R="147" G="112" B="219" />
+          <RenderColor A="255" R="147" G="112" B="219" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="51" EndIndex="60">
-          <RenderColor A="150" R="218" G="165" B="32" />
+          <RenderColor A="255" R="218" G="165" B="32" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" ctype="GameNodeObjectData">

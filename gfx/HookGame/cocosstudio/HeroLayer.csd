@@ -19,18 +19,28 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="heroUI/bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero_list" Visible="False" ActionTag="-1263700766" Tag="333" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-                <Size X="640.0000" Y="500.0000" />
+              <AbstractNodeData Name="hero_list" Visible="False" ActionTag="-1263700766" Tag="333" IconVisible="False" LeftMargin="8.0000" RightMargin="8.0000" TopMargin="8.0000" BottomMargin="8.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_Right" ctype="ListViewObjectData">
+                <Size X="624.0000" Y="484.0000" />
                 <AnchorPoint />
-                <Position />
+                <Position X="8.0000" Y="8.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="1.0000" Y="1.0000" />
+                <PrePosition X="0.0125" Y="0.0160" />
+                <PreSize X="0.9750" Y="0.9680" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="goldLayer" ActionTag="391566175" Tag="174" IconVisible="True" LeftMargin="244.5078" RightMargin="215.4922" TopMargin="-48.6998" BottomMargin="498.6998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="50.0000" />
+                <AnchorPoint />
+                <Position X="244.5078" Y="498.6998" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3820" Y="0.9974" />
+                <PreSize X="0.2813" Y="0.1000" />
+                <FileData Type="Normal" Path="GoldLayer.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

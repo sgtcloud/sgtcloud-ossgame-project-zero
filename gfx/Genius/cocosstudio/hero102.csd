@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero102" Type="Node" ID="1a6853f3-93a7-45b3-b6da-0024fdf2e187" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="63" Speed="0.5000">
+      <Animation Duration="64" Speed="0.5000">
         <Timeline ActionTag="2020530987" Property="Position">
           <PointFrame FrameIndex="0" X="-30.0000" Y="-5.5000">
             <EasingData Type="0" />
@@ -50,6 +50,9 @@
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="54" X="-28.0000" Y="-5.5000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="64" X="0.0000" Y="0.0000">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -120,34 +123,43 @@
           <TextureFrame FrameIndex="63" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero102/hero102_stand04.png" Plist="" />
           </TextureFrame>
+          <TextureFrame FrameIndex="64" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero102/hero102_dead01.png" Plist="" />
+          </TextureFrame>
+        </Timeline>
+        <Timeline ActionTag="2020530987" Property="BlendFunc">
+          <BlendFuncFrame FrameIndex="64" Tween="False" Src="770" Dst="771" />
         </Timeline>
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="21">
-          <RenderColor A="150" R="255" G="215" B="0" />
+          <RenderColor A="255" R="255" G="215" B="0" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="24" EndIndex="36">
-          <RenderColor A="150" R="255" G="248" B="220" />
+          <RenderColor A="255" R="255" G="248" B="220" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="39" EndIndex="51">
-          <RenderColor A="150" R="176" G="224" B="230" />
+          <RenderColor A="255" R="176" G="224" B="230" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="54" EndIndex="63">
-          <RenderColor A="150" R="244" G="164" B="96" />
+          <RenderColor A="255" R="244" G="164" B="96" />
+        </AnimationInfo>
+        <AnimationInfo Name="dead" StartIndex="64" EndIndex="65">
+          <RenderColor A="255" R="240" G="128" B="128" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-99.5000" RightMargin="-35.5000" TopMargin="-180.5000" BottomMargin="-4.5000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-97.5000" RightMargin="-37.5000" TopMargin="-179.5000" BottomMargin="-5.5000" ctype="SpriteObjectData">
             <Size X="135.0000" Y="185.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-32.0000" Y="-4.5000" />
+            <Position X="-30.0000" Y="-5.5000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_atk08.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero102/hero102_atk01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

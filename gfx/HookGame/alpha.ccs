@@ -113,6 +113,7 @@
           <Image Name="enemy1001_atk01.png" />
           <Image Name="hero103_atk01.png" />
         </Folder>
+        <Project Name="GoldLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

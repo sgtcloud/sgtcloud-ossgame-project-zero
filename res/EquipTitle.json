@@ -1,0 +1,296 @@
+{
+  "ID": "11ecf385-e795-4d39-9300-7c436ad63173",
+  "Version": "2.3.3.0",
+  "Name": "EquipTitle",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 206,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 276,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/text_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 11,
+                "Scale9OriginY": 11,
+                "Scale9Width": 12,
+                "Scale9Height": 14,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 207,
+                "ActionTag": -8247890,
+                "Size": {
+                  "X": 624.0,
+                  "Y": 110.0
+                },
+                "Name": "equipTitle_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/title.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 180,
+                "Scale9Height": 100,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 4.0,
+                  "Y": 5.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0064,
+                  "Y": 0.0455
+                },
+                "PreSize": {
+                  "X": 0.2885,
+                  "Y": 0.9091
+                },
+                "LeftMargin": 4.0,
+                "RightMargin": 439.9999,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
+                "Tag": 12,
+                "ActionTag": -1439782970,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 100.0
+                },
+                "Name": "title",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 22,
+                "LabelText": "装备购买",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 268.0,
+                  "Y": 75.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 165,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4295,
+                  "Y": 0.6818
+                },
+                "PreSize": {
+                  "X": 0.141,
+                  "Y": 0.2
+                },
+                "LeftMargin": 268.0,
+                "RightMargin": 268.0,
+                "TopMargin": 13.0,
+                "BottomMargin": 75.0,
+                "Tag": 13,
+                "ActionTag": -1757913402,
+                "Size": {
+                  "X": 88.0,
+                  "Y": 22.0
+                },
+                "Name": "title_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "装备说明",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 215.0,
+                  "Y": 50.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3446,
+                  "Y": 0.4545
+                },
+                "PreSize": {
+                  "X": 0.1282,
+                  "Y": 0.1818
+                },
+                "LeftMargin": 215.0,
+                "RightMargin": 329.0,
+                "TopMargin": 40.0,
+                "BottomMargin": 50.0,
+                "Tag": 14,
+                "ActionTag": -921512055,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 20.0
+                },
+                "Name": "decs_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "EquipBtn.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 470.0,
+                  "Y": 15.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.7532,
+                  "Y": 0.1364
+                },
+                "PreSize": {
+                  "X": 0.2244,
+                  "Y": 0.7273
+                },
+                "LeftMargin": 470.0,
+                "RightMargin": 14.0,
+                "TopMargin": 15.0,
+                "BottomMargin": 15.0,
+                "Tag": 15,
+                "ActionTag": -1883323665,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "buy_btn",
+                "ctype": "ProjectNodeObjectData"
+              }
+            ],
+            "ActionTag": -1657820814,
+            "Size": {
+              "X": 624.0,
+              "Y": 110.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 624.0,
+          "Y": 110.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "EquipBtn.json",
+        "equipUI/title.png",
+        "heroUI/text_bg.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

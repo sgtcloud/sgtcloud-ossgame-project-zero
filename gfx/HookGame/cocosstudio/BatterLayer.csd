@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="174" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TopMargin="-1.6938" BottomMargin="1.6938" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="750.0000" />
             <Children>
               <AbstractNodeData Name="battle_bg" CanEdit="False" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
@@ -156,7 +156,7 @@
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="250.0000" />
@@ -200,27 +200,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_icon" ActionTag="-851181145" Tag="196" IconVisible="False" LeftMargin="240.8747" RightMargin="369.1253" TopMargin="460.0104" BottomMargin="259.9896" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
-                <Size X="30.0000" Y="30.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="255.8747" Y="274.9896" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3998" Y="0.3667" />
-                <PreSize X="0.0469" Y="0.0400" />
-                <FileData Type="Normal" Path="ui/gold.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="gold_text" ActionTag="345539021" Tag="197" IconVisible="False" LeftMargin="278.7834" RightMargin="240.2166" TopMargin="464.0108" BottomMargin="263.9892" FontSize="22" LabelText="99999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="121.0000" Y="22.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="339.2834" Y="274.9892" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5301" Y="0.3667" />
-                <PreSize X="0.1891" Y="0.0293" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="11.2308" RightMargin="546.7692" TopMargin="61.5242" BottomMargin="611.4758" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="52" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="82.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -235,16 +214,6 @@
                 <NormalFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="skillLayer_bg" ActionTag="-106001860" Tag="109" IconVisible="False" TopMargin="500.0000" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="34" Scale9Height="34" ctype="ImageViewObjectData">
-                <Size X="640.0000" Y="250.0000" />
-                <AnchorPoint />
-                <Position />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="1.0000" Y="0.3333" />
-                <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="509.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -290,16 +259,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ProjectNode_8" ActionTag="-1322476348" Tag="247" IconVisible="True" TopMargin="540.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="640.0000" Y="200.0000" />
-                <AnchorPoint />
-                <Position Y="10.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0133" />
-                <PreSize X="1.0000" Y="0.2667" />
-                <FileData Type="Normal" Path="SkillLayer.csd" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_text_0" ActionTag="1850622725" Tag="451" IconVisible="False" LeftMargin="238.9696" RightMargin="341.0304" TopMargin="11.7195" BottomMargin="718.2805" FontSize="20" LabelText="剩余：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -313,10 +272,10 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position Y="1.6938" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition Y="0.0023" />
+            <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />

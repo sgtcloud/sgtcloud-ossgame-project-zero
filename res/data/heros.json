@@ -1,70 +1,58 @@
 {
   "1001":{
+    "file":"hero_101_json",
     "name":"英雄1",
-    "animate":1.5,
+    "desc":"描述",
     "skills":["100001"],
     "equips":["1000001","1000002","1000003","1000004","1000005"],
-    "life_base":100,
-    "life_grow":10,
-    "attack_base":10,
-    "attack_grow":1,
-    "hit_base":1,
-    "hit_grow":1,
-    "price_base":100,
-    "price_grow":100
-
+    "levelDatas":[
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      }
+    ]
   },
   "1002":{
+    "file":"hero_102_json",
     "name":"英雄2",
-    "animate":2.0,
+    "desc":"描述",
     "skills":["100002"],
     "equips":["1000001","1000002","1000003","1000004","1000005"],
-    "life_base":100,
-    "life_grow":10,
-    "attack_base":10,
-    "attack_grow":1,
-    "hit_base":1,
-    "hit_grow":1,
-    "price_base":100,
-    "price_grow":100
-  },
-  "1003":{
-    "name":"英雄3",
-    "animate":2.0,
-    "equips":["1000001","1000002","1000003","1000004","1000005"],
-    "life_base":100,
-    "life_grow":10,
-    "attack_base":10,
-    "attack_grow":1,
-    "hit_base":1,
-    "hit_grow":1,
-    "price_base":100,
-    "price_grow":100
-  },
-  "1004":{
-    "name":"英雄4",
-    "animate":2.0,
-    "equips":["1000001","1000002","1000003","1000004","1000005"],
-    "life_base":100,
-    "life_grow":10,
-    "attack_base":10,
-    "attack_grow":1,
-    "hit_base":1,
-    "hit_grow":1,
-    "price_base":100,
-    "price_grow":100
-  },
-  "1005":{
-    "name":"英雄5",
-    "animate":2.0,
-    "equips":["1000001","1000002","1000003","1000004","1000005"],
-    "life_base":100,
-    "life_grow":10,
-    "attack_base":10,
-    "attack_grow":1,
-    "hit_base":1,
-    "hit_grow":1,
-    "price_base":100,
-    "price_grow":100
+    "levelDatas":[
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      }
+    ]
   }
 }

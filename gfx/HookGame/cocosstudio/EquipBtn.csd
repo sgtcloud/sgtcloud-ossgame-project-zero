@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="209" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1024377093" Tag="266" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1024377093" Tag="266" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="-1285121696" Tag="210" IconVisible="False" LeftMargin="0.0001" RightMargin="-0.0001" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -45,7 +45,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buy_text" Visible="False" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="buy_text" ActionTag="1940951779" Tag="213" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="32.0000" Y="16.0000" />
                 <AnchorPoint />
                 <Position X="60.0000" Y="22.0000" />
@@ -56,7 +56,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="up_text" Visible="False" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="up_text" ActionTag="-138930382" Tag="214" IconVisible="False" LeftMargin="60.0000" RightMargin="48.0000" TopMargin="42.0000" BottomMargin="22.0000" FontSize="16" LabelText="升级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="32.0000" Y="16.0000" />
                 <AnchorPoint />
                 <Position X="60.0000" Y="22.0000" />
@@ -67,7 +67,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="1839782717" Tag="53" IconVisible="False" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="upMax_text" ActionTag="1839782717" Tag="53" IconVisible="False" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="20.0000" />
                 <AnchorPoint />
                 <Position X="40.0000" Y="30.0000" />

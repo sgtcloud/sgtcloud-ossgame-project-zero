@@ -42,8 +42,13 @@
           <FilePathData Path="TitleLayer.csd" />
           <FilePathData Path="Star.csd" />
           <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="GoldLayer.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="HeroBtn.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Equiplayer.csd" />
+        <ActiveDocument Path="SkillView.csd" />
       </Value>
     </Item>
   </Properties>

@@ -1,0 +1,160 @@
+{
+  "ID": "b254df5f-5e99-412a-bddf-e3f91484e956",
+  "Version": "2.3.3.0",
+  "Name": "Blood",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 8,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 265,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "bloodUI/blood_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 29,
+                "Scale9OriginY": 5,
+                "Scale9Width": 30,
+                "Scale9Height": 8,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 9,
+                "ActionTag": 655272865,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 15.0
+                },
+                "Name": "blood_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "bloodUI/blood_bar.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.1018
+                },
+                "Position": {
+                  "X": 3.6967,
+                  "Y": 3.4633
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0246,
+                  "Y": 0.2309
+                },
+                "PreSize": {
+                  "X": 0.9467,
+                  "Y": 0.7333
+                },
+                "LeftMargin": 3.6967,
+                "RightMargin": 4.3033,
+                "TopMargin": 1.6565,
+                "BottomMargin": 2.3435,
+                "Tag": 10,
+                "ActionTag": 405491421,
+                "Size": {
+                  "X": 142.0,
+                  "Y": 11.0
+                },
+                "Name": "blood_bar",
+                "ctype": "LoadingBarObjectData"
+              }
+            ],
+            "ActionTag": -1138515971,
+            "Size": {
+              "X": 150.0,
+              "Y": 15.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 150.0,
+          "Y": 15.0
+        },
+        "Name": "blood",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "bloodUI/blood_bar.png",
+        "bloodUI/blood_bg.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
