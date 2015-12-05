@@ -38,9 +38,12 @@
           <FilePathData Path="EquipHeroView.csd" />
           <FilePathData Path="CloseBtn.csd" />
           <FilePathData Path="Equiplayer.csd" />
-          <FilePathData Path="EquipTitle.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="TitleLayer.csd" />
+          <FilePathData Path="Star.csd" />
+          <FilePathData Path="SkillView.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="EquipTitle.csd" />
+        <ActiveDocument Path="Equiplayer.csd" />
       </Value>
     </Item>
   </Properties>
