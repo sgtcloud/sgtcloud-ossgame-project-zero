@@ -1,3 +1,6 @@
+var MenuBtn = function(btn){
+    this.button = btn.getChildByName('btn');
+}
 var BattleMenu = cc.Node.extend({
     ctor:function(battle,res){
         this._super();
@@ -11,27 +14,58 @@ var BattleMenu = cc.Node.extend({
         };
     }
 });
+var SkkillIcon = function(battle,root,index){
+    this.button = root.getChildByName('skill_btn');
+    this.deadTimeTitle = root.getChildByName('die_text');
+    this.deadTimeText = root.getChildByName('die_time_text');
+    this.coolTimeText = root.getChildByName('CD_time_text');
+
+    this.deadTimeTitle.setVisible(false);
+    this.deadTimeText.setVisible(false);
+    this.coolTimeText.setVisible(false);
+
+    this.button.addClickEventListener(function(){
+
+    });
+
+    this.setVisible = function(visit){
+        root.setVisible(visit);
+    }
+    this.showDead = function(){
+        this.deadTimeTitle.setVisible(true);
+        this.deadTimeText.setVisible(true);
+        this.coolTimeText.setVisible(false);
+    }
+    this.showCooldown = function(){
+        this.deadTimeTitle.setVisible(false);
+        this.deadTimeText.setVisible(false);
+        this.coolTimeText.setVisible(true);
+    }
+    this.showActive = function(){
+        this.deadTimeTitle.setVisible(false);
+        this.deadTimeText.setVisible(false);
+        this.coolTimeText.setVisible(false);
+    }
+    this.setDeadTime = function(time){
+        this.deadTimeText.setString(time);
+    }
+    this.setCoolTime = function(time){
+        this.coolTimeText.setString(time);
+    }
+}
 var SkillListMenu = BattleMenu.extend({
     ctor:function(battle){
         this._super(battle,res.skill_layer_json);
-        this.skills = [];
+        skills = [];
         for(var i=0;i<7;i++){
             var pane = this.root.getChildByName('skill'+(i+1)).getChildByName('root');
-            var skill = {};
-            skill.root = pane;
-            skill.button =pane.getChildByName('skill_btn');
-            skill.deadTimeTitle = pane.getChildByName('die_text');
-            skill.deadTimeText = pane.getChildByName('die_time_text');
-            skill.coolTimeText = pane.getChildByName('CD_time_text');
+            var skill = new SkkillIcon(battle,pane,i);
             if(i < player.getHeroCount()){
-                skill.root.setVisible(true);
+                skill.setVisible(true);
             }else{
-                skill.root.setVisible(false);
+                skill.setVisible(false);
             }
-            skill.deadTimeTitle.setVisible(false);
-            skill.deadTimeText.setVisible(false);
-            skill.coolTimeText.setVisible(true);
-            this.skills[i] = skill;
+            skills[i] = skill;
         }
         function format(time){
             return new Date(time).Format('mm:ss');
@@ -39,13 +73,13 @@ var SkillListMenu = BattleMenu.extend({
 
         Date.prototype.Format = function (fmt) { //author: meizz
             var o = {
-                "M+": this.getMonth() + 1, //ÔÂ·Ý
-                "d+": this.getDate(), //ÈÕ
+                "M+": this.getMonth() + 1, //ï¿½Â·ï¿½
+                "d+": this.getDate(), //ï¿½ï¿½
                 "h+": this.getHours(), //Ð¡Ê±
-                "m+": this.getMinutes(), //·Ö
-                "s+": this.getSeconds(), //Ãë
-                "q+": Math.floor((this.getMonth() + 3) / 3), //¼¾¶È
-                "S": this.getMilliseconds() //ºÁÃë
+                "m+": this.getMinutes(), //ï¿½ï¿½
+                "s+": this.getSeconds(), //ï¿½ï¿½
+                "q+": Math.floor((this.getMonth() + 3) / 3), //ï¿½ï¿½ï¿½ï¿½
+                "S": this.getMilliseconds() //ï¿½ï¿½ï¿½ï¿½
             };
             if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
             for (var k in o)
@@ -55,45 +89,33 @@ var SkillListMenu = BattleMenu.extend({
 
         this.refreshSkillState = function(){
             for(var i=0;i<7;i++) {
-                if (i < player.getHeroCount()) {
-                    var hero = battle.heroSprites[i];
-                    var skill = this.skills[i];
-
-                    if(hero.isDead()){
-                        skill.deadTimeTitle.setVisible(true);
-                        skill.deadTimeText.setVisible(true);
-                        skill.coolTimeText.setVisible(false);
+                skills[i].setVisible(false);
+            }
+            battle.foreachHeroSprite(function(hero,i){
+                var skill = skills[i];
+                skill.setVisible(true);
+                if(hero.isDead()){
+                    skill.showDead();
+                }else{
+                    if(hero.getCooldown() > 0){
+                        skill.showCooldown();
                     }else{
-                        if(hero.getCooldown() > 0){
-                            skill.deadTimeTitle.setVisible(false);
-                            skill.deadTimeText.setVisible(false);
-                            skill.coolTimeText.setVisible(true);
-                        }else{
-                            skill.deadTimeTitle.setVisible(false);
-                            skill.deadTimeText.setVisible(false);
-                            skill.coolTimeText.setVisible(false);
-                        }
+                        skill.showActive();
                     }
                 }
-            }
-
+            });
         }
 
 
         this.update = function(dt){
-            for(var i=0;i<7;i++){
-                if(i < player.getHeroCount()){
-                    var hero = battle.heroSprites[i];
-                    var skill = this.skills[i];
-                    if(hero.isDead()){
-                        skill.deadTimeText.setString(format(hero.getRecover()*1000));
-                    }else{
-                        if(hero.getCooldown() > 0) {
-                            skill.coolTimeText.setString(format(hero.getCooldown()*1000));
-                        }
-                    }
+            battle.foreachHeroSprite(function(hero,i){
+                var skill = skills[i];
+                if(hero.isDead()){
+                    skill.setDeadTime(format(hero.getRecover()*1000));
+                }else if(hero.getCooldown() > 0){
+                    skill.setCoolTime(format(hero.getCooldown()*1000));
                 }
-            }
+            });
         }
         this.onHeroDead = function(_hero){
             this.refreshSkillState();
@@ -120,15 +142,14 @@ var HeroListMenu = BattleMenu.extend({
         function buildHeroView(hero){
             var root = heroTemp.clone();
             var name = root.getChildByName('heroName_text');
-            name.setString(hero.getName());
-
             var lv = root.getChildByName('level_text');
-            lv.setString('Lv.'+hero.getLv());
-
             var dps = root.getChildByName('dps_text');
-            dps.setString(hero.getAttack());
-
             var stars = root.getChildByName('stars_fore');
+
+
+            name.setString(hero.getName());
+            lv.setString('Lv.'+hero.getLv());
+            dps.setString(hero.getAttack());
             for(var i=0;i<5;i++){
                 //var star = stars.getChildByName('icon0');
                 //if(i<hero.getStar()){
@@ -140,8 +161,17 @@ var HeroListMenu = BattleMenu.extend({
 
             return root;
         }
-        function buildSkillView(skillData){
+        function buildSkillView(skill){
             var root = skillTemp.clone();
+            var icon = root.getChildByName('skill_icon');
+            var name = root.getChildByName('skillName_text');
+            var desc = root.getChildByName('skill_text');
+            var lv = root.getChildByName('skillLevel_text');
+
+            name.setString(skill.getName());
+            desc.setString(skill.getDesc());
+            lv.setString(skill.getLv());
+
             return root;
         }
 
@@ -180,6 +210,31 @@ var EquipListMenu = BattleMenu.extend({
 
         function buildHeroView(hero){
             var root = heroView.clone();
+            var icon =  root.getChildByName('hero_icon');
+            var name =  root.getChildByName('heroName_text');
+            var lv =  root.getChildByName('level_text');
+            var dps =  root.getChildByName('dps_text');
+            var tap =  root.getChildByName('tatk_text');
+
+            name.setString(hero.getName());
+            lv.setString(hero.getLv());
+            dps.setString(hero.getAttack());
+            tap.setString(hero.getHit());
+
+            return root;
+        }
+
+        function buildEquipView(equip){
+            var root = equipView.clone();
+            var icon = root.getChildByName('equip_icon');
+            var name = root.getChildByName('equipName_text');
+            var desc = root.getChildByName('equipBuffDecs_text');
+            var lv = root.getChildByName('equipLevel_text');
+
+            name.setString(equip.getName());
+            desc.setString(equip.getDesc());
+            lv.setString(equip.getLv());
+
             return root;
         }
 
@@ -196,7 +251,7 @@ var EquipListMenu = BattleMenu.extend({
 
                 for(var j=0;j<heroData.getEquipCount();j++){
                     var equipData = heroData.getEquipData(j);
-                    var _equipView = equipView.clone();
+                    var _equipView = buildEquipView(equipData);
                     this.heroList.addChild(_equipView);
 
                     _heroView.equips = _heroView.equips || [];

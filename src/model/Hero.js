@@ -7,9 +7,15 @@ var Equip = function(id,lv){
   this.getId = function(){
     return id;
   }
+    this.getLv = function(){
+        return lv;
+    }
   this.getName = function(){
     return data.name;
   }
+    this.getDesc = function(){
+        return data.desc;
+    }
   this.getLife = function(){
     return data.life_base + data.life_grow * (lv-1);
   }
@@ -19,19 +25,26 @@ var Equip = function(id,lv){
   this.getHit = function(){
     return data.hit_base + data.hit_grow * (lv-1);
   }
-
 }
 var Skill = function(id,lv){
   var id = id;
   var lv = lv;
   var data = datas.skills[id];
 
+    console.log(data);
+
+    this.getLv = function(){
+        return lv;
+    }
   this.getId = function(){
     return id;
   }
   this.getName = function(){
     return data.name;
   }
+    this.getDesc = function(){
+        return data.desc;
+    }
   this.getLife = function(){
     return data.life_base + data.life_grow * (lv-1);
   }
@@ -41,6 +54,9 @@ var Skill = function(id,lv){
   this.getHit = function(){
     return data.hit_base + data.hit_grow * (lv-1);
   }
+    this.isUseable = function(){
+        return data.useable;
+    }
 }
 var Hero  = function(record){
   var id = record.id;
@@ -60,6 +76,9 @@ var Hero  = function(record){
     var lv = record.skills[i];
     skills[i] = new Skill(skill,lv);
   }
+    this.isLocked = function(){
+        return lv <= 0;
+    }
 
   this.getId = function(){
     return id;
@@ -90,21 +109,30 @@ var Hero  = function(record){
     return skills[i];
   }
   this.getLife = function(){
-    var val = data.levelDatas[lv-1].life;
+      if(this.isLocked()){
+          return 0;
+      }
+    var val = getLevelData(data,"life",lv);
     for(var i in equips){
       val += equips[i].getLife();
     }
     return val;
   }
   this.getAttack = function(){
-    var val = data.levelDatas[lv-1].attack;
+      if(this.isLocked()){
+          return 0;
+      }
+    var val = getLevelData(data,"attack",lv);
     for(var i in equips){
       val += equips[i].getAttack();
     }
     return val;
   }
   this.getHit = function(){
-    var val = data.levelDatas[lv-1].tap;
+      if(this.isLocked()){
+          return 0;
+      }
+    var val = getLevelData(data,"tap",lv);
     for(var i in equips){
       val += equips[i].getHit();
     }
@@ -123,6 +151,14 @@ var Hero  = function(record){
     return val;
   }
   this.getAnimateDelay = function(){
-    return data.animate;
+      var val = getLevelData(data,"atk_period",lv);
+      return val;
   }
+
+    this.doUnlock = function(){
+        if(lv > 0){
+            return false;
+        }
+        return true;
+    }
 }

@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero103" Type="Node" ID="7b377488-5e91-457e-b490-6e0af0786f32" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="72" Speed="0.1667">
+      <Animation Duration="72" Speed="0.5000">
         <Timeline ActionTag="2044631140" Property="Position">
           <PointFrame FrameIndex="0" X="-26.5338" Y="-13.9781">
             <EasingData Type="0" />
@@ -181,21 +181,21 @@
           <RenderColor A="255" R="224" G="255" B="255" />
         </AnimationInfo>
         <AnimationInfo Name="skill" StartIndex="63" EndIndex="72">
-          <RenderColor A="150" R="65" G="105" B="225" />
+          <RenderColor A="255" R="65" G="105" B="225" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="4" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero103" ActionTag="2044631140" Tag="8" IconVisible="False" LeftMargin="-79.9443" RightMargin="-27.0557" TopMargin="-82.0223" BottomMargin="-13.9777" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero103" ActionTag="2044631140" Tag="8" IconVisible="False" LeftMargin="-80.0338" RightMargin="-26.9662" TopMargin="-82.0219" BottomMargin="-13.9781" ctype="SpriteObjectData">
             <Size X="107.0000" Y="96.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-26.4443" Y="-13.9777" />
+            <Position X="-26.5338" Y="-13.9781" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero103/hero103_skill04.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero103/hero103_atk01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

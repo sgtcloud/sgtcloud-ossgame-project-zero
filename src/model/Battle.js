@@ -16,13 +16,13 @@ var Enemy = function(src){
     return data.file;
   }
   this.getLife = function(){
-    return getProperValue(data.life,lv-1);
+    return getLevelData(data,"life",lv);
   }
   this.getAttack = function(){
-    return getProperValue(data.attack,lv-1);
+    return getLevelData(data,"attack",lv);
   }
   this.getAnimateDelay = function(){
-    return data.animate;
+    return getLevelData(data,"atk_period",lv);
   }
 }
 
@@ -105,76 +105,3 @@ var Stage = function(src){
     return false;
   }
 }
-
-// var Battle  = function(src){
-//   var id = src.stage;
-//   var state = src.state;
-//   var boss = src.boss;
-//   var data = datas.battles[id];
-//   var enemys = [];
-//   for(var i in data.enemys){
-//     enemys[i] = new Enemy(data.enemys[i]);
-//   }
-//   return {
-//     img:function(){
-//       return data.img;
-//     },
-//     getEnemys:function(){
-//       return enemys;
-//     },
-//     getEnemy:function(index){
-//       return enemys[index];
-//     },
-//     getEnemyCount:function(){
-//       return enemys.length;
-//     },
-//     getEnemysLife:function(){
-//       var life = 0;
-//       for(var i=0;i<enemys.length;i++){
-//         life += enemys[i].getLife();
-//       }
-//       return life;
-//     },
-//     getStage:function(){
-//       return stage;
-//     },
-//     getState:function(){
-//       return state;
-//     },
-//     getNext:function(){
-//       return data.next;
-//     },
-//     getId:function(){
-//       return id;
-//     },
-//     setId:function(newId){
-//       id = newId;
-//       state = 0;
-//       data = datas.battles[id];
-//       var enemys = [];
-//       for(var i in data.enemys){
-//         enemys[i] = new Enemy(data.enemys[i]);
-//       }
-//     },
-//     change:function(next){
-//       id = next;
-//       data = datas.battles[id];
-//       enemys = [];
-//       for(var i in data.enemys){
-//         enemys[i] = new Enemy(data.enemys[i]);
-//       }
-//     },
-//     reset:function(){
-//       this.change(id);
-//     },
-//     load:function(src){
-//       id = src.id;
-//       state = src.state;
-//       data = data.battles[id];
-//       enemys = [];
-//       for(var i in data.battles[id].enemys){
-//         enemys[i] = new Enemy(datas.battles[id].enemys[i]);
-//       }
-//     }
-//   };
-// }
