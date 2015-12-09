@@ -13,7 +13,7 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -30.0,
+                "X": -14.8001,
                 "Y": -5.5,
                 "FrameIndex": 0,
                 "EasingData": {
@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 62.0,
-                "Y": -27.5,
+                "X": 37.5114,
+                "Y": -23.7004,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 60.0,
-                "Y": -43.5,
+                "X": 24.5344,
+                "Y": -27.4563,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -46.0,
-                "Y": -23.5,
+                "X": -32.4891,
+                "Y": -19.389,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -49,8 +49,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -17.0,
-                "Y": -6.5,
+                "X": -12.7333,
+                "Y": -9.0333,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,8 +58,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -13.0,
-                "Y": -4.8333,
+                "X": -9.2002,
+                "Y": -4.4111,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -67,8 +67,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -14.5,
-                "Y": -5.1667,
+                "X": -9.4337,
+                "Y": -4.3223,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -76,8 +76,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -32.0,
-                "Y": -4.5,
+                "X": -16.4892,
+                "Y": -6.0336,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -85,8 +85,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -30.0,
-                "Y": -5.5,
+                "X": -15.6003,
+                "Y": -5.9223,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -94,8 +94,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -30.0,
-                "Y": -27.5,
+                "X": -21.978,
+                "Y": -15.6783,
                 "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
@@ -103,8 +103,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -30.0,
-                "Y": -6.5,
+                "X": -23.9835,
+                "Y": -12.3838,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -16.4446,
+                "Y": -5.3445,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -112,8 +121,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -55.0,
-                "Y": -8.5,
+                "X": -33.4674,
+                "Y": -5.9669,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -121,8 +130,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -35.0,
-                "Y": -8.5,
+                "X": -21.067,
+                "Y": -5.9668,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -130,8 +139,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -62.0,
-                "Y": -7.5,
+                "X": -37.934,
+                "Y": -7.9224,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -139,8 +148,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -27.0,
-                "Y": -5.5,
+                "X": -17.2891,
+                "Y": -5.9223,
                 "FrameIndex": 51,
                 "EasingData": {
                   "Type": 0
@@ -148,9 +157,36 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -28.0,
-                "Y": -5.5,
+                "X": -17.4447,
+                "Y": -5.5001,
                 "FrameIndex": 54,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -17.2114,
+                "Y": -4.8501,
+                "FrameIndex": 57,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -14.8351,
+                "Y": -5.7715,
+                "FrameIndex": 60,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -16.7089,
+                "Y": -5.0208,
+                "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
                 },
@@ -460,7 +496,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero102/hero102_atk01.png",
+              "Path": "hero/hero102/hero102_dead01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -471,8 +507,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -30.0,
-              "Y": -5.5
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -488,15 +524,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -97.5,
-            "RightMargin": -37.5,
-            "TopMargin": -179.5,
-            "BottomMargin": -5.5,
+            "LeftMargin": -24.0,
+            "RightMargin": -24.0,
+            "TopMargin": -48.0,
             "Tag": 7,
             "ActionTag": 2020530987,
             "Size": {
-              "X": 135.0,
-              "Y": 185.0
+              "X": 48.0,
+              "Y": 48.0
             },
             "Name": "hero102",
             "ctype": "SpriteObjectData"

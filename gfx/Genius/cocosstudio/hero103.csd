@@ -4,52 +4,67 @@
     <Content>
       <Animation Duration="61" Speed="0.5000">
         <Timeline ActionTag="2044631140" Property="Position">
-          <PointFrame FrameIndex="0" X="-43.0000" Y="-21.0000">
+          <PointFrame FrameIndex="0" X="-26.5338" Y="-13.9781">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="3" X="44.0000" Y="-23.0000">
+          <PointFrame FrameIndex="3" X="27.5340" Y="-14.9782">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="6" X="45.0000" Y="-23.0000">
+          <PointFrame FrameIndex="6" X="27.6892" Y="-14.5560">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="9" X="35.0000" Y="-23.0000">
+          <PointFrame FrameIndex="9" X="21.4894" Y="-15.4004">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="12" X="23.0000" Y="-23.0000">
+          <PointFrame FrameIndex="12" X="14.5559" Y="-17.0892">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="15" X="-37.0000" Y="-20.0000">
+          <PointFrame FrameIndex="15" X="-22.0668" Y="-11.1337">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="18" X="-43.0000" Y="-22.0000">
+          <PointFrame FrameIndex="18" X="-26.5339" Y="-14.4004">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="24" X="-7.0000" Y="-35.0000">
+          <PointFrame FrameIndex="21" X="-26.4778" Y="-14.1452">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="27" X="10.0000" Y="-16.0000">
+          <PointFrame FrameIndex="24" X="-3.6224" Y="-21.9117">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="27" X="11.2665" Y="-7.5559">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="30" X="7.0000" Y="-3.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="36" X="-44.0000" Y="-21.0000">
+          <PointFrame FrameIndex="33" X="-1.6121" Y="-7.3558">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="39" X="-10.0000" Y="-31.0000">
+          <PointFrame FrameIndex="36" X="-26.6893" Y="-13.4004">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="42" X="-29.0000" Y="-26.0000">
+          <PointFrame FrameIndex="39" X="-6.7779" Y="-20.4449">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="45" X="-35.0000" Y="-25.0000">
+          <PointFrame FrameIndex="42" X="-18.4449" Y="-17.5559">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="48" X="-43.0000" Y="-23.0000">
+          <PointFrame FrameIndex="45" X="-20.2230" Y="-15.2895">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="51" X="-43.0000" Y="-22.0000">
+          <PointFrame FrameIndex="48" X="-26.6893" Y="-13.9782">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="51" X="-26.5338" Y="-14.8226">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="54" X="-27.1734" Y="-13.7536">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="57" X="-26.0828" Y="-13.7702">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="60" X="-27.2087" Y="-14.4201">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="61" X="0.0000" Y="0.0000">
@@ -145,15 +160,15 @@
       <ObjectData Name="Node" Tag="4" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero103" ActionTag="2044631140" Tag="8" IconVisible="False" LeftMargin="-130.0000" RightMargin="-44.0000" TopMargin="-135.0000" BottomMargin="-21.0000" ctype="SpriteObjectData">
-            <Size X="174.0000" Y="156.0000" />
+          <AbstractNodeData Name="hero103" ActionTag="2044631140" Tag="8" IconVisible="False" LeftMargin="-80.7087" RightMargin="-26.2913" TopMargin="-81.5799" BottomMargin="-14.4201" ctype="SpriteObjectData">
+            <Size X="107.0000" Y="96.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-43.0000" Y="-21.0000" />
+            <Position X="-27.2087" Y="-14.4201" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero103/hero103_atk01.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero103/hero103_stand04.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

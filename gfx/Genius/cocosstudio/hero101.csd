@@ -1,61 +1,73 @@
 <GameFile>
-  <PropertyGroup Name="enemy1001enemy1001" Type="Node" ID="2019fc0c-81d1-4bce-a9bb-d8b2b733f46b" Version="2.3.3.0" />
+  <PropertyGroup Name="hero101" Type="Node" ID="2019fc0c-81d1-4bce-a9bb-d8b2b733f46b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="64" Speed="0.5000" ActivedAnimationName="die">
         <Timeline ActionTag="1587691588" Property="Position">
-          <PointFrame FrameIndex="0" X="-36.0000" Y="-5.0000">
+          <PointFrame FrameIndex="0" X="-21.6445" Y="-5.1556">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="3" X="23.0000" Y="-39.0000">
+          <PointFrame FrameIndex="3" X="10.3341" Y="-19.1562">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="6" X="34.0000" Y="-25.0000">
+          <PointFrame FrameIndex="6" X="19.6451" Y="-11.9115">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="9" X="-15.0000" Y="-14.0000">
+          <PointFrame FrameIndex="9" X="-10.3557" Y="-6.8224">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="12" X="-10.0000" Y="-16.0000">
+          <PointFrame FrameIndex="12" X="-6.2000" Y="-7.9781">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="15" X="2.0000" Y="-26.0000">
+          <PointFrame FrameIndex="15" X="1.1556" Y="-14.8670">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="18" X="-6.0000" Y="-10.0000">
+          <PointFrame FrameIndex="18" X="-3.9999" Y="-5.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="21" X="-36.0000" Y="-6.0000">
+          <PointFrame FrameIndex="21" X="-20.8001" Y="-4.7334">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="24" X="-34.0000" Y="-6.0000">
+          <PointFrame FrameIndex="24" X="-20.4891" Y="-5.1556">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="27" X="-28.0000" Y="-6.0000">
+          <PointFrame FrameIndex="27" X="-17.8668" Y="-3.4668">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="30" X="-25.4446" Y="-8.5333">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="33" X="-44.0000" Y="-6.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="36" X="-37.0000" Y="-6.0000">
+          <PointFrame FrameIndex="36" X="-20.2220" Y="-5.4222">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="39" X="-35.0000" Y="-5.0000">
+          <PointFrame FrameIndex="39" X="-20.2226" Y="-5.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="42" X="-26.0000" Y="-4.0000">
+          <PointFrame FrameIndex="42" X="-11.2225" Y="-4.8444">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="45" X="-15.0000" Y="-4.0000">
+          <PointFrame FrameIndex="45" X="-5.7111" Y="-4.8444">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="48" X="-11.0000" Y="-4.0000">
+          <PointFrame FrameIndex="48" X="-1.7112" Y="-4.8444">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="51" X="-37.0000" Y="-7.0000">
+          <PointFrame FrameIndex="51" X="-21.6444" Y="-5.3112">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="54" X="-37.0000" Y="-6.0000">
+          <PointFrame FrameIndex="54" X="-20.1112" Y="-5.1556">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="57" X="-19.9887" Y="-5.1422">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="60" X="-20.0154" Y="-4.8939">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="63" X="-19.7811" Y="-5.0234">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="64" X="0.0000" Y="0.0000">
@@ -154,15 +166,15 @@
       <ObjectData Name="Node" Tag="2" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-113.5000" RightMargin="-41.5000" TopMargin="-155.0000" BottomMargin="-5.0000" ctype="SpriteObjectData">
-            <Size X="157.0000" Y="159.0000" />
+          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-24.0000" RightMargin="-24.0000" TopMargin="-48.0000" ctype="SpriteObjectData">
+            <Size X="48.0000" Y="48.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-36.0000" Y="-5.0000" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero101/hero101_atk01.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero101/hero101_dead01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

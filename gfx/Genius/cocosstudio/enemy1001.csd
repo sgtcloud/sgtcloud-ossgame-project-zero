@@ -7,19 +7,19 @@
           <PointFrame FrameIndex="0" X="-3.0000" Y="-4.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="3" X="28.0000" Y="-9.0000">
+          <PointFrame FrameIndex="3" X="26.0001" Y="-9.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="6" X="33.0000" Y="-12.0000">
+          <PointFrame FrameIndex="6" X="31.0000" Y="-12.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="9" X="59.0000" Y="-14.0000">
+          <PointFrame FrameIndex="9" X="36.9206" Y="-12.0801">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="12" X="30.0000" Y="-10.0000">
+          <PointFrame FrameIndex="12" X="17.0403" Y="-8.5601">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="15" X="-2.0000" Y="-7.0000">
+          <PointFrame FrameIndex="15" X="-0.5600" Y="-6.5200">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="18" X="-3.0000" Y="-4.0000">
@@ -31,10 +31,16 @@
           <PointFrame FrameIndex="30" X="-12.0000" Y="-4.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="39" X="-5.0000" Y="-4.0000">
+          <PointFrame FrameIndex="36" X="-3.3333" Y="-5.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="51" X="-3.0000" Y="-4.0000">
+          <PointFrame FrameIndex="39" X="4.0000" Y="-5.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="48" X="-3.2500" Y="-4.2500">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="51" X="-3.0000" Y="-5.0000">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -126,15 +132,15 @@
       <ObjectData Name="Node" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="enemy1001" ActionTag="-1020353857" Tag="5" IconVisible="False" LeftMargin="-72.0000" RightMargin="-66.0000" TopMargin="-158.0000" BottomMargin="-4.0000" ctype="SpriteObjectData">
-            <Size X="138.0000" Y="162.0000" />
+          <AbstractNodeData Name="enemy1001" ActionTag="-1020353857" Tag="5" IconVisible="False" LeftMargin="-46.0000" RightMargin="-40.0000" TopMargin="-96.0000" BottomMargin="-5.0000" ctype="SpriteObjectData">
+            <Size X="86.0000" Y="101.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-3.0000" Y="-4.0000" />
+            <Position X="-3.0000" Y="-5.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="enemy/enemy1001/enemy1001_atk01.png" Plist="" />
+            <FileData Type="Normal" Path="enemy/enemy1001/enemy1001_stand04.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
