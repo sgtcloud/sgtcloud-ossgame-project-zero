@@ -57,6 +57,10 @@
             <Image Name="hero101_stand03.png" />
             <Image Name="hero101_stand04.png" />
             <Image Name="hero101_dead01.png" />
+            <Image Name="hero101_skill01.png" />
+            <Image Name="hero101_skill02.png" />
+            <Image Name="hero101_skill03.png" />
+            <Image Name="hero101_skill04.png" />
           </Folder>
           <Folder Name="hero102">
             <Image Name="hero102_atk01.png" />
@@ -81,8 +85,11 @@
             <Image Name="hero102_stand02.png" />
             <Image Name="hero102_stand03.png" />
             <Image Name="hero102_stand04.png" />
-            <Image Name="hero101_dead01.png" />
             <Image Name="hero102_dead01.png" />
+            <Image Name="hero102_skill01.png" />
+            <Image Name="hero102_skill02.png" />
+            <Image Name="hero102_skill03.png" />
+            <Image Name="hero102_skill04.png" />
           </Folder>
           <Folder Name="hero103">
             <Image Name="hero103_atk01.png" />
@@ -106,10 +113,39 @@
             <Image Name="hero103_stand02.png" />
             <Image Name="hero103_stand03.png" />
             <Image Name="hero103_stand04.png" />
-            <Image Name="hero101_dead01.png" />
             <Image Name="hero103_dead01.png" />
+            <Image Name="hero103_skill01.png" />
+            <Image Name="hero103_skill02.png" />
+            <Image Name="hero103_skill03.png" />
+            <Image Name="hero103_skill04.png" />
           </Folder>
         </Folder>
+        <Folder Name="effect">
+          <Folder Name="effect5001">
+            <Image Name="effect5001_01.png" />
+            <Image Name="effect5001_02.png" />
+            <Image Name="effect5001_03.png" />
+            <Image Name="effect5001_04.png" />
+            <Image Name="effect5001_05.png" />
+            <Image Name="effect5001_06.png" />
+            <Image Name="effect5001_07.png" />
+            <Image Name="effect5001_08.png" />
+            <Image Name="effect5001_09.png" />
+          </Folder>
+          <Folder Name="effect5002">
+            <Image Name="effect5001_01.png" />
+            <Image Name="effect5001_02.png" />
+            <Image Name="effect5001_03.png" />
+            <Image Name="effect5001_04.png" />
+            <Image Name="effect5001_05.png" />
+            <Image Name="effect5001_06.png" />
+            <Image Name="effect5001_07.png" />
+            <Image Name="effect5001_08.png" />
+            <Image Name="effect5001_09.png" />
+          </Folder>
+        </Folder>
+        <Project Name="effect5001.csd" Type="Node" />
+        <Project Name="effect5002.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -35,8 +35,10 @@
           <FilePathData Path="hero101.csd" />
           <FilePathData Path="hero102.csd" />
           <FilePathData Path="hero103.csd" />
+          <FilePathData Path="effect5001.csd" />
+          <FilePathData Path="effect5002.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="hero103.csd" />
+        <ActiveDocument Path="effect5002.csd" />
       </Value>
     </Item>
   </Properties>
