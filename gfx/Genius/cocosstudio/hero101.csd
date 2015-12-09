@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero101" Type="Node" ID="2019fc0c-81d1-4bce-a9bb-d8b2b733f46b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="64" Speed="0.5000" ActivedAnimationName="die">
+      <Animation Duration="75" Speed="0.5000" ActivedAnimationName="die">
         <Timeline ActionTag="1587691588" Property="Position">
           <PointFrame FrameIndex="0" X="-21.6445" Y="-5.1556">
             <EasingData Type="0" />
@@ -71,6 +71,18 @@
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="64" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="66" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="69" X="-16.6228" Y="-0.3778">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="72" X="-8.3111" Y="-0.3778">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="75" X="-21.9116" Y="-3.4000">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -144,6 +156,23 @@
           <TextureFrame FrameIndex="64" Tween="False">
             <TextureFile Type="Normal" Path="hero/hero101/hero101_dead01.png" Plist="" />
           </TextureFrame>
+          <TextureFrame FrameIndex="66" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill01.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="69" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="72" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="75" Tween="False">
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill04.png" Plist="" />
+          </TextureFrame>
+        </Timeline>
+        <Timeline ActionTag="1587691588" Property="BlendFunc">
+          <BlendFuncFrame FrameIndex="69" Tween="False" Src="770" Dst="771" />
+          <BlendFuncFrame FrameIndex="72" Tween="False" Src="770" Dst="771" />
+          <BlendFuncFrame FrameIndex="75" Tween="False" Src="770" Dst="771" />
         </Timeline>
       </Animation>
       <AnimationList>
@@ -162,12 +191,15 @@
         <AnimationInfo Name="dead" StartIndex="64" EndIndex="65">
           <RenderColor A="255" R="221" G="160" B="221" />
         </AnimationInfo>
+        <AnimationInfo Name="skill" StartIndex="66" EndIndex="75">
+          <RenderColor A="255" R="100" G="149" B="237" />
+        </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="2" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-24.0000" RightMargin="-24.0000" TopMargin="-48.0000" ctype="SpriteObjectData">
-            <Size X="48.0000" Y="48.0000" />
+          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-21.5000" RightMargin="-21.5000" TopMargin="-53.0000" ctype="SpriteObjectData">
+            <Size X="43.0000" Y="53.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />

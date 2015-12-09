@@ -44,43 +44,6 @@ function showCover(){
 }
 function showGame(){
   cc.director.runScene(game);
-  // var scene = ccs.csLoader.createNode(res.game_scene_json);
-  // var playerPane = scene.getChildByName("player_pane");
-  // var listPane = scene.getChildByName("list_pane");
-  // var heroList = listPane.getChildByName("hero_list");
-  // var updatePlayer = function(){
-  //   playerPane.getChildByName("player_name").setString(player.name);
-  // };
-
-  // console.log(heroList);
-
-  // console.log(view);
-
-  // var default_item = new ccui.Layout();
-  // default_item.setTouchEnabled(true);
-  // default_item.setContentSize(cc.size(640,200));
-  // default_item.width = heroList.width;
-  // heroList.setItemModel(default_item);
-  //
-  // for (var i = 0; i < 20; ++i) {
-  //   heroList.pushBackDefaultItem();
-  // }
-  // for (var i = 0; i < 20; ++i) {
-  //   var layer = new ccui.Layout();
-  //   var view = ccs.csLoader.createNode(res.hero_view_json);
-  //   layer.addChild(view);
-  //   heroList.insertCustomItem(layer);
-  // }
-  //       for (var i = 0; i < 20; ++i) {
-  //         // var lblLayer=new ccui.Layout();
-  //         heroList.insertCustomItem(view);
-  //       }
-  // heroList.insertDefaultItem(2);
-  // heroList.insertCustomItem(view);
-
-  // heroList.addChild(view);
-
-
 }
 
 

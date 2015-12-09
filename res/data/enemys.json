@@ -2,23 +2,89 @@
   "10001":{
     "file":"enemy_101_json",
     "name":"敌人1",
-    "animate":2.5,
-    "life":[
-      1000,110,120,130,140,150,160,170,180,190
-    ],
-    "attack":[
-      1000,11,12,13,14,15,16,17,18,19
+    "levelDatas":[
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      },
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      }
     ]
   },
   "20001":{
     "file":"enemy_101_json",
     "name":"BOSS1",
-    "animate":1.5,
-    "life":[
-      1000,1100,1200,1300,1400,1500,1600,1700,1800,1900
-    ],
-    "attack":[
-      100,110,120,130,140,150,160,170,180,190
+    "levelDatas":[
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      },
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
+      }
     ]
   }
 }

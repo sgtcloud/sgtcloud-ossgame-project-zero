@@ -114,6 +114,33 @@
           <Image Name="hero103_atk01.png" />
         </Folder>
         <Project Name="GoldLayer.csd" Type="Layer" />
+        <Project Name="Prompt1Layer.csd" Type="Layer" />
+        <Project Name="Prompt2Layer.csd" Type="Layer" />
+        <Folder Name="mainUI">
+          <Image Name="bg_01.png" />
+          <Image Name="bg_02.png" />
+          <Image Name="bg_03.png" />
+          <Image Name="bg_04.png" />
+          <Image Name="bg_05.png" />
+          <Image Name="bg_06.png" />
+          <Image Name="bg_07.png" />
+          <Image Name="bg_08.png" />
+          <Image Name="bg_09.png" />
+          <Image Name="bg_10.png" />
+          <Image Name="bg_11.png" />
+          <Image Name="bg_12.png" />
+          <Image Name="bg_13.png" />
+          <Image Name="bg_14.png" />
+          <Image Name="close_icon.png" />
+          <Image Name="diamond.png" />
+          <Image Name="equip_icon.png" />
+          <Image Name="gold.png" />
+          <Image Name="hero_icon.png" />
+          <Image Name="lock.png" />
+          <Image Name="relic.png" />
+          <Image Name="skill_icon.png" />
+          <Image Name="title_bg.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

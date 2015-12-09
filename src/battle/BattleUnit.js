@@ -71,13 +71,15 @@ var BattleUnit = cc.Node.extend({
     }
     this.showDamageNumber = function(val,ctr){
       var dmg = new DamageNumber(val,ctr);
-      dmg.setPosition(0,150);
+      dmg.setPosition(-10+Math.random()*20,150+Math.random()*20);
       this.addChild(dmg);
     }
     this.isDead = function(){
       return this.life <= 0;
     }
-
+    this.isActive = function(){
+        return true;
+    }
     this.onAttacked = function(){
       console.log("Unit Attack");
     }
@@ -87,6 +89,9 @@ var BattleUnit = cc.Node.extend({
     this.onDead = function(){
       console.log("Unit Dead");
     }
+      this.onClear = function(){
+          this.removeFromParent(true);
+      }
     this.doDamage = function(dmg,ctr){
       if(ctr){
         dmg *= ctr;
@@ -187,10 +192,13 @@ var HeroUnit = BattleUnit.extend({
       //  battle.resetBattle();
       //}
     }
-    this.onRecover = function(){
-      this.reset();
-      battle.onHeroRecover(this);
+    this.onRecover = function() {
+        this.reset();
+        battle.onHeroRecover(this);
     }
+      this.onUseSkill = function(){
+
+      }
     this.getRecover = function(){
       return this.recover;
     }
@@ -203,6 +211,9 @@ var HeroUnit = BattleUnit.extend({
         this.onRecover();
       }
     }
+      this.isActive = function(){
+          return !data.isLocked();
+      }
   }
 });
 
@@ -218,7 +229,7 @@ var EnemyUnit = BattleUnit.extend({
       }
     }
     this.onDamaged = function(){
-      battle.refreshEnemyLifeText();
+      battle.refreshEnemyLife();
     }
     this.onDead = function(){
       var win = battle.checkPlayerWin();
@@ -228,3 +239,4 @@ var EnemyUnit = BattleUnit.extend({
     }
   }
 });
+

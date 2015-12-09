@@ -24,6 +24,25 @@
           "unit":"gold",
           "value":100
         }
+      },
+      {
+        "life":100,
+        "attack":10,
+        "tap":1,
+        "atk_period":1.5,
+        "crit_chance":0.25,
+        "crit_rate":2.0,
+        "resurge":{
+          "time":10,
+          "cost":{
+            "unit":"gem",
+            "value":100
+          }
+        },
+        "upgrade":{
+          "unit":"gold",
+          "value":100
+        }
       }
     ]
   },

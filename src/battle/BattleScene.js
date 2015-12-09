@@ -1,148 +1,246 @@
+var SpriteGroup = function(_sprites){
+    var sprites = _sprites || [];
+
+    this.get = function(i){
+        return sprites[i];
+    }
+    this.count = function(){
+        return sprites.length;
+    }
+    this.foreach = function(callback,context){
+        for(var i in sprites){
+            callback.call(context,sprites[i],i);
+        }
+    }
+    this.push = function(sprite){
+        sprites.push(sprite);
+    }
+    this.clear = function(){
+        while(sprites.length > 0){
+            sprites[0].onClear();
+            sprites.splice(0,1);
+        }
+    }
+    this.getLife = function(){
+        var val = 0;
+        for(var i in sprites){
+            var sprite = sprites[i];
+            val += sprite.life;
+        }
+        return val;
+    }
+    this.resetSprites = function(){
+        for(var i in sprites){
+            var sprite = sprites[i];
+            sprite.reset();
+        }
+    }
+    this.findFirstAlive = function(){
+        for(var i in sprites){
+            var sprite = sprites[i];
+            if(sprite.life > 0){
+                return sprite;
+            }
+        }
+        return undefined;
+    }
+    this.findRandomAlive = function(){
+        var temp = [];
+        for(var i in sprites){
+            var sprite = sprites;
+            if(sprite.life > 0){
+                temp.push(sprite);
+            }
+        }
+        if(temp.length > 0){
+            var rand = Math.round(Math.random()*(temp.length-1));
+            return temp[rand];
+        }
+        return undefined;
+    }
+}
+
+var TitleLayer = cc.Node.extend({
+    ctor:function(battle){
+        this._super();
+        var layer = ccs.csLoader.createNode(res.title_layer_json);
+        this.addChild(layer);
+
+        var root = layer.getChildByName('root');
+        var pane = root.getChildByName('box');
+        this.playerDiamondText = pane.getChildByName('gold_text');
+        this.playerRelicText = pane.getChildByName('relic_text');
+        this.battleStateText = root.getChildByName('level_text');
+        this.goBossBtn = root.getChildByName('fight_btn');
+        this.liveBossBtn = root.getChildByName('live_btn');
+        this.refreshPlayerDiamondText = function(){
+            this.playerDiamondText.setString(player.getGem());
+        };
+        this.refreshPlayerRelicText = function(){
+            this.playerRelicText.setString(player.getRelic());
+        }
+        this.refreshBattleState = function(){
+            var stage = player.getStageData();
+            this.battleStateText.setString((stage.getBattleState()+1) + '/' + stage.getBattleCount());
+            if(stage.isBossBattle()){
+                this.battleStateText.setVisible(false);
+                this.goBossBtn.setVisible(false);
+                this.liveBossBtn.setVisible(true);
+            }else{
+                if(stage.isLastBattle()){
+                    if(stage.isAutoBoss()){
+                        this.battleStateText.setVisible(true);
+                        this.goBossBtn.setVisible(false);
+                        this.liveBossBtn.setVisible(false);
+                    }else{
+                        this.battleStateText.setVisible(false);
+                        this.goBossBtn.setVisible(true);
+                        this.liveBossBtn.setVisible(false);
+                    }
+                }else{
+                    this.battleStateText.setVisible(true);
+                    this.goBossBtn.setVisible(false);
+                    this.liveBossBtn.setVisible(false);
+                }
+            }
+        }
+    }
+});
+
+var BattleLayer = cc.Node.extend({
+    ctor:function(battle){
+        this._super();
+        var layer = ccs.csLoader.createNode(res.batter_layer_json);
+        this.addChild(layer);
+
+        this.heroSprites = new SpriteGroup();
+        this.enemySprites = new SpriteGroup();
+
+        var root = layer.getChildByName('root');
+        this.enemyLifeText = root.getChildByName('enemy_life_text');
+        this.enemyLifeBar = root.getChildByName('enemy_life_bar');
+
+        this.refreshEnemyLife = function(){
+            var battle = player.getStageData().getCurrentBattle();
+            var max = battle.getEnemysLife();
+            var life = this.enemySprites.getLife();
+            this.enemyLifeText.setString(life);
+            this.enemyLifeBar.setPercent(life/max*100);
+        };
+        this.bindPlayerTapEvent = function(){
+            var root = layer.getChildByName('root');
+            var tap = root.getChildByName('tap');
+            var listener = cc.EventListener.create({
+                event : cc.EventListener.MOUSE,
+                onMouseDown : function(event) {
+                    var pos = event.getLocation(); //当前事件发生的光标位置
+                    pos.y -= 120;
+                    var target = event.getCurrentTarget(); //事件绑定的目标
+                    //判断当前事件发生的位置是否在事件目标区域内
+                    if( cc.rectContainsPoint(target.getBoundingBox(), pos) ) {
+                        // cc.log("Mouse Down");
+                        // console.log(self);
+                        self.onPlayerTap();
+                        return true;
+                    }
+                    return false;
+                },
+                onMouseUp : function(event) {
+                    var pos = event.getLocation();
+                    pos.y -= 120;
+                    var target = event.getCurrentTarget();
+                    if( cc.rectContainsPoint(target.getBoundingBox(), pos) ) {
+                        // cc.log("Mouse up");
+                        return true;
+                    }
+                    return false;
+                }
+            });
+            cc.eventManager.addListener(listener, tap);
+        };
+
+
+        {//heros
+            var root = layer.getChildByName('root');
+            this.spritesLayer = root.getChildByName('sprites');
+            for(var i=0;i<player.getHeroCount();i++){
+                var pos = this.spritesLayer.getChildByName('hero'+(i+1));
+                var data = player.getHeroData(i);
+                var hero = new HeroUnit(battle,data);
+                this.heroSprites.push(hero);
+                pos.addChild(hero);
+            }
+        }
+        {//enemys
+            this.refreshBattleEnemys = function(){
+                var data = player.getStageData().getCurrentBattle();
+                this.enemySprites.clear();
+                for(var i=0;i<data.getEnemyCount();i++){
+                    var pos = this.spritesLayer.getChildByName('enemy'+(i+1));
+                    var enemy = new EnemyUnit(battle,data.getEnemyData(i));
+                    this.enemySprites.push(enemy);
+                    pos.addChild(enemy);
+                }
+            }
+        }
+
+        this.bindPlayerTapEvent();
+    }
+
+});
 
 var BattleScene = cc.Scene.extend({
-	onEnter:function(){
-    this._super();
-		var self = this;
-		var size = cc.winSize;
+	onEnter:function() {
+        this._super();
+        var self = this;
+        var size = cc.winSize;
+
+        {//battle
+            this.battleLayer = new BattleLayer(this);
+            this.battleLayer.setPosition(0,100);
+            this.addChild(this.battleLayer);
+            this.refreshEnemyLife = function(){
+                this.battleLayer.refreshEnemyLife();
+            }
+            this.refreshBattleEnemys = function(){
+                this.battleLayer.refreshBattleEnemys();
+            }
+            this.resetBattleHeros = function(){
+                this.battleLayer.heroSprites.resetSprites();
+            }
+            this.filtHeroTarget = function(){
+                return this.battleLayer.enemySprites.findFirstAlive();
+            }
+            this.filtEnemyTarget = function(){
+                return this.battleLayer.heroSprites.findRandomAlive();
+            }
+            this.checkPlayerWin = function(){
+                return !this.battleLayer.enemySprites.findFirstAlive();
+            }
+            this.checkPlayerLost = function(){
+                return !this.battleLayer.heroSprites.findFirstAlive();
+            }
+            this.foreachHeroSprite = function(callback){
+                this.battleLayer.heroSprites.foreach(callback);
+            }
+        }
+
+
+        {//title
+            this.titleLayer = new TitleLayer(this);
+            this.titleLayer.setPosition(0, 850);
+            this.addChild(this.titleLayer);
+            this.refreshTitleLayer = function(){
+                this.titleLayer.refreshPlayerDiamondText();
+                this.titleLayer.refreshPlayerRelicText();
+                this.titleLayer.refreshBattleState();
+            }
+        }
 
 		{//load
-			this.addChild(this.titleLayer = ccs.csLoader.createNode(res.title_layer_json));
-			this.addChild(this.battleLayer = ccs.csLoader.createNode(res.batter_layer_json));
+
 			this.addChild(this.menuLayer = ccs.csLoader.createNode(res.menu_layer_json));
-		}
 
-		{//titleLayer
-			this.titleLayer.setPosition(0,size.height-110)
-			{//diamond and relic
-				var root = this.titleLayer.getChildByName('root');
-				var pane = root.getChildByName('box');
-				this.playerDiamondText = pane.getChildByName('gold_text');
-				this.playerRelicText = pane.getChildByName('relic_text');
-				this.battleStateText = root.getChildByName('level_text');
-				this.goBossBtn = root.getChildByName('fight_btn');
-				this.liveBossBtn = root.getChildByName('live_btn');
-				this.refreshPlayerDiamondText = function(){
-					this.playerDiamondText.setString(player.getGem());
-				};
-				this.refreshPlayerRelicText = function(){
-					this.playerRelicText.setString(player.getRelic());
-				}
-				this.refreshBattleState = function(){
-					var stage = player.getStageData();
-					this.battleStateText.setString((stage.getBattleState()+1) + '/' + stage.getBattleCount());
-					if(stage.isBossBattle()){
-						this.battleStateText.setVisible(false);
-						this.goBossBtn.setVisible(false);
-						this.liveBossBtn.setVisible(true);
-					}else{
-						if(stage.isLastBattle()){
-							if(stage.isAutoBoss()){
-								this.battleStateText.setVisible(true);
-								this.goBossBtn.setVisible(false);
-								this.liveBossBtn.setVisible(false);
-							}else{
-								this.battleStateText.setVisible(false);
-								this.goBossBtn.setVisible(true);
-								this.liveBossBtn.setVisible(false);
-							}
-						}else{
-							this.battleStateText.setVisible(true);
-							this.goBossBtn.setVisible(false);
-							this.liveBossBtn.setVisible(false);
-						}
-					}
-				}
-			}
-		}
-
-		{//batttleLayer
-			var root = this.battleLayer.getChildByName('root');
-			this.playerGoldText = root.getChildByName('gold_text');
-			this.enemyLifeText = root.getChildByName('enemy_life_text');
-			this.enemyLifeBar = root.getChildByName('enemy_life_bar');
-			this.herosAttackText = root.getChildByName('atk_text');
-			this.playerTapText = root.getChildByName('tatk_text');
-
-			this.refresHerosAttackText = function(){
-				this.herosAttackText.setString(player.getAttack());
-			};
-			this.refreshPlayerTapText = function(){
-				this.playerTapText.setString(player.getHit());
-			};
-			this.refreshEnemyLifeText = function(){
-				var battle = player.getStageData().getCurrentBattle();
-				var max = battle.getEnemysLife();
-				var life = 0;
-				for(var i=0;i<this.enemySprites.length;i++){
-					life += this.enemySprites[i].life;
-				}
-				this.enemyLifeText.setString(life);
-				this.enemyLifeBar.setPercent(life/max*100);
-			};
-			this.bindPlayerTapEvent = function(){
-				var root = this.battleLayer.getChildByName('root');
-				var bg = root.getChildByName('battle_bg');
-				var listener = cc.EventListener.create({
-					event : cc.EventListener.MOUSE,
-					onMouseDown : function(event) {
-						var pos = event.getLocation(); //当前事件发生的光标位置
-						pos.y -= 120;
-						var target = event.getCurrentTarget(); //事件绑定的目标
-						//判断当前事件发生的位置是否在事件目标区域内
-						if( cc.rectContainsPoint(target.getBoundingBox(), pos) ) {
-							// cc.log("Mouse Down");
-							// console.log(self);
-							self.onPlayerTap();
-							return true;
-						}
-						return false;
-					},
-					onMouseUp : function(event) {
-						var pos = event.getLocation();
-						pos.y -= 120;
-						var target = event.getCurrentTarget();
-						if( cc.rectContainsPoint(target.getBoundingBox(), pos) ) {
-							// cc.log("Mouse up");
-							return true;
-						}
-						return false;
-					}
-				});
-				cc.eventManager.addListener(listener, bg);
-			};
-			this.battleLayer.setPosition(0,100);
-
-		}
-
-		{//unit
-			this.heroSprites = [];
-			this.enemySprites = [];
-			{//heros
-				var root = this.battleLayer.getChildByName('root');
-				this.spritesLayer = root.getChildByName('sprites');
-				for(var i=0;i<player.getHeroCount();i++){
-					var pos = this.spritesLayer.getChildByName('hero'+(i+1));
-					var hero = new HeroUnit(this,player.getHeroData(i));
-					this.heroSprites[i] = hero;
-					pos.addChild(this.heroSprites[i]);
-				}
-			}
-			{//enemys
-				this.refreshBattleEnemys = function(){
-					var battle = player.getStageData().getCurrentBattle();
-
-					for(var i=0;i<this.enemySprites.length;i++){
-						this.enemySprites[i].removeFromParent(true);
-					}
-					for(var i=0;i<battle.getEnemyCount();i++){
-						var pos = this.spritesLayer.getChildByName('enemy'+(i+1));
-						var enemy = new EnemyUnit(this,battle.getEnemyData(i));
-						this.enemySprites[i] = enemy;
-						pos.addChild(this.enemySprites[i]);
-					}
-				}
-
-			}
 		}
 
 		{//menuLayer
@@ -199,32 +297,9 @@ var BattleScene = cc.Scene.extend({
 					this.menuLayers[i].refreshPlayerGoldText();
 				}
 			}
-
 		}
 
 
-
-		this.filtHeroTarget = function(){
-			for(var i=0;i<this.enemySprites.length;i++){
-				if(this.enemySprites[i].life > 0){
-					return this.enemySprites[i];
-				}
-			}
-			return undefined;
-		}
-		this.filtEnemyTarget = function(){
-			var temp = [];
-			for(var i=0;i<this.heroSprites.length;i++){
-				if(this.heroSprites[i].life > 0){
-					temp.push(this.heroSprites[i]);
-				}
-			}
-			if(temp.length > 0){
-				var rand = Math.round(Math.random()*(temp.length-1));
-				return temp[rand];
-			}
-			return undefined;
-		}
 
 		this.onPlayerTap = function(){
 			var target = this.filtHeroTarget();
@@ -244,19 +319,15 @@ var BattleScene = cc.Scene.extend({
 		}
 		this.onChangeBattle = function(){
 			this.refreshBattleEnemys();
-			this.refreshEnemyLifeText();
-			this.refreshBattleState();
-			for(var i=0;i<this.heroSprites.length;i++){
-				this.heroSprites[i].reset();
-			}
+			this.refreshEnemyLife();
+			this.refreshTitleLayer();
+			this.resetBattleHeros();
 		}
 		this.onResetBattle = function(){
 			this.refreshBattleEnemys();
-			this.refreshEnemyLifeText();
-			this.refreshBattleState();
-			for(var i=0;i<this.heroSprites.length;i++){
-				this.heroSprites[i].reset();
-			}
+			this.refreshEnemyLife();
+			this.refreshTitleLayer();
+            this.resetBattleHeros();
 		}
 		this.goNextBattle = function(){
 			var next = player.getStageData().goNextBattle();
@@ -268,37 +339,26 @@ var BattleScene = cc.Scene.extend({
 				// this.changeBattle();
 			}
 		}
-		this.checkPlayerWin = function(){
-			for(var i=0;i<this.enemySprites.length;i++){
-				if(this.enemySprites[i].life > 0){
-					return false;
-				}
-			}
-			return true;
-		}
-		this.checkPlayerLost = function(){
-			for(var i=0;i<this.heroSprites.length;i++){
-				if(this.heroSprites[i].life > 0){
-					return false;
-				}
-			}
-			return true;
-		}
+
+
 		this.onHeroDead = function(hero){
 			this.menuLayers.main.onHeroDead(hero);
 		}
 		this.onHeroRecover = function(hero){
 			this.menuLayers.main.onHeroRecover(hero);
 		}
+        this.onUseSkill = function(i){
+
+        }
+
+
 
 		this.refreshBattleEnemys();
-		this.refreshEnemyLifeText();
 		this.refreshPlayerGoldText();
-		this.refreshPlayerDiamondText();
-		this.refreshPlayerRelicText();
-		this.refresHerosAttackText();
-		this.refreshPlayerTapText();
-		this.refreshBattleState();
-		this.bindPlayerTapEvent();
+
+        this.refreshEnemyLife();
+        this.refreshTitleLayer();
+
+
   }
 });
