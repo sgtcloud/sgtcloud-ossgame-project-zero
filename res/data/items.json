@@ -1,0 +1,134 @@
+{
+  "e10101": {
+    "name": "装备1",
+    "desc": "DSADSA",
+    "icon": "e10101",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "attack_value": 10,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "attack_value": 20,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e10102": {
+    "name": "装备2",
+    "desc": "DSADSA",
+    "icon": "e10102",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "attack_rate": 0.1,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "attack_rate": 0.2,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e10103": {
+    "name": "装备3",
+    "desc": "DSADSA",
+    "icon": "e10103",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "life_value": 10,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "life_value": 20,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e10104": {
+    "name": "装备4",
+    "desc": "DSADSA",
+    "icon": "e10104",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "life_rate": 0.1,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "life_rate": 0.2,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e10105": {
+    "name": "装备5",
+    "desc": "DSADSA",
+    "icon": "e10105",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "tap_value": 10,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "tap_value": 200,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e10106": {
+    "name": "装备6",
+    "desc": "DSADSA",
+    "icon": "e10106",
+    "Type": 0,
+    "levelDatas": [
+      {
+        "g_speed_rate": 0.5,
+        "upgrade": {
+          "value": 10,
+          "unit": "gold"
+        }
+      },
+      {
+        "g_speed_rate": 1.5,
+        "upgrade": {
+          "value": 20,
+          "unit": "gold"
+        }
+      }
+    ]
+  }
+}
