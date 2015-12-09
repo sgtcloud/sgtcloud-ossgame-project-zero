@@ -1,0 +1,578 @@
+{
+  "ID": "6fa71e5b-4460-4578-8b01-a9a0b3ddc79c",
+  "Version": "2.3.3.0",
+  "Name": "HeroBtn",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 278,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 447,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 279,
+                "ActionTag": -777523865,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/gold.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 5,
+                "Scale9OriginY": 5,
+                "Scale9Width": 30,
+                "Scale9Height": 30,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 40.6188,
+                  "Y": 53.5975
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2901,
+                  "Y": 0.67
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 40.6188,
+                "RightMargin": 84.3812,
+                "TopMargin": 11.4025,
+                "BottomMargin": 53.5975,
+                "Tag": 283,
+                "ActionTag": -1061613096,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 16,
+                "LabelText": "9999999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 86.7065,
+                  "Y": 61.9305
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6193,
+                  "Y": 0.7741
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.2
+                },
+                "LeftMargin": 58.7065,
+                "RightMargin": 25.2935,
+                "TopMargin": 10.0695,
+                "BottomMargin": 53.9305,
+                "Tag": 284,
+                "ActionTag": 980548288,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 16.0
+                },
+                "Name": "gold_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "LabelText": "英雄DPS",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 75.7139,
+                  "Y": 41.3231
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5408,
+                  "Y": 0.5165
+                },
+                "PreSize": {
+                  "X": 0.35,
+                  "Y": 0.175
+                },
+                "LeftMargin": 51.2139,
+                "RightMargin": 39.7861,
+                "TopMargin": 31.6769,
+                "BottomMargin": 34.3231,
+                "Tag": 285,
+                "ActionTag": 676575225,
+                "Size": {
+                  "X": 49.0,
+                  "Y": 14.0
+                },
+                "Name": "buff_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "+9999999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 75.966,
+                  "Y": 19.9138
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 38,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5426,
+                  "Y": 0.2489
+                },
+                "PreSize": {
+                  "X": 0.5143,
+                  "Y": 0.225
+                },
+                "LeftMargin": 39.966,
+                "RightMargin": 28.034,
+                "TopMargin": 51.0862,
+                "BottomMargin": 10.9138,
+                "Tag": 286,
+                "ActionTag": 626654702,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 18.0
+                },
+                "Name": "buffNum_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 16,
+                "LabelText": "Lv.9999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.3277,
+                  "Y": 61.6303
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5452,
+                  "Y": 0.7704
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.2
+                },
+                "LeftMargin": 48.3277,
+                "RightMargin": 35.6723,
+                "TopMargin": 10.3697,
+                "BottomMargin": 53.6303,
+                "Tag": 293,
+                "ActionTag": 553681443,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 16.0
+                },
+                "Name": "level_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/lock.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 29,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.8404,
+                  "Y": 31.0503
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5489,
+                  "Y": 0.3881
+                },
+                "PreSize": {
+                  "X": 0.2071,
+                  "Y": 0.4
+                },
+                "LeftMargin": 62.3404,
+                "RightMargin": 48.6596,
+                "TopMargin": 32.9497,
+                "BottomMargin": 15.0503,
+                "Tag": 294,
+                "ActionTag": 1681642591,
+                "Size": {
+                  "X": 29.0,
+                  "Y": 32.0
+                },
+                "Name": "lock",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 48.1188,
+                  "Y": 41.6033
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3437,
+                  "Y": 0.52
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 40.6188,
+                "RightMargin": 84.3812,
+                "TopMargin": 30.8967,
+                "BottomMargin": 34.1033,
+                "Tag": 367,
+                "ActionTag": 304582546,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "diamond",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 16,
+                "LabelText": "9999999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 86.7065,
+                  "Y": 40.54
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6193,
+                  "Y": 0.5067
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.2
+                },
+                "LeftMargin": 58.7065,
+                "RightMargin": 25.2935,
+                "TopMargin": 31.46,
+                "BottomMargin": 32.54,
+                "Tag": 368,
+                "ActionTag": 1097546671,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 16.0
+                },
+                "Name": "diamond_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "已满级",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 47.0003,
+                  "Y": 30.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3357,
+                  "Y": 0.375
+                },
+                "PreSize": {
+                  "X": 0.4286,
+                  "Y": 0.25
+                },
+                "LeftMargin": 47.0003,
+                "RightMargin": 32.9997,
+                "TopMargin": 30.0,
+                "BottomMargin": 30.0,
+                "Tag": 597,
+                "ActionTag": -559954175,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 20.0
+                },
+                "Name": "upMax_text",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -390795579,
+            "Size": {
+              "X": 140.0,
+              "Y": 80.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 80.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "heroUI/btn1.png",
+        "heroUI/btn2.png",
+        "heroUI/diamond.png",
+        "heroUI/gold.png",
+        "heroUI/lock.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,22 @@
+<UserData Version="2.3.3.0">
+  <Properties>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Windows" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="Equiplayer.csd" />
+          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="EquipTitle.csd" />
+          <FilePathData Path="Btn.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Btn.csd" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

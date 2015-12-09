@@ -1,0 +1,116 @@
+<Solution>
+  <PropertyGroup Name="Genius" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="enemy1001.csd" Type="Node" />
+        <Project Name="hero101.csd" Type="Node" />
+        <Project Name="hero102.csd" Type="Node" />
+        <Project Name="hero103.csd" Type="Node" />
+        <Folder Name="enemy">
+          <Folder Name="enemy1001">
+            <Image Name="enemy1001_atk01.png" />
+            <Image Name="enemy1001_atk02.png" />
+            <Image Name="enemy1001_atk03.png" />
+            <Image Name="enemy1001_atk04.png" />
+            <Image Name="enemy1001_atk05.png" />
+            <Image Name="enemy1001_atk06.png" />
+            <Image Name="enemy1001_atk07.png" />
+            <Image Name="enemy1001_die01.png" />
+            <Image Name="enemy1001_die02.png" />
+            <Image Name="enemy1001_die03.png" />
+            <Image Name="enemy1001_die04.png" />
+            <Image Name="enemy1001_die05.png" />
+            <Image Name="enemy1001_hit01.png" />
+            <Image Name="enemy1001_hit02.png" />
+            <Image Name="enemy1001_hit03.png" />
+            <Image Name="enemy1001_hit04.png" />
+            <Image Name="enemy1001_hit05.png" />
+            <Image Name="enemy1001_stand01.png" />
+            <Image Name="enemy1001_stand02.png" />
+            <Image Name="enemy1001_stand03.png" />
+            <Image Name="enemy1001_stand04.png" />
+          </Folder>
+        </Folder>
+        <Folder Name="hero">
+          <Folder Name="hero101">
+            <Image Name="hero101_atk01.png" />
+            <Image Name="hero101_atk02.png" />
+            <Image Name="hero101_atk03.png" />
+            <Image Name="hero101_atk04.png" />
+            <Image Name="hero101_atk05.png" />
+            <Image Name="hero101_atk06.png" />
+            <Image Name="hero101_atk07.png" />
+            <Image Name="hero101_atk08.png" />
+            <Image Name="hero101_die01.png" />
+            <Image Name="hero101_die02.png" />
+            <Image Name="hero101_die03.png" />
+            <Image Name="hero101_die04.png" />
+            <Image Name="hero101_die05.png" />
+            <Image Name="hero101_hit01.png" />
+            <Image Name="hero101_hit02.png" />
+            <Image Name="hero101_hit03.png" />
+            <Image Name="hero101_hit04.png" />
+            <Image Name="hero101_hit05.png" />
+            <Image Name="hero101_stand01.png" />
+            <Image Name="hero101_stand02.png" />
+            <Image Name="hero101_stand03.png" />
+            <Image Name="hero101_stand04.png" />
+            <Image Name="hero101_dead01.png" />
+          </Folder>
+          <Folder Name="hero102">
+            <Image Name="hero102_atk01.png" />
+            <Image Name="hero102_atk02.png" />
+            <Image Name="hero102_atk03.png" />
+            <Image Name="hero102_atk04.png" />
+            <Image Name="hero102_atk05.png" />
+            <Image Name="hero102_atk06.png" />
+            <Image Name="hero102_atk07.png" />
+            <Image Name="hero102_atk08.png" />
+            <Image Name="hero102_die01.png" />
+            <Image Name="hero102_die02.png" />
+            <Image Name="hero102_die03.png" />
+            <Image Name="hero102_die04.png" />
+            <Image Name="hero102_die05.png" />
+            <Image Name="hero102_hit01.png" />
+            <Image Name="hero102_hit02.png" />
+            <Image Name="hero102_hit03.png" />
+            <Image Name="hero102_hit04.png" />
+            <Image Name="hero102_hit05.png" />
+            <Image Name="hero102_stand01.png" />
+            <Image Name="hero102_stand02.png" />
+            <Image Name="hero102_stand03.png" />
+            <Image Name="hero102_stand04.png" />
+            <Image Name="hero101_dead01.png" />
+            <Image Name="hero102_dead01.png" />
+          </Folder>
+          <Folder Name="hero103">
+            <Image Name="hero103_atk01.png" />
+            <Image Name="hero103_atk02.png" />
+            <Image Name="hero103_atk03.png" />
+            <Image Name="hero103_atk04.png" />
+            <Image Name="hero103_atk05.png" />
+            <Image Name="hero103_atk06.png" />
+            <Image Name="hero103_atk07.png" />
+            <Image Name="hero103_die01.png" />
+            <Image Name="hero103_die02.png" />
+            <Image Name="hero103_die03.png" />
+            <Image Name="hero103_die04.png" />
+            <Image Name="hero103_die05.png" />
+            <Image Name="hero103_hit01.png" />
+            <Image Name="hero103_hit02.png" />
+            <Image Name="hero103_hit03.png" />
+            <Image Name="hero103_hit04.png" />
+            <Image Name="hero103_hit05.png" />
+            <Image Name="hero103_stand01.png" />
+            <Image Name="hero103_stand02.png" />
+            <Image Name="hero103_stand03.png" />
+            <Image Name="hero103_stand04.png" />
+            <Image Name="hero101_dead01.png" />
+            <Image Name="hero103_dead01.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

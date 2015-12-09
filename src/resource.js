@@ -1,13 +1,16 @@
+var res_datas = {
+  stages_json : "res/data/stages.json",
+  battles_json : "res/data/battles.json",
+  heros_json : "res/data/heros.json",
+  enemys_json : "res/data/enemys.json",
+  exps_json : "res/data/exps.json",
+  equips_json : "res/data/equips.json",
+  skills_json : "res/data/skills.json"
+};
 var res = {
     HelloWorld_png : "res/HelloWorld.png",
     CloseNormal_png : "res/CloseNormal.png",
     CloseSelected_png : "res/CloseSelected.png",
-
-    battles_json : "res/data/battles.json",
-    heros_json : "res/data/heros.json",
-    enemys_json : "res/data/enemys.json",
-    exps_json : "res/data/exps.json",
-    equips_json : "res/data/equips.json",
 
     aaa_png : "res/aaa.png",
 
@@ -22,6 +25,31 @@ var res = {
     menu_layer_json : "res/MenuLayer.json",
     battle_layer_json : "res/BattleLayer.json",
     equip_layer_json : "res/EquipLayer.json",
+
+    title_layer_json : "res/TitleLayer.json",
+    batter_layer_json : "res/BatterLayer.json",
+    enemy_list_json : "res/EnemyList.json",
+    skill_icon_json : "res/Skillicon.json",
+    skill_layer_json : "res/SkillLayer.json",
+    gold_layer : "res/GoldLayer.json",
+    hero_btn_json : "res/HeroBtn.json",
+    equip_btn_json : "res/EquipBtn.json",
+    star_json : "res/Star.json",
+    hero_layer_json : "res/HeroLayer.json",
+    hero_view_json : "res/HeroView.json",
+    skill_view_json : "res/SkillView.json",
+    equip_layer_json : "res/Equiplayer.json",
+    equip_view_json : "res/EquipView.json",
+    equip_hero_view_json : "res/EquipHeroView.json",
+
+
+    hero_101_json : "res/hero101.json",
+    hero_102_json : "res/hero102.json",
+    hero_103_json : "res/hero103.json",
+
+    enemy_101_json : "res/enemy1001.json",
+
+    hero_blood_json : "res/blood.json",
 
     // hit_effect_json : "res/HitEffect.json",
     // hit_effect_0_png : "res/effects/player_hit_0.png",
@@ -45,9 +73,13 @@ var res = {
     skill_0_png : "res/effects/skill_0.png"
 };
 
+
 var g_resources = [];
 for (var i in res) {
     g_resources.push(res[i]);
+}
+for (var i in res_datas) {
+    g_resources.push(res_datas[i]);
 }
 
 

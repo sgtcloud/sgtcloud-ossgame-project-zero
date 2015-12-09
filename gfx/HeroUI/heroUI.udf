@@ -1,0 +1,24 @@
+<UserData Version="2.3.3.0">
+  <Properties>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Windows" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="Star.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="HeroDesc.csd" />
+          <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="Btn.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Btn.csd" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

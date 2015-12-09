@@ -4,71 +4,90 @@ var Player = function(src){
   var name = src.name;
   var gold = src.gold;
   var gem = src.gem;
+  var relic = src.relic;
   var vip = src.vip;
-  var battle = new Battle(src.battle);
+  var stage = new Stage(src.stage);
   var heros = [];
   for(var i in src.heros){
     heros[i] = new Hero(src.heros[i]);
   }
 
-  return {
-    getId:function(){
-      return id;
-    },
-    getName:function(){
-      return name;
-    },
-    getBattle:function(){
-      return battle;
-    },
-    getHeros:function(){
-      return heros;
-    },
-    getHero:function(id){
-      return heros[id];
-    },
-    getLife:function(){
-      var val = 0;
-      for(var i in heros){
-        var hero = heros[i];
-        val += hero.getLife();
-      }
-      return val;
-    },
-    getAttack:function(){
-      var val = 0;
-      for(var i in heros){
-        var hero = heros[i];
-        val += hero.getAttack();
-      }
-      return val;
-    },
-    getHit:function(){
-      var val = 0;
-      for(var i in heros){
-        var hero = heros[i];
-        val += hero.getHit();
-      }
-      return val;
-    },
-    getGold:function(){
-      return gold;
-    },
-    getGem:function(){
-      return gem;
-    },
-    getVip:function(){
-      return vip;
-    },
-    changeGold:function(price){
-      gold += price;
-    },
-    notifyStateWin:function(){
-      var bonus = battle.getBonus(battle.getState());
-      gold += bonus;
-    },
-    notifyBattleWin:function(){
+  this.getId = function(){
+    return id;
+  }
 
+  this.getName = function(){
+    return name;
+  }
+
+  this.getHeroCount = function(){
+    return heros.length;
+  }
+  this.getHeroData = function(id){
+    return heros[id];
+  }
+  this.getStageData = function(){
+    return stage;
+  }
+
+  this.getLife = function(){
+    var val = 0;
+    for(var i in heros){
+      var hero = heros[i];
+      val += hero.getLife();
     }
-  };
+    return val;
+  }
+  this.getAttack = function(){
+    var val = 0;
+    for(var i in heros){
+      var hero = heros[i];
+      val += hero.getAttack();
+    }
+    return val;
+  }
+  this.getHit = function(){
+    var val = 0;
+    for(var i in heros){
+      var hero = heros[i];
+      val += hero.getHit();
+    }
+    return val;
+  }
+  this.getGold = function(){
+    return gold;
+  }
+  this.getGem = function(){
+    return gem;
+  }
+  this.getRelic = function(){
+    return relic;
+  }
+  this.getVip = function(){
+    return vip;
+  }
+
+  this.changeGold = function(val){
+    gold += val;
+    if(gold < 0){
+      gold = 0;
+    }
+  }
+
+  this.changeStage = function(id){
+
+  }
+
+  // return {
+  //   changeGold:function(price){
+  //     gold += price;
+  //   },
+  //   notifyStateWin:function(){
+  //     var bonus = battle.getBonus(battle.getState());
+  //     gold += bonus;
+  //   },
+  //   notifyBattleWin:function(){
+  //
+  //   }
+  // };
 }

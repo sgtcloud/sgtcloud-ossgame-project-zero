@@ -1,0 +1,361 @@
+{
+  "ID": "6b29eb05-6146-4214-a918-3ec5c325181d",
+  "Version": "2.3.3.0",
+  "Name": "EnemyList",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 120,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ui/bg_01.png",
+              "Plist": ""
+            },
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 300,
+            "Scale9Height": 110,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 121,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ui/enemyicon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 80,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 43.4675,
+                  "Y": 61.5609
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1449,
+                  "Y": 0.5596
+                },
+                "PreSize": {
+                  "X": 0.2,
+                  "Y": 0.5455
+                },
+                "LeftMargin": 13.4675,
+                "RightMargin": 226.5325,
+                "TopMargin": 18.4391,
+                "BottomMargin": 31.5609,
+                "Tag": 122,
+                "ActionTag": -1128263822,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 60.0
+                },
+                "Name": "enemy_icon1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ui/enemyicon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 80,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 259.8733,
+                  "Y": 61.5609
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8662,
+                  "Y": 0.5596
+                },
+                "PreSize": {
+                  "X": 0.2,
+                  "Y": 0.5455
+                },
+                "LeftMargin": 229.8733,
+                "RightMargin": 10.1267,
+                "TopMargin": 18.4391,
+                "BottomMargin": 31.5609,
+                "Tag": 123,
+                "ActionTag": -1787543863,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 60.0
+                },
+                "Name": "enemy_icon3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ui/enemyicon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 80,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 151.6704,
+                  "Y": 66.5609
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5056,
+                  "Y": 0.6051
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.6364
+                },
+                "LeftMargin": 116.6704,
+                "RightMargin": 113.3296,
+                "TopMargin": 8.4391,
+                "BottomMargin": 31.5609,
+                "Tag": 124,
+                "ActionTag": -1202383961,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 70.0
+                },
+                "Name": "enemy_icon2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "9997",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 43.4676,
+                  "Y": 19.0329
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1449,
+                  "Y": 0.173
+                },
+                "PreSize": {
+                  "X": 0.12,
+                  "Y": 0.1636
+                },
+                "LeftMargin": 25.4676,
+                "RightMargin": 238.5324,
+                "TopMargin": 81.9671,
+                "BottomMargin": 10.0329,
+                "Tag": 125,
+                "ActionTag": -1946973175,
+                "Size": {
+                  "X": 36.0,
+                  "Y": 18.0
+                },
+                "Name": "level_text1",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "9998",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 151.6704,
+                  "Y": 19.0329
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5056,
+                  "Y": 0.173
+                },
+                "PreSize": {
+                  "X": 0.12,
+                  "Y": 0.1636
+                },
+                "LeftMargin": 133.6704,
+                "RightMargin": 130.3296,
+                "TopMargin": 81.9671,
+                "BottomMargin": 10.0329,
+                "Tag": 126,
+                "ActionTag": 1913587203,
+                "Size": {
+                  "X": 36.0,
+                  "Y": 18.0
+                },
+                "Name": "level_text2",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "9999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 259.8733,
+                  "Y": 19.0329
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8662,
+                  "Y": 0.173
+                },
+                "PreSize": {
+                  "X": 0.12,
+                  "Y": 0.1636
+                },
+                "LeftMargin": 241.8733,
+                "RightMargin": 22.1267,
+                "TopMargin": 81.9671,
+                "BottomMargin": 10.0329,
+                "Tag": 127,
+                "ActionTag": -822372138,
+                "Size": {
+                  "X": 36.0,
+                  "Y": 18.0
+                },
+                "Name": "level_text3",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1045868860,
+            "Size": {
+              "X": 300.0,
+              "Y": 110.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 300.0,
+          "Y": 110.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ui/bg_01.png",
+        "ui/enemyicon.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

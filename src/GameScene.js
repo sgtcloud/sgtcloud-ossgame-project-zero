@@ -1,10 +1,13 @@
 var BattleSprite = cc.Sprite.extend({
+  battle:null,
   data:null,
   type:null,
   animateTime:0,
   animateDelay:0,
-  ctor:function(data,type){
+  life:0,
+  ctor:function(battle,data,type){
     cc.Sprite.prototype.ctor.call(this);
+    this.battle = battle;
     this.type = type;
     this.refresh(data);
     if(type === 1){
@@ -15,6 +18,8 @@ var BattleSprite = cc.Sprite.extend({
   refresh:function(data){
     var self = this;
     self.data = data;
+    self.life = data.getLife();
+    console.log(self.life);
     var file = "res/units/"+data.getId()+".png";
     var img = cc.loader.getRes(file);
     if(img === 'undefined'){
@@ -31,19 +36,72 @@ var BattleSprite = cc.Sprite.extend({
   },
   update:function(dt){
     var self = this;
+    if(self.life <= 0){
+      return;
+    }
     self.animateTime += dt;
     if(self.animateTime >= self.data.getAnimateDelay()){
       self.animateTime -= self.data.getAnimateDelay();
-      var sx = self.x;
-      var dx = self.x + 30;
-      var y = self.y;
-      if(self.type === 1){
-        dx = self.x - 30;
-      }
-      var ac1 = cc.moveTo(0.1,dx,y);
-      var ac2 = cc.moveTo(0.1,sx,y);
-      self.runAction(cc.sequence(ac1,ac2));
+      // var sx = self.x;
+      // var dx = self.x + 30;
+      // var y = self.y;
+      // if(self.type === 1){
+      //   dx = self.x - 30;
+      // }
+      // var ac1 = cc.moveTo(0.1,dx,y);
+      // var ac2 = cc.moveTo(0.1,sx,y);
+      // self.runAction(cc.sequence(ac1,ac2));
+      self.showAttackAnimation();
+      self.onAttack();
+      // self.battle.onUnitAttack(self);
     }
+  },
+  showAttackAnimation:function(){
+    var self = this;
+    var a1 = cc.tintTo(0.025, 255,0,0);
+    var a2 = cc.tintTo(0.025, 255,255,255);
+    var a3 = cc.tintTo(0.025, 255,0,0);
+    var a4 = cc.tintTo(0.025, 255,255,255);
+    self.runAction(cc.sequence(a1,a2,a3,a4));
+  },
+  showHurtAnimation:function(){
+
+  },
+  onAttack:function(){
+
+  },
+  onHurt:function(){
+
+  },
+  onDeath:function(){
+
+  }
+});
+
+var PlayerSprite = BattleSprite.extend({
+  ctor:function(battle,data,type){
+    BattleSprite.prototype.ctor.call(this,battle,data,type);
+  },
+  onAttack:function(){
+    var self = this;
+    var battle = self.battle;
+    battle.damageEnemy(self.data.getAttack());
+  },
+  onDeath:function(){
+    this.setVisible(false);
+  }
+});
+var EnemySprite = BattleSprite.extend({
+  ctor:function(battle,data,type){
+    BattleSprite.prototype.ctor.call(this,battle,data,type);
+  },
+  onAttack:function(){
+    var self = this;
+    var battle = self.battle;
+    battle.damagePlayer(self.data.getAttack());
+  },
+  onDeath:function(){
+    this.setVisible(false);
   }
 });
 
@@ -73,9 +131,6 @@ var GameScene = cc.Scene.extend({
 
   playerLifeBar:null,
   enemyLifeBar:null,
-
-  playerLife:0,
-  enemyLife:0,
   battleTime:0,
   onEnter:function(){
     this._super();
@@ -179,17 +234,17 @@ var GameScene = cc.Scene.extend({
         for(var i in player.getHeros()){
           var pos = battlePane.getChildByName("hero_pos_"+i);
           var hero = player.getHero(i);
-          var sprite = new BattleSprite(hero,0);
+          var sprite = new PlayerSprite(self,hero,0);
           sprite.setAnchorPoint(0.5,0);
           pos.addChild(sprite);
-          self.heroSprites[hero.id] = sprite;
+          self.heroSprites[i] = sprite;
         }
       }
       var initEnemy = function(){
         var pos = battlePane.getChildByName("enemy_pos");
         var battle = player.getBattle();
         var enemy = battle.getEnemy(battle.getState());
-        self.enemySprite = new BattleSprite(enemy,1);
+        self.enemySprite = new EnemySprite(self,enemy,1);
         self.enemySprite.setAnchorPoint(0.5,0);
         self.enemySprite.setScaleX(-1);
         pos.addChild(self.enemySprite);
@@ -309,16 +364,18 @@ var GameScene = cc.Scene.extend({
     self.battleTime += dt;
     // console.log(dt);
     // console.log(self.enemyLife);
-    if(self.battleTime >= 1){
-      self.battleTime -= 1;
-      self.updateBattleAttack();
-    }
+    // if(self.battleTime >= 1){
+    //   self.battleTime -= 1;
+    //   self.updateBattleAttack();
+    // }
   },
   damageEnemy:function(damage){
     var self = this;
     var battle = player.getBattle();
-    self.enemyLife -= damage;
-    if(self.enemyLife <= 0){
+    var target = self.enemySprite;
+    target.life = Math.max(0,target.life-damage);
+    if(target.life <= 0){
+      target.onDeath();
       player.notifyStateWin();
       battle.nextState();
       var enemy = battle.getEnemy(battle.getState());
@@ -330,21 +387,16 @@ var GameScene = cc.Scene.extend({
     self.refreshBattleStatus(false);
     return false;
   },
-  updateBattleAttack:function(){
+  damagePlayer:function(damage){
     var self = this;
-    var battle = player.getBattle();
-    var enemy = battle.getEnemy(battle.getState());
-    var enemyAttack = enemy.getAttack();
-
-    self.playerLife -= enemyAttack;
-    if(self.playerLife <= 0){
-      self.refreshBattleStatus(true);
-      return;
+    var max = self.heroSprites.length;
+    var rand = Math.round(Math.random()*(max-1));
+    var target = self.heroSprites[rand];
+    target.life = Math.max(0,target.life-damage);
+    if(target.life <= 0){
+      target.onDeath();
     }
-
-    if(self.damageEnemy(player.getAttack())){
-      return;
-    }
+    self.refreshBattleStatus(false);
   },
   refreshBattleStatus:function(init){
     var self = this;
@@ -354,16 +406,24 @@ var GameScene = cc.Scene.extend({
     var playerLifeMax = player.getLife();
     var enemyLifeMax = enemy.getLife();
 
-    if(init){
-      self.playerLife = playerLifeMax;
-      self.enemyLife = enemyLifeMax;
-      self.battleTime = 0;
-    }
-    self.playerLifeBar.percent = self.playerLife / playerLifeMax * 100;
-    self.enemyLifeBar.percent = self.enemyLife / enemyLifeMax * 100;
+    var playerLife = 0;
+    var enemyLife = 0;
 
-    self.playerLifeText.setString(self.playerLife);
-    self.enemyLifeText.setString(self.enemyLife);
+    if(init){
+      playerLife = playerLifeMax;
+      enemyLife = enemyLifeMax;
+      self.battleTime = 0;
+    }else{
+      for(var i in self.heroSprites){
+        playerLife += self.heroSprites[i].life;
+      }
+      enemyLife += self.enemySprite.life;
+    }
+    self.playerLifeBar.percent = playerLife / playerLifeMax * 100;
+    self.enemyLifeBar.percent = enemyLife / enemyLifeMax * 100;
+
+    self.playerLifeText.setString(playerLife);
+    self.enemyLifeText.setString(enemyLife);
   },
   refreshPlayerStatus:function(){
     var self = this;
@@ -466,5 +526,5 @@ var GameScene = cc.Scene.extend({
 
   showDamageNumber:function(pos,parent){
 
-  },
+  }
 });

@@ -14,13 +14,16 @@
         "src/resource.js",
         "src/model/Datas.js",
         "src/model/Battle.js",
-        "src/model/Enemy.js",
-        "src/model/Equip.js",
         "src/model/Hero.js",
         "src/model/Player.js",
         "src/LogoScene.js",
         "src/CoverScene.js",
         "src/GameScene.js",
+
+        "src/battle/BattleConsts.js",
+        "src/battle/BattleScene.js",
+        "src/battle/BattleUnit.js",
+        "src/battle/BattleMenu.js",
         "src/apps.js"
     ]
 }
