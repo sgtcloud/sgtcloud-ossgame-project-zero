@@ -29,6 +29,14 @@ var SpriteGroup = function(_sprites){
         }
         return val;
     }
+    this.getMaxLife = function(){
+        var val = 0;
+        for(var i in sprites){
+            var sprite = sprites[i];
+            val += sprite.getMaxLife();
+        }
+        return val;
+    }
     this.resetSprites = function(){
         for(var i in sprites){
             var sprite = sprites[i];
@@ -47,7 +55,7 @@ var SpriteGroup = function(_sprites){
     this.findRandomAlive = function(){
         var temp = [];
         for(var i in sprites){
-            var sprite = sprites;
+            var sprite = sprites[i];
             if(sprite.life > 0){
                 temp.push(sprite);
             }
@@ -81,28 +89,31 @@ var TitleLayer = cc.Node.extend({
         }
         this.refreshBattleState = function(){
             var stage = player.getStageData();
-            this.battleStateText.setString((stage.getBattleState()+1) + '/' + stage.getBattleCount());
-            if(stage.isBossBattle()){
-                this.battleStateText.setVisible(false);
-                this.goBossBtn.setVisible(false);
-                this.liveBossBtn.setVisible(true);
-            }else{
-                if(stage.isLastBattle()){
-                    if(stage.isAutoBoss()){
-                        this.battleStateText.setVisible(true);
-                        this.goBossBtn.setVisible(false);
-                        this.liveBossBtn.setVisible(false);
-                    }else{
-                        this.battleStateText.setVisible(false);
-                        this.goBossBtn.setVisible(true);
-                        this.liveBossBtn.setVisible(false);
-                    }
-                }else{
-                    this.battleStateText.setVisible(true);
-                    this.goBossBtn.setVisible(false);
-                    this.liveBossBtn.setVisible(false);
-                }
-            }
+            this.battleStateText.setString((battle.battleCount+1) + '/' + stage.getRandomBattleCount());
+            this.goBossBtn.setVisible(false);
+            this.liveBossBtn.setVisible(true);
+
+            //if(stage.isBossBattle()){
+            //    this.battleStateText.setVisible(false);
+            //    this.goBossBtn.setVisible(false);
+            //    this.liveBossBtn.setVisible(true);
+            //}else{
+            //    if(stage.isLastBattle()){
+            //        if(stage.isAutoBoss()){
+            //            this.battleStateText.setVisible(true);
+            //            this.goBossBtn.setVisible(false);
+            //            this.liveBossBtn.setVisible(false);
+            //        }else{
+            //            this.battleStateText.setVisible(false);
+            //            this.goBossBtn.setVisible(true);
+            //            this.liveBossBtn.setVisible(false);
+            //        }
+            //    }else{
+            //        this.battleStateText.setVisible(true);
+            //        this.goBossBtn.setVisible(false);
+            //        this.liveBossBtn.setVisible(false);
+            //    }
+            //}
         }
     }
 });
@@ -110,20 +121,18 @@ var TitleLayer = cc.Node.extend({
 var BattleLayer = cc.Node.extend({
     ctor:function(battle){
         this._super();
+
         var layer = ccs.csLoader.createNode(res.batter_layer_json);
         this.addChild(layer);
 
-        this.heroSprites = new SpriteGroup();
-        this.enemySprites = new SpriteGroup();
 
         var root = layer.getChildByName('root');
         this.enemyLifeText = root.getChildByName('enemy_life_text');
         this.enemyLifeBar = root.getChildByName('enemy_life_bar');
 
         this.refreshEnemyLife = function(){
-            var battle = player.getStageData().getCurrentBattle();
-            var max = battle.getEnemysLife();
-            var life = this.enemySprites.getLife();
+            var max = battle.enemySprites.getMaxLife();
+            var life = battle.enemySprites.getLife();
             this.enemyLifeText.setString(life);
             this.enemyLifeBar.setPercent(life/max*100);
         };
@@ -159,28 +168,26 @@ var BattleLayer = cc.Node.extend({
             cc.eventManager.addListener(listener, tap);
         };
 
-
+        this.spritesLayer = root.getChildByName('sprites');
         {//heros
-            var root = layer.getChildByName('root');
-            this.spritesLayer = root.getChildByName('sprites');
-            for(var i=0;i<player.getHeroCount();i++){
-                var pos = this.spritesLayer.getChildByName('hero'+(i+1));
-                var data = player.getHeroData(i);
-                var hero = new HeroUnit(battle,data);
-                this.heroSprites.push(hero);
-                pos.addChild(hero);
+            this.heroPos = [];
+
+            for(var i=0;i<7;i++){
+                this.heroPos[i] = this.spritesLayer.getChildByName('hero'+(i+1));
             }
+            this.setHeroSprite = function(hero,index){
+                this.heroPos[index].addChild(hero);
+            }
+
+
         }
         {//enemys
-            this.refreshBattleEnemys = function(){
-                var data = player.getStageData().getCurrentBattle();
-                this.enemySprites.clear();
-                for(var i=0;i<data.getEnemyCount();i++){
-                    var pos = this.spritesLayer.getChildByName('enemy'+(i+1));
-                    var enemy = new EnemyUnit(battle,data.getEnemyData(i));
-                    this.enemySprites.push(enemy);
-                    pos.addChild(enemy);
-                }
+            this.enemyPos = [];
+            for(var i=0;i<5;i++){
+                this.enemyPos[i] = this.spritesLayer.getChildByName('enemy'+(i+1));
+            }
+            this.setEnemySprite = function(enemy,index){
+                this.enemyPos[index].addChild(enemy);
             }
         }
 
@@ -194,34 +201,55 @@ var BattleScene = cc.Scene.extend({
         this._super();
         var self = this;
         var size = cc.winSize;
-
+        this.battleCount = 0;
+        this.battleState = 0;
         {//battle
+            this.heroSprites = new SpriteGroup();
+            this.enemySprites = new SpriteGroup();
+
             this.battleLayer = new BattleLayer(this);
             this.battleLayer.setPosition(0,100);
             this.addChild(this.battleLayer);
+
+            this.buildBatttleHeros = function(){
+                for(var i=0;i<player.getHeroCount();i++){
+                    var data = player.getHeroData(i);
+                    var hero = new HeroUnit(this,data);
+                    this.heroSprites.push(hero);
+                    this.battleLayer.setHeroSprite(hero,i);
+                }
+            }
+            this.buildRandomEnemys = function(){
+                this.enemySprites.clear();
+                var stage = player.getStageData();
+                var enemyDatas = stage.getRandomEnemyDatas();
+                for(var i=0;i<enemyDatas.length;i++){
+                    var data = enemyDatas[i];
+                    var enemy = new EnemyUnit(this,data);
+                    this.enemySprites.push(enemy);
+                    this.battleLayer.setEnemySprite(enemy,i);
+                }
+            }
             this.refreshEnemyLife = function(){
                 this.battleLayer.refreshEnemyLife();
             }
-            this.refreshBattleEnemys = function(){
-                this.battleLayer.refreshBattleEnemys();
-            }
             this.resetBattleHeros = function(){
-                this.battleLayer.heroSprites.resetSprites();
+                this.heroSprites.resetSprites();
             }
             this.filtHeroTarget = function(){
-                return this.battleLayer.enemySprites.findFirstAlive();
+                return this.enemySprites.findFirstAlive();
             }
             this.filtEnemyTarget = function(){
-                return this.battleLayer.heroSprites.findRandomAlive();
+                return this.heroSprites.findRandomAlive();
             }
             this.checkPlayerWin = function(){
-                return !this.battleLayer.enemySprites.findFirstAlive();
+                return !this.enemySprites.findFirstAlive();
             }
             this.checkPlayerLost = function(){
-                return !this.battleLayer.heroSprites.findFirstAlive();
+                return !this.heroSprites.findFirstAlive();
             }
             this.foreachHeroSprite = function(callback){
-                this.battleLayer.heroSprites.foreach(callback);
+                this.heroSprites.foreach(callback);
             }
         }
 
@@ -299,14 +327,15 @@ var BattleScene = cc.Scene.extend({
 			}
 		}
 
-
-
 		this.onPlayerTap = function(){
 			var target = this.filtHeroTarget();
 			if(target){
 				target.doDamage(player.getHit());
 			}
 		};
+
+
+
 		this.changeBattle = function(){
 			var a = cc.delayTime(1);
 			var b = cc.callFunc(this.onChangeBattle, this);
@@ -318,13 +347,13 @@ var BattleScene = cc.Scene.extend({
 			this.runAction(cc.sequence(a,b));
 		}
 		this.onChangeBattle = function(){
-			this.refreshBattleEnemys();
+			this.buildRandomEnemys();
 			this.refreshEnemyLife();
 			this.refreshTitleLayer();
 			this.resetBattleHeros();
 		}
 		this.onResetBattle = function(){
-			this.refreshBattleEnemys();
+			this.buildRandomEnemys();
 			this.refreshEnemyLife();
 			this.refreshTitleLayer();
             this.resetBattleHeros();
@@ -339,6 +368,13 @@ var BattleScene = cc.Scene.extend({
 				// this.changeBattle();
 			}
 		}
+        this.onRandomBattleWin = function(){
+            var stage = player.getStageData();
+            if(this.battleCount < stage.getRandomBattleCount()){
+                this.battleCount += 1;
+                this.buildRandomEnemys();
+            }
+        }
 
 
 		this.onHeroDead = function(hero){
@@ -351,9 +387,20 @@ var BattleScene = cc.Scene.extend({
 
         }
 
+        this.onEnemyDead = function(enemy){
+            player.changeBonus(enemy.getBonus());
+            this.refreshPlayerGoldText();
+            this.refreshTitleLayer();
+        }
+        this.onEnemyVanish = function(enemy){
+            var win = this.checkPlayerWin();
+            if(win){
+                this.onRandomBattleWin();
+            }
+        }
+        this.buildBatttleHeros();
+        this.buildRandomEnemys();
 
-
-		this.refreshBattleEnemys();
 		this.refreshPlayerGoldText();
 
         this.refreshEnemyLife();

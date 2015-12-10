@@ -78,6 +78,28 @@ var Player = function(src){
 
   }
 
+    this.changeBonus = function(datas){
+        if(!datas){
+            return;
+        }
+        for(var i=0;i<datas.length;i++){
+            var data = datas[i];
+            if(data.value){
+                switch(data.unit){
+                    case "gold":
+                        gold += data.value;
+                        break;
+                    case "gem":
+                        gem += data.value;
+                        break;
+                    case "relic":
+                        relic += data.value;
+                        break;
+                }
+            }
+        }
+    }
+
   // return {
   //   changeGold:function(price){
   //     gold += price;
