@@ -1,89 +1,125 @@
 {
-  "10001":{
-    "file":"enemy_101_json",
-    "name":"敌人1",
-    "levelDatas":[
+  "1001": {
+    "file": "enemy_101_json",
+    "name": "敌人1",
+    "icon": "1001",
+    "levelDatas": [
       {
-        "life":100,
-        "attack":10,
-        "tap":1,
-        "atk_period":1.5,
-        "crit_chance":0.25,
-        "crit_rate":2.0,
-        "resurge":{
-          "time":10,
-          "cost":{
-            "unit":"gem",
-            "value":100
+        "life": 100,
+        "attack": 10,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 100
           }
-        },
-        "upgrade":{
-          "unit":"gold",
-          "value":100
-        }
+        ]
       },
       {
-        "life":100,
-        "attack":10,
-        "tap":1,
-        "atk_period":1.5,
-        "crit_chance":0.25,
-        "crit_rate":2.0,
-        "resurge":{
-          "time":10,
-          "cost":{
-            "unit":"gem",
-            "value":100
+        "life": 200,
+        "attack": 20,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 200
           }
-        },
-        "upgrade":{
-          "unit":"gold",
-          "value":100
-        }
+        ]
+      },
+      {
+        "life": 300,
+        "attack": 30,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "life": 400,
+        "attack": 40,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "life": 500,
+        "attack": 50,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 500
+          }
+        ]
       }
     ]
   },
-  "20001":{
-    "file":"enemy_101_json",
-    "name":"BOSS1",
-    "levelDatas":[
+  "1002": {
+    "file": "enemy_102_json",
+    "name": "敌人2",
+    "icon": "1002",
+    "levelDatas": [
       {
-        "life":100,
-        "attack":10,
-        "tap":1,
-        "atk_period":1.5,
-        "crit_chance":0.25,
-        "crit_rate":2.0,
-        "resurge":{
-          "time":10,
-          "cost":{
-            "unit":"gem",
-            "value":100
+        "life": 100,
+        "attack": 10,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 100
           }
-        },
-        "upgrade":{
-          "unit":"gold",
-          "value":100
-        }
+        ]
       },
       {
-        "life":100,
-        "attack":10,
-        "tap":1,
-        "atk_period":1.5,
-        "crit_chance":0.25,
-        "crit_rate":2.0,
-        "resurge":{
-          "time":10,
-          "cost":{
-            "unit":"gem",
-            "value":100
+        "life": 200,
+        "attack": 20,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 200
           }
-        },
-        "upgrade":{
-          "unit":"gold",
-          "value":100
-        }
+        ]
+      },
+      {
+        "life": 300,
+        "attack": 30,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "life": 400,
+        "attack": 40,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "life": 500,
+        "attack": 50,
+        "atk_period": 1.5,
+        "bonus": [
+          {
+            "unit": "gold",
+            "value": 500
+          }
+        ]
       }
     ]
   }
