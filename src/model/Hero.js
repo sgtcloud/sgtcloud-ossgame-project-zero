@@ -4,6 +4,7 @@ var Equip = function(id,lv){
   var lv = lv;
   var data = datas.equips[id];
 
+
   this.getId = function(){
     return id;
   }
@@ -16,44 +17,30 @@ var Equip = function(id,lv){
     this.getDesc = function(){
         return data.desc;
     }
-  this.getLife = function(){
-    return data.life_base + data.life_grow * (lv-1);
-  }
-  this.getAttack = function(){
-    return data.attack_base + data.attack_grow * (lv-1);
-  }
-  this.getHit = function(){
-    return data.hit_base + data.hit_grow * (lv-1);
-  }
+    this.getAffect = function(key){
+        return getAffectValue(data,key,lv);
+    }
+
 }
 var Skill = function(id,lv){
   var id = id;
   var lv = lv;
   var data = datas.skills[id];
-
-    console.log(data);
-
+    this.getId = function(){
+        return id;
+    }
     this.getLv = function(){
         return lv;
     }
-  this.getId = function(){
-    return id;
-  }
-  this.getName = function(){
-    return data.name;
-  }
+    this.getName = function(){
+        return data.name;
+    }
     this.getDesc = function(){
         return data.desc;
     }
-  this.getLife = function(){
-    return data.life_base + data.life_grow * (lv-1);
-  }
-  this.getAttack = function(){
-    return data.attack_base + data.attack_grow * (lv-1);
-  }
-  this.getHit = function(){
-    return data.hit_base + data.hit_grow * (lv-1);
-  }
+    this.getAffect = function(key){
+        return getAffectValue(data,key,lv);
+    }
     this.isUseable = function(){
         return data.useable;
     }
@@ -114,7 +101,7 @@ var Hero  = function(record){
       }
     var val = getLevelData(data,"life",lv);
     for(var i in equips){
-      val += equips[i].getLife();
+      val += equips[i].getAffect('life_value');
     }
     return val;
   }
@@ -124,7 +111,7 @@ var Hero  = function(record){
       }
     var val = getLevelData(data,"attack",lv);
     for(var i in equips){
-      val += equips[i].getAttack();
+      val += equips[i].getAffect('attack_value');
     }
     return val;
   }
@@ -134,7 +121,7 @@ var Hero  = function(record){
       }
     var val = getLevelData(data,"tap",lv);
     for(var i in equips){
-      val += equips[i].getHit();
+      val += equips[i].getAffect('tap_value');
     }
     return val;
   }

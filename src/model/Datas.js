@@ -8,11 +8,25 @@ function initDatas(){
   datas.skills = cc.loader.getRes(res_datas.skills_json);
 }
 
-function getProperValue(values,index){
-  var i = Math.max(index,values.length-1);
-  return values[i];
+
+function getLevelData(data,key,lv){
+    if(!data){
+        return undefined;
+    }
+    if(!data.levelDatas){
+        return undefined;
+    }
+    if(!data.levelDatas[lv]){
+        return data.levelDatas[0][key];
+    }
+    return data.levelDatas[lv][key];
 }
 
-var DataListener = function(){
-
+function getAffectValue(data,key,lv){
+    var val = getLevelData(data,key,lv);
+    if(!val){
+        return 0;
+    }
+    return val;
 }
+

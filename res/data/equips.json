@@ -1,0 +1,17 @@
+{
+  "1000001":{
+    "name":"装备1",
+    "desc":"DSADSA",
+    "levelDatas":[
+      {
+        "attack_value":10,
+        "attack_rate":0.1,
+        "life_value":10,
+        "life_rate":0.1,
+        "tap_value":10,
+        "tap_rate":0.1,
+        "speed_rate":0.1
+      }
+    ]
+  }
+}

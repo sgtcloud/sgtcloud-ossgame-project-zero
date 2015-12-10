@@ -54,6 +54,10 @@ var BattleUnit = cc.Node.extend({
     }
     this.node.runAction(this.animation);
 
+      this.getMaxLife = function(){
+          return data.getLife();
+      }
+
     {//data
       this.attack = data.getAttack();
       this.life = data.getLife();
@@ -231,12 +235,20 @@ var EnemyUnit = BattleUnit.extend({
     this.onDamaged = function(){
       battle.refreshEnemyLife();
     }
-    this.onDead = function(){
-      var win = battle.checkPlayerWin();
-      if(win){
-        battle.goNextBattle();
-      }
+    this.onDead = function() {
+        var a = cc.delayTime(0.5);
+        var b = cc.fadeTo(0.5,0);
+        var c = cc.callFunc(this.onVanish,this);
+        this.node.runAction(cc.sequence(a, b,c));
+        battle.onEnemyDead(this);
     }
+      this.onVanish = function(){
+          this.removeFromParent(true);
+          battle.onEnemyVanish(this);
+      }
+      this.getBonus = function(){
+          return data.getBonus();
+      }
   }
 });
 
