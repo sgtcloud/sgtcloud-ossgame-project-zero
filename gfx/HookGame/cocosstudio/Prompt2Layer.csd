@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="35" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1154869485" Tag="11" IconVisible="False" LeftMargin="107.3820" RightMargin="82.6179" TopMargin="254.3828" BottomMargin="255.6172" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1154869485" Tag="11" IconVisible="False" LeftMargin="107.3820" RightMargin="82.6180" TopMargin="254.3828" BottomMargin="255.6172" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="450.0000" Y="450.0000" />
             <Children>
               <AbstractNodeData Name="prompt_bg" ActionTag="1297400846" Tag="140" IconVisible="False" LeftMargin="27.6328" RightMargin="22.3672" TopMargin="52.7886" BottomMargin="47.2114" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
@@ -106,8 +106,8 @@
                 <PrePosition X="0.3566" Y="0.2107" />
                 <PreSize X="0.2667" Y="0.1111" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                <DisabledFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
                 <NormalFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
