@@ -140,6 +140,10 @@
           <Image Name="relic.png" />
           <Image Name="skill_icon.png" />
           <Image Name="title_bg.png" />
+          <Image Name="lable_bg.png" />
+          <Image Name="star0.png" />
+          <Image Name="title_bg1.png" />
+          <Image Name="title_bg2.png" />
         </Folder>
       </RootFolder>
     </Group>
