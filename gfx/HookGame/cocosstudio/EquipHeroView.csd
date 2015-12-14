@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0591" Y="0.5166" />
                 <PreSize X="0.0721" Y="0.8182" />
-                <FileData Type="Normal" Path="heroUI/hero_icon.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="tatk" ActionTag="1067595702" Tag="150" IconVisible="False" LeftMargin="453.1798" RightMargin="80.8202" TopMargin="4.3601" BottomMargin="32.6399" FontSize="18" LabelText="点击攻击力" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="90.0000" Y="18.0000" />

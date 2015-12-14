@@ -19,14 +19,14 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="bloodUI/blood_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" LeftMargin="3.6967" RightMargin="4.3033" TopMargin="1.6565" BottomMargin="2.3435" ProgressInfo="100" ctype="LoadingBarObjectData">
-                <Size X="142.0000" Y="11.0000" />
+              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" LeftMargin="3.6967" RightMargin="3.3033" TopMargin="1.6565" BottomMargin="2.3435" ProgressInfo="50" ctype="LoadingBarObjectData">
+                <Size X="143.0000" Y="11.0000" />
                 <AnchorPoint ScaleY="0.1018" />
                 <Position X="3.6967" Y="3.4633" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0246" Y="0.2309" />
-                <PreSize X="0.9467" Y="0.7333" />
+                <PreSize X="0.9533" Y="0.7333" />
                 <ImageFileData Type="Normal" Path="bloodUI/blood_bar.png" Plist="" />
               </AbstractNodeData>
             </Children>

@@ -175,7 +175,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0601" Y="0.8369" />
                 <PreSize X="0.1406" Y="0.0938" />
-                <FileData Type="Normal" Path="heroUI/hero_icon.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="die_time_text" ActionTag="1919434759" Tag="842" IconVisible="False" LeftMargin="64.1618" RightMargin="530.8382" TopMargin="115.2950" BottomMargin="826.7050" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="18.0000" />

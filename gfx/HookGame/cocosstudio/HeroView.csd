@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0240" Y="0.0909" />
                 <PreSize X="0.1442" Y="0.8182" />
-                <FileData Type="Normal" Path="heroUI/hero_icon.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="heroName_text" ActionTag="1328202900" Tag="219" IconVisible="False" LeftMargin="120.0000" RightMargin="372.0000" TopMargin="12.9999" BottomMargin="75.0001" FontSize="22" LabelText="英雄名字六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="132.0000" Y="22.0000" />
@@ -177,7 +177,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="lock" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="29" Scale9Height="32" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="lock" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                     <Size X="29.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.8404" Y="31.0503" />

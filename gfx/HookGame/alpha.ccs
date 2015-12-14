@@ -47,6 +47,9 @@
           <Image Name="shop_btn1.png" />
           <Image Name="shop_btn2.png" />
           <Image Name="textBg.png" />
+          <Image Name="bg_12.png" />
+          <Image Name="slice117_@.png" />
+          <Image Name="slice319_@.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
@@ -144,6 +147,23 @@
           <Image Name="star0.png" />
           <Image Name="title_bg1.png" />
           <Image Name="title_bg2.png" />
+          <Image Name="bg_15.png" />
+          <Image Name="bg_pattern_1.png" />
+          <Image Name="slice131_@.png" />
+          <Image Name="bg_16.png" />
+          <Image Name="title_bg3.png" />
+          <Image Name="bg_17.png" />
+          <Image Name="bg_18.png" />
+          <Image Name="bg_19.png" />
+          <Image Name="title.png" />
+          <Image Name="bg_20.png" />
+          <Image Name="bg_21.png" />
+          <Image Name="title_bg4.png" />
+        </Folder>
+        <Project Name="RankLayer.csd" Type="Layer" />
+        <Project Name="RankView.csd" Type="Layer" />
+        <Folder Name="rankUI">
+          <Image Name="rankText.png" />
         </Folder>
       </RootFolder>
     </Group>

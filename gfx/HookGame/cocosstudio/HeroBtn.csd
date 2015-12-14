@@ -78,13 +78,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="lock" ActionTag="1681642591" Tag="294" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="29" Scale9Height="32" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="lock" ActionTag="1681642591" Tag="294" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="29.9497" BottomMargin="18.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                 <Size X="29.0000" Y="32.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="76.8404" Y="31.0503" />
+                <Position X="76.8404" Y="34.0503" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5489" Y="0.3881" />
+                <PrePosition X="0.5489" Y="0.4256" />
                 <PreSize X="0.2071" Y="0.4000" />
                 <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
               </AbstractNodeData>

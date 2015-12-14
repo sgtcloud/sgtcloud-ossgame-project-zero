@@ -4,7 +4,7 @@
     <Content>
       <Animation Duration="0" Speed="1.0000">
         <Timeline ActionTag="-1452498293" Property="Position">
-          <PointFrame FrameIndex="0" X="10.9998" Y="7.9998">
+          <PointFrame FrameIndex="0" X="10.9997" Y="23.9998">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -28,7 +28,7 @@
           <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="250.0000" />
             <Children>
-              <AbstractNodeData Name="skillLayer_bg" ActionTag="1030660432" Tag="261" IconVisible="False" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="22" BottomEage="22" Scale9OriginX="22" Scale9OriginY="22" Scale9Width="34" Scale9Height="34" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="skillLayer_bg" ActionTag="1030660432" Tag="261" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="250.0000" />
                 <AnchorPoint />
                 <Position />
@@ -36,7 +36,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="-1025331302" Tag="260" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -82,83 +82,83 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="534.0000" RightMargin="11.0000" TopMargin="147.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="533.9998" RightMargin="11.0002" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="534.0000" Y="7.9998" />
+                <Position X="533.9998" Y="23.9998" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8344" Y="0.0320" />
+                <PrePosition X="0.8344" Y="0.0960" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill6" ActionTag="1873054001" Tag="235" IconVisible="True" LeftMargin="446.4988" RightMargin="98.5012" TopMargin="60.0031" BottomMargin="94.9969" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill6" ActionTag="1873054001" Tag="235" IconVisible="True" LeftMargin="446.4987" RightMargin="98.5013" TopMargin="44.0033" BottomMargin="110.9967" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="446.4988" Y="94.9969" />
+                <Position X="446.4987" Y="110.9967" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6977" Y="0.3800" />
+                <PrePosition X="0.6977" Y="0.4440" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill5" ActionTag="420806031" Tag="229" IconVisible="True" LeftMargin="359.6666" RightMargin="185.3334" TopMargin="147.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill5" ActionTag="420806031" Tag="229" IconVisible="True" LeftMargin="359.6664" RightMargin="185.3336" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="359.6666" Y="7.9998" />
+                <Position X="359.6664" Y="23.9998" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5620" Y="0.0320" />
+                <PrePosition X="0.5620" Y="0.0960" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill4" ActionTag="1903387533" Tag="223" IconVisible="True" LeftMargin="272.5012" RightMargin="272.4988" TopMargin="60.0036" BottomMargin="94.9964" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill4" ActionTag="1903387533" Tag="223" IconVisible="True" LeftMargin="272.5012" RightMargin="272.4988" TopMargin="44.0037" BottomMargin="110.9963" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="272.5012" Y="94.9964" />
+                <Position X="272.5012" Y="110.9963" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4258" Y="0.3800" />
+                <PrePosition X="0.4258" Y="0.4440" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill3" ActionTag="1685468251" Tag="217" IconVisible="True" LeftMargin="185.3332" RightMargin="359.6668" TopMargin="147.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill3" ActionTag="1685468251" Tag="217" IconVisible="True" LeftMargin="185.3333" RightMargin="359.6667" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="185.3332" Y="7.9998" />
+                <Position X="185.3333" Y="23.9998" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2896" Y="0.0320" />
+                <PrePosition X="0.2896" Y="0.0960" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill2" ActionTag="277690000" Tag="211" IconVisible="True" LeftMargin="98.5002" RightMargin="446.4998" TopMargin="60.0033" BottomMargin="94.9967" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill2" ActionTag="277690000" Tag="211" IconVisible="True" LeftMargin="98.5000" RightMargin="446.5000" TopMargin="44.0033" BottomMargin="110.9967" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="98.5002" Y="94.9967" />
+                <Position X="98.5000" Y="110.9967" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1539" Y="0.3800" />
+                <PrePosition X="0.1539" Y="0.4440" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9998" RightMargin="534.0002" TopMargin="147.0002" BottomMargin="7.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9997" RightMargin="534.0002" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="10.9998" Y="7.9998" />
+                <Position X="10.9997" Y="23.9998" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0172" Y="0.0320" />
+                <PrePosition X="0.0172" Y="0.0960" />
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="goldLayer" ActionTag="-1689348075" Tag="165" IconVisible="True" LeftMargin="228.7035" RightMargin="231.2965" TopMargin="-50.2975" BottomMargin="250.2975" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="goldLayer" ActionTag="-1689348075" Tag="165" IconVisible="True" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="-50.2975" BottomMargin="250.2975" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="180.0000" Y="50.0000" />
                 <AnchorPoint />
-                <Position X="228.7035" Y="250.2975" />
+                <Position X="230.0000" Y="250.2975" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3573" Y="1.0012" />
+                <PrePosition X="0.3594" Y="1.0012" />
                 <PreSize X="0.2813" Y="0.2000" />
                 <FileData Type="Normal" Path="GoldLayer.csd" Plist="" />
               </AbstractNodeData>

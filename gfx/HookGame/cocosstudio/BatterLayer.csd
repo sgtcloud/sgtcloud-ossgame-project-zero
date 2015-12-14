@@ -270,6 +270,27 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="timetext_bg" ActionTag="485504708" Tag="524" IconVisible="False" LeftMargin="61.6642" RightMargin="548.3358" TopMargin="5.5978" BottomMargin="714.4022" Scale9Width="18" Scale9Height="18" ctype="ImageViewObjectData">
+                <Size X="30.0000" Y="30.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="76.6642" Y="729.4022" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.1198" Y="0.9725" />
+                <PreSize X="0.0469" Y="0.0400" />
+                <FileData Type="Normal" Path="mainUI/bg_17.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="time_text" ActionTag="-167842844" Tag="525" IconVisible="False" LeftMargin="63.4334" RightMargin="549.5667" TopMargin="10.8375" BottomMargin="721.1625" FontSize="18" LabelText="99s" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="27.0000" Y="18.0000" />
+                <AnchorPoint ScaleX="0.4533" ScaleY="0.4647" />
+                <Position X="75.6731" Y="729.5276" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="60" G="238" B="22" />
+                <PrePosition X="0.1182" Y="0.9727" />
+                <PreSize X="0.0422" Y="0.0240" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
