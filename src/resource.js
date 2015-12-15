@@ -3,7 +3,6 @@ var res_datas = {
   battles_json : "res/data/battles.json",
   heros_json : "res/data/heroes.json",
   enemys_json : "res/data/enemys.json",
-  exps_json : "res/data/exps.json",
   equips_json : "res/data/items.json",
   skills_json : "res/data/skills.json"
 };

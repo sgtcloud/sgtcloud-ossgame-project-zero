@@ -6,6 +6,7 @@ var Player = function(src){
   var gem = src.gem;
   var relic = src.relic;
   var vip = src.vip;
+    var autoBossBattle = src.autoBossBattle;
   var stage = new Stage(src.stage);
   var heros = [];
   for(var i in src.heros){
@@ -66,7 +67,9 @@ var Player = function(src){
   this.getVip = function(){
     return vip;
   }
-
+    this.isAutoBossBattle = function(){
+        return autoBossBattle;
+    }
   this.changeGold = function(val){
     gold += val;
     if(gold < 0){

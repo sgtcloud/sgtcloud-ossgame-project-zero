@@ -1,24 +1,22 @@
 {
   "id":"10001000",
-  "name":"码农",
-  "gold":100000,
-  "gem":100000,
-  "relic":10000,
+  "name":"测试a",
+  "gold":1000,
+  "gem":1000,
+  "relic":100,
   "vip":1,
-  "stage":{
-    "id":"s100001",
-    "auto":true
-  },
+  "stage":"10001",
+  "autoBossBattle":1,
   "heros":[
     {
-      "id":"h101",
+      "id":"101",
       "lv":1,
       "star":2,
       "skills":[1,1,1,1,1],
       "equips":[1,1,1,1,1]
     },
     {
-      "id":"h102",
+      "id":"102",
       "lv":0,
       "star":0,
       "skills":[1,1,1,1,1],

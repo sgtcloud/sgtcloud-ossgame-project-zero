@@ -30,10 +30,18 @@ var Enemy = function(src){
     }
 }
 
-var Stage = function(src){
-  var id = src.id;
-  var auto = src.auto;
+var Stage = function(id){
+  var id = id;
   var data = datas.stages[id];
+
+    this,goToNext = function(){
+        if(data.next){
+            id = data.next;
+            data = datas.stages[id];
+            return true;
+        }
+        return false;
+    }
 
   this.getId = function(){
     return id;
@@ -61,8 +69,16 @@ var Stage = function(src){
         }
         return enemys;
     }
+    this.getBossEnemDatas = function(){
+        var enemys = [];
+        var count = data.bossBattle.length;
+        for(var i=0;i<count;i++){
+            enemys.push(new Enemy(data.bossBattle[i]));
+        }
+        return enemys;
+    }
+    this.getBossTimeMax = function(){
+        return data.bossTime;
+    }
 
-  this.isAutoBoss = function(){
-    return auto;
-  }
 }

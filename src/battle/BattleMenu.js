@@ -1,6 +1,7 @@
 var MenuBtn = function(btn){
     this.button = btn.getChildByName('btn');
 }
+//UI的Menu父类
 var BattleMenu = cc.Node.extend({
     ctor:function(battle,res){
         this._super();
@@ -8,12 +9,18 @@ var BattleMenu = cc.Node.extend({
         this.addChild(layer);
         this.root = layer.getChildByName('root');
 
+        //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
+        //这里是处理刷新金钱的显示
         this.playerGoldText = this.root.getChildByName('goldLayer').getChildByName('root').getChildByName('gold_text');
         this.refreshPlayerGoldText = function(){
             this.playerGoldText.setString(player.getGold());
         };
+
+        this.onHeroDead = function(){}
+        this.onHeroRecover = function(){}
     }
 });
+//UI上显示的技能ICON
 var SkkillIcon = function(battle,root,index){
     this.button = root.getChildByName('skill_btn');
     this.deadTimeTitle = root.getChildByName('die_text');
@@ -70,7 +77,7 @@ var SkillListMenu = BattleMenu.extend({
         function format(time){
             return new Date(time).Format('mm:ss');
         }
-
+        //为了显示CD和复活的时候显示的格式
         Date.prototype.Format = function (fmt) { //author: meizz
             var o = {
                 "M+": this.getMonth() + 1, //�·�
@@ -105,7 +112,6 @@ var SkillListMenu = BattleMenu.extend({
                 }
             });
         }
-
 
         this.update = function(dt){
             battle.foreachHeroSprite(function(hero,i){
@@ -176,7 +182,7 @@ var HeroListMenu = BattleMenu.extend({
         }
 
         this.views = {};
-        {
+        {//填充英雄的列表 循环填充英雄+技能
             for(var i=0;i<player.getHeroCount();i++){
                 var heroData = player.getHeroData(i);
                 var _heroView = buildHeroView(heroData);

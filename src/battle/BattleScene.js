@@ -21,6 +21,7 @@ var SpriteGroup = function(_sprites){
             sprites.splice(0,1);
         }
     }
+    //精灵组的生命值 显示怪物总血量
     this.getLife = function(){
         var val = 0;
         for(var i in sprites){
@@ -29,6 +30,7 @@ var SpriteGroup = function(_sprites){
         }
         return val;
     }
+    //精灵组的最大生命值 显示怪物总血量
     this.getMaxLife = function(){
         var val = 0;
         for(var i in sprites){
@@ -37,6 +39,7 @@ var SpriteGroup = function(_sprites){
         }
         return val;
     }
+    //重置所有的精灵
     this.resetSprites = function(){
         for(var i in sprites){
             var sprite = sprites[i];
@@ -89,9 +92,35 @@ var TitleLayer = cc.Node.extend({
         }
         this.refreshBattleState = function(){
             var stage = player.getStageData();
-            this.battleStateText.setString((battle.battleCount+1) + '/' + stage.getRandomBattleCount());
+            var cur = battle.battleCount;
+            var max =  stage.getRandomBattleCount();
+
+            if(battle.bossBattle){
+                this.liveBossBtn.setVisible(true);
+                this.goBossBtn.setVisible(false);
+                this.battleStateText.setVisible(false);
+            }else{
+                this.liveBossBtn.setVisible(false);
+                if(cur >= max-1){
+                    if(player.isAutoBossBattle()){
+                        this.battleStateText.setString((cur+1) + '/' + max);
+                        this.goBossBtn.setVisible(false);
+                    }else{
+                        this.goBossBtn.setVisible(true);
+                        this.battleStateText.setVisible(false);
+                    }
+                }else{
+                    this.battleStateText.setString((cur+1) + '/' + max);
+                    this.goBossBtn.setVisible(false);
+                }
+
+            }
+
+
+
+
             this.goBossBtn.setVisible(false);
-            this.liveBossBtn.setVisible(true);
+            this.liveBossBtn.setVisible(false);
 
             //if(stage.isBossBattle()){
             //    this.battleStateText.setVisible(false);
@@ -202,7 +231,8 @@ var BattleScene = cc.Scene.extend({
         var self = this;
         var size = cc.winSize;
         this.battleCount = 0;
-        this.battleState = 0;
+        this.bossBattle = false;
+
         {//battle
             this.heroSprites = new SpriteGroup();
             this.enemySprites = new SpriteGroup();
@@ -219,10 +249,16 @@ var BattleScene = cc.Scene.extend({
                     this.battleLayer.setHeroSprite(hero,i);
                 }
             }
-            this.buildRandomEnemys = function(){
+            this.buildBattleEnemys = function(){
                 this.enemySprites.clear();
                 var stage = player.getStageData();
-                var enemyDatas = stage.getRandomEnemyDatas();
+                var enemyDatas;
+                if(this.bossBattle){
+                    enemyDatas = stage.getBossEnemDatas();
+                }else{
+                    enemyDatas = stage.getRandomEnemyDatas();
+                }
+
                 for(var i=0;i<enemyDatas.length;i++){
                     var data = enemyDatas[i];
                     var enemy = new EnemyUnit(this,data);
@@ -281,39 +317,51 @@ var BattleScene = cc.Scene.extend({
 				{name:"rank",click:"onRankClick"},
 				{name:"shop",click:"onShopClick"},
 			];
-			this.menuButtons = {};
+			this.buttons = {};
 			for(var i in menuParams){
 				var param = menuParams[i];
 				var name = param.name;
 				var click = param.click;
-				this.menuButtons[name] = root.getChildByName(name);
-				this.menuButtons[name].addEventListener(function(sender, type){
+				this.buttons[name] = root.getChildByName(name);
+                this.buttons[name].setSelected(false);
+				this.buttons[name].addEventListener(function(sender, type){
+                    console.log(sender);
 					if(type === ccui.CheckBox.EVENT_SELECTED){
-						self.showMenuLayer(sender.name);
-					}else if(type === ccui.CheckBox.EVENT_UNSELECTED){
+                        self.showMenuLayer(sender.name);
+					}
+                    else if(type === ccui.CheckBox.EVENT_UNSELECTED){
 						sender.setSelected(true);
 					}
 				},this);
 
 			}
 
-			this.menuLayers = {};
-			this.menuLayers.main = new SkillListMenu(this);
-			this.menuLayers.hero = new HeroListMenu(this);
-			this.menuLayers.equip = new EquipListMenu(this);
+            this.menuLayer = new cc.Node();
+            this.battleLayer.addChild(this.menuLayer);
 
-			for(var i in this.menuLayers){
-				this.battleLayer.addChild(this.menuLayers[i]);
+			this.menus = {};
+			this.menus.main = new SkillListMenu(this);
+            this.menus.hero = new HeroListMenu(this);
+			this.menus.equip = new EquipListMenu(this);
+
+
+			for(var i in this.menus){
+				this.menuLayer.addChild(this.menus[i]);
+                this.menus[i].setVisible(false);
 			}
 			this.showMenuLayer = function(name) {
-				for(var i in this.menuLayers) {
-					this.menuLayers[i].setVisible(false);
-				}
-				this.menuLayers[name].setVisible(true);
-				for (var i in this.menuButtons) {
-					this.menuButtons[i].setSelected(false);
-				}
-				this.menuButtons[name].setSelected(true);
+                for(var i in this.buttons){
+                    this.buttons[i].setSelected(false);
+                }
+                for(var i in this.menus){
+                    this.menus[i].setVisible(false);
+                }
+
+				this.menus[name].setVisible(true);
+
+				this.buttons[name].setSelected(true);
+
+                //console.log(this.menuButtons);
 			}
 
 			this.showMenuLayer('main');
@@ -334,54 +382,34 @@ var BattleScene = cc.Scene.extend({
 			}
 		};
 
-
-
-		this.changeBattle = function(){
-			var a = cc.delayTime(1);
-			var b = cc.callFunc(this.onChangeBattle, this);
-			this.runAction(cc.sequence(a,b));
-		}
-		this.resetBattle = function(){
-			var a = cc.delayTime(1);
-			var b = cc.callFunc(this.onResetBattle, this);
-			this.runAction(cc.sequence(a,b));
-		}
-		this.onChangeBattle = function(){
-			this.buildRandomEnemys();
-			this.refreshEnemyLife();
-			this.refreshTitleLayer();
-			this.resetBattleHeros();
-		}
-		this.onResetBattle = function(){
-			this.buildRandomEnemys();
-			this.refreshEnemyLife();
-			this.refreshTitleLayer();
-            this.resetBattleHeros();
-		}
-		this.goNextBattle = function(){
-			var next = player.getStageData().goNextBattle();
-			if(next){
-				// player.getBattle().change(next);
-				this.changeBattle();
-			}else{
-				// player.getBattle().reset();
-				// this.changeBattle();
-			}
-		}
+        this.isLastRandomBattle = function(){
+            return this.battleCount >= player.getStageData().getRandomBattleCount()-1;
+        }
         this.onRandomBattleWin = function(){
-            var stage = player.getStageData();
-            if(this.battleCount < stage.getRandomBattleCount()){
-                this.battleCount += 1;
-                this.buildRandomEnemys();
+            if(this.bossBattle){
+                this.battleCount = 0;
+                this.bossBattle = false;
+                player.getStageData().goToNext();
+            }else{
+                if(this.isLastRandomBattle()){
+                    if (player.isAutoBossBattle()) {
+                        this.bossBattle = true;
+                    }
+                }else {
+                    this.battleCount += 1;
+                    this.bossBattle = false;
+                }
             }
+            this.refreshEnemyLife();
+            this.refreshTitleLayer();
+            this.resetBattleHeros();
         }
 
-
 		this.onHeroDead = function(hero){
-			this.menuLayers.main.onHeroDead(hero);
+			this.menus.main.onHeroDead(hero);
 		}
 		this.onHeroRecover = function(hero){
-			this.menuLayers.main.onHeroRecover(hero);
+			this.menus.main.onHeroRecover(hero);
 		}
         this.onUseSkill = function(i){
 
@@ -399,7 +427,7 @@ var BattleScene = cc.Scene.extend({
             }
         }
         this.buildBatttleHeros();
-        this.buildRandomEnemys();
+        this.buildBattleEnemys();
 
 		this.refreshPlayerGoldText();
 

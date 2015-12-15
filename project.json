@@ -16,10 +16,6 @@
         "src/model/Battle.js",
         "src/model/Hero.js",
         "src/model/Player.js",
-        "src/LogoScene.js",
-        "src/CoverScene.js",
-        "src/GameScene.js",
-
         "src/battle/BattleConsts.js",
         "src/battle/BattleScene.js",
         "src/battle/BattleUnit.js",

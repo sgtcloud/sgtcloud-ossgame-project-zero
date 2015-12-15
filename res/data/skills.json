@@ -6,6 +6,10 @@
     "Type": 1,
     "levelDatas": [
       {
+        "action":{
+          "flag":"xxx",
+          "damage":9999
+        },
         "attack_value": 10,
         "g_attack_rate": 0.1,
         "upgrade": {

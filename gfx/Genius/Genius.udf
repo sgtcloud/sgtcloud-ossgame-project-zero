@@ -31,14 +31,18 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
+          <FilePathData Path="enemy1002.csd" />
           <FilePathData Path="enemy1001.csd" />
-          <FilePathData Path="hero101.csd" />
-          <FilePathData Path="hero102.csd" />
+          <FilePathData Path="enemy1003.csd" />
+          <FilePathData Path="enemy1004.csd" />
+          <FilePathData Path="enemy1005.csd" />
+          <FilePathData Path="hero104.csd" />
           <FilePathData Path="hero103.csd" />
-          <FilePathData Path="effect5001.csd" />
-          <FilePathData Path="effect5002.csd" />
+          <FilePathData Path="hero105.csd" />
+          <FilePathData Path="hero102.csd" />
+          <FilePathData Path="hero101.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="hero103.csd" />
+        <ActiveDocument Path="hero104.csd" />
       </Value>
     </Item>
   </Properties>
