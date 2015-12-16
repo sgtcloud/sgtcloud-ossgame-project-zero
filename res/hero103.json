@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 61,
+        "Duration": 72,
         "Speed": 0.5,
         "Timelines": [
           {
@@ -13,8 +13,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -43.0,
-                "Y": -21.0,
+                "X": -26.5338,
+                "Y": -13.9781,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 44.0,
-                "Y": -23.0,
+                "X": 27.534,
+                "Y": -14.9782,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 45.0,
-                "Y": -23.0,
+                "X": 27.6892,
+                "Y": -14.556,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 35.0,
-                "Y": -23.0,
+                "X": 21.4894,
+                "Y": -15.4004,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -49,8 +49,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 23.0,
-                "Y": -23.0,
+                "X": 14.5559,
+                "Y": -17.0892,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,8 +58,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -37.0,
-                "Y": -20.0,
+                "X": -22.0668,
+                "Y": -11.1337,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -67,8 +67,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -43.0,
-                "Y": -22.0,
+                "X": -26.5339,
+                "Y": -14.4004,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -76,8 +76,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -7.0,
-                "Y": -35.0,
+                "X": -26.4778,
+                "Y": -14.1452,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -3.6224,
+                "Y": -21.9117,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -85,8 +94,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 10.0,
-                "Y": -16.0,
+                "X": 11.2665,
+                "Y": -7.5559,
                 "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
@@ -103,8 +112,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -44.0,
-                "Y": -21.0,
+                "X": -1.6121,
+                "Y": -7.3558,
+                "FrameIndex": 33,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -26.6893,
+                "Y": -13.4004,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -112,8 +130,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -10.0,
-                "Y": -31.0,
+                "X": -6.7779,
+                "Y": -20.4449,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -121,8 +139,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -29.0,
-                "Y": -26.0,
+                "X": -18.4449,
+                "Y": -17.5559,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -130,8 +148,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -35.0,
-                "Y": -25.0,
+                "X": -20.223,
+                "Y": -15.2895,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -139,8 +157,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -43.0,
-                "Y": -23.0,
+                "X": -26.6893,
+                "Y": -13.9782,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -148,9 +166,36 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -43.0,
-                "Y": -22.0,
+                "X": -26.5338,
+                "Y": -14.8226,
                 "FrameIndex": 51,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -27.1734,
+                "Y": -13.7536,
+                "FrameIndex": 54,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -26.0828,
+                "Y": -13.7702,
+                "FrameIndex": 57,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -27.2087,
+                "Y": -14.4201,
+                "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
                 },
@@ -160,6 +205,42 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 61,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -33.9994,
+                "Y": -5.2889,
+                "FrameIndex": 63,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 6.4222,
+                "Y": -16.6221,
+                "FrameIndex": 66,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 6.0444,
+                "Y": -14.7332,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -26.4443,
+                "Y": -13.9777,
+                "FrameIndex": 72,
                 "EasingData": {
                   "Type": 0
                 },
@@ -391,6 +472,46 @@
                 "FrameIndex": 61,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 63,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 66,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "TextureFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -428,6 +549,12 @@
           "EndIndex": 62,
           "Name": "dead",
           "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 63,
+          "EndIndex": 72,
+          "Name": "skill",
+          "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
@@ -447,8 +574,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -43.0,
-              "Y": -21.0
+              "X": -26.5338,
+              "Y": -13.9781
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -464,15 +591,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -130.0,
-            "RightMargin": -44.0,
-            "TopMargin": -135.0,
-            "BottomMargin": -21.0,
+            "LeftMargin": -80.0338,
+            "RightMargin": -26.9662,
+            "TopMargin": -82.0219,
+            "BottomMargin": -13.9781,
             "Tag": 8,
             "ActionTag": 2044631140,
             "Size": {
-              "X": 174.0,
-              "Y": 156.0
+              "X": 107.0,
+              "Y": 96.0
             },
             "Name": "hero103",
             "ctype": "SpriteObjectData"
@@ -504,6 +631,10 @@
         "hero/hero103/hero103_hit03.png",
         "hero/hero103/hero103_hit04.png",
         "hero/hero103/hero103_hit05.png",
+        "hero/hero103/hero103_skill01.png",
+        "hero/hero103/hero103_skill02.png",
+        "hero/hero103/hero103_skill03.png",
+        "hero/hero103/hero103_skill04.png",
         "hero/hero103/hero103_stand01.png",
         "hero/hero103/hero103_stand02.png",
         "hero/hero103/hero103_stand03.png",

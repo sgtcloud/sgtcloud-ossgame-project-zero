@@ -45,8 +45,14 @@ var res = {
     hero_101_json : "res/hero101.json",
     hero_102_json : "res/hero102.json",
     hero_103_json : "res/hero103.json",
+    hero_104_json : "res/hero104.json",
+    hero_105_json : "res/hero105.json",
 
-    enemy_101_json : "res/enemy1001.json",
+    enemy_1001_json : "res/enemy1001.json",
+    enemy_1002_json : "res/enemy1002.json",
+    enemy_1003_json : "res/enemy1003.json",
+    enemy_1004_json : "res/enemy1004.json",
+    enemy_1005_json : "res/enemy1005.json",
 
     hero_blood_json : "res/blood.json",
 

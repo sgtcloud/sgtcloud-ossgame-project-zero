@@ -1,26 +1,38 @@
 {
-  "id":"10001000",
-  "name":"测试a",
-  "gold":1000,
-  "gem":1000,
-  "relic":100,
-  "vip":1,
-  "stage":"10001",
-  "autoBossBattle":1,
-  "heros":[
+  "id": "10001000",
+  "name": "测试a",
+  "gold": 1000,
+  "gem": 1000,
+  "relic": 100,
+  "vip": 1,
+  "stage": "s100001",
+  "autoBossBattle": 1,
+  "heros": [
     {
-      "id":"101",
-      "lv":1,
-      "star":2,
-      "skills":[1,1,1,1,1],
-      "equips":[1,1,1,1,1]
+      "id": "hero101",
+      "lv": 1,
+      "star": 0,
+      "skills": [
+        1,
+        1
+      ],
+      "equips": [
+        1,
+        1
+      ]
     },
     {
-      "id":"102",
-      "lv":0,
-      "star":0,
-      "skills":[1,1,1,1,1],
-      "equips":[1,1,1,1,1]
+      "id": "hero102",
+      "lv": 1,
+      "star": 0,
+      "skills": [
+        1,
+        1
+      ],
+      "equips": [
+        1,
+        1
+      ]
     }
   ]
 }

@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 64,
+        "Duration": 75,
         "Speed": 0.5,
         "ActivedAnimationName": "die",
         "Timelines": [
@@ -14,8 +14,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -36.0,
-                "Y": -5.0,
+                "X": -21.6445,
+                "Y": -5.1556,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -23,8 +23,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 23.0,
-                "Y": -39.0,
+                "X": 10.3341,
+                "Y": -19.1562,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -32,8 +32,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 34.0,
-                "Y": -25.0,
+                "X": 19.6451,
+                "Y": -11.9115,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -41,8 +41,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -15.0,
-                "Y": -14.0,
+                "X": -10.3557,
+                "Y": -6.8224,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -50,8 +50,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -10.0,
-                "Y": -16.0,
+                "X": -6.2,
+                "Y": -7.9781,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -59,8 +59,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 2.0,
-                "Y": -26.0,
+                "X": 1.1556,
+                "Y": -14.867,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -68,8 +68,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -6.0,
-                "Y": -10.0,
+                "X": -3.9999,
+                "Y": -5.0,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -77,8 +77,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -36.0,
-                "Y": -6.0,
+                "X": -20.8001,
+                "Y": -4.7334,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -86,8 +86,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -34.0,
-                "Y": -6.0,
+                "X": -20.4891,
+                "Y": -5.1556,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -95,9 +95,18 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -28.0,
-                "Y": -6.0,
+                "X": -17.8668,
+                "Y": -3.4668,
                 "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -25.4446,
+                "Y": -8.5333,
+                "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
                 },
@@ -113,8 +122,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -37.0,
-                "Y": -6.0,
+                "X": -20.222,
+                "Y": -5.4222,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -122,7 +131,7 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -35.0,
+                "X": -20.2226,
                 "Y": -5.0,
                 "FrameIndex": 39,
                 "EasingData": {
@@ -131,8 +140,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -26.0,
-                "Y": -4.0,
+                "X": -11.2225,
+                "Y": -4.8444,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -140,8 +149,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -15.0,
-                "Y": -4.0,
+                "X": -5.7111,
+                "Y": -4.8444,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -149,8 +158,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -11.0,
-                "Y": -4.0,
+                "X": -1.7112,
+                "Y": -4.8444,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -158,8 +167,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -37.0,
-                "Y": -7.0,
+                "X": -21.6444,
+                "Y": -5.3112,
                 "FrameIndex": 51,
                 "EasingData": {
                   "Type": 0
@@ -167,9 +176,36 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -37.0,
-                "Y": -6.0,
+                "X": -20.1112,
+                "Y": -5.1556,
                 "FrameIndex": 54,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -19.9887,
+                "Y": -5.1422,
+                "FrameIndex": 57,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -20.0154,
+                "Y": -4.8939,
+                "FrameIndex": 60,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -19.7811,
+                "Y": -5.0234,
+                "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
                 },
@@ -179,6 +215,42 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 64,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 66,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -16.6228,
+                "Y": -0.3778,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -8.3111,
+                "Y": -0.3778,
+                "FrameIndex": 72,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -21.9116,
+                "Y": -3.4,
+                "FrameIndex": 75,
                 "EasingData": {
                   "Type": 0
                 },
@@ -420,6 +492,74 @@
                 "FrameIndex": 64,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 66,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 75,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1587691588,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 75,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -457,6 +597,12 @@
           "EndIndex": 65,
           "Name": "dead",
           "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 66,
+          "EndIndex": 75,
+          "Name": "skill",
+          "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
@@ -465,7 +611,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero101/hero101_atk01.png",
+              "Path": "hero/hero101/hero101_dead01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -476,8 +622,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -36.0,
-              "Y": -5.0
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -493,15 +639,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -113.5,
-            "RightMargin": -41.5,
-            "TopMargin": -155.0,
-            "BottomMargin": -5.0,
+            "LeftMargin": -21.5,
+            "RightMargin": -21.5,
+            "TopMargin": -53.0,
             "Tag": 6,
             "ActionTag": 1587691588,
             "Size": {
-              "X": 157.0,
-              "Y": 159.0
+              "X": 43.0,
+              "Y": 53.0
             },
             "Name": "hero101",
             "ctype": "SpriteObjectData"
@@ -534,6 +679,10 @@
         "hero/hero101/hero101_hit03.png",
         "hero/hero101/hero101_hit04.png",
         "hero/hero101/hero101_hit05.png",
+        "hero/hero101/hero101_skill01.png",
+        "hero/hero101/hero101_skill02.png",
+        "hero/hero101/hero101_skill03.png",
+        "hero/hero101/hero101_skill04.png",
         "hero/hero101/hero101_stand01.png",
         "hero/hero101/hero101_stand02.png",
         "hero/hero101/hero101_stand03.png",
