@@ -34,8 +34,6 @@ var Stage = function (id) {
     //var id = id;
     var data = datas.stages[id];
 
-    cc.log("stage=" + data)
-
     this.goToNext = function () {
         if (data.next) {
             id = data.next;
@@ -61,7 +59,6 @@ var Stage = function (id) {
         var length = data.enemyTypes.length;
         var rand = Math.round(Math.random() * (length - 1));
         var temp = data.enemyTypes[rand];
-        cc.log("random enemy=" + temp)
         return new Enemy(temp);
     }
     this.getRandomEnemyDatas = function () {

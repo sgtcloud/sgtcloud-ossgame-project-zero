@@ -259,7 +259,6 @@ var BattleScene = cc.Scene.extend({
 
                 for (var i = 0; i < enemyDatas.length; i++) {
                     var data = enemyDatas[i];
-                    cc.log("build enmey[" + i + "] name=" + data.name);
                     var enemy = new EnemyUnit(this, data);
                     this.enemySprites.push(enemy);
                     this.battleLayer.setEnemySprite(enemy, i);
@@ -422,7 +421,6 @@ var BattleScene = cc.Scene.extend({
         }
         this.onEnemyVanish = function (enemy) {
             var win = this.checkPlayerWin();
-            cc.log("battle win result=" + win);
             if (win) {
                 this.onRandomBattleWin();
             }
