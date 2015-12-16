@@ -37,7 +37,7 @@ var res = {
     hero_layer_json : "res/HeroLayer.json",
     hero_view_json : "res/HeroView.json",
     skill_view_json : "res/SkillView.json",
-    equip_layer_json : "res/Equiplayer.json",
+    equip_layer_json : "res/EquipLayer.json",
     equip_view_json : "res/EquipView.json",
     equip_hero_view_json : "res/EquipHeroView.json",
 
