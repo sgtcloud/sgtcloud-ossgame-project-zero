@@ -330,3 +330,4 @@ cc.inject = function(srcPrototype, destPrototype){
     for(var key in srcPrototype)
         destPrototype[key] = srcPrototype[key];
 };
+

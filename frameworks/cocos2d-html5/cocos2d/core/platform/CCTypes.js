@@ -405,3 +405,4 @@ if (cc._renderType === cc._RENDER_TYPE_WEBGL) {
 cc.assert(cc.isFunction(cc._tmp.PrototypeColor), cc._LogInfos.MissingFile, "CCTypesPropertyDefine.js");
 cc._tmp.PrototypeColor();
 delete cc._tmp.PrototypeColor;
+

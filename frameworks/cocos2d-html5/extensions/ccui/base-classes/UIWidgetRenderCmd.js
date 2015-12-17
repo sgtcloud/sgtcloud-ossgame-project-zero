@@ -97,3 +97,4 @@ if (cc._renderType === cc._RENDER_TYPE_CANVAS) {
         };
     })();
 }
+

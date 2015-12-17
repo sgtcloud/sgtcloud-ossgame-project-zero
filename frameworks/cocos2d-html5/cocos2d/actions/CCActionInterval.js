@@ -377,7 +377,7 @@ cc.Sequence = cc.ActionInterval.extend(/** @lends cc.Sequence# */{
      */
     initWithTwoActions:function (actionOne, actionTwo) {
         if(!actionOne || !actionTwo)
-            throw "cc.Sequence.initWithTwoActions(): arguments must all be non nil";
+            throw new Error("cc.Sequence.initWithTwoActions(): arguments must all be non nil");
 
         var d = actionOne._duration + actionTwo._duration;
         this.initWithDuration(d);
@@ -758,7 +758,7 @@ cc.RepeatForever = cc.ActionInterval.extend(/** @lends cc.RepeatForever# */{
      */
     initWithAction:function (action) {
         if(!action)
-            throw "cc.RepeatForever.initWithAction(): action must be non null";
+            throw new Error("cc.RepeatForever.initWithAction(): action must be non null");
 
         this._innerAction = action;
         return true;
@@ -908,7 +908,7 @@ cc.Spawn = cc.ActionInterval.extend(/** @lends cc.Spawn# */{
      */
     initWithTwoActions:function (action1, action2) {
         if(!action1 || !action2)
-            throw "cc.Spawn.initWithTwoActions(): arguments must all be non null" ;
+            throw new Error("cc.Spawn.initWithTwoActions(): arguments must all be non null");
 
         var ret = false;
 
@@ -2909,9 +2909,12 @@ cc.TintTo = cc.ActionInterval.extend(/** @lends cc.TintTo# */{
         dt = this._computeEaseTime(dt);
         var locFrom = this._from, locTo = this._to;
         if (locFrom) {
-            this.target.color = cc.color(locFrom.r + (locTo.r - locFrom.r) * dt,
-                                        locFrom.g + (locTo.g - locFrom.g) * dt,
-	                                    locFrom.b + (locTo.b - locFrom.b) * dt);
+            this.target.setColor(
+                cc.color(
+                    locFrom.r + (locTo.r - locFrom.r) * dt,
+                    locFrom.g + (locTo.g - locFrom.g) * dt,
+                    locFrom.b + (locTo.b - locFrom.b) * dt)
+            );
         }
     }
 });
@@ -3165,9 +3168,9 @@ cc.ReverseTime = cc.ActionInterval.extend(/** @lends cc.ReverseTime# */{
      */
     initWithAction:function (action) {
         if(!action)
-            throw "cc.ReverseTime.initWithAction(): action must be non null";
+            throw new Error("cc.ReverseTime.initWithAction(): action must be non null");
         if(action === this._other)
-            throw "cc.ReverseTime.initWithAction(): the action was already passed in.";
+            throw new Error("cc.ReverseTime.initWithAction(): the action was already passed in.");
 
         if (cc.ActionInterval.prototype.initWithDuration.call(this, action._duration)) {
             // Don't leak if action is reused
@@ -3260,7 +3263,8 @@ cc.Animate = cc.ActionInterval.extend(/** @lends cc.Animate# */{
     _nextFrame:0,
     _origFrame:null,
     _executedLoops:0,
-    _splitTimes:null,
+    _splitTimes: null,
+    _currFrameIndex:0,
 
 	/**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
@@ -3289,12 +3293,20 @@ cc.Animate = cc.ActionInterval.extend(/** @lends cc.Animate# */{
     },
 
     /**
+     * Gets the index of sprite frame currently displayed.
+     * @return {Number}
+     */
+    getCurrentFrameIndex: function () {
+        return this._currFrameIndex;
+    },
+
+    /**
      * @param {cc.Animation} animation
      * @return {Boolean}
      */
     initWithAnimation:function (animation) {
         if(!animation)
-            throw "cc.Animate.initWithAnimation(): animation must be non-NULL";
+            throw new Error("cc.Animate.initWithAnimation(): animation must be non-NULL");
         var singleDuration = animation.getDuration();
         if (this.initWithDuration(singleDuration * animation.getLoops())) {
             this._nextFrame = 0;
@@ -3370,7 +3382,8 @@ cc.Animate = cc.ActionInterval.extend(/** @lends cc.Animate# */{
         var numberOfFrames = frames.length, locSplitTimes = this._splitTimes;
         for (var i = this._nextFrame; i < numberOfFrames; i++) {
             if (locSplitTimes[i] <= dt) {
-                this.target.setSpriteFrame(frames[i].getSpriteFrame());
+                _currFrameIndex = i;
+                this.target.setSpriteFrame(frames[_currFrameIndex].getSpriteFrame());
                 this._nextFrame = i + 1;
             } else {
                 // Issue 1438. Could be more than one frame per tick, due to low frame rate or frame delta < 1/FPS

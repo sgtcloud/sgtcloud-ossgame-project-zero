@@ -31,6 +31,7 @@ cc.rendererWebGL = {
     _cacheToBufferCmds: {},                              // an array saves the renderer commands need for cache to other canvas
     _cacheInstanceIds: [],
     _currentID: 0,
+    _clearColor: cc.color(),                            //background color,default BLACK
 
     getRenderCmd: function (renderableObject) {
         //TODO Add renderCmd pool here
@@ -119,6 +120,26 @@ cc.rendererWebGL = {
         this._renderCmds.length = 0;
     },
 
+    clear: function () {
+        var gl = cc._renderContext;
+        gl.clearColor(this._clearColor.r, this._clearColor.g, this._clearColor.b, this._clearColor.a);
+        gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+        if(this._clearColor.a === 0)
+            gl.blendFunc(gl.SRC_ALPHA, gl.DST_ALPHA);
+    },
+
+    setDepthTest: function (enable){
+        var gl = cc._renderContext;
+        if(enable){
+            gl.clearDepth(1.0);
+            gl.enable(gl.DEPTH_TEST);
+            gl.depthFunc(gl.LEQUAL);
+        }
+        else{
+            gl.disable(gl.DEPTH_TEST);
+        }
+    },
+    
     pushRenderCommand: function (cmd) {
         if(!cmd._needDraw)
             return;

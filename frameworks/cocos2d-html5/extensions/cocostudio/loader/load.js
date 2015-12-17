@@ -140,8 +140,8 @@ ccs._parser = cc.Class.extend({
         return json["widgetTree"];
     },
 
-    parse: function(file, json){
-        var resourcePath = this._dirname(file);
+    parse: function(file, json, resourcePath){
+        resourcePath = resourcePath || this._dirname(file);
         this.pretreatment(json, resourcePath);
         var node = this.parseNode(this.getNodeJson(json), resourcePath, file);
         node && this.deferred(json, resourcePath, node, file);
@@ -192,6 +192,7 @@ ccs.load = function(file, path){
         object.action.tag = object.node.tag;
     return object;
 };
+ccs.load.validate = {};
 
 //Forward compatible interface
 
@@ -221,3 +222,31 @@ ccs.csLoader = {
         return ccs._load(file);
     }
 };
+
+cc.loader.register(["json"], {
+    load : function(realUrl, url, res, cb){
+        cc.loader.loadJson(realUrl, function(error, data){
+            var path = cc.path;
+            if(data && data["Content"] && data["Content"]["Content"]["UsedResources"]){
+                var UsedResources = data["Content"]["Content"]["UsedResources"],
+                    dirname = path.dirname(url),
+                    list = [],
+                    tmpUrl, normalUrl;
+                for(var i=0; i<UsedResources.length; i++){
+                    tmpUrl = path.join(dirname, UsedResources[i]);
+                    normalUrl = path._normalize(tmpUrl);
+                    if(!ccs.load.validate[normalUrl]){
+                        ccs.load.validate[normalUrl] = true;
+                        list.push(tmpUrl);
+                    }
+                }
+                cc.loader.load(list, function(){
+                    cb(error, data);
+                });
+            }else{
+                cb(error, data);
+            }
+
+        });
+    }
+});
