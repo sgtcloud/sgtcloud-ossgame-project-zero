@@ -18,18 +18,6 @@ function initGame() {
     game = new BattleScene();
 }
 function initSpriteFrames() {
-    Effects.player_hit = [];
-    for (var i in player_hit_frames) {
-        // new cc.SpriteFrame("res/grossini_dance.png",cc.rect(0,0,90,128));
-        var frame = new cc.SpriteFrame(res.player_hit_png, cc.rect(i * 192, 0, 192, 192));
-        cc.spriteFrameCache.addSpriteFrame(frame, player_hit_frames[i]);
-        Effects.player_hit[i];
-    }
-
-    for (var i in skill_0_frames) {
-        var frame = new cc.SpriteFrame(res.skill_0_png, cc.rect(i * 192, 0, 192, 192));
-        cc.spriteFrameCache.addSpriteFrame(frame, skill_0_frames[i]);
-    }
 }
 
 function showCover() {
