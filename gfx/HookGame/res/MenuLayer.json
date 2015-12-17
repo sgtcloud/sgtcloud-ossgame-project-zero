@@ -53,6 +53,45 @@
             "Tag": 451,
             "Children": [
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_04.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 12,
+                "Scale9Width": 7,
+                "Scale9Height": 8,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 519,
+                "ActionTag": 1356425691,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 100.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
                 "CheckedState": true,
                 "NormalBackFileData": {
                   "Type": "Normal",
@@ -400,6 +439,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "mainUI/bg_04.png",
         "ui/equip_btn1.png",
         "ui/equip_btn2.png",
         "ui/hero_btn1.png",

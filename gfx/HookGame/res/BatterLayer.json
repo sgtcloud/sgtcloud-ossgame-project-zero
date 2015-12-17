@@ -1099,6 +1099,102 @@
                 },
                 "Name": "enemy_life_text_0",
                 "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_17.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 18,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.6642,
+                  "Y": 729.4022
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1198,
+                  "Y": 0.9725
+                },
+                "PreSize": {
+                  "X": 0.0469,
+                  "Y": 0.04
+                },
+                "LeftMargin": 61.6642,
+                "RightMargin": 548.3358,
+                "TopMargin": 5.5978,
+                "BottomMargin": 714.4022,
+                "Tag": 524,
+                "ActionTag": 485504708,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "timetext_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "99s",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.4533,
+                  "ScaleY": 0.4647
+                },
+                "Position": {
+                  "X": 75.6731,
+                  "Y": 729.5276
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 60,
+                  "G": 238,
+                  "B": 22
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1182,
+                  "Y": 0.9727
+                },
+                "PreSize": {
+                  "X": 0.0422,
+                  "Y": 0.024
+                },
+                "LeftMargin": 63.4334,
+                "RightMargin": 549.5667,
+                "TopMargin": 10.8375,
+                "BottomMargin": 721.1625,
+                "Tag": 525,
+                "ActionTag": -167842844,
+                "Size": {
+                  "X": 27.0,
+                  "Y": 18.0
+                },
+                "Name": "time_text",
+                "ctype": "TextObjectData"
               }
             ],
             "ActionTag": 2088090531,
@@ -1119,6 +1215,7 @@
       },
       "UsedResources": [
         "images/battle_2.png",
+        "mainUI/bg_17.png",
         "ui/reward_01.png",
         "ui/ui_enemy_a.png",
         "ui/ui_enemy_b.png"

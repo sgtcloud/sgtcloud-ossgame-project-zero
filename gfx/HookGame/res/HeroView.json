@@ -94,7 +94,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/hero_icon.png",
+                  "Path": "mainUI/hero_icon.png",
                   "Plist": ""
                 },
                 "Scale9Width": 90,
@@ -836,8 +836,8 @@
                       "Path": "heroUI/lock.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 29,
-                    "Scale9Height": 32,
+                    "Scale9Width": 36,
+                    "Scale9Height": 49,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -1689,11 +1689,11 @@
         "heroUI/diamond.png",
         "heroUI/gold.png",
         "heroUI/hero_bg.png",
-        "heroUI/hero_icon.png",
         "heroUI/lock.png",
         "heroUI/star1.png",
         "heroUI/star2.png",
-        "heroUI/text_bg.png"
+        "heroUI/text_bg.png",
+        "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"
     }

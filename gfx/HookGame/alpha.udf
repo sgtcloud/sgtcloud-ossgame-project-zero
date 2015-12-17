@@ -31,8 +31,9 @@
           <FilePathData Path="RankLayer.csd" />
           <FilePathData Path="RankView.csd" />
           <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="Blood.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="RankView.csd" />
+        <ActiveDocument Path="Blood.csd" />
       </Value>
     </Item>
   </Properties>

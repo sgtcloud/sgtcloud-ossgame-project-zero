@@ -94,7 +94,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/hero_icon.png",
+                  "Path": "mainUI/hero_icon.png",
                   "Plist": ""
                 },
                 "Scale9Width": 90,
@@ -534,7 +534,7 @@
       },
       "UsedResources": [
         "equipUI/equiptitle_bg.png",
-        "heroUI/hero_icon.png",
+        "mainUI/hero_icon.png",
         "ui/textBg.png"
       ],
       "ctype": "GameFileData"

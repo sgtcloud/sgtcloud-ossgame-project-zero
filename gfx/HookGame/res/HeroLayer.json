@@ -156,7 +156,7 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 244.5078,
+                  "X": 230.0,
                   "Y": 498.6998
                 },
                 "Scale": {
@@ -166,15 +166,15 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.382,
+                  "X": 0.3594,
                   "Y": 0.9974
                 },
                 "PreSize": {
                   "X": 0.2813,
                   "Y": 0.1
                 },
-                "LeftMargin": 244.5078,
-                "RightMargin": 215.4922,
+                "LeftMargin": 230.0,
+                "RightMargin": 230.0,
                 "TopMargin": -48.6998,
                 "BottomMargin": 498.6998,
                 "Tag": 174,

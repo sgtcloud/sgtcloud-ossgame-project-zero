@@ -715,7 +715,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/hero_icon.png",
+                  "Path": "mainUI/hero_icon.png",
                   "Plist": ""
                 },
                 "Scale9Width": 90,
@@ -961,8 +961,8 @@
         "heroDescUI/text_bg.png",
         "heroDescUI/text_bg2.png",
         "heroUI/bg.png",
-        "heroUI/hero_icon.png",
         "heroUI/text_bg.png",
+        "mainUI/hero_icon.png",
         "Star.json"
       ],
       "ctype": "GameFileData"
