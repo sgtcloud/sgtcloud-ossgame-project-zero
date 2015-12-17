@@ -69,15 +69,16 @@
                 <PreSize X="0.5688" Y="0.0073" />
                 <ImageFileData Type="Normal" Path="loadingUI/login_bar.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="star" ActionTag="-450634189" Tag="16" IconVisible="False" LeftMargin="127.5654" RightMargin="485.4346" TopMargin="698.2029" BottomMargin="234.7971" Scale9Width="27" Scale9Height="27" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="star" ActionTag="730343248" Tag="10" IconVisible="False" LeftMargin="124.3958" RightMargin="488.6042" TopMargin="698.4734" BottomMargin="234.5266" ctype="SpriteObjectData">
                 <Size X="27.0000" Y="27.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="141.0654" Y="248.2971" />
+                <Position X="137.8958" Y="248.0266" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2204" Y="0.2586" />
+                <PrePosition X="0.2155" Y="0.2584" />
                 <PreSize X="0.0422" Y="0.0281" />
                 <FileData Type="Normal" Path="loadingUI/star.png" Plist="" />
+                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

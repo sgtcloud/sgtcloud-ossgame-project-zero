@@ -308,15 +308,17 @@
                   "Path": "loadingUI/star.png",
                   "Plist": ""
                 },
-                "Scale9Width": 27,
-                "Scale9Height": 27,
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 141.0654,
-                  "Y": 248.2971
+                  "X": 137.8958,
+                  "Y": 248.0266
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -325,25 +327,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2204,
-                  "Y": 0.2586
+                  "X": 0.2155,
+                  "Y": 0.2584
                 },
                 "PreSize": {
                   "X": 0.0422,
                   "Y": 0.0281
                 },
-                "LeftMargin": 127.5654,
-                "RightMargin": 485.4346,
-                "TopMargin": 698.2029,
-                "BottomMargin": 234.7971,
-                "Tag": 16,
-                "ActionTag": -450634189,
+                "LeftMargin": 124.3958,
+                "RightMargin": 488.6042,
+                "TopMargin": 698.4734,
+                "BottomMargin": 234.5266,
+                "Tag": 10,
+                "ActionTag": 730343248,
                 "Size": {
                   "X": 27.0,
                   "Y": 27.0
                 },
                 "Name": "star",
-                "ctype": "ImageViewObjectData"
+                "ctype": "SpriteObjectData"
               }
             ],
             "ActionTag": 2049391,
