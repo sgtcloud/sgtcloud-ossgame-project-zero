@@ -52,7 +52,7 @@ cc.game.onStart = function(){
         document.body.removeChild(document.getElementById("cocosLoading"));
 
     // Pass true to enable retina display, disabled by default to improve performance
-    cc.view.enableRetina(false);
+    cc.view.enableRetina(true);
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size

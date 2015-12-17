@@ -32,7 +32,6 @@ var Skill = function (id, lv) {
         return lv;
     }
     this.getName = function () {
-        cc.log("skill name=" + data.name);
         return data.name;
     }
     this.getDesc = function () {
@@ -77,7 +76,6 @@ var Hero = function (record) {
         return lv;
     }
     this.getName = function () {
-        cc.log("hero name=" + data.name);
         return data.name;
     }
     this.getStar = function () {
