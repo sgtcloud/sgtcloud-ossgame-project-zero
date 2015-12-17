@@ -1,0 +1,19 @@
+<Solution>
+  <PropertyGroup Name="loading" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="loadingLayer.csd" Type="Layer" />
+        <Folder Name="loadingUI">
+          <Image Name="bg.jpg" />
+          <Image Name="login_bg.png" />
+          <Image Name="logo.png" />
+          <Image Name="star.png" />
+          <Image Name="frist.png" />
+          <Image Name="letsgo.png" />
+          <Image Name="login_bar.png" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
