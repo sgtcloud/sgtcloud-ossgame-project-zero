@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BatteLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
+  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="750.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="250.0000" />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition Y="0.3333" />
                 <PreSize X="1.0000" Y="0.6667" />
-                <FileData Type="Normal" Path="images/battle_2.png" Plist="" />
+                <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="sprites" ActionTag="-1993936269" Tag="151" IconVisible="True" RightMargin="640.0000" TopMargin="750.0000" ctype="SingleNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />

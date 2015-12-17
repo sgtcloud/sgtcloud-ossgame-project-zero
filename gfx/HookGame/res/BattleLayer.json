@@ -54,12 +54,12 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "images/battle_2.png",
+                  "Type": "Default",
+                  "Path": "Default/ImageFile.png",
                   "Plist": ""
                 },
-                "Scale9Width": 640,
-                "Scale9Height": 500,
+                "Scale9Width": 46,
+                "Scale9Height": 46,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -1214,7 +1214,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "images/battle_2.png",
+        "Default/ImageFile.png",
         "mainUI/bg_17.png",
         "ui/reward_01.png",
         "ui/ui_enemy_a.png",
