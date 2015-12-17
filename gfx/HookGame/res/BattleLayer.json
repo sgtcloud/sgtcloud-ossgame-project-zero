@@ -53,13 +53,20 @@
             "Tag": 264,
             "Children": [
               {
-                "FileData": {
-                  "Type": "Default",
-                  "Path": "Default/ImageFile.png",
-                  "Plist": ""
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "Scale9Width": 46,
-                "Scale9Height": 46,
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -80,14 +87,14 @@
                   "Y": 0.6667
                 },
                 "BottomMargin": 250.0,
-                "Tag": 175,
-                "ActionTag": -2506091,
+                "Tag": 54,
+                "ActionTag": 1082551047,
                 "Size": {
                   "X": 640.0,
                   "Y": 500.0
                 },
                 "Name": "battle_bg",
-                "ctype": "ImageViewObjectData"
+                "ctype": "PanelObjectData"
               },
               {
                 "AnchorPoint": {},
@@ -1214,7 +1221,6 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "Default/ImageFile.png",
         "mainUI/bg_17.png",
         "ui/reward_01.png",
         "ui/ui_enemy_a.png",
