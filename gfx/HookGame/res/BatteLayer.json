@@ -1,7 +1,7 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
   "Version": "2.3.3.0",
-  "Name": "BatterLayer",
+  "Name": "BatteLayer",
   "Content": {
     "Content": {
       "Animation": {
@@ -1183,10 +1183,10 @@
                   "X": 0.0422,
                   "Y": 0.024
                 },
-                "LeftMargin": 63.4334,
-                "RightMargin": 549.5667,
-                "TopMargin": 10.8375,
-                "BottomMargin": 721.1625,
+                "LeftMargin": 63.434,
+                "RightMargin": 549.566,
+                "TopMargin": 10.837,
+                "BottomMargin": 721.163,
                 "Tag": 525,
                 "ActionTag": -167842844,
                 "Size": {

@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BatterLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
+  <PropertyGroup Name="BatteLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="750.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" CanEdit="False" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="-2506091" Tag="175" IconVisible="False" BottomMargin="250.0000" Scale9Width="640" Scale9Height="500" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="250.0000" />
@@ -280,7 +280,7 @@
                 <PreSize X="0.0469" Y="0.0400" />
                 <FileData Type="Normal" Path="mainUI/bg_17.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="-167842844" Tag="525" IconVisible="False" LeftMargin="63.4334" RightMargin="549.5667" TopMargin="10.8375" BottomMargin="721.1625" FontSize="18" LabelText="99s" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="time_text" ActionTag="-167842844" Tag="525" IconVisible="False" LeftMargin="63.4340" RightMargin="549.5660" TopMargin="10.8370" BottomMargin="721.1630" FontSize="18" LabelText="99s" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="27.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.4533" ScaleY="0.4647" />
                 <Position X="75.6731" Y="729.5276" />

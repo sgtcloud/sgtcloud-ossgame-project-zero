@@ -25,20 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="RankView.csd" />
-          <FilePathData Path="MenuLayer.csd" />
-          <FilePathData Path="Blood.csd" />
-          <FilePathData Path="BatterLayer.csd" />
-          <FilePathData Path="Star.csd" />
-          <FilePathData Path="HeroLayer.csd" />
-          <FilePathData Path="HeroView.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="Blood.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
