@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -116,8 +118,8 @@
                   "X": 0.4688,
                   "Y": 0.1875
                 },
-                "LeftMargin": 170.0,
-                "RightMargin": 170.0,
+                "LeftMargin": 170.0143,
+                "RightMargin": 169.9857,
                 "TopMargin": 180.0,
                 "BottomMargin": 600.0,
                 "Tag": 11,
@@ -212,7 +214,7 @@
                   "X": 364.0,
                   "Y": 7.0
                 },
-                "Name": "login_bg",
+                "Name": "loading_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -245,8 +247,8 @@
                   "X": 0.5422,
                   "Y": 0.0354
                 },
-                "LeftMargin": 146.4997,
-                "RightMargin": 146.5003,
+                "LeftMargin": 146.4864,
+                "RightMargin": 146.5136,
                 "TopMargin": 639.0,
                 "BottomMargin": 287.0,
                 "Tag": 14,
@@ -287,8 +289,8 @@
                   "X": 0.5688,
                   "Y": 0.0073
                 },
-                "LeftMargin": 137.5923,
-                "RightMargin": 138.4077,
+                "LeftMargin": 137.5996,
+                "RightMargin": 138.4004,
                 "TopMargin": 709.0,
                 "BottomMargin": 244.0,
                 "Tag": 15,
@@ -297,7 +299,7 @@
                   "X": 364.0,
                   "Y": 7.0
                 },
-                "Name": "login_bar",
+                "Name": "loading_bar",
                 "ctype": "LoadingBarObjectData"
               },
               {

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="8" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2049391" Tag="9" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2049391" Tag="9" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-1337552459" Tag="10" IconVisible="False" Scale9Width="640" Scale9Height="960" ctype="ImageViewObjectData">
@@ -19,7 +19,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="loadingUI/bg.jpg" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="logo" ActionTag="1065835342" Tag="11" IconVisible="False" LeftMargin="170.0000" RightMargin="170.0000" TopMargin="180.0000" BottomMargin="600.0000" Scale9Width="300" Scale9Height="180" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="logo" ActionTag="1065835342" Tag="11" IconVisible="False" LeftMargin="170.0143" RightMargin="169.9857" TopMargin="180.0000" BottomMargin="600.0000" Scale9Width="300" Scale9Height="180" ctype="ImageViewObjectData">
                 <Size X="300.0000" Y="180.0000" />
                 <AnchorPoint ScaleX="0.4967" ScaleY="1.0000" />
                 <Position X="319.0243" Y="780.0000" />
@@ -39,7 +39,7 @@
                 <PreSize X="0.5406" Y="0.0969" />
                 <FileData Type="Normal" Path="loadingUI/letsgo.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="login_bg" ActionTag="891686233" Tag="13" IconVisible="False" LeftMargin="137.9999" RightMargin="138.0001" TopMargin="709.0000" BottomMargin="244.0000" Scale9Width="364" Scale9Height="7" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="loading_bg" ActionTag="891686233" Tag="13" IconVisible="False" LeftMargin="137.9999" RightMargin="138.0001" TopMargin="709.0000" BottomMargin="244.0000" Scale9Width="364" Scale9Height="7" ctype="ImageViewObjectData">
                 <Size X="364.0000" Y="7.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
                 <Position X="319.9999" Y="251.0000" />
@@ -49,7 +49,7 @@
                 <PreSize X="0.5688" Y="0.0073" />
                 <FileData Type="Normal" Path="loadingUI/login_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="frist" ActionTag="822993709" Tag="14" IconVisible="False" LeftMargin="146.4997" RightMargin="146.5003" TopMargin="639.0000" BottomMargin="287.0000" Scale9Width="347" Scale9Height="34" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="frist" ActionTag="822993709" Tag="14" IconVisible="False" LeftMargin="146.4864" RightMargin="146.5136" TopMargin="639.0000" BottomMargin="287.0000" Scale9Width="347" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="347.0000" Y="34.0000" />
                 <AnchorPoint ScaleX="0.5028" ScaleY="1.0000" />
                 <Position X="320.9580" Y="321.0000" />
@@ -59,7 +59,7 @@
                 <PreSize X="0.5422" Y="0.0354" />
                 <FileData Type="Normal" Path="loadingUI/frist.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="login_bar" ActionTag="1100054645" Tag="15" IconVisible="False" LeftMargin="137.5923" RightMargin="138.4077" TopMargin="709.0000" BottomMargin="244.0000" ProgressInfo="50" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="loading_bar" ActionTag="1100054645" Tag="15" IconVisible="False" LeftMargin="137.5996" RightMargin="138.4004" TopMargin="709.0000" BottomMargin="244.0000" ProgressInfo="50" ctype="LoadingBarObjectData">
                 <Size X="364.0000" Y="7.0000" />
                 <AnchorPoint ScaleX="0.5011" ScaleY="1.0000" />
                 <Position X="320.0000" Y="251.0000" />
