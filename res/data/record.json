@@ -9,7 +9,7 @@
   "autoBossBattle": 1,
   "heros": [
     {
-      "id": "hero101",
+      "id": "h101",
       "lv": 1,
       "star": 0,
       "skills": [
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": "hero102",
+      "id": "h102",
       "lv": 1,
       "star": 0,
       "skills": [

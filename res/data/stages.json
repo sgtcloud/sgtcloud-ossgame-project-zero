@@ -3,11 +3,10 @@
     "name": "战役1",
     "next": "s100002",
     "bg": "s100001.png",
-    "icon": "stage_icon_s100001",
+    "icon": "stage_icon_s100001.png",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "bosstime": 30,
     "bonus": [
       {
         "value": "gold",
@@ -16,29 +15,29 @@
     ],
     "enemyTypes": [
       {
-        "id": "enemy1003",
+        "id": "e1003",
         "lv": 1
       },
       {
-        "id": "enemy1002",
+        "id": "e1002",
         "lv": 1
       },
       {
-        "id": "enemy1001",
+        "id": "e1001",
         "lv": 1
       }
     ],
     "bossBattle": [
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 1
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 1
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 1
       }
     ]
@@ -46,11 +45,11 @@
   "s100002": {
     "name": "战役2",
     "next": "s100003",
-    "icon": "s100002",
+    "bg": "s100002.png",
+    "icon": "stage_icon_s100002.png",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "bosstime": 30,
     "bonus": [
       {
         "value": "gold",
@@ -59,29 +58,29 @@
     ],
     "enemyTypes": [
       {
-        "id": "enemy1003",
+        "id": "e1003",
         "lv": 2
       },
       {
-        "id": "enemy1002",
+        "id": "e1002",
         "lv": 2
       },
       {
-        "id": "enemy1001",
+        "id": "e1001",
         "lv": 2
       }
     ],
     "bossBattle": [
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 1
       },
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 1
       },
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 1
       }
     ]
@@ -89,11 +88,11 @@
   "s100003": {
     "name": "战役3",
     "next": "s100004",
-    "icon": "s100003",
+    "bg": "s100003.png",
+    "icon": "stage_icon_s100003.png",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "bosstime": 30,
     "bonus": [
       {
         "value": "gold",
@@ -102,29 +101,29 @@
     ],
     "enemyTypes": [
       {
-        "id": "enemy1003",
+        "id": "e1003",
         "lv": 3
       },
       {
-        "id": "enemy1002",
+        "id": "e1002",
         "lv": 3
       },
       {
-        "id": "enemy1001",
+        "id": "e1001",
         "lv": 3
       }
     ],
     "bossBattle": [
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 3
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 3
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 3
       }
     ]
@@ -132,11 +131,11 @@
   "s100004": {
     "name": "战役4",
     "next": "s100005",
-    "icon": "s100004",
+    "bg": "s100004.png",
+    "icon": "stage_icon_s100004.png",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "bosstime": 30,
     "bonus": [
       {
         "value": "gold",
@@ -145,29 +144,29 @@
     ],
     "enemyTypes": [
       {
-        "id": "enemy1003",
+        "id": "e1003",
         "lv": 4
       },
       {
-        "id": "enemy1002",
+        "id": "e1002",
         "lv": 4
       },
       {
-        "id": "enemy1001",
+        "id": "e1001",
         "lv": 4
       }
     ],
     "bossBattle": [
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 3
       },
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 3
       },
       {
-        "id": "enemy1005",
+        "id": "e1005",
         "lv": 3
       }
     ]
@@ -175,11 +174,11 @@
   "s100005": {
     "name": "战役5",
     "next": "s100006",
-    "icon": "s100005",
+    "bg": "s100005.png",
+    "icon": "stage_icon_s100005.png",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "bosstime": 30,
     "bonus": [
       {
         "value": "gold",
@@ -188,29 +187,29 @@
     ],
     "enemyTypes": [
       {
-        "id": "enemy1003",
+        "id": "e1003",
         "lv": 5
       },
       {
-        "id": "enemy1002",
+        "id": "e1002",
         "lv": 5
       },
       {
-        "id": "enemy1001",
+        "id": "e1001",
         "lv": 5
       }
     ],
     "bossBattle": [
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 5
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 5
       },
       {
-        "id": "enemy1004",
+        "id": "e1004",
         "lv": 5
       }
     ]
