@@ -202,7 +202,6 @@ cc.AsyncPool = function(srcObj, limit, iterator, onEnd, target){
     self._onEnd = onEnd;
     self._onEndTarget = target;
     self._results = srcObj instanceof Array ? [] : {};
-    self._isErr = false;
 
     cc.each(srcObj, function(value, index){
         self._pool.push({index : index, value : value});
@@ -234,17 +233,9 @@ cc.AsyncPool = function(srcObj, limit, iterator, onEnd, target){
         self._workingSize++;
         self._iterator.call(self._iteratorTarget, value, index,
             function(err) {
-                if (self._isErr)
-                    return;
 
                 self.finishedSize++;
                 self._workingSize--;
-                if (err) {
-                    self._isErr = true;
-                    if (self._onEnd)
-                        self._onEnd.call(self._onEndTarget, err);
-                    return;
-                }
 
                 var arr = Array.prototype.slice.call(arguments, 1);
                 self._results[this.index] = arr[0];
@@ -374,6 +365,8 @@ cc.async = /** @lends cc.async# */{
  * @class
  */
 cc.path = /** @lends cc.path# */{
+    normalizeRE: /[^\.\/]+\/\.\.\//,
+
     /**
      * Join strings to be a path.
      * @example
@@ -510,6 +503,17 @@ cc.path = /** @lends cc.path# */{
         index = pathStr.lastIndexOf("/");
         index = index <= 0 ? 0 : index + 1;
         return pathStr.substring(0, index) + basename + ext + tempStr;
+    },
+    //todo make public after verification
+    _normalize: function(url){
+        var oldUrl = url = String(url);
+
+        //removing all ../
+        do {
+            oldUrl = url;
+            url = url.replace(this.normalizeRE, "");
+        } while(oldUrl.length !== url.length);
+        return url;
     }
 };
 //+++++++++++++++++++++++++something about path end++++++++++++++++++++++++++++++++
@@ -556,7 +560,7 @@ cc.loader = /** @lends cc.loader# */{
             results[0] = a0 || "";
             results[1] = a1 instanceof Array ? a1 : [a1];
             results[2] = a2;
-        } else throw "arguments error to load js!";
+        } else throw new Error("arguments error to load js!");
         return results;
     },
 
@@ -595,7 +599,7 @@ cc.loader = /** @lends cc.loader# */{
         var self = this, jsLoadingImg = self._loadJsImg(),
             args = self._getArgs4Js(arguments);
         this.loadJs(args[0], args[1], function (err) {
-            if (err) throw err;
+            if (err) throw new Error(err);
             jsLoadingImg.parentNode.removeChild(jsLoadingImg);//remove loading gif
             if (args[2]) args[2]();
         });
@@ -643,7 +647,7 @@ cc.loader = /** @lends cc.loader# */{
                 jsLoadingImg.src = cc._loadingImage;
 
             var canvasNode = d.getElementById(cc.game.config["id"]);
-            canvasNode.style.backgroundColor = "black";
+            canvasNode.style.backgroundColor = "transparent";
             canvasNode.parentNode.appendChild(jsLoadingImg);
 
             var canvasStyle = getComputedStyle ? getComputedStyle(canvasNode) : canvasNode.currentStyle;
@@ -672,13 +676,16 @@ cc.loader = /** @lends cc.loader# */{
                 xhr.setRequestHeader("Accept-Charset", "utf-8");
                 xhr.onreadystatechange = function () {
                     if(xhr.readyState === 4)
-                        xhr.status === 200 ? cb(null, xhr.responseText) : cb(errInfo);
+                        xhr.status === 200 ? cb(null, xhr.responseText) : cb({status:xhr.status, errorMessage:errInfo}, null);
                 };
             } else {
                 if (xhr.overrideMimeType) xhr.overrideMimeType("text\/plain; charset=utf-8");
                 xhr.onload = function () {
                     if(xhr.readyState === 4)
-                        xhr.status === 200 ? cb(null, xhr.responseText) : cb(errInfo);
+                        xhr.status === 200 ? cb(null, xhr.responseText) : cb({status:xhr.status, errorMessage:errInfo}, null);
+                };
+                xhr.onerror = function(){
+                    cb({status:xhr.status, errorMessage:errInfo}, null);
                 };
             }
             xhr.send(null);
@@ -711,7 +718,8 @@ cc.loader = /** @lends cc.loader# */{
     },
 
     loadCsb: function(url, cb){
-        var xhr = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest(),
+            errInfo = "load " + url + " failed!";
         xhr.open("GET", url, true);
         xhr.responseType = "arraybuffer";
 
@@ -721,9 +729,11 @@ cc.loader = /** @lends cc.loader# */{
                 window.msg = arrayBuffer;
             }
             if(xhr.readyState === 4)
-                xhr.status === 200 ? cb(null, xhr.response) : cb("load " + url + " failed!");
+                xhr.status === 200 ? cb(null, xhr.response) : cb({status:xhr.status, errorMessage:errInfo}, null);
         };
-
+        xhr.onerror = function(){
+            cb({status:xhr.status, errorMessage:errInfo}, null);
+        };
         xhr.send(null);
     },
 
@@ -742,7 +752,7 @@ cc.loader = /** @lends cc.loader# */{
                     var result = JSON.parse(txt);
                 }
                 catch (e) {
-                    throw "parse json [" + url + "] failed : " + e;
+                    throw new Error("parse json [" + url + "] failed : " + e);
                     return;
                 }
                 cb(null, result);
@@ -784,7 +794,6 @@ cc.loader = /** @lends cc.loader# */{
             this.removeEventListener('load', loadCallback, false);
             this.removeEventListener('error', errorCallback, false);
 
-            cc.loader.cache[url] = img;
             if (callback)
                 callback(null, img);
         };
@@ -838,8 +847,13 @@ cc.loader = /** @lends cc.loader# */{
             cc.error("loader for [" + type + "] not exists!");
             return cb();
         }
-        var basePath = loader.getBasePath ? loader.getBasePath() : self.resPath;
-        var realUrl = self.getUrl(basePath, url);
+        var realUrl = url;
+        if (!cc._urlRegExp.test(url))
+        {
+            var basePath = loader.getBasePath ? loader.getBasePath() : self.resPath;
+            realUrl = self.getUrl(basePath, url);
+        }
+
         if(cc.game.config["noCache"] && typeof realUrl === "string"){
             if(self._noCacheRex.test(realUrl))
                 realUrl += "&_t=" + (new Date() - 0);
@@ -851,7 +865,7 @@ cc.loader = /** @lends cc.loader# */{
                 cc.log(err);
                 self.cache[url] = null;
                 delete self.cache[url];
-                cb();
+                cb({status:520, errorMessage:err}, null);
             } else {
                 self.cache[url] = data;
                 cb(null, data);
@@ -899,7 +913,7 @@ cc.loader = /** @lends cc.loader# */{
         var self = this;
         var len = arguments.length;
         if(len === 0)
-            throw "arguments error!";
+            throw new Error("arguments error!");
 
         if(len === 3){
             if(typeof option === "function"){
@@ -921,12 +935,10 @@ cc.loader = /** @lends cc.loader# */{
             resources, 0,
             function (value, index, AsyncPoolCallback, aPool) {
                 self._loadResIterator(value, index, function (err) {
-                    if (err)
-                        return AsyncPoolCallback(err);
                     var arr = Array.prototype.slice.call(arguments, 1);
                     if (option.trigger)
                         option.trigger.call(option.triggerTarget, arr[0], aPool.size, aPool.finishedSize);   //call trigger
-                    AsyncPoolCallback(null, arr[0]);
+                    AsyncPoolCallback(err, arr[0]);
                 });
             },
             option.cb, option.cbTarget);
@@ -1404,23 +1416,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.UNKNOWN = 0;
-    /**
-     * @memberof cc.sys
-     * @name IOS
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.IOS = 1;
-    /**
-     * @memberof cc.sys
-     * @name ANDROID
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.ANDROID = 2;
+    sys.UNKNOWN = -1;
     /**
      * @memberof cc.sys
      * @name WIN32
@@ -1428,15 +1424,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.WIN32 = 3;
-    /**
-     * @memberof cc.sys
-     * @name MARMALADE
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.MARMALADE = 4;
+    sys.WIN32 = 0;
     /**
      * @memberof cc.sys
      * @name LINUX
@@ -1444,23 +1432,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.LINUX = 5;
-    /**
-     * @memberof cc.sys
-     * @name BADA
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.BADA = 6;
-    /**
-     * @memberof cc.sys
-     * @name BLACKBERRY
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.BLACKBERRY = 7;
+    sys.LINUX = 1;
     /**
      * @memberof cc.sys
      * @name MACOS
@@ -1468,7 +1440,39 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.MACOS = 8;
+    sys.MACOS = 2;
+    /**
+     * @memberof cc.sys
+     * @name ANDROID
+     * @constant
+     * @default
+     * @type {Number}
+     */
+    sys.ANDROID = 3;
+    /**
+     * @memberof cc.sys
+     * @name IOS
+     * @constant
+     * @default
+     * @type {Number}
+     */
+    sys.IPHONE = 4;
+    /**
+     * @memberof cc.sys
+     * @name IOS
+     * @constant
+     * @default
+     * @type {Number}
+     */
+    sys.IPAD = 5;
+    /**
+     * @memberof cc.sys
+     * @name BLACKBERRY
+     * @constant
+     * @default
+     * @type {Number}
+     */
+    sys.BLACKBERRY = 6;
     /**
      * @memberof cc.sys
      * @name NACL
@@ -1476,7 +1480,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.NACL = 9;
+    sys.NACL = 7;
     /**
      * @memberof cc.sys
      * @name EMSCRIPTEN
@@ -1484,7 +1488,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.EMSCRIPTEN = 10;
+    sys.EMSCRIPTEN = 8;
     /**
      * @memberof cc.sys
      * @name TIZEN
@@ -1492,23 +1496,7 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.TIZEN = 11;
-    /**
-     * @memberof cc.sys
-     * @name QT5
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.QT5 = 12;
-    /**
-     * @memberof cc.sys
-     * @name WP8
-     * @constant
-     * @default
-     * @type {Number}
-     */
-    sys.WP8 = 13;
+    sys.TIZEN = 9;
     /**
      * @memberof cc.sys
      * @name WINRT
@@ -1516,7 +1504,15 @@ cc._initSys = function (config, CONFIG_KEY) {
      * @default
      * @type {Number}
      */
-    sys.WINRT = 14;
+    sys.WINRT = 10;
+    /**
+     * @memberof cc.sys
+     * @name WP8
+     * @constant
+     * @default
+     * @type {Number}
+     */
+    sys.WP8 = 11;
     /**
      * @memberof cc.sys
      * @name MOBILE_BROWSER
@@ -1594,28 +1590,6 @@ cc._initSys = function (config, CONFIG_KEY) {
      */
     sys.language = currLanguage;
 
-    var browserType = sys.BROWSER_TYPE_UNKNOWN;
-    var browserTypes = ua.match(/sogou|qzone|liebao|micromessenger|qqbrowser|ucbrowser|360 aphone|360browser|baiduboxapp|baidubrowser|maxthon|trident|oupeng|opera|miuibrowser|firefox/i)
-        || ua.match(/chrome|safari/i);
-    if (browserTypes && browserTypes.length > 0) {
-        browserType = browserTypes[0];
-        if (browserType === 'micromessenger') {
-            browserType = sys.BROWSER_TYPE_WECHAT;
-        } else if (browserType === "safari" && (ua.match(/android.*applewebkit/)))
-            browserType = sys.BROWSER_TYPE_ANDROID;
-        else if (browserType === "trident") browserType = sys.BROWSER_TYPE_IE;
-        else if (browserType === "360 aphone") browserType = sys.BROWSER_TYPE_360;
-    }else if(ua.indexOf("iphone") && ua.indexOf("mobile")){
-        browserType = "safari";
-    }
-    /**
-     * Indicate the running browser type
-     * @memberof cc.sys
-     * @name browserType
-     * @type {String}
-     */
-    sys.browserType = browserType;
-
     // Get the os of system
     var iOS = ( ua.match(/(iPad|iPhone|iPod)/i) ? true : false );
     var isAndroid = ua.match(/android/i) || nav.platform.match(/android/i) ? true : false;
@@ -1635,13 +1609,88 @@ cc._initSys = function (config, CONFIG_KEY) {
      */
     sys.os = osName;
 
-    var multipleAudioWhiteList = [
-        sys.BROWSER_TYPE_BAIDU, sys.BROWSER_TYPE_OPERA, sys.BROWSER_TYPE_FIREFOX, sys.BROWSER_TYPE_CHROME, sys.BROWSER_TYPE_BAIDU_APP,
-        sys.BROWSER_TYPE_SAFARI, sys.BROWSER_TYPE_UC, sys.BROWSER_TYPE_QQ, sys.BROWSER_TYPE_MOBILE_QQ, sys.BROWSER_TYPE_IE
-    ];
+    /* Determine the browser type */
+    var browserType = sys.BROWSER_TYPE_UNKNOWN;
+    var browserTypes = ua.match(/sogou|qzone|liebao|micromessenger|qqbrowser|ucbrowser|360 aphone|360browser|baiduboxapp|baidubrowser|maxthon|trident|oupeng|opera|miuibrowser|firefox/i)
+        || ua.match(/chrome|safari/i);
+    if (browserTypes && browserTypes.length > 0) {
+        browserType = browserTypes[0];
+        if (browserType === 'micromessenger') {
+            browserType = sys.BROWSER_TYPE_WECHAT;
+        } else if (browserType === "safari" && (ua.match(/android.*applewebkit/)))
+            browserType = sys.BROWSER_TYPE_ANDROID;
+        else if (browserType === "trident") browserType = sys.BROWSER_TYPE_IE;
+        else if (browserType === "360 aphone") browserType = sys.BROWSER_TYPE_360;
+    }else if(ua.indexOf("iphone") && ua.indexOf("mobile")){
+        browserType = sys.BROWSER_TYPE_SAFARI;
+    }
 
-    sys._supportMultipleAudio = multipleAudioWhiteList.indexOf(sys.browserType) > -1;
+    /* Determine the browser version number */
+    var browserVersion, tmp = null;
+    switch(browserType){
+        case sys.BROWSER_TYPE_IE:
+            tmp = ua.match(/(msie |rv:)([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_FIREFOX:
+            tmp = ua.match(/(firefox\/|rv:)([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_CHROME:
+            tmp = ua.match(/chrome\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_BAIDU:
+            tmp = ua.match(/baidubrowser\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_UC:
+            tmp = ua.match(/ucbrowser\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_QQ:
+            tmp = ua.match(/qqbrowser\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_OUPENG:
+            tmp = ua.match(/oupeng\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_WECHAT:
+            tmp = ua.match(/micromessenger\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_SAFARI:
+            tmp = ua.match(/safari\/([\d.]+)/);
+            break;
+        case sys.BROWSER_TYPE_MIUI:
+            tmp = ua.match(/miuibrowser\/([\d.]+)/);
+            break;
+    }
+    browserVersion = tmp ? tmp[1] : "";
 
+    /**
+     * Indicate the running browser type
+     * @memberof cc.sys
+     * @name browserType
+     * @type {String}
+     */
+    sys.browserType = browserType;
+
+    /**
+     * Indicate the running browser version
+     * @memberof cc.sys
+     * @name browserVersion
+     * @type {Number}
+     */
+    sys.browserVersion = browserVersion;
+
+    var w = window.innerWidth || document.documentElement.clientWidth;
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    var ratio = window.devicePixelRatio || 1;
+
+    /**
+     * Indicate the real pixel resolution of the whole game window
+     * @memberof cc.sys
+     * @name windowPixelResolution
+     * @type {Number}
+     */
+    sys.windowPixelResolution = {
+        width: ratio * w,
+        height: ratio * h
+    };
 
     //++++++++++++++++++something about cc._renderTYpe and cc._supportRender begin++++++++++++++++++++++++++++
 
@@ -1700,14 +1749,6 @@ cc._initSys = function (config, CONFIG_KEY) {
 
     //++++++++++++++++++something about cc._renderType and cc._supportRender end++++++++++++++++++++++++++++++
 
-    // check if browser supports Web Audio
-    // check Web Audio's context
-    try {
-        sys._supportWebAudio = !!(win.AudioContext || win.webkitAudioContext || win.mozAudioContext);
-    } catch (e) {
-        sys._supportWebAudio = false;
-    }
-
     /**
      * cc.sys.localStorage is a local storage component.
      * @memberof cc.sys
@@ -1720,10 +1761,14 @@ cc._initSys = function (config, CONFIG_KEY) {
         localStorage.removeItem("storage");
         localStorage = null;
     } catch (e) {
-        if (e.name === "SECURITY_ERR" || e.name === "QuotaExceededError") {
+        var warn = function () {
             cc.warn("Warning: localStorage isn't enabled. Please confirm browser cookie or privacy option");
         }
-        sys.localStorage = function () {
+        sys.localStorage = {
+            getItem : warn,
+            setItem : warn,
+            removeItem : warn,
+            clear : warn
         };
     }
 
@@ -1955,7 +2000,7 @@ cc._setup = function (el, width, height) {
             'stencil': true,
             'preserveDrawingBuffer': true,
             'antialias': !cc.sys.isMobile,
-            'alpha': false
+            'alpha': true
         });
     if (cc._renderContext) {
         win.gl = cc._renderContext; // global variable declared in CCMacro.js
@@ -2018,7 +2063,7 @@ cc._setup = function (el, width, height) {
 
 cc._checkWebGLRenderMode = function () {
     if (cc._renderType !== cc._RENDER_TYPE_WEBGL)
-        throw "This feature supports WebGL render mode only.";
+        throw new Error("This feature supports WebGL render mode only.");
 };
 
 cc._isContextMenuEnable = false;
@@ -2049,6 +2094,7 @@ cc.game = /** @lends cc.game# */{
 
     EVENT_HIDE: "game_on_hide",
     EVENT_SHOW: "game_on_show",
+    EVENT_RESIZE: "game_on_resize",
     _eventHide: null,
     _eventShow: null,
     _onBeforeStartArr: [],
@@ -2075,7 +2121,7 @@ cc.game = /** @lends cc.game# */{
     _paused: true,//whether the game is paused
 
     _intervalId: null,//interval target of main
-
+    
     _lastTime: null,
     _frameTime: null,
 
@@ -2268,7 +2314,7 @@ cc.game = /** @lends cc.game# */{
         dir = dir || "";
         var jsList = [];
         var tempList = moduleMap[moduleName];
-        if (!tempList) throw "can not find module [" + moduleName + "]";
+        if (!tempList) throw new Error("can not find module [" + moduleName + "]");
         var ccPath = cc.path;
         for (var i = 0, li = tempList.length; i < li; i++) {
             var item = tempList[i];
@@ -2290,7 +2336,7 @@ cc.game = /** @lends cc.game# */{
         var self = this;
         var config = self.config, CONFIG_KEY = self.CONFIG_KEY, engineDir = config[CONFIG_KEY.engineDir], loader = cc.loader;
         if (!cc._supportRender) {
-            throw "The renderer doesn't support the renderMode " + config[CONFIG_KEY.renderMode];
+            throw new Error("The renderer doesn't support the renderMode " + config[CONFIG_KEY.renderMode]);
         }
         self._prepareCalled = true;
 
@@ -2298,7 +2344,7 @@ cc.game = /** @lends cc.game# */{
         if (cc.Class) {//is single file
             //load user's jsList only
             loader.loadJsWithImg("", jsList, function (err) {
-                if (err) throw err;
+                if (err) throw new Error(err);
                 self._prepared = true;
                 if (cb) cb();
             });
@@ -2306,7 +2352,7 @@ cc.game = /** @lends cc.game# */{
             //load cc's jsList first
             var ccModulesPath = cc.path.join(engineDir, "moduleConfig.json");
             loader.loadJson(ccModulesPath, function (err, modulesJson) {
-                if (err) throw err;
+                if (err) throw new Error(err);
                 var modules = config["modules"] || [];
                 var moduleMap = modulesJson["module"];
                 var newJsList = [];
@@ -2318,7 +2364,7 @@ cc.game = /** @lends cc.game# */{
                 }
                 newJsList = newJsList.concat(jsList);
                 cc.loader.loadJsWithImg(newJsList, function (err) {
-                    if (err) throw err;
+                    if (err) throw new Error(err);
                     self._prepared = true;
                     if (cb) cb();
                 });
@@ -2351,3 +2397,35 @@ Function.prototype.bind = Function.prototype.bind || function (oThis) {
 
     return fBound;
 };
+
+cc._urlRegExp = new RegExp(
+    "^" +
+        // protocol identifier
+        "(?:(?:https?|ftp)://)" +
+        // user:pass authentication
+        "(?:\\S+(?::\\S*)?@)?" +
+        "(?:" +
+            // IP address dotted notation octets
+            // excludes loopback network 0.0.0.0
+            // excludes reserved space >= 224.0.0.0
+            // excludes network & broacast addresses
+            // (first & last IP address of each class)
+            "(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])" +
+            "(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}" +
+            "(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))" +
+        "|" +
+            // host name
+            "(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)" +
+            // domain name
+            "(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*" +
+            // TLD identifier
+            "(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))" +
+        "|" +
+            "(?:localhost)" +
+        ")" +
+        // port number
+        "(?::\\d{2,5})?" +
+        // resource path
+        "(?:/\\S*)?" +
+    "$", "i"
+);

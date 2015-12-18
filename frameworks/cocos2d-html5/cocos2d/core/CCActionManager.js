@@ -96,9 +96,9 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
      */
     addAction:function (action, target, paused) {
         if(!action)
-            throw "cc.ActionManager.addAction(): action must be non-null";
+            throw new Error("cc.ActionManager.addAction(): action must be non-null");
         if(!target)
-            throw "cc.ActionManager.addAction(): action must be non-null";
+            throw new Error("cc.ActionManager.addAction(): action must be non-null");
 
         //check if the action target already exists
         var element = this._hashTargets[target.__instanceId];
@@ -313,12 +313,17 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
     },
 
     _deleteHashElement:function (element) {
+        var ret = false;
         if (element) {
-            delete this._hashTargets[element.target.__instanceId];
-            cc.arrayRemoveObject(this._arrayTargets, element);
+            if(this._hashTargets[element.target.__instanceId]){
+                delete this._hashTargets[element.target.__instanceId];
+                cc.arrayRemoveObject(this._arrayTargets, element);
+                ret = true;
+            }
             element.actions = null;
             element.target = null;
         }
+        return ret;
     },
 
     _actionAllocWithHashElement:function (element) {
@@ -371,7 +376,7 @@ cc.ActionManager = cc.Class.extend(/** @lends cc.ActionManager# */{
 
             // only delete currentTarget if no actions were scheduled during the cycle (issue #481)
             if (this._currentTargetSalvaged && locCurrTarget.actions.length === 0) {
-                this._deleteHashElement(locCurrTarget);
+                this._deleteHashElement(locCurrTarget) && elt--;
             }
         }
     }

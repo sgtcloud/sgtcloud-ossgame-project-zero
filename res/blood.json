@@ -16,6 +16,7 @@
         "Children": [
           {
             "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
               "G": 200
@@ -85,25 +86,23 @@
                 "Tag": 9,
                 "ActionTag": 655272865,
                 "Size": {
-                  "X": 150.0,
-                  "Y": 15.0
+                  "X": 120.0,
+                  "Y": 12.0
                 },
                 "Name": "blood_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "ProgressInfo": 100,
+                "ProgressInfo": 50,
                 "ImageFileData": {
                   "Type": "Normal",
                   "Path": "bloodUI/blood_bar.png",
                   "Plist": ""
                 },
-                "AnchorPoint": {
-                  "ScaleY": 0.1018
-                },
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 3.6967,
-                  "Y": 3.4633
+                  "X": 2.0,
+                  "Y": 1.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -112,22 +111,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0246,
-                  "Y": 0.2309
+                  "X": 0.0167,
+                  "Y": 0.0833
                 },
                 "PreSize": {
-                  "X": 0.9467,
-                  "Y": 0.7333
+                  "X": 0.9667,
+                  "Y": 0.8333
                 },
-                "LeftMargin": 3.6967,
-                "RightMargin": 4.3033,
-                "TopMargin": 1.6565,
-                "BottomMargin": 2.3435,
+                "LeftMargin": 2.0,
+                "RightMargin": 2.0,
+                "TopMargin": 1.0,
+                "BottomMargin": 1.0,
                 "Tag": 10,
                 "ActionTag": 405491421,
                 "Size": {
-                  "X": 142.0,
-                  "Y": 11.0
+                  "X": 116.0,
+                  "Y": 10.0
                 },
                 "Name": "blood_bar",
                 "ctype": "LoadingBarObjectData"
@@ -135,16 +134,16 @@
             ],
             "ActionTag": -1138515971,
             "Size": {
-              "X": 150.0,
-              "Y": 15.0
+              "X": 120.0,
+              "Y": 12.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 150.0,
-          "Y": 15.0
+          "X": 120.0,
+          "Y": 12.0
         },
         "Name": "blood",
         "ctype": "LayerObjectData"

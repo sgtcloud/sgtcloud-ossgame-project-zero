@@ -101,17 +101,11 @@ if (cc._renderType === cc._RENDER_TYPE_WEBGL) {
         };
 
         _p.setDepthTest = function (on) {
+            cc.renderer.setDepthTest(on);
+        };
 
-            var loc_gl = cc._renderContext;
-            if (on) {
-                loc_gl.clearDepth(1.0);
-                loc_gl.enable(loc_gl.DEPTH_TEST);
-                loc_gl.depthFunc(loc_gl.LEQUAL);
-                //cc._renderContext.hint(cc._renderContext.PERSPECTIVE_CORRECTION_HINT, cc._renderContext.NICEST);
-            } else {
-                loc_gl.disable(loc_gl.DEPTH_TEST);
-            }
-            //cc.checkGLErrorDebug();
+        _p.setClearColor = function (clearColor) {
+            cc.renderer._clearColor = clearColor;
         };
 
         _p.setOpenGLView = function (openGLView) {
@@ -314,7 +308,7 @@ if (cc._renderType === cc._RENDER_TYPE_WEBGL) {
             _t.setProjection(_t._projection);
 
             // set other opengl default values
-            cc._renderContext.clearColor(0.0, 0.0, 0.0, 1.0);
+            cc._renderContext.clearColor(0.0, 0.0, 0.0, 0.0);
         };
     })();
 }

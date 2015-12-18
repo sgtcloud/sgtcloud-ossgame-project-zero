@@ -2,19 +2,19 @@
  Copyright (c) 2008-2010 Ricardo Quesada
  Copyright (c) 2011-2012 cocos2d-x.org
  Copyright (c) 2013-2014 Chukong Technologies Inc.
-
+ 
  http://www.cocos2d-x.org
-
+ 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
-
+ 
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
-
+ 
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -74,7 +74,7 @@ cc.screen = /** @lends cc.screen# */{
             'msFullscreenElement'
         ]
     ],
-
+    
     /**
      * initialize
      * @function
@@ -95,15 +95,19 @@ cc.screen = /** @lends cc.screen# */{
         this._supportsFullScreen = (typeof this._fn.requestFullscreen !== 'undefined');
         this._touchEvent = ('ontouchstart' in window) ? 'touchstart' : 'mousedown';
     },
-
+    
     /**
      * return true if it's full now.
      * @returns {Boolean}
      */
     fullScreen: function () {
-        return this._supportsFullScreen && document[this._fn.fullscreenElement];
+        if(!this._supportsFullScreen)   return false;
+        else if( document[this._fn.fullscreenElement] === undefined || document[this._fn.fullscreenElement] === null )
+            return false;
+        else
+            return true;
     },
-
+    
     /**
      * change the screen to full mode.
      * @param {Element} element
@@ -127,7 +131,7 @@ cc.screen = /** @lends cc.screen# */{
 
         return element[this._fn.requestFullscreen]();
     },
-
+    
     /**
      * exit the full mode.
      * @return {Boolean}
@@ -135,7 +139,7 @@ cc.screen = /** @lends cc.screen# */{
     exitFullScreen: function () {
         return this._supportsFullScreen ? document[this._fn.exitFullscreen]() : true;
     },
-
+    
     /**
      * Automatically request full screen with a touch/click event
      * @param {Element} element

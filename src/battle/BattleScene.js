@@ -146,16 +146,19 @@ var TitleLayer = cc.Node.extend({
 });
 
 var BattleLayer = cc.Node.extend({
+
+
     ctor: function (battle) {
         this._super();
 
-        var layer = ccs.csLoader.createNode(res.batter_layer_json);
+        var layer = ccs.csLoader.createNode(res.battle_layer_json);
         this.addChild(layer);
 
 
         var root = layer.getChildByName('root');
         this.enemyLifeText = root.getChildByName('enemy_life_text');
         this.enemyLifeBar = root.getChildByName('enemy_life_bar');
+        this.battle_bg = root.getChildByName('battle_bg');
 
         this.refreshEnemyLife = function () {
             var max = battle.enemySprites.getMaxLife();
@@ -163,6 +166,24 @@ var BattleLayer = cc.Node.extend({
             this.enemyLifeText.setString(life);
             this.enemyLifeBar.setPercent(life / max * 100);
         };
+
+        this.changeStageBg = function (bg_image_url) {
+            cc.textureCache.addImageAsync("res/stages/" + bg_image_url, this.stageBgLoaded, this);
+        }
+
+        this.stageBgLoaded = function (textureBg) {
+            if (textureBg) {
+                this.battle_bg.removeAllChildren();
+                var bg = new cc.Sprite(textureBg);
+                bg.attr({
+                        x: this.battle_bg.width / 2,
+                        y: this.battle_bg.height / 2
+                    }
+                );
+                this.battle_bg.addChild(bg);
+            }
+        }
+
         this.bindPlayerTapEvent = function () {
             var root = layer.getChildByName('root');
             var tap = root.getChildByName('tap');
@@ -263,6 +284,10 @@ var BattleScene = cc.Scene.extend({
                     this.enemySprites.push(enemy);
                     this.battleLayer.setEnemySprite(enemy, i);
                 }
+            }
+            this.setStageBg = function () {
+                var stage = player.getStageData();
+                this.battleLayer.changeStageBg(stage.getBg())
             }
             this.refreshEnemyLife = function () {
                 this.battleLayer.refreshEnemyLife();
@@ -425,6 +450,7 @@ var BattleScene = cc.Scene.extend({
                 this.onRandomBattleWin();
             }
         }
+        this.setStageBg();
         this.buildBatttleHeros();
         this.buildBattleEnemys();
 

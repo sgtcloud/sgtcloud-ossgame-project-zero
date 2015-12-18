@@ -168,10 +168,7 @@
             var node = this._node, displayedColor = this._displayedColor;
 
             if (displayedColor.r === 255 && displayedColor.g === 255 && displayedColor.b === 255){
-                if(this._colorized){
-                    this._colorized = false;
-                    node.texture = this._originalTexture;
-                }
+                this._setOriginalTexture();
                 return;
             }
 
@@ -201,10 +198,7 @@
         proto._updateColor = function () {
             var node = this._node, displayedColor = this._displayedColor;
             if (displayedColor.r === 255 && displayedColor.g === 255 && displayedColor.b === 255) {
-                if (this._colorized) {
-                    this._colorized = false;
-                    node.texture = this._originalTexture;
-                }
+                this._setOriginalTexture();
                 return;
             }
 
@@ -223,26 +217,37 @@
                     locTexture = new cc.Texture2D();
                     locTexture.initWithElement(locElement);
                     locTexture.handleLoadedTexture();
-                    node.texture = locTexture;
+                    node.setTexture(locTexture);
                 }
             }
         };
     }
+    
+    proto._setOriginalTexture = function () {
+        if (this._colorized) {
+            this._colorized = false;
+            var node = this._node;
+            var rect = cc.rect(node._rect);
+            var contentSize = cc.size(node._contentSize);
+            var isRotation = node._rectRotated;
+            node.setTexture(this._originalTexture);
+            node.setTextureRect(rect, isRotation, contentSize);
+        }
+    };
 
     proto.getQuad = function () {
         //throw an error. it doesn't support this function.
         return null;
     };
 
-    proto._updateForSetSpriteFrame = function (pNewTexture, textureLoaded) {
-        var node = this._node;
-        if (node._rectRotated)
-            node._originalTexture = pNewTexture;      //TODO
+    proto._updateForSetSpriteFrame = function (pNewTexture, textureLoaded){
+        this._originalTexture = pNewTexture;      //TODO
         this._colorized = false;
         this._textureCoord.renderX = this._textureCoord.x;
         this._textureCoord.renderY = this._textureCoord.y;
+        textureLoaded = textureLoaded || pNewTexture._textureLoaded;
         if (textureLoaded) {
-            var curColor = node.getColor();
+            var curColor = this._node.getColor();
             if (curColor.r !== 255 || curColor.g !== 255 || curColor.b !== 255)
                 this._updateColor();
         }
@@ -328,11 +333,6 @@
         locTextureRect.width = 0 | (rect.width * scaleFactor);
         locTextureRect.height = 0 | (rect.height * scaleFactor);
         locTextureRect.validRect = !(locTextureRect.width === 0 || locTextureRect.height === 0 || locTextureRect.x < 0 || locTextureRect.y < 0);
-
-        if(this._colorized){
-            this._node._texture = this._originalTexture;
-            this._colorized = false;
-        }
     };
 
     //TODO need refactor these functions

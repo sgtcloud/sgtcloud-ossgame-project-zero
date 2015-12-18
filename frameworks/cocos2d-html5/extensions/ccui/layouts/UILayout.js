@@ -1549,7 +1549,7 @@ ccui.Layout.CLIPPING_SCISSOR = 1;
  * @type {number}
  * @constant
  */
-ccui.Layout.BACKGROUND_IMAGE_ZORDER = -2;
+ccui.Layout.BACKGROUND_IMAGE_ZORDER = -1;
 /**
  * The zOrder value of ccui.Layout's color background.
  * @type {number}

@@ -23,7 +23,7 @@ function initSpriteFrames() {
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
 
-    var loginBtn = scene.getChildByName("cover_login_btn");
+    var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
     bindButtonCallback(loginBtn, function () {
         showGame();
     });

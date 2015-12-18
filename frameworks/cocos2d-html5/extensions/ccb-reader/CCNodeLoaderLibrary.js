@@ -96,3 +96,6 @@ cc.NodeLoaderLibrary.newDefaultCCNodeLoaderLibrary = function(){
     ccNodeLoaderLibrary.registerDefaultCCNodeLoaders();
     return ccNodeLoaderLibrary;
 };
+
+
+

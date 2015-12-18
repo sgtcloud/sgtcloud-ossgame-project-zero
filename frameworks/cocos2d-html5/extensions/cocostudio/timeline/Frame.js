@@ -35,12 +35,14 @@ ccs.Frame = ccs.Class.extend({
     _node: null,
     _tweenType: null,
     _easingParam: null,
+    _enterWhenPassed: null,
 
     ctor: function(){
         this._frameIndex = 0;
         this._tween = true;
         this._timeline = null;
         this._node = null;
+        this._enterWhenPassed = false;
         this._easingParam = [];
     },
 
@@ -190,6 +192,14 @@ ccs.Frame = ccs.Class.extend({
 });
 
 ccs.Frame.tweenToMap = {
+    "-1": function(time, easingParam){
+        if (easingParam)
+        {
+            var tt = 1 - time;
+            return easingParam[1]*tt*tt*tt + 3*easingParam[3]*time*tt*tt + 3*easingParam[5]*time*time*tt + easingParam[7]*time*time*time;
+        }
+        return time;
+    },
     1: cc._easeSineInObj.easing,//Sine_EaseIn
     2: cc._easeSineOutObj.easing,//Sine_EaseOut
     3: cc._easeSineInOutObj.easing,//Sine_EaseInOut
@@ -1276,6 +1286,7 @@ ccs.EventFrame = ccs.Frame.extend({
     ctor: function(){
         ccs.Frame.prototype.ctor.call(this);
         this._event = "";
+        this._enterWhenPassed = true;
     },
 
     /**
@@ -1398,8 +1409,16 @@ ccs.BlendFuncFrame = ccs.Frame.extend({
     clone: function(){
         var frame = new ccs.BlendFuncFrame();
         frame.setBlendFunc(this._blendFunc);
-        frame.cloneProperty(this);
+        frame._cloneProperty(this);
         return frame;
+    },
+
+    setBlendFunc: function(blendFunc){
+        this._blendFunc = blendFunc;
+    },
+
+    getBlendFunc: function(){
+        return this._blendFunc;
     }
 });
 

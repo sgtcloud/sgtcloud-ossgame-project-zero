@@ -269,12 +269,6 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
         if(!this._scale9Image)
             return;
         cc.Node.prototype.setOpacity.call(this, opacity);
-        var scaleChildren = this._scale9Image.getChildren();
-        for (var i = 0; i < scaleChildren.length; i++) {
-            var selChild = scaleChildren[i];
-            if (selChild)
-                selChild.setOpacity(opacity);
-        }
         this._scale9Dirty = true;
     },
 
@@ -450,7 +444,7 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
         }
 
         if(!file)
-            throw "cc.Scale9Sprite.initWithFile(): file should be non-null";
+            throw new Error("cc.Scale9Sprite.initWithFile(): file should be non-null");
 
         var texture = cc.textureCache.getTextureForKey(file);
         if (!texture) {
@@ -462,11 +456,11 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
         if(!locLoaded){
             texture.addEventListener("load", function(sender){
                 // the texture is rotated on Canvas render mode, so isRotated always is false.
-                var preferredSize = this._preferredSize, restorePreferredSize = (preferredSize.width !== 0 || preferredSize.height !== 0);
-                if(restorePreferredSize)preferredSize = cc.size(preferredSize.width, preferredSize.height);
+                var preferredSize = this._preferredSize, restorePreferredSize = preferredSize.width !== 0 && preferredSize.height !== 0;
+                if (restorePreferredSize) preferredSize = cc.size(preferredSize.width, preferredSize.height);
                 var size  = sender.getContentSize();
                 this.updateWithBatchNode(this._scale9Image, cc.rect(0,0,size.width,size.height), false, this._capInsets);
-                if(restorePreferredSize)this.setPreferredSize(preferredSize);
+                if (restorePreferredSize)this.setPreferredSize(preferredSize);
                 this._positionsAreDirty = true;
                 this.dispatchEvent("load");
             }, this);
@@ -487,7 +481,7 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
      */
     initWithSpriteFrame: function (spriteFrame, capInsets) {
         if(!spriteFrame || !spriteFrame.getTexture())
-            throw "cc.Scale9Sprite.initWithSpriteFrame(): spriteFrame should be non-null and its texture should be non-null";
+            throw new Error("cc.Scale9Sprite.initWithSpriteFrame(): spriteFrame should be non-null and its texture should be non-null");
 
         capInsets = capInsets || cc.rect(0, 0, 0, 0);
         var locLoaded = spriteFrame.textureLoaded();
@@ -495,10 +489,10 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
         if(!locLoaded){
             spriteFrame.addEventListener("load", function(sender){
                 // the texture is rotated on Canvas render mode, so isRotated always is false.
-                var preferredSize = this._preferredSize, restorePreferredSize = (preferredSize.width !== 0 || preferredSize.height !== 0);
-                if(restorePreferredSize)preferredSize = cc.size(preferredSize.width, preferredSize.height);
+                var preferredSize = this._preferredSize, restorePreferredSize = preferredSize.width !== 0 && preferredSize.height !== 0;
+                if (restorePreferredSize) preferredSize = cc.size(preferredSize.width, preferredSize.height);
                 this.updateWithBatchNode(this._scale9Image, sender.getRect(), cc._renderType === cc._RENDER_TYPE_WEBGL && sender.isRotated(), this._capInsets);
-                if(restorePreferredSize)this.setPreferredSize(preferredSize);
+                if (restorePreferredSize)this.setPreferredSize(preferredSize);
                 this._positionsAreDirty = true;
                 this.dispatchEvent("load");
             },this);
@@ -520,7 +514,7 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
      */
     initWithSpriteFrameName: function (spriteFrameName, capInsets) {
         if(!spriteFrameName)
-            throw "cc.Scale9Sprite.initWithSpriteFrameName(): spriteFrameName should be non-null";
+            throw new Error("cc.Scale9Sprite.initWithSpriteFrameName(): spriteFrameName should be non-null");
         capInsets = capInsets || cc.rect(0, 0, 0, 0);
 
         var frame = cc.spriteFrameCache.getSpriteFrame(spriteFrameName);
@@ -897,10 +891,10 @@ cc.Scale9Sprite = cc.Node.extend(/** @lends cc.Scale9Sprite# */{
         if(!locLoaded){
             spriteFrame.addEventListener("load", function(sender){
                 // the texture is rotated on Canvas render mode, so isRotated always is false.
-                var preferredSize = this._preferredSize, restorePreferredSize = (preferredSize.width !== 0 || preferredSize.height !== 0);
-                if(restorePreferredSize)preferredSize = cc.size(preferredSize.width, preferredSize.height);
+                var preferredSize = this._preferredSize, restorePreferredSize = preferredSize.width !== 0 && preferredSize.height !== 0;
+                if (restorePreferredSize) preferredSize = cc.size(preferredSize.width, preferredSize.height);
                 this.updateWithBatchNode(this._scale9Image, sender.getRect(), cc._renderType === cc._RENDER_TYPE_WEBGL && sender.isRotated(), this._capInsets);
-                if(restorePreferredSize)this.setPreferredSize(preferredSize);
+                if (restorePreferredSize)this.setPreferredSize(preferredSize);
                 this._positionsAreDirty = true;
                 this.dispatchEvent("load");
             },this);

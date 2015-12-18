@@ -194,7 +194,7 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
      */
     addChild: function (child, zOrder, tag) {
         if (!(child instanceof cc.MenuItem))
-            throw "cc.Menu.addChild() : Menu only supports MenuItem objects as children";
+            throw new Error("cc.Menu.addChild() : Menu only supports MenuItem objects as children");
         cc.Layer.prototype.addChild.call(this, child, zOrder, tag);
     },
 
@@ -492,7 +492,7 @@ cc.Menu = cc.Layer.extend(/** @lends cc.Menu# */{
             cc.log("cc.Menu.onTouchCancelled(): invalid state");
             return;
         }
-        if (this._selectedItem) {
+        if (target._selectedItem) {
             target._selectedItem.unselected();
             target._selectedItem.setNodeDirty();
         }

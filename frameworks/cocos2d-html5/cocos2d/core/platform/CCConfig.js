@@ -31,7 +31,7 @@
  * @type {String}
  * @name cc.ENGINE_VERSION
  */
-window["CocosEngine"] = cc.ENGINE_VERSION = "Cocos2d-JS v3.6";
+window["CocosEngine"] = cc.ENGINE_VERSION = "Cocos2d-JS v3.8";
 
 /**
  * <p>
@@ -117,7 +117,7 @@ cc.SPRITEBATCHNODE_RENDER_SUBPIXEL = 1;
  * @constant
  * @type {Number}
  */
-cc.OPTIMIZE_BLEND_FUNC_FOR_PREMULTIPLIED_ALPHA = 0;
+cc.OPTIMIZE_BLEND_FUNC_FOR_PREMULTIPLIED_ALPHA = 1;
 
 /**
  * <p>

@@ -370,15 +370,15 @@
                   "Path": "heroUI/lock.png",
                   "Plist": ""
                 },
-                "Scale9Width": 29,
-                "Scale9Height": 32,
+                "Scale9Width": 36,
+                "Scale9Height": 49,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
                   "X": 76.8404,
-                  "Y": 31.0503
+                  "Y": 34.0503
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -388,7 +388,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5489,
-                  "Y": 0.3881
+                  "Y": 0.4256
                 },
                 "PreSize": {
                   "X": 0.2071,
@@ -396,8 +396,8 @@
                 },
                 "LeftMargin": 62.3404,
                 "RightMargin": 48.6596,
-                "TopMargin": 32.9497,
-                "BottomMargin": 15.0503,
+                "TopMargin": 29.9497,
+                "BottomMargin": 18.0503,
                 "Tag": 294,
                 "ActionTag": 1681642591,
                 "Size": {

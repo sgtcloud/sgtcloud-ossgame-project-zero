@@ -2,7 +2,8 @@
   "s100001": {
     "name": "战役1",
     "next": "s100002",
-    "icon": "s100001",
+    "bg": "s100001.png",
+    "icon": "stage_icon_s100001",
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,

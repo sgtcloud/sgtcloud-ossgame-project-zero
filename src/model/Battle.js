@@ -43,6 +43,10 @@ var Stage = function (id) {
         return false;
     }
 
+    this.getBg =function(){
+        return data.bg;
+    }
+
     this.getId = function () {
         return id;
     }

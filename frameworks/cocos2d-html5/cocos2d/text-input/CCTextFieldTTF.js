@@ -126,7 +126,6 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
     ctor:function (placeholder, dimensions, alignment, fontName, fontSize) {
         this.colorSpaceHolder = cc.color(127, 127, 127);
         this._colorText = cc.color(255,255,255, 255);
-        cc.imeDispatcher.addDelegate(this);
         cc.LabelTTF.prototype.ctor.call(this);
 
         if(fontSize !== undefined){
@@ -138,6 +137,16 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
             if(placeholder)
                 this.setPlaceHolder(placeholder);
         }
+    },
+
+    onEnter: function(){
+        cc.LabelTTF.prototype.onEnter.call(this);
+        cc.imeDispatcher.addDelegate(this);
+    },
+
+    onExit: function(){
+        cc.LabelTTF.prototype.onExit.call(this);
+        cc.imeDispatcher.removeDelegate(this);
     },
 
     /**
@@ -227,7 +236,7 @@ cc.TextFieldTTF = cc.LabelTTF.extend(/** @lends cc.TextFieldTTF# */{
                 return this.initWithString(this._placeHolder, arguments[1], arguments[2]);
                 break;
             default:
-                throw "Argument must be non-nil ";
+                throw new Error("Argument must be non-nil ");
                 break;
         }
     },

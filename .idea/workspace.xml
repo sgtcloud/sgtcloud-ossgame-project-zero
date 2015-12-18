@@ -1,38 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a4f0a76-6704-4dd8-8cde-86035b0552c9" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Test\temp\src\CoverScene.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\GamePopup.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\GameScene.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\LogoScene.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\Unit.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\battle\BattleGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\model\Enemy.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Test\temp\src\model\Equip.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Battle.js" afterPath="$PROJECT_DIR$/src/model/Battle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleConsts.js" afterPath="$PROJECT_DIR$/src/battle/BattleConsts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleMenu.js" afterPath="$PROJECT_DIR$/src/battle/BattleMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleScene.js" afterPath="$PROJECT_DIR$/src/battle/BattleScene.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleUnit.js" afterPath="$PROJECT_DIR$/src/battle/BattleUnit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Datas.js" afterPath="$PROJECT_DIR$/src/model/Datas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Hero.js" afterPath="$PROJECT_DIR$/src/model/Hero.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Player.js" afterPath="$PROJECT_DIR$/src/model/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gfx/HookGame/alpha.udf" afterPath="$PROJECT_DIR$/gfx/HookGame/alpha.udf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apps.js" afterPath="$PROJECT_DIR$/src/apps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/enemys.json" afterPath="$PROJECT_DIR$/res/data/enemys.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/equips.json" afterPath="$PROJECT_DIR$/res/data/equips.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/heros.json" afterPath="$PROJECT_DIR$/res/data/heros.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.json" afterPath="$PROJECT_DIR$/project.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/record.json" afterPath="$PROJECT_DIR$/res/data/record.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/skills.json" afterPath="$PROJECT_DIR$/res/data/skills.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/stages.json" afterPath="$PROJECT_DIR$/res/data/stages.json" />
+    <list default="true" id="1a4f0a76-6704-4dd8-8cde-86035b0552c9" name="Default" comment="清理文件">
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\.idea\inspectionProfiles\Project_Default.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OSSGame.iml" afterPath="$PROJECT_DIR$/.idea/OSSGame.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="744e6798-2cd8-4676-bbbe-9f751886645b" name="Failed commit: Default" comment="更新UI">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/HD/CloseNormal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/Normal/CloseNormal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/HD/CloseSelected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/Normal/CloseSelected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/HD/HelloWorld.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/Normal/HelloWorld.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/bg_05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/bg_06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/bg_14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/bg_15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/bg_17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/tools/compiler/compiler.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/diamond.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/loadingUI/frist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/hero_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/loadingUI/letsgo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/loadingUI/login_bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/coverUI/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/stages/s100004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/stages/s100005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/star0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/title_bg3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/mainUI/title_bg4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/coverUI/yellow_btn_a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/coverUI/yellow_btn_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/armature/display/CCBatchNode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/CCBoneNode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirectorCanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/CCSkeletonNode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/CCSkinNode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/CHANGELOG.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/EnemyList.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/licenses/LICENSE_cocos2d-html5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/licenses/LICENSE_cocos2d-x.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/licenses/LICENSE_zlib.js.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LoaderScene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/Prompt1Layer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/Prompt2Layer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/README.mdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/RankLayer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/SIMDPolyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/UIVideoPlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/UIWebView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/tools/XmlCheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/tools/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/cocos2d_externs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/tools/core4cc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/external/gaf/gaf_viewer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/external/gaf/gaf_viewer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/external/gaf/gaf_viewer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/tools/genBuildXml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kernel-template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4AreEqual.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4Assign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4Inverse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4IsIdentity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4LookAt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4Multiply.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmMat4Transpose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/kmVec3TransformCoord.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/res/loading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/loadingLayer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/mat4SIMD.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/src/myApp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/project.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/template/src/resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/run.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/simd_benchmark/run_browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/external/socketio/socket.io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/vec3SIMD.js" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\hero101.csb" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\hero103.csb" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\icon\stages\s100001.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\btn_equip.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\btn_main.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\btn_pvp.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\btn_rank.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\ui_a.plist" afterPath="" />
+      <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\ui\ui_a.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/bloodUI/blood_bar.png" afterPath="$PROJECT_DIR$/res/bloodUI/blood_bar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/bloodUI/blood_bg.png" afterPath="$PROJECT_DIR$/res/bloodUI/blood_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/ui/enemyicon.png" afterPath="$PROJECT_DIR$/res/ui/enemyicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Battle.js" afterPath="$PROJECT_DIR$/src/model/Battle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleScene.js" afterPath="$PROJECT_DIR$/src/battle/BattleScene.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/utils/BinaryLoader.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/utils/BinaryLoader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCAction.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCAction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCActionCatmullRom.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCActionCatmullRom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionGrid.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCActionManager.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCActionManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/action/CCActionNode.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/action/CCActionNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionTiledGrid.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions3d/CCActionTiledGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCAnimation.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCAnimation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCAtlasNode.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCAtlasNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/audio/CCAudio.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/audio/CCAudio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBAnimationManager.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBAnimationManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBReader.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBReader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBRelativePositioning.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCBRelativePositioning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/CCBoot.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/CCBoot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/clipping-nodes/CCClippingNodeCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/clipping-nodes/CCClippingNodeCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCConfig.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCConfiguration.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCConfiguration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/control-extension/CCControlButton.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/control-extension/CCControlButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirector.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirectorWebGL.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDirectorWebGL.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/shape-nodes/CCDrawNode.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/shape-nodes/CCDrawNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDrawingPrimitivesWebGL.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCDrawingPrimitivesWebGL.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEvent.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEvent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEventManager.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEventManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/shaders/CCGLProgram.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/shaders/CCGLProgram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/effects/CCGrid.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/effects/CCGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/text-input/CCIMEDispatcher.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/text-input/CCIMEDispatcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/labels/CCLabelAtlasCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/labels/CCLabelAtlasCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/labels/CCLabelBMFont.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/labels/CCLabelBMFont.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/labelttf/CCLabelTTFCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/labelttf/CCLabelTTFCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/layers/CCLayer.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/layers/CCLayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/layers/CCLayerCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/layers/CCLayerCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCLoaders.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCLoaders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCMacro.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCMacro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/menus/CCMenu.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/menus/CCMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/menus/CCMenuItem.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/menus/CCMenuItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/motion-streak/CCMotionStreak.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/motion-streak/CCMotionStreak.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNode.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNodeCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNodeCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/node-grid/CCNodeGrid.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/node-grid/CCNodeGrid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCNodeLoaderLibrary.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccb-reader/CCNodeLoaderLibrary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/progress-timer/CCProgressTimerCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/progress-timer/CCProgressTimerCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/CCProtectedNodeCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/CCProtectedNodeCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCSAXParser.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCSAXParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/control-extension/CCScale9Sprite.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/control-extension/CCScale9Sprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCScheduler.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/CCScheduler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCScreen.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/scrollview/CCScrollView.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/scrollview/CCScrollView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/spine/CCSkeletonWebGLRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/spine/CCSkeletonWebGLRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/scrollview/CCSorting.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/gui/scrollview/CCSorting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteBatchNode.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteBatchNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrame.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSpriteFrame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXLayer.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXLayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXObjectGroup.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXObjectGroup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXTiledMap.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/tilemap/CCTMXTiledMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/text-input/CCTextFieldTTF.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/text-input/CCTextFieldTTF.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/textures/CCTextureCache.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/textures/CCTextureCache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/transitions/CCTransition.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/transitions/CCTransition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/CocoStudio.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/CocoStudio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/EquipHeroView.json" afterPath="$PROJECT_DIR$/res/EquipHeroView.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/Frame.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/Frame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/HeroBtn.json" afterPath="$PROJECT_DIR$/res/HeroBtn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/HeroDesc.json" afterPath="$PROJECT_DIR$/res/HeroDesc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/HeroLayer.json" afterPath="$PROJECT_DIR$/res/HeroLayer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/MenuLayer.json" afterPath="$PROJECT_DIR$/res/MenuLayer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/renderer/RendererCanvas.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/renderer/RendererCanvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/SkillLayer.json" afterPath="$PROJECT_DIR$/res/SkillLayer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/spine/Spine.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/spine/Spine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/textures/TexturesWebGL.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/textures/TexturesWebGL.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/Timeline.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/timeline/Timeline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/TitleLayer.json" afterPath="$PROJECT_DIR$/res/TitleLayer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayout.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayoutCanvasRenderCmd.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayoutCanvasRenderCmd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayoutComponent.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/layouts/UILayoutComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/scroll-widget/UIListView.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/scroll-widget/UIListView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIScale9Sprite.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIScale9Sprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/scroll-widget/UIScrollView.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/scroll-widget/UIScrollView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/UIText.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/uiwidgets/UIText.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apps.js" afterPath="$PROJECT_DIR$/src/apps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/cover.json" afterPath="$PROJECT_DIR$/res/cover.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/mat4.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/mat4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/gl/matrix.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/gl/matrix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/moduleConfig.json" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/moduleConfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/quaternion.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/kazmath/quaternion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/data/stages.json" afterPath="$PROJECT_DIR$/res/data/stages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/loader/parsers/uiParser-1.x.js" afterPath="$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/loader/parsers/uiParser-1.x.js" />
+      <change type="MOVED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\BatterLayer.json" afterPath="$PROJECT_DIR$/res/BattleLayer.json" />
+      <change type="MOVED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\EquipLayer.json" afterPath="$PROJECT_DIR$/res/Equiplayer.json" />
+      <change type="MOVED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\blood.json" afterPath="$PROJECT_DIR$/res/Blood.json" />
+      <change type="MOVED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\icon\stages\s100002.png" afterPath="$PROJECT_DIR$/res/stages/s100002.png" />
+      <change type="MOVED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\res\icon\stages\s100003.png" afterPath="$PROJECT_DIR$/res/stages/s100003.png" />
     </list>
     <ignored path="OSSGame.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/src/LoaderScene.js" ignored="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,101 +214,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BattleScene.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BattleScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/battle/BattleScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6212121">
-              <caret line="356" column="52" selection-start-line="356" selection-start-column="52" selection-end-line="356" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="163" column="51" selection-start-line="163" selection-start-column="51" selection-end-line="163" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BattleConsts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/battle/BattleConsts.js">
+      <file leaf-file-name="apps.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/apps.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Battle.js">
+      <file leaf-file-name="LoaderScene.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LoaderScene.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05891016">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TriggerObj.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/trigger/TriggerObj.js">
+      <file leaf-file-name="load.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/loader/load.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="248" column="30" selection-start-line="248" selection-start-column="30" selection-end-line="248" selection-end-column="30" />
+              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BattleUnit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/battle/BattleUnit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4482758">
-              <caret line="239" column="7" selection-start-line="239" selection-start-column="7" selection-end-line="239" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BattleMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/battle/BattleMenu.js">
+      <file leaf-file-name="CCBoot.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/CCBoot.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+              <caret line="366" column="33" selection-start-line="366" selection-start-column="33" selection-end-line="366" selection-end-column="33" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.1034484">
+              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Affect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Affect.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.911764">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCNode.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1270" column="30" selection-start-line="1270" selection-start-column="30" selection-end-line="1270" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCEventListener.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEventListener.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -151,36 +300,50 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/model/Unit.js" />
-        <option value="$PROJECT_DIR$/src/apps.js" />
         <option value="$PROJECT_DIR$/res/data/heros.json" />
         <option value="$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCClass.js" />
         <option value="$PROJECT_DIR$/res/data/enemys.json" />
         <option value="$PROJECT_DIR$/res/data/equips.json" />
         <option value="$PROJECT_DIR$/src/model/Datas.js" />
-        <option value="$PROJECT_DIR$/src/model/Hero.js" />
         <option value="$PROJECT_DIR$/res/data/heroes.json" />
         <option value="$PROJECT_DIR$/src/battle/BattleConsts.js" />
         <option value="$PROJECT_DIR$/../yoedge/sgtcloud-ossgame-project-zero/res/data/skills.json" />
         <option value="$PROJECT_DIR$/../yoedge/sgtcloud-ossgame-project-zero/res/data/stages.json" />
         <option value="$PROJECT_DIR$/res/data/skills.json" />
-        <option value="$PROJECT_DIR$/res/data/stages.json" />
-        <option value="$PROJECT_DIR$/res/data/record.json" />
-        <option value="$PROJECT_DIR$/src/model/Player.js" />
-        <option value="$PROJECT_DIR$/src/model/Battle.js" />
-        <option value="$PROJECT_DIR$/src/resource.js" />
-        <option value="$PROJECT_DIR$/project.json" />
         <option value="$PROJECT_DIR$/src/battle/BattleUnit.js" />
         <option value="$PROJECT_DIR$/src/battle/BattleMenu.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/model/Player.js" />
+        <option value="$PROJECT_DIR$/res/data/record.json" />
+        <option value="$PROJECT_DIR$/src/model/Hero.js" />
+        <option value="$PROJECT_DIR$/res/game.json" />
+        <option value="$PROJECT_DIR$/src/LoadScene.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/project.json" />
+        <option value="$PROJECT_DIR$/src/apps.js" />
+        <option value="$PROJECT_DIR$/res/data/stages.json" />
+        <option value="$PROJECT_DIR$/src/model/Battle.js" />
         <option value="$PROJECT_DIR$/src/battle/BattleScene.js" />
+        <option value="$PROJECT_DIR$/src/resource.js" />
+        <option value="$PROJECT_DIR$/src/LoaderScene.js" />
       </list>
     </option>
   </component>
@@ -195,8 +358,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -211,7 +374,7 @@
     <OptionsSetting value="true" id="更新" />
     <OptionsSetting value="true" id="状态" />
     <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -227,7 +390,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,106 +404,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSSGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSSGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSSGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="battle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSSGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OSSGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="sgtcloud-ossgame-project-zero" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="last_opened_file_path" value="D:/nodejs/node.exe" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSLint" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="204" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="263" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1719" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="181" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="265" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="269" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1730" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="js.eslint.nodeInterpreter" value="D:\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\html5workspace\sgtcloud-ossgame-project-zero\frameworks\cocos2d-html5" />
+      <recent name="D:\html5workspace\sgtcloud-ossgame-project-zero\res" />
+      <recent name="D:\html5workspace\sgtcloud-ossgame-project-zero\res\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\html5workspace\sgtcloud-ossgame-project-zero\res" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63344/OSSGame/index.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -391,6 +506,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -415,35 +538,83 @@
       <option name="project" value="LOCAL" />
       <updated>1448349478500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="忽略idea">
+      <created>1450255130964</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1450255130964</updated>
+    </task>
+    <task id="LOCAL-00004" summary="忽略idea文件夹">
+      <created>1450255199558</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1450255199558</updated>
+    </task>
+    <task id="LOCAL-00005" summary="最新资源&#10;bugfix">
+      <created>1450265927617</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1450265927617</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改一个文件名大小写的bug">
+      <created>1450270476629</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1450270476629</updated>
+    </task>
+    <task id="LOCAL-00007" summary="移除重复的文件引用">
+      <created>1450271074100</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450271074100</updated>
+    </task>
+    <task id="LOCAL-00008" summary="开启retina&#10;清理一些log输出">
+      <created>1450271741338</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450271741338</updated>
+    </task>
+    <task id="LOCAL-00009" summary="清理无用文件">
+      <created>1450349860043</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1450349860043</updated>
+    </task>
+    <task id="LOCAL-00010" summary="更新UI">
+      <created>1450360646437</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1450360646437</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38257262" sideWeight="0.5016077" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19347496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38257262" sideWeight="0.49839228" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14911576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294606" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1514658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -458,247 +629,40 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="清理文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="清理文件" />
+    <MESSAGE value="忽略idea" />
+    <MESSAGE value="忽略idea文件夹" />
+    <MESSAGE value="最新资源&#10;bugfix" />
+    <MESSAGE value="修改一个文件名大小写的bug" />
+    <MESSAGE value="移除重复的文件引用" />
+    <MESSAGE value="开启retina&#10;清理一些log输出" />
+    <MESSAGE value="清理无用文件" />
+    <MESSAGE value="更新了所有UI&#10;" />
+    <MESSAGE value="更新UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/LoaderScene.js</url>
+          <line>93</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/LoaderScene.js</url>
+          <line>89</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/data/skills.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="3" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="342" column="0" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Battle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleUnit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/skills.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Hero.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Datas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleConsts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Battle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleUnit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="213" column="40" selection-start-line="213" selection-start-column="40" selection-end-line="213" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Hero.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="15" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Datas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/heros.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleConsts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07603686">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/platform/CCClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/skill.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.071429">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/equips.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/heros.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.321429">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="47.25">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/heroes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.535714">
-          <caret line="2462" column="22" selection-start-line="2462" selection-start-column="22" selection-end-line="2462" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/actions/CCActionInstant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="742" column="0" selection-start-line="742" selection-start-column="0" selection-end-line="742" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/data/battles.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -706,142 +670,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/enemys.json">
+    <entry file="file://$PROJECT_DIR$/src/model/Affect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battle/BattleMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0786517">
+          <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/hero104.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/data/skills.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516">
+          <caret line="175" column="22" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/data/record.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/data/enemies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5172415">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45714286">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/GameScene.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4558306">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/cocos/frameworks/cocos2d-x-3.8.1/web/cocos2d/core/platform/CCEGLView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3385013">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/cocos/frameworks/cocos2d-x-3.8.1/web/cocos2d/core/scenes/CCLoaderScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Hero.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/skills.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.147059">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/res/stages/s100003.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/stages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7352941">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/res/stages/s100004.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Datas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="38" selection-start-line="1" selection-start-column="1" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/record.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6764705">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/event-manager/CCEventListener.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1270" column="30" selection-start-line="1270" selection-start-column="30" selection-end-line="1270" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.911764">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/res/stages/s100005.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battle/BattleUnit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4482758">
-          <caret line="239" column="7" selection-start-line="239" selection-start-column="7" selection-end-line="239" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.33246073">
+          <caret line="249" column="53" selection-start-line="249" selection-start-column="53" selection-end-line="249" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/trigger/TriggerObj.js">
+    <entry file="file://$PROJECT_DIR$/src/battle/BattleConst.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="30" selection-start-line="248" selection-start-column="30" selection-end-line="248" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.15706806">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleConsts.js">
+    <entry file="file://$PROJECT_DIR$/res/stages/s100002.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/stages/s100001.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.4470939">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/battle/BattleMenu.js">
+    <entry file="file://$PROJECT_DIR$/src/GameScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Affect.js">
+    <entry file="file://$PROJECT_DIR$/gfx/HookGame/res/BattleLayer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -849,18 +824,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Battle.js">
+    <entry file="file://$PROJECT_DIR$/res/BattleLayer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13089006">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/cocos/frameworks/cocos2d-x-3.8.1/web/cocos2d/core/textures/CCTextureCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="336" column="35" selection-start-line="336" selection-start-column="33" selection-end-line="336" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/cover/cover_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/cover/yellow_btn_b.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/cover/yellow_btn_a.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Battle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02945508">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/data/stages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.752809">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battle/BattleScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6212121">
-          <caret line="356" column="52" selection-start-line="356" selection-start-column="52" selection-end-line="356" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="51" selection-start-line="163" selection-start-column="51" selection-end-line="163" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3843888">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/cocos/frameworks/cocos2d-x-3.8.1/web/CCBoot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56848305">
+          <caret line="512" column="25" selection-start-line="512" selection-start-column="25" selection-end-line="512" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/AUTHORS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39267015">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/Blood.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1904762">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/cocos/frameworks/cocos2d-x-3.8.1/web/extensions/cocostudio/loader/load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328424">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1034484">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/CCBoot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="366" column="33" selection-start-line="366" selection-start-column="33" selection-end-line="366" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/cocostudio/loader/load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoaderScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05891016">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

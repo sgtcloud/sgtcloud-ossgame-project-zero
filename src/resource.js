@@ -1,3 +1,4 @@
+
 var res_datas = {
     stages_json: "res/data/stages.json",
     battles_json: "res/data/battles.json",
@@ -7,7 +8,7 @@ var res_datas = {
     skills_json: "res/data/skills.json"
 };
 var res = {
-    cover_scene_json: "res/CoverScene.json",
+    cover_scene_json: "res/cover.json",
 
     player_layer_json: "res/PlayerLayer.json",
     menu_layer_json: "res/MenuLayer.json",
@@ -15,7 +16,6 @@ var res = {
     equip_layer_json: "res/EquipLayer.json",
 
     title_layer_json: "res/TitleLayer.json",
-    batter_layer_json: "res/BatterLayer.json",
     enemy_list_json: "res/EnemyList.json",
     skill_icon_json: "res/Skillicon.json",
     skill_layer_json: "res/SkillLayer.json",
@@ -27,7 +27,6 @@ var res = {
     hero_view_json: "res/HeroView.json",
     skill_view_json: "res/SkillView.json",
     equip_view_json: "res/EquipView.json",
-
 
     hero_101_json: "res/hero101.json",
     hero_102_json: "res/hero102.json",
@@ -58,10 +57,10 @@ var res = {
 
 
 var g_resources = [];
-for (var i in res) {
-    g_resources.push(res[i]);
-}
 for (var i in res_datas) {
     g_resources.push(res_datas[i]);
+}
+for (var i in res) {
+    g_resources.push(res[i]);
 }
 

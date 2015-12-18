@@ -83,7 +83,7 @@ cc.Layer = cc.Node.extend(/** @lends cc.Layer# */{
      * @see cc.Layer#bake and cc.Layer#unbake
      */
     isBaked: function(){
-        return this._isBaked;
+        return this._renderCmd._isBaked;
     },
 
     addChild: function(child, localZOrder, tag){
@@ -191,7 +191,7 @@ cc.LayerColor = cc.Layer.extend(/** @lends cc.LayerColor# */{
      */
     ctor: function(color, width, height){
         cc.Layer.prototype.ctor.call(this);
-        this._blendFunc = new cc.BlendFunc(cc.BLEND_SRC, cc.BLEND_DST);
+        this._blendFunc = new cc.BlendFunc(cc.SRC_ALPHA, cc.ONE_MINUS_SRC_ALPHA);
         cc.LayerColor.prototype.init.call(this, color, width, height);
     },
 
