@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 61,
+        "Duration": 72,
         "Speed": 0.5,
         "Timelines": [
           {
@@ -205,6 +205,42 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 61,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -33.9994,
+                "Y": -5.2889,
+                "FrameIndex": 63,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 6.4222,
+                "Y": -16.6221,
+                "FrameIndex": 66,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 6.0444,
+                "Y": -14.7332,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -26.4443,
+                "Y": -13.9777,
+                "FrameIndex": 72,
                 "EasingData": {
                   "Type": 0
                 },
@@ -436,6 +472,46 @@
                 "FrameIndex": 61,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 63,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 66,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero103/hero103_skill04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "TextureFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -473,6 +549,12 @@
           "EndIndex": 62,
           "Name": "dead",
           "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 63,
+          "EndIndex": 72,
+          "Name": "skill",
+          "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
@@ -481,7 +563,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero103/hero103_stand04.png",
+              "Path": "hero/hero103/hero103_atk01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -492,8 +574,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -27.2087,
-              "Y": -14.4201
+              "X": -26.5338,
+              "Y": -13.9781
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -509,10 +591,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -80.7087,
-            "RightMargin": -26.2913,
-            "TopMargin": -81.5799,
-            "BottomMargin": -14.4201,
+            "LeftMargin": -80.0338,
+            "RightMargin": -26.9662,
+            "TopMargin": -82.0219,
+            "BottomMargin": -13.9781,
             "Tag": 8,
             "ActionTag": 2044631140,
             "Size": {
@@ -549,6 +631,10 @@
         "hero/hero103/hero103_hit03.png",
         "hero/hero103/hero103_hit04.png",
         "hero/hero103/hero103_hit05.png",
+        "hero/hero103/hero103_skill01.png",
+        "hero/hero103/hero103_skill02.png",
+        "hero/hero103/hero103_skill03.png",
+        "hero/hero103/hero103_skill04.png",
         "hero/hero103/hero103_stand01.png",
         "hero/hero103/hero103_stand02.png",
         "hero/hero103/hero103_stand03.png",

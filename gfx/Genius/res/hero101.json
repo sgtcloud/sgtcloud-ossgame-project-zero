@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 64,
+        "Duration": 75,
         "Speed": 0.5,
         "ActivedAnimationName": "die",
         "Timelines": [
@@ -215,6 +215,42 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 64,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 66,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -16.6228,
+                "Y": -0.3778,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -8.3111,
+                "Y": -0.3778,
+                "FrameIndex": 72,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -21.9116,
+                "Y": -3.4,
+                "FrameIndex": 75,
                 "EasingData": {
                   "Type": 0
                 },
@@ -456,6 +492,74 @@
                 "FrameIndex": 64,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 66,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero/hero101/hero101_skill04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 75,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1587691588,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 69,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 75,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -493,6 +597,12 @@
           "EndIndex": 65,
           "Name": "dead",
           "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 66,
+          "EndIndex": 75,
+          "Name": "skill",
+          "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
@@ -529,14 +639,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -24.0,
-            "RightMargin": -24.0,
-            "TopMargin": -48.0,
+            "LeftMargin": -21.5,
+            "RightMargin": -21.5,
+            "TopMargin": -53.0,
             "Tag": 6,
             "ActionTag": 1587691588,
             "Size": {
-              "X": 48.0,
-              "Y": 48.0
+              "X": 43.0,
+              "Y": 53.0
             },
             "Name": "hero101",
             "ctype": "SpriteObjectData"
@@ -569,6 +679,10 @@
         "hero/hero101/hero101_hit03.png",
         "hero/hero101/hero101_hit04.png",
         "hero/hero101/hero101_hit05.png",
+        "hero/hero101/hero101_skill01.png",
+        "hero/hero101/hero101_skill02.png",
+        "hero/hero101/hero101_skill03.png",
+        "hero/hero101/hero101_skill04.png",
         "hero/hero101/hero101_stand01.png",
         "hero/hero101/hero101_stand02.png",
         "hero/hero101/hero101_stand03.png",
