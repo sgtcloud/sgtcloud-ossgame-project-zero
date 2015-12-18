@@ -312,6 +312,12 @@
             <Image Name="effect5001_08.png" />
             <Image Name="effect5001_09.png" />
           </Folder>
+          <Folder Name="effect5000">
+            <Image Name="effect5000_01.png" />
+            <Image Name="effect5000_02.png" />
+            <Image Name="effect5000_03.png" />
+            <Image Name="effect5000_04.png" />
+          </Folder>
         </Folder>
         <Project Name="effect5001.csd" Type="Node" />
         <Project Name="effect5002.csd" Type="Node" />
@@ -321,6 +327,7 @@
         <Project Name="enemy1005.csd" Type="Node" />
         <Project Name="hero104.csd" Type="Node" />
         <Project Name="hero105.csd" Type="Node" />
+        <Project Name="effect5000.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
