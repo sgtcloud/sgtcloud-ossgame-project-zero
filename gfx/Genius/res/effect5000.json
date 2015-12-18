@@ -5,33 +5,17 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 9,
+        "Duration": 38,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": -1506131211,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1506131211,
+            "ActionTag": 537988529,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5000/effect5000_01.png",
+                  "Path": "effect/effect5000/effect5000_a01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 0,
@@ -41,17 +25,27 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5000/effect5000_02.png",
+                  "Path": "effect/effect5000/effect5000_a02.png",
                   "Plist": ""
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5000/effect5000_03.png",
+                  "Path": "effect/effect5000/effect5000_a03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 4,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_a04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 6,
@@ -61,10 +55,160 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5000/effect5000_04.png",
+                  "Path": "effect/effect5000/effect5000_a05.png",
                   "Plist": ""
                 },
-                "FrameIndex": 9,
+                "FrameIndex": 8,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_b01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_b02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_b03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 14,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_b04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 16,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_b05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 18,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_c01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 20,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_c02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 22,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_c03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_c04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_c05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 28,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_d01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 30,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_d02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 32,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_d03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 34,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_d04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 36,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5000/effect5000_d05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 38,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -77,8 +221,26 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 9,
-          "Name": "boom",
+          "EndIndex": 8,
+          "Name": "boom1",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 10,
+          "EndIndex": 18,
+          "Name": "boom2",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 20,
+          "EndIndex": 28,
+          "Name": "boom3",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 30,
+          "EndIndex": 38,
+          "Name": "boom4",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -88,7 +250,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "effect/effect5000/effect5000_01.png",
+              "Path": "effect/effect5000/effect5000_b04.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -117,15 +279,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -28.0,
-            "RightMargin": -28.0,
-            "TopMargin": -28.5,
-            "BottomMargin": -28.5,
-            "Tag": 9,
-            "ActionTag": -1506131211,
+            "LeftMargin": -137.5,
+            "RightMargin": -137.5,
+            "TopMargin": -76.0,
+            "BottomMargin": -76.0,
+            "Tag": 3,
+            "ActionTag": 537988529,
             "Size": {
-              "X": 56.0,
-              "Y": 57.0
+              "X": 98.0,
+              "Y": 93.0
             },
             "Name": "effect5000",
             "ctype": "SpriteObjectData"
@@ -139,10 +301,26 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5000/effect5000_01.png",
-        "effect/effect5000/effect5000_02.png",
-        "effect/effect5000/effect5000_03.png",
-        "effect/effect5000/effect5000_04.png"
+        "effect/effect5000/effect5000_a01.png",
+        "effect/effect5000/effect5000_a02.png",
+        "effect/effect5000/effect5000_a03.png",
+        "effect/effect5000/effect5000_a04.png",
+        "effect/effect5000/effect5000_a05.png",
+        "effect/effect5000/effect5000_b01.png",
+        "effect/effect5000/effect5000_b02.png",
+        "effect/effect5000/effect5000_b03.png",
+        "effect/effect5000/effect5000_b04.png",
+        "effect/effect5000/effect5000_b05.png",
+        "effect/effect5000/effect5000_c01.png",
+        "effect/effect5000/effect5000_c02.png",
+        "effect/effect5000/effect5000_c03.png",
+        "effect/effect5000/effect5000_c04.png",
+        "effect/effect5000/effect5000_c05.png",
+        "effect/effect5000/effect5000_d01.png",
+        "effect/effect5000/effect5000_d02.png",
+        "effect/effect5000/effect5000_d03.png",
+        "effect/effect5000/effect5000_d04.png",
+        "effect/effect5000/effect5000_d05.png"
       ],
       "ctype": "GameFileData"
     }

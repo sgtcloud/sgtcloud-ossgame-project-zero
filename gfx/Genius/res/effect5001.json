@@ -5,16 +5,16 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 24,
+        "Duration": 20,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": 1445825250,
+            "ActionTag": -851192098,
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": 0.7628,
+                "Y": -27.7465,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,17 +22,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 3,
+                "X": 4.7627,
+                "Y": -25.7465,
+                "FrameIndex": 2,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": -0.0221,
+                "Y": -23.8757,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -0.0501,
+                "Y": -25.5934,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,17 +49,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 9,
+                "X": -0.1701,
+                "Y": -24.9777,
+                "FrameIndex": 8,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": 1.2101,
+                "Y": -23.8621,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 12.5902,
+                "Y": -26.7464,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,36 +76,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 24,
+                "X": 12.5902,
+                "Y": -28.1085,
+                "FrameIndex": 14,
                 "EasingData": {
                   "Type": 0
                 },
@@ -97,59 +88,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1445825250,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.5,
-                "Y": 1.5,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 2.0,
-                "Y": 2.0,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.5,
-                "Y": 1.5,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1445825250,
+            "ActionTag": -851192098,
             "Property": "FileData",
             "Frames": [
               {
@@ -168,7 +107,7 @@
                   "Path": "effect/effect5001/effect5001_02.png",
                   "Plist": ""
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -178,7 +117,7 @@
                   "Path": "effect/effect5001/effect5001_03.png",
                   "Plist": ""
                 },
-                "FrameIndex": 6,
+                "FrameIndex": 4,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -188,7 +127,7 @@
                   "Path": "effect/effect5001/effect5001_04.png",
                   "Plist": ""
                 },
-                "FrameIndex": 9,
+                "FrameIndex": 6,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -198,7 +137,7 @@
                   "Path": "effect/effect5001/effect5001_05.png",
                   "Plist": ""
                 },
-                "FrameIndex": 12,
+                "FrameIndex": 8,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -208,7 +147,7 @@
                   "Path": "effect/effect5001/effect5001_06.png",
                   "Plist": ""
                 },
-                "FrameIndex": 15,
+                "FrameIndex": 10,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -218,7 +157,7 @@
                   "Path": "effect/effect5001/effect5001_07.png",
                   "Plist": ""
                 },
-                "FrameIndex": 18,
+                "FrameIndex": 12,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -228,7 +167,7 @@
                   "Path": "effect/effect5001/effect5001_08.png",
                   "Plist": ""
                 },
-                "FrameIndex": 21,
+                "FrameIndex": 14,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -238,7 +177,27 @@
                   "Path": "effect/effect5001/effect5001_09.png",
                   "Plist": ""
                 },
-                "FrameIndex": 24,
+                "FrameIndex": 16,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5001/effect5001_10.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 18,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5001/effect5001_11.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -251,7 +210,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 24,
+          "EndIndex": 20,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
@@ -262,7 +221,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "effect/effect5001/effect5001_01.png",
+              "Path": "effect/effect5001/effect5001_11.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -270,12 +229,11 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.5
             },
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 12.5902,
+              "Y": -28.1085
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -291,15 +249,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -35.0,
-            "RightMargin": -35.0,
-            "TopMargin": -35.5,
-            "BottomMargin": -35.5,
-            "Tag": 10,
-            "ActionTag": 1445825250,
+            "LeftMargin": -106.9098,
+            "RightMargin": -132.0902,
+            "TopMargin": -129.8915,
+            "BottomMargin": -28.1085,
+            "Tag": 6,
+            "ActionTag": -851192098,
             "Size": {
-              "X": 70.0,
-              "Y": 71.0
+              "X": 239.0,
+              "Y": 160.0
             },
             "Name": "effect5001",
             "ctype": "SpriteObjectData"
@@ -321,7 +279,9 @@
         "effect/effect5001/effect5001_06.png",
         "effect/effect5001/effect5001_07.png",
         "effect/effect5001/effect5001_08.png",
-        "effect/effect5001/effect5001_09.png"
+        "effect/effect5001/effect5001_09.png",
+        "effect/effect5001/effect5001_10.png",
+        "effect/effect5001/effect5001_11.png"
       ],
       "ctype": "GameFileData"
     }

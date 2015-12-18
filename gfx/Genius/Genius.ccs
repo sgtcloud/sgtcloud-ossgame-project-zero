@@ -290,6 +290,28 @@
           </Folder>
         </Folder>
         <Folder Name="effect">
+          <Folder Name="effect5000">
+            <Image Name="effect5000_a01.png" />
+            <Image Name="effect5000_a02.png" />
+            <Image Name="effect5000_a03.png" />
+            <Image Name="effect5000_a04.png" />
+            <Image Name="effect5000_a05.png" />
+            <Image Name="effect5000_b01.png" />
+            <Image Name="effect5000_b02.png" />
+            <Image Name="effect5000_b03.png" />
+            <Image Name="effect5000_b04.png" />
+            <Image Name="effect5000_b05.png" />
+            <Image Name="effect5000_c01.png" />
+            <Image Name="effect5000_c02.png" />
+            <Image Name="effect5000_c03.png" />
+            <Image Name="effect5000_c04.png" />
+            <Image Name="effect5000_c05.png" />
+            <Image Name="effect5000_d01.png" />
+            <Image Name="effect5000_d02.png" />
+            <Image Name="effect5000_d03.png" />
+            <Image Name="effect5000_d04.png" />
+            <Image Name="effect5000_d05.png" />
+          </Folder>
           <Folder Name="effect5001">
             <Image Name="effect5001_01.png" />
             <Image Name="effect5001_02.png" />
@@ -300,23 +322,15 @@
             <Image Name="effect5001_07.png" />
             <Image Name="effect5001_08.png" />
             <Image Name="effect5001_09.png" />
+            <Image Name="effect5001_10.png" />
+            <Image Name="effect5001_11.png" />
           </Folder>
           <Folder Name="effect5002">
-            <Image Name="effect5001_01.png" />
-            <Image Name="effect5001_02.png" />
-            <Image Name="effect5001_03.png" />
-            <Image Name="effect5001_04.png" />
-            <Image Name="effect5001_05.png" />
-            <Image Name="effect5001_06.png" />
-            <Image Name="effect5001_07.png" />
-            <Image Name="effect5001_08.png" />
-            <Image Name="effect5001_09.png" />
-          </Folder>
-          <Folder Name="effect5000">
-            <Image Name="effect5000_01.png" />
-            <Image Name="effect5000_02.png" />
-            <Image Name="effect5000_03.png" />
-            <Image Name="effect5000_04.png" />
+            <Image Name="effect5002_01.png" />
+            <Image Name="effect5002_02.png" />
+            <Image Name="effect5002_03.png" />
+            <Image Name="effect5002_04.png" />
+            <Image Name="effect5002_05.png" />
           </Folder>
         </Folder>
         <Project Name="effect5001.csd" Type="Node" />

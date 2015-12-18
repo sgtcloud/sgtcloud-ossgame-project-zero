@@ -5,105 +5,17 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 24,
+        "Duration": 8,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": 1584487330,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 24,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1584487330,
+            "ActionTag": 2054838712,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_01.png",
+                  "Path": "effect/effect5002/effect5002_01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 0,
@@ -113,17 +25,27 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_02.png",
+                  "Path": "effect/effect5002/effect5002_02.png",
                   "Plist": ""
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_03.png",
+                  "Path": "effect/effect5002/effect5002_03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 4,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5002/effect5002_04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 6,
@@ -133,60 +55,10 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_04.png",
+                  "Path": "effect/effect5002/effect5002_05.png",
                   "Plist": ""
                 },
-                "FrameIndex": 9,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_05.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 12,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_06.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_07.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 18,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_08.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 21,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "effect/effect5002/effect5001_09.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 24,
+                "FrameIndex": 8,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -199,7 +71,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 24,
+          "EndIndex": 8,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
@@ -210,7 +82,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "effect/effect5002/effect5001_09.png",
+              "Path": "effect/effect5002/effect5002_03.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -239,15 +111,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -6.5,
-            "RightMargin": -6.5,
-            "TopMargin": -4.5,
-            "BottomMargin": -4.5,
-            "Tag": 12,
-            "ActionTag": 1584487330,
+            "LeftMargin": -50.0,
+            "RightMargin": -50.0,
+            "TopMargin": -35.0,
+            "BottomMargin": -35.0,
+            "Tag": 9,
+            "ActionTag": 2054838712,
             "Size": {
-              "X": 13.0,
-              "Y": 9.0
+              "X": 100.0,
+              "Y": 70.0
             },
             "Name": "effect5002",
             "ctype": "SpriteObjectData"
@@ -261,15 +133,11 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5002/effect5001_01.png",
-        "effect/effect5002/effect5001_02.png",
-        "effect/effect5002/effect5001_03.png",
-        "effect/effect5002/effect5001_04.png",
-        "effect/effect5002/effect5001_05.png",
-        "effect/effect5002/effect5001_06.png",
-        "effect/effect5002/effect5001_07.png",
-        "effect/effect5002/effect5001_08.png",
-        "effect/effect5002/effect5001_09.png"
+        "effect/effect5002/effect5002_01.png",
+        "effect/effect5002/effect5002_02.png",
+        "effect/effect5002/effect5002_03.png",
+        "effect/effect5002/effect5002_04.png",
+        "effect/effect5002/effect5002_05.png"
       ],
       "ctype": "GameFileData"
     }
