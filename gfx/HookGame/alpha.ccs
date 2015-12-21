@@ -53,9 +53,6 @@
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
-          <Image Name="battle_2.png" />
-          <Image Name="battle_3.png" />
-          <Image Name="battle_4.png" />
         </Folder>
         <Project Name="TitleLayer.csd" Type="Layer" />
         <Project Name="EnemyList.csd" Type="Layer" />
