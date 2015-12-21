@@ -7,7 +7,7 @@
       "Animation": {
         "Duration": 75,
         "Speed": 0.5,
-        "ActivedAnimationName": "die",
+        "ActivedAnimationName": "atk",
         "Timelines": [
           {
             "ActionTag": 1587691588,
@@ -535,34 +535,6 @@
               }
             ],
             "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1587691588,
-            "Property": "BlendFunc",
-            "Frames": [
-              {
-                "Src": 770,
-                "Dst": 771,
-                "FrameIndex": 69,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 770,
-                "Dst": 771,
-                "FrameIndex": 72,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 770,
-                "Dst": 771,
-                "FrameIndex": 75,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
           }
         ],
         "ctype": "TimelineActionData"
@@ -611,7 +583,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero101/hero101_dead01.png",
+              "Path": "hero/hero101/hero101_skill04.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -622,8 +594,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": -21.9116,
+              "Y": -3.4
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -639,14 +611,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -21.5,
-            "RightMargin": -21.5,
-            "TopMargin": -53.0,
+            "LeftMargin": -70.4116,
+            "RightMargin": -26.5884,
+            "TopMargin": -94.6,
+            "BottomMargin": -3.4,
             "Tag": 6,
             "ActionTag": 1587691588,
             "Size": {
-              "X": 43.0,
-              "Y": 53.0
+              "X": 97.0,
+              "Y": 98.0
             },
             "Name": "hero101",
             "ctype": "SpriteObjectData"
