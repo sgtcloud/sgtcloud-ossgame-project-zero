@@ -96,6 +96,7 @@
           <Image Name="gold.png" />
           <Image Name="relic.png" />
           <Image Name="title.png" />
+          <Image Name="title_2.png" />
         </Folder>
         <Project Name="Star.csd" Type="Layer" />
         <Project Name="SkillView.csd" Type="Layer" />

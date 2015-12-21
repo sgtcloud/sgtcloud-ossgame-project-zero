@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero101" Type="Node" ID="2019fc0c-81d1-4bce-a9bb-d8b2b733f46b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="75" Speed="0.5000" ActivedAnimationName="die">
+      <Animation Duration="75" Speed="0.5000" ActivedAnimationName="atk">
         <Timeline ActionTag="1587691588" Property="Position">
           <PointFrame FrameIndex="0" X="-21.6445" Y="-5.1556">
             <EasingData Type="0" />
@@ -169,11 +169,6 @@
             <TextureFile Type="Normal" Path="hero/hero101/hero101_skill04.png" Plist="" />
           </TextureFrame>
         </Timeline>
-        <Timeline ActionTag="1587691588" Property="BlendFunc">
-          <BlendFuncFrame FrameIndex="69" Tween="False" Src="770" Dst="771" />
-          <BlendFuncFrame FrameIndex="72" Tween="False" Src="770" Dst="771" />
-          <BlendFuncFrame FrameIndex="75" Tween="False" Src="770" Dst="771" />
-        </Timeline>
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="21">
@@ -198,15 +193,15 @@
       <ObjectData Name="Node" Tag="2" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-21.5000" RightMargin="-21.5000" TopMargin="-53.0000" ctype="SpriteObjectData">
-            <Size X="43.0000" Y="53.0000" />
+          <AbstractNodeData Name="hero101" ActionTag="1587691588" Tag="6" IconVisible="False" LeftMargin="-70.4116" RightMargin="-26.5884" TopMargin="-94.6000" BottomMargin="-3.4000" ctype="SpriteObjectData">
+            <Size X="97.0000" Y="98.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position />
+            <Position X="-21.9116" Y="-3.4000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero101/hero101_dead01.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero101/hero101_skill04.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

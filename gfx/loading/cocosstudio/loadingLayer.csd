@@ -2,7 +2,89 @@
   <PropertyGroup Name="loadingLayer" Type="Layer" ID="838c267c-3311-45e1-9155-2a59a14ce8e0" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="22" Speed="0.5000">
+        <Timeline ActionTag="479375161" Property="Scale">
+          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="2" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="4" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="6" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="8" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="10" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="12" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="14" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="16" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="18" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="20" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="22" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+        <Timeline ActionTag="479375161" Property="RotationSkew">
+          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="2" X="30.0000" Y="30.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="4" X="60.0000" Y="60.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="6" X="90.0000" Y="90.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="8" X="120.0000" Y="120.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="10" X="150.0000" Y="150.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="12" X="180.0000" Y="180.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="14" X="210.0000" Y="210.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="16" X="240.0000" Y="240.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="18" X="270.0000" Y="270.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="20" X="300.0000" Y="300.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="22" X="330.0000" Y="330.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+        </Timeline>
+      </Animation>
+      <AnimationList>
+        <AnimationInfo Name="rot" StartIndex="0" EndIndex="22">
+          <RenderColor A="150" R="0" G="255" B="0" />
+        </AnimationInfo>
+      </AnimationList>
       <ObjectData Name="Layer" Tag="8" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
@@ -69,13 +151,13 @@
                 <PreSize X="0.5688" Y="0.0073" />
                 <ImageFileData Type="Normal" Path="loadingUI/login_bar.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="star" ActionTag="730343248" Tag="10" IconVisible="False" LeftMargin="124.3958" RightMargin="488.6042" TopMargin="698.4734" BottomMargin="234.5266" ctype="SpriteObjectData">
+              <AbstractNodeData Name="star" ActionTag="479375161" Tag="17" RotationSkewX="285.0000" RotationSkewY="285.0000" IconVisible="False" LeftMargin="125.0204" RightMargin="487.9796" TopMargin="697.0411" BottomMargin="235.9589" ctype="SpriteObjectData">
                 <Size X="27.0000" Y="27.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="137.8958" Y="248.0266" />
+                <Position X="138.5204" Y="249.4589" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2155" Y="0.2584" />
+                <PrePosition X="0.2164" Y="0.2599" />
                 <PreSize X="0.0422" Y="0.0281" />
                 <FileData Type="Normal" Path="loadingUI/star.png" Plist="" />
                 <BlendFunc Src="770" Dst="771" />

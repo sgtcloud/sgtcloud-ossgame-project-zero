@@ -31,7 +31,13 @@
           <PointFrame FrameIndex="27" X="-9.5076" Y="-6.3429">
             <EasingData Type="0" />
           </PointFrame>
+          <PointFrame FrameIndex="30" X="-9.5076" Y="-6.3429">
+            <EasingData Type="0" />
+          </PointFrame>
           <PointFrame FrameIndex="33" X="4.0436" Y="-11.1514">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="36" X="4.0436" Y="-11.1514">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="39" X="-9.5075" Y="-11.1514">
@@ -44,6 +50,9 @@
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="48" X="-8.1361" Y="-12.2114">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="51" X="-8.1361" Y="-12.2114">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="54" X="-9.1361" Y="-12.2114">
@@ -65,6 +74,15 @@
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="72" X="-9.1358" Y="-12.3372">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="75" X="-9.1358" Y="-12.3372">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="78" X="-9.1358" Y="-12.3372">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="81" X="-9.1358" Y="-12.3372">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -157,36 +175,36 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="18">
-          <RenderColor A="150" R="173" G="216" B="230" />
+          <RenderColor A="255" R="173" G="216" B="230" />
         </AnimationInfo>
         <AnimationInfo Name="dead" StartIndex="21" EndIndex="21">
-          <RenderColor A="150" R="255" G="245" B="238" />
+          <RenderColor A="255" R="255" G="245" B="238" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="24" EndIndex="36">
-          <RenderColor A="150" R="255" G="99" B="71" />
+          <RenderColor A="255" R="255" G="99" B="71" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="39" EndIndex="51">
-          <RenderColor A="150" R="123" G="104" B="238" />
+          <RenderColor A="255" R="123" G="104" B="238" />
         </AnimationInfo>
         <AnimationInfo Name="skill" StartIndex="54" EndIndex="69">
-          <RenderColor A="150" R="220" G="220" B="220" />
+          <RenderColor A="255" R="220" G="220" B="220" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="72" EndIndex="81">
-          <RenderColor A="150" R="160" G="82" B="45" />
+          <RenderColor A="255" R="160" G="82" B="45" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="20" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero105" ActionTag="-275940080" Tag="25" IconVisible="False" LeftMargin="-68.5075" RightMargin="-49.4925" TopMargin="-75.5372" BottomMargin="-12.4628" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero105" ActionTag="-275940080" Tag="25" IconVisible="False" LeftMargin="-65.6361" RightMargin="-49.3639" TopMargin="-74.7886" BottomMargin="-12.2114" ctype="SpriteObjectData">
             <Size X="115.0000" Y="87.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-9.5075" Y="-12.4628" />
+            <Position X="-8.1361" Y="-12.2114" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero105/hero105_atk01.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero105/hero105_hit05.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

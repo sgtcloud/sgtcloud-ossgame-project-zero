@@ -45,34 +45,34 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="title" ActionTag="-135955520" Tag="202" IconVisible="False" LeftMargin="4.0000" RightMargin="440.0000" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="180" Scale9Height="100" ctype="ImageViewObjectData">
-                    <Size X="180.0000" Y="100.0000" />
+                  <AbstractNodeData Name="title" ActionTag="-135955520" Tag="202" IconVisible="False" LeftMargin="12.0000" RightMargin="512.0000" TopMargin="6.0000" BottomMargin="4.0000" Scale9Width="249" Scale9Height="234" ctype="ImageViewObjectData">
+                    <Size X="100.0000" Y="100.0000" />
                     <AnchorPoint />
-                    <Position X="4.0000" Y="5.0000" />
+                    <Position X="12.0000" Y="4.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0064" Y="0.0455" />
-                    <PreSize X="0.2885" Y="0.9091" />
-                    <FileData Type="Normal" Path="equipUI/title.png" Plist="" />
+                    <PrePosition X="0.0192" Y="0.0364" />
+                    <PreSize X="0.1603" Y="0.9091" />
+                    <FileData Type="Normal" Path="equipUI/title_2.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="title_text" ActionTag="1826076828" Tag="203" IconVisible="False" LeftMargin="268.0000" RightMargin="268.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="装备购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="title_text" ActionTag="1826076828" Tag="203" IconVisible="False" LeftMargin="257.0000" RightMargin="279.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="装备购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="88.0000" Y="22.0000" />
                     <AnchorPoint />
-                    <Position X="268.0000" Y="75.0000" />
+                    <Position X="257.0000" Y="75.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="165" B="0" />
-                    <PrePosition X="0.4295" Y="0.6818" />
+                    <PrePosition X="0.4119" Y="0.6818" />
                     <PreSize X="0.1410" Y="0.2000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="215.0000" RightMargin="329.0000" TopMargin="40.0000" BottomMargin="50.0000" FontSize="20" LabelText="装备说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="204.0000" RightMargin="340.0000" TopMargin="40.0000" BottomMargin="50.0000" FontSize="20" LabelText="装备说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="80.0000" Y="20.0000" />
                     <AnchorPoint />
-                    <Position X="215.0000" Y="50.0000" />
+                    <Position X="204.0000" Y="50.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3446" Y="0.4545" />
+                    <PrePosition X="0.3269" Y="0.4545" />
                     <PreSize X="0.1282" Y="0.1818" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />

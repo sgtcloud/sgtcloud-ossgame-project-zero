@@ -37,6 +37,12 @@
           <PointFrame FrameIndex="30" X="-23.9835" Y="-12.3838">
             <EasingData Type="0" />
           </PointFrame>
+          <PointFrame FrameIndex="33" X="-23.9835" Y="-12.3838">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="36" X="-23.9835" Y="-12.3838">
+            <EasingData Type="0" />
+          </PointFrame>
           <PointFrame FrameIndex="39" X="-16.4446" Y="-5.3445">
             <EasingData Type="0" />
           </PointFrame>
@@ -181,21 +187,21 @@
           <RenderColor A="255" R="240" G="128" B="128" />
         </AnimationInfo>
         <AnimationInfo Name="skill" StartIndex="66" EndIndex="75">
-          <RenderColor A="150" R="25" G="25" B="112" />
+          <RenderColor A="255" R="25" G="25" B="112" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-55.8556" RightMargin="-27.1444" TopMargin="-109.8445" BottomMargin="-4.1555" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-57.1003" RightMargin="-25.8997" TopMargin="-108.0777" BottomMargin="-5.9223" ctype="SpriteObjectData">
             <Size X="83.0000" Y="114.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-14.3556" Y="-4.1555" />
+            <Position X="-15.6003" Y="-5.9223" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero102/hero102_skill04.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero102/hero102_die01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

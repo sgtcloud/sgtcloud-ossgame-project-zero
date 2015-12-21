@@ -1,20 +1,20 @@
 {
-  "ID": "6598b700-9f80-41d6-9e4c-2138dc8500aa",
+  "ID": "6d3dc78e-fa78-44c9-a35a-e6187151918f",
   "Version": "2.3.3.0",
-  "Name": "hero105",
+  "Name": "enemy1005",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 81,
+        "Duration": 60,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": -275940080,
+            "ActionTag": -1660559544,
             "Property": "Position",
             "Frames": [
               {
-                "X": -9.5075,
-                "Y": -12.4628,
+                "X": -12.9951,
+                "Y": -16.3605,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 41.6373,
-                "Y": -16.8342,
+                "X": 17.5658,
+                "Y": -11.965,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 43.1672,
-                "Y": -18.3642,
+                "X": 4.2923,
+                "Y": -22.4608,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 7.5404,
-                "Y": -17.7085,
+                "X": -7.129,
+                "Y": -11.3473,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -49,8 +49,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 10.1633,
-                "Y": -10.7143,
+                "X": -30.5895,
+                "Y": -11.3473,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,8 +58,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -15.1906,
-                "Y": -9.84,
+                "X": -25.5895,
+                "Y": -11.3473,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -67,8 +67,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -9.5076,
-                "Y": -12.0257,
+                "X": -13.2409,
+                "Y": -16.9038,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -76,8 +76,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -9.5076,
-                "Y": -12.1714,
+                "X": -0.2405,
+                "Y": -16.9038,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -85,17 +85,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -9.5076,
-                "Y": -6.3429,
-                "FrameIndex": 27,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.5076,
-                "Y": -6.3429,
+                "X": 1.7596,
+                "Y": -16.9038,
                 "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
@@ -103,8 +94,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 4.0436,
-                "Y": -11.1514,
+                "X": -0.2404,
+                "Y": -22.9038,
                 "FrameIndex": 33,
                 "EasingData": {
                   "Type": 0
@@ -112,8 +103,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 4.0436,
-                "Y": -11.1514,
+                "X": -14.7485,
+                "Y": -17.0382,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -121,8 +112,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -9.5075,
-                "Y": -11.1514,
+                "X": -4.5606,
+                "Y": -15.8033,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -130,8 +121,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -27.8072,
-                "Y": -6.7801,
+                "X": -25.5514,
+                "Y": -10.5552,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -139,8 +130,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -27.8072,
-                "Y": -4.7801,
+                "X": -16.2899,
+                "Y": -12.4074,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -148,8 +139,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -8.1361,
-                "Y": -12.2114,
+                "X": -14.82,
+                "Y": -17.6553,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -157,99 +148,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -8.1361,
-                "Y": -12.2114,
-                "FrameIndex": 51,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1361,
-                "Y": -12.2114,
-                "FrameIndex": 54,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -7.8246,
-                "Y": -9.5886,
+                "X": -7.8198,
+                "Y": -17.6553,
                 "FrameIndex": 57,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 1.3553,
-                "Y": -22.2655,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -3.4532,
-                "Y": -21.3913,
-                "FrameIndex": 63,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.3933,
-                "Y": -6.9658,
-                "FrameIndex": 66,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -11.3372,
-                "FrameIndex": 69,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -12.3372,
-                "FrameIndex": 72,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -12.3372,
-                "FrameIndex": 75,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -12.3372,
-                "FrameIndex": 78,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -12.3372,
-                "FrameIndex": 81,
                 "EasingData": {
                   "Type": 0
                 },
@@ -259,13 +160,13 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -275940080,
+            "ActionTag": -1660559544,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk01.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 0,
@@ -275,7 +176,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk02.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk02.png",
                   "Plist": ""
                 },
                 "FrameIndex": 3,
@@ -285,7 +186,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk03.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk03.png",
                   "Plist": ""
                 },
                 "FrameIndex": 6,
@@ -295,7 +196,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk04.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 9,
@@ -305,7 +206,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk05.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk05.png",
                   "Plist": ""
                 },
                 "FrameIndex": 12,
@@ -315,7 +216,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk06.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk06.png",
                   "Plist": ""
                 },
                 "FrameIndex": 15,
@@ -325,7 +226,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_atk07.png",
+                  "Path": "enemy/enemy1005/enemy1005_atk07.png",
                   "Plist": ""
                 },
                 "FrameIndex": 18,
@@ -335,7 +236,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_dead01.png",
+                  "Path": "enemy/enemy1005/enemy1005_die01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 21,
@@ -345,7 +246,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_die01.png",
+                  "Path": "enemy/enemy1005/enemy1005_die02.png",
                   "Plist": ""
                 },
                 "FrameIndex": 24,
@@ -355,17 +256,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_die02.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 27,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_die03.png",
+                  "Path": "enemy/enemy1005/enemy1005_die04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 30,
@@ -375,7 +266,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_die04.png",
+                  "Path": "enemy/enemy1005/enemy1005_die05.png",
                   "Plist": ""
                 },
                 "FrameIndex": 33,
@@ -385,7 +276,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_die05.png",
+                  "Path": "enemy/enemy1005/enemy1005_hit01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 36,
@@ -395,7 +286,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_hit01.png",
+                  "Path": "enemy/enemy1005/enemy1005_hit02.png",
                   "Plist": ""
                 },
                 "FrameIndex": 39,
@@ -405,7 +296,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_hit02.png",
+                  "Path": "enemy/enemy1005/enemy1005_hit03.png",
                   "Plist": ""
                 },
                 "FrameIndex": 42,
@@ -415,7 +306,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_hit03.png",
+                  "Path": "enemy/enemy1005/enemy1005_hit04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 45,
@@ -425,7 +316,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_hit04.png",
+                  "Path": "enemy/enemy1005/enemy1005_hit05.png",
                   "Plist": ""
                 },
                 "FrameIndex": 48,
@@ -435,7 +326,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_hit05.png",
+                  "Path": "enemy/enemy1005/enemy1005_stand01.png",
                   "Plist": ""
                 },
                 "FrameIndex": 51,
@@ -445,7 +336,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill01.png",
+                  "Path": "enemy/enemy1005/enemy1005_stand02.png",
                   "Plist": ""
                 },
                 "FrameIndex": 54,
@@ -455,7 +346,7 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill02.png",
+                  "Path": "enemy/enemy1005/enemy1005_stand03.png",
                   "Plist": ""
                 },
                 "FrameIndex": 57,
@@ -465,80 +356,10 @@
               {
                 "TextureFile": {
                   "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill03.png",
+                  "Path": "enemy/enemy1005/enemy1005_stand04.png",
                   "Plist": ""
                 },
                 "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill04.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 63,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill05.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 66,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_skill06.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 69,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_stand01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 72,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_stand02.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 75,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_stand03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 78,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero/hero105/hero105_stand04.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 81,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -557,42 +378,30 @@
         },
         {
           "StartIndex": 21,
-          "EndIndex": 21,
-          "Name": "dead",
-          "ctype": "AnimationInfoData"
-        },
-        {
-          "StartIndex": 24,
-          "EndIndex": 36,
+          "EndIndex": 33,
           "Name": "die",
           "ctype": "AnimationInfoData"
         },
         {
-          "StartIndex": 39,
-          "EndIndex": 51,
+          "StartIndex": 36,
+          "EndIndex": 48,
           "Name": "hit",
           "ctype": "AnimationInfoData"
         },
         {
-          "StartIndex": 54,
-          "EndIndex": 69,
-          "Name": "skill",
-          "ctype": "AnimationInfoData"
-        },
-        {
-          "StartIndex": 72,
-          "EndIndex": 81,
+          "StartIndex": 51,
+          "EndIndex": 60,
           "Name": "stand",
           "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
-        "Tag": 20,
+        "Tag": 14,
         "Children": [
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero105/hero105_hit05.png",
+              "Path": "enemy/enemy1005/enemy1005_stand04.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -603,8 +412,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -8.1361,
-              "Y": -12.2114
+              "X": -7.8198,
+              "Y": -17.6553
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -620,17 +429,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -65.6361,
-            "RightMargin": -49.3639,
-            "TopMargin": -74.7886,
-            "BottomMargin": -12.2114,
-            "Tag": 25,
-            "ActionTag": -275940080,
+            "LeftMargin": -52.8198,
+            "RightMargin": -37.1802,
+            "TopMargin": -86.3447,
+            "BottomMargin": -17.6553,
+            "Tag": 15,
+            "ActionTag": -1660559544,
             "Size": {
-              "X": 115.0,
-              "Y": 87.0
+              "X": 90.0,
+              "Y": 104.0
             },
-            "Name": "hero105",
+            "Name": "enemy1005",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -642,34 +451,26 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "hero/hero105/hero105_atk01.png",
-        "hero/hero105/hero105_atk02.png",
-        "hero/hero105/hero105_atk03.png",
-        "hero/hero105/hero105_atk04.png",
-        "hero/hero105/hero105_atk05.png",
-        "hero/hero105/hero105_atk06.png",
-        "hero/hero105/hero105_atk07.png",
-        "hero/hero105/hero105_dead01.png",
-        "hero/hero105/hero105_die01.png",
-        "hero/hero105/hero105_die02.png",
-        "hero/hero105/hero105_die03.png",
-        "hero/hero105/hero105_die04.png",
-        "hero/hero105/hero105_die05.png",
-        "hero/hero105/hero105_hit01.png",
-        "hero/hero105/hero105_hit02.png",
-        "hero/hero105/hero105_hit03.png",
-        "hero/hero105/hero105_hit04.png",
-        "hero/hero105/hero105_hit05.png",
-        "hero/hero105/hero105_skill01.png",
-        "hero/hero105/hero105_skill02.png",
-        "hero/hero105/hero105_skill03.png",
-        "hero/hero105/hero105_skill04.png",
-        "hero/hero105/hero105_skill05.png",
-        "hero/hero105/hero105_skill06.png",
-        "hero/hero105/hero105_stand01.png",
-        "hero/hero105/hero105_stand02.png",
-        "hero/hero105/hero105_stand03.png",
-        "hero/hero105/hero105_stand04.png"
+        "enemy/enemy1005/enemy1005_atk01.png",
+        "enemy/enemy1005/enemy1005_atk02.png",
+        "enemy/enemy1005/enemy1005_atk03.png",
+        "enemy/enemy1005/enemy1005_atk04.png",
+        "enemy/enemy1005/enemy1005_atk05.png",
+        "enemy/enemy1005/enemy1005_atk06.png",
+        "enemy/enemy1005/enemy1005_atk07.png",
+        "enemy/enemy1005/enemy1005_die01.png",
+        "enemy/enemy1005/enemy1005_die02.png",
+        "enemy/enemy1005/enemy1005_die04.png",
+        "enemy/enemy1005/enemy1005_die05.png",
+        "enemy/enemy1005/enemy1005_hit01.png",
+        "enemy/enemy1005/enemy1005_hit02.png",
+        "enemy/enemy1005/enemy1005_hit03.png",
+        "enemy/enemy1005/enemy1005_hit04.png",
+        "enemy/enemy1005/enemy1005_hit05.png",
+        "enemy/enemy1005/enemy1005_stand01.png",
+        "enemy/enemy1005/enemy1005_stand02.png",
+        "enemy/enemy1005/enemy1005_stand03.png",
+        "enemy/enemy1005/enemy1005_stand04.png"
       ],
       "ctype": "GameFileData"
     }
