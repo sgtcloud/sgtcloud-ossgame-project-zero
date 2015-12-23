@@ -22,13 +22,13 @@
               <AbstractNodeData Name="box" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="25.0001" BottomMargin="34.9999" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="135.0000" Y="60.0000" />
                 <Children>
-                  <AbstractNodeData Name="gold_text_bg" ActionTag="169438672" Tag="107" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="3.1661" BottomMargin="26.8339" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="gold_text_bg" ActionTag="169438672" Tag="107" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="3.2684" BottomMargin="26.7316" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="160.0000" Y="30.0000" />
                     <AnchorPoint />
-                    <Position X="-3.1974" Y="26.8339" />
+                    <Position X="-3.1974" Y="26.7316" />
                     <Scale ScaleX="0.7765" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0237" Y="0.4472" />
+                    <PrePosition X="-0.0237" Y="0.4455" />
                     <PreSize X="1.1852" Y="0.5000" />
                     <FileData Type="Normal" Path="mainUI/bg_15.png" Plist="" />
                   </AbstractNodeData>
@@ -121,7 +121,17 @@
                 <PreSize X="0.5938" Y="1.0000" />
                 <FileData Type="Normal" Path="EnemyList.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="fight_btn" ActionTag="-492035314" Tag="139" IconVisible="False" LeftMargin="531.9988" RightMargin="8.0012" TopMargin="18.0000" BottomMargin="22.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="70" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="levelText_bg" ActionTag="-76509588" Tag="41" IconVisible="False" LeftMargin="511.0695" RightMargin="-31.0695" TopMargin="39.4844" BottomMargin="40.5156" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
+                <Size X="160.0000" Y="40.0000" />
+                <AnchorPoint />
+                <Position X="511.0695" Y="40.5156" />
+                <Scale ScaleX="0.7765" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7985" Y="0.3376" />
+                <PreSize X="0.2500" Y="0.3333" />
+                <FileData Type="Normal" Path="mainUI/bg_15.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="fight_btn" Visible="False" ActionTag="-492035314" Tag="139" IconVisible="False" LeftMargin="531.9988" RightMargin="8.0012" TopMargin="18.0000" BottomMargin="22.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="70" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="100.0000" Y="80.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="531.9988" Y="102.0000" />
@@ -136,7 +146,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="live_btn" ActionTag="464688707" Tag="140" IconVisible="False" LeftMargin="530.9987" RightMargin="9.0013" TopMargin="18.0000" BottomMargin="22.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="70" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="live_btn" Visible="False" ActionTag="464688707" Tag="140" IconVisible="False" LeftMargin="530.9987" RightMargin="9.0013" TopMargin="18.0000" BottomMargin="22.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="70" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="100.0000" Y="80.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="530.9987" Y="102.0000" />
@@ -151,16 +161,26 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-1537324077" Tag="22" IconVisible="False" LeftMargin="551.9990" RightMargin="28.0010" TopMargin="43.9999" BottomMargin="52.0001" FontSize="24" LabelText="99/99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="level_text" ActionTag="-1537324077" Tag="22" IconVisible="False" LeftMargin="549.4028" RightMargin="30.5972" TopMargin="42.4387" BottomMargin="53.5613" FontSize="24" LabelText="99/99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="581.9990" Y="64.0001" />
+                <Position X="579.4028" Y="65.5613" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9094" Y="0.5333" />
+                <PrePosition X="0.9053" Y="0.5463" />
                 <PreSize X="0.0938" Y="0.2000" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="stage_icon" ActionTag="850031393" Tag="40" IconVisible="False" LeftMargin="511.3123" RightMargin="98.6877" TopMargin="41.2311" BottomMargin="48.7689" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
+                <Size X="30.0000" Y="30.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="526.3123" Y="63.7689" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.8224" Y="0.5314" />
+                <PreSize X="0.0469" Y="0.2500" />
+                <FileData Type="Normal" Path="mainUI/battle_icon.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

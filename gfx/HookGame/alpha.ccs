@@ -157,12 +157,16 @@
           <Image Name="bg_20.png" />
           <Image Name="bg_21.png" />
           <Image Name="title_bg4.png" />
+          <Image Name="stage_icon.png" />
+          <Image Name="empty.png" />
+          <Image Name="battle_icon.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
         <Folder Name="rankUI">
           <Image Name="rankText.png" />
         </Folder>
+        <Project Name="ShopLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
