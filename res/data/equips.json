@@ -6,6 +6,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "attack_value"
@@ -20,6 +21,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "attack_value"
@@ -34,6 +36,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "attack_value"
@@ -48,6 +51,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "attack_value"
@@ -62,6 +66,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "attack_value"
@@ -76,6 +81,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "attack_value"
@@ -98,6 +104,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "attack_value"
@@ -112,6 +119,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "attack_value"
@@ -126,6 +134,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "attack_value"
@@ -140,6 +149,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "attack_value"
@@ -154,6 +164,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "attack_value"
@@ -168,6 +179,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "attack_value"
@@ -190,6 +202,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "attack_rate"
@@ -204,6 +217,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "attack_rate"
@@ -218,6 +232,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "attack_rate"
@@ -232,6 +247,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "attack_rate"
@@ -246,6 +262,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "attack_rate"
@@ -260,6 +277,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "attack_rate"
@@ -282,6 +300,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "attack_rate"
@@ -296,6 +315,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "attack_rate"
@@ -310,6 +330,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "attack_rate"
@@ -324,6 +345,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "attack_rate"
@@ -338,6 +360,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "attack_rate"
@@ -352,6 +375,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "attack_rate"
@@ -374,6 +398,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 759,
           "type": "life_value"
@@ -388,6 +413,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 506,
           "type": "life_value"
@@ -402,6 +428,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 338,
           "type": "life_value"
@@ -416,6 +443,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 225,
           "type": "life_value"
@@ -430,6 +458,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 150,
           "type": "life_value"
@@ -444,6 +473,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 100,
           "type": "life_value"
@@ -466,6 +496,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 759,
           "type": "life_value"
@@ -480,6 +511,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 506,
           "type": "life_value"
@@ -494,6 +526,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 338,
           "type": "life_value"
@@ -508,6 +541,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 225,
           "type": "life_value"
@@ -522,6 +556,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 150,
           "type": "life_value"
@@ -536,6 +571,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 100,
           "type": "life_value"
@@ -558,6 +594,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 759,
           "type": "life_rate"
@@ -572,6 +609,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 506,
           "type": "life_rate"
@@ -586,6 +624,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 338,
           "type": "life_rate"
@@ -600,6 +639,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 225,
           "type": "life_rate"
@@ -614,6 +654,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 150,
           "type": "life_rate"
@@ -628,6 +669,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 100,
           "type": "life_rate"
@@ -650,6 +692,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 759,
           "type": "life_rate"
@@ -664,6 +707,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 506,
           "type": "life_rate"
@@ -678,6 +722,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 338,
           "type": "life_rate"
@@ -692,6 +737,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 225,
           "type": "life_rate"
@@ -706,6 +752,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 150,
           "type": "life_rate"
@@ -720,6 +767,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 100,
           "type": "life_rate"
@@ -742,6 +790,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "tap_value"
@@ -752,6 +801,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "tap_value"
@@ -762,6 +812,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "tap_value"
@@ -772,6 +823,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "tap_value"
@@ -782,6 +834,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "tap_value"
@@ -792,6 +845,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "tap_value"
@@ -810,6 +864,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 6,
         "effect1": {
           "value": 76,
           "type": "tap_value"
@@ -820,6 +875,7 @@
         }
       },
       {
+        "level": 5,
         "effect1": {
           "value": 51,
           "type": "tap_value"
@@ -830,6 +886,7 @@
         }
       },
       {
+        "level": 4,
         "effect1": {
           "value": 34,
           "type": "tap_value"
@@ -840,6 +897,7 @@
         }
       },
       {
+        "level": 3,
         "effect1": {
           "value": 23,
           "type": "tap_value"
@@ -850,6 +908,7 @@
         }
       },
       {
+        "level": 2,
         "effect1": {
           "value": 15,
           "type": "tap_value"
@@ -860,6 +919,7 @@
         }
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "tap_value"

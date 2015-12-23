@@ -1,3 +1,21 @@
+var Player = {
+    createPlayer: function () {
+        cc.loader.load(["res/data/record.json"], function (err, data) {
+            player = data[0];
+            player.
+            // console.log(datas.heros);
+            callback.call(context);
+        });
+    },
+    updatePlayer: function () {
+
+    },
+    delPlayer: function () {
+
+    }
+};
+
+
 var Player = function (src) {
     var id = src.id;
     var name = src.name;
@@ -11,7 +29,10 @@ var Player = function (src) {
     for (var i in src.heros) {
         heros[i] = new Hero(src.heros[i]);
     }
-
+    this.getBattleNumOfStage()
+    {
+        return src.stage_battle_num;
+    }
     this.getId = function () {
         return id;
     }
@@ -74,10 +95,6 @@ var Player = function (src) {
         if (gold < 0) {
             gold = 0;
         }
-    }
-
-    this.changeStage = function (id) {
-
     }
 
     this.changeBonus = function (datas) {

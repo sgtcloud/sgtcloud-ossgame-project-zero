@@ -1,7 +1,6 @@
 
 var res_datas = {
     stages_json: "res/data/stages.json",
-    battles_json: "res/data/battles.json",
     heroes_json: "res/data/heroes.json",
     enemies_json: "res/data/enemies.json",
     equips_json: "res/data/equips.json",

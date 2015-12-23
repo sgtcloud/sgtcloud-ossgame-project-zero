@@ -194,7 +194,7 @@ var HeroUnit = BattleUnit.extend({
             this.lifeBar.setPercent(this.life / max * 100);
         }
         this.onAttacked = function () {
-            var target = battle.filtHeroTarget();
+            var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
                 if (Math.random() < this.data.getCtrChance()) {
@@ -250,14 +250,14 @@ var EnemyUnit = BattleUnit.extend({
         this._super(battle, data, BattleConsts.Camp.Enemy);
         this.node.setScale(-1, 1);
         this.onAttacked = function () {
-            var target = battle.filtEnemyTarget();
+            var target = battle.findRandomHero();
             if (target) {
                 this.playAnimation('atk');
                 target.doDamage(this.attack);
             }
         }
         this.onDamaged = function () {
-            battle.refreshEnemyLife();
+            battle.updateEnemyLife();
         }
         this.onDead = function () {
             var a = cc.delayTime(0.5);

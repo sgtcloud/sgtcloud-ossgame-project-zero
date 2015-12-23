@@ -1,6 +1,3 @@
-var Effects = {};
-
-
 var player
 var game;
 
@@ -14,8 +11,9 @@ function loadGame(callback, context) {
     });
 }
 function initGame() {
-    game = new BattleScene();
+    game = new MainScene();
 }
+
 function initSpriteFrames() {
 }
 

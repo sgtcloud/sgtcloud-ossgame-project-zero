@@ -9,7 +9,7 @@ var BattleSprite = cc.Sprite.extend({
     cc.Sprite.prototype.ctor.call(this);
     this.battle = battle;
     this.type = type;
-    this.refresh(data);
+    this.refreshAll(data);
     if(type === 1){
       this.setScaleX(-1);
     }

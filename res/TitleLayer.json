@@ -148,7 +148,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": -3.1974,
-                      "Y": 26.8339
+                      "Y": 26.7316
                     },
                     "Scale": {
                       "ScaleX": 0.7765,
@@ -158,7 +158,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": -0.0237,
-                      "Y": 0.4472
+                      "Y": 0.4455
                     },
                     "PreSize": {
                       "X": 1.1852,
@@ -166,8 +166,8 @@
                     },
                     "LeftMargin": -3.1974,
                     "RightMargin": -21.8026,
-                    "TopMargin": 3.1661,
-                    "BottomMargin": 26.8339,
+                    "TopMargin": 3.2684,
+                    "BottomMargin": 26.7316,
                     "Tag": 107,
                     "ActionTag": 169438672,
                     "Size": {
@@ -529,6 +529,48 @@
                 "ctype": "ProjectNodeObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_15.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 20,
+                "Scale9Width": 7,
+                "Scale9Height": 58,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 511.0695,
+                  "Y": 40.5156
+                },
+                "Scale": {
+                  "ScaleX": 0.7765,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7985,
+                  "Y": 0.3376
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 0.3333
+                },
+                "LeftMargin": 511.0695,
+                "RightMargin": -31.0695,
+                "TopMargin": 39.4844,
+                "BottomMargin": 40.5156,
+                "Tag": 41,
+                "ActionTag": -76509588,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 40.0
+                },
+                "Name": "levelText_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
                 "FontSize": 14,
                 "ButtonText": "",
                 "TextColor": {
@@ -586,7 +628,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 531.9988,
@@ -660,7 +702,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 530.9987,
@@ -695,8 +737,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 581.999,
-                  "Y": 64.0001
+                  "X": 579.4028,
+                  "Y": 65.5613
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -705,17 +747,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9094,
-                  "Y": 0.5333
+                  "X": 0.9053,
+                  "Y": 0.5463
                 },
                 "PreSize": {
                   "X": 0.0938,
                   "Y": 0.2
                 },
-                "LeftMargin": 551.999,
-                "RightMargin": 28.001,
-                "TopMargin": 43.9999,
-                "BottomMargin": 52.0001,
+                "LeftMargin": 549.4028,
+                "RightMargin": 30.5972,
+                "TopMargin": 42.4387,
+                "BottomMargin": 53.5613,
                 "Tag": 22,
                 "ActionTag": -1537324077,
                 "Size": {
@@ -724,6 +766,49 @@
                 },
                 "Name": "level_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/battle_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 52,
+                "Scale9Height": 50,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 526.3123,
+                  "Y": 63.7689
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8224,
+                  "Y": 0.5314
+                },
+                "PreSize": {
+                  "X": 0.0469,
+                  "Y": 0.25
+                },
+                "LeftMargin": 511.3123,
+                "RightMargin": 98.6877,
+                "TopMargin": 41.2311,
+                "BottomMargin": 48.7689,
+                "Tag": 40,
+                "ActionTag": 850031393,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "stage_icon",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": 2091443489,
@@ -744,6 +829,7 @@
       },
       "UsedResources": [
         "EnemyList.json",
+        "mainUI/battle_icon.png",
         "mainUI/bg_04.png",
         "mainUI/bg_15.png",
         "mainUI/diamond.png",

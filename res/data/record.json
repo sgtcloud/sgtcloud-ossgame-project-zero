@@ -6,11 +6,12 @@
   "relic": 100,
   "vip": 1,
   "stage": "s100001",
+  "stage_battle_num": 1,
   "autoBossBattle": 1,
   "heros": [
     {
       "id": "h101",
-      "lv": 1,
+      "lv": 5,
       "star": 0,
       "skills": [
         1,
@@ -23,7 +24,7 @@
     },
     {
       "id": "h102",
-      "lv": 1,
+      "lv": 5,
       "star": 0,
       "skills": [
         1,
