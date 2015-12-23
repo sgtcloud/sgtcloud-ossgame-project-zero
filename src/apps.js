@@ -14,7 +14,6 @@ function loadGame(callback, context) {
     });
 }
 function initGame() {
-    // game = new GameScene();
     game = new BattleScene();
 }
 function initSpriteFrames() {

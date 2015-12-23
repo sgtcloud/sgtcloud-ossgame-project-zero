@@ -94,9 +94,27 @@
                 "ctype": "PointFrameData"
               },
               {
+                "X": -9.5076,
+                "Y": -6.3429,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
                 "X": 4.0436,
                 "Y": -11.1514,
                 "FrameIndex": 33,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 4.0436,
+                "Y": -11.1514,
+                "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
                 },
@@ -133,6 +151,15 @@
                 "X": -8.1361,
                 "Y": -12.2114,
                 "FrameIndex": 48,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -8.1361,
+                "Y": -12.2114,
+                "FrameIndex": 51,
                 "EasingData": {
                   "Type": 0
                 },
@@ -196,6 +223,33 @@
                 "X": -9.1358,
                 "Y": -12.3372,
                 "FrameIndex": 72,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -9.1358,
+                "Y": -12.3372,
+                "FrameIndex": 75,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -9.1358,
+                "Y": -12.3372,
+                "FrameIndex": 78,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -9.1358,
+                "Y": -12.3372,
+                "FrameIndex": 81,
                 "EasingData": {
                   "Type": 0
                 },
@@ -538,7 +592,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero105/hero105_atk01.png",
+              "Path": "hero/hero105/hero105_hit05.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -549,8 +603,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -9.5075,
-              "Y": -12.4628
+              "X": -8.1361,
+              "Y": -12.2114
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -566,10 +620,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -68.5075,
-            "RightMargin": -49.4925,
-            "TopMargin": -75.5372,
-            "BottomMargin": -12.4628,
+            "LeftMargin": -65.6361,
+            "RightMargin": -49.3639,
+            "TopMargin": -74.7886,
+            "BottomMargin": -12.2114,
             "Tag": 25,
             "ActionTag": -275940080,
             "Size": {

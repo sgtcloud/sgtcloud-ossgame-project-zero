@@ -112,6 +112,24 @@
                 "ctype": "PointFrameData"
               },
               {
+                "X": -23.9835,
+                "Y": -12.3838,
+                "FrameIndex": 33,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -23.9835,
+                "Y": -12.3838,
+                "FrameIndex": 36,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
                 "X": -16.4446,
                 "Y": -5.3445,
                 "FrameIndex": 39,
@@ -564,7 +582,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero/hero102/hero102_skill04.png",
+              "Path": "hero/hero102/hero102_die01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -575,8 +593,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -14.3556,
-              "Y": -4.1555
+              "X": -15.6003,
+              "Y": -5.9223
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -592,10 +610,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -55.8556,
-            "RightMargin": -27.1444,
-            "TopMargin": -109.8445,
-            "BottomMargin": -4.1555,
+            "LeftMargin": -57.1003,
+            "RightMargin": -25.8997,
+            "TopMargin": -108.0777,
+            "BottomMargin": -5.9223,
             "Tag": 7,
             "ActionTag": 2020530987,
             "Size": {

@@ -4,13 +4,12 @@ var res_datas = {
     battles_json: "res/data/battles.json",
     heroes_json: "res/data/heroes.json",
     enemies_json: "res/data/enemies.json",
-    equips_json: "res/data/items.json",
+    equips_json: "res/data/equips.json",
     skills_json: "res/data/skills.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
 
-    player_layer_json: "res/PlayerLayer.json",
     menu_layer_json: "res/MenuLayer.json",
     battle_layer_json: "res/BattleLayer.json",
     equip_layer_json: "res/EquipLayer.json",
@@ -49,9 +48,9 @@ var res = {
     // hit_effect_3_png : "res/effects/player_hit_3.png",
     // battle_hero_list_json : "res/BattleHeroList.json",
 
-    battle_hero_view_json: "res/BattleHeroView.json",
+    //battle_hero_view_json: "res/BattleHeroView.json",
     equip_hero_view_json: "res/EquipHeroView.json",
-    equip_item_view_json: "res/EquipItemView.json",
+    //equip_item_view_json: "res/EquipItemView.json",
 
 };
 

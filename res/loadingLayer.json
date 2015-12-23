@@ -5,12 +5,250 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 0,
+        "Duration": 22,
         "Speed": 1.0,
-        "Timelines": [],
+        "Timelines": [
+          {
+            "ActionTag": 479375161,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 14,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 16,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 22,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 479375161,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 30.0,
+                "Y": 30.0,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 60.0,
+                "Y": 60.0,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 90.0,
+                "Y": 90.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 120.0,
+                "Y": 120.0,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 150.0,
+                "Y": 150.0,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 180.0,
+                "Y": 180.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 210.0,
+                "Y": 210.0,
+                "FrameIndex": 14,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 240.0,
+                "Y": 240.0,
+                "FrameIndex": 16,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 270.0,
+                "Y": 270.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 300.0,
+                "Y": 300.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 330.0,
+                "Y": 330.0,
+                "FrameIndex": 22,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 22,
+          "Name": "rot",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 8,
         "Children": [
@@ -28,6 +266,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -116,8 +356,8 @@
                   "X": 0.4688,
                   "Y": 0.1875
                 },
-                "LeftMargin": 170.0,
-                "RightMargin": 170.0,
+                "LeftMargin": 170.0143,
+                "RightMargin": 169.9857,
                 "TopMargin": 180.0,
                 "BottomMargin": 600.0,
                 "Tag": 11,
@@ -212,7 +452,7 @@
                   "X": 364.0,
                   "Y": 7.0
                 },
-                "Name": "login_bg",
+                "Name": "loading_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -245,8 +485,8 @@
                   "X": 0.5422,
                   "Y": 0.0354
                 },
-                "LeftMargin": 146.4997,
-                "RightMargin": 146.5003,
+                "LeftMargin": 146.4864,
+                "RightMargin": 146.5136,
                 "TopMargin": 639.0,
                 "BottomMargin": 287.0,
                 "Tag": 14,
@@ -287,8 +527,8 @@
                   "X": 0.5688,
                   "Y": 0.0073
                 },
-                "LeftMargin": 137.5923,
-                "RightMargin": 138.4077,
+                "LeftMargin": 137.5996,
+                "RightMargin": 138.4004,
                 "TopMargin": 709.0,
                 "BottomMargin": 244.0,
                 "Tag": 15,
@@ -297,7 +537,7 @@
                   "X": 364.0,
                   "Y": 7.0
                 },
-                "Name": "login_bar",
+                "Name": "loading_bar",
                 "ctype": "LoadingBarObjectData"
               },
               {
@@ -306,42 +546,46 @@
                   "Path": "loadingUI/star.png",
                   "Plist": ""
                 },
-                "Scale9Width": 27,
-                "Scale9Height": 27,
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 141.0654,
-                  "Y": 248.2971
+                  "X": 138.5204,
+                  "Y": 249.4589
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
+                "RotationSkewX": 330.0,
+                "RotationSkewY": 330.0,
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2204,
-                  "Y": 0.2586
+                  "X": 0.2164,
+                  "Y": 0.2599
                 },
                 "PreSize": {
                   "X": 0.0422,
                   "Y": 0.0281
                 },
-                "LeftMargin": 127.5654,
-                "RightMargin": 485.4346,
-                "TopMargin": 698.2029,
-                "BottomMargin": 234.7971,
-                "Tag": 16,
-                "ActionTag": -450634189,
+                "LeftMargin": 125.0204,
+                "RightMargin": 487.9796,
+                "TopMargin": 697.0411,
+                "BottomMargin": 235.9589,
+                "Tag": 17,
+                "ActionTag": 479375161,
                 "Size": {
                   "X": 27.0,
                   "Y": 27.0
                 },
                 "Name": "star",
-                "ctype": "ImageViewObjectData"
+                "ctype": "SpriteObjectData"
               }
             ],
             "ActionTag": 2049391,
