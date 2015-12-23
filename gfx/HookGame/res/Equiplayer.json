@@ -229,15 +229,15 @@
                   {
                     "FileData": {
                       "Type": "Normal",
-                      "Path": "equipUI/title.png",
+                      "Path": "equipUI/title_2.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 180,
-                    "Scale9Height": 100,
+                    "Scale9Width": 249,
+                    "Scale9Height": 234,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 4.0,
-                      "Y": 5.0
+                      "X": 12.0,
+                      "Y": 4.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -246,21 +246,21 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0064,
-                      "Y": 0.0455
+                      "X": 0.0192,
+                      "Y": 0.0364
                     },
                     "PreSize": {
-                      "X": 0.2885,
+                      "X": 0.1603,
                       "Y": 0.9091
                     },
-                    "LeftMargin": 4.0,
-                    "RightMargin": 440.0,
-                    "TopMargin": 5.0,
-                    "BottomMargin": 5.0,
+                    "LeftMargin": 12.0,
+                    "RightMargin": 512.0,
+                    "TopMargin": 6.0,
+                    "BottomMargin": 4.0,
                     "Tag": 202,
                     "ActionTag": -135955520,
                     "Size": {
-                      "X": 180.0,
+                      "X": 100.0,
                       "Y": 100.0
                     },
                     "Name": "title",
@@ -282,7 +282,7 @@
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 268.0,
+                      "X": 257.0,
                       "Y": 75.0
                     },
                     "Scale": {
@@ -295,15 +295,15 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4295,
+                      "X": 0.4119,
                       "Y": 0.6818
                     },
                     "PreSize": {
                       "X": 0.141,
                       "Y": 0.2
                     },
-                    "LeftMargin": 268.0,
-                    "RightMargin": 268.0,
+                    "LeftMargin": 257.0,
+                    "RightMargin": 279.0,
                     "TopMargin": 13.0,
                     "BottomMargin": 75.0,
                     "Tag": 203,
@@ -331,7 +331,7 @@
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 215.0,
+                      "X": 204.0,
                       "Y": 50.0
                     },
                     "Scale": {
@@ -341,15 +341,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3446,
+                      "X": 0.3269,
                       "Y": 0.4545
                     },
                     "PreSize": {
                       "X": 0.1282,
                       "Y": 0.1818
                     },
-                    "LeftMargin": 215.0,
-                    "RightMargin": 329.0,
+                    "LeftMargin": 204.0,
+                    "RightMargin": 340.0,
                     "TopMargin": 40.0,
                     "BottomMargin": 50.0,
                     "Tag": 204,
@@ -472,7 +472,7 @@
       "UsedResources": [
         "EquipBtn.json",
         "equipUI/bg.png",
-        "equipUI/title.png",
+        "equipUI/title_2.png",
         "GoldLayer.json",
         "heroUI/text_bg.png"
       ],

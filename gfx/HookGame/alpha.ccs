@@ -163,6 +163,7 @@
         <Folder Name="rankUI">
           <Image Name="rankText.png" />
         </Folder>
+        <Project Name="ShopLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
