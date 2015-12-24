@@ -1,7 +1,7 @@
 var Equip = function (id, lv) {
     var id = id;
     var lv = lv;
-    var data = datas.equips[id];
+    var data = dataSource.equips[id];
 
 
     this.getId = function () {
@@ -24,7 +24,7 @@ var Equip = function (id, lv) {
 var Skill = function (id, lv) {
     var id = id;
     var lv = lv;
-    var data = datas.skills[id];
+    var data = dataSource.skills[id];
     this.getId = function () {
         return id;
     }
@@ -47,8 +47,9 @@ var Skill = function (id, lv) {
 var Hero = function (record) {
     var id = record.id;
     var lv = record.lv;
+    var life = record.lift;
     var star = record.star;
-    var data = datas.heros[id];
+    var data = dataSource.heros[id];
     var equips = [];
     var skills = [];
 

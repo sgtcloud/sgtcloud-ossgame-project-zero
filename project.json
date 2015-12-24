@@ -16,9 +16,11 @@
   "jsList": [
     "src/resource.js",
     "src/model/Data.js",
-    "src/model/Battle.js",
+    "src/model/Enemy.js",
+    "src/model/Stage.js",
     "src/model/Hero.js",
     "src/model/Player.js",
+    "src/model/Event.js",
     "src/LoaderScene.js",
     "src/battle/BattleConst.js",
     "src/battle/BattleScene.js",

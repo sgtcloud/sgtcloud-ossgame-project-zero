@@ -31,7 +31,6 @@ var BattleUnit = cc.Node.extend({
         this._super();
         this.battle = battle;
         this.data = data;
-        this.camp = camp;
         this.animateTime = 0;
         this.animateState = 'stand';
         var json = ccs.load(res[this.data.getFile()]);
@@ -61,7 +60,7 @@ var BattleUnit = cc.Node.extend({
 
         {//data
             this.attack = data.getAttack();
-            this.life = data.getLife();
+            this.life = life;
             //设置生命值
             this.changeLife = function (val) {
                 this.life += val;
@@ -175,7 +174,7 @@ var BattleUnit = cc.Node.extend({
 
 //英雄扩展类
 var HeroUnit = BattleUnit.extend({
-    ctor: function (battle, data) {
+    ctor: function (battle, data, life) {
         this._super(battle, data, BattleConsts.Camp.Player);
         //this.setScale(UNIT_SCALE,UNIT_SCALE);
         this.recover = 0;
@@ -194,7 +193,7 @@ var HeroUnit = BattleUnit.extend({
             this.lifeBar.setPercent(this.life / max * 100);
         }
         this.onAttacked = function () {
-            var target = battle.filtHeroTarget();
+            var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
                 if (Math.random() < this.data.getCtrChance()) {
@@ -242,6 +241,7 @@ var HeroUnit = BattleUnit.extend({
         this.isActive = function () {
             return !data.isLocked();
         }
+        this.refreshLifeBar();
     }
 });
 
@@ -250,14 +250,14 @@ var EnemyUnit = BattleUnit.extend({
         this._super(battle, data, BattleConsts.Camp.Enemy);
         this.node.setScale(-1, 1);
         this.onAttacked = function () {
-            var target = battle.filtEnemyTarget();
+            var target = battle.findRandomHero();
             if (target) {
                 this.playAnimation('atk');
                 target.doDamage(this.attack);
             }
         }
         this.onDamaged = function () {
-            battle.refreshEnemyLife();
+            battle.updateEnemyLife();
         }
         this.onDead = function () {
             var a = cc.delayTime(0.5);

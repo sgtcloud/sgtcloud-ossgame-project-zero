@@ -1,86 +1,98 @@
-var Player = function (src) {
-    var id = src.id;
-    var name = src.name;
-    var gold = src.gold;
-    var gem = src.gem;
-    var relic = src.relic;
-    var vip = src.vip;
-    var autoBossBattle = src.autoBossBattle;
-    var stage = new Stage(src.stage);
-    var heros = [];
-    for (var i in src.heros) {
-        heros[i] = new Hero(src.heros[i]);
-    }
-
-    this.getId = function () {
-        return id;
-    }
-
-    this.getName = function () {
-        return name;
-    }
-
-    this.getHeroCount = function () {
-        return heros.length;
-    }
-    this.getHeroData = function (id) {
-        return heros[id];
-    }
-    this.getStageData = function () {
-        return stage;
-    }
-
-    this.getLife = function () {
+var player = {
+    "id": "10001000",
+    "name": "测试a",
+    "gold": 1000,
+    "gem": 1000,
+    "relic": 100,
+    "vip": 1,
+    "stage": "s100001",
+    "stage_battle_num": 1,
+    "heroes": [
+        {
+            "id": "h101",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            "skills": [
+                1,
+                1
+            ],
+            "equips": [
+                1,
+                1
+            ]
+        },
+        {
+            "id": "h102",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            "skills": [
+                1,
+                1
+            ],
+            "equips": [
+                1,
+                1
+            ]
+        }
+    ]
+};
+var PlayerData = {
+    init: function () {
+        var save = localStorage.getItem("save");
+        if (save) {
+            player = JSON.parse(save);
+        } else {
+            this.initPlayerData();
+        }
+        this.refreshData();
+    },
+    initPlayerData : function () {
+        for (var i in player.heroes) {
+            this.heroesData[i] = new Hero(player.heroes[i]);
+            player.heroes[i].life = this.heroesData[i].getLife();
+        }
+    },
+    refreshData: function () {
+        for (var i in player.heroes) {
+            this.heroesData[i] = new Hero(player.heroes[i]);
+        }
+        this.stageData = new Stage(player.stage);
+    },
+    updatePlayer: function () {
+        localStorage.setItem("save", JSON.stringify(player));
+    },
+    delPlayer: function () {
+        localStorage.removeItem("save");
+    },
+    getHeroesData: function (id) {
+        return this.heroesData[id];
+    },
+    getStageData: function () {
+        return this.stageData;
+    },
+    sumHeroesProp: function (prop) {
         var val = 0;
-        for (var i in heros) {
-            var hero = heros[i];
-            val += hero.getLife();
+        for (var i in this.heroesData) {
+            var hero = this.heroesData[i];
+            val += hero[prop];
         }
         return val;
-    }
-    this.getAttack = function () {
-        var val = 0;
-        for (var i in heros) {
-            var hero = heros[i];
-            val += hero.getAttack();
-        }
-        return val;
-    }
-    this.getHit = function () {
-        var val = 0;
-        for (var i in heros) {
-            var hero = heros[i];
-            val += hero.getHit();
-        }
-        return val;
-    }
-    this.getGold = function () {
-        return gold;
-    }
-    this.getGem = function () {
-        return gem;
-    }
-    this.getRelic = function () {
-        return relic;
-    }
-    this.getVip = function () {
-        return vip;
-    }
-    this.isAutoBossBattle = function () {
-        return autoBossBattle;
-    }
-    this.changeGold = function (val) {
-        gold += val;
-        if (gold < 0) {
-            gold = 0;
-        }
-    }
-
-    this.changeStage = function (id) {
-
-    }
-
-    this.changeBonus = function (datas) {
+    },
+    getTotalAttck: function () {
+        return this.sumHeroesProp("getAttack");
+    },
+    getTotalLife: function () {
+        return this.sumHeroesProp("getLife");
+    },
+    getTotalHit: function () {
+        return this.sumHeroesProp("getHit");
+    },
+    createResourceData: function (unit, val) {
+        return {unit: unit, value: val};
+    },
+    consumeResource: function (datas) {
         if (!datas) {
             return;
         }
@@ -89,29 +101,19 @@ var Player = function (src) {
             if (data.value) {
                 switch (data.unit) {
                     case "gold":
-                        gold += data.value;
+                        player.gold += data.value;
                         break;
                     case "gem":
-                        gem += data.value;
+                        player.gem += data.value;
                         break;
                     case "relic":
-                        relic += data.value;
+                        player.relic += data.value;
                         break;
                 }
             }
         }
-    }
+    },
+    heroesData: [],
+    stageData: {}
+};
 
-    // return {
-    //   changeGold:function(price){
-    //     gold += price;
-    //   },
-    //   notifyStateWin:function(){
-    //     var bonus = battle.getBonus(battle.getState());
-    //     gold += bonus;
-    //   },
-    //   notifyBattleWin:function(){
-    //
-    //   }
-    // };
-}

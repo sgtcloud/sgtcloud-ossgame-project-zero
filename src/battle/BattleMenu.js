@@ -1,9 +1,9 @@
-var MenuBtn = function(btn){
+var MenuBtn = function (btn) {
     this.button = btn.getChildByName('btn');
 }
 //UI的Menu父类
 var BattleMenu = cc.Node.extend({
-    ctor:function(battle,res){
+    ctor: function (battle, res) {
         this._super();
         var layer = ccs.csLoader.createNode(res);
         this.addChild(layer);
@@ -12,16 +12,18 @@ var BattleMenu = cc.Node.extend({
         //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
         //这里是处理刷新金钱的显示
         this.playerGoldText = this.root.getChildByName('goldLayer').getChildByName('root').getChildByName('gold_text');
-        this.refreshPlayerGoldText = function(){
+        this.updatePlayerGoldText = function () {
             this.playerGoldText.setString(player.getGold());
         };
 
-        this.onHeroDead = function(){}
-        this.onHeroRecover = function(){}
+        this.onHeroDead = function () {
+        }
+        this.onHeroRecover = function () {
+        }
     }
 });
 //UI上显示的技能ICON
-var SkkillIcon = function(battle,root,index){
+var SkkillIcon = function (battle, root, index) {
     this.button = root.getChildByName('skill_btn');
     this.deadTimeTitle = root.getChildByName('die_text');
     this.deadTimeText = root.getChildByName('die_time_text');
@@ -31,52 +33,53 @@ var SkkillIcon = function(battle,root,index){
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
 
-    this.button.addClickEventListener(function(){
+    this.button.addClickEventListener(function () {
 
     });
 
-    this.setVisible = function(visit){
+    this.setVisible = function (visit) {
         root.setVisible(visit);
     }
-    this.showDead = function(){
+    this.showDead = function () {
         this.deadTimeTitle.setVisible(true);
         this.deadTimeText.setVisible(true);
         this.coolTimeText.setVisible(false);
     }
-    this.showCooldown = function(){
+    this.showCooldown = function () {
         this.deadTimeTitle.setVisible(false);
         this.deadTimeText.setVisible(false);
         this.coolTimeText.setVisible(true);
     }
-    this.showActive = function(){
+    this.showActive = function () {
         this.deadTimeTitle.setVisible(false);
         this.deadTimeText.setVisible(false);
         this.coolTimeText.setVisible(false);
     }
-    this.setDeadTime = function(time){
+    this.setDeadTime = function (time) {
         this.deadTimeText.setString(time);
     }
-    this.setCoolTime = function(time){
+    this.setCoolTime = function (time) {
         this.coolTimeText.setString(time);
     }
 }
 var SkillListMenu = BattleMenu.extend({
-    ctor:function(battle){
-        this._super(battle,res.skill_layer_json);
-        skills = [];
-        for(var i=0;i<7;i++){
-            var pane = this.root.getChildByName('skill'+(i+1)).getChildByName('root');
-            var skill = new SkkillIcon(battle,pane,i);
-            if(i < player.getHeroCount()){
+    ctor: function (battlePanel) {
+        this._super(battlePanel, res.skill_layer_json);
+        var skills = [];
+        for (var i = 0; i < 7; i++) {
+            var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
+            var skill = new SkkillIcon(battlePanel, pane, i);
+            if (i < player.heroes.length) {
                 skill.setVisible(true);
-            }else{
+            } else {
                 skill.setVisible(false);
             }
             skills[i] = skill;
         }
-        function format(time){
+        function format(time) {
             return new Date(time).Format('mm:ss');
         }
+
         //为了显示CD和复活的时候显示的格式
         Date.prototype.Format = function (fmt) { //author: meizz
             var o = {
@@ -94,58 +97,58 @@ var SkillListMenu = BattleMenu.extend({
             return fmt;
         }
 
-        this.refreshSkillState = function(){
-            for(var i=0;i<7;i++) {
+        this.refreshSkillState = function () {
+            for (var i = 0; i < 7; i++) {
                 skills[i].setVisible(false);
             }
-            battle.foreachHeroSprite(function(hero,i){
+            battlePanel.foreachHeroSprite(function (hero, i) {
                 var skill = skills[i];
                 skill.setVisible(true);
-                if(hero.isDead()){
+                if (hero.isDead()) {
                     skill.showDead();
-                }else{
-                    if(hero.getCooldown() > 0){
+                } else {
+                    if (hero.getCooldown() > 0) {
                         skill.showCooldown();
-                    }else{
+                    } else {
                         skill.showActive();
                     }
                 }
             });
         }
 
-        this.update = function(dt){
-            battle.foreachHeroSprite(function(hero,i){
+        this.update = function (dt) {
+            battlePanel.foreachHeroSprite(function (hero, i) {
                 var skill = skills[i];
-                if(hero.isDead()){
-                    skill.setDeadTime(format(hero.getRecover()*1000));
-                }else if(hero.getCooldown() > 0){
-                    skill.setCoolTime(format(hero.getCooldown()*1000));
+                if (hero.isDead()) {
+                    skill.setDeadTime(format(hero.getRecover() * 1000));
+                } else if (hero.getCooldown() > 0) {
+                    skill.setCoolTime(format(hero.getCooldown() * 1000));
                 }
             });
         }
-        this.onHeroDead = function(_hero){
+        this.onHeroDead = function (_hero) {
             this.refreshSkillState();
         }
-        this.onHeroRecover = function(hero){
+        this.onHeroRecover = function (hero) {
             this.refreshSkillState();
         }
-        this.refreshSkillState();
 
+        this.refreshSkillState();
         this.scheduleUpdate();
     }
 });
 
 
 var HeroListMenu = BattleMenu.extend({
-    ctor:function(battle){
-        this._super(battle,res.hero_layer_json);
+    ctor: function (battle) {
+        this._super(battle, res.hero_layer_json);
 
         this.heroList = this.root.getChildByName('hero_list');
 
         var heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         var skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
 
-        function buildHeroView(hero){
+        function buildHeroView(hero) {
             var root = heroTemp.clone();
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
@@ -154,9 +157,9 @@ var HeroListMenu = BattleMenu.extend({
 
 
             name.setString(hero.getName());
-            lv.setString('Lv.'+hero.getLv());
+            lv.setString('Lv.' + hero.getLv());
             dps.setString(hero.getAttack());
-            for(var i=0;i<5;i++){
+            for (var i = 0; i < 5; i++) {
                 //var star = stars.getChildByName('icon0');
                 //if(i<hero.getStar()){
                 //  star.setVisible(true);
@@ -167,7 +170,8 @@ var HeroListMenu = BattleMenu.extend({
 
             return root;
         }
-        function buildSkillView(skill){
+
+        function buildSkillView(skill) {
             var root = skillTemp.clone();
             var icon = root.getChildByName('skill_icon');
             var name = root.getChildByName('skillName_text');
@@ -183,15 +187,15 @@ var HeroListMenu = BattleMenu.extend({
 
         this.views = {};
         {//填充英雄的列表 循环填充英雄+技能
-            for(var i=0;i<player.getHeroCount();i++){
-                var heroData = player.getHeroData(i);
+            for (var i = 0; i < player.heroes.length; i++) {
+                var heroData = PlayerData.getHeroesData(i);
                 var _heroView = buildHeroView(heroData);
                 this.heroList.addChild(_heroView);
 
                 this.views.heros = this.views.heros || [];
                 this.views.heros[i] = _heroView;
 
-                for(var j=0;j<heroData.getSkillCount();j++){
+                for (var j = 0; j < heroData.getSkillCount(); j++) {
                     var skillData = heroData.getSkillData(j);
                     var _skillView = buildSkillView(skillData);
                     this.heroList.addChild(_skillView);
@@ -206,21 +210,21 @@ var HeroListMenu = BattleMenu.extend({
 
 
 var EquipListMenu = BattleMenu.extend({
-    ctor:function(battle){
-        this._super(battle,res.equip_layer_json);
+    ctor: function (battle) {
+        this._super(battle, res.equip_layer_json);
 
         this.heroList = this.root.getChildByName('equip_list');
 
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
 
-        function buildHeroView(hero){
+        function buildHeroView(hero) {
             var root = heroView.clone();
-            var icon =  root.getChildByName('hero_icon');
-            var name =  root.getChildByName('heroName_text');
-            var lv =  root.getChildByName('level_text');
-            var dps =  root.getChildByName('dps_text');
-            var tap =  root.getChildByName('tatk_text');
+            var icon = root.getChildByName('hero_icon');
+            var name = root.getChildByName('heroName_text');
+            var lv = root.getChildByName('level_text');
+            var dps = root.getChildByName('dps_text');
+            var tap = root.getChildByName('tatk_text');
 
             name.setString(hero.getName());
             lv.setString(hero.getLv());
@@ -230,7 +234,7 @@ var EquipListMenu = BattleMenu.extend({
             return root;
         }
 
-        function buildEquipView(equip){
+        function buildEquipView(equip) {
             var root = equipView.clone();
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
@@ -247,15 +251,15 @@ var EquipListMenu = BattleMenu.extend({
         this.views = {};
         {
 
-            for(var i=0;i<player.getHeroCount();i++){
-                var heroData = player.getHeroData(i);
+            for (var i = 0; i < player.heroes.length; i++) {
+                var heroData = PlayerData.getHeroesData(i);
                 var _heroView = buildHeroView(heroData);
                 this.heroList.addChild(_heroView);
 
                 this.views.heros = this.views.heros || [];
                 this.views.heros[i] = _heroView;
 
-                for(var j=0;j<heroData.getEquipCount();j++){
+                for (var j = 0; j < heroData.getEquipCount(); j++) {
                     var equipData = heroData.getEquipData(j);
                     var _equipView = buildEquipView(equipData);
                     this.heroList.addChild(_equipView);

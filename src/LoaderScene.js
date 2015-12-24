@@ -1,7 +1,7 @@
 /**
  * Created by highkay on 2015/12/17.
  */
-LoaderScene = cc.LoaderScene.extend({
+var LoaderScene = cc.LoaderScene.extend({
     _interval: null,
     _progressBar: null,
     _className: "LoaderScene",
@@ -47,7 +47,7 @@ LoaderScene = cc.LoaderScene.extend({
     },
 
     /**
-     * init with resources
+     * initBattle with resources
      * @param {Array} resources
      * @param {Function|String} cb
      * @param {Object} target

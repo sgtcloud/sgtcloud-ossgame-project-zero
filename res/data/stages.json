@@ -1,6 +1,7 @@
 {
   "s100001": {
     "name": "战役1",
+    "stageNum": 1,
     "next": "s100002",
     "bg": "s100001.png",
     "icon": "stage_icon_s100001.png",
@@ -44,6 +45,7 @@
   },
   "s100002": {
     "name": "战役2",
+    "stageNum": 2,
     "next": "s100003",
     "bg": "s100002.png",
     "icon": "stage_icon_s100002.png",
@@ -87,6 +89,7 @@
   },
   "s100003": {
     "name": "战役3",
+    "stageNum": 3,
     "next": "s100004",
     "bg": "s100003.png",
     "icon": "stage_icon_s100003.png",
@@ -130,6 +133,7 @@
   },
   "s100004": {
     "name": "战役4",
+    "stageNum": 4,
     "next": "s100005",
     "bg": "s100004.png",
     "icon": "stage_icon_s100004.png",
@@ -173,6 +177,7 @@
   },
   "s100005": {
     "name": "战役5",
+    "stageNum": 5,
     "next": "s100006",
     "bg": "s100005.png",
     "icon": "stage_icon_s100005.png",

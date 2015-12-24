@@ -91,11 +91,12 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/enemyicon.png",
+                  "Path": "mainUI/empty.png",
                   "Plist": ""
                 },
-                "Scale9Width": 60,
-                "Scale9Height": 60,
+                "Scale9Enable": true,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -105,8 +106,8 @@
                   "Y": 66.5907
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
                 },
                 "CColor": {},
                 "IconVisible": false,
@@ -115,18 +116,18 @@
                   "Y": 0.5549
                 },
                 "PreSize": {
-                  "X": 0.1316,
-                  "Y": 0.4167
+                  "X": 0.1263,
+                  "Y": 0.4
                 },
-                "LeftMargin": 76.088,
-                "RightMargin": 253.912,
-                "TopMargin": 28.4093,
-                "BottomMargin": 41.5907,
+                "LeftMargin": 77.088,
+                "RightMargin": 254.912,
+                "TopMargin": 29.4093,
+                "BottomMargin": 42.5907,
                 "Tag": 122,
                 "ActionTag": -1128263822,
                 "Size": {
-                  "X": 50.0,
-                  "Y": 50.0
+                  "X": 48.0,
+                  "Y": 48.0
                 },
                 "Name": "enemy_icon1",
                 "ctype": "ImageViewObjectData"
@@ -134,7 +135,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/enemyicon.png",
+                  "Path": "mainUI/stage_icon.png",
                   "Plist": ""
                 },
                 "Scale9Width": 60,
@@ -177,7 +178,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/enemyicon.png",
+                  "Path": "mainUI/stage_icon.png",
                   "Plist": ""
                 },
                 "Scale9Width": 60,
@@ -191,8 +192,8 @@
                   "Y": 66.5907
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
                 },
                 "CColor": {},
                 "IconVisible": false,
@@ -201,25 +202,27 @@
                   "Y": 0.5549
                 },
                 "PreSize": {
-                  "X": 0.1316,
-                  "Y": 0.4167
+                  "X": 0.1579,
+                  "Y": 0.5
                 },
-                "LeftMargin": 249.6069,
-                "RightMargin": 80.3931,
-                "TopMargin": 28.4093,
-                "BottomMargin": 41.5907,
+                "LeftMargin": 244.6069,
+                "RightMargin": 75.3931,
+                "TopMargin": 23.4093,
+                "BottomMargin": 36.5907,
                 "Tag": 123,
                 "ActionTag": -1787543863,
                 "Size": {
-                  "X": 50.0,
-                  "Y": 50.0
+                  "X": 60.0,
+                  "Y": 60.0
                 },
                 "Name": "enemy_icon3",
                 "ctype": "ImageViewObjectData"
               },
               {
                 "FontSize": 18,
-                "LabelText": "9997",
+                "LabelText": "        ",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -236,8 +239,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 102.0142,
-                  "Y": 30.2621
+                  "X": 102.0141,
+                  "Y": 34.2621
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -251,20 +254,20 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.2685,
-                  "Y": 0.2522
+                  "Y": 0.2855
                 },
                 "PreSize": {
-                  "X": 0.0947,
+                  "X": 0.1895,
                   "Y": 0.15
                 },
-                "LeftMargin": 84.0142,
-                "RightMargin": 259.9858,
-                "TopMargin": 80.7379,
-                "BottomMargin": 21.2621,
+                "LeftMargin": 66.0141,
+                "RightMargin": 241.9859,
+                "TopMargin": 76.7379,
+                "BottomMargin": 25.2621,
                 "Tag": 125,
                 "ActionTag": -1946973175,
                 "Size": {
-                  "X": 36.0,
+                  "X": 72.0,
                   "Y": 18.0
                 },
                 "Name": "level_text1",
@@ -273,6 +276,8 @@
               {
                 "FontSize": 18,
                 "LabelText": "9998",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -298,8 +303,7 @@
                 },
                 "CColor": {
                   "R": 0,
-                  "G": 0,
-                  "B": 0
+                  "G": 28
                 },
                 "IconVisible": false,
                 "PrePosition": {
@@ -326,6 +330,8 @@
               {
                 "FontSize": 18,
                 "LabelText": "9999",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -343,7 +349,7 @@
                 },
                 "Position": {
                   "X": 273.4338,
-                  "Y": 30.2621
+                  "Y": 34.2621
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -357,7 +363,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.7196,
-                  "Y": 0.2522
+                  "Y": 0.2855
                 },
                 "PreSize": {
                   "X": 0.0947,
@@ -365,8 +371,8 @@
                 },
                 "LeftMargin": 255.4338,
                 "RightMargin": 88.5662,
-                "TopMargin": 80.7379,
-                "BottomMargin": 21.2621,
+                "TopMargin": 76.7379,
+                "BottomMargin": 25.2621,
                 "Tag": 127,
                 "ActionTag": -822372138,
                 "Size": {
@@ -480,9 +486,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "mainUI/empty.png",
+        "mainUI/stage_icon.png",
         "mainUI/star0.png",
-        "mainUI/title_bg3.png",
-        "ui/enemyicon.png"
+        "mainUI/title_bg3.png"
       ],
       "ctype": "GameFileData"
     }
