@@ -91,62 +91,65 @@ var TopPanel = cc.Node.extend({
         this.stage_icon = root.getChildByName('stage_icon');
         var stageListRoot = root.getChildByName('enemyList').getChildByName('root');
         this.prev_stage_icon = stageListRoot.getChildByName("enemy_icon1");
+        this.prev_stage_arrow = stageListRoot.getChildByName("star1");
         this.current_stage_icon = stageListRoot.getChildByName("enemy_icon2");
         this.next_stage_icon = stageListRoot.getChildByName("enemy_icon3");
-        this.prev_stage_num = stageListRoot.getChildByName("level_txt1");
-        this.current_stage_num = stageListRoot.getChildByName("level_txt2");
-        this.next_stage_num = stageListRoot.getChildByName("level_txt3");
+        this.prev_stage_num = stageListRoot.getChildByName("level_text1");
+        this.current_stage_num = stageListRoot.getChildByName("level_text2");
+        this.next_stage_num = stageListRoot.getChildByName("level_text3");
         this.state = TopPanel.STATE_NORMAL_BATTLE;
 
         var self = this;
         // register battle custom event
-        this.battleStateChangeListener = cc.EventListener.create({
-            event: cc.EventListener.CUSTOM,
-            eventName: CUSTOM_EVENT_NAME.BATTLE_START_EVENT,
-            callback: function (event) {
-                self.refreshStageState(event.getUserData(), player.getBattleNumOfStage(), player.getStageData().getRandomBattleCount());
-            }
+        customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
+            self.refreshStageState(event.getUserData(), player.stage_battle_num, PlayerData.getStageData().getRandomBattleCount());
+            self.refreshStageList();
         });
-        cc.eventManager.addListener(this.battleStateChangeListener, 1);
 
+        bindButtonCallback(this.fightBossBtn, function () {
+            customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
+        });
+        bindButtonCallback(this.leaveBossBtn, function () {
+            customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+        });
         //var event = new cc.EventCustom(BATTLE_CUSTOM_EVENT.BATTLE_START);
         //event.setUserData(selfPointer._item1Count.toString());
         //cc.eventManager.dispatchEvent(event);
 
 
         this.refreshPlayerDiamondText = function () {
-            this.playerDiamondText.setString(player.getGem());
+            this.playerDiamondText.setString(player.gem);
         };
         this.refreshPlayerRelicText = function () {
-            this.playerRelicText.setString(player.getRelic());
+            this.playerRelicText.setString(player.relic);
         };
         this.refreshStageState = function (bossBattle, cur, max) {
 
             // 根据当前stage的battle状态设置gui状态
             if (bossBattle) {
-                this.state = BattlePanel.STATE_BOSS_BATTLE;
+                this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
             } else {
-                if (cur >= max - 1) {
-                    this.state = BattlePanel.STATE_BOSS_READY;
+                if (cur > max) {
+                    this.state = BATTLE_STATE.STATE_BOSS_READY;
                 } else {
-                    this.state = BattlePanel.STATE_NORMAL_BATTLE;
+                    this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
                 }
             }
             // 根据gui状态控制各个控件的可见性
-            if (this.state === BattlePanel.STATE_NORMAL_BATTLE) {
-                this.battleNumText.setString((cur + 1) + '/' + max);
+            if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
+                this.battleNumText.setString(cur + '/' + max);
                 this.leaveBossBtn.setVisible(false);
                 this.fightBossBtn.setVisible(false);
                 this.battleNumText.setVisible(true);
                 this.stageNumText_bg.setVisible(true);
                 this.stage_icon.setVisible(true);
-            } else if (this.state === BattlePanel.STATE_BOSS_BATTLE) {
+            } else if (this.state === BATTLE_STATE.STATE_BOSS_BATTLE) {
                 this.leaveBossBtn.setVisible(true);
                 this.fightBossBtn.setVisible(false);
                 this.battleNumText.setVisible(false);
                 this.stageNumText_bg.setVisible(false);
                 this.stage_icon.setVisible(false);
-            } else if (this.state === BattlePanel.STATE_BOSS_READY) {
+            } else if (this.state === BATTLE_STATE.STATE_BOSS_READY) {
                 this.leaveBossBtn.setVisible(false);
                 this.fightBossBtn.setVisible(true);
                 this.battleNumText.setVisible(false);
@@ -154,26 +157,50 @@ var TopPanel = cc.Node.extend({
                 this.stage_icon.setVisible(false);
             }
         };
-        this.updateStageList = function () {
-
+        this.refreshStageList = function () {
+            var preStageId = PlayerData.getStageData().getPrevStageId();
+            if (preStageId) {
+                var preStage = new Stage(preStageId);
+                this.loadStageIcon(preStage, this.prev_stage_icon);
+                this.prev_stage_num.setString(preStage.getStageNum());
+                this.prev_stage_arrow.setVisible(true);
+            } else {
+                this.prev_stage_arrow.setVisible(false);
+            }
+            this.loadStageIcon(PlayerData.getStageData(), this.current_stage_icon);
+            this.current_stage_num.setString(PlayerData.getStageData().getStageNum());
+            var nextStageId = PlayerData.getStageData().getNextStageId();
+            if (nextStageId) {
+                var nextStage = new Stage(nextStageId);
+                this.loadStageIcon(nextStage, this.next_stage_icon);
+                this.next_stage_num.setString(nextStage.getStageNum());
+            }
         };
+        this.loadStageIcon = function (stage, stageIconWidget) {
+            var icon_image_url = "res/stages/" + stage.getIcon();
+            stageIconWidget.loadTexture(icon_image_url, ccui.Widget.LOCAL_TEXTURE);
+        };
+
         this.refreshAll = function () {
-            var stage = player.getStageData();
+            var stage = PlayerData.getStageData();
             var cur = player.stage_battle_num;
             var max = stage.getRandomBattleCount();
             this.refreshPlayerDiamondText();
             this.refreshPlayerRelicText();
             this.refreshStageState();
-            this.updateStageList();
+            this.refreshStageList();
         };
     }
 });
 
-var BattlePanel = cc.Node.extend({
-
+var BATTLE_STATE = {
     STATE_NORMAL_BATTLE: 0,
     STATE_BOSS_BATTLE: 1,
     STATE_BOSS_READY: 2,
+};
+
+
+var BattlePanel = cc.Node.extend({
 
     ctor: function () {
         this._super();
@@ -183,6 +210,7 @@ var BattlePanel = cc.Node.extend({
 
 
         var battleLayer = ccs.csLoader.createNode(res.battle_layer_json);
+        this.height = battleLayer.height;
         this.addChild(battleLayer);
 
 
@@ -261,7 +289,15 @@ var BattlePanel = cc.Node.extend({
         }
 
         this.bossBattle = false;
-
+        var self = this;
+        customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
+            self.bossBattle = true;
+            self.prepareBattle(PlayerData.getStageData());
+        });
+        customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
+            self.bossBattle = false;
+            self.prepareBattle(PlayerData.getStageData());
+        });
         this.bindPlayerTapEvent();
     },
 
@@ -276,14 +312,14 @@ var BattlePanel = cc.Node.extend({
     onPlayerTap: function () {
         var target = this.findNextEnemy();
         if (target) {
-            target.doDamage(player.getHit());
+            target.doDamage(PlayerData.getTotalHit());
         }
     },
 
     initBattleHeroes: function () {
-        for (var i = 0; i < player.getHeroCount(); i++) {
-            var data = player.getHeroData(i);
-            var hero = new HeroUnit(this, data);
+        for (var i = 0; i < player.heroes.length; i++) {
+            var data = PlayerData.getHeroesData(i);
+            var hero = new HeroUnit(this, data, player.heroes[i].life);
             this.heroSprites.push(hero);
             this.setHeroSprite(hero, i);
         }
@@ -334,35 +370,34 @@ var BattlePanel = cc.Node.extend({
         this.loadStageBackground(stage);
         this.initBattleHeroes();
         this.updateBattleHeroes();
-        this.initBattleEnemies(stage);
-        this.updateEnemyLife();
-        this.notifyUpdateTopPanelStageState();
+        this.prepareBattle(stage);
     },
 
     notifyUpdateTopPanelStageState: function () {
-        var event = new cc.EventCustom(CUSTOM_EVENT_NAME.BATTLE_START_EVENT);
-        event.setUserData(this.bossBattle);
-        cc.eventManager.dispatchEvent(event);
+        customEventHelper.sendEvent(EVENT.BATTLE_START, this.bossBattle)
     },
 
-    onRandomBattleWin: function () {
+    onBattleWin: function () {
         if (this.bossBattle) {
-            player.stage_battle_num = 1;
             this.bossBattle = false;
-            player.getStageData().goToNext();
+            player.stage_battle_num = 1;
+            PlayerData.getStageData().goToNext();
+            player.stage = PlayerData.getStageData().getId();
+            this.loadStageBackground(PlayerData.getStageData());
         } else {
-            if (this.isLastRandomBattle()) {
-                if (player.isAutoBossBattle()) {
-                    this.bossBattle = true;
-                }
+            if (this.couldFightBossBattle()) {
+                this.bossBattle = true;
             } else {
-                player.stage_battle_num += 1;
                 this.bossBattle = false;
             }
+            player.stage_battle_num += 1;
         }
-        var stageData = player.getStageData();
-        this.loadStageBackground(stageData);
-        this.initBattleEnemies(stageData);
+        this.prepareBattle(PlayerData.getStageData())
+        PlayerData.updatePlayer();
+    },
+
+    prepareBattle: function (stage) {
+        this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
     },
@@ -378,7 +413,7 @@ var BattlePanel = cc.Node.extend({
     },
 
     onEnemyDead: function (enemy) {
-        player.changeBonus(enemy.getBonus());
+        PlayerData.consumeResource(enemy.getBonus());
         //this.updatePlayerGoldText();
         //this.updateTopPanel();
     },
@@ -386,12 +421,12 @@ var BattlePanel = cc.Node.extend({
     onEnemyVanish: function (enemy) {
         var win = this.checkBattleWin();
         if (win) {
-            this.onRandomBattleWin();
+            this.onBattleWin();
         }
     },
 
-    isLastRandomBattle: function () {
-        return player.stage_battle_num >= player.getStageData().getRandomBattleCount() - 1;
+    couldFightBossBattle: function () {
+        return player.stage_battle_num === PlayerData.getStageData().getRandomBattleCount();
     },
 
 });
@@ -404,6 +439,9 @@ var TabContainer = cc.Node.extend({
 
         this.menuLayer = ccs.csLoader.createNode(res.menu_layer_json);
         this.addChild(this.menuLayer);
+
+        // for measure the container height
+        this.height = this.menuLayer.height;
         var root = this.menuLayer.getChildByName('root');
         var menuParams = [
             {name: "main", click: "onMainClick"},
@@ -471,28 +509,13 @@ var TabContainer = cc.Node.extend({
     }
 });
 
-var CUSTOM_EVENT_NAME = {
-
-    BATTLE_START_EVENT: "BATTLE_START",
-    BATTLE_WIN_EVENT: "BATTLE_WIN",
-
-};
 
 var MainScene = cc.Scene.extend({
 
     onEnter: function () {
         this._super();
 
-        //battle panel
         this.battlePanel = new BattlePanel(this);
-        this.battlePanel.setPosition(0, 100);
-        this.addChild(this.battlePanel);
-
-        //top panel
-        this.topPanel = new TopPanel(this);
-        this.topPanel.setPosition(0, 850);
-        this.addChild(this.topPanel);
-        this.topPanel.refreshAll();
 
         //tab container
         this.tabContainer = new TabContainer(this.battlePanel);
@@ -500,10 +523,19 @@ var MainScene = cc.Scene.extend({
         this.addChild(this.tabContainer);
         this.tabContainer.updatePlayerGoldText();
 
+        //battle panel
+        this.battlePanel.setPosition(0, this.tabContainer.height);
+        this.addChild(this.battlePanel);
+
+        //top panel
+        this.topPanel = new TopPanel(this);
+        this.topPanel.setPosition(0, this.tabContainer.height + this.battlePanel.height);
+        this.addChild(this.topPanel);
+        this.topPanel.refreshAll();
 
         this.tabContainer.showMenuLayer('main');
 
-        this.battlePanel.initBattle(player.getStageData());
+        this.battlePanel.initBattle(PlayerData.getStageData());
 
     }
 });

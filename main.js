@@ -47,8 +47,8 @@
  *
  */
 
-cc.game.onStart = function(){
-    if(!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+cc.game.onStart = function () {
+    if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
         document.body.removeChild(document.getElementById("cocosLoading"));
 
     // Pass true to enable retina display, disabled by default to improve performance
@@ -62,14 +62,7 @@ cc.game.onStart = function(){
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        initDatas();
-        initGame();
-        initSpriteFrames();
-        loadGame(function(){
-          showCover();
-        });
-
-
+        showCover();
     }, this);
 };
 cc.game.run();

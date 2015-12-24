@@ -1,28 +1,33 @@
-var Enemy = function(src){
+var Enemy = function (src) {
   var id = src.id;
   var lv = src.lv;
-  var data = datas.enemys[id];
-  return {
-    getId:function(){
-      return id;
-    },
-    getLv:function(){
-      return lv;
-    },
-    getName:function(){
-      return data.name;
-    },
-    img:function(){
-      return data.img;
-    },
-    getLife:function(){
-      return data.life_base + data.life_grow * (lv-1);
-    },
-    getAttack:function(){
-      return data.attack_base + data.attack_grow * (lv-1);
-    },
-    getAnimateDelay:function(){
-      return data.animate;
-    }
-  };
+  var data = dataSource.enemys[id];
+
+  this.getId = function () {
+    return id;
+  }
+  this.getLv = function () {
+    return lv;
+  }
+  this.getName = function () {
+    return data.name;
+  }
+  this.getFile = function () {
+    return data.file;
+  }
+  this.getLife = function () {
+    return getLevelData(data, "life", lv);
+  }
+  this.getAttack = function () {
+    return getLevelData(data, "attack", lv);
+  }
+  this.getAnimateDelay = function () {
+    var val = getLevelData(data, "atk_period", lv);
+    return val;
+  }
+  this.getBonus = function () {
+    return getLevelData(data, "bonus", lv);
+  }
 }
+
+

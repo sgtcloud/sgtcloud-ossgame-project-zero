@@ -1,20 +1,8 @@
-var player
 var game;
 
-
-function loadGame(callback, context) {
-    cc.loader.load(["res/data/record.json"], function (err, data) {
-        player = new Player(data[0]);
-
-        // console.log(datas.heros);
-        callback.call(context);
-    });
-}
 function initGame() {
     game = new MainScene();
-}
-
-function initSpriteFrames() {
+    PlayerData.init();
 }
 
 function showCover() {
@@ -22,15 +10,15 @@ function showCover() {
 
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
     bindButtonCallback(loginBtn, function () {
+        initDatas();
+        initGame();
         showGame();
     });
-
     cc.director.runScene(scene);
 }
 function showGame() {
     cc.director.runScene(game);
 }
-
 
 function bindButtonCallback(button, callback) {
     button.addTouchEventListener(function (sender, type) {

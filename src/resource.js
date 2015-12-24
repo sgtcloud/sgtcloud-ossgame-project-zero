@@ -1,10 +1,9 @@
-
 var res_datas = {
     stages_json: "res/data/stages.json",
     heroes_json: "res/data/heroes.json",
     enemies_json: "res/data/enemies.json",
     equips_json: "res/data/equips.json",
-    skills_json: "res/data/skills.json"
+    skills_json: "res/data/skills.json",
 };
 var res = {
     cover_scene_json: "res/cover.json",

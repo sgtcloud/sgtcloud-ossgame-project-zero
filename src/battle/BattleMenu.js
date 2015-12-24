@@ -69,7 +69,7 @@ var SkillListMenu = BattleMenu.extend({
         for (var i = 0; i < 7; i++) {
             var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
             var skill = new SkkillIcon(battlePanel, pane, i);
-            if (i < player.getHeroCount()) {
+            if (i < player.heroes.length) {
                 skill.setVisible(true);
             } else {
                 skill.setVisible(false);
@@ -187,8 +187,8 @@ var HeroListMenu = BattleMenu.extend({
 
         this.views = {};
         {//填充英雄的列表 循环填充英雄+技能
-            for (var i = 0; i < player.getHeroCount(); i++) {
-                var heroData = player.getHeroData(i);
+            for (var i = 0; i < player.heroes.length; i++) {
+                var heroData = PlayerData.getHeroesData(i);
                 var _heroView = buildHeroView(heroData);
                 this.heroList.addChild(_heroView);
 
@@ -251,8 +251,8 @@ var EquipListMenu = BattleMenu.extend({
         this.views = {};
         {
 
-            for (var i = 0; i < player.getHeroCount(); i++) {
-                var heroData = player.getHeroData(i);
+            for (var i = 0; i < player.heroes.length; i++) {
+                var heroData = PlayerData.getHeroesData(i);
                 var _heroView = buildHeroView(heroData);
                 this.heroList.addChild(_heroView);
 

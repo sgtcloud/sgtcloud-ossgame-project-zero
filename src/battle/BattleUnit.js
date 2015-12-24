@@ -31,7 +31,6 @@ var BattleUnit = cc.Node.extend({
         this._super();
         this.battle = battle;
         this.data = data;
-        this.camp = camp;
         this.animateTime = 0;
         this.animateState = 'stand';
         var json = ccs.load(res[this.data.getFile()]);
@@ -61,7 +60,7 @@ var BattleUnit = cc.Node.extend({
 
         {//data
             this.attack = data.getAttack();
-            this.life = data.getLife();
+            this.life = life;
             //设置生命值
             this.changeLife = function (val) {
                 this.life += val;
@@ -175,7 +174,7 @@ var BattleUnit = cc.Node.extend({
 
 //英雄扩展类
 var HeroUnit = BattleUnit.extend({
-    ctor: function (battle, data) {
+    ctor: function (battle, data, life) {
         this._super(battle, data, BattleConsts.Camp.Player);
         //this.setScale(UNIT_SCALE,UNIT_SCALE);
         this.recover = 0;
@@ -242,6 +241,7 @@ var HeroUnit = BattleUnit.extend({
         this.isActive = function () {
             return !data.isLocked();
         }
+        this.refreshLifeBar();
     }
 });
 
