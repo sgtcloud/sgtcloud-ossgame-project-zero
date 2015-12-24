@@ -19,7 +19,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="bloodUI/blood_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" ProgressInfo="50" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="100.0000" Y="2.0000" />
                 <AnchorPoint />
                 <Position />

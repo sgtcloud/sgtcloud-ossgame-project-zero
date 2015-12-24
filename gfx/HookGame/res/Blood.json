@@ -92,7 +92,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "ProgressInfo": 50,
+                "ProgressInfo": 100,
                 "ImageFileData": {
                   "Type": "Normal",
                   "Path": "bloodUI/blood_bar.png",
