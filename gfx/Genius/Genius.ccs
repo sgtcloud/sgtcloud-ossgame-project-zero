@@ -144,33 +144,35 @@
         </Folder>
         <Folder Name="hero">
           <Folder Name="hero101">
-            <Image Name="hero101_atk01.png" />
-            <Image Name="hero101_atk02.png" />
-            <Image Name="hero101_atk03.png" />
-            <Image Name="hero101_atk04.png" />
-            <Image Name="hero101_atk05.png" />
-            <Image Name="hero101_atk06.png" />
-            <Image Name="hero101_atk07.png" />
-            <Image Name="hero101_atk08.png" />
-            <Image Name="hero101_die01.png" />
-            <Image Name="hero101_die02.png" />
-            <Image Name="hero101_die03.png" />
-            <Image Name="hero101_die04.png" />
-            <Image Name="hero101_die05.png" />
-            <Image Name="hero101_hit01.png" />
-            <Image Name="hero101_hit02.png" />
-            <Image Name="hero101_hit03.png" />
-            <Image Name="hero101_hit04.png" />
-            <Image Name="hero101_hit05.png" />
-            <Image Name="hero101_stand01.png" />
-            <Image Name="hero101_stand02.png" />
-            <Image Name="hero101_stand03.png" />
-            <Image Name="hero101_stand04.png" />
-            <Image Name="hero101_dead01.png" />
-            <Image Name="hero101_skill01.png" />
-            <Image Name="hero101_skill02.png" />
-            <Image Name="hero101_skill03.png" />
-            <Image Name="hero101_skill04.png" />
+            <PlistImageFolder Image="hero101.png" PListFile="hero101.plist" Name=".hero101_PList.Dir">
+              <PlistImageFile Name="hero_hero101_hero101_atk01.png" Key="hero/hero101/hero101_atk01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk02.png" Key="hero/hero101/hero101_atk02.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk03.png" Key="hero/hero101/hero101_atk03.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk04.png" Key="hero/hero101/hero101_atk04.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk05.png" Key="hero/hero101/hero101_atk05.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk06.png" Key="hero/hero101/hero101_atk06.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk07.png" Key="hero/hero101/hero101_atk07.png" />
+              <PlistImageFile Name="hero_hero101_hero101_atk08.png" Key="hero/hero101/hero101_atk08.png" />
+              <PlistImageFile Name="hero_hero101_hero101_dead01.png" Key="hero/hero101/hero101_dead01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_die01.png" Key="hero/hero101/hero101_die01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_die02.png" Key="hero/hero101/hero101_die02.png" />
+              <PlistImageFile Name="hero_hero101_hero101_die03.png" Key="hero/hero101/hero101_die03.png" />
+              <PlistImageFile Name="hero_hero101_hero101_die04.png" Key="hero/hero101/hero101_die04.png" />
+              <PlistImageFile Name="hero_hero101_hero101_die05.png" Key="hero/hero101/hero101_die05.png" />
+              <PlistImageFile Name="hero_hero101_hero101_hit01.png" Key="hero/hero101/hero101_hit01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_hit02.png" Key="hero/hero101/hero101_hit02.png" />
+              <PlistImageFile Name="hero_hero101_hero101_hit03.png" Key="hero/hero101/hero101_hit03.png" />
+              <PlistImageFile Name="hero_hero101_hero101_hit04.png" Key="hero/hero101/hero101_hit04.png" />
+              <PlistImageFile Name="hero_hero101_hero101_hit05.png" Key="hero/hero101/hero101_hit05.png" />
+              <PlistImageFile Name="hero_hero101_hero101_skill01.png" Key="hero/hero101/hero101_skill01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_skill02.png" Key="hero/hero101/hero101_skill02.png" />
+              <PlistImageFile Name="hero_hero101_hero101_skill03.png" Key="hero/hero101/hero101_skill03.png" />
+              <PlistImageFile Name="hero_hero101_hero101_skill04.png" Key="hero/hero101/hero101_skill04.png" />
+              <PlistImageFile Name="hero_hero101_hero101_stand01.png" Key="hero/hero101/hero101_stand01.png" />
+              <PlistImageFile Name="hero_hero101_hero101_stand02.png" Key="hero/hero101/hero101_stand02.png" />
+              <PlistImageFile Name="hero_hero101_hero101_stand03.png" Key="hero/hero101/hero101_stand03.png" />
+              <PlistImageFile Name="hero_hero101_hero101_stand04.png" Key="hero/hero101/hero101_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="hero102">
             <Image Name="hero102_atk01.png" />
@@ -342,6 +344,7 @@
         <Project Name="hero104.csd" Type="Node" />
         <Project Name="hero105.csd" Type="Node" />
         <Project Name="effect5000.csd" Type="Node" />
+        <PlistInfo Name="hero101.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

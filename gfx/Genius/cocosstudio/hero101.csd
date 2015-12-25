@@ -88,85 +88,85 @@
         </Timeline>
         <Timeline ActionTag="1587691588" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk02.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk02.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk03.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk04.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk04.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk05.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk05.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk06.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk06.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk07.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk07.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk08.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_atk08.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_die01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_die01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_die02.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_die02.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="30" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_die03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_die03.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="33" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_die04.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_die04.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="36" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_die05.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_die05.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="39" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="42" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit02.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit02.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit03.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="48" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit04.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit04.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="51" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit05.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_hit05.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="54" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="57" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand02.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand02.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="60" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand03.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="63" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand04.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_stand04.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="64" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_dead01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_dead01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="66" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill01.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill01.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="69" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill02.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill02.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="72" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill03.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="75" Tween="False">
-            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill04.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero/hero101/hero101_skill04.png" PListFile="hero/hero101/hero101.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -201,7 +201,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero/hero101/hero101_skill04.png" Plist="" />
+            <FileData Type="Normal" Path="hero/hero101/hero101_skill04.png" PListFile="hero/hero101/hero101.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
