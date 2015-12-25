@@ -28,5 +28,21 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="enemy1001.csi" />
+          <FilePathData Path="enemy1002.csi" />
+          <FilePathData Path="enemy1003.csi" />
+          <FilePathData Path="enemy1004.csi" />
+          <FilePathData Path="enemy1005.csi" />
+          <FilePathData Path="hero103.csi" />
+          <FilePathData Path="hero104.csi" />
+          <FilePathData Path="hero105.csi" />
+          <FilePathData Path="hero102.csi" />
+        </OpenedDocuments>
+        <ActiveDocument Path="hero105.csi" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 60,
-        "Speed": 0.5,
+        "Speed": 0.4,
         "Timelines": [
           {
             "ActionTag": 403222838,
@@ -174,9 +174,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk01.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -184,9 +184,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk02.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -194,9 +194,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk03.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -204,9 +204,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk04.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -214,9 +214,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk05.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -224,9 +224,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk06.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -234,9 +234,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_atk07.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -244,9 +244,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_die01.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -254,9 +254,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_die02.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -264,9 +264,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_die03.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -274,9 +274,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_die04.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -284,9 +284,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_die05.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 33,
                 "Tween": false,
@@ -294,9 +294,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_hit01.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 36,
                 "Tween": false,
@@ -304,9 +304,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_hit02.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 39,
                 "Tween": false,
@@ -314,9 +314,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_hit03.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 42,
                 "Tween": false,
@@ -324,9 +324,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_hit04.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 45,
                 "Tween": false,
@@ -334,9 +334,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_hit05.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 48,
                 "Tween": false,
@@ -344,9 +344,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_stand01.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 51,
                 "Tween": false,
@@ -354,9 +354,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_stand02.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 54,
                 "Tween": false,
@@ -364,9 +364,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_stand03.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 57,
                 "Tween": false,
@@ -374,9 +374,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1003/enemy1003_stand04.png",
-                  "Plist": ""
+                  "Plist": "enemy1003.plist"
                 },
                 "FrameIndex": 60,
                 "Tween": false,
@@ -435,9 +435,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "enemy/enemy1003/enemy1003_stand04.png",
-              "Plist": ""
+              "Type": "MarkedSubImage",
+              "Path": "enemy/enemy1003/enemy1003_atk01.png",
+              "Plist": "enemy1003.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -447,8 +447,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": 13.0783,
-              "Y": -22.9526
+              "X": 10.8391,
+              "Y": -25.2224
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -464,15 +464,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -34.9217,
-            "RightMargin": -61.0783,
-            "TopMargin": -68.0474,
-            "BottomMargin": -22.9526,
+            "LeftMargin": -38.6609,
+            "RightMargin": -60.3391,
+            "TopMargin": -67.7776,
+            "BottomMargin": -25.2224,
             "Tag": 11,
             "ActionTag": 403222838,
             "Size": {
-              "X": 96.0,
-              "Y": 91.0
+              "X": 99.0,
+              "Y": 93.0
             },
             "Name": "enemy1003",
             "ctype": "SpriteObjectData"
@@ -486,27 +486,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "enemy/enemy1003/enemy1003_atk01.png",
-        "enemy/enemy1003/enemy1003_atk02.png",
-        "enemy/enemy1003/enemy1003_atk03.png",
-        "enemy/enemy1003/enemy1003_atk04.png",
-        "enemy/enemy1003/enemy1003_atk05.png",
-        "enemy/enemy1003/enemy1003_atk06.png",
-        "enemy/enemy1003/enemy1003_atk07.png",
-        "enemy/enemy1003/enemy1003_die01.png",
-        "enemy/enemy1003/enemy1003_die02.png",
-        "enemy/enemy1003/enemy1003_die03.png",
-        "enemy/enemy1003/enemy1003_die04.png",
-        "enemy/enemy1003/enemy1003_die05.png",
-        "enemy/enemy1003/enemy1003_hit01.png",
-        "enemy/enemy1003/enemy1003_hit02.png",
-        "enemy/enemy1003/enemy1003_hit03.png",
-        "enemy/enemy1003/enemy1003_hit04.png",
-        "enemy/enemy1003/enemy1003_hit05.png",
-        "enemy/enemy1003/enemy1003_stand01.png",
-        "enemy/enemy1003/enemy1003_stand02.png",
-        "enemy/enemy1003/enemy1003_stand03.png",
-        "enemy/enemy1003/enemy1003_stand04.png"
+        "enemy1003.plist",
+        "enemy1003.png"
       ],
       "ctype": "GameFileData"
     }

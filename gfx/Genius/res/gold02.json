@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 3,
-        "Speed": 0.3333,
+        "Speed": 0.4,
         "Timelines": [
           {
             "ActionTag": 1236783160,
@@ -77,7 +77,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "gold/gold02/gold02_shine02.png",
+              "Path": "gold/gold02/gold02_shine01.png",
               "Plist": "gold02.plist"
             },
             "BlendFunc": {

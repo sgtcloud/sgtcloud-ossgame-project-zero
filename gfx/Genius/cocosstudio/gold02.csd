@@ -2,7 +2,7 @@
   <PropertyGroup Name="gold02" Type="Node" ID="6e13232f-c017-40ad-ac57-6c491e0c505c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="3" Speed="0.3333">
+      <Animation Duration="3" Speed="0.4000">
         <Timeline ActionTag="1236783160" Property="Position">
           <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
             <EasingData Type="0" />
@@ -22,7 +22,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="shine" StartIndex="0" EndIndex="3">
-          <RenderColor A="150" R="253" G="245" B="230" />
+          <RenderColor A="255" R="253" G="245" B="230" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="14" ctype="GameNodeObjectData">
@@ -36,7 +36,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="gold/gold02/gold02_shine02.png" Plist="gold02.plist" />
+            <FileData Type="MarkedSubImage" Path="gold/gold02/gold02_shine01.png" Plist="gold02.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

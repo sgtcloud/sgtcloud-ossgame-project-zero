@@ -3,9 +3,6 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="enemy1001.csd" Type="Node" />
-        <Project Name="hero102.csd" Type="Node" />
-        <Project Name="hero103.csd" Type="Node" />
         <Folder Name="enemy">
           <Folder Name="enemy1001">
             <Image Name="enemy1001_atk01.png" />
@@ -29,6 +26,29 @@
             <Image Name="enemy1001_stand02.png" />
             <Image Name="enemy1001_stand03.png" />
             <Image Name="enemy1001_stand04.png" />
+            <PlistImageFolder Image="enemy1001.png" PListFile="enemy1001.plist" Name=".enemy1001_PList.Dir">
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk01.png" Key="enemy/enemy1001/enemy1001_atk01.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk02.png" Key="enemy/enemy1001/enemy1001_atk02.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk03.png" Key="enemy/enemy1001/enemy1001_atk03.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk04.png" Key="enemy/enemy1001/enemy1001_atk04.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk05.png" Key="enemy/enemy1001/enemy1001_atk05.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk06.png" Key="enemy/enemy1001/enemy1001_atk06.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_atk07.png" Key="enemy/enemy1001/enemy1001_atk07.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_die01.png" Key="enemy/enemy1001/enemy1001_die01.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_die02.png" Key="enemy/enemy1001/enemy1001_die02.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_die03.png" Key="enemy/enemy1001/enemy1001_die03.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_die04.png" Key="enemy/enemy1001/enemy1001_die04.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_die05.png" Key="enemy/enemy1001/enemy1001_die05.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_hit01.png" Key="enemy/enemy1001/enemy1001_hit01.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_hit02.png" Key="enemy/enemy1001/enemy1001_hit02.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_hit03.png" Key="enemy/enemy1001/enemy1001_hit03.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_hit04.png" Key="enemy/enemy1001/enemy1001_hit04.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_hit05.png" Key="enemy/enemy1001/enemy1001_hit05.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_stand01.png" Key="enemy/enemy1001/enemy1001_stand01.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_stand02.png" Key="enemy/enemy1001/enemy1001_stand02.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_stand03.png" Key="enemy/enemy1001/enemy1001_stand03.png" />
+              <PlistImageFile Name="enemy_enemy1001_enemy1001_stand04.png" Key="enemy/enemy1001/enemy1001_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="enemy1002">
             <Image Name="enemy1002_atk01.png" />
@@ -51,6 +71,28 @@
             <Image Name="enemy1002_stand02.png" />
             <Image Name="enemy1002_stand03.png" />
             <Image Name="enemy1002_stand04.png" />
+            <PlistImageFolder Image="enemy1002.png" PListFile="enemy1002.plist" Name=".enemy1002_PList.Dir">
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk01.png" Key="enemy/enemy1002/enemy1002_atk01.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk02.png" Key="enemy/enemy1002/enemy1002_atk02.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk03.png" Key="enemy/enemy1002/enemy1002_atk03.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk04.png" Key="enemy/enemy1002/enemy1002_atk04.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk05.png" Key="enemy/enemy1002/enemy1002_atk05.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk06.png" Key="enemy/enemy1002/enemy1002_atk06.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_atk07.png" Key="enemy/enemy1002/enemy1002_atk07.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_die01.png" Key="enemy/enemy1002/enemy1002_die01.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_die02.png" Key="enemy/enemy1002/enemy1002_die02.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_die03.png" Key="enemy/enemy1002/enemy1002_die03.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_die04.png" Key="enemy/enemy1002/enemy1002_die04.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_hit01.png" Key="enemy/enemy1002/enemy1002_hit01.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_hit02.png" Key="enemy/enemy1002/enemy1002_hit02.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_hit03.png" Key="enemy/enemy1002/enemy1002_hit03.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_hit04.png" Key="enemy/enemy1002/enemy1002_hit04.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_hit05.png" Key="enemy/enemy1002/enemy1002_hit05.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_stand01.png" Key="enemy/enemy1002/enemy1002_stand01.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_stand02.png" Key="enemy/enemy1002/enemy1002_stand02.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_stand03.png" Key="enemy/enemy1002/enemy1002_stand03.png" />
+              <PlistImageFile Name="enemy_enemy1002_enemy1002_stand04.png" Key="enemy/enemy1002/enemy1002_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="enemy1003">
             <Image Name="enemy1003_atk01.png" />
@@ -80,6 +122,35 @@
             <Image Name="enemy1003_stand02.png" />
             <Image Name="enemy1003_stand03.png" />
             <Image Name="enemy1003_stand04.png" />
+            <PlistImageFolder Image="enemy1003.png" PListFile="enemy1003.plist" Name=".enemy1003_PList.Dir">
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk01.png" Key="enemy/enemy1003/enemy1003_atk01.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk02.png" Key="enemy/enemy1003/enemy1003_atk02.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk03.png" Key="enemy/enemy1003/enemy1003_atk03.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk04.png" Key="enemy/enemy1003/enemy1003_atk04.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk05.png" Key="enemy/enemy1003/enemy1003_atk05.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk06.png" Key="enemy/enemy1003/enemy1003_atk06.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_atk07.png" Key="enemy/enemy1003/enemy1003_atk07.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_die01.png" Key="enemy/enemy1003/enemy1003_die01.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_die02.png" Key="enemy/enemy1003/enemy1003_die02.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_die03.png" Key="enemy/enemy1003/enemy1003_die03.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_die04.png" Key="enemy/enemy1003/enemy1003_die04.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_die05.png" Key="enemy/enemy1003/enemy1003_die05.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_hit01.png" Key="enemy/enemy1003/enemy1003_hit01.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_hit02.png" Key="enemy/enemy1003/enemy1003_hit02.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_hit03.png" Key="enemy/enemy1003/enemy1003_hit03.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_hit04.png" Key="enemy/enemy1003/enemy1003_hit04.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_hit05.png" Key="enemy/enemy1003/enemy1003_hit05.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill01.png" Key="enemy/enemy1003/enemy1003_skill01.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill02.png" Key="enemy/enemy1003/enemy1003_skill02.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill03.png" Key="enemy/enemy1003/enemy1003_skill03.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill04.png" Key="enemy/enemy1003/enemy1003_skill04.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill05.png" Key="enemy/enemy1003/enemy1003_skill05.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_skill06.png" Key="enemy/enemy1003/enemy1003_skill06.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_stand01.png" Key="enemy/enemy1003/enemy1003_stand01.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_stand02.png" Key="enemy/enemy1003/enemy1003_stand02.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_stand03.png" Key="enemy/enemy1003/enemy1003_stand03.png" />
+              <PlistImageFile Name="enemy_enemy1003_enemy1003_stand04.png" Key="enemy/enemy1003/enemy1003_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="enemy1004">
             <Image Name="enemy1004_atk01.png" />
@@ -110,6 +181,36 @@
             <Image Name="enemy1004_stand02.png" />
             <Image Name="enemy1004_stand03.png" />
             <Image Name="enemy1004_stand04.png" />
+            <PlistImageFolder Image="enemy1004.png" PListFile="enemy1004.plist" Name=".enemy1004_PList.Dir">
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk01.png" Key="enemy/enemy1004/enemy1004_atk01.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk02.png" Key="enemy/enemy1004/enemy1004_atk02.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk03.png" Key="enemy/enemy1004/enemy1004_atk03.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk04.png" Key="enemy/enemy1004/enemy1004_atk04.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk05.png" Key="enemy/enemy1004/enemy1004_atk05.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk06.png" Key="enemy/enemy1004/enemy1004_atk06.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_atk07.png" Key="enemy/enemy1004/enemy1004_atk07.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_die01.png" Key="enemy/enemy1004/enemy1004_die01.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_die02.png" Key="enemy/enemy1004/enemy1004_die02.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_die03.png" Key="enemy/enemy1004/enemy1004_die03.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_die04.png" Key="enemy/enemy1004/enemy1004_die04.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_die05.png" Key="enemy/enemy1004/enemy1004_die05.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_hit01.png" Key="enemy/enemy1004/enemy1004_hit01.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_hit02.png" Key="enemy/enemy1004/enemy1004_hit02.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_hit03.png" Key="enemy/enemy1004/enemy1004_hit03.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_hit04.png" Key="enemy/enemy1004/enemy1004_hit04.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_hit05.png" Key="enemy/enemy1004/enemy1004_hit05.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill01.png" Key="enemy/enemy1004/enemy1004_skill01.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill02.png" Key="enemy/enemy1004/enemy1004_skill02.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill03.png" Key="enemy/enemy1004/enemy1004_skill03.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill04.png" Key="enemy/enemy1004/enemy1004_skill04.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill05.png" Key="enemy/enemy1004/enemy1004_skill05.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill06.png" Key="enemy/enemy1004/enemy1004_skill06.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_skill07.png" Key="enemy/enemy1004/enemy1004_skill07.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_stand01.png" Key="enemy/enemy1004/enemy1004_stand01.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_stand02.png" Key="enemy/enemy1004/enemy1004_stand02.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_stand03.png" Key="enemy/enemy1004/enemy1004_stand03.png" />
+              <PlistImageFile Name="enemy_enemy1004_enemy1004_stand04.png" Key="enemy/enemy1004/enemy1004_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="enemy1005">
             <Image Name="enemy1005_atk01.png" />
@@ -139,6 +240,35 @@
             <Image Name="enemy1005_stand03.png" />
             <Image Name="enemy1005_stand04.png" />
             <Image Name="enemy1005_die01.png" />
+            <PlistImageFolder Image="enemy1005.png" PListFile="enemy1005.plist" Name=".enemy1005_PList.Dir">
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk01.png" Key="enemy/enemy1005/enemy1005_atk01.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk02.png" Key="enemy/enemy1005/enemy1005_atk02.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk03.png" Key="enemy/enemy1005/enemy1005_atk03.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk04.png" Key="enemy/enemy1005/enemy1005_atk04.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk05.png" Key="enemy/enemy1005/enemy1005_atk05.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk06.png" Key="enemy/enemy1005/enemy1005_atk06.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_atk07.png" Key="enemy/enemy1005/enemy1005_atk07.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_die01.png" Key="enemy/enemy1005/enemy1005_die01.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_die02.png" Key="enemy/enemy1005/enemy1005_die02.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_die03.png" Key="enemy/enemy1005/enemy1005_die03.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_die04.png" Key="enemy/enemy1005/enemy1005_die04.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_die05.png" Key="enemy/enemy1005/enemy1005_die05.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_hit01.png" Key="enemy/enemy1005/enemy1005_hit01.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_hit02.png" Key="enemy/enemy1005/enemy1005_hit02.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_hit03.png" Key="enemy/enemy1005/enemy1005_hit03.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_hit04.png" Key="enemy/enemy1005/enemy1005_hit04.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_hit05.png" Key="enemy/enemy1005/enemy1005_hit05.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill01.png" Key="enemy/enemy1005/enemy1005_skill01.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill02.png" Key="enemy/enemy1005/enemy1005_skill02.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill03.png" Key="enemy/enemy1005/enemy1005_skill03.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill04.png" Key="enemy/enemy1005/enemy1005_skill04.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill05.png" Key="enemy/enemy1005/enemy1005_skill05.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_skill06.png" Key="enemy/enemy1005/enemy1005_skill06.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_stand01.png" Key="enemy/enemy1005/enemy1005_stand01.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_stand02.png" Key="enemy/enemy1005/enemy1005_stand02.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_stand03.png" Key="enemy/enemy1005/enemy1005_stand03.png" />
+              <PlistImageFile Name="enemy_enemy1005_enemy1005_stand04.png" Key="enemy/enemy1005/enemy1005_stand04.png" />
+            </PlistImageFolder>
           </Folder>
         </Folder>
         <Folder Name="hero">
@@ -286,6 +416,34 @@
             <Image Name="hero103_skill02.png" />
             <Image Name="hero103_skill03.png" />
             <Image Name="hero103_skill04.png" />
+            <PlistImageFolder Image="hero103.png" PListFile="hero103.plist" Name=".hero103_PList.Dir">
+              <PlistImageFile Name="hero_hero103_hero103_atk01.png" Key="hero/hero103/hero103_atk01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk02.png" Key="hero/hero103/hero103_atk02.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk03.png" Key="hero/hero103/hero103_atk03.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk04.png" Key="hero/hero103/hero103_atk04.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk05.png" Key="hero/hero103/hero103_atk05.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk06.png" Key="hero/hero103/hero103_atk06.png" />
+              <PlistImageFile Name="hero_hero103_hero103_atk07.png" Key="hero/hero103/hero103_atk07.png" />
+              <PlistImageFile Name="hero_hero103_hero103_dead01.png" Key="hero/hero103/hero103_dead01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_die01.png" Key="hero/hero103/hero103_die01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_die02.png" Key="hero/hero103/hero103_die02.png" />
+              <PlistImageFile Name="hero_hero103_hero103_die03.png" Key="hero/hero103/hero103_die03.png" />
+              <PlistImageFile Name="hero_hero103_hero103_die04.png" Key="hero/hero103/hero103_die04.png" />
+              <PlistImageFile Name="hero_hero103_hero103_die05.png" Key="hero/hero103/hero103_die05.png" />
+              <PlistImageFile Name="hero_hero103_hero103_hit01.png" Key="hero/hero103/hero103_hit01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_hit02.png" Key="hero/hero103/hero103_hit02.png" />
+              <PlistImageFile Name="hero_hero103_hero103_hit03.png" Key="hero/hero103/hero103_hit03.png" />
+              <PlistImageFile Name="hero_hero103_hero103_hit04.png" Key="hero/hero103/hero103_hit04.png" />
+              <PlistImageFile Name="hero_hero103_hero103_hit05.png" Key="hero/hero103/hero103_hit05.png" />
+              <PlistImageFile Name="hero_hero103_hero103_skill01.png" Key="hero/hero103/hero103_skill01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_skill02.png" Key="hero/hero103/hero103_skill02.png" />
+              <PlistImageFile Name="hero_hero103_hero103_skill03.png" Key="hero/hero103/hero103_skill03.png" />
+              <PlistImageFile Name="hero_hero103_hero103_skill04.png" Key="hero/hero103/hero103_skill04.png" />
+              <PlistImageFile Name="hero_hero103_hero103_stand01.png" Key="hero/hero103/hero103_stand01.png" />
+              <PlistImageFile Name="hero_hero103_hero103_stand02.png" Key="hero/hero103/hero103_stand02.png" />
+              <PlistImageFile Name="hero_hero103_hero103_stand03.png" Key="hero/hero103/hero103_stand03.png" />
+              <PlistImageFile Name="hero_hero103_hero103_stand04.png" Key="hero/hero103/hero103_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="hero104">
             <Image Name="hero104_atk01.png" />
@@ -315,6 +473,35 @@
             <Image Name="hero104_stand02.png" />
             <Image Name="hero104_stand03.png" />
             <Image Name="hero104_stand04.png" />
+            <PlistImageFolder Image="hero104.png" PListFile="hero104.plist" Name=".hero104_PList.Dir">
+              <PlistImageFile Name="hero_hero104_hero104_atk01.png" Key="hero/hero104/hero104_atk01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk02.png" Key="hero/hero104/hero104_atk02.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk03.png" Key="hero/hero104/hero104_atk03.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk04.png" Key="hero/hero104/hero104_atk04.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk05.png" Key="hero/hero104/hero104_atk05.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk06.png" Key="hero/hero104/hero104_atk06.png" />
+              <PlistImageFile Name="hero_hero104_hero104_atk07.png" Key="hero/hero104/hero104_atk07.png" />
+              <PlistImageFile Name="hero_hero104_hero104_dead01.png" Key="hero/hero104/hero104_dead01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_die01.png" Key="hero/hero104/hero104_die01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_die02.png" Key="hero/hero104/hero104_die02.png" />
+              <PlistImageFile Name="hero_hero104_hero104_die03.png" Key="hero/hero104/hero104_die03.png" />
+              <PlistImageFile Name="hero_hero104_hero104_die04.png" Key="hero/hero104/hero104_die04.png" />
+              <PlistImageFile Name="hero_hero104_hero104_die05.png" Key="hero/hero104/hero104_die05.png" />
+              <PlistImageFile Name="hero_hero104_hero104_hit01.png" Key="hero/hero104/hero104_hit01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_hit02.png" Key="hero/hero104/hero104_hit02.png" />
+              <PlistImageFile Name="hero_hero104_hero104_hit03.png" Key="hero/hero104/hero104_hit03.png" />
+              <PlistImageFile Name="hero_hero104_hero104_hit04.png" Key="hero/hero104/hero104_hit04.png" />
+              <PlistImageFile Name="hero_hero104_hero104_hit05.png" Key="hero/hero104/hero104_hit05.png" />
+              <PlistImageFile Name="hero_hero104_hero104_skill01.png" Key="hero/hero104/hero104_skill01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_skill02.png" Key="hero/hero104/hero104_skill02.png" />
+              <PlistImageFile Name="hero_hero104_hero104_skill03.png" Key="hero/hero104/hero104_skill03.png" />
+              <PlistImageFile Name="hero_hero104_hero104_skill04.png" Key="hero/hero104/hero104_skill04.png" />
+              <PlistImageFile Name="hero_hero104_hero104_skill05.png" Key="hero/hero104/hero104_skill05.png" />
+              <PlistImageFile Name="hero_hero104_hero104_stand01.png" Key="hero/hero104/hero104_stand01.png" />
+              <PlistImageFile Name="hero_hero104_hero104_stand02.png" Key="hero/hero104/hero104_stand02.png" />
+              <PlistImageFile Name="hero_hero104_hero104_stand03.png" Key="hero/hero104/hero104_stand03.png" />
+              <PlistImageFile Name="hero_hero104_hero104_stand04.png" Key="hero/hero104/hero104_stand04.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="hero105">
             <Image Name="hero105_atk01.png" />
@@ -345,6 +532,36 @@
             <Image Name="hero105_stand02.png" />
             <Image Name="hero105_stand03.png" />
             <Image Name="hero105_stand04.png" />
+            <PlistImageFolder Image="hero105.png" PListFile="hero105.plist" Name=".hero105_PList.Dir">
+              <PlistImageFile Name="hero_hero105_hero105_atk01.png" Key="hero/hero105/hero105_atk01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk02.png" Key="hero/hero105/hero105_atk02.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk03.png" Key="hero/hero105/hero105_atk03.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk04.png" Key="hero/hero105/hero105_atk04.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk05.png" Key="hero/hero105/hero105_atk05.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk06.png" Key="hero/hero105/hero105_atk06.png" />
+              <PlistImageFile Name="hero_hero105_hero105_atk07.png" Key="hero/hero105/hero105_atk07.png" />
+              <PlistImageFile Name="hero_hero105_hero105_dead01.png" Key="hero/hero105/hero105_dead01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_die01.png" Key="hero/hero105/hero105_die01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_die02.png" Key="hero/hero105/hero105_die02.png" />
+              <PlistImageFile Name="hero_hero105_hero105_die03.png" Key="hero/hero105/hero105_die03.png" />
+              <PlistImageFile Name="hero_hero105_hero105_die04.png" Key="hero/hero105/hero105_die04.png" />
+              <PlistImageFile Name="hero_hero105_hero105_die05.png" Key="hero/hero105/hero105_die05.png" />
+              <PlistImageFile Name="hero_hero105_hero105_hit01.png" Key="hero/hero105/hero105_hit01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_hit02.png" Key="hero/hero105/hero105_hit02.png" />
+              <PlistImageFile Name="hero_hero105_hero105_hit03.png" Key="hero/hero105/hero105_hit03.png" />
+              <PlistImageFile Name="hero_hero105_hero105_hit04.png" Key="hero/hero105/hero105_hit04.png" />
+              <PlistImageFile Name="hero_hero105_hero105_hit05.png" Key="hero/hero105/hero105_hit05.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill01.png" Key="hero/hero105/hero105_skill01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill02.png" Key="hero/hero105/hero105_skill02.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill03.png" Key="hero/hero105/hero105_skill03.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill04.png" Key="hero/hero105/hero105_skill04.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill05.png" Key="hero/hero105/hero105_skill05.png" />
+              <PlistImageFile Name="hero_hero105_hero105_skill06.png" Key="hero/hero105/hero105_skill06.png" />
+              <PlistImageFile Name="hero_hero105_hero105_stand01.png" Key="hero/hero105/hero105_stand01.png" />
+              <PlistImageFile Name="hero_hero105_hero105_stand02.png" Key="hero/hero105/hero105_stand02.png" />
+              <PlistImageFile Name="hero_hero105_hero105_stand03.png" Key="hero/hero105/hero105_stand03.png" />
+              <PlistImageFile Name="hero_hero105_hero105_stand04.png" Key="hero/hero105/hero105_stand04.png" />
+            </PlistImageFolder>
           </Folder>
         </Folder>
         <Folder Name="effect">
@@ -369,6 +586,28 @@
             <Image Name="effect5000_d03.png" />
             <Image Name="effect5000_d04.png" />
             <Image Name="effect5000_d05.png" />
+            <PlistImageFolder Image="effect5000.png" PListFile="effect5000.plist" Name=".effect5000_PList.Dir">
+              <PlistImageFile Name="effect_effect5000_effect5000_a01.png" Key="effect/effect5000/effect5000_a01.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_a02.png" Key="effect/effect5000/effect5000_a02.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_a03.png" Key="effect/effect5000/effect5000_a03.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_a04.png" Key="effect/effect5000/effect5000_a04.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_a05.png" Key="effect/effect5000/effect5000_a05.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_b01.png" Key="effect/effect5000/effect5000_b01.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_b02.png" Key="effect/effect5000/effect5000_b02.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_b03.png" Key="effect/effect5000/effect5000_b03.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_b04.png" Key="effect/effect5000/effect5000_b04.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_b05.png" Key="effect/effect5000/effect5000_b05.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_c01.png" Key="effect/effect5000/effect5000_c01.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_c02.png" Key="effect/effect5000/effect5000_c02.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_c03.png" Key="effect/effect5000/effect5000_c03.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_c04.png" Key="effect/effect5000/effect5000_c04.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_c05.png" Key="effect/effect5000/effect5000_c05.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_d01.png" Key="effect/effect5000/effect5000_d01.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_d02.png" Key="effect/effect5000/effect5000_d02.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_d03.png" Key="effect/effect5000/effect5000_d03.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_d04.png" Key="effect/effect5000/effect5000_d04.png" />
+              <PlistImageFile Name="effect_effect5000_effect5000_d05.png" Key="effect/effect5000/effect5000_d05.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="effect5001">
             <Image Name="effect5001_01.png" />
@@ -382,6 +621,19 @@
             <Image Name="effect5001_09.png" />
             <Image Name="effect5001_10.png" />
             <Image Name="effect5001_11.png" />
+            <PlistImageFolder Image="effect5001.png" PListFile="effect5001.plist" Name=".effect5001_PList.Dir">
+              <PlistImageFile Name="effect_effect5001_effect5001_01.png" Key="effect/effect5001/effect5001_01.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_02.png" Key="effect/effect5001/effect5001_02.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_03.png" Key="effect/effect5001/effect5001_03.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_04.png" Key="effect/effect5001/effect5001_04.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_05.png" Key="effect/effect5001/effect5001_05.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_06.png" Key="effect/effect5001/effect5001_06.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_07.png" Key="effect/effect5001/effect5001_07.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_08.png" Key="effect/effect5001/effect5001_08.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_09.png" Key="effect/effect5001/effect5001_09.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_10.png" Key="effect/effect5001/effect5001_10.png" />
+              <PlistImageFile Name="effect_effect5001_effect5001_11.png" Key="effect/effect5001/effect5001_11.png" />
+            </PlistImageFolder>
           </Folder>
           <Folder Name="effect5002">
             <Image Name="effect5002_01.png" />
@@ -389,20 +641,15 @@
             <Image Name="effect5002_03.png" />
             <Image Name="effect5002_04.png" />
             <Image Name="effect5002_05.png" />
+            <PlistImageFolder Image="effect5002.png" PListFile="effect5002.plist" Name=".effect5002_PList.Dir">
+              <PlistImageFile Name="effect_effect5002_effect5002_01.png" Key="effect/effect5002/effect5002_01.png" />
+              <PlistImageFile Name="effect_effect5002_effect5002_02.png" Key="effect/effect5002/effect5002_02.png" />
+              <PlistImageFile Name="effect_effect5002_effect5002_03.png" Key="effect/effect5002/effect5002_03.png" />
+              <PlistImageFile Name="effect_effect5002_effect5002_04.png" Key="effect/effect5002/effect5002_04.png" />
+              <PlistImageFile Name="effect_effect5002_effect5002_05.png" Key="effect/effect5002/effect5002_05.png" />
+            </PlistImageFolder>
           </Folder>
         </Folder>
-        <Project Name="effect5001.csd" Type="Node" />
-        <Project Name="effect5002.csd" Type="Node" />
-        <Project Name="enemy1002.csd" Type="Node" />
-        <Project Name="enemy1003.csd" Type="Node" />
-        <Project Name="enemy1004.csd" Type="Node" />
-        <Project Name="enemy1005.csd" Type="Node" />
-        <Project Name="hero104.csd" Type="Node" />
-        <Project Name="hero105.csd" Type="Node" />
-        <Project Name="effect5000.csd" Type="Node" />
-        <PlistInfo Name="hero102.csi" Type="Plist" />
-        <Project Name="hero101.csd" Type="Node" />
-        <PlistInfo Name="hero101.csi" Type="Plist" />
         <Folder Name="gold">
           <Folder Name="gold01">
             <Image Name="gold01_shine01.png" />
@@ -437,14 +684,110 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
+        <Folder Name="chest">
+          <Folder Name="chest01">
+            <Image Name="chest01_close01.png" />
+            <Image Name="chest01_open01.png" />
+            <PlistImageFolder Image="chest01.png" PListFile="chest01.plist" Name=".chest01_PList.Dir">
+              <PlistImageFile Name="chest_chest01_chest01_close01.png" Key="chest/chest01/chest01_close01.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open01.png" Key="chest/chest01/chest01_open01.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest02">
+            <Image Name="chest02_close01.png" />
+            <Image Name="chest02_open01.png" />
+            <PlistImageFolder Image="chest02.png" PListFile="chest02.plist" Name=".chest02_PList.Dir">
+              <PlistImageFile Name="chest_chest02_chest02_close01.png" Key="chest/chest02/chest02_close01.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open01.png" Key="chest/chest02/chest02_open01.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest03">
+            <Image Name="chest03_close01.png" />
+            <Image Name="chest03_open01.png" />
+            <PlistImageFolder Image="chest03.png" PListFile="chest03.plist" Name=".chest03_PList.Dir">
+              <PlistImageFile Name="chest_chest03_chest03_close01.png" Key="chest/chest03/chest03_close01.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open01.png" Key="chest/chest03/chest03_open01.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest04">
+            <Image Name="chest04_close01.png" />
+            <Image Name="chest04_open01.png" />
+            <PlistImageFolder Image="chest04.png" PListFile="chest04.plist" Name=".chest04_PList.Dir">
+              <PlistImageFile Name="chest_chest04_chest04_close01.png" Key="chest/chest04/chest04_close01.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open01.png" Key="chest/chest04/chest04_open01.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Folder Name="fairy">
+          <Folder Name="fairy01">
+            <Image Name="fairy01_die01.png" />
+            <Image Name="fairy01_die02.png" />
+            <Image Name="fairy01_die03.png" />
+            <Image Name="fairy01_die04.png" />
+            <Image Name="fairy01_run01.png" />
+            <Image Name="fairy01_run02.png" />
+            <Image Name="fairy01_run03.png" />
+            <Image Name="fairy01_run04.png" />
+            <Image Name="fairy01_run05.png" />
+            <Image Name="fairy01_run06.png" />
+            <PlistImageFolder Image="fairy01.png" PListFile="fairy01.plist" Name=".fairy01_PList.Dir">
+              <PlistImageFile Name="fairy_fairy01_fairy01_die01.png" Key="fairy/fairy01/fairy01_die01.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_die02.png" Key="fairy/fairy01/fairy01_die02.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_die03.png" Key="fairy/fairy01/fairy01_die03.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_die04.png" Key="fairy/fairy01/fairy01_die04.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run01.png" Key="fairy/fairy01/fairy01_run01.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run02.png" Key="fairy/fairy01/fairy01_run02.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run03.png" Key="fairy/fairy01/fairy01_run03.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run04.png" Key="fairy/fairy01/fairy01_run04.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run05.png" Key="fairy/fairy01/fairy01_run05.png" />
+              <PlistImageFile Name="fairy_fairy01_fairy01_run06.png" Key="fairy/fairy01/fairy01_run06.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="chest01.csd" Type="Node" />
+        <PlistInfo Name="chest01.csi" Type="Plist" />
+        <Project Name="chest02.csd" Type="Node" />
+        <PlistInfo Name="chest02.csi" Type="Plist" />
+        <Project Name="chest03.csd" Type="Node" />
+        <PlistInfo Name="chest03.csi" Type="Plist" />
+        <Project Name="chest04.csd" Type="Node" />
+        <PlistInfo Name="chest04.csi" Type="Plist" />
+        <Project Name="effect5000.csd" Type="Node" />
+        <PlistInfo Name="effect5000.csi" Type="Plist" />
+        <Project Name="effect5001.csd" Type="Node" />
+        <PlistInfo Name="effect5001.csi" Type="Plist" />
+        <Project Name="effect5002.csd" Type="Node" />
+        <PlistInfo Name="effect5002.csi" Type="Plist" />
+        <Project Name="enemy_csd/enemy1001.csd" Type="Node" />
+        <PlistInfo Name="enemy1001.csi" Type="Plist" />
+        <Project Name="enemy1002.csd" Type="Node" />
+        <PlistInfo Name="enemy1002.csi" Type="Plist" />
+        <Project Name="enemy1003.csd" Type="Node" />
+        <PlistInfo Name="enemy1003.csi" Type="Plist" />
+        <Project Name="enemy1004.csd" Type="Node" />
+        <PlistInfo Name="enemy1004.csi" Type="Plist" />
+        <Project Name="enemy1005.csd" Type="Node" />
+        <PlistInfo Name="enemy1005.csi" Type="Plist" />
+        <Project Name="fairy01.csd" Type="Node" />
+        <PlistInfo Name="fairy01.csi" Type="Plist" />
         <Project Name="gold01.csd" Type="Node" />
-        <Project Name="gold02.csd" Type="Node" />
-        <Project Name="gold03.csd" Type="Node" />
-        <Project Name="gold04.csd" Type="Node" />
         <PlistInfo Name="gold01.csi" Type="Plist" />
+        <Project Name="gold02.csd" Type="Node" />
         <PlistInfo Name="gold02.csi" Type="Plist" />
+        <Project Name="gold03.csd" Type="Node" />
         <PlistInfo Name="gold03.csi" Type="Plist" />
+        <Project Name="gold04.csd" Type="Node" />
         <PlistInfo Name="gold04.csi" Type="Plist" />
+        <Project Name="hero101.csd" Type="Node" />
+        <PlistInfo Name="hero101.csi" Type="Plist" />
+        <Project Name="hero102.csd" Type="Node" />
+        <PlistInfo Name="hero102.csi" Type="Plist" />
+        <Project Name="hero103.csd" Type="Node" />
+        <PlistInfo Name="hero103.csi" Type="Plist" />
+        <Project Name="hero104.csd" Type="Node" />
+        <PlistInfo Name="hero104.csi" Type="Plist" />
+        <Project Name="hero105.csd" Type="Node" />
+        <PlistInfo Name="hero105.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

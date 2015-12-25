@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 78,
-        "Speed": 1.0,
+        "Speed": 0.4,
         "Timelines": [
           {
             "ActionTag": 686399736,
@@ -528,7 +528,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero101/hero101_stand04.png",
+              "Path": "hero/hero101/hero101_atk01.png",
               "Plist": "hero101.plist"
             },
             "BlendFunc": {
@@ -539,8 +539,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -19.5614,
-              "Y": -3.4044
+              "X": -21.8623,
+              "Y": -4.9797
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -556,15 +556,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -67.0614,
-            "RightMargin": -27.9386,
-            "TopMargin": -95.5956,
-            "BottomMargin": -3.4044,
+            "LeftMargin": -70.3623,
+            "RightMargin": -26.6377,
+            "TopMargin": -93.0203,
+            "BottomMargin": -4.9797,
             "Tag": 9,
             "ActionTag": 686399736,
             "Size": {
-              "X": 95.0,
-              "Y": 99.0
+              "X": 97.0,
+              "Y": 98.0
             },
             "Name": "hero101",
             "ctype": "SpriteObjectData"

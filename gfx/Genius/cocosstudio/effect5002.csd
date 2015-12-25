@@ -2,22 +2,22 @@
   <PropertyGroup Name="effect5002" Type="Node" ID="c46787da-0241-468a-8095-8edd786ecbe4" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="8" Speed="0.5000">
+      <Animation Duration="8" Speed="0.4000">
         <Timeline ActionTag="2054838712" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5002/effect5002_01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_01.png" Plist="effect5002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="2" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5002/effect5002_02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_02.png" Plist="effect5002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="4" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5002/effect5002_03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_03.png" Plist="effect5002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5002/effect5002_04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_04.png" Plist="effect5002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="8" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5002/effect5002_05.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_05.png" Plist="effect5002.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -37,7 +37,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="effect/effect5002/effect5002_03.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="effect/effect5002/effect5002_01.png" Plist="effect5002.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

@@ -1,0 +1,28 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="effect5000" Type="Plist" ID="7c87ed36-0e4c-4b24-948c-b7f225dd1d45" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="effect/effect5000/effect5000_a01.png" />
+      <FilePathData Path="effect/effect5000/effect5000_a02.png" />
+      <FilePathData Path="effect/effect5000/effect5000_a03.png" />
+      <FilePathData Path="effect/effect5000/effect5000_a04.png" />
+      <FilePathData Path="effect/effect5000/effect5000_a05.png" />
+      <FilePathData Path="effect/effect5000/effect5000_b01.png" />
+      <FilePathData Path="effect/effect5000/effect5000_b02.png" />
+      <FilePathData Path="effect/effect5000/effect5000_b03.png" />
+      <FilePathData Path="effect/effect5000/effect5000_b04.png" />
+      <FilePathData Path="effect/effect5000/effect5000_b05.png" />
+      <FilePathData Path="effect/effect5000/effect5000_c01.png" />
+      <FilePathData Path="effect/effect5000/effect5000_c02.png" />
+      <FilePathData Path="effect/effect5000/effect5000_c03.png" />
+      <FilePathData Path="effect/effect5000/effect5000_c04.png" />
+      <FilePathData Path="effect/effect5000/effect5000_c05.png" />
+      <FilePathData Path="effect/effect5000/effect5000_d01.png" />
+      <FilePathData Path="effect/effect5000/effect5000_d02.png" />
+      <FilePathData Path="effect/effect5000/effect5000_d03.png" />
+      <FilePathData Path="effect/effect5000/effect5000_d04.png" />
+      <FilePathData Path="effect/effect5000/effect5000_d05.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 38,
-        "Speed": 0.5,
+        "Speed": 0.4,
         "Timelines": [
           {
             "ActionTag": 537988529,
@@ -14,9 +14,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_a01.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -24,9 +24,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_a02.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -34,9 +34,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_a03.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -44,9 +44,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_a04.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -54,9 +54,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_a05.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -64,9 +64,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_b01.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -74,9 +74,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_b02.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -84,9 +84,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_b03.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 14,
                 "Tween": false,
@@ -94,9 +94,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_b04.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 16,
                 "Tween": false,
@@ -104,9 +104,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_b05.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -114,9 +114,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_c01.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 20,
                 "Tween": false,
@@ -124,9 +124,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_c02.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 22,
                 "Tween": false,
@@ -134,9 +134,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_c03.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -144,9 +144,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_c04.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 26,
                 "Tween": false,
@@ -154,9 +154,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_c05.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 28,
                 "Tween": false,
@@ -164,9 +164,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_d01.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -174,9 +174,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_d02.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 32,
                 "Tween": false,
@@ -184,9 +184,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_d03.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 34,
                 "Tween": false,
@@ -194,9 +194,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_d04.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 36,
                 "Tween": false,
@@ -204,9 +204,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5000/effect5000_d05.png",
-                  "Plist": ""
+                  "Plist": "effect5000.plist"
                 },
                 "FrameIndex": 38,
                 "Tween": false,
@@ -249,9 +249,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "effect/effect5000/effect5000_c04.png",
-              "Plist": ""
+              "Type": "MarkedSubImage",
+              "Path": "effect/effect5000/effect5000_a01.png",
+              "Plist": "effect5000.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -279,15 +279,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -137.5,
-            "RightMargin": -137.5,
-            "TopMargin": -76.0,
-            "BottomMargin": -76.0,
+            "LeftMargin": -102.0,
+            "RightMargin": -102.0,
+            "TopMargin": -89.0,
+            "BottomMargin": -89.0,
             "Tag": 3,
             "ActionTag": 537988529,
             "Size": {
-              "X": 204.0,
-              "Y": 178.0
+              "X": 275.0,
+              "Y": 152.0
             },
             "Name": "effect5000",
             "ctype": "SpriteObjectData"
@@ -301,26 +301,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5000/effect5000_a01.png",
-        "effect/effect5000/effect5000_a02.png",
-        "effect/effect5000/effect5000_a03.png",
-        "effect/effect5000/effect5000_a04.png",
-        "effect/effect5000/effect5000_a05.png",
-        "effect/effect5000/effect5000_b01.png",
-        "effect/effect5000/effect5000_b02.png",
-        "effect/effect5000/effect5000_b03.png",
-        "effect/effect5000/effect5000_b04.png",
-        "effect/effect5000/effect5000_b05.png",
-        "effect/effect5000/effect5000_c01.png",
-        "effect/effect5000/effect5000_c02.png",
-        "effect/effect5000/effect5000_c03.png",
-        "effect/effect5000/effect5000_c04.png",
-        "effect/effect5000/effect5000_c05.png",
-        "effect/effect5000/effect5000_d01.png",
-        "effect/effect5000/effect5000_d02.png",
-        "effect/effect5000/effect5000_d03.png",
-        "effect/effect5000/effect5000_d04.png",
-        "effect/effect5000/effect5000_d05.png"
+        "effect5000.plist",
+        "effect5000.png"
       ],
       "ctype": "GameFileData"
     }

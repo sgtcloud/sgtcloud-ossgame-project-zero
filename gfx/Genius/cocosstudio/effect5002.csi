@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="effect5002" Type="Plist" ID="cbaf32ee-c346-460a-8f88-5820b136b78f" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="effect/effect5002/effect5002_01.png" />
+      <FilePathData Path="effect/effect5002/effect5002_02.png" />
+      <FilePathData Path="effect/effect5002/effect5002_03.png" />
+      <FilePathData Path="effect/effect5002/effect5002_04.png" />
+      <FilePathData Path="effect/effect5002/effect5002_05.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -2,7 +2,7 @@
   <PropertyGroup Name="enemy1002" Type="Node" ID="6c68f356-18ba-4f60-a74f-9d919ff1f20c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="57" Speed="0.5000">
+      <Animation Duration="57" Speed="0.4000">
         <Timeline ActionTag="103088517" Property="Position">
           <PointFrame FrameIndex="0" X="-18.7548" Y="-9.1535">
             <EasingData Type="0" />
@@ -46,93 +46,93 @@
         </Timeline>
         <Timeline ActionTag="103088517" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk01.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk02.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk03.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk04.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk05.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk05.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk06.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk06.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_atk07.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk07.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_die01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_die01.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_die02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_die02.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_die03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_die03.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="30" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_die04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_die04.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="33" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_hit01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_hit01.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="36" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_hit02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_hit02.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="39" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_hit03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_hit03.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="42" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_hit04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_hit04.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="45" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_hit05.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_hit05.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="48" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_stand01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_stand01.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="51" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_stand02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_stand02.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="54" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_stand03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_stand03.png" Plist="enemy1002.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="57" Tween="False">
-            <TextureFile Type="Normal" Path="enemy/enemy1002/enemy1002_stand04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_stand04.png" Plist="enemy1002.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="18">
-          <RenderColor A="150" R="127" G="255" B="0" />
+          <RenderColor A="255" R="127" G="255" B="0" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="21" EndIndex="30">
-          <RenderColor A="150" R="250" G="235" B="215" />
+          <RenderColor A="255" R="250" G="235" B="215" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="33" EndIndex="45">
-          <RenderColor A="150" R="169" G="169" B="169" />
+          <RenderColor A="255" R="169" G="169" B="169" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="48" EndIndex="57">
-          <RenderColor A="150" R="100" G="149" B="237" />
+          <RenderColor A="255" R="100" G="149" B="237" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="5" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="enemy1002" ActionTag="103088517" Tag="6" IconVisible="False" LeftMargin="-64.4964" RightMargin="-28.5036" TopMargin="-94.4743" BottomMargin="-9.5257" ctype="SpriteObjectData">
-            <Size X="115.0000" Y="101.0000" />
+          <AbstractNodeData Name="enemy1002" ActionTag="103088517" Tag="6" IconVisible="False" LeftMargin="-65.2548" RightMargin="-27.7452" TopMargin="-94.8465" BottomMargin="-9.1535" ctype="SpriteObjectData">
+            <Size X="93.0000" Y="104.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-17.9964" Y="-9.5257" />
+            <Position X="-18.7548" Y="-9.1535" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="enemy/enemy1002/enemy1002_die02.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="enemy/enemy1002/enemy1002_atk01.png" Plist="enemy1002.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

@@ -1,0 +1,18 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="fairy01" Type="Plist" ID="5cc68cec-6163-4650-a1aa-851ca0a90550" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="fairy/fairy01/fairy01_die01.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_die02.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_die03.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_die04.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run01.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run02.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run03.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run04.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run05.png" />
+      <FilePathData Path="fairy/fairy01/fairy01_run06.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

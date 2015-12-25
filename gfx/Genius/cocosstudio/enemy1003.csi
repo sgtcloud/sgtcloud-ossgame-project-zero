@@ -1,0 +1,35 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="enemy1003" Type="Plist" ID="8dc45cbc-743a-4588-970e-307edd14258a" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk01.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk02.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk03.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk04.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk05.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk06.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_atk07.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_die01.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_die02.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_die03.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_die04.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_die05.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_hit01.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_hit02.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_hit03.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_hit04.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_hit05.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill01.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill02.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill03.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill04.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill05.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_skill06.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_stand01.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_stand02.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_stand03.png" />
+      <FilePathData Path="enemy/enemy1003/enemy1003_stand04.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero101" Type="Node" ID="fd9c7335-598f-483c-ba78-4d9e78602e9a" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="78" Speed="1.0000">
+      <Animation Duration="78" Speed="0.4000">
         <Timeline ActionTag="686399736" Property="Position">
           <PointFrame FrameIndex="0" X="-21.8623" Y="-4.9797">
             <EasingData Type="0" />
@@ -154,36 +154,36 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="21">
-          <RenderColor A="150" R="0" G="0" B="128" />
+          <RenderColor A="255" R="0" G="0" B="128" />
         </AnimationInfo>
         <AnimationInfo Name="dead" StartIndex="24" EndIndex="24">
-          <RenderColor A="150" R="0" G="0" B="205" />
+          <RenderColor A="255" R="0" G="0" B="205" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="27" EndIndex="39">
-          <RenderColor A="150" R="255" G="240" B="245" />
+          <RenderColor A="255" R="255" G="240" B="245" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="42" EndIndex="51">
-          <RenderColor A="150" R="210" G="105" B="30" />
+          <RenderColor A="255" R="210" G="105" B="30" />
         </AnimationInfo>
         <AnimationInfo Name="skill" StartIndex="54" EndIndex="66">
-          <RenderColor A="150" R="165" G="42" B="42" />
+          <RenderColor A="255" R="165" G="42" B="42" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="69" EndIndex="78">
-          <RenderColor A="150" R="255" G="255" B="240" />
+          <RenderColor A="255" R="255" G="255" B="240" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="5" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero101" ActionTag="686399736" Tag="9" IconVisible="False" LeftMargin="-67.0614" RightMargin="-27.9386" TopMargin="-95.5956" BottomMargin="-3.4044" ctype="SpriteObjectData">
-            <Size X="95.0000" Y="99.0000" />
+          <AbstractNodeData Name="hero101" ActionTag="686399736" Tag="9" IconVisible="False" LeftMargin="-70.3623" RightMargin="-26.6377" TopMargin="-93.0203" BottomMargin="-4.9797" ctype="SpriteObjectData">
+            <Size X="97.0000" Y="98.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-19.5614" Y="-3.4044" />
+            <Position X="-21.8623" Y="-4.9797" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="hero/hero101/hero101_stand04.png" Plist="hero101.plist" />
+            <FileData Type="MarkedSubImage" Path="hero/hero101/hero101_atk01.png" Plist="hero101.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

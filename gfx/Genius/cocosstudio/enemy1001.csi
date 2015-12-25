@@ -1,0 +1,29 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="enemy1001" Type="Plist" ID="6eb071d8-48f6-4817-a3df-9134acf1919c" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk01.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk02.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk03.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk04.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk05.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk06.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_atk07.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_die01.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_die02.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_die03.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_die04.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_die05.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_hit01.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_hit02.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_hit03.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_hit04.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_hit05.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_stand01.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_stand02.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_stand03.png" />
+      <FilePathData Path="enemy/enemy1001/enemy1001_stand04.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

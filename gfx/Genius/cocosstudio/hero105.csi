@@ -1,0 +1,36 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="hero105" Type="Plist" ID="19d6ffb5-c2df-46d0-a3db-d5d389f07ad9" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="hero/hero105/hero105_atk01.png" />
+      <FilePathData Path="hero/hero105/hero105_atk02.png" />
+      <FilePathData Path="hero/hero105/hero105_atk03.png" />
+      <FilePathData Path="hero/hero105/hero105_atk04.png" />
+      <FilePathData Path="hero/hero105/hero105_atk05.png" />
+      <FilePathData Path="hero/hero105/hero105_atk06.png" />
+      <FilePathData Path="hero/hero105/hero105_atk07.png" />
+      <FilePathData Path="hero/hero105/hero105_dead01.png" />
+      <FilePathData Path="hero/hero105/hero105_die01.png" />
+      <FilePathData Path="hero/hero105/hero105_die02.png" />
+      <FilePathData Path="hero/hero105/hero105_die03.png" />
+      <FilePathData Path="hero/hero105/hero105_die04.png" />
+      <FilePathData Path="hero/hero105/hero105_die05.png" />
+      <FilePathData Path="hero/hero105/hero105_hit01.png" />
+      <FilePathData Path="hero/hero105/hero105_hit02.png" />
+      <FilePathData Path="hero/hero105/hero105_hit03.png" />
+      <FilePathData Path="hero/hero105/hero105_hit04.png" />
+      <FilePathData Path="hero/hero105/hero105_hit05.png" />
+      <FilePathData Path="hero/hero105/hero105_skill01.png" />
+      <FilePathData Path="hero/hero105/hero105_skill02.png" />
+      <FilePathData Path="hero/hero105/hero105_skill03.png" />
+      <FilePathData Path="hero/hero105/hero105_skill04.png" />
+      <FilePathData Path="hero/hero105/hero105_skill05.png" />
+      <FilePathData Path="hero/hero105/hero105_skill06.png" />
+      <FilePathData Path="hero/hero105/hero105_stand01.png" />
+      <FilePathData Path="hero/hero105/hero105_stand02.png" />
+      <FilePathData Path="hero/hero105/hero105_stand03.png" />
+      <FilePathData Path="hero/hero105/hero105_stand04.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

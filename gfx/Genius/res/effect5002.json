@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 8,
-        "Speed": 0.5,
+        "Speed": 0.4,
         "Timelines": [
           {
             "ActionTag": 2054838712,
@@ -14,9 +14,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5002/effect5002_01.png",
-                  "Plist": ""
+                  "Plist": "effect5002.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -24,9 +24,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5002/effect5002_02.png",
-                  "Plist": ""
+                  "Plist": "effect5002.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -34,9 +34,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5002/effect5002_03.png",
-                  "Plist": ""
+                  "Plist": "effect5002.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -44,9 +44,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5002/effect5002_04.png",
-                  "Plist": ""
+                  "Plist": "effect5002.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -54,9 +54,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5002/effect5002_05.png",
-                  "Plist": ""
+                  "Plist": "effect5002.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -81,9 +81,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "effect/effect5002/effect5002_03.png",
-              "Plist": ""
+              "Type": "MarkedSubImage",
+              "Path": "effect/effect5002/effect5002_01.png",
+              "Plist": "effect5002.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -133,11 +133,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5002/effect5002_01.png",
-        "effect/effect5002/effect5002_02.png",
-        "effect/effect5002/effect5002_03.png",
-        "effect/effect5002/effect5002_04.png",
-        "effect/effect5002/effect5002_05.png"
+        "effect5002.plist",
+        "effect5002.png"
       ],
       "ctype": "GameFileData"
     }

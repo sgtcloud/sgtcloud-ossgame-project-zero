@@ -1,0 +1,34 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="hero103" Type="Plist" ID="d8f05826-0624-4bf5-913d-9943173da13f" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="hero/hero103/hero103_atk01.png" />
+      <FilePathData Path="hero/hero103/hero103_atk02.png" />
+      <FilePathData Path="hero/hero103/hero103_atk03.png" />
+      <FilePathData Path="hero/hero103/hero103_atk04.png" />
+      <FilePathData Path="hero/hero103/hero103_atk05.png" />
+      <FilePathData Path="hero/hero103/hero103_atk06.png" />
+      <FilePathData Path="hero/hero103/hero103_atk07.png" />
+      <FilePathData Path="hero/hero103/hero103_dead01.png" />
+      <FilePathData Path="hero/hero103/hero103_die01.png" />
+      <FilePathData Path="hero/hero103/hero103_die02.png" />
+      <FilePathData Path="hero/hero103/hero103_die03.png" />
+      <FilePathData Path="hero/hero103/hero103_die04.png" />
+      <FilePathData Path="hero/hero103/hero103_die05.png" />
+      <FilePathData Path="hero/hero103/hero103_hit01.png" />
+      <FilePathData Path="hero/hero103/hero103_hit02.png" />
+      <FilePathData Path="hero/hero103/hero103_hit03.png" />
+      <FilePathData Path="hero/hero103/hero103_hit04.png" />
+      <FilePathData Path="hero/hero103/hero103_hit05.png" />
+      <FilePathData Path="hero/hero103/hero103_skill01.png" />
+      <FilePathData Path="hero/hero103/hero103_skill02.png" />
+      <FilePathData Path="hero/hero103/hero103_skill03.png" />
+      <FilePathData Path="hero/hero103/hero103_skill04.png" />
+      <FilePathData Path="hero/hero103/hero103_stand01.png" />
+      <FilePathData Path="hero/hero103/hero103_stand02.png" />
+      <FilePathData Path="hero/hero103/hero103_stand03.png" />
+      <FilePathData Path="hero/hero103/hero103_stand04.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
