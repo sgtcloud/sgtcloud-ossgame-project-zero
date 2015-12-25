@@ -32,6 +32,8 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="hero101.csi" />
+          <FilePathData Path="hero102.csi" />
+          <FilePathData Path="hero102.csd" />
           <FilePathData Path="hero101.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="hero101.csd" />

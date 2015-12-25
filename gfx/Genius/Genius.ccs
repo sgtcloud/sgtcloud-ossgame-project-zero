@@ -4,7 +4,6 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Project Name="enemy1001.csd" Type="Node" />
-        <Project Name="hero101.csd" Type="Node" />
         <Project Name="hero102.csd" Type="Node" />
         <Project Name="hero103.csd" Type="Node" />
         <Folder Name="enemy">
@@ -202,6 +201,36 @@
             <Image Name="hero102_skill02.png" />
             <Image Name="hero102_skill03.png" />
             <Image Name="hero102_skill04.png" />
+            <PlistImageFolder Image="hero102.png" PListFile="hero102.plist" Name=".hero102_PList.Dir">
+              <PlistImageFile Name="hero_hero102_hero102_atk01.png" Key="hero/hero102/hero102_atk01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk02.png" Key="hero/hero102/hero102_atk02.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk03.png" Key="hero/hero102/hero102_atk03.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk04.png" Key="hero/hero102/hero102_atk04.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk05.png" Key="hero/hero102/hero102_atk05.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk06.png" Key="hero/hero102/hero102_atk06.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk07.png" Key="hero/hero102/hero102_atk07.png" />
+              <PlistImageFile Name="hero_hero102_hero102_atk08.png" Key="hero/hero102/hero102_atk08.png" />
+              <PlistImageFile Name="hero_hero102_hero102_dead01.png" Key="hero/hero102/hero102_dead01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_die01.png" Key="hero/hero102/hero102_die01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_die02.png" Key="hero/hero102/hero102_die02.png" />
+              <PlistImageFile Name="hero_hero102_hero102_die03.png" Key="hero/hero102/hero102_die03.png" />
+              <PlistImageFile Name="hero_hero102_hero102_die04.png" Key="hero/hero102/hero102_die04.png" />
+              <PlistImageFile Name="hero_hero102_hero102_die05.png" Key="hero/hero102/hero102_die05.png" />
+              <PlistImageFile Name="hero_hero102_hero102_hit01.png" Key="hero/hero102/hero102_hit01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_hit02.png" Key="hero/hero102/hero102_hit02.png" />
+              <PlistImageFile Name="hero_hero102_hero102_hit03.png" Key="hero/hero102/hero102_hit03.png" />
+              <PlistImageFile Name="hero_hero102_hero102_hit04.png" Key="hero/hero102/hero102_hit04.png" />
+              <PlistImageFile Name="hero_hero102_hero102_hit05.png" Key="hero/hero102/hero102_hit05.png" />
+              <PlistImageFile Name="hero_hero102_hero102_skill01.png" Key="hero/hero102/hero102_skill01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_skill02.png" Key="hero/hero102/hero102_skill02.png" />
+              <PlistImageFile Name="hero_hero102_hero102_skill03.png" Key="hero/hero102/hero102_skill03.png" />
+              <PlistImageFile Name="hero_hero102_hero102_skill04.png" Key="hero/hero102/hero102_skill04.png" />
+              <PlistImageFile Name="hero_hero102_hero102_stand01.png" Key="hero/hero102/hero102_stand01.png" />
+              <PlistImageFile Name="hero_hero102_hero102_stand02.png" Key="hero/hero102/hero102_stand02.png" />
+              <PlistImageFile Name="hero_hero102_hero102_stand03.png" Key="hero/hero102/hero102_stand03.png" />
+              <PlistImageFile Name="hero_hero102_hero102_stand04.png" Key="hero/hero102/hero102_stand04.png" />
+            </PlistImageFolder>
+            <Image Name="hero102.png" />
           </Folder>
           <Folder Name="hero103">
             <Image Name="hero103_atk01.png" />
@@ -345,6 +374,8 @@
         <Project Name="hero105.csd" Type="Node" />
         <Project Name="effect5000.csd" Type="Node" />
         <PlistInfo Name="hero101.csi" Type="Plist" />
+        <PlistInfo Name="hero102.csi" Type="Plist" />
+        <Project Name="hero101.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
