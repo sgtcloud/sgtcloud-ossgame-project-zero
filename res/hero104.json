@@ -255,9 +255,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -265,9 +265,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk02.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -275,9 +275,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk03.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -285,9 +285,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk04.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -295,9 +295,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk05.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -305,9 +305,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk06.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -315,9 +315,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_atk07.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -325,9 +325,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_dead01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -335,9 +335,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_die01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -345,9 +345,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_die02.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -355,9 +355,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_die03.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -365,9 +365,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_die04.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 33,
                 "Tween": false,
@@ -375,9 +375,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_die05.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 36,
                 "Tween": false,
@@ -385,9 +385,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_hit01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 39,
                 "Tween": false,
@@ -395,9 +395,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_hit02.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 42,
                 "Tween": false,
@@ -405,9 +405,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_hit03.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 45,
                 "Tween": false,
@@ -415,9 +415,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_hit04.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 48,
                 "Tween": false,
@@ -425,9 +425,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_hit05.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 51,
                 "Tween": false,
@@ -435,9 +435,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_skill01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 54,
                 "Tween": false,
@@ -445,9 +445,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_skill02.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 57,
                 "Tween": false,
@@ -455,9 +455,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_skill03.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 60,
                 "Tween": false,
@@ -465,9 +465,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_skill04.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 63,
                 "Tween": false,
@@ -475,9 +475,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_skill05.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 66,
                 "Tween": false,
@@ -485,9 +485,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_stand01.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 69,
                 "Tween": false,
@@ -495,9 +495,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_stand02.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 72,
                 "Tween": false,
@@ -505,9 +505,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_stand03.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 75,
                 "Tween": false,
@@ -515,9 +515,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "hero/hero104/hero104_stand04.png",
-                  "Plist": ""
+                  "Plist": "hero104.plist"
                 },
                 "FrameIndex": 78,
                 "Tween": false,
@@ -572,9 +572,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "hero/hero104/hero104_atk01.png",
-              "Plist": ""
+              "Plist": "hero104.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -623,33 +623,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "hero/hero104/hero104_atk01.png",
-        "hero/hero104/hero104_atk02.png",
-        "hero/hero104/hero104_atk03.png",
-        "hero/hero104/hero104_atk04.png",
-        "hero/hero104/hero104_atk05.png",
-        "hero/hero104/hero104_atk06.png",
-        "hero/hero104/hero104_atk07.png",
-        "hero/hero104/hero104_dead01.png",
-        "hero/hero104/hero104_die01.png",
-        "hero/hero104/hero104_die02.png",
-        "hero/hero104/hero104_die03.png",
-        "hero/hero104/hero104_die04.png",
-        "hero/hero104/hero104_die05.png",
-        "hero/hero104/hero104_hit01.png",
-        "hero/hero104/hero104_hit02.png",
-        "hero/hero104/hero104_hit03.png",
-        "hero/hero104/hero104_hit04.png",
-        "hero/hero104/hero104_hit05.png",
-        "hero/hero104/hero104_skill01.png",
-        "hero/hero104/hero104_skill02.png",
-        "hero/hero104/hero104_skill03.png",
-        "hero/hero104/hero104_skill04.png",
-        "hero/hero104/hero104_skill05.png",
-        "hero/hero104/hero104_stand01.png",
-        "hero/hero104/hero104_stand02.png",
-        "hero/hero104/hero104_stand03.png",
-        "hero/hero104/hero104_stand04.png"
+        "hero104.plist",
+        "hero104.png"
       ],
       "ctype": "GameFileData"
     }

@@ -1,5 +1,5 @@
 {
-  "ID": "cd1b8cae-af7a-4369-ab8c-4533675f2285",
+  "ID": "e2b920e8-3e72-40d6-bbf6-fecf57ee6021",
   "Version": "2.3.3.0",
   "Name": "enemy1001",
   "Content": {
@@ -9,12 +9,12 @@
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": -1020353857,
+            "ActionTag": -747205748,
             "Property": "Position",
             "Frames": [
               {
-                "X": -3.0,
-                "Y": -4.0,
+                "X": -2.5098,
+                "Y": -4.5,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 26.0001,
-                "Y": -9.0,
+                "X": 23.4722,
+                "Y": -7.4413,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 31.0,
-                "Y": -12.0,
+                "X": 23.4722,
+                "Y": -7.4413,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 36.9206,
-                "Y": -12.0801,
+                "X": 35.2378,
+                "Y": -9.4022,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -49,8 +49,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 17.0403,
-                "Y": -8.5601,
+                "X": 14.6484,
+                "Y": -8.4217,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,8 +58,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -0.56,
-                "Y": -6.52,
+                "X": 0.9222,
+                "Y": -6.951,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -67,8 +67,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -3.0,
-                "Y": -4.0,
+                "X": -3.98,
+                "Y": -5.4804,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -76,8 +76,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -2.0,
-                "Y": -4.0,
+                "X": -3.98,
+                "Y": -4.4804,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -2.98,
+                "Y": -4.4804,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -85,8 +94,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -12.0,
-                "Y": -4.0,
+                "X": -3.98,
+                "Y": -4.4804,
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -7.9799,
+                "Y": -2.4804,
                 "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
@@ -94,8 +112,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -3.3333,
-                "Y": -5.0,
+                "X": -8.9799,
+                "Y": -2.4804,
+                "FrameIndex": 33,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -3.6265,
+                "Y": -3.4608,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -103,8 +130,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 4.0,
-                "Y": -5.0,
+                "X": 4.7074,
+                "Y": -6.4022,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -112,8 +139,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -3.25,
-                "Y": -4.25,
+                "X": 3.7074,
+                "Y": -4.9119,
+                "FrameIndex": 42,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 1.7074,
+                "Y": -4.9119,
+                "FrameIndex": 45,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -3.1948,
+                "Y": -4.4217,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -121,9 +166,36 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -3.0,
-                "Y": -5.0,
+                "X": -4.1948,
+                "Y": -4.4217,
                 "FrameIndex": 51,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -4.1948,
+                "Y": -4.4217,
+                "FrameIndex": 54,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -4.1948,
+                "Y": -4.4217,
+                "FrameIndex": 57,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -4.1947,
+                "Y": -4.4217,
+                "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
                 },
@@ -133,14 +205,14 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1020353857,
+            "ActionTag": -747205748,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk01.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -148,9 +220,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk02.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -158,9 +230,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk03.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -168,9 +240,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk04.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -178,9 +250,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk05.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -188,9 +260,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk06.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -198,9 +270,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_atk07.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -208,9 +280,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_die01.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -218,9 +290,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_die02.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -228,9 +300,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_die03.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -238,9 +310,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_die04.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -248,9 +320,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_die05.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 33,
                 "Tween": false,
@@ -258,9 +330,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_hit01.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 36,
                 "Tween": false,
@@ -268,9 +340,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_hit02.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 39,
                 "Tween": false,
@@ -278,9 +350,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_hit03.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 42,
                 "Tween": false,
@@ -288,9 +360,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_hit04.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 45,
                 "Tween": false,
@@ -298,9 +370,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_hit05.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 48,
                 "Tween": false,
@@ -308,9 +380,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_stand01.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 51,
                 "Tween": false,
@@ -318,9 +390,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_stand02.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 54,
                 "Tween": false,
@@ -328,9 +400,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_stand03.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 57,
                 "Tween": false,
@@ -338,29 +410,13 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "enemy/enemy1001/enemy1001_stand04.png",
-                  "Plist": ""
+                  "Plist": "enemy1001.plist"
                 },
                 "FrameIndex": 60,
                 "Tween": false,
                 "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1020353857,
-            "Property": "AnchorPoint",
-            "Frames": [
-              {
-                "X": 0.5,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -398,9 +454,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "enemy/enemy1001/enemy1001_stand04.png",
-              "Plist": ""
+              "Plist": "enemy1001.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -410,8 +466,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -3.0,
-              "Y": -5.0
+              "X": -4.1947,
+              "Y": -4.4217
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -427,12 +483,12 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -46.0,
-            "RightMargin": -40.0,
-            "TopMargin": -96.0,
-            "BottomMargin": -5.0,
-            "Tag": 5,
-            "ActionTag": -1020353857,
+            "LeftMargin": -46.6947,
+            "RightMargin": -38.3053,
+            "TopMargin": -95.5783,
+            "BottomMargin": -4.4217,
+            "Tag": 2,
+            "ActionTag": -747205748,
             "Size": {
               "X": 86.0,
               "Y": 101.0
@@ -449,27 +505,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "enemy/enemy1001/enemy1001_atk01.png",
-        "enemy/enemy1001/enemy1001_atk02.png",
-        "enemy/enemy1001/enemy1001_atk03.png",
-        "enemy/enemy1001/enemy1001_atk04.png",
-        "enemy/enemy1001/enemy1001_atk05.png",
-        "enemy/enemy1001/enemy1001_atk06.png",
-        "enemy/enemy1001/enemy1001_atk07.png",
-        "enemy/enemy1001/enemy1001_die01.png",
-        "enemy/enemy1001/enemy1001_die02.png",
-        "enemy/enemy1001/enemy1001_die03.png",
-        "enemy/enemy1001/enemy1001_die04.png",
-        "enemy/enemy1001/enemy1001_die05.png",
-        "enemy/enemy1001/enemy1001_hit01.png",
-        "enemy/enemy1001/enemy1001_hit02.png",
-        "enemy/enemy1001/enemy1001_hit03.png",
-        "enemy/enemy1001/enemy1001_hit04.png",
-        "enemy/enemy1001/enemy1001_hit05.png",
-        "enemy/enemy1001/enemy1001_stand01.png",
-        "enemy/enemy1001/enemy1001_stand02.png",
-        "enemy/enemy1001/enemy1001_stand03.png",
-        "enemy/enemy1001/enemy1001_stand04.png"
+        "enemy1001.plist",
+        "enemy1001.png"
       ],
       "ctype": "GameFileData"
     }

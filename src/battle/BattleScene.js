@@ -26,7 +26,7 @@ var SpriteGroup = function (_sprites) {
         var val = 0;
         for (var i in sprites) {
             var sprite = sprites[i];
-            val += sprite.life;
+            val += sprite.getLife();
         }
         return val;
     }
@@ -49,7 +49,7 @@ var SpriteGroup = function (_sprites) {
     this.findFirstAlive = function () {
         for (var i in sprites) {
             var sprite = sprites[i];
-            if (sprite.life > 0) {
+            if (!sprite.isDead()) {
                 return sprite;
             }
         }
@@ -59,7 +59,7 @@ var SpriteGroup = function (_sprites) {
         var temp = [];
         for (var i in sprites) {
             var sprite = sprites[i];
-            if (sprite.life > 0) {
+            if (!sprite.isDead()) {
                 temp.push(sprite);
             }
         }
@@ -112,9 +112,6 @@ var TopPanel = cc.Node.extend({
         bindButtonCallback(this.leaveBossBtn, function () {
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         });
-        //var event = new cc.EventCustom(BATTLE_CUSTOM_EVENT.BATTLE_START);
-        //event.setUserData(selfPointer._item1Count.toString());
-        //cc.eventManager.dispatchEvent(event);
 
 
         this.refreshPlayerDiamondText = function () {
@@ -299,6 +296,7 @@ var BattlePanel = cc.Node.extend({
             self.prepareBattle(PlayerData.getStageData());
         });
         this.bindPlayerTapEvent();
+        DamageNumber.initPool();
     },
 
 
@@ -319,7 +317,7 @@ var BattlePanel = cc.Node.extend({
     initBattleHeroes: function () {
         for (var i = 0; i < player.heroes.length; i++) {
             var data = PlayerData.getHeroesData(i);
-            var hero = new HeroUnit(this, data, player.heroes[i].life);
+            var hero = new HeroUnit(this, data, player.heroes[i]);
             this.heroSprites.push(hero);
             this.setHeroSprite(hero, i);
         }
@@ -327,23 +325,19 @@ var BattlePanel = cc.Node.extend({
 
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
-        var enemyDatas;
+        var enemiesData;
         if (this.bossBattle) {
-            enemyDatas = stage.getBossEnemDatas();
+            enemiesData = stage.getBossData();
         } else {
-            enemyDatas = stage.getRandomEnemyDatas();
+            enemiesData = stage.getRandomEnemiesData();
         }
 
-        for (var i = 0; i < enemyDatas.length; i++) {
-            var data = enemyDatas[i];
+        for (var i = 0; i < enemiesData.length; i++) {
+            var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             this.enemySprites.push(enemy);
             this.setEnemySprite(enemy, i);
         }
-    },
-
-    updateBattleHeroes: function () {
-        this.heroSprites.resetSprites();
     },
 
     findNextEnemy: function () {
@@ -369,7 +363,6 @@ var BattlePanel = cc.Node.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
-        this.updateBattleHeroes();
         this.prepareBattle(stage);
     },
 

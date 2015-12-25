@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>effect/effect5001/effect5001_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{235,156},{152,100}}</string>
+				<key>offset</key>
+				<string>{-1,-6}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,124}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{835,317},{155,110}}</string>
+				<key>offset</key>
+				<string>{-5,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,124}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{668,290},{167,117}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{172,117}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{855,187},{167,130}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{172,133}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{668,154},{187,136}}</string>
+				<key>offset</key>
+				<string>{-1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{193,140}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{880,0},{187,141}}</string>
+				<key>offset</key>
+				<string>{-3,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{197,142}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{454,154},{214,150}}</string>
+				<key>offset</key>
+				<string>{-10,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{239,151}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_08.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{454,0},{214,154}}</string>
+				<key>offset</key>
+				<string>{-10,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{239,157}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_09.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{668,0},{212,154}}</string>
+				<key>offset</key>
+				<string>{-11,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{239,158}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{235,0},{219,156}}</string>
+				<key>offset</key>
+				<string>{-7,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{239,158}</string>
+			</dict>
+			<key>effect/effect5001/effect5001_11.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{235,158}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{239,160}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>effect5001.png</string>
+			<key>realTextureFileName</key>
+			<string>effect5001.png</string>
+			<key>size</key>
+			<string>{1022,427}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1022</integer>
+			<key>height</key>
+			<integer>427</integer>
+		</dict>
+	</dict>
+</plist>

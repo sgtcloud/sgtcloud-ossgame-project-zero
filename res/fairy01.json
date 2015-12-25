@@ -1,20 +1,20 @@
 {
-  "ID": "bee138fa-e7d0-4815-a1c6-42f910cfc810",
+  "ID": "9f597128-d3c3-4316-8f0f-24950c8c7720",
   "Version": "2.3.3.0",
-  "Name": "effect5001",
+  "Name": "fairy01",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 20,
+        "Duration": 27,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": -851192098,
+            "ActionTag": 1111306293,
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.7628,
-                "Y": -27.7465,
+                "X": -6.2977,
+                "Y": -4.829,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,26 +22,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 4.7627,
-                "Y": -25.7465,
-                "FrameIndex": 2,
+                "X": -6.2977,
+                "Y": -4.829,
+                "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": -0.0221,
-                "Y": -23.8757,
-                "FrameIndex": 4,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.0501,
-                "Y": -25.5934,
+                "X": -6.2977,
+                "Y": -4.829,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -49,26 +40,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -0.1701,
-                "Y": -24.9777,
-                "FrameIndex": 8,
+                "X": -6.2977,
+                "Y": -4.829,
+                "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 1.2101,
-                "Y": -23.8621,
-                "FrameIndex": 10,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 12.5902,
-                "Y": -26.7464,
+                "X": -14.9535,
+                "Y": -13.7823,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -76,9 +58,45 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 12.5902,
-                "Y": -28.1085,
-                "FrameIndex": 14,
+                "X": -13.9535,
+                "Y": -8.7823,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -10.9536,
+                "Y": -0.7823,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -8.9536,
+                "Y": 5.2177,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -10.9535,
+                "Y": -0.7823,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -13.9535,
+                "Y": -8.7823,
+                "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
                 },
@@ -88,14 +106,14 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -851192098,
+            "ActionTag": 1111306293,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_01.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_die01.png",
+                  "Plist": "fairy01.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -104,28 +122,18 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_02.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_die02.png",
+                  "Plist": "fairy01.plist"
                 },
-                "FrameIndex": 2,
+                "FrameIndex": 3,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_03.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 4,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_04.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_die03.png",
+                  "Plist": "fairy01.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -134,28 +142,18 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_05.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_die04.png",
+                  "Plist": "fairy01.plist"
                 },
-                "FrameIndex": 8,
+                "FrameIndex": 9,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_06.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 10,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_07.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_run01.png",
+                  "Plist": "fairy01.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -164,28 +162,18 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_08.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_run02.png",
+                  "Plist": "fairy01.plist"
                 },
-                "FrameIndex": 14,
+                "FrameIndex": 15,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_09.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 16,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_10.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_run03.png",
+                  "Plist": "fairy01.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -194,10 +182,30 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_11.png",
-                  "Plist": "effect5001.plist"
+                  "Path": "fairy/fairy01/fairy01_run04.png",
+                  "Plist": "fairy01.plist"
                 },
-                "FrameIndex": 20,
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "fairy/fairy01/fairy01_run05.png",
+                  "Plist": "fairy01.plist"
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "fairy/fairy01/fairy01_run06.png",
+                  "Plist": "fairy01.plist"
+                },
+                "FrameIndex": 27,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -210,19 +218,25 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 20,
-          "Name": "boom",
+          "EndIndex": 9,
+          "Name": "die",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 12,
+          "EndIndex": 27,
+          "Name": "run",
           "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
-        "Tag": 9,
+        "Tag": 50,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "effect/effect5001/effect5001_01.png",
-              "Plist": "effect5001.plist"
+              "Path": "fairy/fairy01/fairy01_die01.png",
+              "Plist": "fairy01.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -232,8 +246,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": 0.7628,
-              "Y": -27.7465
+              "X": -6.2977,
+              "Y": -4.829
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -249,17 +263,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -89.7372,
-            "RightMargin": -91.2628,
-            "TopMargin": -96.2535,
-            "BottomMargin": -27.7465,
-            "Tag": 6,
-            "ActionTag": -851192098,
+            "LeftMargin": -37.7977,
+            "RightMargin": -25.2023,
+            "TopMargin": -77.171,
+            "BottomMargin": -4.829,
+            "Tag": 51,
+            "ActionTag": 1111306293,
             "Size": {
-              "X": 181.0,
-              "Y": 124.0
+              "X": 63.0,
+              "Y": 82.0
             },
-            "Name": "effect5001",
+            "Name": "fairy01",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -271,8 +285,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect5001.plist",
-        "effect5001.png"
+        "fairy01.plist",
+        "fairy01.png"
       ],
       "ctype": "GameFileData"
     }

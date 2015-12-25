@@ -1,30 +1,61 @@
-var UNIT_CAMP_PLAYER = 0;
-var UNIT_CAMP_ENEMY = 1;
-
 //伤害数字类
 var DamageNumber = cc.Node.extend({
     ctor: function (val, ctr) {
         this._super();
-        var size = ctr ? 40 : 20;
-        var text = new cc.LabelTTF(Math.round(val), "Arial", size);
-        text.setAnchorPoint(0.5, 0.);
-        this.addChild(text);
-        if (ctr) {
-            text.color = cc.color(255, 100, 100);
-        }
+        this.text = new cc.LabelTTF(Math.round(val), "Arial");
+        this.text.setAnchorPoint(0.5, 0.5);
+        this.addChild(this.text);
 
-        var a = cc.scaleTo(0.1, 2, 2);
-        var b = cc.scaleTo(0.1, 1, 1);
+        this.scaleLarge = cc.scaleTo(0.2, 2, 2);
+        this.scaleBack = cc.scaleTo(0.1, 1, 1);
 
-        this.runAction(cc.sequence(a, b));
-
-        var c = cc.moveBy(0.5, 0, 100);
-        var d = cc.callFunc(function () {
+        this.moveUp = cc.moveBy(0.5, 0, 60);
+        this.disappare = cc.callFunc(function () {
             this.removeFromParent(true);
+            cc.pool.putInPool(this);
         }, this);
-        this.runAction(cc.sequence(c, d));
+        this.initData(val, ctr);
+    },
+
+    initData: function (val, ctr) {
+        this.size = ctr ? 40 : 20;
+        this.text.setString(Math.round(val));
+        if (ctr) {
+            this.text.color = cc.color(255, 100, 100);
+        } else {
+            this.text.color = cc.color(255, 200, 200);
+        }
+    },
+
+    unuse: function () {
+        this.setVisible(false);
+    },
+
+    reuse: function (val, ctr) {
+        this.setVisible(true);
+        this.initData(val, ctr);
+    },
+
+    fire: function () {
+        this.runAction(cc.spawn(cc.sequence(this.scaleLarge, this.scaleBack), cc.sequence(this.moveUp, this.disappare)));
     }
 });
+
+DamageNumber.createFromPool = function (val, ctr) {
+    var pool = cc.pool;
+    if (pool.hasObject(DamageNumber)) {
+        return pool.getFromPool(DamageNumber, val, ctr);
+    } else {
+        return new DamageNumber(val, ctr);
+    }
+}
+
+DamageNumber.initPool = function () {
+    for (var i = 0; i < 32; i++) {
+        cc.pool.putInPool(new DamageNumber());
+    }
+}
+
 //战斗单位容器 英雄和敌人的父类
 var BattleUnit = cc.Node.extend({
     ctor: function (battle, data, camp) {
@@ -60,7 +91,7 @@ var BattleUnit = cc.Node.extend({
 
         {//data
             this.attack = data.getAttack();
-            this.life = life;
+            this.life = data.getLife();
             //设置生命值
             this.changeLife = function (val) {
                 this.life += val;
@@ -70,21 +101,24 @@ var BattleUnit = cc.Node.extend({
             }
             //重置复位单位的生命值，动画 ，复活时使用
             this.reset = function () {
-                this.life = this.data.getLife();
                 this.animateTime = 0;
                 this.playAnimation('stand');
             }
         }
         //调用显示伤害值
         this.showDamageNumber = function (val, ctr) {
-            var dmg = new DamageNumber(val, ctr);
-            dmg.setPosition(-10 + Math.random() * 20, 150 + Math.random() * 20);
+            var dmg = DamageNumber.createFromPool(val, ctr);
+            dmg.setPosition(0, 64);
             this.addChild(dmg);
-        }
+            dmg.fire();
+        };
         //判断是否死亡
         this.isDead = function () {
             return this.life <= 0;
-        }
+        };
+        this.getLife = function () {
+            return this.life;
+        };
         //判断是否激活
         this.isActive = function () {
             return true;
@@ -113,7 +147,7 @@ var BattleUnit = cc.Node.extend({
             this.changeLife(-dmg);
             this.showDamageNumber(dmg, ctr);
             this.onDamaged();
-            if (this.life <= 0) {
+            if (this.isDead()) {
                 this.playAnimation('die');
                 this.onDead();
             } else {
@@ -151,7 +185,7 @@ var BattleUnit = cc.Node.extend({
 
         this.update = function (dt) {
             this.onUpdateAnimate(dt);
-            if (this.life <= 0) {
+            if (this.isDead()) {
                 this.onUpdateDead(dt);
                 return;
             }
@@ -174,9 +208,8 @@ var BattleUnit = cc.Node.extend({
 
 //英雄扩展类
 var HeroUnit = BattleUnit.extend({
-    ctor: function (battle, data, life) {
+    ctor: function (battle, data, hero) {
         this._super(battle, data, BattleConsts.Camp.Player);
-        //this.setScale(UNIT_SCALE,UNIT_SCALE);
         this.recover = 0;
         this.cooldown = 0;
 
@@ -190,7 +223,13 @@ var HeroUnit = BattleUnit.extend({
         //刷新刷条
         this.refreshLifeBar = function () {
             var max = this.data.getLife();
-            this.lifeBar.setPercent(this.life / max * 100);
+            this.lifeBar.setPercent(hero.life / max * 100);
+        }
+        this.getLife = function () {
+            return hero.life;
+        };
+        this.isDead = function () {
+            return hero.life <= 0;
         }
         this.onAttacked = function () {
             var target = battle.findNextEnemy();
@@ -201,6 +240,12 @@ var HeroUnit = BattleUnit.extend({
                 } else {
                     target.doDamage(this.attack);
                 }
+            }
+        }
+        this.changeLife = function (val) {
+            hero.life += val;
+            if (hero.life < 0) {
+                hero.life = 0;
             }
         }
         this.onDamaged = function () {
@@ -216,7 +261,9 @@ var HeroUnit = BattleUnit.extend({
         }
         //复活时被调用的
         this.onRecover = function () {
+            this.changeLife(this.getMaxLife());
             this.reset();
+            this.refreshLifeBar();
             battle.onHeroRecover(this);
         }
         //使用主动技能时被调用

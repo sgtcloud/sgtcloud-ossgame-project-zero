@@ -52,15 +52,15 @@ var Stage = function (id) {
         var temp = data.enemyTypes[rand];
         return new Enemy(temp);
     };
-    this.getRandomEnemyDatas = function () {
-        var enemys = [];
+    this.getRandomEnemiesData = function () {
+        var enemies = [];
         var count = this.getRandomEnemyCount();
         for (var i = 0; i < count; i++) {
-            enemys.push(this.getRandomEnemyData());
+            enemies.push(this.getRandomEnemyData());
         }
-        return enemys;
+        return enemies;
     };
-    this.getBossEnemDatas = function () {
+    this.getBossData = function () {
         var enemys = [];
         var count = data.bossBattle.length;
         for (var i = 0; i < count; i++) {

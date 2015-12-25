@@ -1,22 +1,47 @@
 {
-  "ID": "c46787da-0241-468a-8095-8edd786ecbe4",
+  "ID": "6e13232f-c017-40ad-ac57-6c491e0c505c",
   "Version": "2.3.3.0",
-  "Name": "effect5002",
+  "Name": "gold02",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 8,
+        "Duration": 3,
         "Speed": 0.5,
         "Timelines": [
           {
-            "ActionTag": 2054838712,
+            "ActionTag": 1236783160,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1236783160,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5002/effect5002_01.png",
-                  "Plist": "effect5002.plist"
+                  "Path": "gold/gold02/gold02_shine01.png",
+                  "Plist": "gold02.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -25,40 +50,10 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "effect/effect5002/effect5002_02.png",
-                  "Plist": "effect5002.plist"
+                  "Path": "gold/gold02/gold02_shine02.png",
+                  "Plist": "gold02.plist"
                 },
-                "FrameIndex": 2,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5002/effect5002_03.png",
-                  "Plist": "effect5002.plist"
-                },
-                "FrameIndex": 4,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5002/effect5002_04.png",
-                  "Plist": "effect5002.plist"
-                },
-                "FrameIndex": 6,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5002/effect5002_05.png",
-                  "Plist": "effect5002.plist"
-                },
-                "FrameIndex": 8,
+                "FrameIndex": 3,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -71,19 +66,19 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 8,
-          "Name": "boom",
+          "EndIndex": 3,
+          "Name": "shine",
           "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
-        "Tag": 11,
+        "Tag": 14,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "effect/effect5002/effect5002_01.png",
-              "Plist": "effect5002.plist"
+              "Path": "gold/gold02/gold02_shine01.png",
+              "Plist": "gold02.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -111,17 +106,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -50.0,
-            "RightMargin": -50.0,
-            "TopMargin": -35.0,
-            "BottomMargin": -35.0,
-            "Tag": 9,
-            "ActionTag": 2054838712,
+            "LeftMargin": -37.5,
+            "RightMargin": -37.5,
+            "TopMargin": -32.0,
+            "BottomMargin": -32.0,
+            "Tag": 21,
+            "ActionTag": 1236783160,
             "Size": {
-              "X": 100.0,
-              "Y": 70.0
+              "X": 75.0,
+              "Y": 64.0
             },
-            "Name": "effect5002",
+            "Name": "gold02",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -133,8 +128,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect5002.plist",
-        "effect5002.png"
+        "gold02.plist",
+        "gold02.png"
       ],
       "ctype": "GameFileData"
     }
