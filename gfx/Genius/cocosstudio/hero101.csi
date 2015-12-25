@@ -1,6 +1,35 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="hero101" Type="Plist" ID="2de212a0-8964-44f3-a4b3-098ffe74919d" Version="2.3.3.0" />
+  <PropertyGroup Name="hero101" Type="Plist" ID="00b45e77-7fe9-45e9-bde3-37318e0da2a5" Version="2.3.3.0" />
   <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="hero/hero101/hero101_atk01.png" />
+      <FilePathData Path="hero/hero101/hero101_atk02.png" />
+      <FilePathData Path="hero/hero101/hero101_atk03.png" />
+      <FilePathData Path="hero/hero101/hero101_atk04.png" />
+      <FilePathData Path="hero/hero101/hero101_atk05.png" />
+      <FilePathData Path="hero/hero101/hero101_atk06.png" />
+      <FilePathData Path="hero/hero101/hero101_atk07.png" />
+      <FilePathData Path="hero/hero101/hero101_atk08.png" />
+      <FilePathData Path="hero/hero101/hero101_dead01.png" />
+      <FilePathData Path="hero/hero101/hero101_die01.png" />
+      <FilePathData Path="hero/hero101/hero101_die02.png" />
+      <FilePathData Path="hero/hero101/hero101_die03.png" />
+      <FilePathData Path="hero/hero101/hero101_die04.png" />
+      <FilePathData Path="hero/hero101/hero101_die05.png" />
+      <FilePathData Path="hero/hero101/hero101_hit01.png" />
+      <FilePathData Path="hero/hero101/hero101_hit02.png" />
+      <FilePathData Path="hero/hero101/hero101_hit03.png" />
+      <FilePathData Path="hero/hero101/hero101_hit04.png" />
+      <FilePathData Path="hero/hero101/hero101_hit05.png" />
+      <FilePathData Path="hero/hero101/hero101_skill01.png" />
+      <FilePathData Path="hero/hero101/hero101_skill02.png" />
+      <FilePathData Path="hero/hero101/hero101_skill03.png" />
+      <FilePathData Path="hero/hero101/hero101_skill04.png" />
+      <FilePathData Path="hero/hero101/hero101_stand01.png" />
+      <FilePathData Path="hero/hero101/hero101_stand02.png" />
+      <FilePathData Path="hero/hero101/hero101_stand03.png" />
+      <FilePathData Path="hero/hero101/hero101_stand04.png" />
+    </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
 </PlistInfoProjectFile>
