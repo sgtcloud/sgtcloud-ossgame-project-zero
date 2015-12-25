@@ -2,7 +2,7 @@
   <PropertyGroup Name="fairy01" Type="Node" ID="9f597128-d3c3-4316-8f0f-24950c8c7720" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="27" Speed="0.4000">
+      <Animation Duration="27" Speed="0.5000">
         <Timeline ActionTag="1111306293" Property="Position">
           <PointFrame FrameIndex="0" X="-6.2977" Y="-4.8290">
             <EasingData Type="0" />
@@ -70,24 +70,24 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="die" StartIndex="0" EndIndex="9">
-          <RenderColor A="150" R="112" G="128" B="144" />
+          <RenderColor A="255" R="112" G="128" B="144" />
         </AnimationInfo>
         <AnimationInfo Name="run" StartIndex="12" EndIndex="27">
-          <RenderColor A="150" R="102" G="205" B="170" />
+          <RenderColor A="255" R="102" G="205" B="170" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="50" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="fairy01" ActionTag="1111306293" Tag="51" IconVisible="False" LeftMargin="-45.4535" RightMargin="-17.5465" TopMargin="-73.2177" BottomMargin="-8.7823" ctype="SpriteObjectData">
-            <Size X="57.0000" Y="59.0000" />
+          <AbstractNodeData Name="fairy01" ActionTag="1111306293" Tag="51" IconVisible="False" LeftMargin="-37.7977" RightMargin="-25.2023" TopMargin="-77.1710" BottomMargin="-4.8290" ctype="SpriteObjectData">
+            <Size X="63.0000" Y="82.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-13.9535" Y="-8.7823" />
+            <Position X="-6.2977" Y="-4.8290" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run06.png" Plist="fairy01.plist" />
+            <FileData Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die01.png" Plist="fairy01.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

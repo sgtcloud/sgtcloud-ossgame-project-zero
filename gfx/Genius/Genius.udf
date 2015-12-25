@@ -31,17 +31,30 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="enemy1001.csi" />
-          <FilePathData Path="enemy1002.csi" />
-          <FilePathData Path="enemy1003.csi" />
-          <FilePathData Path="enemy1004.csi" />
-          <FilePathData Path="enemy1005.csi" />
-          <FilePathData Path="hero103.csi" />
-          <FilePathData Path="hero104.csi" />
-          <FilePathData Path="hero105.csi" />
-          <FilePathData Path="hero102.csi" />
+          <FilePathData Path="enemy1001.csd" />
+          <FilePathData Path="chest01.csd" />
+          <FilePathData Path="chest02.csd" />
+          <FilePathData Path="chest03.csd" />
+          <FilePathData Path="chest04.csd" />
+          <FilePathData Path="effect5000.csd" />
+          <FilePathData Path="effect5001.csd" />
+          <FilePathData Path="effect5002.csd" />
+          <FilePathData Path="enemy1002.csd" />
+          <FilePathData Path="enemy1003.csd" />
+          <FilePathData Path="enemy1004.csd" />
+          <FilePathData Path="enemy1005.csd" />
+          <FilePathData Path="fairy01.csd" />
+          <FilePathData Path="gold01.csd" />
+          <FilePathData Path="gold02.csd" />
+          <FilePathData Path="gold03.csd" />
+          <FilePathData Path="gold04.csd" />
+          <FilePathData Path="hero101.csd" />
+          <FilePathData Path="hero102.csd" />
+          <FilePathData Path="hero103.csd" />
+          <FilePathData Path="hero104.csd" />
+          <FilePathData Path="hero105.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="hero105.csi" />
+        <ActiveDocument Path="hero105.csd" />
       </Value>
     </Item>
   </Properties>

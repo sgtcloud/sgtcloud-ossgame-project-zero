@@ -5,8 +5,8 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 78,
-        "Speed": 0.4,
+        "Duration": 84,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": 686399736,
@@ -112,6 +112,33 @@
                 "ctype": "PointFrameData"
               },
               {
+                "X": -21.6243,
+                "Y": -0.2283,
+                "FrameIndex": 33,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -22.2201,
+                "Y": -0.5067,
+                "FrameIndex": 36,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -22.3159,
+                "Y": -1.2851,
+                "FrameIndex": 39,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
                 "X": -20.4117,
                 "Y": -4.0635,
                 "FrameIndex": 42,
@@ -193,9 +220,36 @@
                 "ctype": "PointFrameData"
               },
               {
+                "X": -21.2575,
+                "Y": -4.0701,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -20.692,
+                "Y": -3.8482,
+                "FrameIndex": 74,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -20.1267,
+                "Y": -3.6263,
+                "FrameIndex": 79,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
                 "X": -19.5614,
                 "Y": -3.4044,
-                "FrameIndex": 78,
+                "FrameIndex": 84,
                 "EasingData": {
                   "Type": 0
                 },
@@ -454,7 +508,7 @@
                   "Path": "hero/hero101/hero101_stand02.png",
                   "Plist": "hero101.plist"
                 },
-                "FrameIndex": 72,
+                "FrameIndex": 74,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -464,7 +518,7 @@
                   "Path": "hero/hero101/hero101_stand03.png",
                   "Plist": "hero101.plist"
                 },
-                "FrameIndex": 75,
+                "FrameIndex": 79,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -474,7 +528,7 @@
                   "Path": "hero/hero101/hero101_stand04.png",
                   "Plist": "hero101.plist"
                 },
-                "FrameIndex": 78,
+                "FrameIndex": 84,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -517,7 +571,7 @@
         },
         {
           "StartIndex": 69,
-          "EndIndex": 78,
+          "EndIndex": 84,
           "Name": "stand",
           "ctype": "AnimationInfoData"
         }
@@ -528,7 +582,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero101/hero101_atk01.png",
+              "Path": "hero/hero101/hero101_die05.png",
               "Plist": "hero101.plist"
             },
             "BlendFunc": {
@@ -539,8 +593,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -21.8623,
-              "Y": -4.9797
+              "X": -22.3159,
+              "Y": -1.2851
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -556,15 +610,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -70.3623,
-            "RightMargin": -26.6377,
-            "TopMargin": -93.0203,
-            "BottomMargin": -4.9797,
+            "LeftMargin": -67.3159,
+            "RightMargin": -22.6841,
+            "TopMargin": -44.7149,
+            "BottomMargin": -1.2851,
             "Tag": 9,
             "ActionTag": 686399736,
             "Size": {
-              "X": 97.0,
-              "Y": 98.0
+              "X": 90.0,
+              "Y": 46.0
             },
             "Name": "hero101",
             "ctype": "SpriteObjectData"

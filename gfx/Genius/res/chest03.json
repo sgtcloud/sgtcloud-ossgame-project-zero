@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 5,
-        "Speed": 0.3333,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": -504332941,
@@ -83,7 +83,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "chest/chest03/chest03_open01.png",
+              "Path": "chest/chest03/chest03_close01.png",
               "Plist": "chest03.plist"
             },
             "BlendFunc": {

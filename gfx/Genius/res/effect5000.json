@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 38,
-        "Speed": 0.4,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": 537988529,
@@ -279,10 +279,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -102.0,
-            "RightMargin": -102.0,
-            "TopMargin": -89.0,
-            "BottomMargin": -89.0,
+            "LeftMargin": -137.5,
+            "RightMargin": -137.5,
+            "TopMargin": -76.0,
+            "BottomMargin": -76.0,
             "Tag": 3,
             "ActionTag": 537988529,
             "Size": {

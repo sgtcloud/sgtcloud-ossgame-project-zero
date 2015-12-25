@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 5,
-        "Speed": 0.3333,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": -1849589259,
@@ -83,7 +83,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "chest/chest01/chest01_open01.png",
+              "Path": "chest/chest01/chest01_close01.png",
               "Plist": "chest01.plist"
             },
             "BlendFunc": {
@@ -96,7 +96,7 @@
             },
             "Position": {
               "X": 0.0,
-              "Y": -0.0001
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -114,8 +114,8 @@
             },
             "LeftMargin": -54.5,
             "RightMargin": -54.5,
-            "TopMargin": -52.4999,
-            "BottomMargin": -52.5001,
+            "TopMargin": -52.5,
+            "BottomMargin": -52.5,
             "Tag": 45,
             "ActionTag": -1849589259,
             "Size": {

@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero104" Type="Node" ID="df805010-8660-4aa5-86f9-654d772e2f68" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="78" Speed="0.4000">
+      <Animation Duration="78" Speed="0.5000">
         <Timeline ActionTag="264548272" Property="Position">
           <PointFrame FrameIndex="0" X="6.8114" Y="-8.9112">
             <EasingData Type="0" />

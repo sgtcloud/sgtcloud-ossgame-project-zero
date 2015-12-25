@@ -2,7 +2,7 @@
   <PropertyGroup Name="effect5000" Type="Node" ID="d5985f5d-6202-421b-a57d-afeb22f0cc29" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="38" Speed="0.4000">
+      <Animation Duration="38" Speed="0.5000">
         <Timeline ActionTag="537988529" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5000/effect5000_a01.png" Plist="effect5000.plist" />
@@ -83,7 +83,7 @@
       <ObjectData Name="Node" Tag="5" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="effect5000" ActionTag="537988529" Tag="3" IconVisible="False" LeftMargin="-102.0000" RightMargin="-102.0000" TopMargin="-89.0000" BottomMargin="-89.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="effect5000" ActionTag="537988529" Tag="3" IconVisible="False" LeftMargin="-137.5000" RightMargin="-137.5000" TopMargin="-76.0000" BottomMargin="-76.0000" ctype="SpriteObjectData">
             <Size X="275.0000" Y="152.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />

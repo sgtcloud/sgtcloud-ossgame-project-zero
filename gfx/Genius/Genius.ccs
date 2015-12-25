@@ -758,7 +758,6 @@
         <PlistInfo Name="effect5001.csi" Type="Plist" />
         <Project Name="effect5002.csd" Type="Node" />
         <PlistInfo Name="effect5002.csi" Type="Plist" />
-        <Project Name="enemy_csd/enemy1001.csd" Type="Node" />
         <PlistInfo Name="enemy1001.csi" Type="Plist" />
         <Project Name="enemy1002.csd" Type="Node" />
         <PlistInfo Name="enemy1002.csi" Type="Plist" />
@@ -788,6 +787,7 @@
         <PlistInfo Name="hero104.csi" Type="Plist" />
         <Project Name="hero105.csd" Type="Node" />
         <PlistInfo Name="hero105.csi" Type="Plist" />
+        <Project Name="enemy1001.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

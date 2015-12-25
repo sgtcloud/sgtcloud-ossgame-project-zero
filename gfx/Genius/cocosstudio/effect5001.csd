@@ -2,7 +2,7 @@
   <PropertyGroup Name="effect5001" Type="Node" ID="bee138fa-e7d0-4815-a1c6-42f910cfc810" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="20" Speed="0.4000">
+      <Animation Duration="20" Speed="0.5000">
         <Timeline ActionTag="-851192098" Property="Position">
           <PointFrame FrameIndex="0" X="0.7628" Y="-27.7465">
             <EasingData Type="0" />

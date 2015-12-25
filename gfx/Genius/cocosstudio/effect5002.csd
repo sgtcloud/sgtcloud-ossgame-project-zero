@@ -2,7 +2,7 @@
   <PropertyGroup Name="effect5002" Type="Node" ID="c46787da-0241-468a-8095-8edd786ecbe4" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="8" Speed="0.4000">
+      <Animation Duration="8" Speed="0.5000">
         <Timeline ActionTag="2054838712" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5002/effect5002_01.png" Plist="effect5002.plist" />

@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 27,
-        "Speed": 0.4,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": 1111306293,
@@ -235,7 +235,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "fairy/fairy01/fairy01_run06.png",
+              "Path": "fairy/fairy01/fairy01_die01.png",
               "Plist": "fairy01.plist"
             },
             "BlendFunc": {
@@ -246,8 +246,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -13.9535,
-              "Y": -8.7823
+              "X": -6.2977,
+              "Y": -4.829
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -263,15 +263,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -45.4535,
-            "RightMargin": -17.5465,
-            "TopMargin": -73.2177,
-            "BottomMargin": -8.7823,
+            "LeftMargin": -37.7977,
+            "RightMargin": -25.2023,
+            "TopMargin": -77.171,
+            "BottomMargin": -4.829,
             "Tag": 51,
             "ActionTag": 1111306293,
             "Size": {
-              "X": 57.0,
-              "Y": 59.0
+              "X": 63.0,
+              "Y": 82.0
             },
             "Name": "fairy01",
             "ctype": "SpriteObjectData"

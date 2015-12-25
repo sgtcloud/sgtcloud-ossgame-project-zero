@@ -2,7 +2,7 @@
   <PropertyGroup Name="enemy1002" Type="Node" ID="6c68f356-18ba-4f60-a74f-9d919ff1f20c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="57" Speed="0.4000">
+      <Animation Duration="57" Speed="0.5000">
         <Timeline ActionTag="103088517" Property="Position">
           <PointFrame FrameIndex="0" X="-18.7548" Y="-9.1535">
             <EasingData Type="0" />
