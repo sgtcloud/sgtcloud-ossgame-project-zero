@@ -25,14 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="RankLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="RankLayer.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
