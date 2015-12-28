@@ -29,3 +29,16 @@ function bindButtonCallback(button, callback) {
         }
     }, button);
 }
+
+function removeCCSAnimationDefaultTween(timelines){
+    for (var i in timelines) {
+        var timeline = timelines[i];
+        var frames = timeline.getFrames();
+        for (var j in frames) {
+            var frame = frames[j];
+            if (frame.isTween()) {
+                frame.setTween(false);
+            }
+        }
+    }
+}

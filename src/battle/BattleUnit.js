@@ -71,17 +71,7 @@ var BattleUnit = cc.Node.extend({
         {
             //去除CCS导出文件位移会自带缓动效果的问题
             var timelines = this.animation.getTimelines();
-
-            for (var i in timelines) {
-                var timeline = timelines[i];
-                var frames = timeline.getFrames();
-                for (var j in frames) {
-                    var frame = frames[j];
-                    if (frame.isTween()) {
-                        frame.setTween(false);
-                    }
-                }
-            }
+            removeCCSAnimationDefaultTween(timelines);
         }
         this.node.runAction(this.animation);
 
