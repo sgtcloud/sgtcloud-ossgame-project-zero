@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="39" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="860.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="860.0000" />
             <Children>
               <AbstractNodeData Name="bg1" ActionTag="-1288208011" Tag="381" IconVisible="False" TopMargin="40.0000" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -124,14 +124,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="rank" ActionTag="86413385" Tag="46" IconVisible="False" LeftMargin="233.7461" RightMargin="223.2539" TopMargin="11.0536" BottomMargin="810.9464" Scale9Width="183" Scale9Height="38" ctype="ImageViewObjectData">
-                <Size X="183.0000" Y="38.0000" />
+              <AbstractNodeData Name="rank" ActionTag="86413385" Tag="46" IconVisible="False" LeftMargin="233.7461" RightMargin="223.2539" TopMargin="5.0536" BottomMargin="804.9464" Scale9Width="200" Scale9Height="55" ctype="ImageViewObjectData">
+                <Size X="183.0000" Y="50.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="325.2461" Y="829.9464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5082" Y="0.9651" />
-                <PreSize X="0.2859" Y="0.0442" />
+                <PreSize X="0.2859" Y="0.0581" />
                 <FileData Type="Normal" Path="rankUI/rankText.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="desc_text" ActionTag="1299772587" Tag="14" IconVisible="False" LeftMargin="36.7061" RightMargin="503.2939" TopMargin="87.2359" BottomMargin="752.7641" FontSize="20" LabelText="排行榜说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

@@ -167,6 +167,9 @@
           <Image Name="rankText.png" />
         </Folder>
         <Project Name="ShopLayer.csd" Type="Layer" />
+        <Folder Name="shopUI">
+          <Image Name="shopText.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
