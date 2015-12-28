@@ -28,22 +28,10 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="EquipHeroView.csd" />
-          <FilePathData Path="EquipDesc.csd" />
-          <FilePathData Path="Equiplayer.csd" />
-          <FilePathData Path="Blood.csd" />
-          <FilePathData Path="CloseBtn.csd" />
           <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="RankView.csd" />
           <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="EnemyList.csd" />
-          <FilePathData Path="TitleLayer.csd" />
-          <FilePathData Path="MenuLayer.csd" />
-          <FilePathData Path="GoldLayer.csd" />
-          <FilePathData Path="EquipBtn.csd" />
-          <FilePathData Path="SkillLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="SkillLayer.csd" />
+        <ActiveDocument Path="RankLayer.csd" />
       </Value>
     </Item>
   </Properties>
