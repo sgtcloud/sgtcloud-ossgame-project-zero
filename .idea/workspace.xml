@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a4f0a76-6704-4dd8-8cde-86035b0552c9" name="Default" comment="">
       <change type="DELETED" beforePath="D:\html5workspace\sgtcloud-ossgame-project-zero\.idea\workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battle/BattleUnit.js" afterPath="$PROJECT_DIR$/src/battle/BattleUnit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apps.js" afterPath="$PROJECT_DIR$/src/apps.js" />
     </list>
     <list id="744e6798-2cd8-4676-bbbe-9f751886645b" name="Failed commit: Default" comment="更新UI" />
     <ignored path="OSSGame.iws" />
@@ -49,8 +47,8 @@
       <file leaf-file-name="apps.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/apps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31914893">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.6028369">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -447,7 +445,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451304597512</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="再次删除workspace.xml&#10;把移除css的精灵动画缓动的方法提取出来到app.js">
+      <created>1451304965529</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1451304965529</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +512,8 @@
     <MESSAGE value="重构" />
     <MESSAGE value="彻底移除idea的工程文件~" />
     <MESSAGE value="彻底移除idea的工程文件~，漏了一个workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="彻底移除idea的工程文件~，漏了一个workspace.xml" />
+    <MESSAGE value="再次删除workspace.xml&#10;把移除css的精灵动画缓动的方法提取出来到app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="再次删除workspace.xml&#10;把移除css的精灵动画缓动的方法提取出来到app.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -846,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/apps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31914893">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.6028369">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding />
         </state>
       </provider>
