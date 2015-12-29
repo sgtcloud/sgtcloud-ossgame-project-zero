@@ -38,49 +38,45 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="atk_text" ActionTag="-1025331302" Tag="260" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="125.2951" Y="230.3575" />
+              <AbstractNodeData Name="atk" ActionTag="-966206276" Tag="170" IconVisible="False" LeftMargin="12.7592" RightMargin="526.2408" TopMargin="8.6545" BottomMargin="217.3455" Scale9Width="101" Scale9Height="24" ctype="ImageViewObjectData">
+                <Size X="101.0000" Y="24.0000" />
+                <AnchorPoint />
+                <Position X="12.7592" Y="217.3455" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.1958" Y="0.9214" />
-                <PreSize X="0.1094" Y="0.0800" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0199" Y="0.8694" />
+                <PreSize X="0.1578" Y="0.0960" />
+                <FileData Type="Normal" Path="skillUI/hero.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tatk_text" ActionTag="-877663703" Tag="259" IconVisible="False" LeftMargin="557.3304" RightMargin="12.6696" TopMargin="9.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="592.3304" Y="230.3575" />
+              <AbstractNodeData Name="atk_text" ActionTag="-1087542958" Tag="171" IconVisible="False" LeftMargin="115.8028" RightMargin="524.1972" TopMargin="30.6545" BottomMargin="219.3455" CharWidth="14" CharHeight="20" LabelText="" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="0.0000" Y="0.0000" />
+                <AnchorPoint />
+                <Position X="115.8028" Y="219.3455" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.9255" Y="0.9214" />
-                <PreSize X="0.1094" Y="0.0800" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.1809" Y="0.8774" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="atk" ActionTag="-1831883598" Tag="258" IconVisible="False" LeftMargin="9.5628" RightMargin="540.4372" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="英雄DPS：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="90.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="54.5628" Y="231.3578" />
+              <AbstractNodeData Name="tatk" ActionTag="1563928514" Tag="173" IconVisible="False" LeftMargin="497.2654" RightMargin="18.7346" TopMargin="7.1017" BottomMargin="218.8983" Scale9Width="124" Scale9Height="24" ctype="ImageViewObjectData">
+                <Size X="124.0000" Y="24.0000" />
+                <AnchorPoint />
+                <Position X="497.2654" Y="218.8983" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.0853" Y="0.9254" />
-                <PreSize X="0.1406" Y="0.0800" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7770" Y="0.8756" />
+                <PreSize X="0.1937" Y="0.0960" />
+                <FileData Type="Normal" Path="skillUI/tap.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tatk" ActionTag="1479834740" Tag="257" IconVisible="False" LeftMargin="446.3264" RightMargin="73.6736" TopMargin="8.6422" BottomMargin="221.3578" FontSize="20" LabelText="点击攻击力：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="506.3264" Y="231.3578" />
+              <AbstractNodeData Name="tatk_text" ActionTag="309744497" Tag="172" IconVisible="False" LeftMargin="622.5942" RightMargin="17.4058" TopMargin="29.1018" BottomMargin="220.8982" CharWidth="14" CharHeight="20" LabelText="" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="0.0000" Y="0.0000" />
+                <AnchorPoint />
+                <Position X="622.5942" Y="220.8982" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.7911" Y="0.9254" />
-                <PreSize X="0.1875" Y="0.0800" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9728" Y="0.8836" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="533.9998" RightMargin="11.0002" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
@@ -142,7 +138,7 @@
                 <PreSize X="0.1484" Y="0.3800" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9997" RightMargin="534.0002" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9997" RightMargin="534.0003" TopMargin="131.0002" BottomMargin="23.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
                 <Position X="10.9997" Y="23.9998" />

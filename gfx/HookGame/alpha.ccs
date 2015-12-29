@@ -163,9 +163,13 @@
           <Image Name="tab_1.png" />
           <Image Name="tab_2.png" />
           <Image Name="key.png" />
-          <Image Name="battleNum_flont12.png" />
-          <Image Name="flont10.png" />
-          <Image Name="flont12.png" />
+          <Image Name="font12_yellow.png" />
+          <Image Name="font14_red.png" />
+          <Image Name="font22_white.png" />
+          <Image Name="font20_white.png" />
+          <Image Name="font18_green.png" />
+          <Image Name="font18_yellow.png" />
+          <Image Name="font26_yellow.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -186,6 +190,14 @@
         <Project Name="ShopIconLayer.csd" Type="Layer" />
         <Project Name="ItemLayer.csd" Type="Layer" />
         <Project Name="BattleNum.csd" Type="Layer" />
+        <Folder Name="skillUI">
+          <Image Name="hero.png" />
+          <Image Name="tap.png" />
+        </Folder>
+        <Folder Name="battleUI">
+          <Image Name="boss_text.png" />
+          <Image Name="bossTime_bg.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

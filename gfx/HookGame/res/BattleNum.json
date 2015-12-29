@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -53,11 +55,11 @@
               {
                 "CharWidth": 10,
                 "CharHeight": 14,
-                "LabelText": "0123456789",
+                "LabelText": "9999999999",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/flont10.png",
+                  "Path": "mainUI/font14_red.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {},
@@ -106,7 +108,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/flont10.png"
+        "mainUI/font14_red.png"
       ],
       "ctype": "GameFileData"
     }
