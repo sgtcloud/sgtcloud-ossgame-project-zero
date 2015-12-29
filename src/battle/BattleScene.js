@@ -3,24 +3,24 @@ var SpriteGroup = function (_sprites) {
 
     this.get = function (i) {
         return sprites[i];
-    }
+    };
     this.count = function () {
         return sprites.length;
-    }
+    };
     this.foreach = function (callback, context) {
         for (var i in sprites) {
             callback.call(context, sprites[i], i);
         }
-    }
+    };
     this.push = function (sprite) {
         sprites.push(sprite);
-    }
+    };
     this.clear = function () {
         while (sprites.length > 0) {
             sprites[0].onClear();
             sprites.splice(0, 1);
         }
-    }
+    };
     //精灵组的生命值 显示怪物总血量
     this.getLife = function () {
         var val = 0;
@@ -29,7 +29,7 @@ var SpriteGroup = function (_sprites) {
             val += sprite.getLife();
         }
         return val;
-    }
+    };
     //精灵组的最大生命值 显示怪物总血量
     this.getMaxLife = function () {
         var val = 0;
@@ -38,14 +38,14 @@ var SpriteGroup = function (_sprites) {
             val += sprite.getMaxLife();
         }
         return val;
-    }
+    };
     //重置所有的精灵
     this.resetSprites = function () {
         for (var i in sprites) {
             var sprite = sprites[i];
             sprite.reset();
         }
-    }
+    };
     this.findFirstAlive = function () {
         for (var i in sprites) {
             var sprite = sprites[i];
@@ -54,7 +54,7 @@ var SpriteGroup = function (_sprites) {
             }
         }
         return undefined;
-    }
+    };
     this.findRandomAlive = function () {
         var temp = [];
         for (var i in sprites) {
@@ -273,7 +273,7 @@ var BattlePanel = cc.Node.extend({
         }
         this.setHeroSprite = function (hero, index) {
             this.heroPos[index].addChild(hero);
-        }
+        };
 
 
         //initBattle enemies sprites positions
@@ -283,7 +283,7 @@ var BattlePanel = cc.Node.extend({
         }
         this.setEnemySprite = function (enemy, index) {
             this.enemyPos[index].addChild(enemy);
-        }
+        };
 
         this.bossBattle = false;
         var self = this;
@@ -385,7 +385,7 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-        this.prepareBattle(PlayerData.getStageData())
+        this.prepareBattle(PlayerData.getStageData());
         PlayerData.updatePlayer();
     },
 
@@ -489,7 +489,7 @@ var TabContainer = cc.Node.extend({
             this.buttons[name].setSelected(true);
 
             //console.log(this.menuButtons);
-        }
+        };
 
         //for (var i in this.menuButtons) {
         //	this.menuButtons[i].setEnabled(false);
@@ -513,7 +513,7 @@ var MainScene = cc.Scene.extend({
         //tab container
         this.tabContainer = new TabContainer(this.battlePanel);
         this.tabContainer.setPosition(0, 0);
-        this.addChild(this.tabContainer);
+        this.addChild(this.tabContainer, 100);
         this.tabContainer.updatePlayerGoldText();
 
         //battle panel
