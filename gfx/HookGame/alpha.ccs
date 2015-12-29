@@ -160,6 +160,8 @@
           <Image Name="stage_icon.png" />
           <Image Name="empty.png" />
           <Image Name="battle_icon.png" />
+          <Image Name="tab_1.png" />
+          <Image Name="tab_2.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -169,7 +171,16 @@
         <Project Name="ShopLayer.csd" Type="Layer" />
         <Folder Name="shopUI">
           <Image Name="shopText.png" />
+          <Image Name="moneyTreeTab_1.png" />
+          <Image Name="moneyTreeTab_2.png" />
+          <Image Name="shopTab_1.png" />
+          <Image Name="shopTab_2.png" />
         </Folder>
+        <Project Name="ShopView.csd" Type="Layer" />
+        <Project Name="MoneyTreeView.csd" Type="Layer" />
+        <Project Name="ShopTab.csd" Type="Layer" />
+        <Project Name="ShopIconLayer.csd" Type="Layer" />
+        <Project Name="ItemLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
