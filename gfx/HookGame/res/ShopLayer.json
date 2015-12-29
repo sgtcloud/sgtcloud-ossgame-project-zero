@@ -155,7 +155,7 @@
             "Scale9Height": 42,
             "AnchorPoint": {},
             "Position": {
-              "X": 122.7753,
+              "X": 122.0358,
               "Y": 788.8647
             },
             "Scale": {
@@ -165,15 +165,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.1918,
+              "X": 0.1907,
               "Y": 0.9173
             },
             "PreSize": {
               "X": 0.625,
               "Y": 0.0814
             },
-            "LeftMargin": 122.7753,
-            "RightMargin": 117.2247,
+            "LeftMargin": 122.0358,
+            "RightMargin": 117.9642,
             "TopMargin": 1.1353,
             "BottomMargin": 788.8647,
             "Tag": 48,
@@ -188,18 +188,18 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "rankUI/rankText.png",
+              "Path": "shopUI/shopText.png",
               "Plist": ""
             },
-            "Scale9Width": 183,
-            "Scale9Height": 38,
+            "Scale9Width": 200,
+            "Scale9Height": 55,
             "AnchorPoint": {
               "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 319.037,
-              "Y": 836.2353
+              "X": 322.0358,
+              "Y": 830.975
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -208,22 +208,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4985,
-              "Y": 0.9724
+              "X": 0.5032,
+              "Y": 0.9662
             },
             "PreSize": {
-              "X": 0.2859,
-              "Y": 0.0442
+              "X": 0.3125,
+              "Y": 0.064
             },
-            "LeftMargin": 227.537,
-            "RightMargin": 229.463,
-            "TopMargin": 4.7647,
-            "BottomMargin": 817.2353,
+            "LeftMargin": 222.0358,
+            "RightMargin": 217.9642,
+            "TopMargin": 1.525,
+            "BottomMargin": 803.475,
             "Tag": 47,
             "ActionTag": 1956065607,
             "Size": {
-              "X": 183.0,
-              "Y": 38.0
+              "X": 200.0,
+              "Y": 55.0
             },
             "Name": "rank",
             "ctype": "ImageViewObjectData"
@@ -247,8 +247,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 458.8193,
-              "Y": 672.2436
+              "X": 69.1428,
+              "Y": 762.2877
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -257,17 +257,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7169,
-              "Y": 0.7817
+              "X": 0.108,
+              "Y": 0.8864
             },
             "PreSize": {
               "X": 0.125,
               "Y": 0.0233
             },
-            "LeftMargin": 418.8193,
-            "RightMargin": 141.1807,
-            "TopMargin": 177.7564,
-            "BottomMargin": 662.2436,
+            "LeftMargin": 29.1428,
+            "RightMargin": 530.8572,
+            "TopMargin": 87.7123,
+            "BottomMargin": 752.2877,
             "Tag": 69,
             "ActionTag": -1554368032,
             "Size": {
@@ -276,136 +276,6 @@
             },
             "Name": "Text_10",
             "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 14,
-            "ButtonText": "",
-            "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
-            "NormalFileData": {
-              "Type": "Normal",
-              "Path": "mainUI/bg_11.png",
-              "Plist": ""
-            },
-            "Scale9Enable": true,
-            "Scale9OriginX": 13,
-            "Scale9OriginY": 13,
-            "Scale9Width": 5,
-            "Scale9Height": 21,
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 76.0555,
-              "Y": 437.7996
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1188,
-              "Y": 0.5091
-            },
-            "PreSize": {
-              "X": 0.1563,
-              "Y": 0.0581
-            },
-            "LeftMargin": 26.0555,
-            "RightMargin": 513.9445,
-            "TopMargin": 397.2004,
-            "BottomMargin": 412.7996,
-            "Tag": 70,
-            "ActionTag": 1376488736,
-            "Size": {
-              "X": 100.0,
-              "Y": 50.0
-            },
-            "Name": "Button_3",
-            "ctype": "ButtonObjectData"
-          },
-          {
-            "FontSize": 14,
-            "ButtonText": "",
-            "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
-            "NormalFileData": {
-              "Type": "Normal",
-              "Path": "mainUI/bg_11.png",
-              "Plist": ""
-            },
-            "Scale9Enable": true,
-            "Scale9OriginX": 13,
-            "Scale9OriginY": 13,
-            "Scale9Width": 5,
-            "Scale9Height": 21,
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 176.317,
-              "Y": 438.9632
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.2755,
-              "Y": 0.5104
-            },
-            "PreSize": {
-              "X": 0.1563,
-              "Y": 0.0581
-            },
-            "LeftMargin": 126.317,
-            "RightMargin": 413.683,
-            "TopMargin": 396.0368,
-            "BottomMargin": 413.9632,
-            "Tag": 71,
-            "ActionTag": -385189359,
-            "Size": {
-              "X": 100.0,
-              "Y": 50.0
-            },
-            "Name": "Button_3_0",
-            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {
@@ -418,10 +288,9 @@
       "UsedResources": [
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
-        "mainUI/bg_11.png",
         "mainUI/bg_18.png",
         "mainUI/title_bg4.png",
-        "rankUI/rankText.png"
+        "shopUI/shopText.png"
       ],
       "ctype": "GameFileData"
     }

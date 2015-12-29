@@ -162,6 +162,10 @@
           <Image Name="battle_icon.png" />
           <Image Name="tab_1.png" />
           <Image Name="tab_2.png" />
+          <Image Name="key.png" />
+          <Image Name="battleNum_flont12.png" />
+          <Image Name="flont10.png" />
+          <Image Name="flont12.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -181,6 +185,7 @@
         <Project Name="ShopTab.csd" Type="Layer" />
         <Project Name="ShopIconLayer.csd" Type="Layer" />
         <Project Name="ItemLayer.csd" Type="Layer" />
+        <Project Name="BattleNum.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
