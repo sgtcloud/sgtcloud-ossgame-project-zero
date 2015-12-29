@@ -397,9 +397,11 @@ var BattlePanel = cc.Node.extend({
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
+        cc.log("dead:"+hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
+        cc.log("recover:"+ hero);
     },
     onUseSkill: function (i) {
 
@@ -510,6 +512,8 @@ var MainScene = cc.Scene.extend({
 
         this.battlePanel = new BattlePanel(this);
 
+        this.battlePanel.initBattle(PlayerData.getStageData());
+
         //tab container
         this.tabContainer = new TabContainer(this.battlePanel);
         this.tabContainer.setPosition(0, 0);
@@ -528,7 +532,7 @@ var MainScene = cc.Scene.extend({
 
         this.tabContainer.showMenuLayer('main');
 
-        this.battlePanel.initBattle(PlayerData.getStageData());
+
 
     }
 });
