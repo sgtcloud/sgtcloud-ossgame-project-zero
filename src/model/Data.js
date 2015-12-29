@@ -18,7 +18,8 @@ function getLevelData(data, key, lv) {
     if (!data.levelDatas[lv]) {
         return data.levelDatas[0][key];
     }
-    return data.levelDatas[lv][key];
+    var len=data.levelDatas.length;
+    return data.levelDatas[len-lv][key];
 }
 
 function getAffectValue(data, key, lv) {
