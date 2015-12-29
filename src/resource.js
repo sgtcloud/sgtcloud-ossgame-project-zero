@@ -38,17 +38,9 @@ var res = {
     enemy_1005_json: "res/enemy1005.json",
 
     hero_blood_json: "res/blood.json",
+    battle_num_json: "res/BattleNum.json",
 
-    // hit_effect_json : "res/HitEffect.json",
-    // hit_effect_0_png : "res/effects/player_hit_0.png",
-    // hit_effect_1_png : "res/effects/player_hit_1.png",
-    // hit_effect_2_png : "res/effects/player_hit_2.png",
-    // hit_effect_3_png : "res/effects/player_hit_3.png",
-    // battle_hero_list_json : "res/BattleHeroList.json",
-
-    //battle_hero_view_json: "res/BattleHeroView.json",
-    equip_hero_view_json: "res/EquipHeroView.json",
-    //equip_item_view_json: "res/EquipItemView.json",
+    equip_hero_view_json: "res/EquipHeroView.json"
 
 };
 
