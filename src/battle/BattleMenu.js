@@ -34,7 +34,7 @@ var SkkillIcon = function (battle, root, index) {
     this.coolTimeText.setVisible(false);
 
     this.button.addClickEventListener(function () {
-
+        cc.log("you click skill_btn"+index);
     });
 
     this.setVisible = function (visit) {
@@ -61,12 +61,17 @@ var SkkillIcon = function (battle, root, index) {
     this.setCoolTime = function (time) {
         this.coolTimeText.setString(time);
     }
+    this.setEnabled=function(state){
+        this.button.setEnabled(state);
+        this.button.setBright(state);
+    }
 }
 var SkillListMenu = BattleMenu.extend({
     ctor: function (battlePanel) {
+        var skillBtnNum=7;
         this._super(battlePanel, res.skill_layer_json);
         var skills = [];
-        for (var i = 0; i < 7; i++) {
+        for (var i = 0; i < skillBtnNum; i++) {
             var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
             var skill = new SkkillIcon(battlePanel, pane, i);
             if (i < player.heroes.length) {
@@ -98,12 +103,13 @@ var SkillListMenu = BattleMenu.extend({
         }
 
         this.refreshSkillState = function () {
-            for (var i = 0; i < 7; i++) {
+            for (var i = 0; i < skillBtnNum; i++) {
                 skills[i].setVisible(false);
             }
             battlePanel.foreachHeroSprite(function (hero, i) {
                 var skill = skills[i];
                 skill.setVisible(true);
+                skill.setEnabled(true);
                 if (hero.isDead()) {
                     skill.showDead();
                 } else {

@@ -1,14 +1,3 @@
-/**
- * Created by highkay on 2015/12/29.
- */
-
-
-var BATTLE_STATE = {
-    STATE_NORMAL_BATTLE: 0,
-    STATE_BOSS_BATTLE: 1,
-    STATE_BOSS_READY: 2,
-};
-
 var SpriteGroup = function (_sprites) {
     var sprites = _sprites || [];
 
@@ -81,6 +70,14 @@ var SpriteGroup = function (_sprites) {
         return undefined;
     }
 };
+
+
+var BATTLE_STATE = {
+    STATE_NORMAL_BATTLE: 0,
+    STATE_BOSS_BATTLE: 1,
+    STATE_BOSS_READY: 2,
+};
+
 
 var BattlePanel = cc.Node.extend({
 
@@ -277,17 +274,16 @@ var BattlePanel = cc.Node.extend({
     prepareBattle: function (stage) {
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
-        if(this.bossBattle){
-
-        }
         this.notifyUpdateTopPanelStageState();
     },
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
+        cc.log("dead:"+hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
+        cc.log("recover:"+ hero);
     },
     onUseSkill: function (i) {
 
