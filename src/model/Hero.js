@@ -1,47 +1,3 @@
-var Equip = function (id, lv) {
-    var id = id;
-    var lv = lv;
-    var data = dataSource.equips[id];
-
-    this.getId = function () {
-        return id;
-    };
-    this.getLv = function () {
-        return lv;
-    };
-    this.getName = function () {
-        return data.name;
-    };
-    this.getDesc = function () {
-        return data.desc;
-    };
-    this.getAffect = function (key) {
-        return getAffectValue(data, key, lv);
-    }
-};
-var Skill = function (id, lv) {
-    var id = id;
-    var lv = lv;
-    var data = dataSource.skills[id];
-    this.getId = function () {
-        return id;
-    };
-    this.getLv = function () {
-        return lv;
-    };
-    this.getName = function () {
-        return data.name;
-    };
-    this.getDesc = function () {
-        return data.desc;
-    };
-    this.getAffect = function (key) {
-        return getAffectValue(data, key, lv);
-    };
-    this.isUseable = function () {
-        return data.useable;
-    }
-};
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
@@ -99,7 +55,7 @@ var Hero = function (heroData) {
         }
         var val = getLevelData(data, "life", lv);
         for (var i in equips) {
-            val += equips[i].getAffect('life_value');
+            val += equips[i].getEffect('life_value');
         }
         return val;
     };
@@ -109,7 +65,7 @@ var Hero = function (heroData) {
         }
         var val = getLevelData(data, "attack", lv);
         for (var i in equips) {
-            val += equips[i].getAffect('attack_value');
+            val += equips[i].getEffect('attack_value');
         }
         return val;
     };
@@ -119,7 +75,7 @@ var Hero = function (heroData) {
         }
         var val = getLevelData(data, "tap", lv);
         for (var i in equips) {
-            val += equips[i].getAffect('tap_value');
+            val += equips[i].getEffect('tap_value');
         }
         return val;
     };

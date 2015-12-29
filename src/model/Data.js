@@ -21,7 +21,7 @@ function getLevelData(data, key, lv) {
     return data.levelDatas[lv][key];
 }
 
-function getAffectValue(data, key, lv) {
+function getEffectValue(data, key, lv) {
     var val = getLevelData(data, key, lv);
     if (!val) {
         return 0;

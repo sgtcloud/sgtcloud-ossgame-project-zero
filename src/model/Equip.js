@@ -6,8 +6,14 @@ var Equip = function (id, lv) {
         getId: function () {
             return id;
         },
+        getLv: function () {
+            return lv;
+        },
         getName: function () {
             return data.name;
+        },
+        getDesc: function () {
+            return data.desc;
         },
         getLife: function () {
             return data.life_base + data.life_grow * (lv - 1);
@@ -21,6 +27,9 @@ var Equip = function (id, lv) {
         getPrice: function () {
             return data.price_base + data.price_grow * (lv - 1);
         },
+        getEffect: function (key) {
+            return getEffectValue(data, key, lv);
+        },
         upgrade: function (hero) {
             var price = this.getPrice();
             if (player.gold >= price) {
@@ -31,4 +40,5 @@ var Equip = function (id, lv) {
             }
         }
     };
-}
+};
+
