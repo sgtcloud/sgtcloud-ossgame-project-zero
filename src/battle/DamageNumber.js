@@ -5,19 +5,28 @@
 var DamageNumber = cc.Node.extend({
     ctor: function (val, ctr) {
         this._super();
-        this.textAtlas = ccs.load(res.battle_num_json).node.getChildByName("root").getChildByName("battle_num").clone();
-        this.textAtlas.setAnchorPoint(0.5, 0.5);
-        this.addChild(this.textAtlas);
+        //this.textAtlas = new cc.LabelAtlas(val,
+        //    res.num_font14,
+        //    10,
+        //    14, "0");
+        this.textAtlas = ccs.load(res.battle_num_json).node.getChildByName("root").getChildByName("battle_num");
+        // 修复TextAtlas控件的宽度适应
+        this.textAtlas.ignoreContentAdaptWithSize(true);
 
-        this.scaleLarge = cc.scaleTo(0.4, 2, 2);
+        this.textAtlas.setAnchorPoint(0.5, 0.5);
+        //移除从ccs读取的控件的parent
+        this.textAtlas.removeFromParent(true);
+
+        this.scaleLarge = cc.scaleTo(0.3, 2, 2);
         this.scaleBack = cc.scaleTo(0.1, 1, 1);
 
-        this.moveUp = cc.moveBy(0.5, 0, 60);
+        this.moveUp = cc.moveBy(0.45, 0, 80);
         this.disappare = cc.callFunc(function () {
             this.removeFromParent(true);
             cc.pool.putInPool(this);
         }, this);
         this.initData(val, ctr);
+        this.addChild(this.textAtlas);
     },
 
     initData: function (val, ctr) {
@@ -35,8 +44,8 @@ var DamageNumber = cc.Node.extend({
     },
 
     reuse: function (val, ctr) {
-        this.setVisible(true);
         this.initData(val, ctr);
+        this.setVisible(true);
     },
 
     fire: function () {
@@ -44,15 +53,17 @@ var DamageNumber = cc.Node.extend({
     }
 });
 
+// 重用对象
 DamageNumber.createFromPool = function (val, ctr) {
-    //var pool = cc.pool;
-    //if (pool.hasObject(DamageNumber)) {
-    //    return pool.getFromPool(DamageNumber, val, ctr);
-    //} else {
-    return new DamageNumber(val, ctr);
-    //}
+    var pool = cc.pool;
+    if (pool.hasObject(DamageNumber)) {
+        return pool.getFromPool(DamageNumber, val, ctr);
+    } else {
+        return new DamageNumber(val, ctr);
+    }
 };
 
+// 初始化对象32个放入池中
 DamageNumber.initPool = function () {
     for (var i = 0; i < 32; i++) {
         cc.pool.putInPool(new DamageNumber());

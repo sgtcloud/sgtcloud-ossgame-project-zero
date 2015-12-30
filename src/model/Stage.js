@@ -2,7 +2,7 @@ var Stage = function (id) {
     //var id = id;
     var data = dataSource.stages[id];
 
-    this.goToNext = function () {
+    this.goToNextStage = function () {
         if (data.next) {
             id = data.next;
             data = dataSource.stages[id];
@@ -16,9 +16,25 @@ var Stage = function (id) {
             var stage = dataSource.stages[stageId];
             if (stage.next == id) {
                 return stageId;
-            };
+            }
         }
         return null;
+    };
+
+    this.isBossBattle = function () {
+        return this.bossBattle;
+    };
+
+    this.goToBossBattle = function () {
+        this.bossBattle = true;
+    };
+
+    this.leaveBossBattle = function () {
+        this.bossBattle = false;
+    };
+
+    this.couldFightBossBattle = function () {
+        return player.stage_battle_num === data.getRandomBattleCount();
     };
 
     this.getBg = function () {
@@ -26,7 +42,7 @@ var Stage = function (id) {
     };
     this.getIcon = function () {
         return data.icon;
-    }
+    };
     this.getStageNum = function () {
         return data.stageNum;
     };
@@ -69,7 +85,7 @@ var Stage = function (id) {
         return enemys;
     };
     this.getBossTimeMax = function () {
-        return data.bossTime;
+        return /*data.bossTime*/30;
     };
 
 };
