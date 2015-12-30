@@ -25,13 +25,14 @@ var EnemyUnit = BattleUnit.extend({
         };
         //敌人消失后被调用
         this.onVanish = function () {
-            this.countLoot();
+            this.generateLoot();
             this.removeFromParent(true);
             battle.onEnemyVanish(this);
         };
-        this.countLoot = function () {
+        this.generateLoot = function () {
             var bonus = this.getBonus();
-            var loot = Loot.createFromPool(bonus.unit, bonus.value);
+            var loot = new Loot(bonus.unit, bonus.value);
+            loot.setPosition(this.getPosition());
             this.getParent().addChild(loot);
             loot.fire();
         };

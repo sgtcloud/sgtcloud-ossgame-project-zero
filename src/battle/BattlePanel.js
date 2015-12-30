@@ -90,6 +90,7 @@ var BattlePanel = cc.Node.extend({
 
         var battleLayer = ccs.csLoader.createNode(res.battle_layer_json);
         this.height = battleLayer.height;
+        this.width = battleLayer.width;
         this.addChild(battleLayer);
 
 
@@ -117,34 +118,34 @@ var BattlePanel = cc.Node.extend({
         };
 
         this.bindPlayerTapEvent = function () {
-          /*  var tap = root.getChildByName('tap');
-            var listener = cc.EventListener.create({
-                event: cc.EventListener.MOUSE,
-                onMouseDown: function (event) {
-                    var pos = event.getLocation(); //当前事件发生的光标位置
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget(); //事件绑定的目标
-                    //判断当前事件发生的位置是否在事件目标区域内
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                        // cc.log("Mouse Down");
-                        // console.log(self);
-                        self.onPlayerTap();
-                        return true;
-                    }
-                    return false;
-                },
-                onMouseUp: function (event) {
-                    var pos = event.getLocation();
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget();
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                         cc.log("Mouse up");
-                        return true;
-                    }
-                    return false;
-                }
-            });
-            cc.eventManager.addListener(listener, tap);*/
+            /*  var tap = root.getChildByName('tap');
+             var listener = cc.EventListener.create({
+             event: cc.EventListener.MOUSE,
+             onMouseDown: function (event) {
+             var pos = event.getLocation(); //当前事件发生的光标位置
+             pos.y -= 120;
+             var target = event.getCurrentTarget(); //事件绑定的目标
+             //判断当前事件发生的位置是否在事件目标区域内
+             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+             // cc.log("Mouse Down");
+             // console.log(self);
+             self.onPlayerTap();
+             return true;
+             }
+             return false;
+             },
+             onMouseUp: function (event) {
+             var pos = event.getLocation();
+             pos.y -= 120;
+             var target = event.getCurrentTarget();
+             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+             cc.log("Mouse up");
+             return true;
+             }
+             return false;
+             }
+             });
+             cc.eventManager.addListener(listener, tap);*/
         };
 
         this.spritesLayer = root.getChildByName('sprites');
@@ -164,9 +165,6 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < 5; i++) {
             this.enemyPos[i] = this.spritesLayer.getChildByName('enemy' + (i + 1));
         }
-        this.setEnemySprite = function (enemy, index) {
-            this.enemyPos[index].addChild(enemy);
-        };
         var self = this;
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             PlayerData.getStageData().goToBossBattle();
@@ -175,12 +173,13 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
-            if(self.times != undefined){
+            if (self.times != undefined) {
                 clearInterval(self.times);
             }
 
         });
         this.bindPlayerTapEvent();
+
         DamageNumber.initPool();
     },
 
@@ -204,29 +203,30 @@ var BattlePanel = cc.Node.extend({
             var data = PlayerData.getHeroesData(i);
             var hero = new HeroUnit(this, data, player.heroes[i]);
             this.heroSprites.push(hero);
-            this.setHeroSprite(hero, i);
+            hero.setPosition(this.heroPos[i].getPosition());
+            this.addChild(hero, player.heroes.length - i);
         }
     },
-    hideTimeText:function(){
+    hideTimeText: function () {
         this.timeText.visible = false;
         this.timeTextBg.visible = false;
     },
-    visibleTimeText:function(stage){
+    visibleTimeText: function (stage) {
         this.timeText.visible = true;
         this.timeTextBg.visible = true;
-        var  boosTimeMax = stage.getBossTimeMax();
+        var boosTimeMax = stage.getBossTimeMax();
         var timeText = this.timeText;
         var self = this;
-        timeText.setString(boosTimeMax+"s");
-        this.times = setInterval(function(){
-            if(boosTimeMax==0){
+        timeText.setString(boosTimeMax + "s");
+        this.times = setInterval(function () {
+            if (boosTimeMax == 0) {
                 clearInterval(self.times);
                 self.onBattleWin();
-            }else{
+            } else {
                 boosTimeMax--;
-                timeText.setString(boosTimeMax+"s");
+                timeText.setString(boosTimeMax + "s");
             }
-        },1000);
+        }, 1000);
     },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
@@ -243,8 +243,12 @@ var BattlePanel = cc.Node.extend({
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             this.enemySprites.push(enemy);
-            this.setEnemySprite(enemy, i);
+            var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
+            enemy.setPosition(startPos);
+            this.addChild(enemy, enemiesData.length - i);
+            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i].getPosition(), 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2)));
         }
+        ;
     },
 
     findNextEnemy: function () {
@@ -291,7 +295,10 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-        this.prepareBattle(stageData);
+        // wait for 1 second to start next battle
+        this.scheduleOnce(function () {
+            this.prepareBattle(stageData);
+        }, 1.0);
         PlayerData.updatePlayer();
     },
 
@@ -303,11 +310,11 @@ var BattlePanel = cc.Node.extend({
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:"+hero);
+        cc.log("dead:" + hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:"+ hero);
+        cc.log("recover:" + hero);
     },
     onUseSkill: function (i) {
 
