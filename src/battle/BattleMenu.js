@@ -34,7 +34,7 @@ var SkkillIcon = function (battle, root, index) {
     this.coolTimeText.setVisible(false);
 
     this.button.addClickEventListener(function () {
-        cc.log("you click skill_btn"+index);
+        cc.log("you click skill_btn" + index);
     });
 
     this.setVisible = function (visit) {
@@ -61,14 +61,14 @@ var SkkillIcon = function (battle, root, index) {
     this.setCoolTime = function (time) {
         this.coolTimeText.setString(time);
     }
-    this.setEnabled=function(state){
+    this.setEnabled = function (state) {
         this.button.setEnabled(state);
         this.button.setBright(state);
     }
 }
 var SkillListMenu = BattleMenu.extend({
     ctor: function (battlePanel) {
-        var skillBtnNum=7;
+        var skillBtnNum = 7;
         this._super(battlePanel, res.skill_layer_json);
         var skills = [];
         for (var i = 0; i < skillBtnNum; i++) {
@@ -160,8 +160,10 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
-
-
+            var btn = root.getChildByName('btn').getChildByName('btn');
+            btn.addClickEventListener(function () {
+                cc.log('click the btn')
+            })
             name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv());
             dps.setString(hero.getAttack());
