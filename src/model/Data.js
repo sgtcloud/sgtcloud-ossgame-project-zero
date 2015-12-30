@@ -15,11 +15,12 @@ function getLevelData(data, key, lv) {
     if (!data.levelDatas) {
         return undefined;
     }
-    if (!data.levelDatas[lv]) {
-        return data.levelDatas[0][key];
-    }
     var len=data.levelDatas.length;
-    return data.levelDatas[len-lv][key];
+    var index=len-lv;
+    if (!data.levelDatas[index]) {
+        return data.levelDatas[len-1][key];
+    }
+    return data.levelDatas[index][key];
 }
 
 function getEffectValue(data, key, lv) {

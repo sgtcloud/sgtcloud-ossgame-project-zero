@@ -78,10 +78,13 @@ var TabContainer = cc.Node.extend({
         }
         function bindListener(){
             customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
+                cc.log('event of hero_upgrade has been called,and the userData is '+JSON.stringify(event.getUserData()));
                 PlayerData.consumeResource(event.getUserData());
+                PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE,function(event){
                 PlayerData.consumeResource(event.getUserData());
+                PlayerData.updatePlayer();
             });
         }
 

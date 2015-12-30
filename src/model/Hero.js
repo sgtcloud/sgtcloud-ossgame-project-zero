@@ -9,16 +9,22 @@ var Hero = function (heroData) {
 
     for (var i in heroData.equips) {
         var equip = data.equips[i];
-        var lv = heroData.equips[i];
-        equips[i] = new Equip(equip, lv);
+        var equipsLv = heroData.equips[i];
+        equips[i] = new Equip(equip, equipsLv);
     }
     for (var i in heroData.skills) {
         var skill = data.skills[i];
-        var lv = heroData.skills[i];
-        skills[i] = new Skill(skill, lv);
+        var skillLv = heroData.skills[i];
+        skills[i] = new Skill(skill, skillLv);
     }
     this.isLocked = function () {
         return lv <= 0;
+    };
+
+    this.getNextLevelUpgrade=function(){
+        var level=this.getLv();
+        var cost=getLevelData(data,'upgrade',level+1);
+        return cost;
     };
 
     this.getId = function () {
@@ -101,5 +107,11 @@ var Hero = function (heroData) {
             return false;
         }
         return true;
+    };
+    /**
+     * 英雄升级
+     */
+    this.upgrade=function(){
+        lv=lv+1;
     }
 };
