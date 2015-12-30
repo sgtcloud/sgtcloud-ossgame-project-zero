@@ -154,20 +154,40 @@ var HeroListMenu = BattleMenu.extend({
         var heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         var skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
 
+        function setElement(root, listener) {
+            var btnlayer = root.getChildByName('btn')
+            var btn = btnlayer.getChildByName('btn');//升级按钮
+            var gold = btnlayer.getChildByName('gold');//消耗金币
+            var upMax_text = btnlayer.getChildByName('upMax_text');//已满级
+            var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
+            var diamond = btnlayer.getChildByName('diamond');//钻石图标
+            var lock = btnlayer.getChildByName('lock');
+            var level_text = btnlayer.getChildByName('level_text');
+            lock.setVisible(false);
+            level_text.setVisible(false);
+            upMax_text.setVisible(false);
+            diamond_text.setVisible(false);
+            diamond.setVisible(false);
+            btn.addClickEventListener(listener)
+        }
+
         function buildHeroView(hero) {
             var root = heroTemp.clone();
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
-            var btnlayer = root.getChildByName('btn')
-            var btn = btnlayer.getChildByName('btn');//升级按钮
-            var gold=btnlayer.getChildByName('gold');//消耗金币
-            var upMax_text=btnlayer.getChildByName('upMax_text');//已满级
-            var diamond_text=btnlayer.getChildByName('diamond_text');//钻石文字
-            btn.addClickEventListener(function () {
-                cc.log('current hero['+hero.getId()+']\'s Lv is '+hero.getLv());
-            })
+
+            setElement(root, function () {
+                var eventData = {};
+                eventData.heroId = hero.getId();
+                var level=hero.getLv();
+                var cost=getLevelData(hero,'cost',level+1);
+                eventData.unit =cost.unit;
+                eventData.value=cost.value;
+                customEventHelper.sendEvent(EVENT.HERO_UPGRADE,eventData);
+                cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
+            });
             name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv());
             dps.setString(hero.getAttack());
@@ -189,7 +209,9 @@ var HeroListMenu = BattleMenu.extend({
             var name = root.getChildByName('skillName_text');
             var desc = root.getChildByName('skill_text');
             var lv = root.getChildByName('skillLevel_text');
-
+            setElement(root, function () {
+                cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
+            })
             name.setString(skill.getName());
             desc.setString(skill.getDesc());
             lv.setString(skill.getLv());
