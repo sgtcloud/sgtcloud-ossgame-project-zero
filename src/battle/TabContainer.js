@@ -80,7 +80,7 @@ var TabContainer = cc.Node.extend({
             customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
                 PlayerData.consumeResource(event.getUserData());
             });
-            customEventHelper.bindListener(EVENT.SKILL_UPGRADE,function(event){
+            customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE,function(event){
                 PlayerData.consumeResource(event.getUserData());
             });
         }

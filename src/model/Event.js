@@ -3,8 +3,16 @@ var EVENT = {
     BATTLE_WIN: "BATTLE_WIN",
     LEAVE_BOSS_BATTLE: "LEAVE_BOSS_BATTLE",
     FIGHT_BOSS_BATTLE: "FIGHT_BOSS_BATTLE"
-    , HERO_UPGRADE: "HERO_UPGRADE"
-    , SKILL_UPGRADE: "SKILL_UPGRADE"
+    ,
+    /**
+     * 英雄升级
+     */
+    HERO_UPGRADE: "HERO_UPGRADE"
+    ,
+    /**
+     * 英雄技能升级
+     */
+    HERO_SKILL_UPGRADE: "SKILL_UPGRADE"
 };
 
 var customEventHelper = {
