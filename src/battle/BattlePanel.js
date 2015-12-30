@@ -96,7 +96,8 @@ var BattlePanel = cc.Node.extend({
         var root = battleLayer.getChildByName('root');
         this.enemyLifeText = root.getChildByName('enemy_life_text');
         this.enemyLifeBar = root.getChildByName('enemy_life_bar');
-
+        this.timeText = root.getChildByName('time_text');
+        this.timeTextBg = root.getChildByName('timetext_bg');
 
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
@@ -174,6 +175,10 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
+            if(self.times != undefined){
+                clearInterval(self.times);
+            }
+
         });
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
@@ -202,13 +207,35 @@ var BattlePanel = cc.Node.extend({
             this.setHeroSprite(hero, i);
         }
     },
-
+    hideTimeText:function(){
+        this.timeText.visible = false;
+        this.timeTextBg.visible = false;
+    },
+    visibleTimeText:function(stage){
+        this.timeText.visible = true;
+        this.timeTextBg.visible = true;
+        var  boosTimeMax = stage.getBossTimeMax();
+        var timeText = this.timeText;
+        var self = this;
+        timeText.setString(boosTimeMax+"s");
+        this.times = setInterval(function(){
+            if(boosTimeMax==0){
+                clearInterval(self.times);
+                self.onBattleWin();
+            }else{
+                boosTimeMax--;
+                timeText.setString(boosTimeMax+"s");
+            }
+        },1000);
+    },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
         var enemiesData;
         if (stage.isBossBattle()) {
             enemiesData = stage.getBossData();
+            this.visibleTimeText(stage);
         } else {
+            this.hideTimeText();
             enemiesData = stage.getRandomEnemiesData();
         }
 
