@@ -26,6 +26,7 @@
     "src/model/Event.js",
     "src/LoaderScene.js",
     "src/battle/BattleConst.js",
+    "src/battle/Loot.js",
     "src/battle/DamageNumber.js",
     "src/battle/BattleUnit.js",
     "src/battle/HeroUnit.js",

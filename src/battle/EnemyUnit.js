@@ -25,8 +25,15 @@ var EnemyUnit = BattleUnit.extend({
         };
         //敌人消失后被调用
         this.onVanish = function () {
+            this.countLoot();
             this.removeFromParent(true);
             battle.onEnemyVanish(this);
+        };
+        this.countLoot = function () {
+            var bonus = this.getBonus();
+            var loot = Loot.createFromPool(bonus.unit, bonus.value);
+            this.getParent().addChild(loot);
+            loot.fire();
         };
         //获取杀死后的奖励
         this.getBonus = function () {

@@ -3,7 +3,7 @@ var res_datas = {
     heroes_json: "res/data/heroes.json",
     enemies_json: "res/data/enemies.json",
     equips_json: "res/data/equips.json",
-    skills_json: "res/data/skills.json",
+    skills_json: "res/data/skills.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
@@ -40,7 +40,12 @@ var res = {
     hero_blood_json: "res/blood.json",
     battle_num_json: "res/BattleNum.json",
 
-    equip_hero_view_json: "res/EquipHeroView.json"
+    equip_hero_view_json: "res/EquipHeroView.json",
+
+    little_gold_json: "res/gold01.json",
+    some_gold_json: "res/gold02.json",
+    amount_gold_json: "res/gold03.json",
+    huge_gold_json: "res/gold04.json"
 
 };
 
