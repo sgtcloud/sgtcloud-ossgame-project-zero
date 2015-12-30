@@ -34,7 +34,7 @@ var SkkillIcon = function (battle, root, index) {
     this.coolTimeText.setVisible(false);
 
     this.button.addClickEventListener(function () {
-        cc.log("you click skill_btn"+index);
+        cc.log("you click skill_btn" + index);
     });
 
     this.setVisible = function (visit) {
@@ -61,14 +61,14 @@ var SkkillIcon = function (battle, root, index) {
     this.setCoolTime = function (time) {
         this.coolTimeText.setString(time);
     }
-    this.setEnabled=function(state){
+    this.setEnabled = function (state) {
         this.button.setEnabled(state);
         this.button.setBright(state);
     }
 }
 var SkillListMenu = BattleMenu.extend({
     ctor: function (battlePanel) {
-        var skillBtnNum=7;
+        var skillBtnNum = 7;
         this._super(battlePanel, res.skill_layer_json);
         var skills = [];
         for (var i = 0; i < skillBtnNum; i++) {
@@ -160,8 +160,14 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
-
-
+            var btnlayer = root.getChildByName('btn')
+            var btn = btnlayer.getChildByName('btn');//升级按钮
+            var gold=btnlayer.getChildByName('gold');//消耗金币
+            var upMax_text=btnlayer.getChildByName('upMax_text');//已满级
+            var diamond_text=btnlayer.getChildByName('diamond_text');//钻石文字
+            btn.addClickEventListener(function () {
+                cc.log('current hero['+hero.getId()+']\'s Lv is '+hero.getLv());
+            })
             name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv());
             dps.setString(hero.getAttack());

@@ -116,7 +116,7 @@ var BattlePanel = cc.Node.extend({
         };
 
         this.bindPlayerTapEvent = function () {
-            var tap = root.getChildByName('tap');
+          /*  var tap = root.getChildByName('tap');
             var listener = cc.EventListener.create({
                 event: cc.EventListener.MOUSE,
                 onMouseDown: function (event) {
@@ -137,13 +137,13 @@ var BattlePanel = cc.Node.extend({
                     pos.y -= 120;
                     var target = event.getCurrentTarget();
                     if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                        // cc.log("Mouse up");
+                         cc.log("Mouse up");
                         return true;
                     }
                     return false;
                 }
             });
-            cc.eventManager.addListener(listener, tap);
+            cc.eventManager.addListener(listener, tap);*/
         };
 
         this.spritesLayer = root.getChildByName('sprites');
