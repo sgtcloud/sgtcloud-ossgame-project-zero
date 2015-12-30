@@ -166,15 +166,13 @@ var BattlePanel = cc.Node.extend({
         this.setEnemySprite = function (enemy, index) {
             this.enemyPos[index].addChild(enemy);
         };
-
-        this.bossBattle = false;
         var self = this;
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
-            self.bossBattle = true;
+            PlayerData.getStageData().goToBossBattle();
             self.prepareBattle(PlayerData.getStageData());
         });
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
-            self.bossBattle = false;
+            PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
         });
         this.bindPlayerTapEvent();
@@ -208,7 +206,7 @@ var BattlePanel = cc.Node.extend({
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
         var enemiesData;
-        if (this.bossBattle) {
+        if (stage.isBossBattle()) {
             enemiesData = stage.getBossData();
         } else {
             enemiesData = stage.getRandomEnemiesData();
@@ -249,25 +247,24 @@ var BattlePanel = cc.Node.extend({
     },
 
     notifyUpdateTopPanelStageState: function () {
-        customEventHelper.sendEvent(EVENT.BATTLE_START, this.bossBattle)
+        customEventHelper.sendEvent(EVENT.BATTLE_START);
     },
 
     onBattleWin: function () {
-        if (this.bossBattle) {
-            this.bossBattle = false;
+        var stageData = PlayerData.getStageData();
+        if (stageData.isBossBattle()) {
+            stageData.leaveBossBattle();
             player.stage_battle_num = 1;
-            PlayerData.getStageData().goToNext();
-            player.stage = PlayerData.getStageData().getId();
-            this.loadStageBackground(PlayerData.getStageData());
+            stageData.goToNextStage();
+            player.stage = stageData.getId();
+            this.loadStageBackground(stageData);
         } else {
-            if (this.couldFightBossBattle()) {
-                this.bossBattle = true;
-            } else {
-                this.bossBattle = false;
+            if (stageData.couldFightBossBattle()) {
+                stageData.goToBossBattle();
             }
             player.stage_battle_num += 1;
         }
-        this.prepareBattle(PlayerData.getStageData());
+        this.prepareBattle(stageData);
         PlayerData.updatePlayer();
     },
 
@@ -300,10 +297,6 @@ var BattlePanel = cc.Node.extend({
         if (win) {
             this.onBattleWin();
         }
-    },
-
-    couldFightBossBattle: function () {
-        return player.stage_battle_num === PlayerData.getStageData().getRandomBattleCount();
     },
 
 });

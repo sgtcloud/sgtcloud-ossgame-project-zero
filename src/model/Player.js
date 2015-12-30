@@ -43,35 +43,34 @@ var PlayerData = {
         var save = localStorage.getItem("save");
         if (save) {
             player = JSON.parse(save);
-        } else {
-            this.initPlayerData();
         }
-        this.refreshData();
+        this.initPlayerData(save);
     },
-    initPlayerData : function () {
+    initPlayerData: function (save) {
         for (var i in player.heroes) {
             this.heroesData[i] = new Hero(player.heroes[i]);
-            player.heroes[i].life = this.heroesData[i].getLife();
-        }
-    },
-    refreshData: function () {
-        for (var i in player.heroes) {
-            this.heroesData[i] = new Hero(player.heroes[i]);
+            if (!save) {
+                player.heroes[i].life = this.heroesData[i].getLife();
+            }
         }
         this.stageData = new Stage(player.stage);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
-    },
+    }
+    ,
     delPlayer: function () {
         localStorage.removeItem("save");
-    },
+    }
+    ,
     getHeroesData: function (id) {
         return this.heroesData[id];
-    },
+    }
+    ,
     getStageData: function () {
         return this.stageData;
-    },
+    }
+    ,
     sumHeroesProp: function (prop) {
         var val = 0;
         for (var i in this.heroesData) {
@@ -79,19 +78,24 @@ var PlayerData = {
             val += hero[prop];
         }
         return val;
-    },
+    }
+    ,
     getTotalAttck: function () {
         return this.sumHeroesProp("getAttack");
-    },
+    }
+    ,
     getTotalLife: function () {
         return this.sumHeroesProp("getLife");
-    },
+    }
+    ,
     getTotalHit: function () {
         return this.sumHeroesProp("getHit");
-    },
+    }
+    ,
     createResourceData: function (unit, val) {
         return {unit: unit, value: val};
-    },
+    }
+    ,
     consumeResource: function (datas) {
         if (!datas) {
             return;
@@ -112,7 +116,8 @@ var PlayerData = {
                 }
             }
         }
-    },
+    }
+    ,
     heroesData: [],
     stageData: {}
 };

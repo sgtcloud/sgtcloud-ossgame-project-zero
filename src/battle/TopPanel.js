@@ -32,7 +32,7 @@ var TopPanel = cc.Node.extend({
         var self = this;
         // register battle custom event
         customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
-            self.refreshStageState(event.getUserData(), player.stage_battle_num, PlayerData.getStageData().getRandomBattleCount());
+            self.refreshStageState();
             self.refreshStageList();
         });
 
@@ -50,10 +50,14 @@ var TopPanel = cc.Node.extend({
         this.refreshPlayerRelicText = function () {
             this.playerRelicText.setString(player.relic);
         };
-        this.refreshStageState = function (bossBattle, cur, max) {
+        this.refreshStageState = function () {
 
+
+            var stage = PlayerData.getStageData();
+            var cur = player.stage_battle_num;
+            var max = stage.getRandomBattleCount();
             // 根据当前stage的battle状态设置gui状态
-            if (bossBattle) {
+            if (stage.isBossBattle()) {
                 this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
             } else {
                 if (cur > max) {
@@ -62,6 +66,7 @@ var TopPanel = cc.Node.extend({
                     this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
                 }
             }
+
             // 根据gui状态控制各个控件的可见性
             if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
                 this.battleNumText.setString(cur + '/' + max);
@@ -109,9 +114,6 @@ var TopPanel = cc.Node.extend({
         };
 
         this.refreshAll = function () {
-            var stage = PlayerData.getStageData();
-            var cur = player.stage_battle_num;
-            var max = stage.getRandomBattleCount();
             this.refreshPlayerDiamondText();
             this.refreshPlayerRelicText();
             this.refreshStageState();
