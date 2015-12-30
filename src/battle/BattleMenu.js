@@ -181,11 +181,11 @@ var HeroListMenu = BattleMenu.extend({
             setElement(root, function () {
                 var eventData = {};
                 eventData.heroId = hero.getId();
-                var level=hero.getLv();
-                var cost=getLevelData(hero,'cost',level+1);
+                var cost=hero.getNextLevelUpgrade();
                 eventData.unit =cost.unit;
                 eventData.value=cost.value;
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE,eventData);
+                hero.upgrade();
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
             name.setString(hero.getName());
