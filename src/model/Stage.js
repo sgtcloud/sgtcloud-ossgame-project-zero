@@ -34,7 +34,7 @@ var Stage = function (id) {
     };
 
     this.couldFightBossBattle = function () {
-        return player.stage_battle_num === data.getRandomBattleCount();
+        return player.stage_battle_num === this.getRandomBattleCount();
     };
 
     this.getBg = function () {

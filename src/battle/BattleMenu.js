@@ -160,9 +160,13 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
-            var btn = root.getChildByName('btn').getChildByName('btn');
+            var btnlayer = root.getChildByName('btn')
+            var btn = btnlayer.getChildByName('btn');//升级按钮
+            var gold=btnlayer.getChildByName('gold');//消耗金币
+            var upMax_text=btnlayer.getChildByName('upMax_text');//已满级
+            var diamond_text=btnlayer.getChildByName('diamond_text');//钻石文字
             btn.addClickEventListener(function () {
-                cc.log('click the btn')
+                cc.log('current hero['+hero.getId()+']\'s Lv is '+hero.getLv());
             })
             name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv());

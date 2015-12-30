@@ -76,5 +76,16 @@ var TabContainer = cc.Node.extend({
             //    this.menuLayers[i].updatePlayerGoldText();
             //}
         }
+        function bindListener(){
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
+                PlayerData.consumeResource(event.getUserData());
+            });
+            customEventHelper.bindListener(EVENT.SKILL_UPGRADE,function(event){
+                PlayerData.consumeResource(event.getUserData());
+            });
+        }
+
+        bindListener();
+
     }
 });
