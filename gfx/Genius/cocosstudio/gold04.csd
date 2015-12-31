@@ -1,17 +1,9 @@
 <GameFile>
-  <PropertyGroup Name="gold04" Type="Node" ID="8538a524-4bce-486c-8cb2-b104971835d4" Version="2.3.3.0" />
+  <PropertyGroup Name="gold04" Type="Node" ID="6a21144c-5463-4617-911b-281d95a83170" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="3" Speed="0.5000">
-        <Timeline ActionTag="-199724179" Property="Position">
-          <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="3" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="-199724179" Property="FileData">
+      <Animation Duration="3" Speed="0.1333">
+        <Timeline ActionTag="-273477629" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="gold/gold04/gold04_shine01.png" Plist="gold04.plist" />
           </TextureFrame>
@@ -22,14 +14,14 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="shine" StartIndex="0" EndIndex="3">
-          <RenderColor A="255" R="64" G="224" B="208" />
+          <RenderColor A="150" R="192" G="192" B="192" />
         </AnimationInfo>
       </AnimationList>
-      <ObjectData Name="Node" Tag="17" ctype="GameNodeObjectData">
+      <ObjectData Name="Node" Tag="7" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="gold04" ActionTag="-199724179" Tag="24" IconVisible="False" LeftMargin="-37.0000" RightMargin="-37.0000" TopMargin="-37.0000" BottomMargin="-37.0000" ctype="SpriteObjectData">
-            <Size X="74.0000" Y="74.0000" />
+          <AbstractNodeData Name="gold04" ActionTag="-273477629" Tag="14" IconVisible="False" LeftMargin="-23.0000" RightMargin="-23.0000" TopMargin="-23.0000" BottomMargin="-23.0000" ctype="SpriteObjectData">
+            <Size X="37.0000" Y="37.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />

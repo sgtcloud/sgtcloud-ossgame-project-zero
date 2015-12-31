@@ -32,6 +32,15 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="gold01.csd" />
+          <FilePathData Path="gold02.csd" />
+          <FilePathData Path="gold03.csd" />
+          <FilePathData Path="gold04.csd" />
+          <FilePathData Path="effect5002.csi" />
+          <FilePathData Path="enemy1001.csd" />
+          <FilePathData Path="gold01.csi" />
+          <FilePathData Path="gold02.csi" />
+          <FilePathData Path="gold03.csi" />
+          <FilePathData Path="gold04.csi" />
         </OpenedDocuments>
         <ActiveDocument Path="gold01.csd" />
       </Value>

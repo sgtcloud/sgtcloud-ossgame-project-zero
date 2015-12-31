@@ -7,24 +7,24 @@
 			<key>gold/gold01/gold01_shine01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{30,0},{22,9}}</string>
+				<string>{{15,0},{11,4}}</string>
 				<key>offset</key>
-				<string>{1,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{45,41}</string>
+				<string>{22,20}</string>
 			</dict>
 			<key>gold/gold01/gold01_shine02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{30,17}}</string>
+				<string>{{0,0},{15,8}}</string>
 				<key>offset</key>
-				<string>{1,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{45,41}</string>
+				<string>{22,20}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -36,14 +36,14 @@
 			<key>realTextureFileName</key>
 			<string>gold01.png</string>
 			<key>size</key>
-			<string>{52,17}</string>
+			<string>{26,8}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>52</integer>
+			<integer>26</integer>
 			<key>height</key>
-			<integer>17</integer>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </plist>

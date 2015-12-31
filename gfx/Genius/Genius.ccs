@@ -650,40 +650,6 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
-        <Folder Name="gold">
-          <Folder Name="gold01">
-            <Image Name="gold01_shine01.png" />
-            <Image Name="gold01_shine02.png" />
-            <PlistImageFolder Image="gold01.png" PListFile="gold01.plist" Name=".gold01_PList.Dir">
-              <PlistImageFile Name="gold_gold01_gold01_shine01.png" Key="gold/gold01/gold01_shine01.png" />
-              <PlistImageFile Name="gold_gold01_gold01_shine02.png" Key="gold/gold01/gold01_shine02.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="gold02">
-            <Image Name="gold02_shine01.png" />
-            <Image Name="gold02_shine02.png" />
-            <PlistImageFolder Image="gold02.png" PListFile="gold02.plist" Name=".gold02_PList.Dir">
-              <PlistImageFile Name="gold_gold02_gold02_shine01.png" Key="gold/gold02/gold02_shine01.png" />
-              <PlistImageFile Name="gold_gold02_gold02_shine02.png" Key="gold/gold02/gold02_shine02.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="gold03">
-            <Image Name="gold03_shine01.png" />
-            <Image Name="gold03_shine02.png" />
-            <PlistImageFolder Image="gold03.png" PListFile="gold03.plist" Name=".gold03_PList.Dir">
-              <PlistImageFile Name="gold_gold03_gold03_shine01.png" Key="gold/gold03/gold03_shine01.png" />
-              <PlistImageFile Name="gold_gold03_gold03_shine02.png" Key="gold/gold03/gold03_shine02.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="gold04">
-            <Image Name="gold04_shine01.png" />
-            <Image Name="gold04_shine02.png" />
-            <PlistImageFolder Image="gold04.png" PListFile="gold04.plist" Name=".gold04_PList.Dir">
-              <PlistImageFile Name="gold_gold04_gold04_shine01.png" Key="gold/gold04/gold04_shine01.png" />
-              <PlistImageFile Name="gold_gold04_gold04_shine02.png" Key="gold/gold04/gold04_shine02.png" />
-            </PlistImageFolder>
-          </Folder>
-        </Folder>
         <Folder Name="chest">
           <Folder Name="chest01">
             <Image Name="chest01_close01.png" />
@@ -769,14 +735,6 @@
         <PlistInfo Name="enemy1005.csi" Type="Plist" />
         <Project Name="fairy01.csd" Type="Node" />
         <PlistInfo Name="fairy01.csi" Type="Plist" />
-        <Project Name="gold01.csd" Type="Node" />
-        <PlistInfo Name="gold01.csi" Type="Plist" />
-        <Project Name="gold02.csd" Type="Node" />
-        <PlistInfo Name="gold02.csi" Type="Plist" />
-        <Project Name="gold03.csd" Type="Node" />
-        <PlistInfo Name="gold03.csi" Type="Plist" />
-        <Project Name="gold04.csd" Type="Node" />
-        <PlistInfo Name="gold04.csi" Type="Plist" />
         <Project Name="hero101.csd" Type="Node" />
         <PlistInfo Name="hero101.csi" Type="Plist" />
         <Project Name="hero102.csd" Type="Node" />
@@ -788,6 +746,48 @@
         <Project Name="hero105.csd" Type="Node" />
         <PlistInfo Name="hero105.csi" Type="Plist" />
         <Project Name="enemy1001.csd" Type="Node" />
+        <Folder Name="gold">
+          <Folder Name="gold01">
+            <Image Name="gold01_shine01.png" />
+            <Image Name="gold01_shine02.png" />
+            <PlistImageFolder Image="gold01.png" PListFile="gold01.plist" Name=".gold01_PList.Dir">
+              <PlistImageFile Name="gold_gold01_gold01_shine01.png" Key="gold/gold01/gold01_shine01.png" />
+              <PlistImageFile Name="gold_gold01_gold01_shine02.png" Key="gold/gold01/gold01_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="gold02">
+            <Image Name="gold02_shine01.png" />
+            <Image Name="gold02_shine02.png" />
+            <PlistImageFolder Image="gold02.png" PListFile="gold02.plist" Name=".gold02_PList.Dir">
+              <PlistImageFile Name="gold_gold02_gold02_shine01.png" Key="gold/gold02/gold02_shine01.png" />
+              <PlistImageFile Name="gold_gold02_gold02_shine02.png" Key="gold/gold02/gold02_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="gold03">
+            <Image Name="gold03_shine01.png" />
+            <Image Name="gold03_shine02.png" />
+            <PlistImageFolder Image="gold03.png" PListFile="gold03.plist" Name=".gold03_PList.Dir">
+              <PlistImageFile Name="gold_gold03_gold03_shine01.png" Key="gold/gold03/gold03_shine01.png" />
+              <PlistImageFile Name="gold_gold03_gold03_shine02.png" Key="gold/gold03/gold03_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="gold04">
+            <Image Name="gold04_shine01.png" />
+            <Image Name="gold04_shine02.png" />
+            <PlistImageFolder Image="gold04.png" PListFile="gold04.plist" Name=".gold04_PList.Dir">
+              <PlistImageFile Name="gold_gold04_gold04_shine01.png" Key="gold/gold04/gold04_shine01.png" />
+              <PlistImageFile Name="gold_gold04_gold04_shine02.png" Key="gold/gold04/gold04_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="gold01.csd" Type="Node" />
+        <Project Name="gold02.csd" Type="Node" />
+        <Project Name="gold03.csd" Type="Node" />
+        <Project Name="gold04.csd" Type="Node" />
+        <PlistInfo Name="gold01.csi" Type="Plist" />
+        <PlistInfo Name="gold02.csi" Type="Plist" />
+        <PlistInfo Name="gold03.csi" Type="Plist" />
+        <PlistInfo Name="gold04.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
