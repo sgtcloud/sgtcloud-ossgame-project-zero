@@ -153,14 +153,18 @@ var HeroListMenu = BattleMenu.extend({
 
         var heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         var skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
-        var that=this;
-        function setElement(root, listener) {
+        var that = this;
+
+        function setElement(root, target, listener) {
             var btnlayer = root.getChildByName('btn')
             var btn = btnlayer.getChildByName('btn');//升级按钮
             var gold = btnlayer.getChildByName('gold');//消耗金币
+            var gold_text = btnlayer.getChildByName('gold_text');//消耗金币
             var upMax_text = btnlayer.getChildByName('upMax_text');//已满级
             var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
             var diamond = btnlayer.getChildByName('diamond');//钻石图标
+            var buff_text = btnlayer.getChildByName('buff_text');//buff文字
+            var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
             lock.setVisible(false);
@@ -168,7 +172,61 @@ var HeroListMenu = BattleMenu.extend({
             upMax_text.setVisible(false);
             diamond_text.setVisible(false);
             diamond.setVisible(false);
-            btn.addClickEventListener(listener)
+            var elements = {
+                gold: gold,
+                goldText: gold_text,
+                upMaxText: upMax_text,
+                lock: lock,
+                levelText: level_text,
+                buffText: buff_text,
+                buffNum: buffNum_text,
+                btn: btn
+            }
+            initView(root, target, elements, listener)
+        }
+
+        function initView(root, target, elements, listener) {
+            if (target.isMaxLevel()) {
+                root.setEnabled(false);
+                root.setBright(false);
+                elements.upMaxText.setVisible(true);
+                elements.buffText.setVisible(false);
+                elements.buffNum.setVisible(false);
+                elements.gold.setVisible(false);
+                elements.goldText.setVisible(false);
+            } else {
+                var levelData = target.getLevelData();
+                var levelAttack = levelData['attack'];
+                var nextlevelData = target.getLevelData(target.getLv() + 1);
+                var nextGoldValue = nextlevelData['upgrade']['value'];
+                var nextLevelAttack = nextlevelData['attack'];
+                if (nextGoldValue) {
+                    elements.goldText.setString(nextGoldValue);
+                }
+                if (nextLevelAttack) {
+                    elements.buffNum.setString('+' + (nextLevelAttack - levelAttack));
+                }
+                elements.btn.addClickEventListener(function (event) {
+                    listener(event, elements)
+                })
+            }
+        }
+
+        function underLevel(root, target, elements) {
+            // TODO
+        }
+
+        function maxLevel(root, target, elements) {
+            if (target.isMaxLevel()) {
+                root.setEnabled(false);
+                root.setBright(false);
+                elements.upMaxText.setVisible(true);
+                elements.buffText.setVisible(false);
+                elements.buffNum.setVisible(false);
+                elements.gold.setVisible(false);
+                elements.goldText.setVisible(false);
+            }
+            // TODO
         }
 
         function buildHeroView(hero) {
@@ -177,19 +235,31 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
-            var currentLv=hero.getLv();
+            var currentLv = hero.getLv();
 
-            setElement(root, function (event) {
+            setElement(root, hero, function (event, otherBtn) {
                 var eventData = {};
+                var levelData = hero.getLevelData();
+                var levelAttack = levelData['attack'];
                 eventData.heroId = hero.getId();
-                var cost=hero.getNextLevelUpgrade();
-                eventData.cost=cost;
-                eventData.goldPosition=that.playerGoldText.getPosition();
-                customEventHelper.sendEvent(EVENT.HERO_UPGRADE,eventData);
+                var cost = hero.getNextLevelUpgrade();
+                eventData.cost = cost;
+                customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 hero.upgrade();
-                if(hero.isMaxLevel()){
+                if (hero.isMaxLevel()) {
                     event.setEnabled(false);
                     event.setBright(false);
+                    otherBtn.upMaxText.setVisible(true);
+                    otherBtn.buffText.setVisible(false);
+                    otherBtn.buffNum.setVisible(false);
+                    otherBtn.gold.setVisible(false);
+                    otherBtn.goldText.setVisible(false);
+                } else {
+                    var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+                    var nextGoldValue = nextlevelData['upgrade']['value'];
+                    var nextLevelAttack = nextlevelData['attack'];
+                    otherBtn.goldText.setString(nextGoldValue);
+                    otherBtn.buffNum.setString('+' + (nextLevelAttack - levelAttack));
                 }
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
@@ -214,18 +284,31 @@ var HeroListMenu = BattleMenu.extend({
             var name = root.getChildByName('skillName_text');
             var desc = root.getChildByName('skill_text');
             var lv = root.getChildByName('skillLevel_text');
-            setElement(root, function (event) {
-                var eventData={};
-                var cost=skill.getNextLevelUpgrade();
-                eventData.cost=cost;
-                eventData.skillId=skill.getId();
-                eventData.goldPosition=that.playerGoldText.getPosition();
+            setElement(root, skill, function (event, otherBtn) {
+                var eventData = {};
+                var cost = skill.getNextLevelUpgrade();
+                eventData.cost = cost;
+                eventData.skillId = skill.getId();
+                /* var levelData=skill.getLevelData();
+                 var goldValue=levelData['upgrade']['value'];
+                 var levelAttack=levelData['attack'];*/
                 skill.upgrade();
-                if(skill.isMaxLevel()){
+                if (skill.isMaxLevel()) {
                     event.setEnabled(false);
                     event.setBright(false);
+                    otherBtn.upMaxText.setVisible(true);
+                    otherBtn.buffText.setVisible(false);
+                    otherBtn.buffNum.setVisible(false);
+                    otherBtn.gold.setVisible(false);
+                    otherBtn.goldText.setVisible(false);
+                } else {
+                    /*var nextlevelData=skill.getLevelData(skill.getLv()+1);
+                     var nextGoldValue=nextlevelData['upgrade']['value'];
+                     var nextLevelAttack=nextlevelData['attack'];
+                     otherBtn.goldText.setString(nextGoldValue);
+                     otherBtn.buffNum.setString('+'+(nextLevelAttack-levelAttack));*/
                 }
-                customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE,eventData);
+                customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
             });
             name.setString(skill.getName());

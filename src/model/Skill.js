@@ -13,8 +13,11 @@ var Skill = function (id, lv) {
         var cost=getLevelData(data,'upgrade',level+1);
         return cost;
     };
+    this.getLevelData=function(level){
+        return getSpecificLevelData(data,level||lv);
+    }
     this.isMaxLevel=function(){
-        return lv-1>=data.levelDatas.length;
+        return lv>=data.levelDatas.length;
     };
     this.upgrade=function(){
         lv++;

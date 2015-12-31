@@ -21,7 +21,7 @@ var Hero = function (heroData) {
         return lv <= 0;
     };
     this.isMaxLevel=function(){
-        return lv-1>=data.levelDatas.length;
+        return lv>=data.levelDatas.length;
     }
 
     this.getNextLevelUpgrade=function(){
@@ -29,6 +29,10 @@ var Hero = function (heroData) {
         var cost=getLevelData(data,'upgrade',level+1);
         return cost;
     };
+
+    this.getLevelData=function(level){
+        return getSpecificLevelData(data,level||lv);
+    }
 
     this.getId = function () {
         return id;
