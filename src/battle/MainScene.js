@@ -4,7 +4,7 @@ var MainScene = cc.Scene.extend({
         this._super();
 
         this.battlePanel = new BattlePanel(this);
-        this.battlePanel.initBattleHeroes();
+        this.battlePanel.initBattle(PlayerData.getStageData());
         //tab container
         this.tabContainer = new TabContainer(this.battlePanel);
         this.tabContainer.setPosition(0, 0);
@@ -22,7 +22,6 @@ var MainScene = cc.Scene.extend({
         this.topPanel.refreshAll();
 
         this.tabContainer.showMenuLayer('main');
-        this.battlePanel.initBattle(PlayerData.getStageData());
 
 
     }

@@ -16,7 +16,11 @@ var EVENT = {
     /**
      * 金币位置改变
      */
-    GOLD_POSITION:"GOLD_POSITION"
+    GOLD_POSITION:"GOLD_POSITION",
+    /**
+     * 金币数量改变
+     */
+    GOLD_VALUE_UPDATE:"GOLD_VALUE_UPDATE"
 };
 
 var customEventHelper = {

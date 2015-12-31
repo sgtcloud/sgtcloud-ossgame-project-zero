@@ -31,14 +31,54 @@ var EnemyUnit = BattleUnit.extend({
         };
         this.generateLoot = function () {
             var bonus = this.getBonus();
-            var loot = new Loot(bonus.unit, bonus.value);
-            loot.setPosition(this.getPosition());
-            this.getParent().addChild(loot);
-            loot.fire();
+            var value = bonus.value;
+            var lootSprites = [];
+            if (value == 1) {
+                lootSprites.push(new Loot(bonus.unit, "little"));
+            } else if (value > 1 && value <= 5) {
+                this.createLootSprites(lootSprites, 3, "little", bonus);
+            } else if (value > 5 && value <= 10) {
+                this.createLootSprites(lootSprites, 5, "little", bonus);
+            } else if (value > 10 && value <= 50) {
+                lootSprites.push(new Loot(bonus.unit, "some"));
+                this.createLootSprites(lootSprites, 10, "little", bonus);
+            } else if (value > 50 && value <= 100) {
+                lootSprites.push(new Loot(bonus.unit, "amount"));
+                this.createLootSprites(lootSprites, 5, "little", bonus);
+            } else if (value > 100 && value <= 500) {
+                lootSprites.push(new Loot(bonus.unit, "huge"));
+                this.createLootSprites(lootSprites, 10, "little", bonus);
+            } else if (value > 500 && value <= 1000) {
+                lootSprites.push(new Loot(bonus.unit, "some"));
+                lootSprites.push(new Loot(bonus.unit, "huge"));
+                this.createLootSprites(lootSprites, 15, "little", bonus);
+            } else if (value > 1000 && value <= 5000) {
+                lootSprites.push(new Loot(bonus.unit, "amout"));
+                lootSprites.push(new Loot(bonus.unit, "huge"));
+                this.createLootSprites(lootSprites, 20, "little", bonus);
+            } else {
+                lootSprites.push(new Loot(bonus.unit, "some"));
+                lootSprites.push(new Loot(bonus.unit, "amout"));
+                lootSprites.push(new Loot(bonus.unit, "huge"));
+                this.createLootSprites(lootSprites, 20, "little", bonus);
+            }
+            for (var i in lootSprites) {
+                lootSprites[i].setPosition(this.getPosition());
+                this.getParent().addChild(lootSprites[i]);
+                lootSprites[i].fire();
+            }
         };
         //获取杀死后的奖励
         this.getBonus = function () {
             return data.getBonus();
+        };
+        this.createLootSprites = function (lootSprites, num, size, bonus) {
+            for (var i = 0; i < num; i++) {
+                lootSprites.push(new Loot(bonus.unit, size));
+                if (i == num - 1) {
+                    lootSprites.push(new Loot(bonus.unit, size, bonus));
+                }
+            }
         }
     }
 });
