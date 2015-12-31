@@ -153,7 +153,7 @@ var HeroListMenu = BattleMenu.extend({
 
         var heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         var skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
-
+        var that=this;
         function setElement(root, listener) {
             var btnlayer = root.getChildByName('btn')
             var btn = btnlayer.getChildByName('btn');//升级按钮
@@ -177,15 +177,20 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
+            var currentLv=hero.getLv();
 
-            setElement(root, function () {
+            setElement(root, function (event) {
                 var eventData = {};
                 eventData.heroId = hero.getId();
                 var cost=hero.getNextLevelUpgrade();
-                eventData.unit =cost.unit;
-                eventData.value=cost.value;
+                eventData.cost=cost;
+                eventData.goldPosition=that.playerGoldText.getPosition();
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE,eventData);
                 hero.upgrade();
+                if(hero.isMaxLevel()){
+                    event.setEnabled(false);
+                    event.setBright(false);
+                }
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
             name.setString(hero.getName());
@@ -209,9 +214,20 @@ var HeroListMenu = BattleMenu.extend({
             var name = root.getChildByName('skillName_text');
             var desc = root.getChildByName('skill_text');
             var lv = root.getChildByName('skillLevel_text');
-            setElement(root, function () {
+            setElement(root, function (event) {
+                var eventData={};
+                var cost=skill.getNextLevelUpgrade();
+                eventData.cost=cost;
+                eventData.skillId=skill.getId();
+                eventData.goldPosition=that.playerGoldText.getPosition();
+                skill.upgrade();
+                if(skill.isMaxLevel()){
+                    event.setEnabled(false);
+                    event.setBright(false);
+                }
+                customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE,eventData);
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
-            })
+            });
             name.setString(skill.getName());
             desc.setString(skill.getDesc());
             lv.setString(skill.getLv());
