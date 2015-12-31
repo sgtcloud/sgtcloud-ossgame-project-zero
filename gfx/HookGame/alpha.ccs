@@ -103,7 +103,7 @@
         <Project Name="HeroView.csd" Type="Layer" />
         <Project Name="HeroLayer.csd" Type="Layer" />
         <Project Name="EquipView.csd" Type="Layer" />
-        <Project Name="Equiplayer.csd" Type="Layer" />
+        <Project Name="EquipLayer.csd" Type="Layer" />
         <Project Name="EquipBtn.csd" Type="Layer" />
         <Project Name="Blood.csd" Type="Layer" />
         <Project Name="EquipHeroView.csd" Type="Layer" />
