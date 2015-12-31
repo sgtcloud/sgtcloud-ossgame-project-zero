@@ -1,0 +1,132 @@
+{
+  "ID": "0fbf4624-e7eb-4e9f-8c6b-88e47383cc29",
+  "Version": "2.3.2.0",
+  "Name": "BattleHeroList",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 107,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ui_list_bg.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 32,
+            "Scale9OriginY": 64,
+            "Scale9Width": 576,
+            "Scale9Height": 308,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 220.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 121,
+            "ActionTag": 60952,
+            "Size": {
+              "X": 640.0,
+              "Y": 440.0
+            },
+            "Name": "bg",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "DirectionType": "Vertical",
+            "HorizontalType": "Align_HorizontalCenter",
+            "ScrollDirectionType": 0,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 150
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 150
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 60.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.1364
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.725
+            },
+            "TopMargin": 61.0,
+            "BottomMargin": 60.0,
+            "Tag": 122,
+            "ActionTag": -1102219438,
+            "Size": {
+              "X": 640.0,
+              "Y": 319.0
+            },
+            "Name": "list_view",
+            "ctype": "ListViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 440.0
+        },
+        "Name": "battle_hero_list",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ui_list_bg.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}
