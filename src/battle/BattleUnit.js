@@ -137,6 +137,7 @@ var BattleUnit = cc.Node.extend({
         };
         this.reset();
         this.scheduleUpdate();
+        //this.runAction(cc.sequence(cc.delayTime(Math.random()*10),cc.callFunc(this.scheduleUpdate(),this)));
     }
 });
 
