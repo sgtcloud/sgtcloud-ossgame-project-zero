@@ -155,10 +155,6 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < 7; i++) {
             this.heroPos[i] = this.spritesLayer.getChildByName('hero' + (i + 1));
         }
-        this.setHeroSprite = function (hero, index) {
-            this.heroPos[index].addChild(hero);
-        };
-
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
@@ -178,7 +174,11 @@ var BattlePanel = cc.Node.extend({
             }
 
         });
+        customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
+            self.goldPosition = event.getUserData();
+        });
         this.bindPlayerTapEvent();
+
 
         DamageNumber.initPool();
     },

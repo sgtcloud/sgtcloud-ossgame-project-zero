@@ -1,40 +1,15 @@
 {
-  "ID": "6e13232f-c017-40ad-ac57-6c491e0c505c",
+  "ID": "14b24a1e-671f-4edb-8145-42c11644f95e",
   "Version": "2.3.3.0",
   "Name": "gold02",
   "Content": {
     "Content": {
       "Animation": {
         "Duration": 3,
-        "Speed": 0.5,
+        "Speed": 0.1333,
         "Timelines": [
           {
-            "ActionTag": 1236783160,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1236783160,
+            "ActionTag": -1760693963,
             "Property": "FileData",
             "Frames": [
               {
@@ -72,7 +47,7 @@
         }
       ],
       "ObjectData": {
-        "Tag": 14,
+        "Tag": 5,
         "Children": [
           {
             "FileData": {
@@ -106,15 +81,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -37.5,
-            "RightMargin": -37.5,
-            "TopMargin": -32.0,
-            "BottomMargin": -32.0,
-            "Tag": 21,
-            "ActionTag": 1236783160,
+            "LeftMargin": -23.0,
+            "RightMargin": -23.0,
+            "TopMargin": -23.0,
+            "BottomMargin": -23.0,
+            "Tag": 12,
+            "ActionTag": -1760693963,
             "Size": {
-              "X": 75.0,
-              "Y": 64.0
+              "X": 37.0,
+              "Y": 32.0
             },
             "Name": "gold02",
             "ctype": "SpriteObjectData"

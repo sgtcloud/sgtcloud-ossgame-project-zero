@@ -5,34 +5,23 @@
 //掉落物品
 var Loot = cc.Node.extend({
 
-    ctor: function (unit, val) {
+    ctor: function (unit, size, bonus) {
         this._super();
-
-        this.appear = cc.jumpBy(0.2, cc.p(Math.random() * 10 - 10, 0), 24, 1);
-        this.shine = cc.delayTime(1.0);
-        //this.disapper = cc.fadeOut(1.0);
-        var self = this;
-        this.count = cc.callFunc(function () {
-            //cc.pool.putInPool(this);
-            self.removeFromParent(true);
-            PlayerData.consumeResource([PlayerData.createResourceData(this.unit, this.value)]);
-            cc.log(player.gold);
-        }, this);
-        this.initData(unit, val);
+        this.initData(unit, size);
+        this.bonus = bonus;
         //this.reuse(unit, val);
     },
 
-    initData: function (unit, val) {
+    initData: function (unit, size) {
         this.unit = unit;
-        this.value = val;
         if (unit == "gold") {
-            if (val < 100) {
+            if (size == "little") {
                 this.lootSprite = ccs.load(res.little_gold_json).node;
                 this.action = ccs.load(res.little_gold_json).action;
-            } else if (val < 500) {
+            } else if (size == "some") {
                 this.lootSprite = ccs.load(res.some_gold_json).node;
                 this.action = ccs.load(res.some_gold_json).action;
-            } else if (val < 1000) {
+            } else if (size == "amount") {
                 this.lootSprite = ccs.load(res.amount_gold_json).node;
                 this.action = ccs.load(res.amount_gold_json).action;
             } else {
@@ -55,6 +44,14 @@ var Loot = cc.Node.extend({
     //    //this.setVisible(true);
     //},
 
+    //setPosition: function (pos, y) {
+    //    cc.Node.prototype.setPosition.call(this, pos, y);
+    //    if (this.lootSprite && this.getParent()) {
+    //        //var thispos = this.getParent().getPosition();
+    //        this.lootSprite.setPosition(pos, y);
+    //    }
+    //},
+
     setOpacity: function (op) {
         if (this.lootSprite) {
             this.lootSprite.setOpacity(op);
@@ -62,16 +59,35 @@ var Loot = cc.Node.extend({
     },
 
     fire: function () {
-        this.lootSprite.runAction(this.action);
-        this.action.play("shine", true);
-        var startPos = this.getPosition();
-        var movePath = [startPos,
-            cc.p(320, 480),
-            cc.p(320, 280)];
-        this.move = cc.bezierTo(0.6, movePath);
-        this.runAction(cc.sequence(this.appear, this.shine, this.move, this.count));
-        //this.delay = cc.delayTime(1.5);
-        //this.runAction(cc.sequence(this.delay, this.disapper));
+        var battlePanel = this.getParent();
+        if (battlePanel) {
+            var jumpPos = cc.p(Math.random() * 96 - 48, Math.random() * 24 - 12);
+            this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
+            this.shine = cc.delayTime(1.0);
+            //this.disapper = cc.fadeOut(1.0);
+            var self = this;
+            this.count = cc.callFunc(function () {
+                //cc.pool.putInPool(this);
+                self.removeFromParent(true);
+                if (self.bonus) {
+                    PlayerData.consumeResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
+                    customEventHelper.sendEvent(Event.GOLD_VALUE_UPDATE);
+                }
+                //cc.log(player.gold);
+            }, this);
+            var startPos = this.getPosition();
+            //var curveValue = cc.p(battlePanel.x + battlePanel.width / 2, battlePanel.y + battlePanel.height / 2);
+            //var endPosition = battlePanel.goldPosition || cc.p(320, 280);
+            var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
+            var endPosition = cc.p(320, 280);
+            var movePath = [startPos,
+                curveValue,
+                endPosition];
+            this.move = cc.bezierTo(0.6, movePath);
+            this.lootSprite.runAction(this.action);
+            this.action.play("shine", true);
+            this.runAction(cc.sequence(this.appear, this.shine, this.move, this.count));
+        }
     }
 });
 
