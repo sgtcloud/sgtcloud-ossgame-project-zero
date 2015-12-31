@@ -12,7 +12,11 @@ var EVENT = {
     /**
      * 英雄技能升级
      */
-    HERO_SKILL_UPGRADE: "SKILL_UPGRADE"
+    HERO_SKILL_UPGRADE: "SKILL_UPGRADE",
+    /**
+     * 金币位置改变
+     */
+    GOLD_POSITION:"GOLD_POSITION"
 };
 
 var customEventHelper = {
