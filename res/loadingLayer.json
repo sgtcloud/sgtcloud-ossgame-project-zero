@@ -1,0 +1,620 @@
+{
+  "ID": "838c267c-3311-45e1-9155-2a59a14ce8e0",
+  "Version": "2.3.3.0",
+  "Name": "loadingLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 22,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 479375161,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 14,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 16,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 22,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 479375161,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 30.0,
+                "Y": 30.0,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 60.0,
+                "Y": 60.0,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 90.0,
+                "Y": 90.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 120.0,
+                "Y": 120.0,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 150.0,
+                "Y": 150.0,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 180.0,
+                "Y": 180.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 210.0,
+                "Y": 210.0,
+                "FrameIndex": 14,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 240.0,
+                "Y": 240.0,
+                "FrameIndex": 16,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 270.0,
+                "Y": 270.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 300.0,
+                "Y": 300.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 330.0,
+                "Y": 330.0,
+                "FrameIndex": 22,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 22,
+          "Name": "rot",
+          "ctype": "AnimationInfoData"
+        }
+      ],
+      "ObjectData": {
+        "Tag": 8,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 9,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/bg.jpg",
+                  "Plist": ""
+                },
+                "Scale9Width": 640,
+                "Scale9Height": 960,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 10,
+                "ActionTag": -1337552459,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 960.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/logo.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 300,
+                "Scale9Height": 180,
+                "AnchorPoint": {
+                  "ScaleX": 0.4967,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 319.0243,
+                  "Y": 780.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4985,
+                  "Y": 0.8125
+                },
+                "PreSize": {
+                  "X": 0.4688,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 170.0143,
+                "RightMargin": 169.9857,
+                "TopMargin": 180.0,
+                "BottomMargin": 600.0,
+                "Tag": 11,
+                "ActionTag": 1065835342,
+                "Size": {
+                  "X": 300.0,
+                  "Y": 180.0
+                },
+                "Name": "logo",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/letsgo.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 346,
+                "Scale9Height": 93,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 555.9998
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5792
+                },
+                "PreSize": {
+                  "X": 0.5406,
+                  "Y": 0.0969
+                },
+                "LeftMargin": 147.0,
+                "RightMargin": 147.0,
+                "TopMargin": 404.0002,
+                "BottomMargin": 462.9998,
+                "Tag": 12,
+                "ActionTag": 1896466436,
+                "Size": {
+                  "X": 346.0,
+                  "Y": 93.0
+                },
+                "Name": "letsgo",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/login_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 364,
+                "Scale9Height": 7,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 319.9999,
+                  "Y": 251.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.2615
+                },
+                "PreSize": {
+                  "X": 0.5688,
+                  "Y": 0.0073
+                },
+                "LeftMargin": 137.9999,
+                "RightMargin": 138.0001,
+                "TopMargin": 709.0,
+                "BottomMargin": 244.0,
+                "Tag": 13,
+                "ActionTag": 891686233,
+                "Size": {
+                  "X": 364.0,
+                  "Y": 7.0
+                },
+                "Name": "loading_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/frist.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 347,
+                "Scale9Height": 34,
+                "AnchorPoint": {
+                  "ScaleX": 0.5028,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 320.958,
+                  "Y": 321.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5015,
+                  "Y": 0.3344
+                },
+                "PreSize": {
+                  "X": 0.5422,
+                  "Y": 0.0354
+                },
+                "LeftMargin": 146.4864,
+                "RightMargin": 146.5136,
+                "TopMargin": 639.0,
+                "BottomMargin": 287.0,
+                "Tag": 14,
+                "ActionTag": 822993709,
+                "Size": {
+                  "X": 347.0,
+                  "Y": 34.0
+                },
+                "Name": "frist",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ProgressInfo": 50,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/login_bar.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5011,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 251.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.2615
+                },
+                "PreSize": {
+                  "X": 0.5688,
+                  "Y": 0.0073
+                },
+                "LeftMargin": 137.5996,
+                "RightMargin": 138.4004,
+                "TopMargin": 709.0,
+                "BottomMargin": 244.0,
+                "Tag": 15,
+                "ActionTag": 1100054645,
+                "Size": {
+                  "X": 364.0,
+                  "Y": 7.0
+                },
+                "Name": "loading_bar",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loadingUI/star.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 138.5204,
+                  "Y": 249.4589
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 330.0,
+                "RotationSkewY": 330.0,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2164,
+                  "Y": 0.2599
+                },
+                "PreSize": {
+                  "X": 0.0422,
+                  "Y": 0.0281
+                },
+                "LeftMargin": 125.0204,
+                "RightMargin": 487.9796,
+                "TopMargin": 697.0411,
+                "BottomMargin": 235.9589,
+                "Tag": 17,
+                "ActionTag": 479375161,
+                "Size": {
+                  "X": 27.0,
+                  "Y": 27.0
+                },
+                "Name": "star",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": 2049391,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "loadingUI/bg.jpg",
+        "loadingUI/frist.png",
+        "loadingUI/letsgo.png",
+        "loadingUI/login_bar.png",
+        "loadingUI/login_bg.png",
+        "loadingUI/logo.png",
+        "loadingUI/star.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

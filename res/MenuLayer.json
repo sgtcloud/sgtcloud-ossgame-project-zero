@@ -1,0 +1,460 @@
+{
+  "ID": "23b900a8-4e61-473e-883d-ad267ca3bfb6",
+  "Version": "2.3.3.0",
+  "Name": "MenuLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 151,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 451,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_04.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 12,
+                "Scale9Width": 7,
+                "Scale9Height": 8,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 519,
+                "ActionTag": 1356425691,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 100.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/main_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/main_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/main_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/main_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 4.5,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.007,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 4.5,
+                "RightMargin": 540.5,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 168,
+                "ActionTag": -1674749777,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "main",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/hero_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/hero_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/hero_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/hero_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 111.7,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1745,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 111.7,
+                "RightMargin": 433.3,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 169,
+                "ActionTag": -1419990856,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "hero",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/equip_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/equip_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/equip_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/equip_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 218.9,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.342,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 218.9,
+                "RightMargin": 326.1,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 170,
+                "ActionTag": 2073273041,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "equip",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/pvp_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/pvp_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/pvp_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/pvp_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 326.1,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5095,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 326.1,
+                "RightMargin": 218.9,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 171,
+                "ActionTag": 1978468656,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "pvp",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/rank_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/rank_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/rank_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/rank_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 433.3,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.677,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 433.3,
+                "RightMargin": 111.7,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 172,
+                "ActionTag": -1008761465,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "rank",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/shop_btn1.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/shop_btn2.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/shop_btn1.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "ui/shop_btn2.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 540.5,
+                  "Y": 3.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8445,
+                  "Y": 0.035
+                },
+                "PreSize": {
+                  "X": 0.1484,
+                  "Y": 0.95
+                },
+                "LeftMargin": 540.5,
+                "RightMargin": 4.5,
+                "TopMargin": 1.5,
+                "BottomMargin": 3.5,
+                "Tag": 173,
+                "ActionTag": -103952926,
+                "Size": {
+                  "X": 95.0,
+                  "Y": 95.0
+                },
+                "Name": "shop",
+                "ctype": "CheckBoxObjectData"
+              }
+            ],
+            "ActionTag": -1642134160,
+            "Size": {
+              "X": 640.0,
+              "Y": 100.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 100.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "mainUI/bg_04.png",
+        "ui/equip_btn1.png",
+        "ui/equip_btn2.png",
+        "ui/hero_btn1.png",
+        "ui/hero_btn2.png",
+        "ui/main_btn1.png",
+        "ui/main_btn2.png",
+        "ui/pvp_btn1.png",
+        "ui/pvp_btn2.png",
+        "ui/rank_btn1.png",
+        "ui/rank_btn2.png",
+        "ui/shop_btn1.png",
+        "ui/shop_btn2.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
