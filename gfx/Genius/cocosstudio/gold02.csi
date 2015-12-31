@@ -1,5 +1,5 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="gold02" Type="Plist" ID="3ae0f47a-3b54-4596-b043-7ffdc2e913b6" Version="2.3.3.0" />
+  <PropertyGroup Name="gold02" Type="Plist" ID="a8e98e3f-9e71-4275-8a44-40ce34166b84" Version="2.3.3.0" />
   <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="gold/gold02/gold02_shine01.png" />
