@@ -3,8 +3,10 @@
  */
 
 var TabContainer = cc.Node.extend({
+
     ctor: function (battlePanel) {
         this._super();
+
         this.menuLayer = ccs.csLoader.createNode(res.menu_layer_json);
         this.addChild(this.menuLayer);
 
@@ -77,13 +79,11 @@ var TabContainer = cc.Node.extend({
         function bindListener(){
             customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
                 cc.log('event of hero_upgrade has been called,and the userData is '+JSON.stringify(event.getUserData()));
-                var cost=event.getUserData();
-                PlayerData.consumeResource([cost]);
+                PlayerData.consumeResource(event.getUserData());
                 PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE,function(event){
-                var cost=event.getUserData();
-                PlayerData.consumeResource([cost]);
+                PlayerData.consumeResource(event.getUserData());
                 PlayerData.updatePlayer();
             });
         }

@@ -20,9 +20,6 @@ var Hero = function (heroData) {
     this.isLocked = function () {
         return lv <= 0;
     };
-    this.isMaxLevel=function(){
-        return lv-1>=data.levelDatas.length;
-    }
 
     this.getNextLevelUpgrade=function(){
         var level=this.getLv();
