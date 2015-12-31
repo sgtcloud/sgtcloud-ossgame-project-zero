@@ -1,0 +1,144 @@
+{
+  "ID": "e9493d7b-bc9b-4987-85a0-086cd7fce62b",
+  "Version": "2.3.3.0",
+  "Name": "chest03",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 5,
+        "Speed": 0.5,
+        "Timelines": [
+          {
+            "ActionTag": -504332941,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -504332941,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest03/chest03_close01.png",
+                  "Plist": "chest03.plist"
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest03/chest03_open01.png",
+                  "Plist": "chest03.plist"
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 2,
+          "Name": "close",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 4,
+          "EndIndex": 5,
+          "Name": "open",
+          "ctype": "AnimationInfoData"
+        }
+      ],
+      "ObjectData": {
+        "Tag": 42,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "chest/chest03/chest03_close01.png",
+              "Plist": "chest03.plist"
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -62.5,
+            "RightMargin": -62.5,
+            "TopMargin": -58.0,
+            "BottomMargin": -58.0,
+            "Tag": 47,
+            "ActionTag": -504332941,
+            "Size": {
+              "X": 125.0,
+              "Y": 116.0
+            },
+            "Name": "chest03",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "chest03.plist",
+        "chest03.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

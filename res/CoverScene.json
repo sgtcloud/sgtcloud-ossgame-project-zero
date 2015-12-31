@@ -1,0 +1,149 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "2.3.2.0",
+  "Name": "CoverScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "cover/cover_bg.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 5,
+            "ActionTag": -620272433,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "cover_bg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 30,
+            "ButtonText": "快速登陆",
+            "TextColor": {},
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "cover/yellow_btn_b.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "cover/yellow_btn_b.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "cover/yellow_btn_a.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 10,
+            "Scale9OriginY": 10,
+            "Scale9Width": 189,
+            "Scale9Height": 42,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 288.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.3
+            },
+            "PreSize": {
+              "X": 0.375,
+              "Y": 0.0667
+            },
+            "LeftMargin": 200.0,
+            "RightMargin": 200.0,
+            "TopMargin": 640.0,
+            "BottomMargin": 256.0,
+            "CallBackType": "Click",
+            "CallBackName": "onClickLogin",
+            "Tag": 240,
+            "ActionTag": -1382697340,
+            "Size": {
+              "X": 240.0,
+              "Y": 64.0
+            },
+            "Name": "cover_login_btn",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "CoverScene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "cover/cover_bg.jpg",
+        "cover/yellow_btn_a.png",
+        "cover/yellow_btn_b.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

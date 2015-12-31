@@ -29,7 +29,6 @@ var TabContainer = cc.Node.extend({
             this.buttons[name] = root.getChildByName(name);
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
-                console.log(sender);
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
                     self.showMenuLayer(sender.name);
                 }
@@ -58,11 +57,12 @@ var TabContainer = cc.Node.extend({
             for (var i in this.menus) {
                 this.menus[i].setVisible(false);
             }
-
             this.menus[name].setVisible(true);
-
             this.buttons[name].setSelected(true);
-
+            var goldText = this.menus[name].playerGoldText;
+            cc.log(goldText)
+            customEventHelper.sendEvent(EVENT.GOLD_POSITION, {position: goldText.position})
+            cc.log( goldText.position)
             //console.log(this.menuButtons);
         };
 
@@ -74,15 +74,15 @@ var TabContainer = cc.Node.extend({
             //    this.menuLayers[i].updatePlayerGoldText();
             //}
         }
-        function bindListener(){
-            customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
-                cc.log('event of hero_upgrade has been called,and the userData is '+JSON.stringify(event.getUserData()));
-                var cost=event.getUserData();
+        function bindListener() {
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+                cc.log('event of hero_upgrade has been called,and the userData is ' + JSON.stringify(event.getUserData()));
+                var cost = event.getUserData();
                 PlayerData.consumeResource([cost]);
                 PlayerData.updatePlayer();
             });
-            customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE,function(event){
-                var cost=event.getUserData();
+            customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
+                var cost = event.getUserData();
                 PlayerData.consumeResource([cost]);
                 PlayerData.updatePlayer();
             });
