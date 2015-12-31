@@ -8,6 +8,20 @@ var Skill = function (id, lv) {
     this.getId = function () {
         return id;
     };
+    this.getNextLevelUpgrade=function(){
+        var level=this.getLv();
+        var cost=getLevelData(data,'upgrade',level+1);
+        return cost;
+    };
+    this.getLevelData=function(level){
+        return getSpecificLevelData(data,level||lv);
+    }
+    this.isMaxLevel=function(){
+        return lv>=data.levelDatas.length;
+    };
+    this.upgrade=function(){
+        lv++;
+    }
     this.getLv = function () {
         return lv;
     };

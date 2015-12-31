@@ -23,6 +23,15 @@ function getLevelData(data, key, lv) {
     return data.levelDatas[index][key];
 }
 
+function  getSpecificLevelData(data,level){
+    var len=data.levelDatas.length;
+    var index=len-level;
+    if (!data.levelDatas[index]) {
+        return data.levelDatas[len-1];
+    }
+    return data.levelDatas[index];
+}
+
 function getEffectValue(data, key, lv) {
     var val = getLevelData(data, key, lv);
     if (!val) {

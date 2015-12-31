@@ -20,12 +20,19 @@ var Hero = function (heroData) {
     this.isLocked = function () {
         return lv <= 0;
     };
+    this.isMaxLevel=function(){
+        return lv>=data.levelDatas.length;
+    }
 
     this.getNextLevelUpgrade=function(){
         var level=this.getLv();
         var cost=getLevelData(data,'upgrade',level+1);
         return cost;
     };
+
+    this.getLevelData=function(level){
+        return getSpecificLevelData(data,level||lv);
+    }
 
     this.getId = function () {
         return id;

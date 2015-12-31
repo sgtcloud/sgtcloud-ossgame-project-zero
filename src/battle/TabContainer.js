@@ -60,9 +60,7 @@ var TabContainer = cc.Node.extend({
             this.menus[name].setVisible(true);
             this.buttons[name].setSelected(true);
             var goldText = this.menus[name].playerGoldText;
-            cc.log(goldText)
-            customEventHelper.sendEvent(EVENT.GOLD_POSITION, {position: goldText.position})
-            cc.log( goldText.position)
+            customEventHelper.sendEvent(EVENT.GOLD_POSITION, {position: goldText.getPosition()})
             //console.log(this.menuButtons);
         };
 
