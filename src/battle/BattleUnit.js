@@ -1,5 +1,3 @@
-
-
 //战斗单位容器 英雄和敌人的父类
 var BattleUnit = cc.Node.extend({
     ctor: function (battle, data, camp) {
@@ -82,7 +80,14 @@ var BattleUnit = cc.Node.extend({
             this.showDamageNumber(dmg, ctr);
             this.onDamaged();
             if (this.isDead()) {
-                this.playAnimation('die');
+                if (camp === BattleConsts.Camp.Player) {
+                    this.playAnimation('die');
+                    var srcPos = this.getPosition();
+                    this.setPosition(srcPos.x, battle.y + battle.height);
+                    var dropMove = cc.jumpTo(0.5, srcPos, 0, 1);
+                    var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 2);
+                    this.runAction(cc.sequence(dropMove, jump));
+                }
                 this.onDead();
             } else {
                 this.playAnimation('hit');
