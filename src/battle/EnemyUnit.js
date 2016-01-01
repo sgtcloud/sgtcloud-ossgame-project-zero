@@ -17,6 +17,7 @@ var EnemyUnit = BattleUnit.extend({
             battle.updateEnemyLife();
         };
         this.onDead = function () {
+            this.generateLoot();
             var a = cc.delayTime(0.5);
             var b = cc.fadeTo(0.5, 0);
             var c = cc.callFunc(this.onVanish, this);
@@ -25,7 +26,6 @@ var EnemyUnit = BattleUnit.extend({
         };
         //敌人消失后被调用
         this.onVanish = function () {
-            this.generateLoot();
             this.removeFromParent(true);
             battle.onEnemyVanish(this);
         };

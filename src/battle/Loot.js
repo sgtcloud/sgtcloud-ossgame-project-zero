@@ -61,7 +61,7 @@ var Loot = cc.Node.extend({
     fire: function () {
         var battlePanel = this.getParent();
         if (battlePanel) {
-            var jumpPos = cc.p(Math.random() * 96 - 48, Math.random() * 24 - 12);
+            var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 32 - 16);
             this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
             this.shine = cc.delayTime(1.0);
             //this.disapper = cc.fadeOut(1.0);
@@ -78,7 +78,8 @@ var Loot = cc.Node.extend({
             var startPos = this.getPosition();
             //var curveValue = cc.p(battlePanel.x + battlePanel.width / 2, battlePanel.y + battlePanel.height / 2);
             //var endPosition = battlePanel.goldPosition || cc.p(320, 280);
-            var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
+            //var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
+            var curveValue =  cc.p(320, 280);
             var endPosition = cc.p(320, 280);
             var movePath = [startPos,
                 curveValue,
@@ -86,7 +87,8 @@ var Loot = cc.Node.extend({
             this.move = cc.bezierTo(0.6, movePath);
             this.lootSprite.runAction(this.action);
             this.action.play("shine", true);
-            this.runAction(cc.sequence(this.appear, this.shine, this.move, this.count));
+            this.moveUpAndBecomeBigger = cc.spawn(cc.moveBy(0.1, 0, 16), cc.scaleBy(0.1, 1.5));
+            this.runAction(cc.sequence(this.appear, this.shine, this.moveUpAndBecomeBigger, this.move, this.count));
         }
     }
 });
