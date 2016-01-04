@@ -49,14 +49,14 @@
                 <PreSize X="0.1579" Y="0.5000" />
                 <FileData Type="Normal" Path="mainUI/empty.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text1" ActionTag="-1946973175" Tag="125" IconVisible="False" LeftMargin="102.0141" RightMargin="277.9859" TopMargin="85.7379" BottomMargin="34.2621" FontSize="18" LabelText="" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="0.0000" Y="0.0000" />
+              <AbstractNodeData Name="level_text1" ActionTag="-1946973175" Tag="125" IconVisible="False" LeftMargin="88.5141" RightMargin="264.4859" TopMargin="76.7379" BottomMargin="25.2621" FontSize="18" LabelText="   " HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="27.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="102.0141" Y="34.2621" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.2685" Y="0.2855" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PreSize X="0.0711" Y="0.1500" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
