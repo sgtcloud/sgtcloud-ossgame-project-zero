@@ -80,7 +80,6 @@ var TabContainer = cc.Node.extend({
         }
         function bindListener() {
             customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
-                cc.log('event of hero_upgrade has been called,and the userData is ' + JSON.stringify(event.getUserData()));
                 var data = event.getUserData();
                 PlayerData.consumeResource([data.cost]);
                 PlayerData.updatePlayer();
@@ -91,7 +90,8 @@ var TabContainer = cc.Node.extend({
                 PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){
-                cc.log("gold:"+player.gold)
+                customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
+                customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
             })
         }
 
