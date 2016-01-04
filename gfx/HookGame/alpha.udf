@@ -40,8 +40,17 @@
           <FilePathData Path="MenuLayer.csd" />
           <FilePathData Path="MoneyTreeView.csd" />
           <FilePathData Path="Equiplayer.csd" />
+          <FilePathData Path="TitleLayer.csd" />
+          <FilePathData Path="EquipBtn.csd" />
+          <FilePathData Path="EquipDesc.csd" />
+          <FilePathData Path="EquipHeroView.csd" />
+          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="HeroDesc.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="Prompt1Layer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="BattleLayer.csd" />
+        <ActiveDocument Path="TitleLayer.csd" />
       </Value>
     </Item>
   </Properties>

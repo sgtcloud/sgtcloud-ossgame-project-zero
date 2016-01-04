@@ -148,7 +148,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": -3.1974,
-                      "Y": 26.7316
+                      "Y": 44.7318
                     },
                     "Scale": {
                       "ScaleX": 0.7765,
@@ -158,7 +158,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": -0.0237,
-                      "Y": 0.4455
+                      "Y": 0.7455
                     },
                     "PreSize": {
                       "X": 1.1852,
@@ -166,15 +166,15 @@
                     },
                     "LeftMargin": -3.1974,
                     "RightMargin": -21.8026,
-                    "TopMargin": 3.2684,
-                    "BottomMargin": 26.7316,
+                    "TopMargin": -14.7318,
+                    "BottomMargin": 44.7318,
                     "Tag": 107,
                     "ActionTag": 169438672,
                     "Size": {
                       "X": 160.0,
                       "Y": 30.0
                     },
-                    "Name": "gold_text_bg",
+                    "Name": "diamond_text_bg",
                     "ctype": "ImageViewObjectData"
                   },
                   {
@@ -190,7 +190,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": -3.1974,
-                      "Y": -6.4586
+                      "Y": 11.5415
                     },
                     "Scale": {
                       "ScaleX": 0.7765,
@@ -200,7 +200,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": -0.0237,
-                      "Y": -0.1076
+                      "Y": 0.1924
                     },
                     "PreSize": {
                       "X": 1.1852,
@@ -208,15 +208,15 @@
                     },
                     "LeftMargin": -3.1974,
                     "RightMargin": -21.8026,
-                    "TopMargin": 36.4586,
-                    "BottomMargin": -6.4586,
+                    "TopMargin": 18.4585,
+                    "BottomMargin": 11.5415,
                     "Tag": 411,
                     "ActionTag": 972080489,
                     "Size": {
                       "X": 160.0,
                       "Y": 30.0
                     },
-                    "Name": "diamond_text_bg",
+                    "Name": "relic_text_bg",
                     "ctype": "ImageViewObjectData"
                   },
                   {
@@ -263,7 +263,7 @@
                     },
                     "Position": {
                       "X": 90.2563,
-                      "Y": 54.8474
+                      "Y": 72.8476
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -273,7 +273,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6686,
-                      "Y": 0.9141
+                      "Y": 1.2141
                     },
                     "PreSize": {
                       "X": 0.1852,
@@ -281,8 +281,8 @@
                     },
                     "LeftMargin": 90.2563,
                     "RightMargin": 19.7437,
-                    "TopMargin": 5.1526,
-                    "BottomMargin": 29.8474,
+                    "TopMargin": -12.8476,
+                    "BottomMargin": 47.8476,
                     "Tag": 141,
                     "ActionTag": -148503213,
                     "Size": {
@@ -305,7 +305,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": -3.4458,
-                      "Y": 32.3488
+                      "Y": 50.349
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -315,7 +315,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": -0.0255,
-                      "Y": 0.5391
+                      "Y": 0.8392
                     },
                     "PreSize": {
                       "X": 0.1852,
@@ -323,8 +323,8 @@
                     },
                     "LeftMargin": -3.4458,
                     "RightMargin": 113.4458,
-                    "TopMargin": 2.6512,
-                    "BottomMargin": 32.3488,
+                    "TopMargin": -15.349,
+                    "BottomMargin": 50.349,
                     "Tag": 105,
                     "ActionTag": 181421063,
                     "Size": {
@@ -349,7 +349,7 @@
                     },
                     "Position": {
                       "X": -3.4458,
-                      "Y": 26.0
+                      "Y": 44.0002
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -359,7 +359,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": -0.0255,
-                      "Y": 0.4333
+                      "Y": 0.7333
                     },
                     "PreSize": {
                       "X": 0.1852,
@@ -367,22 +367,22 @@
                     },
                     "LeftMargin": -3.4458,
                     "RightMargin": 113.4458,
-                    "TopMargin": 34.0,
-                    "BottomMargin": 1.0,
+                    "TopMargin": 15.9998,
+                    "BottomMargin": 19.0002,
                     "Tag": 110,
                     "ActionTag": 1567261989,
                     "Size": {
                       "X": 25.0,
                       "Y": 25.0
                     },
-                    "Name": "relic_btn",
+                    "Name": "relic_icon",
                     "ctype": "ImageViewObjectData"
                   },
                   {
                     "IsCustomSize": true,
                     "FontSize": 18,
                     "LabelText": "999999",
-                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -399,8 +399,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 56.704,
-                      "Y": 43.9827
+                      "X": 56.1157,
+                      "Y": 61.983
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -409,31 +409,31 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.42,
-                      "Y": 0.733
+                      "X": 0.4157,
+                      "Y": 1.0331
                     },
                     "PreSize": {
                       "X": 0.4444,
                       "Y": 0.3
                     },
-                    "LeftMargin": 26.704,
-                    "RightMargin": 48.296,
-                    "TopMargin": 7.0173,
-                    "BottomMargin": 34.9827,
+                    "LeftMargin": 26.1157,
+                    "RightMargin": 48.8843,
+                    "TopMargin": -10.983,
+                    "BottomMargin": 52.983,
                     "Tag": 115,
                     "ActionTag": -591758277,
                     "Size": {
                       "X": 60.0,
                       "Y": 18.0
                     },
-                    "Name": "gold_text",
+                    "Name": "diamond_text",
                     "ctype": "TextObjectData"
                   },
                   {
                     "IsCustomSize": true,
                     "FontSize": 18,
                     "LabelText": "999999",
-                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -450,8 +450,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 56.704,
-                      "Y": 12.0698
+                      "X": 56.1157,
+                      "Y": 28.0698
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -460,17 +460,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.42,
-                      "Y": 0.2012
+                      "X": 0.4157,
+                      "Y": 0.4678
                     },
                     "PreSize": {
                       "X": 0.4444,
                       "Y": 0.3
                     },
-                    "LeftMargin": 26.704,
-                    "RightMargin": 48.296,
-                    "TopMargin": 38.9302,
-                    "BottomMargin": 3.0698,
+                    "LeftMargin": 26.1157,
+                    "RightMargin": 48.8843,
+                    "TopMargin": 22.9302,
+                    "BottomMargin": 19.0698,
                     "Tag": 116,
                     "ActionTag": -169660825,
                     "Size": {
@@ -478,6 +478,214 @@
                       "Y": 18.0
                     },
                     "Name": "relic_text",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_15.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 20,
+                    "Scale9Width": 7,
+                    "Scale9Height": 58,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -2.786,
+                      "Y": -21.3106
+                    },
+                    "Scale": {
+                      "ScaleX": 0.7765,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0206,
+                      "Y": -0.3552
+                    },
+                    "PreSize": {
+                      "X": 1.4074,
+                      "Y": 0.5
+                    },
+                    "LeftMargin": -2.786,
+                    "RightMargin": -52.214,
+                    "TopMargin": 51.3106,
+                    "BottomMargin": -21.3106,
+                    "Tag": 120,
+                    "ActionTag": -1385240699,
+                    "Size": {
+                      "X": 190.0,
+                      "Y": 30.0
+                    },
+                    "Name": "gold_text_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 9,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 25,
+                    "Scale9Height": 26,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 114.6688,
+                      "Y": 6.806
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8494,
+                      "Y": 0.1134
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": 114.6688,
+                    "RightMargin": -4.6688,
+                    "TopMargin": 53.194,
+                    "BottomMargin": -18.194,
+                    "Tag": 121,
+                    "ActionTag": 1191769766,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "getGold_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/gold.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 14,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -3.0345,
+                      "Y": -15.6931
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0225,
+                      "Y": -0.2616
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": -3.0345,
+                    "RightMargin": 113.0345,
+                    "TopMargin": 50.6931,
+                    "BottomMargin": -15.6931,
+                    "Tag": 122,
+                    "ActionTag": 28859119,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "gold_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 18,
+                    "LabelText": "999999",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 76.1158,
+                      "Y": -4.0586
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5638,
+                      "Y": -0.0676
+                    },
+                    "PreSize": {
+                      "X": 0.7407,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 26.1158,
+                    "RightMargin": 8.8842,
+                    "TopMargin": 55.0586,
+                    "BottomMargin": -13.0586,
+                    "Tag": 123,
+                    "ActionTag": 204974627,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 18.0
+                    },
+                    "Name": "gold_text",
                     "ctype": "TextObjectData"
                   }
                 ],
@@ -628,7 +836,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 531.9988,
@@ -702,7 +910,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 530.9987,
@@ -833,6 +1041,7 @@
         "mainUI/bg_04.png",
         "mainUI/bg_15.png",
         "mainUI/diamond.png",
+        "mainUI/gold.png",
         "mainUI/relic.png",
         "mainUI/slice131_@.png",
         "ui/btn_1.png",

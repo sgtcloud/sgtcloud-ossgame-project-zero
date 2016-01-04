@@ -99,7 +99,7 @@
                   "X": 400.0,
                   "Y": 350.0
                 },
-                "Name": "prompt_bg",
+                "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -135,7 +135,7 @@
                   "Y": 0.09
                 },
                 "LeftMargin": 35.2204,
-                "RightMargin": 34.7795,
+                "RightMargin": 34.7796,
                 "TopMargin": 39.854,
                 "BottomMargin": 324.146,
                 "Tag": 42,
@@ -187,7 +187,7 @@
                   "X": 396.0,
                   "Y": 240.0
                 },
-                "Name": "prompt_bg2",
+                "Name": "prompt_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -230,7 +230,7 @@
                   "X": 386.0,
                   "Y": 224.0
                 },
-                "Name": "prompt_bg2_0",
+                "Name": "text_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -349,7 +349,7 @@
                   "Y": 0.05
                 },
                 "LeftMargin": 170.7295,
-                "RightMargin": 159.2704,
+                "RightMargin": 159.2705,
                 "TopMargin": 154.2466,
                 "BottomMargin": 225.7534,
                 "Tag": 50,
@@ -381,7 +381,7 @@
                 },
                 "Position": {
                   "X": 242.2785,
-                  "Y": 176.7835
+                  "Y": 175.7835
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -395,7 +395,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5384,
-                  "Y": 0.442
+                  "Y": 0.4395
                 },
                 "PreSize": {
                   "X": 0.16,
@@ -403,8 +403,8 @@
                 },
                 "LeftMargin": 206.2785,
                 "RightMargin": 171.7215,
-                "TopMargin": 214.2165,
-                "BottomMargin": 167.7835,
+                "TopMargin": 215.2165,
+                "BottomMargin": 166.7835,
                 "Tag": 51,
                 "ActionTag": -1256465214,
                 "Size": {
@@ -413,6 +413,92 @@
                 },
                 "Name": "gold_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/relic.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.0088,
+                  "Y": 175.8928
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4111,
+                  "Y": 0.4397
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.0088,
+                "RightMargin": 249.9912,
+                "TopMargin": 209.1072,
+                "BottomMargin": 160.8928,
+                "Tag": 118,
+                "ActionTag": 1767435998,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "relic",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.0088,
+                  "Y": 175.8928
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4111,
+                  "Y": 0.4397
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.0088,
+                "RightMargin": 249.9912,
+                "TopMargin": 209.1072,
+                "BottomMargin": 160.8928,
+                "Tag": 117,
+                "ActionTag": 1351012099,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "diamond",
+                "ctype": "ImageViewObjectData"
               },
               {
                 "FileData": {
@@ -427,8 +513,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 185.0176,
-                  "Y": 176.7857
+                  "X": 185.0088,
+                  "Y": 175.8928
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -437,17 +523,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4112,
-                  "Y": 0.442
+                  "X": 0.4111,
+                  "Y": 0.4397
                 },
                 "PreSize": {
                   "X": 0.0667,
                   "Y": 0.075
                 },
-                "LeftMargin": 170.0176,
-                "RightMargin": 249.9824,
-                "TopMargin": 208.2143,
-                "BottomMargin": 161.7857,
+                "LeftMargin": 170.0088,
+                "RightMargin": 249.9912,
+                "TopMargin": 209.1072,
+                "BottomMargin": 160.8928,
                 "Tag": 52,
                 "ActionTag": -863607303,
                 "Size": {
@@ -494,7 +580,7 @@
                   "Y": 0.05
                 },
                 "LeftMargin": 185.2204,
-                "RightMargin": 184.7797,
+                "RightMargin": 184.7796,
                 "TopMargin": 50.2313,
                 "BottomMargin": 329.7687,
                 "Tag": 132,
@@ -528,7 +614,9 @@
         "mainUI/bg_10.png",
         "mainUI/bg_11.png",
         "mainUI/bg_18.png",
+        "mainUI/diamond.png",
         "mainUI/gold.png",
+        "mainUI/relic.png",
         "mainUI/title.png"
       ],
       "ctype": "GameFileData"
