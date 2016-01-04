@@ -144,47 +144,6 @@
                 },
                 "Name": "hero_list",
                 "ctype": "ListViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "GoldLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 230.0,
-                  "Y": 498.6998
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3594,
-                  "Y": 0.9974
-                },
-                "PreSize": {
-                  "X": 0.2813,
-                  "Y": 0.1
-                },
-                "LeftMargin": 230.0,
-                "RightMargin": 230.0,
-                "TopMargin": -48.6998,
-                "BottomMargin": 498.6998,
-                "Tag": 174,
-                "ActionTag": 391566175,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 50.0
-                },
-                "Name": "goldLayer",
-                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -2144724591,
@@ -204,7 +163,6 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "GoldLayer.json",
         "heroUI/bg.png"
       ],
       "ctype": "GameFileData"

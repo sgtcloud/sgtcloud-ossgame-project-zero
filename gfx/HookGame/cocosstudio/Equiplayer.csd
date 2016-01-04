@@ -99,16 +99,6 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="goldLayer" ActionTag="-1363968626" Tag="216" IconVisible="True" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="-50.9312" BottomMargin="500.9312" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="180.0000" Y="50.0000" />
-                <AnchorPoint />
-                <Position X="230.0000" Y="500.9312" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3594" Y="1.0019" />
-                <PreSize X="0.2813" Y="0.1000" />
-                <FileData Type="Normal" Path="GoldLayer.csd" Plist="" />
-              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />

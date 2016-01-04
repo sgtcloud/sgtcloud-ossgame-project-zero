@@ -22,33 +22,33 @@
               <AbstractNodeData Name="box" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="25.0001" BottomMargin="34.9999" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="135.0000" Y="60.0000" />
                 <Children>
-                  <AbstractNodeData Name="gold_text_bg" ActionTag="169438672" Tag="107" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="3.2684" BottomMargin="26.7316" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="diamond_text_bg" ActionTag="169438672" Tag="107" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="-14.7318" BottomMargin="44.7318" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="160.0000" Y="30.0000" />
                     <AnchorPoint />
-                    <Position X="-3.1974" Y="26.7316" />
+                    <Position X="-3.1974" Y="44.7318" />
                     <Scale ScaleX="0.7765" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0237" Y="0.4455" />
+                    <PrePosition X="-0.0237" Y="0.7455" />
                     <PreSize X="1.1852" Y="0.5000" />
                     <FileData Type="Normal" Path="mainUI/bg_15.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_text_bg" ActionTag="972080489" Tag="411" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="36.4586" BottomMargin="-6.4586" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="relic_text_bg" ActionTag="972080489" Tag="411" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="18.4585" BottomMargin="11.5415" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="160.0000" Y="30.0000" />
                     <AnchorPoint />
-                    <Position X="-3.1974" Y="-6.4586" />
+                    <Position X="-3.1974" Y="11.5415" />
                     <Scale ScaleX="0.7765" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0237" Y="-0.1076" />
+                    <PrePosition X="-0.0237" Y="0.1924" />
                     <PreSize X="1.1852" Y="0.5000" />
                     <FileData Type="Normal" Path="mainUI/bg_15.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="getDiamond_btn" ActionTag="-148503213" Tag="141" IconVisible="False" LeftMargin="90.2563" RightMargin="19.7437" TopMargin="5.1526" BottomMargin="29.8474" TouchEnable="True" FontSize="14" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="25" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="getDiamond_btn" ActionTag="-148503213" Tag="141" IconVisible="False" LeftMargin="90.2563" RightMargin="19.7437" TopMargin="-12.8476" BottomMargin="47.8476" TouchEnable="True" FontSize="14" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="25" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="25.0000" Y="25.0000" />
                     <AnchorPoint ScaleY="1.0000" />
-                    <Position X="90.2563" Y="54.8474" />
+                    <Position X="90.2563" Y="72.8476" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6686" Y="0.9141" />
+                    <PrePosition X="0.6686" Y="1.2141" />
                     <PreSize X="0.1852" Y="0.4167" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="mainUI/slice131_@.png" Plist="" />
@@ -57,45 +57,91 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_icon" ActionTag="181421063" Tag="105" IconVisible="False" LeftMargin="-3.4458" RightMargin="113.4458" TopMargin="2.6512" BottomMargin="32.3488" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="14" Scale9Height="14" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="diamond_icon" ActionTag="181421063" Tag="105" IconVisible="False" LeftMargin="-3.4458" RightMargin="113.4458" TopMargin="-15.3490" BottomMargin="50.3490" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="14" Scale9Height="14" ctype="ImageViewObjectData">
                     <Size X="25.0000" Y="25.0000" />
                     <AnchorPoint />
-                    <Position X="-3.4458" Y="32.3488" />
+                    <Position X="-3.4458" Y="50.3490" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0255" Y="0.5391" />
+                    <PrePosition X="-0.0255" Y="0.8392" />
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="relic_btn" ActionTag="1567261989" Tag="110" IconVisible="False" LeftMargin="-3.4458" RightMargin="113.4458" TopMargin="34.0000" BottomMargin="1.0000" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="14" Scale9Height="14" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="relic_icon" ActionTag="1567261989" Tag="110" IconVisible="False" LeftMargin="-3.4458" RightMargin="113.4458" TopMargin="15.9998" BottomMargin="19.0002" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="14" Scale9Height="14" ctype="ImageViewObjectData">
                     <Size X="25.0000" Y="25.0000" />
                     <AnchorPoint ScaleY="1.0000" />
-                    <Position X="-3.4458" Y="26.0000" />
+                    <Position X="-3.4458" Y="44.0002" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0255" Y="0.4333" />
+                    <PrePosition X="-0.0255" Y="0.7333" />
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="-591758277" Tag="115" IconVisible="False" LeftMargin="26.7040" RightMargin="48.2960" TopMargin="7.0173" BottomMargin="34.9827" IsCustomSize="True" FontSize="18" LabelText="999999" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="diamond_text" ActionTag="-591758277" Tag="115" IconVisible="False" LeftMargin="26.1157" RightMargin="48.8843" TopMargin="-10.9830" BottomMargin="52.9830" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="60.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="56.7040" Y="43.9827" />
+                    <Position X="56.1157" Y="61.9830" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4200" Y="0.7330" />
+                    <PrePosition X="0.4157" Y="1.0331" />
                     <PreSize X="0.4444" Y="0.3000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="relic_text" ActionTag="-169660825" Tag="116" IconVisible="False" LeftMargin="26.7040" RightMargin="48.2960" TopMargin="38.9302" BottomMargin="3.0698" IsCustomSize="True" FontSize="18" LabelText="999999" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="relic_text" ActionTag="-169660825" Tag="116" IconVisible="False" LeftMargin="26.1157" RightMargin="48.8843" TopMargin="22.9302" BottomMargin="19.0698" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="60.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="56.7040" Y="12.0698" />
+                    <Position X="56.1157" Y="28.0698" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4200" Y="0.2012" />
+                    <PrePosition X="0.4157" Y="0.4678" />
                     <PreSize X="0.4444" Y="0.3000" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold_text_bg" ActionTag="-1385240699" Tag="120" IconVisible="False" LeftMargin="-2.7860" RightMargin="-52.2140" TopMargin="51.3106" BottomMargin="-21.3106" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
+                    <Size X="190.0000" Y="30.0000" />
+                    <AnchorPoint />
+                    <Position X="-2.7860" Y="-21.3106" />
+                    <Scale ScaleX="0.7765" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="-0.0206" Y="-0.3552" />
+                    <PreSize X="1.4074" Y="0.5000" />
+                    <FileData Type="Normal" Path="mainUI/bg_15.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="getGold_btn" ActionTag="1191769766" Tag="121" IconVisible="False" LeftMargin="114.6688" RightMargin="-4.6688" TopMargin="53.1940" BottomMargin="-18.1940" TouchEnable="True" FontSize="14" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="25" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint ScaleY="1.0000" />
+                    <Position X="114.6688" Y="6.8060" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8494" Y="0.1134" />
+                    <PreSize X="0.1852" Y="0.4167" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Normal" Path="mainUI/slice131_@.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/slice131_@.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/slice131_@.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold_icon" ActionTag="28859119" Tag="122" IconVisible="False" LeftMargin="-3.0345" RightMargin="113.0345" TopMargin="50.6931" BottomMargin="-15.6931" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="14" Scale9Height="14" ctype="ImageViewObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position X="-3.0345" Y="-15.6931" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="-0.0225" Y="-0.2616" />
+                    <PreSize X="0.1852" Y="0.4167" />
+                    <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold_text" ActionTag="204974627" Tag="123" IconVisible="False" LeftMargin="26.1158" RightMargin="8.8842" TopMargin="55.0586" BottomMargin="-13.0586" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="18.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="76.1158" Y="-4.0586" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5638" Y="-0.0676" />
+                    <PreSize X="0.7407" Y="0.3000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
