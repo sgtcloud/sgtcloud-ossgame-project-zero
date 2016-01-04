@@ -44,16 +44,6 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_white" ActionTag="1110165703" Tag="51" IconVisible="False" LeftMargin="100.1780" RightMargin="-14.1780" TopMargin="128.6926" BottomMargin="-63.6926" CharWidth="9" CharHeight="15" LabelText="536842" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="54.0000" Y="15.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="127.1780" Y="-56.1926" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9084" Y="-0.7024" />
-                <PreSize X="0.3857" Y="0.1875" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="897018303" Tag="16" IconVisible="False" LeftMargin="34.5000" RightMargin="28.5000" TopMargin="26.5000" BottomMargin="26.5000" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="77.0000" Y="27.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -94,6 +84,16 @@
                 <PreSize X="0.3786" Y="0.3125" />
                 <FileData Type="Normal" Path="buttonUI/recast.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="text_yellow" ActionTag="234064231" Tag="52" IconVisible="False" LeftMargin="57.6551" RightMargin="22.3449" TopMargin="20.3005" BottomMargin="48.6995" CharWidth="12" CharHeight="11" LabelText="56478" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="60.0000" Y="11.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="87.6551" Y="54.1995" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6261" Y="0.6775" />
+                <PreSize X="0.4286" Y="0.1375" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
@@ -105,16 +105,6 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="AtlasLabel_4" ActionTag="234064231" Tag="52" IconVisible="False" LeftMargin="57.6551" RightMargin="22.3449" TopMargin="20.3005" BottomMargin="48.6995" CharWidth="12" CharHeight="11" LabelText="56508" StartChar="0" ctype="TextAtlasObjectData">
-            <Size X="60.0000" Y="11.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="87.6551" Y="54.1995" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6261" Y="0.6775" />
-            <PreSize X="0.4286" Y="0.1375" />
-            <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
