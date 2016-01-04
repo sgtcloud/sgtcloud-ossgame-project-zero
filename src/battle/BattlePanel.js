@@ -90,6 +90,7 @@ var BattlePanel = cc.Node.extend({
 
         var battleLayer = ccs.csLoader.createNode(res.battle_layer_json);
         this.height = battleLayer.height;
+        this.width = battleLayer.width;
         this.addChild(battleLayer);
 
 
@@ -162,19 +163,12 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < 7; i++) {
             this.heroPos[i] = this.spritesLayer.getChildByName('hero' + (i + 1));
         }
-        this.setHeroSprite = function (hero, index) {
-            this.heroPos[index].addChild(hero);
-        };
-
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
         for (var i = 0; i < 5; i++) {
             this.enemyPos[i] = this.spritesLayer.getChildByName('enemy' + (i + 1));
         }
-        this.setEnemySprite = function (enemy, index) {
-            this.enemyPos[index].addChild(enemy);
-        };
         var self = this;
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             PlayerData.getStageData().goToBossBattle();
@@ -186,6 +180,10 @@ var BattlePanel = cc.Node.extend({
             if(self.times != undefined){
                 clearInterval(self.times);
             }
+
+        });
+        customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
+            self.goldPosition = event.getUserData();
         });
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
@@ -219,7 +217,8 @@ var BattlePanel = cc.Node.extend({
             var data = PlayerData.getHeroesData(i);
             var hero = new HeroUnit(this, data, player.heroes[i]);
             this.heroSprites.push(hero);
-            this.setHeroSprite(hero, i);
+            hero.setPosition(this.heroPos[i].getPosition());
+            this.addChild(hero, player.heroes.length - i);
         }
     },
     disableBossBattleTimeCounter:function(){
@@ -257,7 +256,10 @@ var BattlePanel = cc.Node.extend({
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             this.enemySprites.push(enemy);
-            this.setEnemySprite(enemy, i);
+            var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
+            enemy.setPosition(startPos);
+            this.addChild(enemy, enemiesData.length - i);
+            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i].getPosition(), 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2)));
         }
     },
 
@@ -306,7 +308,10 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-        this.prepareBattle(stageData);
+        // wait for 1 second to start next battle
+        this.scheduleOnce(function () {
+            this.prepareBattle(stageData);
+        }, 1.0);
         PlayerData.updatePlayer();
     },
 

@@ -30,7 +30,7 @@ function bindButtonCallback(button, callback) {
     }, button);
 }
 
-function removeCCSAnimationDefaultTween(timelines){
+function removeCCSAnimationDefaultTween(timelines) {
     for (var i in timelines) {
         var timeline = timelines[i];
         var frames = timeline.getFrames();
@@ -40,5 +40,11 @@ function removeCCSAnimationDefaultTween(timelines){
                 frame.setTween(false);
             }
         }
+    }
+}
+
+function popup(popupMenu) {
+    if (cc.director.getRunningScene()) {
+        cc.director.getRunningScene().addChild(popupMenu);
     }
 }

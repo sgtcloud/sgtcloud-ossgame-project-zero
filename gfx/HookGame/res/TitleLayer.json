@@ -836,7 +836,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1562,
+                  "X": 0.1563,
                   "Y": 0.6667
                 },
                 "LeftMargin": 531.9988,
@@ -910,7 +910,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1562,
+                  "X": 0.1563,
                   "Y": 0.6667
                 },
                 "LeftMargin": 530.9987,
@@ -929,6 +929,8 @@
               {
                 "FontSize": 24,
                 "LabelText": "99/99",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -945,7 +947,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 579.4028,
+                  "X": 574.4027,
                   "Y": 64.5613
                 },
                 "Scale": {
@@ -955,15 +957,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9053,
+                  "X": 0.8975,
                   "Y": 0.538
                 },
                 "PreSize": {
                   "X": 0.0938,
                   "Y": 0.2
                 },
-                "LeftMargin": 549.4028,
-                "RightMargin": 30.5972,
+                "LeftMargin": 544.4027,
+                "RightMargin": 35.5973,
                 "TopMargin": 43.4387,
                 "BottomMargin": 52.5613,
                 "Tag": 22,

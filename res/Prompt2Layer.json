@@ -99,7 +99,7 @@
                   "X": 400.0,
                   "Y": 350.0
                 },
-                "Name": "prompt_bg",
+                "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -135,7 +135,7 @@
                   "Y": 0.09
                 },
                 "LeftMargin": 35.2204,
-                "RightMargin": 34.7795,
+                "RightMargin": 34.7796,
                 "TopMargin": 39.854,
                 "BottomMargin": 324.146,
                 "Tag": 27,
@@ -187,7 +187,7 @@
                   "X": 396.0,
                   "Y": 240.0
                 },
-                "Name": "prompt_bg2",
+                "Name": "prompt_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -230,7 +230,7 @@
                   "X": 386.0,
                   "Y": 224.0
                 },
-                "Name": "prompt_bg2_0",
+                "Name": "text_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -305,7 +305,7 @@
                   "X": 120.0,
                   "Y": 50.0
                 },
-                "Name": "btn2",
+                "Name": "btn_No",
                 "ctype": "ButtonObjectData"
               },
               {
@@ -349,7 +349,7 @@
                   "Y": 0.05
                 },
                 "LeftMargin": 170.7295,
-                "RightMargin": 159.2704,
+                "RightMargin": 159.2705,
                 "TopMargin": 154.2466,
                 "BottomMargin": 225.7534,
                 "Tag": 31,
@@ -580,7 +580,7 @@
                   "Y": 0.05
                 },
                 "LeftMargin": 185.2204,
-                "RightMargin": 184.7797,
+                "RightMargin": 184.7796,
                 "TopMargin": 50.2313,
                 "BottomMargin": 329.7687,
                 "Tag": 34,
@@ -664,7 +664,7 @@
                   "X": 120.0,
                   "Y": 50.0
                 },
-                "Name": "btn1",
+                "Name": "btn_Yes",
                 "ctype": "ButtonObjectData"
               }
             ],

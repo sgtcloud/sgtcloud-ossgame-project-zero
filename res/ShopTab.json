@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -51,41 +53,32 @@
             "Tag": 95,
             "Children": [
               {
-                "FontSize": 30,
-                "ButtonText": "",
-                "TextColor": {},
-                "DisabledFileData": {
+                "CheckedState": true,
+                "NormalBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/shopTab_1.png",
                   "Plist": ""
                 },
-                "PressedFileData": {
+                "PressedBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/shopTab_2.png",
                   "Plist": ""
                 },
-                "NormalFileData": {
+                "DisableBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/shopTab_1.png",
                   "Plist": ""
                 },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 15,
-                "Scale9Width": 130,
-                "Scale9Height": 25,
-                "DisplayState": false,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/empty.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "NodeDisableFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/empty.png",
+                  "Plist": ""
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -107,50 +100,41 @@
                   "Y": 1.0
                 },
                 "RightMargin": 160.0,
-                "Tag": 52,
-                "ActionTag": -1066382732,
+                "Tag": 163,
+                "ActionTag": 228359029,
                 "Size": {
                   "X": 160.0,
                   "Y": 55.0
                 },
                 "Name": "shop_tab",
-                "ctype": "ButtonObjectData"
+                "ctype": "CheckBoxObjectData"
               },
               {
-                "FontSize": 30,
-                "ButtonText": "",
-                "TextColor": {},
-                "DisabledFileData": {
+                "NormalBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/moneyTreeTab_1.png",
                   "Plist": ""
                 },
-                "PressedFileData": {
+                "PressedBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/moneyTreeTab_2.png",
                   "Plist": ""
                 },
-                "NormalFileData": {
+                "DisableBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/moneyTreeTab_1.png",
                   "Plist": ""
                 },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 15,
-                "Scale9Width": 130,
-                "Scale9Height": 25,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "NodeNormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/empty.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "NodeDisableFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/empty.png",
+                  "Plist": ""
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -172,14 +156,14 @@
                   "Y": 1.0
                 },
                 "LeftMargin": 160.0,
-                "Tag": 53,
-                "ActionTag": 1266495568,
+                "Tag": 162,
+                "ActionTag": -1080933438,
                 "Size": {
                   "X": 160.0,
                   "Y": 55.0
                 },
                 "Name": "moneyTree_tab",
-                "ctype": "ButtonObjectData"
+                "ctype": "CheckBoxObjectData"
               }
             ],
             "ActionTag": -1195583241,
@@ -199,6 +183,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "mainUI/empty.png",
         "shopUI/moneyTreeTab_1.png",
         "shopUI/moneyTreeTab_2.png",
         "shopUI/shopTab_1.png",

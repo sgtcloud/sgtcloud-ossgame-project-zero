@@ -79,10 +79,10 @@
                     <PrePosition />
                     <PreSize X="0.0000" Y="0.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="hero7" ActionTag="1338998983" Tag="140" IconVisible="True" LeftMargin="256.2360" RightMargin="-256.2360" TopMargin="-307.8036" BottomMargin="307.8036" ctype="SingleNodeObjectData">
+                  <AbstractNodeData Name="hero7" ActionTag="1338998983" Tag="140" IconVisible="True" LeftMargin="256.2360" RightMargin="-256.2360" TopMargin="-317.8036" BottomMargin="317.8036" ctype="SingleNodeObjectData">
                     <Size X="0.0000" Y="0.0000" />
                     <AnchorPoint />
-                    <Position X="256.2360" Y="307.8036" />
+                    <Position X="256.2360" Y="317.8036" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
@@ -133,10 +133,10 @@
                     <PrePosition />
                     <PreSize X="0.0000" Y="0.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="enemy4" ActionTag="-927619036" Tag="147" IconVisible="True" LeftMargin="415.3945" RightMargin="-415.3945" TopMargin="-307.8036" BottomMargin="307.8036" ctype="SingleNodeObjectData">
+                  <AbstractNodeData Name="enemy4" ActionTag="-927619036" Tag="147" IconVisible="True" LeftMargin="415.3945" RightMargin="-415.3945" TopMargin="-317.8036" BottomMargin="317.8036" ctype="SingleNodeObjectData">
                     <Size X="0.0000" Y="0.0000" />
                     <AnchorPoint />
-                    <Position X="415.3945" Y="307.8036" />
+                    <Position X="415.3945" Y="317.8036" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />

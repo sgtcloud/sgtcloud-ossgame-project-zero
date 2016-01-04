@@ -71,20 +71,29 @@ var Loot = cc.Node.extend({
                 self.removeFromParent(true);
                 if (self.bonus) {
                     PlayerData.consumeResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
-                    customEventHelper.sendEvent(Event.GOLD_VALUE_UPDATE);
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 //cc.log(player.gold);
             }, this);
             var startPos = this.getPosition();
-            //var curveValue = cc.p(battlePanel.x + battlePanel.width / 2, battlePanel.y + battlePanel.height / 2);
-            //var endPosition = battlePanel.goldPosition || cc.p(320, 280);
-            //var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
-            var curveValue =  cc.p(320, 280);
-            var endPosition = cc.p(320, 280);
+
+            // todo 钥匙和宝箱的逻辑
+            if (this.unit === "gold") {
+                var endPosition = this.getGoldPosition() || cc.p(320, 280);
+            } else if (this.unit === "gem") {
+                var endPosition = this.getDiamondPosition() || cc.p(320, 280);
+            } else if (this.unit === "relic") {
+                var endPosition = this.getRelicPosition() || cc.p(320, 280);
+            } else if (this.unit === "key") {
+                var endPosition = this.getGoldPosition() || cc.p(320, 280);
+            }
+            var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
+            //var curveValue =  cc.p(320, 280);
+            //var endPosition = cc.p(320, 280);
             var movePath = [startPos,
                 curveValue,
                 endPosition];
-            this.move = cc.bezierTo(0.6, movePath);
+            this.move = cc.bezierTo(0.75, movePath);
             this.lootSprite.runAction(this.action);
             this.action.play("shine", true);
             this.moveUpAndBecomeBigger = cc.spawn(cc.moveBy(0.1, 0, 16), cc.scaleBy(0.1, 1.5));

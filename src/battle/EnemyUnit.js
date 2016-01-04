@@ -63,8 +63,9 @@ var EnemyUnit = BattleUnit.extend({
                 this.createLootSprites(lootSprites, 20, "little", bonus);
             }
             for (var i in lootSprites) {
-                lootSprites[i].setPosition(this.getPosition());
-                this.getParent().addChild(lootSprites[i]);
+                // 跨panel的移动逻辑需要添加到scene中
+                lootSprites[i].setPosition(this.getPositionX() + this.getParent().getPositionX(), this.getPositionY() + this.getParent().getPositionY());
+                cc.director.getRunningScene().addChild(lootSprites[i]);
                 lootSprites[i].fire();
             }
         };
