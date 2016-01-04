@@ -7,6 +7,8 @@ var player = {
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
+    "into_stage_battle_timestamp":0,
+    "not_get_reward":0,
     "heroes": [
         {
             "id": "h101",
@@ -54,6 +56,7 @@ var PlayerData = {
             }
         }
         this.stageData = new Stage(player.stage);
+        this.countOfflineReward();
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -116,7 +119,39 @@ var PlayerData = {
                 }
             }
         }
-    },
+    }
+    ,
+    updateIntoBattleTime: function(){
+        cc.log("into_stage_battle_timestamp:"+Date.parse(new Date()));
+        player.into_stage_battle_timestamp = Date.parse(new Date());
+    }
+    ,
+    getIntoBattleTime: function(){
+        cc.log("into_stage_battle_timestamp:"+player.into_stage_battle_timestamp);
+        return player.into_stage_battle_timestamp;
+    }
+    ,
+    countOfflineReward: function(){
+        var intoBattleTime = this.getIntoBattleTime();
+        if(intoBattleTime > 0){
+            var offlineTime = Math.floor((Date.parse(new Date()) - intoBattleTime)/(1000 * 60));
+            var reward = 0;
+            if(offlineTime > 3 ){
+                if(offlineTime > (60 * 24)){
+                    offlineTime = 60 * 24;
+                }
+                reward = offlineTime * this.getStageData().getOfflineReward();
+            }
+            player.not_get_reward += reward;
+            //this.updatePlayer();
+        }
+    }
+    ,
+    receiveOfflineReward: function(){
+        this.consumeResource([this.createResourceData("gold",player.not_get_reward)]);
+        player.not_get_reward = 0;
+    }
+    ,
     getAmountByUnit:function(unit){
         switch (unit) {
             case "gold":

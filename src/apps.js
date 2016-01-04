@@ -43,8 +43,8 @@ function removeCCSAnimationDefaultTween(timelines) {
     }
 }
 
-function popup(popupMenu) {
+function popup(popupMenu,localZOrder) {
     if (cc.director.getRunningScene()) {
-        cc.director.getRunningScene().addChild(popupMenu);
+        cc.director.getRunningScene().addChild(popupMenu,localZOrder);
     }
 }

@@ -100,6 +100,29 @@ var BattlePanel = cc.Node.extend({
         this.timeText = root.getChildByName('time_text');
         this.timeTextBg = root.getChildByName('timetext_bg');
 
+        this.rewardBtn = root.getChildByName('reward_btn');
+        var self = this;
+        bindButtonCallback(this.rewardBtn, function () {
+            var prompt1Layer = ccs.csLoader.createNode(res.prompt1_layer_json);
+
+            var prompt1LayerRoot = prompt1Layer.getChildByName('root');
+            var prompt1LayerTitleText = prompt1LayerRoot.getChildByName('title_text');
+            var prompt1LayerDescText = prompt1LayerRoot.getChildByName('desc_text');
+            var prompt1LayerGoldText = prompt1LayerRoot.getChildByName('gold_text');
+            var prompt1LayerBtn = prompt1LayerRoot.getChildByName('btn');
+            prompt1LayerTitleText.setString('离线奖励');
+            prompt1LayerDescText.setString('当前离线奖励所获取的金币数');
+            prompt1LayerGoldText.setString(player.not_get_reward);
+            bindButtonCallback(prompt1LayerBtn,function(){
+                prompt1Layer.removeFromParent();
+                self.rewardBtn.visible = false;
+                PlayerData.receiveOfflineReward();
+                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                PlayerData.updatePlayer();
+            });
+            popup(prompt1Layer,1000);
+        });
+
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
@@ -161,7 +184,7 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < 5; i++) {
             this.enemyPos[i] = this.spritesLayer.getChildByName('enemy' + (i + 1));
         }
-        var self = this;
+
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             PlayerData.getStageData().goToBossBattle();
             self.prepareBattle(PlayerData.getStageData());
@@ -181,7 +204,14 @@ var BattlePanel = cc.Node.extend({
         DamageNumber.initPool();
     },
 
-
+    loadRewardBtn: function () {
+        if(player.not_get_reward > 0){
+            this.rewardBtn.visible = true;
+        }else{
+            this.rewardBtn.visible = false;
+        }
+    }
+    ,
     updateEnemyLife: function () {
         var max = this.enemySprites.getMaxLife();
         var life = this.enemySprites.getLife();
@@ -271,6 +301,7 @@ var BattlePanel = cc.Node.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
+        this.loadRewardBtn();
         this.prepareBattle(stage);
     },
 
@@ -303,6 +334,7 @@ var BattlePanel = cc.Node.extend({
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
+        PlayerData.updateIntoBattleTime();
     },
 
     onHeroDead: function (hero) {
