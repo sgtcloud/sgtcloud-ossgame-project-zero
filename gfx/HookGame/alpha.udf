@@ -25,33 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="SkillLayer.csd" />
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="BattleNum.csd" />
-          <FilePathData Path="Blood.csd" />
-          <FilePathData Path="CloseBtn.csd" />
-          <FilePathData Path="EnemyList.csd" />
-          <FilePathData Path="GoldLayer.csd" />
-          <FilePathData Path="Skillicon.csd" />
-          <FilePathData Path="ItemLayer.csd" />
-          <FilePathData Path="MenuLayer.csd" />
-          <FilePathData Path="MoneyTreeView.csd" />
-          <FilePathData Path="Equiplayer.csd" />
-          <FilePathData Path="TitleLayer.csd" />
-          <FilePathData Path="EquipBtn.csd" />
-          <FilePathData Path="EquipDesc.csd" />
-          <FilePathData Path="EquipHeroView.csd" />
-          <FilePathData Path="EquipView.csd" />
-          <FilePathData Path="HeroDesc.csd" />
-          <FilePathData Path="HeroLayer.csd" />
-          <FilePathData Path="HeroView.csd" />
-          <FilePathData Path="Prompt1Layer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="TitleLayer.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="112" ctype="GameLayerObjectData">
         <Size X="180.0000" Y="220.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1834247041" Tag="114" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1834247041" Tag="114" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="180.0000" Y="220.0000" />
             <Children>
               <AbstractNodeData Name="item_bg" ActionTag="-1028628941" Tag="113" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -60,7 +60,7 @@
                 <PreSize X="0.1389" Y="0.1136" />
                 <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relics" ActionTag="1037203976" Tag="132" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="relic" ActionTag="1037203976" Tag="132" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="25.0000" Y="25.0000" />
                 <AnchorPoint />
                 <Position X="40.3447" Y="26.3116" />

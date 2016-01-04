@@ -1,0 +1,292 @@
+{
+  "s100001": {
+    "name": "战役1",
+    "stageNum": 1,
+    "next": "s100002",
+    "bg": "s100001.png",
+    "icon": "stage_icon_s100001.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "offlineReward": [
+      {
+        "value": 12,
+        "unit": "key"
+      },
+      {
+        "value": 11,
+        "unit": "gew"
+      },
+      {
+        "value": 10,
+        "unit": "gold"
+      }
+    ],
+    "bonus": [
+      {
+        "value": 100,
+        "unit": "gold"
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1003",
+        "lv": 1
+      },
+      {
+        "id": "e1002",
+        "lv": 1
+      },
+      {
+        "id": "e1001",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1004",
+        "lv": 1
+      },
+      {
+        "id": "e1004",
+        "lv": 1
+      },
+      {
+        "id": "e1004",
+        "lv": 1
+      }
+    ]
+  },
+  "s100002": {
+    "name": "战役2",
+    "stageNum": 2,
+    "next": "s100003",
+    "bg": "s100002.png",
+    "icon": "stage_icon_s100002.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "offlineReward": [
+      {
+        "value": 22,
+        "unit": "key"
+      },
+      {
+        "value": 21,
+        "unit": "gew"
+      },
+      {
+        "value": 20,
+        "unit": "gold"
+      }
+    ],
+    "bonus": [
+      {
+        "value": 200,
+        "unit": "gold"
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1003",
+        "lv": 2
+      },
+      {
+        "id": "e1002",
+        "lv": 2
+      },
+      {
+        "id": "e1001",
+        "lv": 2
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1005",
+        "lv": 1
+      },
+      {
+        "id": "e1005",
+        "lv": 1
+      },
+      {
+        "id": "e1005",
+        "lv": 1
+      }
+    ]
+  },
+  "s100003": {
+    "name": "战役3",
+    "stageNum": 3,
+    "next": "s100004",
+    "bg": "s100003.png",
+    "icon": "stage_icon_s100003.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "offlineReward": [
+      {
+        "value": 32,
+        "unit": "key"
+      },
+      {
+        "value": 31,
+        "unit": "gew"
+      },
+      {
+        "value": 30,
+        "unit": "gold"
+      }
+    ],
+    "bonus": [
+      {
+        "value": 300,
+        "unit": "gold"
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1003",
+        "lv": 3
+      },
+      {
+        "id": "e1002",
+        "lv": 3
+      },
+      {
+        "id": "e1001",
+        "lv": 3
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1004",
+        "lv": 3
+      },
+      {
+        "id": "e1004",
+        "lv": 3
+      },
+      {
+        "id": "e1004",
+        "lv": 3
+      }
+    ]
+  },
+  "s100004": {
+    "name": "战役4",
+    "stageNum": 4,
+    "next": "s100005",
+    "bg": "s100004.png",
+    "icon": "stage_icon_s100004.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "offlineReward": [
+      {
+        "value": 42,
+        "unit": "key"
+      },
+      {
+        "value": 41,
+        "unit": "gew"
+      },
+      {
+        "value": 40,
+        "unit": "gold"
+      }
+    ],
+    "bonus": [
+      {
+        "value": 400,
+        "unit": "gold"
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1003",
+        "lv": 4
+      },
+      {
+        "id": "e1002",
+        "lv": 4
+      },
+      {
+        "id": "e1001",
+        "lv": 4
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1005",
+        "lv": 3
+      },
+      {
+        "id": "e1005",
+        "lv": 3
+      },
+      {
+        "id": "e1005",
+        "lv": 3
+      }
+    ]
+  },
+  "s100005": {
+    "name": "战役5",
+    "stageNum": 5,
+    "next": "s100006",
+    "bg": "s100005.png",
+    "icon": "stage_icon_s100005.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "offlineReward": [
+      {
+        "value": 52,
+        "unit": "key"
+      },
+      {
+        "value": 51,
+        "unit": "gew"
+      },
+      {
+        "value": 50,
+        "unit": "gold"
+      }
+    ],
+    "bonus": [
+      {
+        "value": 500,
+        "unit": "gold"
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1003",
+        "lv": 5
+      },
+      {
+        "id": "e1002",
+        "lv": 5
+      },
+      {
+        "id": "e1001",
+        "lv": 5
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1004",
+        "lv": 5
+      },
+      {
+        "id": "e1004",
+        "lv": 5
+      },
+      {
+        "id": "e1004",
+        "lv": 5
+      }
+    ]
+  }
+}

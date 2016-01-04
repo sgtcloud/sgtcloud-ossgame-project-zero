@@ -207,13 +207,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-1537324077" Tag="22" IconVisible="False" LeftMargin="549.4028" RightMargin="30.5972" TopMargin="43.4387" BottomMargin="52.5613" FontSize="24" LabelText="99/99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="level_text" ActionTag="-1537324077" Tag="22" IconVisible="False" LeftMargin="544.4027" RightMargin="35.5973" TopMargin="43.4387" BottomMargin="52.5613" FontSize="24" LabelText="99/99" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="60.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="579.4028" Y="64.5613" />
+                <Position X="574.4027" Y="64.5613" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9053" Y="0.5380" />
+                <PrePosition X="0.8975" Y="0.5380" />
                 <PreSize X="0.0938" Y="0.2000" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
