@@ -234,6 +234,338 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "FontSize": 20,
+                "LabelText": "一段文字描述",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 230.7295,
+                  "Y": 235.7534
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5127,
+                  "Y": 0.5894
+                },
+                "PreSize": {
+                  "X": 0.2667,
+                  "Y": 0.05
+                },
+                "LeftMargin": 170.7295,
+                "RightMargin": 159.2705,
+                "TopMargin": 154.2466,
+                "BottomMargin": 225.7534,
+                "Tag": 31,
+                "ActionTag": 1692080090,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 20.0
+                },
+                "Name": "desc_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 18,
+                "LabelText": "99999999",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 242.2785,
+                  "Y": 175.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5384,
+                  "Y": 0.4375
+                },
+                "PreSize": {
+                  "X": 0.16,
+                  "Y": 0.045
+                },
+                "LeftMargin": 206.2785,
+                "RightMargin": 171.7215,
+                "TopMargin": 216.0,
+                "BottomMargin": 166.0,
+                "Tag": 32,
+                "ActionTag": 52772912,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 18.0
+                },
+                "Name": "text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/gold.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.4727,
+                  "Y": 175.2378
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4122,
+                  "Y": 0.4381
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.4727,
+                "RightMargin": 249.5273,
+                "TopMargin": 209.7622,
+                "BottomMargin": 160.2378,
+                "Tag": 33,
+                "ActionTag": 494992512,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/relic.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.4727,
+                  "Y": 175.2378
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4122,
+                  "Y": 0.4381
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.4727,
+                "RightMargin": 249.5273,
+                "TopMargin": 209.7622,
+                "BottomMargin": 160.2378,
+                "Tag": 36,
+                "ActionTag": 670806695,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "relic",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.4727,
+                  "Y": 175.2378
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4122,
+                  "Y": 0.4381
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.4727,
+                "RightMargin": 249.5273,
+                "TopMargin": 209.7622,
+                "BottomMargin": 160.2378,
+                "Tag": 35,
+                "ActionTag": 1614685024,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "diamond",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/key.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 185.4729,
+                  "Y": 175.2379
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4122,
+                  "Y": 0.4381
+                },
+                "PreSize": {
+                  "X": 0.0667,
+                  "Y": 0.075
+                },
+                "LeftMargin": 170.4729,
+                "RightMargin": 249.5271,
+                "TopMargin": 209.7621,
+                "BottomMargin": 160.2379,
+                "Tag": 451,
+                "ActionTag": -572918643,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "key",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "标题名字",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 225.2204,
+                  "Y": 339.7687
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5005,
+                  "Y": 0.8494
+                },
+                "PreSize": {
+                  "X": 0.1778,
+                  "Y": 0.05
+                },
+                "LeftMargin": 185.2204,
+                "RightMargin": 184.7796,
+                "TopMargin": 50.2313,
+                "BottomMargin": 329.7687,
+                "Tag": 34,
+                "ActionTag": -794274157,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 20.0
+                },
+                "Name": "title_text",
+                "ctype": "TextObjectData"
+              },
+              {
                 "FontSize": 22,
                 "ButtonText": "取消",
                 "TextColor": {
@@ -307,290 +639,6 @@
                 },
                 "Name": "btn_No",
                 "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "一段文字描述",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 230.7295,
-                  "Y": 235.7534
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5127,
-                  "Y": 0.5894
-                },
-                "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.05
-                },
-                "LeftMargin": 170.7295,
-                "RightMargin": 159.2705,
-                "TopMargin": 154.2466,
-                "BottomMargin": 225.7534,
-                "Tag": 31,
-                "ActionTag": 1692080090,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
-                },
-                "Name": "desc_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 18,
-                "LabelText": "99999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 242.2785,
-                  "Y": 175.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5384,
-                  "Y": 0.4375
-                },
-                "PreSize": {
-                  "X": 0.16,
-                  "Y": 0.045
-                },
-                "LeftMargin": 206.2785,
-                "RightMargin": 171.7215,
-                "TopMargin": 216.0,
-                "BottomMargin": 166.0,
-                "Tag": 32,
-                "ActionTag": 52772912,
-                "Size": {
-                  "X": 72.0,
-                  "Y": 18.0
-                },
-                "Name": "text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/gold.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 40,
-                "Scale9Height": 40,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 185.0,
-                  "Y": 175.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4111,
-                  "Y": 0.4375
-                },
-                "PreSize": {
-                  "X": 0.0667,
-                  "Y": 0.075
-                },
-                "LeftMargin": 170.0,
-                "RightMargin": 250.0,
-                "TopMargin": 210.0,
-                "BottomMargin": 160.0,
-                "Tag": 33,
-                "ActionTag": 494992512,
-                "Size": {
-                  "X": 30.0,
-                  "Y": 30.0
-                },
-                "Name": "gold",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/relic.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 40,
-                "Scale9Height": 40,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 185.0,
-                  "Y": 175.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4111,
-                  "Y": 0.4375
-                },
-                "PreSize": {
-                  "X": 0.0667,
-                  "Y": 0.075
-                },
-                "LeftMargin": 170.0,
-                "RightMargin": 250.0,
-                "TopMargin": 210.0,
-                "BottomMargin": 160.0,
-                "Tag": 36,
-                "ActionTag": 670806695,
-                "Size": {
-                  "X": 30.0,
-                  "Y": 30.0
-                },
-                "Name": "relic",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/diamond.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 40,
-                "Scale9Height": 40,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 185.0,
-                  "Y": 175.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4111,
-                  "Y": 0.4375
-                },
-                "PreSize": {
-                  "X": 0.0667,
-                  "Y": 0.075
-                },
-                "LeftMargin": 170.0,
-                "RightMargin": 250.0,
-                "TopMargin": 210.0,
-                "BottomMargin": 160.0,
-                "Tag": 35,
-                "ActionTag": 1614685024,
-                "Size": {
-                  "X": 30.0,
-                  "Y": 30.0
-                },
-                "Name": "diamond",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "标题名字",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 225.2204,
-                  "Y": 339.7687
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5005,
-                  "Y": 0.8494
-                },
-                "PreSize": {
-                  "X": 0.1778,
-                  "Y": 0.05
-                },
-                "LeftMargin": 185.2204,
-                "RightMargin": 184.7796,
-                "TopMargin": 50.2313,
-                "BottomMargin": 329.7687,
-                "Tag": 34,
-                "ActionTag": -794274157,
-                "Size": {
-                  "X": 80.0,
-                  "Y": 20.0
-                },
-                "Name": "title_text",
-                "ctype": "TextObjectData"
               },
               {
                 "FontSize": 22,
@@ -692,6 +740,7 @@
         "mainUI/bg_18.png",
         "mainUI/diamond.png",
         "mainUI/gold.png",
+        "mainUI/key.png",
         "mainUI/relic.png",
         "mainUI/title.png"
       ],

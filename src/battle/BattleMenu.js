@@ -11,10 +11,10 @@ var BattleMenu = cc.Node.extend({
 
         //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
         //这里是处理刷新金钱的显示
-        this.playerGoldText = this.root.getChildByName('goldLayer').getChildByName('root').getChildByName('gold_text');
-        this.updatePlayerGoldText = function () {
+        //this.playerGoldText = this.root.getChildByName('goldLayer').getChildByName('root').getChildByName('gold_text');
+        /*this.updatePlayerGoldText = function () {
             this.playerGoldText.setString(player.getGold());
-        };
+        };*/
 
         this.onHeroDead = function () {
         }
@@ -195,11 +195,16 @@ var HeroListMenu = BattleMenu.extend({
                 elements.gold.setVisible(false);
                 elements.goldText.setVisible(false);
             } else {
+                var nextlevelData = target.getLevelData(target.getLv() + 1);
+                var nextLevelAttack = nextlevelData['attack'];
+                var unit=nextlevelData['upgrade']['unit'];
+                var amount=PlayerData.getAmountByUnit(unit);
+                var nextGoldValue = nextlevelData['upgrade']['value'];
+                if (amount<nextGoldValue){
+                    cc.log(unit+' not enough')
+                }
                 var levelData = target.getLevelData();
                 var levelAttack = levelData['attack'];
-                var nextlevelData = target.getLevelData(target.getLv() + 1);
-                var nextGoldValue = nextlevelData['upgrade']['value'];
-                var nextLevelAttack = nextlevelData['attack'];
                 if (nextGoldValue) {
                     elements.goldText.setString(nextGoldValue);
                 }
@@ -228,6 +233,12 @@ var HeroListMenu = BattleMenu.extend({
             }
             // TODO
         }
+        function validateAmountEnough(upgradeLevelData){
+            var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
+            return amount < upgradeLevelData['value'];
+        }
+
+
 
         function buildHeroView(hero) {
             var root = heroTemp.clone();
@@ -236,13 +247,34 @@ var HeroListMenu = BattleMenu.extend({
             var dps = root.getChildByName('dps_text');
             var stars = root.getChildByName('stars_fore');
             var currentLv = hero.getLv();
-
+            var btnlayer = root.getChildByName('btn')
+            var btn = btnlayer.getChildByName('btn');//升级按钮
+            var gold = btnlayer.getChildByName('gold');//消耗金币
+            var gold_text = btnlayer.getChildByName('gold_text');//消耗金币
+            var upMax_text = btnlayer.getChildByName('upMax_text');//已满级
+            var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
+            var diamond = btnlayer.getChildByName('diamond');//钻石图标
+            var buff_text = btnlayer.getChildByName('buff_text');//buff文字
+            var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
+            var lock = btnlayer.getChildByName('lock');
+            var level_text = btnlayer.getChildByName('level_text');
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN,function(event){
+                if(!hero.isMaxLevel()){
+                    var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+                    if(validateAmountEnough(nextlevelData['upgrade'])){
+                        btn.setEnabled(false);
+                        btn.setBright(false);
+                        gold_text.setColor(cc.color(255, 0, 0));
+                    }
+                }
+            });
             setElement(root, hero, function (event, otherBtn) {
                 var eventData = {};
                 var levelData = hero.getLevelData();
                 var levelAttack = levelData['attack'];
                 eventData.heroId = hero.getId();
                 var cost = hero.getNextLevelUpgrade();
+                cost['value']=0-cost['value'];
                 eventData.cost = cost;
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 hero.upgrade();
@@ -256,10 +288,11 @@ var HeroListMenu = BattleMenu.extend({
                     otherBtn.goldText.setVisible(false);
                 } else {
                     var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-                    var nextGoldValue = nextlevelData['upgrade']['value'];
+                    var nextLevelAmount = nextlevelData['upgrade']['value'];
                     var nextLevelAttack = nextlevelData['attack'];
-                    otherBtn.goldText.setString(nextGoldValue);
+                    otherBtn.goldText.setString(nextLevelAmount);
                     otherBtn.buffNum.setString('+' + (nextLevelAttack - levelAttack));
+                    customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
                 }
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
@@ -278,6 +311,7 @@ var HeroListMenu = BattleMenu.extend({
             return root;
         }
 
+
         function buildSkillView(skill) {
             var root = skillTemp.clone();
             var icon = root.getChildByName('skill_icon');
@@ -287,11 +321,13 @@ var HeroListMenu = BattleMenu.extend({
             setElement(root, skill, function (event, otherBtn) {
                 var eventData = {};
                 var cost = skill.getNextLevelUpgrade();
+                cost['value']=-cost['value'];
                 eventData.cost = cost;
                 eventData.skillId = skill.getId();
-                /* var levelData=skill.getLevelData();
+                var levelData=skill.getLevelData();
                  var goldValue=levelData['upgrade']['value'];
-                 var levelAttack=levelData['attack'];*/
+                 //var levelAttack=levelData['attack'];
+                var effects=skill.traverseSkillEffects();
                 skill.upgrade();
                 if (skill.isMaxLevel()) {
                     event.setEnabled(false);
@@ -302,11 +338,12 @@ var HeroListMenu = BattleMenu.extend({
                     otherBtn.gold.setVisible(false);
                     otherBtn.goldText.setVisible(false);
                 } else {
-                    /*var nextlevelData=skill.getLevelData(skill.getLv()+1);
+                   var nextlevelData=skill.getLevelData(skill.getLv()+1);
                      var nextGoldValue=nextlevelData['upgrade']['value'];
-                     var nextLevelAttack=nextlevelData['attack'];
+                     //var nextLevelAttack=nextlevelData['attack'];
+                    var nextEffects=skill.traverseSkillEffects(skill.getLv()+1);
                      otherBtn.goldText.setString(nextGoldValue);
-                     otherBtn.buffNum.setString('+'+(nextLevelAttack-levelAttack));*/
+                     otherBtn.buffNum.setString('+'+(nextLevelAttack-levelAttack));
                 }
                 customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
@@ -314,7 +351,6 @@ var HeroListMenu = BattleMenu.extend({
             name.setString(skill.getName());
             desc.setString(skill.getDesc());
             lv.setString(skill.getLv());
-
             return root;
         }
 

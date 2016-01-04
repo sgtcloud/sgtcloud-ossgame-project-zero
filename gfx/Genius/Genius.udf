@@ -32,8 +32,9 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="gold01.csd" />
+          <FilePathData Path="effect5000.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="gold01.csd" />
+        <ActiveDocument Path="effect5000.csd" />
       </Value>
     </Item>
   </Properties>

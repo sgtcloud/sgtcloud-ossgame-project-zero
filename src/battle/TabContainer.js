@@ -59,8 +59,14 @@ var TabContainer = cc.Node.extend({
             }
             this.menus[name].setVisible(true);
             this.buttons[name].setSelected(true);
+            /*var y=this.buttons[name].getPositionY();
             var goldText = this.menus[name].playerGoldText;
-            customEventHelper.sendEvent(EVENT.GOLD_POSITION, {position: goldText.getPosition()})
+            var position=goldText.getParent().getParent().getPosition();
+            cc.log(position);
+            cc.log(y)
+           var lastPosition=cc.p(position.x,position.y+y);
+            customEventHelper.sendEvent(EVENT.GOLD_POSITION, lastPosition)
+            cc.log(lastPosition);*/
             //console.log(this.menuButtons);
         };
 
@@ -75,15 +81,18 @@ var TabContainer = cc.Node.extend({
         function bindListener() {
             customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                 cc.log('event of hero_upgrade has been called,and the userData is ' + JSON.stringify(event.getUserData()));
-                var cost = event.getUserData();
-                PlayerData.consumeResource([cost]);
+                var data = event.getUserData();
+                PlayerData.consumeResource([data.cost]);
                 PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
-                var cost = event.getUserData();
-                PlayerData.consumeResource([cost]);
+                var data = event.getUserData();
+                PlayerData.consumeResource([data.cost]);
                 PlayerData.updatePlayer();
             });
+            customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){
+                cc.log("gold:"+player.gold)
+            })
         }
 
         bindListener();
