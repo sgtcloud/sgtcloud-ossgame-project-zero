@@ -605,47 +605,6 @@
                 },
                 "Name": "skill1",
                 "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "GoldLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 230.0,
-                  "Y": 250.2975
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3594,
-                  "Y": 1.0012
-                },
-                "PreSize": {
-                  "X": 0.2813,
-                  "Y": 0.2
-                },
-                "LeftMargin": 230.0,
-                "RightMargin": 230.0,
-                "TopMargin": -50.2975,
-                "BottomMargin": 250.2975,
-                "Tag": 165,
-                "ActionTag": -1689348075,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 50.0
-                },
-                "Name": "goldLayer",
-                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -1011955371,
@@ -665,7 +624,6 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "GoldLayer.json",
         "mainUI/bg_04.png",
         "mainUI/font22_white.png",
         "Skillicon.json",
