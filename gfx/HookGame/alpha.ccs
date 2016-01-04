@@ -170,6 +170,8 @@
           <Image Name="font18_green.png" />
           <Image Name="font18_yellow.png" />
           <Image Name="font26_yellow.png" />
+          <Image Name="tab_bg1.png" />
+          <Image Name="tab_bg2.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />

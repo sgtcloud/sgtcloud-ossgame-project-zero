@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="1469895884" Tag="25" IconVisible="False" LeftMargin="106.9826" RightMargin="83.0174" TopMargin="269.5640" BottomMargin="290.4360" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="450.0000" Y="400.0000" />
             <Children>
-              <AbstractNodeData Name="prompt_bg" ActionTag="-1382717200" Tag="26" IconVisible="False" LeftMargin="25.2205" RightMargin="24.7795" TopMargin="35.2722" BottomMargin="14.7278" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="bg" ActionTag="-1382717200" Tag="26" IconVisible="False" LeftMargin="25.2205" RightMargin="24.7795" TopMargin="35.2722" BottomMargin="14.7278" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
                 <Size X="400.0000" Y="350.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="225.2205" Y="189.7278" />
@@ -19,7 +19,7 @@
                 <PreSize X="0.8889" Y="0.8750" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_bg" ActionTag="1435763748" Tag="27" IconVisible="False" LeftMargin="35.2204" RightMargin="34.7795" TopMargin="39.8540" BottomMargin="324.1460" Scale9Enable="True" LeftEage="60" RightEage="60" Scale9OriginX="60" Scale9Width="30" Scale9Height="44" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title_bg" ActionTag="1435763748" Tag="27" IconVisible="False" LeftMargin="35.2204" RightMargin="34.7796" TopMargin="39.8540" BottomMargin="324.1460" Scale9Enable="True" LeftEage="60" RightEage="60" Scale9OriginX="60" Scale9Width="30" Scale9Height="44" ctype="ImageViewObjectData">
                 <Size X="380.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="225.2204" Y="342.1460" />
@@ -29,7 +29,7 @@
                 <PreSize X="0.8444" Y="0.0900" />
                 <FileData Type="Normal" Path="mainUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="prompt_bg2" ActionTag="1664116028" Tag="28" IconVisible="False" LeftMargin="27.2205" RightMargin="26.7795" TopMargin="80.0000" BottomMargin="80.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="prompt_bg" ActionTag="1664116028" Tag="28" IconVisible="False" LeftMargin="27.2205" RightMargin="26.7795" TopMargin="80.0000" BottomMargin="80.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="396.0000" Y="240.0000" />
                 <AnchorPoint />
                 <Position X="27.2205" Y="80.0000" />
@@ -39,7 +39,7 @@
                 <PreSize X="0.8800" Y="0.6000" />
                 <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="prompt_bg2_0" ActionTag="-968329935" Tag="29" IconVisible="False" LeftMargin="32.2205" RightMargin="31.7795" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="text_bg" ActionTag="-968329935" Tag="29" IconVisible="False" LeftMargin="32.2205" RightMargin="31.7795" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="386.0000" Y="224.0000" />
                 <AnchorPoint />
                 <Position X="32.2205" Y="89.0000" />
@@ -49,7 +49,7 @@
                 <PreSize X="0.8578" Y="0.5600" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn2" ActionTag="2058248549" Tag="30" IconVisible="False" LeftMargin="69.1107" RightMargin="260.8893" TopMargin="323.1363" BottomMargin="26.8637" TouchEnable="True" FontSize="22" ButtonText="取消" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1" Scale9Height="25" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_No" ActionTag="2058248549" Tag="30" IconVisible="False" LeftMargin="69.1107" RightMargin="260.8893" TopMargin="323.1363" BottomMargin="26.8637" TouchEnable="True" FontSize="22" ButtonText="取消" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1" Scale9Height="25" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="129.1107" Y="51.8637" />
@@ -64,7 +64,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="1692080090" Tag="31" IconVisible="False" LeftMargin="170.7295" RightMargin="159.2704" TopMargin="154.2466" BottomMargin="225.7534" FontSize="20" LabelText="一段文字描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="desc_text" ActionTag="1692080090" Tag="31" IconVisible="False" LeftMargin="170.7295" RightMargin="159.2705" TopMargin="154.2466" BottomMargin="225.7534" FontSize="20" LabelText="一段文字描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="230.7295" Y="235.7534" />
@@ -116,7 +116,7 @@
                 <PreSize X="0.0667" Y="0.0750" />
                 <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_text" ActionTag="-794274157" Tag="34" IconVisible="False" LeftMargin="185.2204" RightMargin="184.7797" TopMargin="50.2313" BottomMargin="329.7687" FontSize="20" LabelText="标题名字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="title_text" ActionTag="-794274157" Tag="34" IconVisible="False" LeftMargin="185.2204" RightMargin="184.7796" TopMargin="50.2313" BottomMargin="329.7687" FontSize="20" LabelText="标题名字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="80.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="225.2204" Y="339.7687" />
@@ -127,7 +127,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn1" ActionTag="-104603659" Tag="37" IconVisible="False" LeftMargin="258.2638" RightMargin="71.7362" TopMargin="323.1363" BottomMargin="26.8637" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="11" BottomEage="11" Scale9OriginX="12" Scale9OriginY="11" Scale9Width="7" Scale9Height="45" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_Yes" ActionTag="-104603659" Tag="37" IconVisible="False" LeftMargin="258.2638" RightMargin="71.7362" TopMargin="323.1363" BottomMargin="26.8637" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="11" BottomEage="11" Scale9OriginX="12" Scale9OriginY="11" Scale9Width="7" Scale9Height="45" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="318.2638" Y="51.8637" />
