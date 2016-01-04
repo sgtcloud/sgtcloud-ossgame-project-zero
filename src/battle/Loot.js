@@ -77,10 +77,10 @@ var Loot = cc.Node.extend({
             }, this);
             var startPos = this.getPosition();
             //var curveValue = cc.p(battlePanel.x + battlePanel.width / 2, battlePanel.y + battlePanel.height / 2);
-            //var endPosition = battlePanel.goldPosition || cc.p(320, 280);
-            //var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
-            var curveValue =  cc.p(320, 280);
-            var endPosition = cc.p(320, 280);
+            var endPosition = battlePanel.goldPosition || cc.p(320, 280);
+            var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
+            //var curveValue =  cc.p(320, 280);
+            //var endPosition = cc.p(320, 280);
             var movePath = [startPos,
                 curveValue,
                 endPosition];
