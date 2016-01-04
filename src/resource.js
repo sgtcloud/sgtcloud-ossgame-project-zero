@@ -45,8 +45,9 @@ var res = {
     little_gold_json: "res/gold01.json",
     some_gold_json: "res/gold02.json",
     amount_gold_json: "res/gold03.json",
-    huge_gold_json: "res/gold04.json"
+    huge_gold_json: "res/gold04.json",
 
+    prompt1_layer_json:"res/Prompt1Layer.json"
 };
 
 

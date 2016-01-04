@@ -99,6 +99,14 @@ var BattlePanel = cc.Node.extend({
         this.timeText = root.getChildByName('time_text');
         this.timeTextBg = root.getChildByName('timetext_bg');
 
+        this.rewardBtn = root.getChildByName('reward_btn');
+
+        bindButtonCallback(this.rewardBtn, function () {
+            this.rewardBtn.visible = false;
+            this.receiveOfflineReward();
+            PlayerData.updatePlayer();
+        });
+
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
@@ -183,7 +191,14 @@ var BattlePanel = cc.Node.extend({
         DamageNumber.initPool();
     },
 
-
+    loadRewardBtn: function () {
+        if(player.not_get_reward > 0){
+            this.rewardBtn.visible = true;
+        }else{
+            this.rewardBtn.visible = false;
+        }
+    }
+    ,
     updateEnemyLife: function () {
         var max = this.enemySprites.getMaxLife();
         var life = this.enemySprites.getLife();
@@ -269,6 +284,7 @@ var BattlePanel = cc.Node.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
+        this.loadRewardBtn();
         this.prepareBattle(stage);
     },
 
@@ -298,6 +314,7 @@ var BattlePanel = cc.Node.extend({
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
+        PlayerData.updateIntoBattleTime();
     },
 
     onHeroDead: function (hero) {
