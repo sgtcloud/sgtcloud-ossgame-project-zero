@@ -1,7 +1,7 @@
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
-    var effect_props = ["life", "atk", "hit"];
+    var effect_props = ["life", "attack", "tap"];
     var star = heroData.star;
     var data = dataSource.heros[id];
     var equips = [];
@@ -18,18 +18,15 @@ var Hero = function (heroData) {
         var skillLv = heroData.skills[i];
         skills[i] = new Skill(skill, skillLv);
     }
-    for (var i in effect_props) {
-        this[effect_props[i]] = 0;
-        this[effect_props[i] + "_value"] = 0;
-        this[effect_props[i] + "_rate"] = 0;
-    };
     this.refreshProps = function () {
         for (var i in effect_props) {
-            this.calcProp(effect_props[i]);
+            this[effect_props[i] + "_value"] = 0;
+            this[effect_props[i] + "_rate"] = 0;
+            this["globe_" + effect_props[i] + "_value"] = 0;
+            this["globe_" + effect_props[i] + "_rate"] = 0;
+            this.calcSkillEffect(effect_props[i]);
+            this.calcEquipEffect(effect_props[i]);
         }
-    };
-    this.getProp = function (propName) {
-        return this[propName];
     };
     this.isLocked = function () {
         return lv <= 0;
@@ -76,34 +73,33 @@ var Hero = function (heroData) {
     this.getSkillData = function (i) {
         return skills[i];
     };
-    this.calcArrayEffect = function (array, propName) {
-        for (var i in array) {
-            var effects = array[i].getEffect();
-            for (var j in effects) {
-                if (effects[j].type === propName + "_value") {
-                    this[propName + "_value"] += effects[j].value;
-                }
-                else if (effects[j].type === propName + "_rate") {
-                    this[propName + "_rate"] += effects[j].value;
-                }
-                else if (effects[j].type === "globe_" + propName + "_value") {
-                    PlayerData["globe_" + propName + "_value"] += effects[j].value;
-                }
-                else if (effects[j].type === "globe_" + propName + "_rate") {
-                    PlayerData["globe_" + propName + "_rate"] += effects[j].value;
-                }
+    this.calcArrayEffect = function (effects, propName) {
+        for (var j in effects) {
+            if (effects[j].type === propName + "_value") {
+                this[propName + "_value"] += effects[j].value;
+            }
+            else if (effects[j].type === propName + "_rate") {
+                this[propName + "_rate"] += effects[j].value;
+            }
+            else if (effects[j].type === "globe_" + propName + "_value") {
+                this["globe_" + propName + "_value"] += effects[j].value;
+            }
+            else if (effects[j].type === "globe_" + propName + "_rate") {
+                this["globe_" + propName + "_rate"] += effects[j].value;
             }
         }
     };
     this.calcSkillEffect = function (propName) {
-        this.calcArrayEffect(skills, propName);
+        for (var i in skills) {
+            this.calcArrayEffect(skills[i].traverseSkillEffects(lv), propName);
+        }
     }
     this.calcEquipEffect = function (propName) {
-        this.calcArrayEffect(equips, propName);
+        for (var i in skills) {
+            this.calcArrayEffect(equips[i].traverseEquipEffects(lv), propName);
+        }
     }
     this.calcProp = function (propName) {
-        this.calcSkillEffect(propName);
-        this.calcEquipEffect(propName);
         var val = 0;
         var tmpVal = 0;
         var rate = 1.0;
@@ -121,31 +117,31 @@ var Hero = function (heroData) {
         }
         tmpVal = this[propName + "_rate"];
         if (tmpVal) {
-            rate += tmpVal;
+            rate += tmpVal / 100;
         }
         tmpVal = PlayerData["globe_" + propName + "_rate"];
         if (tmpVal) {
-            rate += tmpVal;
+            rate += tmpVal / 100;
         }
-        this[propName] = val * rate;
+        return val * rate;
     };
     this.getLife = function () {
         if (this.isLocked()) {
             return 0;
         }
-        return this.getProp("life");
+        return this.calcProp("life");
     };
     this.getAttack = function () {
         if (this.isLocked()) {
             return 0;
         }
-        return this.getProp("atk");
+        return this.calcProp("attack");
     };
     this.getHit = function () {
         if (this.isLocked()) {
             return 0;
         }
-        return this.getProp("hit");
+        return this.calcProp("tap");
     };
     this.getRecover = function () {
         var val = data.levelDatas[lv - 1].resurge.time;
