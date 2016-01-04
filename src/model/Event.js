@@ -20,7 +20,16 @@ var EVENT = {
     /**
      * 金币数量改变
      */
-    GOLD_VALUE_UPDATE:"GOLD_VALUE_UPDATE"
+    GOLD_VALUE_UPDATE:"GOLD_VALUE_UPDATE",
+    /**
+     * 英雄升级按钮
+     */
+    HERO_UPGRADE_BTN:"HERO_UPGRADE_BTN",
+    /**
+     * 英雄技能升级按钮
+     */
+    HERO_SKILL_UPGRADE_BTN:"HERO_SKILL_UPGRADE_BTN"
+
 };
 
 var customEventHelper = {

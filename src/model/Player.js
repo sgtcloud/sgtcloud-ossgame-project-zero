@@ -1,9 +1,9 @@
 var player = {
     "id": "10001000",
     "name": "测试a",
-    "gold": 1000,
-    "gem": 1000,
-    "relic": 100,
+    "gold": 10,
+    "gem": 10,
+    "relic": 10,
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
@@ -56,7 +56,6 @@ var PlayerData = {
             }
         }
         this.stageData = new Stage(player.stage);
-        this.countOfflineReward();
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -152,6 +151,18 @@ var PlayerData = {
         player.not_get_reward = 0;
     }
     ,
+    },
+    getAmountByUnit:function(unit){
+        switch (unit) {
+            case "gold":
+                return player.gold;
+            case "gem":
+                return player.gem;
+            case "relic":
+                return player.relic ;
+        }
+        return 0;
+    },
     heroesData: [],
     stageData: {}
 };
