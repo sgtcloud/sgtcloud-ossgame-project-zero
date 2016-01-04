@@ -80,14 +80,7 @@ var BattleUnit = cc.Node.extend({
             this.showDamageNumber(dmg, ctr);
             this.onDamaged();
             if (this.isDead()) {
-                if (camp === BattleConsts.Camp.Player) {
-                    this.playAnimation('die');
-                    var srcPos = this.getPosition();
-                    this.setPosition(srcPos.x, battle.y + battle.height);
-                    var dropMove = cc.jumpTo(0.5, srcPos, 0, 1);
-                    var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 2);
-                    this.runAction(cc.sequence(dropMove, jump));
-                }
+                this.playAnimation('die');
                 this.onDead();
             } else {
                 this.playAnimation('hit');
@@ -106,14 +99,26 @@ var BattleUnit = cc.Node.extend({
         this.onUpdateDead = function (dt) {
 
         };
+        this.whileDying = false;
         //动画更新函数
         this.onUpdateAnimate = function (dt) {
             if (!this.animation.isPlaying()) {
                 switch (this.animateState) {
                     case 'dead':
+                        this.whileDying = false;
                         break;
                     case 'die':
-                        this.playAnimation('dead');
+                        if (camp === BattleConsts.Camp.Player && !this.whileDying) {
+                            var srcPos = this.getPosition();
+                            var dropHeight = 500;
+                            var dropMove = cc.jumpTo(0.2, srcPos, 0, 1);
+                            var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 3);
+                            this.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(function () {
+                                this.setPosition(srcPos.x, srcPos.y + dropHeight);
+                                this.playAnimation('dead');
+                            }, this), cc.fadeIn(0.2), dropMove, jump));
+                            this.whileDying = true;
+                        }
                         break;
                     default:
                         this.playAnimation('stand');

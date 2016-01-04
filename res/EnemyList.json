@@ -115,18 +115,18 @@
                   "Y": 0.5549
                 },
                 "PreSize": {
-                  "X": 0.0026,
-                  "Y": 0.0083
+                  "X": 0.1579,
+                  "Y": 0.5
                 },
-                "LeftMargin": 100.588,
-                "RightMargin": 278.412,
-                "TopMargin": 52.9093,
-                "BottomMargin": 66.0907,
+                "LeftMargin": 71.088,
+                "RightMargin": 248.912,
+                "TopMargin": 23.4093,
+                "BottomMargin": 36.5907,
                 "Tag": 122,
                 "ActionTag": -1128263822,
                 "Size": {
-                  "X": 1.0,
-                  "Y": 1.0
+                  "X": 60.0,
+                  "Y": 60.0
                 },
                 "Name": "enemy_icon1",
                 "ctype": "ImageViewObjectData"
@@ -134,11 +134,11 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/stage_icon.png",
+                  "Path": "mainUI/empty.png",
                   "Plist": ""
                 },
-                "Scale9Width": 60,
-                "Scale9Height": 60,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "AnchorPoint": {
                   "ScaleX": 0.3836,
                   "ScaleY": -1.2036
@@ -177,11 +177,11 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/stage_icon.png",
+                  "Path": "mainUI/empty.png",
                   "Plist": ""
                 },
-                "Scale9Width": 60,
-                "Scale9Height": 60,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -220,6 +220,8 @@
               {
                 "FontSize": 18,
                 "LabelText": "",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -273,6 +275,8 @@
               {
                 "FontSize": 18,
                 "LabelText": "9998",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -313,6 +317,7 @@
                 "RightMargin": 174.9994,
                 "TopMargin": 80.7378,
                 "BottomMargin": 21.2622,
+                "CallBackType": "Touch",
                 "Tag": 126,
                 "ActionTag": 1913587203,
                 "Size": {
@@ -325,6 +330,8 @@
               {
                 "FontSize": 18,
                 "LabelText": "9999",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -480,7 +487,6 @@
       },
       "UsedResources": [
         "mainUI/empty.png",
-        "mainUI/stage_icon.png",
         "mainUI/star0.png",
         "mainUI/title_bg3.png"
       ],

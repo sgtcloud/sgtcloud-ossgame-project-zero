@@ -12,8 +12,21 @@ var TopPanel = cc.Node.extend({
 
         var root = layer.getChildByName('root');
         var pane = root.getChildByName('box');
-        this.playerDiamondText = pane.getChildByName('gold_text');
-        this.playerRelicText = pane.getChildByName('relic_text');
+        var self = this;
+
+        this.diamondNum = pane.getChildByName('diamond_text');
+        this.relicNum = pane.getChildByName('relic_text');
+        this.goldNum = pane.getChildByName('gold_text');
+        Loot.prototype.getGoldPosition = function () {
+            return self.goldNum.convertToWorldSpace(self.goldNum.getPosition());
+        };
+        Loot.prototype.getDiamondPosition = function () {
+            return self.diamondNum.convertToWorldSpace(self.diamondNum.getPosition());
+        };
+        Loot.prototype.getRelicPosition = function () {
+            return self.relicNum.convertToWorldSpace(self.relicNum.getPosition());
+        };
+
         this.battleNumText = root.getChildByName('level_text');
         this.fightBossBtn = root.getChildByName('fight_btn');
         this.leaveBossBtn = root.getChildByName('live_btn');
@@ -28,12 +41,13 @@ var TopPanel = cc.Node.extend({
         this.current_stage_num = stageListRoot.getChildByName("level_text2");
         this.next_stage_num = stageListRoot.getChildByName("level_text3");
         this.state = TopPanel.STATE_NORMAL_BATTLE;
-
-        var self = this;
         // register battle custom event
         customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
             self.refreshStageState();
             self.refreshStageList();
+        });
+        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function (event) {
+            self.refreshPlayerGoldText();
         });
 
         bindButtonCallback(this.fightBossBtn, function () {
@@ -45,10 +59,16 @@ var TopPanel = cc.Node.extend({
 
 
         this.refreshPlayerDiamondText = function () {
-            this.playerDiamondText.setString(player.gem);
+            this.diamondNum.setString(player.gem);
+            this.diamondNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerRelicText = function () {
-            this.playerRelicText.setString(player.relic);
+            this.relicNum.setString(player.relic);
+            this.relicNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
+        };
+        this.refreshPlayerGoldText = function () {
+            this.goldNum.setString(player.gold);
+            this.goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshStageState = function () {
 
@@ -116,6 +136,7 @@ var TopPanel = cc.Node.extend({
         this.refreshAll = function () {
             this.refreshPlayerDiamondText();
             this.refreshPlayerRelicText();
+            this.refreshPlayerGoldText();
             this.refreshStageState();
             this.refreshStageList();
         };
