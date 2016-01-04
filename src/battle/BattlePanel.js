@@ -98,7 +98,8 @@ var BattlePanel = cc.Node.extend({
         this.enemyLifeText = root.getChildByName('enemy_life_text');
         this.enemyLifeBar = root.getChildByName('enemy_life_bar');
         this.timeText = root.getChildByName('time_text');
-        this.timeTextBg = root.getChildByName('timetext_bg');
+        this.icon = root.getChildByName('icon');
+        this.timeBar = root.getChildByName('time_bar');
 
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
@@ -238,21 +239,27 @@ var BattlePanel = cc.Node.extend({
     },
     disableBossBattleTimeCounter:function(){
         this.timeText.visible = false;
-        this.timeTextBg.visible = false;
+        this.timeBar.visible = false;
+        this.icon.visible = true;
     },
     enableBossBattleTimeCounter:function(stage){
         this.timeText.visible = true;
-        this.timeTextBg.visible = true;
+        this.timeBar.visible = true;
+        this.icon.visible = false;
         var  boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
+        //this.timeBar.setAnchorPoint(cc.p(0.5,0.5));
         this.timeText.setString(boosTimeMax);
+        this.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
+
         this.times = setInterval(function(){
             if(boosTimeMax==0){
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
             }else{
                 boosTimeMax--;
                 self.timeText.setString(boosTimeMax);
+                self.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
             }
         },1000);
     },

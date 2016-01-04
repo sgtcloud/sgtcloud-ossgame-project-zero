@@ -85,7 +85,7 @@ var Stage = function (id) {
         return enemys;
     };
     this.getBossTimeMax = function () {
-        return /*data.bossTime*/30;
+        return /*data.bossTime*/10;
     };
     this.getOfflineReward = function(){
         return data.offlineReward;
