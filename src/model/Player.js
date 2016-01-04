@@ -75,7 +75,7 @@ var PlayerData = {
         var val = 0;
         for (var i in this.heroesData) {
             var hero = this.heroesData[i];
-            val += hero[prop];
+            val += hero[prop]();
         }
         return val;
     }
@@ -117,18 +117,25 @@ var PlayerData = {
             }
         }
     },
-    getAmountByUnit:function(unit){
+    getAmountByUnit: function (unit) {
         switch (unit) {
             case "gold":
                 return player.gold;
             case "gem":
                 return player.gem;
             case "relic":
-                return player.relic ;
+                return player.relic;
         }
         return 0;
     },
+
     heroesData: [],
-    stageData: {}
+    stageData: {},
+    globe_life_value: 0,
+    globe_life_rate: 0,
+    globe_atk_value: 0,
+    globe_atk_rate: 0,
+    globe_hit_value: 0,
+    globe_hit_rate: 0,
 };
 

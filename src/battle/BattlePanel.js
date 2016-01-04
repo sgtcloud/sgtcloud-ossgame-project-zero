@@ -125,7 +125,7 @@ var BattlePanel = cc.Node.extend({
         var hitIndex = 1;
         hitEffect.setVisible(false);
         hitEffect.runAction(hitAction);
-        battleZone.addChild(hitEffect);
+        this.addChild(hitEffect, 1000);
         this.bindPlayerTapEvent = function () {
             var listener = cc.EventListener.create({
                 event: cc.EventListener.MOUSE,
@@ -137,7 +137,7 @@ var BattlePanel = cc.Node.extend({
                     var target = self.findNextEnemy();
                     if (cc.rectContainsPoint(rect, locationInNode) && target) {
                         //cc.log(locationInNode.x + " " + locationInNode.y);
-                        hitEffect.setPosition(locationInNode);
+                        hitEffect.setPosition(self.convertToNodeSpace(touch.getLocation()));
                         hitEffect.setVisible(true);
                         hitAction.play("boom" + hitIndex, false);
                         target.doDamage(PlayerData.getTotalHit());
@@ -213,11 +213,11 @@ var BattlePanel = cc.Node.extend({
     },
     disableBossBattleTimeCounter: function () {
         this.timeText.visible = false;
-        this.timeTextBg.visible = false;
+        //this.timeTextBg.visible = false;
     },
     enableBossBattleTimeCounter: function (stage) {
         this.timeText.visible = true;
-        this.timeTextBg.visible = true;
+        //this.timeTextBg.visible = true;
         var boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
@@ -298,9 +298,10 @@ var BattlePanel = cc.Node.extend({
             player.stage_battle_num += 1;
         }
         // wait for 1 second to start next battle
-        this.scheduleOnce(function () {
-            this.prepareBattle(stageData);
-        }, 1.0);
+        //this.scheduleOnce(function () {
+        //    this.prepareBattle(stageData);
+        //}, 1.0);
+        this.prepareBattle(stageData);
         PlayerData.updatePlayer();
     },
 
