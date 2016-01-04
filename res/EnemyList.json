@@ -94,7 +94,6 @@
                   "Path": "mainUI/empty.png",
                   "Plist": ""
                 },
-                "Scale9Enable": true,
                 "Scale9Width": 1,
                 "Scale9Height": 1,
                 "AnchorPoint": {
@@ -116,18 +115,18 @@
                   "Y": 0.5549
                 },
                 "PreSize": {
-                  "X": 0.1263,
-                  "Y": 0.4
+                  "X": 0.0026,
+                  "Y": 0.0083
                 },
-                "LeftMargin": 77.088,
-                "RightMargin": 254.912,
-                "TopMargin": 29.4093,
-                "BottomMargin": 42.5907,
+                "LeftMargin": 100.588,
+                "RightMargin": 278.412,
+                "TopMargin": 52.9093,
+                "BottomMargin": 66.0907,
                 "Tag": 122,
                 "ActionTag": -1128263822,
                 "Size": {
-                  "X": 48.0,
-                  "Y": 48.0
+                  "X": 1.0,
+                  "Y": 1.0
                 },
                 "Name": "enemy_icon1",
                 "ctype": "ImageViewObjectData"
@@ -220,9 +219,7 @@
               },
               {
                 "FontSize": 18,
-                "LabelText": "        ",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
+                "LabelText": "",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -257,18 +254,18 @@
                   "Y": 0.2855
                 },
                 "PreSize": {
-                  "X": 0.1895,
-                  "Y": 0.15
+                  "X": 0.0,
+                  "Y": 0.0
                 },
-                "LeftMargin": 66.0141,
-                "RightMargin": 241.9859,
-                "TopMargin": 76.7379,
-                "BottomMargin": 25.2621,
+                "LeftMargin": 102.0141,
+                "RightMargin": 277.9859,
+                "TopMargin": 85.7379,
+                "BottomMargin": 34.2621,
                 "Tag": 125,
                 "ActionTag": -1946973175,
                 "Size": {
-                  "X": 72.0,
-                  "Y": 18.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Name": "level_text1",
                 "ctype": "TextObjectData"
@@ -276,8 +273,6 @@
               {
                 "FontSize": 18,
                 "LabelText": "9998",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -330,8 +325,6 @@
               {
                 "FontSize": 18,
                 "LabelText": "9999",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0

@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -577,8 +579,8 @@
                   "Path": "rankUI/rankText.png",
                   "Plist": ""
                 },
-                "Scale9Width": 183,
-                "Scale9Height": 38,
+                "Scale9Width": 200,
+                "Scale9Height": 55,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -599,17 +601,17 @@
                 },
                 "PreSize": {
                   "X": 0.2859,
-                  "Y": 0.0442
+                  "Y": 0.0581
                 },
                 "LeftMargin": 233.7461,
                 "RightMargin": 223.2539,
-                "TopMargin": 11.0536,
-                "BottomMargin": 810.9464,
+                "TopMargin": 5.0536,
+                "BottomMargin": 804.9464,
                 "Tag": 46,
                 "ActionTag": 86413385,
                 "Size": {
                   "X": 183.0,
-                  "Y": 38.0
+                  "Y": 50.0
                 },
                 "Name": "rank",
                 "ctype": "ImageViewObjectData"

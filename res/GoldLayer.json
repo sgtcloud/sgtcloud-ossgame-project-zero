@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -50,55 +52,6 @@
             },
             "Tag": 122,
             "Children": [
-              {
-                "FontSize": 22,
-                "LabelText": "99999999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 108.7162,
-                  "Y": 24.9712
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.604,
-                  "Y": 0.4994
-                },
-                "PreSize": {
-                  "X": 0.6722,
-                  "Y": 0.44
-                },
-                "LeftMargin": 48.2162,
-                "RightMargin": 10.7838,
-                "TopMargin": 14.0288,
-                "BottomMargin": 13.9712,
-                "Tag": 120,
-                "ActionTag": 1759259323,
-                "Size": {
-                  "X": 121.0,
-                  "Y": 22.0
-                },
-                "Name": "gold_text",
-                "ctype": "TextObjectData"
-              },
               {
                 "FileData": {
                   "Type": "Normal",
@@ -129,10 +82,10 @@
                   "X": 0.1667,
                   "Y": 0.6
                 },
-                "LeftMargin": 10.31,
-                "RightMargin": 139.69,
-                "TopMargin": 10.0285,
-                "BottomMargin": 9.9715,
+                "LeftMargin": 10.3113,
+                "RightMargin": 139.6887,
+                "TopMargin": 10.0274,
+                "BottomMargin": 9.9726,
                 "Tag": 121,
                 "ActionTag": 1067446397,
                 "Size": {
@@ -141,6 +94,50 @@
                 },
                 "Name": "gold_icon",
                 "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 17,
+                "CharHeight": 25,
+                "LabelText": "9999999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font26_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": -0.005
+                },
+                "Position": {
+                  "X": 44.0237,
+                  "Y": 12.9726
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2446,
+                  "Y": 0.2595
+                },
+                "PreSize": {
+                  "X": 0.6611,
+                  "Y": 0.5
+                },
+                "LeftMargin": 44.6187,
+                "RightMargin": 16.3813,
+                "TopMargin": 12.0274,
+                "BottomMargin": 12.9726,
+                "Tag": 90,
+                "ActionTag": 680959794,
+                "Size": {
+                  "X": 119.0,
+                  "Y": 25.0
+                },
+                "Name": "gold_text",
+                "ctype": "TextAtlasObjectData"
               }
             ],
             "ActionTag": 152266157,
@@ -160,6 +157,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "mainUI/font26_yellow.png",
         "ui/gold.png"
       ],
       "ctype": "GameFileData"
