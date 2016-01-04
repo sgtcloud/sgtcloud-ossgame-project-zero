@@ -47,19 +47,20 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 1.0,
+              "X": 0.5,
               "Y": 1.0
             },
+            "RightMargin": 100.0,
             "Tag": 30,
             "Children": [
               {
                 "CharWidth": 10,
                 "CharHeight": 14,
-                "LabelText": "9999999999",
+                "LabelText": "00",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font14.png",
+                  "Path": "mainUI/font14_red.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {},
@@ -78,13 +79,15 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 1.0,
+                  "X": 0.2,
                   "Y": 1.0
                 },
+                "RightMargin": 80.0,
+                "CallBackType": "Click",
                 "Tag": 28,
                 "ActionTag": -2119850651,
                 "Size": {
-                  "X": 100.0,
+                  "X": 20.0,
                   "Y": 14.0
                 },
                 "Name": "battle_num",
@@ -101,14 +104,14 @@
           }
         ],
         "Size": {
-          "X": 100.0,
+          "X": 200.0,
           "Y": 14.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/font14.png"
+        "mainUI/font14_red.png"
       ],
       "ctype": "GameFileData"
     }

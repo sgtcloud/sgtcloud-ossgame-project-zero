@@ -37,7 +37,7 @@ var res = {
     enemy_1004_json: "res/enemy1004.json",
     enemy_1005_json: "res/enemy1005.json",
 
-    hero_blood_json: "res/blood.json",
+    hero_blood_json: "res/Blood.json",
     battle_num_json: "res/BattleNum.json",
 
     equip_hero_view_json: "res/EquipHeroView.json",

@@ -1,0 +1,211 @@
+{
+  "ID": "5dff18fb-704b-45b4-8882-87d8038fc839",
+  "Version": "2.3.3.0",
+  "Name": "ShopTab",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 42,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 95,
+            "Children": [
+              {
+                "FontSize": 30,
+                "ButtonText": "",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/shopTab_1.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/shopTab_2.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/shopTab_1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 130,
+                "Scale9Height": 25,
+                "DisplayState": false,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "RightMargin": 160.0,
+                "Tag": 52,
+                "ActionTag": -1066382732,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 55.0
+                },
+                "Name": "shop_tab",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 30,
+                "ButtonText": "",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/moneyTreeTab_1.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/moneyTreeTab_2.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/moneyTreeTab_1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 130,
+                "Scale9Height": 25,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 160.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": 160.0,
+                "Tag": 53,
+                "ActionTag": 1266495568,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 55.0
+                },
+                "Name": "moneyTree_tab",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -1195583241,
+            "Size": {
+              "X": 320.0,
+              "Y": 55.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 320.0,
+          "Y": 55.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "shopUI/moneyTreeTab_1.png",
+        "shopUI/moneyTreeTab_2.png",
+        "shopUI/shopTab_1.png",
+        "shopUI/shopTab_2.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
