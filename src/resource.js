@@ -49,6 +49,7 @@ var res = {
 
     tap_effect_json : "res/effect5000.json"
 
+    prompt1_layer_json:"res/Prompt1Layer.json"
 };
 
 

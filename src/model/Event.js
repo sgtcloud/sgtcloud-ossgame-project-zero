@@ -33,6 +33,11 @@ var EVENT = {
 };
 
 var customEventHelper = {
+    /**
+     * 绑定自定义事件
+     * @param eventName 事件名称
+     * @param listener  事件监听函数
+     */
     bindListener: function (eventName, listener) {
         this.customEventListener = cc.EventListener.create({
             event: cc.EventListener.CUSTOM,
@@ -41,7 +46,11 @@ var customEventHelper = {
         });
         cc.eventManager.addListener(this.customEventListener, 1);
     },
-
+    /**
+     * 触发事件
+     * @param eventName 事件名称
+     * @param eventData 发送的消息内容
+     */
     sendEvent: function (eventName, eventData) {
         var event = new cc.EventCustom(eventName);
         event.setUserData(eventData);
