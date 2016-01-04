@@ -410,47 +410,6 @@
                 },
                 "Name": "title_root",
                 "ctype": "PanelObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "GoldLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 230.0,
-                  "Y": 500.9312
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3594,
-                  "Y": 1.0019
-                },
-                "PreSize": {
-                  "X": 0.2813,
-                  "Y": 0.1
-                },
-                "LeftMargin": 230.0,
-                "RightMargin": 230.0,
-                "TopMargin": -50.9312,
-                "BottomMargin": 500.9312,
-                "Tag": 216,
-                "ActionTag": -1363968626,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 50.0
-                },
-                "Name": "goldLayer",
-                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -593797273,
@@ -473,7 +432,6 @@
         "EquipBtn.json",
         "equipUI/bg.png",
         "equipUI/title_2.png",
-        "GoldLayer.json",
         "heroUI/text_bg.png"
       ],
       "ctype": "GameFileData"
