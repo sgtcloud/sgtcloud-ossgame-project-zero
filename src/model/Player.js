@@ -56,6 +56,7 @@ var PlayerData = {
             }
         }
         this.stageData = new Stage(player.stage);
+        this.countOfflineReward();
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -151,7 +152,6 @@ var PlayerData = {
         player.not_get_reward = 0;
     }
     ,
-    },
     getAmountByUnit:function(unit){
         switch (unit) {
             case "gold":
