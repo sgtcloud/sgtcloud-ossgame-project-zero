@@ -104,24 +104,27 @@ var BattlePanel = cc.Node.extend({
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
         bindButtonCallback(this.rewardBtn, function () {
-            var prompt1Layer = ccs.csLoader.createNode(res.prompt1_layer_json);
+            var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
-            var prompt1LayerRoot = prompt1Layer.getChildByName('root');
-            var prompt1LayerTitleText = prompt1LayerRoot.getChildByName('title_text');
-            var prompt1LayerDescText = prompt1LayerRoot.getChildByName('desc_text');
-            var prompt1LayerGoldText = prompt1LayerRoot.getChildByName('gold_text');
-            var prompt1LayerBtn = prompt1LayerRoot.getChildByName('btn');
-            prompt1LayerTitleText.setString('离线奖励');
-            prompt1LayerDescText.setString('当前离线奖励所获取的金币数');
-            prompt1LayerGoldText.setString(player.not_get_reward);
-            bindButtonCallback(prompt1LayerBtn,function(){
-                prompt1Layer.removeFromParent();
+            var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
+            var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn');
+
+            var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
+            var rewards = player.not_get_reward;
+            for (var key in rewards) {
+                if (rewards.hasOwnProperty(key)) {
+                    var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
+                    offlineRewardLayerText.setString(rewards[key]);
+                }
+            }
+            bindButtonCallback(offlineRewardLayerBtn,function(){
+                offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(prompt1Layer,1000);
+            popup(offlineRewardLayer,1000);
         });
 
         var battle_bg = root.getChildByName('battle_bg');
@@ -206,7 +209,7 @@ var BattlePanel = cc.Node.extend({
     },
 
     loadRewardBtn: function () {
-        if(player.not_get_reward > 0){
+        if(player.not_get_reward["gold"] > 0){
             this.rewardBtn.visible = true;
         }else{
             this.rewardBtn.visible = false;
@@ -249,7 +252,6 @@ var BattlePanel = cc.Node.extend({
         var  boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-        //this.timeBar.setAnchorPoint(cc.p(0.5,0.5));
         this.timeText.setString(boosTimeMax);
         this.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
 

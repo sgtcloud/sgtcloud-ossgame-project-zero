@@ -4,11 +4,12 @@ var player = {
     "gold": 10,
     "gem": 10,
     "relic": 10,
+    "key": 10,
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
     "into_stage_battle_timestamp":0,
-    "not_get_reward":0,
+    "not_get_reward":{"key": 0,"gem": 0,"gold": 0},
     "heroes": [
         {
             "id": "h101",
@@ -116,40 +117,57 @@ var PlayerData = {
                     case "relic":
                         player.relic += data.value;
                         break;
+                    case "key":
+                        player.key += data.value;
+                        break;
                 }
             }
         }
     }
     ,
     updateIntoBattleTime: function(){
-        cc.log("into_stage_battle_timestamp:"+Date.parse(new Date()));
         player.into_stage_battle_timestamp = Date.parse(new Date());
     }
     ,
     getIntoBattleTime: function(){
-        cc.log("into_stage_battle_timestamp:"+player.into_stage_battle_timestamp);
         return player.into_stage_battle_timestamp;
     }
     ,
-    countOfflineReward: function(){
+    countOfflineTime: function(){
         var intoBattleTime = this.getIntoBattleTime();
-        if(intoBattleTime > 0){
-            var offlineTime = Math.floor((Date.parse(new Date()) - intoBattleTime)/(1000 * 60));
-            var reward = 0;
-            if(offlineTime > 3 ){
-                if(offlineTime > (60 * 24)){
+        if(intoBattleTime > 0) {
+            var offlineTime = (Date.parse(new Date()) - intoBattleTime)/(1000 * 60);
+
+            if (offlineTime > 0) {
+                if (offlineTime > (60 * 24)) {
                     offlineTime = 60 * 24;
                 }
-                reward = offlineTime * this.getStageData().getOfflineReward();
+                return offlineTime;
             }
-            player.not_get_reward += reward;
-            //this.updatePlayer();
+        }
+        return 0;
+    },
+    countOfflineReward: function(){
+        var datas = this.getStageData().getOfflineReward();
+        var offlineTime = this.countOfflineTime();
+        var rewards = player.not_get_reward;
+        for (var i = 0; i < datas.length; i++) {
+            if (datas[i].value) {
+                rewards[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
+            }
         }
     }
     ,
     receiveOfflineReward: function(){
-        this.consumeResource([this.createResourceData("gold",player.not_get_reward)]);
-        player.not_get_reward = 0;
+        var rewards = player.not_get_reward;
+        var arrays = new Array();
+        for (var key in rewards) {
+            if (rewards.hasOwnProperty(key)) {
+                arrays.push(this.createResourceData(key,rewards[key]));
+            }
+        }
+        this.consumeResource(arrays);
+        player.not_get_reward = {"key": 0,"gem": 0,"gold": 0};
     }
     ,
     getAmountByUnit:function(unit){
@@ -160,6 +178,8 @@ var PlayerData = {
                 return player.gem;
             case "relic":
                 return player.relic ;
+            case "key":
+                return player.key;
         }
         return 0;
     },
