@@ -573,7 +573,7 @@
                       "X": 72.0,
                       "Y": 18.0
                     },
-                    "Name": "gew_text",
+                    "Name": "gem_text",
                     "ctype": "TextObjectData"
                   },
                   {
@@ -612,7 +612,7 @@
                       "X": 30.0,
                       "Y": 30.0
                     },
-                    "Name": "gew",
+                    "Name": "gem",
                     "ctype": "ImageViewObjectData"
                   },
                   {

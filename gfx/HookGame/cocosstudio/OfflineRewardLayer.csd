@@ -108,7 +108,7 @@
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gew_text" ActionTag="-905193104" Tag="440" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="47.0000" BottomMargin="45.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="gem_text" ActionTag="-905193104" Tag="440" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="47.0000" BottomMargin="45.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="72.0000" Y="18.0000" />
                     <AnchorPoint />
                     <Position X="35.0000" Y="45.0000" />
@@ -119,7 +119,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gew" ActionTag="953540833" Tag="442" IconVisible="False" RightMargin="170.0000" TopMargin="40.0000" BottomMargin="40.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="gem" ActionTag="953540833" Tag="442" IconVisible="False" RightMargin="170.0000" TopMargin="40.0000" BottomMargin="40.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="30.0000" Y="30.0000" />
                     <AnchorPoint />
                     <Position Y="40.0000" />
