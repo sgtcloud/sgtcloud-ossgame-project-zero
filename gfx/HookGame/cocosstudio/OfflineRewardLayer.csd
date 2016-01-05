@@ -62,7 +62,7 @@
               <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
-                  <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="offline_btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="120.0000" Y="50.0000" />
                     <AnchorPoint />
                     <Position />

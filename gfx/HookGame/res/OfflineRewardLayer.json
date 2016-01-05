@@ -381,7 +381,7 @@
                       "X": 120.0,
                       "Y": 50.0
                     },
-                    "Name": "btn",
+                    "Name": "offline_btn",
                     "ctype": "ButtonObjectData"
                   },
                   {
