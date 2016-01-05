@@ -25,19 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="BattleNum.csd" />
-          <FilePathData Path="Blood.csd" />
-          <FilePathData Path="CloseBtn.csd" />
-          <FilePathData Path="EnemyList.csd" />
-          <FilePathData Path="EquipBtn.csd" />
-          <FilePathData Path="HeroBtn.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="HeroBtn.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
