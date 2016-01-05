@@ -76,7 +76,7 @@
         "unit": "gem"
       },
       {
-        "value": 20,
+        "value": 10,
         "unit": "gold"
       }
     ],
@@ -134,7 +134,7 @@
         "unit": "gem"
       },
       {
-        "value": 30,
+        "value": 10,
         "unit": "gold"
       }
     ],
@@ -192,7 +192,7 @@
         "unit": "gem"
       },
       {
-        "value": 40,
+        "value": 10,
         "unit": "gold"
       }
     ],
@@ -250,7 +250,7 @@
         "unit": "gem"
       },
       {
-        "value": 50,
+        "value": 10,
         "unit": "gold"
       }
     ],
