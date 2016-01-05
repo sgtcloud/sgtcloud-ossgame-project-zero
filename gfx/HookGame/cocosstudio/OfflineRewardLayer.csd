@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="OfflineRewarLayer" Type="Layer" ID="84517494-4ca1-4c85-9002-5e7eefc2e479" Version="2.3.3.0" />
+  <PropertyGroup Name="OfflineRewardLayer" Type="Layer" ID="84517494-4ca1-4c85-9002-5e7eefc2e479" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -49,6 +49,16 @@
                 <PreSize X="0.8578" Y="0.5600" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="desc_text" ActionTag="-1197192476" Tag="1015" IconVisible="False" LeftMargin="93.2205" RightMargin="92.7795" TopMargin="112.6725" BottomMargin="261.3275" Scale9Width="264" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="264.0000" Y="26.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="225.2205" Y="274.3275" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5005" Y="0.6858" />
+                <PreSize X="0.5867" Y="0.0650" />
+                <FileData Type="Normal" Path="offlineRewardUI/desc.png" Plist="" />
+              </AbstractNodeData>
               <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" LeftMargin="165.2206" RightMargin="164.7794" TopMargin="326.6971" BottomMargin="23.3029" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -64,29 +74,17 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="50" IconVisible="False" LeftMargin="161.2202" RightMargin="168.7798" TopMargin="106.5538" BottomMargin="273.4462" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
+              <AbstractNodeData Name="title_text" ActionTag="-2145419876" Tag="1016" IconVisible="False" LeftMargin="169.2204" RightMargin="168.7796" TopMargin="43.1970" BottomMargin="322.8030" Scale9Width="112" Scale9Height="34" ctype="ImageViewObjectData">
+                <Size X="112.0000" Y="34.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="221.2202" Y="283.4462" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.4916" Y="0.7086" />
-                <PreSize X="0.2667" Y="0.0500" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="title_text" ActionTag="-1785448448" Tag="132" IconVisible="False" LeftMargin="185.2204" RightMargin="184.7796" TopMargin="50.2313" BottomMargin="329.7687" FontSize="20" LabelText="标题名字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="80.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="225.2204" Y="339.7687" />
+                <Position X="225.2204" Y="339.8030" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5005" Y="0.8494" />
-                <PreSize X="0.1778" Y="0.0500" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.5005" Y="0.8495" />
+                <PreSize X="0.2489" Y="0.0850" />
+                <FileData Type="Normal" Path="offlineRewardUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9997" RightMargin="81.0003" TopMargin="167.0045" BottomMargin="122.9955" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="gold_text" ActionTag="-1256465214" Tag="51" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="7.0000" BottomMargin="85.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -154,10 +152,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="168.9998" Y="107.9953" />
+                <Position X="168.9997" Y="122.9955" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3756" Y="0.2700" />
+                <PrePosition X="0.3756" Y="0.3075" />
                 <PreSize X="0.4444" Y="0.2750" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
