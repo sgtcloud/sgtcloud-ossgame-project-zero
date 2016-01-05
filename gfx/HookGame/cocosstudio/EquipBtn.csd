@@ -44,7 +44,7 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="897018303" Tag="16" IconVisible="False" LeftMargin="34.5000" RightMargin="28.5000" TopMargin="26.5000" BottomMargin="26.5000" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="upMax_text" ActionTag="897018303" Tag="16" IconVisible="False" LeftMargin="34.5000" RightMargin="28.5000" TopMargin="26.5000" BottomMargin="26.5000" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="77.0000" Y="27.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="73.0000" Y="40.0000" />
@@ -54,7 +54,7 @@
                 <PreSize X="0.5500" Y="0.3375" />
                 <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="up_text" Visible="False" ActionTag="1520055175" Tag="17" IconVisible="False" LeftMargin="50.5138" RightMargin="36.4862" TopMargin="37.5258" BottomMargin="17.4742" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="up_text" ActionTag="1520055175" Tag="17" IconVisible="False" LeftMargin="50.5138" RightMargin="36.4862" TopMargin="37.5258" BottomMargin="17.4742" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
                 <Size X="53.0000" Y="25.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="77.0138" Y="29.9742" />
@@ -74,7 +74,7 @@
                 <PreSize X="0.3786" Y="0.3125" />
                 <FileData Type="Normal" Path="buttonUI/buy.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="re_text" Visible="False" ActionTag="-691974878" Tag="49" IconVisible="False" LeftMargin="50.5138" RightMargin="36.4862" TopMargin="37.5258" BottomMargin="17.4742" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="re_text" ActionTag="-691974878" Tag="49" IconVisible="False" LeftMargin="50.5138" RightMargin="36.4862" TopMargin="37.5258" BottomMargin="17.4742" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
                 <Size X="53.0000" Y="25.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="77.0138" Y="29.9742" />
