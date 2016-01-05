@@ -219,7 +219,7 @@
               },
               {
                 "FontSize": 18,
-                "LabelText": "",
+                "LabelText": "   ",
                 "HorizontalAlignmentType": "HT_Center",
                 "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
@@ -256,18 +256,18 @@
                   "Y": 0.2855
                 },
                 "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.0711,
+                  "Y": 0.15
                 },
-                "LeftMargin": 102.0141,
-                "RightMargin": 277.9859,
-                "TopMargin": 85.7379,
-                "BottomMargin": 34.2621,
+                "LeftMargin": 88.5141,
+                "RightMargin": 264.4859,
+                "TopMargin": 76.7379,
+                "BottomMargin": 25.2621,
                 "Tag": 125,
                 "ActionTag": -1946973175,
                 "Size": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 27.0,
+                  "Y": 18.0
                 },
                 "Name": "level_text1",
                 "ctype": "TextObjectData"

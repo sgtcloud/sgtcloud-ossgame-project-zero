@@ -5,6 +5,16 @@ var Skill = function (id, lv) {
     var id = id;
     var lv = lv;
     var data = dataSource.skills[id];
+    var icon = data.icon;
+    var type = data.type;
+    this.getIcon = function () {
+        return icon;
+    }
+    this.getType = function () {
+        return type;
+    }
+
+
     this.getId = function () {
         return id;
     };
@@ -12,22 +22,25 @@ var Skill = function (id, lv) {
      * 获取升下一级所需数据
      * @returns {*}
      */
-    this.getNextLevelUpgrade=function(){
-        var level=this.getLv();
-        var cost=getLevelData(data,'upgrade',level+1);
+    this.getNextLevelUpgrade = function () {
+        var level = this.getLv();
+        var cost = getLevelData(data, 'upgrade', level + 1);
         return cost;
     };
-    this.getLevelData=function(level){
-        return getSpecificLevelData(data,level||lv);
+    this.getLevelData = function (level) {
+        return getSpecificLevelData(data, level || lv);
     }
     /**
      * 是否最高级别
      * @returns {boolean} true 是，false 不是
      */
-    this.isMaxLevel=function(){
-        return lv>=data.levelDatas.length;
+    this.isMaxLevel = function () {
+        return lv >=this.getMaxLevel();
     };
-    this.upgrade=function(){
+    this.getMaxLevel=function(){
+        return data.levelDatas.length;
+    }
+    this.upgrade = function () {
         lv++;
     }
     /**
@@ -54,18 +67,18 @@ var Skill = function (id, lv) {
      * @param lv 级别，默认为当前级别
      * @returns [{type:'技能type','value':111,'index':'排列位置'}]
      */
-    this.traverseSkillEffects=function (lv){
-        var skill=this.getLevelData(lv);
-        var effects=[];
-        for (var key in skill){
+    this.traverseSkillEffects = function (lv) {
+        var skill = this.getLevelData(lv);
+        var effects = [];
+        for (var key in skill) {
             //狗日的微信浏览器中没有startsWith
-            if(key.indexOf("effect")==0){
-                var effect=skill[key];
+            if (key.indexOf("effect") == 0) {
+                var effect = skill[key];
                 effects.push(effect);
-                effect.index=parseInt(key.replace("effect",""));
+                effect.index = parseInt(key.replace("effect", ""));
             }
         }
-        return effects.sort(function(a,b){
+        return effects.sort(function (a, b) {
             return a.index - b.index;
         });
     }
