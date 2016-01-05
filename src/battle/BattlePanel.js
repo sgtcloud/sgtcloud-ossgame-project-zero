@@ -238,11 +238,11 @@ var BattlePanel = cc.Node.extend({
     },
     disableBossBattleTimeCounter:function(){
         this.timeText.visible = false;
-        this.timeTextBg.visible = false;
+        //this.timeTextBg.visible = false;
     },
     enableBossBattleTimeCounter:function(stage){
         this.timeText.visible = true;
-        this.timeTextBg.visible = true;
+        //this.timeTextBg.visible = true;
         var  boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
