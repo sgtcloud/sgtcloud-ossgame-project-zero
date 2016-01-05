@@ -763,8 +763,8 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 10,
-                "CharHeight": 17,
+                "CharWidth": 16,
+                "CharHeight": 14,
                 "LabelText": "5698741230",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
@@ -777,8 +777,8 @@
                   "ScaleY": 0.6287
                 },
                 "Position": {
-                  "X": 351.9969,
-                  "Y": 727.2048
+                  "X": 385.6389,
+                  "Y": 726.9742
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -787,23 +787,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.55,
-                  "Y": 0.9696
+                  "X": 0.6026,
+                  "Y": 0.9693
                 },
                 "PreSize": {
-                  "X": 0.1563,
-                  "Y": 0.0227
+                  "X": 0.25,
+                  "Y": 0.0187
                 },
-                "LeftMargin": 303.5169,
-                "RightMargin": 236.4831,
-                "TopMargin": 16.4832,
-                "BottomMargin": 716.5168,
+                "LeftMargin": 308.0709,
+                "RightMargin": 171.9291,
+                "TopMargin": 17.8276,
+                "BottomMargin": 718.1724,
                 "CallBackType": "Click",
                 "Tag": 167,
                 "ActionTag": -152243152,
                 "Size": {
-                  "X": 100.0,
-                  "Y": 17.0
+                  "X": 160.0,
+                  "Y": 14.0
                 },
                 "Name": "enemy_life_text",
                 "ctype": "TextAtlasObjectData"
