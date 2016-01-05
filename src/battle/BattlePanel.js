@@ -241,25 +241,25 @@ var BattlePanel = cc.Node.extend({
             this.addChild(hero, player.heroes.length - i);
         }
     },
-    disableBossBattleTimeCounter: function () {
+    disableBossBattleTimeCounter:function(){
         this.timeText.visible = false;
-        //this.timeTextBg.visible = false;
+        this.timeTextBg.visible = false;
     },
-    enableBossBattleTimeCounter: function (stage) {
+    enableBossBattleTimeCounter:function(stage){
         this.timeText.visible = true;
-        //this.timeTextBg.visible = true;
-        var boosTimeMax = stage.getBossTimeMax();
+        this.timeTextBg.visible = true;
+        var  boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
         this.timeText.setString(boosTimeMax);
-        this.times = setInterval(function () {
-            if (boosTimeMax == 0) {
+        this.times = setInterval(function(){
+            if(boosTimeMax==0){
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            } else {
+            }else{
                 boosTimeMax--;
                 self.timeText.setString(boosTimeMax);
             }
-        }, 1000);
+        },1000);
     },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();

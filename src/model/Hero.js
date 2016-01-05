@@ -7,7 +7,6 @@ var Hero = function (heroData) {
     var equips = [];
     var skills = [];
 
-
     for (var i in heroData.equips) {
         var equip = data.equips[i];
         var equipsLv = heroData.equips[i];
