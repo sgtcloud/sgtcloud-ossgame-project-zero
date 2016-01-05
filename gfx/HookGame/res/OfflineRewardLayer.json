@@ -234,6 +234,49 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "offlineRewardUI/desc.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 264,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 225.2205,
+                  "Y": 274.3275
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5005,
+                  "Y": 0.6858
+                },
+                "PreSize": {
+                  "X": 0.5867,
+                  "Y": 0.065
+                },
+                "LeftMargin": 93.2205,
+                "RightMargin": 92.7795,
+                "TopMargin": 112.6725,
+                "BottomMargin": 261.3275,
+                "Tag": 1015,
+                "ActionTag": -1197192476,
+                "Size": {
+                  "X": 264.0,
+                  "Y": 26.0
+                },
+                "Name": "desc_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
                 "FontSize": 22,
                 "ButtonText": "确定",
                 "TextColor": {
@@ -309,83 +352,20 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "一段文字描述",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "offlineRewardUI/title.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 221.2202,
-                  "Y": 283.4462
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4916,
-                  "Y": 0.7086
-                },
-                "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.05
-                },
-                "LeftMargin": 161.2202,
-                "RightMargin": 168.7798,
-                "TopMargin": 106.5538,
-                "BottomMargin": 273.4462,
-                "Tag": 50,
-                "ActionTag": -2019854582,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
-                },
-                "Name": "desc_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "标题名字",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 112,
+                "Scale9Height": 34,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
                   "X": 225.2204,
-                  "Y": 339.7687
+                  "Y": 339.803
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -395,24 +375,24 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5005,
-                  "Y": 0.8494
+                  "Y": 0.8495
                 },
                 "PreSize": {
-                  "X": 0.1778,
-                  "Y": 0.05
+                  "X": 0.2489,
+                  "Y": 0.085
                 },
-                "LeftMargin": 185.2204,
-                "RightMargin": 184.7796,
-                "TopMargin": 50.2313,
-                "BottomMargin": 329.7687,
-                "Tag": 132,
-                "ActionTag": -1785448448,
+                "LeftMargin": 169.2204,
+                "RightMargin": 168.7796,
+                "TopMargin": 43.197,
+                "BottomMargin": 322.803,
+                "Tag": 1016,
+                "ActionTag": -2145419876,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 20.0
+                  "X": 112.0,
+                  "Y": 34.0
                 },
                 "Name": "title_text",
-                "ctype": "TextObjectData"
+                "ctype": "ImageViewObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -433,8 +413,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 168.9998,
-                  "Y": 107.9953
+                  "X": 168.9997,
+                  "Y": 122.9955
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -444,16 +424,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.3756,
-                  "Y": 0.27
+                  "Y": 0.3075
                 },
                 "PreSize": {
                   "X": 0.4444,
                   "Y": 0.275
                 },
-                "LeftMargin": 168.9998,
-                "RightMargin": 81.0002,
-                "TopMargin": 182.0047,
-                "BottomMargin": 107.9953,
+                "LeftMargin": 168.9997,
+                "RightMargin": 81.0003,
+                "TopMargin": 167.0045,
+                "BottomMargin": 122.9955,
                 "Tag": 450,
                 "Children": [
                   {
@@ -759,7 +739,9 @@
         "mainUI/diamond.png",
         "mainUI/gold.png",
         "mainUI/key.png",
-        "mainUI/title.png"
+        "mainUI/title.png",
+        "offlineRewardUI/desc.png",
+        "offlineRewardUI/title.png"
       ],
       "ctype": "GameFileData"
     }

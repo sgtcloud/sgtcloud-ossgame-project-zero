@@ -215,6 +215,10 @@
           <Image Name="revive.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
+        <Folder Name="offlineRewardUI">
+          <Image Name="desc.png" />
+          <Image Name="title.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
