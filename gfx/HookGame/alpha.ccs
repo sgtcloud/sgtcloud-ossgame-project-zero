@@ -213,6 +213,8 @@
           <Image Name="font16_white.png" />
           <Image Name="font16_yellow.png" />
         </Folder>
+        <Project Name="ResourcesView.csd" Type="Layer" />
+        <Project Name="Prompt3Layer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
