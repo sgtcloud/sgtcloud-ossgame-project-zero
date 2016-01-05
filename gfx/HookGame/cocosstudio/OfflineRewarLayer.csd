@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Prompt3Layer" Type="Layer" ID="9cb3f636-7b17-4136-a7a4-d75c1f637493" Version="2.3.3.0" />
+  <PropertyGroup Name="OfflineRewarLayer" Type="Layer" ID="84517494-4ca1-4c85-9002-5e7eefc2e479" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -39,13 +39,13 @@
                 <PreSize X="0.8800" Y="0.6000" />
                 <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_bg" ActionTag="-1772675966" Tag="11" IconVisible="False" LeftMargin="31.5689" RightMargin="32.4311" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="text_bg" ActionTag="-1772675966" Tag="11" IconVisible="False" LeftMargin="32.2205" RightMargin="31.7795" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="386.0000" Y="224.0000" />
                 <AnchorPoint />
-                <Position X="31.5689" Y="89.0000" />
+                <Position X="32.2205" Y="89.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0702" Y="0.2225" />
+                <PrePosition X="0.0716" Y="0.2225" />
                 <PreSize X="0.8578" Y="0.5600" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
@@ -64,13 +64,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="50" IconVisible="False" LeftMargin="165.2204" RightMargin="164.7796" TopMargin="106.5538" BottomMargin="273.4462" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="50" IconVisible="False" LeftMargin="161.2202" RightMargin="168.7798" TopMargin="106.5538" BottomMargin="273.4462" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="225.2204" Y="283.4462" />
+                <Position X="221.2202" Y="283.4462" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.5005" Y="0.7086" />
+                <PrePosition X="0.4916" Y="0.7086" />
                 <PreSize X="0.2667" Y="0.0500" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -86,16 +86,81 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="list" ActionTag="-388708253" Tag="170" IconVisible="False" LeftMargin="164.5688" RightMargin="165.4312" TopMargin="200.3354" BottomMargin="109.6646" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
-                <Size X="120.0000" Y="90.0000" />
+              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="200.0000" Y="110.0000" />
+                <Children>
+                  <AbstractNodeData Name="gold_text" ActionTag="-1256465214" Tag="51" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="7.0000" BottomMargin="85.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="72.0000" Y="18.0000" />
+                    <AnchorPoint />
+                    <Position X="35.0000" Y="85.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="0" G="0" B="0" />
+                    <PrePosition X="0.1750" Y="0.7727" />
+                    <PreSize X="0.3600" Y="0.1636" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold" ActionTag="-863607303" Tag="52" IconVisible="False" RightMargin="170.0000" BottomMargin="80.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="30.0000" Y="30.0000" />
+                    <AnchorPoint />
+                    <Position Y="80.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition Y="0.7273" />
+                    <PreSize X="0.1500" Y="0.2727" />
+                    <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gew_text" ActionTag="-905193104" Tag="440" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="47.0000" BottomMargin="45.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="72.0000" Y="18.0000" />
+                    <AnchorPoint />
+                    <Position X="35.0000" Y="45.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="0" G="0" B="0" />
+                    <PrePosition X="0.1750" Y="0.4091" />
+                    <PreSize X="0.3600" Y="0.1636" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gew" ActionTag="953540833" Tag="442" IconVisible="False" RightMargin="170.0000" TopMargin="40.0000" BottomMargin="40.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="30.0000" Y="30.0000" />
+                    <AnchorPoint />
+                    <Position Y="40.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition Y="0.3636" />
+                    <PreSize X="0.1500" Y="0.2727" />
+                    <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="key_text" ActionTag="-1109855385" Tag="445" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="87.0000" BottomMargin="5.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="72.0000" Y="18.0000" />
+                    <AnchorPoint />
+                    <Position X="35.0000" Y="5.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="0" G="0" B="0" />
+                    <PrePosition X="0.1750" Y="0.0455" />
+                    <PreSize X="0.3600" Y="0.1636" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" RightMargin="170.0000" TopMargin="80.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
+                    <Size X="30.0000" Y="30.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.1500" Y="0.2727" />
+                    <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
                 <AnchorPoint />
-                <Position X="164.5688" Y="109.6646" />
+                <Position X="168.9998" Y="107.9953" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3657" Y="0.2742" />
-                <PreSize X="0.2667" Y="0.2250" />
-                <SingleColor A="255" R="150" G="150" B="255" />
-                <FirstColor A="255" R="150" G="150" B="255" />
+                <PrePosition X="0.3756" Y="0.2700" />
+                <PreSize X="0.4444" Y="0.2750" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>

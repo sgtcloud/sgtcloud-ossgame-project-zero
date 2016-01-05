@@ -1,7 +1,7 @@
 {
-  "ID": "9cb3f636-7b17-4136-a7a4-d75c1f637493",
+  "ID": "84517494-4ca1-4c85-9002-5e7eefc2e479",
   "Version": "2.3.3.0",
-  "Name": "Prompt3Layer",
+  "Name": "OfflineRewarLayer",
   "Content": {
     "Content": {
       "Animation": {
@@ -203,7 +203,7 @@
                 "Scale9Height": 50,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 31.5689,
+                  "X": 32.2205,
                   "Y": 89.0
                 },
                 "Scale": {
@@ -213,15 +213,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0702,
+                  "X": 0.0716,
                   "Y": 0.2225
                 },
                 "PreSize": {
                   "X": 0.8578,
                   "Y": 0.56
                 },
-                "LeftMargin": 31.5689,
-                "RightMargin": 32.4311,
+                "LeftMargin": 32.2205,
+                "RightMargin": 31.7795,
                 "TopMargin": 87.0,
                 "BottomMargin": 89.0,
                 "Tag": 11,
@@ -329,7 +329,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 225.2204,
+                  "X": 221.2202,
                   "Y": 283.4462
                 },
                 "Scale": {
@@ -343,15 +343,15 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5005,
+                  "X": 0.4916,
                   "Y": 0.7086
                 },
                 "PreSize": {
                   "X": 0.2667,
                   "Y": 0.05
                 },
-                "LeftMargin": 165.2204,
-                "RightMargin": 164.7796,
+                "LeftMargin": 161.2202,
+                "RightMargin": 168.7798,
                 "TopMargin": 106.5538,
                 "BottomMargin": 273.4462,
                 "Tag": 50,
@@ -415,28 +415,26 @@
                 "ctype": "TextObjectData"
               },
               {
-                "DirectionType": "Vertical",
-                "HorizontalType": "Align_HorizontalCenter",
-                "IsBounceEnabled": true,
-                "ScrollDirectionType": 0,
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
-                  "G": 150
+                  "G": 200
                 },
                 "FirstColor": {
                   "R": 150,
-                  "G": 150
+                  "G": 200
                 },
                 "EndColor": {},
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 164.5688,
-                  "Y": 109.6646
+                  "X": 168.9998,
+                  "Y": 107.9953
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -445,25 +443,295 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3657,
-                  "Y": 0.2742
+                  "X": 0.3756,
+                  "Y": 0.27
                 },
                 "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.225
+                  "X": 0.4444,
+                  "Y": 0.275
                 },
-                "LeftMargin": 164.5688,
-                "RightMargin": 165.4312,
-                "TopMargin": 200.3354,
-                "BottomMargin": 109.6646,
-                "Tag": 170,
-                "ActionTag": -388708253,
+                "LeftMargin": 168.9998,
+                "RightMargin": 81.0002,
+                "TopMargin": 182.0047,
+                "BottomMargin": 107.9953,
+                "Tag": 450,
+                "Children": [
+                  {
+                    "FontSize": 18,
+                    "LabelText": "99999999",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 85.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.175,
+                      "Y": 0.7727
+                    },
+                    "PreSize": {
+                      "X": 0.36,
+                      "Y": 0.1636
+                    },
+                    "LeftMargin": 35.0,
+                    "RightMargin": 93.0,
+                    "TopMargin": 7.0,
+                    "BottomMargin": 85.0,
+                    "Tag": 51,
+                    "ActionTag": -1256465214,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 18.0
+                    },
+                    "Name": "gold_text",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/gold.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 80.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.7273
+                    },
+                    "PreSize": {
+                      "X": 0.15,
+                      "Y": 0.2727
+                    },
+                    "RightMargin": 170.0,
+                    "BottomMargin": 80.0,
+                    "Tag": 52,
+                    "ActionTag": -863607303,
+                    "Size": {
+                      "X": 30.0,
+                      "Y": 30.0
+                    },
+                    "Name": "gold",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 18,
+                    "LabelText": "99999999",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 45.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.175,
+                      "Y": 0.4091
+                    },
+                    "PreSize": {
+                      "X": 0.36,
+                      "Y": 0.1636
+                    },
+                    "LeftMargin": 35.0,
+                    "RightMargin": 93.0,
+                    "TopMargin": 47.0,
+                    "BottomMargin": 45.0,
+                    "Tag": 440,
+                    "ActionTag": -905193104,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 18.0
+                    },
+                    "Name": "gew_text",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/diamond.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 40.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.3636
+                    },
+                    "PreSize": {
+                      "X": 0.15,
+                      "Y": 0.2727
+                    },
+                    "RightMargin": 170.0,
+                    "TopMargin": 40.0,
+                    "BottomMargin": 40.0,
+                    "Tag": 442,
+                    "ActionTag": 953540833,
+                    "Size": {
+                      "X": 30.0,
+                      "Y": 30.0
+                    },
+                    "Name": "gew",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 18,
+                    "LabelText": "99999999",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 35.0,
+                      "Y": 5.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.175,
+                      "Y": 0.0455
+                    },
+                    "PreSize": {
+                      "X": 0.36,
+                      "Y": 0.1636
+                    },
+                    "LeftMargin": 35.0,
+                    "RightMargin": 93.0,
+                    "TopMargin": 87.0,
+                    "BottomMargin": 5.0,
+                    "Tag": 445,
+                    "ActionTag": -1109855385,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 18.0
+                    },
+                    "Name": "key_text",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/key.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 45,
+                    "Scale9Height": 45,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.15,
+                      "Y": 0.2727
+                    },
+                    "RightMargin": 170.0,
+                    "TopMargin": 80.0,
+                    "Tag": 449,
+                    "ActionTag": 167233740,
+                    "Size": {
+                      "X": 30.0,
+                      "Y": 30.0
+                    },
+                    "Name": "key",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -76387688,
                 "Size": {
-                  "X": 120.0,
-                  "Y": 90.0
+                  "X": 200.0,
+                  "Y": 110.0
                 },
-                "Name": "list",
-                "ctype": "ListViewObjectData"
+                "Name": "box",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 877632929,
@@ -488,6 +756,9 @@
         "mainUI/bg_10.png",
         "mainUI/bg_11.png",
         "mainUI/bg_18.png",
+        "mainUI/diamond.png",
+        "mainUI/gold.png",
+        "mainUI/key.png",
         "mainUI/title.png"
       ],
       "ctype": "GameFileData"
