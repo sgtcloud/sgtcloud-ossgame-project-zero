@@ -117,14 +117,14 @@ var BattlePanel = cc.Node.extend({
                     offlineRewardLayerText.setString(rewards[key]);
                 }
             }
-            bindButtonCallback(offlineRewardLayerBtn,function(){
+            bindButtonCallback(offlineRewardLayerBtn, function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(offlineRewardLayer,1000);
+            popup(offlineRewardLayer, 1000);
         });
 
         var battle_bg = root.getChildByName('battle_bg');
@@ -145,34 +145,34 @@ var BattlePanel = cc.Node.extend({
         };
 
         this.bindPlayerTapEvent = function () {
-          /*  var tap = root.getChildByName('tap');
-            var listener = cc.EventListener.create({
-                event: cc.EventListener.MOUSE,
-                onMouseDown: function (event) {
-                    var pos = event.getLocation(); //当前事件发生的光标位置
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget(); //事件绑定的目标
-                    //判断当前事件发生的位置是否在事件目标区域内
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                        // cc.log("Mouse Down");
-                        // console.log(self);
-                        self.onPlayerTap();
-                        return true;
-                    }
-                    return false;
-                },
-                onMouseUp: function (event) {
-                    var pos = event.getLocation();
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget();
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                         cc.log("Mouse up");
-                        return true;
-                    }
-                    return false;
-                }
-            });
-            cc.eventManager.addListener(listener, tap);*/
+            /*  var tap = root.getChildByName('tap');
+             var listener = cc.EventListener.create({
+             event: cc.EventListener.MOUSE,
+             onMouseDown: function (event) {
+             var pos = event.getLocation(); //当前事件发生的光标位置
+             pos.y -= 120;
+             var target = event.getCurrentTarget(); //事件绑定的目标
+             //判断当前事件发生的位置是否在事件目标区域内
+             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+             // cc.log("Mouse Down");
+             // console.log(self);
+             self.onPlayerTap();
+             return true;
+             }
+             return false;
+             },
+             onMouseUp: function (event) {
+             var pos = event.getLocation();
+             pos.y -= 120;
+             var target = event.getCurrentTarget();
+             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+             cc.log("Mouse up");
+             return true;
+             }
+             return false;
+             }
+             });
+             cc.eventManager.addListener(listener, tap);*/
         };
 
         this.spritesLayer = root.getChildByName('sprites');
@@ -196,7 +196,7 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
-            if(self.times != undefined){
+            if (self.times != undefined) {
                 clearInterval(self.times);
             }
 
@@ -209,9 +209,9 @@ var BattlePanel = cc.Node.extend({
     },
 
     loadRewardBtn: function () {
-        if(player.not_get_reward["gold"] > 0){
+        if (player.not_get_reward["gold"] > 0) {
             this.rewardBtn.visible = true;
-        }else{
+        } else {
             this.rewardBtn.visible = false;
         }
     }
@@ -240,30 +240,30 @@ var BattlePanel = cc.Node.extend({
             this.addChild(hero, player.heroes.length - i);
         }
     },
-    disableBossBattleTimeCounter:function(){
+    disableBossBattleTimeCounter: function () {
         this.timeText.visible = false;
         this.timeBar.visible = false;
         this.icon.visible = true;
     },
-    enableBossBattleTimeCounter:function(stage){
+    enableBossBattleTimeCounter: function (stage) {
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
-        var  boosTimeMax = stage.getBossTimeMax();
+        var boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
         this.timeText.setString(boosTimeMax);
         this.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
 
-        this.times = setInterval(function(){
-            if(boosTimeMax==0){
+        this.times = setInterval(function () {
+            if (boosTimeMax == 0) {
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            }else{
+            } else {
                 boosTimeMax--;
                 self.timeText.setString(boosTimeMax);
                 self.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
             }
-        },1000);
+        }, 1000);
     },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
@@ -348,11 +348,11 @@ var BattlePanel = cc.Node.extend({
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:"+hero);
+        cc.log("dead:" + hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:"+ hero);
+        cc.log("recover:" + hero);
     },
     onUseSkill: function (i) {
 

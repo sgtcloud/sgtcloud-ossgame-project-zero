@@ -8,8 +8,8 @@ var player = {
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
-    "into_stage_battle_timestamp":0,
-    "not_get_reward":{"key": 0,"gem": 0,"gold": 0},
+    "into_stage_battle_timestamp": 0,
+    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
     "heroes": [
         {
             "id": "h101",
@@ -125,18 +125,18 @@ var PlayerData = {
         }
     }
     ,
-    updateIntoBattleTime: function(){
+    updateIntoBattleTime: function () {
         player.into_stage_battle_timestamp = Date.parse(new Date());
     }
     ,
-    getIntoBattleTime: function(){
+    getIntoBattleTime: function () {
         return player.into_stage_battle_timestamp;
     }
     ,
-    countOfflineTime: function(){
+    countOfflineTime: function () {
         var intoBattleTime = this.getIntoBattleTime();
-        if(intoBattleTime > 0) {
-            var offlineTime = (Date.parse(new Date()) - intoBattleTime)/(1000 * 60);
+        if (intoBattleTime > 0) {
+            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
 
             if (offlineTime > 0) {
                 if (offlineTime > (60 * 24)) {
@@ -147,7 +147,7 @@ var PlayerData = {
         }
         return 0;
     },
-    countOfflineReward: function(){
+    countOfflineReward: function () {
         var datas = this.getStageData().getOfflineReward();
         var offlineTime = this.countOfflineTime();
         var rewards = player.not_get_reward;
@@ -158,26 +158,26 @@ var PlayerData = {
         }
     }
     ,
-    receiveOfflineReward: function(){
+    receiveOfflineReward: function () {
         var rewards = player.not_get_reward;
         var arrays = new Array();
         for (var key in rewards) {
             if (rewards.hasOwnProperty(key)) {
-                arrays.push(this.createResourceData(key,rewards[key]));
+                arrays.push(this.createResourceData(key, rewards[key]));
             }
         }
         this.consumeResource(arrays);
-        player.not_get_reward = {"key": 0,"gem": 0,"gold": 0};
+        player.not_get_reward = {"key": 0, "gem": 0, "gold": 0};
     }
     ,
-    getAmountByUnit:function(unit){
+    getAmountByUnit: function (unit) {
         switch (unit) {
             case "gold":
                 return player.gold;
             case "gem":
                 return player.gem;
             case "relic":
-                return player.relic ;
+                return player.relic;
             case "key":
                 return player.key;
         }
