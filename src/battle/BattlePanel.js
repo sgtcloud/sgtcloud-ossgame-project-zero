@@ -145,34 +145,34 @@ var BattlePanel = cc.Node.extend({
         };
 
         this.bindPlayerTapEvent = function () {
-            /*  var tap = root.getChildByName('tap');
-             var listener = cc.EventListener.create({
-             event: cc.EventListener.MOUSE,
-             onMouseDown: function (event) {
-             var pos = event.getLocation(); //当前事件发生的光标位置
-             pos.y -= 120;
-             var target = event.getCurrentTarget(); //事件绑定的目标
-             //判断当前事件发生的位置是否在事件目标区域内
-             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-             // cc.log("Mouse Down");
-             // console.log(self);
-             self.onPlayerTap();
-             return true;
-             }
-             return false;
-             },
-             onMouseUp: function (event) {
-             var pos = event.getLocation();
-             pos.y -= 120;
-             var target = event.getCurrentTarget();
-             if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-             cc.log("Mouse up");
-             return true;
-             }
-             return false;
-             }
-             });
-             cc.eventManager.addListener(listener, tap);*/
+          /*  var tap = root.getChildByName('tap');
+            var listener = cc.EventListener.create({
+                event: cc.EventListener.MOUSE,
+                onMouseDown: function (event) {
+                    var pos = event.getLocation(); //当前事件发生的光标位置
+                    pos.y -= 120;
+                    var target = event.getCurrentTarget(); //事件绑定的目标
+                    //判断当前事件发生的位置是否在事件目标区域内
+                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+                        // cc.log("Mouse Down");
+                        // console.log(self);
+                        self.onPlayerTap();
+                        return true;
+                    }
+                    return false;
+                },
+                onMouseUp: function (event) {
+                    var pos = event.getLocation();
+                    pos.y -= 120;
+                    var target = event.getCurrentTarget();
+                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
+                         cc.log("Mouse up");
+                        return true;
+                    }
+                    return false;
+                }
+            });
+            cc.eventManager.addListener(listener, tap);*/
         };
 
         this.spritesLayer = root.getChildByName('sprites');
@@ -245,7 +245,7 @@ var BattlePanel = cc.Node.extend({
         this.timeBar.visible = false;
         this.icon.visible = true;
     },
-    enableBossBattleTimeCounter: function (stage) {
+    enableBossBattleTimeCounter:function(stage){
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
@@ -348,11 +348,11 @@ var BattlePanel = cc.Node.extend({
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:" + hero);
+        cc.log("dead:"+hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:" + hero);
+        cc.log("recover:"+ hero);
     },
     onUseSkill: function (i) {
 

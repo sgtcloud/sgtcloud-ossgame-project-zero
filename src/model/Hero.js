@@ -6,6 +6,7 @@ var Hero = function (heroData) {
     var data = dataSource.heros[id];
     var equips = [];
     var skills = [];
+    var icon = data.icon;
 
     for (var i in heroData.equips) {
         var equip = data.equips[i];
@@ -17,21 +18,31 @@ var Hero = function (heroData) {
         var skillLv = heroData.skills[i];
         skills[i] = new Skill(skill, skillLv);
     }
+    this.getIcon = function () {
+        return icon;
+    }
+
+
+    this.getMaxLevel=function(){
+        return data.levelDatas.length;
+    }
+
+
     this.isLocked = function () {
         return lv <= 0;
     };
-    this.isMaxLevel=function(){
-        return lv>=data.levelDatas.length;
+    this.isMaxLevel = function () {
+        return lv >= this.getMaxLevel();
     }
 
-    this.getNextLevelUpgrade=function(){
-        var level=this.getLv();
-        var cost=getLevelData(data,'upgrade',level+1);
+    this.getNextLevelUpgrade = function () {
+        var level = this.getLv();
+        var cost = getLevelData(data, 'upgrade', level + 1);
         return cost;
     };
 
-    this.getLevelData=function(level){
-        return getSpecificLevelData(data,level||lv);
+    this.getLevelData = function (level) {
+        return getSpecificLevelData(data, level || lv);
     }
 
     this.getId = function () {
@@ -72,6 +83,7 @@ var Hero = function (heroData) {
         }
         return val;
     };
+
     this.getAttack = function () {
         if (this.isLocked()) {
             return 0;
@@ -118,7 +130,12 @@ var Hero = function (heroData) {
     /**
      * 英雄升级
      */
-    this.upgrade=function(){
-        lv=lv+1;
+    this.upgrade = function () {
+        lv = lv + 1;
+        for (var i = 0; i < player.heroes.length; i++) {
+            if (player.heroes[i]["id"] === this.getId()) {
+
+            }
+        }
     }
 };

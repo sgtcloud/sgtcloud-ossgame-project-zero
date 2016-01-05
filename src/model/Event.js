@@ -16,19 +16,31 @@ var EVENT = {
     /**
      * 金币位置改变
      */
-    GOLD_POSITION:"GOLD_POSITION",
+    GOLD_POSITION: "GOLD_POSITION",
     /**
      * 金币数量改变
      */
-    GOLD_VALUE_UPDATE:"GOLD_VALUE_UPDATE",
+    GOLD_VALUE_UPDATE: "GOLD_VALUE_UPDATE",
     /**
      * 英雄升级按钮
      */
-    HERO_UPGRADE_BTN:"HERO_UPGRADE_BTN",
+    HERO_UPGRADE_BTN: "HERO_UPGRADE_BTN",
     /**
      * 英雄技能升级按钮
      */
-    HERO_SKILL_UPGRADE_BTN:"HERO_SKILL_UPGRADE_BTN"
+    HERO_SKILL_UPGRADE_BTN: "HERO_SKILL_UPGRADE_BTN",
+    /**
+     * 英雄死亡
+     */
+    HERO_DIE: "HERO_DIE",
+    /**
+     * 英雄复活
+     */
+    HERO_REVIVE: "HERO_REVIVE",
+    /**
+     * 英雄复活倒计时
+     */
+    HERO_REVIVE_COUNTDOWN : "HERO_REVIVE_COUNTDOWN"
 
 };
 

@@ -80,6 +80,7 @@
           <Image Name="star1.png" />
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
+          <Image Name="reviveTime.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -213,6 +214,8 @@
           <Image Name="font16_white.png" />
           <Image Name="font16_yellow.png" />
           <Image Name="revive.png" />
+          <Image Name="sure.png" />
+          <Image Name="font16_yellow_b.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

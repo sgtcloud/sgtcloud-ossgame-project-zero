@@ -83,17 +83,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_text" ActionTag="272926486" Tag="381" IconVisible="False" LeftMargin="23.9524" RightMargin="528.0476" TopMargin="38.7929" BottomMargin="53.2071" FontSize="18" LabelText="复活时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="72.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="59.9524" Y="62.2071" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.0961" Y="0.5655" />
-                <PreSize X="0.1154" Y="0.1636" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="die_time_text" ActionTag="1970479199" Tag="382" IconVisible="False" LeftMargin="40.6893" RightMargin="538.3107" TopMargin="58.7595" BottomMargin="33.2405" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -104,6 +93,16 @@
                 <PreSize X="0.0721" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="die_text" ActionTag="-956947662" Tag="1060" IconVisible="False" LeftMargin="22.8493" RightMargin="527.1506" TopMargin="35.2096" BottomMargin="55.7904" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
+                <Size X="74.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="59.8493" Y="65.2904" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0959" Y="0.5935" />
+                <PreSize X="0.1186" Y="0.1727" />
+                <FileData Type="Normal" Path="heroUI/reviveTime.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="btn" ActionTag="-1735587126" Tag="126" IconVisible="False" LeftMargin="471.0000" RightMargin="13.0000" TopMargin="15.0000" BottomMargin="15.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="80.0000" />
@@ -123,7 +122,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold" ActionTag="1288227877" Tag="128" IconVisible="False" LeftMargin="27.6187" RightMargin="97.3813" TopMargin="11.4025" BottomMargin="53.5975" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="gold" Visible="False" ActionTag="1288227877" Tag="128" IconVisible="False" LeftMargin="27.6187" RightMargin="97.3813" TopMargin="11.4025" BottomMargin="53.5975" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
                     <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint />
                     <Position X="27.6187" Y="53.5975" />
@@ -133,7 +132,7 @@
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buff_text" ActionTag="1375437089" Tag="130" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="buff_text" Visible="False" ActionTag="1375437089" Tag="130" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="49.0000" Y="14.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.7139" Y="41.3231" />
@@ -144,7 +143,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buffNum_text" ActionTag="-2036374006" Tag="131" IconVisible="False" LeftMargin="39.9660" RightMargin="28.0340" TopMargin="51.0862" BottomMargin="10.9138" FontSize="18" LabelText="+9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="buffNum_text" Visible="False" ActionTag="-2036374006" Tag="131" IconVisible="False" LeftMargin="39.9660" RightMargin="28.0340" TopMargin="51.0862" BottomMargin="10.9138" FontSize="18" LabelText="+9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="72.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.9660" Y="19.9138" />
@@ -155,7 +154,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="level_text" ActionTag="196087947" Tag="132" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="level_text" Visible="False" ActionTag="196087947" Tag="132" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="56.0000" Y="16.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.3277" Y="61.6303" />
@@ -166,7 +165,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="lock" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="lock" Visible="False" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                     <Size X="29.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.8404" Y="31.0503" />
@@ -186,7 +185,7 @@
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="-2125118567" Tag="939" IconVisible="False" LeftMargin="46.7176" RightMargin="21.2824" TopMargin="13.3262" BottomMargin="55.6738" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
+                  <AbstractNodeData Name="gold_text" Visible="False" ActionTag="-2125118567" Tag="939" IconVisible="False" LeftMargin="46.7176" RightMargin="21.2824" TopMargin="13.3262" BottomMargin="55.6738" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="72.0000" Y="11.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="82.7176" Y="61.1738" />
