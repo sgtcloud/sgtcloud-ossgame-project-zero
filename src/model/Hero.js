@@ -6,6 +6,7 @@ var Hero = function (heroData) {
     var data = dataSource.heros[id];
     var equips = [];
     var skills = [];
+    var icon = data.icon;
 
     for (var i in heroData.equips) {
         var equip = data.equips[i];
@@ -17,6 +18,25 @@ var Hero = function (heroData) {
         var skillLv = heroData.skills[i];
         skills[i] = new Skill(skill, skillLv);
     }
+    this.getIcon = function () {
+        return icon;
+    }
+
+    this.getCurrentLife = function () {
+        return heroData.life;
+    };
+    this.changeLife = function (val) {
+        heroData.life += val;
+        if (heroData.life < 0) {
+            heroData.life = 0;
+        }
+    }
+
+
+    this.getMaxLevel = function () {
+        return data.levelDatas.length;
+    }
+
     this.refreshProps = function () {
         for (var i in effect_props) {
             this[effect_props[i] + "_value"] = 0;
@@ -31,7 +51,7 @@ var Hero = function (heroData) {
         return lv <= 0;
     };
     this.isMaxLevel = function () {
-        return lv >= data.levelDatas.length;
+        return lv >= this.getMaxLevel();
     }
 
     this.getNextLevelUpgrade = function () {
@@ -94,7 +114,7 @@ var Hero = function (heroData) {
         }
     }
     this.calcEquipEffect = function (propName) {
-        for (var i in skills) {
+        for (var i in equips) {
             this.calcArrayEffect(equips[i].traverseEquipEffects(lv), propName);
         }
     }
@@ -170,6 +190,12 @@ var Hero = function (heroData) {
      */
     this.upgrade = function () {
         lv = lv + 1;
+        for (var i = 0; i < player.heroes.length; i++) {
+            if (player.heroes[i]["id"] === this.getId()) {
+
+            }
+        }
     }
     this.refreshProps();
+
 };

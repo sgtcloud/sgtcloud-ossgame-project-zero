@@ -224,7 +224,7 @@ var BattlePanel = cc.Node.extend({
     ,
     updateEnemyLife: function () {
         var max = this.enemySprites.getMaxLife();
-        var life = this.enemySprites.getLife();
+        var life = parseInt(this.enemySprites.getLife(), 10);
         this.enemyLifeText.ignoreContentAdaptWithSize(true);
         this.enemyLifeText.setString(life);
         this.enemyLifeBar.setPercent(life / max * 100);
@@ -251,7 +251,7 @@ var BattlePanel = cc.Node.extend({
         this.timeBar.visible = false;
         this.icon.visible = true;
     },
-    enableBossBattleTimeCounter:function(stage){
+    enableBossBattleTimeCounter: function (stage) {
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
@@ -285,6 +285,9 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
+            if (stage.isBossBattle()) {
+                enemy.setScale(1.5);
+            }
             this.enemySprites.push(enemy);
             var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
             enemy.setPosition(startPos);

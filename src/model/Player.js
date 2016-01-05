@@ -57,6 +57,7 @@ var PlayerData = {
             }
         }
         this.stageData = new Stage(player.stage);
+        this.refreshGlobeProps();
         this.countOfflineReward();
     },
     updatePlayer: function () {
@@ -188,9 +189,25 @@ var PlayerData = {
     stageData: {},
     globe_life_value: 0,
     globe_life_rate: 0,
-    globe_atk_value: 0,
-    globe_atk_rate: 0,
-    globe_hit_value: 0,
-    globe_hit_rate: 0,
+    globe_attack_value: 0,
+    globe_attack_rate: 0,
+    globe_tap_value: 0,
+    globe_tap_rate: 0,
+    refreshGlobeProps: function () {
+        this.globe_life_value = 0;
+        this.globe_life_rate = 0;
+        this.globe_attack_value = 0;
+        this.globe_attack_rate = 0;
+        this.globe_tap_value = 0;
+        this.globe_tap_rate = 0;
+        for (var i in this.heroes) {
+            this.globe_life_value += this.heroesData[i]["globe_life_value"];
+            this.globe_life_rate += this.heroesData[i]["globe_life_rate"];
+            this.globe_attack_value += this.heroesData[i]["globe_attack_value"];
+            this.globe_attack_rate += this.heroesData[i]["globe_attack_rate"];
+            this.globe_tap_value += this.heroesData[i]["globe_tap_value"];
+            this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
+        }
+    },
 };
 
