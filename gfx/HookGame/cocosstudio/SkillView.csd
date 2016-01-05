@@ -80,15 +80,26 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold" ActionTag="559078843" Tag="77" IconVisible="False" LeftMargin="31.6191" RightMargin="93.3809" TopMargin="11.4025" BottomMargin="53.5975" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="gold" ActionTag="559078843" Tag="77" IconVisible="False" LeftMargin="40.6188" RightMargin="84.3812" TopMargin="11.4025" BottomMargin="53.5975" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
                     <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint />
-                    <Position X="31.6191" Y="53.5975" />
+                    <Position X="40.6188" Y="53.5975" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2259" Y="0.6700" />
+                    <PrePosition X="0.2901" Y="0.6700" />
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold_text" ActionTag="561987777" Tag="78" IconVisible="False" LeftMargin="58.7065" RightMargin="25.2935" TopMargin="10.0695" BottomMargin="53.9305" FontSize="16" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="56.0000" Y="16.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="86.7065" Y="61.9305" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6193" Y="0.7741" />
+                    <PreSize X="0.4000" Y="0.2000" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="buff_text" ActionTag="-600111751" Tag="79" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="49.0000" Y="14.0000" />
@@ -123,7 +134,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="lock" ActionTag="1296461779" Tag="82" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="lock" ActionTag="1296461779" Tag="82" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="29" Scale9Height="32" ctype="ImageViewObjectData">
                     <Size X="29.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.8404" Y="31.0503" />
@@ -133,25 +144,37 @@
                     <PreSize X="0.2071" Y="0.4000" />
                     <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="27.6009" BottomMargin="25.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
-                    <Size X="77.0000" Y="27.0000" />
+                  <AbstractNodeData Name="diamond" ActionTag="415696191" Tag="83" IconVisible="False" LeftMargin="40.6188" RightMargin="84.3812" TopMargin="30.8967" BottomMargin="34.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="77.8000" Y="38.8991" />
+                    <Position X="48.1188" Y="41.6033" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5557" Y="0.4862" />
-                    <PreSize X="0.5500" Y="0.3375" />
-                    <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
+                    <PrePosition X="0.3437" Y="0.5200" />
+                    <PreSize X="0.1071" Y="0.1875" />
+                    <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="72.0000" Y="11.0000" />
+                  <AbstractNodeData Name="diamond_text" ActionTag="634331898" Tag="84" IconVisible="False" LeftMargin="58.7065" RightMargin="25.2935" TopMargin="31.4600" BottomMargin="32.5400" FontSize="16" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="56.0000" Y="16.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="85.5373" Y="61.0975" />
+                    <Position X="86.7065" Y="40.5400" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6110" Y="0.7637" />
-                    <PreSize X="0.5143" Y="0.1375" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                    <PrePosition X="0.6193" Y="0.5067" />
+                    <PreSize X="0.4000" Y="0.2000" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="upMax_text" ActionTag="1480872831" Tag="85" IconVisible="False" LeftMargin="47.0003" RightMargin="32.9997" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="60.0000" Y="20.0000" />
+                    <AnchorPoint />
+                    <Position X="47.0003" Y="30.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="0" />
+                    <PrePosition X="0.3357" Y="0.3750" />
+                    <PreSize X="0.4286" Y="0.2500" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

@@ -47,7 +47,9 @@ var res = {
     amount_gold_json: "res/gold03.json",
     huge_gold_json: "res/gold04.json",
 
-    offline_reward_layer: "res/OfflineRewardLayer.json"
+    tap_effect_json : "res/effect5000.json",
+
+    prompt1_layer_json:"res/Prompt1Layer.json"
 };
 
 

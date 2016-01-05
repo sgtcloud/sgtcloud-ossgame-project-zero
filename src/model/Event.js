@@ -14,6 +14,10 @@ var EVENT = {
      */
     HERO_SKILL_UPGRADE: "SKILL_UPGRADE",
     /**
+     * 英雄装备升级
+     */
+    HERO_EQUIP_UPGRADE: "EQUIP_UPGRADE",
+    /**
      * 金币位置改变
      */
     GOLD_POSITION: "GOLD_POSITION",

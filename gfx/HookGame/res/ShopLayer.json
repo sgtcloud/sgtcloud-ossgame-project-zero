@@ -274,7 +274,7 @@
               "X": 80.0,
               "Y": 20.0
             },
-            "Name": "desc_text",
+            "Name": "Text_10",
             "ctype": "TextObjectData"
           },
           {
@@ -315,7 +315,7 @@
               "X": 610.0,
               "Y": 480.0
             },
-            "Name": "shop_view",
+            "Name": "FileNode_1",
             "ctype": "ProjectNodeObjectData"
           },
           {
@@ -356,12 +356,12 @@
               "X": 320.0,
               "Y": 55.0
             },
-            "Name": "shop_tab",
+            "Name": "FileNode_2",
             "ctype": "ProjectNodeObjectData"
           },
           {
             "FontSize": 22,
-            "ButtonText": "购买",
+            "ButtonText": "确定",
             "TextColor": {
               "R": 65,
               "G": 65,
@@ -386,7 +386,7 @@
             "Scale9OriginX": 12,
             "Scale9OriginY": 11,
             "Scale9Width": 7,
-            "Scale9Height": 25,
+            "Scale9Height": 45,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -404,8 +404,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 490.0839,
-              "Y": 72.2192
+              "X": 493.0837,
+              "Y": 70.7245
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -414,29 +414,29 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7658,
-              "Y": 0.084
+              "X": 0.7704,
+              "Y": 0.0822
             },
             "PreSize": {
               "X": 0.25,
               "Y": 0.0581
             },
-            "LeftMargin": 410.0839,
-            "RightMargin": 69.9161,
-            "TopMargin": 762.7808,
-            "BottomMargin": 47.2192,
+            "LeftMargin": 413.0837,
+            "RightMargin": 66.9163,
+            "TopMargin": 764.2755,
+            "BottomMargin": 45.7245,
             "Tag": 290,
             "ActionTag": -44155061,
             "Size": {
               "X": 160.0,
               "Y": 50.0
             },
-            "Name": "buy_btn",
+            "Name": "btn_Yes",
             "ctype": "ButtonObjectData"
           },
           {
             "FontSize": 22,
-            "ButtonText": "刷新",
+            "ButtonText": "取消",
             "TextColor": {
               "R": 65,
               "G": 65,
@@ -479,8 +479,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 152.21,
-              "Y": 72.2192
+              "X": 155.2098,
+              "Y": 73.7139
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -489,25 +489,24 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2378,
-              "Y": 0.084
+              "X": 0.2425,
+              "Y": 0.0857
             },
             "PreSize": {
               "X": 0.25,
               "Y": 0.0581
             },
-            "LeftMargin": 72.21,
-            "RightMargin": 407.79,
-            "TopMargin": 762.7808,
-            "BottomMargin": 47.2192,
-            "CallBackType": "Touch",
+            "LeftMargin": 75.2098,
+            "RightMargin": 404.7902,
+            "TopMargin": 761.2861,
+            "BottomMargin": 48.7139,
             "Tag": 291,
             "ActionTag": -2018769871,
             "Size": {
               "X": 160.0,
               "Y": 50.0
             },
-            "Name": "refurbish_btn",
+            "Name": "btn_No",
             "ctype": "ButtonObjectData"
           }
         ],

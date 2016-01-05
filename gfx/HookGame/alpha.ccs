@@ -80,7 +80,6 @@
           <Image Name="star1.png" />
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
-          <Image Name="reviveTime.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -205,22 +204,6 @@
         <Folder Name="battleUI">
           <Image Name="boss_text.png" />
           <Image Name="bossTime_bg.png" />
-        </Folder>
-        <Folder Name="buttonUI">
-          <Image Name="MaxLevel.png" />
-          <Image Name="upLevel.png" />
-          <Image Name="buy.png" />
-          <Image Name="recast.png" />
-          <Image Name="font16_white.png" />
-          <Image Name="font16_yellow.png" />
-          <Image Name="revive.png" />
-          <Image Name="sure.png" />
-          <Image Name="font16_yellow_b.png" />
-        </Folder>
-        <Project Name="OfflineRewardLayer.csd" Type="Layer" />
-        <Folder Name="offlineRewardUI">
-          <Image Name="desc.png" />
-          <Image Name="title.png" />
         </Folder>
       </RootFolder>
     </Group>

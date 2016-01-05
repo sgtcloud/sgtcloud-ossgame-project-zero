@@ -5,27 +5,14 @@
     "next": "s100002",
     "bg": "s100001.png",
     "icon": "stage_icon_s100001.png",
+    "offlineReward": 10,
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "offlineReward": [
-      {
-        "value": 12,
-        "unit": "key"
-      },
-      {
-        "value": 11,
-        "unit": "gem"
-      },
-      {
-        "value": 10,
-        "unit": "gold"
-      }
-    ],
     "bonus": [
       {
-        "value": 100,
-        "unit": "gold"
+        "value": "gold",
+        "unit": 100
       }
     ],
     "enemyTypes": [
@@ -63,27 +50,14 @@
     "next": "s100003",
     "bg": "s100002.png",
     "icon": "stage_icon_s100002.png",
+    "offlineReward": 20,
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "offlineReward": [
-      {
-        "value": 22,
-        "unit": "key"
-      },
-      {
-        "value": 21,
-        "unit": "gem"
-      },
-      {
-        "value": 20,
-        "unit": "gold"
-      }
-    ],
     "bonus": [
       {
-        "value": 200,
-        "unit": "gold"
+        "value": "gold",
+        "unit": 200
       }
     ],
     "enemyTypes": [
@@ -121,27 +95,14 @@
     "next": "s100004",
     "bg": "s100003.png",
     "icon": "stage_icon_s100003.png",
+    "offlineReward": 30,
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "offlineReward": [
-      {
-        "value": 32,
-        "unit": "key"
-      },
-      {
-        "value": 31,
-        "unit": "gem"
-      },
-      {
-        "value": 30,
-        "unit": "gold"
-      }
-    ],
     "bonus": [
       {
-        "value": 300,
-        "unit": "gold"
+        "value": "gold",
+        "unit": 300
       }
     ],
     "enemyTypes": [
@@ -179,27 +140,14 @@
     "next": "s100005",
     "bg": "s100004.png",
     "icon": "stage_icon_s100004.png",
+    "offlineReward": 40,
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "offlineReward": [
-      {
-        "value": 42,
-        "unit": "key"
-      },
-      {
-        "value": 41,
-        "unit": "gem"
-      },
-      {
-        "value": 40,
-        "unit": "gold"
-      }
-    ],
     "bonus": [
       {
-        "value": 400,
-        "unit": "gold"
+        "value": "gold",
+        "unit": 400
       }
     ],
     "enemyTypes": [
@@ -237,27 +185,14 @@
     "next": "s100006",
     "bg": "s100005.png",
     "icon": "stage_icon_s100005.png",
+    "offlineReward": 50,
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "offlineReward": [
-      {
-        "value": 52,
-        "unit": "key"
-      },
-      {
-        "value": 51,
-        "unit": "gem"
-      },
-      {
-        "value": 50,
-        "unit": "gold"
-      }
-    ],
     "bonus": [
       {
-        "value": 500,
-        "unit": "gold"
+        "value": "gold",
+        "unit": 500
       }
     ],
     "enemyTypes": [

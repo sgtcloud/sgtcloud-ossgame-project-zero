@@ -38,6 +38,25 @@ var Equip = function (id, lv) {
                 game.onEquipUpdate(hero, this);
                 game.onHeroUpdate(hero);
             }
+        },
+
+        getLevelData: function (level) {
+            return getSpecificLevelData(data, level || lv);
+        },
+        traverseEquipEffects: function (lv) {
+            var equip = this.getLevelData(lv);
+            var effects = [];
+            for (var key in equip) {
+                //狗日的微信浏览器中没有startsWith
+                if (key.indexOf("effect") == 0) {
+                    var effect = equip[key];
+                    effects.push(effect);
+                    effect.index = parseInt(key.replace("effect", ""));
+                }
+            }
+            return effects.sort(function (a, b) {
+                return a.index - b.index;
+            });
         }
     };
 };

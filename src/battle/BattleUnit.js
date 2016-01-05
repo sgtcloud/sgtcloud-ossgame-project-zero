@@ -18,12 +18,12 @@ var BattleUnit = cc.Node.extend({
         this.node.runAction(this.animation);
 
         this.getMaxLife = function () {
-            return data.getLife();
+            return this.data.getLife();
         };
 
         {//data
-            this.attack = data.getAttack();
-            this.life = data.getLife();
+            this.attack = this.data.getAttack();
+            this.life = this.data.getLife();
             //设置生命值
             this.changeLife = function (val) {
                 this.life += val;

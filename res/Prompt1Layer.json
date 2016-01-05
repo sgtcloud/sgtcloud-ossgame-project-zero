@@ -260,7 +260,7 @@
                 "Scale9OriginX": 13,
                 "Scale9OriginY": 13,
                 "Scale9Width": 5,
-                "Scale9Height": 21,
+                "Scale9Height": 41,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -428,8 +428,6 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
