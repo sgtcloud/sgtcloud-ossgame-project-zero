@@ -213,7 +213,7 @@
           <Image Name="font16_white.png" />
           <Image Name="font16_yellow.png" />
         </Folder>
-        <Project Name="OfflineRewarLayer.csd" Type="Layer" />
+        <Project Name="OfflineRewardLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
