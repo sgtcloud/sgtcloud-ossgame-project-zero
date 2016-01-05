@@ -282,26 +282,49 @@
                 "ctype": "TextObjectData"
               },
               {
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 200
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
                 },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 200
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn2.png",
+                  "Plist": ""
                 },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn1.png",
+                  "Plist": ""
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 445.0,
-                  "Y": 15.0
+                  "X": 435.1613,
+                  "Y": 18.0958
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -310,415 +333,236 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7417,
-                  "Y": 0.1364
+                  "X": 0.7253,
+                  "Y": 0.1645
                 },
                 "PreSize": {
                   "X": 0.2333,
                   "Y": 0.7273
                 },
-                "LeftMargin": 445.0,
-                "RightMargin": 15.0,
-                "TopMargin": 15.0,
-                "BottomMargin": 15.0,
-                "Tag": 185,
-                "Children": [
-                  {
-                    "FontSize": 14,
-                    "ButtonText": "",
-                    "TextColor": {
-                      "R": 65,
-                      "G": 65,
-                      "B": 70
-                    },
-                    "DisabledFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn2.png",
-                      "Plist": ""
-                    },
-                    "PressedFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "NormalFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 11,
-                    "Scale9Width": 110,
-                    "Scale9Height": 58,
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "TouchEnable": true,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0001,
-                      "Y": 0.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 1.0,
-                      "Y": 1.0
-                    },
-                    "LeftMargin": 0.0001,
-                    "RightMargin": -0.0001,
-                    "Tag": 186,
-                    "ActionTag": -452043334,
-                    "Size": {
-                      "X": 140.0,
-                      "Y": 80.0
-                    },
-                    "Name": "btn",
-                    "ctype": "ButtonObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/relic.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 47.8048,
-                      "Y": 46.9201
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.3415,
-                      "Y": 0.5865
-                    },
-                    "PreSize": {
-                      "X": 0.1071,
-                      "Y": 0.1875
-                    },
-                    "LeftMargin": 47.8048,
-                    "RightMargin": 77.1952,
-                    "TopMargin": 18.0799,
-                    "BottomMargin": 46.9201,
-                    "Tag": 187,
-                    "ActionTag": 1401688138,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "relic_icon",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "9999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 84.0315,
-                      "Y": 54.9198
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.6002,
-                      "Y": 0.6865
-                    },
-                    "PreSize": {
-                      "X": 0.2286,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 68.0315,
-                    "RightMargin": 39.9685,
-                    "TopMargin": 17.0802,
-                    "BottomMargin": 46.9198,
-                    "Tag": 188,
-                    "ActionTag": -1175997739,
-                    "Size": {
-                      "X": 32.0,
-                      "Y": 16.0
-                    },
-                    "Name": "relic_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "购买",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 60.0,
-                      "Y": 22.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.4286,
-                      "Y": 0.275
-                    },
-                    "PreSize": {
-                      "X": 0.2286,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 60.0,
-                    "RightMargin": 48.0,
-                    "TopMargin": 42.0,
-                    "BottomMargin": 22.0,
-                    "Tag": 189,
-                    "ActionTag": 1402177335,
-                    "Size": {
-                      "X": 32.0,
-                      "Y": 16.0
-                    },
-                    "Name": "buy_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "升级",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 60.0,
-                      "Y": 22.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.4286,
-                      "Y": 0.275
-                    },
-                    "PreSize": {
-                      "X": 0.2286,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 60.0,
-                    "RightMargin": 48.0,
-                    "TopMargin": 42.0,
-                    "BottomMargin": 22.0,
-                    "Tag": 190,
-                    "ActionTag": 1702573368,
-                    "Size": {
-                      "X": 32.0,
-                      "Y": 16.0
-                    },
-                    "Name": "up_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 20,
-                    "LabelText": "已满级",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 40.0,
-                      "Y": 30.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2857,
-                      "Y": 0.375
-                    },
-                    "PreSize": {
-                      "X": 0.4286,
-                      "Y": 0.25
-                    },
-                    "LeftMargin": 40.0,
-                    "RightMargin": 40.0,
-                    "TopMargin": 30.0,
-                    "BottomMargin": 30.0,
-                    "Tag": 191,
-                    "ActionTag": 420411841,
-                    "Size": {
-                      "X": 60.0,
-                      "Y": 20.0
-                    },
-                    "Name": "upMax_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "重铸",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 60.0,
-                      "Y": 22.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.4286,
-                      "Y": 0.275
-                    },
-                    "PreSize": {
-                      "X": 0.2286,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 60.0,
-                    "RightMargin": 48.0,
-                    "TopMargin": 42.0,
-                    "BottomMargin": 22.0,
-                    "Tag": 192,
-                    "ActionTag": 1536441466,
-                    "Size": {
-                      "X": 32.0,
-                      "Y": 16.0
-                    },
-                    "Name": "re_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "heroUI/diamond.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 47.8,
-                      "Y": 47.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.3414,
-                      "Y": 0.5875
-                    },
-                    "PreSize": {
-                      "X": 0.1071,
-                      "Y": 0.1875
-                    },
-                    "LeftMargin": 47.8,
-                    "RightMargin": 77.2,
-                    "TopMargin": 18.0,
-                    "BottomMargin": 47.0,
-                    "Tag": 193,
-                    "ActionTag": -692754170,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "diamond_icon",
-                    "ctype": "ImageViewObjectData"
-                  }
-                ],
-                "ActionTag": 688826915,
+                "LeftMargin": 435.1613,
+                "RightMargin": 24.8386,
+                "TopMargin": 11.9042,
+                "BottomMargin": 18.0958,
+                "Tag": 640,
+                "ActionTag": 1763863329,
                 "Size": {
                   "X": 140.0,
                   "Y": 80.0
                 },
-                "Name": "btn",
-                "ctype": "PanelObjectData"
+                "Name": "up_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 11,
+                "LabelText": "56478",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 522.8138,
+                  "Y": 72.295
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8714,
+                  "Y": 0.6572
+                },
+                "PreSize": {
+                  "X": 0.1,
+                  "Y": 0.1
+                },
+                "LeftMargin": 492.8138,
+                "RightMargin": 47.1862,
+                "TopMargin": 32.205,
+                "BottomMargin": 66.795,
+                "Tag": 647,
+                "ActionTag": 1268658917,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 11.0
+                },
+                "Name": "text_yellow",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/upLevel.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 53,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 512.1755,
+                  "Y": 48.0701
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8536,
+                  "Y": 0.437
+                },
+                "PreSize": {
+                  "X": 0.0883,
+                  "Y": 0.2273
+                },
+                "LeftMargin": 485.6755,
+                "RightMargin": 61.3245,
+                "TopMargin": 49.4299,
+                "BottomMargin": 35.5701,
+                "Tag": 644,
+                "ActionTag": 423381127,
+                "Size": {
+                  "X": 53.0,
+                  "Y": 25.0
+                },
+                "Name": "up_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/MaxLevel.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 77,
+                "Scale9Height": 27,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 508.1611,
+                  "Y": 58.0959
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8469,
+                  "Y": 0.5281
+                },
+                "PreSize": {
+                  "X": 0.1283,
+                  "Y": 0.2455
+                },
+                "LeftMargin": 469.6611,
+                "RightMargin": 53.3389,
+                "TopMargin": 38.4041,
+                "BottomMargin": 44.5959,
+                "Tag": 643,
+                "ActionTag": -50808868,
+                "Size": {
+                  "X": 77.0,
+                  "Y": 27.0
+                },
+                "Name": "upMax_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 473.9607,
+                  "Y": 65.0957
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7899,
+                  "Y": 0.5918
+                },
+                "PreSize": {
+                  "X": 0.025,
+                  "Y": 0.1364
+                },
+                "LeftMargin": 473.9607,
+                "RightMargin": 111.0393,
+                "TopMargin": 29.9043,
+                "BottomMargin": 65.0957,
+                "Tag": 642,
+                "ActionTag": -1118901130,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "diamond_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/relic.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 473.9656,
+                  "Y": 65.0155
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7899,
+                  "Y": 0.5911
+                },
+                "PreSize": {
+                  "X": 0.025,
+                  "Y": 0.1364
+                },
+                "LeftMargin": 473.9656,
+                "RightMargin": 111.0344,
+                "TopMargin": 29.9845,
+                "BottomMargin": 65.0155,
+                "Tag": 641,
+                "ActionTag": 589535493,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "relic_icon",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -810919168,
@@ -738,6 +582,9 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/font16_yellow.png",
+        "buttonUI/MaxLevel.png",
+        "buttonUI/upLevel.png",
         "equipUI/btn1.png",
         "equipUI/btn2.png",
         "equipUI/equip_bg.png",
