@@ -49,7 +49,7 @@
                 <PreSize X="0.8578" Y="0.5600" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" LeftMargin="165.2206" RightMargin="164.7794" TopMargin="326.6971" BottomMargin="23.3029" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" LeftMargin="165.2206" RightMargin="164.7794" TopMargin="326.6971" BottomMargin="23.3029" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="225.2206" Y="48.3029" />
@@ -86,7 +86,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="text1" ActionTag="-1256465214" Tag="51" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="7.0000" BottomMargin="85.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

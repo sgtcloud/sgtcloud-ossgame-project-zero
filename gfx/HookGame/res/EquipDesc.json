@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -192,8 +194,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 126.4626,
-                  "Y": 513.5155
+                  "X": 128.4624,
+                  "Y": 513.5154
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -202,17 +204,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2749,
+                  "X": 0.2793,
                   "Y": 0.8854
                 },
                 "PreSize": {
                   "X": 0.2609,
                   "Y": 0.0345
                 },
-                "LeftMargin": 126.4626,
-                "RightMargin": 213.5374,
-                "TopMargin": 46.4845,
-                "BottomMargin": 513.5155,
+                "LeftMargin": 128.4624,
+                "RightMargin": 211.5376,
+                "TopMargin": 46.4846,
+                "BottomMargin": 513.5154,
                 "Tag": 865,
                 "ActionTag": 1831588686,
                 "Size": {
@@ -399,47 +401,6 @@
                 },
                 "Name": "text_bg2",
                 "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "EquipBtn.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 154.3209,
-                  "Y": 34.4203
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3355,
-                  "Y": 0.0593
-                },
-                "PreSize": {
-                  "X": 0.3043,
-                  "Y": 0.1379
-                },
-                "LeftMargin": 154.3209,
-                "RightMargin": 165.6791,
-                "TopMargin": 465.5797,
-                "BottomMargin": 34.4203,
-                "Tag": 959,
-                "ActionTag": 225886670,
-                "Size": {
-                  "X": 140.0,
-                  "Y": 80.0
-                },
-                "Name": "recast_btn",
-                "ctype": "ProjectNodeObjectData"
               },
               {
                 "FontSize": 20,
@@ -810,6 +771,246 @@
                 },
                 "Name": "close_btn",
                 "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn2.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn1.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/btn1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 144.7657,
+                  "Y": 30.1593
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3147,
+                  "Y": 0.052
+                },
+                "PreSize": {
+                  "X": 0.3043,
+                  "Y": 0.1379
+                },
+                "LeftMargin": 144.7657,
+                "RightMargin": 175.2343,
+                "TopMargin": 469.8407,
+                "BottomMargin": 30.1593,
+                "Tag": 674,
+                "ActionTag": -1243750762,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "re_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 11,
+                "LabelText": "56478",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 232.4196,
+                  "Y": 84.3589
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5053,
+                  "Y": 0.1454
+                },
+                "PreSize": {
+                  "X": 0.1304,
+                  "Y": 0.019
+                },
+                "LeftMargin": 202.4196,
+                "RightMargin": 197.5804,
+                "TopMargin": 490.1411,
+                "BottomMargin": 78.8589,
+                "Tag": 681,
+                "ActionTag": -1168949678,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 11.0
+                },
+                "Name": "text_yellow",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/recast.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 53,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 221.7802,
+                  "Y": 60.1337
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4821,
+                  "Y": 0.1037
+                },
+                "PreSize": {
+                  "X": 0.1152,
+                  "Y": 0.0431
+                },
+                "LeftMargin": 195.2802,
+                "RightMargin": 211.7198,
+                "TopMargin": 507.3663,
+                "BottomMargin": 47.6337,
+                "Tag": 680,
+                "ActionTag": 989849113,
+                "Size": {
+                  "X": 53.0,
+                  "Y": 25.0
+                },
+                "Name": "re_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 183.5647,
+                  "Y": 77.1594
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3991,
+                  "Y": 0.133
+                },
+                "PreSize": {
+                  "X": 0.0326,
+                  "Y": 0.0259
+                },
+                "LeftMargin": 183.5647,
+                "RightMargin": 261.4353,
+                "TopMargin": 487.8405,
+                "BottomMargin": 77.1594,
+                "Tag": 676,
+                "ActionTag": 1053639457,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "diamond_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/relic.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 183.5697,
+                  "Y": 77.0794
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3991,
+                  "Y": 0.1329
+                },
+                "PreSize": {
+                  "X": 0.0326,
+                  "Y": 0.0259
+                },
+                "LeftMargin": 183.5697,
+                "RightMargin": 261.4303,
+                "TopMargin": 487.9206,
+                "BottomMargin": 77.0794,
+                "Tag": 675,
+                "ActionTag": -661548143,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "relic_icon",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -1464381757,
@@ -829,12 +1030,16 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/font16_yellow.png",
+        "buttonUI/recast.png",
         "CloseBtn.json",
-        "EquipBtn.json",
+        "equipUI/btn1.png",
+        "equipUI/btn2.png",
         "equipUI/equip_icon.png",
         "equipUI/relic.png",
         "heroDescUI/text_bg.png",
         "heroDescUI/text_bg2.png",
+        "heroUI/diamond.png",
         "ui/bg_03.png"
       ],
       "ctype": "GameFileData"

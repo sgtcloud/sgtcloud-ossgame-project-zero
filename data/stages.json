@@ -15,7 +15,7 @@
       },
       {
         "value": 11,
-        "unit": "gew"
+        "unit": "gem"
       },
       {
         "value": 10,
@@ -73,10 +73,10 @@
       },
       {
         "value": 21,
-        "unit": "gew"
+        "unit": "gem"
       },
       {
-        "value": 10,
+        "value": 20,
         "unit": "gold"
       }
     ],
@@ -131,10 +131,10 @@
       },
       {
         "value": 31,
-        "unit": "gew"
+        "unit": "gem"
       },
       {
-        "value": 10,
+        "value": 30,
         "unit": "gold"
       }
     ],
@@ -189,10 +189,10 @@
       },
       {
         "value": 41,
-        "unit": "gew"
+        "unit": "gem"
       },
       {
-        "value": 10,
+        "value": 40,
         "unit": "gold"
       }
     ],
@@ -247,10 +247,10 @@
       },
       {
         "value": 51,
-        "unit": "gew"
+        "unit": "gem"
       },
       {
-        "value": 10,
+        "value": 50,
         "unit": "gold"
       }
     ],

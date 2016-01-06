@@ -1,0 +1,863 @@
+{"s10101": {
+  "name" : "英雄1的技能1",
+  "desc" : "说明",
+  "icon" : "s10101.png",
+  "unlockLevel" : 2,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 76,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 51,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 34,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 23,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 15,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 10,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10102": {
+  "name" : "英雄1的技能2",
+  "desc" : "说明",
+  "icon" : "s10102.png",
+  "unlockLevel" : 5,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 76,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 51,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 34,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 23,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 15,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 10,
+      "type" : "tap_rate"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+},"s10201":  {
+  "name" : "英雄2的技能1",
+  "desc" : "说明",
+  "icon" : "s10201.png",
+  "unlockLevel" : 2,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 38,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 25,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 17,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 11,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 8,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 5,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10202": {
+  "name" : "英雄2的技能2",
+  "desc" : "说明",
+  "icon" : "s10202.png",
+  "unlockLevel" : 5,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 38,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 25,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 17,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 11,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 8,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_rate"
+    },
+    "effect2" : {
+      "value" : 5,
+      "type" : "speed_rate"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10301": {
+  "name" : "英雄3的技能1",
+  "desc" : "说明",
+  "icon" : "s10301.png",
+  "unlockLevel" : 2,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 759,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -76,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 506,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -51,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 338,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -34,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 225,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -23,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 150,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -15,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 100,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -10,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10302": {
+  "name" : "英雄3的技能2",
+  "desc" : "说明",
+  "icon" : "s10302.png",
+  "unlockLevel" : 5,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 759,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -76,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 506,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -51,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 338,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -34,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 225,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -23,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 150,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -15,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 100,
+      "type" : "life_value"
+    },
+    "effect2" : {
+      "value" : -10,
+      "type" : "boss_life"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+},"s10401":  {
+  "name" : "英雄4的技能1",
+  "desc" : "说明",
+  "icon" : "s10401.png",
+  "unlockLevel" : 2,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 759,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 76,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 506,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 51,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 338,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 34,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 225,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 23,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 150,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 15,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 100,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 10,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10402": {
+  "name" : "英雄4的技能2",
+  "desc" : "说明",
+  "icon" : "s10402.png",
+  "unlockLevel" : 5,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 759,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 76,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 506,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 51,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 338,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 34,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 225,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 23,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 150,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 15,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 100,
+      "type" : "life_rate"
+    },
+    "effect2" : {
+      "value" : 10,
+      "type" : "boss_time"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+}, "s10501": {
+  "name" : "英雄5的技能1",
+  "desc" : "说明",
+  "icon" : "s10501.png",
+  "unlockLevel" : 2,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+},"s10502":  {
+  "name" : "英雄5的技能2",
+  "desc" : "说明",
+  "icon" : "s10502.png",
+  "unlockLevel" : 5,
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 6,
+    "effect1" : {
+      "value" : 76,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 320,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 51,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 34,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 23,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 15,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 10,
+      "type" : "tap_value"
+    },
+    "upgrade" : {
+      "value" : 10,
+      "unit" : "gold"
+    }
+  } ]
+} }
