@@ -70,10 +70,10 @@
                     <PrePosition />
                     <PreSize X="0.0000" Y="0.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="hero6" ActionTag="1873157497" Tag="138" IconVisible="True" LeftMargin="53.9994" RightMargin="-53.9994" TopMargin="-347.9999" BottomMargin="347.9999" ctype="SingleNodeObjectData">
+                  <AbstractNodeData Name="hero6" ActionTag="1873157497" Tag="138" IconVisible="True" LeftMargin="51.9994" RightMargin="-51.9994" TopMargin="-347.9999" BottomMargin="347.9999" ctype="SingleNodeObjectData">
                     <Size X="0.0000" Y="0.0000" />
                     <AnchorPoint />
-                    <Position X="53.9994" Y="347.9999" />
+                    <Position X="51.9994" Y="347.9999" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />

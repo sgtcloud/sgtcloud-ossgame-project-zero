@@ -25,5 +25,29 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="OfflineRewardLayer.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="MoneyTreeView.csd" />
+          <FilePathData Path="Prompt1Layer.csd" />
+          <FilePathData Path="Prompt2Layer.csd" />
+          <FilePathData Path="RankLayer.csd" />
+          <FilePathData Path="RankView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopTab.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="Skillicon.csd" />
+          <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="BattleLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
