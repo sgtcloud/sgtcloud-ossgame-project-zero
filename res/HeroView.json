@@ -275,73 +275,22 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "英雄DPS",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "69568844",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_white.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 350.0,
-                  "Y": 75.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5609,
-                  "Y": 0.6818
-                },
-                "PreSize": {
-                  "X": 0.1122,
-                  "Y": 0.1818
-                },
-                "LeftMargin": 350.0,
-                "RightMargin": 204.0,
-                "TopMargin": 15.0,
-                "BottomMargin": 75.0,
-                "Tag": 261,
-                "ActionTag": -1050725025,
-                "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
-                },
-                "Name": "dps",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 350.0482,
-                  "Y": 34.6461
+                  "X": 384.7208,
+                  "Y": 44.0227
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -350,77 +299,68 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.561,
-                  "Y": 0.315
+                  "X": 0.6165,
+                  "Y": 0.4002
                 },
                 "PreSize": {
-                  "X": 0.1122,
-                  "Y": 0.1818
+                  "X": 0.1538,
+                  "Y": 0.1182
                 },
-                "LeftMargin": 350.0482,
-                "RightMargin": 203.9518,
-                "TopMargin": 55.3539,
-                "BottomMargin": 34.6461,
-                "Tag": 262,
-                "ActionTag": -1086697595,
+                "LeftMargin": 336.7208,
+                "RightMargin": 191.2792,
+                "TopMargin": 59.4773,
+                "BottomMargin": 37.5227,
+                "Tag": 473,
+                "ActionTag": 1401349662,
                 "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
+                  "X": 96.0,
+                  "Y": 13.0
                 },
                 "Name": "dps_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextAtlasObjectData"
               },
               {
-                "FontSize": 18,
-                "LabelText": "复活时间",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/heroDPS.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 104,
+                "Scale9Height": 25,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 59.9524,
-                  "Y": 62.2071
+                  "X": 383.5454,
+                  "Y": 88.848
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0961,
-                  "Y": 0.5655
+                  "X": 0.6147,
+                  "Y": 0.8077
                 },
                 "PreSize": {
-                  "X": 0.1154,
-                  "Y": 0.1636
+                  "X": 0.1667,
+                  "Y": 0.2273
                 },
-                "LeftMargin": 23.9524,
-                "RightMargin": 528.0476,
-                "TopMargin": 38.7929,
-                "BottomMargin": 53.2071,
-                "Tag": 381,
-                "ActionTag": 272926486,
+                "LeftMargin": 331.5454,
+                "RightMargin": 188.4546,
+                "TopMargin": 8.652,
+                "BottomMargin": 76.348,
+                "Tag": 621,
+                "ActionTag": -788044653,
                 "Size": {
-                  "X": 72.0,
-                  "Y": 18.0
+                  "X": 104.0,
+                  "Y": 25.0
                 },
-                "Name": "die_text",
-                "ctype": "TextObjectData"
+                "Name": "dps",
+                "ctype": "ImageViewObjectData"
               },
               {
                 "FontSize": 18,
@@ -473,6 +413,49 @@
                 },
                 "Name": "die_time_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/reviveTime.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 74,
+                "Scale9Height": 19,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.8493,
+                  "Y": 65.2904
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0959,
+                  "Y": 0.5935
+                },
+                "PreSize": {
+                  "X": 0.1186,
+                  "Y": 0.1727
+                },
+                "LeftMargin": 22.8493,
+                "RightMargin": 527.1507,
+                "TopMargin": 35.2096,
+                "BottomMargin": 55.7904,
+                "Tag": 1060,
+                "ActionTag": -956947662,
+                "Size": {
+                  "X": 74.0,
+                  "Y": 19.0
+                },
+                "Name": "die_text",
+                "ctype": "ImageViewObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -598,7 +581,7 @@
                     "Scale9Height": 30,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 40.6188,
+                      "X": 27.6187,
                       "Y": 53.5975
                     },
                     "Scale": {
@@ -608,15 +591,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2901,
+                      "X": 0.1973,
                       "Y": 0.67
                     },
                     "PreSize": {
                       "X": 0.1071,
                       "Y": 0.1875
                     },
-                    "LeftMargin": 40.6188,
-                    "RightMargin": 84.3812,
+                    "LeftMargin": 27.6187,
+                    "RightMargin": 97.3813,
                     "TopMargin": 11.4025,
                     "BottomMargin": 53.5975,
                     "Tag": 128,
@@ -627,55 +610,6 @@
                     },
                     "Name": "gold",
                     "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 86.7065,
-                      "Y": 61.9305
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.6193,
-                      "Y": 0.7741
-                    },
-                    "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 58.7065,
-                    "RightMargin": 25.2935,
-                    "TopMargin": 10.0695,
-                    "BottomMargin": 53.9305,
-                    "Tag": 129,
-                    "ActionTag": -505399495,
-                    "Size": {
-                      "X": 56.0,
-                      "Y": 16.0
-                    },
-                    "Name": "gold_text",
-                    "ctype": "TextObjectData"
                   },
                   {
                     "FontSize": 14,
@@ -724,58 +658,6 @@
                       "Y": 14.0
                     },
                     "Name": "buff_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 18,
-                    "LabelText": "+9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 75.966,
-                      "Y": 19.9138
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "R": 38,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5426,
-                      "Y": 0.2489
-                    },
-                    "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.225
-                    },
-                    "LeftMargin": 39.966,
-                    "RightMargin": 28.034,
-                    "TopMargin": 51.0862,
-                    "BottomMargin": 10.9138,
-                    "Tag": 131,
-                    "ActionTag": -2036374006,
-                    "Size": {
-                      "X": 72.0,
-                      "Y": 18.0
-                    },
-                    "Name": "buffNum_text",
                     "ctype": "TextObjectData"
                   },
                   {
@@ -874,6 +756,137 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
+                    "CharWidth": 12,
+                    "CharHeight": 13,
+                    "LabelText": "995564",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font15_green.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 85.0828,
+                      "Y": 19.4145
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6077,
+                      "Y": 0.2427
+                    },
+                    "PreSize": {
+                      "X": 0.5143,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 49.0828,
+                    "RightMargin": 18.9172,
+                    "TopMargin": 54.0855,
+                    "BottomMargin": 12.9145,
+                    "Tag": 738,
+                    "ActionTag": -1026952359,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 13.0
+                    },
+                    "Name": "buffNum_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/add.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 40.0679,
+                      "Y": 19.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2862,
+                      "Y": 0.2453
+                    },
+                    "PreSize": {
+                      "X": 0.0857,
+                      "Y": 0.15
+                    },
+                    "LeftMargin": 34.0679,
+                    "RightMargin": 93.9321,
+                    "TopMargin": 54.3724,
+                    "BottomMargin": 13.6276,
+                    "Tag": 737,
+                    "ActionTag": 152769671,
+                    "Size": {
+                      "X": 12.0,
+                      "Y": 12.0
+                    },
+                    "Name": "add",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/cut.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 41.0678,
+                      "Y": 19.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2933,
+                      "Y": 0.2453
+                    },
+                    "PreSize": {
+                      "X": 0.0929,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 34.5678,
+                    "RightMargin": 92.4322,
+                    "TopMargin": 53.8724,
+                    "BottomMargin": 13.1276,
+                    "Tag": 736,
+                    "ActionTag": 1166155986,
+                    "Size": {
+                      "X": 13.0,
+                      "Y": 13.0
+                    },
+                    "Name": "cut",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
                     "FileData": {
                       "Type": "Normal",
                       "Path": "heroUI/diamond.png",
@@ -886,8 +899,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 48.1188,
-                      "Y": 41.6033
+                      "X": 35.1188,
+                      "Y": 27.6033
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -896,17 +909,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3437,
-                      "Y": 0.52
+                      "X": 0.2508,
+                      "Y": 0.345
                     },
                     "PreSize": {
                       "X": 0.1071,
                       "Y": 0.1875
                     },
-                    "LeftMargin": 40.6188,
-                    "RightMargin": 84.3812,
-                    "TopMargin": 30.8967,
-                    "BottomMargin": 34.1033,
+                    "LeftMargin": 27.6188,
+                    "RightMargin": 97.3812,
+                    "TopMargin": 44.8967,
+                    "BottomMargin": 20.1033,
                     "Tag": 134,
                     "ActionTag": 416765003,
                     "Size": {
@@ -917,26 +930,22 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 16,
-                    "LabelText": "9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "999999",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_yellow.png",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 86.7065,
-                      "Y": 40.54
+                      "X": 82.7176,
+                      "Y": 61.1738
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -945,73 +954,158 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6193,
-                      "Y": 0.5067
+                      "X": 0.5908,
+                      "Y": 0.7647
                     },
                     "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.2
+                      "X": 0.5143,
+                      "Y": 0.1375
                     },
-                    "LeftMargin": 58.7065,
-                    "RightMargin": 25.2935,
-                    "TopMargin": 31.46,
-                    "BottomMargin": 32.54,
-                    "Tag": 135,
-                    "ActionTag": 1156905717,
+                    "LeftMargin": 46.7176,
+                    "RightMargin": 21.2824,
+                    "TopMargin": 13.3262,
+                    "BottomMargin": 55.6738,
+                    "Tag": 939,
+                    "ActionTag": -2125118567,
                     "Size": {
-                      "X": 56.0,
-                      "Y": 16.0
+                      "X": 72.0,
+                      "Y": 11.0
                     },
-                    "Name": "diamond_text",
-                    "ctype": "TextObjectData"
+                    "Name": "gold_text",
+                    "ctype": "TextAtlasObjectData"
                   },
                   {
-                    "FontSize": 20,
-                    "LabelText": "已满级",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "999999",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_yellow.png",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
                     },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
                     "Position": {
-                      "X": 47.0003,
-                      "Y": 30.0
+                      "X": 82.7176,
+                      "Y": 27.1018
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {
-                      "B": 0
-                    },
+                    "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3357,
-                      "Y": 0.375
+                      "X": 0.5908,
+                      "Y": 0.3388
                     },
                     "PreSize": {
-                      "X": 0.4286,
-                      "Y": 0.25
+                      "X": 0.5143,
+                      "Y": 0.1375
                     },
-                    "LeftMargin": 47.0003,
-                    "RightMargin": 32.9997,
-                    "TopMargin": 30.0,
-                    "BottomMargin": 30.0,
-                    "Tag": 136,
-                    "ActionTag": 297925331,
+                    "LeftMargin": 46.7176,
+                    "RightMargin": 21.2824,
+                    "TopMargin": 47.3982,
+                    "BottomMargin": 21.6018,
+                    "Tag": 940,
+                    "ActionTag": 553984720,
                     "Size": {
-                      "X": 60.0,
-                      "Y": 20.0
+                      "X": 72.0,
+                      "Y": 11.0
+                    },
+                    "Name": "diamond_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/MaxLevel.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 77,
+                    "Scale9Height": 27,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 75.7582,
+                      "Y": 40.3042
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5411,
+                      "Y": 0.5038
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3375
+                    },
+                    "LeftMargin": 37.2582,
+                    "RightMargin": 25.7418,
+                    "TopMargin": 26.1958,
+                    "BottomMargin": 26.8042,
+                    "CallBackType": "Touch",
+                    "Tag": 941,
+                    "ActionTag": -410358020,
+                    "Size": {
+                      "X": 77.0,
+                      "Y": 27.0
                     },
                     "Name": "upMax_text",
-                    "ctype": "TextObjectData"
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/revive.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 52,
+                    "Scale9Height": 27,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 78.2324,
+                      "Y": 50.3764
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5588,
+                      "Y": 0.6297
+                    },
+                    "PreSize": {
+                      "X": 0.3714,
+                      "Y": 0.3375
+                    },
+                    "LeftMargin": 52.2324,
+                    "RightMargin": 35.7676,
+                    "TopMargin": 16.1236,
+                    "BottomMargin": 36.8764,
+                    "CallBackType": "Touch",
+                    "Tag": 942,
+                    "ActionTag": -2018695444,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 27.0
+                    },
+                    "Name": "revive_text",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": -1735587126,
@@ -1684,12 +1778,21 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/add.png",
+        "buttonUI/cut.png",
+        "buttonUI/font15_green.png",
+        "buttonUI/font16_white.png",
+        "buttonUI/font16_yellow.png",
+        "buttonUI/MaxLevel.png",
+        "buttonUI/revive.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png",
         "heroUI/gold.png",
         "heroUI/hero_bg.png",
+        "heroUI/heroDPS.png",
         "heroUI/lock.png",
+        "heroUI/reviveTime.png",
         "heroUI/star1.png",
         "heroUI/star2.png",
         "heroUI/text_bg.png",

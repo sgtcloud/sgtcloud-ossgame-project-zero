@@ -28,6 +28,7 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
+<<<<<<< HEAD
           <FilePathData Path="SkillView.csd" />
           <FilePathData Path="ShopIconLayer.csd" />
           <FilePathData Path="ShopLayer.csd" />
@@ -47,6 +48,13 @@
           <FilePathData Path="EquipHeroView.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="EquipHeroView.csd" />
+=======
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="SkillView.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="SkillView.csd" />
+>>>>>>> origin/master
       </Value>
     </Item>
   </Properties>
