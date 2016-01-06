@@ -237,13 +237,25 @@ var HeroListMenu = BattleMenu.extend({
             return amount < upgradeLevelData['value'];
         }
 
+        function setFont(target) {
+            if (target instanceof Array) {
+                for (var i in target) {
+                    target[i].setFontName("微软雅黑");
+                    target[i].setColor(cc.color(0, 0, 0))
+                }
+            }
+            else {
+                target.setFontName("微软雅黑");
+                target.setColor(cc.color(0, 0, 0))
+            }
+        }
 
         function buildHeroView(hero) {
             var root = heroTemp.clone();
-            var name = root.getChildByName('heroName_text');
             var icon = root.getChildByName('hero_icon');
             var lv = root.getChildByName('level_text');
-            var dps = root.getChildByName('dps_text');
+            var dps_text = root.getChildByName('dps_text');
+            var dps = root.getChildByName('dps');
             var heroName_text = root.getChildByName("heroName_text");
             var btnlayer = root.getChildByName('btn')
             var die_text = root.getChildByName('die_text')
@@ -259,17 +271,13 @@ var HeroListMenu = BattleMenu.extend({
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
             var revive_text = btnlayer.getChildByName('revive_text');
-            var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
-            var diamond = btnlayer.getChildByName('diamond');//钻石图标
             diamond_text.setVisible(false);
             diamond.setVisible(false);
-
-
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             heroName_text.setString(hero.getName());
-            name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
-            dps.setString(hero.getAttack());
+            dps_text.setString(hero.getAttack());
+            setFont([heroName_text, lv, dps, dps_text]);
             if (hero.getLife() > 0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
@@ -299,7 +307,6 @@ var HeroListMenu = BattleMenu.extend({
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
                 revive_text.setVisible(false);
-                //hero.getSkills()
             });
 
 
@@ -316,7 +323,7 @@ var HeroListMenu = BattleMenu.extend({
                 eventData.cost = cost;
                 hero.upgrade();
                 lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
-                dps.setString(hero.getAttack());
+                dps_text.setString(hero.getAttack());
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 if (hero.isMaxLevel()) {
                     event.setEnabled(false);
@@ -337,43 +344,49 @@ var HeroListMenu = BattleMenu.extend({
                 }
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
-            for (var i = 0; i < 5; i++) {
-                //var star = stars.getChildByName('icon0');
-                //if(i<hero.getStar()){
-                //  star.setVisible(true);
-                //}else{
-                //  star.setVisible(false);
-                //}
-            }
 
             return root;
         }
 
-        function initSkillView(skill, gold_text, buffNum_text) {
+        function showAddOrCut(add, cut, showEffect) {
+            if (showEffect > 0) {
+                add.isVisible() || add.setVisible(true);
+                cut.isVisible() && cut.setVisible(false);
+            } else {
+                add.isVisible() && add.setVisible(false);
+                cut.isVisible() || cut.setVisible(true);
+            }
+        }
+
+        function initSkillView(skill, gold_text, buffNum_text, add, cut) {
             var effects = skill.traverseSkillEffects();
             var nextlevelData = skill.getLevelData(skill.getLv() + 1);
             var nextAmount = nextlevelData['upgrade']['value'];
             var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
             gold_text.setString(nextAmount);
             var showEffect = nextEffects[0].value - effects[0].value;
-            buffNum_text.setString((showEffect > 0 ? '+' : '-') + Math.abs(showEffect));
+            buffNum_text.ignoreContentAdaptWithSize(true);
+            showAddOrCut(add, cut, showEffect);
+            buffNum_text.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(showEffect));
         }
+
         //根据模板生成技能效果描述
-        function buildSkillDesc(skill,levelData){
-            var effects=skill.traverseSkillEffects();
-            var effectsObj={};
-            for(var i in effects){
-                var map=SkillEffectMappings[effects[i]['type']];
-                var alas=map['name'];
-               // var obj= effectsObj[effects[i]['name']]={};
-                var value=effects[i]['value'];
-                effectsObj[effects[i]['name']]={}
-                effectsObj[effects[i]['name']]['name']=alas;
-                effectsObj[effects[i]['name']]['value']=map['type']==='rate'?(value+'%'):value;
+        function buildSkillDesc(skill, levelData) {
+            var effects = skill.traverseSkillEffects();
+            var effectsObj = {};
+            for (var i in effects) {
+                var map = SkillEffectMappings[effects[i]['type']];
+                var alas = map['name'];
+                // var obj= effectsObj[effects[i]['name']]={};
+                var value = effects[i]['value'];
+                effectsObj[effects[i]['name']] = {}
+                effectsObj[effects[i]['name']]['name'] = alas;
+                effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
             }
-            var desc=skill.getDesc().mapping(effectsObj)
+            var desc = skill.getDesc().mapping(effectsObj)
             return desc;
         }
+
         function buildSkillView(skill) {
             var root = skillTemp.clone();
             var icon = root.getChildByName('skill_icon');
@@ -391,12 +404,14 @@ var HeroListMenu = BattleMenu.extend({
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
+            var add = btnlayer.getChildByName('add');
+            var cut = btnlayer.getChildByName('cut');
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
-            desc.ignoreContentAdaptWithSize(true);
             desc.setString(buildSkillDesc(skill));
             lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
-            initSkillView(skill, gold_text, buffNum_text);
+            setFont([name, desc, lv, level_text]);
+            initSkillView(skill, gold_text, buffNum_text, add, cut);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                 if (!skill.isMaxLevel()) {
                     var nextlevelData = skill.getLevelData(skill.getLv() + 1);
@@ -431,13 +446,16 @@ var HeroListMenu = BattleMenu.extend({
                     otherBtn.buffNum.setVisible(false);
                     otherBtn.gold.setVisible(false);
                     otherBtn.goldText.setVisible(false);
+                    add.isVisible() && add.setVisible(false);
+                    cut.isVisible() && cut.setVisible(false);
                 } else {
                     var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                     var nextAmount = nextlevelData['upgrade']['value'];
                     var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                     otherBtn.goldText.setString(nextAmount);
                     var showEffect = nextEffects[0].value - effects[0].value;
-                    otherBtn.buffNum.setString((showEffect > 0 ? '+' : '-') + Math.abs(showEffect));
+                    showAddOrCut(add, cut, showEffect);
+                    otherBtn.buffNum.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(showEffect));
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());

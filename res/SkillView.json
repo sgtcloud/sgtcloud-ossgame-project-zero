@@ -147,8 +147,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 70.0
+                  "X": 119.0,
+                  "Y": 73.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -161,17 +161,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.7
+                  "X": 0.1983,
+                  "Y": 0.73
                 },
                 "PreSize": {
                   "X": 0.2,
                   "Y": 0.2
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 360.0,
-                "TopMargin": 10.0,
-                "BottomMargin": 70.0,
+                "LeftMargin": 119.0,
+                "RightMargin": 361.0,
+                "TopMargin": 7.0,
+                "BottomMargin": 73.0,
                 "Tag": 306,
                 "ActionTag": 1868296756,
                 "Size": {
@@ -182,8 +182,9 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 18,
-                "LabelText": "技能描述文字",
+                "IsCustomSize": true,
+                "FontSize": 16,
+                "LabelText": "文本描述",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -197,8 +198,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 45.0
+                  "X": 118.3578,
+                  "Y": 8.6948
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -211,22 +212,22 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.45
+                  "X": 0.1973,
+                  "Y": 0.0869
                 },
                 "PreSize": {
-                  "X": 0.18,
-                  "Y": 0.18
+                  "X": 0.5333,
+                  "Y": 0.6
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 372.0,
-                "TopMargin": 37.0,
-                "BottomMargin": 45.0,
+                "LeftMargin": 118.3578,
+                "RightMargin": 161.6422,
+                "TopMargin": 31.3052,
+                "BottomMargin": 8.6948,
                 "Tag": 307,
                 "ActionTag": 173337070,
                 "Size": {
-                  "X": 108.0,
-                  "Y": 18.0
+                  "X": 320.0,
+                  "Y": 60.0
                 },
                 "Name": "skill_text",
                 "ctype": "TextObjectData"
@@ -247,8 +248,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 270.0,
-                  "Y": 70.0
+                  "X": 269.0,
+                  "Y": 73.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -261,17 +262,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.45,
-                  "Y": 0.7
+                  "X": 0.4483,
+                  "Y": 0.73
                 },
                 "PreSize": {
                   "X": 0.12,
                   "Y": 0.18
                 },
-                "LeftMargin": 270.0,
-                "RightMargin": 258.0,
-                "TopMargin": 12.0,
-                "BottomMargin": 70.0,
+                "LeftMargin": 269.0,
+                "RightMargin": 259.0,
+                "TopMargin": 9.0,
+                "BottomMargin": 73.0,
                 "Tag": 342,
                 "ActionTag": -1686192480,
                 "Size": {
@@ -483,58 +484,6 @@
                     "ctype": "TextObjectData"
                   },
                   {
-                    "FontSize": 18,
-                    "LabelText": "+9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 75.966,
-                      "Y": 19.9138
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "R": 38,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5426,
-                      "Y": 0.2489
-                    },
-                    "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.225
-                    },
-                    "LeftMargin": 39.966,
-                    "RightMargin": 28.034,
-                    "TopMargin": 51.0862,
-                    "BottomMargin": 10.9138,
-                    "Tag": 80,
-                    "ActionTag": 118871550,
-                    "Size": {
-                      "X": 72.0,
-                      "Y": 18.0
-                    },
-                    "Name": "buffNum_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
                     "FontSize": 16,
                     "LabelText": "Lv.9999",
                     "OutlineColor": {
@@ -585,6 +534,51 @@
                     },
                     "Name": "level_text",
                     "ctype": "TextObjectData"
+                  },
+                  {
+                    "CharWidth": 12,
+                    "CharHeight": 13,
+                    "LabelText": "995564",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font15_green.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 88.5713,
+                      "Y": 18.8777
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6327,
+                      "Y": 0.236
+                    },
+                    "PreSize": {
+                      "X": 0.5143,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 52.5713,
+                    "RightMargin": 15.4287,
+                    "TopMargin": 54.6223,
+                    "BottomMargin": 12.3777,
+                    "Tag": 140,
+                    "ActionTag": 1798560512,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 13.0
+                    },
+                    "Name": "buffNum_text",
+                    "ctype": "TextAtlasObjectData"
                   },
                   {
                     "FileData": {
@@ -675,7 +669,7 @@
                   {
                     "CharWidth": 12,
                     "CharHeight": 11,
-                    "LabelText": "999999",
+                    "LabelText": "123333",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
                       "Type": "Normal",
@@ -716,6 +710,92 @@
                     },
                     "Name": "gold_text",
                     "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/add.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 40.0679,
+                      "Y": 19.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2862,
+                      "Y": 0.2453
+                    },
+                    "PreSize": {
+                      "X": 0.0857,
+                      "Y": 0.15
+                    },
+                    "LeftMargin": 34.0679,
+                    "RightMargin": 93.9321,
+                    "TopMargin": 54.3724,
+                    "BottomMargin": 13.6276,
+                    "Tag": 141,
+                    "ActionTag": 883190182,
+                    "Size": {
+                      "X": 12.0,
+                      "Y": 12.0
+                    },
+                    "Name": "add",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/cut.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 40.0678,
+                      "Y": 19.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2862,
+                      "Y": 0.2453
+                    },
+                    "PreSize": {
+                      "X": 0.0929,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 33.5678,
+                    "RightMargin": 93.4322,
+                    "TopMargin": 53.8724,
+                    "BottomMargin": 13.1276,
+                    "Tag": 18,
+                    "ActionTag": 2060854591,
+                    "Size": {
+                      "X": 13.0,
+                      "Y": 13.0
+                    },
+                    "Name": "cut",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 1008273297,
@@ -744,6 +824,9 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/add.png",
+        "buttonUI/cut.png",
+        "buttonUI/font15_green.png",
         "buttonUI/font16_yellow.png",
         "buttonUI/MaxLevel.png",
         "heroUI/btn1.png",
