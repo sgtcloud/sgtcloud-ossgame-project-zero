@@ -199,14 +199,14 @@
                 <PreSize X="0.1437" Y="0.0267" />
                 <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="308.0709" RightMargin="171.9291" TopMargin="17.8276" BottomMargin="718.1724" CharWidth="16" CharHeight="14" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="160.0000" Y="14.0000" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="303.5169" RightMargin="236.4831" TopMargin="16.4832" BottomMargin="716.5168" CharWidth="10" CharHeight="17" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="100.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.4848" ScaleY="0.6287" />
-                <Position X="385.6389" Y="726.9742" />
+                <Position X="351.9969" Y="727.2048" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6026" Y="0.9693" />
-                <PreSize X="0.2500" Y="0.0187" />
+                <PrePosition X="0.5500" Y="0.9696" />
+                <PreSize X="0.1563" Y="0.0227" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font20_white.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="509.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
