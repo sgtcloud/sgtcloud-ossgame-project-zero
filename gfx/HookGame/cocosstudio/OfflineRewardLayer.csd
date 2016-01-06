@@ -59,7 +59,7 @@
                 <PreSize X="0.5867" Y="0.0650" />
                 <FileData Type="Normal" Path="offlineRewardUI/desc.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="offline_btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -132,13 +132,13 @@
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="80.0000" BottomMargin="0.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="80.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                     <Size X="30.0000" Y="30.0000" />
                     <AnchorPoint />
-                    <Position X="-9.9994" Y="0.0000" />
+                    <Position X="-9.9994" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0500" Y="0.0000" />
+                    <PrePosition X="-0.0500" />
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
                   </AbstractNodeData>

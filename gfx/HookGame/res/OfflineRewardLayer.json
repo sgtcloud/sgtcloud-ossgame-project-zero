@@ -290,6 +290,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -628,7 +630,6 @@
                     "LeftMargin": -9.9994,
                     "RightMargin": 179.9994,
                     "TopMargin": 80.0,
-                    "BottomMargin": 0.0,
                     "Tag": 449,
                     "ActionTag": 167233740,
                     "Size": {
