@@ -40,7 +40,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill_text" ActionTag="173337070" Tag="307" IconVisible="False" LeftMargin="118.3578" RightMargin="161.6422" TopMargin="31.3052" BottomMargin="8.6948" IsCustomSize="True" FontSize="16" LabelText="文本描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="skill_text" ActionTag="173337070" Tag="307" IconVisible="False" LeftMargin="118.3578" RightMargin="161.6422" TopMargin="31.3052" BottomMargin="8.6948" IsCustomSize="True" FontSize="14" LabelText="文本描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="320.0000" Y="60.0000" />
                 <AnchorPoint />
                 <Position X="118.3578" Y="8.6948" />

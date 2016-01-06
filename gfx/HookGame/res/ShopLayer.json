@@ -42,17 +42,17 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.9535
+              "Y": 0.9302
             },
             "LeftMargin": -2.4716,
             "RightMargin": 2.4716,
-            "TopMargin": 39.9979,
+            "TopMargin": 59.9979,
             "BottomMargin": 0.0021,
             "Tag": 45,
             "ActionTag": -348836933,
             "Size": {
               "X": 640.0,
-              "Y": 820.0
+              "Y": 800.0
             },
             "Name": "bg1",
             "ctype": "ImageViewObjectData"
@@ -85,15 +85,15 @@
             },
             "PreSize": {
               "X": 0.9937,
-              "Y": 0.814
+              "Y": 0.8023
             },
             "RightMargin": 4.0,
-            "TopMargin": 160.0,
+            "TopMargin": 170.0,
             "Tag": 44,
             "ActionTag": 930478778,
             "Size": {
               "X": 636.0,
-              "Y": 700.0
+              "Y": 690.0
             },
             "Name": "bg2",
             "ctype": "ImageViewObjectData"
@@ -112,7 +112,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 12.635,
-              "Y": 708.5731
+              "Y": 698.5734
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -122,7 +122,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0197,
-              "Y": 0.8239
+              "Y": 0.8123
             },
             "PreSize": {
               "X": 0.9531,
@@ -130,8 +130,8 @@
             },
             "LeftMargin": 12.635,
             "RightMargin": 17.365,
-            "TopMargin": 71.4269,
-            "BottomMargin": 708.5731,
+            "TopMargin": 81.4266,
+            "BottomMargin": 698.5734,
             "Tag": 46,
             "ActionTag": -772914297,
             "Size": {
@@ -139,48 +139,6 @@
               "Y": 80.0
             },
             "Name": "descText_bg",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "mainUI/title_bg4.png",
-              "Plist": ""
-            },
-            "Scale9Enable": true,
-            "Scale9OriginX": 60,
-            "Scale9Width": 3,
-            "Scale9Height": 42,
-            "AnchorPoint": {},
-            "Position": {
-              "X": 122.0358,
-              "Y": 788.8647
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1907,
-              "Y": 0.9173
-            },
-            "PreSize": {
-              "X": 0.625,
-              "Y": 0.0814
-            },
-            "LeftMargin": 122.0358,
-            "RightMargin": 117.9642,
-            "TopMargin": 1.1353,
-            "BottomMargin": 788.8647,
-            "Tag": 48,
-            "ActionTag": -1573244111,
-            "Size": {
-              "X": 400.0,
-              "Y": 70.0
-            },
-            "Name": "title_bg",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -196,84 +154,35 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 322.0358,
-              "Y": 830.975
+              "X": 317.6351,
+              "Y": 739.8317
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 1.5,
+              "ScaleY": 1.5
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5032,
-              "Y": 0.9662
+              "X": 0.4963,
+              "Y": 0.8603
             },
             "PreSize": {
               "X": 0.3125,
               "Y": 0.064
             },
-            "LeftMargin": 222.0358,
-            "RightMargin": 217.9642,
-            "TopMargin": 1.525,
-            "BottomMargin": 803.475,
+            "LeftMargin": 217.6351,
+            "RightMargin": 222.3649,
+            "TopMargin": 92.6683,
+            "BottomMargin": 712.3317,
             "Tag": 47,
             "ActionTag": 1956065607,
             "Size": {
               "X": 200.0,
               "Y": 55.0
             },
-            "Name": "rank",
+            "Name": "shop_text",
             "ctype": "ImageViewObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "商店说明",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 69.1428,
-              "Y": 762.2877
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.108,
-              "Y": 0.8864
-            },
-            "PreSize": {
-              "X": 0.125,
-              "Y": 0.0233
-            },
-            "LeftMargin": 29.1428,
-            "RightMargin": 530.8572,
-            "TopMargin": 87.7123,
-            "BottomMargin": 752.2877,
-            "Tag": 69,
-            "ActionTag": -1554368032,
-            "Size": {
-              "X": 80.0,
-              "Y": 20.0
-            },
-            "Name": "desc_text",
-            "ctype": "TextObjectData"
           },
           {
             "FileData": {
@@ -377,7 +286,7 @@
                 },
                 "NodeNormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/empty.png",
+                  "Path": "shopUI/shopTab_2.png",
                   "Plist": ""
                 },
                 "NodeDisableFileData": {
@@ -419,6 +328,7 @@
                 "ctype": "CheckBoxObjectData"
               },
               {
+                "CheckedState": true,
                 "NormalBackFileData": {
                   "Type": "Normal",
                   "Path": "shopUI/moneyTreeTab_1.png",
@@ -436,7 +346,7 @@
                 },
                 "NodeNormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/empty.png",
+                  "Path": "shopUI/moneyTreeTab_2.png",
                   "Plist": ""
                 },
                 "NodeDisableFileData": {
@@ -499,7 +409,6 @@
         "mainUI/bg_05.png",
         "mainUI/bg_18.png",
         "mainUI/empty.png",
-        "mainUI/title_bg4.png",
         "shopUI/moneyTreeTab_1.png",
         "shopUI/moneyTreeTab_2.png",
         "shopUI/shopTab_1.png",

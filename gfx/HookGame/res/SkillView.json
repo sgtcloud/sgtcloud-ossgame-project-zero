@@ -183,7 +183,7 @@
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 16,
+                "FontSize": 14,
                 "LabelText": "文本描述",
                 "OutlineColor": {
                   "G": 0,
