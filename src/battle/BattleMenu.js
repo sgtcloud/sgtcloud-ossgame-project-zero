@@ -187,8 +187,8 @@ var HeroListMenu = BattleMenu.extend({
 
         function initView(root, target, elements, listener) {
             if (target.isMaxLevel()) {
-                root.setEnabled(false);
-                root.setBright(false);
+                elements.btn.setEnabled(false);
+                elements.btn.setBright(false);
                 elements.upMaxText.setVisible(true);
                 elements.buffText.setVisible(false);
                 elements.buffNum.setVisible(false);
@@ -223,8 +223,8 @@ var HeroListMenu = BattleMenu.extend({
 
         function maxLevel(root, target, elements) {
             if (target.isMaxLevel()) {
-                root.setEnabled(false);
-                root.setBright(false);
+                elements.btn.setEnabled(false);
+                elements.btn.setBright(false);
                 elements.upMaxText.setVisible(true);
                 elements.buffText.setVisible(false);
                 elements.buffNum.setVisible(false);
@@ -267,7 +267,7 @@ var HeroListMenu = BattleMenu.extend({
             name.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv()+"/"+hero.getMaxLevel());
             dps.setString(hero.getAttack());
-            if(hero.getLife()<=0){
+            if(hero.getLife()>0){
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
             }
@@ -314,8 +314,8 @@ var HeroListMenu = BattleMenu.extend({
                 dps.setString(hero.getAttack());
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 if (hero.isMaxLevel()) {
-                    event.setEnabled(false);
-                    event.setBright(false);
+                    otherBtn.btn.setEnabled(false);
+                    otherBtn.btn.setBright(false);
                     otherBtn.upMaxText.setVisible(true);
                     otherBtn.buffText.setVisible(false);
                     otherBtn.buffNum.setVisible(false);
@@ -405,8 +405,8 @@ var HeroListMenu = BattleMenu.extend({
                 //var levelAttack=levelData['attack'];
 
                 if (skill.isMaxLevel()) {
-                    event.setEnabled(false);
-                    event.setBright(false);
+                    otherBtn.btn.setEnabled(false);
+                    otherBtn.btn.setBright(false);
                     otherBtn.upMaxText.setVisible(true);
                     otherBtn.buffText.setVisible(false);
                     otherBtn.buffNum.setVisible(false);
