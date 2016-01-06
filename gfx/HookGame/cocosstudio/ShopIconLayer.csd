@@ -4,13 +4,13 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="112" ctype="GameLayerObjectData">
-        <Size X="180.0000" Y="220.0000" />
+        <Size X="180.0000" Y="280.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1834247041" Tag="114" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="180.0000" Y="220.0000" />
+          <AbstractNodeData Name="root" ActionTag="194896547" CallBackType="Touch" Tag="381" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+            <Size X="180.0000" Y="280.0000" />
             <Children>
-              <AbstractNodeData Name="item_bg" ActionTag="-1028628941" Tag="113" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
-                <Size X="180.0000" Y="220.0000" />
+              <AbstractNodeData Name="item_bg" ActionTag="-1845410923" Tag="382" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
+                <Size X="180.0000" Y="280.0000" />
                 <AnchorPoint />
                 <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -19,77 +19,131 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="itemLayer" ActionTag="-653048991" Tag="124" IconVisible="True" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="52.8535" BottomMargin="67.1465" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="100.0000" Y="100.0000" />
-                <AnchorPoint />
-                <Position X="40.0000" Y="67.1465" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2222" Y="0.3052" />
-                <PreSize X="0.5556" Y="0.4545" />
-                <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="item_name" ActionTag="560229446" Tag="117" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="18.9107" BottomMargin="181.0893" FontSize="20" LabelText="道具名称六字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="item_name" ActionTag="1668559718" Tag="383" IconVisible="False" LeftMargin="29.9999" RightMargin="30.0001" TopMargin="23.9914" BottomMargin="236.0086" FontSize="20" LabelText="道具名称六字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="90.0000" Y="191.0893" />
+                <Position X="89.9999" Y="246.0086" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.8686" />
-                <PreSize X="0.6667" Y="0.0909" />
+                <PrePosition X="0.5000" Y="0.8786" />
+                <PreSize X="0.6667" Y="0.0714" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond" ActionTag="2027911993" Tag="130" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                <Size X="25.0000" Y="25.0000" />
+              <AbstractNodeData Name="itemLayer" ActionTag="542124892" Tag="384" IconVisible="True" LeftMargin="40.0001" RightMargin="39.9999" TopMargin="59.2461" BottomMargin="120.7539" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="100.0000" Y="100.0000" />
                 <AnchorPoint />
-                <Position X="40.3447" Y="26.3116" />
+                <Position X="40.0001" Y="120.7539" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2241" Y="0.1196" />
-                <PreSize X="0.1389" Y="0.1136" />
-                <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
+                <PrePosition X="0.2222" Y="0.4313" />
+                <PreSize X="0.5556" Y="0.3571" />
+                <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold" ActionTag="-1460183656" Tag="131" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                <Size X="25.0000" Y="25.0000" />
+              <AbstractNodeData Name="btn" ActionTag="-440389074" Tag="390" IconVisible="False" LeftMargin="45.4916" RightMargin="44.5084" TopMargin="219.3299" BottomMargin="20.6701" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="90.0000" Y="40.0000" />
+                <Children>
+                  <AbstractNodeData Name="buy_btn" ActionTag="1413242335" Tag="391" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="90.0000" Y="40.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="buy_text" ActionTag="-1993534234" CallBackType="Click" Tag="392" IconVisible="False" LeftMargin="28.0000" RightMargin="28.0000" TopMargin="10.5000" BottomMargin="10.5000" Scale9Width="34" Scale9Height="19" ctype="ImageViewObjectData">
+                    <Size X="34.0000" Y="19.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="45.0000" Y="20.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5000" Y="0.5000" />
+                    <PreSize X="0.3778" Y="0.4750" />
+                    <FileData Type="Normal" Path="buttonUI/buy2.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
                 <AnchorPoint />
-                <Position X="40.3447" Y="26.3116" />
+                <Position X="45.4916" Y="20.6701" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2241" Y="0.1196" />
-                <PreSize X="0.1389" Y="0.1136" />
-                <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
+                <PrePosition X="0.2527" Y="0.0738" />
+                <PreSize X="0.5000" Y="0.1429" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic" ActionTag="1037203976" Tag="132" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                <Size X="25.0000" Y="25.0000" />
+              <AbstractNodeData Name="res" ActionTag="1098940521" Tag="393" IconVisible="False" LeftMargin="35.0717" RightMargin="4.9283" TopMargin="173.4077" BottomMargin="81.5923" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="140.0000" Y="25.0000" />
+                <Children>
+                  <AbstractNodeData Name="key" ActionTag="2087965809" Tag="394" IconVisible="False" RightMargin="115.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.1786" Y="1.0000" />
+                    <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="relic" ActionTag="1464314918" Tag="395" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.1786" Y="1.0000" />
+                    <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gold" ActionTag="-1570183998" Tag="396" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.1786" Y="1.0000" />
+                    <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="gem" ActionTag="-1558630963" Tag="397" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="25.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.1786" Y="1.0000" />
+                    <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="sale_text" ActionTag="1883352848" Tag="398" IconVisible="False" LeftMargin="30.4971" RightMargin="37.5029" TopMargin="7.2067" BottomMargin="6.7933" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
+                    <Size X="72.0000" Y="11.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="66.4971" Y="12.2933" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.4750" Y="0.4917" />
+                    <PreSize X="0.5143" Y="0.4400" />
+                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
                 <AnchorPoint />
-                <Position X="40.3447" Y="26.3116" />
+                <Position X="35.0717" Y="81.5923" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2241" Y="0.1196" />
-                <PreSize X="0.1389" Y="0.1136" />
-                <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="key" ActionTag="-1359610174" Tag="133" IconVisible="False" LeftMargin="40.3447" RightMargin="114.6553" TopMargin="168.6884" BottomMargin="26.3116" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
-                <Size X="25.0000" Y="25.0000" />
-                <AnchorPoint />
-                <Position X="40.3447" Y="26.3116" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2241" Y="0.1196" />
-                <PreSize X="0.1389" Y="0.1136" />
-                <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="sale_text" ActionTag="449859872" Tag="134" IconVisible="False" LeftMargin="71.4680" RightMargin="38.5320" TopMargin="170.1876" BottomMargin="29.8124" FontSize="20" LabelText="9999999" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="106.4680" Y="39.8124" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5915" Y="0.1810" />
-                <PreSize X="0.3889" Y="0.0909" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.1948" Y="0.2914" />
+                <PreSize X="0.7778" Y="0.0893" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

@@ -483,58 +483,6 @@
                     "ctype": "TextObjectData"
                   },
                   {
-                    "FontSize": 18,
-                    "LabelText": "+9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 75.966,
-                      "Y": 19.9138
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "R": 38,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5426,
-                      "Y": 0.2489
-                    },
-                    "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.225
-                    },
-                    "LeftMargin": 39.966,
-                    "RightMargin": 28.034,
-                    "TopMargin": 51.0862,
-                    "BottomMargin": 10.9138,
-                    "Tag": 80,
-                    "ActionTag": 118871550,
-                    "Size": {
-                      "X": 72.0,
-                      "Y": 18.0
-                    },
-                    "Name": "buffNum_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
                     "FontSize": 16,
                     "LabelText": "Lv.9999",
                     "OutlineColor": {
@@ -585,6 +533,51 @@
                     },
                     "Name": "level_text",
                     "ctype": "TextObjectData"
+                  },
+                  {
+                    "CharWidth": 13,
+                    "CharHeight": 11,
+                    "LabelText": "9876543210",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_green.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 107.4087,
+                      "Y": 12.5356
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7672,
+                      "Y": 0.1567
+                    },
+                    "PreSize": {
+                      "X": 0.8357,
+                      "Y": 0.1375
+                    },
+                    "LeftMargin": 48.9087,
+                    "RightMargin": -25.9087,
+                    "TopMargin": 61.9644,
+                    "BottomMargin": 7.0356,
+                    "Tag": 140,
+                    "ActionTag": 1798560512,
+                    "Size": {
+                      "X": 117.0,
+                      "Y": 11.0
+                    },
+                    "Name": "buffNum_text",
+                    "ctype": "TextAtlasObjectData"
                   },
                   {
                     "FileData": {
@@ -675,7 +668,7 @@
                   {
                     "CharWidth": 12,
                     "CharHeight": 11,
-                    "LabelText": "999999",
+                    "LabelText": "123333",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
                       "Type": "Normal",
@@ -716,6 +709,49 @@
                     },
                     "Name": "gold_text",
                     "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/add.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.8179,
+                      "Y": 19.7441
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2416,
+                      "Y": 0.2468
+                    },
+                    "PreSize": {
+                      "X": 0.0857,
+                      "Y": 0.15
+                    },
+                    "LeftMargin": 27.8179,
+                    "RightMargin": 100.1821,
+                    "TopMargin": 54.2559,
+                    "BottomMargin": 13.7441,
+                    "Tag": 141,
+                    "ActionTag": 883190182,
+                    "Size": {
+                      "X": 12.0,
+                      "Y": 12.0
+                    },
+                    "Name": "Image_1",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 1008273297,
@@ -744,6 +780,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/add.png",
+        "buttonUI/font16_green.png",
         "buttonUI/font16_yellow.png",
         "buttonUI/MaxLevel.png",
         "heroUI/btn1.png",

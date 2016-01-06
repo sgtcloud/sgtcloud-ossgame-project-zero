@@ -101,17 +101,6 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buffNum_text" ActionTag="118871550" Tag="80" IconVisible="False" LeftMargin="39.9660" RightMargin="28.0340" TopMargin="51.0862" BottomMargin="10.9138" FontSize="18" LabelText="+9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="72.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.9660" Y="19.9138" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="38" G="255" B="0" />
-                    <PrePosition X="0.5426" Y="0.2489" />
-                    <PreSize X="0.5143" Y="0.2250" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
                   <AbstractNodeData Name="level_text" ActionTag="-1274566955" Tag="81" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="56.0000" Y="16.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -122,6 +111,16 @@
                     <PreSize X="0.4000" Y="0.2000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="buffNum_text" ActionTag="1798560512" Tag="140" IconVisible="False" LeftMargin="48.9087" RightMargin="-25.9087" TopMargin="61.9644" BottomMargin="7.0356" CharWidth="13" CharHeight="11" LabelText="9876543210" StartChar="0" ctype="TextAtlasObjectData">
+                    <Size X="117.0000" Y="11.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="107.4087" Y="12.5356" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.7672" Y="0.1567" />
+                    <PreSize X="0.8357" Y="0.1375" />
+                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="lock" ActionTag="1296461779" Tag="82" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                     <Size X="29.0000" Y="32.0000" />
@@ -143,7 +142,7 @@
                     <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
+                  <AbstractNodeData Name="gold_text" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="123333" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="72.0000" Y="11.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="85.5373" Y="61.0975" />
@@ -152,6 +151,16 @@
                     <PrePosition X="0.6110" Y="0.7637" />
                     <PreSize X="0.5143" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Image_1" ActionTag="883190182" Tag="141" IconVisible="False" LeftMargin="27.8179" RightMargin="100.1821" TopMargin="54.2559" BottomMargin="13.7441" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
+                    <Size X="12.0000" Y="12.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="33.8179" Y="19.7441" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.2416" Y="0.2468" />
+                    <PreSize X="0.0857" Y="0.1500" />
+                    <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

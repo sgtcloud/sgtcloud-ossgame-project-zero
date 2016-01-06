@@ -4,22 +4,10 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="37" ctype="GameLayerObjectData">
-        <Size X="610.0000" Y="480.0000" />
+        <Size X="610.0000" Y="600.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="610.0000" Y="480.0000" />
-            <Children>
-              <AbstractNodeData Name="bg" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
-                <Size X="610.0000" Y="480.0000" />
-                <AnchorPoint />
-                <Position />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
-              </AbstractNodeData>
-            </Children>
+          <AbstractNodeData Name="moneyTree" CanEdit="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="610.0000" Y="600.0000" />
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -31,65 +19,90 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="item1" ActionTag="-1445814584" Tag="135" IconVisible="True" LeftMargin="19.0001" RightMargin="410.9999" TopMargin="15.0001" BottomMargin="244.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
+          <AbstractNodeData Name="shop" ActionTag="-309343141" Tag="94" IconVisible="False" LeftMargin="-0.5861" RightMargin="0.5861" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+            <Size X="610.0000" Y="600.0000" />
+            <Children>
+              <AbstractNodeData Name="bg" CanEdit="False" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="610.0000" Y="600.0000" />
+                <AnchorPoint />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="1.0000" />
+                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item1" ActionTag="1330390566" Tag="399" IconVisible="True" LeftMargin="16.4216" RightMargin="413.5784" TopMargin="18.1591" BottomMargin="301.8410" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="16.4216" Y="301.8410" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0269" Y="0.5031" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item2" ActionTag="-1563805747" Tag="443" IconVisible="True" LeftMargin="213.8510" RightMargin="216.1490" TopMargin="18.1591" BottomMargin="301.8410" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="213.8510" Y="301.8410" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3506" Y="0.5031" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item3" ActionTag="-348189901" Tag="463" IconVisible="True" LeftMargin="411.2805" RightMargin="18.7195" TopMargin="18.1591" BottomMargin="301.8410" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="411.2805" Y="301.8410" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6742" Y="0.5031" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item4" ActionTag="-832870913" Tag="483" IconVisible="True" LeftMargin="16.4218" RightMargin="413.5782" TopMargin="306.6314" BottomMargin="13.3686" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="16.4218" Y="13.3686" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0269" Y="0.0223" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item5" ActionTag="1627353549" Tag="503" IconVisible="True" LeftMargin="213.8511" RightMargin="216.1489" TopMargin="306.6314" BottomMargin="13.3686" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="213.8511" Y="13.3686" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3506" Y="0.0223" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="item6" ActionTag="-890345032" Tag="523" IconVisible="True" LeftMargin="411.2805" RightMargin="18.7195" TopMargin="306.6314" BottomMargin="13.3686" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="180.0000" Y="280.0000" />
+                <AnchorPoint />
+                <Position X="411.2805" Y="13.3686" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6742" Y="0.0223" />
+                <PreSize X="0.2951" Y="0.4667" />
+                <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+              </AbstractNodeData>
+            </Children>
             <AnchorPoint />
-            <Position X="19.0001" Y="244.9999" />
+            <Position X="-0.5861" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0311" Y="0.5104" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="item2" ActionTag="-612906060" Tag="151" IconVisible="True" LeftMargin="215.0001" RightMargin="214.9999" TopMargin="15.0001" BottomMargin="244.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
-            <AnchorPoint />
-            <Position X="215.0001" Y="244.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3525" Y="0.5104" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="item3" ActionTag="-427908175" Tag="167" IconVisible="True" LeftMargin="411.0000" RightMargin="19.0000" TopMargin="15.0001" BottomMargin="244.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
-            <AnchorPoint />
-            <Position X="411.0000" Y="244.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6738" Y="0.5104" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="item4" ActionTag="64666314" Tag="183" IconVisible="True" LeftMargin="19.0001" RightMargin="410.9999" TopMargin="245.0001" BottomMargin="14.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
-            <AnchorPoint />
-            <Position X="19.0001" Y="14.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0311" Y="0.0312" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="item5" ActionTag="-1852638929" Tag="199" IconVisible="True" LeftMargin="215.0001" RightMargin="214.9999" TopMargin="245.0001" BottomMargin="14.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
-            <AnchorPoint />
-            <Position X="215.0001" Y="14.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3525" Y="0.0312" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="item6" ActionTag="1400190258" Tag="215" IconVisible="True" LeftMargin="415.0001" RightMargin="14.9999" TopMargin="245.0001" BottomMargin="14.9999" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="180.0000" Y="220.0000" />
-            <AnchorPoint />
-            <Position X="415.0001" Y="14.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6803" Y="0.0312" />
-            <PreSize X="0.2951" Y="0.4583" />
-            <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
+            <PrePosition X="-0.0010" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

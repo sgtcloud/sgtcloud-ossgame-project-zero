@@ -217,6 +217,10 @@
           <Image Name="sure.png" />
           <Image Name="font16_yellow_b.png" />
           <Image Name="font16_green_c.png" />
+          <Image Name="add.png" />
+          <Image Name="cut.png" />
+          <Image Name="font16_green.png" />
+          <Image Name="buy2.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

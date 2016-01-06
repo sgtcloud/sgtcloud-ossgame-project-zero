@@ -184,16 +184,6 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="1832659763" Tag="123" IconVisible="False" LeftMargin="94.2722" RightMargin="319.7278" TopMargin="211.2162" BottomMargin="177.7838" CharWidth="12" CharHeight="11" LabelText="000" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="36.0000" Y="11.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="112.2722" Y="183.2838" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2495" Y="0.4582" />
-                <PreSize X="0.0800" Y="0.0275" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green_c.png" Plist="" />
-              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position X="106.9826" Y="290.4360" />
