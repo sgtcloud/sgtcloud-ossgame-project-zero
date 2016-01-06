@@ -161,11 +161,12 @@ var HeroListMenu = BattleMenu.extend({
             var gold = btnlayer.getChildByName('gold');//消耗金币
             var gold_text = btnlayer.getChildByName('gold_text');//消耗金币
             var upMax_text = btnlayer.getChildByName('upMax_text');//已满级
-
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
+            var add = btnlayer.getChildByName('add');
+            var cut = btnlayer.getChildByName('cut');
             lock.setVisible(false);
             level_text.setVisible(false);
             upMax_text.setVisible(false);
@@ -178,7 +179,9 @@ var HeroListMenu = BattleMenu.extend({
                 levelText: level_text,
                 buffText: buff_text,
                 buffNum: buffNum_text,
-                btn: btn
+                btn: btn,
+                add: add,
+                cut: cut
             }
             initView(root, target, elements, listener)
         }
@@ -192,6 +195,8 @@ var HeroListMenu = BattleMenu.extend({
                 elements.buffNum.setVisible(false);
                 elements.gold.setVisible(false);
                 elements.goldText.setVisible(false);
+                elements.add.isVisible() && elements.add.setVisible(false);
+                elements.cut.isVisible() && elements.cut.setVisible(false);
             } else {
                 var nextlevelData = target.getLevelData(target.getLv() + 1);
                 var nextLevelAttack = nextlevelData['attack'];
@@ -271,13 +276,16 @@ var HeroListMenu = BattleMenu.extend({
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
             var revive_text = btnlayer.getChildByName('revive_text');
+            buffNum_text.ignoreContentAdaptWithSize(true);
+            dps.ignoreContentAdaptWithSize(true);
+            dps_text.ignoreContentAdaptWithSize(true);
             diamond_text.setVisible(false);
             diamond.setVisible(false);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             heroName_text.setString(hero.getName());
             lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
-            dps_text.setString(hero.getAttack());
-            setFont([heroName_text, lv, dps, dps_text]);
+            dps_text.setString(parseInt(hero.getAttack()));
+            setFont([heroName_text, lv]);
             if (hero.getLife() > 0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
@@ -323,7 +331,7 @@ var HeroListMenu = BattleMenu.extend({
                 eventData.cost = cost;
                 hero.upgrade();
                 lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
-                dps_text.setString(hero.getAttack());
+                dps_text.setString(parseInt(hero.getAttack()));
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 if (hero.isMaxLevel()) {
                     event.setEnabled(false);
@@ -333,13 +341,16 @@ var HeroListMenu = BattleMenu.extend({
                     otherBtn.buffNum.setVisible(false);
                     otherBtn.gold.setVisible(false);
                     otherBtn.goldText.setVisible(false);
+                    otherBtn.add.isVisible() && otherBtn.add.setVisible(false);
+                    otherBtn.cut.isVisible() && otherBtn.cut.setVisible(false);
                 } else {
                     var nextlevelData = hero.getLevelData(hero.getLv() + 1);
                     var nextLevelAmount = nextlevelData['upgrade']['value'];
                     var nextLevelAttack = nextlevelData['attack'];
                     otherBtn.goldText.setString(nextLevelAmount);
                     var diffValue = nextLevelAttack - levelAttack;
-                    otherBtn.buffNum.setString((diffValue > 0 ? '+' : '-') + Math.abs(diffValue));
+                    showAddOrCut(otherBtn.add, otherBtn.cut, diffValue);
+                    otherBtn.buffNum.setString(/*(diffValue > 0 ? '+' : '-') +*/ Math.abs(diffValue));
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
@@ -367,7 +378,7 @@ var HeroListMenu = BattleMenu.extend({
             var showEffect = nextEffects[0].value - effects[0].value;
             buffNum_text.ignoreContentAdaptWithSize(true);
             showAddOrCut(add, cut, showEffect);
-            buffNum_text.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(showEffect));
+            buffNum_text.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(parseInt(showEffect)));
         }
 
         //根据模板生成技能效果描述
@@ -446,16 +457,16 @@ var HeroListMenu = BattleMenu.extend({
                     otherBtn.buffNum.setVisible(false);
                     otherBtn.gold.setVisible(false);
                     otherBtn.goldText.setVisible(false);
-                    add.isVisible() && add.setVisible(false);
-                    cut.isVisible() && cut.setVisible(false);
+                    otherBtn.add.isVisible() && otherBtn.add.setVisible(false);
+                    otherBtn.cut.isVisible() && otherBtn.cut.setVisible(false);
                 } else {
                     var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                     var nextAmount = nextlevelData['upgrade']['value'];
                     var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                     otherBtn.goldText.setString(nextAmount);
                     var showEffect = nextEffects[0].value - effects[0].value;
-                    showAddOrCut(add, cut, showEffect);
-                    otherBtn.buffNum.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(showEffect));
+                    showAddOrCut(otherBtn.add, otherBtn.cut, showEffect);
+                    otherBtn.buffNum.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(parseInt(showEffect)));
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());

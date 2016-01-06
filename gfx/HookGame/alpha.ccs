@@ -81,7 +81,6 @@
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
           <Image Name="reviveTime.png" />
-          <Image Name="heroDPS.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
