@@ -109,15 +109,16 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upMax_text" ActionTag="682009692" Tag="701" IconVisible="False" LeftMargin="39.4849" RightMargin="23.5151" TopMargin="33.4249" BottomMargin="19.5751" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
-                <Size X="77.0000" Y="27.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="77.9849" Y="33.0751" />
+              <AbstractNodeData Name="upMax_text" ActionTag="-559954175" Tag="597" IconVisible="False" LeftMargin="47.0003" RightMargin="32.9997" TopMargin="30.0000" BottomMargin="30.0000" FontSize="20" LabelText="已满级" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="20.0000" />
+                <AnchorPoint />
+                <Position X="47.0003" Y="30.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5570" Y="0.4134" />
-                <PreSize X="0.5500" Y="0.3375" />
-                <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
+                <CColor A="255" R="255" G="255" B="0" />
+                <PrePosition X="0.3357" Y="0.3750" />
+                <PreSize X="0.4286" Y="0.2500" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

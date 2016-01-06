@@ -98,29 +98,34 @@ var BattlePanel = cc.Node.extend({
         this.enemyLifeText = root.getChildByName('enemy_life_text');
         this.enemyLifeBar = root.getChildByName('enemy_life_bar');
         this.timeText = root.getChildByName('time_text');
-        this.timeTextBg = root.getChildByName('timetext_bg');
+        this.icon = root.getChildByName('icon');
+        this.timeBar = root.getChildByName('time_bar');
 
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
         bindButtonCallback(this.rewardBtn, function () {
-            var prompt1Layer = ccs.csLoader.createNode(res.prompt1_layer_json);
+            var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
-            var prompt1LayerRoot = prompt1Layer.getChildByName('root');
-            var prompt1LayerTitleText = prompt1LayerRoot.getChildByName('title_text');
-            var prompt1LayerDescText = prompt1LayerRoot.getChildByName('desc_text');
-            var prompt1LayerGoldText = prompt1LayerRoot.getChildByName('gold_text');
-            var prompt1LayerBtn = prompt1LayerRoot.getChildByName('btn');
-            prompt1LayerTitleText.setString('离线奖励');
-            prompt1LayerDescText.setString('当前离线奖励所获取的金币数');
-            prompt1LayerGoldText.setString(player.not_get_reward);
-            bindButtonCallback(prompt1LayerBtn,function(){
-                prompt1Layer.removeFromParent();
+            var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
+            var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn').getChildByName('offline_btn');
+
+            var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
+            var rewards = player.not_get_reward;
+            for (var key in rewards) {
+                if (rewards.hasOwnProperty(key)) {
+                    var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
+                    offlineRewardLayerText.ignoreContentAdaptWithSize(true);
+                    offlineRewardLayerText.setString(rewards[key]);
+                }
+            }
+            bindButtonCallback(offlineRewardLayerBtn, function () {
+                offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(prompt1Layer,1000);
+            popup(offlineRewardLayer, 1000);
         });
 
         var battle_bg = root.getChildByName('battle_bg');
@@ -140,35 +145,40 @@ var BattlePanel = cc.Node.extend({
             }, this);
         };
 
+        var tap = root.getChildByName('tap');
+        var battleZone = tap;
+        var tempEffect = ccs.load(res.tap_effect_json);
+        var hitEffect = tempEffect.node;
+        var hitAction = tempEffect.action;
+        var hitIndex = 1;
+        hitEffect.setVisible(false);
+        hitEffect.runAction(hitAction);
+        this.addChild(hitEffect, 1000);
         this.bindPlayerTapEvent = function () {
-          /*  var tap = root.getChildByName('tap');
             var listener = cc.EventListener.create({
                 event: cc.EventListener.MOUSE,
-                onMouseDown: function (event) {
-                    var pos = event.getLocation(); //当前事件发生的光标位置
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget(); //事件绑定的目标
-                    //判断当前事件发生的位置是否在事件目标区域内
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                        // cc.log("Mouse Down");
-                        // console.log(self);
-                        self.onPlayerTap();
+                swallowTouches: true,
+                onMouseDown: function (touch, event) {
+                    var locationInNode = battleZone.convertToNodeSpace(touch.getLocation());
+                    var s = battleZone.getContentSize();
+                    var rect = cc.rect(0, 0, s.width, s.height);
+                    var target = self.findNextEnemy();
+                    if (cc.rectContainsPoint(rect, locationInNode) && target) {
+                        //cc.log(locationInNode.x + " " + locationInNode.y);
+                        hitEffect.setPosition(self.convertToNodeSpace(touch.getLocation()));
+                        hitEffect.setVisible(true);
+                        hitAction.play("boom" + hitIndex, false);
+                        target.doDamage(PlayerData.getTotalHit());
+                        hitIndex++;
+                        if (hitIndex > 4) {
+                            hitIndex = 1;
+                        }
                         return true;
                     }
                     return false;
                 },
-                onMouseUp: function (event) {
-                    var pos = event.getLocation();
-                    pos.y -= 120;
-                    var target = event.getCurrentTarget();
-                    if (cc.rectContainsPoint(target.getBoundingBox(), pos)) {
-                         cc.log("Mouse up");
-                        return true;
-                    }
-                    return false;
-                }
             });
-            cc.eventManager.addListener(listener, tap);*/
+            cc.eventManager.addListener(listener, tap);
         };
 
         this.spritesLayer = root.getChildByName('sprites');
@@ -192,7 +202,7 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
-            if(self.times != undefined){
+            if (self.times != undefined) {
                 clearInterval(self.times);
             }
 
@@ -205,16 +215,16 @@ var BattlePanel = cc.Node.extend({
     },
 
     loadRewardBtn: function () {
-        if(player.not_get_reward > 0){
+        if (player.not_get_reward["gold"] > 0) {
             this.rewardBtn.visible = true;
-        }else{
+        } else {
             this.rewardBtn.visible = false;
         }
     }
     ,
     updateEnemyLife: function () {
         var max = this.enemySprites.getMaxLife();
-        var life = this.enemySprites.getLife();
+        var life = parseInt(this.enemySprites.getLife(), 10);
         this.enemyLifeText.ignoreContentAdaptWithSize(true);
         this.enemyLifeText.setString(life);
         this.enemyLifeBar.setPercent(life / max * 100);
@@ -236,25 +246,30 @@ var BattlePanel = cc.Node.extend({
             this.addChild(hero, player.heroes.length - i);
         }
     },
-    disableBossBattleTimeCounter:function(){
+    disableBossBattleTimeCounter: function () {
         this.timeText.visible = false;
-        //this.timeTextBg.visible = false;
+        this.timeBar.visible = false;
+        this.icon.visible = true;
     },
-    enableBossBattleTimeCounter:function(stage){
+    enableBossBattleTimeCounter: function (stage) {
         this.timeText.visible = true;
-        //this.timeTextBg.visible = true;
-        var  boosTimeMax = stage.getBossTimeMax();
+        this.timeBar.visible = true;
+        this.icon.visible = false;
+        var boosTimeMax = stage.getBossTimeMax();
         var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
         this.timeText.setString(boosTimeMax);
-        this.times = setInterval(function(){
-            if(boosTimeMax==0){
+        this.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
+
+        this.times = setInterval(function () {
+            if (boosTimeMax == 0) {
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            }else{
+            } else {
                 boosTimeMax--;
                 self.timeText.setString(boosTimeMax);
+                self.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
             }
-        },1000);
+        }, 1000);
     },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
@@ -270,6 +285,9 @@ var BattlePanel = cc.Node.extend({
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
+            if (stage.isBossBattle()) {
+                enemy.setScale(1.5);
+            }
             this.enemySprites.push(enemy);
             var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
             enemy.setPosition(startPos);
@@ -324,9 +342,10 @@ var BattlePanel = cc.Node.extend({
             player.stage_battle_num += 1;
         }
         // wait for 1 second to start next battle
-        this.scheduleOnce(function () {
-            this.prepareBattle(stageData);
-        }, 1.0);
+        //this.scheduleOnce(function () {
+        //    this.prepareBattle(stageData);
+        //}, 1.0);
+        this.prepareBattle(stageData);
         PlayerData.updatePlayer();
     },
 
@@ -339,11 +358,11 @@ var BattlePanel = cc.Node.extend({
 
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:"+hero);
+        cc.log("dead:" + hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:"+ hero);
+        cc.log("recover:" + hero);
     },
     onUseSkill: function (i) {
 

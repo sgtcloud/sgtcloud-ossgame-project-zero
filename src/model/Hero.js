@@ -73,9 +73,58 @@ var Hero = function (heroData) {
     this.getSkillData = function (i) {
         return skills[i];
     };
-    this.getSkills=function(){
-        return skills;
+    this.calcArrayEffect = function (effects, propName) {
+        for (var j in effects) {
+            if (effects[j].type === propName + "_value") {
+                this[propName + "_value"] += effects[j].value;
+            }
+            else if (effects[j].type === propName + "_rate") {
+                this[propName + "_rate"] += effects[j].value;
+            }
+            else if (effects[j].type === "globe_" + propName + "_value") {
+                this["globe_" + propName + "_value"] += effects[j].value;
+            }
+            else if (effects[j].type === "globe_" + propName + "_rate") {
+                this["globe_" + propName + "_rate"] += effects[j].value;
+            }
+        }
+    };
+    this.calcSkillEffect = function (propName) {
+        for (var i in skills) {
+            this.calcArrayEffect(skills[i].traverseSkillEffects(lv), propName);
+        }
     }
+    this.calcEquipEffect = function (propName) {
+        for (var i in equips) {
+            this.calcArrayEffect(equips[i].traverseEquipEffects(lv), propName);
+        }
+    }
+    this.calcProp = function (propName) {
+        var val = 0;
+        var tmpVal = 0;
+        var rate = 1.0;
+        tmpVal = getLevelData(data, propName, lv);
+        if (tmpVal) {
+            val += tmpVal;
+        }
+        tmpVal = this[propName + "_value"];
+        if (tmpVal) {
+            val += tmpVal;
+        }
+        tmpVal = PlayerData["globe_" + propName + "_value"]
+        if (tmpVal) {
+            val += tmpVal;
+        }
+        tmpVal = this[propName + "_rate"];
+        if (tmpVal) {
+            rate += tmpVal / 100;
+        }
+        tmpVal = PlayerData["globe_" + propName + "_rate"];
+        if (tmpVal) {
+            rate += tmpVal / 100;
+        }
+        return val * rate;
+    };
     this.getLife = function () {
         if (this.isLocked()) {
             return 0;
@@ -86,7 +135,6 @@ var Hero = function (heroData) {
         }
         return val;
     };
-
     this.getAttack = function () {
         if (this.isLocked()) {
             return 0;

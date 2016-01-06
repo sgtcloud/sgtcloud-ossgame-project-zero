@@ -4,11 +4,12 @@ var player = {
     "gold": 10,
     "gem": 10,
     "relic": 10,
+    "key": 10,
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
-    "into_stage_battle_timestamp":0,
-    "not_get_reward":0,
+    "into_stage_battle_timestamp": 0,
+    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
     "heroes": [
         {
             "id": "h101",
@@ -56,6 +57,7 @@ var PlayerData = {
             }
         }
         this.stageData = new Stage(player.stage);
+        this.refreshGlobeProps();
         this.countOfflineReward();
     },
     updatePlayer: function () {
@@ -78,7 +80,7 @@ var PlayerData = {
         var val = 0;
         for (var i in this.heroesData) {
             var hero = this.heroesData[i];
-            val += hero[prop];
+            val += hero[prop]();
         }
         return val;
     }
@@ -116,54 +118,96 @@ var PlayerData = {
                     case "relic":
                         player.relic += data.value;
                         break;
+                    case "key":
+                        player.key += data.value;
+                        break;
                 }
             }
         }
     }
     ,
-    updateIntoBattleTime: function(){
-        cc.log("into_stage_battle_timestamp:"+Date.parse(new Date()));
+    updateIntoBattleTime: function () {
         player.into_stage_battle_timestamp = Date.parse(new Date());
+        this.updatePlayer();
     }
     ,
-    getIntoBattleTime: function(){
-        cc.log("into_stage_battle_timestamp:"+player.into_stage_battle_timestamp);
+    getIntoBattleTime: function () {
         return player.into_stage_battle_timestamp;
     }
     ,
-    countOfflineReward: function(){
+    countOfflineTime: function () {
         var intoBattleTime = this.getIntoBattleTime();
-        if(intoBattleTime > 0){
-            var offlineTime = Math.floor((Date.parse(new Date()) - intoBattleTime)/(1000 * 60));
-            var reward = 0;
-            if(offlineTime > 3 ){
-                if(offlineTime > (60 * 24)){
+        if (intoBattleTime > 0) {
+            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
+
+            if (offlineTime > 1) {
+                if (offlineTime > (60 * 24)) {
                     offlineTime = 60 * 24;
                 }
-                reward = offlineTime * this.getStageData().getOfflineReward();
+                return offlineTime;
             }
-            player.not_get_reward += reward;
-            //this.updatePlayer();
+        }
+        return 0;
+    },
+    countOfflineReward: function () {
+        var datas = this.getStageData().getOfflineReward();
+        var offlineTime = this.countOfflineTime();
+        var rewards = player.not_get_reward;
+        for (var i = 0; i < datas.length; i++) {
+            if (datas[i].value) {
+                rewards[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
+            }
         }
     }
     ,
-    receiveOfflineReward: function(){
-        this.consumeResource([this.createResourceData("gold",player.not_get_reward)]);
-        player.not_get_reward = 0;
+    receiveOfflineReward: function () {
+        var rewards = player.not_get_reward;
+        var arrays = new Array();
+        for (var key in rewards) {
+            if (rewards.hasOwnProperty(key)) {
+                arrays.push(this.createResourceData(key, rewards[key]));
+            }
+        }
+        this.consumeResource(arrays);
+        player.not_get_reward = {"key": 0, "gem": 0, "gold": 0};
     }
     ,
-    getAmountByUnit:function(unit){
+    getAmountByUnit: function (unit) {
         switch (unit) {
             case "gold":
                 return player.gold;
             case "gem":
                 return player.gem;
             case "relic":
-                return player.relic ;
+                return player.relic;
+            case "key":
+                return player.key;
         }
         return 0;
     },
     heroesData: [],
-    stageData: {}
+    stageData: {},
+    globe_life_value: 0,
+    globe_life_rate: 0,
+    globe_attack_value: 0,
+    globe_attack_rate: 0,
+    globe_tap_value: 0,
+    globe_tap_rate: 0,
+    refreshGlobeProps: function () {
+        this.globe_life_value = 0;
+        this.globe_life_rate = 0;
+        this.globe_attack_value = 0;
+        this.globe_attack_rate = 0;
+        this.globe_tap_value = 0;
+        this.globe_tap_rate = 0;
+        for (var i in this.heroes) {
+            this.globe_life_value += this.heroesData[i]["globe_life_value"];
+            this.globe_life_rate += this.heroesData[i]["globe_life_rate"];
+            this.globe_attack_value += this.heroesData[i]["globe_attack_value"];
+            this.globe_attack_rate += this.heroesData[i]["globe_attack_rate"];
+            this.globe_tap_value += this.heroesData[i]["globe_tap_value"];
+            this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
+        }
+    },
 };
 

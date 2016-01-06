@@ -189,25 +189,40 @@
                 <PreSize X="0.0547" Y="0.0467" />
                 <FileData Type="Normal" Path="mainUI/battle_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text_0" ActionTag="2083404384" CallBackType="Click" Tag="166" IconVisible="False" LeftMargin="219.1502" RightMargin="328.8498" TopMargin="15.5032" BottomMargin="714.4968" Scale9Width="93" Scale9Height="20" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="enemy_life_text_0" ActionTag="2083404384" CallBackType="Click" Tag="166" IconVisible="False" LeftMargin="207.1503" RightMargin="340.8497" TopMargin="15.5033" BottomMargin="714.4967" Scale9Width="93" Scale9Height="20" ctype="ImageViewObjectData">
                 <Size X="92.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="265.1502" Y="724.4968" />
+                <Position X="253.1503" Y="724.4967" />
                 <Scale ScaleX="0.8000" ScaleY="0.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4143" Y="0.9660" />
+                <PrePosition X="0.3955" Y="0.9660" />
                 <PreSize X="0.1437" Y="0.0267" />
                 <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="308.0709" RightMargin="171.9291" TopMargin="17.8276" BottomMargin="718.1724" CharWidth="16" CharHeight="14" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="160.0000" Y="14.0000" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="303.7052" RightMargin="216.2948" TopMargin="17.5018" BottomMargin="716.4982" CharWidth="12" CharHeight="16" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="120.0000" Y="16.0000" />
                 <AnchorPoint ScaleX="0.4848" ScaleY="0.6287" />
-                <Position X="385.6389" Y="726.9742" />
+                <Position X="361.8812" Y="726.5574" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6026" Y="0.9693" />
-                <PreSize X="0.2500" Y="0.0187" />
+                <PrePosition X="0.5654" Y="0.9687" />
+                <PreSize X="0.1875" Y="0.0213" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font20_white.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="11.2308" RightMargin="546.7692" TopMargin="61.5242" BottomMargin="611.4758" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="52" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="82.0000" Y="77.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="52.2308" Y="649.9758" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0816" Y="0.8666" />
+                <PreSize X="0.1281" Y="0.1027" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
+                <PressedFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
+                <NormalFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="509.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -285,21 +300,6 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="11.2308" RightMargin="546.7692" TopMargin="61.5242" BottomMargin="611.4758" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="52" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="82.0000" Y="77.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="52.2308" Y="649.9758" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0816" Y="0.8666" />
-                <PreSize X="0.1281" Y="0.1027" />
-                <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
-                <PressedFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
-                <NormalFileData Type="Normal" Path="ui/reward_01.png" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

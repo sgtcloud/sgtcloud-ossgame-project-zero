@@ -87,7 +87,8 @@ var Stage = function (id) {
     this.getBossTimeMax = function () {
         return /*data.bossTime*/30;
     };
-    this.getOfflineReward = function(){
+    this.getOfflineReward = function () {
         return data.offlineReward;
     };
+
 };

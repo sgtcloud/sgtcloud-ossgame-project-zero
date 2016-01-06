@@ -4,10 +4,11 @@
 
 //英雄扩展类
 var HeroUnit = BattleUnit.extend({
-    ctor: function (battle, data, hero) {
+    ctor: function (battle, data) {
         this._super(battle, data, BattleConsts.Camp.Player);
         this.recover = 0;
         this.cooldown = 0;
+        this.data = data;
 
         //血条的NODE
         var lifeNode = ccs.csLoader.createNode(res.hero_blood_json);
@@ -19,36 +20,34 @@ var HeroUnit = BattleUnit.extend({
         //刷新刷条
         this.refreshLifeBar = function () {
             var max = this.data.getLife();
-            this.lifeBar.setPercent(hero.life / max * 100);
+            this.lifeBar.setPercent(this.data.getCurrentLife() / max * 100);
         };
         this.getLife = function () {
-            return hero.life;
+            return this.data.getCurrentLife();
         };
         this.isDead = function () {
-            return hero.life <= 0;
+            return this.data.getCurrentLife() <= 0;
         };
         this.onAttacked = function () {
             var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
                 if (Math.random() < this.data.getCtrChance()) {
-                    target.doDamage(this.attack, this.data.getCtrModify());
+                    target.doDamage(this.data.getAttack(), this.data.getCtrModify());
                 } else {
-                    target.doDamage(this.attack);
+                    target.doDamage(this.data.getAttack());
                 }
             }
         };
         this.changeLife = function (val) {
-            hero.life += val;
-            if (hero.life < 0) {
-                hero.life = 0;
-            }
+            this.data.changeLife(val);
         };
         this.onDamaged = function () {
             this.refreshLifeBar();
         };
         this.onDead = function () {
-            this.recover = data.getRecover();
+            this.recover = this.data.getRecover();
+            customEventHelper.sendEvent(EVENT.HERO_DIE, this.data);
             battle.onHeroDead(this);
             //var lost = battle.checkPlayerLost();
             //if(lost){
@@ -78,12 +77,28 @@ var HeroUnit = BattleUnit.extend({
         this.onUpdateDead = function (dt) {
             this.recover = Math.max(0, this.recover - dt);
             if (this.recover <= 0) {
+                customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.data);
                 this.onRecover();
+            } else {
+                customEventHelper.sendEvent(EVENT.HERO_REVIVE_COUNTDOWN, {id: this.data.getId(), recover: this.recover});
             }
         };
         this.isActive = function () {
-            return !data.isLocked();
+            return !this.data.isLocked();
         };
         this.refreshLifeBar();
+
+        var self = this;
+        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+            // 暂时不需要改
+        });
+        customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
+            self.data.refreshProps();
+            PlayerData.refreshGlobeProps();
+        });
+        customEventHelper.bindListener(EVENT.HERO_EQUIP_UPGRADE, function (event) {
+            self.data.refreshProps();
+            PlayerData.refreshGlobeProps();
+        });
     }
 });
