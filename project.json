@@ -24,6 +24,7 @@
     "src/model/Hero.js",
     "src/model/Player.js",
     "src/model/Event.js",
+    "src/model/SkillEffectMappings.js",
     "src/LoaderScene.js",
     "src/battle/BattleConst.js",
     "src/battle/Loot.js",
