@@ -162,13 +162,13 @@
                     <PreSize X="0.0857" Y="0.1500" />
                     <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="cut" ActionTag="2060854591" Tag="18" IconVisible="False" LeftMargin="33.5678" RightMargin="93.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="cut" ActionTag="2060854591" Tag="18" IconVisible="False" LeftMargin="34.5678" RightMargin="92.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
                     <Size X="13.0000" Y="13.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="40.0678" Y="19.6276" />
+                    <Position X="41.0678" Y="19.6276" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2862" Y="0.2453" />
+                    <PrePosition X="0.2933" Y="0.2453" />
                     <PreSize X="0.0929" Y="0.1625" />
                     <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
                   </AbstractNodeData>

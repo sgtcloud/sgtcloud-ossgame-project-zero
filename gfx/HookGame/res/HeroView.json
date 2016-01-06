@@ -275,6 +275,51 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "69568844",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_white.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 384.7208,
+                  "Y": 45.0227
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6165,
+                  "Y": 0.4093
+                },
+                "PreSize": {
+                  "X": 0.1538,
+                  "Y": 0.1182
+                },
+                "LeftMargin": 336.7208,
+                "RightMargin": 191.2792,
+                "TopMargin": 58.4773,
+                "BottomMargin": 38.5227,
+                "Tag": 473,
+                "ActionTag": 1401349662,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 13.0
+                },
+                "Name": "dps_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
                 "FontSize": 20,
                 "LabelText": "英雄DPS",
                 "OutlineColor": {
@@ -322,52 +367,6 @@
                   "Y": 20.0
                 },
                 "Name": "dps",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 350.0482,
-                  "Y": 34.6461
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.561,
-                  "Y": 0.315
-                },
-                "PreSize": {
-                  "X": 0.1122,
-                  "Y": 0.1818
-                },
-                "LeftMargin": 350.0482,
-                "RightMargin": 203.9518,
-                "TopMargin": 55.3539,
-                "BottomMargin": 34.6461,
-                "Tag": 262,
-                "ActionTag": -1086697595,
-                "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
-                },
-                "Name": "dps_text",
                 "ctype": "TextObjectData"
               },
               {
@@ -453,7 +452,7 @@
                   "Y": 0.1727
                 },
                 "LeftMargin": 22.8493,
-                "RightMargin": 527.1506,
+                "RightMargin": 527.1507,
                 "TopMargin": 35.2096,
                 "BottomMargin": 55.7904,
                 "Tag": 1060,
@@ -1707,6 +1706,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/font16_white.png",
         "buttonUI/font16_yellow.png",
         "buttonUI/MaxLevel.png",
         "buttonUI/revive.png",

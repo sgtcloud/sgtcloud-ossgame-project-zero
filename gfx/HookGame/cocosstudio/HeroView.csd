@@ -61,6 +61,16 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="dps_text" ActionTag="1401349662" Tag="473" IconVisible="False" LeftMargin="336.7208" RightMargin="191.2792" TopMargin="58.4773" BottomMargin="38.5227" CharWidth="12" CharHeight="13" LabelText="69568844" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="96.0000" Y="13.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="384.7208" Y="45.0227" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6165" Y="0.4093" />
+                <PreSize X="0.1538" Y="0.1182" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
+              </AbstractNodeData>
               <AbstractNodeData Name="dps" ActionTag="-1050725025" Tag="261" IconVisible="False" LeftMargin="350.0000" RightMargin="204.0000" TopMargin="15.0000" BottomMargin="75.0000" FontSize="20" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
                 <AnchorPoint />
@@ -68,17 +78,6 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.5609" Y="0.6818" />
-                <PreSize X="0.1122" Y="0.1818" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="-1086697595" Tag="262" IconVisible="False" LeftMargin="350.0482" RightMargin="203.9518" TopMargin="55.3539" BottomMargin="34.6461" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint />
-                <Position X="350.0482" Y="34.6461" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5610" Y="0.3150" />
                 <PreSize X="0.1122" Y="0.1818" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -94,7 +93,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_text" ActionTag="-956947662" Tag="1060" IconVisible="False" LeftMargin="22.8493" RightMargin="527.1506" TopMargin="35.2096" BottomMargin="55.7904" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="die_text" ActionTag="-956947662" Tag="1060" IconVisible="False" LeftMargin="22.8493" RightMargin="527.1507" TopMargin="35.2096" BottomMargin="55.7904" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
                 <Size X="74.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="59.8493" Y="65.2904" />
