@@ -161,8 +161,7 @@ var HeroListMenu = BattleMenu.extend({
             var gold = btnlayer.getChildByName('gold');//消耗金币
             var gold_text = btnlayer.getChildByName('gold_text');//消耗金币
             var upMax_text = btnlayer.getChildByName('upMax_text');//已满级
-            var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
-            var diamond = btnlayer.getChildByName('diamond');//钻石图标
+
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
@@ -170,10 +169,7 @@ var HeroListMenu = BattleMenu.extend({
             lock.setVisible(false);
             level_text.setVisible(false);
             upMax_text.setVisible(false);
-            if (diamond_text)
-                diamond_text.setVisible(false);
-            if (diamond)
-                diamond.setVisible(false);
+            gold_text.ignoreContentAdaptWithSize(true);
             var elements = {
                 gold: gold,
                 goldText: gold_text,
@@ -249,8 +245,6 @@ var HeroListMenu = BattleMenu.extend({
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
             var heroName_text = root.getChildByName("heroName_text");
-            //var stars = root.getChildByName('stars_fore');
-            //var currentLv = hero.getLv();
             var btnlayer = root.getChildByName('btn')
             var die_text = root.getChildByName('die_text')
             var die_time_text = root.getChildByName('die_time_text')
@@ -264,6 +258,13 @@ var HeroListMenu = BattleMenu.extend({
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
             var level_text = btnlayer.getChildByName('level_text');
+            var revive_text = btnlayer.getChildByName('revive_text');
+            var diamond_text = btnlayer.getChildByName('diamond_text');//钻石文字
+            var diamond = btnlayer.getChildByName('diamond');//钻石图标
+            diamond_text.setVisible(false);
+            diamond.setVisible(false);
+
+
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             heroName_text.setString(hero.getName());
             name.setString(hero.getName());
@@ -272,6 +273,7 @@ var HeroListMenu = BattleMenu.extend({
             if (hero.getLife() > 0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
+                revive_text.setVisible(false);
             }
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                 if (!hero.isMaxLevel()) {
@@ -291,17 +293,18 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 die_text.setVisible(true);
                 die_time_text.setVisible(true);
+                revive_text.setVisible(true);
             });
             customEventHelper.bindListener(EVENT.HERO_REVIVE, function (event) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
+                revive_text.setVisible(false);
                 //hero.getSkills()
             });
 
 
             setElement(root, hero, function (event, otherBtn) {
                 if (hero.getLife() <= 0) {
-
                     return;
                 }
                 var eventData = {};
@@ -316,8 +319,8 @@ var HeroListMenu = BattleMenu.extend({
                 dps.setString(hero.getAttack());
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 if (hero.isMaxLevel()) {
-                    otherBtn.btn.setEnabled(false);
-                    otherBtn.btn.setBright(false);
+                    event.setEnabled(false);
+                    event.setBright(false);
                     otherBtn.upMaxText.setVisible(true);
                     otherBtn.buffText.setVisible(false);
                     otherBtn.buffNum.setVisible(false);
@@ -355,7 +358,22 @@ var HeroListMenu = BattleMenu.extend({
             var showEffect = nextEffects[0].value - effects[0].value;
             buffNum_text.setString((showEffect > 0 ? '+' : '-') + Math.abs(showEffect));
         }
-
+        //根据模板生成技能效果描述
+        function buildSkillDesc(skill,levelData){
+            var effects=skill.traverseSkillEffects();
+            var effectsObj={};
+            for(var i in effects){
+                var map=SkillEffectMappings[effects[i]['type']];
+                var alas=map['name'];
+               // var obj= effectsObj[effects[i]['name']]={};
+                var value=effects[i]['value'];
+                effectsObj[effects[i]['name']]={}
+                effectsObj[effects[i]['name']]['name']=alas;
+                effectsObj[effects[i]['name']]['value']=map['type']==='rate'?(value+'%'):value;
+            }
+            var desc=skill.getDesc().mapping(effectsObj)
+            return desc;
+        }
         function buildSkillView(skill) {
             var root = skillTemp.clone();
             var icon = root.getChildByName('skill_icon');
@@ -375,7 +393,8 @@ var HeroListMenu = BattleMenu.extend({
             var level_text = btnlayer.getChildByName('level_text');
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
-            desc.setString(skill.getDesc());
+            desc.ignoreContentAdaptWithSize(true);
+            desc.setString(buildSkillDesc(skill));
             lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
             initSkillView(skill, gold_text, buffNum_text);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
@@ -404,9 +423,6 @@ var HeroListMenu = BattleMenu.extend({
                 skill.upgrade();
                 lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
                 customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
-                //var amount = levelData['upgrade']['value'];
-                //var levelAttack=levelData['attack'];
-
                 if (skill.isMaxLevel()) {
                     otherBtn.btn.setEnabled(false);
                     otherBtn.btn.setBright(false);

@@ -79,6 +79,7 @@ var Skill = function (id, lv) {
             if (key.indexOf("effect") == 0) {
                 var effect = skill[key];
                 effects.push(effect);
+                effect['name']=key;
                 effect.index = parseInt(key.replace("effect", ""));
             }
         }
