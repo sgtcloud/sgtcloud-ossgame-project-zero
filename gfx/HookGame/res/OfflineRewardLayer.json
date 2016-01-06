@@ -290,6 +290,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -628,7 +630,6 @@
                     "LeftMargin": -9.9994,
                     "RightMargin": 179.9994,
                     "TopMargin": 80.0,
-                    "BottomMargin": 0.0,
                     "Tag": 449,
                     "ActionTag": 167233740,
                     "Size": {
@@ -782,6 +783,51 @@
                 },
                 "Name": "box",
                 "ctype": "PanelObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 11,
+                "LabelText": "000",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_green_c.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 112.2722,
+                  "Y": 183.2838
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2495,
+                  "Y": 0.4582
+                },
+                "PreSize": {
+                  "X": 0.08,
+                  "Y": 0.0275
+                },
+                "LeftMargin": 94.2722,
+                "RightMargin": 319.7278,
+                "TopMargin": 211.2162,
+                "BottomMargin": 177.7838,
+                "Tag": 123,
+                "ActionTag": 1832659763,
+                "Size": {
+                  "X": 36.0,
+                  "Y": 11.0
+                },
+                "Name": "text",
+                "ctype": "TextAtlasObjectData"
               }
             ],
             "ActionTag": 877632929,
@@ -801,6 +847,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/font16_green_c.png",
         "buttonUI/font16_yellow_b.png",
         "buttonUI/sure.png",
         "mainUI/bg_04.png",

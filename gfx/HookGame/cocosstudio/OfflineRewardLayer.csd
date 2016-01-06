@@ -59,7 +59,7 @@
                 <PreSize X="0.5867" Y="0.0650" />
                 <FileData Type="Normal" Path="offlineRewardUI/desc.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="offline_btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -132,13 +132,13 @@
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="80.0000" BottomMargin="0.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="80.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                     <Size X="30.0000" Y="30.0000" />
                     <AnchorPoint />
-                    <Position X="-9.9994" Y="0.0000" />
+                    <Position X="-9.9994" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="-0.0500" Y="0.0000" />
+                    <PrePosition X="-0.0500" />
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
                   </AbstractNodeData>
@@ -183,6 +183,16 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="text" ActionTag="1832659763" Tag="123" IconVisible="False" LeftMargin="94.2722" RightMargin="319.7278" TopMargin="211.2162" BottomMargin="177.7838" CharWidth="12" CharHeight="11" LabelText="000" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="36.0000" Y="11.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="112.2722" Y="183.2838" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2495" Y="0.4582" />
+                <PreSize X="0.0800" Y="0.0275" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green_c.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

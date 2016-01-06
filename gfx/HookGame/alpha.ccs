@@ -216,6 +216,7 @@
           <Image Name="revive.png" />
           <Image Name="sure.png" />
           <Image Name="font16_yellow_b.png" />
+          <Image Name="font16_green_c.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">
