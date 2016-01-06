@@ -290,7 +290,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 51.9994,
+                      "X": 53.9994,
                       "Y": 347.9999
                     },
                     "Scale": {
@@ -307,8 +307,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 51.9994,
-                    "RightMargin": -51.9994,
+                    "LeftMargin": 53.9994,
+                    "RightMargin": -53.9994,
                     "TopMargin": -347.9999,
                     "BottomMargin": 347.9999,
                     "Tag": 138,
