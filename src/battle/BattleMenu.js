@@ -293,10 +293,15 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_REVIVE,function(event){
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
+                //hero.getSkills()
             });
 
 
             setElement(root, hero, function (event, otherBtn) {
+                if(hero.getLife()<=0){
+
+                    return ;
+                }
                 var eventData = {};
                 var levelData = hero.getLevelData();
                 var levelAttack = levelData['attack'];

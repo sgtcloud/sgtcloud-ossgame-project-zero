@@ -73,6 +73,9 @@ var Hero = function (heroData) {
     this.getSkillData = function (i) {
         return skills[i];
     };
+    this.getSkills=function(){
+        return skills;
+    }
     this.getLife = function () {
         if (this.isLocked()) {
             return 0;
