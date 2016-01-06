@@ -40,7 +40,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill_text" ActionTag="173337070" Tag="307" IconVisible="False" LeftMargin="118.3578" RightMargin="161.6422" TopMargin="31.3052" BottomMargin="8.6948" IsCustomSize="True" FontSize="16" LabelText="文本描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="skill_text" ActionTag="173337070" Tag="307" IconVisible="False" LeftMargin="118.3578" RightMargin="161.6422" TopMargin="31.3052" BottomMargin="8.6948" IsCustomSize="True" FontSize="14" LabelText="文本描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="320.0000" Y="60.0000" />
                 <AnchorPoint />
                 <Position X="118.3578" Y="8.6948" />
@@ -132,13 +132,13 @@
                     <PreSize X="0.2071" Y="0.4000" />
                     <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="27.6009" BottomMargin="25.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="28.6009" BottomMargin="24.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
                     <Size X="77.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="77.8000" Y="38.8991" />
+                    <Position X="77.8000" Y="37.8991" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5557" Y="0.4862" />
+                    <PrePosition X="0.5557" Y="0.4737" />
                     <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
@@ -162,13 +162,13 @@
                     <PreSize X="0.0857" Y="0.1500" />
                     <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="cut" ActionTag="2060854591" Tag="18" IconVisible="False" LeftMargin="33.5678" RightMargin="93.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="cut" ActionTag="2060854591" Tag="18" IconVisible="False" LeftMargin="34.5678" RightMargin="92.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
                     <Size X="13.0000" Y="13.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="40.0678" Y="19.6276" />
+                    <Position X="41.0678" Y="19.6276" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2862" Y="0.2453" />
+                    <PrePosition X="0.2933" Y="0.2453" />
                     <PreSize X="0.0929" Y="0.1625" />
                     <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
                   </AbstractNodeData>
