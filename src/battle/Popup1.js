@@ -13,7 +13,8 @@ var Popup1 = cc.Node.extend({
         var root = prompt1Layer.getChildByName('root');
         root.getChildByName("desc_text").setString(content);
         root.getChildByName("title_text").setString(title);
-        var btn = root.getChildByName("btn");
+        root.getChildByName("box").setVisible(false);
+        var btn = root.getChildByName("btn").getChildByName("btn");
 
         bindButtonCallback(btn, function () {
             if (_callback && !_callback(e)) {

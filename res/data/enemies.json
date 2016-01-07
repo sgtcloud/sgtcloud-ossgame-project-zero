@@ -1,106 +1,106 @@
 {
   "e1001": {
     "file": "enemy_1001_json",
-    "name": "我是敌人一",
+    "name": "森林守卫",
     "icon": "e1001.png",
     "levelDatas": [
       {
         "level": 10,
-        "life": 118,
-        "attack": 7,
+        "life": 249,
+        "attack": 21,
         "atk_period": 2.5,
         "bonus": {
-          "value": 236,
+          "value": 77,
           "unit": "gold"
         }
       },
       {
         "level": 9,
-        "life": 107,
-        "attack": 6,
+        "life": 216,
+        "attack": 18,
         "atk_period": 2.5,
         "bonus": {
-          "value": 214,
+          "value": 69,
           "unit": "gold"
         }
       },
       {
         "level": 8,
-        "life": 97,
-        "attack": 5,
+        "life": 187,
+        "attack": 15,
         "atk_period": 2.5,
         "bonus": {
-          "value": 195,
+          "value": 61,
           "unit": "gold"
         }
       },
       {
         "level": 7,
-        "life": 89,
-        "attack": 4,
+        "life": 160,
+        "attack": 12,
         "atk_period": 2.5,
         "bonus": {
-          "value": 177,
+          "value": 54,
           "unit": "gold"
         }
       },
       {
         "level": 6,
-        "life": 81,
-        "attack": 3,
+        "life": 135,
+        "attack": 9,
         "atk_period": 2.5,
         "bonus": {
-          "value": 161,
+          "value": 47,
           "unit": "gold"
         }
       },
       {
         "level": 5,
-        "life": 73,
-        "attack": 2,
+        "life": 114,
+        "attack": 7,
         "atk_period": 2.5,
         "bonus": {
-          "value": 146,
+          "value": 41,
           "unit": "gold"
         }
       },
       {
         "level": 4,
-        "life": 67,
-        "attack": 2,
+        "life": 94,
+        "attack": 5,
         "atk_period": 2.5,
         "bonus": {
-          "value": 133,
+          "value": 35,
           "unit": "gold"
         }
       },
       {
         "level": 3,
-        "life": 61,
-        "attack": 2,
+        "life": 77,
+        "attack": 4,
         "atk_period": 2.5,
         "bonus": {
-          "value": 121,
+          "value": 29,
           "unit": "gold"
         }
       },
       {
         "level": 2,
-        "life": 55,
-        "attack": 1,
+        "life": 63,
+        "attack": 3,
         "atk_period": 2.5,
         "bonus": {
-          "value": 110,
+          "value": 24,
           "unit": "gold"
         }
       },
       {
         "level": 1,
         "life": 50,
-        "attack": 1,
+        "attack": 2,
         "atk_period": 2.5,
         "bonus": {
-          "value": 100,
+          "value": 20,
           "unit": "gold"
         }
       }
@@ -108,193 +108,86 @@
   },
   "e1002": {
     "file": "enemy_1002_json",
-    "name": "我是敌人二",
+    "name": "魔塔女妖",
     "icon": "e1002.png",
     "levelDatas": [
       {
         "level": 10,
-        "life": 141,
-        "attack": 15,
-        "atk_period": 2.3,
+        "life": 286,
+        "attack": 24,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 283,
+          "value": 86,
           "unit": "gold"
         }
       },
       {
         "level": 9,
-        "life": 129,
-        "attack": 12,
-        "atk_period": 2.3,
+        "life": 249,
+        "attack": 21,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 257,
+          "value": 77,
           "unit": "gold"
         }
       },
       {
         "level": 8,
-        "life": 117,
-        "attack": 10,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 234,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 7,
-        "life": 106,
-        "attack": 8,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 213,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 6,
-        "life": 97,
-        "attack": 6,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 193,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 5,
-        "life": 88,
-        "attack": 5,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 176,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 4,
-        "life": 80,
-        "attack": 4,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 160,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 3,
-        "life": 73,
-        "attack": 3,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 145,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 2,
-        "life": 66,
-        "attack": 3,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 132,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 1,
-        "life": 60,
-        "attack": 2,
-        "atk_period": 2.3,
-        "bonus": {
-          "value": 120,
-          "unit": "gold"
-        }
-      }
-    ]
-  },
-  "e1003": {
-    "file": "enemy_1003_json",
-    "name": "我是敌人三",
-    "icon": "e1003.png",
-    "levelDatas": [
-      {
-        "level": 10,
-        "life": 165,
-        "attack": 22,
-        "atk_period": 2.1,
-        "bonus": {
-          "value": 330,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 9,
-        "life": 150,
+        "life": 216,
         "attack": 18,
-        "atk_period": 2.1,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 300,
-          "unit": "gold"
-        }
-      },
-      {
-        "level": 8,
-        "life": 136,
-        "attack": 14,
-        "atk_period": 2.1,
-        "bonus": {
-          "value": 273,
+          "value": 69,
           "unit": "gold"
         }
       },
       {
         "level": 7,
-        "life": 124,
-        "attack": 11,
-        "atk_period": 2.1,
+        "life": 187,
+        "attack": 15,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 248,
+          "value": 61,
           "unit": "gold"
         }
       },
       {
         "level": 6,
-        "life": 113,
-        "attack": 9,
-        "atk_period": 2.1,
+        "life": 160,
+        "attack": 12,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 225,
+          "value": 54,
           "unit": "gold"
         }
       },
       {
         "level": 5,
-        "life": 102,
-        "attack": 7,
-        "atk_period": 2.1,
+        "life": 135,
+        "attack": 9,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 205,
+          "value": 47,
           "unit": "gold"
         }
       },
       {
         "level": 4,
-        "life": 93,
-        "attack": 6,
-        "atk_period": 2.1,
+        "life": 114,
+        "attack": 7,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 186,
+          "value": 41,
           "unit": "gold"
         }
       },
       {
         "level": 3,
-        "life": 85,
+        "life": 94,
         "attack": 5,
-        "atk_period": 2.1,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 169,
+          "value": 35,
           "unit": "gold"
         }
       },
@@ -302,19 +195,126 @@
         "level": 2,
         "life": 77,
         "attack": 4,
-        "atk_period": 2.1,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 154,
+          "value": 29,
           "unit": "gold"
         }
       },
       {
         "level": 1,
-        "life": 70,
+        "life": 63,
         "attack": 3,
-        "atk_period": 2.1,
+        "atk_period": 2.7,
         "bonus": {
-          "value": 140,
+          "value": 24,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e1003": {
+    "file": "enemy_1003_json",
+    "name": "寒霜幽魂",
+    "icon": "e1003.png",
+    "levelDatas": [
+      {
+        "level": 10,
+        "life": 368,
+        "attack": 31,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 105,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 325,
+        "attack": 28,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 96,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 286,
+        "attack": 24,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 86,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 249,
+        "attack": 21,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 77,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 216,
+        "attack": 18,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 69,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 187,
+        "attack": 15,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 61,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 160,
+        "attack": 12,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 54,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 135,
+        "attack": 9,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 47,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 114,
+        "attack": 7,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 41,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 94,
+        "attack": 5,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 35,
           "unit": "gold"
         }
       }
@@ -322,106 +322,106 @@
   },
   "e1004": {
     "file": "enemy_1004_json",
-    "name": "我是敌人四",
+    "name": "荒野石像",
     "icon": "e1004.png",
     "levelDatas": [
       {
         "level": 10,
-        "life": 189,
-        "attack": 30,
-        "atk_period": 2.8,
+        "life": 465,
+        "attack": 40,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 377,
+          "value": 126,
           "unit": "gold"
         }
       },
       {
         "level": 9,
-        "life": 171,
-        "attack": 24,
-        "atk_period": 2.8,
+        "life": 414,
+        "attack": 35,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 343,
+          "value": 116,
           "unit": "gold"
         }
       },
       {
         "level": 8,
-        "life": 156,
-        "attack": 19,
-        "atk_period": 2.8,
+        "life": 368,
+        "attack": 31,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 312,
+          "value": 105,
           "unit": "gold"
         }
       },
       {
         "level": 7,
-        "life": 142,
-        "attack": 15,
-        "atk_period": 2.8,
+        "life": 325,
+        "attack": 28,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 283,
+          "value": 96,
           "unit": "gold"
         }
       },
       {
         "level": 6,
-        "life": 129,
-        "attack": 12,
-        "atk_period": 2.8,
+        "life": 286,
+        "attack": 24,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 258,
+          "value": 86,
           "unit": "gold"
         }
       },
       {
         "level": 5,
-        "life": 117,
-        "attack": 10,
-        "atk_period": 2.8,
+        "life": 249,
+        "attack": 21,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 234,
+          "value": 77,
           "unit": "gold"
         }
       },
       {
         "level": 4,
-        "life": 106,
-        "attack": 8,
-        "atk_period": 2.8,
+        "life": 216,
+        "attack": 18,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 213,
+          "value": 69,
           "unit": "gold"
         }
       },
       {
         "level": 3,
-        "life": 97,
-        "attack": 6,
-        "atk_period": 2.8,
+        "life": 187,
+        "attack": 15,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 194,
+          "value": 61,
           "unit": "gold"
         }
       },
       {
         "level": 2,
-        "life": 88,
-        "attack": 5,
-        "atk_period": 2.8,
+        "life": 160,
+        "attack": 12,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 176,
+          "value": 54,
           "unit": "gold"
         }
       },
       {
         "level": 1,
-        "life": 80,
-        "attack": 4,
-        "atk_period": 2.8,
+        "life": 135,
+        "attack": 9,
+        "atk_period": 2.6,
         "bonus": {
-          "value": 160,
+          "value": 47,
           "unit": "gold"
         }
       }
@@ -429,106 +429,106 @@
   },
   "e1005": {
     "file": "enemy_1005_json",
-    "name": "我是敌人五",
+    "name": "千年木灵",
     "icon": "e1005.png",
     "levelDatas": [
       {
         "level": 10,
-        "life": 354,
-        "attack": 75,
-        "atk_period": 1.8,
+        "life": 577,
+        "attack": 48,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 7689,
+          "value": 149,
           "unit": "gold"
         }
       },
       {
         "level": 9,
-        "life": 322,
-        "attack": 60,
-        "atk_period": 1.8,
+        "life": 519,
+        "attack": 44,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 5126,
+          "value": 138,
           "unit": "gold"
         }
       },
       {
         "level": 8,
-        "life": 292,
-        "attack": 48,
-        "atk_period": 1.8,
+        "life": 465,
+        "attack": 40,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 3417,
+          "value": 126,
           "unit": "gold"
         }
       },
       {
         "level": 7,
-        "life": 266,
-        "attack": 38,
-        "atk_period": 1.8,
+        "life": 414,
+        "attack": 35,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 2278,
+          "value": 116,
           "unit": "gold"
         }
       },
       {
         "level": 6,
-        "life": 242,
+        "life": 368,
         "attack": 31,
-        "atk_period": 1.8,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 1519,
+          "value": 105,
           "unit": "gold"
         }
       },
       {
         "level": 5,
-        "life": 220,
-        "attack": 24,
-        "atk_period": 1.8,
+        "life": 325,
+        "attack": 28,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 1013,
+          "value": 96,
           "unit": "gold"
         }
       },
       {
         "level": 4,
-        "life": 200,
-        "attack": 20,
-        "atk_period": 1.8,
+        "life": 286,
+        "attack": 24,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 675,
+          "value": 86,
           "unit": "gold"
         }
       },
       {
         "level": 3,
-        "life": 182,
-        "attack": 16,
-        "atk_period": 1.8,
+        "life": 249,
+        "attack": 21,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 450,
+          "value": 77,
           "unit": "gold"
         }
       },
       {
         "level": 2,
-        "life": 165,
-        "attack": 13,
-        "atk_period": 1.8,
+        "life": 216,
+        "attack": 18,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 300,
+          "value": 69,
           "unit": "gold"
         }
       },
       {
         "level": 1,
-        "life": 150,
-        "attack": 10,
-        "atk_period": 1.8,
+        "life": 187,
+        "attack": 15,
+        "atk_period": 2.4,
         "bonus": {
-          "value": 200,
+          "value": 61,
           "unit": "gold"
         }
       }

@@ -522,7 +522,7 @@ var EquipListMenu = BattleMenu.extend({
             name.setString(hero.getName());
             lv.setString(hero.getLv());
             dps.setString(hero.getAttack());
-            tap.setString(hero.getHit());
+            //tap.setString(hero.getHit());
 
             return root;
         }
@@ -598,7 +598,13 @@ var ShopLayerMenu = BattleMenu.extend({
             for (var i in this.buttons) {
                 this.buttons[i].setSelected(false);
             }
-
+            switch(name){
+                case "shop_tab":
+                    self.showPorpView();
+                    break;
+                case "moneyTree_tab":
+                    break;
+            }
             var childrens = shopView.getChildren();
             for(var i in childrens){
                 childrens[i].setVisible(false);
@@ -607,11 +613,13 @@ var ShopLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
         this.showPorpView = function(){
-            var shopPorps = shopView.getChildByName("shop");
+            var shopPorps = shopView.getChildByName("shop_tab");
             var goods = dataSource.goods;
+            var n = 0;
             for(var i in goods){
+                n ++;
                 var equip = dataSource.equips[goods[i].propId];
-                var shopPorp = shopPorps.getChildByName("item"+(i+1)).getChildByName("root");
+                var shopPorp = shopPorps.getChildByName("item"+n).getChildByName("root");
                 var itemLayer = shopPorp.getChildByName("itemLayer").getChildByName("root");
 
                 var saleText = itemLayer.getChildByName("sale_text");
@@ -626,8 +634,8 @@ var ShopLayerMenu = BattleMenu.extend({
                 var res = shopPorp.getChildByName("res");
 
                 var childrens = res.getChildren();
-                for(var i in childrens){
-                    childrens[i].setVisible(false);
+                for(var j in childrens){
+                    childrens[j].setVisible(false);
                 }
                 res.getChildByName(goods[i].price.unit).setVisible(true);
 
@@ -637,21 +645,35 @@ var ShopLayerMenu = BattleMenu.extend({
                 resSaleText.setString(goods[i].price.value);
 
                 var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
-
-                bindButtonCallback(buyBtn,function(){
+                var price = goods[i].price;
+                self.clickBtn(buyBtn,price,goods[i]);
+                /*bindButtonCallback(buyBtn,function(){
                     self.buyGoods(goods[i].price);
-                });
+                });*/
             }
         };
-        this.buyGoods = function(data){
+        this.clickBtn = function(buyBtn,price,goods){
+            buyBtn.addClickEventListener(function () {
+                self.buyGoods(price,goods);
+            });
+        }
+        this.buyGoods = function(data,goods){
             if(/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value){
                 PlayerData.consumeResource([PlayerData.createResourceData(data.unit,-data.value)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                new Popup1("友情提示","购买成功");
+                player.packs.push({
+                    "packType":"equip",
+                    "relateId":goods.propId,
+                    "num":goods.num,
+                    "level":1
+                });
+                //new Popup1("友情提示","购买成功");
             }else{
                 new Popup1("友情提示","当前金币不足，购买失败");
             }
         };
+        this.showPorpView();
     }
+
 });

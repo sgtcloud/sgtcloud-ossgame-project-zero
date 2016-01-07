@@ -1,6 +1,6 @@
-{"h101": {
+{ "h101":{
   "file" : "hero_101_json",
-  "name" : "我是英雄一",
+  "name" : "杀戮天使",
   "desc" : "描述",
   "icon" : "h101.png",
   "skills" : [ "s10101", "s10102" ],
@@ -11,12 +11,12 @@
   },
   "levelDatas" : [ {
     "level" : 10,
-    "life" : 943,
-    "attack" : 37,
-    "tap" : 37,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 219,
+    "attack" : 36,
+    "tap" : 36,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -25,17 +25,17 @@
       }
     },
     "upgrade" : {
-      "value" : 769,
+      "value" : 209,
       "unit" : "gold"
     }
   }, {
     "level" : 9,
-    "life" : 857,
-    "attack" : 30,
-    "tap" : 30,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 189,
+    "attack" : 31,
+    "tap" : 31,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -44,55 +44,17 @@
       }
     },
     "upgrade" : {
-      "value" : 513,
+      "value" : 179,
       "unit" : "gold"
     }
   }, {
     "level" : 8,
-    "life" : 779,
-    "attack" : 24,
-    "tap" : 24,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
-    "resurge" : {
-      "time" : 10,
-      "cost" : {
-        "value" : 10,
-        "unit" : "gem"
-      }
-    },
-    "upgrade" : {
-      "value" : 342,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 7,
-    "life" : 709,
-    "attack" : 19,
-    "tap" : 19,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
-    "resurge" : {
-      "time" : 10,
-      "cost" : {
-        "value" : 10,
-        "unit" : "gem"
-      }
-    },
-    "upgrade" : {
-      "value" : 228,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 6,
-    "life" : 644,
-    "attack" : 15,
-    "tap" : 15,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 162,
+    "attack" : 27,
+    "tap" : 27,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -105,13 +67,13 @@
       "unit" : "gold"
     }
   }, {
-    "level" : 5,
-    "life" : 586,
-    "attack" : 12,
-    "tap" : 12,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "level" : 7,
+    "life" : 137,
+    "attack" : 22,
+    "tap" : 22,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -120,17 +82,55 @@
       }
     },
     "upgrade" : {
-      "value" : 101,
+      "value" : 128,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 6,
+    "life" : 115,
+    "attack" : 19,
+    "tap" : 19,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
+    "resurge" : {
+      "time" : 10,
+      "cost" : {
+        "value" : 10,
+        "unit" : "gem"
+      }
+    },
+    "upgrade" : {
+      "value" : 107,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 5,
+    "life" : 96,
+    "attack" : 15,
+    "tap" : 15,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
+    "resurge" : {
+      "time" : 10,
+      "cost" : {
+        "value" : 10,
+        "unit" : "gem"
+      }
+    },
+    "upgrade" : {
+      "value" : 88,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
-    "life" : 532,
-    "attack" : 10,
-    "tap" : 10,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 79,
+    "attack" : 12,
+    "tap" : 12,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -139,17 +139,36 @@
       }
     },
     "upgrade" : {
-      "value" : 68,
+      "value" : 72,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
-    "life" : 484,
-    "attack" : 8,
-    "tap" : 8,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 64,
+    "attack" : 9,
+    "tap" : 9,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
+    "resurge" : {
+      "time" : 10,
+      "cost" : {
+        "value" : 10,
+        "unit" : "gem"
+      }
+    },
+    "upgrade" : {
+      "value" : 57,
+      "unit" : "gold"
+    }
+  }, {
+    "level" : 2,
+    "life" : 51,
+    "attack" : 7,
+    "tap" : 7,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -162,32 +181,13 @@
       "unit" : "gold"
     }
   }, {
-    "level" : 2,
-    "life" : 440,
-    "attack" : 6,
-    "tap" : 6,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
-    "resurge" : {
-      "time" : 10,
-      "cost" : {
-        "value" : 10,
-        "unit" : "gem"
-      }
-    },
-    "upgrade" : {
-      "value" : 30,
-      "unit" : "gold"
-    }
-  }, {
     "level" : 1,
-    "life" : 400,
+    "life" : 40,
     "attack" : 5,
     "tap" : 5,
-    "atk_period" : 1.1,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "atk_period" : 1.5,
+    "ctr_chance" : 0.15,
+    "ctr_modify" : 2.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -196,13 +196,13 @@
       }
     },
     "upgrade" : {
-      "value" : 20,
+      "value" : 35,
       "unit" : "gold"
     }
   } ]
-},"h102": {
+},  "h102":{
   "file" : "hero_102_json",
-  "name" : "我是英雄二",
+  "name" : "刀锋之影",
   "desc" : "描述",
   "icon" : "h102.png",
   "skills" : [ "s10201", "s10202" ],
@@ -213,12 +213,12 @@
   },
   "levelDatas" : [ {
     "level" : 10,
-    "life" : 1061,
-    "attack" : 60,
-    "tap" : 60,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 524,
+    "attack" : 57,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -227,17 +227,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1922,
+      "value" : 516,
       "unit" : "gold"
     }
   }, {
     "level" : 9,
-    "life" : 965,
-    "attack" : 48,
-    "tap" : 48,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 469,
+    "attack" : 51,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -246,17 +246,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1281,
+      "value" : 461,
       "unit" : "gold"
     }
   }, {
     "level" : 8,
-    "life" : 877,
-    "attack" : 38,
-    "tap" : 38,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 419,
+    "attack" : 46,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -265,17 +265,17 @@
       }
     },
     "upgrade" : {
-      "value" : 854,
+      "value" : 409,
       "unit" : "gold"
     }
   }, {
     "level" : 7,
-    "life" : 797,
-    "attack" : 31,
-    "tap" : 31,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 372,
+    "attack" : 41,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -284,17 +284,17 @@
       }
     },
     "upgrade" : {
-      "value" : 570,
+      "value" : 362,
       "unit" : "gold"
     }
   }, {
     "level" : 6,
-    "life" : 725,
-    "attack" : 24,
-    "tap" : 24,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 329,
+    "attack" : 36,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -303,17 +303,17 @@
       }
     },
     "upgrade" : {
-      "value" : 380,
+      "value" : 318,
       "unit" : "gold"
     }
   }, {
     "level" : 5,
-    "life" : 659,
-    "attack" : 20,
-    "tap" : 20,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 289,
+    "attack" : 31,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -322,17 +322,17 @@
       }
     },
     "upgrade" : {
-      "value" : 253,
+      "value" : 278,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
-    "life" : 599,
-    "attack" : 16,
-    "tap" : 16,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 252,
+    "attack" : 27,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -341,17 +341,17 @@
       }
     },
     "upgrade" : {
-      "value" : 169,
+      "value" : 242,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
-    "life" : 545,
-    "attack" : 13,
-    "tap" : 13,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 219,
+    "attack" : 22,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -360,17 +360,17 @@
       }
     },
     "upgrade" : {
-      "value" : 113,
+      "value" : 209,
       "unit" : "gold"
     }
   }, {
     "level" : 2,
-    "life" : 495,
-    "attack" : 10,
-    "tap" : 10,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 189,
+    "attack" : 19,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -379,17 +379,17 @@
       }
     },
     "upgrade" : {
-      "value" : 75,
+      "value" : 179,
       "unit" : "gold"
     }
   }, {
     "level" : 1,
-    "life" : 450,
-    "attack" : 8,
-    "tap" : 8,
-    "atk_period" : 1.2,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 162,
+    "attack" : 15,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.20,
+    "ctr_modify" : 2.25,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -398,13 +398,13 @@
       }
     },
     "upgrade" : {
-      "value" : 50,
+      "value" : 152,
       "unit" : "gold"
     }
   } ]
-},"h103": {
+},  "h103":{
   "file" : "hero_103_json",
-  "name" : "我是英雄三",
+  "name" : "驱魔剑士",
   "desc" : "描述",
   "icon" : "h103.png",
   "skills" : [ "s10301", "s10302" ],
@@ -415,12 +415,12 @@
   },
   "levelDatas" : [ {
     "level" : 10,
-    "life" : 1179,
-    "attack" : 75,
-    "tap" : 75,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 1026,
+    "attack" : 84,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -429,17 +429,17 @@
       }
     },
     "upgrade" : {
-      "value" : 3844,
+      "value" : 1034,
       "unit" : "gold"
     }
   }, {
     "level" : 9,
-    "life" : 1072,
-    "attack" : 60,
-    "tap" : 60,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 940,
+    "attack" : 77,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -448,17 +448,17 @@
       }
     },
     "upgrade" : {
-      "value" : 2563,
+      "value" : 945,
       "unit" : "gold"
     }
   }, {
     "level" : 8,
-    "life" : 974,
-    "attack" : 48,
-    "tap" : 48,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 859,
+    "attack" : 70,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -467,17 +467,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1709,
+      "value" : 862,
       "unit" : "gold"
     }
   }, {
     "level" : 7,
-    "life" : 886,
-    "attack" : 38,
-    "tap" : 38,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 783,
+    "attack" : 64,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -486,17 +486,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1139,
+      "value" : 783,
       "unit" : "gold"
     }
   }, {
     "level" : 6,
-    "life" : 805,
-    "attack" : 31,
-    "tap" : 31,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 712,
+    "attack" : 57,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -505,17 +505,17 @@
       }
     },
     "upgrade" : {
-      "value" : 759,
+      "value" : 709,
       "unit" : "gold"
     }
   }, {
     "level" : 5,
-    "life" : 732,
-    "attack" : 24,
-    "tap" : 24,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 645,
+    "attack" : 51,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -524,17 +524,17 @@
       }
     },
     "upgrade" : {
-      "value" : 506,
+      "value" : 640,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
-    "life" : 666,
-    "attack" : 20,
-    "tap" : 20,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 582,
+    "attack" : 46,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -543,17 +543,17 @@
       }
     },
     "upgrade" : {
-      "value" : 338,
+      "value" : 576,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
-    "life" : 605,
-    "attack" : 16,
-    "tap" : 16,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 524,
+    "attack" : 41,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -562,17 +562,17 @@
       }
     },
     "upgrade" : {
-      "value" : 225,
+      "value" : 516,
       "unit" : "gold"
     }
   }, {
     "level" : 2,
-    "life" : 550,
-    "attack" : 13,
-    "tap" : 13,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 469,
+    "attack" : 36,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -581,17 +581,17 @@
       }
     },
     "upgrade" : {
-      "value" : 150,
+      "value" : 461,
       "unit" : "gold"
     }
   }, {
     "level" : 1,
-    "life" : 500,
-    "attack" : 10,
-    "tap" : 10,
-    "atk_period" : 1.3,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 419,
+    "attack" : 31,
+    "tap" : 0,
+    "atk_period" : 1.4,
+    "ctr_chance" : 0.25,
+    "ctr_modify" : 2.00,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -600,13 +600,13 @@
       }
     },
     "upgrade" : {
-      "value" : 100,
+      "value" : 409,
       "unit" : "gold"
     }
   } ]
-},"h104": {
+}, "h104": {
   "file" : "hero_104_json",
-  "name" : "我是英雄四",
+  "name" : "猎魔射手",
   "desc" : "描述",
   "icon" : "h104.png",
   "skills" : [ "s10401", "s10402" ],
@@ -617,12 +617,12 @@
   },
   "levelDatas" : [ {
     "level" : 10,
-    "life" : 1297,
-    "attack" : 89,
-    "tap" : 89,
+    "life" : 1772,
+    "attack" : 115,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -631,17 +631,17 @@
       }
     },
     "upgrade" : {
-      "value" : 7689,
+      "value" : 1816,
       "unit" : "gold"
     }
   }, {
     "level" : 9,
-    "life" : 1179,
-    "attack" : 72,
-    "tap" : 72,
+    "life" : 1649,
+    "attack" : 107,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -650,17 +650,17 @@
       }
     },
     "upgrade" : {
-      "value" : 5126,
+      "value" : 1686,
       "unit" : "gold"
     }
   }, {
     "level" : 8,
-    "life" : 1072,
-    "attack" : 57,
-    "tap" : 57,
+    "life" : 1532,
+    "attack" : 99,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -669,17 +669,17 @@
       }
     },
     "upgrade" : {
-      "value" : 3417,
+      "value" : 1563,
       "unit" : "gold"
     }
   }, {
     "level" : 7,
-    "life" : 974,
-    "attack" : 46,
-    "tap" : 46,
+    "life" : 1420,
+    "attack" : 91,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -688,17 +688,17 @@
       }
     },
     "upgrade" : {
-      "value" : 2278,
+      "value" : 1445,
       "unit" : "gold"
     }
   }, {
     "level" : 6,
-    "life" : 886,
-    "attack" : 37,
-    "tap" : 37,
+    "life" : 1313,
+    "attack" : 84,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -707,17 +707,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1519,
+      "value" : 1334,
       "unit" : "gold"
     }
   }, {
     "level" : 5,
-    "life" : 805,
-    "attack" : 29,
-    "tap" : 29,
+    "life" : 1212,
+    "attack" : 77,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -726,17 +726,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1013,
+      "value" : 1228,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
-    "life" : 732,
-    "attack" : 23,
-    "tap" : 23,
+    "life" : 1116,
+    "attack" : 70,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -745,17 +745,17 @@
       }
     },
     "upgrade" : {
-      "value" : 675,
+      "value" : 1128,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
-    "life" : 666,
-    "attack" : 19,
-    "tap" : 19,
+    "life" : 1026,
+    "attack" : 64,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -764,17 +764,17 @@
       }
     },
     "upgrade" : {
-      "value" : 450,
+      "value" : 1034,
       "unit" : "gold"
     }
   }, {
     "level" : 2,
-    "life" : 605,
-    "attack" : 15,
-    "tap" : 15,
+    "life" : 940,
+    "attack" : 57,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -783,17 +783,17 @@
       }
     },
     "upgrade" : {
-      "value" : 300,
+      "value" : 945,
       "unit" : "gold"
     }
   }, {
     "level" : 1,
-    "life" : 550,
-    "attack" : 12,
-    "tap" : 12,
+    "life" : 859,
+    "attack" : 51,
+    "tap" : 0,
     "atk_period" : 1.4,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "ctr_chance" : 0.30,
+    "ctr_modify" : 1.75,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -802,13 +802,13 @@
       }
     },
     "upgrade" : {
-      "value" : 200,
+      "value" : 862,
       "unit" : "gold"
     }
   } ]
-},"h105": {
+}, "h105": {
   "file" : "hero_105_json",
-  "name" : "我是英雄五",
+  "name" : "屠魔骑士",
   "desc" : "描述",
   "icon" : "h105.png",
   "skills" : [ "s10501", "s10502" ],
@@ -819,12 +819,12 @@
   },
   "levelDatas" : [ {
     "level" : 10,
-    "life" : 1415,
-    "attack" : 112,
-    "tap" : 112,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2984,
+    "attack" : 141,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -833,17 +833,17 @@
       }
     },
     "upgrade" : {
-      "value" : 19222,
+      "value" : 3101,
       "unit" : "gold"
     }
   }, {
     "level" : 9,
-    "life" : 1286,
-    "attack" : 89,
-    "tap" : 89,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2809,
+    "attack" : 132,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -852,17 +852,17 @@
       }
     },
     "upgrade" : {
-      "value" : 12814,
+      "value" : 2915,
       "unit" : "gold"
     }
   }, {
     "level" : 8,
-    "life" : 1169,
-    "attack" : 72,
-    "tap" : 72,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2642,
+    "attack" : 123,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -871,17 +871,17 @@
       }
     },
     "upgrade" : {
-      "value" : 8543,
+      "value" : 2737,
       "unit" : "gold"
     }
   }, {
     "level" : 7,
-    "life" : 1063,
-    "attack" : 57,
-    "tap" : 57,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2481,
+    "attack" : 115,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -890,17 +890,17 @@
       }
     },
     "upgrade" : {
-      "value" : 5695,
+      "value" : 2566,
       "unit" : "gold"
     }
   }, {
     "level" : 6,
-    "life" : 966,
-    "attack" : 46,
-    "tap" : 46,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2326,
+    "attack" : 107,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -909,17 +909,17 @@
       }
     },
     "upgrade" : {
-      "value" : 3797,
+      "value" : 2402,
       "unit" : "gold"
     }
   }, {
     "level" : 5,
-    "life" : 878,
-    "attack" : 37,
-    "tap" : 37,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2179,
+    "attack" : 99,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -928,17 +928,17 @@
       }
     },
     "upgrade" : {
-      "value" : 2531,
+      "value" : 2245,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
-    "life" : 799,
-    "attack" : 29,
-    "tap" : 29,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 2037,
+    "attack" : 91,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -947,17 +947,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1688,
+      "value" : 2096,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
-    "life" : 726,
-    "attack" : 23,
-    "tap" : 23,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 1902,
+    "attack" : 84,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -966,17 +966,17 @@
       }
     },
     "upgrade" : {
-      "value" : 1125,
+      "value" : 1953,
       "unit" : "gold"
     }
   }, {
     "level" : 2,
-    "life" : 660,
-    "attack" : 19,
-    "tap" : 19,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 1772,
+    "attack" : 77,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -985,17 +985,17 @@
       }
     },
     "upgrade" : {
-      "value" : 750,
+      "value" : 1816,
       "unit" : "gold"
     }
   }, {
     "level" : 1,
-    "life" : 600,
-    "attack" : 15,
-    "tap" : 15,
-    "atk_period" : 1.5,
-    "ctr_chance" : 1,
-    "ctr_modify" : 1,
+    "life" : 1649,
+    "attack" : 70,
+    "tap" : 0,
+    "atk_period" : 1.3,
+    "ctr_chance" : 0.35,
+    "ctr_modify" : 1.50,
     "resurge" : {
       "time" : 10,
       "cost" : {
@@ -1004,7 +1004,7 @@
       }
     },
     "upgrade" : {
-      "value" : 500,
+      "value" : 1686,
       "unit" : "gold"
     }
   } ]
