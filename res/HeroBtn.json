@@ -500,52 +500,47 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "已满级",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/MaxLevel.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "Scale9Width": 77,
+                "Scale9Height": 27,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 47.0003,
-                  "Y": 30.0
+                  "X": 77.9849,
+                  "Y": 33.0751
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3357,
-                  "Y": 0.375
+                  "X": 0.557,
+                  "Y": 0.4134
                 },
                 "PreSize": {
-                  "X": 0.4286,
-                  "Y": 0.25
+                  "X": 0.55,
+                  "Y": 0.3375
                 },
-                "LeftMargin": 47.0003,
-                "RightMargin": 32.9997,
-                "TopMargin": 30.0,
-                "BottomMargin": 30.0,
-                "Tag": 597,
-                "ActionTag": -559954175,
+                "LeftMargin": 39.4849,
+                "RightMargin": 23.5151,
+                "TopMargin": 33.4249,
+                "BottomMargin": 19.5751,
+                "Tag": 701,
+                "ActionTag": 682009692,
                 "Size": {
-                  "X": 60.0,
-                  "Y": 20.0
+                  "X": 77.0,
+                  "Y": 27.0
                 },
                 "Name": "upMax_text",
-                "ctype": "TextObjectData"
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -390795579,
@@ -565,6 +560,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/MaxLevel.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png",

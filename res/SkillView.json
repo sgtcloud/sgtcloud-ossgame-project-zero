@@ -147,8 +147,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 70.0
+                  "X": 119.0,
+                  "Y": 73.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -161,17 +161,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.7
+                  "X": 0.1983,
+                  "Y": 0.73
                 },
                 "PreSize": {
                   "X": 0.2,
                   "Y": 0.2
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 360.0,
-                "TopMargin": 10.0,
-                "BottomMargin": 70.0,
+                "LeftMargin": 119.0,
+                "RightMargin": 361.0,
+                "TopMargin": 7.0,
+                "BottomMargin": 73.0,
                 "Tag": 306,
                 "ActionTag": 1868296756,
                 "Size": {
@@ -182,8 +182,9 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 18,
-                "LabelText": "技能描述文字",
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "文本描述",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -197,8 +198,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 45.0
+                  "X": 118.3578,
+                  "Y": 8.6948
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -211,22 +212,22 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.45
+                  "X": 0.1973,
+                  "Y": 0.0869
                 },
                 "PreSize": {
-                  "X": 0.18,
-                  "Y": 0.18
+                  "X": 0.5333,
+                  "Y": 0.6
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 372.0,
-                "TopMargin": 37.0,
-                "BottomMargin": 45.0,
+                "LeftMargin": 118.3578,
+                "RightMargin": 161.6422,
+                "TopMargin": 31.3052,
+                "BottomMargin": 8.6948,
                 "Tag": 307,
                 "ActionTag": 173337070,
                 "Size": {
-                  "X": 108.0,
-                  "Y": 18.0
+                  "X": 320.0,
+                  "Y": 60.0
                 },
                 "Name": "skill_text",
                 "ctype": "TextObjectData"
@@ -247,8 +248,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 270.0,
-                  "Y": 70.0
+                  "X": 269.0,
+                  "Y": 73.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -261,17 +262,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.45,
-                  "Y": 0.7
+                  "X": 0.4483,
+                  "Y": 0.73
                 },
                 "PreSize": {
                   "X": 0.12,
                   "Y": 0.18
                 },
-                "LeftMargin": 270.0,
-                "RightMargin": 258.0,
-                "TopMargin": 12.0,
-                "BottomMargin": 70.0,
+                "LeftMargin": 269.0,
+                "RightMargin": 259.0,
+                "TopMargin": 9.0,
+                "BottomMargin": 73.0,
                 "Tag": 342,
                 "ActionTag": -1686192480,
                 "Size": {
@@ -403,7 +404,7 @@
                     "Scale9Height": 30,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 40.6188,
+                      "X": 31.6191,
                       "Y": 53.5975
                     },
                     "Scale": {
@@ -413,15 +414,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2901,
+                      "X": 0.2259,
                       "Y": 0.67
                     },
                     "PreSize": {
                       "X": 0.1071,
                       "Y": 0.1875
                     },
-                    "LeftMargin": 40.6188,
-                    "RightMargin": 84.3812,
+                    "LeftMargin": 31.6191,
+                    "RightMargin": 93.3809,
                     "TopMargin": 11.4025,
                     "BottomMargin": 53.5975,
                     "Tag": 77,
@@ -432,55 +433,6 @@
                     },
                     "Name": "gold",
                     "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FontSize": 16,
-                    "LabelText": "9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 86.7065,
-                      "Y": 61.9305
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.6193,
-                      "Y": 0.7741
-                    },
-                    "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 58.7065,
-                    "RightMargin": 25.2935,
-                    "TopMargin": 10.0695,
-                    "BottomMargin": 53.9305,
-                    "Tag": 78,
-                    "ActionTag": 561987777,
-                    "Size": {
-                      "X": 56.0,
-                      "Y": 16.0
-                    },
-                    "Name": "gold_text",
-                    "ctype": "TextObjectData"
                   },
                   {
                     "FontSize": 14,
@@ -529,58 +481,6 @@
                       "Y": 14.0
                     },
                     "Name": "buff_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 18,
-                    "LabelText": "+9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 75.966,
-                      "Y": 19.9138
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "R": 38,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5426,
-                      "Y": 0.2489
-                    },
-                    "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.225
-                    },
-                    "LeftMargin": 39.966,
-                    "RightMargin": 28.034,
-                    "TopMargin": 51.0862,
-                    "BottomMargin": 10.9138,
-                    "Tag": 80,
-                    "ActionTag": 118871550,
-                    "Size": {
-                      "X": 72.0,
-                      "Y": 18.0
-                    },
-                    "Name": "buffNum_text",
                     "ctype": "TextObjectData"
                   },
                   {
@@ -636,13 +536,58 @@
                     "ctype": "TextObjectData"
                   },
                   {
+                    "CharWidth": 12,
+                    "CharHeight": 13,
+                    "LabelText": "995564",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font15_green.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 88.5713,
+                      "Y": 18.8777
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6327,
+                      "Y": 0.236
+                    },
+                    "PreSize": {
+                      "X": 0.5143,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 52.5713,
+                    "RightMargin": 15.4287,
+                    "TopMargin": 54.6223,
+                    "BottomMargin": 12.3777,
+                    "Tag": 140,
+                    "ActionTag": 1798560512,
+                    "Size": {
+                      "X": 72.0,
+                      "Y": 13.0
+                    },
+                    "Name": "buffNum_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
                     "FileData": {
                       "Type": "Normal",
                       "Path": "heroUI/lock.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 29,
-                    "Scale9Height": 32,
+                    "Scale9Width": 36,
+                    "Scale9Height": 49,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -681,18 +626,18 @@
                   {
                     "FileData": {
                       "Type": "Normal",
-                      "Path": "heroUI/diamond.png",
+                      "Path": "buttonUI/MaxLevel.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
+                    "Scale9Width": 77,
+                    "Scale9Height": 27,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 48.1188,
-                      "Y": 41.6033
+                      "X": 77.8,
+                      "Y": 38.8991
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -701,47 +646,43 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3437,
-                      "Y": 0.52
+                      "X": 0.5557,
+                      "Y": 0.4862
                     },
                     "PreSize": {
-                      "X": 0.1071,
-                      "Y": 0.1875
+                      "X": 0.55,
+                      "Y": 0.3375
                     },
-                    "LeftMargin": 40.6188,
-                    "RightMargin": 84.3812,
-                    "TopMargin": 30.8967,
-                    "BottomMargin": 34.1033,
-                    "Tag": 83,
-                    "ActionTag": 415696191,
+                    "LeftMargin": 39.3,
+                    "RightMargin": 23.7,
+                    "TopMargin": 27.6009,
+                    "BottomMargin": 25.3991,
+                    "Tag": 782,
+                    "ActionTag": 532076678,
                     "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
+                      "X": 77.0,
+                      "Y": 27.0
                     },
-                    "Name": "diamond",
+                    "Name": "upMax_text",
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 16,
-                    "LabelText": "9999999",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "123333",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_yellow.png",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 86.7065,
-                      "Y": 40.54
+                      "X": 85.5373,
+                      "Y": 61.0975
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -750,73 +691,111 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6193,
-                      "Y": 0.5067
+                      "X": 0.611,
+                      "Y": 0.7637
                     },
                     "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.2
+                      "X": 0.5143,
+                      "Y": 0.1375
                     },
-                    "LeftMargin": 58.7065,
-                    "RightMargin": 25.2935,
-                    "TopMargin": 31.46,
-                    "BottomMargin": 32.54,
-                    "Tag": 84,
-                    "ActionTag": 634331898,
+                    "LeftMargin": 49.5373,
+                    "RightMargin": 18.4627,
+                    "TopMargin": 13.4025,
+                    "BottomMargin": 55.5975,
+                    "Tag": 783,
+                    "ActionTag": 533363431,
                     "Size": {
-                      "X": 56.0,
-                      "Y": 16.0
+                      "X": 72.0,
+                      "Y": 11.0
                     },
-                    "Name": "diamond_text",
-                    "ctype": "TextObjectData"
+                    "Name": "gold_text",
+                    "ctype": "TextAtlasObjectData"
                   },
                   {
-                    "FontSize": 20,
-                    "LabelText": "已满级",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/add.png",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
                     },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
                     "Position": {
-                      "X": 47.0003,
-                      "Y": 30.0
+                      "X": 40.0679,
+                      "Y": 19.6276
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {
-                      "B": 0
-                    },
+                    "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3357,
-                      "Y": 0.375
+                      "X": 0.2862,
+                      "Y": 0.2453
                     },
                     "PreSize": {
-                      "X": 0.4286,
-                      "Y": 0.25
+                      "X": 0.0857,
+                      "Y": 0.15
                     },
-                    "LeftMargin": 47.0003,
-                    "RightMargin": 32.9997,
-                    "TopMargin": 30.0,
-                    "BottomMargin": 30.0,
-                    "Tag": 85,
-                    "ActionTag": 1480872831,
+                    "LeftMargin": 34.0679,
+                    "RightMargin": 93.9321,
+                    "TopMargin": 54.3724,
+                    "BottomMargin": 13.6276,
+                    "Tag": 141,
+                    "ActionTag": 883190182,
                     "Size": {
-                      "X": 60.0,
-                      "Y": 20.0
+                      "X": 12.0,
+                      "Y": 12.0
                     },
-                    "Name": "upMax_text",
-                    "ctype": "TextObjectData"
+                    "Name": "add",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/cut.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 13,
+                    "Scale9Height": 13,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 41.0678,
+                      "Y": 19.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2933,
+                      "Y": 0.2453
+                    },
+                    "PreSize": {
+                      "X": 0.0929,
+                      "Y": 0.1625
+                    },
+                    "LeftMargin": 34.5678,
+                    "RightMargin": 92.4322,
+                    "TopMargin": 53.8724,
+                    "BottomMargin": 13.1276,
+                    "Tag": 18,
+                    "ActionTag": 2060854591,
+                    "Size": {
+                      "X": 13.0,
+                      "Y": 13.0
+                    },
+                    "Name": "cut",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 1008273297,
@@ -845,9 +824,13 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/add.png",
+        "buttonUI/cut.png",
+        "buttonUI/font15_green.png",
+        "buttonUI/font16_yellow.png",
+        "buttonUI/MaxLevel.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
-        "heroUI/diamond.png",
         "heroUI/gold.png",
         "heroUI/lock.png",
         "heroUI/skill_bg.png",

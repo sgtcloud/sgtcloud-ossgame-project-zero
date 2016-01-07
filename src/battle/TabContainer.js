@@ -43,7 +43,7 @@ var TabContainer = cc.Node.extend({
         this.menus.main = new SkillListMenu(battlePanel);
         this.menus.hero = new HeroListMenu(battlePanel);
         this.menus.equip = new EquipListMenu(battlePanel);
-
+        this.menus.shop = new ShopLayerMenu(battlePanel);
 
         for (var i in this.menus) {
             this.menus[i].setPosition(0, this.menuLayer.height);

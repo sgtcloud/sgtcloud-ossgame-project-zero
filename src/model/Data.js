@@ -5,6 +5,7 @@ function initDatas() {
     dataSource.stages = cc.loader.getRes(res_datas.stages_json);
     dataSource.equips = cc.loader.getRes(res_datas.equips_json);
     dataSource.skills = cc.loader.getRes(res_datas.skills_json);
+    dataSource.goods = cc.loader.getRes(res_datas.goods_json);
 }
 
 

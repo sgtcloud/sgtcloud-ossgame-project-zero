@@ -3,7 +3,8 @@ var res_datas = {
     heroes_json: "res/data/heroes.json",
     enemies_json: "res/data/enemies.json",
     equips_json: "res/data/equips.json",
-    skills_json: "res/data/skills.json"
+    skills_json: "res/data/skills.json",
+    goods_json: "res/data/goods.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
@@ -47,11 +48,14 @@ var res = {
     amount_gold_json: "res/gold03.json",
     huge_gold_json: "res/gold04.json",
 
-    tap_effect_json : "res/effect5000.json",
+    tap_effect_json: "res/effect5000.json",
 
-    prompt1_layer_json:"res/Prompt1Layer.json",
+    prompt1_layer_json: "res/Prompt1Layer.json",
 
-    offline_reward_layer: "res/OfflineRewardLayer.json"
+    offline_reward_layer: "res/OfflineRewardLayer.json",
+    shop_view: "res/ShopView.json",
+    shop_layer: "res/ShopLayer.json",
+    shop_icon_layer: "res/ShopIconLayer.json"
 };
 
 
