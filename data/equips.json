@@ -1,8 +1,7 @@
-{"s10101": {
-  "name" : "法术波动",
+{"e10101": {
+  "name" : "血饮",
   "desc" : "增加英雄{effect1_value}点{effect1_name}和{effect2_value}点{effect2_name}，并提升{effect3_value}的{effect3_name}。",
-  "icon" : "s10101.png",
-  "unlockLevel" : 2,
+  "icon" : "e10101.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -113,11 +112,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10102":{
-  "name" : "灵魂烈焰",
+},"e10102": {
+  "name" : "黑切",
   "desc" : "提升英雄{effect1_value}的{effect1_name}和{effect2_value}的{effect2_name}。",
-  "icon" : "s10102.png",
-  "unlockLevel" : 5,
+  "icon" : "e10102.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -204,11 +202,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10201":{
-  "name" : "恐惧之刺",
+}, "e10201":{
+  "name" : "帝殒",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
-  "icon" : "s10201.png",
-  "unlockLevel" : 2,
+  "icon" : "e10201.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -271,11 +268,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10202":{
-  "name" : "黑暗之风",
+}, "e10202":{
+  "name" : "击碎者 ",
   "desc" : "提升英雄{effect1_value}的{effect1_name}。",
-  "icon" : "s10202.png",
-  "unlockLevel" : 5,
+  "icon" : "e10202.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -338,11 +334,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10301":{
-  "name" : "威力一击",
+}, "e10301":{
+  "name" : "断离",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
-  "icon" : "s10301.png",
-  "unlockLevel" : 2,
+  "icon" : "e10301.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -405,11 +400,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10302":{
-  "name" : "幽灵护盾",
+}, "e10302":{
+  "name" : "黑色怒火",
   "desc" : "提升英雄{effect1_value}的{effect1_name}。",
-  "icon" : "s10302.png",
-  "unlockLevel" : 5,
+  "icon" : "e10302.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -472,11 +466,10 @@
       "unit" : "gold"
     }
   } ]
-},"s10401": {
-  "name" : "邪恶幻象",
+}, "e10401":{
+  "name" : "命运",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
-  "icon" : "s10401.png",
-  "unlockLevel" : 2,
+  "icon" : "e10401.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -539,11 +532,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10402":{
-  "name" : "群鸦盛宴",
+}, "e10402":{
+  "name" : "霜之哀伤",
   "desc" : "提升英雄{effect1_value}的{effect1_name}。",
-  "icon" : "s10402.png",
-  "unlockLevel" : 5,
+  "icon" : "e10402.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -606,11 +598,10 @@
       "unit" : "gold"
     }
   } ]
-}, "s10501":{
-  "name" : "腐肉重生",
+}, "e10501":{
+  "name" : "残念",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
-  "icon" : "s10501.png",
-  "unlockLevel" : 2,
+  "icon" : "e10501.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
@@ -673,11 +664,10 @@
       "unit" : "gold"
     }
   } ]
-},"s10502": {
-  "name" : "魅惑妖术",
+}, "e10502":{
+  "name" : "制作者之手",
   "desc" : "提升英雄{effect1_value}的{effect1_name}。",
-  "icon" : "s10502.png",
-  "unlockLevel" : 5,
+  "icon" : "e10502.png",
   "type" : 0,
   "levelDatas" : [ {
     "level" : 6,
