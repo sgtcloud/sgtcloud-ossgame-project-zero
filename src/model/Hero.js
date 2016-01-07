@@ -92,6 +92,9 @@ var Hero = function (heroData) {
     this.getSkillData = function (i) {
         return skills[i];
     };
+    this.getSkills = function () {
+        return skills;
+    }
     this.calcArrayEffect = function (effects, propName) {
         for (var j in effects) {
             if (effects[j].type === propName + "_value") {
@@ -192,7 +195,7 @@ var Hero = function (heroData) {
         lv = lv + 1;
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
-
+                player.heroes[i]['lv']=lv;
             }
         }
     }

@@ -81,6 +81,7 @@
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
           <Image Name="reviveTime.png" />
+          <Image Name="heroDPS.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -98,6 +99,8 @@
           <Image Name="relic.png" />
           <Image Name="title.png" />
           <Image Name="title_2.png" />
+          <Image Name="equip_text.png" />
+          <Image Name="equip_text2.png" />
         </Folder>
         <Project Name="Star.csd" Type="Layer" />
         <Project Name="SkillView.csd" Type="Layer" />
@@ -216,13 +219,11 @@
           <Image Name="revive.png" />
           <Image Name="sure.png" />
           <Image Name="font16_yellow_b.png" />
-          <Image Name="font16_green_c.png" />
+          <Image Name="font15_green.png" />
           <Image Name="add.png" />
           <Image Name="cut.png" />
-          <Image Name="font16_green.png" />
+          <Image Name="percentage.png" />
           <Image Name="buy2.png" />
-          <Image Name="font16_green_a.png" />
-          <Image Name="font15_green.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

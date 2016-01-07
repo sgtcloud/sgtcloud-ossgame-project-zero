@@ -49,29 +49,14 @@
                 <PreSize X="0.8578" Y="0.5600" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" LeftMargin="165.2206" RightMargin="164.7794" TopMargin="326.6971" BottomMargin="23.3029" TouchEnable="True" FontSize="22" ButtonText="确定" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="120.0000" Y="50.0000" />
+              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="56" IconVisible="False" LeftMargin="75.2205" RightMargin="74.7795" TopMargin="110.3703" BottomMargin="109.6297" IsCustomSize="True" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="300.0000" Y="180.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="225.2206" Y="48.3029" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5005" Y="0.1208" />
-                <PreSize X="0.2667" Y="0.1250" />
-                <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="50" IconVisible="False" LeftMargin="165.2204" RightMargin="164.7796" TopMargin="106.5538" BottomMargin="273.4462" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="225.2204" Y="283.4462" />
+                <Position X="225.2205" Y="199.6297" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.5005" Y="0.7086" />
-                <PreSize X="0.2667" Y="0.0500" />
+                <PrePosition X="0.5005" Y="0.4991" />
+                <PreSize X="0.6667" Y="0.4500" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -86,7 +71,47 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1266385902" Tag="329" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0056" BottomMargin="25.9944" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+                <Size X="120.0000" Y="50.0000" />
+                <Children>
+                  <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="120.0000" Y="50.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_text" ActionTag="133778488" Tag="330" IconVisible="False" LeftMargin="34.0000" RightMargin="34.0000" TopMargin="11.5000" BottomMargin="11.5000" Scale9Width="52" Scale9Height="27" ctype="ImageViewObjectData">
+                    <Size X="52.0000" Y="27.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="60.0000" Y="25.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5000" Y="0.5000" />
+                    <PreSize X="0.4333" Y="0.5400" />
+                    <FileData Type="Normal" Path="buttonUI/sure.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="165.2205" Y="25.9944" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3672" Y="0.0650" />
+                <PreSize X="0.2667" Y="0.1250" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="box" Visible="False" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="text1" ActionTag="-1256465214" Tag="51" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="7.0000" BottomMargin="85.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

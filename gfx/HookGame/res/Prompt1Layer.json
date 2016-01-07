@@ -234,81 +234,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 22,
-                "ButtonText": "确定",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_11.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_11.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_06.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 5,
-                "Scale9Height": 21,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 225.2206,
-                  "Y": 48.3029
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5005,
-                  "Y": 0.1208
-                },
-                "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.125
-                },
-                "LeftMargin": 165.2206,
-                "RightMargin": 164.7794,
-                "TopMargin": 326.6971,
-                "BottomMargin": 23.3029,
-                "Tag": 453,
-                "ActionTag": 725336112,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 50.0
-                },
-                "Name": "btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "一段文字描述",
                 "HorizontalAlignmentType": "HT_Center",
@@ -329,8 +255,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 225.2204,
-                  "Y": 283.4462
+                  "X": 225.2205,
+                  "Y": 199.6297
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -344,21 +270,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5005,
-                  "Y": 0.7086
+                  "Y": 0.4991
                 },
                 "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.05
+                  "X": 0.6667,
+                  "Y": 0.45
                 },
-                "LeftMargin": 165.2204,
-                "RightMargin": 164.7796,
-                "TopMargin": 106.5538,
-                "BottomMargin": 273.4462,
-                "Tag": 50,
+                "LeftMargin": 75.2205,
+                "RightMargin": 74.7795,
+                "TopMargin": 110.3703,
+                "BottomMargin": 109.6297,
+                "Tag": 56,
                 "ActionTag": -2019854582,
                 "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
+                  "X": 300.0,
+                  "Y": 180.0
                 },
                 "Name": "desc_text",
                 "ctype": "TextObjectData"
@@ -413,6 +339,166 @@
                 },
                 "Name": "title_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 165.2205,
+                  "Y": 25.9944
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3672,
+                  "Y": 0.065
+                },
+                "PreSize": {
+                  "X": 0.2667,
+                  "Y": 0.125
+                },
+                "LeftMargin": 165.2205,
+                "RightMargin": 164.7795,
+                "TopMargin": 324.0056,
+                "BottomMargin": 25.9944,
+                "Tag": 329,
+                "Children": [
+                  {
+                    "FontSize": 22,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_11.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_11.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_06.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 453,
+                    "ActionTag": 725336112,
+                    "Size": {
+                      "X": 120.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/sure.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 52,
+                    "Scale9Height": 27,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 60.0,
+                      "Y": 25.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.4333,
+                      "Y": 0.54
+                    },
+                    "LeftMargin": 34.0,
+                    "RightMargin": 34.0,
+                    "TopMargin": 11.5,
+                    "BottomMargin": 11.5,
+                    "Tag": 330,
+                    "ActionTag": 133778488,
+                    "Size": {
+                      "X": 52.0,
+                      "Y": 27.0
+                    },
+                    "Name": "btn_text",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1266385902,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 50.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -1096,6 +1182,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/sure.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

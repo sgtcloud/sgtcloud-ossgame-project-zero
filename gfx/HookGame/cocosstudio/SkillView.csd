@@ -90,14 +90,14 @@
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buff_text" ActionTag="-600111751" Tag="79" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="49.0000" Y="14.0000" />
+                  <AbstractNodeData Name="buff_text" ActionTag="-600111751" Tag="79" IconVisible="False" LeftMargin="21.7150" RightMargin="18.2850" TopMargin="33.0102" BottomMargin="34.9898" IsCustomSize="True" FontSize="12" LabelText="英雄DPS" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="12.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.7139" Y="41.3231" />
+                    <Position X="71.7150" Y="40.9898" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5408" Y="0.5165" />
-                    <PreSize X="0.3500" Y="0.1750" />
+                    <PrePosition X="0.5123" Y="0.5124" />
+                    <PreSize X="0.7143" Y="0.1500" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -112,14 +112,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buffNum_text" ActionTag="1798560512" Tag="140" IconVisible="False" LeftMargin="52.5713" RightMargin="15.4287" TopMargin="54.6223" BottomMargin="12.3777" CharWidth="12" CharHeight="13" LabelText="995564" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="72.0000" Y="13.0000" />
+                  <AbstractNodeData Name="buffNum_text" ActionTag="1798560512" Tag="140" IconVisible="False" LeftMargin="49.9571" RightMargin="30.0429" TopMargin="53.5723" BottomMargin="13.4277" CharWidth="12" CharHeight="13" LabelText="99556" StartChar="0" ctype="TextAtlasObjectData">
+                    <Size X="60.0000" Y="13.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="88.5713" Y="18.8777" />
+                    <Position X="79.9571" Y="19.9277" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6327" Y="0.2360" />
-                    <PreSize X="0.5143" Y="0.1625" />
+                    <PrePosition X="0.5711" Y="0.2491" />
+                    <PreSize X="0.4286" Y="0.1625" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font15_green.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="lock" ActionTag="1296461779" Tag="82" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
@@ -132,13 +132,13 @@
                     <PreSize X="0.2071" Y="0.4000" />
                     <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="27.6009" BottomMargin="25.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="28.6009" BottomMargin="24.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
                     <Size X="77.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="77.8000" Y="38.8991" />
+                    <Position X="77.8000" Y="37.8991" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5557" Y="0.4862" />
+                    <PrePosition X="0.5557" Y="0.4737" />
                     <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
@@ -171,6 +171,16 @@
                     <PrePosition X="0.2933" Y="0.2453" />
                     <PreSize X="0.0929" Y="0.1625" />
                     <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="per" ActionTag="-1369748153" Tag="61" IconVisible="False" LeftMargin="111.5742" RightMargin="11.4258" TopMargin="53.2925" BottomMargin="11.7075" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
+                    <Size X="17.0000" Y="15.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="120.0742" Y="19.2075" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8577" Y="0.2401" />
+                    <PreSize X="0.1214" Y="0.1875" />
+                    <FileData Type="Normal" Path="buttonUI/percentage.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -46,8 +48,9 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 1.0
+              "Y": 1.1622
             },
+            "TopMargin": -120.0,
             "Tag": 590,
             "Children": [
               {
@@ -78,15 +81,15 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.9302
+                  "Y": 0.8605
                 },
-                "TopMargin": 59.9979,
+                "TopMargin": 119.9979,
                 "BottomMargin": 0.0021,
                 "Tag": 45,
                 "ActionTag": -348836933,
                 "Size": {
                   "X": 640.0,
-                  "Y": 800.0
+                  "Y": 740.0
                 },
                 "Name": "bg1",
                 "ctype": "ImageViewObjectData"
@@ -119,16 +122,16 @@
                 },
                 "PreSize": {
                   "X": 0.9937,
-                  "Y": 0.8023
+                  "Y": 0.7791
                 },
                 "LeftMargin": 2.0,
                 "RightMargin": 2.0,
-                "TopMargin": 170.0,
+                "TopMargin": 190.0,
                 "Tag": 44,
                 "ActionTag": 930478778,
                 "Size": {
                   "X": 636.0,
-                  "Y": 690.0
+                  "Y": 670.0
                 },
                 "Name": "bg2",
                 "ctype": "ImageViewObjectData"
@@ -147,7 +150,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 14.635,
-                  "Y": 698.5734
+                  "Y": 673.5718
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -157,21 +160,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0229,
-                  "Y": 0.8123
+                  "Y": 0.7832
                 },
                 "PreSize": {
                   "X": 0.9531,
-                  "Y": 0.093
+                  "Y": 0.0698
                 },
                 "LeftMargin": 14.635,
                 "RightMargin": 15.365,
-                "TopMargin": 81.4266,
-                "BottomMargin": 698.5734,
+                "TopMargin": 126.4282,
+                "BottomMargin": 673.5718,
                 "Tag": 46,
                 "ActionTag": -772914297,
                 "Size": {
                   "X": 610.0,
-                  "Y": 80.0
+                  "Y": 60.0
                 },
                 "Name": "descText_bg",
                 "ctype": "ImageViewObjectData"
@@ -189,27 +192,27 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 317.6351,
-                  "Y": 739.8317
+                  "X": 317.6339,
+                  "Y": 705.8289
                 },
                 "Scale": {
-                  "ScaleX": 1.5,
-                  "ScaleY": 1.5
+                  "ScaleX": 1.2,
+                  "ScaleY": 1.2
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4963,
-                  "Y": 0.8603
+                  "Y": 0.8207
                 },
                 "PreSize": {
                   "X": 0.3125,
                   "Y": 0.064
                 },
-                "LeftMargin": 217.6351,
-                "RightMargin": 222.3649,
-                "TopMargin": 92.6683,
-                "BottomMargin": 712.3317,
+                "LeftMargin": 217.6339,
+                "RightMargin": 222.3661,
+                "TopMargin": 126.6711,
+                "BottomMargin": 678.3289,
                 "Tag": 47,
                 "ActionTag": 1956065607,
                 "Size": {
@@ -230,8 +233,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 12.0373,
-                  "Y": 22.3516
+                  "X": 12.0371,
+                  "Y": 9.3513
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -241,16 +244,16 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.0188,
-                  "Y": 0.026
+                  "Y": 0.0109
                 },
                 "PreSize": {
                   "X": 0.9531,
                   "Y": 0.6977
                 },
-                "LeftMargin": 12.0373,
-                "RightMargin": 17.9627,
-                "TopMargin": 237.6484,
-                "BottomMargin": 22.3516,
+                "LeftMargin": 12.0371,
+                "RightMargin": 17.9629,
+                "TopMargin": 250.6487,
+                "BottomMargin": 9.3513,
                 "Tag": 398,
                 "ActionTag": 1256429570,
                 "Size": {
@@ -279,8 +282,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 30.134,
-                  "Y": 622.0948
+                  "X": 35.7837,
+                  "Y": 608.2797
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -289,17 +292,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0471,
-                  "Y": 0.7234
+                  "X": 0.0559,
+                  "Y": 0.7073
                 },
                 "PreSize": {
                   "X": 0.5,
                   "Y": 0.064
                 },
-                "LeftMargin": 30.134,
-                "RightMargin": 289.866,
-                "TopMargin": 182.9052,
-                "BottomMargin": 622.0948,
+                "LeftMargin": 35.7837,
+                "RightMargin": 284.2163,
+                "TopMargin": 196.7203,
+                "BottomMargin": 608.2797,
                 "Tag": 781,
                 "Children": [
                   {
@@ -389,7 +392,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 160.0,
+                      "X": 159.9997,
                       "Y": 0.0
                     },
                     "Scale": {
@@ -406,7 +409,8 @@
                       "X": 0.5,
                       "Y": 1.0
                     },
-                    "LeftMargin": 160.0,
+                    "LeftMargin": 159.9997,
+                    "RightMargin": 0.0003,
                     "Tag": 783,
                     "ActionTag": 583975273,
                     "Size": {
@@ -437,7 +441,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 860.0
+          "Y": 740.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

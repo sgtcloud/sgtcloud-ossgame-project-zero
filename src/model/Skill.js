@@ -7,14 +7,13 @@ var Skill = function (id, lv) {
     var data = dataSource.skills[id];
     var icon = data.icon;
     var type = data.type;
+    var heroId=null;
     this.getIcon = function () {
         return icon;
     }
     this.getType = function () {
         return type;
     }
-
-
     this.getId = function () {
         return id;
     };
@@ -42,6 +41,11 @@ var Skill = function (id, lv) {
     }
     this.upgrade = function () {
         lv++;
+        /*for (var i = 0; i < player.heroes.length; i++) {
+            if (player.heroes[i]["id"] === this.getId()) {
+                player.heroes[i]['lv']=lv;
+            }
+        }*/
     }
     /**
      * 获取当前级别
@@ -75,6 +79,7 @@ var Skill = function (id, lv) {
             if (key.indexOf("effect") == 0) {
                 var effect = skill[key];
                 effects.push(effect);
+                effect['name']=key;
                 effect.index = parseInt(key.replace("effect", ""));
             }
         }
