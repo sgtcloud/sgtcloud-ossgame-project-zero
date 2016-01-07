@@ -435,8 +435,11 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 14,
+                    "IsCustomSize": true,
+                    "FontSize": 12,
                     "LabelText": "英雄DPS",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -453,8 +456,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.7139,
-                      "Y": 41.3231
+                      "X": 71.715,
+                      "Y": 40.9898
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -463,22 +466,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5408,
-                      "Y": 0.5165
+                      "X": 0.5123,
+                      "Y": 0.5124
                     },
                     "PreSize": {
-                      "X": 0.35,
-                      "Y": 0.175
+                      "X": 0.7143,
+                      "Y": 0.15
                     },
-                    "LeftMargin": 51.2139,
-                    "RightMargin": 39.7861,
-                    "TopMargin": 31.6769,
-                    "BottomMargin": 34.3231,
+                    "LeftMargin": 21.715,
+                    "RightMargin": 18.285,
+                    "TopMargin": 33.0102,
+                    "BottomMargin": 34.9898,
                     "Tag": 79,
                     "ActionTag": -600111751,
                     "Size": {
-                      "X": 49.0,
-                      "Y": 14.0
+                      "X": 100.0,
+                      "Y": 12.0
                     },
                     "Name": "buff_text",
                     "ctype": "TextObjectData"
@@ -538,7 +541,7 @@
                   {
                     "CharWidth": 12,
                     "CharHeight": 13,
-                    "LabelText": "995564",
+                    "LabelText": "99556",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
                       "Type": "Normal",
@@ -550,8 +553,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 88.5713,
-                      "Y": 18.8777
+                      "X": 79.9571,
+                      "Y": 19.9277
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -560,21 +563,21 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6327,
-                      "Y": 0.236
+                      "X": 0.5711,
+                      "Y": 0.2491
                     },
                     "PreSize": {
-                      "X": 0.5143,
+                      "X": 0.4286,
                       "Y": 0.1625
                     },
-                    "LeftMargin": 52.5713,
-                    "RightMargin": 15.4287,
-                    "TopMargin": 54.6223,
-                    "BottomMargin": 12.3777,
+                    "LeftMargin": 49.9571,
+                    "RightMargin": 30.0429,
+                    "TopMargin": 53.5723,
+                    "BottomMargin": 13.4277,
                     "Tag": 140,
                     "ActionTag": 1798560512,
                     "Size": {
-                      "X": 72.0,
+                      "X": 60.0,
                       "Y": 13.0
                     },
                     "Name": "buffNum_text",
@@ -796,6 +799,49 @@
                     },
                     "Name": "cut",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/percentage.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 17,
+                    "Scale9Height": 15,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 120.0742,
+                      "Y": 19.2075
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8577,
+                      "Y": 0.2401
+                    },
+                    "PreSize": {
+                      "X": 0.1214,
+                      "Y": 0.1875
+                    },
+                    "LeftMargin": 111.5742,
+                    "RightMargin": 11.4258,
+                    "TopMargin": 53.2925,
+                    "BottomMargin": 11.7075,
+                    "Tag": 61,
+                    "ActionTag": -1369748153,
+                    "Size": {
+                      "X": 17.0,
+                      "Y": 15.0
+                    },
+                    "Name": "per",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 1008273297,
@@ -829,6 +875,7 @@
         "buttonUI/font15_green.png",
         "buttonUI/font16_yellow.png",
         "buttonUI/MaxLevel.png",
+        "buttonUI/percentage.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/gold.png",

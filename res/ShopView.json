@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -54,7 +56,7 @@
               "X": 610.0,
               "Y": 600.0
             },
-            "Name": "moneyTree",
+            "Name": "moneyTree_tab",
             "ctype": "PanelObjectData"
           },
           {
@@ -166,7 +168,7 @@
                 },
                 "LeftMargin": 16.4216,
                 "RightMargin": 413.5784,
-                "TopMargin": 18.1591,
+                "TopMargin": 18.159,
                 "BottomMargin": 301.841,
                 "Tag": 399,
                 "ActionTag": 1330390566,
@@ -207,7 +209,7 @@
                 },
                 "LeftMargin": 213.851,
                 "RightMargin": 216.149,
-                "TopMargin": 18.1591,
+                "TopMargin": 18.159,
                 "BottomMargin": 301.841,
                 "Tag": 443,
                 "ActionTag": -1563805747,
@@ -248,7 +250,7 @@
                 },
                 "LeftMargin": 411.2805,
                 "RightMargin": 18.7195,
-                "TopMargin": 18.1591,
+                "TopMargin": 18.159,
                 "BottomMargin": 301.841,
                 "Tag": 463,
                 "ActionTag": -348189901,
@@ -388,7 +390,7 @@
               "X": 610.0,
               "Y": 600.0
             },
-            "Name": "shop",
+            "Name": "shop_tab",
             "ctype": "PanelObjectData"
           }
         ],

@@ -37,6 +37,7 @@
     "src/battle/TabContainer.js",
     "src/battle/MainScene.js",
     "src/battle/BattleMenu.js",
+    "src/battle/Popup1.js",
     "src/apps.js"
   ]
 }

@@ -10,6 +10,7 @@ var player = {
     "stage_battle_num": 1,
     "into_stage_battle_timestamp": 0,
     "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "packs":[],
     "heroes": [
         {
             "id": "h101",

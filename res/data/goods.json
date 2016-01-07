@@ -1,0 +1,43 @@
+{"g10001": {
+  "propId" : "e10101",
+  "num" : 1,
+  "price" : {
+    "unit" : "gold",
+    "value" : 10
+  }
+}, "g10002": {
+  "propId" : "e10102",
+  "num" : 2,
+  "price" : {
+    "unit" : "gold",
+    "value" : 15
+  }
+}, "g10003": {
+  "propId" : "e10201",
+  "num" : 3,
+  "price" : {
+    "unit" : "gold",
+    "value" : 20
+  }
+}, "g10004": {
+  "propId" : "e10202",
+  "num" : 4,
+  "price" : {
+    "unit" : "gold",
+    "value" : 25
+  }
+}, "g10005": {
+  "propId" : "e10301",
+  "num" : 5,
+  "price" : {
+    "unit" : "gold",
+    "value" : 30
+  }
+}, "g10006": {
+  "propId" : "e10302",
+  "num" : 6,
+  "price" : {
+    "unit" : "gold",
+    "value" : 35
+  }
+} }
