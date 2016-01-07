@@ -695,3 +695,116 @@ var EquipListMenu = BattleMenu.extend({
         }
     }
 });
+
+var ShopLayerMenu = BattleMenu.extend({
+    ctor: function (battle) {
+        this._super(battle, res.shop_layer);
+        var shopTab = this.root.getChildByName("shop_tab");
+        var shopView = this.root.getChildByName("shop_view");
+        var tabParams = [
+            {name: "shop_tab", click: "onShopTabClick"},
+            {name: "moneyTree_tab", click: "onMoneyTreeTabClick"}
+        ];
+        this.buttons = {};
+
+        var self = this;
+        for (var i in tabParams) {
+            var param = tabParams[i];
+            var name = param.name;
+            this.buttons[name] = shopTab.getChildByName(name);
+            if(i==0)
+                this.buttons[name].setSelected(true);
+            else
+                this.buttons[name].setSelected(false);
+            this.buttons[name].addEventListener(function (sender, type) {
+                if (type === ccui.CheckBox.EVENT_SELECTED) {
+                    self.showMenuLayer(sender.name);
+                }
+                else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
+                    sender.setSelected(true);
+                }
+            }, this);
+        }
+        this.showMenuLayer = function(name){
+            for (var i in this.buttons) {
+                this.buttons[i].setSelected(false);
+            }
+            switch(name){
+                case "shop_tab":
+                    self.showPorpView();
+                    break;
+                case "moneyTree_tab":
+                    break;
+            }
+            var childrens = shopView.getChildren();
+            for(var i in childrens){
+                childrens[i].setVisible(false);
+            }
+            shopView.getChildByName(name).setVisible(true);
+            this.buttons[name].setSelected(true);
+        };
+        this.showPorpView = function(){
+            var shopPorps = shopView.getChildByName("shop_tab");
+            var goods = dataSource.goods;
+            var n = 0;
+            for(var i in goods){
+                n ++;
+                var equip = dataSource.equips[goods[i].propId];
+                var shopPorp = shopPorps.getChildByName("item"+n).getChildByName("root");
+                var itemLayer = shopPorp.getChildByName("itemLayer").getChildByName("root");
+
+                var saleText = itemLayer.getChildByName("sale_text");
+                saleText.ignoreContentAdaptWithSize(true);
+                saleText.setString(goods[i].num);
+
+                var itemIcon = itemLayer.getChildByName("item_icon");
+                itemIcon.loadTexture("res/icon/equips/"+equip.icon);
+
+                shopPorp.getChildByName("item_name").setString(equip.name);
+
+                var res = shopPorp.getChildByName("res");
+
+                var childrens = res.getChildren();
+                for(var j in childrens){
+                    childrens[j].setVisible(false);
+                }
+                res.getChildByName(goods[i].price.unit).setVisible(true);
+
+                var resSaleText = res.getChildByName("sale_text");
+                resSaleText.setVisible(true);
+                resSaleText.ignoreContentAdaptWithSize(true);
+                resSaleText.setString(goods[i].price.value);
+
+                var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
+                var price = goods[i].price;
+                self.clickBtn(buyBtn,price,goods[i]);
+                /*bindButtonCallback(buyBtn,function(){
+                    self.buyGoods(goods[i].price);
+                });*/
+            }
+        };
+        this.clickBtn = function(buyBtn,price,goods){
+            buyBtn.addClickEventListener(function () {
+                self.buyGoods(price,goods);
+            });
+        }
+        this.buyGoods = function(data,goods){
+            if(/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value){
+                PlayerData.consumeResource([PlayerData.createResourceData(data.unit,-data.value)]);
+                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                PlayerData.updatePlayer();
+                player.packs.push({
+                    "packType":"equip",
+                    "relateId":goods.propId,
+                    "num":goods.num,
+                    "level":1
+                });
+                //new Popup1("友情提示","购买成功");
+            }else{
+                new Popup1("友情提示","当前金币不足，购买失败");
+            }
+        };
+        this.showPorpView();
+    }
+
+});

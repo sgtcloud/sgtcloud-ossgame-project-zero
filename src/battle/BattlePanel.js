@@ -87,12 +87,10 @@ var BattlePanel = cc.Node.extend({
         this.heroSprites = new SpriteGroup();
         this.enemySprites = new SpriteGroup();
 
-
         var battleLayer = ccs.csLoader.createNode(res.battle_layer_json);
         this.height = battleLayer.height;
         this.width = battleLayer.width;
         this.addChild(battleLayer);
-
 
         var root = battleLayer.getChildByName('root');
         this.enemyLifeText = root.getChildByName('enemy_life_text');
@@ -103,7 +101,7 @@ var BattlePanel = cc.Node.extend({
 
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
-        bindButtonCallback(this.rewardBtn, function () {
+        this.openPopup = function(){
             var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
             var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
@@ -126,6 +124,10 @@ var BattlePanel = cc.Node.extend({
                 PlayerData.updatePlayer();
             });
             popup(offlineRewardLayer, 1000);
+        };
+
+        bindButtonCallback(this.rewardBtn, function () {
+            self.openPopup();
         });
 
         var battle_bg = root.getChildByName('battle_bg');

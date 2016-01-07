@@ -7,50 +7,50 @@
       {
         "level": 10,
         "life": 249,
-        "attack": 21,
+        "attack": 18,
         "atk_period": 2.5,
         "bonus": {
-          "value": 77,
+          "value": 97,
           "unit": "gold"
         }
       },
       {
         "level": 9,
         "life": 216,
-        "attack": 18,
+        "attack": 15,
         "atk_period": 2.5,
         "bonus": {
-          "value": 69,
+          "value": 87,
           "unit": "gold"
         }
       },
       {
         "level": 8,
         "life": 187,
-        "attack": 15,
+        "attack": 13,
         "atk_period": 2.5,
         "bonus": {
-          "value": 61,
+          "value": 78,
           "unit": "gold"
         }
       },
       {
         "level": 7,
         "life": 160,
-        "attack": 12,
+        "attack": 11,
         "atk_period": 2.5,
         "bonus": {
-          "value": 54,
+          "value": 70,
           "unit": "gold"
         }
       },
       {
         "level": 6,
         "life": 135,
-        "attack": 9,
+        "attack": 8,
         "atk_period": 2.5,
         "bonus": {
-          "value": 47,
+          "value": 62,
           "unit": "gold"
         }
       },
@@ -60,7 +60,7 @@
         "attack": 7,
         "atk_period": 2.5,
         "bonus": {
-          "value": 41,
+          "value": 55,
           "unit": "gold"
         }
       },
@@ -70,37 +70,37 @@
         "attack": 5,
         "atk_period": 2.5,
         "bonus": {
-          "value": 35,
+          "value": 48,
           "unit": "gold"
         }
       },
       {
         "level": 3,
         "life": 77,
-        "attack": 4,
+        "attack": 3,
         "atk_period": 2.5,
         "bonus": {
-          "value": 29,
+          "value": 41,
           "unit": "gold"
         }
       },
       {
         "level": 2,
         "life": 63,
-        "attack": 3,
+        "attack": 2,
         "atk_period": 2.5,
         "bonus": {
-          "value": 24,
+          "value": 35,
           "unit": "gold"
         }
       },
       {
         "level": 1,
         "life": 50,
-        "attack": 2,
+        "attack": 1,
         "atk_period": 2.5,
         "bonus": {
-          "value": 20,
+          "value": 30,
           "unit": "gold"
         }
       }
@@ -117,7 +117,7 @@
         "attack": 24,
         "atk_period": 2.7,
         "bonus": {
-          "value": 86,
+          "value": 117,
           "unit": "gold"
         }
       },
@@ -127,7 +127,7 @@
         "attack": 21,
         "atk_period": 2.7,
         "bonus": {
-          "value": 77,
+          "value": 106,
           "unit": "gold"
         }
       },
@@ -137,7 +137,7 @@
         "attack": 18,
         "atk_period": 2.7,
         "bonus": {
-          "value": 69,
+          "value": 97,
           "unit": "gold"
         }
       },
@@ -147,57 +147,57 @@
         "attack": 15,
         "atk_period": 2.7,
         "bonus": {
-          "value": 61,
+          "value": 87,
           "unit": "gold"
         }
       },
       {
         "level": 6,
         "life": 160,
-        "attack": 12,
+        "attack": 13,
         "atk_period": 2.7,
         "bonus": {
-          "value": 54,
+          "value": 78,
           "unit": "gold"
         }
       },
       {
         "level": 5,
         "life": 135,
-        "attack": 9,
+        "attack": 11,
         "atk_period": 2.7,
         "bonus": {
-          "value": 47,
+          "value": 70,
           "unit": "gold"
         }
       },
       {
         "level": 4,
         "life": 114,
-        "attack": 7,
+        "attack": 8,
         "atk_period": 2.7,
         "bonus": {
-          "value": 41,
+          "value": 62,
           "unit": "gold"
         }
       },
       {
         "level": 3,
         "life": 94,
-        "attack": 5,
+        "attack": 7,
         "atk_period": 2.7,
         "bonus": {
-          "value": 35,
+          "value": 55,
           "unit": "gold"
         }
       },
       {
         "level": 2,
         "life": 77,
-        "attack": 4,
+        "attack": 5,
         "atk_period": 2.7,
         "bonus": {
-          "value": 29,
+          "value": 48,
           "unit": "gold"
         }
       },
@@ -207,7 +207,7 @@
         "attack": 3,
         "atk_period": 2.7,
         "bonus": {
-          "value": 24,
+          "value": 41,
           "unit": "gold"
         }
       }
@@ -221,20 +221,20 @@
       {
         "level": 10,
         "life": 368,
-        "attack": 31,
+        "attack": 30,
         "atk_period": 2.3,
         "bonus": {
-          "value": 105,
+          "value": 139,
           "unit": "gold"
         }
       },
       {
         "level": 9,
         "life": 325,
-        "attack": 28,
+        "attack": 27,
         "atk_period": 2.3,
         "bonus": {
-          "value": 96,
+          "value": 128,
           "unit": "gold"
         }
       },
@@ -244,7 +244,7 @@
         "attack": 24,
         "atk_period": 2.3,
         "bonus": {
-          "value": 86,
+          "value": 117,
           "unit": "gold"
         }
       },
@@ -254,7 +254,7 @@
         "attack": 21,
         "atk_period": 2.3,
         "bonus": {
-          "value": 77,
+          "value": 106,
           "unit": "gold"
         }
       },
@@ -264,7 +264,7 @@
         "attack": 18,
         "atk_period": 2.3,
         "bonus": {
-          "value": 69,
+          "value": 97,
           "unit": "gold"
         }
       },
@@ -274,47 +274,47 @@
         "attack": 15,
         "atk_period": 2.3,
         "bonus": {
-          "value": 61,
+          "value": 87,
           "unit": "gold"
         }
       },
       {
         "level": 4,
         "life": 160,
-        "attack": 12,
+        "attack": 13,
         "atk_period": 2.3,
         "bonus": {
-          "value": 54,
+          "value": 78,
           "unit": "gold"
         }
       },
       {
         "level": 3,
         "life": 135,
-        "attack": 9,
+        "attack": 11,
         "atk_period": 2.3,
         "bonus": {
-          "value": 47,
+          "value": 70,
           "unit": "gold"
         }
       },
       {
         "level": 2,
         "life": 114,
-        "attack": 7,
+        "attack": 8,
         "atk_period": 2.3,
         "bonus": {
-          "value": 41,
+          "value": 62,
           "unit": "gold"
         }
       },
       {
         "level": 1,
         "life": 94,
-        "attack": 5,
+        "attack": 7,
         "atk_period": 2.3,
         "bonus": {
-          "value": 35,
+          "value": 55,
           "unit": "gold"
         }
       }
@@ -328,40 +328,40 @@
       {
         "level": 10,
         "life": 465,
-        "attack": 40,
+        "attack": 36,
         "atk_period": 2.6,
         "bonus": {
-          "value": 126,
+          "value": 163,
           "unit": "gold"
         }
       },
       {
         "level": 9,
         "life": 414,
-        "attack": 35,
+        "attack": 33,
         "atk_period": 2.6,
         "bonus": {
-          "value": 116,
+          "value": 151,
           "unit": "gold"
         }
       },
       {
         "level": 8,
         "life": 368,
-        "attack": 31,
+        "attack": 30,
         "atk_period": 2.6,
         "bonus": {
-          "value": 105,
+          "value": 139,
           "unit": "gold"
         }
       },
       {
         "level": 7,
         "life": 325,
-        "attack": 28,
+        "attack": 27,
         "atk_period": 2.6,
         "bonus": {
-          "value": 96,
+          "value": 128,
           "unit": "gold"
         }
       },
@@ -371,7 +371,7 @@
         "attack": 24,
         "atk_period": 2.6,
         "bonus": {
-          "value": 86,
+          "value": 117,
           "unit": "gold"
         }
       },
@@ -381,7 +381,7 @@
         "attack": 21,
         "atk_period": 2.6,
         "bonus": {
-          "value": 77,
+          "value": 106,
           "unit": "gold"
         }
       },
@@ -391,7 +391,7 @@
         "attack": 18,
         "atk_period": 2.6,
         "bonus": {
-          "value": 69,
+          "value": 97,
           "unit": "gold"
         }
       },
@@ -401,27 +401,27 @@
         "attack": 15,
         "atk_period": 2.6,
         "bonus": {
-          "value": 61,
+          "value": 87,
           "unit": "gold"
         }
       },
       {
         "level": 2,
         "life": 160,
-        "attack": 12,
+        "attack": 13,
         "atk_period": 2.6,
         "bonus": {
-          "value": 54,
+          "value": 78,
           "unit": "gold"
         }
       },
       {
         "level": 1,
         "life": 135,
-        "attack": 9,
+        "attack": 11,
         "atk_period": 2.6,
         "bonus": {
-          "value": 47,
+          "value": 70,
           "unit": "gold"
         }
       }
@@ -435,60 +435,60 @@
       {
         "level": 10,
         "life": 577,
-        "attack": 48,
+        "attack": 43,
         "atk_period": 2.4,
         "bonus": {
-          "value": 149,
+          "value": 189,
           "unit": "gold"
         }
       },
       {
         "level": 9,
         "life": 519,
-        "attack": 44,
+        "attack": 40,
         "atk_period": 2.4,
         "bonus": {
-          "value": 138,
+          "value": 176,
           "unit": "gold"
         }
       },
       {
         "level": 8,
         "life": 465,
-        "attack": 40,
+        "attack": 36,
         "atk_period": 2.4,
         "bonus": {
-          "value": 126,
+          "value": 163,
           "unit": "gold"
         }
       },
       {
         "level": 7,
         "life": 414,
-        "attack": 35,
+        "attack": 33,
         "atk_period": 2.4,
         "bonus": {
-          "value": 116,
+          "value": 151,
           "unit": "gold"
         }
       },
       {
         "level": 6,
         "life": 368,
-        "attack": 31,
+        "attack": 30,
         "atk_period": 2.4,
         "bonus": {
-          "value": 105,
+          "value": 139,
           "unit": "gold"
         }
       },
       {
         "level": 5,
         "life": 325,
-        "attack": 28,
+        "attack": 27,
         "atk_period": 2.4,
         "bonus": {
-          "value": 96,
+          "value": 128,
           "unit": "gold"
         }
       },
@@ -498,7 +498,7 @@
         "attack": 24,
         "atk_period": 2.4,
         "bonus": {
-          "value": 86,
+          "value": 117,
           "unit": "gold"
         }
       },
@@ -508,7 +508,7 @@
         "attack": 21,
         "atk_period": 2.4,
         "bonus": {
-          "value": 77,
+          "value": 106,
           "unit": "gold"
         }
       },
@@ -518,7 +518,7 @@
         "attack": 18,
         "atk_period": 2.4,
         "bonus": {
-          "value": 69,
+          "value": 97,
           "unit": "gold"
         }
       },
@@ -528,7 +528,7 @@
         "attack": 15,
         "atk_period": 2.4,
         "bonus": {
-          "value": 61,
+          "value": 87,
           "unit": "gold"
         }
       }
