@@ -1500,8 +1500,11 @@
                     "ctype": "TextObjectData"
                   },
                   {
-                    "FontSize": 14,
+                    "IsCustomSize": true,
+                    "FontSize": 12,
                     "LabelText": "英雄DPS",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1518,8 +1521,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.7139,
-                      "Y": 41.3231
+                      "X": 71.7151,
+                      "Y": 41.323
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1528,22 +1531,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5408,
+                      "X": 0.5123,
                       "Y": 0.5165
                     },
                     "PreSize": {
-                      "X": 0.35,
-                      "Y": 0.175
+                      "X": 0.7143,
+                      "Y": 0.15
                     },
-                    "LeftMargin": 51.2139,
-                    "RightMargin": 39.7861,
-                    "TopMargin": 31.6769,
-                    "BottomMargin": 34.3231,
+                    "LeftMargin": 21.7151,
+                    "RightMargin": 18.2849,
+                    "TopMargin": 32.677,
+                    "BottomMargin": 35.323,
                     "Tag": 1387,
                     "ActionTag": 955524960,
                     "Size": {
-                      "X": 49.0,
-                      "Y": 14.0
+                      "X": 100.0,
+                      "Y": 12.0
                     },
                     "Name": "buff_text",
                     "ctype": "TextObjectData"
