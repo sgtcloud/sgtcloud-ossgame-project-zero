@@ -48,14 +48,15 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 1.0
+              "Y": 2.0
             },
-            "Tag": 248,
+            "TopMargin": -55.0,
+            "Tag": 839,
             "Children": [
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "equipUI/equiptitle_bg.png",
+                  "Path": "heroUI/hero_bg.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -82,13 +83,13 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 72,
-                "ActionTag": 1565053849,
+                "Tag": 840,
+                "ActionTag": -167333858,
                 "Size": {
                   "X": 624.0,
-                  "Y": 55.0
+                  "Y": 110.0
                 },
-                "Name": "equipHero_bg",
+                "Name": "heroView_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -99,13 +100,10 @@
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 36.848,
-                  "Y": 28.4115
+                  "X": 15.0,
+                  "Y": 10.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -114,82 +112,29 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0591,
-                  "Y": 0.5166
+                  "X": 0.024,
+                  "Y": 0.0909
                 },
                 "PreSize": {
-                  "X": 0.0721,
+                  "X": 0.1442,
                   "Y": 0.8182
                 },
-                "LeftMargin": 14.348,
-                "RightMargin": 564.652,
-                "TopMargin": 4.0885,
-                "BottomMargin": 5.9115,
-                "Tag": 81,
-                "ActionTag": -111630929,
+                "LeftMargin": 15.0,
+                "RightMargin": 519.0,
+                "TopMargin": 10.0,
+                "BottomMargin": 10.0,
+                "Tag": 841,
+                "ActionTag": 1758422507,
                 "Size": {
-                  "X": 45.0,
-                  "Y": 45.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "hero_icon",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 18,
-                "LabelText": "点击攻击力",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 498.1798,
-                  "Y": 41.6399
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7984,
-                  "Y": 0.7571
-                },
-                "PreSize": {
-                  "X": 0.1442,
-                  "Y": 0.3273
-                },
-                "LeftMargin": 453.1798,
-                "RightMargin": 80.8202,
-                "TopMargin": 4.3601,
-                "BottomMargin": 32.6399,
-                "Tag": 150,
-                "ActionTag": 1067595702,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 18.0
-                },
-                "Name": "tatk",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 18,
-                "LabelText": "英雄DPS",
+                "FontSize": 22,
+                "LabelText": "英雄名字六字",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -203,8 +148,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 358.2292,
-                  "Y": 32.6399
+                  "X": 120.0,
+                  "Y": 75.0001
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -217,24 +162,24 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5741,
-                  "Y": 0.5935
+                  "X": 0.1923,
+                  "Y": 0.6818
                 },
                 "PreSize": {
-                  "X": 0.101,
-                  "Y": 0.3273
+                  "X": 0.2115,
+                  "Y": 0.2
                 },
-                "LeftMargin": 358.2292,
-                "RightMargin": 202.7708,
-                "TopMargin": 4.3601,
-                "BottomMargin": 32.6399,
-                "Tag": 204,
-                "ActionTag": 1415077576,
+                "LeftMargin": 120.0,
+                "RightMargin": 372.0,
+                "TopMargin": 12.9999,
+                "BottomMargin": 75.0001,
+                "Tag": 842,
+                "ActionTag": 1194859943,
                 "Size": {
-                  "X": 63.0,
-                  "Y": 18.0
+                  "X": 132.0,
+                  "Y": 22.0
                 },
-                "Name": "dps",
+                "Name": "heroName_text",
                 "ctype": "TextObjectData"
               },
               {
@@ -253,8 +198,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 212.6721,
-                  "Y": 20.2004
+                  "X": 120.0003,
+                  "Y": 50.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -267,19 +212,19 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3408,
-                  "Y": 0.3673
+                  "X": 0.1923,
+                  "Y": 0.4545
                 },
                 "PreSize": {
                   "X": 0.1731,
-                  "Y": 0.3273
+                  "Y": 0.1636
                 },
-                "LeftMargin": 212.6721,
-                "RightMargin": 303.3279,
-                "TopMargin": 16.7996,
-                "BottomMargin": 20.2004,
-                "Tag": 205,
-                "ActionTag": -2069311040,
+                "LeftMargin": 120.0003,
+                "RightMargin": 395.9997,
+                "TopMargin": 42.0,
+                "BottomMargin": 50.0,
+                "Tag": 843,
+                "ActionTag": -557855147,
                 "Size": {
                   "X": 108.0,
                   "Y": 18.0
@@ -288,70 +233,20 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 22,
-                "LabelText": "主角或英雄名",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 67.9238,
-                  "Y": 18.5213
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1089,
-                  "Y": 0.3368
-                },
-                "PreSize": {
-                  "X": 0.2115,
-                  "Y": 0.4
-                },
-                "LeftMargin": 67.9238,
-                "RightMargin": 424.0762,
-                "TopMargin": 14.4787,
-                "BottomMargin": 18.5213,
-                "Tag": 206,
-                "ActionTag": 450214716,
-                "Size": {
-                  "X": 132.0,
-                  "Y": 22.0
-                },
-                "Name": "heroName_text",
-                "ctype": "TextObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/textBg.png",
+                  "Path": "heroUI/text_bg.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 5,
-                "Scale9OriginY": 5,
-                "Scale9Width": 7,
-                "Scale9Height": 6,
+                "Scale9OriginX": 11,
+                "Scale9OriginY": 11,
+                "Scale9Width": 12,
+                "Scale9Height": 14,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 339.7292,
-                  "Y": 4.6793
+                  "X": 323.5455,
+                  "Y": 13.4376
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -360,44 +255,43 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5444,
-                  "Y": 0.0851
+                  "X": 0.5185,
+                  "Y": 0.1222
                 },
                 "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.4727
+                  "X": 0.1923,
+                  "Y": 0.5455
                 },
-                "LeftMargin": 339.7292,
-                "RightMargin": 184.2708,
-                "TopMargin": 24.3207,
-                "BottomMargin": 4.6793,
-                "Tag": 207,
-                "ActionTag": -1366468569,
+                "LeftMargin": 323.5455,
+                "RightMargin": 180.4545,
+                "TopMargin": 36.5623,
+                "BottomMargin": 13.4376,
+                "Tag": 844,
+                "ActionTag": 598677486,
                 "Size": {
-                  "X": 100.0,
-                  "Y": 26.0
+                  "X": 120.0,
+                  "Y": 60.0
                 },
-                "Name": "dpstext_bg",
+                "Name": "dps_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "69568844",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_white.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 354.7292,
-                  "Y": 8.8818
+                  "X": 384.7208,
+                  "Y": 44.4546
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -406,41 +300,41 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5685,
-                  "Y": 0.1615
+                  "X": 0.6165,
+                  "Y": 0.4041
                 },
                 "PreSize": {
-                  "X": 0.1122,
-                  "Y": 0.3636
+                  "X": 0.1538,
+                  "Y": 0.1182
                 },
-                "LeftMargin": 354.7292,
-                "RightMargin": 199.2708,
-                "TopMargin": 26.1182,
-                "BottomMargin": 8.8818,
-                "Tag": 203,
-                "ActionTag": 1234158130,
+                "LeftMargin": 336.7208,
+                "RightMargin": 191.2792,
+                "TopMargin": 59.0454,
+                "BottomMargin": 37.9546,
+                "Tag": 845,
+                "ActionTag": -1147063697,
                 "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
+                  "X": 96.0,
+                  "Y": 13.0
                 },
                 "Name": "dps_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextAtlasObjectData"
               },
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/textBg.png",
+                  "Path": "heroUI/heroDPS.png",
                   "Plist": ""
                 },
-                "Scale9Enable": true,
-                "Scale9OriginX": 5,
-                "Scale9OriginY": 5,
-                "Scale9Width": 7,
-                "Scale9Height": 6,
-                "AnchorPoint": {},
+                "Scale9Width": 104,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
                 "Position": {
-                  "X": 448.1798,
-                  "Y": 4.6793
+                  "X": 383.5454,
+                  "Y": 88.8924
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -449,44 +343,849 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7182,
-                  "Y": 0.0851
+                  "X": 0.6147,
+                  "Y": 0.8081
                 },
                 "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.4727
+                  "X": 0.1667,
+                  "Y": 0.2273
                 },
-                "LeftMargin": 448.1798,
-                "RightMargin": 75.8202,
-                "TopMargin": 24.3207,
-                "BottomMargin": 4.6793,
-                "Tag": 214,
-                "ActionTag": 128964250,
+                "LeftMargin": 331.5454,
+                "RightMargin": 188.4546,
+                "TopMargin": 8.6076,
+                "BottomMargin": 76.3924,
+                "Tag": 846,
+                "ActionTag": 334213559,
                 "Size": {
-                  "X": 100.0,
-                  "Y": 26.0
+                  "X": 104.0,
+                  "Y": 25.0
                 },
-                "Name": "tatktext_bg",
+                "Name": "dps",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ItemLayer.json",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 463.1798,
-                  "Y": 8.8818
+                  "X": 472.1453,
+                  "Y": 30.1181
+                },
+                "Scale": {
+                  "ScaleX": 0.3,
+                  "ScaleY": 0.3
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.7566,
+                  "Y": 0.2738
+                },
+                "PreSize": {
+                  "X": 0.1603,
+                  "Y": 0.9091
+                },
+                "LeftMargin": 472.1453,
+                "RightMargin": 51.8547,
+                "TopMargin": -20.1181,
+                "BottomMargin": 30.1181,
+                "Tag": 885,
+                "ActionTag": -1754001681,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "item1",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ItemLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 505.1481,
+                  "Y": 30.1181
+                },
+                "Scale": {
+                  "ScaleX": 0.3,
+                  "ScaleY": 0.3
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.8095,
+                  "Y": 0.2738
+                },
+                "PreSize": {
+                  "X": 0.1603,
+                  "Y": 0.9091
+                },
+                "LeftMargin": 505.1481,
+                "RightMargin": 18.8519,
+                "TopMargin": -20.1181,
+                "BottomMargin": 30.1181,
+                "Tag": 891,
+                "ActionTag": -570615290,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "item2",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ItemLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 538.1512,
+                  "Y": 30.1181
+                },
+                "Scale": {
+                  "ScaleX": 0.3,
+                  "ScaleY": 0.3
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.8624,
+                  "Y": 0.2738
+                },
+                "PreSize": {
+                  "X": 0.1603,
+                  "Y": 0.9091
+                },
+                "LeftMargin": 538.1512,
+                "RightMargin": -14.1512,
+                "TopMargin": -20.1181,
+                "BottomMargin": 30.1181,
+                "Tag": 897,
+                "ActionTag": 499344079,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "item3",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ItemLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 571.1542,
+                  "Y": 30.1181
+                },
+                "Scale": {
+                  "ScaleX": 0.3,
+                  "ScaleY": 0.3
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.9153,
+                  "Y": 0.2738
+                },
+                "PreSize": {
+                  "X": 0.1603,
+                  "Y": 0.9091
+                },
+                "LeftMargin": 571.1542,
+                "RightMargin": -47.1542,
+                "TopMargin": -20.1181,
+                "BottomMargin": 30.1181,
+                "Tag": 903,
+                "ActionTag": -1681308472,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "item4",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 120.0,
+                  "Y": 16.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.1923,
+                  "Y": 0.1455
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 120.0,
+                "RightMargin": 504.0,
+                "TopMargin": 94.0,
+                "BottomMargin": 16.0,
+                "Tag": 863,
+                "Children": [
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "RightMargin": -32.0,
+                    "TopMargin": -30.0,
+                    "Tag": 864,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star1.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 865,
+                        "ActionTag": 1641209060,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_on",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star2.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 866,
+                        "ActionTag": 70686986,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_off",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 766334150,
+                    "Size": {
+                      "X": 32.0,
+                      "Y": 30.0
+                    },
+                    "Name": "star1",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 36.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 36.0,
+                    "RightMargin": -68.0,
+                    "TopMargin": -30.0,
+                    "Tag": 867,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star1.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 868,
+                        "ActionTag": -1859025817,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_on",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star2.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 869,
+                        "ActionTag": 1220263815,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_off",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 486487983,
+                    "Size": {
+                      "X": 32.0,
+                      "Y": 30.0
+                    },
+                    "Name": "star2",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 72.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 72.0,
+                    "RightMargin": -104.0,
+                    "TopMargin": -30.0,
+                    "Tag": 870,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star1.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 871,
+                        "ActionTag": -1232924836,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_on",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star2.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 872,
+                        "ActionTag": 291428552,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_off",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -1697718395,
+                    "Size": {
+                      "X": 32.0,
+                      "Y": 30.0
+                    },
+                    "Name": "star3",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 108.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 108.0,
+                    "RightMargin": -140.0,
+                    "TopMargin": -30.0,
+                    "Tag": 873,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star1.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 874,
+                        "ActionTag": -966038224,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_on",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star2.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 875,
+                        "ActionTag": -1251857901,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_off",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -384747279,
+                    "Size": {
+                      "X": 32.0,
+                      "Y": 30.0
+                    },
+                    "Name": "star4",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 144.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 144.0,
+                    "RightMargin": -176.0,
+                    "TopMargin": -30.0,
+                    "Tag": 876,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star1.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 877,
+                        "ActionTag": -106391880,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_on",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "heroUI/star2.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 32,
+                        "Scale9Height": 30,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "Tag": 878,
+                        "ActionTag": 1304236032,
+                        "Size": {
+                          "X": 32.0,
+                          "Y": 30.0
+                        },
+                        "Name": "star_off",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": -98539985,
+                    "Size": {
+                      "X": 32.0,
+                      "Y": 30.0
+                    },
+                    "Name": "star5",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": 1734385338,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "starts",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/equip_text.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 84,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 534.9274,
+                  "Y": 88.8924
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -495,31 +1194,164 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7423,
-                  "Y": 0.1615
+                  "X": 0.8573,
+                  "Y": 0.8081
                 },
                 "PreSize": {
-                  "X": 0.1122,
-                  "Y": 0.3636
+                  "X": 0.1346,
+                  "Y": 0.2273
                 },
-                "LeftMargin": 463.1798,
-                "RightMargin": 90.8202,
-                "TopMargin": 26.1182,
-                "BottomMargin": 8.8818,
-                "Tag": 215,
-                "ActionTag": -1462598437,
+                "LeftMargin": 492.9274,
+                "RightMargin": 47.0726,
+                "TopMargin": 8.6076,
+                "BottomMargin": 76.3924,
+                "CallBackType": "Touch",
+                "Tag": 879,
+                "ActionTag": 2032186843,
                 "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
+                  "X": 84.0,
+                  "Y": 25.0
                 },
-                "Name": "tatk_text",
-                "ctype": "TextObjectData"
+                "Name": "heroEquip_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/text_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 11,
+                "Scale9OriginY": 11,
+                "Scale9Width": 12,
+                "Scale9Height": 14,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 476.5855,
+                  "Y": 13.4376
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7638,
+                  "Y": 0.1222
+                },
+                "PreSize": {
+                  "X": 0.1923,
+                  "Y": 0.5455
+                },
+                "LeftMargin": 476.5855,
+                "RightMargin": 27.4144,
+                "TopMargin": 36.5623,
+                "BottomMargin": 13.4376,
+                "Tag": 882,
+                "ActionTag": -1910765510,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 60.0
+                },
+                "Name": "equipNum_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "69568844",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_white.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 537.7601,
+                  "Y": 44.4546
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8618,
+                  "Y": 0.4041
+                },
+                "PreSize": {
+                  "X": 0.1538,
+                  "Y": 0.1182
+                },
+                "LeftMargin": 489.7601,
+                "RightMargin": 38.2399,
+                "TopMargin": 59.0454,
+                "BottomMargin": 37.9546,
+                "Tag": 883,
+                "ActionTag": 1366211527,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 13.0
+                },
+                "Name": "equipNum_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/equip_text2.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 84,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 534.9274,
+                  "Y": 88.8924
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8573,
+                  "Y": 0.8081
+                },
+                "PreSize": {
+                  "X": 0.1346,
+                  "Y": 0.2273
+                },
+                "LeftMargin": 492.9274,
+                "RightMargin": 47.0726,
+                "TopMargin": 8.6076,
+                "BottomMargin": 76.3924,
+                "CallBackType": "Touch",
+                "Tag": 884,
+                "ActionTag": -249085522,
+                "Size": {
+                  "X": 84.0,
+                  "Y": 25.0
+                },
+                "Name": "playerEquip_text",
+                "ctype": "ImageViewObjectData"
               }
             ],
-            "ActionTag": -627838130,
+            "ActionTag": 1918538116,
             "Size": {
               "X": 624.0,
-              "Y": 55.0
+              "Y": 110.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -533,9 +1365,16 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "equipUI/equiptitle_bg.png",
-        "mainUI/hero_icon.png",
-        "ui/textBg.png"
+        "buttonUI/font16_white.png",
+        "equipUI/equip_text.png",
+        "equipUI/equip_text2.png",
+        "heroUI/hero_bg.png",
+        "heroUI/heroDPS.png",
+        "heroUI/star1.png",
+        "heroUI/star2.png",
+        "heroUI/text_bg.png",
+        "ItemLayer.json",
+        "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"
     }

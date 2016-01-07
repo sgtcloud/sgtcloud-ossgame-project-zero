@@ -28,11 +28,33 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
+<<<<<<< HEAD
+          <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="ShopTab.csd" />
+          <FilePathData Path="ItemLayer.csd" />
+          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="BattleNum.csd" />
+          <FilePathData Path="Blood.csd" />
+          <FilePathData Path="CloseBtn.csd" />
+          <FilePathData Path="EnemyList.csd" />
+          <FilePathData Path="EquipBtn.csd" />
+          <FilePathData Path="EquipDesc.csd" />
+          <FilePathData Path="EquipHeroView.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="EquipHeroView.csd" />
+=======
           <FilePathData Path="HeroView.csd" />
           <FilePathData Path="EquipView.csd" />
           <FilePathData Path="SkillView.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="SkillView.csd" />
+>>>>>>> origin/master
       </Value>
     </Item>
   </Properties>
