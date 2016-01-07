@@ -309,6 +309,7 @@
                 "ctype": "ButtonObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "一段文字描述",
                 "HorizontalAlignmentType": "HT_Center",
@@ -329,8 +330,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 225.2204,
-                  "Y": 283.4462
+                  "X": 225.2205,
+                  "Y": 199.6297
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -344,21 +345,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5005,
-                  "Y": 0.7086
+                  "Y": 0.4991
                 },
                 "PreSize": {
-                  "X": 0.2667,
-                  "Y": 0.05
+                  "X": 0.6667,
+                  "Y": 0.45
                 },
-                "LeftMargin": 165.2204,
-                "RightMargin": 164.7796,
-                "TopMargin": 106.5538,
-                "BottomMargin": 273.4462,
-                "Tag": 50,
+                "LeftMargin": 75.2205,
+                "RightMargin": 74.7795,
+                "TopMargin": 110.3703,
+                "BottomMargin": 109.6297,
+                "Tag": 56,
                 "ActionTag": -2019854582,
                 "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
+                  "X": 300.0,
+                  "Y": 180.0
                 },
                 "Name": "desc_text",
                 "ctype": "TextObjectData"

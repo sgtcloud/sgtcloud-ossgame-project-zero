@@ -51,7 +51,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_bg" ActionTag="598677486" Tag="844" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="36.5623" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="dps_bg" ActionTag="598677486" Tag="844" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="36.5624" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
                 <AnchorPoint />
                 <Position X="323.5455" Y="13.4376" />
@@ -317,7 +317,7 @@
                 <PreSize X="0.1346" Y="0.2273" />
                 <FileData Type="Normal" Path="equipUI/equip_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipNum_bg" ActionTag="-1910765510" Tag="882" IconVisible="False" LeftMargin="476.5855" RightMargin="27.4144" TopMargin="36.5623" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="equipNum_bg" ActionTag="-1910765510" Tag="882" IconVisible="False" LeftMargin="476.5855" RightMargin="27.4145" TopMargin="36.5624" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
                 <AnchorPoint />
                 <Position X="476.5855" Y="13.4376" />
