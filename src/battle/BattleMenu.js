@@ -276,6 +276,8 @@ var HeroListMenu = BattleMenu.extend({
                 var lock = btnlayer.getChildByName('lock');
                 var level_text = btnlayer.getChildByName('level_text');
                 var revive_text = btnlayer.getChildByName('revive_text');
+                var per = btnlayer.getChildByName('per');
+                per.setVisible(false);
                 buffNum_text.ignoreContentAdaptWithSize(true);
                 dps.ignoreContentAdaptWithSize(true);
                 dps_text.ignoreContentAdaptWithSize(true);
@@ -285,7 +287,7 @@ var HeroListMenu = BattleMenu.extend({
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getAttack()));
-                setFont([heroName_text, lv]);
+                setFont([heroName_text, lv, buff_text]);
                 if (hero.getLife() > 0) {
                     die_text.setVisible(false);
                     die_time_text.setVisible(false);
@@ -382,10 +384,11 @@ var HeroListMenu = BattleMenu.extend({
                     elements.add.setVisible(false);
                     elements.cut.setVisible(false);
                 } else {
-                    unlockAndInitSkill(skill,elements);
+                    unlockAndInitSkill(skill, elements);
                 }
             }
-            function unlockAndInitSkill(skill,elements){
+
+            function unlockAndInitSkill(skill, elements) {
                 elements.lock.setVisible(false);
                 elements.btn.setEnabled(true);
                 elements.btn.setBright(true);
@@ -404,8 +407,14 @@ var HeroListMenu = BattleMenu.extend({
                 buffNum_text.ignoreContentAdaptWithSize(true);
                 elements.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
                 showAddOrCut(add, cut, showEffect);
+                if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
+                    elements.per.setVisible(true);
+                } else {
+                    elements.per.setVisible(false);
+                }
                 buffNum_text.setString(Math.abs(parseInt(showEffect)));
             }
+
             //根据模板生成技能效果描述
             function buildSkillDesc(skill, levelData) {
                 var effects = skill.traverseSkillEffects();
@@ -448,15 +457,16 @@ var HeroListMenu = BattleMenu.extend({
                 var add = btnlayer.getChildByName('add');
                 var cut = btnlayer.getChildByName('cut');
                 var level_text = btnlayer.getChildByName('level_text');//解锁等级
-
-
                 icon.loadTexture("res/icon/skills/" + skill.getIcon());
                 name.setString(skill.getName());
                 desc.setString(buildSkillDesc(skill));
                 lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
                 level_text.setString("Lv." + skill.getUnlockLevel())
                 level_text.setColor(cc.color(255, 0, 0));
-                setFont([name, desc, lv, level_text]);
+                var per = btnlayer.getChildByName('per');
+                per.setVisible(false);
+                per.ignoreContentAdaptWithSize(false);
+                setFont([name, desc, lv, level_text, buff_text]);
                 var elements = {};
                 elements.gold_text = gold_text;
                 elements.gold = gold;
@@ -467,6 +477,7 @@ var HeroListMenu = BattleMenu.extend({
                 elements.btn = btn;
                 elements.lock = lock;
                 elements.level_text = level_text;
+                elements.per = per;
                 initSkillView(hero, skill, elements);
                 customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                         if (canUnlockSkill(hero, skill)) {
@@ -486,8 +497,8 @@ var HeroListMenu = BattleMenu.extend({
                     }
                 );
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
-                    if (canUnlockSkill(hero, skill)&&elements.lock.isVisible()) {
-                        unlockAndInitSkill(skill,elements);
+                    if (canUnlockSkill(hero, skill) && elements.lock.isVisible()) {
+                        unlockAndInitSkill(skill, elements);
                     }
                 })
                 setElement(root, skill, function (event, otherBtn) {
@@ -512,6 +523,7 @@ var HeroListMenu = BattleMenu.extend({
                         otherBtn.goldText.setVisible(false);
                         otherBtn.add.isVisible() && otherBtn.add.setVisible(false);
                         otherBtn.cut.isVisible() && otherBtn.cut.setVisible(false);
+                        per.setVisible(false);
                     } else {
                         var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                         var nextAmount = nextlevelData['upgrade']['value'];
@@ -519,8 +531,15 @@ var HeroListMenu = BattleMenu.extend({
                         otherBtn.goldText.setString(nextAmount);
                         var showEffect = nextEffects[0].value - effects[0].value;
                         showAddOrCut(otherBtn.add, otherBtn.cut, showEffect);
-                        otherBtn.buffNum.setString(/*(showEffect > 0 ? '+' : '-') +*/ Math.abs(parseInt(showEffect)));
+                        otherBtn.buffNum.setString(Math.abs(parseInt(showEffect)));
                         otherBtn.buffText.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
+                        if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
+                            per.setVisible(true);
+                            var x=otherBtn.buffNum.getPositionX()+ otherBtn.buffNum.getWidth();
+                            per.setPositionX(x+1);
+                        }else {
+                            per.setVisible(false);
+                        }
                         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                     }
                     cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
@@ -583,12 +602,12 @@ var EquipListMenu = BattleMenu.extend({
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
             var dps = root.getChildByName('dps_text');
-            var tap = root.getChildByName('tatk_text');
+            //var tap = root.getChildByName('tatk_text');
 
             name.setString(hero.getName());
             lv.setString(hero.getLv());
             dps.setString(hero.getAttack());
-            tap.setString(hero.getHit());
+            //tap.setString(hero.getHit());
 
             return root;
         }
