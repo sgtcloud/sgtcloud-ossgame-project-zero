@@ -13,10 +13,18 @@ var Hero = function (heroData) {
         var equipsLv = heroData.equips[i];
         equips[i] = new Equip(equip, equipsLv);
     }
-    for (var i in heroData.skills) {
-        var skill = data.skills[i];
-        var skillLv = heroData.skills[i];
-        skills[i] = new Skill(skill, skillLv);
+    for (var i in data.skills) {
+        var skillId = data.skills[i];
+        var skill= readCache(skillId);
+        console.log(skill)
+        var skillLv=(skill&&skill['level'])||1;
+        skills[i] = new Skill(skillId, skillLv,id);
+    }
+    function readCache(skillId){
+        var skill=heroData.skills[skillId]
+        if(skill){
+            return skill;
+        }
     }
     this.getIcon = function () {
         return icon;

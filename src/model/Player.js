@@ -16,10 +16,13 @@ var player = {
             "lv": 1,
             "life": 0,
             "star": 0,
-            "skills": [
-                1,
-                1
-            ],
+        /*   "skills": [
+               {"id": "", "level": ""},
+                {"id": "", "level": ""}
+            ],*/
+            "skills":{
+                //"技能ID":{"leve":""}
+            },
             "equips": [
                 1,
                 1
@@ -30,10 +33,12 @@ var player = {
             "lv": 1,
             "life": 0,
             "star": 0,
-            "skills": [
+            "skills":{
+
+            }/* [
                 1,
                 1
-            ],
+            ]*/,
             "equips": [
                 1,
                 1

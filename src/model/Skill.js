@@ -1,15 +1,19 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var Skill = function (id, lv) {
+var Skill = function (id, lv,heroId) {
     var id = id;
     var lv = lv;
     var data = dataSource.skills[id];
     var icon = data.icon;
     var type = data.type;
-    var heroId=null;
+    var unlockLevel=data['unlockLevel']
+    var heroId=heroId;
     this.getIcon = function () {
         return icon;
+    }
+    this.getUnlockLevel=function(){
+        return unlockLevel;
     }
     this.getType = function () {
         return type;
@@ -41,11 +45,21 @@ var Skill = function (id, lv) {
     }
     this.upgrade = function () {
         lv++;
-        /*for (var i = 0; i < player.heroes.length; i++) {
-            if (player.heroes[i]["id"] === this.getId()) {
+       /* for (var i = 0; i < PlayerData.getHeroesData(heroId).length; i++) {
+            if (player.heroes[heroId]["id"] === this.getId()) {
                 player.heroes[i]['lv']=lv;
             }
         }*/
+        for(var i in player.heroes){
+            var cacheHero=player.heroes[i];
+            if(cacheHero.id===heroId){
+                cacheHero['skills']=cacheHero['skills']||{};
+                cacheHero['skills'][this.getId()]=cacheHero['skills'][this.getId()]||{};
+                cacheHero['skills'][this.getId()]['level']=lv;
+                break;
+            }
+        }
+
     }
     /**
      * 获取当前级别

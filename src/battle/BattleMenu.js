@@ -398,7 +398,7 @@ var HeroListMenu = BattleMenu.extend({
             return desc;
         }
 
-        function buildSkillView(skill) {
+        function buildSkillView(skill,hero) {
             var root = skillTemp.clone();
             var icon = root.getChildByName('skill_icon');
             var name = root.getChildByName('skillName_text');
@@ -437,7 +437,6 @@ var HeroListMenu = BattleMenu.extend({
                     }
                 }
             });
-
             setElement(root, skill, function (event, otherBtn) {
                 var eventData = {};
                 var cost = skill.getNextLevelUpgrade();
@@ -471,7 +470,13 @@ var HeroListMenu = BattleMenu.extend({
                 }
                 cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
             });
-
+           /* var heroLv=hero.getLv();
+            var unlockLevel=skill.getUnlockLevel();
+            if (heroLv<unlockLevel){
+                lock.setVisible(true);
+                btn.setEnabled(false);
+                btn.setBright(false);
+            }*/
             return root;
         }
 
@@ -487,7 +492,7 @@ var HeroListMenu = BattleMenu.extend({
 
                 for (var j = 0; j < heroData.getSkillCount(); j++) {
                     var skillData = heroData.getSkillData(j);
-                    var _skillView = buildSkillView(skillData);
+                    var _skillView = buildSkillView(skillData,heroData);
                     this.heroList.addChild(_skillView);
 
                     _heroView.skills = _heroView.skills || [];
