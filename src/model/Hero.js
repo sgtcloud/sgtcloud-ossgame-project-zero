@@ -72,6 +72,10 @@ var Hero = function (heroData) {
         return getSpecificLevelData(data, level || lv);
     }
 
+    this.getResurge=function(){
+        return getLevelData(data,'resurge',this.getLv())
+    }
+
     this.getId = function () {
         return id;
     };

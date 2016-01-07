@@ -1,4 +1,4 @@
-{ "s10101":{
+{"s10101": {
   "name" : "法术波动",
   "desc" : "增加英雄{effect1_value}点{effect1_name}和{effect2_value}点{effect2_name}，并提升{effect3_value}的{effect3_name}。",
   "icon" : "s10101.png",
@@ -7,16 +7,16 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 15,
+      "value" : 86,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 150,
-      "type" : "life_value"
+      "value" : 20,
+      "type" : "tap_value"
     },
     "effect3" : {
-      "value" : 8,
-      "type" : "tap_rate"
+      "value" : 13,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 640,
@@ -25,16 +25,16 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 13,
+      "value" : 67,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 130,
-      "type" : "life_value"
+      "value" : 18,
+      "type" : "tap_value"
     },
     "effect3" : {
-      "value" : 7,
-      "type" : "tap_rate"
+      "value" : 11,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 320,
@@ -43,16 +43,16 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 11,
+      "value" : 51,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 110,
-      "type" : "life_value"
+      "value" : 16,
+      "type" : "tap_value"
     },
     "effect3" : {
-      "value" : 6,
-      "type" : "tap_rate"
+      "value" : 9,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 160,
@@ -61,16 +61,16 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 9,
+      "value" : 38,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 90,
-      "type" : "life_value"
+      "value" : 14,
+      "type" : "tap_value"
     },
     "effect3" : {
-      "value" : 5,
-      "type" : "tap_rate"
+      "value" : 7,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 80,
@@ -79,16 +79,16 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 7,
+      "value" : 28,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 70,
-      "type" : "life_value"
+      "value" : 12,
+      "type" : "tap_value"
     },
     "effect3" : {
-      "value" : 4,
-      "type" : "tap_rate"
+      "value" : 5,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 40,
@@ -97,23 +97,23 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 5,
+      "value" : 20,
       "type" : "attack_value"
     },
     "effect2" : {
-      "value" : 50,
-      "type" : "life_value"
+      "value" : 10,
+      "type" : "tap_value"
     },
     "effect3" : {
       "value" : 3,
-      "type" : "tap_rate"
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 20,
       "unit" : "gold"
     }
   } ]
-},"s10102": {
+}, "s10102":{
   "name" : "灵魂烈焰",
   "desc" : "提升英雄{effect1_value}的{effect1_name}和{effect2_value}的{effect2_name}。",
   "icon" : "s10102.png",
@@ -126,8 +126,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 7,
-      "type" : "life_rate"
+      "value" : 8,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 1600,
@@ -140,8 +140,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 6,
-      "type" : "life_rate"
+      "value" : 7,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 800,
@@ -154,8 +154,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 5,
-      "type" : "life_rate"
+      "value" : 6,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 400,
@@ -168,8 +168,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 4,
-      "type" : "life_rate"
+      "value" : 5,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 200,
@@ -182,8 +182,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 3,
-      "type" : "life_rate"
+      "value" : 4,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 100,
@@ -196,8 +196,8 @@
       "type" : "attack_rate"
     },
     "effect2" : {
-      "value" : 2,
-      "type" : "life_rate"
+      "value" : 3,
+      "type" : "tap_rate"
     },
     "upgrade" : {
       "value" : 50,
@@ -213,8 +213,8 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 20,
-      "type" : "tap_value"
+      "value" : 7,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 960,
@@ -223,8 +223,8 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 18,
-      "type" : "tap_value"
+      "value" : 6,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 480,
@@ -233,8 +233,8 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 16,
-      "type" : "tap_value"
+      "value" : 5,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 240,
@@ -243,8 +243,8 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 14,
-      "type" : "tap_value"
+      "value" : 4,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 120,
@@ -253,8 +253,8 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 12,
-      "type" : "tap_value"
+      "value" : 3,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 60,
@@ -263,8 +263,8 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 10,
-      "type" : "tap_value"
+      "value" : 2,
+      "type" : "life_value"
     },
     "upgrade" : {
       "value" : 30,
@@ -280,8 +280,8 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 8,
-      "type" : "tap_rate"
+      "value" : 13,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 1920,
@@ -290,8 +290,8 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 7,
-      "type" : "tap_rate"
+      "value" : 11,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 960,
@@ -300,8 +300,8 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 6,
-      "type" : "tap_rate"
+      "value" : 9,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 480,
@@ -310,8 +310,8 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 5,
-      "type" : "tap_rate"
+      "value" : 7,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 240,
@@ -320,8 +320,8 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 4,
-      "type" : "tap_rate"
+      "value" : 5,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 120,
@@ -331,14 +331,14 @@
     "level" : 1,
     "effect1" : {
       "value" : 3,
-      "type" : "tap_rate"
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 60,
       "unit" : "gold"
     }
   } ]
-},"s10301": {
+}, "s10301":{
   "name" : "威力一击",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
   "icon" : "s10301.png",
@@ -347,7 +347,7 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 150,
+      "value" : 8,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -357,7 +357,7 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 130,
+      "value" : 7,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -367,7 +367,7 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 110,
+      "value" : 6,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -377,7 +377,7 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 90,
+      "value" : 5,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -387,7 +387,7 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 70,
+      "value" : 4,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -397,7 +397,7 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 50,
+      "value" : 3,
       "type" : "life_value"
     },
     "upgrade" : {
@@ -414,7 +414,7 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 7,
+      "value" : 14,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -424,7 +424,7 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 6,
+      "value" : 12,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -434,7 +434,7 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 5,
+      "value" : 10,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -444,7 +444,7 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 4,
+      "value" : 8,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -454,7 +454,7 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 3,
+      "value" : 6,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -464,7 +464,7 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 2,
+      "value" : 4,
       "type" : "life_rate"
     },
     "upgrade" : {
@@ -472,7 +472,7 @@
       "unit" : "gold"
     }
   } ]
-}, "s10401":{
+},"s10401": {
   "name" : "邪恶幻象",
   "desc" : "增加英雄{effect1_value}点{effect1_name}。",
   "icon" : "s10401.png",
@@ -481,7 +481,7 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 15,
+      "value" : 86,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -491,7 +491,7 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 13,
+      "value" : 67,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -501,7 +501,7 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 11,
+      "value" : 51,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -511,7 +511,7 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 9,
+      "value" : 38,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -521,7 +521,7 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 7,
+      "value" : 28,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -531,7 +531,7 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 5,
+      "value" : 20,
       "type" : "attack_value"
     },
     "upgrade" : {
@@ -552,7 +552,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 2560,
+      "value" : 1920,
       "unit" : "gold"
     }
   }, {
@@ -562,7 +562,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 1280,
+      "value" : 960,
       "unit" : "gold"
     }
   }, {
@@ -572,7 +572,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 640,
+      "value" : 480,
       "unit" : "gold"
     }
   }, {
@@ -582,7 +582,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 320,
+      "value" : 240,
       "unit" : "gold"
     }
   }, {
@@ -592,7 +592,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 160,
+      "value" : 120,
       "unit" : "gold"
     }
   }, {
@@ -602,7 +602,7 @@
       "type" : "attack_rate"
     },
     "upgrade" : {
-      "value" : 80,
+      "value" : 60,
       "unit" : "gold"
     }
   } ]
@@ -615,65 +615,65 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 20,
-      "type" : "tap_value"
+      "value" : 86,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 1920,
+      "value" : 2560,
       "unit" : "gold"
     }
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 18,
-      "type" : "tap_value"
+      "value" : 67,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 960,
+      "value" : 1280,
       "unit" : "gold"
     }
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 16,
-      "type" : "tap_value"
+      "value" : 51,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 480,
+      "value" : 640,
       "unit" : "gold"
     }
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 14,
-      "type" : "tap_value"
+      "value" : 38,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 240,
+      "value" : 320,
       "unit" : "gold"
     }
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 12,
-      "type" : "tap_value"
+      "value" : 28,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 120,
+      "value" : 160,
       "unit" : "gold"
     }
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 10,
-      "type" : "tap_value"
+      "value" : 20,
+      "type" : "attack_value"
     },
     "upgrade" : {
-      "value" : 60,
+      "value" : 80,
       "unit" : "gold"
     }
   } ]
-}, "s10502":{
+},"s10502": {
   "name" : "魅惑妖术",
   "desc" : "提升英雄{effect1_value}的{effect1_name}。",
   "icon" : "s10502.png",
@@ -682,8 +682,8 @@
   "levelDatas" : [ {
     "level" : 6,
     "effect1" : {
-      "value" : 8,
-      "type" : "tap_rate"
+      "value" : 14,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 2880,
@@ -692,8 +692,8 @@
   }, {
     "level" : 5,
     "effect1" : {
-      "value" : 7,
-      "type" : "tap_rate"
+      "value" : 12,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 1440,
@@ -702,8 +702,8 @@
   }, {
     "level" : 4,
     "effect1" : {
-      "value" : 6,
-      "type" : "tap_rate"
+      "value" : 10,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 720,
@@ -712,8 +712,8 @@
   }, {
     "level" : 3,
     "effect1" : {
-      "value" : 5,
-      "type" : "tap_rate"
+      "value" : 8,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 360,
@@ -722,8 +722,8 @@
   }, {
     "level" : 2,
     "effect1" : {
-      "value" : 4,
-      "type" : "tap_rate"
+      "value" : 6,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 180,
@@ -732,8 +732,8 @@
   }, {
     "level" : 1,
     "effect1" : {
-      "value" : 3,
-      "type" : "tap_rate"
+      "value" : 4,
+      "type" : "life_rate"
     },
     "upgrade" : {
       "value" : 90,
