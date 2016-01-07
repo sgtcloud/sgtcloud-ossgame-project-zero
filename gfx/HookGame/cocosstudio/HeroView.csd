@@ -130,14 +130,14 @@
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buff_text" ActionTag="1375437089" Tag="130" IconVisible="False" LeftMargin="51.2139" RightMargin="39.7861" TopMargin="31.6769" BottomMargin="34.3231" FontSize="14" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="49.0000" Y="14.0000" />
+                  <AbstractNodeData Name="buff_text" ActionTag="1375437089" Tag="130" IconVisible="False" LeftMargin="22.0484" RightMargin="17.9516" TopMargin="31.3437" BottomMargin="34.6563" IsCustomSize="True" FontSize="12" LabelText="英雄DPS" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="14.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.7139" Y="41.3231" />
+                    <Position X="72.0484" Y="41.6563" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5408" Y="0.5165" />
-                    <PreSize X="0.3500" Y="0.1750" />
+                    <PrePosition X="0.5146" Y="0.5207" />
+                    <PreSize X="0.7143" Y="0.1750" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
