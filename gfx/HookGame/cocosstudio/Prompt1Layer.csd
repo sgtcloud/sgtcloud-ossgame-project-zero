@@ -64,14 +64,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="50" IconVisible="False" LeftMargin="165.2204" RightMargin="164.7796" TopMargin="106.5538" BottomMargin="273.4462" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
+              <AbstractNodeData Name="desc_text" ActionTag="-2019854582" Tag="56" IconVisible="False" LeftMargin="75.2205" RightMargin="74.7795" TopMargin="110.3703" BottomMargin="109.6297" IsCustomSize="True" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="300.0000" Y="180.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="225.2204" Y="283.4462" />
+                <Position X="225.2205" Y="199.6297" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.5005" Y="0.7086" />
-                <PreSize X="0.2667" Y="0.0500" />
+                <PrePosition X="0.5005" Y="0.4991" />
+                <PreSize X="0.6667" Y="0.4500" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -86,7 +86,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" Visible="False" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9998" RightMargin="81.0002" TopMargin="182.0047" BottomMargin="107.9953" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="text1" ActionTag="-1256465214" Tag="51" IconVisible="False" LeftMargin="35.0000" RightMargin="93.0000" TopMargin="7.0000" BottomMargin="85.0000" FontSize="18" LabelText="99999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

@@ -81,6 +81,7 @@
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
           <Image Name="reviveTime.png" />
+          <Image Name="heroDPS.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -221,6 +222,8 @@
           <Image Name="font15_green.png" />
           <Image Name="add.png" />
           <Image Name="cut.png" />
+          <Image Name="percentage.png" />
+          <Image Name="buy2.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

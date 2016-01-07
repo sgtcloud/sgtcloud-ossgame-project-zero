@@ -112,14 +112,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buffNum_text" ActionTag="1798560512" Tag="140" IconVisible="False" LeftMargin="52.5713" RightMargin="15.4287" TopMargin="54.6223" BottomMargin="12.3777" CharWidth="12" CharHeight="13" LabelText="995564" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="72.0000" Y="13.0000" />
+                  <AbstractNodeData Name="buffNum_text" ActionTag="1798560512" Tag="140" IconVisible="False" LeftMargin="49.9571" RightMargin="30.0429" TopMargin="53.5723" BottomMargin="13.4277" CharWidth="12" CharHeight="13" LabelText="99556" StartChar="0" ctype="TextAtlasObjectData">
+                    <Size X="60.0000" Y="13.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="88.5713" Y="18.8777" />
+                    <Position X="79.9571" Y="19.9277" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6327" Y="0.2360" />
-                    <PreSize X="0.5143" Y="0.1625" />
+                    <PrePosition X="0.5711" Y="0.2491" />
+                    <PreSize X="0.4286" Y="0.1625" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font15_green.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="lock" ActionTag="1296461779" Tag="82" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
@@ -171,6 +171,16 @@
                     <PrePosition X="0.2933" Y="0.2453" />
                     <PreSize X="0.0929" Y="0.1625" />
                     <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="per" ActionTag="-1369748153" Tag="61" IconVisible="False" LeftMargin="111.5742" RightMargin="11.4258" TopMargin="53.2925" BottomMargin="11.7075" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
+                    <Size X="17.0000" Y="15.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="120.0742" Y="19.2075" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8577" Y="0.2401" />
+                    <PreSize X="0.1214" Y="0.1875" />
+                    <FileData Type="Normal" Path="buttonUI/percentage.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
