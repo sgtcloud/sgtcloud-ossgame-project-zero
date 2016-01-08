@@ -343,6 +343,9 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
+        if (this.times != undefined) {
+            clearInterval(this.times);
+        }
         // wait for 1 second to start next battle
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);
