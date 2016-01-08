@@ -181,6 +181,7 @@
           <Image Name="bar_bg.png" />
           <Image Name="icon.png" />
           <Image Name="font22_yellow.png" />
+          <Image Name="font28_yellow.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -194,6 +195,8 @@
           <Image Name="moneyTreeTab_2.png" />
           <Image Name="shopTab_1.png" />
           <Image Name="shopTab_2.png" />
+          <Image Name="moneyTree_bg.png" />
+          <Image Name="sale.png" />
         </Folder>
         <Project Name="ShopView.csd" Type="Layer" />
         <Project Name="MoneyTreeView.csd" Type="Layer" />
@@ -224,6 +227,7 @@
           <Image Name="cut.png" />
           <Image Name="percentage.png" />
           <Image Name="buy2.png" />
+          <Image Name="buy3.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">
