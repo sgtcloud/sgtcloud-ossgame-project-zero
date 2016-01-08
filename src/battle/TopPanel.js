@@ -50,6 +50,10 @@ var TopPanel = cc.Node.extend({
             self.refreshPlayerGoldText();
         });
 
+        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
+            self.refreshPlayerDiamondText();
+        });
+
         bindButtonCallback(this.fightBossBtn, function () {
             customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
         });
@@ -69,6 +73,9 @@ var TopPanel = cc.Node.extend({
         this.refreshPlayerGoldText = function () {
             this.goldNum.setString(player.gold);
             this.goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
+        };
+        this.refreshPlayerKeyText = function () {
+            //player.key
         };
         this.refreshStageState = function () {
 
@@ -137,6 +144,7 @@ var TopPanel = cc.Node.extend({
             this.refreshPlayerDiamondText();
             this.refreshPlayerRelicText();
             this.refreshPlayerGoldText();
+            this.refreshPlayerKeyText();
             this.refreshStageState();
             this.refreshStageList();
         };

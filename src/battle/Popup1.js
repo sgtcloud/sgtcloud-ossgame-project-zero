@@ -17,7 +17,7 @@ var Popup1 = cc.Node.extend({
         var btn = root.getChildByName("btn").getChildByName("btn");
 
         bindButtonCallback(btn, function () {
-            if (_callback && !_callback(e)) {
+            if (typeof _callback === 'function') {
                 _callback(prompt1Layer);
             }else{
                 prompt1Layer.removeFromParent();

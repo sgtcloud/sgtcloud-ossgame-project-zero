@@ -7,7 +7,8 @@
     "icon": "stage_icon_s100001.png",
     "battleNum": 2,
     "enemyNumMin": 1,
-    "enemyNumMax": 2,
+    "enemyNumMax": 1,
+    "moneyTreeRatio": 50,
     "offlineReward": [
       {
         "value": 1,
@@ -30,10 +31,6 @@
     ],
     "enemyTypes": [
       {
-        "id": "e1002",
-        "lv": 1
-      },
-      {
         "id": "e1001",
         "lv": 1
       }
@@ -41,7 +38,7 @@
     "bossBattle": [
       {
         "id": "e1001",
-        "lv": 3
+        "lv": 2
       }
     ]
   },
@@ -53,7 +50,8 @@
     "icon": "stage_icon_s100002.png",
     "battleNum": 3,
     "enemyNumMin": 1,
-    "enemyNumMax": 3,
+    "enemyNumMax": 2,
+    "moneyTreeRatio": 100,
     "offlineReward": [
       {
         "value": 2,
@@ -76,12 +74,12 @@
     ],
     "enemyTypes": [
       {
-        "id": "e1003",
+        "id": "e1002",
         "lv": 1
       },
       {
         "id": "e1001",
-        "lv": 2
+        "lv": 4
       }
     ],
     "bossBattle": [
@@ -103,7 +101,8 @@
     "icon": "stage_icon_s100003.png",
     "battleNum": 5,
     "enemyNumMin": 2,
-    "enemyNumMax": 4,
+    "enemyNumMax": 3,
+    "moneyTreeRatio": 150,
     "offlineReward": [
       {
         "value": 3,
@@ -127,25 +126,29 @@
     "enemyTypes": [
       {
         "id": "e1003",
-        "lv": 2
+        "lv": 1
       },
       {
         "id": "e1002",
-        "lv": 2
+        "lv": 3
+      },
+      {
+        "id": "e1001",
+        "lv": 7
       }
     ],
     "bossBattle": [
       {
-        "id": "e1003",
+        "id": "e1002",
+        "lv": 8
+      },
+      {
+        "id": "e1002",
+        "lv": 6
+      },
+      {
+        "id": "e1001",
         "lv": 5
-      },
-      {
-        "id": "e1001",
-        "lv": 4
-      },
-      {
-        "id": "e1001",
-        "lv": 4
       }
     ]
   },
@@ -157,7 +160,8 @@
     "icon": "stage_icon_s100004.png",
     "battleNum": 8,
     "enemyNumMin": 2,
-    "enemyNumMax": 5,
+    "enemyNumMax": 4,
+    "moneyTreeRatio": 200,
     "offlineReward": [
       {
         "value": 4,
@@ -184,26 +188,34 @@
         "lv": 1
       },
       {
+        "id": "e1003",
+        "lv": 4
+      },
+      {
         "id": "e1002",
-        "lv": 3
+        "lv": 7
+      },
+      {
+        "id": "e1001",
+        "lv": 10
       }
     ],
     "bossBattle": [
       {
-        "id": "e1004",
-        "lv": 6
+        "id": "e1002",
+        "lv": 14
+      },
+      {
+        "id": "e1002",
+        "lv": 12
+      },
+      {
+        "id": "e1002",
+        "lv": 10
       },
       {
         "id": "e1001",
-        "lv": 5
-      },
-      {
-        "id": "e1001",
-        "lv": 5
-      },
-      {
-        "id": "e1001",
-        "lv": 5
+        "lv": 9
       }
     ]
   },
@@ -214,8 +226,9 @@
     "bg": "s100005.png",
     "icon": "stage_icon_s100005.png",
     "battleNum": 10,
-    "enemyNumMin": 3,
+    "enemyNumMin": 2,
     "enemyNumMax": 5,
+    "moneyTreeRatio": 250,
     "offlineReward": [
       {
         "value": 5,
@@ -242,26 +255,42 @@
         "lv": 1
       },
       {
-        "id": "e1002",
+        "id": "e1004",
         "lv": 4
+      },
+      {
+        "id": "e1003",
+        "lv": 7
+      },
+      {
+        "id": "e1002",
+        "lv": 10
+      },
+      {
+        "id": "e1001",
+        "lv": 13
       }
     ],
     "bossBattle": [
       {
-        "id": "e1005",
-        "lv": 7
+        "id": "e1003",
+        "lv": 15
+      },
+      {
+        "id": "e1002",
+        "lv": 20
+      },
+      {
+        "id": "e1002",
+        "lv": 18
+      },
+      {
+        "id": "e1002",
+        "lv": 16
       },
       {
         "id": "e1001",
-        "lv": 6
-      },
-      {
-        "id": "e1001",
-        "lv": 6
-      },
-      {
-        "id": "e1001",
-        "lv": 6
+        "lv": 12
       }
     ]
   },
@@ -273,7 +302,8 @@
     "icon": "stage_icon_s100006.png",
     "battleNum": 10,
     "enemyNumMin": 3,
-    "enemyNumMax": 5,
+    "enemyNumMax": 4,
+    "moneyTreeRatio": 300,
     "offlineReward": [
       {
         "value": 6,
@@ -297,29 +327,37 @@
     "enemyTypes": [
       {
         "id": "e1004",
-        "lv": 2
+        "lv": 8
       },
       {
         "id": "e1003",
-        "lv": 3
+        "lv": 9
+      },
+      {
+        "id": "e1002",
+        "lv": 13
+      },
+      {
+        "id": "e1001",
+        "lv": 16
       }
     ],
     "bossBattle": [
       {
         "id": "e1003",
-        "lv": 5
+        "lv": 21
+      },
+      {
+        "id": "e1003",
+        "lv": 18
       },
       {
         "id": "e1002",
-        "lv": 4
+        "lv": 22
       },
       {
-        "id": "e1002",
-        "lv": 4
-      },
-      {
-        "id": "e1002",
-        "lv": 4
+        "id": "e1001",
+        "lv": 15
       }
     ]
   },
@@ -330,8 +368,9 @@
     "bg": "s100007.png",
     "icon": "stage_icon_s100007.png",
     "battleNum": 10,
-    "enemyNumMin": 4,
+    "enemyNumMin": 3,
     "enemyNumMax": 5,
+    "moneyTreeRatio": 350,
     "offlineReward": [
       {
         "value": 7,
@@ -355,29 +394,45 @@
     "enemyTypes": [
       {
         "id": "e1005",
-        "lv": 2
+        "lv": 5
+      },
+      {
+        "id": "e1004",
+        "lv": 11
       },
       {
         "id": "e1003",
-        "lv": 4
+        "lv": 12
+      },
+      {
+        "id": "e1002",
+        "lv": 16
+      },
+      {
+        "id": "e1001",
+        "lv": 19
       }
     ],
     "bossBattle": [
       {
         "id": "e1004",
-        "lv": 7
+        "lv": 20
+      },
+      {
+        "id": "e1003",
+        "lv": 24
       },
       {
         "id": "e1002",
-        "lv": 5
+        "lv": 26
       },
       {
         "id": "e1002",
-        "lv": 5
+        "lv": 24
       },
       {
-        "id": "e1002",
-        "lv": 5
+        "id": "e1001",
+        "lv": 18
       }
     ]
   },
@@ -389,7 +444,8 @@
     "icon": "stage_icon_s100008.png",
     "battleNum": 10,
     "enemyNumMin": 4,
-    "enemyNumMax": 6,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 400,
     "offlineReward": [
       {
         "value": 8,
@@ -413,29 +469,45 @@
     "enemyTypes": [
       {
         "id": "e1005",
-        "lv": 3
+        "lv": 10
       },
       {
         "id": "e1004",
-        "lv": 3
+        "lv": 15
+      },
+      {
+        "id": "e1003",
+        "lv": 16
+      },
+      {
+        "id": "e1002",
+        "lv": 19
+      },
+      {
+        "id": "e1001",
+        "lv": 22
       }
     ],
     "bossBattle": [
       {
-        "id": "e1005",
-        "lv": 8
+        "id": "e1004",
+        "lv": 26
+      },
+      {
+        "id": "e1004",
+        "lv": 23
+      },
+      {
+        "id": "e1003",
+        "lv": 27
       },
       {
         "id": "e1002",
-        "lv": 6
+        "lv": 28
       },
       {
-        "id": "e1002",
-        "lv": 6
-      },
-      {
-        "id": "e1002",
-        "lv": 6
+        "id": "e1001",
+        "lv": 21
       }
     ]
   },
@@ -446,8 +518,9 @@
     "bg": "s100009.png",
     "icon": "stage_icon_s100009.png",
     "battleNum": 10,
-    "enemyNumMin": 4,
-    "enemyNumMax": 6,
+    "enemyNumMin": 5,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 450,
     "offlineReward": [
       {
         "value": 9,
@@ -470,34 +543,46 @@
     ],
     "enemyTypes": [
       {
+        "id": "e1005",
+        "lv": 16
+      },
+      {
+        "id": "e1004",
+        "lv": 18
+      },
+      {
         "id": "e1003",
-        "lv": 5
+        "lv": 20
       },
       {
         "id": "e1002",
-        "lv": 5
+        "lv": 22
       },
       {
         "id": "e1001",
-        "lv": 3
+        "lv": 25
       }
     ],
     "bossBattle": [
       {
+        "id": "e1005",
+        "lv": 24
+      },
+      {
         "id": "e1004",
-        "lv": 8
+        "lv": 30
       },
       {
         "id": "e1003",
-        "lv": 6
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 6
+        "id": "e1002",
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 6
+        "id": "e1001",
+        "lv": 24
       }
     ]
   },
@@ -510,6 +595,7 @@
     "battleNum": 10,
     "enemyNumMin": 5,
     "enemyNumMax": 6,
+    "moneyTreeRatio": 500,
     "offlineReward": [
       {
         "value": 10,
@@ -532,34 +618,54 @@
     ],
     "enemyTypes": [
       {
+        "id": "e1005",
+        "lv": 24
+      },
+      {
+        "id": "e1005",
+        "lv": 21
+      },
+      {
         "id": "e1004",
-        "lv": 4
+        "lv": 23
       },
       {
         "id": "e1003",
-        "lv": 6
+        "lv": 24
       },
       {
         "id": "e1002",
-        "lv": 6
+        "lv": 25
+      },
+      {
+        "id": "e1001",
+        "lv": 27
       }
     ],
     "bossBattle": [
       {
         "id": "e1005",
-        "lv": 9
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 7
+        "id": "e1005",
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 7
+        "id": "e1005",
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 7
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1001",
+        "lv": 27
       }
     ]
   },
@@ -572,6 +678,7 @@
     "battleNum": 10,
     "enemyNumMin": 6,
     "enemyNumMax": 6,
+    "moneyTreeRatio": 550,
     "offlineReward": [
       {
         "value": 11,
@@ -595,37 +702,53 @@
     "enemyTypes": [
       {
         "id": "e1005",
-        "lv": 4
+        "lv": 29
+      },
+      {
+        "id": "e1005",
+        "lv": 27
       },
       {
         "id": "e1004",
-        "lv": 5
+        "lv": 28
       },
       {
         "id": "e1003",
-        "lv": 7
+        "lv": 28
+      },
+      {
+        "id": "e1002",
+        "lv": 28
+      },
+      {
+        "id": "e1001",
+        "lv": 29
       }
     ],
     "bossBattle": [
       {
         "id": "e1005",
-        "lv": 10
+        "lv": 30
       },
       {
-        "id": "e1004",
-        "lv": 10
+        "id": "e1005",
+        "lv": 30
       },
       {
-        "id": "e1003",
-        "lv": 10
+        "id": "e1005",
+        "lv": 30
       },
       {
-        "id": "e1002",
-        "lv": 10
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
       },
       {
         "id": "e1001",
-        "lv": 10
+        "lv": 30
       }
     ]
   }

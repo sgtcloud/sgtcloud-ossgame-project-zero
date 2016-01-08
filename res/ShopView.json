@@ -51,6 +51,474 @@
               "Y": 1.0
             },
             "Tag": 246,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/moneyTree_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 24,
+                "Scale9OriginY": 24,
+                "Scale9Width": 562,
+                "Scale9Height": 552,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 243,
+                "ActionTag": 2005624188,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 600.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_03.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 11,
+                "Scale9Width": 10,
+                "Scale9Height": 14,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 305.0,
+                  "Y": 532.1672
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8869
+                },
+                "PreSize": {
+                  "X": 0.4098,
+                  "Y": 0.1667
+                },
+                "LeftMargin": 180.0,
+                "RightMargin": 180.0,
+                "TopMargin": 17.8328,
+                "BottomMargin": 482.1672,
+                "Tag": 340,
+                "ActionTag": -910391048,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 100.0
+                },
+                "Name": "text_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 21,
+                "CharHeight": 21,
+                "LabelText": "999999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font28_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 353.6187,
+                  "Y": 514.8141
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5797,
+                  "Y": 0.858
+                },
+                "PreSize": {
+                  "X": 0.2066,
+                  "Y": 0.035
+                },
+                "LeftMargin": 290.6187,
+                "RightMargin": 193.3813,
+                "TopMargin": 74.6859,
+                "BottomMargin": 504.3141,
+                "Tag": 283,
+                "ActionTag": -671076954,
+                "Size": {
+                  "X": 126.0,
+                  "Y": 21.0
+                },
+                "Name": "diamond_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 21,
+                "CharHeight": 21,
+                "LabelText": "999999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font28_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 330.022,
+                  "Y": 554.9778
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.541,
+                  "Y": 0.925
+                },
+                "PreSize": {
+                  "X": 0.2066,
+                  "Y": 0.035
+                },
+                "LeftMargin": 267.022,
+                "RightMargin": 216.978,
+                "TopMargin": 34.5222,
+                "BottomMargin": 544.4778,
+                "CallBackType": "Click",
+                "Tag": 284,
+                "ActionTag": -278615090,
+                "Size": {
+                  "X": 126.0,
+                  "Y": 21.0
+                },
+                "Name": "gold_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 265.8201,
+                  "Y": 515.6212
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4358,
+                  "Y": 0.8594
+                },
+                "PreSize": {
+                  "X": 0.0492,
+                  "Y": 0.05
+                },
+                "LeftMargin": 250.8201,
+                "RightMargin": 329.1799,
+                "TopMargin": 69.3788,
+                "BottomMargin": 500.6212,
+                "Tag": 285,
+                "ActionTag": -772689509,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "diamond",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/gold.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 5,
+                "Scale9OriginY": 5,
+                "Scale9Width": 30,
+                "Scale9Height": 30,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 227.2227,
+                  "Y": 540.7811
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3725,
+                  "Y": 0.9013
+                },
+                "PreSize": {
+                  "X": 0.0492,
+                  "Y": 0.05
+                },
+                "LeftMargin": 227.2227,
+                "RightMargin": 352.7773,
+                "TopMargin": 29.2189,
+                "BottomMargin": 540.7811,
+                "Tag": 286,
+                "ActionTag": -1790085428,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "shopUI/sale.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 66,
+                "Scale9Height": 36,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 222.7903,
+                  "Y": 514.2635
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3652,
+                  "Y": 0.8571
+                },
+                "PreSize": {
+                  "X": 0.1082,
+                  "Y": 0.06
+                },
+                "LeftMargin": 189.7903,
+                "RightMargin": 354.2097,
+                "TopMargin": 67.7365,
+                "BottomMargin": 496.2635,
+                "Tag": 341,
+                "ActionTag": 1954781032,
+                "Size": {
+                  "X": 66.0,
+                  "Y": 36.0
+                },
+                "Name": "sale_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 230.0,
+                  "Y": 27.826
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.377,
+                  "Y": 0.0464
+                },
+                "PreSize": {
+                  "X": 0.2459,
+                  "Y": 0.1
+                },
+                "LeftMargin": 230.0,
+                "RightMargin": 230.0,
+                "TopMargin": 512.1741,
+                "BottomMargin": 27.826,
+                "Tag": 287,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 6,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "CallBackType": "Click",
+                    "Tag": 288,
+                    "ActionTag": -502619807,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 60.0
+                    },
+                    "Name": "buy_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/buy3.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 68,
+                    "Scale9Height": 36,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 75.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.4533,
+                      "Y": 0.6
+                    },
+                    "LeftMargin": 41.0,
+                    "RightMargin": 41.0,
+                    "TopMargin": 12.0,
+                    "BottomMargin": 12.0,
+                    "CallBackType": "Touch",
+                    "Tag": 339,
+                    "ActionTag": -466565672,
+                    "Size": {
+                      "X": 68.0,
+                      "Y": 36.0
+                    },
+                    "Name": "buy_text",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1095335415,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 60.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
+              }
+            ],
             "ActionTag": 282530030,
             "Size": {
               "X": 610.0,
@@ -78,7 +546,7 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": -0.5861,
+              "X": 0.0,
               "Y": 0.0
             },
             "Scale": {
@@ -88,15 +556,13 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": -0.001,
+              "X": 0.0,
               "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": -0.5861,
-            "RightMargin": 0.5861,
             "Tag": 94,
             "Children": [
               {
@@ -402,8 +868,16 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/buy3.png",
+        "heroUI/diamond.png",
+        "heroUI/gold.png",
+        "mainUI/bg_03.png",
         "mainUI/bg_10.png",
-        "ShopIconLayer.json"
+        "mainUI/bg_14.png",
+        "mainUI/font28_yellow.png",
+        "ShopIconLayer.json",
+        "shopUI/moneyTree_bg.png",
+        "shopUI/sale.png"
       ],
       "ctype": "GameFileData"
     }

@@ -90,5 +90,7 @@ var Stage = function (id) {
     this.getOfflineReward = function () {
         return data.offlineReward;
     };
-
+    this.getMoneyTreeRatio = function () {
+        return data.moneyTreeRatio;
+    };
 };

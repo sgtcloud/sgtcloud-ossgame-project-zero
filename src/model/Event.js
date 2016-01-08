@@ -44,8 +44,11 @@ var EVENT = {
     /**
      * 英雄复活倒计时
      */
-    HERO_REVIVE_COUNTDOWN : "HERO_REVIVE_COUNTDOWN"
-
+    HERO_REVIVE_COUNTDOWN: "HERO_REVIVE_COUNTDOWN",
+    /**
+     * 钻石数量改变
+     */
+    GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE"
 };
 
 var customEventHelper = {
