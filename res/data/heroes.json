@@ -400,8 +400,8 @@
       {
         "level": 11,
         "life": 252,
-        "attack": 41,
-        "tap": 41,
+        "attack": 38,
+        "tap": 38,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -420,8 +420,8 @@
       {
         "level": 10,
         "life": 219,
-        "attack": 36,
-        "tap": 36,
+        "attack": 30,
+        "tap": 30,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -440,8 +440,8 @@
       {
         "level": 9,
         "life": 189,
-        "attack": 31,
-        "tap": 31,
+        "attack": 25,
+        "tap": 25,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -460,8 +460,8 @@
       {
         "level": 8,
         "life": 162,
-        "attack": 27,
-        "tap": 27,
+        "attack": 20,
+        "tap": 20,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -480,8 +480,8 @@
       {
         "level": 7,
         "life": 137,
-        "attack": 22,
-        "tap": 22,
+        "attack": 15,
+        "tap": 15,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -500,8 +500,8 @@
       {
         "level": 6,
         "life": 115,
-        "attack": 19,
-        "tap": 19,
+        "attack": 12,
+        "tap": 12,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -520,8 +520,8 @@
       {
         "level": 5,
         "life": 96,
-        "attack": 15,
-        "tap": 15,
+        "attack": 9,
+        "tap": 9,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -540,8 +540,8 @@
       {
         "level": 4,
         "life": 79,
-        "attack": 12,
-        "tap": 12,
+        "attack": 5,
+        "tap": 5,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -560,8 +560,8 @@
       {
         "level": 3,
         "life": 64,
-        "attack": 9,
-        "tap": 9,
+        "attack": 3,
+        "tap": 3,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -580,8 +580,8 @@
       {
         "level": 2,
         "life": 51,
-        "attack": 7,
-        "tap": 7,
+        "attack": 2,
+        "tap": 2,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -600,8 +600,8 @@
       {
         "level": 1,
         "life": 40,
-        "attack": 5,
-        "tap": 5,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -1140,7 +1140,7 @@
       {
         "level": 5,
         "life": 189,
-        "attack": 31,
+        "attack": 29,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1160,7 +1160,7 @@
       {
         "level": 4,
         "life": 162,
-        "attack": 27,
+        "attack": 21,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1180,7 +1180,7 @@
       {
         "level": 3,
         "life": 137,
-        "attack": 22,
+        "attack": 15,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1200,7 +1200,7 @@
       {
         "level": 2,
         "life": 115,
-        "attack": 19,
+        "attack": 10,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1220,7 +1220,7 @@
       {
         "level": 1,
         "life": 96,
-        "attack": 15,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1700,7 +1700,7 @@
       {
         "level": 8,
         "life": 469,
-        "attack": 70,
+        "attack": 65,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1720,7 +1720,7 @@
       {
         "level": 7,
         "life": 419,
-        "attack": 64,
+        "attack": 58,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1740,7 +1740,7 @@
       {
         "level": 6,
         "life": 372,
-        "attack": 57,
+        "attack": 42,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1760,7 +1760,7 @@
       {
         "level": 5,
         "life": 329,
-        "attack": 51,
+        "attack": 36,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1780,7 +1780,7 @@
       {
         "level": 4,
         "life": 289,
-        "attack": 46,
+        "attack": 29,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1800,7 +1800,7 @@
       {
         "level": 3,
         "life": 252,
-        "attack": 41,
+        "attack": 22,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1820,7 +1820,7 @@
       {
         "level": 2,
         "life": 219,
-        "attack": 36,
+        "attack": 16,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1840,7 +1840,7 @@
       {
         "level": 1,
         "life": 189,
-        "attack": 31,
+        "attack": 11,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -2340,7 +2340,7 @@
       {
         "level": 7,
         "life": 645,
-        "attack": 91,
+        "attack": 87,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2360,7 +2360,7 @@
       {
         "level": 6,
         "life": 582,
-        "attack": 84,
+        "attack": 75,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2380,7 +2380,7 @@
       {
         "level": 5,
         "life": 524,
-        "attack": 77,
+        "attack": 60,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2400,7 +2400,7 @@
       {
         "level": 4,
         "life": 469,
-        "attack": 70,
+        "attack": 49,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2420,7 +2420,7 @@
       {
         "level": 3,
         "life": 419,
-        "attack": 64,
+        "attack": 38,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2440,7 +2440,7 @@
       {
         "level": 2,
         "life": 372,
-        "attack": 57,
+        "attack": 29,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2460,7 +2460,7 @@
       {
         "level": 1,
         "life": 329,
-        "attack": 51,
+        "attack": 20,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2900,7 +2900,7 @@
       {
         "level": 10,
         "life": 1212,
-        "attack": 150,
+        "attack": 143,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2920,7 +2920,7 @@
       {
         "level": 9,
         "life": 1116,
-        "attack": 141,
+        "attack": 121,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2940,7 +2940,7 @@
       {
         "level": 8,
         "life": 1026,
-        "attack": 132,
+        "attack": 109,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2960,7 +2960,7 @@
       {
         "level": 7,
         "life": 940,
-        "attack": 123,
+        "attack": 95,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2980,7 +2980,7 @@
       {
         "level": 6,
         "life": 859,
-        "attack": 115,
+        "attack": 78,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3000,7 +3000,7 @@
       {
         "level": 5,
         "life": 783,
-        "attack": 107,
+        "attack": 62,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3020,7 +3020,7 @@
       {
         "level": 4,
         "life": 712,
-        "attack": 99,
+        "attack": 49,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3040,7 +3040,7 @@
       {
         "level": 3,
         "life": 645,
-        "attack": 91,
+        "attack": 39,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3060,7 +3060,7 @@
       {
         "level": 2,
         "life": 582,
-        "attack": 84,
+        "attack": 32,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3080,7 +3080,7 @@
       {
         "level": 1,
         "life": 524,
-        "attack": 77,
+        "attack": 25,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,

@@ -731,9 +731,10 @@ var ShopLayerMenu = BattleMenu.extend({
             }
             switch(name){
                 case "shop_tab":
-                    self.showPorpView();
+                    self.showPorpView(name);
                     break;
                 case "moneyTree_tab":
+                    self.showMoneyTreeView(name);
                     break;
             }
             var childrens = shopView.getChildren();
@@ -743,8 +744,33 @@ var ShopLayerMenu = BattleMenu.extend({
             shopView.getChildByName(name).setVisible(true);
             this.buttons[name].setSelected(true);
         };
-        this.showPorpView = function(){
-            var shopPorps = shopView.getChildByName("shop_tab");
+        this.showMoneyTreeView = function(name){
+            var showMoneyTree = shopView.getChildByName(name);
+            var diamondText = showMoneyTree.getChildByName("diamond_text");
+            var goldText = showMoneyTree.getChildByName("gold_text");
+            diamondText.ignoreContentAdaptWithSize(true);
+            diamondText.setString(5);
+            goldText.ignoreContentAdaptWithSize(true);
+            goldText.setString(5 * PlayerData.getStageData().getMoneyTreeRatio());
+
+            var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
+            buyBtn.addClickEventListener(function () {
+                self.buyGold(5,(5 * PlayerData.getStageData().getMoneyTreeRatio()));
+            });
+        };
+        this.buyGold = function(gem,gold){
+            if(player.gem >= gem){
+                PlayerData.consumeResource([PlayerData.createResourceData("gold",gold)
+                ,PlayerData.createResourceData("gem",-gem)]);
+                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                PlayerData.updatePlayer();
+            }else{
+                new Popup1("友情提示","当前钻石不足");
+            }
+        };
+        this.showPorpView = function(name){
+            var shopPorps = shopView.getChildByName(name);
             var goods = dataSource.goods;
             var n = 0;
             for(var i in goods){
@@ -778,9 +804,6 @@ var ShopLayerMenu = BattleMenu.extend({
                 var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
                 var price = goods[i].price;
                 self.clickBtn(buyBtn,price,goods[i]);
-                /*bindButtonCallback(buyBtn,function(){
-                    self.buyGoods(goods[i].price);
-                });*/
             }
         };
         this.clickBtn = function(buyBtn,price,goods){
@@ -801,10 +824,13 @@ var ShopLayerMenu = BattleMenu.extend({
                 });
                 //new Popup1("友情提示","购买成功");
             }else{
-                new Popup1("友情提示","当前金币不足，购买失败");
+                new Popup1("友情提示","当前金币不足,点击确定进入点金页面",function(layer){
+                    layer.removeFromParent();
+                    self.showMenuLayer("moneyTree_tab");
+                });
             }
         };
-        this.showPorpView();
+        this.showPorpView("shop_tab");
     }
 
 });
