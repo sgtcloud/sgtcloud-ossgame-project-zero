@@ -49,17 +49,17 @@
                 <PreSize X="0.2016" Y="0.0674" />
                 <FileData Type="Normal" Path="shopUI/shopText.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="15.0370" RightMargin="14.9630" TopMargin="250.6487" BottomMargin="9.3513" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="250.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="610.0000" Y="600.0000" />
                 <AnchorPoint />
-                <Position X="15.0370" Y="9.3513" />
+                <Position X="15.0000" Y="10.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0235" Y="0.0109" />
+                <PrePosition X="0.0234" Y="0.0116" />
                 <PreSize X="0.9531" Y="0.6977" />
                 <FileData Type="Normal" Path="ShopView.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.7837" RightMargin="284.2163" TopMargin="196.7203" BottomMargin="608.2797" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_tab" ActionTag="-1889564795" Tag="782" IconVisible="False" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
@@ -92,10 +92,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="35.7837" Y="608.2797" />
+                <Position X="35.0000" Y="610.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0559" Y="0.7073" />
+                <PrePosition X="0.0547" Y="0.7093" />
                 <PreSize X="0.5000" Y="0.0640" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

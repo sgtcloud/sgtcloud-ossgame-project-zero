@@ -233,8 +233,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 15.037,
-                  "Y": 9.3513
+                  "X": 15.0,
+                  "Y": 10.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -243,17 +243,17 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.0235,
-                  "Y": 0.0109
+                  "X": 0.0234,
+                  "Y": 0.0116
                 },
                 "PreSize": {
                   "X": 0.9531,
                   "Y": 0.6977
                 },
-                "LeftMargin": 15.037,
-                "RightMargin": 14.963,
-                "TopMargin": 250.6487,
-                "BottomMargin": 9.3513,
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 250.0,
+                "BottomMargin": 10.0,
                 "Tag": 398,
                 "ActionTag": 1256429570,
                 "Size": {
@@ -282,8 +282,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 35.7837,
-                  "Y": 608.2797
+                  "X": 35.0,
+                  "Y": 610.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -292,17 +292,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0559,
-                  "Y": 0.7073
+                  "X": 0.0547,
+                  "Y": 0.7093
                 },
                 "PreSize": {
                   "X": 0.5,
                   "Y": 0.064
                 },
-                "LeftMargin": 35.7837,
-                "RightMargin": 284.2163,
-                "TopMargin": 196.7203,
-                "BottomMargin": 608.2797,
+                "LeftMargin": 35.0,
+                "RightMargin": 285.0,
+                "TopMargin": 195.0,
+                "BottomMargin": 610.0,
                 "Tag": 781,
                 "Children": [
                   {

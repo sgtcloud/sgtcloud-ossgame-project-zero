@@ -29,25 +29,25 @@
                 <PreSize X="0.1442" Y="0.8182" />
                 <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroName_text" ActionTag="1328202900" Tag="219" IconVisible="False" LeftMargin="120.0000" RightMargin="372.0000" TopMargin="12.9999" BottomMargin="75.0001" FontSize="22" LabelText="英雄名字六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="132.0000" Y="22.0000" />
+              <AbstractNodeData Name="heroName_text" ActionTag="1328202900" Tag="219" IconVisible="False" LeftMargin="120.0000" RightMargin="344.0000" TopMargin="12.9999" BottomMargin="75.0001" IsCustomSize="True" FontSize="22" LabelText="英雄名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="160.0000" Y="22.0000" />
                 <AnchorPoint />
                 <Position X="120.0000" Y="75.0001" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.1923" Y="0.6818" />
-                <PreSize X="0.2115" Y="0.2000" />
+                <PreSize X="0.2564" Y="0.2000" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-1831681872" Tag="220" IconVisible="False" LeftMargin="120.0003" RightMargin="395.9997" TopMargin="42.0000" BottomMargin="50.0000" FontSize="18" LabelText="Lv.9999/9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="108.0000" Y="18.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="-1831681872" Tag="220" IconVisible="False" LeftMargin="120.0003" RightMargin="343.9997" TopMargin="42.0000" BottomMargin="50.0000" IsCustomSize="True" FontSize="18" LabelText="Lv.9999/9999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="160.0000" Y="18.0000" />
                 <AnchorPoint />
                 <Position X="120.0003" Y="50.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.1923" Y="0.4545" />
-                <PreSize X="0.1731" Y="0.1636" />
+                <PreSize X="0.2564" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

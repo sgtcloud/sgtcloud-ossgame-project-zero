@@ -94,6 +94,43 @@
               {
                 "FileData": {
                   "Type": "Normal",
+                  "Path": "rankUI/rankView_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 580,
+                "Scale9Height": 98,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.98
+                },
+                "TopMargin": 2.0,
+                "Tag": 29,
+                "ActionTag": -310137380,
+                "Size": {
+                  "X": 580.0,
+                  "Y": 98.0
+                },
+                "Name": "my_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
                   "Path": "mainUI/hero_icon.png",
                   "Plist": ""
                 },
@@ -104,8 +141,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 68.7928,
-                  "Y": 50.1295
+                  "X": 60.7931,
+                  "Y": 50.1296
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -114,17 +151,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1186,
+                  "X": 0.1048,
                   "Y": 0.5013
                 },
                 "PreSize": {
                   "X": 0.1552,
                   "Y": 0.9
                 },
-                "LeftMargin": 23.7928,
-                "RightMargin": 466.2072,
-                "TopMargin": 4.8705,
-                "BottomMargin": 5.1295,
+                "LeftMargin": 15.7931,
+                "RightMargin": 474.2069,
+                "TopMargin": 4.8704,
+                "BottomMargin": 5.1296,
                 "Tag": 39,
                 "ActionTag": 679581239,
                 "Size": {
@@ -135,8 +172,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "玩家名字六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -153,57 +192,55 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 188.385,
-                  "Y": 74.7257
+                  "X": 199.3848,
+                  "Y": 82.7256
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3248,
-                  "Y": 0.7473
+                  "X": 0.3438,
+                  "Y": 0.8273
                 },
                 "PreSize": {
-                  "X": 0.2069,
+                  "X": 0.2759,
                   "Y": 0.2
                 },
-                "LeftMargin": 128.385,
-                "RightMargin": 331.615,
-                "TopMargin": 15.2743,
-                "BottomMargin": 64.7257,
+                "LeftMargin": 119.3848,
+                "RightMargin": 300.6152,
+                "TopMargin": 7.2744,
+                "BottomMargin": 72.7256,
                 "Tag": 40,
                 "ActionTag": -714092074,
                 "Size": {
-                  "X": 120.0,
+                  "X": 160.0,
                   "Y": 20.0
                 },
                 "Name": "player_name",
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "Lv.999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rankUI/clearance_rank.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 247,
+                "Scale9Height": 31,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 158.3851,
-                  "Y": 49.0894
+                  "X": 424.0123,
+                  "Y": 52.1379
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -212,194 +249,41 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2731,
-                  "Y": 0.4909
+                  "X": 0.7311,
+                  "Y": 0.5214
                 },
                 "PreSize": {
-                  "X": 0.1034,
-                  "Y": 0.2
+                  "X": 0.4259,
+                  "Y": 0.31
                 },
-                "LeftMargin": 128.3851,
-                "RightMargin": 391.6149,
-                "TopMargin": 40.9106,
-                "BottomMargin": 39.0894,
-                "Tag": 41,
-                "ActionTag": -1925350662,
+                "LeftMargin": 300.5123,
+                "RightMargin": 32.4877,
+                "TopMargin": 32.3621,
+                "BottomMargin": 36.6379,
+                "Tag": 389,
+                "ActionTag": 1684059057,
                 "Size": {
-                  "X": 60.0,
-                  "Y": 20.0
-                },
-                "Name": "player_lv",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "转生次数：99次",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 198.3853,
-                  "Y": 23.4529
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.342,
-                  "Y": 0.2345
-                },
-                "PreSize": {
-                  "X": 0.2414,
-                  "Y": 0.2
-                },
-                "LeftMargin": 128.3853,
-                "RightMargin": 311.6147,
-                "TopMargin": 66.5471,
-                "BottomMargin": 13.4529,
-                "Tag": 42,
-                "ActionTag": -1997764095,
-                "Size": {
-                  "X": 140.0,
-                  "Y": 20.0
-                },
-                "Name": "player_prestige",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "竞技场排名：",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 383.0596,
-                  "Y": 52.2163
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.6604,
-                  "Y": 0.5222
-                },
-                "PreSize": {
-                  "X": 0.2069,
-                  "Y": 0.2
-                },
-                "LeftMargin": 323.0596,
-                "RightMargin": 136.9404,
-                "TopMargin": 37.7837,
-                "BottomMargin": 42.2163,
-                "Tag": 43,
-                "ActionTag": 198187868,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
-                },
-                "Name": "pvp_rank",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "通关数排名：",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 383.0596,
-                  "Y": 51.9618
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.6604,
-                  "Y": 0.5196
-                },
-                "PreSize": {
-                  "X": 0.2069,
-                  "Y": 0.2
-                },
-                "LeftMargin": 323.0596,
-                "RightMargin": 136.9404,
-                "TopMargin": 38.0382,
-                "BottomMargin": 41.9618,
-                "Tag": 44,
-                "ActionTag": 1925088656,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
+                  "X": 247.0,
+                  "Y": 31.0
                 },
                 "Name": "stage_rank",
-                "ctype": "TextObjectData"
+                "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "第9999名",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rankUI/pvp_rank.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 247,
+                "Scale9Height": 31,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 473.1388,
-                  "Y": 51.9618
+                  "X": 424.0123,
+                  "Y": 52.1379
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -408,25 +292,240 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8158,
-                  "Y": 0.5196
+                  "X": 0.7311,
+                  "Y": 0.5214
                 },
                 "PreSize": {
-                  "X": 0.1379,
-                  "Y": 0.2
+                  "X": 0.4259,
+                  "Y": 0.31
                 },
-                "LeftMargin": 433.1388,
-                "RightMargin": 66.8612,
-                "TopMargin": 38.0382,
-                "BottomMargin": 41.9618,
-                "Tag": 45,
-                "ActionTag": 1774692873,
+                "LeftMargin": 300.5123,
+                "RightMargin": 32.4877,
+                "TopMargin": 32.3621,
+                "BottomMargin": 36.6379,
+                "Tag": 390,
+                "ActionTag": 788911233,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 20.0
+                  "X": 247.0,
+                  "Y": 31.0
+                },
+                "Name": "pvp_rank",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 21,
+                "CharHeight": 21,
+                "LabelText": "99",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font28_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 483.2911,
+                  "Y": 52.8046
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8333,
+                  "Y": 0.528
+                },
+                "PreSize": {
+                  "X": 0.0724,
+                  "Y": 0.21
+                },
+                "LeftMargin": 462.2911,
+                "RightMargin": 75.7089,
+                "TopMargin": 36.6954,
+                "BottomMargin": 42.3046,
+                "Tag": 391,
+                "ActionTag": -536068057,
+                "Size": {
+                  "X": 42.0,
+                  "Y": 21.0
                 },
                 "Name": "num",
-                "ctype": "TextObjectData"
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "1234",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_white.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.4757,
+                  "ScaleY": 0.5309
+                },
+                "Position": {
+                  "X": 183.3195,
+                  "Y": 54.1115
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3161,
+                  "Y": 0.5411
+                },
+                "PreSize": {
+                  "X": 0.1241,
+                  "Y": 0.17
+                },
+                "LeftMargin": 149.0691,
+                "RightMargin": 358.9309,
+                "TopMargin": 37.9138,
+                "BottomMargin": 45.0862,
+                "Tag": 1145,
+                "ActionTag": 349901887,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 17.0
+                },
+                "Name": "level_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rankUI/level.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 44,
+                "Scale9Height": 23,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 115.2229,
+                  "Y": 42.0862
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1987,
+                  "Y": 0.4209
+                },
+                "PreSize": {
+                  "X": 0.0707,
+                  "Y": 0.23
+                },
+                "LeftMargin": 115.2229,
+                "RightMargin": 423.7771,
+                "TopMargin": 34.9138,
+                "BottomMargin": 42.0862,
+                "Tag": 1146,
+                "ActionTag": -1403379763,
+                "Size": {
+                  "X": 41.0,
+                  "Y": 23.0
+                },
+                "Name": "player_lv",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rankUI/transformation.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 172,
+                "Scale9Height": 31,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 115.2229,
+                  "Y": 7.529
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1987,
+                  "Y": 0.0753
+                },
+                "PreSize": {
+                  "X": 0.3224,
+                  "Y": 0.31
+                },
+                "LeftMargin": 115.2229,
+                "RightMargin": 277.7771,
+                "TopMargin": 61.471,
+                "BottomMargin": 7.529,
+                "Tag": 27,
+                "ActionTag": -912661490,
+                "Size": {
+                  "X": 187.0,
+                  "Y": 31.0
+                },
+                "Name": "player_prestige",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "99",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_white.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.4757,
+                  "ScaleY": 0.5309
+                },
+                "Position": {
+                  "X": 247.7206,
+                  "Y": 22.9446
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4271,
+                  "Y": 0.2294
+                },
+                "PreSize": {
+                  "X": 0.0621,
+                  "Y": 0.17
+                },
+                "LeftMargin": 230.5954,
+                "RightMargin": 313.4046,
+                "TopMargin": 69.0807,
+                "BottomMargin": 13.9193,
+                "Tag": 29,
+                "ActionTag": 19986441,
+                "Size": {
+                  "X": 36.0,
+                  "Y": 17.0
+                },
+                "Name": "prestige_text",
+                "ctype": "TextAtlasObjectData"
               }
             ],
             "ActionTag": 318411989,
@@ -447,7 +546,14 @@
       },
       "UsedResources": [
         "mainUI/bg_05.png",
-        "mainUI/hero_icon.png"
+        "mainUI/font22_white.png",
+        "mainUI/font28_yellow.png",
+        "mainUI/hero_icon.png",
+        "rankUI/clearance_rank.png",
+        "rankUI/level.png",
+        "rankUI/pvp_rank.png",
+        "rankUI/rankView_bg.png",
+        "rankUI/transformation.png"
       ],
       "ctype": "GameFileData"
     }
