@@ -1,0 +1,398 @@
+{
+  "10001001":{
+    "name": "测试1",
+    "gold": 10,
+    "gem": 10,
+    "relic": 10,
+    "key": 10,
+    "vip": 1,
+    "stage": "s100010",
+    "stage_battle_num": 1,
+    "into_stage_battle_timestamp": 0,
+    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "packs":[],
+    "heroes": [
+      {
+        "id": "h101",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+        },
+        "equips": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "h102",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+
+        },
+        "equips": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "10001002":{
+    "name": "测试2",
+    "gold": 10,
+    "gem": 10,
+    "relic": 10,
+    "key": 10,
+    "vip": 1,
+    "stage": "s100009",
+    "stage_battle_num": 1,
+    "into_stage_battle_timestamp": 0,
+    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "packs":[],
+    "heroes": [
+      {
+        "id": "h101",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+        },
+        "equips": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "h102",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+
+        },
+        "equips": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "10001003":{
+    "name": "测试3",
+    "gold": 10,
+    "gem": 10,
+    "relic": 10,
+    "key": 10,
+    "vip": 1,
+    "stage": "s100008",
+    "stage_battle_num": 1,
+    "into_stage_battle_timestamp": 0,
+    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "packs":[],
+    "heroes": [
+      {
+        "id": "h101",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+        },
+        "equips": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "h102",
+        "lv": 1,
+        "life": 0,
+        "star": 0,
+        "skills":{
+
+        },
+        "equips": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "10001004":{
+  "name": "测试4",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100007",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+},
+  "10001005":{
+  "name": "测试5",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100006",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+}
+,"10001006":{
+  "name": "测试6",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100005",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+},"10001007":{
+  "name": "测试7",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100004",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+},"10001008":{
+  "name": "测试8",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100003",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+},"10001009":{
+  "name": "测试9",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100002",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+},"10001010":{
+  "name": "测试10",
+  "gold": 10,
+  "gem": 10,
+  "relic": 10,
+  "key": 10,
+  "vip": 1,
+  "stage": "s100001",
+  "stage_battle_num": 1,
+  "into_stage_battle_timestamp": 0,
+  "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+  "packs":[],
+  "heroes": [
+    {
+      "id": "h101",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+      },
+      "equips": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "h102",
+      "lv": 1,
+      "life": 0,
+      "star": 0,
+      "skills":{
+
+      },
+      "equips": [
+        1,
+        1
+      ]
+    }
+  ]
+}
+}

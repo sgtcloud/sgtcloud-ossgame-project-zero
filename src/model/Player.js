@@ -215,5 +215,12 @@ var PlayerData = {
             this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
         }
     },
+    getCurrentRanksByType: function(type){
+        return dataSource.players;
+    },
+    getMyRankByType: function(type){
+        return 1;
+    }
+
 };
 

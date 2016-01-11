@@ -71,7 +71,7 @@
                 },
                 "NodeNormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/empty.png",
+                  "Path": "shopUI/shopTab_2.png",
                   "Plist": ""
                 },
                 "NodeDisableFileData": {
@@ -127,7 +127,7 @@
                 },
                 "NodeNormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/empty.png",
+                  "Path": "shopUI/moneyTreeTab_2.png",
                   "Plist": ""
                 },
                 "NodeDisableFileData": {

@@ -712,7 +712,7 @@ var ShopLayerMenu = BattleMenu.extend({
             var param = tabParams[i];
             var name = param.name;
             this.buttons[name] = shopTab.getChildByName(name);
-            if(i==0)
+            if (i == 0)
                 this.buttons[name].setSelected(true);
             else
                 this.buttons[name].setSelected(false);
@@ -725,11 +725,11 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
             }, this);
         }
-        this.showMenuLayer = function(name){
+        this.showMenuLayer = function (name) {
             for (var i in this.buttons) {
                 this.buttons[i].setSelected(false);
             }
-            switch(name){
+            switch (name) {
                 case "shop_tab":
                     self.showPorpView(name);
                     break;
@@ -738,13 +738,13 @@ var ShopLayerMenu = BattleMenu.extend({
                     break;
             }
             var childrens = shopView.getChildren();
-            for(var i in childrens){
+            for (var i in childrens) {
                 childrens[i].setVisible(false);
             }
             shopView.getChildByName(name).setVisible(true);
             this.buttons[name].setSelected(true);
         };
-        this.showMoneyTreeView = function(name){
+        this.showMoneyTreeView = function (name) {
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
@@ -755,28 +755,28 @@ var ShopLayerMenu = BattleMenu.extend({
 
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(5,(5 * PlayerData.getStageData().getMoneyTreeRatio()));
+                self.buyGold(5, (5 * PlayerData.getStageData().getMoneyTreeRatio()));
             });
         };
-        this.buyGold = function(gem,gold){
-            if(player.gem >= gem){
-                PlayerData.consumeResource([PlayerData.createResourceData("gold",gold)
-                ,PlayerData.createResourceData("gem",-gem)]);
+        this.buyGold = function (gem, gold) {
+            if (player.gem >= gem) {
+                PlayerData.consumeResource([PlayerData.createResourceData("gold", gold)
+                    , PlayerData.createResourceData("gem", -gem)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-            }else{
-                new Popup1("友情提示","当前钻石不足");
+            } else {
+                new Popup1("友情提示", "当前钻石不足");
             }
         };
-        this.showPorpView = function(name){
+        this.showPorpView = function (name) {
             var shopPorps = shopView.getChildByName(name);
             var goods = dataSource.goods;
             var n = 0;
-            for(var i in goods){
-                n ++;
+            for (var i in goods) {
+                n++;
                 var equip = dataSource.equips[goods[i].propId];
-                var shopPorp = shopPorps.getChildByName("item"+n).getChildByName("root");
+                var shopPorp = shopPorps.getChildByName("item" + n).getChildByName("root");
                 var itemLayer = shopPorp.getChildByName("itemLayer").getChildByName("root");
 
                 var saleText = itemLayer.getChildByName("sale_text");
@@ -784,14 +784,14 @@ var ShopLayerMenu = BattleMenu.extend({
                 saleText.setString(goods[i].num);
 
                 var itemIcon = itemLayer.getChildByName("item_icon");
-                itemIcon.loadTexture("res/icon/equips/"+equip.icon);
+                itemIcon.loadTexture("res/icon/equips/" + equip.icon);
 
                 shopPorp.getChildByName("item_name").setString(equip.name);
 
                 var res = shopPorp.getChildByName("res");
 
                 var childrens = res.getChildren();
-                for(var j in childrens){
+                for (var j in childrens) {
                     childrens[j].setVisible(false);
                 }
                 res.getChildByName(goods[i].price.unit).setVisible(true);
@@ -803,30 +803,30 @@ var ShopLayerMenu = BattleMenu.extend({
 
                 var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
                 var price = goods[i].price;
-                self.clickBtn(buyBtn,price,goods[i]);
+                self.clickBtn(buyBtn, price, goods[i]);
             }
         };
-        this.clickBtn = function(buyBtn,price,goods){
+        this.clickBtn = function (buyBtn, price, goods) {
             buyBtn.addClickEventListener(function () {
-                self.buyGoods(price,goods);
+                self.buyGoods(price, goods);
             });
         }
-        this.buyGoods = function(data,goods){
-            if(/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value){
-                PlayerData.consumeResource([PlayerData.createResourceData(data.unit,-data.value)]);
+        this.buyGoods = function (data, goods) {
+            if (/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value) {
+                PlayerData.consumeResource([PlayerData.createResourceData(data.unit, -data.value)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
                 player.packs.push({
-                    "packType":"equip",
-                    "relateId":goods.propId,
-                    "num":goods.num,
-                    "level":1
+                    "packType": "equip",
+                    "relateId": goods.propId,
+                    "num": goods.num,
+                    "level": 1
                 });
                 //new Popup1("友情提示","购买成功");
-            }else{
-                new Popup1("友情提示","当前金币不足,点击确定进入点金页面",function(popup){
+            } else {
+                new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
                     /*layer.removeFromParent();
-                    gamePopup.hidden();*/
+                     gamePopup.hidden();*/
                     popup.hiddenPopup();
                     self.showMenuLayer("moneyTree_tab");
                 });
@@ -835,4 +835,39 @@ var ShopLayerMenu = BattleMenu.extend({
         this.showPorpView("shop_tab");
     }
 
+});
+
+var RankLayerMenu = BattleMenu.extend({
+    ctor: function (battle) {
+        this._super(battle, res.rank_layer_json);
+        var listView = this.root.getChildByName("List");
+        var rankViewRoot = ccs.csLoader.createNode(res.rank_view_json).getChildByName('root');
+        var n = 0;
+        this.showRankList = function (type) {
+            //listView.removeAllChildren();
+            var players = PlayerData.getCurrentRanksByType(type);
+            for(var i in players){
+                n++;
+                listView.addChild(this.setRankView(players[i],type));
+                //rankView);
+            }
+        };
+        this.setRankView = function(player,type){
+            var root = rankViewRoot.clone();
+            var hero = new Hero(player.heroes[0]);
+            //var root = rankView.getChildByName('root');
+            root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
+            root.getChildByName('player_name').setString(player.name);
+            root.getChildByName('player_lv').setString("Lv."+ hero.getLv());
+            //root.getChildByName('player_prestige').setString("转生次数："+);
+            root.getChildByName('num').setString("第"+n+"名");
+            if(type == 'pvpRank'){
+                root.getChildByName('pvp_rank').setVisible(true);
+            }else{
+                root.getChildByName('stage_rank').setVisible(true);
+            }
+            return root;
+        };
+        this.showRankList("stageRank");
+    }
 });
