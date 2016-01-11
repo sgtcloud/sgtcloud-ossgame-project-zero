@@ -196,8 +196,13 @@
           <Image Name="clearance_rank.png" />
           <Image Name="pvp_rank.png" />
           <Image Name="myRank_text.png" />
-          <Image Name="pvp_btn.png" />
-          <Image Name="stage_btn.png" />
+          <Image Name="pvpTab_1.png" />
+          <Image Name="pvpTab_2.png" />
+          <Image Name="stageTab_1.png" />
+          <Image Name="stageTab_2.png" />
+          <Image Name="level.png" />
+          <Image Name="transformation.png" />
+          <Image Name="rankView_bg.png" />
         </Folder>
         <Project Name="ShopLayer.csd" Type="Layer" />
         <Folder Name="shopUI">
