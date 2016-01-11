@@ -132,8 +132,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "神器名字六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -147,8 +149,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0001,
-                  "Y": 75.0
+                  "X": 115.7146,
+                  "Y": 76.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -161,29 +163,31 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.6818
+                  "X": 0.1929,
+                  "Y": 0.6955
                 },
                 "PreSize": {
-                  "X": 0.2,
+                  "X": 0.2333,
                   "Y": 0.1818
                 },
-                "LeftMargin": 120.0001,
-                "RightMargin": 359.9999,
-                "TopMargin": 15.0,
-                "BottomMargin": 75.0,
+                "LeftMargin": 115.7146,
+                "RightMargin": 344.2854,
+                "TopMargin": 13.5001,
+                "BottomMargin": 76.4999,
                 "Tag": 44,
                 "ActionTag": -2094451360,
                 "Size": {
-                  "X": 120.0,
+                  "X": 140.0,
                   "Y": 20.0
                 },
                 "Name": "equipName_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "Lv.99/99",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -198,7 +202,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 270.0,
-                  "Y": 75.0
+                  "Y": 77.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -212,26 +216,27 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.45,
-                  "Y": 0.6818
+                  "Y": 0.7045
                 },
                 "PreSize": {
-                  "X": 0.12,
+                  "X": 0.2,
                   "Y": 0.1636
                 },
                 "LeftMargin": 270.0,
-                "RightMargin": 258.0,
-                "TopMargin": 17.0,
-                "BottomMargin": 75.0,
+                "RightMargin": 210.0,
+                "TopMargin": 14.5001,
+                "BottomMargin": 77.4999,
                 "Tag": 45,
                 "ActionTag": -188675879,
                 "Size": {
-                  "X": 72.0,
+                  "X": 120.0,
                   "Y": 18.0
                 },
                 "Name": "equipLevel_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "神器效果详细描述",
                 "OutlineColor": {
@@ -247,8 +252,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 50.0
+                  "X": 115.7145,
+                  "Y": 11.3839
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -261,22 +266,22 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.4545
+                  "X": 0.1929,
+                  "Y": 0.1035
                 },
                 "PreSize": {
-                  "X": 0.24,
-                  "Y": 0.1636
+                  "X": 0.5333,
+                  "Y": 0.5455
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 336.0,
-                "TopMargin": 42.0,
-                "BottomMargin": 50.0,
+                "LeftMargin": 115.7145,
+                "RightMargin": 164.2855,
+                "TopMargin": 38.6161,
+                "BottomMargin": 11.3839,
                 "Tag": 46,
                 "ActionTag": -1671372399,
                 "Size": {
-                  "X": 144.0,
-                  "Y": 18.0
+                  "X": 320.0,
+                  "Y": 60.0
                 },
                 "Name": "equipBuffDecs_text",
                 "ctype": "TextObjectData"
@@ -295,6 +300,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {

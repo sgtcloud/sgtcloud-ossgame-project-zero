@@ -132,8 +132,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "技能名称六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -165,17 +167,17 @@
                   "Y": 0.73
                 },
                 "PreSize": {
-                  "X": 0.2,
+                  "X": 0.2333,
                   "Y": 0.2
                 },
                 "LeftMargin": 119.0,
-                "RightMargin": 361.0,
+                "RightMargin": 341.0,
                 "TopMargin": 7.0,
                 "BottomMargin": 73.0,
                 "Tag": 306,
                 "ActionTag": 1868296756,
                 "Size": {
-                  "X": 120.0,
+                  "X": 140.0,
                   "Y": 20.0
                 },
                 "Name": "skillName_text",

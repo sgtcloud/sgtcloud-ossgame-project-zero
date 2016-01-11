@@ -48,3 +48,16 @@ function popup(popupMenu, localZOrder) {
         cc.director.getRunningScene().addChild(popupMenu, localZOrder);
     }
 }
+
+function setFont(target) {
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setFontName("微软雅黑");
+            target[i].setColor(cc.color(0, 0, 0))
+        }
+    }
+    else {
+        target.setFontName("微软雅黑");
+        target.setColor(cc.color(0, 0, 0))
+    }
+}

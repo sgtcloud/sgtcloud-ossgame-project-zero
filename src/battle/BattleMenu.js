@@ -841,11 +841,48 @@ var RankLayerMenu = BattleMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.rank_layer_json);
         var listView = this.root.getChildByName("List");
+        var rankTab = this.root.getChildByName("rank_tab");
+        var myNumText = this.root.getChildByName('myNum_text');
         var rankViewRoot = ccs.csLoader.createNode(res.rank_view_json).getChildByName('root');
+        var tabParams = [
+            {name: "pvp_tab"},
+            {name: "stage_tab"}
+        ];
+        this.buttons = {};
+
+        var self = this;
+        for (var i in tabParams) {
+            var param = tabParams[i];
+            var name = param.name;
+            this.buttons[name] = rankTab.getChildByName(name);
+            if (i == 0)
+                this.buttons[name].setSelected(true);
+            else
+                this.buttons[name].setSelected(false);
+            this.buttons[name].addEventListener(function (sender, type) {
+                if (type === ccui.CheckBox.EVENT_SELECTED) {
+                    self.showMenuLayer(sender.name);
+                }
+                else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
+                    sender.setSelected(true);
+                }
+            }, this);
+        }
         var n = 0;
+        this.showMenuLayer = function (name) {
+            for (var i in this.buttons) {
+                this.buttons[i].setSelected(false);
+            }
+            this.showRankList(name);
+            this.buttons[name].setSelected(true);
+        };
+
         this.showRankList = function (type) {
-            //listView.removeAllChildren();
+            listView.removeAllChildren();
             var players = PlayerData.getCurrentRanksByType(type);
+            myNumText.ignoreContentAdaptWithSize(true);
+            myNumText.setString(PlayerData.getMyRankByType(type));
+            n = 0;
             for(var i in players){
                 n++;
                 listView.addChild(this.setRankView(players[i],type));
@@ -854,20 +891,31 @@ var RankLayerMenu = BattleMenu.extend({
         };
         this.setRankView = function(player,type){
             var root = rankViewRoot.clone();
+            rankViewRoot.ignoreContentAdaptWithSize(true);
             var hero = new Hero(player.heroes[0]);
             //var root = rankView.getChildByName('root');
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
-            root.getChildByName('player_name').setString(player.name);
-            root.getChildByName('player_lv').setString("Lv."+ hero.getLv());
-            //root.getChildByName('player_prestige').setString("转生次数："+);
-            root.getChildByName('num').setString("第"+n+"名");
-            if(type == 'pvpRank'){
+            var playerName = root.getChildByName('player_name');
+            var levelText = root.getChildByName('level_text');
+            var playerPrestige = root.getChildByName('player_prestige');
+            var prestigeText = root.getChildByName('prestige_text');
+            var playerLv = root.getChildByName('player_lv');
+            playerName.setString(player.name);
+            levelText.ignoreContentAdaptWithSize(true);
+            prestigeText.ignoreContentAdaptWithSize(true);
+            levelText.setString(hero.getLv())
+            //setFont([playerName,levelText,prestigeText]);
+            root.getChildByName('num').setString(n);
+            if(type == 'pvp_tab'){
                 root.getChildByName('pvp_rank').setVisible(true);
+                root.getChildByName('stage_rank').setVisible(false);
             }else{
                 root.getChildByName('stage_rank').setVisible(true);
+                root.getChildByName('pvp_rank').setVisible(false);
             }
             return root;
         };
-        this.showRankList("stageRank");
+
+        this.showMenuLayer("stage_tab");
     }
 });
