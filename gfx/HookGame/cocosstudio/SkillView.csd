@@ -51,14 +51,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillLevel_text" ActionTag="-1686192480" Tag="342" IconVisible="False" LeftMargin="269.0000" RightMargin="259.0000" TopMargin="9.0000" BottomMargin="73.0000" FontSize="18" LabelText="Lv.99/99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="72.0000" Y="18.0000" />
+              <AbstractNodeData Name="skillLevel_text" ActionTag="-1686192480" Tag="342" IconVisible="False" LeftMargin="269.0000" RightMargin="231.0000" TopMargin="9.0000" BottomMargin="73.0000" IsCustomSize="True" FontSize="18" LabelText="Lv.99/99" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="100.0000" Y="18.0000" />
                 <AnchorPoint />
                 <Position X="269.0000" Y="73.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.4483" Y="0.7300" />
-                <PreSize X="0.1200" Y="0.1800" />
+                <PreSize X="0.1667" Y="0.1800" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -96,19 +96,19 @@
                     <Position X="71.7150" Y="40.9898" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5123" Y="0.5124" />
+                    <PrePosition X="0.5122" Y="0.5124" />
                     <PreSize X="0.7143" Y="0.1500" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="level_text" ActionTag="-1274566955" Tag="81" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="56.0000" Y="16.0000" />
+                  <AbstractNodeData Name="level_text" ActionTag="-1274566955" Tag="81" IconVisible="False" LeftMargin="26.3277" RightMargin="13.6723" TopMargin="9.3697" BottomMargin="52.6303" IsCustomSize="True" FontSize="16" LabelText="Lv.9999" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.3277" Y="61.6303" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="0" B="0" />
                     <PrePosition X="0.5452" Y="0.7704" />
-                    <PreSize X="0.4000" Y="0.2000" />
+                    <PreSize X="0.7143" Y="0.2250" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -142,7 +142,7 @@
                     <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="123333" StartChar="0" ctype="TextAtlasObjectData">
+                  <AbstractNodeData Name="gold_text" Visible="False" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="123333" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="72.0000" Y="11.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="85.5373" Y="61.0975" />

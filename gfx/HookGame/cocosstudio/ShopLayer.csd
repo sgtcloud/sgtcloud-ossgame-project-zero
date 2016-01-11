@@ -39,36 +39,36 @@
                 <PreSize X="0.9531" Y="0.0698" />
                 <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop_text" ActionTag="1956065607" Tag="47" IconVisible="False" LeftMargin="217.6339" RightMargin="222.3661" TopMargin="126.6711" BottomMargin="678.3289" Scale9Width="200" Scale9Height="55" ctype="ImageViewObjectData">
-                <Size X="200.0000" Y="55.0000" />
+              <AbstractNodeData Name="shop_text" ActionTag="-404407330" Tag="146" IconVisible="False" LeftMargin="255.1350" RightMargin="255.8650" TopMargin="126.4283" BottomMargin="675.5717" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
+                <Size X="129.0000" Y="58.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="317.6339" Y="705.8289" />
-                <Scale ScaleX="1.2000" ScaleY="1.2000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4963" Y="0.8207" />
-                <PreSize X="0.3125" Y="0.0640" />
-                <FileData Type="Normal" Path="shopUI/shopText.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="12.0371" RightMargin="17.9629" TopMargin="250.6487" BottomMargin="9.3513" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="610.0000" Y="600.0000" />
-                <AnchorPoint />
-                <Position X="12.0371" Y="9.3513" />
+                <Position X="319.6350" Y="704.5717" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0188" Y="0.0109" />
+                <PrePosition X="0.4994" Y="0.8193" />
+                <PreSize X="0.2016" Y="0.0674" />
+                <FileData Type="Normal" Path="shopUI/shopText.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="15.0370" RightMargin="14.9630" TopMargin="250.6487" BottomMargin="9.3513" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="610.0000" Y="600.0000" />
+                <AnchorPoint />
+                <Position X="15.0370" Y="9.3513" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0235" Y="0.0109" />
                 <PreSize X="0.9531" Y="0.6977" />
                 <FileData Type="Normal" Path="ShopView.csd" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.7837" RightMargin="284.2163" TopMargin="196.7203" BottomMargin="608.2797" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
-                  <AbstractNodeData Name="shop_tab" ActionTag="-1889564795" Tag="782" IconVisible="False" LeftMargin="0.0000" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="shop_tab" ActionTag="-1889564795" Tag="782" IconVisible="False" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
                     <AnchorPoint />
-                    <Position X="0.0000" />
+                    <Position />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0000" />
+                    <PrePosition />
                     <PreSize X="0.5000" Y="1.0000" />
                     <NormalBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
                     <PressedBackFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />

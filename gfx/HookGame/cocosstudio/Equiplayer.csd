@@ -55,25 +55,14 @@
                     <PreSize X="0.1603" Y="0.9091" />
                     <FileData Type="Normal" Path="equipUI/title_2.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="title_text" ActionTag="1826076828" Tag="203" IconVisible="False" LeftMargin="257.0000" RightMargin="279.0000" TopMargin="13.0000" BottomMargin="75.0000" FontSize="22" LabelText="装备购买" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="88.0000" Y="22.0000" />
+                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="129.9151" RightMargin="194.0849" TopMargin="35.2684" BottomMargin="14.7316" IsCustomSize="True" FontSize="16" LabelText="装备说明" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="300.0000" Y="60.0000" />
                     <AnchorPoint />
-                    <Position X="257.0000" Y="75.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="165" B="0" />
-                    <PrePosition X="0.4119" Y="0.6818" />
-                    <PreSize X="0.1410" Y="0.2000" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="204.0000" RightMargin="340.0000" TopMargin="40.0000" BottomMargin="50.0000" FontSize="20" LabelText="装备说明" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="80.0000" Y="20.0000" />
-                    <AnchorPoint />
-                    <Position X="204.0000" Y="50.0000" />
+                    <Position X="129.9151" Y="14.7316" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3269" Y="0.4545" />
-                    <PreSize X="0.1282" Y="0.1818" />
+                    <PrePosition X="0.2082" Y="0.1339" />
+                    <PreSize X="0.4808" Y="0.5455" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -131,6 +120,16 @@
                     <PrePosition X="0.8021" Y="0.5857" />
                     <PreSize X="0.0240" Y="0.1364" />
                     <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="title_text" ActionTag="-1718578899" Tag="258" IconVisible="False" LeftMargin="226.9150" RightMargin="291.0850" TopMargin="3.2971" BottomMargin="74.7029" Scale9Width="106" Scale9Height="32" ctype="ImageViewObjectData">
+                    <Size X="106.0000" Y="32.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="279.9150" Y="90.7029" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.4486" Y="0.8246" />
+                    <PreSize X="0.1699" Y="0.2909" />
+                    <FileData Type="Normal" Path="equipUI/buyHoly.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

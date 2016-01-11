@@ -71,15 +71,15 @@
                 <PreSize X="0.1538" Y="0.1182" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps" ActionTag="-788044653" Tag="621" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.6520" BottomMargin="76.3480" Scale9Width="104" Scale9Height="25" ctype="ImageViewObjectData">
-                <Size X="104.0000" Y="25.0000" />
+              <AbstractNodeData Name="dps" ActionTag="-788044653" Tag="621" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.1520" BottomMargin="75.8480" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="104.0000" Y="26.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="383.5454" Y="88.8480" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6147" Y="0.8077" />
-                <PreSize X="0.1667" Y="0.2273" />
-                <FileData Type="Normal" Path="heroUI/heroDPS.png" Plist="" />
+                <PreSize X="0.1667" Y="0.2364" />
+                <FileData Type="Normal" Path="heroUI/heroHP.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="die_time_text" ActionTag="1970479199" Tag="382" IconVisible="False" LeftMargin="40.6893" RightMargin="538.3107" TopMargin="58.7595" BottomMargin="33.2405" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="18.0000" />

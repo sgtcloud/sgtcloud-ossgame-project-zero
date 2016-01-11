@@ -52,27 +52,15 @@
                 <PreSize X="0.1875" Y="0.0625" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="-293211049" Tag="779" IconVisible="False" LeftMargin="365.0000" RightMargin="205.0000" TopMargin="112.0000" BottomMargin="828.0000" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint />
-                <Position X="365.0000" Y="828.0000" />
+              <AbstractNodeData Name="heroHP_text" ActionTag="491832254" Tag="417" IconVisible="False" LeftMargin="348.0000" RightMargin="188.0000" TopMargin="68.0000" BottomMargin="866.0000" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="104.0000" Y="26.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="400.0000" Y="879.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5703" Y="0.8625" />
-                <PreSize X="0.1094" Y="0.0208" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="dps" ActionTag="-1245733313" Tag="780" IconVisible="False" LeftMargin="365.0000" RightMargin="205.0000" TopMargin="70.0000" BottomMargin="870.0000" FontSize="20" LabelText="英雄DPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="20.0000" />
-                <AnchorPoint />
-                <Position X="365.0000" Y="870.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5703" Y="0.9063" />
-                <PreSize X="0.1094" Y="0.0208" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.6250" Y="0.9156" />
+                <PreSize X="0.1625" Y="0.0271" />
+                <FileData Type="Normal" Path="heroUI/heroHP.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="star5_icon" ActionTag="1578742030" Tag="782" IconVisible="True" LeftMargin="293.9992" RightMargin="314.0008" TopMargin="120.0004" BottomMargin="809.9996" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="32.0000" Y="30.0000" />
@@ -156,14 +144,14 @@
                 <PreSize X="0.6719" Y="0.1458" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroDesc_text" ActionTag="-1983769405" Tag="805" IconVisible="False" LeftMargin="49.1306" RightMargin="482.8694" TopMargin="183.5450" BottomMargin="758.4550" FontSize="18" LabelText="英雄详细介绍" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="108.0000" Y="18.0000" />
+              <AbstractNodeData Name="heroDesc_text" ActionTag="-1983769405" CallBackType="Click" Tag="805" IconVisible="False" LeftMargin="59.1994" RightMargin="200.8006" TopMargin="188.0780" BottomMargin="671.9220" IsCustomSize="True" FontSize="18" LabelText="英雄详细介绍" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="380.0000" Y="100.0000" />
                 <AnchorPoint />
-                <Position X="49.1306" Y="758.4550" />
+                <Position X="59.1994" Y="671.9220" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0768" Y="0.7901" />
-                <PreSize X="0.1688" Y="0.0188" />
+                <PrePosition X="0.0925" Y="0.6999" />
+                <PreSize X="0.5938" Y="0.1042" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -177,27 +165,36 @@
                 <PreSize X="0.1406" Y="0.0938" />
                 <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_time_text" ActionTag="1919434759" Tag="842" IconVisible="False" LeftMargin="64.1618" RightMargin="530.8382" TopMargin="115.2950" BottomMargin="826.7050" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="die_time_text" ActionTag="1919434759" Tag="842" IconVisible="False" LeftMargin="60.9744" RightMargin="534.0256" TopMargin="115.2950" BottomMargin="826.7050" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="86.6618" Y="835.7050" />
+                <Position X="83.4744" Y="835.7050" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.1354" Y="0.8705" />
+                <PrePosition X="0.1304" Y="0.8705" />
                 <PreSize X="0.0703" Y="0.0188" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_text" ActionTag="-1482009171" Tag="843" IconVisible="False" LeftMargin="47.4326" RightMargin="520.5674" TopMargin="95.3264" BottomMargin="846.6736" FontSize="18" LabelText="复活时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="72.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="83.4326" Y="855.6736" />
+              <AbstractNodeData Name="die_text" ActionTag="-607078018" CallBackType="Click" Tag="442" IconVisible="False" LeftMargin="46.4744" RightMargin="519.5256" TopMargin="89.0892" BottomMargin="851.9108" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
+                <Size X="74.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="-0.4001" ScaleY="22.9776" />
+                <Position X="16.8689" Y="1288.4846" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.1304" Y="0.8913" />
-                <PreSize X="0.1125" Y="0.0188" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0264" Y="1.3422" />
+                <PreSize X="0.1156" Y="0.0198" />
+                <FileData Type="Normal" Path="heroUI/reviveTime.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="dps_text" ActionTag="382805035" Tag="441" IconVisible="False" LeftMargin="352.1938" RightMargin="191.8062" TopMargin="118.7866" BottomMargin="828.2134" CharWidth="12" CharHeight="13" LabelText="69568844" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="96.0000" Y="13.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="400.1938" Y="834.7134" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6253" Y="0.8695" />
+                <PreSize X="0.1500" Y="0.0135" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="close_btn" ActionTag="1720747806" Tag="253" IconVisible="True" LeftMargin="585.0000" RightMargin="-1.0000" TopMargin="22.0000" BottomMargin="880.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />

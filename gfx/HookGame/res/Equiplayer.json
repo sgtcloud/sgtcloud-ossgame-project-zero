@@ -267,57 +267,11 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 22,
-                    "LabelText": "装备购买",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 257.0,
-                      "Y": 75.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "G": 165,
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.4119,
-                      "Y": 0.6818
-                    },
-                    "PreSize": {
-                      "X": 0.141,
-                      "Y": 0.2
-                    },
-                    "LeftMargin": 257.0,
-                    "RightMargin": 279.0,
-                    "TopMargin": 13.0,
-                    "BottomMargin": 75.0,
-                    "Tag": 203,
-                    "ActionTag": 1826076828,
-                    "Size": {
-                      "X": 88.0,
-                      "Y": 22.0
-                    },
-                    "Name": "title_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "FontSize": 20,
+                    "IsCustomSize": true,
+                    "FontSize": 16,
                     "LabelText": "装备说明",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -331,8 +285,8 @@
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 204.0,
-                      "Y": 50.0
+                      "X": 129.9151,
+                      "Y": 14.7316
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -341,22 +295,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3269,
-                      "Y": 0.4545
+                      "X": 0.2082,
+                      "Y": 0.1339
                     },
                     "PreSize": {
-                      "X": 0.1282,
-                      "Y": 0.1818
+                      "X": 0.4808,
+                      "Y": 0.5455
                     },
-                    "LeftMargin": 204.0,
-                    "RightMargin": 340.0,
-                    "TopMargin": 40.0,
-                    "BottomMargin": 50.0,
+                    "LeftMargin": 129.9151,
+                    "RightMargin": 194.0849,
+                    "TopMargin": 35.2684,
+                    "BottomMargin": 14.7316,
                     "Tag": 204,
                     "ActionTag": 816818333,
                     "Size": {
-                      "X": 80.0,
-                      "Y": 20.0
+                      "X": 300.0,
+                      "Y": 60.0
                     },
                     "Name": "decs_text",
                     "ctype": "TextObjectData"
@@ -600,6 +554,49 @@
                     },
                     "Name": "relic_icon",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "equipUI/buyHoly.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 106,
+                    "Scale9Height": 32,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 279.915,
+                      "Y": 90.7029
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4486,
+                      "Y": 0.8246
+                    },
+                    "PreSize": {
+                      "X": 0.1699,
+                      "Y": 0.2909
+                    },
+                    "LeftMargin": 226.915,
+                    "RightMargin": 291.085,
+                    "TopMargin": 3.2971,
+                    "BottomMargin": 74.7029,
+                    "Tag": 258,
+                    "ActionTag": -1718578899,
+                    "Size": {
+                      "X": 106.0,
+                      "Y": 32.0
+                    },
+                    "Name": "title_text",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 656574158,
@@ -633,6 +630,7 @@
         "equipUI/bg.png",
         "equipUI/btn1.png",
         "equipUI/btn2.png",
+        "equipUI/buyHoly.png",
         "equipUI/relic.png",
         "equipUI/title_2.png",
         "heroUI/diamond.png",

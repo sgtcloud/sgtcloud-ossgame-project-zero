@@ -71,15 +71,15 @@
                 <PreSize X="0.1538" Y="0.1182" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps" ActionTag="334213559" Tag="846" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.6076" BottomMargin="76.3924" Scale9Width="104" Scale9Height="25" ctype="ImageViewObjectData">
-                <Size X="104.0000" Y="25.0000" />
+              <AbstractNodeData Name="dps" ActionTag="334213559" Tag="846" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.1076" BottomMargin="75.8924" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="104.0000" Y="26.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="383.5454" Y="88.8924" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6147" Y="0.8081" />
-                <PreSize X="0.1667" Y="0.2273" />
-                <FileData Type="Normal" Path="heroUI/heroDPS.png" Plist="" />
+                <PreSize X="0.1667" Y="0.2364" />
+                <FileData Type="Normal" Path="heroUI/heroHP.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="item1" ActionTag="-1754001681" Tag="885" IconVisible="True" LeftMargin="472.1453" RightMargin="51.8547" TopMargin="-20.1181" BottomMargin="30.1181" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="100.0000" Y="100.0000" />
