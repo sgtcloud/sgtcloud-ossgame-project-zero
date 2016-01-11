@@ -824,8 +824,10 @@ var ShopLayerMenu = BattleMenu.extend({
                 });
                 //new Popup1("友情提示","购买成功");
             }else{
-                new Popup1("友情提示","当前金币不足,点击确定进入点金页面",function(layer){
-                    layer.removeFromParent();
+                new Popup1("友情提示","当前金币不足,点击确定进入点金页面",function(popup){
+                    /*layer.removeFromParent();
+                    gamePopup.hidden();*/
+                    popup.hiddenPopup();
                     self.showMenuLayer("moneyTree_tab");
                 });
             }

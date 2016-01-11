@@ -45,8 +45,6 @@ function removeCCSAnimationDefaultTween(timelines) {
 
 function popup(popupMenu, localZOrder) {
     if (cc.director.getRunningScene()) {
-        if (!cc.director.getRunningScene().getChildByName(popupMenu.getName())) {
-            cc.director.getRunningScene().addChild(popupMenu, localZOrder);
-        }
+        cc.director.getRunningScene().addChild(popupMenu, localZOrder);
     }
 }
