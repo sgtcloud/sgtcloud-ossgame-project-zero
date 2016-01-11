@@ -483,6 +483,20 @@ var HeroListMenu = BattleMenu.extend({
                 var unlockLevel = skill.getUnlockLevel();
                 return !(heroLv < unlockLevel);
             }
+            function lockSkill(hero,skill,elements){
+                if (!canUnlockSkill(hero, skill)) {
+                    elements.lock.setVisible(true);
+                    elements.btn.setEnabled(false);
+                    elements.btn.setBright(false);
+                    elements.level_text.setVisible(true);
+                    elements.gold.setVisible(false);
+                    elements.gold_text.setVisible(false);
+                    elements.buff_text.setVisible(false);
+                    elements.buffNum_text.setVisible(false);
+                    elements.add.setVisible(false);
+                    elements.cut.setVisible(false);
+                }
+            }
 
             function buildSkillView(skill, hero) {
                 var root = skillTemp.clone();
@@ -586,22 +600,12 @@ var HeroListMenu = BattleMenu.extend({
                         } else {
                             per.setVisible(false);
                         }
+                        lockSkill(hero,skill,elements);
                         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                     }
                     cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
                 });
-                if (!canUnlockSkill(hero, skill)) {
-                    elements.lock.setVisible(true);
-                    elements.btn.setEnabled(false);
-                    elements.btn.setBright(false);
-                    elements.level_text.setVisible(true);
-                    elements.gold.setVisible(false);
-                    elements.gold_text.setVisible(false);
-                    elements.buff_text.setVisible(false);
-                    elements.buffNum_text.setVisible(false);
-                    elements.add.setVisible(false);
-                    elements.cut.setVisible(false);
-                }
+                lockSkill(hero,skill,elements);
                 return root;
             }
 
