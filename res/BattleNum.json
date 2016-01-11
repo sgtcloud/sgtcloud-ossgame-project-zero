@@ -54,9 +54,9 @@
             "Tag": 30,
             "Children": [
               {
-                "CharWidth": 10,
-                "CharHeight": 14,
-                "LabelText": "00",
+                "CharWidth": 11,
+                "CharHeight": 12,
+                "LabelText": "99",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
@@ -79,16 +79,17 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.2,
-                  "Y": 1.0
+                  "X": 0.22,
+                  "Y": 0.8571
                 },
-                "RightMargin": 80.0,
+                "RightMargin": 78.0,
+                "TopMargin": 2.0,
                 "CallBackType": "Click",
                 "Tag": 28,
                 "ActionTag": -2119850651,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 14.0
+                  "X": 22.0,
+                  "Y": 12.0
                 },
                 "Name": "battle_num",
                 "ctype": "TextAtlasObjectData"
