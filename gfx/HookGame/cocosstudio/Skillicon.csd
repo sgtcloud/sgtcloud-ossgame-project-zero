@@ -34,17 +34,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_text" ActionTag="1805715142" Tag="293" IconVisible="False" LeftMargin="10.5200" RightMargin="12.4800" TopMargin="30.2724" BottomMargin="46.7276" FontSize="18" LabelText="复活时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="72.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="46.5200" Y="55.7276" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.4897" Y="0.5866" />
-                <PreSize X="0.7579" Y="0.1895" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="die_time_text" ActionTag="1837244646" Tag="294" IconVisible="False" LeftMargin="24.0200" RightMargin="25.9800" TopMargin="50.2681" BottomMargin="26.7319" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -55,6 +44,16 @@
                 <PreSize X="0.4737" Y="0.1895" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="die_text" ActionTag="513272033" Tag="955" IconVisible="False" LeftMargin="10.5000" RightMargin="10.5000" TopMargin="27.4011" BottomMargin="48.5989" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
+                <Size X="74.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="47.5000" Y="58.0989" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5000" Y="0.6116" />
+                <PreSize X="0.7789" Y="0.2000" />
+                <FileData Type="Normal" Path="heroUI/reviveTime.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

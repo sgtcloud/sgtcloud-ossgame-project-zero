@@ -79,7 +79,7 @@
                 <PreSize X="0.1082" Y="0.0600" />
                 <FileData Type="Normal" Path="shopUI/sale.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1741" BottomMargin="27.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="buy_btn" CanEdit="False" ActionTag="-502619807" CallBackType="Click" Tag="288" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">

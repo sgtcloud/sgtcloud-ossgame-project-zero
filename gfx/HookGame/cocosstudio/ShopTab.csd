@@ -20,7 +20,7 @@
                 <NormalBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
                 <PressedBackFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
                 <DisableBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                <NodeNormalFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
                 <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="moneyTree_tab" ActionTag="-1080933438" Tag="162" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">
@@ -34,7 +34,7 @@
                 <NormalBackFileData Type="Normal" Path="shopUI/moneyTreeTab_1.png" Plist="" />
                 <PressedBackFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
                 <DisableBackFileData Type="Normal" Path="shopUI/moneyTreeTab_1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                <NodeNormalFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
                 <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
               </AbstractNodeData>
             </Children>
