@@ -193,6 +193,11 @@
         <Project Name="RankView.csd" Type="Layer" />
         <Folder Name="rankUI">
           <Image Name="rankText.png" />
+          <Image Name="clearance_rank.png" />
+          <Image Name="pvp_rank.png" />
+          <Image Name="myRank_text.png" />
+          <Image Name="pvp_btn.png" />
+          <Image Name="stage_btn.png" />
         </Folder>
         <Project Name="ShopLayer.csd" Type="Layer" />
         <Folder Name="shopUI">
@@ -234,6 +239,7 @@
           <Image Name="percentage.png" />
           <Image Name="buy2.png" />
           <Image Name="buy3.png" />
+          <Image Name="font16_green.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

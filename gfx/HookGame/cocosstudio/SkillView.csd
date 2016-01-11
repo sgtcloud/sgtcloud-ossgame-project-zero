@@ -29,14 +29,14 @@
                 <PreSize X="0.1500" Y="0.9000" />
                 <FileData Type="Normal" Path="heroUI/skill_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillName_text" ActionTag="1868296756" Tag="306" IconVisible="False" LeftMargin="119.0000" RightMargin="361.0000" TopMargin="7.0000" BottomMargin="73.0000" FontSize="20" LabelText="技能名称六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
+              <AbstractNodeData Name="skillName_text" ActionTag="1868296756" Tag="306" IconVisible="False" LeftMargin="119.0000" RightMargin="341.0000" TopMargin="7.0000" BottomMargin="73.0000" IsCustomSize="True" FontSize="20" LabelText="技能名称六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="140.0000" Y="20.0000" />
                 <AnchorPoint />
                 <Position X="119.0000" Y="73.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.1983" Y="0.7300" />
-                <PreSize X="0.2000" Y="0.2000" />
+                <PreSize X="0.2333" Y="0.2000" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

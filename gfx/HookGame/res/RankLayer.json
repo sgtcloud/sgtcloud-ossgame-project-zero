@@ -80,14 +80,13 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.9535
+                  "Y": 1.0
                 },
-                "TopMargin": 40.0,
                 "Tag": 381,
                 "ActionTag": -1288208011,
                 "Size": {
                   "X": 640.0,
-                  "Y": 820.0
+                  "Y": 860.0
                 },
                 "Name": "bg1",
                 "ctype": "ImageViewObjectData"
@@ -233,156 +232,6 @@
                 "ctype": "ListViewObjectData"
               },
               {
-                "FontSize": 22,
-                "ButtonText": "竞技排行",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 13,
-                "Scale9Width": 2,
-                "Scale9Height": 21,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 161.6658,
-                  "Y": 56.2124
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2526,
-                  "Y": 0.0654
-                },
-                "PreSize": {
-                  "X": 0.2344,
-                  "Y": 0.0698
-                },
-                "LeftMargin": 86.6658,
-                "RightMargin": 403.3342,
-                "TopMargin": 773.7876,
-                "BottomMargin": 26.2124,
-                "Tag": 28,
-                "ActionTag": -1076897311,
-                "Size": {
-                  "X": 150.0,
-                  "Y": 60.0
-                },
-                "Name": "pvpRank_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 22,
-                "ButtonText": "通关排行",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 13,
-                "Scale9Width": 2,
-                "Scale9Height": 21,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 485.9684,
-                  "Y": 56.2124
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7593,
-                  "Y": 0.0654
-                },
-                "PreSize": {
-                  "X": 0.2344,
-                  "Y": 0.0698
-                },
-                "LeftMargin": 410.9684,
-                "RightMargin": 79.0316,
-                "TopMargin": 773.7876,
-                "BottomMargin": 26.2124,
-                "Tag": 29,
-                "ActionTag": -15789572,
-                "Size": {
-                  "X": 150.0,
-                  "Y": 60.0
-                },
-                "Name": "stageRank_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "Normal",
                   "Path": "mainUI/bg_05.png",
@@ -410,35 +259,44 @@
                 },
                 "PreSize": {
                   "X": 0.9531,
-                  "Y": 0.093
+                  "Y": 0.1628
                 },
                 "LeftMargin": 15.106,
                 "RightMargin": 14.894,
-                "TopMargin": 71.4288,
+                "TopMargin": 11.4288,
                 "BottomMargin": 708.5712,
                 "Tag": 30,
                 "ActionTag": -814120090,
                 "Size": {
                   "X": 610.0,
-                  "Y": 80.0
+                  "Y": 140.0
                 },
                 "Name": "descText_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/title_bg4.png",
-                  "Plist": ""
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "排行榜说明",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
                 },
-                "Scale9Enable": true,
-                "Scale9OriginX": 60,
-                "Scale9Width": 3,
-                "Scale9Height": 42,
-                "AnchorPoint": {},
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
-                  "X": 125.2461,
-                  "Y": 788.8611
+                  "X": 45.1059,
+                  "Y": 781.1254
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -447,130 +305,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1957,
-                  "Y": 0.9173
+                  "X": 0.0705,
+                  "Y": 0.9083
                 },
                 "PreSize": {
-                  "X": 0.625,
-                  "Y": 0.0814
+                  "X": 0.8594,
+                  "Y": 0.0698
                 },
-                "LeftMargin": 125.2461,
-                "RightMargin": 114.7539,
-                "TopMargin": 1.1389,
-                "BottomMargin": 788.8611,
-                "Tag": 32,
-                "ActionTag": -65093229,
+                "LeftMargin": 45.1059,
+                "RightMargin": 44.8941,
+                "TopMargin": 78.8746,
+                "BottomMargin": 721.1254,
+                "Tag": 14,
+                "ActionTag": 1299772587,
                 "Size": {
-                  "X": 400.0,
-                  "Y": 70.0
+                  "X": 550.0,
+                  "Y": 60.0
                 },
-                "Name": "title_bg",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "我的排行：",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 292.796,
-                  "Y": 103.2661
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 62,
-                  "G": 241,
-                  "B": 17
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4575,
-                  "Y": 0.1201
-                },
-                "PreSize": {
-                  "X": 0.1563,
-                  "Y": 0.0233
-                },
-                "LeftMargin": 242.796,
-                "RightMargin": 297.204,
-                "TopMargin": 746.7339,
-                "BottomMargin": 93.2661,
-                "Tag": 33,
-                "ActionTag": -876592124,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 20.0
-                },
-                "Name": "my_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "999名",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 369.8882,
-                  "Y": 103.2661
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 53,
-                  "G": 233,
-                  "B": 37
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.578,
-                  "Y": 0.1201
-                },
-                "PreSize": {
-                  "X": 0.0781,
-                  "Y": 0.0233
-                },
-                "LeftMargin": 344.8882,
-                "RightMargin": 245.1118,
-                "TopMargin": 746.7339,
-                "BottomMargin": 93.2661,
-                "Tag": 34,
-                "ActionTag": -1686401805,
-                "Size": {
-                  "X": 50.0,
-                  "Y": 20.0
-                },
-                "Name": "myNum_text",
+                "Name": "desc_text",
                 "ctype": "TextObjectData"
               },
               {
@@ -579,15 +331,15 @@
                   "Path": "rankUI/rankText.png",
                   "Plist": ""
                 },
-                "Scale9Width": 200,
-                "Scale9Height": 55,
+                "Scale9Width": 209,
+                "Scale9Height": 58,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 325.2461,
-                  "Y": 829.9464
+                  "X": 320.106,
+                  "Y": 816.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -596,47 +348,38 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5082,
-                  "Y": 0.9651
+                  "X": 0.5002,
+                  "Y": 0.9488
                 },
                 "PreSize": {
-                  "X": 0.2859,
-                  "Y": 0.0581
+                  "X": 0.3266,
+                  "Y": 0.0674
                 },
-                "LeftMargin": 233.7461,
-                "RightMargin": 223.2539,
-                "TopMargin": 5.0536,
-                "BottomMargin": 804.9464,
-                "Tag": 46,
-                "ActionTag": 86413385,
+                "LeftMargin": 215.606,
+                "RightMargin": 215.394,
+                "TopMargin": 15.0,
+                "BottomMargin": 787.0,
+                "Tag": 32,
+                "ActionTag": -851116961,
                 "Size": {
-                  "X": 183.0,
-                  "Y": 50.0
+                  "X": 209.0,
+                  "Y": 58.0
                 },
-                "Name": "rank",
+                "Name": "title_text",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "排行榜说明",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rankUI/myRank_text.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
+                "Scale9Width": 207,
+                "Scale9Height": 27,
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 86.7061,
-                  "Y": 762.7641
+                  "X": 221.0556,
+                  "Y": 92.1676
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -645,25 +388,390 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1355,
-                  "Y": 0.8869
+                  "X": 0.3454,
+                  "Y": 0.1072
                 },
                 "PreSize": {
-                  "X": 0.1563,
-                  "Y": 0.0233
+                  "X": 0.3234,
+                  "Y": 0.0314
                 },
-                "LeftMargin": 36.7061,
-                "RightMargin": 503.2939,
-                "TopMargin": 87.2359,
-                "BottomMargin": 752.7641,
-                "Tag": 14,
-                "ActionTag": 1299772587,
+                "LeftMargin": 221.0556,
+                "RightMargin": 211.9444,
+                "TopMargin": 740.8324,
+                "BottomMargin": 92.1676,
+                "Tag": 43,
+                "ActionTag": 725399135,
                 "Size": {
-                  "X": 100.0,
-                  "Y": 20.0
+                  "X": 207.0,
+                  "Y": 27.0
                 },
-                "Name": "desc_text",
-                "ctype": "TextObjectData"
+                "Name": "my_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 12,
+                "LabelText": "9956",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font15_green.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 344.377,
+                  "Y": 99.3702
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5381,
+                  "Y": 0.1155
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.014
+                },
+                "LeftMargin": 344.377,
+                "RightMargin": 247.623,
+                "TopMargin": 748.6298,
+                "BottomMargin": 99.3702,
+                "CallBackType": "Click",
+                "Tag": 45,
+                "ActionTag": 1828536400,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 12.0
+                },
+                "Name": "myNum_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 132.9078,
+                  "Y": 28.2836
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2077,
+                  "Y": 0.0329
+                },
+                "PreSize": {
+                  "X": 0.2344,
+                  "Y": 0.0698
+                },
+                "LeftMargin": 132.9078,
+                "RightMargin": 357.0922,
+                "TopMargin": 771.7164,
+                "BottomMargin": 28.2836,
+                "Tag": 46,
+                "Children": [
+                  {
+                    "FontSize": 22,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 2,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 28,
+                    "ActionTag": -1076897311,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 60.0
+                    },
+                    "Name": "pvpRank_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "rankUI/pvp_btn.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 114,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 76.9948,
+                      "Y": 30.2982
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5133,
+                      "Y": 0.505
+                    },
+                    "PreSize": {
+                      "X": 0.76,
+                      "Y": 0.6167
+                    },
+                    "LeftMargin": 19.9948,
+                    "RightMargin": 16.0052,
+                    "TopMargin": 11.2018,
+                    "BottomMargin": 11.7982,
+                    "Tag": 47,
+                    "ActionTag": -1602687881,
+                    "Size": {
+                      "X": 114.0,
+                      "Y": 37.0
+                    },
+                    "Name": "pvp_text",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1583168491,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 60.0
+                },
+                "Name": "pvpRank_btn",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 366.3686,
+                  "Y": 28.2836
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5725,
+                  "Y": 0.0329
+                },
+                "PreSize": {
+                  "X": 0.2344,
+                  "Y": 0.0698
+                },
+                "LeftMargin": 366.3686,
+                "RightMargin": 123.6314,
+                "TopMargin": 771.7164,
+                "BottomMargin": 28.2836,
+                "Tag": 34,
+                "Children": [
+                  {
+                    "FontSize": 22,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 2,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 29,
+                    "ActionTag": -15789572,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 60.0
+                    },
+                    "Name": "stageRank_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "rankUI/stage_btn.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 114,
+                    "Scale9Height": 37,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 74.9953,
+                      "Y": 30.2484
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5041
+                    },
+                    "PreSize": {
+                      "X": 0.76,
+                      "Y": 0.6167
+                    },
+                    "LeftMargin": 17.9953,
+                    "RightMargin": 18.0047,
+                    "TopMargin": 11.2516,
+                    "BottomMargin": 11.7484,
+                    "Tag": 35,
+                    "ActionTag": -22256249,
+                    "Size": {
+                      "X": 114.0,
+                      "Y": 37.0
+                    },
+                    "Name": "stage_text",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1781309456,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 60.0
+                },
+                "Name": "stageRank_btn",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 208422147,
@@ -683,13 +791,16 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "buttonUI/font15_green.png",
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
         "mainUI/bg_18.png",
-        "mainUI/title_bg4.png",
-        "rankUI/rankText.png"
+        "rankUI/myRank_text.png",
+        "rankUI/pvp_btn.png",
+        "rankUI/rankText.png",
+        "rankUI/stage_btn.png"
       ],
       "ctype": "GameFileData"
     }

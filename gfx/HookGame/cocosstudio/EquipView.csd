@@ -29,40 +29,40 @@
                 <PreSize X="0.1500" Y="0.8182" />
                 <FileData Type="Normal" Path="equipUI/equip_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="120.0001" RightMargin="359.9999" TopMargin="15.0000" BottomMargin="75.0000" FontSize="20" LabelText="神器名字六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="20.0000" />
+              <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="344.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="140.0000" Y="20.0000" />
                 <AnchorPoint />
-                <Position X="120.0001" Y="75.0000" />
+                <Position X="115.7146" Y="76.4999" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.2000" Y="0.6818" />
-                <PreSize X="0.2000" Y="0.1818" />
+                <PrePosition X="0.1929" Y="0.6955" />
+                <PreSize X="0.2333" Y="0.1818" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipLevel_text" ActionTag="-188675879" Tag="45" IconVisible="False" LeftMargin="270.0000" RightMargin="258.0000" TopMargin="17.0000" BottomMargin="75.0000" FontSize="18" LabelText="Lv.99/99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="72.0000" Y="18.0000" />
+              <AbstractNodeData Name="equipLevel_text" ActionTag="-188675879" Tag="45" IconVisible="False" LeftMargin="270.0000" RightMargin="210.0000" TopMargin="14.5001" BottomMargin="77.4999" IsCustomSize="True" FontSize="18" LabelText="Lv.99/99" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="120.0000" Y="18.0000" />
                 <AnchorPoint />
-                <Position X="270.0000" Y="75.0000" />
+                <Position X="270.0000" Y="77.4999" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.4500" Y="0.6818" />
-                <PreSize X="0.1200" Y="0.1636" />
+                <PrePosition X="0.4500" Y="0.7045" />
+                <PreSize X="0.2000" Y="0.1636" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipBuffDecs_text" ActionTag="-1671372399" Tag="46" IconVisible="False" LeftMargin="120.0000" RightMargin="336.0000" TopMargin="42.0000" BottomMargin="50.0000" FontSize="18" LabelText="神器效果详细描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="144.0000" Y="18.0000" />
+              <AbstractNodeData Name="equipBuffDecs_text" ActionTag="-1671372399" Tag="46" IconVisible="False" LeftMargin="115.7145" RightMargin="164.2855" TopMargin="38.6161" BottomMargin="11.3839" IsCustomSize="True" FontSize="18" LabelText="神器效果详细描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="320.0000" Y="60.0000" />
                 <AnchorPoint />
-                <Position X="120.0000" Y="50.0000" />
+                <Position X="115.7145" Y="11.3839" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.2000" Y="0.4545" />
-                <PreSize X="0.2400" Y="0.1636" />
+                <PrePosition X="0.1929" Y="0.1035" />
+                <PreSize X="0.5333" Y="0.5455" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="195506886" Tag="150" IconVisible="False" LeftMargin="445.8333" RightMargin="14.1667" TopMargin="12.3923" BottomMargin="17.6077" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="195506886" Tag="150" IconVisible="False" LeftMargin="445.8333" RightMargin="14.1667" TopMargin="12.3923" BottomMargin="17.6077" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <Children>
                   <AbstractNodeData Name="up_btn" ActionTag="1763863329" Tag="640" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
