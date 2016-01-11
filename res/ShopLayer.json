@@ -185,39 +185,39 @@
                   "Path": "shopUI/shopText.png",
                   "Plist": ""
                 },
-                "Scale9Width": 200,
-                "Scale9Height": 55,
+                "Scale9Width": 129,
+                "Scale9Height": 58,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 317.6339,
-                  "Y": 705.8289
+                  "X": 319.635,
+                  "Y": 704.5717
                 },
                 "Scale": {
-                  "ScaleX": 1.2,
-                  "ScaleY": 1.2
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4963,
-                  "Y": 0.8207
+                  "X": 0.4994,
+                  "Y": 0.8193
                 },
                 "PreSize": {
-                  "X": 0.3125,
-                  "Y": 0.064
+                  "X": 0.2016,
+                  "Y": 0.0674
                 },
-                "LeftMargin": 217.6339,
-                "RightMargin": 222.3661,
-                "TopMargin": 126.6711,
-                "BottomMargin": 678.3289,
-                "Tag": 47,
-                "ActionTag": 1956065607,
+                "LeftMargin": 255.135,
+                "RightMargin": 255.865,
+                "TopMargin": 126.4283,
+                "BottomMargin": 675.5717,
+                "Tag": 146,
+                "ActionTag": -404407330,
                 "Size": {
-                  "X": 200.0,
-                  "Y": 55.0
+                  "X": 129.0,
+                  "Y": 58.0
                 },
                 "Name": "shop_text",
                 "ctype": "ImageViewObjectData"
@@ -233,7 +233,7 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 12.0371,
+                  "X": 15.037,
                   "Y": 9.3513
                 },
                 "Scale": {
@@ -243,15 +243,15 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.0188,
+                  "X": 0.0235,
                   "Y": 0.0109
                 },
                 "PreSize": {
                   "X": 0.9531,
                   "Y": 0.6977
                 },
-                "LeftMargin": 12.0371,
-                "RightMargin": 17.9629,
+                "LeftMargin": 15.037,
+                "RightMargin": 14.963,
                 "TopMargin": 250.6487,
                 "BottomMargin": 9.3513,
                 "Tag": 398,

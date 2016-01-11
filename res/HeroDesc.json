@@ -128,7 +128,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0208
                 },
                 "PreSize": {
@@ -214,7 +214,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5313,
+                  "X": 0.5312,
                   "Y": 0.8385
                 },
                 "PreSize": {
@@ -235,23 +235,20 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/heroHP.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "Scale9Width": 104,
+                "Scale9Height": 26,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 365.0,
-                  "Y": 828.0
+                  "X": 400.0,
+                  "Y": 879.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -260,71 +257,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5703,
-                  "Y": 0.8625
+                  "X": 0.625,
+                  "Y": 0.9156
                 },
                 "PreSize": {
-                  "X": 0.1094,
-                  "Y": 0.0208
+                  "X": 0.1625,
+                  "Y": 0.0271
                 },
-                "LeftMargin": 365.0,
-                "RightMargin": 205.0,
-                "TopMargin": 112.0,
-                "BottomMargin": 828.0,
-                "Tag": 779,
-                "ActionTag": -293211049,
+                "LeftMargin": 348.0,
+                "RightMargin": 188.0,
+                "TopMargin": 68.0,
+                "BottomMargin": 866.0,
+                "Tag": 417,
+                "ActionTag": 491832254,
                 "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
+                  "X": 104.0,
+                  "Y": 26.0
                 },
-                "Name": "dps_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "英雄DPS",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 365.0,
-                  "Y": 870.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5703,
-                  "Y": 0.9063
-                },
-                "PreSize": {
-                  "X": 0.1094,
-                  "Y": 0.0208
-                },
-                "LeftMargin": 365.0,
-                "RightMargin": 205.0,
-                "TopMargin": 70.0,
-                "BottomMargin": 870.0,
-                "Tag": 780,
-                "ActionTag": -1245733313,
-                "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
-                },
-                "Name": "dps",
-                "ctype": "TextObjectData"
+                "Name": "heroHP_text",
+                "ctype": "ImageViewObjectData"
               },
               {
                 "FileData": {
@@ -352,7 +303,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 293.9992,
                 "RightMargin": 314.0008,
@@ -393,7 +344,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 256.9994,
                 "RightMargin": 351.0006,
@@ -434,7 +385,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 219.9992,
                 "RightMargin": 388.0008,
@@ -475,7 +426,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 183.9992,
                 "RightMargin": 424.0008,
@@ -516,7 +467,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 146.9993,
                 "RightMargin": 461.0007,
@@ -667,8 +618,11 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "英雄详细介绍",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -682,8 +636,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 49.1306,
-                  "Y": 758.455
+                  "X": 59.1994,
+                  "Y": 671.922
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -692,22 +646,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0768,
-                  "Y": 0.7901
+                  "X": 0.0925,
+                  "Y": 0.6999
                 },
                 "PreSize": {
-                  "X": 0.1688,
-                  "Y": 0.0188
+                  "X": 0.5938,
+                  "Y": 0.1042
                 },
-                "LeftMargin": 49.1306,
-                "RightMargin": 482.8694,
-                "TopMargin": 183.545,
-                "BottomMargin": 758.455,
+                "LeftMargin": 59.1994,
+                "RightMargin": 200.8006,
+                "TopMargin": 188.078,
+                "BottomMargin": 671.922,
+                "CallBackType": "Click",
                 "Tag": 805,
                 "ActionTag": -1983769405,
                 "Size": {
-                  "X": 108.0,
-                  "Y": 18.0
+                  "X": 380.0,
+                  "Y": 100.0
                 },
                 "Name": "heroDesc_text",
                 "ctype": "TextObjectData"
@@ -771,7 +726,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 86.6618,
+                  "X": 83.4744,
                   "Y": 835.705
                 },
                 "Scale": {
@@ -784,15 +739,15 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1354,
+                  "X": 0.1304,
                   "Y": 0.8705
                 },
                 "PreSize": {
                   "X": 0.0703,
                   "Y": 0.0188
                 },
-                "LeftMargin": 64.1618,
-                "RightMargin": 530.8382,
+                "LeftMargin": 60.9744,
+                "RightMargin": 534.0256,
                 "TopMargin": 115.295,
                 "BottomMargin": 826.705,
                 "Tag": 842,
@@ -805,56 +760,93 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 18,
-                "LabelText": "复活时间",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/reviveTime.png",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 74,
+                "Scale9Height": 19,
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                  "ScaleX": -0.4001,
+                  "ScaleY": 22.9776
                 },
                 "Position": {
-                  "X": 83.4326,
-                  "Y": 855.6736
+                  "X": 16.8689,
+                  "Y": 1288.4846
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1304,
-                  "Y": 0.8913
+                  "X": 0.0264,
+                  "Y": 1.3422
                 },
                 "PreSize": {
-                  "X": 0.1125,
-                  "Y": 0.0188
+                  "X": 0.1156,
+                  "Y": 0.0198
                 },
-                "LeftMargin": 47.4326,
-                "RightMargin": 520.5674,
-                "TopMargin": 95.3264,
-                "BottomMargin": 846.6736,
-                "Tag": 843,
-                "ActionTag": -1482009171,
+                "LeftMargin": 46.4744,
+                "RightMargin": 519.5256,
+                "TopMargin": 89.0892,
+                "BottomMargin": 851.9108,
+                "CallBackType": "Click",
+                "Tag": 442,
+                "ActionTag": -607078018,
                 "Size": {
-                  "X": 72.0,
-                  "Y": 18.0
+                  "X": 74.0,
+                  "Y": 19.0
                 },
                 "Name": "die_text",
-                "ctype": "TextObjectData"
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "69568844",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_white.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 400.1938,
+                  "Y": 834.7134
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6253,
+                  "Y": 0.8695
+                },
+                "PreSize": {
+                  "X": 0.15,
+                  "Y": 0.0135
+                },
+                "LeftMargin": 352.1938,
+                "RightMargin": 191.8062,
+                "TopMargin": 118.7866,
+                "BottomMargin": 828.2134,
+                "Tag": 441,
+                "ActionTag": 382805035,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 13.0
+                },
+                "Name": "dps_text",
+                "ctype": "TextAtlasObjectData"
               },
               {
                 "FileData": {
@@ -1623,6 +1615,7 @@
         "buttonUI/add.png",
         "buttonUI/cut.png",
         "buttonUI/font15_green.png",
+        "buttonUI/font16_white.png",
         "buttonUI/font16_yellow.png",
         "buttonUI/MaxLevel.png",
         "buttonUI/percentage.png",
@@ -1635,7 +1628,9 @@
         "heroUI/btn2.png",
         "heroUI/diamond.png",
         "heroUI/gold.png",
+        "heroUI/heroHP.png",
         "heroUI/lock.png",
+        "heroUI/reviveTime.png",
         "heroUI/text_bg.png",
         "mainUI/hero_icon.png",
         "Star.json"

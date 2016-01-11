@@ -322,11 +322,11 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/heroDPS.png",
+                  "Path": "heroUI/heroHP.png",
                   "Plist": ""
                 },
                 "Scale9Width": 104,
-                "Scale9Height": 25,
+                "Scale9Height": 26,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -347,17 +347,17 @@
                 },
                 "PreSize": {
                   "X": 0.1667,
-                  "Y": 0.2273
+                  "Y": 0.2364
                 },
                 "LeftMargin": 331.5454,
                 "RightMargin": 188.4546,
-                "TopMargin": 8.652,
-                "BottomMargin": 76.348,
+                "TopMargin": 8.152,
+                "BottomMargin": 75.848,
                 "Tag": 621,
                 "ActionTag": -788044653,
                 "Size": {
                   "X": 104.0,
-                  "Y": 25.0
+                  "Y": 26.0
                 },
                 "Name": "dps",
                 "ctype": "ImageViewObjectData"
@@ -1837,7 +1837,7 @@
         "heroUI/diamond.png",
         "heroUI/gold.png",
         "heroUI/hero_bg.png",
-        "heroUI/heroDPS.png",
+        "heroUI/heroHP.png",
         "heroUI/lock.png",
         "heroUI/reviveTime.png",
         "heroUI/star1.png",

@@ -169,58 +169,6 @@
               },
               {
                 "FontSize": 18,
-                "LabelText": "复活时间",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 46.52,
-                  "Y": 55.7276
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4897,
-                  "Y": 0.5866
-                },
-                "PreSize": {
-                  "X": 0.7579,
-                  "Y": 0.1895
-                },
-                "LeftMargin": 10.52,
-                "RightMargin": 12.48,
-                "TopMargin": 30.2724,
-                "BottomMargin": 46.7276,
-                "Tag": 293,
-                "ActionTag": 1805715142,
-                "Size": {
-                  "X": 72.0,
-                  "Y": 18.0
-                },
-                "Name": "die_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 18,
                 "LabelText": "99:99",
                 "OutlineColor": {
                   "G": 0,
@@ -270,6 +218,49 @@
                 },
                 "Name": "die_time_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/reviveTime.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 74,
+                "Scale9Height": 19,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 47.5,
+                  "Y": 58.0989
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.6116
+                },
+                "PreSize": {
+                  "X": 0.7789,
+                  "Y": 0.2
+                },
+                "LeftMargin": 10.5,
+                "RightMargin": 10.5,
+                "TopMargin": 27.4011,
+                "BottomMargin": 48.5989,
+                "Tag": 955,
+                "ActionTag": 513272033,
+                "Size": {
+                  "X": 74.0,
+                  "Y": 19.0
+                },
+                "Name": "die_text",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -540174355,
@@ -289,6 +280,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "heroUI/reviveTime.png",
         "ui/skill_icon.png"
       ],
       "ctype": "GameFileData"
