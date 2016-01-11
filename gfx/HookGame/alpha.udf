@@ -27,7 +27,17 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
+<<<<<<< HEAD
         <ActiveDocument />
+=======
+        <OpenedDocuments>
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="ShopTab.csd" />
+          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="ShopView.csd" />
+>>>>>>> origin/master
       </Value>
     </Item>
   </Properties>
