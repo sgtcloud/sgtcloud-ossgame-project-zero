@@ -38,44 +38,44 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="atk" ActionTag="-966206276" Tag="170" IconVisible="False" LeftMargin="12.7592" RightMargin="526.2408" TopMargin="10.3782" BottomMargin="205.6218" Scale9Width="101" Scale9Height="24" ctype="ImageViewObjectData">
-                <Size X="101.0000" Y="24.0000" />
+              <AbstractNodeData Name="atk" ActionTag="-966206276" CallBackType="Click" Tag="170" IconVisible="False" LeftMargin="12.7592" RightMargin="496.2408" TopMargin="7.0950" BottomMargin="205.9050" Scale9Width="131" Scale9Height="27" ctype="ImageViewObjectData">
+                <Size X="131.0000" Y="27.0000" />
                 <AnchorPoint />
-                <Position X="12.7592" Y="205.6218" />
+                <Position X="12.7592" Y="205.9050" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0199" Y="0.8568" />
-                <PreSize X="0.1578" Y="0.1000" />
+                <PrePosition X="0.0199" Y="0.8579" />
+                <PreSize X="0.2047" Y="0.1125" />
                 <FileData Type="Normal" Path="skillUI/hero.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="atk_text" ActionTag="-1087542958" Tag="171" IconVisible="False" LeftMargin="115.8028" RightMargin="524.1972" TopMargin="20.6545" BottomMargin="219.3455" CharWidth="14" CharHeight="20" LabelText="" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="0.0000" Y="0.0000" />
+              <AbstractNodeData Name="atk_text" ActionTag="-1087542958" Tag="171" IconVisible="False" LeftMargin="139.2657" RightMargin="374.7343" TopMargin="12.0950" BottomMargin="210.9050" CharWidth="18" CharHeight="17" LabelText="1231321" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="126.0000" Y="17.0000" />
                 <AnchorPoint />
-                <Position X="115.8028" Y="219.3455" />
+                <Position X="139.2657" Y="210.9050" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1809" Y="0.9139" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PrePosition X="0.2176" Y="0.8788" />
+                <PreSize X="0.1969" Y="0.0708" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tatk" ActionTag="1563928514" Tag="173" IconVisible="False" LeftMargin="497.2654" RightMargin="18.7346" TopMargin="10.3782" BottomMargin="205.6218" Scale9Width="124" Scale9Height="24" ctype="ImageViewObjectData">
-                <Size X="124.0000" Y="24.0000" />
+              <AbstractNodeData Name="tatk" ActionTag="1563928514" Tag="173" IconVisible="False" LeftMargin="409.6177" RightMargin="99.3823" TopMargin="7.5950" BottomMargin="206.4050" Scale9Width="131" Scale9Height="26" ctype="ImageViewObjectData">
+                <Size X="131.0000" Y="26.0000" />
                 <AnchorPoint />
-                <Position X="497.2654" Y="205.6218" />
+                <Position X="409.6177" Y="206.4050" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7770" Y="0.8568" />
-                <PreSize X="0.1937" Y="0.1000" />
+                <PrePosition X="0.6400" Y="0.8600" />
+                <PreSize X="0.2047" Y="0.1083" />
                 <FileData Type="Normal" Path="skillUI/tap.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tatk_text" ActionTag="309744497" Tag="172" IconVisible="False" LeftMargin="622.5942" RightMargin="17.4058" TopMargin="19.1018" BottomMargin="220.8982" CharWidth="14" CharHeight="20" LabelText="" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="0.0000" Y="0.0000" />
+              <AbstractNodeData Name="tatk_text" ActionTag="309744497" Tag="172" IconVisible="False" LeftMargin="536.2065" RightMargin="13.7935" TopMargin="12.0950" BottomMargin="210.9050" CharWidth="18" CharHeight="17" LabelText="12313" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="90.0000" Y="17.0000" />
                 <AnchorPoint />
-                <Position X="622.5942" Y="220.8982" />
+                <Position X="536.2065" Y="210.9050" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9728" Y="0.9204" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PrePosition X="0.8378" Y="0.8788" />
+                <PreSize X="0.1406" Y="0.0708" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skill7" ActionTag="1771128983" Tag="241" IconVisible="True" LeftMargin="533.9998" RightMargin="11.0002" TopMargin="132.0002" BottomMargin="12.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
@@ -138,7 +138,7 @@
                 <PreSize X="0.1484" Y="0.3958" />
                 <FileData Type="Normal" Path="Skillicon.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9997" RightMargin="534.0002" TopMargin="132.0002" BottomMargin="12.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="skill1" ActionTag="-1452498293" Tag="205" IconVisible="True" LeftMargin="10.9997" RightMargin="534.0003" TopMargin="132.0002" BottomMargin="12.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
                 <Position X="10.9997" Y="12.9998" />

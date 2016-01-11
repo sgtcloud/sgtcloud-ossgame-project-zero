@@ -215,7 +215,6 @@
           <Image Name="sale.png" />
         </Folder>
         <Project Name="ShopView.csd" Type="Layer" />
-        <Project Name="MoneyTreeView.csd" Type="Layer" />
         <Project Name="ShopTab.csd" Type="Layer" />
         <Project Name="ShopIconLayer.csd" Type="Layer" />
         <Project Name="ItemLayer.csd" Type="Layer" />
@@ -245,6 +244,7 @@
           <Image Name="buy2.png" />
           <Image Name="buy3.png" />
           <Image Name="font16_green.png" />
+          <Image Name="notSure.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">

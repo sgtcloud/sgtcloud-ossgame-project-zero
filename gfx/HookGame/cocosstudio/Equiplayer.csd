@@ -91,14 +91,14 @@
                     <PreSize X="0.0962" Y="0.1000" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" ActionTag="1244824290" Tag="664" IconVisible="False" LeftMargin="512.2502" RightMargin="58.7498" TopMargin="50.0156" BottomMargin="34.9844" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
-                    <Size X="53.0000" Y="25.0000" />
+                  <AbstractNodeData Name="buy_text" ActionTag="1244824290" Tag="664" IconVisible="False" LeftMargin="505.7502" RightMargin="52.2498" TopMargin="45.5156" BottomMargin="30.4844" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                    <Size X="66.0000" Y="34.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="538.7502" Y="47.4844" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.8634" Y="0.4317" />
-                    <PreSize X="0.0849" Y="0.2273" />
+                    <PreSize X="0.1058" Y="0.3091" />
                     <FileData Type="Normal" Path="buttonUI/buy.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="diamond_icon" ActionTag="-1678763134" Tag="661" IconVisible="False" LeftMargin="500.5355" RightMargin="108.4645" TopMargin="30.4911" BottomMargin="64.5089" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
