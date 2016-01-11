@@ -7,13 +7,13 @@ var Skill = function (id, lv, heroId) {
         var data = dataSource.skills[id];
         var icon = data.icon;
         var type = data.type;
-        var unlockLevel = data['unlockLevel']
+        //var unlockLevel = data['unlockLevel']
         var heroId = heroId;
         this.getIcon = function () {
             return icon;
         }
         this.getUnlockLevel = function () {
-            return unlockLevel;
+            return getLevelData(data, 'unlockLevel', this.getLv());
         }
         this.getType = function () {
             return type;
