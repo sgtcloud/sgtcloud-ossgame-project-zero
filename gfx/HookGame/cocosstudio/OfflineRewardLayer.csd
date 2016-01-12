@@ -77,14 +77,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_text" ActionTag="-1925537890" Tag="1061" IconVisible="False" LeftMargin="34.0000" RightMargin="34.0000" TopMargin="11.5000" BottomMargin="11.5000" Scale9Width="52" Scale9Height="27" ctype="ImageViewObjectData">
-                    <Size X="52.0000" Y="27.0000" />
+                  <AbstractNodeData Name="btn_text" ActionTag="-1925537890" Tag="1061" IconVisible="False" LeftMargin="27.0000" RightMargin="27.0000" TopMargin="7.0000" BottomMargin="9.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                    <Size X="66.0000" Y="34.0000" />
                     <AnchorPoint />
-                    <Position X="34.0000" Y="11.5000" />
+                    <Position X="27.0000" Y="9.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2833" Y="0.2300" />
-                    <PreSize X="0.4333" Y="0.5400" />
+                    <PrePosition X="0.2250" Y="0.1800" />
+                    <PreSize X="0.5500" Y="0.6800" />
                     <FileData Type="Normal" Path="buttonUI/sure.png" Plist="" />
                   </AbstractNodeData>
                 </Children>

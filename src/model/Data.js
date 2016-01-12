@@ -27,6 +27,9 @@ function getLevelData(data, key, lv) {
 
 function  getSpecificLevelData(data,level){
     var len=data.levelDatas.length;
+    if(level==0){
+        return data.levelDatas[len-1];
+    }
     var index=len-level;
     if (!data.levelDatas[index]) {
         return data.levelDatas[len-1];

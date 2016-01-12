@@ -175,7 +175,7 @@
                 <PreSize X="0.1304" Y="0.0190" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="-1748773187" Tag="190" IconVisible="False" LeftMargin="153.6643" RightMargin="166.3357" TopMargin="469.5674" BottomMargin="30.4326" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="-1748773187" Tag="190" IconVisible="False" LeftMargin="153.6643" RightMargin="166.3357" TopMargin="469.5674" BottomMargin="30.4326" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <Children>
                   <AbstractNodeData Name="re_btn" ActionTag="-1243750762" Tag="674" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -203,14 +203,14 @@
                     <PreSize X="0.4286" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="re_text" ActionTag="989849113" Tag="680" IconVisible="False" LeftMargin="48.6386" RightMargin="38.3614" TopMargin="37.7061" BottomMargin="17.2939" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
-                    <Size X="53.0000" Y="25.0000" />
+                  <AbstractNodeData Name="re_text" ActionTag="989849113" Tag="680" IconVisible="False" LeftMargin="42.1386" RightMargin="31.8614" TopMargin="33.2061" BottomMargin="12.7939" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                    <Size X="66.0000" Y="34.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.1386" Y="29.7939" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5367" Y="0.3724" />
-                    <PreSize X="0.3786" Y="0.3125" />
+                    <PreSize X="0.4714" Y="0.4250" />
                     <FileData Type="Normal" Path="buttonUI/recast.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="diamond_icon" ActionTag="1053639457" Tag="676" IconVisible="False" LeftMargin="36.9266" RightMargin="88.0734" TopMargin="18.1805" BottomMargin="46.8195" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">

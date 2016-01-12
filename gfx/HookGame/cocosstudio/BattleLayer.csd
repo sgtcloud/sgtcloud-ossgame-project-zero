@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" CanEdit="False" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="240.0000" />
@@ -179,7 +179,7 @@
                 <PreSize X="0.7203" Y="0.0230" />
                 <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="73.9336" RightMargin="531.0663" TopMargin="17.3563" BottomMargin="687.6437" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="73.9336" RightMargin="531.0664" TopMargin="17.3563" BottomMargin="687.6437" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="35.0000" Y="35.0000" />
                 <AnchorPoint />
                 <Position X="73.9336" Y="687.6437" />
@@ -253,7 +253,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="1614517410" Tag="168" IconVisible="False" LeftMargin="73.4336" RightMargin="530.5663" TopMargin="26.3563" BottomMargin="696.6437" CharWidth="18" CharHeight="17" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
+              <AbstractNodeData Name="time_text" ActionTag="1614517410" Tag="168" IconVisible="False" LeftMargin="73.4336" RightMargin="530.5664" TopMargin="26.3563" BottomMargin="696.6437" CharWidth="18" CharHeight="17" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
                 <Size X="36.0000" Y="17.0000" />
                 <AnchorPoint />
                 <Position X="73.4336" Y="696.6437" />
