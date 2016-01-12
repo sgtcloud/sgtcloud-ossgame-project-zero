@@ -885,14 +885,14 @@ var RankLayerMenu = BattleMenu.extend({
             n = 0;
             for(var i in players){
                 n++;
-                listView.addChild(this.setRankView(players[i],type));
+                listView.addChild(this.setRankView(players[i],i,type));
                 //rankView);
             }
         };
-        this.setRankView = function(player,type){
+        this.setRankView = function(data,id,type){
             var root = rankViewRoot.clone();
             rankViewRoot.ignoreContentAdaptWithSize(true);
-            var hero = new Hero(player.heroes[0]);
+            var hero = new Hero(data.heroes[0]);
             //var root = rankView.getChildByName('root');
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
             var playerName = root.getChildByName('player_name');
@@ -900,12 +900,19 @@ var RankLayerMenu = BattleMenu.extend({
             var playerPrestige = root.getChildByName('player_prestige');
             var prestigeText = root.getChildByName('prestige_text');
             var playerLv = root.getChildByName('player_lv');
-            playerName.setString(player.name);
-            levelText.ignoreContentAdaptWithSize(true);
-            prestigeText.ignoreContentAdaptWithSize(true);
-            levelText.setString(hero.getLv())
-            //setFont([playerName,levelText,prestigeText]);
-            root.getChildByName('num').setString(n);
+            var myBg = root.getChildByName('my_bg');
+            var num = root.getChildByName('num');
+            setFont([playerName]);
+            setColor([levelText,playerPrestige,prestigeText,playerLv]);
+            setIgnoreContentAdaptWithSize([levelText,prestigeText,num]);
+            levelText.setString(hero.getLv());
+            num.setString(n);
+            playerName.setString(data.name);
+            if(id == player.id){
+                myBg.setVisible(true);
+            }else{
+                myBg.setVisible(false);
+            }
             if(type == 'pvp_tab'){
                 root.getChildByName('pvp_rank').setVisible(true);
                 root.getChildByName('stage_rank').setVisible(false);

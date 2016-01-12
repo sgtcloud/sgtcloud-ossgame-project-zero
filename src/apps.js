@@ -61,3 +61,27 @@ function setFont(target) {
         target.setColor(cc.color(0, 0, 0))
     }
 }
+
+function setColor(target) {
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setColor(cc.color(0, 0, 0))
+        }
+    }
+    else {
+        target.setColor(cc.color(0, 0, 0))
+    }
+}
+
+
+function setIgnoreContentAdaptWithSize(target){
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].ignoreContentAdaptWithSize(true);
+        }
+    }
+    else {
+        target.ignoreContentAdaptWithSize(true);
+    }
+}
+
