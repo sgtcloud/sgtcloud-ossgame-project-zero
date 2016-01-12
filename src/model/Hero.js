@@ -17,7 +17,7 @@ var Hero = function (heroData) {
         var skillId = data.skills[i];
         var skill= readCache(skillId);
         console.log(skill)
-        var skillLv=(skill&&skill['level'])||0;
+        var skillLv=(skill&&skill['level'])||1;
         skills[i] = new Skill(skillId, skillLv,id);
     }
     function readCache(skillId){
@@ -165,9 +165,6 @@ var Hero = function (heroData) {
         }
         return this.calcProp("life");
     };
-    /*this.getOriginalLife=function(){
-        return getLevelData(data, "life",this.getLv())
-    }*/
     this.getAttack = function () {
         if (this.isLocked()) {
             return 0;

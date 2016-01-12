@@ -44,7 +44,55 @@ var player = {
                 1,
                 1
             ]
-        }
+        },{
+            "id": "h103",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills":{
+                //"技能ID":{"leve":""}
+            },
+            "equips": [
+                1,
+                1
+            ]
+        },{
+            "id": "h104",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills":{
+                //"技能ID":{"leve":""}
+            },
+            "equips": [
+                1,
+                1
+            ]
+        },{
+            "id": "h105",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills":{
+                //"技能ID":{"leve":""}
+            },
+            "equips": [
+                1,
+                1
+            ]
+        },
     ]
 };
 var PlayerData = {
@@ -215,5 +263,12 @@ var PlayerData = {
             this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
         }
     },
+    getCurrentRanksByType: function(type){
+        return dataSource.players;
+    },
+    getMyRankByType: function(type){
+        return 1;
+    }
+
 };
 

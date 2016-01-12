@@ -132,14 +132,14 @@
                     <PreSize X="0.2071" Y="0.4000" />
                     <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="18.0000" BottomMargin="18.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
-                    <Size X="105.0000" Y="44.0000" />
+                  <AbstractNodeData Name="upMax_text" ActionTag="532076678" Tag="782" IconVisible="False" LeftMargin="39.3000" RightMargin="23.7000" TopMargin="28.6009" BottomMargin="24.3991" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
+                    <Size X="77.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="70.0000" Y="40.0000" />
+                    <Position X="77.8000" Y="37.8991" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.5000" />
-                    <PreSize X="0.7500" Y="0.5500" />
+                    <PrePosition X="0.5557" Y="0.4737" />
+                    <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="gold_text" Visible="False" ActionTag="533363431" Tag="783" IconVisible="False" LeftMargin="49.5373" RightMargin="18.4627" TopMargin="13.4025" BottomMargin="55.5975" CharWidth="12" CharHeight="11" LabelText="123333" StartChar="0" ctype="TextAtlasObjectData">

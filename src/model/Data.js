@@ -6,6 +6,7 @@ function initDatas() {
     dataSource.equips = cc.loader.getRes(res_datas.equips_json);
     dataSource.skills = cc.loader.getRes(res_datas.skills_json);
     dataSource.goods = cc.loader.getRes(res_datas.goods_json);
+    dataSource.players = cc.loader.getRes(res_datas.players_json);
 }
 
 
@@ -26,9 +27,6 @@ function getLevelData(data, key, lv) {
 
 function  getSpecificLevelData(data,level){
     var len=data.levelDatas.length;
-    if(level==0){
-        return data.levelDatas[len-1];
-    }
     var index=len-level;
     if (!data.levelDatas[index]) {
         return data.levelDatas[len-1];

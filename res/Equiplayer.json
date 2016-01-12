@@ -438,8 +438,8 @@
                       "Path": "buttonUI/buy.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 53,
-                    "Scale9Height": 25,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -459,18 +459,18 @@
                       "Y": 0.4317
                     },
                     "PreSize": {
-                      "X": 0.0849,
-                      "Y": 0.2273
+                      "X": 0.1058,
+                      "Y": 0.3091
                     },
-                    "LeftMargin": 512.2502,
-                    "RightMargin": 58.7498,
-                    "TopMargin": 50.0156,
-                    "BottomMargin": 34.9844,
+                    "LeftMargin": 505.7502,
+                    "RightMargin": 52.2498,
+                    "TopMargin": 45.5156,
+                    "BottomMargin": 30.4844,
                     "Tag": 664,
                     "ActionTag": 1244824290,
                     "Size": {
-                      "X": 53.0,
-                      "Y": 25.0
+                      "X": 66.0,
+                      "Y": 34.0
                     },
                     "Name": "buy_text",
                     "ctype": "ImageViewObjectData"

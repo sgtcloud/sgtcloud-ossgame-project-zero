@@ -202,7 +202,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.per && elements.per.setVisible(false);
                 } else {
                     var nextlevelData = target.getLevelData(target.getLv() + 1);
-                    var nextLevelLife = nextlevelData['life'];
+                    var nextLevelAttack = nextlevelData['attack'];
                     var unit = nextlevelData['upgrade']['unit'];
                     var amount = PlayerData.getAmountByUnit(unit);
                     var nextGoldValue = nextlevelData['upgrade']['value'];
@@ -210,12 +210,12 @@ var HeroListMenu = BattleMenu.extend({
                         cc.log(unit + ' not enough')
                     }
                     var levelData = target.getLevelData();
-                    var levelLife = levelData['life'];
+                    var levelAttack = levelData['attack'];
                     if (nextGoldValue) {
                         elements.goldText.setString(nextGoldValue);
                     }
-                    if (nextLevelLife) {
-                        elements.buffNum.setString(Math.abs(parseInt(nextLevelLife - levelLife)));
+                    if (nextLevelAttack) {
+                        elements.buffNum.setString(Math.abs(nextLevelAttack - levelAttack));
                     }
                     elements.btn.addClickEventListener(function (event) {
                         listener(event, elements)
@@ -280,8 +280,6 @@ var HeroListMenu = BattleMenu.extend({
                 var level_text = btnlayer.getChildByName('level_text');
                 var revive_text = btnlayer.getChildByName('revive_text');
                 var per = btnlayer.getChildByName('per');
-                var add = btnlayer.getChildByName('add');
-                var cut = btnlayer.getChildByName('cut');
                 per.setVisible(false);
                 buffNum_text.ignoreContentAdaptWithSize(true);
                 dps.ignoreContentAdaptWithSize(true);
@@ -292,17 +290,13 @@ var HeroListMenu = BattleMenu.extend({
                 icon.loadTexture("res/icon/heroes/" + hero.getIcon());
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
-                dps_text.setString(parseInt(hero.getLife()));
+                dps_text.setString(parseInt(hero.getAttack()));
                 setFont([heroName_text, lv, buff_text]);
                 if (hero.getLife() > 0) {
                     die_text.setVisible(false);
                     die_time_text.setVisible(false);
                     revive_text.setVisible(false);
                 }
-                customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function () {
-                    hero.refreshProps();
-                    dps_text.setString(parseInt(hero.getLife()));
-                })
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                     if (!hero.isMaxLevel()) {
                         var nextlevelData = hero.getLevelData(hero.getLv() + 1);
@@ -321,6 +315,7 @@ var HeroListMenu = BattleMenu.extend({
                     var dieHero = event.getUserData();
                     var heroId = dieHero.getId();
                     if (heroId === hero.getId()) {
+                        console.log(heroId + ' 触发了死亡事件 当前生命值' + dieHero.getCurrentLife())
                         die_text.setVisible(true);
                         die_time_text.setVisible(true);
                         revive_text.setVisible(true);
@@ -332,8 +327,6 @@ var HeroListMenu = BattleMenu.extend({
                         diamond_text.setVisible(true);
                         var resurge = hero.getResurge();
                         diamond_text.setString(parseInt(resurge['cost']['value']));
-                        add.isVisible() && add.setVisible(false);
-                        cut.isVisible() && cut.setVisible(false);
                         diamond.setVisible(true);
                         if (!btn.isEnabled()) {
                             btn.setEnabled(true);
@@ -344,6 +337,8 @@ var HeroListMenu = BattleMenu.extend({
                 customEventHelper.bindListener(EVENT.HERO_REVIVE, function (event) {
                     var heroId = event.getUserData().getId();
                     if (heroId === hero.getId()) {
+                        console.log(heroId + ' 请求买活')
+                        console.log(heroId + ' 触发了买活事件 当前生命值' + hero.getCurrentLife())
                         die_text.setVisible(false);
                         die_time_text.setVisible(false);
                         revive_text.setVisible(false);
@@ -357,11 +352,10 @@ var HeroListMenu = BattleMenu.extend({
                                 btn.setEnabled(false);
                                 btn.setBright(false);
                             }
-                        } else {
-                            showAddOrCut(add, cut, hero.getLevelData(hero.getLv() + 1)['life'] - hero.getLife());
                         }
                         diamond_text.setVisible(false);
                         diamond.setVisible(false);
+                        console.log(heroId + ' 花' + diamond_text.getString() + '钻石买活了')
                     }
                 });
 
@@ -377,13 +371,14 @@ var HeroListMenu = BattleMenu.extend({
                         console.log(hero.getId() + '当前生命值' + hero.getCurrentLife())
                         var eventData = {};
                         var levelData = hero.getLevelData();
+                        var levelAttack = levelData['attack'];
                         eventData.heroId = hero.getId();
                         var cost = hero.getNextLevelUpgrade();
                         cost['value'] = 0 - cost['value'];
                         eventData.cost = cost;
                         hero.upgrade();
                         lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
-                        dps_text.setString(parseInt(hero.getLife()));
+                        dps_text.setString(parseInt(hero.getAttack()));
                         customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                         if (hero.isMaxLevel()) {
                             event.setEnabled(false);
@@ -396,12 +391,11 @@ var HeroListMenu = BattleMenu.extend({
                             otherBtn.add.isVisible() && otherBtn.add.setVisible(false);
                             otherBtn.cut.isVisible() && otherBtn.cut.setVisible(false);
                         } else {
-                            var levelLife = hero.getLevelData()['life'];
                             var nextlevelData = hero.getLevelData(hero.getLv() + 1);
                             var nextLevelAmount = nextlevelData['upgrade']['value'];
-                            var nextLevelLife = nextlevelData['life'];
+                            var nextLevelAttack = nextlevelData['attack'];
                             otherBtn.goldText.setString(nextLevelAmount);
-                            var diffValue = parseInt(nextLevelLife - levelLife);
+                            var diffValue = nextLevelAttack - levelAttack;
                             showAddOrCut(otherBtn.add, otherBtn.cut, diffValue);
                             otherBtn.buffNum.setString(Math.abs(diffValue));
                             customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
@@ -450,18 +444,12 @@ var HeroListMenu = BattleMenu.extend({
                 elements.buff_text.setVisible(true);
                 elements.buffNum_text.setVisible(true);
                 var gold_text = elements.gold_text, buffNum_text = elements.buffNum_text, add = elements.add, cut = elements.cut;
-                var lv = skill.getLv();
-                var showEffect = 0;
-                var nextlevelData = skill.getLevelData(lv + 1);
+                var effects = skill.traverseSkillEffects();
+                var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                 var nextAmount = nextlevelData['upgrade']['value'];
-                var nextEffects = skill.traverseSkillEffects(lv + 1);
-                if (lv == 0) {
-                    showEffect = nextEffects[0].value;
-                } else {
-                    var effects = skill.traverseSkillEffects();
-                    showEffect = nextEffects[0].value - effects[0].value;
-                }
+                var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                 gold_text.setString(nextAmount);
+                var showEffect = nextEffects[0].value - effects[0].value;
                 buffNum_text.ignoreContentAdaptWithSize(true);
                 elements.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
                 showAddOrCut(add, cut, showEffect);
@@ -494,23 +482,6 @@ var HeroListMenu = BattleMenu.extend({
                 var heroLv = hero.getLv();
                 var unlockLevel = skill.getUnlockLevel();
                 return !(heroLv < unlockLevel);
-            }
-
-            function lockSkill(hero, skill, elements) {
-                if (!canUnlockSkill(hero, skill)) {
-                    elements.lock.setVisible(true);
-                    elements.btn.setEnabled(false);
-                    elements.btn.setBright(false);
-                    elements.level_text.setVisible(true);
-                    elements.level_text.setString("Lv." + skill.getUnlockLevel())
-                    elements.gold.setVisible(false);
-                    elements.gold_text.setVisible(false);
-                    elements.buff_text.setVisible(false);
-                    elements.buffNum_text.setVisible(false);
-                    elements.add.setVisible(false);
-                    elements.cut.setVisible(false);
-                    elements.per.setVisible(false);
-                }
             }
 
             function buildSkillView(skill, hero) {
@@ -585,12 +556,9 @@ var HeroListMenu = BattleMenu.extend({
                     var levelData = skill.getLevelData();
                     var effects = skill.traverseSkillEffects();
                     skill.upgrade();
-                    // hero.refreshProps();
                     desc.setString(buildSkillDesc(skill));
                     lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
                     customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
-                    customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, {});
-
                     if (skill.isMaxLevel()) {
                         otherBtn.btn.setEnabled(false);
                         otherBtn.btn.setBright(false);
@@ -618,12 +586,22 @@ var HeroListMenu = BattleMenu.extend({
                         } else {
                             per.setVisible(false);
                         }
-                        lockSkill(hero, skill, elements);
                         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                     }
                     cc.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
                 });
-                lockSkill(hero, skill, elements);
+                if (!canUnlockSkill(hero, skill)) {
+                    elements.lock.setVisible(true);
+                    elements.btn.setEnabled(false);
+                    elements.btn.setBright(false);
+                    elements.level_text.setVisible(true);
+                    elements.gold.setVisible(false);
+                    elements.gold_text.setVisible(false);
+                    elements.buff_text.setVisible(false);
+                    elements.buffNum_text.setVisible(false);
+                    elements.add.setVisible(false);
+                    elements.cut.setVisible(false);
+                }
                 return root;
             }
 
@@ -674,7 +652,7 @@ var EquipListMenu = BattleMenu.extend({
 
             name.setString(hero.getName());
             lv.setString(hero.getLv());
-            dps.setString(hero.getLife());
+            dps.setString(hero.getAttack());
             //tap.setString(hero.getHit());
 
             return root;
@@ -777,7 +755,8 @@ var ShopLayerMenu = BattleMenu.extend({
 
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(5, (5 * PlayerData.getStageData().getMoneyTreeRatio()));
+                var gemNum = 5;
+                self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
             });
         };
         this.buyGold = function (gem, gold) {
@@ -844,10 +823,12 @@ var ShopLayerMenu = BattleMenu.extend({
                     "num": goods.num,
                     "level": 1
                 });
-                //new Popup1("友情提示","购买成功");
+                //new Popup1("友情提示1","购买成功");
             } else {
-                new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (layer) {
-                    layer.removeFromParent();
+                new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
+                    /*layer.removeFromParent();
+                     gamePopup.hidden();*/
+                    popup.hiddenPopup();
                     self.showMenuLayer("moneyTree_tab");
                 });
             }
@@ -855,4 +836,94 @@ var ShopLayerMenu = BattleMenu.extend({
         this.showPorpView("shop_tab");
     }
 
+});
+
+var RankLayerMenu = BattleMenu.extend({
+    ctor: function (battle) {
+        this._super(battle, res.rank_layer_json);
+        var listView = this.root.getChildByName("List");
+        var rankTab = this.root.getChildByName("rank_tab");
+        var myNumText = this.root.getChildByName('myNum_text');
+        var rankViewRoot = ccs.csLoader.createNode(res.rank_view_json).getChildByName('root');
+        var tabParams = [
+            {name: "pvp_tab"},
+            {name: "stage_tab"}
+        ];
+        this.buttons = {};
+
+        var self = this;
+        for (var i in tabParams) {
+            var param = tabParams[i];
+            var name = param.name;
+            this.buttons[name] = rankTab.getChildByName(name);
+            if (i == 0)
+                this.buttons[name].setSelected(true);
+            else
+                this.buttons[name].setSelected(false);
+            this.buttons[name].addEventListener(function (sender, type) {
+                if (type === ccui.CheckBox.EVENT_SELECTED) {
+                    self.showMenuLayer(sender.name);
+                }
+                else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
+                    sender.setSelected(true);
+                }
+            }, this);
+        }
+        var n = 0;
+        this.showMenuLayer = function (name) {
+            for (var i in this.buttons) {
+                this.buttons[i].setSelected(false);
+            }
+            this.showRankList(name);
+            this.buttons[name].setSelected(true);
+        };
+
+        this.showRankList = function (type) {
+            listView.removeAllChildren();
+            var players = PlayerData.getCurrentRanksByType(type);
+            myNumText.ignoreContentAdaptWithSize(true);
+            myNumText.setString(PlayerData.getMyRankByType(type));
+            n = 0;
+            for(var i in players){
+                n++;
+                listView.addChild(this.setRankView(players[i],i,type));
+                //rankView);
+            }
+        };
+        this.setRankView = function(data,id,type){
+            var root = rankViewRoot.clone();
+            rankViewRoot.ignoreContentAdaptWithSize(true);
+            var hero = new Hero(data.heroes[0]);
+            //var root = rankView.getChildByName('root');
+            root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
+            var playerName = root.getChildByName('player_name');
+            var levelText = root.getChildByName('level_text');
+            var playerPrestige = root.getChildByName('player_prestige');
+            var prestigeText = root.getChildByName('prestige_text');
+            var playerLv = root.getChildByName('player_lv');
+            var myBg = root.getChildByName('my_bg');
+            var num = root.getChildByName('num');
+            setFont([playerName]);
+            setColor([levelText,playerPrestige,prestigeText,playerLv]);
+            setIgnoreContentAdaptWithSize([levelText,prestigeText,num]);
+            levelText.setString(hero.getLv());
+            num.setString(n);
+            playerName.setString(data.name);
+            if(id == player.id){
+                myBg.setVisible(true);
+            }else{
+                myBg.setVisible(false);
+            }
+            if(type == 'pvp_tab'){
+                root.getChildByName('pvp_rank').setVisible(true);
+                root.getChildByName('stage_rank').setVisible(false);
+            }else{
+                root.getChildByName('stage_rank').setVisible(true);
+                root.getChildByName('pvp_rank').setVisible(false);
+            }
+            return root;
+        };
+
+        this.showMenuLayer("stage_tab");
+    }
 });
