@@ -755,7 +755,7 @@ var ShopLayerMenu = BattleMenu.extend({
 
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                var gemNum = BattleConsts.Parameters.getMoneyTreeOnePrice();
+                var gemNum = 5;
                 self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
             });
         };
