@@ -49,23 +49,23 @@
                 <PreSize X="0.2066" Y="0.0350" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font28_yellow.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond" ActionTag="-772689509" Tag="285" IconVisible="False" LeftMargin="250.8201" RightMargin="329.1799" TopMargin="69.3788" BottomMargin="500.6212" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="diamond" ActionTag="-772689509" Tag="285" IconVisible="False" LeftMargin="253.8202" RightMargin="326.1798" TopMargin="68.3786" BottomMargin="501.6214" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="265.8201" Y="515.6212" />
+                <Position X="268.8202" Y="516.6214" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4358" Y="0.8594" />
+                <PrePosition X="0.4407" Y="0.8610" />
                 <PreSize X="0.0492" Y="0.0500" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold" ActionTag="-1790085428" Tag="286" IconVisible="False" LeftMargin="227.2227" RightMargin="352.7773" TopMargin="29.2189" BottomMargin="540.7811" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="gold" ActionTag="-1790085428" Tag="286" IconVisible="False" LeftMargin="231.2229" RightMargin="348.7771" TopMargin="29.2186" BottomMargin="540.7814" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
                 <AnchorPoint />
-                <Position X="227.2227" Y="540.7811" />
+                <Position X="231.2229" Y="540.7814" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3725" Y="0.9013" />
+                <PrePosition X="0.3791" Y="0.9013" />
                 <PreSize X="0.0492" Y="0.0500" />
                 <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
               </AbstractNodeData>

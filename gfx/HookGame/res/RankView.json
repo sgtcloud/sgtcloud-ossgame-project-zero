@@ -85,7 +85,7 @@
                 "Tag": 384,
                 "ActionTag": 1402301482,
                 "Size": {
-                  "X": 580.0,
+                  "X": 600.0,
                   "Y": 100.0
                 },
                 "Name": "bg",
@@ -122,7 +122,7 @@
                 "Tag": 29,
                 "ActionTag": -310137380,
                 "Size": {
-                  "X": 580.0,
+                  "X": 600.0,
                   "Y": 98.0
                 },
                 "Name": "my_bg",
@@ -142,7 +142,7 @@
                 },
                 "Position": {
                   "X": 60.7931,
-                  "Y": 50.1296
+                  "Y": 51.1296
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -151,17 +151,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1048,
-                  "Y": 0.5013
+                  "X": 0.1013,
+                  "Y": 0.5113
                 },
                 "PreSize": {
-                  "X": 0.1552,
+                  "X": 0.15,
                   "Y": 0.9
                 },
                 "LeftMargin": 15.7931,
-                "RightMargin": 474.2069,
-                "TopMargin": 4.8704,
-                "BottomMargin": 5.1296,
+                "RightMargin": 494.2069,
+                "TopMargin": 3.8704,
+                "BottomMargin": 6.1296,
                 "Tag": 39,
                 "ActionTag": 679581239,
                 "Size": {
@@ -206,15 +206,15 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3438,
+                  "X": 0.3323,
                   "Y": 0.8273
                 },
                 "PreSize": {
-                  "X": 0.2759,
+                  "X": 0.2667,
                   "Y": 0.2
                 },
                 "LeftMargin": 119.3848,
-                "RightMargin": 300.6152,
+                "RightMargin": 320.6152,
                 "TopMargin": 7.2744,
                 "BottomMargin": 72.7256,
                 "Tag": 40,
@@ -239,8 +239,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 424.0123,
-                  "Y": 52.1379
+                  "X": 461.0117,
+                  "Y": 52.1376
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -249,17 +249,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7311,
+                  "X": 0.7684,
                   "Y": 0.5214
                 },
                 "PreSize": {
-                  "X": 0.4259,
+                  "X": 0.4117,
                   "Y": 0.31
                 },
-                "LeftMargin": 300.5123,
-                "RightMargin": 32.4877,
-                "TopMargin": 32.3621,
-                "BottomMargin": 36.6379,
+                "LeftMargin": 337.5117,
+                "RightMargin": 15.4883,
+                "TopMargin": 32.3624,
+                "BottomMargin": 36.6376,
                 "Tag": 389,
                 "ActionTag": 1684059057,
                 "Size": {
@@ -282,8 +282,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 424.0123,
-                  "Y": 52.1379
+                  "X": 461.0117,
+                  "Y": 52.1376
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -292,17 +292,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7311,
+                  "X": 0.7684,
                   "Y": 0.5214
                 },
                 "PreSize": {
-                  "X": 0.4259,
+                  "X": 0.4117,
                   "Y": 0.31
                 },
-                "LeftMargin": 300.5123,
-                "RightMargin": 32.4877,
-                "TopMargin": 32.3621,
-                "BottomMargin": 36.6379,
+                "LeftMargin": 337.5117,
+                "RightMargin": 15.4883,
+                "TopMargin": 32.3624,
+                "BottomMargin": 36.6376,
                 "Tag": 390,
                 "ActionTag": 788911233,
                 "Size": {
@@ -327,8 +327,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 483.2911,
-                  "Y": 52.8046
+                  "X": 520.2898,
+                  "Y": 52.8044
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -337,17 +337,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8333,
+                  "X": 0.8671,
                   "Y": 0.528
                 },
                 "PreSize": {
-                  "X": 0.0724,
+                  "X": 0.07,
                   "Y": 0.21
                 },
-                "LeftMargin": 462.2911,
-                "RightMargin": 75.7089,
-                "TopMargin": 36.6954,
-                "BottomMargin": 42.3046,
+                "LeftMargin": 499.2898,
+                "RightMargin": 58.7102,
+                "TopMargin": 36.6956,
+                "BottomMargin": 42.3044,
                 "Tag": 391,
                 "ActionTag": -536068057,
                 "Size": {
@@ -382,15 +382,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3161,
+                  "X": 0.3055,
                   "Y": 0.5411
                 },
                 "PreSize": {
-                  "X": 0.1241,
+                  "X": 0.12,
                   "Y": 0.17
                 },
                 "LeftMargin": 149.0691,
-                "RightMargin": 358.9309,
+                "RightMargin": 378.9309,
                 "TopMargin": 37.9138,
                 "BottomMargin": 45.0862,
                 "Tag": 1145,
@@ -422,15 +422,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1987,
+                  "X": 0.192,
                   "Y": 0.4209
                 },
                 "PreSize": {
-                  "X": 0.0707,
+                  "X": 0.0683,
                   "Y": 0.23
                 },
                 "LeftMargin": 115.2229,
-                "RightMargin": 423.7771,
+                "RightMargin": 443.7771,
                 "TopMargin": 34.9138,
                 "BottomMargin": 42.0862,
                 "Tag": 1146,
@@ -462,15 +462,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1987,
+                  "X": 0.192,
                   "Y": 0.0753
                 },
                 "PreSize": {
-                  "X": 0.3224,
+                  "X": 0.3117,
                   "Y": 0.31
                 },
                 "LeftMargin": 115.2229,
-                "RightMargin": 277.7771,
+                "RightMargin": 297.7771,
                 "TopMargin": 61.471,
                 "BottomMargin": 7.529,
                 "Tag": 27,
@@ -507,15 +507,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4271,
+                  "X": 0.4129,
                   "Y": 0.2294
                 },
                 "PreSize": {
-                  "X": 0.0621,
+                  "X": 0.06,
                   "Y": 0.17
                 },
                 "LeftMargin": 230.5954,
-                "RightMargin": 313.4046,
+                "RightMargin": 333.4046,
                 "TopMargin": 69.0807,
                 "BottomMargin": 13.9193,
                 "Tag": 29,
@@ -530,7 +530,7 @@
             ],
             "ActionTag": 318411989,
             "Size": {
-              "X": 580.0,
+              "X": 600.0,
               "Y": 100.0
             },
             "Name": "root",
@@ -538,7 +538,7 @@
           }
         ],
         "Size": {
-          "X": 580.0,
+          "X": 600.0,
           "Y": 100.0
         },
         "Name": "Layer",

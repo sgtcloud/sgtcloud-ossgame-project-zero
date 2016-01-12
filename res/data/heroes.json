@@ -20,15 +20,15 @@
       {
         "level": 30,
         "life": 1649,
-        "attack": 190,
-        "tap": 190,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 31,
+          "time": 10,
           "cost": {
-            "value": 31,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -40,15 +40,15 @@
       {
         "level": 29,
         "life": 1532,
-        "attack": 180,
-        "tap": 180,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 30,
+          "time": 10,
           "cost": {
-            "value": 30,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -60,15 +60,15 @@
       {
         "level": 28,
         "life": 1420,
-        "attack": 170,
-        "tap": 170,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 29,
+          "time": 10,
           "cost": {
-            "value": 29,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -80,15 +80,15 @@
       {
         "level": 27,
         "life": 1313,
-        "attack": 160,
-        "tap": 160,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 28,
+          "time": 10,
           "cost": {
-            "value": 28,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -100,15 +100,15 @@
       {
         "level": 26,
         "life": 1212,
-        "attack": 150,
-        "tap": 150,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 27,
+          "time": 10,
           "cost": {
-            "value": 27,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -120,15 +120,15 @@
       {
         "level": 25,
         "life": 1116,
-        "attack": 141,
-        "tap": 141,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 26,
+          "time": 10,
           "cost": {
-            "value": 26,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -140,15 +140,15 @@
       {
         "level": 24,
         "life": 1026,
-        "attack": 132,
-        "tap": 132,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 25,
+          "time": 10,
           "cost": {
-            "value": 25,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -160,15 +160,15 @@
       {
         "level": 23,
         "life": 940,
-        "attack": 123,
-        "tap": 123,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 24,
+          "time": 10,
           "cost": {
-            "value": 24,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -180,15 +180,15 @@
       {
         "level": 22,
         "life": 859,
-        "attack": 115,
-        "tap": 115,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 23,
+          "time": 10,
           "cost": {
-            "value": 23,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -200,15 +200,15 @@
       {
         "level": 21,
         "life": 783,
-        "attack": 107,
-        "tap": 107,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 22,
+          "time": 10,
           "cost": {
-            "value": 22,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -220,15 +220,15 @@
       {
         "level": 20,
         "life": 712,
-        "attack": 99,
-        "tap": 99,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 21,
+          "time": 10,
           "cost": {
-            "value": 21,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -240,15 +240,15 @@
       {
         "level": 19,
         "life": 645,
-        "attack": 91,
-        "tap": 91,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 20,
+          "time": 10,
           "cost": {
-            "value": 20,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -260,15 +260,15 @@
       {
         "level": 18,
         "life": 582,
-        "attack": 84,
-        "tap": 84,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 19,
+          "time": 10,
           "cost": {
-            "value": 19,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -280,15 +280,15 @@
       {
         "level": 17,
         "life": 524,
-        "attack": 77,
-        "tap": 77,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 18,
+          "time": 10,
           "cost": {
-            "value": 18,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -300,15 +300,15 @@
       {
         "level": 16,
         "life": 469,
-        "attack": 70,
-        "tap": 70,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 17,
+          "time": 10,
           "cost": {
-            "value": 17,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -320,15 +320,15 @@
       {
         "level": 15,
         "life": 419,
-        "attack": 64,
-        "tap": 64,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 16,
+          "time": 10,
           "cost": {
-            "value": 16,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -340,15 +340,15 @@
       {
         "level": 14,
         "life": 372,
-        "attack": 57,
-        "tap": 57,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 15,
+          "time": 10,
           "cost": {
-            "value": 15,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -360,15 +360,15 @@
       {
         "level": 13,
         "life": 329,
-        "attack": 51,
-        "tap": 51,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 14,
+          "time": 10,
           "cost": {
-            "value": 14,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -380,15 +380,15 @@
       {
         "level": 12,
         "life": 289,
-        "attack": 46,
-        "tap": 46,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 13,
+          "time": 10,
           "cost": {
-            "value": 13,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -400,15 +400,15 @@
       {
         "level": 11,
         "life": 252,
-        "attack": 38,
-        "tap": 38,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 12,
+          "time": 10,
           "cost": {
-            "value": 12,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -420,15 +420,15 @@
       {
         "level": 10,
         "life": 219,
-        "attack": 30,
-        "tap": 30,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
         "resurge": {
-          "time": 11,
+          "time": 10,
           "cost": {
-            "value": 11,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -440,8 +440,8 @@
       {
         "level": 9,
         "life": 189,
-        "attack": 25,
-        "tap": 25,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -460,8 +460,8 @@
       {
         "level": 8,
         "life": 162,
-        "attack": 20,
-        "tap": 20,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -480,8 +480,8 @@
       {
         "level": 7,
         "life": 137,
-        "attack": 15,
-        "tap": 15,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -500,8 +500,8 @@
       {
         "level": 6,
         "life": 115,
-        "attack": 12,
-        "tap": 12,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -520,8 +520,8 @@
       {
         "level": 5,
         "life": 96,
-        "attack": 9,
-        "tap": 9,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -540,8 +540,8 @@
       {
         "level": 4,
         "life": 79,
-        "attack": 5,
-        "tap": 5,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -560,8 +560,8 @@
       {
         "level": 3,
         "life": 64,
-        "attack": 3,
-        "tap": 3,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -580,8 +580,8 @@
       {
         "level": 2,
         "life": 51,
-        "attack": 2,
-        "tap": 2,
+        "attack": 1,
+        "tap": 1,
         "atk_period": 1.50,
         "ctr_chance": 0.15,
         "ctr_modify": 2.50,
@@ -640,7 +640,7 @@
       {
         "level": 30,
         "life": 2179,
-        "attack": 234,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -660,7 +660,7 @@
       {
         "level": 29,
         "life": 2037,
-        "attack": 223,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -680,7 +680,7 @@
       {
         "level": 28,
         "life": 1902,
-        "attack": 212,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -700,15 +700,15 @@
       {
         "level": 27,
         "life": 1772,
-        "attack": 201,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 30,
+          "time": 10,
           "cost": {
-            "value": 30,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -720,15 +720,15 @@
       {
         "level": 26,
         "life": 1649,
-        "attack": 190,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 29,
+          "time": 10,
           "cost": {
-            "value": 29,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -740,15 +740,15 @@
       {
         "level": 25,
         "life": 1532,
-        "attack": 180,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 28,
+          "time": 10,
           "cost": {
-            "value": 28,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -760,15 +760,15 @@
       {
         "level": 24,
         "life": 1420,
-        "attack": 170,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 27,
+          "time": 10,
           "cost": {
-            "value": 27,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -780,15 +780,15 @@
       {
         "level": 23,
         "life": 1313,
-        "attack": 160,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 26,
+          "time": 10,
           "cost": {
-            "value": 26,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -800,15 +800,15 @@
       {
         "level": 22,
         "life": 1212,
-        "attack": 150,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 25,
+          "time": 10,
           "cost": {
-            "value": 25,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -820,15 +820,15 @@
       {
         "level": 21,
         "life": 1116,
-        "attack": 141,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 24,
+          "time": 10,
           "cost": {
-            "value": 24,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -840,15 +840,15 @@
       {
         "level": 20,
         "life": 1026,
-        "attack": 132,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 23,
+          "time": 10,
           "cost": {
-            "value": 23,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -860,15 +860,15 @@
       {
         "level": 19,
         "life": 940,
-        "attack": 123,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 22,
+          "time": 10,
           "cost": {
-            "value": 22,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -880,15 +880,15 @@
       {
         "level": 18,
         "life": 859,
-        "attack": 115,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 21,
+          "time": 10,
           "cost": {
-            "value": 21,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -900,15 +900,15 @@
       {
         "level": 17,
         "life": 783,
-        "attack": 107,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 20,
+          "time": 10,
           "cost": {
-            "value": 20,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -920,15 +920,15 @@
       {
         "level": 16,
         "life": 712,
-        "attack": 99,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 19,
+          "time": 10,
           "cost": {
-            "value": 19,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -940,15 +940,15 @@
       {
         "level": 15,
         "life": 645,
-        "attack": 91,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 18,
+          "time": 10,
           "cost": {
-            "value": 18,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -960,15 +960,15 @@
       {
         "level": 14,
         "life": 582,
-        "attack": 84,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 17,
+          "time": 10,
           "cost": {
-            "value": 17,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -980,15 +980,15 @@
       {
         "level": 13,
         "life": 524,
-        "attack": 77,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 16,
+          "time": 10,
           "cost": {
-            "value": 16,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1000,15 +1000,15 @@
       {
         "level": 12,
         "life": 469,
-        "attack": 70,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 15,
+          "time": 10,
           "cost": {
-            "value": 15,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1020,15 +1020,15 @@
       {
         "level": 11,
         "life": 419,
-        "attack": 64,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 14,
+          "time": 10,
           "cost": {
-            "value": 14,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1040,15 +1040,15 @@
       {
         "level": 10,
         "life": 372,
-        "attack": 57,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 13,
+          "time": 10,
           "cost": {
-            "value": 13,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1060,15 +1060,15 @@
       {
         "level": 9,
         "life": 329,
-        "attack": 51,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 12,
+          "time": 10,
           "cost": {
-            "value": 12,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1080,15 +1080,15 @@
       {
         "level": 8,
         "life": 289,
-        "attack": 46,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
         "ctr_modify": 2.25,
         "resurge": {
-          "time": 11,
+          "time": 10,
           "cost": {
-            "value": 11,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1100,7 +1100,7 @@
       {
         "level": 7,
         "life": 252,
-        "attack": 41,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1120,7 +1120,7 @@
       {
         "level": 6,
         "life": 219,
-        "attack": 36,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1140,7 +1140,7 @@
       {
         "level": 5,
         "life": 189,
-        "attack": 29,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1160,7 +1160,7 @@
       {
         "level": 4,
         "life": 162,
-        "attack": 21,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1180,7 +1180,7 @@
       {
         "level": 3,
         "life": 137,
-        "attack": 15,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1200,7 +1200,7 @@
       {
         "level": 2,
         "life": 115,
-        "attack": 10,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1220,7 +1220,7 @@
       {
         "level": 1,
         "life": 96,
-        "attack": 5,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.45,
         "ctr_chance": 0.20,
@@ -1260,15 +1260,15 @@
       {
         "level": 30,
         "life": 2809,
-        "attack": 282,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 37,
+          "time": 10,
           "cost": {
-            "value": 37,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1280,15 +1280,15 @@
       {
         "level": 29,
         "life": 2642,
-        "attack": 270,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 36,
+          "time": 10,
           "cost": {
-            "value": 36,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1300,15 +1300,15 @@
       {
         "level": 28,
         "life": 2481,
-        "attack": 258,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 35,
+          "time": 10,
           "cost": {
-            "value": 35,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1320,15 +1320,15 @@
       {
         "level": 27,
         "life": 2326,
-        "attack": 246,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 34,
+          "time": 10,
           "cost": {
-            "value": 34,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1340,15 +1340,15 @@
       {
         "level": 26,
         "life": 2179,
-        "attack": 234,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 33,
+          "time": 10,
           "cost": {
-            "value": 33,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1360,15 +1360,15 @@
       {
         "level": 25,
         "life": 2037,
-        "attack": 223,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 32,
+          "time": 10,
           "cost": {
-            "value": 32,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1380,15 +1380,15 @@
       {
         "level": 24,
         "life": 1902,
-        "attack": 212,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 31,
+          "time": 10,
           "cost": {
-            "value": 31,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1400,15 +1400,15 @@
       {
         "level": 23,
         "life": 1772,
-        "attack": 201,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 30,
+          "time": 10,
           "cost": {
-            "value": 30,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1420,15 +1420,15 @@
       {
         "level": 22,
         "life": 1649,
-        "attack": 190,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 29,
+          "time": 10,
           "cost": {
-            "value": 29,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1440,15 +1440,15 @@
       {
         "level": 21,
         "life": 1532,
-        "attack": 180,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 28,
+          "time": 10,
           "cost": {
-            "value": 28,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1460,15 +1460,15 @@
       {
         "level": 20,
         "life": 1420,
-        "attack": 170,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 27,
+          "time": 10,
           "cost": {
-            "value": 27,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1480,15 +1480,15 @@
       {
         "level": 19,
         "life": 1313,
-        "attack": 160,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 26,
+          "time": 10,
           "cost": {
-            "value": 26,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1500,15 +1500,15 @@
       {
         "level": 18,
         "life": 1212,
-        "attack": 150,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 25,
+          "time": 10,
           "cost": {
-            "value": 25,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1520,15 +1520,15 @@
       {
         "level": 17,
         "life": 1116,
-        "attack": 141,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 24,
+          "time": 10,
           "cost": {
-            "value": 24,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1540,15 +1540,15 @@
       {
         "level": 16,
         "life": 1026,
-        "attack": 132,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 23,
+          "time": 10,
           "cost": {
-            "value": 23,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1560,15 +1560,15 @@
       {
         "level": 15,
         "life": 940,
-        "attack": 123,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 22,
+          "time": 10,
           "cost": {
-            "value": 22,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1580,15 +1580,15 @@
       {
         "level": 14,
         "life": 859,
-        "attack": 115,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 21,
+          "time": 10,
           "cost": {
-            "value": 21,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1600,15 +1600,15 @@
       {
         "level": 13,
         "life": 783,
-        "attack": 107,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 20,
+          "time": 10,
           "cost": {
-            "value": 20,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1620,15 +1620,15 @@
       {
         "level": 12,
         "life": 712,
-        "attack": 99,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 19,
+          "time": 10,
           "cost": {
-            "value": 19,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1640,15 +1640,15 @@
       {
         "level": 11,
         "life": 645,
-        "attack": 91,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 18,
+          "time": 10,
           "cost": {
-            "value": 18,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1660,15 +1660,15 @@
       {
         "level": 10,
         "life": 582,
-        "attack": 84,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 17,
+          "time": 10,
           "cost": {
-            "value": 17,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1680,15 +1680,15 @@
       {
         "level": 9,
         "life": 524,
-        "attack": 77,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 16,
+          "time": 10,
           "cost": {
-            "value": 16,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1700,15 +1700,15 @@
       {
         "level": 8,
         "life": 469,
-        "attack": 65,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 15,
+          "time": 10,
           "cost": {
-            "value": 15,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1720,15 +1720,15 @@
       {
         "level": 7,
         "life": 419,
-        "attack": 58,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 14,
+          "time": 10,
           "cost": {
-            "value": 14,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1740,15 +1740,15 @@
       {
         "level": 6,
         "life": 372,
-        "attack": 42,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 13,
+          "time": 10,
           "cost": {
-            "value": 13,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1760,15 +1760,15 @@
       {
         "level": 5,
         "life": 329,
-        "attack": 36,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 12,
+          "time": 10,
           "cost": {
-            "value": 12,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1780,15 +1780,15 @@
       {
         "level": 4,
         "life": 289,
-        "attack": 29,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
         "ctr_modify": 2.00,
         "resurge": {
-          "time": 11,
+          "time": 10,
           "cost": {
-            "value": 11,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1800,7 +1800,7 @@
       {
         "level": 3,
         "life": 252,
-        "attack": 22,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1820,7 +1820,7 @@
       {
         "level": 2,
         "life": 219,
-        "attack": 16,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1840,7 +1840,7 @@
       {
         "level": 1,
         "life": 189,
-        "attack": 11,
+        "attack": 3,
         "tap": 0,
         "atk_period": 1.40,
         "ctr_chance": 0.25,
@@ -1880,15 +1880,15 @@
       {
         "level": 30,
         "life": 3549,
-        "attack": 334,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 36,
+          "time": 10,
           "cost": {
-            "value": 36,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1900,15 +1900,15 @@
       {
         "level": 29,
         "life": 3353,
-        "attack": 321,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 35,
+          "time": 10,
           "cost": {
-            "value": 35,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1920,15 +1920,15 @@
       {
         "level": 28,
         "life": 3165,
-        "attack": 308,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 34,
+          "time": 10,
           "cost": {
-            "value": 34,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1940,15 +1940,15 @@
       {
         "level": 27,
         "life": 2984,
-        "attack": 295,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 33,
+          "time": 10,
           "cost": {
-            "value": 33,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1960,15 +1960,15 @@
       {
         "level": 26,
         "life": 2809,
-        "attack": 282,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 32,
+          "time": 10,
           "cost": {
-            "value": 32,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -1980,15 +1980,15 @@
       {
         "level": 25,
         "life": 2642,
-        "attack": 270,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 31,
+          "time": 10,
           "cost": {
-            "value": 31,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2000,15 +2000,15 @@
       {
         "level": 24,
         "life": 2481,
-        "attack": 258,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 30,
+          "time": 10,
           "cost": {
-            "value": 30,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2020,15 +2020,15 @@
       {
         "level": 23,
         "life": 2326,
-        "attack": 246,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 29,
+          "time": 10,
           "cost": {
-            "value": 29,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2040,15 +2040,15 @@
       {
         "level": 22,
         "life": 2179,
-        "attack": 234,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 28,
+          "time": 10,
           "cost": {
-            "value": 28,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2060,15 +2060,15 @@
       {
         "level": 21,
         "life": 2037,
-        "attack": 223,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 27,
+          "time": 10,
           "cost": {
-            "value": 27,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2080,15 +2080,15 @@
       {
         "level": 20,
         "life": 1902,
-        "attack": 212,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 26,
+          "time": 10,
           "cost": {
-            "value": 26,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2100,15 +2100,15 @@
       {
         "level": 19,
         "life": 1772,
-        "attack": 201,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 25,
+          "time": 10,
           "cost": {
-            "value": 25,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2120,15 +2120,15 @@
       {
         "level": 18,
         "life": 1649,
-        "attack": 190,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 24,
+          "time": 10,
           "cost": {
-            "value": 24,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2140,15 +2140,15 @@
       {
         "level": 17,
         "life": 1532,
-        "attack": 180,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 23,
+          "time": 10,
           "cost": {
-            "value": 23,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2160,15 +2160,15 @@
       {
         "level": 16,
         "life": 1420,
-        "attack": 170,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 22,
+          "time": 10,
           "cost": {
-            "value": 22,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2180,15 +2180,15 @@
       {
         "level": 15,
         "life": 1313,
-        "attack": 160,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 21,
+          "time": 10,
           "cost": {
-            "value": 21,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2200,15 +2200,15 @@
       {
         "level": 14,
         "life": 1212,
-        "attack": 150,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 20,
+          "time": 10,
           "cost": {
-            "value": 20,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2220,15 +2220,15 @@
       {
         "level": 13,
         "life": 1116,
-        "attack": 141,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 19,
+          "time": 10,
           "cost": {
-            "value": 19,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2240,15 +2240,15 @@
       {
         "level": 12,
         "life": 1026,
-        "attack": 132,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 18,
+          "time": 10,
           "cost": {
-            "value": 18,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2260,15 +2260,15 @@
       {
         "level": 11,
         "life": 940,
-        "attack": 123,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 17,
+          "time": 10,
           "cost": {
-            "value": 17,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2280,15 +2280,15 @@
       {
         "level": 10,
         "life": 859,
-        "attack": 115,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 16,
+          "time": 10,
           "cost": {
-            "value": 16,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2300,15 +2300,15 @@
       {
         "level": 9,
         "life": 783,
-        "attack": 107,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 15,
+          "time": 10,
           "cost": {
-            "value": 15,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2320,15 +2320,15 @@
       {
         "level": 8,
         "life": 712,
-        "attack": 99,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 14,
+          "time": 10,
           "cost": {
-            "value": 14,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2340,15 +2340,15 @@
       {
         "level": 7,
         "life": 645,
-        "attack": 87,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 13,
+          "time": 10,
           "cost": {
-            "value": 13,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2360,15 +2360,15 @@
       {
         "level": 6,
         "life": 582,
-        "attack": 75,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 12,
+          "time": 10,
           "cost": {
-            "value": 12,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2380,15 +2380,15 @@
       {
         "level": 5,
         "life": 524,
-        "attack": 60,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
         "ctr_modify": 1.75,
         "resurge": {
-          "time": 11,
+          "time": 10,
           "cost": {
-            "value": 11,
+            "value": 10,
             "unit": "gem"
           }
         },
@@ -2400,7 +2400,7 @@
       {
         "level": 4,
         "life": 469,
-        "attack": 49,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2420,7 +2420,7 @@
       {
         "level": 3,
         "life": 419,
-        "attack": 38,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2440,7 +2440,7 @@
       {
         "level": 2,
         "life": 372,
-        "attack": 29,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2460,7 +2460,7 @@
       {
         "level": 1,
         "life": 329,
-        "attack": 20,
+        "attack": 4,
         "tap": 0,
         "atk_period": 1.35,
         "ctr_chance": 0.30,
@@ -2500,7 +2500,7 @@
       {
         "level": 30,
         "life": 4407,
-        "attack": 391,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2520,7 +2520,7 @@
       {
         "level": 29,
         "life": 4181,
-        "attack": 376,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2540,7 +2540,7 @@
       {
         "level": 28,
         "life": 3963,
-        "attack": 362,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2560,7 +2560,7 @@
       {
         "level": 27,
         "life": 3752,
-        "attack": 348,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2580,7 +2580,7 @@
       {
         "level": 26,
         "life": 3549,
-        "attack": 334,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2600,7 +2600,7 @@
       {
         "level": 25,
         "life": 3353,
-        "attack": 321,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2620,7 +2620,7 @@
       {
         "level": 24,
         "life": 3165,
-        "attack": 308,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2640,7 +2640,7 @@
       {
         "level": 23,
         "life": 2984,
-        "attack": 295,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2660,7 +2660,7 @@
       {
         "level": 22,
         "life": 2809,
-        "attack": 282,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2680,7 +2680,7 @@
       {
         "level": 21,
         "life": 2642,
-        "attack": 270,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2700,7 +2700,7 @@
       {
         "level": 20,
         "life": 2481,
-        "attack": 258,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2720,7 +2720,7 @@
       {
         "level": 19,
         "life": 2326,
-        "attack": 246,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2740,7 +2740,7 @@
       {
         "level": 18,
         "life": 2179,
-        "attack": 234,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2760,7 +2760,7 @@
       {
         "level": 17,
         "life": 2037,
-        "attack": 223,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2780,7 +2780,7 @@
       {
         "level": 16,
         "life": 1902,
-        "attack": 212,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2800,7 +2800,7 @@
       {
         "level": 15,
         "life": 1772,
-        "attack": 201,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2820,7 +2820,7 @@
       {
         "level": 14,
         "life": 1649,
-        "attack": 190,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2840,7 +2840,7 @@
       {
         "level": 13,
         "life": 1532,
-        "attack": 180,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2860,7 +2860,7 @@
       {
         "level": 12,
         "life": 1420,
-        "attack": 170,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2880,7 +2880,7 @@
       {
         "level": 11,
         "life": 1313,
-        "attack": 160,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2900,7 +2900,7 @@
       {
         "level": 10,
         "life": 1212,
-        "attack": 143,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2920,7 +2920,7 @@
       {
         "level": 9,
         "life": 1116,
-        "attack": 121,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2940,7 +2940,7 @@
       {
         "level": 8,
         "life": 1026,
-        "attack": 109,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2960,7 +2960,7 @@
       {
         "level": 7,
         "life": 940,
-        "attack": 95,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -2980,7 +2980,7 @@
       {
         "level": 6,
         "life": 859,
-        "attack": 78,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3000,7 +3000,7 @@
       {
         "level": 5,
         "life": 783,
-        "attack": 62,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3020,7 +3020,7 @@
       {
         "level": 4,
         "life": 712,
-        "attack": 49,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3040,7 +3040,7 @@
       {
         "level": 3,
         "life": 645,
-        "attack": 39,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3060,7 +3060,7 @@
       {
         "level": 2,
         "life": 582,
-        "attack": 32,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,
@@ -3080,7 +3080,7 @@
       {
         "level": 1,
         "life": 524,
-        "attack": 25,
+        "attack": 5,
         "tap": 0,
         "atk_period": 1.30,
         "ctr_chance": 0.35,

@@ -8,7 +8,7 @@
     "battleNum": 2,
     "enemyNumMin": 1,
     "enemyNumMax": 1,
-    "moneyTreeRatio": 50,
+    "moneyTreeRatio": 500,
     "offlineReward": [
       {
         "value": 1,
@@ -51,7 +51,7 @@
     "battleNum": 3,
     "enemyNumMin": 1,
     "enemyNumMax": 2,
-    "moneyTreeRatio": 100,
+    "moneyTreeRatio": 1000,
     "offlineReward": [
       {
         "value": 2,
@@ -102,7 +102,7 @@
     "battleNum": 5,
     "enemyNumMin": 2,
     "enemyNumMax": 3,
-    "moneyTreeRatio": 150,
+    "moneyTreeRatio": 1500,
     "offlineReward": [
       {
         "value": 3,
@@ -161,7 +161,7 @@
     "battleNum": 8,
     "enemyNumMin": 2,
     "enemyNumMax": 4,
-    "moneyTreeRatio": 200,
+    "moneyTreeRatio": 2000,
     "offlineReward": [
       {
         "value": 4,
@@ -228,7 +228,7 @@
     "battleNum": 10,
     "enemyNumMin": 2,
     "enemyNumMax": 5,
-    "moneyTreeRatio": 250,
+    "moneyTreeRatio": 2500,
     "offlineReward": [
       {
         "value": 5,
@@ -303,7 +303,7 @@
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 4,
-    "moneyTreeRatio": 300,
+    "moneyTreeRatio": 3000,
     "offlineReward": [
       {
         "value": 6,
@@ -370,7 +370,7 @@
     "battleNum": 10,
     "enemyNumMin": 3,
     "enemyNumMax": 5,
-    "moneyTreeRatio": 350,
+    "moneyTreeRatio": 3500,
     "offlineReward": [
       {
         "value": 7,
@@ -445,7 +445,7 @@
     "battleNum": 10,
     "enemyNumMin": 4,
     "enemyNumMax": 5,
-    "moneyTreeRatio": 400,
+    "moneyTreeRatio": 4000,
     "offlineReward": [
       {
         "value": 8,
@@ -520,7 +520,7 @@
     "battleNum": 10,
     "enemyNumMin": 5,
     "enemyNumMax": 5,
-    "moneyTreeRatio": 450,
+    "moneyTreeRatio": 4500,
     "offlineReward": [
       {
         "value": 9,
@@ -595,7 +595,7 @@
     "battleNum": 10,
     "enemyNumMin": 5,
     "enemyNumMax": 6,
-    "moneyTreeRatio": 500,
+    "moneyTreeRatio": 5000,
     "offlineReward": [
       {
         "value": 10,
@@ -678,7 +678,7 @@
     "battleNum": 10,
     "enemyNumMin": 6,
     "enemyNumMax": 6,
-    "moneyTreeRatio": 550,
+    "moneyTreeRatio": 5500,
     "offlineReward": [
       {
         "value": 11,
