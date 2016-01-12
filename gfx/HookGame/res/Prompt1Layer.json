@@ -354,6 +354,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -454,15 +456,15 @@
                       "Path": "buttonUI/sure.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 52,
-                    "Scale9Height": 27,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
                       "X": 60.0,
-                      "Y": 25.0
+                      "Y": 26.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -472,21 +474,21 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.5,
-                      "Y": 0.5
+                      "Y": 0.52
                     },
                     "PreSize": {
-                      "X": 0.4333,
-                      "Y": 0.54
+                      "X": 0.55,
+                      "Y": 0.68
                     },
-                    "LeftMargin": 34.0,
-                    "RightMargin": 34.0,
-                    "TopMargin": 11.5,
-                    "BottomMargin": 11.5,
+                    "LeftMargin": 27.0,
+                    "RightMargin": 27.0,
+                    "TopMargin": 7.0,
+                    "BottomMargin": 9.0,
                     "Tag": 330,
                     "ActionTag": 133778488,
                     "Size": {
-                      "X": 52.0,
-                      "Y": 27.0
+                      "X": 66.0,
+                      "Y": 34.0
                     },
                     "Name": "btn_text",
                     "ctype": "ImageViewObjectData"
