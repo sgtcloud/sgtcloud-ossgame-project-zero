@@ -822,7 +822,7 @@ var ShopLayerMenu = BattleMenu.extend({
                     "num": goods.num,
                     "level": 1
                 });
-                //new Popup1("友情提示","购买成功");
+                //new Popup1("友情提示1","购买成功");
             } else {
                 new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
                     /*layer.removeFromParent();
