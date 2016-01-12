@@ -5,8 +5,7 @@ var res_datas = {
     equips_json: "res/data/equips.json",
     skills_json: "res/data/skills.json",
     goods_json: "res/data/goods.json",
-    players_json: "res/data/players.json",
-    constant_json: "res/data/constant.json"
+    players_json: "res/data/players.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
