@@ -80,27 +80,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="text_yellow" ActionTag="1268658917" Tag="647" IconVisible="False" LeftMargin="56.4294" RightMargin="23.5706" TopMargin="14.4414" BottomMargin="54.5586" CharWidth="12" CharHeight="11" LabelText="56478" StartChar="0" ctype="TextAtlasObjectData">
+                  <AbstractNodeData Name="text_yellow" ActionTag="1268658917" Tag="647" IconVisible="False" LeftMargin="56.4294" RightMargin="23.5706" TopMargin="21.4413" BottomMargin="47.5587" CharWidth="12" CharHeight="11" LabelText="56478" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="60.0000" Y="11.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="86.4294" Y="60.0586" />
+                    <Position X="86.4294" Y="53.0587" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6174" Y="0.7507" />
+                    <PrePosition X="0.6174" Y="0.6632" />
                     <PreSize X="0.4286" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="up_text" ActionTag="423381127" Tag="644" IconVisible="False" LeftMargin="37.0000" RightMargin="37.0000" TopMargin="23.0000" BottomMargin="23.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="up_text" ActionTag="423381127" Tag="644" IconVisible="False" LeftMargin="43.0000" RightMargin="31.0000" TopMargin="33.9999" BottomMargin="12.0001" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                     <Size X="66.0000" Y="34.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="70.0000" Y="40.0000" />
+                    <Position X="76.0000" Y="29.0001" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.5000" />
+                    <PrePosition X="0.5429" Y="0.3625" />
                     <PreSize X="0.4714" Y="0.4250" />
                     <FileData Type="Normal" Path="buttonUI/upLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="-50808868" Tag="643" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="18.0000" BottomMargin="18.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="-50808868" Tag="643" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="18.0000" BottomMargin="18.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
                     <Size X="105.0000" Y="44.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="70.0000" Y="40.0000" />
@@ -110,63 +110,23 @@
                     <PreSize X="0.7500" Y="0.5500" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_icon" ActionTag="-1118901130" Tag="642" IconVisible="False" LeftMargin="32.0392" RightMargin="92.9608" TopMargin="11.8148" BottomMargin="53.1852" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="diamond_icon" ActionTag="-1118901130" Tag="642" IconVisible="False" LeftMargin="32.0392" RightMargin="92.9608" TopMargin="18.8148" BottomMargin="46.1852" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint />
-                    <Position X="32.0392" Y="53.1852" />
+                    <Position X="32.0392" Y="46.1852" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2289" Y="0.6648" />
+                    <PrePosition X="0.2289" Y="0.5773" />
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="per" ActionTag="40813992" Tag="146" IconVisible="False" LeftMargin="111.0909" RightMargin="11.9091" TopMargin="51.6012" BottomMargin="13.3988" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
-                    <Size X="17.0000" Y="15.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="119.5909" Y="20.8988" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8542" Y="0.2612" />
-                    <PreSize X="0.1214" Y="0.1875" />
-                    <FileData Type="Normal" Path="buttonUI/percentage.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="cut" ActionTag="-1397027970" Tag="147" IconVisible="False" LeftMargin="34.0894" RightMargin="92.9106" TopMargin="52.1807" BottomMargin="14.8193" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
-                    <Size X="13.0000" Y="13.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="40.5894" Y="21.3193" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2899" Y="0.2665" />
-                    <PreSize X="0.0929" Y="0.1625" />
-                    <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="add" ActionTag="-1950331293" Tag="148" IconVisible="False" LeftMargin="33.5929" RightMargin="94.4071" TopMargin="52.6811" BottomMargin="15.3189" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
-                    <Size X="12.0000" Y="12.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="39.5929" Y="21.3189" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2828" Y="0.2665" />
-                    <PreSize X="0.0857" Y="0.1500" />
-                    <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="buffNum_text" ActionTag="-1215393975" Tag="149" IconVisible="False" LeftMargin="49.4794" RightMargin="30.5206" TopMargin="51.8805" BottomMargin="15.1195" CharWidth="12" CharHeight="13" LabelText="99556" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="60.0000" Y="13.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="79.4794" Y="21.6195" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5677" Y="0.2702" />
-                    <PreSize X="0.4286" Y="0.1625" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font15_green.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="relic_icon" ActionTag="589535493" Tag="641" IconVisible="False" LeftMargin="32.0436" RightMargin="92.9564" TopMargin="11.8951" BottomMargin="53.1049" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="relic_icon" ActionTag="589535493" Tag="641" IconVisible="False" LeftMargin="32.0436" RightMargin="92.9564" TopMargin="18.8951" BottomMargin="46.1049" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint />
-                    <Position X="32.0436" Y="53.1049" />
+                    <Position X="32.0436" Y="46.1049" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2289" Y="0.6638" />
+                    <PrePosition X="0.2289" Y="0.5763" />
                     <PreSize X="0.1071" Y="0.1875" />
                     <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
                   </AbstractNodeData>

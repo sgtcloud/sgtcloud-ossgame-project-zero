@@ -27,17 +27,19 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
-<<<<<<< HEAD
-        <ActiveDocument />
-=======
         <OpenedDocuments>
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="Star.csd" />
+          <FilePathData Path="RankView.csd" />
+          <FilePathData Path="RankLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
           <FilePathData Path="ShopView.csd" />
           <FilePathData Path="ShopTab.csd" />
-          <FilePathData Path="HeroView.csd" />
-          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="Skillicon.csd" />
+          <FilePathData Path="EquipView.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="ShopView.csd" />
->>>>>>> origin/master
+        <ActiveDocument Path="RankView.csd" />
       </Value>
     </Item>
   </Properties>
