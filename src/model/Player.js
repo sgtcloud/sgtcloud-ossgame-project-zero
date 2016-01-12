@@ -62,6 +62,15 @@ var PlayerData = {
                 player.heroes[i].life = this.heroesData[i].getLife();
             }
         }
+        if (!save) {
+            var consts = BattleConsts.Parameters;
+            player.gem = consts.getInitGemNum();
+            player.gold = consts.getInitGoldNum();
+            player.key = consts.getInitKeyNum()
+            player.relic = consts.getInitRelicNum();
+            player.vip = consts.getInitVipLevel();
+            player.stage = consts.getInitStageId();
+        }
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
@@ -144,13 +153,13 @@ var PlayerData = {
     countOfflineTime: function () {
         var intoBattleTime = this.getIntoBattleTime();
         if (intoBattleTime > 0) {
-            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
-
-            if (offlineTime > 1) {
-                if (offlineTime > (60 * 24)) {
-                    offlineTime = 60 * 24;
+            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / 1000;
+            var consts = BattleConsts.Parameters;
+            if (offlineTime > consts.getOfflineRewardMinTime()) {
+                if (offlineTime > consts.getOfflineRewardMaxTime()) {
+                    offlineTime = consts.getOfflineRewardMaxTime();
                 }
-                return offlineTime;
+                return offlineTime/60;
             }
         }
         return 0;

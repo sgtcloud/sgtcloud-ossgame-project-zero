@@ -1,0 +1,13 @@
+{
+  "init_gold_num": 10000,
+  "init_gem_num": 100,
+  "init_relic_num": 100,
+  "init_key_num": 100,
+  "init_vip_level": 1,
+  "init_stage_id": "s100001",
+  "init_hero_id": "h101",
+  "daily_bonus_gem_num": 20,
+  "offline_reward_min_time": 60,
+  "offline_reward_max_time": 86400,
+  "money_tree_one_price": 5
+}
