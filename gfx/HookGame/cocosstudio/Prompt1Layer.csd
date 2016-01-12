@@ -71,7 +71,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1266385902" Tag="329" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0056" BottomMargin="25.9944" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1266385902" Tag="329" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0056" BottomMargin="25.9944" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -89,14 +89,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_text" ActionTag="133778488" Tag="330" IconVisible="False" LeftMargin="27.0000" RightMargin="27.0000" TopMargin="7.0000" BottomMargin="9.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
-                    <Size X="66.0000" Y="34.0000" />
+                  <AbstractNodeData Name="btn_text" ActionTag="133778488" Tag="330" IconVisible="False" LeftMargin="34.0000" RightMargin="34.0000" TopMargin="11.5000" BottomMargin="11.5000" Scale9Width="52" Scale9Height="27" ctype="ImageViewObjectData">
+                    <Size X="52.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="60.0000" Y="26.0000" />
+                    <Position X="60.0000" Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.5200" />
-                    <PreSize X="0.5500" Y="0.6800" />
+                    <PrePosition X="0.5000" Y="0.5000" />
+                    <PreSize X="0.4333" Y="0.5400" />
                     <FileData Type="Normal" Path="buttonUI/sure.png" Plist="" />
                   </AbstractNodeData>
                 </Children>

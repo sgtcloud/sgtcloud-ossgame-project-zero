@@ -90,24 +90,24 @@
                     <PreSize X="0.4286" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="up_text" ActionTag="423381127" Tag="644" IconVisible="False" LeftMargin="37.0000" RightMargin="37.0000" TopMargin="23.0000" BottomMargin="23.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
-                    <Size X="66.0000" Y="34.0000" />
+                  <AbstractNodeData Name="up_text" ActionTag="423381127" Tag="644" IconVisible="False" LeftMargin="49.9419" RightMargin="37.0581" TopMargin="26.7569" BottomMargin="28.2431" Scale9Width="53" Scale9Height="25" ctype="ImageViewObjectData">
+                    <Size X="53.0000" Y="25.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="70.0000" Y="40.0000" />
+                    <Position X="76.4419" Y="40.7431" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.5000" />
-                    <PreSize X="0.4714" Y="0.4250" />
+                    <PrePosition X="0.5460" Y="0.5093" />
+                    <PreSize X="0.3786" Y="0.3125" />
                     <FileData Type="Normal" Path="buttonUI/upLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="-50808868" Tag="643" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="18.0000" BottomMargin="18.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
-                    <Size X="105.0000" Y="44.0000" />
+                  <AbstractNodeData Name="upMax_text" ActionTag="-50808868" Tag="643" IconVisible="False" LeftMargin="34.2545" RightMargin="28.7455" TopMargin="26.8303" BottomMargin="26.1697" Scale9Width="77" Scale9Height="27" ctype="ImageViewObjectData">
+                    <Size X="77.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="70.0000" Y="40.0000" />
+                    <Position X="72.7545" Y="39.6697" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.5000" />
-                    <PreSize X="0.7500" Y="0.5500" />
+                    <PrePosition X="0.5197" Y="0.4959" />
+                    <PreSize X="0.5500" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="diamond_icon" ActionTag="-1118901130" Tag="642" IconVisible="False" LeftMargin="32.0392" RightMargin="92.9608" TopMargin="11.8148" BottomMargin="53.1852" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
