@@ -143,7 +143,21 @@ var SkillListMenu = BattleMenu.extend({
         this.scheduleUpdate();
     }
 });
-
+function buildDesc(effects,desc){
+    var effectsObj = {};
+    for (var i in effects) {
+        console.log(effects[i]['type'])
+        var map = SkillEffectMappings[effects[i]['type']];
+        var alas = map['name'];
+        // var obj= effectsObj[effects[i]['name']]={};
+        var value = effects[i]['value'];
+        effectsObj[effects[i]['name']] = {}
+        effectsObj[effects[i]['name']]['name'] = alas;
+        effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
+    }
+    var desc = desc.mapping(effectsObj)
+    return desc;
+}
 
 var HeroListMenu = BattleMenu.extend({
         ctor: function (battle) {
@@ -294,7 +308,7 @@ var HeroListMenu = BattleMenu.extend({
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
                 setFont([heroName_text, lv, buff_text]);
-                if (hero.getLife() > 0) {
+                if (hero.getCurrentLife() > 0) {
                     die_text.setVisible(false);
                     die_time_text.setVisible(false);
                     revive_text.setVisible(false);
@@ -481,19 +495,9 @@ var HeroListMenu = BattleMenu.extend({
             //根据模板生成技能效果描述
             function buildSkillDesc(skill, levelData) {
                 var effects = skill.traverseSkillEffects();
-                var effectsObj = {};
-                for (var i in effects) {
-                    var map = SkillEffectMappings[effects[i]['type']];
-                    var alas = map['name'];
-                    // var obj= effectsObj[effects[i]['name']]={};
-                    var value = effects[i]['value'];
-                    effectsObj[effects[i]['name']] = {}
-                    effectsObj[effects[i]['name']]['name'] = alas;
-                    effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
-                }
-                var desc = skill.getDesc().mapping(effectsObj)
-                return desc;
+                return buildDesc(effects,skill.getDesc());
             }
+
 
             function canUnlockSkill(hero, skill) {
                 var heroLv = hero.getLv();
@@ -664,7 +668,7 @@ var EquipListMenu = BattleMenu.extend({
         this._super(battle, res.equip_layer_json);
 
         this.heroList = this.root.getChildByName('equip_list');
-
+        this.playerEquip=this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
 
@@ -673,32 +677,33 @@ var EquipListMenu = BattleMenu.extend({
             var icon = root.getChildByName('hero_icon');
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
-            var dps = root.getChildByName('dps_text');
+            var dps_text = root.getChildByName('dps_text');
             //var tap = root.getChildByName('tatk_text');
-
+            icon.loadTexture("res/icon/heroes/" + hero.getIcon());
+            dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
             lv.setString(hero.getLv());
-            dps.setString(hero.getAttack());
+            dps_text.ignoreContentAdaptWithSize(true);
             //tap.setString(hero.getHit());
 
             return root;
         }
 
-        function buildEquipView(equip) {
+        function buildEquipView(equip,hero) {
             var root = equipView.clone();
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
             var desc = root.getChildByName('equipBuffDecs_text');
             var lv = root.getChildByName('equipLevel_text');
-
+            icon.loadTexture("res/icon/equips/" + equip.getIcon());
             name.setString(equip.getName());
-            desc.setString(equip.getDesc());
+            //desc.setString(buildDesc(equip.traverseEquipEffects(),equip.getDesc()));
             lv.setString(equip.getLv());
 
             return root;
         }
 
-        this.views = {};
+        //this.views = {};
         {
 
             for (var i = 0; i < player.heroes.length; i++) {
@@ -706,12 +711,12 @@ var EquipListMenu = BattleMenu.extend({
                 var _heroView = buildHeroView(heroData);
                 this.heroList.addChild(_heroView);
 
-                this.views.heros = this.views.heros || [];
-                this.views.heros[i] = _heroView;
+                //this.views.heros = this.views.heros || [];
+                //this.views.heros[i] = _heroView;
 
                 for (var j = 0; j < heroData.getEquipCount(); j++) {
                     var equipData = heroData.getEquipData(j);
-                    var _equipView = buildEquipView(equipData);
+                    var _equipView = buildEquipView(equipData,heroData);
                     this.heroList.addChild(_equipView);
 
                     _heroView.equips = _heroView.equips || [];
