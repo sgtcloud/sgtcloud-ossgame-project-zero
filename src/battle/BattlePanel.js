@@ -195,7 +195,7 @@ var BattlePanel = cc.Node.extend({
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 7; i++) {
             this.enemyPos[i] = this.spritesLayer.getChildByName('enemy' + (i + 1));
         }
 
