@@ -12,7 +12,7 @@ var res = {
 
     menu_layer_json: "res/MenuLayer.json",
     battle_layer_json: "res/BattleLayer.json",
-    equip_layer_json: "res/EquipLayer.json",
+    equip_layer_json: "res/Equiplayer.json",
 
     title_layer_json: "res/TitleLayer.json",
     enemy_list_json: "res/EnemyList.json",
