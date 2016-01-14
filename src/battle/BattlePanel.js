@@ -118,16 +118,18 @@ var BattlePanel = cc.Node.extend({
                     offlineRewardLayerText.setString(rewards[key]);
                 }
             }
+            var gamePopup = new GamePopup(offlineRewardLayer);
             bindButtonCallback(offlineRewardLayerBtn, function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
+                gamePopup.hidden();
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(offlineRewardLayer, 1000);
+            popup(gamePopup, 1000);
+            gamePopup.popup();
         };
-
         bindButtonCallback(this.rewardBtn, function () {
             self.openPopup();
         });
@@ -162,6 +164,8 @@ var BattlePanel = cc.Node.extend({
                     if (cc.rectContainsPoint(rect, locationInNode)) {
                         //cc.log(locationInNode.x + " " + locationInNode.y);
                         self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
+                        if(!self.FairyUnit || !self.FairyUnit.isRunning())
+                            self.showFairyAndChest();
                         return true;
                     }
                     return false;

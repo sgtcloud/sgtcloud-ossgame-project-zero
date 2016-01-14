@@ -45,13 +45,43 @@ function removeCCSAnimationDefaultTween(timelines) {
 
 function popup(popupMenu, localZOrder) {
     if (cc.director.getRunningScene()) {
-        if (!cc.director.getRunningScene().getChildByName(popupMenu.getName())) {
-            cc.director.getRunningScene().addChild(popupMenu, localZOrder);
-        }
+        cc.director.getRunningScene().addChild(popupMenu, localZOrder);
     }
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function setFont(target) {
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setFontName("微软雅黑");
+            target[i].setColor(cc.color(0, 0, 0))
+        }
+    }
+    else {
+        target.setFontName("微软雅黑");
+        target.setColor(cc.color(0, 0, 0))
+    }
+}
+
+function setColor(target) {
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setColor(cc.color(0, 0, 0))
+        }
+    }
+    else {
+        target.setColor(cc.color(0, 0, 0))
+    }
+}
+
+
+function setIgnoreContentAdaptWithSize(target){
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].ignoreContentAdaptWithSize(true);
+        }
+    }
+    else {
+        target.ignoreContentAdaptWithSize(true);
+    }
 }
 
