@@ -89,12 +89,12 @@ var Skill = function (id, lv, heroId) {
      * @returns [{type:'技能type','value':111,'index':'排列位置'}]
      */
     this.traverseSkillEffects = function (lv) {
-        var skill = this.getLevelData(lv);
+        var levelData = this.getLevelData(lv);
         var effects = [];
-        for (var key in skill) {
+        for (var key in levelData) {
             //狗日的微信浏览器中没有startsWith
             if (key.indexOf("effect") == 0) {
-                var effect = skill[key];
+                var effect = levelData[key];
                 effects.push(effect);
                 effect['name'] = key;
                 effect.index = parseInt(key.replace("effect", ""));
@@ -104,9 +104,4 @@ var Skill = function (id, lv, heroId) {
             return a.index - b.index;
         });
     }
-};
-
-var ACTIVE_SKILL_TYPE = {
-    SINGLE_TARGET_DAMAGE_ONCE: "SINGLE_TARGET_DAMAGE_ONCE",
-    SINGLE_TARGET_DAMAGE_MULTI: "SINGLE_TARGET_DAMAGE_MULTI",
-};
+}
