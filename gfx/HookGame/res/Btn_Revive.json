@@ -1,0 +1,283 @@
+{
+  "ID": "1e3cea64-f0d9-48ed-bb49-c9d7c9fc876d",
+  "Version": "2.3.3.0",
+  "Name": "Btn_Revive",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 74,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 241,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 242,
+                "ActionTag": -608824153,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 35.1188,
+                  "Y": 26.6033
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2508,
+                  "Y": 0.3325
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 27.6188,
+                "RightMargin": 97.3812,
+                "TopMargin": 45.8967,
+                "BottomMargin": 19.1033,
+                "Tag": 250,
+                "ActionTag": -1992046048,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "diamond",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 11,
+                "LabelText": "999999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 82.7176,
+                  "Y": 26.1018
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5908,
+                  "Y": 0.3263
+                },
+                "PreSize": {
+                  "X": 0.5143,
+                  "Y": 0.1375
+                },
+                "LeftMargin": 46.7176,
+                "RightMargin": 21.2824,
+                "TopMargin": 48.3982,
+                "BottomMargin": 20.6018,
+                "Tag": 252,
+                "ActionTag": -979088261,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 11.0
+                },
+                "Name": "diamond_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/revive.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 66,
+                "Scale9Height": 34,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 78.2324,
+                  "Y": 50.3764
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5588,
+                  "Y": 0.6297
+                },
+                "PreSize": {
+                  "X": 0.3714,
+                  "Y": 0.3375
+                },
+                "LeftMargin": 52.2324,
+                "RightMargin": 35.7676,
+                "TopMargin": 16.1236,
+                "BottomMargin": 36.8764,
+                "CallBackType": "Touch",
+                "Tag": 254,
+                "ActionTag": 1356611884,
+                "Size": {
+                  "X": 52.0,
+                  "Y": 27.0
+                },
+                "Name": "revive_text",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -679508907,
+            "Size": {
+              "X": 140.0,
+              "Y": 80.0
+            },
+            "Name": "btn",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 80.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "buttonUI/font16_yellow.png",
+        "buttonUI/revive.png",
+        "heroUI/btn1.png",
+        "heroUI/btn2.png",
+        "heroUI/diamond.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
