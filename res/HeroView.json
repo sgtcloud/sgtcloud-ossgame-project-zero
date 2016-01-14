@@ -132,8 +132,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 22,
                 "LabelText": "英雄名字六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -165,25 +167,27 @@
                   "Y": 0.6818
                 },
                 "PreSize": {
-                  "X": 0.2115,
+                  "X": 0.2564,
                   "Y": 0.2
                 },
                 "LeftMargin": 120.0,
-                "RightMargin": 372.0,
+                "RightMargin": 344.0,
                 "TopMargin": 12.9999,
                 "BottomMargin": 75.0001,
                 "Tag": 219,
                 "ActionTag": 1328202900,
                 "Size": {
-                  "X": 132.0,
+                  "X": 160.0,
                   "Y": 22.0
                 },
                 "Name": "heroName_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "Lv.9999/9999",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -215,17 +219,17 @@
                   "Y": 0.4545
                 },
                 "PreSize": {
-                  "X": 0.1731,
+                  "X": 0.2564,
                   "Y": 0.1636
                 },
                 "LeftMargin": 120.0003,
-                "RightMargin": 395.9997,
+                "RightMargin": 343.9997,
                 "TopMargin": 42.0,
                 "BottomMargin": 50.0,
                 "Tag": 220,
                 "ActionTag": -1831681872,
                 "Size": {
-                  "X": 108.0,
+                  "X": 160.0,
                   "Y": 18.0
                 },
                 "Name": "level_text",
@@ -420,8 +424,8 @@
                   "Path": "heroUI/reviveTime.png",
                   "Plist": ""
                 },
-                "Scale9Width": 74,
-                "Scale9Height": 19,
+                "Scale9Width": 78,
+                "Scale9Height": 31,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -441,18 +445,19 @@
                   "Y": 0.5935
                 },
                 "PreSize": {
-                  "X": 0.1186,
-                  "Y": 0.1727
+                  "X": 0.125,
+                  "Y": 0.2818
                 },
-                "LeftMargin": 22.8493,
-                "RightMargin": 527.1507,
-                "TopMargin": 35.2096,
-                "BottomMargin": 55.7904,
+                "LeftMargin": 20.8493,
+                "RightMargin": 525.1507,
+                "TopMargin": 29.2096,
+                "BottomMargin": 49.7904,
+                "CallBackType": "Click",
                 "Tag": 1060,
                 "ActionTag": -956947662,
                 "Size": {
-                  "X": 74.0,
-                  "Y": 19.0
+                  "X": 78.0,
+                  "Y": 31.0
                 },
                 "Name": "die_text",
                 "ctype": "ImageViewObjectData"
@@ -614,7 +619,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 12,
-                    "LabelText": "英雄DPS",
+                    "LabelText": "生命值",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -648,17 +653,17 @@
                     },
                     "PreSize": {
                       "X": 0.7143,
-                      "Y": 0.175
+                      "Y": 0.225
                     },
                     "LeftMargin": 22.0484,
                     "RightMargin": 17.9516,
-                    "TopMargin": 31.3437,
-                    "BottomMargin": 34.6563,
+                    "TopMargin": 29.3437,
+                    "BottomMargin": 32.6563,
                     "Tag": 130,
                     "ActionTag": 1375437089,
                     "Size": {
                       "X": 100.0,
-                      "Y": 14.0
+                      "Y": 18.0
                     },
                     "Name": "buff_text",
                     "ctype": "TextObjectData"
@@ -1028,15 +1033,15 @@
                       "Path": "buttonUI/MaxLevel.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 77,
-                    "Scale9Height": 27,
+                    "Scale9Width": 105,
+                    "Scale9Height": 44,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.7582,
-                      "Y": 40.3042
+                      "X": 70.0,
+                      "Y": 41.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1045,23 +1050,23 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5411,
-                      "Y": 0.5038
+                      "X": 0.5,
+                      "Y": 0.5125
                     },
                     "PreSize": {
-                      "X": 0.55,
-                      "Y": 0.3375
+                      "X": 0.75,
+                      "Y": 0.55
                     },
-                    "LeftMargin": 37.2582,
-                    "RightMargin": 25.7418,
-                    "TopMargin": 26.1958,
-                    "BottomMargin": 26.8042,
+                    "LeftMargin": 17.5,
+                    "RightMargin": 17.5,
+                    "TopMargin": 17.0,
+                    "BottomMargin": 19.0,
                     "CallBackType": "Touch",
                     "Tag": 941,
                     "ActionTag": -410358020,
                     "Size": {
-                      "X": 77.0,
-                      "Y": 27.0
+                      "X": 105.0,
+                      "Y": 44.0
                     },
                     "Name": "upMax_text",
                     "ctype": "ImageViewObjectData"
@@ -1072,8 +1077,8 @@
                       "Path": "buttonUI/revive.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 52,
-                    "Scale9Height": 27,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5

@@ -25,10 +25,9 @@ var player = {
             "skills": {
                 //"技能ID":{"leve":""}
             },
-            "equips": [
-                1,
-                1
-            ]
+            "equips": {
+                //"装备ID":{}
+            }
         },
         {
             "id": "h102",
@@ -39,11 +38,47 @@ var player = {
          1,
          1
          ]*/,
-            "equips": [
-                1,
-                1
-            ]
-        }
+            "equips": {}
+        }, {
+            "id": "h103",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills": {
+                //"技能ID":{"leve":""}
+            },
+            "equips": {}
+        }, {
+            "id": "h104",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills": {
+                //"技能ID":{"leve":""}
+            },
+            "equips": {}
+        }, {
+            "id": "h105",
+            "lv": 1,
+            "life": 0,
+            "star": 0,
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills": {
+                //"技能ID":{"leve":""}
+            },
+            "equips": {}
+        },
     ]
 };
 var PlayerData = {

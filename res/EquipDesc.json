@@ -776,6 +776,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -921,8 +923,8 @@
                       "Path": "buttonUI/recast.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 53,
-                    "Scale9Height": 25,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -942,18 +944,18 @@
                       "Y": 0.3724
                     },
                     "PreSize": {
-                      "X": 0.3786,
-                      "Y": 0.3125
+                      "X": 0.4714,
+                      "Y": 0.425
                     },
-                    "LeftMargin": 48.6386,
-                    "RightMargin": 38.3614,
-                    "TopMargin": 37.7061,
-                    "BottomMargin": 17.2939,
+                    "LeftMargin": 42.1386,
+                    "RightMargin": 31.8614,
+                    "TopMargin": 33.2061,
+                    "BottomMargin": 12.7939,
                     "Tag": 680,
                     "ActionTag": 989849113,
                     "Size": {
-                      "X": 53.0,
-                      "Y": 25.0
+                      "X": 66.0,
+                      "Y": 34.0
                     },
                     "Name": "re_text",
                     "ctype": "ImageViewObjectData"

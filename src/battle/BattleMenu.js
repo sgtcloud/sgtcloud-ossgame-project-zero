@@ -146,10 +146,8 @@ var SkillListMenu = BattleMenu.extend({
 function buildDesc(effects,desc){
     var effectsObj = {};
     for (var i in effects) {
-        console.log(effects[i]['type'])
         var map = SkillEffectMappings[effects[i]['type']];
         var alas = map['name'];
-        // var obj= effectsObj[effects[i]['name']]={};
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
         effectsObj[effects[i]['name']]['name'] = alas;
