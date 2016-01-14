@@ -141,7 +141,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="level_text" ActionTag="196087947" Tag="132" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="level_text" Visible="False" ActionTag="196087947" Tag="132" IconVisible="False" LeftMargin="48.3277" RightMargin="35.6723" TopMargin="10.3697" BottomMargin="53.6303" FontSize="16" LabelText="Lv.9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="56.0000" Y="16.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.3277" Y="61.6303" />
@@ -152,7 +152,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="lock" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="lock" Visible="False" ActionTag="2147195767" Tag="133" IconVisible="False" LeftMargin="62.3404" RightMargin="48.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                     <Size X="29.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.8404" Y="31.0503" />
@@ -172,7 +172,7 @@
                     <PreSize X="0.4286" Y="0.1625" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font15_green.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="add" ActionTag="152769671" Tag="737" IconVisible="False" LeftMargin="34.0679" RightMargin="93.9321" TopMargin="54.3724" BottomMargin="13.6276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="add" Visible="False" ActionTag="152769671" Tag="737" IconVisible="False" LeftMargin="34.0679" RightMargin="93.9321" TopMargin="54.3724" BottomMargin="13.6276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
                     <Size X="12.0000" Y="12.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="40.0679" Y="19.6276" />
@@ -182,7 +182,7 @@
                     <PreSize X="0.0857" Y="0.1500" />
                     <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="cut" ActionTag="1166155986" Tag="736" IconVisible="False" LeftMargin="34.5678" RightMargin="92.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="cut" Visible="False" ActionTag="1166155986" Tag="736" IconVisible="False" LeftMargin="34.5678" RightMargin="92.4322" TopMargin="53.8724" BottomMargin="13.1276" Scale9Width="13" Scale9Height="13" ctype="ImageViewObjectData">
                     <Size X="13.0000" Y="13.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="41.0678" Y="19.6276" />
@@ -192,7 +192,7 @@
                     <PreSize X="0.0929" Y="0.1625" />
                     <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond" ActionTag="416765003" Tag="134" IconVisible="False" LeftMargin="27.6188" RightMargin="97.3812" TopMargin="44.8967" BottomMargin="20.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="diamond" Visible="False" ActionTag="416765003" Tag="134" IconVisible="False" LeftMargin="27.6188" RightMargin="97.3812" TopMargin="44.8967" BottomMargin="20.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="15.0000" Y="15.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="35.1188" Y="27.6033" />
@@ -212,7 +212,7 @@
                     <PreSize X="0.5143" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_text" ActionTag="553984720" Tag="940" IconVisible="False" LeftMargin="46.7176" RightMargin="21.2824" TopMargin="47.3982" BottomMargin="21.6018" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
+                  <AbstractNodeData Name="diamond_text" Visible="False" ActionTag="553984720" Tag="940" IconVisible="False" LeftMargin="46.7176" RightMargin="21.2824" TopMargin="47.3982" BottomMargin="21.6018" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="72.0000" Y="11.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="82.7176" Y="27.1018" />
@@ -222,7 +222,7 @@
                     <PreSize X="0.5143" Y="0.1375" />
                     <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="upMax_text" ActionTag="-410358020" CallBackType="Touch" Tag="941" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="17.0000" BottomMargin="19.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="upMax_text" Visible="False" ActionTag="-410358020" CallBackType="Touch" Tag="941" IconVisible="False" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="17.0000" BottomMargin="19.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
                     <Size X="105.0000" Y="44.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="70.0000" Y="41.0000" />
@@ -232,7 +232,7 @@
                     <PreSize X="0.7500" Y="0.5500" />
                     <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="revive_text" ActionTag="-2018695444" CallBackType="Touch" Tag="942" IconVisible="False" LeftMargin="52.2324" RightMargin="35.7676" TopMargin="16.1236" BottomMargin="36.8764" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="revive_text" Visible="False" ActionTag="-2018695444" CallBackType="Touch" Tag="942" IconVisible="False" LeftMargin="52.2324" RightMargin="35.7676" TopMargin="16.1236" BottomMargin="36.8764" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                     <Size X="52.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="78.2324" Y="50.3764" />
@@ -242,7 +242,7 @@
                     <PreSize X="0.3714" Y="0.3375" />
                     <FileData Type="Normal" Path="buttonUI/revive.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="per" ActionTag="382189600" Tag="42" IconVisible="False" LeftMargin="111.5697" RightMargin="11.4303" TopMargin="52.5854" BottomMargin="12.4146" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="per" Visible="False" ActionTag="382189600" Tag="42" IconVisible="False" LeftMargin="111.5697" RightMargin="11.4303" TopMargin="52.5854" BottomMargin="12.4146" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
                     <Size X="17.0000" Y="15.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="120.0697" Y="19.9146" />

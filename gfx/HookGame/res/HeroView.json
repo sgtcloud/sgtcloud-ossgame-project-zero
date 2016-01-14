@@ -619,7 +619,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 12,
-                    "LabelText": "生命值\n",
+                    "LabelText": "生命值",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -653,17 +653,17 @@
                     },
                     "PreSize": {
                       "X": 0.7143,
-                      "Y": 0.175
+                      "Y": 0.225
                     },
                     "LeftMargin": 22.0484,
                     "RightMargin": 17.9516,
-                    "TopMargin": 31.3437,
-                    "BottomMargin": 34.6563,
+                    "TopMargin": 29.3437,
+                    "BottomMargin": 32.6563,
                     "Tag": 130,
                     "ActionTag": 1375437089,
                     "Size": {
                       "X": 100.0,
-                      "Y": 14.0
+                      "Y": 18.0
                     },
                     "Name": "buff_text",
                     "ctype": "TextObjectData"

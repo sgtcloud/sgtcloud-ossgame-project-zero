@@ -2,7 +2,7 @@
   <PropertyGroup Name="chest01" Type="Node" ID="b654d981-7e19-47f4-b5ef-15f70d720fce" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="5" Speed="0.5000">
+      <Animation Duration="5" Speed="0.0833">
         <Timeline ActionTag="-1849589259" Property="Position">
           <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
             <EasingData Type="0" />
