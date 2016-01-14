@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="37" ctype="GameLayerObjectData">
         <Size X="610.0000" Y="600.0000" />
         <Children>
-          <AbstractNodeData Name="moneyTree_tab" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="moneyTree_tab" Visible="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2005624188" Tag="243" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="562" Scale9Height="552" ctype="ImageViewObjectData">
@@ -131,7 +131,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shop_tab" CanEdit="False" Visible="False" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="shop_tab" CanEdit="False" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
