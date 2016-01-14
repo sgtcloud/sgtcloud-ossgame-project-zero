@@ -58,7 +58,9 @@ var res = {
     shop_layer: "res/ShopLayer.json",
     shop_icon_layer: "res/ShopIconLayer.json",
     rank_layer_json: "res/RankLayer.json",
-    rank_view_json: "res/RankView.json"
+    rank_view_json: "res/RankView.json",
+    fairy01_json: "res/fairy01.json",
+    chest03_json: "res/chest03.json"
 };
 
 
