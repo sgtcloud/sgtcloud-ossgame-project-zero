@@ -494,7 +494,8 @@ var HeroListMenu = BattleMenu.extend({
 
             //根据模板生成技能效果描述
             function buildSkillDesc(skill, levelData) {
-                var effects = skill.traverseSkillEffects();
+                //var lv= skill.getLv()===0?1:skill.getLv();
+                var effects =skill.traverseSkillEffects();
                 return buildDesc(effects,skill.getDesc());
             }
 
@@ -592,7 +593,6 @@ var HeroListMenu = BattleMenu.extend({
                     eventData.cost = cost;
                     eventData.skillId = skill.getId();
                     var levelData = skill.getLevelData();
-                    var effects = skill.traverseSkillEffects();
                     skill.upgrade();
                     desc.setString(buildSkillDesc(skill));
                     lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
@@ -611,6 +611,7 @@ var HeroListMenu = BattleMenu.extend({
                         otherBtn.cut.isVisible() && otherBtn.cut.setVisible(false);
                         per.setVisible(false);
                     } else {
+                        var effects = skill.traverseSkillEffects();
                         var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                         var nextAmount = nextlevelData['upgrade']['value'];
                         var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
