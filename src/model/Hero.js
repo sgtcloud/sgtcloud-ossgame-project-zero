@@ -16,7 +16,6 @@ var Hero = function (heroData) {
     for (var i in data.skills) {
         var skillId = data.skills[i];
         var skill= readCache(skillId);
-        console.log(skill)
         var skillLv=(skill&&skill['level'])||0;
         skills[i] = new Skill(skillId, skillLv,id);
     }
@@ -125,12 +124,12 @@ var Hero = function (heroData) {
     };
     this.calcSkillEffect = function (propName) {
         for (var i in skills) {
-            this.calcArrayEffect(skills[i].traverseSkillEffects(lv), propName);
+            this.calcArrayEffect(skills[i].traverseSkillEffects(), propName);
         }
     }
     this.calcEquipEffect = function (propName) {
         for (var i in equips) {
-            this.calcArrayEffect(equips[i].traverseEquipEffects(lv), propName);
+            this.calcArrayEffect(equips[i].traverseEquipEffects(), propName);
         }
     }
     this.calcProp = function (propName) {
@@ -165,9 +164,6 @@ var Hero = function (heroData) {
         }
         return this.calcProp("life");
     };
-    /*this.getOriginalLife=function(){
-        return getLevelData(data, "life",this.getLv())
-    }*/
     this.getAttack = function () {
         if (this.isLocked()) {
             return 0;
