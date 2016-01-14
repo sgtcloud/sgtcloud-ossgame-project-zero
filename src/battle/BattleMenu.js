@@ -698,7 +698,7 @@ var EquipListMenu = BattleMenu.extend({
             var lv = root.getChildByName('equipLevel_text');
             icon.loadTexture("res/icon/equips/" + equip.getIcon());
             name.setString(equip.getName());
-            //desc.setString(buildDesc(equip.traverseEquipEffects(),equip.getDesc()));
+            desc.setString(buildDesc(equip.traverseEquipEffects(),equip.getDesc()));
             lv.setString(equip.getLv());
 
             return root;
