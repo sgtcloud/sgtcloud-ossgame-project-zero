@@ -387,7 +387,7 @@ var HeroListMenu = BattleMenu.extend({
                 setElement(root, hero, function (event, otherBtn) {
                     if (hero.getCurrentLife() <= 0) {
                         var resurge = hero.getResurge();
-                        PlayerData.consumeResource([resurge['cost']]);
+                        PlayerData.updateResource([resurge['cost']]);
                         PlayerData.updatePlayer();
                         console.log('请注意，英雄' + hero.getId() + '请求买活....');
                         customEventHelper.sendEvent(EVENT.HERO_REVIVE, hero);
@@ -792,7 +792,7 @@ var ShopLayerMenu = BattleMenu.extend({
         };
         this.buyGold = function (gem, gold) {
             if (player.gem >= gem) {
-                PlayerData.consumeResource([PlayerData.createResourceData("gold", gold)
+                PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
                     , PlayerData.createResourceData("gem", -gem)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
@@ -845,9 +845,10 @@ var ShopLayerMenu = BattleMenu.extend({
         }
         this.buyGoods = function (data, goods) {
             if (/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value) {
-                PlayerData.consumeResource([PlayerData.createResourceData(data.unit, -data.value)]);
+                PlayerData.updateResource([PlayerData.createResourceData(data.unit, -data.value)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
+                // wait to refact with new resource logic
                 player.packs.push({
                     "packType": "equip",
                     "relateId": goods.propId,
