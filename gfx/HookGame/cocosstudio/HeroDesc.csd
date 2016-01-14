@@ -9,37 +9,37 @@
           <AbstractNodeData Name="root" ActionTag="-533317248" Tag="309" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
-              <AbstractNodeData Name="skillList_bg" ActionTag="-1352565970" Tag="47" IconVisible="False" LeftMargin="15.0002" RightMargin="14.9998" TopMargin="325.0000" BottomMargin="15.0000" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="58" Scale9Height="58" ctype="ImageViewObjectData">
-                <Size X="610.0000" Y="620.0000" />
+              <AbstractNodeData Name="skillList_bg" ActionTag="-1352565970" Tag="47" IconVisible="False" TopMargin="340.0000" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="58" Scale9Height="58" ctype="ImageViewObjectData">
+                <Size X="640.0000" Y="620.0000" />
                 <AnchorPoint />
-                <Position X="15.0002" Y="15.0000" />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0234" Y="0.0156" />
-                <PreSize X="0.9531" Y="0.6458" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="0.6458" />
                 <FileData Type="Normal" Path="heroUI/bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill_list" CanEdit="False" ActionTag="-468997767" Tag="846" IconVisible="False" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="330.0000" BottomMargin="20.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-                <Size X="600.0000" Y="610.0000" />
+              <AbstractNodeData Name="skill_list" ActionTag="-468997767" Tag="846" IconVisible="False" LeftMargin="5.0000" RightMargin="5.0000" TopMargin="345.0000" BottomMargin="5.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+                <Size X="630.0000" Y="610.0000" />
                 <AnchorPoint />
-                <Position X="20.0000" Y="20.0000" />
+                <Position X="5.0000" Y="5.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0313" Y="0.0208" />
-                <PreSize X="0.9375" Y="0.6354" />
+                <PrePosition X="0.0078" Y="0.0052" />
+                <PreSize X="0.9844" Y="0.6354" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroDesc_bg" ActionTag="490932152" Tag="303" IconVisible="False" LeftMargin="15.2815" RightMargin="14.7185" TopMargin="45.7936" BottomMargin="634.2064" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
-                <Size X="610.0000" Y="280.0000" />
+              <AbstractNodeData Name="heroDesc_bg" ActionTag="490932152" Tag="303" IconVisible="False" LeftMargin="1.1548" RightMargin="-1.1548" TopMargin="-0.4330" BottomMargin="680.4330" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+                <Size X="640.0000" Y="280.0000" />
                 <AnchorPoint />
-                <Position X="15.2815" Y="634.2064" />
+                <Position X="1.1548" Y="680.4330" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0239" Y="0.6606" />
-                <PreSize X="0.9531" Y="0.2917" />
+                <PrePosition X="0.0018" Y="0.7088" />
+                <PreSize X="1.0000" Y="0.2917" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="-2080288716" Tag="781" IconVisible="False" LeftMargin="340.0000" RightMargin="180.0000" TopMargin="95.0000" BottomMargin="805.0000" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">

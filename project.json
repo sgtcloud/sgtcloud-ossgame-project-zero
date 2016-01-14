@@ -39,6 +39,9 @@
     "src/battle/MainScene.js",
     "src/battle/BattleMenu.js",
     "src/battle/Popup1.js",
+    "src/GamePopup.js",
+    "src/battle/ChestUnit.js",
+    "src/battle/FairyUnit.js",
     "src/apps.js"
   ]
 }

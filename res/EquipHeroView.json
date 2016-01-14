@@ -133,8 +133,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 22,
                 "LabelText": "英雄名字六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -166,25 +168,27 @@
                   "Y": 0.6818
                 },
                 "PreSize": {
-                  "X": 0.2115,
+                  "X": 0.2564,
                   "Y": 0.2
                 },
                 "LeftMargin": 120.0,
-                "RightMargin": 372.0,
+                "RightMargin": 344.0,
                 "TopMargin": 12.9999,
                 "BottomMargin": 75.0001,
                 "Tag": 842,
                 "ActionTag": 1194859943,
                 "Size": {
-                  "X": 132.0,
+                  "X": 160.0,
                   "Y": 22.0
                 },
                 "Name": "heroName_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "Lv.9999/9999",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -216,17 +220,17 @@
                   "Y": 0.4545
                 },
                 "PreSize": {
-                  "X": 0.1731,
+                  "X": 0.2564,
                   "Y": 0.1636
                 },
                 "LeftMargin": 120.0003,
-                "RightMargin": 395.9997,
+                "RightMargin": 343.9997,
                 "TopMargin": 42.0,
                 "BottomMargin": 50.0,
                 "Tag": 843,
                 "ActionTag": -557855147,
                 "Size": {
-                  "X": 108.0,
+                  "X": 160.0,
                   "Y": 18.0
                 },
                 "Name": "level_text",

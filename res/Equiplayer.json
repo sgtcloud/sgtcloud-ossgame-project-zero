@@ -316,246 +316,6 @@
                     "ctype": "TextObjectData"
                   },
                   {
-                    "FontSize": 14,
-                    "ButtonText": "",
-                    "TextColor": {
-                      "R": 65,
-                      "G": 65,
-                      "B": 70
-                    },
-                    "DisabledFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn2.png",
-                      "Plist": ""
-                    },
-                    "PressedFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "NormalFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 11,
-                    "Scale9Width": 110,
-                    "Scale9Height": 58,
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "TouchEnable": true,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 461.7385,
-                      "Y": 17.5101
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.74,
-                      "Y": 0.1592
-                    },
-                    "PreSize": {
-                      "X": 0.2244,
-                      "Y": 0.7273
-                    },
-                    "LeftMargin": 461.7385,
-                    "RightMargin": 22.2615,
-                    "TopMargin": 12.4899,
-                    "BottomMargin": 17.5101,
-                    "Tag": 659,
-                    "ActionTag": -1825689616,
-                    "Size": {
-                      "X": 140.0,
-                      "Y": 80.0
-                    },
-                    "Name": "buy_btn",
-                    "ctype": "ButtonObjectData"
-                  },
-                  {
-                    "CharWidth": 12,
-                    "CharHeight": 11,
-                    "LabelText": "56478",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/font16_yellow.png",
-                      "Plist": ""
-                    },
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 549.3885,
-                      "Y": 71.7086
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.8804,
-                      "Y": 0.6519
-                    },
-                    "PreSize": {
-                      "X": 0.0962,
-                      "Y": 0.1
-                    },
-                    "LeftMargin": 519.3885,
-                    "RightMargin": 44.6115,
-                    "TopMargin": 32.7914,
-                    "BottomMargin": 66.2086,
-                    "Tag": 666,
-                    "ActionTag": 1558433961,
-                    "Size": {
-                      "X": 60.0,
-                      "Y": 11.0
-                    },
-                    "Name": "text_yellow",
-                    "ctype": "TextAtlasObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/buy.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 53,
-                    "Scale9Height": 25,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 538.7502,
-                      "Y": 47.4844
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.8634,
-                      "Y": 0.4317
-                    },
-                    "PreSize": {
-                      "X": 0.0849,
-                      "Y": 0.2273
-                    },
-                    "LeftMargin": 512.2502,
-                    "RightMargin": 58.7498,
-                    "TopMargin": 50.0156,
-                    "BottomMargin": 34.9844,
-                    "Tag": 664,
-                    "ActionTag": 1244824290,
-                    "Size": {
-                      "X": 53.0,
-                      "Y": 25.0
-                    },
-                    "Name": "buy_text",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "heroUI/diamond.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 500.5355,
-                      "Y": 64.5089
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.8021,
-                      "Y": 0.5864
-                    },
-                    "PreSize": {
-                      "X": 0.024,
-                      "Y": 0.1364
-                    },
-                    "LeftMargin": 500.5355,
-                    "RightMargin": 108.4645,
-                    "TopMargin": 30.4911,
-                    "BottomMargin": 64.5089,
-                    "Tag": 661,
-                    "ActionTag": -1678763134,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "diamond_icon",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/relic.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 500.5405,
-                      "Y": 64.4295
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.8021,
-                      "Y": 0.5857
-                    },
-                    "PreSize": {
-                      "X": 0.024,
-                      "Y": 0.1364
-                    },
-                    "LeftMargin": 500.5405,
-                    "RightMargin": 108.4595,
-                    "TopMargin": 30.5705,
-                    "BottomMargin": 64.4295,
-                    "Tag": 660,
-                    "ActionTag": -1409250971,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "relic_icon",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
                     "FileData": {
                       "Type": "Normal",
                       "Path": "equipUI/buyHoly.png",
@@ -606,6 +366,47 @@
                 },
                 "Name": "title_root",
                 "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Btn_Buy.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 472.8423,
+                  "Y": 400.4684
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.7388,
+                  "Y": 0.8009
+                },
+                "PreSize": {
+                  "X": 0.2188,
+                  "Y": 0.16
+                },
+                "LeftMargin": 472.8423,
+                "RightMargin": 27.1577,
+                "TopMargin": 19.5316,
+                "BottomMargin": 400.4684,
+                "Tag": 807,
+                "ActionTag": 711518097,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "buy_btn",
+                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -593797273,
@@ -625,15 +426,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/buy.png",
-        "buttonUI/font16_yellow.png",
+        "Btn_Buy.json",
         "equipUI/bg.png",
-        "equipUI/btn1.png",
-        "equipUI/btn2.png",
         "equipUI/buyHoly.png",
-        "equipUI/relic.png",
         "equipUI/title_2.png",
-        "heroUI/diamond.png",
         "heroUI/text_bg.png"
       ],
       "ctype": "GameFileData"

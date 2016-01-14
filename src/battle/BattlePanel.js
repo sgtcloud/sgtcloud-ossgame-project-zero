@@ -118,16 +118,18 @@ var BattlePanel = cc.Node.extend({
                     offlineRewardLayerText.setString(rewards[key]);
                 }
             }
+            var gamePopup = new GamePopup(offlineRewardLayer);
             bindButtonCallback(offlineRewardLayerBtn, function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
+                gamePopup.hidden();
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(offlineRewardLayer, 1000);
+            popup(gamePopup, 1000);
+            gamePopup.popup();
         };
-
         bindButtonCallback(this.rewardBtn, function () {
             self.openPopup();
         });
@@ -162,6 +164,8 @@ var BattlePanel = cc.Node.extend({
                     if (cc.rectContainsPoint(rect, locationInNode)) {
                         //cc.log(locationInNode.x + " " + locationInNode.y);
                         self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
+                        if(!self.FairyUnit || !self.FairyUnit.isRunning())
+                            self.showFairyAndChest();
                         return true;
                     }
                     return false;
@@ -376,6 +380,26 @@ var BattlePanel = cc.Node.extend({
         PlayerData.updateIntoBattleTime();
     },
 
+    showFairyAndChest: function(){
+        //this.ChestUnit = new ChestUnit();
+        this.FairyUnit = new FairyUnit();
+        //this.ChestUnit.setPosition(cc.p(600,600));
+        var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
+        this.FairyUnit.setPosition(startPos);
+
+       // this.addChild(this.ChestUnit,2011);
+        this.addChild(this.FairyUnit,2010);
+
+        //this.FairyUnit.bindClickEvent();
+        //this.ChestUnit.bindClickEvent();
+
+    },
+    hidenFairyAdnChest: function(){
+        if(this.FairyUnit){
+            this.FairyUnit.removeFromParent(true);
+            //this.ChestUnit.removeFromParent(true);
+        }
+    },
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
         cc.log("dead:" + hero);
