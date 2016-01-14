@@ -32,9 +32,9 @@ var Equip = function (id, lv) {
         },
         upgrade: function (hero) {
             var price = this.getPrice();
-            if (player.gold >= price) {
+            if (PlayerData.getAmountByUnit("gold") >= price) {
                 lv += 1;
-                PlayerData.consumeResource(PlayerData.createResourceData("gold", -price));
+                PlayerData.updateResource(PlayerData.createResourceData("gold", -price));
                 game.onEquipUpdate(hero, this);
                 game.onHeroUpdate(hero);
             }

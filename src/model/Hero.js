@@ -16,7 +16,6 @@ var Hero = function (heroData) {
     for (var i in data.skills) {
         var skillId = data.skills[i];
         var skill= readCache(skillId);
-        console.log(skill)
         var skillLv=(skill&&skill['level'])||0;
         skills[i] = new Skill(skillId, skillLv,id);
     }

@@ -70,7 +70,7 @@ var Loot = cc.Node.extend({
                 //cc.pool.putInPool(this);
                 self.removeFromParent(true);
                 if (self.bonus) {
-                    PlayerData.consumeResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
+                    PlayerData.updateResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 //cc.log(player.gold);

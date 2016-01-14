@@ -374,7 +374,7 @@ var BattlePanel = cc.Node.extend({
     },
 
     onEnemyDead: function (enemy) {
-        PlayerData.consumeResource(enemy.getBonus());
+        PlayerData.updateResource(enemy.getBonus());
         //this.updatePlayerGoldText();
         //this.updateTopPanel();
     },
