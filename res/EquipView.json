@@ -132,8 +132,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "神器名字六字",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -147,8 +149,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0001,
-                  "Y": 75.0
+                  "X": 115.7146,
+                  "Y": 76.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -161,29 +163,31 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.6818
+                  "X": 0.1929,
+                  "Y": 0.6955
                 },
                 "PreSize": {
-                  "X": 0.2,
+                  "X": 0.2333,
                   "Y": 0.1818
                 },
-                "LeftMargin": 120.0001,
-                "RightMargin": 359.9999,
-                "TopMargin": 15.0,
-                "BottomMargin": 75.0,
+                "LeftMargin": 115.7146,
+                "RightMargin": 344.2854,
+                "TopMargin": 13.5001,
+                "BottomMargin": 76.4999,
                 "Tag": 44,
                 "ActionTag": -2094451360,
                 "Size": {
-                  "X": 120.0,
+                  "X": 140.0,
                   "Y": 20.0
                 },
                 "Name": "equipName_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "Lv.99/99",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -198,7 +202,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 270.0,
-                  "Y": 75.0
+                  "Y": 77.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -212,26 +216,27 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.45,
-                  "Y": 0.6818
+                  "Y": 0.7045
                 },
                 "PreSize": {
-                  "X": 0.12,
+                  "X": 0.2,
                   "Y": 0.1636
                 },
                 "LeftMargin": 270.0,
-                "RightMargin": 258.0,
-                "TopMargin": 17.0,
-                "BottomMargin": 75.0,
+                "RightMargin": 210.0,
+                "TopMargin": 14.5001,
+                "BottomMargin": 77.4999,
                 "Tag": 45,
                 "ActionTag": -188675879,
                 "Size": {
-                  "X": 72.0,
+                  "X": 120.0,
                   "Y": 18.0
                 },
                 "Name": "equipLevel_text",
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "神器效果详细描述",
                 "OutlineColor": {
@@ -247,8 +252,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0,
-                  "Y": 50.0
+                  "X": 115.7145,
+                  "Y": 11.3839
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -261,527 +266,107 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2,
-                  "Y": 0.4545
+                  "X": 0.1929,
+                  "Y": 0.1035
                 },
                 "PreSize": {
-                  "X": 0.24,
-                  "Y": 0.1636
+                  "X": 0.5333,
+                  "Y": 0.5455
                 },
-                "LeftMargin": 120.0,
-                "RightMargin": 336.0,
-                "TopMargin": 42.0,
-                "BottomMargin": 50.0,
+                "LeftMargin": 115.7145,
+                "RightMargin": 164.2855,
+                "TopMargin": 38.6161,
+                "BottomMargin": 11.3839,
                 "Tag": 46,
                 "ActionTag": -1671372399,
                 "Size": {
-                  "X": 144.0,
-                  "Y": 18.0
+                  "X": 320.0,
+                  "Y": 60.0
                 },
                 "Name": "equipBuffDecs_text",
                 "ctype": "TextObjectData"
               },
               {
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 200
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Btn_Upgrade2.json",
+                  "Plist": ""
                 },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 200
-                },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
-                },
-                "TouchEnable": true,
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 445.8333,
-                  "Y": 17.6077
+                  "X": 442.5508,
+                  "Y": 16.3511
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "CColor": {},
-                "IconVisible": false,
+                "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.7431,
-                  "Y": 0.1601
+                  "X": 0.7376,
+                  "Y": 0.1486
                 },
                 "PreSize": {
                   "X": 0.2333,
                   "Y": 0.7273
                 },
-                "LeftMargin": 445.8333,
-                "RightMargin": 14.1667,
-                "TopMargin": 12.3923,
-                "BottomMargin": 17.6077,
-                "Tag": 150,
-                "Children": [
-                  {
-                    "FontSize": 14,
-                    "ButtonText": "",
-                    "TextColor": {
-                      "R": 65,
-                      "G": 65,
-                      "B": 70
-                    },
-                    "DisabledFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn2.png",
-                      "Plist": ""
-                    },
-                    "PressedFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "NormalFileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/btn1.png",
-                      "Plist": ""
-                    },
-                    "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 11,
-                    "Scale9Width": 110,
-                    "Scale9Height": 58,
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "TouchEnable": true,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 1.0,
-                      "Y": 1.0
-                    },
-                    "Tag": 640,
-                    "ActionTag": 1763863329,
-                    "Size": {
-                      "X": 140.0,
-                      "Y": 80.0
-                    },
-                    "Name": "up_btn",
-                    "ctype": "ButtonObjectData"
-                  },
-                  {
-                    "CharWidth": 12,
-                    "CharHeight": 11,
-                    "LabelText": "56478",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/font16_yellow.png",
-                      "Plist": ""
-                    },
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 86.4294,
-                      "Y": 60.0586
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.6174,
-                      "Y": 0.7507
-                    },
-                    "PreSize": {
-                      "X": 0.4286,
-                      "Y": 0.1375
-                    },
-                    "LeftMargin": 56.4294,
-                    "RightMargin": 23.5706,
-                    "TopMargin": 14.4414,
-                    "BottomMargin": 54.5586,
-                    "Tag": 647,
-                    "ActionTag": 1268658917,
-                    "Size": {
-                      "X": 60.0,
-                      "Y": 11.0
-                    },
-                    "Name": "text_yellow",
-                    "ctype": "TextAtlasObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/upLevel.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 53,
-                    "Scale9Height": 25,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 76.4419,
-                      "Y": 40.7431
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.546,
-                      "Y": 0.5093
-                    },
-                    "PreSize": {
-                      "X": 0.3786,
-                      "Y": 0.3125
-                    },
-                    "LeftMargin": 49.9419,
-                    "RightMargin": 37.0581,
-                    "TopMargin": 26.7569,
-                    "BottomMargin": 28.2431,
-                    "Tag": 644,
-                    "ActionTag": 423381127,
-                    "Size": {
-                      "X": 53.0,
-                      "Y": 25.0
-                    },
-                    "Name": "up_text",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/MaxLevel.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 77,
-                    "Scale9Height": 27,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 72.7545,
-                      "Y": 39.6697
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5197,
-                      "Y": 0.4959
-                    },
-                    "PreSize": {
-                      "X": 0.55,
-                      "Y": 0.3375
-                    },
-                    "LeftMargin": 34.2545,
-                    "RightMargin": 28.7455,
-                    "TopMargin": 26.8303,
-                    "BottomMargin": 26.1697,
-                    "Tag": 643,
-                    "ActionTag": -50808868,
-                    "Size": {
-                      "X": 77.0,
-                      "Y": 27.0
-                    },
-                    "Name": "upMax_text",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "heroUI/diamond.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 32.0392,
-                      "Y": 53.1852
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2289,
-                      "Y": 0.6648
-                    },
-                    "PreSize": {
-                      "X": 0.1071,
-                      "Y": 0.1875
-                    },
-                    "LeftMargin": 32.0392,
-                    "RightMargin": 92.9608,
-                    "TopMargin": 11.8148,
-                    "BottomMargin": 53.1852,
-                    "Tag": 642,
-                    "ActionTag": -1118901130,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "diamond_icon",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/percentage.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 17,
-                    "Scale9Height": 15,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 119.5909,
-                      "Y": 20.8988
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.8542,
-                      "Y": 0.2612
-                    },
-                    "PreSize": {
-                      "X": 0.1214,
-                      "Y": 0.1875
-                    },
-                    "LeftMargin": 111.0909,
-                    "RightMargin": 11.9091,
-                    "TopMargin": 51.6012,
-                    "BottomMargin": 13.3988,
-                    "Tag": 146,
-                    "ActionTag": 40813992,
-                    "Size": {
-                      "X": 17.0,
-                      "Y": 15.0
-                    },
-                    "Name": "per",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/cut.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 13,
-                    "Scale9Height": 13,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 40.5894,
-                      "Y": 21.3193
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2899,
-                      "Y": 0.2665
-                    },
-                    "PreSize": {
-                      "X": 0.0929,
-                      "Y": 0.1625
-                    },
-                    "LeftMargin": 34.0894,
-                    "RightMargin": 92.9106,
-                    "TopMargin": 52.1807,
-                    "BottomMargin": 14.8193,
-                    "Tag": 147,
-                    "ActionTag": -1397027970,
-                    "Size": {
-                      "X": 13.0,
-                      "Y": 13.0
-                    },
-                    "Name": "cut",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/add.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 13,
-                    "Scale9Height": 13,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 39.5929,
-                      "Y": 21.3189
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2828,
-                      "Y": 0.2665
-                    },
-                    "PreSize": {
-                      "X": 0.0857,
-                      "Y": 0.15
-                    },
-                    "LeftMargin": 33.5929,
-                    "RightMargin": 94.4071,
-                    "TopMargin": 52.6811,
-                    "BottomMargin": 15.3189,
-                    "Tag": 148,
-                    "ActionTag": -1950331293,
-                    "Size": {
-                      "X": 12.0,
-                      "Y": 12.0
-                    },
-                    "Name": "add",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "CharWidth": 12,
-                    "CharHeight": 13,
-                    "LabelText": "99556",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/font15_green.png",
-                      "Plist": ""
-                    },
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 79.4794,
-                      "Y": 21.6195
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.5677,
-                      "Y": 0.2702
-                    },
-                    "PreSize": {
-                      "X": 0.4286,
-                      "Y": 0.1625
-                    },
-                    "LeftMargin": 49.4794,
-                    "RightMargin": 30.5206,
-                    "TopMargin": 51.8805,
-                    "BottomMargin": 15.1195,
-                    "Tag": 149,
-                    "ActionTag": -1215393975,
-                    "Size": {
-                      "X": 60.0,
-                      "Y": 13.0
-                    },
-                    "Name": "buffNum_text",
-                    "ctype": "TextAtlasObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "equipUI/relic.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 32.0436,
-                      "Y": 53.1049
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2289,
-                      "Y": 0.6638
-                    },
-                    "PreSize": {
-                      "X": 0.1071,
-                      "Y": 0.1875
-                    },
-                    "LeftMargin": 32.0436,
-                    "RightMargin": 92.9564,
-                    "TopMargin": 11.8951,
-                    "BottomMargin": 53.1049,
-                    "Tag": 641,
-                    "ActionTag": 589535493,
-                    "Size": {
-                      "X": 15.0,
-                      "Y": 15.0
-                    },
-                    "Name": "relic_icon",
-                    "ctype": "ImageViewObjectData"
-                  }
-                ],
-                "ActionTag": 195506886,
+                "LeftMargin": 442.5508,
+                "RightMargin": 17.4492,
+                "TopMargin": 13.6489,
+                "BottomMargin": 16.3511,
+                "Tag": 714,
+                "ActionTag": -936342614,
                 "Size": {
                   "X": 140.0,
                   "Y": 80.0
                 },
-                "Name": "btn",
-                "ctype": "PanelObjectData"
+                "Name": "upgrade_btn",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Btn_MaxLevel.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 442.5508,
+                  "Y": 16.351
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.7376,
+                  "Y": 0.1486
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.7273
+                },
+                "LeftMargin": 442.5508,
+                "RightMargin": 17.4492,
+                "TopMargin": 13.649,
+                "BottomMargin": 16.351,
+                "Tag": 723,
+                "ActionTag": 905642592,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "MaxLevel_btn",
+                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -810919168,
@@ -801,19 +386,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/add.png",
-        "buttonUI/cut.png",
-        "buttonUI/font15_green.png",
-        "buttonUI/font16_yellow.png",
-        "buttonUI/MaxLevel.png",
-        "buttonUI/percentage.png",
-        "buttonUI/upLevel.png",
-        "equipUI/btn1.png",
-        "equipUI/btn2.png",
+        "Btn_MaxLevel.json",
+        "Btn_Upgrade2.json",
         "equipUI/equip_bg.png",
-        "equipUI/equip_icon.png",
-        "equipUI/relic.png",
-        "heroUI/diamond.png"
+        "equipUI/equip_icon.png"
       ],
       "ctype": "GameFileData"
     }

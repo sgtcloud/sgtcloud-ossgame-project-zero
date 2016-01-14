@@ -392,12 +392,12 @@
                       "Path": "buttonUI/sure.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 52,
-                    "Scale9Height": 27,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 34.0,
-                      "Y": 11.5
+                      "X": 27.0,
+                      "Y": 9.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -406,22 +406,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2833,
-                      "Y": 0.23
+                      "X": 0.225,
+                      "Y": 0.18
                     },
                     "PreSize": {
-                      "X": 0.4333,
-                      "Y": 0.54
+                      "X": 0.55,
+                      "Y": 0.68
                     },
-                    "LeftMargin": 34.0,
-                    "RightMargin": 34.0,
-                    "TopMargin": 11.5,
-                    "BottomMargin": 11.5,
+                    "LeftMargin": 27.0,
+                    "RightMargin": 27.0,
+                    "TopMargin": 7.0,
+                    "BottomMargin": 9.0,
                     "Tag": 1061,
                     "ActionTag": -1925537890,
                     "Size": {
-                      "X": 52.0,
-                      "Y": 27.0
+                      "X": 66.0,
+                      "Y": 34.0
                     },
                     "Name": "btn_text",
                     "ctype": "ImageViewObjectData"

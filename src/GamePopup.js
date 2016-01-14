@@ -1,12 +1,12 @@
 var GamePopup = cc.Layer.extend({
     _listener: null,
-    ctor: function() {
+    ctor: function(layer) {
         this._super(cc.color.BLACK);
         this.ignoreAnchorPointForPosition(false);   //忽略锚点设置为false，默认为true，锚点(0, 0)
         this.setOpacity(128);       //透明度
 
         //初始化对话框
-        this._initDialog();
+        this._initDialog(layer);
 
         return true;
     },
@@ -28,31 +28,12 @@ var GamePopup = cc.Layer.extend({
     },
 
     //初始化对话框
-    _initDialog: function()
+    _initDialog: function(layer)
     {
         var winSize = cc.winSize;
-
         //背景
-        var bg = new cc.Sprite(res.dialog_png);
-        bg.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
-        this.addChild(bg, 0, 101);
-
-        //OK按钮
-        var OKLabel = new cc.LabelTTF("OK", "Arial", 36);
-        var OKMenuItem = new cc.MenuItemLabel(OKLabel, this._onCallback, this);
-        OKMenuItem.setPosition(cc.p(100, 50));
-
-        //Cancel按钮
-        var cancelLabel = new cc.LabelTTF("Cancel", "Arial", 36);
-        var cancelMenuItem = new cc.MenuItemLabel(cancelLabel, this._onCallback, this);
-        cancelMenuItem.setPosition(cc.p(250, 50));
-
-        //菜单
-        var menu = new cc.Menu(OKMenuItem, cancelMenuItem);
-        menu.setPosition(cc.p(0, 0));
-        bg.addChild(menu);      //注意是添加到背景里面
-
-        this.setVisible(false);     //默认设置为不可见
+        layer.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
+        this.addChild(layer,0,101);
     },
 
     _onCallback: function()
@@ -66,12 +47,12 @@ var GamePopup = cc.Layer.extend({
         this.setVisible(true);
         this._listener.setSwallowTouches(true);
 
-        var bg = this.getChildByTag(101);
+        /*var bg = this.getChildByTag(101);
         bg.setScale(0);
-        var scaleTo = new cc.ScaleTo(2.0, 1);
-        var rotateBy = new cc.RotateBy(2.0, 360, 0);
+        var scaleTo = new cc.ScaleTo(1.0, 1);
+        var rotateBy = new cc.RotateBy(1.0, 360, 0);
         var spawn = new cc.Spawn(scaleTo, rotateBy);
-        bg.runAction(spawn);
+        bg.runAction(spawn);*/
     },
 
     //隐藏
@@ -79,6 +60,7 @@ var GamePopup = cc.Layer.extend({
     {
         this.setVisible(false);
         this._listener.setSwallowTouches(false);
+        //this.onExit();
     },
 
     onExit: function()

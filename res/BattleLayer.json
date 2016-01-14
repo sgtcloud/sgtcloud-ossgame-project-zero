@@ -125,39 +125,6 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 82.9995,
-                      "Y": 499.9996
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "LeftMargin": 82.9995,
-                    "RightMargin": -82.9995,
-                    "TopMargin": -499.9996,
-                    "BottomMargin": 499.9996,
-                    "Tag": 135,
-                    "ActionTag": 75504825,
-                    "Size": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Name": "hero5",
-                    "ctype": "SingleNodeObjectData"
-                  },
-                  {
-                    "AnchorPoint": {},
-                    "Position": {
                       "X": 206.9205,
                       "Y": 519.9996
                     },
@@ -191,8 +158,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 125.9991,
-                      "Y": 425.4996
+                      "X": 82.9995,
+                      "Y": 499.9996
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -208,17 +175,17 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 125.9991,
-                    "RightMargin": -125.9991,
-                    "TopMargin": -425.4996,
-                    "BottomMargin": 425.4996,
-                    "Tag": 137,
-                    "ActionTag": -799579898,
+                    "LeftMargin": 82.9995,
+                    "RightMargin": -82.9995,
+                    "TopMargin": -499.9996,
+                    "BottomMargin": 499.9996,
+                    "Tag": 135,
+                    "ActionTag": 75504825,
                     "Size": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "Name": "hero4",
+                    "Name": "hero5",
                     "ctype": "SingleNodeObjectData"
                   },
                   {
@@ -252,6 +219,39 @@
                       "Y": 0.0
                     },
                     "Name": "hero1",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 125.9991,
+                      "Y": 425.4996
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 125.9991,
+                    "RightMargin": -125.9991,
+                    "TopMargin": -425.4996,
+                    "BottomMargin": 425.4996,
+                    "Tag": 137,
+                    "ActionTag": -799579898,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero4",
                     "ctype": "SingleNodeObjectData"
                   },
                   {
@@ -521,39 +521,6 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 415.3945,
-                      "Y": 317.8036
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "LeftMargin": 415.3945,
-                    "RightMargin": -415.3945,
-                    "TopMargin": -317.8036,
-                    "BottomMargin": 317.8036,
-                    "Tag": 147,
-                    "ActionTag": -927619036,
-                    "Size": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Name": "enemy4",
-                    "ctype": "SingleNodeObjectData"
-                  },
-                  {
-                    "AnchorPoint": {},
-                    "Position": {
                       "X": 520.1611,
                       "Y": 350.1519
                     },
@@ -582,6 +549,39 @@
                       "Y": 0.0
                     },
                     "Name": "enemy6",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 415.3945,
+                      "Y": 317.8036
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 415.3945,
+                    "RightMargin": -415.3945,
+                    "TopMargin": -317.8036,
+                    "BottomMargin": 317.8036,
+                    "Tag": 147,
+                    "ActionTag": -927619036,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy4",
                     "ctype": "SingleNodeObjectData"
                   }
                 ],
@@ -706,7 +706,7 @@
                   "Y": 0.0473
                 },
                 "LeftMargin": 73.9336,
-                "RightMargin": 531.0663,
+                "RightMargin": 531.0664,
                 "TopMargin": 17.3563,
                 "BottomMargin": 687.6437,
                 "Tag": 485,
@@ -1050,7 +1050,7 @@
                   "Y": 0.023
                 },
                 "LeftMargin": 73.4336,
-                "RightMargin": 530.5663,
+                "RightMargin": 530.5664,
                 "TopMargin": 26.3563,
                 "BottomMargin": 696.6437,
                 "Tag": 168,

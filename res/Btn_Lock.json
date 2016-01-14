@@ -1,7 +1,7 @@
 {
-  "ID": "7ac91f9e-f23f-4900-bce1-2623f6bb3e0f",
+  "ID": "486062c7-f461-4f08-afea-1400b5055ca5",
   "Version": "2.3.3.0",
-  "Name": "Skillicon",
+  "Name": "Btn_Lock",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,7 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 114,
+        "Tag": 76,
         "Children": [
           {
             "BackColorAlpha": 102,
@@ -50,7 +50,7 @@
               "X": 1.0,
               "Y": 1.0
             },
-            "Tag": 457,
+            "Tag": 211,
             "Children": [
               {
                 "FontSize": 14,
@@ -60,21 +60,26 @@
                   "G": 65,
                   "B": 70
                 },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": ""
+                },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "ui/skill_icon.png",
+                  "Path": "heroUI/btn1.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "ui/skill_icon.png",
+                  "Path": "heroUI/btn1.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 65,
-                "Scale9Height": 73,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -106,18 +111,21 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 291,
-                "ActionTag": -217219440,
+                "Tag": 212,
+                "ActionTag": -414051498,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 140.0,
+                  "Y": 80.0
                 },
-                "Name": "skill_btn",
+                "Name": "btn",
                 "ctype": "ButtonObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "99:99",
+                "IsCustomSize": true,
+                "FontSize": 16,
+                "LabelText": "Lv.9999",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -134,8 +142,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 45.5798,
-                  "Y": 47.3794
+                  "X": 76.3277,
+                  "Y": 61.6303
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -147,93 +155,41 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4798,
-                  "Y": 0.4987
+                  "X": 0.5452,
+                  "Y": 0.7704
                 },
                 "PreSize": {
-                  "X": 0.5263,
-                  "Y": 0.2105
+                  "X": 0.7143,
+                  "Y": 0.225
                 },
-                "LeftMargin": 20.5798,
-                "RightMargin": 24.4202,
-                "TopMargin": 37.6206,
-                "BottomMargin": 37.3794,
-                "Tag": 292,
-                "ActionTag": 1172101320,
+                "LeftMargin": 26.3277,
+                "RightMargin": 13.6723,
+                "TopMargin": 9.3697,
+                "BottomMargin": 52.6303,
+                "Tag": 215,
+                "ActionTag": -1596005682,
                 "Size": {
-                  "X": 50.0,
-                  "Y": 20.0
-                },
-                "Name": "CD_time_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 18,
-                "LabelText": "99:99",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 46.52,
-                  "Y": 35.7319
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4897,
-                  "Y": 0.3761
-                },
-                "PreSize": {
-                  "X": 0.4737,
-                  "Y": 0.1895
-                },
-                "LeftMargin": 24.02,
-                "RightMargin": 25.98,
-                "TopMargin": 50.2681,
-                "BottomMargin": 26.7319,
-                "Tag": 294,
-                "ActionTag": 1837244646,
-                "Size": {
-                  "X": 45.0,
+                  "X": 100.0,
                   "Y": 18.0
                 },
-                "Name": "die_time_text",
+                "Name": "level_text",
                 "ctype": "TextObjectData"
               },
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/reviveTime.png",
+                  "Path": "heroUI/lock.png",
                   "Plist": ""
                 },
-                "Scale9Width": 78,
-                "Scale9Height": 31,
+                "Scale9Width": 36,
+                "Scale9Height": 49,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 47.5,
-                  "Y": 58.0989
+                  "X": 74.8404,
+                  "Y": 31.0503
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -242,46 +198,47 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.6116
+                  "X": 0.5346,
+                  "Y": 0.3881
                 },
                 "PreSize": {
-                  "X": 0.8211,
-                  "Y": 0.3263
+                  "X": 0.2071,
+                  "Y": 0.4
                 },
-                "LeftMargin": 8.5,
-                "RightMargin": 8.5,
-                "TopMargin": 21.4011,
-                "BottomMargin": 42.5989,
-                "Tag": 955,
-                "ActionTag": 513272033,
+                "LeftMargin": 60.3404,
+                "RightMargin": 50.6596,
+                "TopMargin": 32.9497,
+                "BottomMargin": 15.0503,
+                "Tag": 216,
+                "ActionTag": -1008319939,
                 "Size": {
-                  "X": 78.0,
-                  "Y": 31.0
+                  "X": 29.0,
+                  "Y": 32.0
                 },
-                "Name": "die_text",
+                "Name": "lock",
                 "ctype": "ImageViewObjectData"
               }
             ],
-            "ActionTag": -540174355,
+            "ActionTag": -1233402080,
             "Size": {
-              "X": 95.0,
-              "Y": 95.0
+              "X": 140.0,
+              "Y": 80.0
             },
-            "Name": "root",
+            "Name": "btn",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 95.0,
-          "Y": 95.0
+          "X": 140.0,
+          "Y": 80.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "heroUI/reviveTime.png",
-        "ui/skill_icon.png"
+        "heroUI/btn1.png",
+        "heroUI/btn2.png",
+        "heroUI/lock.png"
       ],
       "ctype": "GameFileData"
     }

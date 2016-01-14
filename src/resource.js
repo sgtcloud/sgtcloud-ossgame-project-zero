@@ -4,7 +4,8 @@ var res_datas = {
     enemies_json: "res/data/enemies.json",
     equips_json: "res/data/equips.json",
     skills_json: "res/data/skills.json",
-    goods_json: "res/data/goods.json"
+    goods_json: "res/data/goods.json",
+    players_json: "res/data/players.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
@@ -56,6 +57,10 @@ var res = {
     shop_view: "res/ShopView.json",
     shop_layer: "res/ShopLayer.json",
     shop_icon_layer: "res/ShopIconLayer.json",
+    rank_layer_json: "res/RankLayer.json",
+    rank_view_json: "res/RankView.json",
+    fairy01_json: "res/fairy01.json",
+    chest03_json: "res/chest03.json",
 
     skill_magma_blaster:"res/effect5001.json"
 };

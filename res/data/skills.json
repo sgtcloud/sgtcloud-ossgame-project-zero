@@ -1,15 +1,15 @@
 {
   "s10101": {
     "name": "法术波动",
-    "desc": "被动增加主角{effect1_value}点{effect1_name}。",
+    "desc": "释放后对目标造成{effect1_value}点伤害。",
     "icon": "s10101.png",
-    "type": 0,
+    "type": 1,
     "levelDatas": [
       {
         "level": 20,
         "effect1": {
           "value": 84,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 10895,
@@ -21,7 +21,7 @@
         "level": 19,
         "effect1": {
           "value": 77,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 8670,
@@ -33,7 +33,7 @@
         "level": 18,
         "effect1": {
           "value": 70,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 6849,
@@ -45,7 +45,7 @@
         "level": 17,
         "effect1": {
           "value": 64,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 5369,
@@ -57,7 +57,7 @@
         "level": 16,
         "effect1": {
           "value": 57,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 4173,
@@ -69,7 +69,7 @@
         "level": 15,
         "effect1": {
           "value": 51,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 3216,
@@ -81,7 +81,7 @@
         "level": 14,
         "effect1": {
           "value": 46,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 2455,
@@ -93,7 +93,7 @@
         "level": 13,
         "effect1": {
           "value": 41,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 1855,
@@ -105,7 +105,7 @@
         "level": 12,
         "effect1": {
           "value": 36,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 1386,
@@ -117,7 +117,7 @@
         "level": 11,
         "effect1": {
           "value": 31,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 1024,
@@ -129,7 +129,7 @@
         "level": 10,
         "effect1": {
           "value": 27,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 747,
@@ -141,7 +141,7 @@
         "level": 9,
         "effect1": {
           "value": 22,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 538,
@@ -153,7 +153,7 @@
         "level": 8,
         "effect1": {
           "value": 19,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 381,
@@ -165,7 +165,7 @@
         "level": 7,
         "effect1": {
           "value": 15,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 266,
@@ -177,7 +177,7 @@
         "level": 6,
         "effect1": {
           "value": 12,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 183,
@@ -189,7 +189,7 @@
         "level": 5,
         "effect1": {
           "value": 9,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 123,
@@ -201,7 +201,7 @@
         "level": 4,
         "effect1": {
           "value": 7,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 81,
@@ -213,7 +213,7 @@
         "level": 3,
         "effect1": {
           "value": 5,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 52,
@@ -225,7 +225,7 @@
         "level": 2,
         "effect1": {
           "value": 2,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 33,
@@ -237,7 +237,7 @@
         "level": 1,
         "effect1": {
           "value": 1,
-          "type": "attack_value"
+          "type": "magma_blaster"
         },
         "upgrade": {
           "value": 20,
