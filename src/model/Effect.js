@@ -10,6 +10,7 @@ var EFFECT_HIT_VALUE = 'tap_value';
 var EFFECT_HIT_RATE = 'tap_rate';
 var EFFECT_GLOBE_HIT_VALUE = 'globe_tap_value';
 var EFFECT_GLOBE_HIT_RATE = 'globe_tap_rate';
+var EFFECT_GOLD_BONUS = 'globe_gold_rate';
 var EFFECT_CTR_CHANCE = 'ctr_chance';
 var EFFECT_CTR_RATE = 'ctr_modify';
 var EFFECT_ATTACK_SPD = 'attack_spd';

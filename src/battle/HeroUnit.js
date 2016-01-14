@@ -32,7 +32,11 @@ var HeroUnit = BattleUnit.extend({
             var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
-                if (Math.random() < this.data.getCtrChance()) {
+                var rand = Math.random();
+                var ctr_chance = this.data.getCtrChance();
+                //cc.log("ctr:" + rand + "/" + ctr_chance);
+                if (rand < ctr_chance) {
+                    customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
                     target.doDamage(this.data.getAttack(), this.data.getCtrModify());
                 } else {
                     target.doDamage(this.data.getAttack());
@@ -85,7 +89,10 @@ var HeroUnit = BattleUnit.extend({
                 customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.data);
                 this.onRecover();
             } else {
-                customEventHelper.sendEvent(EVENT.HERO_REVIVE_COUNTDOWN, {id: this.data.getId(), recover: this.recover});
+                customEventHelper.sendEvent(EVENT.HERO_REVIVE_COUNTDOWN, {
+                    id: this.data.getId(),
+                    recover: this.recover
+                });
             }
         };
         this.isActive = function () {

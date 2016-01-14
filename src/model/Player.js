@@ -181,8 +181,32 @@ var PlayerData = {
     globe_life_rate: 0,
     globe_attack_value: 0,
     globe_attack_rate: 0,
+    /**
+     * attack rate buff
+     */
+    tmp_attack_rate: 0,
     globe_tap_value: 0,
     globe_tap_rate: 0,
+    /**
+     * tap rate buff
+     */
+    tmp_tap_rate: 0,
+    globe_gold_rate: 0,
+    globe_atk_period_rate: 0,
+    /**
+     * attack_period rate buff
+     */
+    tmp_atk_period_rate: 0,
+    globe_ctr_chance_rate: 0,
+    /**
+     * ctr_chance rate buff
+     */
+    tmp_ctr_chance_rate: 0,
+    globe_ctr_modify_rate: 0,
+    /**
+     * ctr_modify rate buff
+     */
+    tmp_ctr_modify_rate: 0,
     refreshGlobeProps: function () {
         /**
          * resum the globe prop from every heroes
@@ -193,6 +217,10 @@ var PlayerData = {
         this.globe_attack_rate = 0;
         this.globe_tap_value = 0;
         this.globe_tap_rate = 0;
+        this.globe_gold_rate = 0;
+        this.globe_atk_period_rate = 0;
+        this.globe_ctr_chance_rate = 0;
+        this.globe_ctr_modify_rate = 0;
         for (var i in this.heroes) {
             this.globe_life_value += this.heroesData[i]["globe_life_value"];
             this.globe_life_rate += this.heroesData[i]["globe_life_rate"];
@@ -200,6 +228,10 @@ var PlayerData = {
             this.globe_attack_rate += this.heroesData[i]["globe_attack_rate"];
             this.globe_tap_value += this.heroesData[i]["globe_tap_value"];
             this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
+            this.globe_gold_rate += this.heroesData[i]["globe_gold_rate"];
+            this.globe_atk_period_rate += this.heroesData[i]["globe_atk_period_rate"];
+            this.globe_ctr_chance_rate += this.heroesData[i]["globe_ctr_chance_rate"];
+            this.globe_ctr_modify_rate += this.heroesData[i]["globe_ctr_modify_rate"];
         }
     },
 };
