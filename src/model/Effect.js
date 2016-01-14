@@ -14,6 +14,7 @@ var EFFECT_CTR_CHANCE = 'ctr_chance';
 var EFFECT_CTR_RATE = 'ctr_modify';
 var EFFECT_ATTACK_SPD = 'attack_spd';
 var EFFECT_GOLD_BONUS = 'gold_bonus';
+var EFFECT_SINGLE_DAMAGE_ONCE = "single_damage_once";
 
 var Effect = function(){
   var data = {};

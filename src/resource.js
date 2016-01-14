@@ -55,7 +55,9 @@ var res = {
     offline_reward_layer: "res/OfflineRewardLayer.json",
     shop_view: "res/ShopView.json",
     shop_layer: "res/ShopLayer.json",
-    shop_icon_layer: "res/ShopIconLayer.json"
+    shop_icon_layer: "res/ShopIconLayer.json",
+
+    skill_magma_blaster:"res/effect5001.json"
 };
 
 
