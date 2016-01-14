@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" CanEdit="False" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="240.0000" />
