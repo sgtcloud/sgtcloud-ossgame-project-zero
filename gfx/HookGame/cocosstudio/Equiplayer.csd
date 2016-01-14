@@ -66,61 +66,6 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_btn" ActionTag="-1825689616" Tag="659" IconVisible="False" LeftMargin="461.7385" RightMargin="22.2615" TopMargin="12.4899" BottomMargin="17.5101" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="140.0000" Y="80.0000" />
-                    <AnchorPoint />
-                    <Position X="461.7385" Y="17.5101" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7400" Y="0.1592" />
-                    <PreSize X="0.2244" Y="0.7273" />
-                    <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="equipUI/btn2.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="equipUI/btn1.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="equipUI/btn1.png" Plist="" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="text_yellow" ActionTag="1558433961" Tag="666" IconVisible="False" LeftMargin="519.3885" RightMargin="44.6115" TopMargin="32.7914" BottomMargin="66.2086" CharWidth="12" CharHeight="11" LabelText="56478" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="60.0000" Y="11.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="549.3885" Y="71.7086" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8804" Y="0.6519" />
-                    <PreSize X="0.0962" Y="0.1000" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" ActionTag="1244824290" Tag="664" IconVisible="False" LeftMargin="505.7502" RightMargin="52.2498" TopMargin="45.5156" BottomMargin="30.4844" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
-                    <Size X="66.0000" Y="34.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="538.7502" Y="47.4844" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8634" Y="0.4317" />
-                    <PreSize X="0.1058" Y="0.3091" />
-                    <FileData Type="Normal" Path="buttonUI/buy.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_icon" ActionTag="-1678763134" Tag="661" IconVisible="False" LeftMargin="500.5355" RightMargin="108.4645" TopMargin="30.4911" BottomMargin="64.5089" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                    <Size X="15.0000" Y="15.0000" />
-                    <AnchorPoint />
-                    <Position X="500.5355" Y="64.5089" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8021" Y="0.5864" />
-                    <PreSize X="0.0240" Y="0.1364" />
-                    <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="relic_icon" ActionTag="-1409250971" Tag="660" IconVisible="False" LeftMargin="500.5405" RightMargin="108.4595" TopMargin="30.5705" BottomMargin="64.4295" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                    <Size X="15.0000" Y="15.0000" />
-                    <AnchorPoint />
-                    <Position X="500.5405" Y="64.4295" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8021" Y="0.5857" />
-                    <PreSize X="0.0240" Y="0.1364" />
-                    <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
-                  </AbstractNodeData>
                   <AbstractNodeData Name="title_text" ActionTag="-1718578899" Tag="258" IconVisible="False" LeftMargin="226.9150" RightMargin="291.0850" TopMargin="3.2971" BottomMargin="74.7029" Scale9Width="106" Scale9Height="32" ctype="ImageViewObjectData">
                     <Size X="106.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -142,6 +87,16 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="buy_btn" ActionTag="711518097" Tag="807" IconVisible="True" LeftMargin="472.8423" RightMargin="27.1577" TopMargin="19.5316" BottomMargin="400.4684" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="140.0000" Y="80.0000" />
+                <AnchorPoint />
+                <Position X="472.8423" Y="400.4684" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7388" Y="0.8009" />
+                <PreSize X="0.2188" Y="0.1600" />
+                <FileData Type="Normal" Path="Btn_Buy.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

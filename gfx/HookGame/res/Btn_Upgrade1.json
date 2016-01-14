@@ -1,0 +1,549 @@
+{
+  "ID": "c0f7928b-3aaa-4d46-b30c-3705de3a6d7e",
+  "Version": "2.3.3.0",
+  "Name": "Btn_Upgrade1",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 75,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 226,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 227,
+                "ActionTag": 745304776,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/gold.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 5,
+                "Scale9OriginY": 5,
+                "Scale9Width": 30,
+                "Scale9Height": 30,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 27.7107,
+                  "Y": 54.4139
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1979,
+                  "Y": 0.6802
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 27.7107,
+                "RightMargin": 97.2893,
+                "TopMargin": 10.5861,
+                "BottomMargin": 54.4139,
+                "Tag": 228,
+                "ActionTag": -722991713,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "gold_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "生命值",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 72.0484,
+                  "Y": 41.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5146,
+                  "Y": 0.5125
+                },
+                "PreSize": {
+                  "X": 0.7143,
+                  "Y": 0.225
+                },
+                "LeftMargin": 22.0484,
+                "RightMargin": 17.9516,
+                "TopMargin": 30.0,
+                "BottomMargin": 32.0,
+                "Tag": 229,
+                "ActionTag": 1603274551,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 18.0
+                },
+                "Name": "buff_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 13,
+                "LabelText": "99556",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font15_green.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.6338,
+                  "Y": 20.2282
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5474,
+                  "Y": 0.2529
+                },
+                "PreSize": {
+                  "X": 0.4286,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 46.6338,
+                "RightMargin": 33.3662,
+                "TopMargin": 53.2718,
+                "BottomMargin": 13.7282,
+                "Tag": 232,
+                "ActionTag": -311229735,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 13.0
+                },
+                "Name": "buffNum_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/add.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 13,
+                "Scale9Height": 13,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 36.6187,
+                  "Y": 20.2281
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2616,
+                  "Y": 0.2529
+                },
+                "PreSize": {
+                  "X": 0.0857,
+                  "Y": 0.15
+                },
+                "LeftMargin": 30.6187,
+                "RightMargin": 97.3813,
+                "TopMargin": 53.7719,
+                "BottomMargin": 14.2281,
+                "Tag": 233,
+                "ActionTag": 2045657351,
+                "Size": {
+                  "X": 12.0,
+                  "Y": 12.0
+                },
+                "Name": "add",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/cut.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 13,
+                "Scale9Height": 13,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 36.1187,
+                  "Y": 20.2282
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.258,
+                  "Y": 0.2529
+                },
+                "PreSize": {
+                  "X": 0.0929,
+                  "Y": 0.1625
+                },
+                "LeftMargin": 29.6187,
+                "RightMargin": 97.3813,
+                "TopMargin": 53.2718,
+                "BottomMargin": 13.7282,
+                "Tag": 234,
+                "ActionTag": -377044570,
+                "Size": {
+                  "X": 13.0,
+                  "Y": 13.0
+                },
+                "Name": "cut",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 12,
+                "CharHeight": 11,
+                "LabelText": "999999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/font16_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 82.6338,
+                  "Y": 61.1738
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5902,
+                  "Y": 0.7647
+                },
+                "PreSize": {
+                  "X": 0.5143,
+                  "Y": 0.1375
+                },
+                "LeftMargin": 46.6338,
+                "RightMargin": 21.3662,
+                "TopMargin": 13.3262,
+                "BottomMargin": 55.6738,
+                "Tag": 236,
+                "ActionTag": -1295319166,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 11.0
+                },
+                "Name": "text_yellow",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "buttonUI/percentage.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 17,
+                "Scale9Height": 15,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 116.6207,
+                  "Y": 20.2281
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.833,
+                  "Y": 0.2529
+                },
+                "PreSize": {
+                  "X": 0.1214,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 108.1207,
+                "RightMargin": 14.8793,
+                "TopMargin": 52.2719,
+                "BottomMargin": 12.7281,
+                "Tag": 240,
+                "ActionTag": 1362573074,
+                "Size": {
+                  "X": 17.0,
+                  "Y": 15.0
+                },
+                "Name": "per",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "equipUI/relic.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 27.7107,
+                  "Y": 54.4139
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1979,
+                  "Y": 0.6802
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 27.7107,
+                "RightMargin": 97.2893,
+                "TopMargin": 10.5861,
+                "BottomMargin": 54.4139,
+                "Tag": 393,
+                "ActionTag": -1792450231,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "relic_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroUI/diamond.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 27.7107,
+                  "Y": 54.4139
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1979,
+                  "Y": 0.6802
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 27.7107,
+                "RightMargin": 97.2893,
+                "TopMargin": 10.5861,
+                "BottomMargin": 54.4139,
+                "Tag": 394,
+                "ActionTag": -1218064498,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "diamond_icon",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -920099854,
+            "Size": {
+              "X": 140.0,
+              "Y": 80.0
+            },
+            "Name": "btn",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 80.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "buttonUI/add.png",
+        "buttonUI/cut.png",
+        "buttonUI/font15_green.png",
+        "buttonUI/font16_yellow.png",
+        "buttonUI/percentage.png",
+        "equipUI/relic.png",
+        "heroUI/btn1.png",
+        "heroUI/btn2.png",
+        "heroUI/diamond.png",
+        "heroUI/gold.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

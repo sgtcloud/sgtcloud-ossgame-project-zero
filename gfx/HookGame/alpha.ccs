@@ -251,6 +251,13 @@
           <Image Name="desc.png" />
           <Image Name="title.png" />
         </Folder>
+        <Project Name="Btn_Revive.csd" Type="Layer" />
+        <Project Name="Btn_Upgrade1.csd" Type="Layer" />
+        <Project Name="Btn_Lock.csd" Type="Layer" />
+        <Project Name="Btn_Buy.csd" Type="Layer" />
+        <Project Name="Btn_Recast.csd" Type="Layer" />
+        <Project Name="Btn_MaxLevel.csd" Type="Layer" />
+        <Project Name="Btn_Upgrade2.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
