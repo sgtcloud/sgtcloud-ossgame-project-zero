@@ -4,19 +4,19 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="9" ctype="GameLayerObjectData">
-        <Size X="460.0000" Y="580.0000" />
+        <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" RightMargin="180.0000" TopMargin="380.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="460.0000" Y="580.0000" />
             <Children>
-              <AbstractNodeData Name="title_bg" ActionTag="-912217069" Tag="10" IconVisible="False" LeftMargin="9.4180" RightMargin="20.5820" TopMargin="32.9158" BottomMargin="397.0842" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
-                <Size X="430.0000" Y="150.0000" />
+              <AbstractNodeData Name="title_bg" ActionTag="-912217069" Tag="10" IconVisible="False" LeftMargin="9.4180" RightMargin="-189.4180" TopMargin="32.9158" BottomMargin="397.0842" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+                <Size X="640.0000" Y="150.0000" />
                 <AnchorPoint />
                 <Position X="9.4180" Y="397.0842" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0205" Y="0.6846" />
-                <PreSize X="0.9348" Y="0.2586" />
+                <PreSize X="1.3913" Y="0.2586" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="equip_icon" ActionTag="1677207595" Tag="710" IconVisible="False" LeftMargin="27.1412" RightMargin="342.8588" TopMargin="46.4845" BottomMargin="443.5155" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
@@ -61,14 +61,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="list_bg" ActionTag="690358502" Tag="916" IconVisible="False" LeftMargin="8.6643" RightMargin="21.3357" TopMargin="182.5770" BottomMargin="17.4230" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
-                <Size X="430.0000" Y="380.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="223.6643" Y="207.4230" />
+              <AbstractNodeData Name="list_bg" ActionTag="690358502" Tag="916" IconVisible="False" RightMargin="-180.0000" TopMargin="200.0000" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
+                <Size X="640.0000" Y="380.0000" />
+                <AnchorPoint />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4862" Y="0.3576" />
-                <PreSize X="0.9348" Y="0.6552" />
+                <PrePosition />
+                <PreSize X="1.3913" Y="0.6552" />
                 <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="text_bg1" ActionTag="-245328002" Tag="957" IconVisible="False" LeftMargin="25.5249" RightMargin="34.4751" TopMargin="193.7293" BottomMargin="266.2707" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
@@ -191,7 +191,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
+            <PreSize X="0.7188" Y="0.6042" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
