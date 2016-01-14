@@ -225,8 +225,8 @@
                   "Path": "heroUI/reviveTime.png",
                   "Plist": ""
                 },
-                "Scale9Width": 78,
-                "Scale9Height": 31,
+                "Scale9Width": 74,
+                "Scale9Height": 19,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -246,18 +246,18 @@
                   "Y": 0.6116
                 },
                 "PreSize": {
-                  "X": 0.8211,
-                  "Y": 0.3263
+                  "X": 0.7789,
+                  "Y": 0.2
                 },
-                "LeftMargin": 8.5,
-                "RightMargin": 8.5,
-                "TopMargin": 21.4011,
-                "BottomMargin": 42.5989,
+                "LeftMargin": 10.5,
+                "RightMargin": 10.5,
+                "TopMargin": 27.4011,
+                "BottomMargin": 48.5989,
                 "Tag": 955,
                 "ActionTag": 513272033,
                 "Size": {
-                  "X": 78.0,
-                  "Y": 31.0
+                  "X": 74.0,
+                  "Y": 19.0
                 },
                 "Name": "die_text",
                 "ctype": "ImageViewObjectData"

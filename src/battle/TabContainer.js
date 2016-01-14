@@ -44,7 +44,7 @@ var TabContainer = cc.Node.extend({
         this.menus.hero = new HeroListMenu(battlePanel);
         this.menus.equip = new EquipListMenu(battlePanel);
         this.menus.shop = new ShopLayerMenu(battlePanel);
-        this.menus.rank = new RankLayerMenu(battlePanel);
+
         for (var i in this.menus) {
             this.menus[i].setPosition(0, this.menuLayer.height);
             this.menuLayer.addChild(this.menus[i]);
@@ -81,12 +81,12 @@ var TabContainer = cc.Node.extend({
         function bindListener() {
             customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                 var data = event.getUserData();
-                PlayerData.consumeResource([data.cost]);
+                PlayerData.updateResource([data.cost]);
                 PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
-                PlayerData.consumeResource([data.cost]);
+                PlayerData.updateResource([data.cost]);
                 PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){

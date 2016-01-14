@@ -45,14 +45,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_text" ActionTag="513272033" Tag="955" IconVisible="False" LeftMargin="10.5000" RightMargin="10.5000" TopMargin="27.4011" BottomMargin="48.5989" Scale9Width="74" Scale9Height="19" ctype="ImageViewObjectData">
-                <Size X="74.0000" Y="19.0000" />
+              <AbstractNodeData Name="die_text" ActionTag="513272033" Tag="955" IconVisible="False" LeftMargin="8.5000" RightMargin="8.5000" TopMargin="21.4011" BottomMargin="42.5989" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
+                <Size X="78.0000" Y="31.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="47.5000" Y="58.0989" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.6116" />
-                <PreSize X="0.7789" Y="0.2000" />
+                <PreSize X="0.8211" Y="0.3263" />
                 <FileData Type="Normal" Path="heroUI/reviveTime.png" Plist="" />
               </AbstractNodeData>
             </Children>

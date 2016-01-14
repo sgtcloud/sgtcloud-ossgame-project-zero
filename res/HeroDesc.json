@@ -128,7 +128,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0208
                 },
                 "PreSize": {
@@ -214,7 +214,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5313,
+                  "X": 0.5312,
                   "Y": 0.8385
                 },
                 "PreSize": {
@@ -303,7 +303,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 293.9992,
                 "RightMargin": 314.0008,
@@ -344,7 +344,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 256.9994,
                 "RightMargin": 351.0006,
@@ -385,7 +385,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 219.9992,
                 "RightMargin": 388.0008,
@@ -426,7 +426,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 183.9992,
                 "RightMargin": 424.0008,
@@ -467,7 +467,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0313
+                  "Y": 0.0312
                 },
                 "LeftMargin": 146.9993,
                 "RightMargin": 461.0007,
@@ -765,15 +765,15 @@
                   "Path": "heroUI/reviveTime.png",
                   "Plist": ""
                 },
-                "Scale9Width": 78,
-                "Scale9Height": 31,
+                "Scale9Width": 74,
+                "Scale9Height": 19,
                 "AnchorPoint": {
                   "ScaleX": -0.4001,
                   "ScaleY": 22.9776
                 },
                 "Position": {
-                  "X": 13.6695,
-                  "Y": 1555.9458
+                  "X": 16.8689,
+                  "Y": 1288.4846
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -782,23 +782,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0214,
-                  "Y": 1.6208
+                  "X": 0.0264,
+                  "Y": 1.3422
                 },
                 "PreSize": {
-                  "X": 0.1219,
-                  "Y": 0.0323
+                  "X": 0.1156,
+                  "Y": 0.0198
                 },
-                "LeftMargin": 44.8773,
-                "RightMargin": 517.1227,
-                "TopMargin": 85.3598,
-                "BottomMargin": 843.6402,
+                "LeftMargin": 46.4744,
+                "RightMargin": 519.5256,
+                "TopMargin": 89.0892,
+                "BottomMargin": 851.9108,
                 "CallBackType": "Click",
                 "Tag": 442,
                 "ActionTag": -607078018,
                 "Size": {
-                  "X": 78.0,
-                  "Y": 31.0
+                  "X": 74.0,
+                  "Y": 19.0
                 },
                 "Name": "die_text",
                 "ctype": "ImageViewObjectData"
@@ -1050,8 +1050,8 @@
                       "Path": "buttonUI/revive.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 66,
-                    "Scale9Height": 34,
+                    "Scale9Width": 52,
+                    "Scale9Height": 27,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -1071,19 +1071,19 @@
                       "Y": 0.6297
                     },
                     "PreSize": {
-                      "X": 0.4714,
-                      "Y": 0.425
+                      "X": 0.3714,
+                      "Y": 0.3375
                     },
-                    "LeftMargin": 45.2324,
-                    "RightMargin": 28.7676,
-                    "TopMargin": 12.6236,
-                    "BottomMargin": 33.3764,
+                    "LeftMargin": 52.2324,
+                    "RightMargin": 35.7676,
+                    "TopMargin": 16.1236,
+                    "BottomMargin": 36.8764,
                     "CallBackType": "Touch",
                     "Tag": 1377,
                     "ActionTag": 366721775,
                     "Size": {
-                      "X": 66.0,
-                      "Y": 34.0
+                      "X": 52.0,
+                      "Y": 27.0
                     },
                     "Name": "revive_text",
                     "ctype": "ImageViewObjectData"
@@ -1094,15 +1094,15 @@
                       "Path": "buttonUI/MaxLevel.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 105,
-                    "Scale9Height": 44,
+                    "Scale9Width": 77,
+                    "Scale9Height": 27,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 70.0,
-                      "Y": 41.0
+                      "X": 75.7582,
+                      "Y": 40.3042
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1111,23 +1111,23 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
-                      "Y": 0.5125
+                      "X": 0.5411,
+                      "Y": 0.5038
                     },
                     "PreSize": {
-                      "X": 0.75,
-                      "Y": 0.55
+                      "X": 0.55,
+                      "Y": 0.3375
                     },
-                    "LeftMargin": 17.5,
-                    "RightMargin": 17.5,
-                    "TopMargin": 17.0,
-                    "BottomMargin": 19.0,
+                    "LeftMargin": 37.2582,
+                    "RightMargin": 25.7418,
+                    "TopMargin": 26.1958,
+                    "BottomMargin": 26.8042,
                     "CallBackType": "Touch",
                     "Tag": 1378,
                     "ActionTag": 1770317122,
                     "Size": {
-                      "X": 105.0,
-                      "Y": 44.0
+                      "X": 77.0,
+                      "Y": 27.0
                     },
                     "Name": "upMax_text",
                     "ctype": "ImageViewObjectData"
@@ -1494,7 +1494,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 12,
-                    "LabelText": "生命值",
+                    "LabelText": "英雄DPS",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {

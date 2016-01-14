@@ -337,7 +337,7 @@
         "level": 20,
         "effect1": {
           "value": 168,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 20,
@@ -353,7 +353,7 @@
         "level": 19,
         "effect1": {
           "value": 154,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 19,
@@ -369,7 +369,7 @@
         "level": 18,
         "effect1": {
           "value": 140,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 18,
@@ -385,7 +385,7 @@
         "level": 17,
         "effect1": {
           "value": 127,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 17,
@@ -401,7 +401,7 @@
         "level": 16,
         "effect1": {
           "value": 115,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 16,
@@ -417,7 +417,7 @@
         "level": 15,
         "effect1": {
           "value": 103,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 15,
@@ -433,7 +433,7 @@
         "level": 14,
         "effect1": {
           "value": 92,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 14,
@@ -449,7 +449,7 @@
         "level": 13,
         "effect1": {
           "value": 81,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 13,
@@ -465,7 +465,7 @@
         "level": 12,
         "effect1": {
           "value": 71,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 12,
@@ -481,7 +481,7 @@
         "level": 11,
         "effect1": {
           "value": 62,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 11,
@@ -497,7 +497,7 @@
         "level": 10,
         "effect1": {
           "value": 53,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 10,
@@ -513,7 +513,7 @@
         "level": 9,
         "effect1": {
           "value": 45,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 9,
@@ -529,7 +529,7 @@
         "level": 8,
         "effect1": {
           "value": 37,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 8,
@@ -545,7 +545,7 @@
         "level": 7,
         "effect1": {
           "value": 31,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 7,
@@ -561,7 +561,7 @@
         "level": 6,
         "effect1": {
           "value": 24,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 6,
@@ -577,7 +577,7 @@
         "level": 5,
         "effect1": {
           "value": 19,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 5,
@@ -593,7 +593,7 @@
         "level": 4,
         "effect1": {
           "value": 14,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 4,
@@ -609,7 +609,7 @@
         "level": 3,
         "effect1": {
           "value": 10,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 3,
@@ -625,7 +625,7 @@
         "level": 2,
         "effect1": {
           "value": 4,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 2,
@@ -641,7 +641,7 @@
         "level": 1,
         "effect1": {
           "value": 2,
-          "type": "tab_value"
+          "type": "tap_value"
         },
         "effect2": {
           "value": 1,

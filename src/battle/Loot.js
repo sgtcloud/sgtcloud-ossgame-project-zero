@@ -70,7 +70,7 @@ var Loot = cc.Node.extend({
                 //cc.pool.putInPool(this);
                 self.removeFromParent(true);
                 if (self.bonus) {
-                    PlayerData.consumeResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
+                    PlayerData.updateResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 //cc.log(player.gold);
@@ -102,8 +102,56 @@ var Loot = cc.Node.extend({
     }
 });
 
+Loot.generateLoots = function (bonus, pos) {
+    var value = bonus.value;
+    var lootSprites = [];
+    if (value == 1) {
+        lootSprites.push(new Loot(bonus.unit, "little"));
+    } else if (value > 1 && value <= 5) {
+        this.createLootSprites(lootSprites, 3, "little", bonus);
+    } else if (value > 5 && value <= 10) {
+        this.createLootSprites(lootSprites, 5, "little", bonus);
+    } else if (value > 10 && value <= 50) {
+        lootSprites.push(new Loot(bonus.unit, "some"));
+        this.createLootSprites(lootSprites, 10, "little", bonus);
+    } else if (value > 50 && value <= 100) {
+        lootSprites.push(new Loot(bonus.unit, "amount"));
+        this.createLootSprites(lootSprites, 5, "little", bonus);
+    } else if (value > 100 && value <= 500) {
+        lootSprites.push(new Loot(bonus.unit, "huge"));
+        this.createLootSprites(lootSprites, 10, "little", bonus);
+    } else if (value > 500 && value <= 1000) {
+        lootSprites.push(new Loot(bonus.unit, "some"));
+        lootSprites.push(new Loot(bonus.unit, "huge"));
+        this.createLootSprites(lootSprites, 15, "little", bonus);
+    } else if (value > 1000 && value <= 5000) {
+        lootSprites.push(new Loot(bonus.unit, "amout"));
+        lootSprites.push(new Loot(bonus.unit, "huge"));
+        this.createLootSprites(lootSprites, 20, "little", bonus);
+    } else {
+        lootSprites.push(new Loot(bonus.unit, "some"));
+        lootSprites.push(new Loot(bonus.unit, "amout"));
+        lootSprites.push(new Loot(bonus.unit, "huge"));
+        this.createLootSprites(lootSprites, 20, "little", bonus);
+    }
+    for (var i in lootSprites) {
+        // 跨panel的移动逻辑需要添加到scene中
+        lootSprites[i].setPosition(pos);
+        cc.director.getRunningScene().addChild(lootSprites[i]);
+        lootSprites[i].fire();
+    }
+};
+Loot.createLootSprites = function (lootSprites, num, size, bonus) {
+    for (var i = 0; i < num; i++) {
+        lootSprites.push(new Loot(bonus.unit, size));
+        if (i == num - 1) {
+            lootSprites.push(new Loot(bonus.unit, size, bonus));
+        }
+    }
+}
+
 // 重用对象
-//Loot.createFromPool = function (val, ctr) {
+//Loot.create = function (val, ctr) {
 //    var pool = cc.pool;
 //    if (pool.hasObject(Loot)) {
 //        return pool.getFromPool(Loot, val, ctr);

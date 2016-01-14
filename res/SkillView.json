@@ -132,10 +132,8 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "IsCustomSize": true,
                 "FontSize": 20,
                 "LabelText": "技能名称六字",
-                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -149,7 +147,7 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 118.0,
+                  "X": 119.0,
                   "Y": 73.0
                 },
                 "Scale": {
@@ -163,21 +161,21 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1967,
+                  "X": 0.1983,
                   "Y": 0.73
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.2,
                   "Y": 0.2
                 },
-                "LeftMargin": 118.0,
-                "RightMargin": 342.0,
+                "LeftMargin": 119.0,
+                "RightMargin": 361.0,
                 "TopMargin": 7.0,
                 "BottomMargin": 73.0,
                 "Tag": 306,
                 "ActionTag": 1868296756,
                 "Size": {
-                  "X": 140.0,
+                  "X": 120.0,
                   "Y": 20.0
                 },
                 "Name": "skillName_text",
@@ -640,15 +638,15 @@
                       "Path": "buttonUI/MaxLevel.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 105,
-                    "Scale9Height": 44,
+                    "Scale9Width": 77,
+                    "Scale9Height": 27,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 70.0,
-                      "Y": 40.0
+                      "X": 77.8,
+                      "Y": 37.8991
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -657,22 +655,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
-                      "Y": 0.5
+                      "X": 0.5557,
+                      "Y": 0.4737
                     },
                     "PreSize": {
-                      "X": 0.75,
-                      "Y": 0.55
+                      "X": 0.55,
+                      "Y": 0.3375
                     },
-                    "LeftMargin": 17.5,
-                    "RightMargin": 17.5,
-                    "TopMargin": 18.0,
-                    "BottomMargin": 18.0,
+                    "LeftMargin": 39.3,
+                    "RightMargin": 23.7,
+                    "TopMargin": 28.6009,
+                    "BottomMargin": 24.3991,
                     "Tag": 782,
                     "ActionTag": 532076678,
                     "Size": {
-                      "X": 105.0,
-                      "Y": 44.0
+                      "X": 77.0,
+                      "Y": 27.0
                     },
                     "Name": "upMax_text",
                     "ctype": "ImageViewObjectData"

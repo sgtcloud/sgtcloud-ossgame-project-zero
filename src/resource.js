@@ -61,6 +61,8 @@ var res = {
     rank_view_json: "res/RankView.json",
     fairy01_json: "res/fairy01.json",
     chest03_json: "res/chest03.json"
+
+    skill_magma_blaster:"res/effect5001.json"
 };
 
 

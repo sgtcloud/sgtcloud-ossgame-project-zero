@@ -51,7 +51,7 @@ var TopPanel = cc.Node.extend({
         });
 
         customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
-            self.refreshPlayerDiamondText();
+            self.refreshPlayerGemText();
         });
 
         bindButtonCallback(this.fightBossBtn, function () {
@@ -62,16 +62,16 @@ var TopPanel = cc.Node.extend({
         });
 
 
-        this.refreshPlayerDiamondText = function () {
-            this.diamondNum.setString(player.gem);
+        this.refreshPlayerGemText = function () {
+            this.diamondNum.setString(PlayerData.getAmountByUnit("gem"));
             this.diamondNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerRelicText = function () {
-            this.relicNum.setString(player.relic);
+            this.relicNum.setString(PlayerData.getAmountByUnit("relic"));
             this.relicNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerGoldText = function () {
-            this.goldNum.setString(player.gold);
+            this.goldNum.setString(PlayerData.getAmountByUnit("gold"));
             this.goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerKeyText = function () {
@@ -141,7 +141,7 @@ var TopPanel = cc.Node.extend({
         };
 
         this.refreshAll = function () {
-            this.refreshPlayerDiamondText();
+            this.refreshPlayerGemText();
             this.refreshPlayerRelicText();
             this.refreshPlayerGoldText();
             this.refreshPlayerKeyText();

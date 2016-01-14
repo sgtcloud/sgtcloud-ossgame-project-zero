@@ -161,12 +161,12 @@
                   "Path": "skillUI/hero.png",
                   "Plist": ""
                 },
-                "Scale9Width": 131,
-                "Scale9Height": 27,
+                "Scale9Width": 101,
+                "Scale9Height": 24,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 12.7592,
-                  "Y": 205.905
+                  "Y": 205.6218
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -176,30 +176,29 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0199,
-                  "Y": 0.8579
+                  "Y": 0.8568
                 },
                 "PreSize": {
-                  "X": 0.2047,
-                  "Y": 0.1125
+                  "X": 0.1578,
+                  "Y": 0.1
                 },
                 "LeftMargin": 12.7592,
-                "RightMargin": 496.2408,
-                "TopMargin": 7.095,
-                "BottomMargin": 205.905,
-                "CallBackType": "Click",
+                "RightMargin": 526.2408,
+                "TopMargin": 10.3782,
+                "BottomMargin": 205.6218,
                 "Tag": 170,
                 "ActionTag": -966206276,
                 "Size": {
-                  "X": 131.0,
-                  "Y": 27.0
+                  "X": 101.0,
+                  "Y": 24.0
                 },
                 "Name": "atk",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "1231321",
+                "CharWidth": 14,
+                "CharHeight": 20,
+                "LabelText": "",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
@@ -208,8 +207,8 @@
                 },
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 139.2657,
-                  "Y": 210.905
+                  "X": 115.8028,
+                  "Y": 219.3455
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -218,22 +217,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2176,
-                  "Y": 0.8788
+                  "X": 0.1809,
+                  "Y": 0.9139
                 },
                 "PreSize": {
-                  "X": 0.1969,
-                  "Y": 0.0708
+                  "X": 0.0,
+                  "Y": 0.0
                 },
-                "LeftMargin": 139.2657,
-                "RightMargin": 374.7343,
-                "TopMargin": 12.095,
-                "BottomMargin": 210.905,
+                "LeftMargin": 115.8028,
+                "RightMargin": 524.1972,
+                "TopMargin": 20.6545,
+                "BottomMargin": 219.3455,
                 "Tag": 171,
                 "ActionTag": -1087542958,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 17.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Name": "atk_text",
                 "ctype": "TextAtlasObjectData"
@@ -244,12 +243,12 @@
                   "Path": "skillUI/tap.png",
                   "Plist": ""
                 },
-                "Scale9Width": 131,
-                "Scale9Height": 26,
+                "Scale9Width": 124,
+                "Scale9Height": 24,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 409.6177,
-                  "Y": 206.405
+                  "X": 497.2654,
+                  "Y": 205.6218
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -258,30 +257,30 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.64,
-                  "Y": 0.86
+                  "X": 0.777,
+                  "Y": 0.8568
                 },
                 "PreSize": {
-                  "X": 0.2047,
-                  "Y": 0.1083
+                  "X": 0.1937,
+                  "Y": 0.1
                 },
-                "LeftMargin": 409.6177,
-                "RightMargin": 99.3823,
-                "TopMargin": 7.595,
-                "BottomMargin": 206.405,
+                "LeftMargin": 497.2654,
+                "RightMargin": 18.7346,
+                "TopMargin": 10.3782,
+                "BottomMargin": 205.6218,
                 "Tag": 173,
                 "ActionTag": 1563928514,
                 "Size": {
-                  "X": 131.0,
-                  "Y": 26.0
+                  "X": 124.0,
+                  "Y": 24.0
                 },
                 "Name": "tatk",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "12313",
+                "CharWidth": 14,
+                "CharHeight": 20,
+                "LabelText": "",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
@@ -290,8 +289,8 @@
                 },
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 536.2065,
-                  "Y": 210.905
+                  "X": 622.5942,
+                  "Y": 220.8982
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -300,22 +299,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8378,
-                  "Y": 0.8788
+                  "X": 0.9728,
+                  "Y": 0.9204
                 },
                 "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.0708
+                  "X": 0.0,
+                  "Y": 0.0
                 },
-                "LeftMargin": 536.2065,
-                "RightMargin": 13.7935,
-                "TopMargin": 12.095,
-                "BottomMargin": 210.905,
+                "LeftMargin": 622.5942,
+                "RightMargin": 17.4058,
+                "TopMargin": 19.1018,
+                "BottomMargin": 220.8982,
                 "Tag": 172,
                 "ActionTag": 309744497,
                 "Size": {
-                  "X": 90.0,
-                  "Y": 17.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Name": "tatk_text",
                 "ctype": "TextAtlasObjectData"
@@ -595,7 +594,7 @@
                   "Y": 0.3958
                 },
                 "LeftMargin": 10.9997,
-                "RightMargin": 534.0003,
+                "RightMargin": 534.0002,
                 "TopMargin": 132.0002,
                 "BottomMargin": 12.9998,
                 "Tag": 205,

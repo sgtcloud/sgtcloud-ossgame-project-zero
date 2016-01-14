@@ -1,27 +1,28 @@
 var player = {
     "id": "10001000",
     "name": "测试a",
-    "gold": 10,
-    "gem": 10,
-    "relic": 10,
-    "key": 10,
     "vip": 1,
     "stage": "s100001",
     "stage_battle_num": 1,
     "into_stage_battle_timestamp": 0,
     "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
-    "packs":[],
+    "resource": {
+        "gold": 10,
+        "gem": 10,
+        "relic": 10,
+        "key": 10,
+    },
     "heroes": [
         {
             "id": "h101",
             "lv": 1,
             "life": 0,
             "star": 0,
-        /*   "skills": [
-               {"id": "", "level": ""},
-                {"id": "", "level": ""}
-            ],*/
-            "skills":{
+            /*   "skills": [
+             {"id": "", "level": ""},
+             {"id": "", "level": ""}
+             ],*/
+            "skills": {
                 //"技能ID":{"leve":""}
             },
             "equips": [
@@ -34,65 +35,15 @@ var player = {
             "lv": 1,
             "life": 0,
             "star": 0,
-            "skills":{
-
-            }/* [
-                1,
-                1
-            ]*/,
+            "skills": {}/* [
+         1,
+         1
+         ]*/,
             "equips": [
                 1,
                 1
             ]
-        },{
-            "id": "h103",
-            "lv": 1,
-            "life": 0,
-            "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
-            "skills":{
-                //"技能ID":{"leve":""}
-            },
-            "equips": [
-                1,
-                1
-            ]
-        },{
-            "id": "h104",
-            "lv": 1,
-            "life": 0,
-            "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
-            "skills":{
-                //"技能ID":{"leve":""}
-            },
-            "equips": [
-                1,
-                1
-            ]
-        },{
-            "id": "h105",
-            "lv": 1,
-            "life": 0,
-            "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
-            "skills":{
-                //"技能ID":{"leve":""}
-            },
-            "equips": [
-                1,
-                1
-            ]
-        },
+        }
     ]
 };
 var PlayerData = {
@@ -155,31 +106,26 @@ var PlayerData = {
         return {unit: unit, value: val};
     }
     ,
-    consumeResource: function (datas) {
-        if (!datas) {
+    updateResource: function (resources) {
+        if (!resources) {
             return;
         }
-        for (var i = 0; i < datas.length; i++) {
-            var data = datas[i];
-            if (data.value) {
-                switch (data.unit) {
-                    case "gold":
-                        player.gold += data.value;
-                        break;
-                    case "gem":
-                        player.gem += data.value;
-                        break;
-                    case "relic":
-                        player.relic += data.value;
-                        break;
-                    case "key":
-                        player.key += data.value;
-                        break;
-                }
+        if (resources instanceof Array) {
+            for (var i = 0; i < resources.length; i++) {
+                this.updateSingleResource(resources[i]);
             }
+        } else {
+            this.updateSingleResource(resources);
         }
     }
     ,
+    updateSingleResource: function (resource) {
+        if (player.resource[resource.unit]) {
+            player.resource[resource.unit] += resource.value;
+        } else {
+            cc.log("unknown resource type:" + resource.unit);
+        }
+    },
     updateIntoBattleTime: function () {
         player.into_stage_battle_timestamp = Date.parse(new Date());
         this.updatePlayer();
@@ -222,22 +168,12 @@ var PlayerData = {
                 arrays.push(this.createResourceData(key, rewards[key]));
             }
         }
-        this.consumeResource(arrays);
+        this.updateResource(arrays);
         player.not_get_reward = {"key": 0, "gem": 0, "gold": 0};
     }
     ,
     getAmountByUnit: function (unit) {
-        switch (unit) {
-            case "gold":
-                return player.gold;
-            case "gem":
-                return player.gem;
-            case "relic":
-                return player.relic;
-            case "key":
-                return player.key;
-        }
-        return 0;
+        return player.resource[unit];
     },
     heroesData: [],
     stageData: {},
@@ -248,6 +184,9 @@ var PlayerData = {
     globe_tap_value: 0,
     globe_tap_rate: 0,
     refreshGlobeProps: function () {
+        /**
+         * resum the globe prop from every heroes
+         */
         this.globe_life_value = 0;
         this.globe_life_rate = 0;
         this.globe_attack_value = 0;
@@ -263,12 +202,5 @@ var PlayerData = {
             this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
         }
     },
-    getCurrentRanksByType: function(type){
-        return dataSource.players;
-    },
-    getMyRankByType: function(type){
-        return 1;
-    }
-
 };
 

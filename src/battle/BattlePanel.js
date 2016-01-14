@@ -26,7 +26,9 @@ var SpriteGroup = function (_sprites) {
         var val = 0;
         for (var i in sprites) {
             var sprite = sprites[i];
-            val += sprite.getLife();
+            if (!sprite.isDead()) {
+                val += sprite.getLife();
+            }
         }
         return val;
     };
@@ -101,7 +103,7 @@ var BattlePanel = cc.Node.extend({
 
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
-        this.openPopup = function(){
+        this.openPopup = function () {
             var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
             var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
@@ -116,18 +118,16 @@ var BattlePanel = cc.Node.extend({
                     offlineRewardLayerText.setString(rewards[key]);
                 }
             }
-            var gamePopup = new GamePopup(offlineRewardLayer);
             bindButtonCallback(offlineRewardLayerBtn, function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
-                gamePopup.hidden();
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             });
-            popup(gamePopup, 1000);
-            gamePopup.popup();
+            popup(offlineRewardLayer, 1000);
         };
+
         bindButtonCallback(this.rewardBtn, function () {
             self.openPopup();
         });
@@ -151,13 +151,6 @@ var BattlePanel = cc.Node.extend({
 
         var tap = root.getChildByName('tap');
         var battleZone = tap;
-        var tempEffect = ccs.load(res.tap_effect_json);
-        var hitEffect = tempEffect.node;
-        var hitAction = tempEffect.action;
-        var hitIndex = 1;
-        hitEffect.setVisible(false);
-        hitEffect.runAction(hitAction);
-        this.addChild(hitEffect, 1000);
         this.bindPlayerTapEvent = function () {
             var listener = cc.EventListener.create({
                 event: cc.EventListener.MOUSE,
@@ -166,19 +159,9 @@ var BattlePanel = cc.Node.extend({
                     var locationInNode = battleZone.convertToNodeSpace(touch.getLocation());
                     var s = battleZone.getContentSize();
                     var rect = cc.rect(0, 0, s.width, s.height);
-                    var target = self.findNextEnemy();
-                    if (cc.rectContainsPoint(rect, locationInNode) && target) {
+                    if (cc.rectContainsPoint(rect, locationInNode)) {
                         //cc.log(locationInNode.x + " " + locationInNode.y);
-                        hitEffect.setPosition(self.convertToNodeSpace(touch.getLocation()));
-                        hitEffect.setVisible(true);
-                        hitAction.play("boom" + hitIndex, false);
-                        target.doDamage(PlayerData.getTotalHit());
-                        hitIndex++;
-                        if (hitIndex > 4) {
-                            hitIndex = 1;
-                        }
-                        if(!self.FairyUnit || !self.FairyUnit.isRunning())
-                            self.showFairyAndChest();
+                        self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
                         return true;
                     }
                     return false;
@@ -216,6 +199,11 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
             self.goldPosition = event.getUserData();
         });
+        customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
+            var activeSkill = new ActiveSkill(event.getUserData(), self);
+            this.addChild(activeSkill, 2000);
+            activeSkill.cast();
+        });
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
     },
@@ -230,16 +218,18 @@ var BattlePanel = cc.Node.extend({
     ,
     updateEnemyLife: function () {
         var max = this.enemySprites.getMaxLife();
-        var life = parseInt(this.enemySprites.getLife(), 10);
+        var life = Math.floor(this.enemySprites.getLife());
         this.enemyLifeText.ignoreContentAdaptWithSize(true);
         this.enemyLifeText.setString(life);
         this.enemyLifeBar.setPercent(life / max * 100);
     },
 
-    onPlayerTap: function () {
+    onPlayerTap: function (pos) {
         var target = this.findNextEnemy();
         if (target) {
-            target.doDamage(PlayerData.getTotalHit());
+            var tapSkill = new TapSkill();
+            this.addChild(tapSkill, 1000);
+            tapSkill.cast(target, pos);
         }
     },
 
@@ -398,7 +388,7 @@ var BattlePanel = cc.Node.extend({
     },
 
     onEnemyDead: function (enemy) {
-        PlayerData.consumeResource(enemy.getBonus());
+        PlayerData.updateResource(enemy.getBonus());
         //this.updatePlayerGoldText();
         //this.updateTopPanel();
     },

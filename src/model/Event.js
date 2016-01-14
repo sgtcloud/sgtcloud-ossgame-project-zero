@@ -48,7 +48,15 @@ var EVENT = {
     /**
      * 钻石数量改变
      */
-    GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE"
+    GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE",
+    /**
+     * 刷新英雄属性
+     */
+    HERO_REFRESH_PROPS:"HERO_REFRESH_PROPS",
+    /**
+     * 刷新英雄属性
+     */
+    CAST_SKILL:"CAST_SKILL"
 };
 
 var customEventHelper = {

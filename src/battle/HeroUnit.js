@@ -61,6 +61,11 @@ var HeroUnit = BattleUnit.extend({
             this.refreshLifeBar();
             battle.onHeroRecover(this);
         };
+        this.reset = function () {
+            this.animateTime = 0;
+            this.node.runAction(cc.fadeIn(1.0));
+            this.playAnimation('stand');
+        }
         //使用主动技能时被调用
         this.onUseSkill = function () {
 
