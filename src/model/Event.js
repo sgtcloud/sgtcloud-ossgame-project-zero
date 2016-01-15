@@ -52,11 +52,17 @@ var EVENT = {
     /**
      * 刷新英雄属性
      */
-    HERO_REFRESH_PROPS:"HERO_REFRESH_PROPS",
+    HERO_REFRESH_PROPS: "HERO_REFRESH_PROPS",
     /**
      * 刷新英雄属性
      */
-    CAST_SKILL:"CAST_SKILL"
+    CAST_SKILL: "CAST_SKILL",
+    /**
+     * 英雄买活
+     */
+    HERO_BUY_REVIVE: "HERO_BUY_REVIVE"
+
+
 };
 
 var customEventHelper = {
