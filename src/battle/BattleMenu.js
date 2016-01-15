@@ -23,7 +23,7 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (battle, root, index,skill) {
+var SkillIcon = function (battle, root, index, skill) {
     this.button = root.getChildByName('skill_btn');
     this.deadTimeTitle = root.getChildByName('die_text');
     this.deadTimeText = root.getChildByName('die_time_text');
@@ -45,8 +45,15 @@ var SkillIcon = function (battle, root, index,skill) {
         this.deadTimeText.setVisible(true);
         this.coolTimeText.setVisible(false);
     }
-    this.setSkill=function(skill){
-        this.skill=skill;
+    this.bindSkill = function (skill) {
+        if (skill) {
+            this.skill = skill;
+            var that = this;
+            this.button.addClickEventListener(function () {
+                console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
+                customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+            });
+        }
     }
     this.showCooldown = function () {
         this.deadTimeTitle.setVisible(false);
@@ -68,7 +75,7 @@ var SkillIcon = function (battle, root, index,skill) {
         this.button.setEnabled(state);
         this.button.setBright(state);
     }
-    this.addClickEvent=function(func){
+    this.addClickEvent = function (func) {
         this.button.addClickEventListener(func);
     }
 }
@@ -84,8 +91,8 @@ function getHeroActivtySkillls(hero) {
 }
 var SkillListMenu = BattleMenu.extend({
     ctor: function (battlePanel) {
-        var heroes=PlayerData.getHeroes();
-        var skillBtnNum= 7;
+        var heroes = PlayerData.getHeroes();
+        var skillBtnNum = 7;
         this._super(battlePanel, res.skill_layer_json);
         var skills = [];
         for (var i = 0; i < skillBtnNum; i++) {
@@ -93,11 +100,12 @@ var SkillListMenu = BattleMenu.extend({
             var skillBtn = new SkillIcon(battlePanel, pane, i);
             if (i < heroes.length) {
                 skillBtn.setVisible(true);
-                var activitySkills=getHeroActivtySkillls(heroes[i]);
-                skillBtn.addClickEvent(function(){
-                    console.log('触发主动技能：'+activitySkills[0]);
-                    customEventHelper.sendEvent(EVENT.CAST_SKILL,activitySkills[0]);
-                })
+                var activitySkills = getHeroActivtySkillls(heroes[i]);
+                skillBtn.bindSkill(activitySkills[0]);
+                //skillBtn.addClickEvent(function(){
+                //    console.log('触发主动技能：'+activitySkills[0]);
+                //    customEventHelper.sendEvent(EVENT.CAST_SKILL,activitySkills[0]);
+                //})
             } else {
                 skillBtn.setVisible(false);
             }
