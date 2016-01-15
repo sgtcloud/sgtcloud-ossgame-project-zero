@@ -25,10 +25,9 @@ var player = {
             "skills": {
                 //"技能ID":{"leve":""}
             },
-            "equips": [
-                1,
-                1
-            ]
+            "equips": {
+                //"装备ID":{}
+            }
         },
         {
             "id": "h102",
@@ -39,11 +38,8 @@ var player = {
          1,
          1
          ]*/,
-            "equips": [
-                1,
-                1
-            ]
-        },{
+            "equips": {}
+        }, {
             "id": "h103",
             "lv": 1,
             "life": 0,
@@ -52,14 +48,11 @@ var player = {
              {"id": "", "level": ""},
              {"id": "", "level": ""}
              ],*/
-            "skills":{
+            "skills": {
                 //"技能ID":{"leve":""}
             },
-            "equips": [
-                1,
-                1
-            ]
-        },{
+            "equips": {}
+        }, {
             "id": "h104",
             "lv": 1,
             "life": 0,
@@ -68,14 +61,11 @@ var player = {
              {"id": "", "level": ""},
              {"id": "", "level": ""}
              ],*/
-            "skills":{
+            "skills": {
                 //"技能ID":{"leve":""}
             },
-            "equips": [
-                1,
-                1
-            ]
-        },{
+            "equips": {}
+        }, {
             "id": "h105",
             "lv": 1,
             "life": 0,
@@ -84,14 +74,11 @@ var player = {
              {"id": "", "level": ""},
              {"id": "", "level": ""}
              ],*/
-            "skills":{
+            "skills": {
                 //"技能ID":{"leve":""}
             },
-            "equips": [
-                1,
-                1
-            ]
-        }
+            "equips": {}
+        },
     ]
 };
 var PlayerData = {
@@ -250,12 +237,5 @@ var PlayerData = {
             this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
         }
     },
-    getCurrentRanksByType: function(type){
-        return dataSource.players;
-    },
-    getMyRankByType: function(type){
-        return 1;
-    }
-
 };
 
