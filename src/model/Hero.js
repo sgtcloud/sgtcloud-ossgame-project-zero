@@ -8,9 +8,9 @@ var Hero = function (heroData) {
     var skills = [];
     var icon = data.icon;
 
-    for (var i in heroData.equips) {
+    for (var i in data.equips) {
         var equip = data.equips[i];
-        var equipsLv = heroData.equips[i];
+        var equipsLv = data.equips[i];
         equips[i] = new Equip(equip, equipsLv);
     }
     for (var i in data.skills) {
