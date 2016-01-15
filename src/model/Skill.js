@@ -89,15 +89,22 @@ var Skill = function (id, lv, heroId) {
      * @returns [{type:'技能type','value':111,'index':'排列位置'}]
      */
     this.traverseSkillEffects = function (lv) {
+        lv=lv||this.getLv();
         var levelData = this.getLevelData(lv);
         var effects = [];
         for (var key in levelData) {
             //狗日的微信浏览器中没有startsWith
             if (key.indexOf("effect") == 0) {
-                var effect = levelData[key];
+                var effect = $$.extend(levelData[key],{'name':key,'index':parseInt(key.replace("effect", ""))});
+                /*for(var i in levelData[key]){
+                    effect[i]=levelData[key][i]
+                }*/
+                if (lv === 0) {
+                    effect['value'] = 0;
+                }
                 effects.push(effect);
-                effect['name'] = key;
-                effect.index = parseInt(key.replace("effect", ""));
+                //effect['name'] = key;
+                //effect.index = parseInt(key.replace("effect", ""));
             }
         }
         return effects.sort(function (a, b) {
