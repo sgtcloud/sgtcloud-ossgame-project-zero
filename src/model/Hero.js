@@ -1,7 +1,7 @@
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
-    var effect_props = ["life", "attack", "tap"];
+    var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify"];
     var star = heroData.star;
     var data = dataSource.heros[id];
     var equips = [];
@@ -15,16 +15,17 @@ var Hero = function (heroData) {
     }
     for (var i in data.skills) {
         var skillId = data.skills[i];
-        var skill= readCache(skillId);
-        var skillLv=(skill&&skill['level'])||0;
-        skills[i] = new Skill(skillId, skillLv,id);
+        var skill = readCache(skillId);
+        var skillLv = (skill && skill['level']) || 0;
+        skills[i] = new Skill(skillId, skillLv, id);
     }
-    function readCache(skillId){
-        var skill=heroData.skills[skillId]
-        if(skill){
+    function readCache(skillId) {
+        var skill = heroData.skills[skillId]
+        if (skill) {
             return skill;
         }
     }
+
     this.getIcon = function () {
         return icon;
     }
@@ -71,8 +72,8 @@ var Hero = function (heroData) {
         return getSpecificLevelData(data, level || lv);
     }
 
-    this.getResurge=function(){
-        return getLevelData(data,'resurge',this.getLv())
+    this.getResurge = function () {
+        return getLevelData(data, 'resurge', this.getLv())
     }
 
     this.getId = function () {
@@ -156,7 +157,15 @@ var Hero = function (heroData) {
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        return val * rate;
+        tmpVal = PlayerData["tmp_" + propName + "_rate"];
+        if (tmpVal) {
+            rate += tmpVal / 100;
+        }
+        if (propName === "atk_period") {
+            return val / rate;
+        } else {
+            return val * rate;
+        }
     };
     this.getLife = function () {
         if (this.isLocked()) {
@@ -181,16 +190,22 @@ var Hero = function (heroData) {
         return val;
     };
     this.getCtrChance = function () {
-        var val = data.ctr_chance;
-        return val;
+        if (this.isLocked()) {
+            return 0;
+        }
+        return this.calcProp("ctr_chance");
     };
     this.getCtrModify = function () {
-        var val = data.ctr_modify;
-        return val;
+        if (this.isLocked()) {
+            return 0;
+        }
+        return this.calcProp("ctr_modify");
     };
     this.getAnimateDelay = function () {
-        var val = getLevelData(data, "atk_period", lv);
-        return val;
+        if (this.isLocked()) {
+            return 0;
+        }
+        return this.calcProp("atk_period");
     };
 
     this.doUnlock = function () {
@@ -206,7 +221,7 @@ var Hero = function (heroData) {
         lv = lv + 1;
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
-                player.heroes[i]['lv']=lv;
+                player.heroes[i]['lv'] = lv;
             }
         }
     }

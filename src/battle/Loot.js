@@ -14,17 +14,17 @@ var Loot = cc.Node.extend({
 
     initData: function (unit, size) {
         this.unit = unit;
-        if (unit == "gold") {
-            if (size == "little") {
+        if (unit === "gold") {
+            if (size === "little") {
                 this.lootSprite = ccs.load(res.little_gold_json).node;
                 this.action = ccs.load(res.little_gold_json).action;
-            } else if (size == "some") {
+            } else if (size === "some") {
                 this.lootSprite = ccs.load(res.some_gold_json).node;
                 this.action = ccs.load(res.some_gold_json).action;
-            } else if (size == "amount") {
+            } else if (size === "amount") {
                 this.lootSprite = ccs.load(res.amount_gold_json).node;
                 this.action = ccs.load(res.amount_gold_json).action;
-            } else {
+            } else if (size === "huge"){
                 this.lootSprite = ccs.load(res.huge_gold_json).node;
                 this.action = ccs.load(res.huge_gold_json).action;
             }
@@ -102,38 +102,42 @@ var Loot = cc.Node.extend({
     }
 });
 
-Loot.generateLoots = function (bonus, pos) {
-    var value = bonus.value;
+Loot.generateLoots = function (bonusSrc, pos) {
     var lootSprites = [];
-    if (value == 1) {
-        lootSprites.push(new Loot(bonus.unit, "little"));
-    } else if (value > 1 && value <= 5) {
-        this.createLootSprites(lootSprites, 3, "little", bonus);
-    } else if (value > 5 && value <= 10) {
-        this.createLootSprites(lootSprites, 5, "little", bonus);
-    } else if (value > 10 && value <= 50) {
-        lootSprites.push(new Loot(bonus.unit, "some"));
-        this.createLootSprites(lootSprites, 10, "little", bonus);
-    } else if (value > 50 && value <= 100) {
-        lootSprites.push(new Loot(bonus.unit, "amount"));
-        this.createLootSprites(lootSprites, 5, "little", bonus);
-    } else if (value > 100 && value <= 500) {
-        lootSprites.push(new Loot(bonus.unit, "huge"));
-        this.createLootSprites(lootSprites, 10, "little", bonus);
-    } else if (value > 500 && value <= 1000) {
-        lootSprites.push(new Loot(bonus.unit, "some"));
-        lootSprites.push(new Loot(bonus.unit, "huge"));
-        this.createLootSprites(lootSprites, 15, "little", bonus);
-    } else if (value > 1000 && value <= 5000) {
-        lootSprites.push(new Loot(bonus.unit, "amout"));
-        lootSprites.push(new Loot(bonus.unit, "huge"));
-        this.createLootSprites(lootSprites, 20, "little", bonus);
-    } else {
-        lootSprites.push(new Loot(bonus.unit, "some"));
-        lootSprites.push(new Loot(bonus.unit, "amout"));
-        lootSprites.push(new Loot(bonus.unit, "huge"));
-        this.createLootSprites(lootSprites, 20, "little", bonus);
+    if (bonusSrc.unit === "gold") {
+        var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
+        bonus.value = bonus.value * (1 + PlayerData.globe_gold_rate / 100);
+        if (bonus.value == 1) {
+            lootSprites.push(new Loot(bonus.unit, "little"));
+        } else if (bonus.value > 1 && bonus.value <= 5) {
+            this.createLootSprites(lootSprites, 3, "little", bonus);
+        } else if (bonus.value > 5 && bonus.value <= 10) {
+            this.createLootSprites(lootSprites, 5, "little", bonus);
+        } else if (bonus.value > 10 && bonus.value <= 50) {
+            lootSprites.push(new Loot(bonus.unit, "some"));
+            this.createLootSprites(lootSprites, 10, "little", bonus);
+        } else if (bonus.value > 50 && bonus.value <= 100) {
+            lootSprites.push(new Loot(bonus.unit, "amount"));
+            this.createLootSprites(lootSprites, 5, "little", bonus);
+        } else if (bonus.value > 100 && bonus.value <= 500) {
+            lootSprites.push(new Loot(bonus.unit, "huge"));
+            this.createLootSprites(lootSprites, 10, "little", bonus);
+        } else if (bonus.value > 500 && bonus.value <= 1000) {
+            lootSprites.push(new Loot(bonus.unit, "some"));
+            lootSprites.push(new Loot(bonus.unit, "huge"));
+            this.createLootSprites(lootSprites, 15, "little", bonus);
+        } else if (bonus.value > 1000 && bonus.value <= 5000) {
+            lootSprites.push(new Loot(bonus.unit, "amout"));
+            lootSprites.push(new Loot(bonus.unit, "huge"));
+            this.createLootSprites(lootSprites, 20, "little", bonus);
+        } else {
+            lootSprites.push(new Loot(bonus.unit, "some"));
+            lootSprites.push(new Loot(bonus.unit, "amout"));
+            lootSprites.push(new Loot(bonus.unit, "huge"));
+            this.createLootSprites(lootSprites, 20, "little", bonus);
+        }
     }
+
     for (var i in lootSprites) {
         // 跨panel的移动逻辑需要添加到scene中
         lootSprites[i].setPosition(pos);
