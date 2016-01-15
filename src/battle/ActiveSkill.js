@@ -44,9 +44,11 @@ var ActiveSkill = cc.Node.extend({
 
     cast: function () {
         if (this.target) {
+            customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
+            this.hitEffect.runAction(cc.fadeIn(1));
             this.runSkillEffect(this.target.getPosition(), "boom");
+            this.target.doDamage(this.damage);
         }
-        this.target.doDamage(this.damage);
     },
 
     onCastFinish: function () {
