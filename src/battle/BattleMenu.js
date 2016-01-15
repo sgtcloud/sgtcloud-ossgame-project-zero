@@ -311,7 +311,7 @@ var HeroListMenu = BattleMenu.extend({
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
 
-                revive_btn.addClickEventListener(function () {
+                elements.revive_btn.btn.addClickEventListener(function () {
                     if (hero.getCurrentLife() <= 0) {
                         var resurge = hero.getResurge();
                         PlayerData.updateResource([resurge['cost']]);
