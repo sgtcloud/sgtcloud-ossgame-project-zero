@@ -46,10 +46,10 @@ var FairyUnit = cc.Node.extend({
         this.animation.play(name, falg);
     },
     initFly: function(){
-        var dropMove = cc.jumpTo(0.2, cc.p(600, 600), 0, 1);
-        var move2 = cc.moveTo(4, cc.p(600, 550));
-        var move1 = cc.moveTo(4, cc.p(0, 550));
-        var move3 = cc.moveTo(4, cc.p(0, 600));
+        var dropMove = cc.jumpTo(0.2, cc.p(600, 250), 0, 1);
+        var move2 = cc.moveTo(4, cc.p(600, 300));
+        var move1 = cc.moveTo(4, cc.p(300, 250));
+        var move3 = cc.moveTo(4, cc.p(0, 300));
         var delay = cc.delayTime(1);
         var reversal = cc.callFunc(function () {
             this.node.setScale(-1, 1);
