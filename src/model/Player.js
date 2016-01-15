@@ -82,98 +82,107 @@ var player = {
     ]
 };
 var PlayerData = {
-    init: function () {
-        var save = localStorage.getItem("save");
-        if (save) {
-            player = JSON.parse(save);
+        init: function () {
+            var save = localStorage.getItem("save");
+            if (save) {
+                player = JSON.parse(save);
+            }
+            this.initPlayerData(save);
+        },
+        initPlayerData: function (save) {
+            for (var i in player.heroes) {
+                this.heroesData[i] = new Hero(player.heroes[i]);
+                if (!save) {
+                    player.heroes[i].life = this.heroesData[i].getLife();
+                }
+            }
+            this.stageData = new Stage(player.stage);
+            this.refreshGlobeProps();
+            this.countOfflineReward();
+        },
+        updatePlayer: function () {
+            localStorage.setItem("save", JSON.stringify(player));
         }
-        this.initPlayerData(save);
-    },
-    initPlayerData: function (save) {
-        for (var i in player.heroes) {
-            this.heroesData[i] = new Hero(player.heroes[i]);
-            if (!save) {
-                player.heroes[i].life = this.heroesData[i].getLife();
+        ,
+        getHeroes: function () {
+            return this.heroesData;
+        },
+        delPlayer: function () {
+            localStorage.removeItem("save");
+        }
+        ,
+        getHeroesData: function (id) {
+            return this.heroesData[id];
+        }
+        ,
+        getStageData: function () {
+            return this.stageData;
+        }
+        ,
+        getSkillsByHeroId: function (heroId) {
+            var hero = this.getHeroesData(heroId);
+            return hero.getSkills();
+        }
+        ,
+        sumHeroesProp: function (prop) {
+            var val = 0;
+            for (var i in this.heroesData) {
+                var hero = this.heroesData[i];
+                val += hero[prop]();
+            }
+            return val;
+        }
+        ,
+        getTotalAttck: function () {
+            return this.sumHeroesProp("getAttack");
+        }
+        ,
+        getTotalLife: function () {
+            return this.sumHeroesProp("getLife");
+        }
+        ,
+        getTotalHit: function () {
+            return this.sumHeroesProp("getHit");
+        }
+        ,
+        createResourceData: function (unit, val) {
+            return {unit: unit, value: val};
+        }
+        ,
+        updateResource: function (resources) {
+            if (!resources) {
+                return;
+            }
+            if (resources instanceof Array) {
+                for (var i = 0; i < resources.length; i++) {
+                    this.updateSingleResource(resources[i]);
+                }
+            } else {
+                this.updateSingleResource(resources);
             }
         }
-        this.stageData = new Stage(player.stage);
-        this.refreshGlobeProps();
-        this.countOfflineReward();
-    },
-    updatePlayer: function () {
-        localStorage.setItem("save", JSON.stringify(player));
-    }
-    ,
-    delPlayer: function () {
-        localStorage.removeItem("save");
-    }
-    ,
-    getHeroesData: function (id) {
-        return this.heroesData[id];
-    }
-    ,
-    getStageData: function () {
-        return this.stageData;
-    }
-    ,
-    sumHeroesProp: function (prop) {
-        var val = 0;
-        for (var i in this.heroesData) {
-            var hero = this.heroesData[i];
-            val += hero[prop]();
-        }
-        return val;
-    }
-    ,
-    getTotalAttck: function () {
-        return this.sumHeroesProp("getAttack");
-    }
-    ,
-    getTotalLife: function () {
-        return this.sumHeroesProp("getLife");
-    }
-    ,
-    getTotalHit: function () {
-        return this.sumHeroesProp("getHit");
-    }
-    ,
-    createResourceData: function (unit, val) {
-        return {unit: unit, value: val};
-    }
-    ,
-    updateResource: function (resources) {
-        if (!resources) {
-            return;
-        }
-        if (resources instanceof Array) {
-            for (var i = 0; i < resources.length; i++) {
-                this.updateSingleResource(resources[i]);
+        ,
+        updateSingleResource: function (resource) {
+            if (player.resource[resource.unit]) {
+                player.resource[resource.unit] += resource.value;
+            } else {
+                cc.log("unknown resource type:" + resource.unit);
             }
-        } else {
-            this.updateSingleResource(resources);
         }
-    }
-    ,
-    updateSingleResource: function (resource) {
-        if (player.resource[resource.unit]) {
-            player.resource[resource.unit] += resource.value;
-        } else {
-            cc.log("unknown resource type:" + resource.unit);
+        ,
+        updateIntoBattleTime: function () {
+            player.into_stage_battle_timestamp = Date.parse(new Date());
+            this.updatePlayer();
         }
-    },
-    updateIntoBattleTime: function () {
-        player.into_stage_battle_timestamp = Date.parse(new Date());
-        this.updatePlayer();
-    }
-    ,
-    getIntoBattleTime: function () {
-        return player.into_stage_battle_timestamp;
-    }
-    ,
-    countOfflineTime: function () {
-        var intoBattleTime = this.getIntoBattleTime();
-        if (intoBattleTime > 0) {
-            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
+        ,
+        getIntoBattleTime: function () {
+            return player.into_stage_battle_timestamp;
+        }
+        ,
+        countOfflineTime: function () {
+            var intoBattleTime = this.getIntoBattleTime();
+            if (intoBattleTime > 0) {
+                var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
 
             if (offlineTime > 1) {
                 if (offlineTime > (60 * 24)) {
@@ -268,6 +277,15 @@ var PlayerData = {
             this.globe_ctr_chance_rate += this.heroesData[i]["globe_ctr_chance_rate"];
             this.globe_ctr_modify_rate += this.heroesData[i]["globe_ctr_modify_rate"];
         }
-    },
-};
+        ,
+        getCurrentRanksByType: function (type) {
+            return dataSource.players;
+        }
+        ,
+        getMyRankByType: function (type) {
+            return 1;
+        }
+
+    }
+    ;
 
