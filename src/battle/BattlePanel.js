@@ -164,8 +164,7 @@ var BattlePanel = cc.Node.extend({
                     if (cc.rectContainsPoint(rect, locationInNode)) {
                         //cc.log(locationInNode.x + " " + locationInNode.y);
                         self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
-                        if(!self.FairyUnit || !self.FairyUnit.isRunning())
-                            self.showFairyAndChest();
+
                         return true;
                     }
                     return false;
@@ -195,9 +194,9 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
-            if (self.times != undefined) {
+            /*if (self.times != undefined) {
                 clearInterval(self.times);
-            }
+            }*/
 
         });
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
@@ -210,8 +209,28 @@ var BattlePanel = cc.Node.extend({
         });
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
-    },
 
+        this.update = function (dt) {
+            {
+                if(this.intervalState){
+                    this.intervalTime += dt;
+                    if(this.intervalTime > 10){
+                        this.showFairyAndChest();
+                    }
+                }
+                var stage = PlayerData.getStageData();
+                if (stage.isBossBattle()) {
+                    this.updateBossBattleTime(dt,stage);
+                }
+            }
+        },
+        this.reset();
+        this.scheduleUpdate();
+    },
+    reset:function(){
+        this.intervalTime = 0;
+        this.intervalState = true;
+    },
     loadRewardBtn: function () {
         if (player.not_get_reward["gold"] > 0) {
             this.rewardBtn.visible = true;
@@ -255,21 +274,30 @@ var BattlePanel = cc.Node.extend({
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
-        var boosTimeMax = stage.getBossTimeMax();
-        var self = this;
+        this.boosTimeMax = stage.getBossTimeMax();
+        //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-        this.timeText.setString(boosTimeMax);
-        this.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
+       /* this.timeText.setString(this.boosTimeMax);
+        this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
 
-        this.times = setInterval(function () {
-            if (boosTimeMax == 0) {
+       /* this.times = setInterval(function () {
+            if (self.boosTimeMax == 0) {
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
             } else {
-                boosTimeMax--;
-                self.timeText.setString(boosTimeMax);
-                self.timeBar.setPercent(boosTimeMax / stage.getBossTimeMax() * 100);
+                self.boosTimeMax--;
+                self.timeText.setString(self.boosTimeMax);
+                self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
             }
-        }, 1000);
+        }, 1000);*/
+    },
+    updateBossBattleTime: function(dt,stage){
+        if (Math.floor(this.boosTimeMax) < 0) {
+            customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+        } else {
+            this.boosTimeMax = this.boosTimeMax - dt;
+            this.timeText.setString(Math.floor(this.boosTimeMax));
+            this.timeBar.setPercent(Math.floor(this.boosTimeMax) / stage.getBossTimeMax() * 100);
+        }
     },
     initBattleEnemies: function (stage) {
         this.enemySprites.clear();
@@ -341,9 +369,9 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-        if (this.times != undefined) {
+       /* if (this.times != undefined) {
             clearInterval(this.times);
-        }
+        }*/
         // wait for 1 second to start next battle
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);
@@ -359,22 +387,23 @@ var BattlePanel = cc.Node.extend({
         PlayerData.updateIntoBattleTime();
     },
 
-    showFairyAndChest: function(){
+    showFairyAndChest: function () {
+        this.intervalState = false;
         //this.ChestUnit = new ChestUnit();
         this.FairyUnit = new FairyUnit();
         //this.ChestUnit.setPosition(cc.p(600,600));
         var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
-        this.FairyUnit.setPosition(startPos);
+       // this.FairyUnit.setPosition(startPos);
 
-       // this.addChild(this.ChestUnit,2011);
-        this.addChild(this.FairyUnit,2010);
+        // this.addChild(this.ChestUnit,2011);
+        this.addChild(this.FairyUnit, 2010);
 
         //this.FairyUnit.bindClickEvent();
         //this.ChestUnit.bindClickEvent();
 
     },
-    hidenFairyAdnChest: function(){
-        if(this.FairyUnit){
+    hidenFairyAdnChest: function () {
+        if (this.FairyUnit) {
             this.FairyUnit.removeFromParent(true);
             //this.ChestUnit.removeFromParent(true);
         }

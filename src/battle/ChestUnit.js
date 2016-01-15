@@ -8,6 +8,7 @@ var ChestUnit = cc.Node.extend({
         var json = ccs.load(res.chest03_json);
         this.node = json.node;
         this.animation = json.action;
+        this.animationState = 'close';
         var chest = this.node.getChildByName("chest03");
         {
             //去除CCS导出文件位移会自带缓动效果的问题
@@ -24,15 +25,20 @@ var ChestUnit = cc.Node.extend({
                 swallowTouches: true,
                 onMouseDown: function (touch, event) {
                     //self.FairyUnit.convert
-                    var touchPosition = self.convertToNodeSpace(touch.getLocation());
-                    var s = chest.getContentSize();
-                    var rect = cc.rect(0, 0, s.width, s.height);
-                    if (cc.rectContainsPoint(rect, touchPosition)) {
-                        cc.log("获取金币");
-                        self.stopAllActions();
-                        self.onOpenChest();
+                    if(self.animationState == 'close'){
+                        var touchPosition = chest.convertToNodeSpace(touch.getLocation());
+                        var s = chest.getContentSize();
+                        var rect = cc.rect(0, 0, s.width, s.height);
+                        if (cc.rectContainsPoint(rect, touchPosition)) {
+                            cc.log("获取金币");
+                            self.stopAllActions();
+                            self.playAnimation('open',false);
+                            self.onOpenChest();
+                        }
+                        return true;
                     }
-                    return true;
+                    return false;
+
                 },
             });
             cc.eventManager.addListener(listener, this);
@@ -44,23 +50,33 @@ var ChestUnit = cc.Node.extend({
         this.animation.play(name, falg);
     },
     initChest: function(){
-        var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 108 - 16);
+        var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 36 - 16);
         this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
         var dropMove = cc.jumpTo(2, cc.p(280,250), 0, 3);
-        /*var move2 = cc.moveTo(4, cc.p(600, 550));
-        var move1 = cc.moveTo(4, cc.p(0, 550));
-        var move3 = cc.moveTo(4, cc.p(0, 600));*/
         var delay = cc.delayTime(5);
 
         var removeNode = cc.callFunc(function () {
             //打开
             this.playAnimation("open",false);
+            this.onOpenChest();
             //this.removeFromParent(true);
         }, this);
         this.runAction(cc.sequence(this.appear,cc.delayTime(1),/*dropMove,*/ delay, removeNode));
     },
+    generateLoot: function () {
+        var pos = cc.p(this.getPositionX() + this.getParent().getPositionX(), this.getPositionY() + this.getParent().getPositionY());
+        var rank = PlayerData.getStageData().getOfflineRewardByUnit("gold");
+        rank.value = rank.value * 5;
+        Loot.generateLoots(rank, pos);
+    },
     onOpenChest: function(){
-        var random = Math.floor(Math.random()*10);
+        this.animationState = 'open';
+        var a = cc.delayTime(0.5);
+        var b = cc.fadeTo(0.5, 0);
+        this.node.runAction(cc.sequence(a,b, cc.callFunc(function () {
+            this.removeFromParent(true);
+        }, this)));
+        var random = getRandomInt(0,10);//Math.floor(Math.random()*10);
         if(random == 0){
             //45s内金币掉落2倍；
         }else if(random == 1){
@@ -69,8 +85,9 @@ var ChestUnit = cc.Node.extend({
             //30s内点击怪物掉落怪物金币的20%
         }else{
             //金子
+            this.generateLoot();
         }
-        this.removeFromParent(true);
+        this.parent.reset();
     }
 
 });
