@@ -32,7 +32,7 @@ var SkillIcon = function (battle, root, index, skill) {
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
-
+    this.root = root;
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
     //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
@@ -49,6 +49,7 @@ var SkillIcon = function (battle, root, index, skill) {
         if (skill) {
             this.skill = skill;
             var that = this;
+            //this.button.loadTexture("res/icon/skills/" + skill.getIcon());
             this.button.addClickEventListener(function () {
                 console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                 customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
@@ -328,9 +329,15 @@ var HeroListMenu = BattleMenu.extend({
                         PlayerData.updateResource([resurge['cost']]);
                         PlayerData.updatePlayer();
                         console.log('请注意，英雄' + hero.getId() + '请求买活....');
-                        customEventHelper.sendEvent(EVENT.HERO_REVIVE, hero);
+                        customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                     }
                 });
+                customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
+                    var data = event.getUserData();
+                    if (data['id'] === hero.getId()) {
+                        elements.die_time_text.setString(Math.round(data['recover']));
+                    }
+                })
                 setFont([heroName_text, lv, elements.upgrade_btn.buff_text]);
                 if (hero.getCurrentLife() > 0) {
                     die_text.setVisible(false);

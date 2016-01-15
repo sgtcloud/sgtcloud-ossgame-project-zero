@@ -65,6 +65,10 @@ var EVENT = {
      * 拉伸战斗场景
      */
     SCALE_BATTLE_FIELD: "SCALE_BATTLE_FIELD"
+    /**
+     * 英雄买活
+     */
+    HERO_BUY_REVIVE: "HERO_BUY_REVIVE"
 };
 
 var customEventHelper = {
