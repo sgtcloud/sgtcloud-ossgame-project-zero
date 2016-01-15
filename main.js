@@ -46,17 +46,6 @@
  }
  *
  */
-var $$ = {};
-$$.extend = function (a, b) {
-    if (typeof b === "undefined") {
-        return a;
-    }
-    for (var i in a) {
-        if (!b[i])
-            b[i] = a[i];
-    }
-    return b;
-}
 
 cc.game.onStart = function () {
     if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it

@@ -1,5 +1,15 @@
 var game;
-
+var $$ = {};
+$$.extend = function (a, b) {
+    if (typeof b === "undefined") {
+        return a;
+    }
+    for (var i in a) {
+        if (!b[i])
+            b[i] = a[i];
+    }
+    return b;
+}
 function initGame() {
     game = new MainScene();
     PlayerData.init();
