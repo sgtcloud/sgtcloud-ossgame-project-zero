@@ -4,6 +4,7 @@
 var SkillEffectMappings = {
     "attack_rate": {"name": "基础秒伤", "type": "rate","clickEvent":function(){}},
     "attack_value": {"name": "秒伤值", "type": "int","clickEvent":function(){}},
+    "magma_blaster":{"name": "秒伤值1", "type": "int","clickEvent":function(){}},
     "life_rate": {"name": "基础生命值", "type": "rate","clickEvent":function(hero,skill,equip){
         var effects=skill.traverseSkillEffects();
         for (var i in effects){

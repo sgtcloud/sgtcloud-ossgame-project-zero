@@ -39,7 +39,7 @@ var BattleUnit = cc.Node.extend({
         }
         //调用显示伤害值
         this.showDamageNumber = function (val, ctr) {
-            var dmg = DamageNumber.createFromPool(val, ctr);
+            var dmg = DamageNumber.create(val, ctr);
             dmg.setPosition(0, 64);
             this.addChild(dmg);
             dmg.fire();
@@ -61,7 +61,6 @@ var BattleUnit = cc.Node.extend({
         };
         //受到伤害时被调用 为了扩展
         this.onDamaged = function () {
-            console.log("Unit Damage");
         };
         //死亡时被调用 为了扩展
         this.onDead = function () {

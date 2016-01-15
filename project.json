@@ -28,6 +28,7 @@
     "src/LoaderScene.js",
     "src/battle/BattleConst.js",
     "src/battle/Loot.js",
+    "src/battle/ActiveSkill.js",
     "src/battle/DamageNumber.js",
     "src/battle/BattleUnit.js",
     "src/battle/HeroUnit.js",
@@ -38,6 +39,9 @@
     "src/battle/MainScene.js",
     "src/battle/BattleMenu.js",
     "src/battle/Popup1.js",
+    "src/GamePopup.js",
+    "src/battle/ChestUnit.js",
+    "src/battle/FairyUnit.js",
     "src/apps.js"
   ]
 }

@@ -54,7 +54,7 @@ var DamageNumber = cc.Node.extend({
 });
 
 // 重用对象
-DamageNumber.createFromPool = function (val, ctr) {
+DamageNumber.create = function (val, ctr) {
     var pool = cc.pool;
     if (pool.hasObject(DamageNumber)) {
         return pool.getFromPool(DamageNumber, val, ctr);

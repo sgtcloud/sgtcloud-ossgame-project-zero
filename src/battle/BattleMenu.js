@@ -773,7 +773,7 @@ var ShopLayerMenu = BattleMenu.extend({
             });
         };
         this.buyGold = function (gem, gold) {
-            if (player.gem >= gem) {
+            if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
                     , PlayerData.createResourceData("gem", -gem)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
@@ -826,17 +826,17 @@ var ShopLayerMenu = BattleMenu.extend({
             });
         }
         this.buyGoods = function (data, goods) {
-            if (/*PlayerData.getAmountByUnit(data.unit)*/player.gold >= data.value) {
+            if (PlayerData.getAmountByUnit(data.unit) >= data.value) {
                 PlayerData.updateResource([PlayerData.createResourceData(data.unit, -data.value)]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 PlayerData.updatePlayer();
                 // wait to refact with new resource logic
-                player.packs.push({
+                /*player.packs.push({
                     "packType": "equip",
                     "relateId": goods.propId,
                     "num": goods.num,
                     "level": 1
-                });
+                });*/
                 //new Popup1("友情提示1","购买成功");
             } else {
                 new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
