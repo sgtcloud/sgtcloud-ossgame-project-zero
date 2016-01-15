@@ -23,20 +23,18 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (battle, root, index) {
+var SkillIcon = function (battle, root, index,skill) {
     this.button = root.getChildByName('skill_btn');
     this.deadTimeTitle = root.getChildByName('die_text');
     this.deadTimeText = root.getChildByName('die_time_text');
     this.coolTimeText = root.getChildByName('CD_time_text');
-
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
-
-    this.button.addClickEventListener(function () {
-        cc.log("you click skill_btn" + index);
-    });
-
+    //this.button.addClickEventListener(function(){
+    //    console.log('触发主动技能：'+skill);
+    //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
+    //});
     this.setVisible = function (visit) {
         root.setVisible(visit);
     }
@@ -65,6 +63,9 @@ var SkillIcon = function (battle, root, index) {
         this.button.setEnabled(state);
         this.button.setBright(state);
     }
+    this.addClickEvent=function(func){
+        this.button.addClickEventListener(func);
+    }
 }
 function getHeroActivtySkillls(hero) {
     var skills = hero.getSkills();
@@ -85,8 +86,12 @@ var SkillListMenu = BattleMenu.extend({
             var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
             var skillBtn = new SkillIcon(battlePanel, pane, i);
             if (i < PlayerData.getHeroes().length) {
-                skillBtn.setVisible(true);
                 var activitySkills=getHeroActivtySkillls(PlayerData.getHeroes()[i]);
+                skillBtn.setVisible(true);
+                skillBtn.addClickEvent(function(){
+                    console.log('触发主动技能：'+activitySkills[0]);
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL,activitySkills[0]);
+                })
             } else {
                 skillBtn.setVisible(false);
             }
@@ -306,7 +311,7 @@ var HeroListMenu = BattleMenu.extend({
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
 
-                revive_btn.addClickEventListener(function () {
+                elements.revive_btn.btn.addClickEventListener(function () {
                     if (hero.getCurrentLife() <= 0) {
                         var resurge = hero.getResurge();
                         PlayerData.updateResource([resurge['cost']]);
