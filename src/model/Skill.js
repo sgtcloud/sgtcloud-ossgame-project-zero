@@ -12,6 +12,9 @@ var Skill = function (id, lv, heroId) {
     this.getIcon = function () {
         return icon;
     }
+    this.getType = function(){
+        return type;
+    }
     this.getUnlockLevel = function () {
         return getLevelData(data, 'unlockLevel', this.getLv());
     }

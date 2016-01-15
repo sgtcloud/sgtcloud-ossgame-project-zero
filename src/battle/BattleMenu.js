@@ -23,7 +23,7 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkkillIcon = function (battle, root, index) {
+var SkillIcon = function (battle, root, index) {
     this.button = root.getChildByName('skill_btn');
     this.deadTimeTitle = root.getChildByName('die_text');
     this.deadTimeText = root.getChildByName('die_time_text');
@@ -66,6 +66,16 @@ var SkkillIcon = function (battle, root, index) {
         this.button.setBright(state);
     }
 }
+function getHeroActivtySkillls(hero) {
+    var skills = hero.getSkills();
+    var result = [];
+    for (var i in skills) {
+        if (skills[i].getType() === 0) {
+            result.push(skills[i]);
+        }
+    }
+    return result;
+}
 var SkillListMenu = BattleMenu.extend({
     ctor: function (battlePanel) {
         var skillBtnNum = 7;
@@ -73,33 +83,17 @@ var SkillListMenu = BattleMenu.extend({
         var skills = [];
         for (var i = 0; i < skillBtnNum; i++) {
             var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
-            var skill = new SkkillIcon(battlePanel, pane, i);
-            if (i < player.heroes.length) {
-                skill.setVisible(true);
+            var skillBtn = new SkillIcon(battlePanel, pane, i);
+            if (i < PlayerData.getHeroes().length) {
+                skillBtn.setVisible(true);
+                var activitySkills=getHeroActivtySkillls(PlayerData.getHeroes()[i]);
             } else {
-                skill.setVisible(false);
+                skillBtn.setVisible(false);
             }
-            skills[i] = skill;
+            skills.push(skillBtn);
         }
         function format(time) {
             return new Date(time).Format('mm:ss');
-        }
-
-        //为了显示CD和复活的时候显示的格式
-        Date.prototype.Format = function (fmt) { //author: meizz
-            var o = {
-                "M+": this.getMonth() + 1, //�·�
-                "d+": this.getDate(), //��
-                "h+": this.getHours(), //Сʱ
-                "m+": this.getMinutes(), //��
-                "s+": this.getSeconds(), //��
-                "q+": Math.floor((this.getMonth() + 3) / 3), //����
-                "S": this.getMilliseconds() //����
-            };
-            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-            for (var k in o)
-                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-            return fmt;
         }
 
         this.refreshSkillState = function () {
@@ -175,8 +169,8 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.layer.setVisible(false);
                     elements.maxLevel_btn.layer.setVisible(true);
                 } else {
-                    (!elements.upgrade_btn.layer.isVisible())&&elements.upgrade_btn.layer.setVisible(true);
-                    elements.maxLevel_btn.layer.isVisible()&&elements.maxLevel_btn.layer.setVisible(false);
+                    (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
+                    elements.maxLevel_btn.layer.isVisible() && elements.maxLevel_btn.layer.setVisible(false);
                     var nextlevelData = target.getLevelData(target.getLv() + 1);
                     var nextLevelLife = nextlevelData['life'];
                     var unit = nextlevelData['upgrade']['unit'];
@@ -197,23 +191,6 @@ var HeroListMenu = BattleMenu.extend({
                         listener(event, elements);
                     });
                 }
-            }
-
-            function underLevel(root, target, elements) {
-                // TODO
-            }
-
-            function maxLevel(root, target, elements) {
-                if (target.isMaxLevel()) {
-                    elements.btn.setEnabled(false);
-                    elements.btn.setBright(false);
-                    elements.upMaxText.setVisible(true);
-                    elements.buffText.setVisible(false);
-                    elements.buffNum.setVisible(false);
-                    elements.gold.setVisible(false);
-                    elements.goldText.setVisible(false);
-                }
-                // TODO
             }
 
             function validateAmountEnough(upgradeLevelData) {
@@ -316,7 +293,7 @@ var HeroListMenu = BattleMenu.extend({
                 elements.die_text = die_text;
                 elements.die_time_text = die_time_text;
                 elements.revive_btn = {};
-                elements.revive_btn.layer=revive_btn;
+                elements.revive_btn.layer = revive_btn;
                 elements.revive_btn.btn = revive_btn.getChildByName('btn');
                 elements.revive_btn.diamond_text = diamond_text;
                 diamond_text.ignoreContentAdaptWithSize(true);
@@ -491,13 +468,15 @@ var HeroListMenu = BattleMenu.extend({
             function lockSkill(hero, skill, elements) {
                 (!elements.lock_btn.layer.isVisible()) && elements.lock_btn.layer.setVisible(true);
                 elements.upgrade_btn.layer.isVisible() && elements.upgrade_btn.layer.setVisible(false);
-                elements.lock_btn.level_text.setString('Lv.'+skill.getUnlockLevel());
+                elements.lock_btn.level_text.setString('Lv.' + skill.getUnlockLevel());
             }
-            function lockSkillIfNecessary(hero,skill,elements){
+
+            function lockSkillIfNecessary(hero, skill, elements) {
                 if (!canUnlockSkill(hero, skill)) {
-                    lockSkill(hero,skill,elements);
+                    lockSkill(hero, skill, elements);
                 }
             }
+
             var lockBtnLayoutTemplate = skillTemp.getChildByName('lock_btn');
             var lockBtnPosition = lockBtnLayoutTemplate.getPosition();
             var lockBtnTemplate = lockBtnLayoutTemplate.getChildByName('btn');
@@ -832,11 +811,11 @@ var ShopLayerMenu = BattleMenu.extend({
                 PlayerData.updatePlayer();
                 // wait to refact with new resource logic
                 /*player.packs.push({
-                    "packType": "equip",
-                    "relateId": goods.propId,
-                    "num": goods.num,
-                    "level": 1
-                });*/
+                 "packType": "equip",
+                 "relateId": goods.propId,
+                 "num": goods.num,
+                 "level": 1
+                 });*/
                 //new Popup1("友情提示1","购买成功");
             } else {
                 new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
