@@ -202,11 +202,32 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
             self.goldPosition = event.getUserData();
         });
+        customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
+            var duration = event.getUserData();
+            var shockActions = [];
+            for (var i = 0; i < duration; i++) {
+                var offsetX = Math.random() * 32 - 16;
+                var offsetY = Math.random() * 32 - 16;
+                var shock = cc.moveBy(0.03, cc.p(offsetX, offsetY));
+                var shockReverse = cc.moveBy(0.06, cc.p(offsetX * -2, offsetY * -2));
+                shockActions.push(shock);
+                shockActions.push(shockReverse);
+                shockActions.push(shock.clone());
+            }
+            self.runAction(cc.sequence(shockActions));
+        });
+        customEventHelper.bindListener(EVENT.SCALE_BATTLE_FIELD, function (event) {
+            var scale1 = cc.scaleTo(0.1, 1.05);
+            var scale1Back = cc.scaleTo(0.15, 1.0);
+            var scale2 = cc.scaleTo(0.05, 1.025);
+            var scale2Back = cc.scaleTo(0.075, 1.0);
+            self.runAction(cc.sequence(scale1, scale1Back, scale2, scale2Back));
+        });
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
             this.addChild(activeSkill, 2000);
             activeSkill.cast();
-        });
+        }.bind(this));
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
 

@@ -52,11 +52,23 @@ var EVENT = {
     /**
      * 刷新英雄属性
      */
-    HERO_REFRESH_PROPS:"HERO_REFRESH_PROPS",
+    HERO_REFRESH_PROPS: "HERO_REFRESH_PROPS",
     /**
-     * 刷新英雄属性
+     * 释放主动技能
      */
-    CAST_SKILL:"CAST_SKILL"
+    CAST_SKILL: "CAST_SKILL",
+    /**
+     * 震动战斗场景
+     */
+    SHOCK_BATTLE_FIELD: "SHOCK_BATTLE_FIELD",
+    /**
+     * 拉伸战斗场景
+     */
+    SCALE_BATTLE_FIELD: "SCALE_BATTLE_FIELD",
+    /**
+     * 英雄买活
+     */
+    HERO_BUY_REVIVE: "HERO_BUY_REVIVE"
 };
 
 var customEventHelper = {
