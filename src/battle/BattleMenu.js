@@ -302,6 +302,8 @@ var HeroListMenu = BattleMenu.extend({
                 revive_btn.setPosition(revive_btnPosition);
                 root.addChild(revive_btn);
                 var diamond_text = revive_btn.getChildByName('diamond_text');
+                die_text.setColor(cc.color(255,0,0));
+                die_time_text.setColor(cc.color(255,0,0));
                 elements.icon = icon;
                 elements.lv = lv;
                 elements.dps_text = dps_text;
@@ -317,7 +319,7 @@ var HeroListMenu = BattleMenu.extend({
                 elements.upgrade_btn.per.setVisible(false);
                 dps.ignoreContentAdaptWithSize(true);
                 dps_text.ignoreContentAdaptWithSize(true);
-                elements.upgrade_btn. diamond.setVisible(false);
+                elements.upgrade_btn.diamond.setVisible(false);
                 icon.loadTexture("res/icon/heroes/" + hero.getIcon());
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
@@ -335,7 +337,7 @@ var HeroListMenu = BattleMenu.extend({
                 customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
                     var data = event.getUserData();
                     if (data['id'] === hero.getId()) {
-                        elements.die_time_text.setString(Math.round(data['recover']));
+                        elements.die_time_text.setString(Math.round(data['recover'])+" 秒");
                     }
                 })
                 setFont([heroName_text, lv, elements.upgrade_btn.buff_text]);

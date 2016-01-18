@@ -53,40 +53,13 @@
             "Tag": 457,
             "Children": [
               {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "PressedFileData": {
+                "FileData": {
                   "Type": "Normal",
-                  "Path": "ui/skill_icon.png",
+                  "Path": "mainUI/skill_icon.png",
                   "Plist": ""
                 },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "ui/skill_icon.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 65,
-                "Scale9Height": 73,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
+                "Scale9Width": 90,
+                "Scale9Height": 90,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -106,70 +79,21 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 291,
-                "ActionTag": -217219440,
+                "Tag": 397,
+                "ActionTag": 1471502121,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
-                "Name": "skill_btn",
-                "ctype": "ButtonObjectData"
+                "Name": "skill_icon",
+                "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "99:99",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 45.5798,
-                  "Y": 47.3794
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4798,
-                  "Y": 0.4987
-                },
-                "PreSize": {
-                  "X": 0.5263,
-                  "Y": 0.2105
-                },
-                "LeftMargin": 20.5798,
-                "RightMargin": 24.4202,
-                "TopMargin": 37.6206,
-                "BottomMargin": 37.3794,
-                "Tag": 292,
-                "ActionTag": 1172101320,
-                "Size": {
-                  "X": 50.0,
-                  "Y": 20.0
-                },
-                "Name": "CD_time_text",
-                "ctype": "TextObjectData"
-              },
-              {
+                "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "99:99",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -186,8 +110,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 46.52,
-                  "Y": 35.7319
+                  "X": 45.0,
+                  "Y": 31.7319
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -199,30 +123,30 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4897,
-                  "Y": 0.3761
+                  "X": 0.5,
+                  "Y": 0.3526
                 },
                 "PreSize": {
-                  "X": 0.4737,
-                  "Y": 0.1895
+                  "X": 0.6667,
+                  "Y": 0.2
                 },
-                "LeftMargin": 24.02,
-                "RightMargin": 25.98,
-                "TopMargin": 50.2681,
-                "BottomMargin": 26.7319,
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 49.2681,
+                "BottomMargin": 22.7319,
                 "Tag": 294,
                 "ActionTag": 1837244646,
                 "Size": {
-                  "X": 45.0,
+                  "X": 60.0,
                   "Y": 18.0
                 },
-                "Name": "die_time_text",
+                "Name": "time",
                 "ctype": "TextObjectData"
               },
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "heroUI/reviveTime.png",
+                  "Path": "skillUI/reviveTime.png",
                   "Plist": ""
                 },
                 "Scale9Width": 78,
@@ -232,8 +156,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 47.5,
-                  "Y": 58.0989
+                  "X": 45.2086,
+                  "Y": 53.9644
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -242,46 +166,134 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.6116
+                  "X": 0.5023,
+                  "Y": 0.5996
                 },
                 "PreSize": {
-                  "X": 0.8211,
-                  "Y": 0.3263
+                  "X": 0.8667,
+                  "Y": 0.3444
                 },
-                "LeftMargin": 8.5,
-                "RightMargin": 8.5,
-                "TopMargin": 21.4011,
-                "BottomMargin": 42.5989,
+                "LeftMargin": 6.2086,
+                "RightMargin": 5.7914,
+                "TopMargin": 20.5356,
+                "BottomMargin": 38.4644,
                 "Tag": 955,
                 "ActionTag": 513272033,
                 "Size": {
                   "X": 78.0,
                   "Y": 31.0
                 },
-                "Name": "die_text",
+                "Name": "reviveTime_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "skillUI/cooldown.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 78,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.2086,
+                  "Y": 53.9644
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5023,
+                  "Y": 0.5996
+                },
+                "PreSize": {
+                  "X": 0.8667,
+                  "Y": 0.3444
+                },
+                "LeftMargin": 6.2086,
+                "RightMargin": 5.7914,
+                "TopMargin": 20.5356,
+                "BottomMargin": 38.4644,
+                "Tag": 398,
+                "ActionTag": -187995137,
+                "Size": {
+                  "X": 78.0,
+                  "Y": 31.0
+                },
+                "Name": "cooldown_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "skillUI/duration.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 78,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.2086,
+                  "Y": 53.9644
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5023,
+                  "Y": 0.5996
+                },
+                "PreSize": {
+                  "X": 0.8667,
+                  "Y": 0.3444
+                },
+                "LeftMargin": 6.2086,
+                "RightMargin": 5.7914,
+                "TopMargin": 20.5356,
+                "BottomMargin": 38.4644,
+                "Tag": 399,
+                "ActionTag": -1473897718,
+                "Size": {
+                  "X": 78.0,
+                  "Y": 31.0
+                },
+                "Name": "duration_text",
                 "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -540174355,
             "Size": {
-              "X": 95.0,
-              "Y": 95.0
+              "X": 90.0,
+              "Y": 90.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 95.0,
-          "Y": 95.0
+          "X": 90.0,
+          "Y": 90.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "heroUI/reviveTime.png",
-        "ui/skill_icon.png"
+        "mainUI/skill_icon.png",
+        "skillUI/cooldown.png",
+        "skillUI/duration.png",
+        "skillUI/reviveTime.png"
       ],
       "ctype": "GameFileData"
     }
