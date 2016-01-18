@@ -7,6 +7,16 @@ var SpriteGroup = function (_sprites) {
     this.count = function () {
         return sprites.length;
     };
+    this.getAllLived = function () {
+        var livedSprites = [];
+        for (var i in sprites) {
+            var sprite = sprites[i];
+            if (!sprite.isDead()) {
+                livedSprites.push(sprite);
+            }
+        }
+        return livedSprites;
+    };
     this.foreach = function (callback, context) {
         for (var i in sprites) {
             callback.call(context, sprites[i], i);
@@ -226,16 +236,17 @@ var BattlePanel = cc.Node.extend({
         });
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
-            this.addChild(activeSkill, 2000);
-            activeSkill.cast();
+            activeSkill.cast(this);
         }.bind(this));
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
 
         this.update = function (dt) {
             {
-                if(this.intervalState){
+                if (this.intervalState) {
                     this.intervalTime += dt;
+                    if (this.intervalTime > 10) {
+                        this.showFairyAndChest();
                     if(this.intervalTime > CONSTS.flySpirit_interval_time){
                         this.showFairy();
                     }
@@ -273,8 +284,7 @@ var BattlePanel = cc.Node.extend({
         var target = this.findNextEnemy();
         if (target) {
             var tapSkill = new TapSkill();
-            this.addChild(tapSkill, 1000);
-            tapSkill.cast(target, pos);
+            tapSkill.cast(this, target, pos);
         }
     },
 
@@ -348,6 +358,14 @@ var BattlePanel = cc.Node.extend({
 
     findNextEnemy: function () {
         return this.enemySprites.findFirstAlive();
+    },
+
+    getAllEnemies: function () {
+        return this.enemySprites;
+    },
+
+    getAllHeroes: function () {
+        return this.heroSprites;
     },
 
     findRandomHero: function () {

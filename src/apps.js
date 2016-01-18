@@ -141,3 +141,7 @@ function setIgnoreContentAdaptWithSize(target) {
         target.ignoreContentAdaptWithSize(true);
     }
 }
+
+function scheduleOnce(target, callback, delay) {
+    cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
+}
