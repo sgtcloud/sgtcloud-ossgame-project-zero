@@ -65,6 +65,7 @@
           <Image Name="close_icon.png" />
           <Image Name="text_bg.png" />
           <Image Name="text_bg2.png" />
+          <Image Name="recast_text.png" />
         </Folder>
         <Folder Name="heroUI">
           <Image Name="bg.png" />
@@ -82,6 +83,7 @@
           <Image Name="text_bg.png" />
           <Image Name="reviveTime.png" />
           <Image Name="heroDPS.png" />
+          <Image Name="heroHP.png" />
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -101,6 +103,7 @@
           <Image Name="title_2.png" />
           <Image Name="equip_text.png" />
           <Image Name="equip_text2.png" />
+          <Image Name="buyHoly.png" />
         </Folder>
         <Project Name="Star.csd" Type="Layer" />
         <Project Name="SkillView.csd" Type="Layer" />
@@ -182,21 +185,24 @@
           <Image Name="icon.png" />
           <Image Name="font22_yellow.png" />
           <Image Name="font28_yellow.png" />
+          <Image Name="clear_reward.png" />
+          <Image Name="login_reward.png" />
+          <Image Name="offline_reward.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
         <Folder Name="rankUI">
           <Image Name="rankText.png" />
-          <Image Name="myRank_text.png" />
-          <Image Name="stageTab_1.png" />
-          <Image Name="stageTab_2.png" />
-          <Image Name="pvpTab_1.png" />
-          <Image Name="pvpTab_2.png" />
-          <Image Name="rankView_bg.png" />
-          <Image Name="level.png" />
-          <Image Name="transformation.png" />
           <Image Name="clearance_rank.png" />
           <Image Name="pvp_rank.png" />
+          <Image Name="myRank_text.png" />
+          <Image Name="pvpTab_1.png" />
+          <Image Name="pvpTab_2.png" />
+          <Image Name="stageTab_1.png" />
+          <Image Name="stageTab_2.png" />
+          <Image Name="level.png" />
+          <Image Name="transformation.png" />
+          <Image Name="rankView_bg.png" />
         </Folder>
         <Project Name="ShopLayer.csd" Type="Layer" />
         <Folder Name="shopUI">
@@ -209,7 +215,6 @@
           <Image Name="sale.png" />
         </Folder>
         <Project Name="ShopView.csd" Type="Layer" />
-        <Project Name="MoneyTreeView.csd" Type="Layer" />
         <Project Name="ShopTab.csd" Type="Layer" />
         <Project Name="ShopIconLayer.csd" Type="Layer" />
         <Project Name="ItemLayer.csd" Type="Layer" />
@@ -217,6 +222,9 @@
         <Folder Name="skillUI">
           <Image Name="hero.png" />
           <Image Name="tap.png" />
+          <Image Name="cooldown.png" />
+          <Image Name="duration.png" />
+          <Image Name="reviveTime.png" />
         </Folder>
         <Folder Name="battleUI">
           <Image Name="boss_text.png" />
@@ -238,12 +246,22 @@
           <Image Name="percentage.png" />
           <Image Name="buy2.png" />
           <Image Name="buy3.png" />
+          <Image Name="font16_green.png" />
+          <Image Name="notSure.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">
           <Image Name="desc.png" />
           <Image Name="title.png" />
         </Folder>
+        <Project Name="Btn_Revive.csd" Type="Layer" />
+        <Project Name="Btn_Upgrade1.csd" Type="Layer" />
+        <Project Name="Btn_Lock.csd" Type="Layer" />
+        <Project Name="Btn_Buy.csd" Type="Layer" />
+        <Project Name="Btn_Recast.csd" Type="Layer" />
+        <Project Name="Btn_MaxLevel.csd" Type="Layer" />
+        <Project Name="Btn_Upgrade2.csd" Type="Layer" />
+        <Project Name="BuffLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

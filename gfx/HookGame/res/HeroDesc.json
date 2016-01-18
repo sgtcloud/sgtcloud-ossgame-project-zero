@@ -65,8 +65,8 @@
                 "Scale9Height": 58,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 15.0002,
-                  "Y": 15.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -75,21 +75,18 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0234,
-                  "Y": 0.0156
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.9531,
+                  "X": 1.0,
                   "Y": 0.6458
                 },
-                "LeftMargin": 15.0002,
-                "RightMargin": 14.9998,
-                "TopMargin": 325.0,
-                "BottomMargin": 15.0,
+                "TopMargin": 340.0,
                 "Tag": 47,
                 "ActionTag": -1352565970,
                 "Size": {
-                  "X": 610.0,
+                  "X": 640.0,
                   "Y": 620.0
                 },
                 "Name": "skillList_bg",
@@ -118,8 +115,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 5.0,
+                  "Y": 5.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -128,21 +125,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0312,
-                  "Y": 0.0208
+                  "X": 0.0078,
+                  "Y": 0.0052
                 },
                 "PreSize": {
-                  "X": 0.9375,
+                  "X": 0.9844,
                   "Y": 0.6354
                 },
-                "LeftMargin": 20.0,
-                "RightMargin": 20.0,
-                "TopMargin": 330.0,
-                "BottomMargin": 20.0,
+                "LeftMargin": 5.0,
+                "RightMargin": 5.0,
+                "TopMargin": 345.0,
+                "BottomMargin": 5.0,
                 "Tag": 846,
                 "ActionTag": -468997767,
                 "Size": {
-                  "X": 600.0,
+                  "X": 630.0,
                   "Y": 610.0
                 },
                 "Name": "skill_list",
@@ -161,8 +158,8 @@
                 "Scale9Height": 14,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 15.2815,
-                  "Y": 634.2064
+                  "X": 1.1548,
+                  "Y": 680.433
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -171,21 +168,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0239,
-                  "Y": 0.6606
+                  "X": 0.0018,
+                  "Y": 0.7088
                 },
                 "PreSize": {
-                  "X": 0.9531,
+                  "X": 1.0,
                   "Y": 0.2917
                 },
-                "LeftMargin": 15.2815,
-                "RightMargin": 14.7185,
-                "TopMargin": 45.7936,
-                "BottomMargin": 634.2064,
+                "LeftMargin": 1.1548,
+                "RightMargin": -1.1548,
+                "TopMargin": -0.433,
+                "BottomMargin": 680.433,
                 "Tag": 303,
                 "ActionTag": 490932152,
                 "Size": {
-                  "X": 610.0,
+                  "X": 640.0,
                   "Y": 280.0
                 },
                 "Name": "heroDesc_bg",
@@ -214,7 +211,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5312,
+                  "X": 0.5313,
                   "Y": 0.8385
                 },
                 "PreSize": {
@@ -303,7 +300,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0312
+                  "Y": 0.0313
                 },
                 "LeftMargin": 293.9992,
                 "RightMargin": 314.0008,
@@ -344,7 +341,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0312
+                  "Y": 0.0313
                 },
                 "LeftMargin": 256.9994,
                 "RightMargin": 351.0006,
@@ -385,7 +382,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0312
+                  "Y": 0.0313
                 },
                 "LeftMargin": 219.9992,
                 "RightMargin": 388.0008,
@@ -426,7 +423,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0312
+                  "Y": 0.0313
                 },
                 "LeftMargin": 183.9992,
                 "RightMargin": 424.0008,
@@ -467,7 +464,7 @@
                 },
                 "PreSize": {
                   "X": 0.05,
-                  "Y": 0.0312
+                  "Y": 0.0313
                 },
                 "LeftMargin": 146.9993,
                 "RightMargin": 461.0007,

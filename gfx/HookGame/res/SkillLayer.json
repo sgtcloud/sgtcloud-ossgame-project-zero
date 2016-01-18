@@ -14,7 +14,7 @@
             "Frames": [
               {
                 "X": 10.9997,
-                "Y": 12.9998,
+                "Y": 20.9998,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -332,7 +332,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 533.9998,
-                  "Y": 12.9998
+                  "Y": 20.9998
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -342,21 +342,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.8344,
-                  "Y": 0.0542
+                  "Y": 0.0875
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 533.9998,
-                "RightMargin": 11.0002,
-                "TopMargin": 132.0002,
-                "BottomMargin": 12.9998,
+                "RightMargin": 16.0002,
+                "TopMargin": 129.0002,
+                "BottomMargin": 20.9998,
                 "Tag": 241,
                 "ActionTag": 1771128983,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill7",
                 "ctype": "ProjectNodeObjectData"
@@ -373,7 +373,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 446.4987,
-                  "Y": 99.9966
+                  "Y": 107.9966
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -383,21 +383,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.6977,
-                  "Y": 0.4167
+                  "Y": 0.45
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 446.4987,
-                "RightMargin": 98.5013,
-                "TopMargin": 45.0034,
-                "BottomMargin": 99.9966,
+                "RightMargin": 103.5013,
+                "TopMargin": 42.0034,
+                "BottomMargin": 107.9966,
                 "Tag": 235,
                 "ActionTag": 1873054001,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill6",
                 "ctype": "ProjectNodeObjectData"
@@ -413,8 +413,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 359.6664,
-                  "Y": 12.9998
+                  "X": 359.666,
+                  "Y": 20.9998
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -424,21 +424,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.562,
-                  "Y": 0.0542
+                  "Y": 0.0875
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
-                "LeftMargin": 359.6664,
-                "RightMargin": 185.3336,
-                "TopMargin": 132.0002,
-                "BottomMargin": 12.9998,
+                "LeftMargin": 359.666,
+                "RightMargin": 190.334,
+                "TopMargin": 129.0002,
+                "BottomMargin": 20.9998,
                 "Tag": 229,
                 "ActionTag": 420806031,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill5",
                 "ctype": "ProjectNodeObjectData"
@@ -455,7 +455,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 272.5012,
-                  "Y": 99.9963
+                  "Y": 107.9963
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -465,21 +465,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.4258,
-                  "Y": 0.4167
+                  "Y": 0.45
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 272.5012,
-                "RightMargin": 272.4988,
-                "TopMargin": 45.0037,
-                "BottomMargin": 99.9963,
+                "RightMargin": 277.4988,
+                "TopMargin": 42.0037,
+                "BottomMargin": 107.9963,
                 "Tag": 223,
                 "ActionTag": 1903387533,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill4",
                 "ctype": "ProjectNodeObjectData"
@@ -496,7 +496,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 185.3333,
-                  "Y": 12.9998
+                  "Y": 20.9998
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -506,21 +506,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.2896,
-                  "Y": 0.0542
+                  "Y": 0.0875
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 185.3333,
-                "RightMargin": 359.6667,
-                "TopMargin": 132.0002,
-                "BottomMargin": 12.9998,
+                "RightMargin": 364.6667,
+                "TopMargin": 129.0002,
+                "BottomMargin": 20.9998,
                 "Tag": 217,
                 "ActionTag": 1685468251,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill3",
                 "ctype": "ProjectNodeObjectData"
@@ -537,7 +537,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 98.5,
-                  "Y": 99.9966
+                  "Y": 107.9966
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -547,21 +547,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.1539,
-                  "Y": 0.4167
+                  "Y": 0.45
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 98.5,
-                "RightMargin": 446.5,
-                "TopMargin": 45.0034,
-                "BottomMargin": 99.9966,
+                "RightMargin": 451.5,
+                "TopMargin": 42.0034,
+                "BottomMargin": 107.9966,
                 "Tag": 211,
                 "ActionTag": 277690000,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill2",
                 "ctype": "ProjectNodeObjectData"
@@ -578,7 +578,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 10.9997,
-                  "Y": 12.9998
+                  "Y": 20.9998
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -588,21 +588,21 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.0172,
-                  "Y": 0.0542
+                  "Y": 0.0875
                 },
                 "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.3958
+                  "X": 0.1406,
+                  "Y": 0.375
                 },
                 "LeftMargin": 10.9997,
-                "RightMargin": 534.0003,
-                "TopMargin": 132.0002,
-                "BottomMargin": 12.9998,
+                "RightMargin": 539.0003,
+                "TopMargin": 129.0002,
+                "BottomMargin": 20.9998,
                 "Tag": 205,
                 "ActionTag": -1452498293,
                 "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "skill1",
                 "ctype": "ProjectNodeObjectData"

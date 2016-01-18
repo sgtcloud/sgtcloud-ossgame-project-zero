@@ -61,13 +61,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="list_bg" ActionTag="690358502" Tag="916" IconVisible="False" RightMargin="-180.0000" TopMargin="200.0000" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="list_bg" ActionTag="690358502" Tag="916" IconVisible="False" LeftMargin="8.6643" RightMargin="-188.6643" TopMargin="182.5770" BottomMargin="17.4230" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="380.0000" />
                 <AnchorPoint />
-                <Position />
+                <Position X="8.6643" Y="17.4230" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
+                <PrePosition X="0.0188" Y="0.0300" />
                 <PreSize X="1.3913" Y="0.6552" />
                 <FileData Type="Normal" Path="ui/bg_03.png" Plist="" />
               </AbstractNodeData>
