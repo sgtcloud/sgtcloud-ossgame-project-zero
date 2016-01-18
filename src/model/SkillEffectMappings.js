@@ -14,16 +14,17 @@ var SkillEffectMappings = {
     ,
     "tap_rate":{"name":"点击伤害比例","type":"rate"}
     ,
-    "ctr_chance":{"name":"暴击概率","type":"rate"}
+    "ctr_chance_value":{"name":"暴击概率","type":"rate"}
     ,
-    "ctr_modify":{"name":"暴击倍率","type":"rate"}
+    "ctr_modify_value":{"name":"暴击倍率","type":"rate"}
     ,
-    "atk_period":{"name":"攻击间隔","type":"int"}
+    "atk_period_value":{"name":"攻击间隔","type":"int"}
     ,
     "globe_life_value":{"name":"全体生命值","type":"int"}
     ,
     "globe_life_rate":{"name":"全体生命比例","type":"rate"}
     ,
+    "globe_ctr_modify_rate":{"name":"全体暴击倍率","type":"rate"},
     "globe_attack_value":{"name":"全体攻击伤害","type":"int"}
     ,
     "globe_attack_rate":{"name":"全体攻击伤害比例","type":"rate"}
@@ -33,6 +34,8 @@ var SkillEffectMappings = {
     "globe_tap_rate":{"name":"全体点击伤害比例","type":"rate"}
     ,
     "globe_atk_period_rate":{"name":"全体攻击间隔","type":"rate"}
+    ,
+    "globe_ctr_chance_rate":{"name":"全体暴击概率","type":"rate"}
     ,
     "globe_gold_rate":{"name":"金币获得比例","type":"rate"}
     ,
@@ -59,8 +62,15 @@ var SkillEffectMappings = {
 String.prototype.mapping = function(obj) {
     return this.replace(/{\s*\w+\s*}/gi, function(matchs) {
         var match=matchs.replace(/{\s*|\s*}/g, "")
-        var arr=match.split("_");
-        var returns = obj[arr[0]][arr[1]];
+        var returns;
+        if (match.indexOf('_')>-1){
+            var arr=match.split("_");
+            if(arr.length>1){
+                returns = obj[arr[0]][arr[1]];
+            }
+        }else {
+            returns = obj[match];
+        }
         return (returns + "") == "undefined" ? "" : returns;
     });
 };
