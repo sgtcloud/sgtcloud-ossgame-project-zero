@@ -247,20 +247,22 @@ var BattlePanel = cc.Node.extend({
                     this.intervalTime += dt;
                     if (this.intervalTime > 10) {
                         this.showFairyAndChest();
-                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
-                        this.showFairy();
+                        if (this.intervalTime > CONSTS.flySpirit_interval_time) {
+                            this.showFairy();
+                        }
+                    }
+                    var stage = PlayerData.getStageData();
+                    if (stage.isBossBattle()) {
+                        this.updateBossBattleTime(dt, stage);
                     }
                 }
-                var stage = PlayerData.getStageData();
-                if (stage.isBossBattle()) {
-                    this.updateBossBattleTime(dt, stage);
-                }
             }
-        },
+            ;
             this.reset();
-        this.scheduleUpdate();
+            this.scheduleUpdate();
+        }
     },
-    reset:function(){
+    reset: function () {
         this.intervalTime = 0;
         this.intervalState = true;
     },
@@ -309,20 +311,20 @@ var BattlePanel = cc.Node.extend({
         this.boosTimeMax = stage.getBossTimeMax();
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-       /* this.timeText.setString(this.boosTimeMax);
-        this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
+        /* this.timeText.setString(this.boosTimeMax);
+         this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
 
-       /* this.times = setInterval(function () {
-            if (self.boosTimeMax == 0) {
-                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            } else {
-                self.boosTimeMax--;
-                self.timeText.setString(self.boosTimeMax);
-                self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
-            }
-        }, 1000);*/
+        /* this.times = setInterval(function () {
+         if (self.boosTimeMax == 0) {
+         customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+         } else {
+         self.boosTimeMax--;
+         self.timeText.setString(self.boosTimeMax);
+         self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
+         }
+         }, 1000);*/
     },
-    updateBossBattleTime: function(dt,stage){
+    updateBossBattleTime: function (dt, stage) {
         if (Math.floor(this.boosTimeMax) < 0) {
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         } else {
@@ -409,9 +411,9 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-       /* if (this.times != undefined) {
-            clearInterval(this.times);
-        }*/
+        /* if (this.times != undefined) {
+         clearInterval(this.times);
+         }*/
         // wait for 1 second to start next battle
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);
