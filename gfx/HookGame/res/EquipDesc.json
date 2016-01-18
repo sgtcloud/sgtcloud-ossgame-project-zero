@@ -47,9 +47,11 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 1.0,
-              "Y": 1.0
+              "X": 0.7188,
+              "Y": 0.6042
             },
+            "RightMargin": 180.0,
+            "TopMargin": 380.0,
             "Tag": 29,
             "Children": [
               {
@@ -79,17 +81,17 @@
                   "Y": 0.6846
                 },
                 "PreSize": {
-                  "X": 0.9348,
+                  "X": 1.3913,
                   "Y": 0.2586
                 },
                 "LeftMargin": 9.418,
-                "RightMargin": 20.582,
+                "RightMargin": -189.418,
                 "TopMargin": 32.9158,
                 "BottomMargin": 397.0842,
                 "Tag": 10,
                 "ActionTag": -912217069,
                 "Size": {
-                  "X": 430.0,
+                  "X": 640.0,
                   "Y": 150.0
                 },
                 "Name": "title_bg",
@@ -281,13 +283,10 @@
                 "Scale9OriginY": 25,
                 "Scale9Width": 28,
                 "Scale9Height": 28,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 223.6643,
-                  "Y": 207.423
+                  "X": 8.6643,
+                  "Y": 17.423
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -296,21 +295,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4862,
-                  "Y": 0.3576
+                  "X": 0.0188,
+                  "Y": 0.03
                 },
                 "PreSize": {
-                  "X": 0.9348,
+                  "X": 1.3913,
                   "Y": 0.6552
                 },
                 "LeftMargin": 8.6643,
-                "RightMargin": 21.3357,
+                "RightMargin": -188.6643,
                 "TopMargin": 182.577,
                 "BottomMargin": 17.423,
                 "Tag": 916,
                 "ActionTag": 690358502,
                 "Size": {
-                  "X": 430.0,
+                  "X": 640.0,
                   "Y": 380.0
                 },
                 "Name": "list_bg",
@@ -814,8 +813,8 @@
           }
         ],
         "Size": {
-          "X": 460.0,
-          "Y": 580.0
+          "X": 640.0,
+          "Y": 960.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
