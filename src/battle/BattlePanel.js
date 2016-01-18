@@ -101,6 +101,7 @@ var BattlePanel = cc.Node.extend({
         this.icon = root.getChildByName('icon');
         this.timeBar = root.getChildByName('time_bar');
 
+        this.timeText.setVisible(false);
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
         this.openPopup = function () {
