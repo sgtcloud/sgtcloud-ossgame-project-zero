@@ -42,8 +42,10 @@
           <FilePathData Path="Skillicon.csd" />
           <FilePathData Path="HeroLayer.csd" />
           <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="Btn_Lock.csd" />
+          <FilePathData Path="Btn_MaxLevel.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="HeroDesc.csd" />
+        <ActiveDocument Path="Btn_MaxLevel.csd" />
       </Value>
     </Item>
   </Properties>
