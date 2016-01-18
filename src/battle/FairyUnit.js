@@ -54,9 +54,9 @@ var FairyUnit = cc.Node.extend({
     },
     initFly: function(type){
 
-        var move1 = cc.moveTo(4, cc.p(0, 300));
+        var move1 = cc.moveTo(4, cc.p(0, 280));
 
-        var move2 = cc.moveTo(4, cc.p(600, 300));
+        var move2 = cc.moveTo(4, cc.p(600, 280));
 
         var reversal = cc.callFunc(function () {
             this.node.setScale(-1, 1);
@@ -69,10 +69,10 @@ var FairyUnit = cc.Node.extend({
             this.removeFromParent(true);
         }, this);
         if(type == 1){
-            this.dropMove = cc.jumpTo(0.2,cc.p(600,300),0,1);
+            this.dropMove = cc.jumpTo(0.2,cc.p(600,280),0,1);
             this.sequence = cc.sequence(reversal, this.dropMove, move1, normal, move2, reversal, move1, removeNode);
         }else{
-            this.dropMove = cc.jumpTo(0.2,cc.p(0,300),0,1);
+            this.dropMove = cc.jumpTo(0.2,cc.p(0,280),0,1);
             this.sequence = cc.sequence(normal, this.dropMove, move2, reversal, move1, normal, move2, removeNode);
         }
         this.runAction(this.sequence);
@@ -83,7 +83,7 @@ var FairyUnit = cc.Node.extend({
         var a = cc.delayTime(0.5);
         var b = cc.fadeTo(1.0, 0);
         this.node.runAction(cc.sequence(cc.callFunc(function(){
-            this.parent.addChild(new ChestUnit(position));
+            this.parent.addChild(new ChestUnit(position,2011));
         },this) ,a,b, cc.callFunc(function () {
             this.removeFromParent(true);
         }, this)));

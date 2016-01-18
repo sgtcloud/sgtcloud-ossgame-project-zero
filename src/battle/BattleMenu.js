@@ -760,17 +760,18 @@ var ShopLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
         this.showMoneyTreeView = function (name) {
+            var gemNum = Battleconsts.Parameters.getMoneyTreeOnePrice();
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
             diamondText.ignoreContentAdaptWithSize(true);
-            diamondText.setString(5);
+            diamondText.setString(gemNum);
             goldText.ignoreContentAdaptWithSize(true);
-            goldText.setString(5 * PlayerData.getStageData().getMoneyTreeRatio());
+            goldText.setString(gemNum * PlayerData.getStageData().getMoneyTreeRatio());
 
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                var gemNum = 5;
+
                 self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
             });
         };

@@ -62,7 +62,8 @@ var res = {
     fairy01_json: "res/fairy01.json",
     chest03_json: "res/chest03.json",
 
-    skill_magma_blaster:"res/effect5001.json"
+    skill_magma_blaster:"res/effect5001.json",
+    constant_json: "res/data/constant.json"
 };
 
 
