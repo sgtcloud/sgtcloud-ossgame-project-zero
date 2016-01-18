@@ -158,7 +158,7 @@ var SkillListMenu = BattleMenu.extend({
         this.scheduleUpdate();
     }
 });
-function buildDesc(effects, desc) {
+function buildDesc(effects, desc,extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
@@ -169,6 +169,10 @@ function buildDesc(effects, desc) {
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
     }
+    if(extend){
+        effectsObj=$$.extend(effectsObj,extend);
+    }
+    console.log(effectsObj)
     var desc = desc.mapping(effectsObj)
     return desc;
 }
@@ -304,8 +308,8 @@ var HeroListMenu = BattleMenu.extend({
                 revive_btn.setPosition(revive_btnPosition);
                 root.addChild(revive_btn);
                 var diamond_text = revive_btn.getChildByName('diamond_text');
-                die_text.setColor(cc.color(255,0,0));
-                die_time_text.setColor(cc.color(255,0,0));
+                //die_text.setColor(cc.color(255,0,0));
+                //die_time_text.setColor(cc.color(255,0,0));
                 elements.icon = icon;
                 elements.lv = lv;
                 elements.dps_text = dps_text;
@@ -482,7 +486,7 @@ var HeroListMenu = BattleMenu.extend({
             function buildSkillDesc(skill, levelData) {
                 //var lv= skill.getLv()===0?1:skill.getLv();
                 var effects = skill.traverseSkillEffects();
-                return buildDesc(effects, skill.getDesc());
+                return buildDesc(effects, skill.getDesc(),{"duration":skill.getLevelData()['duration']});
             }
 
 
