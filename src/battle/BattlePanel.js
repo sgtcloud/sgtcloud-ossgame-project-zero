@@ -101,6 +101,7 @@ var BattlePanel = cc.Node.extend({
         this.icon = root.getChildByName('icon');
         this.timeBar = root.getChildByName('time_bar');
 
+        this.timeText.setVisible(false);
         this.rewardBtn = root.getChildByName('reward_btn');
         var self = this;
         this.openPopup = function () {
@@ -235,8 +236,8 @@ var BattlePanel = cc.Node.extend({
             {
                 if(this.intervalState){
                     this.intervalTime += dt;
-                    if(this.intervalTime > 10){
-                        this.showFairyAndChest();
+                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
+                        this.showFairy();
                     }
                 }
                 var stage = PlayerData.getStageData();
@@ -408,26 +409,15 @@ var BattlePanel = cc.Node.extend({
         PlayerData.updateIntoBattleTime();
     },
 
-    showFairyAndChest: function () {
+    showFairy: function () {
         this.intervalState = false;
-        //this.ChestUnit = new ChestUnit();
         this.FairyUnit = new FairyUnit();
-        //this.ChestUnit.setPosition(cc.p(600,600));
-        var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
-       // this.FairyUnit.setPosition(startPos);
-
-        // this.addChild(this.ChestUnit,2011);
         this.addChild(this.FairyUnit, 2010);
-
-        //this.FairyUnit.bindClickEvent();
-        //this.ChestUnit.bindClickEvent();
-
     },
-    hidenFairyAdnChest: function () {
-        if (this.FairyUnit) {
-            this.FairyUnit.removeFromParent(true);
-            //this.ChestUnit.removeFromParent(true);
-        }
+    showChest: function (position) {
+        this.ChestUnit = new ChestUnit();
+        this.ChestUnit.setPosition(position);
+        this.addChild(this.ChestUnit, 2011);
     },
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);

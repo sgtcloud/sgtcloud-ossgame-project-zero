@@ -68,7 +68,11 @@ var EVENT = {
     /**
      * 英雄买活
      */
-    HERO_BUY_REVIVE: "HERO_BUY_REVIVE"
+    HERO_BUY_REVIVE: "HERO_BUY_REVIVE",
+    /**
+     * 释放buff
+     */
+    CAST_BUFF: "CAST_BUFF"
 };
 
 var customEventHelper = {

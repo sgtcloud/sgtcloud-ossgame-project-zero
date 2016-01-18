@@ -10,6 +10,33 @@ $$.extend = function (a, b) {
     }
     return b;
 }
+
+var CONSTS = {
+    "offline_reward_min_time": 60,
+    "offline_reward_max_time": 86400,
+    "money_tree_one_price": 5,
+    "flySpirit_interval_time":60,
+    "click_chest_random_events":[
+        {
+            "skill_id":"sk1001",
+            "weight":3,
+            "level":1
+        },{
+            "skill_id":"gold",
+            "weight":80,
+            "level":10
+        },{
+            "skill_id":"sk1003",
+            "weight":2,
+            "level":1
+        },{
+            "skill_id":"sk1004",
+            "weight":15,
+            "level":1
+        }
+    ]
+}
+
 //为了显示CD和复活的时候显示的格式
 Date.prototype.Format = function (fmt) { //author: meizz
     var o = {
@@ -104,7 +131,7 @@ function setColor(target) {
 }
 
 
-function setIgnoreContentAdaptWithSize(target){
+function setIgnoreContentAdaptWithSize(target) {
     if (target instanceof Array) {
         for (var i in target) {
             target[i].ignoreContentAdaptWithSize(true);
@@ -114,4 +141,3 @@ function setIgnoreContentAdaptWithSize(target){
         target.ignoreContentAdaptWithSize(true);
     }
 }
-

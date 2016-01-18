@@ -25,5 +25,26 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="SkillView.csd" />
+          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="EquipHeroView.csd" />
+          <FilePathData Path="Equiplayer.csd" />
+          <FilePathData Path="EquipDesc.csd" />
+          <FilePathData Path="HeroDesc.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="GoldLayer.csd" />
+          <FilePathData Path="BuffLayer.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="Skillicon.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="HeroView.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="HeroDesc.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
