@@ -3,7 +3,7 @@
  */
 
 var ChestUnit = cc.Node.extend({
-    ctor: function (position) {
+    ctor: function () {
         this._super();
         var json = ccs.load(res.chest03_json);
         this.node = json.node;
@@ -16,7 +16,6 @@ var ChestUnit = cc.Node.extend({
             removeCCSAnimationDefaultTween(timelines);
         }
         this.node.runAction(this.animation);
-        this.setPosition(position);
         this.initChest();
         var self = this;
         this.bindClickFairyEvent = function () {
@@ -63,31 +62,59 @@ var ChestUnit = cc.Node.extend({
         }, this);
         this.runAction(cc.sequence(this.appear,cc.delayTime(1),/*dropMove,*/ delay, removeNode));
     },
-    generateLoot: function () {
+    generateLoot: function (rate) {
         var pos = cc.p(this.getPositionX() + this.getParent().getPositionX(), this.getPositionY() + this.getParent().getPositionY());
         var rank = PlayerData.getStageData().getOfflineRewardByUnit("gold");
-        rank.value = rank.value * 5;
-        Loot.generateLoots(rank, pos);
+        Loot.generateLoots(rank.value * rate, pos);
     },
     onOpenChest: function(){
         this.animationState = 'open';
         var a = cc.delayTime(0.5);
         var b = cc.fadeTo(0.5, 0);
         this.node.runAction(cc.sequence(a,b, cc.callFunc(function () {
+            this.getRandomEvent();
             this.removeFromParent(true);
         }, this)));
-        var random = getRandomInt(0,10);//Math.floor(Math.random()*10);
+
+        /*var random = getRandomInt(0,10);//Math.floor(Math.random()*10);
         if(random == 0){
             //45s内金币掉落2倍；
         }else if(random == 1){
             //秒伤15s内2倍伤害；
         }else if(random == 2){
-            //30s内点击怪物掉落怪物金币的20%
+            //30s内点击怪物掉落怪物金币的 20% 5% 80% 15%
         }else{
             //金子
             this.generateLoot();
+        }*/
+    },
+    getRandomEvent: function(){
+        var events = CONSTS.click_chest_random_events;
+        var total_weight = 0;
+        for(var i in events){
+            total_weight += events[i].weight;
         }
-        this.parent.reset();
+        var random = getRandomInt(0,total_weight);
+        var temp_weight = 0;
+        for(var i in events){
+            var event = events[i];
+            temp_weight += event.weight;
+            if(random < temp_weight){
+                if(event.skill_id == 'gold'){
+                    this.generateLoot(event.level);
+                }else{
+                    //发送释放buff事件
+                    customEventHelper.sendEvent(EVENT.CAST_BUFF,{
+                        skillId:event.skill_id,
+                        level:event.level
+                    });
+                }
+                cc.log(event.weight + " , "+event.skill_id +" , "+event.level);
+                this.parent.reset();
+                break;
+            }
+        }
     }
+
 
 });
