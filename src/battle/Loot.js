@@ -127,12 +127,12 @@ Loot.generateLoots = function (bonusSrc, pos) {
             lootSprites.push(new Loot(bonus.unit, "huge"));
             this.createLootSprites(lootSprites, 15, "little", bonus);
         } else if (bonus.value > 1000 && bonus.value <= 5000) {
-            lootSprites.push(new Loot(bonus.unit, "amout"));
+            lootSprites.push(new Loot(bonus.unit, "amount"));
             lootSprites.push(new Loot(bonus.unit, "huge"));
             this.createLootSprites(lootSprites, 20, "little", bonus);
         } else {
             lootSprites.push(new Loot(bonus.unit, "some"));
-            lootSprites.push(new Loot(bonus.unit, "amout"));
+            lootSprites.push(new Loot(bonus.unit, "amount"));
             lootSprites.push(new Loot(bonus.unit, "huge"));
             this.createLootSprites(lootSprites, 20, "little", bonus);
         }

@@ -182,13 +182,13 @@ var PlayerData = {
     countOfflineTime: function () {
         var intoBattleTime = this.getIntoBattleTime();
         if (intoBattleTime > 0) {
-            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
+            var offlineTime = (Date.parse(new Date()) - intoBattleTime) / 1000;
 
-            if (offlineTime > 1) {
-                if (offlineTime > (60 * 24)) {
-                    offlineTime = 60 * 24;
+            if (offlineTime > CONSTS.offline_reward_min_time) {
+                if (offlineTime > CONSTS.offline_reward_max_time) {
+                    offlineTime = CONSTS.offline_reward_max_time;
                 }
-                return offlineTime;
+                return offlineTime / 60;
             }
         }
         return 0;
