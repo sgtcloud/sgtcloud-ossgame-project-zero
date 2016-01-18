@@ -90,6 +90,14 @@ var Stage = function (id) {
     this.getOfflineReward = function () {
         return data.offlineReward;
     };
+    this.getOfflineRewardByUnit = function(unit){
+        var datas = this.getOfflineReward();
+        for(var i in datas){
+            if(datas[i].unit == unit){
+                return datas[i];
+            }
+        }
+    };
     this.getMoneyTreeRatio = function () {
         return data.moneyTreeRatio;
     };

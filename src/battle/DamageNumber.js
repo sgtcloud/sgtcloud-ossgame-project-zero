@@ -17,9 +17,6 @@ var DamageNumber = cc.Node.extend({
         //移除从ccs读取的控件的parent
         this.textAtlas.removeFromParent(true);
 
-        this.scaleLarge = cc.scaleTo(0.3, 2, 2);
-        this.scaleBack = cc.scaleTo(0.1, 1, 1);
-
         this.moveUp = cc.moveBy(0.45, 0, 80);
         this.disappare = cc.callFunc(function () {
             this.removeFromParent(true);
@@ -30,8 +27,10 @@ var DamageNumber = cc.Node.extend({
     },
 
     initData: function (val, ctr) {
-        this.size = ctr ? 40 : 20;
-        this.textAtlas.setString(Math.round(val));
+        var size = ctr ? 4 : 2;
+        this.scaleLarge = cc.scaleTo(0.25, size, size);
+        this.scaleBack = cc.scaleTo(0.075, 1, 1);
+        this.textAtlas.setString(Math.floor(val));
         //if (ctr) {
         //    this.textAtlas.color = cc.color(255, 100, 100);
         //} else {

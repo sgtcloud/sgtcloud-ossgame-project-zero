@@ -32,7 +32,11 @@ var HeroUnit = BattleUnit.extend({
             var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
-                if (Math.random() < this.data.getCtrChance()) {
+                var rand = Math.random();
+                var ctr_chance = this.data.getCtrChance();
+                //cc.log("ctr:" + rand + "/" + ctr_chance);
+                if (rand < ctr_chance) {
+                    customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
                     target.doDamage(this.data.getAttack(), this.data.getCtrModify());
                 } else {
                     target.doDamage(this.data.getAttack());
@@ -60,6 +64,7 @@ var HeroUnit = BattleUnit.extend({
             this.reset();
             this.refreshLifeBar();
             battle.onHeroRecover(this);
+            customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.data);
         };
         this.reset = function () {
             this.animateTime = 0;
@@ -82,10 +87,12 @@ var HeroUnit = BattleUnit.extend({
         this.onUpdateDead = function (dt) {
             this.recover = Math.max(0, this.recover - dt);
             if (this.recover <= 0) {
-                customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.data);
                 this.onRecover();
             } else {
-                customEventHelper.sendEvent(EVENT.HERO_REVIVE_COUNTDOWN, {id: this.data.getId(), recover: this.recover});
+                customEventHelper.sendEvent(EVENT.HERO_REVIVE_COUNTDOWN, {
+                    id: this.data.getId(),
+                    recover: this.recover
+                });
             }
         };
         this.isActive = function () {
@@ -104,6 +111,13 @@ var HeroUnit = BattleUnit.extend({
         customEventHelper.bindListener(EVENT.HERO_EQUIP_UPGRADE, function (event) {
             self.data.refreshProps();
             PlayerData.refreshGlobeProps();
+        });
+        customEventHelper.bindListener(EVENT.HERO_BUY_REVIVE, function (event) {
+            var hero = event.getUserData();
+            if (hero.getId() === self.data.getId() && self.isDead()) {
+                self.recover = 0;
+                self.onRecover();
+            }
         });
     }
 });
