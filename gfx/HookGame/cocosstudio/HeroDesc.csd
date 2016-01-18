@@ -32,13 +32,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroDesc_bg" ActionTag="490932152" Tag="303" IconVisible="False" LeftMargin="1.1548" RightMargin="-1.1548" TopMargin="-0.4330" BottomMargin="680.4330" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="heroDesc_bg" ActionTag="490932152" Tag="303" IconVisible="False" TopMargin="-0.4330" BottomMargin="680.4330" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="280.0000" />
                 <AnchorPoint />
-                <Position X="1.1548" Y="680.4330" />
+                <Position Y="680.4330" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0018" Y="0.7088" />
+                <PrePosition Y="0.7088" />
                 <PreSize X="1.0000" Y="0.2917" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg.png" Plist="" />
               </AbstractNodeData>
@@ -144,13 +144,13 @@
                 <PreSize X="0.6719" Y="0.1458" />
                 <FileData Type="Normal" Path="heroDescUI/text_bg2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroDesc_text" ActionTag="-1983769405" CallBackType="Click" Tag="805" IconVisible="False" LeftMargin="59.1994" RightMargin="200.8006" TopMargin="188.0780" BottomMargin="671.9220" IsCustomSize="True" FontSize="18" LabelText="英雄详细介绍" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="heroDesc_text" ActionTag="-1983769405" CallBackType="Click" Tag="805" IconVisible="False" LeftMargin="57.8888" RightMargin="202.1111" TopMargin="186.7676" BottomMargin="673.2324" IsCustomSize="True" FontSize="18" LabelText="英雄详细介绍" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="380.0000" Y="100.0000" />
                 <AnchorPoint />
-                <Position X="59.1994" Y="671.9220" />
+                <Position X="57.8888" Y="673.2324" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0925" Y="0.6999" />
+                <PrePosition X="0.0905" Y="0.7013" />
                 <PreSize X="0.5938" Y="0.1042" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -206,7 +206,7 @@
                 <PreSize X="0.0875" Y="0.0604" />
                 <FileData Type="Normal" Path="CloseBtn.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upgrade_btn" ActionTag="-361645039" Tag="929" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4213" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="upgrade_btn" ActionTag="-361645039" Tag="929" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4212" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
                 <Position X="471.5788" Y="653.1146" />
@@ -216,7 +216,7 @@
                 <PreSize X="0.2188" Y="0.0833" />
                 <FileData Type="Normal" Path="Btn_Upgrade1.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="revive_btn" ActionTag="1426949094" Tag="922" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4213" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="revive_btn" ActionTag="1426949094" Tag="922" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4212" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
                 <Position X="471.5788" Y="653.1146" />
@@ -226,7 +226,7 @@
                 <PreSize X="0.2188" Y="0.0833" />
                 <FileData Type="Normal" Path="Btn_Revive.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="MaxLevel_btn" ActionTag="1399329377" Tag="909" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4213" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="MaxLevel_btn" ActionTag="1399329377" Tag="909" IconVisible="True" LeftMargin="471.5788" RightMargin="28.4212" TopMargin="226.8854" BottomMargin="653.1146" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
                 <Position X="471.5788" Y="653.1146" />
