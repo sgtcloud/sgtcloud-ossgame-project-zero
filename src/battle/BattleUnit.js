@@ -72,17 +72,20 @@ var BattleUnit = cc.Node.extend({
         };
         //执行伤害的函数
         this.doDamage = function (dmg, ctr) {
-            if (ctr) {
-                dmg *= ctr;
-            }
-            this.changeLife(-dmg);
-            this.showDamageNumber(dmg, ctr);
-            this.onDamaged();
-            if (this.isDead()) {
-                this.playAnimation('die');
-                this.onDead();
-            } else {
-                this.playAnimation('hit');
+            // prevent to be kill twice
+            if (!this.isDead()) {
+                if (ctr) {
+                    dmg *= ctr;
+                }
+                this.changeLife(-dmg);
+                this.showDamageNumber(dmg, ctr);
+                this.onDamaged();
+                if (this.isDead()) {
+                    this.playAnimation('die');
+                    this.onDead();
+                } else {
+                    this.playAnimation('hit');
+                }
             }
         };
         //执行动画

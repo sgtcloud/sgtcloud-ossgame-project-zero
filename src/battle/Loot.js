@@ -24,7 +24,7 @@ var Loot = cc.Node.extend({
             } else if (size === "amount") {
                 this.lootSprite = ccs.load(res.amount_gold_json).node;
                 this.action = ccs.load(res.amount_gold_json).action;
-            } else if (size === "huge"){
+            } else if (size === "huge") {
                 this.lootSprite = ccs.load(res.huge_gold_json).node;
                 this.action = ccs.load(res.huge_gold_json).action;
             }
@@ -106,7 +106,7 @@ Loot.generateLoots = function (bonusSrc, pos) {
     var lootSprites = [];
     if (bonusSrc.unit === "gold") {
         var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
-        bonus.value = bonus.value * (1 + PlayerData.globe_gold_rate / 100);
+        bonus.value = bonus.value * (1 + (PlayerData.globe_gold_rate + PlayerData.tmp_gold_rate ) / 100);
         if (bonus.value == 1) {
             lootSprites.push(new Loot(bonus.unit, "little"));
         } else if (bonus.value > 1 && bonus.value <= 5) {
