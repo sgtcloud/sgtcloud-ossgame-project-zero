@@ -184,9 +184,9 @@ var PlayerData = {
         if (intoBattleTime > 0) {
             var offlineTime = (Date.parse(new Date()) - intoBattleTime) / 1000;
 
-            if (offlineTime > BattleConsts.Parameters.getOfflineRewardMinTime()) {
-                if (offlineTime > BattleConsts.Parameters.getOfflineRewardMaxTime()) {
-                    offlineTime = BattleConsts.Parameters.getOfflineRewardMaxTime();
+            if (offlineTime > CONSTS.offline_reward_min_time) {
+                if (offlineTime > CONSTS.offline_reward_max_time) {
+                    offlineTime = CONSTS.offline_reward_max_time;
                 }
                 return offlineTime / 60;
             }

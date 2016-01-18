@@ -760,7 +760,7 @@ var ShopLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
         this.showMoneyTreeView = function (name) {
-            var gemNum = Battleconsts.Parameters.getMoneyTreeOnePrice();
+            var gemNum = CONSTS.money_tree_one_price;
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");

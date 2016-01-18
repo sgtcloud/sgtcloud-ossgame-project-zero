@@ -235,7 +235,7 @@ var BattlePanel = cc.Node.extend({
             {
                 if(this.intervalState){
                     this.intervalTime += dt;
-                    if(this.intervalTime > 10){
+                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
                         this.showFairyAndChest();
                     }
                 }
