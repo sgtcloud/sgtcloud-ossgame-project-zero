@@ -206,8 +206,8 @@ var BattlePanel = cc.Node.extend({
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
             /*if (self.times != undefined) {
-                clearInterval(self.times);
-            }*/
+             clearInterval(self.times);
+             }*/
 
         });
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
@@ -253,11 +253,11 @@ var BattlePanel = cc.Node.extend({
                 }
                 var stage = PlayerData.getStageData();
                 if (stage.isBossBattle()) {
-                    this.updateBossBattleTime(dt,stage);
+                    this.updateBossBattleTime(dt, stage);
                 }
             }
         },
-        this.reset();
+            this.reset();
         this.scheduleUpdate();
     },
     reset:function(){
