@@ -33,6 +33,7 @@ var SkillIcon = function (battle, root, index, skill) {
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
+    this.skill_icon.setTouchEnabled(true);
     this.root = root;
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
@@ -324,6 +325,7 @@ var HeroListMenu = BattleMenu.extend({
                 dps_text.ignoreContentAdaptWithSize(true);
                 elements.upgrade_btn.diamond.setVisible(false);
                 icon.loadTexture("res/icon/heroes/" + hero.getIcon());
+                icon.setTouchEnabled(true);
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
