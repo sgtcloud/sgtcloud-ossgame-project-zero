@@ -64,10 +64,11 @@ var ChestUnit = cc.Node.extend({
     },
     generateLoot: function (rate) {
         var pos = cc.p(this.getPositionX() + this.getParent().getPositionX(), this.getPositionY() + this.getParent().getPositionY());
-        var rank = PlayerData.getStageData().getOfflineRewardByUnit("gold");
+        //var rank = PlayerData.getStageData().getOfflineRewardByUnit("gold");
+        var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * rate);
         Loot.generateLoots({
             "unit":"gold",
-            "value":(rank.value * rate)
+            "value":goldValue
         }, pos);
     },
     onOpenChest: function(){
