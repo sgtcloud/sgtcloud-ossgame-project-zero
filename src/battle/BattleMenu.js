@@ -24,10 +24,11 @@ var BattleMenu = cc.Node.extend({
 });
 //UI上显示的技能ICON
 var SkillIcon = function (battle, root, index, skill) {
-    this.button = root.getChildByName('skill_btn');
-    this.deadTimeTitle = root.getChildByName('die_text');
-    this.deadTimeText = root.getChildByName('die_time_text');
-    this.coolTimeText = root.getChildByName('CD_time_text');
+    this.button = root.getChildByName('skill_icon');
+    this.deadTimeTitle = root.getChildByName('reviveTime_text');
+    this.deadTimeText = root.getChildByName('time');
+    this.coolTimeText = root.getChildByName('cooldown_text');
+    this.duration_text = root.getChildByName('duration_text');
     //this.icon=root.getChildByName('icon');
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
@@ -161,6 +162,7 @@ function buildDesc(effects, desc) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
+        console.log(effects[i]['type'])
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
