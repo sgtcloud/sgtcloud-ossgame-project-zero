@@ -8,49 +8,39 @@ var HeroDescScene = cc.Scene.extend({
 });
 var HeroDesc = cc.Node.extend({
 
-    ctor: function (hero, skills) {
+    ctor: function (hero) {
         this._super();
         this.heroDesc = ccs.csLoader.createNode(res.hero_desc_json);
-        this.initData(hero, skills);
+        this.initData(hero);
     },
 
-    initData: function (hero, skills) {
+    initData: function (hero) {
 
         var root = this.heroDesc.getChildByName('root');
 
         var icon = root.getChildByName('hero_icon');
-        var name = root.getChildByName('heroName_text');
+        var heroName_text = root.getChildByName('heroName_text');
         var lv = root.getChildByName('level_text');
         var dps_text = root.getChildByName('dps_text');
-        //var tap = root.getChildByName('tatk_text');
-        icon.loadTexture("res/icon/heroes/" + hero.getIcon());
-        dps_text.setString(parseInt(hero.getLife()));
-        name.setString(hero.getName());
-        lv.setString(hero.getLv());
+        var heroDescText = root.getChildByName('heroDesc_text');
+        root.getChildByName('upgrade_btn').setVisible(false);
+        root.getChildByName('revive_btn').setVisible(false);
+        root.getChildByName('MaxLevel_btn').setVisible(false);
         dps_text.ignoreContentAdaptWithSize(true);
+        icon.loadTexture("res/icon/heroes/" + hero.getIcon());
+        icon.setTouchEnabled(true);
+        heroName_text.setString(hero.getName());
+        lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
+        dps_text.setString(parseInt(hero.getLife()));
+        heroDescText.setString(hero.getDesc());
+        for (var i = 0; i < hero.getSkillCount(); i++) {
+            var skillData = hero.getSkillData(i);
+            var _skillView = buildSkillView(skillData, hero);
+            this.heroList.addChild(_skillView);
 
-        root.getChildByName("desc_text").setString(content);
-        root.getChildByName("title_text").setString(title);
-        root.getChildByName("box").setVisible(false);
-        var btn = root.getChildByName("btn").getChildByName("btn");
-
-        var self = this;
-        bindButtonCallback(btn, function () {
-            if (typeof _callback === 'function') {
-                _callback(self);
-            } else {
-                self.hiddenPopup();
-            }
-        });
-        this.openPopup();
-    },
-    openPopup: function () {
-        popup(this.gamePopup, 1000);
-        this.gamePopup.popup();
-    },
-    hiddenPopup: function () {
-        this.prompt1Layer.removeFromParent();
-        this.gamePopup.hidden();
+            root.skills = root.skills || [];
+            root.skills[i] = _skillView;
+        }
     }
 });
 
