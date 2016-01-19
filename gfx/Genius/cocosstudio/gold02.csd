@@ -2,7 +2,7 @@
   <PropertyGroup Name="gold02" Type="Node" ID="6e13232f-c017-40ad-ac57-6c491e0c505c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="3" Speed="0.5000">
+      <Animation Duration="3" Speed="0.3333">
         <Timeline ActionTag="1236783160" Property="Position">
           <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
             <EasingData Type="0" />

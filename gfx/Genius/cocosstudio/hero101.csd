@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero101" Type="Node" ID="fd9c7335-598f-483c-ba78-4d9e78602e9a" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="84" Speed="0.5000">
+      <Animation Duration="84" Speed="0.4167">
         <Timeline ActionTag="686399736" Property="Position">
           <PointFrame FrameIndex="0" X="-21.8623" Y="-4.9797">
             <EasingData Type="0" />
@@ -193,15 +193,15 @@
       <ObjectData Name="Node" Tag="5" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero101" ActionTag="686399736" Tag="9" IconVisible="False" LeftMargin="-67.3159" RightMargin="-22.6841" TopMargin="-44.7149" BottomMargin="-1.2851" ctype="SpriteObjectData">
-            <Size X="90.0000" Y="46.0000" />
+          <AbstractNodeData Name="hero101" ActionTag="686399736" Tag="9" IconVisible="False" LeftMargin="-24.9586" RightMargin="-72.0414" TopMargin="-82.5845" BottomMargin="-15.4155" ctype="SpriteObjectData">
+            <Size X="153.0000" Y="97.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-22.3159" Y="-1.2851" />
+            <Position X="23.5414" Y="-15.4155" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="hero/hero101/hero101_die05.png" Plist="hero101.plist" />
+            <FileData Type="MarkedSubImage" Path="hero/hero101/hero101_atk03.png" Plist="hero101.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
