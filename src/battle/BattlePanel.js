@@ -7,6 +7,16 @@ var SpriteGroup = function (_sprites) {
     this.count = function () {
         return sprites.length;
     };
+    this.getAllLived = function () {
+        var livedSprites = [];
+        for (var i in sprites) {
+            var sprite = sprites[i];
+            if (!sprite.isDead()) {
+                livedSprites.push(sprite);
+            }
+        }
+        return livedSprites;
+    };
     this.foreach = function (callback, context) {
         for (var i in sprites) {
             callback.call(context, sprites[i], i);
@@ -196,8 +206,8 @@ var BattlePanel = cc.Node.extend({
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
             /*if (self.times != undefined) {
-                clearInterval(self.times);
-            }*/
+             clearInterval(self.times);
+             }*/
 
         });
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
@@ -226,30 +236,33 @@ var BattlePanel = cc.Node.extend({
         });
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
-            this.addChild(activeSkill, 2000);
-            activeSkill.cast();
+            activeSkill.cast(this);
         }.bind(this));
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
 
         this.update = function (dt) {
             {
-                if(this.intervalState){
+                if (this.intervalState) {
                     this.intervalTime += dt;
-                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
-                        this.showFairy();
+                    if (this.intervalTime > 10) {
+                        this.showFairyAndChest();
+                        if (this.intervalTime > CONSTS.flySpirit_interval_time) {
+                            this.showFairy();
+                        }
+                    }
+                    var stage = PlayerData.getStageData();
+                    if (stage.isBossBattle()) {
+                        this.updateBossBattleTime(dt, stage);
                     }
                 }
-                var stage = PlayerData.getStageData();
-                if (stage.isBossBattle()) {
-                    this.updateBossBattleTime(dt,stage);
-                }
             }
-        },
-        this.reset();
-        this.scheduleUpdate();
+            ;
+            this.reset();
+            this.scheduleUpdate();
+        }
     },
-    reset:function(){
+    reset: function () {
         this.intervalTime = 0;
         this.intervalState = true;
     },
@@ -273,8 +286,7 @@ var BattlePanel = cc.Node.extend({
         var target = this.findNextEnemy();
         if (target) {
             var tapSkill = new TapSkill();
-            this.addChild(tapSkill, 1000);
-            tapSkill.cast(target, pos);
+            tapSkill.cast(this, target, pos);
         }
     },
 
@@ -299,20 +311,20 @@ var BattlePanel = cc.Node.extend({
         this.boosTimeMax = stage.getBossTimeMax();
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-       /* this.timeText.setString(this.boosTimeMax);
-        this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
+        /* this.timeText.setString(this.boosTimeMax);
+         this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
 
-       /* this.times = setInterval(function () {
-            if (self.boosTimeMax == 0) {
-                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            } else {
-                self.boosTimeMax--;
-                self.timeText.setString(self.boosTimeMax);
-                self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
-            }
-        }, 1000);*/
+        /* this.times = setInterval(function () {
+         if (self.boosTimeMax == 0) {
+         customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+         } else {
+         self.boosTimeMax--;
+         self.timeText.setString(self.boosTimeMax);
+         self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
+         }
+         }, 1000);*/
     },
-    updateBossBattleTime: function(dt,stage){
+    updateBossBattleTime: function (dt, stage) {
         if (Math.floor(this.boosTimeMax) < 0) {
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         } else {
@@ -348,6 +360,14 @@ var BattlePanel = cc.Node.extend({
 
     findNextEnemy: function () {
         return this.enemySprites.findFirstAlive();
+    },
+
+    getAllEnemies: function () {
+        return this.enemySprites;
+    },
+
+    getAllHeroes: function () {
+        return this.heroSprites;
     },
 
     findRandomHero: function () {
@@ -391,9 +411,9 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-       /* if (this.times != undefined) {
-            clearInterval(this.times);
-        }*/
+        /* if (this.times != undefined) {
+         clearInterval(this.times);
+         }*/
         // wait for 1 second to start next battle
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);

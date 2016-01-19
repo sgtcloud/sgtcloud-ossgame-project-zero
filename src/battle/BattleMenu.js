@@ -24,14 +24,16 @@ var BattleMenu = cc.Node.extend({
 });
 //UI上显示的技能ICON
 var SkillIcon = function (battle, root, index, skill) {
-    this.button = root.getChildByName('skill_btn');
-    this.deadTimeTitle = root.getChildByName('die_text');
-    this.deadTimeText = root.getChildByName('die_time_text');
-    this.coolTimeText = root.getChildByName('CD_time_text');
+    this.skill_icon = root.getChildByName('skill_icon');
+    this.deadTimeTitle = root.getChildByName('reviveTime_text');
+    this.deadTimeText = root.getChildByName('time');
+    this.coolTimeText = root.getChildByName('cooldown_text');
+    this.duration_text = root.getChildByName('duration_text');
     //this.icon=root.getChildByName('icon');
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
+    this.skill_icon.setTouchEnabled(true);
     this.root = root;
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
@@ -50,7 +52,7 @@ var SkillIcon = function (battle, root, index, skill) {
             this.skill = skill;
             var that = this;
             //this.button.loadTexture("res/icon/skills/" + skill.getIcon());
-            this.button.addClickEventListener(function () {
+            this.skill_icon.addClickEventListener(function () {
                 console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                 customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
             });
@@ -73,11 +75,11 @@ var SkillIcon = function (battle, root, index, skill) {
         this.coolTimeText.setString(time);
     }
     this.setEnabled = function (state) {
-        this.button.setEnabled(state);
-        this.button.setBright(state);
+        //this.skill_icon.setEnabled(state);
+        //this.skill_icon.setBright(state);
     }
     this.addClickEvent = function (func) {
-        this.button.addClickEventListener(func);
+        this.skill_icon.addClickEventListener(func);
     }
 }
 function getHeroActivtySkillls(hero) {
@@ -157,7 +159,7 @@ var SkillListMenu = BattleMenu.extend({
         this.scheduleUpdate();
     }
 });
-function buildDesc(effects, desc) {
+function buildDesc(effects, desc,extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
@@ -166,6 +168,9 @@ function buildDesc(effects, desc) {
         effectsObj[effects[i]['name']] = {}
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
+    }
+    if(extend){
+        effectsObj=$$.extend(effectsObj,extend);
     }
     var desc = desc.mapping(effectsObj)
     return desc;
@@ -284,7 +289,6 @@ var HeroListMenu = BattleMenu.extend({
                 var btnlayer = upgrade_btnTemp.clone();
                 btnlayer.setPosition(upgradeBtnPosition);
                 root.addChild(btnlayer);
-
                 buildUpgradeBtn(elements, btnlayer);
                 var icon = root.getChildByName('hero_icon');
                 var lv = root.getChildByName('level_text');
@@ -302,8 +306,8 @@ var HeroListMenu = BattleMenu.extend({
                 revive_btn.setPosition(revive_btnPosition);
                 root.addChild(revive_btn);
                 var diamond_text = revive_btn.getChildByName('diamond_text');
-                die_text.setColor(cc.color(255,0,0));
-                die_time_text.setColor(cc.color(255,0,0));
+                //die_text.setColor(cc.color(255,0,0));
+                //die_time_text.setColor(cc.color(255,0,0));
                 elements.icon = icon;
                 elements.lv = lv;
                 elements.dps_text = dps_text;
@@ -321,10 +325,10 @@ var HeroListMenu = BattleMenu.extend({
                 dps_text.ignoreContentAdaptWithSize(true);
                 elements.upgrade_btn.diamond.setVisible(false);
                 icon.loadTexture("res/icon/heroes/" + hero.getIcon());
+                icon.setTouchEnabled(true);
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
-
                 elements.revive_btn.btn.addClickEventListener(function () {
                     if (hero.getCurrentLife() <= 0) {
                         var resurge = hero.getResurge();
@@ -340,6 +344,7 @@ var HeroListMenu = BattleMenu.extend({
                         elements.die_time_text.setString(Math.round(data['recover'])+" 秒");
                     }
                 })
+                elements.die_time_text.setFontName("微软雅黑");
                 setFont([heroName_text, lv, elements.upgrade_btn.buff_text]);
                 if (hero.getCurrentLife() > 0) {
                     die_text.setVisible(false);
@@ -375,6 +380,7 @@ var HeroListMenu = BattleMenu.extend({
                         elements.die_time_text.setVisible(true);
                         elements.revive_btn.layer.setVisible(true);
                         elements.upgrade_btn.layer.setVisible(false);
+                        elements.icon.setColor(cc.color(90,90,90));
                         var resurge = hero.getResurge();
                         elements.revive_btn.diamond_text.setString(parseInt(resurge['cost']['value']));
                     }
@@ -386,6 +392,7 @@ var HeroListMenu = BattleMenu.extend({
                         die_text.setVisible(false);
                         die_time_text.setVisible(false);
                         elements.revive_btn.layer.setVisible(false);
+                        elements.icon.setColor(cc.color(255,255,255));
                         if (hero.isMaxLevel()) {
                             (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                             elements.maxLevel_btn.layer.setVisible(true);
@@ -480,7 +487,7 @@ var HeroListMenu = BattleMenu.extend({
             function buildSkillDesc(skill, levelData) {
                 //var lv= skill.getLv()===0?1:skill.getLv();
                 var effects = skill.traverseSkillEffects();
-                return buildDesc(effects, skill.getDesc());
+                return buildDesc(effects, skill.getDesc(),{"duration":skill.getLevelData()['duration']});
             }
 
 

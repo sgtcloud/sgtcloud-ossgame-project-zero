@@ -62,7 +62,8 @@ var res = {
     fairy01_json: "res/fairy01.json",
     chest03_json: "res/chest03.json",
 
-    skill_magma_blaster: "res/effect5001.json",
+    skill_magma_blaster:"res/effect5001.json",
+    skill_fury_crawl:"res/effect5002.json",
     hero_desc_json: "res/HeroDesc.json"
 };
 
