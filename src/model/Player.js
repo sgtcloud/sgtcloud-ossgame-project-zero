@@ -163,7 +163,7 @@ var PlayerData = {
     }
     ,
     updateSingleResource: function (resource) {
-        if (player.resource[resource.unit]) {
+        if (cc.isNumber(player.resource[resource.unit]) && (player.resource[resource.unit] > 0)) {
             player.resource[resource.unit] += resource.value;
         } else {
             cc.log("unknown resource type:" + resource.unit);

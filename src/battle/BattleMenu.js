@@ -159,7 +159,7 @@ var SkillListMenu = BattleMenu.extend({
         this.scheduleUpdate();
     }
 });
-function buildDesc(effects, desc,extend) {
+function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
@@ -169,8 +169,8 @@ function buildDesc(effects, desc,extend) {
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
     }
-    if(extend){
-        effectsObj=$$.extend(effectsObj,extend);
+    if (extend) {
+        effectsObj = $$.extend(effectsObj, extend);
     }
     var desc = desc.mapping(effectsObj)
     return desc;
@@ -341,7 +341,7 @@ var HeroListMenu = BattleMenu.extend({
                 customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
                     var data = event.getUserData();
                     if (data['id'] === hero.getId()) {
-                        elements.die_time_text.setString(Math.round(data['recover'])+" 秒");
+                        elements.die_time_text.setString(Math.round(data['recover']) + " 秒");
                     }
                 })
                 elements.die_time_text.setFontName("微软雅黑");
@@ -380,7 +380,7 @@ var HeroListMenu = BattleMenu.extend({
                         elements.die_time_text.setVisible(true);
                         elements.revive_btn.layer.setVisible(true);
                         elements.upgrade_btn.layer.setVisible(false);
-                        elements.icon.setColor(cc.color(90,90,90));
+                        elements.icon.setColor(cc.color(90, 90, 90));
                         var resurge = hero.getResurge();
                         elements.revive_btn.diamond_text.setString(parseInt(resurge['cost']['value']));
                     }
@@ -392,7 +392,7 @@ var HeroListMenu = BattleMenu.extend({
                         die_text.setVisible(false);
                         die_time_text.setVisible(false);
                         elements.revive_btn.layer.setVisible(false);
-                        elements.icon.setColor(cc.color(255,255,255));
+                        elements.icon.setColor(cc.color(255, 255, 255));
                         if (hero.isMaxLevel()) {
                             (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                             elements.maxLevel_btn.layer.setVisible(true);
@@ -487,7 +487,7 @@ var HeroListMenu = BattleMenu.extend({
             function buildSkillDesc(skill, levelData) {
                 //var lv= skill.getLv()===0?1:skill.getLv();
                 var effects = skill.traverseSkillEffects();
-                return buildDesc(effects, skill.getDesc(),{"duration":skill.getLevelData()['duration']});
+                return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
             }
 
 
@@ -558,8 +558,8 @@ var HeroListMenu = BattleMenu.extend({
                             if (!skill.isMaxLevel()) {
                                 var nextlevelData = skill.getLevelData(skill.getLv() + 1);
                                 if (validateAmountEnough(nextlevelData['upgrade'])) {
-                                    elements.upgrade_btn. btn.setEnabled(false);
-                                    elements.upgrade_btn. btn.setBright(false);
+                                    elements.upgrade_btn.btn.setEnabled(false);
+                                    elements.upgrade_btn.btn.setBright(false);
                                     elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
                                 } else {
                                     elements.upgrade_btn.btn.setEnabled(true);

@@ -243,26 +243,22 @@ var BattlePanel = cc.Node.extend({
 
         this.update = function (dt) {
             {
-                if (this.intervalState) {
+                if(this.intervalState){
                     this.intervalTime += dt;
-                    if (this.intervalTime > 10) {
-                        this.showFairyAndChest();
-                        if (this.intervalTime > CONSTS.flySpirit_interval_time) {
-                            this.showFairy();
-                        }
-                    }
-                    var stage = PlayerData.getStageData();
-                    if (stage.isBossBattle()) {
-                        this.updateBossBattleTime(dt, stage);
+                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
+                        this.showFairy();
                     }
                 }
+                var stage = PlayerData.getStageData();
+                if (stage.isBossBattle()) {
+                    this.updateBossBattleTime(dt,stage);
+                }
             }
-            ;
-            this.reset();
-            this.scheduleUpdate();
-        }
+        },
+        this.reset();
+        this.scheduleUpdate();
     },
-    reset: function () {
+    reset:function(){
         this.intervalTime = 0;
         this.intervalState = true;
     },
