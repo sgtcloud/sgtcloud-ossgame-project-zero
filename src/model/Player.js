@@ -127,6 +127,7 @@ var PlayerData = {
     ,
     updateIntoBattleTime: function () {
         player.into_stage_battle_timestamp = Date.parse(new Date());
+        this.updatePlayer();
     }
     ,
     getIntoBattleTime: function () {
@@ -138,7 +139,7 @@ var PlayerData = {
         if (intoBattleTime > 0) {
             var offlineTime = (Date.parse(new Date()) - intoBattleTime) / (1000 * 60);
 
-            if (offlineTime > 0) {
+            if (offlineTime > 1) {
                 if (offlineTime > (60 * 24)) {
                     offlineTime = 60 * 24;
                 }

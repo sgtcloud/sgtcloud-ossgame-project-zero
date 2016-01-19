@@ -107,13 +107,14 @@ var BattlePanel = cc.Node.extend({
             var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
             var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
-            var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn');
+            var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn').getChildByName('offline_btn');
 
             var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
             var rewards = player.not_get_reward;
             for (var key in rewards) {
                 if (rewards.hasOwnProperty(key)) {
                     var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
+                    offlineRewardLayerText.ignoreContentAdaptWithSize(true);
                     offlineRewardLayerText.setString(rewards[key]);
                 }
             }
