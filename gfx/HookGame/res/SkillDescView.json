@@ -1,0 +1,301 @@
+{
+  "ID": "ddc4377f-c53d-4fd4-97a0-c02fd68172d6",
+  "Version": "2.3.3.0",
+  "Name": "SkillDescView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 89,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 104,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 107,
+                "ActionTag": 1380833840,
+                "Size": {
+                  "X": 560.0,
+                  "Y": 110.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/skill_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 90,
+                "Scale9Height": 90,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 25.9997,
+                  "Y": 10.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0464,
+                  "Y": 0.0909
+                },
+                "PreSize": {
+                  "X": 0.1607,
+                  "Y": 0.8182
+                },
+                "LeftMargin": 25.9997,
+                "RightMargin": 444.0003,
+                "TopMargin": 10.0,
+                "BottomMargin": 10.0,
+                "Tag": 105,
+                "ActionTag": -916199202,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "skill_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 22,
+                "LabelText": "技能名字",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 135.6982,
+                  "Y": 70.3136
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2423,
+                  "Y": 0.6392
+                },
+                "PreSize": {
+                  "X": 0.2857,
+                  "Y": 0.2727
+                },
+                "LeftMargin": 135.6982,
+                "RightMargin": 264.3018,
+                "TopMargin": 9.6864,
+                "BottomMargin": 70.3136,
+                "Tag": 108,
+                "ActionTag": 1237467605,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 30.0
+                },
+                "Name": "skillName_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "Lv99/99",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 300.0399,
+                  "Y": 70.3136
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5358,
+                  "Y": 0.6392
+                },
+                "PreSize": {
+                  "X": 0.2857,
+                  "Y": 0.2727
+                },
+                "LeftMargin": 300.0399,
+                "RightMargin": 99.9601,
+                "TopMargin": 9.6864,
+                "BottomMargin": 70.3136,
+                "Tag": 109,
+                "ActionTag": 494641806,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 30.0
+                },
+                "Name": "skillLevel_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "技能描述",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 135.6982,
+                  "Y": 9.4742
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2423,
+                  "Y": 0.0861
+                },
+                "PreSize": {
+                  "X": 0.6786,
+                  "Y": 0.5455
+                },
+                "LeftMargin": 135.6982,
+                "RightMargin": 44.3018,
+                "TopMargin": 40.5258,
+                "BottomMargin": 9.4742,
+                "Tag": 110,
+                "ActionTag": -1542990271,
+                "Size": {
+                  "X": 380.0,
+                  "Y": 60.0
+                },
+                "Name": "skillDesc_text",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -921971598,
+            "Size": {
+              "X": 560.0,
+              "Y": 110.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 560.0,
+          "Y": 110.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "mainUI/bg_05.png",
+        "mainUI/skill_icon.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
