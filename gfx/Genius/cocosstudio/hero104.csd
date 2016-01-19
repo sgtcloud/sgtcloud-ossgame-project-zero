@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero104" Type="Node" ID="df805010-8660-4aa5-86f9-654d772e2f68" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="78" Speed="0.5000">
+      <Animation Duration="78" Speed="0.4167">
         <Timeline ActionTag="264548272" Property="Position">
           <PointFrame FrameIndex="0" X="6.8114" Y="-8.9112">
             <EasingData Type="0" />
@@ -73,13 +73,13 @@
           <PointFrame FrameIndex="69" X="5.5052" Y="-10.4607">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="72" X="-3.2929" Y="-10.3064">
+          <PointFrame FrameIndex="72" X="4.7069" Y="-9.3064">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="75" X="-2.0579" Y="-6.6019">
+          <PointFrame FrameIndex="75" X="4.9420" Y="-10.6019">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="78" X="-2.6752" Y="-10.9976">
+          <PointFrame FrameIndex="78" X="5.5100" Y="-10.4600">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -157,14 +157,19 @@
             <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand01.png" Plist="hero104.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="72" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand02.png" Plist="hero104.plist" />
+            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_skill05.png" Plist="hero104.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="75" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand03.png" Plist="hero104.plist" />
+            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand01.png" Plist="hero104.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="78" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand04.png" Plist="hero104.plist" />
+            <TextureFile Type="MarkedSubImage" Path="hero/hero104/hero104_stand01.png" Plist="hero104.plist" />
           </TextureFrame>
+        </Timeline>
+        <Timeline ActionTag="264548272" Property="BlendFunc">
+          <BlendFuncFrame FrameIndex="72" Tween="False" Src="770" Dst="771" />
+          <BlendFuncFrame FrameIndex="75" Tween="False" Src="770" Dst="771" />
+          <BlendFuncFrame FrameIndex="78" Tween="False" Src="770" Dst="771" />
         </Timeline>
       </Animation>
       <AnimationList>
@@ -190,15 +195,15 @@
       <ObjectData Name="Node" Tag="16" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero104" ActionTag="264548272" Tag="17" IconVisible="False" LeftMargin="-28.6886" RightMargin="-42.3114" TopMargin="-85.0888" BottomMargin="-8.9112" ctype="SpriteObjectData">
-            <Size X="71.0000" Y="94.0000" />
+          <AbstractNodeData Name="hero104" ActionTag="264548272" Tag="17" IconVisible="False" LeftMargin="-11.9145" RightMargin="-59.0855" TopMargin="-86.5049" BottomMargin="-7.4951" ctype="SpriteObjectData">
+            <Size X="138.0000" Y="83.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="6.8114" Y="-8.9112" />
+            <Position X="23.5855" Y="-7.4951" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="hero/hero104/hero104_atk01.png" Plist="hero104.plist" />
+            <FileData Type="MarkedSubImage" Path="hero/hero104/hero104_atk02.png" Plist="hero104.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

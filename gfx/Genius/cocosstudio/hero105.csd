@@ -2,7 +2,7 @@
   <PropertyGroup Name="hero105" Type="Node" ID="6598b700-9f80-41d6-9e4c-2138dc8500aa" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="81" Speed="0.5000">
+      <Animation Duration="81" Speed="0.4167">
         <Timeline ActionTag="-275940080" Property="Position">
           <PointFrame FrameIndex="0" X="-9.5075" Y="-12.4628">
             <EasingData Type="0" />
@@ -196,7 +196,7 @@
       <ObjectData Name="Node" Tag="20" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero105" ActionTag="-275940080" Tag="25" IconVisible="False" LeftMargin="-67.0075" RightMargin="-47.9925" TopMargin="-74.5372" BottomMargin="-12.4628" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero105" ActionTag="-275940080" Tag="25" IconVisible="False" LeftMargin="-63.5075" RightMargin="-44.4925" TopMargin="-66.5372" BottomMargin="-12.4628" ctype="SpriteObjectData">
             <Size X="115.0000" Y="87.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="-9.5075" Y="-12.4628" />

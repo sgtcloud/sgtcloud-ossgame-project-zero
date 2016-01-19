@@ -28,7 +28,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Enable": true,
             "Scale9Width": 1,
             "Scale9Height": 1,
             "TouchEnable": true,
@@ -1392,6 +1391,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -1448,6 +1449,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -1472,7 +1475,6 @@
                 "RightMargin": 244.0359,
                 "TopMargin": 881.531,
                 "BottomMargin": 18.469,
-                "CallBackType": "Touch",
                 "Tag": 87,
                 "Children": [
                   {

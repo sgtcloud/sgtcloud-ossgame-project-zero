@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 72,
-        "Speed": 0.5,
+        "Speed": 0.4167,
         "Timelines": [
           {
             "ActionTag": 2044631140,
@@ -175,8 +175,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -27.1734,
-                "Y": -13.7536,
+                "X": -26.1734,
+                "Y": -14.7536,
                 "FrameIndex": 54,
                 "EasingData": {
                   "Type": 0
@@ -185,7 +185,7 @@
               },
               {
                 "X": -26.0828,
-                "Y": -13.7702,
+                "Y": -14.7702,
                 "FrameIndex": 57,
                 "EasingData": {
                   "Type": 0
@@ -193,7 +193,7 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -27.2087,
+                "X": -25.7729,
                 "Y": -14.4201,
                 "FrameIndex": 60,
                 "EasingData": {
@@ -563,7 +563,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero103/hero103_atk01.png",
+              "Path": "hero/hero103/hero103_stand01.png",
               "Plist": "hero103.plist"
             },
             "BlendFunc": {
@@ -575,7 +575,7 @@
             },
             "Position": {
               "X": -26.5338,
-              "Y": -13.9781
+              "Y": -14.8226
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -593,8 +593,8 @@
             },
             "LeftMargin": -80.0338,
             "RightMargin": -26.9662,
-            "TopMargin": -82.0219,
-            "BottomMargin": -13.9781,
+            "TopMargin": -81.1774,
+            "BottomMargin": -14.8226,
             "Tag": 8,
             "ActionTag": 2044631140,
             "Size": {
