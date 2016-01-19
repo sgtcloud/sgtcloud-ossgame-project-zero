@@ -5,9 +5,10 @@
 //主动技能效果
 var ActiveSkill = cc.Class.extend({
 
-    TYPE_DAMAGE: "TYPE_DAMAGE",
+    TYPE_ONCE: "TYPE_ONCE",
     TYPE_BUFF: "TYPE_BUFF",
     TYPE_CONTINUOUS: "TYPE_CONTINUOUS",
+    shock: 0,
 
     ctor: function (skill, battle) {
         //this.reuse(unit, val);
@@ -20,21 +21,29 @@ var ActiveSkill = cc.Class.extend({
                 this.effect = effects[j].type;
                 // this is an once damage skill effect
                 if (effects[j].type === "single_damage_once") {
-                    this.type = this.TYPE_DAMAGE;
+                    this.type = this.TYPE_ONCE;
                     this.targets = [battle.findNextEnemy()];
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_magma_blaster, this.targets.length);
+                    this.shock = 2;
                 } else if (effects[j].type === "multi_damage_once") {
-                    this.type = this.TYPE_DAMAGE;
+                    this.type = this.TYPE_ONCE;
                     this.targets = battle.getAllEnemies().getAllLived();
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length);
+                    this.loadSkillEffectRes(res.skill_tornado_shock, this.targets.length);
+                    this.shock = 2;
+                } else if (effects[j].type === "multi_recover_once") {
+                    this.type = this.TYPE_ONCE;
+                    this.targets = battle.getAllHeroes().getAllLived();
+                    this.effectValue = effects[j].value * -1;
+                    this.loadSkillEffectRes(res.skill_cure_totem, this.targets.length);
                 } else if (effects[j].type.indexOf("buff") === 0) {
                     this.type = this.TYPE_BUFF;
                     this.targets = battle.getAllHeroes().getAllLived();
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes("res/icon/skills/" + skill.getIcon(), this.targets.length);
                 } else if (effects[j].type === "multi_damage_continuous") {
+                    this.type = this.TYPE_CONTINUOUS;
                     this.targets = battle.getAllEnemies().getAllLived();
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length);
@@ -61,21 +70,11 @@ var ActiveSkill = cc.Class.extend({
     },
 
     runSkillEffect: function (node, pos, index, anim) {
-        this.effectAnimCount = 0;
         if (this.hitActions[index]) {
             this.hitActions[index].play(anim, false);
             this.hitActions[index].setLastFrameCallFunc(function () {
-                this.effectAnimCount++;
-                if (this.effectAnimCount >= this.targets.length) {
-                    if (this.type === this.TYPE_CONTINUOUS) {
-                        var consumeTime = (this.skillStartTime - Date.parse(new Date())) / 1000;
-                        this.duration -= consumeTime;
-                        if (this.duration > 0) {
-                            this.effectAnimCount = 0;
-                            this.cast(node);
-                            return;
-                        }
-                    }
+                this.effectAnimFinishCount++;
+                if (this.effectAnimFinishCount >= this.targets.length) {
                     this.onCastFinish();
                 }
             }.bind(this));
@@ -91,20 +90,18 @@ var ActiveSkill = cc.Class.extend({
 
     cast: function (node) {
         if (this.targets) {
+            this.effectAnimFinishCount = 0;
+            this.skillStartTime = new Date().getTime();
             for (var i in this.targets) {
-                if (this.type === this.TYPE_DAMAGE) {
+                if (this.type === this.TYPE_ONCE) {
                     this.runSkillEffect(node, this.targets[i].getPosition(), i, "boom");
                     this.hitEffects[i].runAction(cc.fadeIn(1));
                     this.targets[i].doDamage(this.effectValue);
-                    customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
                 } else if (this.type === this.TYPE_CONTINUOUS) {
-                    this.skillStartTime = Date.parse(new Date());
-                    this.runSkillEffect(node, this.targets[i].getPosition(), i, "boom");
-                    this.hitEffects[i].runAction(cc.fadeIn(1));
-                    this.targets[i].doDamage(this.effectValue);
-                    customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
+                    this.runContinuousSkillEffect(node, this.targets[i].getPosition(), i, "boom");
                 } else if (this.type === this.TYPE_BUFF) {
                     // reuse the skill icon,scale to 30% to show on the top of the heroes
+                    // todo show more than one icon together
                     this.hitEffects[i].setScale(0.3);
                     var pos = cc.p(this.targets[i].getPositionX(), this.targets[i].getPositionY() + 100/*this.targets[i].height*/);
                     var showUp = cc.moveBy(0.3, cc.p(0, 12));
@@ -113,9 +110,41 @@ var ActiveSkill = cc.Class.extend({
                     this.runSkillEffect(node, pos, i, "boom");
                 }
             }
+            if (this.shock > 0) {
+                customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, this.shock);
+            }
+            if(this.targets.length === 0){
+                this.onCastFinish();
+            }
         }
         if (this.type === this.TYPE_BUFF) {
             this.startBuffEffect();
+        }
+    },
+
+    runContinuousSkillEffect: function (node, pos, index, anim) {
+        if (this.duration > 0) {
+            this.hitEffects[index].setPosition(pos);
+            this.hitEffects[index].runAction(cc.fadeIn(1));
+            this.hitActions[index].play(anim, false);
+            this.hitActions[index].setLastFrameCallFunc(function () {
+                this.effectAnimFinishCount++;
+                if (this.effectAnimFinishCount >= this.targets.length) {
+                    var skillEndTime = new Date().getTime();
+                    var consumeTime = (skillEndTime - this.skillStartTime ) / 1000;
+                    this.duration -= consumeTime;
+                    if (this.duration > 0) {
+                        this.targets = this.battle.getAllEnemies().getAllLived();
+                        this.cast();
+                    }else{
+                        this.onCastFinish();
+                    }
+                }
+            }.bind(this));
+            this.targets[index].doDamage(this.effectValue);
+            if(node){
+                node.addChild(this.hitEffects[index], 2000 + index);
+            }
         }
     },
 
