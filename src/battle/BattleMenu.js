@@ -170,8 +170,8 @@ var HeroListMenu = BattleMenu.extend({
             lock.setVisible(false);
             level_text.setVisible(false);
             upMax_text.setVisible(false);
-            //diamond_text.setVisible(false);
-            //diamond.setVisible(false);
+            diamond_text.setVisible(false);
+            diamond.setVisible(false);
             var elements = {
                 gold: gold,
                 goldText: gold_text,
