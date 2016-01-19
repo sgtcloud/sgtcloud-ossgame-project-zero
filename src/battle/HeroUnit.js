@@ -11,14 +11,20 @@ var HeroUnit = BattleUnit.extend({
         this.data = data;
 
         //血条的NODE
-        var lifeNode = ccs.csLoader.createNode(res.hero_blood_json);
-        lifeNode.setAnchorPoint(0.5, 0.5);
-        this.addChild(lifeNode);
+        this.lifeNode = ccs.csLoader.createNode(res.hero_blood_json);
+        this.lifeNode.setAnchorPoint(0.5, 0.5);
+        this.lifeNode.setPositionY(86);
+        this.addChild(this.lifeNode);
 
         //血条组件的引用
-        this.lifeBar = lifeNode.getChildByName('root').getChildByName('blood_bar');
+        this.lifeBar = this.lifeNode.getChildByName('root').getChildByName('blood_bar');
         //刷新刷条
         this.refreshLifeBar = function () {
+            if (this.isDead()) {
+                this.lifeNode.setVisible(false);
+            } else {
+                this.lifeNode.setVisible(true);
+            }
             var max = this.data.getLife();
             this.lifeBar.setPercent(this.data.getCurrentLife() / max * 100);
         };

@@ -236,6 +236,10 @@ var PlayerData = {
      */
     tmp_tap_rate: 0,
     globe_gold_rate: 0,
+    /**
+     * gold rate buff
+     */
+    tmp_gold_rate: 0,
     globe_atk_period_rate: 0,
     /**
      * attack_period rate buff

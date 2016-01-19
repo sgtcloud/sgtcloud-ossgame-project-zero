@@ -7,6 +7,16 @@ var SpriteGroup = function (_sprites) {
     this.count = function () {
         return sprites.length;
     };
+    this.getAllLived = function () {
+        var livedSprites = [];
+        for (var i in sprites) {
+            var sprite = sprites[i];
+            if (!sprite.isDead()) {
+                livedSprites.push(sprite);
+            }
+        }
+        return livedSprites;
+    };
     this.foreach = function (callback, context) {
         for (var i in sprites) {
             callback.call(context, sprites[i], i);
@@ -184,7 +194,7 @@ var BattlePanel = cc.Node.extend({
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 7; i++) {
             this.enemyPos[i] = this.spritesLayer.getChildByName('enemy' + (i + 1));
         }
 
@@ -196,8 +206,8 @@ var BattlePanel = cc.Node.extend({
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
             /*if (self.times != undefined) {
-                clearInterval(self.times);
-            }*/
+             clearInterval(self.times);
+             }*/
 
         });
         customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
@@ -226,8 +236,7 @@ var BattlePanel = cc.Node.extend({
         });
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
-            this.addChild(activeSkill, 2000);
-            activeSkill.cast();
+            activeSkill.cast(this);
         }.bind(this));
         this.bindPlayerTapEvent();
         DamageNumber.initPool();
@@ -273,8 +282,7 @@ var BattlePanel = cc.Node.extend({
         var target = this.findNextEnemy();
         if (target) {
             var tapSkill = new TapSkill();
-            this.addChild(tapSkill, 1000);
-            tapSkill.cast(target, pos);
+            tapSkill.cast(this, target, pos);
         }
     },
 
@@ -348,6 +356,14 @@ var BattlePanel = cc.Node.extend({
 
     findNextEnemy: function () {
         return this.enemySprites.findFirstAlive();
+    },
+
+    getAllEnemies: function () {
+        return this.enemySprites;
+    },
+
+    getAllHeroes: function () {
+        return this.heroSprites;
     },
 
     findRandomHero: function () {

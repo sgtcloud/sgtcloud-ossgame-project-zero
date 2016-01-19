@@ -38,6 +38,10 @@ var Hero = function (heroData) {
         if (heroData.life < 0) {
             heroData.life = 0;
         }
+        var maxLife = this.getLife();
+        if (heroData.life >= maxLife) {
+            heroData.life = maxLife;
+        }
     }
 
 
@@ -193,13 +197,15 @@ var Hero = function (heroData) {
         if (this.isLocked()) {
             return 0;
         }
-        return this.calcProp("ctr_chance");
+        // 暴击概率需要除以100来进行逻辑计算
+        return this.calcProp("ctr_chance") / 100;
     };
     this.getCtrModify = function () {
         if (this.isLocked()) {
             return 0;
         }
-        return this.calcProp("ctr_modify");
+        // 暴击倍率需要除以100来进行逻辑计算
+        return this.calcProp("ctr_modify") / 100;
     };
     this.getAnimateDelay = function () {
         if (this.isLocked()) {
