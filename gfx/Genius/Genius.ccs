@@ -649,6 +649,78 @@
               <PlistImageFile Name="effect_effect5002_effect5002_05.png" Key="effect/effect5002/effect5002_05.png" />
             </PlistImageFolder>
           </Folder>
+          <Folder Name="effect5003">
+            <Image Name="effect5003_01.png" />
+            <Image Name="effect5003_02.png" />
+            <Image Name="effect5003_03.png" />
+            <Image Name="effect5003_04.png" />
+            <Image Name="effect5003_05.png" />
+            <Image Name="effect5003_06.png" />
+            <Image Name="effect5003_07.png" />
+            <Image Name="effect5003_08.png" />
+            <Image Name="effect5003_09.png" />
+            <Image Name="effect5003_10.png" />
+            <Image Name="effect5003_11.png" />
+            <PlistImageFolder Image="effect5003.png" PListFile="effect5003.plist" Name=".effect5003_PList.Dir">
+              <PlistImageFile Name="effect_effect5003_effect5003_01.png" Key="effect/effect5003/effect5003_01.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_02.png" Key="effect/effect5003/effect5003_02.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_03.png" Key="effect/effect5003/effect5003_03.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_04.png" Key="effect/effect5003/effect5003_04.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_05.png" Key="effect/effect5003/effect5003_05.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_06.png" Key="effect/effect5003/effect5003_06.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_07.png" Key="effect/effect5003/effect5003_07.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_08.png" Key="effect/effect5003/effect5003_08.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_09.png" Key="effect/effect5003/effect5003_09.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_10.png" Key="effect/effect5003/effect5003_10.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_11.png" Key="effect/effect5003/effect5003_11.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="effect5004">
+            <Image Name="effect5004_01.png" />
+            <Image Name="effect5004_02.png" />
+            <Image Name="effect5004_03.png" />
+            <Image Name="effect5004_04.png" />
+            <Image Name="effect5004_05.png" />
+            <Image Name="effect5004_06.png" />
+            <Image Name="effect5004_07.png" />
+            <Image Name="effect5004_08.png" />
+            <Image Name="effect5004_09.png" />
+            <PlistImageFolder Image="effect5004.png" PListFile="effect5004.plist" Name=".effect5004_PList.Dir">
+              <PlistImageFile Name="effect_effect5004_effect5004_01.png" Key="effect/effect5004/effect5004_01.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_02.png" Key="effect/effect5004/effect5004_02.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_03.png" Key="effect/effect5004/effect5004_03.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_04.png" Key="effect/effect5004/effect5004_04.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_05.png" Key="effect/effect5004/effect5004_05.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_06.png" Key="effect/effect5004/effect5004_06.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_07.png" Key="effect/effect5004/effect5004_07.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_08.png" Key="effect/effect5004/effect5004_08.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_09.png" Key="effect/effect5004/effect5004_09.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="effect5005">
+            <Image Name="effect5005_01.png" />
+            <Image Name="effect5005_02.png" />
+            <Image Name="effect5005_03.png" />
+            <Image Name="effect5005_04.png" />
+            <Image Name="effect5005_05.png" />
+            <Image Name="effect5005_06.png" />
+            <Image Name="effect5005_07.png" />
+            <Image Name="effect5005_08.png" />
+            <Image Name="effect5005_09.png" />
+            <Image Name="effect5005_10.png" />
+            <PlistImageFolder Image="effect5005.png" PListFile="effect5005.plist" Name=".effect5005_PList.Dir">
+              <PlistImageFile Name="effect_effect5005_effect5005_01.png" Key="effect/effect5005/effect5005_01.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_02.png" Key="effect/effect5005/effect5005_02.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_03.png" Key="effect/effect5005/effect5005_03.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_04.png" Key="effect/effect5005/effect5005_04.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_05.png" Key="effect/effect5005/effect5005_05.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_06.png" Key="effect/effect5005/effect5005_06.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_07.png" Key="effect/effect5005/effect5005_07.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_08.png" Key="effect/effect5005/effect5005_08.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_09.png" Key="effect/effect5005/effect5005_09.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_10.png" Key="effect/effect5005/effect5005_10.png" />
+            </PlistImageFolder>
+          </Folder>
         </Folder>
         <Folder Name="gold">
           <Folder Name="gold01">
@@ -769,8 +841,6 @@
         <PlistInfo Name="enemy1005.csi" Type="Plist" />
         <Project Name="fairy01.csd" Type="Node" />
         <PlistInfo Name="fairy01.csi" Type="Plist" />
-        <Project Name="gold01.csd" Type="Node" />
-        <PlistInfo Name="gold01.csi" Type="Plist" />
         <Project Name="gold02.csd" Type="Node" />
         <PlistInfo Name="gold02.csi" Type="Plist" />
         <Project Name="gold03.csd" Type="Node" />
@@ -788,6 +858,14 @@
         <Project Name="hero105.csd" Type="Node" />
         <PlistInfo Name="hero105.csi" Type="Plist" />
         <Project Name="enemy1001.csd" Type="Node" />
+        <Project Name="effect5003.csd" Type="Node" />
+        <Project Name="effect5004.csd" Type="Node" />
+        <Project Name="effect5005.csd" Type="Node" />
+        <PlistInfo Name="effect5003.csi" Type="Plist" />
+        <PlistInfo Name="effect5004.csi" Type="Plist" />
+        <PlistInfo Name="effect5005.csi" Type="Plist" />
+        <Project Name="gold01.csd" Type="Node" />
+        <PlistInfo Name="gold01.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

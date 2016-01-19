@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 3,
-        "Speed": 0.5,
+        "Speed": 0.3333,
         "Timelines": [
           {
             "ActionTag": -199724179,

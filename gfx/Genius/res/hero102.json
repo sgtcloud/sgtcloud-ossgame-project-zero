@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 78,
-        "Speed": 0.5,
+        "Speed": 0.4167,
         "Timelines": [
           {
             "ActionTag": 2020530987,
@@ -582,7 +582,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero102/hero102_hit04.png",
+              "Path": "hero/hero102/hero102_atk01.png",
               "Plist": "hero102.plist"
             },
             "BlendFunc": {
@@ -593,8 +593,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -31.0524,
-              "Y": -7.2557
+              "X": -14.8001,
+              "Y": -5.5
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -610,15 +610,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -88.0524,
-            "RightMargin": -25.9476,
-            "TopMargin": -79.7443,
-            "BottomMargin": -7.2557,
+            "LeftMargin": -56.3001,
+            "RightMargin": -26.6999,
+            "TopMargin": -108.5,
+            "BottomMargin": -5.5,
             "Tag": 7,
             "ActionTag": 2020530987,
             "Size": {
-              "X": 114.0,
-              "Y": 87.0
+              "X": 83.0,
+              "Y": 114.0
             },
             "Name": "hero102",
             "ctype": "SpriteObjectData"

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="45" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1389494339" Tag="125" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Enable="True" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1389494339" Tag="125" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1598747668" Tag="178" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="52" Scale9Height="52" ctype="ImageViewObjectData">
@@ -315,7 +315,7 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="skill_list" ActionTag="1867160498" Tag="88" IconVisible="False" LeftMargin="4.0001" RightMargin="3.9999" TopMargin="4.0000" BottomMargin="4.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+                  <AbstractNodeData Name="skill_list" ActionTag="1867160498" Tag="88" IconVisible="False" LeftMargin="4.0001" RightMargin="3.9999" TopMargin="4.0000" BottomMargin="4.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                     <Size X="572.0000" Y="452.0000" />
                     <AnchorPoint />
                     <Position X="4.0001" Y="4.0000" />
@@ -340,7 +340,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="-1833393543" CallBackType="Touch" Tag="87" IconVisible="False" LeftMargin="245.9641" RightMargin="244.0359" TopMargin="881.5310" BottomMargin="18.4690" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="-1833393543" Tag="87" IconVisible="False" LeftMargin="245.9641" RightMargin="244.0359" TopMargin="881.5310" BottomMargin="18.4690" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="back_btn" ActionTag="483927746" Tag="228" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="15" BottomEage="15" Scale9OriginX="15" Scale9OriginY="15" Scale9Width="2" Scale9Height="17" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
