@@ -864,8 +864,22 @@ var ShopLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
         this.showMoneyTreeView = function (name) {
-            //var gemNum = ;
+            var gemNum = CONSTS.money_tree_one_price;
             var showMoneyTree = shopView.getChildByName(name);
+            var diamondText = showMoneyTree.getChildByName("diamond_text");
+            var goldText = showMoneyTree.getChildByName("gold_text");
+            diamondText.ignoreContentAdaptWithSize(true);
+            diamondText.setString(gemNum);
+            goldText.ignoreContentAdaptWithSize(true);
+            goldText.setString(gemNum * PlayerData.getStageData().getMoneyTreeRatio());
+
+            var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
+            buyBtn.addClickEventListener(function () {
+
+                self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
+            });
+            //var gemNum = ;
+           /* var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
             diamondText.ignoreContentAdaptWithSize(true);
@@ -881,21 +895,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
             } else {
                 alert("本设备不支持devicemotion事件");
-            }
-            /*customEventHelper.bindListener(EVENT.TEST_BLOCK,function(){
-                if(self.falg){
-                    self.falg = false;
-                    cc.log('已经进入');
-                    self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
-                }else{
-                    //cc.log('不可进入');
-                }
-            });*/
-            /*var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
-             buyBtn.addClickEventListener(function () {
-
-
-             });*/
+            }*/
         };
         this.deviceMotionHandler = function (eventData) {
             var acceleration = eventData.accelerationIncludingGravity,
