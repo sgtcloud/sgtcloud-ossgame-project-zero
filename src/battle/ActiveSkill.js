@@ -195,9 +195,11 @@ var TapSkill = ActiveSkill.extend({
         this._super(null, null);
         this.targets = [];
         this.loadSkillEffectRes(res.tap_effect_json, 1);
+        this.type = this.TYPE_ONCE;
     },
 
     cast: function (node, target, pos) {
+        this.effectAnimFinishCount = 0;
         this.targets.push(target);
         this.runSkillEffect(node, pos, 0, "boom" + getRandomInt(1, 4));
         this.targets[0].doDamage(PlayerData.getTotalHit());

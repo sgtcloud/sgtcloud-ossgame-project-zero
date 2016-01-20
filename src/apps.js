@@ -2,7 +2,7 @@ var game;
 var $$ = {};
 $$.extend = function (a, b) {
     if (typeof (b) === "undefined") {
-       b={};
+        b = {};
     }
     for (var i in a) {
         if (!b[i])
@@ -15,24 +15,24 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time":60,
-    "click_chest_random_events":[
+    "flySpirit_interval_time": 60,
+    "click_chest_random_events": [
         {
-            "skill_id":"sk1001",
-            "weight":3,
-            "level":1
-        },{
-            "skill_id":"gold",
-            "weight":80,
-            "level":10
-        },{
-            "skill_id":"sk1003",
-            "weight":2,
-            "level":1
-        },{
-            "skill_id":"sk1004",
-            "weight":15,
-            "level":1
+            "skill_id": "sk1001",
+            "weight": 3,
+            "level": 1
+        }, {
+            "skill_id": "gold",
+            "weight": 80,
+            "level": 10
+        }, {
+            "skill_id": "sk1003",
+            "weight": 2,
+            "level": 1
+        }, {
+            "skill_id": "sk1004",
+            "weight": 15,
+            "level": 1
         }
     ]
 }
@@ -144,4 +144,23 @@ function setIgnoreContentAdaptWithSize(target) {
 
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
+}
+
+function bindTouchEventListener(listener, target) {
+
+    var mouseDownEventListener = cc.EventListener.create({
+        event: cc.EventListener.MOUSE,
+        swallowTouches: true,
+        onMouseDown: function (touch, event) {
+            var locationInNode = target.convertToNodeSpace(touch.getLocation());
+            var s = target.getContentSize();
+            var rect = cc.rect(0, 0, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                //cc.log(locationInNode.x + " " + locationInNode.y);
+                return listener(touch, event);
+            }
+            return false;
+        },
+    });
+    cc.eventManager.addListener(mouseDownEventListener, target);
 }
