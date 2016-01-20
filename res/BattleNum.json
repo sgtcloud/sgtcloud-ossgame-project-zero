@@ -93,6 +93,47 @@
                 },
                 "Name": "battle_num",
                 "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 11,
+                "CharHeight": 12,
+                "LabelText": "99",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font14_green.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.22,
+                  "Y": 0.8571
+                },
+                "RightMargin": 78.0,
+                "TopMargin": 2.0,
+                "CallBackType": "Click",
+                "Tag": 52,
+                "ActionTag": -1533586731,
+                "Size": {
+                  "X": 22.0,
+                  "Y": 12.0
+                },
+                "Name": "recover_num",
+                "ctype": "TextAtlasObjectData"
               }
             ],
             "ActionTag": 1001147719,
@@ -112,6 +153,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "mainUI/font14_green.png",
         "mainUI/font14_red.png"
       ],
       "ctype": "GameFileData"

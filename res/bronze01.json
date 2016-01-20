@@ -81,10 +81,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -23.0,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
+            "LeftMargin": -15.0,
+            "RightMargin": -15.0,
+            "TopMargin": -15.0,
+            "BottomMargin": -15.0,
             "Tag": 4,
             "ActionTag": -388551529,
             "Size": {
