@@ -163,26 +163,10 @@ var BattlePanel = cc.Node.extend({
         };
 
         var tap = root.getChildByName('tap');
-        var battleZone = tap;
-        this.bindPlayerTapEvent = function () {
-            var listener = cc.EventListener.create({
-                event: cc.EventListener.MOUSE,
-                swallowTouches: true,
-                onMouseDown: function (touch, event) {
-                    var locationInNode = battleZone.convertToNodeSpace(touch.getLocation());
-                    var s = battleZone.getContentSize();
-                    var rect = cc.rect(0, 0, s.width, s.height);
-                    if (cc.rectContainsPoint(rect, locationInNode)) {
-                        //cc.log(locationInNode.x + " " + locationInNode.y);
-                        self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
-
-                        return true;
-                    }
-                    return false;
-                },
-            });
-            cc.eventManager.addListener(listener, tap);
-        };
+        bindTouchEventListener(function (touch) {
+            var pos = this.convertTouchToNodeSpace(touch);
+            this.onPlayerTap(pos);
+        }.bind(this), tap);
 
         this.spritesLayer = root.getChildByName('sprites');
         //initBattle heroes sprites positions
@@ -238,27 +222,26 @@ var BattlePanel = cc.Node.extend({
             var activeSkill = new ActiveSkill(event.getUserData(), self);
             activeSkill.cast(this);
         }.bind(this));
-        this.bindPlayerTapEvent();
         DamageNumber.initPool();
 
         this.update = function (dt) {
             {
-                if(this.intervalState){
+                if (this.intervalState) {
                     this.intervalTime += dt;
-                    if(this.intervalTime > CONSTS.flySpirit_interval_time){
+                    if (this.intervalTime > CONSTS.flySpirit_interval_time) {
                         this.showFairy();
                     }
                 }
                 var stage = PlayerData.getStageData();
                 if (stage.isBossBattle()) {
-                    this.updateBossBattleTime(dt,stage);
+                    this.updateBossBattleTime(dt, stage);
                 }
             }
         },
-        this.reset();
+            this.reset();
         this.scheduleUpdate();
     },
-    reset:function(){
+    reset: function () {
         this.intervalTime = 0;
         this.intervalState = true;
     },
@@ -307,20 +290,20 @@ var BattlePanel = cc.Node.extend({
         this.boosTimeMax = stage.getBossTimeMax();
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-       /* this.timeText.setString(this.boosTimeMax);
-        this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
+        /* this.timeText.setString(this.boosTimeMax);
+         this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
 
-       /* this.times = setInterval(function () {
-            if (self.boosTimeMax == 0) {
-                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            } else {
-                self.boosTimeMax--;
-                self.timeText.setString(self.boosTimeMax);
-                self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
-            }
-        }, 1000);*/
+        /* this.times = setInterval(function () {
+         if (self.boosTimeMax == 0) {
+         customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+         } else {
+         self.boosTimeMax--;
+         self.timeText.setString(self.boosTimeMax);
+         self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
+         }
+         }, 1000);*/
     },
-    updateBossBattleTime: function(dt,stage){
+    updateBossBattleTime: function (dt, stage) {
         if (Math.floor(this.boosTimeMax) < 0) {
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         } else {
@@ -407,9 +390,9 @@ var BattlePanel = cc.Node.extend({
             }
             player.stage_battle_num += 1;
         }
-       /* if (this.times != undefined) {
-            clearInterval(this.times);
-        }*/
+        /* if (this.times != undefined) {
+         clearInterval(this.times);
+         }*/
         // wait for 1 second to start next battle
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);
