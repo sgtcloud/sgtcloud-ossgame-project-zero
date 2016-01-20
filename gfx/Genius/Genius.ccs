@@ -756,40 +756,6 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
-        <Folder Name="chest">
-          <Folder Name="chest01">
-            <Image Name="chest01_close01.png" />
-            <Image Name="chest01_open01.png" />
-            <PlistImageFolder Image="chest01.png" PListFile="chest01.plist" Name=".chest01_PList.Dir">
-              <PlistImageFile Name="chest_chest01_chest01_close01.png" Key="chest/chest01/chest01_close01.png" />
-              <PlistImageFile Name="chest_chest01_chest01_open01.png" Key="chest/chest01/chest01_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest02">
-            <Image Name="chest02_close01.png" />
-            <Image Name="chest02_open01.png" />
-            <PlistImageFolder Image="chest02.png" PListFile="chest02.plist" Name=".chest02_PList.Dir">
-              <PlistImageFile Name="chest_chest02_chest02_close01.png" Key="chest/chest02/chest02_close01.png" />
-              <PlistImageFile Name="chest_chest02_chest02_open01.png" Key="chest/chest02/chest02_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest03">
-            <Image Name="chest03_close01.png" />
-            <Image Name="chest03_open01.png" />
-            <PlistImageFolder Image="chest03.png" PListFile="chest03.plist" Name=".chest03_PList.Dir">
-              <PlistImageFile Name="chest_chest03_chest03_close01.png" Key="chest/chest03/chest03_close01.png" />
-              <PlistImageFile Name="chest_chest03_chest03_open01.png" Key="chest/chest03/chest03_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest04">
-            <Image Name="chest04_close01.png" />
-            <Image Name="chest04_open01.png" />
-            <PlistImageFolder Image="chest04.png" PListFile="chest04.plist" Name=".chest04_PList.Dir">
-              <PlistImageFile Name="chest_chest04_chest04_close01.png" Key="chest/chest04/chest04_close01.png" />
-              <PlistImageFile Name="chest_chest04_chest04_open01.png" Key="chest/chest04/chest04_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-        </Folder>
         <Folder Name="fairy">
           <Folder Name="fairy01">
             <Image Name="fairy01_die01.png" />
@@ -816,14 +782,6 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
-        <Project Name="chest01.csd" Type="Node" />
-        <PlistInfo Name="chest01.csi" Type="Plist" />
-        <Project Name="chest02.csd" Type="Node" />
-        <PlistInfo Name="chest02.csi" Type="Plist" />
-        <Project Name="chest03.csd" Type="Node" />
-        <PlistInfo Name="chest03.csi" Type="Plist" />
-        <Project Name="chest04.csd" Type="Node" />
-        <PlistInfo Name="chest04.csi" Type="Plist" />
         <Project Name="effect5000.csd" Type="Node" />
         <PlistInfo Name="effect5000.csi" Type="Plist" />
         <Project Name="effect5001.csd" Type="Node" />
@@ -978,6 +936,80 @@
         <PlistInfo Name="rune01.csi" Type="Plist" />
         <PlistInfo Name="stone01.csi" Type="Plist" />
         <PlistInfo Name="wood01.csi" Type="Plist" />
+        <Folder Name="chest">
+          <Folder Name="chest01">
+            <Image Name="chest01_close01.png" />
+            <Image Name="chest01_open01.png" />
+            <Image Name="chest01_open02.png" />
+            <Image Name="chest01_open03.png" />
+            <Image Name="chest01_open04.png" />
+            <Image Name="chest01_open05.png" />
+            <PlistImageFolder Image="chest01.png" PListFile="chest01.plist" Name=".chest01_PList.Dir">
+              <PlistImageFile Name="chest_chest01_chest01_close01.png" Key="chest/chest01/chest01_close01.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open01.png" Key="chest/chest01/chest01_open01.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open02.png" Key="chest/chest01/chest01_open02.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open03.png" Key="chest/chest01/chest01_open03.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open04.png" Key="chest/chest01/chest01_open04.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open05.png" Key="chest/chest01/chest01_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest02">
+            <Image Name="chest02_close01.png" />
+            <Image Name="chest02_open01.png" />
+            <Image Name="chest02_open02.png" />
+            <Image Name="chest02_open03.png" />
+            <Image Name="chest02_open04.png" />
+            <Image Name="chest02_open05.png" />
+            <PlistImageFolder Image="chest02.png" PListFile="chest02.plist" Name=".chest02_PList.Dir">
+              <PlistImageFile Name="chest_chest02_chest02_close01.png" Key="chest/chest02/chest02_close01.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open01.png" Key="chest/chest02/chest02_open01.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open02.png" Key="chest/chest02/chest02_open02.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open03.png" Key="chest/chest02/chest02_open03.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open04.png" Key="chest/chest02/chest02_open04.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open05.png" Key="chest/chest02/chest02_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest03">
+            <Image Name="chest03_close01.png" />
+            <Image Name="chest03_open01.png" />
+            <Image Name="chest03_open02.png" />
+            <Image Name="chest03_open03.png" />
+            <Image Name="chest03_open04.png" />
+            <Image Name="chest03_open05.png" />
+            <PlistImageFolder Image="chest03.png" PListFile="chest03.plist" Name=".chest03_PList.Dir">
+              <PlistImageFile Name="chest_chest03_chest03_close01.png" Key="chest/chest03/chest03_close01.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open01.png" Key="chest/chest03/chest03_open01.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open02.png" Key="chest/chest03/chest03_open02.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open03.png" Key="chest/chest03/chest03_open03.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open04.png" Key="chest/chest03/chest03_open04.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open05.png" Key="chest/chest03/chest03_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest04">
+            <Image Name="chest04_close01.png" />
+            <Image Name="chest04_open01.png" />
+            <Image Name="chest04_open02.png" />
+            <Image Name="chest04_open03.png" />
+            <Image Name="chest04_open04.png" />
+            <Image Name="chest04_open05.png" />
+            <PlistImageFolder Image="chest04.png" PListFile="chest04.plist" Name=".chest04_PList.Dir">
+              <PlistImageFile Name="chest_chest04_chest04_close01.png" Key="chest/chest04/chest04_close01.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open01.png" Key="chest/chest04/chest04_open01.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open02.png" Key="chest/chest04/chest04_open02.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open03.png" Key="chest/chest04/chest04_open03.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open04.png" Key="chest/chest04/chest04_open04.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open05.png" Key="chest/chest04/chest04_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="chest01.csd" Type="Node" />
+        <PlistInfo Name="chest01.csi" Type="Plist" />
+        <Project Name="chest02.csd" Type="Node" />
+        <PlistInfo Name="chest02.csi" Type="Plist" />
+        <Project Name="chest03.csd" Type="Node" />
+        <PlistInfo Name="chest03.csi" Type="Plist" />
+        <Project Name="chest04.csd" Type="Node" />
+        <PlistInfo Name="chest04.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
