@@ -304,7 +304,7 @@ var HeroListMenu = BattleMenu.extend({
                 if (target.isMaxLevel()) {
                     elements.upgrade_btn.layer.setVisible(false);
                     elements.maxLevel_btn.layer.setVisible(true);
-                    // console.log(target.getId() + ' has been the max level')
+                   // console.log(target.getId() + ' has been the max level')
                 } else {
                     (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
                     elements.maxLevel_btn.layer.isVisible() && elements.maxLevel_btn.layer.setVisible(false);
@@ -438,6 +438,9 @@ var HeroListMenu = BattleMenu.extend({
                 elements.upgrade_btn.diamond.setVisible(false);
                 icon.loadTexture("res/icon/heroes/" + hero.getIcon());
                 icon.setTouchEnabled(true);
+                icon.addClickEventListener(function () {
+                    openDesc(hero);
+                });
                 heroName_text.setString(hero.getName());
                 lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
                 dps_text.setString(parseInt(hero.getLife()));
@@ -448,7 +451,7 @@ var HeroListMenu = BattleMenu.extend({
                         PlayerData.updateResource([resurge['cost']]);
                         customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                         PlayerData.updatePlayer();
-                        // console.log('请注意，英雄' + hero.getId() + '请求买活....');
+                       // console.log('请注意，英雄' + hero.getId() + '请求买活....');
                         customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                     }
                 });
@@ -500,6 +503,7 @@ var HeroListMenu = BattleMenu.extend({
                         elements.revive_btn.diamond_text.setString(costValue);
                         elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
                         // console.log('钻石不足')
+                       // console.log('钻石不足')
                         if (PlayerData.getAmountByUnit("gem") < costValue) {
                             elements.revive_btn.btn.setEnabled(false);
                             elements.revive_btn.btn.setBright(false);
@@ -512,7 +516,7 @@ var HeroListMenu = BattleMenu.extend({
                     if (!hero.getCurrentLife() > 0) {
                         var resurge = hero.getResurge();
                         var costValue = parseInt(resurge['cost']['value']);
-                        //  console.log('钻石不足')
+                      //  console.log('钻石不足')
                         if (PlayerData.getAmountByUnit("gem") < costValue) {
                             elements.revive_btn.btn.setEnabled(false);
                             elements.revive_btn.btn.setBright(false);
@@ -544,7 +548,7 @@ var HeroListMenu = BattleMenu.extend({
 
 
                 setElement(elements, hero, function (event, otherBtn) {
-                    // console.log(hero.getId() + '当前生命值' + hero.getCurrentLife())
+                   // console.log(hero.getId() + '当前生命值' + hero.getCurrentLife())
                     var eventData = {};
                     var levelData = hero.getLevelData();
                     eventData.heroId = hero.getId();
@@ -575,6 +579,14 @@ var HeroListMenu = BattleMenu.extend({
                 });
 
                 return root;
+            }
+
+            function openDesc(hero) {
+                /*var heroDescScenne = new HeroDescScene(hero);
+                cc.director.runScene(heroDescScenne);*/
+                var heroDesc =new HeroDesc();
+                heroDesc.initData(hero);
+
             }
 
             function showAddOrCut(add, cut, showEffect) {
@@ -912,8 +924,47 @@ var ShopLayerMenu = BattleMenu.extend({
 
                 self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
             });
+            //var gemNum = ;
+           /* var showMoneyTree = shopView.getChildByName(name);
+            var diamondText = showMoneyTree.getChildByName("diamond_text");
+            var goldText = showMoneyTree.getChildByName("gold_text");
+            diamondText.ignoreContentAdaptWithSize(true);
+            diamondText.setString(CONSTS.money_tree_one_price);
+            goldText.ignoreContentAdaptWithSize(true);
+            goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
+            this.shake = 4000;
+            this.last_update = 0;
+            this.x = this.y = this.z = this.last_x = this.last_y = this.last_z = 0;
+            this.falg = true;
+
+            if (window.DeviceMotionEvent) {
+                window.addEventListener("devicemotion", this.deviceMotionHandler, false);
+            } else {
+                alert("本设备不支持devicemotion事件");
+            }*/
         };
+        this.deviceMotionHandler = function (eventData) {
+            var acceleration = eventData.accelerationIncludingGravity,
+                currTime = new Date().valueOf(),
+                diffTime = currTime - this.last_update;
+
+            if (diffTime > 100 && this.falg) {
+                this.last_update = currTime;
+                this.x = acceleration.x;
+                this.y = acceleration.y;
+                this.z = acceleration.z;
+                var speed = Math.abs(this.x + this.y + this.z - this.last_x - this.last_y - this.last_z) / diffTime * 10000
+                if (speed > this.shake) {
+                    this.falg = false;
+                    self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
+                }
+                this.last_x = this.x;
+                this.last_y = this.y;
+                this.last_z = this.z;
+            }
+        }
         this.buyGold = function (gem, gold) {
+            var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
                     , PlayerData.createResourceData("gem", -gem)]);
@@ -921,8 +972,18 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             } else {
-                new Popup1("友情提示", "当前钻石不足");
+               /* new Popup1("友情提示", "当前钻石不足",function(popup){
+                    popup.hiddenPopup();
+                    self.falg = true;
+                });*/
+                content = '当前钻石不足';
             }
+            new Popup1("友情提示", content, function (popup) {
+                /*layer.removeFromParent();
+                 gamePopup.hidden();*/
+                popup.hiddenPopup();
+                self.falg = true;
+            });
         };
         this.showPorpView = function (name) {
             var shopPorps = shopView.getChildByName(name);

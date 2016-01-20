@@ -1,0 +1,294 @@
+{
+  "c1001": {
+    "bonus": [
+      {
+        "f": {
+          "value": 5,
+          "unit": "stone"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 5,
+          "unit": "leather"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 5,
+          "unit": "wood"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "stone"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "leather"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "wood"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "stone"
+        },
+        "w": 15
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "leather"
+        },
+        "w": 15
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "wood"
+        },
+        "w": 15
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "stone"
+        },
+        "w": 3
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "leather"
+        },
+        "w": 3
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "wood"
+        },
+        "w": 3
+      }
+    ]
+  },
+  "c1002": {
+    "bonus": [
+      {
+        "f": {
+          "value": 4,
+          "unit": "crystal"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "iron"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "bronze"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "stone"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "leather"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "wood"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "crystal"
+        },
+        "w": 20
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "iron"
+        },
+        "w": 20
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "bronze"
+        },
+        "w": 20
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "stone"
+        },
+        "w": 6
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "leather"
+        },
+        "w": 6
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "wood"
+        },
+        "w": 6
+      }
+    ]
+  },
+  "c1003": {
+    "bonus": [
+      {
+        "f": {
+          "value": 4,
+          "unit": "essence"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 4,
+          "unit": "rune"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "crystal"
+        },
+        "w": 3
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "iron"
+        },
+        "w": 3
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "bronze"
+        },
+        "w": 3
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "stone"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "leather"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "wood"
+        },
+        "w": 2
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "essence"
+        },
+        "w": 15
+      },
+      {
+        "f": {
+          "value": 3,
+          "unit": "rune"
+        },
+        "w": 15
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "crystal"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "iron"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 2,
+          "unit": "bronze"
+        },
+        "w": 10
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "stone"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "leather"
+        },
+        "w": 5
+      },
+      {
+        "f": {
+          "value": 1,
+          "unit": "wood"
+        },
+        "w": 5
+      }
+    ]
+  }
+}
