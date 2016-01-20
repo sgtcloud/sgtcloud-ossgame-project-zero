@@ -28,10 +28,11 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="HeroDescView.csd" />
           <FilePathData Path="HeroDescLayer.csd" />
+          <FilePathData Path="HeroDescView.csd" />
+          <FilePathData Path="SkillLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="HeroDescView.csd" />
+        <ActiveDocument Path="SkillLayer.csd" />
       </Value>
     </Item>
   </Properties>
