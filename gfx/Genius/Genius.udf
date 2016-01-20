@@ -31,16 +31,11 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="chest02.csd" />
-          <FilePathData Path="chest02.csi" />
-          <FilePathData Path="chest01.csd" />
-          <FilePathData Path="chest03.csd" />
-          <FilePathData Path="chest03.csi" />
-          <FilePathData Path="chest04.csd" />
-          <FilePathData Path="chest04.csi" />
-          <FilePathData Path="chest01.csi" />
+          <FilePathData Path="hero104.csd" />
+          <FilePathData Path="hero105.csd" />
+          <FilePathData Path="hero104.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="chest03.csd" />
+        <ActiveDocument Path="hero104.csd" />
       </Value>
     </Item>
   </Properties>
