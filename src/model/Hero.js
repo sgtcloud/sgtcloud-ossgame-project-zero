@@ -59,6 +59,14 @@ var Hero = function (heroData) {
             this.calcEquipEffect(effect_props[i]);
         }
     };
+    this.hasSkill=function(skillId){
+        for(var i in this.skills){
+            if(skills[i].getId()===skillId){
+                return true;
+            }
+        }
+        return false;
+    }
     this.isLocked = function () {
         return lv <= 0;
     };
