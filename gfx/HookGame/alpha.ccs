@@ -201,6 +201,7 @@
           <Image Name="offline_reward.png" />
           <Image Name="font22_yellow_b.png" />
           <Image Name="f22_y.png" />
+          <Image Name="font14_green.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />

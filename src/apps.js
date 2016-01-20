@@ -2,7 +2,7 @@ var game;
 var $$ = {};
 $$.extend = function (a, b) {
     if (typeof (b) === "undefined") {
-       b={};
+        b = {};
     }
     for (var i in a) {
         if (!b[i])
@@ -206,4 +206,23 @@ function setIgnoreContentAdaptWithSize(target) {
 
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
+}
+
+function bindTouchEventListener(listener, target) {
+
+    var mouseDownEventListener = cc.EventListener.create({
+        event: cc.EventListener.MOUSE,
+        swallowTouches: true,
+        onMouseDown: function (touch, event) {
+            var locationInNode = target.convertToNodeSpace(touch.getLocation());
+            var s = target.getContentSize();
+            var rect = cc.rect(0, 0, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                //cc.log(locationInNode.x + " " + locationInNode.y);
+                return listener(touch, event);
+            }
+            return false;
+        },
+    });
+    cc.eventManager.addListener(mouseDownEventListener, target);
 }

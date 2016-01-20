@@ -67,6 +67,9 @@ var res = {
 
     skill_magma_blaster: "res/effect5001.json",
     skill_fury_crawl: "res/effect5002.json",
+    skill_saint_aura: "res/effect5003.json",
+    skill_cure_totem: "res/effect5004.json",
+    skill_tornado_shock: "res/effect5005.json",
     hero_desc_json: "res/HeroDescLayer.json",
     skill_desc_json: "res/SkillDescView.json"
 };

@@ -165,26 +165,10 @@ var BattlePanel = cc.Node.extend({
         };
 
         var tap = root.getChildByName('tap');
-        var battleZone = tap;
-        this.bindPlayerTapEvent = function () {
-            var listener = cc.EventListener.create({
-                event: cc.EventListener.MOUSE,
-                swallowTouches: true,
-                onMouseDown: function (touch, event) {
-                    var locationInNode = battleZone.convertToNodeSpace(touch.getLocation());
-                    var s = battleZone.getContentSize();
-                    var rect = cc.rect(0, 0, s.width, s.height);
-                    if (cc.rectContainsPoint(rect, locationInNode)) {
-                        //cc.log(locationInNode.x + " " + locationInNode.y);
-                        self.onPlayerTap(self.convertToNodeSpace(touch.getLocation()));
-
-                        return true;
-                    }
-                    return false;
-                },
-            });
-            cc.eventManager.addListener(listener, tap);
-        };
+        bindTouchEventListener(function (touch) {
+            var pos = this.convertTouchToNodeSpace(touch);
+            this.onPlayerTap(pos);
+        }.bind(this), tap);
 
         this.spritesLayer = root.getChildByName('sprites');
         //initBattle heroes sprites positions
@@ -240,7 +224,6 @@ var BattlePanel = cc.Node.extend({
             var activeSkill = new ActiveSkill(event.getUserData(), self);
             activeSkill.cast(this);
         }.bind(this));
-        this.bindPlayerTapEvent();
         DamageNumber.initPool();
 
         this.update = function (dt) {
@@ -387,7 +370,7 @@ var BattlePanel = cc.Node.extend({
 
     initBattle: function (stage) {
         this.loadStageBackground(stage);
-        //this.initBattleHeroes();
+        this.initBattleHeroes();
         this.loadRewardBtn();
         this.prepareBattle(stage);
     },

@@ -14,13 +14,13 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="shine" StartIndex="0" EndIndex="3">
-          <RenderColor A="150" R="0" G="191" B="255" />
+          <RenderColor A="255" R="0" G="191" B="255" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="bronze01" ActionTag="-388551529" Tag="4" IconVisible="False" LeftMargin="-23.0000" RightMargin="-23.0000" TopMargin="-23.0000" BottomMargin="-23.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="bronze01" ActionTag="-388551529" Tag="4" IconVisible="False" LeftMargin="-15.0000" RightMargin="-15.0000" TopMargin="-15.0000" BottomMargin="-15.0000" ctype="SpriteObjectData">
             <Size X="30.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />

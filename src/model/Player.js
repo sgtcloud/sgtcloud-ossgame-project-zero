@@ -89,6 +89,14 @@ var PlayerData = {
         }
         this.initPlayerData(save);
     },
+    getHeroById: function (id) {
+        for(var i in this.heroesData){
+            if(this.heroesData[i].getId()===id){
+                return this.heroesData[i]
+            }
+        }
+        return null;
+    },
     initPlayerData: function (save) {
         for (var i in player.heroes) {
             this.heroesData[i] = new Hero(player.heroes[i]);

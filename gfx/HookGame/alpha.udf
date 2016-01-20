@@ -25,15 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="HeroDescLayer.csd" />
-          <FilePathData Path="HeroDescView.csd" />
-          <FilePathData Path="SkillLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="SkillLayer.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
