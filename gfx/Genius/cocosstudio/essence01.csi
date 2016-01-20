@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="essence01" Type="Plist" ID="9c328139-c4b4-434f-a2f4-75efcbc5a8b9" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="material/essence/essence_shine01.png" />
+      <FilePathData Path="material/essence/essence_shine02.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

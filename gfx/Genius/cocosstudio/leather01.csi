@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="leather01" Type="Plist" ID="b71125d5-a1a1-44c8-ad36-a3d17eb4da91" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="material/leather/leather_shine01.png" />
+      <FilePathData Path="material/leather/leather_shine02.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

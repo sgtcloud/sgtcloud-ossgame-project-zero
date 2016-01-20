@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="rune01" Type="Plist" ID="eb45bb62-c2ab-4990-aca7-56892a22cd78" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="material/rune/rune_shine01.png" />
+      <FilePathData Path="material/rune/rune_shine02.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="crystal01" Type="Plist" ID="2805af4f-391a-4ae7-8378-4c39f89f48f3" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="material/crystal/crystal_shine01.png" />
+      <FilePathData Path="material/crystal/crystal_shine02.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
