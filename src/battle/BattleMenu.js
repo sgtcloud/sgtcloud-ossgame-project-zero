@@ -864,7 +864,7 @@ var ShopLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
         this.showMoneyTreeView = function (name) {
-            var gemNum = CONSTS.money_tree_one_price;
+           /* var gemNum = CONSTS.money_tree_one_price;
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
@@ -872,30 +872,32 @@ var ShopLayerMenu = BattleMenu.extend({
             diamondText.setString(gemNum);
             goldText.ignoreContentAdaptWithSize(true);
             goldText.setString(gemNum * PlayerData.getStageData().getMoneyTreeRatio());
-
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
+
             buyBtn.addClickEventListener(function () {
 
                 self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
-            });
+            });*/
             //var gemNum = ;
-           /* var showMoneyTree = shopView.getChildByName(name);
+            var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
             diamondText.ignoreContentAdaptWithSize(true);
             diamondText.setString(CONSTS.money_tree_one_price);
             goldText.ignoreContentAdaptWithSize(true);
             goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
+            var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
+            buyBtn.setVisible(true);
             this.shake = 4000;
             this.last_update = 0;
-            this.x = this.y = this.z = this.last_x = this.last_y = this.last_z = 0;
+            this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
             this.falg = true;
 
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
             } else {
                 alert("本设备不支持devicemotion事件");
-            }*/
+            }
         };
         this.deviceMotionHandler = function (eventData) {
             var acceleration = eventData.accelerationIncludingGravity,
@@ -904,17 +906,17 @@ var ShopLayerMenu = BattleMenu.extend({
 
             if (diffTime > 100 && this.falg) {
                 this.last_update = currTime;
-                this.x = acceleration.x;
-                this.y = acceleration.y;
-                this.z = acceleration.z;
-                var speed = Math.abs(this.x + this.y + this.z - this.last_x - this.last_y - this.last_z) / diffTime * 10000
+                this.first_x = acceleration.x;
+                this.first_y = acceleration.y;
+                this.first_z = acceleration.z;
+                var speed = Math.abs(this.first_x + this.first_y + this.first_z - this.last_x - this.last_y - this.last_z) / diffTime * 10000
                 if (speed > this.shake) {
                     this.falg = false;
-                    self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
+                    this.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
                 }
-                this.last_x = this.x;
-                this.last_y = this.y;
-                this.last_z = this.z;
+                this.last_x = this.first_x;
+                this.last_y = this.first_y;
+                this.last_z = this.first_z;
             }
         }
         this.buyGold = function (gem, gold) {
