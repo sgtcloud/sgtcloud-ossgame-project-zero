@@ -276,6 +276,7 @@
         <Project Name="Btn_Upgrade2.csd" Type="Layer" />
         <Project Name="BuffLayer.csd" Type="Layer" />
         <Project Name="SkillDescView.csd" Type="Layer" />
+        <Project Name="HeroDescLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
