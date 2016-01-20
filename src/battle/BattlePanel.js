@@ -413,6 +413,7 @@ var BattlePanel = cc.Node.extend({
         for (var i in bonus) {
             Loot.generateLoots(bonus[i], pos);
         }
+        customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 3);
     },
 
     prepareBattle: function (stage) {
