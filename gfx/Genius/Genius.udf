@@ -28,5 +28,20 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="hero105.csd" />
+          <FilePathData Path="hero104.csi" />
+          <FilePathData Path="gold01.csd" />
+          <FilePathData Path="gold02.csd" />
+          <FilePathData Path="gold03.csd" />
+          <FilePathData Path="gold04.csd" />
+          <FilePathData Path="essence01.csd" />
+          <FilePathData Path="bronze01.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="bronze01.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
