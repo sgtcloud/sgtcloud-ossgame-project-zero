@@ -42,6 +42,7 @@ var SkillIcon = function (battle, template, index, skillsBox) {
     this.reviveText.setVisible(false);
     this.time.setVisible(false);
     this.cooldownText.setVisible(false);
+    this.durationText.setVisible(false);
     this.skill_icon.setTouchEnabled(true);
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
@@ -69,15 +70,16 @@ var SkillIcon = function (battle, template, index, skillsBox) {
             });
             var levelData=that.skill.getLevelData();
             if(levelData['duration']>0){
-                that.durationText.setVisible(true)
+                //that.durationText.setVisible(true)
                 that.time.setString(Math.round(levelData['duration']) + " 秒")
             }
             if(levelData['cooldown']>0){
-                that.cooldownText.setVisible(true)
+                //that.cooldownText.setVisible(true)
             }
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();
+                console.log(that.skill.getId())
                 if (dieHero.hasSkill(that.skill.getId())) {
                     that.skill_icon.setTouchEnabled(false)
                     that.skill_icon.setColor(cc.color(90, 90, 90))

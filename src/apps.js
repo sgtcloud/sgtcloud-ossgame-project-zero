@@ -15,8 +15,8 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time": 60,
-    "click_chest_random_events": [
+    "flySpirit_interval_time":10,
+    "click_chest_random_events":[
         {
             "skill_id": "sk1001",
             "weight": 3,

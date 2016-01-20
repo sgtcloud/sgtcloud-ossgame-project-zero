@@ -77,7 +77,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "gold/gold03/gold03_shine02.png",
+              "Path": "gold/gold03/gold03_shine01.png",
               "Plist": "gold03.plist"
             },
             "BlendFunc": {
@@ -93,8 +93,8 @@
               "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
             },
             "CColor": {},
             "IconVisible": false,

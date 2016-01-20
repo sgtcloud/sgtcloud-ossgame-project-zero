@@ -9,7 +9,7 @@ var ChestUnit = cc.Node.extend({
         this.node = json.node;
         this.animation = json.action;
         this.animationState = 'close';
-        var chest = this.node.getChildByName("chest03");
+        var chest = this.node.getChildByName("chest");
         {
             //去除CCS导出文件位移会自带缓动效果的问题
             var timelines = this.animation.getTimelines();
