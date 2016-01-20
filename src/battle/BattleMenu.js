@@ -37,7 +37,7 @@ var SkillIcon = function (battle, template, index, skillsBox) {
     this.reviveText = root.getChildByName('reviveTime_text');
     this.time = root.getChildByName('time');
     this.cooldownText = root.getChildByName('cooldown_text');
-    this.durationText = root.getChildByName('durationText');
+    this.durationText = root.getChildByName('duration_text');
     //this.icon=root.getChildByName('icon');
     this.reviveText.setVisible(false);
     this.time.setVisible(false);
@@ -102,7 +102,7 @@ var SkillIcon = function (battle, template, index, skillsBox) {
             });
             customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
                 var data = event.getUserData();
-                var hero = PlayerData.getHeroesData(data['id']);
+                var hero = PlayerData.getHeroById(data['id']);
                 if ( hero.hasSkill(that.skill.getId())) {
                     that.time.setString(Math.round(data['recover']) + " 秒");
                 }
