@@ -60,7 +60,7 @@ var Hero = function (heroData) {
         }
     };
     this.hasSkill=function(skillId){
-        for(var i in this.skills){
+        for(var i in skills){
             if(skills[i].getId()===skillId){
                 return true;
             }
