@@ -1,8 +1,8 @@
 var game;
 var $$ = {};
 $$.extend = function (a, b) {
-    if (typeof b === "undefined") {
-        return a;
+    if (typeof (b) === "undefined") {
+       b={};
     }
     for (var i in a) {
         if (!b[i])
