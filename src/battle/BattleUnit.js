@@ -40,9 +40,8 @@ var BattleUnit = cc.Node.extend({
         //调用显示伤害值
         this.showDamageNumber = function (val, ctr) {
             var dmg = DamageNumber.create(val, ctr);
-            dmg.setPosition(0, 64);
-            this.addChild(dmg);
-            dmg.fire();
+            dmg.setPosition(cc.p(0, 64));
+            dmg.fire(this);
         };
         //判断是否死亡
         this.isDead = function () {
