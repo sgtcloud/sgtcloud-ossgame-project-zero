@@ -896,6 +896,7 @@ var ShopLayerMenu = BattleMenu.extend({
             this.falg = true;
 
             if (window.DeviceMotionEvent) {
+                alert(111);
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
             } else {
                 alert("本设备不支持devicemotion事件");
@@ -905,14 +906,16 @@ var ShopLayerMenu = BattleMenu.extend({
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
                 diffTime = currTime - this.last_update;
-
+                alert(222);
             if (diffTime > 100 && this.falg) {
+                alert(333);
                 this.last_update = currTime;
                 this.first_x = acceleration.x;
                 this.first_y = acceleration.y;
                 this.first_z = acceleration.z;
                 var speed = Math.abs(this.first_x + this.first_y + this.first_z - this.last_x - this.last_y - this.last_z) / diffTime * 10000
                 if (speed > this.shake) {
+                    alert(444);
                     this.falg = false;
                     this.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
                 }
@@ -922,6 +925,7 @@ var ShopLayerMenu = BattleMenu.extend({
             }
         }
         this.buyGold = function (gem, gold) {
+            alert(555);
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
