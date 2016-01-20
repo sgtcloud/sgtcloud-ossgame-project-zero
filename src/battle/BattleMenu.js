@@ -23,7 +23,19 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (battle, root, index, skill) {
+var SkillIcon = function (battle, template, index, boxwith) {
+    var root=template.clone();
+    this.root = root;
+    var x=root.width
+    var y=root.height;
+    var num=6;
+    //if(index%5==0){
+    //    root.setPosition(x*(index-5*Math.floor(index/5)),y*Math.floor(index/5));
+    //}else {
+    //    root.setPosition(x*index,0);
+    //}
+
+    root.setPosition((x+10)*(index-num*Math.floor(index/num)),(y+10)*Math.floor(index/num));
     this.skill_icon = root.getChildByName('skill_icon');
     this.deadTimeTitle = root.getChildByName('reviveTime_text');
     this.deadTimeText = root.getChildByName('time');
@@ -34,7 +46,6 @@ var SkillIcon = function (battle, root, index, skill) {
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
     this.skill_icon.setTouchEnabled(true);
-    this.root = root;
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
     //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
@@ -116,11 +127,15 @@ var SkillListMenu = BattleMenu.extend({
             skills.push.apply(skills,activitySkills);
         }
         console.log(skills.length)
+        var skillIconTemplate=ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         var skillBtns = [];
+        var skillsBox=this.root.getChildByName('skill_box')
+        console.log(skillsBox.getPosition())
         for (var i = 0; i < skillBtnNum; i++) {
-            var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
+            //var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
             //var activitySkills = getHeroActivtySkillls(heroes[i]);
-            var skillBtn = new SkillIcon(battlePanel, pane, i);
+            var skillBtn = new SkillIcon(battlePanel, skillIconTemplate, i);
+            skillsBox.addChild(skillBtn.root);
             if (i < skills.length) {
                 skillBtn.setVisible(true);
                 skillBtn.bindSkill(skills[i]);
