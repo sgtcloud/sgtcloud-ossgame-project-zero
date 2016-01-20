@@ -896,7 +896,6 @@ var ShopLayerMenu = BattleMenu.extend({
             this.falg = true;
 
             if (window.DeviceMotionEvent) {
-                alert(111);
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
             } else {
                 alert("本设备不支持devicemotion事件");
@@ -906,7 +905,6 @@ var ShopLayerMenu = BattleMenu.extend({
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
                 diffTime = currTime - this.last_update;
-                alert(222);
             if (diffTime > 100 && this.falg) {
                 alert(333);
                 this.last_update = currTime;
