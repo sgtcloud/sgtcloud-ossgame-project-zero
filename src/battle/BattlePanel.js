@@ -147,6 +147,10 @@ var BattlePanel = cc.Node.extend({
             self.openPopup();
         });
 
+        Loot.prototype.getPackPosition = function () {
+            return cc.p(10, 780);
+        }.bind(this);
+
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
@@ -196,9 +200,6 @@ var BattlePanel = cc.Node.extend({
              }*/
 
         });
-        customEventHelper.bindListener(EVENT.GOLD_POSITION, function (event) {
-            self.goldPosition = event.getUserData();
-        });
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
             var duration = event.getUserData();
             var shockActions = [];
@@ -241,7 +242,7 @@ var BattlePanel = cc.Node.extend({
                 }
             }
         },
-        this.reset();
+            this.reset();
         this.scheduleUpdate();
     },
     reset: function () {
@@ -382,6 +383,7 @@ var BattlePanel = cc.Node.extend({
     onBattleWin: function () {
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
+            this.generateStageLoots(stageData.getBonus());
             stageData.leaveBossBattle();
             player.stage_battle_num = 1;
             stageData.goToNextStage();
@@ -400,8 +402,17 @@ var BattlePanel = cc.Node.extend({
         //this.scheduleOnce(function () {
         //    this.prepareBattle(stageData);
         //}, 1.0);
-        this.prepareBattle(stageData);
+        scheduleOnce(this, function () {
+            this.prepareBattle(stageData);
+        }, 1);
         PlayerData.updatePlayer();
+    },
+
+    generateStageLoots: function (bonus) {
+        var pos = cc.p(this.x + this.width * 3 / 5, this.y + this.height * 3 / 5);
+        for (var i in bonus) {
+            Loot.generateLoots(bonus[i], pos);
+        }
     },
 
     prepareBattle: function (stage) {

@@ -18,10 +18,6 @@ var EVENT = {
      */
     HERO_EQUIP_UPGRADE: "EQUIP_UPGRADE",
     /**
-     * 金币位置改变
-     */
-    GOLD_POSITION: "GOLD_POSITION",
-    /**
      * 金币数量改变
      */
     GOLD_VALUE_UPDATE: "GOLD_VALUE_UPDATE",
@@ -49,6 +45,14 @@ var EVENT = {
      * 钻石数量改变
      */
     GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE",
+    /**
+     * 圣物数量改变
+    */
+    RELIC_VALUE_UPDATE: "RELIC_VALUE_UPDATE",
+    /**
+     * 背包数量改变
+     */
+    PACK_VALUE_UPDATE: "PACK_VALUE_UPDATE",
     /**
      * 刷新英雄属性
      */
