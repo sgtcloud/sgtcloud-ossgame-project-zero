@@ -136,6 +136,8 @@ var BattlePanel = cc.Node.extend({
                 gamePopup.hidden();
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                //customEventHelper.sendEvent(EVENT);
                 PlayerData.updatePlayer();
             });
             popup(gamePopup, 1000);
@@ -226,6 +228,7 @@ var BattlePanel = cc.Node.extend({
 
         this.update = function (dt) {
             {
+                //customEventHelper.sendEvent(EVENT.TEST_BLOCK);
                 if (this.intervalState) {
                     this.intervalTime += dt;
                     if (this.intervalTime > CONSTS.flySpirit_interval_time) {
@@ -238,7 +241,7 @@ var BattlePanel = cc.Node.extend({
                 }
             }
         },
-            this.reset();
+        this.reset();
         this.scheduleUpdate();
     },
     reset: function () {

@@ -30,7 +30,8 @@ var TabContainer = cc.Node.extend({
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    self.showMenuLayer(sender.name);
+                    if(sender.name != 'pvp')
+                        self.showMenuLayer(sender.name);
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);

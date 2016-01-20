@@ -60,13 +60,18 @@ var res = {
     rank_layer_json: "res/RankLayer.json",
     rank_view_json: "res/RankView.json",
     fairy01_json: "res/fairy01.json",
+    chest01_json: "res/chest01.json",
+    chest02_json: "res/chest02.json",
     chest03_json: "res/chest03.json",
+    chest04_json: "res/chest04.json",
 
     skill_magma_blaster: "res/effect5001.json",
     skill_fury_crawl: "res/effect5002.json",
     skill_saint_aura: "res/effect5003.json",
     skill_cure_totem: "res/effect5004.json",
-    skill_tornado_shock: "res/effect5005.json"
+    skill_tornado_shock: "res/effect5005.json",
+    hero_desc_json: "res/HeroDescLayer.json",
+    skill_desc_json: "res/SkillDescView.json"
 };
 
 

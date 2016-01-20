@@ -103,6 +103,9 @@ var Hero = function (heroData) {
     this.getStar = function () {
         return star;
     };
+    this.getDesc = function(){
+        return data.desc;
+    };
 
     this.getEquipCount = function () {
         return equips.length;
