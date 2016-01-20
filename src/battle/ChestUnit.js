@@ -29,7 +29,6 @@ var ChestUnit = cc.Node.extend({
                         var s = chest.getContentSize();
                         var rect = cc.rect(0, 0, s.width, s.height);
                         if (cc.rectContainsPoint(rect, touchPosition)) {
-                            cc.log("获取金币");
                             self.stopAllActions();
                             self.playAnimation('open',false);
                             self.onOpenChest();
@@ -114,9 +113,11 @@ var ChestUnit = cc.Node.extend({
             temp_weight += event.weight;
             if(random < temp_weight){
                 if(event.skill_id == 'gold'){
+                    cc.log('获取金币');
                     this.generateLoot(event.level);
                 }else{
                     //发送释放buff事件
+                    cc.log('释放buff');
                     customEventHelper.sendEvent(EVENT.CAST_BUFF,{
                         skillId:event.skill_id,
                         level:event.level

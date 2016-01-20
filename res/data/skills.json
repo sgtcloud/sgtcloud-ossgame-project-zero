@@ -355,7 +355,7 @@
   } ]
 },"s10106":  {
   "name" : "能量波动",
-  "desc" : "限定时间{duration}秒内，提升点击伤害{effect1_value}。",
+  "desc" : "限定时间{duration}秒内，提升点击伤害{effect1.value}。",
   "icon" : "s10106.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -426,7 +426,7 @@
   } ]
 },"s10107":  {
   "name" : "风雷万钧",
-  "desc" : "限定时间{duration}秒内，提升攻击伤害{effect1_value}。",
+  "desc" : "限定时间{duration}秒内，提升攻击伤害{effect1.value}。",
   "icon" : "s10107.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -497,7 +497,7 @@
   } ]
 }, "s10108": {
   "name" : "能量爆裂",
-  "desc" : "限定时间{duration}秒内，缩短攻击间隔{effect1_value}秒。",
+  "desc" : "限定时间{duration}秒内，缩短攻击间隔{effect1.value}秒。",
   "icon" : "s10108.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -568,7 +568,7 @@
   } ]
 }, "s10109": {
   "name" : "超重力场",
-  "desc" : "限定时间{duration}秒内，提升暴击概率{effect1_value}。",
+  "desc" : "限定时间{duration}秒内，提升暴击概率{effect1.value}。",
   "icon" : "s10109.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -639,7 +639,7 @@
   } ]
 },"s10110":  {
   "name" : "全神贯注",
-  "desc" : "限定时间{duration}秒内，提升暴击倍率{effect1_value}。",
+  "desc" : "限定时间{duration}秒内，提升暴击倍率{effect1.value}。",
   "icon" : "s10110.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -710,7 +710,7 @@
   } ]
 }, "s10201":{
   "name" : "凶猛打击",
-  "desc" : "增加攻击伤害{effect1_value}点。",
+  "desc" : "增加攻击伤害{effect1.value}点。",
   "icon" : "s10201.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -781,7 +781,7 @@
   } ]
 },"s10202": {
   "name" : "诸神黄昏",
-  "desc" : "提升{effect1_value}的攻击伤害。",
+  "desc" : "提升{effect1.value}的攻击伤害。",
   "icon" : "s10202.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -852,7 +852,7 @@
   } ]
 },"s10203": {
   "name" : "保护壁垒",
-  "desc" : "提升全体英雄{effect1_value}的生命值。",
+  "desc" : "提升全体英雄{effect1.value}的生命值。",
   "icon" : "s10203.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -923,7 +923,7 @@
   } ]
 }, "s10301":{
   "name" : "剑舞",
-  "desc" : "增加攻击伤害{effect1_value}点。",
+  "desc" : "增加攻击伤害{effect1.value}点。",
   "icon" : "s10301.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -994,7 +994,7 @@
   } ]
 },"s10302": {
   "name" : "强身",
-  "desc" : "提升{effect1_value}的暴击概率。",
+  "desc" : "提升{effect1.value}的暴击概率。",
   "icon" : "s10302.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1065,7 +1065,7 @@
   } ]
 }, "s10303":{
   "name" : "破空",
-  "desc" : "提升全体英雄{effect1_value}的暴击概率。",
+  "desc" : "提升全体英雄{effect1.value}的暴击概率。",
   "icon" : "s10303.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1136,7 +1136,7 @@
   } ]
 },"s10401": {
   "name" : "一发双枪",
-  "desc" : "增加攻击伤害{effect1_value}点。",
+  "desc" : "增加攻击伤害{effect1.value}点。",
   "icon" : "s10401.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1207,7 +1207,7 @@
   } ]
 },"s10402": {
   "name" : "不洁射击",
-  "desc" : "缩短{effect1_value}的攻击速度。",
+  "desc" : "缩短{effect1.value}的攻击速度。",
   "icon" : "s10402.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1278,7 +1278,7 @@
   } ]
 },"s10403": {
   "name" : "黄金眼",
-  "desc" : "提升{effect1_value}的金币获得。",
+  "desc" : "提升{effect1.value}的金币获得。",
   "icon" : "s10403.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1349,7 +1349,7 @@
   } ]
 }, "s10501":{
   "name" : "嗜血杀戮",
-  "desc" : "增加攻击伤害{effect1_value}点。",
+  "desc" : "增加攻击伤害{effect1.value}点。",
   "icon" : "s10501.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1420,7 +1420,7 @@
   } ]
 }, "s10502":{
   "name" : "嘲讽",
-  "desc" : "提升{effect1_value}的暴击倍率。",
+  "desc" : "提升{effect1.value}的暴击倍率。",
   "icon" : "s10502.png",
   "type" : 0,
   "levelDatas" : [ {
@@ -1491,7 +1491,7 @@
   } ]
 },"s10503": {
   "name" : "无尽怒火",
-  "desc" : "提升全体英雄{effect1_value}的 暴击概率。",
+  "desc" : "提升全体英雄{effect1.value}的 暴击概率。",
   "icon" : "s10503.png",
   "type" : 0,
   "levelDatas" : [ {
