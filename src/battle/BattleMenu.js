@@ -26,7 +26,7 @@ var BattleMenu = cc.Node.extend({
 var SkillIcon = function (battle, template, index, skillsBox) {
     var root=template.clone();
     this.root = root;
-    var x=root.width
+   /* var x=root.width
     var y=root.height;
     var num=5;
     var boxWidth=skillsBox.width;
@@ -42,13 +42,13 @@ var SkillIcon = function (battle, template, index, skillsBox) {
     this.deadTimeTitle.setVisible(false);
     this.deadTimeText.setVisible(false);
     this.coolTimeText.setVisible(false);
-    this.skill_icon.setTouchEnabled(true);
+    this.skill_icon.setTouchEnabled(true);*/
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
     //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
     //});
 
-    skillsBox.addChild(this.root);
+    //skillsBox.addChild(this.root);
     this.setVisible = function (visit) {
         root.setVisible(visit);
     }
@@ -128,9 +128,9 @@ var SkillListMenu = BattleMenu.extend({
         console.log(skills.length)
         var skillIconTemplate=ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         var skillBtns = [];
-        var skillsBox=this.root.getChildByName('skill_box')
-        console.log(skillsBox.getPosition())
-        for (var i = 0; i < skills.length; i++) {
+        //var skillsBox=this.root.getChildByName('skill_box')
+        //console.log(skillsBox.getPosition())
+        /*for (var i = 0; i < skills.length; i++) {
             //var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
             //var activitySkills = getHeroActivtySkillls(heroes[i]);
             var skillBtn = new SkillIcon(battlePanel, skillIconTemplate, i,skillsBox);
@@ -145,7 +145,7 @@ var SkillListMenu = BattleMenu.extend({
                 skillBtn.setVisible(false);
             }
             skillBtns.push(skillBtn);
-        }
+        }*/
         function format(time) {
             return new Date(time).Format('mm:ss');
         }
@@ -154,7 +154,7 @@ var SkillListMenu = BattleMenu.extend({
             for (var i = 0; i < skillBtnNum; i++) {
                 //skillBtns[i].setVisible(false);
             }
-            battlePanel.foreachHeroSprite(function (hero, i) {
+            /*battlePanel.foreachHeroSprite(function (hero, i) {
                 console.log(i)
                 var skill = skillBtns[i];
                 //skill.setVisible(true);
@@ -168,7 +168,7 @@ var SkillListMenu = BattleMenu.extend({
                         skill.showActive();
                     }
                 }
-            });
+            });*/
         }
 
         this.update = function (dt) {
@@ -226,7 +226,7 @@ var HeroListMenu = BattleMenu.extend({
                 if (target.isMaxLevel()) {
                     elements.upgrade_btn.layer.setVisible(false);
                     elements.maxLevel_btn.layer.setVisible(true);
-                   // console.log(target.getId() + ' has been the max level')
+                    // console.log(target.getId() + ' has been the max level')
                 } else {
                     (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
                     elements.maxLevel_btn.layer.isVisible() && elements.maxLevel_btn.layer.setVisible(false);
@@ -373,7 +373,7 @@ var HeroListMenu = BattleMenu.extend({
                         PlayerData.updateResource([resurge['cost']]);
                         customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                         PlayerData.updatePlayer();
-                       // console.log('请注意，英雄' + hero.getId() + '请求买活....');
+                        // console.log('请注意，英雄' + hero.getId() + '请求买活....');
                         customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                     }
                 });
@@ -423,7 +423,7 @@ var HeroListMenu = BattleMenu.extend({
                         var resurge = hero.getResurge();
                         var costValue = parseInt(resurge['cost']['value']);
                         elements.revive_btn.diamond_text.setString(costValue);
-                       // console.log('钻石不足')
+                        // console.log('钻石不足')
                         if (PlayerData.getAmountByUnit("gem") < costValue) {
                             elements.revive_btn.btn.setEnabled(false);
                             elements.revive_btn.btn.setBright(false);
@@ -436,7 +436,7 @@ var HeroListMenu = BattleMenu.extend({
                     if (!hero.getCurrentLife() > 0) {
                         var resurge = hero.getResurge();
                         var costValue = parseInt(resurge['cost']['value']);
-                      //  console.log('钻石不足')
+                        //  console.log('钻石不足')
                         if (PlayerData.getAmountByUnit("gem") < costValue) {
                             elements.revive_btn.btn.setEnabled(false);
                             elements.revive_btn.btn.setBright(false);
@@ -468,7 +468,7 @@ var HeroListMenu = BattleMenu.extend({
 
 
                 setElement(elements, hero, function (event, otherBtn) {
-                   // console.log(hero.getId() + '当前生命值' + hero.getCurrentLife())
+                    // console.log(hero.getId() + '当前生命值' + hero.getCurrentLife())
                     var eventData = {};
                     var levelData = hero.getLevelData();
                     eventData.heroId = hero.getId();

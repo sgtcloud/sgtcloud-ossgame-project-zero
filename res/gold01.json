@@ -1,15 +1,15 @@
 {
-  "ID": "e8ebe999-4b04-4f77-bd85-67316c24ae57",
+  "ID": "4f9134bc-8943-4dc4-a394-c35038ae01bf",
   "Version": "2.3.3.0",
   "Name": "gold01",
   "Content": {
     "Content": {
       "Animation": {
         "Duration": 3,
-        "Speed": 0.1333,
+        "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": 1320398464,
+            "ActionTag": -245340684,
             "Property": "FileData",
             "Frames": [
               {
@@ -47,7 +47,7 @@
         }
       ],
       "ObjectData": {
-        "Tag": 3,
+        "Tag": 20,
         "Children": [
           {
             "FileData": {
@@ -81,15 +81,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -23.0,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
-            "Tag": 11,
-            "ActionTag": 1320398464,
+            "LeftMargin": -22.5,
+            "RightMargin": -22.5,
+            "TopMargin": -20.5,
+            "BottomMargin": -20.5,
+            "Tag": 21,
+            "ActionTag": -245340684,
             "Size": {
-              "X": 22.0,
-              "Y": 20.0
+              "X": 45.0,
+              "Y": 41.0
             },
             "Name": "gold01",
             "ctype": "SpriteObjectData"
