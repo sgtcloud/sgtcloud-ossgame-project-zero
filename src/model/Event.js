@@ -76,7 +76,11 @@ var EVENT = {
     /**
      * 释放buff
      */
-    CAST_BUFF: "CAST_BUFF"
+    CAST_BUFF: "CAST_BUFF",
+    /**
+     * 解锁主动技能
+     */
+    UNLOCK_ACTIVITY_SKILL:"UNLOCK_ACTIVITY_SKILL"
 };
 
 var customEventHelper = {
