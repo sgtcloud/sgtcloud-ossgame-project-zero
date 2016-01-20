@@ -866,6 +866,118 @@
         <PlistInfo Name="effect5005.csi" Type="Plist" />
         <Project Name="gold01.csd" Type="Node" />
         <PlistInfo Name="gold01.csi" Type="Plist" />
+        <Folder Name="material">
+          <Folder Name="bronze">
+            <Image Name="bronze_shine01.png" />
+            <Image Name="bronze_shine02.png" />
+            <PlistImageFolder Image="bronze01.png" PListFile="bronze01.plist" Name=".bronze01_PList.Dir">
+              <PlistImageFile Name="material_bronze_bronze_shine01.png" Key="material/bronze/bronze_shine01.png" />
+              <PlistImageFile Name="material_bronze_bronze_shine02.png" Key="material/bronze/bronze_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="crystal">
+            <Image Name="crystal_shine01.png" />
+            <Image Name="crystal_shine02.png" />
+            <PlistImageFolder Image="crystal01.png" PListFile="crystal01.plist" Name=".crystal01_PList.Dir">
+              <PlistImageFile Name="material_crystal_crystal_shine01.png" Key="material/crystal/crystal_shine01.png" />
+              <PlistImageFile Name="material_crystal_crystal_shine02.png" Key="material/crystal/crystal_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="diamond">
+            <Image Name="diamond_shine01.png" />
+            <Image Name="diamond_shine02.png" />
+            <PlistImageFolder Image="diamond01.png" PListFile="diamond01.plist" Name=".diamond01_PList.Dir">
+              <PlistImageFile Name="material_diamond_diamond_shine01.png" Key="material/diamond/diamond_shine01.png" />
+              <PlistImageFile Name="material_diamond_diamond_shine02.png" Key="material/diamond/diamond_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="essence">
+            <Image Name="essence_shine01.png" />
+            <Image Name="essence_shine02.png" />
+            <PlistImageFolder Image="essence01.png" PListFile="essence01.plist" Name=".essence01_PList.Dir">
+              <PlistImageFile Name="material_essence_essence_shine01.png" Key="material/essence/essence_shine01.png" />
+              <PlistImageFile Name="material_essence_essence_shine02.png" Key="material/essence/essence_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="iron">
+            <Image Name="iron_shine01.png" />
+            <Image Name="iron_shine02.png" />
+            <PlistImageFolder Image="iron01.png" PListFile="iron01.plist" Name=".iron01_PList.Dir">
+              <PlistImageFile Name="material_iron_iron_shine01.png" Key="material/iron/iron_shine01.png" />
+              <PlistImageFile Name="material_iron_iron_shine02.png" Key="material/iron/iron_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="key">
+            <Image Name="key_shine01.png" />
+            <Image Name="key_shine02.png" />
+            <PlistImageFolder Image="key01.png" PListFile="key01.plist" Name=".key01_PList.Dir">
+              <PlistImageFile Name="material_key_key_shine01.png" Key="material/key/key_shine01.png" />
+              <PlistImageFile Name="material_key_key_shine02.png" Key="material/key/key_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="leather">
+            <Image Name="leather_shine01.png" />
+            <Image Name="leather_shine02.png" />
+            <PlistImageFolder Image="leather01.png" PListFile="leather01.plist" Name=".leather01_PList.Dir">
+              <PlistImageFile Name="material_leather_leather_shine01.png" Key="material/leather/leather_shine01.png" />
+              <PlistImageFile Name="material_leather_leather_shine02.png" Key="material/leather/leather_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="relic">
+            <Image Name="relic_shine01.png" />
+            <Image Name="relic_shine02.png" />
+            <PlistImageFolder Image="relic01.png" PListFile="relic01.plist" Name=".relic01_PList.Dir">
+              <PlistImageFile Name="material_relic_relic_shine01.png" Key="material/relic/relic_shine01.png" />
+              <PlistImageFile Name="material_relic_relic_shine02.png" Key="material/relic/relic_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="rune">
+            <Image Name="rune_shine01.png" />
+            <Image Name="rune_shine02.png" />
+            <PlistImageFolder Image="rune01.png" PListFile="rune01.plist" Name=".rune01_PList.Dir">
+              <PlistImageFile Name="material_rune_rune_shine01.png" Key="material/rune/rune_shine01.png" />
+              <PlistImageFile Name="material_rune_rune_shine02.png" Key="material/rune/rune_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="stone">
+            <Image Name="stone_shine01.png" />
+            <Image Name="stone_shine02.png" />
+            <PlistImageFolder Image="stone01.png" PListFile="stone01.plist" Name=".stone01_PList.Dir">
+              <PlistImageFile Name="material_stone_stone_shine01.png" Key="material/stone/stone_shine01.png" />
+              <PlistImageFile Name="material_stone_stone_shine02.png" Key="material/stone/stone_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="wood">
+            <Image Name="wood_shine01.png" />
+            <Image Name="wood_shine02.png" />
+            <PlistImageFolder Image="wood01.png" PListFile="wood01.plist" Name=".wood01_PList.Dir">
+              <PlistImageFile Name="material_wood_wood_shine01.png" Key="material/wood/wood_shine01.png" />
+              <PlistImageFile Name="material_wood_wood_shine02.png" Key="material/wood/wood_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="bronze01.csd" Type="Node" />
+        <PlistInfo Name="bronze01.csi" Type="Plist" />
+        <Project Name="crystal01.csd" Type="Node" />
+        <Project Name="diamond01.csd" Type="Node" />
+        <Project Name="essence01.csd" Type="Node" />
+        <Project Name="iron01.csd" Type="Node" />
+        <Project Name="key01.csd" Type="Node" />
+        <Project Name="leather01.csd" Type="Node" />
+        <Project Name="rune01.csd" Type="Node" />
+        <Project Name="stone01.csd" Type="Node" />
+        <Project Name="wood01.csd" Type="Node" />
+        <PlistInfo Name="crystal01.csi" Type="Plist" />
+        <PlistInfo Name="diamond01.csi" Type="Plist" />
+        <PlistInfo Name="essence01.csi" Type="Plist" />
+        <PlistInfo Name="iron01.csi" Type="Plist" />
+        <PlistInfo Name="key01.csi" Type="Plist" />
+        <PlistInfo Name="leather01.csi" Type="Plist" />
+        <Project Name="relic01.csd" Type="Node" />
+        <PlistInfo Name="relic01.csi" Type="Plist" />
+        <PlistInfo Name="rune01.csi" Type="Plist" />
+        <PlistInfo Name="stone01.csi" Type="Plist" />
+        <PlistInfo Name="wood01.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
