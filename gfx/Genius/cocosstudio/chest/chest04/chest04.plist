@@ -7,20 +7,64 @@
 			<key>chest/chest04/chest04_close01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{106,0},{65,58}}</string>
+				<string>{{0,388},{65,58}}</string>
 				<key>offset</key>
 				<string>{7,-6}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{137,113}</string>
 			</dict>
 			<key>chest/chest04/chest04_open01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{106,89}}</string>
+				<string>{{0,246},{65,71}}</string>
 				<key>offset</key>
-				<string>{-4,-3}</string>
+				<string>{7,-12}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{137,113}</string>
+			</dict>
+			<key>chest/chest04/chest04_open02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,88},{72,79}}</string>
+				<key>offset</key>
+				<string>{7,-12}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{137,113}</string>
+			</dict>
+			<key>chest/chest04/chest04_open03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{81,88}}</string>
+				<key>offset</key>
+				<string>{7,-12}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{137,113}</string>
+			</dict>
+			<key>chest/chest04/chest04_open04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,167},{72,79}}</string>
+				<key>offset</key>
+				<string>{7,-12}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{137,113}</string>
+			</dict>
+			<key>chest/chest04/chest04_open05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,317},{65,71}}</string>
+				<key>offset</key>
+				<string>{7,-12}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -36,14 +80,14 @@
 			<key>realTextureFileName</key>
 			<string>chest04.png</string>
 			<key>size</key>
-			<string>{171,89}</string>
+			<string>{81,453}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>171</integer>
+			<integer>81</integer>
 			<key>height</key>
-			<integer>89</integer>
+			<integer>453</integer>
 		</dict>
 	</dict>
 </plist>
