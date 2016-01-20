@@ -7,71 +7,7 @@
       "Animation": {
         "Duration": 0,
         "Speed": 1.0,
-        "Timelines": [
-          {
-            "ActionTag": -1452498293,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 10.9997,
-                "Y": 20.9998,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1452498293,
-            "Property": "ActionValue",
-            "Frames": [
-              {
-                "InnerActionType": "SingleFrame",
-                "CurrentAniamtionName": "-- ALL --",
-                "SingleFrameIndex": 0,
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "InnerActionFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1452498293,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1452498293,
-            "Property": "RotationSkew",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          }
-        ],
+        "Timelines": [],
         "ctype": "TimelineActionData"
       },
       "AnimationList": [],
@@ -321,291 +257,55 @@
                 "ctype": "TextAtlasObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
-                  "X": 533.9998,
-                  "Y": 20.9998
+                  "X": 15.0,
+                  "Y": 202.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "CColor": {},
-                "IconVisible": true,
+                "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8344,
-                  "Y": 0.0875
+                  "X": 0.0234,
+                  "Y": 0.8417
                 },
                 "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
+                  "X": 0.9531,
+                  "Y": 0.7917
                 },
-                "LeftMargin": 533.9998,
-                "RightMargin": 16.0002,
-                "TopMargin": 129.0002,
-                "BottomMargin": 20.9998,
-                "Tag": 241,
-                "ActionTag": 1771128983,
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 38.0,
+                "BottomMargin": 12.0,
+                "Tag": 161,
+                "ActionTag": -1738334830,
                 "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
+                  "X": 610.0,
+                  "Y": 190.0
                 },
-                "Name": "skill7",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 446.4987,
-                  "Y": 107.9966
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.6977,
-                  "Y": 0.45
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 446.4987,
-                "RightMargin": 103.5013,
-                "TopMargin": 42.0034,
-                "BottomMargin": 107.9966,
-                "Tag": 235,
-                "ActionTag": 1873054001,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill6",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 359.666,
-                  "Y": 20.9998
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.562,
-                  "Y": 0.0875
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 359.666,
-                "RightMargin": 190.334,
-                "TopMargin": 129.0002,
-                "BottomMargin": 20.9998,
-                "Tag": 229,
-                "ActionTag": 420806031,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill5",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 272.5012,
-                  "Y": 107.9963
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.4258,
-                  "Y": 0.45
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 272.5012,
-                "RightMargin": 277.4988,
-                "TopMargin": 42.0037,
-                "BottomMargin": 107.9963,
-                "Tag": 223,
-                "ActionTag": 1903387533,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill4",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 185.3333,
-                  "Y": 20.9998
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.2896,
-                  "Y": 0.0875
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 185.3333,
-                "RightMargin": 364.6667,
-                "TopMargin": 129.0002,
-                "BottomMargin": 20.9998,
-                "Tag": 217,
-                "ActionTag": 1685468251,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill3",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 98.5,
-                  "Y": 107.9966
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.1539,
-                  "Y": 0.45
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 98.5,
-                "RightMargin": 451.5,
-                "TopMargin": 42.0034,
-                "BottomMargin": 107.9966,
-                "Tag": 211,
-                "ActionTag": 277690000,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill2",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Skillicon.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 10.9997,
-                  "Y": 20.9998
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.0172,
-                  "Y": 0.0875
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.375
-                },
-                "LeftMargin": 10.9997,
-                "RightMargin": 539.0003,
-                "TopMargin": 129.0002,
-                "BottomMargin": 20.9998,
-                "Tag": 205,
-                "ActionTag": -1452498293,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "skill1",
-                "ctype": "ProjectNodeObjectData"
+                "Name": "skill_box",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": -1011955371,
@@ -627,7 +327,6 @@
       "UsedResources": [
         "mainUI/bg_04.png",
         "mainUI/font22_white.png",
-        "Skillicon.json",
         "skillUI/hero.png",
         "skillUI/tap.png"
       ],

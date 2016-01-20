@@ -14,7 +14,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="shine" StartIndex="0" EndIndex="3">
-          <RenderColor A="150" R="188" G="143" B="143" />
+          <RenderColor A="255" R="188" G="143" B="143" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="20" ctype="GameNodeObjectData">

@@ -1,0 +1,1006 @@
+{
+  "ID": "894d957e-78dc-42f8-b0a5-274d10645352",
+  "Version": "2.3.3.0",
+  "Name": "HeroDescView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 117,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 118,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_03.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 11,
+                "Scale9Width": 10,
+                "Scale9Height": 14,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 137,
+                "ActionTag": -861761138,
+                "Size": {
+                  "X": 540.0,
+                  "Y": 140.0
+                },
+                "Name": "heroProperty_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/atk.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.916,
+                  "Y": 107.8198
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.085,
+                  "Y": 0.7701
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 30.916,
+                "RightMargin": 479.084,
+                "TopMargin": 17.1802,
+                "BottomMargin": 92.8198,
+                "Tag": 119,
+                "ActionTag": -909994317,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "atk_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/tap.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.916,
+                  "Y": 71.294
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.085,
+                  "Y": 0.5092
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 30.916,
+                "RightMargin": 479.084,
+                "TopMargin": 53.706,
+                "BottomMargin": 56.294,
+                "Tag": 120,
+                "ActionTag": -1663495175,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "tap_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/life.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 45.916,
+                  "Y": 34.7677
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.085,
+                  "Y": 0.2483
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 30.916,
+                "RightMargin": 479.084,
+                "TopMargin": 90.2323,
+                "BottomMargin": 19.7677,
+                "Tag": 121,
+                "ActionTag": -833425354,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "life_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/atk_period.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 296.8408,
+                  "Y": 107.8213
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5497,
+                  "Y": 0.7702
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 281.8408,
+                "RightMargin": 228.1592,
+                "TopMargin": 17.1787,
+                "BottomMargin": 92.8213,
+                "CallBackType": "Click",
+                "Tag": 122,
+                "ActionTag": -186976113,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "atk_period_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/ctr_chance.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 296.8408,
+                  "Y": 71.2948
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5497,
+                  "Y": 0.5092
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 281.8408,
+                "RightMargin": 228.1592,
+                "TopMargin": 53.7052,
+                "BottomMargin": 56.2948,
+                "Tag": 123,
+                "ActionTag": 762118286,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "ctr_chance_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/ctr_modify.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 296.8408,
+                  "Y": 34.7684
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5497,
+                  "Y": 0.2483
+                },
+                "PreSize": {
+                  "X": 0.0556,
+                  "Y": 0.2143
+                },
+                "LeftMargin": 281.8408,
+                "RightMargin": 228.1592,
+                "TopMargin": 90.2316,
+                "BottomMargin": 19.7684,
+                "Tag": 124,
+                "ActionTag": -191021529,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "ctr_modify_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/atk_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 103.3633,
+                  "Y": 108.1834
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1914,
+                  "Y": 0.7727
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 63.3633,
+                "RightMargin": 396.6367,
+                "TopMargin": 17.8166,
+                "BottomMargin": 94.1834,
+                "Tag": 125,
+                "ActionTag": -760795414,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "atk_lable_0",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/tap_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 103.3633,
+                  "Y": 70.9299
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1914,
+                  "Y": 0.5066
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 63.3633,
+                "RightMargin": 396.6367,
+                "TopMargin": 55.0701,
+                "BottomMargin": 56.9299,
+                "Tag": 126,
+                "ActionTag": -178234365,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "atk_lable",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/life_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 103.3633,
+                  "Y": 33.6739
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1914,
+                  "Y": 0.2405
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 63.3633,
+                "RightMargin": 396.6367,
+                "TopMargin": 92.3261,
+                "BottomMargin": 19.6739,
+                "Tag": 127,
+                "ActionTag": 60155735,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "life_lable",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/atk_period_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 352.5036,
+                  "Y": 108.7205
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6528,
+                  "Y": 0.7766
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 312.5036,
+                "RightMargin": 147.4964,
+                "TopMargin": 17.2795,
+                "BottomMargin": 94.7205,
+                "Tag": 128,
+                "ActionTag": -727813023,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "atk_period_lable",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/ctr_chance_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 352.5039,
+                  "Y": 70.8013
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6528,
+                  "Y": 0.5057
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 312.5039,
+                "RightMargin": 147.4961,
+                "TopMargin": 55.1987,
+                "BottomMargin": 56.8013,
+                "Tag": 129,
+                "ActionTag": 396906314,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "ctr_chance_lable",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "heroDescUI/ctr_modify_lable.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 80,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 352.5036,
+                  "Y": 32.8811
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6528,
+                  "Y": 0.2349
+                },
+                "PreSize": {
+                  "X": 0.1481,
+                  "Y": 0.2
+                },
+                "LeftMargin": 312.5036,
+                "RightMargin": 147.4964,
+                "TopMargin": 93.1189,
+                "BottomMargin": 18.8811,
+                "Tag": 130,
+                "ActionTag": -467008122,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 28.0
+                },
+                "Name": "ctr_modify_lable",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "1321321",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 205.1001,
+                  "Y": 107.1294
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3798,
+                  "Y": 0.7652
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 142.1001,
+                "RightMargin": 271.8999,
+                "TopMargin": 24.3706,
+                "BottomMargin": 98.6294,
+                "Tag": 131,
+                "ActionTag": -796692710,
+                "Size": {
+                  "X": 126.0,
+                  "Y": 17.0
+                },
+                "Name": "atk_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "1321321",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 205.1001,
+                  "Y": 70.2892
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3798,
+                  "Y": 0.5021
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 142.1001,
+                "RightMargin": 271.8999,
+                "TopMargin": 61.2108,
+                "BottomMargin": 61.7892,
+                "Tag": 132,
+                "ActionTag": -1386032515,
+                "Size": {
+                  "X": 126.0,
+                  "Y": 17.0
+                },
+                "Name": "tap_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "1321321",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 188.5909,
+                  "Y": 33.6204
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3492,
+                  "Y": 0.2401
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 125.5909,
+                "RightMargin": 288.4091,
+                "TopMargin": 97.8796,
+                "BottomMargin": 25.1204,
+                "Tag": 133,
+                "ActionTag": -295590498,
+                "Size": {
+                  "X": 126.0,
+                  "Y": 17.0
+                },
+                "Name": "life_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 17,
+                "CharHeight": 17,
+                "LabelText": "1.30",
+                "StartChar": ".",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow_b.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5539,
+                  "ScaleY": 0.5476
+                },
+                "Position": {
+                  "X": 463.0,
+                  "Y": 109.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8574,
+                  "Y": 0.7786
+                },
+                "PreSize": {
+                  "X": 0.1259,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 425.3362,
+                "RightMargin": 46.6638,
+                "TopMargin": 23.3085,
+                "BottomMargin": 99.6915,
+                "Tag": 134,
+                "ActionTag": -246387601,
+                "Size": {
+                  "X": 68.0,
+                  "Y": 17.0
+                },
+                "Name": "atk_period_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 456.2112,
+                  "Y": 70.8463
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8448,
+                  "Y": 0.506
+                },
+                "PreSize": {
+                  "X": 0.1,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 429.2112,
+                "RightMargin": 56.7888,
+                "TopMargin": 60.6537,
+                "BottomMargin": 62.3463,
+                "Tag": 135,
+                "ActionTag": -577827229,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 17.0
+                },
+                "Name": "ctr_chance_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 18,
+                "CharHeight": 17,
+                "LabelText": "999",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font22_yellow.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 456.2112,
+                  "Y": 32.5014
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8448,
+                  "Y": 0.2322
+                },
+                "PreSize": {
+                  "X": 0.1,
+                  "Y": 0.1214
+                },
+                "LeftMargin": 429.2112,
+                "RightMargin": 56.7888,
+                "TopMargin": 98.9986,
+                "BottomMargin": 24.0014,
+                "Tag": 136,
+                "ActionTag": -1118068136,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 17.0
+                },
+                "Name": "ctr_modify_text",
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/f22_y.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 21,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 496.9765,
+                  "Y": 70.79
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9203,
+                  "Y": 0.5056
+                },
+                "PreSize": {
+                  "X": 0.0389,
+                  "Y": 0.1286
+                },
+                "LeftMargin": 486.4765,
+                "RightMargin": 32.5235,
+                "TopMargin": 60.21,
+                "BottomMargin": 61.79,
+                "CallBackType": "Click",
+                "Tag": 181,
+                "ActionTag": 1452384872,
+                "Size": {
+                  "X": 21.0,
+                  "Y": 18.0
+                },
+                "Name": "ctr_chance_text_1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/f22_y.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 21,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 496.9765,
+                  "Y": 32.3819
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9203,
+                  "Y": 0.2313
+                },
+                "PreSize": {
+                  "X": 0.0389,
+                  "Y": 0.1286
+                },
+                "LeftMargin": 486.4765,
+                "RightMargin": 32.5235,
+                "TopMargin": 98.6181,
+                "BottomMargin": 23.3819,
+                "CallBackType": "Click",
+                "Tag": 182,
+                "ActionTag": -273121561,
+                "Size": {
+                  "X": 21.0,
+                  "Y": 18.0
+                },
+                "Name": "ctr_modify_text_1",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -101405835,
+            "Size": {
+              "X": 540.0,
+              "Y": 140.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 540.0,
+          "Y": 140.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "heroDescUI/atk.png",
+        "heroDescUI/atk_lable.png",
+        "heroDescUI/atk_period.png",
+        "heroDescUI/atk_period_lable.png",
+        "heroDescUI/ctr_chance.png",
+        "heroDescUI/ctr_chance_lable.png",
+        "heroDescUI/ctr_modify.png",
+        "heroDescUI/ctr_modify_lable.png",
+        "heroDescUI/life.png",
+        "heroDescUI/life_lable.png",
+        "heroDescUI/tap.png",
+        "heroDescUI/tap_lable.png",
+        "mainUI/bg_03.png",
+        "mainUI/f22_y.png",
+        "mainUI/font22_yellow.png",
+        "mainUI/font22_yellow_b.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

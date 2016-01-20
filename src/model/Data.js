@@ -17,12 +17,18 @@ function getLevelData(data, key, lv) {
     if (!data.levelDatas) {
         return undefined;
     }
+    var result;
     var len=data.levelDatas.length;
     var index=len-lv;
     if (!data.levelDatas[index]) {
-        return data.levelDatas[len-1][key];
+        result= data.levelDatas[len-1][key];
+    }else {
+        result= data.levelDatas[index][key];
     }
-    return data.levelDatas[index][key];
+    if(cc.isObject(result)){
+        return $$.extend(result)
+    }
+    return result;
 }
 
 function  getSpecificLevelData(data,level){
