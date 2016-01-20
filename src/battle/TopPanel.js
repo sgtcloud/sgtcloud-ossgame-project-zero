@@ -18,14 +18,14 @@ var TopPanel = cc.Node.extend({
         this.relicNum = pane.getChildByName('relic_text');
         this.goldNum = pane.getChildByName('gold_text');
         Loot.prototype.getGoldPosition = function () {
-            return self.goldNum.convertToWorldSpace(self.goldNum.getPosition());
-        };
+            return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());
+        }.bind(this);
         Loot.prototype.getDiamondPosition = function () {
-            return self.diamondNum.convertToWorldSpace(self.diamondNum.getPosition());
-        };
+            return this.diamondNum.convertToWorldSpace(this.diamondNum.getPosition());
+        }.bind(this);
         Loot.prototype.getRelicPosition = function () {
-            return self.relicNum.convertToWorldSpace(self.relicNum.getPosition());
-        };
+            return this.relicNum.convertToWorldSpace(this.relicNum.getPosition());
+        }.bind(this);
 
         this.battleNumText = root.getChildByName('level_text');
         this.fightBossBtn = root.getChildByName('fight_btn');
@@ -52,6 +52,9 @@ var TopPanel = cc.Node.extend({
 
         customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
             self.refreshPlayerGemText();
+        });
+        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function (event) {
+            self.refreshPlayerRelicText();
         });
 
         bindButtonCallback(this.fightBossBtn, function () {

@@ -10,7 +10,20 @@ var player = {
         "gold": 10,
         "gem": 10,
         "relic": 10,
-        "key": 10,
+        "wood": 0,
+        "leather": 0,
+        "stone": 0,
+        "bronze": 0,
+        "iron": 0,
+        "crystal": 0,
+        "rune": 0,
+        "essence": 0,
+        "iron_chest": 0,
+        "iron_key": 0,
+        "silver_chest": 0,
+        "silver_key": 0,
+        "golden_chest": 0,
+        "golden_key": 0,
     },
     "heroes": [
         {
@@ -90,8 +103,8 @@ var PlayerData = {
         this.initPlayerData(save);
     },
     getHeroById: function (id) {
-        for(var i in this.heroesData){
-            if(this.heroesData[i].getId()===id){
+        for (var i in this.heroesData) {
+            if (this.heroesData[i].getId() === id) {
                 return this.heroesData[i]
             }
         }
@@ -171,7 +184,7 @@ var PlayerData = {
     }
     ,
     updateSingleResource: function (resource) {
-        if (cc.isNumber(player.resource[resource.unit]) && (player.resource[resource.unit] > 0)) {
+        if (cc.isNumber(player.resource[resource.unit]) && (player.resource[resource.unit] >= 0)) {
             player.resource[resource.unit] += resource.value;
         } else {
             cc.log("unknown resource type:" + resource.unit);
