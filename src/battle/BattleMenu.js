@@ -905,6 +905,7 @@ var ShopLayerMenu = BattleMenu.extend({
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
                 diffTime = currTime - this.last_update;
+            alert(diffTime + ",222," + this.falg);
             if (diffTime > 100 && this.falg) {
                 alert(333);
                 this.last_update = currTime;
