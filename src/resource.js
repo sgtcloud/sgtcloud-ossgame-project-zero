@@ -62,8 +62,11 @@ var res = {
     fairy01_json: "res/fairy01.json",
     chest03_json: "res/chest03.json",
 
-    skill_magma_blaster:"res/effect5001.json",
-    skill_fury_crawl:"res/effect5002.json"
+    skill_magma_blaster: "res/effect5001.json",
+    skill_fury_crawl: "res/effect5002.json",
+    skill_saint_aura: "res/effect5003.json",
+    skill_cure_totem: "res/effect5004.json",
+    skill_tornado_shock: "res/effect5005.json"
 };
 
 

@@ -27,9 +27,14 @@ var DamageNumber = cc.Node.extend({
     },
 
     initData: function (val, ctr) {
-        var size = ctr ? 4 : 2;
+        var size = ctr ? 8 : 2;
         this.scaleLarge = cc.scaleTo(0.25, size, size);
         this.scaleBack = cc.scaleTo(0.075, 1, 1);
+        //if (val < 0) {
+        //    this.textAtlas.setColor(cc.color("#ffffff"));
+        //}else{
+        //    this.textAtlas.setColor(cc.color("#ea2127"));
+        //}
         this.textAtlas.setString(Math.floor(val));
         //if (ctr) {
         //    this.textAtlas.color = cc.color(255, 100, 100);
