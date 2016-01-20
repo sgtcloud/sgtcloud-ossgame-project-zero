@@ -1,9 +1,13 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="chest02" Type="Plist" ID="edaba039-31a0-4938-aed8-ea29b8cedcd7" Version="2.3.3.0" />
+  <PropertyGroup Name="chest02" Type="Plist" ID="e689b7a2-ab67-464d-9aff-99ed41142d62" Version="2.3.3.0" />
   <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="chest/chest02/chest02_close01.png" />
       <FilePathData Path="chest/chest02/chest02_open01.png" />
+      <FilePathData Path="chest/chest02/chest02_open02.png" />
+      <FilePathData Path="chest/chest02/chest02_open03.png" />
+      <FilePathData Path="chest/chest02/chest02_open04.png" />
+      <FilePathData Path="chest/chest02/chest02_open05.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
