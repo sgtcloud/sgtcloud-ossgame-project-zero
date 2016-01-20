@@ -67,7 +67,14 @@ var SkillIcon = function (battle, template, index, skillsBox) {
                 console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                 customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
             });
-
+            var levelData=that.skill.getLevelData();
+            if(levelData['duration']>0){
+                that.durationText.setVisible(true)
+                that.time.setString(Math.round(levelData['duration']) + " 秒")
+            }
+            if(levelData['cooldown']>0){
+                that.cooldownText.setVisible(true)
+            }
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();

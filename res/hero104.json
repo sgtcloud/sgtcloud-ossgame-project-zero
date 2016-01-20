@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 78,
-        "Speed": 0.5,
+        "Speed": 0.4167,
         "Timelines": [
           {
             "ActionTag": 264548272,
@@ -220,8 +220,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -3.2929,
-                "Y": -10.3064,
+                "X": 4.7069,
+                "Y": -9.3064,
                 "FrameIndex": 72,
                 "EasingData": {
                   "Type": 0
@@ -229,8 +229,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -2.0579,
-                "Y": -6.6019,
+                "X": 4.942,
+                "Y": -10.6019,
                 "FrameIndex": 75,
                 "EasingData": {
                   "Type": 0
@@ -238,8 +238,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -2.6752,
-                "Y": -10.9976,
+                "X": 5.51,
+                "Y": -10.46,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -496,7 +496,7 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "hero/hero104/hero104_stand02.png",
+                  "Path": "hero/hero104/hero104_skill05.png",
                   "Plist": "hero104.plist"
                 },
                 "FrameIndex": 72,
@@ -506,7 +506,7 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "hero/hero104/hero104_stand03.png",
+                  "Path": "hero/hero104/hero104_stand01.png",
                   "Plist": "hero104.plist"
                 },
                 "FrameIndex": 75,
@@ -516,12 +516,40 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "hero/hero104/hero104_stand04.png",
+                  "Path": "hero/hero104/hero104_stand01.png",
                   "Plist": "hero104.plist"
                 },
                 "FrameIndex": 78,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 264548272,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 72,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 75,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 78,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -573,7 +601,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero104/hero104_atk01.png",
+              "Path": "hero/hero104/hero104_atk02.png",
               "Plist": "hero104.plist"
             },
             "BlendFunc": {
@@ -584,8 +612,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": 6.8114,
-              "Y": -8.9112
+              "X": 23.5855,
+              "Y": -7.4951
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -601,15 +629,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -28.6886,
-            "RightMargin": -42.3114,
-            "TopMargin": -85.0888,
-            "BottomMargin": -8.9112,
+            "LeftMargin": -11.9145,
+            "RightMargin": -59.0855,
+            "TopMargin": -86.5049,
+            "BottomMargin": -7.4951,
             "Tag": 17,
             "ActionTag": 264548272,
             "Size": {
-              "X": 71.0,
-              "Y": 94.0
+              "X": 138.0,
+              "Y": 83.0
             },
             "Name": "hero104",
             "ctype": "SpriteObjectData"

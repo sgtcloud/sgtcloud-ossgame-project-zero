@@ -1,40 +1,15 @@
 {
-  "ID": "eec0bfbe-17ec-4401-a69e-0d373d243ba8",
+  "ID": "bb8de4a5-ab82-4324-b389-d0c5e4a05249",
   "Version": "2.3.3.0",
   "Name": "chest04",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 5,
-        "Speed": 0.5,
+        "Duration": 15,
+        "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": -1412657958,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 5,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1412657958,
+            "ActionTag": -1092918593,
             "Property": "FileData",
             "Frames": [
               {
@@ -53,7 +28,47 @@
                   "Path": "chest/chest04/chest04_open01.png",
                   "Plist": "chest04.plist"
                 },
-                "FrameIndex": 5,
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest04/chest04_open02.png",
+                  "Plist": "chest04.plist"
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest04/chest04_open03.png",
+                  "Plist": "chest04.plist"
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest04/chest04_open04.png",
+                  "Plist": "chest04.plist"
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "chest/chest04/chest04_open05.png",
+                  "Plist": "chest04.plist"
+                },
+                "FrameIndex": 15,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -71,14 +86,14 @@
           "ctype": "AnimationInfoData"
         },
         {
-          "StartIndex": 4,
-          "EndIndex": 5,
+          "StartIndex": 3,
+          "EndIndex": 15,
           "Name": "open",
           "ctype": "AnimationInfoData"
         }
       ],
       "ObjectData": {
-        "Tag": 43,
+        "Tag": 25,
         "Children": [
           {
             "FileData": {
@@ -112,17 +127,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -68.5,
-            "RightMargin": -68.5,
-            "TopMargin": -56.5,
-            "BottomMargin": -56.5,
-            "Tag": 48,
-            "ActionTag": -1412657958,
+            "LeftMargin": -23.0,
+            "RightMargin": -23.0,
+            "TopMargin": -23.0,
+            "BottomMargin": -23.0,
+            "Tag": 26,
+            "ActionTag": -1092918593,
             "Size": {
               "X": 137.0,
               "Y": 113.0
             },
-            "Name": "chest04",
+            "Name": "chest",
             "ctype": "SpriteObjectData"
           }
         ],
