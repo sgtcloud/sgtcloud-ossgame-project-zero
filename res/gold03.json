@@ -1,15 +1,40 @@
 {
-  "ID": "61dca8ad-61f9-4e6d-83aa-1c08d31aece1",
+  "ID": "dc51b573-ace8-4c91-b34b-5f613b3a11a2",
   "Version": "2.3.3.0",
   "Name": "gold03",
   "Content": {
     "Content": {
       "Animation": {
         "Duration": 3,
-        "Speed": 0.1333,
+        "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": 285232277,
+            "ActionTag": 813131945,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 813131945,
             "Property": "FileData",
             "Frames": [
               {
@@ -47,12 +72,12 @@
         }
       ],
       "ObjectData": {
-        "Tag": 6,
+        "Tag": 15,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "gold/gold03/gold03_shine01.png",
+              "Path": "gold/gold03/gold03_shine02.png",
               "Plist": "gold03.plist"
             },
             "BlendFunc": {
@@ -81,15 +106,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -23.0,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
-            "Tag": 13,
-            "ActionTag": 285232277,
+            "LeftMargin": -39.5,
+            "RightMargin": -39.5,
+            "TopMargin": -32.0,
+            "BottomMargin": -32.0,
+            "Tag": 23,
+            "ActionTag": 813131945,
             "Size": {
-              "X": 39.0,
-              "Y": 32.0
+              "X": 79.0,
+              "Y": 64.0
             },
             "Name": "gold03",
             "ctype": "SpriteObjectData"

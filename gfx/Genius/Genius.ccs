@@ -445,64 +445,6 @@
               <PlistImageFile Name="hero_hero103_hero103_stand04.png" Key="hero/hero103/hero103_stand04.png" />
             </PlistImageFolder>
           </Folder>
-          <Folder Name="hero104">
-            <Image Name="hero104_atk01.png" />
-            <Image Name="hero104_atk02.png" />
-            <Image Name="hero104_atk03.png" />
-            <Image Name="hero104_atk04.png" />
-            <Image Name="hero104_atk05.png" />
-            <Image Name="hero104_atk06.png" />
-            <Image Name="hero104_atk07.png" />
-            <Image Name="hero104_dead01.png" />
-            <Image Name="hero104_die01.png" />
-            <Image Name="hero104_die02.png" />
-            <Image Name="hero104_die03.png" />
-            <Image Name="hero104_die04.png" />
-            <Image Name="hero104_die05.png" />
-            <Image Name="hero104_hit01.png" />
-            <Image Name="hero104_hit02.png" />
-            <Image Name="hero104_hit03.png" />
-            <Image Name="hero104_hit04.png" />
-            <Image Name="hero104_hit05.png" />
-            <Image Name="hero104_skill01.png" />
-            <Image Name="hero104_skill02.png" />
-            <Image Name="hero104_skill03.png" />
-            <Image Name="hero104_skill04.png" />
-            <Image Name="hero104_skill05.png" />
-            <Image Name="hero104_stand01.png" />
-            <Image Name="hero104_stand02.png" />
-            <Image Name="hero104_stand03.png" />
-            <Image Name="hero104_stand04.png" />
-            <PlistImageFolder Image="hero104.png" PListFile="hero104.plist" Name=".hero104_PList.Dir">
-              <PlistImageFile Name="hero_hero104_hero104_atk01.png" Key="hero/hero104/hero104_atk01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk02.png" Key="hero/hero104/hero104_atk02.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk03.png" Key="hero/hero104/hero104_atk03.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk04.png" Key="hero/hero104/hero104_atk04.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk05.png" Key="hero/hero104/hero104_atk05.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk06.png" Key="hero/hero104/hero104_atk06.png" />
-              <PlistImageFile Name="hero_hero104_hero104_atk07.png" Key="hero/hero104/hero104_atk07.png" />
-              <PlistImageFile Name="hero_hero104_hero104_dead01.png" Key="hero/hero104/hero104_dead01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_die01.png" Key="hero/hero104/hero104_die01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_die02.png" Key="hero/hero104/hero104_die02.png" />
-              <PlistImageFile Name="hero_hero104_hero104_die03.png" Key="hero/hero104/hero104_die03.png" />
-              <PlistImageFile Name="hero_hero104_hero104_die04.png" Key="hero/hero104/hero104_die04.png" />
-              <PlistImageFile Name="hero_hero104_hero104_die05.png" Key="hero/hero104/hero104_die05.png" />
-              <PlistImageFile Name="hero_hero104_hero104_hit01.png" Key="hero/hero104/hero104_hit01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_hit02.png" Key="hero/hero104/hero104_hit02.png" />
-              <PlistImageFile Name="hero_hero104_hero104_hit03.png" Key="hero/hero104/hero104_hit03.png" />
-              <PlistImageFile Name="hero_hero104_hero104_hit04.png" Key="hero/hero104/hero104_hit04.png" />
-              <PlistImageFile Name="hero_hero104_hero104_hit05.png" Key="hero/hero104/hero104_hit05.png" />
-              <PlistImageFile Name="hero_hero104_hero104_skill01.png" Key="hero/hero104/hero104_skill01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_skill02.png" Key="hero/hero104/hero104_skill02.png" />
-              <PlistImageFile Name="hero_hero104_hero104_skill03.png" Key="hero/hero104/hero104_skill03.png" />
-              <PlistImageFile Name="hero_hero104_hero104_skill04.png" Key="hero/hero104/hero104_skill04.png" />
-              <PlistImageFile Name="hero_hero104_hero104_skill05.png" Key="hero/hero104/hero104_skill05.png" />
-              <PlistImageFile Name="hero_hero104_hero104_stand01.png" Key="hero/hero104/hero104_stand01.png" />
-              <PlistImageFile Name="hero_hero104_hero104_stand02.png" Key="hero/hero104/hero104_stand02.png" />
-              <PlistImageFile Name="hero_hero104_hero104_stand03.png" Key="hero/hero104/hero104_stand03.png" />
-              <PlistImageFile Name="hero_hero104_hero104_stand04.png" Key="hero/hero104/hero104_stand04.png" />
-            </PlistImageFolder>
-          </Folder>
           <Folder Name="hero105">
             <Image Name="hero105_atk01.png" />
             <Image Name="hero105_atk02.png" />
@@ -561,6 +503,64 @@
               <PlistImageFile Name="hero_hero105_hero105_stand02.png" Key="hero/hero105/hero105_stand02.png" />
               <PlistImageFile Name="hero_hero105_hero105_stand03.png" Key="hero/hero105/hero105_stand03.png" />
               <PlistImageFile Name="hero_hero105_hero105_stand04.png" Key="hero/hero105/hero105_stand04.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="her0104">
+            <Image Name="hero104_atk01.png" />
+            <Image Name="hero104_atk02.png" />
+            <Image Name="hero104_atk03.png" />
+            <Image Name="hero104_atk04.png" />
+            <Image Name="hero104_atk05.png" />
+            <Image Name="hero104_atk06.png" />
+            <Image Name="hero104_atk07.png" />
+            <Image Name="hero104_dead01.png" />
+            <Image Name="hero104_die01.png" />
+            <Image Name="hero104_die02.png" />
+            <Image Name="hero104_die03.png" />
+            <Image Name="hero104_die04.png" />
+            <Image Name="hero104_die05.png" />
+            <Image Name="hero104_hit01.png" />
+            <Image Name="hero104_hit02.png" />
+            <Image Name="hero104_hit03.png" />
+            <Image Name="hero104_hit04.png" />
+            <Image Name="hero104_hit05.png" />
+            <Image Name="hero104_skill01.png" />
+            <Image Name="hero104_skill02.png" />
+            <Image Name="hero104_skill03.png" />
+            <Image Name="hero104_skill04.png" />
+            <Image Name="hero104_skill05.png" />
+            <Image Name="hero104_stand01.png" />
+            <Image Name="hero104_stand02.png" />
+            <Image Name="hero104_stand03.png" />
+            <Image Name="hero104_stand04.png" />
+            <PlistImageFolder Image="hero104.png" PListFile="hero104.plist" Name=".hero104_PList.Dir">
+              <PlistImageFile Name="hero_her0104_hero104_atk01.png" Key="hero/her0104/hero104_atk01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk02.png" Key="hero/her0104/hero104_atk02.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk03.png" Key="hero/her0104/hero104_atk03.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk04.png" Key="hero/her0104/hero104_atk04.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk05.png" Key="hero/her0104/hero104_atk05.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk06.png" Key="hero/her0104/hero104_atk06.png" />
+              <PlistImageFile Name="hero_her0104_hero104_atk07.png" Key="hero/her0104/hero104_atk07.png" />
+              <PlistImageFile Name="hero_her0104_hero104_dead01.png" Key="hero/her0104/hero104_dead01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_die01.png" Key="hero/her0104/hero104_die01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_die02.png" Key="hero/her0104/hero104_die02.png" />
+              <PlistImageFile Name="hero_her0104_hero104_die03.png" Key="hero/her0104/hero104_die03.png" />
+              <PlistImageFile Name="hero_her0104_hero104_die04.png" Key="hero/her0104/hero104_die04.png" />
+              <PlistImageFile Name="hero_her0104_hero104_die05.png" Key="hero/her0104/hero104_die05.png" />
+              <PlistImageFile Name="hero_her0104_hero104_hit01.png" Key="hero/her0104/hero104_hit01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_hit02.png" Key="hero/her0104/hero104_hit02.png" />
+              <PlistImageFile Name="hero_her0104_hero104_hit03.png" Key="hero/her0104/hero104_hit03.png" />
+              <PlistImageFile Name="hero_her0104_hero104_hit04.png" Key="hero/her0104/hero104_hit04.png" />
+              <PlistImageFile Name="hero_her0104_hero104_hit05.png" Key="hero/her0104/hero104_hit05.png" />
+              <PlistImageFile Name="hero_her0104_hero104_skill01.png" Key="hero/her0104/hero104_skill01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_skill02.png" Key="hero/her0104/hero104_skill02.png" />
+              <PlistImageFile Name="hero_her0104_hero104_skill03.png" Key="hero/her0104/hero104_skill03.png" />
+              <PlistImageFile Name="hero_her0104_hero104_skill04.png" Key="hero/her0104/hero104_skill04.png" />
+              <PlistImageFile Name="hero_her0104_hero104_skill05.png" Key="hero/her0104/hero104_skill05.png" />
+              <PlistImageFile Name="hero_her0104_hero104_stand01.png" Key="hero/her0104/hero104_stand01.png" />
+              <PlistImageFile Name="hero_her0104_hero104_stand02.png" Key="hero/her0104/hero104_stand02.png" />
+              <PlistImageFile Name="hero_her0104_hero104_stand03.png" Key="hero/her0104/hero104_stand03.png" />
+              <PlistImageFile Name="hero_her0104_hero104_stand04.png" Key="hero/her0104/hero104_stand04.png" />
             </PlistImageFolder>
           </Folder>
         </Folder>
@@ -756,40 +756,6 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
-        <Folder Name="chest">
-          <Folder Name="chest01">
-            <Image Name="chest01_close01.png" />
-            <Image Name="chest01_open01.png" />
-            <PlistImageFolder Image="chest01.png" PListFile="chest01.plist" Name=".chest01_PList.Dir">
-              <PlistImageFile Name="chest_chest01_chest01_close01.png" Key="chest/chest01/chest01_close01.png" />
-              <PlistImageFile Name="chest_chest01_chest01_open01.png" Key="chest/chest01/chest01_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest02">
-            <Image Name="chest02_close01.png" />
-            <Image Name="chest02_open01.png" />
-            <PlistImageFolder Image="chest02.png" PListFile="chest02.plist" Name=".chest02_PList.Dir">
-              <PlistImageFile Name="chest_chest02_chest02_close01.png" Key="chest/chest02/chest02_close01.png" />
-              <PlistImageFile Name="chest_chest02_chest02_open01.png" Key="chest/chest02/chest02_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest03">
-            <Image Name="chest03_close01.png" />
-            <Image Name="chest03_open01.png" />
-            <PlistImageFolder Image="chest03.png" PListFile="chest03.plist" Name=".chest03_PList.Dir">
-              <PlistImageFile Name="chest_chest03_chest03_close01.png" Key="chest/chest03/chest03_close01.png" />
-              <PlistImageFile Name="chest_chest03_chest03_open01.png" Key="chest/chest03/chest03_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-          <Folder Name="chest04">
-            <Image Name="chest04_close01.png" />
-            <Image Name="chest04_open01.png" />
-            <PlistImageFolder Image="chest04.png" PListFile="chest04.plist" Name=".chest04_PList.Dir">
-              <PlistImageFile Name="chest_chest04_chest04_close01.png" Key="chest/chest04/chest04_close01.png" />
-              <PlistImageFile Name="chest_chest04_chest04_open01.png" Key="chest/chest04/chest04_open01.png" />
-            </PlistImageFolder>
-          </Folder>
-        </Folder>
         <Folder Name="fairy">
           <Folder Name="fairy01">
             <Image Name="fairy01_die01.png" />
@@ -816,14 +782,6 @@
             </PlistImageFolder>
           </Folder>
         </Folder>
-        <Project Name="chest01.csd" Type="Node" />
-        <PlistInfo Name="chest01.csi" Type="Plist" />
-        <Project Name="chest02.csd" Type="Node" />
-        <PlistInfo Name="chest02.csi" Type="Plist" />
-        <Project Name="chest03.csd" Type="Node" />
-        <PlistInfo Name="chest03.csi" Type="Plist" />
-        <Project Name="chest04.csd" Type="Node" />
-        <PlistInfo Name="chest04.csi" Type="Plist" />
         <Project Name="effect5000.csd" Type="Node" />
         <PlistInfo Name="effect5000.csi" Type="Plist" />
         <Project Name="effect5001.csd" Type="Node" />
@@ -853,8 +811,6 @@
         <PlistInfo Name="hero102.csi" Type="Plist" />
         <Project Name="hero103.csd" Type="Node" />
         <PlistInfo Name="hero103.csi" Type="Plist" />
-        <Project Name="hero104.csd" Type="Node" />
-        <PlistInfo Name="hero104.csi" Type="Plist" />
         <Project Name="hero105.csd" Type="Node" />
         <PlistInfo Name="hero105.csi" Type="Plist" />
         <Project Name="enemy1001.csd" Type="Node" />
@@ -978,6 +934,82 @@
         <PlistInfo Name="rune01.csi" Type="Plist" />
         <PlistInfo Name="stone01.csi" Type="Plist" />
         <PlistInfo Name="wood01.csi" Type="Plist" />
+        <Folder Name="chest">
+          <Folder Name="chest01">
+            <Image Name="chest01_close01.png" />
+            <Image Name="chest01_open01.png" />
+            <Image Name="chest01_open02.png" />
+            <Image Name="chest01_open03.png" />
+            <Image Name="chest01_open04.png" />
+            <Image Name="chest01_open05.png" />
+            <PlistImageFolder Image="chest01.png" PListFile="chest01.plist" Name=".chest01_PList.Dir">
+              <PlistImageFile Name="chest_chest01_chest01_close01.png" Key="chest/chest01/chest01_close01.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open01.png" Key="chest/chest01/chest01_open01.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open02.png" Key="chest/chest01/chest01_open02.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open03.png" Key="chest/chest01/chest01_open03.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open04.png" Key="chest/chest01/chest01_open04.png" />
+              <PlistImageFile Name="chest_chest01_chest01_open05.png" Key="chest/chest01/chest01_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest02">
+            <Image Name="chest02_close01.png" />
+            <Image Name="chest02_open01.png" />
+            <Image Name="chest02_open02.png" />
+            <Image Name="chest02_open03.png" />
+            <Image Name="chest02_open04.png" />
+            <Image Name="chest02_open05.png" />
+            <PlistImageFolder Image="chest02.png" PListFile="chest02.plist" Name=".chest02_PList.Dir">
+              <PlistImageFile Name="chest_chest02_chest02_close01.png" Key="chest/chest02/chest02_close01.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open01.png" Key="chest/chest02/chest02_open01.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open02.png" Key="chest/chest02/chest02_open02.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open03.png" Key="chest/chest02/chest02_open03.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open04.png" Key="chest/chest02/chest02_open04.png" />
+              <PlistImageFile Name="chest_chest02_chest02_open05.png" Key="chest/chest02/chest02_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest03">
+            <Image Name="chest03_close01.png" />
+            <Image Name="chest03_open01.png" />
+            <Image Name="chest03_open02.png" />
+            <Image Name="chest03_open03.png" />
+            <Image Name="chest03_open04.png" />
+            <Image Name="chest03_open05.png" />
+            <PlistImageFolder Image="chest03.png" PListFile="chest03.plist" Name=".chest03_PList.Dir">
+              <PlistImageFile Name="chest_chest03_chest03_close01.png" Key="chest/chest03/chest03_close01.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open01.png" Key="chest/chest03/chest03_open01.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open02.png" Key="chest/chest03/chest03_open02.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open03.png" Key="chest/chest03/chest03_open03.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open04.png" Key="chest/chest03/chest03_open04.png" />
+              <PlistImageFile Name="chest_chest03_chest03_open05.png" Key="chest/chest03/chest03_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="chest04">
+            <Image Name="chest04_close01.png" />
+            <Image Name="chest04_open01.png" />
+            <Image Name="chest04_open02.png" />
+            <Image Name="chest04_open03.png" />
+            <Image Name="chest04_open04.png" />
+            <Image Name="chest04_open05.png" />
+            <PlistImageFolder Image="chest04.png" PListFile="chest04.plist" Name=".chest04_PList.Dir">
+              <PlistImageFile Name="chest_chest04_chest04_close01.png" Key="chest/chest04/chest04_close01.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open01.png" Key="chest/chest04/chest04_open01.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open02.png" Key="chest/chest04/chest04_open02.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open03.png" Key="chest/chest04/chest04_open03.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open04.png" Key="chest/chest04/chest04_open04.png" />
+              <PlistImageFile Name="chest_chest04_chest04_open05.png" Key="chest/chest04/chest04_open05.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="chest01.csd" Type="Node" />
+        <PlistInfo Name="chest01.csi" Type="Plist" />
+        <Project Name="chest02.csd" Type="Node" />
+        <PlistInfo Name="chest02.csi" Type="Plist" />
+        <Project Name="chest03.csd" Type="Node" />
+        <PlistInfo Name="chest03.csi" Type="Plist" />
+        <Project Name="chest04.csd" Type="Node" />
+        <PlistInfo Name="chest04.csi" Type="Plist" />
+        <Project Name="hero104.csd" Type="Node" />
+        <PlistInfo Name="hero104.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

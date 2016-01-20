@@ -1,37 +1,41 @@
 <GameFile>
-  <PropertyGroup Name="chest04" Type="Node" ID="eec0bfbe-17ec-4401-a69e-0d373d243ba8" Version="2.3.3.0" />
+  <PropertyGroup Name="chest04" Type="Node" ID="bb8de4a5-ab82-4324-b389-d0c5e4a05249" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="5" Speed="0.5000">
-        <Timeline ActionTag="-1412657958" Property="Position">
-          <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="5" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="-1412657958" Property="FileData">
+      <Animation Duration="15" Speed="0.3333">
+        <Timeline ActionTag="-1092918593" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_close01.png" Plist="chest04.plist" />
           </TextureFrame>
-          <TextureFrame FrameIndex="5" Tween="False">
+          <TextureFrame FrameIndex="3" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_open01.png" Plist="chest04.plist" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="6" Tween="False">
+            <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_open02.png" Plist="chest04.plist" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="9" Tween="False">
+            <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_open03.png" Plist="chest04.plist" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="12" Tween="False">
+            <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_open04.png" Plist="chest04.plist" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="15" Tween="False">
+            <TextureFile Type="MarkedSubImage" Path="chest/chest04/chest04_open05.png" Plist="chest04.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
       <AnimationList>
         <AnimationInfo Name="close" StartIndex="0" EndIndex="2">
-          <RenderColor A="255" R="205" G="133" B="63" />
+          <RenderColor A="150" R="255" G="222" B="173" />
         </AnimationInfo>
-        <AnimationInfo Name="open" StartIndex="4" EndIndex="5">
-          <RenderColor A="255" R="165" G="42" B="42" />
+        <AnimationInfo Name="open" StartIndex="3" EndIndex="15">
+          <RenderColor A="150" R="240" G="128" B="128" />
         </AnimationInfo>
       </AnimationList>
-      <ObjectData Name="Node" Tag="43" ctype="GameNodeObjectData">
+      <ObjectData Name="Node" Tag="25" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="chest04" ActionTag="-1412657958" Tag="48" IconVisible="False" LeftMargin="-68.5000" RightMargin="-68.5000" TopMargin="-56.5000" BottomMargin="-56.5000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="chest" ActionTag="-1092918593" Tag="26" IconVisible="False" LeftMargin="-23.0000" RightMargin="-23.0000" TopMargin="-23.0000" BottomMargin="-23.0000" ctype="SpriteObjectData">
             <Size X="137.0000" Y="113.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
