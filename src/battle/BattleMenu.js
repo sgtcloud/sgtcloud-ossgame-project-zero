@@ -887,7 +887,9 @@ var ShopLayerMenu = BattleMenu.extend({
             goldText.ignoreContentAdaptWithSize(true);
             goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
-            buyBtn.setVisible(true);
+            buyBtn.addClickEventListener(function () {
+                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
+            });
             this.shake = 4000;
             this.last_update = 0;
             this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
