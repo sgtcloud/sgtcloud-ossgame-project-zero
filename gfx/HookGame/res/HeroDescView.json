@@ -742,22 +742,22 @@
                 "ctype": "TextAtlasObjectData"
               },
               {
-                "CharWidth": 18,
+                "CharWidth": 17,
                 "CharHeight": 17,
-                "LabelText": "1321321",
-                "StartChar": "0",
+                "LabelText": "1.30",
+                "StartChar": ".",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "mainUI/font22_yellow_b.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                  "ScaleX": 0.5539,
+                  "ScaleY": 0.5476
                 },
                 "Position": {
-                  "X": 456.2112,
-                  "Y": 108.1915
+                  "X": 463.0,
+                  "Y": 109.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -766,21 +766,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8448,
-                  "Y": 0.7728
+                  "X": 0.8574,
+                  "Y": 0.7786
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.1259,
                   "Y": 0.1214
                 },
-                "LeftMargin": 393.2112,
-                "RightMargin": 20.7888,
+                "LeftMargin": 425.3362,
+                "RightMargin": 46.6638,
                 "TopMargin": 23.3085,
                 "BottomMargin": 99.6915,
                 "Tag": 134,
                 "ActionTag": -246387601,
                 "Size": {
-                  "X": 126.0,
+                  "X": 68.0,
                   "Y": 17.0
                 },
                 "Name": "atk_period_text",
@@ -789,7 +789,7 @@
               {
                 "CharWidth": 18,
                 "CharHeight": 17,
-                "LabelText": "1321321",
+                "LabelText": "999",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
@@ -815,17 +815,17 @@
                   "Y": 0.506
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.1,
                   "Y": 0.1214
                 },
-                "LeftMargin": 393.2112,
-                "RightMargin": 20.7888,
+                "LeftMargin": 429.2112,
+                "RightMargin": 56.7888,
                 "TopMargin": 60.6537,
                 "BottomMargin": 62.3463,
                 "Tag": 135,
                 "ActionTag": -577827229,
                 "Size": {
-                  "X": 126.0,
+                  "X": 54.0,
                   "Y": 17.0
                 },
                 "Name": "ctr_chance_text",
@@ -834,7 +834,7 @@
               {
                 "CharWidth": 18,
                 "CharHeight": 17,
-                "LabelText": "1321321",
+                "LabelText": "999",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
@@ -860,21 +860,109 @@
                   "Y": 0.2322
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.1,
                   "Y": 0.1214
                 },
-                "LeftMargin": 393.2112,
-                "RightMargin": 20.7888,
+                "LeftMargin": 429.2112,
+                "RightMargin": 56.7888,
                 "TopMargin": 98.9986,
                 "BottomMargin": 24.0014,
                 "Tag": 136,
                 "ActionTag": -1118068136,
                 "Size": {
-                  "X": 126.0,
+                  "X": 54.0,
                   "Y": 17.0
                 },
                 "Name": "ctr_modify_text",
                 "ctype": "TextAtlasObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/f22_y.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 21,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 496.9765,
+                  "Y": 70.79
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9203,
+                  "Y": 0.5056
+                },
+                "PreSize": {
+                  "X": 0.0389,
+                  "Y": 0.1286
+                },
+                "LeftMargin": 486.4765,
+                "RightMargin": 32.5235,
+                "TopMargin": 60.21,
+                "BottomMargin": 61.79,
+                "CallBackType": "Click",
+                "Tag": 181,
+                "ActionTag": 1452384872,
+                "Size": {
+                  "X": 21.0,
+                  "Y": 18.0
+                },
+                "Name": "ctr_chance_text_1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/f22_y.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 21,
+                "Scale9Height": 18,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 496.9765,
+                  "Y": 32.3819
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9203,
+                  "Y": 0.2313
+                },
+                "PreSize": {
+                  "X": 0.0389,
+                  "Y": 0.1286
+                },
+                "LeftMargin": 486.4765,
+                "RightMargin": 32.5235,
+                "TopMargin": 98.6181,
+                "BottomMargin": 23.3819,
+                "CallBackType": "Click",
+                "Tag": 182,
+                "ActionTag": -273121561,
+                "Size": {
+                  "X": 21.0,
+                  "Y": 18.0
+                },
+                "Name": "ctr_modify_text_1",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -101405835,
@@ -907,7 +995,9 @@
         "heroDescUI/tap.png",
         "heroDescUI/tap_lable.png",
         "mainUI/bg_03.png",
-        "mainUI/font22_yellow.png"
+        "mainUI/f22_y.png",
+        "mainUI/font22_yellow.png",
+        "mainUI/font22_yellow_b.png"
       ],
       "ctype": "GameFileData"
     }

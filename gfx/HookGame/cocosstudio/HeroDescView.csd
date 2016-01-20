@@ -169,35 +169,55 @@
                 <PreSize X="0.2333" Y="0.1214" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="atk_period_text" ActionTag="-246387601" Tag="134" IconVisible="False" LeftMargin="393.2112" RightMargin="20.7888" TopMargin="23.3085" BottomMargin="99.6915" CharWidth="18" CharHeight="17" LabelText="1321321" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="126.0000" Y="17.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="456.2112" Y="108.1915" />
+              <AbstractNodeData Name="atk_period_text" ActionTag="-246387601" Tag="134" IconVisible="False" LeftMargin="425.3362" RightMargin="46.6638" TopMargin="23.3085" BottomMargin="99.6915" CharWidth="17" CharHeight="17" LabelText="1.30" StartChar="." ctype="TextAtlasObjectData">
+                <Size X="68.0000" Y="17.0000" />
+                <AnchorPoint ScaleX="0.5539" ScaleY="0.5476" />
+                <Position X="463.0000" Y="109.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8448" Y="0.7728" />
-                <PreSize X="0.2333" Y="0.1214" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
+                <PrePosition X="0.8574" Y="0.7786" />
+                <PreSize X="0.1259" Y="0.1214" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ctr_chance_text" ActionTag="-577827229" Tag="135" IconVisible="False" LeftMargin="393.2112" RightMargin="20.7888" TopMargin="60.6537" BottomMargin="62.3463" CharWidth="18" CharHeight="17" LabelText="1321321" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="126.0000" Y="17.0000" />
+              <AbstractNodeData Name="ctr_chance_text" ActionTag="-577827229" Tag="135" IconVisible="False" LeftMargin="429.2112" RightMargin="56.7888" TopMargin="60.6537" BottomMargin="62.3463" CharWidth="18" CharHeight="17" LabelText="999" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="54.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="456.2112" Y="70.8463" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.8448" Y="0.5060" />
-                <PreSize X="0.2333" Y="0.1214" />
+                <PreSize X="0.1000" Y="0.1214" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ctr_modify_text" ActionTag="-1118068136" Tag="136" IconVisible="False" LeftMargin="393.2112" RightMargin="20.7888" TopMargin="98.9986" BottomMargin="24.0014" CharWidth="18" CharHeight="17" LabelText="1321321" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="126.0000" Y="17.0000" />
+              <AbstractNodeData Name="ctr_modify_text" ActionTag="-1118068136" Tag="136" IconVisible="False" LeftMargin="429.2112" RightMargin="56.7888" TopMargin="98.9986" BottomMargin="24.0014" CharWidth="18" CharHeight="17" LabelText="999" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="54.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="456.2112" Y="32.5014" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.8448" Y="0.2322" />
-                <PreSize X="0.2333" Y="0.1214" />
+                <PreSize X="0.1000" Y="0.1214" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="ctr_chance_text_1" ActionTag="1452384872" CallBackType="Click" Tag="181" IconVisible="False" LeftMargin="486.4765" RightMargin="32.5235" TopMargin="60.2100" BottomMargin="61.7900" Scale9Width="21" Scale9Height="18" ctype="ImageViewObjectData">
+                <Size X="21.0000" Y="18.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="496.9765" Y="70.7900" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9203" Y="0.5056" />
+                <PreSize X="0.0389" Y="0.1286" />
+                <FileData Type="Normal" Path="mainUI/f22_y.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="ctr_modify_text_1" ActionTag="-273121561" CallBackType="Click" Tag="182" IconVisible="False" LeftMargin="486.4765" RightMargin="32.5235" TopMargin="98.6181" BottomMargin="23.3819" Scale9Width="21" Scale9Height="18" ctype="ImageViewObjectData">
+                <Size X="21.0000" Y="18.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="496.9765" Y="32.3819" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9203" Y="0.2313" />
+                <PreSize X="0.0389" Y="0.1286" />
+                <FileData Type="Normal" Path="mainUI/f22_y.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

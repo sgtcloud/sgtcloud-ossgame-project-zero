@@ -199,6 +199,8 @@
           <Image Name="clear_reward.png" />
           <Image Name="login_reward.png" />
           <Image Name="offline_reward.png" />
+          <Image Name="font22_yellow_b.png" />
+          <Image Name="f22_y.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -277,6 +279,20 @@
         <Project Name="SkillDescView.csd" Type="Layer" />
         <Project Name="HeroDescLayer.csd" Type="Layer" />
         <Project Name="HeroDescView.csd" Type="Layer" />
+        <Folder Name="materialUI">
+          <Image Name="bronze.png" />
+          <Image Name="crystal.png" />
+          <Image Name="diamond.png" />
+          <Image Name="essence.png" />
+          <Image Name="gold.png" />
+          <Image Name="iron.png" />
+          <Image Name="key.png" />
+          <Image Name="leather.png" />
+          <Image Name="relic.png" />
+          <Image Name="rune.png" />
+          <Image Name="stone.png" />
+          <Image Name="wood.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

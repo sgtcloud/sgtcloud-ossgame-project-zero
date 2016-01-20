@@ -59,13 +59,13 @@
                 <PreSize X="0.1406" Y="0.0708" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="38.0000" BottomMargin="12.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="38.0000" BottomMargin="12.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="190.0000" />
-                <AnchorPoint />
-                <Position X="15.0000" Y="12.0000" />
+                <AnchorPoint ScaleY="1.0000" />
+                <Position X="15.0000" Y="202.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0234" Y="0.0500" />
+                <PrePosition X="0.0234" Y="0.8417" />
                 <PreSize X="0.9531" Y="0.7917" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
