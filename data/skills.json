@@ -1,6 +1,6 @@
 {"s10101": {
   "name" : "灵魂烈焰",
-  "desc" : "对随机敌方单位造成{effect1_value}点伤害。",
+  "desc" : "对随机敌方单位造成{effect1.value}点伤害。",
   "icon" : "s10101.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -71,7 +71,7 @@
   } ]
 }, "s10102": {
   "name" : "黑暗之风",
-  "desc" : "对所有敌方单位造成{effect1_value}点伤害。",
+  "desc" : "对所有敌方单位造成{effect1.value}点伤害。",
   "icon" : "s10102.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -142,7 +142,7 @@
   } ]
 },"s10103":  {
   "name" : "流金铄石",
-  "desc" : "限定时间{duration}秒内，获得金币的比例提升{effect1_value}。",
+  "desc" : "限定时间{duration}秒内，获得金币的比例提升{effect1.value}。",
   "icon" : "s10103.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -213,7 +213,7 @@
   } ]
 },"s10104":  {
   "name" : "群鸦盛宴",
-  "desc" : "限定时间{duration}秒内，对所有敌方单位造成{effect1_value}点伤害。",
+  "desc" : "限定时间{duration}秒内，对所有敌方单位造成{effect1.value}点伤害。",
   "icon" : "s10104.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -284,7 +284,7 @@
   } ]
 }, "s10105": {
   "name" : "星界祝福",
-  "desc" : "治疗全体友方单位{effect1_value}点生命值。",
+  "desc" : "治疗全体友方单位{effect1.value}点生命值。",
   "icon" : "s10105.png",
   "type" : 1,
   "levelDatas" : [ {
@@ -1207,7 +1207,7 @@
   } ]
 },"s10402": {
   "name" : "不洁射击",
-  "desc" : "缩短{effect1.value}的攻击速度。",
+  "desc" : "缩短{effect1.value}的攻击间隔。",
   "icon" : "s10402.png",
   "type" : 0,
   "levelDatas" : [ {

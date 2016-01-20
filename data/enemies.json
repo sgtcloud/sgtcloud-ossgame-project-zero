@@ -179,8 +179,8 @@
     "attack" : 21,
     "atk_period" : 3.5,
     "bonus" : {
-      "value" : 106,
-      "unit" : "gold"
+      "value" : 11,
+      "unit" : "essence"
     }
   }, {
     "level" : 10,
@@ -188,8 +188,8 @@
     "attack" : 18,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 97,
-      "unit" : "gold"
+      "value" : 10,
+      "unit" : "rune"
     }
   }, {
     "level" : 9,
@@ -197,8 +197,8 @@
     "attack" : 15,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 87,
-      "unit" : "gold"
+      "value" : 9,
+      "unit" : "crystal"
     }
   }, {
     "level" : 8,
@@ -206,8 +206,8 @@
     "attack" : 13,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 78,
-      "unit" : "gold"
+      "value" : 8,
+      "unit" : "iron"
     }
   }, {
     "level" : 7,
@@ -215,8 +215,8 @@
     "attack" : 11,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 70,
-      "unit" : "gold"
+      "value" : 7,
+      "unit" : "bronze"
     }
   }, {
     "level" : 6,
@@ -224,8 +224,8 @@
     "attack" : 8,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 62,
-      "unit" : "gold"
+      "value" : 6,
+      "unit" : "stone"
     }
   }, {
     "level" : 5,
@@ -233,8 +233,8 @@
     "attack" : 7,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 55,
-      "unit" : "gold"
+      "value" : 5,
+      "unit" : "leather"
     }
   }, {
     "level" : 4,
@@ -242,8 +242,8 @@
     "attack" : 5,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 48,
-      "unit" : "gold"
+      "value" : 4,
+      "unit" : "wood"
     }
   }, {
     "level" : 3,
@@ -251,8 +251,8 @@
     "attack" : 3,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 41,
-      "unit" : "gold"
+      "value" : 3,
+      "unit" : "key"
     }
   }, {
     "level" : 2,
@@ -260,8 +260,8 @@
     "attack" : 2,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 35,
-      "unit" : "gold"
+      "value" : 2,
+      "unit" : "relic"
     }
   }, {
     "level" : 1,
@@ -269,8 +269,8 @@
     "attack" : 1,
     "atk_period" : 2.5,
     "bonus" : {
-      "value" : 30,
-      "unit" : "gold"
+      "value" : 1,
+      "unit" : "diamond"
     }
   } ]
 },"e1002": {
@@ -454,8 +454,8 @@
     "attack" : 27,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 128,
-      "unit" : "gold"
+      "value" : 11,
+      "unit" : "essence"
     }
   }, {
     "level" : 10,
@@ -463,8 +463,8 @@
     "attack" : 24,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 117,
-      "unit" : "gold"
+      "value" : 10,
+      "unit" : "rune"
     }
   }, {
     "level" : 9,
@@ -472,8 +472,8 @@
     "attack" : 21,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 106,
-      "unit" : "gold"
+      "value" : 9,
+      "unit" : "crystal"
     }
   }, {
     "level" : 8,
@@ -481,8 +481,8 @@
     "attack" : 18,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 97,
-      "unit" : "gold"
+      "value" : 8,
+      "unit" : "iron"
     }
   }, {
     "level" : 7,
@@ -490,8 +490,8 @@
     "attack" : 15,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 87,
-      "unit" : "gold"
+      "value" : 7,
+      "unit" : "bronze"
     }
   }, {
     "level" : 6,
@@ -499,8 +499,8 @@
     "attack" : 13,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 78,
-      "unit" : "gold"
+      "value" : 6,
+      "unit" : "stone"
     }
   }, {
     "level" : 5,
@@ -508,8 +508,8 @@
     "attack" : 11,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 70,
-      "unit" : "gold"
+      "value" : 5,
+      "unit" : "leather"
     }
   }, {
     "level" : 4,
@@ -517,8 +517,8 @@
     "attack" : 8,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 62,
-      "unit" : "gold"
+      "value" : 4,
+      "unit" : "wood"
     }
   }, {
     "level" : 3,
@@ -526,8 +526,8 @@
     "attack" : 7,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 55,
-      "unit" : "gold"
+      "value" : 3,
+      "unit" : "key"
     }
   }, {
     "level" : 2,
@@ -535,8 +535,8 @@
     "attack" : 5,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 48,
-      "unit" : "gold"
+      "value" : 2,
+      "unit" : "relic"
     }
   }, {
     "level" : 1,
@@ -544,11 +544,11 @@
     "attack" : 3,
     "atk_period" : 2.7,
     "bonus" : {
-      "value" : 41,
-      "unit" : "gold"
+      "value" : 1,
+      "unit" : "diamond"
     }
   } ]
-}, "e1003":{
+},"e1003": {
   "file" : "enemy_1003_json",
   "name" : "寒霜幽魂",
   "icon" : "e1003.png",
@@ -729,8 +729,8 @@
     "attack" : 33,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 151,
-      "unit" : "gold"
+      "value" : 11,
+      "unit" : "essence"
     }
   }, {
     "level" : 10,
@@ -738,8 +738,8 @@
     "attack" : 30,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 139,
-      "unit" : "gold"
+      "value" : 10,
+      "unit" : "rune"
     }
   }, {
     "level" : 9,
@@ -747,8 +747,8 @@
     "attack" : 27,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 128,
-      "unit" : "gold"
+      "value" : 9,
+      "unit" : "crystal"
     }
   }, {
     "level" : 8,
@@ -756,8 +756,8 @@
     "attack" : 24,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 117,
-      "unit" : "gold"
+      "value" : 8,
+      "unit" : "iron"
     }
   }, {
     "level" : 7,
@@ -765,8 +765,8 @@
     "attack" : 21,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 106,
-      "unit" : "gold"
+      "value" : 7,
+      "unit" : "bronze"
     }
   }, {
     "level" : 6,
@@ -774,8 +774,8 @@
     "attack" : 18,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 97,
-      "unit" : "gold"
+      "value" : 6,
+      "unit" : "stone"
     }
   }, {
     "level" : 5,
@@ -783,8 +783,8 @@
     "attack" : 15,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 87,
-      "unit" : "gold"
+      "value" : 5,
+      "unit" : "leather"
     }
   }, {
     "level" : 4,
@@ -792,8 +792,8 @@
     "attack" : 13,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 78,
-      "unit" : "gold"
+      "value" : 4,
+      "unit" : "wood"
     }
   }, {
     "level" : 3,
@@ -801,8 +801,8 @@
     "attack" : 11,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 70,
-      "unit" : "gold"
+      "value" : 3,
+      "unit" : "key"
     }
   }, {
     "level" : 2,
@@ -810,8 +810,8 @@
     "attack" : 8,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 62,
-      "unit" : "gold"
+      "value" : 2,
+      "unit" : "relic"
     }
   }, {
     "level" : 1,
@@ -819,8 +819,8 @@
     "attack" : 7,
     "atk_period" : 2.3,
     "bonus" : {
-      "value" : 55,
-      "unit" : "gold"
+      "value" : 1,
+      "unit" : "diamond"
     }
   } ]
 },"e1004": {
@@ -1004,8 +1004,8 @@
     "attack" : 40,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 176,
-      "unit" : "gold"
+      "value" : 11,
+      "unit" : "essence"
     }
   }, {
     "level" : 10,
@@ -1013,8 +1013,8 @@
     "attack" : 36,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 163,
-      "unit" : "gold"
+      "value" : 10,
+      "unit" : "rune"
     }
   }, {
     "level" : 9,
@@ -1022,8 +1022,8 @@
     "attack" : 33,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 151,
-      "unit" : "gold"
+      "value" : 9,
+      "unit" : "crystal"
     }
   }, {
     "level" : 8,
@@ -1031,8 +1031,8 @@
     "attack" : 30,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 139,
-      "unit" : "gold"
+      "value" : 8,
+      "unit" : "iron"
     }
   }, {
     "level" : 7,
@@ -1040,8 +1040,8 @@
     "attack" : 27,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 128,
-      "unit" : "gold"
+      "value" : 7,
+      "unit" : "bronze"
     }
   }, {
     "level" : 6,
@@ -1049,8 +1049,8 @@
     "attack" : 24,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 117,
-      "unit" : "gold"
+      "value" : 6,
+      "unit" : "stone"
     }
   }, {
     "level" : 5,
@@ -1058,8 +1058,8 @@
     "attack" : 21,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 106,
-      "unit" : "gold"
+      "value" : 5,
+      "unit" : "leather"
     }
   }, {
     "level" : 4,
@@ -1067,8 +1067,8 @@
     "attack" : 18,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 97,
-      "unit" : "gold"
+      "value" : 4,
+      "unit" : "wood"
     }
   }, {
     "level" : 3,
@@ -1076,8 +1076,8 @@
     "attack" : 15,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 87,
-      "unit" : "gold"
+      "value" : 3,
+      "unit" : "key"
     }
   }, {
     "level" : 2,
@@ -1085,8 +1085,8 @@
     "attack" : 13,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 78,
-      "unit" : "gold"
+      "value" : 2,
+      "unit" : "relic"
     }
   }, {
     "level" : 1,
@@ -1094,8 +1094,8 @@
     "attack" : 11,
     "atk_period" : 2.6,
     "bonus" : {
-      "value" : 70,
-      "unit" : "gold"
+      "value" : 1,
+      "unit" : "diamond"
     }
   } ]
 },"e1005": {
@@ -1279,8 +1279,8 @@
     "attack" : 47,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 203,
-      "unit" : "gold"
+      "value" : 11,
+      "unit" : "essence"
     }
   }, {
     "level" : 10,
@@ -1288,8 +1288,8 @@
     "attack" : 43,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 189,
-      "unit" : "gold"
+      "value" : 10,
+      "unit" : "rune"
     }
   }, {
     "level" : 9,
@@ -1297,8 +1297,8 @@
     "attack" : 40,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 176,
-      "unit" : "gold"
+      "value" : 9,
+      "unit" : "crystal"
     }
   }, {
     "level" : 8,
@@ -1306,8 +1306,8 @@
     "attack" : 36,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 163,
-      "unit" : "gold"
+      "value" : 8,
+      "unit" : "iron"
     }
   }, {
     "level" : 7,
@@ -1315,8 +1315,8 @@
     "attack" : 33,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 151,
-      "unit" : "gold"
+      "value" : 7,
+      "unit" : "bronze"
     }
   }, {
     "level" : 6,
@@ -1324,8 +1324,8 @@
     "attack" : 30,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 139,
-      "unit" : "gold"
+      "value" : 6,
+      "unit" : "stone"
     }
   }, {
     "level" : 5,
@@ -1333,8 +1333,8 @@
     "attack" : 27,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 128,
-      "unit" : "gold"
+      "value" : 5,
+      "unit" : "leather"
     }
   }, {
     "level" : 4,
@@ -1342,8 +1342,8 @@
     "attack" : 24,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 117,
-      "unit" : "gold"
+      "value" : 4,
+      "unit" : "wood"
     }
   }, {
     "level" : 3,
@@ -1351,8 +1351,8 @@
     "attack" : 21,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 106,
-      "unit" : "gold"
+      "value" : 3,
+      "unit" : "key"
     }
   }, {
     "level" : 2,
@@ -1360,8 +1360,8 @@
     "attack" : 18,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 97,
-      "unit" : "gold"
+      "value" : 2,
+      "unit" : "relic"
     }
   }, {
     "level" : 1,
@@ -1369,8 +1369,8 @@
     "attack" : 15,
     "atk_period" : 2.4,
     "bonus" : {
-      "value" : 87,
-      "unit" : "gold"
+      "value" : 1,
+      "unit" : "diamond"
     }
   } ]
 } }
