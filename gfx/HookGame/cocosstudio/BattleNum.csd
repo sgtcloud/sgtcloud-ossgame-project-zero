@@ -19,6 +19,16 @@
                 <PreSize X="0.2200" Y="0.8571" />
                 <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font14_red.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="recover_num" ActionTag="-1533586731" CallBackType="Click" Tag="52" IconVisible="False" RightMargin="78.0000" TopMargin="2.0000" CharWidth="11" CharHeight="12" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
+                <Size X="22.0000" Y="12.0000" />
+                <AnchorPoint />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.2200" Y="0.8571" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font14_green.png" Plist="" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
