@@ -387,7 +387,7 @@ var BattlePanel = cc.Node.extend({
 
     initBattle: function (stage) {
         this.loadStageBackground(stage);
-        this.initBattleHeroes();
+        //this.initBattleHeroes();
         this.loadRewardBtn();
         this.prepareBattle(stage);
     },
