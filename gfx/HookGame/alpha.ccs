@@ -60,7 +60,6 @@
         <Project Name="BattleLayer.csd" Type="Layer" />
         <Project Name="Skillicon.csd" Type="Layer" />
         <Project Name="SkillLayer.csd" Type="Layer" />
-        <Project Name="HeroDesc.csd" Type="Layer" />
         <Folder Name="heroDescUI">
           <Image Name="close_icon.png" />
           <Image Name="text_bg.png" />
@@ -277,6 +276,7 @@
         <Project Name="BuffLayer.csd" Type="Layer" />
         <Project Name="SkillDescView.csd" Type="Layer" />
         <Project Name="HeroDescLayer.csd" Type="Layer" />
+        <Project Name="HeroDescView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
