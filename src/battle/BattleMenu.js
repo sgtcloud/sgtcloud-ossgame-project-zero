@@ -904,23 +904,23 @@ var ShopLayerMenu = BattleMenu.extend({
         this.deviceMotionHandler = function (eventData) {
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
-                diffTime = currTime - this.last_update;
-            alert(diffTime + ",222," + this.falg);
-            if (diffTime > 100 && this.falg) {
+                diffTime = currTime - self.last_update;
+            alert(diffTime + ",222," + self.falg);
+            if (diffTime > 100 && self.falg) {
                 alert(333);
-                this.last_update = currTime;
-                this.first_x = acceleration.x;
-                this.first_y = acceleration.y;
-                this.first_z = acceleration.z;
-                var speed = Math.abs(this.first_x + this.first_y + this.first_z - this.last_x - this.last_y - this.last_z) / diffTime * 10000
-                if (speed > this.shake) {
+                self.last_update = currTime;
+                self.first_x = acceleration.x;
+                self.first_y = acceleration.y;
+                self.first_z = acceleration.z;
+                var speed = Math.abs(self.first_x + self.first_y + self.first_z - self.last_x - self.last_y - self.last_z) / diffTime * 10000
+                if (speed > self.shake) {
                     alert(444);
-                    this.falg = false;
-                    this.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
+                    self.falg = false;
+                    self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
                 }
-                this.last_x = this.first_x;
-                this.last_y = this.first_y;
-                this.last_z = this.first_z;
+                self.last_x = self.first_x;
+                self.last_y = self.first_y;
+                self.last_z = self.first_z;
             }
         }
         this.buyGold = function (gem, gold) {
