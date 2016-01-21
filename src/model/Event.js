@@ -76,7 +76,11 @@ var EVENT = {
     /**
      * 解锁主动技能
      */
-    UNLOCK_ACTIVITY_SKILL:"UNLOCK_ACTIVITY_SKILL"
+    UNLOCK_ACTIVITY_SKILL:"UNLOCK_ACTIVITY_SKILL",
+    /**
+     * 解锁英雄
+     */
+    UNLOCK_HERO:"UNLOCK_HERO"
 };
 
 var customEventHelper = {

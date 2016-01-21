@@ -67,8 +67,27 @@ var Hero = function (heroData) {
         }
         return false;
     }
+    var validateLocked=function(unlock){
+        if (unlock){
+            var unit=unlock['unit'];
+            var value=unlock['value'];
+            switch (unit){
+                case 'hero':
+                    var hero=PlayerData.getHeroById(value);
+                    return hero.getLv()<1;
+                default:
+            }
+        }
+        return false;
+    }
     this.isLocked = function () {
-        return lv <= 0;
+        var unlock=data['unlock'];
+        var locked=validateLocked(unlock);
+        /*if( lv < 1){
+            return true;
+        };*/
+        //console.log(this.getId()+" has been locked : "+locked)
+        return locked;
     };
     this.isMaxLevel = function () {
         return lv >= this.getMaxLevel();
@@ -201,7 +220,7 @@ var Hero = function (heroData) {
         return this.calcProp("tap");
     };
     this.getRecover = function () {
-        var val = data.levelDatas[lv - 1].resurge.time;
+        var val = data.levelDatas[lv ].resurge.time;
         return val;
     };
     this.getCtrChance = function () {
@@ -231,6 +250,9 @@ var Hero = function (heroData) {
         }
         return true;
     };
+    this.getUnLock=function(){
+        return data['unlock'];
+    }
     /**
      * 英雄升级
      */
