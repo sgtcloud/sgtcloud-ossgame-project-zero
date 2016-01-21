@@ -863,6 +863,10 @@ var ShopLayerMenu = BattleMenu.extend({
             shopView.getChildByName(name).setVisible(true);
             this.buttons[name].setSelected(true);
         };
+        this.shake = 4000;
+        this.last_update = 0;
+        this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
+        this.falg = true;
         this.showMoneyTreeView = function (name) {
            /* var gemNum = CONSTS.money_tree_one_price;
             var showMoneyTree = shopView.getChildByName(name);
@@ -890,10 +894,6 @@ var ShopLayerMenu = BattleMenu.extend({
             buyBtn.addClickEventListener(function () {
                 self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
             });
-            this.shake = 4000;
-            this.last_update = 0;
-            this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
-            this.falg = true;
 
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
