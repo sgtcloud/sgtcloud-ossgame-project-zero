@@ -137,7 +137,7 @@ var FairyUnit = cc.Node.extend({
             } else {
                 //发送释放buff事件
                 cc.log('释放buff');
-                customEventHelper.sendEvent(EVENT.CAST_BUFF, {
+                customEventHelper.sendEvent(EVENT.CAST_SKILL_READY, {
                     skillId: res.skill_id,
                     level: res.level
                 });

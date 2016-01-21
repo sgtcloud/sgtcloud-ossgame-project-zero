@@ -96,7 +96,7 @@ var SkillIcon = function (battle, template, index, skillsBox) {
                     that.reviveText.setVisible(false);
                 }
             });
-            customEventHelper.bindListener(EVENT.CAST_BUFF, function (event) {
+            customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (event) {
                 var data = event.getUserData();
                 if (that.skill.getId() === data.skill_id) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
