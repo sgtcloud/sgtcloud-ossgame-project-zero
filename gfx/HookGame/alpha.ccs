@@ -263,6 +263,7 @@
           <Image Name="font16_green.png" />
           <Image Name="notSure.png" />
           <Image Name="back.png" />
+          <Image Name="font16_green_a.png" />
         </Folder>
         <Project Name="OfflineRewardLayer.csd" Type="Layer" />
         <Folder Name="offlineRewardUI">
@@ -293,6 +294,22 @@
           <Image Name="rune.png" />
           <Image Name="stone.png" />
           <Image Name="wood.png" />
+          <Image Name="golden_chest_1.png" />
+          <Image Name="golden_chest_2.png" />
+          <Image Name="golden_key.png" />
+          <Image Name="iron_chest_1.png" />
+          <Image Name="iron_chest_2.png" />
+          <Image Name="iron_key.png" />
+          <Image Name="silver_chest_1.png" />
+          <Image Name="silver_chest_2.png" />
+          <Image Name="silver_key.png" />
+          <Image Name="wood_chest_1.png" />
+          <Image Name="wood_chest_2.png" />
+        </Folder>
+        <Project Name="PackLayer.csd" Type="Layer" />
+        <Folder Name="packUI">
+          <Image Name="chest.png" />
+          <Image Name="title.png" />
         </Folder>
       </RootFolder>
     </Group>
