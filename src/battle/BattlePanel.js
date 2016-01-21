@@ -270,6 +270,7 @@ var BattlePanel = cc.Node.extend({
         if (target) {
             var tapSkill = new TapSkill();
             tapSkill.cast(this, target, pos);
+            player.statistics.total_tap++;
         }
     },
 
@@ -435,20 +436,22 @@ var BattlePanel = cc.Node.extend({
     },
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:" + hero);
+        //cc.log("dead:" + hero);
     },
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:" + hero);
+        //cc.log("recover:" + hero);
     },
     onUseSkill: function (i) {
 
     },
 
     onEnemyDead: function (enemy) {
-        PlayerData.updateResource(enemy.getBonus());
-        //this.updatePlayerGoldText();
-        //this.updateTopPanel();
+        if (PlayerData.getStageData().isBossBattle()) {
+            player.statistics.total_boss_kill++;
+        } else {
+            player.statistics.total_enemy_kill++;
+        }
     },
 
     onEnemyVanish: function (enemy) {
