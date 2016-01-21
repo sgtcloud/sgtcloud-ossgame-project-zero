@@ -202,6 +202,8 @@
           <Image Name="font22_yellow_b.png" />
           <Image Name="f22_y.png" />
           <Image Name="font14_green.png" />
+          <Image Name="tips.png" />
+          <Image Name="tips_skill_buff.png" />
         </Folder>
         <Project Name="RankLayer.csd" Type="Layer" />
         <Project Name="RankView.csd" Type="Layer" />
@@ -294,6 +296,7 @@
           <Image Name="stone.png" />
           <Image Name="wood.png" />
         </Folder>
+        <Project Name="BuffTips.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
