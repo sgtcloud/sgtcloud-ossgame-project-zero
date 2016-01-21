@@ -97,13 +97,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="heroProperty" ActionTag="1805565943" Tag="138" IconVisible="True" LeftMargin="49.0000" RightMargin="51.0000" TopMargin="143.3278" BottomMargin="676.6722" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="heroProperty" ActionTag="1805565943" Tag="138" IconVisible="True" LeftMargin="49.0000" RightMargin="51.0000" TopMargin="144.0000" BottomMargin="676.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="540.0000" Y="140.0000" />
                 <AnchorPoint />
-                <Position X="49.0000" Y="676.6722" />
+                <Position X="49.0000" Y="676.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0766" Y="0.7049" />
+                <PrePosition X="0.0766" Y="0.7042" />
                 <PreSize X="0.8438" Y="0.1458" />
                 <FileData Type="Normal" Path="HeroDescView.csd" Plist="" />
               </AbstractNodeData>
