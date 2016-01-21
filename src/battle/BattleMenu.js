@@ -92,43 +92,64 @@ var SkillIcon = function (battle, template, index, skillsBox) {
                     var skillId = event.getUserData();
                     if (!that.root.isVisible() && that.skill.getId() === skillId) {
                         that.root.setVisible(true);
-                        customEventHelper.bindListener(EVENT.CAST_BUFF, function (e) {
+                        customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (e) {
                             var data = e.getUserData();
                             if (that.skill.getId() === data.skill_id) {
                                 if (!(isCoolDowning || heroDead)) {
                                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                                    if(!isCoolDowning){
+                                        doCoolDown(that.skill.getLevelData());
+                                    }
                                 }
                             }
                         });
                     }
                 });
             }
-            this.skill_icon.addClickEventListener(function () {
-                var levelData = that.skill.getLevelData();
-                if (levelData['duration'] > 0) {
-                }
+            function doCoolDown(levelData){
                 if (levelData['cooldown'] > 0) {
                     isCoolDowning = true;
                     that.cooldownText.setVisible(true)
                     that.time.setVisible(true)
                     that.time.setString(levelData['cooldown'] + " 秒")
-                    that.skill_icon.setTouchEnabled(false);
+                    //that.skill_icon.setTouchEnabled(false);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
+                    //cc.eventManager.resumeTarget(that.skill_icon);
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
                         if (!heroDead) {
-                            !that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
+                            //!that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
                         if (!heroDead) {
                             that.time.isVisible() && that.time.setVisible(false)
+                            //cc.eventManager.pauseTarget(that.skill_icon);
                         }
                         isCoolDowning = false;
                     });
                 }
-                console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
-                customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+            }
+            function tryFire(levelData){
+                if(!(isCoolDowning||heroDead)){
+                    doCoolDown(levelData);
+                    console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                }else if(isCoolDowning&&!heroDead){
+                    console.log('技能【'+that.skill.getId()+"】冷却中，请稍候再点！");
+                }else {
+                    console.log('英雄已死亡，请稍候再点！');
+                }
+            }
+            this.skill_icon.addClickEventListener(function () {
+                var levelData = that.skill.getLevelData();
+                //doCoolDown(levelData);
+                tryFire(levelData);
+                if (levelData['duration'] > 0) {
+                }
+
             });
+            //bindTouchEventListener(function(){console.log('技能【'+that.skill.getId()+"】冷却中，请稍候再点！");},this.skill_icon);
+            //cc.eventManager.pauseTarget(this.skill_icon);
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();

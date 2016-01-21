@@ -88,7 +88,7 @@ var TabContainer = cc.Node.extend({
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
                 PlayerData.updateResource([data.cost]);
-                PlayerData.updatePlayer();
+                //PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
