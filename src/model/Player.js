@@ -42,7 +42,7 @@ var player = {
     "heroes": [
         {
             "id": "h101",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -58,7 +58,7 @@ var player = {
         },
         {
             "id": "h102",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             "skills": {}/* [
@@ -68,7 +68,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h103",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -81,7 +81,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h104",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -94,7 +94,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h105",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
