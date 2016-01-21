@@ -237,13 +237,13 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="83.5398" RightMargin="456.4602" TopMargin="56.2681" BottomMargin="73.7319" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" DisplayState="False" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3825" RightMargin="454.6175" TopMargin="54.6391" BottomMargin="75.3609" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="118.5398" Y="108.7319" />
+                    <AnchorPoint ScaleX="0.5526" ScaleY="0.5465" />
+                    <Position X="124.0679" Y="113.6189" />
                     <Scale ScaleX="1.5000" ScaleY="1.5000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1943" Y="0.5437" />
+                    <PrePosition X="0.2034" Y="0.5681" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="materialUI/golden_chest_1.png" Plist="" />
