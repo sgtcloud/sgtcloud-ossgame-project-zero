@@ -18,10 +18,6 @@ var EVENT = {
      */
     HERO_EQUIP_UPGRADE: "EQUIP_UPGRADE",
     /**
-     * 金币位置改变
-     */
-    GOLD_POSITION: "GOLD_POSITION",
-    /**
      * 金币数量改变
      */
     GOLD_VALUE_UPDATE: "GOLD_VALUE_UPDATE",
@@ -50,6 +46,14 @@ var EVENT = {
      */
     GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE",
     /**
+     * 圣物数量改变
+    */
+    RELIC_VALUE_UPDATE: "RELIC_VALUE_UPDATE",
+    /**
+     * 背包数量改变
+     */
+    PACK_VALUE_UPDATE: "PACK_VALUE_UPDATE",
+    /**
      * 刷新英雄属性
      */
     HERO_REFRESH_PROPS: "HERO_REFRESH_PROPS",
@@ -70,9 +74,9 @@ var EVENT = {
      */
     HERO_BUY_REVIVE: "HERO_BUY_REVIVE",
     /**
-     * 释放buff
+     * 准备释放技能
      */
-    CAST_BUFF: "CAST_BUFF",
+    CAST_SKILL_READY: "CAST_SKILL_READY",
     /**
      * 解锁主动技能
      */

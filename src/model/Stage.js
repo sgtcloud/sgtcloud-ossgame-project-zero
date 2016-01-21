@@ -49,6 +49,9 @@ var Stage = function (id) {
     this.getNextStageId = function () {
         return data.next;
     };
+    this.getBonus = function () {
+        return data.bonus;
+    };
 
     this.getId = function () {
         return id;

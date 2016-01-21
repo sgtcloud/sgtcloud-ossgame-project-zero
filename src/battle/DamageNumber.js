@@ -38,11 +38,6 @@ var DamageNumber = cc.Class.extend({
             this.textAtlas = this.damageText;
         }
         this.textAtlas.setString(Math.floor(val));
-        //if (ctr) {
-        //    this.textAtlas.color = cc.color(255, 100, 100);
-        //} else {
-        //    this.textAtlas.color = cc.color(255, 200, 200);
-        //}
     },
 
     unuse: function () {

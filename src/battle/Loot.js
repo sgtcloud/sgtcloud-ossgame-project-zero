@@ -28,29 +28,13 @@ var Loot = cc.Node.extend({
                 this.lootSprite = ccs.load(res.huge_gold_json).node;
                 this.action = ccs.load(res.huge_gold_json).action;
             }
+        } else {
+            this.lootSprite = ccs.load(res[unit + "_json"]).node;
+            this.action = ccs.load(res[unit + "_json"]).action;
         }
+        this.lootSprite.runAction(this.action);
         this.addChild(this.lootSprite);
     },
-
-    //unuse: function () {
-    //    //this.setVisible(false);
-    //    this.removeChild(this.lootSprite);
-    //},
-    //
-    //reuse: function (unit, value) {
-    //    this.initData(unit, value);
-    //    //this.lootSprite.runAction(this.action);
-    //    this.addChild(this.lootSprite);
-    //    //this.setVisible(true);
-    //},
-
-    //setPosition: function (pos, y) {
-    //    cc.Node.prototype.setPosition.call(this, pos, y);
-    //    if (this.lootSprite && this.getParent()) {
-    //        //var thispos = this.getParent().getPosition();
-    //        this.lootSprite.setPosition(pos, y);
-    //    }
-    //},
 
     setOpacity: function (op) {
         if (this.lootSprite) {
@@ -68,16 +52,23 @@ var Loot = cc.Node.extend({
             var self = this;
             this.count = cc.callFunc(function () {
                 //cc.pool.putInPool(this);
-                self.removeFromParent(true);
-                if (self.bonus) {
-                    PlayerData.updateResource([PlayerData.createResourceData(self.bonus.unit, self.bonus.value)]);
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                this.removeFromParent(true);
+                if (this.bonus) {
+                    PlayerData.updateResource([PlayerData.createResourceData(this.bonus.unit, this.bonus.value)]);
+                    if (this.bonus.unit === "gold") {
+                        customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                    } else if (this.bonus.unit === "gem") {
+                        customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                    } else if (this.bonus.unit === "relic") {
+                        customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                    } else {
+                        customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
+                    }
+                    cc.log(this.bonus.unit + ":" + this.bonus.value);
                 }
-                //cc.log(player.gold);
-            }, this);
+            }.bind(this), this);
             var startPos = this.getPosition();
 
-            // todo 钥匙和宝箱的逻辑
             if (this.unit === "gold") {
                 var endPosition = this.getGoldPosition() || cc.p(320, 280);
             } else if (this.unit === "gem") {
@@ -86,6 +77,8 @@ var Loot = cc.Node.extend({
                 var endPosition = this.getRelicPosition() || cc.p(320, 280);
             } else if (this.unit === "key") {
                 var endPosition = this.getGoldPosition() || cc.p(320, 280);
+            } else {
+                var endPosition = this.getPackPosition() || cc.p(320, 280);
             }
             var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
             //var curveValue =  cc.p(320, 280);
@@ -94,7 +87,6 @@ var Loot = cc.Node.extend({
                 curveValue,
                 endPosition];
             this.move = cc.bezierTo(0.75, movePath);
-            this.lootSprite.runAction(this.action);
             this.action.play("shine", true);
             this.moveUpAndBecomeBigger = cc.spawn(cc.moveBy(0.1, 0, 16), cc.scaleBy(0.1, 1.5));
             this.runAction(cc.sequence(this.appear, this.shine, this.moveUpAndBecomeBigger, this.move, this.count));
@@ -104,8 +96,8 @@ var Loot = cc.Node.extend({
 
 Loot.generateLoots = function (bonusSrc, pos) {
     var lootSprites = [];
+    var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
     if (bonusSrc.unit === "gold") {
-        var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
         bonus.value = bonus.value * (1 + (PlayerData.globe_gold_rate + PlayerData.tmp_gold_rate ) / 100);
         if (bonus.value == 1) {
             lootSprites.push(new Loot(bonus.unit, "little"));
@@ -136,6 +128,8 @@ Loot.generateLoots = function (bonusSrc, pos) {
             lootSprites.push(new Loot(bonus.unit, "huge"));
             this.createLootSprites(lootSprites, 20, "little", bonus);
         }
+    } else {
+        this.createLootSprites(lootSprites, bonus.value, null, bonus);
     }
 
     for (var i in lootSprites) {
@@ -147,9 +141,10 @@ Loot.generateLoots = function (bonusSrc, pos) {
 };
 Loot.createLootSprites = function (lootSprites, num, size, bonus) {
     for (var i = 0; i < num; i++) {
-        lootSprites.push(new Loot(bonus.unit, size));
         if (i == num - 1) {
             lootSprites.push(new Loot(bonus.unit, size, bonus));
+        } else {
+            lootSprites.push(new Loot(bonus.unit, size));
         }
     }
 }
