@@ -49,6 +49,26 @@ var res = {
     amount_gold_json: "res/gold03.json",
     huge_gold_json: "res/gold04.json",
 
+    gem_json:"res/diamond01.json",
+    relic_json:"res/relic01.json",
+
+    wood_json:"res/wood01.json",
+    leather_json:"res/leather01.json",
+    stone_json:"res/stone01.json",
+    bronze_json:"res/bronze01.json",
+    iron_json:"res/iron01.json",
+    crystal_json:"res/crystal01.json",
+    rune_json:"res/rune01.json",
+    essence_json:"res/rune01.json",
+
+    iron_chest_json:"res/chest02.json",
+    silver_chest_json:"res/chest03.json",
+    golden_chest_json:"res/chest04.json",
+
+    iron_key_json:"res/key01.json",
+    silver_key_json:"res/key01.json",
+    golden_key_json:"res/key01.json",
+
     tap_effect_json: "res/effect5000.json",
 
     prompt1_layer_json: "res/Prompt1Layer.json",

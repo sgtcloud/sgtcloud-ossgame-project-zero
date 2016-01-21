@@ -41,14 +41,16 @@ var SkillIcon = function (battle, template, index, skillsBox) {
     //this.icon=root.getChildByName('icon');
     this.reviveText.setVisible(false);
     this.time.setVisible(false);
+    this.time.setColor(cc.color(255, 0, 0));
     this.cooldownText.setVisible(false);
     this.durationText.setVisible(false);
-    this.skill_icon.setTouchEnabled(true);
+    var isCoolDowning = false;
+    var heroDead = false;
     //this.button.addClickEventListener(function(){
     //    console.log('触发主动技能：'+skill);
     //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
     //});
-
+    this.skill_icon.setTouchEnabled(true);
     skillsBox.addChild(this.root);
     this.setVisible = function (visit) {
         root.setVisible(visit);
@@ -58,54 +60,109 @@ var SkillIcon = function (battle, template, index, skillsBox) {
         this.time.setVisible(true);
         this.cooldownText.setVisible(false);
     }
+    function doSchedule(time, target, cb) {
+        var remaining = time;
+        target.schedule(function () {
+                if (!heroDead) {
+                    this.setString(remaining + " 秒");
+                }
+                if (remaining <= 0) {
+                    if (typeof cb === "function") {
+                        cb();
+                    }
+                    this.unschedule(this.__instanceId);
+                    return;
+                }
+                remaining--;
+            }, 1, time, 0, target.__instanceId
+        );
+    }
+
+
     this.bindSkillAndClickEvent = function (skill) {
         if (skill) {
             this.skill = skill;
             var that = this;
-            console.log('bind skill:' + skill.getId())
             this.skill_icon.loadTexture("res/icon/skills/" + skill.getIcon());
+            if (this.skill.getLv() > 0) {
+                this.root.setVisible(true);
+            } else {
+                this.root.isVisible()&&this.root.setVisible(false);
+                customEventHelper.bindListener(EVENT.UNLOCK_ACTIVITY_SKILL, function (event) {
+                    var skillId = event.getUserData();
+                    if (!that.root.isVisible()&&that.skill.getId() === skillId) {
+                        that.root.setVisible(true);
+                        customEventHelper.bindListener(EVENT.CAST_BUFF, function (e) {
+                            var data = e.getUserData();
+                            if (that.skill.getId() === data.skill_id) {
+                                if (!(isCoolDowning || heroDead)) {
+                                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
             this.skill_icon.addClickEventListener(function () {
+                var levelData = that.skill.getLevelData();
+                if (levelData['duration'] > 0) {
+                }
+                if (levelData['cooldown'] > 0) {
+                    isCoolDowning = true;
+                    that.cooldownText.setVisible(true)
+                    that.time.setVisible(true)
+                    that.time.setString(levelData['cooldown'] + " 秒")
+                    that.skill_icon.setTouchEnabled(false);
+                    that.skill_icon.setColor(cc.color(90, 90, 90));
+                    doSchedule(levelData['cooldown'] - 1, that.time, function () {
+                        if (!heroDead) {
+                            !that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
+                            that.skill_icon.setColor(cc.color(255, 255, 255));
+                        }
+                        that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
+                        if (!heroDead) {
+                            that.time.isVisible() && that.time.setVisible(false)
+                        }
+                        isCoolDowning = false;
+                    });
+                }
                 console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                 customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
             });
-            var levelData=that.skill.getLevelData();
-            if(levelData['duration']>0){
-                //that.durationText.setVisible(true)
-                that.time.setString(Math.round(levelData['duration']) + " 秒")
-            }
-            if(levelData['cooldown']>0){
-                //that.cooldownText.setVisible(true)
-            }
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();
-                console.log(that.skill.getId())
                 if (dieHero.hasSkill(that.skill.getId())) {
-                    that.skill_icon.setTouchEnabled(false)
-                    that.skill_icon.setColor(cc.color(90, 90, 90))
-                    that.time.setVisible(true);
+                    heroDead = true;
+                    that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(false)
+                    !that.time.isVisible() && that.time.setVisible(true);
                     that.reviveText.setVisible(true);
+                    if (isCoolDowning) {
+                        that.cooldownText.setVisible(false);
+                    } else {
+                        that.skill_icon.setColor(cc.color(90, 90, 90));
+                    }
+                    that.time.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
                 }
             });
             customEventHelper.bindListener(EVENT.HERO_REVIVE, function (event) {
                 var reviveHero = event.getUserData();
                 if (reviveHero.hasSkill(that.skill.getId())) {
-                    that.skill_icon.setTouchEnabled(true)
-                    that.skill_icon.setColor(cc.color(255, 255, 255));
-                    that.time.setVisible(false);
+                    if (!isCoolDowning) {
+                        that.skill_icon.setColor(cc.color(255, 255, 255));
+                        !that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
+                        that.time.setVisible(false);
+                    }
                     that.reviveText.setVisible(false);
+                    isCoolDowning && that.cooldownText.setVisible(true);
+                    heroDead = false;
                 }
             });
-            customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (event) {
-                var data = event.getUserData();
-                if (that.skill.getId() === data.skill_id) {
-                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                }
-            });
+
             customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
                 var data = event.getUserData();
                 var hero = PlayerData.getHeroById(data['id']);
-                if ( hero.hasSkill(that.skill.getId())) {
+                if (hero.hasSkill(that.skill.getId())) {
                     that.time.setString(Math.round(data['recover']) + " 秒");
                 }
             });
@@ -142,12 +199,10 @@ function getHeroActivtySkillls(hero) {
     var skills = hero.getSkills();
     var result = [];
     for (var i in skills) {
-        console.log('the skill:' + skills[i].getId() + ',type is ' + skills[i].getType())
         if (skills[i].getType() === 1) {
             result.push(skills[i]);
         }
     }
-    console.log('get hero:' + hero.getId() + ' activity skills' + result)
     return result;
 }
 var SkillListMenu = BattleMenu.extend({
@@ -165,19 +220,9 @@ var SkillListMenu = BattleMenu.extend({
         var skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
         for (var i = 0; i < skills.length; i++) {
-            //var pane = this.root.getChildByName('skill' + (i + 1)).getChildByName('root');
-            //var activitySkills = getHeroActivtySkillls(heroes[i]);
             var skillBtn = new SkillIcon(battlePanel, skillIconTemplate, i, skillsBox);
-            //if (i < skills.length) {
-            skillBtn.setVisible(true);
+            //skillBtn.setVisible(true);
             skillBtn.bindSkillAndClickEvent(skills[i]);
-            //skillBtn.addClickEvent(function(event,skill){
-            //    console.log('触发主动技能：'+skill.getId());
-            //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
-            //})
-            //} else {
-            //    skillBtn.setVisible(false);
-            //}
             skillBtns.push(skillBtn);
         }
         function format(time) {
@@ -189,7 +234,6 @@ var SkillListMenu = BattleMenu.extend({
                 //skillBtns[i].setVisible(false);
             }
             battlePanel.foreachHeroSprite(function (hero, i) {
-                console.log(i)
                 var skill = skillBtns[i];
                 //skill.setVisible(true);
                 //skill.setEnabled(true);
@@ -457,6 +501,8 @@ var HeroListMenu = BattleMenu.extend({
                         var resurge = hero.getResurge();
                         var costValue = parseInt(resurge['cost']['value']);
                         elements.revive_btn.diamond_text.setString(costValue);
+                        elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
+                        // console.log('钻石不足')
                        // console.log('钻石不足')
                         if (PlayerData.getAmountByUnit("gem") < costValue) {
                             elements.revive_btn.btn.setEnabled(false);
@@ -695,7 +741,7 @@ var HeroListMenu = BattleMenu.extend({
                     lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
                     customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
                     customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
-
+                    customEventHelper.sendEvent(EVENT.UNLOCK_ACTIVITY_SKILL,skill.getId());
                     if (skill.isMaxLevel()) {
                         elements.maxLevel_btn.layer.setVisible(true);
                         elements.upgrade_btn.layer.setVisible(false);
@@ -868,21 +914,6 @@ var ShopLayerMenu = BattleMenu.extend({
         this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
         this.falg = true;
         this.showMoneyTreeView = function (name) {
-           /* var gemNum = CONSTS.money_tree_one_price;
-            var showMoneyTree = shopView.getChildByName(name);
-            var diamondText = showMoneyTree.getChildByName("diamond_text");
-            var goldText = showMoneyTree.getChildByName("gold_text");
-            diamondText.ignoreContentAdaptWithSize(true);
-            diamondText.setString(gemNum);
-            goldText.ignoreContentAdaptWithSize(true);
-            goldText.setString(gemNum * PlayerData.getStageData().getMoneyTreeRatio());
-            var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
-
-            buyBtn.addClickEventListener(function () {
-
-                self.buyGold(gemNum, (gemNum * PlayerData.getStageData().getMoneyTreeRatio()));
-            });*/
-            //var gemNum = ;
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
             var goldText = showMoneyTree.getChildByName("gold_text");
@@ -905,16 +936,13 @@ var ShopLayerMenu = BattleMenu.extend({
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
                 diffTime = currTime - self.last_update;
-            //alert(diffTime + ",222," + self.falg);
             if (diffTime > 100 && self.falg) {
-                //alert(333);
                 self.last_update = currTime;
                 self.first_x = acceleration.x;
                 self.first_y = acceleration.y;
                 self.first_z = acceleration.z;
                 var speed = Math.abs(self.first_x + self.first_y + self.first_z - self.last_x - self.last_y - self.last_z) / diffTime * 10000
                 if (speed > self.shake) {
-                    //alert(444);
                     self.falg = false;
                     self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
                 }
@@ -924,7 +952,6 @@ var ShopLayerMenu = BattleMenu.extend({
             }
         }
         this.buyGold = function (gem, gold) {
-            //alert(555);
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
