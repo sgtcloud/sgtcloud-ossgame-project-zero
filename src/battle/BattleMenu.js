@@ -905,16 +905,16 @@ var ShopLayerMenu = BattleMenu.extend({
             var acceleration = eventData.accelerationIncludingGravity,
                 currTime = new Date().valueOf(),
                 diffTime = currTime - self.last_update;
-            alert(diffTime + ",222," + self.falg);
+            //alert(diffTime + ",222," + self.falg);
             if (diffTime > 100 && self.falg) {
-                alert(333);
+                //alert(333);
                 self.last_update = currTime;
                 self.first_x = acceleration.x;
                 self.first_y = acceleration.y;
                 self.first_z = acceleration.z;
                 var speed = Math.abs(self.first_x + self.first_y + self.first_z - self.last_x - self.last_y - self.last_z) / diffTime * 10000
                 if (speed > self.shake) {
-                    alert(444);
+                    //alert(444);
                     self.falg = false;
                     self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
                 }
@@ -924,7 +924,7 @@ var ShopLayerMenu = BattleMenu.extend({
             }
         }
         this.buyGold = function (gem, gold) {
-            alert(555);
+            //alert(555);
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
