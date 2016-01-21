@@ -221,6 +221,13 @@ var BattlePanel = cc.Node.extend({
             var scale2Back = cc.scaleTo(0.075, 1.0);
             self.runAction(cc.sequence(scale1, scale1Back, scale2, scale2Back));
         });
+        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+            var heroId = event.getUserData().heroId;
+            var hero = PlayerData.getHeroById(heroId);
+            if (hero.getLv() == 1) {
+                this.addHeroIntoBattle(heroId);
+            }
+        }.bind(this));
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
             activeSkill.cast(this);
@@ -276,7 +283,7 @@ var BattlePanel = cc.Node.extend({
 
     initBattleHeroes: function () {
         for (var i in PlayerData.getHeroes()) {
-            if (!PlayerData.getHeroes()[i].isLocked()) {
+            if (PlayerData.getHeroes()[i].getLv() > 0) {
                 this.addHeroIntoBattle(PlayerData.getHeroes()[i].getId());
             }
         }
@@ -417,7 +424,8 @@ var BattlePanel = cc.Node.extend({
         //}, 1.0);
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
-        }, 1);
+            unschedule(this);
+        }.bind(this), 1);
         PlayerData.updatePlayer();
     },
 
@@ -467,13 +475,14 @@ var BattlePanel = cc.Node.extend({
         } else {
             player.statistics.total_enemy_kill++;
         }
-    },
-
-    onEnemyVanish: function (enemy) {
         var win = this.checkBattleWin();
         if (win) {
             this.onBattleWin();
         }
+    },
+
+    onEnemyVanish: function (enemy) {
+
     },
 
 });

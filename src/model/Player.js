@@ -42,7 +42,7 @@ var player = {
     "heroes": [
         {
             "id": "h101",
-            "lv": 0,
+            "lv": 1,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -348,3 +348,4 @@ var PlayerData = {
 
 };
 
+var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];

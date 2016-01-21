@@ -1,7 +1,6 @@
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
-    var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];
     var star = heroData.star;
     var data = dataSource.heros[id];
     var equips = [];
