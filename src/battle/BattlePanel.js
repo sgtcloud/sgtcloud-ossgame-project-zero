@@ -275,13 +275,25 @@ var BattlePanel = cc.Node.extend({
     },
 
     initBattleHeroes: function () {
-        for (var i = 0; i < player.heroes.length; i++) {
-            var data = PlayerData.getHeroesData(i);
-            var hero = new HeroUnit(this, data, player.heroes[i]);
-            this.heroSprites.push(hero);
-            hero.setPosition(this.heroPos[i].getPosition());
-            this.addChild(hero, player.heroes.length - i);
+        for (var i in PlayerData.getHeroes()) {
+            if (!PlayerData.getHeroes()[i].isLocked()) {
+                this.addHeroIntoBattle(PlayerData.getHeroes()[i].getId());
+            }
         }
+    },
+
+    /**
+     * 已经占据了位置的英雄数量
+     */
+    standHeroPosNum: 0,
+
+    addHeroIntoBattle: function (id) {
+        var data = PlayerData.getHeroById(id);
+        var hero = new HeroUnit(this, data);
+        this.heroSprites.push(hero);
+        hero.setPosition(this.heroPos[this.standHeroPosNum].getPosition());
+        this.addChild(hero);
+        this.standHeroPosNum++;
     },
     disableBossBattleTimeCounter: function () {
         this.timeText.visible = false;
@@ -434,18 +446,21 @@ var BattlePanel = cc.Node.extend({
         this.ChestUnit.setPosition(position);
         this.addChild(this.ChestUnit, 2011);
     },
+    //todo refactor to event
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
         //cc.log("dead:" + hero);
     },
+    //todo refactor to event
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
         //cc.log("recover:" + hero);
     },
+    //todo refactor to event
     onUseSkill: function (i) {
 
     },
-
+    //todo refactor to event
     onEnemyDead: function (enemy) {
         if (PlayerData.getStageData().isBossBattle()) {
             player.statistics.total_boss_kill++;

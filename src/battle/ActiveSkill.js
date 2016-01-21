@@ -19,32 +19,28 @@ var ActiveSkill = cc.Class.extend({
             var effects = skill.traverseSkillEffects();
             for (var j in effects) {
                 this.effect = effects[j].type;
+                this.updateTargets();
                 // this is an once damage skill effect
                 if (effects[j].type === "single_damage_once") {
                     this.type = this.TYPE_ONCE;
-                    this.targets = [battle.findNextEnemy()];
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_magma_blaster, this.targets.length);
                     this.shock = 2;
                 } else if (effects[j].type === "multi_damage_once") {
                     this.type = this.TYPE_ONCE;
-                    this.targets = battle.getAllEnemies().getAllLived();
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_tornado_shock, this.targets.length);
                     this.shock = 2;
                 } else if (effects[j].type === "multi_recover_once") {
                     this.type = this.TYPE_ONCE;
-                    this.targets = battle.getAllHeroes().getAllLived();
                     this.effectValue = effects[j].value * -1;
                     this.loadSkillEffectRes(res.skill_cure_totem, this.targets.length);
                 } else if (effects[j].type.indexOf("buff") === 0) {
                     this.type = this.TYPE_BUFF;
-                    this.targets = battle.getAllHeroes().getAllLived();
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes("res/icon/skills/" + skill.getIcon(), this.targets.length);
                 } else if (effects[j].type === "multi_damage_continuous") {
                     this.type = this.TYPE_CONTINUOUS;
-                    this.targets = battle.getAllEnemies().getAllLived();
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length);
                 } else {
@@ -88,7 +84,18 @@ var ActiveSkill = cc.Class.extend({
         node.addChild(this.hitEffects[index], 2000 + i);
     },
 
+    updateTargets : function () {
+        if (this.effect === "single_damage_once") {
+            this.targets = [this.battle.findNextEnemy()];
+        } else if (this.effect.indexOf("buff") === 0) {
+            this.targets = this.battle.getAllHeroes().getAllLived();
+        } else {
+            this.targets = this.battle.getAllEnemies().getAllLived();
+        }
+    },
+
     cast: function (node) {
+        this.updateTargets();
         if (this.targets) {
             this.effectAnimFinishCount = 0;
             this.skillStartTime = new Date().getTime();
@@ -134,7 +141,6 @@ var ActiveSkill = cc.Class.extend({
                     var consumeTime = (skillEndTime - this.skillStartTime ) / 1000;
                     this.duration -= consumeTime;
                     if (this.duration > 0) {
-                        this.targets = this.battle.getAllEnemies().getAllLived();
                         this.cast();
                     }else{
                         this.onCastFinish();

@@ -129,7 +129,7 @@ var PlayerData = {
     },
     initPlayerData: function (save) {
         for (var i in player.heroes) {
-            this.heroes[i] = new Hero(player.heroes[i]);
+            this.heroes.push(new Hero(player.heroes[i]));
             if (!save) {
                 player.heroes[i].life = this.heroes[i].getLife();
             }
@@ -172,9 +172,9 @@ var PlayerData = {
     sumHeroesProp: function (prop, dead) {
         var val = 0;
         for (var i in this.heroes) {
-            if (!dead && this.heroes[i].isDead()) {
-                continue;
-            }
+            //if (!dead && this.heroes[i].isDead()) {
+            //    continue;
+            //}
             var hero = this.heroes[i];
             val += hero[prop]();
         }
@@ -256,7 +256,6 @@ var PlayerData = {
             if (datas[i].value) {
                 rewards[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
             }
-            自己实现
         }
     }
     ,
@@ -275,7 +274,7 @@ var PlayerData = {
     getAmountByUnit: function (unit) {
         return player.resource[unit];
     },
-    heroesData: [],
+    heroes: [],
     stageData: {},
     globe_life_value: 0,
     globe_life_rate: 0,
