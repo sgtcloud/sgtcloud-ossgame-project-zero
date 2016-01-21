@@ -74,9 +74,9 @@ var EVENT = {
      */
     HERO_BUY_REVIVE: "HERO_BUY_REVIVE",
     /**
-     * 释放buff
+     * 准备释放技能
      */
-    CAST_BUFF: "CAST_BUFF",
+    CAST_SKILL_READY: "CAST_SKILL_READY",
     /**
      * 解锁主动技能
      */
