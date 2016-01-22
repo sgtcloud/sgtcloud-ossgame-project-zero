@@ -91,7 +91,8 @@ var res = {
     skill_cure_totem: "res/effect5004.json",
     skill_tornado_shock: "res/effect5005.json",
     hero_desc_json: "res/HeroDescLayer.json",
-    skill_desc_json: "res/SkillDescView.json"
+    skill_desc_json: "res/SkillDescView.json",
+    pack_layer_json: "res/PackLayer.json"
 };
 
 

@@ -152,12 +152,25 @@ var BattlePanel = cc.Node.extend({
         }.bind(this);
 
         var battle_bg = root.getChildByName('battle_bg');
+        var pack_btn = battle_bg.getChildByName('pack_btn');
+        pack_btn.setLocalZOrder(1);
+        bindTouchEventListener(function () {
+            var packUnit = new PackUnit();
+            var gamePopup = new GamePopup(packUnit,cc.p(320,580),false);
+            popup(gamePopup,3000);
+        }.bind(this), pack_btn);
+
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
             cc.textureCache.addImageAsync("res/stages/" + bg_image_url, function (textureBg) {
                 if (textureBg) {
-                    battle_bg.removeAllChildren();
                     var bg = new cc.Sprite(textureBg);
+
+                    battle_bg.children.forEach(function(i){
+                        if(i != pack_btn){
+                            i.removeFromParent();
+                        }
+                    });
                     bg.attr({
                             x: battle_bg.width / 2,
                             y: battle_bg.height / 2
