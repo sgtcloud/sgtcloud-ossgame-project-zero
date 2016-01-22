@@ -1,0 +1,1776 @@
+{
+  "ID": "3b1ae967-acda-4733-bf2b-f73a3c303123",
+  "Version": "2.3.3.0",
+  "Name": "PackLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 45,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 1.7448,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0027,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 1.7448,
+            "RightMargin": -1.7448,
+            "BottomMargin": 0.0,
+            "Tag": 124,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_01.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 25,
+                "Scale9OriginY": 25,
+                "Scale9Width": 28,
+                "Scale9Height": 28,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 126,
+                "ActionTag": 2047028236,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 740.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 17.1343,
+                  "Y": 662.4153
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0268,
+                  "Y": 0.8952
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.0811
+                },
+                "LeftMargin": 17.1343,
+                "RightMargin": 12.8657,
+                "TopMargin": 17.5847,
+                "BottomMargin": 662.4153,
+                "CallBackType": "Touch",
+                "Tag": 381,
+                "ActionTag": 1192828670,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 60.0
+                },
+                "Name": "title_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "packUI/title.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 129,
+                "Scale9Height": 58,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 322.1343,
+                  "Y": 692.4153
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5033,
+                  "Y": 0.9357
+                },
+                "PreSize": {
+                  "X": 0.2016,
+                  "Y": 0.0784
+                },
+                "LeftMargin": 257.6343,
+                "RightMargin": 253.3657,
+                "TopMargin": 18.5847,
+                "BottomMargin": 663.4153,
+                "Tag": 541,
+                "ActionTag": 2068607568,
+                "Size": {
+                  "X": 129.0,
+                  "Y": 58.0
+                },
+                "Name": "title_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 220.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.2973
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.5878
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 85.0,
+                "BottomMargin": 220.0,
+                "Tag": 542,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_05.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 6,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 543,
+                    "ActionTag": 220585410,
+                    "Size": {
+                      "X": 610.0,
+                      "Y": 435.0
+                    },
+                    "Name": "pack_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/wood.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 387.4031
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.8906
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 27.5969,
+                    "BottomMargin": 367.4031,
+                    "Tag": 544,
+                    "ActionTag": -1026000937,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "wood_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/leather.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2337,
+                      "Y": 390.1931
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.897
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2337,
+                    "RightMargin": 213.7663,
+                    "TopMargin": 24.8069,
+                    "BottomMargin": 370.1931,
+                    "Tag": 545,
+                    "ActionTag": 1141031262,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "leather_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/stone.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 323.6595
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.744
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 91.3405,
+                    "BottomMargin": 303.6595,
+                    "Tag": 546,
+                    "ActionTag": 1325302991,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "stone_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/bronze.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2338,
+                      "Y": 324.3857
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.7457
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2338,
+                    "RightMargin": 213.7662,
+                    "TopMargin": 90.6143,
+                    "BottomMargin": 304.3857,
+                    "Tag": 547,
+                    "ActionTag": -426089835,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "bronze_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/iron.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 259.9158
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.5975
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 155.0842,
+                    "BottomMargin": 239.9158,
+                    "Tag": 548,
+                    "ActionTag": -1603224587,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "iron_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/crystal.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 375.5457,
+                      "Y": 258.578
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6156,
+                      "Y": 0.5944
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 355.5457,
+                    "RightMargin": 214.4543,
+                    "TopMargin": 156.422,
+                    "BottomMargin": 238.578,
+                    "Tag": 549,
+                    "ActionTag": -600212037,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "crystal_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/rune.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 196.1722
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.451
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 218.8278,
+                    "BottomMargin": 176.1722,
+                    "Tag": 550,
+                    "ActionTag": -575278022,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "rune_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/essence.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2337,
+                      "Y": 192.7706
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.4432
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2337,
+                    "RightMargin": 213.7663,
+                    "TopMargin": 222.2294,
+                    "BottomMargin": 172.7706,
+                    "Tag": 551,
+                    "ActionTag": 1684738592,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "essence_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 184.7292,
+                      "Y": 387.4031
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3028,
+                      "Y": 0.8906
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 133.7292,
+                    "RightMargin": 374.2708,
+                    "TopMargin": 39.0969,
+                    "BottomMargin": 378.9031,
+                    "Tag": 552,
+                    "ActionTag": 1375195102,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "wood_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 466.8032,
+                      "Y": 390.1931
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7653,
+                      "Y": 0.897
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 415.8032,
+                    "RightMargin": 92.1968,
+                    "TopMargin": 36.3069,
+                    "BottomMargin": 381.6931,
+                    "Tag": 553,
+                    "ActionTag": 960789442,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "leather_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 184.7292,
+                      "Y": 323.6595
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3028,
+                      "Y": 0.744
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 133.7292,
+                    "RightMargin": 374.2708,
+                    "TopMargin": 102.8405,
+                    "BottomMargin": 315.1595,
+                    "Tag": 554,
+                    "ActionTag": -1591423659,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "stone_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 466.8032,
+                      "Y": 324.3857
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7653,
+                      "Y": 0.7457
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 415.8032,
+                    "RightMargin": 92.1968,
+                    "TopMargin": 102.1143,
+                    "BottomMargin": 315.8857,
+                    "Tag": 555,
+                    "ActionTag": -1224162463,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "bronze_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 184.7292,
+                      "Y": 259.9158
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3028,
+                      "Y": 0.5975
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 133.7292,
+                    "RightMargin": 374.2708,
+                    "TopMargin": 166.5842,
+                    "BottomMargin": 251.4158,
+                    "Tag": 556,
+                    "ActionTag": 1549170386,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "iron_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 466.8032,
+                      "Y": 258.578
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7653,
+                      "Y": 0.5944
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 415.8032,
+                    "RightMargin": 92.1968,
+                    "TopMargin": 167.922,
+                    "BottomMargin": 250.078,
+                    "Tag": 557,
+                    "ActionTag": 428844076,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "crystal_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 184.7292,
+                      "Y": 196.1722
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3028,
+                      "Y": 0.451
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 133.7292,
+                    "RightMargin": 374.2708,
+                    "TopMargin": 230.3278,
+                    "BottomMargin": 187.6722,
+                    "Tag": 558,
+                    "ActionTag": -1239008973,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "rune_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "999999",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 466.8032,
+                      "Y": 192.7706
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7653,
+                      "Y": 0.4432
+                    },
+                    "PreSize": {
+                      "X": 0.1672,
+                      "Y": 0.0391
+                    },
+                    "LeftMargin": 415.8032,
+                    "RightMargin": 92.1968,
+                    "TopMargin": 233.7294,
+                    "BottomMargin": 184.2706,
+                    "Tag": 559,
+                    "ActionTag": 1775731984,
+                    "Size": {
+                      "X": 102.0,
+                      "Y": 17.0
+                    },
+                    "Name": "essence_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  }
+                ],
+                "ActionTag": 1044177206,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 435.0
+                },
+                "Name": "pack",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.0203
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.2703
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 525.0,
+                "BottomMargin": 15.0,
+                "Tag": 529,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_04.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 6,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 528,
+                    "ActionTag": -197868592,
+                    "Size": {
+                      "X": 610.0,
+                      "Y": 200.0
+                    },
+                    "Name": "chest_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/golden_chest_1.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/golden_chest_2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/golden_chest_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5526,
+                      "ScaleY": 0.5465
+                    },
+                    "Position": {
+                      "X": 124.0679,
+                      "Y": 113.6189
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2034,
+                      "Y": 0.5681
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 85.3825,
+                    "RightMargin": 454.6175,
+                    "TopMargin": 54.6391,
+                    "BottomMargin": 75.3609,
+                    "Tag": 530,
+                    "ActionTag": 404816974,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "golden_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/silver_chest_1.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/silver_chest_2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/silver_chest_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 301.3458,
+                      "Y": 108.7319
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.494,
+                      "Y": 0.5437
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 266.3458,
+                    "RightMargin": 273.6542,
+                    "TopMargin": 56.2681,
+                    "BottomMargin": 73.7319,
+                    "Tag": 531,
+                    "ActionTag": -1638292713,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "silver_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/iron_chest_1.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/iron_chest_2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/iron_chest_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 484.1522,
+                      "Y": 108.7319
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7937,
+                      "Y": 0.5437
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 449.1522,
+                    "RightMargin": 90.8478,
+                    "TopMargin": 56.2681,
+                    "BottomMargin": 73.7319,
+                    "Tag": 532,
+                    "ActionTag": 1100654773,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "iron_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/golden_key.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 95.8198,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1571,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 75.8198,
+                    "RightMargin": 494.1802,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 533,
+                    "ActionTag": -487854351,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "golden_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/iron_key.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 281.6671,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4617,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 261.6671,
+                    "RightMargin": 308.3329,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 534,
+                    "ActionTag": 70902381,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "silver_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "materialUI/silver_key.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 468.2184,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7676,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 448.2184,
+                    "RightMargin": 121.7816,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 535,
+                    "ActionTag": 1113330948,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "iron_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "99",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 139.0273,
+                      "Y": 27.6369
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2279,
+                      "Y": 0.1382
+                    },
+                    "PreSize": {
+                      "X": 0.0557,
+                      "Y": 0.085
+                    },
+                    "LeftMargin": 122.0273,
+                    "RightMargin": 453.9727,
+                    "TopMargin": 163.8631,
+                    "BottomMargin": 19.1369,
+                    "Tag": 537,
+                    "ActionTag": 318642997,
+                    "Size": {
+                      "X": 34.0,
+                      "Y": 17.0
+                    },
+                    "Name": "golden_key_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "99",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 325.3794,
+                      "Y": 27.6369
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5334,
+                      "Y": 0.1382
+                    },
+                    "PreSize": {
+                      "X": 0.0557,
+                      "Y": 0.085
+                    },
+                    "LeftMargin": 308.3794,
+                    "RightMargin": 267.6206,
+                    "TopMargin": 163.8631,
+                    "BottomMargin": 19.1369,
+                    "Tag": 538,
+                    "ActionTag": 427004499,
+                    "Size": {
+                      "X": 34.0,
+                      "Y": 17.0
+                    },
+                    "Name": "silver_key_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 17,
+                    "CharHeight": 17,
+                    "LabelText": "99",
+                    "StartChar": ".",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "mainUI/font22_yellow_b.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 510.8758,
+                      "Y": 27.6369
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8375,
+                      "Y": 0.1382
+                    },
+                    "PreSize": {
+                      "X": 0.0557,
+                      "Y": 0.085
+                    },
+                    "LeftMargin": 493.8758,
+                    "RightMargin": 82.1242,
+                    "TopMargin": 163.8631,
+                    "BottomMargin": 19.1369,
+                    "Tag": 539,
+                    "ActionTag": 337814491,
+                    "Size": {
+                      "X": 34.0,
+                      "Y": 17.0
+                    },
+                    "Name": "iron_key_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "packUI/chest.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 165,
+                    "Scale9Height": 35,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 305.0,
+                      "Y": 175.7101
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.8786
+                    },
+                    "PreSize": {
+                      "X": 0.2705,
+                      "Y": 0.175
+                    },
+                    "LeftMargin": 222.5,
+                    "RightMargin": 222.5,
+                    "TopMargin": 6.7899,
+                    "BottomMargin": 158.2101,
+                    "Tag": 540,
+                    "ActionTag": 972162908,
+                    "Size": {
+                      "X": 165.0,
+                      "Y": 35.0
+                    },
+                    "Name": "open_text",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "99",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_green_a.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 162.779,
+                      "Y": 71.8067
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2669,
+                      "Y": 0.359
+                    },
+                    "PreSize": {
+                      "X": 0.0393,
+                      "Y": 0.055
+                    },
+                    "LeftMargin": 150.779,
+                    "RightMargin": 435.221,
+                    "TopMargin": 122.6933,
+                    "BottomMargin": 66.3067,
+                    "Tag": 561,
+                    "ActionTag": -273312400,
+                    "Size": {
+                      "X": 24.0,
+                      "Y": 11.0
+                    },
+                    "Name": "golden_chest_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "99",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_green_a.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 347.1071,
+                      "Y": 71.9679
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.569,
+                      "Y": 0.3598
+                    },
+                    "PreSize": {
+                      "X": 0.0393,
+                      "Y": 0.055
+                    },
+                    "LeftMargin": 335.1071,
+                    "RightMargin": 250.8929,
+                    "TopMargin": 122.5321,
+                    "BottomMargin": 66.4679,
+                    "Tag": 562,
+                    "ActionTag": -1775637269,
+                    "Size": {
+                      "X": 24.0,
+                      "Y": 11.0
+                    },
+                    "Name": "silver_chest_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  },
+                  {
+                    "CharWidth": 12,
+                    "CharHeight": 11,
+                    "LabelText": "99",
+                    "StartChar": "0",
+                    "LabelAtlasFileImage_CNB": {
+                      "Type": "Normal",
+                      "Path": "buttonUI/font16_green_a.png",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 529.1332,
+                      "Y": 71.2677
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8674,
+                      "Y": 0.3563
+                    },
+                    "PreSize": {
+                      "X": 0.0393,
+                      "Y": 0.055
+                    },
+                    "LeftMargin": 517.1332,
+                    "RightMargin": 68.8668,
+                    "TopMargin": 123.2323,
+                    "BottomMargin": 65.7677,
+                    "Tag": 563,
+                    "ActionTag": -157658810,
+                    "Size": {
+                      "X": 24.0,
+                      "Y": 11.0
+                    },
+                    "Name": "iron_chest_num_text",
+                    "ctype": "TextAtlasObjectData"
+                  }
+                ],
+                "ActionTag": 1143761586,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 200.0
+                },
+                "Name": "chest",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 2016724076,
+            "Size": {
+              "X": 640.0,
+              "Y": 740.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 740.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "buttonUI/font16_green_a.png",
+        "mainUI/bg_01.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
+        "mainUI/font22_yellow_b.png",
+        "materialUI/bronze.png",
+        "materialUI/crystal.png",
+        "materialUI/essence.png",
+        "materialUI/golden_chest_1.png",
+        "materialUI/golden_chest_2.png",
+        "materialUI/golden_key.png",
+        "materialUI/iron.png",
+        "materialUI/iron_chest_1.png",
+        "materialUI/iron_chest_2.png",
+        "materialUI/iron_key.png",
+        "materialUI/leather.png",
+        "materialUI/rune.png",
+        "materialUI/silver_chest_1.png",
+        "materialUI/silver_chest_2.png",
+        "materialUI/silver_key.png",
+        "materialUI/stone.png",
+        "materialUI/wood.png",
+        "packUI/chest.png",
+        "packUI/title.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
