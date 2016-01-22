@@ -28,8 +28,8 @@ var Popup1 = cc.Node.extend({
         this.openPopup();
     },
     openPopup: function(){
-        popup(this.gamePopup, 1000);
-        this.gamePopup.popup();
+        popup(this.gamePopup, 4000);
+        //this.gamePopup.popup();
     },
     hiddenPopup: function(){
         this.prompt1Layer.removeFromParent();

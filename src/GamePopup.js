@@ -51,6 +51,7 @@ var GamePopup = cc.Layer.extend({
     popup: function()
     {
         this.setVisible(true);
+        this._listener.setSwallowTouches(this.isSwallow);
         //this._listener.setSwallowTouches(true);
 
         /*var bg = this.getChildByTag(101);

@@ -6,9 +6,9 @@ var PackUnit = cc.Node.extend({
         this._super();
         this.packLayer = ccs.csLoader.createNode(res.pack_layer_json);
         this.root = this.packLayer.getChildByName('root');
-        var pack = this.root.getChildByName('pack');
-        var chest = this.root.getChildByName('chest');
-
+        this.pack = this.root.getChildByName('pack');
+        this.chest = this.root.getChildByName('chest');
+        var self = this;
         var packs = ["wood",
             "leather",
             "stone",
@@ -23,15 +23,17 @@ var PackUnit = cc.Node.extend({
             "silver_key",
             "golden_chest",
             "golden_key"];
-        for(var i in packs){
-            var element = this.pack.getChildByName(packs[i]+"_num_text");
+
+        this.setElement = function(unit,value,parent){
+            var element = parent.getChildByName(unit+"_num_text");
             element.ignoreContentAdaptWithSize(true);
-            element.setString(player.resource[packs[i]]);
+            element.setString(value);
+        };
+        for(var i in packs){
+            this.setElement(packs[i],player.resource[packs[i]],this.pack);
         }
         for(var i in chestsAndKeys){
-            var element = this.chest.getChildByName(packs[i]+"_num_text");
-            element.ignoreContentAdaptWithSize(true);
-            element.setString(player.resource[packs[i]]);
+            this.setElement(chestsAndKeys[i],player.resource[chestsAndKeys[i]],this.chest);
         }
         var golden_chest_btn = this.chest.getChildByName('golden_chest_btn');
         var silver_chest_btn = this.chest.getChildByName('silver_chest_btn');
@@ -44,29 +46,40 @@ var PackUnit = cc.Node.extend({
             }else{
                 var errorContent = '';
                 if(key <= 0){
-                    errorContent += "钥匙不足";
+                    errorContent += "钥匙不足,";
                 }
                 if(chest <= 0){
-                    errorContent += "箱子不足";
+                    errorContent += "箱子不足,";
                 }
-                new Popup1("友情提示",errorContent,function(popup){
-                    popup.hidden();
+                new Popup1("友情提示",errorContent+"前往商城购买",function(popup){
+                    popup.hiddenPopup();
+                    self.removeFromParent();
+                    game.tabContainer.showMenuLayer('shop');
                 });
             }
         };
-        this.openChest = function(key,chest){
-            if(this.checkKeyAndChest(key,chest)){
-                //
+        this.openChest = function(key_unit,chest_unit,bonus_num){
+            if(this.checkKeyAndChest(player.resource[key_unit],player.resource[chest_unit])){
+                var chance = new Chance(dataSource.bonus[bonus_num].bonus);
+                var res = chance.next();
+                player.resource[res.unit] += res.value;
+                player.resource[key_unit] -= 1;
+                player.resource[chest_unit] -= 1;
+                this.setElement(res.unit,player.resource[res.unit],this.pack);
+                this.setElement(key_unit,player.resource[key_unit],this.chest);
+                this.setElement(chest_unit,player.resource[chest_unit],this.chest);
+                PlayerData.updatePlayer();
+                return true;
             }
         };
         golden_chest_btn.addClickEventListener(function(){
-            this.openChest();
+            self.openChest("golden_key","golden_chest","c1003")
         });
         silver_chest_btn.addClickEventListener(function(){
-            this.openChest();
+            self.openChest("silver_key","silver_chest","c1002")
         });
         iron_chest_btn.addClickEventListener(function(){
-            this.openChest();
+            self.openChest("iron_key","iron_chest","c1001")
         });
         this.addChild(this.packLayer);
     }
