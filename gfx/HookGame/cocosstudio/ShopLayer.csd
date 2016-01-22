@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="ShopLayer" Type="Layer" ID="71aeeeef-fd81-4255-912f-1b45ff1ae609" Version="2.3.3.0" />
+  <PropertyGroup Name="ShopLayer" Type="Layer" ID="71aeeeef-fd81-4255-912f-1b45ff1ae609" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="17" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1567330822" Tag="590" IconVisible="False" TopMargin="-120.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1567330822" Tag="590" IconVisible="False" TopMargin="-120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="860.0000" />
             <Children>
               <AbstractNodeData Name="bg1" ActionTag="-348836933" Tag="45" IconVisible="False" TopMargin="119.9979" BottomMargin="0.0021" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -15,7 +15,7 @@
                 <Position Y="0.0021" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0000" />
+                <PrePosition />
                 <PreSize X="1.0000" Y="0.8605" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
@@ -59,7 +59,7 @@
                 <PreSize X="0.9531" Y="0.6977" />
                 <FileData Type="Normal" Path="ShopView.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_tab" ActionTag="-1889564795" Tag="782" IconVisible="False" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">

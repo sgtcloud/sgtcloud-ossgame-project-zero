@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="SkillView" Type="Layer" ID="9053fd25-36c4-47db-a2f5-865d598d8b07" Version="2.3.3.0" />
+  <PropertyGroup Name="SkillView" Type="Layer" ID="9053fd25-36c4-47db-a2f5-865d598d8b07" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="303" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="846016647" Tag="524" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="846016647" Tag="524" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="skillView_bg" ActionTag="1321404762" Tag="304" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">

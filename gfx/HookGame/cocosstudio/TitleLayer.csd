@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="TitleLayer" Type="Layer" ID="6b818d14-1b46-40b2-a10e-878a08729a4d" Version="2.3.3.0" />
+  <PropertyGroup Name="TitleLayer" Type="Layer" ID="6b818d14-1b46-40b2-a10e-878a08729a4d" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="101" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="120.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2091443489" Tag="551" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2091443489" Tag="551" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="120.0000" />
             <Children>
               <AbstractNodeData Name="title_bg" ActionTag="587429213" Tag="103" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -19,7 +19,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="25.0001" BottomMargin="34.9999" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="25.0001" BottomMargin="34.9999" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="135.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="diamond_text_bg" ActionTag="169438672" Tag="107" IconVisible="False" LeftMargin="-3.1974" RightMargin="-21.8026" TopMargin="-14.7318" BottomMargin="44.7318" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="Blood" Type="Layer" ID="b254df5f-5e99-412a-bddf-e3f91484e956" Version="2.3.3.0" />
+  <PropertyGroup Name="Blood" Type="Layer" ID="b254df5f-5e99-412a-bddf-e3f91484e956" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="blood" Tag="8" ctype="GameLayerObjectData">
         <Size X="100.0000" Y="2.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1138515971" Tag="265" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1138515971" Tag="265" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="100.0000" Y="2.0000" />
             <Children>
               <AbstractNodeData Name="blood_bg" ActionTag="655272865" Tag="9" IconVisible="False" Scale9Enable="True" LeftEage="19" RightEage="19" Scale9OriginX="19" Scale9Width="22" Scale9Height="2" ctype="ImageViewObjectData">

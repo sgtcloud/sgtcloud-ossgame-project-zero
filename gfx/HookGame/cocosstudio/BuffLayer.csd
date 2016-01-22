@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="BuffLayer" Type="Layer" ID="d9a58304-d2e1-43eb-beca-974a31338936" Version="2.3.3.0" />
+  <PropertyGroup Name="BuffLayer" Type="Layer" ID="d9a58304-d2e1-43eb-beca-974a31338936" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="192" ctype="GameLayerObjectData">
         <Size X="260.0000" Y="30.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2127845320" Tag="197" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2127845320" Tag="197" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="260.0000" Y="30.0000" />
             <Children>
               <AbstractNodeData Name="icon" ActionTag="204578689" Tag="198" IconVisible="False" RightMargin="230.0000" Scale9Width="1" Scale9Height="1" ctype="ImageViewObjectData">

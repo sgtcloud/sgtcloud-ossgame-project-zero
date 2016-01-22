@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="EquipDesc" Type="Layer" ID="d1b8e1b2-7fad-4295-8a91-f67a173dd6d9" Version="2.3.3.0" />
+  <PropertyGroup Name="EquipDesc" Type="Layer" ID="d1b8e1b2-7fad-4295-8a91-f67a173dd6d9" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="9" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" RightMargin="180.0000" TopMargin="380.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" RightMargin="180.0000" TopMargin="380.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="460.0000" Y="580.0000" />
             <Children>
               <AbstractNodeData Name="title_bg" ActionTag="-912217069" Tag="10" IconVisible="False" LeftMargin="9.4180" RightMargin="-189.4180" TopMargin="32.9158" BottomMargin="397.0842" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">

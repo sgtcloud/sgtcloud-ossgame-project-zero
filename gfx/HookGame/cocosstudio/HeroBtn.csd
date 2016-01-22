@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="HeroBtn" Type="Layer" ID="6fa71e5b-4460-4578-8b01-a9a0b3ddc79c" Version="2.3.3.0" />
+  <PropertyGroup Name="HeroBtn" Type="Layer" ID="6fa71e5b-4460-4578-8b01-a9a0b3ddc79c" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="278" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-390795579" Tag="447" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-390795579" Tag="447" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="-777523865" Tag="279" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">

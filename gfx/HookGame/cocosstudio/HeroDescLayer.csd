@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="HeroDescLayer" Type="Layer" ID="db6faa47-da7a-452d-93e5-171597beda12" Version="2.3.3.0" />
+  <PropertyGroup Name="HeroDescLayer" Type="Layer" ID="db6faa47-da7a-452d-93e5-171597beda12" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="90" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-2125069117" Tag="54" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-2125069117" Tag="54" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-1447083420" Tag="134" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -19,7 +19,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero" ActionTag="-142533129" Tag="135" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="20.0000" BottomMargin="560.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="hero" ActionTag="-142533129" Tag="135" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="20.0000" BottomMargin="560.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="580.0000" Y="380.0000" />
                 <Children>
                   <AbstractNodeData Name="hero_bg" ActionTag="468007132" Tag="48" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -107,7 +107,7 @@
                 <PreSize X="0.8438" Y="0.1458" />
                 <FileData Type="Normal" Path="HeroDescView.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill" ActionTag="-1929897660" Tag="90" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="410.0000" BottomMargin="90.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="skill" ActionTag="-1929897660" Tag="90" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="410.0000" BottomMargin="90.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="580.0000" Y="460.0000" />
                 <Children>
                   <AbstractNodeData Name="skill_bg" ActionTag="1700365971" Tag="92" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -145,7 +145,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="-770043321" Tag="93" IconVisible="False" LeftMargin="245.0000" RightMargin="245.0000" TopMargin="880.0000" BottomMargin="20.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="-770043321" Tag="93" IconVisible="False" LeftMargin="245.0000" RightMargin="245.0000" TopMargin="880.0000" BottomMargin="20.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="back_btn" ActionTag="1916028761" Tag="96" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="15" BottomEage="15" Scale9OriginX="15" Scale9OriginY="15" Scale9Width="2" Scale9Height="17" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">

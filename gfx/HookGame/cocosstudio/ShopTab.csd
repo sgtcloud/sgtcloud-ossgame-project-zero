@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="ShopTab" Type="Layer" ID="5dff18fb-704b-45b4-8882-87d8038fc839" Version="2.3.3.0" />
+  <PropertyGroup Name="ShopTab" Type="Layer" ID="5dff18fb-704b-45b4-8882-87d8038fc839" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="42" ctype="GameLayerObjectData">
         <Size X="320.0000" Y="55.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1195583241" Tag="95" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1195583241" Tag="95" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="320.0000" Y="55.0000" />
             <Children>
               <AbstractNodeData Name="shop_tab" ActionTag="228359029" Tag="163" IconVisible="False" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">

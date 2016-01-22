@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="HeroDescView" Type="Layer" ID="894d957e-78dc-42f8-b0a5-274d10645352" Version="2.3.3.0" />
+  <PropertyGroup Name="HeroDescView" Type="Layer" ID="894d957e-78dc-42f8-b0a5-274d10645352" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="117" ctype="GameLayerObjectData">
         <Size X="540.0000" Y="140.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-101405835" Tag="118" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-101405835" Tag="118" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="540.0000" Y="140.0000" />
             <Children>
               <AbstractNodeData Name="heroProperty_bg" ActionTag="-861761138" Tag="137" IconVisible="False" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
