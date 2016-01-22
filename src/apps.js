@@ -16,87 +16,87 @@ var CONSTS = {
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
-    "click_chest_random_events": [ {
-        "skill_id" : "s10107",
-        "level" : 2,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+    "click_chest_random_events": [{
+        "skill_id": "s10107",
+        "level": 2,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10107",
-        "level" : 3,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10107",
+        "level": 3,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10107",
-        "level" : 4,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10107",
+        "level": 4,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10103",
-        "level" : 2,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10103",
+        "level": 2,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10103",
-        "level" : 3,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10103",
+        "level": 3,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10103",
-        "level" : 4,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10103",
+        "level": 4,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10106",
-        "level" : 2,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10106",
+        "level": 2,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10106",
-        "level" : 3,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10106",
+        "level": 3,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10106",
-        "level" : 4,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10106",
+        "level": 4,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10105",
-        "level" : 2,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10105",
+        "level": 2,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10105",
-        "level" : 3,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10105",
+        "level": 3,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "s10105",
-        "level" : 4,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "skill_id": "s10105",
+        "level": 4,
+        "weight": 4,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "gold",
-        "level" : 3,
-        "weight" : 13,
-        "chestStyle" : "chest01.json"
+        "skill_id": "gold",
+        "level": 3,
+        "weight": 13,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "gold",
-        "level" : 5,
-        "weight" : 13,
-        "chestStyle" : "chest01.json"
+        "skill_id": "gold",
+        "level": 5,
+        "weight": 13,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "gold",
-        "level" : 7,
-        "weight" : 13,
-        "chestStyle" : "chest01.json"
+        "skill_id": "gold",
+        "level": 7,
+        "weight": 13,
+        "chestStyle": "chest01.json"
     }, {
-        "skill_id" : "gold",
-        "level" : 10,
-        "weight" : 13,
-        "chestStyle" : "chest01.json"
-    } ]
+        "skill_id": "gold",
+        "level": 10,
+        "weight": 13,
+        "chestStyle": "chest01.json"
+    }]
 }
 
 //为了显示CD和复活的时候显示的格式
@@ -206,6 +206,10 @@ function setIgnoreContentAdaptWithSize(target) {
 
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
+}
+
+function unschedule(target) {
+    cc.director.getScheduler().unschedule(target.__instanceId, target);
 }
 
 function bindTouchEventListener(listener, target) {

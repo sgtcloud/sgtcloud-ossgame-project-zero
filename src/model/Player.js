@@ -25,6 +25,20 @@ var player = {
         "golden_chest": 0,
         "golden_key": 0,
     },
+    "statistics": {
+        "total_fairy": 0,
+        "total_gem": 0,
+        "total_relic": 0,
+        "total_gold": 0,
+        "total_tap": 0,
+        "total_damage": 0,
+        "total_enemy_kill": 0,
+        "total_boss_kill": 0,
+        "total_chest_open": 0,
+        "total_max_level": 0,
+        "total_offline_time": 0,
+        "total_play_time": 0
+    },
     "heroes": [
         {
             "id": "h101",
@@ -44,7 +58,7 @@ var player = {
         },
         {
             "id": "h102",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             "skills": {}/* [
@@ -54,7 +68,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h103",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -67,7 +81,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h104",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -80,7 +94,7 @@ var player = {
             "equips": {}
         }, {
             "id": "h105",
-            "lv": 1,
+            "lv": 0,
             "life": 0,
             "star": 0,
             /*   "skills": [
@@ -95,6 +109,9 @@ var player = {
     ]
 };
 var PlayerData = {
+
+    statistics_res_values: ["gem", "relic", "gold"],
+
     init: function () {
         var save = localStorage.getItem("save");
         if (save) {
@@ -103,18 +120,18 @@ var PlayerData = {
         this.initPlayerData(save);
     },
     getHeroById: function (id) {
-        for (var i in this.heroesData) {
-            if (this.heroesData[i].getId() === id) {
-                return this.heroesData[i]
+        for (var i in this.heroes) {
+            if (this.heroes[i].getId() === id) {
+                return this.heroes[i]
             }
         }
         return null;
     },
     initPlayerData: function (save) {
         for (var i in player.heroes) {
-            this.heroesData[i] = new Hero(player.heroes[i]);
+            this.heroes.push(new Hero(player.heroes[i]));
             if (!save) {
-                player.heroes[i].life = this.heroesData[i].getLife();
+                player.heroes[i].life = this.heroes[i].getLife();
             }
         }
         this.stageData = new Stage(player.stage);
@@ -126,14 +143,14 @@ var PlayerData = {
     }
     ,
     getHeroes: function () {
-        return this.heroesData;
+        return this.heroes;
     },
     delPlayer: function () {
         localStorage.removeItem("save");
     }
     ,
     getHeroesData: function (id) {
-        return this.heroesData[id];
+        return this.heroes[id];
     }
     ,
     getStageData: function () {
@@ -145,25 +162,35 @@ var PlayerData = {
         return hero.getSkills();
     }
     ,
-    sumHeroesProp: function (prop) {
+    /**
+     * 根据条件来累计所有英雄的属性
+     *
+     * @param prop 属性（方法）名称
+     * @param dead 是否统计状态为死亡的英雄
+     * @returns {number}
+     */
+    sumHeroesProp: function (prop, dead) {
         var val = 0;
-        for (var i in this.heroesData) {
-            var hero = this.heroesData[i];
+        for (var i in this.heroes) {
+            //if (!dead && this.heroes[i].isDead()) {
+            //    continue;
+            //}
+            var hero = this.heroes[i];
             val += hero[prop]();
         }
         return val;
     }
     ,
-    getTotalAttck: function () {
-        return this.sumHeroesProp("getAttack");
+    getTotalAttack: function (dead) {
+        return this.sumHeroesProp("getAttack", dead);
     }
     ,
-    getTotalLife: function () {
-        return this.sumHeroesProp("getLife");
+    getTotalLife: function (dead) {
+        return this.sumHeroesProp("getLife", dead);
     }
     ,
-    getTotalHit: function () {
-        return this.sumHeroesProp("getHit");
+    getTotalHit: function (dead) {
+        return this.sumHeroesProp("getHit", dead);
     }
     ,
     createResourceData: function (unit, val) {
@@ -186,6 +213,13 @@ var PlayerData = {
     updateSingleResource: function (resource) {
         if (cc.isNumber(player.resource[resource.unit]) && (player.resource[resource.unit] >= 0)) {
             player.resource[resource.unit] += resource.value;
+            if (resource.value > 0) {
+                for (var i in this.statistics_res_values) {
+                    if (resource.unit === this.statistics_res_values[i]) {
+                        player.statistics["total_" + resource.unit] += resource.value;
+                    }
+                }
+            }
         } else {
             cc.log("unknown resource type:" + resource.unit);
         }
@@ -240,7 +274,7 @@ var PlayerData = {
     getAmountByUnit: function (unit) {
         return player.resource[unit];
     },
-    heroesData: [],
+    heroes: [],
     stageData: {},
     globe_life_value: 0,
     globe_life_rate: 0,
@@ -291,16 +325,16 @@ var PlayerData = {
         this.globe_ctr_chance_rate = 0;
         this.globe_ctr_modify_rate = 0;
         for (var i in this.heroes) {
-            this.globe_life_value += this.heroesData[i]["globe_life_value"];
-            this.globe_life_rate += this.heroesData[i]["globe_life_rate"];
-            this.globe_attack_value += this.heroesData[i]["globe_attack_value"];
-            this.globe_attack_rate += this.heroesData[i]["globe_attack_rate"];
-            this.globe_tap_value += this.heroesData[i]["globe_tap_value"];
-            this.globe_tap_rate += this.heroesData[i]["globe_tap_rate"];
-            this.globe_gold_rate += this.heroesData[i]["globe_gold_rate"];
-            this.globe_atk_period_rate += this.heroesData[i]["globe_atk_period_rate"];
-            this.globe_ctr_chance_rate += this.heroesData[i]["globe_ctr_chance_rate"];
-            this.globe_ctr_modify_rate += this.heroesData[i]["globe_ctr_modify_rate"];
+            this.globe_life_value += this.heroes[i]["globe_life_value"];
+            this.globe_life_rate += this.heroes[i]["globe_life_rate"];
+            this.globe_attack_value += this.heroes[i]["globe_attack_value"];
+            this.globe_attack_rate += this.heroes[i]["globe_attack_rate"];
+            this.globe_tap_value += this.heroes[i]["globe_tap_value"];
+            this.globe_tap_rate += this.heroes[i]["globe_tap_rate"];
+            this.globe_gold_rate += this.heroes[i]["globe_gold_rate"];
+            this.globe_atk_period_rate += this.heroes[i]["globe_atk_period_rate"];
+            this.globe_ctr_chance_rate += this.heroes[i]["globe_ctr_chance_rate"];
+            this.globe_ctr_modify_rate += this.heroes[i]["globe_ctr_modify_rate"];
         }
     }
     ,
@@ -314,3 +348,4 @@ var PlayerData = {
 
 };
 
+var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];

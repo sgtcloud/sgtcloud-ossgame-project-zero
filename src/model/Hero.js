@@ -1,7 +1,6 @@
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
-    var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify"];
     var star = heroData.star;
     var data = dataSource.heros[id];
     var equips = [];
@@ -58,6 +57,7 @@ var Hero = function (heroData) {
             this.calcSkillEffect(effect_props[i]);
             this.calcEquipEffect(effect_props[i]);
         }
+        //this.printHeroProps();
     };
     this.hasSkill=function(skillId){
         for(var i in skills){
@@ -67,8 +67,27 @@ var Hero = function (heroData) {
         }
         return false;
     }
+    var validateLocked=function(unlock){
+        if (unlock){
+            var unit=unlock['unit'];
+            var value=unlock['value'];
+            switch (unit){
+                case 'hero':
+                    var hero=PlayerData.getHeroById(value);
+                    return hero.getLv()<1;
+                default:
+            }
+        }
+        return false;
+    }
     this.isLocked = function () {
-        return lv <= 0;
+        var unlock=data['unlock'];
+        var locked=validateLocked(unlock);
+        /*if( lv < 1){
+            return true;
+        };*/
+        //console.log(this.getId()+" has been locked : "+locked)
+        return locked;
     };
     this.isMaxLevel = function () {
         return lv >= this.getMaxLevel();
@@ -103,7 +122,7 @@ var Hero = function (heroData) {
     this.getStar = function () {
         return star;
     };
-    this.getDesc = function(){
+    this.getDesc = function () {
         return data.desc;
     };
 
@@ -201,7 +220,7 @@ var Hero = function (heroData) {
         return this.calcProp("tap");
     };
     this.getRecover = function () {
-        var val = data.levelDatas[lv - 1].resurge.time;
+        var val = data.levelDatas[lv ].resurge.time;
         return val;
     };
     this.getCtrChance = function () {
@@ -230,6 +249,18 @@ var Hero = function (heroData) {
             return false;
         }
         return true;
+    };
+
+    this.printHeroProps = function () {
+        cc.log("==================================");
+        cc.log("id=" + id);
+        cc.log("atk_period=" + this.getAnimateDelay());
+        cc.log("life=" + this.getLife());
+        cc.log("atk=" + this.getAttack());
+        cc.log("tap=" + this.getHit());
+        cc.log("ctr_chance=" + this.getCtrChance());
+        cc.log("ctr_modify=" + this.getCtrModify());
+        cc.log("==================================");
     };
     /**
      * 英雄升级
