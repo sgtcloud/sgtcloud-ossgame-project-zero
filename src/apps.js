@@ -15,26 +15,26 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time": 10,
+    "flySpirit_interval_time": 180,
     "click_chest_random_events": [{
         "skill_id": "s10107",
         "level": 2,
         "weight": 4,
         "chestStyle": "chest01.json"
     }, {
-        "skill_id": "s10107",
-        "level": 3,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "skill_id" : "s10107",
+        "level" : 3,
+        "weight" : 4,
+        "chestStyle" : "chest01.json"
     }, {
-        "skill_id": "s10107",
-        "level": 4,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "skill_id" : "s10107",
+        "level" : 4,
+        "weight" : 4,
+        "chestStyle" : "chest01.json"
     }, {
         "skill_id": "s10103",
         "level": 2,
-        "weight": 4000,
+        "weight": 4,
         "chestStyle": "chest01.json"
     }, {
         "skill_id": "s10103",
@@ -206,6 +206,10 @@ function setIgnoreContentAdaptWithSize(target) {
 
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
+}
+
+function unschedule(target) {
+    cc.director.getScheduler().unschedule(target.__instanceId, target);
 }
 
 function bindTouchEventListener(listener, target) {

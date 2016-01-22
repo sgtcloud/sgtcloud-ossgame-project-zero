@@ -1,7 +1,6 @@
 var Hero = function (heroData) {
     var id = heroData.id;
     var lv = heroData.lv;
-    var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify"];
     var star = heroData.star;
     var data = dataSource.heros[id];
     var equips = [];
@@ -58,6 +57,7 @@ var Hero = function (heroData) {
             this.calcSkillEffect(effect_props[i]);
             this.calcEquipEffect(effect_props[i]);
         }
+        //this.printHeroProps();
     };
     this.hasSkill=function(skillId){
         for(var i in skills){
@@ -122,7 +122,7 @@ var Hero = function (heroData) {
     this.getStar = function () {
         return star;
     };
-    this.getDesc = function(){
+    this.getDesc = function () {
         return data.desc;
     };
 
@@ -250,9 +250,18 @@ var Hero = function (heroData) {
         }
         return true;
     };
-    this.getUnLock=function(){
-        return data['unlock'];
-    }
+
+    this.printHeroProps = function () {
+        cc.log("==================================");
+        cc.log("id=" + id);
+        cc.log("atk_period=" + this.getAnimateDelay());
+        cc.log("life=" + this.getLife());
+        cc.log("atk=" + this.getAttack());
+        cc.log("tap=" + this.getHit());
+        cc.log("ctr_chance=" + this.getCtrChance());
+        cc.log("ctr_modify=" + this.getCtrModify());
+        cc.log("==================================");
+    };
     /**
      * 英雄升级
      */

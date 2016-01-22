@@ -152,12 +152,25 @@ var BattlePanel = cc.Node.extend({
         }.bind(this);
 
         var battle_bg = root.getChildByName('battle_bg');
+        var pack_btn = battle_bg.getChildByName('pack_btn');
+        pack_btn.setLocalZOrder(1);
+        bindTouchEventListener(function () {
+            var packUnit = new PackUnit();
+            var gamePopup = new GamePopup(packUnit,cc.p(320,580),false);
+            popup(gamePopup,3000);
+        }.bind(this), pack_btn);
+
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
             cc.textureCache.addImageAsync("res/stages/" + bg_image_url, function (textureBg) {
                 if (textureBg) {
-                    battle_bg.removeAllChildren();
                     var bg = new cc.Sprite(textureBg);
+
+                    battle_bg.children.forEach(function(i){
+                        if(i != pack_btn){
+                            i.removeFromParent();
+                        }
+                    });
                     bg.attr({
                             x: battle_bg.width / 2,
                             y: battle_bg.height / 2
@@ -221,6 +234,13 @@ var BattlePanel = cc.Node.extend({
             var scale2Back = cc.scaleTo(0.075, 1.0);
             self.runAction(cc.sequence(scale1, scale1Back, scale2, scale2Back));
         });
+        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+            var heroId = event.getUserData().heroId;
+            var hero = PlayerData.getHeroById(heroId);
+            if (hero.getLv() == 1) {
+                this.addHeroIntoBattle(heroId);
+            }
+        }.bind(this));
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), self);
             activeSkill.cast(this);
@@ -270,17 +290,30 @@ var BattlePanel = cc.Node.extend({
         if (target) {
             var tapSkill = new TapSkill();
             tapSkill.cast(this, target, pos);
+            player.statistics.total_tap++;
         }
     },
 
     initBattleHeroes: function () {
-        for (var i = 0; i < player.heroes.length; i++) {
-            var data = PlayerData.getHeroesData(i);
-            var hero = new HeroUnit(this, data, player.heroes[i]);
-            this.heroSprites.push(hero);
-            hero.setPosition(this.heroPos[i].getPosition());
-            this.addChild(hero, player.heroes.length - i);
+        for (var i in PlayerData.getHeroes()) {
+            if (PlayerData.getHeroes()[i].getLv() > 0) {
+                this.addHeroIntoBattle(PlayerData.getHeroes()[i].getId());
+            }
         }
+    },
+
+    /**
+     * 已经占据了位置的英雄数量
+     */
+    standHeroPosNum: 0,
+
+    addHeroIntoBattle: function (id) {
+        var data = PlayerData.getHeroById(id);
+        var hero = new HeroUnit(this, data);
+        this.heroSprites.push(hero);
+        hero.setPosition(this.heroPos[this.standHeroPosNum].getPosition());
+        this.addChild(hero);
+        this.standHeroPosNum++;
     },
     disableBossBattleTimeCounter: function () {
         this.timeText.visible = false;
@@ -404,7 +437,8 @@ var BattlePanel = cc.Node.extend({
         //}, 1.0);
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
-        }, 1);
+            unschedule(this);
+        }.bind(this), 1);
         PlayerData.updatePlayer();
     },
 
@@ -433,29 +467,35 @@ var BattlePanel = cc.Node.extend({
         this.ChestUnit.setPosition(position);
         this.addChild(this.ChestUnit, 2011);
     },
+    //todo refactor to event
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
-        cc.log("dead:" + hero);
+        //cc.log("dead:" + hero);
     },
+    //todo refactor to event
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
-        cc.log("recover:" + hero);
+        //cc.log("recover:" + hero);
     },
+    //todo refactor to event
     onUseSkill: function (i) {
 
     },
-
+    //todo refactor to event
     onEnemyDead: function (enemy) {
-        PlayerData.updateResource(enemy.getBonus());
-        //this.updatePlayerGoldText();
-        //this.updateTopPanel();
-    },
-
-    onEnemyVanish: function (enemy) {
+        if (PlayerData.getStageData().isBossBattle()) {
+            player.statistics.total_boss_kill++;
+        } else {
+            player.statistics.total_enemy_kill++;
+        }
         var win = this.checkBattleWin();
         if (win) {
             this.onBattleWin();
         }
+    },
+
+    onEnemyVanish: function (enemy) {
+
     },
 
 });

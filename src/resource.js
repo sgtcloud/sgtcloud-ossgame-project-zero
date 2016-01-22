@@ -5,7 +5,8 @@ var res_datas = {
     equips_json: "res/data/equips.json",
     skills_json: "res/data/skills.json",
     goods_json: "res/data/goods.json",
-    players_json: "res/data/players.json"
+    players_json: "res/data/players.json",
+    bonus_json: "res/data/bonus.json"
 };
 var res = {
     cover_scene_json: "res/cover.json",
@@ -92,6 +93,7 @@ var res = {
     skill_tornado_shock: "res/effect5005.json",
     hero_desc_json: "res/HeroDescLayer.json",
     skill_desc_json: "res/SkillDescView.json",
+    pack_layer_json: "res/PackLayer.json",
     buff_tip_json:"res/BuffTips.json",
     buff_layer_json:"res/BuffLayer.json"
 };

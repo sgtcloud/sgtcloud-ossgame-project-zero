@@ -314,6 +314,7 @@
         <Project Name="SkillView.csd" Type="Layer" />
         <Project Name="Star.csd" Type="Layer" />
         <Project Name="TitleLayer.csd" Type="Layer" />
+        <Project Name="StatisticsLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

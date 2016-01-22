@@ -55,7 +55,8 @@ Chance.prototype.next = function() {
 
     for (var i = 0; i < this._stack.length; i++) {
         if (random <= this._stack[i].cw) {
-            this._stack[i].f.apply(this, arguments);
+            //this._stack[i].f.apply(this, arguments);
+            return this._stack[i].f;
             break;
         }
     };

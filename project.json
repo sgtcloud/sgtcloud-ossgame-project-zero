@@ -45,6 +45,7 @@
     "src/GamePopup.js",
     "src/battle/ChestUnit.js",
     "src/battle/FairyUnit.js",
+    "src/battle/PackUnit.js",
     "src/apps.js"
   ]
 }

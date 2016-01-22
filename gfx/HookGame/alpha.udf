@@ -27,11 +27,7 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="BuffTips.csd" />
-          <FilePathData Path="BuffLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="BuffLayer.csd" />
+        <ActiveDocument />
       </Value>
     </Item>
   </Properties>

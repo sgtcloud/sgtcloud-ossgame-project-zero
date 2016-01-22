@@ -34,6 +34,7 @@ var Loot = cc.Node.extend({
         }
         this.lootSprite.runAction(this.action);
         this.addChild(this.lootSprite);
+        
     },
 
     setOpacity: function (op) {
