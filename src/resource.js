@@ -93,7 +93,9 @@ var res = {
     skill_tornado_shock: "res/effect5005.json",
     hero_desc_json: "res/HeroDescLayer.json",
     skill_desc_json: "res/SkillDescView.json",
-    pack_layer_json: "res/PackLayer.json"
+    pack_layer_json: "res/PackLayer.json",
+    buff_tip_json:"res/BuffTips.json",
+    buff_layer_json:"res/BuffLayer.json"
 };
 
 

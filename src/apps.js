@@ -22,15 +22,15 @@ var CONSTS = {
         "weight": 4,
         "chestStyle": "chest01.json"
     }, {
-        "skill_id": "s10107",
-        "level": 3,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "skill_id" : "s10107",
+        "level" : 3,
+        "weight" : 4,
+        "chestStyle" : "chest01.json"
     }, {
-        "skill_id": "s10107",
-        "level": 4,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "skill_id" : "s10107",
+        "level" : 4,
+        "weight" : 4,
+        "chestStyle" : "chest01.json"
     }, {
         "skill_id": "s10103",
         "level": 2,

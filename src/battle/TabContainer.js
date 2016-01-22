@@ -37,11 +37,10 @@ var TabContainer = cc.Node.extend({
                     sender.setSelected(true);
                 }
             }, this);
-
         }
 
         this.menus = {};
-        this.menus.main = new SkillListMenu(battlePanel);
+        this.menus.main = new SkillListMenu(this,battlePanel);
         this.menus.hero = new HeroListMenu(battlePanel);
         this.menus.equip = new EquipListMenu(battlePanel);
         this.menus.shop = new ShopLayerMenu(battlePanel);
@@ -84,19 +83,19 @@ var TabContainer = cc.Node.extend({
                 var data = event.getUserData();
                 PlayerData.updateResource([data.cost]);
                 PlayerData.updatePlayer();
+                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
                 PlayerData.updateResource([data.cost]);
-                PlayerData.updatePlayer();
+                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                //PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
                 customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
             })
         }
-
         bindListener();
-
     }
 });

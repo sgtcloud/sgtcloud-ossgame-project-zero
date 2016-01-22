@@ -44,7 +44,7 @@ var Skill = function (id, lv, heroId) {
         return lv >= this.getMaxLevel();
     };
     this.getMaxLevel = function () {
-        return data.levelDatas.length;
+        return data.levelDatas[0]['level'];
     }
     this.upgrade = function () {
         lv++;

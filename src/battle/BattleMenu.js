@@ -3,10 +3,11 @@ var MenuBtn = function (btn) {
 }
 //UI的Menu父类
 var BattleMenu = cc.Node.extend({
-    ctor: function (battle, res) {
+    ctor: function (tabPanel, res) {
         this._super();
         var layer = ccs.csLoader.createNode(res);
         this.addChild(layer);
+        this.height=layer.height;
         this.root = layer.getChildByName('root');
 
         //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
@@ -23,7 +24,7 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (battle, template, index, skillsBox) {
+var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
     var root = template.clone();
     this.root = root;
     var x = root.width
@@ -83,51 +84,74 @@ var SkillIcon = function (battle, template, index, skillsBox) {
         if (skill) {
             this.skill = skill;
             var that = this;
+            //var buffHeight=skillPanel.height+tabPanel.height;
             this.skill_icon.loadTexture("res/icon/skills/" + skill.getIcon());
             if (this.skill.getLv() > 0) {
                 this.root.setVisible(true);
             } else {
                 this.root.isVisible() && this.root.setVisible(false);
-                customEventHelper.bindListener(EVENT.UNLOCK_ACTIVITY_SKILL, function (event) {
-                    var skillId = event.getUserData();
-                    if (!that.root.isVisible() && that.skill.getId() === skillId) {
-                        that.root.setVisible(true);
-                        customEventHelper.bindListener(EVENT.CAST_BUFF, function (e) {
-                            var data = e.getUserData();
-                            if (that.skill.getId() === data.skill_id) {
-                                if (!(isCoolDowning || heroDead)) {
-                                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                                }
-                            }
-                        });
-                    }
-                });
             }
-            this.skill_icon.addClickEventListener(function () {
-                var levelData = that.skill.getLevelData();
-                if (levelData['duration'] > 0) {
+            customEventHelper.bindListener(EVENT.UNLOCK_ACTIVITY_SKILL, function (event) {
+                var skillId = event.getUserData();
+                if (!that.root.isVisible() && that.skill.getId() === skillId) {
+                    that.root.setVisible(true);
                 }
+            });
+            customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (e) {
+                var data = e.getUserData();
+                if (that.skill.getId() === data.skillId) {
+                    //if (!(isCoolDowning || heroDead)) {
+                    //    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                    //    if(!isCoolDowning){
+                    //        doCoolDown(that.skill.getLevelData());
+                    //    }
+                    //}
+                    console.log('释放buff:'+that.skill.getId())
+                    tryFire(that.skill.getLevelData());
+                }
+            });
+            function doCoolDown(levelData){
                 if (levelData['cooldown'] > 0) {
                     isCoolDowning = true;
                     that.cooldownText.setVisible(true)
                     that.time.setVisible(true)
                     that.time.setString(levelData['cooldown'] + " 秒")
-                    that.skill_icon.setTouchEnabled(false);
+                    //that.skill_icon.setTouchEnabled(false);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
+                    //cc.eventManager.resumeTarget(that.skill_icon);
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
                         if (!heroDead) {
-                            !that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
+                            //!that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
                         if (!heroDead) {
                             that.time.isVisible() && that.time.setVisible(false)
+                            //cc.eventManager.pauseTarget(that.skill_icon);
                         }
                         isCoolDowning = false;
                     });
                 }
-                console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
-                customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+            }
+            function tryFire(levelData){
+                if(!(isCoolDowning||heroDead)){
+                    doCoolDown(levelData);
+                    console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
+                    toggleBufflayer(levelData['duration'],buildSkillDesc(skill),that.skill.getIcon());
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                }else if(isCoolDowning&&!heroDead){
+                    console.log('技能【'+that.skill.getId()+"】冷却中，请稍候再点！");
+                    toggleBuffTip();
+                }else {
+                    console.log('英雄已死亡，请稍候再点！');
+                }
+            }
+            this.skill_icon.addClickEventListener(function () {
+                var levelData = that.skill.getLevelData();
+                //doCoolDown(levelData);
+                tryFire(levelData);
+                if (levelData['duration'] > 0) {
+                }
             });
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
@@ -206,11 +230,11 @@ function getHeroActivtySkillls(hero) {
     return result;
 }
 var SkillListMenu = BattleMenu.extend({
-    ctor: function (battlePanel) {
+    ctor: function (tabPanel,battlePanel) {
         var heroes = PlayerData.getHeroes();
         var size = heroes.length;
         var skillBtnNum = 7
-        this._super(battlePanel, res.skill_layer_json);
+        this._super(tabPanel, res.skill_layer_json);
         var skills = [];
         for (var i in heroes) {
             var activitySkills = getHeroActivtySkillls(heroes[i]);
@@ -220,7 +244,7 @@ var SkillListMenu = BattleMenu.extend({
         var skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
         for (var i = 0; i < skills.length; i++) {
-            var skillBtn = new SkillIcon(battlePanel, skillIconTemplate, i, skillsBox);
+            var skillBtn = new SkillIcon(this, skillIconTemplate, i, skillsBox,tabPanel);
             //skillBtn.setVisible(true);
             skillBtn.bindSkillAndClickEvent(skills[i]);
             skillBtns.push(skillBtn);
@@ -286,7 +310,12 @@ function buildDesc(effects, desc, extend) {
     var desc = desc.mapping(effectsObj)
     return desc;
 }
-
+//根据模板生成技能效果描述
+function buildSkillDesc(skill, levelData) {
+    //var lv= skill.getLv()===0?1:skill.getLv();
+    var effects = skill.traverseSkillEffects();
+    return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
+}
 var HeroListMenu = BattleMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.hero_layer_json);
@@ -569,7 +598,6 @@ var HeroListMenu = BattleMenu.extend({
                     var diffValue = parseInt(nextLevelLife - levelLife);
                     showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, diffValue);
                     elements.upgrade_btn.buffNum_text.setString(Math.abs(diffValue));
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 //}
                 if (hero.getLv() == 1) {
@@ -637,12 +665,7 @@ var HeroListMenu = BattleMenu.extend({
             buffNum_text.setString(Math.abs(parseInt(showEffect)));
         }
 
-        //根据模板生成技能效果描述
-        function buildSkillDesc(skill, levelData) {
-            //var lv= skill.getLv()===0?1:skill.getLv();
-            var effects = skill.traverseSkillEffects();
-            return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
-        }
+
 
 
         function canUnlockSkill(hero, skill) {
@@ -761,7 +784,6 @@ var HeroListMenu = BattleMenu.extend({
                         elements.upgrade_btn.per.setVisible(false);
                     }
                     lockSkillIfNecessary(hero, skill, elements);
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 }
                 console.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
             });
