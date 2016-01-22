@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="EnemyList" Type="Layer" ID="6b29eb05-6146-4214-a918-3ec5c325181d" Version="2.3.3.0" />
+  <PropertyGroup Name="EnemyList" Type="Layer" ID="6b29eb05-6146-4214-a918-3ec5c325181d" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="120" ctype="GameLayerObjectData">
         <Size X="380.0000" Y="120.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="848611792" Tag="80" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="848611792" Tag="80" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="380.0000" Y="120.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-59102711" Tag="81" IconVisible="False" Scale9Width="180" Scale9Height="69" ctype="ImageViewObjectData">

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="Equiplayer" Type="Layer" ID="6129347d-6e44-40ea-98b2-4ceb23ecdf1f" Version="2.3.3.0" />
+  <PropertyGroup Name="Equiplayer" Type="Layer" ID="6129347d-6e44-40ea-98b2-4ceb23ecdf1f" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="202" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="500.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-593797273" Tag="267" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-593797273" Tag="267" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="500.0000" />
             <Children>
               <AbstractNodeData Name="equip_bg" ActionTag="872754748" Tag="203" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -32,7 +32,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_root" ActionTag="656574158" Tag="200" IconVisible="False" LeftMargin="7.7095" RightMargin="8.2905" TopMargin="5.7450" BottomMargin="384.2550" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="title_root" ActionTag="656574158" Tag="200" IconVisible="False" LeftMargin="7.7095" RightMargin="8.2905" TopMargin="5.7450" BottomMargin="384.2550" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="624.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="equipTitle_bg" ActionTag="1173276437" Tag="201" IconVisible="False" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="Star" Type="Layer" ID="9053b9de-a1fd-4243-9dc3-da5d9bd20347" Version="2.3.3.0" />
+  <PropertyGroup Name="Star" Type="Layer" ID="9053b9de-a1fd-4243-9dc3-da5d9bd20347" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Star" Tag="213" ctype="GameLayerObjectData">
         <Size X="32.0000" Y="30.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="726392534" Tag="528" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="726392534" Tag="528" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="32.0000" Y="30.0000" />
             <Children>
               <AbstractNodeData Name="star_on" ActionTag="1249863244" Tag="214" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">

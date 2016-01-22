@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="GoldLayer" Type="Layer" ID="1a6cb003-3a44-4b39-ad08-5f5ad9c4f640" Version="2.3.3.0" />
+  <PropertyGroup Name="GoldLayer" Type="Layer" ID="1a6cb003-3a44-4b39-ad08-5f5ad9c4f640" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="119" ctype="GameLayerObjectData">
         <Size X="180.0000" Y="50.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="152266157" Tag="122" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="152266157" Tag="122" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="180.0000" Y="50.0000" />
             <Children>
               <AbstractNodeData Name="gold_icon" ActionTag="1067446397" Tag="121" IconVisible="False" LeftMargin="10.3113" RightMargin="139.6887" TopMargin="10.0274" BottomMargin="9.9726" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="BattleNum" Type="Layer" ID="94061142-811b-471a-b115-dd429d83414a" Version="2.3.3.0" />
+  <PropertyGroup Name="BattleNum" Type="Layer" ID="94061142-811b-471a-b115-dd429d83414a" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="26" ctype="GameLayerObjectData">
         <Size X="200.0000" Y="14.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1001147719" Tag="30" IconVisible="False" RightMargin="100.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1001147719" Tag="30" IconVisible="False" RightMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="100.0000" Y="14.0000" />
             <Children>
               <AbstractNodeData Name="battle_num" ActionTag="-2119850651" CallBackType="Click" Tag="28" IconVisible="False" RightMargin="78.0000" TopMargin="2.0000" CharWidth="11" CharHeight="12" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
