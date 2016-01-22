@@ -78,6 +78,9 @@ var BattleUnit = cc.Node.extend({
                 }
                 this.changeLife(-dmg);
                 this.showDamageNumber(dmg, ctr);
+                if (camp === BattleConsts.Camp.Enemy && dmg > 0) {
+                    player.statistics.total_damage += dmg;
+                }
                 this.onDamaged();
                 if (this.isDead()) {
                     this.playAnimation('die');
