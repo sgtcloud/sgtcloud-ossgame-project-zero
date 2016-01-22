@@ -949,7 +949,7 @@ var ShopLayerMenu = BattleMenu.extend({
             goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()));
+                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()),true);
             });
 
             if (window.DeviceMotionEvent) {
@@ -977,7 +977,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 self.last_z = self.first_z;
             }
         }
-        this.buyGold = function (gem, gold) {
+        this.buyGold = function (gem, gold,flag) {
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
@@ -985,6 +985,9 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                 PlayerData.updatePlayer();
+                if(flag){
+                    return;
+                }
             } else {
                /* new Popup1("友情提示", "当前钻石不足",function(popup){
                     popup.hiddenPopup();
