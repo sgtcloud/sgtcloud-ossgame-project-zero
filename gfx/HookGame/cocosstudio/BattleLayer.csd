@@ -11,36 +11,6 @@
             <Children>
               <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
-                <Children>
-                  <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="8.2096" RightMargin="546.7904" TopMargin="11.0314" BottomMargin="411.9686" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="85.0000" Y="77.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="50.7096" Y="450.4686" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0792" Y="0.9009" />
-                    <PreSize X="0.1328" Y="0.1540" />
-                    <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="320.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
-                    <Size X="260.0000" Y="180.0000" />
-                    <AnchorPoint />
-                    <Position X="190.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2969" />
-                    <PreSize X="0.4063" Y="0.3600" />
-                    <SingleColor A="255" R="150" G="150" B="255" />
-                    <FirstColor A="255" R="150" G="150" B="255" />
-                    <EndColor A="255" R="255" G="255" B="255" />
-                    <ColorVector ScaleY="1.0000" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
                 <Position Y="240.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -199,6 +169,21 @@
                 <PreSize X="0.7828" Y="0.0622" />
                 <FileData Type="Normal" Path="mainUI/bar_bg.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="6.6249" RightMargin="548.3751" TopMargin="7.4608" BottomMargin="655.5392" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="85.0000" Y="77.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="49.1249" Y="694.0392" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0768" Y="0.9379" />
+                <PreSize X="0.1328" Y="0.1041" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_bar" ActionTag="1687766306" Tag="486" IconVisible="False" LeftMargin="127.9846" RightMargin="51.0154" TopMargin="16.4012" BottomMargin="706.5988" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="461.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -208,6 +193,19 @@
                 <PrePosition X="0.5601" Y="0.9663" />
                 <PreSize X="0.7203" Y="0.0230" />
                 <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="560.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+                <Size X="260.0000" Y="180.0000" />
+                <AnchorPoint />
+                <Position X="190.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2969" />
+                <PreSize X="0.4063" Y="0.2432" />
+                <SingleColor A="255" R="150" G="150" B="255" />
+                <FirstColor A="255" R="150" G="150" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
               <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="100.4743" RightMargin="504.5257" TopMargin="17.4138" BottomMargin="687.5862" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="35.0000" Y="35.0000" />
@@ -316,13 +314,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="8.2096" RightMargin="546.7904" TopMargin="95.5242" BottomMargin="567.4758" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="6.6248" RightMargin="548.3751" TopMargin="95.5242" BottomMargin="567.4758" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="50.7096" Y="605.9758" />
+                <Position X="49.1248" Y="605.9758" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0792" Y="0.8189" />
+                <PrePosition X="0.0768" Y="0.8189" />
                 <PreSize X="0.1328" Y="0.1041" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
