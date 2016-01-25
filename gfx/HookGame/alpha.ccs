@@ -160,6 +160,8 @@
           <Image Name="title_bg2.png" />
           <Image Name="title_bg3.png" />
           <Image Name="title_bg4.png" />
+          <Image Name="font22_yellow_kmb.png" />
+          <Image Name="font22_yellow_kmbb.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -345,6 +347,8 @@
           <Image Name="text26.png" />
           <Image Name="text27.png" />
           <Image Name="title_text.png" />
+          <Image Name="cumulative_text.png" />
+          <Image Name="current_text.png" />
         </Folder>
       </RootFolder>
     </Group>
