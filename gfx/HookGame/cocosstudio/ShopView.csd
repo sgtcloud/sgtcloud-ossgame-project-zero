@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="37" ctype="GameLayerObjectData">
         <Size X="610.0000" Y="600.0000" />
         <Children>
-          <AbstractNodeData Name="moneyTree_tab" Visible="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="moneyTree_tab" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2005624188" Tag="243" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="562" Scale9Height="552" ctype="ImageViewObjectData">
@@ -29,15 +29,15 @@
                 <PreSize X="0.4098" Y="0.1667" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="-671076954" Tag="283" IconVisible="False" LeftMargin="290.6187" RightMargin="193.3813" TopMargin="74.6859" BottomMargin="504.3141" CharWidth="21" CharHeight="21" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="126.0000" Y="21.0000" />
+              <AbstractNodeData Name="diamond_text" ActionTag="-671076954" Tag="283" IconVisible="False" LeftMargin="293.6187" RightMargin="196.3813" TopMargin="75.6859" BottomMargin="505.3141" CharWidth="20" CharHeight="19" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
+                <Size X="120.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="353.6187" Y="514.8141" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5797" Y="0.8580" />
-                <PreSize X="0.2066" Y="0.0350" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font28_yellow.png" Plist="" />
+                <PreSize X="0.1967" Y="0.0317" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_kmbb.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="gold_text" ActionTag="-278615090" CallBackType="Click" Tag="284" IconVisible="False" LeftMargin="267.0220" RightMargin="216.9780" TopMargin="34.5222" BottomMargin="544.4778" CharWidth="21" CharHeight="21" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
                 <Size X="126.0000" Y="21.0000" />
@@ -79,7 +79,7 @@
                 <PreSize X="0.1082" Y="0.0600" />
                 <FileData Type="Normal" Path="shopUI/sale.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="buy_btn" CanEdit="False" ActionTag="-502619807" CallBackType="Click" Tag="288" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -131,7 +131,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shop_tab" CanEdit="False" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="shop_tab" CanEdit="False" Visible="False" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
