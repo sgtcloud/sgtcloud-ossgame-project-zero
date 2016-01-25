@@ -345,6 +345,25 @@ var PlayerData = {
     getMyRankByType: function (type) {
         return 1;
     }
+    ,
+    getTotalHeroNum: function(){
+        var num = 0;
+        for (var i in PlayerData.getHeroes()) {
+            if (PlayerData.getHeroes()[i].getLv() > 0) {
+                num++;
+            }
+        }
+        return num;
+    }
+    ,
+    getTotalHeroLevels: function(){
+        var levels = 0;
+        for (var i in PlayerData.getHeroes()) {
+            levels += PlayerData.getHeroes()[i].getLv();
+
+        }
+        return levels;
+    }
 
 };
 
