@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Revive" Type="Layer" ID="1e3cea64-f0d9-48ed-bb49-c9d7c9fc876d" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_Revive" Type="Layer" ID="1e3cea64-f0d9-48ed-bb49-c9d7c9fc876d" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

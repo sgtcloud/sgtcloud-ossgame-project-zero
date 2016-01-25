@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="HeroView" Type="Layer" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="3.10.0.0" />
+  <PropertyGroup Name="HeroView" Type="Layer" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

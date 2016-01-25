@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Recast" Type="Layer" ID="b73d9048-e5c2-4b81-9d8d-7c5b0e216c67" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_Recast" Type="Layer" ID="b73d9048-e5c2-4b81-9d8d-7c5b0e216c67" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="HeroDescLayer" Type="Layer" ID="db6faa47-da7a-452d-93e5-171597beda12" Version="3.10.0.0" />
+  <PropertyGroup Name="HeroDescLayer" Type="Layer" ID="db6faa47-da7a-452d-93e5-171597beda12" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

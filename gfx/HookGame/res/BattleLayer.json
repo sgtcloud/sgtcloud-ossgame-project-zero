@@ -1,6 +1,6 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
-  "Version": "3.10.0.0",
+  "Version": "2.3.3.0",
   "Name": "BattleLayer",
   "Content": {
     "Content": {
@@ -775,8 +775,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 190.0,
-                  "Y": 0.0
+                  "X": 192.1204,
+                  "Y": 265.6887
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -785,16 +785,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2969,
-                  "Y": 0.0
+                  "X": 0.3002,
+                  "Y": 0.359
                 },
                 "PreSize": {
-                  "X": 0.4062,
+                  "X": 0.4063,
                   "Y": 0.2432
                 },
-                "LeftMargin": 190.0,
-                "RightMargin": 190.0,
-                "TopMargin": 560.0,
+                "LeftMargin": 192.1204,
+                "RightMargin": 187.8796,
+                "TopMargin": 294.3113,
+                "BottomMargin": 265.6887,
                 "Tag": 366,
                 "ActionTag": 535293251,
                 "Size": {

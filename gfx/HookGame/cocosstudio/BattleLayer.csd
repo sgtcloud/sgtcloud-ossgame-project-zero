@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="3.10.0.0" />
+  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -194,13 +194,13 @@
                 <PreSize X="0.7203" Y="0.0230" />
                 <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="560.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="192.1204" RightMargin="187.8796" TopMargin="294.3113" BottomMargin="265.6887" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                 <Size X="260.0000" Y="180.0000" />
                 <AnchorPoint />
-                <Position X="190.0000" />
+                <Position X="192.1204" Y="265.6887" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2969" />
+                <PrePosition X="0.3002" Y="0.3590" />
                 <PreSize X="0.4063" Y="0.2432" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />

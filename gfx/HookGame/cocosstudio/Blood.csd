@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Blood" Type="Layer" ID="b254df5f-5e99-412a-bddf-e3f91484e956" Version="3.10.0.0" />
+  <PropertyGroup Name="Blood" Type="Layer" ID="b254df5f-5e99-412a-bddf-e3f91484e956" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
