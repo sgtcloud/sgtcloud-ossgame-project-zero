@@ -138,13 +138,13 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 21,
-                "CharHeight": 21,
+                "CharWidth": 20,
+                "CharHeight": 19,
                 "LabelText": "999999",
-                "StartChar": "0",
+                "StartChar": ".",
                 "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font28_yellow.png",
+                  "Path": "mainUI/font22_yellow_kmbb.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -166,18 +166,18 @@
                   "Y": 0.858
                 },
                 "PreSize": {
-                  "X": 0.2066,
-                  "Y": 0.035
+                  "X": 0.1967,
+                  "Y": 0.0317
                 },
-                "LeftMargin": 290.6187,
-                "RightMargin": 193.3813,
-                "TopMargin": 74.6859,
-                "BottomMargin": 504.3141,
+                "LeftMargin": 293.6187,
+                "RightMargin": 196.3813,
+                "TopMargin": 75.6859,
+                "BottomMargin": 505.3141,
                 "Tag": 283,
                 "ActionTag": -671076954,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 21.0
+                  "X": 120.0,
+                  "Y": 19.0
                 },
                 "Name": "diamond_text",
                 "ctype": "TextAtlasObjectData"
@@ -876,6 +876,7 @@
         "mainUI/bg_03.png",
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
+        "mainUI/font22_yellow_kmbb.png",
         "mainUI/font28_yellow.png",
         "ShopIconLayer.json",
         "shopUI/moneyTree_bg.png",
