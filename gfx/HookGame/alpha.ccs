@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="alpha" Version="3.10.0.0" Type="CocosStudio" />
+  <PropertyGroup Name="alpha" Version="2.3.3.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -313,8 +313,39 @@
         <Project Name="SkillLayer.csd" Type="Layer" />
         <Project Name="SkillView.csd" Type="Layer" />
         <Project Name="Star.csd" Type="Layer" />
-        <Project Name="TitleLayer.csd" Type="Layer" />
         <Project Name="StatisticsLayer.csd" Type="Layer" />
+        <Project Name="TitleLayer.csd" Type="Layer" />
+        <Folder Name="statisticsUI">
+          <Image Name="f22_y.png" />
+          <Image Name="text01.png" />
+          <Image Name="text02.png" />
+          <Image Name="text03.png" />
+          <Image Name="text04.png" />
+          <Image Name="text05.png" />
+          <Image Name="text06.png" />
+          <Image Name="text07.png" />
+          <Image Name="text08.png" />
+          <Image Name="text09.png" />
+          <Image Name="text10.png" />
+          <Image Name="text11.png" />
+          <Image Name="text12.png" />
+          <Image Name="text13.png" />
+          <Image Name="text14.png" />
+          <Image Name="text15.png" />
+          <Image Name="text16.png" />
+          <Image Name="text17.png" />
+          <Image Name="text18.png" />
+          <Image Name="text19.png" />
+          <Image Name="text20.png" />
+          <Image Name="text21.png" />
+          <Image Name="text22.png" />
+          <Image Name="text23.png" />
+          <Image Name="text24.png" />
+          <Image Name="text25.png" />
+          <Image Name="text26.png" />
+          <Image Name="text27.png" />
+          <Image Name="title_text.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
