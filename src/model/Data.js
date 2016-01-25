@@ -19,8 +19,8 @@ function getLevelData(data, key, lv) {
         return undefined;
     }
     var result;
-    var len=data.levelDatas.length;
-    var index=len-lv;
+    var max=data.levelDatas[0];
+    var index=max['level']-lv;
     if (!data.levelDatas[index]) {
         result= data.levelDatas[len-1][key];
     }else {
@@ -38,7 +38,9 @@ function  getSpecificLevelData(data,level){
          var rs=data.levelDatas[len-1];
         return rs
     }
-    var index=len-level;
+    var max=data.levelDatas[0]['level'];
+
+    var index=max-level;
     if (!data.levelDatas[index]) {
         return data.levelDatas[len-1];
     }

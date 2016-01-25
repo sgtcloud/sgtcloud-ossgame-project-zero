@@ -80,6 +80,9 @@ var Skill = function (id, lv, heroId) {
     this.getDesc = function () {
         return data.desc;
     };
+    this.getBuffDesc = function () {
+        return data.buffDesc;
+    };
     this.getEffect = function (key) {
         return getEffectValue(data, key, lv);
     };
