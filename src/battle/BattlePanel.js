@@ -153,11 +153,11 @@ var BattlePanel = cc.Node.extend({
 
         var pack_btn = root.getChildByName('pack_btn');
         pack_btn.setLocalZOrder(1);
-        bindTouchEventListener(function () {
+        bindButtonCallback(pack_btn,function () {
             var packUnit = new PackUnit();
             var gamePopup = new GamePopup(packUnit,cc.p(320,580),false);
             popup(gamePopup,3000);
-        }.bind(this), pack_btn);
+        }.bind(this));
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
