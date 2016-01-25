@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="RankLayer" Type="Layer" ID="418f9ae6-58d2-4967-b437-50ea80308f75" Version="3.10.0.0" />
+  <PropertyGroup Name="RankLayer" Type="Layer" ID="418f9ae6-58d2-4967-b437-50ea80308f75" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

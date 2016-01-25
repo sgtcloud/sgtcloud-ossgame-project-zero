@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="SkillDescView" Type="Layer" ID="ddc4377f-c53d-4fd4-97a0-c02fd68172d6" Version="3.10.0.0" />
+  <PropertyGroup Name="SkillDescView" Type="Layer" ID="ddc4377f-c53d-4fd4-97a0-c02fd68172d6" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

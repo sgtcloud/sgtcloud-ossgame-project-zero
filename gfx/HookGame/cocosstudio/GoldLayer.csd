@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="GoldLayer" Type="Layer" ID="1a6cb003-3a44-4b39-ad08-5f5ad9c4f640" Version="3.10.0.0" />
+  <PropertyGroup Name="GoldLayer" Type="Layer" ID="1a6cb003-3a44-4b39-ad08-5f5ad9c4f640" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

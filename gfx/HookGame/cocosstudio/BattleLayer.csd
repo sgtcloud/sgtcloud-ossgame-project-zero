@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="3.10.0.0" />
+  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

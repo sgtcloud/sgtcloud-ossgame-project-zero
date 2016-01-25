@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Upgrade1" Type="Layer" ID="c0f7928b-3aaa-4d46-b30c-3705de3a6d7e" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_Upgrade1" Type="Layer" ID="c0f7928b-3aaa-4d46-b30c-3705de3a6d7e" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

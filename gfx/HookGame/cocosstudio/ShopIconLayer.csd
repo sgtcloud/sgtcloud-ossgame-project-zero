@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="ShopIconLayer" Type="Layer" ID="6c256dff-8be2-4b73-b8ce-2846997c213d" Version="3.10.0.0" />
+  <PropertyGroup Name="ShopIconLayer" Type="Layer" ID="6c256dff-8be2-4b73-b8ce-2846997c213d" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Buy" Type="Layer" ID="c882f736-082e-45a5-a43b-bfc831c2917e" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_Buy" Type="Layer" ID="c882f736-082e-45a5-a43b-bfc831c2917e" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="SkillLayer" Type="Layer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="3.10.0.0" />
+  <PropertyGroup Name="SkillLayer" Type="Layer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

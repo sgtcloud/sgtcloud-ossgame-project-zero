@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Lock" Type="Layer" ID="486062c7-f461-4f08-afea-1400b5055ca5" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_Lock" Type="Layer" ID="486062c7-f461-4f08-afea-1400b5055ca5" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

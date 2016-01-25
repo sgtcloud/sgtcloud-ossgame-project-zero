@@ -1,6 +1,6 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
-  "Version": "3.10.0.0",
+  "Version": "2.3.3.0",
   "Name": "BattleLayer",
   "Content": {
     "Content": {
@@ -789,7 +789,7 @@
                   "Y": 0.359
                 },
                 "PreSize": {
-                  "X": 0.4062,
+                  "X": 0.4063,
                   "Y": 0.2432
                 },
                 "LeftMargin": 192.1204,

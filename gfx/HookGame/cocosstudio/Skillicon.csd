@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Skillicon" Type="Layer" ID="7ac91f9e-f23f-4900-bce1-2623f6bb3e0f" Version="3.10.0.0" />
+  <PropertyGroup Name="Skillicon" Type="Layer" ID="7ac91f9e-f23f-4900-bce1-2623f6bb3e0f" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

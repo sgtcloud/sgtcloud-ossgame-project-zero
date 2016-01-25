@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BuffTips" Type="Layer" ID="4da69715-811a-42e3-b726-6ef1acf92703" Version="3.10.0.0" />
+  <PropertyGroup Name="BuffTips" Type="Layer" ID="4da69715-811a-42e3-b726-6ef1acf92703" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

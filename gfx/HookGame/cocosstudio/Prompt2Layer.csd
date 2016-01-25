@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Prompt2Layer" Type="Layer" ID="81aef083-29e3-4319-85ab-81cfb227e5c7" Version="3.10.0.0" />
+  <PropertyGroup Name="Prompt2Layer" Type="Layer" ID="81aef083-29e3-4319-85ab-81cfb227e5c7" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
