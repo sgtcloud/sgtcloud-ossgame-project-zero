@@ -6,10 +6,10 @@
       <ObjectData Name="Layer" Tag="174" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <Children>
                   <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="8.2096" RightMargin="546.7904" TopMargin="11.0314" BottomMargin="411.9686" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -26,6 +26,19 @@
                     <NormalFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="320.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+                    <Size X="260.0000" Y="180.0000" />
+                    <AnchorPoint />
+                    <Position X="190.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.2969" />
+                    <PreSize X="0.4063" Y="0.3600" />
+                    <SingleColor A="255" R="150" G="150" B="255" />
+                    <FirstColor A="255" R="150" G="150" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -290,7 +303,7 @@
                 <PreSize X="0.6938" Y="0.0081" />
                 <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="250.0000" />

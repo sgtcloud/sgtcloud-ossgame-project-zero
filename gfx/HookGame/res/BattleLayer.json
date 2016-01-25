@@ -165,6 +165,57 @@
                     },
                     "Name": "pack_btn",
                     "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "DirectionType": "Vertical",
+                    "HorizontalType": "Align_HorizontalCenter",
+                    "IsBounceEnabled": true,
+                    "ScrollDirectionType": 0,
+                    "ClipAble": true,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 190.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2969,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.4062,
+                      "Y": 0.36
+                    },
+                    "LeftMargin": 190.0,
+                    "RightMargin": 190.0,
+                    "TopMargin": 320.0,
+                    "Tag": 366,
+                    "ActionTag": 535293251,
+                    "Size": {
+                      "X": 260.0,
+                      "Y": 180.0
+                    },
+                    "Name": "buff_list",
+                    "ctype": "ListViewObjectData"
                   }
                 ],
                 "ActionTag": 1082551047,
