@@ -31,7 +31,6 @@ var MainScene = cc.Scene.extend({
         var width = this.width;
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
         this.addChild(this.buffTip);
-        var buffLayers = [];
         var buffList=this.battlePanel.buffList;
         (function (w) {
             var __toggle_hide = 0;
@@ -42,13 +41,10 @@ var MainScene = cc.Scene.extend({
                     buffTip.setVisible(false);
                 }, 5000);
             }
-
-
             function toggleBufflayer(time, text, icon) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon)
                 buffLayer.setText(text);
-                buffLayers.push(buffLayer);
                 buffLayer.setTime(time + 's');
                 buffList.pushBackCustomItem(buffLayer.root);
                 //buffList.jumpToBottom();
@@ -63,7 +59,6 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
-
             w.toggleBuffTip = toggleBuffTip;
             w.toggleBufflayer = toggleBufflayer;
         })(window)
