@@ -43,7 +43,7 @@ var MainScene = cc.Scene.extend({
             }
             function toggleBufflayer(time, text, icon) {
                 var buffLayer = new BuffLayer();
-                buffLayer.setIcon(icon)
+                buffLayer.setIcon(icon);
                 buffLayer.setText(text);
                 buffLayer.setTime(time + 's');
                 buffList.pushBackCustomItem(buffLayer.root);
