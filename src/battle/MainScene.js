@@ -49,6 +49,7 @@ var MainScene = cc.Scene.extend({
                 buffList.pushBackCustomItem(buffLayer.root);
                 //buffList.jumpToBottom();
                 var remaining = time - 1;
+                customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 buffLayer.root.schedule(function () {
                     if (remaining > 0) {
                         buffLayer.setTime(remaining + 's');
@@ -56,11 +57,13 @@ var MainScene = cc.Scene.extend({
                     } else {
                         buffList.removeChild(buffLayer.root);
                         this.unschedule(this.__instanceId);
+                        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
             w.toggleBuffTip = toggleBuffTip;
             w.toggleBufflayer = toggleBufflayer;
-        })(window)
+        })(window);
+        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
     }
 });

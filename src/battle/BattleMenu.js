@@ -245,6 +245,17 @@ var SkillListMenu = BattleMenu.extend({
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         var skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
+        var atk_text=this.root.getChildByName('atk_text');
+        var tatk_text=this.root.getChildByName('tatk_text');
+        atk_text.ignoreContentAdaptWithSize(true);
+        tatk_text.ignoreContentAdaptWithSize(true);
+        //atk_text.setString()
+        customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK,function(){
+            var totalHit=PlayerData.getTotalHit();
+            var totalAttack=PlayerData.getTotalAttack();
+            tatk_text.setString(Math.floor(totalHit));
+            atk_text.setString(Math.floor(totalAttack));
+        });
         for (var i = 0; i < skills.length; i++) {
             var skillBtn = new SkillIcon(this, skillIconTemplate, i, skillsBox,tabPanel);
             //skillBtn.setVisible(true);
@@ -418,7 +429,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.upgrade_btn.per = per;
             elements.upgrade_btn.add = add;
             elements.upgrade_btn.cut = cut;
-            elements.upgrade_btn.per.ignoreContentAdaptWithSize(false);
+            elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
         }
