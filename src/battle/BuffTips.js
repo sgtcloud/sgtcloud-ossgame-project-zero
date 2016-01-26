@@ -23,11 +23,11 @@ var BuffView=cc.Node.extend({
     }
 });
 
-var BuffLayer=cc.Node.extend({
+var BuffLayer=cc.Class.extend({
     ctor:function(){
-        this._super();
+        //this._super();
         var buffLayer=ccs.csLoader.createNode(res.buff_layer_json);
-        this.root=buffLayer.getChildByName('root');
+        this.root=buffLayer.getChildByName('root').clone();
         this.icon=this.root.getChildByName('icon');
         this.text=this.root.getChildByName('text');
         this.time=this.root.getChildByName('time');
@@ -35,8 +35,20 @@ var BuffLayer=cc.Node.extend({
         this.height=buffLayer.height;
         this.text.setFontName("微软雅黑");
         this.time.setFontName("微软雅黑");
-        this.text.setFontSize(8);
-        this.addChild(buffLayer);
+        this.time.setColor(cc.color(255,0,0));
+        //this.text.setFontSize(10);
+        //this.time.setFontSize(10);
+        //this.layer=this.root;
+        //this.addChild(buffLayer);
+    },
+    setPosition:function(x,y){
+      this.root.setPosition(x,y);
+    },
+    setPositionY:function(y){
+      this.root.setPositionY(y);
+    },
+    getPositionY:function(){
+      return this.root.getPositionY();
     },
     setIcon:function(path){
         this.icon.loadTexture('res/icon/skills/'+path)

@@ -33,7 +33,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 0.0,
-              "Y": 0.0
+              "Y": 0.6515
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -43,12 +43,14 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0,
-              "Y": 0.0
+              "Y": 0.0009
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
+            "TopMargin": -0.6516,
+            "BottomMargin": 0.6515,
             "Tag": 4,
             "Children": [
               {
@@ -193,11 +195,13 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 15.0,
-                  "Y": 260.4033
+                  "X": 14.0,
+                  "Y": 290.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -206,17 +210,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0234,
-                  "Y": 0.3519
+                  "X": 0.0219,
+                  "Y": 0.3919
                 },
                 "PreSize": {
                   "X": 0.9531,
                   "Y": 0.5
                 },
-                "LeftMargin": 15.0,
-                "RightMargin": 15.0,
-                "TopMargin": 109.5967,
-                "BottomMargin": 260.4033,
+                "LeftMargin": 14.0,
+                "RightMargin": 16.0,
+                "TopMargin": 80.0,
+                "BottomMargin": 290.0,
                 "Tag": 44,
                 "Children": [
                   {
@@ -271,8 +275,8 @@
                     "Scale9Height": 21,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 25.0,
-                      "Y": 320.0
+                      "X": 25.4996,
+                      "Y": 319.9999
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -281,17 +285,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.041,
+                      "X": 0.0418,
                       "Y": 0.8649
                     },
                     "PreSize": {
                       "X": 0.2328,
                       "Y": 0.127
                     },
-                    "LeftMargin": 25.0,
-                    "RightMargin": 442.9999,
-                    "TopMargin": 3.0,
-                    "BottomMargin": 320.0,
+                    "LeftMargin": 25.4996,
+                    "RightMargin": 442.5004,
+                    "TopMargin": 3.0001,
+                    "BottomMargin": 319.9999,
                     "Tag": 46,
                     "ActionTag": 1268876338,
                     "Size": {
@@ -315,6 +319,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -880,6 +886,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -991,13 +999,13 @@
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1016,30 +1024,30 @@
                           "Y": 0.7629
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 56.4999,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 54.4999,
                         "BottomMargin": 236.5001,
                         "Tag": 64,
                         "ActionTag": -166605212,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_gold_rate",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1058,72 +1066,30 @@
                           "Y": 0.6823
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 81.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 79.5,
                         "BottomMargin": 211.5,
                         "Tag": 65,
                         "ActionTag": -1003658758,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_tap_rate",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
-                          "Plist": ""
-                        },
-                        "AnchorPoint": {},
-                        "Position": {
-                          "X": 48.4496,
-                          "Y": 161.5
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.2422,
-                          "Y": 0.521
-                        },
-                        "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
-                        },
-                        "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 131.5,
-                        "BottomMargin": 161.5,
-                        "Tag": 68,
-                        "ActionTag": -1991910248,
-                        "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
-                        },
-                        "Name": "total_life_rate",
-                        "ctype": "TextAtlasObjectData"
-                      },
-                      {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
-                        "LabelText": "999999",
-                        "StartChar": ".",
-                        "LabelAtlasFileImage_CNB": {
-                          "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1142,30 +1108,72 @@
                           "Y": 0.6016
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 106.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 104.5,
                         "BottomMargin": 186.5,
                         "Tag": 66,
                         "ActionTag": 1946808841,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_attack_rate",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 48.4496,
+                          "Y": 161.5
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.2422,
+                          "Y": 0.521
+                        },
+                        "PreSize": {
+                          "X": 0.6,
+                          "Y": 0.0613
+                        },
+                        "LeftMargin": 48.4496,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 129.5,
+                        "BottomMargin": 161.5,
+                        "Tag": 68,
+                        "ActionTag": -1991910248,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "total_life_rate",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1184,30 +1192,30 @@
                           "Y": 0.3597
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 181.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 179.5,
                         "BottomMargin": 111.5,
                         "Tag": 67,
                         "ActionTag": 225969662,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_attack_value",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1226,30 +1234,30 @@
                           "Y": 0.4403
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 156.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 154.5,
                         "BottomMargin": 136.5,
                         "Tag": 69,
                         "ActionTag": 120377007,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_tap_value",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1268,30 +1276,30 @@
                           "Y": 0.279
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 206.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 204.5,
                         "BottomMargin": 86.5,
                         "Tag": 70,
                         "ActionTag": 467702416,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_life_value",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1310,30 +1318,30 @@
                           "Y": 0.1984
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 231.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 229.5,
                         "BottomMargin": 61.5,
                         "Tag": 72,
                         "ActionTag": 1799669602,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_ctr_chance_rate",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1352,30 +1360,30 @@
                           "Y": 0.1177
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 256.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 254.5,
                         "BottomMargin": 36.5,
                         "Tag": 71,
                         "ActionTag": -373027225,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_ctr_modify_rate",
                         "ctype": "TextAtlasObjectData"
                       },
                       {
-                        "CharWidth": 17,
-                        "CharHeight": 17,
+                        "CharWidth": 20,
+                        "CharHeight": 19,
                         "LabelText": "999999",
                         "StartChar": ".",
                         "LabelAtlasFileImage_CNB": {
                           "Type": "Normal",
-                          "Path": "mainUI/font22_yellow_b.png",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1394,322 +1402,21 @@
                           "Y": 0.0371
                         },
                         "PreSize": {
-                          "X": 0.51,
-                          "Y": 0.0548
+                          "X": 0.6,
+                          "Y": 0.0613
                         },
                         "LeftMargin": 48.4496,
-                        "RightMargin": 49.5504,
-                        "TopMargin": 281.5,
+                        "RightMargin": 31.5504,
+                        "TopMargin": 279.5,
                         "BottomMargin": 11.5,
                         "Tag": 73,
                         "ActionTag": 1608258050,
                         "Size": {
-                          "X": 102.0,
-                          "Y": 17.0
+                          "X": 120.0,
+                          "Y": 19.0
                         },
                         "Name": "total_atk_period_rate",
                         "ctype": "TextAtlasObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 19.7833
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.0638
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 281.2167,
-                        "BottomMargin": 10.7833,
-                        "Tag": 76,
-                        "ActionTag": 882707464,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 44.4555
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.1434
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 256.5445,
-                        "BottomMargin": 35.4555,
-                        "Tag": 77,
-                        "ActionTag": 2003008370,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_0",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 69.1886
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.2232
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 231.8114,
-                        "BottomMargin": 60.1886,
-                        "Tag": 78,
-                        "ActionTag": 229679312,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_1",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 169.7217
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.5475
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 131.2783,
-                        "BottomMargin": 160.7217,
-                        "Tag": 79,
-                        "ActionTag": 847482006,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_2",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 193.9238
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.6256
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 107.0762,
-                        "BottomMargin": 184.9238,
-                        "Tag": 80,
-                        "ActionTag": 291768987,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_3",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 219.7468
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.7089
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 81.2532,
-                        "BottomMargin": 210.7468,
-                        "Tag": 81,
-                        "ActionTag": 1094803537,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_4",
-                        "ctype": "ImageViewObjectData"
-                      },
-                      {
-                        "FileData": {
-                          "Type": "Normal",
-                          "Path": "statisticsUI/f22_y.png",
-                          "Plist": ""
-                        },
-                        "Scale9Width": 21,
-                        "Scale9Height": 18,
-                        "AnchorPoint": {
-                          "ScaleX": 0.5,
-                          "ScaleY": 0.5
-                        },
-                        "Position": {
-                          "X": 170.7417,
-                          "Y": 244.5694
-                        },
-                        "Scale": {
-                          "ScaleX": 1.0,
-                          "ScaleY": 1.0
-                        },
-                        "CColor": {},
-                        "IconVisible": false,
-                        "PrePosition": {
-                          "X": 0.8537,
-                          "Y": 0.7889
-                        },
-                        "PreSize": {
-                          "X": 0.105,
-                          "Y": 0.0581
-                        },
-                        "LeftMargin": 160.2417,
-                        "RightMargin": 18.7583,
-                        "TopMargin": 56.4306,
-                        "BottomMargin": 235.5694,
-                        "Tag": 82,
-                        "ActionTag": -711914907,
-                        "Size": {
-                          "X": 21.0,
-                          "Y": 18.0
-                        },
-                        "Name": "Image_34_5",
-                        "ctype": "ImageViewObjectData"
                       }
                     ],
                     "ActionTag": -1526191025,
@@ -1727,6 +1434,789 @@
                   "Y": 370.0
                 },
                 "Name": "current",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 14.0,
+                  "Y": 20.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0219,
+                  "Y": 0.027
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.3514
+                },
+                "LeftMargin": 14.0,
+                "RightMargin": 16.0,
+                "TopMargin": 460.0,
+                "BottomMargin": 20.0,
+                "Tag": 75,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_05.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 6,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 76,
+                    "ActionTag": -1059311514,
+                    "Size": {
+                      "X": 610.0,
+                      "Y": 260.0
+                    },
+                    "Name": "cumulative_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "statisticsUI/cumulative_text.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 142,
+                    "Scale9Height": 47,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 96.4996,
+                      "Y": 233.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1582,
+                      "Y": 0.8962
+                    },
+                    "PreSize": {
+                      "X": 0.2328,
+                      "Y": 0.1808
+                    },
+                    "LeftMargin": 25.4996,
+                    "RightMargin": 442.5004,
+                    "TopMargin": 3.5,
+                    "BottomMargin": 209.5,
+                    "Tag": 77,
+                    "ActionTag": -1622659418,
+                    "Size": {
+                      "X": 142.0,
+                      "Y": 47.0
+                    },
+                    "Name": "cumulative_text",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 30.742,
+                      "Y": 31.1521
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0504,
+                      "Y": 0.1198
+                    },
+                    "PreSize": {
+                      "X": 0.3279,
+                      "Y": 0.7308
+                    },
+                    "LeftMargin": 30.742,
+                    "RightMargin": 379.258,
+                    "TopMargin": 38.8479,
+                    "BottomMargin": 31.1521,
+                    "Tag": 91,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text19.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 150.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.7895
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 17.0,
+                        "BottomMargin": 150.0,
+                        "Tag": 81,
+                        "ActionTag": 1804693783,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_gold",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text17.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 125.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.6579
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 42.0,
+                        "BottomMargin": 125.0,
+                        "Tag": 79,
+                        "ActionTag": 402149767,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_relic",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text16.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 100.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.5263
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 67.0,
+                        "BottomMargin": 100.0,
+                        "Tag": 78,
+                        "ActionTag": -1042699242,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_fairy",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text24.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.3947
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 92.0,
+                        "BottomMargin": 75.0,
+                        "Tag": 86,
+                        "ActionTag": 489712384,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_chest_open",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text22.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 50.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.2632
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 117.0,
+                        "BottomMargin": 50.0,
+                        "CallBackType": "Click",
+                        "Tag": 84,
+                        "ActionTag": -296740336,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_enemy_kill",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text23.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.1316
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 142.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 85,
+                        "ActionTag": 901180074,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_boss_kill",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "statisticsUI/text25.png",
+                          "Plist": ""
+                        },
+                        "Scale9Width": 200,
+                        "Scale9Height": 23,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 0.1211
+                        },
+                        "TopMargin": 167.0,
+                        "Tag": 87,
+                        "ActionTag": -810216555,
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 23.0
+                        },
+                        "Name": "statistics.total_max_level",
+                        "ctype": "ImageViewObjectData"
+                      }
+                    ],
+                    "ActionTag": 1878732397,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 190.0
+                    },
+                    "Name": "text",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 447.9211,
+                      "Y": 31.1521
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7343,
+                      "Y": 0.1198
+                    },
+                    "PreSize": {
+                      "X": 0.2295,
+                      "Y": 0.7308
+                    },
+                    "LeftMargin": 447.9211,
+                    "RightMargin": 22.0789,
+                    "TopMargin": 38.8479,
+                    "BottomMargin": 31.1521,
+                    "Tag": 104,
+                    "Children": [
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0002,
+                          "Y": 150.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.7895
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "LeftMargin": 0.0002,
+                        "RightMargin": 19.9998,
+                        "TopMargin": 21.0,
+                        "BottomMargin": 150.0,
+                        "Tag": 92,
+                        "ActionTag": -71362526,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_gold",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 125.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.6579
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 46.0,
+                        "BottomMargin": 125.0,
+                        "Tag": 93,
+                        "ActionTag": 1418645770,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_relic",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 100.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.5263
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 71.0,
+                        "BottomMargin": 100.0,
+                        "Tag": 95,
+                        "ActionTag": 769687023,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_fairy",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 75.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.3947
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 96.0,
+                        "BottomMargin": 75.0,
+                        "Tag": 100,
+                        "ActionTag": 1591833617,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_chest_open",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 50.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.2632
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 121.0,
+                        "BottomMargin": 50.0,
+                        "Tag": 98,
+                        "ActionTag": 1600040371,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_enemy_kill",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 25.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.1316
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 146.0,
+                        "BottomMargin": 25.0,
+                        "Tag": 99,
+                        "ActionTag": -521604477,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_boss_kill",
+                        "ctype": "TextAtlasObjectData"
+                      },
+                      {
+                        "CharWidth": 20,
+                        "CharHeight": 19,
+                        "LabelText": "999999",
+                        "StartChar": ".",
+                        "LabelAtlasFileImage_CNB": {
+                          "Type": "Normal",
+                          "Path": "mainUI/font22_yellow_kmbb.png",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 0.8571,
+                          "Y": 0.1
+                        },
+                        "RightMargin": 20.0,
+                        "TopMargin": 171.0,
+                        "Tag": 101,
+                        "ActionTag": 1825850069,
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 19.0
+                        },
+                        "Name": "statistics.total_max_level",
+                        "ctype": "TextAtlasObjectData"
+                      }
+                    ],
+                    "ActionTag": 598137377,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 190.0
+                    },
+                    "Name": "number",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": -1758145486,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 260.0
+                },
+                "Name": "cumulative",
                 "ctype": "PanelObjectData"
               }
             ],
@@ -1749,10 +2239,9 @@
       "UsedResources": [
         "mainUI/bg_01.png",
         "mainUI/bg_05.png",
-        "mainUI/font22_yellow_b.png",
         "mainUI/font22_yellow_kmbb.png",
+        "statisticsUI/cumulative_text.png",
         "statisticsUI/current_text.png",
-        "statisticsUI/f22_y.png",
         "statisticsUI/text04.png",
         "statisticsUI/text05.png",
         "statisticsUI/text06.png",
@@ -1765,6 +2254,13 @@
         "statisticsUI/text13.png",
         "statisticsUI/text14.png",
         "statisticsUI/text15.png",
+        "statisticsUI/text16.png",
+        "statisticsUI/text17.png",
+        "statisticsUI/text19.png",
+        "statisticsUI/text22.png",
+        "statisticsUI/text23.png",
+        "statisticsUI/text24.png",
+        "statisticsUI/text25.png",
         "statisticsUI/title_text.png"
       ],
       "ctype": "GameFileData"

@@ -93,6 +93,10 @@ var Hero = function (heroData) {
         return lv >= this.getMaxLevel();
     }
 
+    this.getUnLock=function(){
+        return data['unlock']
+    }
+
     this.getNextLevelUpgrade = function () {
         var level = this.getLv();
         var cost = getLevelData(data, 'upgrade', level + 1);

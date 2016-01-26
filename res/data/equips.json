@@ -1,2642 +1,2539 @@
-{
-  "e10101": {
-    "name": "血饮",
-    "desc": "被动增加主角{effect1_value}点{effect1_name}、{effect2_value}点{effect2_name}。",
-    "icon": "e10101.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 168,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 1069,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10895,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 154,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 948,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8670,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 140,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 837,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 6849,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 127,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 735,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 5369,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 115,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 643,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4173,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 103,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 559,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 3216,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 92,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 483,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2455,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 81,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 415,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1855,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 71,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 354,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1386,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 62,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 300,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1024,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 53,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 252,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 747,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 45,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 210,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 538,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 37,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 173,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 381,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 31,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 141,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 266,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 24,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 114,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 183,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 19,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 90,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 123,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 14,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 71,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 81,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 10,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 54,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 52,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 4,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 41,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 33,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 2,
-          "type": "attack_value"
-        },
-        "effect2": {
-          "value": 30,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 20,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      }
-    ]
-  },
-  "e10102": {
-    "name": "黑切",
-    "desc": "被动增加主角{effect1_value}点{effect1_name}、并提升{effect2_value}的{effect2_name}。",
-    "icon": "e10102.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 168,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 20,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 16526,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 154,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 19,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 13321,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 140,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 18,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 10667,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 127,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 17,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 8483,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 115,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 16,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 6697,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 103,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 15,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 5245,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 92,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 14,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 4074,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 81,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 13,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 3137,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 71,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 12,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 2392,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 62,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 11,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 1806,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 53,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 10,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 1348,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 45,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 9,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 995,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 37,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 8,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 725,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 31,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 7,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 521,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 24,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 6,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 369,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 19,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 5,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 257,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 14,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 4,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 176,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 10,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 3,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 118,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 4,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 2,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 78,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 2,
-          "type": "tap_value"
-        },
-        "effect2": {
-          "value": 1,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 50,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      }
-    ]
-  },
-  "e10201": {
-    "name": "帝殒",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10201.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 845,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 13063,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 707,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10455,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 588,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8309,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 485,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 6555,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 396,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 5130,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 320,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 3982,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 256,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 3063,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 203,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2334,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 158,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1760,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 121,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1313,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 92,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 968,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 68,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 704,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 49,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 506,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 35,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 358,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 24,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 249,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 16,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 170,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 10,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 114,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 6,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 75,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 4,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 48,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 2,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 30,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      }
-    ]
-  },
-  "e10202": {
-    "name": "击碎者 ",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10202.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 777,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 18004,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 706,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 14549,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 639,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 11683,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 577,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 9317,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 519,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 7378,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 465,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 5797,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 414,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4519,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 368,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 3492,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 325,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2673,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 286,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2026,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 249,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1520,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 216,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1127,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 187,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 826,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 160,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 597,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 135,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 425,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 114,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 298,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 94,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 206,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 77,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 139,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 63,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 92,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 50,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 60,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      }
-    ]
-  },
-  "e10301": {
-    "name": "断离",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10301.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 944,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 14900,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 795,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 11972,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 664,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 9556,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 550,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 7572,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 452,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 5956,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 368,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4646,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 297,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 3594,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 236,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2754,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 186,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2090,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 144,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1570,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 110,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1166,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 83,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 855,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 61,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 619,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 44,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 442,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 31,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 311,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 21,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 215,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 14,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 146,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 9,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 97,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 5,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 63,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 3,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 40,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      }
-    ]
-  },
-  "e10302": {
-    "name": "黑色怒火",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10302.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 837,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 19371,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 763,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 15688,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 692,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 12625,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 627,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10094,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 565,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8013,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 508,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 6314,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 454,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4935,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 405,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 3825,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 359,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2939,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 317,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2235,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 278,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1683,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 243,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1253,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 210,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 922,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 181,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 670,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 154,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 480,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 131,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 338,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 110,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 235,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 91,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 160,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 74,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 107,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 60,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 70,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      }
-    ]
-  },
-  "e10401": {
-    "name": "命运",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10401.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 1026,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 16526,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 866,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 13321,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 726,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10667,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 604,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8483,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 499,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 6697,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 408,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 5245,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 331,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4074,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 265,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 3137,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 210,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2392,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 164,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1806,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 126,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1348,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 96,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 995,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 71,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 725,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 52,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 521,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 37,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 369,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 26,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 257,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 17,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 176,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 11,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 118,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 7,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 78,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 4,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 50,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      }
-    ]
-  },
-  "e10402": {
-    "name": "霜之哀伤",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10402.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 893,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 20650,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 815,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 16755,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 742,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 13511,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 673,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10824,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 609,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8612,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 548,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 6802,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 492,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 5330,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 440,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4143,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 391,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 3191,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 347,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2435,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 305,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1839,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 268,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1375,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 233,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1015,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 201,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 740,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 173,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 533,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 147,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 378,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 124,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 263,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 104,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 181,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 86,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 121,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 70,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 80,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      }
-    ]
-  },
-  "e10501": {
-    "name": "残念",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10501.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 1096,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 18004,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 928,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 14549,
-          "unit": "gold"
-        },
-        "unlockLevel": 27
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 781,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 11683,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 652,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 9317,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 540,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 7378,
-          "unit": "gold"
-        },
-        "unlockLevel": 23
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 443,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 5797,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 360,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4519,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 290,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 3492,
-          "unit": "gold"
-        },
-        "unlockLevel": 19
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 231,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2673,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 181,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 2026,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 141,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1520,
-          "unit": "gold"
-        },
-        "unlockLevel": 14
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 107,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 1127,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 80,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 826,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 59,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 597,
-          "unit": "gold"
-        },
-        "unlockLevel": 11
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 42,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 425,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 30,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 298,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 20,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 206,
-          "unit": "gold"
-        },
-        "unlockLevel": 7
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 13,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 139,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 8,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 92,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 5,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 60,
-          "unit": "gold"
-        },
-        "unlockLevel": 3
-      }
-    ]
-  },
-  "e10502": {
-    "name": "制作者之手",
-    "desc": "被动增加该英雄{effect1_value}点{effect1_name}。",
-    "icon": "e10502.png",
-    "type": 0,
-    "levelDatas": [
-      {
-        "level": 20,
-        "effect1": {
-          "value": 947,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 21857,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 19,
-        "effect1": {
-          "value": 865,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 17763,
-          "unit": "gold"
-        },
-        "unlockLevel": 28
-      },
-      {
-        "level": 18,
-        "effect1": {
-          "value": 789,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 14349,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 17,
-        "effect1": {
-          "value": 717,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 11517,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 16,
-        "effect1": {
-          "value": 650,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 9181,
-          "unit": "gold"
-        },
-        "unlockLevel": 24
-      },
-      {
-        "level": 15,
-        "effect1": {
-          "value": 587,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 7266,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 14,
-        "effect1": {
-          "value": 528,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 5707,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 13,
-        "effect1": {
-          "value": 473,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4446,
-          "unit": "gold"
-        },
-        "unlockLevel": 18
-      },
-      {
-        "level": 12,
-        "effect1": {
-          "value": 422,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 3433,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 11,
-        "effect1": {
-          "value": 375,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 2627,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 10,
-        "effect1": {
-          "value": 332,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1990,
-          "unit": "gold"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 9,
-        "effect1": {
-          "value": 292,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1492,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 8,
-        "effect1": {
-          "value": 255,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 1105,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 7,
-        "effect1": {
-          "value": 222,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 809,
-          "unit": "gold"
-        },
-        "unlockLevel": 12
-      },
-      {
-        "level": 6,
-        "effect1": {
-          "value": 191,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 584,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 5,
-        "effect1": {
-          "value": 164,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 416,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 139,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 292,
-          "unit": "gold"
-        },
-        "unlockLevel": 9
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 117,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 201,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 97,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 136,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      },
-      {
-        "level": 1,
-        "effect1": {
-          "value": 80,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 90,
-          "unit": "gold"
-        },
-        "unlockLevel": 6
-      }
-    ]
-  }
-}
+{"e10101": {
+  "name" : "血饮",
+  "desc" : "被动增加主角{effect1_value}点{effect1_name}、{effect2_value}点{effect2_name}。",
+  "icon" : "e10101.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 168,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 1069,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 10895,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 154,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 948,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 8670,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 140,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 837,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 6849,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 127,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 735,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 5369,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 115,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 643,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 4173,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 103,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 559,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 3216,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 92,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 483,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2455,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 81,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 415,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1855,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 71,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 354,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1386,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 62,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 300,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1024,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 53,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 252,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 747,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 45,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 210,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 538,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 37,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 173,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 381,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 31,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 141,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 266,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 24,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 114,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 183,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 19,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 90,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 123,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 14,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 71,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 81,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 54,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 52,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 4,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 41,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 33,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 2,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 30,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 20,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "attack_value"
+    },
+    "effect2" : {
+      "value" : 0,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  } ]
+}, "e10102": {
+  "name" : "黑切",
+  "desc" : "被动增加主角{effect1_value}点{effect1_name}、并提升{effect2_value}的{effect2_name}。",
+  "icon" : "e10102.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 168,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 20,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 16526,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 154,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 19,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 13321,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 140,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 18,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 10667,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 127,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 17,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 8483,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 115,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 16,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 6697,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 103,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 15,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 5245,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 92,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 14,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 4074,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 81,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 13,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 3137,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 71,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 12,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 2392,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 62,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 11,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 1806,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 53,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 10,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 1348,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 45,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 9,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 995,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 37,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 8,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 725,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 31,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 7,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 521,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 24,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 6,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 369,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 19,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 5,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 257,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 14,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 4,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 176,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 10,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 3,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 118,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 4,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 2,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 78,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 2,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 1,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 50,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "tap_value"
+    },
+    "effect2" : {
+      "value" : 0,
+      "type" : "life_rate"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  } ]
+}, "e10201": {
+  "name" : "帝殒",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10201.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 845,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 13063,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 707,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 10455,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 588,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 8309,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 485,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 6555,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 396,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 5130,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 320,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 3982,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 256,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 3063,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 203,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2334,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 158,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1760,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 121,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1313,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 92,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 968,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 68,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 704,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 49,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 506,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 35,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 358,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 24,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 249,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 16,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 170,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 10,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 114,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 6,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 75,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 4,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 48,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 2,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 30,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  } ]
+},"e10202":  {
+  "name" : "击碎者 ",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10202.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 777,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 18004,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 706,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 14549,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 639,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 11683,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 577,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 9317,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 519,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 7378,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 465,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 5797,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 414,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 4519,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 368,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 3492,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 325,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2673,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 286,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2026,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 249,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1520,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 216,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1127,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 187,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 826,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 160,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 597,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 135,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 425,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 114,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 298,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 94,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 206,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 77,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 139,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 63,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 92,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 50,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 60,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  } ]
+}, "e10301": {
+  "name" : "断离",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10301.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 944,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 14900,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 795,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 11972,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 664,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 9556,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 550,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 7572,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 452,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 5956,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 368,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 4646,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 297,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 3594,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 236,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2754,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 186,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2090,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 144,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1570,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 110,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1166,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 83,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 855,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 61,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 619,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 44,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 442,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 31,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 311,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 21,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 215,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 14,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 146,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 9,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 97,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 5,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 63,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 3,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 40,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  } ]
+},"e10302":  {
+  "name" : "黑色怒火",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10302.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 837,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 19371,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 763,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 15688,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 692,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 12625,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 627,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 10094,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 565,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 8013,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 508,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 6314,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 454,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 4935,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 405,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 3825,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 359,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2939,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 317,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2235,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 278,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1683,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 243,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1253,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 210,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 922,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 181,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 670,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 154,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 480,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 131,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 338,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 110,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 235,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 91,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 160,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 74,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 107,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 60,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 70,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  } ]
+}, "e10401": {
+  "name" : "命运",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10401.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 1026,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 16526,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 866,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 13321,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 726,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 10667,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 604,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 8483,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 499,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 6697,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 408,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 5245,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 331,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 4074,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 265,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 3137,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 210,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2392,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 164,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1806,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 126,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1348,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 96,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 995,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 71,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 725,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 52,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 521,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 37,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 369,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 26,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 257,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 17,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 176,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 11,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 118,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 7,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 78,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 4,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 50,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  } ]
+},"e10402":  {
+  "name" : "霜之哀伤",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10402.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 893,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 20650,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 815,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 16755,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 742,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 13511,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 673,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 10824,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 609,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 8612,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 548,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 6802,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 492,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 5330,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 440,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 4143,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 391,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 3191,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 347,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2435,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 305,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1839,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 268,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1375,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 233,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1015,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 201,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 740,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 173,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 533,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 147,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 378,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 124,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 263,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 104,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 181,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 86,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 121,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 70,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 80,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  } ]
+}, "e10501": {
+  "name" : "残念",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10501.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 1096,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 18004,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 928,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 14549,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 27
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 781,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 11683,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 652,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 9317,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 540,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 7378,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 23
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 443,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 5797,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 360,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 4519,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 290,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 3492,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 19
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 231,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2673,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 181,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 2026,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 141,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1520,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 14
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 107,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 1127,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 80,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 826,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 59,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 597,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 11
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 42,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 425,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 30,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 298,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 20,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 206,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 7
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 13,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 139,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 8,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 92,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 5,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 60,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "attack_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 3
+  } ]
+}, "e10502": {
+  "name" : "制作者之手",
+  "desc" : "被动增加该英雄{effect1_value}点{effect1_name}。",
+  "icon" : "e10502.png",
+  "type" : 0,
+  "levelDatas" : [ {
+    "level" : 20,
+    "effect1" : {
+      "value" : 947,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 21857,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 19,
+    "effect1" : {
+      "value" : 865,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 17763,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 28
+  }, {
+    "level" : 18,
+    "effect1" : {
+      "value" : 789,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 14349,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 17,
+    "effect1" : {
+      "value" : 717,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 11517,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 16,
+    "effect1" : {
+      "value" : 650,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 9181,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 24
+  }, {
+    "level" : 15,
+    "effect1" : {
+      "value" : 587,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 7266,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 14,
+    "effect1" : {
+      "value" : 528,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 5707,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 13,
+    "effect1" : {
+      "value" : 473,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 4446,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 18
+  }, {
+    "level" : 12,
+    "effect1" : {
+      "value" : 422,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 3433,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 11,
+    "effect1" : {
+      "value" : 375,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 2627,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 10,
+    "effect1" : {
+      "value" : 332,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1990,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 15
+  }, {
+    "level" : 9,
+    "effect1" : {
+      "value" : 292,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1492,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 8,
+    "effect1" : {
+      "value" : 255,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 1105,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 7,
+    "effect1" : {
+      "value" : 222,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 809,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 12
+  }, {
+    "level" : 6,
+    "effect1" : {
+      "value" : 191,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 584,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 5,
+    "effect1" : {
+      "value" : 164,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 416,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 4,
+    "effect1" : {
+      "value" : 139,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 292,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 9
+  }, {
+    "level" : 3,
+    "effect1" : {
+      "value" : 117,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 201,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 2,
+    "effect1" : {
+      "value" : 97,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 136,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 1,
+    "effect1" : {
+      "value" : 80,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 90,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  }, {
+    "level" : 0,
+    "effect1" : {
+      "value" : 0,
+      "type" : "life_value"
+    },
+    "upgrade" : {
+      "value" : 0,
+      "unit" : "gold"
+    },
+    "unlockLevel" : 6
+  } ]
+} }
