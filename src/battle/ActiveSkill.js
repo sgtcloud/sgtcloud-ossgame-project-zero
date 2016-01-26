@@ -87,6 +87,8 @@ var ActiveSkill = cc.Class.extend({
     updateTargets: function () {
         if (this.effect === "single_damage_once") {
             this.targets = [this.battle.findNextEnemy()];
+        } else if (this.effect === "multi_recover_once") {
+            this.targets = this.battle.getAllHeroes().getAllLived();
         } else if (this.effect.indexOf("buff") === 0) {
             this.targets = this.battle.getAllHeroes().getAllLived();
         } else {
