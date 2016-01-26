@@ -112,8 +112,13 @@ var BattlePanel = cc.Node.extend({
         this.timeBar = root.getChildByName('time_bar');
 
         this.timeText.setVisible(false);
-        this.rewardBtn = root.getChildByName('reward_btn');
+
         var self = this;
+        this.statistics_btn = root.getChildByName("statistics_btn");
+        bindButtonCallback(this.statistics_btn, function () {
+            popup(new GamePopup(new StatisticsUnit(),cc.p(320,580),false), 4000);
+        });
+        this.rewardBtn = root.getChildByName('reward_btn');
         this.openPopup = function () {
             var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
@@ -140,8 +145,8 @@ var BattlePanel = cc.Node.extend({
                 //customEventHelper.sendEvent(EVENT);
                 PlayerData.updatePlayer();
             });
-            popup(gamePopup, 1000);
-            gamePopup.popup();
+            popup(gamePopup, 4000);
+            //gamePopup.popup();
         };
         bindButtonCallback(this.rewardBtn, function () {
             self.openPopup();

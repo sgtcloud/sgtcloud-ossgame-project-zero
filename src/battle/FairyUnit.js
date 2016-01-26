@@ -21,11 +21,11 @@ var FairyUnit = cc.Node.extend({
         var random = getRandomInt(0, 2);
         this.initFly(random);
         var self = this;
-        this.bindClickFairyEvent = function () {
+        fairy.bindClickFairyEvent = function () {
             var listener = cc.EventListener.create({
-                event: cc.EventListener.MOUSE,
-                swallowTouches: true,
-                onMouseDown: function (touch, event) {
+                event: cc.EventListener.TOUCH_ONE_BY_ONE,
+                swallowTouches: false,
+                onTouchBegan: function (touch, event) {
                     //self.FairyUnit.convert
                     if (self.animationState == 'run') {
                         var touchPosition = fairy.convertToNodeSpace(touch.getLocation());
@@ -44,9 +44,9 @@ var FairyUnit = cc.Node.extend({
                     }
                 },
             });
-            cc.eventManager.addListener(listener, this);
+            cc.eventManager.addListener(listener, fairy);
         };
-        this.bindClickFairyEvent();
+        fairy.bindClickFairyEvent();
         this.addChild(this.node);
     },
     playAnimation: function (name, falg) {
@@ -88,6 +88,7 @@ var FairyUnit = cc.Node.extend({
             self.getRandomEvent();
             self.createChest(position);
         }, this), a, b, cc.callFunc(function () {
+            player.statistics.total_fairy += 1;
             self.removeFromParent(true);
         }, this)));
     },
@@ -145,6 +146,7 @@ var FairyUnit = cc.Node.extend({
             cc.log(res.weight + " , " + res.skill_id + " , " + res.level);
             self.chestUnit.parent.reset();
         }, this.chestUnit), a, b, cc.callFunc(function () {
+            player.statistics.total_chest_open += 1;
             self.chestUnit.removeFromParent(true);
         }, this.chestUnit)));
     },

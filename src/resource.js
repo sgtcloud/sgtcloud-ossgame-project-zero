@@ -96,7 +96,8 @@ var res = {
     pack_layer_json: "res/PackLayer.json",
     buff_tip_json: "res/BuffTips.json",
     buff_layer_json: "res/BuffLayer.json",
-    statistics_layer: "res/StatisticsLayer.json"
+    statistics_layer: "res/StatisticsLayer.json",
+    font22_yellow_kmbb_export_fnt: "res/font22_yellow_kmbb-export.fnt"
 };
 
 

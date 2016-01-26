@@ -681,8 +681,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 49.1249,
-                  "Y": 694.0392
+                  "X": 48.0384,
+                  "Y": 690.333
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -691,17 +691,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0768,
-                  "Y": 0.9379
+                  "X": 0.0751,
+                  "Y": 0.9329
                 },
                 "PreSize": {
                   "X": 0.1328,
                   "Y": 0.1041
                 },
-                "LeftMargin": 6.6249,
-                "RightMargin": 548.3751,
-                "TopMargin": 7.4608,
-                "BottomMargin": 655.5392,
+                "LeftMargin": 5.5384,
+                "RightMargin": 549.4615,
+                "TopMargin": 11.167,
+                "BottomMargin": 651.833,
                 "Tag": 77,
                 "ActionTag": 1140666408,
                 "Size": {
@@ -772,10 +772,12 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 192.1204,
+                  "X": 189.1205,
                   "Y": 265.6887
                 },
                 "Scale": {
@@ -785,15 +787,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3002,
+                  "X": 0.2955,
                   "Y": 0.359
                 },
                 "PreSize": {
                   "X": 0.4063,
                   "Y": 0.2432
                 },
-                "LeftMargin": 192.1204,
-                "RightMargin": 187.8796,
+                "LeftMargin": 189.1205,
+                "RightMargin": 190.8795,
                 "TopMargin": 294.3113,
                 "BottomMargin": 265.6887,
                 "Tag": 366,
@@ -1323,8 +1325,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 49.1248,
-                  "Y": 605.9758
+                  "X": 48.0384,
+                  "Y": 528.271
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1333,17 +1335,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0768,
-                  "Y": 0.8189
+                  "X": 0.0751,
+                  "Y": 0.7139
                 },
                 "PreSize": {
                   "X": 0.1328,
                   "Y": 0.1041
                 },
-                "LeftMargin": 6.6248,
-                "RightMargin": 548.3751,
-                "TopMargin": 95.5242,
-                "BottomMargin": 567.4758,
+                "LeftMargin": 5.5384,
+                "RightMargin": 549.4615,
+                "TopMargin": 173.229,
+                "BottomMargin": 489.771,
                 "Tag": 199,
                 "ActionTag": 556918955,
                 "Size": {
@@ -1351,6 +1353,81 @@
                   "Y": 77.0
                 },
                 "Name": "reward_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/login_reward.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/login_reward.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/login_reward.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 55,
+                "Scale9Height": 55,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 48.0384,
+                  "Y": 609.302
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0751,
+                  "Y": 0.8234
+                },
+                "PreSize": {
+                  "X": 0.1328,
+                  "Y": 0.1041
+                },
+                "LeftMargin": 5.5384,
+                "RightMargin": 549.4615,
+                "TopMargin": 92.198,
+                "BottomMargin": 570.802,
+                "Tag": 105,
+                "ActionTag": 460589075,
+                "Size": {
+                  "X": 85.0,
+                  "Y": 77.0
+                },
+                "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -1379,6 +1456,7 @@
         "mainUI/clear_reward.png",
         "mainUI/font20_white.png",
         "mainUI/font22_yellow.png",
+        "mainUI/login_reward.png",
         "mainUI/offline_reward.png"
       ],
       "ctype": "GameFileData"

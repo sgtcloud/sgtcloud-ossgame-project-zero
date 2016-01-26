@@ -967,10 +967,6 @@ var ShopLayerMenu = BattleMenu.extend({
             var goldText = showMoneyTree.getChildByName("gold_text");
             diamondText.ignoreContentAdaptWithSize(true);
             diamondText.setString(CONSTS.money_tree_one_price);
-            /*var textAtlas = new ccui.TextAtlas("1","res/mainUI/font22_yellow_kmbb.png",20,19,"%kmb");
-            textAtlas.ignoreContentAdaptWithSize(true);
-            textAtlas.setPosition(cc.p(diamondText.getPositionX()+20,diamondText.getPositionY()));
-            showMoneyTree.addChild(textAtlas);*/
             goldText.ignoreContentAdaptWithSize(true);
             goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");

@@ -20,14 +20,14 @@ var StatisticsUnit = cc.Node.extend({
         var total_ctr_modify_rate = number.getChildByName('total_ctr_modify_rate');
         var total_atk_period_rate = number.getChildByName('total_atk_period_rate');
         setIgnoreContentAdaptWithSize([total_hero,total_hero_levels,total_gold_rate,total_tap_rate,total_life_rate,total_attack_rate,total_attack_value,total_tap_value,total_life_value,total_ctr_chance_rate,total_ctr_modify_rate,total_atk_period_rate])
-        total_hero.setString(PlayerData.getTotalHeroNum());
-        total_hero_levels.setString(PlayerData.getTotalHeroLevels());
+        total_hero.setString(PlayerData.getTotalHeroNum()+"k");
+        total_hero_levels.setString(PlayerData.getTotalHeroLevels()+"m");
         total_gold_rate.setString(PlayerData.globe_gold_rate+PlayerData.tmp_gold_rate);
         total_tap_rate.setString(PlayerData.globe_tap_rate+PlayerData.tmp_tap_rate);
         total_life_rate.setString(PlayerData.globe_life_rate);
         total_attack_rate.setString(PlayerData.globe_attack_rate+PlayerData.tmp_attack_rate);
         total_attack_value.setString(PlayerData.getTotalAttack());
-        total_tap_value.setString(PlayerData.getTotalHit());
+        total_tap_value.setString(PlayerData.getTotalHit()+"b");
         total_life_value.setString(PlayerData.getTotalLife());
         total_ctr_chance_rate.setString(PlayerData.globe_ctr_chance_rate+PlayerData.tmp_ctr_chance_rate);
         total_ctr_modify_rate.setString(PlayerData.globe_ctr_modify_rate+PlayerData.tmp_ctr_modify_rate);

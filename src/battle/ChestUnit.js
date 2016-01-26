@@ -30,9 +30,9 @@ var ChestUnit = cc.Node.extend({
     clickChest:  function (callback) {
         var self = this;
         var listener = cc.EventListener.create({
-            event: cc.EventListener.MOUSE,
-            swallowTouches: true,
-            onMouseDown: function (touch, event) {
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            onTouchBegan: function (touch, event) {
                 if (self.animationState == 'close') {
                     var touchPosition = self.chest.convertToNodeSpace(touch.getLocation());
                     var s = self.chest.getContentSize();
@@ -44,6 +44,6 @@ var ChestUnit = cc.Node.extend({
                 return false;
             },
         });
-        cc.eventManager.addListener(listener, this);
+        cc.eventManager.addListener(listener, this.chest);
     }
 });
