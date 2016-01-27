@@ -23,6 +23,12 @@ var BuffView=cc.Node.extend({
     }
 });
 
+var BuffList=cc.Class.extend({
+    ctor:function(){
+        this.root=ccs.csLoader.createNode(res);
+    }
+});
+
 var BuffLayer=cc.Class.extend({
     ctor:function(){
         //this._super();

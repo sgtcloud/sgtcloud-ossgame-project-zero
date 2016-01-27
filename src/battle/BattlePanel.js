@@ -111,8 +111,8 @@ var BattlePanel = cc.Node.extend({
         this.icon = root.getChildByName('icon');
         this.timeBar = root.getChildByName('time_bar');
 
-        this.buffList=root.getChildByName('buff_list');
-        this.buffList.setLocalZOrder(1000);
+        //this.buffList=root.getChildByName('buff_list');
+        //this.buffList.setLocalZOrder(9000);
 
 
         this.timeText.setVisible(false);
