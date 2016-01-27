@@ -6,6 +6,7 @@ var player = {
     "stage_battle_num": 1,
     "into_stage_battle_timestamp": 0,
     "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "first_time": "",
     "resource": {
         "gold": 10,
         "gem": 10,
@@ -134,6 +135,9 @@ var PlayerData = {
                 player.heroes[i].life = this.heroes[i].getLife();
             }
         }
+        if(!player.first_time){
+            player.first_time = Date.parse(new Date());
+        }
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
@@ -243,6 +247,7 @@ var PlayerData = {
                 if (offlineTime > CONSTS.offline_reward_max_time) {
                     offlineTime = CONSTS.offline_reward_max_time;
                 }
+                player.statistics.total_offline_time += offlineTime;
                 return offlineTime / 60;
             }
         }
