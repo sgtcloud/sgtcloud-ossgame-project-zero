@@ -754,59 +754,6 @@
                 "ctype": "LoadingBarObjectData"
               },
               {
-                "DirectionType": "Vertical",
-                "HorizontalType": "Align_HorizontalCenter",
-                "IsBounceEnabled": true,
-                "ScrollDirectionType": 0,
-                "ClipAble": true,
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 150
-                },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 150
-                },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
-                },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 189.1205,
-                  "Y": 265.6887
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2955,
-                  "Y": 0.359
-                },
-                "PreSize": {
-                  "X": 0.4062,
-                  "Y": 0.2432
-                },
-                "LeftMargin": 189.1205,
-                "RightMargin": 190.8795,
-                "TopMargin": 294.3113,
-                "BottomMargin": 265.6887,
-                "Tag": 366,
-                "ActionTag": 535293251,
-                "Size": {
-                  "X": 260.0,
-                  "Y": 180.0
-                },
-                "Name": "buff_list",
-                "ctype": "ListViewObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "Normal",
                   "Path": "mainUI/battle_icon.png",
@@ -1428,6 +1375,47 @@
                 },
                 "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "BuffList.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 200.1612,
+                  "Y": 261.3389
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.3128,
+                  "Y": 0.3532
+                },
+                "PreSize": {
+                  "X": 0.4062,
+                  "Y": 0.2432
+                },
+                "LeftMargin": 200.1612,
+                "RightMargin": 179.8388,
+                "TopMargin": 298.6611,
+                "BottomMargin": 261.3389,
+                "Tag": 132,
+                "ActionTag": -1303931870,
+                "Size": {
+                  "X": 260.0,
+                  "Y": 180.0
+                },
+                "Name": "buff_list",
+                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": 2088090531,
@@ -1449,6 +1437,7 @@
       "UsedResources": [
         "BattleLayer.plist",
         "BattleLayer.png",
+        "BuffList.json",
         "mainUI/bar_bg.png",
         "mainUI/bar1.png",
         "mainUI/bar2.png",

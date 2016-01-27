@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="75" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-920099854" Tag="226" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn" ActionTag="-920099854" Tag="226" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="745304776" Tag="227" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -75,15 +75,15 @@
                 <PreSize X="0.0929" Y="0.1625" />
                 <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="-1295319166" Tag="236" IconVisible="False" LeftMargin="46.6338" RightMargin="21.3662" TopMargin="13.3262" BottomMargin="55.6738" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="72.0000" Y="11.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="48.5025" RightMargin="16.4975" TopMargin="9.3444" BottomMargin="55.6556" LabelText="999999" ctype="TextBMFontObjectData">
+                <Size X="75.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="82.6338" Y="61.1738" />
+                <Position X="86.0025" Y="63.1556" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5902" Y="0.7647" />
-                <PreSize X="0.5143" Y="0.1375" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                <PrePosition X="0.6143" Y="0.7894" />
+                <PreSize X="0.5357" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="per" ActionTag="1362573074" Tag="240" IconVisible="False" LeftMargin="108.1207" RightMargin="14.8793" TopMargin="52.2719" BottomMargin="12.7281" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">
                 <Size X="17.0000" Y="15.0000" />
