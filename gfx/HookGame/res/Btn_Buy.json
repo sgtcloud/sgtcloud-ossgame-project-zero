@@ -121,19 +121,19 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 11,
-                "LabelText": "56478",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "99999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_yellow.png",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
                 "Position": {
-                  "X": 55.0,
-                  "Y": 51.0
+                  "X": 85.6471,
+                  "Y": 57.678
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -142,25 +142,26 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3929,
-                  "Y": 0.6375
+                  "X": 0.6118,
+                  "Y": 0.721
                 },
                 "PreSize": {
-                  "X": 0.4286,
-                  "Y": 0.1375
+                  "X": 0.45,
+                  "Y": 0.1875
                 },
-                "LeftMargin": 55.0,
-                "RightMargin": 25.0,
-                "TopMargin": 18.0,
-                "BottomMargin": 51.0,
-                "Tag": 203,
-                "ActionTag": -91340055,
+                "LeftMargin": 54.1471,
+                "RightMargin": 22.8529,
+                "TopMargin": 14.822,
+                "BottomMargin": 50.178,
+                "CallBackType": "Click",
+                "Tag": 111,
+                "ActionTag": 2062417790,
                 "Size": {
-                  "X": 60.0,
-                  "Y": 11.0
+                  "X": 63.0,
+                  "Y": 15.0
                 },
                 "Name": "text_yellow",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -304,10 +305,11 @@
       },
       "UsedResources": [
         "buttonUI/buy.png",
-        "buttonUI/font16_yellow.png",
         "equipUI/btn1.png",
         "equipUI/btn2.png",
         "equipUI/relic.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "heroUI/diamond.png"
       ],
       "ctype": "GameFileData"

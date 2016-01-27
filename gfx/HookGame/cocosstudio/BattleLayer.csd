@@ -9,13 +9,13 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" LeftMargin="0.8561" RightMargin="-0.8561" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
-                <Position Y="240.0000" />
+                <Position X="0.8561" Y="240.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.3243" />
+                <PrePosition X="0.0013" Y="0.3243" />
                 <PreSize X="1.0000" Y="0.6757" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
@@ -212,7 +212,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4558" Y="0.9655" />
                 <PreSize X="0.1437" Y="0.0270" />
-                <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
+                <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1280" BottomMargin="706.8720" LabelText="56982244103" ctype="TextBMFontObjectData">
                 <Size X="138.0000" Y="19.0000" />
@@ -331,14 +331,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="200.1612" RightMargin="179.8388" TopMargin="298.6611" BottomMargin="261.3389" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="260.0000" Y="180.0000" />
+              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="234.4081" RightMargin="215.5919" TopMargin="309.7909" BottomMargin="250.2091" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="190.0000" Y="180.0000" />
                 <AnchorPoint />
-                <Position X="200.1612" Y="261.3389" />
+                <Position X="234.4081" Y="250.2091" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3128" Y="0.3532" />
-                <PreSize X="0.4063" Y="0.2432" />
+                <PrePosition X="0.3663" Y="0.3381" />
+                <PreSize X="0.2969" Y="0.2432" />
                 <FileData Type="Normal" Path="BuffList.csd" Plist="" />
               </AbstractNodeData>
             </Children>

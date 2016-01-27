@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="74" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-679508907" Tag="241" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn" ActionTag="-679508907" Tag="241" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="-608824153" Tag="242" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -34,15 +34,15 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="-979088261" Tag="252" IconVisible="False" LeftMargin="46.7176" RightMargin="21.2824" TopMargin="48.3982" BottomMargin="20.6018" CharWidth="12" CharHeight="11" LabelText="999999" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="72.0000" Y="11.0000" />
+              <AbstractNodeData Name="diamond_text" ActionTag="268773156" Tag="188" IconVisible="False" LeftMargin="44.4658" RightMargin="8.5342" TopMargin="46.0094" BottomMargin="18.9906" LabelText="9999999" ctype="TextBMFontObjectData">
+                <Size X="87.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="82.7176" Y="26.1018" />
+                <Position X="87.9658" Y="26.4906" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5908" Y="0.3263" />
-                <PreSize X="0.5143" Y="0.1375" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                <PrePosition X="0.6283" Y="0.3311" />
+                <PreSize X="0.6214" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="revive_text" ActionTag="1356611884" CallBackType="Touch" Tag="254" IconVisible="False" LeftMargin="52.2324" RightMargin="35.7676" TopMargin="16.1236" BottomMargin="36.8764" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="52.0000" Y="27.0000" />
