@@ -5,7 +5,9 @@
       <RootFolder Name=".">
         <Folder Name="battleUI">
           <Image Name="boss_text.png" />
-          <Image Name="bossTime_bg.png" />
+          <PlistImageFolder Image="BattleLayer.png" PListFile="BattleLayer.plist" Name=".BattleLayer_PList.Dir">
+            <PlistImageFile Name="battleUI_boss_text.png" Key="battleUI/boss_text.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -354,6 +356,7 @@
           <Fnt Name="font22_yellow_kmbb-export.fnt" />
           <Fnt Name="bitmapFontTest2.fnt" />
         </Folder>
+        <PlistInfo Name="BattleLayer.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

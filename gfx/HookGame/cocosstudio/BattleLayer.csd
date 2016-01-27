@@ -225,7 +225,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4558" Y="0.9655" />
                 <PreSize X="0.1437" Y="0.0270" />
-                <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="334.6155" RightMargin="145.3845" TopMargin="17.8852" BottomMargin="708.1148" CharWidth="16" CharHeight="14" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
                 <Size X="160.0000" Y="14.0000" />

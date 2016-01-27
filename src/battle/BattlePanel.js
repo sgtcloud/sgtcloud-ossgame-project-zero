@@ -116,8 +116,17 @@ var BattlePanel = cc.Node.extend({
 
 
         this.timeText.setVisible(false);
-        this.rewardBtn = root.getChildByName('reward_btn');
+
         var self = this;
+        this.statistics_btn = root.getChildByName("statistics_btn");
+        bindButtonCallback(this.statistics_btn, function () {
+            //var staticUnit = new StatisticsUnit();
+
+            //staticUnit.ignoreAnchorPointForPosition(true);
+            //popup(staticUnit,4000);
+            popup(new GamePopup(new StatisticsUnit(),cc.p(320,580),false), 4000);
+        });
+        this.rewardBtn = root.getChildByName('reward_btn');
         this.openPopup = function () {
             var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
@@ -134,18 +143,20 @@ var BattlePanel = cc.Node.extend({
                 }
             }
             var gamePopup = new GamePopup(offlineRewardLayer);
-            bindButtonCallback(offlineRewardLayerBtn, function () {
+            //bindTouchEventListener(,);
+            bindButtonCallback( offlineRewardLayerBtn,function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
-                gamePopup.hidden();
+                gamePopup.removeFromParent();
                 PlayerData.receiveOfflineReward();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                 //customEventHelper.sendEvent(EVENT);
                 PlayerData.updatePlayer();
+               // return true;
             });
-            popup(gamePopup, 1000);
-            gamePopup.popup();
+            popup(gamePopup, 4000);
+            //gamePopup.popup();
         };
         bindButtonCallback(this.rewardBtn, function () {
             self.openPopup();
@@ -157,11 +168,11 @@ var BattlePanel = cc.Node.extend({
 
         var pack_btn = root.getChildByName('pack_btn');
         pack_btn.setLocalZOrder(1);
-        bindTouchEventListener(function () {
+        bindButtonCallback(pack_btn,function () {
             var packUnit = new PackUnit();
             var gamePopup = new GamePopup(packUnit,cc.p(320,580),false);
             popup(gamePopup,3000);
-        }.bind(this), pack_btn);
+        }.bind(this));
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
@@ -180,9 +191,11 @@ var BattlePanel = cc.Node.extend({
         };
 
         var tap = root.getChildByName('tap');
-        bindTouchEventListener(function (touch) {
+        bindMouseEventListener(function (touch) {
+            cc.log("点中tap");
             var pos = this.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
+            return false;
         }.bind(this), tap);
 
         this.spritesLayer = root.getChildByName('sprites');
@@ -419,6 +432,7 @@ var BattlePanel = cc.Node.extend({
             player.stage_battle_num = 1;
             stageData.goToNextStage();
             player.stage = stageData.getId();
+            player.statistics.total_max_level += 1;
             this.loadStageBackground(stageData);
         } else {
             if (stageData.couldFightBossBattle()) {

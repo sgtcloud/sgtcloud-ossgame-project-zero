@@ -4,21 +4,30 @@ var GamePopup = cc.Layer.extend({
         this._super(cc.color.RED);
         this.ignoreAnchorPointForPosition(false);   //忽略锚点设置为false，默认为true，锚点(0, 0)
         this.setOpacity(128);       //透明度
-        this.isSwallow = isSwallow || true;
+        if(typeof isSwallow === 'undefined'){
+            this.isSwallow = true;
+        }else{
+            this.isSwallow = isSwallow;
+        }
         this.target = layer;
         this.pos = pos;
         var self = this;
         this._listener = new cc.EventListener.create({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            swallowTouches: this.isSwallow,
+            swallowTouches: true,
             onTouchBegan: function (touch, event) {
                 var locationInNode = self.target.convertToNodeSpace(touch.getLocation());
                 var s = self.target.getContentSize();
                 var rect = cc.rect(0, 0, s.width, s.height);
-                if (!cc.rectContainsPoint(rect, locationInNode)) {
+                if (!self.isSwallow && !cc.rectContainsPoint(rect, locationInNode)) {
                     self.target.removeFromParent();
-                    self.hidden();
+                    //self.onExit();
+                    self.removeFromParent();
+                    return false;
                 }
+                /*if(cc.rectContainsPoint(rect, locationInNode)){
+                    return false;
+                }*/
                 return true;
             }
         });
@@ -73,6 +82,7 @@ var GamePopup = cc.Layer.extend({
     {
         this._super();
         //移除触摸监听
-        cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE, true);
+        //cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE, true);
+        cc.eventManager.removeListeners(this._listener, true);
     }
 });
