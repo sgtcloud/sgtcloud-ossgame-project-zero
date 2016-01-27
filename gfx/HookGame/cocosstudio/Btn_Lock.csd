@@ -24,15 +24,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="235483224" Tag="17" IconVisible="False" LeftMargin="44.0090" RightMargin="31.9910" TopMargin="10.2470" BottomMargin="51.7530" LabelText="Lv.999" ctype="TextBMFontObjectData">
-                <Size X="64.0000" Y="18.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="235483224" Tag="17" IconVisible="False" LeftMargin="44.0090" RightMargin="31.9910" TopMargin="11.7470" BottomMargin="53.2530" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="64.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="76.0090" Y="60.7530" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5429" Y="0.7594" />
-                <PreSize X="0.4571" Y="0.2250" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.4571" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="lock" ActionTag="-1008319939" Tag="216" IconVisible="False" LeftMargin="60.3404" RightMargin="50.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                 <Size X="29.0000" Y="32.0000" />

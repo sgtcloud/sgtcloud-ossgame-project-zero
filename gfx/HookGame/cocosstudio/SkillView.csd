@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="303" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="846016647" Tag="524" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="846016647" Tag="524" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="skillView_bg" ActionTag="1321404762" Tag="304" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -51,17 +51,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillLevel_text" ActionTag="-1686192480" Tag="342" IconVisible="False" LeftMargin="269.0000" RightMargin="231.0000" TopMargin="9.0000" BottomMargin="73.0000" IsCustomSize="True" FontSize="18" LabelText="Lv.99/99" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="100.0000" Y="18.0000" />
-                <AnchorPoint />
-                <Position X="269.0000" Y="73.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.4483" Y="0.7300" />
-                <PreSize X="0.1667" Y="0.1800" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="lock_btn" ActionTag="55421075" Tag="661" IconVisible="True" LeftMargin="443.8899" RightMargin="16.1101" TopMargin="9.0103" BottomMargin="10.9897" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
@@ -71,6 +60,16 @@
                 <PrePosition X="0.7398" Y="0.1099" />
                 <PreSize X="0.2333" Y="0.8000" />
                 <FileData Type="Normal" Path="Btn_Lock.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="skillLevel_text" ActionTag="-873835688" Tag="304" IconVisible="False" LeftMargin="259.8713" RightMargin="218.1287" TopMargin="8.1119" BottomMargin="73.8881" LabelText="Lv.999/9999" ctype="TextBMFontObjectData">
+                <Size X="122.0000" Y="18.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="259.8713" Y="82.8881" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4331" Y="0.8289" />
+                <PreSize X="0.2033" Y="0.1800" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="MaxLevel_btn" ActionTag="-917944944" Tag="667" IconVisible="True" LeftMargin="443.8899" RightMargin="16.1101" TopMargin="9.0103" BottomMargin="10.9897" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />

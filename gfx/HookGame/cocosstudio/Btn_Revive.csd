@@ -24,25 +24,25 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond" ActionTag="-1992046048" Tag="250" IconVisible="False" LeftMargin="27.6188" RightMargin="97.3812" TopMargin="45.8967" BottomMargin="19.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="diamond" ActionTag="-1992046048" Tag="250" IconVisible="False" LeftMargin="48.6194" RightMargin="76.3806" TopMargin="44.8967" BottomMargin="20.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="35.1188" Y="26.6033" />
+                <Position X="56.1194" Y="27.6033" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2508" Y="0.3325" />
+                <PrePosition X="0.4009" Y="0.3450" />
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="268773156" Tag="188" IconVisible="False" LeftMargin="48.4658" RightMargin="24.5342" TopMargin="42.5094" BottomMargin="19.4906" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="67.0000" Y="18.0000" />
+              <AbstractNodeData Name="diamond_text" ActionTag="268773156" Tag="188" IconVisible="False" LeftMargin="66.4663" RightMargin="32.5337" TopMargin="44.0094" BottomMargin="20.9906" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="41.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="81.9658" Y="28.4906" />
+                <Position X="86.9663" Y="28.4906" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5855" Y="0.3561" />
-                <PreSize X="0.4786" Y="0.2250" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.6212" Y="0.3561" />
+                <PreSize X="0.2929" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="revive_text" ActionTag="1356611884" CallBackType="Touch" Tag="254" IconVisible="False" LeftMargin="52.2324" RightMargin="35.7676" TopMargin="16.1236" BottomMargin="36.8764" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="52.0000" Y="27.0000" />

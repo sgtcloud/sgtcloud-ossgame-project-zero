@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="71" ctype="GameLayerObjectData">
         <Size X="624.0000" Y="55.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1918538116" Tag="839" IconVisible="False" TopMargin="-55.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1918538116" Tag="839" IconVisible="False" TopMargin="-55.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="624.0000" Y="110.0000" />
             <Children>
               <AbstractNodeData Name="heroView_bg" ActionTag="-167333858" Tag="840" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -40,16 +40,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-557855147" Tag="843" IconVisible="False" LeftMargin="120.0003" RightMargin="343.9997" TopMargin="42.0000" BottomMargin="50.0000" IsCustomSize="True" FontSize="18" LabelText="Lv.9999/9999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="160.0000" Y="18.0000" />
-                <AnchorPoint />
-                <Position X="120.0003" Y="50.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="1071298966" CallBackType="Click" Tag="1054" IconVisible="False" LeftMargin="126.4496" RightMargin="433.5504" TopMargin="42.6658" BottomMargin="52.3342" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="64.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="158.4496" Y="59.8342" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.1923" Y="0.4545" />
-                <PreSize X="0.2564" Y="0.1636" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2539" Y="0.5439" />
+                <PreSize X="0.1026" Y="0.1364" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="598677486" Tag="844" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="36.5624" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
@@ -61,15 +60,15 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="-1147063697" Tag="845" IconVisible="False" LeftMargin="336.7208" RightMargin="191.2792" TopMargin="59.0454" BottomMargin="37.9546" CharWidth="12" CharHeight="13" LabelText="69568844" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="96.0000" Y="13.0000" />
+              <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="351.8271" RightMargin="205.1729" TopMargin="54.7309" BottomMargin="40.2691" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="67.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="384.7208" Y="44.4546" />
+                <Position X="385.3271" Y="47.7691" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6165" Y="0.4041" />
-                <PreSize X="0.1538" Y="0.1182" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
+                <PrePosition X="0.6175" Y="0.4343" />
+                <PreSize X="0.1074" Y="0.1364" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps" ActionTag="334213559" Tag="846" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.1076" BottomMargin="75.8924" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="104.0000" Y="26.0000" />
@@ -124,7 +123,7 @@
               <AbstractNodeData Name="starts" ActionTag="1734385338" Tag="863" IconVisible="True" LeftMargin="120.0000" RightMargin="504.0000" TopMargin="94.0000" BottomMargin="16.0000" ctype="SingleNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
                 <Children>
-                  <AbstractNodeData Name="star1" ActionTag="766334150" Tag="864" IconVisible="False" RightMargin="-32.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star1" ActionTag="766334150" Tag="864" IconVisible="False" RightMargin="-32.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="1641209060" Tag="865" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -159,7 +158,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star2" ActionTag="486487983" Tag="867" IconVisible="False" LeftMargin="36.0000" RightMargin="-68.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star2" ActionTag="486487983" Tag="867" IconVisible="False" LeftMargin="36.0000" RightMargin="-68.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-1859025817" Tag="868" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -194,7 +193,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star3" ActionTag="-1697718395" Tag="870" IconVisible="False" LeftMargin="72.0000" RightMargin="-104.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star3" ActionTag="-1697718395" Tag="870" IconVisible="False" LeftMargin="72.0000" RightMargin="-104.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-1232924836" Tag="871" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -229,7 +228,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star4" ActionTag="-384747279" Tag="873" IconVisible="False" LeftMargin="108.0000" RightMargin="-140.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star4" ActionTag="-384747279" Tag="873" IconVisible="False" LeftMargin="108.0000" RightMargin="-140.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-966038224" Tag="874" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -264,7 +263,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star5" ActionTag="-98539985" Tag="876" IconVisible="False" LeftMargin="144.0000" RightMargin="-176.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star5" ActionTag="-98539985" Tag="876" IconVisible="False" LeftMargin="144.0000" RightMargin="-176.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-106391880" Tag="877" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -327,16 +326,6 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipNum_text" ActionTag="1366211527" Tag="883" IconVisible="False" LeftMargin="489.7601" RightMargin="38.2399" TopMargin="59.0454" BottomMargin="37.9546" CharWidth="12" CharHeight="13" LabelText="69568844" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="96.0000" Y="13.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="537.7601" Y="44.4546" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8618" Y="0.4041" />
-                <PreSize X="0.1538" Y="0.1182" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_white.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="playerEquip_text" ActionTag="-249085522" CallBackType="Touch" Tag="884" IconVisible="False" LeftMargin="492.9274" RightMargin="47.0726" TopMargin="8.6076" BottomMargin="76.3924" Scale9Width="84" Scale9Height="25" ctype="ImageViewObjectData">
                 <Size X="84.0000" Y="25.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -346,6 +335,16 @@
                 <PrePosition X="0.8573" Y="0.8081" />
                 <PreSize X="0.1346" Y="0.2273" />
                 <FileData Type="Normal" Path="equipUI/equip_text2.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="503.8413" RightMargin="53.1587" TopMargin="54.7309" BottomMargin="40.2691" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="67.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="537.3413" Y="47.7691" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.8611" Y="0.4343" />
+                <PreSize X="0.1074" Y="0.1364" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

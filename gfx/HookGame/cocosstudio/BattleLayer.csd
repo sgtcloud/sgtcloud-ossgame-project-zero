@@ -214,13 +214,13 @@
                 <PreSize X="0.1437" Y="0.0270" />
                 <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1280" BottomMargin="706.8720" LabelText="56982244103" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1279" BottomMargin="706.8721" LabelText="56982244103" ctype="TextBMFontObjectData">
                 <Size X="138.0000" Y="19.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="404.4320" Y="716.3720" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="335.4320" Y="716.3721" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6319" Y="0.9681" />
+                <PrePosition X="0.5241" Y="0.9681" />
                 <PreSize X="0.2156" Y="0.0257" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="45" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2016724076" Tag="124" IconVisible="False" LeftMargin="1.7448" RightMargin="-1.7448" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2016724076" Tag="124" IconVisible="False" LeftMargin="1.7448" RightMargin="-1.7448" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2047028236" Tag="126" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -39,7 +39,7 @@
                 <PreSize X="0.2016" Y="0.0784" />
                 <FileData Type="Normal" Path="packUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pack" ActionTag="1044177206" Tag="542" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="220.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="pack" ActionTag="1044177206" Tag="542" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="220.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="435.0000" />
                 <Children>
                   <AbstractNodeData Name="pack_bg" ActionTag="220585410" Tag="543" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -132,85 +132,85 @@
                     <PreSize X="0.0656" Y="0.0920" />
                     <FileData Type="Normal" Path="materialUI/essence.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="wood_num_text" ActionTag="1375195102" Tag="552" IconVisible="False" LeftMargin="133.7292" RightMargin="374.2708" TopMargin="39.0969" BottomMargin="378.9031" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="184.7292" Y="387.4031" />
+                  <AbstractNodeData Name="wood_num_text" ActionTag="-1772376099" Tag="516" IconVisible="False" LeftMargin="128.8190" RightMargin="366.1810" TopMargin="38.0063" BottomMargin="377.9937" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="128.8190" Y="387.4937" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3028" Y="0.8906" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.2112" Y="0.8908" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="leather_num_text" ActionTag="960789442" Tag="553" IconVisible="False" LeftMargin="415.8032" RightMargin="92.1968" TopMargin="36.3069" BottomMargin="381.6931" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="466.8032" Y="390.1931" />
+                  <AbstractNodeData Name="stone_num_text" ActionTag="276940562" Tag="517" IconVisible="False" LeftMargin="128.8190" RightMargin="366.1810" TopMargin="100.4831" BottomMargin="315.5169" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="128.8190" Y="325.0169" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7653" Y="0.8970" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.2112" Y="0.7472" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="stone_num_text" ActionTag="-1591423659" Tag="554" IconVisible="False" LeftMargin="133.7292" RightMargin="374.2708" TopMargin="102.8405" BottomMargin="315.1595" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="184.7292" Y="323.6595" />
+                  <AbstractNodeData Name="iron_num_text" ActionTag="-845095618" Tag="518" IconVisible="False" LeftMargin="128.8190" RightMargin="366.1810" TopMargin="163.9598" BottomMargin="252.0402" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="128.8190" Y="261.5402" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3028" Y="0.7440" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.2112" Y="0.6012" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="bronze_num_text" ActionTag="-1224162463" Tag="555" IconVisible="False" LeftMargin="415.8032" RightMargin="92.1968" TopMargin="102.1143" BottomMargin="315.8857" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="466.8032" Y="324.3857" />
+                  <AbstractNodeData Name="rune_num_text" ActionTag="1119241286" Tag="519" IconVisible="False" LeftMargin="128.8190" RightMargin="366.1810" TopMargin="227.4367" BottomMargin="188.5633" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="128.8190" Y="198.0633" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7653" Y="0.7457" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.2112" Y="0.4553" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="iron_num_text" ActionTag="1549170386" Tag="556" IconVisible="False" LeftMargin="133.7292" RightMargin="374.2708" TopMargin="166.5842" BottomMargin="251.4158" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="184.7292" Y="259.9158" />
+                  <AbstractNodeData Name="leather_num_text" ActionTag="-1617725047" Tag="520" IconVisible="False" LeftMargin="414.7154" RightMargin="80.2846" TopMargin="35.6230" BottomMargin="380.3770" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="414.7154" Y="389.8770" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3028" Y="0.5975" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.6799" Y="0.8963" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="crystal_num_text" ActionTag="428844076" Tag="557" IconVisible="False" LeftMargin="415.8032" RightMargin="92.1968" TopMargin="167.9220" BottomMargin="250.0780" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="466.8032" Y="258.5780" />
+                  <AbstractNodeData Name="bronze_num_text" ActionTag="1701326137" Tag="521" IconVisible="False" LeftMargin="414.7154" RightMargin="80.2846" TopMargin="100.6746" BottomMargin="315.3254" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="414.7154" Y="324.8254" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7653" Y="0.5944" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.6799" Y="0.7467" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="rune_num_text" ActionTag="-1239008973" Tag="558" IconVisible="False" LeftMargin="133.7292" RightMargin="374.2708" TopMargin="230.3278" BottomMargin="187.6722" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="184.7292" Y="196.1722" />
+                  <AbstractNodeData Name="crystal_num_text" ActionTag="-1162336589" Tag="522" IconVisible="False" LeftMargin="414.7154" RightMargin="80.2846" TopMargin="165.7261" BottomMargin="250.2739" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="414.7154" Y="259.7739" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3028" Y="0.4510" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.6799" Y="0.5972" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="essence_num_text" ActionTag="1775731984" Tag="559" IconVisible="False" LeftMargin="415.8032" RightMargin="92.1968" TopMargin="233.7294" BottomMargin="184.2706" CharWidth="17" CharHeight="17" LabelText="999999" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="102.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="466.8032" Y="192.7706" />
+                  <AbstractNodeData Name="essence_num_text" ActionTag="682057196" Tag="523" IconVisible="False" LeftMargin="414.7154" RightMargin="80.2846" TopMargin="230.7777" BottomMargin="185.2223" LabelText="9999999" ctype="TextBMFontObjectData">
+                    <Size X="115.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="414.7154" Y="194.7223" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7653" Y="0.4432" />
-                    <PreSize X="0.1672" Y="0.0391" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
+                    <PrePosition X="0.6799" Y="0.4476" />
+                    <PreSize X="0.1885" Y="0.0437" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -224,7 +224,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chest" ActionTag="1143761586" Tag="529" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="525.0000" BottomMargin="15.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="chest" ActionTag="1143761586" Tag="529" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="525.0000" BottomMargin="15.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="200.0000" />
                 <Children>
                   <AbstractNodeData Name="chest_bg" ActionTag="-197868592" Tag="528" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -237,7 +237,7 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3825" RightMargin="454.6175" TopMargin="54.6391" BottomMargin="75.3609" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3859" RightMargin="454.6141" TopMargin="54.6361" BottomMargin="75.3639" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
                     <AnchorPoint ScaleX="0.5526" ScaleY="0.5465" />
                     <Position X="124.0679" Y="113.6189" />
@@ -312,36 +312,6 @@
                     <PreSize X="0.0656" Y="0.2000" />
                     <FileData Type="Normal" Path="materialUI/silver_key.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_key_num_text" ActionTag="318642997" Tag="537" IconVisible="False" LeftMargin="122.0273" RightMargin="453.9727" TopMargin="163.8631" BottomMargin="19.1369" CharWidth="17" CharHeight="17" LabelText="99" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="34.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="139.0273" Y="27.6369" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2279" Y="0.1382" />
-                    <PreSize X="0.0557" Y="0.0850" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="silver_key_num_text" ActionTag="427004499" Tag="538" IconVisible="False" LeftMargin="308.3794" RightMargin="267.6206" TopMargin="163.8631" BottomMargin="19.1369" CharWidth="17" CharHeight="17" LabelText="99" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="34.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="325.3794" Y="27.6369" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5334" Y="0.1382" />
-                    <PreSize X="0.0557" Y="0.0850" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="iron_key_num_text" ActionTag="337814491" Tag="539" IconVisible="False" LeftMargin="493.8758" RightMargin="82.1242" TopMargin="163.8631" BottomMargin="19.1369" CharWidth="17" CharHeight="17" LabelText="99" StartChar="." ctype="TextAtlasObjectData">
-                    <Size X="34.0000" Y="17.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="510.8758" Y="27.6369" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8375" Y="0.1382" />
-                    <PreSize X="0.0557" Y="0.0850" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow_b.png" Plist="" />
-                  </AbstractNodeData>
                   <AbstractNodeData Name="open_text" ActionTag="972162908" Tag="540" IconVisible="False" LeftMargin="222.5000" RightMargin="222.5000" TopMargin="6.7899" BottomMargin="158.2101" Scale9Width="165" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="165.0000" Y="35.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -352,35 +322,65 @@
                     <PreSize X="0.2705" Y="0.1750" />
                     <FileData Type="Normal" Path="packUI/chest.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="-273312400" Tag="561" IconVisible="False" LeftMargin="150.7790" RightMargin="435.2210" TopMargin="122.6933" BottomMargin="66.3067" CharWidth="12" CharHeight="11" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="24.0000" Y="11.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="162.7790" Y="71.8067" />
+                  <AbstractNodeData Name="golden_key_num_text" ActionTag="878222408" Tag="524" IconVisible="False" LeftMargin="117.3994" RightMargin="457.6006" TopMargin="162.1735" BottomMargin="18.8265" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="35.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="117.3994" Y="28.3265" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2669" Y="0.3590" />
-                    <PreSize X="0.0393" Y="0.0550" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green_a.png" Plist="" />
+                    <PrePosition X="0.1925" Y="0.1416" />
+                    <PreSize X="0.0574" Y="0.0950" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="silver_chest_num_text" ActionTag="-1775637269" Tag="562" IconVisible="False" LeftMargin="335.1071" RightMargin="250.8929" TopMargin="122.5321" BottomMargin="66.4679" CharWidth="12" CharHeight="11" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="24.0000" Y="11.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="347.1071" Y="71.9679" />
+                  <AbstractNodeData Name="silver_key_num_text" ActionTag="2042401179" Tag="525" IconVisible="False" LeftMargin="304.9750" RightMargin="270.0250" TopMargin="162.1735" BottomMargin="18.8265" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="35.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="304.9750" Y="28.3265" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5690" Y="0.3598" />
-                    <PreSize X="0.0393" Y="0.0550" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green_a.png" Plist="" />
+                    <PrePosition X="0.5000" Y="0.1416" />
+                    <PreSize X="0.0574" Y="0.0950" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="iron_chest_num_text" ActionTag="-157658810" Tag="563" IconVisible="False" LeftMargin="517.1332" RightMargin="68.8668" TopMargin="123.2323" BottomMargin="65.7677" CharWidth="12" CharHeight="11" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="24.0000" Y="11.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="529.1332" Y="71.2677" />
+                  <AbstractNodeData Name="iron_key_num_text" ActionTag="-257882934" Tag="526" IconVisible="False" LeftMargin="491.5031" RightMargin="83.4969" TopMargin="162.1735" BottomMargin="18.8265" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="35.0000" Y="19.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="491.5031" Y="28.3265" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8674" Y="0.3563" />
-                    <PreSize X="0.0393" Y="0.0550" />
-                    <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_green_a.png" Plist="" />
+                    <PrePosition X="0.8057" Y="0.1416" />
+                    <PreSize X="0.0574" Y="0.0950" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="1788448717" Tag="527" IconVisible="False" LeftMargin="152.1958" RightMargin="429.8041" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="28.0000" Y="15.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="152.1958" Y="73.6461" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.2495" Y="0.3682" />
+                    <PreSize X="0.0459" Y="0.0750" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="silver_chest_num_text" ActionTag="-215133678" Tag="528" IconVisible="False" LeftMargin="335.0425" RightMargin="246.9575" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="28.0000" Y="15.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="335.0425" Y="73.6461" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5493" Y="0.3682" />
+                    <PreSize X="0.0459" Y="0.0750" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="iron_chest_num_text" ActionTag="-688262608" Tag="529" IconVisible="False" LeftMargin="519.2303" RightMargin="62.7697" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                    <Size X="28.0000" Y="15.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="519.2303" Y="73.6461" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8512" Y="0.3682" />
+                    <PreSize X="0.0459" Y="0.0750" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

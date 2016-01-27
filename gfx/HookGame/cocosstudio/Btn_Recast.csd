@@ -34,33 +34,33 @@
                 <PreSize X="0.4714" Y="0.4250" />
                 <FileData Type="Normal" Path="buttonUI/recast.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="1297891292" CallBackType="Click" Tag="181" IconVisible="False" LeftMargin="58.4186" RightMargin="27.5814" TopMargin="14.0129" BottomMargin="47.9871" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="54.0000" Y="18.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="1297891292" CallBackType="Click" Tag="181" IconVisible="False" LeftMargin="57.4186" RightMargin="28.5814" TopMargin="17.5129" BottomMargin="47.4871" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="54.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="85.4186" Y="56.9871" />
+                <Position X="84.4186" Y="54.9871" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6101" Y="0.7123" />
-                <PreSize X="0.3857" Y="0.2250" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.6030" Y="0.6873" />
+                <PreSize X="0.3857" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_icon" ActionTag="-755236331" Tag="381" IconVisible="False" LeftMargin="36.9266" RightMargin="88.0734" TopMargin="18.1805" BottomMargin="46.8195" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="diamond_icon" ActionTag="-755236331" Tag="381" IconVisible="False" LeftMargin="36.8695" RightMargin="88.1305" TopMargin="18.1805" BottomMargin="46.8195" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position X="36.9266" Y="46.8195" />
+                <Position X="36.8695" Y="46.8195" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2638" Y="0.5852" />
+                <PrePosition X="0.2634" Y="0.5852" />
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic_icon" ActionTag="474323066" Tag="382" IconVisible="False" LeftMargin="36.9314" RightMargin="88.0686" TopMargin="18.2605" BottomMargin="46.7395" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="relic_icon" ActionTag="474323066" Tag="382" IconVisible="False" LeftMargin="36.8743" RightMargin="88.1257" TopMargin="18.2605" BottomMargin="46.7395" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position X="36.9314" Y="46.7395" />
+                <Position X="36.8743" Y="46.7395" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2638" Y="0.5842" />
+                <PrePosition X="0.2634" Y="0.5842" />
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
               </AbstractNodeData>
