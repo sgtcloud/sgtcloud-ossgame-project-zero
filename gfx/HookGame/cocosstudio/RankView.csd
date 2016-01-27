@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="40" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="318411989" Tag="416" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="318411989" Tag="416" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1402301482" Tag="384" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -70,35 +70,15 @@
                 <PreSize X="0.4117" Y="0.3100" />
                 <FileData Type="Normal" Path="rankUI/pvp_rank.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="num" ActionTag="-536068057" Tag="391" IconVisible="False" LeftMargin="499.2898" RightMargin="58.7102" TopMargin="36.6956" BottomMargin="42.3044" CharWidth="21" CharHeight="21" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="42.0000" Y="21.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="520.2898" Y="52.8044" />
+              <AbstractNodeData Name="level_text" ActionTag="-731661308" Tag="605" IconVisible="False" LeftMargin="120.1807" RightMargin="415.8193" TopMargin="35.9785" BottomMargin="46.0215" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="64.0000" Y="18.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="120.1807" Y="55.0215" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8671" Y="0.5280" />
-                <PreSize X="0.0700" Y="0.2100" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font28_yellow.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="349901887" Tag="1145" IconVisible="False" LeftMargin="149.0691" RightMargin="378.9309" TopMargin="37.9138" BottomMargin="45.0862" CharWidth="18" CharHeight="17" LabelText="1234" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="72.0000" Y="17.0000" />
-                <AnchorPoint ScaleX="0.4757" ScaleY="0.5309" />
-                <Position X="183.3195" Y="54.1115" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3055" Y="0.5411" />
-                <PreSize X="0.1200" Y="0.1700" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="player_lv" ActionTag="-1403379763" Tag="1146" IconVisible="False" LeftMargin="115.2229" RightMargin="443.7771" TopMargin="34.9138" BottomMargin="42.0862" Scale9Width="44" Scale9Height="23" ctype="ImageViewObjectData">
-                <Size X="41.0000" Y="23.0000" />
-                <AnchorPoint />
-                <Position X="115.2229" Y="42.0862" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1920" Y="0.4209" />
-                <PreSize X="0.0683" Y="0.2300" />
-                <FileData Type="Normal" Path="rankUI/level.png" Plist="" />
+                <PrePosition X="0.2003" Y="0.5502" />
+                <PreSize X="0.1067" Y="0.1800" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_prestige" ActionTag="-912661490" Tag="27" IconVisible="False" LeftMargin="115.2229" RightMargin="297.7771" TopMargin="61.4710" BottomMargin="7.5290" Scale9Width="172" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="187.0000" Y="31.0000" />
@@ -110,15 +90,25 @@
                 <PreSize X="0.3117" Y="0.3100" />
                 <FileData Type="Normal" Path="rankUI/transformation.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="prestige_text" ActionTag="19986441" Tag="29" IconVisible="False" LeftMargin="230.5954" RightMargin="333.4046" TopMargin="69.0807" BottomMargin="13.9193" CharWidth="18" CharHeight="17" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="36.0000" Y="17.0000" />
-                <AnchorPoint ScaleX="0.4757" ScaleY="0.5309" />
-                <Position X="247.7206" Y="22.9446" />
+              <AbstractNodeData Name="prestige_text" ActionTag="-1027378603" CallBackType="Click" Tag="606" IconVisible="False" LeftMargin="232.4644" RightMargin="332.5356" TopMargin="67.1989" BottomMargin="13.8011" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="35.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="249.9644" Y="23.3011" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4129" Y="0.2294" />
-                <PreSize X="0.0600" Y="0.1700" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_white.png" Plist="" />
+                <PrePosition X="0.4166" Y="0.2330" />
+                <PreSize X="0.0583" Y="0.1900" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="num" ActionTag="-1890154072" Tag="607" IconVisible="False" LeftMargin="501.7378" RightMargin="63.2622" TopMargin="39.0085" BottomMargin="41.9915" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="35.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="519.2378" Y="51.4915" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.8654" Y="0.5149" />
+                <PreSize X="0.0583" Y="0.1900" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

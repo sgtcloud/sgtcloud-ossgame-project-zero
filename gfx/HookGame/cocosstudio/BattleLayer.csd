@@ -9,13 +9,13 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" LeftMargin="0.8561" RightMargin="-0.8561" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
-                <Position Y="240.0000" />
+                <Position X="0.8561" Y="240.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.3243" />
+                <PrePosition X="0.0013" Y="0.3243" />
                 <PreSize X="1.0000" Y="0.6757" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
@@ -212,17 +212,17 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4558" Y="0.9655" />
                 <PreSize X="0.1437" Y="0.0270" />
-                <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
+                <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="334.6155" RightMargin="145.3845" TopMargin="17.8852" BottomMargin="708.1148" CharWidth="16" CharHeight="14" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="160.0000" Y="14.0000" />
-                <AnchorPoint ScaleX="0.4848" ScaleY="0.6287" />
-                <Position X="412.1835" Y="716.9166" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1279" BottomMargin="706.8721" LabelText="56982244103" ctype="TextBMFontObjectData">
+                <Size X="138.0000" Y="19.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="335.4320" Y="716.3721" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6440" Y="0.9688" />
-                <PreSize X="0.2500" Y="0.0189" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font20_white.png" Plist="" />
+                <PrePosition X="0.5241" Y="0.9681" />
+                <PreSize X="0.2156" Y="0.0257" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="499.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -268,15 +268,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="1614517410" Tag="168" IconVisible="False" LeftMargin="99.9742" RightMargin="504.0258" TopMargin="26.4139" BottomMargin="696.5861" CharWidth="18" CharHeight="17" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="36.0000" Y="17.0000" />
-                <AnchorPoint />
-                <Position X="99.9742" Y="696.5861" />
+              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="100.3237" RightMargin="504.6763" TopMargin="25.5851" BottomMargin="695.4149" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="35.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="117.8237" Y="704.9149" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1562" Y="0.9413" />
-                <PreSize X="0.0562" Y="0.0230" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
+                <PrePosition X="0.1841" Y="0.9526" />
+                <PreSize X="0.0547" Y="0.0257" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="time_bar" ActionTag="-1530911348" Tag="487" IconVisible="False" LeftMargin="135.1005" RightMargin="60.8995" TopMargin="36.9025" BottomMargin="697.0975" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="444.0000" Y="6.0000" />
@@ -331,14 +331,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="200.1612" RightMargin="179.8388" TopMargin="298.6611" BottomMargin="261.3389" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="260.0000" Y="180.0000" />
+              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="234.4081" RightMargin="215.5919" TopMargin="309.7909" BottomMargin="250.2091" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="190.0000" Y="180.0000" />
                 <AnchorPoint />
-                <Position X="200.1612" Y="261.3389" />
+                <Position X="234.4081" Y="250.2091" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3128" Y="0.3532" />
-                <PreSize X="0.4063" Y="0.2432" />
+                <PrePosition X="0.3663" Y="0.3381" />
+                <PreSize X="0.2969" Y="0.2432" />
                 <FileData Type="Normal" Path="BuffList.csd" Plist="" />
               </AbstractNodeData>
             </Children>

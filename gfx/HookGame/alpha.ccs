@@ -5,9 +5,6 @@
       <RootFolder Name=".">
         <Folder Name="battleUI">
           <Image Name="boss_text.png" />
-          <PlistImageFolder Image="BattleLayer.png" PListFile="BattleLayer.plist" Name=".BattleLayer_PList.Dir">
-            <PlistImageFile Name="battleUI_boss_text.png" Key="battleUI/boss_text.png" />
-          </PlistImageFolder>
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
@@ -358,8 +355,18 @@
           <Fnt Name="font16_yellow_kmbb-export.fnt" />
           <Image Name="font16_yellow_kmbb-export.png" />
           <Image Name="font22_yellow_kmbb-export.png" />
+          <Fnt Name="font19_white_kmbb-export.fnt" />
+          <Image Name="font19_white_kmbb-export.png" />
+          <Fnt Name="font14_red_kmbb-export.fnt" />
+          <Fnt Name="font14_green_kmbb-export.fnt" />
+          <Image Name="font14_green_kmbb-export.png" />
+          <Image Name="font14_red_kmbb-export.png" />
+          <Fnt Name="font16_white_kmbb-export.fnt" />
+          <Image Name="font16_white_kmbb-export.png" />
+          <Fnt Name="font22_white_kmbb-export.fnt" />
+          <Image Name="font14_white_kmbb-export.png" />
+          <Image Name="font14_white_kmbb.png" />
         </Folder>
-        <PlistInfo Name="BattleLayer.csi" Type="Plist" />
         <Project Name="BuffList.csd" Type="Layer" />
       </RootFolder>
     </Group>
