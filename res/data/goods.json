@@ -1,43 +1,43 @@
 {"g10001": {
-  "propId" : "e10101",
+  "propId" : "wood",
   "num" : 1,
   "price" : {
     "unit" : "gold",
     "value" : 10
   }
 }, "g10002": {
-  "propId" : "e10102",
+  "propId" : "wood",
   "num" : 2,
   "price" : {
-    "unit" : "gold",
+    "unit" : "gem",
     "value" : 15
   }
 }, "g10003": {
-  "propId" : "e10201",
+  "propId" : "wood",
   "num" : 3,
   "price" : {
-    "unit" : "gold",
+    "unit" : "gem",
     "value" : 20
   }
 }, "g10004": {
-  "propId" : "e10202",
+  "propId" : "wood",
   "num" : 4,
   "price" : {
-    "unit" : "gold",
+    "unit" : "gem",
     "value" : 25
   }
 }, "g10005": {
-  "propId" : "e10301",
+  "propId" : "wood",
   "num" : 5,
   "price" : {
-    "unit" : "gold",
+    "unit" : "gem",
     "value" : 30
   }
 }, "g10006": {
-  "propId" : "e10302",
+  "propId" : "wood",
   "num" : 6,
   "price" : {
-    "unit" : "gold",
+    "unit" : "gem",
     "value" : 35
   }
 } }

@@ -33,7 +33,7 @@ var Popup1 = cc.Node.extend({
     },
     hiddenPopup: function(){
         this.prompt1Layer.removeFromParent();
-        this.gamePopup.hidden();
+        this.gamePopup.removeFromParent();
     }
 });
 

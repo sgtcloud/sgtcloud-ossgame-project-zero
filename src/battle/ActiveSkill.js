@@ -97,7 +97,7 @@ var ActiveSkill = cc.Class.extend({
             this.effectAnimFinishCount = 0;
             this.skillStartTime = new Date().getTime();
             for (var i in this.targets) {
-                if (this.type !== this.TYPE_BUFF) {
+                if (this.type !== this.TYPE_BUFF && this.targets[i]) {
                     this.runSkillEffect(node, this.targets[i].getPosition(), i, "boom");
                     this.hitEffects[i].runAction(cc.fadeIn(1));
                     this.targets[i].doDamage(this.effectValue);
