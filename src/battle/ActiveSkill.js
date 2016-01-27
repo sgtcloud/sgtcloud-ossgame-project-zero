@@ -74,11 +74,6 @@ var ActiveSkill = cc.Class.extend({
                     this.onCastFinish();
                 }
             }.bind(this));
-        } else {
-            scheduleOnce(this, function () {
-                this.onCastFinish();
-                this.clearBuffEffect();
-            }, this.duration);
         }
         this.hitEffects[index].setPosition(pos);
         node.addChild(this.hitEffects[index], 2000 + i);
@@ -123,6 +118,10 @@ var ActiveSkill = cc.Class.extend({
         }
         if (this.type === this.TYPE_BUFF) {
             this.startBuffEffect();
+            scheduleOnce(this, function () {
+                this.onCastFinish();
+                this.clearBuffEffect();
+            }, this.duration);
         }
     },
 
