@@ -17,6 +17,10 @@ var TopPanel = cc.Node.extend({
         this.diamondNum = pane.getChildByName('diamond_text');
         this.relicNum = pane.getChildByName('relic_text');
         this.goldNum = pane.getChildByName('gold_text');
+        this.goldBtn = pane.getChildByName('getGold_btn');
+        bindButtonCallback(this.goldBtn,function(){
+            game.tabContainer.showMenuLayer("shop");
+        })
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());
         }.bind(this);

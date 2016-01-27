@@ -24,66 +24,66 @@ var PackUnit = cc.Node.extend({
             "golden_chest",
             "golden_key"];
 
-        this.setElement = function(unit,value,parent){
-            var element = parent.getChildByName(unit+"_num_text");
+        this.setElement = function (unit, value, parent) {
+            var element = parent.getChildByName(unit + "_num_text");
             element.ignoreContentAdaptWithSize(true);
             element.setString(value);
         };
-        this.reFreshAll = function(){
-            for(var i in packs){
-                this.setElement(packs[i],player.resource[packs[i]],this.pack);
+        this.reFreshAll = function () {
+            for (var i in packs) {
+                this.setElement(packs[i], player.resource[packs[i]], this.pack);
             }
-            for(var i in chestsAndKeys){
-                this.setElement(chestsAndKeys[i],player.resource[chestsAndKeys[i]],this.chest);
+            for (var i in chestsAndKeys) {
+                this.setElement(chestsAndKeys[i], player.resource[chestsAndKeys[i]], this.chest);
             }
         };
         var golden_chest_btn = this.chest.getChildByName('golden_chest_btn');
         var silver_chest_btn = this.chest.getChildByName('silver_chest_btn');
         var iron_chest_btn = this.chest.getChildByName('iron_chest_btn');
 
-        this.checkKeyAndChest = function(key,chest){
-            if(key > 0 && chest > 0){
+        this.checkKeyAndChest = function (key, chest) {
+            if (key > 0 && chest > 0) {
                 //开箱成功
                 return true;
-            }else{
+            } else {
                 var errorContent = '';
-                if(key <= 0){
+                if (key <= 0) {
                     errorContent += "钥匙不足,";
                 }
-                if(chest <= 0){
+                if (chest <= 0) {
                     errorContent += "箱子不足,";
                 }
-                new Popup1("友情提示",errorContent+"前往商城购买",function(popup){
+                new Popup1("友情提示", errorContent + "前往商城购买", function (popup) {
                     popup.hiddenPopup();
                     self.removeFromParent();
                     game.tabContainer.showMenuLayer('shop');
                 });
             }
         };
-        this.openChest = function(key_unit,chest_unit,bonus_num){
-            if(this.checkKeyAndChest(player.resource[key_unit],player.resource[chest_unit])){
+        this.openChest = function (key_unit, chest_unit, bonus_num) {
+            if (this.checkKeyAndChest(player.resource[key_unit], player.resource[chest_unit])) {
                 var chance = new Chance(dataSource.bonus[bonus_num].bonus);
                 var res = chance.next();
                 player.resource[res.unit] += res.value;
                 player.resource[key_unit] -= 1;
                 player.resource[chest_unit] -= 1;
-                this.setElement(res.unit,player.resource[res.unit],this.pack);
-                this.setElement(key_unit,player.resource[key_unit],this.chest);
-                this.setElement(chest_unit,player.resource[chest_unit],this.chest);
+                this.setElement(res.unit, player.resource[res.unit], this.pack);
+                this.setElement(key_unit, player.resource[key_unit], this.chest);
+                this.setElement(chest_unit, player.resource[chest_unit], this.chest);
                 PlayerData.updatePlayer();
                 return true;
             }
         };
-        golden_chest_btn.addClickEventListener(function(){
-            self.openChest("golden_key","golden_chest","c1003")
+        golden_chest_btn.addClickEventListener(function () {
+            self.openChest("golden_key", "golden_chest", "c1003")
         });
-        silver_chest_btn.addClickEventListener(function(){
-            self.openChest("silver_key","silver_chest","c1002")
+        silver_chest_btn.addClickEventListener(function () {
+            self.openChest("silver_key", "silver_chest", "c1002")
         });
-        iron_chest_btn.addClickEventListener(function(){
-            self.openChest("iron_key","iron_chest","c1001")
+        iron_chest_btn.addClickEventListener(function () {
+            self.openChest("iron_key", "iron_chest", "c1001")
         });
-        customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+        customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
             this.reFreshAll();
         }.bind(this));
         this.reFreshAll();
