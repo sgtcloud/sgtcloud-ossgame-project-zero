@@ -132,8 +132,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 85.6471,
-                  "Y": 57.678
+                  "X": 85.647,
+                  "Y": 59.678
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -143,22 +143,22 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6118,
-                  "Y": 0.721
+                  "Y": 0.746
                 },
                 "PreSize": {
-                  "X": 0.45,
-                  "Y": 0.1875
+                  "X": 0.4786,
+                  "Y": 0.225
                 },
-                "LeftMargin": 54.1471,
-                "RightMargin": 22.8529,
-                "TopMargin": 14.822,
-                "BottomMargin": 50.178,
+                "LeftMargin": 52.147,
+                "RightMargin": 20.853,
+                "TopMargin": 11.322,
+                "BottomMargin": 50.678,
                 "CallBackType": "Click",
                 "Tag": 111,
                 "ActionTag": 2062417790,
                 "Size": {
-                  "X": 63.0,
-                  "Y": 15.0
+                  "X": 67.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"

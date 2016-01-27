@@ -34,14 +34,14 @@
                 <PreSize X="0.4714" Y="0.4250" />
                 <FileData Type="Normal" Path="buttonUI/recast.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="1297891292" CallBackType="Click" Tag="181" IconVisible="False" LeftMargin="53.9186" RightMargin="23.0814" TopMargin="18.5129" BottomMargin="46.4871" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="63.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="1297891292" CallBackType="Click" Tag="181" IconVisible="False" LeftMargin="58.4186" RightMargin="27.5814" TopMargin="14.0129" BottomMargin="47.9871" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="54.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="85.4186" Y="53.9871" />
+                <Position X="85.4186" Y="56.9871" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6101" Y="0.6748" />
-                <PreSize X="0.4500" Y="0.1875" />
+                <PrePosition X="0.6101" Y="0.7123" />
+                <PreSize X="0.3857" Y="0.2250" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond_icon" ActionTag="-755236331" Tag="381" IconVisible="False" LeftMargin="36.9266" RightMargin="88.0734" TopMargin="18.1805" BottomMargin="46.8195" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">

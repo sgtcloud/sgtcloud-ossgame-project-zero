@@ -164,7 +164,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "9999999",
+                "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font16_yellow_kmbb-export.fnt",
@@ -175,8 +175,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 87.9658,
-                  "Y": 26.4906
+                  "X": 81.9658,
+                  "Y": 28.4906
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -185,22 +185,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6283,
-                  "Y": 0.3311
+                  "X": 0.5855,
+                  "Y": 0.3561
                 },
                 "PreSize": {
-                  "X": 0.6214,
-                  "Y": 0.1875
+                  "X": 0.4786,
+                  "Y": 0.225
                 },
-                "LeftMargin": 44.4658,
-                "RightMargin": 8.5342,
-                "TopMargin": 46.0094,
-                "BottomMargin": 18.9906,
+                "LeftMargin": 48.4658,
+                "RightMargin": 24.5342,
+                "TopMargin": 42.5094,
+                "BottomMargin": 19.4906,
                 "Tag": 188,
                 "ActionTag": 268773156,
                 "Size": {
-                  "X": 87.0,
-                  "Y": 15.0
+                  "X": 67.0,
+                  "Y": 18.0
                 },
                 "Name": "diamond_text",
                 "ctype": "TextBMFontObjectData"

@@ -34,14 +34,14 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="268773156" Tag="188" IconVisible="False" LeftMargin="44.4658" RightMargin="8.5342" TopMargin="46.0094" BottomMargin="18.9906" LabelText="9999999" ctype="TextBMFontObjectData">
-                <Size X="87.0000" Y="15.0000" />
+              <AbstractNodeData Name="diamond_text" ActionTag="268773156" Tag="188" IconVisible="False" LeftMargin="48.4658" RightMargin="24.5342" TopMargin="42.5094" BottomMargin="19.4906" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="67.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="87.9658" Y="26.4906" />
+                <Position X="81.9658" Y="28.4906" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6283" Y="0.3311" />
-                <PreSize X="0.6214" Y="0.1875" />
+                <PrePosition X="0.5855" Y="0.3561" />
+                <PreSize X="0.4786" Y="0.2250" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="revive_text" ActionTag="1356611884" CallBackType="Touch" Tag="254" IconVisible="False" LeftMargin="52.2324" RightMargin="35.7676" TopMargin="16.1236" BottomMargin="36.8764" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">

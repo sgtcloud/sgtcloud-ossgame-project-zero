@@ -75,14 +75,14 @@
                 <PreSize X="0.0929" Y="0.1625" />
                 <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="48.5025" RightMargin="16.4975" TopMargin="9.3444" BottomMargin="55.6556" LabelText="999999" ctype="TextBMFontObjectData">
-                <Size X="75.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="47.5026" RightMargin="25.4974" TopMargin="6.8444" BottomMargin="55.1556" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="67.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="86.0025" Y="63.1556" />
+                <Position X="81.0026" Y="64.1556" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6143" Y="0.7894" />
-                <PreSize X="0.5357" Y="0.1875" />
+                <PrePosition X="0.5786" Y="0.8019" />
+                <PreSize X="0.4786" Y="0.2250" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="per" ActionTag="1362573074" Tag="240" IconVisible="False" LeftMargin="108.1207" RightMargin="14.8793" TopMargin="52.2719" BottomMargin="12.7281" Scale9Width="17" Scale9Height="15" ctype="ImageViewObjectData">

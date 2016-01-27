@@ -34,14 +34,14 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="-2101152473" Tag="209" IconVisible="False" LeftMargin="46.2140" RightMargin="18.7860" TopMargin="15.1466" BottomMargin="49.8534" LabelText="999999" ctype="TextBMFontObjectData">
-                <Size X="75.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="-2101152473" Tag="209" IconVisible="False" LeftMargin="43.7141" RightMargin="16.2859" TopMargin="11.6466" BottomMargin="50.3534" LabelText="999999" ctype="TextBMFontObjectData">
+                <Size X="80.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="83.7140" Y="57.3534" />
+                <Position X="83.7141" Y="59.3534" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5980" Y="0.7169" />
-                <PreSize X="0.5357" Y="0.1875" />
+                <PrePosition X="0.5980" Y="0.7419" />
+                <PreSize X="0.5714" Y="0.2250" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="relic_icon" ActionTag="-1123589743" Tag="436" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
