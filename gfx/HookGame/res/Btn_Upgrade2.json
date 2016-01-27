@@ -163,13 +163,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 11,
                 "LabelText": "999999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_yellow.png",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -177,8 +174,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 81.906,
-                  "Y": 56.0791
+                  "X": 83.7141,
+                  "Y": 59.3534
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -187,25 +184,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.585,
-                  "Y": 0.701
+                  "X": 0.598,
+                  "Y": 0.7419
                 },
                 "PreSize": {
-                  "X": 0.5143,
-                  "Y": 0.1375
+                  "X": 0.5714,
+                  "Y": 0.225
                 },
-                "LeftMargin": 45.906,
-                "RightMargin": 22.094,
-                "TopMargin": 18.4209,
-                "BottomMargin": 50.5791,
-                "Tag": 434,
-                "ActionTag": -755467246,
+                "LeftMargin": 43.7141,
+                "RightMargin": 16.2859,
+                "TopMargin": 11.6466,
+                "BottomMargin": 50.3534,
+                "Tag": 209,
+                "ActionTag": -2101152473,
                 "Size": {
-                  "X": 72.0,
-                  "Y": 11.0
+                  "X": 80.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -348,9 +345,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow.png",
         "buttonUI/upLevel.png",
         "equipUI/relic.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png",

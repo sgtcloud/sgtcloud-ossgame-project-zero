@@ -121,51 +121,6 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 11,
-                "LabelText": "56478",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
-                  "Type": "Normal",
-                  "Path": "buttonUI/font16_yellow.png",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 85.7852,
-                  "Y": 54.0194
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.6128,
-                  "Y": 0.6752
-                },
-                "PreSize": {
-                  "X": 0.4286,
-                  "Y": 0.1375
-                },
-                "LeftMargin": 55.7852,
-                "RightMargin": 24.2148,
-                "TopMargin": 20.4806,
-                "BottomMargin": 48.5194,
-                "Tag": 379,
-                "ActionTag": 623668167,
-                "Size": {
-                  "X": 60.0,
-                  "Y": 11.0
-                },
-                "Name": "text_yellow",
-                "ctype": "TextAtlasObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "Normal",
                   "Path": "buttonUI/recast.png",
@@ -207,6 +162,49 @@
                 },
                 "Name": "re_text",
                 "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "9999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 85.4186,
+                  "Y": 56.9871
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6101,
+                  "Y": 0.7123
+                },
+                "PreSize": {
+                  "X": 0.3857,
+                  "Y": 0.225
+                },
+                "LeftMargin": 58.4186,
+                "RightMargin": 27.5814,
+                "TopMargin": 14.0129,
+                "BottomMargin": 47.9871,
+                "CallBackType": "Click",
+                "Tag": 181,
+                "ActionTag": 1297891292,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 18.0
+                },
+                "Name": "text_yellow",
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -306,11 +304,12 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow.png",
         "buttonUI/recast.png",
         "equipUI/btn1.png",
         "equipUI/btn2.png",
         "equipUI/relic.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "heroUI/diamond.png"
       ],
       "ctype": "GameFileData"

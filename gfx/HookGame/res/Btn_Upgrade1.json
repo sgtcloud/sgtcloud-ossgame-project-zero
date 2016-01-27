@@ -346,7 +346,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font16_yellow_kmbb-export.fnt",
@@ -357,8 +357,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 86.0025,
-                  "Y": 63.1556
+                  "X": 81.0026,
+                  "Y": 64.1556
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -367,22 +367,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6143,
-                  "Y": 0.7894
+                  "X": 0.5786,
+                  "Y": 0.8019
                 },
                 "PreSize": {
-                  "X": 0.5357,
-                  "Y": 0.1875
+                  "X": 0.4786,
+                  "Y": 0.225
                 },
-                "LeftMargin": 48.5025,
-                "RightMargin": 16.4975,
-                "TopMargin": 9.3444,
-                "BottomMargin": 55.6556,
+                "LeftMargin": 47.5026,
+                "RightMargin": 25.4974,
+                "TopMargin": 6.8444,
+                "BottomMargin": 55.1556,
                 "Tag": 128,
                 "ActionTag": -699834057,
                 "Size": {
-                  "X": 75.0,
-                  "Y": 15.0
+                  "X": 67.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"

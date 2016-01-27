@@ -122,59 +122,46 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 16,
-                "LabelText": "Lv.9999",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 76.3277,
-                  "Y": 61.6303
+                  "X": 76.009,
+                  "Y": 60.753
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5452,
-                  "Y": 0.7704
+                  "X": 0.5429,
+                  "Y": 0.7594
                 },
                 "PreSize": {
-                  "X": 0.7143,
+                  "X": 0.4571,
                   "Y": 0.225
                 },
-                "LeftMargin": 26.3277,
-                "RightMargin": 13.6723,
-                "TopMargin": 9.3697,
-                "BottomMargin": 52.6303,
-                "Tag": 215,
-                "ActionTag": -1596005682,
+                "LeftMargin": 44.009,
+                "RightMargin": 31.991,
+                "TopMargin": 10.247,
+                "BottomMargin": 51.753,
+                "Tag": 17,
+                "ActionTag": 235483224,
                 "Size": {
-                  "X": 100.0,
+                  "X": 64.0,
                   "Y": 18.0
                 },
                 "Name": "level_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -237,6 +224,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/lock.png"

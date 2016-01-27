@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="205" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="110.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-810919168" Tag="285" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-810919168" Tag="285" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="110.0000" />
             <Children>
               <AbstractNodeData Name="equipView_bg" ActionTag="1891383320" Tag="208" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -40,17 +40,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipLevel_text" ActionTag="-188675879" Tag="45" IconVisible="False" LeftMargin="270.0000" RightMargin="210.0000" TopMargin="14.5001" BottomMargin="77.4999" IsCustomSize="True" FontSize="18" LabelText="Lv.99/99" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="18.0000" />
-                <AnchorPoint />
-                <Position X="270.0000" Y="77.4999" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.4500" Y="0.7045" />
-                <PreSize X="0.2000" Y="0.1636" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="equipBuffDecs_text" ActionTag="-1671372399" Tag="46" IconVisible="False" LeftMargin="115.7145" RightMargin="164.2855" TopMargin="38.6161" BottomMargin="11.3839" IsCustomSize="True" FontSize="18" LabelText="神器效果详细描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="320.0000" Y="60.0000" />
                 <AnchorPoint />
@@ -81,6 +70,16 @@
                 <PrePosition X="0.7376" Y="0.1486" />
                 <PreSize X="0.2333" Y="0.7273" />
                 <FileData Type="Normal" Path="Btn_MaxLevel.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="286.0512" RightMargin="230.9488" TopMargin="17.0812" BottomMargin="77.9188" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
+                <Size X="83.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="327.5512" Y="85.4188" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5459" Y="0.7765" />
+                <PreSize X="0.1383" Y="0.1364" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
