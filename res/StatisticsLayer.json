@@ -361,7 +361,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 295.0
+                          "Y": 295.0004
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -379,8 +379,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 3.5,
-                        "BottomMargin": 283.5,
+                        "TopMargin": 3.4996,
+                        "BottomMargin": 283.5004,
                         "Tag": 47,
                         "ActionTag": -524772983,
                         "Size": {
@@ -404,7 +404,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 270.0
+                          "Y": 270.0912
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -414,7 +414,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.871
+                          "Y": 0.8713
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -422,8 +422,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 28.5,
-                        "BottomMargin": 258.5,
+                        "TopMargin": 28.4088,
+                        "BottomMargin": 258.5912,
                         "Tag": 48,
                         "ActionTag": -856797791,
                         "Size": {
@@ -447,7 +447,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 245.0
+                          "Y": 245.1822
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -457,7 +457,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.7903
+                          "Y": 0.7909
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -465,8 +465,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 53.5,
-                        "BottomMargin": 233.5,
+                        "TopMargin": 53.3178,
+                        "BottomMargin": 233.6822,
                         "Tag": 49,
                         "ActionTag": -424073155,
                         "Size": {
@@ -490,7 +490,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 220.0
+                          "Y": 220.273
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -500,7 +500,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.7097
+                          "Y": 0.7106
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -508,8 +508,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 78.5,
-                        "BottomMargin": 208.5,
+                        "TopMargin": 78.227,
+                        "BottomMargin": 208.773,
                         "Tag": 50,
                         "ActionTag": 661861092,
                         "Size": {
@@ -533,7 +533,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 195.0
+                          "Y": 195.3639
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -543,7 +543,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.629
+                          "Y": 0.6302
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -551,8 +551,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 103.5,
-                        "BottomMargin": 183.5,
+                        "TopMargin": 103.1361,
+                        "BottomMargin": 183.8639,
                         "Tag": 51,
                         "ActionTag": 87689969,
                         "Size": {
@@ -576,7 +576,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 170.0
+                          "Y": 170.4548
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -586,7 +586,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.5484
+                          "Y": 0.5499
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -594,8 +594,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 128.5,
-                        "BottomMargin": 158.5,
+                        "TopMargin": 128.0452,
+                        "BottomMargin": 158.9548,
                         "Tag": 52,
                         "ActionTag": -433758521,
                         "Size": {
@@ -619,7 +619,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 145.0
+                          "Y": 145.5456
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -629,7 +629,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.4677
+                          "Y": 0.4695
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -637,8 +637,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 153.5,
-                        "BottomMargin": 133.5,
+                        "TopMargin": 152.9544,
+                        "BottomMargin": 134.0456,
                         "Tag": 53,
                         "ActionTag": 74973655,
                         "Size": {
@@ -662,7 +662,7 @@
                         },
                         "Position": {
                           "X": 113.2497,
-                          "Y": 120.0
+                          "Y": 120.6365
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -672,7 +672,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.3871
+                          "Y": 0.3891
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -680,8 +680,8 @@
                         },
                         "LeftMargin": 13.2497,
                         "RightMargin": -13.2497,
-                        "TopMargin": 178.5,
-                        "BottomMargin": 108.5,
+                        "TopMargin": 177.8636,
+                        "BottomMargin": 109.1365,
                         "Tag": 59,
                         "ActionTag": 373772142,
                         "Size": {
@@ -705,7 +705,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 95.0
+                          "Y": 95.7273
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -715,7 +715,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.3065
+                          "Y": 0.3088
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -723,8 +723,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 203.5,
-                        "BottomMargin": 83.5,
+                        "TopMargin": 202.7727,
+                        "BottomMargin": 84.2273,
                         "Tag": 58,
                         "ActionTag": -1693394815,
                         "Size": {
@@ -748,7 +748,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 70.0
+                          "Y": 70.8182
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -758,7 +758,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.2258
+                          "Y": 0.2284
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -766,8 +766,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 228.5,
-                        "BottomMargin": 58.5,
+                        "TopMargin": 227.6818,
+                        "BottomMargin": 59.3182,
                         "Tag": 54,
                         "ActionTag": 23989029,
                         "Size": {
@@ -791,7 +791,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 45.0
+                          "Y": 45.9091
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -801,7 +801,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.1452
+                          "Y": 0.1481
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -809,8 +809,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 253.5,
-                        "BottomMargin": 33.5,
+                        "TopMargin": 252.5909,
+                        "BottomMargin": 34.4091,
                         "Tag": 55,
                         "ActionTag": -1260842043,
                         "Size": {
@@ -834,7 +834,7 @@
                         },
                         "Position": {
                           "X": 113.2498,
-                          "Y": 20.0
+                          "Y": 21.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -844,7 +844,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.5662,
-                          "Y": 0.0645
+                          "Y": 0.0677
                         },
                         "PreSize": {
                           "X": 1.0,
@@ -852,8 +852,8 @@
                         },
                         "LeftMargin": 13.2498,
                         "RightMargin": -13.2498,
-                        "TopMargin": 278.5,
-                        "BottomMargin": 8.5,
+                        "TopMargin": 277.5,
+                        "BottomMargin": 9.5,
                         "Tag": 57,
                         "ActionTag": -1158777912,
                         "Size": {
@@ -915,16 +915,16 @@
                     "Tag": 61,
                     "Children": [
                       {
-                        "LabelText": "111111",
+                        "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 286.5
+                          "Y": 285.5004
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -934,36 +934,36 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.9242
+                          "Y": 0.921
                         },
                         "PreSize": {
-                          "X": 0.34,
+                          "X": 0.67,
                           "Y": 0.0613
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 83.55,
-                        "TopMargin": 4.5,
-                        "BottomMargin": 286.5,
+                        "RightMargin": 17.55,
+                        "TopMargin": 5.4996,
+                        "BottomMargin": 285.5004,
                         "Tag": 108,
                         "ActionTag": 588282107,
                         "Size": {
-                          "X": 68.0,
+                          "X": 134.0,
                           "Y": 19.0
                         },
                         "Name": "total_hero",
                         "ctype": "TextBMFontObjectData"
                       },
                       {
-                        "LabelText": "111111",
+                        "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 261.5
+                          "Y": 260.5912
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -973,36 +973,36 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.8435
+                          "Y": 0.8406
                         },
                         "PreSize": {
-                          "X": 0.34,
+                          "X": 0.67,
                           "Y": 0.0613
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 83.55,
-                        "TopMargin": 29.5,
-                        "BottomMargin": 261.5,
+                        "RightMargin": 17.55,
+                        "TopMargin": 30.4088,
+                        "BottomMargin": 260.5912,
                         "Tag": 107,
                         "ActionTag": -1553685188,
                         "Size": {
-                          "X": 68.0,
+                          "X": 134.0,
                           "Y": 19.0
                         },
                         "Name": "total_hero_levels",
                         "ctype": "TextBMFontObjectData"
                       },
                       {
-                        "LabelText": "111111",
+                        "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 236.5
+                          "Y": 235.6821
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1012,36 +1012,36 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.7629
+                          "Y": 0.7603
                         },
                         "PreSize": {
-                          "X": 0.34,
+                          "X": 0.67,
                           "Y": 0.0613
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 83.55,
-                        "TopMargin": 54.5,
-                        "BottomMargin": 236.5,
+                        "RightMargin": 17.55,
+                        "TopMargin": 55.3179,
+                        "BottomMargin": 235.6821,
                         "Tag": 106,
                         "ActionTag": -372061785,
                         "Size": {
-                          "X": 68.0,
+                          "X": 134.0,
                           "Y": 19.0
                         },
                         "Name": "total_gold_rate",
                         "ctype": "TextBMFontObjectData"
                       },
                       {
-                        "LabelText": "111111",
+                        "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 211.5
+                          "Y": 210.773
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1051,20 +1051,20 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.6823
+                          "Y": 0.6799
                         },
                         "PreSize": {
-                          "X": 0.34,
+                          "X": 0.67,
                           "Y": 0.0613
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 83.55,
-                        "TopMargin": 79.5,
-                        "BottomMargin": 211.5,
+                        "RightMargin": 17.55,
+                        "TopMargin": 80.227,
+                        "BottomMargin": 210.773,
                         "Tag": 105,
                         "ActionTag": 121454749,
                         "Size": {
-                          "X": 68.0,
+                          "X": 134.0,
                           "Y": 19.0
                         },
                         "Name": "total_tap_rate",
@@ -1074,13 +1074,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 186.5
+                          "Y": 185.8639
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1090,7 +1090,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.6016
+                          "Y": 0.5996
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1098,8 +1098,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 104.5,
-                        "BottomMargin": 186.5,
+                        "TopMargin": 105.1361,
+                        "BottomMargin": 185.8639,
                         "Tag": 104,
                         "ActionTag": 42067463,
                         "Size": {
@@ -1113,13 +1113,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 161.5
+                          "Y": 160.9548
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1129,7 +1129,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.521
+                          "Y": 0.5192
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1137,8 +1137,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 129.5,
-                        "BottomMargin": 161.5,
+                        "TopMargin": 130.0452,
+                        "BottomMargin": 160.9548,
                         "Tag": 103,
                         "ActionTag": 1101032437,
                         "Size": {
@@ -1152,13 +1152,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 136.5
+                          "Y": 136.0456
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1168,7 +1168,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.4403
+                          "Y": 0.4389
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1176,8 +1176,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 154.5,
-                        "BottomMargin": 136.5,
+                        "TopMargin": 154.9544,
+                        "BottomMargin": 136.0456,
                         "Tag": 101,
                         "ActionTag": 2073439692,
                         "Size": {
@@ -1191,13 +1191,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 111.5
+                          "Y": 111.1365
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1207,7 +1207,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.3597
+                          "Y": 0.3585
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1215,8 +1215,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 179.5,
-                        "BottomMargin": 111.5,
+                        "TopMargin": 179.8635,
+                        "BottomMargin": 111.1365,
                         "Tag": 102,
                         "ActionTag": 2062460383,
                         "Size": {
@@ -1230,13 +1230,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 86.5
+                          "Y": 86.2274
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1246,7 +1246,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.279
+                          "Y": 0.2782
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1254,8 +1254,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 204.5,
-                        "BottomMargin": 86.5,
+                        "TopMargin": 204.7726,
+                        "BottomMargin": 86.2274,
                         "Tag": 100,
                         "ActionTag": -1963040224,
                         "Size": {
@@ -1269,13 +1269,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 61.5
+                          "Y": 61.3183
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1285,7 +1285,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.1984
+                          "Y": 0.1978
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1293,8 +1293,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 229.5,
-                        "BottomMargin": 61.5,
+                        "TopMargin": 229.6817,
+                        "BottomMargin": 61.3183,
                         "Tag": 98,
                         "ActionTag": -1420818432,
                         "Size": {
@@ -1308,13 +1308,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
                           "X": 48.45,
-                          "Y": 36.5
+                          "Y": 36.4091
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1324,7 +1324,7 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
-                          "Y": 0.1177
+                          "Y": 0.1174
                         },
                         "PreSize": {
                           "X": 0.34,
@@ -1332,8 +1332,8 @@
                         },
                         "LeftMargin": 48.45,
                         "RightMargin": 83.55,
-                        "TopMargin": 254.5,
-                        "BottomMargin": 36.5,
+                        "TopMargin": 254.5909,
+                        "BottomMargin": 36.4091,
                         "Tag": 97,
                         "ActionTag": -1107721885,
                         "Size": {
@@ -1347,13 +1347,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 48.45,
-                          "Y": 15.5
+                          "X": 48.4499,
+                          "Y": 11.5
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1362,17 +1362,17 @@
                         "CColor": {},
                         "IconVisible": false,
                         "PrePosition": {
-                          "X": 0.2423,
-                          "Y": 0.05
+                          "X": 0.2422,
+                          "Y": 0.0371
                         },
                         "PreSize": {
                           "X": 0.34,
                           "Y": 0.0613
                         },
-                        "LeftMargin": 48.45,
-                        "RightMargin": 83.55,
-                        "TopMargin": 275.5,
-                        "BottomMargin": 15.5,
+                        "LeftMargin": 48.4499,
+                        "RightMargin": 83.5501,
+                        "TopMargin": 279.5,
+                        "BottomMargin": 11.5,
                         "Tag": 89,
                         "ActionTag": -301535920,
                         "Size": {
@@ -1888,13 +1888,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 150.0
+                          "X": 0.0001,
+                          "Y": 152.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1904,15 +1904,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.7895
+                          "Y": 0.8
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 21.0,
-                        "BottomMargin": 150.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 19.0,
+                        "BottomMargin": 152.0,
                         "Tag": 110,
                         "ActionTag": 683802234,
                         "Size": {
@@ -1926,13 +1927,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 125.0
+                          "X": 0.0001,
+                          "Y": 127.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1942,15 +1943,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.6579
+                          "Y": 0.6684
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 46.0,
-                        "BottomMargin": 125.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 44.0,
+                        "BottomMargin": 127.0,
                         "Tag": 90,
                         "ActionTag": -233047130,
                         "Size": {
@@ -1964,13 +1966,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 100.0
+                          "X": 0.0001,
+                          "Y": 102.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -1980,15 +1982,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.5263
+                          "Y": 0.5368
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 71.0,
-                        "BottomMargin": 100.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 69.0,
+                        "BottomMargin": 102.0,
                         "Tag": 91,
                         "ActionTag": 544416432,
                         "Size": {
@@ -2002,13 +2005,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 75.0
+                          "X": 0.0001,
+                          "Y": 77.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -2018,15 +2021,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.3947
+                          "Y": 0.4053
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 96.0,
-                        "BottomMargin": 75.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 94.0,
+                        "BottomMargin": 77.0,
                         "Tag": 92,
                         "ActionTag": -2104887408,
                         "Size": {
@@ -2040,13 +2044,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 50.0
+                          "X": 0.0001,
+                          "Y": 52.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -2056,15 +2060,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.2632
+                          "Y": 0.2737
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 121.0,
-                        "BottomMargin": 50.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 119.0,
+                        "BottomMargin": 52.0,
                         "Tag": 93,
                         "ActionTag": 1797230862,
                         "Size": {
@@ -2078,13 +2083,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 25.0
+                          "X": 0.0001,
+                          "Y": 27.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -2094,15 +2099,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.1316
+                          "Y": 0.1421
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 146.0,
-                        "BottomMargin": 25.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 144.0,
+                        "BottomMargin": 27.0,
                         "Tag": 94,
                         "ActionTag": -1044715413,
                         "Size": {
@@ -2116,13 +2122,13 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font22_yellow_kmbb-export.fnt",
+                          "Path": "font/font22_yellow_kmbb-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
                         "Position": {
-                          "X": 0.0,
-                          "Y": 0.0
+                          "X": 0.0001,
+                          "Y": 2.0
                         },
                         "Scale": {
                           "ScaleX": 1.0,
@@ -2132,14 +2138,16 @@
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
-                          "Y": 0.0
+                          "Y": 0.0105
                         },
                         "PreSize": {
                           "X": 0.4857,
                           "Y": 0.1
                         },
-                        "RightMargin": 72.0,
-                        "TopMargin": 171.0,
+                        "LeftMargin": 0.0001,
+                        "RightMargin": 71.9999,
+                        "TopMargin": 169.0,
+                        "BottomMargin": 2.0,
                         "Tag": 95,
                         "ActionTag": -1395776310,
                         "Size": {
@@ -2185,10 +2193,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_01.png",
         "mainUI/bg_05.png",
-        "mainUI/font22_yellow_kmbb-export.png",
         "statisticsUI/cumulative_text.png",
         "statisticsUI/current_text.png",
         "statisticsUI/text04.png",
