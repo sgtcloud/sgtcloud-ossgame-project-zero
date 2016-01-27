@@ -169,7 +169,7 @@
                 <PreSize X="0.7828" Y="0.0622" />
                 <FileData Type="Normal" Path="mainUI/bar_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4615" TopMargin="11.1670" BottomMargin="651.8330" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="11.1670" BottomMargin="651.8330" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="48.0384" Y="690.3330" />
@@ -194,7 +194,7 @@
                 <PreSize X="0.7203" Y="0.0230" />
                 <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="189.1205" RightMargin="190.8795" TopMargin="294.3113" BottomMargin="265.6887" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="189.1205" RightMargin="190.8795" TopMargin="294.3113" BottomMargin="265.6887" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                 <Size X="260.0000" Y="180.0000" />
                 <AnchorPoint />
                 <Position X="189.1205" Y="265.6887" />
@@ -314,7 +314,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4615" TopMargin="173.2290" BottomMargin="489.7710" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="173.2290" BottomMargin="489.7710" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="48.0384" Y="528.2710" />
@@ -329,7 +329,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="statistics_btn" ActionTag="460589075" Tag="105" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4615" TopMargin="92.1980" BottomMargin="570.8020" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="statistics_btn" ActionTag="460589075" Tag="105" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="92.1980" BottomMargin="570.8020" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="48.0384" Y="609.3020" />
