@@ -21,7 +21,16 @@ var FairyUnit = cc.Node.extend({
         var random = getRandomInt(0, 2);
         this.initFly(random);
         var self = this;
-        fairy.bindClickFairyEvent = function () {
+        bindTouchEventListener(function(){
+            if (self.animationState == 'run') {
+                cc.log("点中精灵");
+                self.stopAllActions();
+                self.playAnimation("die", false);
+                self.onDead(self.getPosition());
+            }
+            return false;
+        },fairy);
+        /*fairy.bindClickFairyEvent = function () {
             var listener = cc.EventListener.create({
                 event: cc.EventListener.TOUCH_ONE_BY_ONE,
                 swallowTouches: false,
@@ -37,16 +46,15 @@ var FairyUnit = cc.Node.extend({
                             self.stopAllActions();
                             self.playAnimation("die", false);
                             self.onDead(self.getPosition());
+                            return true;
                         }
-                        return true;
-                    } else {
-                        return false;
                     }
+                    return false;
                 },
             });
             cc.eventManager.addListener(listener, fairy);
         };
-        fairy.bindClickFairyEvent();
+        fairy.bindClickFairyEvent();*/
         this.addChild(this.node);
     },
     playAnimation: function (name, falg) {
@@ -89,6 +97,7 @@ var FairyUnit = cc.Node.extend({
             self.createChest(position);
         }, this), a, b, cc.callFunc(function () {
             player.statistics.total_fairy += 1;
+            self.getParent().reset();
             self.removeFromParent(true);
         }, this)));
     },
@@ -102,6 +111,7 @@ var FairyUnit = cc.Node.extend({
             self.chestUnit.stopAllActions();
             self.chestUnit.playAnimation('open', false);
             self.onOpenChest(goods);
+            return false;
         });
         this.getParent().addChild(this.chestUnit, 2011);
     },

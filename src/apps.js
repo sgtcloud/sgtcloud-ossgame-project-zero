@@ -215,6 +215,24 @@ function unschedule(target) {
 function bindTouchEventListener(listener, target) {
 
     var mouseDownEventListener = cc.EventListener.create({
+        event: cc.EventListener.TOUCH_ONE_BY_ONE,
+        swallowTouches: false,
+        onTouchBegan: function (touch, event) {
+            var locationInNode = target.convertToNodeSpace(touch.getLocation());
+            var s = target.getContentSize();
+            var rect = cc.rect(0, 0, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                //cc.log(locationInNode.x + " " + locationInNode.y);
+                return listener(touch, event);
+            }
+            return false;
+        },
+    });
+    cc.eventManager.addListener(mouseDownEventListener, target);
+}
+
+function bindMouseEventListener(listener, target) {
+    var mouseDownEventListener = cc.EventListener.create({
         event: cc.EventListener.MOUSE,
         swallowTouches: true,
         onMouseDown: function (touch, event) {

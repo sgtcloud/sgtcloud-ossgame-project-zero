@@ -19,11 +19,15 @@ var GamePopup = cc.Layer.extend({
                 var locationInNode = self.target.convertToNodeSpace(touch.getLocation());
                 var s = self.target.getContentSize();
                 var rect = cc.rect(0, 0, s.width, s.height);
-                if (!cc.rectContainsPoint(rect, locationInNode)) {
+                if (!self.isSwallow && !cc.rectContainsPoint(rect, locationInNode)) {
                     self.target.removeFromParent();
-                    self.hidden();
+                    //self.onExit();
+                    self.removeFromParent();
                     return false;
                 }
+                /*if(cc.rectContainsPoint(rect, locationInNode)){
+                    return false;
+                }*/
                 return true;
             }
         });

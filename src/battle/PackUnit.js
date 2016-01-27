@@ -29,12 +29,14 @@ var PackUnit = cc.Node.extend({
             element.ignoreContentAdaptWithSize(true);
             element.setString(value);
         };
-        for(var i in packs){
-            this.setElement(packs[i],player.resource[packs[i]],this.pack);
-        }
-        for(var i in chestsAndKeys){
-            this.setElement(chestsAndKeys[i],player.resource[chestsAndKeys[i]],this.chest);
-        }
+        this.reFreshAll = function(){
+            for(var i in packs){
+                this.setElement(packs[i],player.resource[packs[i]],this.pack);
+            }
+            for(var i in chestsAndKeys){
+                this.setElement(chestsAndKeys[i],player.resource[chestsAndKeys[i]],this.chest);
+            }
+        };
         var golden_chest_btn = this.chest.getChildByName('golden_chest_btn');
         var silver_chest_btn = this.chest.getChildByName('silver_chest_btn');
         var iron_chest_btn = this.chest.getChildByName('iron_chest_btn');
@@ -81,6 +83,10 @@ var PackUnit = cc.Node.extend({
         iron_chest_btn.addClickEventListener(function(){
             self.openChest("iron_key","iron_chest","c1001")
         });
+        customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+            this.reFreshAll();
+        }.bind(this));
+        this.reFreshAll();
         this.addChild(this.packLayer);
     }
 });

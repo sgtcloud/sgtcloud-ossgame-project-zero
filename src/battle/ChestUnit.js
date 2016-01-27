@@ -29,6 +29,14 @@ var ChestUnit = cc.Node.extend({
     },
     clickChest:  function (callback) {
         var self = this;
+        bindTouchEventListener(function(){
+            if (self.animationState == 'close') {
+                return callback(self.goods);
+            }else{
+                return false;
+            }
+        },this.chest);
+        /*
         var listener = cc.EventListener.create({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
             swallowTouches: false,
@@ -44,6 +52,6 @@ var ChestUnit = cc.Node.extend({
                 return false;
             },
         });
-        cc.eventManager.addListener(listener, this.chest);
+        cc.eventManager.addListener(listener, this.chest);*/
     }
 });
