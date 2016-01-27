@@ -1041,7 +1041,7 @@ var ShopLayerMenu = BattleMenu.extend({
             var n = 0;
             for (var i in goods) {
                 n++;
-                var equip = dataSource.equips[goods[i].propId];
+                //var equip = dataSource.equips[goods[i].propId];
                 var shopPorp = shopPorps.getChildByName("item" + n).getChildByName("root");
                 var itemLayer = shopPorp.getChildByName("itemLayer").getChildByName("root");
 
@@ -1050,9 +1050,9 @@ var ShopLayerMenu = BattleMenu.extend({
                 saleText.setString(goods[i].num);
 
                 var itemIcon = itemLayer.getChildByName("item_icon");
-                itemIcon.loadTexture("res/icon/equips/" + equip.icon);
+                itemIcon.loadTexture("res/icon/resources/" + goods[i].propId+".png");
 
-                shopPorp.getChildByName("item_name").setString(equip.name);
+                shopPorp.getChildByName("item_name").setString(goods[i].propId);
 
                 var res = shopPorp.getChildByName("res");
 
@@ -1068,35 +1068,40 @@ var ShopLayerMenu = BattleMenu.extend({
                 resSaleText.setString(goods[i].price.value);
 
                 var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
-                var price = goods[i].price;
-                self.clickBtn(buyBtn, price, goods[i]);
+                //var price = goods[i].price;
+                self.clickBtn(buyBtn, goods[i]);
             }
         };
-        this.clickBtn = function (buyBtn, price, goods) {
+        this.clickBtn = function (buyBtn, goods) {
             buyBtn.addClickEventListener(function () {
-                self.buyGoods(price, goods);
+                self.buyGoods(goods);
             });
         }
-        this.buyGoods = function (data, goods) {
-            if (PlayerData.getAmountByUnit(data.unit) >= data.value) {
-                PlayerData.updateResource([PlayerData.createResourceData(data.unit, -data.value)]);
-                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+        this.buyGoods = function (goods) {
+            var price = goods.price;
+            if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
+                PlayerData.updateResource([PlayerData.createResourceData(price.unit, -price.value),PlayerData.createResourceData(goods.propId, goods.num)]);
+                if (price.unit === "gold") {
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                } else if (price.unit === "gem") {
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                } else if (price.unit === "relic") {
+                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                }
+                customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                // wait to refact with new resource logic
-                /*player.packs.push({
-                 "packType": "equip",
-                 "relateId": goods.propId,
-                 "num": goods.num,
-                 "level": 1
-                 });*/
-                //new Popup1("友情提示1","购买成功");
             } else {
-                new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
-                    /*layer.removeFromParent();
-                     gamePopup.hidden();*/
-                    popup.hiddenPopup();
-                    self.showMenuLayer("moneyTree_tab");
-                });
+                if(price.unit === 'gem'){
+                    new Popup1("友情提示", "当前钻石不足", function (popup) {
+                        popup.hiddenPopup();
+                        //进入充值页面。
+                    });
+                }else if(price.unit === 'gold'){
+                    new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
+                        popup.hiddenPopup();
+                        self.showMenuLayer("moneyTree_tab");
+                    });
+                }
             }
         };
         this.showPorpView("shop_tab");
