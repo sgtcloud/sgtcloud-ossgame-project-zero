@@ -31,8 +31,33 @@ var MainScene = cc.Scene.extend({
         var width = this.width;
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
         this.addChild(this.buffTip);
-        var buffList=this.battlePanel.buffList;
+        var buffListNode=ccs.csLoader.createNode(res.buff_list_json);
+        buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
+        this/*.battlePanel*/.addChild(buffListNode,5000);
+        var buffList=buffListNode.getChildByName('buff_list');
+
         (function (w) {
+
+
+
+            //var mouseDownEventListener = cc.EventListener.create({
+            //    event: cc.EventListener.MOUSE,
+            //    swallowTouches: true,
+            //    onTouchBegan: function (touch, event) {
+            //        var locationInNode = buffList.convertToNodeSpace(touch.getLocation());
+            //        var s = buffList.getContentSize();
+            //        var rect = cc.rect(0, 0, s.width, s.height);
+            //        if (cc.rectContainsPoint(rect, locationInNode)) {
+            //            //cc.log(locationInNode.x + " " + locationInNode.y);
+            //            //return function(touch, event);
+            //            cc.eventManager.dispatchEvent(event);
+            //            return true;
+            //        }
+            //        return false;
+            //    },
+            //});
+            //cc.eventManager.addListener(mouseDownEventListener, buffList);
+
             var __toggle_hide = 0;
             function toggleBuffTip() {
                 buffTip.setVisible(true);

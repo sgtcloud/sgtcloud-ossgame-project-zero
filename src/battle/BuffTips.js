@@ -25,7 +25,7 @@ var BuffView=cc.Node.extend({
 
 var BuffList=cc.Class.extend({
     ctor:function(){
-        this.root=ccs.csLoader.createNode(res);
+        this.root=ccs.csLoader.createNode(res.buff_list_json);
     }
 });
 

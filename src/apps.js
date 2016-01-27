@@ -234,7 +234,7 @@ function bindTouchEventListener(listener, target) {
 function bindMouseEventListener(listener, target) {
     var mouseDownEventListener = cc.EventListener.create({
         event: cc.EventListener.MOUSE,
-        swallowTouches: true,
+        swallowTouches: false,
         onMouseDown: function (touch, event) {
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();

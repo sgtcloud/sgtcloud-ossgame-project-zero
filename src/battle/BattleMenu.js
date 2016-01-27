@@ -625,7 +625,6 @@ var HeroListMenu = BattleMenu.extend({
                 if (hero.getLv() == 1) {
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
                 }
-                cc.log('current hero[' + hero.getId() + ']\'s Lv is ' + hero.getLv());
             });
 
             return root;
@@ -741,17 +740,22 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn = {};
             elements.lock_btn.layer = lock_btn;
             elements.lock_btn.btn = lock_btn.getChildByName('btn');
+            elements.lock_btn.btn.setEnabled(false);
+            elements.lock_btn.btn.setBright(false);
             elements.lock_btn.level_text = lock_btn.getChildByName('level_text');
             elements.lock_btn.lock = lock_btn.getChildByName('lock');
             elements.lock_btn.layer.setVisible(false)
+            //icon.loadTexture("res/materialUI/golden_chest_2.png");
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
+            //icon.setContentSize(15,15);
             name.setString(skill.getName());
             desc.setString(buildSkillDesc(skill));
             lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
             elements.lock_btn.level_text.setString("Lv." + skill.getUnlockLevel())
             elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
+            elements.lock_btn.level_text.setFontName("微软雅黑");
             elements.upgrade_btn.per.setVisible(false);
-            setFont([name, desc, lv, elements.lock_btn.level_text, elements.upgrade_btn.buff_text]);
+            setFont([name, desc, lv, elements.upgrade_btn.buff_text]);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                     if (canUnlockSkill(hero, skill)) {
                         if (!skill.isMaxLevel()) {
