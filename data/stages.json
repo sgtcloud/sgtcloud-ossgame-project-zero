@@ -10,7 +10,7 @@
   "moneyTreeRatio" : 500,
   "offlineReward" : [ {
     "value" : 1,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 1,
     "unit" : "gem"
@@ -48,7 +48,7 @@
   "moneyTreeRatio" : 1000,
   "offlineReward" : [ {
     "value" : 2,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 2,
     "unit" : "gem"
@@ -92,7 +92,7 @@
   "moneyTreeRatio" : 1500,
   "offlineReward" : [ {
     "value" : 3,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 3,
     "unit" : "gem"
@@ -142,7 +142,7 @@
   "moneyTreeRatio" : 2000,
   "offlineReward" : [ {
     "value" : 4,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 4,
     "unit" : "gem"
@@ -198,7 +198,7 @@
   "moneyTreeRatio" : 2500,
   "offlineReward" : [ {
     "value" : 5,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 5,
     "unit" : "gem"
@@ -260,7 +260,7 @@
   "moneyTreeRatio" : 3000,
   "offlineReward" : [ {
     "value" : 6,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 6,
     "unit" : "gem"
@@ -316,7 +316,7 @@
   "moneyTreeRatio" : 3500,
   "offlineReward" : [ {
     "value" : 7,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 7,
     "unit" : "gem"
@@ -378,7 +378,7 @@
   "moneyTreeRatio" : 4000,
   "offlineReward" : [ {
     "value" : 8,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 8,
     "unit" : "gem"
@@ -440,7 +440,7 @@
   "moneyTreeRatio" : 4500,
   "offlineReward" : [ {
     "value" : 9,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 9,
     "unit" : "gem"
@@ -502,7 +502,7 @@
   "moneyTreeRatio" : 5000,
   "offlineReward" : [ {
     "value" : 10,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 10,
     "unit" : "gem"
@@ -570,7 +570,7 @@
   "moneyTreeRatio" : 5500,
   "offlineReward" : [ {
     "value" : 11,
-    "unit" : "key"
+    "unit" : "iron_key"
   }, {
     "value" : 11,
     "unit" : "gem"

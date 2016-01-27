@@ -137,6 +137,11 @@ var BattlePanel = cc.Node.extend({
             var rewards = player.not_get_reward;
             for (var key in rewards) {
                 if (rewards.hasOwnProperty(key)) {
+                    if(key.indexOf("key") != -1){
+                        var icon = offlineRewardLayerBox.getChildByName("key");
+                        icon.loadTexture("res/icon/resources/" + key+".png");
+                        key = "key";
+                    }
                     var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
                     offlineRewardLayerText.ignoreContentAdaptWithSize(true);
                     offlineRewardLayerText.setString(rewards[key]);
@@ -144,7 +149,7 @@ var BattlePanel = cc.Node.extend({
             }
             var gamePopup = new GamePopup(offlineRewardLayer);
             //bindTouchEventListener(,);
-            bindButtonCallback( offlineRewardLayerBtn,function () {
+            bindButtonCallback(offlineRewardLayerBtn,function () {
                 offlineRewardLayer.removeFromParent();
                 self.rewardBtn.visible = false;
                 gamePopup.removeFromParent();
@@ -219,9 +224,6 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             PlayerData.getStageData().leaveBossBattle();
             self.prepareBattle(PlayerData.getStageData());
-            /*if (self.times != undefined) {
-             clearInterval(self.times);
-             }*/
 
         });
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
@@ -281,7 +283,7 @@ var BattlePanel = cc.Node.extend({
         this.intervalState = true;
     },
     loadRewardBtn: function () {
-        if (player.not_get_reward["gold"] > 0) {
+        if (cc.isObject(player.not_get_reward)) {
             this.rewardBtn.visible = true;
         } else {
             this.rewardBtn.visible = false;
@@ -338,18 +340,6 @@ var BattlePanel = cc.Node.extend({
         this.boosTimeMax = stage.getBossTimeMax();
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
-        /* this.timeText.setString(this.boosTimeMax);
-         this.timeBar.setPercent(this.boosTimeMax / stage.getBossTimeMax() * 100);*/
-
-        /* this.times = setInterval(function () {
-         if (self.boosTimeMax == 0) {
-         customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-         } else {
-         self.boosTimeMax--;
-         self.timeText.setString(self.boosTimeMax);
-         self.timeBar.setPercent(self.boosTimeMax / stage.getBossTimeMax() * 100);
-         }
-         }, 1000);*/
     },
     updateBossBattleTime: function (dt, stage) {
         if (Math.floor(this.boosTimeMax) < 0) {

@@ -20,41 +20,41 @@ var FairyUnit = cc.Node.extend({
         this.playAnimation("run", true);
         var random = getRandomInt(0, 2);
         this.initFly(random);
-        var self = this;
-        bindTouchEventListener(function(){
-            if (self.animationState == 'run') {
+        //var self = this;
+        bindTouchEventListener(function () {
+            if (this.animationState == 'run') {
                 cc.log("点中精灵");
-                self.stopAllActions();
-                self.playAnimation("die", false);
-                self.onDead(self.getPosition());
+                this.stopAllActions();
+                this.playAnimation("die", false);
+                this.onDead(this.getPosition());
             }
             return false;
-        },fairy);
+        }.bind(this), fairy);
         /*fairy.bindClickFairyEvent = function () {
-            var listener = cc.EventListener.create({
-                event: cc.EventListener.TOUCH_ONE_BY_ONE,
-                swallowTouches: false,
-                onTouchBegan: function (touch, event) {
-                    //self.FairyUnit.convert
-                    if (self.animationState == 'run') {
-                        var touchPosition = fairy.convertToNodeSpace(touch.getLocation());
-                        var s = fairy.getContentSize();
-                        //var self_ui = ccui.helper.doLayout(fairy);
-                        var rect = cc.rect(0, 0, s.width, s.height);
-                        if (cc.rectContainsPoint(rect, touchPosition)) {
-                            cc.log("点中精灵");
-                            self.stopAllActions();
-                            self.playAnimation("die", false);
-                            self.onDead(self.getPosition());
-                            return true;
-                        }
-                    }
-                    return false;
-                },
-            });
-            cc.eventManager.addListener(listener, fairy);
-        };
-        fairy.bindClickFairyEvent();*/
+         var listener = cc.EventListener.create({
+         event: cc.EventListener.TOUCH_ONE_BY_ONE,
+         swallowTouches: false,
+         onTouchBegan: function (touch, event) {
+         //self.FairyUnit.convert
+         if (self.animationState == 'run') {
+         var touchPosition = fairy.convertToNodeSpace(touch.getLocation());
+         var s = fairy.getContentSize();
+         //var self_ui = ccui.helper.doLayout(fairy);
+         var rect = cc.rect(0, 0, s.width, s.height);
+         if (cc.rectContainsPoint(rect, touchPosition)) {
+         cc.log("点中精灵");
+         self.stopAllActions();
+         self.playAnimation("die", false);
+         self.onDead(self.getPosition());
+         return true;
+         }
+         }
+         return false;
+         },
+         });
+         cc.eventManager.addListener(listener, fairy);
+         };
+         fairy.bindClickFairyEvent();*/
         this.addChild(this.node);
     },
     playAnimation: function (name, falg) {
@@ -91,40 +91,40 @@ var FairyUnit = cc.Node.extend({
         this.animationState = 'die';
         var a = cc.delayTime(0.5);
         var b = cc.fadeTo(1.0, 0);
-        var self = this;
+        //var self = this;
         this.node.runAction(cc.sequence(cc.callFunc(function () {
-            self.getRandomEvent();
-            self.createChest(position);
-        }, this), a, b, cc.callFunc(function () {
+            this.createChest(position);
+        }.bind(this), this), a, b, cc.callFunc(function () {
             player.statistics.total_fairy += 1;
-            self.getParent().reset();
-            self.removeFromParent(true);
-        }, this)));
+            this.getParent().reset();
+            this.removeFromParent(true);
+        }.bind(this), this)));
     },
     createChest: function (position) {
-        var res = this.getRandomEvent();
-        this.chestUnit = new ChestUnit("res/"+res["chestStyle"],res);
-        this.chestUnit.setPosition(position);
-        this.runChest(res);
-        var self = this;
-        this.chestUnit.clickChest(function (goods) {
-            self.chestUnit.stopAllActions();
-            self.chestUnit.playAnimation('open', false);
-            self.onOpenChest(goods);
-            return false;
-        });
-        this.getParent().addChild(this.chestUnit, 2011);
+        this.getRandomEvent(function (res) {
+            this.chestUnit = new ChestUnit("res/" + res.chestStyle, res);
+            this.chestUnit.setPosition(position);
+            this.runChest(res);
+            //var self = this;
+            this.chestUnit.clickChest(function (goods) {
+                this.chestUnit.stopAllActions();
+                this.chestUnit.playAnimation('open', false);
+                this.onOpenChest(goods);
+                return false;
+            }.bind(this));
+            this.getParent().addChild(this.chestUnit, 2011);
+        }.bind(this));
     },
     runChest: function (res) {
         var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 36 - 16);
         var appear = cc.jumpBy(0.2, jumpPos, 24, 1);
         var delay = cc.delayTime(5);
-        var self = this;
+        //var self = this;
         var removeNode = cc.callFunc(function () {
             //打开
-            self.chestUnit.playAnimation('open', false);
-            self.onOpenChest(res);
-        }, this.chestUnit);
+            this.chestUnit.playAnimation('open', false);
+            this.onOpenChest(res);
+        }.bind(this), this.chestUnit);
         this.chestUnit.runAction(cc.sequence(appear, cc.delayTime(1), delay, removeNode));
     },
     generateLoot: function (rate) {
@@ -139,12 +139,11 @@ var FairyUnit = cc.Node.extend({
         this.chestUnit.animationState = 'open';
         var a = cc.delayTime(0.5);
         var b = cc.fadeTo(0.5, 0);
-        var self = this;
+        //var self = this;
         this.chestUnit.runAction(cc.sequence(cc.callFunc(function () {
-            //self.getRandomEvent();
             if (res.skill_id == 'gold') {
                 cc.log('获取金币');
-                self.generateLoot(res.level);
+                this.generateLoot(res.level);
             } else {
                 //发送释放buff事件
                 cc.log('释放buff');
@@ -153,28 +152,31 @@ var FairyUnit = cc.Node.extend({
                     level: res.level
                 });
             }
-            cc.log(res.weight + " , " + res.skill_id + " , " + res.level);
-            self.chestUnit.parent.reset();
-        }, this.chestUnit), a, b, cc.callFunc(function () {
+            cc.log(res.chestStyle + " , " + res.skill_id + " , " + res.level);
+            this.chestUnit.parent.reset();
+        }.bind(this), this.chestUnit), a, b, cc.callFunc(function () {
             player.statistics.total_chest_open += 1;
-            self.chestUnit.removeFromParent(true);
-        }, this.chestUnit)));
+            this.chestUnit.removeFromParent(true);
+        }.bind(this), this.chestUnit)));
     },
-    getRandomEvent: function () {
+    getRandomEvent: function (callback) {
         var events = CONSTS.click_chest_random_events;
-        var total_weight = 0;
-        for (var i in events) {
-            total_weight += events[i].weight;
-        }
-        var random = getRandomInt(1, total_weight);
-        var temp_weight = 0;
-        for (var i in events) {
-            var event = events[i];
-            temp_weight += event.weight;
-            if (random < temp_weight) {
-                return event;
-                //break;
-            }
-        }
+        var chance = new Chance(events);
+        var res = chance.next();
+        return callback(res);
+        /*var total_weight = 0;
+         for (var i in events) {
+         total_weight += events[i].weight;
+         }
+         var random = getRandomInt(1, total_weight);
+         var temp_weight = 0;
+         for (var i in events) {
+         var event = events[i];
+         temp_weight += event.weight;
+         if (random < temp_weight) {
+         return event;
+         //break;
+         }
+         }*/
     }
 });
