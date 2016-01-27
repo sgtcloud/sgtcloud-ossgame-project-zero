@@ -33,6 +33,7 @@
           <Image Name="revive.png" />
           <Image Name="sure.png" />
           <Image Name="upLevel.png" />
+          <Image Name="font16_yellow_kmbb.png" />
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -354,9 +355,12 @@
         </Folder>
         <Folder Name="font">
           <Fnt Name="font22_yellow_kmbb-export.fnt" />
-          <Fnt Name="bitmapFontTest2.fnt" />
+          <Fnt Name="font16_yellow_kmbb-export.fnt" />
+          <Image Name="font16_yellow_kmbb-export.png" />
+          <Image Name="font22_yellow_kmbb-export.png" />
         </Folder>
         <PlistInfo Name="BattleLayer.csi" Type="Plist" />
+        <Project Name="BuffList.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

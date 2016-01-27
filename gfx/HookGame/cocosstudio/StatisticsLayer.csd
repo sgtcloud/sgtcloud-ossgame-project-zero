@@ -135,7 +135,7 @@
                         <PreSize X="1.0000" Y="0.0742" />
                         <FileData Type="Normal" Path="statisticsUI/text10.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_attack_value" ActionTag="373772142" Tag="59" IconVisible="False" LeftMargin="13.2497" RightMargin="-13.2497" TopMargin="177.8636" BottomMargin="109.1365" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="total_attack_value" ActionTag="373772142" Tag="59" IconVisible="False" LeftMargin="13.2497" RightMargin="-13.2497" TopMargin="177.8635" BottomMargin="109.1365" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="113.2497" Y="120.6365" />
@@ -200,124 +200,124 @@
                   <AbstractNodeData Name="number" ActionTag="-1526191025" Tag="61" IconVisible="False" LeftMargin="400.0000" RightMargin="10.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="310.0000" />
                     <Children>
-                      <AbstractNodeData Name="total_hero" ActionTag="588282107" Tag="108" IconVisible="False" LeftMargin="48.4500" RightMargin="17.5500" TopMargin="5.4996" BottomMargin="285.5004" LabelText="999999" ctype="TextBMFontObjectData">
-                        <Size X="134.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_hero" ActionTag="588282107" Tag="108" IconVisible="False" LeftMargin="48.4500" RightMargin="41.5500" TopMargin="5.4996" BottomMargin="285.5004" LabelText="589.554k" ctype="TextBMFontObjectData">
+                        <Size X="110.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="285.5004" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.9210" />
-                        <PreSize X="0.6700" Y="0.0613" />
+                        <PreSize X="0.5500" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_hero_levels" ActionTag="-1553685188" Tag="107" IconVisible="False" LeftMargin="48.4500" RightMargin="17.5500" TopMargin="30.4088" BottomMargin="260.5912" LabelText="999999" ctype="TextBMFontObjectData">
-                        <Size X="134.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_hero_levels" ActionTag="-1553685188" Tag="107" IconVisible="False" LeftMargin="48.4500" RightMargin="52.5500" TopMargin="30.4088" BottomMargin="260.5912" LabelText="999999" ctype="TextBMFontObjectData">
+                        <Size X="99.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="260.5912" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.8406" />
-                        <PreSize X="0.6700" Y="0.0613" />
+                        <PreSize X="0.4950" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_gold_rate" ActionTag="-372061785" Tag="106" IconVisible="False" LeftMargin="48.4500" RightMargin="17.5500" TopMargin="55.3179" BottomMargin="235.6821" LabelText="999999" ctype="TextBMFontObjectData">
-                        <Size X="134.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_gold_rate" ActionTag="-372061785" Tag="106" IconVisible="False" LeftMargin="48.4500" RightMargin="52.5500" TopMargin="55.3179" BottomMargin="235.6821" LabelText="999999" ctype="TextBMFontObjectData">
+                        <Size X="99.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="235.6821" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.7603" />
-                        <PreSize X="0.6700" Y="0.0613" />
+                        <PreSize X="0.4950" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_tap_rate" ActionTag="121454749" Tag="105" IconVisible="False" LeftMargin="48.4500" RightMargin="17.5500" TopMargin="80.2270" BottomMargin="210.7730" LabelText="999999" ctype="TextBMFontObjectData">
-                        <Size X="134.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_tap_rate" ActionTag="121454749" Tag="105" IconVisible="False" LeftMargin="48.4500" RightMargin="52.5500" TopMargin="80.2270" BottomMargin="210.7730" LabelText="999999" ctype="TextBMFontObjectData">
+                        <Size X="99.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="210.7730" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.6799" />
-                        <PreSize X="0.6700" Y="0.0613" />
+                        <PreSize X="0.4950" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_attack_rate" ActionTag="42067463" Tag="104" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="105.1361" BottomMargin="185.8639" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_attack_rate" ActionTag="42067463" Tag="104" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="105.1361" BottomMargin="185.8639" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="185.8639" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.5996" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_life_rate" ActionTag="1101032437" Tag="103" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="130.0452" BottomMargin="160.9548" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_life_rate" ActionTag="1101032437" Tag="103" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="130.0452" BottomMargin="160.9548" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="160.9548" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.5192" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_tap_value" ActionTag="2073439692" Tag="101" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="154.9544" BottomMargin="136.0456" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_tap_value" ActionTag="2073439692" Tag="101" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="154.9544" BottomMargin="136.0456" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="136.0456" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.4389" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_attack_value" ActionTag="2062460383" Tag="102" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="179.8635" BottomMargin="111.1365" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_attack_value" ActionTag="2062460383" Tag="102" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="179.8635" BottomMargin="111.1365" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="111.1365" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.3585" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_life_value" ActionTag="-1963040224" Tag="100" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="204.7726" BottomMargin="86.2274" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_life_value" ActionTag="-1963040224" Tag="100" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="204.7726" BottomMargin="86.2274" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="86.2274" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.2782" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_ctr_chance_rate" ActionTag="-1420818432" Tag="98" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="229.6817" BottomMargin="61.3183" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_ctr_chance_rate" ActionTag="-1420818432" Tag="98" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="229.6817" BottomMargin="61.3183" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="61.3183" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.1978" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_ctr_modify_rate" ActionTag="-1107721885" Tag="97" IconVisible="False" LeftMargin="48.4500" RightMargin="83.5500" TopMargin="254.5909" BottomMargin="36.4091" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_ctr_modify_rate" ActionTag="-1107721885" Tag="97" IconVisible="False" LeftMargin="48.4500" RightMargin="118.5500" TopMargin="254.5909" BottomMargin="36.4091" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4500" Y="36.4091" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2423" Y="0.1174" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="total_atk_period_rate" ActionTag="-301535920" Tag="89" IconVisible="False" LeftMargin="48.4499" RightMargin="83.5501" TopMargin="279.5000" BottomMargin="11.5000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                      <AbstractNodeData Name="total_atk_period_rate" ActionTag="-301535920" Tag="89" IconVisible="False" LeftMargin="48.4499" RightMargin="118.5501" TopMargin="279.5000" BottomMargin="11.5000" LabelText="111111" ctype="TextBMFontObjectData">
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="48.4499" Y="11.5000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2422" Y="0.0371" />
-                        <PreSize X="0.3400" Y="0.0613" />
+                        <PreSize X="0.1650" Y="0.0613" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                     </Children>
@@ -456,7 +456,7 @@
                     <Size X="140.0000" Y="190.0000" />
                     <Children>
                       <AbstractNodeData Name="statistics.total_gold" ActionTag="683802234" Tag="110" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="19.0000" BottomMargin="152.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="152.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -466,7 +466,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_relic" ActionTag="-233047130" Tag="90" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="44.0000" BottomMargin="127.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="127.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -476,7 +476,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_fairy" ActionTag="544416432" Tag="91" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="69.0000" BottomMargin="102.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="102.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -486,7 +486,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_chest_open" ActionTag="-2104887408" Tag="92" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="94.0000" BottomMargin="77.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="77.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -496,7 +496,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_enemy_kill" ActionTag="1797230862" Tag="93" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="119.0000" BottomMargin="52.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="52.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -506,7 +506,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_boss_kill" ActionTag="-1044715413" Tag="94" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="144.0000" BottomMargin="27.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="27.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -516,7 +516,7 @@
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_max_level" ActionTag="-1395776310" Tag="95" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="169.0000" BottomMargin="2.0000" LabelText="111111" ctype="TextBMFontObjectData">
-                        <Size X="68.0000" Y="19.0000" />
+                        <Size X="33.0000" Y="19.0000" />
                         <AnchorPoint />
                         <Position X="0.0001" Y="2.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
