@@ -137,7 +137,9 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                 if(!(isCoolDowning||heroDead)){
                     doCoolDown(levelData);
                     console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
-                    toggleBufflayer(levelData['duration'],buildSkillDesc(skill),that.skill.getIcon());
+                    if(levelData['duration']>0){
+                        toggleBufflayer(levelData['duration'],buildSkillBuffDesc(skill),that.skill.getIcon());
+                    }
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 }else if(isCoolDowning&&!heroDead){
                     console.log('技能【'+that.skill.getId()+"】冷却中，请稍候再点！");
@@ -297,6 +299,7 @@ var SkillListMenu = BattleMenu.extend({
 function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
+        console.log(effects[i]['type'])
         var map = SkillEffectMappings[effects[i]['type']];
         var alas = map['name'];
         var value = effects[i]['value'];
@@ -315,6 +318,11 @@ function buildSkillDesc(skill, levelData) {
     //var lv= skill.getLv()===0?1:skill.getLv();
     var effects = skill.traverseSkillEffects();
     return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
+}
+function buildSkillBuffDesc(skill, levelData) {
+    //var lv= skill.getLv()===0?1:skill.getLv();
+    var effects = skill.traverseSkillEffects();
+    return buildDesc(effects, skill.getBuffDesc(), {"duration": skill.getLevelData()['duration']});
 }
 var HeroListMenu = BattleMenu.extend({
     ctor: function (battle) {
@@ -347,6 +355,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
+                    console.log('init next life' + nextLevelLife)
                     elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(nextLevelLife - levelLife)));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
@@ -476,8 +485,8 @@ var HeroListMenu = BattleMenu.extend({
                     var resurge = hero.getResurge();
                     resurge['cost']['value'] = -resurge['cost']['value'];
                     PlayerData.updateResource([resurge['cost']]);
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                     PlayerData.updatePlayer();
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                     // console.log('请注意，英雄' + hero.getId() + '请求买活....');
                     customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                 }
@@ -490,11 +499,15 @@ var HeroListMenu = BattleMenu.extend({
             });
             elements.die_time_text.setFontName("微软雅黑");
             setFont([heroName_text, lv, elements.upgrade_btn.buff_text]);
-            if (hero.getCurrentLife() > 0) {
+            //die_text.setVisible(false);
+            //die_time_text.setVisible(false);
+            //elements.revive_btn.layer.setVisible(false);
+            if ((hero.getLv()>0&&hero.getCurrentLife() > 0)||hero.getLv()==0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
                 elements.revive_btn.layer.setVisible(false);
             }
+
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventHero = event.getUserData();
                 if (eventHero.getId() === hero.getId()) {
@@ -529,8 +542,6 @@ var HeroListMenu = BattleMenu.extend({
                     var costValue = parseInt(resurge['cost']['value']);
                     elements.revive_btn.diamond_text.setString(costValue);
                     elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
-                    // console.log('钻石不足')
-                    // console.log('钻石不足')
                     if (PlayerData.getAmountByUnit("gem") < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
