@@ -138,22 +138,18 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 20,
-                "CharHeight": 19,
                 "LabelText": "999999",
-                "StartChar": ".",
-                "LabelAtlasFileImage_CNB": {
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow_kmbb.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 353.6187,
-                  "Y": 514.8141
+                  "X": 290.0184,
+                  "Y": 514.8831
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -162,71 +158,66 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5797,
-                  "Y": 0.858
+                  "X": 0.4754,
+                  "Y": 0.8581
                 },
                 "PreSize": {
-                  "X": 0.1967,
+                  "X": 0.1623,
                   "Y": 0.0317
                 },
-                "LeftMargin": 293.6187,
-                "RightMargin": 196.3813,
-                "TopMargin": 75.6859,
-                "BottomMargin": 505.3141,
-                "Tag": 283,
-                "ActionTag": -671076954,
+                "LeftMargin": 290.0184,
+                "RightMargin": 220.9816,
+                "TopMargin": 75.6169,
+                "BottomMargin": 505.3831,
+                "Tag": 907,
+                "ActionTag": -1775524666,
                 "Size": {
-                  "X": 120.0,
+                  "X": 99.0,
                   "Y": 19.0
                 },
                 "Name": "diamond_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 21,
-                "CharHeight": 21,
                 "LabelText": "999999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font28_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 330.022,
-                  "Y": 554.9778
+                  "X": 265.5253,
+                  "Y": 557.1674
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 1.3,
+                  "ScaleY": 1.3
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.541,
-                  "Y": 0.925
+                  "X": 0.4353,
+                  "Y": 0.9286
                 },
                 "PreSize": {
-                  "X": 0.2066,
-                  "Y": 0.035
+                  "X": 0.1623,
+                  "Y": 0.0317
                 },
-                "LeftMargin": 267.022,
-                "RightMargin": 216.978,
-                "TopMargin": 34.5222,
-                "BottomMargin": 544.4778,
-                "CallBackType": "Click",
-                "Tag": 284,
-                "ActionTag": -278615090,
+                "LeftMargin": 265.5253,
+                "RightMargin": 245.4747,
+                "TopMargin": 33.3326,
+                "BottomMargin": 547.6674,
+                "Tag": 906,
+                "ActionTag": 1878014452,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 21.0
+                  "X": 99.0,
+                  "Y": 19.0
                 },
                 "Name": "gold_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -871,13 +862,13 @@
       },
       "UsedResources": [
         "buttonUI/buy3.png",
+        "font/font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.png",
         "heroUI/diamond.png",
         "heroUI/gold.png",
         "mainUI/bg_03.png",
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
-        "mainUI/font22_yellow_kmbb.png",
-        "mainUI/font28_yellow.png",
         "ShopIconLayer.json",
         "shopUI/moneyTree_bg.png",
         "shopUI/sale.png"

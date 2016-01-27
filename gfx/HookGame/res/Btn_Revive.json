@@ -133,8 +133,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 35.1188,
-                  "Y": 26.6033
+                  "X": 56.1194,
+                  "Y": 27.6033
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -143,17 +143,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2508,
-                  "Y": 0.3325
+                  "X": 0.4009,
+                  "Y": 0.345
                 },
                 "PreSize": {
                   "X": 0.1071,
                   "Y": 0.1875
                 },
-                "LeftMargin": 27.6188,
-                "RightMargin": 97.3812,
-                "TopMargin": 45.8967,
-                "BottomMargin": 19.1033,
+                "LeftMargin": 48.6194,
+                "RightMargin": 76.3806,
+                "TopMargin": 44.8967,
+                "BottomMargin": 20.1033,
                 "Tag": 250,
                 "ActionTag": -1992046048,
                 "Size": {
@@ -164,10 +164,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "99999",
+                "LabelText": "999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -175,7 +175,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 81.9658,
+                  "X": 86.9663,
                   "Y": 28.4906
                 },
                 "Scale": {
@@ -185,22 +185,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5855,
+                  "X": 0.6212,
                   "Y": 0.3561
                 },
                 "PreSize": {
-                  "X": 0.4786,
-                  "Y": 0.225
+                  "X": 0.2929,
+                  "Y": 0.1875
                 },
-                "LeftMargin": 48.4658,
-                "RightMargin": 24.5342,
-                "TopMargin": 42.5094,
-                "BottomMargin": 19.4906,
+                "LeftMargin": 66.4663,
+                "RightMargin": 32.5337,
+                "TopMargin": 44.0094,
+                "BottomMargin": 20.9906,
                 "Tag": 188,
                 "ActionTag": 268773156,
                 "Size": {
-                  "X": 67.0,
-                  "Y": 18.0
+                  "X": 41.0,
+                  "Y": 15.0
                 },
                 "Name": "diamond_text",
                 "ctype": "TextBMFontObjectData"
@@ -268,8 +268,8 @@
       },
       "UsedResources": [
         "buttonUI/revive.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png"

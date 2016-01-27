@@ -462,22 +462,18 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 14,
-                "CharHeight": 13,
-                "LabelText": "9999999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "99999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_yellow_b.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 245.4763,
-                  "Y": 140.7007
+                  "X": 198.943,
+                  "Y": 141.5786
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -486,26 +482,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5455,
-                  "Y": 0.3518
+                  "X": 0.4421,
+                  "Y": 0.3539
                 },
                 "PreSize": {
-                  "X": 0.2178,
-                  "Y": 0.0325
+                  "X": 0.1844,
+                  "Y": 0.0475
                 },
-                "LeftMargin": 196.4763,
-                "RightMargin": 155.5237,
-                "TopMargin": 252.7993,
-                "BottomMargin": 134.2007,
-                "CallBackType": "Touch",
-                "Tag": 552,
-                "ActionTag": 302856816,
+                "LeftMargin": 198.943,
+                "RightMargin": 168.057,
+                "TopMargin": 248.9214,
+                "BottomMargin": 132.0786,
+                "Tag": 576,
+                "ActionTag": -121720549,
                 "Size": {
-                  "X": 98.0,
-                  "Y": 13.0
+                  "X": 83.0,
+                  "Y": 19.0
                 },
                 "Name": "text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FontSize": 20,
@@ -900,9 +895,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow_b.png",
         "buttonUI/notSure.png",
         "buttonUI/sure.png",
+        "font/font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

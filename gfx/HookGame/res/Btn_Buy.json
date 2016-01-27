@@ -124,7 +124,7 @@
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -133,7 +133,7 @@
                 },
                 "Position": {
                   "X": 85.647,
-                  "Y": 59.678
+                  "Y": 58.678
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -143,22 +143,22 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6118,
-                  "Y": 0.746
+                  "Y": 0.7335
                 },
                 "PreSize": {
                   "X": 0.4786,
-                  "Y": 0.225
+                  "Y": 0.1875
                 },
                 "LeftMargin": 52.147,
                 "RightMargin": 20.853,
-                "TopMargin": 11.322,
-                "BottomMargin": 50.678,
+                "TopMargin": 13.822,
+                "BottomMargin": 51.178,
                 "CallBackType": "Click",
                 "Tag": 111,
                 "ActionTag": 2062417790,
                 "Size": {
                   "X": 67.0,
-                  "Y": 18.0
+                  "Y": 15.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -308,8 +308,8 @@
         "equipUI/btn1.png",
         "equipUI/btn2.png",
         "equipUI/relic.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/diamond.png"
       ],
       "ctype": "GameFileData"

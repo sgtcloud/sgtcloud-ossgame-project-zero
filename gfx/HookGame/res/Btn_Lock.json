@@ -125,7 +125,7 @@
                 "LabelText": "Lv.999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -148,17 +148,17 @@
                 },
                 "PreSize": {
                   "X": 0.4571,
-                  "Y": 0.225
+                  "Y": 0.1875
                 },
                 "LeftMargin": 44.009,
                 "RightMargin": 31.991,
-                "TopMargin": 10.247,
-                "BottomMargin": 51.753,
+                "TopMargin": 11.747,
+                "BottomMargin": 53.253,
                 "Tag": 17,
                 "ActionTag": 235483224,
                 "Size": {
                   "X": 64.0,
-                  "Y": 18.0
+                  "Y": 15.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"
@@ -224,8 +224,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/lock.png"

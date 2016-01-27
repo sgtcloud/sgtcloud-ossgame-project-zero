@@ -167,7 +167,7 @@
                 "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -175,8 +175,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 85.4186,
-                  "Y": 56.9871
+                  "X": 84.4186,
+                  "Y": 54.9871
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -185,23 +185,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6101,
-                  "Y": 0.7123
+                  "X": 0.603,
+                  "Y": 0.6873
                 },
                 "PreSize": {
                   "X": 0.3857,
-                  "Y": 0.225
+                  "Y": 0.1875
                 },
-                "LeftMargin": 58.4186,
-                "RightMargin": 27.5814,
-                "TopMargin": 14.0129,
-                "BottomMargin": 47.9871,
+                "LeftMargin": 57.4186,
+                "RightMargin": 28.5814,
+                "TopMargin": 17.5129,
+                "BottomMargin": 47.4871,
                 "CallBackType": "Click",
                 "Tag": 181,
                 "ActionTag": 1297891292,
                 "Size": {
                   "X": 54.0,
-                  "Y": 18.0
+                  "Y": 15.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -216,7 +216,7 @@
                 "Scale9Height": 40,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 36.9266,
+                  "X": 36.8695,
                   "Y": 46.8195
                 },
                 "Scale": {
@@ -226,15 +226,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2638,
+                  "X": 0.2634,
                   "Y": 0.5852
                 },
                 "PreSize": {
                   "X": 0.1071,
                   "Y": 0.1875
                 },
-                "LeftMargin": 36.9266,
-                "RightMargin": 88.0734,
+                "LeftMargin": 36.8695,
+                "RightMargin": 88.1305,
                 "TopMargin": 18.1805,
                 "BottomMargin": 46.8195,
                 "Tag": 381,
@@ -256,7 +256,7 @@
                 "Scale9Height": 40,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 36.9314,
+                  "X": 36.8743,
                   "Y": 46.7395
                 },
                 "Scale": {
@@ -266,15 +266,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2638,
+                  "X": 0.2634,
                   "Y": 0.5842
                 },
                 "PreSize": {
                   "X": 0.1071,
                   "Y": 0.1875
                 },
-                "LeftMargin": 36.9314,
-                "RightMargin": 88.0686,
+                "LeftMargin": 36.8743,
+                "RightMargin": 88.1257,
                 "TopMargin": 18.2605,
                 "BottomMargin": 46.7395,
                 "Tag": 382,
@@ -308,8 +308,8 @@
         "equipUI/btn1.png",
         "equipUI/btn2.png",
         "equipUI/relic.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/diamond.png"
       ],
       "ctype": "GameFileData"

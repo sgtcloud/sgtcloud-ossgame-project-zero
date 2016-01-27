@@ -166,7 +166,7 @@
                 "LabelText": "999999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -175,7 +175,7 @@
                 },
                 "Position": {
                   "X": 83.7141,
-                  "Y": 59.3534
+                  "Y": 57.3534
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -185,21 +185,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.598,
-                  "Y": 0.7419
+                  "Y": 0.7169
                 },
                 "PreSize": {
                   "X": 0.5714,
-                  "Y": 0.225
+                  "Y": 0.1875
                 },
                 "LeftMargin": 43.7141,
                 "RightMargin": 16.2859,
-                "TopMargin": 11.6466,
-                "BottomMargin": 50.3534,
+                "TopMargin": 15.1466,
+                "BottomMargin": 49.8534,
                 "Tag": 209,
                 "ActionTag": -2101152473,
                 "Size": {
                   "X": 80.0,
-                  "Y": 18.0
+                  "Y": 15.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -347,8 +347,8 @@
       "UsedResources": [
         "buttonUI/upLevel.png",
         "equipUI/relic.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png",
