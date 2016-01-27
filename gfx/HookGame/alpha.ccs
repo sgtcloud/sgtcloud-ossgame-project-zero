@@ -350,6 +350,10 @@
           <Image Name="cumulative_text.png" />
           <Image Name="current_text.png" />
         </Folder>
+        <Folder Name="font">
+          <Fnt Name="font22_yellow_kmbb-export.fnt" />
+          <Fnt Name="bitmapFontTest2.fnt" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
