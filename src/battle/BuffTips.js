@@ -36,7 +36,7 @@ var BuffLayer=cc.Class.extend({
         this.text.setFontName("微软雅黑");
         this.time.setFontName("微软雅黑");
         this.time.setColor(cc.color(255,0,0));
-        //this.text.setFontSize(10);
+        this.text.setFontSize(9);
         //this.time.setFontSize(10);
         //this.layer=this.root;
         //this.addChild(buffLayer);
