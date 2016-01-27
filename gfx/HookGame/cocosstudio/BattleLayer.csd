@@ -194,19 +194,6 @@
                 <PreSize X="0.7203" Y="0.0230" />
                 <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="535293251" Tag="366" IconVisible="False" LeftMargin="189.1205" RightMargin="190.8795" TopMargin="294.3113" BottomMargin="265.6887" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
-                <Size X="260.0000" Y="180.0000" />
-                <AnchorPoint />
-                <Position X="189.1205" Y="265.6887" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2955" Y="0.3590" />
-                <PreSize X="0.4063" Y="0.2432" />
-                <SingleColor A="255" R="150" G="150" B="255" />
-                <FirstColor A="255" R="150" G="150" B="255" />
-                <EndColor A="255" R="255" G="255" B="255" />
-                <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
               <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="100.4743" RightMargin="504.5257" TopMargin="17.4138" BottomMargin="687.5862" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="35.0000" Y="35.0000" />
                 <AnchorPoint />
@@ -343,6 +330,16 @@
                 <NormalFileData Type="Normal" Path="mainUI/login_reward.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="200.1612" RightMargin="179.8388" TopMargin="298.6611" BottomMargin="261.3389" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="260.0000" Y="180.0000" />
+                <AnchorPoint />
+                <Position X="200.1612" Y="261.3389" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3128" Y="0.3532" />
+                <PreSize X="0.4063" Y="0.2432" />
+                <FileData Type="Normal" Path="BuffList.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
