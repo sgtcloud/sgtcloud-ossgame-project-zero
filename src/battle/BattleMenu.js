@@ -383,12 +383,16 @@ var HeroListMenu = BattleMenu.extend({
         function setFont(target) {
             if (target instanceof Array) {
                 for (var i in target) {
-                    target[i].setFontName("微软雅黑");
+                    if(target[i].setFontName){
+                        target[i].setFontName("微软雅黑");
+                    }
                     target[i].setColor(cc.color(0, 0, 0))
                 }
             }
             else {
-                target.setFontName("微软雅黑");
+                if(target.setFontName){
+                    target.setFontName("微软雅黑");
+                }
                 target.setColor(cc.color(0, 0, 0))
             }
         }
@@ -470,6 +474,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.icon = icon;
             elements.lv = lv;
             elements.dps_text = dps_text;
+            elements.dps_text.setColor(cc.color(2,177,234));
             elements.dps = dps;
             elements.heroName_text = heroName_text;
             elements.die_text = die_text;
@@ -509,7 +514,7 @@ var HeroListMenu = BattleMenu.extend({
                 }
             });
             elements.die_time_text.setFontName("微软雅黑");
-            setFont([heroName_text, lv, elements.upgrade_btn.buff_text]);
+            setFont([heroName_text, elements.upgrade_btn.buff_text]);
             //die_text.setVisible(false);
             //die_time_text.setVisible(false);
             //elements.revive_btn.layer.setVisible(false);
@@ -753,7 +758,7 @@ var HeroListMenu = BattleMenu.extend({
             lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
             elements.lock_btn.level_text.setString("Lv." + skill.getUnlockLevel())
             elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
-            elements.lock_btn.level_text.setFontName("微软雅黑");
+            //elements.lock_btn.level_text.setFontName("微软雅黑");
             elements.upgrade_btn.per.setVisible(false);
             setFont([name, desc, lv, elements.upgrade_btn.buff_text]);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
