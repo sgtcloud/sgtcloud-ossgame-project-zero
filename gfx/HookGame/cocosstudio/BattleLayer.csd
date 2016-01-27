@@ -214,15 +214,15 @@
                 <PreSize X="0.1437" Y="0.0270" />
                 <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-152243152" CallBackType="Click" Tag="167" IconVisible="False" LeftMargin="334.6155" RightMargin="145.3845" TopMargin="17.8852" BottomMargin="708.1148" CharWidth="16" CharHeight="14" LabelText="5698741230" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="160.0000" Y="14.0000" />
-                <AnchorPoint ScaleX="0.4848" ScaleY="0.6287" />
-                <Position X="412.1835" Y="716.9166" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1280" BottomMargin="706.8720" LabelText="56982244103" ctype="TextBMFontObjectData">
+                <Size X="138.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="404.4320" Y="716.3720" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6440" Y="0.9688" />
-                <PreSize X="0.2500" Y="0.0189" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font20_white.png" Plist="" />
+                <PrePosition X="0.6319" Y="0.9681" />
+                <PreSize X="0.2156" Y="0.0257" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="499.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -268,15 +268,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="1614517410" Tag="168" IconVisible="False" LeftMargin="99.9742" RightMargin="504.0258" TopMargin="26.4139" BottomMargin="696.5861" CharWidth="18" CharHeight="17" LabelText="99" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="36.0000" Y="17.0000" />
-                <AnchorPoint />
-                <Position X="99.9742" Y="696.5861" />
+              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="100.3237" RightMargin="504.6763" TopMargin="25.5851" BottomMargin="695.4149" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="35.0000" Y="19.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="117.8237" Y="704.9149" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1562" Y="0.9413" />
-                <PreSize X="0.0562" Y="0.0230" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font22_yellow.png" Plist="" />
+                <PrePosition X="0.1841" Y="0.9526" />
+                <PreSize X="0.0547" Y="0.0257" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="time_bar" ActionTag="-1530911348" Tag="487" IconVisible="False" LeftMargin="135.1005" RightMargin="60.8995" TopMargin="36.9025" BottomMargin="697.0975" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="444.0000" Y="6.0000" />
