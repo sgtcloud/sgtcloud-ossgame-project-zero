@@ -65,7 +65,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
         var remaining = time;
         target.schedule(function () {
                 if (!heroDead) {
-                    this.setString(remaining + " 秒");
+                    this.setString(remaining );
                 }
                 if (remaining <= 0) {
                     if (typeof cb === "function") {
@@ -115,7 +115,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                     isCoolDowning = true;
                     that.cooldownText.setVisible(true)
                     that.time.setVisible(true)
-                    that.time.setString(levelData['cooldown'] + " 秒")
+                    that.time.setString(levelData['cooldown'] )
                     //that.skill_icon.setTouchEnabled(false);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
                     //cc.eventManager.resumeTarget(that.skill_icon);
@@ -168,7 +168,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                     } else {
                         that.skill_icon.setColor(cc.color(90, 90, 90));
                     }
-                    that.time.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
+                    that.time.setString(Math.round(dieHero.getLevelData()['resurge']['time']));
                 }
             });
             customEventHelper.bindListener(EVENT.HERO_REVIVE, function (event) {
@@ -189,7 +189,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                 var data = event.getUserData();
                 var hero = PlayerData.getHeroById(data['id']);
                 if (hero.hasSkill(that.skill.getId())) {
-                    that.time.setString(Math.round(data['recover']) + " 秒");
+                    that.time.setString(Math.round(data['recover']) );
                 }
             });
         }
@@ -557,7 +557,7 @@ var HeroListMenu = BattleMenu.extend({
                     var resurge = hero.getResurge();
                     var costValue = parseInt(resurge['cost']['value']);
                     elements.revive_btn.diamond_text.setString(costValue);
-                    elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) + " 秒");
+                    elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) );
                     if (PlayerData.getAmountByUnit("gem") < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
@@ -761,7 +761,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
             //elements.lock_btn.level_text.setFontName("微软雅黑");
             //elements.upgrade_btn.per.setVisible(false);
-            setFont([name, desc, lv, elements.upgrade_btn.buff_text]);
+            setFont([name, desc,elements.upgrade_btn.buff_text]);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                     if (canUnlockSkill(hero, skill)) {
                         if (!skill.isMaxLevel()) {

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="ShopView" Type="Layer" ID="f9a6ba20-0a23-43e7-89b7-c337b4051808" Version="3.10.0.0" />
+  <PropertyGroup Name="ShopView" Type="Layer" ID="f9a6ba20-0a23-43e7-89b7-c337b4051808" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="37" ctype="GameLayerObjectData">
         <Size X="610.0000" Y="600.0000" />
         <Children>
-          <AbstractNodeData Name="moneyTree_tab" Visible="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="moneyTree_tab" Visible="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2005624188" Tag="243" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="562" Scale9Height="552" ctype="ImageViewObjectData">
@@ -79,7 +79,7 @@
                 <PreSize X="0.1082" Y="0.0600" />
                 <FileData Type="Normal" Path="shopUI/sale.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" CanEdit="False" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="230.0000" RightMargin="230.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="buy_btn" CanEdit="False" ActionTag="-502619807" CallBackType="Click" Tag="288" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -131,7 +131,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shop_tab" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="shop_tab" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">

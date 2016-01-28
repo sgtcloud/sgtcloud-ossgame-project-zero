@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Btn_MaxLevel" Type="Layer" ID="c09dfea6-6b04-479a-8e74-ad854030141c" Version="3.10.0.0" />
+  <PropertyGroup Name="Btn_MaxLevel" Type="Layer" ID="c09dfea6-6b04-479a-8e74-ad854030141c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

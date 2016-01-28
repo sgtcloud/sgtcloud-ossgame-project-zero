@@ -1,4 +1,4 @@
-<UserData Version="3.10.0.0">
+<UserData Version="2.3.3.0">
   <Properties>
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
@@ -26,14 +26,6 @@
         <KeystoreAliasPassword Value="" />
         <EnableSourceMap Value="True" />
         <EnableHTML5Advanced Value="False" />
-      </Value>
-    </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="SkillView.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="SkillView.csd" />
       </Value>
     </Item>
   </Properties>

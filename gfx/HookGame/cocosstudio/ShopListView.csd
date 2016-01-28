@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="ShopListView" Type="Layer" ID="147b5568-876a-4720-9224-bfb97fc5ac89" Version="3.10.0.0" />
+  <PropertyGroup Name="ShopListView" Type="Layer" ID="147b5568-876a-4720-9224-bfb97fc5ac89" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="994" ctype="GameLayerObjectData">
         <Size X="604.0000" Y="280.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-441691917" Tag="1110" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-441691917" Tag="1110" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="604.0000" Y="280.0000" />
             <Children>
               <AbstractNodeData Name="item1" ActionTag="-299628492" Tag="1111" IconVisible="True" LeftMargin="16.1876" RightMargin="407.8124" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">

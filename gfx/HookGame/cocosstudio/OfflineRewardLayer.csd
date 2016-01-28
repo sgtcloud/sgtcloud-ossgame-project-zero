@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="OfflineRewardLayer" Type="Layer" ID="84517494-4ca1-4c85-9002-5e7eefc2e479" Version="3.10.0.0" />
+  <PropertyGroup Name="OfflineRewardLayer" Type="Layer" ID="84517494-4ca1-4c85-9002-5e7eefc2e479" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="33" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="877632929" Tag="37" IconVisible="False" LeftMargin="106.9826" RightMargin="83.0174" TopMargin="269.5640" BottomMargin="290.4360" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="877632929" Tag="37" IconVisible="False" LeftMargin="106.9826" RightMargin="83.0174" TopMargin="269.5640" BottomMargin="290.4360" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="450.0000" Y="400.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-804371059" Tag="38" IconVisible="False" LeftMargin="25.2205" RightMargin="24.7795" TopMargin="35.2722" BottomMargin="14.7278" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -59,7 +59,7 @@
                 <PreSize X="0.5867" Y="0.0650" />
                 <FileData Type="Normal" Path="offlineRewardUI/desc.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="offline_btn" ActionTag="725336112" Tag="453" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -109,7 +109,7 @@
                 <PreSize X="0.2489" Y="0.0850" />
                 <FileData Type="Normal" Path="offlineRewardUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9997" RightMargin="81.0003" TopMargin="167.0045" BottomMargin="122.9955" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9997" RightMargin="81.0003" TopMargin="167.0045" BottomMargin="122.9955" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="gold" ActionTag="-863607303" Tag="52" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="-0.0004" BottomMargin="80.0004" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">

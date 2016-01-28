@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="PackLayer" Type="Layer" ID="3b1ae967-acda-4733-bf2b-f73a3c303123" Version="3.10.0.0" />
+  <PropertyGroup Name="PackLayer" Type="Layer" ID="3b1ae967-acda-4733-bf2b-f73a3c303123" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="45" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2016724076" Tag="124" IconVisible="False" LeftMargin="1.7448" RightMargin="-1.7448" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2016724076" Tag="124" IconVisible="False" LeftMargin="1.7448" RightMargin="-1.7448" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2047028236" Tag="126" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -39,7 +39,7 @@
                 <PreSize X="0.2016" Y="0.0784" />
                 <FileData Type="Normal" Path="packUI/title.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pack" ActionTag="1044177206" Tag="542" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="220.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="pack" ActionTag="1044177206" Tag="542" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="220.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="435.0000" />
                 <Children>
                   <AbstractNodeData Name="pack_bg" ActionTag="220585410" Tag="543" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -224,7 +224,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chest" ActionTag="1143761586" Tag="529" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="525.0000" BottomMargin="15.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="chest" ActionTag="1143761586" Tag="529" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="525.0000" BottomMargin="15.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="200.0000" />
                 <Children>
                   <AbstractNodeData Name="chest_bg" ActionTag="-197868592" Tag="528" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
