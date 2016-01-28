@@ -1,43 +1,66 @@
-{"g10001": {
-  "propId" : "wood",
-  "num" : 1,
-  "price" : {
-    "unit" : "gold",
-    "value" : 10
+{
+  "g10001": {
+    "propId": "bronze",
+    "num": 2,
+    "price": {
+      "unit": "gem",
+      "value": 10
+    }
+  },
+  "g10002": {
+    "propId": "iron",
+    "num": 4,
+    "price": {
+      "unit": "gold",
+      "value": 15
+    }
+  },
+  "g10003": {
+    "propId": "crystal",
+    "num": 6,
+    "price": {
+      "unit": "relic",
+      "value": 20
+    }
+  },
+  "g10004": {
+    "propId": "rune",
+    "num": 8,
+    "price": {
+      "unit": "wood",
+      "value": 25
+    }
+  },
+  "g10005": {
+    "propId": "essence",
+    "num": 10,
+    "price": {
+      "unit": "leather",
+      "value": 30
+    }
+  },
+  "g10006": {
+    "propId": "iron_chest",
+    "num": 12,
+    "price": {
+      "unit": "iron_key",
+      "value": 35
+    }
+  },
+  "g10007": {
+    "propId": "silver_chest",
+    "num": 12,
+    "price": {
+      "unit": "silver_key",
+      "value": 35
+    }
+  },
+  "g10008": {
+    "propId": "golden_chest",
+    "num": 12,
+    "price": {
+      "unit": "golden_key",
+      "value": 35
+    }
   }
-}, "g10002": {
-  "propId" : "wood",
-  "num" : 2,
-  "price" : {
-    "unit" : "gem",
-    "value" : 15
-  }
-}, "g10003": {
-  "propId" : "wood",
-  "num" : 3,
-  "price" : {
-    "unit" : "gem",
-    "value" : 20
-  }
-}, "g10004": {
-  "propId" : "wood",
-  "num" : 4,
-  "price" : {
-    "unit" : "gem",
-    "value" : 25
-  }
-}, "g10005": {
-  "propId" : "wood",
-  "num" : 5,
-  "price" : {
-    "unit" : "gem",
-    "value" : 30
-  }
-}, "g10006": {
-  "propId" : "wood",
-  "num" : 6,
-  "price" : {
-    "unit" : "gem",
-    "value" : 35
-  }
-} }
+}

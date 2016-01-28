@@ -45,26 +45,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="add" ActionTag="2045657351" Tag="233" IconVisible="False" LeftMargin="30.5671" RightMargin="96.4329" TopMargin="54.0181" BottomMargin="12.9819" Scale9Width="21" Scale9Height="21" ctype="ImageViewObjectData">
-                <Size X="13.0000" Y="13.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="37.0671" Y="19.4819" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2648" Y="0.2435" />
-                <PreSize X="0.0929" Y="0.1625" />
-                <FileData Type="Normal" Path="buttonUI/add.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="cut" ActionTag="-377044570" Tag="234" IconVisible="False" LeftMargin="30.5671" RightMargin="96.4329" TopMargin="54.0181" BottomMargin="12.9819" Scale9Width="16" Scale9Height="12" ctype="ImageViewObjectData">
-                <Size X="13.0000" Y="13.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="37.0671" Y="19.4819" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2648" Y="0.2435" />
-                <PreSize X="0.0929" Y="0.1625" />
-                <FileData Type="Normal" Path="buttonUI/cut.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="46.0977" RightMargin="26.9023" TopMargin="9.3444" BottomMargin="55.6556" LabelText="99999" ctype="TextBMFontObjectData">
                 <Size X="67.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -95,15 +75,15 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="46.0977" RightMargin="26.9023" TopMargin="51.7028" BottomMargin="13.2972" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="67.0000" Y="15.0000" />
+              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="33.9442" RightMargin="23.0558" TopMargin="48.5166" BottomMargin="12.4834" LabelText="+99999" ctype="TextBMFontObjectData">
+                <Size X="83.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="79.5977" Y="20.7972" />
+                <Position X="75.4442" Y="21.9834" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5686" Y="0.2600" />
-                <PreSize X="0.4786" Y="0.1875" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.5389" Y="0.2748" />
+                <PreSize X="0.5929" Y="0.2375" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

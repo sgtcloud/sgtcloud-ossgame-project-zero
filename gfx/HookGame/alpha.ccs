@@ -370,6 +370,7 @@
           <Image Name="font18_white-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
+        <Project Name="ShopListView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
