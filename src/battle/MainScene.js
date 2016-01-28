@@ -32,13 +32,11 @@ var MainScene = cc.Scene.extend({
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
         this.addChild(this.buffTip);
         var buffListNode=ccs.csLoader.createNode(res.buff_list_json);
-        buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
-        this/*.battlePanel*/.addChild(buffListNode,5000);
+        buffListNode.setPosition(this.battlePanel.buffList.getPosition());
+        //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
+        this.battlePanel.addChild(buffListNode,5000);
         var buffList=buffListNode.getChildByName('buff_list');
-
         (function (w) {
-
-
 
             //var mouseDownEventListener = cc.EventListener.create({
             //    event: cc.EventListener.MOUSE,

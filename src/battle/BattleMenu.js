@@ -897,7 +897,7 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
-            lv.setString(hero.getLv());
+            lv.setString("Lv."+hero.getLv());
             dps_text.ignoreContentAdaptWithSize(true);
             //tap.setString(hero.getHit());
 
