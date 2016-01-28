@@ -29,6 +29,16 @@
                 <PreSize X="0.9000" Y="0.9000" />
                 <FileData Type="Normal" Path="mainUI/equip_icon.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="sale_text" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="52.3663" RightMargin="6.6337" TopMargin="77.0521" BottomMargin="7.9479" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="41.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="1.0000" ScaleY="0.5378" />
+                <Position X="93.3663" Y="16.0149" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9337" Y="0.1601" />
+                <PreSize X="0.4100" Y="0.1500" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
@@ -40,16 +50,6 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="BitmapFontLabel_1" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="52.3663" RightMargin="6.6337" TopMargin="77.0526" BottomMargin="7.9474" LabelText="999" ctype="TextBMFontObjectData">
-            <Size X="41.0000" Y="15.0000" />
-            <AnchorPoint ScaleX="1.0000" ScaleY="0.5378" />
-            <Position X="93.3663" Y="16.0149" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.9337" Y="0.1601" />
-            <PreSize X="0.4100" Y="0.1500" />
-            <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
