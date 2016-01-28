@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -607,13 +609,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "1321321",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "999999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -621,8 +620,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 205.1001,
-                  "Y": 107.1294
+                  "X": 195.6307,
+                  "Y": 107.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -631,34 +630,32 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3798,
-                  "Y": 0.7652
+                  "X": 0.3623,
+                  "Y": 0.7643
                 },
                 "PreSize": {
-                  "X": 0.2333,
-                  "Y": 0.1214
+                  "X": 0.1833,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 142.1001,
-                "RightMargin": 271.8999,
-                "TopMargin": 24.3706,
-                "BottomMargin": 98.6294,
-                "Tag": 131,
-                "ActionTag": -796692710,
+                "LeftMargin": 146.1307,
+                "RightMargin": 294.8693,
+                "TopMargin": 23.5,
+                "BottomMargin": 97.5,
+                "CallBackType": "Click",
+                "Tag": 406,
+                "ActionTag": -253997819,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 17.0
+                  "X": 99.0,
+                  "Y": 19.0
                 },
                 "Name": "atk_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "1321321",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "999999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -666,8 +663,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 205.1001,
-                  "Y": 70.2892
+                  "X": 195.6307,
+                  "Y": 70.16
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -676,34 +673,32 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3798,
-                  "Y": 0.5021
+                  "X": 0.3623,
+                  "Y": 0.5011
                 },
                 "PreSize": {
-                  "X": 0.2333,
-                  "Y": 0.1214
+                  "X": 0.1833,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 142.1001,
-                "RightMargin": 271.8999,
-                "TopMargin": 61.2108,
-                "BottomMargin": 61.7892,
-                "Tag": 132,
-                "ActionTag": -1386032515,
+                "LeftMargin": 146.1307,
+                "RightMargin": 294.8693,
+                "TopMargin": 60.34,
+                "BottomMargin": 60.66,
+                "CallBackType": "Click",
+                "Tag": 407,
+                "ActionTag": 1151485905,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 17.0
+                  "X": 99.0,
+                  "Y": 19.0
                 },
                 "Name": "tap_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "1321321",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "999999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -711,8 +706,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 188.5909,
-                  "Y": 33.6204
+                  "X": 175.6307,
+                  "Y": 33.32
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -721,43 +716,41 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3492,
-                  "Y": 0.2401
+                  "X": 0.3252,
+                  "Y": 0.238
                 },
                 "PreSize": {
-                  "X": 0.2333,
-                  "Y": 0.1214
+                  "X": 0.1833,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 125.5909,
-                "RightMargin": 288.4091,
-                "TopMargin": 97.8796,
-                "BottomMargin": 25.1204,
-                "Tag": 133,
-                "ActionTag": -295590498,
+                "LeftMargin": 126.1307,
+                "RightMargin": 314.8693,
+                "TopMargin": 97.18,
+                "BottomMargin": 23.82,
+                "CallBackType": "Click",
+                "Tag": 408,
+                "ActionTag": 1861095697,
                 "Size": {
-                  "X": 126.0,
-                  "Y": 17.0
+                  "X": 99.0,
+                  "Y": 19.0
                 },
                 "Name": "life_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 17,
-                "CharHeight": 17,
-                "LabelText": "1.30",
-                "StartChar": ".",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "1.05",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow_b.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5539,
-                  "ScaleY": 0.5476
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 463.0,
-                  "Y": 109.0
+                  "X": 446.4962,
+                  "Y": 109.0042
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -766,34 +759,32 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8574,
+                  "X": 0.8268,
                   "Y": 0.7786
                 },
                 "PreSize": {
-                  "X": 0.1259,
-                  "Y": 0.1214
+                  "X": 0.0778,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 425.3362,
-                "RightMargin": 46.6638,
-                "TopMargin": 23.3085,
-                "BottomMargin": 99.6915,
-                "Tag": 134,
-                "ActionTag": -246387601,
+                "LeftMargin": 425.4962,
+                "RightMargin": 72.5038,
+                "TopMargin": 21.4958,
+                "BottomMargin": 99.5042,
+                "CallBackType": "Click",
+                "Tag": 409,
+                "ActionTag": 842236456,
                 "Size": {
-                  "X": 68.0,
-                  "Y": 17.0
+                  "X": 42.0,
+                  "Y": 19.0
                 },
                 "Name": "atk_period_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "3.25%",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -801,8 +792,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 456.2112,
-                  "Y": 70.8463
+                  "X": 446.4962,
+                  "Y": 70.5577
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -811,34 +802,32 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8448,
-                  "Y": 0.506
+                  "X": 0.8268,
+                  "Y": 0.504
                 },
                 "PreSize": {
-                  "X": 0.1,
-                  "Y": 0.1214
+                  "X": 0.1259,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 429.2112,
-                "RightMargin": 56.7888,
-                "TopMargin": 60.6537,
-                "BottomMargin": 62.3463,
-                "Tag": 135,
-                "ActionTag": -577827229,
+                "LeftMargin": 412.4962,
+                "RightMargin": 59.5038,
+                "TopMargin": 59.9423,
+                "BottomMargin": 61.0577,
+                "CallBackType": "Click",
+                "Tag": 410,
+                "ActionTag": 1505919400,
                 "Size": {
-                  "X": 54.0,
-                  "Y": 17.0
+                  "X": 68.0,
+                  "Y": 19.0
                 },
                 "Name": "ctr_chance_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "250.63%",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_yellow.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -846,8 +835,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 456.2112,
-                  "Y": 32.5014
+                  "X": 446.4962,
+                  "Y": 33.1113
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -856,113 +845,26 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8448,
-                  "Y": 0.2322
+                  "X": 0.8268,
+                  "Y": 0.2365
                 },
                 "PreSize": {
-                  "X": 0.1,
-                  "Y": 0.1214
+                  "X": 0.1815,
+                  "Y": 0.1357
                 },
-                "LeftMargin": 429.2112,
-                "RightMargin": 56.7888,
-                "TopMargin": 98.9986,
-                "BottomMargin": 24.0014,
-                "Tag": 136,
-                "ActionTag": -1118068136,
+                "LeftMargin": 397.4962,
+                "RightMargin": 44.5038,
+                "TopMargin": 97.3887,
+                "BottomMargin": 23.6113,
+                "CallBackType": "Click",
+                "Tag": 411,
+                "ActionTag": 2059305747,
                 "Size": {
-                  "X": 54.0,
-                  "Y": 17.0
+                  "X": 98.0,
+                  "Y": 19.0
                 },
                 "Name": "ctr_modify_text",
-                "ctype": "TextAtlasObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/f22_y.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 21,
-                "Scale9Height": 18,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 496.9765,
-                  "Y": 70.79
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.9203,
-                  "Y": 0.5056
-                },
-                "PreSize": {
-                  "X": 0.0389,
-                  "Y": 0.1286
-                },
-                "LeftMargin": 486.4765,
-                "RightMargin": 32.5235,
-                "TopMargin": 60.21,
-                "BottomMargin": 61.79,
-                "CallBackType": "Click",
-                "Tag": 181,
-                "ActionTag": 1452384872,
-                "Size": {
-                  "X": 21.0,
-                  "Y": 18.0
-                },
-                "Name": "ctr_chance_text_1",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/f22_y.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 21,
-                "Scale9Height": 18,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 496.9765,
-                  "Y": 32.3819
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.9203,
-                  "Y": 0.2313
-                },
-                "PreSize": {
-                  "X": 0.0389,
-                  "Y": 0.1286
-                },
-                "LeftMargin": 486.4765,
-                "RightMargin": 32.5235,
-                "TopMargin": 98.6181,
-                "BottomMargin": 23.3819,
-                "CallBackType": "Click",
-                "Tag": 182,
-                "ActionTag": -273121561,
-                "Size": {
-                  "X": 21.0,
-                  "Y": 18.0
-                },
-                "Name": "ctr_modify_text_1",
-                "ctype": "ImageViewObjectData"
+                "ctype": "TextBMFontObjectData"
               }
             ],
             "ActionTag": -101405835,
@@ -982,6 +884,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.png",
         "heroDescUI/atk.png",
         "heroDescUI/atk_lable.png",
         "heroDescUI/atk_period.png",
@@ -994,10 +898,7 @@
         "heroDescUI/life_lable.png",
         "heroDescUI/tap.png",
         "heroDescUI/tap_lable.png",
-        "mainUI/bg_03.png",
-        "mainUI/f22_y.png",
-        "mainUI/font22_yellow.png",
-        "mainUI/font22_yellow_b.png"
+        "mainUI/bg_03.png"
       ],
       "ctype": "GameFileData"
     }

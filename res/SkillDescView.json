@@ -29,6 +29,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -179,25 +181,18 @@
                 "ctype": "TextObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 20,
-                "LabelText": "Lv99/99",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "Lv.99/99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 300.0399,
-                  "Y": 70.3136
+                  "X": 300.048,
+                  "Y": 85.7209
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -207,24 +202,25 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5358,
-                  "Y": 0.6392
+                  "Y": 0.7793
                 },
                 "PreSize": {
-                  "X": 0.2857,
-                  "Y": 0.2727
+                  "X": 0.1482,
+                  "Y": 0.1364
                 },
-                "LeftMargin": 300.0399,
-                "RightMargin": 99.9601,
-                "TopMargin": 9.6864,
-                "BottomMargin": 70.3136,
-                "Tag": 109,
-                "ActionTag": 494641806,
+                "LeftMargin": 300.048,
+                "RightMargin": 176.952,
+                "TopMargin": 16.7791,
+                "BottomMargin": 78.2209,
+                "CallBackType": "Click",
+                "Tag": 1033,
+                "ActionTag": 309565690,
                 "Size": {
-                  "X": 160.0,
-                  "Y": 30.0
+                  "X": 83.0,
+                  "Y": 15.0
                 },
                 "Name": "skillLevel_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "IsCustomSize": true,
@@ -291,6 +287,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "mainUI/bg_05.png",
         "mainUI/skill_icon.png"
       ],
