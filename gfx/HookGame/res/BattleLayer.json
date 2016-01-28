@@ -608,8 +608,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 346.5415,
-                  "Y": 705.0664
+                  "X": 365.1593,
+                  "Y": 705.7537
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -618,17 +618,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5415,
-                  "Y": 0.9528
+                  "X": 0.5706,
+                  "Y": 0.9537
                 },
                 "PreSize": {
                   "X": 0.7828,
                   "Y": 0.0622
                 },
-                "LeftMargin": 96.0415,
-                "RightMargin": 42.9585,
-                "TopMargin": 11.9336,
-                "BottomMargin": 682.0664,
+                "LeftMargin": 114.6593,
+                "RightMargin": 24.3407,
+                "TopMargin": 11.2463,
+                "BottomMargin": 682.7537,
                 "Tag": 484,
                 "ActionTag": 1994818062,
                 "Size": {
@@ -648,24 +648,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/clear_reward.png",
+                  "Path": "mainUI/pack.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/clear_reward.png",
+                  "Path": "mainUI/pack.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/clear_reward.png",
+                  "Path": "mainUI/pack.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 55,
-                "Scale9Height": 55,
+                "Scale9Width": 134,
+                "Scale9Height": 109,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -683,32 +683,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 48.0384,
-                  "Y": 690.333
+                  "X": 52.8672,
+                  "Y": 633.983
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0751,
-                  "Y": 0.9329
+                  "X": 0.0826,
+                  "Y": 0.8567
                 },
                 "PreSize": {
-                  "X": 0.1328,
-                  "Y": 0.1041
+                  "X": 0.2562,
+                  "Y": 0.177
                 },
-                "LeftMargin": 5.5384,
-                "RightMargin": 549.4616,
-                "TopMargin": 11.167,
-                "BottomMargin": 651.833,
+                "LeftMargin": -29.1328,
+                "RightMargin": 505.1328,
+                "TopMargin": 40.517,
+                "BottomMargin": 568.483,
                 "Tag": 77,
                 "ActionTag": 1140666408,
                 "Size": {
-                  "X": 85.0,
-                  "Y": 77.0
+                  "X": 164.0,
+                  "Y": 131.0
                 },
                 "Name": "pack_btn",
                 "ctype": "ButtonObjectData"
@@ -725,8 +725,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 358.4846,
-                  "Y": 715.0988
+                  "X": 377.1027,
+                  "Y": 715.7859
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -735,17 +735,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5601,
-                  "Y": 0.9663
+                  "X": 0.5892,
+                  "Y": 0.9673
                 },
                 "PreSize": {
                   "X": 0.7203,
                   "Y": 0.023
                 },
-                "LeftMargin": 127.9846,
-                "RightMargin": 51.0154,
-                "TopMargin": 16.4012,
-                "BottomMargin": 706.5988,
+                "LeftMargin": 146.6027,
+                "RightMargin": 32.3973,
+                "TopMargin": 15.7141,
+                "BottomMargin": 707.2859,
                 "Tag": 486,
                 "ActionTag": 1687766306,
                 "Size": {
@@ -765,8 +765,8 @@
                 "Scale9Height": 50,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 100.4743,
-                  "Y": 687.5862
+                  "X": 119.0923,
+                  "Y": 688.2734
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -775,17 +775,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.157,
-                  "Y": 0.9292
+                  "X": 0.1861,
+                  "Y": 0.9301
                 },
                 "PreSize": {
                   "X": 0.0547,
                   "Y": 0.0473
                 },
-                "LeftMargin": 100.4743,
-                "RightMargin": 504.5257,
-                "TopMargin": 17.4138,
-                "BottomMargin": 687.5862,
+                "LeftMargin": 119.0923,
+                "RightMargin": 485.9077,
+                "TopMargin": 16.7266,
+                "BottomMargin": 688.2734,
                 "Tag": 485,
                 "ActionTag": 2061033833,
                 "Size": {
@@ -808,8 +808,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 291.6918,
-                  "Y": 714.4396
+                  "X": 310.3109,
+                  "Y": 715.1268
                 },
                 "Scale": {
                   "ScaleX": 0.8,
@@ -818,17 +818,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4558,
-                  "Y": 0.9655
+                  "X": 0.4849,
+                  "Y": 0.9664
                 },
                 "PreSize": {
                   "X": 0.1437,
                   "Y": 0.027
                 },
-                "LeftMargin": 245.6918,
-                "RightMargin": 302.3082,
-                "TopMargin": 15.5604,
-                "BottomMargin": 704.4396,
+                "LeftMargin": 264.3109,
+                "RightMargin": 283.6891,
+                "TopMargin": 14.8732,
+                "BottomMargin": 705.1268,
                 "CallBackType": "Click",
                 "Tag": 166,
                 "ActionTag": 2083404384,
@@ -850,8 +850,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 335.432,
-                  "Y": 716.3721
+                  "X": 354.0496,
+                  "Y": 717.0593
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -860,17 +860,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5241,
-                  "Y": 0.9681
+                  "X": 0.5532,
+                  "Y": 0.969
                 },
                 "PreSize": {
                   "X": 0.2156,
                   "Y": 0.0257
                 },
-                "LeftMargin": 335.432,
-                "RightMargin": 166.568,
-                "TopMargin": 14.1279,
-                "BottomMargin": 706.8721,
+                "LeftMargin": 354.0496,
+                "RightMargin": 147.9504,
+                "TopMargin": 13.4407,
+                "BottomMargin": 707.5593,
                 "Tag": 138,
                 "ActionTag": -366591547,
                 "Size": {
@@ -1104,8 +1104,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 117.8237,
-                  "Y": 704.9149
+                  "X": 136.4417,
+                  "Y": 705.6022
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1114,17 +1114,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1841,
-                  "Y": 0.9526
+                  "X": 0.2132,
+                  "Y": 0.9535
                 },
                 "PreSize": {
                   "X": 0.0547,
                   "Y": 0.0257
                 },
-                "LeftMargin": 100.3237,
-                "RightMargin": 504.6763,
-                "TopMargin": 25.5851,
-                "BottomMargin": 695.4149,
+                "LeftMargin": 118.9417,
+                "RightMargin": 486.0583,
+                "TopMargin": 24.8978,
+                "BottomMargin": 696.1022,
                 "Tag": 137,
                 "ActionTag": 2022321032,
                 "Size": {
@@ -1146,8 +1146,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 357.1005,
-                  "Y": 700.0975
+                  "X": 375.7183,
+                  "Y": 700.7847
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1156,17 +1156,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.558,
-                  "Y": 0.9461
+                  "X": 0.5871,
+                  "Y": 0.947
                 },
                 "PreSize": {
                   "X": 0.6938,
                   "Y": 0.0081
                 },
-                "LeftMargin": 135.1005,
-                "RightMargin": 60.8995,
-                "TopMargin": 36.9025,
-                "BottomMargin": 697.0975,
+                "LeftMargin": 153.7183,
+                "RightMargin": 42.2817,
+                "TopMargin": 36.2153,
+                "BottomMargin": 697.7847,
                 "Tag": 487,
                 "ActionTag": -1530911348,
                 "Size": {
@@ -1268,8 +1268,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 48.0384,
-                  "Y": 528.271
+                  "X": 57.8671,
+                  "Y": 560.9685
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1278,17 +1278,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0751,
-                  "Y": 0.7139
+                  "X": 0.0904,
+                  "Y": 0.7581
                 },
                 "PreSize": {
                   "X": 0.1328,
                   "Y": 0.1041
                 },
-                "LeftMargin": 5.5384,
-                "RightMargin": 549.4616,
-                "TopMargin": 173.229,
-                "BottomMargin": 489.771,
+                "LeftMargin": 15.3671,
+                "RightMargin": 539.6329,
+                "TopMargin": 140.5315,
+                "BottomMargin": 522.4685,
                 "Tag": 199,
                 "ActionTag": 556918955,
                 "Size": {
@@ -1308,24 +1308,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/login_reward.png",
+                  "Path": "mainUI/statistics.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/login_reward.png",
+                  "Path": "mainUI/statistics.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/login_reward.png",
+                  "Path": "mainUI/statistics.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 55,
-                "Scale9Height": 55,
+                "Scale9Width": 134,
+                "Scale9Height": 109,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1343,32 +1343,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 48.0384,
-                  "Y": 609.302
+                  "X": 52.8672,
+                  "Y": 701.2475
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0751,
-                  "Y": 0.8234
+                  "X": 0.0826,
+                  "Y": 0.9476
                 },
                 "PreSize": {
-                  "X": 0.1328,
-                  "Y": 0.1041
+                  "X": 0.2562,
+                  "Y": 0.177
                 },
-                "LeftMargin": 5.5384,
-                "RightMargin": 549.4616,
-                "TopMargin": 92.198,
-                "BottomMargin": 570.802,
+                "LeftMargin": -29.1328,
+                "RightMargin": 505.1328,
+                "TopMargin": -26.7475,
+                "BottomMargin": 635.7475,
                 "Tag": 105,
                 "ActionTag": 460589075,
                 "Size": {
-                  "X": 85.0,
-                  "Y": 77.0
+                  "X": 164.0,
+                  "Y": 131.0
                 },
                 "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
@@ -1442,9 +1442,9 @@
         "mainUI/bar1.png",
         "mainUI/bar2.png",
         "mainUI/battle_icon.png",
-        "mainUI/clear_reward.png",
-        "mainUI/login_reward.png",
-        "mainUI/offline_reward.png"
+        "mainUI/offline_reward.png",
+        "mainUI/pack.png",
+        "mainUI/statistics.png"
       ],
       "ctype": "GameFileData"
     }
