@@ -296,7 +296,7 @@
                 <PreSize X="0.2244" Y="0.7273" />
                 <FileData Type="Normal" Path="Btn_Upgrade1.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="revive_btn" ActionTag="-1511059770" Tag="594" IconVisible="True" LeftMargin="471.9847" RightMargin="12.0153" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="revive_btn" Visible="False" ActionTag="-1511059770" Tag="594" IconVisible="True" LeftMargin="471.9847" RightMargin="12.0153" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
                 <Position X="471.9847" Y="14.9808" />
@@ -306,7 +306,7 @@
                 <PreSize X="0.2244" Y="0.7273" />
                 <FileData Type="Normal" Path="Btn_Revive.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="MaxLevel" ActionTag="732442495" Tag="607" IconVisible="True" LeftMargin="471.9847" RightMargin="12.0153" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="MaxLevel" Visible="False" ActionTag="732442495" Tag="607" IconVisible="True" LeftMargin="471.9847" RightMargin="12.0153" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
                 <Position X="471.9847" Y="14.9808" />
