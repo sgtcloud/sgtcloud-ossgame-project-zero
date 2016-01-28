@@ -366,6 +366,8 @@
           <Fnt Name="font22_white_kmbb-export.fnt" />
           <Image Name="font14_white_kmbb-export.png" />
           <Image Name="font14_white_kmbb.png" />
+          <Fnt Name="font18_white-export.fnt" />
+          <Image Name="font18_white-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
       </RootFolder>
