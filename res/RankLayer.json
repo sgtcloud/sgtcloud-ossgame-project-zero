@@ -408,19 +408,19 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 12,
-                "LabelText": "9956",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "9999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font15_green.png",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
                 "Position": {
-                  "X": 342.8699,
-                  "Y": 699.8992
+                  "X": 366.6119,
+                  "Y": 706.5193
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -429,26 +429,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5357,
-                  "Y": 0.8138
+                  "X": 0.5728,
+                  "Y": 0.8215
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.014
+                  "X": 0.0844,
+                  "Y": 0.0174
                 },
-                "LeftMargin": 342.8699,
-                "RightMargin": 249.1301,
-                "TopMargin": 148.1008,
-                "BottomMargin": 699.8992,
-                "CallBackType": "Click",
-                "Tag": 45,
-                "ActionTag": 1828536400,
+                "LeftMargin": 339.6119,
+                "RightMargin": 246.3881,
+                "TopMargin": 145.9807,
+                "BottomMargin": 699.0193,
+                "Tag": 591,
+                "ActionTag": -1707227176,
                 "Size": {
-                  "X": 48.0,
-                  "Y": 12.0
+                  "X": 54.0,
+                  "Y": 15.0
                 },
                 "Name": "myNum_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -464,6 +463,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -630,7 +631,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font15_green.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
         "mainUI/bg_10.png",
