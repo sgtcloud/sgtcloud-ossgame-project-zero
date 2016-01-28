@@ -276,7 +276,7 @@
                 "ctype": "ProjectNodeObjectData"
               },
               {
-                "LabelText": "Lv.999/9999",
+                "LabelText": "Lv.999/999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font16_yellow_kmbb-export.fnt",
@@ -300,17 +300,17 @@
                   "Y": 0.8289
                 },
                 "PreSize": {
-                  "X": 0.2033,
+                  "X": 0.1817,
                   "Y": 0.18
                 },
                 "LeftMargin": 259.8713,
-                "RightMargin": 218.1287,
+                "RightMargin": 231.1287,
                 "TopMargin": 8.1119,
                 "BottomMargin": 73.8881,
                 "Tag": 304,
                 "ActionTag": -873835688,
                 "Size": {
-                  "X": 122.0,
+                  "X": 109.0,
                   "Y": 18.0
                 },
                 "Name": "skillLevel_text",
