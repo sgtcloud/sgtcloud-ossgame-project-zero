@@ -54,10 +54,13 @@
             "Tag": 30,
             "Children": [
               {
-                "LabelText": "99999",
-                "LabelBMFontFile_CNB": {
+                "CharWidth": 11,
+                "CharHeight": 12,
+                "LabelText": "99",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font14_green_kmbb-export.fnt",
+                  "Path": "mainUI/font14_red.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {},
@@ -76,56 +79,61 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.57,
-                  "Y": 1.2143
+                  "X": 0.22,
+                  "Y": 0.8571
                 },
-                "RightMargin": 43.0,
-                "TopMargin": -3.0,
-                "Tag": 41,
-                "ActionTag": 1093679073,
+                "RightMargin": 78.0,
+                "TopMargin": 2.0,
+                "CallBackType": "Click",
+                "Tag": 28,
+                "ActionTag": -2119850651,
                 "Size": {
-                  "X": 57.0,
-                  "Y": 17.0
-                },
-                "Name": "recover_num",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "99999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/font14_red_kmbb-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "PreSize": {
-                  "X": 0.57,
-                  "Y": 1.2143
-                },
-                "RightMargin": 43.0,
-                "TopMargin": -3.0,
-                "Tag": 42,
-                "ActionTag": 432748340,
-                "Size": {
-                  "X": 57.0,
-                  "Y": 17.0
+                  "X": 22.0,
+                  "Y": 12.0
                 },
                 "Name": "battle_num",
-                "ctype": "TextBMFontObjectData"
+                "ctype": "TextAtlasObjectData"
+              },
+              {
+                "CharWidth": 11,
+                "CharHeight": 12,
+                "LabelText": "99",
+                "StartChar": "0",
+                "LabelAtlasFileImage_CNB": {
+                  "Type": "Normal",
+                  "Path": "mainUI/font14_green.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.22,
+                  "Y": 0.8571
+                },
+                "RightMargin": 78.0,
+                "TopMargin": 2.0,
+                "CallBackType": "Click",
+                "Tag": 52,
+                "ActionTag": -1533586731,
+                "Size": {
+                  "X": 22.0,
+                  "Y": 12.0
+                },
+                "Name": "recover_num",
+                "ctype": "TextAtlasObjectData"
               }
             ],
             "ActionTag": 1001147719,
@@ -145,10 +153,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font14_green_kmbb-export.fnt",
-        "font/font14_green_kmbb-export.png",
-        "font/font14_red_kmbb-export.fnt",
-        "font/font14_red_kmbb-export.png"
+        "mainUI/font14_green.png",
+        "mainUI/font14_red.png"
       ],
       "ctype": "GameFileData"
     }

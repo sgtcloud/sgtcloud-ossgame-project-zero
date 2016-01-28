@@ -28,8 +28,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -62,8 +60,8 @@
                 "Scale9Height": 1,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 2.9328,
-                  "Y": 4.7451
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -72,22 +70,19 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0154,
-                  "Y": 0.1582
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.1053,
-                  "Y": 0.6667
+                  "X": 0.1154,
+                  "Y": 1.0
                 },
-                "LeftMargin": 2.9328,
-                "RightMargin": 167.0672,
-                "TopMargin": 5.2549,
-                "BottomMargin": 4.7451,
+                "RightMargin": 230.0,
                 "Tag": 198,
                 "ActionTag": 204578689,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 30.0,
+                  "Y": 30.0
                 },
                 "Name": "icon",
                 "ctype": "ImageViewObjectData"
@@ -110,8 +105,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 26.0671,
-                  "Y": 4.7451
+                  "X": 35.0,
+                  "Y": 5.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -120,21 +115,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1372,
-                  "Y": 0.1582
+                  "X": 0.1346,
+                  "Y": 0.1667
                 },
                 "PreSize": {
-                  "X": 0.6316,
+                  "X": 0.6923,
                   "Y": 0.6667
                 },
-                "LeftMargin": 26.0671,
-                "RightMargin": 43.9329,
-                "TopMargin": 5.2549,
-                "BottomMargin": 4.7451,
+                "LeftMargin": 35.0,
+                "RightMargin": 45.0,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
                 "Tag": 199,
                 "ActionTag": 432391139,
                 "Size": {
-                  "X": 120.0,
+                  "X": 180.0,
                   "Y": 20.0
                 },
                 "Name": "text",
@@ -159,8 +154,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 149.6942,
-                  "Y": 4.7451
+                  "X": 220.0,
+                  "Y": 5.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -172,17 +167,16 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7879,
-                  "Y": 0.1582
+                  "X": 0.8462,
+                  "Y": 0.1667
                 },
                 "PreSize": {
-                  "X": 0.2105,
+                  "X": 0.1538,
                   "Y": 0.6667
                 },
-                "LeftMargin": 149.6942,
-                "RightMargin": 0.3058,
-                "TopMargin": 5.2549,
-                "BottomMargin": 4.7451,
+                "LeftMargin": 220.0,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
                 "Tag": 200,
                 "ActionTag": -1758261490,
                 "Size": {
@@ -195,7 +189,7 @@
             ],
             "ActionTag": 2127845320,
             "Size": {
-              "X": 190.0,
+              "X": 260.0,
               "Y": 30.0
             },
             "Name": "root",
@@ -203,7 +197,7 @@
           }
         ],
         "Size": {
-          "X": 190.0,
+          "X": 260.0,
           "Y": 30.0
         },
         "Name": "Layer",

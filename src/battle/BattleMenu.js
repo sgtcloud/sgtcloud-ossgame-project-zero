@@ -412,8 +412,8 @@ var HeroListMenu = BattleMenu.extend({
             var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var lock = btnlayer.getChildByName('lock');
-            var add = btnlayer.getChildByName('add');
-            var cut = btnlayer.getChildByName('cut');
+            //var add = btnlayer.getChildByName('add');
+            //var cut = btnlayer.getChildByName('cut');
             //var per = btnlayer.getChildByName('per');
             var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
             var text_yellow = btnlayer.getChildByName('text_yellow');//统一文字
@@ -431,8 +431,8 @@ var HeroListMenu = BattleMenu.extend({
             elements.upgrade_btn.buffNum_text = buffNum_text;
             elements.upgrade_btn.lock = lock;
             //elements.upgrade_btn.per = per;
-            elements.upgrade_btn.add = add;
-            elements.upgrade_btn.cut = cut;
+            //elements.upgrade_btn.add = add;
+            //elements.upgrade_btn.cut = cut;
             //elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
@@ -513,7 +513,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.die_time_text.setString(Math.round(data['recover']) + " 秒");
                 }
             });
-            elements.die_time_text.setFontName("微软雅黑");
+            //elements.die_time_text.setFontName("微软雅黑");
             setFont([heroName_text, elements.upgrade_btn.buff_text]);
             //die_text.setVisible(false);
             //die_time_text.setVisible(false);
@@ -593,7 +593,7 @@ var HeroListMenu = BattleMenu.extend({
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                         elements.maxLevel_btn.layer.setVisible(true);
                     } else {
-                        showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, hero.getLevelData(hero.getLv() + 1)['life'] - hero.getLevelData()['life']);
+                        //showAddOrCut(/*elements.upgrade_btn.add, elements.upgrade_btn.cut,*/ hero.getLevelData(hero.getLv() + 1)['life'] - hero.getLevelData()['life']);
                         elements.upgrade_btn.layer.setVisible(true)
                     }
                 }
@@ -622,9 +622,9 @@ var HeroListMenu = BattleMenu.extend({
                     var nextLevelLife = nextlevelData['life'];
                     elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
                     var levelLife = hero.getLevelData()['life'];
-                    var diffValue = parseInt(nextLevelLife - levelLife);
-                    showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, diffValue);
-                    elements.upgrade_btn.buffNum_text.setString(Math.abs(diffValue));
+                    //var diffValue = parseInt(nextLevelLife - levelLife);
+                    //showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, diffValue);
+                    elements.upgrade_btn.buffNum_text.setString(Math.floor(nextLevelLife - levelLife));
                 }
                 //}
                 if (hero.getLv() == 1) {
@@ -643,15 +643,15 @@ var HeroListMenu = BattleMenu.extend({
 
         }
 
-        function showAddOrCut(add, cut, showEffect) {
-            if (showEffect > 0) {
-                add.isVisible() || add.setVisible(true);
-                cut.isVisible() && cut.setVisible(false);
-            } else {
-                add.isVisible() && add.setVisible(false);
-                cut.isVisible() || cut.setVisible(true);
-            }
-        }
+        //function showAddOrCut(add, cut, showEffect) {
+        //    if (showEffect > 0) {
+        //        add.isVisible() || add.setVisible(true);
+        //        cut.isVisible() && cut.setVisible(false);
+        //    } else {
+        //        add.isVisible() && add.setVisible(false);
+        //        cut.isVisible() || cut.setVisible(true);
+        //    }
+        //}
 
         function initSkillView(hero, skill, elements) {
             if (skill.isMaxLevel()) {
@@ -682,8 +682,8 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            showAddOrCut(add, cut, showEffect);
-            var _effect=Math.abs(parseInt(showEffect));
+            //showAddOrCut(add, cut, showEffect);
+            var _effect=parseInt(showEffect);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                 //elements.upgrade_btn.per.setVisible(true);
                 _effect+"%"
@@ -807,8 +807,8 @@ var HeroListMenu = BattleMenu.extend({
                     var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                     elements.upgrade_btn.text_yellow.setString(nextAmount);
                     var showEffect = nextEffects[0].value - effects[0].value;
-                    showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, showEffect);
-                    elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(showEffect)));
+                    //showAddOrCut(elements.upgrade_btn.add, elements.upgrade_btn.cut, showEffect);
+                    elements.upgrade_btn.buffNum_text.setString(Math.floor(showEffect));
                     elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
                     if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                         //elements.upgrade_btn.per.setVisible(true);
@@ -818,7 +818,7 @@ var HeroListMenu = BattleMenu.extend({
                     }
                     lockSkillIfNecessary(hero, skill, elements);
                 }
-                console.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
+                //console.log('current skill[' + skill.getId() + ']\'s Lv is ' + skill.getLv());
             });
             initSkillView(hero, skill, elements);
             return root;
