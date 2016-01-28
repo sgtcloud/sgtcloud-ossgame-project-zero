@@ -598,250 +598,55 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
+                "DirectionType": "Vertical",
+                "IsBounceEnabled": true,
+                "ScrollDirectionType": 0,
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 150
                 },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
+                "FirstColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 16.4216,
-                  "Y": 301.841
+                  "X": 3.0,
+                  "Y": 2.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "CColor": {},
-                "IconVisible": true,
+                "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0269,
-                  "Y": 0.5031
+                  "X": 0.0049,
+                  "Y": 0.0033
                 },
                 "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
+                  "X": 0.9902,
+                  "Y": 0.9933
                 },
-                "LeftMargin": 16.4216,
-                "RightMargin": 413.5784,
-                "TopMargin": 18.159,
-                "BottomMargin": 301.841,
-                "Tag": 399,
-                "ActionTag": 1330390566,
+                "LeftMargin": 3.0,
+                "RightMargin": 3.0,
+                "TopMargin": 2.0,
+                "BottomMargin": 2.0,
+                "Tag": 1109,
+                "ActionTag": -590507260,
                 "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
+                  "X": 604.0,
+                  "Y": 596.0
                 },
-                "Name": "item1",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 213.851,
-                  "Y": 301.841
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3506,
-                  "Y": 0.5031
-                },
-                "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
-                },
-                "LeftMargin": 213.851,
-                "RightMargin": 216.149,
-                "TopMargin": 18.159,
-                "BottomMargin": 301.841,
-                "Tag": 443,
-                "ActionTag": -1563805747,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
-                },
-                "Name": "item2",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 411.2805,
-                  "Y": 301.841
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.6742,
-                  "Y": 0.5031
-                },
-                "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
-                },
-                "LeftMargin": 411.2805,
-                "RightMargin": 18.7195,
-                "TopMargin": 18.159,
-                "BottomMargin": 301.841,
-                "Tag": 463,
-                "ActionTag": -348189901,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
-                },
-                "Name": "item3",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 16.4218,
-                  "Y": 13.3686
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.0269,
-                  "Y": 0.0223
-                },
-                "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
-                },
-                "LeftMargin": 16.4218,
-                "RightMargin": 413.5782,
-                "TopMargin": 306.6314,
-                "BottomMargin": 13.3686,
-                "Tag": 483,
-                "ActionTag": -832870913,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
-                },
-                "Name": "item4",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 213.8511,
-                  "Y": 13.3686
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.3506,
-                  "Y": 0.0223
-                },
-                "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
-                },
-                "LeftMargin": 213.8511,
-                "RightMargin": 216.1489,
-                "TopMargin": 306.6314,
-                "BottomMargin": 13.3686,
-                "Tag": 503,
-                "ActionTag": 1627353549,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
-                },
-                "Name": "item5",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ShopIconLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 411.2805,
-                  "Y": 13.3686
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.6742,
-                  "Y": 0.0223
-                },
-                "PreSize": {
-                  "X": 0.2951,
-                  "Y": 0.4667
-                },
-                "LeftMargin": 411.2805,
-                "RightMargin": 18.7195,
-                "TopMargin": 306.6314,
-                "BottomMargin": 13.3686,
-                "Tag": 523,
-                "ActionTag": -890345032,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 280.0
-                },
-                "Name": "item6",
-                "ctype": "ProjectNodeObjectData"
+                "Name": "ListView_1",
+                "ctype": "ListViewObjectData"
               }
             ],
             "ActionTag": -309343141,
@@ -869,7 +674,6 @@
         "mainUI/bg_03.png",
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
-        "ShopIconLayer.json",
         "shopUI/moneyTree_bg.png",
         "shopUI/sale.png"
       ],

@@ -73,11 +73,11 @@
               </AbstractNodeData>
               <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="286.0512" RightMargin="230.9488" TopMargin="17.0812" BottomMargin="77.9188" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
                 <Size X="83.0000" Y="15.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="327.5512" Y="85.4188" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="286.0512" Y="85.4188" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5459" Y="0.7765" />
+                <PrePosition X="0.4768" Y="0.7765" />
                 <PreSize X="0.1383" Y="0.1364" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>

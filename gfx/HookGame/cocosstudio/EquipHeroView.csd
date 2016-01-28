@@ -40,13 +40,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="1071298966" CallBackType="Click" Tag="1054" IconVisible="False" LeftMargin="126.4496" RightMargin="433.5504" TopMargin="42.6658" BottomMargin="52.3342" LabelText="Lv.999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="level_text" ActionTag="1071298966" CallBackType="Click" Tag="1054" IconVisible="False" LeftMargin="123.4496" RightMargin="436.5504" TopMargin="42.6658" BottomMargin="52.3342" LabelText="Lv.999" ctype="TextBMFontObjectData">
                 <Size X="64.0000" Y="15.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="158.4496" Y="59.8342" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="123.4496" Y="59.8342" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2539" Y="0.5439" />
+                <PrePosition X="0.1978" Y="0.5439" />
                 <PreSize X="0.1026" Y="0.1364" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -266,7 +266,7 @@
                 <PrePosition X="0.1923" Y="0.1455" />
                 <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero_equip" ActionTag="490580309" CallBackType="Click" Tag="278" IconVisible="False" LeftMargin="468.7505" RightMargin="15.2495" TopMargin="7.6703" BottomMargin="32.3297" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="hero_equip" ActionTag="490580309" CallBackType="Click" Tag="278" IconVisible="False" LeftMargin="468.7505" RightMargin="15.2495" TopMargin="7.6703" BottomMargin="32.3297" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="70.0000" />
                 <Children>
                   <AbstractNodeData Name="item1" ActionTag="-1754001681" Tag="885" IconVisible="True" RightMargin="40.0000" TopMargin="-30.4880" BottomMargin="0.4880" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
@@ -331,7 +331,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="player_equip" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="player_equip" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="90.0000" />
                 <Children>
                   <AbstractNodeData Name="equipNum_bg" ActionTag="-1910765510" Tag="882" IconVisible="False" LeftMargin="1.2796" RightMargin="18.7204" TopMargin="28.8625" BottomMargin="1.1375" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
