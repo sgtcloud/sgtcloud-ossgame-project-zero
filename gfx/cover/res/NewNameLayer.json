@@ -53,9 +53,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/bg_05.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -92,9 +92,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/bg_03.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -142,19 +142,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/btn2.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -211,9 +211,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/text1.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 277,
                 "Scale9Height": 41,
@@ -261,19 +261,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/bg_14.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/bg_14.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/bg_14.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -329,9 +329,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/text.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 84,
                 "Scale9Height": 47,
@@ -429,13 +429,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "coverUI/bg_03.png",
-        "coverUI/bg_05.png",
-        "coverUI/bg_14.png",
-        "coverUI/btn1.png",
-        "coverUI/btn2.png",
-        "coverUI/text.png",
-        "coverUI/text1.png"
+        "cover.plist",
+        "cover.png"
       ],
       "ctype": "GameFileData"
     }

@@ -28,9 +28,9 @@
                 <PrePosition X="0.5000" Y="0.2377" />
                 <PreSize X="0.2875" Y="0.0771" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="coverUI/yellow_btn_b.png" Plist="" />
-                <PressedFileData Type="Normal" Path="coverUI/yellow_btn_a.png" Plist="" />
-                <NormalFileData Type="Normal" Path="coverUI/yellow_btn_a.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="coverUI/yellow_btn_b.png" Plist="cover.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="coverUI/yellow_btn_a.png" Plist="cover.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="coverUI/yellow_btn_a.png" Plist="cover.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -42,7 +42,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2656" Y="0.7351" />
                 <PreSize X="0.4688" Y="0.1875" />
-                <FileData Type="Normal" Path="coverUI/logo.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/logo.png" Plist="cover.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
