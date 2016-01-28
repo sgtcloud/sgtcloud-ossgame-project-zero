@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="SkillLayer" Type="Layer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="2.3.3.0" />
+  <PropertyGroup Name="SkillLayer" Type="Layer" ID="2e40f9b8-670c-432b-b0f9-79603f2332cf" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="204" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="240.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="240.0000" />
             <Children>
               <AbstractNodeData Name="skillLayer_bg" ActionTag="1030660432" Tag="261" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -49,7 +49,7 @@
                 <PreSize X="0.2047" Y="0.1083" />
                 <FileData Type="Normal" Path="skillUI/tap.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="38.0000" BottomMargin="12.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="38.0000" BottomMargin="12.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="190.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="15.0000" Y="202.0000" />

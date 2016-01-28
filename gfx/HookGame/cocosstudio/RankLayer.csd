@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="RankLayer" Type="Layer" ID="418f9ae6-58d2-4967-b437-50ea80308f75" Version="2.3.3.0" />
+  <PropertyGroup Name="RankLayer" Type="Layer" ID="418f9ae6-58d2-4967-b437-50ea80308f75" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="39" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="860.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="860.0000" />
             <Children>
               <AbstractNodeData Name="bg1" ActionTag="-1288208011" Tag="381" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -103,7 +103,7 @@
                 <PreSize X="0.0844" Y="0.0174" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
                   <AbstractNodeData Name="pvp_tab" ActionTag="-352308505" Tag="328" IconVisible="False" RightMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">

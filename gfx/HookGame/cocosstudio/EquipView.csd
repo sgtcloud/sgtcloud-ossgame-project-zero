@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="EquipView" Type="Layer" ID="89694dc2-1e83-49cd-a473-f5f244c13c40" Version="2.3.3.0" />
+  <PropertyGroup Name="EquipView" Type="Layer" ID="89694dc2-1e83-49cd-a473-f5f244c13c40" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="205" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="110.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-810919168" Tag="285" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-810919168" Tag="285" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="110.0000" />
             <Children>
               <AbstractNodeData Name="equipView_bg" ActionTag="1891383320" Tag="208" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">

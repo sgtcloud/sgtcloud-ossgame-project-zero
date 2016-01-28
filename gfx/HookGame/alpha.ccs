@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="alpha" Version="2.3.3.0" Type="CocosStudio" />
+  <PropertyGroup Name="alpha" Version="3.10.0.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -23,6 +23,7 @@
           <Image Name="font16_white.png" />
           <Image Name="font16_yellow.png" />
           <Image Name="font16_yellow_b.png" />
+          <Image Name="font16_yellow_kmbb.png" />
           <Image Name="MaxLevel.png" />
           <Image Name="notSure.png" />
           <Image Name="percentage.png" />
@@ -30,7 +31,6 @@
           <Image Name="revive.png" />
           <Image Name="sure.png" />
           <Image Name="upLevel.png" />
-          <Image Name="font16_yellow_kmbb.png" />
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -47,6 +47,25 @@
           <Image Name="relic.png" />
           <Image Name="title.png" />
           <Image Name="title_2.png" />
+        </Folder>
+        <Folder Name="font">
+          <Fnt Name="font14_green_kmbb-export.fnt" />
+          <Image Name="font14_green_kmbb-export.png" />
+          <Fnt Name="font14_red_kmbb-export.fnt" />
+          <Image Name="font14_red_kmbb-export.png" />
+          <Image Name="font14_white_kmbb.png" />
+          <Image Name="font14_white_kmbb-export.png" />
+          <Fnt Name="font16_white_kmbb-export.fnt" />
+          <Image Name="font16_white_kmbb-export.png" />
+          <Fnt Name="font16_yellow_kmbb-export.fnt" />
+          <Image Name="font16_yellow_kmbb-export.png" />
+          <Fnt Name="font18_white-export.fnt" />
+          <Image Name="font18_white-export.png" />
+          <Fnt Name="font19_white_kmbb-export.fnt" />
+          <Image Name="font19_white_kmbb-export.png" />
+          <Fnt Name="font22_white_kmbb-export.fnt" />
+          <Fnt Name="font22_yellow_kmbb-export.fnt" />
+          <Image Name="font22_yellow_kmbb-export.png" />
         </Folder>
         <Folder Name="Genius">
           <Image Name="enemy1001_atk01.png" />
@@ -133,6 +152,8 @@
           <Image Name="font22_white.png" />
           <Image Name="font22_yellow.png" />
           <Image Name="font22_yellow_b.png" />
+          <Image Name="font22_yellow_kmb.png" />
+          <Image Name="font22_yellow_kmbb.png" />
           <Image Name="font26_yellow.png" />
           <Image Name="font28_yellow.png" />
           <Image Name="gold.png" />
@@ -160,8 +181,6 @@
           <Image Name="title_bg2.png" />
           <Image Name="title_bg3.png" />
           <Image Name="title_bg4.png" />
-          <Image Name="font22_yellow_kmb.png" />
-          <Image Name="font22_yellow_kmbb.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -225,6 +244,39 @@
           <Image Name="reviveTime.png" />
           <Image Name="tap.png" />
         </Folder>
+        <Folder Name="statisticsUI">
+          <Image Name="cumulative_text.png" />
+          <Image Name="current_text.png" />
+          <Image Name="f22_y.png" />
+          <Image Name="text01.png" />
+          <Image Name="text02.png" />
+          <Image Name="text03.png" />
+          <Image Name="text04.png" />
+          <Image Name="text05.png" />
+          <Image Name="text06.png" />
+          <Image Name="text07.png" />
+          <Image Name="text08.png" />
+          <Image Name="text09.png" />
+          <Image Name="text10.png" />
+          <Image Name="text11.png" />
+          <Image Name="text12.png" />
+          <Image Name="text13.png" />
+          <Image Name="text14.png" />
+          <Image Name="text15.png" />
+          <Image Name="text16.png" />
+          <Image Name="text17.png" />
+          <Image Name="text18.png" />
+          <Image Name="text19.png" />
+          <Image Name="text20.png" />
+          <Image Name="text21.png" />
+          <Image Name="text22.png" />
+          <Image Name="text23.png" />
+          <Image Name="text24.png" />
+          <Image Name="text25.png" />
+          <Image Name="text26.png" />
+          <Image Name="text27.png" />
+          <Image Name="title_text.png" />
+        </Folder>
         <Folder Name="ui">
           <Image Name="bg_01.png" />
           <Image Name="bg_03.png" />
@@ -284,6 +336,7 @@
         <Project Name="Btn_Upgrade1.csd" Type="Layer" />
         <Project Name="Btn_Upgrade2.csd" Type="Layer" />
         <Project Name="BuffLayer.csd" Type="Layer" />
+        <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="BuffTips.csd" Type="Layer" />
         <Project Name="CloseBtn.csd" Type="Layer" />
         <Project Name="EnemyList.csd" Type="Layer" />
@@ -308,6 +361,7 @@
         <Project Name="RankView.csd" Type="Layer" />
         <Project Name="ShopIconLayer.csd" Type="Layer" />
         <Project Name="ShopLayer.csd" Type="Layer" />
+        <Project Name="ShopListView.csd" Type="Layer" />
         <Project Name="ShopTab.csd" Type="Layer" />
         <Project Name="ShopView.csd" Type="Layer" />
         <Project Name="SkillDescView.csd" Type="Layer" />
@@ -317,60 +371,6 @@
         <Project Name="Star.csd" Type="Layer" />
         <Project Name="StatisticsLayer.csd" Type="Layer" />
         <Project Name="TitleLayer.csd" Type="Layer" />
-        <Folder Name="statisticsUI">
-          <Image Name="f22_y.png" />
-          <Image Name="text01.png" />
-          <Image Name="text02.png" />
-          <Image Name="text03.png" />
-          <Image Name="text04.png" />
-          <Image Name="text05.png" />
-          <Image Name="text06.png" />
-          <Image Name="text07.png" />
-          <Image Name="text08.png" />
-          <Image Name="text09.png" />
-          <Image Name="text10.png" />
-          <Image Name="text11.png" />
-          <Image Name="text12.png" />
-          <Image Name="text13.png" />
-          <Image Name="text14.png" />
-          <Image Name="text15.png" />
-          <Image Name="text16.png" />
-          <Image Name="text17.png" />
-          <Image Name="text18.png" />
-          <Image Name="text19.png" />
-          <Image Name="text20.png" />
-          <Image Name="text21.png" />
-          <Image Name="text22.png" />
-          <Image Name="text23.png" />
-          <Image Name="text24.png" />
-          <Image Name="text25.png" />
-          <Image Name="text26.png" />
-          <Image Name="text27.png" />
-          <Image Name="title_text.png" />
-          <Image Name="cumulative_text.png" />
-          <Image Name="current_text.png" />
-        </Folder>
-        <Folder Name="font">
-          <Fnt Name="font22_yellow_kmbb-export.fnt" />
-          <Fnt Name="font16_yellow_kmbb-export.fnt" />
-          <Image Name="font16_yellow_kmbb-export.png" />
-          <Image Name="font22_yellow_kmbb-export.png" />
-          <Fnt Name="font19_white_kmbb-export.fnt" />
-          <Image Name="font19_white_kmbb-export.png" />
-          <Fnt Name="font14_red_kmbb-export.fnt" />
-          <Fnt Name="font14_green_kmbb-export.fnt" />
-          <Image Name="font14_green_kmbb-export.png" />
-          <Image Name="font14_red_kmbb-export.png" />
-          <Fnt Name="font16_white_kmbb-export.fnt" />
-          <Image Name="font16_white_kmbb-export.png" />
-          <Fnt Name="font22_white_kmbb-export.fnt" />
-          <Image Name="font14_white_kmbb-export.png" />
-          <Image Name="font14_white_kmbb.png" />
-          <Fnt Name="font18_white-export.fnt" />
-          <Image Name="font18_white-export.png" />
-        </Folder>
-        <Project Name="BuffList.csd" Type="Layer" />
-        <Project Name="ShopListView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

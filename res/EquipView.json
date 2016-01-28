@@ -324,11 +324,10 @@
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 327.5512,
+                  "X": 286.0512,
                   "Y": 85.4188
                 },
                 "Scale": {
@@ -338,7 +337,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5459,
+                  "X": 0.4768,
                   "Y": 0.7765
                 },
                 "PreSize": {

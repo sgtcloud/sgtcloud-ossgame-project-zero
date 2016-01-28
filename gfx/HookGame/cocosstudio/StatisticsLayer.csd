@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="StatisticsLayer" Type="Layer" ID="ec1d6282-bcd9-49a3-bc93-4b4994349726" Version="2.3.3.0" />
+  <PropertyGroup Name="StatisticsLayer" Type="Layer" ID="ec1d6282-bcd9-49a3-bc93-4b4994349726" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1816649714" Tag="4" IconVisible="False" TopMargin="-0.6515" BottomMargin="0.6515" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1816649714" Tag="4" IconVisible="False" TopMargin="-0.6515" BottomMargin="0.6515" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="-291531053" Tag="76" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -39,7 +39,7 @@
                 <PreSize X="0.4297" Y="0.0797" />
                 <FileData Type="Normal" Path="statisticsUI/title_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="current" ActionTag="-412105088" Tag="44" IconVisible="False" LeftMargin="14.0000" RightMargin="16.0000" TopMargin="80.0000" BottomMargin="290.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="current" ActionTag="-412105088" Tag="44" IconVisible="False" LeftMargin="14.0000" RightMargin="16.0000" TopMargin="80.0000" BottomMargin="290.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="370.0000" />
                 <Children>
                   <AbstractNodeData Name="current_bg" ActionTag="1267452234" Tag="45" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -62,7 +62,7 @@
                     <PreSize X="0.2328" Y="0.1270" />
                     <FileData Type="Normal" Path="statisticsUI/current_text.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="text" ActionTag="220247064" Tag="60" IconVisible="False" LeftMargin="15.0000" RightMargin="395.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="text" ActionTag="220247064" Tag="60" IconVisible="False" LeftMargin="15.0000" RightMargin="395.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="310.0000" />
                     <Children>
                       <AbstractNodeData Name="total_hero" ActionTag="-524772983" Tag="47" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="3.4996" BottomMargin="283.5004" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
@@ -197,7 +197,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="number" ActionTag="-1526191025" Tag="61" IconVisible="False" LeftMargin="400.0000" RightMargin="10.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="number" ActionTag="-1526191025" Tag="61" IconVisible="False" LeftMargin="400.0000" RightMargin="10.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="310.0000" />
                     <Children>
                       <AbstractNodeData Name="total_hero" ActionTag="588282107" Tag="108" IconVisible="False" LeftMargin="48.4500" RightMargin="41.5500" TopMargin="5.4996" BottomMargin="285.5004" LabelText="589.554k" ctype="TextBMFontObjectData">
@@ -344,7 +344,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="cumulative" ActionTag="-1758145486" Tag="75" IconVisible="False" LeftMargin="14.0000" RightMargin="16.0000" TopMargin="460.0000" BottomMargin="20.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="cumulative" ActionTag="-1758145486" Tag="75" IconVisible="False" LeftMargin="14.0000" RightMargin="16.0000" TopMargin="460.0000" BottomMargin="20.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="260.0000" />
                 <Children>
                   <AbstractNodeData Name="cumulative_bg" ActionTag="-1059311514" Tag="76" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -367,7 +367,7 @@
                     <PreSize X="0.2328" Y="0.1808" />
                     <FileData Type="Normal" Path="statisticsUI/cumulative_text.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="text" ActionTag="1878732397" Tag="91" IconVisible="False" LeftMargin="30.7420" RightMargin="379.2580" TopMargin="38.8479" BottomMargin="31.1521" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="text" ActionTag="1878732397" Tag="91" IconVisible="False" LeftMargin="30.7420" RightMargin="379.2580" TopMargin="38.8479" BottomMargin="31.1521" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="190.0000" />
                     <Children>
                       <AbstractNodeData Name="statistics.total_gold" ActionTag="1804693783" Tag="81" IconVisible="False" TopMargin="17.0000" BottomMargin="150.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
@@ -452,7 +452,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="number" ActionTag="598137377" Tag="104" IconVisible="False" LeftMargin="447.9211" RightMargin="22.0789" TopMargin="38.8479" BottomMargin="31.1521" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="number" ActionTag="598137377" Tag="104" IconVisible="False" LeftMargin="447.9211" RightMargin="22.0789" TopMargin="38.8479" BottomMargin="31.1521" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="140.0000" Y="190.0000" />
                     <Children>
                       <AbstractNodeData Name="statistics.total_gold" ActionTag="683802234" Tag="110" IconVisible="False" LeftMargin="0.0001" RightMargin="71.9999" TopMargin="19.0000" BottomMargin="152.0000" LabelText="111111" ctype="TextBMFontObjectData">
@@ -461,7 +461,7 @@
                         <Position X="0.0001" Y="152.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.8000" />
+                        <PrePosition Y="0.8000" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -471,7 +471,7 @@
                         <Position X="0.0001" Y="127.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.6684" />
+                        <PrePosition Y="0.6684" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -481,7 +481,7 @@
                         <Position X="0.0001" Y="102.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.5368" />
+                        <PrePosition Y="0.5368" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -491,7 +491,7 @@
                         <Position X="0.0001" Y="77.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.4053" />
+                        <PrePosition Y="0.4053" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -501,7 +501,7 @@
                         <Position X="0.0001" Y="52.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.2737" />
+                        <PrePosition Y="0.2737" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -511,7 +511,7 @@
                         <Position X="0.0001" Y="27.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.1421" />
+                        <PrePosition Y="0.1421" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -521,7 +521,7 @@
                         <Position X="0.0001" Y="2.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.0105" />
+                        <PrePosition Y="0.0105" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>

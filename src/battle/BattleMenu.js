@@ -510,7 +510,7 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
                 var data = event.getUserData();
                 if (data['id'] === hero.getId()) {
-                    elements.die_time_text.setString(Math.round(data['recover']) + " 秒");
+                    elements.die_time_text.setString(Math.round(data['recover']));
                 }
             });
             //elements.die_time_text.setFontName("微软雅黑");
@@ -977,7 +977,7 @@ var ShopLayerMenu = BattleMenu.extend({
             }
             switch (name) {
                 case "shop_tab":
-                    self.showPorpView(name);
+                    //self.showPorpView(name);
                     break;
                 case "moneyTree_tab":
                     self.showMoneyTreeView(name);
@@ -1126,7 +1126,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
             }
         };
-        this.showPorpView("shop_tab");
+        //this.showPorpView("shop_tab");
     }
 
 });

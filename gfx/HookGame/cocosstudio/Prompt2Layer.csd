@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="Prompt2Layer" Type="Layer" ID="81aef083-29e3-4319-85ab-81cfb227e5c7" Version="2.3.3.0" />
+  <PropertyGroup Name="Prompt2Layer" Type="Layer" ID="81aef083-29e3-4319-85ab-81cfb227e5c7" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="35" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1469895884" Tag="25" IconVisible="False" LeftMargin="106.9826" RightMargin="83.0174" TopMargin="269.5640" BottomMargin="290.4360" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1469895884" Tag="25" IconVisible="False" LeftMargin="106.9826" RightMargin="83.0174" TopMargin="269.5640" BottomMargin="290.4360" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="450.0000" Y="400.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-1382717200" Tag="26" IconVisible="False" LeftMargin="25.2205" RightMargin="24.7795" TopMargin="35.2722" BottomMargin="14.7278" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -121,7 +121,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_Yes" ActionTag="225100804" Tag="546" IconVisible="False" LeftMargin="256.8521" RightMargin="73.1479" TopMargin="324.2500" BottomMargin="25.7500" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn_Yes" ActionTag="225100804" Tag="546" IconVisible="False" LeftMargin="256.8521" RightMargin="73.1479" TopMargin="324.2500" BottomMargin="25.7500" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_Yes" ActionTag="310019511" Tag="547" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -161,7 +161,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_No" ActionTag="1124487093" Tag="549" IconVisible="False" LeftMargin="62.7836" RightMargin="267.2164" TopMargin="324.2500" BottomMargin="25.7500" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn_No" ActionTag="1124487093" Tag="549" IconVisible="False" LeftMargin="62.7836" RightMargin="267.2164" TopMargin="324.2500" BottomMargin="25.7500" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_No" ActionTag="-1314226411" Tag="550" IconVisible="False" TouchEnable="True" FontSize="22" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">

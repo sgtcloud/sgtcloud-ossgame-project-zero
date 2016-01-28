@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="HeroView" Type="Layer" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="2.3.3.0" />
+  <PropertyGroup Name="HeroView" Type="Layer" ID="76d58707-a884-4657-8563-97d80049f2ac" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="216" ctype="GameLayerObjectData">
         <Size X="624.0000" Y="110.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-93921636" Tag="334" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-93921636" Tag="334" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="624.0000" Y="110.0000" />
             <Children>
               <AbstractNodeData Name="heroView_bg" ActionTag="2013699035" Tag="217" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -103,7 +103,7 @@
               <AbstractNodeData Name="starts" ActionTag="476560097" Tag="111" IconVisible="True" LeftMargin="120.0000" RightMargin="504.0000" TopMargin="94.0000" BottomMargin="16.0000" ctype="SingleNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
                 <Children>
-                  <AbstractNodeData Name="star1" ActionTag="447371949" Tag="104" IconVisible="False" RightMargin="-32.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star1" ActionTag="447371949" Tag="104" IconVisible="False" RightMargin="-32.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="364682219" Tag="105" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -138,7 +138,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star2" ActionTag="-1086746548" Tag="112" IconVisible="False" LeftMargin="36.0000" RightMargin="-68.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star2" ActionTag="-1086746548" Tag="112" IconVisible="False" LeftMargin="36.0000" RightMargin="-68.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="842369493" Tag="113" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -173,7 +173,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star3" ActionTag="-24954573" Tag="115" IconVisible="False" LeftMargin="72.0000" RightMargin="-104.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star3" ActionTag="-24954573" Tag="115" IconVisible="False" LeftMargin="72.0000" RightMargin="-104.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-1231062683" Tag="116" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -208,7 +208,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star4" ActionTag="94563748" Tag="118" IconVisible="False" LeftMargin="108.0000" RightMargin="-140.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star4" ActionTag="94563748" Tag="118" IconVisible="False" LeftMargin="108.0000" RightMargin="-140.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="-2012880147" Tag="119" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
@@ -243,7 +243,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="star5" ActionTag="726672990" Tag="121" IconVisible="False" LeftMargin="144.0000" RightMargin="-176.0000" TopMargin="-30.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="star5" ActionTag="726672990" Tag="121" IconVisible="False" LeftMargin="144.0000" RightMargin="-176.0000" TopMargin="-30.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="32.0000" Y="30.0000" />
                     <Children>
                       <AbstractNodeData Name="star_on" ActionTag="889916365" Tag="122" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">

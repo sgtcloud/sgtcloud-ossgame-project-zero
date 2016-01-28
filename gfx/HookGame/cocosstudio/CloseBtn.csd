@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="CloseBtn" Type="Layer" ID="0187d3a6-451f-42be-a4ec-6d3449a7da0c" Version="2.3.3.0" />
+  <PropertyGroup Name="CloseBtn" Type="Layer" ID="0187d3a6-451f-42be-a4ec-6d3449a7da0c" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

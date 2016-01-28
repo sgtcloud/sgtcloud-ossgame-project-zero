@@ -192,11 +192,10 @@
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 158.4496,
+                  "X": 123.4496,
                   "Y": 59.8342
                 },
                 "Scale": {
@@ -206,15 +205,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2539,
+                  "X": 0.1978,
                   "Y": 0.5439
                 },
                 "PreSize": {
                   "X": 0.1026,
                   "Y": 0.1364
                 },
-                "LeftMargin": 126.4496,
-                "RightMargin": 433.5504,
+                "LeftMargin": 123.4496,
+                "RightMargin": 436.5504,
                 "TopMargin": 42.6658,
                 "BottomMargin": 52.3342,
                 "CallBackType": "Click",
@@ -1013,6 +1012,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -1270,6 +1271,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {

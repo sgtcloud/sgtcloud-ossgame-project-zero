@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="BuffList" Type="Layer" ID="e6e15ee0-f847-4979-b176-a8f3330c8270" Version="2.3.3.0" />
+  <PropertyGroup Name="BuffList" Type="Layer" ID="e6e15ee0-f847-4979-b176-a8f3330c8270" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

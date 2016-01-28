@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="RankView" Type="Layer" ID="474cb21c-348b-43b6-a7ae-dfa2f1f2a19d" Version="2.3.3.0" />
+  <PropertyGroup Name="RankView" Type="Layer" ID="474cb21c-348b-43b6-a7ae-dfa2f1f2a19d" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="40" ctype="GameLayerObjectData">
         <Size X="600.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="318411989" Tag="416" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="318411989" Tag="416" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="600.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1402301482" Tag="384" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">

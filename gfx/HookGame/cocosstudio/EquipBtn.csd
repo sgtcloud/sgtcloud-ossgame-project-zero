@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="EquipBtn" Type="Layer" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="2.3.3.0" />
+  <PropertyGroup Name="EquipBtn" Type="Layer" ID="f2322eee-2833-4b5e-a1ac-fb3a645b631c" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

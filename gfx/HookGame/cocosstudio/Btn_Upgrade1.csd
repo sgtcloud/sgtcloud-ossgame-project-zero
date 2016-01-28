@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="Btn_Upgrade1" Type="Layer" ID="c0f7928b-3aaa-4d46-b30c-3705de3a6d7e" Version="2.3.3.0" />
+  <PropertyGroup Name="Btn_Upgrade1" Type="Layer" ID="c0f7928b-3aaa-4d46-b30c-3705de3a6d7e" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="75" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-920099854" Tag="226" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn" ActionTag="-920099854" Tag="226" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="745304776" Tag="227" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">

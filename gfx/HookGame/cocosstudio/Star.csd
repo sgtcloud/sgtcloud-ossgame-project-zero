@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="Star" Type="Layer" ID="9053b9de-a1fd-4243-9dc3-da5d9bd20347" Version="2.3.3.0" />
+  <PropertyGroup Name="Star" Type="Layer" ID="9053b9de-a1fd-4243-9dc3-da5d9bd20347" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

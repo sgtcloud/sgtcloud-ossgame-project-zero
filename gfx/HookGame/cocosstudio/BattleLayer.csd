@@ -1,15 +1,15 @@
 <GameFile>
-  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="2.3.3.0" />
+  <PropertyGroup Name="BattleLayer" Type="Layer" ID="ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="174" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="740.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" LeftMargin="0.8561" RightMargin="-0.8561" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" LeftMargin="0.8561" RightMargin="-0.8561" BottomMargin="240.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position X="0.8561" Y="240.0000" />
@@ -288,7 +288,7 @@
                 <PreSize X="0.6938" Y="0.0081" />
                 <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position Y="250.0000" />
