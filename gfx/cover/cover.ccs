@@ -8,8 +8,16 @@
           <Image Name="yellow_btn_b.png" />
           <Image Name="cover_bg.jpg" />
           <Image Name="logo.png" />
+          <Image Name="bg_03.png" />
+          <Image Name="bg_14.png" />
+          <Image Name="btn1.png" />
+          <Image Name="btn2.png" />
+          <Image Name="text.png" />
+          <Image Name="text1.png" />
+          <Image Name="bg_05.png" />
         </Folder>
         <Project Name="cover.csd" Type="Layer" />
+        <Project Name="NewNameLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
