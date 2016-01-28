@@ -215,92 +215,6 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "buttonUI/add.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 13,
-                "Scale9Height": 13,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 37.0671,
-                  "Y": 19.4819
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2648,
-                  "Y": 0.2435
-                },
-                "PreSize": {
-                  "X": 0.0929,
-                  "Y": 0.1625
-                },
-                "LeftMargin": 30.5671,
-                "RightMargin": 96.4329,
-                "TopMargin": 54.0181,
-                "BottomMargin": 12.9819,
-                "Tag": 233,
-                "ActionTag": 2045657351,
-                "Size": {
-                  "X": 13.0,
-                  "Y": 13.0
-                },
-                "Name": "add",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "buttonUI/cut.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 13,
-                "Scale9Height": 13,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 37.0671,
-                  "Y": 19.4819
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2648,
-                  "Y": 0.2435
-                },
-                "PreSize": {
-                  "X": 0.0929,
-                  "Y": 0.1625
-                },
-                "LeftMargin": 30.5671,
-                "RightMargin": 96.4329,
-                "TopMargin": 54.0181,
-                "BottomMargin": 12.9819,
-                "Tag": 234,
-                "ActionTag": -377044570,
-                "Size": {
-                  "X": 13.0,
-                  "Y": 13.0
-                },
-                "Name": "cut",
-                "ctype": "ImageViewObjectData"
-              },
-              {
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
@@ -423,10 +337,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "99999",
+                "LabelText": "+99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/font18_white-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -434,8 +348,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 79.5977,
-                  "Y": 20.7972
+                  "X": 75.4442,
+                  "Y": 21.9834
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -444,24 +358,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5686,
-                  "Y": 0.26
+                  "X": 0.5389,
+                  "Y": 0.2748
                 },
                 "PreSize": {
-                  "X": 0.4786,
-                  "Y": 0.1875
+                  "X": 0.5929,
+                  "Y": 0.2375
                 },
-                "LeftMargin": 46.0977,
-                "RightMargin": 26.9023,
-                "TopMargin": 51.7028,
-                "BottomMargin": 13.2972,
+                "LeftMargin": 33.9442,
+                "RightMargin": 23.0558,
+                "TopMargin": 48.5166,
+                "BottomMargin": 12.4834,
                 "Tag": 348,
                 "ActionTag": 716730375,
                 "Size": {
-                  "X": 67.0,
-                  "Y": 15.0
+                  "X": 83.0,
+                  "Y": 19.0
                 },
-                "Name": "text_yellow_0",
+                "Name": "buffNum_text",
                 "ctype": "TextBMFontObjectData"
               }
             ],
@@ -482,11 +396,11 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/add.png",
-        "buttonUI/cut.png",
         "equipUI/relic.png",
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
+        "font/font18_white-export.fnt",
+        "font/font18_white-export.png",
         "heroUI/btn1.png",
         "heroUI/btn2.png",
         "heroUI/diamond.png",
