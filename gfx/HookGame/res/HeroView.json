@@ -353,56 +353,46 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 18,
                 "LabelText": "99:99",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font18_white-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 63.1893,
-                  "Y": 42.2405
+                  "X": 60.3768,
+                  "Y": 45.2378
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1013,
-                  "Y": 0.384
+                  "X": 0.0968,
+                  "Y": 0.4113
                 },
                 "PreSize": {
-                  "X": 0.0721,
-                  "Y": 0.1636
+                  "X": 0.0994,
+                  "Y": 0.1727
                 },
-                "LeftMargin": 40.6893,
-                "RightMargin": 538.3107,
-                "TopMargin": 58.7595,
-                "BottomMargin": 33.2405,
-                "Tag": 382,
-                "ActionTag": 1970479199,
+                "LeftMargin": 29.3768,
+                "RightMargin": 532.6232,
+                "TopMargin": 55.2622,
+                "BottomMargin": 35.7378,
+                "Tag": 424,
+                "ActionTag": 571675629,
                 "Size": {
-                  "X": 45.0,
-                  "Y": 18.0
+                  "X": 62.0,
+                  "Y": 19.0
                 },
                 "Name": "die_time_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -1238,6 +1228,8 @@
         "Btn_Upgrade1.json",
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
+        "font/font18_white-export.fnt",
+        "font/font18_white-export.png",
         "heroUI/hero_bg.png",
         "heroUI/heroHP.png",
         "heroUI/reviveTime.png",

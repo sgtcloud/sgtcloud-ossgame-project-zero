@@ -19,16 +19,15 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/skill_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time" ActionTag="1837244646" Tag="294" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="49.2681" BottomMargin="22.7319" IsCustomSize="True" FontSize="18" LabelText="99:99" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="60.0000" Y="18.0000" />
+              <AbstractNodeData Name="time" ActionTag="-1698262075" Tag="107" IconVisible="False" LeftMargin="14.2776" RightMargin="13.7224" TopMargin="46.4650" BottomMargin="24.5350" LabelText="99:99" ctype="TextBMFontObjectData">
+                <Size X="62.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="45.0000" Y="31.7319" />
+                <Position X="45.2776" Y="34.0350" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.5000" Y="0.3526" />
-                <PreSize X="0.6667" Y="0.2000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5031" Y="0.3782" />
+                <PreSize X="0.6889" Y="0.2111" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="reviveTime_text" Visible="False" ActionTag="513272033" Tag="955" IconVisible="False" LeftMargin="6.2086" RightMargin="5.7914" TopMargin="20.5356" BottomMargin="38.4644" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />

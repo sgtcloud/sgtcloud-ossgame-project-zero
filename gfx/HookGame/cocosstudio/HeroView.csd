@@ -80,16 +80,15 @@
                 <PreSize X="0.1667" Y="0.2364" />
                 <FileData Type="Normal" Path="heroUI/heroHP.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_time_text" ActionTag="1970479199" Tag="382" IconVisible="False" LeftMargin="40.6893" RightMargin="538.3107" TopMargin="58.7595" BottomMargin="33.2405" FontSize="18" LabelText="99:99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="45.0000" Y="18.0000" />
+              <AbstractNodeData Name="die_time_text" ActionTag="571675629" Tag="424" IconVisible="False" LeftMargin="29.3768" RightMargin="532.6232" TopMargin="55.2622" BottomMargin="35.7378" LabelText="99:99" ctype="TextBMFontObjectData">
+                <Size X="62.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="63.1893" Y="42.2405" />
+                <Position X="60.3768" Y="45.2378" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.1013" Y="0.3840" />
-                <PreSize X="0.0721" Y="0.1636" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0968" Y="0.4113" />
+                <PreSize X="0.0994" Y="0.1727" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="die_text" ActionTag="-956947662" CallBackType="Click" Tag="1060" IconVisible="False" LeftMargin="20.8493" RightMargin="525.1507" TopMargin="29.2096" BottomMargin="49.7904" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />

@@ -1176,6 +1176,7 @@ var RankLayerMenu = BattleMenu.extend({
             var players = PlayerData.getCurrentRanksByType(type);
             myNumText.ignoreContentAdaptWithSize(true);
             myNumText.setString(PlayerData.getMyRankByType(type));
+            myNumText.setColor(cc.color(63,193,61));
             n = 0;
             for (var i in players) {
                 n++;
@@ -1191,15 +1192,16 @@ var RankLayerMenu = BattleMenu.extend({
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
             var playerName = root.getChildByName('player_name');
             var levelText = root.getChildByName('level_text');
-            var playerPrestige = root.getChildByName('player_prestige');
+            //var playerPrestige = root.getChildByName('player_prestige');
             var prestigeText = root.getChildByName('prestige_text');
-            var playerLv = root.getChildByName('player_lv');
+            //var playerLv = root.getChildByName('player_lv');
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');
             setFont([playerName]);
-            setColor([levelText, playerPrestige, prestigeText, playerLv]);
+            //setColor([levelText, playerPrestige, prestigeText, playerLv]);
+
             setIgnoreContentAdaptWithSize([levelText, prestigeText, num]);
-            levelText.setString(hero.getLv());
+            levelText.setString("Lv."+hero.getLv());
             num.setString(n);
             playerName.setString(data.name);
             if (id == player.id) {
