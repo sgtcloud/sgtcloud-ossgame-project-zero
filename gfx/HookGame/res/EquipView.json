@@ -186,58 +186,6 @@
               {
                 "IsCustomSize": true,
                 "FontSize": 18,
-                "LabelText": "Lv.99/99",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 270.0,
-                  "Y": 77.4999
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.45,
-                  "Y": 0.7045
-                },
-                "PreSize": {
-                  "X": 0.2,
-                  "Y": 0.1636
-                },
-                "LeftMargin": 270.0,
-                "RightMargin": 210.0,
-                "TopMargin": 14.5001,
-                "BottomMargin": 77.4999,
-                "Tag": 45,
-                "ActionTag": -188675879,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 18.0
-                },
-                "Name": "equipLevel_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "IsCustomSize": true,
-                "FontSize": 18,
                 "LabelText": "神器效果详细描述",
                 "OutlineColor": {
                   "G": 0,
@@ -367,6 +315,48 @@
                 },
                 "Name": "MaxLevel_btn",
                 "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "LabelText": "Lv.99/99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 327.5512,
+                  "Y": 85.4188
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5459,
+                  "Y": 0.7765
+                },
+                "PreSize": {
+                  "X": 0.1383,
+                  "Y": 0.1364
+                },
+                "LeftMargin": 286.0512,
+                "RightMargin": 230.9488,
+                "TopMargin": 17.0812,
+                "BottomMargin": 77.9188,
+                "Tag": 1093,
+                "ActionTag": 1417978744,
+                "Size": {
+                  "X": 83.0,
+                  "Y": 15.0
+                },
+                "Name": "equipLevel_text",
+                "ctype": "TextBMFontObjectData"
               }
             ],
             "ActionTag": -810919168,
@@ -389,7 +379,9 @@
         "Btn_MaxLevel.json",
         "Btn_Upgrade2.json",
         "equipUI/equip_bg.png",
-        "equipUI/equip_icon.png"
+        "equipUI/equip_icon.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png"
       ],
       "ctype": "GameFileData"
     }

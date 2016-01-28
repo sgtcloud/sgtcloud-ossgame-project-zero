@@ -12,7 +12,7 @@
  *     }
  *  }]
  */
-var Chance = function(opts) {
+var Chance = function (opts) {
     this._stack = opts;
     this._found = new Array();
 
@@ -30,17 +30,17 @@ var Chance = function(opts) {
  *
  * @api private
  */
-Chance.prototype.random = function() {
-    var random = ~~ (Math.random() * 100);
+Chance.prototype.random = function (max) {
+    var random = getRandomInt(1, max);//(Math.random() * 100);
 
-    while (this._found.indexOf(random) === -1) {
-        random = ~~ (Math.random() * 100);
-        this._found.push(random);
-    };
+    /*while (this._found.indexOf(random) === -1) {
+     random =  (Math.random() * 100);
+     this._found.push(random);
+     };
 
-    if (this._found.length === 100) {
-        this._found.length = 0;
-    };
+     if (this._found.length === 100) {
+     this._found.length = 0;
+     };*/
     return random;
 }
 
@@ -50,8 +50,9 @@ Chance.prototype.random = function() {
  *
  * @return {Function} [executed]
  */
-Chance.prototype.next = function() {
-    var random = this.random();
+Chance.prototype.next = function () {
+    var len = this._stack.length;
+    var random = this.random(this._stack[len - 1].cw);
 
     for (var i = 0; i < this._stack.length; i++) {
         if (random <= this._stack[i].cw) {
@@ -59,5 +60,6 @@ Chance.prototype.next = function() {
             return this._stack[i].f;
             break;
         }
-    };
+    }
+    ;
 };
