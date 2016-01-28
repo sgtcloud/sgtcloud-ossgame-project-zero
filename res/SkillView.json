@@ -235,59 +235,6 @@
                 "ctype": "TextObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 18,
-                "LabelText": "Lv.99/99",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 269.0,
-                  "Y": 73.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4483,
-                  "Y": 0.73
-                },
-                "PreSize": {
-                  "X": 0.1667,
-                  "Y": 0.18
-                },
-                "LeftMargin": 269.0,
-                "RightMargin": 231.0,
-                "TopMargin": 9.0,
-                "BottomMargin": 73.0,
-                "Tag": 342,
-                "ActionTag": -1686192480,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 18.0
-                },
-                "Name": "skillLevel_text",
-                "ctype": "TextObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "Normal",
                   "Path": "Btn_Lock.json",
@@ -327,6 +274,47 @@
                 },
                 "Name": "lock_btn",
                 "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "LabelText": "Lv.999/9999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 259.8713,
+                  "Y": 82.8881
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4331,
+                  "Y": 0.8289
+                },
+                "PreSize": {
+                  "X": 0.2033,
+                  "Y": 0.18
+                },
+                "LeftMargin": 259.8713,
+                "RightMargin": 218.1287,
+                "TopMargin": 8.1119,
+                "BottomMargin": 73.8881,
+                "Tag": 304,
+                "ActionTag": -873835688,
+                "Size": {
+                  "X": 122.0,
+                  "Y": 18.0
+                },
+                "Name": "skillLevel_text",
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -431,6 +419,8 @@
         "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade1.json",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "heroUI/skill_bg.png",
         "heroUI/skill_icon.png"
       ],

@@ -538,22 +538,18 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "CharWidth": 12,
-                    "CharHeight": 11,
-                    "LabelText": "999999",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "buttonUI/font16_yellow.png",
+                      "Path": "font/font16_yellow_kmbb-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 66.4971,
-                      "Y": 12.2933
+                      "X": 29.9067,
+                      "Y": 13.1039
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -562,25 +558,25 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.475,
-                      "Y": 0.4917
+                      "X": 0.2136,
+                      "Y": 0.5242
                     },
                     "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.44
+                      "X": 0.6643,
+                      "Y": 0.72
                     },
-                    "LeftMargin": 30.4971,
-                    "RightMargin": 37.5029,
-                    "TopMargin": 7.2067,
-                    "BottomMargin": 6.7933,
-                    "Tag": 398,
-                    "ActionTag": 1883352848,
+                    "LeftMargin": 29.9067,
+                    "RightMargin": 17.0933,
+                    "TopMargin": 2.8961,
+                    "BottomMargin": 4.1039,
+                    "Tag": 627,
+                    "ActionTag": 420840328,
                     "Size": {
-                      "X": 72.0,
-                      "Y": 11.0
+                      "X": 93.0,
+                      "Y": 18.0
                     },
                     "Name": "sale_text",
-                    "ctype": "TextAtlasObjectData"
+                    "ctype": "TextBMFontObjectData"
                   }
                 ],
                 "ActionTag": 1098940521,
@@ -610,7 +606,8 @@
       },
       "UsedResources": [
         "buttonUI/buy2.png",
-        "buttonUI/font16_yellow.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "ItemLayer.json",
         "mainUI/bg_01.png",
         "mainUI/bg_14.png",

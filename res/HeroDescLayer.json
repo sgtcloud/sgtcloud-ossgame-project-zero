@@ -175,55 +175,6 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 22,
-                    "LabelText": "Lv.999/999",
-                    "HorizontalAlignmentType": "HT_Center",
-                    "VerticalAlignmentType": "VT_Center",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 142.804,
-                      "Y": 270.4073
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.2462,
-                      "Y": 0.7116
-                    },
-                    "PreSize": {
-                      "X": 0.3103,
-                      "Y": 0.0789
-                    },
-                    "LeftMargin": 142.804,
-                    "RightMargin": 257.196,
-                    "TopMargin": 79.5927,
-                    "BottomMargin": 270.4073,
-                    "Tag": 45,
-                    "ActionTag": 1883958222,
-                    "Size": {
-                      "X": 180.0,
-                      "Y": 30.0
-                    },
-                    "Name": "heroLevel_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "IsCustomSize": true,
-                    "FontSize": 22,
                     "LabelText": "英雄名字六字",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -238,10 +189,12 @@
                     },
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
                     "Position": {
-                      "X": 198.0636,
-                      "Y": 318.6089
+                      "X": 152.0768,
+                      "Y": 332.0234
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -250,17 +203,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3415,
-                      "Y": 0.8384
+                      "X": 0.2622,
+                      "Y": 0.8737
                     },
                     "PreSize": {
                       "X": 0.3103,
                       "Y": 0.0789
                     },
-                    "LeftMargin": 198.0636,
-                    "RightMargin": 201.9364,
-                    "TopMargin": 31.3911,
-                    "BottomMargin": 318.6089,
+                    "LeftMargin": 152.0768,
+                    "RightMargin": 247.9232,
+                    "TopMargin": 32.9766,
+                    "BottomMargin": 317.0234,
                     "Tag": 46,
                     "ActionTag": -1437994079,
                     "Size": {
@@ -454,6 +407,47 @@
                 },
                 "Name": "heroProperty",
                 "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "LabelText": "Lv.999/999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font22_white_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 182.0768,
+                  "Y": 846.4528
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2845,
+                  "Y": 0.8817
+                },
+                "PreSize": {
+                  "X": 0.225,
+                  "Y": 0.0208
+                },
+                "LeftMargin": 182.0768,
+                "RightMargin": 313.9232,
+                "TopMargin": 103.5472,
+                "BottomMargin": 836.4528,
+                "Tag": 1110,
+                "ActionTag": 995984727,
+                "Size": {
+                  "X": 144.0,
+                  "Y": 20.0
+                },
+                "Name": "heroLevel_text",
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -780,6 +774,8 @@
       },
       "UsedResources": [
         "buttonUI/back.png",
+        "font/font22_white_kmbb-export.fnt",
+        "font/font22_white_kmbb-export.png",
         "HeroDescView.json",
         "mainUI/bg_01.png",
         "mainUI/bg_03.png",

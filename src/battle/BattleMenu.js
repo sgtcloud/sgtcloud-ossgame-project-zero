@@ -414,7 +414,7 @@ var HeroListMenu = BattleMenu.extend({
             var lock = btnlayer.getChildByName('lock');
             var add = btnlayer.getChildByName('add');
             var cut = btnlayer.getChildByName('cut');
-            var per = btnlayer.getChildByName('per');
+            //var per = btnlayer.getChildByName('per');
             var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
             var text_yellow = btnlayer.getChildByName('text_yellow');//统一文字
             var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
@@ -430,10 +430,10 @@ var HeroListMenu = BattleMenu.extend({
             elements.upgrade_btn.buff_text = buff_text;
             elements.upgrade_btn.buffNum_text = buffNum_text;
             elements.upgrade_btn.lock = lock;
-            elements.upgrade_btn.per = per;
+            //elements.upgrade_btn.per = per;
             elements.upgrade_btn.add = add;
             elements.upgrade_btn.cut = cut;
-            elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
+            //elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
         }
@@ -484,7 +484,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.revive_btn.btn = revive_btn.getChildByName('btn');
             elements.revive_btn.diamond_text = diamond_text;
             diamond_text.ignoreContentAdaptWithSize(true);
-            elements.upgrade_btn.per.setVisible(false);
+            //elements.upgrade_btn.per.setVisible(false);
             dps.ignoreContentAdaptWithSize(true);
             dps_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.diamond.setVisible(false);
@@ -683,12 +683,13 @@ var HeroListMenu = BattleMenu.extend({
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
             showAddOrCut(add, cut, showEffect);
+            var _effect=Math.abs(parseInt(showEffect));
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
-                elements.upgrade_btn.per.setVisible(true);
-            } else {
-                elements.upgrade_btn.per.setVisible(false);
+                //elements.upgrade_btn.per.setVisible(true);
+                _effect+"%"
+                // todo
             }
-            buffNum_text.setString(Math.abs(parseInt(showEffect)));
+            buffNum_text.setString(_effect);
         }
 
 
@@ -759,7 +760,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.level_text.setString("Lv." + skill.getUnlockLevel())
             elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
             //elements.lock_btn.level_text.setFontName("微软雅黑");
-            elements.upgrade_btn.per.setVisible(false);
+            //elements.upgrade_btn.per.setVisible(false);
             setFont([name, desc, lv, elements.upgrade_btn.buff_text]);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                     if (canUnlockSkill(hero, skill)) {
@@ -810,9 +811,10 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(showEffect)));
                     elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
                     if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
-                        elements.upgrade_btn.per.setVisible(true);
+                        //elements.upgrade_btn.per.setVisible(true);
                     } else {
-                        elements.upgrade_btn.per.setVisible(false);
+                        //todo
+                        //elements.upgrade_btn.per.setVisible(false);
                     }
                     lockSkillIfNecessary(hero, skill, elements);
                 }
