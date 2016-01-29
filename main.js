@@ -46,11 +46,62 @@
  }
  *
  */
+//自动登录业务
+function autoLoginService() {
+    SgtApi.UserService.quickLogin(function(result, data) {
+        if (result) {
+            if (user !== null) {
 
+            }
+        }
+    });
+}
+function autoWxLoginService(wxInfo){
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: wxInfo.result.wxAppId, // 必填，公众号的唯一标识
+        timestamp: wxInfo.result.timestamp, // 必填，生成签名的时间戳
+        nonceStr: wxInfo.result.noncestr, // 必填，生成签名的随机串
+        signature: wxInfo.result.signature, // 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone','chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+    SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP,function(result,data){
+        if (!result) {
+            sgt.WxCentralService.getUserInfo(function(result, data) {
+                if(result){
+                    var user = new SgtApi.User();
+                    user.userName = data.openid;
+                    user.nickName = data.nickname;
+                    user.registryType = SgtApi.User.WECHAT_MP;//注册类型
+                    SgtApi.UserService.regist(user, function (result, data) {
+                        console.log(data);
+                    });
+                }else{
+                    //重现授权
+                    sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
+                }
+            });
+        }else{
+            //登陆成功
+        }
+    });
+}
 cc.game.onStart = function () {
-    if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+    /*if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
         document.body.removeChild(document.getElementById("cocosLoading"));
+    if(SgtApi){
 
+        SgtApi.init({appId:'h5html',async:true});
+
+        if (is_weixin() && typeof wx != "undefined") {
+            SgtApi.WxCentralService.getSignature(function(result, data) {
+                autoWxLoginService(data);
+            });
+
+        }else{
+            autoLoginService();
+        }
+    }*/
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(true);
     // Adjust viewport meta
@@ -65,4 +116,4 @@ cc.game.onStart = function () {
         showCover();
     }, this);
 };
-cc.game.run();
+//cc.game.run();
