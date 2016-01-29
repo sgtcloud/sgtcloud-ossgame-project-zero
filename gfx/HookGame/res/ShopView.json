@@ -464,8 +464,8 @@
                       "Path": "buttonUI/buy3.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 68,
-                    "Scale9Height": 36,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -615,6 +615,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -645,7 +647,7 @@
                   "X": 604.0,
                   "Y": 596.0
                 },
-                "Name": "ListView_1",
+                "Name": "shopList",
                 "ctype": "ListViewObjectData"
               }
             ],
