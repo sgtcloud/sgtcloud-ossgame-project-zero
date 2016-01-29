@@ -51,6 +51,16 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="286.0512" RightMargin="230.9488" TopMargin="17.0812" BottomMargin="77.9188" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
+                <Size X="83.0000" Y="15.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="286.0512" Y="85.4188" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4768" Y="0.7765" />
+                <PreSize X="0.1383" Y="0.1364" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+              </AbstractNodeData>
               <AbstractNodeData Name="upgrade_btn" ActionTag="-936342614" Tag="714" IconVisible="True" LeftMargin="442.5508" RightMargin="17.4492" TopMargin="13.6489" BottomMargin="16.3511" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
@@ -71,15 +81,15 @@
                 <PreSize X="0.2333" Y="0.7273" />
                 <FileData Type="Normal" Path="Btn_MaxLevel.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="286.0512" RightMargin="230.9488" TopMargin="17.0812" BottomMargin="77.9188" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
-                <Size X="83.0000" Y="15.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="286.0512" Y="85.4188" />
+              <AbstractNodeData Name="lock_btn" Visible="False" ActionTag="-1077941742" Tag="196" IconVisible="True" LeftMargin="442.8716" RightMargin="17.1284" TopMargin="13.6806" BottomMargin="16.3194" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="140.0000" Y="80.0000" />
+                <AnchorPoint />
+                <Position X="442.8716" Y="16.3194" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4768" Y="0.7765" />
-                <PreSize X="0.1383" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.7381" Y="0.1484" />
+                <PreSize X="0.2333" Y="0.7273" />
+                <FileData Type="Normal" Path="Btn_Lock.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
