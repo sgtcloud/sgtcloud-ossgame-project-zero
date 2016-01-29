@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="37" ctype="GameLayerObjectData">
         <Size X="610.0000" Y="600.0000" />
         <Children>
-          <AbstractNodeData Name="moneyTree_tab" Visible="False" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="moneyTree_tab" ActionTag="282530030" Tag="246" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
               <AbstractNodeData Name="bg" CanEdit="False" ActionTag="2005624188" Tag="243" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="562" Scale9Height="552" ctype="ImageViewObjectData">
@@ -29,13 +29,13 @@
                 <PreSize X="0.4098" Y="0.1667" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="-1775524666" Tag="907" IconVisible="False" LeftMargin="290.0184" RightMargin="220.9816" TopMargin="75.6169" BottomMargin="505.3831" LabelText="999999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="diamond_text" ActionTag="-1775524666" Tag="907" IconVisible="False" LeftMargin="305.0183" RightMargin="205.9817" TopMargin="75.6170" BottomMargin="505.3830" LabelText="999999" ctype="TextBMFontObjectData">
                 <Size X="99.0000" Y="19.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="290.0184" Y="514.8831" />
+                <Position X="305.0183" Y="514.8830" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4754" Y="0.8581" />
+                <PrePosition X="0.5000" Y="0.8581" />
                 <PreSize X="0.1623" Y="0.0317" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -49,13 +49,13 @@
                 <PreSize X="0.1623" Y="0.0317" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond" ActionTag="-772689509" Tag="285" IconVisible="False" LeftMargin="253.8202" RightMargin="326.1798" TopMargin="68.3786" BottomMargin="501.6214" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="diamond" ActionTag="-772689509" Tag="285" IconVisible="False" LeftMargin="268.8201" RightMargin="311.1799" TopMargin="68.3787" BottomMargin="501.6213" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="268.8202" Y="516.6214" />
+                <Position X="283.8201" Y="516.6213" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4407" Y="0.8610" />
+                <PrePosition X="0.4653" Y="0.8610" />
                 <PreSize X="0.0492" Y="0.0500" />
                 <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
@@ -69,13 +69,13 @@
                 <PreSize X="0.0492" Y="0.0500" />
                 <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="sale_text" ActionTag="1954781032" Tag="341" IconVisible="False" LeftMargin="189.7903" RightMargin="354.2097" TopMargin="67.7365" BottomMargin="496.2635" Scale9Width="66" Scale9Height="36" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="sale_text" ActionTag="1954781032" Tag="341" IconVisible="False" LeftMargin="196.7903" RightMargin="347.2097" TopMargin="67.7366" BottomMargin="496.2634" Scale9Width="66" Scale9Height="36" ctype="ImageViewObjectData">
                 <Size X="66.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="222.7903" Y="514.2635" />
+                <Position X="229.7903" Y="514.2634" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3652" Y="0.8571" />
+                <PrePosition X="0.3767" Y="0.8571" />
                 <PreSize X="0.1082" Y="0.0600" />
                 <FileData Type="Normal" Path="shopUI/sale.png" Plist="" />
               </AbstractNodeData>
@@ -97,7 +97,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" CanEdit="False" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="68" Scale9Height="36" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="buy_text" CanEdit="False" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                     <Size X="68.0000" Y="36.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.0000" Y="30.0000" />
@@ -131,10 +131,10 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shop_tab" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="shop_tab" Visible="False" ActionTag="-309343141" Tag="94" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="610.0000" Y="600.0000" />
             <Children>
-              <AbstractNodeData Name="bg" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="bg" Visible="False" ActionTag="1366281404" Tag="38" IconVisible="False" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="600.0000" />
                 <AnchorPoint />
                 <Position />
@@ -144,7 +144,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ListView_1" ActionTag="-590507260" Tag="1109" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="2.0000" BottomMargin="2.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="shopList" Visible="False" ActionTag="-590507260" Tag="1109" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="2.0000" BottomMargin="2.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="604.0000" Y="596.0000" />
                 <AnchorPoint />
                 <Position X="3.0000" Y="2.0000" />

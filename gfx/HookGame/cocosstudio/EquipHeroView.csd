@@ -60,13 +60,13 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="351.8271" RightMargin="205.1729" TopMargin="54.7309" BottomMargin="40.2691" LabelText="99999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="350.8271" RightMargin="206.1729" TopMargin="55.7309" BottomMargin="39.2691" LabelText="99999" ctype="TextBMFontObjectData">
                 <Size X="67.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="385.3271" Y="47.7691" />
+                <Position X="384.3271" Y="46.7691" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6175" Y="0.4343" />
+                <PrePosition X="0.6159" Y="0.4252" />
                 <PreSize X="0.1074" Y="0.1364" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -354,13 +354,13 @@
                     <PreSize X="0.6000" Y="0.2778" />
                     <FileData Type="Normal" Path="equipUI/equip_text2.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="28.5328" RightMargin="44.4672" TopMargin="47.0308" BottomMargin="27.9692" LabelText="99999" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="27.5328" RightMargin="45.4672" TopMargin="48.0308" BottomMargin="26.9692" LabelText="99999" ctype="TextBMFontObjectData">
                     <Size X="67.0000" Y="15.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="62.0328" Y="35.4692" />
+                    <Position X="61.0328" Y="34.4692" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4431" Y="0.3941" />
+                    <PrePosition X="0.4359" Y="0.3830" />
                     <PreSize X="0.4786" Y="0.1667" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>

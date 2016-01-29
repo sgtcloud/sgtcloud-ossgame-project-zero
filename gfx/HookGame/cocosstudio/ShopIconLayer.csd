@@ -58,14 +58,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" ActionTag="-1993534234" CallBackType="Click" Tag="392" IconVisible="False" LeftMargin="28.0000" RightMargin="28.0000" TopMargin="10.5000" BottomMargin="10.5000" Scale9Width="34" Scale9Height="19" ctype="ImageViewObjectData">
-                    <Size X="34.0000" Y="19.0000" />
+                  <AbstractNodeData Name="buy_text" ActionTag="-1993534234" CallBackType="Click" Tag="392" IconVisible="False" LeftMargin="22.5000" RightMargin="22.5000" TopMargin="9.5000" BottomMargin="9.5000" Scale9Width="45" Scale9Height="21" ctype="ImageViewObjectData">
+                    <Size X="45.0000" Y="21.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="45.0000" Y="20.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
-                    <PreSize X="0.3778" Y="0.4750" />
+                    <PreSize X="0.5000" Y="0.5250" />
                     <FileData Type="Normal" Path="buttonUI/buy2.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
