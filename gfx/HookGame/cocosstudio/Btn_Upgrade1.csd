@@ -24,16 +24,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_icon" ActionTag="-722991713" Tag="228" IconVisible="False" LeftMargin="27.7107" RightMargin="97.2893" TopMargin="10.5861" BottomMargin="54.4139" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
-                <Size X="15.0000" Y="15.0000" />
-                <AnchorPoint />
-                <Position X="27.7107" Y="54.4139" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1979" Y="0.6802" />
-                <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="buff_text" ActionTag="1603274551" Tag="229" IconVisible="False" LeftMargin="22.0484" RightMargin="17.9516" TopMargin="30.0000" BottomMargin="32.0000" IsCustomSize="True" FontSize="12" LabelText="生命值" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="100.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -55,7 +45,7 @@
                 <PreSize X="0.4786" Y="0.1875" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic_icon" ActionTag="-1792450231" Tag="393" IconVisible="False" LeftMargin="27.7107" RightMargin="97.2893" TopMargin="10.5861" BottomMargin="54.4139" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="icon" ActionTag="-1792450231" Tag="393" IconVisible="False" LeftMargin="27.7107" RightMargin="97.2893" TopMargin="10.5861" BottomMargin="54.4139" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint />
                 <Position X="27.7107" Y="54.4139" />
@@ -65,24 +55,14 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_icon" ActionTag="-1218064498" Tag="394" IconVisible="False" LeftMargin="27.7107" RightMargin="97.2893" TopMargin="10.5861" BottomMargin="54.4139" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                <Size X="15.0000" Y="15.0000" />
-                <AnchorPoint />
-                <Position X="27.7107" Y="54.4139" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1979" Y="0.6802" />
-                <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="33.9442" RightMargin="23.0558" TopMargin="48.5166" BottomMargin="12.4834" LabelText="+99999" ctype="TextBMFontObjectData">
-                <Size X="83.0000" Y="19.0000" />
+              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="23.9442" RightMargin="13.0558" TopMargin="49.5166" BottomMargin="13.4834" LabelText="+99999" ctype="TextBMFontObjectData">
+                <Size X="103.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="75.4442" Y="21.9834" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5389" Y="0.2748" />
-                <PreSize X="0.5929" Y="0.2375" />
+                <PreSize X="0.7357" Y="0.2125" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>

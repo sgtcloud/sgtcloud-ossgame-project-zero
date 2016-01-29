@@ -300,7 +300,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4617" Y="0.1417" />
                     <PreSize X="0.0656" Y="0.2000" />
-                    <FileData Type="Normal" Path="materialUI/iron_key.png" Plist="" />
+                    <FileData Type="Normal" Path="materialUI/silver_key.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="iron_key_icon" ActionTag="1113330948" Tag="535" IconVisible="False" LeftMargin="448.2184" RightMargin="121.7816" TopMargin="151.6621" BottomMargin="8.3379" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -310,7 +310,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.7676" Y="0.1417" />
                     <PreSize X="0.0656" Y="0.2000" />
-                    <FileData Type="Normal" Path="materialUI/silver_key.png" Plist="" />
+                    <FileData Type="Normal" Path="materialUI/iron_key.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="open_text" ActionTag="972162908" Tag="540" IconVisible="False" LeftMargin="222.5000" RightMargin="222.5000" TopMargin="6.7899" BottomMargin="158.2101" Scale9Width="165" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="165.0000" Y="35.0000" />
@@ -352,7 +352,7 @@
                     <PreSize X="0.0574" Y="0.0950" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="1788448717" Tag="527" IconVisible="False" LeftMargin="152.1958" RightMargin="429.8041" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="1788448717" Tag="527" IconVisible="False" LeftMargin="152.1958" RightMargin="429.8042" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="28.0000" Y="15.0000" />
                     <AnchorPoint ScaleY="0.5000" />
                     <Position X="152.1958" Y="73.6461" />
