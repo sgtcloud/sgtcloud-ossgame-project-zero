@@ -40,13 +40,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillLevel_text" ActionTag="309565690" CallBackType="Click" Tag="1033" IconVisible="False" LeftMargin="300.0480" RightMargin="176.9520" TopMargin="16.7791" BottomMargin="78.2209" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="skillLevel_text" ActionTag="309565690" CallBackType="Click" Tag="1033" IconVisible="False" LeftMargin="300.0481" RightMargin="176.9519" TopMargin="19.7791" BottomMargin="75.2209" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
                 <Size X="83.0000" Y="15.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="300.0480" Y="85.7209" />
+                <Position X="300.0481" Y="82.7209" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5358" Y="0.7793" />
+                <PrePosition X="0.5358" Y="0.7520" />
                 <PreSize X="0.1482" Y="0.1364" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
