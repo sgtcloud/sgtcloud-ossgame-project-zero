@@ -11,13 +11,13 @@ var Hero = function (heroData) {
         var equipId = data.equips[i];
         var equip = readEquipCache(equipId);
         var equipLv = (equip && equip['level']) || 1;
-        equips[i] = new Equip(equipId, equipLv);
+        equips.push(new Equip(equipId, equipLv));
     }
     for (var i in data.skills) {
         var skillId = data.skills[i];
         var skill = readCache(skillId);
         var skillLv = (skill && skill['level']) || 0;
-        skills[i] = new Skill(skillId, skillLv, id);
+        skills.push(new Skill(skillId, skillLv, id));
     }
     function readCache(skillId) {
         return heroData.skills[skillId]

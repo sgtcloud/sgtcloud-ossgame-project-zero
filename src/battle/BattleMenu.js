@@ -875,7 +875,7 @@ var EquipListMenu = BattleMenu.extend({
         this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
-
+        var itemView=ccs.csLoader.createNode(res.item_layer_json).getChildByName('root');
         function buildHeroView(hero,isFirst) {
             var root = heroView.clone();
             var icon = root.getChildByName('hero_icon');
@@ -887,12 +887,26 @@ var EquipListMenu = BattleMenu.extend({
             if(isFirst){
                 hero_equip.setVisible(false);
                 player_equip.setVisible(true);
-                for(var equip in hero.getEquips()){
-
-                }
             }else {
                 player_equip.setVisible(false);
                 hero_equip.setVisible(true);
+                var itemList=hero_equip.getChildByName('itemList');
+                for(var i=0 ;i<hero.getEquipCount();i++){
+                    var equip=hero.getEquipData(i);
+                    var item=itemView.clone();
+                    var itemIcon=item.getChildByName('item_icon');
+                    itemIcon.loadTexture('res/icon/equips/'+equip.getIcon());
+                    //var node=new cc.Layer();
+                    //item.setPercentWidth(0.3)
+                    //item.setPercentHeight(0.3)
+                    //var width=item.width;
+                    //itemIcon.setScale(0.3,0.3)
+                    //itemIcon.setSizeWidth(1);
+                    item.setScale(0.3,0.3)
+                    //item .setSizeWidth(item.width*0.3,item.height*0.3)
+                    //node.addChild(item)
+                    itemList.addChild(item);
+                }
             }
             //var tap = root.getChildByName('tatk_text');
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
