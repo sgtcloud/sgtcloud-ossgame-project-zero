@@ -235,6 +235,47 @@
                 "ctype": "TextObjectData"
               },
               {
+                "LabelText": "Lv.99/99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 286.0512,
+                  "Y": 85.4188
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4768,
+                  "Y": 0.7765
+                },
+                "PreSize": {
+                  "X": 0.1383,
+                  "Y": 0.1364
+                },
+                "LeftMargin": 286.0512,
+                "RightMargin": 230.9488,
+                "TopMargin": 17.0812,
+                "BottomMargin": 77.9188,
+                "Tag": 1093,
+                "ActionTag": 1417978744,
+                "Size": {
+                  "X": 83.0,
+                  "Y": 15.0
+                },
+                "Name": "equipLevel_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
                 "FileData": {
                   "Type": "Normal",
                   "Path": "Btn_Upgrade2.json",
@@ -317,45 +358,45 @@
                 "ctype": "ProjectNodeObjectData"
               },
               {
-                "LabelText": "Lv.99/99",
-                "LabelBMFontFile_CNB": {
+                "FileData": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "Btn_Lock.json",
                   "Plist": ""
                 },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 286.0512,
-                  "Y": 85.4188
+                  "X": 442.8716,
+                  "Y": 16.3194
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "CColor": {},
-                "IconVisible": false,
+                "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.4768,
-                  "Y": 0.7765
+                  "X": 0.7381,
+                  "Y": 0.1484
                 },
                 "PreSize": {
-                  "X": 0.1383,
-                  "Y": 0.1364
+                  "X": 0.2333,
+                  "Y": 0.7273
                 },
-                "LeftMargin": 286.0512,
-                "RightMargin": 230.9488,
-                "TopMargin": 17.0812,
-                "BottomMargin": 77.9188,
-                "Tag": 1093,
-                "ActionTag": 1417978744,
+                "LeftMargin": 442.8716,
+                "RightMargin": 17.1284,
+                "TopMargin": 13.6806,
+                "BottomMargin": 16.3194,
+                "Tag": 196,
+                "ActionTag": -1077941742,
                 "Size": {
-                  "X": 83.0,
-                  "Y": 15.0
+                  "X": 140.0,
+                  "Y": 80.0
                 },
-                "Name": "equipLevel_text",
-                "ctype": "TextBMFontObjectData"
+                "Name": "lock_btn",
+                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -810919168,
@@ -375,6 +416,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade2.json",
         "equipUI/equip_bg.png",

@@ -408,35 +408,32 @@ var HeroListMenu = BattleMenu.extend({
         var revive_btnBtnTemp = revive_btnBtn_layoutTemp.getChildByName('btn');
         var revive_btnPosition = revive_btnBtn_layoutTemp.getPosition();
 
-        function buildUpgradeBtn(elements, btnlayer) {
+        function buildUpgradeBtn(elements, btnlayer,target) {
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
-            var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
+            //var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
+            var icon = btnlayer.getChildByName('icon');
             var lock = btnlayer.getChildByName('lock');
-            //var add = btnlayer.getChildByName('add');
-            //var cut = btnlayer.getChildByName('cut');
-            //var per = btnlayer.getChildByName('per');
-            var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
+            //var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
             var text_yellow = btnlayer.getChildByName('text_yellow');//统一文字
             var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
-            diamond.setVisible(false)
-            relic_icon.setVisible(false)
+            //diamond.setVisible(false)
+            //relic_icon.setVisible(false)
             elements.upgrade_btn = {};
+            elements.upgrade_btn.icon=icon;
             elements.upgrade_btn.layer = btnlayer;
             elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
-            elements.upgrade_btn.gold_icon = gold_icon;
+            //elements.upgrade_btn.gold_icon = gold_icon;
             elements.upgrade_btn.text_yellow = text_yellow;
             elements.upgrade_btn.diamond = diamond;
-            elements.upgrade_btn.relic = relic_icon;
+            //elements.upgrade_btn.relic = relic_icon;
             elements.upgrade_btn.buff_text = buff_text;
             elements.upgrade_btn.buffNum_text = buffNum_text;
             elements.upgrade_btn.lock = lock;
-            //elements.upgrade_btn.per = per;
-            //elements.upgrade_btn.add = add;
-            //elements.upgrade_btn.cut = cut;
-            //elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
+            var cost=target.getNextLevelUpgrade()
+            icon.loadTexture('res/icon/resources_small/'+cost.unit+'.png');
         }
 
         function buildMaxLevelBtn(elements, maxLevel) {
@@ -453,7 +450,7 @@ var HeroListMenu = BattleMenu.extend({
             var btnlayer = upgrade_btnTemp.clone();
             btnlayer.setPosition(upgradeBtnPosition);
             root.addChild(btnlayer);
-            buildUpgradeBtn(elements, btnlayer);
+            buildUpgradeBtn(elements, btnlayer,hero);
             var icon = root.getChildByName('hero_icon');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
@@ -488,7 +485,7 @@ var HeroListMenu = BattleMenu.extend({
             //elements.upgrade_btn.per.setVisible(false);
             dps.ignoreContentAdaptWithSize(true);
             dps_text.ignoreContentAdaptWithSize(true);
-            elements.upgrade_btn.diamond.setVisible(false);
+            //elements.upgrade_btn.diamond.setVisible(false);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             icon.setTouchEnabled(true);
             icon.addClickEventListener(function () {
@@ -644,15 +641,6 @@ var HeroListMenu = BattleMenu.extend({
 
         }
 
-        //function showAddOrCut(add, cut, showEffect) {
-        //    if (showEffect > 0) {
-        //        add.isVisible() || add.setVisible(true);
-        //        cut.isVisible() && cut.setVisible(false);
-        //    } else {
-        //        add.isVisible() && add.setVisible(false);
-        //        cut.isVisible() || cut.setVisible(true);
-        //    }
-        //}
 
         function initSkillView(hero, skill, elements) {
             if (skill.isMaxLevel()) {
@@ -683,12 +671,9 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            //showAddOrCut(add, cut, showEffect);
             var _effect = parseInt(showEffect);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
-                //elements.upgrade_btn.per.setVisible(true);
                 _effect + "%"
-                // todo
             }
             buffNum_text.setString(_effect);
         }
@@ -734,7 +719,7 @@ var HeroListMenu = BattleMenu.extend({
             root.addChild(maxLevel);
             root.addChild(upgradeSkill);
             var elements = {};
-            buildUpgradeBtn(elements, upgradeSkill);
+            buildUpgradeBtn(elements, upgradeSkill,skill);
             buildMaxLevelBtn(elements, maxLevel);
             var icon = root.getChildByName('skill_icon');
             var name = root.getChildByName('skillName_text');
@@ -926,11 +911,11 @@ var EquipListMenu = BattleMenu.extend({
             lock_btn.setPosition(lockBtnPosition);
             var maxLevel = maxLevelBtnTemplate.clone();
             maxLevel.setPosition(maxLevelBtnPosition);
-            var upgradeSkill = upgradeBtnTemp.clone();
-            upgradeSkill.setPosition(upgradeSkillPosition);
+            var upgradeBtn = upgradeBtnTemp.clone();
+            upgradeBtn.setPosition(upgradeSkillPosition);
             root.addChild(lock_btn);
             root.addChild(maxLevel);
-            root.addChild(upgradeSkill);
+            root.addChild(upgradeBtn);
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
             var desc = root.getChildByName('equipBuffDecs_text');
@@ -939,6 +924,9 @@ var EquipListMenu = BattleMenu.extend({
             name.setString(equip.getName());
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
             lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
+            var upgradeBtnIcon=upgradeBtn.getChildByName('icon');
+           var upgradeCost= equip.getNextLevelUpgrade();
+            upgradeBtnIcon.loadTexture('res/icon/resources_small/'+upgradeCost.unit+'.png');
             return root;
         }
 
