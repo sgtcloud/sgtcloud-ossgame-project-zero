@@ -116,4 +116,4 @@ cc.game.onStart = function () {
         showCover();
     }, this);
 };
-//cc.game.run();
+cc.game.run();
