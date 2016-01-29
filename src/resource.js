@@ -99,7 +99,7 @@ var res = {
     buff_list_json: "res/BuffList.json",
     statistics_layer: "res/StatisticsLayer.json",
     font22_yellow_kmbb_export_fnt: "res/font22_yellow_kmbb-export.fnt",
-    item_layer_json:"res/ItemLayer.json"
+    small_item_layer_json:"res/SmallItemLayer.json"
 };
 
 
