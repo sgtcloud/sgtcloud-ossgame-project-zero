@@ -7,7 +7,7 @@ var BattleMenu = cc.Node.extend({
         this._super();
         var layer = ccs.csLoader.createNode(res);
         this.addChild(layer);
-        this.height=layer.height;
+        this.height = layer.height;
         this.root = layer.getChildByName('root');
 
         //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
@@ -24,7 +24,7 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
+var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
     var root = template.clone();
     this.root = root;
     var x = root.width
@@ -65,7 +65,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
         var remaining = time;
         target.schedule(function () {
                 if (!heroDead) {
-                    this.setString(remaining );
+                    this.setString(remaining);
                 }
                 if (remaining <= 0) {
                     if (typeof cb === "function") {
@@ -106,16 +106,16 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                     //        doCoolDown(that.skill.getLevelData());
                     //    }
                     //}
-                    console.log('释放buff:'+that.skill.getId())
+                    console.log('释放buff:' + that.skill.getId())
                     tryFire(that.skill.getLevelData());
                 }
             });
-            function doCoolDown(levelData){
+            function doCoolDown(levelData) {
                 if (levelData['cooldown'] > 0) {
                     isCoolDowning = true;
                     that.cooldownText.setVisible(true)
                     that.time.setVisible(true)
-                    that.time.setString(levelData['cooldown'] )
+                    that.time.setString(levelData['cooldown'])
                     //that.skill_icon.setTouchEnabled(false);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
                     //cc.eventManager.resumeTarget(that.skill_icon);
@@ -133,21 +133,23 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                     });
                 }
             }
-            function tryFire(levelData){
-                if(!(isCoolDowning||heroDead)){
+
+            function tryFire(levelData) {
+                if (!(isCoolDowning || heroDead)) {
                     doCoolDown(levelData);
                     console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
-                    if(levelData['duration']>0){
-                        toggleBufflayer(levelData['duration'],buildSkillBuffDesc(skill),that.skill.getIcon());
+                    if (levelData['duration'] > 0) {
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon());
                     }
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                }else if(isCoolDowning&&!heroDead){
-                    console.log('技能【'+that.skill.getId()+"】冷却中，请稍候再点！");
+                } else if (isCoolDowning && !heroDead) {
+                    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
                     toggleBuffTip();
-                }else {
+                } else {
                     console.log('英雄已死亡，请稍候再点！');
                 }
             }
+
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 //doCoolDown(levelData);
@@ -189,7 +191,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox,tabPanel) {
                 var data = event.getUserData();
                 var hero = PlayerData.getHeroById(data['id']);
                 if (hero.hasSkill(that.skill.getId())) {
-                    that.time.setString(Math.round(data['recover']) );
+                    that.time.setString(Math.round(data['recover']));
                 }
             });
         }
@@ -232,7 +234,7 @@ function getHeroActivtySkillls(hero) {
     return result;
 }
 var SkillListMenu = BattleMenu.extend({
-    ctor: function (tabPanel,battlePanel) {
+    ctor: function (tabPanel, battlePanel) {
         var heroes = PlayerData.getHeroes();
         var size = heroes.length;
         var skillBtnNum = 7
@@ -245,19 +247,19 @@ var SkillListMenu = BattleMenu.extend({
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         var skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
-        var atk_text=this.root.getChildByName('atk_text');
-        var tatk_text=this.root.getChildByName('tatk_text');
+        var atk_text = this.root.getChildByName('atk_text');
+        var tatk_text = this.root.getChildByName('tatk_text');
         atk_text.ignoreContentAdaptWithSize(true);
         tatk_text.ignoreContentAdaptWithSize(true);
         //atk_text.setString()
-        customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK,function(){
-            var totalHit=PlayerData.getTotalHit();
-            var totalAttack=PlayerData.getTotalAttack();
+        customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK, function () {
+            var totalHit = PlayerData.getTotalHit();
+            var totalAttack = PlayerData.getTotalAttack();
             tatk_text.setString(Math.floor(totalHit));
             atk_text.setString(Math.floor(totalAttack));
         });
         for (var i = 0; i < skills.length; i++) {
-            var skillBtn = new SkillIcon(this, skillIconTemplate, i, skillsBox,tabPanel);
+            var skillBtn = new SkillIcon(this, skillIconTemplate, i, skillsBox, tabPanel);
             //skillBtn.setVisible(true);
             skillBtn.bindSkillAndClickEvent(skills[i]);
             skillBtns.push(skillBtn);
@@ -310,7 +312,6 @@ var SkillListMenu = BattleMenu.extend({
 function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
-        console.log(effects[i]['type'])
         var map = SkillEffectMappings[effects[i]['type']];
         var alas = map['name'];
         var value = effects[i]['value'];
@@ -366,7 +367,6 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
-                    console.log('init next life' + nextLevelLife)
                     elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(nextLevelLife - levelLife)));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
@@ -383,14 +383,14 @@ var HeroListMenu = BattleMenu.extend({
         function setFont(target) {
             if (target instanceof Array) {
                 for (var i in target) {
-                    if(target[i].setFontName){
+                    if (target[i].setFontName) {
                         target[i].setFontName("微软雅黑");
                     }
                     target[i].setColor(cc.color(0, 0, 0))
                 }
             }
             else {
-                if(target.setFontName){
+                if (target.setFontName) {
                     target.setFontName("微软雅黑");
                 }
                 target.setColor(cc.color(0, 0, 0))
@@ -407,35 +407,32 @@ var HeroListMenu = BattleMenu.extend({
         var revive_btnBtnTemp = revive_btnBtn_layoutTemp.getChildByName('btn');
         var revive_btnPosition = revive_btnBtn_layoutTemp.getPosition();
 
-        function buildUpgradeBtn(elements, btnlayer) {
+        function buildUpgradeBtn(elements, btnlayer,target) {
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
-            var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
+            //var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
+            var icon = btnlayer.getChildByName('icon');
             var lock = btnlayer.getChildByName('lock');
-            //var add = btnlayer.getChildByName('add');
-            //var cut = btnlayer.getChildByName('cut');
-            //var per = btnlayer.getChildByName('per');
-            var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
+            //var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
             var text_yellow = btnlayer.getChildByName('text_yellow');//统一文字
             var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
-            diamond.setVisible(false)
-            relic_icon.setVisible(false)
+            //diamond.setVisible(false)
+            //relic_icon.setVisible(false)
             elements.upgrade_btn = {};
+            elements.upgrade_btn.icon=icon;
             elements.upgrade_btn.layer = btnlayer;
             elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
-            elements.upgrade_btn.gold_icon = gold_icon;
+            //elements.upgrade_btn.gold_icon = gold_icon;
             elements.upgrade_btn.text_yellow = text_yellow;
             elements.upgrade_btn.diamond = diamond;
-            elements.upgrade_btn.relic = relic_icon;
+            //elements.upgrade_btn.relic = relic_icon;
             elements.upgrade_btn.buff_text = buff_text;
             elements.upgrade_btn.buffNum_text = buffNum_text;
             elements.upgrade_btn.lock = lock;
-            //elements.upgrade_btn.per = per;
-            //elements.upgrade_btn.add = add;
-            //elements.upgrade_btn.cut = cut;
-            //elements.upgrade_btn.per.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
+            var cost=target.getNextLevelUpgrade()
+            icon.loadTexture('res/icon/resources_small/'+cost.unit+'.png');
         }
 
         function buildMaxLevelBtn(elements, maxLevel) {
@@ -452,7 +449,7 @@ var HeroListMenu = BattleMenu.extend({
             var btnlayer = upgrade_btnTemp.clone();
             btnlayer.setPosition(upgradeBtnPosition);
             root.addChild(btnlayer);
-            buildUpgradeBtn(elements, btnlayer);
+            buildUpgradeBtn(elements, btnlayer,hero);
             var icon = root.getChildByName('hero_icon');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
@@ -474,7 +471,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.icon = icon;
             elements.lv = lv;
             elements.dps_text = dps_text;
-            elements.dps_text.setColor(cc.color(2,177,234));
+            elements.dps_text.setColor(cc.color(2, 177, 234));
             elements.dps = dps;
             elements.heroName_text = heroName_text;
             elements.die_text = die_text;
@@ -487,7 +484,7 @@ var HeroListMenu = BattleMenu.extend({
             //elements.upgrade_btn.per.setVisible(false);
             dps.ignoreContentAdaptWithSize(true);
             dps_text.ignoreContentAdaptWithSize(true);
-            elements.upgrade_btn.diamond.setVisible(false);
+            //elements.upgrade_btn.diamond.setVisible(false);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             icon.setTouchEnabled(true);
             icon.addClickEventListener(function () {
@@ -518,7 +515,7 @@ var HeroListMenu = BattleMenu.extend({
             //die_text.setVisible(false);
             //die_time_text.setVisible(false);
             //elements.revive_btn.layer.setVisible(false);
-            if ((hero.getLv()>0&&hero.getCurrentLife() > 0)||hero.getLv()==0) {
+            if ((hero.getLv() > 0 && hero.getCurrentLife() > 0) || hero.getLv() == 0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
                 elements.revive_btn.layer.setVisible(false);
@@ -557,7 +554,7 @@ var HeroListMenu = BattleMenu.extend({
                     var resurge = hero.getResurge();
                     var costValue = parseInt(resurge['cost']['value']);
                     elements.revive_btn.diamond_text.setString(costValue);
-                    elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']) );
+                    elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']));
                     if (PlayerData.getAmountByUnit("gem") < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
@@ -643,15 +640,6 @@ var HeroListMenu = BattleMenu.extend({
 
         }
 
-        //function showAddOrCut(add, cut, showEffect) {
-        //    if (showEffect > 0) {
-        //        add.isVisible() || add.setVisible(true);
-        //        cut.isVisible() && cut.setVisible(false);
-        //    } else {
-        //        add.isVisible() && add.setVisible(false);
-        //        cut.isVisible() || cut.setVisible(true);
-        //    }
-        //}
 
         function initSkillView(hero, skill, elements) {
             if (skill.isMaxLevel()) {
@@ -682,17 +670,12 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            //showAddOrCut(add, cut, showEffect);
-            var _effect=parseInt(showEffect);
+            var _effect = parseInt(showEffect);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
-                //elements.upgrade_btn.per.setVisible(true);
-                _effect+"%"
-                // todo
+                _effect + "%"
             }
             buffNum_text.setString(_effect);
         }
-
-
 
 
         function canUnlockSkill(hero, skill) {
@@ -735,7 +718,7 @@ var HeroListMenu = BattleMenu.extend({
             root.addChild(maxLevel);
             root.addChild(upgradeSkill);
             var elements = {};
-            buildUpgradeBtn(elements, upgradeSkill);
+            buildUpgradeBtn(elements, upgradeSkill,skill);
             buildMaxLevelBtn(elements, maxLevel);
             var icon = root.getChildByName('skill_icon');
             var name = root.getChildByName('skillName_text');
@@ -761,7 +744,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
             //elements.lock_btn.level_text.setFontName("微软雅黑");
             //elements.upgrade_btn.per.setVisible(false);
-            setFont([name, desc,elements.upgrade_btn.buff_text]);
+            setFont([name, desc, elements.upgrade_btn.buff_text]);
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                     if (canUnlockSkill(hero, skill)) {
                         if (!skill.isMaxLevel()) {
@@ -830,45 +813,34 @@ var HeroListMenu = BattleMenu.extend({
             var that = this;
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
-                //if (heroData.isLocked()){
-                //    customEventHelper.bindListener(EVENT.UNLOCK_HERO,function(event){
-                //        var hero=event.getUserData();
-                //        if(hero.getId()===heroData.getId()&&hero.isLocked()){
-                //            buildHeroMenu(hero);
-                //        }
-                //    });
-                //    continue;
-                //}
-                buildHeroMenu(heroData);
+                if (heroData.isLocked()) {
+                    (function (data) {
+                        var _hero = data;
+                        customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
+                            var hero = event.getUserData();
+                            if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
+                                buildHeroMenu(_hero)
+                            }
+                        });
+                    })(heroData)
+                } else {
+                    buildHeroMenu(heroData);
+                }
             }
 
             function buildHeroMenu(heroData) {
                 var _heroView = buildHeroView(heroData);
-                that.heroList.addChild(_heroView);
+                that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
-                var locked = heroData.isLocked();
-                var skillsList=[]
+                //var locked = heroData.isLocked();
+                var skillsList = []
                 for (var j = 0; j < heroData.getSkillCount(); j++) {
                     var skillData = heroData.getSkillData(j);
                     var _skillView = buildSkillView(skillData, heroData);
-                    that.heroList.addChild(_skillView);
-                    locked&&_skillView.setVisible(false);
-                    //_heroView.skills = _heroView.skills || [];
-                    //_heroView.skills[j] = _skillView;
+                    that.heroList.pushBackCustomItem(_skillView);
+                    //locked && _skillView.setVisible(false);
                     skillsList.push(_skillView);
-                }
-                if (locked) {
-                    _heroView.setVisible(false);
-                    customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
-                        var hero = event.getUserData();
-                        if (hero.getId() === heroData.getUnLock()['value'] && !heroData.isLocked()) {
-                            _heroView.setVisible(true)
-                            for(var i in skillsList){
-                                skillsList[i].setVisible(true);
-                            }
-                        }
-                    });
                 }
             }
         }
@@ -886,26 +858,66 @@ var EquipListMenu = BattleMenu.extend({
         this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
+        var itemView=ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
 
-        function buildHeroView(hero) {
+
+
+        var lockBtnLayoutTemplate = equipView.getChildByName('lock_btn');
+        var lockBtnPosition = lockBtnLayoutTemplate.getPosition();
+        var lockBtnTemplate = lockBtnLayoutTemplate.getChildByName('btn');
+        var skillMaxLevelBtnLayoutTemplate = equipView.getChildByName('MaxLevel_btn');
+        var maxLevelBtnTemplate = skillMaxLevelBtnLayoutTemplate.getChildByName('btn');
+        var maxLevelBtnPosition = skillMaxLevelBtnLayoutTemplate.getPosition();
+        var upgradeEquipBtn = equipView.getChildByName('upgrade_btn');
+        var upgradeBtnTemp = upgradeEquipBtn.getChildByName('btn');
+        var upgradeSkillPosition = upgradeEquipBtn.getPosition();
+
+
+        function buildHeroView(hero,isFirst) {
             var root = heroView.clone();
             var icon = root.getChildByName('hero_icon');
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
-            //var tap = root.getChildByName('tatk_text');
+            var player_equip=root.getChildByName('player_equip');
+            var hero_equip=root.getChildByName('hero_equip');
+            if(isFirst){
+                hero_equip.setVisible(false);
+                player_equip.setVisible(true);
+                var equipNum_text=player_equip.getChildByName('equipNum_text');
+                equipNum_text.setString(hero.getEquipCount());
+                equipNum_text.ignoreContentAdaptWithSize(true)
+            }else {
+                player_equip.setVisible(false);
+                hero_equip.setVisible(true);
+                var itemList=hero_equip.getChildByName('itemList');
+                for(var i=0 ;i<hero.getEquipCount();i++){
+                    var equip=hero.getEquipData(i);
+                    var item=itemView.clone();
+                    var itemIcon=item.getChildByName('item_icon');
+                    itemIcon.loadTexture('res/icon/equips/'+equip.getIcon());
+                    itemList.addChild(item);
+                }
+            }
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
-            lv.setString("Lv."+hero.getLv());
+            lv.setString("Lv." + hero.getLv()+'/'+hero.getMaxLevel());
             dps_text.ignoreContentAdaptWithSize(true);
-            //tap.setString(hero.getHit());
-
             return root;
         }
 
         function buildEquipView(equip, hero) {
             var root = equipView.clone();
+            var lock_btn = lockBtnTemplate.clone();
+            lock_btn.setPosition(lockBtnPosition);
+            var maxLevel = maxLevelBtnTemplate.clone();
+            maxLevel.setPosition(maxLevelBtnPosition);
+            var upgradeBtn = upgradeBtnTemp.clone();
+            upgradeBtn.setPosition(upgradeSkillPosition);
+            root.addChild(lock_btn);
+            root.addChild(maxLevel);
+            root.addChild(upgradeBtn);
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
             var desc = root.getChildByName('equipBuffDecs_text');
@@ -913,27 +925,52 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/equips/" + equip.getIcon());
             name.setString(equip.getName());
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
-            lv.setString(equip.getLv());
-
+            lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
+            lv.setColor(cc.color(255,226,2));
+            var upgradeBtnIcon=upgradeBtn.getChildByName('icon');
+            var text=upgradeBtn.getChildByName('text_yellow');
+            text.ignoreContentAdaptWithSize(true);
+           var upgradeCost= equip.getNextLevelUpgrade();
+            upgradeBtnIcon.loadTexture('res/icon/resources_small/'+upgradeCost.unit+'.png');
+            text.setString(upgradeCost.value);
+            setFont([name,desc])
             return root;
         }
 
         this.views = {};
         {
-
+            var that = this;
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
-                var _heroView = buildHeroView(heroData);
-                this.heroList.addChild(_heroView);
+                var isFirst=i===0;
+                if (heroData.getLv() > 0) {
+                    buildEquipMenuIfUnlocked(heroData,isFirst);
+                } else {
+                    (function (hero) {
+                        var _hero = hero;
+                        var first=isFirst;
+                        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+                            var heroId = event.getUserData()['heroId'];
+                            console.log("hero " + heroId + ' and the heroData is ' + _hero.getId())
+                            if (heroId === _hero.getId() && _hero.getLv() === 1) {
+                                console.log('hero ' + heroId + ' is unlocked ')
+                                buildEquipMenuIfUnlocked(_hero,first);
+                            }
+                        });
+                    })(heroData)
+                }
+            }
 
-                this.views.heros = this.views.heros || [];
-                this.views.heros[i] = _heroView;
-
+            function buildEquipMenuIfUnlocked(heroData,isFirst) {
+                var _heroView = buildHeroView(heroData,isFirst);
+                console.log('build equip')
+                that.heroList.pushBackCustomItem(_heroView);
+                that.views.heros = that.views.heros || [];
+                that.views.heros[i] = _heroView;
                 for (var j = 0; j < heroData.getEquipCount(); j++) {
                     var equipData = heroData.getEquipData(j);
                     var _equipView = buildEquipView(equipData, heroData);
-                    this.heroList.addChild(_equipView);
-
+                    that.heroList.pushBackCustomItem(_equipView);
                     _heroView.equips = _heroView.equips || [];
                     _heroView.equips[j] = _equipView;
                 }
@@ -1004,7 +1041,7 @@ var ShopLayerMenu = BattleMenu.extend({
             goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()),true);
+                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()), true);
             });
 
             if (window.DeviceMotionEvent) {
@@ -1032,7 +1069,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 self.last_z = self.first_z;
             }
         }
-        this.buyGold = function (gem, gold,flag) {
+        this.buyGold = function (gem, gold, flag) {
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
                 PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
@@ -1040,7 +1077,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                if(flag){
+                if (flag) {
                     return;
                 }
             } else {
@@ -1122,7 +1159,7 @@ var ShopLayerMenu = BattleMenu.extend({
         this.buyGoods = function (goods) {
             var price = goods.price;
             if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
-                PlayerData.updateResource([PlayerData.createResourceData(price.unit, -price.value),PlayerData.createResourceData(goods.propId, goods.num)]);
+                PlayerData.updateResource([PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)]);
                 if (price.unit === "gold") {
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 } else if (price.unit === "gem") {
@@ -1133,12 +1170,12 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
             } else {
-                if(price.unit === 'gem'){
+                if (price.unit === 'gem') {
                     new Popup1("友情提示", "当前钻石不足", function (popup) {
                         popup.hiddenPopup();
                         //进入充值页面。
                     });
-                }else if(price.unit === 'gold'){
+                } else if (price.unit === 'gold') {
                     new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
                         popup.hiddenPopup();
                         self.showMenuLayer("moneyTree_tab");
@@ -1200,7 +1237,7 @@ var RankLayerMenu = BattleMenu.extend({
             var players = PlayerData.getCurrentRanksByType(type);
             myNumText.ignoreContentAdaptWithSize(true);
             myNumText.setString(PlayerData.getMyRankByType(type));
-            myNumText.setColor(cc.color(63,193,61));
+            myNumText.setColor(cc.color(63, 193, 61));
             n = 0;
             for (var i in players) {
                 n++;
@@ -1225,7 +1262,7 @@ var RankLayerMenu = BattleMenu.extend({
             //setColor([levelText, playerPrestige, prestigeText, playerLv]);
 
             setIgnoreContentAdaptWithSize([levelText, prestigeText, num]);
-            levelText.setString("Lv."+hero.getLv());
+            levelText.setString("Lv." + hero.getLv());
             num.setString(n);
             playerName.setString(data.name);
             if (id == player.id) {
