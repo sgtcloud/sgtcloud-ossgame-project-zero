@@ -121,48 +121,6 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "heroUI/gold.png",
-                  "Plist": ""
-                },
-                "Scale9OriginX": 5,
-                "Scale9OriginY": 5,
-                "Scale9Width": 30,
-                "Scale9Height": 30,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 27.7107,
-                  "Y": 54.4139
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1979,
-                  "Y": 0.6802
-                },
-                "PreSize": {
-                  "X": 0.1071,
-                  "Y": 0.1875
-                },
-                "LeftMargin": 27.7107,
-                "RightMargin": 97.2893,
-                "TopMargin": 10.5861,
-                "BottomMargin": 54.4139,
-                "Tag": 228,
-                "ActionTag": -722991713,
-                "Size": {
-                  "X": 15.0,
-                  "Y": 15.0
-                },
-                "Name": "gold_icon",
-                "ctype": "ImageViewObjectData"
-              },
-              {
                 "IsCustomSize": true,
                 "FontSize": 12,
                 "LabelText": "生命值",
@@ -293,47 +251,7 @@
                   "X": 15.0,
                   "Y": 15.0
                 },
-                "Name": "relic_icon",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "heroUI/diamond.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 40,
-                "Scale9Height": 40,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 27.7107,
-                  "Y": 54.4139
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1979,
-                  "Y": 0.6802
-                },
-                "PreSize": {
-                  "X": 0.1071,
-                  "Y": 0.1875
-                },
-                "LeftMargin": 27.7107,
-                "RightMargin": 97.2893,
-                "TopMargin": 10.5861,
-                "BottomMargin": 54.4139,
-                "Tag": 394,
-                "ActionTag": -1218064498,
-                "Size": {
-                  "X": 15.0,
-                  "Y": 15.0
-                },
-                "Name": "diamond_icon",
+                "Name": "icon",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -362,18 +280,18 @@
                   "Y": 0.2748
                 },
                 "PreSize": {
-                  "X": 0.5929,
-                  "Y": 0.2375
+                  "X": 0.7357,
+                  "Y": 0.2125
                 },
-                "LeftMargin": 33.9442,
-                "RightMargin": 23.0558,
-                "TopMargin": 48.5166,
-                "BottomMargin": 12.4834,
+                "LeftMargin": 23.9442,
+                "RightMargin": 13.0558,
+                "TopMargin": 49.5166,
+                "BottomMargin": 13.4834,
                 "Tag": 348,
                 "ActionTag": 716730375,
                 "Size": {
-                  "X": 83.0,
-                  "Y": 19.0
+                  "X": 103.0,
+                  "Y": 17.0
                 },
                 "Name": "buffNum_text",
                 "ctype": "TextBMFontObjectData"
@@ -402,9 +320,7 @@
         "font/font18_white-export.fnt",
         "font/font18_white-export.png",
         "heroUI/btn1.png",
-        "heroUI/btn2.png",
-        "heroUI/diamond.png",
-        "heroUI/gold.png"
+        "heroUI/btn2.png"
       ],
       "ctype": "GameFileData"
     }
