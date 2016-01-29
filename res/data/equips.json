@@ -6,6 +6,7 @@
     "type": 15,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 124,
           "type": "globe_attack_value"
@@ -17,6 +18,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 62,
           "type": "globe_attack_value"
@@ -28,6 +30,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 32,
           "type": "globe_attack_value"
@@ -39,6 +42,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 18,
           "type": "globe_attack_value"
@@ -50,6 +54,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "globe_attack_value"
@@ -69,6 +74,7 @@
     "type": 15,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 213,
           "type": "globe_attack_value"
@@ -80,6 +86,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 102,
           "type": "globe_attack_value"
@@ -91,6 +98,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 51,
           "type": "globe_attack_value"
@@ -102,6 +110,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 27,
           "type": "globe_attack_value"
@@ -113,6 +122,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 15,
           "type": "globe_attack_value"
@@ -132,6 +142,7 @@
     "type": 15,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 271,
           "type": "globe_attack_value"
@@ -143,6 +154,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 128,
           "type": "globe_attack_value"
@@ -154,6 +166,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 63,
           "type": "globe_attack_value"
@@ -165,6 +178,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 33,
           "type": "globe_attack_value"
@@ -176,6 +190,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 18,
           "type": "globe_attack_value"
@@ -195,6 +210,7 @@
     "type": 15,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 8,
           "type": "globe_attack_rate"
@@ -206,6 +222,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 5,
           "type": "globe_attack_rate"
@@ -217,6 +234,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 3,
           "type": "globe_attack_rate"
@@ -228,6 +246,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 2,
           "type": "globe_attack_rate"
@@ -239,6 +258,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 1,
           "type": "globe_attack_rate"
@@ -258,6 +278,7 @@
     "type": 10,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 10,
           "type": "globe_attack_rate"
@@ -269,6 +290,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 8,
           "type": "globe_attack_rate"
@@ -280,6 +302,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 5,
           "type": "globe_attack_rate"
@@ -291,6 +314,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 3,
           "type": "globe_attack_rate"
@@ -302,6 +326,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 2,
           "type": "globe_attack_rate"
@@ -321,6 +346,7 @@
     "type": 10,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 13,
           "type": "globe_attack_rate"
@@ -332,6 +358,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 10,
           "type": "globe_attack_rate"
@@ -343,6 +370,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 7,
           "type": "globe_attack_rate"
@@ -354,6 +382,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 5,
           "type": "globe_attack_rate"
@@ -365,6 +394,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 3,
           "type": "globe_attack_rate"
@@ -384,6 +414,7 @@
     "type": 10,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 50,
           "type": "globe_gold_rate "
@@ -395,6 +426,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 40,
           "type": "globe_gold_rate "
@@ -406,6 +438,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 30,
           "type": "globe_gold_rate "
@@ -417,6 +450,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 20,
           "type": "globe_gold_rate "
@@ -428,6 +462,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 10,
           "type": "globe_gold_rate "
@@ -447,6 +482,7 @@
     "type": 10,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 636,
           "type": "globe_life_value"
@@ -458,6 +494,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 411,
           "type": "globe_life_value"
@@ -469,6 +506,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 261,
           "type": "globe_life_value"
@@ -480,6 +518,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 163,
           "type": "globe_life_value"
@@ -491,6 +530,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 100,
           "type": "globe_life_value"
@@ -510,6 +550,7 @@
     "type": 5,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 35,
           "type": "globe_life_rate"
@@ -521,6 +562,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 23,
           "type": "globe_life_rate"
@@ -532,6 +574,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 14,
           "type": "globe_life_rate"
@@ -543,6 +586,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 9,
           "type": "globe_life_rate"
@@ -554,6 +598,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 5,
           "type": "globe_life_rate"
@@ -573,6 +618,7 @@
     "type": 5,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 18,
           "type": "globe_ctr_chance_rate"
@@ -588,6 +634,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 11,
           "type": "globe_ctr_chance_rate"
@@ -603,6 +650,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 7,
           "type": "globe_ctr_chance_rate"
@@ -618,6 +666,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 4,
           "type": "globe_ctr_chance_rate"
@@ -633,6 +682,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 2,
           "type": "globe_ctr_chance_rate"
@@ -656,6 +706,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 158,
           "type": "attack_value"
@@ -667,6 +718,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 77,
           "type": "attack_value"
@@ -678,6 +730,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 40,
           "type": "attack_value"
@@ -689,6 +742,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 21,
           "type": "attack_value"
@@ -700,6 +754,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 12,
           "type": "attack_value"
@@ -719,6 +774,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 351,
           "type": "life_value "
@@ -730,6 +786,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 222,
           "type": "life_value "
@@ -741,6 +798,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 138,
           "type": "life_value "
@@ -752,6 +810,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 84,
           "type": "life_value "
@@ -763,6 +822,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 50,
           "type": "life_value "
@@ -782,6 +842,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 18,
           "type": "life_rate"
@@ -793,6 +854,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 11,
           "type": "life_rate"
@@ -804,6 +866,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 7,
           "type": "life_rate"
@@ -815,6 +878,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 4,
           "type": "life_rate"
@@ -826,6 +890,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 2,
           "type": "life_rate"
@@ -845,6 +910,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 10,
           "type": "attack_rate "
@@ -856,6 +922,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 8,
           "type": "attack_rate "
@@ -867,6 +934,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 5,
           "type": "attack_rate "
@@ -878,6 +946,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 3,
           "type": "attack_rate "
@@ -889,6 +958,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 2,
           "type": "attack_rate "
@@ -908,6 +978,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 194,
           "type": "attack_value"
@@ -919,6 +990,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 94,
           "type": "attack_value"
@@ -930,6 +1002,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 47,
           "type": "attack_value"
@@ -941,6 +1014,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 25,
           "type": "attack_value"
@@ -952,6 +1026,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 14,
           "type": "attack_value"
@@ -971,6 +1046,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 410,
           "type": "life_value "
@@ -982,6 +1058,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 261,
           "type": "life_value "
@@ -993,6 +1070,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 163,
           "type": "life_value "
@@ -1004,6 +1082,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 100,
           "type": "life_value "
@@ -1015,6 +1094,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 60,
           "type": "life_value "
@@ -1034,6 +1114,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 24,
           "type": "life_rate"
@@ -1045,6 +1126,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 15,
           "type": "life_rate"
@@ -1056,6 +1138,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 9,
           "type": "life_rate"
@@ -1067,6 +1150,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 5,
           "type": "life_rate"
@@ -1078,6 +1162,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 3,
           "type": "life_rate"
@@ -1097,6 +1182,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 13,
           "type": "attack_rate "
@@ -1108,6 +1194,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 10,
           "type": "attack_rate "
@@ -1119,6 +1206,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 7,
           "type": "attack_rate "
@@ -1130,6 +1218,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 5,
           "type": "attack_rate "
@@ -1141,6 +1230,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 3,
           "type": "attack_rate "
@@ -1160,6 +1250,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 232,
           "type": "attack_value"
@@ -1171,6 +1262,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 110,
           "type": "attack_value"
@@ -1182,6 +1274,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 55,
           "type": "attack_value"
@@ -1193,6 +1286,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 29,
           "type": "attack_value"
@@ -1204,6 +1298,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 16,
           "type": "attack_value"
@@ -1223,6 +1318,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 468,
           "type": "life_value "
@@ -1234,6 +1330,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 299,
           "type": "life_value "
@@ -1245,6 +1342,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 188,
           "type": "life_value "
@@ -1256,6 +1354,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 116,
           "type": "life_value "
@@ -1267,6 +1366,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 70,
           "type": "life_value "
@@ -1286,6 +1386,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 30,
           "type": "life_rate"
@@ -1297,6 +1398,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 19,
           "type": "life_rate"
@@ -1308,6 +1410,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 12,
           "type": "life_rate"
@@ -1319,6 +1422,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 7,
           "type": "life_rate"
@@ -1330,6 +1434,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 4,
           "type": "life_rate"
@@ -1349,6 +1454,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 15,
           "type": "attack_rate "
@@ -1360,6 +1466,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 11,
           "type": "attack_rate "
@@ -1371,6 +1478,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 8,
           "type": "attack_rate "
@@ -1382,6 +1490,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 6,
           "type": "attack_rate "
@@ -1393,6 +1502,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 4,
           "type": "attack_rate "
@@ -1412,6 +1522,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 271,
           "type": "attack_value"
@@ -1423,6 +1534,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 128,
           "type": "attack_value"
@@ -1434,6 +1546,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 63,
           "type": "attack_value"
@@ -1445,6 +1558,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 33,
           "type": "attack_value"
@@ -1456,6 +1570,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 18,
           "type": "attack_value"
@@ -1475,6 +1590,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 525,
           "type": "life_value "
@@ -1486,6 +1602,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 337,
           "type": "life_value "
@@ -1497,6 +1614,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 212,
           "type": "life_value "
@@ -1508,6 +1626,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 132,
           "type": "life_value "
@@ -1519,6 +1638,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 80,
           "type": "life_value "
@@ -1538,6 +1658,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 35,
           "type": "life_rate"
@@ -1549,6 +1670,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 23,
           "type": "life_rate"
@@ -1560,6 +1682,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 14,
           "type": "life_rate"
@@ -1571,6 +1694,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 9,
           "type": "life_rate"
@@ -1582,6 +1706,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 5,
           "type": "life_rate"
@@ -1601,6 +1726,7 @@
     "type": 0,
     "levelDatas": [
       {
+        "level": 5,
         "effect1": {
           "value": 17,
           "type": "attack_rate "
@@ -1612,6 +1738,7 @@
         "unlockLevel": 25
       },
       {
+        "level": 4,
         "effect1": {
           "value": 13,
           "type": "attack_rate "
@@ -1623,6 +1750,7 @@
         "unlockLevel": 15
       },
       {
+        "level": 3,
         "effect1": {
           "value": 10,
           "type": "attack_rate "
@@ -1634,6 +1762,7 @@
         "unlockLevel": 10
       },
       {
+        "level": 2,
         "effect1": {
           "value": 7,
           "type": "attack_rate "
@@ -1645,6 +1774,7 @@
         "unlockLevel": 5
       },
       {
+        "level": 1,
         "effect1": {
           "value": 5,
           "type": "attack_rate "
