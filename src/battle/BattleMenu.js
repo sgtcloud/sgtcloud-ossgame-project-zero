@@ -977,7 +977,7 @@ var ShopLayerMenu = BattleMenu.extend({
             }
             switch (name) {
                 case "shop_tab":
-                    //self.showPorpView(name);
+                    self.showPorpView(name);
                     break;
                 case "moneyTree_tab":
                     self.showMoneyTreeView(name);
@@ -1044,54 +1044,74 @@ var ShopLayerMenu = BattleMenu.extend({
                     return;
                 }
             } else {
-               /* new Popup1("友情提示", "当前钻石不足",function(popup){
-                    popup.hiddenPopup();
-                    self.falg = true;
-                });*/
                 content = '当前钻石不足';
             }
             new Popup1("友情提示", content, function (popup) {
-                /*layer.removeFromParent();
-                 gamePopup.hidden();*/
                 popup.hiddenPopup();
                 self.falg = true;
             });
         };
         this.showPorpView = function (name) {
-            var shopPorps = shopView.getChildByName(name);
+            var shopPorps = shopView.getChildByName(name).getChildByName('shopList');
+            var shopItemLayer = ccs.csLoader.createNode(res.shop_icon_layer);
+            var shopItemLayerRoot = shopItemLayer.getChildByName("root");
+            var shopIconLayer = shopItemLayerRoot.getChildByName('itemLayer');
+            var shopIconLayerRoot = shopIconLayer.getChildByName('root');
+            var shopListView = ccs.csLoader.createNode(res.shop_list_view);
+            var shopListViewRoot = shopListView.getChildByName('root');
+            var shopListViewRootClone = shopListViewRoot.clone();
             var goods = dataSource.goods;
-            var n = 0;
+           /* for (var j in shopListViewRoot.getChildren()) {
+                shopListViewRoot.getChildren()[j].setVisible(false);
+            }*/
+            var n = n1 = 0;
             for (var i in goods) {
                 n++;
-                //var equip = dataSource.equips[goods[i].propId];
-                var shopPorp = shopPorps.getChildByName("item" + n).getChildByName("root");
-                var itemLayer = shopPorp.getChildByName("itemLayer").getChildByName("root");
+            }
+            var len = n;
+            n=0;
+            shopPorps.removeAllChildren(true);
+            for (var i in goods) {
+                n ++;
+                n1++;
+                var datas = goods[i];
+                var itemLayer = shopItemLayerRoot.clone();
 
-                var saleText = itemLayer.getChildByName("sale_text");
+                var iconLayer = shopIconLayerRoot.clone();
+                var saleText = iconLayer.getChildByName("sale_text");
                 saleText.ignoreContentAdaptWithSize(true);
-                saleText.setString(goods[i].num);
+                saleText.setString(datas.num);
 
-                var itemIcon = itemLayer.getChildByName("item_icon");
-                itemIcon.loadTexture("res/icon/resources/" + goods[i].propId+".png");
+                var itemIcon = iconLayer.getChildByName("item_icon");
+                itemIcon.loadTexture("res/icon/resources/" + datas.propId+".png");
+                iconLayer.setPosition(shopIconLayer.getPosition());
+                itemLayer.addChild(iconLayer);
+                itemLayer.getChildByName("item_name").setString(datas.propId);
 
-                shopPorp.getChildByName("item_name").setString(goods[i].propId);
+                var res1 = itemLayer.getChildByName("res");
 
-                var res = shopPorp.getChildByName("res");
+                var icon = res1.getChildByName("icon")
+                icon.loadTexture("res/icon/resources/" + datas.price.unit + ".png");
+                icon.setVisible(true);
 
-                var childrens = res.getChildren();
-                for (var j in childrens) {
-                    childrens[j].setVisible(false);
-                }
-                res.getChildByName(goods[i].price.unit).setVisible(true);
-
-                var resSaleText = res.getChildByName("sale_text");
+                var resSaleText = res1.getChildByName("sale_text");
                 resSaleText.setVisible(true);
                 resSaleText.ignoreContentAdaptWithSize(true);
-                resSaleText.setString(goods[i].price.value);
+                resSaleText.setString(datas.price.value);
 
-                var buyBtn = shopPorp.getChildByName("btn").getChildByName("buy_btn");
-                //var price = goods[i].price;
-                self.clickBtn(buyBtn, goods[i]);
+                var buyBtn = itemLayer.getChildByName("btn").getChildByName("buy_btn");
+
+                self.clickBtn(buyBtn, datas);
+
+                itemLayer.setPosition(shopListViewRoot.getChildByName("item"+n1).getPosition());
+                shopListViewRootClone.addChild(itemLayer);
+
+                if(n % 3 == 0 || n == len - 1){
+                    n1 = 0;
+                    shopPorps.setItemsMargin(20);
+                    shopPorps.pushBackCustomItem(shopListViewRootClone);
+                    shopListViewRootClone = shopListViewRoot.clone();
+                }
             }
         };
         this.clickBtn = function (buyBtn, goods) {
@@ -1123,10 +1143,14 @@ var ShopLayerMenu = BattleMenu.extend({
                         popup.hiddenPopup();
                         self.showMenuLayer("moneyTree_tab");
                     });
+                }else{
+                    new Popup1("友情提示", "当前该资源不足", function (popup) {
+                        popup.hiddenPopup();
+                    });
                 }
             }
         };
-        //this.showPorpView("shop_tab");
+        this.showPorpView("shop_tab");
     }
 
 });

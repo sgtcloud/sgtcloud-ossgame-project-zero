@@ -114,18 +114,18 @@
                   "Y": 0.3782
                 },
                 "PreSize": {
-                  "X": 0.6889,
-                  "Y": 0.2111
+                  "X": 0.8778,
+                  "Y": 0.1889
                 },
-                "LeftMargin": 14.2776,
-                "RightMargin": 13.7224,
-                "TopMargin": 46.465,
-                "BottomMargin": 24.535,
+                "LeftMargin": 5.7776,
+                "RightMargin": 5.2224,
+                "TopMargin": 47.465,
+                "BottomMargin": 25.535,
                 "Tag": 107,
                 "ActionTag": -1698262075,
                 "Size": {
-                  "X": 62.0,
-                  "Y": 19.0
+                  "X": 79.0,
+                  "Y": 17.0
                 },
                 "Name": "time",
                 "ctype": "TextBMFontObjectData"

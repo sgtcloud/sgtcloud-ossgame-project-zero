@@ -373,7 +373,6 @@
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />
-        <Project Name="SmallItemLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

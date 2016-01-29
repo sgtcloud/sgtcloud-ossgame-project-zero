@@ -10,7 +10,7 @@
   "moneyTreeRatio" : 500,
   "offlineReward" : [ {
     "value" : 1,
-    "unit" : "iron_key"
+    "unit" : "key"
   }, {
     "value" : 1,
     "unit" : "gem"

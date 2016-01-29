@@ -148,8 +148,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 290.0184,
-                  "Y": 514.8831
+                  "X": 305.0183,
+                  "Y": 514.883
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -158,17 +158,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4754,
+                  "X": 0.5,
                   "Y": 0.8581
                 },
                 "PreSize": {
                   "X": 0.1623,
                   "Y": 0.0317
                 },
-                "LeftMargin": 290.0184,
-                "RightMargin": 220.9816,
-                "TopMargin": 75.6169,
-                "BottomMargin": 505.3831,
+                "LeftMargin": 305.0183,
+                "RightMargin": 205.9817,
+                "TopMargin": 75.617,
+                "BottomMargin": 505.383,
                 "Tag": 907,
                 "ActionTag": -1775524666,
                 "Size": {
@@ -232,8 +232,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 268.8202,
-                  "Y": 516.6214
+                  "X": 283.8201,
+                  "Y": 516.6213
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -242,17 +242,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4407,
+                  "X": 0.4653,
                   "Y": 0.861
                 },
                 "PreSize": {
                   "X": 0.0492,
                   "Y": 0.05
                 },
-                "LeftMargin": 253.8202,
-                "RightMargin": 326.1798,
-                "TopMargin": 68.3786,
-                "BottomMargin": 501.6214,
+                "LeftMargin": 268.8201,
+                "RightMargin": 311.1799,
+                "TopMargin": 68.3787,
+                "BottomMargin": 501.6213,
                 "Tag": 285,
                 "ActionTag": -772689509,
                 "Size": {
@@ -317,8 +317,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 222.7903,
-                  "Y": 514.2635
+                  "X": 229.7903,
+                  "Y": 514.2634
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -327,17 +327,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3652,
+                  "X": 0.3767,
                   "Y": 0.8571
                 },
                 "PreSize": {
                   "X": 0.1082,
                   "Y": 0.06
                 },
-                "LeftMargin": 189.7903,
-                "RightMargin": 354.2097,
-                "TopMargin": 67.7365,
-                "BottomMargin": 496.2635,
+                "LeftMargin": 196.7903,
+                "RightMargin": 347.2097,
+                "TopMargin": 67.7366,
+                "BottomMargin": 496.2634,
                 "Tag": 341,
                 "ActionTag": 1954781032,
                 "Size": {
@@ -464,8 +464,8 @@
                       "Path": "buttonUI/buy3.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 68,
-                    "Scale9Height": 36,
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -615,6 +615,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -645,7 +647,7 @@
                   "X": 604.0,
                   "Y": 596.0
                 },
-                "Name": "ListView_1",
+                "Name": "shopList",
                 "ctype": "ListViewObjectData"
               }
             ],
