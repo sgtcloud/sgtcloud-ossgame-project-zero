@@ -191,8 +191,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 300.048,
-                  "Y": 85.7209
+                  "X": 300.0481,
+                  "Y": 82.7209
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -202,16 +202,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5358,
-                  "Y": 0.7793
+                  "Y": 0.752
                 },
                 "PreSize": {
                   "X": 0.1482,
                   "Y": 0.1364
                 },
-                "LeftMargin": 300.048,
-                "RightMargin": 176.952,
-                "TopMargin": 16.7791,
-                "BottomMargin": 78.2209,
+                "LeftMargin": 300.0481,
+                "RightMargin": 176.9519,
+                "TopMargin": 19.7791,
+                "BottomMargin": 75.2209,
                 "CallBackType": "Click",
                 "Tag": 1033,
                 "ActionTag": 309565690,
