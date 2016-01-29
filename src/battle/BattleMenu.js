@@ -831,19 +831,15 @@ var HeroListMenu = BattleMenu.extend({
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
                 if (heroData.isLocked()) {
-                    (function () {
-                        var _hero = heroData;
+                    (function (data) {
+                        var _hero = data;
                         customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                             var hero = event.getUserData();
                             if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                                //_heroView.setVisible(true)
-                                //for (var i in skillsList) {
-                                //    skillsList[i].setVisible(true);
-                                //}
                                 buildHeroMenu(_hero)
                             }
                         });
-                    })()
+                    })(heroData)
                 } else {
                     buildHeroMenu(heroData);
                 }
@@ -880,12 +876,24 @@ var EquipListMenu = BattleMenu.extend({
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
 
-        function buildHeroView(hero) {
+        function buildHeroView(hero,isFirst) {
             var root = heroView.clone();
             var icon = root.getChildByName('hero_icon');
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
+            var player_equip=root.getChildByName('player_equip');
+            var hero_equip=root.getChildByName('hero_equip');
+            if(isFirst){
+                hero_equip.setVisible(false);
+                player_equip.setVisible(true);
+                for(var equip in hero.getEquips()){
+
+                }
+            }else {
+                player_equip.setVisible(false);
+                hero_equip.setVisible(true);
+            }
             //var tap = root.getChildByName('tatk_text');
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
@@ -906,8 +914,7 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/equips/" + equip.getIcon());
             name.setString(equip.getName());
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
-            lv.setString("Lv." + equip.getLv());
-
+            lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
             return root;
         }
 
@@ -916,25 +923,27 @@ var EquipListMenu = BattleMenu.extend({
             var that = this;
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
+                var isFirst=i===0;
                 if (heroData.getLv() > 0) {
-                    buildEquipMenuIfUnlocked(heroData);
+                    buildEquipMenuIfUnlocked(heroData,isFirst);
                 } else {
                     (function (hero) {
                         var _hero = hero;
+                        var first=isFirst;
                         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                             var heroId = event.getUserData()['heroId'];
                             console.log("hero " + heroId + ' and the heroData is ' + _hero.getId())
                             if (heroId === _hero.getId() && _hero.getLv() === 1) {
                                 console.log('hero ' + heroId + ' is unlocked ')
-                                buildEquipMenuIfUnlocked(_hero);
+                                buildEquipMenuIfUnlocked(_hero,first);
                             }
                         });
                     })(heroData)
                 }
             }
 
-            function buildEquipMenuIfUnlocked(heroData) {
-                var _heroView = buildHeroView(heroData);
+            function buildEquipMenuIfUnlocked(heroData,isFirst) {
+                var _heroView = buildHeroView(heroData,isFirst);
                 console.log('build equip')
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];

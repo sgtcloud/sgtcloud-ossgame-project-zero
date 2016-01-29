@@ -8,6 +8,10 @@ var Equip = function (id, lv) {
     this.getLv = function () {
         return lv;
     };
+
+    this.getMaxLevel=function(){
+        return data.levelDatas[0]['level'];
+    };
     this.getName = function () {
         return data.name;
     };

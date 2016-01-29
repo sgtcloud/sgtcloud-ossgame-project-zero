@@ -10,7 +10,7 @@ var Hero = function (heroData) {
     for (var i in data.equips) {
         var equipId = data.equips[i];
         var equip = readEquipCache(equipId);
-        var equipLv=(equip&&equip['level'])||1;
+        var equipLv = (equip && equip['level']) || 1;
         equips[i] = new Equip(equipId, equipLv);
     }
     for (var i in data.skills) {
@@ -138,6 +138,9 @@ var Hero = function (heroData) {
     this.getEquipData = function (i) {
         return equips[i];
     };
+    this.getEquips = function() {
+        return equips;
+    }
     this.getSkillCount = function () {
         return skills.length;
     };
