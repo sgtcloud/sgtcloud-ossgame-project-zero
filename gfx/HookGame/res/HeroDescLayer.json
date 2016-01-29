@@ -124,7 +124,7 @@
                   "Y": 0.5833
                 },
                 "PreSize": {
-                  "X": 0.9063,
+                  "X": 0.9062,
                   "Y": 0.3958
                 },
                 "LeftMargin": 30.0,
@@ -171,6 +171,47 @@
                     },
                     "Name": "hero_bg",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "Lv.999/999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/font22_white_kmbb-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 178.7979,
+                      "Y": 293.961
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3083,
+                      "Y": 0.7736
+                    },
+                    "PreSize": {
+                      "X": 0.2483,
+                      "Y": 0.0526
+                    },
+                    "LeftMargin": 178.7979,
+                    "RightMargin": 257.2021,
+                    "TopMargin": 76.039,
+                    "BottomMargin": 283.961,
+                    "Tag": 1110,
+                    "ActionTag": 995984727,
+                    "Size": {
+                      "X": 144.0,
+                      "Y": 20.0
+                    },
+                    "Name": "heroLevel_text",
+                    "ctype": "TextBMFontObjectData"
                   },
                   {
                     "IsCustomSize": true,
@@ -409,47 +450,6 @@
                 "ctype": "ProjectNodeObjectData"
               },
               {
-                "LabelText": "Lv.999/999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/font22_white_kmbb-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 182.0768,
-                  "Y": 846.4528
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2845,
-                  "Y": 0.8817
-                },
-                "PreSize": {
-                  "X": 0.225,
-                  "Y": 0.0208
-                },
-                "LeftMargin": 182.0768,
-                "RightMargin": 313.9232,
-                "TopMargin": 103.5472,
-                "BottomMargin": 836.4528,
-                "Tag": 1110,
-                "ActionTag": 995984727,
-                "Size": {
-                  "X": 144.0,
-                  "Y": 20.0
-                },
-                "Name": "heroLevel_text",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
@@ -482,7 +482,7 @@
                   "Y": 0.0938
                 },
                 "PreSize": {
-                  "X": 0.9063,
+                  "X": 0.9062,
                   "Y": 0.4792
                 },
                 "LeftMargin": 30.0,

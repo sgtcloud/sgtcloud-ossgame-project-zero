@@ -32,6 +32,16 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="heroLevel_text" ActionTag="995984727" Tag="1110" IconVisible="False" LeftMargin="178.7979" RightMargin="257.2021" TopMargin="76.0390" BottomMargin="283.9610" LabelText="Lv.999/999" ctype="TextBMFontObjectData">
+                    <Size X="144.0000" Y="20.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="178.7979" Y="293.9610" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3083" Y="0.7736" />
+                    <PreSize X="0.2483" Y="0.0526" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font22_white_kmbb-export.fnt" Plist="" />
+                  </AbstractNodeData>
                   <AbstractNodeData Name="heroName_text" ActionTag="-1437994079" Tag="46" IconVisible="False" LeftMargin="152.0768" RightMargin="247.9232" TopMargin="32.9766" BottomMargin="317.0234" IsCustomSize="True" FontSize="22" LabelText="英雄名字六字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="180.0000" Y="30.0000" />
                     <AnchorPoint ScaleY="0.5000" />
@@ -95,16 +105,6 @@
                 <PrePosition X="0.0766" Y="0.7049" />
                 <PreSize X="0.8438" Y="0.1458" />
                 <FileData Type="Normal" Path="HeroDescView.csd" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="heroLevel_text" ActionTag="995984727" Tag="1110" IconVisible="False" LeftMargin="182.0768" RightMargin="313.9232" TopMargin="103.5472" BottomMargin="836.4528" LabelText="Lv.999/999" ctype="TextBMFontObjectData">
-                <Size X="144.0000" Y="20.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="182.0768" Y="846.4528" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2845" Y="0.8817" />
-                <PreSize X="0.2250" Y="0.0208" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skill" ActionTag="-1929897660" Tag="90" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="410.0000" BottomMargin="90.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="580.0000" Y="460.0000" />
