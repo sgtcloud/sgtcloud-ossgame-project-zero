@@ -162,6 +162,8 @@
           <Image Name="title_bg4.png" />
           <Image Name="font22_yellow_kmb.png" />
           <Image Name="font22_yellow_kmbb.png" />
+          <Image Name="pack.png" />
+          <Image Name="statistics.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />

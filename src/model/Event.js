@@ -84,7 +84,11 @@ var EVENT = {
     /**
      * 解锁英雄
      */
-    UNLOCK_HERO:"UNLOCK_HERO"
+    UNLOCK_HERO:"UNLOCK_HERO",
+    /**
+     * 更新技能总攻击显示
+     */
+    UPGRADE_HERO_ATTACK:"UPGRADE_HERO_ATTACK"
 };
 
 var customEventHelper = {

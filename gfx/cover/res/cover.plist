@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>coverUI/bg_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{746,100},{28,36}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{28,36}</string>
+			</dict>
+			<key>coverUI/bg_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{746,136},{31,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{31,32}</string>
+			</dict>
+			<key>coverUI/bg_14.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{714,100},{32,47}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{32,47}</string>
+			</dict>
+			<key>coverUI/btn1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{570,74},{80,80}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{100,100}</string>
+			</dict>
+			<key>coverUI/btn2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{665,0},{100,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{100,100}</string>
+			</dict>
+			<key>coverUI/logo.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{297,179}}</string>
+				<key>offset</key>
+				<string>{-2,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{300,180}</string>
+			</dict>
+			<key>coverUI/text.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{650,100},{64,39}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{84,47}</string>
+			</dict>
+			<key>coverUI/text1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{297,74},{273,41}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{277,41}</string>
+			</dict>
+			<key>coverUI/yellow_btn_a.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{297,0},{184,74}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{184,74}</string>
+			</dict>
+			<key>coverUI/yellow_btn_b.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{481,0},{184,74}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{184,74}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>cover.png</string>
+			<key>realTextureFileName</key>
+			<string>cover.png</string>
+			<key>size</key>
+			<string>{777,179}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>777</integer>
+			<key>height</key>
+			<integer>179</integer>
+		</dict>
+	</dict>
+</plist>
