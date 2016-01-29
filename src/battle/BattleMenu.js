@@ -312,7 +312,6 @@ var SkillListMenu = BattleMenu.extend({
 function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
-        console.log(effects[i]['type'])
         var map = SkillEffectMappings[effects[i]['type']];
         var alas = map['name'];
         var value = effects[i]['value'];
@@ -876,6 +875,20 @@ var EquipListMenu = BattleMenu.extend({
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
         var itemView=ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
+
+
+
+        var lockBtnLayoutTemplate = equipView.getChildByName('lock_btn');
+        var lockBtnPosition = lockBtnLayoutTemplate.getPosition();
+        var lockBtnTemplate = lockBtnLayoutTemplate.getChildByName('btn');
+        var skillMaxLevelBtnLayoutTemplate = equipView.getChildByName('MaxLevel_btn');
+        var maxLevelBtnTemplate = skillMaxLevelBtnLayoutTemplate.getChildByName('btn');
+        var maxLevelBtnPosition = skillMaxLevelBtnLayoutTemplate.getPosition();
+        var upgradeEquipBtn = equipView.getChildByName('upgrade_btn');
+        var upgradeBtnTemp = upgradeEquipBtn.getChildByName('btn');
+        var upgradeSkillPosition = upgradeEquipBtn.getPosition();
+
+
         function buildHeroView(hero,isFirst) {
             var root = heroView.clone();
             var icon = root.getChildByName('hero_icon');
@@ -909,6 +922,15 @@ var EquipListMenu = BattleMenu.extend({
 
         function buildEquipView(equip, hero) {
             var root = equipView.clone();
+            var lock_btn = lockBtnTemplate.clone();
+            lock_btn.setPosition(lockBtnPosition);
+            var maxLevel = maxLevelBtnTemplate.clone();
+            maxLevel.setPosition(maxLevelBtnPosition);
+            var upgradeSkill = upgradeBtnTemp.clone();
+            upgradeSkill.setPosition(upgradeSkillPosition);
+            root.addChild(lock_btn);
+            root.addChild(maxLevel);
+            root.addChild(upgradeSkill);
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
             var desc = root.getChildByName('equipBuffDecs_text');
