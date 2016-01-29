@@ -22,7 +22,7 @@ function getLevelData(data, key, lv) {
     var max=data.levelDatas[0];
     var index=max['level']-lv;
     if (!data.levelDatas[index]) {
-        result= data.levelDatas[len-1][key];
+        result= data.levelDatas[max][key];
     }else {
         result= data.levelDatas[index][key];
     }

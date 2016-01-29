@@ -367,7 +367,6 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
-                    console.log('init next life' + nextLevelLife)
                     elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(nextLevelLife - levelLife)));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
@@ -885,6 +884,9 @@ var EquipListMenu = BattleMenu.extend({
             if(isFirst){
                 hero_equip.setVisible(false);
                 player_equip.setVisible(true);
+                var equipNum_text=player_equip.getChildByName('equipNum_text');
+                equipNum_text.setString(hero.getEquipCount());
+                equipNum_text.ignoreContentAdaptWithSize(true)
             }else {
                 player_equip.setVisible(false);
                 hero_equip.setVisible(true);
@@ -900,7 +902,7 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
-            lv.setString("Lv." + hero.getLv());
+            lv.setString("Lv." + hero.getLv()+'/'+hero.getMaxLevel());
             dps_text.ignoreContentAdaptWithSize(true);
             return root;
         }
@@ -925,8 +927,11 @@ var EquipListMenu = BattleMenu.extend({
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
             lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
             var upgradeBtnIcon=upgradeBtn.getChildByName('icon');
+            var text=upgradeBtn.getChildByName('text_yellow');
+            text.ignoreContentAdaptWithSize(true);
            var upgradeCost= equip.getNextLevelUpgrade();
             upgradeBtnIcon.loadTexture('res/icon/resources_small/'+upgradeCost.unit+'.png');
+            text.setString(upgradeCost.value);
             return root;
         }
 
