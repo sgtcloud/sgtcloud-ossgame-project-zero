@@ -97,7 +97,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" CanEdit="False" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="68" Scale9Height="36" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="buy_text" CanEdit="False" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                     <Size X="68.0000" Y="36.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.0000" Y="30.0000" />
@@ -144,7 +144,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ListView_1" ActionTag="-590507260" Tag="1109" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="2.0000" BottomMargin="2.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="shopList" ActionTag="-590507260" Tag="1109" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="2.0000" BottomMargin="2.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="604.0000" Y="596.0000" />
                 <AnchorPoint />
                 <Position X="3.0000" Y="2.0000" />
