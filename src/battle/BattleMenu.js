@@ -313,6 +313,7 @@ function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
+        console.log(effects[i]['type']+'>>>>>>>>'+JSON.stringify(map))
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
