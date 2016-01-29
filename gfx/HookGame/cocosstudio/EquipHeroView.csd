@@ -266,58 +266,31 @@
                 <PrePosition X="0.1923" Y="0.1455" />
                 <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero_equip" ActionTag="490580309" CallBackType="Click" Tag="278" IconVisible="False" LeftMargin="468.7505" RightMargin="15.2495" TopMargin="7.6703" BottomMargin="32.3297" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                <Size X="140.0000" Y="70.0000" />
+              <AbstractNodeData Name="hero_equip" ActionTag="490580309" CallBackType="Click" Tag="278" IconVisible="False" LeftMargin="468.7505" RightMargin="5.2495" TopMargin="7.6703" BottomMargin="32.3297" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="150.0000" Y="70.0000" />
                 <Children>
-                  <AbstractNodeData Name="item1" ActionTag="-1754001681" Tag="885" IconVisible="True" RightMargin="40.0000" TopMargin="-30.4880" BottomMargin="0.4880" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="100.0000" Y="100.0000" />
-                    <AnchorPoint />
-                    <Position Y="0.4880" />
-                    <Scale ScaleX="0.3000" ScaleY="0.3000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition Y="0.0070" />
-                    <PreSize X="0.7143" Y="1.4286" />
-                    <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="item2" ActionTag="-570615290" Tag="891" IconVisible="True" LeftMargin="33.2481" RightMargin="6.7519" TopMargin="-30.4880" BottomMargin="0.4880" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="100.0000" Y="100.0000" />
-                    <AnchorPoint />
-                    <Position X="33.2481" Y="0.4880" />
-                    <Scale ScaleX="0.3000" ScaleY="0.3000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2375" Y="0.0070" />
-                    <PreSize X="0.7143" Y="1.4286" />
-                    <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="item3" ActionTag="499344079" Tag="897" IconVisible="True" LeftMargin="66.4963" RightMargin="-26.4963" TopMargin="-30.4880" BottomMargin="0.4880" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="100.0000" Y="100.0000" />
-                    <AnchorPoint />
-                    <Position X="66.4963" Y="0.4880" />
-                    <Scale ScaleX="0.3000" ScaleY="0.3000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4750" Y="0.0070" />
-                    <PreSize X="0.7143" Y="1.4286" />
-                    <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="item4" ActionTag="-1681308472" Tag="903" IconVisible="True" LeftMargin="99.7444" RightMargin="-59.7444" TopMargin="-30.4880" BottomMargin="0.4880" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="100.0000" Y="100.0000" />
-                    <AnchorPoint />
-                    <Position X="99.7444" Y="0.4880" />
-                    <Scale ScaleX="0.3000" ScaleY="0.3000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7125" Y="0.0070" />
-                    <PreSize X="0.7143" Y="1.4286" />
-                    <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heroEquip_text" ActionTag="2032186843" CallBackType="Touch" Tag="879" IconVisible="False" LeftMargin="24.0158" RightMargin="31.9842" TopMargin="0.2458" BottomMargin="44.7542" Scale9Width="84" Scale9Height="25" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="heroEquip_text" ActionTag="2032186843" CallBackType="Touch" Tag="879" IconVisible="False" LeftMargin="24.0158" RightMargin="41.9842" TopMargin="0.2458" BottomMargin="44.7542" Scale9Width="84" Scale9Height="25" ctype="ImageViewObjectData">
                     <Size X="84.0000" Y="25.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="66.0158" Y="57.2542" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4715" Y="0.8179" />
-                    <PreSize X="0.6000" Y="0.3571" />
+                    <PrePosition X="0.4401" Y="0.8179" />
+                    <PreSize X="0.5600" Y="0.3571" />
                     <FileData Type="Normal" Path="equipUI/equip_text.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="itemList" ActionTag="700881433" Tag="87" IconVisible="False" RightMargin="10.0000" TopMargin="40.0000" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                    <Size X="140.0000" Y="30.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.9333" Y="0.4286" />
+                    <SingleColor A="255" R="150" G="150" B="255" />
+                    <FirstColor A="255" R="150" G="150" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -325,13 +298,13 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7512" Y="0.2939" />
-                <PreSize X="0.2244" Y="0.6364" />
+                <PreSize X="0.2404" Y="0.6364" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="player_equip" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="player_equip" Visible="False" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="90.0000" />
                 <Children>
                   <AbstractNodeData Name="equipNum_bg" ActionTag="-1910765510" Tag="882" IconVisible="False" LeftMargin="1.2796" RightMargin="18.7204" TopMargin="28.8625" BottomMargin="1.1375" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
