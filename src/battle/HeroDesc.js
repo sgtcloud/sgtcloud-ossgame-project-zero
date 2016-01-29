@@ -42,8 +42,8 @@ var HeroDesc = cc.Node.extend({
         atkText.setString(hero.getAttack());
         tapText.setString(hero.getHit());
         lifeText.setString(parseInt(hero.getLife()));
-        ctrChanceText.setString(hero.getCtrChance()*100);
-        ctrModifyText.setString(hero.getCtrModify()*100);
+        ctrChanceText.setString(hero.getCtrChance()*100+"%");
+        ctrModifyText.setString(hero.getCtrModify()*100+"%");
         atkPeriodText.setString(hero.getAnimateDelay());
         cc.log(hero.getAttack() +","+hero.getHit()+","+hero.getLife()+","+hero.getCtrChance()+","+hero.getCtrModify()+","+hero.getAnimateDelay());
         skillList.removeAllChildren();
