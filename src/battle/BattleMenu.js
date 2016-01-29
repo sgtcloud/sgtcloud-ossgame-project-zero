@@ -313,7 +313,6 @@ function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
-        console.log(effects[i]['type']+'>>>>>>>>'+JSON.stringify(map))
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
@@ -927,12 +926,14 @@ var EquipListMenu = BattleMenu.extend({
             name.setString(equip.getName());
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
             lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
+            lv.setColor(cc.color(255,226,2));
             var upgradeBtnIcon=upgradeBtn.getChildByName('icon');
             var text=upgradeBtn.getChildByName('text_yellow');
             text.ignoreContentAdaptWithSize(true);
            var upgradeCost= equip.getNextLevelUpgrade();
             upgradeBtnIcon.loadTexture('res/icon/resources_small/'+upgradeCost.unit+'.png');
             text.setString(upgradeCost.value);
+            setFont([name,desc])
             return root;
         }
 
