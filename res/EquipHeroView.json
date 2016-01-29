@@ -281,8 +281,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 385.3271,
-                  "Y": 47.7691
+                  "X": 384.3271,
+                  "Y": 46.7691
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -291,17 +291,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6175,
-                  "Y": 0.4343
+                  "X": 0.6159,
+                  "Y": 0.4252
                 },
                 "PreSize": {
                   "X": 0.1074,
                   "Y": 0.1364
                 },
-                "LeftMargin": 351.8271,
-                "RightMargin": 205.1729,
-                "TopMargin": 54.7309,
-                "BottomMargin": 40.2691,
+                "LeftMargin": 350.8271,
+                "RightMargin": 206.1729,
+                "TopMargin": 55.7309,
+                "BottomMargin": 39.2691,
                 "Tag": 1052,
                 "ActionTag": 191675235,
                 "Size": {
@@ -1031,179 +1031,16 @@
                   "Y": 0.2939
                 },
                 "PreSize": {
-                  "X": 0.2244,
+                  "X": 0.2404,
                   "Y": 0.6364
                 },
                 "LeftMargin": 468.7505,
-                "RightMargin": 15.2495,
+                "RightMargin": 5.2495,
                 "TopMargin": 7.6703,
                 "BottomMargin": 32.3297,
                 "CallBackType": "Click",
                 "Tag": 278,
                 "Children": [
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "ItemLayer.json",
-                      "Plist": ""
-                    },
-                    "StretchWidthEnable": false,
-                    "StretchHeightEnable": false,
-                    "InnerActionSpeed": 1.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0,
-                      "Y": 0.488
-                    },
-                    "Scale": {
-                      "ScaleX": 0.3,
-                      "ScaleY": 0.3
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.007
-                    },
-                    "PreSize": {
-                      "X": 0.7143,
-                      "Y": 1.4286
-                    },
-                    "RightMargin": 40.0,
-                    "TopMargin": -30.488,
-                    "BottomMargin": 0.488,
-                    "Tag": 885,
-                    "ActionTag": -1754001681,
-                    "Size": {
-                      "X": 100.0,
-                      "Y": 100.0
-                    },
-                    "Name": "item1",
-                    "ctype": "ProjectNodeObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "ItemLayer.json",
-                      "Plist": ""
-                    },
-                    "StretchWidthEnable": false,
-                    "StretchHeightEnable": false,
-                    "InnerActionSpeed": 1.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 33.2481,
-                      "Y": 0.488
-                    },
-                    "Scale": {
-                      "ScaleX": 0.3,
-                      "ScaleY": 0.3
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.2375,
-                      "Y": 0.007
-                    },
-                    "PreSize": {
-                      "X": 0.7143,
-                      "Y": 1.4286
-                    },
-                    "LeftMargin": 33.2481,
-                    "RightMargin": 6.7519,
-                    "TopMargin": -30.488,
-                    "BottomMargin": 0.488,
-                    "Tag": 891,
-                    "ActionTag": -570615290,
-                    "Size": {
-                      "X": 100.0,
-                      "Y": 100.0
-                    },
-                    "Name": "item2",
-                    "ctype": "ProjectNodeObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "ItemLayer.json",
-                      "Plist": ""
-                    },
-                    "StretchWidthEnable": false,
-                    "StretchHeightEnable": false,
-                    "InnerActionSpeed": 1.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 66.4963,
-                      "Y": 0.488
-                    },
-                    "Scale": {
-                      "ScaleX": 0.3,
-                      "ScaleY": 0.3
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.475,
-                      "Y": 0.007
-                    },
-                    "PreSize": {
-                      "X": 0.7143,
-                      "Y": 1.4286
-                    },
-                    "LeftMargin": 66.4963,
-                    "RightMargin": -26.4963,
-                    "TopMargin": -30.488,
-                    "BottomMargin": 0.488,
-                    "Tag": 897,
-                    "ActionTag": 499344079,
-                    "Size": {
-                      "X": 100.0,
-                      "Y": 100.0
-                    },
-                    "Name": "item3",
-                    "ctype": "ProjectNodeObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "ItemLayer.json",
-                      "Plist": ""
-                    },
-                    "StretchWidthEnable": false,
-                    "StretchHeightEnable": false,
-                    "InnerActionSpeed": 1.0,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 99.7444,
-                      "Y": 0.488
-                    },
-                    "Scale": {
-                      "ScaleX": 0.3,
-                      "ScaleY": 0.3
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.7125,
-                      "Y": 0.007
-                    },
-                    "PreSize": {
-                      "X": 0.7143,
-                      "Y": 1.4286
-                    },
-                    "LeftMargin": 99.7444,
-                    "RightMargin": -59.7444,
-                    "TopMargin": -30.488,
-                    "BottomMargin": 0.488,
-                    "Tag": 903,
-                    "ActionTag": -1681308472,
-                    "Size": {
-                      "X": 100.0,
-                      "Y": 100.0
-                    },
-                    "Name": "item4",
-                    "ctype": "ProjectNodeObjectData"
-                  },
                   {
                     "FileData": {
                       "Type": "Normal",
@@ -1227,15 +1064,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4715,
+                      "X": 0.4401,
                       "Y": 0.8179
                     },
                     "PreSize": {
-                      "X": 0.6,
+                      "X": 0.56,
                       "Y": 0.3571
                     },
                     "LeftMargin": 24.0158,
-                    "RightMargin": 31.9842,
+                    "RightMargin": 41.9842,
                     "TopMargin": 0.2458,
                     "BottomMargin": 44.7542,
                     "CallBackType": "Touch",
@@ -1247,11 +1084,59 @@
                     },
                     "Name": "heroEquip_text",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "VerticalType": "Align_VerticalCenter",
+                    "IsBounceEnabled": true,
+                    "ScrollDirectionType": 0,
+                    "ClipAble": true,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.9333,
+                      "Y": 0.4286
+                    },
+                    "RightMargin": 10.0,
+                    "TopMargin": 40.0,
+                    "Tag": 87,
+                    "ActionTag": 700881433,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 30.0
+                    },
+                    "Name": "itemList",
+                    "ctype": "ListViewObjectData"
                   }
                 ],
                 "ActionTag": 490580309,
                 "Size": {
-                  "X": 140.0,
+                  "X": 150.0,
                   "Y": 70.0
                 },
                 "Name": "hero_equip",
@@ -1398,8 +1283,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 62.0328,
-                      "Y": 35.4692
+                      "X": 61.0328,
+                      "Y": 34.4692
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1408,17 +1293,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4431,
-                      "Y": 0.3941
+                      "X": 0.4359,
+                      "Y": 0.383
                     },
                     "PreSize": {
                       "X": 0.4786,
                       "Y": 0.1667
                     },
-                    "LeftMargin": 28.5328,
-                    "RightMargin": 44.4672,
-                    "TopMargin": 47.0308,
-                    "BottomMargin": 27.9692,
+                    "LeftMargin": 27.5328,
+                    "RightMargin": 45.4672,
+                    "TopMargin": 48.0308,
+                    "BottomMargin": 26.9692,
                     "Tag": 1053,
                     "ActionTag": 1853760734,
                     "Size": {
@@ -1464,7 +1349,6 @@
         "heroUI/star1.png",
         "heroUI/star2.png",
         "heroUI/text_bg.png",
-        "ItemLayer.json",
         "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"
