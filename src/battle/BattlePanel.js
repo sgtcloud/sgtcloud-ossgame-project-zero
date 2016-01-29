@@ -137,14 +137,15 @@ var BattlePanel = cc.Node.extend({
             var rewards = player.not_get_reward;
             for (var key in rewards) {
                 if (rewards.hasOwnProperty(key)) {
+                    var tempKey = key;
                     if(key.indexOf("key") != -1){
                         var icon = offlineRewardLayerBox.getChildByName("key");
-                        icon.loadTexture("res/icon/resources/" + key+".png");
+                        icon.loadTexture("res/materialUI/" + tempKey+".png");
                         key = "key";
                     }
                     var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
                     offlineRewardLayerText.ignoreContentAdaptWithSize(true);
-                    offlineRewardLayerText.setString(rewards[key]);
+                    offlineRewardLayerText.setString(rewards[tempKey]);
                 }
             }
             var gamePopup = new GamePopup(offlineRewardLayer);
