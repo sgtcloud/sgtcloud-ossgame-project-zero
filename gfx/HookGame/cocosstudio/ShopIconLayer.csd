@@ -83,7 +83,7 @@
               <AbstractNodeData Name="res" ActionTag="1098940521" Tag="393" IconVisible="False" LeftMargin="35.0717" RightMargin="4.9283" TopMargin="173.4077" BottomMargin="81.5923" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="25.0000" />
                 <Children>
-                  <AbstractNodeData Name="key" ActionTag="2087965809" Tag="394" IconVisible="False" RightMargin="115.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="icon" ActionTag="2087965809" Tag="394" IconVisible="False" RightMargin="115.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                     <Size X="25.0000" Y="25.0000" />
                     <AnchorPoint />
                     <Position />
@@ -92,36 +92,6 @@
                     <PrePosition />
                     <PreSize X="0.1786" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="relic" ActionTag="1464314918" Tag="395" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                    <Size X="25.0000" Y="25.0000" />
-                    <AnchorPoint />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1786" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="gold" ActionTag="-1570183998" Tag="396" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                    <Size X="25.0000" Y="25.0000" />
-                    <AnchorPoint />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1786" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="gem" ActionTag="-1558630963" Tag="397" IconVisible="False" RightMargin="115.0000" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                    <Size X="25.0000" Y="25.0000" />
-                    <AnchorPoint />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1786" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="sale_text" ActionTag="420840328" Tag="627" IconVisible="False" LeftMargin="29.9067" RightMargin="17.0933" TopMargin="2.8961" BottomMargin="4.1039" LabelText="9999999" ctype="TextBMFontObjectData">
                     <Size X="93.0000" Y="18.0000" />
