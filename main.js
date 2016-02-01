@@ -87,21 +87,13 @@ function autoWxLoginService(wxInfo){
     });
 }
 cc.game.onStart = function () {
-    /*if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+    if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+    {
+        spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
-    if(SgtApi){
+    }
 
-        SgtApi.init({appId:'h5html',async:true});
 
-        if (is_weixin() && typeof wx != "undefined") {
-            SgtApi.WxCentralService.getSignature(function(result, data) {
-                autoWxLoginService(data);
-            });
-
-        }else{
-            autoLoginService();
-        }
-    }*/
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(true);
     // Adjust viewport meta
