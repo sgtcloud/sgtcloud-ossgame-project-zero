@@ -31,19 +31,37 @@ var Equip = function (id, lv) {
         return data.hit_base + data.hit_grow * (lv - 1);
     };
     this.getPrice = function () {
-        return data.price_base + data.price_grow * (lv - 1);
+        return this.getLevelData()['upgrade'];
     };
     this.getEffect = function (key) {
         return getEffectValue(data, key, lv);
     };
     this.upgrade = function (hero) {
-        var price = this.getPrice();
-        if (player.gold >= price) {
+        var price = this.getNextLevelUpgrade();
+        var unit=price['unit']
+        if (!validateAmountEnough(price)) {
             lv += 1;
-            PlayerData.consumeResource(PlayerData.createResourceData("gold", -price));
-            game.onEquipUpdate(hero, this);
-            game.onHeroUpdate(hero);
+            var cost={value:-price.value,unit:unit}
+            PlayerData.updateResource([cost]);
+            //game.onEquipUpdate(hero, this);
+            //game.onHeroUpdate(hero);
+            for (var i in player.heroes) {
+                var cacheHero = player.heroes[i];
+                if (cacheHero.id === heroId) {
+                    cacheHero['equips'] = cacheHero['equips'] || {};
+                    if (cacheHero['equips'] instanceof Array) {
+                        cacheHero['equips'] = {};
+                    }
+                    cacheHero['equips'][this.getId()] = cacheHero['equips'][this.getId()] || {};
+                    cacheHero['equips'][this.getId()]['level'] = lv;
+                    break;
+                }
+            }
+            PlayerData.updatePlayer();
         }
+    };
+    this.isMaxLevel = function () {
+        return lv >= this.getMaxLevel();
     };
 
     this.getLevelData = function (level) {

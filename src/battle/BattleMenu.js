@@ -375,10 +375,6 @@ var HeroListMenu = BattleMenu.extend({
             }
         }
 
-        function validateAmountEnough(upgradeLevelData) {
-            var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
-            return amount < upgradeLevelData['value'];
-        }
 
         function setFont(target) {
             if (target instanceof Array) {
@@ -407,7 +403,7 @@ var HeroListMenu = BattleMenu.extend({
         var revive_btnBtnTemp = revive_btnBtn_layoutTemp.getChildByName('btn');
         var revive_btnPosition = revive_btnBtn_layoutTemp.getPosition();
 
-        function buildUpgradeBtn(elements, btnlayer,target) {
+        function buildUpgradeBtn(elements, btnlayer, target) {
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
             //var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
@@ -419,7 +415,7 @@ var HeroListMenu = BattleMenu.extend({
             //diamond.setVisible(false)
             //relic_icon.setVisible(false)
             elements.upgrade_btn = {};
-            elements.upgrade_btn.icon=icon;
+            elements.upgrade_btn.icon = icon;
             elements.upgrade_btn.layer = btnlayer;
             elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
             //elements.upgrade_btn.gold_icon = gold_icon;
@@ -431,8 +427,8 @@ var HeroListMenu = BattleMenu.extend({
             elements.upgrade_btn.lock = lock;
             elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
-            var cost=target.getNextLevelUpgrade()
-            icon.loadTexture('res/icon/resources_small/'+cost.unit+'.png');
+            var cost = target.getNextLevelUpgrade()
+            icon.loadTexture('res/icon/resources_small/' + cost.unit + '.png');
         }
 
         function buildMaxLevelBtn(elements, maxLevel) {
@@ -449,7 +445,7 @@ var HeroListMenu = BattleMenu.extend({
             var btnlayer = upgrade_btnTemp.clone();
             btnlayer.setPosition(upgradeBtnPosition);
             root.addChild(btnlayer);
-            buildUpgradeBtn(elements, btnlayer,hero);
+            buildUpgradeBtn(elements, btnlayer, hero);
             var icon = root.getChildByName('hero_icon');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
@@ -718,7 +714,7 @@ var HeroListMenu = BattleMenu.extend({
             root.addChild(maxLevel);
             root.addChild(upgradeSkill);
             var elements = {};
-            buildUpgradeBtn(elements, upgradeSkill,skill);
+            buildUpgradeBtn(elements, upgradeSkill, skill);
             buildMaxLevelBtn(elements, maxLevel);
             var icon = root.getChildByName('skill_icon');
             var name = root.getChildByName('skillName_text');
@@ -858,8 +854,7 @@ var EquipListMenu = BattleMenu.extend({
         this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
-        var itemView=ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
-
+        var itemView = ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
 
 
         var lockBtnLayoutTemplate = equipView.getChildByName('lock_btn');
@@ -873,36 +868,36 @@ var EquipListMenu = BattleMenu.extend({
         var upgradeSkillPosition = upgradeEquipBtn.getPosition();
 
 
-        function buildHeroView(hero,isFirst) {
+        function buildHeroView(hero, isFirst) {
             var root = heroView.clone();
             var icon = root.getChildByName('hero_icon');
             var name = root.getChildByName('heroName_text');
             var lv = root.getChildByName('level_text');
             var dps_text = root.getChildByName('dps_text');
-            var player_equip=root.getChildByName('player_equip');
-            var hero_equip=root.getChildByName('hero_equip');
-            if(isFirst){
+            var player_equip = root.getChildByName('player_equip');
+            var hero_equip = root.getChildByName('hero_equip');
+            if (isFirst) {
                 hero_equip.setVisible(false);
                 player_equip.setVisible(true);
-                var equipNum_text=player_equip.getChildByName('equipNum_text');
+                var equipNum_text = player_equip.getChildByName('equipNum_text');
                 equipNum_text.setString(hero.getEquipCount());
                 equipNum_text.ignoreContentAdaptWithSize(true)
-            }else {
+            } else {
                 player_equip.setVisible(false);
                 hero_equip.setVisible(true);
-                var itemList=hero_equip.getChildByName('itemList');
-                for(var i=0 ;i<hero.getEquipCount();i++){
-                    var equip=hero.getEquipData(i);
-                    var item=itemView.clone();
-                    var itemIcon=item.getChildByName('item_icon');
-                    itemIcon.loadTexture('res/icon/equips/'+equip.getIcon());
+                var itemList = hero_equip.getChildByName('itemList');
+                for (var i = 0; i < hero.getEquipCount(); i++) {
+                    var equip = hero.getEquipData(i);
+                    var item = itemView.clone();
+                    var itemIcon = item.getChildByName('item_icon');
+                    itemIcon.loadTexture('res/icon/equips/' + equip.getIcon());
                     itemList.addChild(item);
                 }
             }
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
-            lv.setString("Lv." + hero.getLv()+'/'+hero.getMaxLevel());
+            lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
             dps_text.ignoreContentAdaptWithSize(true);
             return root;
         }
@@ -913,11 +908,11 @@ var EquipListMenu = BattleMenu.extend({
             lock_btn.setPosition(lockBtnPosition);
             var maxLevel = maxLevelBtnTemplate.clone();
             maxLevel.setPosition(maxLevelBtnPosition);
-            var upgradeBtn = upgradeBtnTemp.clone();
-            upgradeBtn.setPosition(upgradeSkillPosition);
+            var upgradeLayer = upgradeBtnTemp.clone();
+            upgradeLayer.setPosition(upgradeSkillPosition);
             root.addChild(lock_btn);
             root.addChild(maxLevel);
-            root.addChild(upgradeBtn);
+            root.addChild(upgradeLayer);
             var icon = root.getChildByName('equip_icon');
             var name = root.getChildByName('equipName_text');
             var desc = root.getChildByName('equipBuffDecs_text');
@@ -925,16 +920,80 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/equips/" + equip.getIcon());
             name.setString(equip.getName());
             desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
-            lv.setString("Lv." + equip.getLv()+"/"+equip.getMaxLevel());
-            lv.setColor(cc.color(255,226,2));
-            var upgradeBtnIcon=upgradeBtn.getChildByName('icon');
-            var text=upgradeBtn.getChildByName('text_yellow');
+            lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
+            lv.setColor(cc.color(255, 226, 2));
+            var upgradeBtnIcon = upgradeLayer.getChildByName('icon');
+            var text = upgradeLayer.getChildByName('text_yellow');
             text.ignoreContentAdaptWithSize(true);
-           var upgradeCost= equip.getNextLevelUpgrade();
-            upgradeBtnIcon.loadTexture('res/icon/resources_small/'+upgradeCost.unit+'.png');
+            var upgradeCost = equip.getNextLevelUpgrade();
+            upgradeBtnIcon.loadTexture('res/icon/resources_small/' + upgradeCost.unit + '.png');
             text.setString(upgradeCost.value);
-            setFont([name,desc])
+            var upgradeBtn = upgradeLayer.getChildByName('btn');
+            validateEnough(upgradeBtn, upgradeCost, text);
+            customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function (event) {
+                updateResource(equip, {unit: 'gold'}, upgradeBtn, text);
+            });
+            customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
+                updateResource(equip, {unit: 'gem'}, upgradeBtn, text);
+            });
+            customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function (event) {
+                updateResource(equip, {unit: 'relic'}, upgradeBtn, text);
+            });
+            //customEventHelper.bindListener(EVENT.UPDATE_RESOURCE,function(event){
+            //    var data=event.getUserData();
+            //    var unit=data['unit'];
+            //    var cost=equip.getNextLevelUpgrade();
+            //    if(cost['unit']===unit&&!validateAmountEnough(data)){
+            //        upgradeBtn.setEnabled(true);
+            //        upgradeBtn.setBright(true);
+            //        text.setColor(cc.color(255, 255, 255));
+            //    }
+            //});
+            upgradeBtn.addClickEventListener(function (event) {
+                var cost = equip.getLevelData()['upgrade'];
+                equip.upgrade();
+                if (cost.unit === "gold") {
+                    //customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                } else if (cost.unit === "gem") {
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                } else if (cost.unit === "relic") {
+                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                }
+                lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
+                if (equip.isMaxLevel()) {
+                    upgradeBtn.setVisible(false);
+                    maxLevel.setVisible(true);
+                } else {
+                    var nextCost = equip.getNextLevelUpgrade();
+                    upgradeBtnIcon.loadTexture('res/icon/resources_small/' + nextCost.unit + '.png');
+                    text.setString(nextCost.value);
+                    validateEnough(upgradeBtn, nextCost, text);
+                }
+                console.log('equip[' + equip.getId() + '] has been clicked,current level is ' + equip.getLv());
+            });
+            setFont([name, desc])
             return root;
+        }
+
+        function updateResource(equip, data, upgradeBtn, text) {
+            var cost = equip.getNextLevelUpgrade();
+            var unit = data['unit'];
+            if (cost['unit'] === unit) {
+                validateEnough(upgradeBtn,cost,text);
+            }
+        }
+
+        function validateEnough(btn, upgradeData, txt) {
+            if (validateAmountEnough(upgradeData)) {
+                btn.setEnabled(false);
+                btn.setBright(false);
+                txt.setColor(cc.color(255, 0, 0));
+            }else{
+                btn.setEnabled(true);
+                btn.setBright(true);
+                txt.setColor(cc.color(255, 255, 255));
+            }
         }
 
         this.views = {};
@@ -942,27 +1001,27 @@ var EquipListMenu = BattleMenu.extend({
             var that = this;
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
-                var isFirst=i===0;
+                var isFirst = i === 0;
                 if (heroData.getLv() > 0) {
-                    buildEquipMenuIfUnlocked(heroData,isFirst);
+                    buildEquipMenuIfUnlocked(heroData, isFirst);
                 } else {
                     (function (hero) {
                         var _hero = hero;
-                        var first=isFirst;
+                        var first = isFirst;
                         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                             var heroId = event.getUserData()['heroId'];
                             console.log("hero " + heroId + ' and the heroData is ' + _hero.getId())
                             if (heroId === _hero.getId() && _hero.getLv() === 1) {
                                 console.log('hero ' + heroId + ' is unlocked ')
-                                buildEquipMenuIfUnlocked(_hero,first);
+                                buildEquipMenuIfUnlocked(_hero, first);
                             }
                         });
                     })(heroData)
                 }
             }
 
-            function buildEquipMenuIfUnlocked(heroData,isFirst) {
-                var _heroView = buildHeroView(heroData,isFirst);
+            function buildEquipMenuIfUnlocked(heroData, isFirst) {
+                var _heroView = buildHeroView(heroData, isFirst);
                 console.log('build equip')
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
@@ -1098,18 +1157,18 @@ var ShopLayerMenu = BattleMenu.extend({
             var shopListViewRoot = shopListView.getChildByName('root');
             var shopListViewRootClone = shopListViewRoot.clone();
             var goods = dataSource.goods;
-           /* for (var j in shopListViewRoot.getChildren()) {
-                shopListViewRoot.getChildren()[j].setVisible(false);
-            }*/
+            /* for (var j in shopListViewRoot.getChildren()) {
+             shopListViewRoot.getChildren()[j].setVisible(false);
+             }*/
             var n = n1 = 0;
             for (var i in goods) {
                 n++;
             }
             var len = n;
-            n=0;
+            n = 0;
             shopPorps.removeAllChildren(true);
             for (var i in goods) {
-                n ++;
+                n++;
                 n1++;
                 var datas = goods[i];
                 var itemLayer = shopItemLayerRoot.clone();
@@ -1120,7 +1179,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 saleText.setString(datas.num);
 
                 var itemIcon = iconLayer.getChildByName("item_icon");
-                itemIcon.loadTexture("res/icon/resources/" + datas.propId+".png");
+                itemIcon.loadTexture("res/icon/resources/" + datas.propId + ".png");
                 iconLayer.setPosition(shopIconLayer.getPosition());
                 itemLayer.addChild(iconLayer);
                 itemLayer.getChildByName("item_name").setString(datas.propId);
@@ -1140,10 +1199,10 @@ var ShopLayerMenu = BattleMenu.extend({
 
                 self.clickBtn(buyBtn, datas);
 
-                itemLayer.setPosition(shopListViewRoot.getChildByName("item"+n1).getPosition());
+                itemLayer.setPosition(shopListViewRoot.getChildByName("item" + n1).getPosition());
                 shopListViewRootClone.addChild(itemLayer);
 
-                if(n % 3 == 0 || n == len - 1){
+                if (n % 3 == 0 || n == len - 1) {
                     n1 = 0;
                     shopPorps.setItemsMargin(20);
                     shopPorps.pushBackCustomItem(shopListViewRootClone);
@@ -1180,7 +1239,7 @@ var ShopLayerMenu = BattleMenu.extend({
                         popup.hiddenPopup();
                         self.showMenuLayer("moneyTree_tab");
                     });
-                }else{
+                } else {
                     new Popup1("友情提示", "当前该资源不足", function (popup) {
                         popup.hiddenPopup();
                     });

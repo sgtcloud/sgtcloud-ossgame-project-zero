@@ -279,6 +279,7 @@ var Hero = function (heroData) {
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
                 player.heroes[i]['lv'] = lv;
+                break;
             }
         }
     }

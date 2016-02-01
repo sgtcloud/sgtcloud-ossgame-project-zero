@@ -88,7 +88,10 @@ function initGame() {
     game = new MainScene();
     PlayerData.init();
 }
-
+function validateAmountEnough(upgradeLevelData) {
+    var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
+    return amount < upgradeLevelData['value'];
+}
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
 
