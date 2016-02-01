@@ -300,8 +300,8 @@
                       "Path": "buttonUI/buy2.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 34,
-                    "Scale9Height": 19,
+                    "Scale9Width": 45,
+                    "Scale9Height": 21,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -321,19 +321,19 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.3778,
-                      "Y": 0.475
+                      "X": 0.5,
+                      "Y": 0.525
                     },
-                    "LeftMargin": 28.0,
-                    "RightMargin": 28.0,
-                    "TopMargin": 10.5,
-                    "BottomMargin": 10.5,
+                    "LeftMargin": 22.5,
+                    "RightMargin": 22.5,
+                    "TopMargin": 9.5,
+                    "BottomMargin": 9.5,
                     "CallBackType": "Click",
                     "Tag": 392,
                     "ActionTag": -1993534234,
                     "Size": {
-                      "X": 34.0,
-                      "Y": 19.0
+                      "X": 45.0,
+                      "Y": 21.0
                     },
                     "Name": "buy_text",
                     "ctype": "ImageViewObjectData"
@@ -423,137 +423,22 @@
                       "X": 25.0,
                       "Y": 25.0
                     },
-                    "Name": "key",
+                    "Name": "icon",
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FileData": {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "mainUI/relic.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 0.1786,
-                      "Y": 1.0
-                    },
-                    "RightMargin": 115.0,
-                    "Tag": 395,
-                    "ActionTag": 1464314918,
-                    "Size": {
-                      "X": 25.0,
-                      "Y": 25.0
-                    },
-                    "Name": "relic",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "mainUI/gold.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 0.1786,
-                      "Y": 1.0
-                    },
-                    "RightMargin": 115.0,
-                    "Tag": 396,
-                    "ActionTag": -1570183998,
-                    "Size": {
-                      "X": 25.0,
-                      "Y": 25.0
-                    },
-                    "Name": "gold",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "FileData": {
-                      "Type": "Normal",
-                      "Path": "mainUI/diamond.png",
-                      "Plist": ""
-                    },
-                    "Scale9Width": 40,
-                    "Scale9Height": 40,
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "PreSize": {
-                      "X": 0.1786,
-                      "Y": 1.0
-                    },
-                    "RightMargin": 115.0,
-                    "Tag": 397,
-                    "ActionTag": -1558630963,
-                    "Size": {
-                      "X": 25.0,
-                      "Y": 25.0
-                    },
-                    "Name": "gem",
-                    "ctype": "ImageViewObjectData"
-                  },
-                  {
-                    "CharWidth": 12,
-                    "CharHeight": 11,
-                    "LabelText": "999999",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
-                      "Path": "buttonUI/font16_yellow.png",
+                      "Path": "font/font16_yellow_kmbb-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 66.4971,
-                      "Y": 12.2933
+                      "X": 29.9067,
+                      "Y": 13.1039
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -562,25 +447,25 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.475,
-                      "Y": 0.4917
+                      "X": 0.2136,
+                      "Y": 0.5242
                     },
                     "PreSize": {
-                      "X": 0.5143,
-                      "Y": 0.44
+                      "X": 0.6643,
+                      "Y": 0.72
                     },
-                    "LeftMargin": 30.4971,
-                    "RightMargin": 37.5029,
-                    "TopMargin": 7.2067,
-                    "BottomMargin": 6.7933,
-                    "Tag": 398,
-                    "ActionTag": 1883352848,
+                    "LeftMargin": 29.9067,
+                    "RightMargin": 17.0933,
+                    "TopMargin": 2.8961,
+                    "BottomMargin": 4.1039,
+                    "Tag": 627,
+                    "ActionTag": 420840328,
                     "Size": {
-                      "X": 72.0,
-                      "Y": 11.0
+                      "X": 93.0,
+                      "Y": 18.0
                     },
                     "Name": "sale_text",
-                    "ctype": "TextAtlasObjectData"
+                    "ctype": "TextBMFontObjectData"
                   }
                 ],
                 "ActionTag": 1098940521,
@@ -610,14 +495,12 @@
       },
       "UsedResources": [
         "buttonUI/buy2.png",
-        "buttonUI/font16_yellow.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "ItemLayer.json",
         "mainUI/bg_01.png",
         "mainUI/bg_14.png",
-        "mainUI/diamond.png",
-        "mainUI/gold.png",
-        "mainUI/key.png",
-        "mainUI/relic.png"
+        "mainUI/key.png"
       ],
       "ctype": "GameFileData"
     }

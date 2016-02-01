@@ -17,85 +17,54 @@ var CONSTS = {
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
     "click_chest_random_events": [{
-        "skill_id": "s10107",
-        "level": 2,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "f": {
+            "skill_id": "s10107",
+            "level": 2,
+            "chestStyle": "chest01.json"
+        },
+        "w": 5
     }, {
-        "skill_id" : "s10107",
-        "level" : 3,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "f": {
+            "skill_id": "s10107",
+            "level": 3,
+            "chestStyle": "chest01.json"
+        },
+        "w": 4
     }, {
-        "skill_id" : "s10107",
-        "level" : 4,
-        "weight" : 4,
-        "chestStyle" : "chest01.json"
+        "f": {
+            "skill_id": "s10107",
+            "level": 4,
+            "chestStyle": "chest01.json"
+        },
+        "w": 3
     }, {
-        "skill_id": "s10103",
-        "level": 2,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "f": {
+            "skill_id": "s10107",
+            "level": 5,
+            "chestStyle": "chest01.json"
+        },
+        "w": 2
     }, {
-        "skill_id": "s10103",
-        "level": 3,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "f": {
+            "skill_id": "s10101",
+            "level": 2,
+            "chestStyle": "chest01.json"
+        },
+        "w": 1
     }, {
-        "skill_id": "s10103",
-        "level": 4,
-        "weight": 4,
-        "chestStyle": "chest01.json"
+        "f": {
+            "skill_id": "s10101",
+            "level": 3,
+            "chestStyle": "chest01.json"
+        },
+        "w": 4
     }, {
-        "skill_id": "s10106",
-        "level": 2,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "s10106",
-        "level": 3,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "s10106",
-        "level": 4,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "s10105",
-        "level": 2,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "s10105",
-        "level": 3,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "s10105",
-        "level": 4,
-        "weight": 4,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "gold",
-        "level": 3,
-        "weight": 13,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "gold",
-        "level": 5,
-        "weight": 13,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "gold",
-        "level": 7,
-        "weight": 13,
-        "chestStyle": "chest01.json"
-    }, {
-        "skill_id": "gold",
-        "level": 10,
-        "weight": 13,
-        "chestStyle": "chest01.json"
+        "f": {
+            "skill_id": "gold",
+            "level": 2,
+            "chestStyle": "chest01.json"
+        },
+        "w": 6
     }]
 }
 
@@ -119,7 +88,21 @@ function initGame() {
     game = new MainScene();
     PlayerData.init();
 }
-
+function validateAmountEnough(upgradeLevelData) {
+    var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
+    return amount < upgradeLevelData['value'];
+}
+function validateEnoughResource(nextlevelData, upgrade_btn, text) {
+    if (validateAmountEnough(nextlevelData)) {
+        upgrade_btn.setEnabled(false);
+        upgrade_btn.setBright(false);
+        text.setColor(cc.color(255, 0, 0));
+    } else {
+        upgrade_btn.setEnabled(true);
+        upgrade_btn.setBright(true);
+        text.setColor(cc.color(255, 255, 255));
+    }
+}
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
 
@@ -234,7 +217,7 @@ function bindTouchEventListener(listener, target) {
 function bindMouseEventListener(listener, target) {
     var mouseDownEventListener = cc.EventListener.create({
         event: cc.EventListener.MOUSE,
-        swallowTouches: true,
+        swallowTouches: false,
         onMouseDown: function (touch, event) {
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();

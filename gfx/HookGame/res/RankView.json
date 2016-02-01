@@ -313,22 +313,18 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 21,
-                "CharHeight": 21,
-                "LabelText": "99",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font28_yellow.png",
+                  "Path": "font/font16_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 520.2898,
-                  "Y": 52.8044
+                  "X": 120.1807,
+                  "Y": 55.0215
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -337,110 +333,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8671,
-                  "Y": 0.528
+                  "X": 0.2003,
+                  "Y": 0.5502
                 },
                 "PreSize": {
-                  "X": 0.07,
-                  "Y": 0.21
+                  "X": 0.1067,
+                  "Y": 0.18
                 },
-                "LeftMargin": 499.2898,
-                "RightMargin": 58.7102,
-                "TopMargin": 36.6956,
-                "BottomMargin": 42.3044,
-                "Tag": 391,
-                "ActionTag": -536068057,
+                "LeftMargin": 120.1807,
+                "RightMargin": 415.8193,
+                "TopMargin": 35.9785,
+                "BottomMargin": 46.0215,
+                "Tag": 605,
+                "ActionTag": -731661308,
                 "Size": {
-                  "X": 42.0,
-                  "Y": 21.0
-                },
-                "Name": "num",
-                "ctype": "TextAtlasObjectData"
-              },
-              {
-                "CharWidth": 18,
-                "CharHeight": 17,
-                "LabelText": "1234",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
-                  "Type": "Normal",
-                  "Path": "mainUI/font22_white.png",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.4757,
-                  "ScaleY": 0.5309
-                },
-                "Position": {
-                  "X": 183.3195,
-                  "Y": 54.1115
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.3055,
-                  "Y": 0.5411
-                },
-                "PreSize": {
-                  "X": 0.12,
-                  "Y": 0.17
-                },
-                "LeftMargin": 149.0691,
-                "RightMargin": 378.9309,
-                "TopMargin": 37.9138,
-                "BottomMargin": 45.0862,
-                "Tag": 1145,
-                "ActionTag": 349901887,
-                "Size": {
-                  "X": 72.0,
-                  "Y": 17.0
+                  "X": 64.0,
+                  "Y": 18.0
                 },
                 "Name": "level_text",
-                "ctype": "TextAtlasObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "rankUI/level.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 44,
-                "Scale9Height": 23,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 115.2229,
-                  "Y": 42.0862
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.192,
-                  "Y": 0.4209
-                },
-                "PreSize": {
-                  "X": 0.0683,
-                  "Y": 0.23
-                },
-                "LeftMargin": 115.2229,
-                "RightMargin": 443.7771,
-                "TopMargin": 34.9138,
-                "BottomMargin": 42.0862,
-                "Tag": 1146,
-                "ActionTag": -1403379763,
-                "Size": {
-                  "X": 41.0,
-                  "Y": 23.0
-                },
-                "Name": "player_lv",
-                "ctype": "ImageViewObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -483,22 +394,19 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 18,
-                "CharHeight": 17,
                 "LabelText": "99",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "mainUI/font22_white.png",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.4757,
-                  "ScaleY": 0.5309
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 247.7206,
-                  "Y": 22.9446
+                  "X": 249.9644,
+                  "Y": 23.3011
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -507,25 +415,68 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4129,
-                  "Y": 0.2294
+                  "X": 0.4166,
+                  "Y": 0.233
                 },
                 "PreSize": {
-                  "X": 0.06,
-                  "Y": 0.17
+                  "X": 0.0583,
+                  "Y": 0.19
                 },
-                "LeftMargin": 230.5954,
-                "RightMargin": 333.4046,
-                "TopMargin": 69.0807,
-                "BottomMargin": 13.9193,
-                "Tag": 29,
-                "ActionTag": 19986441,
+                "LeftMargin": 232.4644,
+                "RightMargin": 332.5356,
+                "TopMargin": 67.1989,
+                "BottomMargin": 13.8011,
+                "CallBackType": "Click",
+                "Tag": 606,
+                "ActionTag": -1027378603,
                 "Size": {
-                  "X": 36.0,
-                  "Y": 17.0
+                  "X": 35.0,
+                  "Y": 19.0
                 },
                 "Name": "prestige_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "LabelText": "99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 519.2378,
+                  "Y": 51.4915
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8654,
+                  "Y": 0.5149
+                },
+                "PreSize": {
+                  "X": 0.0583,
+                  "Y": 0.19
+                },
+                "LeftMargin": 501.7378,
+                "RightMargin": 63.2622,
+                "TopMargin": 39.0085,
+                "BottomMargin": 41.9915,
+                "Tag": 607,
+                "ActionTag": -1890154072,
+                "Size": {
+                  "X": 35.0,
+                  "Y": 19.0
+                },
+                "Name": "num",
+                "ctype": "TextBMFontObjectData"
               }
             ],
             "ActionTag": 318411989,
@@ -545,12 +496,13 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
+        "font/font22_yellow_kmbb-export.fnt",
+        "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_05.png",
-        "mainUI/font22_white.png",
-        "mainUI/font28_yellow.png",
         "mainUI/hero_icon.png",
         "rankUI/clearance_rank.png",
-        "rankUI/level.png",
         "rankUI/pvp_rank.png",
         "rankUI/rankView_bg.png",
         "rankUI/transformation.png"

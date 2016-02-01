@@ -84,7 +84,16 @@ var EVENT = {
     /**
      * 解锁英雄
      */
-    UNLOCK_HERO:"UNLOCK_HERO"
+    UNLOCK_HERO:"UNLOCK_HERO",
+    /**
+     * 更新技能总攻击显示
+     */
+    UPGRADE_HERO_ATTACK:"UPGRADE_HERO_ATTACK",
+    /**
+     * 更新指定资源（金币、钻石、宝物...）
+     * 参数:{unit:资源类型,value:资源值}
+     */
+    UPDATE_RESOURCE:'UPDATE_RESOURCE'
 };
 
 var customEventHelper = {

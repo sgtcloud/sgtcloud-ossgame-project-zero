@@ -184,56 +184,45 @@
                 "ctype": "TextObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 18,
-                "LabelText": "Lv.9999/9999",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "Lv.9999/999999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0003,
-                  "Y": 50.0
+                  "X": 119.748,
+                  "Y": 60.0624
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1923,
-                  "Y": 0.4545
+                  "X": 0.1919,
+                  "Y": 0.546
                 },
                 "PreSize": {
-                  "X": 0.2564,
-                  "Y": 0.1636
+                  "X": 0.258,
+                  "Y": 0.1364
                 },
-                "LeftMargin": 120.0003,
-                "RightMargin": 343.9997,
-                "TopMargin": 42.0,
-                "BottomMargin": 50.0,
-                "Tag": 220,
-                "ActionTag": -1831681872,
+                "LeftMargin": 119.748,
+                "RightMargin": 343.252,
+                "TopMargin": 42.4376,
+                "BottomMargin": 52.5624,
+                "Tag": 250,
+                "ActionTag": 1008944852,
                 "Size": {
-                  "X": 160.0,
-                  "Y": 18.0
+                  "X": 161.0,
+                  "Y": 15.0
                 },
                 "Name": "level_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -279,13 +268,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 13,
-                "LabelText": "69568844",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "9999999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_white.png",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -293,8 +279,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 384.7208,
-                  "Y": 44.0227
+                  "X": 383.6694,
+                  "Y": 45.069
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -303,25 +289,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6165,
-                  "Y": 0.4002
+                  "X": 0.6149,
+                  "Y": 0.4097
                 },
                 "PreSize": {
-                  "X": 0.1538,
-                  "Y": 0.1182
+                  "X": 0.149,
+                  "Y": 0.1364
                 },
-                "LeftMargin": 336.7208,
-                "RightMargin": 191.2792,
-                "TopMargin": 59.4773,
-                "BottomMargin": 37.5227,
-                "Tag": 473,
-                "ActionTag": 1401349662,
+                "LeftMargin": 337.1694,
+                "RightMargin": 193.8306,
+                "TopMargin": 57.431,
+                "BottomMargin": 37.569,
+                "Tag": 249,
+                "ActionTag": -836566228,
                 "Size": {
-                  "X": 96.0,
-                  "Y": 13.0
+                  "X": 93.0,
+                  "Y": 15.0
                 },
                 "Name": "dps_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -367,56 +353,46 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 18,
                 "LabelText": "99:99",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font18_white-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 63.1893,
-                  "Y": 42.2405
+                  "X": 60.3768,
+                  "Y": 45.2378
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1013,
-                  "Y": 0.384
+                  "X": 0.0968,
+                  "Y": 0.4113
                 },
                 "PreSize": {
-                  "X": 0.0721,
-                  "Y": 0.1636
+                  "X": 0.0994,
+                  "Y": 0.1727
                 },
-                "LeftMargin": 40.6893,
-                "RightMargin": 538.3107,
-                "TopMargin": 58.7595,
-                "BottomMargin": 33.2405,
-                "Tag": 382,
-                "ActionTag": 1970479199,
+                "LeftMargin": 29.3768,
+                "RightMargin": 532.6232,
+                "TopMargin": 55.2622,
+                "BottomMargin": 35.7378,
+                "Tag": 424,
+                "ActionTag": 571675629,
                 "Size": {
-                  "X": 45.0,
-                  "Y": 18.0
+                  "X": 62.0,
+                  "Y": 19.0
                 },
                 "Name": "die_time_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -1250,7 +1226,10 @@
         "Btn_MaxLevel.json",
         "Btn_Revive.json",
         "Btn_Upgrade1.json",
-        "buttonUI/font16_white.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
+        "font/font18_white-export.fnt",
+        "font/font18_white-export.png",
         "heroUI/hero_bg.png",
         "heroUI/heroHP.png",
         "heroUI/reviveTime.png",

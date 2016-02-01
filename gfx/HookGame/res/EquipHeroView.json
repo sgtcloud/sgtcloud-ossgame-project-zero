@@ -185,56 +185,46 @@
                 "ctype": "TextObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 18,
-                "LabelText": "Lv.9999/9999",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 120.0003,
-                  "Y": 50.0
+                  "X": 123.4496,
+                  "Y": 59.8342
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1923,
-                  "Y": 0.4545
+                  "X": 0.1978,
+                  "Y": 0.5439
                 },
                 "PreSize": {
-                  "X": 0.2564,
-                  "Y": 0.1636
+                  "X": 0.1026,
+                  "Y": 0.1364
                 },
-                "LeftMargin": 120.0003,
-                "RightMargin": 343.9997,
-                "TopMargin": 42.0,
-                "BottomMargin": 50.0,
-                "Tag": 843,
-                "ActionTag": -557855147,
+                "LeftMargin": 123.4496,
+                "RightMargin": 436.5504,
+                "TopMargin": 42.6658,
+                "BottomMargin": 52.3342,
+                "CallBackType": "Click",
+                "Tag": 1054,
+                "ActionTag": 1071298966,
                 "Size": {
-                  "X": 160.0,
-                  "Y": 18.0
+                  "X": 64.0,
+                  "Y": 15.0
                 },
                 "Name": "level_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -280,13 +270,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 13,
-                "LabelText": "69568844",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelText": "99999",
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_white.png",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -294,8 +281,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 384.7208,
-                  "Y": 44.4546
+                  "X": 384.3271,
+                  "Y": 46.7691
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -304,25 +291,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6165,
-                  "Y": 0.4041
+                  "X": 0.6159,
+                  "Y": 0.4252
                 },
                 "PreSize": {
-                  "X": 0.1538,
-                  "Y": 0.1182
+                  "X": 0.1074,
+                  "Y": 0.1364
                 },
-                "LeftMargin": 336.7208,
-                "RightMargin": 191.2792,
-                "TopMargin": 59.0454,
-                "BottomMargin": 37.9546,
-                "Tag": 845,
-                "ActionTag": -1147063697,
+                "LeftMargin": 350.8271,
+                "RightMargin": 206.1729,
+                "TopMargin": 55.7309,
+                "BottomMargin": 39.2691,
+                "Tag": 1052,
+                "ActionTag": 191675235,
                 "Size": {
-                  "X": 96.0,
-                  "Y": 13.0
+                  "X": 67.0,
+                  "Y": 15.0
                 },
                 "Name": "dps_text",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -366,170 +353,6 @@
                 },
                 "Name": "dps",
                 "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ItemLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 472.1453,
-                  "Y": 30.1181
-                },
-                "Scale": {
-                  "ScaleX": 0.3,
-                  "ScaleY": 0.3
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.7566,
-                  "Y": 0.2738
-                },
-                "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.9091
-                },
-                "LeftMargin": 472.1453,
-                "RightMargin": 51.8547,
-                "TopMargin": -20.1181,
-                "BottomMargin": 30.1181,
-                "Tag": 885,
-                "ActionTag": -1754001681,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 100.0
-                },
-                "Name": "item1",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ItemLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 505.1481,
-                  "Y": 30.1181
-                },
-                "Scale": {
-                  "ScaleX": 0.3,
-                  "ScaleY": 0.3
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.8095,
-                  "Y": 0.2738
-                },
-                "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.9091
-                },
-                "LeftMargin": 505.1481,
-                "RightMargin": 18.8519,
-                "TopMargin": -20.1181,
-                "BottomMargin": 30.1181,
-                "Tag": 891,
-                "ActionTag": -570615290,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 100.0
-                },
-                "Name": "item2",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ItemLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 538.1512,
-                  "Y": 30.1181
-                },
-                "Scale": {
-                  "ScaleX": 0.3,
-                  "ScaleY": 0.3
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.8624,
-                  "Y": 0.2738
-                },
-                "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.9091
-                },
-                "LeftMargin": 538.1512,
-                "RightMargin": -14.1512,
-                "TopMargin": -20.1181,
-                "BottomMargin": 30.1181,
-                "Tag": 897,
-                "ActionTag": 499344079,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 100.0
-                },
-                "Name": "item3",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "ItemLayer.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 571.1542,
-                  "Y": 30.1181
-                },
-                "Scale": {
-                  "ScaleX": 0.3,
-                  "ScaleY": 0.3
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.9153,
-                  "Y": 0.2738
-                },
-                "PreSize": {
-                  "X": 0.1603,
-                  "Y": 0.9091
-                },
-                "LeftMargin": 571.1542,
-                "RightMargin": -47.1542,
-                "TopMargin": -20.1181,
-                "BottomMargin": 30.1181,
-                "Tag": 903,
-                "ActionTag": -1681308472,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 100.0
-                },
-                "Name": "item4",
-                "ctype": "ProjectNodeObjectData"
               },
               {
                 "AnchorPoint": {},
@@ -1176,64 +999,26 @@
                 "ctype": "SingleNodeObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "equipUI/equip_text.png",
-                  "Plist": ""
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "Scale9Width": 84,
-                "Scale9Height": 25,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "Position": {
-                  "X": 534.9274,
-                  "Y": 88.8924
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
+                "EndColor": {},
+                "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.8573,
-                  "Y": 0.8081
-                },
-                "PreSize": {
-                  "X": 0.1346,
-                  "Y": 0.2273
-                },
-                "LeftMargin": 492.9274,
-                "RightMargin": 47.0726,
-                "TopMargin": 8.6076,
-                "BottomMargin": 76.3924,
-                "CallBackType": "Touch",
-                "Tag": 879,
-                "ActionTag": 2032186843,
-                "Size": {
-                  "X": 84.0,
-                  "Y": 25.0
-                },
-                "Name": "heroEquip_text",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "heroUI/text_bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 11,
-                "Scale9OriginY": 11,
-                "Scale9Width": 12,
-                "Scale9Height": 14,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 476.5855,
-                  "Y": 13.4376
+                  "X": 468.7505,
+                  "Y": 32.3297
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1242,43 +1027,142 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7638,
-                  "Y": 0.1222
+                  "X": 0.7512,
+                  "Y": 0.2939
                 },
                 "PreSize": {
-                  "X": 0.1923,
-                  "Y": 0.5455
+                  "X": 0.2404,
+                  "Y": 0.6364
                 },
-                "LeftMargin": 476.5855,
-                "RightMargin": 27.4145,
-                "TopMargin": 36.5624,
-                "BottomMargin": 13.4376,
-                "Tag": 882,
-                "ActionTag": -1910765510,
+                "LeftMargin": 468.7505,
+                "RightMargin": 5.2495,
+                "TopMargin": 7.6703,
+                "BottomMargin": 32.3297,
+                "CallBackType": "Click",
+                "Tag": 278,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "equipUI/equip_text.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 84,
+                    "Scale9Height": 25,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 66.0158,
+                      "Y": 57.2542
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4401,
+                      "Y": 0.8179
+                    },
+                    "PreSize": {
+                      "X": 0.56,
+                      "Y": 0.3571
+                    },
+                    "LeftMargin": 24.0158,
+                    "RightMargin": 41.9842,
+                    "TopMargin": 0.2458,
+                    "BottomMargin": 44.7542,
+                    "CallBackType": "Touch",
+                    "Tag": 879,
+                    "ActionTag": 2032186843,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 25.0
+                    },
+                    "Name": "heroEquip_text",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "VerticalType": "Align_VerticalCenter",
+                    "IsBounceEnabled": true,
+                    "ScrollDirectionType": 0,
+                    "ClipAble": true,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 150
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.9333,
+                      "Y": 0.4286
+                    },
+                    "RightMargin": 10.0,
+                    "TopMargin": 40.0,
+                    "Tag": 87,
+                    "ActionTag": 700881433,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 30.0
+                    },
+                    "Name": "itemList",
+                    "ctype": "ListViewObjectData"
+                  }
+                ],
+                "ActionTag": 490580309,
                 "Size": {
-                  "X": 120.0,
-                  "Y": 60.0
+                  "X": 150.0,
+                  "Y": 70.0
                 },
-                "Name": "equipNum_bg",
-                "ctype": "ImageViewObjectData"
+                "Name": "hero_equip",
+                "ctype": "PanelObjectData"
               },
               {
-                "CharWidth": 12,
-                "CharHeight": 13,
-                "LabelText": "69568844",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
-                  "Type": "Normal",
-                  "Path": "buttonUI/font16_white.png",
-                  "Plist": ""
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
                 },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 537.7601,
-                  "Y": 44.4546
+                  "X": 475.2215,
+                  "Y": 13.3678
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1287,69 +1171,156 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8618,
-                  "Y": 0.4041
+                  "X": 0.7616,
+                  "Y": 0.1215
                 },
                 "PreSize": {
-                  "X": 0.1538,
-                  "Y": 0.1182
+                  "X": 0.2244,
+                  "Y": 0.8182
                 },
-                "LeftMargin": 489.7601,
-                "RightMargin": 38.2399,
-                "TopMargin": 59.0454,
-                "BottomMargin": 37.9546,
-                "Tag": 883,
-                "ActionTag": 1366211527,
+                "LeftMargin": 475.2215,
+                "RightMargin": 8.7785,
+                "TopMargin": 6.6322,
+                "BottomMargin": 13.3678,
+                "Tag": 215,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "heroUI/text_bg.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 11,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 12,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 1.2796,
+                      "Y": 1.1375
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0091,
+                      "Y": 0.0126
+                    },
+                    "PreSize": {
+                      "X": 0.8571,
+                      "Y": 0.6667
+                    },
+                    "LeftMargin": 1.2796,
+                    "RightMargin": 18.7204,
+                    "TopMargin": 28.8625,
+                    "BottomMargin": 1.1375,
+                    "Tag": 882,
+                    "ActionTag": -1910765510,
+                    "Size": {
+                      "X": 120.0,
+                      "Y": 60.0
+                    },
+                    "Name": "equipNum_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "equipUI/equip_text2.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 84,
+                    "Scale9Height": 25,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 59.6223,
+                      "Y": 76.5919
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4259,
+                      "Y": 0.851
+                    },
+                    "PreSize": {
+                      "X": 0.6,
+                      "Y": 0.2778
+                    },
+                    "LeftMargin": 17.6223,
+                    "RightMargin": 38.3777,
+                    "TopMargin": 0.9081,
+                    "BottomMargin": 64.0919,
+                    "CallBackType": "Touch",
+                    "Tag": 884,
+                    "ActionTag": -249085522,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 25.0
+                    },
+                    "Name": "playerEquip_text",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "99999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/font16_white_kmbb-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 61.0328,
+                      "Y": 34.4692
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4359,
+                      "Y": 0.383
+                    },
+                    "PreSize": {
+                      "X": 0.4786,
+                      "Y": 0.1667
+                    },
+                    "LeftMargin": 27.5328,
+                    "RightMargin": 45.4672,
+                    "TopMargin": 48.0308,
+                    "BottomMargin": 26.9692,
+                    "Tag": 1053,
+                    "ActionTag": 1853760734,
+                    "Size": {
+                      "X": 67.0,
+                      "Y": 15.0
+                    },
+                    "Name": "equipNum_text",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 1233992130,
                 "Size": {
-                  "X": 96.0,
-                  "Y": 13.0
+                  "X": 140.0,
+                  "Y": 90.0
                 },
-                "Name": "equipNum_text",
-                "ctype": "TextAtlasObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "equipUI/equip_text2.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 84,
-                "Scale9Height": 25,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 534.9274,
-                  "Y": 88.8924
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.8573,
-                  "Y": 0.8081
-                },
-                "PreSize": {
-                  "X": 0.1346,
-                  "Y": 0.2273
-                },
-                "LeftMargin": 492.9274,
-                "RightMargin": 47.0726,
-                "TopMargin": 8.6076,
-                "BottomMargin": 76.3924,
-                "CallBackType": "Touch",
-                "Tag": 884,
-                "ActionTag": -249085522,
-                "Size": {
-                  "X": 84.0,
-                  "Y": 25.0
-                },
-                "Name": "playerEquip_text",
-                "ctype": "ImageViewObjectData"
+                "Name": "player_equip",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 1918538116,
@@ -1369,15 +1340,15 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_white.png",
         "equipUI/equip_text.png",
         "equipUI/equip_text2.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/hero_bg.png",
         "heroUI/heroHP.png",
         "heroUI/star1.png",
         "heroUI/star2.png",
         "heroUI/text_bg.png",
-        "ItemLayer.json",
         "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"

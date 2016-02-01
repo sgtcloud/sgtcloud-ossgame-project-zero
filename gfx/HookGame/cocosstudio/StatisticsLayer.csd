@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_01.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg" CanEdit="False" ActionTag="583651268" Tag="77" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="13.0000" BottomMargin="667.0000" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="60.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.9419" />
                 <PreSize X="0.9531" Y="0.0811" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_text" CanEdit="False" ActionTag="-464060028" Tag="5" IconVisible="False" LeftMargin="182.5000" RightMargin="182.5000" TopMargin="13.5000" BottomMargin="667.5000" Scale9Width="275" Scale9Height="59" ctype="ImageViewObjectData">
                 <Size X="275.0000" Y="59.0000" />
@@ -50,7 +50,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="current_text" ActionTag="1268876338" Tag="46" IconVisible="False" LeftMargin="25.4996" RightMargin="442.5004" TopMargin="3.0001" BottomMargin="319.9999" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="116" Scale9Height="21" ctype="ImageViewObjectData">
                     <Size X="142.0000" Y="47.0000" />
@@ -355,7 +355,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="cumulative_text" ActionTag="-1622659418" Tag="77" IconVisible="False" LeftMargin="25.4996" RightMargin="442.5004" TopMargin="3.5000" BottomMargin="209.5000" Scale9Width="142" Scale9Height="47" ctype="ImageViewObjectData">
                     <Size X="142.0000" Y="47.0000" />
@@ -461,7 +461,7 @@
                         <Position X="0.0001" Y="152.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.8000" />
+                        <PrePosition Y="0.8000" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -471,7 +471,7 @@
                         <Position X="0.0001" Y="127.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.6684" />
+                        <PrePosition Y="0.6684" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -481,7 +481,7 @@
                         <Position X="0.0001" Y="102.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.5368" />
+                        <PrePosition Y="0.5368" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -491,7 +491,7 @@
                         <Position X="0.0001" Y="77.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.4053" />
+                        <PrePosition Y="0.4053" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -501,7 +501,7 @@
                         <Position X="0.0001" Y="52.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.2737" />
+                        <PrePosition Y="0.2737" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -511,7 +511,7 @@
                         <Position X="0.0001" Y="27.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.1421" />
+                        <PrePosition Y="0.1421" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>
@@ -521,7 +521,7 @@
                         <Position X="0.0001" Y="2.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.0000" Y="0.0105" />
+                        <PrePosition Y="0.0105" />
                         <PreSize X="0.4857" Y="0.1000" />
                         <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                       </AbstractNodeData>

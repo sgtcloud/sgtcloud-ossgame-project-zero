@@ -147,10 +147,12 @@
                 },
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
                 "Position": {
                   "X": 115.7146,
-                  "Y": 76.4999
+                  "Y": 86.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -164,75 +166,23 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.1929,
-                  "Y": 0.6955
+                  "Y": 0.7864
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.3,
                   "Y": 0.1818
                 },
                 "LeftMargin": 115.7146,
-                "RightMargin": 344.2854,
+                "RightMargin": 304.2854,
                 "TopMargin": 13.5001,
                 "BottomMargin": 76.4999,
                 "Tag": 44,
                 "ActionTag": -2094451360,
                 "Size": {
-                  "X": 140.0,
+                  "X": 180.0,
                   "Y": 20.0
                 },
                 "Name": "equipName_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "IsCustomSize": true,
-                "FontSize": 18,
-                "LabelText": "Lv.99/99",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 270.0,
-                  "Y": 77.4999
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.45,
-                  "Y": 0.7045
-                },
-                "PreSize": {
-                  "X": 0.2,
-                  "Y": 0.1636
-                },
-                "LeftMargin": 270.0,
-                "RightMargin": 210.0,
-                "TopMargin": 14.5001,
-                "BottomMargin": 77.4999,
-                "Tag": 45,
-                "ActionTag": -188675879,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 18.0
-                },
-                "Name": "equipLevel_text",
                 "ctype": "TextObjectData"
               },
               {
@@ -250,10 +200,12 @@
                 },
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
                   "X": 115.7145,
-                  "Y": 11.3839
+                  "Y": 71.3839
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -267,7 +219,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.1929,
-                  "Y": 0.1035
+                  "Y": 0.6489
                 },
                 "PreSize": {
                   "X": 0.5333,
@@ -285,6 +237,47 @@
                 },
                 "Name": "equipBuffDecs_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "LabelText": "Lv.99/99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 306.051,
+                  "Y": 85.4187
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5101,
+                  "Y": 0.7765
+                },
+                "PreSize": {
+                  "X": 0.1383,
+                  "Y": 0.1364
+                },
+                "LeftMargin": 306.051,
+                "RightMargin": 210.949,
+                "TopMargin": 17.0813,
+                "BottomMargin": 77.9187,
+                "Tag": 1093,
+                "ActionTag": 1417978744,
+                "Size": {
+                  "X": 83.0,
+                  "Y": 15.0
+                },
+                "Name": "equipLevel_text",
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -367,6 +360,47 @@
                 },
                 "Name": "MaxLevel_btn",
                 "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Btn_Lock.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 442.8716,
+                  "Y": 16.3194
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.7381,
+                  "Y": 0.1484
+                },
+                "PreSize": {
+                  "X": 0.2333,
+                  "Y": 0.7273
+                },
+                "LeftMargin": 442.8716,
+                "RightMargin": 17.1284,
+                "TopMargin": 13.6806,
+                "BottomMargin": 16.3194,
+                "Tag": 196,
+                "ActionTag": -1077941742,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "lock_btn",
+                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -810919168,
@@ -386,10 +420,13 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade2.json",
         "equipUI/equip_bg.png",
-        "equipUI/equip_icon.png"
+        "equipUI/equip_icon.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png"
       ],
       "ctype": "GameFileData"
     }

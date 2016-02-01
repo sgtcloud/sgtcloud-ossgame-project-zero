@@ -96,8 +96,11 @@ var res = {
     pack_layer_json: "res/PackLayer.json",
     buff_tip_json: "res/BuffTips.json",
     buff_layer_json: "res/BuffLayer.json",
+    buff_list_json: "res/BuffList.json",
     statistics_layer: "res/StatisticsLayer.json",
-    font22_yellow_kmbb_export_fnt: "res/font22_yellow_kmbb-export.fnt"
+    font22_yellow_kmbb_export_fnt: "res/font22_yellow_kmbb-export.fnt",
+    small_item_layer_json:"res/SmallItemLayer.json",
+    shop_list_view: "res/ShopListView.json"
 };
 
 

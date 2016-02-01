@@ -9,13 +9,13 @@
           <AbstractNodeData Name="root" ActionTag="2088090531" Tag="264" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="740.0000" />
             <Children>
-              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="battle_bg" ActionTag="1082551047" Tag="54" IconVisible="False" LeftMargin="0.8561" RightMargin="-0.8561" BottomMargin="240.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
-                <Position Y="240.0000" />
+                <Position X="0.8561" Y="240.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.3243" />
+                <PrePosition X="0.0013" Y="0.3243" />
                 <PreSize X="1.0000" Y="0.6757" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
@@ -159,68 +159,68 @@
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_bg" ActionTag="1994818062" Tag="484" IconVisible="False" LeftMargin="96.0415" RightMargin="42.9585" TopMargin="11.9336" BottomMargin="682.0664" Scale9Width="501" Scale9Height="46" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="enemy_life_bg" ActionTag="1994818062" Tag="484" IconVisible="False" LeftMargin="114.6593" RightMargin="24.3407" TopMargin="11.2463" BottomMargin="682.7537" Scale9Width="501" Scale9Height="46" ctype="ImageViewObjectData">
                 <Size X="501.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="346.5415" Y="705.0664" />
+                <Position X="365.1593" Y="705.7537" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5415" Y="0.9528" />
+                <PrePosition X="0.5706" Y="0.9537" />
                 <PreSize X="0.7828" Y="0.0622" />
-                <FileData Type="Normal" Path="mainUI/bar_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bar_bg.png" Plist="MainUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="11.1670" BottomMargin="651.8330" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="85.0000" Y="77.0000" />
+              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="-29.1328" RightMargin="505.1328" TopMargin="40.5170" BottomMargin="568.4830" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="134" Scale9Height="109" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="164.0000" Y="131.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="48.0384" Y="690.3330" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="52.8672" Y="633.9830" />
+                <Scale ScaleX="0.5000" ScaleY="0.5000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0751" Y="0.9329" />
-                <PreSize X="0.1328" Y="0.1041" />
+                <PrePosition X="0.0826" Y="0.8567" />
+                <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/clear_reward.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_bar" ActionTag="1687766306" Tag="486" IconVisible="False" LeftMargin="127.9846" RightMargin="51.0154" TopMargin="16.4012" BottomMargin="706.5988" ProgressInfo="100" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="enemy_life_bar" ActionTag="1687766306" Tag="486" IconVisible="False" LeftMargin="146.6027" RightMargin="32.3973" TopMargin="15.7141" BottomMargin="707.2859" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="461.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="358.4846" Y="715.0988" />
+                <Position X="377.1027" Y="715.7859" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5601" Y="0.9663" />
+                <PrePosition X="0.5892" Y="0.9673" />
                 <PreSize X="0.7203" Y="0.0230" />
-                <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
+                <ImageFileData Type="MarkedSubImage" Path="mainUI/bar1.png" Plist="MainUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="100.4743" RightMargin="504.5257" TopMargin="17.4138" BottomMargin="687.5862" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="119.0923" RightMargin="485.9077" TopMargin="16.7266" BottomMargin="688.2734" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="35.0000" Y="35.0000" />
                 <AnchorPoint />
-                <Position X="100.4743" Y="687.5862" />
+                <Position X="119.0923" Y="688.2734" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1570" Y="0.9292" />
+                <PrePosition X="0.1861" Y="0.9301" />
                 <PreSize X="0.0547" Y="0.0473" />
-                <FileData Type="Normal" Path="mainUI/battle_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/battle_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text_0" ActionTag="2083404384" CallBackType="Click" Tag="166" IconVisible="False" LeftMargin="245.6918" RightMargin="302.3082" TopMargin="15.5604" BottomMargin="704.4396" Scale9Width="91" Scale9Height="19" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="enemy_life_text_0" ActionTag="2083404384" CallBackType="Click" Tag="166" IconVisible="False" LeftMargin="264.3109" RightMargin="283.6891" TopMargin="14.8732" BottomMargin="705.1268" Scale9Width="91" Scale9Height="19" ctype="ImageViewObjectData">
                 <Size X="92.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="291.6918" Y="714.4396" />
+                <Position X="310.3109" Y="715.1268" />
                 <Scale ScaleX="0.8000" ScaleY="0.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4558" Y="0.9655" />
+                <PrePosition X="0.4849" Y="0.9664" />
                 <PreSize X="0.1437" Y="0.0270" />
                 <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="335.4320" RightMargin="166.5680" TopMargin="14.1280" BottomMargin="706.8720" LabelText="56982244103" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="147.9504" TopMargin="13.4407" BottomMargin="707.5593" LabelText="56982244103" ctype="TextBMFontObjectData">
                 <Size X="138.0000" Y="19.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="404.4320" Y="716.3720" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="354.0496" Y="717.0593" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6319" Y="0.9681" />
+                <PrePosition X="0.5532" Y="0.9690" />
                 <PreSize X="0.2156" Y="0.0257" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -268,25 +268,25 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="100.3237" RightMargin="504.6763" TopMargin="25.5851" BottomMargin="695.4149" LabelText="99" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="118.9417" RightMargin="486.0583" TopMargin="24.8978" BottomMargin="696.1022" LabelText="99" ctype="TextBMFontObjectData">
                 <Size X="35.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="117.8237" Y="704.9149" />
+                <Position X="136.4417" Y="705.6022" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1841" Y="0.9526" />
+                <PrePosition X="0.2132" Y="0.9535" />
                 <PreSize X="0.0547" Y="0.0257" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_bar" ActionTag="-1530911348" Tag="487" IconVisible="False" LeftMargin="135.1005" RightMargin="60.8995" TopMargin="36.9025" BottomMargin="697.0975" ProgressInfo="100" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="time_bar" ActionTag="-1530911348" Tag="487" IconVisible="False" LeftMargin="153.7183" RightMargin="42.2817" TopMargin="36.2153" BottomMargin="697.7847" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="444.0000" Y="6.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="357.1005" Y="700.0975" />
+                <Position X="375.7183" Y="700.7847" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5580" Y="0.9461" />
+                <PrePosition X="0.5871" Y="0.9470" />
                 <PreSize X="0.6938" Y="0.0081" />
-                <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
+                <ImageFileData Type="MarkedSubImage" Path="mainUI/bar2.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
@@ -301,44 +301,44 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="173.2290" BottomMargin="489.7710" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="15.3671" RightMargin="539.6329" TopMargin="140.5315" BottomMargin="522.4685" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="48.0384" Y="528.2710" />
+                <Position X="57.8671" Y="560.9685" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0751" Y="0.7139" />
+                <PrePosition X="0.0904" Y="0.7581" />
                 <PreSize X="0.1328" Y="0.1041" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="statistics_btn" ActionTag="460589075" Tag="105" IconVisible="False" LeftMargin="5.5384" RightMargin="549.4616" TopMargin="92.1980" BottomMargin="570.8020" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="85.0000" Y="77.0000" />
+              <AbstractNodeData Name="statistics_btn" ActionTag="460589075" Tag="105" IconVisible="False" LeftMargin="-29.1328" RightMargin="505.1328" TopMargin="-26.7475" BottomMargin="635.7475" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="134" Scale9Height="109" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="164.0000" Y="131.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="48.0384" Y="609.3020" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="52.8672" Y="701.2475" />
+                <Scale ScaleX="0.5000" ScaleY="0.5000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0751" Y="0.8234" />
-                <PreSize X="0.1328" Y="0.1041" />
+                <PrePosition X="0.0826" Y="0.9476" />
+                <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/login_reward.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/login_reward.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/login_reward.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="200.1612" RightMargin="179.8388" TopMargin="298.6611" BottomMargin="261.3389" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="260.0000" Y="180.0000" />
+              <AbstractNodeData Name="buff_list" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="234.4081" RightMargin="215.5919" TopMargin="309.7909" BottomMargin="250.2091" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="190.0000" Y="180.0000" />
                 <AnchorPoint />
-                <Position X="200.1612" Y="261.3389" />
+                <Position X="234.4081" Y="250.2091" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3128" Y="0.3532" />
-                <PreSize X="0.4063" Y="0.2432" />
+                <PrePosition X="0.3663" Y="0.3381" />
+                <PreSize X="0.2969" Y="0.2432" />
                 <FileData Type="Normal" Path="BuffList.csd" Plist="" />
               </AbstractNodeData>
             </Children>

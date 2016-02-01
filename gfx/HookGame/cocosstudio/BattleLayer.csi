@@ -1,0 +1,9 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="BattleLayer" Type="Plist" ID="95080562-22af-4725-8765-2d80b2fe0819" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="battleUI/boss_text.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

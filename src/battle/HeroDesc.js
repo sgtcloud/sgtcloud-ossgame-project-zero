@@ -38,12 +38,12 @@ var HeroDesc = cc.Node.extend({
         heroName_text.setString(hero.getName());
         lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
         heroDescText.setString(hero.getDesc());
-        setFont([heroName_text,lv,heroDescText]);
+        setFont([heroName_text,/*lv,*/heroDescText]);
         atkText.setString(hero.getAttack());
         tapText.setString(hero.getHit());
         lifeText.setString(parseInt(hero.getLife()));
-        ctrChanceText.setString(hero.getCtrChance()*100);
-        ctrModifyText.setString(hero.getCtrModify()*100);
+        ctrChanceText.setString(hero.getCtrChance()*100+"%");
+        ctrModifyText.setString(hero.getCtrModify()*100+"%");
         atkPeriodText.setString(hero.getAnimateDelay());
         cc.log(hero.getAttack() +","+hero.getHit()+","+hero.getLife()+","+hero.getCtrChance()+","+hero.getCtrModify()+","+hero.getAnimateDelay());
         skillList.removeAllChildren();
@@ -58,7 +58,7 @@ var HeroDesc = cc.Node.extend({
             skillNameText.setString(skillData.getName());
             skillLevelText.setString('Lv.' + skillData.getLv() + "/" + skillData.getMaxLevel());
             skillDescText.setString(/*skillData.getDesc()*/this.buildSkillDesc(skillData));
-            setFont([skillNameText,skillLevelText,skillDescText]);
+            setFont([skillNameText,/*skillLevelText,*/skillDescText]);
             skillList.addChild(skillRoot);
         }
         var backBtn = root.getChildByName('btn').getChildByName('back_btn');
@@ -81,7 +81,7 @@ var HeroDesc = cc.Node.extend({
     },
     hiddenPopup: function(){
         this.heroDesc.removeFromParent();
-        this.gamePopup.hidden();
+        this.gamePopup.removeFromParent();
     }
 });
 

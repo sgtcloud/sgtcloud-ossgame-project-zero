@@ -89,59 +89,46 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 18,
                 "LabelText": "99:99",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/font18_white-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 45.0,
-                  "Y": 31.7319
+                  "X": 45.2776,
+                  "Y": 34.035
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.3526
+                  "X": 0.5031,
+                  "Y": 0.3782
                 },
                 "PreSize": {
-                  "X": 0.6667,
-                  "Y": 0.2
+                  "X": 0.8778,
+                  "Y": 0.1889
                 },
-                "LeftMargin": 15.0,
-                "RightMargin": 15.0,
-                "TopMargin": 49.2681,
-                "BottomMargin": 22.7319,
-                "Tag": 294,
-                "ActionTag": 1837244646,
+                "LeftMargin": 5.7776,
+                "RightMargin": 5.2224,
+                "TopMargin": 47.465,
+                "BottomMargin": 25.535,
+                "Tag": 107,
+                "ActionTag": -1698262075,
                 "Size": {
-                  "X": 60.0,
-                  "Y": 18.0
+                  "X": 79.0,
+                  "Y": 17.0
                 },
                 "Name": "time",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -290,6 +277,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/font18_white-export.fnt",
+        "font/font18_white-export.png",
         "mainUI/skill_icon.png",
         "skillUI/cooldown.png",
         "skillUI/duration.png",

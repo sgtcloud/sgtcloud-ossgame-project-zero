@@ -8,21 +8,23 @@ var Hero = function (heroData) {
     var icon = data.icon;
 
     for (var i in data.equips) {
-        var equip = data.equips[i];
-        var equipsLv = data.equips[i];
-        equips[i] = new Equip(equip, equipsLv);
+        var equipId = data.equips[i];
+        var equipCache = readEquipCache(equipId);
+        //var equipLv = (equip && equip['level']) || 1;
+        equips.push(new Equip(equipId, equipCache));
     }
     for (var i in data.skills) {
         var skillId = data.skills[i];
         var skill = readCache(skillId);
         var skillLv = (skill && skill['level']) || 0;
-        skills[i] = new Skill(skillId, skillLv, id);
+        skills.push(new Skill(skillId, skillLv, id));
     }
     function readCache(skillId) {
-        var skill = heroData.skills[skillId]
-        if (skill) {
-            return skill;
-        }
+        return heroData.skills[skillId]
+    }
+
+    function readEquipCache(id) {
+        return heroData.equips[id]
     }
 
     this.getIcon = function () {
@@ -59,33 +61,33 @@ var Hero = function (heroData) {
         }
         //this.printHeroProps();
     };
-    this.hasSkill=function(skillId){
-        for(var i in skills){
-            if(skills[i].getId()===skillId){
+    this.hasSkill = function (skillId) {
+        for (var i in skills) {
+            if (skills[i].getId() === skillId) {
                 return true;
             }
         }
         return false;
     }
-    var validateLocked=function(unlock){
-        if (unlock){
-            var unit=unlock['unit'];
-            var value=unlock['value'];
-            switch (unit){
+    var validateLocked = function (unlock) {
+        if (unlock) {
+            var unit = unlock['unit'];
+            var value = unlock['value'];
+            switch (unit) {
                 case 'hero':
-                    var hero=PlayerData.getHeroById(value);
-                    return hero.getLv()<1;
+                    var hero = PlayerData.getHeroById(value);
+                    return hero.getLv() < 1;
                 default:
             }
         }
         return false;
     }
     this.isLocked = function () {
-        var unlock=data['unlock'];
-        var locked=validateLocked(unlock);
+        var unlock = data['unlock'];
+        var locked = validateLocked(unlock);
         /*if( lv < 1){
-            return true;
-        };*/
+         return true;
+         };*/
         //console.log(this.getId()+" has been locked : "+locked)
         return locked;
     };
@@ -93,7 +95,7 @@ var Hero = function (heroData) {
         return lv >= this.getMaxLevel();
     }
 
-    this.getUnLock=function(){
+    this.getUnLock = function () {
         return data['unlock']
     }
 
@@ -136,6 +138,9 @@ var Hero = function (heroData) {
     this.getEquipData = function (i) {
         return equips[i];
     };
+    this.getEquips = function() {
+        return equips;
+    }
     this.getSkillCount = function () {
         return skills.length;
     };
@@ -224,7 +229,7 @@ var Hero = function (heroData) {
         return this.calcProp("tap");
     };
     this.getRecover = function () {
-        var val = data.levelDatas[lv ].resurge.time;
+        var val = data.levelDatas[lv].resurge.time;
         return val;
     };
     this.getCtrChance = function () {
@@ -274,6 +279,7 @@ var Hero = function (heroData) {
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
                 player.heroes[i]['lv'] = lv;
+                break;
             }
         }
     }

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="9" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" RightMargin="180.0000" TopMargin="380.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1464381757" Tag="29" IconVisible="False" RightMargin="180.0000" TopMargin="380.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="460.0000" Y="580.0000" />
             <Children>
               <AbstractNodeData Name="title_bg" ActionTag="-912217069" Tag="10" IconVisible="False" LeftMargin="9.4180" RightMargin="-189.4180" TopMargin="32.9158" BottomMargin="397.0842" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0205" Y="0.6846" />
                 <PreSize X="1.3913" Y="0.2586" />
-                <FileData Type="Normal" Path="heroDescUI/text_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/text_bg.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="equip_icon" ActionTag="1677207595" Tag="710" IconVisible="False" LeftMargin="27.1412" RightMargin="342.8588" TopMargin="46.4845" BottomMargin="443.5155" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0590" Y="0.7647" />
                 <PreSize X="0.1957" Y="0.1552" />
-                <FileData Type="Normal" Path="equipUI/equip_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="equipUI/equip_icon.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="equipDescText_bg" ActionTag="-1505631529" Tag="711" IconVisible="False" LeftMargin="126.4626" RightMargin="33.5374" TopMargin="70.2820" BottomMargin="409.7180" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="300.0000" Y="100.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2749" Y="0.7064" />
                 <PreSize X="0.6522" Y="0.1724" />
-                <FileData Type="Normal" Path="heroDescUI/text_bg2.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/text_bg2.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="equipName_text" ActionTag="1831588686" Tag="865" IconVisible="False" LeftMargin="128.4624" RightMargin="211.5376" TopMargin="46.4846" BottomMargin="513.5154" FontSize="20" LabelText="神器名字六字" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
@@ -79,7 +79,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0555" Y="0.4591" />
                 <PreSize X="0.8696" Y="0.2069" />
-                <FileData Type="Normal" Path="heroDescUI/text_bg2.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/text_bg2.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text_bg2" ActionTag="265168581" Tag="958" IconVisible="False" LeftMargin="25.5249" RightMargin="34.4751" TopMargin="314.2754" BottomMargin="145.7246" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="400.0000" Y="120.0000" />
@@ -89,7 +89,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0555" Y="0.2512" />
                 <PreSize X="0.8696" Y="0.2069" />
-                <FileData Type="Normal" Path="heroDescUI/text_bg2.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/text_bg2.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="lable1" ActionTag="352499859" Tag="25" IconVisible="False" LeftMargin="36.7711" RightMargin="343.2289" TopMargin="205.3602" BottomMargin="358.6398" FontSize="16" LabelText="本级属性：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="80.0000" Y="16.0000" />
@@ -153,7 +153,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4805" Y="0.2225" />
                 <PreSize X="0.0435" Y="0.0345" />
-                <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="equipUI/relic.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="recast_text" ActionTag="1673381189" Tag="188" IconVisible="False" LeftMargin="90.8649" RightMargin="253.1351" TopMargin="436.9203" BottomMargin="117.0797" Scale9Width="116" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="116.0000" Y="26.0000" />
@@ -163,7 +163,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3236" Y="0.2243" />
                 <PreSize X="0.2522" Y="0.0448" />
-                <FileData Type="Normal" Path="heroDescUI/recast_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/recast_text.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="recastNum_text" ActionTag="2123659308" Tag="189" IconVisible="False" LeftMargin="236.6485" RightMargin="163.3515" TopMargin="445.4514" BottomMargin="123.5486" CharWidth="12" CharHeight="11" LabelText="02313" StartChar="0" ctype="TextAtlasObjectData">
                 <Size X="60.0000" Y="11.0000" />
@@ -173,7 +173,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5797" Y="0.2225" />
                 <PreSize X="0.1304" Y="0.0190" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font16_yellow.png" Plist="" />
+                <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="buttonUI/font16_yellow.png" Plist="ButtonUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="recast_btn" ActionTag="1112229599" Tag="468" IconVisible="True" LeftMargin="141.6644" RightMargin="178.3356" TopMargin="470.9110" BottomMargin="29.0890" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />

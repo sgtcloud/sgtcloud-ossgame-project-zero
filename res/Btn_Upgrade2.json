@@ -121,55 +121,10 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "heroUI/gold.png",
-                  "Plist": ""
-                },
-                "Scale9OriginX": 5,
-                "Scale9OriginY": 5,
-                "Scale9Width": 30,
-                "Scale9Height": 30,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 26.9829,
-                  "Y": 49.3193
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1927,
-                  "Y": 0.6165
-                },
-                "PreSize": {
-                  "X": 0.1071,
-                  "Y": 0.1875
-                },
-                "LeftMargin": 26.9829,
-                "RightMargin": 98.0171,
-                "TopMargin": 15.6807,
-                "BottomMargin": 49.3193,
-                "Tag": 429,
-                "ActionTag": 1163909936,
-                "Size": {
-                  "X": 15.0,
-                  "Y": 15.0
-                },
-                "Name": "gold_icon",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "CharWidth": 12,
-                "CharHeight": 11,
                 "LabelText": "999999",
-                "StartChar": "0",
-                "LabelAtlasFileImage_CNB": {
+                "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "buttonUI/font16_yellow.png",
+                  "Path": "font/font16_white_kmbb-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -177,8 +132,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 81.906,
-                  "Y": 56.0791
+                  "X": 83.7141,
+                  "Y": 57.3534
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -187,25 +142,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.585,
-                  "Y": 0.701
+                  "X": 0.598,
+                  "Y": 0.7169
                 },
                 "PreSize": {
-                  "X": 0.5143,
-                  "Y": 0.1375
+                  "X": 0.5714,
+                  "Y": 0.1875
                 },
-                "LeftMargin": 45.906,
-                "RightMargin": 22.094,
-                "TopMargin": 18.4209,
-                "BottomMargin": 50.5791,
-                "Tag": 434,
-                "ActionTag": -755467246,
+                "LeftMargin": 43.7141,
+                "RightMargin": 16.2859,
+                "TopMargin": 15.1466,
+                "BottomMargin": 49.8534,
+                "Tag": 209,
+                "ActionTag": -2101152473,
                 "Size": {
-                  "X": 72.0,
-                  "Y": 11.0
+                  "X": 80.0,
+                  "Y": 15.0
                 },
                 "Name": "text_yellow",
-                "ctype": "TextAtlasObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -244,47 +199,7 @@
                   "X": 15.0,
                   "Y": 15.0
                 },
-                "Name": "relic_icon",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "heroUI/diamond.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 40,
-                "Scale9Height": 40,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 26.9829,
-                  "Y": 49.3193
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1927,
-                  "Y": 0.6165
-                },
-                "PreSize": {
-                  "X": 0.1071,
-                  "Y": 0.1875
-                },
-                "LeftMargin": 26.9829,
-                "RightMargin": 98.0171,
-                "TopMargin": 15.6807,
-                "BottomMargin": 49.3193,
-                "Tag": 437,
-                "ActionTag": 729109393,
-                "Size": {
-                  "X": 15.0,
-                  "Y": 15.0
-                },
-                "Name": "diamond_icon",
+                "Name": "icon",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -348,13 +263,12 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow.png",
         "buttonUI/upLevel.png",
         "equipUI/relic.png",
+        "font/font16_white_kmbb-export.fnt",
+        "font/font16_white_kmbb-export.png",
         "heroUI/btn1.png",
-        "heroUI/btn2.png",
-        "heroUI/diamond.png",
-        "heroUI/gold.png"
+        "heroUI/btn2.png"
       ],
       "ctype": "GameFileData"
     }

@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="39" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="860.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="208422147" Tag="15" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="860.0000" />
             <Children>
               <AbstractNodeData Name="bg1" ActionTag="-1288208011" Tag="381" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="bg2" ActionTag="1651995325" Tag="382" IconVisible="False" LeftMargin="2.0000" RightMargin="2.0000" TopMargin="180.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="636.0000" Y="680.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0031" />
                 <PreSize X="0.9937" Y="0.7907" />
-                <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_18.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="List_bg" ActionTag="-847369717" Tag="447" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="250.0000" BottomMargin="10.0000" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="600.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0234" Y="0.0116" />
                 <PreSize X="0.9531" Y="0.6977" />
-                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="List" ActionTag="1632917805" Tag="31" IconVisible="False" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="256.0000" BottomMargin="16.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                 <Size X="600.0000" Y="588.0000" />
@@ -60,7 +60,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0234" Y="0.7965" />
                 <PreSize X="0.9531" Y="0.1919" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="desc_text" ActionTag="1299772587" Tag="14" IconVisible="False" LeftMargin="45.1059" RightMargin="44.8941" TopMargin="78.8746" BottomMargin="721.1254" IsCustomSize="True" FontSize="20" LabelText="排行榜说明" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="550.0000" Y="60.0000" />
@@ -93,17 +93,17 @@
                 <PreSize X="0.3234" Y="0.0314" />
                 <FileData Type="Normal" Path="rankUI/myRank_text.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="myNum_text" ActionTag="1828536400" CallBackType="Click" Tag="45" IconVisible="False" LeftMargin="342.8699" RightMargin="249.1301" TopMargin="148.1008" BottomMargin="699.8992" CharWidth="12" CharHeight="12" LabelText="9956" StartChar="0" ctype="TextAtlasObjectData">
-                <Size X="48.0000" Y="12.0000" />
-                <AnchorPoint />
-                <Position X="342.8699" Y="699.8992" />
+              <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" Tag="591" IconVisible="False" LeftMargin="339.6119" RightMargin="246.3881" TopMargin="145.9807" BottomMargin="699.0193" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="54.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="366.6119" Y="706.5193" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5357" Y="0.8138" />
-                <PreSize X="0.0750" Y="0.0140" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="buttonUI/font15_green.png" Plist="" />
+                <PrePosition X="0.5728" Y="0.8215" />
+                <PreSize X="0.0844" Y="0.0174" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
                   <AbstractNodeData Name="pvp_tab" ActionTag="-352308505" Tag="328" IconVisible="False" RightMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">
@@ -118,7 +118,7 @@
                     <PressedBackFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
                     <DisableBackFileData Type="Normal" Path="rankUI/pvpTab_1.png" Plist="" />
                     <NodeNormalFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
-                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="stage_tab" ActionTag="-225112910" Tag="329" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
@@ -132,7 +132,7 @@
                     <PressedBackFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
                     <DisableBackFileData Type="Normal" Path="rankUI/stageTab_1.png" Plist="" />
                     <NodeNormalFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
-                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

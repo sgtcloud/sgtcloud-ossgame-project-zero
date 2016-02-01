@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="76" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-1233402080" Tag="211" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn" ActionTag="-1233402080" Tag="211" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="-414051498" Tag="212" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" DisplayState="False" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -18,22 +18,21 @@
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="heroUI/btn2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
-                <NormalFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-1596005682" Tag="215" IconVisible="False" LeftMargin="26.3277" RightMargin="13.6723" TopMargin="9.3697" BottomMargin="52.6303" IsCustomSize="True" FontSize="16" LabelText="Lv.9999" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="100.0000" Y="18.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="235483224" Tag="17" IconVisible="False" LeftMargin="44.0090" RightMargin="31.9910" TopMargin="11.7470" BottomMargin="53.2530" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="64.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="76.3277" Y="61.6303" />
+                <Position X="76.0090" Y="60.7530" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.5452" Y="0.7704" />
-                <PreSize X="0.7143" Y="0.2250" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5429" Y="0.7594" />
+                <PreSize X="0.4571" Y="0.1875" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="lock" ActionTag="-1008319939" Tag="216" IconVisible="False" LeftMargin="60.3404" RightMargin="50.6596" TopMargin="32.9497" BottomMargin="15.0503" Scale9Width="36" Scale9Height="49" ctype="ImageViewObjectData">
                 <Size X="29.0000" Y="32.0000" />
@@ -43,7 +42,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5346" Y="0.3881" />
                 <PreSize X="0.2071" Y="0.4000" />
-                <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/lock.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

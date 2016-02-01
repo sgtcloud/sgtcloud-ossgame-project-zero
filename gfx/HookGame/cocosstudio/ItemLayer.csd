@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="118" ctype="GameLayerObjectData">
         <Size X="100.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-2075105123" Tag="119" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-2075105123" Tag="119" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="100.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="item_bg" ActionTag="2035668169" Tag="120" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="24" Scale9Height="24" ctype="ImageViewObjectData">
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="item_icon" ActionTag="-305087361" Tag="121" IconVisible="False" LeftMargin="5.0000" RightMargin="5.0000" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,17 +27,17 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0500" Y="0.0500" />
                 <PreSize X="0.9000" Y="0.9000" />
-                <FileData Type="Normal" Path="mainUI/equip_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/equip_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="sale_text" ActionTag="-123567818" Tag="236" IconVisible="False" LeftMargin="49.4324" RightMargin="8.5676" TopMargin="74.4744" BottomMargin="7.5256" CharWidth="14" CharHeight="18" LabelText="999" StartChar="." ctype="TextAtlasObjectData">
-                <Size X="42.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="70.4324" Y="16.5256" />
+              <AbstractNodeData Name="sale_text" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="52.3663" RightMargin="6.6337" TopMargin="77.0521" BottomMargin="7.9479" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="41.0000" Y="15.0000" />
+                <AnchorPoint ScaleX="1.0000" ScaleY="0.5378" />
+                <Position X="93.3663" Y="16.0149" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7043" Y="0.1653" />
-                <PreSize X="0.4200" Y="0.1800" />
-                <LabelAtlasFileImage_CNB Type="Default" Path="Default/TextAtlas.png" Plist="" />
+                <PrePosition X="0.9337" Y="0.1601" />
+                <PreSize X="0.4100" Y="0.1500" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

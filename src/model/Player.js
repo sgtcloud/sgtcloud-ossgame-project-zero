@@ -5,7 +5,7 @@ var player = {
     "stage": "s100001",
     "stage_battle_num": 1,
     "into_stage_battle_timestamp": 0,
-    "not_get_reward": {"key": 0, "gem": 0, "gold": 0},
+    "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
     "first_time": "",
     "resource": {
         "gold": 10,
@@ -46,10 +46,6 @@ var player = {
             "lv": 1,
             "life": 0,
             "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
             "skills": {
                 //"技能ID":{"leve":""}
             },
@@ -62,20 +58,13 @@ var player = {
             "lv": 0,
             "life": 0,
             "star": 0,
-            "skills": {}/* [
-         1,
-         1
-         ]*/,
+            "skills": {},
             "equips": {}
         }, {
             "id": "h103",
             "lv": 0,
             "life": 0,
             "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
             "skills": {
                 //"技能ID":{"leve":""}
             },
@@ -85,10 +74,6 @@ var player = {
             "lv": 0,
             "life": 0,
             "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
             "skills": {
                 //"技能ID":{"leve":""}
             },
@@ -98,10 +83,6 @@ var player = {
             "lv": 0,
             "life": 0,
             "star": 0,
-            /*   "skills": [
-             {"id": "", "level": ""},
-             {"id": "", "level": ""}
-             ],*/
             "skills": {
                 //"技能ID":{"leve":""}
             },
@@ -256,12 +237,22 @@ var PlayerData = {
     countOfflineReward: function () {
         var datas = this.getStageData().getOfflineReward();
         var offlineTime = this.countOfflineTime();
-        var rewards = player.not_get_reward;
+        if(offlineTime == 0){
+            return ;
+        }
+        if(!cc.isObject(player.not_get_reward)){
+            player.not_get_reward = {};
+        }
         for (var i = 0; i < datas.length; i++) {
             if (datas[i].value) {
-                rewards[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
+                if(typeof player.not_get_reward[datas[i].unit] === 'undefined'){
+                    player.not_get_reward[datas[i].unit] = Math.floor(datas[i].value * offlineTime);
+                }else{
+                    player.not_get_reward[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
+                }
             }
         }
+
     }
     ,
     receiveOfflineReward: function () {
@@ -273,7 +264,7 @@ var PlayerData = {
             }
         }
         this.updateResource(arrays);
-        player.not_get_reward = {"key": 0, "gem": 0, "gold": 0};
+        player.not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};
     }
     ,
     getAmountByUnit: function (unit) {

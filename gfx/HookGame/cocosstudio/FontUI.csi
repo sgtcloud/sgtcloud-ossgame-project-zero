@@ -1,0 +1,16 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="FontUI" Type="Plist" ID="e708578a-154c-4602-b7e7-c31beaf7cf6b" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="font/font14_green_kmbb-export.png" />
+      <FilePathData Path="font/font14_red_kmbb-export.png" />
+      <FilePathData Path="font/font14_white_kmbb-export.png" />
+      <FilePathData Path="font/font16_white_kmbb-export.png" />
+      <FilePathData Path="font/font16_yellow_kmbb-export.png" />
+      <FilePathData Path="font/font18_white-export.png" />
+      <FilePathData Path="font/font19_white_kmbb-export.png" />
+      <FilePathData Path="font/font22_yellow_kmbb-export.png" />
+    </ImageFiles>
+    <MaxSize Width="190" Height="190" />
+  </Content>
+</PlistInfoProjectFile>
