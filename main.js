@@ -49,7 +49,11 @@
 
 cc.game.onStart = function () {
     if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+    {
+        spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
+    }
+
 
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(true);
