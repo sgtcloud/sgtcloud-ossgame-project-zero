@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_01.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="item_name" ActionTag="1668559718" Tag="383" IconVisible="False" LeftMargin="29.9999" RightMargin="30.0001" TopMargin="23.9914" BottomMargin="236.0086" FontSize="20" LabelText="道具名称六字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
@@ -52,9 +52,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -66,7 +66,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.5000" Y="0.5250" />
-                    <FileData Type="Normal" Path="buttonUI/buy2.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="buttonUI/buy2.png" Plist="ButtonUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -91,7 +91,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="0.1786" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="mainUI/key.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="sale_text" ActionTag="420840328" Tag="627" IconVisible="False" LeftMargin="29.9067" RightMargin="17.0933" TopMargin="2.8961" BottomMargin="4.1039" LabelText="9999999" ctype="TextBMFontObjectData">
                     <Size X="93.0000" Y="18.0000" />

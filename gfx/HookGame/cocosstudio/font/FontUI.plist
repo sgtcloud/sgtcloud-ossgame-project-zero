@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>font/font14_green_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{63,63},{48,62}}</string>
+				<key>offset</key>
+				<string>{-8,1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font14_red_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{116,111},{48,62}}</string>
+				<key>offset</key>
+				<string>{-8,1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font14_white_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{125,63},{48,62}}</string>
+				<key>offset</key>
+				<string>{-8,1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font16_white_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,123},{58,63}}</string>
+				<key>offset</key>
+				<string>{-3,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font16_yellow_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{58,123},{58,63}}</string>
+				<key>offset</key>
+				<string>{-3,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font18_white-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{96,0},{74,63}}</string>
+				<key>offset</key>
+				<string>{-27,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{128,64}</string>
+			</dict>
+			<key>font/font19_white_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,60},{63,63}}</string>
+				<key>offset</key>
+				<string>{-1,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>font/font22_yellow_kmbb-export.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{96,60}}</string>
+				<key>offset</key>
+				<string>{-16,2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{128,64}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>FontUI.png</string>
+			<key>realTextureFileName</key>
+			<string>FontUI.png</string>
+			<key>size</key>
+			<string>{187,186}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>187</integer>
+			<key>height</key>
+			<integer>186</integer>
+		</dict>
+	</dict>
+</plist>

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_01.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg" ActionTag="1192828670" CallBackType="Touch" Tag="381" IconVisible="False" LeftMargin="17.1343" RightMargin="12.8657" TopMargin="17.5847" BottomMargin="662.4153" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="60.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0268" Y="0.8952" />
                 <PreSize X="0.9531" Y="0.0811" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_text" ActionTag="2068607568" Tag="541" IconVisible="False" LeftMargin="257.6343" RightMargin="253.3657" TopMargin="18.5847" BottomMargin="663.4153" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
                 <Size X="129.0000" Y="58.0000" />
@@ -50,7 +50,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="wood_icon" ActionTag="-1026000937" Tag="544" IconVisible="False" LeftMargin="74.7393" RightMargin="495.2607" TopMargin="27.5969" BottomMargin="367.4031" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -60,7 +60,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1553" Y="0.8906" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/wood.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/wood.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="leather_icon" ActionTag="1141031262" Tag="545" IconVisible="False" LeftMargin="356.2337" RightMargin="213.7663" TopMargin="24.8069" BottomMargin="370.1931" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -70,7 +70,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6168" Y="0.8970" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/leather.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/leather.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="stone_icon" ActionTag="1325302991" Tag="546" IconVisible="False" LeftMargin="74.7393" RightMargin="495.2607" TopMargin="91.3405" BottomMargin="303.6595" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -80,7 +80,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1553" Y="0.7440" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/stone.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/stone.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="bronze_icon" ActionTag="-426089835" Tag="547" IconVisible="False" LeftMargin="356.2338" RightMargin="213.7662" TopMargin="90.6143" BottomMargin="304.3857" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -90,7 +90,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6168" Y="0.7457" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/bronze.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/bronze.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="iron_icon" ActionTag="-1603224587" Tag="548" IconVisible="False" LeftMargin="74.7393" RightMargin="495.2607" TopMargin="155.0842" BottomMargin="239.9158" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -100,7 +100,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1553" Y="0.5975" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/iron.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/iron.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="crystal_icon" ActionTag="-600212037" Tag="549" IconVisible="False" LeftMargin="355.5457" RightMargin="214.4543" TopMargin="156.4220" BottomMargin="238.5780" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -110,7 +110,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6156" Y="0.5944" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/crystal.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/crystal.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="rune_icon" ActionTag="-575278022" Tag="550" IconVisible="False" LeftMargin="74.7393" RightMargin="495.2607" TopMargin="218.8278" BottomMargin="176.1722" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -120,7 +120,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1553" Y="0.4510" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/rune.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/rune.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="essence_icon" ActionTag="1684738592" Tag="551" IconVisible="False" LeftMargin="356.2337" RightMargin="213.7663" TopMargin="222.2294" BottomMargin="172.7706" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -130,7 +130,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6168" Y="0.4432" />
                     <PreSize X="0.0656" Y="0.0920" />
-                    <FileData Type="Normal" Path="materialUI/essence.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/essence.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="wood_num_text" ActionTag="-1772376099" Tag="516" IconVisible="False" LeftMargin="128.8190" RightMargin="366.1810" TopMargin="38.0063" BottomMargin="377.9937" LabelText="9999999" ctype="TextBMFontObjectData">
                     <Size X="115.0000" Y="19.0000" />
@@ -235,7 +235,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3859" RightMargin="454.6141" TopMargin="54.6361" BottomMargin="75.3639" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
@@ -246,9 +246,9 @@
                     <PrePosition X="0.2034" Y="0.5681" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="materialUI/golden_chest_1.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="materialUI/golden_chest_2.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="materialUI/golden_chest_1.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="materialUI/golden_chest_1.png" Plist="MaterialUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="materialUI/golden_chest_2.png" Plist="MaterialUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="materialUI/golden_chest_1.png" Plist="MaterialUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -261,9 +261,9 @@
                     <PrePosition X="0.4940" Y="0.5437" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="materialUI/silver_chest_1.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="materialUI/silver_chest_2.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="materialUI/silver_chest_1.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="materialUI/silver_chest_1.png" Plist="MaterialUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="materialUI/silver_chest_2.png" Plist="MaterialUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="materialUI/silver_chest_1.png" Plist="MaterialUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -276,9 +276,9 @@
                     <PrePosition X="0.7937" Y="0.5437" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="materialUI/iron_chest_1.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="materialUI/iron_chest_2.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="materialUI/iron_chest_1.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="materialUI/iron_chest_1.png" Plist="MaterialUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="materialUI/iron_chest_2.png" Plist="MaterialUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="materialUI/iron_chest_1.png" Plist="MaterialUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -290,7 +290,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1571" Y="0.1417" />
                     <PreSize X="0.0656" Y="0.2000" />
-                    <FileData Type="Normal" Path="materialUI/golden_key.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/golden_key.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="silver_key_icon" ActionTag="70902381" Tag="534" IconVisible="False" LeftMargin="261.6671" RightMargin="308.3329" TopMargin="151.6621" BottomMargin="8.3379" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -300,7 +300,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4617" Y="0.1417" />
                     <PreSize X="0.0656" Y="0.2000" />
-                    <FileData Type="Normal" Path="materialUI/silver_key.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/silver_key.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="iron_key_icon" ActionTag="1113330948" Tag="535" IconVisible="False" LeftMargin="448.2184" RightMargin="121.7816" TopMargin="151.6621" BottomMargin="8.3379" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -310,7 +310,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.7676" Y="0.1417" />
                     <PreSize X="0.0656" Y="0.2000" />
-                    <FileData Type="Normal" Path="materialUI/iron_key.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="materialUI/iron_key.png" Plist="MaterialUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="open_text" ActionTag="972162908" Tag="540" IconVisible="False" LeftMargin="222.5000" RightMargin="222.5000" TopMargin="6.7899" BottomMargin="158.2101" Scale9Width="165" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="165.0000" Y="35.0000" />

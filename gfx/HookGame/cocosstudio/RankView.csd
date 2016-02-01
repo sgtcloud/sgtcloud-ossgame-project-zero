@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="my_bg" ActionTag="-310137380" Tag="29" IconVisible="False" TopMargin="2.0000" Scale9Width="580" Scale9Height="98" ctype="ImageViewObjectData">
                 <Size X="600.0000" Y="98.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1013" Y="0.5113" />
                 <PreSize X="0.1500" Y="0.9000" />
-                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/hero_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_name" ActionTag="-714092074" Tag="40" IconVisible="False" LeftMargin="119.3848" RightMargin="320.6152" TopMargin="7.2744" BottomMargin="72.7256" IsCustomSize="True" FontSize="20" LabelText="玩家名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="20.0000" />

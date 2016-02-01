@@ -1,0 +1,24 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="HeroDescUI" Type="Plist" ID="b2fd103a-b7d7-46f7-857f-1a0e9682f2d9" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="heroDescUI/atk.png" />
+      <FilePathData Path="heroDescUI/atk_lable.png" />
+      <FilePathData Path="heroDescUI/atk_period.png" />
+      <FilePathData Path="heroDescUI/atk_period_lable.png" />
+      <FilePathData Path="heroDescUI/close_icon.png" />
+      <FilePathData Path="heroDescUI/ctr_chance.png" />
+      <FilePathData Path="heroDescUI/ctr_chance_lable.png" />
+      <FilePathData Path="heroDescUI/ctr_modify.png" />
+      <FilePathData Path="heroDescUI/ctr_modify_lable.png" />
+      <FilePathData Path="heroDescUI/life.png" />
+      <FilePathData Path="heroDescUI/life_lable.png" />
+      <FilePathData Path="heroDescUI/recast_text.png" />
+      <FilePathData Path="heroDescUI/tap.png" />
+      <FilePathData Path="heroDescUI/tap_lable.png" />
+      <FilePathData Path="heroDescUI/text_bg.png" />
+      <FilePathData Path="heroDescUI/text_bg2.png" />
+    </ImageFiles>
+    <MaxSize Width="120" Height="275" />
+  </Content>
+</PlistInfoProjectFile>

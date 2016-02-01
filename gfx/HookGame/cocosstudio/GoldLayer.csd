@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="119" ctype="GameLayerObjectData">
         <Size X="180.0000" Y="50.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="152266157" Tag="122" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="152266157" Tag="122" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="180.0000" Y="50.0000" />
             <Children>
               <AbstractNodeData Name="gold_icon" ActionTag="1067446397" Tag="121" IconVisible="False" LeftMargin="10.3113" RightMargin="139.6887" TopMargin="10.0274" BottomMargin="9.9726" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2446" Y="0.2595" />
                 <PreSize X="0.6611" Y="0.5000" />
-                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font26_yellow.png" Plist="" />
+                <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="mainUI/font26_yellow.png" Plist="MainUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

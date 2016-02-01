@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="42" ctype="GameLayerObjectData">
         <Size X="320.0000" Y="55.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1195583241" Tag="95" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1195583241" Tag="95" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="320.0000" Y="55.0000" />
             <Children>
               <AbstractNodeData Name="shop_tab" ActionTag="228359029" Tag="163" IconVisible="False" RightMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
@@ -21,7 +21,7 @@
                 <PressedBackFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
                 <DisableBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
                 <NodeNormalFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
-                <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="moneyTree_tab" ActionTag="-1080933438" Tag="162" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">
                 <Size X="160.0000" Y="55.0000" />
@@ -35,7 +35,7 @@
                 <PressedBackFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
                 <DisableBackFileData Type="Normal" Path="shopUI/moneyTreeTab_1.png" Plist="" />
                 <NodeNormalFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
-                <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

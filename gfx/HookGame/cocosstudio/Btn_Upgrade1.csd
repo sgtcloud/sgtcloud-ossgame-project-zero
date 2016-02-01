@@ -18,9 +18,9 @@
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="heroUI/btn2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
-                <NormalFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -53,7 +53,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1979" Y="0.6802" />
                 <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="equipUI/relic.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="23.9442" RightMargin="13.0558" TopMargin="49.5166" BottomMargin="13.4834" LabelText="+99999" ctype="TextBMFontObjectData">
                 <Size X="103.0000" Y="17.0000" />

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0154" Y="0.1582" />
                 <PreSize X="0.1053" Y="0.6667" />
-                <FileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="432391139" Tag="199" IconVisible="False" LeftMargin="26.0671" RightMargin="43.9329" TopMargin="5.2549" BottomMargin="4.7451" IsCustomSize="True" FontSize="20" LabelText="暴击倍率增加20%" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="120.0000" Y="20.0000" />
