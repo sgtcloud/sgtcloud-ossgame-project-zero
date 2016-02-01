@@ -18,31 +18,36 @@ function getLevelData(data, key, lv) {
     if (!data.levelDatas) {
         return undefined;
     }
-    var result;
-    var max=data.levelDatas[0];
-    var index=max['level']-lv;
-    if (!data.levelDatas[index]) {
-        result= data.levelDatas[max][key];
-    }else {
-        result= data.levelDatas[index][key];
+    var max = data.levelDatas[0];
+    var maxLevel = max['level'];
+    if (maxLevel <= lv) {
+        return $$.extend(max[key]);
     }
-    if(cc.isObject(result)){
+    //var len = data.levelDatas.length;
+    var result;
+    var index = /*maxLevel === len ? maxLevel - lv - 1 :*/ maxLevel - lv;
+    if (!data.levelDatas[index]) {
+        result = data.levelDatas[maxLevel][key];
+    } else {
+        result = data.levelDatas[index][key];
+    }
+    if (cc.isObject(result)) {
         return $$.extend(result)
     }
     return result;
 }
 
-function  getSpecificLevelData(data,level){
-    var len=data.levelDatas.length;
-    if(level==0){
-         var rs=data.levelDatas[len-1];
+function getSpecificLevelData(data, level) {
+    var len = data.levelDatas.length;
+    if (level == 0) {
+        var rs = data.levelDatas[len - 1];
         return rs
     }
-    var max=data.levelDatas[0]['level'];
+    var max = data.levelDatas[0]['level'];
 
-    var index=max-level;
+    var index = max - level;
     if (!data.levelDatas[index]) {
-        return data.levelDatas[len-1];
+        return data.levelDatas[len - 1];
     }
     return data.levelDatas[index];
 }
