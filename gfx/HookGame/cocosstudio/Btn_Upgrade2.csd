@@ -24,16 +24,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_icon" ActionTag="1163909936" Tag="429" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
-                <Size X="15.0000" Y="15.0000" />
-                <AnchorPoint />
-                <Position X="26.9829" Y="49.3193" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1927" Y="0.6165" />
-                <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="text_yellow" ActionTag="-2101152473" Tag="209" IconVisible="False" LeftMargin="43.7141" RightMargin="16.2859" TopMargin="15.1466" BottomMargin="49.8534" LabelText="999999" ctype="TextBMFontObjectData">
                 <Size X="80.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -44,7 +34,7 @@
                 <PreSize X="0.5714" Y="0.1875" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic_icon" ActionTag="-1123589743" Tag="436" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="icon" ActionTag="-1123589743" Tag="436" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint />
                 <Position X="26.9829" Y="49.3193" />
@@ -53,16 +43,6 @@
                 <PrePosition X="0.1927" Y="0.6165" />
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="Normal" Path="equipUI/relic.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="diamond_icon" ActionTag="729109393" Tag="437" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
-                <Size X="15.0000" Y="15.0000" />
-                <AnchorPoint />
-                <Position X="26.9829" Y="49.3193" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1927" Y="0.6165" />
-                <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="up_text" ActionTag="-1963500702" Tag="438" IconVisible="False" LeftMargin="43.0001" RightMargin="30.9999" TopMargin="32.7933" BottomMargin="13.2067" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="66.0000" Y="34.0000" />
