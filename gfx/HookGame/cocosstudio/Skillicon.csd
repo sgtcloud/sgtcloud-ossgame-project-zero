@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/skill_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/skill_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="time" ActionTag="-1698262075" Tag="107" IconVisible="False" LeftMargin="5.7776" RightMargin="5.2224" TopMargin="47.4650" BottomMargin="25.5350" LabelText="99:99" ctype="TextBMFontObjectData">
                 <Size X="79.0000" Y="17.0000" />

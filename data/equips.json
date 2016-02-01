@@ -64,6 +64,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_value"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -132,6 +144,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_value"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -200,6 +224,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_value"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -268,6 +304,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -336,6 +384,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -404,6 +464,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_attack_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -472,6 +544,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_gold_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -540,6 +624,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_life_value"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -608,6 +704,18 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_life_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },
@@ -696,6 +804,22 @@
           "unit": "relic"
         },
         "unlockLevel": 1
+      },
+      {
+        "level": 0,
+        "effect1": {
+          "value": 0,
+          "type": "globe_ctr_chance_rate"
+        },
+        "effect2": {
+          "value": 0,
+          "type": "globe_ctr_modify_rate"
+        },
+        "upgrade": {
+          "value": 0,
+          "unit": "relic"
+        },
+        "unlockLevel": 0
       }
     ]
   },

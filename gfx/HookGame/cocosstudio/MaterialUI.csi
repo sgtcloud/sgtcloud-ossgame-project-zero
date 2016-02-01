@@ -1,0 +1,31 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="MaterialUI" Type="Plist" ID="25b94c6c-4917-409b-a02a-50facfd272b3" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="materialUI/bronze.png" />
+      <FilePathData Path="materialUI/crystal.png" />
+      <FilePathData Path="materialUI/diamond.png" />
+      <FilePathData Path="materialUI/essence.png" />
+      <FilePathData Path="materialUI/gold.png" />
+      <FilePathData Path="materialUI/golden_chest_1.png" />
+      <FilePathData Path="materialUI/golden_chest_2.png" />
+      <FilePathData Path="materialUI/golden_key.png" />
+      <FilePathData Path="materialUI/iron.png" />
+      <FilePathData Path="materialUI/iron_chest_1.png" />
+      <FilePathData Path="materialUI/iron_chest_2.png" />
+      <FilePathData Path="materialUI/iron_key.png" />
+      <FilePathData Path="materialUI/key.png" />
+      <FilePathData Path="materialUI/leather.png" />
+      <FilePathData Path="materialUI/relic.png" />
+      <FilePathData Path="materialUI/rune.png" />
+      <FilePathData Path="materialUI/silver_chest_1.png" />
+      <FilePathData Path="materialUI/silver_chest_2.png" />
+      <FilePathData Path="materialUI/silver_key.png" />
+      <FilePathData Path="materialUI/stone.png" />
+      <FilePathData Path="materialUI/wood.png" />
+      <FilePathData Path="materialUI/wood_chest_1.png" />
+      <FilePathData Path="materialUI/wood_chest_2.png" />
+    </ImageFiles>
+    <MaxSize Width="265" Height="260" />
+  </Content>
+</PlistInfoProjectFile>

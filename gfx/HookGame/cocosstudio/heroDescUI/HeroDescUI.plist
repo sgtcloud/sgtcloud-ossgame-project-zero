@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>heroDescUI/atk.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,56},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/atk_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{79,0},{73,19}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/atk_period.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,101},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/atk_period_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{98,0},{73,19}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/close_icon.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{56,58}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{56,58}</string>
+			</dict>
+			<key>heroDescUI/ctr_chance.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,146},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/ctr_chance_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{79,73},{73,19}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/ctr_modify.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{45,183},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/ctr_modify_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{98,73},{73,19}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/life.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,191},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/life_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{90,182},{55,19}}</string>
+				<key>offset</key>
+				<string>{-10,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/recast_text.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{58,0},{110,21}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{116,26}</string>
+			</dict>
+			<key>heroDescUI/tap.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{45,228},{45,45}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,45}</string>
+			</dict>
+			<key>heroDescUI/tap_lable.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{45,110},{73,19}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,28}</string>
+			</dict>
+			<key>heroDescUI/text_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{64,146},{34,36}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{34,36}</string>
+			</dict>
+			<key>heroDescUI/text_bg2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{90,237},{28,36}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{28,36}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>HeroDescUI.png</string>
+			<key>realTextureFileName</key>
+			<string>HeroDescUI.png</string>
+			<key>size</key>
+			<string>{118,273}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>118</integer>
+			<key>height</key>
+			<integer>273</integer>
+		</dict>
+	</dict>
+</plist>

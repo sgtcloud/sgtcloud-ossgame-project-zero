@@ -167,7 +167,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5706" Y="0.9537" />
                 <PreSize X="0.7828" Y="0.0622" />
-                <FileData Type="Normal" Path="mainUI/bar_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bar_bg.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="-29.1328" RightMargin="505.1328" TopMargin="40.5170" BottomMargin="568.4830" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="134" Scale9Height="109" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="164.0000" Y="131.0000" />
@@ -178,9 +178,9 @@
                 <PrePosition X="0.0826" Y="0.8567" />
                 <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/pack.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/pack.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/pack.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -192,7 +192,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5892" Y="0.9673" />
                 <PreSize X="0.7203" Y="0.0230" />
-                <ImageFileData Type="Normal" Path="mainUI/bar1.png" Plist="" />
+                <ImageFileData Type="MarkedSubImage" Path="mainUI/bar1.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="icon" ActionTag="2061033833" Tag="485" IconVisible="False" LeftMargin="119.0923" RightMargin="485.9077" TopMargin="16.7266" BottomMargin="688.2734" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="35.0000" Y="35.0000" />
@@ -202,7 +202,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1861" Y="0.9301" />
                 <PreSize X="0.0547" Y="0.0473" />
-                <FileData Type="Normal" Path="mainUI/battle_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/battle_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_text_0" ActionTag="2083404384" CallBackType="Click" Tag="166" IconVisible="False" LeftMargin="264.3109" RightMargin="283.6891" TopMargin="14.8732" BottomMargin="705.1268" Scale9Width="91" Scale9Height="19" ctype="ImageViewObjectData">
                 <Size X="92.0000" Y="20.0000" />
@@ -212,7 +212,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4849" Y="0.9664" />
                 <PreSize X="0.1437" Y="0.0270" />
-                <FileData Type="Normal" Path="battleUI/boss_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="147.9504" TopMargin="13.4407" BottomMargin="707.5593" LabelText="56982244103" ctype="TextBMFontObjectData">
                 <Size X="138.0000" Y="19.0000" />
@@ -286,7 +286,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5871" Y="0.9470" />
                 <PreSize X="0.6938" Y="0.0081" />
-                <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
+                <ImageFileData Type="MarkedSubImage" Path="mainUI/bar2.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="500.0000" />
@@ -310,9 +310,9 @@
                 <PrePosition X="0.0904" Y="0.7581" />
                 <PreSize X="0.1328" Y="0.1041" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/offline_reward.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -325,9 +325,9 @@
                 <PrePosition X="0.0826" Y="0.9476" />
                 <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/statistics.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/statistics.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/statistics.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

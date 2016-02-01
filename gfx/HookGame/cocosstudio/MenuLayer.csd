@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="151" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="100.0000" />
         <Children>
-          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1642134160" Tag="451" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" CanEdit="False" ActionTag="-1642134160" Tag="451" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="1356425691" Tag="519" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="main" CanEdit="False" ActionTag="-1674749777" Tag="168" IconVisible="False" LeftMargin="4.5000" RightMargin="540.5000" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />

@@ -5,10 +5,17 @@
       <RootFolder Name=".">
         <Folder Name="battleUI">
           <Image Name="boss_text.png" />
+          <PlistImageFolder Image="BattleLayer.png" PListFile="BattleLayer.plist" Name=".BattleLayer_PList.Dir">
+            <PlistImageFile Name="battleUI_boss_text.png" Key="battleUI/boss_text.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="bloodUI">
           <Image Name="blood_bar.png" />
           <Image Name="blood_bg.png" />
+          <PlistImageFolder Image="BattleNum.png" PListFile="BattleNum.plist" Name=".BattleNum_PList.Dir">
+            <PlistImageFile Name="bloodUI_blood_bar.png" Key="bloodUI/blood_bar.png" />
+            <PlistImageFile Name="bloodUI_blood_bg.png" Key="bloodUI/blood_bg.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="buttonUI">
           <Image Name="add.png" />
@@ -31,6 +38,28 @@
           <Image Name="sure.png" />
           <Image Name="upLevel.png" />
           <Image Name="font16_yellow_kmbb.png" />
+          <PlistImageFolder Image="ButtonUI.png" PListFile="ButtonUI.plist" Name=".ButtonUI_PList.Dir">
+            <PlistImageFile Name="buttonUI_add.png" Key="buttonUI/add.png" />
+            <PlistImageFile Name="buttonUI_back.png" Key="buttonUI/back.png" />
+            <PlistImageFile Name="buttonUI_buy.png" Key="buttonUI/buy.png" />
+            <PlistImageFile Name="buttonUI_buy2.png" Key="buttonUI/buy2.png" />
+            <PlistImageFile Name="buttonUI_buy3.png" Key="buttonUI/buy3.png" />
+            <PlistImageFile Name="buttonUI_cut.png" Key="buttonUI/cut.png" />
+            <PlistImageFile Name="buttonUI_font15_green.png" Key="buttonUI/font15_green.png" />
+            <PlistImageFile Name="buttonUI_font16_green.png" Key="buttonUI/font16_green.png" />
+            <PlistImageFile Name="buttonUI_font16_green_a.png" Key="buttonUI/font16_green_a.png" />
+            <PlistImageFile Name="buttonUI_font16_white.png" Key="buttonUI/font16_white.png" />
+            <PlistImageFile Name="buttonUI_font16_yellow.png" Key="buttonUI/font16_yellow.png" />
+            <PlistImageFile Name="buttonUI_font16_yellow_b.png" Key="buttonUI/font16_yellow_b.png" />
+            <PlistImageFile Name="buttonUI_font16_yellow_kmbb.png" Key="buttonUI/font16_yellow_kmbb.png" />
+            <PlistImageFile Name="buttonUI_MaxLevel.png" Key="buttonUI/MaxLevel.png" />
+            <PlistImageFile Name="buttonUI_notSure.png" Key="buttonUI/notSure.png" />
+            <PlistImageFile Name="buttonUI_percentage.png" Key="buttonUI/percentage.png" />
+            <PlistImageFile Name="buttonUI_recast.png" Key="buttonUI/recast.png" />
+            <PlistImageFile Name="buttonUI_revive.png" Key="buttonUI/revive.png" />
+            <PlistImageFile Name="buttonUI_sure.png" Key="buttonUI/sure.png" />
+            <PlistImageFile Name="buttonUI_upLevel.png" Key="buttonUI/upLevel.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -47,6 +76,22 @@
           <Image Name="relic.png" />
           <Image Name="title.png" />
           <Image Name="title_2.png" />
+          <PlistImageFolder Image="EquipUI.png" PListFile="EquipUI.plist" Name=".EquipUI_PList.Dir">
+            <PlistImageFile Name="equipUI_bg.png" Key="equipUI/bg.png" />
+            <PlistImageFile Name="equipUI_btn1.png" Key="equipUI/btn1.png" />
+            <PlistImageFile Name="equipUI_btn2.png" Key="equipUI/btn2.png" />
+            <PlistImageFile Name="equipUI_buyHoly.png" Key="equipUI/buyHoly.png" />
+            <PlistImageFile Name="equipUI_diamond.png" Key="equipUI/diamond.png" />
+            <PlistImageFile Name="equipUI_equip_bg.png" Key="equipUI/equip_bg.png" />
+            <PlistImageFile Name="equipUI_equip_icon.png" Key="equipUI/equip_icon.png" />
+            <PlistImageFile Name="equipUI_equip_text.png" Key="equipUI/equip_text.png" />
+            <PlistImageFile Name="equipUI_equip_text2.png" Key="equipUI/equip_text2.png" />
+            <PlistImageFile Name="equipUI_equiptitle_bg.png" Key="equipUI/equiptitle_bg.png" />
+            <PlistImageFile Name="equipUI_gold.png" Key="equipUI/gold.png" />
+            <PlistImageFile Name="equipUI_relic.png" Key="equipUI/relic.png" />
+            <PlistImageFile Name="equipUI_title.png" Key="equipUI/title.png" />
+            <PlistImageFile Name="equipUI_title_2.png" Key="equipUI/title_2.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="Genius">
           <Image Name="enemy1001_atk01.png" />
@@ -69,6 +114,24 @@
           <Image Name="tap_lable.png" />
           <Image Name="text_bg.png" />
           <Image Name="text_bg2.png" />
+          <PlistImageFolder Image="HeroDescUI.png" PListFile="HeroDescUI.plist" Name=".HeroDescUI_PList.Dir">
+            <PlistImageFile Name="heroDescUI_atk.png" Key="heroDescUI/atk.png" />
+            <PlistImageFile Name="heroDescUI_atk_lable.png" Key="heroDescUI/atk_lable.png" />
+            <PlistImageFile Name="heroDescUI_atk_period.png" Key="heroDescUI/atk_period.png" />
+            <PlistImageFile Name="heroDescUI_atk_period_lable.png" Key="heroDescUI/atk_period_lable.png" />
+            <PlistImageFile Name="heroDescUI_close_icon.png" Key="heroDescUI/close_icon.png" />
+            <PlistImageFile Name="heroDescUI_ctr_chance.png" Key="heroDescUI/ctr_chance.png" />
+            <PlistImageFile Name="heroDescUI_ctr_chance_lable.png" Key="heroDescUI/ctr_chance_lable.png" />
+            <PlistImageFile Name="heroDescUI_ctr_modify.png" Key="heroDescUI/ctr_modify.png" />
+            <PlistImageFile Name="heroDescUI_ctr_modify_lable.png" Key="heroDescUI/ctr_modify_lable.png" />
+            <PlistImageFile Name="heroDescUI_life.png" Key="heroDescUI/life.png" />
+            <PlistImageFile Name="heroDescUI_life_lable.png" Key="heroDescUI/life_lable.png" />
+            <PlistImageFile Name="heroDescUI_recast_text.png" Key="heroDescUI/recast_text.png" />
+            <PlistImageFile Name="heroDescUI_tap.png" Key="heroDescUI/tap.png" />
+            <PlistImageFile Name="heroDescUI_tap_lable.png" Key="heroDescUI/tap_lable.png" />
+            <PlistImageFile Name="heroDescUI_text_bg.png" Key="heroDescUI/text_bg.png" />
+            <PlistImageFile Name="heroDescUI_text_bg2.png" Key="heroDescUI/text_bg2.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="heroUI">
           <Image Name="bg.png" />
@@ -87,6 +150,24 @@
           <Image Name="star1.png" />
           <Image Name="star2.png" />
           <Image Name="text_bg.png" />
+          <PlistImageFolder Image="HeroDescUI.png" PListFile="HeroDescUI.plist" Name=".HeroDescUI_PList.Dir">
+            <PlistImageFile Name="heroDescUI_atk.png" Key="heroDescUI/atk.png" />
+            <PlistImageFile Name="heroDescUI_atk_lable.png" Key="heroDescUI/atk_lable.png" />
+            <PlistImageFile Name="heroDescUI_atk_period.png" Key="heroDescUI/atk_period.png" />
+            <PlistImageFile Name="heroDescUI_atk_period_lable.png" Key="heroDescUI/atk_period_lable.png" />
+            <PlistImageFile Name="heroDescUI_close_icon.png" Key="heroDescUI/close_icon.png" />
+            <PlistImageFile Name="heroDescUI_ctr_chance.png" Key="heroDescUI/ctr_chance.png" />
+            <PlistImageFile Name="heroDescUI_ctr_chance_lable.png" Key="heroDescUI/ctr_chance_lable.png" />
+            <PlistImageFile Name="heroDescUI_ctr_modify.png" Key="heroDescUI/ctr_modify.png" />
+            <PlistImageFile Name="heroDescUI_ctr_modify_lable.png" Key="heroDescUI/ctr_modify_lable.png" />
+            <PlistImageFile Name="heroDescUI_life.png" Key="heroDescUI/life.png" />
+            <PlistImageFile Name="heroDescUI_life_lable.png" Key="heroDescUI/life_lable.png" />
+            <PlistImageFile Name="heroDescUI_recast_text.png" Key="heroDescUI/recast_text.png" />
+            <PlistImageFile Name="heroDescUI_tap.png" Key="heroDescUI/tap.png" />
+            <PlistImageFile Name="heroDescUI_tap_lable.png" Key="heroDescUI/tap_lable.png" />
+            <PlistImageFile Name="heroDescUI_text_bg.png" Key="heroDescUI/text_bg.png" />
+            <PlistImageFile Name="heroDescUI_text_bg2.png" Key="heroDescUI/text_bg2.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
@@ -164,6 +245,79 @@
           <Image Name="font22_yellow_kmbb.png" />
           <Image Name="pack.png" />
           <Image Name="statistics.png" />
+          <PlistImageFolder Image="MainUI.png" PListFile="MainUI.plist" Name=".MainUI_PList.Dir">
+            <PlistImageFile Name="mainUI_bar_bg.png" Key="mainUI/bar_bg.png" />
+            <PlistImageFile Name="mainUI_bar1.png" Key="mainUI/bar1.png" />
+            <PlistImageFile Name="mainUI_bar2.png" Key="mainUI/bar2.png" />
+            <PlistImageFile Name="mainUI_battle_icon.png" Key="mainUI/battle_icon.png" />
+            <PlistImageFile Name="mainUI_bg_01.png" Key="mainUI/bg_01.png" />
+            <PlistImageFile Name="mainUI_bg_02.png" Key="mainUI/bg_02.png" />
+            <PlistImageFile Name="mainUI_bg_03.png" Key="mainUI/bg_03.png" />
+            <PlistImageFile Name="mainUI_bg_04.png" Key="mainUI/bg_04.png" />
+            <PlistImageFile Name="mainUI_bg_05.png" Key="mainUI/bg_05.png" />
+            <PlistImageFile Name="mainUI_bg_06.png" Key="mainUI/bg_06.png" />
+            <PlistImageFile Name="mainUI_bg_07.png" Key="mainUI/bg_07.png" />
+            <PlistImageFile Name="mainUI_bg_08.png" Key="mainUI/bg_08.png" />
+            <PlistImageFile Name="mainUI_bg_09.png" Key="mainUI/bg_09.png" />
+            <PlistImageFile Name="mainUI_bg_10.png" Key="mainUI/bg_10.png" />
+            <PlistImageFile Name="mainUI_bg_11.png" Key="mainUI/bg_11.png" />
+            <PlistImageFile Name="mainUI_bg_12.png" Key="mainUI/bg_12.png" />
+            <PlistImageFile Name="mainUI_bg_13.png" Key="mainUI/bg_13.png" />
+            <PlistImageFile Name="mainUI_bg_14.png" Key="mainUI/bg_14.png" />
+            <PlistImageFile Name="mainUI_bg_15.png" Key="mainUI/bg_15.png" />
+            <PlistImageFile Name="mainUI_bg_16.png" Key="mainUI/bg_16.png" />
+            <PlistImageFile Name="mainUI_bg_17.png" Key="mainUI/bg_17.png" />
+            <PlistImageFile Name="mainUI_bg_18.png" Key="mainUI/bg_18.png" />
+            <PlistImageFile Name="mainUI_bg_19.png" Key="mainUI/bg_19.png" />
+            <PlistImageFile Name="mainUI_bg_20.png" Key="mainUI/bg_20.png" />
+            <PlistImageFile Name="mainUI_bg_21.png" Key="mainUI/bg_21.png" />
+            <PlistImageFile Name="mainUI_clear_reward.png" Key="mainUI/clear_reward.png" />
+            <PlistImageFile Name="mainUI_close_icon.png" Key="mainUI/close_icon.png" />
+            <PlistImageFile Name="mainUI_diamond.png" Key="mainUI/diamond.png" />
+            <PlistImageFile Name="mainUI_empty.png" Key="mainUI/empty.png" />
+            <PlistImageFile Name="mainUI_equip_icon.png" Key="mainUI/equip_icon.png" />
+            <PlistImageFile Name="mainUI_f22_y.png" Key="mainUI/f22_y.png" />
+            <PlistImageFile Name="mainUI_font12_yellow.png" Key="mainUI/font12_yellow.png" />
+            <PlistImageFile Name="mainUI_font14_green.png" Key="mainUI/font14_green.png" />
+            <PlistImageFile Name="mainUI_font14_red.png" Key="mainUI/font14_red.png" />
+            <PlistImageFile Name="mainUI_font18_green.png" Key="mainUI/font18_green.png" />
+            <PlistImageFile Name="mainUI_font18_yellow.png" Key="mainUI/font18_yellow.png" />
+            <PlistImageFile Name="mainUI_font20_white.png" Key="mainUI/font20_white.png" />
+            <PlistImageFile Name="mainUI_font22_white.png" Key="mainUI/font22_white.png" />
+            <PlistImageFile Name="mainUI_font22_yellow.png" Key="mainUI/font22_yellow.png" />
+            <PlistImageFile Name="mainUI_font22_yellow_b.png" Key="mainUI/font22_yellow_b.png" />
+            <PlistImageFile Name="mainUI_font22_yellow_kmb.png" Key="mainUI/font22_yellow_kmb.png" />
+            <PlistImageFile Name="mainUI_font22_yellow_kmbb.png" Key="mainUI/font22_yellow_kmbb.png" />
+            <PlistImageFile Name="mainUI_font26_yellow.png" Key="mainUI/font26_yellow.png" />
+            <PlistImageFile Name="mainUI_font28_yellow.png" Key="mainUI/font28_yellow.png" />
+            <PlistImageFile Name="mainUI_gold.png" Key="mainUI/gold.png" />
+            <PlistImageFile Name="mainUI_hero_icon.png" Key="mainUI/hero_icon.png" />
+            <PlistImageFile Name="mainUI_icon.png" Key="mainUI/icon.png" />
+            <PlistImageFile Name="mainUI_key.png" Key="mainUI/key.png" />
+            <PlistImageFile Name="mainUI_lable_bg.png" Key="mainUI/lable_bg.png" />
+            <PlistImageFile Name="mainUI_lock.png" Key="mainUI/lock.png" />
+            <PlistImageFile Name="mainUI_login_reward.png" Key="mainUI/login_reward.png" />
+            <PlistImageFile Name="mainUI_offline_reward.png" Key="mainUI/offline_reward.png" />
+            <PlistImageFile Name="mainUI_pack.png" Key="mainUI/pack.png" />
+            <PlistImageFile Name="mainUI_relic.png" Key="mainUI/relic.png" />
+            <PlistImageFile Name="mainUI_skill_icon.png" Key="mainUI/skill_icon.png" />
+            <PlistImageFile Name="mainUI_slice131_@.png" Key="mainUI/slice131_@.png" />
+            <PlistImageFile Name="mainUI_stage_icon.png" Key="mainUI/stage_icon.png" />
+            <PlistImageFile Name="mainUI_star0.png" Key="mainUI/star0.png" />
+            <PlistImageFile Name="mainUI_statistics.png" Key="mainUI/statistics.png" />
+            <PlistImageFile Name="mainUI_tab_1.png" Key="mainUI/tab_1.png" />
+            <PlistImageFile Name="mainUI_tab_2.png" Key="mainUI/tab_2.png" />
+            <PlistImageFile Name="mainUI_tab_bg1.png" Key="mainUI/tab_bg1.png" />
+            <PlistImageFile Name="mainUI_tab_bg2.png" Key="mainUI/tab_bg2.png" />
+            <PlistImageFile Name="mainUI_tips.png" Key="mainUI/tips.png" />
+            <PlistImageFile Name="mainUI_tips_skill_buff.png" Key="mainUI/tips_skill_buff.png" />
+            <PlistImageFile Name="mainUI_title.png" Key="mainUI/title.png" />
+            <PlistImageFile Name="mainUI_title_bg.png" Key="mainUI/title_bg.png" />
+            <PlistImageFile Name="mainUI_title_bg1.png" Key="mainUI/title_bg1.png" />
+            <PlistImageFile Name="mainUI_title_bg2.png" Key="mainUI/title_bg2.png" />
+            <PlistImageFile Name="mainUI_title_bg3.png" Key="mainUI/title_bg3.png" />
+            <PlistImageFile Name="mainUI_title_bg4.png" Key="mainUI/title_bg4.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -189,6 +343,31 @@
           <Image Name="wood.png" />
           <Image Name="wood_chest_1.png" />
           <Image Name="wood_chest_2.png" />
+          <PlistImageFolder Image="MaterialUI.png" PListFile="MaterialUI.plist" Name=".MaterialUI_PList.Dir">
+            <PlistImageFile Name="materialUI_bronze.png" Key="materialUI/bronze.png" />
+            <PlistImageFile Name="materialUI_crystal.png" Key="materialUI/crystal.png" />
+            <PlistImageFile Name="materialUI_diamond.png" Key="materialUI/diamond.png" />
+            <PlistImageFile Name="materialUI_essence.png" Key="materialUI/essence.png" />
+            <PlistImageFile Name="materialUI_gold.png" Key="materialUI/gold.png" />
+            <PlistImageFile Name="materialUI_golden_chest_1.png" Key="materialUI/golden_chest_1.png" />
+            <PlistImageFile Name="materialUI_golden_chest_2.png" Key="materialUI/golden_chest_2.png" />
+            <PlistImageFile Name="materialUI_golden_key.png" Key="materialUI/golden_key.png" />
+            <PlistImageFile Name="materialUI_iron.png" Key="materialUI/iron.png" />
+            <PlistImageFile Name="materialUI_iron_chest_1.png" Key="materialUI/iron_chest_1.png" />
+            <PlistImageFile Name="materialUI_iron_chest_2.png" Key="materialUI/iron_chest_2.png" />
+            <PlistImageFile Name="materialUI_iron_key.png" Key="materialUI/iron_key.png" />
+            <PlistImageFile Name="materialUI_key.png" Key="materialUI/key.png" />
+            <PlistImageFile Name="materialUI_leather.png" Key="materialUI/leather.png" />
+            <PlistImageFile Name="materialUI_relic.png" Key="materialUI/relic.png" />
+            <PlistImageFile Name="materialUI_rune.png" Key="materialUI/rune.png" />
+            <PlistImageFile Name="materialUI_silver_chest_1.png" Key="materialUI/silver_chest_1.png" />
+            <PlistImageFile Name="materialUI_silver_chest_2.png" Key="materialUI/silver_chest_2.png" />
+            <PlistImageFile Name="materialUI_silver_key.png" Key="materialUI/silver_key.png" />
+            <PlistImageFile Name="materialUI_stone.png" Key="materialUI/stone.png" />
+            <PlistImageFile Name="materialUI_wood.png" Key="materialUI/wood.png" />
+            <PlistImageFile Name="materialUI_wood_chest_1.png" Key="materialUI/wood_chest_1.png" />
+            <PlistImageFile Name="materialUI_wood_chest_2.png" Key="materialUI/wood_chest_2.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="offlineRewardUI">
           <Image Name="desc.png" />
@@ -367,12 +546,30 @@
           <Image Name="font16_white_kmbb-export.png" />
           <Fnt Name="font22_white_kmbb-export.fnt" />
           <Image Name="font14_white_kmbb-export.png" />
-          <Image Name="font14_white_kmbb.png" />
           <Fnt Name="font18_white-export.fnt" />
           <Image Name="font18_white-export.png" />
+          <PlistImageFolder Image="FontUI.png" PListFile="FontUI.plist" Name=".FontUI_PList.Dir">
+            <PlistImageFile Name="font_font14_green_kmbb-export.png" Key="font/font14_green_kmbb-export.png" />
+            <PlistImageFile Name="font_font14_red_kmbb-export.png" Key="font/font14_red_kmbb-export.png" />
+            <PlistImageFile Name="font_font14_white_kmbb-export.png" Key="font/font14_white_kmbb-export.png" />
+            <PlistImageFile Name="font_font16_white_kmbb-export.png" Key="font/font16_white_kmbb-export.png" />
+            <PlistImageFile Name="font_font16_yellow_kmbb-export.png" Key="font/font16_yellow_kmbb-export.png" />
+            <PlistImageFile Name="font_font18_white-export.png" Key="font/font18_white-export.png" />
+            <PlistImageFile Name="font_font19_white_kmbb-export.png" Key="font/font19_white_kmbb-export.png" />
+            <PlistImageFile Name="font_font22_yellow_kmbb-export.png" Key="font/font22_yellow_kmbb-export.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />
+        <PlistInfo Name="BattleLayer.csi" Type="Plist" />
+        <PlistInfo Name="BattleNum.csi" Type="Plist" />
+        <PlistInfo Name="ButtonUI.csi" Type="Plist" />
+        <PlistInfo Name="EquipUI.csi" Type="Plist" />
+        <PlistInfo Name="FontUI.csi" Type="Plist" />
+        <PlistInfo Name="HeroDescUI.csi" Type="Plist" />
+        <PlistInfo Name="HeroUI.csi" Type="Plist" />
+        <PlistInfo Name="MainUI.csi" Type="Plist" />
+        <PlistInfo Name="MaterialUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -18,9 +18,9 @@
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="heroUI/btn2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
-                <NormalFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -42,7 +42,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5346" Y="0.3881" />
                 <PreSize X="0.2071" Y="0.4000" />
-                <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/lock.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

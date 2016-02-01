@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.4743" />
                 <PreSize X="0.8889" Y="0.8750" />
-                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg" ActionTag="1435763748" Tag="27" IconVisible="False" LeftMargin="35.2204" RightMargin="34.7796" TopMargin="39.8540" BottomMargin="324.1460" Scale9Enable="True" LeftEage="60" RightEage="60" Scale9OriginX="60" Scale9Width="30" Scale9Height="44" ctype="ImageViewObjectData">
                 <Size X="380.0000" Y="36.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.8554" />
                 <PreSize X="0.8444" Y="0.0900" />
-                <FileData Type="Normal" Path="mainUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/title.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="prompt_bg" ActionTag="1664116028" Tag="28" IconVisible="False" LeftMargin="27.2205" RightMargin="26.7795" TopMargin="80.0000" BottomMargin="80.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="396.0000" Y="240.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0605" Y="0.2000" />
                 <PreSize X="0.8800" Y="0.6000" />
-                <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_18.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text_bg" ActionTag="-968329935" Tag="29" IconVisible="False" LeftMargin="32.2205" RightMargin="31.7795" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="386.0000" Y="224.0000" />
@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0716" Y="0.2225" />
                 <PreSize X="0.8578" Y="0.5600" />
-                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="desc_text" ActionTag="1692080090" Tag="31" IconVisible="False" LeftMargin="75.2205" RightMargin="74.7795" TopMargin="126.4815" BottomMargin="173.5185" IsCustomSize="True" FontSize="20" LabelText="一段文字描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="300.0000" Y="100.0000" />
@@ -68,7 +68,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3904" Y="0.3535" />
                 <PreSize X="0.0667" Y="0.0750" />
-                <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/gold.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="relic" ActionTag="670806695" Tag="36" IconVisible="False" LeftMargin="160.7007" RightMargin="259.2993" TopMargin="243.6089" BottomMargin="126.3911" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -78,7 +78,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3904" Y="0.3535" />
                 <PreSize X="0.0667" Y="0.0750" />
-                <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/relic.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond" ActionTag="1614685024" Tag="35" IconVisible="False" LeftMargin="160.7007" RightMargin="259.2993" TopMargin="243.6089" BottomMargin="126.3911" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -88,7 +88,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3904" Y="0.3535" />
                 <PreSize X="0.0667" Y="0.0750" />
-                <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/diamond.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="key" ActionTag="-572918643" Tag="451" IconVisible="False" LeftMargin="160.7007" RightMargin="259.2993" TopMargin="243.6089" BottomMargin="126.3911" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -98,7 +98,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3904" Y="0.3535" />
                 <PreSize X="0.0667" Y="0.0750" />
-                <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/key.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="-121720549" Tag="576" IconVisible="False" LeftMargin="198.9430" RightMargin="168.0570" TopMargin="248.9214" BottomMargin="132.0786" LabelText="99999" ctype="TextBMFontObjectData">
                 <Size X="83.0000" Y="19.0000" />
@@ -133,9 +133,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_06.png" Plist="MainUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -147,7 +147,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5200" />
                     <PreSize X="0.5500" Y="0.6800" />
-                    <FileData Type="Normal" Path="buttonUI/sure.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="buttonUI/sure.png" Plist="ButtonUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -173,9 +173,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -187,7 +187,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5200" />
                     <PreSize X="0.5500" Y="0.6800" />
-                    <FileData Type="Normal" Path="buttonUI/notSure.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="buttonUI/notSure.png" Plist="ButtonUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

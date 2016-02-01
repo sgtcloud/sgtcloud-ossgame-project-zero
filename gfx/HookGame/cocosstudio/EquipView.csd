@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="equipUI/equip_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="equipUI/equip_bg.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="equip_icon" ActionTag="1359261642" Tag="24" IconVisible="False" LeftMargin="15.0000" RightMargin="495.0000" TopMargin="10.0000" BottomMargin="10.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0250" Y="0.0909" />
                 <PreSize X="0.1500" Y="0.8182" />
-                <FileData Type="Normal" Path="equipUI/equip_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="equipUI/equip_icon.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="304.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="180.0000" Y="20.0000" />

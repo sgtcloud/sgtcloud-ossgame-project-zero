@@ -1,0 +1,28 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="ButtonUI" Type="Plist" ID="439a09af-c6ce-421a-adf6-32ee5bec3dc7" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="buttonUI/add.png" />
+      <FilePathData Path="buttonUI/back.png" />
+      <FilePathData Path="buttonUI/buy.png" />
+      <FilePathData Path="buttonUI/buy2.png" />
+      <FilePathData Path="buttonUI/buy3.png" />
+      <FilePathData Path="buttonUI/cut.png" />
+      <FilePathData Path="buttonUI/font15_green.png" />
+      <FilePathData Path="buttonUI/font16_green.png" />
+      <FilePathData Path="buttonUI/font16_green_a.png" />
+      <FilePathData Path="buttonUI/font16_white.png" />
+      <FilePathData Path="buttonUI/font16_yellow.png" />
+      <FilePathData Path="buttonUI/font16_yellow_b.png" />
+      <FilePathData Path="buttonUI/font16_yellow_kmbb.png" />
+      <FilePathData Path="buttonUI/MaxLevel.png" />
+      <FilePathData Path="buttonUI/notSure.png" />
+      <FilePathData Path="buttonUI/percentage.png" />
+      <FilePathData Path="buttonUI/recast.png" />
+      <FilePathData Path="buttonUI/revive.png" />
+      <FilePathData Path="buttonUI/sure.png" />
+      <FilePathData Path="buttonUI/upLevel.png" />
+    </ImageFiles>
+    <MaxSize Width="330" Height="100" />
+  </Content>
+</PlistInfoProjectFile>

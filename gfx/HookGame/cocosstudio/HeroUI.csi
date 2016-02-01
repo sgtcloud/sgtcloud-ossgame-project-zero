@@ -1,0 +1,24 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="HeroUI" Type="Plist" ID="492395a6-2f5f-4ee6-a892-c18b333ece77" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="heroUI/bg.png" />
+      <FilePathData Path="heroUI/btn1.png" />
+      <FilePathData Path="heroUI/btn2.png" />
+      <FilePathData Path="heroUI/diamond.png" />
+      <FilePathData Path="heroUI/gold.png" />
+      <FilePathData Path="heroUI/hero_bg.png" />
+      <FilePathData Path="heroUI/hero_icon.png" />
+      <FilePathData Path="heroUI/heroDPS.png" />
+      <FilePathData Path="heroUI/heroHP.png" />
+      <FilePathData Path="heroUI/lock.png" />
+      <FilePathData Path="heroUI/reviveTime.png" />
+      <FilePathData Path="heroUI/skill_bg.png" />
+      <FilePathData Path="heroUI/skill_icon.png" />
+      <FilePathData Path="heroUI/star1.png" />
+      <FilePathData Path="heroUI/star2.png" />
+      <FilePathData Path="heroUI/text_bg.png" />
+    </ImageFiles>
+    <MaxSize Width="225" Height="300" />
+  </Content>
+</PlistInfoProjectFile>

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_03.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_icon" ActionTag="-909994317" Tag="119" IconVisible="False" LeftMargin="30.9160" RightMargin="479.0840" TopMargin="17.1802" BottomMargin="92.8198" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0850" Y="0.7701" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/atk.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/atk.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="tap_icon" ActionTag="-1663495175" Tag="120" IconVisible="False" LeftMargin="30.9160" RightMargin="479.0840" TopMargin="53.7060" BottomMargin="56.2940" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0850" Y="0.5092" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/tap.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/tap.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="life_icon" ActionTag="-833425354" Tag="121" IconVisible="False" LeftMargin="30.9160" RightMargin="479.0840" TopMargin="90.2323" BottomMargin="19.7677" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0850" Y="0.2483" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/life.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/life.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_period_icon" ActionTag="-186976113" CallBackType="Click" Tag="122" IconVisible="False" LeftMargin="281.8408" RightMargin="228.1592" TopMargin="17.1787" BottomMargin="92.8213" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -57,7 +57,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5497" Y="0.7702" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/atk_period.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/atk_period.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="ctr_chance_icon" ActionTag="762118286" Tag="123" IconVisible="False" LeftMargin="281.8408" RightMargin="228.1592" TopMargin="53.7052" BottomMargin="56.2948" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -67,7 +67,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5497" Y="0.5092" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/ctr_chance.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/ctr_chance.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="ctr_modify_icon" ActionTag="-191021529" Tag="124" IconVisible="False" LeftMargin="281.8408" RightMargin="228.1592" TopMargin="90.2316" BottomMargin="19.7684" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -77,7 +77,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5497" Y="0.2483" />
                 <PreSize X="0.0556" Y="0.2143" />
-                <FileData Type="Normal" Path="heroDescUI/ctr_modify.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/ctr_modify.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_lable_0" ActionTag="-760795414" Tag="125" IconVisible="False" LeftMargin="63.3633" RightMargin="396.6367" TopMargin="17.8166" BottomMargin="94.1834" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -87,7 +87,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1914" Y="0.7727" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/atk_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/atk_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_lable" ActionTag="-178234365" Tag="126" IconVisible="False" LeftMargin="63.3633" RightMargin="396.6367" TopMargin="55.0701" BottomMargin="56.9299" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -97,7 +97,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1914" Y="0.5066" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/tap_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/tap_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="life_lable" ActionTag="60155735" Tag="127" IconVisible="False" LeftMargin="63.3633" RightMargin="396.6367" TopMargin="92.3261" BottomMargin="19.6739" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -107,7 +107,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1914" Y="0.2405" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/life_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/life_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_period_lable" ActionTag="-727813023" Tag="128" IconVisible="False" LeftMargin="312.5036" RightMargin="147.4964" TopMargin="17.2795" BottomMargin="94.7205" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -117,7 +117,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6528" Y="0.7766" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/atk_period_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/atk_period_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="ctr_chance_lable" ActionTag="396906314" Tag="129" IconVisible="False" LeftMargin="312.5039" RightMargin="147.4961" TopMargin="55.1987" BottomMargin="56.8013" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -127,7 +127,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6528" Y="0.5057" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/ctr_chance_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/ctr_chance_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="ctr_modify_lable" ActionTag="-467008122" Tag="130" IconVisible="False" LeftMargin="312.5036" RightMargin="147.4964" TopMargin="93.1189" BottomMargin="18.8811" Scale9Width="80" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="80.0000" Y="28.0000" />
@@ -137,7 +137,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6528" Y="0.2349" />
                 <PreSize X="0.1481" Y="0.2000" />
-                <FileData Type="Normal" Path="heroDescUI/ctr_modify_lable.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroDescUI/ctr_modify_lable.png" Plist="HeroDescUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="-253997819" CallBackType="Click" Tag="406" IconVisible="False" LeftMargin="146.1307" RightMargin="294.8693" TopMargin="23.5000" BottomMargin="97.5000" LabelText="999999" ctype="TextBMFontObjectData">
                 <Size X="99.0000" Y="19.0000" />
