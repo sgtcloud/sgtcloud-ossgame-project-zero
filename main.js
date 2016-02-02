@@ -136,7 +136,10 @@ function getPlayerSave(){
 
 cc.game.onStart = function () {
     if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
+    {
+        spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
+    }
     if(SgtApi){
         SgtApi.init({appId:'h5game',async:true});
         if (typeof wx != "undefined" && is_weixin()) {

@@ -56,9 +56,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/text_bg.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 11,
@@ -99,9 +99,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/equip_icon.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -139,9 +139,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/text_bg2.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -317,9 +317,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/text_bg2.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -360,9 +360,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/text_bg2.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -632,9 +632,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/relic.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Width": 40,
                 "Scale9Height": 40,
@@ -675,9 +675,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/recast_text.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 116,
                 "Scale9Height": 26,
@@ -722,9 +722,9 @@
                 "LabelText": "02313",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/font16_yellow.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "AnchorPoint": {
                   "ScaleX": 0.5,
@@ -821,13 +821,13 @@
       },
       "UsedResources": [
         "Btn_Recast.json",
-        "buttonUI/font16_yellow.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "CloseBtn.json",
-        "equipUI/equip_icon.png",
-        "equipUI/relic.png",
-        "heroDescUI/recast_text.png",
-        "heroDescUI/text_bg.png",
-        "heroDescUI/text_bg2.png",
+        "EquipUI.plist",
+        "EquipUI.png",
+        "HeroDescUI.plist",
+        "HeroDescUI.png",
         "ui/bg_03.png"
       ],
       "ctype": "GameFileData"

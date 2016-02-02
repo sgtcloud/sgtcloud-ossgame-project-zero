@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="bg2" ActionTag="1651995325" Tag="382" IconVisible="False" LeftMargin="2.0000" RightMargin="2.0000" TopMargin="180.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="636.0000" Y="680.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0031" />
                 <PreSize X="0.9937" Y="0.7907" />
-                <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_18.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="List_bg" ActionTag="-847369717" Tag="447" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="250.0000" BottomMargin="10.0000" Scale9Enable="True" LeftEage="24" RightEage="24" TopEage="24" BottomEage="24" Scale9OriginX="24" Scale9OriginY="24" Scale9Width="26" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="600.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0234" Y="0.0116" />
                 <PreSize X="0.9531" Y="0.6977" />
-                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="List" ActionTag="1632917805" Tag="31" IconVisible="False" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="256.0000" BottomMargin="16.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                 <Size X="600.0000" Y="588.0000" />
@@ -60,7 +60,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0234" Y="0.7965" />
                 <PreSize X="0.9531" Y="0.1919" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="desc_text" ActionTag="1299772587" Tag="14" IconVisible="False" LeftMargin="45.1059" RightMargin="44.8941" TopMargin="78.8746" BottomMargin="721.1254" IsCustomSize="True" FontSize="20" LabelText="排行榜说明" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="550.0000" Y="60.0000" />
@@ -81,7 +81,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5002" Y="0.9465" />
                 <PreSize X="0.3266" Y="0.0674" />
-                <FileData Type="Normal" Path="rankUI/rankText.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/rankText.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="my_text" ActionTag="725399135" Tag="43" IconVisible="False" LeftMargin="219.5473" RightMargin="213.4527" TopMargin="140.3035" BottomMargin="692.6965" Scale9Width="207" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="207.0000" Y="27.0000" />
@@ -91,7 +91,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3430" Y="0.8055" />
                 <PreSize X="0.3234" Y="0.0314" />
-                <FileData Type="Normal" Path="rankUI/myRank_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/myRank_text.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" Tag="591" IconVisible="False" LeftMargin="339.6119" RightMargin="246.3881" TopMargin="145.9807" BottomMargin="699.0193" LabelText="9999" ctype="TextBMFontObjectData">
                 <Size X="54.0000" Y="15.0000" />
@@ -114,11 +114,11 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="rankUI/pvpTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="rankUI/pvpTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
-                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="stage_tab" ActionTag="-225112910" Tag="329" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
@@ -128,11 +128,11 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="rankUI/stageTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="rankUI/stageTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
-                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />
+                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

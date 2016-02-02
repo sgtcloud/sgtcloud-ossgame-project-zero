@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="my_bg" ActionTag="-310137380" Tag="29" IconVisible="False" TopMargin="2.0000" Scale9Width="580" Scale9Height="98" ctype="ImageViewObjectData">
                 <Size X="600.0000" Y="98.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="0.9800" />
-                <FileData Type="Normal" Path="rankUI/rankView_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/rankView_bg.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_icon" ActionTag="679581239" Tag="39" IconVisible="False" LeftMargin="15.7931" RightMargin="494.2069" TopMargin="3.8704" BottomMargin="6.1296" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1013" Y="0.5113" />
                 <PreSize X="0.1500" Y="0.9000" />
-                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/hero_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_name" ActionTag="-714092074" Tag="40" IconVisible="False" LeftMargin="119.3848" RightMargin="320.6152" TopMargin="7.2744" BottomMargin="72.7256" IsCustomSize="True" FontSize="20" LabelText="玩家名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="20.0000" />
@@ -58,7 +58,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7684" Y="0.5214" />
                 <PreSize X="0.4117" Y="0.3100" />
-                <FileData Type="Normal" Path="rankUI/clearance_rank.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/clearance_rank.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="pvp_rank" ActionTag="788911233" Tag="390" IconVisible="False" LeftMargin="337.5117" RightMargin="15.4883" TopMargin="32.3624" BottomMargin="36.6376" Scale9Width="247" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="247.0000" Y="31.0000" />
@@ -68,7 +68,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7684" Y="0.5214" />
                 <PreSize X="0.4117" Y="0.3100" />
-                <FileData Type="Normal" Path="rankUI/pvp_rank.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/pvp_rank.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="level_text" ActionTag="-731661308" Tag="605" IconVisible="False" LeftMargin="120.1807" RightMargin="415.8193" TopMargin="35.9785" BottomMargin="46.0215" LabelText="Lv.999" ctype="TextBMFontObjectData">
                 <Size X="64.0000" Y="18.0000" />
@@ -80,7 +80,7 @@
                 <PreSize X="0.1067" Y="0.1800" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="player_prestige" ActionTag="-912661490" Tag="27" IconVisible="False" LeftMargin="115.2229" RightMargin="297.7771" TopMargin="61.4710" BottomMargin="7.5290" Scale9Width="172" Scale9Height="31" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="player_prestige" Visible="False" ActionTag="-912661490" Tag="27" IconVisible="False" LeftMargin="115.2229" RightMargin="297.7771" TopMargin="61.4710" BottomMargin="7.5290" Scale9Width="172" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="187.0000" Y="31.0000" />
                 <AnchorPoint />
                 <Position X="115.2229" Y="7.5290" />
@@ -88,9 +88,9 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1920" Y="0.0753" />
                 <PreSize X="0.3117" Y="0.3100" />
-                <FileData Type="Normal" Path="rankUI/transformation.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/transformation.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="prestige_text" ActionTag="-1027378603" CallBackType="Click" Tag="606" IconVisible="False" LeftMargin="232.4644" RightMargin="332.5356" TopMargin="67.1989" BottomMargin="13.8011" LabelText="99" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="prestige_text" Visible="False" ActionTag="-1027378603" CallBackType="Click" Tag="606" IconVisible="False" LeftMargin="232.4644" RightMargin="332.5356" TopMargin="67.1989" BottomMargin="13.8011" LabelText="99" ctype="TextBMFontObjectData">
                 <Size X="35.0000" Y="19.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="249.9644" Y="23.3011" />

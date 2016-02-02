@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="heroUI/hero_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/hero_bg.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="hero_icon" ActionTag="1758422507" Tag="841" IconVisible="False" LeftMargin="15.0000" RightMargin="519.0000" TopMargin="10.0000" BottomMargin="10.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0240" Y="0.0909" />
                 <PreSize X="0.1442" Y="0.8182" />
-                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="mainUI/hero_icon.png" Plist="MainUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="heroName_text" ActionTag="1194859943" Tag="842" IconVisible="False" LeftMargin="120.0000" RightMargin="344.0000" TopMargin="12.9999" BottomMargin="75.0001" IsCustomSize="True" FontSize="22" LabelText="英雄名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="22.0000" />
@@ -58,7 +58,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5185" Y="0.1222" />
                 <PreSize X="0.1923" Y="0.5455" />
-                <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/text_bg.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="350.8271" RightMargin="206.1729" TopMargin="55.7309" BottomMargin="39.2691" LabelText="99999" ctype="TextBMFontObjectData">
                 <Size X="67.0000" Y="15.0000" />
@@ -78,7 +78,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6147" Y="0.8081" />
                 <PreSize X="0.1667" Y="0.2364" />
-                <FileData Type="Normal" Path="heroUI/heroHP.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/heroHP.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="starts" ActionTag="1734385338" Tag="863" IconVisible="True" LeftMargin="120.0000" RightMargin="504.0000" TopMargin="94.0000" BottomMargin="16.0000" ctype="SingleNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
@@ -94,7 +94,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star1.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star1.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="star_off" Visible="False" ActionTag="70686986" Tag="866" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
                         <Size X="32.0000" Y="30.0000" />
@@ -104,7 +104,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star2.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star2.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -129,7 +129,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star1.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star1.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="star_off" Visible="False" ActionTag="1220263815" Tag="869" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
                         <Size X="32.0000" Y="30.0000" />
@@ -139,7 +139,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star2.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star2.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -164,7 +164,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star1.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star1.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="star_off" Visible="False" ActionTag="291428552" Tag="872" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
                         <Size X="32.0000" Y="30.0000" />
@@ -174,7 +174,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star2.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star2.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -199,7 +199,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star1.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star1.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="star_off" Visible="False" ActionTag="-1251857901" Tag="875" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
                         <Size X="32.0000" Y="30.0000" />
@@ -209,7 +209,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star2.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star2.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -234,7 +234,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star1.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star1.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="star_off" Visible="False" ActionTag="1304236032" Tag="878" IconVisible="False" Scale9Width="32" Scale9Height="30" ctype="ImageViewObjectData">
                         <Size X="32.0000" Y="30.0000" />
@@ -244,7 +244,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="1.0000" />
-                        <FileData Type="Normal" Path="heroUI/star2.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="heroUI/star2.png" Plist="HeroUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -277,7 +277,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4401" Y="0.8179" />
                     <PreSize X="0.5600" Y="0.3571" />
-                    <FileData Type="Normal" Path="equipUI/equip_text.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="equipUI/equip_text.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="itemList" ActionTag="700881433" Tag="87" IconVisible="False" RightMargin="10.0000" TopMargin="40.0000" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
                     <Size X="140.0000" Y="30.0000" />
@@ -315,7 +315,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0091" Y="0.0126" />
                     <PreSize X="0.8571" Y="0.6667" />
-                    <FileData Type="Normal" Path="heroUI/text_bg.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="heroUI/text_bg.png" Plist="HeroUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="playerEquip_text" ActionTag="-249085522" CallBackType="Touch" Tag="884" IconVisible="False" LeftMargin="17.6223" RightMargin="38.3777" TopMargin="0.9081" BottomMargin="64.0919" Scale9Width="84" Scale9Height="25" ctype="ImageViewObjectData">
                     <Size X="84.0000" Y="25.0000" />
@@ -325,7 +325,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4259" Y="0.8510" />
                     <PreSize X="0.6000" Y="0.2778" />
-                    <FileData Type="Normal" Path="equipUI/equip_text2.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="equipUI/equip_text2.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="27.5328" RightMargin="45.4672" TopMargin="48.0308" BottomMargin="26.9692" LabelText="99999" ctype="TextBMFontObjectData">
                     <Size X="67.0000" Y="15.0000" />

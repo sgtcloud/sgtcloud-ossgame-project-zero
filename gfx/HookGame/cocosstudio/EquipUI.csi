@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="EquipUI" Type="Plist" ID="6969bf4d-ea15-47b9-abcd-facf2298a8b3" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="equipUI/bg.png" />
+      <FilePathData Path="equipUI/btn1.png" />
+      <FilePathData Path="equipUI/btn2.png" />
+      <FilePathData Path="equipUI/buyHoly.png" />
+      <FilePathData Path="equipUI/diamond.png" />
+      <FilePathData Path="equipUI/equip_bg.png" />
+      <FilePathData Path="equipUI/equip_icon.png" />
+      <FilePathData Path="equipUI/equip_text.png" />
+      <FilePathData Path="equipUI/equip_text2.png" />
+      <FilePathData Path="equipUI/equiptitle_bg.png" />
+      <FilePathData Path="equipUI/gold.png" />
+      <FilePathData Path="equipUI/relic.png" />
+      <FilePathData Path="equipUI/title.png" />
+      <FilePathData Path="equipUI/title_2.png" />
+    </ImageFiles>
+    <MaxSize Width="482" Height="300" />
+  </Content>
+</PlistInfoProjectFile>

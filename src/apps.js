@@ -88,6 +88,21 @@ function initGame() {
     game = new MainScene();
     PlayerData.init();
 }
+function validateAmountEnough(upgradeLevelData) {
+    var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
+    return amount < upgradeLevelData['value'];
+}
+function validateEnoughResource(nextlevelData, upgrade_btn, text) {
+    if (validateAmountEnough(nextlevelData)) {
+        upgrade_btn.setEnabled(false);
+        upgrade_btn.setBright(false);
+        text.setColor(cc.color(255, 0, 0));
+    } else {
+        upgrade_btn.setEnabled(true);
+        upgrade_btn.setBright(true);
+        text.setColor(cc.color(255, 255, 255));
+    }
+}
 
 function addPlayer(playerName,callback){
 

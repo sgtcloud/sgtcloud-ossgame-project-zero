@@ -58,9 +58,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -104,9 +104,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/title.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 60,
@@ -149,9 +149,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_18.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 3,
@@ -192,9 +192,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_10.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -235,9 +235,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "offlineRewardUI/desc.png",
-                  "Plist": ""
+                  "Plist": "OfflineRewardUI.plist"
                 },
                 "Scale9Width": 264,
                 "Scale9Height": 26,
@@ -327,19 +327,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_11.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "PressedFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_11.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "NormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_06.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -388,9 +388,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/sure.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -437,9 +437,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "offlineRewardUI/title.png",
-                  "Plist": ""
+                  "Plist": "OfflineRewardUI.plist"
                 },
                 "Scale9Width": 112,
                 "Scale9Height": 34,
@@ -522,9 +522,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/gold.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -562,9 +562,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/diamond.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -602,9 +602,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/key.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
@@ -645,9 +645,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -690,9 +690,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -735,9 +735,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -802,19 +802,12 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow_b.png",
-        "buttonUI/sure.png",
-        "mainUI/bg_04.png",
-        "mainUI/bg_06.png",
-        "mainUI/bg_10.png",
-        "mainUI/bg_11.png",
-        "mainUI/bg_18.png",
-        "mainUI/diamond.png",
-        "mainUI/gold.png",
-        "mainUI/key.png",
-        "mainUI/title.png",
-        "offlineRewardUI/desc.png",
-        "offlineRewardUI/title.png"
+        "ButtonUI.plist",
+        "ButtonUI.png",
+        "MainUI.plist",
+        "MainUI.png",
+        "OfflineRewardUI.plist",
+        "OfflineRewardUI.png"
       ],
       "ctype": "GameFileData"
     }

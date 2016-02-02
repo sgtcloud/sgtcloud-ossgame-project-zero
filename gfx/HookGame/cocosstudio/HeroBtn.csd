@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="278" ctype="GameLayerObjectData">
         <Size X="140.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-390795579" Tag="447" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-390795579" Tag="447" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="-777523865" Tag="279" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -18,9 +18,9 @@
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="heroUI/btn2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
-                <NormalFileData Type="Normal" Path="heroUI/btn1.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -32,7 +32,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2901" Y="0.6700" />
                 <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/gold.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/gold.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="gold_text" ActionTag="980548288" Tag="284" IconVisible="False" LeftMargin="58.7065" RightMargin="25.2935" TopMargin="10.0695" BottomMargin="53.9305" FontSize="16" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="56.0000" Y="16.0000" />
@@ -86,7 +86,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5489" Y="0.4256" />
                 <PreSize X="0.2071" Y="0.4000" />
-                <FileData Type="Normal" Path="heroUI/lock.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/lock.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond" ActionTag="304582546" Tag="367" IconVisible="False" LeftMargin="40.6188" RightMargin="84.3812" TopMargin="30.8967" BottomMargin="34.1033" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
@@ -96,7 +96,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3437" Y="0.5200" />
                 <PreSize X="0.1071" Y="0.1875" />
-                <FileData Type="Normal" Path="heroUI/diamond.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="heroUI/diamond.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond_text" ActionTag="1097546671" Tag="368" IconVisible="False" LeftMargin="58.7065" RightMargin="25.2935" TopMargin="31.4600" BottomMargin="32.5400" FontSize="16" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="56.0000" Y="16.0000" />
@@ -117,7 +117,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5570" Y="0.4134" />
                 <PreSize X="0.5500" Y="0.3375" />
-                <FileData Type="Normal" Path="buttonUI/MaxLevel.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="buttonUI/MaxLevel.png" Plist="ButtonUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

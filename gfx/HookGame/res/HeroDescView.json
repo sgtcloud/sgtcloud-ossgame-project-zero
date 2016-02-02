@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_03.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/atk.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -136,9 +136,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/tap.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -179,9 +179,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/life.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -222,9 +222,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/atk_period.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -266,9 +266,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/ctr_chance.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -309,9 +309,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/ctr_modify.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 45,
                 "Scale9Height": 45,
@@ -352,9 +352,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/atk_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -395,9 +395,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/tap_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -438,9 +438,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/life_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -481,9 +481,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/atk_period_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -524,9 +524,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/ctr_chance_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -567,9 +567,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/ctr_modify_lable.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Width": 80,
                 "Scale9Height": 28,
@@ -886,19 +886,10 @@
       "UsedResources": [
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "heroDescUI/atk.png",
-        "heroDescUI/atk_lable.png",
-        "heroDescUI/atk_period.png",
-        "heroDescUI/atk_period_lable.png",
-        "heroDescUI/ctr_chance.png",
-        "heroDescUI/ctr_chance_lable.png",
-        "heroDescUI/ctr_modify.png",
-        "heroDescUI/ctr_modify_lable.png",
-        "heroDescUI/life.png",
-        "heroDescUI/life_lable.png",
-        "heroDescUI/tap.png",
-        "heroDescUI/tap_lable.png",
-        "mainUI/bg_03.png"
+        "HeroDescUI.plist",
+        "HeroDescUI.png",
+        "MainUI.plist",
+        "MainUI.png"
       ],
       "ctype": "GameFileData"
     }

@@ -55,9 +55,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "bloodUI/blood_bg.png",
-                  "Plist": ""
+                  "Plist": "BattleNum.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 19,
@@ -94,9 +94,9 @@
               {
                 "ProgressInfo": 50,
                 "ImageFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "bloodUI/blood_bar.png",
-                  "Plist": ""
+                  "Plist": "BattleNum.plist"
                 },
                 "AnchorPoint": {},
                 "Position": {
@@ -144,8 +144,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "bloodUI/blood_bar.png",
-        "bloodUI/blood_bg.png"
+        "BattleNum.plist",
+        "BattleNum.png"
       ],
       "ctype": "GameFileData"
     }

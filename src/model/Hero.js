@@ -9,9 +9,9 @@ var Hero = function (heroData) {
 
     for (var i in data.equips) {
         var equipId = data.equips[i];
-        var equip = readEquipCache(equipId);
-        var equipLv = (equip && equip['level']) || 1;
-        equips.push(new Equip(equipId, equipLv));
+        var equipCache = readEquipCache(equipId);
+        //var equipLv = (equip && equip['level']) || 1;
+        equips.push(new Equip(equipId, equipCache));
     }
     for (var i in data.skills) {
         var skillId = data.skills[i];
@@ -279,6 +279,7 @@ var Hero = function (heroData) {
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
                 player.heroes[i]['lv'] = lv;
+                break;
             }
         }
     }

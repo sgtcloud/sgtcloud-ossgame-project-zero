@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="SkillUI" Type="Plist" ID="c991207d-bb1c-47ad-9488-bd4ca403c34d" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="skillUI/cooldown.png" />
+      <FilePathData Path="skillUI/duration.png" />
+      <FilePathData Path="skillUI/hero.png" />
+      <FilePathData Path="skillUI/reviveTime.png" />
+      <FilePathData Path="skillUI/tap.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,15 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="ShopUI" Type="Plist" ID="4a57689e-21e7-44a6-9d7e-fb98837fd059" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="shopUI/moneyTree_bg.png" />
+      <FilePathData Path="shopUI/moneyTreeTab_1.png" />
+      <FilePathData Path="shopUI/moneyTreeTab_2.png" />
+      <FilePathData Path="shopUI/sale.png" />
+      <FilePathData Path="shopUI/shopTab_1.png" />
+      <FilePathData Path="shopUI/shopTab_2.png" />
+      <FilePathData Path="shopUI/shopText.png" />
+    </ImageFiles>
+    <MaxSize Width="670" Height="670" />
+  </Content>
+</PlistInfoProjectFile>
