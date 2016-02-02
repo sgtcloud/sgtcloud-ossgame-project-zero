@@ -137,8 +137,8 @@ var PlayerData = {
         localStorage.setItem("save", JSON.stringify(player));
         if(sgt){
             var save = new SgtApi.Save();
-            if(sgt.context.playerData.player.level != this.heroes[0].lv){
-                sgt.context.playerData.player.level = this.heroes[0].lv;
+            if(sgt.context.playerData.player.level != player.heroes[0].lv){
+                sgt.context.playerData.player.level = player.heroes[0].lv;
                 sgt.PlayerService.update(sgt.context.playerData.player,function(result,data){});
             }
 
@@ -153,9 +153,9 @@ var PlayerData = {
     ,
     updateLeaderBoardScore: function(stageNum,leaderId){
         SgtApi.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum, function(result, data) {
-            if (result) {
+            /*if (result) {
                 console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
-            }
+            }*/
         });
     },
     getHeroes: function () {

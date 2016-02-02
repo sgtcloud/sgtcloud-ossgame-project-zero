@@ -58,9 +58,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -104,9 +104,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/title.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 60,
@@ -149,9 +149,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_18.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 3,
@@ -192,9 +192,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_10.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -391,19 +391,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_11.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_11.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_06.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -597,9 +597,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/relic.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -635,9 +635,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/diamond.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -673,9 +673,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/gold.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -711,9 +711,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/key.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
@@ -800,9 +800,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/relic.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -839,9 +839,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/diamond.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -878,9 +878,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/gold.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -917,9 +917,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/key.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
@@ -1007,9 +1007,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/relic.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1045,9 +1045,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/diamond.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1083,9 +1083,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/gold.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1121,9 +1121,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/key.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
@@ -1186,8 +1186,16 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/bg_04.png",
+        "mainUI/bg_06.png",
+        "mainUI/bg_10.png",
+        "mainUI/bg_11.png",
+        "mainUI/bg_18.png",
+        "mainUI/diamond.png",
+        "mainUI/gold.png",
+        "mainUI/key.png",
+        "mainUI/relic.png",
+        "mainUI/title.png"
       ],
       "ctype": "GameFileData"
     }

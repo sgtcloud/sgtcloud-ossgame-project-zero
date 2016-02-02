@@ -55,9 +55,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -96,9 +96,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_18.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 3,
@@ -138,9 +138,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -328,9 +328,9 @@
                       "Plist": "ShopUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/empty.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -385,9 +385,9 @@
                       "Plist": "ShopUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/empty.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -447,8 +447,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
+        "mainUI/bg_18.png",
+        "mainUI/empty.png",
         "ShopUI.plist",
         "ShopUI.png",
         "ShopView.json"

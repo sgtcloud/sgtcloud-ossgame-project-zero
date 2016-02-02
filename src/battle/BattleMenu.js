@@ -1303,8 +1303,8 @@ var RankLayerMenu = BattleMenu.extend({
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + data.player.avatarUrl);
             var playerName = root.getChildByName('player_name');
             var levelText = root.getChildByName('level_text');
-            //var playerPrestige = root.getChildByName('player_prestige');
-            //var prestigeText = root.getChildByName('prestige_text');
+            /*var playerPrestige =*/ root.getChildByName('player_prestige').setVisible(false);
+            /*var prestigeText =*/ root.getChildByName('prestige_text').setVisible(false);
             //var playerLv = root.getChildByName('player_lv');
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');

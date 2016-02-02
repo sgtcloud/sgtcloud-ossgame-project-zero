@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/skill_icon.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -279,8 +279,7 @@
       "UsedResources": [
         "font/font18_white-export.fnt",
         "font/font18_white-export.png",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/skill_icon.png",
         "SkillUI.plist",
         "SkillUI.png"
       ],

@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_03.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -888,8 +888,7 @@
         "font/font22_yellow_kmbb-export.png",
         "HeroDescUI.plist",
         "HeroDescUI.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/bg_03.png"
       ],
       "ctype": "GameFileData"
     }
