@@ -16,7 +16,7 @@ var Chance = function (opts) {
     this._stack = opts;
     this._found = new Array();
 
-    this._stack.sort(function (a, b) {
+   this._stack.sort(function (a, b) {
         return a.w - b.w;
     }).reduce(function (a, b) {
         b.cw = b.w + a;
@@ -61,5 +61,4 @@ Chance.prototype.next = function () {
             break;
         }
     }
-    ;
 };

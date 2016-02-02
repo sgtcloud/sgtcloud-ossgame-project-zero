@@ -825,7 +825,7 @@ var EquipListMenu = BattleMenu.extend({
         this._super(battle, res.equip_layer_json);
 
         this.heroList = this.root.getChildByName('equip_list');
-        this.playerEquip = this.root.getChildByName('title_root');
+        //this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
         var itemView = ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
@@ -840,7 +840,65 @@ var EquipListMenu = BattleMenu.extend({
         var upgradeEquipBtn = equipView.getChildByName('upgrade_btn');
         var upgradeBtnTemp = upgradeEquipBtn.getChildByName('btn');
         var upgradeSkillPosition = upgradeEquipBtn.getPosition();
+        var title_root=this.root.getChildByName('title_root');
+        var basic=3;
+        var nextValue=0;
+        var difValue=5;
 
+        function buildMagicalEquips(hero){
+            var title=title_root.getChildByName('title');
+            var buy_btn=title_root.getChildByName('buy_btn')
+            var buy_btn_layer=buy_btn.getChildByName('btn')
+            var btn=buy_btn_layer.getChildByName('btn');
+            var text_yellow=buy_btn_layer.getChildByName('text_yellow');
+            var relic_icon=buy_btn_layer.getChildByName('relic_icon');
+            var diamond_icon=buy_btn_layer.getChildByName('diamond_icon');
+            text_yellow.ignoreContentAdaptWithSize(true);
+            relic_icon.setVisible(false);
+            //var equips=hero.getEquips();
+            //var equipsList=[];
+            //for(var i in equips){
+            //    if(equips[i].getLv()===0){
+            //        equipsList.push(equips[i]);
+            //    }
+            //}
+            //var equip=equipsList[random(0,equipsList.length-1)];
+            var equipObject=randomEquip(hero);
+            var equip=equipObject.equip;
+            title.loadTexture('res/icon/equips/' + equip.getIcon());
+            text_yellow.setString(equipObject.value);
+            diamond_icon.loadTexture('res/icon/resources_small/' + equipObject.unit + '.png');
+            btn.addClickEventListener(function(){
+
+            });
+        }
+
+        function randomEquip(hero){
+            var equips=hero.getEquips();
+            var equipsList=[];
+            var bonus=[];
+            for(var i in equips){
+                if(equips[i].getLv()===0){
+                    equipsList.push(equips[i]);
+                }
+            }
+            nextValue=basic+(equips.length-equipsList.length)*difValue;
+            for(var i in equipsList){
+                var weight=equipsList[i].getType();
+                var bo={};
+                bo.w=weight;
+                var f={};
+                f.unit=equipsList[i].getNextLevelUpgrade()['unit'];
+                f.value=nextValue;
+                f.equip=equipsList[i];
+                bo.f=f;
+                bonus.push(bo);
+            }
+            var chance=new Chance(bonus)
+            return chance.next();
+            //var rand=random(0,equipsList.length-1);
+            //return equipsList[random(0,equipsList.length-1)];
+        }
 
         function buildHeroView(hero, isFirst) {
             var root = heroView.clone();
@@ -854,7 +912,14 @@ var EquipListMenu = BattleMenu.extend({
                 hero_equip.setVisible(false);
                 player_equip.setVisible(true);
                 var equipNum_text = player_equip.getChildByName('equipNum_text');
-                equipNum_text.setString(hero.getEquipCount());
+                var equips=hero.getEquips();
+                var count=0;
+                for (var i in equips){
+                    if(equips[i].getType()>0&&equips[i].getLv()>0){
+                        count++;
+                    }
+                }
+                equipNum_text.setString(count);
                 equipNum_text.ignoreContentAdaptWithSize(true)
             } else {
                 player_equip.setVisible(false);
@@ -988,6 +1053,9 @@ var EquipListMenu = BattleMenu.extend({
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
                 var isFirst = i === 0;
+                if(isFirst){
+                    buildMagicalEquips(heroData);
+                }
                 if (heroData.getLv() > 0) {
                     buildEquipMenuIfUnlocked(heroData, isFirst);
                 } else {
