@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/title_bg3.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 180,
                 "Scale9Height": 69,
@@ -90,9 +90,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -133,9 +133,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -176,9 +176,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -219,9 +219,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/star0.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 24,
                 "Scale9Height": 15,
@@ -262,9 +262,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/star0.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 24,
                 "Scale9Height": 15,
@@ -304,7 +304,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "9999",
+                "LabelText": "",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font14_white_kmbb-export.fnt",
@@ -329,18 +329,18 @@
                   "Y": 0.2905
                 },
                 "PreSize": {
-                  "X": 0.1132,
-                  "Y": 0.1167
+                  "X": 0.0,
+                  "Y": 0.0
                 },
-                "LeftMargin": 80.5,
-                "RightMargin": 256.5,
-                "TopMargin": 78.1354,
-                "BottomMargin": 27.8646,
+                "LeftMargin": 102.0,
+                "RightMargin": 278.0,
+                "TopMargin": 85.1354,
+                "BottomMargin": 34.8646,
                 "Tag": 71,
                 "ActionTag": -2141386895,
                 "Size": {
-                  "X": 43.0,
-                  "Y": 14.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Name": "level_text1",
                 "ctype": "TextBMFontObjectData"
@@ -449,8 +449,9 @@
       "UsedResources": [
         "font/font14_white_kmbb-export.fnt",
         "font/font14_white_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/empty.png",
+        "mainUI/star0.png",
+        "mainUI/title_bg3.png"
       ],
       "ctype": "GameFileData"
     }

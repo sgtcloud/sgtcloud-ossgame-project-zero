@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "skillUI/hero.png",
-                  "Plist": ""
+                  "Plist": "SkillUI.plist"
                 },
                 "Scale9Width": 131,
                 "Scale9Height": 27,
@@ -175,9 +175,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "skillUI/tap.png",
-                  "Plist": ""
+                  "Plist": "SkillUI.plist"
                 },
                 "Scale9Width": 131,
                 "Scale9Height": 26,
@@ -326,8 +326,8 @@
         "font/font22_white_kmbb-export.fnt",
         "font/font22_white_kmbb-export.png",
         "mainUI/bg_04.png",
-        "skillUI/hero.png",
-        "skillUI/tap.png"
+        "SkillUI.plist",
+        "SkillUI.png"
       ],
       "ctype": "GameFileData"
     }

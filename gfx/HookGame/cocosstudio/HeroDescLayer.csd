@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_01.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="hero" ActionTag="-142533129" Tag="135" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="20.0000" BottomMargin="560.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="580.0000" Y="380.0000" />
@@ -30,7 +30,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="heroLevel_text" ActionTag="995984727" Tag="1110" IconVisible="False" LeftMargin="178.7979" RightMargin="257.2021" TopMargin="76.0390" BottomMargin="283.9610" LabelText="Lv.999/999" ctype="TextBMFontObjectData">
                     <Size X="144.0000" Y="20.0000" />
@@ -61,7 +61,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0852" Y="0.7062" />
                     <PreSize X="0.1552" Y="0.2368" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/hero_icon.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="heroDesc_bg" ActionTag="615838553" Tag="89" IconVisible="False" LeftMargin="19.5378" RightMargin="20.4622" TopMargin="270.2293" BottomMargin="9.7707" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
                     <Size X="540.0000" Y="100.0000" />
@@ -71,7 +71,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0337" Y="0.0257" />
                     <PreSize X="0.9310" Y="0.2632" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/bg_03.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="heroDesc_text" ActionTag="1032002903" Tag="88" IconVisible="False" LeftMargin="39.5397" RightMargin="40.4603" TopMargin="285.2285" BottomMargin="24.7715" IsCustomSize="True" FontSize="20" LabelText="英雄描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="500.0000" Y="70.0000" />
@@ -117,7 +117,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="skill_list" ActionTag="1969184978" Tag="91" IconVisible="False" LeftMargin="4.0001" RightMargin="3.9999" TopMargin="4.0000" BottomMargin="4.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                     <Size X="572.0000" Y="452.0000" />
@@ -156,9 +156,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
-                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
-                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>

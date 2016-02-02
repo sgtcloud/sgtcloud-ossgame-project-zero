@@ -452,9 +452,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/sure.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -1184,7 +1184,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/sure.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

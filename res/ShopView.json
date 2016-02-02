@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTree_bg.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 24,
@@ -85,7 +85,7 @@
                 "Tag": 243,
                 "ActionTag": 2005624188,
                 "Size": {
-                  "X": 610.0,
+                  "X": 600.0,
                   "Y": 600.0
                 },
                 "Name": "bg",
@@ -107,7 +107,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 305.0,
+                  "X": 300.0001,
                   "Y": 532.1672
                 },
                 "Scale": {
@@ -121,11 +121,11 @@
                   "Y": 0.8869
                 },
                 "PreSize": {
-                  "X": 0.4098,
+                  "X": 0.4167,
                   "Y": 0.1667
                 },
-                "LeftMargin": 180.0,
-                "RightMargin": 180.0,
+                "LeftMargin": 175.0001,
+                "RightMargin": 174.9999,
                 "TopMargin": 17.8328,
                 "BottomMargin": 482.1672,
                 "Tag": 340,
@@ -138,7 +138,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font22_yellow_kmbb-export.fnt",
@@ -148,8 +148,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 305.0183,
-                  "Y": 514.883
+                  "X": 328.0161,
+                  "Y": 514.8829
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -158,21 +158,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
+                  "X": 0.5467,
                   "Y": 0.8581
                 },
                 "PreSize": {
-                  "X": 0.1623,
+                  "X": 0.0583,
                   "Y": 0.0317
                 },
-                "LeftMargin": 305.0183,
-                "RightMargin": 205.9817,
-                "TopMargin": 75.617,
-                "BottomMargin": 505.383,
+                "LeftMargin": 328.0161,
+                "RightMargin": 236.9839,
+                "TopMargin": 75.6171,
+                "BottomMargin": 505.3829,
                 "Tag": 907,
                 "ActionTag": -1775524666,
                 "Size": {
-                  "X": 99.0,
+                  "X": 35.0,
                   "Y": 19.0
                 },
                 "Name": "diamond_text",
@@ -189,7 +189,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 265.5253,
+                  "X": 255.5249,
                   "Y": 557.1674
                 },
                 "Scale": {
@@ -199,15 +199,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4353,
+                  "X": 0.4259,
                   "Y": 0.9286
                 },
                 "PreSize": {
-                  "X": 0.1623,
+                  "X": 0.165,
                   "Y": 0.0317
                 },
-                "LeftMargin": 265.5253,
-                "RightMargin": 245.4747,
+                "LeftMargin": 255.5249,
+                "RightMargin": 245.4751,
                 "TopMargin": 33.3326,
                 "BottomMargin": 547.6674,
                 "Tag": 906,
@@ -221,9 +221,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/diamond.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Width": 40,
                 "Scale9Height": 40,
@@ -232,8 +232,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 283.8201,
-                  "Y": 516.6213
+                  "X": 306.8182,
+                  "Y": 516.6212
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -242,17 +242,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4653,
+                  "X": 0.5114,
                   "Y": 0.861
                 },
                 "PreSize": {
-                  "X": 0.0492,
+                  "X": 0.05,
                   "Y": 0.05
                 },
-                "LeftMargin": 268.8201,
-                "RightMargin": 311.1799,
-                "TopMargin": 68.3787,
-                "BottomMargin": 501.6213,
+                "LeftMargin": 291.8182,
+                "RightMargin": 278.1818,
+                "TopMargin": 68.3788,
+                "BottomMargin": 501.6212,
                 "Tag": 285,
                 "ActionTag": -772689509,
                 "Size": {
@@ -264,9 +264,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/gold.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9OriginX": 5,
                 "Scale9OriginY": 5,
@@ -274,7 +274,7 @@
                 "Scale9Height": 30,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 231.2229,
+                  "X": 221.2225,
                   "Y": 540.7814
                 },
                 "Scale": {
@@ -284,15 +284,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3791,
+                  "X": 0.3687,
                   "Y": 0.9013
                 },
                 "PreSize": {
-                  "X": 0.0492,
+                  "X": 0.05,
                   "Y": 0.05
                 },
-                "LeftMargin": 231.2229,
-                "RightMargin": 348.7771,
+                "LeftMargin": 221.2225,
+                "RightMargin": 348.7775,
                 "TopMargin": 29.2186,
                 "BottomMargin": 540.7814,
                 "Tag": 286,
@@ -306,9 +306,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/sale.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "Scale9Width": 66,
                 "Scale9Height": 36,
@@ -327,15 +327,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3767,
+                  "X": 0.383,
                   "Y": 0.8571
                 },
                 "PreSize": {
-                  "X": 0.1082,
+                  "X": 0.11,
                   "Y": 0.06
                 },
                 "LeftMargin": 196.7903,
-                "RightMargin": 347.2097,
+                "RightMargin": 337.2097,
                 "TopMargin": 67.7366,
                 "BottomMargin": 496.2634,
                 "Tag": 341,
@@ -366,7 +366,7 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 230.0,
+                  "X": 225.0,
                   "Y": 27.826
                 },
                 "Scale": {
@@ -376,15 +376,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.377,
+                  "X": 0.375,
                   "Y": 0.0464
                 },
                 "PreSize": {
-                  "X": 0.2459,
+                  "X": 0.25,
                   "Y": 0.1
                 },
-                "LeftMargin": 230.0,
-                "RightMargin": 230.0,
+                "LeftMargin": 225.0,
+                "RightMargin": 225.0,
                 "TopMargin": 512.174,
                 "BottomMargin": 27.826,
                 "Tag": 287,
@@ -460,9 +460,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/buy3.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -514,7 +514,7 @@
             ],
             "ActionTag": 282530030,
             "Size": {
-              "X": 610.0,
+              "X": 600.0,
               "Y": 600.0
             },
             "Name": "moneyTree_tab",
@@ -591,7 +591,7 @@
                 "Tag": 38,
                 "ActionTag": 1366281404,
                 "Size": {
-                  "X": 610.0,
+                  "X": 600.0,
                   "Y": 600.0
                 },
                 "Name": "bg",
@@ -630,22 +630,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0049,
+                  "X": 0.005,
                   "Y": 0.0033
                 },
                 "PreSize": {
-                  "X": 0.9902,
-                  "Y": 0.9933
+                  "X": 0.99,
+                  "Y": 0.9667
                 },
                 "LeftMargin": 3.0,
                 "RightMargin": 3.0,
-                "TopMargin": 2.0,
+                "TopMargin": 18.0,
                 "BottomMargin": 2.0,
                 "Tag": 1109,
                 "ActionTag": -590507260,
                 "Size": {
-                  "X": 604.0,
-                  "Y": 596.0
+                  "X": 594.0,
+                  "Y": 580.0
                 },
                 "Name": "shopList",
                 "ctype": "ListViewObjectData"
@@ -653,7 +653,7 @@
             ],
             "ActionTag": -309343141,
             "Size": {
-              "X": 610.0,
+              "X": 600.0,
               "Y": 600.0
             },
             "Name": "shop_tab",
@@ -661,23 +661,24 @@
           }
         ],
         "Size": {
-          "X": 610.0,
+          "X": 600.0,
           "Y": 600.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/buy3.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "heroUI/diamond.png",
-        "heroUI/gold.png",
+        "HeroUI.plist",
+        "HeroUI.png",
         "mainUI/bg_03.png",
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
-        "shopUI/moneyTree_bg.png",
-        "shopUI/sale.png"
+        "ShopUI.plist",
+        "ShopUI.png"
       ],
       "ctype": "GameFileData"
     }

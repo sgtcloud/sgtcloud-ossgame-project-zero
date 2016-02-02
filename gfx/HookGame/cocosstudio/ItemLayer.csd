@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="item_icon" ActionTag="-305087361" Tag="121" IconVisible="False" LeftMargin="5.0000" RightMargin="5.0000" TopMargin="5.0000" BottomMargin="5.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0500" Y="0.0500" />
                 <PreSize X="0.9000" Y="0.9000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/equip_icon.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/equip_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="sale_text" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="52.3663" RightMargin="6.6337" TopMargin="77.0521" BottomMargin="7.9479" LabelText="999" ctype="TextBMFontObjectData">
                 <Size X="41.0000" Y="15.0000" />

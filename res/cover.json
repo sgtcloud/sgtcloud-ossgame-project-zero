@@ -97,19 +97,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/yellow_btn_b.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/yellow_btn_a.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/yellow_btn_a.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -165,9 +165,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/logo.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 300,
                 "Scale9Height": 180,
@@ -221,10 +221,9 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "coverUI/cover_bg.jpg",
-        "coverUI/logo.png",
-        "coverUI/yellow_btn_a.png",
-        "coverUI/yellow_btn_b.png"
+        "cover.plist",
+        "cover.png",
+        "coverUI/cover_bg.jpg"
       ],
       "ctype": "GameFileData"
     }

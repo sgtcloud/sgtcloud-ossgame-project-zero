@@ -326,9 +326,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/rankText.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 209,
                 "Scale9Height": 58,
@@ -369,9 +369,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/myRank_text.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 207,
                 "Scale9Height": 27,
@@ -493,24 +493,24 @@
                 "Children": [
                   {
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
                       "Type": "Normal",
@@ -550,24 +550,24 @@
                   {
                     "CheckedState": true,
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
                       "Type": "Normal",
@@ -638,12 +638,8 @@
         "mainUI/bg_10.png",
         "mainUI/bg_18.png",
         "mainUI/empty.png",
-        "rankUI/myRank_text.png",
-        "rankUI/pvpTab_1.png",
-        "rankUI/pvpTab_2.png",
-        "rankUI/rankText.png",
-        "rankUI/stageTab_1.png",
-        "rankUI/stageTab_2.png"
+        "RankUI.plist",
+        "RankUI.png"
       ],
       "ctype": "GameFileData"
     }

@@ -75,9 +75,9 @@
                   "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {},
@@ -131,9 +131,9 @@
                   "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {},
@@ -183,8 +183,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/empty.png",
         "ShopUI.plist",
         "ShopUI.png"
       ],

@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0240" Y="0.0909" />
                 <PreSize X="0.1442" Y="0.8182" />
-                <FileData Type="MarkedSubImage" Path="mainUI/hero_icon.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/hero_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="heroName_text" ActionTag="1328202900" Tag="219" IconVisible="False" LeftMargin="120.0000" RightMargin="344.0000" TopMargin="12.9999" BottomMargin="75.0001" IsCustomSize="True" FontSize="22" LabelText="英雄名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="22.0000" />

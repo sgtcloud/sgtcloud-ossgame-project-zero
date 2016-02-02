@@ -235,9 +235,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "offlineRewardUI/desc.png",
-                  "Plist": ""
+                  "Plist": "OfflineRewardUI.plist"
                 },
                 "Scale9Width": 264,
                 "Scale9Height": 26,
@@ -388,9 +388,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/sure.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -437,9 +437,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "offlineRewardUI/title.png",
-                  "Plist": ""
+                  "Plist": "OfflineRewardUI.plist"
                 },
                 "Scale9Width": 112,
                 "Scale9Height": 34,
@@ -645,9 +645,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -690,9 +690,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -735,9 +735,9 @@
                     "LabelText": "9999999",
                     "StartChar": "0",
                     "LabelAtlasFileImage_CNB": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
@@ -802,8 +802,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/font16_yellow_b.png",
-        "buttonUI/sure.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",
@@ -813,8 +813,8 @@
         "mainUI/gold.png",
         "mainUI/key.png",
         "mainUI/title.png",
-        "offlineRewardUI/desc.png",
-        "offlineRewardUI/title.png"
+        "OfflineRewardUI.plist",
+        "OfflineRewardUI.png"
       ],
       "ctype": "GameFileData"
     }

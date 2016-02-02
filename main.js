@@ -46,13 +46,18 @@
  }
  *
  */
+var quickLoginfalg = false;
 //自动登录业务
 function autoLoginService() {
-    SgtApi.UserService.quickLogin(function(result, data) {
+    SgtApi.UserService.quickLogin(function(result, user) {
         if (result) {
             if (user !== null) {
-
+                console.log("自动注册成功"+user);
+                //登陆成功 获取用户存档
+                getPlayerSave();
             }
+        }else{
+            console.log('快速注册失败。');
         }
     });
 }
@@ -65,35 +70,93 @@ function autoWxLoginService(wxInfo){
         signature: wxInfo.result.signature, // 必填，签名，见附录1
         jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone','chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
     });
-    SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP,function(result,data){
-        if (!result) {
-            sgt.WxCentralService.getUserInfo(function(result, data) {
-                if(result){
-                    var user = new SgtApi.User();
-                    user.userName = data.openid;
-                    user.nickName = data.nickname;
-                    user.registryType = SgtApi.User.WECHAT_MP;//注册类型
-                    SgtApi.UserService.regist(user, function (result, data) {
-                        console.log(data);
-                    });
-                }else{
-                    //重现授权
-                    sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
-                }
-            });
-        }else{
-            //登陆成功
-        }
-    });
+    if (SgtApi.context.openid) {
+        SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP,function(result,data){
+            if (!result) {
+                sgt.WxCentralService.getUserInfo(function(result, data) {
+                    if(result){
+                        var user = new SgtApi.User();
+                        user.userName = data.openid;
+                        user.nickName = data.nickname;
+                        user.registryType = SgtApi.User.WECHAT_MP;//注册类型
+                        SgtApi.UserService.regist(user, function (result, data) {
+                            if(result){
+                                console.log(data);
+                                //登陆成功 获取用户存档
+                                getPlayerSave(data.userid);
+                            }else{
+                                console.log(data);
+                                //注册失败
+                            }
+                        });
+                    }else{
+                        //重现授权
+                        sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
+                    }
+                });
+            }else{
+                console.log(data);
+                //登陆成功 获取用户存档
+                getPlayerSave();
+            }
+        });
+    }else{
+        sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
+    }
 }
+function getPlayerSave(){
+    sgt.PlayerService.getByUserId(sgt.context.user.userid,function(result,data){
+        if(result){
+            console.log("成功获取用户角色"+data);
+            if(cc.isArray(data) && data.length > 0){
+                var playerData = data[0];
+                sgt.context.playerData.player = playerData;
+                sgt.PlayerService.downloadSave(playerData.id,function(result,data){
+                    if(result){
+                        if(cc.isObject(data)){
+                            sgt.context.playerData.save = data;
+                            localStorage.setItem("save", data.content);
+                        }else{
+                            //没有存档
+
+                        }
+                        quickLoginfalg = true;
+                    }
+                });
+            }else{
+                //未创建用户
+                //createPlayer(userId);
+                console.log("未创建角色");
+            }
+        }else{
+            console.log("失败获取用户角色"+data);
+        }
+    })
+}
+
 cc.game.onStart = function () {
     if (!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
     {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-
-
+    if(SgtApi){
+        SgtApi.init({appId:'h5game',async:true});
+        if (typeof wx != "undefined" && is_weixin()) {
+            SgtApi.WxCentralService.getSignature(function(result, data) {
+                if(result)
+                    autoWxLoginService(data);
+                else{
+                    console.log("获取签名失败");
+                    //autoLoginService();
+                }
+            });
+        }else{
+            autoLoginService();
+        }
+    }else{
+        quickLoginfalg = true;
+    }
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(true);
     // Adjust viewport meta

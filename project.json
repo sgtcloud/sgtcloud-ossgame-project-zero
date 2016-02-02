@@ -11,7 +11,8 @@
     "gui",
     "editbox",
     "cocostudio",
-    "ccpool"
+    "ccpool",
+    "ccui"
   ],
   "jsList": [
     "src/resource.js",

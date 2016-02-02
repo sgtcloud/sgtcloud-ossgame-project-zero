@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -130,9 +130,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/hero_icon.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -500,8 +500,8 @@
         "font/font16_yellow_kmbb-export.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_05.png",
+        "mainUI/hero_icon.png",
         "RankUI.plist",
         "RankUI.png"
       ],

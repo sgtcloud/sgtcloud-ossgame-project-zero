@@ -55,24 +55,24 @@
               {
                 "CheckedState": true,
                 "NormalBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "PressedBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "DisableBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeNormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
                   "Type": "Normal",
@@ -111,24 +111,24 @@
               },
               {
                 "NormalBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "PressedBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "DisableBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeNormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
                   "Type": "Normal",
@@ -184,10 +184,8 @@
       },
       "UsedResources": [
         "mainUI/empty.png",
-        "shopUI/moneyTreeTab_1.png",
-        "shopUI/moneyTreeTab_2.png",
-        "shopUI/shopTab_1.png",
-        "shopUI/shopTab_2.png"
+        "ShopUI.plist",
+        "ShopUI.png"
       ],
       "ctype": "GameFileData"
     }

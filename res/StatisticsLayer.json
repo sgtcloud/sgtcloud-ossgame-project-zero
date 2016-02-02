@@ -140,9 +140,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "statisticsUI/title_text.png",
-                  "Plist": ""
+                  "Plist": "StatisticsUI.plist"
                 },
                 "Scale9Width": 275,
                 "Scale9Height": 59,
@@ -264,9 +264,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "statisticsUI/current_text.png",
-                      "Plist": ""
+                      "Plist": "StatisticsUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -349,9 +349,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text04.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -392,9 +392,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text05.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -435,9 +435,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text06.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -478,9 +478,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text07.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -521,9 +521,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text08.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -564,9 +564,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text09.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -607,9 +607,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text10.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -650,9 +650,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text11.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -693,9 +693,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text12.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -736,9 +736,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text13.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -779,9 +779,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text14.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -822,9 +822,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text15.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1484,9 +1484,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "statisticsUI/cumulative_text.png",
-                      "Plist": ""
+                      "Plist": "StatisticsUI.plist"
                     },
                     "Scale9Width": 142,
                     "Scale9Height": 47,
@@ -1569,9 +1569,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text19.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1607,9 +1607,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text17.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1645,9 +1645,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text16.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1683,9 +1683,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text24.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1721,9 +1721,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text22.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1760,9 +1760,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text23.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -1798,9 +1798,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "statisticsUI/text25.png",
-                          "Plist": ""
+                          "Plist": "StatisticsUI.plist"
                         },
                         "Scale9Width": 200,
                         "Scale9Height": 23,
@@ -2197,28 +2197,8 @@
         "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_01.png",
         "mainUI/bg_05.png",
-        "statisticsUI/cumulative_text.png",
-        "statisticsUI/current_text.png",
-        "statisticsUI/text04.png",
-        "statisticsUI/text05.png",
-        "statisticsUI/text06.png",
-        "statisticsUI/text07.png",
-        "statisticsUI/text08.png",
-        "statisticsUI/text09.png",
-        "statisticsUI/text10.png",
-        "statisticsUI/text11.png",
-        "statisticsUI/text12.png",
-        "statisticsUI/text13.png",
-        "statisticsUI/text14.png",
-        "statisticsUI/text15.png",
-        "statisticsUI/text16.png",
-        "statisticsUI/text17.png",
-        "statisticsUI/text19.png",
-        "statisticsUI/text22.png",
-        "statisticsUI/text23.png",
-        "statisticsUI/text24.png",
-        "statisticsUI/text25.png",
-        "statisticsUI/title_text.png"
+        "StatisticsUI.plist",
+        "StatisticsUI.png"
       ],
       "ctype": "GameFileData"
     }

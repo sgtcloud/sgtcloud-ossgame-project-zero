@@ -597,9 +597,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bar_bg.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 501,
                 "Scale9Height": 46,
@@ -647,19 +647,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -716,9 +716,9 @@
               {
                 "ProgressInfo": 100,
                 "ImageFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bar1.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleX": 0.5,
@@ -757,9 +757,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/battle_icon.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 52,
                 "Scale9Height": 50,
@@ -1137,9 +1137,9 @@
               {
                 "ProgressInfo": 100,
                 "ImageFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bar2.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleX": 0.5,
@@ -1232,19 +1232,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/offline_reward.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/offline_reward.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/offline_reward.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -1307,19 +1307,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
-                  "Plist": "MainUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -1439,8 +1439,13 @@
         "font/font19_white_kmbb-export.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/bar_bg.png",
+        "mainUI/bar1.png",
+        "mainUI/bar2.png",
+        "mainUI/battle_icon.png",
+        "mainUI/offline_reward.png",
+        "mainUI/pack_icon.png",
+        "mainUI/statistics_icon.png"
       ],
       "ctype": "GameFileData"
     }

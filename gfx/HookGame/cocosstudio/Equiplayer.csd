@@ -76,6 +76,16 @@
                     <PreSize X="0.1699" Y="0.2909" />
                     <FileData Type="MarkedSubImage" Path="equipUI/buyHoly.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="buy_btn" ActionTag="711518097" Tag="807" IconVisible="True" LeftMargin="466.2889" RightMargin="17.7111" TopMargin="12.7128" BottomMargin="17.2872" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                    <Size X="140.0000" Y="80.0000" />
+                    <AnchorPoint />
+                    <Position X="466.2889" Y="17.2872" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.7473" Y="0.1572" />
+                    <PreSize X="0.2244" Y="0.7273" />
+                    <FileData Type="Normal" Path="Btn_Buy.csd" Plist="" />
+                  </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
                 <Position X="7.7095" Y="384.2550" />
@@ -87,16 +97,6 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="buy_btn" ActionTag="711518097" Tag="807" IconVisible="True" LeftMargin="472.8423" RightMargin="27.1577" TopMargin="19.5316" BottomMargin="400.4684" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="140.0000" Y="80.0000" />
-                <AnchorPoint />
-                <Position X="472.8423" Y="400.4684" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7388" Y="0.8009" />
-                <PreSize X="0.2188" Y="0.1600" />
-                <FileData Type="Normal" Path="Btn_Buy.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
