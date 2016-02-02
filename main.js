@@ -168,6 +168,8 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
+        initDatas();
+        initGame();
         showCover();
     }, this);
 };

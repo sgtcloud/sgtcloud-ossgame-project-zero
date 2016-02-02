@@ -272,7 +272,7 @@ var SkillListMenu = BattleMenu.extend({
             for (var i = 0; i < skillBtnNum; i++) {
                 //skillBtns[i].setVisible(false);
             }
-            battlePanel.foreachHeroSprite(function (hero, i) {
+            battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 //skill.setVisible(true);
                 //skill.setEnabled(true);
@@ -289,7 +289,7 @@ var SkillListMenu = BattleMenu.extend({
         }
 
         this.update = function (dt) {
-            battlePanel.foreachHeroSprite(function (hero, i) {
+            battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 if (hero.isDead()) {
                     skill.setDeadTime(format(hero.getRecover() * 1000));

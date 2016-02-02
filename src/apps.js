@@ -179,8 +179,6 @@ function showCover() {
     }
 
     bindButtonCallback(loginBtn, function () {
-        initDatas();
-        initGame();
         showGame();
     });
 

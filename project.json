@@ -28,6 +28,7 @@
     "src/model/SkillEffectMappings.js",
     "src/LoaderScene.js",
     "src/battle/BattleConst.js",
+    "src/battle/BattleField.js",
     "src/battle/BuffTips.js",
     "src/battle/Loot.js",
     "src/battle/ActiveSkill.js",

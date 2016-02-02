@@ -1,9 +1,25 @@
 var EVENT = {
+    /**
+     * 战斗开始
+     */
     BATTLE_START: "BATTLE_START",
+    /**
+     * 战斗胜利
+     */
     BATTLE_WIN: "BATTLE_WIN",
+    /**
+     * 离开boss战斗
+     */
     LEAVE_BOSS_BATTLE: "LEAVE_BOSS_BATTLE",
+    /**
+     * 进入boss战斗
+     */
     FIGHT_BOSS_BATTLE: "FIGHT_BOSS_BATTLE"
     ,
+    /**
+     * 更新敌人的总血量
+     */
+    UPDATE_ENEMY_LIFE: "UPDATE_ENEMY_LIFE",
     /**
      * 英雄升级
      */
@@ -47,7 +63,7 @@ var EVENT = {
     GEM_VALUE_UPDATE: "GEM_VALUE_UPDATE",
     /**
      * 圣物数量改变
-    */
+     */
     RELIC_VALUE_UPDATE: "RELIC_VALUE_UPDATE",
     /**
      * 背包数量改变
@@ -80,20 +96,20 @@ var EVENT = {
     /**
      * 解锁主动技能
      */
-    UNLOCK_ACTIVITY_SKILL:"UNLOCK_ACTIVITY_SKILL",
+    UNLOCK_ACTIVITY_SKILL: "UNLOCK_ACTIVITY_SKILL",
     /**
      * 解锁英雄
      */
-    UNLOCK_HERO:"UNLOCK_HERO",
+    UNLOCK_HERO: "UNLOCK_HERO",
     /**
      * 更新技能总攻击显示
      */
-    UPGRADE_HERO_ATTACK:"UPGRADE_HERO_ATTACK",
+    UPGRADE_HERO_ATTACK: "UPGRADE_HERO_ATTACK",
     /**
      * 更新指定资源（金币、钻石、宝物...）
      * 参数:{unit:资源类型,value:资源值}
      */
-    UPDATE_RESOURCE:'UPDATE_RESOURCE'
+    UPDATE_RESOURCE: 'UPDATE_RESOURCE'
 };
 
 var customEventHelper = {
