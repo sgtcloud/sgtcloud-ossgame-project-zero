@@ -151,8 +151,8 @@ var PlayerData = {
         }
     }
     ,
-    updateLeaderBoardScore: function(stageNum){
-        SgtApi.LeaderBoardService.submitLeaderBoardScore("pvp_rank", player.id, stageNum, function(result, data) {
+    updateLeaderBoardScore: function(stageNum,leaderId){
+        SgtApi.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum, function(result, data) {
             if (result) {
                 console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
             }
@@ -365,26 +365,20 @@ var PlayerData = {
         }
     }
     ,
-    getCurrentRanksByType: function (leaderId) {
+    getCurrentRanksByType: function (leaderId,callback) {
         if(sgt && cc.isObject(sgt.context.playerData)){
-            SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, function(result, data) {
-                if (result) {
-                    return data;
-                }
-            });
+            SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+        }else{
+            return callback(false);
         }
-        return [];
     }
     ,
-    getMyRankByType: function (leaderId) {
+    getMyRankByType: function (leaderId,callback) {
         if(sgt && cc.isObject(sgt.context.playerData)){
-            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, sgt.context.playerData.player.id, function(result, data) {
-                if (result) {
-                    return data.index+1;
-                }
-            });
+            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, sgt.context.playerData.player.id, callback);
+        }else{
+            return callback(false);
         }
-        return 1;
     }
     ,
     getTotalHeroNum: function(){

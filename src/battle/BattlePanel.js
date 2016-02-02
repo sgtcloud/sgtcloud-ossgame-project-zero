@@ -425,7 +425,7 @@ var BattlePanel = cc.Node.extend({
             player.stage = stageData.getId();
             player.statistics.total_max_level += 1;
             //更新通关数据
-            PlayerData.updateLeaderBoardScore(player.statistics.total_max_level);
+            PlayerData.updateLeaderBoardScore(player.statistics.total_max_level,"stage_rank");
             this.loadStageBackground(stageData);
         } else {
             if (stageData.couldFightBossBattle()) {

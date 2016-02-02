@@ -1279,16 +1279,21 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
-            var players = PlayerData.getCurrentRanksByType(type.replace('_tab',"rank"));
-            myNumText.ignoreContentAdaptWithSize(true);
-            myNumText.setString(PlayerData.getMyRankByType(type.replace('_tab',"rank")));
-            myNumText.setColor(cc.color(63, 193, 61));
-            n = 0;
-            for (var i in players) {
-                n++;
-                listView.addChild(this.setRankView(players[i], type));
-                //rankView);
-            }
+            PlayerData.getCurrentRanksByType(type.replace('tab',"rank"),function(result,data){
+                myNumText.setString(0);
+                if(result){
+                    for (var i in data) {
+                        listView.addChild(this.setRankView(data[i], type));
+                        //rankView);
+                    }
+                    PlayerData.getMyRankByType(type.replace('tab',"rank"),function(result,data){
+                        if(result && cc.isObject(data))
+                            myNumText.setString(data.index+1);
+                    });
+                }
+                myNumText.ignoreContentAdaptWithSize(true);
+                myNumText.setColor(cc.color(63, 193, 61));
+            }.bind(this));
         };
         this.setRankView = function (data, type) {
             var root = rankViewRoot.clone();

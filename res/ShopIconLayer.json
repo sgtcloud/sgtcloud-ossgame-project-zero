@@ -55,9 +55,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_01.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -235,19 +235,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "PressedFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "NormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -296,9 +296,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/buy2.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 21,
@@ -391,16 +391,16 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/key.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": 20.0005,
+                      "Y": 0.0002
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -409,14 +409,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0,
+                      "X": 0.1429,
                       "Y": 0.0
                     },
                     "PreSize": {
                       "X": 0.1786,
                       "Y": 1.0
                     },
-                    "RightMargin": 115.0,
+                    "LeftMargin": 20.0005,
+                    "RightMargin": 94.9995,
+                    "TopMargin": -0.0002,
+                    "BottomMargin": 0.0002,
                     "Tag": 394,
                     "ActionTag": 2087965809,
                     "Size": {
@@ -427,17 +430,18 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "LabelText": "9999999",
+                    "LabelText": "999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
                       "Path": "font/font16_yellow_kmbb-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
+                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 29.9067,
+                      "X": 70.4075,
                       "Y": 13.1039
                     },
                     "Scale": {
@@ -447,21 +451,21 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2136,
+                      "X": 0.5029,
                       "Y": 0.5242
                     },
                     "PreSize": {
-                      "X": 0.6643,
+                      "X": 0.2929,
                       "Y": 0.72
                     },
-                    "LeftMargin": 29.9067,
-                    "RightMargin": 17.0933,
+                    "LeftMargin": 49.9075,
+                    "RightMargin": 49.0925,
                     "TopMargin": 2.8961,
                     "BottomMargin": 4.1039,
                     "Tag": 627,
                     "ActionTag": 420840328,
                     "Size": {
-                      "X": 93.0,
+                      "X": 41.0,
                       "Y": 18.0
                     },
                     "Name": "sale_text",
@@ -494,13 +498,13 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/buy2.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "font/font16_yellow_kmbb-export.fnt",
         "font/font16_yellow_kmbb-export.png",
         "ItemLayer.json",
-        "mainUI/bg_01.png",
-        "mainUI/bg_14.png",
-        "mainUI/key.png"
+        "MainUI.plist",
+        "MainUI.png"
       ],
       "ctype": "GameFileData"
     }

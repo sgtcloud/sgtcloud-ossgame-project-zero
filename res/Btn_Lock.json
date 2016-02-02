@@ -61,19 +61,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/btn2.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -165,9 +165,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/lock.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Width": 36,
                 "Scale9Height": 49,
@@ -226,9 +226,8 @@
       "UsedResources": [
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
-        "heroUI/btn1.png",
-        "heroUI/btn2.png",
-        "heroUI/lock.png"
+        "HeroUI.plist",
+        "HeroUI.png"
       ],
       "ctype": "GameFileData"
     }

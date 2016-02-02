@@ -101,9 +101,9 @@
                 "LabelText": "9999999",
                 "StartChar": "0",
                 "LabelAtlasFileImage_CNB": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/font26_yellow.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "AnchorPoint": {
                   "ScaleX": -0.005
@@ -157,7 +157,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/font26_yellow.png",
+        "MainUI.plist",
+        "MainUI.png",
         "ui/gold.png"
       ],
       "ctype": "GameFileData"
