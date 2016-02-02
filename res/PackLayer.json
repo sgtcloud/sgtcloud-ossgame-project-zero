@@ -56,9 +56,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_01.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -95,9 +95,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -139,9 +139,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "packUI/title.png",
-                  "Plist": ""
+                  "Plist": "PackUI.plist"
                 },
                 "Scale9Width": 129,
                 "Scale9Height": 58,
@@ -224,9 +224,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_05.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -263,9 +263,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/wood.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -306,9 +306,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/leather.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -349,9 +349,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/stone.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -392,9 +392,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/bronze.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -435,9 +435,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/iron.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -478,9 +478,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/crystal.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -521,9 +521,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/rune.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -564,9 +564,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/essence.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -986,9 +986,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/bg_04.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -1032,19 +1032,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/golden_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "PressedFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/golden_chest_2.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "NormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/golden_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
@@ -1107,19 +1107,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/silver_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "PressedFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/silver_chest_2.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "NormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/silver_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
@@ -1182,19 +1182,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/iron_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "PressedFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/iron_chest_2.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "NormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/iron_chest_1.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
@@ -1250,9 +1250,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/golden_key.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1293,9 +1293,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/silver_key.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1336,9 +1336,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "materialUI/iron_key.png",
-                      "Plist": ""
+                      "Plist": "MaterialUI.plist"
                     },
                     "Scale9Width": 40,
                     "Scale9Height": 40,
@@ -1379,9 +1379,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "packUI/chest.png",
-                      "Plist": ""
+                      "Plist": "PackUI.plist"
                     },
                     "Scale9Width": 165,
                     "Scale9Height": 35,
@@ -1697,28 +1697,12 @@
         "font/font16_white_kmbb-export.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "mainUI/bg_01.png",
-        "mainUI/bg_04.png",
-        "mainUI/bg_05.png",
-        "materialUI/bronze.png",
-        "materialUI/crystal.png",
-        "materialUI/essence.png",
-        "materialUI/golden_chest_1.png",
-        "materialUI/golden_chest_2.png",
-        "materialUI/golden_key.png",
-        "materialUI/iron.png",
-        "materialUI/iron_chest_1.png",
-        "materialUI/iron_chest_2.png",
-        "materialUI/iron_key.png",
-        "materialUI/leather.png",
-        "materialUI/rune.png",
-        "materialUI/silver_chest_1.png",
-        "materialUI/silver_chest_2.png",
-        "materialUI/silver_key.png",
-        "materialUI/stone.png",
-        "materialUI/wood.png",
-        "packUI/chest.png",
-        "packUI/title.png"
+        "MainUI.plist",
+        "MainUI.png",
+        "MaterialUI.plist",
+        "MaterialUI.png",
+        "PackUI.plist",
+        "PackUI.png"
       ],
       "ctype": "GameFileData"
     }

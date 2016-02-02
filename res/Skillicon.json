@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/skill_icon.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -132,9 +132,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "skillUI/reviveTime.png",
-                  "Plist": ""
+                  "Plist": "SkillUI.plist"
                 },
                 "Scale9Width": 78,
                 "Scale9Height": 31,
@@ -175,9 +175,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "skillUI/cooldown.png",
-                  "Plist": ""
+                  "Plist": "SkillUI.plist"
                 },
                 "Scale9Width": 78,
                 "Scale9Height": 31,
@@ -218,9 +218,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "skillUI/duration.png",
-                  "Plist": ""
+                  "Plist": "SkillUI.plist"
                 },
                 "Scale9Width": 78,
                 "Scale9Height": 31,
@@ -279,10 +279,10 @@
       "UsedResources": [
         "font/font18_white-export.fnt",
         "font/font18_white-export.png",
-        "mainUI/skill_icon.png",
-        "skillUI/cooldown.png",
-        "skillUI/duration.png",
-        "skillUI/reviveTime.png"
+        "MainUI.plist",
+        "MainUI.png",
+        "SkillUI.plist",
+        "SkillUI.png"
       ],
       "ctype": "GameFileData"
     }
