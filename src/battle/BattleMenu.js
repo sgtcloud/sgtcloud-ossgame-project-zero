@@ -825,7 +825,7 @@ var EquipListMenu = BattleMenu.extend({
         this._super(battle, res.equip_layer_json);
 
         this.heroList = this.root.getChildByName('equip_list');
-        this.playerEquip = this.root.getChildByName('title_root');
+        //this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
         var itemView = ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
@@ -840,7 +840,7 @@ var EquipListMenu = BattleMenu.extend({
         var upgradeEquipBtn = equipView.getChildByName('upgrade_btn');
         var upgradeBtnTemp = upgradeEquipBtn.getChildByName('btn');
         var upgradeSkillPosition = upgradeEquipBtn.getPosition();
-        var title_root=equipView.getChildByName('title_root');
+        var title_root=this.root.getChildByName('title_root');
         var basic=3;
         var nextValue=0;
         var difValue=5;
