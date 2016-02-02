@@ -231,3 +231,13 @@ function bindMouseEventListener(listener, target) {
     });
     cc.eventManager.addListener(mouseDownEventListener, target);
 }
+
+function loadDynamicTexture(url, listenr, target) {
+    cc.textureCache.addImageAsync(url, function (textureBg) {
+        if (textureBg) {
+            listenr.onLoad(textureBg);
+        } else {
+            listenr.onError();
+        }
+    }, target);
+}
