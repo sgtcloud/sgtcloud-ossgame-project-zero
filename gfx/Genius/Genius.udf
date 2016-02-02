@@ -39,8 +39,13 @@
           <FilePathData Path="gold04.csd" />
           <FilePathData Path="essence01.csd" />
           <FilePathData Path="bronze01.csd" />
+          <FilePathData Path="bronze01.csi" />
+          <FilePathData Path="fairy01.csd" />
+          <FilePathData Path="fairy01.csi" />
+          <FilePathData Path="chest01.csi" />
+          <FilePathData Path="chest01.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="bronze01.csd" />
+        <ActiveDocument Path="chest01.csi" />
       </Value>
     </Item>
   </Properties>
