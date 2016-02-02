@@ -55,29 +55,29 @@
               {
                 "CheckedState": true,
                 "NormalBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "PressedBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "DisableBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeNormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/empty.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {},
@@ -111,29 +111,29 @@
               },
               {
                 "NormalBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "PressedBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "DisableBackFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_1.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeNormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/moneyTreeTab_2.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "NodeDisableFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/empty.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {},
@@ -183,11 +183,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/empty.png",
-        "shopUI/moneyTreeTab_1.png",
-        "shopUI/moneyTreeTab_2.png",
-        "shopUI/shopTab_1.png",
-        "shopUI/shopTab_2.png"
+        "MainUI.plist",
+        "MainUI.png",
+        "ShopUI.plist",
+        "ShopUI.png"
       ],
       "ctype": "GameFileData"
     }

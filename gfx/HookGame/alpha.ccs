@@ -372,10 +372,18 @@
         <Folder Name="offlineRewardUI">
           <Image Name="desc.png" />
           <Image Name="title.png" />
+          <PlistImageFolder Image="OfflineRewardUI.png" PListFile="OfflineRewardUI.plist" Name=".OfflineRewardUI_PList.Dir">
+            <PlistImageFile Name="offlineRewardUI_desc.png" Key="offlineRewardUI/desc.png" />
+            <PlistImageFile Name="offlineRewardUI_title.png" Key="offlineRewardUI/title.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="packUI">
           <Image Name="chest.png" />
           <Image Name="title.png" />
+          <PlistImageFolder Image="PackUI.png" PListFile="PackUI.plist" Name=".PackUI_PList.Dir">
+            <PlistImageFile Name="packUI_chest.png" Key="packUI/chest.png" />
+            <PlistImageFile Name="packUI_title.png" Key="packUI/title.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="rankUI">
           <Image Name="clearance_rank.png" />
@@ -389,6 +397,19 @@
           <Image Name="stageTab_1.png" />
           <Image Name="stageTab_2.png" />
           <Image Name="transformation.png" />
+          <PlistImageFolder Image="RankUI.png" PListFile="RankUI.plist" Name=".RankUI_PList.Dir">
+            <PlistImageFile Name="rankUI_clearance_rank.png" Key="rankUI/clearance_rank.png" />
+            <PlistImageFile Name="rankUI_level.png" Key="rankUI/level.png" />
+            <PlistImageFile Name="rankUI_myRank_text.png" Key="rankUI/myRank_text.png" />
+            <PlistImageFile Name="rankUI_pvp_rank.png" Key="rankUI/pvp_rank.png" />
+            <PlistImageFile Name="rankUI_pvpTab_1.png" Key="rankUI/pvpTab_1.png" />
+            <PlistImageFile Name="rankUI_pvpTab_2.png" Key="rankUI/pvpTab_2.png" />
+            <PlistImageFile Name="rankUI_rankText.png" Key="rankUI/rankText.png" />
+            <PlistImageFile Name="rankUI_rankView_bg.png" Key="rankUI/rankView_bg.png" />
+            <PlistImageFile Name="rankUI_stageTab_1.png" Key="rankUI/stageTab_1.png" />
+            <PlistImageFile Name="rankUI_stageTab_2.png" Key="rankUI/stageTab_2.png" />
+            <PlistImageFile Name="rankUI_transformation.png" Key="rankUI/transformation.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="shopUI">
           <Image Name="moneyTree_bg.png" />
@@ -398,6 +419,15 @@
           <Image Name="shopTab_1.png" />
           <Image Name="shopTab_2.png" />
           <Image Name="shopText.png" />
+          <PlistImageFolder Image="ShopUI.png" PListFile="ShopUI.plist" Name=".ShopUI_PList.Dir">
+            <PlistImageFile Name="shopUI_moneyTree_bg.png" Key="shopUI/moneyTree_bg.png" />
+            <PlistImageFile Name="shopUI_moneyTreeTab_1.png" Key="shopUI/moneyTreeTab_1.png" />
+            <PlistImageFile Name="shopUI_moneyTreeTab_2.png" Key="shopUI/moneyTreeTab_2.png" />
+            <PlistImageFile Name="shopUI_sale.png" Key="shopUI/sale.png" />
+            <PlistImageFile Name="shopUI_shopTab_1.png" Key="shopUI/shopTab_1.png" />
+            <PlistImageFile Name="shopUI_shopTab_2.png" Key="shopUI/shopTab_2.png" />
+            <PlistImageFile Name="shopUI_shopText.png" Key="shopUI/shopText.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="skillUI">
           <Image Name="cooldown.png" />
@@ -405,6 +435,13 @@
           <Image Name="hero.png" />
           <Image Name="reviveTime.png" />
           <Image Name="tap.png" />
+          <PlistImageFolder Image="SkillUI.png" PListFile="SkillUI.plist" Name=".SkillUI_PList.Dir">
+            <PlistImageFile Name="skillUI_cooldown.png" Key="skillUI/cooldown.png" />
+            <PlistImageFile Name="skillUI_duration.png" Key="skillUI/duration.png" />
+            <PlistImageFile Name="skillUI_hero.png" Key="skillUI/hero.png" />
+            <PlistImageFile Name="skillUI_reviveTime.png" Key="skillUI/reviveTime.png" />
+            <PlistImageFile Name="skillUI_tap.png" Key="skillUI/tap.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="ui">
           <Image Name="bg_01.png" />
@@ -530,6 +567,39 @@
           <Image Name="title_text.png" />
           <Image Name="cumulative_text.png" />
           <Image Name="current_text.png" />
+          <PlistImageFolder Image="StatisticsUI.png" PListFile="StatisticsUI.plist" Name=".StatisticsUI_PList.Dir">
+            <PlistImageFile Name="statisticsUI_cumulative_text.png" Key="statisticsUI/cumulative_text.png" />
+            <PlistImageFile Name="statisticsUI_current_text.png" Key="statisticsUI/current_text.png" />
+            <PlistImageFile Name="statisticsUI_f22_y.png" Key="statisticsUI/f22_y.png" />
+            <PlistImageFile Name="statisticsUI_text01.png" Key="statisticsUI/text01.png" />
+            <PlistImageFile Name="statisticsUI_text02.png" Key="statisticsUI/text02.png" />
+            <PlistImageFile Name="statisticsUI_text03.png" Key="statisticsUI/text03.png" />
+            <PlistImageFile Name="statisticsUI_text04.png" Key="statisticsUI/text04.png" />
+            <PlistImageFile Name="statisticsUI_text05.png" Key="statisticsUI/text05.png" />
+            <PlistImageFile Name="statisticsUI_text06.png" Key="statisticsUI/text06.png" />
+            <PlistImageFile Name="statisticsUI_text07.png" Key="statisticsUI/text07.png" />
+            <PlistImageFile Name="statisticsUI_text08.png" Key="statisticsUI/text08.png" />
+            <PlistImageFile Name="statisticsUI_text09.png" Key="statisticsUI/text09.png" />
+            <PlistImageFile Name="statisticsUI_text10.png" Key="statisticsUI/text10.png" />
+            <PlistImageFile Name="statisticsUI_text11.png" Key="statisticsUI/text11.png" />
+            <PlistImageFile Name="statisticsUI_text12.png" Key="statisticsUI/text12.png" />
+            <PlistImageFile Name="statisticsUI_text13.png" Key="statisticsUI/text13.png" />
+            <PlistImageFile Name="statisticsUI_text14.png" Key="statisticsUI/text14.png" />
+            <PlistImageFile Name="statisticsUI_text15.png" Key="statisticsUI/text15.png" />
+            <PlistImageFile Name="statisticsUI_text16.png" Key="statisticsUI/text16.png" />
+            <PlistImageFile Name="statisticsUI_text17.png" Key="statisticsUI/text17.png" />
+            <PlistImageFile Name="statisticsUI_text18.png" Key="statisticsUI/text18.png" />
+            <PlistImageFile Name="statisticsUI_text19.png" Key="statisticsUI/text19.png" />
+            <PlistImageFile Name="statisticsUI_text20.png" Key="statisticsUI/text20.png" />
+            <PlistImageFile Name="statisticsUI_text21.png" Key="statisticsUI/text21.png" />
+            <PlistImageFile Name="statisticsUI_text22.png" Key="statisticsUI/text22.png" />
+            <PlistImageFile Name="statisticsUI_text23.png" Key="statisticsUI/text23.png" />
+            <PlistImageFile Name="statisticsUI_text24.png" Key="statisticsUI/text24.png" />
+            <PlistImageFile Name="statisticsUI_text25.png" Key="statisticsUI/text25.png" />
+            <PlistImageFile Name="statisticsUI_text26.png" Key="statisticsUI/text26.png" />
+            <PlistImageFile Name="statisticsUI_text27.png" Key="statisticsUI/text27.png" />
+            <PlistImageFile Name="statisticsUI_title_text.png" Key="statisticsUI/title_text.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="font">
           <Fnt Name="font22_yellow_kmbb-export.fnt" />
@@ -558,6 +628,7 @@
             <PlistImageFile Name="font_font19_white_kmbb-export.png" Key="font/font19_white_kmbb-export.png" />
             <PlistImageFile Name="font_font22_yellow_kmbb-export.png" Key="font/font22_yellow_kmbb-export.png" />
           </PlistImageFolder>
+          <Fnt Name="font14_white_kmbb-export.fnt" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />
@@ -570,6 +641,12 @@
         <PlistInfo Name="HeroUI.csi" Type="Plist" />
         <PlistInfo Name="MainUI.csi" Type="Plist" />
         <PlistInfo Name="MaterialUI.csi" Type="Plist" />
+        <PlistInfo Name="OfflineRewardUI.csi" Type="Plist" />
+        <PlistInfo Name="PackUI.csi" Type="Plist" />
+        <PlistInfo Name="RankUI.csi" Type="Plist" />
+        <PlistInfo Name="ShopUI.csi" Type="Plist" />
+        <PlistInfo Name="StatisticsUI.csi" Type="Plist" />
+        <PlistInfo Name="SkillUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

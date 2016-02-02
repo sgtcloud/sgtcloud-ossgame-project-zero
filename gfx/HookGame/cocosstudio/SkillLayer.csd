@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0152" Y="0.8579" />
                 <PreSize X="0.2047" Y="0.1125" />
-                <FileData Type="Normal" Path="skillUI/hero.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="skillUI/hero.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="-1991017531" Tag="1050" IconVisible="False" LeftMargin="136.3309" RightMargin="370.6691" TopMargin="10.0729" BottomMargin="209.9271" LabelText="99945456" ctype="TextBMFontObjectData">
                 <Size X="133.0000" Y="20.0000" />
@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6228" Y="0.8600" />
                 <PreSize X="0.2047" Y="0.1083" />
-                <FileData Type="Normal" Path="skillUI/tap.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="skillUI/tap.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="38.0000" BottomMargin="12.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="190.0000" />

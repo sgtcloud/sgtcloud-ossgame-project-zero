@@ -81,7 +81,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5002" Y="0.9465" />
                 <PreSize X="0.3266" Y="0.0674" />
-                <FileData Type="Normal" Path="rankUI/rankText.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/rankText.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="my_text" ActionTag="725399135" Tag="43" IconVisible="False" LeftMargin="219.5473" RightMargin="213.4527" TopMargin="140.3035" BottomMargin="692.6965" Scale9Width="207" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="207.0000" Y="27.0000" />
@@ -91,7 +91,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3430" Y="0.8055" />
                 <PreSize X="0.3234" Y="0.0314" />
-                <FileData Type="Normal" Path="rankUI/myRank_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rankUI/myRank_text.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" Tag="591" IconVisible="False" LeftMargin="339.6119" RightMargin="246.3881" TopMargin="145.9807" BottomMargin="699.0193" LabelText="9999" ctype="TextBMFontObjectData">
                 <Size X="54.0000" Y="15.0000" />
@@ -114,10 +114,10 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="rankUI/pvpTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="rankUI/pvpTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="rankUI/pvpTab_2.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
                     <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="stage_tab" ActionTag="-225112910" Tag="329" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
@@ -128,10 +128,10 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="rankUI/stageTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="rankUI/stageTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="rankUI/stageTab_2.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />
                     <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                 </Children>

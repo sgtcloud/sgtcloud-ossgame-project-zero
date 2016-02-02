@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_18.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 3,
@@ -135,9 +135,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_10.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 24,
@@ -232,9 +232,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -326,9 +326,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/rankText.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 209,
                 "Scale9Height": 58,
@@ -369,9 +369,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/myRank_text.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 207,
                 "Scale9Height": 27,
@@ -493,29 +493,29 @@
                 "Children": [
                   {
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/pvpTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/empty.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -550,29 +550,29 @@
                   {
                     "CheckedState": true,
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_1.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "rankUI/stageTab_2.png",
-                      "Plist": ""
+                      "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "mainUI/empty.png",
-                      "Plist": ""
+                      "Plist": "MainUI.plist"
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -633,17 +633,10 @@
       "UsedResources": [
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
-        "mainUI/bg_04.png",
-        "mainUI/bg_05.png",
-        "mainUI/bg_10.png",
-        "mainUI/bg_18.png",
-        "mainUI/empty.png",
-        "rankUI/myRank_text.png",
-        "rankUI/pvpTab_1.png",
-        "rankUI/pvpTab_2.png",
-        "rankUI/rankText.png",
-        "rankUI/stageTab_1.png",
-        "rankUI/stageTab_2.png"
+        "MainUI.plist",
+        "MainUI.png",
+        "RankUI.plist",
+        "RankUI.png"
       ],
       "ctype": "GameFileData"
     }

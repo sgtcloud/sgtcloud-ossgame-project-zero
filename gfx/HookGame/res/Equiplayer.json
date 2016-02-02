@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/bg.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -189,9 +189,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "heroUI/text_bg.png",
-                      "Plist": ""
+                      "Plist": "HeroUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 11,
@@ -228,9 +228,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "equipUI/title_2.png",
-                      "Plist": ""
+                      "Plist": "EquipUI.plist"
                     },
                     "Scale9Width": 249,
                     "Scale9Height": 234,
@@ -317,9 +317,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "equipUI/buyHoly.png",
-                      "Plist": ""
+                      "Plist": "EquipUI.plist"
                     },
                     "Scale9Width": 106,
                     "Scale9Height": 32,
@@ -427,10 +427,10 @@
       },
       "UsedResources": [
         "Btn_Buy.json",
-        "equipUI/bg.png",
-        "equipUI/buyHoly.png",
-        "equipUI/title_2.png",
-        "heroUI/text_bg.png"
+        "EquipUI.plist",
+        "EquipUI.png",
+        "HeroUI.plist",
+        "HeroUI.png"
       ],
       "ctype": "GameFileData"
     }

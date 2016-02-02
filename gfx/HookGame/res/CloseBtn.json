@@ -59,19 +59,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/close_icon.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/close_icon.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroDescUI/close_icon.png",
-                  "Plist": ""
+                  "Plist": "HeroDescUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -136,7 +136,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "heroDescUI/close_icon.png"
+        "HeroDescUI.plist",
+        "HeroDescUI.png"
       ],
       "ctype": "GameFileData"
     }
