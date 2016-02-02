@@ -2819,7 +2819,7 @@ jsonRPC = new Object({
      * 角色扩展信息公共父类，所有开发者扩展的角色信息要么继承这个类，要么在自己的扩展类中添加playerId字段
      * @constructor
      */
-    SgtApi.PlayerExtra = function () {
+    player = function () {
         /**
          * 角色ID，即sgpPlayerId
          * @type {null}
@@ -3614,7 +3614,8 @@ jsonRPC = new Object({
          */
         channelId: '',
         openid: null,
-        access_token: null
+        access_token: null,
+        playerData:{}
     };
 
     //识别 MicroMessenger 这个关键字来确定是否微信内置的浏览器
@@ -3679,8 +3680,9 @@ jsonRPC = new Object({
                         localStorage.setItem('sgt-' + SgtApi.context.appId + '-openid', SgtApi.context.openid);
                     });
                 }
-            }else
-                console.error('您当前未在微信环境的客户端, 所以没有为您初始化微信中控服务');
+            }else{
+                //console.error('您当前未在微信环境的客户端, 所以没有为您初始化微信中控服务');
+            }
         } else {
             //console.error('您未导入wx-js-sdk, 所以没有为您初始化微信中控服务\r\n若您想了解更多详情, 可以访问微信公众平台开发者文档http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html');
         }
@@ -5622,7 +5624,7 @@ jsonRPC = new Object({
              * @param leaderId{string} 排行榜ID
              * @param playerId{string} 角色ID
              * @param callback
-             * @return leaderBoardScore
+             * @return LeaderBoardScore
              */
             getLeaderBoardScoreByLeaderIdAndPlayerId: function (leaderId, playerId, callback) {
                 var name = 'getLeaderBoardScoreByLeaderIdAndPlayerId';

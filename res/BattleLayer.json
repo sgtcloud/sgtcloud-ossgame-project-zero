@@ -648,17 +648,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -797,9 +797,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "battleUI/boss_text.png",
-                  "Plist": ""
+                  "Plist": "BattleLayer.plist"
                 },
                 "Scale9Width": 91,
                 "Scale9Height": 19,
@@ -1308,17 +1308,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -1432,7 +1432,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "battleUI/boss_text.png",
+        "BattleLayer.plist",
+        "BattleLayer.png",
         "BuffList.json",
         "font/font19_white_kmbb-export.fnt",
         "font/font19_white_kmbb-export.png",
@@ -1443,8 +1444,8 @@
         "mainUI/bar2.png",
         "mainUI/battle_icon.png",
         "mainUI/offline_reward.png",
-        "mainUI/pack.png",
-        "mainUI/statistics.png"
+        "mainUI/pack_icon.png",
+        "mainUI/statistics_icon.png"
       ],
       "ctype": "GameFileData"
     }

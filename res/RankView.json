@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/rankView_bg.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 580,
                 "Scale9Height": 98,
@@ -228,9 +228,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/clearance_rank.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 247,
                 "Scale9Height": 31,
@@ -271,9 +271,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/pvp_rank.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 247,
                 "Scale9Height": 31,
@@ -355,9 +355,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rankUI/transformation.png",
-                  "Plist": ""
+                  "Plist": "RankUI.plist"
                 },
                 "Scale9Width": 172,
                 "Scale9Height": 31,
@@ -502,10 +502,8 @@
         "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_05.png",
         "mainUI/hero_icon.png",
-        "rankUI/clearance_rank.png",
-        "rankUI/pvp_rank.png",
-        "rankUI/rankView_bg.png",
-        "rankUI/transformation.png"
+        "RankUI.plist",
+        "RankUI.png"
       ],
       "ctype": "GameFileData"
     }

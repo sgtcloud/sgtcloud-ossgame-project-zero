@@ -181,9 +181,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shopUI/shopText.png",
-                  "Plist": ""
+                  "Plist": "ShopUI.plist"
                 },
                 "Scale9Width": 129,
                 "Scale9Height": 58,
@@ -233,7 +233,7 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 15.0,
+                  "X": 20.0,
                   "Y": 10.0
                 },
                 "Scale": {
@@ -243,21 +243,21 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.0234,
+                  "X": 0.0313,
                   "Y": 0.0116
                 },
                 "PreSize": {
-                  "X": 0.9531,
+                  "X": 0.9375,
                   "Y": 0.6977
                 },
-                "LeftMargin": 15.0,
-                "RightMargin": 15.0,
+                "LeftMargin": 20.0,
+                "RightMargin": 20.0,
                 "TopMargin": 250.0,
                 "BottomMargin": 10.0,
                 "Tag": 398,
                 "ActionTag": 1256429570,
                 "Size": {
-                  "X": 610.0,
+                  "X": 600.0,
                   "Y": 600.0
                 },
                 "Name": "shop_view",
@@ -308,24 +308,24 @@
                   {
                     "CheckedState": true,
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/shopTab_1.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/shopTab_2.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/shopTab_1.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/shopTab_2.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "NodeDisableFileData": {
                       "Type": "Normal",
@@ -365,24 +365,24 @@
                   {
                     "CheckedState": true,
                     "NormalBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/moneyTreeTab_1.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "PressedBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/moneyTreeTab_2.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "DisableBackFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/moneyTreeTab_1.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "NodeNormalFileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "shopUI/moneyTreeTab_2.png",
-                      "Plist": ""
+                      "Plist": "ShopUI.plist"
                     },
                     "NodeDisableFileData": {
                       "Type": "Normal",
@@ -451,11 +451,8 @@
         "mainUI/bg_05.png",
         "mainUI/bg_18.png",
         "mainUI/empty.png",
-        "shopUI/moneyTreeTab_1.png",
-        "shopUI/moneyTreeTab_2.png",
-        "shopUI/shopTab_1.png",
-        "shopUI/shopTab_2.png",
-        "shopUI/shopText.png",
+        "ShopUI.plist",
+        "ShopUI.png",
         "ShopView.json"
       ],
       "ctype": "GameFileData"

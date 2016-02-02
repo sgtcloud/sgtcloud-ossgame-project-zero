@@ -665,9 +665,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/sure.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -827,9 +827,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/notSure.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 66,
                     "Scale9Height": 34,
@@ -895,8 +895,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/notSure.png",
-        "buttonUI/sure.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
         "mainUI/bg_04.png",

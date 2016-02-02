@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/bg.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -189,9 +189,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "heroUI/text_bg.png",
-                      "Plist": ""
+                      "Plist": "HeroUI.plist"
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 11,
@@ -228,9 +228,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "equipUI/title_2.png",
-                      "Plist": ""
+                      "Plist": "EquipUI.plist"
                     },
                     "Scale9Width": 249,
                     "Scale9Height": 234,
@@ -317,9 +317,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "equipUI/buyHoly.png",
-                      "Plist": ""
+                      "Plist": "EquipUI.plist"
                     },
                     "Scale9Width": 106,
                     "Scale9Height": 32,
@@ -357,6 +357,47 @@
                     },
                     "Name": "title_text",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Btn_Buy.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 466.2889,
+                      "Y": 17.2872
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.7473,
+                      "Y": 0.1572
+                    },
+                    "PreSize": {
+                      "X": 0.2244,
+                      "Y": 0.7273
+                    },
+                    "LeftMargin": 466.2889,
+                    "RightMargin": 17.7111,
+                    "TopMargin": 12.7128,
+                    "BottomMargin": 17.2872,
+                    "Tag": 807,
+                    "ActionTag": 711518097,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 80.0
+                    },
+                    "Name": "buy_btn",
+                    "ctype": "ProjectNodeObjectData"
                   }
                 ],
                 "ActionTag": 656574158,
@@ -366,47 +407,6 @@
                 },
                 "Name": "title_root",
                 "ctype": "PanelObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "Btn_Buy.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 472.8423,
-                  "Y": 400.4684
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.7388,
-                  "Y": 0.8009
-                },
-                "PreSize": {
-                  "X": 0.2188,
-                  "Y": 0.16
-                },
-                "LeftMargin": 472.8423,
-                "RightMargin": 27.1577,
-                "TopMargin": 19.5316,
-                "BottomMargin": 400.4684,
-                "Tag": 807,
-                "ActionTag": 711518097,
-                "Size": {
-                  "X": 140.0,
-                  "Y": 80.0
-                },
-                "Name": "buy_btn",
-                "ctype": "ProjectNodeObjectData"
               }
             ],
             "ActionTag": -593797273,
@@ -427,10 +427,10 @@
       },
       "UsedResources": [
         "Btn_Buy.json",
-        "equipUI/bg.png",
-        "equipUI/buyHoly.png",
-        "equipUI/title_2.png",
-        "heroUI/text_bg.png"
+        "EquipUI.plist",
+        "EquipUI.png",
+        "HeroUI.plist",
+        "HeroUI.png"
       ],
       "ctype": "GameFileData"
     }

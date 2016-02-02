@@ -33,7 +33,7 @@ var StatisticsUnit = cc.Node.extend({
         this.convert = function(data,type){
             if(typeof type === 'undefined'){
                 if(data >= 0 && data <1000){
-                    return data;
+                    return data.toFixed(2);
                 }else if(data >= 1000 && data < 1000000){
                     return (data/1000.0).toFixed(2)+"k";
                 }else if(data >= 1000000 && data < 1000000000){

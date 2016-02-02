@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/bg.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -163,7 +163,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "heroUI/bg.png"
+        "HeroUI.plist",
+        "HeroUI.png"
       ],
       "ctype": "GameFileData"
     }

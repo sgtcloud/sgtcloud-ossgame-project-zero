@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>buttonUI/add.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{310,32},{20,19}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{21,21}</string>
+			</dict>
+			<key>buttonUI/back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{238,0},{72,39}}</string>
+				<key>offset</key>
+				<string>{1,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{105,44}</string>
+			</dict>
+			<key>buttonUI/buy.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{140,14},{48,25}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/buy2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{310,0},{32,17}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{45,21}</string>
+			</dict>
+			<key>buttonUI/buy3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{188,14},{48,25}}</string>
+				<key>offset</key>
+				<string>{1,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/cut.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,90},{12,4}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{16,12}</string>
+			</dict>
+			<key>buttonUI/font15_green.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,27},{120,11}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,13}</string>
+			</dict>
+			<key>buttonUI/font16_green.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,39},{127,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{128,11}</string>
+			</dict>
+			<key>buttonUI/font16_green_a.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,79},{120,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,11}</string>
+			</dict>
+			<key>buttonUI/font16_white.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{83,50},{120,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,13}</string>
+			</dict>
+			<key>buttonUI/font16_yellow.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{127,39},{120,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,11}</string>
+			</dict>
+			<key>buttonUI/font16_yellow_b.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,14},{140,13}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{140,13}</string>
+			</dict>
+			<key>buttonUI/font16_yellow_kmbb.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{238,14}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{240,15}</string>
+			</dict>
+			<key>buttonUI/MaxLevel.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,51},{83,28}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{105,44}</string>
+			</dict>
+			<key>buttonUI/notSure.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{247,39},{48,25}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/percentage.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{120,27},{15,11}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{17,15}</string>
+			</dict>
+			<key>buttonUI/recast.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{297,51},{47,25}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/revive.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{203,50},{48,25}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/sure.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{120,61},{47,25}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+			<key>buttonUI/upLevel.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{272,39},{48,25}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{66,34}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>ButtonUI.png</string>
+			<key>realTextureFileName</key>
+			<string>ButtonUI.png</string>
+			<key>size</key>
+			<string>{330,98}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>330</integer>
+			<key>height</key>
+			<integer>98</integer>
+		</dict>
+	</dict>
+</plist>

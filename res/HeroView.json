@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/hero_bg.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -226,9 +226,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/text_bg.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 11,
@@ -311,9 +311,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/heroHP.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Width": 104,
                 "Scale9Height": 26,
@@ -378,27 +378,27 @@
                   "Y": 0.4113
                 },
                 "PreSize": {
-                  "X": 0.0994,
-                  "Y": 0.1727
+                  "X": 0.1266,
+                  "Y": 0.1545
                 },
-                "LeftMargin": 29.3768,
-                "RightMargin": 532.6232,
-                "TopMargin": 55.2622,
-                "BottomMargin": 35.7378,
+                "LeftMargin": 20.8768,
+                "RightMargin": 524.1232,
+                "TopMargin": 56.2622,
+                "BottomMargin": 36.7378,
                 "Tag": 424,
                 "ActionTag": 571675629,
                 "Size": {
-                  "X": 62.0,
-                  "Y": 19.0
+                  "X": 79.0,
+                  "Y": 17.0
                 },
                 "Name": "die_time_text",
                 "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/reviveTime.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Width": 78,
                 "Scale9Height": 31,
@@ -506,9 +506,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star1.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -542,9 +542,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star2.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -628,9 +628,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star1.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -664,9 +664,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star2.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -750,9 +750,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star1.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -786,9 +786,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star2.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -872,9 +872,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star1.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -908,9 +908,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star2.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -994,9 +994,9 @@
                     "Children": [
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star1.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -1030,9 +1030,9 @@
                       },
                       {
                         "FileData": {
-                          "Type": "Normal",
+                          "Type": "MarkedSubImage",
                           "Path": "heroUI/star2.png",
-                          "Plist": ""
+                          "Plist": "HeroUI.plist"
                         },
                         "Scale9Width": 32,
                         "Scale9Height": 30,
@@ -1230,12 +1230,8 @@
         "font/font16_white_kmbb-export.png",
         "font/font18_white-export.fnt",
         "font/font18_white-export.png",
-        "heroUI/hero_bg.png",
-        "heroUI/heroHP.png",
-        "heroUI/reviveTime.png",
-        "heroUI/star1.png",
-        "heroUI/star2.png",
-        "heroUI/text_bg.png",
+        "HeroUI.plist",
+        "HeroUI.png",
         "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"

@@ -705,9 +705,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "buttonUI/back.png",
-                      "Plist": ""
+                      "Plist": "ButtonUI.plist"
                     },
                     "Scale9Width": 105,
                     "Scale9Height": 44,
@@ -773,7 +773,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/back.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "font/font22_white_kmbb-export.fnt",
         "font/font22_white_kmbb-export.png",
         "HeroDescView.json",

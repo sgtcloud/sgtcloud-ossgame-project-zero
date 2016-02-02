@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/equip_bg.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/equip_icon.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -147,10 +147,12 @@
                 },
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
                 "Position": {
                   "X": 115.7146,
-                  "Y": 76.4999
+                  "Y": 86.4999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -164,20 +166,20 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.1929,
-                  "Y": 0.6955
+                  "Y": 0.7864
                 },
                 "PreSize": {
-                  "X": 0.2333,
+                  "X": 0.3,
                   "Y": 0.1818
                 },
                 "LeftMargin": 115.7146,
-                "RightMargin": 344.2854,
+                "RightMargin": 304.2854,
                 "TopMargin": 13.5001,
                 "BottomMargin": 76.4999,
                 "Tag": 44,
                 "ActionTag": -2094451360,
                 "Size": {
-                  "X": 140.0,
+                  "X": 180.0,
                   "Y": 20.0
                 },
                 "Name": "equipName_text",
@@ -198,10 +200,12 @@
                 },
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
                   "X": 115.7145,
-                  "Y": 11.3839
+                  "Y": 71.3839
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -215,7 +219,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.1929,
-                  "Y": 0.1035
+                  "Y": 0.6489
                 },
                 "PreSize": {
                   "X": 0.5333,
@@ -245,8 +249,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 286.0512,
-                  "Y": 85.4188
+                  "X": 306.051,
+                  "Y": 85.4187
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -255,17 +259,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4768,
+                  "X": 0.5101,
                   "Y": 0.7765
                 },
                 "PreSize": {
                   "X": 0.1383,
                   "Y": 0.1364
                 },
-                "LeftMargin": 286.0512,
-                "RightMargin": 230.9488,
-                "TopMargin": 17.0812,
-                "BottomMargin": 77.9188,
+                "LeftMargin": 306.051,
+                "RightMargin": 210.949,
+                "TopMargin": 17.0813,
+                "BottomMargin": 77.9187,
                 "Tag": 1093,
                 "ActionTag": 1417978744,
                 "Size": {
@@ -419,8 +423,8 @@
         "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade2.json",
-        "equipUI/equip_bg.png",
-        "equipUI/equip_icon.png",
+        "EquipUI.plist",
+        "EquipUI.png",
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png"
       ],
