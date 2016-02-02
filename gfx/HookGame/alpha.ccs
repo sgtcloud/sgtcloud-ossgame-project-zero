@@ -243,8 +243,8 @@
           <Image Name="title_bg4.png" />
           <Image Name="font22_yellow_kmb.png" />
           <Image Name="font22_yellow_kmbb.png" />
-          <Image Name="pack.png" />
-          <Image Name="statistics.png" />
+          <Image Name="pack_icon.png" />
+          <Image Name="statistics_icon.png" />
           <PlistImageFolder Image="MainUI.png" PListFile="MainUI.plist" Name=".MainUI_PList.Dir">
             <PlistImageFile Name="mainUI_bar_bg.png" Key="mainUI/bar_bg.png" />
             <PlistImageFile Name="mainUI_bar1.png" Key="mainUI/bar1.png" />
