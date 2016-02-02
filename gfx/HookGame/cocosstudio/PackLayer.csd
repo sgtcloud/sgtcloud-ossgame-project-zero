@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_01.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg" ActionTag="1192828670" CallBackType="Touch" Tag="381" IconVisible="False" LeftMargin="17.1343" RightMargin="12.8657" TopMargin="17.5847" BottomMargin="662.4153" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="60.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0268" Y="0.8952" />
                 <PreSize X="0.9531" Y="0.0811" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_text" ActionTag="2068607568" Tag="541" IconVisible="False" LeftMargin="257.6343" RightMargin="253.3657" TopMargin="18.5847" BottomMargin="663.4153" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
                 <Size X="129.0000" Y="58.0000" />
@@ -50,7 +50,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="wood_icon" ActionTag="-1026000937" Tag="544" IconVisible="False" LeftMargin="74.7393" RightMargin="495.2607" TopMargin="27.5969" BottomMargin="367.4031" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="40.0000" Y="40.0000" />
@@ -235,7 +235,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3859" RightMargin="454.6141" TopMargin="54.6361" BottomMargin="75.3639" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
