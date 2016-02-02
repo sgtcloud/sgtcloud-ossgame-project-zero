@@ -648,17 +648,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "PressedFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "NormalFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/pack.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,
@@ -1308,17 +1308,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "PressedFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "NormalFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "mainUI/statistics.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": "MainUI.plist"
                 },
                 "Scale9Enable": true,

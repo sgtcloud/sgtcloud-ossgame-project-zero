@@ -178,9 +178,9 @@
                 <PrePosition X="0.0826" Y="0.8567" />
                 <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
-                <PressedFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
-                <NormalFileData Type="MarkedSubImage" Path="mainUI/pack.png" Plist="MainUI.plist" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/pack_icon.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/pack_icon.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/pack_icon.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -325,9 +325,9 @@
                 <PrePosition X="0.0826" Y="0.9476" />
                 <PreSize X="0.2562" Y="0.1770" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
-                <PressedFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
-                <NormalFileData Type="MarkedSubImage" Path="mainUI/statistics.png" Plist="MainUI.plist" />
+                <DisabledFileData Type="MarkedSubImage" Path="mainUI/statistics_icon.png" Plist="MainUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="mainUI/statistics_icon.png" Plist="MainUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="mainUI/statistics_icon.png" Plist="MainUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
