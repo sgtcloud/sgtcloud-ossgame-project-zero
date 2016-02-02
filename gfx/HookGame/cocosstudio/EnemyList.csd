@@ -69,14 +69,14 @@
                 <PreSize X="0.0632" Y="0.1250" />
                 <FileData Type="MarkedSubImage" Path="mainUI/star0.png" Plist="MainUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text1" ActionTag="-2141386895" Tag="71" IconVisible="False" LeftMargin="80.5000" RightMargin="256.5000" TopMargin="78.1354" BottomMargin="27.8646" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="43.0000" Y="14.0000" />
+              <AbstractNodeData Name="level_text1" ActionTag="-2141386895" Tag="71" IconVisible="False" LeftMargin="102.0000" RightMargin="278.0000" TopMargin="85.1354" BottomMargin="34.8646" LabelText="" ctype="TextBMFontObjectData">
+                <Size X="0.0000" Y="0.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="102.0000" Y="34.8646" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2684" Y="0.2905" />
-                <PreSize X="0.1132" Y="0.1167" />
+                <PreSize X="0.0000" Y="0.0000" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font14_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="level_text2" ActionTag="-2083267184" Tag="72" IconVisible="False" LeftMargin="164.7837" RightMargin="172.2163" TopMargin="81.7391" BottomMargin="24.2609" LabelText="9999" ctype="TextBMFontObjectData">
