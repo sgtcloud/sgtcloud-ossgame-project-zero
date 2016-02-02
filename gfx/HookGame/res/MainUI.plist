@@ -576,7 +576,7 @@
 				<key>sourceSize</key>
 				<string>{85,77}</string>
 			</dict>
-			<key>mainUI/pack.png</key>
+			<key>mainUI/pack_icon.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{440,0},{139,120}}</string>
@@ -642,7 +642,7 @@
 				<key>sourceSize</key>
 				<string>{24,15}</string>
 			</dict>
-			<key>mainUI/statistics.png</key>
+			<key>mainUI/statistics_icon.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{440,120},{138,115}}</string>

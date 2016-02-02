@@ -54,13 +54,13 @@
       <FilePathData Path="mainUI/lock.png" />
       <FilePathData Path="mainUI/login_reward.png" />
       <FilePathData Path="mainUI/offline_reward.png" />
-      <FilePathData Path="mainUI/pack.png" />
+      <FilePathData Path="mainUI/pack_icon.png" />
       <FilePathData Path="mainUI/relic.png" />
       <FilePathData Path="mainUI/skill_icon.png" />
       <FilePathData Path="mainUI/slice131_@.png" />
       <FilePathData Path="mainUI/stage_icon.png" />
       <FilePathData Path="mainUI/star0.png" />
-      <FilePathData Path="mainUI/statistics.png" />
+      <FilePathData Path="mainUI/statistics_icon.png" />
       <FilePathData Path="mainUI/tab_1.png" />
       <FilePathData Path="mainUI/tab_2.png" />
       <FilePathData Path="mainUI/tab_bg1.png" />
