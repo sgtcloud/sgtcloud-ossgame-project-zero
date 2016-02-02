@@ -179,6 +179,10 @@ var BattlePanel = cc.Node.extend({
             var gamePopup = new GamePopup(packUnit,cc.p(320,580),false);
             popup(gamePopup,3000);
         }.bind(this));
+
+        customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
+            pack_btn.runAction(cc.sequence(cc.scaleBy(0.1,1.5),cc.scaleTo(0.1,0.5)));
+        }.bind(this));
         var battle_bg = root.getChildByName('battle_bg');
         this.loadStageBackground = function (stage) {
             var bg_image_url = stage.getBg();
@@ -198,7 +202,7 @@ var BattlePanel = cc.Node.extend({
 
         var tap = root.getChildByName('tap');
         bindMouseEventListener(function (touch) {
-            cc.log("点中tap");
+            //cc.log("点中tap");
             var pos = this.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
             return false;
@@ -276,7 +280,7 @@ var BattlePanel = cc.Node.extend({
                 }
             }
         },
-            this.reset();
+        this.reset();
         this.scheduleUpdate();
     },
     reset: function () {
@@ -424,6 +428,8 @@ var BattlePanel = cc.Node.extend({
             stageData.goToNextStage();
             player.stage = stageData.getId();
             player.statistics.total_max_level += 1;
+            //更新通关数据
+            PlayerData.updateLeaderBoardScore(player.statistics.total_max_level,"stage_rank");
             this.loadStageBackground(stageData);
         } else {
             if (stageData.couldFightBossBattle()) {

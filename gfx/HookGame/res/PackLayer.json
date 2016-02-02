@@ -56,9 +56,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_01.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -95,9 +95,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -224,9 +224,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_05.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -986,9 +986,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_04.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -1697,8 +1697,9 @@
         "font/font16_white_kmbb-export.png",
         "font/font22_yellow_kmbb-export.fnt",
         "font/font22_yellow_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_01.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
         "MaterialUI.plist",
         "MaterialUI.png",
         "PackUI.plist",

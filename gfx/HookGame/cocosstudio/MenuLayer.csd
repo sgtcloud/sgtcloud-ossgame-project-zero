@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="main" CanEdit="False" ActionTag="-1674749777" Tag="168" IconVisible="False" LeftMargin="4.5000" RightMargin="540.5000" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />

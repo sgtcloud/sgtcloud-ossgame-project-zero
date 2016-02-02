@@ -245,79 +245,6 @@
           <Image Name="font22_yellow_kmbb.png" />
           <Image Name="pack_icon.png" />
           <Image Name="statistics_icon.png" />
-          <PlistImageFolder Image="MainUI.png" PListFile="MainUI.plist" Name=".MainUI_PList.Dir">
-            <PlistImageFile Name="mainUI_bar_bg.png" Key="mainUI/bar_bg.png" />
-            <PlistImageFile Name="mainUI_bar1.png" Key="mainUI/bar1.png" />
-            <PlistImageFile Name="mainUI_bar2.png" Key="mainUI/bar2.png" />
-            <PlistImageFile Name="mainUI_battle_icon.png" Key="mainUI/battle_icon.png" />
-            <PlistImageFile Name="mainUI_bg_01.png" Key="mainUI/bg_01.png" />
-            <PlistImageFile Name="mainUI_bg_02.png" Key="mainUI/bg_02.png" />
-            <PlistImageFile Name="mainUI_bg_03.png" Key="mainUI/bg_03.png" />
-            <PlistImageFile Name="mainUI_bg_04.png" Key="mainUI/bg_04.png" />
-            <PlistImageFile Name="mainUI_bg_05.png" Key="mainUI/bg_05.png" />
-            <PlistImageFile Name="mainUI_bg_06.png" Key="mainUI/bg_06.png" />
-            <PlistImageFile Name="mainUI_bg_07.png" Key="mainUI/bg_07.png" />
-            <PlistImageFile Name="mainUI_bg_08.png" Key="mainUI/bg_08.png" />
-            <PlistImageFile Name="mainUI_bg_09.png" Key="mainUI/bg_09.png" />
-            <PlistImageFile Name="mainUI_bg_10.png" Key="mainUI/bg_10.png" />
-            <PlistImageFile Name="mainUI_bg_11.png" Key="mainUI/bg_11.png" />
-            <PlistImageFile Name="mainUI_bg_12.png" Key="mainUI/bg_12.png" />
-            <PlistImageFile Name="mainUI_bg_13.png" Key="mainUI/bg_13.png" />
-            <PlistImageFile Name="mainUI_bg_14.png" Key="mainUI/bg_14.png" />
-            <PlistImageFile Name="mainUI_bg_15.png" Key="mainUI/bg_15.png" />
-            <PlistImageFile Name="mainUI_bg_16.png" Key="mainUI/bg_16.png" />
-            <PlistImageFile Name="mainUI_bg_17.png" Key="mainUI/bg_17.png" />
-            <PlistImageFile Name="mainUI_bg_18.png" Key="mainUI/bg_18.png" />
-            <PlistImageFile Name="mainUI_bg_19.png" Key="mainUI/bg_19.png" />
-            <PlistImageFile Name="mainUI_bg_20.png" Key="mainUI/bg_20.png" />
-            <PlistImageFile Name="mainUI_bg_21.png" Key="mainUI/bg_21.png" />
-            <PlistImageFile Name="mainUI_clear_reward.png" Key="mainUI/clear_reward.png" />
-            <PlistImageFile Name="mainUI_close_icon.png" Key="mainUI/close_icon.png" />
-            <PlistImageFile Name="mainUI_diamond.png" Key="mainUI/diamond.png" />
-            <PlistImageFile Name="mainUI_empty.png" Key="mainUI/empty.png" />
-            <PlistImageFile Name="mainUI_equip_icon.png" Key="mainUI/equip_icon.png" />
-            <PlistImageFile Name="mainUI_f22_y.png" Key="mainUI/f22_y.png" />
-            <PlistImageFile Name="mainUI_font12_yellow.png" Key="mainUI/font12_yellow.png" />
-            <PlistImageFile Name="mainUI_font14_green.png" Key="mainUI/font14_green.png" />
-            <PlistImageFile Name="mainUI_font14_red.png" Key="mainUI/font14_red.png" />
-            <PlistImageFile Name="mainUI_font18_green.png" Key="mainUI/font18_green.png" />
-            <PlistImageFile Name="mainUI_font18_yellow.png" Key="mainUI/font18_yellow.png" />
-            <PlistImageFile Name="mainUI_font20_white.png" Key="mainUI/font20_white.png" />
-            <PlistImageFile Name="mainUI_font22_white.png" Key="mainUI/font22_white.png" />
-            <PlistImageFile Name="mainUI_font22_yellow.png" Key="mainUI/font22_yellow.png" />
-            <PlistImageFile Name="mainUI_font22_yellow_b.png" Key="mainUI/font22_yellow_b.png" />
-            <PlistImageFile Name="mainUI_font22_yellow_kmb.png" Key="mainUI/font22_yellow_kmb.png" />
-            <PlistImageFile Name="mainUI_font22_yellow_kmbb.png" Key="mainUI/font22_yellow_kmbb.png" />
-            <PlistImageFile Name="mainUI_font26_yellow.png" Key="mainUI/font26_yellow.png" />
-            <PlistImageFile Name="mainUI_font28_yellow.png" Key="mainUI/font28_yellow.png" />
-            <PlistImageFile Name="mainUI_gold.png" Key="mainUI/gold.png" />
-            <PlistImageFile Name="mainUI_hero_icon.png" Key="mainUI/hero_icon.png" />
-            <PlistImageFile Name="mainUI_icon.png" Key="mainUI/icon.png" />
-            <PlistImageFile Name="mainUI_key.png" Key="mainUI/key.png" />
-            <PlistImageFile Name="mainUI_lable_bg.png" Key="mainUI/lable_bg.png" />
-            <PlistImageFile Name="mainUI_lock.png" Key="mainUI/lock.png" />
-            <PlistImageFile Name="mainUI_login_reward.png" Key="mainUI/login_reward.png" />
-            <PlistImageFile Name="mainUI_offline_reward.png" Key="mainUI/offline_reward.png" />
-            <PlistImageFile Name="mainUI_pack.png" Key="mainUI/pack.png" />
-            <PlistImageFile Name="mainUI_relic.png" Key="mainUI/relic.png" />
-            <PlistImageFile Name="mainUI_skill_icon.png" Key="mainUI/skill_icon.png" />
-            <PlistImageFile Name="mainUI_slice131_@.png" Key="mainUI/slice131_@.png" />
-            <PlistImageFile Name="mainUI_stage_icon.png" Key="mainUI/stage_icon.png" />
-            <PlistImageFile Name="mainUI_star0.png" Key="mainUI/star0.png" />
-            <PlistImageFile Name="mainUI_statistics.png" Key="mainUI/statistics.png" />
-            <PlistImageFile Name="mainUI_tab_1.png" Key="mainUI/tab_1.png" />
-            <PlistImageFile Name="mainUI_tab_2.png" Key="mainUI/tab_2.png" />
-            <PlistImageFile Name="mainUI_tab_bg1.png" Key="mainUI/tab_bg1.png" />
-            <PlistImageFile Name="mainUI_tab_bg2.png" Key="mainUI/tab_bg2.png" />
-            <PlistImageFile Name="mainUI_tips.png" Key="mainUI/tips.png" />
-            <PlistImageFile Name="mainUI_tips_skill_buff.png" Key="mainUI/tips_skill_buff.png" />
-            <PlistImageFile Name="mainUI_title.png" Key="mainUI/title.png" />
-            <PlistImageFile Name="mainUI_title_bg.png" Key="mainUI/title_bg.png" />
-            <PlistImageFile Name="mainUI_title_bg1.png" Key="mainUI/title_bg1.png" />
-            <PlistImageFile Name="mainUI_title_bg2.png" Key="mainUI/title_bg2.png" />
-            <PlistImageFile Name="mainUI_title_bg3.png" Key="mainUI/title_bg3.png" />
-            <PlistImageFile Name="mainUI_title_bg4.png" Key="mainUI/title_bg4.png" />
-          </PlistImageFolder>
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -639,7 +566,6 @@
         <PlistInfo Name="FontUI.csi" Type="Plist" />
         <PlistInfo Name="HeroDescUI.csi" Type="Plist" />
         <PlistInfo Name="HeroUI.csi" Type="Plist" />
-        <PlistInfo Name="MainUI.csi" Type="Plist" />
         <PlistInfo Name="MaterialUI.csi" Type="Plist" />
         <PlistInfo Name="OfflineRewardUI.csi" Type="Plist" />
         <PlistInfo Name="PackUI.csi" Type="Plist" />

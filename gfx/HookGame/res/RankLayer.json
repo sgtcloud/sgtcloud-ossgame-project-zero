@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_18.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 3,
@@ -135,9 +135,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_10.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 24,
@@ -232,9 +232,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_05.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -513,9 +513,9 @@
                       "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/empty.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -570,9 +570,9 @@
                       "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/empty.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "TouchEnable": true,
                     "AnchorPoint": {},
@@ -633,8 +633,11 @@
       "UsedResources": [
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
+        "mainUI/bg_10.png",
+        "mainUI/bg_18.png",
+        "mainUI/empty.png",
         "RankUI.plist",
         "RankUI.png"
       ],

@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_03.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 9,
@@ -398,19 +398,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -560,9 +560,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_10.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 24,
@@ -674,8 +674,9 @@
         "font/font22_yellow_kmbb-export.png",
         "HeroUI.plist",
         "HeroUI.png",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_03.png",
+        "mainUI/bg_10.png",
+        "mainUI/bg_14.png",
         "ShopUI.plist",
         "ShopUI.png"
       ],

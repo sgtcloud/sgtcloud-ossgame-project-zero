@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/title_bg3.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 180,
                 "Scale9Height": 69,
@@ -90,9 +90,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -133,9 +133,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -176,9 +176,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/empty.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -219,9 +219,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/star0.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 24,
                 "Scale9Height": 15,
@@ -262,9 +262,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/star0.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 24,
                 "Scale9Height": 15,
@@ -449,8 +449,9 @@
       "UsedResources": [
         "font/font14_white_kmbb-export.fnt",
         "font/font14_white_kmbb-export.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/empty.png",
+        "mainUI/star0.png",
+        "mainUI/title_bg3.png"
       ],
       "ctype": "GameFileData"
     }

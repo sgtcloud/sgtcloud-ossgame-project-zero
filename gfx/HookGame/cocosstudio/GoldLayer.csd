@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2446" Y="0.2595" />
                 <PreSize X="0.6611" Y="0.5000" />
-                <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="mainUI/font26_yellow.png" Plist="MainUI.plist" />
+                <LabelAtlasFileImage_CNB Type="Normal" Path="mainUI/font26_yellow.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

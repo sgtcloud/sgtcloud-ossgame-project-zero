@@ -1347,38 +1347,43 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
-            var players = PlayerData.getCurrentRanksByType(type);
-            myNumText.ignoreContentAdaptWithSize(true);
-            myNumText.setString(PlayerData.getMyRankByType(type));
-            myNumText.setColor(cc.color(63, 193, 61));
-            n = 0;
-            for (var i in players) {
-                n++;
-                listView.addChild(this.setRankView(players[i], i, type));
-                //rankView);
-            }
+            PlayerData.getCurrentRanksByType(type.replace('tab',"rank"),function(result,data){
+                myNumText.setString(0);
+                if(result){
+                    for (var i in data) {
+                        listView.addChild(this.setRankView(data[i], type));
+                        //rankView);
+                    }
+                    PlayerData.getMyRankByType(type.replace('tab',"rank"),function(result,data){
+                        if(result && cc.isObject(data))
+                            myNumText.setString(data.index+1);
+                    });
+                }
+                myNumText.ignoreContentAdaptWithSize(true);
+                myNumText.setColor(cc.color(63, 193, 61));
+            }.bind(this));
         };
-        this.setRankView = function (data, id, type) {
+        this.setRankView = function (data, type) {
             var root = rankViewRoot.clone();
             rankViewRoot.ignoreContentAdaptWithSize(true);
-            var hero = new Hero(data.heroes[0]);
+            //var hero = new Hero(data.heroes[0]);
             //var root = rankView.getChildByName('root');
-            root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + hero.getIcon());
+            root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + data.player.avatarUrl);
             var playerName = root.getChildByName('player_name');
             var levelText = root.getChildByName('level_text');
-            //var playerPrestige = root.getChildByName('player_prestige');
-            var prestigeText = root.getChildByName('prestige_text');
+            /*var playerPrestige =*/ root.getChildByName('player_prestige').setVisible(false);
+            /*var prestigeText =*/ root.getChildByName('prestige_text').setVisible(false);
             //var playerLv = root.getChildByName('player_lv');
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');
             setFont([playerName]);
             //setColor([levelText, playerPrestige, prestigeText, playerLv]);
 
-            setIgnoreContentAdaptWithSize([levelText, prestigeText, num]);
-            levelText.setString("Lv." + hero.getLv());
-            num.setString(n);
-            playerName.setString(data.name);
-            if (id == player.id) {
+            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num]);
+            levelText.setString("Lv." + data.player.level);
+            num.setString(data.index+1);
+            playerName.setString(data.player.name);
+            if (data.player.id == player.id) {
                 myBg.setVisible(true);
             } else {
                 myBg.setVisible(false);
