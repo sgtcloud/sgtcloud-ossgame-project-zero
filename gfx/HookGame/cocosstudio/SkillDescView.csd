@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skill_icon" ActionTag="-916199202" Tag="105" IconVisible="False" LeftMargin="25.9997" RightMargin="444.0003" TopMargin="10.0000" BottomMargin="10.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
                 <Size X="90.0000" Y="90.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0464" Y="0.0909" />
                 <PreSize X="0.1607" Y="0.8182" />
-                <FileData Type="MarkedSubImage" Path="mainUI/skill_icon.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/skill_icon.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skillName_text" ActionTag="1237467605" Tag="108" IconVisible="False" LeftMargin="135.6982" RightMargin="264.3018" TopMargin="9.6864" BottomMargin="70.3136" IsCustomSize="True" FontSize="22" LabelText="技能名字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="30.0000" />

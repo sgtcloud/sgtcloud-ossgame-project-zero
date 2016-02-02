@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8869" />
                 <PreSize X="0.4167" Y="0.1667" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_03.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond_text" ActionTag="-1775524666" Tag="907" IconVisible="False" LeftMargin="328.0161" RightMargin="236.9839" TopMargin="75.6171" BottomMargin="505.3829" LabelText="99" ctype="TextBMFontObjectData">
                 <Size X="35.0000" Y="19.0000" />
@@ -91,9 +91,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
-                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
-                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_14.png" Plist="MainUI.plist" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -142,7 +142,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="shopList" ActionTag="-590507260" Tag="1109" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="18.0000" BottomMargin="2.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="594.0000" Y="580.0000" />

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_03.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_icon" ActionTag="-909994317" Tag="119" IconVisible="False" LeftMargin="30.9160" RightMargin="479.0840" TopMargin="17.1802" BottomMargin="92.8198" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />

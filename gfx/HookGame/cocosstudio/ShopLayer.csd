@@ -15,9 +15,9 @@
                 <Position Y="0.0021" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0000" />
+                <PrePosition />
                 <PreSize X="1.0000" Y="0.8605" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="bg2" ActionTag="930478778" Tag="44" IconVisible="False" LeftMargin="2.0000" RightMargin="2.0000" TopMargin="190.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="636.0000" Y="670.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0031" />
                 <PreSize X="0.9937" Y="0.7791" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_18.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="descText_bg" ActionTag="-772914297" Tag="46" IconVisible="False" LeftMargin="14.6350" RightMargin="15.3650" TopMargin="126.4282" BottomMargin="673.5718" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="610.0000" Y="60.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0229" Y="0.7832" />
                 <PreSize X="0.9531" Y="0.0698" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_05.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="shop_text" ActionTag="-404407330" Tag="146" IconVisible="False" LeftMargin="255.1350" RightMargin="255.8650" TopMargin="126.4283" BottomMargin="675.5717" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
                 <Size X="129.0000" Y="58.0000" />
@@ -74,7 +74,7 @@
                     <PressedBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
                     <DisableBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_1.png" Plist="ShopUI.plist" />
                     <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
-                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
+                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="moneyTree_tab" ActionTag="583975273" Tag="783" IconVisible="False" LeftMargin="159.9997" RightMargin="0.0003" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
@@ -88,7 +88,7 @@
                     <PressedBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
                     <DisableBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_1.png" Plist="ShopUI.plist" />
                     <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
-                    <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
+                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -439,8 +439,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/bg_04.png",
         "ui/equip_btn1.png",
         "ui/equip_btn2.png",
         "ui/hero_btn1.png",

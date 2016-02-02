@@ -21,7 +21,7 @@
                 <PressedBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
                 <DisableBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_1.png" Plist="ShopUI.plist" />
                 <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
-                <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
+                <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="moneyTree_tab" ActionTag="-1080933438" Tag="162" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">
                 <Size X="160.0000" Y="55.0000" />
@@ -35,7 +35,7 @@
                 <PressedBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
                 <DisableBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_1.png" Plist="ShopUI.plist" />
                 <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
-                <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
+                <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

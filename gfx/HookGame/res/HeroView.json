@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/hero_icon.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -1232,8 +1232,7 @@
         "font/font18_white-export.png",
         "HeroUI.plist",
         "HeroUI.png",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"
     }

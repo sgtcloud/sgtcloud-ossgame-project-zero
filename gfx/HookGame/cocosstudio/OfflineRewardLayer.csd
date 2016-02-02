@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.4743" />
                 <PreSize X="0.8889" Y="0.8750" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg" ActionTag="-1727204861" Tag="42" IconVisible="False" LeftMargin="35.2204" RightMargin="34.7796" TopMargin="39.8540" BottomMargin="324.1460" Scale9Enable="True" LeftEage="60" RightEage="60" Scale9OriginX="60" Scale9Width="30" Scale9Height="44" ctype="ImageViewObjectData">
                 <Size X="380.0000" Y="36.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.8554" />
                 <PreSize X="0.8444" Y="0.0900" />
-                <FileData Type="MarkedSubImage" Path="mainUI/title.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/title.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="prompt_bg" ActionTag="-551015110" Tag="49" IconVisible="False" LeftMargin="27.2205" RightMargin="26.7795" TopMargin="80.0000" BottomMargin="80.0000" Scale9Enable="True" LeftEage="3" RightEage="3" TopEage="10" BottomEage="10" Scale9OriginX="3" Scale9OriginY="10" Scale9Width="4" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="396.0000" Y="240.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0605" Y="0.2000" />
                 <PreSize X="0.8800" Y="0.6000" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_18.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_18.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="text_bg" ActionTag="-1772675966" Tag="11" IconVisible="False" LeftMargin="32.2205" RightMargin="31.7795" TopMargin="87.0000" BottomMargin="89.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="50" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="386.0000" Y="224.0000" />
@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0716" Y="0.2225" />
                 <PreSize X="0.8578" Y="0.5600" />
-                <FileData Type="MarkedSubImage" Path="mainUI/bg_10.png" Plist="MainUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="desc_text" ActionTag="-1197192476" Tag="1015" IconVisible="False" LeftMargin="93.2205" RightMargin="92.7795" TopMargin="112.6725" BottomMargin="261.3275" Scale9Width="264" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="264.0000" Y="26.0000" />
@@ -71,9 +71,9 @@
                     <PrePosition />
                     <PreSize X="1.0000" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
-                    <DisabledFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
-                    <PressedFileData Type="MarkedSubImage" Path="mainUI/bg_11.png" Plist="MainUI.plist" />
-                    <NormalFileData Type="MarkedSubImage" Path="mainUI/bg_06.png" Plist="MainUI.plist" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_11.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_06.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -120,7 +120,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="-0.0500" Y="0.7273" />
                     <PreSize X="0.1500" Y="0.2727" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/gold.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="gem" ActionTag="953540833" Tag="442" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="39.9998" BottomMargin="40.0002" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                     <Size X="30.0000" Y="30.0000" />
@@ -130,7 +130,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="-0.0500" Y="0.3636" />
                     <PreSize X="0.1500" Y="0.2727" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/diamond.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/diamond.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="key" ActionTag="167233740" Tag="449" IconVisible="False" LeftMargin="-9.9994" RightMargin="179.9994" TopMargin="80.0000" Scale9Width="45" Scale9Height="45" ctype="ImageViewObjectData">
                     <Size X="30.0000" Y="30.0000" />
@@ -140,7 +140,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="-0.0500" />
                     <PreSize X="0.1500" Y="0.2727" />
-                    <FileData Type="MarkedSubImage" Path="mainUI/key.png" Plist="MainUI.plist" />
+                    <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="gold_text" ActionTag="-711377854" Tag="1062" IconVisible="False" LeftMargin="29.7315" RightMargin="72.2685" TopMargin="8.8908" BottomMargin="88.1092" CharWidth="14" CharHeight="13" LabelText="9999999" StartChar="0" ctype="TextAtlasObjectData">
                     <Size X="98.0000" Y="13.0000" />

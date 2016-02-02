@@ -55,9 +55,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_01.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -235,19 +235,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -391,9 +391,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/key.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 45,
                     "Scale9Height": 45,
@@ -503,8 +503,9 @@
         "font/font16_yellow_kmbb-export.fnt",
         "font/font16_yellow_kmbb-export.png",
         "ItemLayer.json",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/bg_01.png",
+        "mainUI/bg_14.png",
+        "mainUI/key.png"
       ],
       "ctype": "GameFileData"
     }
