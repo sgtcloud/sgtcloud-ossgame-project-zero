@@ -10,7 +10,7 @@ var res_datas = {
 };
 var res = {
     cover_scene_json: "res/cover.json",
-
+    createPlayer: "res/NewNameLayer.json",
     menu_layer_json: "res/MenuLayer.json",
     battle_layer_json: "res/BattleLayer.json",
     equip_layer_json: "res/Equiplayer.json",

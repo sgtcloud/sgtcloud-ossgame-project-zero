@@ -96,6 +96,16 @@ var PlayerData = {
 
     init: function () {
         var save = localStorage.getItem("save");
+        if(sgt ){
+            if(cc.isObject(sgt.context.playerData.save)){
+                save = sgt.context.playerData.save.content;
+            }else{
+                player.id = sgt.context.playerData.player.id;
+                player.name = sgt.context.playerData.player.name;
+                player.vip = sgt.context.playerData.player.vip || 1;
+                player.first_time = sgt.context.playerData.player.createTime;
+            }
+        }
         if (save) {
             player = JSON.parse(save);
         }
@@ -125,8 +135,29 @@ var PlayerData = {
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
+        if(sgt){
+            var save = new SgtApi.Save();
+            if(sgt.context.playerData.player.level != this.heroes[0].lv){
+                sgt.context.playerData.player.level = this.heroes[0].lv;
+                sgt.PlayerService.update(sgt.context.playerData.player,function(result,data){});
+            }
+
+            save.content = JSON.stringify(player);
+            save.playerId = player.id;
+            sgt.PlayerService.uploadSave(save,function(result,data){
+                player.into_stage_battle_timestamp = data.lastUploadTime;
+                console.log('上传存档：'+result+",内容为"+data);
+            });
+        }
     }
     ,
+    updateLeaderBoardScore: function(stageNum){
+        SgtApi.LeaderBoardService.submitLeaderBoardScore("pvp_rank", player.id, stageNum, function(result, data) {
+            if (result) {
+                console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
+            }
+        });
+    },
     getHeroes: function () {
         return this.heroes;
     },
@@ -334,11 +365,25 @@ var PlayerData = {
         }
     }
     ,
-    getCurrentRanksByType: function (type) {
-        return dataSource.players;
+    getCurrentRanksByType: function (leaderId) {
+        if(sgt && cc.isObject(sgt.context.playerData)){
+            SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, function(result, data) {
+                if (result) {
+                    return data;
+                }
+            });
+        }
+        return [];
     }
     ,
-    getMyRankByType: function (type) {
+    getMyRankByType: function (leaderId) {
+        if(sgt && cc.isObject(sgt.context.playerData)){
+            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, sgt.context.playerData.player.id, function(result, data) {
+                if (result) {
+                    return data.index+1;
+                }
+            });
+        }
         return 1;
     }
     ,
