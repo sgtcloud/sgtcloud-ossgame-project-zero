@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/equip_bg.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -93,9 +93,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/equip_icon.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Width": 90,
                 "Scale9Height": 90,
@@ -423,8 +423,8 @@
         "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade2.json",
-        "equipUI/equip_bg.png",
-        "equipUI/equip_icon.png",
+        "EquipUI.plist",
+        "EquipUI.png",
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png"
       ],

@@ -1,0 +1,19 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="RankUI" Type="Plist" ID="d43d2ced-696b-43a8-9e4d-2dba580b3f54" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="rankUI/clearance_rank.png" />
+      <FilePathData Path="rankUI/level.png" />
+      <FilePathData Path="rankUI/myRank_text.png" />
+      <FilePathData Path="rankUI/pvp_rank.png" />
+      <FilePathData Path="rankUI/pvpTab_1.png" />
+      <FilePathData Path="rankUI/pvpTab_2.png" />
+      <FilePathData Path="rankUI/rankText.png" />
+      <FilePathData Path="rankUI/rankView_bg.png" />
+      <FilePathData Path="rankUI/stageTab_1.png" />
+      <FilePathData Path="rankUI/stageTab_2.png" />
+      <FilePathData Path="rankUI/transformation.png" />
+    </ImageFiles>
+    <MaxSize Width="680" Height="210" />
+  </Content>
+</PlistInfoProjectFile>

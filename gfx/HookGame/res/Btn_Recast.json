@@ -61,19 +61,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn2.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -122,9 +122,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/recast.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Width": 66,
                 "Scale9Height": 34,
@@ -208,9 +208,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "heroUI/diamond.png",
-                  "Plist": ""
+                  "Plist": "HeroUI.plist"
                 },
                 "Scale9Width": 40,
                 "Scale9Height": 40,
@@ -248,9 +248,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/relic.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Width": 40,
                 "Scale9Height": 40,
@@ -304,13 +304,14 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/recast.png",
-        "equipUI/btn1.png",
-        "equipUI/btn2.png",
-        "equipUI/relic.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
+        "EquipUI.plist",
+        "EquipUI.png",
         "font/font16_white_kmbb-export.fnt",
         "font/font16_white_kmbb-export.png",
-        "heroUI/diamond.png"
+        "HeroUI.plist",
+        "HeroUI.png"
       ],
       "ctype": "GameFileData"
     }

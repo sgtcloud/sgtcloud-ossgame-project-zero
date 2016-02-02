@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>shopUI/moneyTree_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{610,600}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{610,600}</string>
+			</dict>
+			<key>shopUI/moneyTreeTab_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{610,0},{160,55}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>shopUI/moneyTreeTab_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{610,320},{159,55}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>shopUI/sale.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,638},{52,27}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{66,36}</string>
+			</dict>
+			<key>shopUI/shopTab_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{610,160},{160,55}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>shopUI/shopTab_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{610,479},{159,55}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>shopUI/shopText.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{52,600},{121,51}}</string>
+				<key>offset</key>
+				<string>{0,1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{129,58}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>ShopUI.png</string>
+			<key>realTextureFileName</key>
+			<string>ShopUI.png</string>
+			<key>size</key>
+			<string>{665,665}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>665</integer>
+			<key>height</key>
+			<integer>665</integer>
+		</dict>
+	</dict>
+</plist>

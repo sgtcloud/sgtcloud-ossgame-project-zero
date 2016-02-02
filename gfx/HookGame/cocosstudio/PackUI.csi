@@ -1,0 +1,10 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="PackUI" Type="Plist" ID="2a5f40b7-c24a-4346-9bec-6ea43c607f69" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="packUI/chest.png" />
+      <FilePathData Path="packUI/title.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

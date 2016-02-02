@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "mainUI/empty.png",
-                  "Plist": ""
+                  "Plist": "MainUI.plist"
                 },
                 "Scale9Width": 1,
                 "Scale9Height": 1,
@@ -210,7 +210,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/empty.png"
+        "MainUI.plist",
+        "MainUI.png"
       ],
       "ctype": "GameFileData"
     }

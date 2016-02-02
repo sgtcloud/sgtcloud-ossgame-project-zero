@@ -57,7 +57,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.6858" />
                 <PreSize X="0.5867" Y="0.0650" />
-                <FileData Type="Normal" Path="offlineRewardUI/desc.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="offlineRewardUI/desc.png" Plist="OfflineRewardUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="btn" ActionTag="1485385046" Tag="1065" IconVisible="False" LeftMargin="165.2205" RightMargin="164.7795" TopMargin="324.0222" BottomMargin="25.9778" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="120.0000" Y="50.0000" />
@@ -107,7 +107,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5005" Y="0.8495" />
                 <PreSize X="0.2489" Y="0.0850" />
-                <FileData Type="Normal" Path="offlineRewardUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="offlineRewardUI/title.png" Plist="OfflineRewardUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="box" ActionTag="-76387688" Tag="450" IconVisible="False" LeftMargin="168.9997" RightMargin="81.0003" TopMargin="167.0045" BottomMargin="122.9955" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="110.0000" />

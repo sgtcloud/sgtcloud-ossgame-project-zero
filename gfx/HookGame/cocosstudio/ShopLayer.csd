@@ -15,7 +15,7 @@
                 <Position Y="0.0021" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
+                <PrePosition Y="0.0000" />
                 <PreSize X="1.0000" Y="0.8605" />
                 <FileData Type="MarkedSubImage" Path="mainUI/bg_04.png" Plist="MainUI.plist" />
               </AbstractNodeData>
@@ -47,16 +47,16 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4994" Y="0.8193" />
                 <PreSize X="0.2016" Y="0.0674" />
-                <FileData Type="Normal" Path="shopUI/shopText.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="shopUI/shopText.png" Plist="ShopUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="250.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="610.0000" Y="600.0000" />
+              <AbstractNodeData Name="shop_view" ActionTag="1256429570" Tag="398" IconVisible="True" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="250.0000" BottomMargin="10.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="600.0000" Y="600.0000" />
                 <AnchorPoint />
-                <Position X="15.0000" Y="10.0000" />
+                <Position X="20.0000" Y="10.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0234" Y="0.0116" />
-                <PreSize X="0.9531" Y="0.6977" />
+                <PrePosition X="0.0313" Y="0.0116" />
+                <PreSize X="0.9375" Y="0.6977" />
                 <FileData Type="Normal" Path="ShopView.csd" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="shop_tab" ActionTag="-1330314158" Tag="781" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
@@ -70,10 +70,10 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="shopUI/shopTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="shopUI/shopTab_2.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_1.png" Plist="ShopUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="shopUI/shopTab_1.png" Plist="ShopUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/shopTab_2.png" Plist="ShopUI.plist" />
                     <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="moneyTree_tab" ActionTag="583975273" Tag="783" IconVisible="False" LeftMargin="159.9997" RightMargin="0.0003" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
@@ -84,10 +84,10 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="Normal" Path="shopUI/moneyTreeTab_1.png" Plist="" />
-                    <PressedBackFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
-                    <DisableBackFileData Type="Normal" Path="shopUI/moneyTreeTab_1.png" Plist="" />
-                    <NodeNormalFileData Type="Normal" Path="shopUI/moneyTreeTab_2.png" Plist="" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_1.png" Plist="ShopUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_1.png" Plist="ShopUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="shopUI/moneyTreeTab_2.png" Plist="ShopUI.plist" />
                     <NodeDisableFileData Type="MarkedSubImage" Path="mainUI/empty.png" Plist="MainUI.plist" />
                   </AbstractNodeData>
                 </Children>

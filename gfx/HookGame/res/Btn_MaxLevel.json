@@ -61,19 +61,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn2.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "equipUI/btn1.png",
-                  "Plist": ""
+                  "Plist": "EquipUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -123,9 +123,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/MaxLevel.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Width": 105,
                 "Scale9Height": 44,
@@ -182,9 +182,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/MaxLevel.png",
-        "equipUI/btn1.png",
-        "equipUI/btn2.png"
+        "ButtonUI.plist",
+        "ButtonUI.png",
+        "EquipUI.plist",
+        "EquipUI.png"
       ],
       "ctype": "GameFileData"
     }

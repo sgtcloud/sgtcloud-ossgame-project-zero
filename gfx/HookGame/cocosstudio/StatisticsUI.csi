@@ -1,0 +1,39 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="StatisticsUI" Type="Plist" ID="bfb1e797-3a0f-433b-8127-a9ec9f43476d" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="statisticsUI/cumulative_text.png" />
+      <FilePathData Path="statisticsUI/current_text.png" />
+      <FilePathData Path="statisticsUI/f22_y.png" />
+      <FilePathData Path="statisticsUI/text01.png" />
+      <FilePathData Path="statisticsUI/text02.png" />
+      <FilePathData Path="statisticsUI/text03.png" />
+      <FilePathData Path="statisticsUI/text04.png" />
+      <FilePathData Path="statisticsUI/text05.png" />
+      <FilePathData Path="statisticsUI/text06.png" />
+      <FilePathData Path="statisticsUI/text07.png" />
+      <FilePathData Path="statisticsUI/text08.png" />
+      <FilePathData Path="statisticsUI/text09.png" />
+      <FilePathData Path="statisticsUI/text10.png" />
+      <FilePathData Path="statisticsUI/text11.png" />
+      <FilePathData Path="statisticsUI/text12.png" />
+      <FilePathData Path="statisticsUI/text13.png" />
+      <FilePathData Path="statisticsUI/text14.png" />
+      <FilePathData Path="statisticsUI/text15.png" />
+      <FilePathData Path="statisticsUI/text16.png" />
+      <FilePathData Path="statisticsUI/text17.png" />
+      <FilePathData Path="statisticsUI/text18.png" />
+      <FilePathData Path="statisticsUI/text19.png" />
+      <FilePathData Path="statisticsUI/text20.png" />
+      <FilePathData Path="statisticsUI/text21.png" />
+      <FilePathData Path="statisticsUI/text22.png" />
+      <FilePathData Path="statisticsUI/text23.png" />
+      <FilePathData Path="statisticsUI/text24.png" />
+      <FilePathData Path="statisticsUI/text25.png" />
+      <FilePathData Path="statisticsUI/text26.png" />
+      <FilePathData Path="statisticsUI/text27.png" />
+      <FilePathData Path="statisticsUI/title_text.png" />
+    </ImageFiles>
+    <MaxSize Width="330" Height="320" />
+  </Content>
+</PlistInfoProjectFile>

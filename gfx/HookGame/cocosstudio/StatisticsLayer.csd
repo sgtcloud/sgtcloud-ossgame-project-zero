@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.9419" />
                 <PreSize X="0.4297" Y="0.0797" />
-                <FileData Type="Normal" Path="statisticsUI/title_text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="statisticsUI/title_text.png" Plist="StatisticsUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="current" ActionTag="-412105088" Tag="44" IconVisible="False" LeftMargin="14.0000" RightMargin="16.0000" TopMargin="80.0000" BottomMargin="290.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="370.0000" />
@@ -60,7 +60,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0418" Y="0.8649" />
                     <PreSize X="0.2328" Y="0.1270" />
-                    <FileData Type="Normal" Path="statisticsUI/current_text.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="statisticsUI/current_text.png" Plist="StatisticsUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="text" ActionTag="220247064" Tag="60" IconVisible="False" LeftMargin="15.0000" RightMargin="395.0000" TopMargin="50.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="310.0000" />
@@ -73,7 +73,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.9516" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text04.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text04.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_hero_levels" ActionTag="-856797791" Tag="48" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="28.4088" BottomMargin="258.5912" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -83,7 +83,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.8713" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text05.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text05.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_gold_rate" ActionTag="-424073155" Tag="49" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="53.3178" BottomMargin="233.6822" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -93,7 +93,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.7909" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text06.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text06.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_tap_rate" ActionTag="661861092" Tag="50" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="78.2270" BottomMargin="208.7730" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -103,7 +103,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.7106" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text07.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text07.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_attack_rate" ActionTag="87689969" Tag="51" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="103.1361" BottomMargin="183.8639" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -113,7 +113,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.6302" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text08.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text08.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_life_rate" ActionTag="-433758521" Tag="52" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="128.0452" BottomMargin="158.9548" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -123,7 +123,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.5499" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text09.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text09.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_tap_value" ActionTag="74973655" Tag="53" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="152.9544" BottomMargin="134.0456" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -133,7 +133,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.4695" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text10.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text10.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_attack_value" ActionTag="373772142" Tag="59" IconVisible="False" LeftMargin="13.2497" RightMargin="-13.2497" TopMargin="177.8635" BottomMargin="109.1365" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -143,7 +143,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.3891" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text11.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text11.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_life_value" ActionTag="-1693394815" Tag="58" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="202.7727" BottomMargin="84.2273" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -153,7 +153,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.3088" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text12.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text12.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_ctr_chance_rate" ActionTag="23989029" Tag="54" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="227.6818" BottomMargin="59.3182" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -163,7 +163,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.2284" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text13.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text13.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_ctr_modify_rate" ActionTag="-1260842043" Tag="55" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="252.5909" BottomMargin="34.4091" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -173,7 +173,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.1481" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text14.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text14.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="total_atk_period_rate" ActionTag="-1158777912" Tag="57" IconVisible="False" LeftMargin="13.2498" RightMargin="-13.2498" TopMargin="277.5000" BottomMargin="9.5000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -183,7 +183,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5662" Y="0.0677" />
                         <PreSize X="1.0000" Y="0.0742" />
-                        <FileData Type="Normal" Path="statisticsUI/text15.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text15.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
@@ -365,7 +365,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1582" Y="0.8962" />
                     <PreSize X="0.2328" Y="0.1808" />
-                    <FileData Type="Normal" Path="statisticsUI/cumulative_text.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="statisticsUI/cumulative_text.png" Plist="StatisticsUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="text" ActionTag="1878732397" Tag="91" IconVisible="False" LeftMargin="30.7420" RightMargin="379.2580" TopMargin="38.8479" BottomMargin="31.1521" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="190.0000" />
@@ -378,7 +378,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.7895" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text19.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text19.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_relic" ActionTag="402149767" Tag="79" IconVisible="False" TopMargin="42.0000" BottomMargin="125.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -388,7 +388,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.6579" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text17.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text17.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_fairy" ActionTag="-1042699242" Tag="78" IconVisible="False" TopMargin="67.0000" BottomMargin="100.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -398,7 +398,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.5263" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text16.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text16.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_chest_open" ActionTag="489712384" Tag="86" IconVisible="False" TopMargin="92.0000" BottomMargin="75.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -408,7 +408,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.3947" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text24.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text24.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_enemy_kill" ActionTag="-296740336" CallBackType="Click" Tag="84" IconVisible="False" TopMargin="117.0000" BottomMargin="50.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -418,7 +418,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.2632" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text22.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text22.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_boss_kill" ActionTag="901180074" Tag="85" IconVisible="False" TopMargin="142.0000" BottomMargin="25.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -428,7 +428,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition Y="0.1316" />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text23.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text23.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                       <AbstractNodeData Name="statistics.total_max_level" ActionTag="-810216555" Tag="87" IconVisible="False" TopMargin="167.0000" Scale9Width="200" Scale9Height="23" ctype="ImageViewObjectData">
                         <Size X="200.0000" Y="23.0000" />
@@ -438,7 +438,7 @@
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition />
                         <PreSize X="1.0000" Y="0.1211" />
-                        <FileData Type="Normal" Path="statisticsUI/text25.png" Plist="" />
+                        <FileData Type="MarkedSubImage" Path="statisticsUI/text25.png" Plist="StatisticsUI.plist" />
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />

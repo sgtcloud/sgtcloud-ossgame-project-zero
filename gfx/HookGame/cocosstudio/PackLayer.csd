@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5033" Y="0.9357" />
                 <PreSize X="0.2016" Y="0.0784" />
-                <FileData Type="Normal" Path="packUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="packUI/title.png" Plist="PackUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="pack" ActionTag="1044177206" Tag="542" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="85.0000" BottomMargin="220.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="435.0000" />
@@ -320,7 +320,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.8786" />
                     <PreSize X="0.2705" Y="0.1750" />
-                    <FileData Type="Normal" Path="packUI/chest.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="packUI/chest.png" Plist="PackUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="golden_key_num_text" ActionTag="878222408" Tag="524" IconVisible="False" LeftMargin="117.3994" RightMargin="457.6006" TopMargin="162.1735" BottomMargin="18.8265" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="35.0000" Y="19.0000" />

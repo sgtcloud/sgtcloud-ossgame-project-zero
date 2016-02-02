@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5023" Y="0.5996" />
                 <PreSize X="0.8667" Y="0.3444" />
-                <FileData Type="Normal" Path="skillUI/reviveTime.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="skillUI/reviveTime.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="cooldown_text" Visible="False" ActionTag="-187995137" Tag="398" IconVisible="False" LeftMargin="6.2086" RightMargin="5.7914" TopMargin="20.5356" BottomMargin="38.4644" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />
@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5023" Y="0.5996" />
                 <PreSize X="0.8667" Y="0.3444" />
-                <FileData Type="Normal" Path="skillUI/cooldown.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="skillUI/cooldown.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="duration_text" Visible="False" ActionTag="-1473897718" Tag="399" IconVisible="False" LeftMargin="6.2086" RightMargin="5.7914" TopMargin="20.5356" BottomMargin="38.4644" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />
@@ -57,7 +57,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5023" Y="0.5996" />
                 <PreSize X="0.8667" Y="0.3444" />
-                <FileData Type="Normal" Path="skillUI/duration.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="skillUI/duration.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
