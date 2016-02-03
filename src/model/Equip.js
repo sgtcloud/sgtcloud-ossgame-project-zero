@@ -1,6 +1,6 @@
-var Equip = function (id, lv,equipCache) {
+var Equip = function (id, equipCache) {
     var id = id;
-    var lv = lv;
+    var lv = 0;
     var data = dataSource.equips[id];
     var equipLv = equipCache && equipCache['level'];
     if(equipLv){
@@ -49,10 +49,10 @@ var Equip = function (id, lv,equipCache) {
     this.getEffect = function (key) {
         return getEffectValue(data, key, lv);
     };
-    this.upgrade = function (hero) {
-        var price = this.getNextLevelUpgrade();
+    this.upgrade = function (hero,price) {
+        price =price|| this.getNextLevelUpgrade();
         var unit = price['unit']
-        if (!validateAmountEnough(price)) {
+        if (!validateAmountNotEnough(price)) {
             lv += 1;
             var cost = {value: -price.value, unit: unit}
             PlayerData.updateResource([cost]);
