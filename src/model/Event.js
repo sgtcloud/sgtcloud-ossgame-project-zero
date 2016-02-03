@@ -93,7 +93,11 @@ var EVENT = {
      * 更新指定资源（金币、钻石、宝物...）
      * 参数:{unit:资源类型,value:资源值}
      */
-    UPDATE_RESOURCE:'UPDATE_RESOURCE'
+    UPDATE_RESOURCE:'UPDATE_RESOURCE',
+    /**
+     * 英雄神器数量
+     */
+    UPGRADE_EQUIP_NUM:"UPGRADE_EQUIP_NUM"
 };
 
 var customEventHelper = {
