@@ -255,7 +255,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "+99999",
+                "LabelText": "-",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font18_white-export.fnt",
@@ -280,17 +280,17 @@
                   "Y": 0.2748
                 },
                 "PreSize": {
-                  "X": 0.7357,
+                  "X": 0.1,
                   "Y": 0.2125
                 },
-                "LeftMargin": 23.9442,
-                "RightMargin": 13.0558,
+                "LeftMargin": 68.4442,
+                "RightMargin": 57.5558,
                 "TopMargin": 49.5166,
                 "BottomMargin": 13.4834,
                 "Tag": 348,
                 "ActionTag": 716730375,
                 "Size": {
-                  "X": 103.0,
+                  "X": 14.0,
                   "Y": 17.0
                 },
                 "Name": "buffNum_text",
