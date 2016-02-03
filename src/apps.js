@@ -93,7 +93,8 @@ function validateAmountNotEnough(upgradeLevelData) {
     return amount < upgradeLevelData['value'];
 }
 function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
-    if (validateAmountNotEnough(nextlevelData)) {
+    var flag=validateAmountNotEnough(nextlevelData)
+    if (flag) {
         upgrade_btn.setEnabled(false);
         upgrade_btn.setBright(false);
         text.setColor(cc.color(255, 0, 0));
@@ -102,6 +103,7 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
         upgrade_btn.setBright(true);
         text.setColor(cc.color(255, 255, 255));
     }
+    return flag;
 }
 
 function addPlayer(playerName,callback){
