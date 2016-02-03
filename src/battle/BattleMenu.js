@@ -396,7 +396,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
-                    elements.upgrade_btn.buffNum_text.setString(Math.abs(parseInt(nextLevelLife - levelLife)));
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
                     listener(event, elements);
@@ -569,18 +569,6 @@ var HeroListMenu = BattleMenu.extend({
                 }
             })
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
-                //if (!hero.isMaxLevel()) {
-                //    var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-                //    if (validateAmountNotEnough(nextlevelData['upgrade'])) {
-                //        elements.upgrade_btn.btn.setEnabled(false);
-                //        elements.upgrade_btn.btn.setBright(false);
-                //        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
-                //    } else {
-                //        elements.upgrade_btn.btn.setEnabled(true);
-                //        elements.upgrade_btn.btn.setBright(true);
-                //        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
-                //    }
-                //}
                 refeshUpgradeLayer(hero, elements);
             });
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
@@ -656,7 +644,8 @@ var HeroListMenu = BattleMenu.extend({
                     var nextLevelLife = nextlevelData['life'];
                     elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
                     var levelLife = hero.getLevelData()['life'];
-                    elements.upgrade_btn.buffNum_text.setString(Math.floor(nextLevelLife - levelLife));
+                    var effect=nextLevelLife - levelLife;
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(effect));
                 }
                 if (hero.getLv() == 1) {
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
@@ -673,7 +662,19 @@ var HeroListMenu = BattleMenu.extend({
             var heroDesc = new HeroDesc();
             heroDesc.initData(hero);
         }
-
+        function toFixed2(num){
+            var _effect =0;
+            var absEffect=Math.abs(num);
+            if(absEffect>0&&absEffect<1){
+                _effect=num.toFiexed(2);
+            }else {
+                _effect = Math.floor(num);
+            }
+            if(_effect>0){
+                _effect='+'+_effect;
+            }
+            return _effect;
+        }
         function initSkillView(hero, skill, elements) {
             if (skill.isMaxLevel()) {
                 return;
@@ -703,7 +704,7 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            var _effect = parseInt(showEffect);
+            var _effect =toFixed2(showEffect);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                 _effect += "%"
             }
@@ -793,6 +794,9 @@ var HeroListMenu = BattleMenu.extend({
                     var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                     elements.upgrade_btn.text_yellow.setString(nextAmount);
                     var showEffect = Math.floor(nextEffects[0].value - effects[0].value);
+                    if(showEffect>0){
+                        showEffect='+'+showEffect;
+                    }
                     elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
                     if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                         showEffect += '%'
