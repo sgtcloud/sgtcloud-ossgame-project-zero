@@ -106,8 +106,20 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     //        doCoolDown(that.skill.getLevelData());
                     //    }
                     //}
-                    console.log('释放buff:' + that.skill.getId())
-                    tryFire(that.skill.getLevelData());
+                    //console.log('释放buff:' + that.skill.getId())
+                    //if (isCoolDowning && !heroDead) {
+                    //    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                    //    toggleBuffTip();
+                    //} else
+                    //    tryFire(that.skill.getLevelData());
+
+
+                    if (!(isCoolDowning || heroDead)) {
+                        tryFire(that.skill.getLevelData());
+                    } else if (isCoolDowning && !heroDead) {
+                        console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                        toggleBuffTip();
+                    }
                 }
             });
             function doCoolDown(levelData) {
@@ -144,7 +156,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    toggleBuffTip();
+                    //toggleBuffTip();
                 } else {
                     console.log('英雄已死亡，请稍候再点！');
                 }
@@ -455,21 +467,23 @@ var HeroListMenu = BattleMenu.extend({
             elements.maxLevel_btn.upMax_text = maxLevel.getChildByName('upMax_text');
             elements.maxLevel_btn.layer.setVisible(false);
         }
-        function refeshUpgradeLayer(hero,elements){
+
+        function refeshUpgradeLayer(hero, elements) {
             if (!hero.isMaxLevel()) {
                 var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-                validateResourceNotEnough(nextlevelData['upgrade'],elements.upgrade_btn.btn,elements.upgrade_btn.text_yellow);
+                validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
                 /*if (validateAmountNotEnough(nextlevelData['upgrade'])) {
-                    elements.upgrade_btn.btn.setEnabled(false);
-                    elements.upgrade_btn.btn.setBright(false);
-                    elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
-                } else {
-                    elements.upgrade_btn.btn.setEnabled(true);
-                    elements.upgrade_btn.btn.setBright(true);
-                    elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
-                }*/
+                 elements.upgrade_btn.btn.setEnabled(false);
+                 elements.upgrade_btn.btn.setBright(false);
+                 elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
+                 } else {
+                 elements.upgrade_btn.btn.setEnabled(true);
+                 elements.upgrade_btn.btn.setBright(true);
+                 elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
+                 }*/
             }
         }
+
         function buildHeroView(hero) {
             var root = heroTemp.clone();
             var elements = {};
@@ -567,7 +581,7 @@ var HeroListMenu = BattleMenu.extend({
                 //        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
                 //    }
                 //}
-                refeshUpgradeLayer(hero,elements);
+                refeshUpgradeLayer(hero, elements);
             });
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();
@@ -648,10 +662,10 @@ var HeroListMenu = BattleMenu.extend({
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
                 }
             });
-            if(typeof cb==='function'){
+            if (typeof cb === 'function') {
                 cb();
             }
-            refeshUpgradeLayer(hero,elements);
+            refeshUpgradeLayer(hero, elements);
             return root;
         }
 
@@ -817,8 +831,8 @@ var HeroListMenu = BattleMenu.extend({
                 }
             }
 
-            function buildHeroMenu(heroData,cb) {
-                var _heroView = buildHeroView(heroData,cb);
+            function buildHeroMenu(heroData, cb) {
+                var _heroView = buildHeroView(heroData, cb);
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
@@ -876,36 +890,43 @@ var EquipListMenu = BattleMenu.extend({
             diamond_icon.setVisible(false);
             equipAll_text.setVisible(false);
             relic_icon.setVisible(true);
-            var elements = {buy_btn_layer: buy_btn_layer, equipAll_text: equipAll_text, text_yellow: text_yellow,btn:btn};
-            refeshMagicalEquips(hero,elements);
-            customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE,function(){
-                validateResourceNotEnough({unit:'relic',value:nextValue},btn,text_yellow);
+            var elements = {
+                buy_btn_layer: buy_btn_layer,
+                equipAll_text: equipAll_text,
+                text_yellow: text_yellow,
+                btn: btn
+            };
+            refeshMagicalEquips(hero, elements);
+            customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
+                validateResourceNotEnough({unit: 'relic', value: nextValue}, btn, text_yellow);
             })
             btn.addClickEventListener(function () {
                 var equipObject = randomEquip(hero);
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, {unit: equipObject.unit, value: -equipObject.value});
-                var price={value:nextValue,unit:equipObject.unit};
-                equipObject.equip.upgrade(hero,price);
-                pushMagicalEquips(equipObject.equip,hero);
-                refeshMagicalEquips(hero,elements);
+                var price = {value: nextValue, unit: equipObject.unit};
+                equipObject.equip.upgrade(hero, price);
+                pushMagicalEquips(equipObject.equip, hero);
+                refeshMagicalEquips(hero, elements);
             });
         }
-        function refeshMagicalEquips(hero,elements){
-            var equips=hero.getEquips();
-            var count=0;
-            for(var i in equips){
-                var e=equips[i];
-                if(e.getType()>0&& e.getLv()>0){
+
+        function refeshMagicalEquips(hero, elements) {
+            var equips = hero.getEquips();
+            var count = 0;
+            for (var i in equips) {
+                var e = equips[i];
+                if (e.getType() > 0 && e.getLv() > 0) {
                     count++;
                 }
             }
-            if(count===hero.getEquipCount()){
+            customEventHelper.sendEvent(EVENT.UPGRADE_EQUIP_NUM,count);
+            if (count === hero.getEquipCount()) {
                 elements.buy_btn_layer.setVisible(false);
                 elements.equipAll_text.setVisible(true);
-            }else{
-                nextValue=nextMagicalValue(hero);
+            } else {
+                nextValue = nextMagicalValue(hero);
                 elements.text_yellow.setString(nextValue);
-                validateResourceNotEnough({unit:'relic',value:nextValue},elements.btn,elements.text_yellow);
+                validateResourceNotEnough({unit: 'relic', value: nextValue}, elements.btn, elements.text_yellow);
             }
         }
 
@@ -913,10 +934,16 @@ var EquipListMenu = BattleMenu.extend({
             var data = event.getUserData();
             var unit = data.unit;
             var value = data.value;
-            switch (unit){
-                case 'gold':customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);break;
-                case 'gem':customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);break;
-                case 'relic':customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);break;
+            switch (unit) {
+                case 'gold':
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                    break;
+                case 'gem':
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                    break;
+                case 'relic':
+                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                    break;
             }
         });
 
@@ -946,15 +973,16 @@ var EquipListMenu = BattleMenu.extend({
             //var rand=random(0,equipsList.length-1);
             //return equipsList[random(0,equipsList.length-1)];
         }
-        function nextMagicalValue(hero){
+
+        function nextMagicalValue(hero) {
             var equips = hero.getEquips();
-            var k=1;
+            var k = 1;
             for (var i in equips) {
-                if (equips[i].getLv() > 0&&equips[i].getLv()>0) {
+                if (equips[i].getLv() > 0 && equips[i].getLv() > 0) {
                     k++;
                 }
             }
-            return  basic + (k - 1) * difValue;
+            return basic + (k - 1) * difValue;
         }
 
         function buildHeroView(hero, isFirst) {
@@ -977,6 +1005,9 @@ var EquipListMenu = BattleMenu.extend({
                     }
                 }
                 equipNum_text.setString(count);
+                customEventHelper.bindListener(EVENT.UPGRADE_EQUIP_NUM,function(event){
+                    equipNum_text.setString(event.getUserData());
+                })
                 equipNum_text.ignoreContentAdaptWithSize(true)
             } else {
                 player_equip.setVisible(false);
@@ -990,6 +1021,7 @@ var EquipListMenu = BattleMenu.extend({
                     itemList.addChild(item);
                 }
             }
+            setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             name.setString(hero.getName());
@@ -1144,19 +1176,20 @@ var EquipListMenu = BattleMenu.extend({
                     }
                 }
             }
-            function pushMagicalEquips(equipData,heroData){
+
+            function pushMagicalEquips(equipData, heroData) {
                 var _equipView = buildEquipView(equipData, heroData);
-                var equips=heroData.getEquips();
-                var index=1;
-                for(var i =0;i<equips.length;i++){
-                    if(equips[i].getLv()>0&&equips[i].getType()>0){
-                        if(equipData.getId()===equips[i].getId()){
+                var equips = heroData.getEquips();
+                var index = 1;
+                for (var i = 0; i < equips.length; i++) {
+                    if (equips[i].getLv() > 0 && equips[i].getType() > 0) {
+                        if (equipData.getId() === equips[i].getId()) {
                             break;
                         }
                         index++;
                     }
                 }
-                that.heroList.insertCustomItem(_equipView,index);
+                that.heroList.insertCustomItem(_equipView, index);
             }
         }
     }
