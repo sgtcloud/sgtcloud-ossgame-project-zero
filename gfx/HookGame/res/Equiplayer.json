@@ -269,7 +269,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 16,
-                    "LabelText": "装备说明",
+                    "LabelText": "*主角神器可提升全队属性\n*英雄装备科提升所属英雄属性\n*神器和装备均可升级\n\n",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -286,7 +286,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 129.9151,
-                      "Y": 14.7316
+                      "Y": 12.7913
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -296,7 +296,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2082,
-                      "Y": 0.1339
+                      "Y": 0.1163
                     },
                     "PreSize": {
                       "X": 0.4808,
@@ -304,8 +304,8 @@
                     },
                     "LeftMargin": 129.9151,
                     "RightMargin": 194.0849,
-                    "TopMargin": 35.2684,
-                    "BottomMargin": 14.7316,
+                    "TopMargin": 37.2087,
+                    "BottomMargin": 12.7913,
                     "Tag": 204,
                     "ActionTag": 816818333,
                     "Size": {
@@ -401,9 +401,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "equipUI/equipAll.png",
-                      "Plist": ""
+                      "Plist": "EquipUI.plist"
                     },
                     "Scale9Width": 90,
                     "Scale9Height": 55,
@@ -472,7 +472,6 @@
         "Btn_Buy.json",
         "EquipUI.plist",
         "EquipUI.png",
-        "equipUI/equipAll.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],
