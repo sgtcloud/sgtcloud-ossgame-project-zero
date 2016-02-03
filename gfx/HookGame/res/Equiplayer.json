@@ -398,6 +398,49 @@
                     },
                     "Name": "buy_btn",
                     "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "equipUI/equipAll.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 90,
+                    "Scale9Height": 55,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 542.2869,
+                      "Y": 57.0604
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.869,
+                      "Y": 0.5187
+                    },
+                    "PreSize": {
+                      "X": 0.1442,
+                      "Y": 0.5
+                    },
+                    "LeftMargin": 497.2869,
+                    "RightMargin": 36.7131,
+                    "TopMargin": 25.4396,
+                    "BottomMargin": 29.5604,
+                    "Tag": 146,
+                    "ActionTag": 2126845323,
+                    "Size": {
+                      "X": 90.0,
+                      "Y": 55.0
+                    },
+                    "Name": "equipAll_text",
+                    "ctype": "ImageViewObjectData"
                   }
                 ],
                 "ActionTag": 656574158,
@@ -429,6 +472,7 @@
         "Btn_Buy.json",
         "EquipUI.plist",
         "EquipUI.png",
+        "equipUI/equipAll.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

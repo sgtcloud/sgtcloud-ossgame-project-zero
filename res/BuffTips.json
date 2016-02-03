@@ -52,9 +52,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/tips.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 180,
                 "Scale9Height": 30,
@@ -88,9 +88,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/tips_skill_buff.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 311,
                 "Scale9Height": 42,
@@ -147,8 +147,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/tips.png",
+        "mainUI/tips_skill_buff.png"
       ],
       "ctype": "GameFileData"
     }
