@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_04.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 12,
@@ -137,9 +137,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_15.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 20,
@@ -179,9 +179,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_15.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 20,
@@ -228,19 +228,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9OriginX": 9,
                     "Scale9OriginY": 9,
@@ -294,9 +294,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/diamond.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9OriginX": 13,
                     "Scale9OriginY": 13,
@@ -336,9 +336,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/relic.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9OriginX": 13,
                     "Scale9OriginY": 13,
@@ -482,9 +482,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_15.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 20,
@@ -531,19 +531,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/slice131_@.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9OriginX": 9,
                     "Scale9OriginY": 9,
@@ -597,9 +597,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/gold.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9OriginX": 13,
                     "Scale9OriginY": 13,
@@ -738,9 +738,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_15.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 20,
@@ -979,9 +979,9 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/battle_icon.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Width": 52,
                 "Scale9Height": 50,
@@ -1039,8 +1039,13 @@
       },
       "UsedResources": [
         "EnemyList.json",
-        "MainUI.plist",
-        "MainUI.png",
+        "mainUI/battle_icon.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_15.png",
+        "mainUI/diamond.png",
+        "mainUI/gold.png",
+        "mainUI/relic.png",
+        "mainUI/slice131_@.png",
         "ui/btn_1.png",
         "ui/btn_2.png"
       ],

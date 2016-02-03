@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "mainUI/bg_01.png",
-                  "Plist": "MainUI.plist"
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -135,9 +135,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_04.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -266,9 +266,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/hero_icon.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Width": 90,
                     "Scale9Height": 90,
@@ -306,9 +306,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_03.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 9,
@@ -493,9 +493,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_04.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 13,
@@ -644,19 +644,19 @@
                       "B": 70
                     },
                     "DisabledFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "mainUI/bg_14.png",
-                      "Plist": "MainUI.plist"
+                      "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
@@ -778,8 +778,11 @@
         "font/font22_white_kmbb-export.fnt",
         "font/font22_white_kmbb-export.png",
         "HeroDescView.json",
-        "MainUI.plist",
-        "MainUI.png"
+        "mainUI/bg_01.png",
+        "mainUI/bg_03.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_14.png",
+        "mainUI/hero_icon.png"
       ],
       "ctype": "GameFileData"
     }
