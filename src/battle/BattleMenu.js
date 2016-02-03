@@ -455,7 +455,21 @@ var HeroListMenu = BattleMenu.extend({
             elements.maxLevel_btn.upMax_text = maxLevel.getChildByName('upMax_text');
             elements.maxLevel_btn.layer.setVisible(false);
         }
-
+        function refeshUpgradeLayer(hero,elements){
+            if (!hero.isMaxLevel()) {
+                var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+                validateResourceNotEnough(nextlevelData['upgrade'],elements.upgrade_btn.btn,elements.upgrade_btn.text_yellow);
+                /*if (validateAmountNotEnough(nextlevelData['upgrade'])) {
+                    elements.upgrade_btn.btn.setEnabled(false);
+                    elements.upgrade_btn.btn.setBright(false);
+                    elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
+                } else {
+                    elements.upgrade_btn.btn.setEnabled(true);
+                    elements.upgrade_btn.btn.setBright(true);
+                    elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
+                }*/
+            }
+        }
         function buildHeroView(hero) {
             var root = heroTemp.clone();
             var elements = {};
@@ -484,7 +498,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.icon = icon;
             elements.lv = lv;
             elements.dps_text = dps_text;
-            elements.dps_text.setColor(cc.color(2, 177, 234));
+            //elements.dps_text.setColor(cc.color(2, 177, 234));
             elements.dps = dps;
             elements.heroName_text = heroName_text;
             elements.die_text = die_text;
@@ -513,7 +527,6 @@ var HeroListMenu = BattleMenu.extend({
                     PlayerData.updateResource([resurge['cost']]);
                     PlayerData.updatePlayer();
                     customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    // console.log('请注意，英雄' + hero.getId() + '请求买活....');
                     customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                 }
             });
@@ -542,18 +555,19 @@ var HeroListMenu = BattleMenu.extend({
                 }
             })
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
-                if (!hero.isMaxLevel()) {
-                    var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-                    if (validateAmountNotEnough(nextlevelData['upgrade'])) {
-                        elements.upgrade_btn.btn.setEnabled(false);
-                        elements.upgrade_btn.btn.setBright(false);
-                        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
-                    } else {
-                        elements.upgrade_btn.btn.setEnabled(true);
-                        elements.upgrade_btn.btn.setBright(true);
-                        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
-                    }
-                }
+                //if (!hero.isMaxLevel()) {
+                //    var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+                //    if (validateAmountNotEnough(nextlevelData['upgrade'])) {
+                //        elements.upgrade_btn.btn.setEnabled(false);
+                //        elements.upgrade_btn.btn.setBright(false);
+                //        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
+                //    } else {
+                //        elements.upgrade_btn.btn.setEnabled(true);
+                //        elements.upgrade_btn.btn.setBright(true);
+                //        elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
+                //    }
+                //}
+                refeshUpgradeLayer(hero,elements);
             });
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
                 var dieHero = event.getUserData();
@@ -580,7 +594,6 @@ var HeroListMenu = BattleMenu.extend({
                 if (!hero.getCurrentLife() > 0) {
                     var resurge = hero.getResurge();
                     var costValue = parseInt(resurge['cost']['value']);
-                    //  console.log('钻石不足')
                     if (PlayerData.getAmountByUnit("gem") < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
@@ -635,6 +648,10 @@ var HeroListMenu = BattleMenu.extend({
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
                 }
             });
+            if(typeof cb==='function'){
+                cb();
+            }
+            refeshUpgradeLayer(hero,elements);
             return root;
         }
 
@@ -774,6 +791,7 @@ var HeroListMenu = BattleMenu.extend({
                 }
             });
             initSkillView(hero, skill, elements);
+            //refeshUpgradeLayer(skill,elements);
             return root;
         }
 
@@ -789,9 +807,8 @@ var HeroListMenu = BattleMenu.extend({
                         customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                             var hero = event.getUserData();
                             if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                                buildHeroMenu(_hero)
-                                customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
-                                customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
+                                buildHeroMenu(_hero);
+
                             }
                         });
                     })(heroData)
@@ -800,8 +817,8 @@ var HeroListMenu = BattleMenu.extend({
                 }
             }
 
-            function buildHeroMenu(heroData) {
-                var _heroView = buildHeroView(heroData);
+            function buildHeroMenu(heroData,cb) {
+                var _heroView = buildHeroView(heroData,cb);
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
@@ -854,14 +871,13 @@ var EquipListMenu = BattleMenu.extend({
             var relic_icon = buy_btn_layer.getChildByName('relic_icon');
             var diamond_icon = buy_btn_layer.getChildByName('diamond_icon');
             var decs_text = title_root.getChildByName('decs_text');
+            var equipAll_text = title_root.getChildByName('equipAll_text');
             text_yellow.ignoreContentAdaptWithSize(true);
             diamond_icon.setVisible(false);
+            equipAll_text.setVisible(false);
             relic_icon.setVisible(true);
-            //var elements = {diamond_icon: diamond_icon, title: title, text_yellow: text_yellow,desc:decs_text};
-            nextValue=nextMagicalValue(hero);
-            //setFont(decs_text);
-            text_yellow.setString(nextValue);
-            validateResourceNotEnough({unit:'relic',value:nextValue},btn,text_yellow);
+            var elements = {buy_btn_layer: buy_btn_layer, equipAll_text: equipAll_text, text_yellow: text_yellow,btn:btn};
+            refeshMagicalEquips(hero,elements);
             customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE,function(){
                 validateResourceNotEnough({unit:'relic',value:nextValue},btn,text_yellow);
             })
@@ -871,13 +887,26 @@ var EquipListMenu = BattleMenu.extend({
                 var price={value:nextValue,unit:equipObject.unit};
                 equipObject.equip.upgrade(hero,price);
                 pushMagicalEquips(equipObject.equip,hero);
-
-
-                nextValue=nextMagicalValue(hero);
-                text_yellow.setString(nextValue);
-                validateResourceNotEnough({unit:'relic',value:nextValue},btn,text_yellow);
-                //equipObject = refeshMagicalEquips(elements, hero);
+                refeshMagicalEquips(hero,elements);
             });
+        }
+        function refeshMagicalEquips(hero,elements){
+            var equips=hero.getEquips();
+            var count=0;
+            for(var i in equips){
+                var e=equips[i];
+                if(e.getType()>0&& e.getLv()>0){
+                    count++;
+                }
+            }
+            if(count===hero.getEquipCount()){
+                elements.buy_btn_layer.setVisible(false);
+                elements.equipAll_text.setVisible(true);
+            }else{
+                nextValue=nextMagicalValue(hero);
+                elements.text_yellow.setString(nextValue);
+                validateResourceNotEnough({unit:'relic',value:nextValue},elements.btn,elements.text_yellow);
+            }
         }
 
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
@@ -889,17 +918,7 @@ var EquipListMenu = BattleMenu.extend({
                 case 'gem':customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);break;
                 case 'relic':customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);break;
             }
-            //PlayerData.updateSingleResource({unit:unit,value:value});
         });
-        function refeshMagicalEquips(elements, hero) {
-            var equipObject = randomEquip(hero);
-            var equip = equipObject.equip;
-            //elements.title.loadTexture('res/icon/equips/' + equip.getIcon());
-            //elements.text_yellow.setString(equipObject.value);
-            //elements.diamond_icon.loadTexture('res/icon/resources_small/' + equipObject.unit + '.png');
-            //elements.desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()))
-            return equipObject;
-        }
 
         function randomEquip(hero) {
             var equips = hero.getEquips();
@@ -1064,7 +1083,6 @@ var EquipListMenu = BattleMenu.extend({
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
                     lockItemIfNecessary(hero, equip, elements);
-                    console.log('equip[' + equip.getId() + '] has been clicked,current level is ' + equip.getLv());
                 });
                 lockItemIfNecessary(hero, equip, elements);
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
@@ -1113,16 +1131,12 @@ var EquipListMenu = BattleMenu.extend({
 
             function buildEquipMenuIfUnlocked(heroData, isFirst) {
                 var _heroView = buildHeroView(heroData, isFirst);
-                console.log('build equip')
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
                 for (var j = 0; j < heroData.getEquipCount(); j++) {
                     var equipData = heroData.getEquipData(j);
-                    console.log(equipData.getId()+"  lv:"+ equipData.getLv()+" type:"+equipData.getType() );
-
                     if (equipData.getLv() > 0 || equipData.getType() === 0) {
-                        console.log(equipData.getId());
                         var _equipView = buildEquipView(equipData, heroData);
                         that.heroList.pushBackCustomItem(_equipView);
                         //_heroView.equips = _heroView.equips || [];
