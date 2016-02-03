@@ -55,14 +55,14 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="MarkedSubImage" Path="equipUI/relic.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="23.9442" RightMargin="13.0558" TopMargin="49.5166" BottomMargin="13.4834" LabelText="+99999" ctype="TextBMFontObjectData">
-                <Size X="103.0000" Y="17.0000" />
+              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="68.4442" RightMargin="57.5558" TopMargin="49.5166" BottomMargin="13.4834" LabelText="-" ctype="TextBMFontObjectData">
+                <Size X="14.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="75.4442" Y="21.9834" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5389" Y="0.2748" />
-                <PreSize X="0.7357" Y="0.2125" />
+                <PreSize X="0.1000" Y="0.2125" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>

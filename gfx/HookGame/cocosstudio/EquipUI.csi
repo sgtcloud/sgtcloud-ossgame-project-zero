@@ -16,7 +16,8 @@
       <FilePathData Path="equipUI/relic.png" />
       <FilePathData Path="equipUI/title.png" />
       <FilePathData Path="equipUI/title_2.png" />
+      <FilePathData Path="equipUI/equipAll.png" />
     </ImageFiles>
-    <MaxSize Width="482" Height="300" />
+    <MaxSize Width="512" Height="512" />
   </Content>
 </PlistInfoProjectFile>
