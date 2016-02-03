@@ -20,16 +20,17 @@ function getLevelData(data, key, lv) {
     }
     var max = data.levelDatas[0];
     var maxLevel = max['level'];
-    if (maxLevel <= lv) {
-        return $$.extend(max[key]);
-    }
-    //var len = data.levelDatas.length;
     var result;
-    var index = /*maxLevel === len ? maxLevel - lv - 1 :*/ maxLevel - lv;
-    if (!data.levelDatas[index]) {
-        result = data.levelDatas[maxLevel][key];
+    if (maxLevel <= lv) {
+        result = max[key];
     } else {
-        result = data.levelDatas[index][key];
+        //var len = data.levelDatas.length;
+        var index = /*maxLevel === len ? maxLevel - lv - 1 :*/ maxLevel - lv;
+        if (!data.levelDatas[index]) {
+            result = data.levelDatas[maxLevel][key];
+        } else {
+            result = data.levelDatas[index][key];
+        }
     }
     if (cc.isObject(result)) {
         return $$.extend(result)

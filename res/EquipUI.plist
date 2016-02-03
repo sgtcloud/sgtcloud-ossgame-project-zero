@@ -7,7 +7,7 @@
 			<key>equipUI/bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{404,180},{78,78}}</string>
+				<string>{{249,180},{78,78}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>equipUI/btn1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{234,100},{140,80}}</string>
+				<string>{{429,0},{140,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>equipUI/btn2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{314,100},{140,80}}</string>
+				<string>{{249,100},{140,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>equipUI/buyHoly.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{84,249},{88,22}}</string>
+				<string>{{401,230},{88,22}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>equipUI/diamond.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{172,249},{40,40}}</string>
+				<string>{{401,252},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,18 +62,18 @@
 			<key>equipUI/equip_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{414,40},{31,32}}</string>
+				<string>{{481,252},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{31,32}</string>
 			</dict>
 			<key>equipUI/equip_icon.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{314,180},{90,90}}</string>
+				<string>{{414,140},{90,90}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,40 +84,40 @@
 			<key>equipUI/equip_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,249},{84,25}}</string>
+				<string>{{389,100},{84,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{84,25}</string>
 			</dict>
 			<key>equipUI/equip_text2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,274},{84,25}}</string>
+				<string>{{376,184},{84,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{84,25}</string>
 			</dict>
 			<key>equipUI/equiptitle_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{446,40},{31,32}}</string>
+				<string>{{481,284},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{31,32}</string>
 			</dict>
 			<key>equipUI/gold.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{212,249},{40,40}}</string>
+				<string>{{441,252},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -128,7 +128,7 @@
 			<key>equipUI/relic.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{414,0},{40,40}}</string>
+				<string>{{0,234},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -139,7 +139,7 @@
 			<key>equipUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{234,0},{180,100}}</string>
+				<string>{{249,0},{180,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -154,9 +154,20 @@
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{249,234}</string>
+			</dict>
+			<key>equipUI/equipAll.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{327,180},{86,49}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,55}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -168,14 +179,14 @@
 			<key>realTextureFileName</key>
 			<string>EquipUI.png</string>
 			<key>size</key>
-			<string>{482,299}</string>
+			<string>{512,316}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>482</integer>
+			<integer>512</integer>
 			<key>height</key>
-			<integer>299</integer>
+			<integer>316</integer>
 		</dict>
 	</dict>
 </plist>
