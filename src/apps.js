@@ -88,12 +88,12 @@ function initGame() {
     game = new MainScene();
     PlayerData.init();
 }
-function validateAmountEnough(upgradeLevelData) {
+function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
     return amount < upgradeLevelData['value'];
 }
-function validateEnoughResource(nextlevelData, upgrade_btn, text) {
-    if (validateAmountEnough(nextlevelData)) {
+function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
+    if (validateAmountNotEnough(nextlevelData)) {
         upgrade_btn.setEnabled(false);
         upgrade_btn.setBright(false);
         text.setColor(cc.color(255, 0, 0));
