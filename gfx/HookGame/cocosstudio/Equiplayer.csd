@@ -86,6 +86,16 @@
                     <PreSize X="0.2244" Y="0.7273" />
                     <FileData Type="Normal" Path="Btn_Buy.csd" Plist="" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="equipAll_text" ActionTag="2126845323" Tag="146" IconVisible="False" LeftMargin="497.2869" RightMargin="36.7131" TopMargin="25.4396" BottomMargin="29.5604" Scale9Width="90" Scale9Height="55" ctype="ImageViewObjectData">
+                    <Size X="90.0000" Y="55.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="542.2869" Y="57.0604" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8690" Y="0.5187" />
+                    <PreSize X="0.1442" Y="0.5000" />
+                    <FileData Type="Normal" Path="equipUI/equipAll.png" Plist="" />
+                  </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
                 <Position X="7.7095" Y="384.2550" />

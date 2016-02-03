@@ -92,6 +92,7 @@
             <PlistImageFile Name="equipUI_title.png" Key="equipUI/title.png" />
             <PlistImageFile Name="equipUI_title_2.png" Key="equipUI/title_2.png" />
           </PlistImageFolder>
+          <Image Name="equipAll.png" />
         </Folder>
         <Folder Name="Genius">
           <Image Name="enemy1001_atk01.png" />

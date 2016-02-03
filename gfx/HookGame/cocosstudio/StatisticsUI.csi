@@ -1,6 +1,6 @@
 <PlistInfoProjectFile>
   <PropertyGroup Name="StatisticsUI" Type="Plist" ID="bfb1e797-3a0f-433b-8127-a9ec9f43476d" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="statisticsUI/cumulative_text.png" />
       <FilePathData Path="statisticsUI/current_text.png" />
@@ -34,6 +34,6 @@
       <FilePathData Path="statisticsUI/text27.png" />
       <FilePathData Path="statisticsUI/title_text.png" />
     </ImageFiles>
-    <MaxSize Width="330" Height="320" />
+    <MaxSize Width="500" Height="500" />
   </Content>
 </PlistInfoProjectFile>

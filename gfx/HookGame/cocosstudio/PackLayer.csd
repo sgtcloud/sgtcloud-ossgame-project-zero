@@ -237,13 +237,13 @@
                     <PreSize X="1.0000" Y="1.0000" />
                     <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3859" RightMargin="454.6141" TopMargin="54.6361" BottomMargin="75.3639" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="golden_chest_btn" ActionTag="404816974" Tag="530" IconVisible="False" LeftMargin="85.3859" RightMargin="454.6141" TopMargin="65.6361" BottomMargin="64.3639" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
                     <AnchorPoint ScaleX="0.5526" ScaleY="0.5465" />
-                    <Position X="124.0679" Y="113.6189" />
+                    <Position X="124.0679" Y="102.6189" />
                     <Scale ScaleX="1.5000" ScaleY="1.5000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2034" Y="0.5681" />
+                    <PrePosition X="0.2034" Y="0.5131" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="MarkedSubImage" Path="materialUI/golden_chest_1.png" Plist="MaterialUI.plist" />
@@ -252,13 +252,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="silver_chest_btn" ActionTag="-1638292713" Tag="531" IconVisible="False" LeftMargin="266.3458" RightMargin="273.6542" TopMargin="56.2681" BottomMargin="73.7319" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="silver_chest_btn" ActionTag="-1638292713" Tag="531" IconVisible="False" LeftMargin="266.3458" RightMargin="273.6542" TopMargin="67.2681" BottomMargin="62.7319" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="301.3458" Y="108.7319" />
+                    <Position X="301.3458" Y="97.7319" />
                     <Scale ScaleX="1.5000" ScaleY="1.5000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4940" Y="0.5437" />
+                    <PrePosition X="0.4940" Y="0.4887" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="MarkedSubImage" Path="materialUI/silver_chest_1.png" Plist="MaterialUI.plist" />
@@ -267,13 +267,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="iron_chest_btn" ActionTag="1100654773" Tag="532" IconVisible="False" LeftMargin="449.1522" RightMargin="90.8478" TopMargin="56.2681" BottomMargin="73.7319" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="iron_chest_btn" ActionTag="1100654773" Tag="532" IconVisible="False" LeftMargin="449.1522" RightMargin="90.8478" TopMargin="67.2681" BottomMargin="62.7319" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="40" Scale9Height="48" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="70.0000" Y="70.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="484.1522" Y="108.7319" />
+                    <Position X="484.1522" Y="97.7319" />
                     <Scale ScaleX="1.5000" ScaleY="1.5000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7937" Y="0.5437" />
+                    <PrePosition X="0.7937" Y="0.4887" />
                     <PreSize X="0.1148" Y="0.3500" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="MarkedSubImage" Path="materialUI/iron_chest_1.png" Plist="MaterialUI.plist" />
@@ -352,33 +352,33 @@
                     <PreSize X="0.0574" Y="0.0950" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="1788448717" Tag="527" IconVisible="False" LeftMargin="152.1958" RightMargin="429.8042" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="golden_chest_num_text" ActionTag="1788448717" Tag="527" IconVisible="False" LeftMargin="155.1958" RightMargin="426.8042" TopMargin="129.8539" BottomMargin="55.1461" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="28.0000" Y="15.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="152.1958" Y="73.6461" />
+                    <Position X="155.1958" Y="62.6461" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2495" Y="0.3682" />
+                    <PrePosition X="0.2544" Y="0.3132" />
                     <PreSize X="0.0459" Y="0.0750" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="silver_chest_num_text" ActionTag="-215133678" Tag="528" IconVisible="False" LeftMargin="335.0425" RightMargin="246.9575" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="silver_chest_num_text" ActionTag="-215133678" Tag="528" IconVisible="False" LeftMargin="338.0425" RightMargin="243.9575" TopMargin="129.8539" BottomMargin="55.1461" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="28.0000" Y="15.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="335.0425" Y="73.6461" />
+                    <Position X="338.0425" Y="62.6461" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5493" Y="0.3682" />
+                    <PrePosition X="0.5542" Y="0.3132" />
                     <PreSize X="0.0459" Y="0.0750" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="iron_chest_num_text" ActionTag="-688262608" Tag="529" IconVisible="False" LeftMargin="519.2303" RightMargin="62.7697" TopMargin="118.8539" BottomMargin="66.1461" LabelText="99" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="iron_chest_num_text" ActionTag="-688262608" Tag="529" IconVisible="False" LeftMargin="522.2303" RightMargin="59.7697" TopMargin="129.8539" BottomMargin="55.1461" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="28.0000" Y="15.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="519.2303" Y="73.6461" />
+                    <Position X="522.2303" Y="62.6461" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8512" Y="0.3682" />
+                    <PrePosition X="0.8561" Y="0.3132" />
                     <PreSize X="0.0459" Y="0.0750" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>

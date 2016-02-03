@@ -7,9 +7,9 @@
 			<key>statisticsUI/cumulative_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{179,0},{124,33}}</string>
+				<string>{{275,0},{142,47}}</string>
 				<key>offset</key>
-				<string>{1,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -18,9 +18,9 @@
 			<key>statisticsUI/current_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,264},{125,33}}</string>
+				<string>{{275,47},{142,47}}</string>
 				<key>offset</key>
-				<string>{0,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -29,40 +29,40 @@
 			<key>statisticsUI/f22_y.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{163,0},{18,14}}</string>
+				<string>{{477,0},{21,18}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{21,18}</string>
 			</dict>
 			<key>statisticsUI/text01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{163,18},{14,16}}</string>
+				<string>{{417,0},{30,20}}</string>
 				<key>offset</key>
-				<string>{1,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{30,20}</string>
 			</dict>
 			<key>statisticsUI/text02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{163,32},{17,13}}</string>
+				<string>{{447,0},{30,20}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{30,20}</string>
 			</dict>
 			<key>statisticsUI/text03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{109,0},{16,13}}</string>
+				<string>{{417,20},{30,20}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -73,75 +73,75 @@
 			<key>statisticsUI/text04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{144,0},{145,19}}</string>
+				<string>{{0,59},{200,23}}</string>
 				<key>offset</key>
-				<string>{-22,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{52,0},{145,19}}</string>
+				<string>{{0,82},{200,23}}</string>
 				<key>offset</key>
-				<string>{-22,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{52,145},{109,19}}</string>
+				<string>{{200,94},{200,23}}</string>
 				<key>offset</key>
-				<string>{-40,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{71,145},{109,19}}</string>
+				<string>{{0,105},{200,23}}</string>
 				<key>offset</key>
-				<string>{-40,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text08.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{90,145},{109,19}}</string>
+				<string>{{200,117},{200,23}}</string>
 				<key>offset</key>
-				<string>{-40,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text09.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{214,33},{109,19}}</string>
+				<string>{{0,128},{200,23}}</string>
 				<key>offset</key>
-				<string>{-40,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text10.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{179,180},{54,19}}</string>
+				<string>{{200,140},{200,23}}</string>
 				<key>offset</key>
-				<string>{-66,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -150,20 +150,20 @@
 			<key>statisticsUI/text11.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{233,180},{54,19}}</string>
+				<string>{{0,151},{200,23}}</string>
 				<key>offset</key>
-				<string>{-66,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text12.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{109,234},{54,19}}</string>
+				<string>{{200,163},{200,23}}</string>
 				<key>offset</key>
-				<string>{-66,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -172,31 +172,31 @@
 			<key>statisticsUI/text13.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{71,0},{145,19}}</string>
+				<string>{{0,174},{200,23}}</string>
 				<key>offset</key>
-				<string>{-22,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{90,0},{145,19}}</string>
+				<string>{{200,186},{200,23}}</string>
 				<key>offset</key>
-				<string>{-22,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text15.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{109,161},{145,19}}</string>
+				<string>{{0,197},{200,23}}</string>
 				<key>offset</key>
-				<string>{-22,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -205,75 +205,75 @@
 			<key>statisticsUI/text16.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{303,0},{162,19}}</string>
+				<string>{{200,209},{200,23}}</string>
 				<key>offset</key>
-				<string>{-15,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text17.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{254,162},{144,19}}</string>
+				<string>{{0,220},{200,23}}</string>
 				<key>offset</key>
-				<string>{-24,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text18.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{273,33},{144,19}}</string>
+				<string>{{200,232},{200,23}}</string>
 				<key>offset</key>
-				<string>{-24,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text19.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{292,162},{144,19}}</string>
+				<string>{{0,243},{200,23}}</string>
 				<key>offset</key>
-				<string>{-24,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text20.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{233,33},{108,19}}</string>
+				<string>{{200,255},{200,23}}</string>
 				<key>offset</key>
-				<string>{-42,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text21.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{254,33},{126,19}}</string>
+				<string>{{0,266},{200,23}}</string>
 				<key>offset</key>
-				<string>{-33,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text22.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,297},{179,19}}</string>
+				<string>{{200,278},{200,23}}</string>
 				<key>offset</key>
-				<string>{-7,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -282,66 +282,66 @@
 			<key>statisticsUI/text23.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{125,0},{161,19}}</string>
+				<string>{{0,289},{200,23}}</string>
 				<key>offset</key>
-				<string>{-16,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text24.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{273,177},{143,19}}</string>
+				<string>{{200,301},{200,23}}</string>
 				<key>offset</key>
-				<string>{-25,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text25.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{195,33},{125,19}}</string>
+				<string>{{0,312},{200,23}}</string>
 				<key>offset</key>
-				<string>{-34,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text26.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{311,162},{126,19}}</string>
+				<string>{{200,324},{200,23}}</string>
 				<key>offset</key>
-				<string>{-33,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/text27.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{176,33},{126,19}}</string>
+				<string>{{0,335},{200,23}}</string>
 				<key>offset</key>
-				<string>{-33,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{200,23}</string>
 			</dict>
 			<key>statisticsUI/title_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{264,52}}</string>
+				<string>{{0,0},{275,59}}</string>
 				<key>offset</key>
-				<string>{1,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{275,59}</string>
 			</dict>
@@ -355,14 +355,14 @@
 			<key>realTextureFileName</key>
 			<string>StatisticsUI.png</string>
 			<key>size</key>
-			<string>{330,320}</string>
+			<string>{498,358}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>330</integer>
+			<integer>498</integer>
 			<key>height</key>
-			<integer>320</integer>
+			<integer>358</integer>
 		</dict>
 	</dict>
 </plist>
