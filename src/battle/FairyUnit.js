@@ -29,7 +29,7 @@ var FairyUnit = cc.Node.extend({
                 this.onDead(this.getPosition());
             }
             return false;
-        }.bind(this), fairy);
+        }.bind(this), this);
         /*fairy.bindClickFairyEvent = function () {
          var listener = cc.EventListener.create({
          event: cc.EventListener.TOUCH_ONE_BY_ONE,
@@ -57,8 +57,8 @@ var FairyUnit = cc.Node.extend({
          fairy.bindClickFairyEvent();*/
         this.addChild(this.node);
     },
-    playAnimation: function (name, falg) {
-        this.animation.play(name, falg);
+    playAnimation: function (name, flag) {
+        this.animation.play(name, flag);
     },
     initFly: function (type) {
 
@@ -73,16 +73,16 @@ var FairyUnit = cc.Node.extend({
             this.node.setScale(1, 1);
         }, this);
         var removeNode = cc.callFunc(function () {
-            this.parent.reset();
+            customEventHelper.sendEvent(EVENT.RESET_FAIRY_COUNTDOWN);
             this.removeFromParent(true);
         }, this);
         if (type == 1) {
-            this.setPosition(cc.p(600, 600));
-            var dropMove = cc.jumpTo(0.2, cc.p(600, 280), 0, 1);
+            this.setPosition(cc.p(640, 300));
+            var dropMove = cc.jumpTo(0.2, cc.p(640, 160), 0, 1);
             this.sequence = cc.sequence(reversal, dropMove, move1, normal, move2, reversal, move1, removeNode);
         } else {
-            this.setPosition(cc.p(0, 600));
-            var dropMove = cc.jumpTo(0.2, cc.p(0, 280), 0, 1);
+            this.setPosition(cc.p(0, 300));
+            var dropMove = cc.jumpTo(0.2, cc.p(0, 160), 0, 1);
             this.sequence = cc.sequence(normal, dropMove, move2, reversal, move1, normal, move2, removeNode);
         }
         this.runAction(this.sequence);

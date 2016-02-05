@@ -93,7 +93,7 @@ var BattleField = cc.Class.extend({
         this.heroSprites = new SpriteGroup();
         this.enemySprites = new SpriteGroup();
         this.background = new cc.Sprite();
-        this.background.setAnchorPoint(cc.p(0.5, 0.5));
+        this.background.setAnchorPoint(cc.p(0, 0));
 
         // add the background layer
         this.container.addChild(this.background);
@@ -144,23 +144,24 @@ var BattleField = cc.Class.extend({
         this.heroPos = [];
 
         for (var i = 0; i < 7; i++) {
-            this.heroPos[i] = spritesLayer.getChildByName('hero' + (i + 1));
+            this.heroPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('hero' + (i + 1)).getPosition());
         }
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
         for (var i = 0; i < 7; i++) {
-            this.enemyPos[i] = spritesLayer.getChildByName('enemy' + (i + 1));
+            this.enemyPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('enemy' + (i + 1)).getPosition());
         }
     },
 
     loadStageBackground: function (stage) {
         var bg_image_url = stage.getBg();
-        cc.textureCache.addImageAsync("res/stages/" + bg_image_url, function (textureBg) {
-            if (textureBg) {
-                this.background.setTexture(textureBg);
-            }
-        }.bind(this), this.container);
+        this.background.setTexture("res/stages/" + bg_image_url);
+        //cc.textureCache.addImageAsync("res/stages/" + bg_image_url, function (textureBg) {
+        //    if (textureBg) {
+        //        this.background.setTexture(textureBg);
+        //    }
+        //}.bind(this), this.container);
     },
 
     onPlayerTap: function (pos) {
@@ -202,7 +203,7 @@ var BattleField = cc.Class.extend({
         var data = PlayerData.getHeroById(id);
         var hero = new HeroUnit(this, data);
         this.heroSprites.push(hero);
-        hero.setPosition(this.container.convertToNodeSpace(this.heroPos[this.standHeroPosNum].getPosition()));
+        hero.setPosition(this.heroPos[this.standHeroPosNum]);
         this.addSprite(hero);
         this.standHeroPosNum++;
     },
@@ -223,10 +224,10 @@ var BattleField = cc.Class.extend({
                 enemy.setScale(1.5);
             }
             this.enemySprites.push(enemy);
-            var startPos = cc.p(this.x + this.width, this.y + this.height * 3 / 4);
+            var startPos = cc.p(this.container.x + this.container.width, this.container.y + this.container.height * 3 / 4);
             enemy.setPosition(startPos);
             this.addSprite(enemy, enemiesData.length - i);
-            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i].getPosition(), 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2)));
+            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i], 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2)));
         }
     },
 
@@ -316,13 +317,14 @@ var BattleField = cc.Class.extend({
     },
 
     showFairy: function () {
-        this.FairyUnit = new FairyUnit();
-        this.addSprite(this.FairyUnit, 2010);
+        var fairy = new FairyUnit();
+        this.addSprite(fairy, 2010);
     },
+
     showChest: function (position) {
-        this.ChestUnit = new ChestUnit();
-        this.ChestUnit.setPosition(position);
-        this.addSprite(this.ChestUnit, 2011);
+        var chest = new ChestUnit();
+        chest.setPosition(position);
+        this.addSprite(chest, 2011);
     },
     //todo refactor to event
     onHeroDead: function (hero) {

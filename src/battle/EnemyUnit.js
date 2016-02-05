@@ -30,8 +30,8 @@ var EnemyUnit = BattleUnit.extend({
             battle.onEnemyVanish(this);
         };
         this.generateLoot = function () {
-            var pos = cc.p(this.getPositionX() + this.getParent().getPositionX(), this.getPositionY() + this.getParent().getPositionY());
-            Loot.generateLoots(this.getBonus(), pos);
+            var pos = cc.p(this.getPositionX(), this.getPositionY());
+            Loot.generateLoots(this.getBonus(), this.parent.convertToWorldSpace(pos));
         };
         //获取杀死后的奖励
         this.getBonus = function () {

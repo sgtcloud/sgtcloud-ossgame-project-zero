@@ -49,87 +49,88 @@
 var quickLoginfalg = false;
 //自动登录业务
 function autoLoginService() {
-    SgtApi.UserService.quickLogin(function(result, user) {
+    SgtApi.UserService.quickLogin(function (result, user) {
         if (result) {
             if (user !== null) {
-                console.log("自动注册成功"+user);
+                console.log("自动注册成功" + user);
                 //登陆成功 获取用户存档
                 getPlayerSave();
             }
-        }else{
+        } else {
             console.log('快速注册失败。');
         }
     });
 }
-function autoWxLoginService(wxInfo){
+function autoWxLoginService(wxInfo) {
     wx.config({
         debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
         appId: wxInfo.result.wxAppId, // 必填，公众号的唯一标识
         timestamp: wxInfo.result.timestamp, // 必填，生成签名的时间戳
         nonceStr: wxInfo.result.noncestr, // 必填，生成签名的随机串
         signature: wxInfo.result.signature, // 必填，签名，见附录1
-        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone','chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
     });
     if (SgtApi.context.openid) {
-        SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP,function(result,data){
+        SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP, function (result, data) {
             if (!result) {
-                sgt.WxCentralService.getUserInfo(function(result, data) {
-                    if(result){
+                sgt.WxCentralService.getUserInfo(function (result, data) {
+                    if (result) {
                         var user = new SgtApi.User();
                         user.userName = data.openid;
                         user.nickName = data.nickname;
                         user.registryType = SgtApi.User.WECHAT_MP;//注册类型
                         SgtApi.UserService.regist(user, function (result, data) {
-                            if(result){
+                            if (result) {
                                 console.log(data);
                                 //登陆成功 获取用户存档
                                 getPlayerSave(data.userid);
-                            }else{
+                            } else {
                                 console.log(data);
                                 //注册失败
                             }
                         });
-                    }else{
+                    } else {
                         //重现授权
                         sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
                     }
                 });
-            }else{
+            } else {
                 console.log(data);
                 //登陆成功 获取用户存档
                 getPlayerSave();
             }
         });
-    }else{
+    } else {
         sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
     }
 }
-function getPlayerSave(){
-    sgt.PlayerService.getByUserId(sgt.context.user.userid,function(result,data){
-        if(result){
-            console.log("成功获取用户角色"+data);
-            if(cc.isArray(data) && data.length > 0){
+function getPlayerSave() {
+    sgt.PlayerService.getByUserId(sgt.context.user.userid, function (result, data) {
+        console.log("getByUserId" + result);
+        if (result) {
+            console.log("成功获取用户角色" + data);
+            if (cc.isArray(data) && data.length > 0) {
                 var playerData = data[0];
                 sgt.context.playerData.player = playerData;
-                sgt.PlayerService.downloadSave(playerData.id,function(result,data){
-                    if(result){
-                        if(cc.isObject(data)){
+                sgt.PlayerService.downloadSave(playerData.id, function (result, data) {
+                    if (result) {
+                        if (cc.isObject(data)) {
                             sgt.context.playerData.save = data;
                             localStorage.setItem("save", data.content);
-                        }else{
+                        } else {
                             //没有存档
 
                         }
                         quickLoginfalg = true;
                     }
                 });
-            }else{
+            } else {
                 //未创建用户
                 //createPlayer(userId);
                 console.log("未创建角色");
             }
-        }else{
-            console.log("失败获取用户角色"+data);
+        } else {
+            console.log("失败获取用户角色" + data);
         }
     })
 }
@@ -140,21 +141,21 @@ cc.game.onStart = function () {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-    if(SgtApi){
-        SgtApi.init({appId:'h5game',async:true});
+    if (SgtApi) {
+        SgtApi.init({appId: 'h5game', async: true});
         if (typeof wx != "undefined" && is_weixin()) {
-            SgtApi.WxCentralService.getSignature(function(result, data) {
-                if(result)
+            SgtApi.WxCentralService.getSignature(function (result, data) {
+                if (result)
                     autoWxLoginService(data);
-                else{
+                else {
                     console.log("获取签名失败");
                     //autoLoginService();
                 }
             });
-        }else{
+        } else {
             autoLoginService();
         }
-    }else{
+    } else {
         quickLoginfalg = true;
     }
     // Pass true to enable retina display, disabled by default to improve performance
@@ -168,8 +169,6 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        initDatas();
-        initGame();
         showCover();
     }, this);
 };

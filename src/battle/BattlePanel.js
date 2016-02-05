@@ -83,6 +83,10 @@ var BattlePanel = cc.Node.extend({
             this.enemyLifeBar.setPercent(life / max * 100);
         }.bind(this));
 
+        customEventHelper.bindListener(EVENT.RESET_FAIRY_COUNTDOWN, function () {
+            this.reset();
+        }.bind(this));
+
         DamageNumber.initPool();
 
         this.update = function (dt) {
@@ -101,7 +105,7 @@ var BattlePanel = cc.Node.extend({
                 }
             }
         },
-        this.reset();
+            this.reset();
         this.scheduleUpdate();
     },
 
@@ -130,7 +134,7 @@ var BattlePanel = cc.Node.extend({
         //bindTouchEventListener(,);
         bindButtonCallback(offlineRewardLayerBtn, function () {
             offlineRewardLayer.removeFromParent();
-            self.rewardBtn.visible = false;
+            this.rewardBtn.visible = false;
             gamePopup.removeFromParent();
             PlayerData.receiveOfflineReward();
             customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
@@ -138,7 +142,7 @@ var BattlePanel = cc.Node.extend({
             //customEventHelper.sendEvent(EVENT);
             PlayerData.updatePlayer();
             // return true;
-        });
+        }.bind(this));
         popup(gamePopup, 4000);
         //gamePopup.popup();
     },

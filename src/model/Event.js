@@ -113,7 +113,11 @@ var EVENT = {
     /**
      * 英雄神器数量
      */
-    UPGRADE_EQUIP_NUM:"UPGRADE_EQUIP_NUM"
+    UPGRADE_EQUIP_NUM:"UPGRADE_EQUIP_NUM",
+    /**
+     * 重置小精灵计数
+     */
+    RESET_FAIRY_COUNTDOWN:"RESET_FAIRY_COUNTDOWN"
 };
 
 var customEventHelper = {

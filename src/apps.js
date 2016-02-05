@@ -93,7 +93,7 @@ function validateAmountNotEnough(upgradeLevelData) {
     return amount < upgradeLevelData['value'];
 }
 function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
-    var flag=validateAmountNotEnough(nextlevelData)
+    var flag = validateAmountNotEnough(nextlevelData)
     if (flag) {
         upgrade_btn.setEnabled(false);
         upgrade_btn.setBright(false);
@@ -106,25 +106,25 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
     return flag;
 }
 
-function addPlayer(playerName,callback){
+function addPlayer(playerName, callback) {
 
     var sgtPlayer = new sgt.Player();
     sgtPlayer.name = playerName;
     sgtPlayer.userId = sgt.context.user.userid;
     sgtPlayer.level = 1;
     sgtPlayer.avatarUrl = "h102.png";
-     sgt.PlayerService.create(sgtPlayer,function(result,data){
-         if(result){
-             //初始化角色存档
-             sgt.context.playerData.player = data;
+    sgt.PlayerService.create(sgtPlayer, function (result, data) {
+        if (result) {
+            //初始化角色存档
+            sgt.context.playerData.player = data;
 
-             console.log("创建角色result:"+result+",data:"+data);
-             return callback(true);
-         }else{
-             console.log('创建角色失败！');
-             return callback(false);
-         }
-     });
+            console.log("创建角色result:" + result + ",data:" + data);
+            return callback(true);
+        } else {
+            console.log('创建角色失败！');
+            return callback(false);
+        }
+    });
 }
 //识别 MicroMessenger 这个关键字来确定是否微信内置的浏览器
 function is_weixin() {
@@ -136,7 +136,7 @@ function is_weixin() {
     }
 }
 
-function openNewNameLayer(scene){
+function openNewNameLayer(scene) {
     var createPlayer = ccs.csLoader.createNode(res.createPlayer);
     //var gamepopup = new GamePopup(createPlayer);
     var root = createPlayer.getChildByName('root');
@@ -144,43 +144,45 @@ function openNewNameLayer(scene){
     var name_text = root.getChildByName('name_text');
     var btn = root.getChildByName('btn');
     //popup(gamepopup,100);
-    bindButtonCallback(btn,function(){
+    bindButtonCallback(btn, function () {
         var playName = name_text.getString();
-        if(cc.isString(playName)){
-            addPlayer(playName,function(){
+        if (cc.isString(playName)) {
+            addPlayer(playName, function () {
                 createPlayer.removeFromParent(true);
                 //gamepopup.removeFromParent(true);
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
 
             })
-        }else{
-            new Popup1("友情提醒","角色名字格式不正确");
+        } else {
+            new Popup1("友情提醒", "角色名字格式不正确");
         }
     });
-    bindButtonCallback(dice,function(){
-        sgt.RandomNameGroupService.defaultRandomName(function(result,data){
+    bindButtonCallback(dice, function () {
+        sgt.RandomNameGroupService.defaultRandomName(function (result, data) {
             name_text.setString(data);
-            console.log("result:"+result+"data:"+data);
+            console.log("result:" + result + "data:" + data);
         });
     });
-    sgt.RandomNameGroupService.defaultRandomName(function(result,data){
+    sgt.RandomNameGroupService.defaultRandomName(function (result, data) {
         name_text.setString(data);
-        console.log("result:"+result+"data:"+data);
+        console.log("result:" + result + "data:" + data);
     });
-    createPlayer.setPosition(cc.p(140,400));
-    scene.addChild(createPlayer,100);
+    createPlayer.setPosition(cc.p(140, 400));
+    scene.addChild(createPlayer, 100);
 }
 
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
 
-    if(sgt && cc.isObject(sgt.context.user) && !quickLoginfalg){
+    if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
     }
 
     bindButtonCallback(loginBtn, function () {
+        initDatas();
+        initGame();
         showGame();
     });
 
