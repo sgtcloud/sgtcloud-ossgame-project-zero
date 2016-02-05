@@ -1,1376 +1,1537 @@
-{"e1001": {
-  "file" : "enemy_1001_json",
-  "name" : "森林守卫",
-  "icon" : "e1001.png",
-  "levelDatas" : [ {
-    "level" : 30,
-    "life" : 1762,
-    "attack" : 95,
-    "atk_period" : 22.5,
-    "bonus" : {
-      "value" : 386,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 29,
-    "life" : 1639,
-    "attack" : 90,
-    "atk_period" : 21.5,
-    "bonus" : {
-      "value" : 367,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 28,
-    "life" : 1522,
-    "attack" : 86,
-    "atk_period" : 20.5,
-    "bonus" : {
-      "value" : 349,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 27,
-    "life" : 1410,
-    "attack" : 81,
-    "atk_period" : 19.5,
-    "bonus" : {
-      "value" : 330,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 26,
-    "life" : 1304,
-    "attack" : 76,
-    "atk_period" : 18.5,
-    "bonus" : {
-      "value" : 313,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 25,
-    "life" : 1204,
-    "attack" : 72,
-    "atk_period" : 17.5,
-    "bonus" : {
-      "value" : 296,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 24,
-    "life" : 1109,
-    "attack" : 68,
-    "atk_period" : 16.5,
-    "bonus" : {
-      "value" : 279,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 23,
-    "life" : 1018,
-    "attack" : 63,
-    "atk_period" : 15.5,
-    "bonus" : {
-      "value" : 263,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 22,
-    "life" : 933,
-    "attack" : 59,
-    "atk_period" : 14.5,
-    "bonus" : {
-      "value" : 247,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 21,
-    "life" : 853,
-    "attack" : 55,
-    "atk_period" : 13.5,
-    "bonus" : {
-      "value" : 232,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 20,
-    "life" : 777,
-    "attack" : 51,
-    "atk_period" : 12.5,
-    "bonus" : {
-      "value" : 217,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 19,
-    "life" : 706,
-    "attack" : 47,
-    "atk_period" : 11.5,
-    "bonus" : {
-      "value" : 203,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 18,
-    "life" : 639,
-    "attack" : 43,
-    "atk_period" : 10.5,
-    "bonus" : {
-      "value" : 189,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 17,
-    "life" : 577,
-    "attack" : 40,
-    "atk_period" : 9.5,
-    "bonus" : {
-      "value" : 176,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 16,
-    "life" : 519,
-    "attack" : 36,
-    "atk_period" : 8.5,
-    "bonus" : {
-      "value" : 17,
-      "unit" : "golden_key"
-    }
-  }, {
-    "level" : 15,
-    "life" : 465,
-    "attack" : 33,
-    "atk_period" : 7.5,
-    "bonus" : {
-      "value" : 16,
-      "unit" : "golden_chest"
-    }
-  }, {
-    "level" : 14,
-    "life" : 414,
-    "attack" : 30,
-    "atk_period" : 6.5,
-    "bonus" : {
-      "value" : 15,
-      "unit" : "silver_key"
-    }
-  }, {
-    "level" : 13,
-    "life" : 368,
-    "attack" : 27,
-    "atk_period" : 5.5,
-    "bonus" : {
-      "value" : 14,
-      "unit" : "silver_chest"
-    }
-  }, {
-    "level" : 12,
-    "life" : 325,
-    "attack" : 24,
-    "atk_period" : 4.5,
-    "bonus" : {
-      "value" : 13,
-      "unit" : "iron_key"
-    }
-  }, {
-    "level" : 11,
-    "life" : 286,
-    "attack" : 21,
-    "atk_period" : 3.5,
-    "bonus" : {
-      "value" : 12,
-      "unit" : "iron_chest"
-    }
-  }, {
-    "level" : 10,
-    "life" : 249,
-    "attack" : 18,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 11,
-      "unit" : "essence"
-    }
-  }, {
-    "level" : 9,
-    "life" : 216,
-    "attack" : 15,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 10,
-      "unit" : "rune"
-    }
-  }, {
-    "level" : 8,
-    "life" : 187,
-    "attack" : 13,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 9,
-      "unit" : "crystal"
-    }
-  }, {
-    "level" : 7,
-    "life" : 132,
-    "attack" : 11,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 8,
-      "unit" : "iron"
-    }
-  }, {
-    "level" : 6,
-    "life" : 107,
-    "attack" : 8,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 7,
-      "unit" : "bronze"
-    }
-  }, {
-    "level" : 5,
-    "life" : 75,
-    "attack" : 7,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 6,
-      "unit" : "stone"
-    }
-  }, {
-    "level" : 4,
-    "life" : 52,
-    "attack" : 5,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 5,
-      "unit" : "leather"
-    }
-  }, {
-    "level" : 3,
-    "life" : 39,
-    "attack" : 3,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 4,
-      "unit" : "wood"
-    }
-  }, {
-    "level" : 2,
-    "life" : 26,
-    "attack" : 2,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 2,
-      "unit" : "relic"
-    }
-  }, {
-    "level" : 1,
-    "life" : 15,
-    "attack" : 1,
-    "atk_period" : 2.5,
-    "bonus" : {
-      "value" : 1,
-      "unit" : "gem"
-    }
-  } ]
-}, "e1002":{
-  "file" : "enemy_1002_json",
-  "name" : "魔塔女妖",
-  "icon" : "e1002.png",
-  "levelDatas" : [ {
-    "level" : 30,
-    "life" : 2025,
-    "attack" : 105,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 426,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 29,
-    "life" : 1891,
-    "attack" : 100,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 406,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 28,
-    "life" : 1762,
-    "attack" : 95,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 386,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 27,
-    "life" : 1639,
-    "attack" : 90,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 367,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 26,
-    "life" : 1522,
-    "attack" : 86,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 349,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 25,
-    "life" : 1410,
-    "attack" : 81,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 330,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 24,
-    "life" : 1304,
-    "attack" : 76,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 313,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 23,
-    "life" : 1204,
-    "attack" : 72,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 296,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 22,
-    "life" : 1109,
-    "attack" : 68,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 279,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 21,
-    "life" : 1018,
-    "attack" : 63,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 263,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 20,
-    "life" : 933,
-    "attack" : 59,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 247,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 19,
-    "life" : 853,
-    "attack" : 55,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 232,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 18,
-    "life" : 777,
-    "attack" : 51,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 217,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 17,
-    "life" : 706,
-    "attack" : 47,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 203,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 16,
-    "life" : 639,
-    "attack" : 43,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 17,
-      "unit" : "golden_key"
-    }
-  }, {
-    "level" : 15,
-    "life" : 577,
-    "attack" : 40,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 16,
-      "unit" : "golden_chest"
-    }
-  }, {
-    "level" : 14,
-    "life" : 519,
-    "attack" : 36,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 15,
-      "unit" : "silver_key"
-    }
-  }, {
-    "level" : 13,
-    "life" : 465,
-    "attack" : 33,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 14,
-      "unit" : "silver_chest"
-    }
-  }, {
-    "level" : 12,
-    "life" : 414,
-    "attack" : 30,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 13,
-      "unit" : "iron_key"
-    }
-  }, {
-    "level" : 11,
-    "life" : 368,
-    "attack" : 27,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 12,
-      "unit" : "iron_chest"
-    }
-  }, {
-    "level" : 10,
-    "life" : 325,
-    "attack" : 24,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 11,
-      "unit" : "essence"
-    }
-  }, {
-    "level" : 9,
-    "life" : 286,
-    "attack" : 21,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 10,
-      "unit" : "rune"
-    }
-  }, {
-    "level" : 8,
-    "life" : 249,
-    "attack" : 18,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 9,
-      "unit" : "crystal"
-    }
-  }, {
-    "level" : 7,
-    "life" : 216,
-    "attack" : 15,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 8,
-      "unit" : "iron"
-    }
-  }, {
-    "level" : 6,
-    "life" : 187,
-    "attack" : 13,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 7,
-      "unit" : "bronze"
-    }
-  }, {
-    "level" : 5,
-    "life" : 132,
-    "attack" : 11,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 6,
-      "unit" : "stone"
-    }
-  }, {
-    "level" : 4,
-    "life" : 107,
-    "attack" : 8,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 5,
-      "unit" : "leather"
-    }
-  }, {
-    "level" : 3,
-    "life" : 75,
-    "attack" : 7,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 4,
-      "unit" : "wood"
-    }
-  }, {
-    "level" : 2,
-    "life" : 52,
-    "attack" : 5,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 2,
-      "unit" : "relic"
-    }
-  }, {
-    "level" : 1,
-    "life" : 39,
-    "attack" : 3,
-    "atk_period" : 2.7,
-    "bonus" : {
-      "value" : 1,
-      "unit" : "gem"
-    }
-  } ]
-},"e1003": {
-  "file" : "enemy_1003_json",
-  "name" : "寒霜幽魂",
-  "icon" : "e1003.png",
-  "levelDatas" : [ {
-    "level" : 30,
-    "life" : 2314,
-    "attack" : 115,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 468,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 29,
-    "life" : 2166,
-    "attack" : 110,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 447,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 28,
-    "life" : 2025,
-    "attack" : 105,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 426,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 27,
-    "life" : 1891,
-    "attack" : 100,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 406,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 26,
-    "life" : 1762,
-    "attack" : 95,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 386,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 25,
-    "life" : 1639,
-    "attack" : 90,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 367,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 24,
-    "life" : 1522,
-    "attack" : 86,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 349,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 23,
-    "life" : 1410,
-    "attack" : 81,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 330,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 22,
-    "life" : 1304,
-    "attack" : 76,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 313,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 21,
-    "life" : 1204,
-    "attack" : 72,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 296,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 20,
-    "life" : 1109,
-    "attack" : 68,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 279,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 19,
-    "life" : 1018,
-    "attack" : 63,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 263,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 18,
-    "life" : 933,
-    "attack" : 59,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 247,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 17,
-    "life" : 853,
-    "attack" : 55,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 232,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 16,
-    "life" : 777,
-    "attack" : 51,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 17,
-      "unit" : "golden_key"
-    }
-  }, {
-    "level" : 15,
-    "life" : 706,
-    "attack" : 47,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 16,
-      "unit" : "golden_chest"
-    }
-  }, {
-    "level" : 14,
-    "life" : 639,
-    "attack" : 43,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 15,
-      "unit" : "silver_key"
-    }
-  }, {
-    "level" : 13,
-    "life" : 577,
-    "attack" : 40,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 14,
-      "unit" : "silver_chest"
-    }
-  }, {
-    "level" : 12,
-    "life" : 519,
-    "attack" : 36,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 13,
-      "unit" : "iron_key"
-    }
-  }, {
-    "level" : 11,
-    "life" : 465,
-    "attack" : 33,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 12,
-      "unit" : "iron_chest"
-    }
-  }, {
-    "level" : 10,
-    "life" : 414,
-    "attack" : 30,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 11,
-      "unit" : "essence"
-    }
-  }, {
-    "level" : 9,
-    "life" : 368,
-    "attack" : 27,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 10,
-      "unit" : "rune"
-    }
-  }, {
-    "level" : 8,
-    "life" : 325,
-    "attack" : 24,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 9,
-      "unit" : "crystal"
-    }
-  }, {
-    "level" : 7,
-    "life" : 286,
-    "attack" : 21,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 8,
-      "unit" : "iron"
-    }
-  }, {
-    "level" : 6,
-    "life" : 249,
-    "attack" : 18,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 7,
-      "unit" : "bronze"
-    }
-  }, {
-    "level" : 5,
-    "life" : 216,
-    "attack" : 15,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 6,
-      "unit" : "stone"
-    }
-  }, {
-    "level" : 4,
-    "life" : 187,
-    "attack" : 13,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 5,
-      "unit" : "leather"
-    }
-  }, {
-    "level" : 3,
-    "life" : 132,
-    "attack" : 11,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 4,
-      "unit" : "wood"
-    }
-  }, {
-    "level" : 2,
-    "life" : 107,
-    "attack" : 8,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 2,
-      "unit" : "relic"
-    }
-  }, {
-    "level" : 1,
-    "life" : 75,
-    "attack" : 7,
-    "atk_period" : 2.3,
-    "bonus" : {
-      "value" : 1,
-      "unit" : "gem"
-    }
-  } ]
-},"e1004": {
-  "file" : "enemy_1004_json",
-  "name" : "荒野石像",
-  "icon" : "e1004.png",
-  "levelDatas" : [ {
-    "level" : 30,
-    "life" : 2628,
-    "attack" : 126,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 512,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 29,
-    "life" : 2468,
-    "attack" : 121,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 490,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 28,
-    "life" : 2314,
-    "attack" : 115,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 468,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 27,
-    "life" : 2166,
-    "attack" : 110,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 447,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 26,
-    "life" : 2025,
-    "attack" : 105,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 426,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 25,
-    "life" : 1891,
-    "attack" : 100,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 406,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 24,
-    "life" : 1762,
-    "attack" : 95,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 386,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 23,
-    "life" : 1639,
-    "attack" : 90,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 367,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 22,
-    "life" : 1522,
-    "attack" : 86,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 349,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 21,
-    "life" : 1410,
-    "attack" : 81,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 330,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 20,
-    "life" : 1304,
-    "attack" : 76,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 313,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 19,
-    "life" : 1204,
-    "attack" : 72,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 296,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 18,
-    "life" : 1109,
-    "attack" : 68,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 279,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 17,
-    "life" : 1018,
-    "attack" : 63,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 263,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 16,
-    "life" : 933,
-    "attack" : 59,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 17,
-      "unit" : "golden_key"
-    }
-  }, {
-    "level" : 15,
-    "life" : 853,
-    "attack" : 55,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 16,
-      "unit" : "golden_chest"
-    }
-  }, {
-    "level" : 14,
-    "life" : 777,
-    "attack" : 51,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 15,
-      "unit" : "silver_key"
-    }
-  }, {
-    "level" : 13,
-    "life" : 706,
-    "attack" : 47,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 14,
-      "unit" : "silver_chest"
-    }
-  }, {
-    "level" : 12,
-    "life" : 639,
-    "attack" : 43,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 13,
-      "unit" : "iron_key"
-    }
-  }, {
-    "level" : 11,
-    "life" : 577,
-    "attack" : 40,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 12,
-      "unit" : "iron_chest"
-    }
-  }, {
-    "level" : 10,
-    "life" : 519,
-    "attack" : 36,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 11,
-      "unit" : "essence"
-    }
-  }, {
-    "level" : 9,
-    "life" : 465,
-    "attack" : 33,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 10,
-      "unit" : "rune"
-    }
-  }, {
-    "level" : 8,
-    "life" : 414,
-    "attack" : 30,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 9,
-      "unit" : "crystal"
-    }
-  }, {
-    "level" : 7,
-    "life" : 368,
-    "attack" : 27,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 8,
-      "unit" : "iron"
-    }
-  }, {
-    "level" : 6,
-    "life" : 325,
-    "attack" : 24,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 7,
-      "unit" : "bronze"
-    }
-  }, {
-    "level" : 5,
-    "life" : 286,
-    "attack" : 21,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 6,
-      "unit" : "stone"
-    }
-  }, {
-    "level" : 4,
-    "life" : 249,
-    "attack" : 18,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 5,
-      "unit" : "leather"
-    }
-  }, {
-    "level" : 3,
-    "life" : 216,
-    "attack" : 15,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 4,
-      "unit" : "wood"
-    }
-  }, {
-    "level" : 2,
-    "life" : 187,
-    "attack" : 13,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 2,
-      "unit" : "relic"
-    }
-  }, {
-    "level" : 1,
-    "life" : 132,
-    "attack" : 11,
-    "atk_period" : 2.6,
-    "bonus" : {
-      "value" : 1,
-      "unit" : "gem"
-    }
-  } ]
-},"e1005": {
-  "file" : "enemy_1005_json",
-  "name" : "千年木灵",
-  "icon" : "e1005.png",
-  "levelDatas" : [ {
-    "level" : 30,
-    "life" : 2969,
-    "attack" : 137,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 558,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 29,
-    "life" : 2795,
-    "attack" : 131,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 534,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 28,
-    "life" : 2628,
-    "attack" : 126,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 512,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 27,
-    "life" : 2468,
-    "attack" : 121,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 490,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 26,
-    "life" : 2314,
-    "attack" : 115,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 468,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 25,
-    "life" : 2166,
-    "attack" : 110,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 447,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 24,
-    "life" : 2025,
-    "attack" : 105,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 426,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 23,
-    "life" : 1891,
-    "attack" : 100,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 406,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 22,
-    "life" : 1762,
-    "attack" : 95,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 386,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 21,
-    "life" : 1639,
-    "attack" : 90,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 367,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 20,
-    "life" : 1522,
-    "attack" : 86,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 349,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 19,
-    "life" : 1410,
-    "attack" : 81,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 330,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 18,
-    "life" : 1304,
-    "attack" : 76,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 313,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 17,
-    "life" : 1204,
-    "attack" : 72,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 296,
-      "unit" : "gold"
-    }
-  }, {
-    "level" : 16,
-    "life" : 1109,
-    "attack" : 68,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 17,
-      "unit" : "golden_key"
-    }
-  }, {
-    "level" : 15,
-    "life" : 1018,
-    "attack" : 63,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 16,
-      "unit" : "golden_chest"
-    }
-  }, {
-    "level" : 14,
-    "life" : 933,
-    "attack" : 59,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 15,
-      "unit" : "silver_key"
-    }
-  }, {
-    "level" : 13,
-    "life" : 853,
-    "attack" : 55,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 14,
-      "unit" : "silver_chest"
-    }
-  }, {
-    "level" : 12,
-    "life" : 777,
-    "attack" : 51,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 13,
-      "unit" : "iron_key"
-    }
-  }, {
-    "level" : 11,
-    "life" : 706,
-    "attack" : 47,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 12,
-      "unit" : "iron_chest"
-    }
-  }, {
-    "level" : 10,
-    "life" : 639,
-    "attack" : 43,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 11,
-      "unit" : "essence"
-    }
-  }, {
-    "level" : 9,
-    "life" : 577,
-    "attack" : 40,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 10,
-      "unit" : "rune"
-    }
-  }, {
-    "level" : 8,
-    "life" : 519,
-    "attack" : 36,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 9,
-      "unit" : "crystal"
-    }
-  }, {
-    "level" : 7,
-    "life" : 465,
-    "attack" : 33,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 8,
-      "unit" : "iron"
-    }
-  }, {
-    "level" : 6,
-    "life" : 414,
-    "attack" : 30,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 7,
-      "unit" : "bronze"
-    }
-  }, {
-    "level" : 5,
-    "life" : 368,
-    "attack" : 27,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 6,
-      "unit" : "stone"
-    }
-  }, {
-    "level" : 4,
-    "life" : 325,
-    "attack" : 24,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 5,
-      "unit" : "leather"
-    }
-  }, {
-    "level" : 3,
-    "life" : 286,
-    "attack" : 21,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 4,
-      "unit" : "wood"
-    }
-  }, {
-    "level" : 2,
-    "life" : 249,
-    "attack" : 18,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 2,
-      "unit" : "relic"
-    }
-  }, {
-    "level" : 1,
-    "life" : 216,
-    "attack" : 15,
-    "atk_period" : 2.4,
-    "bonus" : {
-      "value" : 1,
-      "unit" : "gem"
-    }
-  } ]
-} }
+{
+  "e1001": {
+    "file": "enemy_1001_json",
+    "name": "森林守卫",
+    "icon": "e1001.png",
+    "levelDatas": [
+      {
+        "level": 30,
+        "life": 1762,
+        "attack": 95,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 386,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 29,
+        "life": 1639,
+        "attack": 90,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 367,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 28,
+        "life": 1522,
+        "attack": 86,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 349,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 27,
+        "life": 1410,
+        "attack": 81,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 330,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 26,
+        "life": 1304,
+        "attack": 76,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 313,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 25,
+        "life": 1204,
+        "attack": 72,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 296,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 24,
+        "life": 1109,
+        "attack": 68,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 279,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 23,
+        "life": 1018,
+        "attack": 63,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 263,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 22,
+        "life": 933,
+        "attack": 59,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 247,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 21,
+        "life": 853,
+        "attack": 55,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 232,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 20,
+        "life": 777,
+        "attack": 51,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 217,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 19,
+        "life": 706,
+        "attack": 47,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 203,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 18,
+        "life": 639,
+        "attack": 43,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 17,
+        "life": 577,
+        "attack": 40,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 176,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 16,
+        "life": 519,
+        "attack": 36,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 188,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 15,
+        "life": 465,
+        "attack": 33,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 161,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 14,
+        "life": 414,
+        "attack": 30,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 137,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 13,
+        "life": 368,
+        "attack": 27,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 115,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 12,
+        "life": 325,
+        "attack": 24,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 96,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 11,
+        "life": 286,
+        "attack": 21,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 79,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 10,
+        "life": 249,
+        "attack": 18,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 64,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 216,
+        "attack": 15,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 51,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 187,
+        "attack": 13,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 40,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 132,
+        "attack": 11,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 31,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 107,
+        "attack": 8,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 23,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 75,
+        "attack": 7,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 17,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 52,
+        "attack": 5,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 12,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 39,
+        "attack": 3,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 8,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 26,
+        "attack": 2,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 5,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 15,
+        "attack": 1,
+        "atk_period": 2.5,
+        "bonus": {
+          "value": 3,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e1002": {
+    "file": "enemy_1002_json",
+    "name": "魔塔女妖",
+    "icon": "e1002.png",
+    "levelDatas": [
+      {
+        "level": 30,
+        "life": 2025,
+        "attack": 105,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 386,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 29,
+        "life": 1891,
+        "attack": 100,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 367,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 28,
+        "life": 1762,
+        "attack": 95,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 349,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 27,
+        "life": 1639,
+        "attack": 90,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 330,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 26,
+        "life": 1522,
+        "attack": 86,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 313,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 25,
+        "life": 1410,
+        "attack": 81,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 296,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 24,
+        "life": 1304,
+        "attack": 76,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 279,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 23,
+        "life": 1204,
+        "attack": 72,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 263,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 22,
+        "life": 1109,
+        "attack": 68,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 247,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 21,
+        "life": 1018,
+        "attack": 63,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 232,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 20,
+        "life": 933,
+        "attack": 59,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 217,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 19,
+        "life": 853,
+        "attack": 55,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 203,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 18,
+        "life": 777,
+        "attack": 51,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 17,
+        "life": 706,
+        "attack": 47,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 176,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 16,
+        "life": 639,
+        "attack": 43,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 218,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 15,
+        "life": 577,
+        "attack": 40,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 188,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 14,
+        "life": 519,
+        "attack": 36,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 161,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 13,
+        "life": 465,
+        "attack": 33,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 136,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 12,
+        "life": 414,
+        "attack": 30,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 115,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 11,
+        "life": 368,
+        "attack": 27,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 95,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 10,
+        "life": 325,
+        "attack": 24,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 78,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 286,
+        "attack": 21,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 63,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 249,
+        "attack": 18,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 51,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 216,
+        "attack": 15,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 40,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 187,
+        "attack": 13,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 30,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 132,
+        "attack": 11,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 23,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 107,
+        "attack": 8,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 17,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 75,
+        "attack": 7,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 12,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 52,
+        "attack": 5,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 8,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 39,
+        "attack": 3,
+        "atk_period": 2.7,
+        "bonus": {
+          "value": 5,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e1003": {
+    "file": "enemy_1003_json",
+    "name": "寒霜幽魂",
+    "icon": "e1003.png",
+    "levelDatas": [
+      {
+        "level": 30,
+        "life": 2314,
+        "attack": 115,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 386,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 29,
+        "life": 2166,
+        "attack": 110,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 367,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 28,
+        "life": 2025,
+        "attack": 105,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 349,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 27,
+        "life": 1891,
+        "attack": 100,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 330,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 26,
+        "life": 1762,
+        "attack": 95,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 313,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 25,
+        "life": 1639,
+        "attack": 90,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 296,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 24,
+        "life": 1522,
+        "attack": 86,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 279,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 23,
+        "life": 1410,
+        "attack": 81,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 263,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 22,
+        "life": 1304,
+        "attack": 76,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 247,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 21,
+        "life": 1204,
+        "attack": 72,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 232,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 20,
+        "life": 1109,
+        "attack": 68,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 217,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 19,
+        "life": 1018,
+        "attack": 63,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 203,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 18,
+        "life": 933,
+        "attack": 59,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 17,
+        "life": 853,
+        "attack": 55,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 176,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 16,
+        "life": 777,
+        "attack": 51,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 231,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 15,
+        "life": 706,
+        "attack": 47,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 199,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 14,
+        "life": 639,
+        "attack": 43,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 171,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 13,
+        "life": 577,
+        "attack": 40,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 146,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 12,
+        "life": 519,
+        "attack": 36,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 123,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 11,
+        "life": 465,
+        "attack": 33,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 102,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 10,
+        "life": 414,
+        "attack": 30,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 85,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 368,
+        "attack": 27,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 69,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 325,
+        "attack": 24,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 55,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 286,
+        "attack": 21,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 44,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 249,
+        "attack": 18,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 34,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 216,
+        "attack": 15,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 26,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 187,
+        "attack": 13,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 19,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 132,
+        "attack": 11,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 13,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 107,
+        "attack": 8,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 9,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 75,
+        "attack": 7,
+        "atk_period": 2.3,
+        "bonus": {
+          "value": 6,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e1004": {
+    "file": "enemy_1004_json",
+    "name": "荒野石像",
+    "icon": "e1004.png",
+    "levelDatas": [
+      {
+        "level": 30,
+        "life": 2628,
+        "attack": 126,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 386,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 29,
+        "life": 2468,
+        "attack": 121,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 367,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 28,
+        "life": 2314,
+        "attack": 115,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 349,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 27,
+        "life": 2166,
+        "attack": 110,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 330,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 26,
+        "life": 2025,
+        "attack": 105,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 313,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 25,
+        "life": 1891,
+        "attack": 100,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 296,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 24,
+        "life": 1762,
+        "attack": 95,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 279,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 23,
+        "life": 1639,
+        "attack": 90,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 263,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 22,
+        "life": 1522,
+        "attack": 86,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 247,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 21,
+        "life": 1410,
+        "attack": 81,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 232,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 20,
+        "life": 1304,
+        "attack": 76,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 217,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 19,
+        "life": 1204,
+        "attack": 72,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 203,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 18,
+        "life": 1109,
+        "attack": 68,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 17,
+        "life": 1018,
+        "attack": 63,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 176,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 16,
+        "life": 933,
+        "attack": 59,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 242,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 15,
+        "life": 853,
+        "attack": 55,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 210,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 14,
+        "life": 777,
+        "attack": 51,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 180,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 13,
+        "life": 706,
+        "attack": 47,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 154,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 12,
+        "life": 639,
+        "attack": 43,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 130,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 11,
+        "life": 577,
+        "attack": 40,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 109,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 10,
+        "life": 519,
+        "attack": 36,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 90,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 465,
+        "attack": 33,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 74,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 414,
+        "attack": 30,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 60,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 368,
+        "attack": 27,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 47,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 325,
+        "attack": 24,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 37,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 286,
+        "attack": 21,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 28,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 249,
+        "attack": 18,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 21,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 216,
+        "attack": 15,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 15,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 187,
+        "attack": 13,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 11,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 132,
+        "attack": 11,
+        "atk_period": 2.6,
+        "bonus": {
+          "value": 7,
+          "unit": "gold"
+        }
+      }
+    ]
+  },
+  "e1005": {
+    "file": "enemy_1005_json",
+    "name": "千年木灵",
+    "icon": "e1005.png",
+    "levelDatas": [
+      {
+        "level": 30,
+        "life": 2969,
+        "attack": 137,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 386,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 29,
+        "life": 2795,
+        "attack": 131,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 367,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 28,
+        "life": 2628,
+        "attack": 126,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 349,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 27,
+        "life": 2468,
+        "attack": 121,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 330,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 26,
+        "life": 2314,
+        "attack": 115,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 313,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 25,
+        "life": 2166,
+        "attack": 110,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 296,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 24,
+        "life": 2025,
+        "attack": 105,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 279,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 23,
+        "life": 1891,
+        "attack": 100,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 263,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 22,
+        "life": 1762,
+        "attack": 95,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 247,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 21,
+        "life": 1639,
+        "attack": 90,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 232,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 20,
+        "life": 1522,
+        "attack": 86,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 217,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 19,
+        "life": 1410,
+        "attack": 81,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 203,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 18,
+        "life": 1304,
+        "attack": 76,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 17,
+        "life": 1204,
+        "attack": 72,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 176,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 16,
+        "life": 1109,
+        "attack": 68,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 253,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 15,
+        "life": 1018,
+        "attack": 63,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 219,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 14,
+        "life": 933,
+        "attack": 59,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 189,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 13,
+        "life": 853,
+        "attack": 55,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 162,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 12,
+        "life": 777,
+        "attack": 51,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 137,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 11,
+        "life": 706,
+        "attack": 47,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 116,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 10,
+        "life": 639,
+        "attack": 43,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 96,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 9,
+        "life": 577,
+        "attack": 40,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 79,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 8,
+        "life": 519,
+        "attack": 36,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 64,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 7,
+        "life": 465,
+        "attack": 33,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 51,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 6,
+        "life": 414,
+        "attack": 30,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 40,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 5,
+        "life": 368,
+        "attack": 27,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 31,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 4,
+        "life": 325,
+        "attack": 24,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 23,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 3,
+        "life": 286,
+        "attack": 21,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 17,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 2,
+        "life": 249,
+        "attack": 18,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 12,
+          "unit": "gold"
+        }
+      },
+      {
+        "level": 1,
+        "life": 216,
+        "attack": 15,
+        "atk_period": 2.4,
+        "bonus": {
+          "value": 8,
+          "unit": "gold"
+        }
+      }
+    ]
+  }
+}

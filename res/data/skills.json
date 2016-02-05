@@ -16,7 +16,7 @@
     },
     "unlockLevel" : 21,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 90
   }, {
     "level" : 4,
     "effect1" : {
@@ -29,7 +29,7 @@
     },
     "unlockLevel" : 16,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 90
   }, {
     "level" : 3,
     "effect1" : {
@@ -42,7 +42,7 @@
     },
     "unlockLevel" : 11,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 90
   }, {
     "level" : 2,
     "effect1" : {
@@ -55,7 +55,7 @@
     },
     "unlockLevel" : 6,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 90
   }, {
     "level" : 1,
     "effect1" : {
@@ -68,7 +68,7 @@
     },
     "unlockLevel" : 1,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 90
   }, {
     "level" : 0,
     "effect1" : {
@@ -83,7 +83,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10102": {
+}, "s10102":{
   "name" : "黑暗之风",
   "desc" : "对所有敌方单位造成{effect1_value}点伤害。",
   "buffDesc" : "无",
@@ -101,7 +101,7 @@
     },
     "unlockLevel" : 22,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 100
   }, {
     "level" : 4,
     "effect1" : {
@@ -114,7 +114,7 @@
     },
     "unlockLevel" : 17,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 100
   }, {
     "level" : 3,
     "effect1" : {
@@ -127,7 +127,7 @@
     },
     "unlockLevel" : 12,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 100
   }, {
     "level" : 2,
     "effect1" : {
@@ -140,7 +140,7 @@
     },
     "unlockLevel" : 7,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 100
   }, {
     "level" : 1,
     "effect1" : {
@@ -153,7 +153,7 @@
     },
     "unlockLevel" : 2,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 100
   }, {
     "level" : 0,
     "effect1" : {
@@ -168,7 +168,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10103":  {
+},"s10103": {
   "name" : "流金铄石",
   "desc" : "限定时间{duration}秒内，获得金币的比例提升{effect1_value}。",
   "buffDesc" : "提升金币获得{effect1_value}",
@@ -185,8 +185,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 23,
-    "duration" : 10,
-    "cooldown" : 10
+    "duration" : 20,
+    "cooldown" : 110
   }, {
     "level" : 4,
     "effect1" : {
@@ -198,8 +198,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 18,
-    "duration" : 10,
-    "cooldown" : 10
+    "duration" : 20,
+    "cooldown" : 110
   }, {
     "level" : 3,
     "effect1" : {
@@ -211,8 +211,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 13,
-    "duration" : 10,
-    "cooldown" : 10
+    "duration" : 20,
+    "cooldown" : 110
   }, {
     "level" : 2,
     "effect1" : {
@@ -224,8 +224,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 8,
-    "duration" : 10,
-    "cooldown" : 10
+    "duration" : 20,
+    "cooldown" : 110
   }, {
     "level" : 1,
     "effect1" : {
@@ -237,8 +237,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 3,
-    "duration" : 10,
-    "cooldown" : 10
+    "duration" : 20,
+    "cooldown" : 110
   }, {
     "level" : 0,
     "effect1" : {
@@ -253,7 +253,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10104": {
+},"s10104": {
   "name" : "群鸦盛宴",
   "desc" : "限定时间{duration}秒内，对所有敌方单位造成{effect1_value}点伤害。",
   "buffDesc" : "持续伤害{effect1_value}点",
@@ -270,8 +270,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 24,
-    "duration" : 15,
-    "cooldown" : 10
+    "duration" : 5,
+    "cooldown" : 120
   }, {
     "level" : 4,
     "effect1" : {
@@ -283,8 +283,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 19,
-    "duration" : 15,
-    "cooldown" : 10
+    "duration" : 5,
+    "cooldown" : 120
   }, {
     "level" : 3,
     "effect1" : {
@@ -296,8 +296,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 14,
-    "duration" : 15,
-    "cooldown" : 10
+    "duration" : 5,
+    "cooldown" : 120
   }, {
     "level" : 2,
     "effect1" : {
@@ -309,8 +309,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 9,
-    "duration" : 15,
-    "cooldown" : 10
+    "duration" : 5,
+    "cooldown" : 120
   }, {
     "level" : 1,
     "effect1" : {
@@ -322,8 +322,8 @@
       "unit" : "gold"
     },
     "unlockLevel" : 4,
-    "duration" : 15,
-    "cooldown" : 10
+    "duration" : 5,
+    "cooldown" : 120
   }, {
     "level" : 0,
     "effect1" : {
@@ -338,7 +338,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10105": {
+}, "s10105":{
   "name" : "星界祝福",
   "desc" : "治疗全体友方单位{effect1_value}点生命值。",
   "buffDesc" : "无",
@@ -356,7 +356,7 @@
     },
     "unlockLevel" : 25,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 130
   }, {
     "level" : 4,
     "effect1" : {
@@ -369,7 +369,7 @@
     },
     "unlockLevel" : 20,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 130
   }, {
     "level" : 3,
     "effect1" : {
@@ -382,7 +382,7 @@
     },
     "unlockLevel" : 15,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 130
   }, {
     "level" : 2,
     "effect1" : {
@@ -395,7 +395,7 @@
     },
     "unlockLevel" : 10,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 130
   }, {
     "level" : 1,
     "effect1" : {
@@ -408,7 +408,7 @@
     },
     "unlockLevel" : 5,
     "duration" : 0,
-    "cooldown" : 10
+    "cooldown" : 130
   }, {
     "level" : 0,
     "effect1" : {
@@ -423,7 +423,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10106":  {
+},"s10106": {
   "name" : "能量波动",
   "desc" : "限定时间{duration}秒内，提升点击伤害{effect1_value}。",
   "buffDesc" : "提升点击伤害{effect1_value}",
@@ -441,7 +441,7 @@
     },
     "unlockLevel" : 26,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 140
   }, {
     "level" : 4,
     "effect1" : {
@@ -454,7 +454,7 @@
     },
     "unlockLevel" : 21,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 140
   }, {
     "level" : 3,
     "effect1" : {
@@ -467,7 +467,7 @@
     },
     "unlockLevel" : 16,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 140
   }, {
     "level" : 2,
     "effect1" : {
@@ -480,7 +480,7 @@
     },
     "unlockLevel" : 11,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 140
   }, {
     "level" : 1,
     "effect1" : {
@@ -493,7 +493,7 @@
     },
     "unlockLevel" : 6,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 140
   }, {
     "level" : 0,
     "effect1" : {
@@ -508,7 +508,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10107": {
+},"s10107": {
   "name" : "风雷万钧",
   "desc" : "限定时间{duration}秒内，提升攻击伤害{effect1_value}。",
   "buffDesc" : "提升攻击伤害{effect1_value}",
@@ -526,7 +526,7 @@
     },
     "unlockLevel" : 27,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 4,
     "effect1" : {
@@ -539,7 +539,7 @@
     },
     "unlockLevel" : 22,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 3,
     "effect1" : {
@@ -552,7 +552,7 @@
     },
     "unlockLevel" : 17,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 2,
     "effect1" : {
@@ -565,7 +565,7 @@
     },
     "unlockLevel" : 12,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 1,
     "effect1" : {
@@ -578,7 +578,7 @@
     },
     "unlockLevel" : 7,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 0,
     "effect1" : {
@@ -593,7 +593,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10108":  {
+}, "s10108":{
   "name" : "能量爆裂",
   "desc" : "限定时间{duration}秒内，缩短攻击间隔{effect1_value}秒。",
   "buffDesc" : "缩短攻击间隔{effect1_value}秒",
@@ -611,7 +611,7 @@
     },
     "unlockLevel" : 28,
     "duration" : 30,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 4,
     "effect1" : {
@@ -624,7 +624,7 @@
     },
     "unlockLevel" : 23,
     "duration" : 25,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 3,
     "effect1" : {
@@ -637,7 +637,7 @@
     },
     "unlockLevel" : 18,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 2,
     "effect1" : {
@@ -650,7 +650,7 @@
     },
     "unlockLevel" : 13,
     "duration" : 15,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 1,
     "effect1" : {
@@ -663,7 +663,7 @@
     },
     "unlockLevel" : 8,
     "duration" : 10,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 0,
     "effect1" : {
@@ -678,7 +678,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10109":  {
+}, "s10109":{
   "name" : "超重力场",
   "desc" : "限定时间{duration}秒内，提升暴击概率{effect1_value}。",
   "buffDesc" : "提升暴击概率{effect1_value}",
@@ -696,7 +696,7 @@
     },
     "unlockLevel" : 29,
     "duration" : 30,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 4,
     "effect1" : {
@@ -709,7 +709,7 @@
     },
     "unlockLevel" : 24,
     "duration" : 25,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 3,
     "effect1" : {
@@ -722,7 +722,7 @@
     },
     "unlockLevel" : 19,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 2,
     "effect1" : {
@@ -735,7 +735,7 @@
     },
     "unlockLevel" : 14,
     "duration" : 15,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 1,
     "effect1" : {
@@ -748,7 +748,7 @@
     },
     "unlockLevel" : 9,
     "duration" : 10,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 0,
     "effect1" : {
@@ -763,7 +763,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10110": {
+}, "s10110":{
   "name" : "全神贯注",
   "desc" : "限定时间{duration}秒内，提升暴击倍率{effect1_value}。",
   "buffDesc" : "提升暴击倍率{effect1_value}",
@@ -781,7 +781,7 @@
     },
     "unlockLevel" : 30,
     "duration" : 30,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 4,
     "effect1" : {
@@ -794,7 +794,7 @@
     },
     "unlockLevel" : 25,
     "duration" : 25,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 3,
     "effect1" : {
@@ -807,7 +807,7 @@
     },
     "unlockLevel" : 20,
     "duration" : 20,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 2,
     "effect1" : {
@@ -820,7 +820,7 @@
     },
     "unlockLevel" : 15,
     "duration" : 15,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 1,
     "effect1" : {
@@ -833,7 +833,7 @@
     },
     "unlockLevel" : 10,
     "duration" : 10,
-    "cooldown" : 10
+    "cooldown" : 150
   }, {
     "level" : 0,
     "effect1" : {
@@ -848,7 +848,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10201":  {
+}, "s10201":{
   "name" : "凶猛打击",
   "desc" : "增加攻击伤害{effect1_value}点。",
   "buffDesc" : "无",
@@ -933,7 +933,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10202": {
+}, "s10202":{
   "name" : "诸神黄昏",
   "desc" : "提升{effect1_value}的攻击伤害。",
   "buffDesc" : "无",
@@ -1018,7 +1018,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10203": {
+},"s10203": {
   "name" : "保护壁垒",
   "desc" : "提升全体英雄{effect1_value}的生命值。",
   "buffDesc" : "无",
@@ -1103,7 +1103,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10301": {
+}, "s10301":{
   "name" : "剑舞",
   "desc" : "增加攻击伤害{effect1_value}点。",
   "buffDesc" : "无",
@@ -1188,7 +1188,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10302": {
+},"s10302": {
   "name" : "强身",
   "desc" : "提升{effect1_value}的暴击概率。",
   "buffDesc" : "无",
@@ -1273,7 +1273,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10303":  {
+}, "s10303":{
   "name" : "破空",
   "desc" : "提升全体英雄{effect1_value}的暴击概率。",
   "buffDesc" : "无",
@@ -1358,7 +1358,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10401": {
+}, "s10401":{
   "name" : "一发双枪",
   "desc" : "增加攻击伤害{effect1_value}点。",
   "buffDesc" : "无",
@@ -1443,7 +1443,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10402":  {
+},"s10402": {
   "name" : "不洁射击",
   "desc" : "缩短{effect1_value}的攻击速度。",
   "buffDesc" : "无",
@@ -1528,7 +1528,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10403":  {
+}, "s10403":{
   "name" : "黄金眼",
   "desc" : "提升{effect1_value}的金币获得。",
   "buffDesc" : "无",
@@ -1613,7 +1613,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10501": {
+}, "s10501":{
   "name" : "嗜血杀戮",
   "desc" : "增加攻击伤害{effect1_value}点。",
   "buffDesc" : "无",
@@ -1698,7 +1698,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-},"s10502":  {
+},"s10502": {
   "name" : "嘲讽",
   "desc" : "提升{effect1_value}的暴击倍率。",
   "buffDesc" : "无",
@@ -1783,7 +1783,7 @@
     "duration" : 0,
     "cooldown" : 0
   } ]
-}, "s10503": {
+},"s10503": {
   "name" : "无尽怒火",
   "desc" : "提升全体英雄{effect1_value}的 暴击概率。",
   "buffDesc" : "无",
