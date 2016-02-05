@@ -44,8 +44,12 @@
           <FilePathData Path="fairy01.csi" />
           <FilePathData Path="chest01.csi" />
           <FilePathData Path="chest01.csd" />
+          <FilePathData Path="hero102.csi" />
+          <FilePathData Path="hero103.csd" />
+          <FilePathData Path="enemy1001.csi" />
+          <FilePathData Path="enemy1002.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="chest01.csi" />
+        <ActiveDocument Path="enemy1002.csd" />
       </Value>
     </Item>
   </Properties>

@@ -7,15 +7,9 @@
   "battleNum" : 2,
   "enemyNumMin" : 1,
   "enemyNumMax" : 1,
-  "moneyTreeRatio" : 500,
+  "moneyTreeRatio" : 100,
   "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 1,
+    "value" : 10,
     "unit" : "gold"
   } ],
   "bonus" : [ {
@@ -45,26 +39,20 @@
   "battleNum" : 3,
   "enemyNumMin" : 1,
   "enemyNumMax" : 2,
-  "moneyTreeRatio" : 1000,
+  "moneyTreeRatio" : 250,
   "offlineReward" : [ {
-    "value" : 2,
-    "unit" : "key"
-  }, {
-    "value" : 2,
-    "unit" : "gem"
-  }, {
-    "value" : 2,
+    "value" : 20,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "silver_key",
+    "unit" : "iron_key",
     "value" : 1
   }, {
-    "unit" : "silver_chest",
+    "unit" : "iron_chest",
     "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 200
+    "value" : 215
   } ],
   "enemyTypes" : [ {
     "id" : "e1002",
@@ -80,7 +68,7 @@
     "id" : "e1001",
     "lv" : 3
   } ]
-}, "s100003":{
+},"s100003": {
   "name" : "永歌森林",
   "stageNum" : 3,
   "next" : "s100004",
@@ -89,26 +77,23 @@
   "battleNum" : 5,
   "enemyNumMin" : 2,
   "enemyNumMax" : 3,
-  "moneyTreeRatio" : 1500,
+  "moneyTreeRatio" : 400,
   "offlineReward" : [ {
-    "value" : 3,
-    "unit" : "key"
-  }, {
-    "value" : 3,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 3,
+    "value" : 30,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "golden_key",
+    "unit" : "iron_key",
     "value" : 1
   }, {
-    "unit" : "golden_chest",
+    "unit" : "iron_chest",
     "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 300
+    "value" : 330
   } ],
   "enemyTypes" : [ {
     "id" : "e1003",
@@ -130,7 +115,7 @@
     "id" : "e1001",
     "lv" : 5
   } ]
-}, "s100004":{
+},"s100004": {
   "name" : "天空之城",
   "stageNum" : 4,
   "next" : "s100005",
@@ -139,26 +124,23 @@
   "battleNum" : 8,
   "enemyNumMin" : 2,
   "enemyNumMax" : 4,
-  "moneyTreeRatio" : 2000,
+  "moneyTreeRatio" : 550,
   "offlineReward" : [ {
-    "value" : 4,
-    "unit" : "key"
-  }, {
-    "value" : 4,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 4,
+    "value" : 40,
     "unit" : "gold"
   } ],
   "bonus" : [ {
     "unit" : "iron_key",
-    "value" : 2
+    "value" : 1
   }, {
     "unit" : "iron_chest",
-    "value" : 2
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 400
+    "value" : 445
   } ],
   "enemyTypes" : [ {
     "id" : "e1004",
@@ -186,7 +168,7 @@
     "id" : "e1001",
     "lv" : 9
   } ]
-}, "s100005":{
+},"s100005": {
   "name" : "德尔荒原",
   "stageNum" : 5,
   "next" : "s100006",
@@ -195,26 +177,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 2,
   "enemyNumMax" : 5,
-  "moneyTreeRatio" : 2500,
+  "moneyTreeRatio" : 700,
   "offlineReward" : [ {
-    "value" : 5,
-    "unit" : "key"
+    "value" : 1,
+    "unit" : "iron_key"
   }, {
-    "value" : 5,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 5,
+    "value" : 50,
     "unit" : "gold"
   } ],
   "bonus" : [ {
     "unit" : "silver_key",
-    "value" : 2
+    "value" : 1
   }, {
     "unit" : "silver_chest",
-    "value" : 2
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 500
+    "value" : 560
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
@@ -248,7 +230,7 @@
     "id" : "e1001",
     "lv" : 12
   } ]
-},"s100006": {
+}, "s100006":{
   "name" : "黄金海岸",
   "stageNum" : 6,
   "next" : "s100007",
@@ -257,26 +239,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 3,
   "enemyNumMax" : 4,
-  "moneyTreeRatio" : 3000,
+  "moneyTreeRatio" : 850,
   "offlineReward" : [ {
-    "value" : 6,
-    "unit" : "key"
+    "value" : 1,
+    "unit" : "iron_key"
   }, {
-    "value" : 6,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 6,
+    "value" : 60,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "golden_key",
-    "value" : 2
+    "unit" : "silver_key",
+    "value" : 1
   }, {
-    "unit" : "golden_chest",
-    "value" : 2
+    "unit" : "silver_chest",
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 600
+    "value" : 675
   } ],
   "enemyTypes" : [ {
     "id" : "e1004",
@@ -304,7 +286,7 @@
     "id" : "e1001",
     "lv" : 15
   } ]
-}, "s100007":{
+},"s100007": {
   "name" : "斯姆雪山",
   "stageNum" : 7,
   "next" : "s100008",
@@ -313,26 +295,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 3,
   "enemyNumMax" : 5,
-  "moneyTreeRatio" : 3500,
+  "moneyTreeRatio" : 1000,
   "offlineReward" : [ {
-    "value" : 7,
-    "unit" : "key"
+    "value" : 1,
+    "unit" : "iron_key"
   }, {
-    "value" : 7,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 7,
+    "value" : 70,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 3
+    "unit" : "silver_key",
+    "value" : 1
   }, {
-    "unit" : "iron_chest",
-    "value" : 3
+    "unit" : "silver_chest",
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 700
+    "value" : 790
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
@@ -366,7 +348,7 @@
     "id" : "e1001",
     "lv" : 18
   } ]
-}, "s100008":{
+},"s100008": {
   "name" : "自由都市",
   "stageNum" : 8,
   "next" : "s100009",
@@ -375,26 +357,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 4,
   "enemyNumMax" : 5,
-  "moneyTreeRatio" : 4000,
+  "moneyTreeRatio" : 1150,
   "offlineReward" : [ {
-    "value" : 8,
-    "unit" : "key"
+    "value" : 1,
+    "unit" : "iron_key"
   }, {
-    "value" : 8,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 8,
+    "value" : 80,
     "unit" : "gold"
   } ],
   "bonus" : [ {
     "unit" : "silver_key",
-    "value" : 3
+    "value" : 1
   }, {
     "unit" : "silver_chest",
-    "value" : 3
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 800
+    "value" : 905
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
@@ -437,26 +419,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 5,
   "enemyNumMax" : 5,
-  "moneyTreeRatio" : 4500,
+  "moneyTreeRatio" : 1300,
   "offlineReward" : [ {
-    "value" : 9,
-    "unit" : "key"
+    "value" : 1,
+    "unit" : "iron_key"
   }, {
-    "value" : 9,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 9,
+    "value" : 90,
     "unit" : "gold"
   } ],
   "bonus" : [ {
     "unit" : "golden_key",
-    "value" : 3
+    "value" : 1
   }, {
     "unit" : "golden_chest",
-    "value" : 3
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 900
+    "value" : 1020
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
@@ -499,26 +481,26 @@
   "battleNum" : 10,
   "enemyNumMin" : 5,
   "enemyNumMax" : 6,
-  "moneyTreeRatio" : 5000,
+  "moneyTreeRatio" : 1450,
   "offlineReward" : [ {
-    "value" : 10,
-    "unit" : "key"
+    "value" : 2,
+    "unit" : "iron_key"
   }, {
-    "value" : 10,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 10,
+    "value" : 100,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 4
+    "unit" : "golden_key",
+    "value" : 1
   }, {
-    "unit" : "iron_chest",
-    "value" : 4
+    "unit" : "golden_chest",
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 1000
+    "value" : 1135
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
@@ -561,32 +543,32 @@
 },"s100011": {
   "name" : "哀歌平原",
   "stageNum" : 11,
-  "next" : "s100012",
+  "next" : "s100001",
   "bg" : "s100011.png",
   "icon" : "stage_icon_s100011.png",
   "battleNum" : 10,
   "enemyNumMin" : 6,
   "enemyNumMax" : 6,
-  "moneyTreeRatio" : 5500,
+  "moneyTreeRatio" : 1600,
   "offlineReward" : [ {
-    "value" : 11,
-    "unit" : "key"
+    "value" : 3,
+    "unit" : "iron_key"
   }, {
-    "value" : 11,
+    "value" : 1,
     "unit" : "gem"
   }, {
-    "value" : 11,
+    "value" : 110,
     "unit" : "gold"
   } ],
   "bonus" : [ {
-    "unit" : "silver_key",
-    "value" : 4
+    "unit" : "golden_key",
+    "value" : 1
   }, {
-    "unit" : "silver_chest",
-    "value" : 4
+    "unit" : "golden_chest",
+    "value" : 1
   }, {
     "unit" : "gold",
-    "value" : 1100
+    "value" : 1250
   } ],
   "enemyTypes" : [ {
     "id" : "e1005",
