@@ -7,25 +7,46 @@ var player = {
     "into_stage_battle_timestamp": 0,
     "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
     "first_time": "",
+    // test data
     "resource": {
-        "gold": 10,
-        "gem": 10,
-        "relic": 10,
-        "wood": 0,
-        "leather": 0,
-        "stone": 0,
-        "bronze": 0,
-        "iron": 0,
-        "crystal": 0,
-        "rune": 0,
-        "essence": 0,
-        "iron_chest": 0,
-        "iron_key": 0,
-        "silver_chest": 0,
-        "silver_key": 0,
-        "golden_chest": 0,
-        "golden_key": 0,
+        "gold": 100000,
+        "gem": 10000,
+        "relic": 10000,
+        "wood": 100,
+        "leather": 100,
+        "stone": 100,
+        "bronze": 100,
+        "iron": 100,
+        "crystal": 100,
+        "rune": 100,
+        "essence": 100,
+        "iron_chest": 100,
+        "iron_key": 100,
+        "silver_chest": 100,
+        "silver_key": 100,
+        "golden_chest": 100,
+        "golden_key": 100,
     },
+    // release data
+    //"resource": {
+    //    "gold": 10,
+    //    "gem": 10,
+    //    "relic": 10,
+    //    "wood": 0,
+    //    "leather": 0,
+    //    "stone": 0,
+    //    "bronze": 0,
+    //    "iron": 0,
+    //    "crystal": 0,
+    //    "rune": 0,
+    //    "essence": 0,
+    //    "iron_chest": 0,
+    //    "iron_key": 0,
+    //    "silver_chest": 0,
+    //    "silver_key": 0,
+    //    "golden_chest": 0,
+    //    "golden_key": 0,
+    //},
     "statistics": {
         "total_fairy": 0,
         "total_gem": 0,
@@ -96,10 +117,10 @@ var PlayerData = {
 
     init: function () {
         var save = localStorage.getItem("save");
-        if(sgt ){
-            if(cc.isObject(sgt.context.playerData.save)){
+        if (sgt) {
+            if (cc.isObject(sgt.context.playerData.save)) {
                 save = sgt.context.playerData.save.content;
-            }else{
+            } else {
                 player.id = sgt.context.playerData.player.id;
                 player.name = sgt.context.playerData.player.name;
                 player.vip = sgt.context.playerData.player.vip || 1;
@@ -126,7 +147,7 @@ var PlayerData = {
                 player.heroes[i].life = this.heroes[i].getLife();
             }
         }
-        if(!player.first_time){
+        if (!player.first_time) {
             player.first_time = Date.parse(new Date());
         }
         this.stageData = new Stage(player.stage);
@@ -135,27 +156,28 @@ var PlayerData = {
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
-        if(sgt){
+        if (sgt) {
             var save = new SgtApi.Save();
-            if(sgt.context.playerData.player.level != player.heroes[0].lv){
+            if (sgt.context.playerData.player.level != player.heroes[0].lv) {
                 sgt.context.playerData.player.level = player.heroes[0].lv;
-                sgt.PlayerService.update(sgt.context.playerData.player,function(result,data){});
+                sgt.PlayerService.update(sgt.context.playerData.player, function (result, data) {
+                });
             }
 
             save.content = JSON.stringify(player);
             save.playerId = player.id;
-            sgt.PlayerService.uploadSave(save,function(result,data){
+            sgt.PlayerService.uploadSave(save, function (result, data) {
                 player.into_stage_battle_timestamp = data.lastUploadTime;
-                console.log('上传存档：'+result+",内容为"+data);
+                console.log('上传存档：' + result + ",内容为" + data);
             });
         }
     }
     ,
-    updateLeaderBoardScore: function(stageNum,leaderId){
-        SgtApi.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum, function(result, data) {
+    updateLeaderBoardScore: function (stageNum, leaderId) {
+        SgtApi.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum, function (result, data) {
             /*if (result) {
-                console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
-            }*/
+             console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
+             }*/
         });
     },
     getHeroes: function () {
@@ -268,17 +290,17 @@ var PlayerData = {
     countOfflineReward: function () {
         var datas = this.getStageData().getOfflineReward();
         var offlineTime = this.countOfflineTime();
-        if(offlineTime == 0){
-            return ;
+        if (offlineTime == 0) {
+            return;
         }
-        if(!cc.isObject(player.not_get_reward)){
+        if (!cc.isObject(player.not_get_reward)) {
             player.not_get_reward = {};
         }
         for (var i = 0; i < datas.length; i++) {
             if (datas[i].value) {
-                if(typeof player.not_get_reward[datas[i].unit] === 'undefined'){
+                if (typeof player.not_get_reward[datas[i].unit] === 'undefined') {
                     player.not_get_reward[datas[i].unit] = Math.floor(datas[i].value * offlineTime);
-                }else{
+                } else {
                     player.not_get_reward[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
                 }
             }
@@ -365,23 +387,23 @@ var PlayerData = {
         }
     }
     ,
-    getCurrentRanksByType: function (leaderId,callback) {
-        if(sgt && cc.isObject(sgt.context.playerData)){
+    getCurrentRanksByType: function (leaderId, callback) {
+        if (sgt && cc.isObject(sgt.context.playerData)) {
             SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
-        }else{
+        } else {
             return callback(false);
         }
     }
     ,
-    getMyRankByType: function (leaderId,callback) {
-        if(sgt && cc.isObject(sgt.context.playerData)){
+    getMyRankByType: function (leaderId, callback) {
+        if (sgt && cc.isObject(sgt.context.playerData)) {
             SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, sgt.context.playerData.player.id, callback);
-        }else{
+        } else {
             return callback(false);
         }
     }
     ,
-    getTotalHeroNum: function(){
+    getTotalHeroNum: function () {
         var num = 0;
         for (var i in PlayerData.getHeroes()) {
             if (PlayerData.getHeroes()[i].getLv() > 0) {
@@ -391,7 +413,7 @@ var PlayerData = {
         return num;
     }
     ,
-    getTotalHeroLevels: function(){
+    getTotalHeroLevels: function () {
         var levels = 0;
         for (var i in PlayerData.getHeroes()) {
             levels += PlayerData.getHeroes()[i].getLv();

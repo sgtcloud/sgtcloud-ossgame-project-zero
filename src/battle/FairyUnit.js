@@ -5,11 +5,10 @@ var FairyUnit = cc.Node.extend({
     ctor: function () {
         this._super();
         var json = ccs.load(res.fairy01_json);
-        this.node = json.node;
+        this.node = json.node.getChildByName("fairy01");
+        this.node.removeFromParent();
         this.animation = json.action;
         this.animationState = 'run';
-        var fairy = this.node.getChildByName("fairy01");
-
         {
             //去除CCS导出文件位移会自带缓动效果的问题
             var timelines = this.animation.getTimelines();
@@ -20,16 +19,17 @@ var FairyUnit = cc.Node.extend({
         this.playAnimation("run", true);
         var random = getRandomInt(0, 2);
         this.initFly(random);
+        //this.setContentSize(100, 100);
         //var self = this;
         bindTouchEventListener(function () {
-            if (this.animationState == 'run') {
+            if (this.animationState === 'run') {
                 cc.log("点中精灵");
                 this.stopAllActions();
                 this.playAnimation("die", false);
                 this.onDead(this.getPosition());
             }
-            return false;
-        }.bind(this), fairy);
+            return true;
+        }.bind(this), this);
         /*fairy.bindClickFairyEvent = function () {
          var listener = cc.EventListener.create({
          event: cc.EventListener.TOUCH_ONE_BY_ONE,
@@ -57,14 +57,14 @@ var FairyUnit = cc.Node.extend({
          fairy.bindClickFairyEvent();*/
         this.addChild(this.node);
     },
-    playAnimation: function (name, falg) {
-        this.animation.play(name, falg);
+    playAnimation: function (name, flag) {
+        this.animation.play(name, flag);
     },
     initFly: function (type) {
 
-        var move1 = cc.moveTo(4, cc.p(0, 280));
+        var move1 = cc.moveTo(4, cc.p(0, 40));
 
-        var move2 = cc.moveTo(4, cc.p(600, 280));
+        var move2 = cc.moveTo(4, cc.p(640, 40));
 
         var reversal = cc.callFunc(function () {
             this.node.setScale(-1, 1);
@@ -73,16 +73,17 @@ var FairyUnit = cc.Node.extend({
             this.node.setScale(1, 1);
         }, this);
         var removeNode = cc.callFunc(function () {
-            this.parent.reset();
+            customEventHelper.sendEvent(EVENT.RESET_FAIRY_COUNTDOWN);
             this.removeFromParent(true);
         }, this);
+        var dropMove;
         if (type == 1) {
-            this.setPosition(cc.p(600, 600));
-            var dropMove = cc.jumpTo(0.2, cc.p(600, 280), 0, 1);
+            this.setPosition(cc.p(640, 180));
+            dropMove = cc.jumpTo(0.2, cc.p(640, 40), 0, 1);
             this.sequence = cc.sequence(reversal, dropMove, move1, normal, move2, reversal, move1, removeNode);
         } else {
-            this.setPosition(cc.p(0, 600));
-            var dropMove = cc.jumpTo(0.2, cc.p(0, 280), 0, 1);
+            this.setPosition(cc.p(0, 180));
+            dropMove = cc.jumpTo(0.2, cc.p(0, 40), 0, 1);
             this.sequence = cc.sequence(normal, dropMove, move2, reversal, move1, normal, move2, removeNode);
         }
         this.runAction(this.sequence);
@@ -96,7 +97,7 @@ var FairyUnit = cc.Node.extend({
             this.createChest(position);
         }.bind(this), this), a, b, cc.callFunc(function () {
             player.statistics.total_fairy += 1;
-            this.getParent().reset();
+            customEventHelper.sendEvent(EVENT.RESET_FAIRY_COUNTDOWN);
             this.removeFromParent(true);
         }.bind(this), this)));
     },
@@ -128,7 +129,7 @@ var FairyUnit = cc.Node.extend({
         this.chestUnit.runAction(cc.sequence(appear, cc.delayTime(1), delay, removeNode));
     },
     generateLoot: function (rate) {
-        var pos = cc.p(this.chestUnit.getPositionX() + this.chestUnit.getParent().getPositionX(), this.chestUnit.getPositionY() + this.chestUnit.getParent().getPositionY());
+        var pos = this.getPosition();
         var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * rate);
         Loot.generateLoots({
             "unit": "gold",
@@ -153,7 +154,6 @@ var FairyUnit = cc.Node.extend({
                 });
             }
             cc.log(res.chestStyle + " , " + res.skill_id + " , " + res.level);
-            this.chestUnit.parent.reset();
         }.bind(this), this.chestUnit), a, b, cc.callFunc(function () {
             player.statistics.total_chest_open += 1;
             this.chestUnit.removeFromParent(true);

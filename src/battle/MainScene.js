@@ -1,20 +1,21 @@
 var MainScene = cc.Scene.extend({
-    onEnter: function () {
+
+    ctor : function () {
         this._super();
 
+        // init the widgets and layout them
+
         this.battlePanel = new BattlePanel(this);
-        this.battlePanel.initBattle(PlayerData.getStageData());
-        //tab container
+        //tab container in the bottom
         this.tabContainer = new TabContainer(this.battlePanel);
         this.tabContainer.setPosition(0, 0);
         this.addChild(this.tabContainer, 100);
-        this.tabContainer.updatePlayerGoldText();
 
-        //battle panel
+        //battle panel in the middle
         this.battlePanel.setPosition(0, this.tabContainer.height);
         this.addChild(this.battlePanel);
 
-        //top panel
+        //top panel on the top
         this.topPanel = new TopPanel(this);
         this.topPanel.setPosition(0, this.tabContainer.height + this.battlePanel.height);
         this.addChild(this.topPanel);
@@ -22,6 +23,7 @@ var MainScene = cc.Scene.extend({
 
         this.tabContainer.showMenuLayer('main');
 
+        // floating buff tips on the top of tab container
         var buffTip = new BuffView(res.buff_tip_json);
         this.buffTip = buffTip;
         this.buffTip.setVisible(false);
@@ -31,11 +33,11 @@ var MainScene = cc.Scene.extend({
         var width = this.width;
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
         this.addChild(this.buffTip);
-        var buffListNode=ccs.csLoader.createNode(res.buff_list_json);
+        var buffListNode = ccs.csLoader.createNode(res.buff_list_json);
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
-        this.battlePanel.addChild(buffListNode,5000);
-        var buffList=buffListNode.getChildByName('buff_list');
+        this.battlePanel.addChild(buffListNode, 5000);
+        var buffList = buffListNode.getChildByName('buff_list');
         (function (w) {
 
             //var mouseDownEventListener = cc.EventListener.create({
@@ -57,6 +59,7 @@ var MainScene = cc.Scene.extend({
             //cc.eventManager.addListener(mouseDownEventListener, buffList);
 
             var __toggle_hide = 0;
+
             function toggleBuffTip() {
                 buffTip.setVisible(true);
                 clearTimeout(__toggle_hide);
@@ -64,6 +67,7 @@ var MainScene = cc.Scene.extend({
                     buffTip.setVisible(false);
                 }, 5000);
             }
+
             function toggleBufflayer(time, text, icon) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
@@ -84,9 +88,14 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
+
             w.toggleBuffTip = toggleBuffTip;
             w.toggleBufflayer = toggleBufflayer;
         })(window);
+    },
+
+    onEnter: function () {
+        this._super();
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
     }
 });

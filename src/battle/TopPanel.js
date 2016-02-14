@@ -18,9 +18,9 @@ var TopPanel = cc.Node.extend({
         this.relicNum = pane.getChildByName('relic_text');
         this.goldNum = pane.getChildByName('gold_text');
         this.goldBtn = pane.getChildByName('getGold_btn');
-        bindButtonCallback(this.goldBtn,function(){
+        bindButtonCallback(this.goldBtn, function () {
             game.tabContainer.showMenuLayer("shop");
-        })
+        });
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());
         }.bind(this);
@@ -44,20 +44,20 @@ var TopPanel = cc.Node.extend({
         this.prev_stage_num = stageListRoot.getChildByName("level_text1");
         this.current_stage_num = stageListRoot.getChildByName("level_text2");
         this.next_stage_num = stageListRoot.getChildByName("level_text3");
-        this.state = TopPanel.STATE_NORMAL_BATTLE;
+        this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
         // register battle custom event
-        customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
+        customEventHelper.bindListener(EVENT.BATTLE_START, function () {
             self.refreshStageState();
             self.refreshStageList();
         });
-        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function (event) {
+        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
             self.refreshPlayerGoldText();
         });
 
-        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
+        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
             self.refreshPlayerGemText();
         });
-        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function (event) {
+        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
             self.refreshPlayerRelicText();
         });
 
@@ -70,15 +70,18 @@ var TopPanel = cc.Node.extend({
 
 
         this.refreshPlayerGemText = function () {
-            this.diamondNum.setString(PlayerData.getAmountByUnit("gem"));
+            var num = PlayerData.getAmountByUnit("gem");
+            this.diamondNum.setString(num);
             this.diamondNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerRelicText = function () {
-            this.relicNum.setString(PlayerData.getAmountByUnit("relic"));
+            var num = PlayerData.getAmountByUnit("relic");
+            this.relicNum.setString(num);
             this.relicNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerGoldText = function () {
-            this.goldNum.setString(PlayerData.getAmountByUnit("gold"));
+            var num = PlayerData.getAmountByUnit("gold");
+            this.goldNum.setString(num);
             this.goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
         };
         this.refreshPlayerKeyText = function () {
@@ -103,6 +106,7 @@ var TopPanel = cc.Node.extend({
 
             // 根据gui状态控制各个控件的可见性
             if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
+                cc.log("stage:" + cur + '/' + max);
                 this.battleNumText.setString(cur + '/' + max);
                 this.leaveBossBtn.setVisible(false);
                 this.fightBossBtn.setVisible(false);
@@ -129,17 +133,20 @@ var TopPanel = cc.Node.extend({
                 var preStage = new Stage(preStageId);
                 this.loadStageIcon(preStage, this.prev_stage_icon);
                 this.prev_stage_num.setString(preStage.getStageNum());
+                cc.log("preStage:" + preStage.getStageNum());
                 this.prev_stage_arrow.setVisible(true);
             } else {
                 this.prev_stage_arrow.setVisible(false);
             }
             this.loadStageIcon(PlayerData.getStageData(), this.current_stage_icon);
             this.current_stage_num.setString(PlayerData.getStageData().getStageNum());
+            cc.log("curStage:" + PlayerData.getStageData().getStageNum());
             var nextStageId = PlayerData.getStageData().getNextStageId();
             if (nextStageId) {
                 var nextStage = new Stage(nextStageId);
                 this.loadStageIcon(nextStage, this.next_stage_icon);
                 this.next_stage_num.setString(nextStage.getStageNum());
+                cc.log("nextStage:" + nextStage.getStageNum());
             }
         };
         this.loadStageIcon = function (stage, stageIconWidget) {

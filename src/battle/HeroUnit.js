@@ -106,24 +106,23 @@ var HeroUnit = BattleUnit.extend({
         };
         this.refreshLifeBar();
 
-        var self = this;
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
             // 暂时不需要改
         });
         customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
-            self.data.refreshProps();
+            this.data.refreshProps();
             PlayerData.refreshGlobeProps();
-        });
+        }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_EQUIP_UPGRADE, function (event) {
-            self.data.refreshProps();
+            this.data.refreshProps();
             PlayerData.refreshGlobeProps();
-        });
+        }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_BUY_REVIVE, function (event) {
             var hero = event.getUserData();
             if (hero.getId() === self.data.getId() && self.isDead()) {
-                self.recover = 0;
-                self.onRecover();
+                this.recover = 0;
+                this.onRecover();
             }
-        });
+        }.bind(this));
     }
 });

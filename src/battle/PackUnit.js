@@ -29,7 +29,7 @@ var PackUnit = cc.Node.extend({
             element.ignoreContentAdaptWithSize(true);
             element.setString(value);
         };
-        this.reFreshAll = function () {
+        this.refreshAll = function () {
             for (var i in packs) {
                 this.setElement(packs[i], player.resource[packs[i]], this.pack);
             }
@@ -84,9 +84,9 @@ var PackUnit = cc.Node.extend({
             self.openChest("iron_key", "iron_chest", "c1001")
         });
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
-            this.reFreshAll();
+            this.refreshAll();
         }.bind(this));
-        this.reFreshAll();
+        this.refreshAll();
         this.addChild(this.packLayer);
     }
 });
