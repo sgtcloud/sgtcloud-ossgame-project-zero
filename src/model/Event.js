@@ -14,8 +14,11 @@ var EVENT = {
     /**
      * 进入boss战斗
      */
-    FIGHT_BOSS_BATTLE: "FIGHT_BOSS_BATTLE"
-    ,
+    FIGHT_BOSS_BATTLE: "FIGHT_BOSS_BATTLE",
+    /**
+     * boss战斗获胜
+     */
+    WIN_BOSS_BATTLE: "WIN_BOSS_BATTLE",
     /**
      * 更新敌人的总血量
      */
@@ -109,15 +112,15 @@ var EVENT = {
      * 更新指定资源（金币、钻石、宝物...）
      * 参数:{unit:资源类型,value:资源值}
      */
-    UPDATE_RESOURCE:'UPDATE_RESOURCE',
+    UPDATE_RESOURCE: 'UPDATE_RESOURCE',
     /**
      * 英雄神器数量
      */
-    UPGRADE_EQUIP_NUM:"UPGRADE_EQUIP_NUM",
+    UPGRADE_EQUIP_NUM: "UPGRADE_EQUIP_NUM",
     /**
      * 重置小精灵计数
      */
-    RESET_FAIRY_COUNTDOWN:"RESET_FAIRY_COUNTDOWN"
+    RESET_FAIRY_COUNTDOWN: "RESET_FAIRY_COUNTDOWN"
 };
 
 var customEventHelper = {

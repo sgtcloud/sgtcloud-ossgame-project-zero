@@ -170,6 +170,8 @@ cc.game.onStart = function () {
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
         showCover();
+        initDatas();
+        initGame();
     }, this);
 };
 cc.game.run();

@@ -15,7 +15,7 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time": 180,
+    "flySpirit_interval_time": 10,
     "click_chest_random_events": [{
         "f": {
             "skill_id": "s10107",
@@ -85,8 +85,8 @@ Date.prototype.Format = function (fmt) { //author: meizz
     return fmt;
 }
 function initGame() {
-    game = new MainScene();
     PlayerData.init();
+    game = new MainScene();
 }
 function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
@@ -181,8 +181,6 @@ function showCover() {
     }
 
     bindButtonCallback(loginBtn, function () {
-        initDatas();
-        initGame();
         showGame();
     });
 
@@ -272,10 +270,11 @@ function unschedule(target) {
 
 function bindTouchEventListener(listener, target) {
 
-    var mouseDownEventListener = cc.EventListener.create({
+    var touchDownEventListener = cc.EventListener.create({
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
-        swallowTouches: false,
+        swallowTouches: true,
         onTouchBegan: function (touch, event) {
+            var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();
             var rect = cc.rect(0, 0, s.width, s.height);
@@ -286,7 +285,7 @@ function bindTouchEventListener(listener, target) {
             return false;
         },
     });
-    cc.eventManager.addListener(mouseDownEventListener, target);
+    cc.eventManager.addListener(touchDownEventListener, target);
 }
 
 function bindMouseEventListener(listener, target) {

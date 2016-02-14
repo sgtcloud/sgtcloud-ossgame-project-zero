@@ -98,7 +98,7 @@ var BattleField = cc.Class.extend({
         // add the background layer
         this.container.addChild(this.background);
 
-        bindMouseEventListener(function (touch) {
+        bindTouchEventListener(function (touch) {
             //cc.log("点中tap");
             var pos = this.container.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
@@ -119,7 +119,7 @@ var BattleField = cc.Class.extend({
             }
             this.runAction(cc.sequence(shockActions));
         }.bind(this.container));
-        customEventHelper.bindListener(EVENT.SCALE_BATTLE_FIELD, function (event) {
+        customEventHelper.bindListener(EVENT.SCALE_BATTLE_FIELD, function () {
             var scale1 = cc.scaleTo(0.1, 1.05);
             var scale1Back = cc.scaleTo(0.15, 1.0);
             var scale2 = cc.scaleTo(0.05, 1.025);
@@ -142,14 +142,15 @@ var BattleField = cc.Class.extend({
     initSpritesPositions: function (spritesLayer) {
         //initBattle heroes sprites positions
         this.heroPos = [];
-
-        for (var i = 0; i < 7; i++) {
+        var MAX_POS = 7;
+        var i = 0;
+        for (i = 0; i < MAX_POS; i++) {
             this.heroPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('hero' + (i + 1)).getPosition());
         }
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
-        for (var i = 0; i < 7; i++) {
+        for (i = 0; i < MAX_POS; i++) {
             this.enemyPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('enemy' + (i + 1)).getPosition());
         }
     },
@@ -180,9 +181,10 @@ var BattleField = cc.Class.extend({
     },
 
     initBattleHeroes: function () {
-        for (var i in PlayerData.getHeroes()) {
-            if (PlayerData.getHeroes()[i].getLv() > 0) {
-                this.addHeroIntoBattle(PlayerData.getHeroes()[i].getId());
+        var heroes = PlayerData.getHeroes();
+        for (var i in heroes) {
+            if (heroes[i].getLv() > 0) {
+                this.addHeroIntoBattle(heroes[i].getId());
             }
         }
     },
@@ -273,7 +275,7 @@ var BattleField = cc.Class.extend({
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
             this.generateStageLoots(stageData.getBonus());
-            stageData.leaveBossBattle();
+            customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             player.stage_battle_num = 1;
             stageData.goToNextStage();
             player.stage = stageData.getId();
@@ -320,12 +322,6 @@ var BattleField = cc.Class.extend({
         var fairy = new FairyUnit();
         this.addSprite(fairy, 2010);
     },
-
-    showChest: function (position) {
-        var chest = new ChestUnit();
-        chest.setPosition(position);
-        this.addSprite(chest, 2011);
-    },
     //todo refactor to event
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
@@ -355,5 +351,5 @@ var BattleField = cc.Class.extend({
 
     onEnemyVanish: function (enemy) {
 
-    },
-})
+    }
+});

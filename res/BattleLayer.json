@@ -1,6 +1,6 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
-  "Version": "2.3.3.0",
+  "Version": "2.3.4",
   "Name": "BattleLayer",
   "Content": {
     "Content": {
@@ -15,6 +15,7 @@
         "Tag": 174,
         "Children": [
           {
+            "ClipAble": false,
             "BackColorAlpha": 102,
             "SingleColor": {
               "R": 150,
@@ -53,6 +54,7 @@
             "Tag": 264,
             "Children": [
               {
+                "ClipAble": false,
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
@@ -840,7 +842,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "56982244103",
+                "LabelText": "0",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font19_white_kmbb-export.fnt",
@@ -864,17 +866,17 @@
                   "Y": 0.969
                 },
                 "PreSize": {
-                  "X": 0.2156,
+                  "X": 0.025,
                   "Y": 0.0257
                 },
                 "LeftMargin": 354.0496,
-                "RightMargin": 147.9504,
+                "RightMargin": 269.9504,
                 "TopMargin": 13.4407,
                 "BottomMargin": 707.5593,
                 "Tag": 138,
                 "ActionTag": -366591547,
                 "Size": {
-                  "X": 138.0,
+                  "X": 16.0,
                   "Y": 19.0
                 },
                 "Name": "enemy_life_text",
@@ -1175,53 +1177,6 @@
                 },
                 "Name": "time_bar",
                 "ctype": "LoadingBarObjectData"
-              },
-              {
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 200
-                },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 200
-                },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
-                },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
-                "TouchEnable": true,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 0.0,
-                  "Y": 250.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.3378
-                },
-                "PreSize": {
-                  "X": 1.0,
-                  "Y": 0.6757
-                },
-                "TopMargin": -10.0,
-                "BottomMargin": 250.0,
-                "Tag": 152,
-                "ActionTag": 1925056159,
-                "Size": {
-                  "X": 640.0,
-                  "Y": 500.0
-                },
-                "Name": "tap",
-                "ctype": "PanelObjectData"
               },
               {
                 "FontSize": 14,

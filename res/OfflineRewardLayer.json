@@ -640,22 +640,19 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "CharWidth": 14,
-                    "CharHeight": 13,
-                    "LabelText": "9999999",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "MarkedSubImage",
-                      "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": "ButtonUI.plist"
+                    "LabelText": "999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 78.7315,
-                      "Y": 94.6092
+                      "X": 75.5779,
+                      "Y": 96.6144
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -664,43 +661,40 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3937,
-                      "Y": 0.8601
+                      "X": 0.3779,
+                      "Y": 0.8783
                     },
                     "PreSize": {
-                      "X": 0.49,
-                      "Y": 0.1182
+                      "X": 0.4,
+                      "Y": 0.1636
                     },
-                    "LeftMargin": 29.7315,
-                    "RightMargin": 72.2685,
-                    "TopMargin": 8.8908,
-                    "BottomMargin": 88.1092,
-                    "Tag": 1062,
-                    "ActionTag": -711377854,
+                    "LeftMargin": 35.5779,
+                    "RightMargin": 84.4221,
+                    "TopMargin": 4.3856,
+                    "BottomMargin": 87.6144,
+                    "Tag": 55,
+                    "ActionTag": -1834989931,
                     "Size": {
-                      "X": 98.0,
-                      "Y": 13.0
+                      "X": 80.0,
+                      "Y": 18.0
                     },
                     "Name": "gold_text",
-                    "ctype": "TextAtlasObjectData"
+                    "ctype": "TextBMFontObjectData"
                   },
                   {
-                    "CharWidth": 14,
-                    "CharHeight": 13,
-                    "LabelText": "9999999",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "MarkedSubImage",
-                      "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": "ButtonUI.plist"
+                    "LabelText": "999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 78.7314,
-                      "Y": 54.2964
+                      "X": 75.5779,
+                      "Y": 54.6797
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -709,43 +703,40 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3937,
-                      "Y": 0.4936
+                      "X": 0.3779,
+                      "Y": 0.4971
                     },
                     "PreSize": {
-                      "X": 0.49,
-                      "Y": 0.1182
+                      "X": 0.4,
+                      "Y": 0.1636
                     },
-                    "LeftMargin": 29.7314,
-                    "RightMargin": 72.2686,
-                    "TopMargin": 49.2036,
-                    "BottomMargin": 47.7964,
-                    "Tag": 1063,
-                    "ActionTag": -268704995,
+                    "LeftMargin": 35.5779,
+                    "RightMargin": 84.4221,
+                    "TopMargin": 46.3203,
+                    "BottomMargin": 45.6797,
+                    "Tag": 56,
+                    "ActionTag": 1999476125,
                     "Size": {
-                      "X": 98.0,
-                      "Y": 13.0
+                      "X": 80.0,
+                      "Y": 18.0
                     },
                     "Name": "gem_text",
-                    "ctype": "TextAtlasObjectData"
+                    "ctype": "TextBMFontObjectData"
                   },
                   {
-                    "CharWidth": 14,
-                    "CharHeight": 13,
-                    "LabelText": "9999999",
-                    "StartChar": "0",
-                    "LabelAtlasFileImage_CNB": {
-                      "Type": "MarkedSubImage",
-                      "Path": "buttonUI/font16_yellow_b.png",
-                      "Plist": "ButtonUI.plist"
+                    "LabelText": "999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 78.7314,
-                      "Y": 13.3328
+                      "X": 75.5779,
+                      "Y": 16.1926
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -754,26 +745,25 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3937,
-                      "Y": 0.1212
+                      "X": 0.3779,
+                      "Y": 0.1472
                     },
                     "PreSize": {
-                      "X": 0.49,
-                      "Y": 0.1182
+                      "X": 0.4,
+                      "Y": 0.1636
                     },
-                    "LeftMargin": 29.7314,
-                    "RightMargin": 72.2686,
-                    "TopMargin": 90.1672,
-                    "BottomMargin": 6.8328,
-                    "CallBackType": "Touch",
-                    "Tag": 1064,
-                    "ActionTag": 1089525348,
+                    "LeftMargin": 35.5779,
+                    "RightMargin": 84.4221,
+                    "TopMargin": 84.8074,
+                    "BottomMargin": 7.1926,
+                    "Tag": 57,
+                    "ActionTag": 1174989453,
                     "Size": {
-                      "X": 98.0,
-                      "Y": 13.0
+                      "X": 80.0,
+                      "Y": 18.0
                     },
                     "Name": "key_text",
-                    "ctype": "TextAtlasObjectData"
+                    "ctype": "TextBMFontObjectData"
                   }
                 ],
                 "ActionTag": -76387688,
@@ -804,6 +794,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
+        "font/font16_yellow_kmbb-export.fnt",
+        "font/font16_yellow_kmbb-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

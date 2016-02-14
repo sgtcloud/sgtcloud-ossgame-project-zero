@@ -267,6 +267,8 @@ var SkillListMenu = BattleMenu.extend({
         customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK, function () {
             var totalHit = PlayerData.getTotalHit();
             var totalAttack = PlayerData.getTotalAttack();
+            cc.log("totalHit:" + totalHit);
+            cc.log("totalAttack:" + totalAttack);
             tatk_text.setString(Math.floor(totalHit));
             atk_text.setString(Math.floor(totalAttack));
         });
@@ -1031,7 +1033,7 @@ var EquipListMenu = BattleMenu.extend({
                         itemIcon.setColor(cc.color(90, 90, 90));
                     });
                     customEventHelper.bindListener("itemIcon-" + equip.getId() + "-white", function () {
-                        itemIcon.setColor(cc.color(255,255,255));
+                        itemIcon.setColor(cc.color(255, 255, 255));
                     });
                     itemList.addChild(item);
                 }
@@ -1087,7 +1089,7 @@ var EquipListMenu = BattleMenu.extend({
                 //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-white");
                 //}
 
-                refeshItemIcon(validateResourceNotEnough(upgradeCost, upgradeBtn, text),equip.getId());
+                refeshItemIcon(validateResourceNotEnough(upgradeCost, upgradeBtn, text), equip.getId());
 
                 customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function (event) {
                     updateResource(equip, {unit: 'gold'}, upgradeBtn, text);
@@ -1126,9 +1128,9 @@ var EquipListMenu = BattleMenu.extend({
                         text.setString(nextCost.value);
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
-                    refeshItemIcon(!lockItemIfNecessary(hero, equip, elements),equip.getId());
+                    refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 });
-                refeshItemIcon(!lockItemIfNecessary(hero, equip, elements),equip.getId());
+                refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
                     if (canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
                         elements.lock_btn.layer.isVisible() && elements.lock_btn.layer.setVisible(false);
@@ -1139,13 +1141,15 @@ var EquipListMenu = BattleMenu.extend({
             setFont([name, desc])
             return root;
         }
-        function refeshItemIcon(flag,id){
+
+        function refeshItemIcon(flag, id) {
             if (flag) {
-                customEventHelper.sendEvent("itemIcon-" + id+ "-gray");
+                customEventHelper.sendEvent("itemIcon-" + id + "-gray");
             } else {
                 customEventHelper.sendEvent("itemIcon-" + id + "-white");
             }
         }
+
         function updateResource(equip, data, upgradeBtn, text) {
             var cost = equip.getNextLevelUpgrade();
             var unit = data['unit'];
@@ -1156,7 +1160,7 @@ var EquipListMenu = BattleMenu.extend({
                 //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-white");
                 //}
 
-                refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text),equip.getId());
+                refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text), equip.getId());
             }
         }
 

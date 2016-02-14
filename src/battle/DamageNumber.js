@@ -25,7 +25,7 @@ var DamageNumber = cc.Class.extend({
             this.textAtlas.removeFromParent(true);
             cc.pool.putInPool(this);
         }, this);
-        this.initData(val, ctr);
+        //this.initData(val, ctr);
     },
 
     initData: function (val, ctr) {

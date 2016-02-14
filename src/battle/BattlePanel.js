@@ -1,7 +1,7 @@
 var BATTLE_STATE = {
     STATE_NORMAL_BATTLE: 0,
     STATE_BOSS_BATTLE: 1,
-    STATE_BOSS_READY: 2,
+    STATE_BOSS_READY: 2
 };
 
 
@@ -31,11 +31,10 @@ var BattlePanel = cc.Node.extend({
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
             //var staticUnit = new StatisticsUnit();
-
             //staticUnit.ignoreAnchorPointForPosition(true);
             //popup(staticUnit,4000);
             popup(new GamePopup(new StatisticsUnit(), cc.p(320, 580), false), 4000);
-        });
+        }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 
         bindButtonCallback(this.rewardBtn, function () {
@@ -74,13 +73,19 @@ var BattlePanel = cc.Node.extend({
             this.disableBossBattleTimeCounter();
             this.battleField.prepareBattle(PlayerData.getStageData());
         }.bind(this));
+        customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
+            PlayerData.getStageData().leaveBossBattle();
+            this.disableBossBattleTimeCounter();
+        }.bind(this));
 
         customEventHelper.bindListener(EVENT.UPDATE_ENEMY_LIFE, function (event) {
             var max = event.getUserData().max;
             var life = event.getUserData().life;
-            this.enemyLifeText.ignoreContentAdaptWithSize(true);
-            this.enemyLifeText.setString(life);
-            this.enemyLifeBar.setPercent(life / max * 100);
+            if (cc.isNumber(max) && cc.isNumber(life)) {
+                this.enemyLifeText.ignoreContentAdaptWithSize(true);
+                this.enemyLifeText.setString(life);
+                this.enemyLifeBar.setPercent(life / max * 100);
+            }
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.RESET_FAIRY_COUNTDOWN, function () {
@@ -104,8 +109,8 @@ var BattlePanel = cc.Node.extend({
                     this.updateBossBattleTime(dt, stage);
                 }
             }
-        },
-            this.reset();
+        };
+        this.reset();
         this.scheduleUpdate();
     },
 
@@ -127,6 +132,7 @@ var BattlePanel = cc.Node.extend({
                 }
                 var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
                 offlineRewardLayerText.ignoreContentAdaptWithSize(true);
+                cc.log("offlineReward:" + rewards[tempKey]);
                 offlineRewardLayerText.setString(rewards[tempKey]);
             }
         }
@@ -149,14 +155,11 @@ var BattlePanel = cc.Node.extend({
     reset: function () {
         this.intervalTime = 0;
         this.intervalState = true;
+        this.bossTimeMax = 0;
     }
     ,
     loadRewardBtn: function () {
-        if (cc.isObject(player.not_get_reward)) {
-            this.rewardBtn.visible = true;
-        } else {
-            this.rewardBtn.visible = false;
-        }
+        this.rewardBtn.visible = cc.isObject(player.not_get_reward);
     }
     ,
     disableBossBattleTimeCounter: function () {
@@ -169,20 +172,19 @@ var BattlePanel = cc.Node.extend({
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
-        this.boosTimeMax = stage.getBossTimeMax();
+        this.bossTimeMax = stage.getBossTimeMax();
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
     }
     ,
     updateBossBattleTime: function (dt, stage) {
-        if (Math.floor(this.boosTimeMax) < 0) {
+        if (Math.floor(this.bossTimeMax) < 0) {
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         } else {
-            this.boosTimeMax = this.boosTimeMax - dt;
-            this.timeText.setString(Math.floor(this.boosTimeMax));
-            this.timeBar.setPercent(Math.floor(this.boosTimeMax) / stage.getBossTimeMax() * 100);
+            this.bossTimeMax = this.bossTimeMax - dt;
+            this.timeText.setString(Math.floor(this.bossTimeMax));
+            this.timeBar.setPercent(Math.floor(this.bossTimeMax) / stage.getBossTimeMax() * 100);
         }
     }
-    ,
 
 });
