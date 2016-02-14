@@ -214,14 +214,14 @@
                 <PreSize X="0.1437" Y="0.0270" />
                 <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="147.9504" TopMargin="13.4407" BottomMargin="707.5593" LabelText="56982244103" ctype="TextBMFontObjectData">
-                <Size X="138.0000" Y="19.0000" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="269.9504" TopMargin="13.4407" BottomMargin="707.5593" LabelText="0" ctype="TextBMFontObjectData">
+                <Size X="16.0000" Y="19.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="354.0496" Y="717.0593" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5532" Y="0.9690" />
-                <PreSize X="0.2156" Y="0.0257" />
+                <PreSize X="0.0250" Y="0.0257" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="499.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

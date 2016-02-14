@@ -31,20 +31,11 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="Btn_MaxLevel.csd" />
-          <FilePathData Path="Btn_Upgrade2.csd" />
-          <FilePathData Path="StatisticsUI.csi" />
-          <FilePathData Path="RankUI.csi" />
-          <FilePathData Path="StatisticsLayer.csd" />
-          <FilePathData Path="PackLayer.csd" />
-          <FilePathData Path="EquipHeroView.csd" />
-          <FilePathData Path="Equiplayer.csd" />
-          <FilePathData Path="Btn_Upgrade1.csd" />
-          <FilePathData Path="EquipUI.csi" />
-          <FilePathData Path="SkillLayer.csd" />
-          <FilePathData Path="EquipView.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="OfflineRewardLayer.csd" />
+          <FilePathData Path="ButtonUI.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="EquipHeroView.csd" />
+        <ActiveDocument Path="ButtonUI.csi" />
       </Value>
     </Item>
   </Properties>
