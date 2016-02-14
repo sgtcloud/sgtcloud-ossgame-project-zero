@@ -142,35 +142,35 @@
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="-711377854" Tag="1062" IconVisible="False" LeftMargin="29.7315" RightMargin="72.2685" TopMargin="8.8908" BottomMargin="88.1092" CharWidth="14" CharHeight="13" LabelText="9999999" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="98.0000" Y="13.0000" />
+                  <AbstractNodeData Name="gold_text" ActionTag="-1834989931" Tag="55" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="4.3856" BottomMargin="87.6144" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="80.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="78.7315" Y="94.6092" />
+                    <Position X="75.5779" Y="96.6144" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3937" Y="0.8601" />
-                    <PreSize X="0.4900" Y="0.1182" />
-                    <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="buttonUI/font16_yellow_b.png" Plist="ButtonUI.plist" />
+                    <PrePosition X="0.3779" Y="0.8783" />
+                    <PreSize X="0.4000" Y="0.1636" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gem_text" ActionTag="-268704995" Tag="1063" IconVisible="False" LeftMargin="29.7314" RightMargin="72.2686" TopMargin="49.2036" BottomMargin="47.7964" CharWidth="14" CharHeight="13" LabelText="9999999" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="98.0000" Y="13.0000" />
+                  <AbstractNodeData Name="gem_text" ActionTag="1999476125" Tag="56" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="46.3203" BottomMargin="45.6797" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="80.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="78.7314" Y="54.2964" />
+                    <Position X="75.5779" Y="54.6797" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3937" Y="0.4936" />
-                    <PreSize X="0.4900" Y="0.1182" />
-                    <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="buttonUI/font16_yellow_b.png" Plist="ButtonUI.plist" />
+                    <PrePosition X="0.3779" Y="0.4971" />
+                    <PreSize X="0.4000" Y="0.1636" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="key_text" ActionTag="1089525348" CallBackType="Touch" Tag="1064" IconVisible="False" LeftMargin="29.7314" RightMargin="72.2686" TopMargin="90.1672" BottomMargin="6.8328" CharWidth="14" CharHeight="13" LabelText="9999999" StartChar="0" ctype="TextAtlasObjectData">
-                    <Size X="98.0000" Y="13.0000" />
+                  <AbstractNodeData Name="key_text" ActionTag="1174989453" Tag="57" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="84.8074" BottomMargin="7.1926" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="80.0000" Y="18.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="78.7314" Y="13.3328" />
+                    <Position X="75.5779" Y="16.1926" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3937" Y="0.1212" />
-                    <PreSize X="0.4900" Y="0.1182" />
-                    <LabelAtlasFileImage_CNB Type="MarkedSubImage" Path="buttonUI/font16_yellow_b.png" Plist="ButtonUI.plist" />
+                    <PrePosition X="0.3779" Y="0.1472" />
+                    <PreSize X="0.4000" Y="0.1636" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
