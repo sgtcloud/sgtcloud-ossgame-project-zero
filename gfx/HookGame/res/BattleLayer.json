@@ -840,7 +840,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "56982244103",
+                "LabelText": "0",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/font19_white_kmbb-export.fnt",
@@ -864,17 +864,17 @@
                   "Y": 0.969
                 },
                 "PreSize": {
-                  "X": 0.2156,
+                  "X": 0.025,
                   "Y": 0.0257
                 },
                 "LeftMargin": 354.0496,
-                "RightMargin": 147.9504,
+                "RightMargin": 269.9504,
                 "TopMargin": 13.4407,
                 "BottomMargin": 707.5593,
                 "Tag": 138,
                 "ActionTag": -366591547,
                 "Size": {
-                  "X": 138.0,
+                  "X": 16.0,
                   "Y": 19.0
                 },
                 "Name": "enemy_life_text",
