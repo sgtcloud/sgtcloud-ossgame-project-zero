@@ -434,12 +434,9 @@
         <Project Name="CloseBtn.csd" Type="Layer" />
         <Project Name="EnemyList.csd" Type="Layer" />
         <Project Name="EquipBtn.csd" Type="Layer" />
-        <Project Name="EquipDesc.csd" Type="Layer" />
         <Project Name="EquipHeroView.csd" Type="Layer" />
         <Project Name="Equiplayer.csd" Type="Layer" />
         <Project Name="EquipView.csd" Type="Layer" />
-        <Project Name="GoldLayer.csd" Type="Layer" />
-        <Project Name="HeroBtn.csd" Type="Layer" />
         <Project Name="HeroDescLayer.csd" Type="Layer" />
         <Project Name="HeroDescView.csd" Type="Layer" />
         <Project Name="HeroLayer.csd" Type="Layer" />
@@ -547,6 +544,7 @@
           <Fnt Name="font18_white-export.fnt" />
           <Image Name="font18_white-export.png" />
           <Fnt Name="font14_white_kmbb-export.fnt" />
+          <Image Name="font22_white_kmbb-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />
