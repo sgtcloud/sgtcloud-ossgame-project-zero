@@ -28,8 +28,8 @@ var FairyUnit = cc.Node.extend({
                 this.playAnimation("die", false);
                 this.onDead(this.getPosition());
             }
-            return true;
-        }.bind(this), this);
+            return false;
+        }.bind(this), this.node);
         /*fairy.bindClickFairyEvent = function () {
          var listener = cc.EventListener.create({
          event: cc.EventListener.TOUCH_ONE_BY_ONE,
