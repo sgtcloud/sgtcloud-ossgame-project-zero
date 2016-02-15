@@ -540,6 +540,8 @@
           <Image Name="white18-export.png" />
           <Image Name="white20-export.png" />
           <Image Name="white22-export.png" />
+          <Fnt Name="white10-export.fnt" />
+          <Image Name="white10-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />

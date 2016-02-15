@@ -149,7 +149,11 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 33,
+                  "G": 233,
+                  "B": 21
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5146,
@@ -191,7 +195,9 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5599,
@@ -273,7 +279,11 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 42,
+                  "G": 241,
+                  "B": 21
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5103,

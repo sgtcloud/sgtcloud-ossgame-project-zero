@@ -349,7 +349,7 @@
                 "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/green14-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -364,7 +364,11 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 18,
+                  "G": 245,
+                  "B": 75
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4902,
@@ -448,8 +452,6 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/green14-export.fnt",
-        "font/green14-export.png",
         "font/white14-export.fnt",
         "font/white14-export.png",
         "mainUI/empty.png",

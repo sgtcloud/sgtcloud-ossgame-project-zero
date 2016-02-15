@@ -382,14 +382,14 @@
                     "LabelText": "6666",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/white14-export.fnt",
+                      "Path": "font/white10-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 22.5,
+                      "X": 28.5,
                       "Y": 29.9999
                     },
                     "Scale": {
@@ -402,21 +402,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1667,
+                      "X": 0.2111,
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.4519,
+                      "X": 0.4222,
                       "Y": 0.3
                     },
-                    "LeftMargin": 22.5,
-                    "RightMargin": 51.5,
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
                     "TopMargin": 21.0001,
                     "BottomMargin": 20.9999,
                     "Tag": 821,
                     "ActionTag": 1223469565,
                     "Size": {
-                      "X": 61.0,
+                      "X": 57.0,
                       "Y": 18.0
                     },
                     "Name": "relic_text",
@@ -426,15 +426,15 @@
                     "LabelText": "6666",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/white14-export.fnt",
+                      "Path": "font/white10-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 22.5,
-                      "Y": 63.0
+                      "X": 28.5,
+                      "Y": 63.0001
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -446,21 +446,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1667,
+                      "X": 0.2111,
                       "Y": 1.05
                     },
                     "PreSize": {
-                      "X": 0.4519,
+                      "X": 0.4222,
                       "Y": 0.3
                     },
-                    "LeftMargin": 22.5,
-                    "RightMargin": 51.5,
-                    "TopMargin": -12.0,
-                    "BottomMargin": 54.0,
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
+                    "TopMargin": -12.0001,
+                    "BottomMargin": 54.0001,
                     "Tag": 820,
                     "ActionTag": -922470840,
                     "Size": {
-                      "X": 61.0,
+                      "X": 57.0,
                       "Y": 18.0
                     },
                     "Name": "diamond_text",
@@ -624,17 +624,17 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "LabelText": "999999",
+                    "LabelText": "999.3k",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/white14-export.fnt",
+                      "Path": "font/white10-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 22.5,
+                      "X": 28.5001,
                       "Y": -2.5684
                     },
                     "Scale": {
@@ -646,21 +646,22 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1667,
+                      "X": 0.2111,
                       "Y": -0.0428
                     },
                     "PreSize": {
-                      "X": 0.7185,
+                      "X": 0.5111,
                       "Y": 0.3
                     },
-                    "LeftMargin": 22.5,
-                    "RightMargin": 15.5,
+                    "LeftMargin": 28.5001,
+                    "RightMargin": 37.4999,
                     "TopMargin": 53.5684,
                     "BottomMargin": -11.5684,
+                    "CallBackType": "Touch",
                     "Tag": 822,
                     "ActionTag": 700294411,
                     "Size": {
-                      "X": 97.0,
+                      "X": 69.0,
                       "Y": 18.0
                     },
                     "Name": "gold_text",
@@ -1011,8 +1012,8 @@
       },
       "UsedResources": [
         "EnemyList.json",
-        "font/white14-export.fnt",
-        "font/white14-export.png",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "font/white18-export.fnt",
         "font/white18-export.png",
         "mainUI/battle_icon.png",

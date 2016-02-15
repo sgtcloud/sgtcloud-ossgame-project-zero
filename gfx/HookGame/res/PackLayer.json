@@ -623,7 +623,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2112,
@@ -664,7 +666,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2112,
@@ -705,7 +709,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2112,
@@ -746,7 +752,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2112,
@@ -787,7 +795,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6799,
@@ -828,7 +838,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6799,
@@ -869,7 +881,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6799,
@@ -910,7 +924,9 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6799,
@@ -1438,7 +1454,11 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.1925,
@@ -1479,7 +1499,11 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.5,
@@ -1520,7 +1544,11 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.8057,
@@ -1561,7 +1589,10 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2544,
@@ -1602,7 +1633,10 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.5542,
@@ -1643,7 +1677,10 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.8561,

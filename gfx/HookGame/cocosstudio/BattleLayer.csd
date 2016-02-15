@@ -273,7 +273,7 @@
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="136.4417" Y="706.6021" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
+                <CColor A="255" R="255" G="0" B="0" />
                 <PrePosition X="0.2132" Y="0.9549" />
                 <PreSize X="0.0516" Y="0.0270" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />

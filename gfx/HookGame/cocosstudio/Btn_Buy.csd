@@ -29,7 +29,7 @@
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="82.6469" Y="58.6780" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
+                <CColor A="255" R="255" G="255" B="0" />
                 <PrePosition X="0.5903" Y="0.7335" />
                 <PreSize X="0.3500" Y="0.2250" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />

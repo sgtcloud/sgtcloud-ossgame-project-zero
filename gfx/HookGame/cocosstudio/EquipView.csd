@@ -29,7 +29,7 @@
                 <PreSize X="0.1500" Y="0.8182" />
                 <FileData Type="MarkedSubImage" Path="equipUI/equip_icon.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipName_text" Visible="False" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="304.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="304.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="180.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="115.7146" Y="86.4999" />

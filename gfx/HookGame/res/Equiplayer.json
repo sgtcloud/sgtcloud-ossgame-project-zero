@@ -268,8 +268,8 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 16,
-                    "LabelText": "*主角神器可提升全队属性\n*英雄装备科提升所属英雄属性\n*神器和装备均可升级\n\n",
+                    "FontSize": 15,
+                    "LabelText": "*主角神器可提升全队属性\n*英雄装备科提升所属英雄属性\n*神器和装备均可升级",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -283,10 +283,13 @@
                     },
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {},
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
                     "Position": {
-                      "X": 129.9151,
-                      "Y": 12.7913
+                      "X": 279.9151,
+                      "Y": 42.7913
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -295,8 +298,8 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2082,
-                      "Y": 0.1163
+                      "X": 0.4486,
+                      "Y": 0.389
                     },
                     "PreSize": {
                       "X": 0.4808,

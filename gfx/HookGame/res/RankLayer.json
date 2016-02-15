@@ -411,7 +411,7 @@
                 "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/green14-export.fnt",
+                  "Path": "font/white10-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -419,32 +419,36 @@
                   "ScaleY": 0.5168
                 },
                 "Position": {
-                  "X": 367.481,
-                  "Y": 707.1227
+                  "X": 367.4811,
+                  "Y": 708.0499
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 22,
+                  "G": 240,
+                  "B": 10
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5742,
-                  "Y": 0.8222
+                  "Y": 0.8233
                 },
                 "PreSize": {
-                  "X": 0.1016,
+                  "X": 0.0891,
                   "Y": 0.0209
                 },
-                "LeftMargin": 333.9899,
-                "RightMargin": 241.0101,
-                "TopMargin": 144.179,
-                "BottomMargin": 697.821,
+                "LeftMargin": 338.1119,
+                "RightMargin": 244.8881,
+                "TopMargin": 143.2518,
+                "BottomMargin": 698.7482,
                 "CallBackType": "Touch",
                 "Tag": 591,
                 "ActionTag": -1707227176,
                 "Size": {
-                  "X": 65.0,
+                  "X": 57.0,
                   "Y": 18.0
                 },
                 "Name": "myNum_text",
@@ -632,8 +636,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/green14-export.fnt",
-        "font/green14-export.png",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
         "mainUI/bg_10.png",
