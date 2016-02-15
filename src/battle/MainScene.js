@@ -61,6 +61,7 @@ var MainScene = cc.Scene.extend({
             var __toggle_hide = 0;
 
             function toggleBuffTip() {
+                console.log('llklkjlkjlk')
                 buffTip.setVisible(true);
                 clearTimeout(__toggle_hide);
                 __toggle_hide = setTimeout(function () {

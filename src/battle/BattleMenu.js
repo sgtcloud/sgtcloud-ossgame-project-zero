@@ -97,6 +97,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     that.root.setVisible(true);
                 }
             });
+            var randomBuff = false;
             customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (e) {
                 var data = e.getUserData();
                 if (that.skill.getId() === data.skillId) {
@@ -112,11 +113,25 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     //    toggleBuffTip();
                     //} else
                     //    tryFire(that.skill.getLevelData());
-
-
                     if (!(isCoolDowning || heroDead)) {
-                        tryFire(that.skill.getLevelData());
-                    } else if (isCoolDowning && !heroDead) {
+                        //tryFire(that.skill.getLevelData(),function(){
+                        //    that.skill_icon.setTouchEnabled(true);
+                        //    that.skill_icon.setColor(cc.color(255,255,255));
+                        //});
+
+                        var duration = that.skill.getLevelData()['duration'];
+                        if (duration > 0) {
+                            toggleBufflayer(duration, buildSkillBuffDesc(skill), that.skill.getIcon());
+                        }
+                        customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                        randomBuff = true;
+                        that.skill_icon.setColor(cc.color(90, 90, 90));
+
+                        setTimeout(function () {
+                            that.skill_icon.setColor(cc.color(255, 255, 255));
+                            randomBuff = false;
+                        }, duration * 1000);
+                    } else if (isCoolDowning && !heroDead && randomBuff) {
                         console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
                         toggleBuffTip();
                     }
@@ -125,21 +140,17 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
             function doCoolDown(levelData) {
                 if (levelData['cooldown'] > 0) {
                     isCoolDowning = true;
-                    that.cooldownText.setVisible(true)
-                    that.time.setVisible(true)
-                    that.time.setString(levelData['cooldown'])
-                    //that.skill_icon.setTouchEnabled(false);
+                    that.cooldownText.setVisible(true);
+                    that.time.setVisible(true);
+                    that.time.setString(levelData['cooldown']);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
-                    //cc.eventManager.resumeTarget(that.skill_icon);
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
                         if (!heroDead) {
-                            //!that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
                         if (!heroDead) {
                             that.time.isVisible() && that.time.setVisible(false)
-                            //cc.eventManager.pauseTarget(that.skill_icon);
                         }
                         isCoolDowning = false;
                     });
@@ -165,9 +176,13 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 //doCoolDown(levelData);
-                tryFire(levelData);
-                if (levelData['duration'] > 0) {
+                if (randomBuff) {
+                    toggleBuffTip();
+                } else {
+                    tryFire(levelData);
                 }
+                //if (levelData['duration'] > 0) {
+                //}
             });
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
@@ -462,6 +477,8 @@ var HeroListMenu = BattleMenu.extend({
             elements.maxLevel_btn = {};
             elements.maxLevel_btn.layer = maxLevel;
             elements.maxLevel_btn.btn = maxLevel.getChildByName('btn');
+            elements.maxLevel_btn.btn.setEnabled(false)
+            elements.maxLevel_btn.btn.setBright(false)
             elements.maxLevel_btn.upMax_text = maxLevel.getChildByName('upMax_text');
             elements.maxLevel_btn.layer.setVisible(false);
         }
@@ -523,7 +540,7 @@ var HeroListMenu = BattleMenu.extend({
                 if (hero.getCurrentLife() <= 0) {
                     var resurge = hero.getResurge();
                     //resurge['cost']['value'] = -resurge['value'];
-                    var cost={unit:resurge['cost'],value:-resurge['value']}
+                    var cost = {unit: resurge['cost'], value: -resurge['value']}
                     PlayerData.updateResource([cost]);
                     PlayerData.updatePlayer();
                     customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
@@ -872,7 +889,7 @@ var EquipListMenu = BattleMenu.extend({
             diamond_icon.setVisible(false);
             equipAll_text.setVisible(false);
             relic_icon.setVisible(true);
-            setFont(decs_text)
+            setFont(decs_text);
             var elements = {
                 buy_btn_layer: buy_btn_layer,
                 equipAll_text: equipAll_text,
@@ -997,14 +1014,16 @@ var EquipListMenu = BattleMenu.extend({
                 for (var i = 0; i < hero.getEquipCount(); i++) {
                     var equip = hero.getEquipData(i);
                     var item = itemView.clone();
-                    var itemIcon = item.getChildByName('item_icon');
-                    itemIcon.loadTexture('res/icon/equips/' + equip.getIcon());
-                    customEventHelper.bindListener("itemIcon-" + equip.getId() + "-gray", function () {
-                        itemIcon.setColor(cc.color(90, 90, 90));
-                    });
-                    customEventHelper.bindListener("itemIcon-" + equip.getId() + "-white", function () {
-                        itemIcon.setColor(cc.color(255, 255, 255));
-                    });
+                    (function (item) {
+                        var itemIcon = item.getChildByName('item_icon');
+                        itemIcon.loadTexture('res/icon/equips/' + equip.getIcon());
+                        customEventHelper.bindListener("itemIcon-" + equip.getId() + "-gray", function () {
+                            itemIcon.setColor(cc.color(90, 90, 90));
+                        });
+                        customEventHelper.bindListener("itemIcon-" + equip.getId() + "-white", function () {
+                            itemIcon.setColor(cc.color(255, 255, 255));
+                        });
+                    })(item)
                     itemList.addChild(item);
                 }
             }
@@ -1023,6 +1042,9 @@ var EquipListMenu = BattleMenu.extend({
             lockLayer.setPosition(lockBtnPosition);
             var maxLevel = maxLevelBtnTemplate.clone();
             maxLevel.setPosition(maxLevelBtnPosition);
+            var maxBtn=maxLevel.getChildByName('btn');
+            maxBtn.setEnabled(false);
+            maxBtn.setBright(false);
             var upgradeLayer = upgradeBtnTemp.clone();
             upgradeLayer.setPosition(upgradeSkillPosition);
             root.addChild(lockLayer);
