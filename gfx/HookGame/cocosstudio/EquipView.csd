@@ -29,7 +29,7 @@
                 <PreSize X="0.1500" Y="0.8182" />
                 <FileData Type="MarkedSubImage" Path="equipUI/equip_icon.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipName_text" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="304.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="equipName_text" Visible="False" ActionTag="-2094451360" Tag="44" IconVisible="False" LeftMargin="115.7146" RightMargin="304.2854" TopMargin="13.5001" BottomMargin="76.4999" IsCustomSize="True" FontSize="20" LabelText="神器名字六字" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="180.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="115.7146" Y="86.4999" />
@@ -51,15 +51,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="306.0510" RightMargin="210.9490" TopMargin="17.0813" BottomMargin="77.9187" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
-                <Size X="83.0000" Y="15.0000" />
+              <AbstractNodeData Name="equipLevel_text" ActionTag="1417978744" Tag="1093" IconVisible="False" LeftMargin="293.0513" RightMargin="185.9487" TopMargin="13.5813" BottomMargin="76.4187" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
+                <Size X="121.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="306.0510" Y="85.4187" />
+                <Position X="293.0513" Y="86.4187" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5101" Y="0.7765" />
-                <PreSize X="0.1383" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.4884" Y="0.7856" />
+                <PreSize X="0.2017" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="upgrade_btn" ActionTag="-936342614" Tag="714" IconVisible="True" LeftMargin="442.5508" RightMargin="17.4492" TopMargin="13.6489" BottomMargin="16.3511" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />

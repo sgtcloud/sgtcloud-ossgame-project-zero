@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -64,8 +66,8 @@
                   "Y": 0.0
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
                 },
                 "CColor": {},
                 "IconVisible": false,
@@ -74,9 +76,11 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 1.0,
-                  "Y": 1.0
+                  "X": 1.25,
+                  "Y": 1.25
                 },
+                "RightMargin": -80.0,
+                "TopMargin": -14.0,
                 "Tag": 669,
                 "ActionTag": 94567109,
                 "Size": {
@@ -99,27 +103,27 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 200.0,
-                  "Y": 35.0
+                  "X": 162.2,
+                  "Y": 28.0
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
+                  "X": 0.5069,
                   "Y": 0.5
                 },
                 "PreSize": {
-                  "X": 0.7775,
-                  "Y": 0.6
+                  "X": 0.9719,
+                  "Y": 0.75
                 },
-                "LeftMargin": 44.5,
-                "RightMargin": 44.5,
-                "TopMargin": 14.0,
-                "BottomMargin": 14.0,
+                "LeftMargin": 6.7,
+                "RightMargin": 2.3,
+                "TopMargin": 7.0,
+                "BottomMargin": 7.0,
                 "Tag": 670,
                 "ActionTag": -1036710942,
                 "Size": {
@@ -132,16 +136,16 @@
             ],
             "ActionTag": 740471299,
             "Size": {
-              "X": 400.0,
-              "Y": 70.0
+              "X": 320.0,
+              "Y": 56.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 400.0,
-          "Y": 70.0
+          "X": 320.0,
+          "Y": 56.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

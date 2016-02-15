@@ -70,15 +70,15 @@
                 <PreSize X="0.4117" Y="0.3100" />
                 <FileData Type="MarkedSubImage" Path="rankUI/pvp_rank.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-731661308" Tag="605" IconVisible="False" LeftMargin="120.1807" RightMargin="415.8193" TopMargin="35.9785" BottomMargin="46.0215" LabelText="Lv.999" ctype="TextBMFontObjectData">
-                <Size X="64.0000" Y="18.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="-731661308" Tag="605" IconVisible="False" LeftMargin="120.1807" RightMargin="386.8193" TopMargin="34.9785" BottomMargin="45.0215" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="93.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="120.1807" Y="55.0215" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2003" Y="0.5502" />
-                <PreSize X="0.1067" Y="0.1800" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1550" Y="0.2000" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_prestige" Visible="False" ActionTag="-912661490" Tag="27" IconVisible="False" LeftMargin="115.2229" RightMargin="297.7771" TopMargin="61.4710" BottomMargin="7.5290" Scale9Width="172" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="187.0000" Y="31.0000" />
@@ -90,25 +90,25 @@
                 <PreSize X="0.3117" Y="0.3100" />
                 <FileData Type="MarkedSubImage" Path="rankUI/transformation.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="prestige_text" Visible="False" ActionTag="-1027378603" CallBackType="Click" Tag="606" IconVisible="False" LeftMargin="232.4644" RightMargin="332.5356" TopMargin="67.1989" BottomMargin="13.8011" LabelText="99" ctype="TextBMFontObjectData">
-                <Size X="35.0000" Y="19.0000" />
+              <AbstractNodeData Name="prestige_text" Visible="False" ActionTag="-1027378603" CallBackType="Click" Tag="606" IconVisible="False" LeftMargin="231.4644" RightMargin="331.5356" TopMargin="66.6989" BottomMargin="13.3011" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="37.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="249.9644" Y="23.3011" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4166" Y="0.2330" />
-                <PreSize X="0.0583" Y="0.1900" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.0617" Y="0.2000" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="num" ActionTag="-1890154072" Tag="607" IconVisible="False" LeftMargin="501.7378" RightMargin="63.2622" TopMargin="39.0085" BottomMargin="41.9915" LabelText="99" ctype="TextBMFontObjectData">
-                <Size X="35.0000" Y="19.0000" />
+              <AbstractNodeData Name="num" ActionTag="-1890154072" Tag="607" IconVisible="False" LeftMargin="495.7379" RightMargin="57.2621" TopMargin="33.5085" BottomMargin="40.4915" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="47.0000" Y="26.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="519.2378" Y="51.4915" />
+                <Position X="519.2379" Y="53.4915" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8654" Y="0.5149" />
-                <PreSize X="0.0583" Y="0.1900" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.8654" Y="0.5349" />
+                <PreSize X="0.0783" Y="0.2600" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white22-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

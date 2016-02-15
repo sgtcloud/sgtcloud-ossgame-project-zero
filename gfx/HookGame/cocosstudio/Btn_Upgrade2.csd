@@ -24,23 +24,23 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="-2101152473" Tag="209" IconVisible="False" LeftMargin="43.7141" RightMargin="16.2859" TopMargin="15.1466" BottomMargin="49.8534" LabelText="999999" ctype="TextBMFontObjectData">
-                <Size X="80.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="-2101152473" Tag="209" IconVisible="False" LeftMargin="55.2141" RightMargin="35.7859" TopMargin="13.6466" BottomMargin="48.3534" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="49.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="83.7141" Y="57.3534" />
+                <Position X="79.7141" Y="57.3534" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5980" Y="0.7169" />
-                <PreSize X="0.5714" Y="0.1875" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.5694" Y="0.7169" />
+                <PreSize X="0.3500" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="icon" ActionTag="-1123589743" Tag="436" IconVisible="False" LeftMargin="26.9829" RightMargin="98.0171" TopMargin="15.6807" BottomMargin="49.3193" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="icon" ActionTag="-1123589743" Tag="436" IconVisible="False" LeftMargin="30.9829" RightMargin="94.0171" TopMargin="15.6806" BottomMargin="49.3194" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position X="26.9829" Y="49.3193" />
+                <Position X="30.9829" Y="49.3194" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.1927" Y="0.6165" />
+                <PrePosition X="0.2213" Y="0.6165" />
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="MarkedSubImage" Path="equipUI/relic.png" Plist="EquipUI.plist" />
               </AbstractNodeData>

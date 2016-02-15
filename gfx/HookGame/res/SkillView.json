@@ -279,7 +279,7 @@
                 "LabelText": "Lv.999/999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -300,18 +300,18 @@
                   "Y": 0.8289
                 },
                 "PreSize": {
-                  "X": 0.1817,
-                  "Y": 0.18
+                  "X": 0.2617,
+                  "Y": 0.2
                 },
                 "LeftMargin": 259.8713,
-                "RightMargin": 231.1287,
-                "TopMargin": 8.1119,
-                "BottomMargin": 73.8881,
+                "RightMargin": 183.1287,
+                "TopMargin": 7.1119,
+                "BottomMargin": 72.8881,
                 "Tag": 304,
                 "ActionTag": -873835688,
                 "Size": {
-                  "X": 109.0,
-                  "Y": 18.0
+                  "X": 157.0,
+                  "Y": 20.0
                 },
                 "Name": "skillLevel_text",
                 "ctype": "TextBMFontObjectData"
@@ -419,8 +419,8 @@
         "Btn_Lock.json",
         "Btn_MaxLevel.json",
         "Btn_Upgrade1.json",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

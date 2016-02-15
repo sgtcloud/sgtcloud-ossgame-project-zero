@@ -643,16 +643,15 @@
                     "LabelText": "999999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.5779,
-                      "Y": 96.6144
+                      "X": 33.0778,
+                      "Y": 96.614
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -661,22 +660,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3779,
+                      "X": 0.1654,
                       "Y": 0.8783
                     },
                     "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.1636
+                      "X": 0.545,
+                      "Y": 0.1818
                     },
-                    "LeftMargin": 35.5779,
-                    "RightMargin": 84.4221,
-                    "TopMargin": 4.3856,
-                    "BottomMargin": 87.6144,
+                    "LeftMargin": 33.0778,
+                    "RightMargin": 57.9222,
+                    "TopMargin": 3.386,
+                    "BottomMargin": 86.614,
                     "Tag": 55,
                     "ActionTag": -1834989931,
                     "Size": {
-                      "X": 80.0,
-                      "Y": 18.0
+                      "X": 109.0,
+                      "Y": 20.0
                     },
                     "Name": "gold_text",
                     "ctype": "TextBMFontObjectData"
@@ -685,16 +684,15 @@
                     "LabelText": "999999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.5779,
-                      "Y": 54.6797
+                      "X": 33.0778,
+                      "Y": 54.6792
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -703,22 +701,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3779,
+                      "X": 0.1654,
                       "Y": 0.4971
                     },
                     "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.1636
+                      "X": 0.545,
+                      "Y": 0.1818
                     },
-                    "LeftMargin": 35.5779,
-                    "RightMargin": 84.4221,
-                    "TopMargin": 46.3203,
-                    "BottomMargin": 45.6797,
+                    "LeftMargin": 33.0778,
+                    "RightMargin": 57.9222,
+                    "TopMargin": 45.3208,
+                    "BottomMargin": 44.6792,
                     "Tag": 56,
                     "ActionTag": 1999476125,
                     "Size": {
-                      "X": 80.0,
-                      "Y": 18.0
+                      "X": 109.0,
+                      "Y": 20.0
                     },
                     "Name": "gem_text",
                     "ctype": "TextBMFontObjectData"
@@ -727,16 +725,15 @@
                     "LabelText": "999999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 75.5779,
-                      "Y": 16.1926
+                      "X": 33.0778,
+                      "Y": 16.1923
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -745,22 +742,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3779,
+                      "X": 0.1654,
                       "Y": 0.1472
                     },
                     "PreSize": {
-                      "X": 0.4,
-                      "Y": 0.1636
+                      "X": 0.545,
+                      "Y": 0.1818
                     },
-                    "LeftMargin": 35.5779,
-                    "RightMargin": 84.4221,
-                    "TopMargin": 84.8074,
-                    "BottomMargin": 7.1926,
+                    "LeftMargin": 33.0778,
+                    "RightMargin": 57.9222,
+                    "TopMargin": 83.8077,
+                    "BottomMargin": 6.1923,
                     "Tag": 57,
                     "ActionTag": 1174989453,
                     "Size": {
-                      "X": 80.0,
-                      "Y": 18.0
+                      "X": 109.0,
+                      "Y": 20.0
                     },
                     "Name": "key_text",
                     "ctype": "TextBMFontObjectData"
@@ -794,8 +791,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

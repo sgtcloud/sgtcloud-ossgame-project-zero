@@ -142,35 +142,35 @@
                     <PreSize X="0.1500" Y="0.2727" />
                     <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="-1834989931" Tag="55" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="4.3856" BottomMargin="87.6144" LabelText="999999" ctype="TextBMFontObjectData">
-                    <Size X="80.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.5779" Y="96.6144" />
+                  <AbstractNodeData Name="gold_text" ActionTag="-1834989931" Tag="55" IconVisible="False" LeftMargin="33.0778" RightMargin="57.9222" TopMargin="3.3860" BottomMargin="86.6140" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="109.0000" Y="20.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="33.0778" Y="96.6140" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3779" Y="0.8783" />
-                    <PreSize X="0.4000" Y="0.1636" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                    <PrePosition X="0.1654" Y="0.8783" />
+                    <PreSize X="0.5450" Y="0.1818" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gem_text" ActionTag="1999476125" Tag="56" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="46.3203" BottomMargin="45.6797" LabelText="999999" ctype="TextBMFontObjectData">
-                    <Size X="80.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.5779" Y="54.6797" />
+                  <AbstractNodeData Name="gem_text" ActionTag="1999476125" Tag="56" IconVisible="False" LeftMargin="33.0778" RightMargin="57.9222" TopMargin="45.3208" BottomMargin="44.6792" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="109.0000" Y="20.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="33.0778" Y="54.6792" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3779" Y="0.4971" />
-                    <PreSize X="0.4000" Y="0.1636" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                    <PrePosition X="0.1654" Y="0.4971" />
+                    <PreSize X="0.5450" Y="0.1818" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="key_text" ActionTag="1174989453" Tag="57" IconVisible="False" LeftMargin="35.5779" RightMargin="84.4221" TopMargin="84.8074" BottomMargin="7.1926" LabelText="999999" ctype="TextBMFontObjectData">
-                    <Size X="80.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.5779" Y="16.1926" />
+                  <AbstractNodeData Name="key_text" ActionTag="1174989453" Tag="57" IconVisible="False" LeftMargin="33.0778" RightMargin="57.9222" TopMargin="83.8077" BottomMargin="6.1923" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="109.0000" Y="20.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="33.0778" Y="16.1923" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3779" Y="0.1472" />
-                    <PreSize X="0.4000" Y="0.1636" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                    <PrePosition X="0.1654" Y="0.1472" />
+                    <PreSize X="0.5450" Y="0.1818" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

@@ -135,16 +135,16 @@
                 "LabelText": "999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleX": 1.0,
-                  "ScaleY": 0.5378
+                  "ScaleY": 0.5
                 },
                 "Position": {
                   "X": 93.3663,
-                  "Y": 16.0149
+                  "Y": 15.3345
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -154,21 +154,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.9337,
-                  "Y": 0.1601
+                  "Y": 0.1533
                 },
                 "PreSize": {
-                  "X": 0.41,
-                  "Y": 0.15
+                  "X": 0.49,
+                  "Y": 0.18
                 },
-                "LeftMargin": 52.3663,
+                "LeftMargin": 44.3663,
                 "RightMargin": 6.6337,
-                "TopMargin": 77.0521,
-                "BottomMargin": 7.9479,
+                "TopMargin": 75.6655,
+                "BottomMargin": 6.3345,
                 "Tag": 1111,
                 "ActionTag": -662718539,
                 "Size": {
-                  "X": 41.0,
-                  "Y": 15.0
+                  "X": 49.0,
+                  "Y": 18.0
                 },
                 "Name": "sale_text",
                 "ctype": "TextBMFontObjectData"
@@ -191,8 +191,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "mainUI/bg_10.png",
         "mainUI/equip_icon.png"
       ],

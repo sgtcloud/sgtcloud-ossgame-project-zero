@@ -433,7 +433,6 @@
         <Project Name="BuffTips.csd" Type="Layer" />
         <Project Name="CloseBtn.csd" Type="Layer" />
         <Project Name="EnemyList.csd" Type="Layer" />
-        <Project Name="EquipBtn.csd" Type="Layer" />
         <Project Name="EquipHeroView.csd" Type="Layer" />
         <Project Name="Equiplayer.csd" Type="Layer" />
         <Project Name="EquipView.csd" Type="Layer" />
@@ -527,24 +526,20 @@
           </PlistImageFolder>
         </Folder>
         <Folder Name="font">
-          <Fnt Name="font22_yellow_kmbb-export.fnt" />
-          <Fnt Name="font16_yellow_kmbb-export.fnt" />
-          <Image Name="font16_yellow_kmbb-export.png" />
-          <Image Name="font22_yellow_kmbb-export.png" />
-          <Fnt Name="font19_white_kmbb-export.fnt" />
-          <Image Name="font19_white_kmbb-export.png" />
-          <Fnt Name="font14_red_kmbb-export.fnt" />
-          <Fnt Name="font14_green_kmbb-export.fnt" />
-          <Image Name="font14_green_kmbb-export.png" />
-          <Image Name="font14_red_kmbb-export.png" />
-          <Fnt Name="font16_white_kmbb-export.fnt" />
-          <Image Name="font16_white_kmbb-export.png" />
-          <Fnt Name="font22_white_kmbb-export.fnt" />
-          <Image Name="font14_white_kmbb-export.png" />
-          <Fnt Name="font18_white-export.fnt" />
-          <Image Name="font18_white-export.png" />
-          <Fnt Name="font14_white_kmbb-export.fnt" />
-          <Image Name="font22_white_kmbb-export.png" />
+          <Fnt Name="white22-export.fnt" />
+          <Fnt Name="white20-export.fnt" />
+          <Fnt Name="white18-export.fnt" />
+          <Fnt Name="white16-export.fnt" />
+          <Fnt Name="white14-export.fnt" />
+          <Fnt Name="red14-export.fnt" />
+          <Fnt Name="green14-export.fnt" />
+          <Image Name="green14-export.png" />
+          <Image Name="red14-export.png" />
+          <Image Name="white14-export.png" />
+          <Image Name="white16-export.png" />
+          <Image Name="white18-export.png" />
+          <Image Name="white20-export.png" />
+          <Image Name="white22-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />

@@ -399,7 +399,7 @@
                     "Scale9Height": 45,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 20.0005,
+                      "X": 9.0001,
                       "Y": 0.0002
                     },
                     "Scale": {
@@ -409,15 +409,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1429,
+                      "X": 0.0643,
                       "Y": 0.0
                     },
                     "PreSize": {
                       "X": 0.1786,
                       "Y": 1.0
                     },
-                    "LeftMargin": 20.0005,
-                    "RightMargin": 94.9995,
+                    "LeftMargin": 9.0001,
+                    "RightMargin": 105.9999,
                     "TopMargin": -0.0002,
                     "BottomMargin": 0.0002,
                     "Tag": 394,
@@ -433,15 +433,14 @@
                     "LabelText": "999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font16_yellow_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 70.4075,
+                      "X": 41.9075,
                       "Y": 13.1039
                     },
                     "Scale": {
@@ -451,22 +450,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5029,
+                      "X": 0.2993,
                       "Y": 0.5242
                     },
                     "PreSize": {
-                      "X": 0.2929,
-                      "Y": 0.72
+                      "X": 0.3929,
+                      "Y": 0.8
                     },
-                    "LeftMargin": 49.9075,
-                    "RightMargin": 49.0925,
-                    "TopMargin": 2.8961,
-                    "BottomMargin": 4.1039,
+                    "LeftMargin": 41.9075,
+                    "RightMargin": 43.0925,
+                    "TopMargin": 1.8961,
+                    "BottomMargin": 3.1039,
                     "Tag": 627,
                     "ActionTag": 420840328,
                     "Size": {
-                      "X": 41.0,
-                      "Y": 18.0
+                      "X": 55.0,
+                      "Y": 20.0
                     },
                     "Name": "sale_text",
                     "ctype": "TextBMFontObjectData"
@@ -500,8 +499,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "ItemLayer.json",
         "mainUI/bg_01.png",
         "mainUI/bg_14.png",

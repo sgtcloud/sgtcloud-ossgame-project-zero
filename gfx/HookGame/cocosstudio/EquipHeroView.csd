@@ -40,15 +40,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="1071298966" CallBackType="Click" Tag="1054" IconVisible="False" LeftMargin="123.4496" RightMargin="436.5504" TopMargin="42.6658" BottomMargin="52.3342" LabelText="Lv.999" ctype="TextBMFontObjectData">
-                <Size X="64.0000" Y="15.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="1071298966" CallBackType="Click" Tag="1054" IconVisible="False" LeftMargin="123.4496" RightMargin="407.5504" TopMargin="40.1658" BottomMargin="49.8342" LabelText="Lv.999" ctype="TextBMFontObjectData">
+                <Size X="93.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="123.4496" Y="59.8342" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1978" Y="0.5439" />
-                <PreSize X="0.1026" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1490" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="598677486" Tag="844" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="36.5624" BottomMargin="13.4376" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
@@ -60,15 +60,15 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="MarkedSubImage" Path="heroUI/text_bg.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="350.8271" RightMargin="206.1729" TopMargin="55.7309" BottomMargin="39.2691" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="67.0000" Y="15.0000" />
+              <AbstractNodeData Name="dps_text" ActionTag="191675235" Tag="1052" IconVisible="False" LeftMargin="338.8271" RightMargin="194.1729" TopMargin="53.2309" BottomMargin="36.7691" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="91.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="384.3271" Y="46.7691" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6159" Y="0.4252" />
-                <PreSize X="0.1074" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1458" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps" ActionTag="334213559" Tag="846" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.1076" BottomMargin="75.8924" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="104.0000" Y="26.0000" />
@@ -279,7 +279,7 @@
                     <PreSize X="0.5600" Y="0.3571" />
                     <FileData Type="MarkedSubImage" Path="equipUI/equip_text.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="itemList" ActionTag="700881433" Tag="87" IconVisible="False" RightMargin="10.0000" TopMargin="40.0000" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                  <AbstractNodeData Name="itemList" ActionTag="700881433" Tag="87" IconVisible="False" RightMargin="10.0000" TopMargin="40.0000" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
                     <Size X="140.0000" Y="30.0000" />
                     <AnchorPoint />
                     <Position />
@@ -304,7 +304,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="player_equip" Visible="False" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="player_equip" ActionTag="1233992130" Tag="215" IconVisible="False" LeftMargin="475.2215" RightMargin="8.7785" TopMargin="6.6322" BottomMargin="13.3678" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="90.0000" />
                 <Children>
                   <AbstractNodeData Name="equipNum_bg" ActionTag="-1910765510" Tag="882" IconVisible="False" LeftMargin="1.2796" RightMargin="18.7204" TopMargin="28.8625" BottomMargin="1.1375" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
@@ -327,15 +327,15 @@
                     <PreSize X="0.6000" Y="0.2778" />
                     <FileData Type="MarkedSubImage" Path="equipUI/equip_text2.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="27.5328" RightMargin="45.4672" TopMargin="48.0308" BottomMargin="26.9692" LabelText="99999" ctype="TextBMFontObjectData">
-                    <Size X="67.0000" Y="15.0000" />
+                  <AbstractNodeData Name="equipNum_text" ActionTag="1853760734" Tag="1053" IconVisible="False" LeftMargin="15.5328" RightMargin="33.4672" TopMargin="45.5308" BottomMargin="24.4692" LabelText="99999" ctype="TextBMFontObjectData">
+                    <Size X="91.0000" Y="20.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="61.0328" Y="34.4692" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4359" Y="0.3830" />
-                    <PreSize X="0.4786" Y="0.1667" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                    <PreSize X="0.6500" Y="0.2222" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
