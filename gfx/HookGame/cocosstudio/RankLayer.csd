@@ -93,40 +93,40 @@
                 <PreSize X="0.3234" Y="0.0314" />
                 <FileData Type="MarkedSubImage" Path="rankUI/myRank_text.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" CallBackType="Touch" Tag="591" IconVisible="False" LeftMargin="333.9899" RightMargin="241.0101" TopMargin="144.1790" BottomMargin="697.8210" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="65.0000" Y="18.0000" />
+              <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" CallBackType="Touch" Tag="591" IconVisible="False" LeftMargin="338.1119" RightMargin="244.8881" TopMargin="143.2518" BottomMargin="698.7482" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="57.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5152" ScaleY="0.5168" />
-                <Position X="367.4810" Y="707.1227" />
+                <Position X="367.4811" Y="708.0499" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5742" Y="0.8222" />
-                <PreSize X="0.1016" Y="0.0209" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/green14-export.fnt" Plist="" />
+                <CColor A="255" R="22" G="240" B="10" />
+                <PrePosition X="0.5742" Y="0.8233" />
+                <PreSize X="0.0891" Y="0.0209" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />
                 <Children>
-                  <AbstractNodeData Name="pvp_tab" ActionTag="-352308505" Tag="328" IconVisible="False" RightMargin="160.0000" TouchEnable="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="pvp_tab" ActionTag="-352308505" CallBackType="Touch" Tag="328" IconVisible="False" LeftMargin="148.5706" RightMargin="11.4294" TopMargin="0.0422" BottomMargin="-0.0422" TouchEnable="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
                     <AnchorPoint />
-                    <Position />
+                    <Position X="148.5706" Y="-0.0422" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
+                    <PrePosition X="0.4643" Y="-0.0008" />
                     <PreSize X="0.5000" Y="1.0000" />
-                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
-                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
-                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
-                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/goldTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/goldTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/goldTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/goldTab_2.png" Plist="RankUI.plist" />
                     <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="stage_tab" ActionTag="-225112910" Tag="329" IconVisible="False" LeftMargin="160.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="stage_tab" ActionTag="-225112910" Tag="329" IconVisible="False" LeftMargin="-10.9997" RightMargin="170.9997" TopMargin="0.0000" BottomMargin="0.0000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="160.0000" Y="55.0000" />
                     <AnchorPoint />
-                    <Position X="160.0000" />
+                    <Position X="-10.9997" Y="0.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" />
+                    <PrePosition X="-0.0344" Y="0.0000" />
                     <PreSize X="0.5000" Y="1.0000" />
                     <NormalBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_1.png" Plist="RankUI.plist" />
                     <PressedBackFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />

@@ -77,25 +77,25 @@
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="relic_text" ActionTag="1223469565" Tag="821" IconVisible="False" LeftMargin="22.5000" RightMargin="51.5000" TopMargin="21.0001" BottomMargin="20.9999" LabelText="6666" ctype="TextBMFontObjectData">
-                    <Size X="61.0000" Y="18.0000" />
+                  <AbstractNodeData Name="relic_text" ActionTag="1223469565" Tag="821" IconVisible="False" LeftMargin="28.5000" RightMargin="49.5000" TopMargin="21.0001" BottomMargin="20.9999" LabelText="6666" ctype="TextBMFontObjectData">
+                    <Size X="57.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="22.5000" Y="29.9999" />
+                    <Position X="28.5000" Y="29.9999" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="205" G="30" B="255" />
-                    <PrePosition X="0.1667" Y="0.5000" />
-                    <PreSize X="0.4519" Y="0.3000" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+                    <PrePosition X="0.2111" Y="0.5000" />
+                    <PreSize X="0.4222" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_text" ActionTag="-922470840" Tag="820" IconVisible="False" LeftMargin="22.5000" RightMargin="51.5000" TopMargin="-12.0000" BottomMargin="54.0000" LabelText="6666" ctype="TextBMFontObjectData">
-                    <Size X="61.0000" Y="18.0000" />
+                  <AbstractNodeData Name="diamond_text" ActionTag="-922470840" Tag="820" IconVisible="False" LeftMargin="28.5000" RightMargin="49.5000" TopMargin="-12.0001" BottomMargin="54.0001" LabelText="6666" ctype="TextBMFontObjectData">
+                    <Size X="57.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="22.5000" Y="63.0000" />
+                    <Position X="28.5000" Y="63.0001" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="30" G="236" B="255" />
-                    <PrePosition X="0.1667" Y="1.0500" />
-                    <PreSize X="0.4519" Y="0.3000" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+                    <PrePosition X="0.2111" Y="1.0500" />
+                    <PreSize X="0.4222" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="gold_text_bg" ActionTag="-1385240699" Tag="120" IconVisible="False" LeftMargin="-2.7860" RightMargin="-52.2140" TopMargin="51.3106" BottomMargin="-21.3106" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="190.0000" Y="30.0000" />
@@ -132,15 +132,15 @@
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="700294411" Tag="822" IconVisible="False" LeftMargin="22.5000" RightMargin="15.5000" TopMargin="53.5684" BottomMargin="-11.5684" LabelText="999999" ctype="TextBMFontObjectData">
-                    <Size X="97.0000" Y="18.0000" />
+                  <AbstractNodeData Name="gold_text" ActionTag="700294411" CallBackType="Touch" Tag="822" IconVisible="False" LeftMargin="28.5001" RightMargin="37.4999" TopMargin="53.5684" BottomMargin="-11.5684" LabelText="999.3k" ctype="TextBMFontObjectData">
+                    <Size X="69.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="22.5000" Y="-2.5684" />
+                    <Position X="28.5001" Y="-2.5684" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="0" />
-                    <PrePosition X="0.1667" Y="-0.0428" />
-                    <PreSize X="0.7185" Y="0.3000" />
-                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+                    <PrePosition X="0.2111" Y="-0.0428" />
+                    <PreSize X="0.5111" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />

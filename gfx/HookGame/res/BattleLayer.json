@@ -864,7 +864,7 @@
                   "Y": 0.969
                 },
                 "PreSize": {
-                  "X": 0.0312,
+                  "X": 0.0313,
                   "Y": 0.0297
                 },
                 "LeftMargin": 354.0496,
@@ -1112,7 +1112,10 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.2132,

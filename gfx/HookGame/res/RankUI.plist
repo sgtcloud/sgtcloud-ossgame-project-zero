@@ -7,7 +7,7 @@
 			<key>rankUI/clearance_rank.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{320,98},{247,31}}</string>
+				<string>{{0,268},{240,27}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,9 +18,9 @@
 			<key>rankUI/level.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{492,160},{44,23}}</string>
+				<string>{{479,257},{36,15}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{0,1}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -29,9 +29,9 @@
 			<key>rankUI/myRank_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{638,0},{207,27}}</string>
+				<string>{{534,98},{199,25}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-1,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -40,7 +40,7 @@
 			<key>rankUI/pvp_rank.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{320,129},{247,31}}</string>
+				<string>{{240,268},{239,27}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,9 +62,9 @@
 			<key>rankUI/pvpTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,153},{160,55}}</string>
+				<string>{{160,213},{159,55}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-1,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -73,11 +73,11 @@
 			<key>rankUI/rankText.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{580,0},{209,58}}</string>
+				<string>{{0,161},{194,52}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{209,58}</string>
 			</dict>
@@ -106,7 +106,29 @@
 			<key>rankUI/stageTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{160,153},{160,55}}</string>
+				<string>{{479,98},{159,55}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>rankUI/transformation.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{580,0},{161,20}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{172,31}</string>
+			</dict>
+			<key>rankUI/goldTab_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,213},{160,55}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -114,16 +136,16 @@
 				<key>sourceSize</key>
 				<string>{160,55}</string>
 			</dict>
-			<key>rankUI/transformation.png</key>
+			<key>rankUI/goldTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{320,160},{172,31}}</string>
+				<string>{{194,153},{159,55}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-1,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{172,31}</string>
+				<string>{160,55}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -135,14 +157,14 @@
 			<key>realTextureFileName</key>
 			<string>RankUI.png</string>
 			<key>size</key>
-			<string>{665,209}</string>
+			<string>{600,297}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>665</integer>
+			<integer>600</integer>
 			<key>height</key>
-			<integer>209</integer>
+			<integer>297</integer>
 		</dict>
 	</dict>
 </plist>

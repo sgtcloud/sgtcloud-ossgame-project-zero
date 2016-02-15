@@ -210,7 +210,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0312,
+                  "X": 0.0313,
                   "Y": 0.0186
                 },
                 "PreSize": {
@@ -411,7 +411,7 @@
                 "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/green14-export.fnt",
+                  "Path": "font/white10-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -419,32 +419,36 @@
                   "ScaleY": 0.5168
                 },
                 "Position": {
-                  "X": 367.481,
-                  "Y": 707.1227
+                  "X": 367.4811,
+                  "Y": 708.0499
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 22,
+                  "G": 240,
+                  "B": 10
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5742,
-                  "Y": 0.8222
+                  "Y": 0.8233
                 },
                 "PreSize": {
-                  "X": 0.1016,
+                  "X": 0.0891,
                   "Y": 0.0209
                 },
-                "LeftMargin": 333.9899,
-                "RightMargin": 241.0101,
-                "TopMargin": 144.179,
-                "BottomMargin": 697.821,
+                "LeftMargin": 338.1119,
+                "RightMargin": 244.8881,
+                "TopMargin": 143.2518,
+                "BottomMargin": 698.7482,
                 "CallBackType": "Touch",
                 "Tag": 591,
                 "ActionTag": -1707227176,
                 "Size": {
-                  "X": 65.0,
+                  "X": 57.0,
                   "Y": 18.0
                 },
                 "Name": "myNum_text",
@@ -495,22 +499,22 @@
                   {
                     "NormalBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_1.png",
+                      "Path": "rankUI/goldTab_1.png",
                       "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_2.png",
+                      "Path": "rankUI/goldTab_2.png",
                       "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_1.png",
+                      "Path": "rankUI/goldTab_1.png",
                       "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_2.png",
+                      "Path": "rankUI/goldTab_2.png",
                       "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
@@ -521,8 +525,8 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": 148.5706,
+                      "Y": -0.0422
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -531,14 +535,18 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": 0.4643,
+                      "Y": -0.0008
                     },
                     "PreSize": {
                       "X": 0.5,
                       "Y": 1.0
                     },
-                    "RightMargin": 160.0,
+                    "LeftMargin": 148.5706,
+                    "RightMargin": 11.4294,
+                    "TopMargin": 0.0422,
+                    "BottomMargin": -0.0422,
+                    "CallBackType": "Touch",
                     "Tag": 328,
                     "ActionTag": -352308505,
                     "Size": {
@@ -578,7 +586,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 160.0,
+                      "X": -10.9997,
                       "Y": 0.0
                     },
                     "Scale": {
@@ -588,14 +596,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
+                      "X": -0.0344,
                       "Y": 0.0
                     },
                     "PreSize": {
                       "X": 0.5,
                       "Y": 1.0
                     },
-                    "LeftMargin": 160.0,
+                    "LeftMargin": -10.9997,
+                    "RightMargin": 170.9997,
                     "Tag": 329,
                     "ActionTag": -225112910,
                     "Size": {
@@ -632,8 +641,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/green14-export.fnt",
-        "font/green14-export.png",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
         "mainUI/bg_10.png",

@@ -84,10 +84,10 @@
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="186.2837" Y="31.2609" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
+                <CColor A="255" R="18" G="245" B="75" />
                 <PrePosition X="0.4902" Y="0.2605" />
                 <PreSize X="0.1711" Y="0.1500" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/green14-export.fnt" Plist="" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="level_text3" ActionTag="2081213370" Tag="73" IconVisible="False" LeftMargin="239.9129" RightMargin="75.0871" TopMargin="76.1354" BottomMargin="25.8646" LabelText="9999" ctype="TextBMFontObjectData">
                 <Size X="65.0000" Y="18.0000" />

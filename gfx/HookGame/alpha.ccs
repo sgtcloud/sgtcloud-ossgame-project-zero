@@ -338,6 +338,8 @@
             <PlistImageFile Name="rankUI_stageTab_2.png" Key="rankUI/stageTab_2.png" />
             <PlistImageFile Name="rankUI_transformation.png" Key="rankUI/transformation.png" />
           </PlistImageFolder>
+          <Image Name="goldTab_1.png" />
+          <Image Name="goldTab_2.png" />
         </Folder>
         <Folder Name="shopUI">
           <Image Name="moneyTree_bg.png" />
@@ -540,6 +542,8 @@
           <Image Name="white18-export.png" />
           <Image Name="white20-export.png" />
           <Image Name="white22-export.png" />
+          <Fnt Name="white10-export.fnt" />
+          <Image Name="white10-export.png" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
         <Project Name="ShopListView.csd" Type="Layer" />

@@ -40,15 +40,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillLevel_text" ActionTag="309565690" CallBackType="Click" Tag="1033" IconVisible="False" LeftMargin="300.0481" RightMargin="176.9519" TopMargin="19.7791" BottomMargin="75.2209" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
-                <Size X="83.0000" Y="15.0000" />
+              <AbstractNodeData Name="skillLevel_text" ActionTag="309565690" CallBackType="Click" Tag="1033" IconVisible="False" LeftMargin="300.0481" RightMargin="138.9519" TopMargin="17.2791" BottomMargin="72.7209" LabelText="Lv.99/99" ctype="TextBMFontObjectData">
+                <Size X="121.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="300.0481" Y="82.7209" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5358" Y="0.7520" />
-                <PreSize X="0.1482" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="" Plist="" />
+                <PreSize X="0.2161" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skillDesc_text" ActionTag="-1542990271" Tag="110" IconVisible="False" LeftMargin="135.6982" RightMargin="44.3018" TopMargin="40.5258" BottomMargin="9.4742" IsCustomSize="True" FontSize="20" LabelText="技能描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="380.0000" Y="60.0000" />

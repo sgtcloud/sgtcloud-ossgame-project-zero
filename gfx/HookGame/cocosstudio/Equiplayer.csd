@@ -55,13 +55,13 @@
                     <PreSize X="0.1603" Y="0.9091" />
                     <FileData Type="MarkedSubImage" Path="equipUI/title_2.png" Plist="EquipUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="129.9151" RightMargin="194.0849" TopMargin="37.2087" BottomMargin="12.7913" IsCustomSize="True" FontSize="16" LabelText="*主角神器可提升全队属性&#xA;*英雄装备科提升所属英雄属性&#xA;*神器和装备均可升级&#xA;&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="decs_text" ActionTag="816818333" Tag="204" IconVisible="False" LeftMargin="129.9151" RightMargin="194.0849" TopMargin="37.2087" BottomMargin="12.7913" IsCustomSize="True" FontSize="15" LabelText="*主角神器可提升全队属性&#xA;*英雄装备科提升所属英雄属性&#xA;*神器和装备均可升级" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="300.0000" Y="60.0000" />
-                    <AnchorPoint />
-                    <Position X="129.9151" Y="12.7913" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="279.9151" Y="42.7913" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2082" Y="0.1163" />
+                    <PrePosition X="0.4486" Y="0.3890" />
                     <PreSize X="0.4808" Y="0.5455" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
