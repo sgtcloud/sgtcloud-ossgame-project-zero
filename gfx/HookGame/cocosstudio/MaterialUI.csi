@@ -1,6 +1,6 @@
 <PlistInfoProjectFile>
   <PropertyGroup Name="MaterialUI" Type="Plist" ID="25b94c6c-4917-409b-a02a-50facfd272b3" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="materialUI/bronze.png" />
       <FilePathData Path="materialUI/crystal.png" />
@@ -26,6 +26,6 @@
       <FilePathData Path="materialUI/wood_chest_1.png" />
       <FilePathData Path="materialUI/wood_chest_2.png" />
     </ImageFiles>
-    <MaxSize Width="265" Height="260" />
+    <MaxSize Width="350" Height="350" />
   </Content>
 </PlistInfoProjectFile>

@@ -48,7 +48,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5358" Y="0.7520" />
                 <PreSize X="0.1482" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <LabelBMFontFile_CNB Type="Normal" Path="" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="skillDesc_text" ActionTag="-1542990271" Tag="110" IconVisible="False" LeftMargin="135.6982" RightMargin="44.3018" TopMargin="40.5258" BottomMargin="9.4742" IsCustomSize="True" FontSize="20" LabelText="技能描述" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="380.0000" Y="60.0000" />

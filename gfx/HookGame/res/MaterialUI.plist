@@ -7,29 +7,29 @@
 			<key>materialUI/bronze.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{234,125},{40,30}}</string>
+				<string>{{70,115},{40,40}}</string>
 				<key>offset</key>
-				<string>{0,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{40,40}</string>
 			</dict>
 			<key>materialUI/crystal.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{110,179},{40,39}}</string>
+				<string>{{70,155},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{40,40}</string>
 			</dict>
 			<key>materialUI/diamond.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{213,45},{40,40}}</string>
+				<string>{{70,195},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>materialUI/essence.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{212,85},{40,40}}</string>
+				<string>{{70,235},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>materialUI/gold.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{70,127},{40,40}}</string>
+				<string>{{70,275},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,11 +62,11 @@
 			<key>materialUI/golden_chest_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{70,70},{57,62}}</string>
+				<string>{{70,0},{70,70}}</string>
 				<key>offset</key>
-				<string>{-1,-4}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{70,70}</string>
 			</dict>
@@ -84,7 +84,7 @@
 			<key>materialUI/golden_key.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{149,218},{38,38}}</string>
+				<string>{{110,115},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -95,9 +95,9 @@
 			<key>materialUI/iron.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{70,207},{39,39}}</string>
+				<string>{{115,70},{40,40}}</string>
 				<key>offset</key>
-				<string>{-1,1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -106,11 +106,11 @@
 			<key>materialUI/iron_chest_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{132,123},{56,62}}</string>
+				<string>{{140,0},{70,70}}</string>
 				<key>offset</key>
-				<string>{0,-4}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{70,70}</string>
 			</dict>
@@ -128,7 +128,7 @@
 			<key>materialUI/iron_key.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{109,219},{38,38}}</string>
+				<string>{{110,155},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -139,7 +139,7 @@
 			<key>materialUI/key.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{213,0},{45,45}}</string>
+				<string>{{70,70},{45,45}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -150,7 +150,7 @@
 			<key>materialUI/leather.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{70,167},{40,40}}</string>
+				<string>{{110,195},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -161,7 +161,7 @@
 			<key>materialUI/relic.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{194,125},{40,40}}</string>
+				<string>{{110,235},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -172,7 +172,7 @@
 			<key>materialUI/rune.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{149,179},{39,39}}</string>
+				<string>{{110,275},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -183,9 +183,9 @@
 			<key>materialUI/silver_chest_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{150,0},{63,62}}</string>
+				<string>{{210,0},{70,70}}</string>
 				<key>offset</key>
-				<string>{-4,-4}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -205,7 +205,7 @@
 			<key>materialUI/silver_key.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{227,205},{38,38}}</string>
+				<string>{{150,110},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -216,7 +216,7 @@
 			<key>materialUI/stone.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{188,205},{39,39}}</string>
+				<string>{{155,70},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -227,7 +227,7 @@
 			<key>materialUI/wood.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{194,165},{40,40}}</string>
+				<string>{{190,110},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -238,9 +238,9 @@
 			<key>materialUI/wood_chest_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{150,62},{62,61}}</string>
+				<string>{{280,0},{70,70}}</string>
 				<key>offset</key>
-				<string>{3,-4}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -249,11 +249,11 @@
 			<key>materialUI/wood_chest_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{70,0},{70,80}}</string>
+				<string>{{0,240},{70,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{70,80}</string>
 			</dict>
@@ -267,14 +267,14 @@
 			<key>realTextureFileName</key>
 			<string>MaterialUI.png</string>
 			<key>size</key>
-			<string>{265,257}</string>
+			<string>{350,320}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>265</integer>
+			<integer>350</integer>
 			<key>height</key>
-			<integer>257</integer>
+			<integer>320</integer>
 		</dict>
 	</dict>
 </plist>

@@ -77,27 +77,27 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2684" Y="0.2905" />
                 <PreSize X="0.0000" Y="0.0000" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font14_white_kmbb-export.fnt" Plist="" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text2" ActionTag="-2083267184" CallBackType="Click" Tag="72" IconVisible="False" LeftMargin="164.7837" RightMargin="172.2163" TopMargin="81.7391" BottomMargin="24.2609" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="43.0000" Y="14.0000" />
+              <AbstractNodeData Name="level_text2" ActionTag="-2083267184" CallBackType="Click" Tag="72" IconVisible="False" LeftMargin="153.7837" RightMargin="161.2163" TopMargin="79.7391" BottomMargin="22.2609" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="65.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="186.2837" Y="31.2609" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4902" Y="0.2605" />
-                <PreSize X="0.1132" Y="0.1167" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font14_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1711" Y="0.1500" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/green14-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text3" ActionTag="2081213370" Tag="73" IconVisible="False" LeftMargin="250.9129" RightMargin="86.0871" TopMargin="78.1354" BottomMargin="27.8646" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="43.0000" Y="14.0000" />
+              <AbstractNodeData Name="level_text3" ActionTag="2081213370" Tag="73" IconVisible="False" LeftMargin="239.9129" RightMargin="75.0871" TopMargin="76.1354" BottomMargin="25.8646" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="65.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="272.4129" Y="34.8646" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7169" Y="0.2905" />
-                <PreSize X="0.1132" Y="0.1167" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font14_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1711" Y="0.1500" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

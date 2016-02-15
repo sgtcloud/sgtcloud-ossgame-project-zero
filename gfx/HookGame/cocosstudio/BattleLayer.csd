@@ -214,15 +214,15 @@
                 <PreSize X="0.1437" Y="0.0270" />
                 <FileData Type="MarkedSubImage" Path="battleUI/boss_text.png" Plist="BattleLayer.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="269.9504" TopMargin="13.4407" BottomMargin="707.5593" LabelText="0" ctype="TextBMFontObjectData">
-                <Size X="16.0000" Y="19.0000" />
+              <AbstractNodeData Name="enemy_life_text" ActionTag="-366591547" CallBackType="Click" Tag="138" IconVisible="False" LeftMargin="354.0496" RightMargin="265.9504" TopMargin="11.9407" BottomMargin="706.0593" LabelText="0" ctype="TextBMFontObjectData">
+                <Size X="20.0000" Y="22.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="354.0496" Y="717.0593" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5532" Y="0.9690" />
-                <PreSize X="0.0250" Y="0.0257" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font19_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.0313" Y="0.0297" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white18-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk_text" ActionTag="512039343" Tag="110" IconVisible="False" LeftMargin="90.2951" RightMargin="479.7049" TopMargin="499.6425" BottomMargin="220.3575" FontSize="20" LabelText="9999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="70.0000" Y="20.0000" />
@@ -268,15 +268,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="118.9417" RightMargin="486.0583" TopMargin="24.8978" BottomMargin="696.1022" LabelText="99" ctype="TextBMFontObjectData">
-                <Size X="35.0000" Y="19.0000" />
+              <AbstractNodeData Name="time_text" ActionTag="2022321032" Tag="137" IconVisible="False" LeftMargin="119.9417" RightMargin="487.0583" TopMargin="23.3979" BottomMargin="696.6021" LabelText="36" ctype="TextBMFontObjectData">
+                <Size X="33.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="136.4417" Y="705.6022" />
+                <Position X="136.4417" Y="706.6021" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2132" Y="0.9535" />
-                <PreSize X="0.0547" Y="0.0257" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.2132" Y="0.9549" />
+                <PreSize X="0.0516" Y="0.0270" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="time_bar" ActionTag="-1530911348" Tag="487" IconVisible="False" LeftMargin="153.7183" RightMargin="42.2817" TopMargin="36.2153" BottomMargin="697.7847" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="444.0000" Y="6.0000" />

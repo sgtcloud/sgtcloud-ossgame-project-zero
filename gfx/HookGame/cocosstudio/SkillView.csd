@@ -61,15 +61,15 @@
                 <PreSize X="0.2333" Y="0.8000" />
                 <FileData Type="Normal" Path="Btn_Lock.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="skillLevel_text" ActionTag="-873835688" Tag="304" IconVisible="False" LeftMargin="259.8713" RightMargin="231.1287" TopMargin="8.1119" BottomMargin="73.8881" LabelText="Lv.999/999" ctype="TextBMFontObjectData">
-                <Size X="109.0000" Y="18.0000" />
+              <AbstractNodeData Name="skillLevel_text" ActionTag="-873835688" Tag="304" IconVisible="False" LeftMargin="259.8713" RightMargin="183.1287" TopMargin="7.1119" BottomMargin="72.8881" LabelText="Lv.999/999" ctype="TextBMFontObjectData">
+                <Size X="157.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="259.8713" Y="82.8881" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4331" Y="0.8289" />
-                <PreSize X="0.1817" Y="0.1800" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.2617" Y="0.2000" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="MaxLevel_btn" ActionTag="-917944944" Tag="667" IconVisible="True" LeftMargin="443.8899" RightMargin="16.1101" TopMargin="9.0103" BottomMargin="10.9897" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />

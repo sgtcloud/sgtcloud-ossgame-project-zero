@@ -24,15 +24,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="2062417790" CallBackType="Click" Tag="111" IconVisible="False" LeftMargin="52.1470" RightMargin="20.8530" TopMargin="13.8220" BottomMargin="51.1780" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="67.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="2062417790" CallBackType="Click" Tag="111" IconVisible="False" LeftMargin="58.1469" RightMargin="32.8531" TopMargin="12.3220" BottomMargin="49.6780" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="49.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="85.6470" Y="58.6780" />
+                <Position X="82.6469" Y="58.6780" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6118" Y="0.7335" />
-                <PreSize X="0.4786" Y="0.1875" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.5903" Y="0.7335" />
+                <PreSize X="0.3500" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="buy_text" ActionTag="-128763978" Tag="208" IconVisible="False" LeftMargin="42.0000" RightMargin="32.0000" TopMargin="38.0000" BottomMargin="8.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="66.0000" Y="34.0000" />
