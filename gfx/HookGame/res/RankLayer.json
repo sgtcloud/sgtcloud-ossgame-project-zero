@@ -210,7 +210,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0312,
+                  "X": 0.0313,
                   "Y": 0.0186
                 },
                 "PreSize": {
@@ -499,22 +499,22 @@
                   {
                     "NormalBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_1.png",
+                      "Path": "rankUI/goldTab_1.png",
                       "Plist": "RankUI.plist"
                     },
                     "PressedBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_2.png",
+                      "Path": "rankUI/goldTab_2.png",
                       "Plist": "RankUI.plist"
                     },
                     "DisableBackFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_1.png",
+                      "Path": "rankUI/goldTab_1.png",
                       "Plist": "RankUI.plist"
                     },
                     "NodeNormalFileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "rankUI/pvpTab_2.png",
+                      "Path": "rankUI/goldTab_2.png",
                       "Plist": "RankUI.plist"
                     },
                     "NodeDisableFileData": {
@@ -525,8 +525,8 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": 148.5706,
+                      "Y": -0.0422
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -535,14 +535,18 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": 0.4643,
+                      "Y": -0.0008
                     },
                     "PreSize": {
                       "X": 0.5,
                       "Y": 1.0
                     },
-                    "RightMargin": 160.0,
+                    "LeftMargin": 148.5706,
+                    "RightMargin": 11.4294,
+                    "TopMargin": 0.0422,
+                    "BottomMargin": -0.0422,
+                    "CallBackType": "Touch",
                     "Tag": 328,
                     "ActionTag": -352308505,
                     "Size": {
@@ -582,7 +586,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 160.0,
+                      "X": -10.9997,
                       "Y": 0.0
                     },
                     "Scale": {
@@ -592,14 +596,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
+                      "X": -0.0344,
                       "Y": 0.0
                     },
                     "PreSize": {
                       "X": 0.5,
                       "Y": 1.0
                     },
-                    "LeftMargin": 160.0,
+                    "LeftMargin": -10.9997,
+                    "RightMargin": 170.9997,
                     "Tag": 329,
                     "ActionTag": -225112910,
                     "Size": {
