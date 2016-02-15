@@ -1,611 +1,819 @@
-{"s100001": {
-  "name" : "东部王国",
-  "stageNum" : 1,
-  "next" : "s100002",
-  "bg" : "s100001.png",
-  "icon" : "stage_icon_s100001.png",
-  "battleNum" : 2,
-  "enemyNumMin" : 1,
-  "enemyNumMax" : 1,
-  "moneyTreeRatio" : 100,
-  "offlineReward" : [ {
-    "value" : 10,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 1
-  }, {
-    "unit" : "iron_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 100
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1001",
-    "lv" : 1
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1001",
-    "lv" : 2
-  } ]
-},"s100002": {
-  "name" : "魔境森林",
-  "stageNum" : 2,
-  "next" : "s100003",
-  "bg" : "s100002.png",
-  "icon" : "stage_icon_s100002.png",
-  "battleNum" : 3,
-  "enemyNumMin" : 1,
-  "enemyNumMax" : 2,
-  "moneyTreeRatio" : 250,
-  "offlineReward" : [ {
-    "value" : 20,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 1
-  }, {
-    "unit" : "iron_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 215
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1002",
-    "lv" : 1
-  }, {
-    "id" : "e1001",
-    "lv" : 4
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1002",
-    "lv" : 4
-  }, {
-    "id" : "e1001",
-    "lv" : 3
-  } ]
-},"s100003": {
-  "name" : "永歌森林",
-  "stageNum" : 3,
-  "next" : "s100004",
-  "bg" : "s100003.png",
-  "icon" : "stage_icon_s100003.png",
-  "battleNum" : 5,
-  "enemyNumMin" : 2,
-  "enemyNumMax" : 3,
-  "moneyTreeRatio" : 400,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 30,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 1
-  }, {
-    "unit" : "iron_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 330
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1003",
-    "lv" : 1
-  }, {
-    "id" : "e1002",
-    "lv" : 3
-  }, {
-    "id" : "e1001",
-    "lv" : 7
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1002",
-    "lv" : 8
-  }, {
-    "id" : "e1002",
-    "lv" : 6
-  }, {
-    "id" : "e1001",
-    "lv" : 5
-  } ]
-},"s100004": {
-  "name" : "天空之城",
-  "stageNum" : 4,
-  "next" : "s100005",
-  "bg" : "s100004.png",
-  "icon" : "stage_icon_s100004.png",
-  "battleNum" : 8,
-  "enemyNumMin" : 2,
-  "enemyNumMax" : 4,
-  "moneyTreeRatio" : 550,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 40,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "iron_key",
-    "value" : 1
-  }, {
-    "unit" : "iron_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 445
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1004",
-    "lv" : 1
-  }, {
-    "id" : "e1003",
-    "lv" : 4
-  }, {
-    "id" : "e1002",
-    "lv" : 7
-  }, {
-    "id" : "e1001",
-    "lv" : 10
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1002",
-    "lv" : 14
-  }, {
-    "id" : "e1002",
-    "lv" : 12
-  }, {
-    "id" : "e1002",
-    "lv" : 10
-  }, {
-    "id" : "e1001",
-    "lv" : 9
-  } ]
-},"s100005": {
-  "name" : "德尔荒原",
-  "stageNum" : 5,
-  "next" : "s100006",
-  "bg" : "s100005.png",
-  "icon" : "stage_icon_s100005.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 2,
-  "enemyNumMax" : 5,
-  "moneyTreeRatio" : 700,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 50,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "silver_key",
-    "value" : 1
-  }, {
-    "unit" : "silver_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 560
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 1
-  }, {
-    "id" : "e1004",
-    "lv" : 4
-  }, {
-    "id" : "e1003",
-    "lv" : 7
-  }, {
-    "id" : "e1002",
-    "lv" : 10
-  }, {
-    "id" : "e1001",
-    "lv" : 13
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1003",
-    "lv" : 15
-  }, {
-    "id" : "e1002",
-    "lv" : 20
-  }, {
-    "id" : "e1002",
-    "lv" : 18
-  }, {
-    "id" : "e1002",
-    "lv" : 16
-  }, {
-    "id" : "e1001",
-    "lv" : 12
-  } ]
-}, "s100006":{
-  "name" : "黄金海岸",
-  "stageNum" : 6,
-  "next" : "s100007",
-  "bg" : "s100006.png",
-  "icon" : "stage_icon_s100006.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 3,
-  "enemyNumMax" : 4,
-  "moneyTreeRatio" : 850,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 60,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "silver_key",
-    "value" : 1
-  }, {
-    "unit" : "silver_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 675
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1004",
-    "lv" : 8
-  }, {
-    "id" : "e1003",
-    "lv" : 9
-  }, {
-    "id" : "e1002",
-    "lv" : 13
-  }, {
-    "id" : "e1001",
-    "lv" : 16
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1003",
-    "lv" : 21
-  }, {
-    "id" : "e1003",
-    "lv" : 18
-  }, {
-    "id" : "e1002",
-    "lv" : 22
-  }, {
-    "id" : "e1001",
-    "lv" : 15
-  } ]
-},"s100007": {
-  "name" : "斯姆雪山",
-  "stageNum" : 7,
-  "next" : "s100008",
-  "bg" : "s100007.png",
-  "icon" : "stage_icon_s100007.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 3,
-  "enemyNumMax" : 5,
-  "moneyTreeRatio" : 1000,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 70,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "silver_key",
-    "value" : 1
-  }, {
-    "unit" : "silver_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 790
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 5
-  }, {
-    "id" : "e1004",
-    "lv" : 11
-  }, {
-    "id" : "e1003",
-    "lv" : 12
-  }, {
-    "id" : "e1002",
-    "lv" : 16
-  }, {
-    "id" : "e1001",
-    "lv" : 19
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1004",
-    "lv" : 20
-  }, {
-    "id" : "e1003",
-    "lv" : 24
-  }, {
-    "id" : "e1002",
-    "lv" : 26
-  }, {
-    "id" : "e1002",
-    "lv" : 24
-  }, {
-    "id" : "e1001",
-    "lv" : 18
-  } ]
-},"s100008": {
-  "name" : "自由都市",
-  "stageNum" : 8,
-  "next" : "s100009",
-  "bg" : "s100008.png",
-  "icon" : "stage_icon_s100008.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 4,
-  "enemyNumMax" : 5,
-  "moneyTreeRatio" : 1150,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 80,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "silver_key",
-    "value" : 1
-  }, {
-    "unit" : "silver_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 905
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 10
-  }, {
-    "id" : "e1004",
-    "lv" : 15
-  }, {
-    "id" : "e1003",
-    "lv" : 16
-  }, {
-    "id" : "e1002",
-    "lv" : 19
-  }, {
-    "id" : "e1001",
-    "lv" : 22
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1004",
-    "lv" : 26
-  }, {
-    "id" : "e1004",
-    "lv" : 23
-  }, {
-    "id" : "e1003",
-    "lv" : 27
-  }, {
-    "id" : "e1002",
-    "lv" : 28
-  }, {
-    "id" : "e1001",
-    "lv" : 21
-  } ]
-},"s100009": {
-  "name" : "幽冥古域",
-  "stageNum" : 9,
-  "next" : "s100010",
-  "bg" : "s100009.png",
-  "icon" : "stage_icon_s100009.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 5,
-  "enemyNumMax" : 5,
-  "moneyTreeRatio" : 1300,
-  "offlineReward" : [ {
-    "value" : 1,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 90,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "golden_key",
-    "value" : 1
-  }, {
-    "unit" : "golden_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 1020
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 16
-  }, {
-    "id" : "e1004",
-    "lv" : 18
-  }, {
-    "id" : "e1003",
-    "lv" : 20
-  }, {
-    "id" : "e1002",
-    "lv" : 22
-  }, {
-    "id" : "e1001",
-    "lv" : 25
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1005",
-    "lv" : 24
-  }, {
-    "id" : "e1004",
-    "lv" : 30
-  }, {
-    "id" : "e1003",
-    "lv" : 30
-  }, {
-    "id" : "e1002",
-    "lv" : 30
-  }, {
-    "id" : "e1001",
-    "lv" : 24
-  } ]
-},"s100010": {
-  "name" : "悲鸣巢穴",
-  "stageNum" : 10,
-  "next" : "s100011",
-  "bg" : "s100010.png",
-  "icon" : "stage_icon_s100010.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 5,
-  "enemyNumMax" : 6,
-  "moneyTreeRatio" : 1450,
-  "offlineReward" : [ {
-    "value" : 2,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 100,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "golden_key",
-    "value" : 1
-  }, {
-    "unit" : "golden_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 1135
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 24
-  }, {
-    "id" : "e1005",
-    "lv" : 21
-  }, {
-    "id" : "e1004",
-    "lv" : 23
-  }, {
-    "id" : "e1003",
-    "lv" : 24
-  }, {
-    "id" : "e1002",
-    "lv" : 25
-  }, {
-    "id" : "e1001",
-    "lv" : 27
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1001",
-    "lv" : 27
-  } ]
-},"s100011": {
-  "name" : "哀歌平原",
-  "stageNum" : 11,
-  "next" : "s100001",
-  "bg" : "s100011.png",
-  "icon" : "stage_icon_s100011.png",
-  "battleNum" : 10,
-  "enemyNumMin" : 6,
-  "enemyNumMax" : 6,
-  "moneyTreeRatio" : 1600,
-  "offlineReward" : [ {
-    "value" : 3,
-    "unit" : "iron_key"
-  }, {
-    "value" : 1,
-    "unit" : "gem"
-  }, {
-    "value" : 110,
-    "unit" : "gold"
-  } ],
-  "bonus" : [ {
-    "unit" : "golden_key",
-    "value" : 1
-  }, {
-    "unit" : "golden_chest",
-    "value" : 1
-  }, {
-    "unit" : "gold",
-    "value" : 1250
-  } ],
-  "enemyTypes" : [ {
-    "id" : "e1005",
-    "lv" : 29
-  }, {
-    "id" : "e1005",
-    "lv" : 27
-  }, {
-    "id" : "e1004",
-    "lv" : 28
-  }, {
-    "id" : "e1003",
-    "lv" : 28
-  }, {
-    "id" : "e1002",
-    "lv" : 28
-  }, {
-    "id" : "e1001",
-    "lv" : 29
-  } ],
-  "bossBattle" : [ {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1005",
-    "lv" : 30
-  }, {
-    "id" : "e1001",
-    "lv" : 30
-  } ]
-} }
+{
+  "s100001": {
+    "name": "东部王国",
+    "stageNum": 1,
+    "next": "s100002",
+    "bg": "s100001.png",
+    "icon": "stage_icon_s100001.png",
+    "battleNum": 2,
+    "enemyNumMin": 1,
+    "enemyNumMax": 1,
+    "moneyTreeRatio": 100,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 10
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 100
+      },
+      {
+        "unit": "iron_chest",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 2
+      }
+    ]
+  },
+  "s100002": {
+    "name": "魔境森林",
+    "stageNum": 2,
+    "next": "s100003",
+    "bg": "s100002.png",
+    "icon": "stage_icon_s100002.png",
+    "battleNum": 3,
+    "enemyNumMin": 1,
+    "enemyNumMax": 2,
+    "moneyTreeRatio": 250,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 20
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 215
+      },
+      {
+        "unit": "iron_chest",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 4
+      },
+      {
+        "id": "e1002",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 3
+      },
+      {
+        "id": "e1002",
+        "lv": 4
+      }
+    ]
+  },
+  "s100003": {
+    "name": "永歌森林",
+    "stageNum": 3,
+    "next": "s100004",
+    "bg": "s100003.png",
+    "icon": "stage_icon_s100003.png",
+    "battleNum": 5,
+    "enemyNumMin": 2,
+    "enemyNumMax": 3,
+    "moneyTreeRatio": 400,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 30
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 330
+      },
+      {
+        "unit": "iron_chest",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 7
+      },
+      {
+        "id": "e1002",
+        "lv": 3
+      },
+      {
+        "id": "e1003",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 5
+      },
+      {
+        "id": "e1002",
+        "lv": 6
+      },
+      {
+        "id": "e1002",
+        "lv": 8
+      }
+    ]
+  },
+  "s100004": {
+    "name": "天空之城",
+    "stageNum": 4,
+    "next": "s100005",
+    "bg": "s100004.png",
+    "icon": "stage_icon_s100004.png",
+    "battleNum": 8,
+    "enemyNumMin": 2,
+    "enemyNumMax": 4,
+    "moneyTreeRatio": 550,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 40
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 445
+      },
+      {
+        "unit": "iron_chest",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 10
+      },
+      {
+        "id": "e1002",
+        "lv": 7
+      },
+      {
+        "id": "e1003",
+        "lv": 4
+      },
+      {
+        "id": "e1004",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 9
+      },
+      {
+        "id": "e1002",
+        "lv": 10
+      },
+      {
+        "id": "e1002",
+        "lv": 12
+      },
+      {
+        "id": "e1002",
+        "lv": 14
+      }
+    ]
+  },
+  "s100005": {
+    "name": "德尔荒原",
+    "stageNum": 5,
+    "next": "s100006",
+    "bg": "s100005.png",
+    "icon": "stage_icon_s100005.png",
+    "battleNum": 10,
+    "enemyNumMin": 2,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 700,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 50
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 560
+      },
+      {
+        "unit": "silver_chest",
+        "value": 1
+      },
+      {
+        "unit": "silver_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 13
+      },
+      {
+        "id": "e1002",
+        "lv": 10
+      },
+      {
+        "id": "e1003",
+        "lv": 7
+      },
+      {
+        "id": "e1004",
+        "lv": 4
+      },
+      {
+        "id": "e1005",
+        "lv": 1
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 12
+      },
+      {
+        "id": "e1002",
+        "lv": 16
+      },
+      {
+        "id": "e1002",
+        "lv": 18
+      },
+      {
+        "id": "e1002",
+        "lv": 20
+      },
+      {
+        "id": "e1003",
+        "lv": 15
+      }
+    ]
+  },
+  "s100006": {
+    "name": "黄金海岸",
+    "stageNum": 6,
+    "next": "s100007",
+    "bg": "s100006.png",
+    "icon": "stage_icon_s100006.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 4,
+    "moneyTreeRatio": 850,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 60
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 675
+      },
+      {
+        "unit": "silver_chest",
+        "value": 1
+      },
+      {
+        "unit": "silver_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 16
+      },
+      {
+        "id": "e1002",
+        "lv": 13
+      },
+      {
+        "id": "e1003",
+        "lv": 9
+      },
+      {
+        "id": "e1004",
+        "lv": 8
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 15
+      },
+      {
+        "id": "e1002",
+        "lv": 22
+      },
+      {
+        "id": "e1003",
+        "lv": 18
+      },
+      {
+        "id": "e1003",
+        "lv": 21
+      }
+    ]
+  },
+  "s100007": {
+    "name": "斯姆雪山",
+    "stageNum": 7,
+    "next": "s100008",
+    "bg": "s100007.png",
+    "icon": "stage_icon_s100007.png",
+    "battleNum": 10,
+    "enemyNumMin": 3,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 1000,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 70
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 790
+      },
+      {
+        "unit": "silver_chest",
+        "value": 1
+      },
+      {
+        "unit": "silver_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 19
+      },
+      {
+        "id": "e1002",
+        "lv": 16
+      },
+      {
+        "id": "e1003",
+        "lv": 12
+      },
+      {
+        "id": "e1004",
+        "lv": 11
+      },
+      {
+        "id": "e1005",
+        "lv": 5
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 18
+      },
+      {
+        "id": "e1002",
+        "lv": 24
+      },
+      {
+        "id": "e1002",
+        "lv": 26
+      },
+      {
+        "id": "e1003",
+        "lv": 24
+      },
+      {
+        "id": "e1004",
+        "lv": 20
+      }
+    ]
+  },
+  "s100008": {
+    "name": "自由都市",
+    "stageNum": 8,
+    "next": "s100009",
+    "bg": "s100008.png",
+    "icon": "stage_icon_s100008.png",
+    "battleNum": 10,
+    "enemyNumMin": 4,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 1150,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 80
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 905
+      },
+      {
+        "unit": "silver_chest",
+        "value": 1
+      },
+      {
+        "unit": "silver_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 22
+      },
+      {
+        "id": "e1002",
+        "lv": 19
+      },
+      {
+        "id": "e1003",
+        "lv": 16
+      },
+      {
+        "id": "e1004",
+        "lv": 15
+      },
+      {
+        "id": "e1005",
+        "lv": 10
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 21
+      },
+      {
+        "id": "e1002",
+        "lv": 28
+      },
+      {
+        "id": "e1003",
+        "lv": 27
+      },
+      {
+        "id": "e1004",
+        "lv": 23
+      },
+      {
+        "id": "e1004",
+        "lv": 26
+      }
+    ]
+  },
+  "s100009": {
+    "name": "幽冥古域",
+    "stageNum": 9,
+    "next": "s100010",
+    "bg": "s100009.png",
+    "icon": "stage_icon_s100009.png",
+    "battleNum": 10,
+    "enemyNumMin": 5,
+    "enemyNumMax": 5,
+    "moneyTreeRatio": 1300,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 90
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 1
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 1020
+      },
+      {
+        "unit": "golden_chest",
+        "value": 1
+      },
+      {
+        "unit": "golden_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 25
+      },
+      {
+        "id": "e1002",
+        "lv": 22
+      },
+      {
+        "id": "e1003",
+        "lv": 20
+      },
+      {
+        "id": "e1004",
+        "lv": 18
+      },
+      {
+        "id": "e1005",
+        "lv": 16
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 24
+      },
+      {
+        "id": "e1002",
+        "lv": 30
+      },
+      {
+        "id": "e1003",
+        "lv": 30
+      },
+      {
+        "id": "e1004",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 24
+      }
+    ]
+  },
+  "s100010": {
+    "name": "悲鸣巢穴",
+    "stageNum": 10,
+    "next": "s100011",
+    "bg": "s100010.png",
+    "icon": "stage_icon_s100010.png",
+    "battleNum": 10,
+    "enemyNumMin": 5,
+    "enemyNumMax": 6,
+    "moneyTreeRatio": 1450,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 100
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 2
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 1135
+      },
+      {
+        "unit": "golden_chest",
+        "value": 1
+      },
+      {
+        "unit": "golden_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 27
+      },
+      {
+        "id": "e1002",
+        "lv": 25
+      },
+      {
+        "id": "e1003",
+        "lv": 24
+      },
+      {
+        "id": "e1004",
+        "lv": 23
+      },
+      {
+        "id": "e1005",
+        "lv": 21
+      },
+      {
+        "id": "e1005",
+        "lv": 24
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 27
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      }
+    ]
+  },
+  "s100011": {
+    "name": "哀歌平原",
+    "stageNum": 11,
+    "next": "s100012",
+    "bg": "s100011.png",
+    "icon": "stage_icon_s100011.png",
+    "battleNum": 10,
+    "enemyNumMin": 6,
+    "enemyNumMax": 6,
+    "moneyTreeRatio": 1600,
+    "offlineReward": [
+      {
+        "unit": "gold",
+        "value": 110
+      },
+      {
+        "unit": "gem",
+        "value": 1
+      },
+      {
+        "unit": "iron_key",
+        "value": 3
+      }
+    ],
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 1250
+      },
+      {
+        "unit": "golden_chest",
+        "value": 1
+      },
+      {
+        "unit": "golden_key",
+        "value": 1
+      }
+    ],
+    "enemyTypes": [
+      {
+        "id": "e1001",
+        "lv": 29
+      },
+      {
+        "id": "e1002",
+        "lv": 28
+      },
+      {
+        "id": "e1003",
+        "lv": 28
+      },
+      {
+        "id": "e1004",
+        "lv": 28
+      },
+      {
+        "id": "e1005",
+        "lv": 27
+      },
+      {
+        "id": "e1005",
+        "lv": 29
+      }
+    ],
+    "bossBattle": [
+      {
+        "id": "e1001",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      },
+      {
+        "id": "e1005",
+        "lv": 30
+      }
+    ]
+  }
+}

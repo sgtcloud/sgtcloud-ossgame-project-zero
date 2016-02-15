@@ -1177,53 +1177,6 @@
                 "ctype": "LoadingBarObjectData"
               },
               {
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 200
-                },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 200
-                },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
-                },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
-                "TouchEnable": true,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 0.0,
-                  "Y": 250.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.3378
-                },
-                "PreSize": {
-                  "X": 1.0,
-                  "Y": 0.6757
-                },
-                "TopMargin": -10.0,
-                "BottomMargin": 250.0,
-                "Tag": 152,
-                "ActionTag": 1925056159,
-                "Size": {
-                  "X": 640.0,
-                  "Y": 500.0
-                },
-                "Name": "tap",
-                "ctype": "PanelObjectData"
-              },
-              {
                 "FontSize": 14,
                 "ButtonText": "",
                 "TextColor": {

@@ -288,19 +288,6 @@
                 <PreSize X="0.6938" Y="0.0081" />
                 <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tap" CanEdit="False" ActionTag="1925056159" Tag="152" IconVisible="False" TopMargin="-10.0000" BottomMargin="250.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                <Size X="640.0000" Y="500.0000" />
-                <AnchorPoint />
-                <Position Y="250.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.3378" />
-                <PreSize X="1.0000" Y="0.6757" />
-                <SingleColor A="255" R="150" G="200" B="255" />
-                <FirstColor A="255" R="150" G="200" B="255" />
-                <EndColor A="255" R="255" G="255" B="255" />
-                <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
               <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="15.3671" RightMargin="539.6329" TopMargin="140.5315" BottomMargin="522.4685" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="55" Scale9Height="55" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="85.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
