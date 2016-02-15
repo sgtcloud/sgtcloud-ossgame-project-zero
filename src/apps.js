@@ -12,6 +12,8 @@ $$.extend = function (a, b) {
 }
 
 var CONSTS = {
+    "FAIRY_SPECIFIC_ZORDER": 2000,
+    "MAX_ATTACHMENTS_ON_SPRITE": 10,
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
@@ -366,3 +368,15 @@ function loadDynamicTexture(url, listenr, target) {
         }
     }, target);
 }
+
+Array.prototype.remove = function (dx) {
+    if (isNaN(dx) || dx > this.length) {
+        return false;
+    }
+    for (var i = 0, n = 0; i < this.length; i++) {
+        if (this[i] != this[dx]) {
+            this[n++] = this[i]
+        }
+    }
+    this.length -= 1
+};

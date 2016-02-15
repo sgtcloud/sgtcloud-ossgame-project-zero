@@ -8,10 +8,10 @@ var HeroUnit = BattleUnit.extend({
         this._super(battle, data, BattleConsts.Camp.Player);
         this.recover = 0;
         this.cooldown = 0;
-        this.data = data;
 
         //血条的NODE
-        this.lifeNode = ccs.csLoader.createNode(res.hero_blood_json);
+
+        this.lifeNode = Unit.create(res.hero_blood_json);
         this.lifeNode.setAnchorPoint(0.5, 0.5);
         this.lifeNode.setPositionY(86);
         this.addChild(this.lifeNode);
@@ -34,7 +34,7 @@ var HeroUnit = BattleUnit.extend({
         this.isDead = function () {
             return this.data.getCurrentLife() <= 0;
         };
-        this.onAttacked = function () {
+        this.onMove = function () {
             var target = battle.findNextEnemy();
             if (target) {
                 this.playAnimation('atk');
@@ -58,7 +58,19 @@ var HeroUnit = BattleUnit.extend({
         this.onDead = function () {
             this.recover = this.data.getRecover();
             customEventHelper.sendEvent(EVENT.HERO_DIE, this.data);
-            battle.onHeroDead(this);
+
+            this.playAnimation("die", false, function () {
+                var srcPos = this.getPosition();
+                var dropHeight = 500;
+                var dropMove = cc.jumpTo(0.2, srcPos, 0, 1);
+                var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 3);
+                this.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(function () {
+                    this.setPosition(srcPos.x, srcPos.y + dropHeight);
+                    this.playAnimation('dead');
+                }, this), cc.fadeIn(0.2), dropMove, jump));
+            });
+
+            //battle.onHeroDead(this);
             //var lost = battle.checkPlayerLost();
             //if(lost){
             //  battle.resetBattle();
@@ -73,7 +85,7 @@ var HeroUnit = BattleUnit.extend({
             customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.data);
         };
         this.reset = function () {
-            this.animateTime = 0;
+            this.moveCounter = 0;
             this.node.runAction(cc.fadeIn(1.0));
             this.playAnimation('stand');
         }

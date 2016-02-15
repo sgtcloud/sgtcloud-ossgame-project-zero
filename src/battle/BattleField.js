@@ -192,8 +192,14 @@ var BattleField = cc.Class.extend({
     totalSprites: 0,
 
     addSprite: function (sprite, zorder) {
-        this.totalSprites++;
-        this.container.addChild(sprite, 1000 + this.totalSprites + zorder);
+        var order = 0;
+        if (zorder) {
+            order = zorder;
+        } else {
+            this.totalSprites++;
+            order = this.totalSprites;
+        }
+        this.container.addChild(sprite, 1000 + order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
     },
 
     /**
@@ -320,7 +326,7 @@ var BattleField = cc.Class.extend({
 
     showFairy: function () {
         var fairy = new FairyUnit();
-        this.addSprite(fairy, 2010);
+        this.addSprite(fairy, CONSTS.FAIRY_SPECIFIC_ZORDER);
     },
     //todo refactor to event
     onHeroDead: function (hero) {
