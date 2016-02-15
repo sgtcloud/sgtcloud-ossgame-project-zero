@@ -1,6 +1,6 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
-  "Version": "2.3.4",
+  "Version": "2.3.3.0",
   "Name": "BattleLayer",
   "Content": {
     "Content": {
@@ -15,7 +15,6 @@
         "Tag": 174,
         "Children": [
           {
-            "ClipAble": false,
             "BackColorAlpha": 102,
             "SingleColor": {
               "R": 150,
@@ -54,7 +53,6 @@
             "Tag": 264,
             "Children": [
               {
-                "ClipAble": false,
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,

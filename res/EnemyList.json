@@ -378,6 +378,7 @@
                 "RightMargin": 172.2163,
                 "TopMargin": 81.7391,
                 "BottomMargin": 24.2609,
+                "CallBackType": "Click",
                 "Tag": 72,
                 "ActionTag": -2083267184,
                 "Size": {
