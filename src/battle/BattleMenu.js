@@ -567,7 +567,7 @@ var HeroListMenu = BattleMenu.extend({
                     eventHero.refreshProps();
                     elements.dps_text.setString(parseInt(eventHero.getLife()));
                 }
-            })
+            });
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                 refeshUpgradeLayer(hero, elements);
             });
@@ -632,7 +632,6 @@ var HeroListMenu = BattleMenu.extend({
                 eventData.cost = cost;
                 hero.upgrade();
                 lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
-                dps_text.setString(parseInt(hero.getLife()));
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
                 customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
                 if (hero.isMaxLevel()) {
@@ -908,6 +907,7 @@ var EquipListMenu = BattleMenu.extend({
                 equipObject.equip.upgrade(hero, price);
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);
+                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
             });
         }
 
@@ -1031,6 +1031,14 @@ var EquipListMenu = BattleMenu.extend({
             setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
+            customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
+                //var eventHero = event.getUserData();
+                //if (eventHero.getId() === hero.getId()) {
+                 hero.refreshProps();
+                console.log(hero.getId()+"----->"+hero.getLife())
+                    dps_text.setString(parseInt(hero.getLife()));
+                //}
+            });
             name.setString(hero.getName());
             lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
             dps_text.ignoreContentAdaptWithSize(true);
@@ -1098,6 +1106,7 @@ var EquipListMenu = BattleMenu.extend({
                 upgradeBtn.addClickEventListener(function (event) {
                     var cost = equip.getLevelData()['upgrade'];
                     equip.upgrade(hero);
+
                     if (cost.unit === "gold") {
                         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                     } else if (cost.unit === "gem") {
@@ -1105,9 +1114,10 @@ var EquipListMenu = BattleMenu.extend({
                     } else if (cost.unit === "relic") {
                         customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
                     }
+                    desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
                     lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
                     if (equip.isMaxLevel()) {
-                        upgradeBtn.setVisible(false);
+                        elements.upgrade_btn.layer.setVisible(false);
                         maxLevel.setVisible(true);
                     } else {
                         var nextCost = equip.getNextLevelUpgrade();
@@ -1116,6 +1126,7 @@ var EquipListMenu = BattleMenu.extend({
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
                     refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
+                    customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
                 });
                 refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {

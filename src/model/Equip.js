@@ -51,7 +51,7 @@ var Equip = function (id, equipCache) {
     };
     this.upgrade = function (hero,price) {
         price =price|| this.getNextLevelUpgrade();
-        var unit = price['unit']
+        var unit = price['unit'];
         if (!validateAmountNotEnough(price)) {
             lv += 1;
             var cost = {value: -price.value, unit: unit}
