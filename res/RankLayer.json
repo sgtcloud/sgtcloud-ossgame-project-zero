@@ -210,7 +210,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0186
                 },
                 "PreSize": {
@@ -411,16 +411,16 @@
                 "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/green14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                  "ScaleX": 0.5152,
+                  "ScaleY": 0.5168
                 },
                 "Position": {
-                  "X": 366.6119,
-                  "Y": 706.5193
+                  "X": 367.481,
+                  "Y": 707.1227
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -429,22 +429,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5728,
-                  "Y": 0.8215
+                  "X": 0.5742,
+                  "Y": 0.8222
                 },
                 "PreSize": {
-                  "X": 0.0844,
-                  "Y": 0.0174
+                  "X": 0.1016,
+                  "Y": 0.0209
                 },
-                "LeftMargin": 339.6119,
-                "RightMargin": 246.3881,
-                "TopMargin": 145.9807,
-                "BottomMargin": 699.0193,
+                "LeftMargin": 333.9899,
+                "RightMargin": 241.0101,
+                "TopMargin": 144.179,
+                "BottomMargin": 697.821,
+                "CallBackType": "Touch",
                 "Tag": 591,
                 "ActionTag": -1707227176,
                 "Size": {
-                  "X": 54.0,
-                  "Y": 15.0
+                  "X": 65.0,
+                  "Y": 18.0
                 },
                 "Name": "myNum_text",
                 "ctype": "TextBMFontObjectData"
@@ -631,8 +632,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/green14-export.fnt",
+        "font/green14-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_05.png",
         "mainUI/bg_10.png",

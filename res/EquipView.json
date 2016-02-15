@@ -242,15 +242,15 @@
                 "LabelText": "Lv.99/99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 306.051,
-                  "Y": 85.4187
+                  "X": 293.0513,
+                  "Y": 86.4187
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -259,22 +259,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5101,
-                  "Y": 0.7765
+                  "X": 0.4884,
+                  "Y": 0.7856
                 },
                 "PreSize": {
-                  "X": 0.1383,
-                  "Y": 0.1364
+                  "X": 0.2017,
+                  "Y": 0.1818
                 },
-                "LeftMargin": 306.051,
-                "RightMargin": 210.949,
-                "TopMargin": 17.0813,
-                "BottomMargin": 77.9187,
+                "LeftMargin": 293.0513,
+                "RightMargin": 185.9487,
+                "TopMargin": 13.5813,
+                "BottomMargin": 76.4187,
                 "Tag": 1093,
                 "ActionTag": 1417978744,
                 "Size": {
-                  "X": 83.0,
-                  "Y": 15.0
+                  "X": 121.0,
+                  "Y": 20.0
                 },
                 "Name": "equipLevel_text",
                 "ctype": "TextBMFontObjectData"
@@ -425,8 +425,8 @@
         "Btn_Upgrade2.json",
         "EquipUI.plist",
         "EquipUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png"
+        "font/white16-export.fnt",
+        "font/white16-export.png"
       ],
       "ctype": "GameFileData"
     }

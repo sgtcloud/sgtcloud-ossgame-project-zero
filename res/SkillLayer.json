@@ -136,7 +136,7 @@
                 "LabelText": "99945456",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -157,17 +157,17 @@
                   "Y": 0.9164
                 },
                 "PreSize": {
-                  "X": 0.2078,
+                  "X": 0.2172,
                   "Y": 0.0833
                 },
                 "LeftMargin": 136.3309,
-                "RightMargin": 370.6691,
+                "RightMargin": 364.6691,
                 "TopMargin": 10.0729,
                 "BottomMargin": 209.9271,
                 "Tag": 1050,
                 "ActionTag": -1991017531,
                 "Size": {
-                  "X": 133.0,
+                  "X": 139.0,
                   "Y": 20.0
                 },
                 "Name": "atk_text",
@@ -201,7 +201,7 @@
                   "Y": 0.1083
                 },
                 "LeftMargin": 398.6175,
-                "RightMargin": 110.3824,
+                "RightMargin": 110.3825,
                 "TopMargin": 7.5954,
                 "BottomMargin": 206.4046,
                 "Tag": 173,
@@ -268,7 +268,7 @@
                 "LabelText": "999999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -289,17 +289,17 @@
                   "Y": 0.915
                 },
                 "PreSize": {
-                  "X": 0.1625,
+                  "X": 0.1703,
                   "Y": 0.0833
                 },
                 "LeftMargin": 523.399,
-                "RightMargin": 12.601,
+                "RightMargin": 7.601,
                 "TopMargin": 10.4051,
                 "BottomMargin": 209.5949,
                 "Tag": 1051,
                 "ActionTag": 61502921,
                 "Size": {
-                  "X": 104.0,
+                  "X": 109.0,
                   "Y": 20.0
                 },
                 "Name": "tatk_text",
@@ -323,8 +323,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font22_white_kmbb-export.fnt",
-        "font/font22_white_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "mainUI/bg_04.png",
         "SkillUI.plist",
         "SkillUI.png"

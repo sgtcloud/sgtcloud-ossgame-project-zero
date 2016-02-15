@@ -730,6 +730,10 @@
           "type": "globe_ctr_chance_rate",
           "value": 0
         },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 0
+        },
         "upgrade": {
           "unit": "relic",
           "value": 0
@@ -741,6 +745,10 @@
         "effect1": {
           "type": "globe_ctr_chance_rate",
           "value": 5
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 10
         },
         "upgrade": {
           "unit": "relic",
@@ -754,6 +762,10 @@
           "type": "globe_ctr_chance_rate",
           "value": 10
         },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 20
+        },
         "upgrade": {
           "unit": "relic",
           "value": 12
@@ -765,6 +777,10 @@
         "effect1": {
           "type": "globe_ctr_chance_rate",
           "value": 15
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 30
         },
         "upgrade": {
           "unit": "relic",
@@ -778,6 +794,10 @@
           "type": "globe_ctr_chance_rate",
           "value": 20
         },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 40
+        },
         "upgrade": {
           "unit": "relic",
           "value": 30
@@ -789,6 +809,10 @@
         "effect1": {
           "type": "globe_ctr_chance_rate",
           "value": 35
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 50
         },
         "upgrade": {
           "unit": "relic",

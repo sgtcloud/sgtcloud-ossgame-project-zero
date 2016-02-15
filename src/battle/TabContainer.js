@@ -15,7 +15,7 @@ var TabContainer = cc.Node.extend({
             {name: "main", click: "onMainClick"},
             {name: "hero", click: "onHeroClick"},
             {name: "equip", click: "onEquipClick"},
-            {name: "pvp", click: "onPvpClick"},
+            //{name: "pvp", click: "onPvpClick"},
             {name: "rank", click: "onRankClick"},
             {name: "shop", click: "onShopClick"},
         ];
@@ -27,16 +27,15 @@ var TabContainer = cc.Node.extend({
             var name = param.name;
             var click = param.click;
             this.buttons[name] = root.getChildByName(name);
-            if(name==='pvp'){
-                this.buttons[name].setVisible(false);
-            }
+            //if(name==='pvp'){
+            //    this.buttons[name].setVisible(false);
+            //}
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
                     if (sender.name != 'pvp') {
                         self.showMenuLayer(sender.name);
                     }
-
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);

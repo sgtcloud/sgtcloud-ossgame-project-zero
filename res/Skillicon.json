@@ -92,7 +92,7 @@
                 "LabelText": "99:99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font18_white-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -114,18 +114,18 @@
                   "Y": 0.3782
                 },
                 "PreSize": {
-                  "X": 0.8778,
-                  "Y": 0.1889
+                  "X": 0.7667,
+                  "Y": 0.2
                 },
-                "LeftMargin": 5.7776,
-                "RightMargin": 5.2224,
-                "TopMargin": 47.465,
-                "BottomMargin": 25.535,
+                "LeftMargin": 10.7776,
+                "RightMargin": 10.2224,
+                "TopMargin": 46.965,
+                "BottomMargin": 25.035,
                 "Tag": 107,
                 "ActionTag": -1698262075,
                 "Size": {
-                  "X": 79.0,
-                  "Y": 17.0
+                  "X": 69.0,
+                  "Y": 18.0
                 },
                 "Name": "time",
                 "ctype": "TextBMFontObjectData"
@@ -277,8 +277,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font18_white-export.fnt",
-        "font/font18_white-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "mainUI/skill_icon.png",
         "SkillUI.plist",
         "SkillUI.png"

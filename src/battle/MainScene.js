@@ -59,9 +59,13 @@ var MainScene = cc.Scene.extend({
             //cc.eventManager.addListener(mouseDownEventListener, buffList);
 
             var __toggle_hide = 0;
-
+            //buffTip.setVisible(true);
             function toggleBuffTip() {
-                console.log('llklkjlkjlk')
+               //var fadein= cc.fadeIn(1);
+               //var fadeout= cc.fadeOut(1);
+               // var dt=cc.delayTime(3);
+               // var sq=cc.sequence(fadein,dt,fadeout);
+               // buffTip.runAction(sq);
                 buffTip.setVisible(true);
                 clearTimeout(__toggle_hide);
                 __toggle_hide = setTimeout(function () {
@@ -80,7 +84,7 @@ var MainScene = cc.Scene.extend({
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 buffLayer.root.schedule(function () {
                     if (remaining > 0) {
-                        buffLayer.setTime(remaining + 's');
+                        buffLayer.setTime(remaining );
                         remaining--;
                     } else {
                         buffList.removeChild(buffLayer.root);
