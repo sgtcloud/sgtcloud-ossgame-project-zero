@@ -546,16 +546,6 @@
           <Image Name="font14_white_kmbb-export.png" />
           <Fnt Name="font18_white-export.fnt" />
           <Image Name="font18_white-export.png" />
-          <PlistImageFolder Image="FontUI.png" PListFile="FontUI.plist" Name=".FontUI_PList.Dir">
-            <PlistImageFile Name="font_font14_green_kmbb-export.png" Key="font/font14_green_kmbb-export.png" />
-            <PlistImageFile Name="font_font14_red_kmbb-export.png" Key="font/font14_red_kmbb-export.png" />
-            <PlistImageFile Name="font_font14_white_kmbb-export.png" Key="font/font14_white_kmbb-export.png" />
-            <PlistImageFile Name="font_font16_white_kmbb-export.png" Key="font/font16_white_kmbb-export.png" />
-            <PlistImageFile Name="font_font16_yellow_kmbb-export.png" Key="font/font16_yellow_kmbb-export.png" />
-            <PlistImageFile Name="font_font18_white-export.png" Key="font/font18_white-export.png" />
-            <PlistImageFile Name="font_font19_white_kmbb-export.png" Key="font/font19_white_kmbb-export.png" />
-            <PlistImageFile Name="font_font22_yellow_kmbb-export.png" Key="font/font22_yellow_kmbb-export.png" />
-          </PlistImageFolder>
           <Fnt Name="font14_white_kmbb-export.fnt" />
         </Folder>
         <Project Name="BuffList.csd" Type="Layer" />
@@ -564,7 +554,6 @@
         <PlistInfo Name="BattleNum.csi" Type="Plist" />
         <PlistInfo Name="ButtonUI.csi" Type="Plist" />
         <PlistInfo Name="EquipUI.csi" Type="Plist" />
-        <PlistInfo Name="FontUI.csi" Type="Plist" />
         <PlistInfo Name="HeroDescUI.csi" Type="Plist" />
         <PlistInfo Name="HeroUI.csi" Type="Plist" />
         <PlistInfo Name="MaterialUI.csi" Type="Plist" />

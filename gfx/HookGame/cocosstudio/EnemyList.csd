@@ -79,7 +79,7 @@
                 <PreSize X="0.0000" Y="0.0000" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/font14_white_kmbb-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text2" ActionTag="-2083267184" Tag="72" IconVisible="False" LeftMargin="164.7837" RightMargin="172.2163" TopMargin="81.7391" BottomMargin="24.2609" LabelText="9999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="level_text2" ActionTag="-2083267184" CallBackType="Click" Tag="72" IconVisible="False" LeftMargin="164.7837" RightMargin="172.2163" TopMargin="81.7391" BottomMargin="24.2609" LabelText="9999" ctype="TextBMFontObjectData">
                 <Size X="43.0000" Y="14.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="186.2837" Y="31.2609" />
