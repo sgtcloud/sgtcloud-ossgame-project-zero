@@ -93,15 +93,15 @@
                 <PreSize X="0.3234" Y="0.0314" />
                 <FileData Type="MarkedSubImage" Path="rankUI/myRank_text.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" CallBackType="Touch" Tag="591" IconVisible="False" LeftMargin="333.9899" RightMargin="241.0101" TopMargin="144.1790" BottomMargin="697.8210" LabelText="9999" ctype="TextBMFontObjectData">
-                <Size X="65.0000" Y="18.0000" />
+              <AbstractNodeData Name="myNum_text" ActionTag="-1707227176" CallBackType="Touch" Tag="591" IconVisible="False" LeftMargin="338.1119" RightMargin="244.8881" TopMargin="143.2518" BottomMargin="698.7482" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="57.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5152" ScaleY="0.5168" />
-                <Position X="367.4810" Y="707.1227" />
+                <Position X="367.4811" Y="708.0499" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5742" Y="0.8222" />
-                <PreSize X="0.1016" Y="0.0209" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/green14-export.fnt" Plist="" />
+                <CColor A="255" R="22" G="240" B="10" />
+                <PrePosition X="0.5742" Y="0.8233" />
+                <PreSize X="0.0891" Y="0.0209" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="rank_tab" ActionTag="496490297" Tag="193" IconVisible="False" LeftMargin="35.0000" RightMargin="285.0000" TopMargin="195.0000" BottomMargin="610.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="320.0000" Y="55.0000" />

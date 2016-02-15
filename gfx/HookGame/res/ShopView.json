@@ -155,7 +155,11 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 35,
+                  "G": 236,
+                  "B": 236
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5467,
@@ -196,7 +200,9 @@
                   "ScaleX": 1.3,
                   "ScaleY": 1.3
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.3909,

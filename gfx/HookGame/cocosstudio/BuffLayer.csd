@@ -30,16 +30,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time" ActionTag="-1758261490" Tag="200" IconVisible="False" LeftMargin="149.6942" RightMargin="0.3058" TopMargin="5.2549" BottomMargin="4.7451" IsCustomSize="True" FontSize="20" LabelText="99s" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="40.0000" Y="20.0000" />
-                <AnchorPoint />
-                <Position X="149.6942" Y="4.7451" />
+              <AbstractNodeData Name="time" ActionTag="-2125556355" Tag="886" IconVisible="False" LeftMargin="153.2698" RightMargin="7.7302" TopMargin="5.1599" BottomMargin="6.8401" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="29.0000" Y="18.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="167.7698" Y="15.8401" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="0" B="0" />
-                <PrePosition X="0.7879" Y="0.1582" />
-                <PreSize X="0.2105" Y="0.6667" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.8830" Y="0.5280" />
+                <PreSize X="0.1526" Y="0.6000" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

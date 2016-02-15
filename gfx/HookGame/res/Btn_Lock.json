@@ -140,25 +140,28 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5429,
                   "Y": 0.7594
                 },
                 "PreSize": {
-                  "X": 0.6571,
-                  "Y": 0.2375
+                  "X": 0.5357,
+                  "Y": 0.25
                 },
-                "LeftMargin": 30.009,
-                "RightMargin": 17.991,
-                "TopMargin": 9.747,
-                "BottomMargin": 51.253,
+                "LeftMargin": 38.509,
+                "RightMargin": 26.491,
+                "TopMargin": 9.247,
+                "BottomMargin": 50.753,
                 "Tag": 17,
                 "ActionTag": 235483224,
                 "Size": {
-                  "X": 92.0,
-                  "Y": 19.0
+                  "X": 75.0,
+                  "Y": 20.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"

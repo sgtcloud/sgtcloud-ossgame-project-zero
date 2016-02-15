@@ -135,7 +135,7 @@
                 "LabelText": "999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/white14-export.fnt",
+                  "Path": "font/white10-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -150,24 +150,26 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.9337,
                   "Y": 0.1533
                 },
                 "PreSize": {
-                  "X": 0.49,
+                  "X": 0.43,
                   "Y": 0.18
                 },
-                "LeftMargin": 44.3663,
+                "LeftMargin": 50.3663,
                 "RightMargin": 6.6337,
                 "TopMargin": 75.6655,
                 "BottomMargin": 6.3345,
                 "Tag": 1111,
                 "ActionTag": -662718539,
                 "Size": {
-                  "X": 49.0,
+                  "X": 43.0,
                   "Y": 18.0
                 },
                 "Name": "sale_text",
@@ -191,8 +193,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/white14-export.fnt",
-        "font/white14-export.png",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "mainUI/bg_10.png",
         "mainUI/equip_icon.png"
       ],

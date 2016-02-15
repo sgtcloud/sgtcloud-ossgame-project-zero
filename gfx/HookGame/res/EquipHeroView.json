@@ -1292,7 +1292,11 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 236,
+                      "G": 54,
+                      "B": 205
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.4359,

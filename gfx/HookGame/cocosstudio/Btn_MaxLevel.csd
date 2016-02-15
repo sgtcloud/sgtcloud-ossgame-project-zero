@@ -24,13 +24,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upMax_text" ActionTag="952903344" Tag="423" IconVisible="False" LeftMargin="21.5001" RightMargin="13.4999" TopMargin="18.0000" BottomMargin="18.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="upMax_text" ActionTag="952903344" Tag="423" IconVisible="False" LeftMargin="21.5001" RightMargin="13.4999" TopMargin="17.0000" BottomMargin="19.0000" Scale9Width="105" Scale9Height="44" ctype="ImageViewObjectData">
                 <Size X="105.0000" Y="44.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="74.0001" Y="40.0000" />
+                <Position X="74.0001" Y="41.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5286" Y="0.5000" />
+                <PrePosition X="0.5286" Y="0.5125" />
                 <PreSize X="0.7500" Y="0.5500" />
                 <FileData Type="MarkedSubImage" Path="buttonUI/MaxLevel.png" Plist="ButtonUI.plist" />
               </AbstractNodeData>

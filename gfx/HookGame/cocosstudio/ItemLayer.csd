@@ -29,15 +29,15 @@
                 <PreSize X="0.9000" Y="0.9000" />
                 <FileData Type="Normal" Path="mainUI/equip_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="sale_text" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="44.3663" RightMargin="6.6337" TopMargin="75.6655" BottomMargin="6.3345" LabelText="999" ctype="TextBMFontObjectData">
-                <Size X="49.0000" Y="18.0000" />
+              <AbstractNodeData Name="sale_text" ActionTag="-662718539" Tag="1111" IconVisible="False" LeftMargin="50.3663" RightMargin="6.6337" TopMargin="75.6655" BottomMargin="6.3345" LabelText="999" ctype="TextBMFontObjectData">
+                <Size X="43.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
                 <Position X="93.3663" Y="15.3345" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
+                <CColor A="255" R="255" G="255" B="0" />
                 <PrePosition X="0.9337" Y="0.1533" />
-                <PreSize X="0.4900" Y="0.1800" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+                <PreSize X="0.4300" Y="0.1800" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
