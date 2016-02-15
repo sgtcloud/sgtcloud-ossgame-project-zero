@@ -1,1871 +1,2048 @@
-{"s10101": {
-  "name" : "灵魂烈焰",
-  "desc" : "对随机敌方单位造成{effect1_value}点伤害。",
-  "buffDesc" : "无",
-  "icon" : "s10101.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 250,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 3001,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 21,
-    "duration" : 0,
-    "cooldown" : 90
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 200,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 1236,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 0,
-    "cooldown" : 90
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 150,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 522,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 0,
-    "cooldown" : 90
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 100,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 226,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 90
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 50,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 100,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 1,
-    "duration" : 0,
-    "cooldown" : 90
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "single_damage_once"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 1,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10102":{
-  "name" : "黑暗之风",
-  "desc" : "对所有敌方单位造成{effect1_value}点伤害。",
-  "buffDesc" : "无",
-  "icon" : "s10102.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 250,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 3680,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 22,
-    "duration" : 0,
-    "cooldown" : 100
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 150,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 1507,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 17,
-    "duration" : 0,
-    "cooldown" : 100
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 90,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 633,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 0,
-    "cooldown" : 100
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 60,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 272,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 100
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 30,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 120,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 100
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "multi_damage_once"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10103": {
-  "name" : "流金铄石",
-  "desc" : "限定时间{duration}秒内，获得金币的比例提升{effect1_value}。",
-  "buffDesc" : "提升金币获得{effect1_value}",
-  "icon" : "s10103.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 30,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 4374,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 23,
-    "duration" : 20,
-    "cooldown" : 110
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 25,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 1782,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 20,
-    "cooldown" : 110
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 745,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 13,
-    "duration" : 20,
-    "cooldown" : 110
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 15,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 319,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 20,
-    "cooldown" : 110
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 140,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 20,
-    "cooldown" : 110
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10104": {
-  "name" : "群鸦盛宴",
-  "desc" : "限定时间{duration}秒内，对所有敌方单位造成{effect1_value}点伤害。",
-  "buffDesc" : "持续伤害{effect1_value}点",
-  "icon" : "s10104.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 200,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 5080,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 24,
-    "duration" : 5,
-    "cooldown" : 120
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 150,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 2061,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 5,
-    "cooldown" : 120
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 120,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 858,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 5,
-    "cooldown" : 120
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 60,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 366,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 9,
-    "duration" : 5,
-    "cooldown" : 120
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 20,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 160,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 5,
-    "cooldown" : 120
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "multi_damage_continuous"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10105":{
-  "name" : "星界祝福",
-  "desc" : "治疗全体友方单位{effect1_value}点生命值。",
-  "buffDesc" : "无",
-  "icon" : "s10105.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 1500,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 5797,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 25,
-    "duration" : 0,
-    "cooldown" : 130
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 1000,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 2343,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 0,
-    "cooldown" : 130
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 500,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 972,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 0,
-    "cooldown" : 130
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 300,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 413,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 130
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 100,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 180,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 5,
-    "duration" : 0,
-    "cooldown" : 130
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "multi_recover_once"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 5,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10106": {
-  "name" : "能量波动",
-  "desc" : "限定时间{duration}秒内，提升点击伤害{effect1_value}。",
-  "buffDesc" : "提升点击伤害{effect1_value}",
-  "icon" : "s10106.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 50,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 6524,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 26,
-    "duration" : 20,
-    "cooldown" : 140
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 40,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 2628,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 21,
-    "duration" : 20,
-    "cooldown" : 140
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 30,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 1087,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 20,
-    "cooldown" : 140
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 461,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 20,
-    "cooldown" : 140
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 200,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 20,
-    "cooldown" : 140
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_tap_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10107": {
-  "name" : "风雷万钧",
-  "desc" : "限定时间{duration}秒内，提升攻击伤害{effect1_value}。",
-  "buffDesc" : "提升攻击伤害{effect1_value}",
-  "icon" : "s10107.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 50,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 7260,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 27,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 40,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 2915,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 22,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 30,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 1202,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 17,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 508,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 220,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_attack_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10108":{
-  "name" : "能量爆裂",
-  "desc" : "限定时间{duration}秒内，缩短攻击间隔{effect1_value}秒。",
-  "buffDesc" : "缩短攻击间隔{effect1_value}秒",
-  "icon" : "s10108.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 25,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 8004,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 28,
-    "duration" : 30,
-    "cooldown" : 150
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 3205,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 23,
-    "duration" : 25,
-    "cooldown" : 150
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 15,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 1318,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 556,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 13,
-    "duration" : 15,
-    "cooldown" : 150
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 5,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 240,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 10,
-    "cooldown" : 150
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_atk_period_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10109":{
-  "name" : "超重力场",
-  "desc" : "限定时间{duration}秒内，提升暴击概率{effect1_value}。",
-  "buffDesc" : "提升暴击概率{effect1_value}",
-  "icon" : "s10109.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 25,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 8756,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 29,
-    "duration" : 30,
-    "cooldown" : 150
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 3497,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 24,
-    "duration" : 25,
-    "cooldown" : 150
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 15,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 1434,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 603,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 15,
-    "cooldown" : 150
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 5,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 260,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 9,
-    "duration" : 10,
-    "cooldown" : 150
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 9,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10110":{
-  "name" : "全神贯注",
-  "desc" : "限定时间{duration}秒内，提升暴击倍率{effect1_value}。",
-  "buffDesc" : "提升暴击倍率{effect1_value}",
-  "icon" : "s10110.png",
-  "type" : 1,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 25,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 9516,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 30,
-    "duration" : 30,
-    "cooldown" : 150
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 20,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 3791,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 25,
-    "duration" : 25,
-    "cooldown" : 150
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 15,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 1551,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 20,
-    "cooldown" : 150
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 10,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 651,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 15,
-    "cooldown" : 150
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 5,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 280,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 10,
-    "cooldown" : 150
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "buff_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10201":{
-  "name" : "凶猛打击",
-  "desc" : "增加攻击伤害{effect1_value}点。",
-  "buffDesc" : "无",
-  "icon" : "s10201.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 230,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 3001,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 102,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 1236,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 46,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 522,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 21,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 226,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 100,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10202":{
-  "name" : "诸神黄昏",
-  "desc" : "提升{effect1_value}的攻击伤害。",
-  "buffDesc" : "无",
-  "icon" : "s10202.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 10,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 3680,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 8,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 1507,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 6,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 633,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 4,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 272,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 2,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 120,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "attack_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10203": {
-  "name" : "保护壁垒",
-  "desc" : "提升全体英雄{effect1_value}的生命值。",
-  "buffDesc" : "无",
-  "icon" : "s10203.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 5,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 4374,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 4,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 1782,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 3,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 745,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 2,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 319,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 1,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 140,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "globe_life_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10301":{
-  "name" : "剑舞",
-  "desc" : "增加攻击伤害{effect1_value}点。",
-  "buffDesc" : "无",
-  "icon" : "s10301.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 361,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 3001,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 158,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 1236,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 70,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 522,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 32,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 226,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 15,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 100,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10302": {
-  "name" : "强身",
-  "desc" : "提升{effect1_value}的暴击概率。",
-  "buffDesc" : "无",
-  "icon" : "s10302.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 15,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 3680,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 11,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 1507,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 9,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 633,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 7,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 272,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 5,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 120,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "ctr_chance_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10303":{
-  "name" : "破空",
-  "desc" : "提升全体英雄{effect1_value}的暴击概率。",
-  "buffDesc" : "无",
-  "icon" : "s10303.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 10,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 4374,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 8,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 1782,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 6,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 745,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 4,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 319,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 2,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 140,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "globe_ctr_modify_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10401":{
-  "name" : "一发双枪",
-  "desc" : "增加攻击伤害{effect1_value}点。",
-  "buffDesc" : "无",
-  "icon" : "s10401.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 497,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 3001,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 215,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 1236,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 95,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 522,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 43,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 226,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 20,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 100,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10402": {
-  "name" : "不洁射击",
-  "desc" : "缩短{effect1_value}的攻击速度。",
-  "buffDesc" : "无",
-  "icon" : "s10402.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : -0.50,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 3680,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : -0.40,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 1507,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : -0.30,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 633,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : -0.20,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 272,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : -0.10,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 120,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "atk_period_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10403":{
-  "name" : "黄金眼",
-  "desc" : "提升{effect1_value}的金币获得。",
-  "buffDesc" : "无",
-  "icon" : "s10403.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 25,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 4374,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 20,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 1782,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 15,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 745,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 10,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 319,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 5,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 140,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "globe_gold_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-}, "s10501":{
-  "name" : "嗜血杀戮",
-  "desc" : "增加攻击伤害{effect1_value}点。",
-  "buffDesc" : "无",
-  "icon" : "s10501.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 637,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 3001,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 18,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 274,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 1236,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 14,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 121,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 522,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 10,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 54,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 226,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 6,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 25,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 100,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "attack_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 2,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10502": {
-  "name" : "嘲讽",
-  "desc" : "提升{effect1_value}的暴击倍率。",
-  "buffDesc" : "无",
-  "icon" : "s10502.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 50,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 3680,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 19,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 40,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 1507,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 15,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 30,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 633,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 11,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 20,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 272,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 7,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 120,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "ctr_modify_value"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 3,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-},"s10503": {
-  "name" : "无尽怒火",
-  "desc" : "提升全体英雄{effect1_value}的 暴击概率。",
-  "buffDesc" : "无",
-  "icon" : "s10503.png",
-  "type" : 0,
-  "levelDatas" : [ {
-    "level" : 5,
-    "effect1" : {
-      "value" : 30,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 4374,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 20,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 4,
-    "effect1" : {
-      "value" : 25,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 1782,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 16,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 3,
-    "effect1" : {
-      "value" : 20,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 745,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 12,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 2,
-    "effect1" : {
-      "value" : 15,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 319,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 8,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 1,
-    "effect1" : {
-      "value" : 10,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 140,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  }, {
-    "level" : 0,
-    "effect1" : {
-      "value" : 0,
-      "type" : "globe_ctr_chance_rate"
-    },
-    "upgrade" : {
-      "value" : 0,
-      "unit" : "gold"
-    },
-    "unlockLevel" : 4,
-    "duration" : 0,
-    "cooldown" : 0
-  } ]
-} }
+{
+  "s10101": {
+    "name": "灵魂烈焰",
+    "desc": "对随机敌方单位造成{effect1_value}点伤害。",
+    "buffDesc": "无",
+    "icon": "s10101.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 1,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 100
+        },
+        "unlockLevel": 1,
+        "duration": 0,
+        "cooldown": 90
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 100
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 226
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 90
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 150
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 522
+        },
+        "unlockLevel": 11,
+        "duration": 0,
+        "cooldown": 90
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 200
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1236
+        },
+        "unlockLevel": 16,
+        "duration": 0,
+        "cooldown": 90
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 250
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3001
+        },
+        "unlockLevel": 21,
+        "duration": 0,
+        "cooldown": 90
+      }
+    ]
+  },
+  "s10102": {
+    "name": "黑暗之风",
+    "desc": "对所有敌方单位造成{effect1_value}点伤害。",
+    "buffDesc": "无",
+    "icon": "s10102.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 120
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 100
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 60
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 272
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 100
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 90
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 633
+        },
+        "unlockLevel": 12,
+        "duration": 0,
+        "cooldown": 100
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 150
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1507
+        },
+        "unlockLevel": 17,
+        "duration": 0,
+        "cooldown": 100
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "multi_damage_once",
+          "value": 250
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3680
+        },
+        "unlockLevel": 22,
+        "duration": 0,
+        "cooldown": 100
+      }
+    ]
+  },
+  "s10103": {
+    "name": "流金铄石",
+    "desc": "限定时间{duration}秒内，获得金币的比例提升{effect1_value}。",
+    "buffDesc": "提升金币获得{effect1_value}",
+    "icon": "s10103.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 140
+        },
+        "unlockLevel": 3,
+        "duration": 20,
+        "cooldown": 110
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 319
+        },
+        "unlockLevel": 8,
+        "duration": 20,
+        "cooldown": 110
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 745
+        },
+        "unlockLevel": 13,
+        "duration": 20,
+        "cooldown": 110
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1782
+        },
+        "unlockLevel": 18,
+        "duration": 20,
+        "cooldown": 110
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_gold_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4374
+        },
+        "unlockLevel": 23,
+        "duration": 20,
+        "cooldown": 110
+      }
+    ]
+  },
+  "s10104": {
+    "name": "群鸦盛宴",
+    "desc": "限定时间{duration}秒内，对所有敌方单位造成{effect1_value}点伤害。",
+    "buffDesc": "持续伤害{effect1_value}点",
+    "icon": "s10104.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 160
+        },
+        "unlockLevel": 4,
+        "duration": 5,
+        "cooldown": 120
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 60
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 366
+        },
+        "unlockLevel": 9,
+        "duration": 5,
+        "cooldown": 120
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 120
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 858
+        },
+        "unlockLevel": 14,
+        "duration": 5,
+        "cooldown": 120
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 150
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 2061
+        },
+        "unlockLevel": 19,
+        "duration": 5,
+        "cooldown": 120
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "multi_damage_continuous",
+          "value": 200
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 5080
+        },
+        "unlockLevel": 24,
+        "duration": 5,
+        "cooldown": 120
+      }
+    ]
+  },
+  "s10105": {
+    "name": "星界祝福",
+    "desc": "治疗全体友方单位{effect1_value}点生命值。",
+    "buffDesc": "无",
+    "icon": "s10105.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 5,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 100
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 180
+        },
+        "unlockLevel": 5,
+        "duration": 0,
+        "cooldown": 130
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 300
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 413
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 130
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 500
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 972
+        },
+        "unlockLevel": 15,
+        "duration": 0,
+        "cooldown": 130
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 1000
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 2343
+        },
+        "unlockLevel": 20,
+        "duration": 0,
+        "cooldown": 130
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "multi_recover_once",
+          "value": 1500
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 5797
+        },
+        "unlockLevel": 25,
+        "duration": 0,
+        "cooldown": 130
+      }
+    ]
+  },
+  "s10106": {
+    "name": "能量波动",
+    "desc": "限定时间{duration}秒内，提升点击伤害{effect1_value}。",
+    "buffDesc": "提升点击伤害{effect1_value}",
+    "icon": "s10106.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 200
+        },
+        "unlockLevel": 6,
+        "duration": 20,
+        "cooldown": 140
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 461
+        },
+        "unlockLevel": 11,
+        "duration": 20,
+        "cooldown": 140
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1087
+        },
+        "unlockLevel": 16,
+        "duration": 20,
+        "cooldown": 140
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 40
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 2628
+        },
+        "unlockLevel": 21,
+        "duration": 20,
+        "cooldown": 140
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_tap_rate",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 6524
+        },
+        "unlockLevel": 26,
+        "duration": 20,
+        "cooldown": 140
+      }
+    ]
+  },
+  "s10107": {
+    "name": "风雷万钧",
+    "desc": "限定时间{duration}秒内，提升攻击伤害{effect1_value}。",
+    "buffDesc": "提升攻击伤害{effect1_value}",
+    "icon": "s10107.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 220
+        },
+        "unlockLevel": 7,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 508
+        },
+        "unlockLevel": 12,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1202
+        },
+        "unlockLevel": 17,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 40
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 2915
+        },
+        "unlockLevel": 22,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_attack_rate",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 7260
+        },
+        "unlockLevel": 27,
+        "duration": 20,
+        "cooldown": 150
+      }
+    ]
+  },
+  "s10108": {
+    "name": "能量爆裂",
+    "desc": "限定时间{duration}秒内，缩短攻击间隔{effect1_value}秒。",
+    "buffDesc": "缩短攻击间隔{effect1_value}秒",
+    "icon": "s10108.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 8,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 240
+        },
+        "unlockLevel": 8,
+        "duration": 10,
+        "cooldown": 150
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 556
+        },
+        "unlockLevel": 13,
+        "duration": 15,
+        "cooldown": 150
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1318
+        },
+        "unlockLevel": 18,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3205
+        },
+        "unlockLevel": 23,
+        "duration": 25,
+        "cooldown": 150
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_atk_period_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 8004
+        },
+        "unlockLevel": 28,
+        "duration": 30,
+        "cooldown": 150
+      }
+    ]
+  },
+  "s10109": {
+    "name": "超重力场",
+    "desc": "限定时间{duration}秒内，提升暴击概率{effect1_value}。",
+    "buffDesc": "提升暴击概率{effect1_value}",
+    "icon": "s10109.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 9,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 260
+        },
+        "unlockLevel": 9,
+        "duration": 10,
+        "cooldown": 150
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 603
+        },
+        "unlockLevel": 14,
+        "duration": 15,
+        "cooldown": 150
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1434
+        },
+        "unlockLevel": 19,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3497
+        },
+        "unlockLevel": 24,
+        "duration": 25,
+        "cooldown": 150
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_ctr_chance_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 8756
+        },
+        "unlockLevel": 29,
+        "duration": 30,
+        "cooldown": 150
+      }
+    ]
+  },
+  "s10110": {
+    "name": "全神贯注",
+    "desc": "限定时间{duration}秒内，提升暴击倍率{effect1_value}。",
+    "buffDesc": "提升暴击倍率{effect1_value}",
+    "icon": "s10110.png",
+    "type": 1,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 280
+        },
+        "unlockLevel": 10,
+        "duration": 10,
+        "cooldown": 150
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 651
+        },
+        "unlockLevel": 15,
+        "duration": 15,
+        "cooldown": 150
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1551
+        },
+        "unlockLevel": 20,
+        "duration": 20,
+        "cooldown": 150
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3791
+        },
+        "unlockLevel": 25,
+        "duration": 25,
+        "cooldown": 150
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "buff_ctr_modify_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 9516
+        },
+        "unlockLevel": 30,
+        "duration": 30,
+        "cooldown": 150
+      }
+    ]
+  },
+  "s10201": {
+    "name": "凶猛打击",
+    "desc": "增加攻击伤害{effect1_value}点。",
+    "buffDesc": "无",
+    "icon": "s10201.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "attack_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "attack_value",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 100
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "attack_value",
+          "value": 21
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 226
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 46
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 522
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 102
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1236
+        },
+        "unlockLevel": 14,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 230
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3001
+        },
+        "unlockLevel": 18,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10202": {
+    "name": "诸神黄昏",
+    "desc": "提升{effect1_value}的攻击伤害。",
+    "buffDesc": "无",
+    "icon": "s10202.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 2
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 120
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 272
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 633
+        },
+        "unlockLevel": 11,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 8
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1507
+        },
+        "unlockLevel": 15,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3680
+        },
+        "unlockLevel": 19,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10203": {
+    "name": "保护壁垒",
+    "desc": "提升全体英雄{effect1_value}的生命值。",
+    "buffDesc": "无",
+    "icon": "s10203.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 1
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 140
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 2
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 319
+        },
+        "unlockLevel": 8,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 3
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 745
+        },
+        "unlockLevel": 12,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1782
+        },
+        "unlockLevel": 16,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4374
+        },
+        "unlockLevel": 20,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10301": {
+    "name": "剑舞",
+    "desc": "增加攻击伤害{effect1_value}点。",
+    "buffDesc": "无",
+    "icon": "s10301.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "attack_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "attack_value",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 100
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "attack_value",
+          "value": 32
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 226
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 70
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 522
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 158
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1236
+        },
+        "unlockLevel": 14,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 361
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3001
+        },
+        "unlockLevel": 18,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10302": {
+    "name": "强身",
+    "desc": "提升{effect1_value}的暴击概率。",
+    "buffDesc": "无",
+    "icon": "s10302.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 120
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 7
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 272
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 9
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 633
+        },
+        "unlockLevel": 11,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 11
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1507
+        },
+        "unlockLevel": 15,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "ctr_chance_value",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3680
+        },
+        "unlockLevel": 19,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10303": {
+    "name": "破空",
+    "desc": "提升全体英雄{effect1_value}的暴击概率。",
+    "buffDesc": "无",
+    "icon": "s10303.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 2
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 140
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 319
+        },
+        "unlockLevel": 8,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 745
+        },
+        "unlockLevel": 12,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 8
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1782
+        },
+        "unlockLevel": 16,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_ctr_modify_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4374
+        },
+        "unlockLevel": 20,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10401": {
+    "name": "一发双枪",
+    "desc": "增加攻击伤害{effect1_value}点。",
+    "buffDesc": "无",
+    "icon": "s10401.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "attack_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "attack_value",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 100
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "attack_value",
+          "value": 43
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 226
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 95
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 522
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 215
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1236
+        },
+        "unlockLevel": 14,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 497
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3001
+        },
+        "unlockLevel": 18,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10402": {
+    "name": "不洁射击",
+    "desc": "缩短{effect1_value}的攻击速度。",
+    "buffDesc": "无",
+    "icon": "s10402.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 120
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 272
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 633
+        },
+        "unlockLevel": 11,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1507
+        },
+        "unlockLevel": 15,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "atk_period_value",
+          "value": -1
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3680
+        },
+        "unlockLevel": 19,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10403": {
+    "name": "黄金眼",
+    "desc": "提升{effect1_value}的金币获得。",
+    "buffDesc": "无",
+    "icon": "s10403.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 140
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 319
+        },
+        "unlockLevel": 8,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 745
+        },
+        "unlockLevel": 12,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1782
+        },
+        "unlockLevel": 16,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4374
+        },
+        "unlockLevel": 20,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10501": {
+    "name": "嗜血杀戮",
+    "desc": "增加攻击伤害{effect1_value}点。",
+    "buffDesc": "无",
+    "icon": "s10501.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "attack_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "attack_value",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 100
+        },
+        "unlockLevel": 2,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "attack_value",
+          "value": 54
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 226
+        },
+        "unlockLevel": 6,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 121
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 522
+        },
+        "unlockLevel": 10,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 274
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1236
+        },
+        "unlockLevel": 14,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 637
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3001
+        },
+        "unlockLevel": 18,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10502": {
+    "name": "嘲讽",
+    "desc": "提升{effect1_value}的暴击倍率。",
+    "buffDesc": "无",
+    "icon": "s10502.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 120
+        },
+        "unlockLevel": 3,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 272
+        },
+        "unlockLevel": 7,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 633
+        },
+        "unlockLevel": 11,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 40
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1507
+        },
+        "unlockLevel": 15,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "ctr_modify_value",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 3680
+        },
+        "unlockLevel": 19,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  },
+  "s10503": {
+    "name": "无尽怒火",
+    "desc": "提升全体英雄{effect1_value}的 暴击概率。",
+    "buffDesc": "无",
+    "icon": "s10503.png",
+    "type": 0,
+    "levelDatas": [
+      {
+        "level": 0,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 0
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 0
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 1,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 140
+        },
+        "unlockLevel": 4,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 2,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 319
+        },
+        "unlockLevel": 8,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 745
+        },
+        "unlockLevel": 12,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 25
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 1782
+        },
+        "unlockLevel": 16,
+        "duration": 0,
+        "cooldown": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4374
+        },
+        "unlockLevel": 20,
+        "duration": 0,
+        "cooldown": 0
+      }
+    ]
+  }
+}

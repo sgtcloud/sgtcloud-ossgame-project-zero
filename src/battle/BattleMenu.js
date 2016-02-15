@@ -438,23 +438,17 @@ var HeroListMenu = BattleMenu.extend({
 
         function buildUpgradeBtn(elements, btnlayer, target) {
             var buff_text = btnlayer.getChildByName('buff_text');//buff文字
-            //var relic_icon = btnlayer.getChildByName('relic_icon');//宝物图标
             var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
             var icon = btnlayer.getChildByName('icon');
             var lock = btnlayer.getChildByName('lock');
-            //var gold_icon = btnlayer.getChildByName('gold_icon');//消耗金币
             var text_yellow = btnlayer.getChildByName('text_yellow');//统一文字
             var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
-            //diamond.setVisible(false)
-            //relic_icon.setVisible(false)
             elements.upgrade_btn = {};
             elements.upgrade_btn.icon = icon;
             elements.upgrade_btn.layer = btnlayer;
             elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
-            //elements.upgrade_btn.gold_icon = gold_icon;
             elements.upgrade_btn.text_yellow = text_yellow;
             elements.upgrade_btn.diamond = diamond;
-            //elements.upgrade_btn.relic = relic_icon;
             elements.upgrade_btn.buff_text = buff_text;
             elements.upgrade_btn.buffNum_text = buffNum_text;
             elements.upgrade_btn.lock = lock;
@@ -476,15 +470,6 @@ var HeroListMenu = BattleMenu.extend({
             if (!hero.isMaxLevel()) {
                 var nextlevelData = hero.getLevelData(hero.getLv() + 1);
                 validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
-                /*if (validateAmountNotEnough(nextlevelData['upgrade'])) {
-                 elements.upgrade_btn.btn.setEnabled(false);
-                 elements.upgrade_btn.btn.setBright(false);
-                 elements.upgrade_btn.text_yellow.setColor(cc.color(255, 0, 0));
-                 } else {
-                 elements.upgrade_btn.btn.setEnabled(true);
-                 elements.upgrade_btn.btn.setBright(true);
-                 elements.upgrade_btn.text_yellow.setColor(cc.color(255, 255, 255));
-                 }*/
             }
         }
 
@@ -511,12 +496,10 @@ var HeroListMenu = BattleMenu.extend({
             revive_btn.setPosition(revive_btnPosition);
             root.addChild(revive_btn);
             var diamond_text = revive_btn.getChildByName('diamond_text');
-            //die_text.setColor(cc.color(255,0,0));
             die_time_text.setColor(cc.color(255, 0, 0));
             elements.icon = icon;
             elements.lv = lv;
             elements.dps_text = dps_text;
-            //elements.dps_text.setColor(cc.color(2, 177, 234));
             elements.dps = dps;
             elements.heroName_text = heroName_text;
             elements.die_text = die_text;
@@ -526,10 +509,8 @@ var HeroListMenu = BattleMenu.extend({
             elements.revive_btn.btn = revive_btn.getChildByName('btn');
             elements.revive_btn.diamond_text = diamond_text;
             diamond_text.ignoreContentAdaptWithSize(true);
-            //elements.upgrade_btn.per.setVisible(false);
             dps.ignoreContentAdaptWithSize(true);
             dps_text.ignoreContentAdaptWithSize(true);
-            //elements.upgrade_btn.diamond.setVisible(false);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             icon.setTouchEnabled(true);
             icon.addClickEventListener(function () {
@@ -541,8 +522,9 @@ var HeroListMenu = BattleMenu.extend({
             elements.revive_btn.btn.addClickEventListener(function () {
                 if (hero.getCurrentLife() <= 0) {
                     var resurge = hero.getResurge();
-                    resurge['cost']['value'] = -resurge['cost']['value'];
-                    PlayerData.updateResource([resurge['cost']]);
+                    //resurge['cost']['value'] = -resurge['value'];
+                    var cost={unit:resurge['cost'],value:-resurge['value']}
+                    PlayerData.updateResource([cost]);
                     PlayerData.updatePlayer();
                     customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                     customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
@@ -554,11 +536,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.die_time_text.setString(Math.round(data['recover']));
                 }
             });
-            //elements.die_time_text.setFontName("微软雅黑");
             setFont([heroName_text, elements.upgrade_btn.buff_text]);
-            //die_text.setVisible(false);
-            //die_time_text.setVisible(false);
-            //elements.revive_btn.layer.setVisible(false);
             if ((hero.getLv() > 0 && hero.getCurrentLife() > 0) || hero.getLv() == 0) {
                 die_text.setVisible(false);
                 die_time_text.setVisible(false);
@@ -585,10 +563,10 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.layer.isVisible() && elements.upgrade_btn.layer.setVisible(false);
                     elements.icon.setColor(cc.color(90, 90, 90));
                     var resurge = hero.getResurge();
-                    var costValue = parseInt(resurge['cost']['value']);
+                    var costValue = parseInt(resurge['value']);
                     elements.revive_btn.diamond_text.setString(costValue);
                     elements.die_time_text.setString(Math.round(dieHero.getLevelData()['resurge']['time']));
-                    if (PlayerData.getAmountByUnit("gem") < costValue) {
+                    if (PlayerData.getAmountByUnit(resurge['cost']) < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
                         elements.revive_btn.diamond_text.setColor(cc.color(255, 0, 0));
@@ -599,7 +577,7 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
                 if (!hero.getCurrentLife() > 0) {
                     var resurge = hero.getResurge();
-                    var costValue = parseInt(resurge['cost']['value']);
+                    var costValue = parseInt(resurge['value']);
                     if (PlayerData.getAmountByUnit("gem") < costValue) {
                         elements.revive_btn.btn.setEnabled(false);
                         elements.revive_btn.btn.setBright(false);
@@ -808,14 +786,11 @@ var HeroListMenu = BattleMenu.extend({
                         showEffect += '%'
                     } else {
                     }
-                    //todo
-                    //elements.upgrade_btn.per.setVisible(false);
                     elements.upgrade_btn.buffNum_text.setString(showEffect);
                     lockItemIfNecessary(hero, skill, elements);
                 }
             });
             initSkillView(hero, skill, elements);
-            //refeshUpgradeLayer(skill,elements);
             return root;
         }
 
@@ -846,13 +821,11 @@ var HeroListMenu = BattleMenu.extend({
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
-                //var locked = heroData.isLocked();
                 var skillsList = []
                 for (var j = 0; j < heroData.getSkillCount(); j++) {
                     var skillData = heroData.getSkillData(j);
                     var _skillView = buildSkillView(skillData, heroData);
                     that.heroList.pushBackCustomItem(_skillView);
-                    //locked && _skillView.setVisible(false);
                     skillsList.push(_skillView);
                 }
             }
@@ -866,7 +839,6 @@ var EquipListMenu = BattleMenu.extend({
         this._super(battle, res.equip_layer_json);
 
         this.heroList = this.root.getChildByName('equip_list');
-        //this.playerEquip = this.root.getChildByName('title_root');
         var heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         var equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
         var itemView = ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
@@ -981,8 +953,6 @@ var EquipListMenu = BattleMenu.extend({
             }
             var chance = new Chance(bonus);
             return chance.next();
-            //var rand=random(0,equipsList.length-1);
-            //return equipsList[random(0,equipsList.length-1)];
         }
 
         function nextMagicalValue(hero) {
@@ -1082,12 +1052,6 @@ var EquipListMenu = BattleMenu.extend({
                 upgradeBtnIcon.loadTexture('res/icon/resources_small/' + upgradeCost.unit + '.png');
                 text.setString(upgradeCost.value);
                 var upgradeBtn = upgradeLayer.getChildByName('btn');
-                //validateResourceNotEnough(upgradeCost, upgradeBtn, text)
-                //if (validateResourceNotEnough(upgradeCost, upgradeBtn, text)) {
-                //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-gray");
-                //} else {
-                //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-white");
-                //}
 
                 refeshItemIcon(validateResourceNotEnough(upgradeCost, upgradeBtn, text), equip.getId());
 
@@ -1154,11 +1118,6 @@ var EquipListMenu = BattleMenu.extend({
             var cost = equip.getNextLevelUpgrade();
             var unit = data['unit'];
             if (cost['unit'] === unit) {
-                //if (validateResourceNotEnough(cost, upgradeBtn, text)) {
-                //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-gray");
-                //} else {
-                //    customEventHelper.sendEvent("itemIcon-" + equip.getId() + "-white");
-                //}
 
                 refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text), equip.getId());
             }

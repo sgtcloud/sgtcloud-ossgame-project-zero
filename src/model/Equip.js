@@ -23,7 +23,7 @@ var Equip = function (id, equipCache) {
     };
 
     this.getMaxLevel = function () {
-        return data.levelDatas[0]['level'];
+        return data.levelDatas[data.levelDatas.length-1]['level'];
     };
     this.getName = function () {
         return data.name;

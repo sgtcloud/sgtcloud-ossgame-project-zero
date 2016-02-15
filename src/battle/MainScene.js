@@ -65,7 +65,7 @@ var MainScene = cc.Scene.extend({
                 clearTimeout(__toggle_hide);
                 __toggle_hide = setTimeout(function () {
                     buffTip.setVisible(false);
-                }, 5000);
+                }, 3000);
             }
 
             function toggleBufflayer(time, text, icon) {

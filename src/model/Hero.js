@@ -47,7 +47,7 @@ var Hero = function (heroData) {
 
 
     this.getMaxLevel = function () {
-        return data.levelDatas[0]['level'];
+        return data.levelDatas[data.levelDatas.length-1]['level'];
     }
 
     this.refreshProps = function () {
