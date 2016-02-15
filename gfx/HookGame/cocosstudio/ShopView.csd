@@ -29,25 +29,25 @@
                 <PreSize X="0.4167" Y="0.1667" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="diamond_text" ActionTag="-1775524666" Tag="907" IconVisible="False" LeftMargin="328.0161" RightMargin="236.9839" TopMargin="75.6171" BottomMargin="505.3829" LabelText="99" ctype="TextBMFontObjectData">
-                <Size X="35.0000" Y="19.0000" />
+              <AbstractNodeData Name="diamond_text" ActionTag="-1775524666" Tag="907" IconVisible="False" LeftMargin="328.0161" RightMargin="230.9839" TopMargin="74.1171" BottomMargin="503.8829" LabelText="99" ctype="TextBMFontObjectData">
+                <Size X="41.0000" Y="22.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="328.0161" Y="514.8829" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5467" Y="0.8581" />
-                <PreSize X="0.0583" Y="0.0317" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.0683" Y="0.0367" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white18-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_text" ActionTag="1878014452" Tag="906" IconVisible="False" LeftMargin="255.5249" RightMargin="245.4751" TopMargin="33.3326" BottomMargin="547.6674" LabelText="999999" ctype="TextBMFontObjectData">
-                <Size X="99.0000" Y="19.0000" />
+              <AbstractNodeData Name="gold_text" ActionTag="1878014452" Tag="906" IconVisible="False" LeftMargin="234.5247" RightMargin="249.4753" TopMargin="29.8326" BottomMargin="544.1674" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="116.0000" Y="26.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="255.5249" Y="557.1674" />
+                <Position X="234.5247" Y="557.1674" />
                 <Scale ScaleX="1.3000" ScaleY="1.3000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4259" Y="0.9286" />
-                <PreSize X="0.1650" Y="0.0317" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.3909" Y="0.9286" />
+                <PreSize X="0.1933" Y="0.0433" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white22-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="diamond" ActionTag="-772689509" Tag="285" IconVisible="False" LeftMargin="291.8182" RightMargin="278.1818" TopMargin="68.3788" BottomMargin="501.6212" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
@@ -59,13 +59,13 @@
                 <PreSize X="0.0500" Y="0.0500" />
                 <FileData Type="MarkedSubImage" Path="heroUI/diamond.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold" ActionTag="-1790085428" Tag="286" IconVisible="False" LeftMargin="221.2225" RightMargin="348.7775" TopMargin="29.2186" BottomMargin="540.7814" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="gold" ActionTag="-1790085428" Tag="286" IconVisible="False" LeftMargin="200.2226" RightMargin="369.7774" TopMargin="29.2186" BottomMargin="540.7814" LeftEage="5" RightEage="5" TopEage="5" BottomEage="5" Scale9OriginX="5" Scale9OriginY="5" Scale9Width="30" Scale9Height="30" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />
                 <AnchorPoint />
-                <Position X="221.2225" Y="540.7814" />
+                <Position X="200.2226" Y="540.7814" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3687" Y="0.9013" />
+                <PrePosition X="0.3337" Y="0.9013" />
                 <PreSize X="0.0500" Y="0.0500" />
                 <FileData Type="MarkedSubImage" Path="heroUI/gold.png" Plist="HeroUI.plist" />
               </AbstractNodeData>

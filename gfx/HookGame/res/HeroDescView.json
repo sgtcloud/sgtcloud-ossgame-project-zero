@@ -609,18 +609,17 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 195.6307,
+                  "X": 147.1306,
                   "Y": 107.0
                 },
                 "Scale": {
@@ -630,40 +629,39 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3623,
+                  "X": 0.2725,
                   "Y": 0.7643
                 },
                 "PreSize": {
-                  "X": 0.1833,
-                  "Y": 0.1357
+                  "X": 0.1352,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 146.1307,
-                "RightMargin": 294.8693,
-                "TopMargin": 23.5,
-                "BottomMargin": 97.5,
+                "LeftMargin": 147.1306,
+                "RightMargin": 319.8694,
+                "TopMargin": 23.0,
+                "BottomMargin": 97.0,
                 "CallBackType": "Click",
                 "Tag": 406,
                 "ActionTag": -253997819,
                 "Size": {
-                  "X": 99.0,
-                  "Y": 19.0
+                  "X": 73.0,
+                  "Y": 20.0
                 },
                 "Name": "atk_text",
                 "ctype": "TextBMFontObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 195.6307,
+                  "X": 147.1306,
                   "Y": 70.16
                 },
                 "Scale": {
@@ -673,23 +671,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3623,
+                  "X": 0.2725,
                   "Y": 0.5011
                 },
                 "PreSize": {
-                  "X": 0.1833,
-                  "Y": 0.1357
+                  "X": 0.1352,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 146.1307,
-                "RightMargin": 294.8693,
-                "TopMargin": 60.34,
-                "BottomMargin": 60.66,
+                "LeftMargin": 147.1306,
+                "RightMargin": 319.8694,
+                "TopMargin": 59.84,
+                "BottomMargin": 60.16,
                 "CallBackType": "Click",
                 "Tag": 407,
                 "ActionTag": 1151485905,
                 "Size": {
-                  "X": 99.0,
-                  "Y": 19.0
+                  "X": 73.0,
+                  "Y": 20.0
                 },
                 "Name": "tap_text",
                 "ctype": "TextBMFontObjectData"
@@ -698,15 +696,14 @@
                 "LabelText": "999999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 175.6307,
+                  "X": 133.1304,
                   "Y": 33.32
                 },
                 "Scale": {
@@ -716,23 +713,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3252,
+                  "X": 0.2465,
                   "Y": 0.238
                 },
                 "PreSize": {
-                  "X": 0.1833,
-                  "Y": 0.1357
+                  "X": 0.2019,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 126.1307,
-                "RightMargin": 314.8693,
-                "TopMargin": 97.18,
-                "BottomMargin": 23.82,
+                "LeftMargin": 133.1304,
+                "RightMargin": 297.8696,
+                "TopMargin": 96.68,
+                "BottomMargin": 23.32,
                 "CallBackType": "Click",
                 "Tag": 408,
                 "ActionTag": 1861095697,
                 "Size": {
-                  "X": 99.0,
-                  "Y": 19.0
+                  "X": 109.0,
+                  "Y": 20.0
                 },
                 "Name": "life_text",
                 "ctype": "TextBMFontObjectData"
@@ -741,15 +738,14 @@
                 "LabelText": "1.05",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 446.4962,
+                  "X": 403.9962,
                   "Y": 109.0042
                 },
                 "Scale": {
@@ -759,23 +755,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8268,
+                  "X": 0.7481,
                   "Y": 0.7786
                 },
                 "PreSize": {
-                  "X": 0.0778,
-                  "Y": 0.1357
+                  "X": 0.0944,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 425.4962,
-                "RightMargin": 72.5038,
-                "TopMargin": 21.4958,
-                "BottomMargin": 99.5042,
+                "LeftMargin": 403.9962,
+                "RightMargin": 85.0038,
+                "TopMargin": 20.9958,
+                "BottomMargin": 99.0042,
                 "CallBackType": "Click",
                 "Tag": 409,
                 "ActionTag": 842236456,
                 "Size": {
-                  "X": 42.0,
-                  "Y": 19.0
+                  "X": 51.0,
+                  "Y": 20.0
                 },
                 "Name": "atk_period_text",
                 "ctype": "TextBMFontObjectData"
@@ -784,15 +780,14 @@
                 "LabelText": "3.25%",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 446.4962,
+                  "X": 403.9962,
                   "Y": 70.5577
                 },
                 "Scale": {
@@ -802,23 +797,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8268,
+                  "X": 0.7481,
                   "Y": 0.504
                 },
                 "PreSize": {
-                  "X": 0.1259,
-                  "Y": 0.1357
+                  "X": 0.1352,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 412.4962,
-                "RightMargin": 59.5038,
-                "TopMargin": 59.9423,
-                "BottomMargin": 61.0577,
+                "LeftMargin": 403.9962,
+                "RightMargin": 63.0038,
+                "TopMargin": 59.4423,
+                "BottomMargin": 60.5577,
                 "CallBackType": "Click",
                 "Tag": 410,
                 "ActionTag": 1505919400,
                 "Size": {
-                  "X": 68.0,
-                  "Y": 19.0
+                  "X": 73.0,
+                  "Y": 20.0
                 },
                 "Name": "ctr_chance_text",
                 "ctype": "TextBMFontObjectData"
@@ -827,15 +822,14 @@
                 "LabelText": "250.63%",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 446.4962,
+                  "X": 403.9962,
                   "Y": 33.1113
                 },
                 "Scale": {
@@ -845,23 +839,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8268,
+                  "X": 0.7481,
                   "Y": 0.2365
                 },
                 "PreSize": {
-                  "X": 0.1815,
-                  "Y": 0.1357
+                  "X": 0.1981,
+                  "Y": 0.1429
                 },
-                "LeftMargin": 397.4962,
-                "RightMargin": 44.5038,
-                "TopMargin": 97.3887,
-                "BottomMargin": 23.6113,
+                "LeftMargin": 403.9962,
+                "RightMargin": 29.0038,
+                "TopMargin": 96.8887,
+                "BottomMargin": 23.1113,
                 "CallBackType": "Click",
                 "Tag": 411,
                 "ActionTag": 2059305747,
                 "Size": {
-                  "X": 98.0,
-                  "Y": 19.0
+                  "X": 107.0,
+                  "Y": 20.0
                 },
                 "Name": "ctr_modify_text",
                 "ctype": "TextBMFontObjectData"
@@ -884,8 +878,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroDescUI.plist",
         "HeroDescUI.png",
         "mainUI/bg_03.png"

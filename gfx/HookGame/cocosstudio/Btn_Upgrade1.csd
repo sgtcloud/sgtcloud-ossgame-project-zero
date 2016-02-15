@@ -35,15 +35,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="46.0977" RightMargin="26.9023" TopMargin="9.3444" BottomMargin="55.6556" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="67.0000" Y="15.0000" />
+              <AbstractNodeData Name="text_yellow" ActionTag="-699834057" Tag="128" IconVisible="False" LeftMargin="45.8791" RightMargin="29.1209" TopMargin="8.8444" BottomMargin="53.1556" LabelText="9999" ctype="TextBMFontObjectData">
+                <Size X="65.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="79.5977" Y="63.1556" />
+                <Position X="78.3791" Y="62.1556" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5686" Y="0.7894" />
-                <PreSize X="0.4786" Y="0.1875" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PrePosition X="0.5599" Y="0.7769" />
+                <PreSize X="0.4643" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="icon" ActionTag="-1792450231" Tag="393" IconVisible="False" LeftMargin="27.7107" RightMargin="97.2893" TopMargin="10.5861" BottomMargin="54.4139" Scale9Width="40" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="15.0000" Y="15.0000" />
@@ -55,15 +55,15 @@
                 <PreSize X="0.1071" Y="0.1875" />
                 <FileData Type="MarkedSubImage" Path="equipUI/relic.png" Plist="EquipUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="64.4442" RightMargin="61.5558" TopMargin="49.5166" BottomMargin="13.4834" LabelText="-" ctype="TextBMFontObjectData">
-                <Size X="14.0000" Y="17.0000" />
+              <AbstractNodeData Name="buffNum_text" ActionTag="716730375" Tag="348" IconVisible="False" LeftMargin="28.9442" RightMargin="26.0558" TopMargin="49.0166" BottomMargin="12.9834" LabelText="+99.6%" ctype="TextBMFontObjectData">
+                <Size X="85.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="71.4442" Y="21.9834" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5103" Y="0.2748" />
-                <PreSize X="0.1000" Y="0.2125" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
+                <PreSize X="0.6071" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

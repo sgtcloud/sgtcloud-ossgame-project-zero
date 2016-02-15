@@ -260,61 +260,6 @@
                 "CheckedState": true,
                 "NormalBackFileData": {
                   "Type": "Normal",
-                  "Path": "ui/pvp_btn1.png",
-                  "Plist": ""
-                },
-                "PressedBackFileData": {
-                  "Type": "Normal",
-                  "Path": "ui/pvp_btn2.png",
-                  "Plist": ""
-                },
-                "DisableBackFileData": {
-                  "Type": "Normal",
-                  "Path": "ui/pvp_btn1.png",
-                  "Plist": ""
-                },
-                "NodeNormalFileData": {
-                  "Type": "Normal",
-                  "Path": "ui/pvp_btn2.png",
-                  "Plist": ""
-                },
-                "TouchEnable": true,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 326.1,
-                  "Y": 3.5
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5095,
-                  "Y": 0.035
-                },
-                "PreSize": {
-                  "X": 0.1484,
-                  "Y": 0.95
-                },
-                "LeftMargin": 326.1,
-                "RightMargin": 218.9,
-                "TopMargin": 1.5,
-                "BottomMargin": 3.5,
-                "Tag": 171,
-                "ActionTag": 1978468656,
-                "Size": {
-                  "X": 95.0,
-                  "Y": 95.0
-                },
-                "Name": "pvp",
-                "ctype": "CheckBoxObjectData"
-              },
-              {
-                "CheckedState": true,
-                "NormalBackFileData": {
-                  "Type": "Normal",
                   "Path": "ui/rank_btn1.png",
                   "Plist": ""
                 },
@@ -446,8 +391,6 @@
         "ui/hero_btn2.png",
         "ui/main_btn1.png",
         "ui/main_btn2.png",
-        "ui/pvp_btn1.png",
-        "ui/pvp_btn2.png",
         "ui/rank_btn1.png",
         "ui/rank_btn2.png",
         "ui/shop_btn1.png",

@@ -40,15 +40,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="1008944852" Tag="250" IconVisible="False" LeftMargin="119.7480" RightMargin="343.2520" TopMargin="42.4376" BottomMargin="52.5624" LabelText="Lv.9999/999999" ctype="TextBMFontObjectData">
-                <Size X="161.0000" Y="15.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="1008944852" Tag="250" IconVisible="False" LeftMargin="119.7480" RightMargin="393.2520" TopMargin="39.9376" BottomMargin="50.0624" LabelText="Lv99.99" ctype="TextBMFontObjectData">
+                <Size X="111.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="119.7480" Y="60.0624" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1919" Y="0.5460" />
-                <PreSize X="0.2580" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1779" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps_bg" ActionTag="1373086883" Tag="256" IconVisible="False" LeftMargin="323.5455" RightMargin="180.4545" TopMargin="36.9943" BottomMargin="13.0057" Scale9Enable="True" LeftEage="11" RightEage="11" TopEage="11" BottomEage="11" Scale9OriginX="11" Scale9OriginY="11" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="120.0000" Y="60.0000" />
@@ -60,15 +60,15 @@
                 <PreSize X="0.1923" Y="0.5455" />
                 <FileData Type="MarkedSubImage" Path="heroUI/text_bg.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="dps_text" ActionTag="-836566228" Tag="249" IconVisible="False" LeftMargin="337.1694" RightMargin="193.8306" TopMargin="57.4310" BottomMargin="37.5690" LabelText="9999999" ctype="TextBMFontObjectData">
-                <Size X="93.0000" Y="15.0000" />
+              <AbstractNodeData Name="dps_text" ActionTag="-836566228" Tag="249" IconVisible="False" LeftMargin="338.1694" RightMargin="194.8306" TopMargin="54.9310" BottomMargin="35.0690" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="91.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="383.6694" Y="45.0690" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6149" Y="0.4097" />
-                <PreSize X="0.1490" Y="0.1364" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font16_white_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.1458" Y="0.1818" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="dps" ActionTag="-788044653" Tag="621" IconVisible="False" LeftMargin="331.5454" RightMargin="188.4546" TopMargin="8.1520" BottomMargin="75.8480" Scale9Width="104" Scale9Height="26" ctype="ImageViewObjectData">
                 <Size X="104.0000" Y="26.0000" />
@@ -80,15 +80,15 @@
                 <PreSize X="0.1667" Y="0.2364" />
                 <FileData Type="MarkedSubImage" Path="heroUI/heroHP.png" Plist="HeroUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="die_time_text" ActionTag="571675629" Tag="424" IconVisible="False" LeftMargin="20.8768" RightMargin="524.1232" TopMargin="56.2622" BottomMargin="36.7378" LabelText="99:99" ctype="TextBMFontObjectData">
-                <Size X="79.0000" Y="17.0000" />
+              <AbstractNodeData Name="die_time_text" ActionTag="571675629" Tag="424" IconVisible="False" LeftMargin="25.8768" RightMargin="529.1232" TopMargin="55.7622" BottomMargin="36.2378" LabelText="99:99" ctype="TextBMFontObjectData">
+                <Size X="69.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="60.3768" Y="45.2378" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0968" Y="0.4113" />
-                <PreSize X="0.1266" Y="0.1545" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
+                <PreSize X="0.1106" Y="0.1636" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="die_text" ActionTag="-956947662" CallBackType="Click" Tag="1060" IconVisible="False" LeftMargin="20.8493" RightMargin="525.1507" TopMargin="29.2096" BottomMargin="49.7904" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />

@@ -77,27 +77,25 @@
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/relic.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="diamond_text" ActionTag="-591758277" Tag="115" IconVisible="False" LeftMargin="26.1157" RightMargin="48.8843" TopMargin="-10.9830" BottomMargin="52.9830" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="60.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="56.1157" Y="61.9830" />
+                  <AbstractNodeData Name="relic_text" ActionTag="1223469565" Tag="821" IconVisible="False" LeftMargin="22.5000" RightMargin="51.5000" TopMargin="21.0001" BottomMargin="20.9999" LabelText="6666" ctype="TextBMFontObjectData">
+                    <Size X="61.0000" Y="18.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="22.5000" Y="29.9999" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4157" Y="1.0331" />
-                    <PreSize X="0.4444" Y="0.3000" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
+                    <CColor A="255" R="205" G="30" B="255" />
+                    <PrePosition X="0.1667" Y="0.5000" />
+                    <PreSize X="0.4519" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="relic_text" ActionTag="-169660825" Tag="116" IconVisible="False" LeftMargin="26.1157" RightMargin="48.8843" TopMargin="22.9302" BottomMargin="19.0698" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="60.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="56.1157" Y="28.0698" />
+                  <AbstractNodeData Name="diamond_text" ActionTag="-922470840" Tag="820" IconVisible="False" LeftMargin="22.5000" RightMargin="51.5000" TopMargin="-12.0000" BottomMargin="54.0000" LabelText="6666" ctype="TextBMFontObjectData">
+                    <Size X="61.0000" Y="18.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="22.5000" Y="63.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4157" Y="0.4678" />
-                    <PreSize X="0.4444" Y="0.3000" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
+                    <CColor A="255" R="30" G="236" B="255" />
+                    <PrePosition X="0.1667" Y="1.0500" />
+                    <PreSize X="0.4519" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="gold_text_bg" ActionTag="-1385240699" Tag="120" IconVisible="False" LeftMargin="-2.7860" RightMargin="-52.2140" TopMargin="51.3106" BottomMargin="-21.3106" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="190.0000" Y="30.0000" />
@@ -134,16 +132,15 @@
                     <PreSize X="0.1852" Y="0.4167" />
                     <FileData Type="Normal" Path="mainUI/gold.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="gold_text" ActionTag="204974627" Tag="123" IconVisible="False" LeftMargin="26.1158" RightMargin="8.8842" TopMargin="55.0586" BottomMargin="-13.0586" IsCustomSize="True" FontSize="18" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="100.0000" Y="18.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="76.1158" Y="-4.0586" />
+                  <AbstractNodeData Name="gold_text" ActionTag="700294411" Tag="822" IconVisible="False" LeftMargin="22.5000" RightMargin="15.5000" TopMargin="53.5684" BottomMargin="-11.5684" LabelText="999999" ctype="TextBMFontObjectData">
+                    <Size X="97.0000" Y="18.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="22.5000" Y="-2.5684" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5638" Y="-0.0676" />
-                    <PreSize X="0.7407" Y="0.3000" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
+                    <CColor A="255" R="255" G="255" B="0" />
+                    <PrePosition X="0.1667" Y="-0.0428" />
+                    <PreSize X="0.7185" Y="0.3000" />
+                    <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />
@@ -207,16 +204,15 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="level_text" ActionTag="-1537324077" Tag="22" IconVisible="False" LeftMargin="544.4027" RightMargin="35.5973" TopMargin="43.4387" BottomMargin="52.5613" FontSize="24" LabelText="99/99" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="60.0000" Y="24.0000" />
+              <AbstractNodeData Name="level_text" ActionTag="1713363107" Tag="819" IconVisible="False" LeftMargin="541.4733" RightMargin="22.5267" TopMargin="44.3212" BottomMargin="53.6788" LabelText="12/56" ctype="TextBMFontObjectData">
+                <Size X="76.0000" Y="22.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="574.4027" Y="64.5613" />
+                <Position X="579.4733" Y="64.6788" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8975" Y="0.5380" />
-                <PreSize X="0.0938" Y="0.2000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <CColor A="255" R="255" G="0" B="0" />
+                <PrePosition X="0.9054" Y="0.5390" />
+                <PreSize X="0.1187" Y="0.1833" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white18-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="stage_icon" ActionTag="850031393" Tag="40" IconVisible="False" LeftMargin="511.3123" RightMargin="98.6877" TopMargin="41.2311" BottomMargin="48.7689" Scale9Width="52" Scale9Height="50" ctype="ImageViewObjectData">
                 <Size X="30.0000" Y="30.0000" />

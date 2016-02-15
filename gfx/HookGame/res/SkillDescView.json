@@ -184,7 +184,7 @@
                 "LabelText": "Lv.99/99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -287,8 +287,6 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
         "mainUI/bg_05.png",
         "mainUI/skill_icon.png"
       ],

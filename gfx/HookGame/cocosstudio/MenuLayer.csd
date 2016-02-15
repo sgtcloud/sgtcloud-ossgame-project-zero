@@ -58,19 +58,6 @@
                 <DisableBackFileData Type="Normal" Path="ui/equip_btn1.png" Plist="" />
                 <NodeNormalFileData Type="Normal" Path="ui/equip_btn2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pvp" Visible="False" ActionTag="1978468656" Tag="171" IconVisible="False" LeftMargin="326.1000" RightMargin="218.9000" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
-                <Size X="95.0000" Y="95.0000" />
-                <AnchorPoint />
-                <Position X="326.1000" Y="3.5000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5095" Y="0.0350" />
-                <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/pvp_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/pvp_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/pvp_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/pvp_btn2.png" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="rank" ActionTag="-1008761465" Tag="172" IconVisible="False" LeftMargin="398.7505" RightMargin="146.2495" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />

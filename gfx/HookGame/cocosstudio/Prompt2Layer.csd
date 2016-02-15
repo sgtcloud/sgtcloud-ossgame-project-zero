@@ -100,15 +100,15 @@
                 <PreSize X="0.0667" Y="0.0750" />
                 <FileData Type="Normal" Path="mainUI/key.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="-121720549" Tag="576" IconVisible="False" LeftMargin="198.9430" RightMargin="168.0570" TopMargin="248.9214" BottomMargin="132.0786" LabelText="99999" ctype="TextBMFontObjectData">
-                <Size X="83.0000" Y="19.0000" />
+              <AbstractNodeData Name="text" ActionTag="-121720549" Tag="576" IconVisible="False" LeftMargin="198.9430" RightMargin="160.0570" TopMargin="248.4214" BottomMargin="131.5786" LabelText="99999" ctype="TextBMFontObjectData">
+                <Size X="91.0000" Y="20.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="198.9430" Y="141.5786" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4421" Y="0.3539" />
-                <PreSize X="0.1844" Y="0.0475" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font22_yellow_kmbb-export.fnt" Plist="" />
+                <PreSize X="0.2022" Y="0.0500" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_text" ActionTag="-794274157" Tag="34" IconVisible="False" LeftMargin="185.2204" RightMargin="184.7796" TopMargin="50.2313" BottomMargin="329.7687" FontSize="20" LabelText="标题名字" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="80.0000" Y="20.0000" />

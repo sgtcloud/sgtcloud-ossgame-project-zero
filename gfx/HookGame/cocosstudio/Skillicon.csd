@@ -19,15 +19,15 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/skill_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="time" ActionTag="-1698262075" Tag="107" IconVisible="False" LeftMargin="5.7776" RightMargin="5.2224" TopMargin="47.4650" BottomMargin="25.5350" LabelText="99:99" ctype="TextBMFontObjectData">
-                <Size X="79.0000" Y="17.0000" />
+              <AbstractNodeData Name="time" ActionTag="-1698262075" Tag="107" IconVisible="False" LeftMargin="10.7776" RightMargin="10.2224" TopMargin="46.9650" BottomMargin="25.0350" LabelText="99:99" ctype="TextBMFontObjectData">
+                <Size X="69.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="45.2776" Y="34.0350" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5031" Y="0.3782" />
-                <PreSize X="0.8778" Y="0.1889" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/font18_white-export.fnt" Plist="" />
+                <PreSize X="0.7667" Y="0.2000" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="reviveTime_text" Visible="False" ActionTag="513272033" Tag="955" IconVisible="False" LeftMargin="6.2086" RightMargin="5.7914" TopMargin="20.5356" BottomMargin="38.4644" Scale9Width="78" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="31.0000" />

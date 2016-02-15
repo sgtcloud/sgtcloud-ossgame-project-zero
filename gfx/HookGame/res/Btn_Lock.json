@@ -122,10 +122,10 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "LabelText": "Lv.999",
+                "LabelText": "Lv.99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -147,18 +147,18 @@
                   "Y": 0.7594
                 },
                 "PreSize": {
-                  "X": 0.4571,
-                  "Y": 0.1875
+                  "X": 0.6571,
+                  "Y": 0.2375
                 },
-                "LeftMargin": 44.009,
-                "RightMargin": 31.991,
-                "TopMargin": 11.747,
-                "BottomMargin": 53.253,
+                "LeftMargin": 30.009,
+                "RightMargin": 17.991,
+                "TopMargin": 9.747,
+                "BottomMargin": 51.253,
                 "Tag": 17,
                 "ActionTag": 235483224,
                 "Size": {
-                  "X": 64.0,
-                  "Y": 15.0
+                  "X": 92.0,
+                  "Y": 19.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"
@@ -224,8 +224,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],
