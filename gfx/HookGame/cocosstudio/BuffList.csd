@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="129" ctype="GameLayerObjectData">
         <Size X="190.0000" Y="180.0000" />
         <Children>
-          <AbstractNodeData Name="buff_list" ActionTag="98846833" Tag="130" IconVisible="False" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+          <AbstractNodeData Name="buff_list" ActionTag="-876322324" Tag="38" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="190.0000" Y="180.0000" />
             <AnchorPoint />
             <Position />
@@ -14,8 +14,8 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
-            <SingleColor A="255" R="150" G="150" B="255" />
-            <FirstColor A="255" R="150" G="150" B="255" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
