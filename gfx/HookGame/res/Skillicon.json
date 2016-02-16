@@ -37,8 +37,8 @@
               "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
             },
             "CColor": {},
             "IconVisible": false,
@@ -47,9 +47,11 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 1.0,
-              "Y": 1.0
+              "X": 1.25,
+              "Y": 1.25
             },
+            "RightMargin": -18.0,
+            "TopMargin": -18.0,
             "Tag": 457,
             "Children": [
               {
@@ -274,8 +276,8 @@
           }
         ],
         "Size": {
-          "X": 90.0,
-          "Y": 90.0
+          "X": 72.0,
+          "Y": 72.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

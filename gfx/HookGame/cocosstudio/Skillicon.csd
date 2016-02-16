@@ -4,9 +4,9 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="114" ctype="GameLayerObjectData">
-        <Size X="90.0000" Y="90.0000" />
+        <Size X="72.0000" Y="72.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-540174355" Tag="457" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-540174355" Tag="457" IconVisible="False" RightMargin="-18.0000" TopMargin="-18.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="90.0000" Y="90.0000" />
             <Children>
               <AbstractNodeData Name="skill_icon" ActionTag="1471502121" Tag="397" IconVisible="False" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
@@ -62,10 +62,10 @@
             </Children>
             <AnchorPoint />
             <Position />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Scale ScaleX="0.8000" ScaleY="0.8000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
+            <PreSize X="1.2500" Y="1.2500" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
