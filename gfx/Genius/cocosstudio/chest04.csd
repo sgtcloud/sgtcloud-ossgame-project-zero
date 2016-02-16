@@ -26,16 +26,16 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="close" StartIndex="0" EndIndex="2">
-          <RenderColor A="150" R="255" G="222" B="173" />
+          <RenderColor A="255" R="255" G="222" B="173" />
         </AnimationInfo>
         <AnimationInfo Name="open" StartIndex="3" EndIndex="15">
-          <RenderColor A="150" R="240" G="128" B="128" />
+          <RenderColor A="255" R="240" G="128" B="128" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="25" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="chest" ActionTag="-1092918593" Tag="26" IconVisible="False" LeftMargin="-23.0000" RightMargin="-23.0000" TopMargin="-23.0000" BottomMargin="-23.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="chest" ActionTag="-1092918593" Tag="26" IconVisible="False" LeftMargin="-68.5000" RightMargin="-68.5000" TopMargin="-56.5000" BottomMargin="-56.5000" ctype="SpriteObjectData">
             <Size X="137.0000" Y="113.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
@@ -43,7 +43,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="chest/chest04/chest04_close01.png" Plist="chest04.plist" />
+            <FileData Type="MarkedSubImage" Path="chest/chest04/chest04_open04.png" Plist="chest04.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

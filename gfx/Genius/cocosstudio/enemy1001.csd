@@ -136,30 +136,30 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="18">
-          <RenderColor A="150" R="255" G="255" B="240" />
+          <RenderColor A="255" R="255" G="255" B="240" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="21" EndIndex="33">
-          <RenderColor A="150" R="238" G="232" B="170" />
+          <RenderColor A="255" R="238" G="232" B="170" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="36" EndIndex="48">
-          <RenderColor A="150" R="0" G="255" B="255" />
+          <RenderColor A="255" R="0" G="255" B="255" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="51" EndIndex="60">
-          <RenderColor A="150" R="211" G="211" B="211" />
+          <RenderColor A="255" R="211" G="211" B="211" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="enemy1001" ActionTag="-747205748" Tag="2" IconVisible="False" LeftMargin="-46.6947" RightMargin="-38.3053" TopMargin="-95.5783" BottomMargin="-4.4217" ctype="SpriteObjectData">
-            <Size X="86.0000" Y="101.0000" />
+          <AbstractNodeData Name="enemy" ActionTag="-747205748" Tag="2" IconVisible="False" LeftMargin="-45.0098" RightMargin="-39.9902" TopMargin="-95.5000" BottomMargin="-4.5000" ctype="SpriteObjectData">
+            <Size X="85.0000" Y="100.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="-4.1947" Y="-4.4217" />
+            <Position X="-2.5098" Y="-4.5000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="enemy/enemy1001/enemy1001_stand04.png" Plist="enemy1001.plist" />
+            <FileData Type="MarkedSubImage" Path="enemy/enemy1001/enemy1001_atk01.png" Plist="enemy1001.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

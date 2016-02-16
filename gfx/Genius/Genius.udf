@@ -28,29 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="hero105.csd" />
-          <FilePathData Path="hero104.csi" />
-          <FilePathData Path="gold01.csd" />
-          <FilePathData Path="gold02.csd" />
-          <FilePathData Path="gold03.csd" />
-          <FilePathData Path="gold04.csd" />
-          <FilePathData Path="essence01.csd" />
-          <FilePathData Path="bronze01.csd" />
-          <FilePathData Path="bronze01.csi" />
-          <FilePathData Path="fairy01.csd" />
-          <FilePathData Path="fairy01.csi" />
-          <FilePathData Path="chest01.csi" />
-          <FilePathData Path="chest01.csd" />
-          <FilePathData Path="hero102.csi" />
-          <FilePathData Path="hero103.csd" />
-          <FilePathData Path="enemy1001.csi" />
-          <FilePathData Path="enemy1002.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="enemy1002.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

@@ -193,7 +193,7 @@
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero102" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-56.3001" RightMargin="-26.6999" TopMargin="-108.5000" BottomMargin="-5.5000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-56.3001" RightMargin="-26.6999" TopMargin="-108.5000" BottomMargin="-5.5000" ctype="SpriteObjectData">
             <Size X="83.0000" Y="114.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="-14.8001" Y="-5.5000" />

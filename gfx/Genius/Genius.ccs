@@ -1010,6 +1010,13 @@
         <PlistInfo Name="chest04.csi" Type="Plist" />
         <Project Name="hero104.csd" Type="Node" />
         <PlistInfo Name="hero104.csi" Type="Plist" />
+        <Folder Name="dead">
+          <Folder Name="dead01">
+            <Image Name="dead01.png" />
+            <Image Name="dead02.png" />
+          </Folder>
+        </Folder>
+        <Project Name="dead.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

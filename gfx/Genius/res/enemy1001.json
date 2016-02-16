@@ -455,7 +455,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "enemy/enemy1001/enemy1001_stand04.png",
+              "Path": "enemy/enemy1001/enemy1001_atk01.png",
               "Plist": "enemy1001.plist"
             },
             "BlendFunc": {
@@ -466,8 +466,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -4.1947,
-              "Y": -4.4217
+              "X": -2.5098,
+              "Y": -4.5
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -483,17 +483,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -46.6947,
-            "RightMargin": -38.3053,
-            "TopMargin": -95.5783,
-            "BottomMargin": -4.4217,
+            "LeftMargin": -45.0098,
+            "RightMargin": -39.9902,
+            "TopMargin": -95.5,
+            "BottomMargin": -4.5,
             "Tag": 2,
             "ActionTag": -747205748,
             "Size": {
-              "X": 86.0,
-              "Y": 101.0
+              "X": 85.0,
+              "Y": 100.0
             },
-            "Name": "enemy1001",
+            "Name": "enemy",
             "ctype": "SpriteObjectData"
           }
         ],
