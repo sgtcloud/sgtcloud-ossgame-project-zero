@@ -133,8 +133,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 52.1194,
-                  "Y": 28.047
+                  "X": 65.1187,
+                  "Y": 28.0469
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -143,17 +143,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3723,
+                  "X": 0.4651,
                   "Y": 0.3506
                 },
                 "PreSize": {
                   "X": 0.1071,
                   "Y": 0.1875
                 },
-                "LeftMargin": 44.6194,
-                "RightMargin": 80.3806,
-                "TopMargin": 44.453,
-                "BottomMargin": 20.547,
+                "LeftMargin": 57.6187,
+                "RightMargin": 67.3813,
+                "TopMargin": 44.4531,
+                "BottomMargin": 20.5469,
                 "Tag": 250,
                 "ActionTag": -1992046048,
                 "Size": {
@@ -164,43 +164,45 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "999",
+                "LabelText": "3",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 82.9664,
-                  "Y": 28.047
+                  "X": 76.4646,
+                  "Y": 29.0469
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5926,
-                  "Y": 0.3506
+                  "X": 0.5462,
+                  "Y": 0.3631
                 },
                 "PreSize": {
-                  "X": 0.2929,
-                  "Y": 0.1875
+                  "X": 0.1071,
+                  "Y": 0.225
                 },
-                "LeftMargin": 62.4664,
-                "RightMargin": 36.5336,
-                "TopMargin": 44.453,
-                "BottomMargin": 20.547,
+                "LeftMargin": 76.4646,
+                "RightMargin": 48.5354,
+                "TopMargin": 41.9531,
+                "BottomMargin": 20.0469,
+                "CallBackType": "Click",
                 "Tag": 188,
                 "ActionTag": 268773156,
                 "Size": {
-                  "X": 41.0,
-                  "Y": 15.0
+                  "X": 15.0,
+                  "Y": 18.0
                 },
                 "Name": "diamond_text",
                 "ctype": "TextBMFontObjectData"
@@ -218,7 +220,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 78.2324,
+                  "X": 75.2325,
                   "Y": 50.3764
                 },
                 "Scale": {
@@ -228,15 +230,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5588,
+                  "X": 0.5374,
                   "Y": 0.6297
                 },
                 "PreSize": {
                   "X": 0.3714,
                   "Y": 0.3375
                 },
-                "LeftMargin": 52.2324,
-                "RightMargin": 35.7676,
+                "LeftMargin": 49.2325,
+                "RightMargin": 38.7675,
                 "TopMargin": 16.1236,
                 "BottomMargin": 36.8764,
                 "CallBackType": "Touch",
@@ -269,8 +271,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

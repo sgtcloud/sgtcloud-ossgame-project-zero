@@ -465,7 +465,7 @@
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -479,25 +479,27 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4421,
                   "Y": 0.3539
                 },
                 "PreSize": {
-                  "X": 0.1844,
-                  "Y": 0.0475
+                  "X": 0.2022,
+                  "Y": 0.05
                 },
                 "LeftMargin": 198.943,
-                "RightMargin": 168.057,
-                "TopMargin": 248.9214,
-                "BottomMargin": 132.0786,
+                "RightMargin": 160.057,
+                "TopMargin": 248.4214,
+                "BottomMargin": 131.5786,
                 "Tag": 576,
                 "ActionTag": -121720549,
                 "Size": {
-                  "X": 83.0,
-                  "Y": 19.0
+                  "X": 91.0,
+                  "Y": 20.0
                 },
                 "Name": "text",
                 "ctype": "TextBMFontObjectData"
@@ -897,8 +899,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "mainUI/bg_04.png",
         "mainUI/bg_06.png",
         "mainUI/bg_10.png",

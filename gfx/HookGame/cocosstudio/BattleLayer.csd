@@ -169,21 +169,6 @@
                 <PreSize X="0.7828" Y="0.0622" />
                 <FileData Type="Normal" Path="mainUI/bar_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="pack_btn" ActionTag="1140666408" Tag="77" IconVisible="False" LeftMargin="-1.5566" RightMargin="561.5566" TopMargin="78.0184" BottomMargin="581.9816" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="80.0000" Y="80.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="38.4434" Y="621.9816" />
-                <Scale ScaleX="0.8000" ScaleY="0.8000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0601" Y="0.8405" />
-                <PreSize X="0.1250" Y="0.1081" />
-                <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
               <AbstractNodeData Name="enemy_life_bar" ActionTag="1687766306" Tag="486" IconVisible="False" LeftMargin="105.5984" RightMargin="73.4016" TopMargin="11.7184" BottomMargin="711.2816" ProgressInfo="100" ctype="LoadingBarObjectData">
                 <Size X="461.0000" Y="17.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -288,33 +273,48 @@
                 <PreSize X="0.6938" Y="0.0081" />
                 <ImageFileData Type="Normal" Path="mainUI/bar2.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="556918955" Tag="199" IconVisible="False" LeftMargin="-1.5566" RightMargin="561.5566" TopMargin="154.7767" BottomMargin="505.2233" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="statistics_btn" ActionTag="1271537567" Tag="40" IconVisible="False" LeftMargin="-1.6661" RightMargin="561.6661" TopMargin="0.4583" BottomMargin="659.5417" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="80.0000" Y="80.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="38.4434" Y="545.2233" />
+                <Position X="38.3339" Y="699.5417" />
                 <Scale ScaleX="0.8000" ScaleY="0.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0601" Y="0.7368" />
-                <PreSize X="0.1250" Y="0.1081" />
-                <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="statistics_btn" ActionTag="460589075" Tag="105" IconVisible="False" LeftMargin="-1.5566" RightMargin="561.5566" TopMargin="1.2601" BottomMargin="658.7399" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="80.0000" Y="80.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="38.4434" Y="698.7399" />
-                <Scale ScaleX="0.8000" ScaleY="0.8000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0601" Y="0.9442" />
+                <PrePosition X="0.0599" Y="0.9453" />
                 <PreSize X="0.1250" Y="0.1081" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Normal" Path="mainUI/statistics_icon.png" Plist="" />
                 <PressedFileData Type="Normal" Path="mainUI/statistics_icon.png" Plist="" />
                 <NormalFileData Type="Normal" Path="mainUI/statistics_icon.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="pack_btn" ActionTag="-423831482" Tag="42" IconVisible="False" LeftMargin="-1.6662" RightMargin="561.6661" TopMargin="82.2261" BottomMargin="577.7739" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="80.0000" Y="80.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="38.3338" Y="617.7739" />
+                <Scale ScaleX="0.8000" ScaleY="0.8000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0599" Y="0.8348" />
+                <PreSize X="0.1250" Y="0.1081" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="reward_btn" ActionTag="-1641535427" Tag="41" IconVisible="False" LeftMargin="-1.6661" RightMargin="561.6661" TopMargin="163.9939" BottomMargin="496.0061" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="80.0000" Y="80.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="38.3339" Y="536.0061" />
+                <Scale ScaleX="0.8000" ScaleY="0.8000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0599" Y="0.7243" />
+                <PreSize X="0.1250" Y="0.1081" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/offline_reward.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

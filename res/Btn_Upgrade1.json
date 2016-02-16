@@ -149,7 +149,11 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 33,
+                  "G": 233,
+                  "B": 21
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5146,
@@ -173,10 +177,10 @@
                 "ctype": "TextObjectData"
               },
               {
-                "LabelText": "99999",
+                "LabelText": "9999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -184,32 +188,34 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 79.5977,
-                  "Y": 63.1556
+                  "X": 78.3791,
+                  "Y": 62.1556
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5686,
-                  "Y": 0.7894
+                  "X": 0.5599,
+                  "Y": 0.7769
                 },
                 "PreSize": {
-                  "X": 0.4786,
-                  "Y": 0.1875
+                  "X": 0.4643,
+                  "Y": 0.225
                 },
-                "LeftMargin": 46.0977,
-                "RightMargin": 26.9023,
-                "TopMargin": 9.3444,
-                "BottomMargin": 55.6556,
+                "LeftMargin": 45.8791,
+                "RightMargin": 29.1209,
+                "TopMargin": 8.8444,
+                "BottomMargin": 53.1556,
                 "Tag": 128,
                 "ActionTag": -699834057,
                 "Size": {
-                  "X": 67.0,
-                  "Y": 15.0
+                  "X": 65.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -255,10 +261,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "-",
+                "LabelText": "+99.6%",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font18_white-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -266,32 +272,36 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 75.4442,
+                  "X": 71.4442,
                   "Y": 21.9834
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 42,
+                  "G": 241,
+                  "B": 21
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5389,
+                  "X": 0.5103,
                   "Y": 0.2748
                 },
                 "PreSize": {
-                  "X": 0.1,
-                  "Y": 0.2125
+                  "X": 0.6071,
+                  "Y": 0.225
                 },
-                "LeftMargin": 68.4442,
-                "RightMargin": 57.5558,
-                "TopMargin": 49.5166,
-                "BottomMargin": 13.4834,
+                "LeftMargin": 28.9442,
+                "RightMargin": 26.0558,
+                "TopMargin": 49.0166,
+                "BottomMargin": 12.9834,
                 "Tag": 348,
                 "ActionTag": 716730375,
                 "Size": {
-                  "X": 14.0,
-                  "Y": 17.0
+                  "X": 85.0,
+                  "Y": 18.0
                 },
                 "Name": "buffNum_text",
                 "ctype": "TextBMFontObjectData"
@@ -316,10 +326,8 @@
       "UsedResources": [
         "EquipUI.plist",
         "EquipUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
-        "font/font18_white-export.fnt",
-        "font/font18_white-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

@@ -188,7 +188,7 @@
                 "LabelText": "Lv.999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -209,19 +209,19 @@
                   "Y": 0.5439
                 },
                 "PreSize": {
-                  "X": 0.1026,
-                  "Y": 0.1364
+                  "X": 0.149,
+                  "Y": 0.1818
                 },
                 "LeftMargin": 123.4496,
-                "RightMargin": 436.5504,
-                "TopMargin": 42.6658,
-                "BottomMargin": 52.3342,
+                "RightMargin": 407.5504,
+                "TopMargin": 40.1658,
+                "BottomMargin": 49.8342,
                 "CallBackType": "Click",
                 "Tag": 1054,
                 "ActionTag": 1071298966,
                 "Size": {
-                  "X": 64.0,
-                  "Y": 15.0
+                  "X": 93.0,
+                  "Y": 20.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"
@@ -273,7 +273,7 @@
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -295,18 +295,18 @@
                   "Y": 0.4252
                 },
                 "PreSize": {
-                  "X": 0.1074,
-                  "Y": 0.1364
+                  "X": 0.1458,
+                  "Y": 0.1818
                 },
-                "LeftMargin": 350.8271,
-                "RightMargin": 206.1729,
-                "TopMargin": 55.7309,
-                "BottomMargin": 39.2691,
+                "LeftMargin": 338.8271,
+                "RightMargin": 194.1729,
+                "TopMargin": 53.2309,
+                "BottomMargin": 36.7691,
                 "Tag": 1052,
                 "ActionTag": 191675235,
                 "Size": {
-                  "X": 67.0,
-                  "Y": 15.0
+                  "X": 91.0,
+                  "Y": 20.0
                 },
                 "Name": "dps_text",
                 "ctype": "TextBMFontObjectData"
@@ -1103,6 +1103,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
@@ -1275,7 +1277,7 @@
                     "LabelText": "99999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font16_white_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
@@ -1290,25 +1292,29 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 236,
+                      "G": 54,
+                      "B": 205
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.4359,
                       "Y": 0.383
                     },
                     "PreSize": {
-                      "X": 0.4786,
-                      "Y": 0.1667
+                      "X": 0.65,
+                      "Y": 0.2222
                     },
-                    "LeftMargin": 27.5328,
-                    "RightMargin": 45.4672,
-                    "TopMargin": 48.0308,
-                    "BottomMargin": 26.9692,
+                    "LeftMargin": 15.5328,
+                    "RightMargin": 33.4672,
+                    "TopMargin": 45.5308,
+                    "BottomMargin": 24.4692,
                     "Tag": 1053,
                     "ActionTag": 1853760734,
                     "Size": {
-                      "X": 67.0,
-                      "Y": 15.0
+                      "X": 91.0,
+                      "Y": 20.0
                     },
                     "Name": "equipNum_text",
                     "ctype": "TextBMFontObjectData"
@@ -1342,8 +1348,8 @@
       "UsedResources": [
         "EquipUI.plist",
         "EquipUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroUI.plist",
         "HeroUI.png",
         "mainUI/hero_icon.png"

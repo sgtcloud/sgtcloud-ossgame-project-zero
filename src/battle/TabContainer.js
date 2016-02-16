@@ -15,7 +15,7 @@ var TabContainer = cc.Node.extend({
             {name: "main", click: "onMainClick"},
             {name: "hero", click: "onHeroClick"},
             {name: "equip", click: "onEquipClick"},
-            {name: "pvp", click: "onPvpClick"},
+            //{name: "pvp", click: "onPvpClick"},
             {name: "rank", click: "onRankClick"},
             {name: "shop", click: "onShopClick"},
         ];
@@ -27,11 +27,15 @@ var TabContainer = cc.Node.extend({
             var name = param.name;
             var click = param.click;
             this.buttons[name] = root.getChildByName(name);
+            //if(name==='pvp'){
+            //    this.buttons[name].setVisible(false);
+            //}
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    if(sender.name != 'pvp')
+                    if (sender.name != 'pvp') {
                         self.showMenuLayer(sender.name);
+                    }
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);
@@ -40,7 +44,7 @@ var TabContainer = cc.Node.extend({
         }
 
         this.menus = {};
-        this.menus.main = new SkillListMenu(this,battlePanel);
+        this.menus.main = new SkillListMenu(this, battlePanel);
         this.menus.hero = new HeroListMenu(battlePanel);
         this.menus.equip = new EquipListMenu(battlePanel);
         this.menus.shop = new ShopLayerMenu(battlePanel);
@@ -60,13 +64,13 @@ var TabContainer = cc.Node.extend({
             this.menus[name].setVisible(true);
             this.buttons[name].setSelected(true);
             /*var y=this.buttons[name].getPositionY();
-            var goldText = this.menus[name].playerGoldText;
-            var position=goldText.getParent().getParent().getPosition();
-            cc.log(position);
-            cc.log(y)
-           var lastPosition=cc.p(position.x,position.y+y);
-            customEventHelper.sendEvent(EVENT.GOLD_POSITION, lastPosition)
-            cc.log(lastPosition);*/
+             var goldText = this.menus[name].playerGoldText;
+             var position=goldText.getParent().getParent().getPosition();
+             cc.log(position);
+             cc.log(y)
+             var lastPosition=cc.p(position.x,position.y+y);
+             customEventHelper.sendEvent(EVENT.GOLD_POSITION, lastPosition)
+             cc.log(lastPosition);*/
             //console.log(this.menuButtons);
         };
 
@@ -93,11 +97,12 @@ var TabContainer = cc.Node.extend({
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 //PlayerData.updatePlayer();
             });
-            customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE,function(){
+            customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
                 customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
                 customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
             })
         }
+
         bindListener();
     }
 });

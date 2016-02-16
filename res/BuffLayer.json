@@ -141,26 +141,19 @@
                 "ctype": "TextObjectData"
               },
               {
-                "IsCustomSize": true,
-                "FontSize": 20,
-                "LabelText": "99s",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white10-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 149.6942,
-                  "Y": 4.7451
+                  "X": 167.7698,
+                  "Y": 15.8401
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -172,25 +165,25 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7879,
-                  "Y": 0.1582
+                  "X": 0.883,
+                  "Y": 0.528
                 },
                 "PreSize": {
-                  "X": 0.2105,
-                  "Y": 0.6667
+                  "X": 0.1526,
+                  "Y": 0.6
                 },
-                "LeftMargin": 149.6942,
-                "RightMargin": 0.3058,
-                "TopMargin": 5.2549,
-                "BottomMargin": 4.7451,
-                "Tag": 200,
-                "ActionTag": -1758261490,
+                "LeftMargin": 153.2698,
+                "RightMargin": 7.7302,
+                "TopMargin": 5.1599,
+                "BottomMargin": 6.8401,
+                "Tag": 886,
+                "ActionTag": -2125556355,
                 "Size": {
-                  "X": 40.0,
-                  "Y": 20.0
+                  "X": 29.0,
+                  "Y": 18.0
                 },
                 "Name": "time",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               }
             ],
             "ActionTag": 2127845320,
@@ -210,6 +203,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "mainUI/empty.png"
       ],
       "ctype": "GameFileData"

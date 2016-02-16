@@ -23,7 +23,7 @@ var Equip = function (id, equipCache) {
     };
 
     this.getMaxLevel = function () {
-        return data.levelDatas[0]['level'];
+        return data.levelDatas[data.levelDatas.length-1]['level'];
     };
     this.getName = function () {
         return data.name;
@@ -51,7 +51,7 @@ var Equip = function (id, equipCache) {
     };
     this.upgrade = function (hero,price) {
         price =price|| this.getNextLevelUpgrade();
-        var unit = price['unit']
+        var unit = price['unit'];
         if (!validateAmountNotEnough(price)) {
             lv += 1;
             var cost = {value: -price.value, unit: unit}

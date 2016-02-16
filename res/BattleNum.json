@@ -57,7 +57,7 @@
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font14_green_kmbb-export.fnt",
+                  "Path": "font/green14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {},
@@ -76,16 +76,16 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.57,
-                  "Y": 1.2143
+                  "X": 0.81,
+                  "Y": 1.125
                 },
-                "RightMargin": 43.0,
-                "TopMargin": -3.0,
+                "RightMargin": 19.0,
+                "TopMargin": -2.0,
                 "Tag": 41,
                 "ActionTag": 1093679073,
                 "Size": {
-                  "X": 57.0,
-                  "Y": 17.0
+                  "X": 81.0,
+                  "Y": 18.0
                 },
                 "Name": "recover_num",
                 "ctype": "TextBMFontObjectData"
@@ -94,7 +94,7 @@
                 "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font14_red_kmbb-export.fnt",
+                  "Path": "font/red14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {},
@@ -113,16 +113,16 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.57,
-                  "Y": 1.2143
+                  "X": 0.81,
+                  "Y": 1.125
                 },
-                "RightMargin": 43.0,
-                "TopMargin": -3.0,
+                "RightMargin": 19.0,
+                "TopMargin": -2.0,
                 "Tag": 42,
                 "ActionTag": 432748340,
                 "Size": {
-                  "X": 57.0,
-                  "Y": 17.0
+                  "X": 81.0,
+                  "Y": 18.0
                 },
                 "Name": "battle_num",
                 "ctype": "TextBMFontObjectData"
@@ -131,7 +131,7 @@
             "ActionTag": 1001147719,
             "Size": {
               "X": 100.0,
-              "Y": 14.0
+              "Y": 16.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -139,16 +139,16 @@
         ],
         "Size": {
           "X": 200.0,
-          "Y": 14.0
+          "Y": 16.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font14_green_kmbb-export.fnt",
-        "font/font14_green_kmbb-export.png",
-        "font/font14_red_kmbb-export.fnt",
-        "font/font14_red_kmbb-export.png"
+        "font/green14-export.fnt",
+        "font/green14-export.png",
+        "font/red14-export.fnt",
+        "font/red14-export.png"
       ],
       "ctype": "GameFileData"
     }

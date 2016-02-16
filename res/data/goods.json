@@ -11,7 +11,7 @@
     "propId": "iron",
     "num": 4,
     "price": {
-      "unit": "gold",
+      "unit": "gem",
       "value": 15
     }
   },
@@ -19,7 +19,7 @@
     "propId": "crystal",
     "num": 6,
     "price": {
-      "unit": "relic",
+      "unit": "gem",
       "value": 20
     }
   },
@@ -27,7 +27,7 @@
     "propId": "rune",
     "num": 8,
     "price": {
-      "unit": "wood",
+      "unit": "gem",
       "value": 25
     }
   },
@@ -35,32 +35,32 @@
     "propId": "essence",
     "num": 10,
     "price": {
-      "unit": "leather",
+      "unit": "gem",
       "value": 30
     }
   },
   "g10006": {
-    "propId": "iron_chest",
+    "propId": "iron_key",
     "num": 12,
     "price": {
-      "unit": "iron_key",
+      "unit": "gem",
       "value": 35
     }
   },
   "g10007": {
     "propId": "silver_chest",
-    "num": 12,
+    "num": 2,
     "price": {
       "unit": "silver_key",
-      "value": 35
+      "value": 5
     }
   },
   "g10008": {
     "propId": "golden_chest",
-    "num": 12,
+    "num": 1,
     "price": {
       "unit": "golden_key",
-      "value": 35
+      "value": 3
     }
   }
 }

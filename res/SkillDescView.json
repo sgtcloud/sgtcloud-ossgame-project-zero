@@ -184,7 +184,7 @@
                 "LabelText": "Lv.99/99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -205,19 +205,19 @@
                   "Y": 0.752
                 },
                 "PreSize": {
-                  "X": 0.1482,
-                  "Y": 0.1364
+                  "X": 0.2161,
+                  "Y": 0.1818
                 },
                 "LeftMargin": 300.0481,
-                "RightMargin": 176.9519,
-                "TopMargin": 19.7791,
-                "BottomMargin": 75.2209,
+                "RightMargin": 138.9519,
+                "TopMargin": 17.2791,
+                "BottomMargin": 72.7209,
                 "CallBackType": "Click",
                 "Tag": 1033,
                 "ActionTag": 309565690,
                 "Size": {
-                  "X": 83.0,
-                  "Y": 15.0
+                  "X": 121.0,
+                  "Y": 20.0
                 },
                 "Name": "skillLevel_text",
                 "ctype": "TextBMFontObjectData"
@@ -287,8 +287,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "mainUI/bg_05.png",
         "mainUI/skill_icon.png"
       ],

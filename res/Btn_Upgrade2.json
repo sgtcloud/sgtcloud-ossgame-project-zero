@@ -121,10 +121,10 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -132,32 +132,34 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 83.7141,
+                  "X": 79.7141,
                   "Y": 57.3534
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.598,
+                  "X": 0.5694,
                   "Y": 0.7169
                 },
                 "PreSize": {
-                  "X": 0.5714,
-                  "Y": 0.1875
+                  "X": 0.35,
+                  "Y": 0.225
                 },
-                "LeftMargin": 43.7141,
-                "RightMargin": 16.2859,
-                "TopMargin": 15.1466,
-                "BottomMargin": 49.8534,
+                "LeftMargin": 55.2141,
+                "RightMargin": 35.7859,
+                "TopMargin": 13.6466,
+                "BottomMargin": 48.3534,
                 "Tag": 209,
                 "ActionTag": -2101152473,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 15.0
+                  "X": 49.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -172,8 +174,8 @@
                 "Scale9Height": 40,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 26.9829,
-                  "Y": 49.3193
+                  "X": 30.9829,
+                  "Y": 49.3194
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -182,17 +184,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1927,
+                  "X": 0.2213,
                   "Y": 0.6165
                 },
                 "PreSize": {
                   "X": 0.1071,
                   "Y": 0.1875
                 },
-                "LeftMargin": 26.9829,
-                "RightMargin": 98.0171,
-                "TopMargin": 15.6807,
-                "BottomMargin": 49.3193,
+                "LeftMargin": 30.9829,
+                "RightMargin": 94.0171,
+                "TopMargin": 15.6806,
+                "BottomMargin": 49.3194,
                 "Tag": 436,
                 "ActionTag": -1123589743,
                 "Size": {
@@ -267,8 +269,8 @@
         "ButtonUI.png",
         "EquipUI.plist",
         "EquipUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

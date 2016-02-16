@@ -176,7 +176,7 @@
                     "LabelText": "Lv.999/999",
                     "LabelBMFontFile_CNB": {
                       "Type": "Normal",
-                      "Path": "font/font22_white_kmbb-export.fnt",
+                      "Path": "font/white16-export.fnt",
                       "Plist": ""
                     },
                     "AnchorPoint": {
@@ -197,17 +197,17 @@
                       "Y": 0.7736
                     },
                     "PreSize": {
-                      "X": 0.2483,
+                      "X": 0.2707,
                       "Y": 0.0526
                     },
                     "LeftMargin": 178.7979,
-                    "RightMargin": 257.2021,
+                    "RightMargin": 244.2021,
                     "TopMargin": 76.039,
                     "BottomMargin": 283.961,
                     "Tag": 1110,
                     "ActionTag": 995984727,
                     "Size": {
-                      "X": 144.0,
+                      "X": 157.0,
                       "Y": 20.0
                     },
                     "Name": "heroLevel_text",
@@ -775,8 +775,8 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font22_white_kmbb-export.fnt",
-        "font/font22_white_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroDescView.json",
         "mainUI/bg_01.png",
         "mainUI/bg_03.png",
