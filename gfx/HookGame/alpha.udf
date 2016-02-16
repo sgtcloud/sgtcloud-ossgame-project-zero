@@ -28,5 +28,17 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="BuffList.csd" />
+          <FilePathData Path="SkillLayer.csd" />
+          <FilePathData Path="Tips.csd" />
+          <FilePathData Path="BuffTips.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Tips.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
