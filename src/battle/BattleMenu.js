@@ -31,8 +31,8 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
     var y = root.height;
     var num = 5;
     var boxWidth = skillsBox.width;
-    var margin = 10;
-    var offsetX = boxWidth - num * x - (num - 1) * margin
+    var margin = 5;
+    var offsetX = boxWidth - num * x - (num - 1) * margin;
     root.setPosition((index < num ? offsetX : 0) + (x + margin) * (index - num * Math.floor(index / num)), (y + margin) * Math.floor(index / num));
     this.skill_icon = root.getChildByName('skill_icon');
     this.reviveText = root.getChildByName('reviveTime_text');
@@ -342,7 +342,7 @@ function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
-        console.log(effects[i]['type'])
+        //console.log(effects[i]['type'])
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
@@ -827,8 +827,7 @@ var HeroListMenu = BattleMenu.extend({
                         customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                             var hero = event.getUserData();
                             if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                                buildHeroMenu(_hero);
-
+                               setTimeout(function(){buildHeroMenu(_hero);},100);
                             }
                         });
                     })(heroData)
@@ -1164,7 +1163,6 @@ var EquipListMenu = BattleMenu.extend({
             var cost = equip.getNextLevelUpgrade();
             var unit = data['unit'];
             if (cost['unit'] === unit) {
-
                 refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text), equip.getId());
             }
         }
@@ -1187,7 +1185,7 @@ var EquipListMenu = BattleMenu.extend({
                         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                             var heroId = event.getUserData()['heroId'];
                             if (heroId === _hero.getId() && _hero.getLv() === 1) {
-                                buildEquipMenuIfUnlocked(_hero, first);
+                                setTimeout(function(){buildEquipMenuIfUnlocked(_hero, first);},300);
                             }
                         });
                     })(heroData)
