@@ -246,6 +246,12 @@
           <Image Name="font22_yellow_kmbb.png" />
           <Image Name="pack_icon.png" />
           <Image Name="statistics_icon.png" />
+          <Image Name="blood1_1.png" />
+          <Image Name="blood1_2.png" />
+          <Image Name="blood2_1.png" />
+          <Image Name="blood2_2.png" />
+          <Image Name="blood3_1.png" />
+          <Image Name="blood3_2.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
