@@ -14,7 +14,7 @@ var SpriteGroup = function (_sprites) {
         var livedSprites = [];
         for (var i in sprites) {
             var sprite = sprites[i];
-            if (!sprite.isDead()) {
+            if (!sprite.isDead() && sprite.ready) {
                 livedSprites.push(sprite);
             }
         }
@@ -64,7 +64,7 @@ var SpriteGroup = function (_sprites) {
     this.findFirstAlive = function () {
         for (var i in sprites) {
             var sprite = sprites[i];
-            if (!sprite.isDead()) {
+            if (!sprite.isDead() && sprite.ready) {
                 return sprite;
             }
         }
@@ -74,7 +74,7 @@ var SpriteGroup = function (_sprites) {
         var temp = [];
         for (var i in sprites) {
             var sprite = sprites[i];
-            if (!sprite.isDead()) {
+            if (!sprite.isDead() && sprite.ready) {
                 temp.push(sprite);
             }
         }
@@ -142,16 +142,16 @@ var BattleField = cc.Class.extend({
     initSpritesPositions: function (spritesLayer) {
         //initBattle heroes sprites positions
         this.heroPos = [];
-        var MAX_POS = 7;
+        var MAX_POS = 8;
         var i = 0;
-        for (i = 0; i < MAX_POS; i++) {
-            this.heroPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('hero' + (i + 1)).getPosition());
+        for (i = 1; i < MAX_POS; i++) {
+            this.heroPos[i - 1] = this.container.convertToNodeSpace(spritesLayer.getChildByName('hero' + i).getPosition());
         }
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
-        for (i = 0; i < MAX_POS; i++) {
-            this.enemyPos[i] = this.container.convertToNodeSpace(spritesLayer.getChildByName('enemy' + (i + 1)).getPosition());
+        for (i = 1; i < MAX_POS; i++) {
+            this.enemyPos[i - 1] = this.container.convertToNodeSpace(spritesLayer.getChildByName('enemy' + i).getPosition());
         }
     },
 
@@ -202,6 +202,13 @@ var BattleField = cc.Class.extend({
         this.container.addChild(sprite, 1000 + order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
     },
 
+    addSpriteRelatedNode: function (sprite, node, offset) {
+        var pos = sprite.getPosition();
+        var pos_offset = node.getPosition();
+        node.setPosition(cc.p(pos.x + pos_offset.x, pos.y + pos_offset.y));
+        this.container.addChild(node, sprite.getLocalZOrder() + offset);
+    },
+
     /**
      * 已经占据了位置的英雄数量
      */
@@ -213,6 +220,7 @@ var BattleField = cc.Class.extend({
         this.heroSprites.push(hero);
         hero.setPosition(this.heroPos[this.standHeroPosNum]);
         this.addSprite(hero);
+        hero.ready = true;
         this.standHeroPosNum++;
     },
 
@@ -229,13 +237,15 @@ var BattleField = cc.Class.extend({
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             if (stage.isBossBattle()) {
-                enemy.setScale(1.5);
+                enemy.setScale(-1.5, 1.5);
             }
             this.enemySprites.push(enemy);
             var startPos = cc.p(this.container.x + this.container.width, this.container.y + this.container.height * 3 / 4);
             enemy.setPosition(startPos);
             this.addSprite(enemy, enemiesData.length - i);
-            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i], 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2)));
+            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i], 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2), cc.callFunc(function () {
+                this.ready = true;
+            }, enemy)));
         }
     },
 
@@ -304,7 +314,6 @@ var BattleField = cc.Class.extend({
         //}, 1.0);
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
-            unschedule(this);
         }.bind(this), 1);
         PlayerData.updatePlayer();
     },
@@ -318,6 +327,7 @@ var BattleField = cc.Class.extend({
     },
 
     prepareBattle: function (stage) {
+        unschedule(this);
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
@@ -356,6 +366,5 @@ var BattleField = cc.Class.extend({
     },
 
     onEnemyVanish: function (enemy) {
-
     }
 });

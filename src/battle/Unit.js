@@ -1,14 +1,8 @@
 /**
  * Created by highkay on 2016/2/15.
  */
-var UNIT_STATE_UNAVAILABLE = 0;
-var UNIT_STATE_READY = 1;
-var UNIT_STATE_ALIVE = 2;
-var UNIT_STATE_DEAD = 3;
 
 var Unit = cc.Node.extend({
-
-    state: UNIT_STATE_UNAVAILABLE,
 
     ctor: function () {
         this._super();
@@ -30,13 +24,10 @@ var Unit = cc.Node.extend({
     //    }
     //},
 
-    isAvailable: function () {
-        return this.state === UNIT_STATE_ALIVE;
-    },
-
     initSprite: function (file, nodeName) {
         var json = ccs.load(res[file]);
         this.node = nodeName ? json.node.getChildByName(nodeName) : json.node;
+        this.node.removeFromParent();
         this.animation = json.action;
         {
             //去除CCS导出文件位移会自带缓动效果的问题
@@ -50,11 +41,10 @@ var Unit = cc.Node.extend({
 
     //执行动画
     playAnimation: function (name, loop, callback) {
-        this.animateState = name;
-        this.animation.play(name, loop);
         if (callback) {
             this.animation.setLastFrameCallFunc(callback);
         }
+        this.animation.play(name, loop);
     },
 
     //removeSelf: function () {
@@ -95,8 +85,8 @@ var Unit = cc.Node.extend({
     //zOrder: 0
 });
 
-Unit.create = function (file) {
+Unit.create = function (file, nodeName) {
     var unit = new Unit();
-    unit.initSprite(file);
+    unit.initSprite(file, nodeName);
     return unit;
 };

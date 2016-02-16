@@ -102,10 +102,10 @@ var FairyUnit = cc.Node.extend({
         }.bind(this), this)));
     },
     createChest: function (position) {
-        this.getRandomEvent(function (res) {
-            this.chestUnit = new ChestUnit("res/" + res.chestStyle, res);
+        this.getRandomEvent(function (result) {
+            this.chestUnit = new ChestUnit("res/" + result.chestStyle, result);
             this.chestUnit.setPosition(position);
-            this.runChest(res);
+            this.runChest(result);
             //var self = this;
             this.chestUnit.clickChest(function (goods) {
                 this.chestUnit.stopAllActions();
@@ -162,8 +162,8 @@ var FairyUnit = cc.Node.extend({
     getRandomEvent: function (callback) {
         var events = CONSTS.click_chest_random_events;
         var chance = new Chance(events);
-        var res = chance.next();
-        return callback(res);
+        var result = chance.next();
+        return callback(result);
         /*var total_weight = 0;
          for (var i in events) {
          total_weight += events[i].weight;
