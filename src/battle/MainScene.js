@@ -72,14 +72,25 @@ var MainScene = cc.Scene.extend({
                     buffTip.setVisible(false);
                 }, 3000);
             }
-
+            var buffArr=[];
+            function refeshBuffLayer(){
+                buffList.removeAllChildren(false);
+                for(var i=0;i<buffArr.length;i++){
+                   var buff= buffArr[i];
+                    var height=buff.height;
+                    buff.setPositionY(height*i);
+                   buffList.addChild(buff);
+                }
+            }
             function toggleBufflayer(time, text, icon) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
                 buffLayer.setText(text);
-                buffLayer.setTime(time + 's');
-                buffList.pushBackCustomItem(buffLayer.root);
+                buffLayer.setTime(time);
+                buffArr.push(buffLayer.root);
+                //buffList.addChild(buffLayer.root);
                 //buffList.jumpToBottom();
+                refeshBuffLayer();
                 var remaining = time - 1;
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 buffLayer.root.schedule(function () {
@@ -87,7 +98,11 @@ var MainScene = cc.Scene.extend({
                         buffLayer.setTime(remaining );
                         remaining--;
                     } else {
-                        buffList.removeChild(buffLayer.root);
+                        var index=this.getPositionY()/this.height;
+                        buffArr.splice(index,1);
+                        console.log('移除index:'+index);
+                        //buffList.removeAllChildren();//removeChild(buffLayer.root);
+                        refeshBuffLayer();
                         this.unschedule(this.__instanceId);
                         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                     }
