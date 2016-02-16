@@ -537,7 +537,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/her0104/hero104_stand04.png",
+              "Path": "hero/her0104/hero104_atk01.png",
               "Plist": "hero104.plist"
             },
             "BlendFunc": {
@@ -548,8 +548,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": 6.1468,
-              "Y": -9.7039
+              "X": 6.1449,
+              "Y": -9.1183
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -565,17 +565,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -29.3532,
-            "RightMargin": -41.6468,
-            "TopMargin": -84.2961,
-            "BottomMargin": -9.7039,
+            "LeftMargin": -29.3551,
+            "RightMargin": -41.6449,
+            "TopMargin": -84.8817,
+            "BottomMargin": -9.1183,
             "Tag": 8,
             "ActionTag": -1637620460,
             "Size": {
               "X": 71.0,
               "Y": 94.0
             },
-            "Name": "hero104",
+            "Name": "hero",
             "ctype": "SpriteObjectData"
           }
         ],

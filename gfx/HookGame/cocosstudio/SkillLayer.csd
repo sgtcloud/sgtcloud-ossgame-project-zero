@@ -72,17 +72,17 @@
                 <PreSize X="0.1703" Y="0.0833" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="blood_box" ActionTag="1783567765" Tag="64" IconVisible="False" LeftMargin="373.3454" RightMargin="6.6546" TopMargin="8.1439" BottomMargin="171.8561" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                <Size X="260.0000" Y="60.0000" />
+              <AbstractNodeData Name="blood_box" ActionTag="1783567765" Tag="64" IconVisible="False" LeftMargin="393.3454" RightMargin="6.6546" TopMargin="8.1439" BottomMargin="171.8561" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="240.0000" Y="60.0000" />
                 <Children>
-                  <AbstractNodeData Name="small_btn" ActionTag="805314261" Tag="65" IconVisible="False" LeftMargin="159.9998" RightMargin="40.0002" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="small_btn" ActionTag="805314261" Tag="65" IconVisible="False" LeftMargin="149.9989" RightMargin="30.0011" TopMargin="0.0000" BottomMargin="0.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="60.0000" Y="60.0000" />
                     <AnchorPoint />
-                    <Position X="159.9998" />
+                    <Position X="149.9989" Y="0.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6154" />
-                    <PreSize X="0.2308" Y="1.0000" />
+                    <PrePosition X="0.6250" Y="0.0000" />
+                    <PreSize X="0.2500" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="mainUI/blood1_2.png" Plist="" />
                     <PressedFileData Type="Normal" Path="mainUI/blood1_1.png" Plist="" />
@@ -90,24 +90,24 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="small_text" ActionTag="430784239" Tag="66" IconVisible="False" LeftMargin="205.0003" RightMargin="25.9997" TopMargin="41.0000" BottomMargin="1.0000" LabelText="99" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="small_text" ActionTag="430784239" Tag="66" IconVisible="False" LeftMargin="194.9992" RightMargin="16.0008" TopMargin="41.0000" BottomMargin="1.0000" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="29.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="205.0003" Y="10.0000" />
+                    <Position X="194.9992" Y="10.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7885" Y="0.1667" />
-                    <PreSize X="0.1115" Y="0.3000" />
+                    <PrePosition X="0.8125" Y="0.1667" />
+                    <PreSize X="0.1208" Y="0.3000" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="middle_btn" ActionTag="-202900013" Tag="67" IconVisible="False" LeftMargin="79.9998" RightMargin="120.0002" TopMargin="-0.7914" BottomMargin="0.7914" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" DisplayState="False" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="middle_btn" ActionTag="-202900013" Tag="67" IconVisible="False" LeftMargin="74.9986" RightMargin="105.0014" TopMargin="-0.7914" BottomMargin="0.7914" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" DisplayState="False" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="60.0000" Y="60.0000" />
                     <AnchorPoint />
-                    <Position X="79.9998" Y="0.7914" />
+                    <Position X="74.9986" Y="0.7914" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3077" Y="0.0132" />
-                    <PreSize X="0.2308" Y="1.0000" />
+                    <PrePosition X="0.3125" Y="0.0132" />
+                    <PreSize X="0.2500" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="mainUI/blood2_2.png" Plist="" />
                     <PressedFileData Type="Normal" Path="mainUI/blood2_1.png" Plist="" />
@@ -115,24 +115,24 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="middle_text" ActionTag="-1987373283" Tag="68" IconVisible="False" LeftMargin="125.0000" RightMargin="120.0000" TopMargin="41.0000" BottomMargin="1.0000" LabelText="0" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="middle_text" ActionTag="-1987373283" Tag="68" IconVisible="False" LeftMargin="119.9987" RightMargin="105.0013" TopMargin="41.0000" BottomMargin="1.0000" LabelText="0" ctype="TextBMFontObjectData">
                     <Size X="15.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="125.0000" Y="10.0000" />
+                    <Position X="119.9987" Y="10.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4808" Y="0.1667" />
-                    <PreSize X="0.0577" Y="0.3000" />
+                    <PrePosition X="0.5000" Y="0.1667" />
+                    <PreSize X="0.0625" Y="0.3000" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="large_btn" ActionTag="932218269" Tag="69" IconVisible="False" RightMargin="200.0000" TopMargin="0.0000" BottomMargin="0.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="large_btn" ActionTag="932218269" Tag="69" IconVisible="False" RightMargin="180.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="60.0000" Y="60.0000" />
                     <AnchorPoint />
-                    <Position Y="0.0000" />
+                    <Position />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition Y="0.0000" />
-                    <PreSize X="0.2308" Y="1.0000" />
+                    <PrePosition />
+                    <PreSize X="0.2500" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="mainUI/blood3_2.png" Plist="" />
                     <PressedFileData Type="Normal" Path="mainUI/blood3_1.png" Plist="" />
@@ -140,14 +140,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="large_text" ActionTag="-1567505625" Tag="70" IconVisible="False" LeftMargin="45.0000" RightMargin="202.0000" TopMargin="41.0000" BottomMargin="1.0000" LabelText="3" ctype="TextBMFontObjectData">
+                  <AbstractNodeData Name="large_text" ActionTag="-1567505625" Tag="70" IconVisible="False" LeftMargin="45.0000" RightMargin="182.0000" TopMargin="41.0000" BottomMargin="1.0000" LabelText="3" ctype="TextBMFontObjectData">
                     <Size X="13.0000" Y="18.0000" />
                     <AnchorPoint ScaleY="0.5000" />
                     <Position X="45.0000" Y="10.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1731" Y="0.1667" />
-                    <PreSize X="0.0500" Y="0.3000" />
+                    <PrePosition X="0.1875" Y="0.1667" />
+                    <PreSize X="0.0542" Y="0.3000" />
                     <LabelBMFontFile_CNB Type="Normal" Path="font/white10-export.fnt" Plist="" />
                   </AbstractNodeData>
                 </Children>
@@ -156,7 +156,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.9896" Y="0.7161" />
-                <PreSize X="0.4063" Y="0.2500" />
+                <PreSize X="0.3750" Y="0.2500" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
