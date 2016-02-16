@@ -18,7 +18,7 @@ function getLevelData(data, key, lv) {
     if (!data.levelDatas) {
         return undefined;
     }
-    var max = data.levelDatas[0];
+    var max = data.levelDatas[data.levelDatas.length-1];
     var maxLevel = max['level'];
     var result;
     if (maxLevel <= lv) {
@@ -26,10 +26,10 @@ function getLevelData(data, key, lv) {
     } else {
         //var len = data.levelDatas.length;
         var index = /*maxLevel === len ? maxLevel - lv - 1 :*/ maxLevel - lv;
-        if (!data.levelDatas[index]) {
+        if (!data.levelDatas[lv]) {
             result = data.levelDatas[maxLevel][key];
         } else {
-            result = data.levelDatas[index][key];
+            result = data.levelDatas[lv][key];
         }
     }
     if (cc.isObject(result)) {
@@ -39,18 +39,18 @@ function getLevelData(data, key, lv) {
 }
 
 function getSpecificLevelData(data, level) {
-    var len = data.levelDatas.length;
-    if (level == 0) {
-        var rs = data.levelDatas[len - 1];
-        return rs
-    }
-    var max = data.levelDatas[0]['level'];
-
-    var index = max - level;
-    if (!data.levelDatas[index]) {
-        return data.levelDatas[len - 1];
-    }
-    return data.levelDatas[index];
+    //var len = data.levelDatas.length;
+    //if (level == 0) {
+    //    var rs = data.levelDatas[level];
+    //    return rs
+    //}
+    //var max = data.levelDatas[0]['level'];
+    //
+    //var index = max - level;
+    //if (!data.levelDatas[index]) {
+    //    return data.levelDatas[len - 1];
+    //}
+    return data.levelDatas[level];
 }
 
 function getEffectValue(data, key, lv) {

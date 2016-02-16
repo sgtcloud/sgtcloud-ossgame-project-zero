@@ -918,7 +918,7 @@
                         "LabelText": "589.554k",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -930,25 +930,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.921
                         },
                         "PreSize": {
-                          "X": 0.55,
-                          "Y": 0.0613
+                          "X": 0.53,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 41.55,
-                        "TopMargin": 5.4996,
+                        "RightMargin": 45.55,
+                        "TopMargin": 6.4996,
                         "BottomMargin": 285.5004,
                         "Tag": 108,
                         "ActionTag": 588282107,
                         "Size": {
-                          "X": 110.0,
-                          "Y": 19.0
+                          "X": 106.0,
+                          "Y": 18.0
                         },
                         "Name": "total_hero",
                         "ctype": "TextBMFontObjectData"
@@ -957,7 +959,7 @@
                         "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -969,25 +971,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.8406
                         },
                         "PreSize": {
-                          "X": 0.495,
-                          "Y": 0.0613
+                          "X": 0.485,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 52.55,
-                        "TopMargin": 30.4088,
+                        "RightMargin": 54.55,
+                        "TopMargin": 31.4088,
                         "BottomMargin": 260.5912,
                         "Tag": 107,
                         "ActionTag": -1553685188,
                         "Size": {
-                          "X": 99.0,
-                          "Y": 19.0
+                          "X": 97.0,
+                          "Y": 18.0
                         },
                         "Name": "total_hero_levels",
                         "ctype": "TextBMFontObjectData"
@@ -996,7 +1000,7 @@
                         "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1008,25 +1012,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.7603
                         },
                         "PreSize": {
-                          "X": 0.495,
-                          "Y": 0.0613
+                          "X": 0.485,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 52.55,
-                        "TopMargin": 55.3179,
+                        "RightMargin": 54.55,
+                        "TopMargin": 56.3179,
                         "BottomMargin": 235.6821,
                         "Tag": 106,
                         "ActionTag": -372061785,
                         "Size": {
-                          "X": 99.0,
-                          "Y": 19.0
+                          "X": 97.0,
+                          "Y": 18.0
                         },
                         "Name": "total_gold_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1035,7 +1041,7 @@
                         "LabelText": "999999",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1047,25 +1053,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.6799
                         },
                         "PreSize": {
-                          "X": 0.495,
-                          "Y": 0.0613
+                          "X": 0.485,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 52.55,
-                        "TopMargin": 80.227,
+                        "RightMargin": 54.55,
+                        "TopMargin": 81.227,
                         "BottomMargin": 210.773,
                         "Tag": 105,
                         "ActionTag": 121454749,
                         "Size": {
-                          "X": 99.0,
-                          "Y": 19.0
+                          "X": 97.0,
+                          "Y": 18.0
                         },
                         "Name": "total_tap_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1074,7 +1082,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1086,25 +1094,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.5996
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 105.1361,
+                        "RightMargin": 99.55,
+                        "TopMargin": 106.1361,
                         "BottomMargin": 185.8639,
                         "Tag": 104,
                         "ActionTag": 42067463,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_attack_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1113,7 +1123,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1125,25 +1135,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.5192
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 130.0452,
+                        "RightMargin": 99.55,
+                        "TopMargin": 131.0452,
                         "BottomMargin": 160.9548,
                         "Tag": 103,
                         "ActionTag": 1101032437,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_life_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1152,7 +1164,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1164,25 +1176,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.4389
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 154.9544,
+                        "RightMargin": 99.55,
+                        "TopMargin": 155.9544,
                         "BottomMargin": 136.0456,
                         "Tag": 101,
                         "ActionTag": 2073439692,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_tap_value",
                         "ctype": "TextBMFontObjectData"
@@ -1191,7 +1205,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1203,25 +1217,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.3585
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 179.8635,
+                        "RightMargin": 99.55,
+                        "TopMargin": 180.8635,
                         "BottomMargin": 111.1365,
                         "Tag": 102,
                         "ActionTag": 2062460383,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_attack_value",
                         "ctype": "TextBMFontObjectData"
@@ -1230,7 +1246,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1242,25 +1258,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.2782
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 204.7726,
+                        "RightMargin": 99.55,
+                        "TopMargin": 205.7726,
                         "BottomMargin": 86.2274,
                         "Tag": 100,
                         "ActionTag": -1963040224,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_life_value",
                         "ctype": "TextBMFontObjectData"
@@ -1269,7 +1287,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1281,25 +1299,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.1978
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 229.6817,
+                        "RightMargin": 99.55,
+                        "TopMargin": 230.6817,
                         "BottomMargin": 61.3183,
                         "Tag": 98,
                         "ActionTag": -1420818432,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_ctr_chance_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1308,7 +1328,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1320,25 +1340,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2423,
                           "Y": 0.1174
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.45,
-                        "RightMargin": 118.55,
-                        "TopMargin": 254.5909,
+                        "RightMargin": 99.55,
+                        "TopMargin": 255.5909,
                         "BottomMargin": 36.4091,
                         "Tag": 97,
                         "ActionTag": -1107721885,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_ctr_modify_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1347,7 +1369,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1359,25 +1381,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.2422,
                           "Y": 0.0371
                         },
                         "PreSize": {
-                          "X": 0.165,
-                          "Y": 0.0613
+                          "X": 0.26,
+                          "Y": 0.0581
                         },
                         "LeftMargin": 48.4499,
-                        "RightMargin": 118.5501,
-                        "TopMargin": 279.5,
+                        "RightMargin": 99.5501,
+                        "TopMargin": 280.5,
                         "BottomMargin": 11.5,
                         "Tag": 89,
                         "ActionTag": -301535920,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "total_atk_period_rate",
                         "ctype": "TextBMFontObjectData"
@@ -1888,7 +1912,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1900,25 +1924,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.8
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 19.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 20.0,
                         "BottomMargin": 152.0,
                         "Tag": 110,
                         "ActionTag": 683802234,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_gold",
                         "ctype": "TextBMFontObjectData"
@@ -1927,7 +1953,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1939,25 +1965,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.6684
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 44.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 45.0,
                         "BottomMargin": 127.0,
                         "Tag": 90,
                         "ActionTag": -233047130,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_relic",
                         "ctype": "TextBMFontObjectData"
@@ -1966,7 +1994,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -1978,25 +2006,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.5368
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 69.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 70.0,
                         "BottomMargin": 102.0,
                         "Tag": 91,
                         "ActionTag": 544416432,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_fairy",
                         "ctype": "TextBMFontObjectData"
@@ -2005,7 +2035,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -2017,25 +2047,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.4053
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 94.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 95.0,
                         "BottomMargin": 77.0,
                         "Tag": 92,
                         "ActionTag": -2104887408,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_chest_open",
                         "ctype": "TextBMFontObjectData"
@@ -2044,7 +2076,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -2056,25 +2088,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.2737
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 119.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 120.0,
                         "BottomMargin": 52.0,
                         "Tag": 93,
                         "ActionTag": 1797230862,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_enemy_kill",
                         "ctype": "TextBMFontObjectData"
@@ -2083,7 +2117,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -2095,25 +2129,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.1421
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 144.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 145.0,
                         "BottomMargin": 27.0,
                         "Tag": 94,
                         "ActionTag": -1044715413,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_boss_kill",
                         "ctype": "TextBMFontObjectData"
@@ -2122,7 +2158,7 @@
                         "LabelText": "111111",
                         "LabelBMFontFile_CNB": {
                           "Type": "Normal",
-                          "Path": "font/font22_yellow_kmbb-export.fnt",
+                          "Path": "font/white14-export.fnt",
                           "Plist": ""
                         },
                         "AnchorPoint": {},
@@ -2134,25 +2170,27 @@
                           "ScaleX": 1.0,
                           "ScaleY": 1.0
                         },
-                        "CColor": {},
+                        "CColor": {
+                          "B": 0
+                        },
                         "IconVisible": false,
                         "PrePosition": {
                           "X": 0.0,
                           "Y": 0.0105
                         },
                         "PreSize": {
-                          "X": 0.4857,
-                          "Y": 0.1
+                          "X": 0.3714,
+                          "Y": 0.0947
                         },
                         "LeftMargin": 0.0001,
-                        "RightMargin": 71.9999,
-                        "TopMargin": 169.0,
+                        "RightMargin": 87.9999,
+                        "TopMargin": 170.0,
                         "BottomMargin": 2.0,
                         "Tag": 95,
                         "ActionTag": -1395776310,
                         "Size": {
-                          "X": 33.0,
-                          "Y": 19.0
+                          "X": 52.0,
+                          "Y": 18.0
                         },
                         "Name": "statistics.total_max_level",
                         "ctype": "TextBMFontObjectData"
@@ -2193,8 +2231,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "mainUI/bg_01.png",
         "mainUI/bg_05.png",
         "StatisticsUI.plist",

@@ -184,10 +184,10 @@
                 "ctype": "TextObjectData"
               },
               {
-                "LabelText": "Lv.9999/999999",
+                "LabelText": "Lv99.99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -208,18 +208,18 @@
                   "Y": 0.546
                 },
                 "PreSize": {
-                  "X": 0.258,
-                  "Y": 0.1364
+                  "X": 0.1779,
+                  "Y": 0.1818
                 },
                 "LeftMargin": 119.748,
-                "RightMargin": 343.252,
-                "TopMargin": 42.4376,
-                "BottomMargin": 52.5624,
+                "RightMargin": 393.252,
+                "TopMargin": 39.9376,
+                "BottomMargin": 50.0624,
                 "Tag": 250,
                 "ActionTag": 1008944852,
                 "Size": {
-                  "X": 161.0,
-                  "Y": 15.0
+                  "X": 111.0,
+                  "Y": 20.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"
@@ -268,10 +268,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "9999999",
+                "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -293,18 +293,18 @@
                   "Y": 0.4097
                 },
                 "PreSize": {
-                  "X": 0.149,
-                  "Y": 0.1364
+                  "X": 0.1458,
+                  "Y": 0.1818
                 },
-                "LeftMargin": 337.1694,
-                "RightMargin": 193.8306,
-                "TopMargin": 57.431,
-                "BottomMargin": 37.569,
+                "LeftMargin": 338.1694,
+                "RightMargin": 194.8306,
+                "TopMargin": 54.931,
+                "BottomMargin": 35.069,
                 "Tag": 249,
                 "ActionTag": -836566228,
                 "Size": {
-                  "X": 93.0,
-                  "Y": 15.0
+                  "X": 91.0,
+                  "Y": 20.0
                 },
                 "Name": "dps_text",
                 "ctype": "TextBMFontObjectData"
@@ -356,7 +356,7 @@
                 "LabelText": "99:99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font18_white-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -371,25 +371,28 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0968,
                   "Y": 0.4113
                 },
                 "PreSize": {
-                  "X": 0.1266,
-                  "Y": 0.1545
+                  "X": 0.1106,
+                  "Y": 0.1636
                 },
-                "LeftMargin": 20.8768,
-                "RightMargin": 524.1232,
-                "TopMargin": 56.2622,
-                "BottomMargin": 36.7378,
+                "LeftMargin": 25.8768,
+                "RightMargin": 529.1232,
+                "TopMargin": 55.7622,
+                "BottomMargin": 36.2378,
                 "Tag": 424,
                 "ActionTag": 571675629,
                 "Size": {
-                  "X": 79.0,
-                  "Y": 17.0
+                  "X": 69.0,
+                  "Y": 18.0
                 },
                 "Name": "die_time_text",
                 "ctype": "TextBMFontObjectData"
@@ -1226,10 +1229,10 @@
         "Btn_MaxLevel.json",
         "Btn_Revive.json",
         "Btn_Upgrade1.json",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
-        "font/font18_white-export.fnt",
-        "font/font18_white-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
         "HeroUI.plist",
         "HeroUI.png",
         "mainUI/hero_icon.png"

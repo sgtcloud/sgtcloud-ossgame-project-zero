@@ -3,9 +3,9 @@ common lineHeight=14 base=26 scaleW=64 scaleH=64 pages=1 packed=0 alphaChnl=1 re
 page id=0 file="font14_white_kmbb-export.png"
 chars count=18
 char id=46 x=13 y=52 width=6 height=5 xoffset=0 yoffset=9 xadvance=3 page=0 chnl=0 letter="."
-char id=47 x=40 y=26 width=8 height=13 xoffset=0 yoffset=2 xadvance=5 page=0 chnl=0 letter="/"
+char id=47 x=40 y=26 width=13 height=13 xoffset=0 yoffset=2 xadvance=5 page=0 chnl=0 letter="/"
 char id=48 x=14 y=39 width=13 height=12 xoffset=0 yoffset=2 xadvance=10 page=0 chnl=0 letter="0"
-char id=49 x=40 y=40 width=5 height=12 xoffset=0 yoffset=2 xadvance=2 page=0 chnl=0 letter="1"
+char id=49 x=40 y=40 width=13 height=12 xoffset=0 yoffset=2 xadvance=2 page=0 chnl=0 letter="1"
 char id=50 x=14 y=26 width=13 height=12 xoffset=0 yoffset=2 xadvance=10 page=0 chnl=0 letter="2"
 char id=51 x=28 y=13 width=13 height=12 xoffset=0 yoffset=2 xadvance=10 page=0 chnl=0 letter="3"
 char id=52 x=28 y=0 width=13 height=12 xoffset=0 yoffset=2 xadvance=10 page=0 chnl=0 letter="4"

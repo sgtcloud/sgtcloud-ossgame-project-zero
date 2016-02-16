@@ -1,6 +1,6 @@
 {
   "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
-  "Version": "2.3.4",
+  "Version": "2.3.3.0",
   "Name": "BattleLayer",
   "Content": {
     "Content": {
@@ -15,7 +15,6 @@
         "Tag": 174,
         "Children": [
           {
-            "ClipAble": false,
             "BackColorAlpha": 102,
             "SingleColor": {
               "R": 150,
@@ -54,7 +53,6 @@
             "Tag": 264,
             "Children": [
               {
-                "ClipAble": false,
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
@@ -129,8 +127,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 206.9205,
-                      "Y": 519.9996
+                      "X": 225.2008,
+                      "Y": 523.1403
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -146,10 +144,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 206.9205,
-                    "RightMargin": -206.9205,
-                    "TopMargin": -519.9996,
-                    "BottomMargin": 519.9996,
+                    "LeftMargin": 225.2008,
+                    "RightMargin": -225.2008,
+                    "TopMargin": -523.1403,
+                    "BottomMargin": 523.1403,
                     "Tag": 136,
                     "ActionTag": -638236086,
                     "Size": {
@@ -162,8 +160,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 82.9995,
-                      "Y": 499.9996
+                      "X": 131.6238,
+                      "Y": 496.1461
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -179,10 +177,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 82.9995,
-                    "RightMargin": -82.9995,
-                    "TopMargin": -499.9996,
-                    "BottomMargin": 499.9996,
+                    "LeftMargin": 131.6238,
+                    "RightMargin": -131.6238,
+                    "TopMargin": -496.1461,
+                    "BottomMargin": 496.1461,
                     "Tag": 135,
                     "ActionTag": 75504825,
                     "Size": {
@@ -195,8 +193,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 273.9988,
-                      "Y": 434.4998
+                      "X": 280.9986,
+                      "Y": 434.4996
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -212,10 +210,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 273.9988,
-                    "RightMargin": -273.9988,
-                    "TopMargin": -434.4998,
-                    "BottomMargin": 434.4998,
+                    "LeftMargin": 280.9986,
+                    "RightMargin": -280.9986,
+                    "TopMargin": -434.4996,
+                    "BottomMargin": 434.4996,
                     "Tag": 139,
                     "ActionTag": 1458200757,
                     "Size": {
@@ -228,8 +226,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 125.9991,
-                      "Y": 425.4996
+                      "X": 198.6796,
+                      "Y": 408.3508
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -245,10 +243,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 125.9991,
-                    "RightMargin": -125.9991,
-                    "TopMargin": -425.4996,
-                    "BottomMargin": 425.4996,
+                    "LeftMargin": 198.6796,
+                    "RightMargin": -198.6796,
+                    "TopMargin": -408.3508,
+                    "BottomMargin": 408.3508,
                     "Tag": 137,
                     "ActionTag": -799579898,
                     "Size": {
@@ -261,8 +259,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 190.0786,
-                      "Y": 366.1516
+                      "X": 137.1766,
+                      "Y": 336.1609
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -278,10 +276,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 190.0786,
-                    "RightMargin": -190.0786,
-                    "TopMargin": -366.1516,
-                    "BottomMargin": 366.1516,
+                    "LeftMargin": 137.1766,
+                    "RightMargin": -137.1766,
+                    "TopMargin": -336.1609,
+                    "BottomMargin": 336.1609,
                     "Tag": 141,
                     "ActionTag": 1416944089,
                     "Size": {
@@ -294,8 +292,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 51.9994,
-                      "Y": 347.9999
+                      "X": 53.8676,
+                      "Y": 373.2147
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -311,10 +309,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 51.9994,
-                    "RightMargin": -51.9994,
-                    "TopMargin": -347.9999,
-                    "BottomMargin": 347.9999,
+                    "LeftMargin": 53.8676,
+                    "RightMargin": -53.8676,
+                    "TopMargin": -373.2147,
+                    "BottomMargin": 373.2147,
                     "Tag": 138,
                     "ActionTag": 1873157497,
                     "Size": {
@@ -328,7 +326,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 256.236,
-                      "Y": 317.8036
+                      "Y": 307.8032
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -346,8 +344,8 @@
                     },
                     "LeftMargin": 256.236,
                     "RightMargin": -256.236,
-                    "TopMargin": -317.8036,
-                    "BottomMargin": 317.8036,
+                    "TopMargin": -307.8032,
+                    "BottomMargin": 307.8032,
                     "Tag": 140,
                     "ActionTag": 1338998983,
                     "Size": {
@@ -610,8 +608,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 365.1593,
-                  "Y": 705.7537
+                  "X": 361.1541,
+                  "Y": 709.7527
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -620,17 +618,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5706,
-                  "Y": 0.9537
+                  "X": 0.5643,
+                  "Y": 0.9591
                 },
                 "PreSize": {
                   "X": 0.7828,
                   "Y": 0.0622
                 },
-                "LeftMargin": 114.6593,
-                "RightMargin": 24.3407,
-                "TopMargin": 11.2463,
-                "BottomMargin": 682.7537,
+                "LeftMargin": 110.6541,
+                "RightMargin": 28.3459,
+                "TopMargin": 7.2473,
+                "BottomMargin": 686.7527,
                 "Tag": 484,
                 "ActionTag": 1994818062,
                 "Size": {
@@ -666,8 +664,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 134,
-                "Scale9Height": 109,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -685,32 +683,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 52.8672,
-                  "Y": 633.983
+                  "X": 49.2094,
+                  "Y": 590.6005
                 },
                 "Scale": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0826,
-                  "Y": 0.8567
+                  "X": 0.0769,
+                  "Y": 0.7981
                 },
                 "PreSize": {
-                  "X": 0.2562,
-                  "Y": 0.177
+                  "X": 0.125,
+                  "Y": 0.1081
                 },
-                "LeftMargin": -29.1328,
-                "RightMargin": 505.1328,
-                "TopMargin": 40.517,
-                "BottomMargin": 568.483,
+                "LeftMargin": 9.2094,
+                "RightMargin": 550.7906,
+                "TopMargin": 109.3995,
+                "BottomMargin": 550.6005,
                 "Tag": 77,
                 "ActionTag": 1140666408,
                 "Size": {
-                  "X": 164.0,
-                  "Y": 131.0
+                  "X": 80.0,
+                  "Y": 80.0
                 },
                 "Name": "pack_btn",
                 "ctype": "ButtonObjectData"
@@ -727,8 +725,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 377.1027,
-                  "Y": 715.7859
+                  "X": 373.0981,
+                  "Y": 719.7814
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -737,17 +735,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5892,
-                  "Y": 0.9673
+                  "X": 0.583,
+                  "Y": 0.9727
                 },
                 "PreSize": {
                   "X": 0.7203,
                   "Y": 0.023
                 },
-                "LeftMargin": 146.6027,
-                "RightMargin": 32.3973,
-                "TopMargin": 15.7141,
-                "BottomMargin": 707.2859,
+                "LeftMargin": 142.5981,
+                "RightMargin": 36.4019,
+                "TopMargin": 11.7186,
+                "BottomMargin": 711.2814,
                 "Tag": 486,
                 "ActionTag": 1687766306,
                 "Size": {
@@ -767,8 +765,8 @@
                 "Scale9Height": 50,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 119.0923,
-                  "Y": 688.2734
+                  "X": 115.0869,
+                  "Y": 692.2682
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -777,17 +775,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1861,
-                  "Y": 0.9301
+                  "X": 0.1798,
+                  "Y": 0.9355
                 },
                 "PreSize": {
                   "X": 0.0547,
                   "Y": 0.0473
                 },
-                "LeftMargin": 119.0923,
-                "RightMargin": 485.9077,
-                "TopMargin": 16.7266,
-                "BottomMargin": 688.2734,
+                "LeftMargin": 115.0869,
+                "RightMargin": 489.9131,
+                "TopMargin": 12.7318,
+                "BottomMargin": 692.2682,
                 "Tag": 485,
                 "ActionTag": 2061033833,
                 "Size": {
@@ -810,8 +808,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 310.3109,
-                  "Y": 715.1268
+                  "X": 306.3047,
+                  "Y": 719.1215
                 },
                 "Scale": {
                   "ScaleX": 0.8,
@@ -820,17 +818,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4849,
-                  "Y": 0.9664
+                  "X": 0.4786,
+                  "Y": 0.9718
                 },
                 "PreSize": {
                   "X": 0.1437,
                   "Y": 0.027
                 },
-                "LeftMargin": 264.3109,
-                "RightMargin": 283.6891,
-                "TopMargin": 14.8732,
-                "BottomMargin": 705.1268,
+                "LeftMargin": 260.3047,
+                "RightMargin": 287.6953,
+                "TopMargin": 10.8785,
+                "BottomMargin": 709.1215,
                 "CallBackType": "Click",
                 "Tag": 166,
                 "ActionTag": 2083404384,
@@ -845,15 +843,15 @@
                 "LabelText": "0",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font19_white_kmbb-export.fnt",
+                  "Path": "font/white18-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 354.0496,
-                  "Y": 717.0593
+                  "X": 350.0436,
+                  "Y": 721.054
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -862,22 +860,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5532,
-                  "Y": 0.969
+                  "X": 0.5469,
+                  "Y": 0.9744
                 },
                 "PreSize": {
-                  "X": 0.025,
-                  "Y": 0.0257
+                  "X": 0.0312,
+                  "Y": 0.0297
                 },
-                "LeftMargin": 354.0496,
-                "RightMargin": 269.9504,
-                "TopMargin": 13.4407,
-                "BottomMargin": 707.5593,
+                "LeftMargin": 350.0436,
+                "RightMargin": 269.9564,
+                "TopMargin": 7.946,
+                "BottomMargin": 710.054,
+                "CallBackType": "Click",
                 "Tag": 138,
                 "ActionTag": -366591547,
                 "Size": {
-                  "X": 16.0,
-                  "Y": 19.0
+                  "X": 20.0,
+                  "Y": 22.0
                 },
                 "Name": "enemy_life_text",
                 "ctype": "TextBMFontObjectData"
@@ -1095,10 +1094,10 @@
                 "ctype": "TextObjectData"
               },
               {
-                "LabelText": "99",
+                "LabelText": "36",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -1106,32 +1105,35 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 136.4417,
-                  "Y": 705.6022
+                  "X": 132.4376,
+                  "Y": 710.5966
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2132,
-                  "Y": 0.9535
+                  "X": 0.2069,
+                  "Y": 0.9603
                 },
                 "PreSize": {
-                  "X": 0.0547,
-                  "Y": 0.0257
+                  "X": 0.0516,
+                  "Y": 0.027
                 },
-                "LeftMargin": 118.9417,
-                "RightMargin": 486.0583,
-                "TopMargin": 24.8978,
-                "BottomMargin": 696.1022,
+                "LeftMargin": 115.9376,
+                "RightMargin": 491.0624,
+                "TopMargin": 19.4034,
+                "BottomMargin": 700.5966,
                 "Tag": 137,
                 "ActionTag": 2022321032,
                 "Size": {
-                  "X": 35.0,
-                  "Y": 19.0
+                  "X": 33.0,
+                  "Y": 20.0
                 },
                 "Name": "time_text",
                 "ctype": "TextBMFontObjectData"
@@ -1148,8 +1150,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 375.7183,
-                  "Y": 700.7847
+                  "X": 371.7112,
+                  "Y": 704.783
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1158,17 +1160,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5871,
-                  "Y": 0.947
+                  "X": 0.5808,
+                  "Y": 0.9524
                 },
                 "PreSize": {
                   "X": 0.6938,
                   "Y": 0.0081
                 },
-                "LeftMargin": 153.7183,
-                "RightMargin": 42.2817,
-                "TopMargin": 36.2153,
-                "BottomMargin": 697.7847,
+                "LeftMargin": 149.7112,
+                "RightMargin": 46.2888,
+                "TopMargin": 32.217,
+                "BottomMargin": 701.783,
                 "Tag": 487,
                 "ActionTag": -1530911348,
                 "Size": {
@@ -1204,8 +1206,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 55,
-                "Scale9Height": 55,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1223,8 +1225,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 57.8671,
-                  "Y": 560.9685
+                  "X": 50.2096,
+                  "Y": 489.4616
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1233,22 +1235,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0904,
-                  "Y": 0.7581
+                  "X": 0.0785,
+                  "Y": 0.6614
                 },
                 "PreSize": {
-                  "X": 0.1328,
-                  "Y": 0.1041
+                  "X": 0.125,
+                  "Y": 0.1081
                 },
-                "LeftMargin": 15.3671,
-                "RightMargin": 539.6329,
-                "TopMargin": 140.5315,
-                "BottomMargin": 522.4685,
+                "LeftMargin": 10.2096,
+                "RightMargin": 549.7904,
+                "TopMargin": 210.5383,
+                "BottomMargin": 449.4616,
                 "Tag": 199,
                 "ActionTag": 556918955,
                 "Size": {
-                  "X": 85.0,
-                  "Y": 77.0
+                  "X": 80.0,
+                  "Y": 80.0
                 },
                 "Name": "reward_btn",
                 "ctype": "ButtonObjectData"
@@ -1279,8 +1281,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 134,
-                "Scale9Height": 109,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1298,32 +1300,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 52.8672,
-                  "Y": 701.2475
+                  "X": 50.2094,
+                  "Y": 691.7393
                 },
                 "Scale": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0826,
-                  "Y": 0.9476
+                  "X": 0.0785,
+                  "Y": 0.9348
                 },
                 "PreSize": {
-                  "X": 0.2562,
-                  "Y": 0.177
+                  "X": 0.125,
+                  "Y": 0.1081
                 },
-                "LeftMargin": -29.1328,
-                "RightMargin": 505.1328,
-                "TopMargin": -26.7475,
-                "BottomMargin": 635.7475,
+                "LeftMargin": 10.2094,
+                "RightMargin": 549.7906,
+                "TopMargin": 8.2607,
+                "BottomMargin": 651.7393,
                 "Tag": 105,
                 "ActionTag": 460589075,
                 "Size": {
-                  "X": 164.0,
-                  "Y": 131.0
+                  "X": 80.0,
+                  "Y": 80.0
                 },
                 "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
@@ -1390,10 +1392,10 @@
         "BattleLayer.plist",
         "BattleLayer.png",
         "BuffList.json",
-        "font/font19_white_kmbb-export.fnt",
-        "font/font19_white_kmbb-export.png",
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
         "mainUI/bar_bg.png",
         "mainUI/bar1.png",
         "mainUI/bar2.png",

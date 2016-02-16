@@ -6,74 +6,74 @@
     "type": 15,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 170,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 0
         },
         "upgrade": {
-          "value": 10,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 114,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 75,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 6,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 48,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 30,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 30
         },
         "upgrade": {
-          "value": 2,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 2
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 48
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 4
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 75
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 6
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 114
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 8
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 170
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 10
         },
         "unlockLevel": 0
       }
@@ -86,74 +86,73 @@
     "type": 15,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 215,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 0
         },
         "upgrade": {
-          "value": 10,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 146,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 97,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 6,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 63,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 40,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 40
         },
         "upgrade": {
-          "value": 2,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 2
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 63
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 4
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 97
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 6
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 146
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 8
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "value": 215
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 10
         },
         "unlockLevel": 0
       }
@@ -166,74 +165,74 @@
     "type": 15,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 257,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 0
         },
         "upgrade": {
-          "value": 10,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 176,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 118,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 6,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 78,
-          "type": "globe_attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 50,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 50
         },
         "upgrade": {
-          "value": 2,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 2
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_value"
+          "type": "globe_attack_value",
+          "value": 78
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 4
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 118
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 6
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 176
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 8
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_attack_value",
+          "value": 257
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 10
         },
         "unlockLevel": 0
       }
@@ -246,74 +245,74 @@
     "type": 15,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -326,74 +325,74 @@
     "type": 10,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 10,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 8,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 6,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 4,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 4
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 8
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 10
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -406,74 +405,74 @@
     "type": 10,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 11,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 9,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 7,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 5,
-          "type": "globe_attack_rate"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 3,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_attack_rate"
+          "type": "globe_attack_rate",
+          "value": 5
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 7
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 9
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_attack_rate",
+          "value": 11
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -486,74 +485,74 @@
     "type": 10,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 50,
-          "type": "globe_gold_rate"
+          "type": "globe_gold_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 40,
-          "type": "globe_gold_rate"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 30,
-          "type": "globe_gold_rate"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 20,
-          "type": "globe_gold_rate"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 10,
-          "type": "globe_gold_rate"
+          "type": "globe_gold_rate",
+          "value": 10
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_gold_rate"
+          "type": "globe_gold_rate",
+          "value": 20
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 40
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_gold_rate",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -566,74 +565,74 @@
     "type": 10,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 1056,
-          "type": "globe_life_value"
+          "type": "globe_life_value",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 595,
-          "type": "globe_life_value"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 332,
-          "type": "globe_life_value"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 183,
-          "type": "globe_life_value"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 100,
-          "type": "globe_life_value"
+          "type": "globe_life_value",
+          "value": 100
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_life_value"
+          "type": "globe_life_value",
+          "value": 183
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_life_value",
+          "value": 332
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_life_value",
+          "value": 595
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_life_value",
+          "value": 1056
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -646,74 +645,74 @@
     "type": 5,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 35,
-          "type": "globe_life_rate"
+          "type": "globe_life_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 11,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 20,
-          "type": "globe_life_rate"
-        },
-        "upgrade": {
-          "value": 9,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 15,
-          "type": "globe_life_rate"
-        },
-        "upgrade": {
-          "value": 7,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 10,
-          "type": "globe_life_rate"
-        },
-        "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 5,
-          "type": "globe_life_rate"
+          "type": "globe_life_rate",
+          "value": 5
         },
         "upgrade": {
-          "value": 3,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 3
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_life_rate"
+          "type": "globe_life_rate",
+          "value": 10
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 15
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 7
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 20
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 9
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_life_rate",
+          "value": 35
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 11
         },
         "unlockLevel": 0
       }
@@ -726,98 +725,98 @@
     "type": 5,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 35,
-          "type": "globe_ctr_chance_rate"
+          "type": "globe_ctr_chance_rate",
+          "value": 0
         },
         "effect2": {
-          "value": 50,
-          "type": "globe_ctr_modify_rate"
+          "type": "globe_ctr_modify_rate",
+          "value": 0
         },
         "upgrade": {
-          "value": 50,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 20,
-          "type": "globe_ctr_chance_rate"
-        },
-        "effect2": {
-          "value": 40,
-          "type": "globe_ctr_modify_rate"
-        },
-        "upgrade": {
-          "value": 30,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 15,
-          "type": "globe_ctr_chance_rate"
-        },
-        "effect2": {
-          "value": 30,
-          "type": "globe_ctr_modify_rate"
-        },
-        "upgrade": {
-          "value": 20,
-          "unit": "relic"
-        },
-        "unlockLevel": 0
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 10,
-          "type": "globe_ctr_chance_rate"
-        },
-        "effect2": {
-          "value": 20,
-          "type": "globe_ctr_modify_rate"
-        },
-        "upgrade": {
-          "value": 12,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 0
         },
         "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 5,
-          "type": "globe_ctr_chance_rate"
+          "type": "globe_ctr_chance_rate",
+          "value": 5
         },
         "effect2": {
-          "value": 10,
-          "type": "globe_ctr_modify_rate"
+          "type": "globe_ctr_modify_rate",
+          "value": 10
         },
         "upgrade": {
-          "value": 5,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 5
         },
         "unlockLevel": 0
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 0,
-          "type": "globe_ctr_chance_rate"
+          "type": "globe_ctr_chance_rate",
+          "value": 10
         },
         "effect2": {
-          "value": 0,
-          "type": "globe_ctr_modify_rate"
+          "type": "globe_ctr_modify_rate",
+          "value": 20
         },
         "upgrade": {
-          "value": 0,
-          "unit": "relic"
+          "unit": "relic",
+          "value": 12
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 15
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 30
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 20
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 20
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 40
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 30
+        },
+        "unlockLevel": 0
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "globe_ctr_chance_rate",
+          "value": 35
+        },
+        "effect2": {
+          "type": "globe_ctr_modify_rate",
+          "value": 50
+        },
+        "upgrade": {
+          "unit": "relic",
+          "value": 50
         },
         "unlockLevel": 0
       }
@@ -830,76 +829,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 210,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 10
         },
         "upgrade": {
-          "value": 16,
-          "unit": "essence"
+          "unit": "wood",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 117,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "essence"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 65,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "essence"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 35,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "wood"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 19,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 19
         },
         "upgrade": {
-          "value": 5,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 10,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 35
         },
         "upgrade": {
-          "value": 3,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 65
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 117
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 210
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -910,76 +909,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 1040,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 60
         },
         "upgrade": {
-          "value": 16,
-          "unit": "rune"
+          "unit": "leather",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 602,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "rune"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 345,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "rune"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 195,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "leather"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 109,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 109
         },
         "upgrade": {
-          "value": 5,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 60,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 195
         },
         "upgrade": {
-          "value": 3,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_value",
+          "value": 345
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_value",
+          "value": 602
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_value",
+          "value": 1040
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -990,76 +989,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "crystal"
+          "unit": "stone",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "crystal"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "crystal"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "stone"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1070,76 +1069,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "iron"
+          "unit": "bronze",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "iron"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "iron"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "bronze"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1150,76 +1149,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 301,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 15
         },
         "upgrade": {
-          "value": 16,
-          "unit": "essence"
+          "unit": "wood",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 170,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "essence"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 94,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "essence"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 52,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "wood"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 28,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 28
         },
         "upgrade": {
-          "value": 5,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 15,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 52
         },
         "upgrade": {
-          "value": 3,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 94
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 170
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 301
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1230,76 +1229,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 1346,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 80
         },
         "upgrade": {
-          "value": 16,
-          "unit": "rune"
+          "unit": "leather",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 784,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "rune"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 451,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "rune"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 257,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "leather"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 144,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 144
         },
         "upgrade": {
-          "value": 5,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 80,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 257
         },
         "upgrade": {
-          "value": 3,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_value",
+          "value": 451
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_value",
+          "value": 784
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_value",
+          "value": 1346
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1310,76 +1309,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "crystal"
+          "unit": "stone",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "crystal"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "crystal"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "stone"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1390,76 +1389,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "iron"
+          "unit": "bronze",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "iron"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "iron"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "bronze"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1470,76 +1469,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 389,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 20
         },
         "upgrade": {
-          "value": 16,
-          "unit": "essence"
+          "unit": "wood",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 221,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "essence"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 124,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "essence"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 68,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "wood"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 37,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 37
         },
         "upgrade": {
-          "value": 5,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 20,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 68
         },
         "upgrade": {
-          "value": 3,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 124
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 221
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 389
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1550,76 +1549,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 1644,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 100
         },
         "upgrade": {
-          "value": 16,
-          "unit": "rune"
+          "unit": "leather",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 962,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "rune"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 556,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "rune"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 318,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "leather"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 179,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 179
         },
         "upgrade": {
-          "value": 5,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 100,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 318
         },
         "upgrade": {
-          "value": 3,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_value",
+          "value": 556
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_value",
+          "value": 962
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_value",
+          "value": 1644
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1630,76 +1629,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "crystal"
+          "unit": "stone",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "crystal"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "crystal"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "stone"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1710,76 +1709,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "iron"
+          "unit": "bronze",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "iron"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "iron"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "bronze"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1790,76 +1789,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 559,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 30
         },
         "upgrade": {
-          "value": 16,
-          "unit": "essence"
+          "unit": "wood",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 320,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "essence"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 180,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "essence"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 101,
-          "type": "attack_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "wood"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 55,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 55
         },
         "upgrade": {
-          "value": 5,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 30,
-          "type": "attack_value"
+          "type": "attack_value",
+          "value": 101
         },
         "upgrade": {
-          "value": 3,
-          "unit": "wood"
+          "unit": "wood",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_value",
+          "value": 180
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_value",
+          "value": 320
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_value",
+          "value": 559
+        },
+        "upgrade": {
+          "unit": "essence",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1870,76 +1869,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 2366,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 150
         },
         "upgrade": {
-          "value": 16,
-          "unit": "rune"
+          "unit": "leather",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 1395,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "rune"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 813,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "rune"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 469,
-          "type": "life_value"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "leather"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 267,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 267
         },
         "upgrade": {
-          "value": 5,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 150,
-          "type": "life_value"
+          "type": "life_value",
+          "value": 469
         },
         "upgrade": {
-          "value": 3,
-          "unit": "leather"
+          "unit": "leather",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_value",
+          "value": 813
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_value",
+          "value": 1395
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_value",
+          "value": 2366
+        },
+        "upgrade": {
+          "unit": "rune",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -1950,76 +1949,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "crystal"
+          "unit": "stone",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "crystal"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "crystal"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "life_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "stone"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "life_rate"
+          "type": "life_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "stone"
+          "unit": "stone",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "life_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "life_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "life_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "crystal",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   },
@@ -2030,76 +2029,76 @@
     "type": 0,
     "levelDatas": [
       {
-        "level": 5,
+        "level": 0,
         "effect1": {
-          "value": 6,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 1
         },
         "upgrade": {
-          "value": 16,
-          "unit": "iron"
+          "unit": "bronze",
+          "value": 3
         },
-        "unlockLevel": 25
-      },
-      {
-        "level": 4,
-        "effect1": {
-          "value": 5,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 8,
-          "unit": "iron"
-        },
-        "unlockLevel": 20
-      },
-      {
-        "level": 3,
-        "effect1": {
-          "value": 4,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 4,
-          "unit": "iron"
-        },
-        "unlockLevel": 15
-      },
-      {
-        "level": 2,
-        "effect1": {
-          "value": 3,
-          "type": "attack_rate"
-        },
-        "upgrade": {
-          "value": 10,
-          "unit": "bronze"
-        },
-        "unlockLevel": 10
+        "unlockLevel": 0
       },
       {
         "level": 1,
         "effect1": {
-          "value": 2,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 2
         },
         "upgrade": {
-          "value": 5,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 5
         },
         "unlockLevel": 5
       },
       {
-        "level": 0,
+        "level": 2,
         "effect1": {
-          "value": 1,
-          "type": "attack_rate"
+          "type": "attack_rate",
+          "value": 3
         },
         "upgrade": {
-          "value": 3,
-          "unit": "bronze"
+          "unit": "bronze",
+          "value": 10
         },
-        "unlockLevel": 0
+        "unlockLevel": 10
+      },
+      {
+        "level": 3,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 4
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 4
+        },
+        "unlockLevel": 15
+      },
+      {
+        "level": 4,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 5
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 8
+        },
+        "unlockLevel": 20
+      },
+      {
+        "level": 5,
+        "effect1": {
+          "type": "attack_rate",
+          "value": 6
+        },
+        "upgrade": {
+          "unit": "iron",
+          "value": 16
+        },
+        "unlockLevel": 25
       }
     ]
   }

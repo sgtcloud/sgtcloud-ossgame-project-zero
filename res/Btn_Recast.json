@@ -164,10 +164,10 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "9999",
+                "LabelText": "999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_white_kmbb-export.fnt",
+                  "Path": "font/white14-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -175,33 +175,35 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 84.4186,
+                  "X": 84.4184,
                   "Y": 54.9871
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.603,
                   "Y": 0.6873
                 },
                 "PreSize": {
-                  "X": 0.3857,
-                  "Y": 0.1875
+                  "X": 0.35,
+                  "Y": 0.225
                 },
-                "LeftMargin": 57.4186,
-                "RightMargin": 28.5814,
-                "TopMargin": 17.5129,
-                "BottomMargin": 47.4871,
+                "LeftMargin": 59.9184,
+                "RightMargin": 31.0816,
+                "TopMargin": 16.0129,
+                "BottomMargin": 45.9871,
                 "CallBackType": "Click",
                 "Tag": 181,
                 "ActionTag": 1297891292,
                 "Size": {
-                  "X": 54.0,
-                  "Y": 15.0
+                  "X": 49.0,
+                  "Y": 18.0
                 },
                 "Name": "text_yellow",
                 "ctype": "TextBMFontObjectData"
@@ -308,8 +310,8 @@
         "ButtonUI.png",
         "EquipUI.plist",
         "EquipUI.png",
-        "font/font16_white_kmbb-export.fnt",
-        "font/font16_white_kmbb-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "HeroUI.plist",
         "HeroUI.png"
       ],

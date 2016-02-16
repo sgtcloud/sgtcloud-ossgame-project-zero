@@ -141,7 +141,7 @@
                 "LabelText": "99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white18-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -155,66 +155,72 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 35,
+                  "G": 236,
+                  "B": 236
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5467,
                   "Y": 0.8581
                 },
                 "PreSize": {
-                  "X": 0.0583,
-                  "Y": 0.0317
+                  "X": 0.0683,
+                  "Y": 0.0367
                 },
                 "LeftMargin": 328.0161,
-                "RightMargin": 236.9839,
-                "TopMargin": 75.6171,
-                "BottomMargin": 505.3829,
+                "RightMargin": 230.9839,
+                "TopMargin": 74.1171,
+                "BottomMargin": 503.8829,
                 "Tag": 907,
                 "ActionTag": -1775524666,
                 "Size": {
-                  "X": 35.0,
-                  "Y": 19.0
+                  "X": 41.0,
+                  "Y": 22.0
                 },
                 "Name": "diamond_text",
                 "ctype": "TextBMFontObjectData"
               },
               {
-                "LabelText": "999999",
+                "LabelText": "99999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white22-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 255.5249,
+                  "X": 234.5247,
                   "Y": 557.1674
                 },
                 "Scale": {
                   "ScaleX": 1.3,
                   "ScaleY": 1.3
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4259,
+                  "X": 0.3909,
                   "Y": 0.9286
                 },
                 "PreSize": {
-                  "X": 0.165,
-                  "Y": 0.0317
+                  "X": 0.1933,
+                  "Y": 0.0433
                 },
-                "LeftMargin": 255.5249,
-                "RightMargin": 245.4751,
-                "TopMargin": 33.3326,
-                "BottomMargin": 547.6674,
+                "LeftMargin": 234.5247,
+                "RightMargin": 249.4753,
+                "TopMargin": 29.8326,
+                "BottomMargin": 544.1674,
                 "Tag": 906,
                 "ActionTag": 1878014452,
                 "Size": {
-                  "X": 99.0,
-                  "Y": 19.0
+                  "X": 116.0,
+                  "Y": 26.0
                 },
                 "Name": "gold_text",
                 "ctype": "TextBMFontObjectData"
@@ -274,7 +280,7 @@
                 "Scale9Height": 30,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 221.2225,
+                  "X": 200.2226,
                   "Y": 540.7814
                 },
                 "Scale": {
@@ -284,15 +290,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3687,
+                  "X": 0.3337,
                   "Y": 0.9013
                 },
                 "PreSize": {
                   "X": 0.05,
                   "Y": 0.05
                 },
-                "LeftMargin": 221.2225,
-                "RightMargin": 348.7775,
+                "LeftMargin": 200.2226,
+                "RightMargin": 369.7774,
                 "TopMargin": 29.2186,
                 "BottomMargin": 540.7814,
                 "Tag": 286,
@@ -670,8 +676,10 @@
       "UsedResources": [
         "ButtonUI.plist",
         "ButtonUI.png",
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
+        "font/white22-export.fnt",
+        "font/white22-export.png",
         "HeroUI.plist",
         "HeroUI.png",
         "mainUI/bg_03.png",

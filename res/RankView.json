@@ -316,7 +316,7 @@
                 "LabelText": "Lv.999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font16_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -337,18 +337,18 @@
                   "Y": 0.5502
                 },
                 "PreSize": {
-                  "X": 0.1067,
-                  "Y": 0.18
+                  "X": 0.155,
+                  "Y": 0.2
                 },
                 "LeftMargin": 120.1807,
-                "RightMargin": 415.8193,
-                "TopMargin": 35.9785,
-                "BottomMargin": 46.0215,
+                "RightMargin": 386.8193,
+                "TopMargin": 34.9785,
+                "BottomMargin": 45.0215,
                 "Tag": 605,
                 "ActionTag": -731661308,
                 "Size": {
-                  "X": 64.0,
-                  "Y": 18.0
+                  "X": 93.0,
+                  "Y": 20.0
                 },
                 "Name": "level_text",
                 "ctype": "TextBMFontObjectData"
@@ -397,7 +397,7 @@
                 "LabelText": "99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white16-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -419,19 +419,19 @@
                   "Y": 0.233
                 },
                 "PreSize": {
-                  "X": 0.0583,
-                  "Y": 0.19
+                  "X": 0.0617,
+                  "Y": 0.2
                 },
-                "LeftMargin": 232.4644,
-                "RightMargin": 332.5356,
-                "TopMargin": 67.1989,
-                "BottomMargin": 13.8011,
+                "LeftMargin": 231.4644,
+                "RightMargin": 331.5356,
+                "TopMargin": 66.6989,
+                "BottomMargin": 13.3011,
                 "CallBackType": "Click",
                 "Tag": 606,
                 "ActionTag": -1027378603,
                 "Size": {
-                  "X": 35.0,
-                  "Y": 19.0
+                  "X": 37.0,
+                  "Y": 20.0
                 },
                 "Name": "prestige_text",
                 "ctype": "TextBMFontObjectData"
@@ -440,7 +440,7 @@
                 "LabelText": "99",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/font22_yellow_kmbb-export.fnt",
+                  "Path": "font/white22-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -448,32 +448,34 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 519.2378,
-                  "Y": 51.4915
+                  "X": 519.2379,
+                  "Y": 53.4915
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.8654,
-                  "Y": 0.5149
+                  "Y": 0.5349
                 },
                 "PreSize": {
-                  "X": 0.0583,
-                  "Y": 0.19
+                  "X": 0.0783,
+                  "Y": 0.26
                 },
-                "LeftMargin": 501.7378,
-                "RightMargin": 63.2622,
-                "TopMargin": 39.0085,
-                "BottomMargin": 41.9915,
+                "LeftMargin": 495.7379,
+                "RightMargin": 57.2621,
+                "TopMargin": 33.5085,
+                "BottomMargin": 40.4915,
                 "Tag": 607,
                 "ActionTag": -1890154072,
                 "Size": {
-                  "X": 35.0,
-                  "Y": 19.0
+                  "X": 47.0,
+                  "Y": 26.0
                 },
                 "Name": "num",
                 "ctype": "TextBMFontObjectData"
@@ -496,10 +498,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "font/font16_yellow_kmbb-export.fnt",
-        "font/font16_yellow_kmbb-export.png",
-        "font/font22_yellow_kmbb-export.fnt",
-        "font/font22_yellow_kmbb-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white22-export.fnt",
+        "font/white22-export.png",
         "mainUI/bg_05.png",
         "mainUI/hero_icon.png",
         "RankUI.plist",

@@ -379,106 +379,92 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "IsCustomSize": true,
-                    "FontSize": 18,
-                    "LabelText": "999999",
-                    "VerticalAlignmentType": "VT_Center",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "LabelText": "6666",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 56.1157,
-                      "Y": 61.983
+                      "X": 28.5,
+                      "Y": 29.9999
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 205,
+                      "G": 30
+                    },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4157,
-                      "Y": 1.0331
+                      "X": 0.2111,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.4444,
+                      "X": 0.4222,
                       "Y": 0.3
                     },
-                    "LeftMargin": 26.1157,
-                    "RightMargin": 48.8843,
-                    "TopMargin": -10.983,
-                    "BottomMargin": 52.983,
-                    "Tag": 115,
-                    "ActionTag": -591758277,
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
+                    "TopMargin": 21.0001,
+                    "BottomMargin": 20.9999,
+                    "Tag": 821,
+                    "ActionTag": 1223469565,
                     "Size": {
-                      "X": 60.0,
-                      "Y": 18.0
-                    },
-                    "Name": "diamond_text",
-                    "ctype": "TextObjectData"
-                  },
-                  {
-                    "IsCustomSize": true,
-                    "FontSize": 18,
-                    "LabelText": "999999",
-                    "VerticalAlignmentType": "VT_Center",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 56.1157,
-                      "Y": 28.0698
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.4157,
-                      "Y": 0.4678
-                    },
-                    "PreSize": {
-                      "X": 0.4444,
-                      "Y": 0.3
-                    },
-                    "LeftMargin": 26.1157,
-                    "RightMargin": 48.8843,
-                    "TopMargin": 22.9302,
-                    "BottomMargin": 19.0698,
-                    "Tag": 116,
-                    "ActionTag": -169660825,
-                    "Size": {
-                      "X": 60.0,
+                      "X": 57.0,
                       "Y": 18.0
                     },
                     "Name": "relic_text",
-                    "ctype": "TextObjectData"
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "6666",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 28.5,
+                      "Y": 63.0001
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 30,
+                      "G": 236
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2111,
+                      "Y": 1.05
+                    },
+                    "PreSize": {
+                      "X": 0.4222,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
+                    "TopMargin": -12.0001,
+                    "BottomMargin": 54.0001,
+                    "Tag": 820,
+                    "ActionTag": -922470840,
+                    "Size": {
+                      "X": 57.0,
+                      "Y": 18.0
+                    },
+                    "Name": "diamond_text",
+                    "ctype": "TextBMFontObjectData"
                   },
                   {
                     "FileData": {
@@ -638,55 +624,48 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "IsCustomSize": true,
-                    "FontSize": 18,
-                    "LabelText": "999999",
-                    "VerticalAlignmentType": "VT_Center",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
+                    "LabelText": "999.3k",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
                     },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 76.1158,
-                      "Y": -4.0586
+                      "X": 28.5001,
+                      "Y": -2.5684
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "B": 0
+                    },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5638,
-                      "Y": -0.0676
+                      "X": 0.2111,
+                      "Y": -0.0428
                     },
                     "PreSize": {
-                      "X": 0.7407,
+                      "X": 0.5111,
                       "Y": 0.3
                     },
-                    "LeftMargin": 26.1158,
-                    "RightMargin": 8.8842,
-                    "TopMargin": 55.0586,
-                    "BottomMargin": -13.0586,
-                    "Tag": 123,
-                    "ActionTag": 204974627,
+                    "LeftMargin": 28.5001,
+                    "RightMargin": 37.4999,
+                    "TopMargin": 53.5684,
+                    "BottomMargin": -11.5684,
+                    "CallBackType": "Touch",
+                    "Tag": 822,
+                    "ActionTag": 700294411,
                     "Size": {
-                      "X": 100.0,
+                      "X": 69.0,
                       "Y": 18.0
                     },
                     "Name": "gold_text",
-                    "ctype": "TextObjectData"
+                    "ctype": "TextBMFontObjectData"
                   }
                 ],
                 "ActionTag": -897076265,
@@ -927,55 +906,49 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "FontSize": 24,
-                "LabelText": "99/99",
-                "HorizontalAlignmentType": "HT_Center",
-                "VerticalAlignmentType": "VT_Center",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "LabelText": "12/56",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white18-export.fnt",
+                  "Plist": ""
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 574.4027,
-                  "Y": 64.5613
+                  "X": 579.4733,
+                  "Y": 64.6788
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8975,
-                  "Y": 0.538
+                  "X": 0.9054,
+                  "Y": 0.539
                 },
                 "PreSize": {
-                  "X": 0.0938,
-                  "Y": 0.2
+                  "X": 0.1187,
+                  "Y": 0.1833
                 },
-                "LeftMargin": 544.4027,
-                "RightMargin": 35.5973,
-                "TopMargin": 43.4387,
-                "BottomMargin": 52.5613,
-                "Tag": 22,
-                "ActionTag": -1537324077,
+                "LeftMargin": 541.4733,
+                "RightMargin": 22.5267,
+                "TopMargin": 44.3212,
+                "BottomMargin": 53.6788,
+                "Tag": 819,
+                "ActionTag": 1713363107,
                 "Size": {
-                  "X": 60.0,
-                  "Y": 24.0
+                  "X": 76.0,
+                  "Y": 22.0
                 },
                 "Name": "level_text",
-                "ctype": "TextObjectData"
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -1039,6 +1012,10 @@
       },
       "UsedResources": [
         "EnemyList.json",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
         "mainUI/battle_icon.png",
         "mainUI/bg_04.png",
         "mainUI/bg_15.png",

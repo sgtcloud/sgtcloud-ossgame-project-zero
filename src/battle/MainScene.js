@@ -1,6 +1,6 @@
 var MainScene = cc.Scene.extend({
 
-    ctor : function () {
+    ctor: function () {
         this._super();
 
         // init the widgets and layout them
@@ -39,52 +39,58 @@ var MainScene = cc.Scene.extend({
         this.battlePanel.addChild(buffListNode, 5000);
         var buffList = buffListNode.getChildByName('buff_list');
         (function (w) {
-
-            //var mouseDownEventListener = cc.EventListener.create({
-            //    event: cc.EventListener.MOUSE,
-            //    swallowTouches: true,
-            //    onTouchBegan: function (touch, event) {
-            //        var locationInNode = buffList.convertToNodeSpace(touch.getLocation());
-            //        var s = buffList.getContentSize();
-            //        var rect = cc.rect(0, 0, s.width, s.height);
-            //        if (cc.rectContainsPoint(rect, locationInNode)) {
-            //            //cc.log(locationInNode.x + " " + locationInNode.y);
-            //            //return function(touch, event);
-            //            cc.eventManager.dispatchEvent(event);
-            //            return true;
-            //        }
-            //        return false;
-            //    },
-            //});
-            //cc.eventManager.addListener(mouseDownEventListener, buffList);
-
             var __toggle_hide = 0;
+            //buffTip.setVisible(true);
+            function toggleBuffTip(f) {
+                if (f) {
+                    var fadein = cc.fadeIn(1);
+                    var fadeout = cc.fadeOut(1);
+                    var dt = cc.delayTime(3);
+                    var sq = cc.sequence(fadein, dt, fadeout);
+                    buffTip.runAction(sq);
+                } else {
+                    buffTip.setVisible(true);
+                    clearTimeout(__toggle_hide);
+                    __toggle_hide = setTimeout(function () {
+                        buffTip.setVisible(false);
+                    }, 3000);
+                }
+            }
 
-            function toggleBuffTip() {
-                buffTip.setVisible(true);
-                clearTimeout(__toggle_hide);
-                __toggle_hide = setTimeout(function () {
-                    buffTip.setVisible(false);
-                }, 5000);
+            var buffArr = [];
+
+            function refeshBuffLayer() {
+                buffList.removeAllChildren(false);
+                for (var i = 0; i < buffArr.length; i++) {
+                    var buff = buffArr[i];
+                    var height = buff.height;
+                    buff.setPositionY(height * i);
+                    buffList.addChild(buff);
+                }
             }
 
             function toggleBufflayer(time, text, icon) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
                 buffLayer.setText(text);
-                buffLayer.setTime(time + 's');
-                buffList.pushBackCustomItem(buffLayer.root);
+                buffLayer.setTime(time);
+                buffArr.push(buffLayer.root);
+                //buffList.addChild(buffLayer.root);
                 //buffList.jumpToBottom();
+                refeshBuffLayer();
                 var remaining = time - 1;
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 buffLayer.root.schedule(function () {
                     if (remaining > 0) {
-                        buffLayer.setTime(remaining + 's');
+                        buffLayer.setTime(remaining);
                         remaining--;
                     } else {
-                        buffList.removeChild(buffLayer.root);
+                        var index = this.getPositionY() / this.height;
+                        buffArr.splice(index, 1);
+                        refeshBuffLayer();
                         this.unschedule(this.__instanceId);
                         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+                        this.cleanup();
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
