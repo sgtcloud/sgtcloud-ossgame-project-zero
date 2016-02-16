@@ -15,26 +15,20 @@
         "Tag": 129,
         "Children": [
           {
-            "DirectionType": "Vertical",
-            "HorizontalType": "Align_HorizontalCenter",
-            "IsBounceEnabled": true,
-            "ScrollDirectionType": 0,
-            "ClipAble": true,
             "BackColorAlpha": 102,
             "SingleColor": {
               "R": 150,
-              "G": 150
+              "G": 200
             },
             "FirstColor": {
               "R": 150,
-              "G": 150
+              "G": 200
             },
             "EndColor": {},
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
               "X": 0.0,
@@ -54,14 +48,14 @@
               "X": 1.0,
               "Y": 1.0
             },
-            "Tag": 130,
-            "ActionTag": 98846833,
+            "Tag": 38,
+            "ActionTag": -876322324,
             "Size": {
               "X": 190.0,
               "Y": 180.0
             },
             "Name": "buff_list",
-            "ctype": "ListViewObjectData"
+            "ctype": "PanelObjectData"
           }
         ],
         "Size": {
