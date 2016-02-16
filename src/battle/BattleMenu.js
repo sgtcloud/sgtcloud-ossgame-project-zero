@@ -564,9 +564,12 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventHero = event.getUserData();
                 if (eventHero.getId() === hero.getId()) {
-                    eventHero.refreshProps();
+                    //eventHero.refreshProps();
                     elements.dps_text.setString(parseInt(eventHero.getLife()));
                 }
+            });
+            customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
+                elements.dps_text.setString(parseInt(hero.getLife()));
             });
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                 refeshUpgradeLayer(hero, elements);
@@ -783,6 +786,7 @@ var HeroListMenu = BattleMenu.extend({
                 desc.setString(buildSkillDesc(skill));
                 lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
                 customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
+                hero.refreshProps();
                 customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
                 customEventHelper.sendEvent(EVENT.UNLOCK_ACTIVITY_SKILL, skill.getId());
                 if (skill.isMaxLevel()) {
@@ -907,7 +911,8 @@ var EquipListMenu = BattleMenu.extend({
                 equipObject.equip.upgrade(hero, price);
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);
-                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
+                PlayerData.refreshGlobeProps();
+                customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
             });
         }
 
@@ -1006,7 +1011,8 @@ var EquipListMenu = BattleMenu.extend({
                 equipNum_text.setString(count);
                 customEventHelper.bindListener(EVENT.UPGRADE_EQUIP_NUM, function (event) {
                     equipNum_text.setString(event.getUserData());
-                })
+                });
+                //customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
                 equipNum_text.ignoreContentAdaptWithSize(true)
             } else {
                 player_equip.setVisible(false);
@@ -1031,13 +1037,14 @@ var EquipListMenu = BattleMenu.extend({
             setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
+            customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
+                dps_text.setString(parseInt(hero.getLife()));
+            });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
-                //var eventHero = event.getUserData();
-                //if (eventHero.getId() === hero.getId()) {
-                 hero.refreshProps();
-                console.log(hero.getId()+"----->"+hero.getLife())
+                var eventhero=event.getUserData();
+                if(eventhero.getId()===hero.getId()){
                     dps_text.setString(parseInt(hero.getLife()));
-                //}
+                }
             });
             name.setString(hero.getName());
             lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
@@ -1051,7 +1058,7 @@ var EquipListMenu = BattleMenu.extend({
             lockLayer.setPosition(lockBtnPosition);
             var maxLevel = maxLevelBtnTemplate.clone();
             maxLevel.setPosition(maxLevelBtnPosition);
-            var maxBtn=maxLevel.getChildByName('btn');
+            var maxBtn = maxLevel.getChildByName('btn');
             maxBtn.setEnabled(false);
             maxBtn.setBright(false);
             var upgradeLayer = upgradeBtnTemp.clone();
@@ -1106,7 +1113,6 @@ var EquipListMenu = BattleMenu.extend({
                 upgradeBtn.addClickEventListener(function (event) {
                     var cost = equip.getLevelData()['upgrade'];
                     equip.upgrade(hero);
-
                     if (cost.unit === "gold") {
                         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                     } else if (cost.unit === "gem") {
@@ -1125,8 +1131,14 @@ var EquipListMenu = BattleMenu.extend({
                         text.setString(nextCost.value);
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
+                    if (equip.getType() > 0) {
+                        PlayerData.refreshGlobeProps();
+                        customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
+                    } else {
+                        customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
+                    }
                     refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
-                    customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
+
                 });
                 refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {

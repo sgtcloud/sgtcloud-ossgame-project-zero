@@ -120,7 +120,13 @@ var EVENT = {
     /**
      * 重置小精灵计数
      */
-    RESET_FAIRY_COUNTDOWN: "RESET_FAIRY_COUNTDOWN"
+    RESET_FAIRY_COUNTDOWN: "RESET_FAIRY_COUNTDOWN",
+
+    /**
+     * 刷新所有英雄的属性
+     */
+    ALL_HERO_REFRESH_PROPS:"ALL_HERO_REFRESH_PROPS"
+
 };
 
 var customEventHelper = {
