@@ -340,10 +340,10 @@
                   "Y": 0.7161
                 },
                 "PreSize": {
-                  "X": 0.4063,
+                  "X": 0.375,
                   "Y": 0.25
                 },
-                "LeftMargin": 373.3454,
+                "LeftMargin": 393.3454,
                 "RightMargin": 6.6546,
                 "TopMargin": 8.1439,
                 "BottomMargin": 171.8561,
@@ -391,7 +391,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 159.9998,
+                      "X": 149.9989,
                       "Y": 0.0
                     },
                     "Scale": {
@@ -401,15 +401,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6154,
+                      "X": 0.625,
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.2308,
+                      "X": 0.25,
                       "Y": 1.0
                     },
-                    "LeftMargin": 159.9998,
-                    "RightMargin": 40.0002,
+                    "LeftMargin": 149.9989,
+                    "RightMargin": 30.0011,
                     "Tag": 65,
                     "ActionTag": 805314261,
                     "Size": {
@@ -430,7 +430,7 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 205.0003,
+                      "X": 194.9992,
                       "Y": 10.0
                     },
                     "Scale": {
@@ -440,15 +440,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.7885,
+                      "X": 0.8125,
                       "Y": 0.1667
                     },
                     "PreSize": {
-                      "X": 0.1115,
+                      "X": 0.1208,
                       "Y": 0.3
                     },
-                    "LeftMargin": 205.0003,
-                    "RightMargin": 25.9997,
+                    "LeftMargin": 194.9992,
+                    "RightMargin": 16.0008,
                     "TopMargin": 41.0,
                     "BottomMargin": 1.0,
                     "Tag": 66,
@@ -503,7 +503,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 79.9998,
+                      "X": 74.9986,
                       "Y": 0.7914
                     },
                     "Scale": {
@@ -513,15 +513,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3077,
+                      "X": 0.3125,
                       "Y": 0.0132
                     },
                     "PreSize": {
-                      "X": 0.2308,
+                      "X": 0.25,
                       "Y": 1.0
                     },
-                    "LeftMargin": 79.9998,
-                    "RightMargin": 120.0002,
+                    "LeftMargin": 74.9986,
+                    "RightMargin": 105.0014,
                     "TopMargin": -0.7914,
                     "BottomMargin": 0.7914,
                     "Tag": 67,
@@ -544,7 +544,7 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 125.0,
+                      "X": 119.9987,
                       "Y": 10.0
                     },
                     "Scale": {
@@ -554,15 +554,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4808,
+                      "X": 0.5,
                       "Y": 0.1667
                     },
                     "PreSize": {
-                      "X": 0.0577,
+                      "X": 0.0625,
                       "Y": 0.3
                     },
-                    "LeftMargin": 125.0,
-                    "RightMargin": 120.0,
+                    "LeftMargin": 119.9987,
+                    "RightMargin": 105.0013,
                     "TopMargin": 41.0,
                     "BottomMargin": 1.0,
                     "Tag": 68,
@@ -630,10 +630,10 @@
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.2308,
+                      "X": 0.25,
                       "Y": 1.0
                     },
-                    "RightMargin": 200.0,
+                    "RightMargin": 180.0,
                     "Tag": 69,
                     "ActionTag": 932218269,
                     "Size": {
@@ -664,15 +664,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1731,
+                      "X": 0.1875,
                       "Y": 0.1667
                     },
                     "PreSize": {
-                      "X": 0.05,
+                      "X": 0.0542,
                       "Y": 0.3
                     },
                     "LeftMargin": 45.0,
-                    "RightMargin": 202.0,
+                    "RightMargin": 182.0,
                     "TopMargin": 41.0,
                     "BottomMargin": 1.0,
                     "Tag": 70,
@@ -687,7 +687,7 @@
                 ],
                 "ActionTag": 1783567765,
                 "Size": {
-                  "X": 260.0,
+                  "X": 240.0,
                   "Y": 60.0
                 },
                 "Name": "blood_box",

@@ -39,14 +39,14 @@ var MainScene = cc.Scene.extend({
         this.battlePanel.addChild(buffListNode, 5000);
         var buffList = buffListNode.getChildByName('buff_list');
         (function (w) {
+            var fadein = cc.fadeIn(1.0);
+            var fadeout = cc.fadeOut(1.0);
+            var dt = cc.delayTime(3);
+            var sq = cc.sequence(fadein, dt, fadeout);
             var __toggle_hide = 0;
             //buffTip.setVisible(true);
             function toggleBuffTip(f) {
                 if (f) {
-                    var fadein = cc.fadeIn(1);
-                    var fadeout = cc.fadeOut(1);
-                    var dt = cc.delayTime(3);
-                    var sq = cc.sequence(fadein, dt, fadeout);
                     buffTip.runAction(sq);
                 } else {
                     buffTip.setVisible(true);
@@ -58,7 +58,6 @@ var MainScene = cc.Scene.extend({
             }
 
             var buffArr = [];
-
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {

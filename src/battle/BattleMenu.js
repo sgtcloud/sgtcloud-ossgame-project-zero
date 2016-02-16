@@ -569,6 +569,7 @@ var HeroListMenu = BattleMenu.extend({
                 }
             });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
+                console.log(hero.getLife())
                 elements.dps_text.setString(parseInt(hero.getLife()));
             });
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
@@ -1037,6 +1038,7 @@ var EquipListMenu = BattleMenu.extend({
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
+                console.log(hero.getLife())
                 dps_text.setString(parseInt(hero.getLife()));
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
