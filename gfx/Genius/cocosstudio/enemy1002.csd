@@ -124,7 +124,7 @@
       <ObjectData Name="Node" Tag="5" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="enemy1002" ActionTag="103088517" Tag="6" IconVisible="False" LeftMargin="-65.2548" RightMargin="-27.7452" TopMargin="-94.8465" BottomMargin="-9.1535" ctype="SpriteObjectData">
+          <AbstractNodeData Name="enemy" ActionTag="103088517" Tag="6" IconVisible="False" LeftMargin="-65.2548" RightMargin="-27.7452" TopMargin="-94.8465" BottomMargin="-9.1535" ctype="SpriteObjectData">
             <Size X="93.0000" Y="104.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="-18.7548" Y="-9.1535" />

@@ -157,36 +157,36 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="atk" StartIndex="0" EndIndex="18">
-          <RenderColor A="150" R="153" G="50" B="204" />
+          <RenderColor A="255" R="153" G="50" B="204" />
         </AnimationInfo>
         <AnimationInfo Name="dead" StartIndex="21" EndIndex="21">
-          <RenderColor A="150" R="95" G="158" B="160" />
+          <RenderColor A="255" R="95" G="158" B="160" />
         </AnimationInfo>
         <AnimationInfo Name="die" StartIndex="24" EndIndex="36">
-          <RenderColor A="150" R="143" G="188" B="139" />
+          <RenderColor A="255" R="143" G="188" B="139" />
         </AnimationInfo>
         <AnimationInfo Name="hit" StartIndex="39" EndIndex="51">
-          <RenderColor A="150" R="0" G="0" B="255" />
+          <RenderColor A="255" R="0" G="0" B="255" />
         </AnimationInfo>
         <AnimationInfo Name="skill" StartIndex="54" EndIndex="66">
-          <RenderColor A="150" R="186" G="85" B="211" />
+          <RenderColor A="255" R="186" G="85" B="211" />
         </AnimationInfo>
         <AnimationInfo Name="stand" StartIndex="69" EndIndex="78">
-          <RenderColor A="150" R="255" G="255" B="0" />
+          <RenderColor A="255" R="255" G="255" B="0" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="7" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero104" ActionTag="-1637620460" Tag="8" IconVisible="False" LeftMargin="-29.3532" RightMargin="-41.6468" TopMargin="-84.2961" BottomMargin="-9.7039" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="-1637620460" Tag="8" IconVisible="False" LeftMargin="-29.3551" RightMargin="-41.6449" TopMargin="-84.8817" BottomMargin="-9.1183" ctype="SpriteObjectData">
             <Size X="71.0000" Y="94.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position X="6.1468" Y="-9.7039" />
+            <Position X="6.1449" Y="-9.1183" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="hero/her0104/hero104_stand04.png" Plist="hero104.plist" />
+            <FileData Type="MarkedSubImage" Path="hero/her0104/hero104_atk01.png" Plist="hero104.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

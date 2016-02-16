@@ -566,6 +566,7 @@
         <PlistInfo Name="ShopUI.csi" Type="Plist" />
         <PlistInfo Name="StatisticsUI.csi" Type="Plist" />
         <PlistInfo Name="SkillUI.csi" Type="Plist" />
+        <Project Name="Tips.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
