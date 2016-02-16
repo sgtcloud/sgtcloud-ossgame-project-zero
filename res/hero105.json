@@ -620,9 +620,9 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -63.5075,
-            "RightMargin": -44.4925,
-            "TopMargin": -66.5372,
+            "LeftMargin": -67.0075,
+            "RightMargin": -47.9925,
+            "TopMargin": -74.5372,
             "BottomMargin": -12.4628,
             "Tag": 25,
             "ActionTag": -275940080,
@@ -630,7 +630,7 @@
               "X": 115.0,
               "Y": 87.0
             },
-            "Name": "hero105",
+            "Name": "hero",
             "ctype": "SpriteObjectData"
           }
         ],
