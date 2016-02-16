@@ -101,8 +101,8 @@
                 "Scale9Height": 27,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 9.7592,
-                  "Y": 205.9049
+                  "X": 9.7591,
+                  "Y": 202.9049
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -112,16 +112,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0152,
-                  "Y": 0.8579
+                  "Y": 0.8454
                 },
                 "PreSize": {
                   "X": 0.2047,
                   "Y": 0.1125
                 },
-                "LeftMargin": 9.7592,
-                "RightMargin": 499.2408,
-                "TopMargin": 7.0951,
-                "BottomMargin": 205.9049,
+                "LeftMargin": 9.7591,
+                "RightMargin": 499.2409,
+                "TopMargin": 10.0951,
+                "BottomMargin": 202.9049,
                 "CallBackType": "Click",
                 "Tag": 170,
                 "ActionTag": -966206276,
@@ -133,7 +133,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "99945456",
+                "LabelText": "999.56k",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
                   "Path": "font/white16-export.fnt",
@@ -143,8 +143,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 136.3309,
-                  "Y": 219.9271
+                  "X": 136.3308,
+                  "Y": 216.927
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -154,20 +154,20 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.213,
-                  "Y": 0.9164
+                  "Y": 0.9039
                 },
                 "PreSize": {
-                  "X": 0.2172,
+                  "X": 0.1656,
                   "Y": 0.0833
                 },
-                "LeftMargin": 136.3309,
-                "RightMargin": 364.6691,
-                "TopMargin": 10.0729,
-                "BottomMargin": 209.9271,
+                "LeftMargin": 136.3308,
+                "RightMargin": 397.6692,
+                "TopMargin": 13.073,
+                "BottomMargin": 206.927,
                 "Tag": 1050,
                 "ActionTag": -1991017531,
                 "Size": {
-                  "X": 139.0,
+                  "X": 106.0,
                   "Y": 20.0
                 },
                 "Name": "atk_text",
@@ -183,8 +183,8 @@
                 "Scale9Height": 26,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 398.6175,
-                  "Y": 206.4046
+                  "X": 9.7591,
+                  "Y": 175.2805
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -193,17 +193,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6228,
-                  "Y": 0.86
+                  "X": 0.0152,
+                  "Y": 0.7303
                 },
                 "PreSize": {
                   "X": 0.2047,
                   "Y": 0.1083
                 },
-                "LeftMargin": 398.6175,
-                "RightMargin": 110.3825,
-                "TopMargin": 7.5954,
-                "BottomMargin": 206.4046,
+                "LeftMargin": 9.7591,
+                "RightMargin": 499.2409,
+                "TopMargin": 38.7195,
+                "BottomMargin": 175.2805,
                 "Tag": 173,
                 "ActionTag": 1563928514,
                 "Size": {
@@ -235,7 +235,7 @@
                 },
                 "Position": {
                   "X": 15.0,
-                  "Y": 202.0
+                  "Y": 161.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -245,21 +245,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0234,
-                  "Y": 0.8417
+                  "Y": 0.6708
                 },
                 "PreSize": {
                   "X": 0.9531,
-                  "Y": 0.7917
+                  "Y": 0.6208
                 },
                 "LeftMargin": 15.0,
                 "RightMargin": 15.0,
-                "TopMargin": 38.0,
+                "TopMargin": 79.0,
                 "BottomMargin": 12.0,
                 "Tag": 161,
                 "ActionTag": -1738334830,
                 "Size": {
                   "X": 610.0,
-                  "Y": 190.0
+                  "Y": 149.0
                 },
                 "Name": "skill_box",
                 "ctype": "PanelObjectData"
@@ -275,8 +275,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 523.399,
-                  "Y": 219.5949
+                  "X": 136.3308,
+                  "Y": 188.4706
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -285,17 +285,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8178,
-                  "Y": 0.915
+                  "X": 0.213,
+                  "Y": 0.7853
                 },
                 "PreSize": {
                   "X": 0.1703,
                   "Y": 0.0833
                 },
-                "LeftMargin": 523.399,
-                "RightMargin": 7.601,
-                "TopMargin": 10.4051,
-                "BottomMargin": 209.5949,
+                "LeftMargin": 136.3308,
+                "RightMargin": 394.6692,
+                "TopMargin": 41.5294,
+                "BottomMargin": 178.4706,
                 "Tag": 1051,
                 "ActionTag": 61502921,
                 "Size": {
@@ -304,6 +304,394 @@
                 },
                 "Name": "tatk_text",
                 "ctype": "TextBMFontObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 1.0
+                },
+                "Position": {
+                  "X": 633.3454,
+                  "Y": 171.8561
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9896,
+                  "Y": 0.7161
+                },
+                "PreSize": {
+                  "X": 0.4063,
+                  "Y": 0.25
+                },
+                "LeftMargin": 373.3454,
+                "RightMargin": 6.6546,
+                "TopMargin": 8.1439,
+                "BottomMargin": 171.8561,
+                "Tag": 64,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood1_2.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood1_1.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood1_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 30,
+                    "Scale9Height": 38,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 159.9998,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6154,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2308,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 159.9998,
+                    "RightMargin": 40.0002,
+                    "Tag": 65,
+                    "ActionTag": 805314261,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 60.0
+                    },
+                    "Name": "small_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 205.0003,
+                      "Y": 10.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7885,
+                      "Y": 0.1667
+                    },
+                    "PreSize": {
+                      "X": 0.1115,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 205.0003,
+                    "RightMargin": 25.9997,
+                    "TopMargin": 41.0,
+                    "BottomMargin": 1.0,
+                    "Tag": 66,
+                    "ActionTag": 430784239,
+                    "Size": {
+                      "X": 29.0,
+                      "Y": 18.0
+                    },
+                    "Name": "small_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood2_2.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood2_1.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood2_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 30,
+                    "Scale9Height": 38,
+                    "DisplayState": false,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 79.9998,
+                      "Y": 0.7914
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3077,
+                      "Y": 0.0132
+                    },
+                    "PreSize": {
+                      "X": 0.2308,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 79.9998,
+                    "RightMargin": 120.0002,
+                    "TopMargin": -0.7914,
+                    "BottomMargin": 0.7914,
+                    "Tag": 67,
+                    "ActionTag": -202900013,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 60.0
+                    },
+                    "Name": "middle_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "LabelText": "0",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 125.0,
+                      "Y": 10.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4808,
+                      "Y": 0.1667
+                    },
+                    "PreSize": {
+                      "X": 0.0577,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 125.0,
+                    "RightMargin": 120.0,
+                    "TopMargin": 41.0,
+                    "BottomMargin": 1.0,
+                    "Tag": 68,
+                    "ActionTag": -1987373283,
+                    "Size": {
+                      "X": 15.0,
+                      "Y": 18.0
+                    },
+                    "Name": "middle_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood3_2.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood3_1.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/blood3_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 30,
+                    "Scale9Height": 38,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.2308,
+                      "Y": 1.0
+                    },
+                    "RightMargin": 200.0,
+                    "Tag": 69,
+                    "ActionTag": 932218269,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 60.0
+                    },
+                    "Name": "large_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "LabelText": "3",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 45.0,
+                      "Y": 10.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1731,
+                      "Y": 0.1667
+                    },
+                    "PreSize": {
+                      "X": 0.05,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 45.0,
+                    "RightMargin": 202.0,
+                    "TopMargin": 41.0,
+                    "BottomMargin": 1.0,
+                    "Tag": 70,
+                    "ActionTag": -1567505625,
+                    "Size": {
+                      "X": 13.0,
+                      "Y": 18.0
+                    },
+                    "Name": "large_text",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 1783567765,
+                "Size": {
+                  "X": 260.0,
+                  "Y": 60.0
+                },
+                "Name": "blood_box",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": -1011955371,
@@ -323,9 +711,17 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "font/white10-export.fnt",
+        "font/white10-export.png",
         "font/white16-export.fnt",
         "font/white16-export.png",
         "mainUI/bg_04.png",
+        "mainUI/blood1_1.png",
+        "mainUI/blood1_2.png",
+        "mainUI/blood2_1.png",
+        "mainUI/blood2_2.png",
+        "mainUI/blood3_1.png",
+        "mainUI/blood3_2.png",
         "SkillUI.plist",
         "SkillUI.png"
       ],
