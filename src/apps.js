@@ -282,12 +282,13 @@ function bindTouchEventListener(listener, target) {
             var rect = cc.rect(0, 0, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
                 //cc.log(locationInNode.x + " " + locationInNode.y);
+                console.log('name:'+target.getName())
                 return listener(touch, event);
             }
             return false;
         },
         onTouchEnd: function (touch, event) {
-
+            return false;
         }
     });
     cc.eventManager.addListener(touchDownEventListener, target);

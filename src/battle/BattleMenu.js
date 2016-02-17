@@ -218,7 +218,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
         this.time.setString(time);
     }
     this.setCoolTime = function (time) {
-        this.cooldownText.setString(time);
+        this.time.setString(time);
     }
     this.setEnabled = function (state) {
         //this.skill_icon.setEnabled(state);
@@ -238,8 +238,7 @@ function getHeroActivtySkillls(hero) {
 var SkillListMenu = BattleMenu.extend({
     ctor: function (tabPanel, battlePanel) {
         var heroes = PlayerData.getHeroes();
-        var size = heroes.length;
-        var skillBtnNum = 7
+        //var skillBtnNum = 7
         this._super(tabPanel, res.skill_layer_json);
         var skills = [];
         for (var i in heroes) {
@@ -273,9 +272,9 @@ var SkillListMenu = BattleMenu.extend({
         }
 
         this.refreshSkillState = function () {
-            for (var i = 0; i < skillBtnNum; i++) {
+            //for (var i = 0; i < skillBtnNum; i++) {
                 //skillBtns[i].setVisible(false);
-            }
+            //}
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 //skill.setVisible(true);
@@ -290,24 +289,24 @@ var SkillListMenu = BattleMenu.extend({
                     }
                 }
             });
-        }
+        };
 
         this.update = function (dt) {
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 if (hero.isDead()) {
-                    skill.setDeadTime(format(hero.getRecover() * 1000));
+                    skill.setDeadTime(Math.round(hero.getRecover()));
                 } else if (hero.getCooldown() > 0) {
-                    skill.setCoolTime(format(hero.getCooldown() * 1000));
+                    skill.setCoolTime(Math.round(hero.getCooldown()));
                 }
             });
-        }
+        };
         this.onHeroDead = function (_hero) {
             this.refreshSkillState();
-        }
+        };
         this.onHeroRecover = function (hero) {
             this.refreshSkillState();
-        }
+        };
 
         this.refreshSkillState();
         this.scheduleUpdate();
