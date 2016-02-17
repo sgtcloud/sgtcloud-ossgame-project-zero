@@ -318,15 +318,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_list" Visible="False" ActionTag="-1303931870" Tag="132" IconVisible="True" LeftMargin="234.4081" RightMargin="215.5919" TopMargin="309.7909" BottomMargin="250.2091" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="190.0000" Y="180.0000" />
+              <AbstractNodeData Name="buff_list" ActionTag="1164280231" Tag="51" IconVisible="True" LeftMargin="225.0000" RightMargin="415.0000" TopMargin="500.0000" BottomMargin="240.0000" ctype="SingleNodeObjectData">
+                <Size X="0.0000" Y="0.0000" />
                 <AnchorPoint />
-                <Position X="234.4081" Y="250.2091" />
+                <Position X="225.0000" Y="240.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3663" Y="0.3381" />
-                <PreSize X="0.2969" Y="0.2432" />
-                <FileData Type="Normal" Path="BuffList.csd" Plist="" />
+                <PrePosition X="0.3516" Y="0.3243" />
+                <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

@@ -1330,18 +1330,10 @@
                 "ctype": "ButtonObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "BuffList.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 234.4081,
-                  "Y": 250.2091
+                  "X": 225.0,
+                  "Y": 240.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1350,25 +1342,25 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.3663,
-                  "Y": 0.3381
+                  "X": 0.3516,
+                  "Y": 0.3243
                 },
                 "PreSize": {
-                  "X": 0.2969,
-                  "Y": 0.2432
+                  "X": 0.0,
+                  "Y": 0.0
                 },
-                "LeftMargin": 234.4081,
-                "RightMargin": 215.5919,
-                "TopMargin": 309.7909,
-                "BottomMargin": 250.2091,
-                "Tag": 132,
-                "ActionTag": -1303931870,
+                "LeftMargin": 225.0,
+                "RightMargin": 415.0,
+                "TopMargin": 500.0,
+                "BottomMargin": 240.0,
+                "Tag": 51,
+                "ActionTag": 1164280231,
                 "Size": {
-                  "X": 190.0,
-                  "Y": 180.0
+                  "X": 0.0,
+                  "Y": 0.0
                 },
                 "Name": "buff_list",
-                "ctype": "ProjectNodeObjectData"
+                "ctype": "SingleNodeObjectData"
               }
             ],
             "ActionTag": 2088090531,
@@ -1390,7 +1382,6 @@
       "UsedResources": [
         "BattleLayer.plist",
         "BattleLayer.png",
-        "BuffList.json",
         "font/white16-export.fnt",
         "font/white16-export.png",
         "font/white18-export.fnt",
