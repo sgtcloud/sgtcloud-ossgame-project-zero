@@ -101,24 +101,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
             customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (e) {
                 var data = e.getUserData();
                 if (that.skill.getId() === data.skillId) {
-                    //if (!(isCoolDowning || heroDead)) {
-                    //    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                    //    if(!isCoolDowning){
-                    //        doCoolDown(that.skill.getLevelData());
-                    //    }
-                    //}
-                    //console.log('释放buff:' + that.skill.getId())
-                    //if (isCoolDowning && !heroDead) {
-                    //    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //    toggleBuffTip();
-                    //} else
-                    //    tryFire(that.skill.getLevelData());
-                    if (!(isCoolDowning || heroDead)) {
-                        //tryFire(that.skill.getLevelData(),function(){
-                        //    that.skill_icon.setTouchEnabled(true);
-                        //    that.skill_icon.setColor(cc.color(255,255,255));
-                        //});
-
+                    if (!randomBuff) {
                         var duration = that.skill.getLevelData()['duration'];
                         if (duration > 0) {
                             toggleBufflayer(duration, buildSkillBuffDesc(skill), that.skill.getIcon());
@@ -126,13 +109,12 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                         customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                         randomBuff = true;
                         that.skill_icon.setColor(cc.color(90, 90, 90));
-
                         setTimeout(function () {
-                            that.skill_icon.setColor(cc.color(255, 255, 255));
+                            if(!(heroDead||isCoolDowning))
+                                that.skill_icon.setColor(cc.color(255, 255, 255));
                             randomBuff = false;
                         }, duration * 1000);
-                    } else if (isCoolDowning && !heroDead && randomBuff) {
-                        console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                    } else /*if ( randomBuff)*/ {
                         toggleBuffTip();
                     }
                 }
@@ -162,7 +144,8 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     doCoolDown(levelData);
                     console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                     if (levelData['duration'] > 0) {
-                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon());
+                        randomBuff = true;
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(),function(){ randomBuff = false;});
                     }
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
@@ -176,7 +159,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 //doCoolDown(levelData);
-                if (randomBuff) {
+                if (!(heroDead||isCoolDowning)&&randomBuff) {
                     toggleBuffTip();
                 } else {
                     tryFire(levelData);

@@ -20,42 +20,42 @@ var CONSTS = {
     "flySpirit_interval_time": 10,
     "click_chest_random_events": [{
         "f": {
-            "skill_id": "s10107",
+            "skill_id": "s10008",
             "level": 2,
             "chestStyle": "chest01.json"
         },
-        "w": 5
+        "w": 50
     }, {
         "f": {
-            "skill_id": "s10107",
+            "skill_id": "s10007",
             "level": 3,
             "chestStyle": "chest01.json"
         },
         "w": 4
     }, {
         "f": {
-            "skill_id": "s10107",
+            "skill_id": "s10007",
             "level": 4,
             "chestStyle": "chest01.json"
         },
         "w": 3
     }, {
         "f": {
-            "skill_id": "s10107",
+            "skill_id": "s10007",
             "level": 5,
             "chestStyle": "chest01.json"
         },
         "w": 2
     }, {
         "f": {
-            "skill_id": "s10101",
+            "skill_id": "s10008",
             "level": 2,
             "chestStyle": "chest01.json"
         },
         "w": 1
     }, {
         "f": {
-            "skill_id": "s10101",
+            "skill_id": "s10001",
             "level": 3,
             "chestStyle": "chest01.json"
         },

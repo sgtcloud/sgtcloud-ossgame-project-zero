@@ -68,7 +68,7 @@ var MainScene = cc.Scene.extend({
                 }
             }
 
-            function toggleBufflayer(time, text, icon) {
+            function toggleBufflayer(time, text, icon,cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
                 buffLayer.setText(text);
@@ -89,6 +89,7 @@ var MainScene = cc.Scene.extend({
                         refeshBuffLayer();
                         this.unschedule(this.__instanceId);
                         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+                        if(typeof cb==='function')cb();
                         this.cleanup();
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
