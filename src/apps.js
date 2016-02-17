@@ -12,6 +12,8 @@ $$.extend = function (a, b) {
 }
 
 var CONSTS = {
+    "FAIRY_SPECIFIC_ZORDER": 2000,
+    "MAX_ATTACHMENTS_ON_SPRITE": 10,
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
@@ -66,7 +68,7 @@ var CONSTS = {
         },
         "w": 6
     }]
-}
+};
 
 //为了显示CD和复活的时候显示的格式
 Date.prototype.Format = function (fmt) { //author: meizz
@@ -284,6 +286,9 @@ function bindTouchEventListener(listener, target) {
             }
             return false;
         },
+        onTouchEnd: function (touch, event) {
+
+        }
     });
     cc.eventManager.addListener(touchDownEventListener, target);
 }
