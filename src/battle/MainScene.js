@@ -37,7 +37,11 @@ var MainScene = cc.Scene.extend({
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
         this.battlePanel.addChild(buffListNode, 5000);
+        bindTouchEventListener(function(){return false;},this.battlePanel.buffList);
+        bindTouchEventListener(function(){return false;},buffListNode)
         var buffList = buffListNode.getChildByName('buff_list');
+        bindTouchEventListener(function(){return false;},buffList);
+        //buffList.setSwallowTouches(false);
         (function (w) {
             var fadein = cc.fadeIn(1.0);
             var fadeout = cc.fadeOut(1.0);
@@ -68,7 +72,7 @@ var MainScene = cc.Scene.extend({
                 }
             }
 
-            function toggleBufflayer(time, text, icon) {
+            function toggleBufflayer(time, text, icon,cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
                 buffLayer.setText(text);
@@ -89,6 +93,7 @@ var MainScene = cc.Scene.extend({
                         refeshBuffLayer();
                         this.unschedule(this.__instanceId);
                         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+                        if(typeof cb==='function')cb();
                         this.cleanup();
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);

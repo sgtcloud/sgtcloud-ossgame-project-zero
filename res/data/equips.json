@@ -148,6 +148,7 @@
       {
         "level": 5,
         "effect1": {
+          "type": "globe_attack_value",
           "value": 215
         },
         "upgrade": {

@@ -101,38 +101,21 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
             customEventHelper.bindListener(EVENT.CAST_SKILL_READY, function (e) {
                 var data = e.getUserData();
                 if (that.skill.getId() === data.skillId) {
-                    //if (!(isCoolDowning || heroDead)) {
-                    //    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                    //    if(!isCoolDowning){
-                    //        doCoolDown(that.skill.getLevelData());
-                    //    }
-                    //}
-                    //console.log('释放buff:' + that.skill.getId())
-                    //if (isCoolDowning && !heroDead) {
-                    //    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //    toggleBuffTip();
-                    //} else
-                    //    tryFire(that.skill.getLevelData());
-                    if (!(isCoolDowning || heroDead)) {
-                        //tryFire(that.skill.getLevelData(),function(){
-                        //    that.skill_icon.setTouchEnabled(true);
-                        //    that.skill_icon.setColor(cc.color(255,255,255));
-                        //});
-
-                        var duration = that.skill.getLevelData()['duration'];
+                    if (!randomBuff) {
+                        var duration = that.skill.getLevelData(data.level)['duration'];
+                        var randomSkill=new Skill(data.skillId,data.level);
                         if (duration > 0) {
-                            toggleBufflayer(duration, buildSkillBuffDesc(skill), that.skill.getIcon());
+                            toggleBufflayer(duration, buildSkillBuffDesc(randomSkill), that.skill.getIcon());
                         }
-                        customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                        customEventHelper.sendEvent(EVENT.CAST_SKILL, randomSkill);
                         randomBuff = true;
                         that.skill_icon.setColor(cc.color(90, 90, 90));
-
                         setTimeout(function () {
-                            that.skill_icon.setColor(cc.color(255, 255, 255));
+                            if(!(heroDead||isCoolDowning))
+                                that.skill_icon.setColor(cc.color(255, 255, 255));
                             randomBuff = false;
                         }, duration * 1000);
-                    } else if (isCoolDowning && !heroDead && randomBuff) {
-                        console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                    } else /*if ( randomBuff)*/ {
                         toggleBuffTip();
                     }
                 }
@@ -145,7 +128,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     that.time.setString(levelData['cooldown']);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
-                        if (!heroDead) {
+                        if (!heroDead&&!randomBuff) {
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
@@ -162,7 +145,8 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     doCoolDown(levelData);
                     console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                     if (levelData['duration'] > 0) {
-                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon());
+                        randomBuff = true;
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(),function(){ randomBuff = false;});
                     }
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
@@ -175,14 +159,11 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
-                //doCoolDown(levelData);
-                if (randomBuff) {
+                if (!(heroDead||isCoolDowning)&&randomBuff) {
                     toggleBuffTip();
                 } else {
                     tryFire(levelData);
                 }
-                //if (levelData['duration'] > 0) {
-                //}
             });
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
@@ -218,7 +199,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                 var data = event.getUserData();
                 var hero = PlayerData.getHeroById(data['id']);
                 if (hero.hasSkill(that.skill.getId())) {
-                    that.time.setString(Math.round(data['recover']));
+                    that.setCoolTime(Math.round(data['recover']));
                 }
             });
         }
@@ -237,17 +218,11 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
         this.time.setString(time);
     }
     this.setCoolTime = function (time) {
-        this.cooldownText.setString(time);
+        this.time.setString(time);
     }
     this.setEnabled = function (state) {
         //this.skill_icon.setEnabled(state);
         //this.skill_icon.setBright(state);
-    }
-    this.addClickEvent = function (func) {
-        var cb = func;
-        this.skill_icon.addClickEventListener(function (event) {
-            cb(event, skill);
-        });
     }
 }
 function getHeroActivtySkillls(hero) {
@@ -263,8 +238,7 @@ function getHeroActivtySkillls(hero) {
 var SkillListMenu = BattleMenu.extend({
     ctor: function (tabPanel, battlePanel) {
         var heroes = PlayerData.getHeroes();
-        var size = heroes.length;
-        var skillBtnNum = 7
+        //var skillBtnNum = 7
         this._super(tabPanel, res.skill_layer_json);
         var skills = [];
         for (var i in heroes) {
@@ -298,9 +272,9 @@ var SkillListMenu = BattleMenu.extend({
         }
 
         this.refreshSkillState = function () {
-            for (var i = 0; i < skillBtnNum; i++) {
+            //for (var i = 0; i < skillBtnNum; i++) {
                 //skillBtns[i].setVisible(false);
-            }
+            //}
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 //skill.setVisible(true);
@@ -315,24 +289,24 @@ var SkillListMenu = BattleMenu.extend({
                     }
                 }
             });
-        }
+        };
 
         this.update = function (dt) {
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
                 if (hero.isDead()) {
-                    skill.setDeadTime(format(hero.getRecover() * 1000));
+                    skill.setDeadTime(Math.round(hero.getRecover()));
                 } else if (hero.getCooldown() > 0) {
-                    skill.setCoolTime(format(hero.getCooldown() * 1000));
+                    skill.setCoolTime(Math.round(hero.getCooldown()));
                 }
             });
-        }
+        };
         this.onHeroDead = function (_hero) {
             this.refreshSkillState();
-        }
+        };
         this.onHeroRecover = function (hero) {
             this.refreshSkillState();
-        }
+        };
 
         this.refreshSkillState();
         this.scheduleUpdate();
@@ -911,7 +885,8 @@ var EquipListMenu = BattleMenu.extend({
                 equipObject.equip.upgrade(hero, price);
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);
-                PlayerData.refreshGlobeProps();
+                PlayerData.refreshAllHerosProps();
+                //PlayerData.refreshGlobeProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
             });
         }
@@ -1044,6 +1019,7 @@ var EquipListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventhero=event.getUserData();
                 if(eventhero.getId()===hero.getId()){
+                    console.log(hero.getLife());
                     dps_text.setString(parseInt(hero.getLife()));
                 }
             });
@@ -1133,9 +1109,11 @@ var EquipListMenu = BattleMenu.extend({
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
                     if (equip.getType() > 0) {
+                        PlayerData.refreshAllHerosProps();
                         PlayerData.refreshGlobeProps();
                         customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
                     } else {
+                        hero.refreshProps();
                         customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
                     }
                     refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());

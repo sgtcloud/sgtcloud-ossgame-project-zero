@@ -387,6 +387,11 @@ var PlayerData = {
         }
     }
     ,
+    refreshAllHerosProps:function(){
+        for (var i in this.heroes){
+            this.heroes[i].refreshProps();
+        }
+    },
     getCurrentRanksByType: function (leaderId, callback) {
         if (sgt && cc.isObject(sgt.context.playerData)) {
             SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
