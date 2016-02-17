@@ -29,8 +29,8 @@
             "Property": "Scale",
             "Frames": [
               {
-                "X": 0.5,
-                "Y": 0.5,
+                "X": 1.0,
+                "Y": 1.0,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -105,8 +105,8 @@
               "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
