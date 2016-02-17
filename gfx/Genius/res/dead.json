@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 2,
+        "Duration": 0,
         "Speed": 1.0,
         "Timelines": [
           {
@@ -46,21 +46,11 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "dead/dead01/dead01.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "dead/dead01/dead02.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -89,7 +79,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 2,
+          "EndIndex": 1,
           "Name": "dead",
           "ctype": "AnimationInfoData"
         }
@@ -99,9 +89,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "dead/dead01/dead01.png",
-              "Plist": ""
+              "Plist": "other.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -128,14 +118,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -82.0,
-            "RightMargin": -82.0,
-            "TopMargin": -131.0,
+            "LeftMargin": -21.5,
+            "RightMargin": -21.5,
+            "TopMargin": -53.0,
             "Tag": 12,
             "ActionTag": -226096642,
             "Size": {
-              "X": 164.0,
-              "Y": 131.0
+              "X": 43.0,
+              "Y": 53.0
             },
             "Name": "dead",
             "ctype": "SpriteObjectData"
@@ -149,8 +139,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "dead/dead01/dead01.png",
-        "dead/dead01/dead02.png"
+        "other.plist",
+        "other.png"
       ],
       "ctype": "GameFileData"
     }

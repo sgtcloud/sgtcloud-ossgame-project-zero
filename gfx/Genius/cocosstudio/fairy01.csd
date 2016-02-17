@@ -37,34 +37,34 @@
         </Timeline>
         <Timeline ActionTag="1111306293" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die01.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die01.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die02.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die02.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die03.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die03.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die04.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die04.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run01.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run01.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run02.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run02.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run03.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run03.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run04.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run04.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run05.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run05.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run06.png" Plist="fairy01.plist" />
+            <TextureFile Type="MarkedSubImage" Path="fairy/fairy01/fairy01_run06.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -87,7 +87,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die01.png" Plist="fairy01.plist" />
+            <FileData Type="MarkedSubImage" Path="fairy/fairy01/fairy01_die01.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
