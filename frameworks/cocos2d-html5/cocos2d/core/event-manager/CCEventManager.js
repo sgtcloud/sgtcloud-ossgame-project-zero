@@ -560,6 +560,7 @@ cc.eventManager = /** @lends cc.eventManager# */{
             for (j = 0; j < sceneGraphPriorityListeners.length; j++) {
                 selListener = sceneGraphPriorityListeners[j];
                 if (selListener.isEnabled() && !selListener._isPaused() && selListener._isRegistered() && onEvent(selListener, eventOrArgs)) {
+                    cc.log("====================="+selListener._node._name);
                     shouldStopPropagation = true;
                     break;
                 }

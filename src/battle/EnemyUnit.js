@@ -66,7 +66,7 @@ var EnemyUnit = BattleUnit.extend({
     ctor: function (battle, enemy) {
         this._super(battle);
         this.enemy = enemy;
-        this.initSprite(this.enemy.getFile(), 'enemy');
+        this.initSprite(res[this.enemy.getFile()], 'enemy');
         this.life = this.getMaxLife();
         this.setScale(-1, 1);
         this.reset();
