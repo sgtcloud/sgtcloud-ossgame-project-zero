@@ -98,7 +98,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "chest/chest04/chest04_close01.png",
+              "Path": "chest/chest04/chest04_open04.png",
               "Plist": "chest04.plist"
             },
             "BlendFunc": {
@@ -127,10 +127,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -23.0,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
+            "LeftMargin": -68.5,
+            "RightMargin": -68.5,
+            "TopMargin": -56.5,
+            "BottomMargin": -56.5,
             "Tag": 26,
             "ActionTag": -1092918593,
             "Size": {

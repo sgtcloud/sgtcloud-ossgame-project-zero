@@ -90,8 +90,8 @@ var BattleField = cc.Class.extend({
 
     ctor: function (node) {
         this.container = node;
-        this.heroSprites = new SpriteGroup();
-        this.enemySprites = new SpriteGroup();
+        this.heroUnits = new SpriteGroup();
+        this.enemyUnits = new SpriteGroup();
         this.background = new cc.Sprite();
         this.background.setAnchorPoint(cc.p(0, 0));
 
@@ -145,13 +145,13 @@ var BattleField = cc.Class.extend({
         var MAX_POS = 8;
         var i = 0;
         for (i = 1; i < MAX_POS; i++) {
-            this.heroPos[i - 1] = this.container.convertToNodeSpace(spritesLayer.getChildByName('hero' + i).getPosition());
+            this.heroPos[i - 1] = spritesLayer.getChildByName('hero' + i);
         }
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
         for (i = 1; i < MAX_POS; i++) {
-            this.enemyPos[i - 1] = this.container.convertToNodeSpace(spritesLayer.getChildByName('enemy' + i).getPosition());
+            this.enemyPos[i - 1] = spritesLayer.getChildByName('enemy' + i);
         }
     },
 
@@ -175,8 +175,8 @@ var BattleField = cc.Class.extend({
     }
     ,
     updateEnemyLife: function () {
-        var max = this.enemySprites.getMaxLife();
-        var life = Math.floor(this.enemySprites.getLife());
+        var max = this.enemyUnits.getMaxLife();
+        var life = Math.floor(this.enemyUnits.getLife());
         customEventHelper.sendEvent(EVENT.UPDATE_ENEMY_LIFE, {max: max, life: life});
     },
 
@@ -199,7 +199,10 @@ var BattleField = cc.Class.extend({
             this.totalSprites++;
             order = this.totalSprites;
         }
-        this.container.addChild(sprite, 1000 + order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
+        this.container.addChild(sprite, order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
+        //var orderText = new ccui.Text("" + sprite.getLocalZOrder());
+        //orderText.setPosition(sprite.getPosition());
+        //this.container.addChild(orderText);
     },
 
     addSpriteRelatedNode: function (sprite, node, offset) {
@@ -217,64 +220,69 @@ var BattleField = cc.Class.extend({
     addHeroIntoBattle: function (id) {
         var data = PlayerData.getHeroById(id);
         var hero = new HeroUnit(this, data);
-        this.heroSprites.push(hero);
-        hero.setPosition(this.heroPos[this.standHeroPosNum]);
-        this.addSprite(hero);
+        this.heroUnits.push(hero);
+        hero.setPosition(this.heroPos[this.standHeroPosNum].getPosition());
+        // 每个精灵node位置的tag当成zorder使用
+        this.addSprite(hero, this.heroPos[this.standHeroPosNum].getTag());
         hero.ready = true;
         this.standHeroPosNum++;
     },
 
     initBattleEnemies: function (stage) {
-        this.enemySprites.clear();
+        this.enemyUnits.clear();
         var enemiesData;
         if (stage.isBossBattle()) {
             enemiesData = stage.getBossData();
         } else {
             enemiesData = stage.getRandomEnemiesData();
         }
+        this.addEnemyIntoBattle(enemiesData, stage.isBossBattle());
+    },
 
+    addEnemyIntoBattle: function (enemiesData, bossBattle) {
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
-            if (stage.isBossBattle()) {
+            if (bossBattle) {
                 enemy.setScale(-1.5, 1.5);
             }
-            this.enemySprites.push(enemy);
-            var startPos = cc.p(this.container.x + this.container.width, this.container.y + this.container.height * 3 / 4);
+            this.enemyUnits.push(enemy);
+            var startPos = cc.p(this.container.width, this.container.height * 3 / 4);
             enemy.setPosition(startPos);
-            this.addSprite(enemy, enemiesData.length - i);
-            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i], 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2), cc.callFunc(function () {
+            this.addSprite(enemy, this.enemyPos[i].getTag());
+            enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i].getPosition(), 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2), cc.callFunc(function () {
+                cc.log(this.getPosition());
                 this.ready = true;
             }, enemy)));
         }
     },
 
     findNextEnemy: function () {
-        return this.enemySprites.findFirstAlive();
+        return this.enemyUnits.findFirstAlive();
     },
 
     getAllEnemies: function () {
-        return this.enemySprites;
+        return this.enemyUnits;
     },
 
     getAllHeroes: function () {
-        return this.heroSprites;
+        return this.heroUnits;
     },
 
     findRandomHero: function () {
-        return this.heroSprites.findRandomAlive();
+        return this.heroUnits.findRandomAlive();
     },
 
     checkBattleWin: function () {
-        return !this.enemySprites.findFirstAlive();
+        return !this.enemyUnits.findFirstAlive();
     },
 
     checkPlayerLost: function () {
-        return !this.heroSprites.findFirstAlive();
+        return !this.heroUnits.findFirstAlive();
     },
 
     foreachHeroSprite: function (callback) {
-        this.heroSprites.foreach(callback);
+        this.heroUnits.foreach(callback);
     },
 
     initBattle: function (stage) {
