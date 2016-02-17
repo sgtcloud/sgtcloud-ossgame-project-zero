@@ -1,98 +1,130 @@
 [
   {
-    "skill_id": "s10107",
-    "level": 2,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10007",
+      "level": 2,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10107",
-    "level": 3,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10007",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10107",
-    "level": 4,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10007",
+      "level": 4,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10103",
-    "level": 2,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10003",
+      "level": 2,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10103",
-    "level": 3,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10003",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10103",
-    "level": 4,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10003",
+      "level": 4,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10106",
-    "level": 2,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10106",
+      "level": 2,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10106",
-    "level": 3,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10106",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10106",
-    "level": 4,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10106",
+      "level": 4,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10105",
-    "level": 2,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10105",
+      "level": 2,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10105",
-    "level": 3,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10105",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "s10105",
-    "level": 4,
-    "weight": 4,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "s10105",
+      "level": 4,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
   },
   {
-    "skill_id": "gold",
-    "level": 3,
-    "weight": 13,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "gold",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 13
   },
   {
-    "skill_id": "gold",
-    "level": 5,
-    "weight": 13,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "gold",
+      "level": 5,
+      "chestStyle": "chest01.json"
+    },
+    "w": 13
   },
   {
-    "skill_id": "gold",
-    "level": 7,
-    "weight": 13,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "gold",
+      "level": 7,
+      "chestStyle": "chest01.json"
+    },
+    "w": 13
   },
   {
-    "skill_id": "gold",
-    "level": 10,
-    "weight": 13,
-    "chestStyle": "chest01.json"
+    "f": {
+      "skill_id": "gold",
+      "level": 10,
+      "chestStyle": "chest01.json"
+    },
+    "w": 13
   }
 ]

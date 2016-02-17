@@ -16,7 +16,6 @@
         "Children": [
           {
             "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
               "G": 200
@@ -29,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -50,23 +51,64 @@
               "Y": 1.0
             },
             "Tag": 58,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/tips.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 180,
+                "Scale9Height": 30,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 1.0
+                },
+                "RightMargin": 180.0,
+                "Tag": 40,
+                "ActionTag": -138313478,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 30.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
             "ActionTag": -1872793719,
             "Size": {
-              "X": 320.0,
-              "Y": 56.0
+              "X": 180.0,
+              "Y": 30.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 320.0,
-          "Y": 56.0
+          "X": 180.0,
+          "Y": 30.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
-      "UsedResources": [],
+      "UsedResources": [
+        "mainUI/tips.png"
+      ],
       "ctype": "GameFileData"
     }
   },
