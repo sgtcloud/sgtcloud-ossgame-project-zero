@@ -40,7 +40,7 @@
 			<key>fairy/fairy01/fairy01_die04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,506},{44,30}}</string>
+				<string>{{0,559},{44,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -114,24 +114,35 @@
 				<key>sourceSize</key>
 				<string>{57,59}</string>
 			</dict>
+			<key>dead/dead01/dead01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,506},{43,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{43,53}</string>
+			</dict>
 		</dict>
 		<key>metadata</key>
 		<dict>
 			<key>format</key>
 			<integer>2</integer>
 			<key>textureFileName</key>
-			<string>fairy01.png</string>
+			<string>other.png</string>
 			<key>realTextureFileName</key>
-			<string>fairy01.png</string>
+			<string>other.png</string>
 			<key>size</key>
-			<string>{124,550}</string>
+			<string>{124,603}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
 			<integer>124</integer>
 			<key>height</key>
-			<integer>550</integer>
+			<integer>603</integer>
 		</dict>
 	</dict>
 </plist>

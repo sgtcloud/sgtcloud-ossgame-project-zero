@@ -768,7 +768,7 @@
             <Image Name="fairy01_run04.png" />
             <Image Name="fairy01_run05.png" />
             <Image Name="fairy01_run06.png" />
-            <PlistImageFolder Image="fairy01.png" PListFile="fairy01.plist" Name=".fairy01_PList.Dir">
+            <PlistImageFolder Image="other.png" PListFile="other.plist" Name=".other_PList.Dir">
               <PlistImageFile Name="fairy_fairy01_fairy01_die01.png" Key="fairy/fairy01/fairy01_die01.png" />
               <PlistImageFile Name="fairy_fairy01_fairy01_die02.png" Key="fairy/fairy01/fairy01_die02.png" />
               <PlistImageFile Name="fairy_fairy01_fairy01_die03.png" Key="fairy/fairy01/fairy01_die03.png" />
@@ -779,6 +779,7 @@
               <PlistImageFile Name="fairy_fairy01_fairy01_run04.png" Key="fairy/fairy01/fairy01_run04.png" />
               <PlistImageFile Name="fairy_fairy01_fairy01_run05.png" Key="fairy/fairy01/fairy01_run05.png" />
               <PlistImageFile Name="fairy_fairy01_fairy01_run06.png" Key="fairy/fairy01/fairy01_run06.png" />
+              <PlistImageFile Name="dead_dead01_dead01.png" Key="dead/dead01/dead01.png" />
             </PlistImageFolder>
           </Folder>
         </Folder>
@@ -798,7 +799,6 @@
         <Project Name="enemy1005.csd" Type="Node" />
         <PlistInfo Name="enemy1005.csi" Type="Plist" />
         <Project Name="fairy01.csd" Type="Node" />
-        <PlistInfo Name="fairy01.csi" Type="Plist" />
         <Project Name="gold02.csd" Type="Node" />
         <PlistInfo Name="gold02.csi" Type="Plist" />
         <Project Name="gold03.csd" Type="Node" />
@@ -1013,10 +1013,10 @@
         <Folder Name="dead">
           <Folder Name="dead01">
             <Image Name="dead01.png" />
-            <Image Name="dead02.png" />
           </Folder>
         </Folder>
         <Project Name="dead.csd" Type="Node" />
+        <PlistInfo Name="other.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
