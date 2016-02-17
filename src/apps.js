@@ -18,56 +18,136 @@ var CONSTS = {
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 10,
-    "click_chest_random_events": [{
-        "f": {
-            "skill_id": "s10008",
-            "level": 2,
-            "chestStyle": "chest01.json"
+    "click_chest_random_events": [
+        {
+            "f": {
+                "skill_id": "s10007",
+                "level": 2,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 50
-    }, {
-        "f": {
-            "skill_id": "s10007",
-            "level": 3,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10007",
+                "level": 3,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 4
-    }, {
-        "f": {
-            "skill_id": "s10007",
-            "level": 4,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10007",
+                "level": 4,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 3
-    }, {
-        "f": {
-            "skill_id": "s10007",
-            "level": 5,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10003",
+                "level": 2,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 2
-    }, {
-        "f": {
-            "skill_id": "s10008",
-            "level": 2,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10003",
+                "level": 3,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 1
-    }, {
-        "f": {
-            "skill_id": "s10001",
-            "level": 3,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10003",
+                "level": 4,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 4
-    }, {
-        "f": {
-            "skill_id": "gold",
-            "level": 2,
-            "chestStyle": "chest01.json"
+        {
+            "f": {
+                "skill_id": "s10106",
+                "level": 2,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
         },
-        "w": 6
-    }]
+        {
+            "f": {
+                "skill_id": "s10106",
+                "level": 3,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
+        },
+        {
+            "f": {
+                "skill_id": "s10106",
+                "level": 4,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
+        },
+        {
+            "f": {
+                "skill_id": "s10105",
+                "level": 2,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
+        },
+        {
+            "f": {
+                "skill_id": "s10105",
+                "level": 3,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
+        },
+        {
+            "f": {
+                "skill_id": "s10105",
+                "level": 4,
+                "chestStyle": "chest01.json"
+            },
+            "w": 4
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 3,
+                "chestStyle": "chest01.json"
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 5,
+                "chestStyle": "chest01.json"
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 7,
+                "chestStyle": "chest01.json"
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 10,
+                "chestStyle": "chest01.json"
+            },
+            "w": 13
+        }
+    ]
 };
 
 //为了显示CD和复活的时候显示的格式
@@ -274,20 +354,22 @@ function bindTouchEventListener(listener, target) {
 
     var touchDownEventListener = cc.EventListener.create({
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
-        swallowTouches: true,
+        swallowTouches: false,
         onTouchBegan: function (touch, event) {
+            //cc.log("touch:" + JSON.stringify(touch));
+            //cc.log("event:" + event.getCurrentTarget()._name);
             var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();
             var rect = cc.rect(0, 0, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
                 //cc.log(locationInNode.x + " " + locationInNode.y);
-                console.log('name:'+target.getName())
                 return listener(touch, event);
             }
             return false;
         },
         onTouchEnd: function (touch, event) {
+            cc.log("onTouchEnd");
             return false;
         }
     });

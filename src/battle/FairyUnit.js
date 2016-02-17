@@ -1,20 +1,10 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var FairyUnit = cc.Node.extend({
+var FairyUnit = Unit.extend({
     ctor: function () {
         this._super();
-        var json = ccs.load(res.fairy01_json);
-        this.node = json.node.getChildByName("fairy01");
-        this.node.removeFromParent();
-        this.animation = json.action;
-        this.animationState = 'run';
-        {
-            //去除CCS导出文件位移会自带缓动效果的问题
-            var timelines = this.animation.getTimelines();
-            removeCCSAnimationDefaultTween(timelines);
-        }
-        this.node.runAction(this.animation);
+        this.initSprite(res.fairy01_json, "fairy01");
 
         this.playAnimation("run", true);
         var random = getRandomInt(0, 2);
@@ -22,14 +12,14 @@ var FairyUnit = cc.Node.extend({
         //this.setContentSize(100, 100);
         //var self = this;
         bindTouchEventListener(function () {
-            if (this.animationState === 'run') {
+            if (!this.isDead()) {
                 cc.log("点中精灵");
                 this.stopAllActions();
                 this.playAnimation("die", false);
                 this.onDead(this.getPosition());
             }
             return false;
-        }.bind(this), this.node);
+        }.bind(this), this);
         /*fairy.bindClickFairyEvent = function () {
          var listener = cc.EventListener.create({
          event: cc.EventListener.TOUCH_ONE_BY_ONE,
@@ -55,11 +45,11 @@ var FairyUnit = cc.Node.extend({
          cc.eventManager.addListener(listener, fairy);
          };
          fairy.bindClickFairyEvent();*/
-        this.addChild(this.node);
     },
-    playAnimation: function (name, flag) {
-        this.animation.play(name, flag);
+    isDead: function () {
+        return this.dead;
     },
+
     initFly: function (type) {
 
         var move1 = cc.moveTo(4, cc.p(0, 40));
@@ -74,7 +64,7 @@ var FairyUnit = cc.Node.extend({
         }, this);
         var removeNode = cc.callFunc(function () {
             customEventHelper.sendEvent(EVENT.RESET_FAIRY_COUNTDOWN);
-            this.removeFromParent(true);
+            this.removeFromParent();
         }, this);
         var dropMove;
         if (type == 1) {
@@ -89,7 +79,7 @@ var FairyUnit = cc.Node.extend({
         this.runAction(this.sequence);
     },
     onDead: function (position) {
-        this.animationState = 'die';
+        this.dead = true;
         var a = cc.delayTime(0.5);
         var b = cc.fadeTo(1.0, 0);
         //var self = this;
@@ -98,7 +88,7 @@ var FairyUnit = cc.Node.extend({
         }.bind(this), this), a, b, cc.callFunc(function () {
             player.statistics.total_fairy += 1;
             customEventHelper.sendEvent(EVENT.RESET_FAIRY_COUNTDOWN);
-            this.removeFromParent(true);
+            this.removeFromParent();
         }.bind(this), this)));
     },
     createChest: function (position) {

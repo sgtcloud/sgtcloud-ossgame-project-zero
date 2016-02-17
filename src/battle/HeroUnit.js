@@ -88,6 +88,7 @@ var HeroUnit = BattleUnit.extend({
         this.stopAllActions();
         this.playAnimation("die", false, function () {
             this.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(function () {
+                this.setVisible(false);
                 var dropHeight = 500;
                 var dropMove = cc.jumpBy(0.2, cc.p(0, -dropHeight), 0, 1);
                 var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 3);
@@ -106,6 +107,7 @@ var HeroUnit = BattleUnit.extend({
     },
 //复活时被调用的
     onRevive: function () {
+        this.setVisible(true);
         this.tombstone.setVisible(false);
         this.tombstone.removeFromParent(true);
         this.reset();
@@ -140,7 +142,7 @@ var HeroUnit = BattleUnit.extend({
         this.recover = 0;
         this.cooldown = 0;
         this.hero = hero;
-        this.initSprite(this.hero.getFile(), 'hero');
+        this.initSprite(res[this.hero.getFile()], 'hero');
 
         this.initLifeBar();
         this.refreshLifeBar();

@@ -9,7 +9,7 @@ var player = {
     "first_time": "",
     // test data
     "resource": {
-        "gold": 100000,
+        "gold": 1000000,
         "gem": 10000,
         "relic": 10000,
         "wood": 100,
@@ -108,7 +108,7 @@ var player = {
                 //"技能ID":{"leve":""}
             },
             "equips": {}
-        },
+        }
     ]
 };
 var PlayerData = {

@@ -25,7 +25,7 @@ var Unit = cc.Node.extend({
     //},
 
     initSprite: function (file, nodeName) {
-        var json = ccs.load(res[file]);
+        var json = ccs.load(file);
         this.node = nodeName ? json.node.getChildByName(nodeName) : json.node;
         this.node.removeFromParent();
         this.animation = json.action;
