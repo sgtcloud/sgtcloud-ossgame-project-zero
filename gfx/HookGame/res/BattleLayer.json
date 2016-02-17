@@ -125,8 +125,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 254.5826,
-                      "Y": 516.1009
+                      "X": 202.5825,
+                      "Y": 517.0627
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -142,10 +142,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 254.5826,
-                    "RightMargin": -254.5826,
-                    "TopMargin": -516.1009,
-                    "BottomMargin": 516.1009,
+                    "LeftMargin": 202.5825,
+                    "RightMargin": -202.5825,
+                    "TopMargin": -517.0627,
+                    "BottomMargin": 517.0627,
                     "Tag": 101,
                     "ActionTag": -638236086,
                     "Size": {
@@ -158,7 +158,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 165.4453,
+                      "X": 119.4837,
                       "Y": 485.0087
                     },
                     "Scale": {
@@ -175,8 +175,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 165.4453,
-                    "RightMargin": -165.4453,
+                    "LeftMargin": 119.4837,
+                    "RightMargin": -119.4837,
                     "TopMargin": -485.0087,
                     "BottomMargin": 485.0087,
                     "Tag": 102,
@@ -191,7 +191,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 91.1213,
+                      "X": 273.1205,
                       "Y": 447.6317
                     },
                     "Scale": {
@@ -208,8 +208,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 91.1213,
-                    "RightMargin": -91.1213,
+                    "LeftMargin": 273.1205,
+                    "RightMargin": -273.1205,
                     "TopMargin": -447.6317,
                     "BottomMargin": 447.6317,
                     "Tag": 103,
@@ -224,7 +224,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 209.5312,
+                      "X": 176.532,
                       "Y": 415.3813
                     },
                     "Scale": {
@@ -241,8 +241,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 209.5312,
-                    "RightMargin": -209.5312,
+                    "LeftMargin": 176.532,
+                    "RightMargin": -176.532,
                     "TopMargin": -415.3813,
                     "BottomMargin": 415.3813,
                     "Tag": 104,
@@ -257,7 +257,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 273.8774,
+                      "X": 240.8767,
                       "Y": 371.4434
                     },
                     "Scale": {
@@ -274,8 +274,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 273.8774,
-                    "RightMargin": -273.8774,
+                    "LeftMargin": 240.8767,
+                    "RightMargin": -240.8767,
                     "TopMargin": -371.4434,
                     "BottomMargin": 371.4434,
                     "Tag": 105,
@@ -356,7 +356,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 409.5089,
+                      "X": 444.5083,
                       "Y": 517.8864
                     },
                     "Scale": {
@@ -373,8 +373,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 409.5089,
-                    "RightMargin": -409.5089,
+                    "LeftMargin": 444.5083,
+                    "RightMargin": -444.5083,
                     "TopMargin": -517.8864,
                     "BottomMargin": 517.8864,
                     "Tag": 201,
@@ -389,7 +389,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 509.4371,
+                      "X": 580.4351,
                       "Y": 484.2179
                     },
                     "Scale": {
@@ -406,8 +406,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 509.4371,
-                    "RightMargin": -509.4371,
+                    "LeftMargin": 580.4351,
+                    "RightMargin": -580.4351,
                     "TopMargin": -484.2179,
                     "BottomMargin": 484.2179,
                     "Tag": 202,
@@ -422,8 +422,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 584.7875,
-                      "Y": 459.0995
+                      "X": 375.7828,
+                      "Y": 448.0994
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -439,10 +439,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 584.7875,
-                    "RightMargin": -584.7875,
-                    "TopMargin": -459.0995,
-                    "BottomMargin": 459.0995,
+                    "LeftMargin": 375.7828,
+                    "RightMargin": -375.7828,
+                    "TopMargin": -448.0994,
+                    "BottomMargin": 448.0994,
                     "Tag": 203,
                     "ActionTag": 395042090,
                     "Size": {
@@ -455,7 +455,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 451.02,
+                      "X": 479.019,
                       "Y": 421.4178
                     },
                     "Scale": {
@@ -472,8 +472,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 451.02,
-                    "RightMargin": -451.02,
+                    "LeftMargin": 479.019,
+                    "RightMargin": -479.019,
                     "TopMargin": -421.4178,
                     "BottomMargin": 421.4178,
                     "Tag": 204,
@@ -488,7 +488,7 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 382.3312,
+                      "X": 411.3306,
                       "Y": 369.148
                     },
                     "Scale": {
@@ -505,8 +505,8 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 382.3312,
-                    "RightMargin": -382.3312,
+                    "LeftMargin": 411.3306,
+                    "RightMargin": -411.3306,
                     "TopMargin": -369.148,
                     "BottomMargin": 369.148,
                     "Tag": 205,
@@ -521,8 +521,8 @@
                   {
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 496.8118,
-                      "Y": 345.1626
+                      "X": 520.8111,
+                      "Y": 345.1625
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -538,10 +538,10 @@
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 496.8118,
-                    "RightMargin": -496.8118,
-                    "TopMargin": -345.1626,
-                    "BottomMargin": 345.1626,
+                    "LeftMargin": 520.8111,
+                    "RightMargin": -520.8111,
+                    "TopMargin": -345.1625,
+                    "BottomMargin": 345.1625,
                     "Tag": 206,
                     "ActionTag": -1799389802,
                     "Size": {
