@@ -102,11 +102,12 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                 var data = e.getUserData();
                 if (that.skill.getId() === data.skillId) {
                     if (!randomBuff) {
-                        var duration = that.skill.getLevelData()['duration'];
+                        var duration = that.skill.getLevelData(data.level)['duration'];
+                        var randomSkill=new Skill(data.skillId,data.level);
                         if (duration > 0) {
-                            toggleBufflayer(duration, buildSkillBuffDesc(skill), that.skill.getIcon());
+                            toggleBufflayer(duration, buildSkillBuffDesc(randomSkill), that.skill.getIcon());
                         }
-                        customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                        customEventHelper.sendEvent(EVENT.CAST_SKILL, randomSkill);
                         randomBuff = true;
                         that.skill_icon.setColor(cc.color(90, 90, 90));
                         setTimeout(function () {
@@ -158,14 +159,11 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
-                //doCoolDown(levelData);
                 if (!(heroDead||isCoolDowning)&&randomBuff) {
                     toggleBuffTip();
                 } else {
                     tryFire(levelData);
                 }
-                //if (levelData['duration'] > 0) {
-                //}
             });
 
             customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
@@ -201,7 +199,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                 var data = event.getUserData();
                 var hero = PlayerData.getHeroById(data['id']);
                 if (hero.hasSkill(that.skill.getId())) {
-                    that.time.setString(Math.round(data['recover']));
+                    that.setCoolTime(Math.round(data['recover']));
                 }
             });
         }
@@ -225,12 +223,6 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
     this.setEnabled = function (state) {
         //this.skill_icon.setEnabled(state);
         //this.skill_icon.setBright(state);
-    }
-    this.addClickEvent = function (func) {
-        var cb = func;
-        this.skill_icon.addClickEventListener(function (event) {
-            cb(event, skill);
-        });
     }
 }
 function getHeroActivtySkillls(hero) {
