@@ -47,7 +47,7 @@ var Hero = function (heroData) {
 
 
     this.getMaxLevel = function () {
-        return data.levelDatas[data.levelDatas.length-1]['level'];
+        return data.levelDatas[data.levelDatas.length - 1]['level'];
     }
 
     this.refreshProps = function () {
@@ -138,7 +138,7 @@ var Hero = function (heroData) {
     this.getEquipData = function (i) {
         return equips[i];
     };
-    this.getEquips = function() {
+    this.getEquips = function () {
         return equips;
     }
     this.getSkillCount = function () {
@@ -164,6 +164,13 @@ var Hero = function (heroData) {
             else if (effects[j].type === "globe_" + propName + "_rate") {
                 this["globe_" + propName + "_rate"] += effects[j].value;
             }
+            /*if (!effects[j].type)continue;
+            if (this[effects[j].type] != null && this[effects[j].type] != undefined) {
+                this[effects[j].type] += effects[j].value;
+            }
+            else {
+                this[effects[j].type] = effects[j].value;
+            }*/
         }
     };
     this.calcSkillEffect = function (propName) {

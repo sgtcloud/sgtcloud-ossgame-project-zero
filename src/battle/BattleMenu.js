@@ -911,7 +911,8 @@ var EquipListMenu = BattleMenu.extend({
                 equipObject.equip.upgrade(hero, price);
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);
-                PlayerData.refreshGlobeProps();
+                PlayerData.refreshAllHerosProps();
+                //PlayerData.refreshGlobeProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
             });
         }
@@ -1044,6 +1045,7 @@ var EquipListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventhero=event.getUserData();
                 if(eventhero.getId()===hero.getId()){
+                    console.log(hero.getLife());
                     dps_text.setString(parseInt(hero.getLife()));
                 }
             });
@@ -1133,9 +1135,11 @@ var EquipListMenu = BattleMenu.extend({
                         validateResourceNotEnough(nextCost, upgradeBtn, text);
                     }
                     if (equip.getType() > 0) {
+                        PlayerData.refreshAllHerosProps();
                         PlayerData.refreshGlobeProps();
                         customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
                     } else {
+                        hero.refreshProps();
                         customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
                     }
                     refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
