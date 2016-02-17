@@ -639,81 +639,6 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 38.4434,
-                  "Y": 621.9816
-                },
-                "Scale": {
-                  "ScaleX": 0.8,
-                  "ScaleY": 0.8
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0601,
-                  "Y": 0.8405
-                },
-                "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
-                },
-                "LeftMargin": -1.5566,
-                "RightMargin": 561.5566,
-                "TopMargin": 78.0184,
-                "BottomMargin": 581.9816,
-                "Tag": 77,
-                "ActionTag": 1140666408,
-                "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
-                },
-                "Name": "pack_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
                 "ProgressInfo": 100,
                 "ImageFileData": {
                   "Type": "Normal",
@@ -1190,17 +1115,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/statistics_icon.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -1225,8 +1150,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 38.4434,
-                  "Y": 545.2233
+                  "X": 38.3339,
+                  "Y": 699.5417
                 },
                 "Scale": {
                   "ScaleX": 0.8,
@@ -1235,24 +1160,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0601,
-                  "Y": 0.7368
+                  "X": 0.0599,
+                  "Y": 0.9453
                 },
                 "PreSize": {
                   "X": 0.125,
                   "Y": 0.1081
                 },
-                "LeftMargin": -1.5566,
-                "RightMargin": 561.5566,
-                "TopMargin": 154.7767,
-                "BottomMargin": 505.2233,
-                "Tag": 199,
-                "ActionTag": 556918955,
+                "LeftMargin": -1.6661,
+                "RightMargin": 561.6661,
+                "TopMargin": 0.4583,
+                "BottomMargin": 659.5417,
+                "Tag": 40,
+                "ActionTag": 1271537567,
                 "Size": {
                   "X": 80.0,
                   "Y": 80.0
                 },
-                "Name": "reward_btn",
+                "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
               },
               {
@@ -1265,17 +1190,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -1300,8 +1225,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 38.4434,
-                  "Y": 698.7399
+                  "X": 38.3338,
+                  "Y": 617.7739
                 },
                 "Scale": {
                   "ScaleX": 0.8,
@@ -1310,24 +1235,99 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0601,
-                  "Y": 0.9442
+                  "X": 0.0599,
+                  "Y": 0.8348
                 },
                 "PreSize": {
                   "X": 0.125,
                   "Y": 0.1081
                 },
-                "LeftMargin": -1.5566,
-                "RightMargin": 561.5566,
-                "TopMargin": 1.2601,
-                "BottomMargin": 658.7399,
-                "Tag": 105,
-                "ActionTag": 460589075,
+                "LeftMargin": -1.6662,
+                "RightMargin": 561.6661,
+                "TopMargin": 82.2261,
+                "BottomMargin": 577.7739,
+                "Tag": 42,
+                "ActionTag": -423831482,
                 "Size": {
                   "X": 80.0,
                   "Y": 80.0
                 },
-                "Name": "statistics_btn",
+                "Name": "pack_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 38.3339,
+                  "Y": 536.0061
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0599,
+                  "Y": 0.7243
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": -1.6661,
+                "RightMargin": 561.6661,
+                "TopMargin": 163.9939,
+                "BottomMargin": 496.0061,
+                "Tag": 41,
+                "ActionTag": -1641535427,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "reward_btn",
                 "ctype": "ButtonObjectData"
               },
               {

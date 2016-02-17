@@ -127,7 +127,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     that.time.setString(levelData['cooldown']);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
-                        if (!heroDead) {
+                        if (!heroDead&&!randomBuff) {
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
