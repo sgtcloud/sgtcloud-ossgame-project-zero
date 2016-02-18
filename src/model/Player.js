@@ -158,7 +158,7 @@ var PlayerData = {
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
-            var save = new SgtApi.Save();
+            var save = new SgtApi.PlayerExtra();
             if (PlayerData.player.level != player.heroes[0].lv) {
                 PlayerData.player.level = player.heroes[0].lv;
                 sgt.PlayerService.update(PlayerData.player, function (result, data) {
@@ -167,10 +167,14 @@ var PlayerData = {
 
             save.content = JSON.stringify(player);
             save.playerId = player.id;
-            sgt.PlayerService.uploadSave(save, function (result, data) {
-                player.into_stage_battle_timestamp = data.lastUploadTime;
+            sgt.PlayerExtraService.updatePlayerExtraMap(save, function (result, data) {
                 console.log('上传存档：' + result + ",内容为" + data);
             });
+            sgt.RouterService.getCurrentTimestamp(function(result,data){
+                player.into_stage_battle_timestamp = data;
+                console.log('同步服务器时间：'+data);
+            })
+
         }
     }
     ,
