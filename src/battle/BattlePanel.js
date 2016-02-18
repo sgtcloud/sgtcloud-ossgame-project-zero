@@ -55,7 +55,7 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
-            this.pack_btn.runAction(cc.sequence(cc.scaleBy(0.1, 1.5), cc.scaleTo(0.1, 0.5)));
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
         var container = root.getChildByName('battle_bg');
 
@@ -122,12 +122,17 @@ var BattlePanel = cc.Node.extend({
 
         var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
         var rewards = player.not_get_reward;
+
+        offlineRewardLayerBox.getChildByName("key_text").setString(0);
+        offlineRewardLayerBox.getChildByName("gem_text").setString(0);
+        offlineRewardLayerBox.getChildByName("gold_text").setString(0);
+
         for (var key in rewards) {
             if (rewards.hasOwnProperty(key)) {
                 var tempKey = key;
                 if (key.indexOf("key") != -1) {
                     var icon = offlineRewardLayerBox.getChildByName("key");
-                    icon.loadTexture("res/materialUI/" + tempKey + ".png");
+                    icon.loadTexture("res/icon/resources_small/" + tempKey + ".png");
                     key = "key";
                 }
                 var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
