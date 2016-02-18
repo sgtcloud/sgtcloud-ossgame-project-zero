@@ -112,7 +112,7 @@ function getPlayerSave() {
             if (cc.isArray(data) && data.length > 0) {
                 var playerData = data[0];
                 PlayerData.player = playerData;
-                sgt.PlayerService.downloadSave(playerData.id, function (result, data) {
+                sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
                     if (result) {
                         if (cc.isObject(data)) {
                             PlayerData.save = data;
@@ -124,6 +124,7 @@ function getPlayerSave() {
                         quickLoginfalg = true;
                     }
                 });
+                //sgt.PlayerService.downloadSave();
             } else {
                 //未创建用户
                 //createPlayer(userId);
@@ -169,8 +170,8 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        showCover();
         initDatas();
+        showCover();
     }, this);
 };
 cc.game.run();

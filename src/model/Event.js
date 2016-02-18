@@ -125,7 +125,7 @@ var EVENT = {
     /**
      * 刷新所有英雄的属性
      */
-    ALL_HERO_REFRESH_PROPS:"ALL_HERO_REFRESH_PROPS"
+    ALL_HERO_REFRESH_PROPS: "ALL_HERO_REFRESH_PROPS",
 
 };
 
