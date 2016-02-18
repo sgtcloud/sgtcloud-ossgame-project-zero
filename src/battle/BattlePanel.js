@@ -58,7 +58,7 @@ var BattlePanel = cc.Node.extend({
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
         var container = root.getChildByName('battle_bg');
-
+        container.setTouchEnabled(false);
         this.battleField = new BattleField(container);
         this.battleField.initSpritesPositions(root.getChildByName('sprites'));
         this.battleField.initBattle(PlayerData.getStageData());
