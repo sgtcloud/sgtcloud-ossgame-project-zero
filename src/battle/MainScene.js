@@ -24,7 +24,7 @@ var MainScene = cc.Scene.extend({
         this.tabContainer.showMenuLayer('main');
 
         // floating buff tips on the top of tab container
-        var buffTip = new BuffView(res.buff_tip_json);
+        var buffTip = new BuffView();
         this.buffTip = buffTip;
         this.buffTip.setVisible(false);
         var tipHeight = this.buffTip.height;
@@ -37,28 +37,25 @@ var MainScene = cc.Scene.extend({
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
         this.battlePanel.addChild(buffListNode, 5000);
-        bindTouchEventListener(function(){return false;},this.battlePanel.buffList);
-        bindTouchEventListener(function(){return false;},buffListNode)
         var buffList = buffListNode.getChildByName('buff_list');
-        bindTouchEventListener(function(){return false;},buffList);
-        //buffList.setSwallowTouches(false);
+        buffList.setTouchEnabled(false);
         (function (w) {
-            var fadein = cc.fadeIn(1.0);
-            var fadeout = cc.fadeOut(1.0);
-            var dt = cc.delayTime(3);
-            var sq = cc.sequence(fadein, dt, fadeout);
+            var fadein = /*cc.show()*/cc.fadeIn(0.0);
+            var fadeout =/*cc.hide()*/ cc.fadeOut(0.0);
+            var dt = cc.delayTime(3.0);
+            var sq = cc.sequence(fadein,dt,fadeout);
             var __toggle_hide = 0;
             //buffTip.setVisible(true);
             function toggleBuffTip(f) {
-                if (f) {
+                //if (f) {
                     buffTip.runAction(sq);
-                } else {
-                    buffTip.setVisible(true);
-                    clearTimeout(__toggle_hide);
-                    __toggle_hide = setTimeout(function () {
-                        buffTip.setVisible(false);
-                    }, 3000);
-                }
+                //} else {
+                //    buffTip.setVisible(true);
+                //    clearTimeout(__toggle_hide);
+                //    __toggle_hide = setTimeout(function () {
+                //        buffTip.setVisible(false);
+                //    }, 3000);
+                //}
             }
 
             var buffArr = [];
