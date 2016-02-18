@@ -232,6 +232,7 @@ function openNewNameLayer(scene) {
             addPlayer(playName, function () {
                 createPlayer.removeFromParent(true);
                 //gamepopup.removeFromParent(true);
+                initGame();
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
 
             })
@@ -260,6 +261,8 @@ function showCover() {
     if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
+    }else{
+        initGame();
     }
 
     bindButtonCallback(loginBtn, function () {
@@ -270,7 +273,6 @@ function showCover() {
 
 }
 function showGame() {
-    initGame();
     cc.director.runScene(game);
 }
 
