@@ -1798,8 +1798,8 @@
           "value": 240
         },
         "unlockLevel": 2,
-        "duration": 20,
-        "cooldown": 22
+        "duration": 10,
+        "cooldown": 150
       },
       {
         "level": 2,
@@ -1812,8 +1812,8 @@
           "value": 556
         },
         "unlockLevel": 7,
-        "duration": 20,
-        "cooldown": 22
+        "duration": 15,
+        "cooldown": 150
       },
       {
         "level": 3,
@@ -1827,7 +1827,7 @@
         },
         "unlockLevel": 12,
         "duration": 20,
-        "cooldown": 22
+        "cooldown": 150
       },
       {
         "level": 4,
@@ -1841,7 +1841,7 @@
         },
         "unlockLevel": 17,
         "duration": 25,
-        "cooldown": 27
+        "cooldown": 150
       },
       {
         "level": 5,
@@ -1855,7 +1855,7 @@
         },
         "unlockLevel": 22,
         "duration": 30,
-        "cooldown": 35
+        "cooldown": 150
       }
     ]
   },

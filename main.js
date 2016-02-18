@@ -111,11 +111,11 @@ function getPlayerSave() {
             console.log("成功获取用户角色" + data);
             if (cc.isArray(data) && data.length > 0) {
                 var playerData = data[0];
-                sgt.context.playerData.player = playerData;
+                PlayerData.player = playerData;
                 sgt.PlayerService.downloadSave(playerData.id, function (result, data) {
                     if (result) {
                         if (cc.isObject(data)) {
-                            sgt.context.playerData.save = data;
+                            PlayerData.save = data;
                             localStorage.setItem("save", data.content);
                         } else {
                             //没有存档
@@ -171,7 +171,6 @@ cc.game.onStart = function () {
         // cc.director.runScene(new HelloWorldScene());
         showCover();
         initDatas();
-        initGame();
     }, this);
 };
 cc.game.run();

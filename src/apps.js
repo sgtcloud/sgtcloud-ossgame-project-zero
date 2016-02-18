@@ -198,7 +198,7 @@ function addPlayer(playerName, callback) {
     sgt.PlayerService.create(sgtPlayer, function (result, data) {
         if (result) {
             //初始化角色存档
-            sgt.context.playerData.player = data;
+            PlayerData.player = data;
 
             console.log("创建角色result:" + result + ",data:" + data);
             return callback(true);
@@ -270,6 +270,7 @@ function showCover() {
 
 }
 function showGame() {
+    initGame();
     cc.director.runScene(game);
 }
 

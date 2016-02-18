@@ -114,17 +114,18 @@ var player = {
 var PlayerData = {
 
     statistics_res_values: ["gem", "relic", "gold"],
-
+    player: null,
+    save: null,
     init: function () {
         var save = localStorage.getItem("save");
         if (sgt) {
-            if (cc.isObject(sgt.context.playerData.save)) {
-                save = sgt.context.playerData.save.content;
+            if (cc.isObject(PlayerData.save)) {
+                save = PlayerData.save.content;
             } else {
-                player.id = sgt.context.playerData.player.id;
-                player.name = sgt.context.playerData.player.name;
-                player.vip = sgt.context.playerData.player.vip || 1;
-                player.first_time = sgt.context.playerData.player.createTime;
+                player.id = PlayerData.player.id;
+                player.name = PlayerData.player.name;
+                player.vip = PlayerData.player.vip || 1;
+                player.first_time = PlayerData.player.createTime;
             }
         }
         if (save) {
@@ -158,9 +159,9 @@ var PlayerData = {
         localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
             var save = new SgtApi.Save();
-            if (sgt.context.playerData.player.level != player.heroes[0].lv) {
-                sgt.context.playerData.player.level = player.heroes[0].lv;
-                sgt.PlayerService.update(sgt.context.playerData.player, function (result, data) {
+            if (PlayerData.player.level != player.heroes[0].lv) {
+                PlayerData.player.level = player.heroes[0].lv;
+                sgt.PlayerService.update(PlayerData.player, function (result, data) {
                 });
             }
 
@@ -393,7 +394,7 @@ var PlayerData = {
         }
     },
     getCurrentRanksByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(sgt.context.playerData)) {
+        if (sgt && cc.isObject(PlayerData.player)) {
             SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
         } else {
             return callback(false);
@@ -401,8 +402,8 @@ var PlayerData = {
     }
     ,
     getMyRankByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(sgt.context.playerData)) {
-            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, sgt.context.playerData.player.id, callback);
+        if (sgt && cc.isObject(PlayerData.player)) {
+            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.player.id, callback);
         } else {
             return callback(false);
         }

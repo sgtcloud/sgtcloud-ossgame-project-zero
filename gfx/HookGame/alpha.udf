@@ -28,5 +28,17 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="OfflineRewardLayer.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="TitleLayer.csd" />
+          <FilePathData Path="PackUI.csi" />
+          <FilePathData Path="PackLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="PackLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
