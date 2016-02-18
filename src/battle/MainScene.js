@@ -40,8 +40,8 @@ var MainScene = cc.Scene.extend({
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
         (function (w) {
-            var fadein = /*cc.show()*/cc.fadeIn(0.0);
-            var fadeout =/*cc.hide()*/ cc.fadeOut(0.0);
+            var fadein = cc.show()/*cc.fadeIn(0.0)*/;
+            var fadeout =cc.hide()/* cc.fadeOut(0.0)*/;
             var dt = cc.delayTime(3.0);
             var sq = cc.sequence(fadein,dt,fadeout);
             var __toggle_hide = 0;

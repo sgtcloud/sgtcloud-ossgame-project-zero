@@ -125,7 +125,11 @@ var EVENT = {
     /**
      * 刷新所有英雄的属性
      */
-    ALL_HERO_REFRESH_PROPS:"ALL_HERO_REFRESH_PROPS"
+    ALL_HERO_REFRESH_PROPS:"ALL_HERO_REFRESH_PROPS",
+    /**
+     * 使用道具
+     */
+    USE_GAME_ITEMS:"USE_GAME_ITEMS"
 
 };
 

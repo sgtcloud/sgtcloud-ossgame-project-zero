@@ -19,11 +19,13 @@ var BuffView = cc.Node.extend({
         buff.setVisible(true);
         this.width = buff.width;
         this.height = buff.height;
+        /*
         var children = buff.getChildren();
         for (var i in children) {
             children[i].setTouchEnabled && children[i].setTouchEnabled(false);
-        }
+        }*/
         this.addChild(buff);
+        cc.eventManager.pauseTarget(this,true);
     }
 });
 
