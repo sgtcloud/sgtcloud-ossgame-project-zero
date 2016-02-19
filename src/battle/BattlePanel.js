@@ -42,8 +42,12 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
         this.loadRewardBtn();
 
+        Loot.prototype.getPackPosition = function () {
+            return this.pack_btn.convertToWorldSpace(this.pack_btn.getPosition());
+        }.bind(this);
 
         this.pack_btn = root.getChildByName('pack_btn');
+        this.pack_btn.setLocalZOrder(1);
         bindButtonCallback(this.pack_btn, function () {
             var packUnit = new PackUnit();
             var gamePopup = new GamePopup(packUnit, cc.p(320, 580), false);
@@ -54,10 +58,20 @@ var BattlePanel = cc.Node.extend({
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
 
+        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
         var container = root.getChildByName('battle_bg');
         container.setTouchEnabled(false);
         this.battleField = new BattleField(container);
         this.battleField.initSpritesPositions(root.getChildByName('sprites'));
+        this.disableBossBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 
         Loot.prototype.getPackPosition = function () {

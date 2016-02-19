@@ -20,6 +20,7 @@ var TopPanel = cc.Node.extend({
         this.goldBtn = pane.getChildByName('getGold_btn');
         bindButtonCallback(this.goldBtn, function () {
             game.tabContainer.showMenuLayer("shop");
+            game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
         });
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());

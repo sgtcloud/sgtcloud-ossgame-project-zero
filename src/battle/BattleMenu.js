@@ -24,8 +24,7 @@ var BattleMenu = cc.Node.extend({
     }
 });
 //UI上显示的技能ICON
-var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
-    var root = template.clone();
+var SkillIcon = function (root, index, skillsBox, tabPanel) {
     this.root = root;
     var x = root.width
     var y = root.height;
@@ -47,10 +46,6 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
     this.durationText.setVisible(false);
     var isCoolDowning = false;
     var heroDead = false;
-    //this.button.addClickEventListener(function(){
-    //    console.log('触发主动技能：'+skill);
-    //    customEventHelper.sendEvent(EVENT.CAST_SKILL,skill);
-    //});
     this.skill_icon.setTouchEnabled(true);
     skillsBox.addChild(this.root);
     this.setVisible = function (visit) {
@@ -84,7 +79,6 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
         if (skill) {
             this.skill = skill;
             var that = this;
-            //var buffHeight=skillPanel.height+tabPanel.height;
             this.skill_icon.loadTexture("res/icon/skills/" + skill.getIcon());
             if (this.skill.getLv() > 0) {
                 this.root.setVisible(true);
@@ -103,7 +97,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                 if (that.skill.getId() === data.skillId) {
                     if (!randomBuff) {
                         var duration = that.skill.getLevelData(data.level)['duration'];
-                        var randomSkill=new Skill(data.skillId,data.level);
+                        var randomSkill = new Skill(data.skillId, data.level);
                         if (duration > 0) {
                             toggleBufflayer(duration, buildSkillBuffDesc(randomSkill), that.skill.getIcon());
                         }
@@ -111,7 +105,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                         randomBuff = true;
                         that.skill_icon.setColor(cc.color(90, 90, 90));
                         setTimeout(function () {
-                            if(!(heroDead||isCoolDowning))
+                            if (!(heroDead || isCoolDowning))
                                 that.skill_icon.setColor(cc.color(255, 255, 255));
                             randomBuff = false;
                         }, duration * 1000);
@@ -128,7 +122,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     that.time.setString(levelData['cooldown']);
                     that.skill_icon.setColor(cc.color(90, 90, 90));
                     doSchedule(levelData['cooldown'] - 1, that.time, function () {
-                        if (!heroDead&&!randomBuff) {
+                        if (!heroDead && !randomBuff) {
                             that.skill_icon.setColor(cc.color(255, 255, 255));
                         }
                         that.cooldownText.isVisible() && that.cooldownText.setVisible(false);
@@ -146,7 +140,9 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
                     console.log('触发主动技能：' + that.skill.getType() + ",icon:" + that.skill.getIcon());
                     if (levelData['duration'] > 0) {
                         randomBuff = true;
-                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(),function(){ randomBuff = false;});
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(), function () {
+                            randomBuff = false;
+                        });
                     }
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
@@ -159,7 +155,7 @@ var SkillIcon = function (skillPanel, template, index, skillsBox, tabPanel) {
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
-                if (!(heroDead||isCoolDowning)&&randomBuff) {
+                if (!(heroDead || isCoolDowning) && randomBuff) {
                     toggleBuffTip();
                 } else {
                     tryFire(levelData);
@@ -235,35 +231,192 @@ function getHeroActivtySkillls(hero) {
     }
     return result;
 }
+
+var BloodBox = function (root) {
+    this.root = root.getChildByName('blood_box');
+    this.init();
+}
+BloodBox.prototype.init = function () {
+    var smallNum = 10;
+    var middleNum = 10;
+    var largeNum = 10;
+    this.smallBtn = this.root.getChildByName('small_btn');
+    this.smallText = this.root.getChildByName('small_text');
+    this.middleBtn = this.root.getChildByName('middle_btn');
+    this.middleText = this.root.getChildByName('middle_text');
+    this.largeBtn = this.root.getChildByName('large_btn');
+    this.largeText = this.root.getChildByName('large_text');
+
+    this.smallText.ignoreContentAdaptWithSize(true);
+    this.middleText.ignoreContentAdaptWithSize(true);
+    this.largeText.ignoreContentAdaptWithSize(true);
+
+    var updateNum = function (text, num, btn) {
+        text.setString(num);
+        if (num <= 0) {
+            btn.setEnabled(false);
+            btn.setBright(false);
+        }
+    }
+
+
+    var i = 0;
+    var drawMaskLayer = function (root, node) {
+        /*
+         var drawNode = new cc.DrawNode();
+         this.addChild(drawNode);              //加入Layer层
+         drawNode.clear()                      //清除节点缓存
+         drawNode.ctor()                       //构造函数
+
+         drawNode.drawCardinalSpline(config, tension, segments, lineWidth, color)    //曲线
+         //参数说明:
+         //congfig:点数组
+         //tension:张力
+         //segments:段落
+         //lineWidth:线条宽度
+         //color:颜色
+
+         drawNode.drawCatmullRom(points, segments, lineWidth, color)   //同上
+
+         drawNode.drawCircle(center, radius, angle, segments, drawLineToCenter, lineWidth, color)   //画圆
+         //参数说明: 原点，半径，弧度，分段(越大越接近圆)，原点到弧度的线(boolean)，线条宽度，颜色
+
+         drawNode.drawCubicBezier(origin, control1, control2, destination, segments, lineWidth, color)  //画三次贝塞尔曲线
+         //drawNode.drawCubicBezier(cc.p(s.width - 250, 40), cc.p(s.width - 70, 100), cc.p(s.width - 30, 250), cc.p(s.width - 10, s.height - 50),10,1, cc.color(0, 1, 0, 1));
+         drawNode.drawQuadBezier(origin, control, destination, segments, lineWidth, color)          //画二次贝塞尔曲线 参考三次贝塞尔曲线
+         drawNode.drawDot(pos, radius, color)         //画点
+         //drawNode.drawDot(cc.p(60, 100), 20, cc.color(0.5,0.6,0,1));
+         drawNode.drawDots(points, radius, color)     //画点  points  点数组
+
+         drawNode.drawPoly(verts, fillColor, lineWidth, color)       //画多边形
+         drawNode.drawRect(origin, destination, fillColor, lineWidth, lineColor)  //画矩形
+         drawNode.drawSegment(from, to, lineWidth, color)
+         */
+
+        var drawNode = new cc.DrawNode();
+        //root.addChild(drawNode, 1000);
+        drawNode.clear()
+        drawNode.ctor();
+        var radius = Math.min(node.width, node.height) / 2 + 0.5;
+        var color = cc.color(0, 0, 0,100);
+        var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
+        //drawNode.setDrawColor(color);
+        //drawNode.drawCircle(center,radius,360, 360, true, 1, color);
+        /* var m=Math.round(radius);
+         for(var n=0;n<m;n++){
+         drawNode.drawDot(center,radius*(m-n),color);
+         }*/
+       /* for (var k = 0; k < 10; k++) {
+            //var randomRadius = getRandomInt(radius / 10, radius);
+            //drawNode.drawDot(center, randomRadius, color);
+            drawNode.drawCircle(center,radius,360, 360, false, 1, color);
+        }
+        drawNode.drawDot(center, radius, color);*/
+        drawNode.drawDot(center, radius, color);
+        drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
+        //bindTouchEventListener(function(touch,event){console.log(event.getCurrentTarget().getName());return true;},drawNode);
+        return drawNode;
+    }
+
+
+    var MaskLayer = cc.LayerColor.extend({
+        m_touchListener: null,
+        ctor: function () {
+            this._super();
+            var touchListener = {
+                event: cc.EventListener.TOUCH_ONE_BY_ONE,
+                swallowTouches: true,
+                onTouchBegan: this.onTouchBegan,
+                isTouchInside: function (owner, touch) {
+                    if (!owner || !owner.getParent()) {
+                        return false;
+                    }
+                    var touchLocation = touch.getLocation(); // Get the touch position
+                    touchLocation = owner.getParent().convertToNodeSpace(touchLocation);
+                    return cc.rectContainsPoint(owner.getBoundingBox(), touchLocation);
+                }
+            };
+            cc.eventManager.addListener(touchListener, this);
+            this.m_touchListener = touchListener;
+        },
+        onTouchBegan: function (touch, event) {
+            var target = event.getCurrentTarget();
+            return !target.isVisible() || (!this.isTouchInside(target, touch));
+        }
+    });
+
+    var that = this;
+    var initBtn = function (btn, text, num, data) {
+        btn.setEnabled(true);
+        btn.setBright(true);
+        btn.addClickEventListener(function () {
+            customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
+            updateNum(text, --num, btn);
+        });
+        var node=drawMaskLayer(that.root, btn);
+       /* var layer=new MaskLayer();
+         //that.root.addChild(layer);
+        var x=btn.getPositionX();
+        var y=btn.getPositionY();
+        var w=btn.width;
+        var h=btn.height;
+        var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
+        layer.setPosition(p);
+        layer.setColor(cc.color(0,0,0,255));
+        layer.width=w;
+        layer.height=h;
+        layer.setName(btn.getName()+'_layer')
+        //layer.init(cc.color(0,0,0,255),w,h);
+        //node.addChild(layer);
+        var clip=new cc.ClippingNode();
+        clip.setPosition(p);
+        clip.width=w+2;
+        clip.height=h+2;
+        clip.setName(btn.getName()+'_cliplayer')
+        clip.setStencil(node);
+        clip.addChild(layer,100);*/
+        //that.root.addChild(node,100);
+    };
+
+
+    updateNum(this.smallText, smallNum, this.smallBtn);
+    updateNum(this.middleText, middleNum, this.middleBtn);
+    updateNum(this.largeText, largeNum, this.largeBtn);
+
+    initBtn(this.smallBtn, this.smallText, smallNum, {id: '', name: 'small_btn', num: 1});
+    initBtn(this.middleBtn, this.middleText, middleNum, {id: '', name: 'middle_btn', num: 1});
+    initBtn(this.largeBtn, this.largeText, largeNum, {id: '', name: 'large_btn', num: 1});
+};
+
 var SkillListMenu = BattleMenu.extend({
     ctor: function (tabPanel, battlePanel) {
         var heroes = PlayerData.getHeroes();
-        //var skillBtnNum = 7
         this._super(tabPanel, res.skill_layer_json);
+        /**
+         * 初始化药品菜单
+         */
+        new BloodBox(this.root);
+
         var skills = [];
         for (var i in heroes) {
             var activitySkills = getHeroActivtySkillls(heroes[i]);
             skills.push.apply(skills, activitySkills);
         }
-        var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         var skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
         var atk_text = this.root.getChildByName('atk_text');
         var tatk_text = this.root.getChildByName('tatk_text');
         atk_text.ignoreContentAdaptWithSize(true);
         tatk_text.ignoreContentAdaptWithSize(true);
-        //atk_text.setString()
         customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK, function () {
             var totalHit = PlayerData.getTotalHit();
             var totalAttack = PlayerData.getTotalAttack();
-            cc.log("totalHit:" + totalHit);
-            cc.log("totalAttack:" + totalAttack);
             tatk_text.setString(Math.floor(totalHit));
             atk_text.setString(Math.floor(totalAttack));
         });
+        var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         for (var i = 0; i < skills.length; i++) {
-            var skillBtn = new SkillIcon(this, skillIconTemplate, i, skillsBox, tabPanel);
-            //skillBtn.setVisible(true);
+            var skillBtn = new SkillIcon(skillIconTemplate.clone(), i, skillsBox, tabPanel);
             skillBtn.bindSkillAndClickEvent(skills[i]);
             skillBtns.push(skillBtn);
         }
@@ -272,13 +425,8 @@ var SkillListMenu = BattleMenu.extend({
         }
 
         this.refreshSkillState = function () {
-            //for (var i = 0; i < skillBtnNum; i++) {
-                //skillBtns[i].setVisible(false);
-            //}
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
-                //skill.setVisible(true);
-                //skill.setEnabled(true);
                 if (hero.isDead()) {
                     skill.showDead();
                 } else {
@@ -292,14 +440,14 @@ var SkillListMenu = BattleMenu.extend({
         };
 
         this.update = function (dt) {
-            battlePanel.battleField.foreachHeroSprite(function (hero, i) {
-                var skill = skillBtns[i];
-                if (hero.isDead()) {
-                    skill.setDeadTime(Math.round(hero.getRecover()));
-                } else if (hero.getCooldown() > 0) {
-                    skill.setCoolTime(Math.round(hero.getCooldown()));
-                }
-            });
+            //battlePanel.battleField.foreachHeroSprite(function (hero, i) {
+            //    var skill = skillBtns[i];
+            //    if (hero.isDead()) {
+            //        skill.setDeadTime(Math.round(hero.getRecover()));
+            //    } else if (hero.getCooldown() > 0) {
+            //        skill.setCoolTime(Math.round(hero.getCooldown()));
+            //    }
+            //});
         };
         this.onHeroDead = function (_hero) {
             this.refreshSkillState();
@@ -307,7 +455,6 @@ var SkillListMenu = BattleMenu.extend({
         this.onHeroRecover = function (hero) {
             this.refreshSkillState();
         };
-
         this.refreshSkillState();
         this.scheduleUpdate();
     }
@@ -802,7 +949,9 @@ var HeroListMenu = BattleMenu.extend({
                         customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                             var hero = event.getUserData();
                             if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                               setTimeout(function(){buildHeroMenu(_hero);},100);
+                                setTimeout(function () {
+                                    buildHeroMenu(_hero);
+                                }, 100);
                             }
                         });
                     })(heroData)
@@ -1017,8 +1166,8 @@ var EquipListMenu = BattleMenu.extend({
                 dps_text.setString(parseInt(hero.getLife()));
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
-                var eventhero=event.getUserData();
-                if(eventhero.getId()===hero.getId()){
+                var eventhero = event.getUserData();
+                if (eventhero.getId() === hero.getId()) {
                     console.log(hero.getLife());
                     dps_text.setString(parseInt(hero.getLife()));
                 }
@@ -1165,7 +1314,9 @@ var EquipListMenu = BattleMenu.extend({
                         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                             var heroId = event.getUserData()['heroId'];
                             if (heroId === _hero.getId() && _hero.getLv() === 1) {
-                                setTimeout(function(){buildEquipMenuIfUnlocked(_hero, first);},300);
+                                setTimeout(function () {
+                                    buildEquipMenuIfUnlocked(_hero, first);
+                                }, 300);
                             }
                         });
                     })(heroData)

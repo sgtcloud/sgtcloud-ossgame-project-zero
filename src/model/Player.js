@@ -170,10 +170,6 @@ var PlayerData = {
             sgt.PlayerExtraService.updatePlayerExtraMap(save, function (result, data) {
                 console.log('上传存档：' + result + ",内容为" + data);
             });
-            sgt.RouterService.getCurrentTimestamp(function(result,data){
-                player.into_stage_battle_timestamp = data;
-                console.log('同步服务器时间：'+data);
-            })
 
         }
     }
@@ -269,8 +265,12 @@ var PlayerData = {
     }
     ,
     updateIntoBattleTime: function () {
-        player.into_stage_battle_timestamp = Date.parse(new Date());
-        this.updatePlayer();
+        sgt.RouterService.getCurrentTimestamp(function(result,data){
+            player.into_stage_battle_timestamp = data;
+            console.log('同步服务器时间：'+data);
+        });
+        //player.into_stage_battle_timestamp = Date.parse(new Date());
+        //this.updatePlayer();
     }
     ,
     getIntoBattleTime: function () {
