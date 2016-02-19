@@ -3,12 +3,12 @@
  */
 
 //掉落物品
-var Loot = cc.Node.extend({
+var Loot = Unit.extend({
 
     ctor: function (unit, size, bonus) {
         this._super();
-        this.initData(unit, size);
         this.bonus = bonus;
+        this.initData(unit, size);
         //this.reuse(unit, val);
     },
 
@@ -16,82 +16,70 @@ var Loot = cc.Node.extend({
         this.unit = unit;
         if (unit === "gold") {
             if (size === "little") {
-                this.lootSprite = ccs.load(res.little_gold_json).node;
-                this.action = ccs.load(res.little_gold_json).action;
+                this.initSprite(res.little_gold_json);
             } else if (size === "some") {
-                this.lootSprite = ccs.load(res.some_gold_json).node;
-                this.action = ccs.load(res.some_gold_json).action;
+                this.initSprite(res.some_gold_json);
             } else if (size === "amount") {
-                this.lootSprite = ccs.load(res.amount_gold_json).node;
-                this.action = ccs.load(res.amount_gold_json).action;
+                this.initSprite(res.amount_gold_json);
             } else if (size === "huge") {
-                this.lootSprite = ccs.load(res.huge_gold_json).node;
-                this.action = ccs.load(res.huge_gold_json).action;
+                this.initSprite(res.huge_gold_json);
             }
         } else {
-            this.lootSprite = ccs.load(res[unit + "_json"]).node;
-            this.action = ccs.load(res[unit + "_json"]).action;
+            this.initSprite(res[unit + "_json"]);
         }
-        this.lootSprite.runAction(this.action);
-        this.addChild(this.lootSprite);
-        
+        this.playAnimation("shine", true);
     },
 
-    setOpacity: function (op) {
-        if (this.lootSprite) {
-            this.lootSprite.setOpacity(op);
-        }
-    },
-
-    fire: function () {
-        var battlePanel = this.getParent();
-        if (battlePanel) {
-            var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 32 - 16);
-            this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
-            this.shine = cc.delayTime(1.0);
-            //this.disapper = cc.fadeOut(1.0);
-            var self = this;
-            this.count = cc.callFunc(function () {
-                //cc.pool.putInPool(this);
-                this.removeFromParent(true);
-                if (this.bonus) {
-                    PlayerData.updateResource([PlayerData.createResourceData(this.bonus.unit, this.bonus.value)]);
-                    if (this.bonus.unit === "gold") {
-                        customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    } else if (this.bonus.unit === "gem") {
-                        customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    } else if (this.bonus.unit === "relic") {
-                        customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    } else {
-                        customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
-                    }
-                    cc.log(this.bonus.unit + ":" + this.bonus.value);
+    onEnter: function () {
+        this._super();
+        var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 32 - 16);
+        this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
+        this.shine = cc.delayTime(1.0);
+        //this.disapper = cc.fadeOut(1.0);
+        var self = this;
+        this.count = cc.callFunc(function () {
+            //cc.pool.putInPool(this);
+            this.removeFromParent(true);
+            if (this.bonus) {
+                PlayerData.updateResource([PlayerData.createResourceData(this.bonus.unit, this.bonus.value)]);
+                if (this.bonus.unit === "gold") {
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                } else if (this.bonus.unit === "gem") {
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                } else if (this.bonus.unit === "relic") {
+                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                } else {
+                    customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 }
-            }.bind(this), this);
-            var startPos = this.getPosition();
-
-            if (this.unit === "gold") {
-                var endPosition = this.getGoldPosition() || cc.p(320, 280);
-            } else if (this.unit === "gem") {
-                var endPosition = this.getDiamondPosition() || cc.p(320, 280);
-            } else if (this.unit === "relic") {
-                var endPosition = this.getRelicPosition() || cc.p(320, 280);
-            } else if (this.unit === "key") {
-                var endPosition = this.getGoldPosition() || cc.p(320, 280);
-            } else {
-                var endPosition = this.getPackPosition() || cc.p(320, 280);
+                cc.log(this.bonus.unit + ":" + this.bonus.value);
             }
-            var curveValue = cc.p(300 + Math.random() * 40, 400 + Math.random() * 80);
-            //var curveValue =  cc.p(320, 280);
-            //var endPosition = cc.p(320, 280);
-            var movePath = [startPos,
-                curveValue,
-                endPosition];
-            this.move = cc.bezierTo(0.75, movePath);
-            this.action.play("shine", true);
-            this.moveUpAndBecomeBigger = cc.spawn(cc.moveBy(0.1, 0, 16), cc.scaleBy(0.1, 1.5));
-            this.runAction(cc.sequence(this.appear, this.shine, this.moveUpAndBecomeBigger, this.move, this.count));
-        }
+        }.bind(this), this);
+        var startPos = this.getPosition();
+
+        var endPosition = this.getPackPosition();
+
+        // use pack icon to replace all the end position
+        //if (this.unit === "gold") {
+        //    var endPosition = this.getGoldPosition() || cc.p(320, 280);
+        //} else if (this.unit === "gem") {
+        //    var endPosition = this.getDiamondPosition() || cc.p(320, 280);
+        //} else if (this.unit === "relic") {
+        //    var endPosition = this.getRelicPosition() || cc.p(320, 280);
+        //} else if (this.unit === "key") {
+        //    var endPosition = this.getGoldPosition() || cc.p(320, 280);
+        //} else {
+        //    var endPosition = this.getPackPosition() || cc.p(320, 280);
+        //}
+
+        var curveValue = cc.p(300 + Math.random() * 40, 100 + Math.random() * 80);
+        //var curveValue =  cc.p(320, 280);
+        //var endPosition = cc.p(320, 280);
+        var movePath = [startPos,
+            curveValue,
+            endPosition];
+        this.move = cc.bezierTo(0.75, movePath);
+        this.moveUpAndBecomeBigger = cc.spawn(cc.moveBy(0.1, 0, 16), cc.scaleBy(0.1, 1.5));
+        this.runAction(cc.sequence(this.appear, this.shine, this.moveUpAndBecomeBigger, this.move, this.count));
     }
 });
 
@@ -132,13 +120,13 @@ Loot.generateLoots = function (bonusSrc, pos) {
     } else {
         this.createLootSprites(lootSprites, bonus.value, null, bonus);
     }
-
-    for (var i in lootSprites) {
-        // 跨panel的移动逻辑需要添加到scene中
-        lootSprites[i].setPosition(pos);
-        cc.director.getRunningScene().addChild(lootSprites[i]);
-        lootSprites[i].fire();
+    if (pos) {
+        for (var i in lootSprites) {
+            // 跨panel的移动逻辑需要添加到scene中
+            lootSprites[i].setPosition(pos);
+        }
     }
+    return lootSprites;
 };
 Loot.createLootSprites = function (lootSprites, num, size, bonus) {
     for (var i = 0; i < num; i++) {

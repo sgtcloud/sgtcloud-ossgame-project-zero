@@ -363,36 +363,27 @@ function bindTouchEventListener(listener, target, popup) {
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
         swallowTouches: false,
         onTouchBegan: function (touch, event) {
-            cc.log("onTouchBegan");
-            //cc.log("touch:" + JSON.stringify(touch));
-            //cc.log("event:" + event.getCurrentTarget()._name);
+            //cc.log("onTouchBegan");
             var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();
             var rect = cc.rect(0, 0, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
                 //cc.log(locationInNode.x + " " + locationInNode.y);
-                listener(touch, event);
-                return false;
-            } /*else if (target.getParent() && popup) {
-                var listeners = cc.eventManager.getRegistedListeners(target.getParent());
-                event._currentTarget = target.getParent();
-                for (var i in listeners) {
-                    listeners[i].onTouchBegan(touch, event);
-                }
-            }*/
+                return listener(touch, event);
+            }
             return false;
         },
         onTouchMoved: function () {
-            cc.log("onTouchMoved");
+            //cc.log("onTouchMoved");
             return false;
         },
         onTouchCancelled: function () {
-            cc.log("onTouchCancelled");
+            //cc.log("onTouchCancelled");
             return false;
         },
         onTouchEnd: function (touch, event) {
-            cc.log("onTouchEnd");
+            //cc.log("onTouchEnd");
             return false;
         }
     });
