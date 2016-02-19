@@ -10,12 +10,13 @@ var ActiveSkill = cc.Class.extend({
     TYPE_CONTINUOUS: "TYPE_CONTINUOUS",
     shock: 0,
 
-    ctor: function (skill, battle, duration) {
+    ctor: function (skill, battle, firstCastTime) {
         //this.reuse(unit, val);
         this.skill = skill;
         this.battle = battle;
+        this.firstCastTime = firstCastTime;
         if (skill && battle) {
-            this.duration = duration || skill.getLevelData().duration;
+            this.duration = skill.getLevelData().duration;
             var effects = skill.traverseSkillEffects();
             for (var j in effects) {
                 this.effect = effects[j].type;
@@ -93,9 +94,11 @@ var ActiveSkill = cc.Class.extend({
 
     cast: function (node) {
         this.node = node;
-        if (this.targets) {
+        if (!this.firstCastTime) {
+            this.firstCastTime = new Date().getTime();
+        }
+        if (this.targets.length !== 0) {
             this.effectAnimFinishCount = 0;
-            this.skillStartTime = new Date().getTime();
             for (var i in this.targets) {
                 if (this.type !== this.TYPE_BUFF && this.targets[i]) {
                     this.runSkillEffect(node, this.targets[i].getPosition(), i, "boom");
@@ -115,14 +118,25 @@ var ActiveSkill = cc.Class.extend({
             if (this.shock > 0) {
                 customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, this.shock);
             }
+            if (this.type === this.TYPE_BUFF) {
+                this.startBuffEffect();
+                scheduleOnce(this, function () {
+                    this.onCastFinish();
+                    this.clearBuffEffect();
+                }, this.duration);
+            }
+        } else {
+            this.waitForNextCast();
         }
-        if (this.type === this.TYPE_BUFF) {
-            this.startBuffEffect();
-            scheduleOnce(this, function () {
-                this.onCastFinish();
-                this.clearBuffEffect();
-            }, this.duration);
-        }
+    },
+
+    waitForNextCast: function () {
+        schedule(this, function () {
+            this.updateTargets();
+            if (this.targets.length !== 0) {
+                this.recast();
+            }
+        }.bind(this), 0, 0.1);
     },
 
     onCastFinish: function () {
@@ -132,23 +146,15 @@ var ActiveSkill = cc.Class.extend({
         }
         if (this.type === this.TYPE_CONTINUOUS) {
             var skillEndTime = new Date().getTime();
-            var consumeTime = (skillEndTime - this.skillStartTime ) / 1000;
-            this.duration -= consumeTime;
-            if (this.duration > 0) {
-                this.updateTargets();
-                if (this.targets.length === 0) {
-                    scheduleOnce(this, function () {
-                        this.recast();
-                    }.bind(this), 1);
-                } else {
-                    this.recast();
-                }
+            var consumeTime = (skillEndTime - this.firstCastTime ) / 1000;
+            if (this.duration > consumeTime) {
+                this.waitForNextCast();
             }
         }
     },
 
     recast: function () {
-        var recast = new ActiveSkill(this.skill, this.battle, this.duration);
+        var recast = new ActiveSkill(this.skill, this.battle, this.firstCastTime);
         recast.cast(this.node);
         unschedule(this);
     },

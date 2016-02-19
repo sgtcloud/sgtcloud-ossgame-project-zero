@@ -24,7 +24,7 @@ var MainScene = cc.Scene.extend({
         this.tabContainer.showMenuLayer('main');
 
         // floating buff tips on the top of tab container
-        var buffTip = new BuffView();
+        var buffTip = new BuffView(res.buff_tip_json);
         this.buffTip = buffTip;
         this.buffTip.setVisible(false);
         var tipHeight = this.buffTip.height;

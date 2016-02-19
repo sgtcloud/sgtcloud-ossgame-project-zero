@@ -74,7 +74,6 @@ var BattlePanel = cc.Node.extend({
             this.battleField.prepareBattle(PlayerData.getStageData());
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
-            PlayerData.getStageData().leaveBossBattle();
             this.disableBossBattleTimeCounter();
         }.bind(this));
 

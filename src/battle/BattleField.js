@@ -99,10 +99,10 @@ var BattleField = cc.Class.extend({
         this.container.addChild(this.background);
 
         bindTouchEventListener(function (touch) {
-            //cc.log("点中tap");
+            cc.log("点中tap");
             var pos = this.container.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
-            return false;
+            return true;
         }.bind(this), this.container);
 
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
@@ -299,17 +299,18 @@ var BattleField = cc.Class.extend({
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
             this.generateStageLoots(stageData.getBonus());
-            customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             player.stage_battle_num = 1;
             stageData.goToNextStage();
             player.stage = stageData.getId();
+            customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             player.statistics.total_max_level += 1;
             //更新通关数据
             PlayerData.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");
             this.loadStageBackground(stageData);
         } else {
             if (stageData.couldFightBossBattle()) {
-                stageData.goToBossBattle();
+                customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
+                return;
             }
             player.stage_battle_num += 1;
         }

@@ -11,15 +11,16 @@ var FairyUnit = Unit.extend({
         this.initFly(random);
         //this.setContentSize(100, 100);
         //var self = this;
-        bindTouchEventListener(function () {
+        bindTouchEventListener(function (touch, event) {
             if (!this.isDead()) {
                 cc.log("点中精灵");
                 this.stopAllActions();
                 this.playAnimation("die", false);
                 this.onDead(this.getPosition());
+                return true;
             }
             return false;
-        }.bind(this), this);
+        }.bind(this), this, true);
         /*fairy.bindClickFairyEvent = function () {
          var listener = cc.EventListener.create({
          event: cc.EventListener.TOUCH_ONE_BY_ONE,

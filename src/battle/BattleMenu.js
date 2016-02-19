@@ -1416,11 +1416,15 @@ var ShopLayerMenu = BattleMenu.extend({
             diamondText.ignoreContentAdaptWithSize(true);
             diamondText.setString(CONSTS.money_tree_one_price);
             goldText.ignoreContentAdaptWithSize(true);
-            goldText.setString(CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio());
+            goldText.setString(PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(CONSTS.money_tree_one_price, (CONSTS.money_tree_one_price * PlayerData.getStageData().getMoneyTreeRatio()), true);
+                self.buyGold(CONSTS.money_tree_one_price, PlayerData.getStageData().getMoneyTreeRatio(), true);
             });
+
+            customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
+                goldText.setString(PlayerData.getStageData().getMoneyTreeRatio());
+            }.bind(this));
 
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
@@ -1613,7 +1617,7 @@ var RankLayerMenu = BattleMenu.extend({
         this.showRankList = function (type) {
             listView.removeAllChildren();
             PlayerData.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
-                myNumText.setString(0);
+                myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
                         listView.addChild(this.setRankView(data[i], type));
