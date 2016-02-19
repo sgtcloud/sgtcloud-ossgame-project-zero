@@ -298,7 +298,7 @@ BloodBox.prototype.init = function () {
         drawNode.clear()
         drawNode.ctor();
         var radius = Math.min(node.width, node.height) / 2 + 0.5;
-        var color = cc.color(0, 0, 0, 100);
+        var color = cc.color(0, 0, 0,100);
         var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
         //drawNode.setDrawColor(color);
         //drawNode.drawCircle(center,radius,360, 360, true, 1, color);
@@ -312,8 +312,9 @@ BloodBox.prototype.init = function () {
             drawNode.drawCircle(center,radius,360, 360, false, 1, color);
         }
         drawNode.drawDot(center, radius, color);*/
-        //drawNode.drawCircle(center,radius,360, 360, false, 1, color);
         drawNode.drawDot(center, radius, color);
+        drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
+        //bindTouchEventListener(function(touch,event){console.log(event.getCurrentTarget().getName());return true;},drawNode);
         return drawNode;
     }
 
@@ -364,12 +365,14 @@ BloodBox.prototype.init = function () {
         layer.setColor(cc.color(0,0,0,255));
         layer.width=w;
         layer.height=h;
+        layer.setName(btn.getName()+'_layer')
         //layer.init(cc.color(0,0,0,255),w,h);
         //node.addChild(layer);
         var clip=new cc.ClippingNode();
         clip.setPosition(p);
-        //clip.width=w+2;
-        //clip.height=h+2;
+        clip.width=w+2;
+        clip.height=h+2;
+        clip.setName(btn.getName()+'_cliplayer')
         clip.setStencil(node);
         clip.addChild(layer,100);*/
         that.root.addChild(node,100);
