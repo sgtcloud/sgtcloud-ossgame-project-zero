@@ -40,25 +40,44 @@ var MainScene = cc.Scene.extend({
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
         (function (w) {
-            var fadein = cc.show()/*cc.fadeIn(0.0)*/;
-            var fadeout =cc.hide()/* cc.fadeOut(0.0)*/;
-            var dt = cc.delayTime(3.0);
-            var sq = cc.sequence(fadein,dt,fadeout);
-            var __toggle_hide = 0;
-            //buffTip.setVisible(true);
-            function toggleBuffTip(f) {
-                //if (f) {
-                    buffTip.runAction(sq);
-                //} else {
-                //    buffTip.setVisible(true);
-                //    clearTimeout(__toggle_hide);
-                //    __toggle_hide = setTimeout(function () {
-                //        buffTip.setVisible(false);
-                //    }, 3000);
-                //}
+            /**
+             * 显示/隐藏 tip,默认显示3秒后隐藏
+             *
+             * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0}
+             */
+            function toggleTip(config) {
+                var fadein = cc.show()/*cc.fadeIn(0.0)*/;
+                var fadeout = cc.hide()/* cc.fadeOut(0.0)*/;
+                var dt ;
+                var beforeShow,afterHide,afterShow,delay=3.0,beforeHide,text;
+                if(config){
+                    if(cc.isObject(config)){
+                        beforeShow=config['beforeShow'];
+                        beforeHide=config['beforeHide'];
+                        afterShow=config['afterShow'];
+                        afterHide=config['afterHide'];
+                        text=config['text'];
+                        delay=config['delay']||3.0;
+                    }else if (typeof config === 'string' ){
+                        text=config;
+                    }
+                }
+                text&& buffTip.setString(text);
+                var sequence=[];
+                dt = cc.delayTime(delay);
+                beforeShow&&sequence.push(fadein)
+                sequence.push(fadein)
+                afterShow&&sequence.push(afterShow)
+                sequence.push(dt)
+                beforeHide&&sequence.push(beforeHide)
+                sequence.push(fadeout)
+                afterHide&&sequence.push(afterHide)
+                var sq = cc.sequence(sequence);
+                buffTip.runAction(sq);
             }
 
             var buffArr = [];
+
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {
@@ -69,7 +88,7 @@ var MainScene = cc.Scene.extend({
                 }
             }
 
-            function toggleBufflayer(time, text, icon,cb) {
+            function toggleBufflayer(time, text, icon, cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
                 buffLayer.setText(text);
@@ -90,13 +109,13 @@ var MainScene = cc.Scene.extend({
                         refeshBuffLayer();
                         this.unschedule(this.__instanceId);
                         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
-                        if(typeof cb==='function')cb();
+                        if (typeof cb === 'function')cb();
                         this.cleanup();
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
 
-            w.toggleBuffTip = toggleBuffTip;
+            w.toggleTip = toggleTip;
             w.toggleBufflayer = toggleBufflayer;
         })(window);
     },
