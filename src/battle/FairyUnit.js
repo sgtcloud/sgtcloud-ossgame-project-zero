@@ -120,7 +120,7 @@ var FairyUnit = Unit.extend({
         this.chestUnit.runAction(cc.sequence(appear, cc.delayTime(1), delay, removeNode));
     },
     generateLoot: function (rate) {
-        var pos = this.getPosition();
+        var pos = this.chestUnit.parent.convertToWorldSpace(this.chestUnit.getPosition());//this.getPosition();
         var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * rate);
         Loot.generateLoots({
             "unit": "gold",

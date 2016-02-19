@@ -57,10 +57,20 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
+        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
+            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+        }.bind(this));
         var container = root.getChildByName('battle_bg');
 
         this.battleField = new BattleField(container);
         this.battleField.initSpritesPositions(root.getChildByName('sprites'));
+        this.disableBossBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {

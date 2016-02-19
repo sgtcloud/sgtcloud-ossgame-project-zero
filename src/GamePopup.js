@@ -78,11 +78,11 @@ var GamePopup = cc.Layer.extend({
         //this.onExit();
     },
 
-    onExit: function()
+    /*onExit: function()
     {
         this._super();
         //移除触摸监听
         //cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE, true);
         cc.eventManager.removeListeners(this._listener, true);
-    }
+    }*/
 });

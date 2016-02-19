@@ -99,7 +99,7 @@ var BattleField = cc.Class.extend({
         this.container.addChild(this.background);
 
         bindTouchEventListener(function (touch) {
-            cc.log("点中tap");
+            //cc.log("点中tap");
             var pos = this.container.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
             return true;
@@ -324,6 +324,8 @@ var BattleField = cc.Class.extend({
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
         }.bind(this), 1);
+        //同步数据到财富排行 由于资源命名问题 暂时还使用pvp_rank
+        PlayerData.updateLeaderBoardScore(player.statistics.total_gold, "pvp_rank");
         PlayerData.updatePlayer();
     },
 
