@@ -99,10 +99,10 @@ var BattleField = cc.Class.extend({
         this.container.addChild(this.background);
 
         bindTouchEventListener(function (touch) {
-            //cc.log("点中tap");
+            cc.log("点中tap");
             var pos = this.container.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
-            return false;
+            return true;
         }.bind(this), this.container);
 
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
@@ -309,7 +309,8 @@ var BattleField = cc.Class.extend({
             this.loadStageBackground(stageData);
         } else {
             if (stageData.couldFightBossBattle()) {
-                stageData.goToBossBattle();
+                customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
+                return;
             }
             player.stage_battle_num += 1;
         }

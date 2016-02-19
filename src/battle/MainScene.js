@@ -37,10 +37,12 @@ var MainScene = cc.Scene.extend({
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
         this.battlePanel.addChild(buffListNode, 5000);
-        bindTouchEventListener(function(){return false;},this.battlePanel.buffList);
-        bindTouchEventListener(function(){return false;},buffListNode)
+        //bindTouchEventListener(function(){return false;},this.battlePanel.buffList);
+        //bindTouchEventListener(function(){return false;},buffListNode)
         var buffList = buffListNode.getChildByName('buff_list');
-        bindTouchEventListener(function(){return false;},buffList);
+        buffList.setTouchEnabled(false);
+        //buffList._touchEnabled = false;
+        //bindTouchEventListener(function(){return false;},buffList);
         //buffList.setSwallowTouches(false);
         (function (w) {
             var fadein = cc.fadeIn(1.0);
