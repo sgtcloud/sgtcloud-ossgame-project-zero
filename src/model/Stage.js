@@ -34,7 +34,7 @@ var Stage = function (id) {
     };
 
     this.couldFightBossBattle = function () {
-        return player.stage_battle_num === this.getRandomBattleCount();
+        return player.stage_battle_num === this.getRandomBattleCount() + 1;
     };
 
     this.getBg = function () {
@@ -93,10 +93,10 @@ var Stage = function (id) {
     this.getOfflineReward = function () {
         return data.offlineReward;
     };
-    this.getOfflineRewardByUnit = function(unit){
+    this.getOfflineRewardByUnit = function (unit) {
         var datas = this.getOfflineReward();
-        for(var i in datas){
-            if(datas[i].unit == unit){
+        for (var i in datas) {
+            if (datas[i].unit == unit) {
                 return datas[i];
             }
         }

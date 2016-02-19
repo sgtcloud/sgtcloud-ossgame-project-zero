@@ -99,7 +99,7 @@ var BattleField = cc.Class.extend({
         this.container.addChild(this.background);
 
         bindTouchEventListener(function (touch) {
-            cc.log("点中tap");
+            //cc.log("点中tap");
             var pos = this.container.convertTouchToNodeSpace(touch);
             this.onPlayerTap(pos);
             return true;
@@ -136,6 +136,17 @@ var BattleField = cc.Class.extend({
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
             var activeSkill = new ActiveSkill(event.getUserData(), this);
             activeSkill.cast(this.container);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
+            if (!PlayerData.getStageData().isBossBattle()) {
+                PlayerData.getStageData().goToBossBattle();
+                this.prepareBattle(PlayerData.getStageData());
+            }
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
+            PlayerData.getStageData().leaveBossBattle();
+            this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
     },
 
@@ -200,9 +211,12 @@ var BattleField = cc.Class.extend({
             order = this.totalSprites;
         }
         this.container.addChild(sprite, order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
-        //var orderText = new ccui.Text("" + sprite.getLocalZOrder());
-        //orderText.setPosition(sprite.getPosition());
-        //this.container.addChild(orderText);
+    },
+
+    addSprites: function (sprites, zorder) {
+        for (var i in sprites) {
+            this.addSprite(sprites[i], zorder);
+        }
     },
 
     addSpriteRelatedNode: function (sprite, node, offset) {
@@ -210,6 +224,12 @@ var BattleField = cc.Class.extend({
         var pos_offset = node.getPosition();
         node.setPosition(cc.p(pos.x + pos_offset.x, pos.y + pos_offset.y));
         this.container.addChild(node, sprite.getLocalZOrder() + offset);
+    },
+
+    addSpriteRelatedNodes: function (sprite, nodes, offset) {
+        for (var i in nodes) {
+            this.addSpriteRelatedNode(sprite, nodes[i], offset);
+        }
     },
 
     /**
@@ -298,21 +318,21 @@ var BattleField = cc.Class.extend({
     onBattleWin: function () {
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
+            customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             this.generateStageLoots(stageData.getBonus());
             player.stage_battle_num = 1;
             stageData.goToNextStage();
             player.stage = stageData.getId();
-            customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             player.statistics.total_max_level += 1;
             //更新通关数据
             PlayerData.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");
             this.loadStageBackground(stageData);
         } else {
-            if (stageData.couldFightBossBattle()) {
-                customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
-                return;
-            }
             player.stage_battle_num += 1;
+            if (stageData.couldFightBossBattle()) {
+                PlayerData.getStageData().goToBossBattle();
+                customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
+            }
         }
         /* if (this.times != undefined) {
          clearInterval(this.times);
@@ -327,10 +347,12 @@ var BattleField = cc.Class.extend({
         PlayerData.updatePlayer();
     },
 
+    STAGE_LOOTS_ZORDER_OFFSET: 1000,
+
     generateStageLoots: function (bonus) {
         var pos = cc.p(this.x + this.width * 3 / 5, this.y + this.height * 3 / 5);
         for (var i in bonus) {
-            Loot.generateLoots(bonus[i], pos);
+            this.addSprites(Loot.generateLoots(bonus[i], pos), this.STAGE_LOOTS_ZORDER_OFFSET);
         }
         customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 3);
     },
@@ -344,7 +366,7 @@ var BattleField = cc.Class.extend({
     },
 
     showFairy: function () {
-        var fairy = new FairyUnit();
+        var fairy = new FairyUnit(this);
         this.addSprite(fairy, CONSTS.FAIRY_SPECIFIC_ZORDER);
     },
     //todo refactor to event
