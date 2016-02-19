@@ -353,7 +353,7 @@ BloodBox.prototype.init = function () {
             customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
             updateNum(text, --num, btn);
         });
-        var node=drawMaskLayer(that.root, btn);
+        //var node=drawMaskLayer(that.root, btn);
        /* var layer=new MaskLayer();
          //that.root.addChild(layer);
         var x=btn.getPositionX();
@@ -463,7 +463,6 @@ function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
-        //console.log(effects[i]['type'])
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
@@ -1161,6 +1160,12 @@ var EquipListMenu = BattleMenu.extend({
             setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
+                var data=event.getUserData();
+                if(data['heroId']===hero.getId()){
+                    lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
+                }
+            });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
                 console.log(hero.getLife())
                 dps_text.setString(parseInt(hero.getLife()));
@@ -1270,7 +1275,7 @@ var EquipListMenu = BattleMenu.extend({
                 });
                 refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
-                    if (canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
+                    if (equip.getType()===0&&!equip.isMaxLevel()&&canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
                         elements.lock_btn.layer.isVisible() && elements.lock_btn.layer.setVisible(false);
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
                     }
