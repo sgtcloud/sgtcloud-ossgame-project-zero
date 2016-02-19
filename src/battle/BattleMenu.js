@@ -298,7 +298,7 @@ BloodBox.prototype.init = function () {
         drawNode.clear()
         drawNode.ctor();
         var radius = Math.min(node.width, node.height) / 2 + 0.5;
-        var color = cc.color(0, 0, 0,100);
+        var color = cc.color(0, 0, 0, 100);
         var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
         //drawNode.setDrawColor(color);
         //drawNode.drawCircle(center,radius,360, 360, true, 1, color);
@@ -306,14 +306,14 @@ BloodBox.prototype.init = function () {
          for(var n=0;n<m;n++){
          drawNode.drawDot(center,radius*(m-n),color);
          }*/
-       /* for (var k = 0; k < 10; k++) {
-            //var randomRadius = getRandomInt(radius / 10, radius);
-            //drawNode.drawDot(center, randomRadius, color);
-            drawNode.drawCircle(center,radius,360, 360, false, 1, color);
-        }
-        drawNode.drawDot(center, radius, color);*/
+        /* for (var k = 0; k < 10; k++) {
+         //var randomRadius = getRandomInt(radius / 10, radius);
+         //drawNode.drawDot(center, randomRadius, color);
+         drawNode.drawCircle(center,radius,360, 360, false, 1, color);
+         }
+         drawNode.drawDot(center, radius, color);*/
         drawNode.drawDot(center, radius, color);
-        drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
+        drawNode.drawCircle(center, radius, 360, 60, false, node.width, color);
         //bindTouchEventListener(function(touch,event){console.log(event.getCurrentTarget().getName());return true;},drawNode);
         return drawNode;
     }
@@ -353,28 +353,28 @@ BloodBox.prototype.init = function () {
             customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
             updateNum(text, --num, btn);
         });
-        var node=drawMaskLayer(that.root, btn);
-       /* var layer=new MaskLayer();
+        var node = drawMaskLayer(that.root, btn);
+        /* var layer=new MaskLayer();
          //that.root.addChild(layer);
-        var x=btn.getPositionX();
-        var y=btn.getPositionY();
-        var w=btn.width;
-        var h=btn.height;
-        var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
-        layer.setPosition(p);
-        layer.setColor(cc.color(0,0,0,255));
-        layer.width=w;
-        layer.height=h;
-        layer.setName(btn.getName()+'_layer')
-        //layer.init(cc.color(0,0,0,255),w,h);
-        //node.addChild(layer);
-        var clip=new cc.ClippingNode();
-        clip.setPosition(p);
-        clip.width=w+2;
-        clip.height=h+2;
-        clip.setName(btn.getName()+'_cliplayer')
-        clip.setStencil(node);
-        clip.addChild(layer,100);*/
+         var x=btn.getPositionX();
+         var y=btn.getPositionY();
+         var w=btn.width;
+         var h=btn.height;
+         var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
+         layer.setPosition(p);
+         layer.setColor(cc.color(0,0,0,255));
+         layer.width=w;
+         layer.height=h;
+         layer.setName(btn.getName()+'_layer')
+         //layer.init(cc.color(0,0,0,255),w,h);
+         //node.addChild(layer);
+         var clip=new cc.ClippingNode();
+         clip.setPosition(p);
+         clip.width=w+2;
+         clip.height=h+2;
+         clip.setName(btn.getName()+'_cliplayer')
+         clip.setStencil(node);
+         clip.addChild(layer,100);*/
         //that.root.addChild(node,100);
     };
 
@@ -383,9 +383,9 @@ BloodBox.prototype.init = function () {
     updateNum(this.middleText, middleNum, this.middleBtn);
     updateNum(this.largeText, largeNum, this.largeBtn);
 
-    initBtn(this.smallBtn, this.smallText, smallNum, {id: '', name: 'small_btn', num: 1});
-    initBtn(this.middleBtn, this.middleText, middleNum, {id: '', name: 'middle_btn', num: 1});
-    initBtn(this.largeBtn, this.largeText, largeNum, {id: '', name: 'large_btn', num: 1});
+    initBtn(this.smallBtn, this.smallText, smallNum, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
+    initBtn(this.middleBtn, this.middleText, middleNum, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
+    initBtn(this.largeBtn, this.largeText, largeNum, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});
 };
 
 var SkillListMenu = BattleMenu.extend({

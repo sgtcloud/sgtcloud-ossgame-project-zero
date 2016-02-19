@@ -31,14 +31,14 @@ var DamageNumber = cc.Node.extend({
         var size = ctr ? 8 : 2;
         this.scaleLarge = cc.scaleTo(0.25, size, size);
         this.scaleBack = cc.scaleTo(0.075, 1, 1);
-        var textAtlas;
+        var textBMPFont;
         if (val < 0) {
-            textAtlas = this.recoverText;
+            textBMPFont = this.recoverText;
         } else {
-            textAtlas = this.damageText;
+            textBMPFont = this.damageText;
         }
-        textAtlas.setString(Math.floor(val));
-        this.addChild(textAtlas);
+        textBMPFont.setString(Math.floor(val));
+        this.addChild(textBMPFont);
     },
 
     unuse: function () {
