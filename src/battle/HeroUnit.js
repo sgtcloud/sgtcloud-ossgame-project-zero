@@ -142,7 +142,7 @@ var HeroUnit = BattleUnit.extend({
         this.recover = 0;
         this.cooldown = 0;
         this.hero = hero;
-        this.initSprite(res[this.hero.getFile()], 'hero');
+        this.initSprite(res[this.hero.getFile()], 'hero', "stand");
 
         this.initLifeBar();
         this.refreshLifeBar();

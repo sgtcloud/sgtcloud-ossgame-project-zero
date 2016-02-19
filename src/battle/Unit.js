@@ -24,7 +24,7 @@ var Unit = cc.Node.extend({
     //    }
     //},
 
-    initSprite: function (file, nodeName) {
+    initSprite: function (file, nodeName, defaultAnimName) {
         var json = ccs.load(file);
         this.node = nodeName ? json.node.getChildByName(nodeName) : json.node;
         this.node.removeFromParent();
@@ -37,6 +37,16 @@ var Unit = cc.Node.extend({
         this.node.runAction(this.animation);
         this.setContentSize(this.node.getContentSize());
         this.addChild(this.node);
+        if (this.debug) {
+            var debugRect = new cc.DrawNode();
+            this.addChild(debugRect);
+            debugRect.clear();
+            debugRect.ctor();
+            debugRect.drawRect(cc.p(0, 0), cc.p(this.getContentSize().width, this.getContentSize.height), cc.color(0, 255, 0), 5, cc.color(0, 255, 0));
+        }
+        if (defaultAnimName) {
+            this.playAnimation(defaultAnimName);
+        }
     },
 
     //执行动画

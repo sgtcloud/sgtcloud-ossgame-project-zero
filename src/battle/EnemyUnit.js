@@ -55,10 +55,12 @@ var EnemyUnit = BattleUnit.extend({
         return this.life;
     },
 
+    ENEMY_LOOT_ZORDER_OFFSET: -1,
+
     //敌人消失后被调用
     onVanish: function () {
         //获取杀死后的奖励
-        Loot.generateLoots(this.enemy.getBonus(), this.parent.convertToWorldSpace(this.getPosition()));
+        this.battle.addSpriteRelatedNodes(this, Loot.generateLoots(this.enemy.getBonus()), this.ENEMY_LOOT_ZORDER_OFFSET);
         this.removeFromParent(true);
         this.battle.onEnemyVanish(this);
     },
@@ -66,7 +68,7 @@ var EnemyUnit = BattleUnit.extend({
     ctor: function (battle, enemy) {
         this._super(battle);
         this.enemy = enemy;
-        this.initSprite(res[this.enemy.getFile()], 'enemy');
+        this.initSprite(res[this.enemy.getFile()], 'enemy', "stand");
         this.life = this.getMaxLife();
         this.setScale(-1, 1);
         this.reset();

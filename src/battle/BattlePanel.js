@@ -57,6 +57,7 @@ var BattlePanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
+
         customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
@@ -67,21 +68,22 @@ var BattlePanel = cc.Node.extend({
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
         var container = root.getChildByName('battle_bg');
-
+        container.setTouchEnabled(false);
         this.battleField = new BattleField(container);
         this.battleField.initSpritesPositions(root.getChildByName('sprites'));
         this.disableBossBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 
+        Loot.prototype.getPackPosition = function () {
+            var world_position = root.convertToWorldSpace(this.pack_btn.getPosition());
+            return container.convertToNodeSpace(world_position);
+        }.bind(this);
+
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
-            PlayerData.getStageData().goToBossBattle();
             this.enableBossBattleTimeCounter(PlayerData.getStageData());
-            this.battleField.prepareBattle(PlayerData.getStageData());
         }.bind(this));
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
-            PlayerData.getStageData().leaveBossBattle();
             this.disableBossBattleTimeCounter();
-            this.battleField.prepareBattle(PlayerData.getStageData());
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
             this.disableBossBattleTimeCounter();
