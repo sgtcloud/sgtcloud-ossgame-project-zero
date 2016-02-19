@@ -110,7 +110,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleBuffTip();
+                        toggleTip();
                     }
                 }
             });
@@ -147,7 +147,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //toggleBuffTip();
+                    //toggleTip();
                 } else {
                     console.log('英雄已死亡，请稍候再点！');
                 }
@@ -156,7 +156,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleBuffTip();
+                    toggleTip();
                 } else {
                     tryFire(levelData);
                 }
