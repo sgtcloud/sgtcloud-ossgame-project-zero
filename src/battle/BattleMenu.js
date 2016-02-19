@@ -110,7 +110,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleBuffTip();
+                        toggleTip();
                     }
                 }
             });
@@ -147,7 +147,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //toggleBuffTip();
+                    //toggleTip();
                 } else {
                     console.log('英雄已死亡，请稍候再点！');
                 }
@@ -156,7 +156,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleBuffTip();
+                    toggleTip();
                 } else {
                     tryFire(levelData);
                 }
@@ -298,7 +298,7 @@ BloodBox.prototype.init = function () {
         drawNode.clear()
         drawNode.ctor();
         var radius = Math.min(node.width, node.height) / 2 + 0.5;
-        var color = cc.color(0, 0, 0, 100);
+        var color = cc.color(0, 0, 0,100);
         var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
         //drawNode.setDrawColor(color);
         //drawNode.drawCircle(center,radius,360, 360, true, 1, color);
@@ -306,14 +306,14 @@ BloodBox.prototype.init = function () {
          for(var n=0;n<m;n++){
          drawNode.drawDot(center,radius*(m-n),color);
          }*/
-        /* for (var k = 0; k < 10; k++) {
-         //var randomRadius = getRandomInt(radius / 10, radius);
-         //drawNode.drawDot(center, randomRadius, color);
-         drawNode.drawCircle(center,radius,360, 360, false, 1, color);
-         }
-         drawNode.drawDot(center, radius, color);*/
+       /* for (var k = 0; k < 10; k++) {
+            //var randomRadius = getRandomInt(radius / 10, radius);
+            //drawNode.drawDot(center, randomRadius, color);
+            drawNode.drawCircle(center,radius,360, 360, false, 1, color);
+        }
+        drawNode.drawDot(center, radius, color);*/
         drawNode.drawDot(center, radius, color);
-        drawNode.drawCircle(center, radius, 360, 60, false, node.width, color);
+        drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
         //bindTouchEventListener(function(touch,event){console.log(event.getCurrentTarget().getName());return true;},drawNode);
         return drawNode;
     }
@@ -353,28 +353,28 @@ BloodBox.prototype.init = function () {
             customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
             updateNum(text, --num, btn);
         });
-        var node = drawMaskLayer(that.root, btn);
-        /* var layer=new MaskLayer();
+        //var node=drawMaskLayer(that.root, btn);
+       /* var layer=new MaskLayer();
          //that.root.addChild(layer);
-         var x=btn.getPositionX();
-         var y=btn.getPositionY();
-         var w=btn.width;
-         var h=btn.height;
-         var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
-         layer.setPosition(p);
-         layer.setColor(cc.color(0,0,0,255));
-         layer.width=w;
-         layer.height=h;
-         layer.setName(btn.getName()+'_layer')
-         //layer.init(cc.color(0,0,0,255),w,h);
-         //node.addChild(layer);
-         var clip=new cc.ClippingNode();
-         clip.setPosition(p);
-         clip.width=w+2;
-         clip.height=h+2;
-         clip.setName(btn.getName()+'_cliplayer')
-         clip.setStencil(node);
-         clip.addChild(layer,100);*/
+        var x=btn.getPositionX();
+        var y=btn.getPositionY();
+        var w=btn.width;
+        var h=btn.height;
+        var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
+        layer.setPosition(p);
+        layer.setColor(cc.color(0,0,0,255));
+        layer.width=w;
+        layer.height=h;
+        layer.setName(btn.getName()+'_layer')
+        //layer.init(cc.color(0,0,0,255),w,h);
+        //node.addChild(layer);
+        var clip=new cc.ClippingNode();
+        clip.setPosition(p);
+        clip.width=w+2;
+        clip.height=h+2;
+        clip.setName(btn.getName()+'_cliplayer')
+        clip.setStencil(node);
+        clip.addChild(layer,100);*/
         //that.root.addChild(node,100);
     };
 
@@ -463,7 +463,6 @@ function buildDesc(effects, desc, extend) {
     var effectsObj = {};
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
-        //console.log(effects[i]['type'])
         var alas = map['name'];
         var value = effects[i]['value'];
         effectsObj[effects[i]['name']] = {}
@@ -1161,6 +1160,12 @@ var EquipListMenu = BattleMenu.extend({
             setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
+                var data=event.getUserData();
+                if(data['heroId']===hero.getId()){
+                    lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
+                }
+            });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
                 console.log(hero.getLife())
                 dps_text.setString(parseInt(hero.getLife()));
@@ -1270,7 +1275,7 @@ var EquipListMenu = BattleMenu.extend({
                 });
                 refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
-                    if (canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
+                    if (equip.getType()===0&&!equip.isMaxLevel()&&canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
                         elements.lock_btn.layer.isVisible() && elements.lock_btn.layer.setVisible(false);
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
                     }
