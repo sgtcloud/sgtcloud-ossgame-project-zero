@@ -375,7 +375,7 @@ BloodBox.prototype.init = function () {
         clip.setName(btn.getName()+'_cliplayer')
         clip.setStencil(node);
         clip.addChild(layer,100);*/
-        that.root.addChild(node,100);
+        //that.root.addChild(node,100);
     };
 
 
