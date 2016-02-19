@@ -19,6 +19,7 @@ var BuffView = cc.Node.extend({
         buff.setVisible(true);
         this.width = buff.width;
         this.height = buff.height;
+        this.tip=buff;
         /*
         var children = buff.getChildren();
         for (var i in children) {
@@ -26,6 +27,9 @@ var BuffView = cc.Node.extend({
         }*/
         this.addChild(buff);
         cc.eventManager.pauseTarget(this,true);
+    },
+    setString:function(text){
+        this.tip.setString(text);
     }
 });
 
