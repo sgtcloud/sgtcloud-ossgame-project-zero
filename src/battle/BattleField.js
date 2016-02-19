@@ -90,7 +90,8 @@ var SpriteGroup = function (_sprites) {
         for (var i in sprites) {
             var sprite = sprites[i];
             if (!sprite.isDead() && sprite.ready) {
-                var tmpHp = sprite.getLife();
+                // find the lowest hp ratio not the value
+                var tmpHp = sprite.getLife() / sprite.getMaxLife();
                 if (hp === 0 || tmpHp < hp) {
                     hp = tmpHp;
                     lowestHpUnit = sprite;
@@ -222,8 +223,8 @@ var BattleField = cc.Class.extend({
     onPlayerTap: function (pos) {
         var target = this.findNextEnemy();
         if (target) {
-            var tapSkill = new TapSkill();
-            tapSkill.cast(this.container, target, pos);
+            var tapSkill = new TapSkill(this);
+            tapSkill.cast(target);
             player.statistics.total_tap++;
         }
     }
@@ -361,6 +362,7 @@ var BattleField = cc.Class.extend({
     onBattleWin: function () {
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
+            stageData.leaveBossBattle();
             customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             this.generateStageLoots(stageData.getBonus());
             player.stage_battle_num = 1;

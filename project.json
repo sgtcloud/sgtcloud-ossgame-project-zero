@@ -27,7 +27,7 @@
     "src/model/Event.js",
     "src/model/SkillEffectMappings.js",
     "src/LoaderScene.js",
-    "src/battle/Unit.js",
+    "src/battle/CCSUnit.js",
     "src/battle/BattleField.js",
     "src/battle/BuffTips.js",
     "src/battle/Loot.js",

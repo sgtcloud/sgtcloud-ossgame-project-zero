@@ -53,31 +53,29 @@ var ActiveSkill = cc.Class.extend({
 
     loadSkillEffectRes: function (name, num) {
         this.hitEffects = [];
-        this.hitActions = [];
         for (var i = 0; i < num; i++) {
             if (name.lastIndexOf("json") != -1) {
-                var skillEffectSprite = ccs.load(name);
-                this.hitEffects[i] = skillEffectSprite.node;
-                this.hitActions[i] = skillEffectSprite.action;
-                this.hitEffects[i].runAction(this.hitActions[i]);
+                this.hitEffects[i] = new CCSUnit();
+                this.hitEffects[i].initSprite(name, null, "boom");
             } else {
                 this.hitEffects[i] = new cc.Sprite(name);
             }
         }
     },
 
-    runSkillEffect: function (node, pos, index, anim) {
+    EFFECT_ZORDER_OFFSET: 2,
+
+    runSkillEffect: function (target, effect, anim) {
         if (this.type !== this.TYPE_BUFF) {
-            this.hitActions[index].play(anim, false);
-            this.hitActions[index].setLastFrameCallFunc(function () {
+            effect.playAnimation(anim, false, function () {
+                // count all the effects animations are finished
                 this.effectAnimFinishCount++;
                 if (this.effectAnimFinishCount >= this.targets.length) {
                     this.onCastFinish();
                 }
             }.bind(this));
         }
-        this.hitEffects[index].setPosition(pos);
-        node.addChild(this.hitEffects[index], 2000 + i);
+        this.battle.addSpriteRelatedNode(target, effect, this.EFFECT_ZORDER_OFFSET);
     },
 
     updateTargets: function () {
@@ -92,8 +90,7 @@ var ActiveSkill = cc.Class.extend({
         }
     },
 
-    cast: function (node) {
-        this.node = node;
+    cast: function () {
         if (!this.firstCastTime) {
             this.firstCastTime = new Date().getTime();
         }
@@ -101,18 +98,8 @@ var ActiveSkill = cc.Class.extend({
             this.effectAnimFinishCount = 0;
             for (var i in this.targets) {
                 if (this.type !== this.TYPE_BUFF && this.targets[i]) {
-                    this.runSkillEffect(node, this.targets[i].getPosition(), i, "boom");
-                    this.hitEffects[i].runAction(cc.fadeIn(1));
+                    this.runSkillEffect(this.targets[i], this.hitEffects[i], "boom");
                     this.targets[i].doDamage(this.effectValue);
-                } else if (this.type === this.TYPE_BUFF) {
-                    // reuse the skill icon,scale to 30% to show on the top of the heroes
-                    // todo show more than one icon together
-                    this.hitEffects[i].setScale(0.3);
-                    var pos = cc.p(this.targets[i].getPositionX(), this.targets[i].getPositionY() + 100/*this.targets[i].height*/);
-                    var showUp = cc.moveBy(0.3, cc.p(0, 12));
-                    // least duration of a buff skill must be 1.3s
-                    this.hitEffects[i].runAction(cc.sequence(cc.spawn(showUp, cc.fadeIn(0.3)), cc.delayTime(this.duration - 0.3 - 1), cc.blink(1, 10)));
-                    this.runSkillEffect(node, pos, i, "boom");
                 }
             }
             if (this.shock > 0) {
@@ -155,39 +142,27 @@ var ActiveSkill = cc.Class.extend({
 
     recast: function () {
         var recast = new ActiveSkill(this.skill, this.battle, this.firstCastTime);
-        recast.cast(this.node);
+        recast.cast();
         unschedule(this);
     },
 
     startBuffEffect: function () {
-        if (this.effect === "buff_gold_rate") {
-            PlayerData.tmp_gold_rate += this.effectValue;
-        } else if (this.effect === "buff_tap_rate") {
-            PlayerData.tmp_tap_rate += this.effectValue;
-        } else if (this.effect === "buff_attack_rate") {
-            PlayerData.tmp_attack_rate += this.effectValue;
-        } else if (this.effect === "buff_atk_period_rate") {
-            PlayerData.tmp_atk_period_rate += this.effectValue;
-        } else if (this.effect === "buff_ctr_chance_rate") {
-            PlayerData.tmp_ctr_chance_rate += this.effectValue;
-        } else if (this.effect === "buff_ctr_modify_rate") {
-            PlayerData.tmp_ctr_modify_rate += this.effectValue;
+        if (PlayerData[this.effect]) {
+            PlayerData[this.effect] += this.effectValue;
+        }
+        for (var i in this.targets) {
+            this.hitEffects[i].setScale(0.3);
+            this.hitEffects[i].runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.blink(1, 10)));
+            this.targets[i].addBuff(this.hitEffects[i]);
         }
     },
 
     clearBuffEffect: function () {
-        if (this.effect === "buff_gold_rate") {
-            PlayerData.tmp_gold_rate -= this.effectValue;
-        } else if (this.effect === "buff_tap_rate") {
-            PlayerData.tmp_tap_rate -= this.effectValue;
-        } else if (this.effect === "buff_attack_rate") {
-            PlayerData.tmp_attack_rate -= this.effectValue;
-        } else if (this.effect === "buff_atk_period_rate") {
-            PlayerData.tmp_atk_period_rate -= this.effectValue;
-        } else if (this.effect === "buff_ctr_chance_rate") {
-            PlayerData.tmp_ctr_chance_rate -= this.effectValue;
-        } else if (this.effect === "buff_ctr_modify_rate") {
-            PlayerData.tmp_ctr_modify_rate -= this.effectValue;
+        if (PlayerData[this.effect]) {
+            PlayerData[this.effect] -= this.effectValue;
+        }
+        for (var i in this.targets) {
+            this.targets[i].removeBuff(this.hitEffects[i]);
         }
     }
 
@@ -195,17 +170,16 @@ var ActiveSkill = cc.Class.extend({
 
 var TapSkill = ActiveSkill.extend({
 
-    ctor: function () {
-        this._super(null, null);
+    ctor: function (battle) {
+        this._super(null, battle);
         this.targets = [];
         this.loadSkillEffectRes(res.tap_effect_json, 1);
         this.type = this.TYPE_ONCE;
     },
 
-    cast: function (node, target, pos) {
+    cast: function (target) {
         this.effectAnimFinishCount = 0;
-        this.targets.push(target);
-        this.runSkillEffect(node, pos, 0, "boom" + getRandomInt(1, 4));
-        this.targets[0].doDamage(PlayerData.getTotalHit());
-    },
+        this.runSkillEffect(target, this.hitEffects[0], "boom" + getRandomInt(1, 4));
+        target.doDamage(PlayerData.getTotalHit());
+    }
 });
