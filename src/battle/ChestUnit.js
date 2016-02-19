@@ -2,7 +2,7 @@
  * Created by highkay on 2015/12/29.
  */
 
-var ChestUnit = Unit.extend({
+var ChestUnit = CCSUnit.extend({
 
     ctor: function (battle, ccsRes, goods, chestName) {
         this._super();

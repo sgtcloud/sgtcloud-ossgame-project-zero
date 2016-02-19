@@ -383,9 +383,9 @@ BloodBox.prototype.init = function () {
     updateNum(this.middleText, middleNum, this.middleBtn);
     updateNum(this.largeText, largeNum, this.largeBtn);
 
-    initBtn(this.smallBtn, this.smallText, smallNum, {id: '', name: 'small_btn', num: 1});
-    initBtn(this.middleBtn, this.middleText, middleNum, {id: '', name: 'middle_btn', num: 1});
-    initBtn(this.largeBtn, this.largeText, largeNum, {id: '', name: 'large_btn', num: 1});
+    initBtn(this.smallBtn, this.smallText, smallNum, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
+    initBtn(this.middleBtn, this.middleText, middleNum, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
+    initBtn(this.largeBtn, this.largeText, largeNum, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});
 };
 
 var SkillListMenu = BattleMenu.extend({
