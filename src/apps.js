@@ -35,6 +35,9 @@ var CONSTS = {
         "silver_key": '银钥匙',
         "golden_chest": '金宝箱',
         "golden_key": '金钥匙',
+        "small_blood": '小型生命药水',
+        "middle_blood": '中型生命药水',
+        "large_blood": '大型生命药水',
     },
     "click_chest_random_events": [
         {

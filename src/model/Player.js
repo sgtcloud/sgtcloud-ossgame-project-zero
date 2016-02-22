@@ -26,6 +26,9 @@ var player = {
         "silver_key": 100,
         "golden_chest": 100,
         "golden_key": 100,
+        "small_blood": 100,
+        "middle_blood": 100,
+        "large_blood": 100,
     },
     // release data
     //"resource": {

@@ -62,8 +62,12 @@ var MainScene = cc.Scene.extend({
                         text=config;
                     }
                 }
-                text&& buffTip.setString(text);
+                buffTip.text.setFontName("微软雅黑");
+                buffTip.text.setColor(cc.color(255,229,1));
+                text && buffTip.setString(text);
                 var sequence=[];
+                sequence.push(fadeout);
+                sequence.push(cc.delayTime(0.1));
                 dt = cc.delayTime(delay);
                 beforeShow&&sequence.push(fadein)
                 sequence.push(fadein)
