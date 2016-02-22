@@ -10,7 +10,6 @@ $$.extend = function (a, b) {
     }
     return b;
 }
-
 var CONSTS = {
     "FAIRY_SPECIFIC_ZORDER": 2000,
     "MAX_ATTACHMENTS_ON_SPRITE": 10,

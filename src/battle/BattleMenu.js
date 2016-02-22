@@ -9,14 +9,6 @@ var BattleMenu = cc.Node.extend({
         this.addChild(layer);
         this.height = layer.height;
         this.root = layer.getChildByName('root');
-
-        //大部分Menu有显示玩家金钱的组件，但是位置不同，所以写了这个组件作为父类
-        //这里是处理刷新金钱的显示
-        //this.playerGoldText = this.root.getChildByName('goldLayer').getChildByName('root').getChildByName('gold_text');
-        /*this.updatePlayerGoldText = function () {
-         this.playerGoldText.setString(player.getGold());
-         };*/
-
         this.onHeroDead = function () {
         }
         this.onHeroRecover = function () {
@@ -38,7 +30,6 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
     this.time = root.getChildByName('time');
     this.cooldownText = root.getChildByName('cooldown_text');
     this.durationText = root.getChildByName('duration_text');
-    //this.icon=root.getChildByName('icon');
     this.reviveText.setVisible(false);
     this.time.setVisible(false);
     this.time.setColor(cc.color(255, 0, 0));
@@ -110,7 +101,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleTip();
+                        toggleTip('已有相同类型buff');
                     }
                 }
             });
@@ -156,7 +147,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleTip();
+                    toggleTip('已有相同类型buff');
                 } else {
                     tryFire(levelData);
                 }
@@ -217,8 +208,6 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
         this.time.setString(time);
     }
     this.setEnabled = function (state) {
-        //this.skill_icon.setEnabled(state);
-        //this.skill_icon.setBright(state);
     }
 }
 function getHeroActivtySkillls(hero) {
@@ -262,36 +251,6 @@ BloodBox.prototype.init = function () {
 
     var i = 0;
     var drawMaskLayer = function (root, node) {
-        /*
-         var drawNode = new cc.DrawNode();
-         this.addChild(drawNode);              //加入Layer层
-         drawNode.clear()                      //清除节点缓存
-         drawNode.ctor()                       //构造函数
-
-         drawNode.drawCardinalSpline(config, tension, segments, lineWidth, color)    //曲线
-         //参数说明:
-         //congfig:点数组
-         //tension:张力
-         //segments:段落
-         //lineWidth:线条宽度
-         //color:颜色
-
-         drawNode.drawCatmullRom(points, segments, lineWidth, color)   //同上
-
-         drawNode.drawCircle(center, radius, angle, segments, drawLineToCenter, lineWidth, color)   //画圆
-         //参数说明: 原点，半径，弧度，分段(越大越接近圆)，原点到弧度的线(boolean)，线条宽度，颜色
-
-         drawNode.drawCubicBezier(origin, control1, control2, destination, segments, lineWidth, color)  //画三次贝塞尔曲线
-         //drawNode.drawCubicBezier(cc.p(s.width - 250, 40), cc.p(s.width - 70, 100), cc.p(s.width - 30, 250), cc.p(s.width - 10, s.height - 50),10,1, cc.color(0, 1, 0, 1));
-         drawNode.drawQuadBezier(origin, control, destination, segments, lineWidth, color)          //画二次贝塞尔曲线 参考三次贝塞尔曲线
-         drawNode.drawDot(pos, radius, color)         //画点
-         //drawNode.drawDot(cc.p(60, 100), 20, cc.color(0.5,0.6,0,1));
-         drawNode.drawDots(points, radius, color)     //画点  points  点数组
-
-         drawNode.drawPoly(verts, fillColor, lineWidth, color)       //画多边形
-         drawNode.drawRect(origin, destination, fillColor, lineWidth, lineColor)  //画矩形
-         drawNode.drawSegment(from, to, lineWidth, color)
-         */
 
         var drawNode = new cc.DrawNode();
         //root.addChild(drawNode, 1000);
@@ -300,21 +259,8 @@ BloodBox.prototype.init = function () {
         var radius = Math.min(node.width, node.height) / 2 + 0.5;
         var color = cc.color(0, 0, 0,100);
         var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
-        //drawNode.setDrawColor(color);
-        //drawNode.drawCircle(center,radius,360, 360, true, 1, color);
-        /* var m=Math.round(radius);
-         for(var n=0;n<m;n++){
-         drawNode.drawDot(center,radius*(m-n),color);
-         }*/
-       /* for (var k = 0; k < 10; k++) {
-            //var randomRadius = getRandomInt(radius / 10, radius);
-            //drawNode.drawDot(center, randomRadius, color);
-            drawNode.drawCircle(center,radius,360, 360, false, 1, color);
-        }
-        drawNode.drawDot(center, radius, color);*/
         drawNode.drawDot(center, radius, color);
         drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
-        //bindTouchEventListener(function(touch,event){console.log(event.getCurrentTarget().getName());return true;},drawNode);
         return drawNode;
     }
 
@@ -353,29 +299,6 @@ BloodBox.prototype.init = function () {
             customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
             updateNum(text, --num, btn);
         });
-        //var node=drawMaskLayer(that.root, btn);
-       /* var layer=new MaskLayer();
-         //that.root.addChild(layer);
-        var x=btn.getPositionX();
-        var y=btn.getPositionY();
-        var w=btn.width;
-        var h=btn.height;
-        var p=/!*cc.p(2*x-text.getPositionX(),2*y-text.getPositionY())*!/btn.getPosition();
-        layer.setPosition(p);
-        layer.setColor(cc.color(0,0,0,255));
-        layer.width=w;
-        layer.height=h;
-        layer.setName(btn.getName()+'_layer')
-        //layer.init(cc.color(0,0,0,255),w,h);
-        //node.addChild(layer);
-        var clip=new cc.ClippingNode();
-        clip.setPosition(p);
-        clip.width=w+2;
-        clip.height=h+2;
-        clip.setName(btn.getName()+'_cliplayer')
-        clip.setStencil(node);
-        clip.addChild(layer,100);*/
-        //that.root.addChild(node,100);
     };
 
 
@@ -440,14 +363,6 @@ var SkillListMenu = BattleMenu.extend({
         };
 
         this.update = function (dt) {
-            //battlePanel.battleField.foreachHeroSprite(function (hero, i) {
-            //    var skill = skillBtns[i];
-            //    if (hero.isDead()) {
-            //        skill.setDeadTime(Math.round(hero.getRecover()));
-            //    } else if (hero.getCooldown() > 0) {
-            //        skill.setCoolTime(Math.round(hero.getCooldown()));
-            //    }
-            //});
         };
         this.onHeroDead = function (_hero) {
             this.refreshSkillState();
@@ -477,12 +392,10 @@ function buildDesc(effects, desc, extend) {
 }
 //根据模板生成技能效果描述
 function buildSkillDesc(skill, levelData) {
-    //var lv= skill.getLv()===0?1:skill.getLv();
     var effects = skill.traverseSkillEffects();
     return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
 }
 function buildSkillBuffDesc(skill, levelData) {
-    //var lv= skill.getLv()===0?1:skill.getLv();
     var effects = skill.traverseSkillEffects();
     return buildDesc(effects, skill.getBuffDesc(), {"duration": skill.getLevelData()['duration']});
 }
@@ -1034,7 +947,6 @@ var EquipListMenu = BattleMenu.extend({
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);
                 PlayerData.refreshAllHerosProps();
-                //PlayerData.refreshGlobeProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
             });
         }
@@ -1135,7 +1047,6 @@ var EquipListMenu = BattleMenu.extend({
                 customEventHelper.bindListener(EVENT.UPGRADE_EQUIP_NUM, function (event) {
                     equipNum_text.setString(event.getUserData());
                 });
-                //customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
                 equipNum_text.ignoreContentAdaptWithSize(true)
             } else {
                 player_equip.setVisible(false);
@@ -1338,8 +1249,6 @@ var EquipListMenu = BattleMenu.extend({
                     if (equipData.getLv() > 0 || equipData.getType() === 0) {
                         var _equipView = buildEquipView(equipData, heroData);
                         that.heroList.pushBackCustomItem(_equipView);
-                        //_heroView.equips = _heroView.equips || [];
-                        //_heroView.equips[j] = _equipView;
                     }
                 }
             }
@@ -1485,9 +1394,6 @@ var ShopLayerMenu = BattleMenu.extend({
             var shopListViewRoot = shopListView.getChildByName('root');
             var shopListViewRootClone = shopListViewRoot.clone();
             var goods = dataSource.goods;
-            /* for (var j in shopListViewRoot.getChildren()) {
-             shopListViewRoot.getChildren()[j].setVisible(false);
-             }*/
             var n = n1 = 0;
             for (var i in goods) {
                 n++;
@@ -1640,8 +1546,6 @@ var RankLayerMenu = BattleMenu.extend({
         this.setRankView = function (data, type) {
             var root = rankViewRoot.clone();
             rankViewRoot.ignoreContentAdaptWithSize(true);
-            //var hero = new Hero(data.heroes[0]);
-            //var root = rankView.getChildByName('root');
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + data.player.avatarUrl);
             var playerName = root.getChildByName('player_name');
             var levelText = root.getChildByName('level_text');
@@ -1649,12 +1553,9 @@ var RankLayerMenu = BattleMenu.extend({
             root.getChildByName('player_prestige').setVisible(false);
             /*var prestigeText =*/
             root.getChildByName('prestige_text').setVisible(false);
-            //var playerLv = root.getChildByName('player_lv');
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');
             setFont([playerName]);
-            //setColor([levelText, playerPrestige, prestigeText, playerLv]);
-
             setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num]);
             levelText.setString("Lv." + data.player.level);
             num.setString(data.index + 1);

@@ -101,7 +101,7 @@ var res = {
     font22_yellow_kmbb_export_fnt: "res/font22_yellow_kmbb-export.fnt",
     small_item_layer_json:"res/SmallItemLayer.json",
     shop_list_view: "res/ShopListView.json",
-
+    tips:'res/Tips.json',
     tombstone_json:"res/dead.json"
 };
 

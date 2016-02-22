@@ -27,9 +27,6 @@ var TabContainer = cc.Node.extend({
             var name = param.name;
             var click = param.click;
             this.buttons[name] = root.getChildByName(name);
-            //if(name==='pvp'){
-            //    this.buttons[name].setVisible(false);
-            //}
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
@@ -63,24 +60,9 @@ var TabContainer = cc.Node.extend({
             }
             this.menus[name].setVisible(true);
             this.buttons[name].setSelected(true);
-            /*var y=this.buttons[name].getPositionY();
-             var goldText = this.menus[name].playerGoldText;
-             var position=goldText.getParent().getParent().getPosition();
-             cc.log(position);
-             cc.log(y)
-             var lastPosition=cc.p(position.x,position.y+y);
-             customEventHelper.sendEvent(EVENT.GOLD_POSITION, lastPosition)
-             cc.log(lastPosition);*/
-            //console.log(this.menuButtons);
         };
 
-        //for (var i in this.menuButtons) {
-        //	this.menuButtons[i].setEnabled(false);
-        //}
         this.updatePlayerGoldText = function () {
-            //for (var i in this.menuLayers) {
-            //    this.menuLayers[i].updatePlayerGoldText();
-            //}
         }
         function bindListener() {
             customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
@@ -88,14 +70,11 @@ var TabContainer = cc.Node.extend({
                 PlayerData.updateResource([data.cost]);
                 PlayerData.updatePlayer();
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                //customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
                 PlayerData.updateResource([data.cost]);
                 customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                //customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
-                //PlayerData.updatePlayer();
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS,function(){
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
