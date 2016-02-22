@@ -15,11 +15,11 @@
 var BuffView = cc.Node.extend({
     ctor: function () {
         this._super();
-        var buff = ccs.csLoader.createNode(res.buff_tip_json);
+        var buff = ccs.csLoader.createNode(res.tips);
         buff.setVisible(true);
         this.width = buff.width;
         this.height = buff.height;
-        this.tip=buff;
+        this.text=buff.getChildByName('text');
         /*
         var children = buff.getChildren();
         for (var i in children) {
@@ -29,7 +29,7 @@ var BuffView = cc.Node.extend({
         cc.eventManager.pauseTarget(this,true);
     },
     setString:function(text){
-        this.tip.setString(text);
+        this.text.setString(text);
     }
 });
 
