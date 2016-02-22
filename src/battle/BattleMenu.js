@@ -226,9 +226,7 @@ var BloodBox = function (root) {
     this.init();
 }
 BloodBox.prototype.init = function () {
-    var smallNum = player.resource.small_blood||(player.resource.small_blood=100);
-    var middleNum = player.resource.middle_blood||(player.resource.middle_blood=100);
-    var largeNum = player.resource.large_blood||(player.resource.large_blood=100);
+
     this.smallBtn = this.root.getChildByName('small_btn');
     this.smallText = this.root.getChildByName('small_text');
     this.middleBtn = this.root.getChildByName('middle_btn');
@@ -311,11 +309,15 @@ BloodBox.prototype.init = function () {
             PlayerData.updatePlayer();
         });
     };
-
-    updateNum(this.smallText, smallNum, this.smallBtn);
-    updateNum(this.middleText, middleNum, this.middleBtn);
-    updateNum(this.largeText, largeNum, this.largeBtn);
-
+    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+        refreshNum();
+    });
+    function refreshNum(){
+        updateNum(that.smallText,  player.resource.small_blood||(player.resource.small_blood=100), that.smallBtn);
+        updateNum(that.middleText, player.resource.middle_blood||(player.resource.middle_blood=100), that.middleBtn);
+        updateNum(that.largeText, player.resource.large_blood||(player.resource.large_blood=100), that.largeBtn);
+    }
+    refreshNum();
     initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
     initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
     initBtn(this.largeBtn, this.largeText, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});

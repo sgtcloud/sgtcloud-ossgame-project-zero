@@ -67,15 +67,24 @@ var MainScene = cc.Scene.extend({
                 text && buffTip.setString(text);
                 var sequence = [];
                 var dt = cc.delayTime(delay);
-                beforeShow && sequence.push(beforeShow);
+                processSequence(sequence,beforeShow);
                 sequence.push(fadein);
-                afterShow && sequence.push(afterShow);
+                processSequence(sequence,afterShow);
                 sequence.push(dt);
-                beforeHide && sequence.push(beforeHide);
+                processSequence(sequence,beforeHide);
                 sequence.push(fadeout);
-                afterHide && sequence.push(afterHide)
+                processSequence(sequence,afterHide);
                 var sq = cc.sequence(sequence);
                 buffTip.runAction(sq);
+            }
+            function processSequence(sequence,actions){
+                if(actions){
+                    if(typeof  actions ==='function'){
+                        sequence.push(actions);
+                    }else if(actions instanceof  Array){
+                        Array.push.apply(sequence,actions)
+                    }
+                }
             }
 
             var buffArr = [];
