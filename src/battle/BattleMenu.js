@@ -1471,7 +1471,14 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                toggleTip({'delay':2.0,'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value});
+
+                toggleTip({
+                    'beforeShow':function() {
+                        cc.hide();
+                        cc.delayTime(0.1);
+                    },'delay':2.0,
+                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
+                });
             } else {
                 if (price.unit === 'gem') {
                     new Popup1("友情提示", "当前钻石不足", function (popup) {

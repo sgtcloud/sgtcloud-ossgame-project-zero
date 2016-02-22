@@ -46,7 +46,6 @@ var MainScene = cc.Scene.extend({
              * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0,color:cc.color('#cccccc')}
              */
             function toggleTip(config) {
-                buffTip.stopAllActions();
                 var fadein = cc.show()/*cc.fadeIn(0.0)*/;
                 var fadeout = cc.hide()/* cc.fadeOut(0.0)*/;
                 var beforeShow, afterHide, afterShow, delay = 3.0, beforeHide, text;
@@ -67,7 +66,7 @@ var MainScene = cc.Scene.extend({
                 text && buffTip.setString(text);
                 var sequence = [];
                 var dt = cc.delayTime(delay);
-                beforeShow && sequence.push(fadein);
+                beforeShow(sequence) && sequence.push(fadein);
                 sequence.push(fadein);
                 afterShow && sequence.push(afterShow);
                 sequence.push(dt);
@@ -75,6 +74,7 @@ var MainScene = cc.Scene.extend({
                 sequence.push(fadeout);
                 afterHide && sequence.push(afterHide)
                 var sq = cc.sequence(sequence);
+                buffTip.stopAllActions();
                 buffTip.runAction(sq);
             }
 

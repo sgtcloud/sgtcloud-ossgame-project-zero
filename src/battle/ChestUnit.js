@@ -43,12 +43,12 @@ var ChestUnit = CCSUnit.extend({
 
     _generateLoot: function () {
         if(player.resource.hasOwnProperty(this.goods.skill_id)){
-            cc.log('获取金币');
-            var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
-            //toggleTip({'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value});
+            cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
+            var resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
+            toggleTip({'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
             this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
-                "unit": "gold",
-                "value": goldValue
+                "unit": this.goods.skill_id,
+                "value": resValue
             }), this.CHEST_LOOT_ZORDER_OFFET);
         } else {
             //发送释放buff事件
@@ -57,12 +57,6 @@ var ChestUnit = CCSUnit.extend({
                 skillId: this.goods.skill_id,
                 level: this.goods.level
             });
-        }
-        if (this.goods.skill_id == 'gold') {
-
-        }
-        else {
-
         }
         cc.log(this.goods.chestStyle + " , " + this.goods.skill_id + " , " + this.goods.level);
     }

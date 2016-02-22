@@ -23,7 +23,7 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time": 180,
+    "flySpirit_interval_time": 5,
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
