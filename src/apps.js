@@ -16,7 +16,26 @@ var CONSTS = {
     "offline_reward_min_time": 60,
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
-    "flySpirit_interval_time": 10,
+    "flySpirit_interval_time": 180,
+    "resources_mapping":{
+        "gold": '金币',
+        "gem": '钻石',
+        "relic": '宝物',
+        "wood": '木材',
+        "leather": '皮革',
+        "stone": '石材',
+        "bronze": '铜',
+        "iron": '铁',
+        "crystal": '水晶',
+        "rune": '符文',
+        "essence": '魔晶',
+        "iron_chest": '铁宝箱',
+        "iron_key": '铁钥匙',
+        "silver_chest": '银宝箱',
+        "silver_key": '银钥匙',
+        "golden_chest": '金宝箱',
+        "golden_key": '金钥匙',
+    },
     "click_chest_random_events": [
         {
             "f": {

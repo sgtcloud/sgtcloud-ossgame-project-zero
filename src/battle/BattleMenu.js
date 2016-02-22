@@ -1416,7 +1416,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 itemIcon.loadTexture("res/icon/resources/" + datas.propId + ".png");
                 iconLayer.setPosition(shopIconLayer.getPosition());
                 itemLayer.addChild(iconLayer);
-                itemLayer.getChildByName("item_name").setString(datas.propId);
+                itemLayer.getChildByName("item_name").setString(CONSTS.resources_mapping[datas.propId]);
 
                 var res1 = itemLayer.getChildByName("res");
 
@@ -1462,6 +1462,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
+                toggleTip('成功购买 '+CONSTS.resources_mapping[goods.propId] + " * " + goods.num);
             } else {
                 if (price.unit === 'gem') {
                     new Popup1("友情提示", "当前钻石不足", function (popup) {
