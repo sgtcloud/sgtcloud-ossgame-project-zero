@@ -10,6 +10,7 @@ var BuffView = cc.Node.extend({
         this.height = buff.height;
         this.text=buff.getChildByName('root').getChildByName('text');
         this.text.setFontName('微软雅黑');
+        this.text.setColor(TIPS_COLOR.YELLOW);
         this.addChild(buff);
         cc.eventManager.pauseTarget(this,true);
     },
