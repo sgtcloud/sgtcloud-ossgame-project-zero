@@ -47,16 +47,16 @@ var StatisticsUnit = cc.Node.extend({
         }
         total_hero.setString(this.convert(PlayerData.getTotalHeroNum()));
         total_hero_levels.setString(this.convert(PlayerData.getTotalHeroLevels()));
-        total_gold_rate.setString(this.convert(PlayerData.globe_gold_rate+PlayerData.tmp_gold_rate,"rate"));
-        total_tap_rate.setString(this.convert(PlayerData.globe_tap_rate+PlayerData.tmp_tap_rate,"rate"));
+        total_gold_rate.setString(this.convert(PlayerData.globe_gold_rate+PlayerData.buff_gold_rate,"rate"));
+        total_tap_rate.setString(this.convert(PlayerData.globe_tap_rate+PlayerData.buff_tap_rate,"rate"));
         total_life_rate.setString(this.convert(PlayerData.globe_life_rate,"rate"));
-        total_attack_rate.setString(this.convert(PlayerData.globe_attack_rate+PlayerData.tmp_attack_rate,"rate"));
+        total_attack_rate.setString(this.convert(PlayerData.globe_attack_rate+PlayerData.buff_attack_rate,"rate"));
         total_attack_value.setString(this.convert(PlayerData.getTotalAttack()));
         total_tap_value.setString(this.convert(PlayerData.getTotalHit()));
         total_life_value.setString(this.convert(PlayerData.getTotalLife()));
-        total_ctr_chance_rate.setString(this.convert(PlayerData.globe_ctr_chance_rate+PlayerData.tmp_ctr_chance_rate,"rate"));
-        total_ctr_modify_rate.setString(this.convert(PlayerData.globe_ctr_modify_rate+PlayerData.tmp_ctr_modify_rate,"rate"));
-        total_atk_period_rate.setString(this.convert(PlayerData.globe_atk_period_rate+PlayerData.tmp_atk_period_rate,"rate"));
+        total_ctr_chance_rate.setString(this.convert(PlayerData.globe_ctr_chance_rate+PlayerData.buff_ctr_chance_rate,"rate"));
+        total_ctr_modify_rate.setString(this.convert(PlayerData.globe_ctr_modify_rate+PlayerData.buff_ctr_modify_rate,"rate"));
+        total_atk_period_rate.setString(this.convert(PlayerData.globe_atk_period_rate+PlayerData.buff_atk_period_rate,"rate"));
         total_gold.setString(this.convert(player.statistics.total_gold));
         total_relic.setString(this.convert(player.statistics.total_relic));
         total_fairy.setString(this.convert(player.statistics.total_fairy));
