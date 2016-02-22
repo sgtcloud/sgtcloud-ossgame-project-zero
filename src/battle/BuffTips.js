@@ -19,12 +19,15 @@ var BuffView = cc.Node.extend({
         buff.setVisible(true);
         this.width = buff.width;
         this.height = buff.height;
-        this.text=buff.getChildByName('text');
+        this.text=buff.getChildByName('root').getChildByName('text');
+        //this.text.setFontName('Helvetica');
+        this.text.setFontName('微软雅黑');
         /*
         var children = buff.getChildren();
         for (var i in children) {
             children[i].setTouchEnabled && children[i].setTouchEnabled(false);
         }*/
+        //this.text.setString('立法扩大解放了的喀什房价来说的咖啡的喀什房间里的喀什飞机拉萨的空间分达拉斯加拉塞克飞机拉萨看解放拉萨的飞机拉萨分开就');
         this.addChild(buff);
         cc.eventManager.pauseTarget(this,true);
     },
