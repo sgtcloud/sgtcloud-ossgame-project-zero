@@ -37,7 +37,7 @@ var DamageNumber = cc.Node.extend({
         } else {
             textBMPFont = this.damageText;
         }
-        textBMPFont.setString(Math.floor(val));
+        textBMPFont.setString(Math.abs(Math.floor(val)));
         this.addChild(textBMPFont);
     },
 
@@ -51,7 +51,7 @@ var DamageNumber = cc.Node.extend({
         this.initData(val, ctr);
         this.setVisible(true);
         this.runAction(cc.spawn(cc.sequence(this.scaleLarge, this.scaleBack), cc.sequence(this.moveUp, this.disappare)));
-    },
+    }
 
 });
 

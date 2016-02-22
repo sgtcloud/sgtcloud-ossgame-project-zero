@@ -63,14 +63,15 @@ var PackUnit = cc.Node.extend({
         this.openChest = function (key_unit, chest_unit, bonus_num) {
             if (this.checkKeyAndChest(player.resource[key_unit], player.resource[chest_unit])) {
                 var chance = new Chance(dataSource.bonus[bonus_num].bonus);
-                var res = chance.next();
-                player.resource[res.unit] += res.value;
+                var loot = chance.next();
+                player.resource[loot.unit] += loot.value;
                 player.resource[key_unit] -= 1;
                 player.resource[chest_unit] -= 1;
-                this.setElement(res.unit, player.resource[res.unit], this.pack);
+                this.setElement(loot.unit, player.resource[loot.unit], this.pack);
                 this.setElement(key_unit, player.resource[key_unit], this.chest);
                 this.setElement(chest_unit, player.resource[chest_unit], this.chest);
                 PlayerData.updatePlayer();
+                toggleTip('获得 '+CONSTS.resources_mapping[loot.unit]+" * "+loot.value);
                 return true;
             }
         };

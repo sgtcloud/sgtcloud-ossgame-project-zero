@@ -32,7 +32,7 @@ var MainScene = cc.Scene.extend({
         var height = this.height;
         var width = this.width;
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
-        this.addChild(this.buffTip,101);
+        this.addChild(this.buffTip,102);
         var buffListNode = ccs.csLoader.createNode(res.buff_list_json);
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
@@ -74,6 +74,7 @@ var MainScene = cc.Scene.extend({
                 sequence.push(fadeout);
                 afterHide && sequence.push(afterHide)
                 var sq = cc.sequence(sequence);
+                buffTip.stopAllActions();
                 buffTip.runAction(sq);
             }
 

@@ -1,6 +1,6 @@
 <PlistInfoProjectFile>
   <PropertyGroup Name="RankUI" Type="Plist" ID="d43d2ced-696b-43a8-9e4d-2dba580b3f54" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="rankUI/clearance_rank.png" />
       <FilePathData Path="rankUI/level.png" />
@@ -15,6 +15,9 @@
       <FilePathData Path="rankUI/transformation.png" />
       <FilePathData Path="rankUI/goldTab_1.png" />
       <FilePathData Path="rankUI/goldTab_2.png" />
+      <FilePathData Path="rankUI/gold_rank.png" />
+      <FilePathData Path="rankUI/Max_gold.png" />
+      <FilePathData Path="rankUI/Max_stage.png" />
     </ImageFiles>
     <MaxSize Width="600" Height="300" />
   </Content>

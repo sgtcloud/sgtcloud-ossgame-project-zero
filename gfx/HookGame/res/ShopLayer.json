@@ -48,9 +48,8 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 1.1622
+              "Y": 1.0
             },
-            "TopMargin": -120.0,
             "Tag": 590,
             "Children": [
               {
@@ -81,9 +80,9 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.8605
+                  "Y": 1.0
                 },
-                "TopMargin": 119.9979,
+                "TopMargin": -0.0021,
                 "BottomMargin": 0.0021,
                 "Tag": 45,
                 "ActionTag": -348836933,
@@ -122,11 +121,11 @@
                 },
                 "PreSize": {
                   "X": 0.9937,
-                  "Y": 0.7791
+                  "Y": 0.9054
                 },
                 "LeftMargin": 2.0,
                 "RightMargin": 2.0,
-                "TopMargin": 190.0,
+                "TopMargin": 70.0,
                 "Tag": 44,
                 "ActionTag": 930478778,
                 "Size": {
@@ -160,15 +159,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0229,
-                  "Y": 0.7832
+                  "Y": 0.9102
                 },
                 "PreSize": {
                   "X": 0.9531,
-                  "Y": 0.0698
+                  "Y": 0.0811
                 },
                 "LeftMargin": 14.635,
                 "RightMargin": 15.365,
-                "TopMargin": 126.4282,
+                "TopMargin": 6.4282,
                 "BottomMargin": 673.5718,
                 "Tag": 46,
                 "ActionTag": -772914297,
@@ -203,15 +202,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4994,
-                  "Y": 0.8193
+                  "Y": 0.9521
                 },
                 "PreSize": {
                   "X": 0.2016,
-                  "Y": 0.0674
+                  "Y": 0.0784
                 },
                 "LeftMargin": 255.135,
                 "RightMargin": 255.865,
-                "TopMargin": 126.4283,
+                "TopMargin": 6.4283,
                 "BottomMargin": 675.5717,
                 "Tag": 146,
                 "ActionTag": -404407330,
@@ -243,16 +242,16 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.0313,
-                  "Y": 0.0116
+                  "X": 0.0312,
+                  "Y": 0.0135
                 },
                 "PreSize": {
                   "X": 0.9375,
-                  "Y": 0.6977
+                  "Y": 0.8108
                 },
                 "LeftMargin": 20.0,
                 "RightMargin": 20.0,
-                "TopMargin": 250.0,
+                "TopMargin": 130.0,
                 "BottomMargin": 10.0,
                 "Tag": 398,
                 "ActionTag": 1256429570,
@@ -293,15 +292,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0547,
-                  "Y": 0.7093
+                  "Y": 0.8243
                 },
                 "PreSize": {
                   "X": 0.5,
-                  "Y": 0.064
+                  "Y": 0.0743
                 },
                 "LeftMargin": 35.0,
                 "RightMargin": 285.0,
-                "TopMargin": 195.0,
+                "TopMargin": 75.0,
                 "BottomMargin": 610.0,
                 "Tag": 781,
                 "Children": [
@@ -433,7 +432,7 @@
             "ActionTag": 1567330822,
             "Size": {
               "X": 640.0,
-              "Y": 860.0
+              "Y": 740.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"

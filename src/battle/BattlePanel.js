@@ -47,11 +47,10 @@ var BattlePanel = cc.Node.extend({
         }.bind(this);
 
         this.pack_btn = root.getChildByName('pack_btn');
-        this.pack_btn.setLocalZOrder(1);
         bindButtonCallback(this.pack_btn, function () {
             var packUnit = new PackUnit();
             var gamePopup = new GamePopup(packUnit, cc.p(320, 580), false);
-            popup(gamePopup, 3000);
+            popup(gamePopup, 101);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
@@ -80,12 +79,15 @@ var BattlePanel = cc.Node.extend({
         }.bind(this);
 
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
+            toggleTip({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
             this.enableBossBattleTimeCounter(PlayerData.getStageData());
         }.bind(this));
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
+            toggleTip({"text": BATTLE_TIPS.BOSS_BATTLE_FAIL, "color": TIPS_COLOR.YELLOW});
             this.disableBossBattleTimeCounter();
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
+            toggleTip({"text": BATTLE_TIPS.BOSS_BATTLE_VICTORY, "color": TIPS_COLOR.YELLOW});
             this.disableBossBattleTimeCounter();
         }.bind(this));
 

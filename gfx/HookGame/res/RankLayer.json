@@ -210,7 +210,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0186
                 },
                 "PreSize": {
@@ -440,10 +440,10 @@
                   "X": 0.0891,
                   "Y": 0.0209
                 },
-                "LeftMargin": 338.1119,
-                "RightMargin": 244.8881,
-                "TopMargin": 143.2518,
-                "BottomMargin": 698.7482,
+                "LeftMargin": 338.1147,
+                "RightMargin": 244.8853,
+                "TopMargin": 143.2525,
+                "BottomMargin": 698.7475,
                 "CallBackType": "Touch",
                 "Tag": 591,
                 "ActionTag": -1707227176,
@@ -553,7 +553,7 @@
                       "X": 160.0,
                       "Y": 55.0
                     },
-                    "Name": "pvp_tab",
+                    "Name": "gold_tab",
                     "ctype": "CheckBoxObjectData"
                   },
                   {
