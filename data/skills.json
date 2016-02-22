@@ -1489,7 +1489,7 @@
   },
   "s10402": {
     "name": "不洁射击",
-    "desc": "缩短{effect1_value}的攻击速度。",
+    "desc": "缩短{effect1_value}的攻击间隔。",
     "buffDesc": "无",
     "icon": "s10402.png",
     "type": 0,
