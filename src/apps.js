@@ -149,7 +149,7 @@ var CONSTS = {
                 "level": 3,
                 "chestStyle": "chest01.json"
             },
-            "w": 13
+            "w": 1300
         },
         {
             "f": {

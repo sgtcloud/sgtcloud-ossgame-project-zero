@@ -1461,6 +1461,7 @@ var ShopLayerMenu = BattleMenu.extend({
             var price = goods.price;
             if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
                 PlayerData.updateResource([PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)]);
+                PlayerData.updatePlayer();
                 if (price.unit === "gold") {
                     customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
                 } else if (price.unit === "gem") {
@@ -1469,13 +1470,12 @@ var ShopLayerMenu = BattleMenu.extend({
                     customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
-                PlayerData.updatePlayer();
 
                 toggleTip({
-                    'beforeShow':function() {
+                    'beforeShow':cc.callFunc(function () {
                         cc.hide();
                         cc.delayTime(0.1);
-                    },'delay':2.0,
+                    }, this),'delay':2.0,
                     'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
             } else {
