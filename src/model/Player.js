@@ -152,7 +152,11 @@ var PlayerData = {
             }
         }
         if (!player.first_time) {
-            player.first_time = Date.parse(new Date());
+            sgt.RouterService.getCurrentTimestamp(function(result,data){
+                player.first_time = data;
+                console.log('同步服务器时间：'+data);
+            });
+            //player.first_time = Date.parse(new Date());
         }
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
@@ -182,6 +186,7 @@ var PlayerData = {
             /*if (result) {
              console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
              }*/
+            customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
         });
     },
     getHeroes: function () {

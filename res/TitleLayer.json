@@ -92,6 +92,45 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "EnemyList.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 140.0002,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2188,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.5938,
+                  "Y": 1.0
+                },
+                "LeftMargin": 140.0002,
+                "RightMargin": 119.9998,
+                "Tag": 128,
+                "ActionTag": 1026106168,
+                "Size": {
+                  "X": 380.0,
+                  "Y": 120.0
+                },
+                "Name": "enemyList",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
@@ -679,45 +718,6 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "EnemyList.json",
-                  "Plist": ""
-                },
-                "StretchWidthEnable": false,
-                "StretchHeightEnable": false,
-                "InnerActionSpeed": 1.0,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 140.0002,
-                  "Y": 0.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": true,
-                "PrePosition": {
-                  "X": 0.2188,
-                  "Y": 0.0
-                },
-                "PreSize": {
-                  "X": 0.5938,
-                  "Y": 1.0
-                },
-                "LeftMargin": 140.0002,
-                "RightMargin": 119.9998,
-                "Tag": 128,
-                "ActionTag": 1026106168,
-                "Size": {
-                  "X": 380.0,
-                  "Y": 120.0
-                },
-                "Name": "enemyList",
-                "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
                   "Path": "mainUI/bg_15.png",
                   "Plist": ""
                 },
@@ -815,7 +815,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 531.9988,
@@ -889,7 +889,7 @@
                   "Y": 0.85
                 },
                 "PreSize": {
-                  "X": 0.1563,
+                  "X": 0.1562,
                   "Y": 0.6667
                 },
                 "LeftMargin": 530.9987,

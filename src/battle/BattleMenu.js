@@ -1323,6 +1323,12 @@ var ShopLayerMenu = BattleMenu.extend({
         this.last_update = 0;
         this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
         this.falg = true;
+
+        customEventHelper.bindListener(EVENT.GOTO_NEXT_STAGE, function () {
+            if(shopView.getChildByName('moneyTree_tab').visible)
+                shopView.getChildByName('moneyTree_tab').getChildByName("gold_text").setString(PlayerData.getStageData().getMoneyTreeRatio());
+        }.bind(this));
+
         this.showMoneyTreeView = function (name) {
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
@@ -1335,10 +1341,6 @@ var ShopLayerMenu = BattleMenu.extend({
             buyBtn.addClickEventListener(function () {
                 self.buyGold(CONSTS.money_tree_one_price, PlayerData.getStageData().getMoneyTreeRatio(), true);
             });
-
-            customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
-                goldText.setString(PlayerData.getStageData().getMoneyTreeRatio());
-            }.bind(this));
 
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
@@ -1421,7 +1423,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 var res1 = itemLayer.getChildByName("res");
 
                 var icon = res1.getChildByName("icon")
-                icon.loadTexture("res/icon/resources/" + datas.price.unit + ".png");
+                icon.loadTexture("res/icon/resources_small/" + datas.price.unit + ".png");
                 icon.setVisible(true);
 
                 var resSaleText = res1.getChildByName("sale_text");
@@ -1494,7 +1496,7 @@ var RankLayerMenu = BattleMenu.extend({
         var myNumText = this.root.getChildByName('myNum_text');
         var rankViewRoot = ccs.csLoader.createNode(res.rank_view_json).getChildByName('root');
         var tabParams = [
-            {name: "pvp_tab"},
+            {name: "gold_tab"},
             {name: "stage_tab"}
         ];
         this.buttons = {};
@@ -1526,6 +1528,19 @@ var RankLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
 
+        customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
+            for (var i in this.buttons) {
+                if(this.buttons[i].selected && i === event.getUserData().leaderId.replace("rank","tab")){
+                   /* PlayerData.getMyRankByType(event.getUserData().leaderId, function (result, data) {
+                        if (result && cc.isObject(data))
+                            myNumText.setString(data.index + 1);
+                    });*/
+                    this.showMenuLayer(i);
+                    return ;
+                }
+            }
+        }.bind(this));
+
         this.showRankList = function (type) {
             listView.removeAllChildren();
             PlayerData.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
@@ -1556,8 +1571,9 @@ var RankLayerMenu = BattleMenu.extend({
             root.getChildByName('prestige_text').setVisible(false);
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');
+            var text = root.getChildByName('text');
             setFont([playerName]);
-            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num]);
+            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num,text]);
             levelText.setString("Lv." + data.player.level);
             num.setString(data.index + 1);
             playerName.setString(data.player.name);
@@ -1566,12 +1582,19 @@ var RankLayerMenu = BattleMenu.extend({
             } else {
                 myBg.setVisible(false);
             }
-            if (type == 'pvp_tab') {
-                root.getChildByName('pvp_rank').setVisible(true);
+
+            text.setString(data.score);
+            if (type == 'gold_tab') {
+                root.getChildByName('gold_rank').setVisible(true);
                 root.getChildByName('stage_rank').setVisible(false);
+                root.getChildByName('Max_stage').setVisible(false);
+                root.getChildByName('Max_gold').setVisible(true);
+                text.setColor(cc.color(255, 229, 1));
             } else {
                 root.getChildByName('stage_rank').setVisible(true);
-                root.getChildByName('pvp_rank').setVisible(false);
+                root.getChildByName('gold_rank').setVisible(false);
+                root.getChildByName('Max_stage').setVisible(true);
+                root.getChildByName('Max_gold').setVisible(false);
             }
             return root;
         };
