@@ -126,5 +126,45 @@
       "chestStyle": "chest01.json"
     },
     "w": 13
+  },
+  {
+    "f": {
+      "skill_id": "small_blood",
+      "level": 1,
+      "chestStyle": "chest01.json"
+    },
+    "w": 10
+  },
+  {
+    "f": {
+      "skill_id": "small_blood",
+      "level": 2,
+      "chestStyle": "chest01.json"
+    },
+    "w": 8
+  },
+  {
+    "f": {
+      "skill_id": "small_blood",
+      "level": 3,
+      "chestStyle": "chest01.json"
+    },
+    "w": 6
+  },
+  {
+    "f": {
+      "skill_id": "middle_blood",
+      "level": 1,
+      "chestStyle": "chest01.json"
+    },
+    "w": 4
+  },
+  {
+    "f": {
+      "skill_id": "large_blood",
+      "level": 1,
+      "chestStyle": "chest01.json"
+    },
+    "w": 2
   }
 ]
