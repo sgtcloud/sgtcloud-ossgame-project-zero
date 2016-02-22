@@ -82,14 +82,14 @@
                 "Tag": 40,
                 "ActionTag": -138313478,
                 "Size": {
-                  "X": 360.0,
-                  "Y": 30.0
+                  "X": 400.0,
+                  "Y": 60.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 16,
+                "FontSize": 18,
                 "LabelText": "一二三四五六七八九十一二三四五六七八九十",
                 "OutlineColor": {
                   "G": 0,
@@ -107,8 +107,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 180.0,
-                  "Y": 15.0
+                  "X": 200.0,
+                  "Y": 30.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -121,18 +121,18 @@
                   "Y": 0.5
                 },
                 "PreSize": {
-                  "X": 0.8889,
-                  "Y": 0.5333
+                  "X": 0.9,
+                  "Y": 0.3
                 },
                 "LeftMargin": 20.0,
                 "RightMargin": 20.0,
-                "TopMargin": 7.0,
-                "BottomMargin": 7.0,
+                "TopMargin": 21.0,
+                "BottomMargin": 21.0,
                 "Tag": 37,
                 "ActionTag": -48941033,
                 "Size": {
-                  "X": 320.0,
-                  "Y": 16.0
+                  "X": 360.0,
+                  "Y": 18.0
                 },
                 "Name": "text",
                 "ctype": "TextObjectData"
@@ -140,16 +140,16 @@
             ],
             "ActionTag": -1872793719,
             "Size": {
-              "X": 360.0,
-              "Y": 30.0
+              "X": 400.0,
+              "Y": 60.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 360.0,
-          "Y": 30.0
+          "X": 400.0,
+          "Y": 60.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
