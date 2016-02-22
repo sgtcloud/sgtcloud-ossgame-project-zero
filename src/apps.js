@@ -169,6 +169,12 @@ var CONSTS = {
     ]
 };
 
+var ITEM = {
+    "small_hp_potion": "small_hp_potion",
+    "medium_hp_potion": "medium_hp_potion",
+    "large_hp_potion": "large_hp_potion"
+};
+
 //为了显示CD和复活的时候显示的格式
 Date.prototype.Format = function (fmt) { //author: meizz
     var o = {
@@ -280,7 +286,7 @@ function showCover() {
     if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
-    }else{
+    } else {
         initGame();
     }
 

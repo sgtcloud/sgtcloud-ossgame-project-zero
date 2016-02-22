@@ -1,5 +1,37 @@
 //战斗单位逻辑类，英雄和敌人的父类
-var BattleUnit = Unit.extend({
+var BattleUnit = CCSUnit.extend({
+
+    LIFE_BAR_ZORDER_OFFSET: 2,
+
+    _initLifeBar: function () {
+        //血条的NODE
+        this.lifeBar = ccs.load(res.hero_blood_json).node.getChildByName('root');
+        this.lifeBar.removeFromParent(true);
+        this.lifeBar.setPosition(cc.p(-this._uiComponentTopLeft, this._uiComponentHeight + 2));
+        this.addChild(this.lifeBar, this.LIFE_BAR_ZORDER_OFFSET);
+    },
+
+    showLifeBar: function () {
+        if (!this.lifeBar) {
+            this._initLifeBar();
+        }
+        this.lifeBar.setVisible(true);
+    },
+
+    hideLifeBar: function () {
+        if (this.lifeBar) {
+            this.lifeBar.setVisible(false);
+        }
+    },
+
+    refreshLifeBar: function () {
+        if (this.isDead()) {
+            this.hideLifeBar();
+        } else {
+            this.showLifeBar();
+            this.lifeBar.getChildByName('blood_bar').setPercent(this.getLife() / this.getMaxLife() * 100);
+        }
+    },
 
     getMaxLife: function () {
         cc.log("should be override");
@@ -82,6 +114,49 @@ var BattleUnit = Unit.extend({
                     this.onMove();
                 }
             }
+        }
+    },
+
+    BUFF_ZORDER_OFFSET: 3,
+
+    addBuff: function (buffEffect) {
+        if (!this.buffIcons) {
+            this.buffIcons = [];
+        }
+        this.buffIcons.push(buffEffect);
+        buffEffect.setAnchorPoint(0, 0);
+        this.addChild(buffEffect, this.BUFF_ZORDER_OFFSET);
+        this.refreshBuffIcons();
+    },
+
+    removeBuff: function (buffEffect) {
+        for (var i in this.buffIcons) {
+            if (this.buffIcons[i] === buffEffect) {
+                this.buffIcons.splice(i, 1);
+            }
+        }
+        buffEffect.removeFromParent(true);
+        this.refreshBuffIcons();
+    },
+
+    _uiComponentTopLeft: 64,
+    _uiComponentHeight: 86,
+
+    refreshBuffIcons: function () {
+        for (var i in this.buffIcons) {
+            this.buffIcons[i].setPosition(cc.p((i * 24) - this._uiComponentTopLeft, this._uiComponentHeight + 6));
+        }
+    },
+
+    showBuffIcons: function () {
+        for (var i in this.buffIcons) {
+            this.buffIcons[i].setVisible(true);
+        }
+    },
+
+    hideBuffIcons: function () {
+        for (var i in this.buffIcons) {
+            this.buffIcons[i].setVisible(false);
         }
     },
 

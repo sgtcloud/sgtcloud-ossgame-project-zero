@@ -83,7 +83,23 @@ var SpriteGroup = function (_sprites) {
             return temp[rand];
         }
         return undefined;
-    }
+    };
+    this.findLowestHpUnit = function () {
+        var lowestHpUnit = null;
+        var hp = 0;
+        for (var i in sprites) {
+            var sprite = sprites[i];
+            if (!sprite.isDead() && sprite.ready) {
+                // find the lowest hp ratio not the value
+                var tmpHp = sprite.getLife() / sprite.getMaxLife();
+                if (hp === 0 || tmpHp < hp) {
+                    hp = tmpHp;
+                    lowestHpUnit = sprite;
+                }
+            }
+        }
+        return lowestHpUnit;
+    };
 };
 
 var BattleField = cc.Class.extend({
@@ -137,6 +153,10 @@ var BattleField = cc.Class.extend({
             var activeSkill = new ActiveSkill(event.getUserData(), this);
             activeSkill.cast(this.container);
         }.bind(this));
+        customEventHelper.bindListener(EVENT.USE_GAME_ITEMS, function (event) {
+            this.useItem(event.getUserData());
+        }.bind(this));
+
 
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             if (!PlayerData.getStageData().isBossBattle()) {
@@ -148,6 +168,30 @@ var BattleField = cc.Class.extend({
             PlayerData.getStageData().leaveBossBattle();
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
+    },
+
+    useItem: function (item) {
+        if (item.id === ITEM.small_hp_potion) {
+            this.healTargets(this.findItemTargets(item), 100);
+        } else if (item.id === ITEM.medium_hp_potion) {
+            this.healTargets(this.findItemTargets(item), 500);
+        } else if (item.id === ITEM.large_hp_potion) {
+            this.healTargets(this.findItemTargets(item), 2000);
+        }
+    },
+
+    healTargets: function (targets, val) {
+        for (var i in targets) {
+            targets[i].doDamage(-val);
+        }
+    },
+
+    findItemTargets: function (item) {
+        var targets = [];
+        if (item.id === ITEM.small_hp_potion || item.id === ITEM.medium_hp_potion || item.id === ITEM.large_hp_potion) {
+            targets.push(this.heroUnits.findLowestHpUnit());
+        }
+        return targets;
     },
 
     initSpritesPositions: function (spritesLayer) {
@@ -179,8 +223,8 @@ var BattleField = cc.Class.extend({
     onPlayerTap: function (pos) {
         var target = this.findNextEnemy();
         if (target) {
-            var tapSkill = new TapSkill();
-            tapSkill.cast(this.container, target, pos);
+            var tapSkill = new TapSkill(this);
+            tapSkill.cast(target);
             player.statistics.total_tap++;
         }
     }
@@ -318,6 +362,7 @@ var BattleField = cc.Class.extend({
     onBattleWin: function () {
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
+            stageData.leaveBossBattle();
             customEventHelper.sendEvent(EVENT.WIN_BOSS_BATTLE);
             this.generateStageLoots(stageData.getBonus());
             player.stage_battle_num = 1;

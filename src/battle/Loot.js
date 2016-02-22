@@ -3,7 +3,7 @@
  */
 
 //掉落物品
-var Loot = Unit.extend({
+var Loot = CCSUnit.extend({
 
     ctor: function (unit, size, bonus) {
         this._super();
@@ -87,7 +87,7 @@ Loot.generateLoots = function (bonusSrc, pos) {
     var lootSprites = [];
     var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
     if (bonusSrc.unit === "gold") {
-        bonus.value = Math.floor(bonus.value * (1 + (PlayerData.globe_gold_rate + PlayerData.tmp_gold_rate ) / 100));
+        bonus.value = Math.floor(bonus.value * (1 + (PlayerData.globe_gold_rate + PlayerData.buff_gold_rate ) / 100));
         if (bonus.value == 1) {
             lootSprites.push(new Loot(bonus.unit, "little"));
         } else if (bonus.value > 1 && bonus.value <= 5) {

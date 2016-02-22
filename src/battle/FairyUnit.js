@@ -1,7 +1,7 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var FairyUnit = Unit.extend({
+var FairyUnit = CCSUnit.extend({
 
     ctor: function (battle) {
         this._super();

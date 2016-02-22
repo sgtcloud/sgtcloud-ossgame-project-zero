@@ -76,32 +76,83 @@
                   "Y": 0.0
                 },
                 "PreSize": {
-                  "X": 0.0,
+                  "X": 1.0,
                   "Y": 1.0
                 },
-                "RightMargin": 180.0,
                 "Tag": 40,
                 "ActionTag": -138313478,
                 "Size": {
-                  "X": 0.0,
-                  "Y": 30.0
+                  "X": 400.0,
+                  "Y": 60.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 17,
+                "LabelText": "一二三四五六七八九十一二三四五六七八九十",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 200.0001,
+                  "Y": 30.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.9,
+                  "Y": 0.8333
+                },
+                "LeftMargin": 20.0001,
+                "RightMargin": 19.9999,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
+                "Tag": 37,
+                "ActionTag": -48941033,
+                "Size": {
+                  "X": 360.0,
+                  "Y": 50.0
+                },
+                "Name": "text",
+                "ctype": "TextObjectData"
               }
             ],
             "ActionTag": -1872793719,
             "Size": {
-              "X": 180.0,
-              "Y": 30.0
+              "X": 400.0,
+              "Y": 60.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 180.0,
-          "Y": 30.0
+          "X": 400.0,
+          "Y": 60.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

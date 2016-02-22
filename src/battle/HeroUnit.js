@@ -5,27 +5,6 @@
 //英雄扩展类
 var HeroUnit = BattleUnit.extend({
 
-    lifeBar: null,
-
-    initLifeBar: function () {
-        //血条的NODE
-        this.lifeBar = ccs.load(res.hero_blood_json).node.getChildByName('root').getChildByName('blood_bar');
-        this.lifeBar.setAnchorPoint(0.5, 0.5);
-        this.lifeBar.removeFromParent(true);
-        this.lifeBar.setPositionY(86);
-        this.addChild(this.lifeBar);
-    },
-
-    refreshLifeBar: function () {
-        if (this.isDead()) {
-            this.lifeBar.setVisible(false);
-        } else {
-            this.lifeBar.setVisible(true);
-        }
-        var max = this.hero.getLife();
-        this.lifeBar.setPercent(this.hero.getCurrentLife() / max * 100);
-    },
-
     getAnimateDelay: function () {
         return this.hero.getAnimateDelay();
     },
@@ -46,7 +25,7 @@ var HeroUnit = BattleUnit.extend({
             }
         }
     },
-    //刷新刷条
+
     getLife: function () {
         return this.hero.getCurrentLife();
     },
@@ -84,6 +63,7 @@ var HeroUnit = BattleUnit.extend({
     onDead: function () {
         this.recover = this.hero.getRecover();
         customEventHelper.sendEvent(EVENT.HERO_DIE, this.hero);
+        this.hideBuffIcons();
         this.refreshLifeBar();
         this.stopAllActions();
         this.playAnimation("die", false, function () {
@@ -108,6 +88,7 @@ var HeroUnit = BattleUnit.extend({
 //复活时被调用的
     onRevive: function () {
         this.setVisible(true);
+        this.showBuffIcons();
         this.tombstone.setVisible(false);
         this.tombstone.removeFromParent(true);
         this.reset();
@@ -144,7 +125,6 @@ var HeroUnit = BattleUnit.extend({
         this.hero = hero;
         this.initSprite(res[this.hero.getFile()], 'hero', "stand");
 
-        this.initLifeBar();
         this.refreshLifeBar();
 
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
