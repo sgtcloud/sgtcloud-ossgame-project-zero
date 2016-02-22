@@ -1510,7 +1510,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 itemIcon.loadTexture("res/icon/resources/" + datas.propId + ".png");
                 iconLayer.setPosition(shopIconLayer.getPosition());
                 itemLayer.addChild(iconLayer);
-                itemLayer.getChildByName("item_name").setString(datas.propId);
+                itemLayer.getChildByName("item_name").setString(CONSTS.resources_mapping[datas.propId]);
 
                 var res1 = itemLayer.getChildByName("res");
 
