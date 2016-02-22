@@ -19,6 +19,16 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
+              <AbstractNodeData Name="enemyList" ActionTag="1026106168" Tag="128" IconVisible="True" LeftMargin="140.0002" RightMargin="119.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="380.0000" Y="120.0000" />
+                <AnchorPoint />
+                <Position X="140.0002" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2188" />
+                <PreSize X="0.5938" Y="1.0000" />
+                <FileData Type="Normal" Path="EnemyList.csd" Plist="" />
+              </AbstractNodeData>
               <AbstractNodeData Name="box" ActionTag="-897076265" Tag="104" IconVisible="False" LeftMargin="10.9998" RightMargin="494.0002" TopMargin="25.0001" BottomMargin="34.9999" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="135.0000" Y="60.0000" />
                 <Children>
@@ -153,16 +163,6 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="enemyList" ActionTag="1026106168" Tag="128" IconVisible="True" LeftMargin="140.0002" RightMargin="119.9998" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="380.0000" Y="120.0000" />
-                <AnchorPoint />
-                <Position X="140.0002" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2188" />
-                <PreSize X="0.5938" Y="1.0000" />
-                <FileData Type="Normal" Path="EnemyList.csd" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="levelText_bg" ActionTag="-76509588" Tag="41" IconVisible="False" LeftMargin="511.0695" RightMargin="-31.0695" TopMargin="39.4844" BottomMargin="40.5156" Scale9Enable="True" LeftEage="20" RightEage="35" Scale9OriginX="20" Scale9Width="7" Scale9Height="58" ctype="ImageViewObjectData">
                 <Size X="160.0000" Y="40.0000" />
