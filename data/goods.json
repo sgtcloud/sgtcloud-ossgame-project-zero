@@ -62,5 +62,29 @@
       "unit": "golden_key",
       "value": 3
     }
+  },
+  "g10009": {
+    "propId": "small_blood",
+    "num": 10,
+    "price": {
+      "unit": "gem",
+      "value": 1
+    }
+  },
+  "g10010": {
+    "propId": "middle_blood",
+    "num": 5,
+    "price": {
+      "unit": "gem",
+      "value": 3
+    }
+  },
+  "g10011": {
+    "propId": "large_blood",
+    "num": 1,
+    "price": {
+      "unit": "gem",
+      "value": 2
+    }
   }
 }
