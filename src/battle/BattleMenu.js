@@ -226,9 +226,7 @@ var BloodBox = function (root) {
     this.init();
 }
 BloodBox.prototype.init = function () {
-    var smallNum = player.resource.small_blood;
-    var middleNum = player.resource.middle_blood;
-    var largeNum = player.resource.large_blood;
+
     this.smallBtn = this.root.getChildByName('small_btn');
     this.smallText = this.root.getChildByName('small_text');
     this.middleBtn = this.root.getChildByName('middle_btn');
@@ -257,10 +255,10 @@ BloodBox.prototype.init = function () {
         drawNode.clear()
         drawNode.ctor();
         var radius = Math.min(node.width, node.height) / 2 + 0.5;
-        var color = cc.color(0, 0, 0,100);
+        var color = cc.color(0, 0, 0, 100);
         var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
         drawNode.drawDot(center, radius, color);
-        drawNode.drawCircle(center,radius,360, 60, false, node.width, color);
+        drawNode.drawCircle(center, radius, 360, 60, false, node.width, color);
         return drawNode;
     }
 
@@ -292,22 +290,37 @@ BloodBox.prototype.init = function () {
     });
 
     var that = this;
-    var initBtn = function (btn, text, num, data) {
+    var initBtn = function (btn, text, data) {
         btn.setEnabled(true);
         btn.setBright(true);
         btn.addClickEventListener(function () {
             customEventHelper.sendEvent(EVENT.USE_GAME_ITEMS, data);
-            updateNum(text, --num, btn);
+            switch (data.id) {
+                case ITEM.small_hp_potion:
+                    updateNum(text, --player.resource.small_blood, btn);
+                    break;
+                case ITEM.medium_hp_potion:
+                    updateNum(text, --player.resource.middle_blood, btn);
+                    break;
+                case ITEM.large_hp_potion:
+                    updateNum(text, --player.resource.large_blood, btn);
+                    break;
+            }
+            PlayerData.updatePlayer();
         });
     };
-
-    updateNum(this.smallText, smallNum, this.smallBtn);
-    updateNum(this.middleText, middleNum, this.middleBtn);
-    updateNum(this.largeText, largeNum, this.largeBtn);
-
-    initBtn(this.smallBtn, this.smallText, smallNum, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
-    initBtn(this.middleBtn, this.middleText, middleNum, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
-    initBtn(this.largeBtn, this.largeText, largeNum, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});
+    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+        refreshNum();
+    });
+    function refreshNum(){
+        updateNum(that.smallText,  player.resource.small_blood||(player.resource.small_blood=100), that.smallBtn);
+        updateNum(that.middleText, player.resource.middle_blood||(player.resource.middle_blood=100), that.middleBtn);
+        updateNum(that.largeText, player.resource.large_blood||(player.resource.large_blood=100), that.largeBtn);
+    }
+    refreshNum();
+    initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
+    initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
+    initBtn(this.largeBtn, this.largeText, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});
 };
 
 var SkillListMenu = BattleMenu.extend({
@@ -448,7 +461,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
-                    elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife,0));
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife, 0));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
                     listener(event, elements);
@@ -603,7 +616,7 @@ var HeroListMenu = BattleMenu.extend({
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
                 //console.log(hero.getLife())
                 //elements.dps_text.setString(parseInt(hero.getLife()));
-                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
+                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
             });
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                 refeshUpgradeLayer(hero, elements);
@@ -681,7 +694,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
                     var levelLife = hero.getLevelData()['life'];
                     var effect = nextLevelLife - levelLife;
-                    elements.upgrade_btn.buffNum_text.setString(toFixed2(effect,0));
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(effect, 0));
                 }
                 if (hero.getLv() == 1) {
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
@@ -699,7 +712,7 @@ var HeroListMenu = BattleMenu.extend({
             heroDesc.initData(hero);
         }
 
-        function toFixed2(num,fixed) {
+        function toFixed2(num, fixed) {
             var _effect = 0;
             var absEffect = Math.abs(num);
             if (absEffect > 0 && absEffect < 1) {
@@ -742,7 +755,7 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            var _effect = toFixed2(showEffect,SkillEffectMappings[nextEffects[0]['type']]['fixed']);
+            var _effect = toFixed2(showEffect, SkillEffectMappings[nextEffects[0]['type']]['fixed']);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                 _effect += "%"
             }
@@ -788,7 +801,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.level_text = lock_btn.getChildByName('level_text');
             elements.lock_btn.lock = lock_btn.getChildByName('lock');
             elements.lock_btn.layer.setVisible(false);
-            elements.lock_btn.btn.addClickEventListener(function(){
+            elements.lock_btn.btn.addClickEventListener(function () {
                 toggleTip('未达到解锁需求等级！');
             });
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
@@ -1074,16 +1087,16 @@ var EquipListMenu = BattleMenu.extend({
             setFont(name);
             icon.loadTexture("res/icon/heroes/" + hero.getIcon());
             dps_text.setString(parseInt(hero.getLife()));
-            customEventHelper.bindListener(EVENT.HERO_UPGRADE,function(event){
-                var data=event.getUserData();
-                if(data['heroId']===hero.getId()){
+            customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+                var data = event.getUserData();
+                if (data['heroId'] === hero.getId()) {
                     lv.setString("Lv." + hero.getLv() + '/' + hero.getMaxLevel());
                 }
             });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
                 //console.log(hero.getLife())
                 //dps_text.setString(parseInt(hero.getLife()));
-                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
+                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventhero = event.getUserData();
@@ -1150,7 +1163,7 @@ var EquipListMenu = BattleMenu.extend({
                 var elements = {};
                 elements.lock_btn = {};
                 elements.lock_btn.layer = lockLayer;
-                lockBtn.addClickEventListener(function(){
+                lockBtn.addClickEventListener(function () {
                     toggleTip('未达到解锁需求等级！');
                 });
                 elements.upgrade_btn = {};
@@ -1192,7 +1205,7 @@ var EquipListMenu = BattleMenu.extend({
                 });
                 refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
-                    if (equip.getType()===0&&!equip.isMaxLevel()&&canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
+                    if (equip.getType() === 0 && !equip.isMaxLevel() && canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
                         elements.lock_btn.layer.isVisible() && elements.lock_btn.layer.setVisible(false);
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
                     }
@@ -1331,7 +1344,7 @@ var ShopLayerMenu = BattleMenu.extend({
         this.falg = true;
 
         customEventHelper.bindListener(EVENT.GOTO_NEXT_STAGE, function () {
-            if(shopView.getChildByName('moneyTree_tab').visible)
+            if (shopView.getChildByName('moneyTree_tab').visible)
                 shopView.getChildByName('moneyTree_tab').getChildByName("gold_text").setString(PlayerData.getStageData().getMoneyTreeRatio());
         }.bind(this));
 
