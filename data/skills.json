@@ -1512,7 +1512,7 @@
         "level": 1,
         "effect1": {
           "type": "atk_period_value",
-          "value": 0
+          "value": -0.1
         },
         "upgrade": {
           "unit": "gold",
@@ -1526,7 +1526,7 @@
         "level": 2,
         "effect1": {
           "type": "atk_period_value",
-          "value": 0
+          "value": -0.2
         },
         "upgrade": {
           "unit": "gold",
@@ -1540,7 +1540,7 @@
         "level": 3,
         "effect1": {
           "type": "atk_period_value",
-          "value": 0
+          "value": -0.3
         },
         "upgrade": {
           "unit": "gold",
@@ -1554,7 +1554,7 @@
         "level": 4,
         "effect1": {
           "type": "atk_period_value",
-          "value": 0
+          "value": -0.4
         },
         "upgrade": {
           "unit": "gold",
@@ -1568,7 +1568,7 @@
         "level": 5,
         "effect1": {
           "type": "atk_period_value",
-          "value": -1
+          "value": -0.5
         },
         "upgrade": {
           "unit": "gold",
