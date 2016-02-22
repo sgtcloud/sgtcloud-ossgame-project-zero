@@ -308,6 +308,7 @@ BloodBox.prototype.init = function () {
                     updateNum(text, --player.resource.large_blood, btn);
                     break;
             }
+            PlayerData.updatePlayer();
         });
     };
 
