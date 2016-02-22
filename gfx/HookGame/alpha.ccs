@@ -346,6 +346,9 @@
           </PlistImageFolder>
           <Image Name="goldTab_1.png" />
           <Image Name="goldTab_2.png" />
+          <Image Name="gold_rank.png" />
+          <Image Name="Max_gold.png" />
+          <Image Name="Max_stage.png" />
         </Folder>
         <Folder Name="shopUI">
           <Image Name="moneyTree_bg.png" />
