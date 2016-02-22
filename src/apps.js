@@ -17,7 +17,7 @@ var CONSTS = {
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
-    "resources_mapping":{
+    "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
         "relic": '宝物',
@@ -169,6 +169,16 @@ var CONSTS = {
             "w": 13
         }
     ]
+};
+
+var TIPS_COLOR = {
+    RED: cc.color(234, 34, 37),
+    GREEN: cc.color(62, 191, 60),
+    WHITE: cc.color(255, 255, 255),
+    PURPLE: cc.color(255, 95, 207),
+    BLUE: cc.color(2, 177, 234),
+    YELLOW: cc.color(255, 229, 2),
+    PINK: cc.color(255, 74, 107)
 };
 
 var ITEM = {

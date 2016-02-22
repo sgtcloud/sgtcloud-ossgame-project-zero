@@ -223,8 +223,8 @@ var BattleField = cc.Class.extend({
     onPlayerTap: function (pos) {
         var target = this.findNextEnemy();
         if (target) {
-            var tapSkill = new TapSkill(this);
-            tapSkill.cast(target);
+            var tapSkill = new TapSkill(this, target);
+            tapSkill.cast(pos);
             player.statistics.total_tap++;
         }
     }
@@ -450,3 +450,9 @@ var BattleField = cc.Class.extend({
     onEnemyVanish: function (enemy) {
     }
 });
+
+var BATTLE_TIPS = {
+    START_BOSS_BATTLE: "开始挑战Boss关卡",
+    BOSS_BATTLE_FAIL: "Boss关卡挑战失败",
+    BOSS_BATTLE_VICTORY: "Boss关卡挑战成功"
+};
