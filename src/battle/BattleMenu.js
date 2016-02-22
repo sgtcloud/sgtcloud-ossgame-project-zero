@@ -1464,7 +1464,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                toggleTip({'delay':2.0,'text':'成功购买 '+CONSTS.resources_mapping[goods.propId] + " * " + goods.num});
+                toggleTip({'delay':2.0,'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value});
             } else {
                 if (price.unit === 'gem') {
                     new Popup1("友情提示", "当前钻石不足", function (popup) {
@@ -1589,7 +1589,7 @@ var RankLayerMenu = BattleMenu.extend({
                 root.getChildByName('stage_rank').setVisible(false);
                 root.getChildByName('Max_stage').setVisible(false);
                 root.getChildByName('Max_gold').setVisible(true);
-                text.setColor(cc.color(255, 229, 1));
+                text.setColor(TIPS_COLOR.YELLOW);
             } else {
                 root.getChildByName('stage_rank').setVisible(true);
                 root.getChildByName('gold_rank').setVisible(false);

@@ -42,21 +42,27 @@ var ChestUnit = CCSUnit.extend({
     CHEST_LOOT_ZORDER_OFFET: 1,
 
     _generateLoot: function () {
-        if (this.goods.skill_id == 'gold') {
+        if(player.resource.hasOwnProperty(this.goods.skill_id)){
             cc.log('获取金币');
             var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
+            //toggleTip({'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value});
             this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
                 "unit": "gold",
                 "value": goldValue
             }), this.CHEST_LOOT_ZORDER_OFFET);
-        }
-        else {
+        } else {
             //发送释放buff事件
             cc.log('释放buff');
             customEventHelper.sendEvent(EVENT.CAST_SKILL_READY, {
                 skillId: this.goods.skill_id,
                 level: this.goods.level
             });
+        }
+        if (this.goods.skill_id == 'gold') {
+
+        }
+        else {
+
         }
         cc.log(this.goods.chestStyle + " , " + this.goods.skill_id + " , " + this.goods.level);
     }
