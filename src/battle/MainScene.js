@@ -82,7 +82,7 @@ var MainScene = cc.Scene.extend({
                     if(typeof  actions ==='function'){
                         sequence.push(actions);
                     }else if(actions instanceof  Array){
-                        Array.push.apply(sequence,actions)
+                        Array.prototype.push.apply(sequence,actions)
                     }
                 }
             }
