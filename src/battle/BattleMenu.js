@@ -379,7 +379,7 @@ function buildDesc(effects, desc, extend) {
     for (var i in effects) {
         var map = SkillEffectMappings[effects[i]['type']];
         var alas = map['name'];
-        var value = effects[i]['value'];
+        var value = effects[i]['value'].toFixed(map['fixed']);
         effectsObj[effects[i]['name']] = {}
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
@@ -449,7 +449,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextGoldValue);
                 }
                 if (nextLevelLife) {
-                    elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife));
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife,0));
                 }
                 elements.upgrade_btn.btn.addClickEventListener(function (event) {
                     listener(event, elements);
@@ -602,8 +602,9 @@ var HeroListMenu = BattleMenu.extend({
                 }
             });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
-                console.log(hero.getLife())
-                elements.dps_text.setString(parseInt(hero.getLife()));
+                //console.log(hero.getLife())
+                //elements.dps_text.setString(parseInt(hero.getLife()));
+                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
             });
             customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
                 refeshUpgradeLayer(hero, elements);
@@ -681,7 +682,7 @@ var HeroListMenu = BattleMenu.extend({
                     elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
                     var levelLife = hero.getLevelData()['life'];
                     var effect = nextLevelLife - levelLife;
-                    elements.upgrade_btn.buffNum_text.setString(toFixed2(effect));
+                    elements.upgrade_btn.buffNum_text.setString(toFixed2(effect,0));
                 }
                 if (hero.getLv() == 1) {
                     customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
@@ -699,11 +700,11 @@ var HeroListMenu = BattleMenu.extend({
             heroDesc.initData(hero);
         }
 
-        function toFixed2(num) {
+        function toFixed2(num,fixed) {
             var _effect = 0;
             var absEffect = Math.abs(num);
             if (absEffect > 0 && absEffect < 1) {
-                _effect = num.toFixed(2);
+                _effect = num.toFixed(fixed);
             } else {
                 _effect = Math.floor(num);
             }
@@ -742,7 +743,7 @@ var HeroListMenu = BattleMenu.extend({
             gold_text.setString(nextAmount);
             buffNum_text.ignoreContentAdaptWithSize(true);
             elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-            var _effect = toFixed2(showEffect);
+            var _effect = toFixed2(showEffect,SkillEffectMappings[nextEffects[0]['type']]['fixed']);
             if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
                 _effect += "%"
             }
@@ -790,7 +791,6 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.layer.setVisible(false);
             elements.lock_btn.btn.addClickEventListener(function(){
                 toggleTip('未达到解锁需求等级！');
-                console.log('未达到解锁需求等级！')
             });
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
@@ -836,7 +836,7 @@ var HeroListMenu = BattleMenu.extend({
                     var nextAmount = nextlevelData['upgrade']['value'];
                     var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
                     elements.upgrade_btn.text_yellow.setString(nextAmount);
-                    var showEffect = Math.floor(nextEffects[0].value - effects[0].value);
+                    var showEffect = (nextEffects[0].value - effects[0].value).toFixed(SkillEffectMappings[nextEffects[0]['type']]['fixed']);
                     if (showEffect > 0) {
                         showEffect = '+' + showEffect;
                     }
@@ -1082,13 +1082,13 @@ var EquipListMenu = BattleMenu.extend({
                 }
             });
             customEventHelper.bindListener(EVENT.ALL_HERO_REFRESH_PROPS, function (event) {
-                console.log(hero.getLife())
-                dps_text.setString(parseInt(hero.getLife()));
+                //console.log(hero.getLife())
+                //dps_text.setString(parseInt(hero.getLife()));
+                customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS,hero);
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function (event) {
                 var eventhero = event.getUserData();
                 if (eventhero.getId() === hero.getId()) {
-                    console.log(hero.getLife());
                     dps_text.setString(parseInt(hero.getLife()));
                 }
             });
