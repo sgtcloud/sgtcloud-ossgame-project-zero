@@ -89,8 +89,11 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 18,
+                "IsCustomSize": true,
+                "FontSize": 17,
                 "LabelText": "一二三四五六七八九十一二三四五六七八九十",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -107,7 +110,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 200.0,
+                  "X": 200.0001,
                   "Y": 30.0
                 },
                 "Scale": {
@@ -122,17 +125,17 @@
                 },
                 "PreSize": {
                   "X": 0.9,
-                  "Y": 0.3
+                  "Y": 0.8333
                 },
-                "LeftMargin": 20.0,
-                "RightMargin": 20.0,
-                "TopMargin": 21.0,
-                "BottomMargin": 21.0,
+                "LeftMargin": 20.0001,
+                "RightMargin": 19.9999,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
                 "Tag": 37,
                 "ActionTag": -48941033,
                 "Size": {
                   "X": 360.0,
-                  "Y": 18.0
+                  "Y": 50.0
                 },
                 "Name": "text",
                 "ctype": "TextObjectData"
