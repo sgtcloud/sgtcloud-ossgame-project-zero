@@ -226,9 +226,9 @@ var BloodBox = function (root) {
     this.init();
 }
 BloodBox.prototype.init = function () {
-    var smallNum = 10;
-    var middleNum = 10;
-    var largeNum = 10;
+    var smallNum = player.resource.small_blood;
+    var middleNum = player.resource.middle_blood;
+    var largeNum = player.resource.large_blood;
     this.smallBtn = this.root.getChildByName('small_btn');
     this.smallText = this.root.getChildByName('small_text');
     this.middleBtn = this.root.getChildByName('middle_btn');
@@ -300,7 +300,6 @@ BloodBox.prototype.init = function () {
             updateNum(text, --num, btn);
         });
     };
-
 
     updateNum(this.smallText, smallNum, this.smallBtn);
     updateNum(this.middleText, middleNum, this.middleBtn);

@@ -67,7 +67,7 @@ var MainScene = cc.Scene.extend({
                 text && buffTip.setString(text);
                 var sequence = [];
                 var dt = cc.delayTime(delay);
-                beforeShow && sequence.push(fadein);
+                beforeShow && sequence.push(beforeShow);
                 sequence.push(fadein);
                 afterShow && sequence.push(afterShow);
                 sequence.push(dt);
