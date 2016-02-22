@@ -51,7 +51,7 @@ var DamageNumber = cc.Node.extend({
         this.initData(val, ctr);
         this.setVisible(true);
         this.runAction(cc.spawn(cc.sequence(this.scaleLarge, this.scaleBack), cc.sequence(this.moveUp, this.disappare)));
-    },
+    }
 
 });
 

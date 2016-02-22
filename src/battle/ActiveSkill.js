@@ -8,7 +8,6 @@ var ActiveSkill = cc.Class.extend({
     TYPE_ONCE: "TYPE_ONCE",
     TYPE_BUFF: "TYPE_BUFF",
     TYPE_CONTINUOUS: "TYPE_CONTINUOUS",
-    shock: 0,
 
     ctor: function (skill, battle, firstCastTime) {
         //this.reuse(unit, val);
@@ -102,7 +101,7 @@ var ActiveSkill = cc.Class.extend({
                     this.targets[i].doDamage(this.effectValue);
                 }
             }
-            if (this.shock > 0) {
+            if (this.shock) {
                 customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, this.shock);
             }
             if (this.type === this.TYPE_BUFF) {
@@ -170,16 +169,26 @@ var ActiveSkill = cc.Class.extend({
 
 var TapSkill = ActiveSkill.extend({
 
-    ctor: function (battle) {
+    ctor: function (battle, target) {
         this._super(null, battle);
-        this.targets = [];
+        this.targets = [target];
         this.loadSkillEffectRes(res.tap_effect_json, 1);
         this.type = this.TYPE_ONCE;
     },
 
-    cast: function (target) {
+    TAP_ZORDER_OFFSET: 999,
+
+    cast: function (pos) {
         this.effectAnimFinishCount = 0;
-        this.runSkillEffect(target, this.hitEffects[0], "boom" + getRandomInt(1, 4));
-        target.doDamage(PlayerData.getTotalHit());
+        this.hitEffects[0].playAnimation("boom" + getRandomInt(1, 4), false, function () {
+            // count all the effects animations are finished
+            this.effectAnimFinishCount++;
+            if (this.effectAnimFinishCount >= this.targets.length) {
+                this.onCastFinish();
+            }
+        }.bind(this));
+        this.hitEffects[0].setPosition(pos);
+        this.battle.addSprite(this.hitEffects[0], this.TAP_ZORDER_OFFSET);
+        this.targets[0].doDamage(PlayerData.getTotalHit());
     }
 });
