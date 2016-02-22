@@ -101,7 +101,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleTip('已有相同类型buff');
+                        toggleTip('已使用相同效果的技能！');
                     }
                 }
             });
@@ -140,14 +140,14 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
                     //toggleTip();
                 } else {
-                    console.log('英雄已死亡，请稍候再点！');
+                    toggleTip('英雄已死亡...');
                 }
             }
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleTip('已有相同类型buff');
+                    toggleTip('已使用相同效果的技能！');
                 } else {
                     tryFire(levelData);
                 }
@@ -157,7 +157,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                 var dieHero = event.getUserData();
                 if (dieHero.hasSkill(that.skill.getId())) {
                     heroDead = true;
-                    that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(false)
+                    //that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(false)
                     !that.time.isVisible() && that.time.setVisible(true);
                     that.reviveText.setVisible(true);
                     if (isCoolDowning) {
@@ -173,7 +173,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                 if (reviveHero.hasSkill(that.skill.getId())) {
                     if (!isCoolDowning) {
                         that.skill_icon.setColor(cc.color(255, 255, 255));
-                        !that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
+                        //!that.skill_icon.isTouchEnabled() && that.skill_icon.setTouchEnabled(true);
                         that.time.setVisible(false);
                     }
                     that.reviveText.setVisible(false);
@@ -783,11 +783,15 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn = {};
             elements.lock_btn.layer = lock_btn;
             elements.lock_btn.btn = lock_btn.getChildByName('btn');
-            elements.lock_btn.btn.setEnabled(false);
             elements.lock_btn.btn.setBright(false);
+            elements.lock_btn.btn.setEnabled(true);
             elements.lock_btn.level_text = lock_btn.getChildByName('level_text');
             elements.lock_btn.lock = lock_btn.getChildByName('lock');
-            elements.lock_btn.layer.setVisible(false)
+            elements.lock_btn.layer.setVisible(false);
+            elements.lock_btn.btn.addClickEventListener(function(){
+                toggleTip('未达到解锁需求等级！');
+                console.log('未达到解锁需求等级！')
+            });
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
             desc.setString(buildSkillDesc(skill));
@@ -1119,7 +1123,7 @@ var EquipListMenu = BattleMenu.extend({
             lv.setColor(cc.color(255, 226, 2));
             var upgradeBtnIcon = upgradeLayer.getChildByName('icon');
             var lockBtn = lockLayer.getChildByName('btn');
-            lockBtn.setEnabled(false);
+            lockBtn.setEnabled(true);
             lockBtn.setBright(false);
             if (equip.isMaxLevel()) {
                 upgradeLayer.setVisible(false);
@@ -1145,8 +1149,11 @@ var EquipListMenu = BattleMenu.extend({
                     updateResource(equip, {unit: 'relic'}, upgradeBtn, text);
                 });
                 var elements = {};
-                elements.lock_btn = {}
+                elements.lock_btn = {};
                 elements.lock_btn.layer = lockLayer;
+                lockBtn.addClickEventListener(function(){
+                    toggleTip('未达到解锁需求等级！');
+                });
                 elements.upgrade_btn = {};
                 elements.upgrade_btn.layer = upgradeLayer;
                 elements.lock_btn.level_text = lockLayer.getChildByName('level_text');

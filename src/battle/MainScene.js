@@ -32,7 +32,7 @@ var MainScene = cc.Scene.extend({
         var height = this.height;
         var width = this.width;
         this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
-        this.addChild(this.buffTip);
+        this.addChild(this.buffTip,101);
         var buffListNode = ccs.csLoader.createNode(res.buff_list_json);
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
@@ -43,35 +43,36 @@ var MainScene = cc.Scene.extend({
             /**
              * 显示/隐藏 tip,默认显示3秒后隐藏
              *
-             * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0}
+             * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0,color:cc.color('#cccccc')}
              */
             function toggleTip(config) {
                 var fadein = cc.show()/*cc.fadeIn(0.0)*/;
                 var fadeout = cc.hide()/* cc.fadeOut(0.0)*/;
-                var dt ;
-                var beforeShow,afterHide,afterShow,delay=3.0,beforeHide,text;
-                if(config){
-                    if(cc.isObject(config)){
-                        beforeShow=config['beforeShow'];
-                        beforeHide=config['beforeHide'];
-                        afterShow=config['afterShow'];
-                        afterHide=config['afterHide'];
-                        text=config['text'];
-                        delay=config['delay']||3.0;
-                    }else if (typeof config === 'string' ){
-                        text=config;
+                var beforeShow, afterHide, afterShow, delay = 3.0, beforeHide, text;
+                if (config) {
+                    if (cc.isObject(config)) {
+                        beforeShow = config['beforeShow'];
+                        beforeHide = config['beforeHide'];
+                        afterShow = config['afterShow'];
+                        afterHide = config['afterHide'];
+                        text = config['text'];
+                        delay = config['delay'] || 3.0;
+                        var color = config['color'];
+                        color && buffTip.text.setColor(color);
+                    } else if (typeof config === 'string') {
+                        text = config;
                     }
                 }
-                text&& buffTip.setString(text);
-                var sequence=[];
-                dt = cc.delayTime(delay);
-                beforeShow&&sequence.push(fadein)
-                sequence.push(fadein)
-                afterShow&&sequence.push(afterShow)
-                sequence.push(dt)
-                beforeHide&&sequence.push(beforeHide)
-                sequence.push(fadeout)
-                afterHide&&sequence.push(afterHide)
+                text && buffTip.setString(text);
+                var sequence = [];
+                var dt = cc.delayTime(delay);
+                beforeShow && sequence.push(fadein);
+                sequence.push(fadein);
+                afterShow && sequence.push(afterShow);
+                sequence.push(dt);
+                beforeHide && sequence.push(beforeHide);
+                sequence.push(fadeout);
+                afterHide && sequence.push(afterHide)
                 var sq = cc.sequence(sequence);
                 buffTip.runAction(sq);
             }
