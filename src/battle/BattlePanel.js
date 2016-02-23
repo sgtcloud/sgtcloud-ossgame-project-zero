@@ -79,15 +79,15 @@ var BattlePanel = cc.Node.extend({
         }.bind(this);
 
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
-            toggleTip({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
+            tip.toggle({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
             this.enableBossBattleTimeCounter(PlayerData.getStageData());
         }.bind(this));
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
-            toggleTip({"text": BATTLE_TIPS.BOSS_BATTLE_FAIL, "color": TIPS_COLOR.YELLOW});
+            tip.toggle({"text": BATTLE_TIPS.BOSS_BATTLE_FAIL, "color": TIPS_COLOR.YELLOW});
             this.disableBossBattleTimeCounter();
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
-            toggleTip({"text": BATTLE_TIPS.BOSS_BATTLE_VICTORY, "color": TIPS_COLOR.YELLOW});
+            tip.toggle({"text": BATTLE_TIPS.BOSS_BATTLE_VICTORY, "color": TIPS_COLOR.YELLOW});
             this.disableBossBattleTimeCounter();
         }.bind(this));
 

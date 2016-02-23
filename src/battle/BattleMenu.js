@@ -101,7 +101,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleTip('已使用相同效果的技能！');
+                        tip.toggle('已使用相同效果的技能！');
                     }
                 }
             });
@@ -138,16 +138,16 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //toggleTip();
+                    //tip.toggle();
                 } else {
-                    toggleTip('英雄已死亡...');
+                    tip.toggle('英雄已死亡...');
                 }
             }
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleTip('已使用相同效果的技能！');
+                    tip.toggle('已使用相同效果的技能！');
                 } else {
                     tryFire(levelData);
                 }
@@ -803,7 +803,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.lock = lock_btn.getChildByName('lock');
             elements.lock_btn.layer.setVisible(false);
             elements.lock_btn.btn.addClickEventListener(function () {
-                toggleTip('未达到解锁需求等级！');
+                tip.toggle('未达到解锁需求等级！');
             });
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
@@ -1168,7 +1168,7 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn = {};
                 elements.lock_btn.layer = lockLayer;
                 lockBtn.addClickEventListener(function () {
-                    toggleTip('未达到解锁需求等级！');
+                    tip.toggle('未达到解锁需求等级！');
                 });
                 elements.upgrade_btn = {};
                 elements.upgrade_btn.layer = upgradeLayer;
@@ -1488,7 +1488,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 PlayerData.updatePlayer();
-                toggleTip({
+                tip.toggle({
                     'delay': 2.0,
                     'text': '成功购买 ' + CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费' + CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
