@@ -863,14 +863,6 @@
               <PlistImageFile Name="material_iron_iron_shine02.png" Key="material/iron/iron_shine02.png" />
             </PlistImageFolder>
           </Folder>
-          <Folder Name="key">
-            <Image Name="key_shine01.png" />
-            <Image Name="key_shine02.png" />
-            <PlistImageFolder Image="key01.png" PListFile="key01.plist" Name=".key01_PList.Dir">
-              <PlistImageFile Name="material_key_key_shine01.png" Key="material/key/key_shine01.png" />
-              <PlistImageFile Name="material_key_key_shine02.png" Key="material/key/key_shine02.png" />
-            </PlistImageFolder>
-          </Folder>
           <Folder Name="leather">
             <Image Name="leather_shine01.png" />
             <Image Name="leather_shine02.png" />
@@ -918,7 +910,6 @@
         <Project Name="diamond01.csd" Type="Node" />
         <Project Name="essence01.csd" Type="Node" />
         <Project Name="iron01.csd" Type="Node" />
-        <Project Name="key01.csd" Type="Node" />
         <Project Name="leather01.csd" Type="Node" />
         <Project Name="rune01.csd" Type="Node" />
         <Project Name="stone01.csd" Type="Node" />
@@ -927,7 +918,6 @@
         <PlistInfo Name="diamond01.csi" Type="Plist" />
         <PlistInfo Name="essence01.csi" Type="Plist" />
         <PlistInfo Name="iron01.csi" Type="Plist" />
-        <PlistInfo Name="key01.csi" Type="Plist" />
         <PlistInfo Name="leather01.csi" Type="Plist" />
         <Project Name="relic01.csd" Type="Node" />
         <PlistInfo Name="relic01.csi" Type="Plist" />
@@ -1017,6 +1007,70 @@
         </Folder>
         <Project Name="dead.csd" Type="Node" />
         <PlistInfo Name="other.csi" Type="Plist" />
+        <Folder Name="key">
+          <Folder Name="key01">
+            <Image Name="iron_key_shine01.png" />
+            <Image Name="iron_key_shine02.png" />
+            <PlistImageFolder Image="key01.png" PListFile="key01.plist" Name=".key01_PList.Dir">
+              <PlistImageFile Name="key_key01_iron_key_shine01.png" Key="key/key01/iron_key_shine01.png" />
+              <PlistImageFile Name="key_key01_iron_key_shine02.png" Key="key/key01/iron_key_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="key02">
+            <Image Name="silver_key_shine01.png" />
+            <Image Name="silver_key_shine02.png" />
+            <PlistImageFolder Image="key02.png" PListFile="key02.plist" Name=".key02_PList.Dir">
+              <PlistImageFile Name="key_key02_silver_key_shine01.png" Key="key/key02/silver_key_shine01.png" />
+              <PlistImageFile Name="key_key02_silver_key_shine02.png" Key="key/key02/silver_key_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="key03">
+            <Image Name="gold_key_shine01.png" />
+            <Image Name="gold_key_shine02.png" />
+            <PlistImageFolder Image="key03.png" PListFile="key03.plist" Name=".key03_PList.Dir">
+              <PlistImageFile Name="key_key03_gold_key_shine01.png" Key="key/key03/gold_key_shine01.png" />
+              <PlistImageFile Name="key_key03_gold_key_shine02.png" Key="key/key03/gold_key_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Folder Name="blood">
+          <Folder Name="blood01">
+            <Image Name="samll_blood_shine01.png" />
+            <Image Name="samll_blood_shine02.png" />
+            <PlistImageFolder Image="blood01.png" PListFile="blood01.plist" Name=".blood01_PList.Dir">
+              <PlistImageFile Name="blood_blood01_samll_blood_shine01.png" Key="blood/blood01/samll_blood_shine01.png" />
+              <PlistImageFile Name="blood_blood01_samll_blood_shine02.png" Key="blood/blood01/samll_blood_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="blood02">
+            <Image Name="middle_blood_shine01.png" />
+            <Image Name="middle_blood_shine02.png" />
+            <PlistImageFolder Image="blood02.png" PListFile="blood02.plist" Name=".blood02_PList.Dir">
+              <PlistImageFile Name="blood_blood02_middle_blood_shine01.png" Key="blood/blood02/middle_blood_shine01.png" />
+              <PlistImageFile Name="blood_blood02_middle_blood_shine02.png" Key="blood/blood02/middle_blood_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="blood03">
+            <Image Name="large_blood_shine01.png" />
+            <Image Name="large_blood_shine02.png" />
+            <PlistImageFolder Image="blood03.png" PListFile="blood03.plist" Name=".blood03_PList.Dir">
+              <PlistImageFile Name="blood_blood03_large_blood_shine01.png" Key="blood/blood03/large_blood_shine01.png" />
+              <PlistImageFile Name="blood_blood03_large_blood_shine02.png" Key="blood/blood03/large_blood_shine02.png" />
+            </PlistImageFolder>
+          </Folder>
+        </Folder>
+        <Project Name="blood01.csd" Type="Node" />
+        <Project Name="blood02.csd" Type="Node" />
+        <Project Name="blood03.csd" Type="Node" />
+        <Project Name="key01.csd" Type="Node" />
+        <Project Name="key02.csd" Type="Node" />
+        <Project Name="key03.csd" Type="Node" />
+        <PlistInfo Name="blood01.csi" Type="Plist" />
+        <PlistInfo Name="blood02.csi" Type="Plist" />
+        <PlistInfo Name="blood03.csi" Type="Plist" />
+        <PlistInfo Name="key01.csi" Type="Plist" />
+        <PlistInfo Name="key02.csi" Type="Plist" />
+        <PlistInfo Name="key03.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
