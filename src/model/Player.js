@@ -186,7 +186,7 @@ var PlayerData = {
             /*if (result) {
              console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
              }*/
-            customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
+            //customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
         });
     },
     getHeroes: function () {

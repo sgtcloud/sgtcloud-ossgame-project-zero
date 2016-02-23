@@ -1343,10 +1343,10 @@ var ShopLayerMenu = BattleMenu.extend({
         this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
         this.falg = true;
 
-        customEventHelper.bindListener(EVENT.GOTO_NEXT_STAGE, function () {
+        this.refeshMoneyTreeLayer = function (){
             if (shopView.getChildByName('moneyTree_tab').visible)
                 shopView.getChildByName('moneyTree_tab').getChildByName("gold_text").setString(PlayerData.getStageData().getMoneyTreeRatio());
-        }.bind(this));
+        }
 
         this.showMoneyTreeView = function (name) {
             var showMoneyTree = shopView.getChildByName(name);
@@ -1485,10 +1485,8 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
 
                 toggleTip({
-                    'beforeShow':cc.callFunc(function () {
-                        cc.hide();
-                        cc.delayTime(0.1);
-                    }, this),'delay':2.0,
+                    'beforeShow':[
+                        cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
                     'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
             } else {
@@ -1554,18 +1552,17 @@ var RankLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
 
-        customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
+        this.refeshRankLayer = function () {
             for (var i in this.buttons) {
-                if(this.buttons[i].selected && i === event.getUserData().leaderId.replace("rank","tab")){
-                   /* PlayerData.getMyRankByType(event.getUserData().leaderId, function (result, data) {
-                        if (result && cc.isObject(data))
-                            myNumText.setString(data.index + 1);
-                    });*/
+                if(this.buttons[i].selected /*&& i === event.getUserData().leaderId.replace("rank","tab")*/){
                     this.showMenuLayer(i);
-                    return ;
+                    break;
                 }
             }
-        }.bind(this));
+        };
+        /*customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
+
+        }.bind(this));*/
 
         this.showRankList = function (type) {
             listView.removeAllChildren();

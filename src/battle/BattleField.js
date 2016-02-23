@@ -371,7 +371,7 @@ var BattleField = cc.Class.extend({
             /**
              * 刷新摇钱树购买金币值（根据不同关卡设定的值）
              */
-            customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
+            //customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
             player.statistics.total_max_level += 1;
             //更新通关数据
             PlayerData.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");

@@ -58,6 +58,12 @@ var TabContainer = cc.Node.extend({
             for (var i in this.menus) {
                 this.menus[i].setVisible(false);
             }
+            if(name === 'rank')
+                this.menus[name].refeshRankLayer();
+
+            if(name === 'shop')
+                this.menus[name].refeshMoneyTreeLayer();
+
             this.menus[name].setVisible(true);
             this.buttons[name].setSelected(true);
         };

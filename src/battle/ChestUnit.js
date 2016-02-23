@@ -45,7 +45,7 @@ var ChestUnit = CCSUnit.extend({
         if(player.resource.hasOwnProperty(this.goods.skill_id)){
             cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
             var resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
-            toggleTip({'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
+            toggleTip({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
             this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
                 "unit": this.goods.skill_id,
                 "value": resValue

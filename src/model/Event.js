@@ -129,15 +129,7 @@ var EVENT = {
     /**
      * 使用道具
      */
-    USE_GAME_ITEMS: "USE_GAME_ITEMS",
-    /**
-     * 进入下一关
-     */
-    GOTO_NEXT_STAGE: "GOTO_NEXT_STAGE",
-    /**
-     * 更新自己的排行榜数据
-     */
-    UPDATE_SELF_RANK: "UPDATE_SELF_RANK"
+    USE_GAME_ITEMS: "USE_GAME_ITEMS"
 
 
 };
