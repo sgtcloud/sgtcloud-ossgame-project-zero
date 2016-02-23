@@ -224,7 +224,11 @@ cc.Audio = cc.Class.extend({
         var sourceNode = this._currentSource;
         if(!sourceNode || !sourceNode["playbackState"])
             return true;
-        return this._currentTime + this._context.currentTime - this._startTime < sourceNode.buffer.duration;
+
+        if(this._currentTime + this._context.currentTime - this._startTime < sourceNode.buffer.duration)
+            return true;
+
+        return sourceNode["playbackState"] == 2;
     },
 
     _playOfWebAudio: function(offset){
@@ -576,7 +580,7 @@ cc.Audio = cc.Class.extend({
 
                 var success = function(){
                     if(!cbCheck){
-                        element.pause();
+                        //element.pause();
                         try { element.currentTime = 0;
                             element.volume = 1; } catch (e) {}
                         document.body.removeChild(element);
@@ -592,7 +596,7 @@ cc.Audio = cc.Class.extend({
 
                 var failure = function(){
                     if(!cbCheck) return;
-                    element.pause();
+                    //element.pause();
                     document.body.removeChild(element);
                     element.removeEventListener("canplaythrough", success, false);
                     element.removeEventListener("error", failure, false);
@@ -608,15 +612,16 @@ cc.Audio = cc.Class.extend({
                     cb(null, audio);
                 };
 
-                cc._addEventListener(element, "canplaythrough", success, false);
-                cc._addEventListener(element, "error", failure, false);
+                element.addEventListener("canplaythrough", success, false);
+                element.addEventListener("error", failure, false);
                 if(polyfill.USE_EMPTIED_EVENT)
-                    cc._addEventListener(element, "emptied", emptied, false);
+                    element.addEventListener("emptied", emptied, false);
 
                 element.src = realUrl;
                 document.body.appendChild(element);
                 element.volume = 0;
-                element.play();
+                //some browsers cannot pause(qq 6.1)
+                //element.play();
             }
 
         }
@@ -1028,12 +1033,5 @@ cc.Audio = cc.Class.extend({
             }
         }, 150);
     }
-
-    cc.eventManager.addCustomListener(cc.game.EVENT_HIDE, function () {
-        cc.audioEngine._pausePlaying();
-    });
-    cc.eventManager.addCustomListener(cc.game.EVENT_SHOW, function () {
-        cc.audioEngine._resumePlaying();
-    });
 
 })(window.__audioSupport);

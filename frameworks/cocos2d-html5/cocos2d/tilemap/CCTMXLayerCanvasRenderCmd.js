@@ -29,7 +29,7 @@
         this._realWorldTransform = {a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0};
 
         var locCanvas = cc._canvas;
-        var tmpCanvas = cc.newElement('canvas');
+        var tmpCanvas = document.createElement('canvas');
         tmpCanvas.width = locCanvas.width;
         tmpCanvas.height = locCanvas.height;
         this._cacheCanvas = tmpCanvas;
@@ -205,13 +205,13 @@
 
     proto.initImageSize = function(){
         var node = this._node;
-        node.tileset.imageSize = this._originalTexture.getContentSizeInPixels();
+        node.tileset.imageSize = this._texture.getContentSizeInPixels();
     };
 
     proto._reusedTileWithRect = function(rect){
         var node = this._node;
         node._reusedTile = new cc.Sprite();
-        node._reusedTile.initWithTexture(node._renderCmd._texture, rect, false);
+        node._reusedTile.initWithTexture(this._texture, rect, false);
         node._reusedTile.batchNode = node;
         node._reusedTile.parent = node;
         node._reusedTile._renderCmd._cachedParent = node._renderCmd;

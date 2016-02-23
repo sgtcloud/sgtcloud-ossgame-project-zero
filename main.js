@@ -160,7 +160,7 @@ cc.game.onStart = function () {
         quickLoginfalg = true;
     }
     // Pass true to enable retina display, disabled by default to improve performance
-    cc.view.enableRetina(true);
+    cc.view.enableRetina(false);
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size

@@ -1,7 +1,7 @@
 /**
+ * 包装ccs动画的精灵类，作为所有父类
  * Created by highkay on 2016/2/15.
  */
-
 var CCSUnit = cc.Node.extend({
 
     ctor: function () {
