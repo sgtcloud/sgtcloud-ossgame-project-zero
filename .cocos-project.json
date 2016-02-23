@@ -1,4 +1,5 @@
 {
-    "has_native": true,
+    "engine_version": "cocos2d-x-3.10", 
+    "has_native": false, 
     "project_type": "js"
 }

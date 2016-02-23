@@ -68,6 +68,7 @@ cc.AtlasNode = cc.Node.extend(/** @lends cc.AtlasNode# */{
     _ignoreContentScaleFactor: false,
     _className: "AtlasNode",
 
+    _texture: null,
     _textureForCanvas: null,
 
     /**
@@ -85,7 +86,7 @@ cc.AtlasNode = cc.Node.extend(/** @lends cc.AtlasNode# */{
     },
 
     _createRenderCmd: function(){
-        if(cc._renderType === cc._RENDER_TYPE_CANVAS)
+        if(cc._renderType === cc.game.RENDER_TYPE_CANVAS)
             this._renderCmd = new cc.AtlasNode.CanvasRenderCmd(this);
         else
             this._renderCmd = new cc.AtlasNode.WebGLRenderCmd(this);
@@ -244,7 +245,7 @@ cc.AtlasNode = cc.Node.extend(/** @lends cc.AtlasNode# */{
      * @return {cc.Texture2D}
      */
     getTexture: function(){
-        return this._renderCmd.getTexture();
+        return this._texture;
     },
 
     /**
@@ -253,7 +254,7 @@ cc.AtlasNode = cc.Node.extend(/** @lends cc.AtlasNode# */{
      * @param {cc.Texture2D} texture    The new texture
      */
     setTexture: function(texture){
-        this._renderCmd.setTexture(texture);
+        this._texture = texture;
     },
 
     _setIgnoreContentScaleFactor: function (ignoreContentScaleFactor) {
