@@ -30,6 +30,7 @@ var player = {
         "middle_blood": 100,
         "large_blood": 100,
     },
+    //"cd":{"herosDie":{"":}},
     // release data
     //"resource": {
     //    "gold": 10,
