@@ -24,71 +24,17 @@ var MainScene = cc.Scene.extend({
         this.tabContainer.showMenuLayer('main');
 
         // floating buff tips on the top of tab container
-        var buffTip = new BuffView(res.buff_tip_json);
-        this.buffTip = buffTip;
-        this.buffTip.setVisible(false);
-        var tipHeight = this.buffTip.height;
-        var tipWidth = this.buffTip.width;
-        var height = this.height;
-        var width = this.width;
-        this.buffTip.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
-        this.addChild(this.buffTip,102);
+
         var buffListNode = ccs.csLoader.createNode(res.buff_list_json);
         buffListNode.setPosition(this.battlePanel.buffList.getPosition());
         //buffListNode.setPosition((width-buffListNode.width)/2,(height-buffListNode.width)/2);
         this.battlePanel.addChild(buffListNode, 5000);
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
+        window.tip=new Tip(this);
         (function (w) {
-            /**
-             * 显示/隐藏 tip,默认显示3秒后隐藏
-             *
-             * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0,color:cc.color('#cccccc')}
-             */
-            function toggleTip(config) {
-                buffTip.stopAllActions();
-                var fadein = cc.show()/*cc.fadeIn(0.0)*/;
-                var fadeout = cc.hide()/* cc.fadeOut(0.0)*/;
-                var beforeShow, afterHide, afterShow, delay = 3.0, beforeHide, text;
-                if (config) {
-                    if (cc.isObject(config)) {
-                        beforeShow = config['beforeShow'];
-                        beforeHide = config['beforeHide'];
-                        afterShow = config['afterShow'];
-                        afterHide = config['afterHide'];
-                        text = config['text'];
-                        delay = config['delay'] || 3.0;
-                        var color = config['color'];
-                        color && buffTip.text.setColor(color);
-                    } else if (typeof config === 'string') {
-                        text = config;
-                    }
-                }
-                text && buffTip.setString(text);
-                var sequence = [];
-                var dt = cc.delayTime(delay);
-                processSequence(sequence,beforeShow);
-                sequence.push(fadein);
-                processSequence(sequence,afterShow);
-                sequence.push(dt);
-                processSequence(sequence,beforeHide);
-                sequence.push(fadeout);
-                processSequence(sequence,afterHide);
-                var sq = cc.sequence(sequence);
-                buffTip.runAction(sq);
-            }
-            function processSequence(sequence,actions){
-                if(actions){
-                    if(typeof  actions ==='function'){
-                        sequence.push(actions);
-                    }else if(actions instanceof  Array){
-                        Array.prototype.push.apply(sequence,actions)
-                    }
-                }
-            }
 
             var buffArr = [];
-
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {
@@ -125,10 +71,9 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
-
-            w.toggleTip = toggleTip;
             w.toggleBufflayer = toggleBufflayer;
         })(window);
+
     },
 
     onEnter: function () {
