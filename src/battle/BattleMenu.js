@@ -960,10 +960,10 @@ var EquipListMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, {unit: equipObject.unit, value: -equipObject.value});
                 var price = {value: nextValue, unit: equipObject.unit};
                 equipObject.equip.upgrade(hero, price);
-                pushMagicalEquips(equipObject.equip, hero);
-                refeshMagicalEquips(hero, elements);
                 PlayerData.refreshAllHerosProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
+                pushMagicalEquips(equipObject.equip, hero);
+                refeshMagicalEquips(hero, elements);
             });
         }
 
@@ -1243,19 +1243,20 @@ var EquipListMenu = BattleMenu.extend({
                 if (heroData.getLv() > 0) {
                     buildEquipMenuIfUnlocked(heroData, isFirst);
                 } else {
-                    (function (hero) {
-                        var _hero = hero;
-                        var first = isFirst;
-                        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
-                            var heroId = event.getUserData()['heroId'];
-                            if (heroId === _hero.getId() && _hero.getLv() === 1) {
-                                setTimeout(function () {
-                                    buildEquipMenuIfUnlocked(_hero, first);
-                                }, 300);
-                            }
-                        });
-                    })(heroData)
+                    bindListener(heroData,isFirst);
                 }
+            }
+            function bindListener(hero,isFirst){
+                var _hero = hero;
+                var first = isFirst;
+                customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+                    var heroId = event.getUserData()['heroId'];
+                    if (heroId === _hero.getId() && _hero.getLv() === 1) {
+                        setTimeout(function () {
+                            buildEquipMenuIfUnlocked(_hero, first);
+                        }, 300);
+                    }
+                });
             }
 
             function buildEquipMenuIfUnlocked(heroData, isFirst) {
