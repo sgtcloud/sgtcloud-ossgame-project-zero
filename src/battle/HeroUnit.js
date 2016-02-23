@@ -66,17 +66,17 @@ var HeroUnit = BattleUnit.extend({
         this.hideBuffIcons();
         this.refreshLifeBar();
         this.stopAllActions();
+        var dropHeight = 500;
+        var dropMove = cc.jumpBy(0.5, cc.p(0, -dropHeight), 0, 1);
+        var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 3);
+        this.tombstone.setVisible(true);
+        this.tombstone.setPosition(0, dropHeight);
+        this.tombstone.runAction(cc.sequence(dropMove, jump));
+        this.battle.addSpriteRelatedNode(this, this.tombstone, this.TOMBSTONE_ZORDER_OFFSET);
         this.playAnimation("die", false, function () {
             this.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(function () {
                 this.setVisible(false);
-                var dropHeight = 500;
-                var dropMove = cc.jumpBy(0.2, cc.p(0, -dropHeight), 0, 1);
-                var jump = cc.jumpBy(0.5, cc.p(0, 0), 16, 3);
-                this.tombstone.setVisible(true);
-                this.tombstone.setPosition(0, dropHeight);
-                this.tombstone.runAction(cc.sequence(dropMove, jump));
-                this.battle.addSpriteRelatedNode(this, this.tombstone, this.TOMBSTONE_ZORDER_OFFSET);
-            }, this)));
+            }.bind(this), this)));
         }.bind(this));
 
         //battle.onHeroDead(this);
@@ -150,8 +150,7 @@ var HeroUnit = BattleUnit.extend({
         // 重新把存档的血量赋值
         this.life = this.hero.getCurrentLife();
 
-        this.tombstone = ccs.load(res.tombstone_json).node;
-        this.tombstone.removeFromParent(true);
+        this.tombstone = CCSUnit.create(res.tombstone_json);
         this.tombstone.setVisible(false);
     },
 });

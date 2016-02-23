@@ -875,7 +875,7 @@ var HeroListMenu = BattleMenu.extend({
                 if (heroData.isLocked()) {
                     unlockHero(heroData);
                 } else {
-                    this.buildHeroMenu(heroData);
+                    buildHeroMenu(heroData);
                 }
             }
             function unlockHero(data) {
@@ -884,30 +884,29 @@ var HeroListMenu = BattleMenu.extend({
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
                         setTimeout(function () {
-                            that.buildHeroMenu(_hero);
+                            buildHeroMenu(_hero);
                         }, 100);
                     }
                 });
 
             }
 
+            function buildHeroMenu(heroData, cb) {
+                var _heroView = buildHeroView(heroData, cb);
+                that.heroList.pushBackCustomItem(_heroView);
+                that.views.heros = that.views.heros || [];
+                that.views.heros[i] = _heroView;
+                var skillsList = []
+                for (var j = 0; j < heroData.getSkillCount(); j++) {
+                    var skillData = heroData.getSkillData(j);
+                    var _skillView = buildSkillView(skillData, heroData);
+                    that.heroList.pushBackCustomItem(_skillView);
+                    skillsList.push(_skillView);
+                }
+            }
         }
         customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
         customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
-    },
-
-    buildHeroMenu: function (heroData, cb) {
-        var _heroView = buildHeroView(heroData, cb);
-        this.heroList.pushBackCustomItem(_heroView);
-        this.views.heros = this.views.heros || [];
-        this.views.heros[i] = _heroView;
-        var skillsList = [];
-        for (var j = 0; j < heroData.getSkillCount(); j++) {
-            var skillData = heroData.getSkillData(j);
-            var _skillView = buildSkillView(skillData, heroData);
-            this.heroList.pushBackCustomItem(_skillView);
-            skillsList.push(_skillView);
-        }
     }
 });
 var EquipListMenu = BattleMenu.extend({
