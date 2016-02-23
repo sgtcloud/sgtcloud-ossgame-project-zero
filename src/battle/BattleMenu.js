@@ -309,14 +309,15 @@ BloodBox.prototype.init = function () {
             PlayerData.updatePlayer();
         });
     };
-    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
         refreshNum();
     });
-    function refreshNum(){
-        updateNum(that.smallText,  player.resource.small_blood||(player.resource.small_blood=100), that.smallBtn);
-        updateNum(that.middleText, player.resource.middle_blood||(player.resource.middle_blood=100), that.middleBtn);
-        updateNum(that.largeText, player.resource.large_blood||(player.resource.large_blood=100), that.largeBtn);
+    function refreshNum() {
+        updateNum(that.smallText, player.resource.small_blood || (player.resource.small_blood = 100), that.smallBtn);
+        updateNum(that.middleText, player.resource.middle_blood || (player.resource.middle_blood = 100), that.middleBtn);
+        updateNum(that.largeText, player.resource.large_blood || (player.resource.large_blood = 100), that.largeBtn);
     }
+
     refreshNum();
     initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
     initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
@@ -872,20 +873,22 @@ var HeroListMenu = BattleMenu.extend({
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
                 if (heroData.isLocked()) {
-                    (function (data) {
-                        var _hero = data;
-                        customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
-                            var hero = event.getUserData();
-                            if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                                setTimeout(function () {
-                                    buildHeroMenu(_hero);
-                                }, 100);
-                            }
-                        });
-                    })(heroData)
+                    unlockHero(heroData);
                 } else {
                     buildHeroMenu(heroData);
                 }
+            }
+            function unlockHero(data) {
+                var _hero = data;
+                customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
+                    var hero = event.getUserData();
+                    if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
+                        setTimeout(function () {
+                            buildHeroMenu(_hero);
+                        }, 100);
+                    }
+                });
+
             }
 
             function buildHeroMenu(heroData, cb) {
@@ -1243,10 +1246,10 @@ var EquipListMenu = BattleMenu.extend({
                 if (heroData.getLv() > 0) {
                     buildEquipMenuIfUnlocked(heroData, isFirst);
                 } else {
-                    bindListener(heroData,isFirst);
+                    bindListener(heroData, isFirst);
                 }
             }
-            function bindListener(hero,isFirst){
+            function bindListener(hero, isFirst) {
                 var _hero = hero;
                 var first = isFirst;
                 customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
