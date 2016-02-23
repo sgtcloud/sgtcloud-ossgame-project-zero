@@ -71,6 +71,7 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
+            w.toggleTip=
             w.toggleBufflayer = toggleBufflayer;
         })(window);
 
