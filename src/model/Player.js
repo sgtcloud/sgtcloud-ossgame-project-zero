@@ -52,9 +52,9 @@ var player = {
     //},
     "statistics": {
         "total_fairy": 0,
-        "total_gem": 0,
-        "total_relic": 0,
-        "total_gold": 0,
+        "total_gem": 10000,
+        "total_relic": 10000,
+        "total_gold": 1000000,
         "total_tap": 0,
         "total_damage": 0,
         "total_enemy_kill": 0,

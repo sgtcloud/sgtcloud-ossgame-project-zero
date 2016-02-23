@@ -51,7 +51,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -59,7 +60,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -67,7 +69,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -75,7 +78,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -83,7 +87,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -91,7 +96,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -99,7 +105,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -107,7 +114,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -115,7 +123,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -123,7 +132,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -131,7 +141,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -139,41 +150,91 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
         {
             "f": {
                 "skill_id": "gold",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 1.5,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 2.3,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 4,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
+            },
+            "w": 10
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
+                "level": 2,
+                "chestStyle": "chest01.json",
+                "type": 2
+            },
+            "w": 8
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
+            "w": 6
         },
         {
             "f": {
-                "skill_id": "gold",
-                "level": 5,
-                "chestStyle": "chest01.json"
+                "skill_id": "middle_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
+            "w": 4
         },
         {
             "f": {
-                "skill_id": "gold",
-                "level": 7,
-                "chestStyle": "chest01.json"
+                "skill_id": "large_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
-        },
-        {
-            "f": {
-                "skill_id": "gold",
-                "level": 10,
-                "chestStyle": "chest01.json"
-            },
-            "w": 13
+            "w": 2
         }
     ]
 };
@@ -271,6 +332,7 @@ function openNewNameLayer(scene) {
     var btn = root.getChildByName('btn');
     //popup(gamepopup,100);
     bindButtonCallback(btn, function () {
+        toggleTip('正在创建角色并初始化游戏。。。。。。');
         var playName = name_text.getString();
         if (cc.isString(playName)) {
             addPlayer(playName, function () {

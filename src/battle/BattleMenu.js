@@ -1415,12 +1415,10 @@ var ShopLayerMenu = BattleMenu.extend({
             var shopListViewRoot = shopListView.getChildByName('root');
             var shopListViewRootClone = shopListViewRoot.clone();
             var goods = dataSource.goods;
-            var n = n1 = 0;
+            var n = n1 = len = 0;
             for (var i in goods) {
-                n++;
+                len++;
             }
-            var len = n;
-            n = 0;
             shopPorps.removeAllChildren(true);
             for (var i in goods) {
                 n++;
@@ -1457,7 +1455,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 itemLayer.setPosition(shopListViewRoot.getChildByName("item" + n1).getPosition());
                 shopListViewRootClone.addChild(itemLayer);
 
-                if (n % 3 == 0 || n == len - 1) {
+                if (n % 3 == 0 || n == len) {
                     n1 = 0;
                     shopPorps.setItemsMargin(20);
                     shopPorps.pushBackCustomItem(shopListViewRootClone);
@@ -1570,7 +1568,7 @@ var RankLayerMenu = BattleMenu.extend({
                 myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
-                        listView.addChild(this.setRankView(data[i], type));
+                        listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
                     PlayerData.getMyRankByType(type.replace('tab', "rank"), function (result, data) {

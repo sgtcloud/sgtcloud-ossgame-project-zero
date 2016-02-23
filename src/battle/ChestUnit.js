@@ -42,14 +42,25 @@ var ChestUnit = CCSUnit.extend({
     CHEST_LOOT_ZORDER_OFFET: 1,
 
     _generateLoot: function () {
-        if(player.resource.hasOwnProperty(this.goods.skill_id)){
+        //if(player.resource.hasOwnProperty(this.goods.skill_id)){
+        if(this.goods.type != 1){
             cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
-            var resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
+            var resValue = this.goods.level;
+            if(this.goods.type === 0){
+                resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
+                this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
+                    "unit": this.goods.skill_id,
+                    "value": resValue
+                }), this.CHEST_LOOT_ZORDER_OFFET);
+            }else if(this.goods.type === 2){
+                PlayerData.updateResource({
+                    "unit": this.goods.skill_id,
+                    "value": resValue
+                })
+                PlayerData.updatePlayer();
+                customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
+            }
             toggleTip({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
-            this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
-                "unit": this.goods.skill_id,
-                "value": resValue
-            }), this.CHEST_LOOT_ZORDER_OFFET);
         } else {
             //发送释放buff事件
             cc.log('释放buff');
