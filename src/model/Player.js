@@ -57,9 +57,9 @@ var player = {
     //},
     "statistics": {
         "total_fairy": 0,
-        "total_gem": 0,
-        "total_relic": 0,
-        "total_gold": 0,
+        "total_gem": 10000,
+        "total_relic": 10000,
+        "total_gold": 1000000,
         "total_tap": 0,
         "total_damage": 0,
         "total_enemy_kill": 0,
@@ -124,16 +124,17 @@ var PlayerData = {
     statistics_res_values: ["gem", "relic", "gold"],
     player: null,
     save: null,
+    sequence: [],
     init: function () {
         var save = localStorage.getItem("save");
-        if (sgt) {
-            if (cc.isObject(PlayerData.save)) {
-                save = PlayerData.save.content;
+        if (sgt && cc.isObject(sgt.context.user)) {
+            if (cc.isObject(this.save)) {
+                save = this.save.content;
             } else {
-                player.id = PlayerData.player.id;
-                player.name = PlayerData.player.name;
-                player.vip = PlayerData.player.vip || 1;
-                player.first_time = PlayerData.player.createTime;
+                player.id = this.player.id;
+                player.name = this.player.name;
+                player.vip = this.player.vip || 1;
+                player.first_time = this.player.createTime;
             }
         }
         if (save) {
@@ -166,23 +167,29 @@ var PlayerData = {
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
+        setInterval(function(){
+            if(cc.isArray(this.sequence) && this.sequence.length > 0){
+                var playerExtra = new SgtApi.PlayerExtra();
+                playerExtra.content = JSON.stringify(player);
+                playerExtra.playerId = player.id;
+                sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
+                    console.log('上传存档：' + result + ",内容为" + data);
+                });
+                this.sequence = [];
+            }
+        }.bind(this),60 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
-            var save = new SgtApi.PlayerExtra();
-            if (PlayerData.player.level != player.heroes[0].lv) {
-                PlayerData.player.level = player.heroes[0].lv;
-                sgt.PlayerService.update(PlayerData.player, function (result, data) {
+
+            this.sequence.push(player);
+
+            if (this.player.level != player.heroes[0].lv) {
+                this.player.level = player.heroes[0].lv;
+                sgt.PlayerService.update(this.player, function (result, data) {
                 });
             }
-
-            save.content = JSON.stringify(player);
-            save.playerId = player.id;
-            sgt.PlayerExtraService.updatePlayerExtraMap(save, function (result, data) {
-                console.log('上传存档：' + result + ",内容为" + data);
-            });
-
         }
     }
     ,
@@ -191,7 +198,7 @@ var PlayerData = {
             /*if (result) {
              console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
              }*/
-            customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK, {leaderId: leaderId});
+            //customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
         });
     },
     getHeroes: function () {
@@ -330,9 +337,7 @@ var PlayerData = {
         var rewards = player.not_get_reward;
         var arrays = new Array();
         for (var key in rewards) {
-            if (rewards.hasOwnProperty(key)) {
-                arrays.push(this.createResourceData(key, rewards[key]));
-            }
+            arrays.push(this.createResourceData(key, rewards[key]));
         }
         this.updateResource(arrays);
         player.not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};

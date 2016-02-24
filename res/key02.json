@@ -1,7 +1,7 @@
 {
-  "ID": "6a47fe47-a20f-4499-adc3-a2ed90b6c944",
+  "ID": "1d979878-5f99-49ce-b6ad-9d8855c93e7c",
   "Version": "2.3.3.0",
-  "Name": "key01",
+  "Name": "key02",
   "Content": {
     "Content": {
       "Animation": {
@@ -9,14 +9,30 @@
         "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": 1551596264,
+            "ActionTag": -2128941877,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -2128941877,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "key/key01/iron_key_shine01.png",
-                  "Plist": "key01.plist"
+                  "Path": "key/key02/silver_key_shine01.png",
+                  "Plist": "key02.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -25,8 +41,8 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "key/key01/iron_key_shine02.png",
-                  "Plist": "key01.plist"
+                  "Path": "key/key02/silver_key_shine02.png",
+                  "Plist": "key02.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -47,13 +63,13 @@
         }
       ],
       "ObjectData": {
-        "Tag": 14,
+        "Tag": 5,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "key/key01/iron_key_shine02.png",
-              "Plist": "key01.plist"
+              "Path": "key/key02/silver_key_shine01.png",
+              "Plist": "key02.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -81,12 +97,12 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -23.0,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
-            "Tag": 4,
-            "ActionTag": 1551596264,
+            "LeftMargin": -15.0,
+            "RightMargin": -15.0,
+            "TopMargin": -15.0,
+            "BottomMargin": -15.0,
+            "Tag": 6,
+            "ActionTag": -2128941877,
             "Size": {
               "X": 30.0,
               "Y": 30.0
@@ -103,8 +119,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "key01.plist",
-        "key01.png"
+        "key02.plist",
+        "key02.png"
       ],
       "ctype": "GameFileData"
     }

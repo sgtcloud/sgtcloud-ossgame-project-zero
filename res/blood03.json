@@ -1,7 +1,7 @@
 {
-  "ID": "6a47fe47-a20f-4499-adc3-a2ed90b6c944",
+  "ID": "146d6f4b-a357-4063-9762-969659b2c659",
   "Version": "2.3.3.0",
-  "Name": "key01",
+  "Name": "blood03",
   "Content": {
     "Content": {
       "Animation": {
@@ -9,14 +9,14 @@
         "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": 1551596264,
+            "ActionTag": -1340485440,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "key/key01/iron_key_shine01.png",
-                  "Plist": "key01.plist"
+                  "Path": "blood/blood03/large_blood_shine01.png",
+                  "Plist": "blood03.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -25,8 +25,8 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "key/key01/iron_key_shine02.png",
-                  "Plist": "key01.plist"
+                  "Path": "blood/blood03/large_blood_shine02.png",
+                  "Plist": "blood03.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -47,13 +47,13 @@
         }
       ],
       "ObjectData": {
-        "Tag": 14,
+        "Tag": 12,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "key/key01/iron_key_shine02.png",
-              "Plist": "key01.plist"
+              "Path": "blood/blood03/large_blood_shine01.png",
+              "Plist": "blood03.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -85,13 +85,13 @@
             "RightMargin": -23.0,
             "TopMargin": -23.0,
             "BottomMargin": -23.0,
-            "Tag": 4,
-            "ActionTag": 1551596264,
+            "Tag": 13,
+            "ActionTag": -1340485440,
             "Size": {
               "X": 30.0,
               "Y": 30.0
             },
-            "Name": "key",
+            "Name": "blood",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -103,8 +103,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "key01.plist",
-        "key01.png"
+        "blood03.plist",
+        "blood03.png"
       ],
       "ctype": "GameFileData"
     }

@@ -4,10 +4,10 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>key/key01/iron_key_shine01.png</key>
+			<key>blood/blood03/large_blood_shine01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,30},{22,22}}</string>
+				<string>{{28,0},{20,20}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -15,10 +15,10 @@
 				<key>sourceSize</key>
 				<string>{30,30}</string>
 			</dict>
-			<key>key/key01/iron_key_shine02.png</key>
+			<key>blood/blood03/large_blood_shine02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{30,30}}</string>
+				<string>{{0,0},{28,27}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -32,18 +32,18 @@
 			<key>format</key>
 			<integer>2</integer>
 			<key>textureFileName</key>
-			<string>key01.png</string>
+			<string>blood03.png</string>
 			<key>realTextureFileName</key>
-			<string>key01.png</string>
+			<string>blood03.png</string>
 			<key>size</key>
-			<string>{30,52}</string>
+			<string>{48,27}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>30</integer>
+			<integer>48</integer>
 			<key>height</key>
-			<integer>52</integer>
+			<integer>27</integer>
 		</dict>
 	</dict>
 </plist>

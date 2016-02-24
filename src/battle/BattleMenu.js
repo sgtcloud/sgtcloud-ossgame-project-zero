@@ -600,9 +600,9 @@ var HeroListMenu = BattleMenu.extend({
                     var resurge = hero.getResurge();
                     var cost = {unit: resurge['cost'], value: -resurge['value']}
                     PlayerData.updateResource([cost]);
-                    PlayerData.updatePlayer();
                     customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
                     customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
+                    PlayerData.updatePlayer();
                 }
             });
             customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
@@ -1312,12 +1312,12 @@ var ShopLayerMenu = BattleMenu.extend({
                 this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    self.showMenuLayer(sender.name);
+                    this.showMenuLayer(sender.name);
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);
                 }
-            }, this);
+            }.bind(this), this);
         }
         this.showMenuLayer = function (name) {
             for (var i in this.buttons) {
@@ -1325,10 +1325,10 @@ var ShopLayerMenu = BattleMenu.extend({
             }
             switch (name) {
                 case "shop_tab":
-                    self.showPorpView(name);
+                    this.showPorpView(name);
                     break;
                 case "moneyTree_tab":
-                    self.showMoneyTreeView(name);
+                    this.showMoneyTreeView(name);
                     break;
             }
             var childrens = shopView.getChildren();
@@ -1342,10 +1342,12 @@ var ShopLayerMenu = BattleMenu.extend({
         this.last_update = 0;
         this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
         this.falg = true;
-        customEventHelper.bindListener(EVENT.GOTO_NEXT_STAGE, function () {
+
+        this.refeshMoneyTreeLayer = function (){
             if (shopView.getChildByName('moneyTree_tab').visible)
                 shopView.getChildByName('moneyTree_tab').getChildByName("gold_text").setString(PlayerData.getStageData().getMoneyTreeRatio());
-        }.bind(this));
+        }
+
         this.showMoneyTreeView = function (name) {
             var showMoneyTree = shopView.getChildByName(name);
             var diamondText = showMoneyTree.getChildByName("diamond_text");
@@ -1356,8 +1358,8 @@ var ShopLayerMenu = BattleMenu.extend({
             goldText.setString(PlayerData.getStageData().getMoneyTreeRatio());
             var buyBtn = showMoneyTree.getChildByName("btn").getChildByName("buy_btn");
             buyBtn.addClickEventListener(function () {
-                self.buyGold(CONSTS.money_tree_one_price, PlayerData.getStageData().getMoneyTreeRatio(), true);
-            });
+                this.buyGold(CONSTS.money_tree_one_price, PlayerData.getStageData().getMoneyTreeRatio(), true);
+            }.bind(this));
 
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
@@ -1398,10 +1400,10 @@ var ShopLayerMenu = BattleMenu.extend({
             } else {
                 content = '当前钻石不足';
             }
-            new Popup1("友情提示", content, function (popup) {
+            Popup.openPopup("友情提示", content, function (popup) {
                 popup.hiddenPopup();
-                self.falg = true;
-            });
+                this.falg = true;
+            }.bind(this));
         };
         this.showPorpView = function (name) {
             var shopPorps = shopView.getChildByName(name).getChildByName('shopList');
@@ -1413,12 +1415,10 @@ var ShopLayerMenu = BattleMenu.extend({
             var shopListViewRoot = shopListView.getChildByName('root');
             var shopListViewRootClone = shopListViewRoot.clone();
             var goods = dataSource.goods;
-            var n = n1 = 0;
+            var n = n1 = len = 0;
             for (var i in goods) {
-                n++;
+                len++;
             }
-            var len = n;
-            n = 0;
             shopPorps.removeAllChildren(true);
             for (var i in goods) {
                 n++;
@@ -1450,12 +1450,12 @@ var ShopLayerMenu = BattleMenu.extend({
 
                 var buyBtn = itemLayer.getChildByName("btn").getChildByName("buy_btn");
 
-                self.clickBtn(buyBtn, datas);
+                this.clickBtn(buyBtn, datas);
 
                 itemLayer.setPosition(shopListViewRoot.getChildByName("item" + n1).getPosition());
                 shopListViewRootClone.addChild(itemLayer);
 
-                if (n % 3 == 0 || n == len - 1) {
+                if (n % 3 == 0 || n == len) {
                     n1 = 0;
                     shopPorps.setItemsMargin(20);
                     shopPorps.pushBackCustomItem(shopListViewRootClone);
@@ -1465,8 +1465,8 @@ var ShopLayerMenu = BattleMenu.extend({
         };
         this.clickBtn = function (buyBtn, goods) {
             buyBtn.addClickEventListener(function () {
-                self.buyGoods(goods);
-            });
+                this.buyGoods(goods);
+            }.bind(this));
         }
         this.buyGoods = function (goods) {
             var price = goods.price;
@@ -1480,24 +1480,25 @@ var ShopLayerMenu = BattleMenu.extend({
                     customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
-                PlayerData.updatePlayer();
                 tip.toggle({
-                    'delay': 2.0,
-                    'text': '成功购买 ' + CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费' + CONSTS.resources_mapping[price.unit] + " * " + price.value
+                    'beforeShow':[
+                        cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
+                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
+                PlayerData.updatePlayer();
             } else {
                 if (price.unit === 'gem') {
-                    new Popup1("友情提示", "当前钻石不足", function (popup) {
+                    Popup.openPopup("友情提示", "当前钻石不足", function (popup) {
                         popup.hiddenPopup();
                         //进入充值页面。
                     });
                 } else if (price.unit === 'gold') {
-                    new Popup1("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
+                    Popup.openPopup("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
                         popup.hiddenPopup();
-                        self.showMenuLayer("moneyTree_tab");
-                    });
+                        this.showMenuLayer("moneyTree_tab");
+                    }.bind(this));
                 } else {
-                    new Popup1("友情提示", "当前该资源不足", function (popup) {
+                    Popup.openPopup("友情提示", "当前该资源不足", function (popup) {
                         popup.hiddenPopup();
                     });
                 }
@@ -1532,12 +1533,12 @@ var RankLayerMenu = BattleMenu.extend({
                 this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    self.showMenuLayer(sender.name);
+                    this.showMenuLayer(sender.name);
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);
                 }
-            }, this);
+            }.bind(this), this);
         }
         var n = 0;
         this.showMenuLayer = function (name) {
@@ -1548,18 +1549,17 @@ var RankLayerMenu = BattleMenu.extend({
             this.buttons[name].setSelected(true);
         };
 
-        customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
+        this.refeshRankLayer = function () {
             for (var i in this.buttons) {
-                if (this.buttons[i].selected && i === event.getUserData().leaderId.replace("rank", "tab")) {
-                    /* PlayerData.getMyRankByType(event.getUserData().leaderId, function (result, data) {
-                     if (result && cc.isObject(data))
-                     myNumText.setString(data.index + 1);
-                     });*/
+                if(this.buttons[i].selected /*&& i === event.getUserData().leaderId.replace("rank","tab")*/){
                     this.showMenuLayer(i);
-                    return;
+                    break;
                 }
             }
-        }.bind(this));
+        };
+        /*customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
+
+        }.bind(this));*/
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
@@ -1567,7 +1567,7 @@ var RankLayerMenu = BattleMenu.extend({
                 myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
-                        listView.addChild(this.setRankView(data[i], type));
+                        listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
                     PlayerData.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
@@ -1593,7 +1593,7 @@ var RankLayerMenu = BattleMenu.extend({
             var num = root.getChildByName('num');
             var text = root.getChildByName('text');
             setFont([playerName]);
-            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num, text]);
+            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num,text]);
             levelText.setString("Lv." + data.player.level);
             num.setString(data.index + 1);
             playerName.setString(data.player.name);

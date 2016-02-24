@@ -42,14 +42,25 @@ var ChestUnit = CCSUnit.extend({
     CHEST_LOOT_ZORDER_OFFET: 1,
 
     _generateLoot: function () {
-        if(player.resource.hasOwnProperty(this.goods.skill_id)){
-            cc.log('获取金币');
-            var goldValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
-            //toggleTip({'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value});
-            this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
-                "unit": "gold",
-                "value": goldValue
-            }), this.CHEST_LOOT_ZORDER_OFFET);
+        //if(player.resource.hasOwnProperty(this.goods.skill_id)){
+        if(this.goods.type != 1){
+            cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
+            var resValue = this.goods.level;
+            if(this.goods.type === 0){
+                resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
+                this.battle.addSpriteRelatedNodes(this, Loot.generateLoots({
+                    "unit": this.goods.skill_id,
+                    "value": resValue
+                }), this.CHEST_LOOT_ZORDER_OFFET);
+            }else if(this.goods.type === 2){
+                PlayerData.updateResource({
+                    "unit": this.goods.skill_id,
+                    "value": resValue
+                })
+                PlayerData.updatePlayer();
+                customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
+            }
+            toggleTip({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
         } else {
             //发送释放buff事件
             cc.log('释放buff');
@@ -57,12 +68,6 @@ var ChestUnit = CCSUnit.extend({
                 skillId: this.goods.skill_id,
                 level: this.goods.level
             });
-        }
-        if (this.goods.skill_id == 'gold') {
-
-        }
-        else {
-
         }
         cc.log(this.goods.chestStyle + " , " + this.goods.skill_id + " , " + this.goods.level);
     }

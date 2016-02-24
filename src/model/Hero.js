@@ -18,7 +18,7 @@ var Hero = function (heroData) {
             sgt.RouterService.getCurrentTimestamp(function (result, data) {
                 player['time']['die'][this.getId()] = data;
                 PlayerData.updatePlayer();
-            });
+            }.bind(this));
         }
     }.bind(this));
     customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {

@@ -1,4 +1,6 @@
 var game;
+var quickLoginfalg = false;
+var logErrorFalg = false;
 var $$ = {};
 $$.extend = function (a, b) {
     if (typeof (b) === "undefined") {
@@ -51,7 +53,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -59,7 +62,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -67,7 +71,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10007",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -75,7 +80,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -83,7 +89,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -91,7 +98,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10003",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -99,7 +107,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -107,7 +116,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -115,7 +125,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10106",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -123,7 +134,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 2,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -131,7 +143,8 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
@@ -139,41 +152,91 @@ var CONSTS = {
             "f": {
                 "skill_id": "s10105",
                 "level": 4,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 1
             },
             "w": 4
         },
         {
             "f": {
                 "skill_id": "gold",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 1.5,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 2.3,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "gold",
+                "level": 4,
+                "chestStyle": "chest01.json",
+                "type": 0
+            },
+            "w": 13
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
+            },
+            "w": 10
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
+                "level": 2,
+                "chestStyle": "chest01.json",
+                "type": 2
+            },
+            "w": 8
+        },
+        {
+            "f": {
+                "skill_id": "small_blood",
                 "level": 3,
-                "chestStyle": "chest01.json"
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
+            "w": 6
         },
         {
             "f": {
-                "skill_id": "gold",
-                "level": 5,
-                "chestStyle": "chest01.json"
+                "skill_id": "middle_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
+            "w": 4
         },
         {
             "f": {
-                "skill_id": "gold",
-                "level": 7,
-                "chestStyle": "chest01.json"
+                "skill_id": "large_blood",
+                "level": 1,
+                "chestStyle": "chest01.json",
+                "type": 2
             },
-            "w": 13
-        },
-        {
-            "f": {
-                "skill_id": "gold",
-                "level": 10,
-                "chestStyle": "chest01.json"
-            },
-            "w": 13
+            "w": 2
         }
     ]
 };
@@ -246,7 +309,7 @@ function addPlayer(playerName, callback) {
             console.log("创建角色result:" + result + ",data:" + data);
             return callback(true);
         } else {
-            console.log('创建角色失败！');
+            console.error('创建角色失败！');
             return callback(false);
         }
     });
@@ -263,24 +326,23 @@ function is_weixin() {
 
 function openNewNameLayer(scene) {
     var createPlayer = ccs.csLoader.createNode(res.createPlayer);
-    //var gamepopup = new GamePopup(createPlayer);
     var root = createPlayer.getChildByName('root');
     var dice = root.getChildByName('dice');
     var name_text = root.getChildByName('name_text');
     var btn = root.getChildByName('btn');
-    //popup(gamepopup,100);
     bindButtonCallback(btn, function () {
+        tip2.toggle({'delay':10,'text':'正在创建角色并初始化游戏。。。。。。'});
         var playName = name_text.getString();
         if (cc.isString(playName)) {
             addPlayer(playName, function () {
                 createPlayer.removeFromParent(true);
-                //gamepopup.removeFromParent(true);
                 initGame();
+                tip2.stopAllActions();
+                tip2.setVisible(false);
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
-
             })
         } else {
-            new Popup1("友情提醒", "角色名字格式不正确");
+            Popup.openPopup("友情提醒", "角色名字格式不正确");
         }
     });
     bindButtonCallback(dice, function () {
@@ -300,8 +362,9 @@ var tipTemplate;
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
     tipTemplate=ccs.csLoader.createNode(res.tips).getChildByName("root");
-    window.tip2=new Tip(scene);
+    window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
+
     if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
@@ -384,6 +447,7 @@ function schedule(target, callback, delay, interval) {
     cc.director.getScheduler().schedule(callback, target, interval, cc.REPEAT_FOREVER, delay, false, target.__instanceId);
 }
 function unschedule(target) {
+
     cc.director.getScheduler().unschedule(target.__instanceId, target);
 }
 function bindTouchEventListener(listener, target, popup) {
@@ -437,4 +501,97 @@ function loadDynamicTexture(url, listenr, target) {
             listenr.onError();
         }
     }, target);
+}
+
+//自动登录业务
+function autoLoginService() {
+    SgtApi.UserService.quickLogin(function (result, user) {
+        if (result) {
+            if (user !== null) {
+                console.log("自动注册成功" + user);
+                //登陆成功 获取用户存档
+                getPlayerSave();
+            }
+        } else {
+            console.error('快速注册失败。');
+            logErrorFalg = true;
+        }
+    });
+}
+function autoWxLoginService(wxInfo) {
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: wxInfo.result.wxAppId, // 必填，公众号的唯一标识
+        timestamp: wxInfo.result.timestamp, // 必填，生成签名的时间戳
+        nonceStr: wxInfo.result.noncestr, // 必填，生成签名的随机串
+        signature: wxInfo.result.signature, // 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+    if (SgtApi.context.openid) {
+        SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP, function (result, data) {
+            if (!result) {
+                sgt.WxCentralService.getUserInfo(function (result, data) {
+                    if (result) {
+                        var user = new SgtApi.User();
+                        user.userName = data.openid;
+                        user.nickName = data.nickname;
+                        user.registryType = SgtApi.User.WECHAT_MP;//注册类型
+                        SgtApi.UserService.regist(user, function (result, data) {
+                            if (result) {
+                                console.log(data);
+                                //登陆成功 获取用户存档
+                                getPlayerSave(data.userid);
+                            } else {
+                                console.error("注册失败");
+                                logErrorFalg = true;
+                                //注册失败
+                            }
+                        });
+                    } else {
+                        //授权异常，重新授权
+                        sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
+                    }
+                });
+            } else {
+                console.log(data);
+                //登陆成功 获取用户存档
+                getPlayerSave();
+            }
+        });
+    } else {
+        //还未授权，重新授权
+        sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
+    }
+}
+function getPlayerSave() {
+    sgt.PlayerService.getByUserId(sgt.context.user.userid, function (result, data) {
+        console.log("getByUserId" + result);
+        if (result) {
+            console.log("成功获取用户角色" + data);
+            if (cc.isArray(data) && data.length > 0) {
+                var playerData = data[0];
+                PlayerData.player = playerData;
+                sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
+                    if (result) {
+                        if (cc.isObject(data)) {
+                            PlayerData.save = data;
+                            localStorage.setItem("save", data.content);
+                        } else {
+                            //没有存档
+                            console.log("当前用户没有存档");
+                        }
+                        quickLoginfalg = true;
+                    }
+                });
+                //sgt.PlayerService.downloadSave();
+            } else {
+                //未创建用户
+                //createPlayer(userId);
+                console.log("未创建角色");
+            }
+        } else {
+            console.error("失败获取用户角色" + data);
+            logErrorFalg = true;
+        }
+    })
 }

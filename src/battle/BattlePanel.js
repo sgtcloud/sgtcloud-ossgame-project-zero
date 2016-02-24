@@ -30,15 +30,13 @@ var BattlePanel = cc.Node.extend({
 
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
-            //var staticUnit = new StatisticsUnit();
-            //staticUnit.ignoreAnchorPointForPosition(true);
-            //popup(staticUnit,4000);
-            popup(new GamePopup(new StatisticsUnit(), cc.p(320, 580), false), 4000);
+            GamePopup.openPopup(new StatisticsUnit(), cc.p(320, 580), false);
         }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 
         bindButtonCallback(this.rewardBtn, function () {
-            this.openPopup();
+            //open offlineReward popup
+            GamePopup.openPopup(new OfflineRewardUnit(this.rewardBtn));
         }.bind(this));
         this.loadRewardBtn();
 
@@ -48,9 +46,7 @@ var BattlePanel = cc.Node.extend({
 
         this.pack_btn = root.getChildByName('pack_btn');
         bindButtonCallback(this.pack_btn, function () {
-            var packUnit = new PackUnit();
-            var gamePopup = new GamePopup(packUnit, cc.p(320, 580), false);
-            popup(gamePopup, 101);
+            GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
@@ -127,49 +123,6 @@ var BattlePanel = cc.Node.extend({
         this.scheduleUpdate();
     },
 
-    openPopup: function () {
-        var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
-
-        var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
-        var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn').getChildByName('offline_btn');
-
-        var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
-        var rewards = player.not_get_reward;
-
-        offlineRewardLayerBox.getChildByName("key_text").setString(0);
-        offlineRewardLayerBox.getChildByName("gem_text").setString(0);
-        offlineRewardLayerBox.getChildByName("gold_text").setString(0);
-
-        for (var key in rewards) {
-            if (rewards.hasOwnProperty(key)) {
-                var tempKey = key;
-                if (key.indexOf("key") != -1) {
-                    var icon = offlineRewardLayerBox.getChildByName("key");
-                    icon.loadTexture("res/icon/resources_small/" + tempKey + ".png");
-                    key = "key";
-                }
-                var offlineRewardLayerText = offlineRewardLayerBox.getChildByName(key + '_text');
-                offlineRewardLayerText.ignoreContentAdaptWithSize(true);
-                cc.log("offlineReward:" + rewards[tempKey]);
-                offlineRewardLayerText.setString(rewards[tempKey]);
-            }
-        }
-        var gamePopup = new GamePopup(offlineRewardLayer);
-        //bindTouchEventListener(,);
-        bindButtonCallback(offlineRewardLayerBtn, function () {
-            offlineRewardLayer.removeFromParent();
-            this.rewardBtn.visible = false;
-            gamePopup.removeFromParent();
-            PlayerData.receiveOfflineReward();
-            customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-            customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-            //customEventHelper.sendEvent(EVENT);
-            PlayerData.updatePlayer();
-            // return true;
-        }.bind(this));
-        popup(gamePopup, 4000);
-        //gamePopup.popup();
-    },
     reset: function () {
         this.intervalTime = 0;
         this.intervalState = true;
