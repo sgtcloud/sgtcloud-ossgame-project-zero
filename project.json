@@ -42,13 +42,14 @@
     "src/battle/MainScene.js",
     "src/battle/BattleMenu.js",
     "src/battle/HeroDesc.js",
-    "src/battle/Popup1.js",
+    "src/battle/Popup.js",
     "src/Chance.js",
     "src/GamePopup.js",
     "src/battle/ChestUnit.js",
     "src/battle/FairyUnit.js",
     "src/battle/PackUnit.js",
     "src/battle/StatisticsUnit.js",
+    "src/battle/OfflineRewardUnit.js",
     "src/apps.js"
   ]
 }

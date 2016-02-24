@@ -8,7 +8,6 @@ var PackUnit = cc.Node.extend({
         this.root = this.packLayer.getChildByName('root');
         this.pack = this.root.getChildByName('pack');
         this.chest = this.root.getChildByName('chest');
-        var self = this;
         var packs = ["wood",
             "leather",
             "stone",
@@ -53,11 +52,12 @@ var PackUnit = cc.Node.extend({
                 if (chest <= 0) {
                     errorContent += "箱子不足,";
                 }
-                new Popup1("友情提示", errorContent + "前往商城购买", function (popup) {
+                Popup.openPopup("友情提示", errorContent + "前往商城购买", function (popup) {
                     popup.hiddenPopup();
-                    self.removeFromParent();
+                    this.removeFromParent();
                     game.tabContainer.showMenuLayer('shop');
-                });
+                    game.tabContainer.menus.shop.showMenuLayer('shop_tab');
+                }.bind(this));
             }
         };
         this.openChest = function (key_unit, chest_unit, bonus_num) {
@@ -77,14 +77,14 @@ var PackUnit = cc.Node.extend({
             }
         };
         golden_chest_btn.addClickEventListener(function () {
-            self.openChest("golden_key", "golden_chest", "c1003")
-        });
+            this.openChest("golden_key", "golden_chest", "c1003")
+        }.bind(this));
         silver_chest_btn.addClickEventListener(function () {
-            self.openChest("silver_key", "silver_chest", "c1002")
-        });
+            this.openChest("silver_key", "silver_chest", "c1002")
+        }.bind(this));
         iron_chest_btn.addClickEventListener(function () {
-            self.openChest("iron_key", "iron_chest", "c1001")
-        });
+            this.openChest("iron_key", "iron_chest", "c1001")
+        }.bind(this));
         customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
             this.refreshAll();
         }.bind(this));

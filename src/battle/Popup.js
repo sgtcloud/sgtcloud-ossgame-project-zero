@@ -1,11 +1,10 @@
 
 //公共弹出框1
-var Popup1 = cc.Node.extend({
+var Popup = cc.Node.extend({
 
     ctor: function (title, content, _callback) {
         this._super();
         this.prompt1Layer = ccs.csLoader.createNode(res.prompt1_layer_json);
-        this.gamePopup = new GamePopup(this.prompt1Layer);
         this.initData(title, content, _callback);
     },
 
@@ -17,23 +16,24 @@ var Popup1 = cc.Node.extend({
         root.getChildByName("box").setVisible(false);
         var btn = root.getChildByName("btn").getChildByName("btn");
 
-        var self = this;
         bindButtonCallback(btn, function () {
             if (typeof _callback === 'function') {
-                _callback(self);
+                _callback(this);
             }else{
-                self.hiddenPopup();
+                this.hiddenPopup();
             }
-        });
-        this.openPopup();
+        }.bind(this));
     },
     openPopup: function(){
-        popup(this.gamePopup, 4000);
-        //this.gamePopup.popup();
+        GamePopup.openPopup(this.prompt1Layer);
     },
     hiddenPopup: function(){
-        this.prompt1Layer.removeFromParent();
-        this.gamePopup.removeFromParent();
+        GamePopup.closePopup(this.prompt1Layer);
     }
 });
+
+Popup.openPopup = function(title, content, _callback){
+    var popup = new Popup(title, content, _callback);
+    popup.openPopup();
+}
 

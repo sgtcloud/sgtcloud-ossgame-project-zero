@@ -333,9 +333,7 @@ var PlayerData = {
         var rewards = player.not_get_reward;
         var arrays = new Array();
         for (var key in rewards) {
-            if (rewards.hasOwnProperty(key)) {
-                arrays.push(this.createResourceData(key, rewards[key]));
-            }
+            arrays.push(this.createResourceData(key, rewards[key]));
         }
         this.updateResource(arrays);
         player.not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};
