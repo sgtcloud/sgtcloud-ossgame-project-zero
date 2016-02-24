@@ -393,7 +393,6 @@ var BattleField = cc.Class.extend({
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
         }.bind(this), 1);
-        //同步数据到财富排行 由于资源命名问题 暂时还使用pvp_rank
         PlayerData.updateLeaderBoardScore(player.statistics.total_gold, "gold_rank");
         PlayerData.updatePlayer();
     },
