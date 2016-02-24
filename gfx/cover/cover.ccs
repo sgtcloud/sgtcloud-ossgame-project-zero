@@ -22,7 +22,6 @@
             <PlistImageFile Name="coverUI_bg_14.png" Key="coverUI/bg_14.png" />
             <PlistImageFile Name="coverUI_btn1.png" Key="coverUI/btn1.png" />
             <PlistImageFile Name="coverUI_btn2.png" Key="coverUI/btn2.png" />
-            <PlistImageFile Name="coverUI_cover_bg.jpg" Key="coverUI/cover_bg.jpg" />
             <PlistImageFile Name="coverUI_logo.png" Key="coverUI/logo.png" />
             <PlistImageFile Name="coverUI_text.png" Key="coverUI/text.png" />
             <PlistImageFile Name="coverUI_text1.png" Key="coverUI/text1.png" />

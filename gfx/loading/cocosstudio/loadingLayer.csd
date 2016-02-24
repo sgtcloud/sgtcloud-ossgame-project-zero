@@ -99,7 +99,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/bg.jpg" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/bg.jpg" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="logo" ActionTag="1065835342" Tag="11" IconVisible="False" LeftMargin="170.0143" RightMargin="169.9857" TopMargin="180.0000" BottomMargin="600.0000" Scale9Width="300" Scale9Height="180" ctype="ImageViewObjectData">
                 <Size X="300.0000" Y="180.0000" />
@@ -109,7 +109,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="0.8125" />
                 <PreSize X="0.4688" Y="0.1875" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/logo.png" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/logo.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="letsgo" ActionTag="1896466436" Tag="12" IconVisible="False" LeftMargin="147.0000" RightMargin="147.0000" TopMargin="404.0002" BottomMargin="462.9998" Scale9Width="346" Scale9Height="93" ctype="ImageViewObjectData">
                 <Size X="346.0000" Y="93.0000" />
@@ -119,7 +119,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5792" />
                 <PreSize X="0.5406" Y="0.0969" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/letsgo.png" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/letsgo.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="loading_bg" ActionTag="891686233" Tag="13" IconVisible="False" LeftMargin="137.9999" RightMargin="138.0001" TopMargin="709.0000" BottomMargin="244.0000" Scale9Width="364" Scale9Height="7" ctype="ImageViewObjectData">
                 <Size X="364.0000" Y="7.0000" />
@@ -129,7 +129,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.2615" />
                 <PreSize X="0.5688" Y="0.0073" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/login_bg.png" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/login_bg.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="frist" ActionTag="822993709" Tag="14" IconVisible="False" LeftMargin="146.4864" RightMargin="146.5136" TopMargin="639.0000" BottomMargin="287.0000" Scale9Width="347" Scale9Height="34" ctype="ImageViewObjectData">
                 <Size X="347.0000" Y="34.0000" />
@@ -139,7 +139,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5015" Y="0.3344" />
                 <PreSize X="0.5422" Y="0.0354" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/frist.png" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/frist.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="loading_bar" ActionTag="1100054645" Tag="15" IconVisible="False" LeftMargin="137.5996" RightMargin="138.4004" TopMargin="709.0000" BottomMargin="244.0000" ProgressInfo="50" ctype="LoadingBarObjectData">
                 <Size X="364.0000" Y="7.0000" />
@@ -149,7 +149,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.2615" />
                 <PreSize X="0.5688" Y="0.0073" />
-                <ImageFileData Type="MarkedSubImage" Path="loadingUI/login_bar.png" Plist="loadingLayer.plist" />
+                <ImageFileData Type="Normal" Path="loadingUI/login_bar.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="star" ActionTag="479375161" Tag="17" RotationSkewX="285.0000" RotationSkewY="285.0000" IconVisible="False" LeftMargin="125.0204" RightMargin="487.9796" TopMargin="697.0411" BottomMargin="235.9589" ctype="SpriteObjectData">
                 <Size X="27.0000" Y="27.0000" />
@@ -159,7 +159,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2164" Y="0.2599" />
                 <PreSize X="0.0422" Y="0.0281" />
-                <FileData Type="MarkedSubImage" Path="loadingUI/star.png" Plist="loadingLayer.plist" />
+                <FileData Type="Normal" Path="loadingUI/star.png" Plist="" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
             </Children>

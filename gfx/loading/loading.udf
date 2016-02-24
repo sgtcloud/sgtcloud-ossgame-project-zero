@@ -32,9 +32,8 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="loadingLayer.csd" />
-          <FilePathData Path="loadingLayer.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="loadingLayer.csi" />
+        <ActiveDocument Path="loadingLayer.csd" />
       </Value>
     </Item>
   </Properties>

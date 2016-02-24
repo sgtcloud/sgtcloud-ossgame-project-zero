@@ -12,17 +12,7 @@
           <Image Name="frist.png" />
           <Image Name="letsgo.png" />
           <Image Name="login_bar.png" />
-          <PlistImageFolder Image="loadingLayer.png" PListFile="loadingLayer.plist" Name=".loadingLayer_PList.Dir">
-            <PlistImageFile Name="loadingUI_bg.jpg" Key="loadingUI/bg.jpg" />
-            <PlistImageFile Name="loadingUI_frist.png" Key="loadingUI/frist.png" />
-            <PlistImageFile Name="loadingUI_letsgo.png" Key="loadingUI/letsgo.png" />
-            <PlistImageFile Name="loadingUI_login_bar.png" Key="loadingUI/login_bar.png" />
-            <PlistImageFile Name="loadingUI_login_bg.png" Key="loadingUI/login_bg.png" />
-            <PlistImageFile Name="loadingUI_logo.png" Key="loadingUI/logo.png" />
-            <PlistImageFile Name="loadingUI_star.png" Key="loadingUI/star.png" />
-          </PlistImageFolder>
         </Folder>
-        <PlistInfo Name="loadingLayer.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
