@@ -401,7 +401,7 @@ var BattleField = cc.Class.extend({
     STAGE_LOOTS_ZORDER_OFFSET: 1000,
 
     generateStageLoots: function (bonus) {
-        var pos = cc.p(this.x + this.width * 3 / 5, this.y + this.height * 3 / 5);
+        var pos = cc.p(this.container.x + this.container.width * 3 / 5, this.container.y + this.container.height * 3 / 5);
         for (var i in bonus) {
             this.addSprites(Loot.generateLoots(bonus[i], pos), this.STAGE_LOOTS_ZORDER_OFFSET);
         }
