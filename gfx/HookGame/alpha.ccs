@@ -571,6 +571,7 @@
         <PlistInfo Name="SkillUI.csi" Type="Plist" />
         <Project Name="Tips.csd" Type="Layer" />
         <Project Name="TextLayer.csd" Type="Layer" />
+        <Project Name="SmallItemLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

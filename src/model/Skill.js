@@ -18,6 +18,9 @@ var Skill = function (id, lv, heroId) {
     this.getUnlockLevel = function () {
         return getLevelData(data, 'unlockLevel', this.getLv());
     }
+    this.isLocked=function(){
+        return this.getLv()<this.getUnlockLevel()
+    }
     this.getType = function () {
         return type;
     }

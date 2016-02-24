@@ -124,8 +124,6 @@ cc.rendererWebGL = {
         var gl = cc._renderContext;
         gl.clearColor(this._clearColor.r, this._clearColor.g, this._clearColor.b, this._clearColor.a);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-        if(this._clearColor.a === 0)
-            gl.blendFunc(gl.SRC_ALPHA, gl.DST_ALPHA);
     },
 
     setDepthTest: function (enable){
@@ -154,5 +152,3 @@ cc.rendererWebGL = {
         }
     }
 };
-if (cc._renderType === cc._RENDER_TYPE_WEBGL)
-    cc.renderer = cc.rendererWebGL;

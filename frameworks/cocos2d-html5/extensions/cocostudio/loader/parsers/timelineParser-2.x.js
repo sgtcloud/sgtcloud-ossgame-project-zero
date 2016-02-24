@@ -469,7 +469,7 @@
 
         this.widgetAttributes(widget, json);
 
-        var clipEnabled = json["ClipAble"];
+        var clipEnabled = json["ClipAble"] || false;
         if(clipEnabled != null)
             widget.setClippingEnabled(clipEnabled);
 
@@ -750,7 +750,7 @@
             widget.setBackGroundImage(path, type);
         });
 
-        var clipEnabled = json["ClipAble"];
+        var clipEnabled = json["ClipAble"] || false;
         widget.setClippingEnabled(clipEnabled);
 
         var colorType = getParam(json["ComboBoxIndex"], 0);
@@ -1292,8 +1292,8 @@
             node.setDebugDrawLength(length);
 
         var blendFunc = json["BlendFunc"];
-        if(blendFunc)
-            node.setBlendFunc(new cc.BlendFunc(blendFunc["Src"] || 0, blendFunc["Dst"] || 0));
+        if(blendFunc && blendFunc["Src"] !== undefined && blendFunc["Dst"] !== undefined)
+            node.setBlendFunc(new cc.BlendFunc(blendFunc["Src"], blendFunc["Dst"]));
 
         parser.generalAttributes(node, json);
         var color = json["CColor"];
@@ -1395,7 +1395,7 @@
     });
 
 
-    load.registerParser("timeline", "2.*", parser);
+    load.registerParser("timeline", "*", parser);
 
 
 })(ccs._load, ccs._parser);

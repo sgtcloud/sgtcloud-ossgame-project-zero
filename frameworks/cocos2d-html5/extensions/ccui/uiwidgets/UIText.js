@@ -43,8 +43,8 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
     _touchScaleChangeEnabled: false,
     _normalScaleValueX: 1,
     _normalScaleValueY: 1,
-    _fontName: "Thonburi",
-    _fontSize: 10,
+    _fontName: "Arial",
+    _fontSize: 16,
     _onSelectedScaleOffset:0.5,
     _labelRenderer: "",
     _textAreaSize: null,
@@ -418,6 +418,7 @@ ccui.Text = ccui.Widget.extend(/** @lends ccui.Text# */{
             this.setTextHorizontalAlignment(uiLabel._labelRenderer.getHorizontalAlignment());
             this.setTextVerticalAlignment(uiLabel._labelRenderer.getVerticalAlignment());
             this.setContentSize(uiLabel.getContentSize());
+            this.setTextColor(uiLabel.getTextColor());
         }
     },
 

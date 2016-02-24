@@ -44,8 +44,8 @@ cc.stencilBits = -1;
  *
  * @property {Number}   alphaThreshold  - Threshold for alpha value.
  * @property {Boolean}  inverted        - Indicate whether in inverted mode.
+ * @property {cc.Node}  stencil         - he cc.Node to use as a stencil to do the clipping.
  */
-//@property {cc.Node}  stencil         - he cc.Node to use as a stencil to do the clipping.
 cc.ClippingNode = cc.Node.extend(/** @lends cc.ClippingNode# */{
     alphaThreshold: 0,
     inverted: false,
@@ -195,7 +195,7 @@ cc.ClippingNode = cc.Node.extend(/** @lends cc.ClippingNode# */{
     },
 
     _createRenderCmd: function(){
-        if(cc._renderType === cc._RENDER_TYPE_CANVAS)
+        if(cc._renderType === cc.game.RENDER_TYPE_CANVAS)
             return new cc.ClippingNode.CanvasRenderCmd(this);
         else
             return new cc.ClippingNode.WebGLRenderCmd(this);

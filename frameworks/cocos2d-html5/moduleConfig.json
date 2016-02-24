@@ -40,6 +40,7 @@
             "cocos2d/compression/zlib.min.js"
         ],
         "core" : [
+            "cocos2d/core/event-manager/CCEventHelper.js",
             "CCDebugger.js",
             "cocos2d/core/utils/BinaryLoader.js",
             "Base64Images.js",
@@ -124,7 +125,9 @@
             "cocos2d/core/labelttf/CCLabelTTFCanvasRenderCmd.js",
             "cocos2d/core/labelttf/CCLabelTTFWebGLRenderCmd.js",
 
-            "cocos2d/core/CCActionManager.js"
+            "cocos2d/core/CCActionManager.js",
+            
+            "cocos2d/core/utils/CCProfiler.js"
         ],
         "effects" : [
             "core",
@@ -329,13 +332,15 @@
             "extensions/ccui/uiwidgets/UIText.js",
             "extensions/ccui/uiwidgets/UITextAtlas.js",
             "extensions/ccui/uiwidgets/UITextBMFont.js",
+            "extensions/ccui/uiwidgets/UITextField.js",
             "extensions/ccui/uiwidgets/UIVideoPlayer.js",
             "extensions/ccui/uiwidgets/UIRichText.js",
             "extensions/ccui/uiwidgets/UIWebView.js",
-            "extensions/ccui/uiwidgets/UITextField.js",
             "extensions/ccui/uiwidgets/scroll-widget/UIScrollView.js",
             "extensions/ccui/uiwidgets/scroll-widget/UIListView.js",
-            "extensions/ccui/uiwidgets/scroll-widget/UIPageView.js"
+            "extensions/ccui/uiwidgets/scroll-widget/UIPageView.js",
+            "extensions/ccui/uiwidgets/scroll-widget/UIScrollViewCanvasRenderCmd.js",
+            "extensions/ccui/uiwidgets/scroll-widget/UIScrollViewWebGLRenderCmd.js"
         ],
         "cocostudio" : [
             "core",  "tilemap", "particle", "shape-nodes", "ccui",
@@ -409,9 +414,6 @@
             "extensions/gui/control-extension/CCControlButton.js",
             "extensions/gui/control-extension/CCControlUtils.js",
             "extensions/gui/control-extension/CCInvocation.js",
-            "extensions/gui/control-extension/CCScale9Sprite.js",
-            "extensions/gui/control-extension/CCScale9SpriteCanvasRenderCmd.js",
-            "extensions/gui/control-extension/CCScale9SpriteWebGLRenderCmd.js",
             "extensions/gui/control-extension/CCMenuPassive.js",
             "extensions/gui/control-extension/CCControlSaturationBrightnessPicker.js",
             "extensions/gui/control-extension/CCControlHuePicker.js",
@@ -481,6 +483,10 @@
             "core", "physics",
 
             "external/chipmunk/chipmunk.js"
+        ],
+        "runtime":[
+            "core",
+            "extensions/runtime/CCLoaderLayer.js"
         ],
         "socketio" : [
             "external/socketio/socket.io.min.js"

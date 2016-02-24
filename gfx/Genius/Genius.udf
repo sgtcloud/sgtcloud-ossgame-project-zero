@@ -31,21 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="blood01.csd" />
-          <FilePathData Path="bronze01.csd" />
-          <FilePathData Path="blood02.csd" />
-          <FilePathData Path="blood03.csd" />
-          <FilePathData Path="key01.csd" />
-          <FilePathData Path="key02.csd" />
-          <FilePathData Path="key03.csd" />
-          <FilePathData Path="blood01.csi" />
-          <FilePathData Path="blood02.csi" />
-          <FilePathData Path="blood03.csi" />
-          <FilePathData Path="key01.csi" />
-          <FilePathData Path="key02.csi" />
-          <FilePathData Path="key03.csi" />
+          <FilePathData Path="other.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="key03.csi" />
+        <ActiveDocument Path="other.csi" />
       </Value>
     </Item>
   </Properties>

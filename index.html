@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>指尖骑士挂机版v0.0.3</title>
-    <!--<link rel="icon" type="image/GIF" href="res/favicon.ico"/>-->
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="viewport" content="initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="full-screen" content="yes"/>
     <meta name="screen-orientation" content="portrait"/>
@@ -19,13 +20,30 @@
         }
     </style>
 </head>
-<body style="padding:0; margin: 0; background: #000000;">
+<body style="padding:0; margin: 0; background: #000;">
 
 <canvas id="gameCanvas" width="640" height="960"></canvas>
 </body>
 </html>
 <!--<script src="res/loading.js"></script>-->
-<script src="spin.min.js"></script>
+<script>
+    (function () {
+        var nav = window.navigator;
+        var ua = nav.userAgent.toLowerCase();
+        var uaResult = /android (\d+(?:\.\d+)+)/i.exec(ua) || /android (\d+(?:\.\d+)+)/i.exec(nav.platform);
+        if (uaResult) {
+            var osVersion = parseInt(uaResult[1]) || 0;
+            var browserCheck = ua.match(/(qzone|micromessenger|qqbrowser)/i);
+            if (browserCheck) {
+                var gameCanvas = document.getElementById("gameCanvas");
+                var ctx = gameCanvas.getContext('2d');
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, 1, 1);
+            }
+        }
+    })();
+</script>
+<script src="//cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
 <script>
     var opts = {
         lines: 13 // The number of lines to draw

@@ -31,15 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="ShopView.csd" />
-          <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="RankView.csd" />
-          <FilePathData Path="ShopTab.csd" />
-          <FilePathData Path="ShopListView.csd" />
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="EquipHeroView.csd" />
+          <FilePathData Path="SmallItemLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="EquipHeroView.csd" />
+        <ActiveDocument Path="SmallItemLayer.csd" />
       </Value>
     </Item>
   </Properties>

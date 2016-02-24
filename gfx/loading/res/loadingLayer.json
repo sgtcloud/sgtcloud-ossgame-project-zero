@@ -6,7 +6,7 @@
     "Content": {
       "Animation": {
         "Duration": 22,
-        "Speed": 1.0,
+        "Speed": 0.5,
         "Timelines": [
           {
             "ActionTag": 479375161,
@@ -292,9 +292,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/bg.jpg",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "Scale9Width": 640,
                 "Scale9Height": 960,
@@ -328,9 +328,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/logo.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "Scale9Width": 300,
                 "Scale9Height": 180,
@@ -371,9 +371,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/letsgo.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "Scale9Width": 346,
                 "Scale9Height": 93,
@@ -414,9 +414,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/login_bg.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "Scale9Width": 364,
                 "Scale9Height": 7,
@@ -457,9 +457,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/frist.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "Scale9Width": 347,
                 "Scale9Height": 34,
@@ -501,9 +501,9 @@
               {
                 "ProgressInfo": 50,
                 "ImageFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/login_bar.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "AnchorPoint": {
                   "ScaleX": 0.5011,
@@ -542,9 +542,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "loadingUI/star.png",
-                  "Plist": ""
+                  "Plist": "loadingLayer.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -562,8 +562,8 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "RotationSkewX": 330.0,
-                "RotationSkewY": 330.0,
+                "RotationSkewX": 285.0,
+                "RotationSkewY": 285.0,
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
@@ -605,13 +605,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "loadingUI/bg.jpg",
-        "loadingUI/frist.png",
-        "loadingUI/letsgo.png",
-        "loadingUI/login_bar.png",
-        "loadingUI/login_bg.png",
-        "loadingUI/logo.png",
-        "loadingUI/star.png"
+        "loadingLayer.plist",
+        "loadingLayer.png"
       ],
       "ctype": "GameFileData"
     }

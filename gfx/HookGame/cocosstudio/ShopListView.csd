@@ -4,39 +4,39 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="994" ctype="GameLayerObjectData">
-        <Size X="604.0000" Y="280.0000" />
+        <Size X="594.0000" Y="280.0000" />
         <Children>
           <AbstractNodeData Name="root" ActionTag="-441691917" Tag="1110" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="604.0000" Y="280.0000" />
+            <Size X="594.0000" Y="280.0000" />
             <Children>
-              <AbstractNodeData Name="item1" ActionTag="-299628492" Tag="1111" IconVisible="True" LeftMargin="21.1877" RightMargin="402.8123" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="item1" ActionTag="-299628492" Tag="1111" IconVisible="True" LeftMargin="13.9999" RightMargin="400.0001" TopMargin="-0.0001" BottomMargin="0.0001" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="180.0000" Y="280.0000" />
                 <AnchorPoint />
-                <Position X="21.1877" />
+                <Position X="13.9999" Y="0.0001" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0351" />
-                <PreSize X="0.2980" Y="1.0000" />
+                <PrePosition X="0.0236" Y="0.0000" />
+                <PreSize X="0.3030" Y="1.0000" />
                 <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="item2" ActionTag="419584036" Tag="1150" IconVisible="True" LeftMargin="212.7820" RightMargin="211.2180" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="item2" ActionTag="419584036" Tag="1150" IconVisible="True" LeftMargin="206.4999" RightMargin="207.5001" TopMargin="-0.0001" BottomMargin="0.0001" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="180.0000" Y="280.0000" />
                 <AnchorPoint />
-                <Position X="212.7820" />
+                <Position X="206.4999" Y="0.0001" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3523" />
-                <PreSize X="0.2980" Y="1.0000" />
+                <PrePosition X="0.3476" Y="0.0000" />
+                <PreSize X="0.3030" Y="1.0000" />
                 <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="item3" ActionTag="245619892" Tag="1170" IconVisible="True" LeftMargin="404.3772" RightMargin="19.6228" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="item3" ActionTag="245619892" Tag="1170" IconVisible="True" LeftMargin="398.9998" RightMargin="15.0002" TopMargin="-0.0001" BottomMargin="0.0001" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="180.0000" Y="280.0000" />
                 <AnchorPoint />
-                <Position X="404.3772" />
+                <Position X="398.9998" Y="0.0001" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6695" />
-                <PreSize X="0.2980" Y="1.0000" />
+                <PrePosition X="0.6717" Y="0.0000" />
+                <PreSize X="0.3030" Y="1.0000" />
                 <FileData Type="Normal" Path="ShopIconLayer.csd" Plist="" />
               </AbstractNodeData>
             </Children>

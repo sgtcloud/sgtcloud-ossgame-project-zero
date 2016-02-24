@@ -293,6 +293,7 @@ var BattleField = cc.Class.extend({
     },
 
     initBattleEnemies: function (stage) {
+
         this.enemyUnits.clear();
         var enemiesData;
         if (stage.isBossBattle()) {

@@ -46,7 +46,7 @@ cc.loader.register(["js"], cc._jsLoader);
 
 cc._imgLoader = {
     load : function(realUrl, url, res, cb){
-        cc.loader.cache[url] =  cc.loader.loadImg(realUrl, function(err, img){
+        cc.loader.cache[url] = cc.loader.loadImg(realUrl, function(err, img){
             if(err)
                 return cb(err);
             cc.textureCache.handleLoadedTexture(url);
@@ -87,7 +87,7 @@ cc._fontLoader = {
         ".svg" : "svg"
     },
     _loadFont : function(name, srcs, type){
-        var doc = document, path = cc.path, TYPE = this.TYPE, fontStyle = cc.newElement("style");
+        var doc = document, path = cc.path, TYPE = this.TYPE, fontStyle = document.createElement("style");
         fontStyle.type = "text/css";
         doc.body.appendChild(fontStyle);
 
@@ -110,7 +110,7 @@ cc._fontLoader = {
         fontStyle.textContent += fontStr + "}";
 
         //<div style="font-family: PressStart;">.</div>
-        var preloadDiv = cc.newElement("div");
+        var preloadDiv = document.createElement("div");
         var _divStyle =  preloadDiv.style;
         _divStyle.fontFamily = name;
         preloadDiv.innerHTML = ".";
@@ -129,7 +129,15 @@ cc._fontLoader = {
         }else{
             self._loadFont(name, srcs);
         }
-        cb(null, true);
+        if(document.fonts){
+            document.fonts.load("1em " + name).then(function(){
+                cb(null, true);
+            }, function(err){
+                cb(err);
+            });
+        }else{
+            cb(null, true);
+        }
     }
 };
 cc.loader.register(["font", "eot", "ttf", "woff", "svg", "ttc"], cc._fontLoader);

@@ -1,7 +1,7 @@
 /**
+ * 包装ccs动画的精灵类，作为所有父类
  * Created by highkay on 2016/2/15.
  */
-
 var CCSUnit = cc.Node.extend({
 
     ctor: function () {
@@ -36,7 +36,14 @@ var CCSUnit = cc.Node.extend({
     //执行动画
     playAnimation: function (name, loop, callback) {
         if (callback) {
-            this.animation.setLastFrameCallFunc(callback);
+            var done = false;
+            this.animation.setLastFrameCallFunc(function () {
+                // prevent to be called twice
+                if(!loop && !done){
+                    done = true;
+                    callback();
+                }
+            });
         }
         this.animation.play(name, loop);
     }

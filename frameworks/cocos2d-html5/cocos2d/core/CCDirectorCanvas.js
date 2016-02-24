@@ -24,72 +24,59 @@
  THE SOFTWARE.
  ****************************************************************************/
 
+cc.game.addEventListener(cc.game.EVENT_RENDERER_INITED, function () {
 
-if (cc._renderType === cc._RENDER_TYPE_CANVAS) {
+    if (cc._renderType === cc.game.RENDER_TYPE_CANVAS) {
+        var _p = cc.Director.prototype;
 
-    var _p = cc.Director.prototype;
+        _p.getProjection = function (projection) {
+            return this._projection;
+        };
 
-    _p.setProjection = function (projection) {
-        this._projection = projection;
-        cc.eventManager.dispatchEvent(this._eventProjectionChanged);
-    };
+        _p.setProjection = function (projection) {
+            this._projection = projection;
+            cc.eventManager.dispatchEvent(this._eventProjectionChanged);
+        };
 
-    _p.setDepthTest = function () {
-    };
+        _p.setDepthTest = function () {
+        };
 
-    _p.setClearColor = function (clearColor) {
-        cc.renderer._clearColor = clearColor;
-        cc.renderer._clearFillStyle = 'rgb(' + clearColor.r + ',' + clearColor.g + ',' + clearColor.b +')' ;
-    };
+        _p.setClearColor = function (clearColor) {
+            cc.renderer._clearColor = clearColor;
+            cc.renderer._clearFillStyle = 'rgb(' + clearColor.r + ',' + clearColor.g + ',' + clearColor.b +')' ;
+        };
 
-    _p.setOpenGLView = function (openGLView) {
-        // set size
-        this._winSizeInPoints.width = cc._canvas.width;      //this._openGLView.getDesignResolutionSize();
-        this._winSizeInPoints.height = cc._canvas.height;
-        this._openGLView = openGLView || cc.view;
-        if (cc.eventManager)
-            cc.eventManager.setEnabled(true);
-    };
+        _p.setOpenGLView = function (openGLView) {
+            // set size
+            this._winSizeInPoints.width = cc._canvas.width;      //this._openGLView.getDesignResolutionSize();
+            this._winSizeInPoints.height = cc._canvas.height;
+            this._openGLView = openGLView || cc.view;
+            if (cc.eventManager)
+                cc.eventManager.setEnabled(true);
+        };
 
-    _p._createStatsLabel = function () {
-        var _t = this;
-        var fontSize = 0;
-        if (_t._winSizeInPoints.width > _t._winSizeInPoints.height)
-            fontSize = 0 | (_t._winSizeInPoints.height / 320 * 24);
-        else
-            fontSize = 0 | (_t._winSizeInPoints.width / 320 * 24);
+        _p.getVisibleSize = function () {
+            //if (this._openGLView) {
+            //return this._openGLView.getVisibleSize();
+            //} else {
+            return this.getWinSize();
+            //}
+        };
 
-        _t._FPSLabel = new cc.LabelTTF("000.0", "Arial", fontSize);
-        _t._SPFLabel = new cc.LabelTTF("0.000", "Arial", fontSize);
-        _t._drawsLabel = new cc.LabelTTF("0000", "Arial", fontSize);
-
-        var locStatsPosition = cc.DIRECTOR_STATS_POSITION;
-        _t._drawsLabel.setPosition(_t._drawsLabel.width / 2 + locStatsPosition.x, _t._drawsLabel.height * 5 / 2 + locStatsPosition.y);
-        _t._SPFLabel.setPosition(_t._SPFLabel.width / 2 + locStatsPosition.x, _t._SPFLabel.height * 3 / 2 + locStatsPosition.y);
-        _t._FPSLabel.setPosition(_t._FPSLabel.width / 2 + locStatsPosition.x, _t._FPSLabel.height / 2 + locStatsPosition.y);
-    };
-
-    _p.getVisibleSize = function () {
-        //if (this._openGLView) {
-        //return this._openGLView.getVisibleSize();
-        //} else {
-        return this.getWinSize();
-        //}
-    };
-
-    _p.getVisibleOrigin = function () {
-        //if (this._openGLView) {
-        //return this._openGLView.getVisibleOrigin();
-        //} else {
-        return cc.p(0, 0);
-        //}
-    };
-} else {
-    cc.Director._fpsImage = new Image();
-    cc._addEventListener(cc.Director._fpsImage, "load", function () {
-        cc.Director._fpsImageLoaded = true;
-    });
-    if (cc._fpsImage) {
-        cc.Director._fpsImage.src = cc._fpsImage;
+        _p.getVisibleOrigin = function () {
+            //if (this._openGLView) {
+            //return this._openGLView.getVisibleOrigin();
+            //} else {
+            return cc.p(0, 0);
+            //}
+        };
+    } else {
+        cc.Director._fpsImage = new Image();
+        cc.Director._fpsImage.addEventListener("load", function () {
+            cc.Director._fpsImageLoaded = true;
+        });
+        if (cc._fpsImage) {
+            cc.Director._fpsImage.src = cc._fpsImage;
+        }
     }
-}
+});

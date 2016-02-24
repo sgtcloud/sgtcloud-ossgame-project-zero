@@ -53,7 +53,7 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
         this._imageTextureSize = cc.size(this._capInsets.width, this._capInsets.height);
         ccui.Widget.prototype.ctor.call(this);
         texType = texType === undefined ? 0 : texType;
-        this.init(imageFileName, texType);
+        this._init(imageFileName, texType);
     },
 
     /**
@@ -62,25 +62,17 @@ ccui.ImageView = ccui.Widget.extend(/** @lends ccui.ImageView# */{
      * @param {Number} [texType==ccui.Widget.LOCAL_TEXTURE]
      * @returns {boolean}
      */
-    init: function(imageFileName, texType){
-        if(ccui.Widget.prototype.init.call(this)){
-            if(imageFileName === undefined)
-                this._imageTexType = ccui.Widget.LOCAL_TEXTURE;
-            else
-                this.loadTexture(imageFileName, texType);
-            return true;
-        }
-        return false;
+    _init: function(imageFileName, texType){
+        if(imageFileName === undefined)
+            this._imageTexType = ccui.Widget.LOCAL_TEXTURE;
+        else
+            this.loadTexture(imageFileName, texType);
     },
 
     _initRenderer: function () {
         //todo create Scale9Sprite and setScale9Enabled(false)
         this._imageRenderer = new cc.Sprite();
         this.addProtectedChild(this._imageRenderer, ccui.ImageView.RENDERER_ZORDER, -1);
-    },
-
-    setRotation: function(rotate){
-        this._imageRenderer.setRotation(rotate);
     },
 
     /**
