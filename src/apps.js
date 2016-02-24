@@ -12,7 +12,7 @@ $$.extend = function (a, b) {
 }
 Number.prototype.toFixed = function (num) {
     if (num > 0) {
-        var fixed = Math.pow( 100,num);
+        var fixed = Math.pow(100, num);
         return Math.round(this * fixed) / fixed
     }
     return this;
@@ -359,25 +359,24 @@ function openNewNameLayer(scene) {
     createPlayer.setPosition(cc.p(140, 400));
     scene.addChild(createPlayer, 100);
 }
-
+var tipTemplate;
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
+    tipTemplate=ccs.csLoader.createNode(res.tips).getChildByName("root");
+    window.tip2=new Tip(scene);
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
-
     if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
     } else {
         initGame();
     }
-
     bindButtonCallback(loginBtn, function () {
         showGame();
     });
-
     cc.director.runScene(scene);
-
 }
+
 function showGame() {
     cc.director.runScene(game);
 }

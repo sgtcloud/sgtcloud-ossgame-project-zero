@@ -1,9 +1,9 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="key01" Type="Plist" ID="419dc682-5983-4df5-b33b-13fd2e757930" Version="2.3.3.0" />
+  <PropertyGroup Name="key01" Type="Plist" ID="1b37827c-08a3-460c-89a6-932c1aa2ddc3" Version="2.3.3.0" />
   <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
     <ImageFiles>
-      <FilePathData Path="material/key/key_shine01.png" />
-      <FilePathData Path="material/key/key_shine02.png" />
+      <FilePathData Path="key/key01/iron_key_shine01.png" />
+      <FilePathData Path="key/key01/iron_key_shine02.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>

@@ -101,7 +101,7 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             randomBuff = false;
                         }, duration * 1000);
                     } else /*if ( randomBuff)*/ {
-                        toggleTip('已使用相同效果的技能！');
+                        tip.toggle('已使用相同效果的技能！');
                     }
                 }
             });
@@ -138,16 +138,16 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                     customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
                 } else if (isCoolDowning && !heroDead) {
                     console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                    //toggleTip();
+                    //tip.toggle();
                 } else {
-                    toggleTip('英雄已死亡...');
+                    tip.toggle('英雄已死亡...');
                 }
             }
 
             this.skill_icon.addClickEventListener(function () {
                 var levelData = that.skill.getLevelData();
                 if (!(heroDead || isCoolDowning) && randomBuff) {
-                    toggleTip('已使用相同效果的技能！');
+                    tip.toggle('已使用相同效果的技能！');
                 } else {
                     tryFire(levelData);
                 }
@@ -309,14 +309,15 @@ BloodBox.prototype.init = function () {
             PlayerData.updatePlayer();
         });
     };
-    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE,function(){
+    customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
         refreshNum();
     });
-    function refreshNum(){
-        updateNum(that.smallText,  player.resource.small_blood||(player.resource.small_blood=100), that.smallBtn);
-        updateNum(that.middleText, player.resource.middle_blood||(player.resource.middle_blood=100), that.middleBtn);
-        updateNum(that.largeText, player.resource.large_blood||(player.resource.large_blood=100), that.largeBtn);
+    function refreshNum() {
+        updateNum(that.smallText, player.resource.small_blood || (player.resource.small_blood = 100), that.smallBtn);
+        updateNum(that.middleText, player.resource.middle_blood || (player.resource.middle_blood = 100), that.middleBtn);
+        updateNum(that.largeText, player.resource.large_blood || (player.resource.large_blood = 100), that.largeBtn);
     }
+
     refreshNum();
     initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
     initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
@@ -802,7 +803,7 @@ var HeroListMenu = BattleMenu.extend({
             elements.lock_btn.lock = lock_btn.getChildByName('lock');
             elements.lock_btn.layer.setVisible(false);
             elements.lock_btn.btn.addClickEventListener(function () {
-                toggleTip('未达到解锁需求等级！');
+                tip.toggle('未达到解锁需求等级！');
             });
             icon.loadTexture("res/icon/skills/" + skill.getIcon());
             name.setString(skill.getName());
@@ -872,20 +873,22 @@ var HeroListMenu = BattleMenu.extend({
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
                 if (heroData.isLocked()) {
-                    (function (data) {
-                        var _hero = data;
-                        customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
-                            var hero = event.getUserData();
-                            if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                                setTimeout(function () {
-                                    buildHeroMenu(_hero);
-                                }, 100);
-                            }
-                        });
-                    })(heroData)
+                    unlockHero(heroData);
                 } else {
                     buildHeroMenu(heroData);
                 }
+            }
+            function unlockHero(data) {
+                var _hero = data;
+                customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
+                    var hero = event.getUserData();
+                    if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
+                        setTimeout(function () {
+                            buildHeroMenu(_hero);
+                        }, 100);
+                    }
+                });
+
             }
 
             function buildHeroMenu(heroData, cb) {
@@ -960,10 +963,10 @@ var EquipListMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, {unit: equipObject.unit, value: -equipObject.value});
                 var price = {value: nextValue, unit: equipObject.unit};
                 equipObject.equip.upgrade(hero, price);
-                pushMagicalEquips(equipObject.equip, hero);
-                refeshMagicalEquips(hero, elements);
                 PlayerData.refreshAllHerosProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
+                pushMagicalEquips(equipObject.equip, hero);
+                refeshMagicalEquips(hero, elements);
             });
         }
 
@@ -1164,7 +1167,7 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn = {};
                 elements.lock_btn.layer = lockLayer;
                 lockBtn.addClickEventListener(function () {
-                    toggleTip('未达到解锁需求等级！');
+                    tip.toggle('未达到解锁需求等级！');
                 });
                 elements.upgrade_btn = {};
                 elements.upgrade_btn.layer = upgradeLayer;
@@ -1243,19 +1246,20 @@ var EquipListMenu = BattleMenu.extend({
                 if (heroData.getLv() > 0) {
                     buildEquipMenuIfUnlocked(heroData, isFirst);
                 } else {
-                    (function (hero) {
-                        var _hero = hero;
-                        var first = isFirst;
-                        customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
-                            var heroId = event.getUserData()['heroId'];
-                            if (heroId === _hero.getId() && _hero.getLv() === 1) {
-                                setTimeout(function () {
-                                    buildEquipMenuIfUnlocked(_hero, first);
-                                }, 300);
-                            }
-                        });
-                    })(heroData)
+                    bindListener(heroData, isFirst);
                 }
+            }
+            function bindListener(hero, isFirst) {
+                var _hero = hero;
+                var first = isFirst;
+                customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
+                    var heroId = event.getUserData()['heroId'];
+                    if (heroId === _hero.getId() && _hero.getLv() === 1) {
+                        setTimeout(function () {
+                            buildEquipMenuIfUnlocked(_hero, first);
+                        }, 300);
+                    }
+                });
             }
 
             function buildEquipMenuIfUnlocked(heroData, isFirst) {
@@ -1482,7 +1486,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
 
-                toggleTip({
+                tip.toggle({
                     'beforeShow':[
                         cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
                     'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value

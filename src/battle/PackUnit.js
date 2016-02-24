@@ -71,7 +71,7 @@ var PackUnit = cc.Node.extend({
                 this.setElement(key_unit, player.resource[key_unit], this.chest);
                 this.setElement(chest_unit, player.resource[chest_unit], this.chest);
                 PlayerData.updatePlayer();
-                toggleTip({'beforeShow':[cc.hide(),cc.delayTime(0.1)]
+                tip.toggle({'beforeShow':[cc.hide(),cc.delayTime(0.1)]
                 ,'delay':2.0,'text':'恭喜获得： '+CONSTS.resources_mapping[loot.unit]+" * "+loot.value});
                 return true;
             }
