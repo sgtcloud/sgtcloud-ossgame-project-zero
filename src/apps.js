@@ -355,12 +355,12 @@ function getRandomInt(min, max) {
 function setFont(target) {
     if (target instanceof Array) {
         for (var i in target) {
-            target[i].setFontName("微软雅黑");
+            target[i].setFontName("Microsoft YaHei UI");
             target[i].setColor(cc.color(0, 0, 0))
         }
     }
     else {
-        target.setFontName("微软雅黑");
+        target.setFontName("Microsoft YaHei UI");
         target.setColor(cc.color(0, 0, 0))
     }
 }

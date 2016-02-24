@@ -44,7 +44,6 @@ var MainScene = cc.Scene.extend({
                     buffList.addChild(buff);
                 }
             }
-
             function toggleBufflayer(time, text, icon, cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
@@ -71,12 +70,10 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
-            w.toggleTip=
             w.toggleBufflayer = toggleBufflayer;
         })(window);
 
     },
-
     onEnter: function () {
         this._super();
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);

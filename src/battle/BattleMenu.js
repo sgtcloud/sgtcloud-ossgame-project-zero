@@ -9,10 +9,10 @@ var BattleMenu = cc.Node.extend({
         this.addChild(layer);
         this.height = layer.height;
         this.root = layer.getChildByName('root');
-        this.onHeroDead = function () {
-        }
-        this.onHeroRecover = function () {
-        }
+    },
+    onHeroDead: function () {
+    },
+    onHeroRecover : function () {
     }
 });
 //UI上显示的技能ICON
@@ -47,8 +47,12 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
         this.time.setVisible(true);
         this.cooldownText.setVisible(false);
     }
-    function doSchedule(time, target, cb) {
+    function doSchedule(time, target, cb, skillId) {
         var remaining = time;
+        sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            player['time']['cd'][skillId] = data;
+            PlayerData.updatePlayer();
+        });
         target.schedule(function () {
                 if (!heroDead) {
                     this.setString(remaining);
@@ -64,8 +68,6 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
             }, 1, time, 0, target.__instanceId
         );
     }
-
-
     this.bindSkillAndClickEvent = function (skill) {
         if (skill) {
             this.skill = skill;
@@ -121,7 +123,9 @@ var SkillIcon = function (root, index, skillsBox, tabPanel) {
                             that.time.isVisible() && that.time.setVisible(false)
                         }
                         isCoolDowning = false;
-                    });
+                        delete  player['time']['cd'][that.skill.getId()];
+                        PlayerData.updatePlayer();
+                    }, that.skill.getId());
                 }
             }
 
@@ -359,7 +363,6 @@ var SkillListMenu = BattleMenu.extend({
         function format(time) {
             return new Date(time).Format('mm:ss');
         }
-
         this.refreshSkillState = function () {
             battlePanel.battleField.foreachHeroSprite(function (hero, i) {
                 var skill = skillBtns[i];
@@ -475,14 +478,14 @@ var HeroListMenu = BattleMenu.extend({
             if (target instanceof Array) {
                 for (var i in target) {
                     if (target[i].setFontName) {
-                        target[i].setFontName("微软雅黑");
+                        target[i].setFontName("Microsoft YaHei UI");
                     }
                     target[i].setColor(cc.color(0, 0, 0))
                 }
             }
             else {
                 if (target.setFontName) {
-                    target.setFontName("微软雅黑");
+                    target.setFontName("Microsoft YaHei UI");
                 }
                 target.setColor(cc.color(0, 0, 0))
             }
@@ -626,6 +629,10 @@ var HeroListMenu = BattleMenu.extend({
                 var dieHero = event.getUserData();
                 var heroId = dieHero.getId();
                 if (heroId === hero.getId()) {
+                    sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                        player['time']['die'][heroId] = data;
+                        PlayerData.updatePlayer();
+                    });
                     elements.die_text.setVisible(true);
                     elements.die_time_text.setVisible(true);
                     elements.revive_btn.layer.setVisible(true);
@@ -657,7 +664,7 @@ var HeroListMenu = BattleMenu.extend({
                         elements.revive_btn.diamond_text.setColor(cc.color(255, 255, 255));
                     }
                 }
-            })
+            });
             customEventHelper.bindListener(EVENT.HERO_REVIVE, function (event) {
                 var heroId = event.getUserData().getId();
                 if (heroId === hero.getId()) {
@@ -665,6 +672,8 @@ var HeroListMenu = BattleMenu.extend({
                     die_time_text.setVisible(false);
                     elements.revive_btn.layer.setVisible(false);
                     elements.icon.setColor(cc.color(255, 255, 255));
+                    delete  player['time']['die'][heroId]
+                    PlayerData.updatePlayer();
                     if (hero.isMaxLevel()) {
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                         elements.maxLevel_btn.layer.setVisible(true);

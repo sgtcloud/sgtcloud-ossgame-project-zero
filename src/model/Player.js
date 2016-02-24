@@ -30,6 +30,10 @@ var player = {
         "middle_blood": 100,
         "large_blood": 100,
     },
+    'time': {
+        "die": {},
+        "cd":{}
+    },
     //"cd":{"herosDie":{"":}},
     // release data
     //"resource": {
@@ -153,9 +157,9 @@ var PlayerData = {
             }
         }
         if (!player.first_time) {
-            sgt.RouterService.getCurrentTimestamp(function(result,data){
+            sgt.RouterService.getCurrentTimestamp(function (result, data) {
                 player.first_time = data;
-                console.log('同步服务器时间：'+data);
+                console.log('同步服务器时间：' + data);
             });
             //player.first_time = Date.parse(new Date());
         }
@@ -187,7 +191,7 @@ var PlayerData = {
             /*if (result) {
              console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
              }*/
-            customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
+            customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK, {leaderId: leaderId});
         });
     },
     getHeroes: function () {
@@ -274,9 +278,9 @@ var PlayerData = {
     }
     ,
     updateIntoBattleTime: function () {
-        sgt.RouterService.getCurrentTimestamp(function(result,data){
+        sgt.RouterService.getCurrentTimestamp(function (result, data) {
             player.into_stage_battle_timestamp = data;
-            console.log('同步服务器时间：'+data);
+            console.log('同步服务器时间：' + data);
         });
         //player.into_stage_battle_timestamp = Date.parse(new Date());
         //this.updatePlayer();
@@ -401,8 +405,8 @@ var PlayerData = {
         }
     }
     ,
-    refreshAllHerosProps:function(){
-        for (var i in this.heroes){
+    refreshAllHerosProps: function () {
+        for (var i in this.heroes) {
             this.heroes[i].refreshProps();
         }
     },
