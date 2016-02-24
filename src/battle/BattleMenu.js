@@ -65,7 +65,7 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
                 remaining--;
             }, 1, time, 0, target.__instanceId
         );
-    }
+    };
     this._doCoolDown = function (cd) {
         isCoolDowning = true;
         this.cooldownText.setVisible(true);
@@ -86,7 +86,6 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
         }.bind(this));
     };
     this.refresh = function () {
-
     };
     this.isActive = function () {
         return !skill.isLocked();
@@ -163,7 +162,7 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
         } else {
             this.root.isVisible() && this.root.setVisible(false);
         }
-        function tryFire(levelData) {
+        /*function tryFire(levelData) {
             if (!(isCoolDowning || heroDead)) {
                 that.showCooldown(levelData['cooldown']);
                 if (levelData['duration'] > 0) {
@@ -178,13 +177,27 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
             } else if (heroDead) {
                 tip.toggle('英雄已死亡...');
             }
-        }
+        }*/
         this.skill_icon.addClickEventListener(function () {
             var levelData = that.skill.getLevelData();
             if (!(heroDead || isCoolDowning) && randomBuff) {
                 tip.toggle('已使用相同效果的技能！');
             } else {
-                tryFire(levelData);
+                //tryFire(levelData);
+                if (!(isCoolDowning || heroDead)) {
+                    that.showCooldown(levelData['cooldown']);
+                    if (levelData['duration'] > 0) {
+                        randomBuff = true;
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(), function () {
+                            randomBuff = false;
+                        });
+                    }
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                } else if (isCoolDowning && !heroDead) {
+                    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                } else if (heroDead) {
+                    tip.toggle('英雄已死亡...');
+                }
             }
         });
     };
@@ -229,6 +242,7 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
     this.setEnabled = function (state) {
     }
     this.init();
+    this._bindListeners();
 };
 function getHeroActivtySkillls(hero) {
     var skills = hero.getSkills();
@@ -357,12 +371,19 @@ var SkillListMenu = BattleMenu.extend({
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         //var skills = [];
         var heroes = PlayerData.getHeroes();
+        var index=0;
         for (var q in heroes) {
-            var activitySkills = getHeroActivtySkillls(heroes[q]);
-            //Array.prototype.push.apply(skills, activitySkills);
+            var hero=heroes[q];
+            var activitySkills = getHeroActivtySkillls(hero);
             for (var i = 0; i < activitySkills.length; i++) {
-                var skillBtn = new SkillIcon(skillIconTemplate.clone(), i, skillsBox, activitySkills[i]);
-                //skillBtn.bindSkillAndClickEvent(activitySkills[i]);
+                var skillBtn = new SkillIcon(skillIconTemplate.clone(),index++, skillsBox, activitySkills[i]);
+                if(activitySkills[i].getLv()>0&&!hero.isLocked()){
+                    if(hero.isDead()){
+                        skillBtn.showDead();
+                    }else if(skillBtn.isCoolDown()){
+                        skillBtn.showCooldown();
+                    }
+                }
                 this.skillBtns.push(skillBtn);
             }
         }
@@ -438,7 +459,6 @@ var HeroListMenu = BattleMenu.extend({
         function setElement(elements, target, listener) {
             initView(target, elements, listener)
         }
-
         function initView(target, elements, listener) {
             if (target.isMaxLevel()) {
                 elements.upgrade_btn.layer.setVisible(false);
@@ -464,7 +484,6 @@ var HeroListMenu = BattleMenu.extend({
                 });
             }
         }
-
         function setFont(target) {
             if (target instanceof Array) {
                 for (var i in target) {
