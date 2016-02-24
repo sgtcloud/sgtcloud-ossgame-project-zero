@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>hero/her0104/hero104_atk01.png</key>
+			<key>hero/hero104/hero104_atk01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{953,0},{71,94}}</string>
@@ -15,7 +15,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk02.png</key>
+			<key>hero/hero104/hero104_atk02.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{155,0},{138,83}}</string>
@@ -26,7 +26,7 @@
 				<key>sourceSize</key>
 				<string>{138,83}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk03.png</key>
+			<key>hero/hero104/hero104_atk03.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,0},{155,104}}</string>
@@ -37,7 +37,7 @@
 				<key>sourceSize</key>
 				<string>{155,104}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk04.png</key>
+			<key>hero/hero104/hero104_atk04.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{507,0},{88,83}}</string>
@@ -48,7 +48,7 @@
 				<key>sourceSize</key>
 				<string>{88,83}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk05.png</key>
+			<key>hero/hero104/hero104_atk05.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{293,0},{124,87}}</string>
@@ -59,7 +59,7 @@
 				<key>sourceSize</key>
 				<string>{124,87}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk06.png</key>
+			<key>hero/hero104/hero104_atk06.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{417,0},{90,86}}</string>
@@ -70,7 +70,7 @@
 				<key>sourceSize</key>
 				<string>{90,86}</string>
 			</dict>
-			<key>hero/her0104/hero104_atk07.png</key>
+			<key>hero/hero104/hero104_atk07.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{771,79},{71,94}}</string>
@@ -81,7 +81,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_dead01.png</key>
+			<key>hero/hero104/hero104_dead01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{601,149},{43,53}}</string>
@@ -92,7 +92,7 @@
 				<key>sourceSize</key>
 				<string>{43,53}</string>
 			</dict>
-			<key>hero/her0104/hero104_die01.png</key>
+			<key>hero/hero104/hero104_die01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{683,81},{71,94}}</string>
@@ -103,7 +103,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_die02.png</key>
+			<key>hero/hero104/hero104_die02.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{860,75},{73,94}}</string>
@@ -114,7 +114,7 @@
 				<key>sourceSize</key>
 				<string>{73,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_die03.png</key>
+			<key>hero/hero104/hero104_die03.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,104},{92,93}}</string>
@@ -125,7 +125,7 @@
 				<key>sourceSize</key>
 				<string>{92,93}</string>
 			</dict>
-			<key>hero/her0104/hero104_die04.png</key>
+			<key>hero/hero104/hero104_die04.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{601,83},{66,67}}</string>
@@ -136,7 +136,7 @@
 				<key>sourceSize</key>
 				<string>{66,67}</string>
 			</dict>
-			<key>hero/her0104/hero104_die05.png</key>
+			<key>hero/hero104/hero104_die05.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{93,104},{104,57}}</string>
@@ -147,7 +147,7 @@
 				<key>sourceSize</key>
 				<string>{104,57}</string>
 			</dict>
-			<key>hero/her0104/hero104_hit01.png</key>
+			<key>hero/hero104/hero104_hit01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{933,94},{71,94}}</string>
@@ -158,7 +158,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_hit02.png</key>
+			<key>hero/hero104/hero104_hit02.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{771,0},{79,89}}</string>
@@ -169,7 +169,7 @@
 				<key>sourceSize</key>
 				<string>{79,89}</string>
 			</dict>
-			<key>hero/her0104/hero104_hit03.png</key>
+			<key>hero/hero104/hero104_hit03.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{595,0},{83,88}}</string>
@@ -180,7 +180,7 @@
 				<key>sourceSize</key>
 				<string>{83,88}</string>
 			</dict>
-			<key>hero/her0104/hero104_hit04.png</key>
+			<key>hero/hero104/hero104_hit04.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{683,0},{81,88}}</string>
@@ -191,7 +191,7 @@
 				<key>sourceSize</key>
 				<string>{81,88}</string>
 			</dict>
-			<key>hero/her0104/hero104_hit05.png</key>
+			<key>hero/hero104/hero104_hit05.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{842,169},{71,94}}</string>
@@ -202,7 +202,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_skill01.png</key>
+			<key>hero/hero104/hero104_skill01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{754,173},{71,94}}</string>
@@ -213,7 +213,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_skill02.png</key>
+			<key>hero/hero104/hero104_skill02.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{155,83},{109,88}}</string>
@@ -224,7 +224,7 @@
 				<key>sourceSize</key>
 				<string>{109,88}</string>
 			</dict>
-			<key>hero/her0104/hero104_skill03.png</key>
+			<key>hero/hero104/hero104_skill03.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,196},{87,94}}</string>
@@ -235,7 +235,7 @@
 				<key>sourceSize</key>
 				<string>{87,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_skill04.png</key>
+			<key>hero/hero104/hero104_skill04.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{860,0},{75,93}}</string>
@@ -246,7 +246,7 @@
 				<key>sourceSize</key>
 				<string>{75,93}</string>
 			</dict>
-			<key>hero/her0104/hero104_skill05.png</key>
+			<key>hero/hero104/hero104_skill05.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{913,188},{71,94}}</string>
@@ -257,7 +257,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_stand01.png</key>
+			<key>hero/hero104/hero104_stand01.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{913,259},{71,94}}</string>
@@ -268,7 +268,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_stand02.png</key>
+			<key>hero/hero104/hero104_stand02.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{825,263},{71,94}}</string>
@@ -279,7 +279,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_stand03.png</key>
+			<key>hero/hero104/hero104_stand03.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{896,330},{71,94}}</string>
@@ -290,7 +290,7 @@
 				<key>sourceSize</key>
 				<string>{71,94}</string>
 			</dict>
-			<key>hero/her0104/hero104_stand04.png</key>
+			<key>hero/hero104/hero104_stand04.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{507,83},{71,94}}</string>
