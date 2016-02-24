@@ -505,7 +505,7 @@
               <PlistImageFile Name="hero_hero105_hero105_stand04.png" Key="hero/hero105/hero105_stand04.png" />
             </PlistImageFolder>
           </Folder>
-          <Folder Name="her0104">
+          <Folder Name="hero104">
             <Image Name="hero104_atk01.png" />
             <Image Name="hero104_atk02.png" />
             <Image Name="hero104_atk03.png" />

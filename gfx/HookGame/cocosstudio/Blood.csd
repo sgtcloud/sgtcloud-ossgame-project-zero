@@ -19,13 +19,13 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="MarkedSubImage" Path="bloodUI/blood_bg.png" Plist="BattleNum.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" ProgressInfo="50" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="blood_bar" ActionTag="405491421" Tag="10" IconVisible="False" LeftMargin="0.0000" RightMargin="0.0000" TopMargin="-0.5545" BottomMargin="0.5545" ProgressInfo="50" ctype="LoadingBarObjectData">
                 <Size X="100.0000" Y="2.0000" />
                 <AnchorPoint />
-                <Position />
+                <Position X="0.0000" Y="0.5545" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
+                <PrePosition X="0.0000" Y="0.2773" />
                 <PreSize X="1.0000" Y="1.0000" />
                 <ImageFileData Type="MarkedSubImage" Path="bloodUI/blood_bar.png" Plist="BattleNum.plist" />
               </AbstractNodeData>
