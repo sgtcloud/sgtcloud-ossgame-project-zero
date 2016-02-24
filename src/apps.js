@@ -233,7 +233,6 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
 }
 
 function addPlayer(playerName, callback) {
-
     var sgtPlayer = new sgt.Player();
     sgtPlayer.name = playerName;
     sgtPlayer.userId = sgt.context.user.userid;
@@ -314,11 +313,9 @@ function showCover() {
     });
     cc.director.runScene(scene);
 }
-
 function showGame() {
     cc.director.runScene(game);
 }
-
 function bindButtonCallback(button, callback) {
     button.addTouchEventListener(function (sender, type) {
         switch (type) {
@@ -328,7 +325,6 @@ function bindButtonCallback(button, callback) {
         }
     }, button);
 }
-
 function removeCCSAnimationDefaultTween(timelines) {
     for (var i in timelines) {
         var timeline = timelines[i];
@@ -341,30 +337,26 @@ function removeCCSAnimationDefaultTween(timelines) {
         }
     }
 }
-
 function popup(popupMenu, localZOrder) {
     if (cc.director.getRunningScene()) {
         cc.director.getRunningScene().addChild(popupMenu, localZOrder);
     }
 }
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 function setFont(target) {
     if (target instanceof Array) {
         for (var i in target) {
-            target[i].setFontName("微软雅黑");
+            target[i].setFontName("Microsoft YaHei UI");
             target[i].setColor(cc.color(0, 0, 0))
         }
     }
     else {
-        target.setFontName("微软雅黑");
+        target.setFontName("Microsoft YaHei UI");
         target.setColor(cc.color(0, 0, 0))
     }
 }
-
 function setColor(target) {
     if (target instanceof Array) {
         for (var i in target) {
@@ -375,8 +367,6 @@ function setColor(target) {
         target.setColor(cc.color(0, 0, 0))
     }
 }
-
-
 function setIgnoreContentAdaptWithSize(target) {
     if (target instanceof Array) {
         for (var i in target) {
@@ -387,46 +377,36 @@ function setIgnoreContentAdaptWithSize(target) {
         target.ignoreContentAdaptWithSize(true);
     }
 }
-
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
 }
-
 function schedule(target, callback, delay, interval) {
     cc.director.getScheduler().schedule(callback, target, interval, cc.REPEAT_FOREVER, delay, false, target.__instanceId);
 }
-
 function unschedule(target) {
     cc.director.getScheduler().unschedule(target.__instanceId, target);
 }
-
 function bindTouchEventListener(listener, target, popup) {
-
     var touchDownEventListener = cc.EventListener.create({
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
         swallowTouches: false,
         onTouchBegan: function (touch, event) {
-            //cc.log("onTouchBegan");
             var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());
             var s = target.getContentSize();
             var rect = cc.rect(0, 0, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
-                //cc.log(locationInNode.x + " " + locationInNode.y);
                 return listener(touch, event);
             }
             return false;
         },
         onTouchMoved: function () {
-            //cc.log("onTouchMoved");
             return false;
         },
         onTouchCancelled: function () {
-            //cc.log("onTouchCancelled");
             return false;
         },
         onTouchEnd: function (touch, event) {
-            //cc.log("onTouchEnd");
             return false;
         }
     });
@@ -442,7 +422,6 @@ function bindMouseEventListener(listener, target) {
             var s = target.getContentSize();
             var rect = cc.rect(0, 0, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
-                //cc.log(locationInNode.x + " " + locationInNode.y);
                 return listener(touch, event);
             }
             return false;
@@ -450,7 +429,6 @@ function bindMouseEventListener(listener, target) {
     });
     cc.eventManager.addListener(mouseDownEventListener, target);
 }
-
 function loadDynamicTexture(url, listenr, target) {
     cc.textureCache.addImageAsync(url, function (textureBg) {
         if (textureBg) {
