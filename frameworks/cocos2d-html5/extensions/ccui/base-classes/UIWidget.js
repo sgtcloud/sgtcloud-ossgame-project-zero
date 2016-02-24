@@ -153,6 +153,7 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
     _callbackName: null,
     _callbackType: null,
     _usingLayoutComponent: false,
+    _inViewRect: true,
 
     /**
      * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function.
@@ -1828,7 +1829,7 @@ ccui.Widget = ccui.ProtectedNode.extend(/** @lends ccui.Widget# */{
 
 
     _createRenderCmd: function(){
-        if(cc._renderType === cc._RENDER_TYPE_WEBGL)
+        if(cc._renderType === cc.game.RENDER_TYPE_WEBGL)
             return new ccui.Widget.WebGLRenderCmd(this);
         else
             return new ccui.Widget.CanvasRenderCmd(this);

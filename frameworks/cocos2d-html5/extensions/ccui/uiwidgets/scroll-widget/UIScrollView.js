@@ -151,6 +151,13 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
         this.addProtectedChild(this._innerContainer, 1, 1);
     },
 
+    _createRenderCmd: function(){
+        if(cc._renderType === cc.game.RENDER_TYPE_WEBGL)
+            return new ccui.ScrollView.WebGLRenderCmd(this);
+        else
+            return new ccui.ScrollView.CanvasRenderCmd(this);
+    },
+
     _onSizeChanged: function () {
         ccui.Layout.prototype._onSizeChanged.call(this);
         var locSize = this._contentSize;
@@ -173,10 +180,12 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
      * @param {cc.Size} size inner container size.
      */
     setInnerContainerSize: function (size) {
-        var innerContainer = this._innerContainer;
-        var locSize = this._contentSize;
-        var innerSizeWidth = locSize.width, innerSizeHeight = locSize.height;
-        var originalInnerSize = innerContainer.getContentSize();
+        var innerContainer = this._innerContainer,
+            locSize = this._contentSize,
+            innerSizeWidth = locSize.width, innerSizeHeight = locSize.height,
+            originalInnerSize = innerContainer.getContentSize(),
+            renderCmd = this._renderCmd,
+            newInnerSize, offset;
         if (size.width < locSize.width)
             cc.log("Inner width <= ScrollView width, it will be force sized!");
         else
@@ -188,17 +197,20 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
             innerSizeHeight = size.height;
 
         innerContainer.setContentSize(cc.size(innerSizeWidth, innerSizeHeight));
-        var newInnerSize, offset;
         switch (this.direction) {
             case ccui.ScrollView.DIR_VERTICAL:
                 newInnerSize = innerContainer.getContentSize();
                 offset = originalInnerSize.height - newInnerSize.height;
+                // Made child nodes transform available for scroll
+                renderCmd.transform(renderCmd.getParentRenderCmd(), true);
                 this._scrollChildren(0, offset);
                 break;
             case ccui.ScrollView.DIR_HORIZONTAL:
                 if (innerContainer.getRightBoundary() <= locSize.width) {
                     newInnerSize = innerContainer.getContentSize();
                     offset = originalInnerSize.width - newInnerSize.width;
+                    // Made child nodes transform available for scroll
+                    renderCmd.transform(renderCmd.getParentRenderCmd(), true);
                     this._scrollChildren(offset, 0);
                 }
                 break;
@@ -206,6 +218,8 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
                 newInnerSize = innerContainer.getContentSize();
                 var offsetY = originalInnerSize.height - newInnerSize.height;
                 var offsetX = (innerContainer.getRightBoundary() <= locSize.width) ? originalInnerSize.width - newInnerSize.width : 0;
+                // Made child nodes transform available for scroll
+                renderCmd.transform(renderCmd.getParentRenderCmd(), true);
                 this._scrollChildren(offsetX, offsetY);
                 break;
             default:
@@ -295,6 +309,40 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
         return this._innerContainer.height;
     },
 
+    _isInContainer: function (widget) {
+       if(!this._clippingEnabled) 
+            return true;
+        var wPos = widget._position,
+            wSize = widget._contentSize,
+            wAnchor = widget._anchorPoint,
+            size = this._customSize,
+            pos = this._innerContainer._position,
+            bottom = 0, left = 0;
+        if (
+            // Top
+        (bottom = wPos.y - wAnchor.y * wSize.height) >= size.height - pos.y ||
+            // Bottom
+        bottom + wSize.height <= -pos.y ||
+            // right
+        (left = wPos.x - wAnchor.x * wSize.width) >= size.width - pos.x ||
+            // left
+        left + wSize.width <= -pos.x
+        )
+            return false;
+        else return true;
+    },
+
+    updateChildren: function () {
+        var child, i, l;
+        var childrenArray = this._innerContainer._children;
+        for(i = 0, l = childrenArray.length; i < l; i++) {
+            child = childrenArray[i];
+            if(child._inViewRect === true && this._isInContainer(child) === false)
+                child._inViewRect = false;
+            else if (child._inViewRect === false && this._isInContainer(child) === true)
+                child._inViewRect = true;
+        }
+    },
     /**
      * Add child to ccui.ScrollView.
      * @param {cc.Node} widget
@@ -305,6 +353,8 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
     addChild: function (widget, zOrder, tag) {
         if(!widget)
             return false;
+        if(this._isInContainer(widget) === false)
+            widget._inViewRect = false;
         zOrder = zOrder || widget.getLocalZOrder();
         tag = tag || widget.getTag();
         return this._innerContainer.addChild(widget, zOrder, tag);
@@ -376,6 +426,8 @@ ccui.ScrollView = ccui.Layout.extend(/** @lends ccui.ScrollView# */{
         this._moveChildPoint.x = locContainer.x + offsetX;
         this._moveChildPoint.y = locContainer.y + offsetY;
         this._innerContainer.setPosition(this._moveChildPoint);
+        if(this._innerContainer._children.length !== 0 )
+            this.updateChildren();
     },
 
     _autoScrollChildren: function (dt) {

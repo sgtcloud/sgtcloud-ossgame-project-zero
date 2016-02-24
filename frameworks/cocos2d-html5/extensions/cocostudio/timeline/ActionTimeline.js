@@ -195,7 +195,7 @@ ccs.ActionTimeline = cc.Action.extend({
             }
         }
         startIndex = num[0];
-        endIndex = num[1] || this._duration;
+        endIndex = num[1] !== undefined ? num[1] : this._duration;
         currentFrameIndex = num[2] || startIndex;
         loop = bool!=null ? bool : true;
 
@@ -417,10 +417,10 @@ ccs.ActionTimeline = cc.Action.extend({
         var endoffset = this._time - this._endFrame * this._frameInternal;
 
         if(endoffset < this._frameInternal){
-            this._currentFrame = this._time / this._frameInternal;
+            this._currentFrame = Math.floor(this._time / this._frameInternal);
             this._stepToFrame(this._currentFrame);
-            //if(endoffset >= 0 && this._lastFrameListener)
-            //    this._lastFrameListener();
+            if(endoffset >= 0 && this._lastFrameListener)
+                this._lastFrameListener();
         }else{
             this._playing = this._loop;
             if(!this._playing){

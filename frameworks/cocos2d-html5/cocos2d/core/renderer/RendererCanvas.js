@@ -22,7 +22,6 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-//if (cc._renderType === cc._RENDER_TYPE_CANVAS) {
 cc.rendererCanvas = {
     childrenOrderDirty: true,
     _transformNodePool: [],                              //save nodes transform dirty
@@ -129,19 +128,23 @@ cc.rendererCanvas = {
 
     clear: function () {
         var viewport = cc._canvas;
-        var ctx = cc._renderContext.getContext();
         var wrapper = cc._renderContext;
+        var ctx = wrapper.getContext();
         ctx.setTransform(1, 0, 0, 1, 0, 0);
-        //IF transparent or translucence clearRect first to decrease filling rate
-        if(this._clearColor.a !== 255)
-            ctx.clearRect(0, 0, viewport.width, viewport.height);
-        wrapper.setFillStyle(this._clearFillStyle);
-        wrapper.setGlobalAlpha(this._clearColor.a);
-        ctx.fillRect(0, 0, viewport.width, viewport.height);
+        ctx.clearRect(0, 0, viewport.width, viewport.height);
+        if (this._clearColor.r !== 0 ||
+            this._clearColor.g !== 0 || 
+            this._clearColor.b !== 0) {
+            wrapper.setFillStyle(this._clearFillStyle);
+            wrapper.setGlobalAlpha(this._clearColor.a);
+            ctx.fillRect(0, 0, viewport.width, viewport.height);
+        }
     },
 
     clearRenderCommands: function () {
         this._renderCmds.length = 0;
+        this._cacheInstanceIds.length = 0;
+        this._isCacheToCanvasOn = false;
     },
 
     pushRenderCommand: function (cmd) {
@@ -158,9 +161,6 @@ cc.rendererCanvas = {
         }
     }
 };
-
-if (cc._renderType === cc._RENDER_TYPE_CANVAS)
-    cc.renderer = cc.rendererCanvas;
 
 (function () {
     cc.CanvasContextWrapper = function (context) {
