@@ -21,13 +21,9 @@ var GamePopup = cc.Layer.extend({
                 var rect = cc.rect(0, 0, s.width, s.height);
                 if (!self.isSwallow && !cc.rectContainsPoint(rect, locationInNode)) {
                     self.target.removeFromParent();
-                    //self.onExit();
                     self.removeFromParent();
                     return false;
                 }
-                /*if(cc.rectContainsPoint(rect, locationInNode)){
-                    return false;
-                }*/
                 return true;
             }
         });
@@ -49,40 +45,15 @@ var GamePopup = cc.Layer.extend({
         this.addChild(this.target,0);
         this.setVisible(true);
         this._listener.setSwallowTouches(this.isSwallow);
-    },
+    }
 
-    _onCallback: function()
-    {
-        this.hidden();
-    },
-
-    //弹出
-    popup: function()
-    {
-        this.setVisible(true);
-        this._listener.setSwallowTouches(this.isSwallow);
-        //this._listener.setSwallowTouches(true);
-
-        /*var bg = this.getChildByTag(101);
-        bg.setScale(0);
-        var scaleTo = new cc.ScaleTo(1.0, 1);
-        var rotateBy = new cc.RotateBy(1.0, 360, 0);
-        var spawn = new cc.Spawn(scaleTo, rotateBy);
-        bg.runAction(spawn);*/
-    },
-
-    //隐藏
-    hidden: function()
-    {
-        this.setVisible(false);
-        //this.onExit();
-    },
-
-    /*onExit: function()
-    {
-        this._super();
-        //移除触摸监听
-        //cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE, true);
-        cc.eventManager.removeListeners(this._listener, true);
-    }*/
 });
+var gamePopup;
+GamePopup.openPopup = function (layer,pos,isSwallow){
+    gamePopup = new GamePopup(layer,pos,isSwallow);
+    popup(gamePopup,101);
+};
+GamePopup.closePopup = function (layer){
+    layer.removeFromParent();
+    gamePopup.removeFromParent();
+};

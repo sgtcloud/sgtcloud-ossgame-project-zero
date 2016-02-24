@@ -6,13 +6,28 @@ var Hero = function (heroData) {
     var equips = [];
     var skills = [];
     var icon = data.icon;
-
     for (var i in data.equips) {
         var equipId = data.equips[i];
         var equipCache = readEquipCache(equipId);
         //var equipLv = (equip && equip['level']) || 1;
         equips.push(new Equip(equipId, equipCache));
     }
+    customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
+        var hero = data.getUserData();
+        if (hero.getId() === this.getId()) {
+            sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                player['time']['die'][this.getId()] = data;
+                PlayerData.updatePlayer();
+            }.bind(this));
+        }
+    }.bind(this));
+    customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {
+        var hero = data.getUserData();
+        if (hero.getId() === this.getId()) {
+            delete player['time']['die'][this.getId()];
+            PlayerData.updatePlayer();
+        }
+    }.bind(this));
     for (var i in data.skills) {
         var skillId = data.skills[i];
         var skill = readCache(skillId);
@@ -44,8 +59,6 @@ var Hero = function (heroData) {
             heroData.life = maxLife;
         }
     }
-
-
     this.getMaxLevel = function () {
         return data.levelDatas[data.levelDatas.length - 1]['level'];
     }
@@ -60,6 +73,10 @@ var Hero = function (heroData) {
             this.calcEquipEffect(effect_props[i]);
         }
         //this.printHeroProps();
+    };
+    this.isDead = function () {
+        var dieTime = player['time']['die'][this.getId()];
+        return typeof dieTime !== 'undefined' || !this.getCurrentLife() > 0;
     };
     this.hasSkill = function (skillId) {
         for (var i in skills) {
@@ -165,12 +182,12 @@ var Hero = function (heroData) {
                 this["globe_" + propName + "_rate"] += effects[j].value;
             }
             /*if (!effects[j].type)continue;
-            if (this[effects[j].type] != null && this[effects[j].type] != undefined) {
-                this[effects[j].type] += effects[j].value;
-            }
-            else {
-                this[effects[j].type] = effects[j].value;
-            }*/
+             if (this[effects[j].type] != null && this[effects[j].type] != undefined) {
+             this[effects[j].type] += effects[j].value;
+             }
+             else {
+             this[effects[j].type] = effects[j].value;
+             }*/
         }
     };
     this.calcSkillEffect = function (propName) {

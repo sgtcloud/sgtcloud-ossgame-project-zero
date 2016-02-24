@@ -57,31 +57,20 @@ var HeroDesc = cc.Node.extend({
             skillIcon.loadTexture("res/icon/skills/" + skillData.getIcon());
             skillNameText.setString(skillData.getName());
             skillLevelText.setString('Lv.' + skillData.getLv() + "/" + skillData.getMaxLevel());
-            skillDescText.setString(/*skillData.getDesc()*/this.buildSkillDesc(skillData));
+            skillDescText.setString(/*skillData.getDesc()*/this._buildSkillDesc(skillData));
             setFont([skillNameText,/*skillLevelText,*/skillDescText]);
             skillList.addChild(skillRoot);
         }
         var backBtn = root.getChildByName('btn').getChildByName('back_btn');
-        var self = this;
         backBtn.addClickEventListener(function(){
-            self.hiddenPopup();
-        });
-        //this.addChild(heroDesc);
-        this.gamePopup = new GamePopup(this.heroDesc);
-        this.openPopup();
+            GamePopup.closePopup(this.heroDesc);
+        }.bind(this));
+        GamePopup.openPopup(this.heroDesc);
     },
     //根据模板生成技能效果描述
-    buildSkillDesc: function(skill) {
+    _buildSkillDesc: function(skill) {
         var effects = skill.traverseSkillEffects();
         return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
-    },
-    openPopup: function(){
-        popup(this.gamePopup, 1000);
-        this.gamePopup.popup();
-    },
-    hiddenPopup: function(){
-        this.heroDesc.removeFromParent();
-        this.gamePopup.removeFromParent();
     }
 });
 

@@ -1,5 +1,5 @@
 {
-  "ID": "d28188ab-8431-4ea4-939c-b73c47252f1e",
+  "ID": "6a47fe47-a20f-4499-adc3-a2ed90b6c944",
   "Version": "2.3.3.0",
   "Name": "key01",
   "Content": {
@@ -9,13 +9,13 @@
         "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": 1120094396,
+            "ActionTag": 1551596264,
             "Property": "FileData",
             "Frames": [
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "material/key/key_shine01.png",
+                  "Path": "key/key01/iron_key_shine01.png",
                   "Plist": "key01.plist"
                 },
                 "FrameIndex": 0,
@@ -25,7 +25,7 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "material/key/key_shine02.png",
+                  "Path": "key/key01/iron_key_shine02.png",
                   "Plist": "key01.plist"
                 },
                 "FrameIndex": 3,
@@ -47,12 +47,12 @@
         }
       ],
       "ObjectData": {
-        "Tag": 13,
+        "Tag": 14,
         "Children": [
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "material/key/key_shine01.png",
+              "Path": "key/key01/iron_key_shine02.png",
               "Plist": "key01.plist"
             },
             "BlendFunc": {
@@ -85,13 +85,13 @@
             "RightMargin": -23.0,
             "TopMargin": -23.0,
             "BottomMargin": -23.0,
-            "Tag": 14,
-            "ActionTag": 1120094396,
+            "Tag": 4,
+            "ActionTag": 1551596264,
             "Size": {
               "X": 30.0,
               "Y": 30.0
             },
-            "Name": "key01",
+            "Name": "key",
             "ctype": "SpriteObjectData"
           }
         ],

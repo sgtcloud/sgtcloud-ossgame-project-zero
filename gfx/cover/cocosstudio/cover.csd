@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="coverUI/cover_bg.jpg" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/cover_bg.jpg" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="cover_login_btn" ActionTag="328416984" Tag="40" IconVisible="False" LeftMargin="228.0000" RightMargin="228.0000" TopMargin="694.8237" BottomMargin="191.1763" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="154" Scale9Height="52" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="184.0000" Y="74.0000" />

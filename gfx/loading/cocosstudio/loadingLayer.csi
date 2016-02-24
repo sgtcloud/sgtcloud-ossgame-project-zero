@@ -1,0 +1,15 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="loadingLayer" Type="Plist" ID="6d36bc0f-414a-4237-acf2-a0f2bd64323f" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="loadingUI/bg.jpg" />
+      <FilePathData Path="loadingUI/frist.png" />
+      <FilePathData Path="loadingUI/letsgo.png" />
+      <FilePathData Path="loadingUI/login_bar.png" />
+      <FilePathData Path="loadingUI/login_bg.png" />
+      <FilePathData Path="loadingUI/logo.png" />
+      <FilePathData Path="loadingUI/star.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
