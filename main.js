@@ -47,6 +47,7 @@
  *
  */
 var quickLoginfalg = false;
+var logErrorFalg = false;
 //自动登录业务
 function autoLoginService() {
     SgtApi.UserService.quickLogin(function (result, user) {
@@ -57,7 +58,8 @@ function autoLoginService() {
                 getPlayerSave();
             }
         } else {
-            console.log('快速注册失败。');
+            console.error('快速注册失败。');
+            logErrorFalg = true;
         }
     });
 }
@@ -85,12 +87,13 @@ function autoWxLoginService(wxInfo) {
                                 //登陆成功 获取用户存档
                                 getPlayerSave(data.userid);
                             } else {
-                                console.log(data);
+                                console.error("注册失败");
+                                logErrorFalg = true;
                                 //注册失败
                             }
                         });
                     } else {
-                        //重现授权
+                        //授权异常，重新授权
                         sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
                     }
                 });
@@ -101,6 +104,7 @@ function autoWxLoginService(wxInfo) {
             }
         });
     } else {
+        //还未授权，重新授权
         sgt.WxCentralService.auth(wxInfo.result.wxAppId, 'snsapi_userinfo');
     }
 }
@@ -119,7 +123,7 @@ function getPlayerSave() {
                             localStorage.setItem("save", data.content);
                         } else {
                             //没有存档
-
+                            console.log("当前用户没有存档");
                         }
                         quickLoginfalg = true;
                     }
@@ -131,7 +135,8 @@ function getPlayerSave() {
                 console.log("未创建角色");
             }
         } else {
-            console.log("失败获取用户角色" + data);
+            console.error("失败获取用户角色" + data);
+            logErrorFalg = true;
         }
     })
 }
@@ -149,7 +154,8 @@ cc.game.onStart = function () {
                 if (result)
                     autoWxLoginService(data);
                 else {
-                    console.log("获取签名失败");
+                    console.error("获取签名失败");
+                    logErrorFalg = true;
                     //autoLoginService();
                 }
             });
@@ -170,8 +176,10 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        initDatas();
-        showCover();
+        if(!logErrorFalg){
+            initDatas();
+            showCover();
+        }
     }, this);
 };
 cc.game.run();

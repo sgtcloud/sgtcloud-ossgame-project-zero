@@ -120,16 +120,17 @@ var PlayerData = {
     statistics_res_values: ["gem", "relic", "gold"],
     player: null,
     save: null,
+    sequence: [],
     init: function () {
         var save = localStorage.getItem("save");
-        if (sgt) {
-            if (cc.isObject(PlayerData.save)) {
-                save = PlayerData.save.content;
+        if (sgt && cc.isObject(sgt.context.user)) {
+            if (cc.isObject(this.save)) {
+                save = this.save.content;
             } else {
-                player.id = PlayerData.player.id;
-                player.name = PlayerData.player.name;
-                player.vip = PlayerData.player.vip || 1;
-                player.first_time = PlayerData.player.createTime;
+                player.id = this.player.id;
+                player.name = this.player.name;
+                player.vip = this.player.vip || 1;
+                player.first_time = this.player.createTime;
             }
         }
         if (save) {
@@ -162,23 +163,29 @@ var PlayerData = {
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
+        setInterval(function(){
+            if(cc.isArray(this.sequence) && this.sequence.length > 0){
+                var playerExtra = new SgtApi.PlayerExtra();
+                playerExtra.content = JSON.stringify(player);
+                playerExtra.playerId = player.id;
+                sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
+                    console.log('上传存档：' + result + ",内容为" + data);
+                });
+                this.sequence = [];
+            }
+        }.bind(this),60 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
-            var save = new SgtApi.PlayerExtra();
-            if (PlayerData.player.level != player.heroes[0].lv) {
-                PlayerData.player.level = player.heroes[0].lv;
-                sgt.PlayerService.update(PlayerData.player, function (result, data) {
+
+            this.sequence.push(player);
+
+            if (this.player.level != player.heroes[0].lv) {
+                this.player.level = player.heroes[0].lv;
+                sgt.PlayerService.update(this.player, function (result, data) {
                 });
             }
-
-            save.content = JSON.stringify(player);
-            save.playerId = player.id;
-            sgt.PlayerExtraService.updatePlayerExtraMap(save, function (result, data) {
-                console.log('上传存档：' + result + ",内容为" + data);
-            });
-
         }
     }
     ,

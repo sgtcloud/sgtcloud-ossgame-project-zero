@@ -308,7 +308,7 @@ function addPlayer(playerName, callback) {
             console.log("创建角色result:" + result + ",data:" + data);
             return callback(true);
         } else {
-            console.log('创建角色失败！');
+            console.error('创建角色失败！');
             return callback(false);
         }
     });
@@ -332,15 +332,16 @@ function openNewNameLayer(scene) {
     var btn = root.getChildByName('btn');
     //popup(gamepopup,100);
     bindButtonCallback(btn, function () {
-        toggleTip('正在创建角色并初始化游戏。。。。。。');
+        tip2.toggle({'delay':10,'text':'正在创建角色并初始化游戏。。。。。。'});
         var playName = name_text.getString();
         if (cc.isString(playName)) {
             addPlayer(playName, function () {
                 createPlayer.removeFromParent(true);
                 //gamepopup.removeFromParent(true);
                 initGame();
+                tip2.stopAllActions();
+                tip2.setVisible(false);
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
-
             })
         } else {
             new Popup1("友情提醒", "角色名字格式不正确");
@@ -363,8 +364,9 @@ var tipTemplate;
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
     tipTemplate=ccs.csLoader.createNode(res.tips).getChildByName("root");
-    window.tip2=new Tip(scene);
+    window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
+
     if (sgt && cc.isObject(sgt.context.user) && !quickLoginfalg) {
         loginBtn.setVisible(false);
         openNewNameLayer(scene);
@@ -459,6 +461,7 @@ function schedule(target, callback, delay, interval) {
 }
 
 function unschedule(target) {
+
     cc.director.getScheduler().unschedule(target.__instanceId, target);
 }
 
