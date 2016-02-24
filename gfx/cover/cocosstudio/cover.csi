@@ -1,18 +1,19 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="cover" Type="Plist" ID="83545e14-b8a2-4fb4-baa7-3e4fb4abc766" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <PropertyGroup Name="cover" Type="Plist" ID="735f6d20-5d8f-4729-9e34-57715f6426fd" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="coverUI/bg_03.png" />
       <FilePathData Path="coverUI/bg_05.png" />
       <FilePathData Path="coverUI/bg_14.png" />
       <FilePathData Path="coverUI/btn1.png" />
       <FilePathData Path="coverUI/btn2.png" />
+      <FilePathData Path="coverUI/cover_bg.jpg" />
       <FilePathData Path="coverUI/logo.png" />
       <FilePathData Path="coverUI/text.png" />
       <FilePathData Path="coverUI/text1.png" />
       <FilePathData Path="coverUI/yellow_btn_a.png" />
       <FilePathData Path="coverUI/yellow_btn_b.png" />
     </ImageFiles>
-    <MaxSize Width="780" Height="1024" />
+    <MaxSize Width="850" Height="1024" />
   </Content>
 </PlistInfoProjectFile>
