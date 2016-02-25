@@ -10,14 +10,14 @@ var LoaderScene = cc.LoaderScene.extend({
     root: null,
 
     init: function () {
-        var self = this;
+        this._super();
         var json = ccs.load(res_loading.loading_scene_json);
         var node = json.node;
         var animation = json.action;
         node.runAction(animation);
         animation.play("rot", true);
         this.root = node.getChildByName("root");
-        self.addChild(node, 0);
+        this.addChild(node, 0);
         return true;
     },
 
@@ -25,16 +25,15 @@ var LoaderScene = cc.LoaderScene.extend({
      * custom onEnter
      */
     onEnter: function () {
-        var self = this;
+        this._super();
         this.updatePercent(0);
-        cc.Node.prototype.onEnter.call(self);
-        self.schedule(self._startLoading, 0.2);
+        this.schedule(this._startLoading, 0.2);
     },
     /**
      * custom onExit
      */
     onExit: function () {
-        cc.Node.prototype.onExit.call(this);
+        this._super();
         this.updatePercent(0);
     },
 
@@ -61,18 +60,17 @@ var LoaderScene = cc.LoaderScene.extend({
     },
 
     _startLoading: function () {
-        var self = this;
-        self.unschedule(self._startLoading);
-        var res = self.resources;
+        this.unschedule(this._startLoading);
+        var res = this.resources;
         cc.loader.load(res,
             function (result, count, loadedCount) {
                 var percent = (loadedCount / count * 100) | 0;
                 percent = Math.min(percent, 100);
-                self.updatePercent(percent);
-            }, function () {
-                if (self.cb)
-                    self.cb.call(self.target);
-            });
+                this.updatePercent(percent);
+            }.bind(this), function () {
+                if (this.cb)
+                    this.cb.call(this.target);
+            }.bind(this));
     }
 })
 
