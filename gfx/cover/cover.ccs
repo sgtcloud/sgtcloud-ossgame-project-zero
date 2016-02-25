@@ -15,21 +15,6 @@
           <Image Name="text.png" />
           <Image Name="text1.png" />
           <Image Name="bg_05.png" />
-          <Image Name="cover.png" />
-          <PlistImageFolder Image="cover.png" PListFile="cover.plist" Name=".cover_PList.Dir">
-            <PlistImageFile Name="coverUI_bg_03.png" Key="coverUI/bg_03.png" />
-            <PlistImageFile Name="coverUI_bg_05.png" Key="coverUI/bg_05.png" />
-            <PlistImageFile Name="coverUI_bg_14.png" Key="coverUI/bg_14.png" />
-            <PlistImageFile Name="coverUI_btn1.png" Key="coverUI/btn1.png" />
-            <PlistImageFile Name="coverUI_btn2.png" Key="coverUI/btn2.png" />
-            <PlistImageFile Name="coverUI_text.png" Key="coverUI/text.png" />
-            <PlistImageFile Name="coverUI_text1.png" Key="coverUI/text1.png" />
-            <PlistImageFile Name="coverUI_cover_bg.jpg" Key="coverUI/cover_bg.jpg" />
-            <PlistImageFile Name="coverUI_logo.png" Key="coverUI/logo.png" />
-            <PlistImageFile Name="coverUI_yellow_btn_a.png" Key="coverUI/yellow_btn_a.png" />
-            <PlistImageFile Name="coverUI_yellow_btn_b.png" Key="coverUI/yellow_btn_b.png" />
-            <PlistImageFile Name="coverUI_cover.png" Key="coverUI/cover.png" />
-          </PlistImageFolder>
         </Folder>
         <Project Name="cover.csd" Type="Layer" />
         <Project Name="NewNameLayer.csd" Type="Layer" />
