@@ -573,7 +573,7 @@ function getPlayerSave() {
                 PlayerData.player = playerData;
                 sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
                     if (result) {
-                        if (cc.isObject(data)) {
+                        if (cc.isObject(data) && cc.isString(data.content)) {
                             PlayerData.save = data;
                             localStorage.setItem("save", data.content);
                         } else {
