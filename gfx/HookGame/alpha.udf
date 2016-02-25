@@ -28,13 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="SmallItemLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="SmallItemLayer.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
