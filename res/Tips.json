@@ -48,9 +48,8 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.5
+              "Y": 1.0
             },
-            "TopMargin": 60.0,
             "Tag": 58,
             "Children": [
               {
@@ -78,21 +77,20 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 2.0
+                  "Y": 1.0
                 },
-                "TopMargin": -60.0,
                 "Tag": 40,
                 "ActionTag": -138313478,
                 "Size": {
-                  "X": 400.0,
-                  "Y": 120.0
+                  "X": 460.0,
+                  "Y": 160.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 17,
+                "FontSize": 20,
                 "LabelText": "一二三四五六七八九十一二三四五六七八九十",
                 "HorizontalAlignmentType": "HT_Center",
                 "VerticalAlignmentType": "VT_Center",
@@ -112,8 +110,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 200.0,
-                  "Y": 56.7047
+                  "X": 230.0,
+                  "Y": 75.7047
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -123,21 +121,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5,
-                  "Y": 0.9451
+                  "Y": 0.4732
                 },
                 "PreSize": {
-                  "X": 0.9,
-                  "Y": 0.8333
+                  "X": 0.8696,
+                  "Y": 0.4375
                 },
-                "LeftMargin": 20.0,
-                "RightMargin": 20.0,
-                "TopMargin": -21.7047,
-                "BottomMargin": 31.7047,
+                "LeftMargin": 30.0,
+                "RightMargin": 30.0,
+                "TopMargin": 49.2953,
+                "BottomMargin": 40.7047,
                 "Tag": 37,
                 "ActionTag": -48941033,
                 "Size": {
-                  "X": 360.0,
-                  "Y": 50.0
+                  "X": 400.0,
+                  "Y": 70.0
                 },
                 "Name": "text",
                 "ctype": "TextObjectData"
@@ -145,16 +143,16 @@
             ],
             "ActionTag": -1872793719,
             "Size": {
-              "X": 400.0,
-              "Y": 60.0
+              "X": 460.0,
+              "Y": 160.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 400.0,
-          "Y": 120.0
+          "X": 460.0,
+          "Y": 160.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
