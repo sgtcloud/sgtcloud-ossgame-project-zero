@@ -24,25 +24,25 @@ var ActiveSkill = cc.Class.extend({
                 if (effects[j].type === "single_damage_once") {
                     this.type = this.TYPE_ONCE;
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_magma_blaster, this.targets.length);
+                    this.loadSkillEffectRes(res.skill_magma_blaster, this.targets.length, "boom");
                     this.shock = 2;
                 } else if (effects[j].type === "multi_damage_once") {
                     this.type = this.TYPE_ONCE;
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_tornado_shock, this.targets.length);
+                    this.loadSkillEffectRes(res.skill_tornado_shock, this.targets.length, "boom");
                     this.shock = 2;
                 } else if (effects[j].type === "multi_recover_once") {
                     this.type = this.TYPE_ONCE;
                     this.effectValue = effects[j].value * -1;
-                    this.loadSkillEffectRes(res.skill_cure_totem, this.targets.length);
+                    this.loadSkillEffectRes(res.skill_cure_totem, this.targets.length, "boom");
                 } else if (effects[j].type.indexOf("buff") === 0) {
                     this.type = this.TYPE_BUFF;
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes("res/icon/skills/" + skill.getIcon(), this.targets.length);
+                    this.loadSkillEffectRes("res/icon/skills/" + skill.getIcon(), this.targets.length, "boom");
                 } else if (effects[j].type === "multi_damage_continuous") {
                     this.type = this.TYPE_CONTINUOUS;
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length);
+                    this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length, "boom");
                 } else {
                     cc.log("not a active skill effect:" + effects[j].type);
                 }
@@ -50,12 +50,12 @@ var ActiveSkill = cc.Class.extend({
         }
     },
 
-    loadSkillEffectRes: function (name, num) {
+    loadSkillEffectRes: function (name, num, defaultAnimName) {
         this.hitEffects = [];
         for (var i = 0; i < num; i++) {
             if (name.lastIndexOf("json") != -1) {
                 this.hitEffects[i] = new CCSUnit();
-                this.hitEffects[i].initSprite(name, null, "boom");
+                this.hitEffects[i].initSprite(name, null, defaultAnimName);
             } else {
                 this.hitEffects[i] = new cc.Sprite(name);
             }

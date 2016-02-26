@@ -90,7 +90,7 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
     this.isActive = function () {
         return !skill.isLocked();
     };
-    this._bindListeners=function(){
+    this._bindListeners = function () {
         var that = this;
         customEventHelper.bindListener(EVENT.UNLOCK_ACTIVITY_SKILL, function (event) {
             var skillId = event.getUserData();
@@ -163,21 +163,21 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
             this.root.isVisible() && this.root.setVisible(false);
         }
         /*function tryFire(levelData) {
-            if (!(isCoolDowning || heroDead)) {
-                that.showCooldown(levelData['cooldown']);
-                if (levelData['duration'] > 0) {
-                    randomBuff = true;
-                    toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(), function () {
-                        randomBuff = false;
-                    });
-                }
-                customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-            } else if (isCoolDowning && !heroDead) {
-                console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-            } else if (heroDead) {
-                tip.toggle('英雄已死亡...');
-            }
-        }*/
+         if (!(isCoolDowning || heroDead)) {
+         that.showCooldown(levelData['cooldown']);
+         if (levelData['duration'] > 0) {
+         randomBuff = true;
+         toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(), function () {
+         randomBuff = false;
+         });
+         }
+         customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+         } else if (isCoolDowning && !heroDead) {
+         console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+         } else if (heroDead) {
+         tip.toggle('英雄已死亡...');
+         }
+         }*/
         this.skill_icon.addClickEventListener(function () {
             var levelData = that.skill.getLevelData();
             if (!(heroDead || isCoolDowning) && randomBuff) {
@@ -371,16 +371,16 @@ var SkillListMenu = BattleMenu.extend({
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
         //var skills = [];
         var heroes = PlayerData.getHeroes();
-        var index=0;
+        var index = 0;
         for (var q in heroes) {
-            var hero=heroes[q];
+            var hero = heroes[q];
             var activitySkills = getHeroActivtySkillls(hero);
             for (var i = 0; i < activitySkills.length; i++) {
-                var skillBtn = new SkillIcon(skillIconTemplate.clone(),index++, skillsBox, activitySkills[i]);
-                if(activitySkills[i].getLv()>0&&!hero.isLocked()){
-                    if(hero.isDead()){
+                var skillBtn = new SkillIcon(skillIconTemplate.clone(), index++, skillsBox, activitySkills[i]);
+                if (activitySkills[i].getLv() > 0 && !hero.isLocked()) {
+                    if (hero.isDead()) {
                         skillBtn.showDead();
-                    }else if(skillBtn.isCoolDown()){
+                    } else if (skillBtn.isCoolDown()) {
                         skillBtn.showCooldown();
                     }
                 }
@@ -459,6 +459,7 @@ var HeroListMenu = BattleMenu.extend({
         function setElement(elements, target, listener) {
             initView(target, elements, listener)
         }
+
         function initView(target, elements, listener) {
             if (target.isMaxLevel()) {
                 elements.upgrade_btn.layer.setVisible(false);
@@ -484,6 +485,7 @@ var HeroListMenu = BattleMenu.extend({
                 });
             }
         }
+
         function setFont(target) {
             if (target instanceof Array) {
                 for (var i in target) {
@@ -633,10 +635,7 @@ var HeroListMenu = BattleMenu.extend({
                 var dieHero = event.getUserData();
                 var heroId = dieHero.getId();
                 if (heroId === hero.getId()) {
-                    sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                        player['time']['die'][heroId] = data;
-                        PlayerData.updatePlayer();
-                    });
+                    PlayerData.updateHeroDeadTime(heroId);
                     elements.die_text.setVisible(true);
                     elements.die_time_text.setVisible(true);
                     elements.revive_btn.layer.setVisible(true);
@@ -675,8 +674,7 @@ var HeroListMenu = BattleMenu.extend({
                     die_time_text.setVisible(false);
                     elements.revive_btn.layer.setVisible(false);
                     elements.icon.setColor(cc.color(255, 255, 255));
-                    delete  player['time']['die'][heroId]
-                    PlayerData.updatePlayer();
+                    PlayerData.clearHeroDeadTime(heroId);
                     if (hero.isMaxLevel()) {
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                         elements.maxLevel_btn.layer.setVisible(true);
@@ -1343,7 +1341,7 @@ var ShopLayerMenu = BattleMenu.extend({
         this.first_x = this.first_y = this.first_z = this.last_x = this.last_y = this.last_z = 0;
         this.falg = true;
 
-        this.refeshMoneyTreeLayer = function (){
+        this.refeshMoneyTreeLayer = function () {
             if (shopView.getChildByName('moneyTree_tab').visible)
                 shopView.getChildByName('moneyTree_tab').getChildByName("gold_text").setString(PlayerData.getStageData().getMoneyTreeRatio());
         }
@@ -1481,9 +1479,9 @@ var ShopLayerMenu = BattleMenu.extend({
                 }
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
                 tip.toggle({
-                    'beforeShow':[
-                        cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
-                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
+                    'beforeShow': [
+                        cc.hide(), cc.delayTime(0.1)], 'delay': 2.0,
+                    'text': '成功购买 ' + CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费' + CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
                 PlayerData.updatePlayer();
             } else {
@@ -1551,7 +1549,7 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.refeshRankLayer = function () {
             for (var i in this.buttons) {
-                if(this.buttons[i].selected /*&& i === event.getUserData().leaderId.replace("rank","tab")*/){
+                if (this.buttons[i].selected /*&& i === event.getUserData().leaderId.replace("rank","tab")*/) {
                     this.showMenuLayer(i);
                     break;
                 }
@@ -1559,7 +1557,7 @@ var RankLayerMenu = BattleMenu.extend({
         };
         /*customEventHelper.bindListener(EVENT.UPDATE_SELF_RANK, function (event) {
 
-        }.bind(this));*/
+         }.bind(this));*/
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
@@ -1593,7 +1591,7 @@ var RankLayerMenu = BattleMenu.extend({
             var num = root.getChildByName('num');
             var text = root.getChildByName('text');
             setFont([playerName]);
-            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num,text]);
+            setIgnoreContentAdaptWithSize([levelText, /*prestigeText,*/ num, text]);
             levelText.setString("Lv." + data.player.level);
             num.setString(data.index + 1);
             playerName.setString(data.player.name);

@@ -58,6 +58,7 @@ gulp.task('compileJs', function () {
             "src/battle/FairyUnit.js",
             "src/battle/PackUnit.js",
             "src/battle/StatisticsUnit.js",
+            "src/battle/OfflineRewardUnit.js",
             "src/apps.js",
             'main.js'])
         .pipe(debug({title: 'src:'}))

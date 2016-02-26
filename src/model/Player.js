@@ -32,7 +32,7 @@ var player = {
     },
     'time': {
         "die": {},
-        "cd":{}
+        "cd": {}
     },
     //"cd":{"herosDie":{"":}},
     // release data
@@ -153,9 +153,9 @@ var PlayerData = {
     initPlayerData: function (save) {
         for (var i in player.heroes) {
             this.heroes.push(new Hero(player.heroes[i]));
-            if (!save) {
-                player.heroes[i].life = this.heroes[i].getLife();
-            }
+            //if (!save) {
+            //    player.heroes[i].life = this.heroes[i].getLife();
+            //}
         }
         if (!player.first_time) {
             sgt.RouterService.getCurrentTimestamp(function (result, data) {
@@ -167,8 +167,8 @@ var PlayerData = {
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
-        setInterval(function(){
-            if(cc.isArray(this.sequence) && this.sequence.length > 0){
+        setInterval(function () {
+            if (cc.isArray(this.sequence) && this.sequence.length > 0) {
                 var playerExtra = new SgtApi.PlayerExtra();
                 playerExtra.content = JSON.stringify(player);
                 playerExtra.playerId = player.id;
@@ -177,7 +177,7 @@ var PlayerData = {
                 });
                 this.sequence = [];
             }
-        }.bind(this),60 * 1000);
+        }.bind(this), 60 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -346,6 +346,23 @@ var PlayerData = {
     getAmountByUnit: function (unit) {
         return player.resource[unit];
     },
+
+    getHeroDeadTime: function (id) {
+        return player['time']['die'][id];
+    },
+
+    clearHeroDeadTime: function (id) {
+        delete player['time']['die'][id];
+        PlayerData.updatePlayer();
+    },
+
+    updateHeroDeadTime: function (id) {
+        sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            player['time']['die'][id] = data;
+            PlayerData.updatePlayer();
+        });
+    },
+
     heroes: [],
     stageData: {},
     globe_life_value: 0,
