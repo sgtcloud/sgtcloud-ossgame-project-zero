@@ -15,52 +15,26 @@ var gutil = require('gulp-util');
 var replace = require('gulp-replace');
 var jeditor = require("gulp-json-editor");
 var debug = require('gulp-debug');
+var del = require('del');
+var config = require('./project.json');
 
 var DEST = 'publish/html5/';
+
+var sourceCodeList = [];
 
 gulp.task('default', ['compileJs', 'copyIndex', 'copyConf', 'image'], function () {
 });
 
-gulp.task('compileJs', function () {
-    return gulp.src([
-            'lib/cocos2d-js-v3.10.js',
-            "src/resource.js",
-            "src/model/Data.js",
-            "src/model/Enemy.js",
-            "src/model/Stage.js",
-            "src/model/Effect.js",
-            "src/model/Skill.js",
-            "src/model/Equip.js",
-            "src/model/Hero.js",
-            "src/model/Player.js",
-            "src/model/Event.js",
-            "src/model/SkillEffectMappings.js",
-            "src/LoaderScene.js",
-            "src/battle/CCSUnit.js",
-            "src/battle/BattleField.js",
-            "src/battle/BuffTips.js",
-            "src/battle/Loot.js",
-            "src/battle/ActiveSkill.js",
-            "src/battle/DamageNumber.js",
-            "src/battle/BattleUnit.js",
-            "src/battle/HeroUnit.js",
-            "src/battle/EnemyUnit.js",
-            "src/battle/TopPanel.js",
-            "src/battle/BattlePanel.js",
-            "src/battle/TabContainer.js",
-            "src/battle/MainScene.js",
-            "src/battle/BattleMenu.js",
-            "src/battle/HeroDesc.js",
-            "src/battle/Popup1.js",
-            "src/Chance.js",
-            "src/GamePopup.js",
-            "src/battle/ChestUnit.js",
-            "src/battle/FairyUnit.js",
-            "src/battle/PackUnit.js",
-            "src/battle/StatisticsUnit.js",
-            "src/battle/OfflineRewardUnit.js",
-            "src/apps.js",
-            'main.js'])
+gulp.task('clean', function () {
+    return del(['publish']);
+});
+
+gulp.task('compileJs', ['clean'], function () {
+    sourceCodeList.push('lib/cocos2d-js-v3.10.js');
+    sourceCodeList = sourceCodeList.concat(config.jsList);
+    sourceCodeList.push('main.js');
+
+    return gulp.src(sourceCodeList)
         .pipe(debug({title: 'src:'}))
         .pipe(concat('game.js'))
         //.pipe(buffer())
@@ -71,14 +45,14 @@ gulp.task('compileJs', function () {
         .pipe(gulp.dest(DEST));
 });
 
-gulp.task('copyIndex', function () {
+gulp.task('copyIndex', ['clean'], function () {
     return gulp.src('index.html')
         .pipe(replace('lib/cocos2d-js-v3.10.js', 'game.min.js'))
         .pipe(replace('<script cocos src="main.js"></script>', ''))
         .pipe(gulp.dest(DEST));
 });
 
-gulp.task('copyConf', function () {
+gulp.task('copyConf', ['clean'], function () {
     return gulp.src("project.json")
         .pipe(jeditor(function (json) {
             json.version = "0.0.3";
@@ -109,7 +83,7 @@ gulp.task('copyConf', function () {
  */
 
 
-gulp.task('image', function () {
+gulp.task('image', ['clean'], function () {
     return gulp.src('res/**')
         .pipe(image({
             pngquant: true,
