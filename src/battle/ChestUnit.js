@@ -60,7 +60,7 @@ var ChestUnit = CCSUnit.extend({
                 PlayerData.updatePlayer();
                 customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
             }
-            toggleTip({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
+            tip.toggle({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
         } else {
             //发送释放buff事件
             cc.log('释放buff');
