@@ -122,25 +122,25 @@ var player = {
 var PlayerData = {
 
     statistics_res_values: ["gem", "relic", "gold"],
-    player: null,
-    save: null,
+    modelPlayer: null,
+    modelSave: null,
     sequence: [],
     init: function () {
-        var save = localStorage.getItem("save");
+        var localSave = localStorage.getItem("save");
         if (sgt && cc.isObject(sgt.context.user)) {
-            if (cc.isObject(this.save)) {
-                save = this.save.content;
+            if (cc.isObject(this.modelSave)) {
+                localSave = this.modelSave.content;
             } else {
-                player.id = this.player.id;
-                player.name = this.player.name;
-                player.vip = this.player.vip || 1;
-                player.first_time = this.player.createTime;
+                player.id = this.modelPlayer.id;
+                player.name = this.modelPlayer.name;
+                player.vip = this.modelPlayer.vip || 1;
+                player.first_time = this.modelPlayer.createTime;
             }
         }
-        if (save) {
-            player = JSON.parse(save);
+        if (localSave) {
+            player = JSON.parse(localSave);
         }
-        this.initPlayerData(save);
+        this.initPlayerData(localSave);
     },
     getHeroById: function (id) {
         for (var i in this.heroes) {
@@ -158,10 +158,10 @@ var PlayerData = {
             //}
         }
         if (!player.first_time) {
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                player.first_time = data;
-                console.log('同步服务器时间：' + data);
-            });
+            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                player.first_time = serverCurrentTime;
+                //console.log('同步服务器时间：' + data);
+            //});
             //player.first_time = Date.parse(new Date());
         }
         this.stageData = new Stage(player.stage);
@@ -178,6 +178,9 @@ var PlayerData = {
                 this.sequence = [];
             }
         }.bind(this), 60 * 1000);
+            //同步服务器时间 校正服务器本地时间
+            syncTime();
+        }.bind(this),600 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -185,9 +188,9 @@ var PlayerData = {
 
             this.sequence.push(player);
 
-            if (this.player.level != player.heroes[0].lv) {
-                this.player.level = player.heroes[0].lv;
-                sgt.PlayerService.update(this.player, function (result, data) {
+            if (this.modelPlayer.level != player.heroes[0].lv) {
+                this.modelPlayer.level = player.heroes[0].lv;
+                sgt.PlayerService.update(this.modelPlayer, function (result, data) {
                 });
             }
         }
@@ -285,10 +288,10 @@ var PlayerData = {
     }
     ,
     updateIntoBattleTime: function () {
-        sgt.RouterService.getCurrentTimestamp(function (result, data) {
-            player.into_stage_battle_timestamp = data;
-            console.log('同步服务器时间：' + data);
-        });
+        //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            player.into_stage_battle_timestamp = serverCurrentTime;
+            //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
+        //});
         //player.into_stage_battle_timestamp = Date.parse(new Date());
         //this.updatePlayer();
     }
@@ -433,7 +436,7 @@ var PlayerData = {
         }
     },
     getCurrentRanksByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(PlayerData.player)) {
+        if (sgt && cc.isObject(PlayerData.modelPlayer)) {
             SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
         } else {
             return callback(false);
@@ -441,8 +444,8 @@ var PlayerData = {
     }
     ,
     getMyRankByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(PlayerData.player)) {
-            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.player.id, callback);
+        if (sgt && cc.isObject(PlayerData.modelPlayer)) {
+            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, callback);
         } else {
             return callback(false);
         }
