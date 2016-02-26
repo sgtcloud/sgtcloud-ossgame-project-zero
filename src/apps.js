@@ -296,24 +296,31 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
 }
 
 function addPlayer(playerName, callback) {
-    var sgtPlayer = new sgt.Player();
-    sgtPlayer.name = playerName;
-    sgtPlayer.userId = sgt.context.user.userid;
-    sgtPlayer.level = 1;
-    sgtPlayer.avatarUrl = "h102.png";
-    sgt.PlayerService.create(sgtPlayer, function (result, data) {
-        if (result) {
-            //初始化角色存档
-            PlayerData.player = data;
+    sgt.PlayerService.getByName(playerName,1,1,function(result,data){
+        if(cc.isArray(data) && data.length > 0){
+            Popup.openPopup('角色名"'+playerName+'"已存在');
+        }else{
+            var sgtPlayer = new sgt.Player();
+            sgtPlayer.name = playerName;
+            sgtPlayer.userId = sgt.context.user.userid;
+            sgtPlayer.level = 1;
+            sgtPlayer.avatarUrl = "h102.png";
+            sgt.PlayerService.create(sgtPlayer, function (result, data) {
+                if (result) {
+                    //初始化角色存档
+                    PlayerData.player = data;
 
-            console.log("创建角色result:" + result + ",data:" + data);
-            return callback(true);
-        } else {
-            console.error('创建角色失败！');
-            return callback(false);
+                    console.log("创建角色result:" + result + ",data:" + data);
+                    return callback(true);
+                } else {
+                    console.error('创建角色失败！');
+                    return callback(false);
+                }
+            });
         }
     });
 }
+
 //识别 MicroMessenger 这个关键字来确定是否微信内置的浏览器
 function is_weixin() {
     var ua = navigator.userAgent.toLowerCase();
@@ -573,7 +580,7 @@ function getPlayerSave() {
                 PlayerData.player = playerData;
                 sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
                     if (result) {
-                        if (cc.isObject(data)) {
+                        if (cc.isObject(data) && data.content) {
                             PlayerData.save = data;
                             localStorage.setItem("save", data.content);
                         } else {
