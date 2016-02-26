@@ -1,6 +1,7 @@
 var game;
 var quickLoginfalg = false;
 var logErrorFalg = false;
+var serverCurrentTime ;
 var $$ = {};
 $$.extend = function (a, b) {
     if (typeof (b) === "undefined") {
@@ -308,7 +309,7 @@ function addPlayer(playerName, callback) {
             sgt.PlayerService.create(sgtPlayer, function (result, data) {
                 if (result) {
                     //初始化角色存档
-                    PlayerData.player = data;
+                    PlayerData.modelPlayer = data;
 
                     console.log("创建角色result:" + result + ",data:" + data);
                     return callback(true);
@@ -577,11 +578,11 @@ function getPlayerSave() {
             console.log("成功获取用户角色" + data);
             if (cc.isArray(data) && data.length > 0) {
                 var playerData = data[0];
-                PlayerData.player = playerData;
+                PlayerData.modelPlayer = playerData;
                 sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
                     if (result) {
                         if (cc.isObject(data) && data.content) {
-                            PlayerData.save = data;
+                            PlayerData.modelSave = data;
                             localStorage.setItem("save", data.content);
                         } else {
                             //没有存档
@@ -601,4 +602,20 @@ function getPlayerSave() {
             logErrorFalg = true;
         }
     })
+}
+
+//同步服务器时间
+function syncTime(callback){
+    sgt.RouterService.getCurrentTimestamp(function (result, data) {
+        //player.first_time = data;
+        if(result){
+            serverCurrentTime = data;
+            console.log('同步服务器时间：' + data);
+        }else{
+            console.error('同步服务器时间失败');
+        }
+        if(callback){
+            callback();
+        }
+    });
 }

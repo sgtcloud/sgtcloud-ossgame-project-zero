@@ -83,8 +83,14 @@ cc.game.onStart = function () {
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
         if(!logErrorFalg){
-            initDatas();
-            showCover();
+            syncTime(function(){
+                initDatas();
+                showCover();
+                setInterval(function(){
+                    serverCurrentTime += 100;
+                    //console.log("当前时间：" + serverCurrentTime);
+                },100);
+            })
         }
     }, this);
 };
