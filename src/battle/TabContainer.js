@@ -73,14 +73,14 @@ var TabContainer = cc.Node.extend({
         function bindListener() {
             customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
                 var data = event.getUserData();
-                PlayerData.updateResource([data.cost]);
+                PlayerData.updateResource(data.cost);
                 PlayerData.updatePlayer();
-                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data.cost);
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
-                PlayerData.updateResource([data.cost]);
-                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                PlayerData.updateResource(data.cost);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data.cost);
             });
             customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS,function(){
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);

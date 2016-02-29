@@ -54,10 +54,11 @@ var Equip = function (id, equipCache) {
         var unit = price['unit'];
         if (!validateAmountNotEnough(price)) {
             lv += 1;
-            var cost = {value: -price.value, unit: unit}
-            PlayerData.updateResource([cost]);
+            var cost = {value: -price.value, unit: unit};
+            PlayerData.updateResource(cost);
             //game.onEquipUpdate(hero, this);
             //game.onHeroUpdate(hero);
+            customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
             for (var i in player.heroes) {
                 var cacheHero = player.heroes[i];
                 if (cacheHero.id === hero.getId()) {
