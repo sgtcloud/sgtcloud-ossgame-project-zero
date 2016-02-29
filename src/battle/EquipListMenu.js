@@ -53,6 +53,7 @@ var EquipListMenu = BattleMenu.extend({
                 var price = {value: nextValue, unit: equipObject.unit};
                 equipObject.equip.upgrade(hero, price);
                 PlayerData.refreshAllHerosProps();
+                PlayerData.refreshGlobeProps();
                 customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
                 pushMagicalEquips(equipObject.equip, hero);
                 refeshMagicalEquips(hero, elements);

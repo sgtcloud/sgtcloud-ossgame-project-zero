@@ -180,14 +180,12 @@ var PlayerData = {
             }
             //同步服务器时间 校正服务器本地时间
             syncTime();
-        }.bind(this), 600 * 1000);
+        }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
-
             this.sequence.push(player);
-
             if (this.modelPlayer.level != player.heroes[0].lv) {
                 this.modelPlayer.level = player.heroes[0].lv;
                 sgt.PlayerService.update(this.modelPlayer, function (result, data) {
