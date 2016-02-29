@@ -60,8 +60,8 @@ var HeroUnit = BattleUnit.extend({
 
     TOMBSTONE_ZORDER_OFFSET: 2,
 
-    onDead: function () {
-        this.recover = this.hero.getRecover();
+    onDead: function (recover) {
+        this.recover = recover || this.hero.getRecover();
         customEventHelper.sendEvent(EVENT.HERO_DIE, this.hero);
         this.hideBuffIcons();
         this.refreshLifeBar();
@@ -91,13 +91,12 @@ var HeroUnit = BattleUnit.extend({
         this.showBuffIcons();
         this.tombstone.setVisible(false);
         this.tombstone.removeFromParent(true);
+        this.changeLife(this.getMaxLife());
         this.reset();
-        this.battle.onHeroRecover(this);
         customEventHelper.sendEvent(EVENT.HERO_REVIVE, this.hero);
     },
     reset: function () {
         this._super();
-        this.changeLife(this.getMaxLife());
         this.runAction(cc.fadeIn(1.0));
         this.refreshLifeBar();
     },
@@ -110,22 +109,14 @@ var HeroUnit = BattleUnit.extend({
         return this.hero.getLife();
     },
 
-//技能的当前CD
-    getCooldown: function () {
-        return this.cooldown;
-    },
     isActive: function () {
         return !this.hero.isLocked();
     },
 
     ctor: function (battle, hero) {
         this._super(battle);
-        this.recover = 0;
-        this.cooldown = 0;
         this.hero = hero;
         this.initSprite(res[this.hero.getFile()], 'hero', "stand");
-
-        this.refreshLifeBar();
 
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
             // 暂时不需要改
@@ -146,11 +137,23 @@ var HeroUnit = BattleUnit.extend({
             }
         }.bind(this));
 
-        this.reset();
-        // 重新把存档的血量赋值
-        this.life = this.hero.getCurrentLife();
-
         this.tombstone = CCSUnit.create(res.tombstone_json);
         this.tombstone.setVisible(false);
+        this.refreshLifeBar();
     },
+
+    onEnter: function () {
+        this._super();
+
+        if (this.hero.getCurrentLife() <= 0) {
+            var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
+            // todo make the current time to be a certain server time
+            var currentTime = new Date().getTime();
+            var recoverTime = currentTime - dieTime - this.hero.getRecover();
+            if (recoverTime > 0) {
+                // convert millisecond to second
+                this.onDead(recoverTime / 1000);
+            }
+        }
+    }
 });

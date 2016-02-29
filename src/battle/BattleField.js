@@ -168,6 +168,10 @@ var BattleField = cc.Class.extend({
             PlayerData.getStageData().leaveBossBattle();
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
+
+        customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
+        customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
+        customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
     },
 
     useItem: function (item) {
@@ -189,7 +193,10 @@ var BattleField = cc.Class.extend({
     findItemTargets: function (item) {
         var targets = [];
         if (item.id === ITEM.small_hp_potion || item.id === ITEM.medium_hp_potion || item.id === ITEM.large_hp_potion) {
-            targets.push(this.heroUnits.findLowestHpUnit());
+            var target = this.heroUnits.findLowestHpUnit();
+            if (target) {
+                targets.push(target);
+            }
         }
         return targets;
     },
@@ -242,6 +249,10 @@ var BattleField = cc.Class.extend({
                 this.addHeroIntoBattle(heroes[i].getId());
             }
         }
+    },
+
+    isAllHeroesDead : function () {
+
     },
 
     totalSprites: 0,
@@ -372,7 +383,7 @@ var BattleField = cc.Class.extend({
             /**
              * 刷新摇钱树购买金币值（根据不同关卡设定的值）
              */
-            //customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
+                //customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
             player.statistics.total_max_level += 1;
             //更新通关数据
             PlayerData.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");
@@ -401,7 +412,7 @@ var BattleField = cc.Class.extend({
     STAGE_LOOTS_ZORDER_OFFSET: 1000,
 
     generateStageLoots: function (bonus) {
-        var pos = cc.p(this.container.x + this.container.width * 3 / 5, this.container.y + this.container.height * 3 / 5);
+        var pos = cc.p(this.container.getContentSize().width * 3 / 5, this.container.getContentSize().height / 2);
         for (var i in bonus) {
             this.addSprites(Loot.generateLoots(bonus[i], pos), this.STAGE_LOOTS_ZORDER_OFFSET);
         }
@@ -420,21 +431,18 @@ var BattleField = cc.Class.extend({
         var fairy = new FairyUnit(this);
         this.addSprite(fairy, CONSTS.FAIRY_SPECIFIC_ZORDER);
     },
-    //todo refactor to event
     onHeroDead: function (hero) {
         //this.menus.skill.onHeroDead(hero);
         //cc.log("dead:" + hero);
     },
-    //todo refactor to event
+
     onHeroRecover: function (hero) {
         //this.menus.skill.onHeroRecover(hero);
         //cc.log("recover:" + hero);
     },
-    //todo refactor to event
-    onUseSkill: function (i) {
+    onCastSkill: function (i) {
 
     },
-    //todo refactor to event
     onEnemyDead: function (enemy) {
         if (PlayerData.getStageData().isBossBattle()) {
             player.statistics.total_boss_kill++;
