@@ -253,6 +253,9 @@
           <Image Name="blood3_1.png" />
           <Image Name="blood3_2.png" />
           <Image Name="guide.png" />
+          <Image Name="sgin.png" />
+          <Image Name="sign_sure.png" />
+          <Image Name="sign_sure1.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />

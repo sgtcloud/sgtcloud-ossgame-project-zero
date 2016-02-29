@@ -1,0 +1,658 @@
+{
+  "ID": "418f9ae6-58d2-4967-b437-50ea80308f75",
+  "Version": "2.3.3.0",
+  "Name": "RankLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 39,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 15,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_04.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 381,
+                "ActionTag": -1288208011,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 860.0
+                },
+                "Name": "bg1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_18.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 3,
+                "Scale9OriginY": 10,
+                "Scale9Width": 4,
+                "Scale9Height": 11,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 2.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0031,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.9937,
+                  "Y": 0.7907
+                },
+                "LeftMargin": 2.0,
+                "RightMargin": 2.0,
+                "TopMargin": 180.0,
+                "Tag": 382,
+                "ActionTag": 1651995325,
+                "Size": {
+                  "X": 636.0,
+                  "Y": 680.0
+                },
+                "Name": "bg2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_10.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 24,
+                "Scale9OriginY": 24,
+                "Scale9Width": 26,
+                "Scale9Height": 26,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 10.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.0116
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.6977
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 250.0,
+                "BottomMargin": 10.0,
+                "Tag": 447,
+                "ActionTag": -847369717,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 600.0
+                },
+                "Name": "List_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "DirectionType": "Vertical",
+                "HorizontalType": "Align_HorizontalCenter",
+                "IsBounceEnabled": true,
+                "ScrollDirectionType": 0,
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 20.0,
+                  "Y": 16.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0313,
+                  "Y": 0.0186
+                },
+                "PreSize": {
+                  "X": 0.9375,
+                  "Y": 0.6837
+                },
+                "LeftMargin": 20.0,
+                "RightMargin": 20.0,
+                "TopMargin": 256.0,
+                "BottomMargin": 16.0,
+                "Tag": 31,
+                "ActionTag": 1632917805,
+                "Size": {
+                  "X": 600.0,
+                  "Y": 588.0
+                },
+                "Name": "List",
+                "ctype": "ListViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 685.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.7965
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.1919
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 10.0,
+                "BottomMargin": 685.0,
+                "Tag": 30,
+                "ActionTag": -814120090,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 165.0
+                },
+                "Name": "descText_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "排行榜说明",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 45.1059,
+                  "Y": 781.1254
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0705,
+                  "Y": 0.9083
+                },
+                "PreSize": {
+                  "X": 0.8594,
+                  "Y": 0.0698
+                },
+                "LeftMargin": 45.1059,
+                "RightMargin": 44.8941,
+                "TopMargin": 78.8746,
+                "BottomMargin": 721.1254,
+                "Tag": 14,
+                "ActionTag": 1299772587,
+                "Size": {
+                  "X": 550.0,
+                  "Y": 60.0
+                },
+                "Name": "desc_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/rankText.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 209,
+                "Scale9Height": 58,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.106,
+                  "Y": 813.9999
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5002,
+                  "Y": 0.9465
+                },
+                "PreSize": {
+                  "X": 0.3266,
+                  "Y": 0.0674
+                },
+                "LeftMargin": 215.606,
+                "RightMargin": 215.394,
+                "TopMargin": 17.0001,
+                "BottomMargin": 784.9999,
+                "Tag": 32,
+                "ActionTag": -851116961,
+                "Size": {
+                  "X": 209.0,
+                  "Y": 58.0
+                },
+                "Name": "title_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/myRank_text.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 207,
+                "Scale9Height": 27,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 219.5473,
+                  "Y": 692.6965
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.343,
+                  "Y": 0.8055
+                },
+                "PreSize": {
+                  "X": 0.3234,
+                  "Y": 0.0314
+                },
+                "LeftMargin": 219.5473,
+                "RightMargin": 213.4527,
+                "TopMargin": 140.3035,
+                "BottomMargin": 692.6965,
+                "Tag": 43,
+                "ActionTag": 725399135,
+                "Size": {
+                  "X": 207.0,
+                  "Y": 27.0
+                },
+                "Name": "my_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "9999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white10-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5152,
+                  "ScaleY": 0.5168
+                },
+                "Position": {
+                  "X": 367.4811,
+                  "Y": 708.0499
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 22,
+                  "G": 240,
+                  "B": 10
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5742,
+                  "Y": 0.8233
+                },
+                "PreSize": {
+                  "X": 0.0891,
+                  "Y": 0.0209
+                },
+                "LeftMargin": 338.1147,
+                "RightMargin": 244.8853,
+                "TopMargin": 143.2525,
+                "BottomMargin": 698.7475,
+                "CallBackType": "Touch",
+                "Tag": 591,
+                "ActionTag": -1707227176,
+                "Size": {
+                  "X": 57.0,
+                  "Y": 18.0
+                },
+                "Name": "myNum_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 35.0,
+                  "Y": 610.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0547,
+                  "Y": 0.7093
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 0.064
+                },
+                "LeftMargin": 35.0,
+                "RightMargin": 285.0,
+                "TopMargin": 195.0,
+                "BottomMargin": 610.0,
+                "Tag": 193,
+                "Children": [
+                  {
+                    "NormalBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/goldTab_1.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "PressedBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/goldTab_2.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "DisableBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/goldTab_1.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "NodeNormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/goldTab_2.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "NodeDisableFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/empty.png",
+                      "Plist": ""
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 148.5706,
+                      "Y": -0.0422
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4643,
+                      "Y": -0.0008
+                    },
+                    "PreSize": {
+                      "X": 0.5,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 148.5706,
+                    "RightMargin": 11.4294,
+                    "TopMargin": 0.0422,
+                    "BottomMargin": -0.0422,
+                    "CallBackType": "Touch",
+                    "Tag": 328,
+                    "ActionTag": -352308505,
+                    "Size": {
+                      "X": 160.0,
+                      "Y": 55.0
+                    },
+                    "Name": "gold_tab",
+                    "ctype": "CheckBoxObjectData"
+                  },
+                  {
+                    "CheckedState": true,
+                    "NormalBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/stageTab_1.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "PressedBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/stageTab_2.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "DisableBackFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/stageTab_1.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "NodeNormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "rankUI/stageTab_2.png",
+                      "Plist": "RankUI.plist"
+                    },
+                    "NodeDisableFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/empty.png",
+                      "Plist": ""
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -10.9997,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0344,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.5,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": -10.9997,
+                    "RightMargin": 170.9997,
+                    "Tag": 329,
+                    "ActionTag": -225112910,
+                    "Size": {
+                      "X": 160.0,
+                      "Y": 55.0
+                    },
+                    "Name": "stage_tab",
+                    "ctype": "CheckBoxObjectData"
+                  }
+                ],
+                "ActionTag": 496490297,
+                "Size": {
+                  "X": 320.0,
+                  "Y": 55.0
+                },
+                "Name": "rank_tab",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 208422147,
+            "Size": {
+              "X": 640.0,
+              "Y": 860.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 860.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white10-export.fnt",
+        "font/white10-export.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
+        "mainUI/bg_10.png",
+        "mainUI/bg_18.png",
+        "mainUI/empty.png",
+        "RankUI.plist",
+        "RankUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
