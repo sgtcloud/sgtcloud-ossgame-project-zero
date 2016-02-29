@@ -69,13 +69,15 @@ var BattleUnit = CCSUnit.extend({
         cc.log("should be override");
     },
     //受到伤害时被调用 为了扩展
-    onDamaged: function () {
+    onDamaged: function (dmg) {
         if (this.isDead()) {
             this.onDead();
         } else {
-            this.playAnimation('hit', false, function () {
-                this.playAnimation("stand", true);
-            }.bind(this));
+            if (dmg >= 0) {
+                this.playAnimation('hit', false, function () {
+                    this.playAnimation("stand", true);
+                }.bind(this));
+            }
         }
     },
     //死亡时被调用 为了扩展
@@ -94,7 +96,7 @@ var BattleUnit = CCSUnit.extend({
                 dmg *= ctr;
             }
             this.changeLife(-dmg);
-            this.onDamaged();
+            this.onDamaged(dmg);
             this.showDamageNumber(dmg, ctr);
         }
     },
