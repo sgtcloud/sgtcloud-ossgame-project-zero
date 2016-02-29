@@ -51,16 +51,19 @@ var TopPanel = cc.Node.extend({
             self.refreshStageState();
             self.refreshStageList();
         });
-        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
-            self.refreshPlayerGoldText();
-        });
-
-        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
-            self.refreshPlayerGemText();
-        });
-        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
-            self.refreshPlayerRelicText();
-        });
+        customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
+            var resources = data.getUserData();
+            if (!resources) {
+                return;
+            }
+            if (resources instanceof Array) {
+                for (var i = 0; i < resources.length; i++) {
+                    this.sendEventByUnit(resources[i]);
+                }
+            } else {
+                this.sendEventByUnit(resources);
+            }
+        }.bind(this));
 
         bindButtonCallback(this.fightBossBtn, function () {
             customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
@@ -69,7 +72,22 @@ var TopPanel = cc.Node.extend({
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         });
 
-
+        this.sendEventByUnit = function (resources) {
+            switch (resources.unit) {
+                case 'gold':
+                    this.refreshPlayerGoldText();
+                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+                    break;
+                case 'gem':
+                    this.refreshPlayerGemText();
+                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                    break;
+                case 'relic':
+                    this.refreshPlayerRelicText();
+                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+                    break;
+            }
+        }
         this.refreshPlayerGemText = function () {
             var num = PlayerData.getAmountByUnit("gem");
             this.diamondNum.setString(num);

@@ -34,9 +34,9 @@ var OfflineRewardUnit = cc.Node.extend({
             //gamePopup.removeFromParent();
             GamePopup.closePopup(offlineRewardLayer);
             PlayerData.receiveOfflineReward();
-            customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+            /*customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
             customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-            customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
+            customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);*/
             PlayerData.updatePlayer();
         });
         this.addChild(offlineRewardLayer);

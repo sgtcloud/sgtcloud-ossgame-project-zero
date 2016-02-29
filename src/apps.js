@@ -296,27 +296,21 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
 }
 
 function addPlayer(playerName, callback) {
-    sgt.PlayerService.getByName(playerName,1,1,function(result,data){
-        if(cc.isArray(data) && data.length > 0){
-            Popup.openPopup('角色名"'+playerName+'"已存在');
-        }else{
-            var sgtPlayer = new sgt.Player();
-            sgtPlayer.name = playerName;
-            sgtPlayer.userId = sgt.context.user.userid;
-            sgtPlayer.level = 1;
-            sgtPlayer.avatarUrl = "h102.png";
-            sgt.PlayerService.create(sgtPlayer, function (result, data) {
-                if (result) {
-                    //初始化角色存档
-                    PlayerData.modelPlayer = data;
+    var sgtPlayer = new sgt.Player();
+    sgtPlayer.name = playerName;
+    sgtPlayer.userId = sgt.context.user.userid;
+    sgtPlayer.level = 1;
+    sgtPlayer.avatarUrl = "h102.png";
+    sgt.PlayerService.create(sgtPlayer, function (result, data) {
+        if (result) {
+            //初始化角色存档
+            PlayerData.modelPlayer = data;
 
-                    console.log("创建角色result:" + result + ",data:" + data);
-                    return callback(true);
-                } else {
-                    console.error('创建角色失败！');
-                    return callback(false);
-                }
-            });
+            console.log("创建角色result:" + result + ",data:" + data);
+            return callback(true);
+        } else {
+            console.error('创建角色失败！');
+            return callback(false);
         }
     });
 }
@@ -338,15 +332,21 @@ function openNewNameLayer(scene) {
     var name_text = root.getChildByName('name_text');
     var btn = root.getChildByName('btn');
     bindButtonCallback(btn, function () {
-        tip2.toggle({'delay':10,'text':'正在创建角色并初始化游戏。。。。。。'});
         var playName = name_text.getString();
         if (cc.isString(playName)) {
-            addPlayer(playName, function () {
-                createPlayer.removeFromParent(true);
-                initGame();
-                tip2.stopAllActions();
-                tip2.setVisible(false);
-                scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
+            sgt.PlayerService.getByName(playName,1,1,function(result,data) {
+                if (cc.isArray(data) && data.length > 0) {
+                    Popup.openPopup("友情提醒", '角色名"' + playName + '"已存在');
+                } else {
+                    tip2.toggle({'delay':10,'text':'正在创建角色并初始化游戏。。。。。。'});
+                    addPlayer(playName, function () {
+                        createPlayer.removeFromParent(true);
+                        initGame();
+                        tip2.stopAllActions();
+                        tip2.setVisible(false);
+                        scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
+                    })
+                }
             });
         } else {
             Popup.openPopup("友情提醒", "角色名字格式不正确");
