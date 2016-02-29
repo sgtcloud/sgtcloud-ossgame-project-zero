@@ -347,7 +347,7 @@ function openNewNameLayer(scene) {
                 tip2.stopAllActions();
                 tip2.setVisible(false);
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
-            })
+            });
         } else {
             Popup.openPopup("友情提醒", "角色名字格式不正确");
         }
