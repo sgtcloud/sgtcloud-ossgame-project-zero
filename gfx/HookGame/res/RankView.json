@@ -1,0 +1,643 @@
+{
+  "ID": "474cb21c-348b-43b6-a7ae-dfa2f1f2a19d",
+  "Version": "2.3.3.0",
+  "Name": "RankView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 40,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 416,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 384,
+                "ActionTag": 1402301482,
+                "Size": {
+                  "X": 600.0,
+                  "Y": 100.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/rankView_bg.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 580,
+                "Scale9Height": 98,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.98
+                },
+                "TopMargin": 2.0,
+                "Tag": 29,
+                "ActionTag": -310137380,
+                "Size": {
+                  "X": 600.0,
+                  "Y": 98.0
+                },
+                "Name": "my_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/hero_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 90,
+                "Scale9Height": 90,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 60.7931,
+                  "Y": 51.1296
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1013,
+                  "Y": 0.5113
+                },
+                "PreSize": {
+                  "X": 0.15,
+                  "Y": 0.9
+                },
+                "LeftMargin": 15.7931,
+                "RightMargin": 494.2069,
+                "TopMargin": 3.8704,
+                "BottomMargin": 6.1296,
+                "Tag": 39,
+                "ActionTag": 679581239,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "player_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "玩家名字六字",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 199.3848,
+                  "Y": 77.7256
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3323,
+                  "Y": 0.7773
+                },
+                "PreSize": {
+                  "X": 0.2667,
+                  "Y": 0.2
+                },
+                "LeftMargin": 119.3848,
+                "RightMargin": 320.6152,
+                "TopMargin": 12.2744,
+                "BottomMargin": 67.7256,
+                "Tag": 40,
+                "ActionTag": -714092074,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 20.0
+                },
+                "Name": "player_name",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/clearance_rank.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 247,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 461.0117,
+                  "Y": 52.1376
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7684,
+                  "Y": 0.5214
+                },
+                "PreSize": {
+                  "X": 0.4117,
+                  "Y": 0.31
+                },
+                "LeftMargin": 337.5117,
+                "RightMargin": 15.4883,
+                "TopMargin": 32.3624,
+                "BottomMargin": 36.6376,
+                "Tag": 389,
+                "ActionTag": 1684059057,
+                "Size": {
+                  "X": 247.0,
+                  "Y": 31.0
+                },
+                "Name": "stage_rank",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/gold_rank.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 247,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 461.0117,
+                  "Y": 52.1376
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7684,
+                  "Y": 0.5214
+                },
+                "PreSize": {
+                  "X": 0.4117,
+                  "Y": 0.31
+                },
+                "LeftMargin": 337.5117,
+                "RightMargin": 15.4883,
+                "TopMargin": 32.3624,
+                "BottomMargin": 36.6376,
+                "Tag": 390,
+                "ActionTag": 788911233,
+                "Size": {
+                  "X": 247.0,
+                  "Y": 31.0
+                },
+                "Name": "gold_rank",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 120.1807,
+                  "Y": 51.0215
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2003,
+                  "Y": 0.5102
+                },
+                "PreSize": {
+                  "X": 0.155,
+                  "Y": 0.2
+                },
+                "LeftMargin": 120.1807,
+                "RightMargin": 386.8193,
+                "TopMargin": 38.9785,
+                "BottomMargin": 41.0215,
+                "Tag": 605,
+                "ActionTag": -731661308,
+                "Size": {
+                  "X": 93.0,
+                  "Y": 20.0
+                },
+                "Name": "level_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/transformation.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 172,
+                "Scale9Height": 31,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 115.2229,
+                  "Y": 7.529
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.192,
+                  "Y": 0.0753
+                },
+                "PreSize": {
+                  "X": 0.3117,
+                  "Y": 0.31
+                },
+                "LeftMargin": 115.2229,
+                "RightMargin": 297.7771,
+                "TopMargin": 61.471,
+                "BottomMargin": 7.529,
+                "Tag": 27,
+                "ActionTag": -912661490,
+                "Size": {
+                  "X": 187.0,
+                  "Y": 31.0
+                },
+                "Name": "player_prestige",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 249.9644,
+                  "Y": 23.3011
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4166,
+                  "Y": 0.233
+                },
+                "PreSize": {
+                  "X": 0.0617,
+                  "Y": 0.2
+                },
+                "LeftMargin": 231.4644,
+                "RightMargin": 331.5356,
+                "TopMargin": 66.6989,
+                "BottomMargin": 13.3011,
+                "CallBackType": "Click",
+                "Tag": 606,
+                "ActionTag": -1027378603,
+                "Size": {
+                  "X": 37.0,
+                  "Y": 20.0
+                },
+                "Name": "prestige_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "LabelText": "99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white22-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 519.2379,
+                  "Y": 53.4915
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8654,
+                  "Y": 0.5349
+                },
+                "PreSize": {
+                  "X": 0.0783,
+                  "Y": 0.26
+                },
+                "LeftMargin": 495.7379,
+                "RightMargin": 57.2621,
+                "TopMargin": 33.5085,
+                "BottomMargin": 40.4915,
+                "Tag": 607,
+                "ActionTag": -1890154072,
+                "Size": {
+                  "X": 47.0,
+                  "Y": 26.0
+                },
+                "Name": "num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/Max_stage.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 81,
+                "Scale9Height": 29,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 156.1087,
+                  "Y": 21.4471
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2602,
+                  "Y": 0.2145
+                },
+                "PreSize": {
+                  "X": 0.135,
+                  "Y": 0.29
+                },
+                "LeftMargin": 115.6087,
+                "RightMargin": 403.3913,
+                "TopMargin": 64.0529,
+                "BottomMargin": 6.9471,
+                "Tag": 132,
+                "ActionTag": -15783237,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 29.0
+                },
+                "Name": "Max_stage",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/Max_gold.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 81,
+                "Scale9Height": 29,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 156.1087,
+                  "Y": 21.4471
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2602,
+                  "Y": 0.2145
+                },
+                "PreSize": {
+                  "X": 0.135,
+                  "Y": 0.29
+                },
+                "LeftMargin": 115.6087,
+                "RightMargin": 403.3913,
+                "TopMargin": 64.0529,
+                "BottomMargin": 6.9471,
+                "Tag": 133,
+                "ActionTag": -1753439383,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 29.0
+                },
+                "Name": "Max_gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white14-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 204.4388,
+                  "Y": 23.3423
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3407,
+                  "Y": 0.2334
+                },
+                "PreSize": {
+                  "X": 0.1367,
+                  "Y": 0.18
+                },
+                "LeftMargin": 204.4388,
+                "RightMargin": 313.5612,
+                "TopMargin": 67.6577,
+                "BottomMargin": 14.3423,
+                "Tag": 134,
+                "ActionTag": 1328050466,
+                "Size": {
+                  "X": 82.0,
+                  "Y": 18.0
+                },
+                "Name": "text",
+                "ctype": "TextBMFontObjectData"
+              }
+            ],
+            "ActionTag": 318411989,
+            "Size": {
+              "X": 600.0,
+              "Y": 100.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 600.0,
+          "Y": 100.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white14-export.fnt",
+        "font/white14-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white22-export.fnt",
+        "font/white22-export.png",
+        "mainUI/bg_05.png",
+        "mainUI/hero_icon.png",
+        "RankUI.plist",
+        "RankUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
