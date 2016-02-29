@@ -233,11 +233,10 @@ var PlayerData = {
     sumHeroesProp: function (prop, dead) {
         var val = 0;
         for (var i in this.heroes) {
-            //if (!dead && this.heroes[i].isDead()) {
-            //    continue;
-            //}
             var hero = this.heroes[i];
-            val += hero[prop]();
+            if (hero.getLv() > 0 && !hero.isDead()) {
+                val += hero[prop]();
+            }
         }
         return val;
     }
@@ -342,7 +341,7 @@ var PlayerData = {
             arrays.push(this.createResourceData(key, rewards[key]));
         }
         this.updateResource(arrays);
-        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,arrays);
+        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, arrays);
         player.not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};
     }
     ,
