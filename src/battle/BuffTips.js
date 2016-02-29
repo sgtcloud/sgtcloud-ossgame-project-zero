@@ -18,6 +18,7 @@ var Tip = cc.Layer.extend({
         var height = size.height;
         var width = size.width;
         this.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
+        this.tip.setTouchEnabled(false);
         scenen.addChild(this, zIndex || 102);
     },
     setString: function (text) {
@@ -71,7 +72,6 @@ var Tip = cc.Layer.extend({
 });
 var BuffLayer = cc.Class.extend({
     ctor: function () {
-        //this._super();
         var buffLayer = ccs.csLoader.createNode(res.buff_layer_json);
         this.root = buffLayer.getChildByName('root').clone();
         this.root.setTouchEnabled(false);

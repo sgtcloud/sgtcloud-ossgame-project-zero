@@ -9,23 +9,18 @@ var Hero = function (heroData) {
     for (var i in data.equips) {
         var equipId = data.equips[i];
         var equipCache = readEquipCache(equipId);
-        //var equipLv = (equip && equip['level']) || 1;
         equips.push(new Equip(equipId, equipCache));
     }
     customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
         var hero = data.getUserData();
         if (hero.getId() === this.getId()) {
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                player['time']['die'][this.getId()] = data;
-                PlayerData.updatePlayer();
-            }.bind(this));
+            PlayerData.updateHeroDeadTime(this.getId());
         }
     }.bind(this));
     customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {
         var hero = data.getUserData();
         if (hero.getId() === this.getId()) {
-            delete player['time']['die'][this.getId()];
-            PlayerData.updatePlayer();
+            PlayerData.clearHeroDeadTime(this.getId());
         }
     }.bind(this));
     for (var i in data.skills) {
@@ -75,7 +70,7 @@ var Hero = function (heroData) {
         //this.printHeroProps();
     };
     this.isDead = function () {
-        var dieTime = player['time']['die'][this.getId()];
+        var dieTime = PlayerData.getHeroDeadTime(this.getId());
         return typeof dieTime !== 'undefined' || !this.getCurrentLife() > 0;
     };
     this.hasSkill = function (skillId) {
@@ -303,6 +298,9 @@ var Hero = function (heroData) {
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
                 player.heroes[i]['lv'] = lv;
+                if(lv === 1){
+                    player.heroes[i].life = this.getLife();
+                }
                 break;
             }
         }

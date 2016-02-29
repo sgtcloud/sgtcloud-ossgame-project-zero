@@ -7,40 +7,40 @@
 			<key>coverUI/bg_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,47},{28,36}}</string>
+				<string>{{876,41},{28,36}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{28,36}</string>
 			</dict>
 			<key>coverUI/bg_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,83},{31,32}}</string>
+				<string>{{876,69},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{31,32}</string>
 			</dict>
 			<key>coverUI/bg_14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,0},{32,47}}</string>
+				<string>{{829,41},{32,47}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{32,47}</string>
 			</dict>
 			<key>coverUI/btn1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{300,0},{100,100}}</string>
+				<string>{{938,0},{80,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>coverUI/btn2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{300,100},{100,100}}</string>
+				<string>{{665,41},{100,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,9 +62,9 @@
 			<key>coverUI/logo.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{300,180}}</string>
+				<string>{{0,0},{297,179}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-2,1}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -73,9 +73,9 @@
 			<key>coverUI/text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{184,180},{84,47}}</string>
+				<string>{{765,41},{64,39}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{1,-1}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -84,9 +84,9 @@
 			<key>coverUI/text1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,301},{277,41}}</string>
+				<string>{{665,0},{273,41}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-1,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -95,7 +95,7 @@
 			<key>coverUI/yellow_btn_a.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,180},{184,74}}</string>
+				<string>{{297,0},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -106,7 +106,7 @@
 			<key>coverUI/yellow_btn_b.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{184,227},{184,74}}</string>
+				<string>{{481,0},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -124,14 +124,14 @@
 			<key>realTextureFileName</key>
 			<string>cover.png</string>
 			<key>size</key>
-			<string>{512,512}</string>
+			<string>{1018,179}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>512</integer>
+			<integer>1018</integer>
 			<key>height</key>
-			<integer>512</integer>
+			<integer>179</integer>
 		</dict>
 	</dict>
 </plist>
