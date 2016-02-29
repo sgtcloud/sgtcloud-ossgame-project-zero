@@ -11,7 +11,11 @@ var HeroListMenu = BattleMenu.extend({
         function setElement(elements, target, listener) {
             initView(target, elements, listener)
         }
-
+        //根据模板生成技能效果描述
+        function buildSkillDesc(skill, levelData) {
+            var effects = skill.traverseSkillEffects();
+            return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
+        }
         function initView(target, elements, listener) {
             if (target.isMaxLevel()) {
                 elements.upgrade_btn.layer.setVisible(false);
@@ -187,10 +191,7 @@ var HeroListMenu = BattleMenu.extend({
                 var dieHero = event.getUserData();
                 var heroId = dieHero.getId();
                 if (heroId === hero.getId()) {
-                    sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                        player['time']['die'][heroId] = data;
-                        PlayerData.updatePlayer();
-                    });
+                    PlayerData.updateHeroDeadTime(heroId);
                     elements.die_text.setVisible(true);
                     elements.die_time_text.setVisible(true);
                     elements.revive_btn.layer.setVisible(true);
@@ -229,8 +230,7 @@ var HeroListMenu = BattleMenu.extend({
                     die_time_text.setVisible(false);
                     elements.revive_btn.layer.setVisible(false);
                     elements.icon.setColor(cc.color(255, 255, 255));
-                    delete  player['time']['die'][heroId]
-                    PlayerData.updatePlayer();
+                    PlayerData.clearHeroDeadTime(heroId);
                     if (hero.isMaxLevel()) {
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(false);
                         elements.maxLevel_btn.layer.setVisible(true);
@@ -336,11 +336,7 @@ var HeroListMenu = BattleMenu.extend({
         var upgradeSkillLayoutTemp = skillTemp.getChildByName('upgrade_btn');
         var upgradeSkillBtnTemp = upgradeSkillLayoutTemp.getChildByName('btn');
         var upgradeSkillPosition = upgradeSkillLayoutTemp.getPosition();
-        //根据模板生成技能效果描述
-        function buildSkillDesc(skill, levelData) {
-            var effects = skill.traverseSkillEffects();
-            return buildDesc(effects, skill.getDesc(), {"duration": skill.getLevelData()['duration']});
-        }
+
         function buildSkillView(skill, hero) {
             var root = skillTemp.clone();
             var lock_btn = lockBtnTemplate.clone();

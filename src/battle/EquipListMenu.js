@@ -239,16 +239,13 @@ var EquipListMenu = BattleMenu.extend({
                 var upgradeBtn = upgradeLayer.getChildByName('btn');
                 refeshItemIcon(validateResourceNotEnough(upgradeCost, upgradeBtn, text), equip.getId());
                 customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function (event) {
-                    updateResource(equip, upgradeBtn, text, {unit: 'gold'});
+                    updateResource(equip, {unit: 'gold'}, upgradeBtn, text);
                 });
                 customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function (event) {
-                    updateResource(equip, upgradeBtn, text, {unit: 'gem'});
+                    updateResource(equip, {unit: 'gem'}, upgradeBtn, text);
                 });
                 customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function (event) {
-                    updateResource(equip, upgradeBtn, text, {unit: 'relic'});
-                });
-                customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function (event) {
-                    updateResource(equip, upgradeBtn, text);
+                    updateResource(equip, {unit: 'relic'}, upgradeBtn, text);
                 });
                 var elements = {};
                 elements.lock_btn = {};
@@ -297,6 +294,8 @@ var EquipListMenu = BattleMenu.extend({
                     if (equip.getType() === 0 && !equip.isMaxLevel() && canUnlockItem(hero, equip) && elements.lock_btn.layer.isVisible()) {
                         elements.lock_btn.layer.isVisible() && elements.lock_btn.layer.setVisible(false);
                         (!elements.upgrade_btn.layer.isVisible()) && elements.upgrade_btn.layer.setVisible(true);
+                        refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
+                        refeshItemIcon(validateResourceNotEnough(upgradeCost, upgradeBtn, text), equip.getId());
                     }
                 });
             }
@@ -312,15 +311,10 @@ var EquipListMenu = BattleMenu.extend({
             }
         }
 
-        function updateResource(equip, upgradeBtn, text, data) {
+        function updateResource(equip, data, upgradeBtn, text) {
             var cost = equip.getNextLevelUpgrade();
-            if (data) {
-                var unit = data['unit'];
-                if (cost['unit'] === unit) {
-                    refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text), equip.getId());
-                }
-            }else {
-                //PlayerData.getAmountByUnit(cost['unit'])
+            var unit = data['unit'];
+            if (cost['unit'] === unit) {
                 refeshItemIcon(validateResourceNotEnough(cost, upgradeBtn, text), equip.getId());
             }
         }

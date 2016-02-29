@@ -636,6 +636,6 @@ function buildDesc(effects, desc, extend) {
     if (extend) {
         effectsObj = $$.extend(effectsObj, extend);
     }
-    desc = desc.mapping(effectsObj)
+    var desc = desc.mapping(effectsObj)
     return desc;
 }

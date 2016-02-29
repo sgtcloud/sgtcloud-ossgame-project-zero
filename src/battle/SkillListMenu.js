@@ -148,11 +148,28 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
         } else {
             this.root.isVisible() && this.root.setVisible(false);
         }
+        /*function tryFire(levelData) {
+         if (!(isCoolDowning || heroDead)) {
+         that.showCooldown(levelData['cooldown']);
+         if (levelData['duration'] > 0) {
+         randomBuff = true;
+         toggleBufflayer(levelData['duration'], buildSkillBuffDesc(skill), that.skill.getIcon(), function () {
+         randomBuff = false;
+         });
+         }
+         customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+         } else if (isCoolDowning && !heroDead) {
+         console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+         } else if (heroDead) {
+         tip.toggle('英雄已死亡...');
+         }
+         }*/
         this.skill_icon.addClickEventListener(function () {
             var levelData = that.skill.getLevelData();
             if (!(heroDead || isCoolDowning) && randomBuff) {
                 tip.toggle('已使用相同效果的技能！');
             } else {
+                //tryFire(levelData);
                 if (!(isCoolDowning || heroDead)) {
                     that.showCooldown(levelData['cooldown']);
                     if (levelData['duration'] > 0) {
@@ -175,6 +192,7 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
         return typeof cdStartTime !== 'undefined';
     };
     this.showCooldown = function (cd) {
+        console.log(this.skill.getId() + '  show cooldown');
         if (typeof cd === 'undefined') {
             var cdtime = player['time']['cd'][this.skill.getId()];
             sgt.RouterService.getCurrentTimestamp(function (result, data) {
@@ -207,9 +225,21 @@ var SkillIcon = function (root, index, skillsBox, skill, hero) {
     this.setCoolTime = function (time) {
         this.time.setString(time);
     };
+    this.setEnabled = function (state) {
+    }
     this.init();
     this._bindListeners();
 };
+function getHeroActivtySkillls(hero) {
+    var skills = hero.getSkills();
+    var result = [];
+    for (var i in skills) {
+        if (skills[i].getType() === 1) {
+            result.push(skills[i]);
+        }
+    }
+    return result;
+}
 
 var BloodBox = function (root) {
     this.root = root.getChildByName('blood_box');
@@ -308,16 +338,6 @@ var SkillListMenu = BattleMenu.extend({
     ctor: function (tabPanel, battlePanel) {
         this._super(tabPanel, res.skill_layer_json);
 
-      var getHeroActivtySkillls = function (hero) {
-            var skills = hero.getSkills();
-            var result = [];
-            for (var i in skills) {
-                if (skills[i].getType() === 1) {
-                    result.push(skills[i]);
-                }
-            }
-            return result;
-        };
         /**
          * 初始化药品菜单
          */
@@ -335,6 +355,7 @@ var SkillListMenu = BattleMenu.extend({
             atk_text.setString(Math.floor(totalAttack));
         });
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
+        //var skills = [];
         var heroes = PlayerData.getHeroes();
         var index = 0;
         for (var q in heroes) {
