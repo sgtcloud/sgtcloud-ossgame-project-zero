@@ -41,16 +41,9 @@ var Loot = CCSUnit.extend({
             //cc.pool.putInPool(this);
             this.removeFromParent(true);
             if (this.bonus) {
-                PlayerData.updateResource([PlayerData.createResourceData(this.bonus.unit, this.bonus.value)]);
-                if (this.bonus.unit === "gold") {
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                } else if (this.bonus.unit === "gem") {
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                } else if (this.bonus.unit === "relic") {
-                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                } else {
-                    customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
-                }
+                var updateRes = PlayerData.createResourceData(this.bonus.unit, this.bonus.value);
+                PlayerData.updateResource(updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
                 cc.log(this.bonus.unit + ":" + this.bonus.value);
             }
         }.bind(this), this);

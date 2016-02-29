@@ -53,12 +53,13 @@ var ChestUnit = CCSUnit.extend({
                     "value": resValue
                 }), this.CHEST_LOOT_ZORDER_OFFET);
             }else if(this.goods.type === 2){
-                PlayerData.updateResource({
+                var updateRes = {
                     "unit": this.goods.skill_id,
                     "value": resValue
-                })
+                };
+                PlayerData.updateResource(updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
                 PlayerData.updatePlayer();
-                customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
             }
             tip.toggle({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
         } else {

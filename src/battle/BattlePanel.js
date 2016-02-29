@@ -49,19 +49,21 @@ var BattlePanel = cc.Node.extend({
             GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.PACK_VALUE_UPDATE, function () {
+        customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
+            var resources = data.getUserData();
+            if (!resources) {
+                return;
+            }
+            if (resources instanceof Array) {
+                for (var i = 0; i < resources.length; i++) {
+                    this.sendEventByUnit(resources[i]);
+                }
+            } else {
+                this.sendEventByUnit(resources);
+            }
             this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {
-            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
-        }.bind(this));
-        customEventHelper.bindListener(EVENT.GEM_VALUE_UPDATE, function () {
-            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
-        }.bind(this));
-        customEventHelper.bindListener(EVENT.RELIC_VALUE_UPDATE, function () {
-            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
-        }.bind(this));
         var container = root.getChildByName('battle_bg');
         container.setTouchEnabled(false);
         this.battleField = new BattleField(container);

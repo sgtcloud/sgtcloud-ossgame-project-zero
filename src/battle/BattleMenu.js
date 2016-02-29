@@ -599,8 +599,8 @@ var HeroListMenu = BattleMenu.extend({
                 if (hero.getCurrentLife() <= 0) {
                     var resurge = hero.getResurge();
                     var cost = {unit: resurge['cost'], value: -resurge['value']}
-                    PlayerData.updateResource([cost]);
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                    PlayerData.updateResource(cost);
+                    customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
                     customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                     PlayerData.updatePlayer();
                 }
@@ -994,22 +994,6 @@ var EquipListMenu = BattleMenu.extend({
             }
         }
 
-        customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
-            var data = event.getUserData();
-            var unit = data.unit;
-            var value = data.value;
-            switch (unit) {
-                case 'gold':
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    break;
-                case 'gem':
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    break;
-                case 'relic':
-                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    break;
-            }
-        });
         function randomEquip(hero) {
             var equips = hero.getEquips();
             var equipsList = [];
@@ -1176,13 +1160,6 @@ var EquipListMenu = BattleMenu.extend({
                 upgradeBtn.addClickEventListener(function (event) {
                     var cost = equip.getLevelData()['upgrade'];
                     equip.upgrade(hero);
-                    if (cost.unit === "gold") {
-                        customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    } else if (cost.unit === "gem") {
-                        customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    } else if (cost.unit === "relic") {
-                        customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    }
                     desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
                     lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
                     if (equip.isMaxLevel()) {
@@ -1389,10 +1366,10 @@ var ShopLayerMenu = BattleMenu.extend({
         this.buyGold = function (gem, gold, flag) {
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
-                PlayerData.updateResource([PlayerData.createResourceData("gold", gold)
-                    , PlayerData.createResourceData("gem", -gem)]);
-                customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                var updateRes =  [PlayerData.createResourceData("gold", gold)
+                    , PlayerData.createResourceData("gem", -gem)];
+                PlayerData.updateResource(updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
                 PlayerData.updatePlayer();
                 if (flag) {
                     return;
@@ -1471,19 +1448,13 @@ var ShopLayerMenu = BattleMenu.extend({
         this.buyGoods = function (goods) {
             var price = goods.price;
             if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
-                PlayerData.updateResource([PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)]);
-                if (price.unit === "gold") {
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                } else if (price.unit === "gem") {
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                } else if (price.unit === "relic") {
-                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                }
-                customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
+                var updateRes = [PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)];
+                PlayerData.updateResource(updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
                 tip.toggle({
                     'beforeShow':[
                         cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
-                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + '花费'+ CONSTS.resources_mapping[price.unit] + " * " + price.value
+                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 '+ CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
                 PlayerData.updatePlayer();
             } else {
