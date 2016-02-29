@@ -73,7 +73,7 @@ var player = {
         {
             "id": "h101",
             "lv": 1,
-            "life": 0,
+            "life": 200,
             "star": 0,
             "skills": {
                 //"技能ID":{"leve":""}
@@ -159,8 +159,8 @@ var PlayerData = {
         }
         if (!player.first_time) {
             //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                player.first_time = serverCurrentTime;
-                //console.log('同步服务器时间：' + data);
+            player.first_time = serverCurrentTime;
+            //console.log('同步服务器时间：' + data);
             //});
             //player.first_time = Date.parse(new Date());
         }
@@ -177,10 +177,9 @@ var PlayerData = {
                 });
                 this.sequence = [];
             }
-        }.bind(this), 60 * 1000);
             //同步服务器时间 校正服务器本地时间
             syncTime();
-        }.bind(this),600 * 1000);
+        }.bind(this), 600 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -289,8 +288,8 @@ var PlayerData = {
     ,
     updateIntoBattleTime: function () {
         //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-            player.into_stage_battle_timestamp = serverCurrentTime;
-            //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
+        player.into_stage_battle_timestamp = serverCurrentTime;
+        //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
         //});
         //player.into_stage_battle_timestamp = Date.parse(new Date());
         //this.updatePlayer();

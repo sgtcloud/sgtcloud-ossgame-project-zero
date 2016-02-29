@@ -251,6 +251,10 @@ var BattleField = cc.Class.extend({
         }
     },
 
+    isAllHeroesDead : function () {
+
+    },
+
     totalSprites: 0,
 
     addSprite: function (sprite, zorder) {
