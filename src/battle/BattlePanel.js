@@ -54,14 +54,19 @@ var BattlePanel = cc.Node.extend({
             if (!resources) {
                 return;
             }
+            //如果是有增有减资源 也禁止背包按钮动画
             if (resources instanceof Array) {
                 for (var i = 0; i < resources.length; i++) {
-                    this.sendEventByUnit(resources[i]);
+                    if(cc.isNumber(resources.value) && resources.value > 0 ){
+                        this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+                        break;
+                    }
                 }
             } else {
-                this.sendEventByUnit(resources);
+                if(cc.isNumber(resources.value) && resources.value > 0 ){
+                    this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+                }
             }
-            this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
         }.bind(this));
 
         var container = root.getChildByName('battle_bg');
