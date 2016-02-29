@@ -221,11 +221,11 @@ function getHeroActivtySkillls(hero) {
 }
 
 var BloodBox = cc.Class.extend({
-    ctor: function (root) {
+    ctor: function (root,battlePanel) {
         this.root = root.getChildByName('blood_box');
-        this.init();
+        this.init(battlePanel);
     },
-    init: function () {
+    init: function (battlePanel) {
         this.smallBtn = this.root.getChildByName('small_btn');
         this.smallText = this.root.getChildByName('small_text');
         this.middleBtn = this.root.getChildByName('middle_btn');
@@ -308,6 +308,18 @@ var BloodBox = cc.Class.extend({
             updateNum(that.middleText, player.resource.middle_blood || (player.resource.middle_blood = 100), that.middleBtn);
             updateNum(that.largeText, player.resource.large_blood || (player.resource.large_blood = 100), that.largeBtn);
         }
+        customEventHelper.bindListener(EVENT.HERO_DIE,function(){
+            if(battlePanel.battleField.isAllHeroesDead()){
+                this.smallBtn.setEnable(false);
+                this.middleBtn.setEnable(false);
+                this.largeBtn.setEnable(false);
+            }
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.HERO_REVIVE,function(){
+            this.smallBtn.setEnable(true);
+            this.middleBtn.setEnable(true);
+            this.largeBtn.setEnable(true);
+        }.bind(this));
         refreshNum();
         initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
         initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
@@ -321,7 +333,7 @@ var SkillListMenu = BattleMenu.extend({
         /**
          * 初始化药品菜单
          */
-        new BloodBox(this.root);
+        new BloodBox(this.root,battlePanel);
         this.skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
         var atk_text = this.root.getChildByName('atk_text');
