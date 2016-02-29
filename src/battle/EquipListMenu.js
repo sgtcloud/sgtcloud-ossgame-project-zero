@@ -21,6 +21,7 @@ var EquipListMenu = BattleMenu.extend({
         var basic = 3;
         var nextValue = 0;
         var difValue = 5;
+
         function buildMagicalEquips(hero) {
             var title = title_root.getChildByName('title');
             var buy_btn = title_root.getChildByName('buy_btn')
@@ -80,21 +81,21 @@ var EquipListMenu = BattleMenu.extend({
         }
 
         /*customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
-            var data = event.getUserData();
-            var unit = data.unit;
-            var value = data.value;
-            switch (unit) {
-                case 'gold':
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    break;
-                case 'gem':
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    break;
-                case 'relic':
-                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    break;
-            }
-        });*/
+         var data = event.getUserData();
+         var unit = data.unit;
+         var value = data.value;
+         switch (unit) {
+         case 'gold':
+         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+         break;
+         case 'gem':
+         customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+         break;
+         case 'relic':
+         customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+         break;
+         }
+         });*/
         function randomEquip(hero) {
             var equips = hero.getEquips();
             var equipsList = [];
@@ -258,12 +259,10 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn.level_text = lockLayer.getChildByName('level_text');
                 elements.lock_btn.level_text.ignoreContentAdaptWithSize(true);
                 elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
-                customEventHelper.bindListener(EVENT.UPDATE_RESOURCE,function(event){
-                    var data=event.getUserData();
+                customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
+                    //var data = event.getUserData();
                     var nextCost = equip.getNextLevelUpgrade();
-                    if(data['unit']===nextCost['unit']){
-                        validateResourceNotEnough(nextCost, upgradeBtn, text);
-                    }
+                    validateResourceNotEnough(nextCost, upgradeBtn, text);
                 });
                 upgradeBtn.addClickEventListener(function (event) {
                     equip.upgrade(hero);
