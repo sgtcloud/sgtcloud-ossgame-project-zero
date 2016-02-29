@@ -2,6 +2,7 @@
   "name": "sgtcloud-ossgame-project-zero",
   "version": "0.0.3",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.2",
     "gulp-concat": "^2.6.0",

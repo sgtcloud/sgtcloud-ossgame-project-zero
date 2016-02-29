@@ -73,7 +73,7 @@ var player = {
         {
             "id": "h101",
             "lv": 1,
-            "life": 0,
+            "life": 200,
             "star": 0,
             "skills": {
                 //"技能ID":{"leve":""}
@@ -154,9 +154,9 @@ var PlayerData = {
     initPlayerData: function (save) {
         for (var i in player.heroes) {
             this.heroes.push(new Hero(player.heroes[i]));
-            if (!save) {
-                player.heroes[i].life = this.heroes[i].getLife();
-            }
+            //if (!save) {
+            //    player.heroes[i].life = this.heroes[i].getLife();
+            //}
         }
         if (!player.first_time) {
             //sgt.RouterService.getCurrentTimestamp(function (result, data) {
@@ -352,6 +352,23 @@ var PlayerData = {
     getServerTime: function () {
         return this.serverCurrentTime;
     },
+
+    getHeroDeadTime: function (id) {
+        return player['time']['die'][id];
+    },
+
+    clearHeroDeadTime: function (id) {
+        delete player['time']['die'][id];
+        PlayerData.updatePlayer();
+    },
+
+    updateHeroDeadTime: function (id) {
+        sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            player['time']['die'][id] = data;
+            PlayerData.updatePlayer();
+        });
+    },
+
     heroes: [],
     stageData: {},
     globe_life_value: 0,
