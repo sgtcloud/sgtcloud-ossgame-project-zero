@@ -1,0 +1,239 @@
+{
+  "ID": "486062c7-f461-4f08-afea-1400b5055ca5",
+  "Version": "2.3.3.0",
+  "Name": "Btn_Lock",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 76,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 211,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "DisplayState": false,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 212,
+                "ActionTag": -414051498,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "LabelText": "Lv.99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.009,
+                  "Y": 60.753
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5429,
+                  "Y": 0.7594
+                },
+                "PreSize": {
+                  "X": 0.5357,
+                  "Y": 0.25
+                },
+                "LeftMargin": 38.509,
+                "RightMargin": 26.491,
+                "TopMargin": 9.247,
+                "BottomMargin": 50.753,
+                "Tag": 17,
+                "ActionTag": 235483224,
+                "Size": {
+                  "X": 75.0,
+                  "Y": 20.0
+                },
+                "Name": "level_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/lock.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "Scale9Width": 36,
+                "Scale9Height": 49,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 74.8404,
+                  "Y": 31.0503
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5346,
+                  "Y": 0.3881
+                },
+                "PreSize": {
+                  "X": 0.2071,
+                  "Y": 0.4
+                },
+                "LeftMargin": 60.3404,
+                "RightMargin": 50.6596,
+                "TopMargin": 32.9497,
+                "BottomMargin": 15.0503,
+                "Tag": 216,
+                "ActionTag": -1008319939,
+                "Size": {
+                  "X": 29.0,
+                  "Y": 32.0
+                },
+                "Name": "lock",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1233402080,
+            "Size": {
+              "X": 140.0,
+              "Y": 80.0
+            },
+            "Name": "btn",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 80.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "HeroUI.plist",
+        "HeroUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
