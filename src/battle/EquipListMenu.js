@@ -81,21 +81,21 @@ var EquipListMenu = BattleMenu.extend({
         }
 
         /*customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
-            var data = event.getUserData();
-            var unit = data.unit;
-            var value = data.value;
-            switch (unit) {
-                case 'gold':
-                    customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    break;
-                case 'gem':
-                    customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    break;
-                case 'relic':
-                    customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    break;
-            }
-        });*/
+         var data = event.getUserData();
+         var unit = data.unit;
+         var value = data.value;
+         switch (unit) {
+         case 'gold':
+         customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
+         break;
+         case 'gem':
+         customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+         break;
+         case 'relic':
+         customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
+         break;
+         }
+         });*/
         function randomEquip(hero) {
             var equips = hero.getEquips();
             var equipsList = [];
@@ -259,16 +259,13 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn.level_text = lockLayer.getChildByName('level_text');
                 elements.lock_btn.level_text.ignoreContentAdaptWithSize(true);
                 elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
+                customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (event) {
+                    //var data = event.getUserData();
+                    var nextCost = equip.getNextLevelUpgrade();
+                    validateResourceNotEnough(nextCost, upgradeBtn, text);
+                });
                 upgradeBtn.addClickEventListener(function (event) {
-                    //var cost = equip.getLevelData()['upgrade'];
                     equip.upgrade(hero);
-                    /*if (cost.unit === "gold") {
-                        customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    } else if (cost.unit === "gem") {
-                        customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    } else if (cost.unit === "relic") {
-                        customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    }*/
                     desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
                     lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
                     if (equip.isMaxLevel()) {

@@ -1,0 +1,281 @@
+{
+  "ID": "842d98a5-3cf0-4948-8227-51a9af93f946",
+  "Version": "2.3.3.0",
+  "Name": "Btn_Upgrade2",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 426,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 427,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn2.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "heroUI/btn1.png",
+                  "Plist": "HeroUI.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 110,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 428,
+                "ActionTag": -1197589147,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "LabelText": "999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white14-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 79.7141,
+                  "Y": 57.3534
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5694,
+                  "Y": 0.7169
+                },
+                "PreSize": {
+                  "X": 0.35,
+                  "Y": 0.225
+                },
+                "LeftMargin": 55.2141,
+                "RightMargin": 35.7859,
+                "TopMargin": 13.6466,
+                "BottomMargin": 48.3534,
+                "Tag": 209,
+                "ActionTag": -2101152473,
+                "Size": {
+                  "X": 49.0,
+                  "Y": 18.0
+                },
+                "Name": "text_yellow",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "equipUI/relic.png",
+                  "Plist": "EquipUI.plist"
+                },
+                "Scale9Width": 40,
+                "Scale9Height": 40,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 30.9829,
+                  "Y": 49.3194
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2213,
+                  "Y": 0.6165
+                },
+                "PreSize": {
+                  "X": 0.1071,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 30.9829,
+                "RightMargin": 94.0171,
+                "TopMargin": 15.6806,
+                "BottomMargin": 49.3194,
+                "Tag": 436,
+                "ActionTag": -1123589743,
+                "Size": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Name": "icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "buttonUI/upLevel.png",
+                  "Plist": "ButtonUI.plist"
+                },
+                "Scale9Width": 66,
+                "Scale9Height": 34,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 76.0001,
+                  "Y": 30.2067
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5429,
+                  "Y": 0.3776
+                },
+                "PreSize": {
+                  "X": 0.4714,
+                  "Y": 0.425
+                },
+                "LeftMargin": 43.0001,
+                "RightMargin": 30.9999,
+                "TopMargin": 32.7933,
+                "BottomMargin": 13.2067,
+                "Tag": 438,
+                "ActionTag": -1963500702,
+                "Size": {
+                  "X": 66.0,
+                  "Y": 34.0
+                },
+                "Name": "up_text",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1214768827,
+            "Size": {
+              "X": 140.0,
+              "Y": 80.0
+            },
+            "Name": "btn",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 80.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ButtonUI.plist",
+        "ButtonUI.png",
+        "EquipUI.plist",
+        "EquipUI.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
+        "HeroUI.plist",
+        "HeroUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

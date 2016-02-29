@@ -1,0 +1,202 @@
+{
+  "ID": "147b5568-876a-4720-9224-bfb97fc5ac89",
+  "Version": "2.3.3.0",
+  "Name": "ShopListView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 994,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 1110,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ShopIconLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 13.9999,
+                  "Y": 0.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0236,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.303,
+                  "Y": 1.0
+                },
+                "LeftMargin": 13.9999,
+                "RightMargin": 400.0001,
+                "TopMargin": -0.0001,
+                "BottomMargin": 0.0001,
+                "Tag": 1111,
+                "ActionTag": -299628492,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 280.0
+                },
+                "Name": "item1",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ShopIconLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 206.4999,
+                  "Y": 0.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.3476,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.303,
+                  "Y": 1.0
+                },
+                "LeftMargin": 206.4999,
+                "RightMargin": 207.5001,
+                "TopMargin": -0.0001,
+                "BottomMargin": 0.0001,
+                "Tag": 1150,
+                "ActionTag": 419584036,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 280.0
+                },
+                "Name": "item2",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "ShopIconLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 398.9998,
+                  "Y": 0.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.6717,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.303,
+                  "Y": 1.0
+                },
+                "LeftMargin": 398.9998,
+                "RightMargin": 15.0002,
+                "TopMargin": -0.0001,
+                "BottomMargin": 0.0001,
+                "Tag": 1170,
+                "ActionTag": 245619892,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 280.0
+                },
+                "Name": "item3",
+                "ctype": "ProjectNodeObjectData"
+              }
+            ],
+            "ActionTag": -441691917,
+            "Size": {
+              "X": 594.0,
+              "Y": 280.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 594.0,
+          "Y": 280.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ShopIconLayer.json"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,1751 @@
+{
+  "ID": "3b1ae967-acda-4733-bf2b-f73a3c303123",
+  "Version": "2.3.3.0",
+  "Name": "PackLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 45,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 1.7448,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0027,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 1.7448,
+            "RightMargin": -1.7448,
+            "Tag": 124,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_01.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 25,
+                "Scale9OriginY": 25,
+                "Scale9Width": 28,
+                "Scale9Height": 28,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 126,
+                "ActionTag": 2047028236,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 740.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 17.1343,
+                  "Y": 662.4153
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0268,
+                  "Y": 0.8952
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.0811
+                },
+                "LeftMargin": 17.1343,
+                "RightMargin": 12.8657,
+                "TopMargin": 17.5847,
+                "BottomMargin": 662.4153,
+                "CallBackType": "Touch",
+                "Tag": 381,
+                "ActionTag": 1192828670,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 60.0
+                },
+                "Name": "title_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "packUI/title.png",
+                  "Plist": "PackUI.plist"
+                },
+                "Scale9Width": 129,
+                "Scale9Height": 58,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 322.1343,
+                  "Y": 692.4153
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5033,
+                  "Y": 0.9357
+                },
+                "PreSize": {
+                  "X": 0.2016,
+                  "Y": 0.0784
+                },
+                "LeftMargin": 257.6343,
+                "RightMargin": 253.3657,
+                "TopMargin": 18.5847,
+                "BottomMargin": 663.4153,
+                "Tag": 541,
+                "ActionTag": 2068607568,
+                "Size": {
+                  "X": 129.0,
+                  "Y": 58.0
+                },
+                "Name": "title_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 220.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.2973
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.5878
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 85.0,
+                "BottomMargin": 220.0,
+                "Tag": 542,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_05.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 6,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 543,
+                    "ActionTag": 220585410,
+                    "Size": {
+                      "X": 610.0,
+                      "Y": 435.0
+                    },
+                    "Name": "pack_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/wood.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 387.4031
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.8906
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 27.5969,
+                    "BottomMargin": 367.4031,
+                    "Tag": 544,
+                    "ActionTag": -1026000937,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "wood_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/leather.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2337,
+                      "Y": 390.1931
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.897
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2337,
+                    "RightMargin": 213.7663,
+                    "TopMargin": 24.8069,
+                    "BottomMargin": 370.1931,
+                    "Tag": 545,
+                    "ActionTag": 1141031262,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "leather_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/stone.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 323.6595
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.744
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 91.3405,
+                    "BottomMargin": 303.6595,
+                    "Tag": 546,
+                    "ActionTag": 1325302991,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "stone_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/bronze.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2338,
+                      "Y": 324.3857
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.7457
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2338,
+                    "RightMargin": 213.7662,
+                    "TopMargin": 90.6143,
+                    "BottomMargin": 304.3857,
+                    "Tag": 547,
+                    "ActionTag": -426089835,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "bronze_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/iron.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 259.9158
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.5975
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 155.0842,
+                    "BottomMargin": 239.9158,
+                    "Tag": 548,
+                    "ActionTag": -1603224587,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "iron_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/crystal.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 375.5457,
+                      "Y": 258.578
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6156,
+                      "Y": 0.5944
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 355.5457,
+                    "RightMargin": 214.4543,
+                    "TopMargin": 156.422,
+                    "BottomMargin": 238.578,
+                    "Tag": 549,
+                    "ActionTag": -600212037,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "crystal_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/rune.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 94.7393,
+                      "Y": 196.1722
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1553,
+                      "Y": 0.451
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 74.7393,
+                    "RightMargin": 495.2607,
+                    "TopMargin": 218.8278,
+                    "BottomMargin": 176.1722,
+                    "Tag": 550,
+                    "ActionTag": -575278022,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "rune_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/essence.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 376.2337,
+                      "Y": 192.7706
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6168,
+                      "Y": 0.4432
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.092
+                    },
+                    "LeftMargin": 356.2337,
+                    "RightMargin": 213.7663,
+                    "TopMargin": 222.2294,
+                    "BottomMargin": 172.7706,
+                    "Tag": 551,
+                    "ActionTag": 1684738592,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "essence_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 128.819,
+                      "Y": 387.4937
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2112,
+                      "Y": 0.8908
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 128.819,
+                    "RightMargin": 340.181,
+                    "TopMargin": 36.5063,
+                    "BottomMargin": 376.4937,
+                    "Tag": 516,
+                    "ActionTag": -1772376099,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "wood_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 128.819,
+                      "Y": 325.0169
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2112,
+                      "Y": 0.7472
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 128.819,
+                    "RightMargin": 340.181,
+                    "TopMargin": 98.9831,
+                    "BottomMargin": 314.0169,
+                    "Tag": 517,
+                    "ActionTag": 276940562,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "stone_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 128.819,
+                      "Y": 261.5402
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2112,
+                      "Y": 0.6012
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 128.819,
+                    "RightMargin": 340.181,
+                    "TopMargin": 162.4598,
+                    "BottomMargin": 250.5402,
+                    "Tag": 518,
+                    "ActionTag": -845095618,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "iron_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 128.819,
+                      "Y": 198.0633
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2112,
+                      "Y": 0.4553
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 128.819,
+                    "RightMargin": 340.181,
+                    "TopMargin": 225.9367,
+                    "BottomMargin": 187.0633,
+                    "Tag": 519,
+                    "ActionTag": 1119241286,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "rune_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 414.7154,
+                      "Y": 389.877
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6799,
+                      "Y": 0.8963
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 414.7154,
+                    "RightMargin": 54.2846,
+                    "TopMargin": 34.123,
+                    "BottomMargin": 378.877,
+                    "Tag": 520,
+                    "ActionTag": -1617725047,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "leather_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 414.7154,
+                      "Y": 324.8254
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6799,
+                      "Y": 0.7467
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 414.7154,
+                    "RightMargin": 54.2846,
+                    "TopMargin": 99.1746,
+                    "BottomMargin": 313.8254,
+                    "Tag": 521,
+                    "ActionTag": 1701326137,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "bronze_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 414.7154,
+                      "Y": 259.7739
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6799,
+                      "Y": 0.5972
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 414.7154,
+                    "RightMargin": 54.2846,
+                    "TopMargin": 164.2261,
+                    "BottomMargin": 248.7739,
+                    "Tag": 522,
+                    "ActionTag": -1162336589,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "crystal_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white18-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 414.7154,
+                      "Y": 194.7223
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6799,
+                      "Y": 0.4476
+                    },
+                    "PreSize": {
+                      "X": 0.2311,
+                      "Y": 0.0506
+                    },
+                    "LeftMargin": 414.7154,
+                    "RightMargin": 54.2846,
+                    "TopMargin": 229.2777,
+                    "BottomMargin": 183.7223,
+                    "Tag": 523,
+                    "ActionTag": 682057196,
+                    "Size": {
+                      "X": 141.0,
+                      "Y": 22.0
+                    },
+                    "Name": "essence_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 1044177206,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 435.0
+                },
+                "Name": "pack",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 15.0,
+                  "Y": 15.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0234,
+                  "Y": 0.0203
+                },
+                "PreSize": {
+                  "X": 0.9531,
+                  "Y": 0.2703
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 525.0,
+                "BottomMargin": 15.0,
+                "Tag": 529,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_04.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 5,
+                    "Scale9Height": 6,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 528,
+                    "ActionTag": -197868592,
+                    "Size": {
+                      "X": 610.0,
+                      "Y": 200.0
+                    },
+                    "Name": "chest_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/golden_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/golden_chest_2.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/golden_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5526,
+                      "ScaleY": 0.5465
+                    },
+                    "Position": {
+                      "X": 124.0679,
+                      "Y": 102.6189
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2034,
+                      "Y": 0.5131
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 85.3859,
+                    "RightMargin": 454.6141,
+                    "TopMargin": 65.6361,
+                    "BottomMargin": 64.3639,
+                    "Tag": 530,
+                    "ActionTag": 404816974,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "golden_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/silver_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/silver_chest_2.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/silver_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 301.3458,
+                      "Y": 97.7319
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.494,
+                      "Y": 0.4887
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 266.3458,
+                    "RightMargin": 273.6542,
+                    "TopMargin": 67.2681,
+                    "BottomMargin": 62.7319,
+                    "Tag": 531,
+                    "ActionTag": -1638292713,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "silver_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/iron_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/iron_chest_2.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/iron_chest_1.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 40,
+                    "Scale9Height": 48,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 484.1522,
+                      "Y": 97.7319
+                    },
+                    "Scale": {
+                      "ScaleX": 1.5,
+                      "ScaleY": 1.5
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7937,
+                      "Y": 0.4887
+                    },
+                    "PreSize": {
+                      "X": 0.1148,
+                      "Y": 0.35
+                    },
+                    "LeftMargin": 449.1522,
+                    "RightMargin": 90.8478,
+                    "TopMargin": 67.2681,
+                    "BottomMargin": 62.7319,
+                    "Tag": 532,
+                    "ActionTag": 1100654773,
+                    "Size": {
+                      "X": 70.0,
+                      "Y": 70.0
+                    },
+                    "Name": "iron_chest_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/golden_key.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 95.8198,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1571,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 75.8198,
+                    "RightMargin": 494.1802,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 533,
+                    "ActionTag": -487854351,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "golden_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/silver_key.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 281.6671,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4617,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 261.6671,
+                    "RightMargin": 308.3329,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 534,
+                    "ActionTag": 70902381,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "silver_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "materialUI/iron_key.png",
+                      "Plist": "MaterialUI.plist"
+                    },
+                    "Scale9Width": 40,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 468.2184,
+                      "Y": 28.3379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7676,
+                      "Y": 0.1417
+                    },
+                    "PreSize": {
+                      "X": 0.0656,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 448.2184,
+                    "RightMargin": 121.7816,
+                    "TopMargin": 151.6621,
+                    "BottomMargin": 8.3379,
+                    "Tag": 535,
+                    "ActionTag": 1113330948,
+                    "Size": {
+                      "X": 40.0,
+                      "Y": 40.0
+                    },
+                    "Name": "iron_key_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "packUI/chest.png",
+                      "Plist": "PackUI.plist"
+                    },
+                    "Scale9Width": 165,
+                    "Scale9Height": 35,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 305.0,
+                      "Y": 175.7101
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.8786
+                    },
+                    "PreSize": {
+                      "X": 0.2705,
+                      "Y": 0.175
+                    },
+                    "LeftMargin": 222.5,
+                    "RightMargin": 222.5,
+                    "TopMargin": 6.7899,
+                    "BottomMargin": 158.2101,
+                    "Tag": 540,
+                    "ActionTag": 972162908,
+                    "Size": {
+                      "X": 165.0,
+                      "Y": 35.0
+                    },
+                    "Name": "open_text",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white16-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 117.3994,
+                      "Y": 28.3265
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1925,
+                      "Y": 0.1416
+                    },
+                    "PreSize": {
+                      "X": 0.0607,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": 117.3994,
+                    "RightMargin": 455.6006,
+                    "TopMargin": 161.6735,
+                    "BottomMargin": 18.3265,
+                    "Tag": 524,
+                    "ActionTag": 878222408,
+                    "Size": {
+                      "X": 37.0,
+                      "Y": 20.0
+                    },
+                    "Name": "golden_key_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white16-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 304.975,
+                      "Y": 28.3265
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.1416
+                    },
+                    "PreSize": {
+                      "X": 0.0607,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": 304.975,
+                    "RightMargin": 268.025,
+                    "TopMargin": 161.6735,
+                    "BottomMargin": 18.3265,
+                    "Tag": 525,
+                    "ActionTag": 2042401179,
+                    "Size": {
+                      "X": 37.0,
+                      "Y": 20.0
+                    },
+                    "Name": "silver_key_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white16-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 491.5031,
+                      "Y": 28.3265
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 10,
+                      "G": 245,
+                      "B": 20
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8057,
+                      "Y": 0.1416
+                    },
+                    "PreSize": {
+                      "X": 0.0607,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": 491.5031,
+                    "RightMargin": 81.4969,
+                    "TopMargin": 161.6735,
+                    "BottomMargin": 18.3265,
+                    "Tag": 526,
+                    "ActionTag": -257882934,
+                    "Size": {
+                      "X": 37.0,
+                      "Y": 20.0
+                    },
+                    "Name": "iron_key_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white14-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 155.1958,
+                      "Y": 62.6461
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2544,
+                      "Y": 0.3132
+                    },
+                    "PreSize": {
+                      "X": 0.0541,
+                      "Y": 0.09
+                    },
+                    "LeftMargin": 155.1958,
+                    "RightMargin": 421.8042,
+                    "TopMargin": 128.3539,
+                    "BottomMargin": 53.6461,
+                    "Tag": 527,
+                    "ActionTag": 1788448717,
+                    "Size": {
+                      "X": 33.0,
+                      "Y": 18.0
+                    },
+                    "Name": "golden_chest_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white14-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 338.0425,
+                      "Y": 62.6461
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5542,
+                      "Y": 0.3132
+                    },
+                    "PreSize": {
+                      "X": 0.0541,
+                      "Y": 0.09
+                    },
+                    "LeftMargin": 338.0425,
+                    "RightMargin": 238.9575,
+                    "TopMargin": 128.3539,
+                    "BottomMargin": 53.6461,
+                    "Tag": 528,
+                    "ActionTag": -215133678,
+                    "Size": {
+                      "X": 33.0,
+                      "Y": 18.0
+                    },
+                    "Name": "silver_chest_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white14-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 522.2303,
+                      "Y": 62.6461
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 165,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8561,
+                      "Y": 0.3132
+                    },
+                    "PreSize": {
+                      "X": 0.0541,
+                      "Y": 0.09
+                    },
+                    "LeftMargin": 522.2303,
+                    "RightMargin": 54.7697,
+                    "TopMargin": 128.3539,
+                    "BottomMargin": 53.6461,
+                    "Tag": 529,
+                    "ActionTag": -688262608,
+                    "Size": {
+                      "X": 33.0,
+                      "Y": 18.0
+                    },
+                    "Name": "iron_chest_num_text",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 1143761586,
+                "Size": {
+                  "X": 610.0,
+                  "Y": 200.0
+                },
+                "Name": "chest",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 2016724076,
+            "Size": {
+              "X": 640.0,
+              "Y": 740.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 740.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white14-export.fnt",
+        "font/white14-export.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
+        "mainUI/bg_01.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_05.png",
+        "MaterialUI.plist",
+        "MaterialUI.png",
+        "PackUI.plist",
+        "PackUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

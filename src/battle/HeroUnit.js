@@ -154,6 +154,7 @@ var HeroUnit = BattleUnit.extend({
                 this.onDead(recoverTime / 1000);
             }else {
                 PlayerData.clearHeroDeadTime(this.hero.getId());
+                this.onRevive();
             }
         }
     }
