@@ -20,8 +20,8 @@ var EnemyUnit = BattleUnit.extend({
         }
     },
 
-    onDamaged: function () {
-        this._super();
+    onDamaged: function (dmg) {
+        this._super(dmg);
         this.battle.updateEnemyLife();
     },
 
