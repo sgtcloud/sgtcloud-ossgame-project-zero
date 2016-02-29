@@ -251,8 +251,14 @@ var BattleField = cc.Class.extend({
         }
     },
 
-    isAllHeroesDead : function () {
-
+    isAllHeroesDead: function () {
+        var deadHeroNum = 0;
+        for (var i in this.heroUnits) {
+            if (this.heroUnits[i].isDead()) {
+                deadHeroNum++;
+            }
+        }
+        return deadHeroNum === this.heroUnits.length;
     },
 
     totalSprites: 0,
