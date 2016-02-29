@@ -1,6 +1,6 @@
 var MenuBtn = function (btn) {
     this.button = btn.getChildByName('btn');
-}
+};
 //UI的Menu父类
 var BattleMenu = cc.Node.extend({
     ctor: function (tabPanel, res) {
