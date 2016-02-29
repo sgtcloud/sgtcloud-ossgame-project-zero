@@ -575,6 +575,9 @@
         <Project Name="SmallItemLayer.csd" Type="Layer" />
         <Project Name="Guide.csd" Type="Layer" />
         <Project Name="GuideGirl.csd" Type="Node" />
+        <Project Name="SignLayer.csd" Type="Layer" />
+        <Project Name="SignView.csd" Type="Layer" />
+        <Project Name="SignIcon.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
