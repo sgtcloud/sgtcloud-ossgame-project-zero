@@ -144,15 +144,16 @@ var HeroUnit = BattleUnit.extend({
 
     onEnter: function () {
         this._super();
-
         if (this.hero.getCurrentLife() <= 0) {
             var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
             // todo make the current time to be a certain server time
             var currentTime = PlayerData.getServerTime();
-            var recoverTime = currentTime - dieTime - this.hero.getRecover() * 1000;
+            var recoverTime = this.hero.getRecover() * 1000-(currentTime - dieTime );
             if (recoverTime > 0) {
                 // convert millisecond to second
                 this.onDead(recoverTime / 1000);
+            }else {
+                PlayerData.clearHeroDeadTime(this.hero.getId());
             }
         }
     }

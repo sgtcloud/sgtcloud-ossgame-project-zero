@@ -347,7 +347,7 @@ function openNewNameLayer(scene) {
                 tip2.stopAllActions();
                 tip2.setVisible(false);
                 scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
-            })
+            });
         } else {
             Popup.openPopup("友情提醒", "角色名字格式不正确");
         }
@@ -614,4 +614,28 @@ function syncTime(){
             console.error('同步服务器时间失败');
         }
     });
+}
+/**
+ * 从模板中解析描述文案
+ *
+ * @param effects 技能/装备效果
+ * @param desc 带有模板的描述
+ * @param extend 要继承的父json
+ * @returns {*}
+ */
+function buildDesc(effects, desc, extend) {
+    var effectsObj = {};
+    for (var i in effects) {
+        var map = SkillEffectMappings[effects[i]['type']];
+        var alas = map['name'];
+        var value = effects[i]['value'].toFixed(map['fixed']);
+        effectsObj[effects[i]['name']] = {}
+        effectsObj[effects[i]['name']]['name'] = alas;
+        effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
+    }
+    if (extend) {
+        effectsObj = $$.extend(effectsObj, extend);
+    }
+    var desc = desc.mapping(effectsObj)
+    return desc;
 }
