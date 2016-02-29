@@ -1,7 +1,6 @@
 var game;
 var quickLoginfalg = false;
 var logErrorFalg = false;
-var serverCurrentTime = 0 ;
 var $$ = {};
 $$.extend = function (a, b) {
     if (typeof (b) === "undefined") {
@@ -609,7 +608,7 @@ function syncTime(){
     sgt.RouterService.getCurrentTimestamp(function (result, data) {
         //player.first_time = data;
         if(result){
-            serverCurrentTime = data;
+            PlayerData.serverCurrentTime = data;
             console.log('同步服务器时间：' + data);
         }else{
             console.error('同步服务器时间失败');

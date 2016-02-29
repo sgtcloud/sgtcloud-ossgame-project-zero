@@ -125,6 +125,7 @@ var PlayerData = {
     modelPlayer: null,
     modelSave: null,
     sequence: [],
+    serverCurrentTime: 0,
     init: function () {
         var localSave = localStorage.getItem("save");
         if (sgt && cc.isObject(sgt.context.user)) {
@@ -159,7 +160,7 @@ var PlayerData = {
         }
         if (!player.first_time) {
             //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-            player.first_time = serverCurrentTime;
+            player.first_time = PlayerData.getServerTime();
             //console.log('同步服务器时间：' + data);
             //});
             //player.first_time = Date.parse(new Date());
@@ -288,7 +289,7 @@ var PlayerData = {
     ,
     updateIntoBattleTime: function () {
         //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-        player.into_stage_battle_timestamp = serverCurrentTime;
+        player.into_stage_battle_timestamp = PlayerData.getServerTime();
         //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
         //});
         //player.into_stage_battle_timestamp = Date.parse(new Date());
@@ -347,6 +348,9 @@ var PlayerData = {
     ,
     getAmountByUnit: function (unit) {
         return player.resource[unit];
+    },
+    getServerTime: function () {
+        return this.serverCurrentTime;
     },
 
     getHeroDeadTime: function (id) {
