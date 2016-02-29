@@ -252,6 +252,7 @@
           <Image Name="blood2_2.png" />
           <Image Name="blood3_1.png" />
           <Image Name="blood3_2.png" />
+          <Image Name="guide.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -572,6 +573,8 @@
         <Project Name="Tips.csd" Type="Layer" />
         <Project Name="TextLayer.csd" Type="Layer" />
         <Project Name="SmallItemLayer.csd" Type="Layer" />
+        <Project Name="Guide.csd" Type="Layer" />
+        <Project Name="GuideGirl.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

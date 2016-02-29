@@ -13,6 +13,8 @@
       <FilePathData Path="fairy/fairy01/fairy01_run05.png" />
       <FilePathData Path="fairy/fairy01/fairy01_run06.png" />
       <FilePathData Path="dead/dead01/dead01.png" />
+      <FilePathData Path="guide/hand_point01.png" />
+      <FilePathData Path="guide/hand_point02.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
