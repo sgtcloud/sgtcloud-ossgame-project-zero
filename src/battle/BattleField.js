@@ -84,6 +84,15 @@ var SpriteGroup = function (_sprites) {
         }
         return undefined;
     };
+    this.isAllUnitsDead = function () {
+        var deadHeroNum = 0;
+        for (var i in sprites) {
+            if (sprites[i].isDead()) {
+                deadHeroNum++;
+            }
+        }
+        return deadHeroNum === sprites.length;
+    };
     this.findLowestHpUnit = function () {
         var lowestHpUnit = null;
         var hp = 0;
@@ -252,13 +261,7 @@ var BattleField = cc.Class.extend({
     },
 
     isAllHeroesDead: function () {
-        var deadHeroNum = 0;
-        for (var i in this.heroUnits) {
-            if (this.heroUnits[i].isDead()) {
-                deadHeroNum++;
-            }
-        }
-        return deadHeroNum === this.heroUnits.length;
+        return this.heroUnits.isAllUnitsDead();
     },
 
     totalSprites: 0,
