@@ -310,15 +310,21 @@ var BloodBox = cc.Class.extend({
         }
         customEventHelper.bindListener(EVENT.HERO_DIE,function(){
             if(battlePanel.battleField.isAllHeroesDead()){
-                this.smallBtn.setEnable(false);
-                this.middleBtn.setEnable(false);
-                this.largeBtn.setEnable(false);
+                this.smallBtn.setEnabled(false);
+                this.smallBtn.setBright(false);
+                this.middleBtn.setEnabled(false);
+                this.middleBtn.setBright(false);
+                this.largeBtn.setEnabled(false);
+                this.largeBtn.setBright(false);
             }
         }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_REVIVE,function(){
-            this.smallBtn.setEnable(true);
-            this.middleBtn.setEnable(true);
-            this.largeBtn.setEnable(true);
+            this.smallBtn.setEnabled(true);
+            this.smallBtn.setBright(true);
+            this.middleBtn.setEnabled(true);
+            this.middleBtn.setBright(true);
+            this.largeBtn.setEnabled(true);
+            this.largeBtn.setBright(true);
         }.bind(this));
         refreshNum();
         initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
