@@ -32,7 +32,7 @@ var player = {
     },
     'time': {
         "die": {},
-        "cd":{}
+        "cd": {}
     },
     //"cd":{"herosDie":{"":}},
     // release data
@@ -125,6 +125,7 @@ var PlayerData = {
     modelPlayer: null,
     modelSave: null,
     sequence: [],
+    serverCurrentTime: 0,
     init: function () {
         var localSave = localStorage.getItem("save");
         if (sgt && cc.isObject(sgt.context.user)) {
@@ -159,16 +160,16 @@ var PlayerData = {
         }
         if (!player.first_time) {
             //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                player.first_time = serverCurrentTime;
-                //console.log('同步服务器时间：' + data);
+            player.first_time = PlayerData.getServerTime();
+            //console.log('同步服务器时间：' + data);
             //});
             //player.first_time = Date.parse(new Date());
         }
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
-        setInterval(function(){
-            if(cc.isArray(this.sequence) && this.sequence.length > 0){
+        setInterval(function () {
+            if (cc.isArray(this.sequence) && this.sequence.length > 0) {
                 var playerExtra = new SgtApi.PlayerExtra();
                 playerExtra.content = JSON.stringify(player);
                 playerExtra.playerId = player.id;
@@ -179,7 +180,7 @@ var PlayerData = {
             }
             //同步服务器时间 校正服务器本地时间
             syncTime();
-        }.bind(this),600 * 1000);
+        }.bind(this), 600 * 1000);
     },
     updatePlayer: function () {
         localStorage.setItem("save", JSON.stringify(player));
@@ -288,8 +289,8 @@ var PlayerData = {
     ,
     updateIntoBattleTime: function () {
         //sgt.RouterService.getCurrentTimestamp(function (result, data) {
-            player.into_stage_battle_timestamp = serverCurrentTime;
-            //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
+        player.into_stage_battle_timestamp = PlayerData.getServerTime();
+        //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
         //});
         //player.into_stage_battle_timestamp = Date.parse(new Date());
         //this.updatePlayer();
@@ -347,6 +348,9 @@ var PlayerData = {
     ,
     getAmountByUnit: function (unit) {
         return player.resource[unit];
+    },
+    getServerTime: function () {
+        return this.serverCurrentTime;
     },
     heroes: [],
     stageData: {},
