@@ -28,15 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="cover.csd" />
-          <FilePathData Path="NewNameLayer.csd" />
-          <FilePathData Path="cover.csi" />
-        </OpenedDocuments>
-        <ActiveDocument Path="cover.csi" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

@@ -1071,6 +1071,11 @@
         <PlistInfo Name="key01.csi" Type="Plist" />
         <PlistInfo Name="key02.csi" Type="Plist" />
         <PlistInfo Name="key03.csi" Type="Plist" />
+        <Folder Name="guide">
+          <Image Name="hand_point01.png" />
+          <Image Name="hand_point02.png" />
+        </Folder>
+        <Project Name="hand01.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
