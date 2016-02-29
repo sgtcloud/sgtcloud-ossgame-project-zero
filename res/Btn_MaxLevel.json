@@ -127,8 +127,8 @@
                   "Path": "buttonUI/MaxLevel.png",
                   "Plist": "ButtonUI.plist"
                 },
-                "Scale9Width": 105,
-                "Scale9Height": 44,
+                "Scale9Width": 61,
+                "Scale9Height": 62,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -148,18 +148,18 @@
                   "Y": 0.5125
                 },
                 "PreSize": {
-                  "X": 0.75,
-                  "Y": 0.55
+                  "X": 0.4357,
+                  "Y": 0.775
                 },
-                "LeftMargin": 21.5001,
-                "RightMargin": 13.4999,
-                "TopMargin": 17.0,
-                "BottomMargin": 19.0,
+                "LeftMargin": 43.5001,
+                "RightMargin": 35.4999,
+                "TopMargin": 8.0,
+                "BottomMargin": 10.0,
                 "Tag": 423,
                 "ActionTag": 952903344,
                 "Size": {
-                  "X": 105.0,
-                  "Y": 44.0
+                  "X": 61.0,
+                  "Y": 62.0
                 },
                 "Name": "upMax_text",
                 "ctype": "ImageViewObjectData"

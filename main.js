@@ -71,7 +71,7 @@ cc.game.onStart = function () {
         //同步服务器时间
         syncTime();
         setInterval(function(){
-            serverCurrentTime += 100;
+            PlayerData.serverCurrentTime += 100;
             //console.log("当前时间：" + serverCurrentTime);
         },100);
     } else {
