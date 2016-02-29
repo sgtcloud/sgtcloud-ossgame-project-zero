@@ -21,7 +21,6 @@ var EquipListMenu = BattleMenu.extend({
         var basic = 3;
         var nextValue = 0;
         var difValue = 5;
-
         function buildMagicalEquips(hero) {
             var title = title_root.getChildByName('title');
             var buy_btn = title_root.getChildByName('buy_btn')
@@ -259,16 +258,15 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn.level_text = lockLayer.getChildByName('level_text');
                 elements.lock_btn.level_text.ignoreContentAdaptWithSize(true);
                 elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
+                customEventHelper.bindListener(EVENT.UPDATE_RESOURCE,function(event){
+                    var data=event.getUserData();
+                    var nextCost = equip.getNextLevelUpgrade();
+                    if(data['unit']===nextCost['unit']){
+                        validateResourceNotEnough(nextCost, upgradeBtn, text);
+                    }
+                });
                 upgradeBtn.addClickEventListener(function (event) {
-                    //var cost = equip.getLevelData()['upgrade'];
                     equip.upgrade(hero);
-                    /*if (cost.unit === "gold") {
-                        customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-                    } else if (cost.unit === "gem") {
-                        customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-                    } else if (cost.unit === "relic") {
-                        customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
-                    }*/
                     desc.setString(buildDesc(equip.traverseEquipEffects(), equip.getDesc()));
                     lv.setString("Lv." + equip.getLv() + "/" + equip.getMaxLevel());
                     if (equip.isMaxLevel()) {
