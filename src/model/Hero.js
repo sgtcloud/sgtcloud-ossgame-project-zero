@@ -9,7 +9,6 @@ var Hero = function (heroData) {
     for (var i in data.equips) {
         var equipId = data.equips[i];
         var equipCache = readEquipCache(equipId);
-        //var equipLv = (equip && equip['level']) || 1;
         equips.push(new Equip(equipId, equipCache));
     }
     customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {

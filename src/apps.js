@@ -616,3 +616,27 @@ function syncTime(){
         }
     });
 }
+/**
+ * 从模板中解析描述文案
+ *
+ * @param effects 技能/装备效果
+ * @param desc 带有模板的描述
+ * @param extend 要继承的父json
+ * @returns {*}
+ */
+function buildDesc(effects, desc, extend) {
+    var effectsObj = {};
+    for (var i in effects) {
+        var map = SkillEffectMappings[effects[i]['type']];
+        var alas = map['name'];
+        var value = effects[i]['value'].toFixed(map['fixed']);
+        effectsObj[effects[i]['name']] = {}
+        effectsObj[effects[i]['name']]['name'] = alas;
+        effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
+    }
+    if (extend) {
+        effectsObj = $$.extend(effectsObj, extend);
+    }
+    desc = desc.mapping(effectsObj)
+    return desc;
+}
