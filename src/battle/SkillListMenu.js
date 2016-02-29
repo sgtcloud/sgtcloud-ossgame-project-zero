@@ -124,7 +124,7 @@ var SkillIcon = cc.Class.extend({
         this.time.setString(cd);
         this.skill_icon.setColor(cc.color(90, 90, 90));
         this._doSchedule(cd - 1, this.time, function () {
-            if (!this.heroDead && !randomBuff) {
+            if (!this.heroDead && !this.randomBuff) {
                 this.skill_icon.setColor(cc.color(255, 255, 255));
             }
             this.cooldownText.isVisible() && this.cooldownText.setVisible(false);
