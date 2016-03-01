@@ -457,7 +457,7 @@ var HeroListMenu = BattleMenu.extend({
                 that.heroList.pushBackCustomItem(_heroView);
                 that.views.heros = that.views.heros || [];
                 that.views.heros[i] = _heroView;
-                var skillsList = []
+                var skillsList = [];
                 for (var j = 0; j < heroData.getSkillCount(); j++) {
                     var skillData = heroData.getSkillData(j);
                     var _skillView = buildSkillView(skillData, heroData);
