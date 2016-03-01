@@ -95,10 +95,13 @@ var res = {
     buff_layer_json: "res/BuffLayer.json",
     buff_list_json: "res/BuffList.json",
     statistics_layer: "res/StatisticsLayer.json",
-    small_item_layer_json:"res/SmallItemLayer.json",
+    small_item_layer_json: "res/SmallItemLayer.json",
     shop_list_view: "res/ShopListView.json",
-    tips:'res/Tips.json',
-    tombstone_json:"res/dead.json"
+    tips: 'res/Tips.json',
+    tombstone_json: "res/dead.json",
+    sign_icon: 'res/SignIcon.json',
+    sign_layer: 'res/SignLayer.json',
+    sign_view: 'res/SignView.json'
 };
 
 

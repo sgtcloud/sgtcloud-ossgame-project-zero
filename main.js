@@ -74,6 +74,8 @@ cc.game.onStart = function () {
             PlayerData.serverCurrentTime += 100;
             //console.log("当前时间：" + serverCurrentTime);
         },100);
+        //同步服务器时间 10分钟校正服务器本地时间
+        setInterval(syncTime,600*1000);
     } else {
         quickLoginfalg = true;
     }

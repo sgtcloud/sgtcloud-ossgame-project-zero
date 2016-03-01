@@ -1,0 +1,242 @@
+{
+  "ID": "66554ce2-4be9-4d20-af98-59bc59955e04",
+  "Version": "2.3.3.0",
+  "Name": "SignIcon",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 85,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 86,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/equip_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 90,
+                "Scale9Height": 90,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 3.0,
+                  "Y": 3.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0312,
+                  "Y": 0.0312
+                },
+                "PreSize": {
+                  "X": 0.9375,
+                  "Y": 0.9375
+                },
+                "LeftMargin": 3.0,
+                "RightMargin": 3.0,
+                "TopMargin": 3.0,
+                "BottomMargin": 3.0,
+                "Tag": 87,
+                "ActionTag": -349719601,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/sgin.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 96,
+                "Scale9Height": 96,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 88,
+                "ActionTag": -761834681,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 96.0
+                },
+                "Name": "Image_2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/sign_sure1.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 73,
+                "Scale9Height": 69,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 26.072,
+                  "Y": 74.7681
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2716,
+                  "Y": 0.7788
+                },
+                "PreSize": {
+                  "X": 0.7604,
+                  "Y": 0.7188
+                },
+                "LeftMargin": -10.428,
+                "RightMargin": 33.428,
+                "TopMargin": -13.2681,
+                "BottomMargin": 40.2681,
+                "Tag": 89,
+                "ActionTag": -286970051,
+                "Size": {
+                  "X": 73.0,
+                  "Y": 69.0
+                },
+                "Name": "Image_3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "99",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white14-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 73.8279,
+                  "Y": 15.677
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.769,
+                  "Y": 0.1633
+                },
+                "PreSize": {
+                  "X": 0.3438,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 57.3279,
+                "RightMargin": 5.6721,
+                "TopMargin": 71.323,
+                "BottomMargin": 6.677,
+                "Tag": 90,
+                "ActionTag": 1646219327,
+                "Size": {
+                  "X": 33.0,
+                  "Y": 18.0
+                },
+                "Name": "BitmapFontLabel_1",
+                "ctype": "TextBMFontObjectData"
+              }
+            ],
+            "ActionTag": -893330598,
+            "Size": {
+              "X": 96.0,
+              "Y": 96.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white14-export.fnt",
+        "font/white14-export.png",
+        "mainUI/equip_icon.png",
+        "mainUI/sgin.png",
+        "mainUI/sign_sure1.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

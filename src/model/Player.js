@@ -179,8 +179,6 @@ var PlayerData = {
                 });
                 this.sequence = [];
             }
-            //同步服务器时间 校正服务器本地时间
-            syncTime();
         }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
