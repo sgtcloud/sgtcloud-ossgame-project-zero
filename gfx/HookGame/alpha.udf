@@ -28,5 +28,20 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="SignIcon.csd" />
+          <FilePathData Path="SignLayer.csd" />
+          <FilePathData Path="SignView.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="ShopListView.csd" />
+          <FilePathData Path="Prompt2Layer.csd" />
+          <FilePathData Path="Prompt1Layer.csd" />
+          <FilePathData Path="PackLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="SignIcon.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

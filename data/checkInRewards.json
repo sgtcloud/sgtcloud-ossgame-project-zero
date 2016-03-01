@@ -1,0 +1,58 @@
+[
+  {
+    "icon": "gold.png",
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "icon": "gem.png",
+    "bonus": [
+      {
+        "unit": "gem",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "wood.png",
+    "bonus": [
+      {
+        "unit": "wood",
+        "value": 10
+      },
+      {
+        "unit": "gold",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "icon": "relic.png",
+    "bonus": [
+      {
+        "unit": "relic",
+        "value": 10
+      }, {
+        "unit": "gold",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "icon": "stone.png",
+    "bonus": [
+      {
+        "unit": "stone",
+        "value": 10
+      },
+      {
+        "unit": "gold",
+        "value": 110
+      }
+    ]
+  }
+]

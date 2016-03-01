@@ -380,6 +380,7 @@ function showCover() {
     }
     bindButtonCallback(loginBtn, function () {
         showGame();
+        CheckInUnit.createByValidate();
     });
     cc.director.runScene(scene);
 }
