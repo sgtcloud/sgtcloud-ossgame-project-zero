@@ -20,6 +20,8 @@ var config = require('./project.json');
 
 var DEST = 'publish/html5/';
 
+var VERSION = "0.0.4";
+
 var sourceCodeList = [];
 
 gulp.task('default', ['compileJs', 'copyIndex', 'copyConf', 'image'], function () {
@@ -47,6 +49,7 @@ gulp.task('compileJs', ['clean'], function () {
 
 gulp.task('copyIndex', ['clean'], function () {
     return gulp.src('index.html')
+        .pipe(replace('指尖骑士挂机版', '指尖骑士挂机版' + VERSION))
         .pipe(replace('lib/cocos2d-js-v3.10.js', 'game.min.js'))
         .pipe(replace('<script cocos src="main.js"></script>', ''))
         .pipe(gulp.dest(DEST));
@@ -55,7 +58,7 @@ gulp.task('copyIndex', ['clean'], function () {
 gulp.task('copyConf', ['clean'], function () {
     return gulp.src("project.json")
         .pipe(jeditor(function (json) {
-            json.version = "0.0.3";
+            json.version = VERSION;
             json.debugMode = 1;
             json.frameRate = 60;
             json.id = 'gameCanvas';

@@ -28,11 +28,19 @@ qq群：383461219
 
 [在线文档地址](https://www.gitbook.com/book/sgtcloud/project-nova-0-doc/details)
 
+### 在线演示
+
+[点击打开](http://h5dev.yoedge.com/ossgame/publish/html5/index.html)
+
+或者扫描二维码
+
+![barcode](http://h5.yoedge.com/barcode.png)
+
 ### 开发环境和工具列表
 
 * Cocos Framework(>=3.10)+Cocos Studio [下载](http://www.cocos.com/download/#)
-* xls2json [地址](https://github.com/sgtcloud/xlsx2json)
-* shoebox [地址](http://renderhjs.net/shoebox/)
+* [xls2json](https://github.com/sgtcloud/xlsx2json)
+* [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
 
 ### 项目目录
@@ -89,15 +97,50 @@ qq群：383461219
 
 包含因为一些原因在index中引入的例如jquery或者特定用途（例如统计分析）的本地js库文件。
 
-##### 项目的构建和发布
+### 项目构建和发布
+
+##### Cocos Console
+
+项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。直接使用命令行cocos compile -p web -m release即可发布，暂时不支持--advanced参数
+
+##### gulp
+
+构建的时候还考虑到了多渠道发布的需求，所以同时提供了[gulp](http://gulpjs.com/)实现的工具链。
+首先确认自己安装了[Nodejs](http://nodejs.org/)环境。
+
+* 运行
+    npm install --save-dev gulp del gulp-cache gulp-concat gulp-debug gulp-image gulp-json-editor gulp-replace gulp-sourcemaps gulp-uglify vinyl-buffer vinyl-source-stream
+    安装需要的软件
+
+* 运行
+    gulp
+    在public/html5下面构建出和cocos一致的发布
+
+使用gulp的构建脚本可以非常容易的定制自己的发布，我们建议您使用这种方式。
+
 
 ### 项目代码导读
 
-##### 构建工具
+##### 核心战斗模块
 
-项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。
-在开始构建的时候还考虑到了多渠道发布的需求，所以同时提供了[gulp](http://gulpjs.com/)实现的工具链。
+
 
 ##### 联网功能依赖
 
-游戏的联网相关功能都是由[sgtcloud](http://www.sgtcloud.cn/)提供的[sgtcloud-html5-sdk](https://github.com/sgtcloud/sgtcloud-html5-sdk)，自行调试和进行二次开发的时候请务必申请自己的appid参数。
+游戏的联网相关功能，包含不限于在线存档，服务器时间校准，签到，排行榜等等功能，都是由[sgtcloud](http://www.sgtcloud.cn/)提供的[sgtcloud-html5-sdk](https://github.com/sgtcloud/sgtcloud-html5-sdk)，自行调试和进行二次开发的时候请务必申请自己的appid参数。
+
+### 项目路线图
+
+下一个发布版本为[0.0.5](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.5)
+
+##### 其他待完成开发任务
+
+* 实现首次加载资源的优化
+* 实现基于cocos studio导出控件的事件绑定
+* 剥离界面和逻辑的耦合，提升代码的抽象级别
+
+欢迎开发者给我们提出你们开发中遇到的问题，有问必答，有求必应：）
+
+# 鸣谢
+
+* [cocos](http://cocos.com/)商标和产品相关权利归触控所有，感谢触控为我们带来免费开源的游戏引擎，也感谢开发团队对我们的无私支持
