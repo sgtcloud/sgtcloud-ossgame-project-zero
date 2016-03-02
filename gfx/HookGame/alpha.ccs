@@ -256,6 +256,7 @@
           <Image Name="sgin.png" />
           <Image Name="sign_sure.png" />
           <Image Name="sign_sure1.png" />
+          <Image Name="sign.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />

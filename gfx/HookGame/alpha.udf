@@ -28,5 +28,20 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="MaillLayer.csd" />
+          <FilePathData Path="MaillView.csd" />
+          <FilePathData Path="RankUI.csi" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="SignLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="SignLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
