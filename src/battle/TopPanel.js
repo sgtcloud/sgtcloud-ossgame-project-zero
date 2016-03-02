@@ -86,6 +86,8 @@ var TopPanel = cc.Node.extend({
                     this.refreshPlayerRelicText();
                     customEventHelper.sendEvent(EVENT.RELIC_VALUE_UPDATE);
                     break;
+                default:
+                    customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
             }
         }
         this.refreshPlayerGemText = function () {

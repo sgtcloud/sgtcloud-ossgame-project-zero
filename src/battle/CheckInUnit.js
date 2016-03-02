@@ -28,7 +28,7 @@ var CheckInUnit = cc.Node.extend({
 
             var iconLayer = signIconRoot.clone();
 
-            var icon = iconLayer.getChildByName("icon")
+            var icon = iconLayer.getChildByName("icon");
             icon.loadTexture("res/icon/resources/" + data.icon);
             var image2 = iconLayer.getChildByName("frame");
             var image3 = iconLayer.getChildByName("stamp");
