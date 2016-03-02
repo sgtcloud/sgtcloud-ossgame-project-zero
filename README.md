@@ -43,6 +43,12 @@ qq群：383461219
 * [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
 
+### 获取代码
+
+本项目托管在github上，安装[git](https://git-scm.com/)之后运行
+    git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
+
+
 ### 项目目录
 
 在cocos2d-js默认项目布局上新增加了若干目录，包含了webstorm的项目配置，可以直接导入webstorm。
@@ -119,9 +125,25 @@ qq群：383461219
 使用gulp的构建脚本可以非常容易的定制自己的发布，我们建议您使用这种方式。
 
 
-### 项目代码导读
+### 项目源代码导读
+
+* 本游戏采用了mvvm的抽象进行编写，
+
+##### 根目录
+
+* main.js 程序入口类
+* apps.js 程序通用工具类
+* Chance.js 随机数工具类
+* GamePopup.js 弹窗类
+* LoaderScene.js 首屏加载类，重写了加载逻辑，支持ccs导出的动画和控件作为内容
+
+##### 数据模型
+
+model目录
 
 ##### 核心战斗模块
+
+battle目录
 
 
 
