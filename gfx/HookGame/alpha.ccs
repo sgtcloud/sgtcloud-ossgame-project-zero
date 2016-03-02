@@ -581,6 +581,16 @@
         <Project Name="SignLayer.csd" Type="Layer" />
         <Project Name="SignView.csd" Type="Layer" />
         <Project Name="SignIcon.csd" Type="Layer" />
+        <Project Name="PVPLayer.csd" Type="Layer" />
+        <Project Name="MaillLayer.csd" Type="Layer" />
+        <Project Name="MaillView.csd" Type="Layer" />
+        <Folder Name="maillUI">
+          <Image Name="title.png" />
+          <Image Name="delete.png" />
+          <Image Name="get.png" />
+          <Image Name="get2.png" />
+          <Image Name="look.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
