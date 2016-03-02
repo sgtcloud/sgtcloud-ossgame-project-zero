@@ -13,58 +13,10 @@
       "AnimationList": [],
       "ObjectData": {
         "Tag": 40,
-        "Children": [
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "mainUI/guide.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {},
-            "Position": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "RightMargin": -237.0,
-            "TopMargin": -336.0,
-            "Tag": 41,
-            "ActionTag": -1919963207,
-            "Size": {
-              "X": 237.0,
-              "Y": 336.0
-            },
-            "Name": "guideGirl",
-            "ctype": "SpriteObjectData"
-          }
-        ],
-        "Size": {
-          "X": 0.0,
-          "Y": 0.0
-        },
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "mainUI/guide.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },
