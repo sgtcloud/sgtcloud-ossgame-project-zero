@@ -145,8 +145,6 @@ model目录
 
 battle目录
 
-
-
 ##### 联网功能依赖
 
 游戏的联网相关功能，包含不限于在线存档，服务器时间校准，签到，排行榜等等功能，都是由[sgtcloud](http://www.sgtcloud.cn/)提供的[sgtcloud-html5-sdk](https://github.com/sgtcloud/sgtcloud-html5-sdk)，自行调试和进行二次开发的时候请务必申请自己的appid参数。
