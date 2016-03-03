@@ -29,6 +29,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -186,6 +188,213 @@
                 },
                 "Name": "desc_text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 415.94,
+                  "Y": 32.338
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7848,
+                  "Y": 0.3234
+                },
+                "PreSize": {
+                  "X": 0.1698,
+                  "Y": 0.4
+                },
+                "LeftMargin": 415.94,
+                "RightMargin": 24.06,
+                "TopMargin": 27.662,
+                "BottomMargin": 32.338,
+                "Tag": 241,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 6,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 242,
+                    "ActionTag": -1787313740,
+                    "Size": {
+                      "X": 90.0,
+                      "Y": 40.0
+                    },
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "maillUI/get2.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 87,
+                    "Scale9Height": 24,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 45.0001,
+                      "Y": 19.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.475
+                    },
+                    "PreSize": {
+                      "X": 0.9667,
+                      "Y": 0.6
+                    },
+                    "LeftMargin": 1.5001,
+                    "RightMargin": 1.4999,
+                    "TopMargin": 9.0,
+                    "BottomMargin": 7.0,
+                    "CallBackType": "Click",
+                    "Tag": 243,
+                    "ActionTag": -1291936482,
+                    "Size": {
+                      "X": 87.0,
+                      "Y": 24.0
+                    },
+                    "Name": "get",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "maillUI/look.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 87,
+                    "Scale9Height": 25,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 44.7811,
+                      "Y": 20.1239
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4976,
+                      "Y": 0.5031
+                    },
+                    "PreSize": {
+                      "X": 0.9667,
+                      "Y": 0.625
+                    },
+                    "LeftMargin": 1.2811,
+                    "RightMargin": 1.7189,
+                    "TopMargin": 7.3761,
+                    "BottomMargin": 7.6239,
+                    "CallBackType": "Click",
+                    "Tag": 244,
+                    "ActionTag": -1085761314,
+                    "Size": {
+                      "X": 87.0,
+                      "Y": 25.0
+                    },
+                    "Name": "look",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1652178287,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 40.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 41990754,
@@ -194,213 +403,6 @@
               "Y": 100.0
             },
             "Name": "root",
-            "ctype": "PanelObjectData"
-          },
-          {
-            "BackColorAlpha": 102,
-            "SingleColor": {
-              "R": 150,
-              "G": 200
-            },
-            "FirstColor": {
-              "R": 150,
-              "G": 200
-            },
-            "EndColor": {},
-            "ColorVector": {
-              "ScaleY": 1.0
-            },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
-            "TouchEnable": true,
-            "AnchorPoint": {},
-            "Position": {
-              "X": 415.94,
-              "Y": 32.338
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.7848,
-              "Y": 0.3234
-            },
-            "PreSize": {
-              "X": 0.1698,
-              "Y": 0.4
-            },
-            "LeftMargin": 415.94,
-            "RightMargin": 24.06,
-            "TopMargin": 27.662,
-            "BottomMargin": 32.338,
-            "Tag": 241,
-            "Children": [
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 6,
-                "Scale9Height": 21,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "PreSize": {
-                  "X": 1.0,
-                  "Y": 1.0
-                },
-                "Tag": 242,
-                "ActionTag": -1787313740,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 40.0
-                },
-                "Name": "btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "maillUI/get2.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 87,
-                "Scale9Height": 24,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 45.0001,
-                  "Y": 19.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.475
-                },
-                "PreSize": {
-                  "X": 0.9667,
-                  "Y": 0.6
-                },
-                "LeftMargin": 1.5001,
-                "RightMargin": 1.4999,
-                "TopMargin": 9.0,
-                "BottomMargin": 7.0,
-                "CallBackType": "Click",
-                "Tag": 243,
-                "ActionTag": -1291936482,
-                "Size": {
-                  "X": 87.0,
-                  "Y": 24.0
-                },
-                "Name": "get",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "maillUI/look.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 87,
-                "Scale9Height": 25,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 44.7811,
-                  "Y": 20.1239
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4976,
-                  "Y": 0.5031
-                },
-                "PreSize": {
-                  "X": 0.9667,
-                  "Y": 0.625
-                },
-                "LeftMargin": 1.2811,
-                "RightMargin": 1.7189,
-                "TopMargin": 7.3761,
-                "BottomMargin": 7.6239,
-                "CallBackType": "Click",
-                "Tag": 244,
-                "ActionTag": -1085761314,
-                "Size": {
-                  "X": 87.0,
-                  "Y": 25.0
-                },
-                "Name": "look",
-                "ctype": "ImageViewObjectData"
-              }
-            ],
-            "ActionTag": 1652178287,
-            "Size": {
-              "X": 90.0,
-              "Y": 40.0
-            },
-            "Name": "btn",
             "ctype": "PanelObjectData"
           }
         ],
