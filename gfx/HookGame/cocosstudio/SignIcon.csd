@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="85" ctype="GameLayerObjectData">
         <Size X="96.0000" Y="96.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-893330598" Tag="86" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-893330598" Tag="86" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="96.0000" Y="96.0000" />
             <Children>
               <AbstractNodeData Name="icon" ActionTag="-349719601" Tag="87" IconVisible="False" LeftMargin="3.0000" RightMargin="3.0000" TopMargin="3.0000" BottomMargin="3.0000" Scale9Width="90" Scale9Height="90" ctype="ImageViewObjectData">
@@ -19,7 +19,7 @@
                 <PreSize X="0.9375" Y="0.9375" />
                 <FileData Type="Normal" Path="mainUI/equip_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_2" ActionTag="-761834681" Tag="88" IconVisible="False" Scale9Width="96" Scale9Height="96" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="frame" ActionTag="-761834681" Tag="88" IconVisible="False" Scale9Width="96" Scale9Height="96" ctype="ImageViewObjectData">
                 <Size X="96.0000" Y="96.0000" />
                 <AnchorPoint />
                 <Position />
@@ -29,7 +29,7 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/sgin.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3" ActionTag="-286970051" Tag="89" IconVisible="False" LeftMargin="-10.4280" RightMargin="33.4280" TopMargin="-13.2681" BottomMargin="40.2681" Scale9Width="73" Scale9Height="69" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="stamp" ActionTag="-286970051" Tag="89" IconVisible="False" LeftMargin="-10.4280" RightMargin="33.4280" TopMargin="-13.2681" BottomMargin="40.2681" Scale9Width="73" Scale9Height="69" ctype="ImageViewObjectData">
                 <Size X="73.0000" Y="69.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="26.0720" Y="74.7681" />
@@ -39,7 +39,7 @@
                 <PreSize X="0.7604" Y="0.7188" />
                 <FileData Type="Normal" Path="mainUI/sign_sure1.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="BitmapFontLabel_1" ActionTag="1646219327" Tag="90" IconVisible="False" LeftMargin="57.3279" RightMargin="5.6721" TopMargin="71.3230" BottomMargin="6.6770" LabelText="99" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="num" ActionTag="1646219327" Tag="90" IconVisible="False" LeftMargin="57.3279" RightMargin="5.6721" TopMargin="71.3230" BottomMargin="6.6770" LabelText="99" ctype="TextBMFontObjectData">
                 <Size X="33.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="73.8279" Y="15.6770" />

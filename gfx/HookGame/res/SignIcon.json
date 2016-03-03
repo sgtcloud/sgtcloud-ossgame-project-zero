@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -70,8 +72,8 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0312,
-                  "Y": 0.0312
+                  "X": 0.0313,
+                  "Y": 0.0313
                 },
                 "PreSize": {
                   "X": 0.9375,
@@ -123,7 +125,7 @@
                   "X": 96.0,
                   "Y": 96.0
                 },
-                "Name": "Image_2",
+                "Name": "frame",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -166,7 +168,7 @@
                   "X": 73.0,
                   "Y": 69.0
                 },
-                "Name": "Image_3",
+                "Name": "stamp",
                 "ctype": "ImageViewObjectData"
               },
               {
@@ -208,7 +210,7 @@
                   "X": 33.0,
                   "Y": 18.0
                 },
-                "Name": "BitmapFontLabel_1",
+                "Name": "num",
                 "ctype": "TextBMFontObjectData"
               }
             ],
