@@ -1,7 +1,7 @@
 /**
  * Created by Maron on 2016/2/29.
  */
-var EquipListMenu = BattleMenu.extend({
+var EquipListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.equip_layer_json);
         this.heroList = this.root.getChildByName('equip_list');
@@ -21,7 +21,8 @@ var EquipListMenu = BattleMenu.extend({
         var basic = 3;
         var nextValue = 0;
         var difValue = 5;
-
+        this.setListView(this.heroList);
+        this.setItemModel(equipView);
         function buildMagicalEquips(hero) {
             var title = title_root.getChildByName('title');
             var buy_btn = title_root.getChildByName('buy_btn')

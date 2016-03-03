@@ -16,6 +16,94 @@ var BattleMenu = cc.Node.extend({
     }
 });
 
+var ListViewMenu = BattleMenu.extend({
+    _spawnCount: 8,
+    _totalCount: 0,
+    _bufferZone: 150,
+    _updateInterval: 0.01,
+    _updateTimer: 0,
+    _lastContentPosY: 0,
+    _reuseItemOffset: 0,
+    _initializeListSize: false,
+    _itemTemplateHeight: 0,
+    items: [],
+    HERO_ITEM:"hero-item",
+    SKILL_ITEM:"skill-item",
+    EQUIP_ITEM:"equip-item",
+    _listenerContaner:{},
+    setItemModel: function (item) {
+        this._itemTemplateHeight = item.height;
+        this._reuseItemOffset = this._itemTemplateHeight * this._spawnCount  ;
+        this.listView.setItemModel(item);
+    },
+    addItem: function (item, i) {
+        if (arguments.length == 1) {
+            this.items.push(item);
+        }else {
+            this.items.splice(i,1,item);
+        }
+    },
+    setItems: function (items) {
+        this.items = items;
+    },
+    setListView: function (listView) {
+        this.listView = listView;
+    },
+    updateItem: function (itemID, item) {
+        //var itemTemplate = this.listView.getItems()[templateID];
+        //var btn = itemTemplate.getChildByName('TextButton');
+        //itemTemplate.setTag(itemID);
+        //btn.setTitleText(this.items[itemID]);
+    },
+    getItemPositionYInView: function (item) {3
+        var worldPos = item.getParent().convertToWorldSpaceAR(item.getPosition());
+        var viewPos = this.listView.convertToNodeSpaceAR(worldPos);
+        return viewPos.y;
+    },
+    update: function (dt) {
+        this._updateTimer += dt;
+        if (this._updateTimer < this._updateInterval) {
+            return;
+        }
+        this._updateTimer = 0;
+
+        var items = this.listView.getItems();
+        var isDown = this.listView.getInnerContainer().getPosition().y < this._lastContentPosY;
+        for (var i = 0; i < this._spawnCount && i < this._totalCount; ++i) {
+            var item = items[i];
+            var itemPos = this.getItemPositionYInView(item);
+            if (isDown) {
+                //here 4 is the spacing between items
+                var totalHeight = this._itemTemplateHeight * this._totalCount+ (this._totalCount - 1) * 4;
+                if (itemPos < -this._bufferZone && item.getPosition().y + this._reuseItemOffset< totalHeight) {
+                    var itemID = item.getTag() - items.length;
+                    console.log(item.getPositionY()/this._itemTemplateHeight,item.getTag());
+                    item.setPositionY(item.getPositionY() + this._reuseItemOffset);
+                    this.updateItem(itemID, item);
+                }
+            } else {
+                var listViewHeight = this.listView.getContentSize().height;
+                if (itemPos > this._bufferZone + listViewHeight && item.getPositionY() - this._reuseItemOffset >= 0) {
+                    console.log(item.getPositionY()/this._itemTemplateHeight,item.getTag());
+                    item.setPositionY(item.getPositionY() - this._reuseItemOffset);
+                    itemID = item.getTag() + items.length;
+                    this.updateItem(itemID, item);
+                }
+            }
+        }
+        this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
+    },
+    onEnter: function() {
+        cc.Node.prototype.onEnter.call(this);
+        //we must call foreceDoLayout in onEnter method in h5.
+        this.listView.forceDoLayout();
+        var totalHeight = this._itemTemplateHeight * this._totalCount + (this._totalCount - 1) * 4;
+        this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
+        this.listView.jumpToTop();
+        this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
+    }
+});
+
 function canUnlockItem(hero, target) {
     var heroLv = hero.getLv();
     var unlockLevel = target.getUnlockLevel();
@@ -132,10 +220,10 @@ var ShopLayerMenu = BattleMenu.extend({
         this.buyGold = function (gem, gold, flag) {
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
-                var updateRes =  [PlayerData.createResourceData("gold", gold)
+                var updateRes = [PlayerData.createResourceData("gold", gold)
                     , PlayerData.createResourceData("gem", -gem)];
                 PlayerData.updateResource(updateRes);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, updateRes);
                 PlayerData.updatePlayer();
                 if (flag) {
                     return;
@@ -211,11 +299,11 @@ var ShopLayerMenu = BattleMenu.extend({
             if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
                 var updateRes = [PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)];
                 PlayerData.updateResource(updateRes);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, updateRes);
                 tip.toggle({
-                    'beforeShow':[
-                        cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
-                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 '+ CONSTS.resources_mapping[price.unit] + " * " + price.value
+                    'beforeShow': [
+                        cc.hide(), cc.delayTime(0.1)], 'delay': 2.0,
+                    'text': '成功购买 ' + CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 ' + CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
                 PlayerData.updatePlayer();
             } else {
