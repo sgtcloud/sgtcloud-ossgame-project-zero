@@ -592,6 +592,11 @@
           <Image Name="get2.png" />
           <Image Name="look.png" />
         </Folder>
+        <Project Name="PVPOpponentView.csd" Type="Layer" />
+        <Folder Name="PVPUI">
+          <Image Name="Ranking.png" />
+          <Image Name="fight.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
