@@ -31,11 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="cover.csd" />
           <FilePathData Path="NewNameLayer.csd" />
-          <FilePathData Path="cover.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="cover.csi" />
+        <ActiveDocument Path="NewNameLayer.csd" />
       </Value>
     </Item>
   </Properties>

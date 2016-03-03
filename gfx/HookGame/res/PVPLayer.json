@@ -1,7 +1,7 @@
 {
-  "ID": "e067f569-2ac9-4d82-8aa3-0d178481285a",
+  "ID": "a4bb2ba9-1cc4-404a-bd24-d74973cab00b",
   "Version": "2.3.3.0",
-  "Name": "GuideGirl",
+  "Name": "PVPLayer",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,13 +12,17 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 40,
-        "Name": "Node",
-        "ctype": "SingleNodeObjectData"
+        "Tag": 86,
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
       },
       "UsedResources": [],
       "ctype": "GameFileData"
     }
   },
-  "Type": "Node"
+  "Type": "Layer"
 }

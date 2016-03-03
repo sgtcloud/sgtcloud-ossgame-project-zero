@@ -195,7 +195,7 @@ var ShopLayerMenu = BattleMenu.extend({
             if (window.DeviceMotionEvent) {
                 window.addEventListener("devicemotion", this.deviceMotionHandler, false);
             } else {
-                alert("本设备不支持devicemotion事件");
+                console.log("本设备不支持devicemotion事件");
             }
         };
         this.deviceMotionHandler = function (eventData) {

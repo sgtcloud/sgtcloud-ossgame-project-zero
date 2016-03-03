@@ -28,8 +28,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -111,8 +109,6 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -149,11 +145,11 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/sign.png",
+                  "Path": "mainUI/tips_skill_buff.png",
                   "Plist": ""
                 },
-                "Scale9Width": 275,
-                "Scale9Height": 59,
+                "Scale9Width": 311,
+                "Scale9Height": 42,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -173,18 +169,18 @@
                   "Y": 0.9308
                 },
                 "PreSize": {
-                  "X": 0.4583,
-                  "Y": 0.1229
+                  "X": 0.5183,
+                  "Y": 0.0875
                 },
-                "LeftMargin": 163.0407,
-                "RightMargin": 161.9593,
-                "TopMargin": 3.7285,
-                "BottomMargin": 417.2715,
+                "LeftMargin": 145.0407,
+                "RightMargin": 143.9593,
+                "TopMargin": 12.2285,
+                "BottomMargin": 425.7715,
                 "Tag": 218,
                 "ActionTag": 720927826,
                 "Size": {
-                  "X": 275.0,
-                  "Y": 59.0
+                  "X": 311.0,
+                  "Y": 42.0
                 },
                 "Name": "title",
                 "ctype": "ImageViewObjectData"
@@ -208,7 +204,7 @@
       },
       "UsedResources": [
         "mainUI/bg_01.png",
-        "mainUI/sign.png"
+        "mainUI/tips_skill_buff.png"
       ],
       "ctype": "GameFileData"
     }
