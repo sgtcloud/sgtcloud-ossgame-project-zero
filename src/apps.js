@@ -583,7 +583,7 @@ function getPlayerSave() {
                     if (result) {
                         if (cc.isObject(data) && data.content) {
                             PlayerData.modelSave = data;
-                            localStorage.setItem("save", data.content);
+                            //localStorage.setItem("save", data.content);
                         } else {
                             //没有存档
                             console.log("当前用户没有存档");

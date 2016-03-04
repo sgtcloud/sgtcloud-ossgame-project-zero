@@ -33,6 +33,7 @@
     "src/battle/TabContainer.js",
     "src/battle/MainScene.js",
     "src/battle/BattleMenu.js",
+    "src/view/ListViewMenu.js",
     "src/battle/SkillListMenu.js",
     "src/battle/HeroListMenu.js",
     "src/battle/EquipListMenu.js",

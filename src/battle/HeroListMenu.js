@@ -8,8 +8,7 @@ var HeroListMenu = ListViewMenu.extend({
         this._heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         this._skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
         this.setListView(this.heroList);
-
-
+        this._skillTemp.setPositionX(this._heroTemp.width-this._skillTemp.width);
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
         this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn');
@@ -19,12 +18,6 @@ var HeroListMenu = ListViewMenu.extend({
         var revive_btnBtn_layoutTemp = this._heroTemp.getChildByName('revive_btn');
         this._revive_btnBtnTemp = revive_btnBtn_layoutTemp.getChildByName('btn');
         this._revive_btnPosition = revive_btnBtn_layoutTemp.getPosition();
-
-
-        /* function openDesc(hero) {
-         var heroDesc = new HeroDesc();
-         heroDesc.initData(hero);
-         }*/
 
         var default_item = new ccui.Layout();
         default_item.setTouchEnabled(true);
@@ -63,25 +56,11 @@ var HeroListMenu = ListViewMenu.extend({
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
                         setTimeout(function () {
                             that.buildHeroMenu(_hero);
+                            that.updateInnerContainerSize();
                         }, 100);
                     }
                 });
             }
-
-            /* function buildHeroMenu(heroData, cb) {
-             var _heroView = that._buildHeroView(heroData, cb);
-             that.heroList.pushBackCustomItem(_heroView);
-             that.views.heros = that.views.heros || [];
-             that.views.heros[i] = _heroView;
-             var skillsList = [];
-             for (var j = 0; j < heroData.getSkillCount(); j++) {
-             var skillData = heroData.getSkillData(j);
-             that.items.push({data:heroData,type:that.HERO_ITEM});
-             var _skillView = _buildSkillView(skillData, heroData);
-             that.heroList.pushBackCustomItem(_skillView);
-             skillsList.push(_skillView);
-             }
-             }*/
         }
         customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
         customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
@@ -218,7 +197,6 @@ var HeroListMenu = ListViewMenu.extend({
             root.addChild(revive_btn);
             root.addChild(btnlayer);
             root.addChild(upMaxLevelBtn);
-            //var temp=this.items.filter(function(i){return i.target.getId()===hero.getId();});
             first = true;
             item.root = root;
         } else {
@@ -425,14 +403,10 @@ var HeroListMenu = ListViewMenu.extend({
         }
     },
     updateItem: function (itemId, item) {
-        //var item = this.listView.getItems()[templateId];
-        console.log(itemId)
         item.setTag(itemId);
         item.removeAllChildren(true);
-        var itemData=this.items[itemId];
+        var itemData=this.items[itemId>=this.items.length?this.items.length-1:itemId];
         var ite=itemData['root'];
-        item.setPositionX(ite.getPositionX());
-        //item.width = ite.width;
         item.height = ite.height;
         item.addChild(ite);
         if(itemData['type']===this.HERO_ITEM){
