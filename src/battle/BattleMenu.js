@@ -214,7 +214,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
                 tip.toggle({
                     'beforeShow':[
-                        cc.hide(),  cc.delayTime(0.1)],'delay':2.0,
+                        cc.hide(),  cc.delayTime(0.05)],'delay':2.0,
                     'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 '+ CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
                 PlayerData.updatePlayer();

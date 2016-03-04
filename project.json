@@ -46,6 +46,7 @@
     "src/battle/StatisticsUnit.js",
     "src/battle/OfflineRewardUnit.js",
     "src/battle/CheckInUnit.js",
+    "src/battle/MailUnit.js",
     "src/apps.js"
   ]
 }

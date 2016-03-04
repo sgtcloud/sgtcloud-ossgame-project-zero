@@ -126,6 +126,10 @@ var PlayerData = {
     modelSave: null,
     sequence: [],
     serverCurrentTime: 0,
+    mails: {
+        "readedMails": [],
+        "unreadMails": []
+    },
     init: function () {
         var localSave = localStorage.getItem("save");
         if (sgt && cc.isObject(sgt.context.user)) {
@@ -366,6 +370,12 @@ var PlayerData = {
         });
     },
 
+    updateMails: function(mails,type){
+        if(!cc.isArray(mails)){
+            return ;
+        }
+        mails.concat(this.mails[type]);
+    },
     heroes: [],
     stageData: {},
     globe_life_value: 0,

@@ -380,7 +380,14 @@ function showCover() {
     }
     bindButtonCallback(loginBtn, function () {
         showGame();
+        //验证角色签到数据，未签到则直接打开签到面板
         CheckInUnit.createByValidate();
+        //获取角色未删除邮件数据
+        MailUnit.getReadedAndUnreadedMails();
+        //轮询获取最新未读取邮件
+        setInterval(function(){
+            MailUnit.updatePlayerMails(10*1000);
+        },10*1000)
     });
     cc.director.runScene(scene);
 }
@@ -605,7 +612,7 @@ function getPlayerSave() {
 }
 
 //同步服务器时间
-function syncTime(){
+function syncTime(callback){
     sgt.RouterService.getCurrentTimestamp(function (result, data) {
         //player.first_time = data;
         if(result){
@@ -614,6 +621,8 @@ function syncTime(){
         }else{
             console.error('同步服务器时间失败');
         }
+        if(callback)
+            return callback(result);
     });
 }
 /**

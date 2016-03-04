@@ -153,7 +153,10 @@ var EquipListMenu = BattleMenu.extend({
                 }
                 equipNum_text.setString(count);
                 customEventHelper.bindListener(EVENT.UPGRADE_EQUIP_NUM, function (event) {
-                    equipNum_text.setString(event.getUserData());
+                    //console.log(333);
+                        tip.toggle({'beforeShow':[cc.hide(),cc.delayTime(0.1)]
+                            ,'delay':2.0,'text':'成功领取：' + 333});
+                    //equipNum_text.setString(event.getUserData());
                 });
                 equipNum_text.ignoreContentAdaptWithSize(true)
             } else {
@@ -252,7 +255,7 @@ var EquipListMenu = BattleMenu.extend({
                 elements.lock_btn = {};
                 elements.lock_btn.layer = lockLayer;
                 lockBtn.addClickEventListener(function () {
-                    tip.toggle('未达到解锁需求等级！');
+                    tip.toggle('未达到解锁需求等级！\n未达到解锁需求等级！\n未达到解锁需求等级！\n未达到解锁需求等级！\n未达到解锁需求等级！\n未达到解锁需求等级！\n未达到解锁需求等级！');
                 });
                 elements.upgrade_btn = {};
                 elements.upgrade_btn.layer = upgradeLayer;

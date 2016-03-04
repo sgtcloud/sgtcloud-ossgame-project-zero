@@ -49,6 +49,10 @@ var BattlePanel = cc.Node.extend({
             GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
         }.bind(this));
 
+        this.maill_btn = root.getChildByName('maill_btn');
+        bindButtonCallback(this.maill_btn, function () {
+            MailUnit.open();
+        }.bind(this));
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
