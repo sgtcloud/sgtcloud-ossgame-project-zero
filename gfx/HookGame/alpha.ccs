@@ -596,7 +596,14 @@
         <Folder Name="PVPUI">
           <Image Name="Ranking.png" />
           <Image Name="fight.png" />
+          <Image Name="pvp.png" />
+          <Image Name="surplus.png" />
+          <Image Name="buy.png" />
+          <Image Name="change.png" />
+          <Image Name="record.png" />
+          <Image Name="title.png" />
         </Folder>
+        <Project Name="PVPRecord.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

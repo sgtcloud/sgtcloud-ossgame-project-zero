@@ -35,8 +35,12 @@
           <FilePathData Path="RankLayer.csd" />
           <FilePathData Path="PVPOpponentView.csd" />
           <FilePathData Path="RankView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopListView.csd" />
+          <FilePathData Path="PVPRecord.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="PVPOpponentView.csd" />
+        <ActiveDocument Path="PVPRecord.csd" />
       </Value>
     </Item>
   </Properties>
