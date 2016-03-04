@@ -137,7 +137,10 @@ qq群：383461219
 * apps.js 程序通用工具类
 * Chance.js 随机数工具类
 * GamePopup.js 弹窗类
+* MainScene.js 构造和初始化主场景所有界面
 * LoaderScene.js 首屏加载类，重写了加载逻辑，支持ccs导出的动画和控件作为内容
+* Event.js 自定义事件类和工具方法
+* Data.js 数据读取工具方法类
 
 ##### 数据模型
 
@@ -147,6 +150,8 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 
 battle目录中包含了组成核心战斗场景的各个view model
 
+* 精灵层级和继承关系（从右向左）
+![关系图](http://h5.yoedge.com/BattleField.png)
 
 ##### 联网功能依赖
 
