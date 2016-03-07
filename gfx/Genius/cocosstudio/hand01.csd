@@ -27,7 +27,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="point" StartIndex="0" EndIndex="3">
-          <RenderColor A="150" R="128" G="128" B="128" />
+          <RenderColor A="255" R="128" G="128" B="128" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" ctype="GameNodeObjectData">
