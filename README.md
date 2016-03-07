@@ -1,6 +1,5 @@
 # 使用声明
 
-###
 本软件已经取得软件著作权，受到相关法律条例的保护，在未获得合法授权的情况下请勿私自用于任何用途。
 
 # 如何获得授权
@@ -8,7 +7,7 @@
 ### 个人开发者
 
 * 联系我们，把您的产品基本信息（含产品名称，介绍，截图或者视频，上线地址，联系方式等）通过邮件或者其他方式发送给我们
-* 在产品的启动页面上加上我们的标识素材
+* 在产品的启动页面上加上我们的[标识素材](http://pan.baidu.com/s/1kTXefyR)
 * 无论您的产品收益如何，我们都不收取任何费用
 
 ### 企业开发者
@@ -42,6 +41,12 @@ qq群：383461219
 * [xls2json](https://github.com/sgtcloud/xlsx2json)
 * [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
+
+### 获取代码
+
+本项目托管在github上，安装[git](https://git-scm.com/)之后运行
+    git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
+
 
 ### 项目目录
 
@@ -116,14 +121,37 @@ qq群：383461219
     gulp
     在public/html5下面构建出和cocos一致的发布
 
-使用gulp的构建脚本可以非常容易的定制自己的发布，我们建议您使用这种方式。
+使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
 
 
-### 项目代码导读
+### 项目源代码导读
+
+* 本游戏主要采用了cocos studio作为界面设计工具，加载导出的json文件来完成绝大部分的UI界面工作，例如CCSUnit
+* 本游戏参考了mvvm的软件架构模式，分离了model和view model两级模型，例如，Hero和HeroUnit
+* 本游戏采用了事件驱动的方式来解耦各个程序逻辑模块，例如Event
+* 本游戏通过sgtcloud提供的baas服务来实现联网逻辑，详见[sgtcloud](http://www.sgtcloud.cn)
+
+##### 根目录
+
+* main.js 程序入口类
+* apps.js 程序通用工具类
+* Chance.js 随机数工具类
+* GamePopup.js 弹窗类
+* MainScene.js 构造和初始化主场景所有界面
+* LoaderScene.js 首屏加载类，重写了加载逻辑，支持ccs导出的动画和控件作为内容
+* Event.js 自定义事件类和工具方法
+* Data.js 数据读取工具方法类
+
+##### 数据模型
+
+model目录中的大部分类都是通过加载data目录下的只读数据文件（*.json）和部分存档数据（Player.js中的player）构造出来的逻辑实体
 
 ##### 核心战斗模块
 
+battle目录中包含了组成核心战斗场景的各个view model
 
+* 精灵层级和继承关系（从右向左）
+![关系图](http://h5.yoedge.com/BattleField.png)
 
 ##### 联网功能依赖
 
