@@ -92,16 +92,19 @@
           </ScaleFrame>
         </Timeline>
         <Timeline ActionTag="921577910" Property="Position">
-          <PointFrame FrameIndex="12" X="-0.5299" Y="19.6778">
+          <PointFrame FrameIndex="9" X="75.0000" Y="20.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="15" X="0.0002" Y="29.9932">
+          <PointFrame FrameIndex="12" X="75.6631" Y="20.6425">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="18" X="0.0002" Y="39.9933">
+          <PointFrame FrameIndex="15" X="74.0865" Y="29.0288">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="21" X="0.0002" Y="50.9932">
+          <PointFrame FrameIndex="18" X="77.1220" Y="41.9221">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="21" X="79.9628" Y="50.9932">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -141,10 +144,19 @@
           <PointFrame FrameIndex="6" X="-25.0000" Y="0.0000">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="9" X="-140.0000" Y="0.0000">
+          <PointFrame FrameIndex="9" X="-108.0010" Y="1.0001">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="12" X="-219.7006" Y="24.4868">
+          <PointFrame FrameIndex="12" X="-145.0000" Y="25.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="15" X="-145.0000" Y="25.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="18" X="-145.0000" Y="25.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="21" X="-145.0000" Y="25.0000">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
@@ -205,26 +217,26 @@
             <FileData Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shine" ActionTag="921577910" Tag="14" IconVisible="False" LeftMargin="-40.5299" RightMargin="-39.4701" TopMargin="-43.1778" BottomMargin="-3.8222" ctype="SpriteObjectData">
-            <Size X="80.0000" Y="47.0000" />
+          <AbstractNodeData Name="shine" ActionTag="921577910" Tag="14" IconVisible="False" LeftMargin="-262.9135" RightMargin="-411.0865" TopMargin="-288.0288" BottomMargin="-229.9712" ctype="SpriteObjectData">
+            <Size X="674.0000" Y="518.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="-0.5299" Y="19.6778" />
+            <Position X="74.0865" Y="29.0288" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/shine00.png" Plist="" />
+            <FileData Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="word" ActionTag="961544020" Tag="9" IconVisible="False" LeftMargin="-193.1337" RightMargin="-179.8663" TopMargin="-77.8245" BottomMargin="-45.1755" ctype="SpriteObjectData">
-            <Size X="373.0000" Y="123.0000" />
+          <AbstractNodeData Name="word" ActionTag="961544020" Tag="9" IconVisible="False" LeftMargin="-145.0000" RightMargin="-298.0000" TopMargin="-114.0000" BottomMargin="-64.0000" ctype="SpriteObjectData">
+            <Size X="443.0000" Y="178.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="-193.1337" Y="16.3245" />
+            <Position X="-145.0000" Y="25.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/word04.png" Plist="" />
+            <FileData Type="Normal" Path="hero101skill01/fire.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
