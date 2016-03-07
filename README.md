@@ -4,13 +4,13 @@
 
 # 如何获得授权
 
-### 个人开发者
+### 非商业使用（教育，培训，私人学习）
 
 * 联系我们，把您的产品基本信息（含产品名称，介绍，截图或者视频，上线地址，联系方式等）通过邮件或者其他方式发送给我们
 * 在产品的启动页面上加上我们的[标识素材](http://pan.baidu.com/s/1kTXefyR)
 * 无论您的产品收益如何，我们都不收取任何费用
 
-### 企业开发者
+### 商业使用（包含但不限于通过销售，联运，广告等直接或者间接获得商业利益）
 
 * 联系我们，把您的产品基本信息（含产品名称，介绍，截图或者视频，上线地址，联系方式等）通过邮件或者其他方式发送给我们
 * 提供贵公司的基本信息，并且签署一份软件授权使用协议，该协议是完全免费的
@@ -27,6 +27,18 @@ qq群：383461219
 
 [在线文档地址](https://www.gitbook.com/book/sgtcloud/project-nova-0-doc/details)
 
+### 产品内容和特色
+
+* 5个各具特色的主角
+* 40多个可升级技能，10种主动技能，含单体，群体伤害，回复和buff类
+* 10多个关卡，5种敌人，10余种掉落奖励
+* 30多种可升级装备，每种掉落奖励都可以用来升级对应的装备
+* 详尽的数据统计面板和行囊面板
+* 离线战斗收益，关掉浏览器也能打怪升级
+* 紧张的30秒Boss战，赢取丰厚的关卡掉落
+* 在线通关和金币排行榜
+* 新手引导
+
 ### 在线演示
 
 [点击打开](http://h5dev.yoedge.com/ossgame/publish/html5/index.html)
@@ -42,9 +54,29 @@ qq群：383461219
 * [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
 
+### 手机浏览器兼容
+
+你可以提交你的测试结果给我们，我们会更新到这张列表中
+
+机型 | UC | 360 | QQ | 猎豹 | 百度 | 搜狗 | 原生 | 微信
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+小米 3 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+小米 Note Pro | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+魅蓝 Note | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+酷派 F1 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+IUNI U3 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPad Air | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 5 | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 6 Plus | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 6S | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
+
+*需要刷新一次页面才能正常进入
+
 ### 获取代码
 
 本项目托管在github上，安装[git](https://git-scm.com/)之后运行
+
     git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
 
 
@@ -114,11 +146,15 @@ qq群：383461219
 首先确认自己安装了[Nodejs](http://nodejs.org/)环境。
 
 * 运行
+
     npm install --save-dev gulp del gulp-cache gulp-concat gulp-debug gulp-image gulp-json-editor gulp-replace gulp-sourcemaps gulp-uglify vinyl-buffer vinyl-source-stream
+
     安装需要的软件
 
 * 运行
+
     gulp
+
     在public/html5下面构建出和cocos一致的发布
 
 使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
