@@ -41,11 +41,12 @@
     "src/GamePopup.js",
     "src/battle/ChestUnit.js",
     "src/battle/FairyUnit.js",
-    "src/ui/PackUnit.js",
-    "src/ui/StatisticsUnit.js",
-    "src/ui/OfflineRewardUnit.js",
-    "src/ui/CheckInUnit.js",
-    "src/battle/MailUnit.js",
+    "src/ui/PackPanel.js",
+    "src/ui/StatisticsPanel.js",
+    "src/ui/OfflineRewardPanel.js",
+    "src/ui/CheckInPanel.js",
+    "src/ui/MailPanel.js",
+    "src/NetWork.js",
     "src/apps.js"
   ]
 }

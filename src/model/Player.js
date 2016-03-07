@@ -132,7 +132,7 @@ var PlayerData = {
     },
     init: function () {
         var localSave = localStorage.getItem("save");
-        if (sgt && cc.isObject(sgt.context.user)) {
+        if (NetWork.isLoginSuccess()) {
             if (cc.isObject(this.modelSave)) {
                 localSave = this.modelSave.content;
             } else {
@@ -164,47 +164,19 @@ var PlayerData = {
             //}
         }
         if (!player.first_time) {
-            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
             player.first_time = PlayerData.getServerTime();
-            //console.log('同步服务器时间：' + data);
-            //});
-            //player.first_time = Date.parse(new Date());
         }
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
         setInterval(function () {
-            if (cc.isArray(this.sequence) && this.sequence.length > 0) {
-                var playerExtra = new SgtApi.PlayerExtra();
-                playerExtra.content = JSON.stringify(player);
-                playerExtra.playerId = player.id;
-                sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
-                    console.log('上传存档：' + result + ",内容为" + data);
-                });
-                this.sequence = [];
-            }
+            NetWork.updatePlayerSave();
         }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
-        localStorage.setItem("save", JSON.stringify(player));
-        if (sgt) {
-            this.sequence.push(player);
-            if (this.modelPlayer.level != player.heroes[0].lv) {
-                this.modelPlayer.level = player.heroes[0].lv;
-                sgt.PlayerService.update(this.modelPlayer, function (result, data) {
-                });
-            }
-        }
+        NetWork.updatePlayer(this.modelPlayer);
     }
     ,
-    updateLeaderBoardScore: function (stageNum, leaderId) {
-        SgtApi.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum, function (result, data) {
-            /*if (result) {
-             console.log('您更新的角色: ' + data.player.name + ' ,分数 ' + data.score + ', 排名 ' + (data.index + 1));
-             }*/
-            //customEventHelper.sendEvent(EVENT.UPDATE_SELF_RANK,{leaderId:leaderId});
-        });
-    },
     getHeroes: function () {
         return this.heroes;
     },
@@ -288,12 +260,7 @@ var PlayerData = {
     }
     ,
     updateIntoBattleTime: function () {
-        //sgt.RouterService.getCurrentTimestamp(function (result, data) {
         player.into_stage_battle_timestamp = PlayerData.getServerTime();
-        //console.log('updateIntoBattleTime时间：' + player.into_stage_battle_timestamp);
-        //});
-        //player.into_stage_battle_timestamp = Date.parse(new Date());
-        //this.updatePlayer();
     }
     ,
     getIntoBattleTime: function () {
@@ -369,13 +336,6 @@ var PlayerData = {
             PlayerData.updatePlayer();
         });
     },
-
-    updateMails: function(mails,type){
-        if(!cc.isArray(mails)){
-            return ;
-        }
-        mails.concat(this.mails[type]);
-    },
     heroes: [],
     stageData: {},
     globe_life_value: 0,
@@ -443,21 +403,6 @@ var PlayerData = {
     refreshAllHerosProps: function () {
         for (var i in this.heroes) {
             this.heroes[i].refreshProps();
-        }
-    },
-    getCurrentRanksByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(PlayerData.modelPlayer)) {
-            SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
-        } else {
-            return callback(false);
-        }
-    }
-    ,
-    getMyRankByType: function (leaderId, callback) {
-        if (sgt && cc.isObject(PlayerData.modelPlayer)) {
-            SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, callback);
-        } else {
-            return callback(false);
         }
     }
     ,

@@ -53,32 +53,7 @@ cc.game.onStart = function () {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-    if (SgtApi) {
-        SgtApi.init({appId: 'h5game', async: true});
-        if (typeof wx != "undefined" && is_weixin()) {
-            SgtApi.WxCentralService.getSignature(function (result, data) {
-                if (result)
-                    autoWxLoginService(data);
-                else {
-                    console.error("获取签名失败");
-                    logErrorFalg = true;
-                    //autoLoginService();
-                }
-            });
-        } else {
-            autoLoginService();
-        }
-        //同步服务器时间
-        syncTime();
-        setInterval(function(){
-            PlayerData.serverCurrentTime += 100;
-            //console.log("当前时间：" + serverCurrentTime);
-        },100);
-        //同步服务器时间 10分钟校正服务器本地时间
-        setInterval(syncTime,600*1000);
-    } else {
-        quickLoginfalg = true;
-    }
+    NetWork.initAndAutoLogin();
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(/*cc.sys.os === cc.sys.OS_IOS ? true : false*/false);
     // Adjust viewport meta
@@ -90,7 +65,7 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        if(!logErrorFalg){
+        if(NetWork.isLoginSuccess()){
             initDatas();
             showCover();
         }

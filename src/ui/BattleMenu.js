@@ -293,14 +293,14 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
-            PlayerData.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
+            NetWork.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
                 myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
                         listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
-                    PlayerData.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
+                    NetWork.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
                         if (result && cc.isObject(data))
                             myNumText.setString(data.index + 1);
                     });
