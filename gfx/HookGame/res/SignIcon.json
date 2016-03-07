@@ -72,8 +72,8 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0313,
-                  "Y": 0.0313
+                  "X": 0.0312,
+                  "Y": 0.0312
                 },
                 "PreSize": {
                   "X": 0.9375,
@@ -179,11 +179,11 @@
                   "Plist": ""
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
+                  "ScaleX": 1.0,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 73.8279,
+                  "X": 90.3279,
                   "Y": 15.677
                 },
                 "Scale": {
@@ -193,7 +193,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.769,
+                  "X": 0.9409,
                   "Y": 0.1633
                 },
                 "PreSize": {
