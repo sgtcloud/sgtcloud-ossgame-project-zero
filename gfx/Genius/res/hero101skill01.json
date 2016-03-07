@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 24,
+        "Duration": 27,
         "Speed": 0.4167,
         "Timelines": [
           {
@@ -16,6 +16,87 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
                 },
@@ -40,6 +121,123 @@
                   "Type": 0
                 },
                 "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
+              },
+              {
+                "Alpha": 255,
+                "Color": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ColorFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -51,6 +249,78 @@
               {
                 "Value": 204,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 204,
+                "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
                 },
@@ -67,6 +337,87 @@
                 "X": 0.5,
                 "Y": 0.0,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 18,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
                 },
@@ -159,6 +510,15 @@
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 300.0,
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -243,6 +603,15 @@
                 "X": 100.0,
                 "Y": 0.1,
                 "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 100.0,
+                "Y": 0.1,
+                "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
                 },
@@ -342,6 +711,16 @@
                   "Plist": ""
                 },
                 "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/shine01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 27,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -511,6 +890,15 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.1,
+                "Y": 10.0,
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -606,6 +994,16 @@
                   "Plist": ""
                 },
                 "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/shine03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 27,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -696,6 +1094,15 @@
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
+              },
+              {
+                "X": -337.01,
+                "Y": 181.4102,
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -793,6 +1200,16 @@
                 "FrameIndex": 24,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 27,
+                "Tween": false,
+                "ctype": "TextureFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -819,7 +1236,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 24,
+          "EndIndex": 27,
           "Name": "show",
           "ctype": "AnimationInfoData"
         }
@@ -896,7 +1313,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
+              "X": -320.0,
               "Y": 300.0
             },
             "Scale": {
@@ -913,8 +1330,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -282.5,
-            "RightMargin": -922.5,
+            "LeftMargin": -922.5,
+            "RightMargin": -282.5,
             "TopMargin": -628.0,
             "BottomMargin": -28.0,
             "Tag": 17,
@@ -941,12 +1358,12 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 240.0,
-              "Y": 295.0
+              "X": -320.0,
+              "Y": 293.0
             },
             "Scale": {
-              "ScaleX": 0.1,
-              "ScaleY": 10.0
+              "ScaleX": 0.3,
+              "ScaleY": 0.3
             },
             "CColor": {},
             "IconVisible": false,
@@ -958,10 +1375,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -362.5,
-            "RightMargin": -842.5,
-            "TopMargin": -623.0,
-            "BottomMargin": -33.0,
+            "LeftMargin": -922.5,
+            "RightMargin": -282.5,
+            "TopMargin": -621.0,
+            "BottomMargin": -35.0,
             "Tag": 19,
             "ActionTag": 1139884138,
             "Size": {
@@ -974,7 +1391,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/hero02.png",
+              "Path": "hero101skill01/hero01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -985,8 +1402,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": -337.01,
-              "Y": 181.4102
+              "X": 160.0,
+              "Y": 181.91
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1002,15 +1419,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -337.01,
-            "RightMargin": 63.01,
-            "TopMargin": -374.4102,
-            "BottomMargin": -11.5898,
+            "LeftMargin": 160.0,
+            "RightMargin": -397.0,
+            "TopMargin": -349.91,
+            "BottomMargin": 13.91,
             "Tag": 16,
             "ActionTag": -1479021344,
             "Size": {
-              "X": 274.0,
-              "Y": 386.0
+              "X": 237.0,
+              "Y": 336.0
             },
             "Name": "hero",
             "ctype": "SpriteObjectData"
