@@ -192,6 +192,11 @@
           </ScaleFrame>
         </Timeline>
       </Animation>
+      <AnimationList>
+        <AnimationInfo Name="show" StartIndex="0" EndIndex="21">
+          <RenderColor A="150" R="220" G="220" B="220" />
+        </AnimationInfo>
+      </AnimationList>
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
@@ -206,10 +211,10 @@
             <FileData Type="Normal" Path="hero101skill01/bg.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hero" ActionTag="1721904345" Tag="12" IconVisible="False" LeftMargin="-310.0000" RightMargin="73.0000" TopMargin="-276.0000" BottomMargin="-60.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="1721904345" Tag="12" IconVisible="False" RightMargin="-237.0000" TopMargin="-276.0000" BottomMargin="-60.0000" ctype="SpriteObjectData">
             <Size X="237.0000" Y="336.0000" />
             <AnchorPoint />
-            <Position X="-310.0000" Y="-60.0000" />
+            <Position Y="-60.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -217,26 +222,26 @@
             <FileData Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shine" ActionTag="921577910" Tag="14" IconVisible="False" LeftMargin="-262.9135" RightMargin="-411.0865" TopMargin="-288.0288" BottomMargin="-229.9712" ctype="SpriteObjectData">
-            <Size X="674.0000" Y="518.0000" />
+          <AbstractNodeData Name="shine" ActionTag="921577910" Tag="14" IconVisible="False" LeftMargin="35.0000" RightMargin="-115.0000" TopMargin="-43.5000" BottomMargin="-3.5000" ctype="SpriteObjectData">
+            <Size X="80.0000" Y="47.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="74.0865" Y="29.0288" />
+            <Position X="75.0000" Y="20.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
+            <FileData Type="Normal" Path="hero101skill01/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="word" ActionTag="961544020" Tag="9" IconVisible="False" LeftMargin="-145.0000" RightMargin="-298.0000" TopMargin="-114.0000" BottomMargin="-64.0000" ctype="SpriteObjectData">
-            <Size X="443.0000" Y="178.0000" />
+          <AbstractNodeData Name="word" ActionTag="961544020" Tag="9" IconVisible="False" LeftMargin="215.0000" RightMargin="-321.0000" TopMargin="-58.0000" BottomMargin="-58.0000" ctype="SpriteObjectData">
+            <Size X="106.0000" Y="116.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="-145.0000" Y="25.0000" />
+            <Position X="215.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/fire.png" Plist="" />
+            <FileData Type="Normal" Path="hero101skill01/word01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

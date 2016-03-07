@@ -617,7 +617,14 @@
         ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 21,
+          "Name": "show",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 3,
         "Children": [
@@ -678,7 +685,7 @@
             },
             "AnchorPoint": {},
             "Position": {
-              "X": -310.0,
+              "X": 0.0,
               "Y": -60.0
             },
             "Scale": {
@@ -695,8 +702,7 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -310.0,
-            "RightMargin": 73.0,
+            "RightMargin": -237.0,
             "TopMargin": -276.0,
             "BottomMargin": -60.0,
             "Tag": 12,
@@ -711,7 +717,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/shine02.png",
+              "Path": "hero101skill01/shine00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -723,8 +729,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 74.0865,
-              "Y": 29.0288
+              "X": 75.0,
+              "Y": 20.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -740,15 +746,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -262.9135,
-            "RightMargin": -411.0865,
-            "TopMargin": -288.0288,
-            "BottomMargin": -229.9712,
+            "LeftMargin": 35.0,
+            "RightMargin": -115.0,
+            "TopMargin": -43.5,
+            "BottomMargin": -3.5,
             "Tag": 14,
             "ActionTag": 921577910,
             "Size": {
-              "X": 674.0,
-              "Y": 518.0
+              "X": 80.0,
+              "Y": 47.0
             },
             "Name": "shine",
             "ctype": "SpriteObjectData"
@@ -756,7 +762,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/fire.png",
+              "Path": "hero101skill01/word01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -767,8 +773,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": -145.0,
-              "Y": 25.0
+              "X": 215.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -784,15 +790,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -145.0,
-            "RightMargin": -298.0,
-            "TopMargin": -114.0,
-            "BottomMargin": -64.0,
+            "LeftMargin": 215.0,
+            "RightMargin": -321.0,
+            "TopMargin": -58.0,
+            "BottomMargin": -58.0,
             "Tag": 9,
             "ActionTag": 961544020,
             "Size": {
-              "X": 443.0,
-              "Y": 178.0
+              "X": 106.0,
+              "Y": 116.0
             },
             "Name": "word",
             "ctype": "SpriteObjectData"
