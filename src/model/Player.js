@@ -169,7 +169,7 @@ var PlayerData = {
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
-       /* setInterval(function () {
+        setInterval(function () {
             if (cc.isArray(this.sequence) && this.sequence.length > 0) {
                 var playerExtra = new SgtApi.PlayerExtra();
                 playerExtra.content = JSON.stringify(player);
@@ -179,10 +179,10 @@ var PlayerData = {
                 });
                 this.sequence = [];
             }
-        }.bind(this), 10 * 1000);*/
+        }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
-       /* localStorage.setItem("save", JSON.stringify(player));
+        localStorage.setItem("save", JSON.stringify(player));
         if (sgt) {
             this.sequence.push(player);
             if (this.modelPlayer.level != player.heroes[0].lv) {
@@ -190,7 +190,7 @@ var PlayerData = {
                 sgt.PlayerService.update(this.modelPlayer, function (result, data) {
                 });
             }
-        }*/
+        }
     }
     ,
     updateLeaderBoardScore: function (stageNum, leaderId) {

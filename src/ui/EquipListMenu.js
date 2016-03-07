@@ -4,6 +4,7 @@
 var EquipListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.equip_layer_json);
+        this._spawnCount=5;
         this.heroList = this.root.getChildByName('equip_list');
         this.heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         this.equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
@@ -347,9 +348,7 @@ var EquipListMenu = ListViewMenu.extend({
                 setTimeout(function () {
                     that.pause();
                     that.buildEquipMenuIfUnlocked(_hero, first);
-                    var totalHeight = that._itemTemplateHeight * that._totalCount /*+ (this._totalCount - 1) * 4*/;
-                    that.listView.getInnerContainer().setContentSize(cc.size(that.listView.getInnerContainerSize().width, totalHeight));
-                    that._lastContentPosY = that.listView.getInnerContainer().getPosition().y;
+                    that.updateInnerContainerSize();
                     that.resume();
                 }, 300);
             }

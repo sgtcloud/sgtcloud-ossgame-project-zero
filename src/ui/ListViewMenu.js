@@ -89,5 +89,9 @@ var ListViewMenu = BattleMenu.extend({
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this.listView.jumpToTop();
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
+    },updateInnerContainerSize:function(){
+        var totalHeight = this._itemTemplateHeight * this._totalCount;
+        this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
+        this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     }
 });
