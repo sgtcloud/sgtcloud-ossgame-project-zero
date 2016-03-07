@@ -331,10 +331,12 @@ var PlayerData = {
     },
 
     updateHeroDeadTime: function (id) {
-        sgt.RouterService.getCurrentTimestamp(function (result, data) {
-            player['time']['die'][id] = data;
-            PlayerData.updatePlayer();
-        });
+        if (!player['time']['die'][id]) {
+            sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                player['time']['die'][id] = data;
+                PlayerData.updatePlayer();
+            });
+        }
     },
     heroes: [],
     stageData: {},

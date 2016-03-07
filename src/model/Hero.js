@@ -13,8 +13,8 @@ var Hero = function (heroData) {
     }
     customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
         var hero = data.getUserData();
-        if (hero.getId() === this.getId()) {
-            PlayerData.updateHeroDeadTime(this.getId());
+        if (hero.getId() === id) {
+            PlayerData.updateHeroDeadTime(id);
         }
     }.bind(this));
     customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {

@@ -32,6 +32,7 @@
     "src/ui/TabContainer.js",
     "src/MainScene.js",
     "src/ui/BattleMenu.js",
+    "src/ui/ListViewMenu.js",
     "src/ui/SkillListMenu.js",
     "src/ui/HeroListMenu.js",
     "src/ui/EquipListMenu.js",

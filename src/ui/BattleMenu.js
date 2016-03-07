@@ -16,6 +16,8 @@ var BattleMenu = cc.Node.extend({
     }
 });
 
+
+
 function canUnlockItem(hero, target) {
     var heroLv = hero.getLv();
     var unlockLevel = target.getUnlockLevel();
@@ -132,10 +134,10 @@ var ShopLayerMenu = BattleMenu.extend({
         this.buyGold = function (gem, gold, flag) {
             var content = '购买成功';
             if (PlayerData.getAmountByUnit("gem") >= gem) {
-                var updateRes =  [PlayerData.createResourceData("gold", gold)
+                var updateRes = [PlayerData.createResourceData("gold", gold)
                     , PlayerData.createResourceData("gem", -gem)];
                 PlayerData.updateResource(updateRes);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, updateRes);
                 PlayerData.updatePlayer();
                 if (flag) {
                     return;
@@ -211,11 +213,11 @@ var ShopLayerMenu = BattleMenu.extend({
             if (PlayerData.getAmountByUnit(price.unit) >= price.value) {
                 var updateRes = [PlayerData.createResourceData(price.unit, -price.value), PlayerData.createResourceData(goods.propId, goods.num)];
                 PlayerData.updateResource(updateRes);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, updateRes);
                 tip.toggle({
-                    'beforeShow':[
-                        cc.hide(),  cc.delayTime(0.05)],'delay':2.0,
-                    'text':'成功购买 '+ CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 '+ CONSTS.resources_mapping[price.unit] + " * " + price.value
+                    'beforeShow': [
+                        cc.hide(), cc.delayTime(0.1)], 'delay': 2.0,
+                    'text': '成功购买 ' + CONSTS.resources_mapping[goods.propId] + " * " + goods.num + ' 花费 ' + CONSTS.resources_mapping[price.unit] + " * " + price.value
                 });
                 PlayerData.updatePlayer();
             } else {
