@@ -4,10 +4,10 @@
 var HeroListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.hero_layer_json);
-        this.heroList = this.root.getChildByName('hero_list');
+        this.listView = this.root.getChildByName('hero_list');
         this._heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         this._skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
-        this.setListView(this.heroList);
+        //this.setListView(this.listView);
         this._skillTemp.setPositionX(this._heroTemp.width-this._skillTemp.width);
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
@@ -22,7 +22,7 @@ var HeroListMenu = ListViewMenu.extend({
         var default_item = new ccui.Layout();
         default_item.setTouchEnabled(true);
         default_item.setContentSize(this._heroTemp.getContentSize());
-        default_item.width = this.heroList.width;
+        default_item.width = this.listView.width;
         default_item.height = this._skillTemp.height;
         this.itemModel=default_item;
         this.setItemModel(this._skillTemp);
@@ -55,8 +55,10 @@ var HeroListMenu = ListViewMenu.extend({
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
                         setTimeout(function () {
+                            that.pause();
                             that.buildHeroMenu(_hero);
                             that.updateInnerContainerSize();
+                            that.resume();
                         }, 100);
                     }
                 });
@@ -377,13 +379,13 @@ var HeroListMenu = ListViewMenu.extend({
             Array.prototype.push.apply(this.items, item);
         }
         var _heroView = this._buildHeroView(item[0], cb);
-        if (this.heroList.getItems().length < this._spawnCount) {
+        if (this.listView.getItems().length < this._spawnCount) {
             var model=this.itemModel.clone();
             model.setPositionX(_heroView.getPositionX());
             model.height = _heroView.height;
             model.addChild(_heroView);
             model.setTag(this._totalCount);
-            this.heroList.pushBackCustomItem(model);
+            this.listView.pushBackCustomItem(model);
         }
         this._totalCount++;
         for (var j = 0; j < heroData.getSkillCount(); j++) {
@@ -396,13 +398,13 @@ var HeroListMenu = ListViewMenu.extend({
                 Array.prototype.push.apply(this.items, skillItem);
             }
             var _skillView = this._buildSkillView(skillItem[0]);
-            if (this.heroList.getItems().length < this._spawnCount) {
+            if (this.listView.getItems().length < this._spawnCount) {
                 var model=this.itemModel.clone();
                 model.setPositionX(_skillView.getPositionX());
                 model.height = _skillView.height;
                 model.addChild(_skillView);
                 model.setTag(this._totalCount);
-                this.heroList.pushBackCustomItem(model);
+                this.listView.pushBackCustomItem(model);
             }
             this._totalCount++;
         }
