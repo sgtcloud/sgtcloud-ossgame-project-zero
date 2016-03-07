@@ -1,7 +1,7 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var StatisticsUnit = cc.Node.extend({
+var StatisticsPanel = cc.Node.extend({
     ctor: function () {
         this._super();
         this.statisticsLayer = ccs.csLoader.createNode(res.statistics_layer);

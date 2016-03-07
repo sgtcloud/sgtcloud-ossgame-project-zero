@@ -1,7 +1,7 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var OfflineRewardUnit = cc.Node.extend({
+var OfflineRewardPanel = cc.Node.extend({
     ctor: function (btn) {
         this._super();
         var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
