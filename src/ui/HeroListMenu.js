@@ -252,7 +252,8 @@ var HeroListMenu = ListViewMenu.extend({
         });
         if (first) {
             setFont([heroName_text, elements.upgrade_btn.buff_text]);
-            this._bindHeroMenuListener(elements, hero);
+            var temp=hero;
+            this._bindHeroMenuListener(elements, temp);
         }
         if ((hero.getLv() > 0 && hero.getCurrentLife() > 0) || hero.getLv() == 0) {
             elements.die_text.setVisible(false);
@@ -286,12 +287,16 @@ var HeroListMenu = ListViewMenu.extend({
             }
         });
         if (typeof cb === 'function') {
-            cb();
+            cb(hero,root);
         }
         refeshUpgradeLayer(hero, elements);
+        if(!hero.isLocked()&&hero.getCurrentLife()<=0&&hero.getLv()>0){
+            customEventHelper.sendEvent(EVENT.HERO_DIE,hero);
+        }
         return root;
     },
-    _bindHeroMenuListener: function (elements, hero) {
+    _bindHeroMenuListener: function (elements, target) {
+        var hero=target;
         customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
             var data = event.getUserData();
             if (data['id'] === hero.getId()) {
@@ -314,11 +319,11 @@ var HeroListMenu = ListViewMenu.extend({
             var dieHero = event.getUserData();
             var heroId = dieHero.getId();
             if (heroId === hero.getId()) {
-                PlayerData.updateHeroDeadTime(heroId);
                 elements.die_text.setVisible(true);
                 elements.die_time_text.setVisible(true);
                 elements.revive_btn.layer.setVisible(true);
-                elements.upgrade_btn.layer.isVisible() && elements.upgrade_btn.layer.setVisible(false);
+                elements.upgrade_btn.layer.setVisible(false);
+                elements.maxLevel_btn.layer.setVisible(false);
                 elements.icon.setColor(cc.color(90, 90, 90));
                 var resurge = hero.getResurge();
                 var costValue = parseInt(resurge['value']);
