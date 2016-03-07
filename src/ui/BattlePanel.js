@@ -30,13 +30,13 @@ var BattlePanel = cc.Node.extend({
 
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
-            GamePopup.openPopup(new StatisticsUnit(), cc.p(320, 580), false);
+            GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
         }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 
         bindButtonCallback(this.rewardBtn, function () {
             //open offlineReward popup
-            GamePopup.openPopup(new OfflineRewardUnit(this.rewardBtn));
+            GamePopup.openPopup(new OfflineRewardPanel(this.rewardBtn));
         }.bind(this));
         this.loadRewardBtn();
 
@@ -49,6 +49,10 @@ var BattlePanel = cc.Node.extend({
             GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
         }.bind(this));
 
+        this.maill_btn = root.getChildByName('maill_btn');
+        bindButtonCallback(this.maill_btn, function () {
+            MailPanel.open();
+        }.bind(this));
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
