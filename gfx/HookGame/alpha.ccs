@@ -257,6 +257,7 @@
           <Image Name="sign_sure.png" />
           <Image Name="sign_sure1.png" />
           <Image Name="sign.png" />
+          <Image Name="hand.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -604,6 +605,7 @@
           <Image Name="title.png" />
         </Folder>
         <Project Name="PVPRecord.csd" Type="Layer" />
+        <Project Name="GuideHand.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
