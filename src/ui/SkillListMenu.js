@@ -242,44 +242,6 @@ var BloodBox = cc.Class.extend({
                 btn.setBright(false);
             }
         };
-        /*var i = 0;
-        var drawMaskLayer = function (root, node) {
-            var drawNode = new cc.DrawNode();
-            //root.addChild(drawNode, 1000);
-            drawNode.clear()
-            drawNode.ctor();
-            var radius = Math.min(node.width, node.height) / 2 + 0.5;
-            var color = cc.color(0, 0, 0, 100);
-            var center = cc.p(node.getPositionX() + node.width / 2, node.height / 2);
-            drawNode.drawDot(center, radius, color);
-            drawNode.drawCircle(center, radius, 360, 60, false, node.width, color);
-            return drawNode;
-        };
-        var MaskLayer = cc.LayerColor.extend({
-            m_touchListener: null,
-            ctor: function () {
-                this._super();
-                var touchListener = {
-                    event: cc.EventListener.TOUCH_ONE_BY_ONE,
-                    swallowTouches: true,
-                    onTouchBegan: this.onTouchBegan,
-                    isTouchInside: function (owner, touch) {
-                        if (!owner || !owner.getParent()) {
-                            return false;
-                        }
-                        var touchLocation = touch.getLocation(); // Get the touch position
-                        touchLocation = owner.getParent().convertToNodeSpace(touchLocation);
-                        return cc.rectContainsPoint(owner.getBoundingBox(), touchLocation);
-                    }
-                };
-                cc.eventManager.addListener(touchListener, this);
-                this.m_touchListener = touchListener;
-            },
-            onTouchBegan: function (touch, event) {
-                var target = event.getCurrentTarget();
-                return !target.isVisible() || (!this.isTouchInside(target, touch));
-            }
-        });*/
         var that = this;
         var initBtn = function (btn, text, data) {
             btn.setEnabled(true);
@@ -353,7 +315,6 @@ var SkillListMenu = BattleMenu.extend({
             atk_text.setString(Math.floor(totalAttack));
         });
         var skillIconTemplate = ccs.csLoader.createNode(res.skill_icon_json).getChildByName('root');
-        //var skills = [];
         var heroes = PlayerData.getHeroes();
         var index = 0;
         for (var q in heroes) {

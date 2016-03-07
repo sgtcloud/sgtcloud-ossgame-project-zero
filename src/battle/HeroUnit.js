@@ -146,12 +146,13 @@ var HeroUnit = BattleUnit.extend({
         this._super();
         if (this.hero.getCurrentLife() <= 0) {
             var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
-            // todo make the current time to be a certain server time
             var currentTime = PlayerData.getServerTime();
-            var recoverTime = this.hero.getRecover() * 1000-(currentTime - dieTime );
+            var recoverTime = this.hero.getRecover()-(currentTime - dieTime )/ 1000;
+            // todo make the current time to be a certain server time
+            console.log(this.hero.getId()+' dieTime : '+dieTime +',recoverTime:'+recoverTime )
             if (recoverTime > 0) {
                 // convert millisecond to second
-                this.onDead(recoverTime / 1000);
+                this.onDead(recoverTime );
             }else {
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
