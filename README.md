@@ -41,7 +41,7 @@ qq群：383461219
 
 ### 在线演示
 
-[点击打开](http://h5dev.yoedge.com/ossgame/publish/html5/index.html)
+[点击打开](http://h5.yoedge.com/ossgame/publish/html5/index.html)
 
 或者扫描二维码
 

@@ -101,7 +101,9 @@ var res = {
     tombstone_json: "res/dead.json",
     sign_icon: 'res/SignIcon.json',
     sign_layer: 'res/SignLayer.json',
-    sign_view: 'res/SignView.json'
+    sign_view: 'res/SignView.json',
+
+    hero101skill:'res/hero101skill01.json'
 };
 
 

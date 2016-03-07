@@ -131,6 +131,13 @@ var ActiveSkill = cc.Class.extend({
     },
 
     cast: function () {
+        var heroShowUnit = CCSUnit.create(res.hero101skill);
+        heroShowUnit.setPosition(320, 60);
+        //heroShowUnit.runAction(cc.speed(heroShowUnit.animation, 2));
+        heroShowUnit.playAnimation('show', false, function () {
+            heroShowUnit.removeFromParent(true);
+        });
+        this.battle.addSprite(heroShowUnit, 3000);
         if (!this.firstCastTime) {
             this.firstCastTime = new Date().getTime();
         }
