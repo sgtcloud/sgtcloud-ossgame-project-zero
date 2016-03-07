@@ -345,8 +345,12 @@ var EquipListMenu = ListViewMenu.extend({
             var heroId = event.getUserData()['heroId'];
             if (heroId === _hero.getId() && _hero.getLv() === 1) {
                 setTimeout(function () {
+                    that.pause();
                     that.buildEquipMenuIfUnlocked(_hero, first);
-                    that.updateInnerContainerSize();
+                    var totalHeight = that._itemTemplateHeight * that._totalCount /*+ (this._totalCount - 1) * 4*/;
+                    that.listView.getInnerContainer().setContentSize(cc.size(that.listView.getInnerContainerSize().width, totalHeight));
+                    that._lastContentPosY = that.listView.getInnerContainer().getPosition().y;
+                    that.resume();
                 }, 300);
             }
         });
@@ -407,43 +411,32 @@ var EquipListMenu = ListViewMenu.extend({
         if (item.length === 0) {
             var obj = {target: equipData, relation: heroData, type: this.EQUIP_MAGIC_ITEM};
             item.push(obj);
-            Array.prototype.push.apply(this.items, item);
             this.items.splice(index, 0, obj);
         }
         if (typeof  item['index'] === 'undefined') {
-            item['index'] = index;
+            item[0]['index'] = index;
         }
         var _equipView = this._buildEquipView(item[0]);
-        //if (this.heroList.getItems().length < this._spawnCount) {
         var model = this.itemModel.clone();
         model.setPositionX(_equipView.getPositionX());
         model.height = _equipView.height;
-        //model.addChild(_equipView);
+        model.addChild(_equipView);
         model.setTag(this._totalCount);
         this.heroList.insertCustomItem(model, index);
-        this._spawnCount++;
+        this.heroList.removeLastItem();
         this._totalCount++;
         var items = this.listView.getItems();
         var totalHeight = this._itemTemplateHeight * this._totalCount
         for (var k in items) {
-            //var data=this.items[k];
-            //}
             var ite = items[k];
             ite.setPositionY(totalHeight-k*ite.height);
             this.updateItem(k, ite);
         }
-        this.heroList.refreshView();
-        this.updateInnerContainerSize();
-        this.heroList.jumpToTop();
-        this.scheduleUpdate();
+        this.onEnter();
+        this.resume();
     }, updateItem: function (itemId, item) {
-        console.log(itemId)
         var itemData = this.items[itemId >= this.items.length ? this.items.length - 1 : itemId];
         var ite = itemData['root'];
-        /*if (itemData['type'] === this.EQUIP_MAGIC_ITEM) {
-         this._buildEquipView(itemData);
-         return ;
-         }*/
         item.setTag(itemId);
         item.removeAllChildren(true);
         item.height = ite.height;

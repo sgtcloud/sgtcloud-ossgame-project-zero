@@ -3,7 +3,7 @@
  */
 var ListViewMenu = BattleMenu.extend({
     _bufferZone: 50,
-    _updateInterval: 0.01,
+    _updateInterval: 0.1,
     _initializeListSize: false,
     items: null,
     HERO_ITEM: "hero-item",
@@ -14,7 +14,7 @@ var ListViewMenu = BattleMenu.extend({
         this._super(tabPanel, res);
         this.items = [];
         this._totalCount = 0;
-        this._spawnCount = 6;
+        this._spawnCount = 7;
         this._itemTemplateHeight = 0;
         this._lastContentPosY = 0;
         this._updateTimer = 0;
@@ -45,7 +45,6 @@ var ListViewMenu = BattleMenu.extend({
         //btn.setTitleText(this.items[itemID]);
     },
     getItemPositionYInView: function (item) {
-        3
         var worldPos = item.getParent().convertToWorldSpaceAR(item.getPosition());
         var viewPos = this.listView.convertToNodeSpaceAR(worldPos);
         return viewPos.y;
@@ -89,11 +88,6 @@ var ListViewMenu = BattleMenu.extend({
         var totalHeight = this._itemTemplateHeight * this._totalCount /*+ (this._totalCount - 1) * 4*/;
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this.listView.jumpToTop();
-        this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
-    }, updateInnerContainerSize: function () {
-        this.listView.forceDoLayout();
-        var totalHeight = this._itemTemplateHeight * this._totalCount /*+ (this._totalCount - 1) * 4*/;
-        this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     }
 });
