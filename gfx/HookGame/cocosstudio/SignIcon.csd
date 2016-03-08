@@ -41,11 +41,11 @@
               </AbstractNodeData>
               <AbstractNodeData Name="num" ActionTag="1646219327" Tag="90" IconVisible="False" LeftMargin="57.3279" RightMargin="5.6721" TopMargin="71.3230" BottomMargin="6.6770" LabelText="99" ctype="TextBMFontObjectData">
                 <Size X="33.0000" Y="18.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="73.8279" Y="15.6770" />
+                <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+                <Position X="90.3279" Y="15.6770" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7690" Y="0.1633" />
+                <PrePosition X="0.9409" Y="0.1633" />
                 <PreSize X="0.3438" Y="0.1875" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
               </AbstractNodeData>

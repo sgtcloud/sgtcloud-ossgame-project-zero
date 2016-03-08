@@ -271,53 +271,6 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white10-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5152,
-                  "ScaleY": 0.5168
-                },
-                "Position": {
-                  "X": 367.4811,
-                  "Y": 708.0499
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 22,
-                  "G": 240,
-                  "B": 10
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5742,
-                  "Y": 0.8233
-                },
-                "PreSize": {
-                  "X": 0.0891,
-                  "Y": 0.0209
-                },
-                "LeftMargin": 338.1147,
-                "RightMargin": 244.8853,
-                "TopMargin": 143.2525,
-                "BottomMargin": 698.7475,
-                "CallBackType": "Touch",
-                "Tag": 283,
-                "ActionTag": -537533334,
-                "Size": {
-                  "X": 57.0,
-                  "Y": 18.0
-                },
-                "Name": "myNum_text",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
                 "FileData": {
                   "Type": "MarkedSubImage",
                   "Path": "rankUI/myRank_text.png",
@@ -356,6 +309,53 @@
                 },
                 "Name": "my_text",
                 "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "9999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white10-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5152,
+                  "ScaleY": 0.5168
+                },
+                "Position": {
+                  "X": 367.4814,
+                  "Y": 708.6088
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 22,
+                  "G": 240,
+                  "B": 10
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5742,
+                  "Y": 0.824
+                },
+                "PreSize": {
+                  "X": 0.0891,
+                  "Y": 0.0209
+                },
+                "LeftMargin": 338.115,
+                "RightMargin": 244.885,
+                "TopMargin": 142.6937,
+                "BottomMargin": 699.3063,
+                "CallBackType": "Touch",
+                "Tag": 283,
+                "ActionTag": -537533334,
+                "Size": {
+                  "X": 57.0,
+                  "Y": 18.0
+                },
+                "Name": "myNum_text",
+                "ctype": "TextBMFontObjectData"
               },
               {
                 "FileData": {
@@ -996,7 +996,7 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0312,
+                  "X": 0.0313,
                   "Y": 0.1349
                 },
                 "PreSize": {

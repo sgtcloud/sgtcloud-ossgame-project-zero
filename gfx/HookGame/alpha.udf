@@ -39,8 +39,13 @@
           <FilePathData Path="ShopLayer.csd" />
           <FilePathData Path="ShopListView.csd" />
           <FilePathData Path="PVPRecord.csd" />
+          <FilePathData Path="GuideGirl.csd" />
+          <FilePathData Path="Guide.csd" />
+          <FilePathData Path="GuideHand.csd" />
+          <FilePathData Path="SignIcon.csd" />
+          <FilePathData Path="ItemLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="PVPRecord.csd" />
+        <ActiveDocument Path="ItemLayer.csd" />
       </Value>
     </Item>
   </Properties>
