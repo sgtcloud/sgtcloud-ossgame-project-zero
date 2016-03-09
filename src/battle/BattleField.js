@@ -313,8 +313,6 @@ var BattleField = cc.Class.extend({
     },
 
     initBattleEnemies: function (stage) {
-
-        this.enemyUnits.clear();
         var enemiesData;
         if (stage.isBossBattle()) {
             enemiesData = stage.getBossData();
@@ -325,12 +323,14 @@ var BattleField = cc.Class.extend({
     },
 
     addEnemyIntoBattle: function (enemiesData, bossBattle) {
+        this.enemyUnits.clear();
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             if (bossBattle) {
                 enemy.setScale(-1.5, 1.5);
             }
+            enemy.setName('enemy');
             this.enemyUnits.push(enemy);
             var startPos = cc.p(this.container.width, this.container.height * 3 / 4);
             enemy.setPosition(startPos);

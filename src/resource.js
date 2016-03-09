@@ -102,11 +102,14 @@ var res = {
     sign_icon: 'res/SignIcon.json',
     sign_layer: 'res/SignLayer.json',
     sign_view: 'res/SignView.json',
-    maill_view_json:'res/MaillView.json',
+    maill_view_json: 'res/MaillView.json',
     maill_layer_json: 'res/MaillLayer.json',
 
+    hero101skill: 'res/hero101skill01.json',
 
-    hero101skill:'res/hero101skill01.json'
+    guideMsgBox: 'res/Guide.json',
+    guideGirl: 'res/GuideGirl.json',
+    guideHand: 'res/GuideHand.json'
 };
 
 

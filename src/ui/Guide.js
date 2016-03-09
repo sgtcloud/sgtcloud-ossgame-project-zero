@@ -11,12 +11,12 @@ sz.Locator = {
      * @param locator
      * @returns {Array}
      */
-    parse: function(locator) {
+    parse: function (locator) {
         cc.assert(locator, 'locator string is null');
 
         //使用正则表达示分隔名字
         var names = locator.split(/[.,//,>,#]/g);
-        var segments = names.map(function(name) {
+        var segments = names.map(function (name) {
             var index = locator.indexOf(name);
             var symbol = locator[index - 1] || '>';
             return {symbol: symbol, name: name.trim()};
@@ -30,7 +30,7 @@ sz.Locator = {
      * @param name
      * @returns {*}
      */
-    seekNodeByName: function(root, name) {
+    seekNodeByName: function (root, name) {
         if (!root)
             return null;
         if (root.getName() == name)
@@ -74,7 +74,7 @@ sz.Locator = {
      * @param locator
      * @param cb
      */
-    locateNode: function(root, locator, cb) {
+    locateNode: function (root, locator, cb) {
         var segments = this.parse(locator);
         cc.assert(segments && segments.length);
         cc.log('guide locateNode:' + locator);
@@ -83,10 +83,18 @@ sz.Locator = {
         for (var i = 0; i < segments.length; i++) {
             var item = segments[i];
             switch (item.symbol) {
-                case '/': child = node.getChildByName(item.name); break;
-                case '.': child = node[item.name]; break;
-                case '>': child = this.seekNodeByName(node, item.name); break;
-                case '#': child = this.seekNodeByTag(node, item.name); break;
+                case '/':
+                    child = node.getChildByName(item.name);
+                    break;
+                case '.':
+                    child = node[item.name];
+                    break;
+                case '>':
+                    child = this.seekNodeByName(node, item.name);
+                    break;
+                case '#':
+                    child = this.seekNodeByTag(node, item.name);
+                    break;
             }
 
             if (!child) {
@@ -102,7 +110,7 @@ sz.Locator = {
         return node;
     },
 
-    mouseSimulation: function(x, y) {
+    mouseSimulation: function (x, y) {
         var canvas = document.getElementById("gameCanvas");
         var pos = cc.inputManager.getHTMLElementPosition(canvas);//getHTMLElementPosition(canvas);
         var pt = cc.p(x + pos.left, pos.top + pos.height - y);
@@ -124,7 +132,8 @@ sz.GuideCommand = {
     GC_NULL: undefined, //空指令
     GC_SET_PROPERTY: 1, //设置属性
     GC_FINGER_HINT: 2,  //手型提示
-    GC_SAVE_PROGRESS: 3 //保存进度
+    GC_SAVE_PROGRESS: 3, //保存进度
+    GC_SHOW_MSG: 4 // 显示信息
 };
 
 
@@ -133,7 +142,7 @@ sz.GuideCommand = {
  */
 sz.TextHintLayer = cc.Layer.extend({
     _textLabel: null,
-    ctor: function() {
+    ctor: function () {
         this._super();
         this.ignoreAnchor = false;
         this.setAnchorPoint(0, 0);
@@ -144,7 +153,7 @@ sz.TextHintLayer = cc.Layer.extend({
         this.addChild(this._textLabel);
     },
 
-    setTextHint: function(textHint) {
+    setTextHint: function (textHint) {
         if (!textHint.text) {
             this.setVisible(false);
             return;
@@ -160,10 +169,10 @@ sz.TextHintLayer = cc.Layer.extend({
 sz.GuideIndexName = 'sz.guideIndexName';
 
 sz.GuideTaskHandle = cc.Class.extend({
-    _guideLayer:  null,
+    _guideLayer: null,
     _guideConfig: null,
     _curStepConfig: null,
-    ctor: function(guideLayer, guidConfig) {
+    ctor: function (guideLayer, guidConfig) {
         this._guideLayer = guideLayer;
         this._guideConfig = guidConfig;
         this._processTasks();
@@ -173,7 +182,7 @@ sz.GuideTaskHandle = cc.Class.extend({
      * 初始化任务队列与步骤id, 实际使用时，请重写此函数
      * @private
      */
-    _initTasks: function() {
+    _initTasks: function () {
         //分析任务
         var tasks = [];
         for (var key in this._guideConfig.tasks) {
@@ -185,7 +194,7 @@ sz.GuideTaskHandle = cc.Class.extend({
         return tasks;
     },
 
-    _processTasks: function() {
+    _processTasks: function () {
         var self = this;
         //加载进度
         this._guideLayer.loadProgress();
@@ -193,11 +202,11 @@ sz.GuideTaskHandle = cc.Class.extend({
         var tasks = this._initTasks();
 
         //一个step
-        var stepHandle = function(step, callback) {
+        var stepHandle = function (step, callback) {
             self._curStepConfig = step;
             async.series({
                 //步骤开始
-                stepBegin: function(cb) {
+                stepBegin: function (cb) {
                     self._guideLayer._setLocateNode(null);
                     if (step.onEnter) {
                         step.onEnter.call(self._guideLayer, cb);
@@ -207,9 +216,9 @@ sz.GuideTaskHandle = cc.Class.extend({
                 },
 
                 //步骤处理
-                stepProcess: function(cb) {
+                stepProcess: function (cb) {
                     if (step.delayTime) {
-                        self._guideLayer.scheduleOnce(function() {
+                        self._guideLayer.scheduleOnce(function () {
                             self._processStep(step, cb);
                         }, step.delayTime);
                     } else {
@@ -218,7 +227,7 @@ sz.GuideTaskHandle = cc.Class.extend({
                 },
 
                 //步骤完毕
-                stepEnd: function() {
+                stepEnd: function () {
                     self._guideLayer._isTouchLocked = true;
                     self._guideLayer.hideMask();
                     if (step.onExit) {
@@ -231,20 +240,20 @@ sz.GuideTaskHandle = cc.Class.extend({
         };
 
         //任务组
-        async.eachSeries(tasks, function(task, cb) {
-            async.eachSeries(task, stepHandle, function() {
+        async.eachSeries(tasks, function (task, cb) {
+            async.eachSeries(task, stepHandle, function () {
                 self._guideLayer.saveProgress(true, cb);
             });
-        }, function() {
+        }, function () {
             self._exitGuide();
         });
     },
 
-    getCurStepConfig: function() {
+    getCurStepConfig: function () {
         return this._curStepConfig;
     },
 
-    _exitGuide: function() {
+    _exitGuide: function () {
         this._guideLayer.destory();
         this._guideLayer = null;
     },
@@ -252,14 +261,14 @@ sz.GuideTaskHandle = cc.Class.extend({
     /**
      *
      */
-    _processStep: function(step, cb) {
+    _processStep: function (step, cb) {
         var self = this;
 
         if (step.log) {
             cc.log("guide: <" + step.log + ", step begin >");
         }
 
-        var finish = function() {
+        var finish = function () {
             self._guideLayer._closeTextHint();
             self._guideLayer.stopFingerAction(false);
             if (step.log) {
@@ -281,7 +290,7 @@ sz.GuideTaskHandle = cc.Class.extend({
 
             //设置属性
             case sz.GuideCommand.GC_SET_PROPERTY:
-                this._guideLayer.locateNode(step.locator, function(node) {
+                this._guideLayer.locateNode(step.locator, function (node) {
                     var property = step.args[0];
                     var args = step.args.slice(1);
                     node[property].apply(node, args);
@@ -290,7 +299,8 @@ sz.GuideTaskHandle = cc.Class.extend({
                 break;
             //手型提示
             case sz.GuideCommand.GC_FINGER_HINT:
-                this._guideLayer.locateNode(step.locator, function(node) {
+                this._guideLayer.locateNode(step.locator, function (node) {
+                    cc.director.getRunningScene().pause();
                     self._guideLayer.fingerToNode(node, finish, self._guideConfig.isFingerAnimation);
                     if (step.showMask) {
                         self._guideLayer.showMask(true);
@@ -312,9 +322,28 @@ sz.GuideTaskHandle = cc.Class.extend({
             case sz.GuideCommand.GC_NULL:
                 finish();
                 break;
+            case sz.GuideCommand.GC_SHOW_MSG:
+                this.showMsgBox(step.string);
+                break;
             default:
                 cc.log("guide command is not define");
         }
+    },
+
+    showMsgBox: function (msg) {
+        var msgBox = ccs.load(res.guideMsgBox).node;
+        var text = msgBox.getChildByName('root').getChildByName('text');
+        text.setString(msg);
+        msgBox.setPosition(cc.p(640, 0));
+        var moveIn = cc.moveBy(0.5, -300, 0);
+        var moveOut = moveIn.reverse();
+        msgBox.runAction(moveIn);
+        bindTouchEventListener(function () {
+            msgBox.runAction(cc.sequence(moveOut, cc.callFunc(function () {
+                msgBox.removeFromParent(true);
+            }, msgBox)));
+        }, msgBox);
+        this._guideLayer.addChild(msgBox);
     }
 });
 
@@ -332,7 +361,7 @@ sz.GuideLayer = cc.Layer.extend({
     _guideTaskHandle: null, //引导任务处理器
     _isTouchLocked: false,
 
-    ctor: function(target, guidConfig) {
+    ctor: function (target, guidConfig) {
         cc.assert(target || guidConfig);
         this._super();
         this._index = 0;
@@ -346,11 +375,11 @@ sz.GuideLayer = cc.Layer.extend({
      * @returns {sz.GuideTaskHandle}
      * @private
      */
-    _createTaskHandle: function() {
+    _createTaskHandle: function () {
         return new sz.GuideTaskHandle(this, this._guideConfig);
     },
 
-    onEnter: function() {
+    onEnter: function () {
         this._super();
         if (this._guideTaskHandle) {
             return;
@@ -364,7 +393,7 @@ sz.GuideLayer = cc.Layer.extend({
 
             sz.uiloader.registerTouchEvent(this);
             this._widgetEvent = sz.uiloader._onWidgetEvent;
-            sz.uiloader._onWidgetEvent = function(sender, type) {
+            sz.uiloader._onWidgetEvent = function (sender, type) {
                 if (self._widgetEvent) {
                     self._widgetEvent.call(sz.uiloader, sender, type);
                 }
@@ -375,7 +404,7 @@ sz.GuideLayer = cc.Layer.extend({
             var touchListener = cc.EventListener.create({
                 event: cc.EventListener.TOUCH_ONE_BY_ONE,
                 swallowTouches: true,
-                onTouchBegan: function(touch, event) {
+                onTouchBegan: function (touch, event) {
                     var touchNode = event.getCurrentTarget();
                     var ret = self._onTouchBegan(touchNode, touch, event);
                     return ret ? true : false;
@@ -385,7 +414,7 @@ sz.GuideLayer = cc.Layer.extend({
         }
     },
 
-    saveProgress: function(isForward, cb) {
+    saveProgress: function (isForward, cb) {
         var localStorage = localStorage || cc.sys.localStorage;
 
         localStorage.setItem(sz.GuideIndexName, isForward ? ++this._index : this._index + 1);
@@ -395,7 +424,7 @@ sz.GuideLayer = cc.Layer.extend({
         }
     },
 
-    loadProgress: function() {
+    loadProgress: function () {
         var localStorage = localStorage || cc.sys.localStorage;
         this._index = parseInt(localStorage.getItem(sz.GuideIndexName)) || 0;
     },
@@ -404,8 +433,9 @@ sz.GuideLayer = cc.Layer.extend({
      * 初始化手型提示
      * @private
      */
-    _initFinger: function() {
-        this._finger = new cc.Sprite(this._guideConfig.fingerImage);
+    _initFinger: function () {
+        //this._finger = new cc.Sprite(this._guideConfig.fingerImage);
+        this._finger = ccs.load(this._guideConfig.fingerImage).node;
         this._finger.setPosition(this.width * 0.5, this.height * 0.5);
         this._finger.setAnchorPoint(0, 1);
         this._finger.setVisible(false);
@@ -418,7 +448,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @param cb
      * @private
      */
-    fingerToNode: function(locateNode, callback, isAnimation) {
+    fingerToNode: function (locateNode, callback, isAnimation) {
         this._setLocateNode(null);
 
         var point = locateNode.getParent().convertToWorldSpace(locateNode.getPosition());
@@ -430,7 +460,7 @@ sz.GuideLayer = cc.Layer.extend({
         if (locateNode instanceof ccui.Widget && locateNode.isTouchEnabled()) {
             this._setLocateNode(locateNode);
         }
-        this._fingerToPoint(cc.p(this._touchRect.x + this._touchRect.width * 0.5, this._touchRect.y + this._touchRect.height * 0.5) , isAnimation);
+        this._fingerToPoint(cc.p(this._touchRect.x + this._touchRect.width * 0.5, this._touchRect.y + this._touchRect.height * 0.5), isAnimation);
 
         this.showMask();
         //保存任务完成回调函数
@@ -442,18 +472,18 @@ sz.GuideLayer = cc.Layer.extend({
      * @param point
      * @param isAnimation
      */
-    _fingerToPoint: function(point, isAnimation) {
+    _fingerToPoint: function (point, isAnimation) {
         this._finger.stopAllActions();
         this._finger.setScale(1);
         this._finger.setVisible(true);
         var moveTime = 0;
         if (point && isAnimation) {
-            var width  = this._finger.x - point.x;
+            var width = this._finger.x - point.x;
             var height = this._finger.y - point.y;
             var length = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
             moveTime = length / (this.width * 1);
-            var moveTo = cc.moveTo(moveTime , point);
-            var action = cc.sequence(moveTo, cc.callFunc(function() {
+            var moveTo = cc.moveTo(moveTime, point);
+            var action = cc.sequence(moveTo, cc.callFunc(function () {
                 var scaleBy = cc.scaleBy(0.3, 0.8);
                 var scaleBy2 = cc.scaleTo(0.3, 1);
                 var sequence = cc.sequence(scaleBy, scaleBy2);
@@ -468,7 +498,7 @@ sz.GuideLayer = cc.Layer.extend({
         //是否自动引导
         if (this._guideConfig.isAutoGuide && !cc.sys.isNative) {
             var temp = cc.p(point.x, point.y);
-            this.scheduleOnce(function() {
+            this.scheduleOnce(function () {
                 sz.Locator.mouseSimulation(temp.x, temp.y);
             }, moveTime + 0.2);
         }
@@ -480,13 +510,13 @@ sz.GuideLayer = cc.Layer.extend({
      * @param time
      * @param isRepeat
      */
-    _fingerToPointArray: function(pointArray, time, isRepeat) {
+    _fingerToPointArray: function (pointArray, time, isRepeat) {
         var array = [];
         var firstPoint = pointArray.shift();
         this._finger.setPosition(firstPoint);
         this._finger.stopAllActions();
         this._finger.setVisible(true);
-        _.each(pointArray, function(pt, index) {
+        _.each(pointArray, function (pt, index) {
             var moveTo = cc.moveTo(time, pt);
             if (index === 0) {
                 array.push(cc.spawn(moveTo, cc.fadeIn(time)));
@@ -497,7 +527,7 @@ sz.GuideLayer = cc.Layer.extend({
 
         //延时1秒
         array.push(cc.spawn(cc.delayTime(0.5), cc.fadeOut(0.5)));
-        array.push(cc.callFunc(function() {
+        array.push(cc.callFunc(function () {
             this._finger.setPosition(firstPoint);
             this._finger.setOpacity(150);
         }, this));
@@ -513,7 +543,7 @@ sz.GuideLayer = cc.Layer.extend({
      * 停止手型提示
      * @param visible
      */
-    stopFingerAction: function(visible) {
+    stopFingerAction: function (visible) {
         this._finger.stopAllActions();
         if (typeof visible === 'boolean') {
             this._finger.setVisible(visible);
@@ -525,7 +555,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @param touch
      * @returns {boolean}
      */
-    _onTouchBegan: function(sender, touch) {
+    _onTouchBegan: function (sender, touch) {
         //可触摸矩形区不存在退出
         if (!this._touchRect) {
             cc.log("this._touchRect = null");
@@ -534,13 +564,13 @@ sz.GuideLayer = cc.Layer.extend({
 
         var point = touch.getLocation();
         //设置点击位置显示
-        if(this._guideConfig.isShowTouchPoint){
+        if (this._guideConfig.isShowTouchPoint) {
 
-            if(!this._colorLayer){
-                this._colorLayer = new cc.LayerColor(cc.color.RED, 10 ,10);
-                this._colorLayer.setAnchorPoint(0.5,0.5);
+            if (!this._colorLayer) {
+                this._colorLayer = new cc.LayerColor(cc.color.RED, 10, 10);
+                this._colorLayer.setAnchorPoint(0.5, 0.5);
                 this._colorLayer.ignoreAnchor = false;
-                this.addChild( this._colorLayer,90000);
+                this.addChild(this._colorLayer, 90000);
             }
             this._colorLayer.setPosition(point);
         }
@@ -557,7 +587,7 @@ sz.GuideLayer = cc.Layer.extend({
         return !isContains;
     },
 
-    _onTouchEnded: function() {
+    _onTouchEnded: function () {
         cc.log("Guide Layer onTouchEnded");
     },
 
@@ -567,14 +597,14 @@ sz.GuideLayer = cc.Layer.extend({
      * @param type
      * @private
      */
-    _onWidgetEvent: function(sender, type) {
+    _onWidgetEvent: function (sender, type) {
         //检查是否命中控件
         var isHitWidget = this._locateNode && (sender === this._locateNode || sender.getName() === this._locateNode.getName());
 
         var stepConfig = this._guideTaskHandle.getCurStepConfig();
         if (isHitWidget && (stepConfig.eventType === type || this._guideConfig.eventType === type || !this._guideConfig.eventType)) {
-           // cc.log("清空_touchRect");
-           // this._touchRect = null;
+            // cc.log("清空_touchRect");
+            // this._touchRect = null;
             this._setLocateNode(null);
             this._setpCallback();
         }
@@ -586,7 +616,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @param node
      * @private
      */
-    _setLocateNode: function(node) {
+    _setLocateNode: function (node) {
         if (this._locateNode) {
             this._locateNode.release();
         }
@@ -604,16 +634,16 @@ sz.GuideLayer = cc.Layer.extend({
      * @param locator
      * @param cb
      */
-    locateNode: function(locator, cb) {
+    locateNode: function (locator, cb) {
         var node = sz.Locator.locateNode(this._target, locator, cb);
         if (!node) {
-            this.scheduleOnce(function() {
+            this.scheduleOnce(function () {
                 this.locateNode(locator, cb);
             }, this._guideConfig.locateNodeDurationTime || 0.1);
         }
     },
 
-    hideMask: function() {
+    hideMask: function () {
         if (this._clipper) {
             this._clipper.setVisible(false);
         }
@@ -622,7 +652,7 @@ sz.GuideLayer = cc.Layer.extend({
     /**
      * 显示遮罩层
      */
-    showMask: function(isForce) {
+    showMask: function (isForce) {
 
         if (!isForce && !this._guideConfig.isShowMask) {
             if (this._clipper) {
@@ -655,7 +685,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @param textHint
      * @private
      */
-    _showTextHint: function(textHint) {
+    _showTextHint: function (textHint) {
         if (!textHint.text) {
             return;
         }
@@ -667,7 +697,7 @@ sz.GuideLayer = cc.Layer.extend({
         this._textHintLayer.setTextHint(textHint);
     },
 
-    _closeTextHint: function() {
+    _closeTextHint: function () {
         if (this._textHintLayer) {
             this._textHintLayer.setVisible(false);
         }
@@ -677,11 +707,11 @@ sz.GuideLayer = cc.Layer.extend({
      * 创建文字提示layer
      * @private
      */
-    _createTextHintLayer: function() {
+    _createTextHintLayer: function () {
         return new sz.TextHintLayer();
     },
 
-    destory: function() {
+    destory: function () {
         if (this._widgetEvent) {
             sz.uiloader._onWidgetEvent = this._widgetEvent;
         }

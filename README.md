@@ -147,7 +147,7 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 
 * 运行
 
-    npm install --save-dev gulp del gulp-cache gulp-concat gulp-debug gulp-image gulp-json-editor gulp-replace gulp-sourcemaps gulp-uglify vinyl-buffer vinyl-source-stream
+    npm install --save-dev
 
     安装需要的软件
 

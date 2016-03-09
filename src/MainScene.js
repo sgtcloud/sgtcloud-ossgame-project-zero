@@ -2,7 +2,7 @@ var MainScene = cc.Scene.extend({
 
     ctor: function () {
         this._super();
-
+        this.setName('main');
         // init the widgets and layout them
 
         this.battlePanel = new BattlePanel(this);
@@ -31,10 +31,11 @@ var MainScene = cc.Scene.extend({
         this.battlePanel.addChild(buffListNode, 5000);
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
-        window.tip=new Tip(this);
+        window.tip = new Tip(this);
         (function (w) {
 
             var buffArr = [];
+
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {
@@ -44,6 +45,7 @@ var MainScene = cc.Scene.extend({
                     buffList.addChild(buff);
                 }
             }
+
             function toggleBufflayer(time, text, icon, cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
@@ -70,9 +72,13 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
+
             w.toggleBufflayer = toggleBufflayer;
         })(window);
 
+        var guideLayer = new sz.GuideLayer(this, guideConfig);
+        //cc.director.getRunningScene().addChild(guideLayer);
+        this.addChild(guideLayer, 1000);
     },
     onEnter: function () {
         this._super();
