@@ -49,7 +49,7 @@ qq群：383461219
 
 ### 开发环境和工具列表
 
-* Cocos Framework(>=3.10)+Cocos Studio [下载](http://www.cocos.com/download/#)
+* Cocos Framework(>=3.10)+Cocos Studio [下载](http://www.cocos.com/download/#) [网盘分流](http://pan.baidu.com/s/1o7wIylO)
 * [xls2json](https://github.com/sgtcloud/xlsx2json)
 * [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
@@ -75,10 +75,9 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 
 ### 获取代码
 
-本项目托管在github上，安装[git](https://git-scm.com/)之后运行
+本项目托管在github上，安装[git](https://git-scm.com/)之后运行。[网盘分流下载](http://pan.baidu.com/s/1mhdPPBq)
 
     git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
-
 
 ### 项目目录
 
@@ -138,27 +137,33 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 
 ##### Cocos Console
 
-项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。直接使用命令行cocos compile -p web -m release即可发布，暂时不支持--advanced参数
+项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。
+直接使用命令行即可发布
+```
+cocos compile -p web -m release
+```
+*暂时不支持--advanced参数*
 
 ##### gulp
 
 构建的时候还考虑到了多渠道发布的需求，所以同时提供了[gulp](http://gulpjs.com/)实现的工具链。
-首先确认自己安装了[Nodejs](http://nodejs.org/)环境。
+首先确认自己安装了[Nodejs](http://nodejs.org/)环境。[网盘分流下载](http://pan.baidu.com/s/1gemN1qr)
 
 * 运行
 
+```
     npm install --save-dev
+```
 
-    安装需要的软件
+安装构建需要的依赖
 
 * 运行
 
+```
     gulp
+```
 
-    在public/html5下面构建出和cocos一致的发布
-
-使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
-
+在public/html5下面构建出和cocos一致的发布，使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
 
 ### 项目源代码导读
 
