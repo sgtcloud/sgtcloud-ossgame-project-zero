@@ -363,6 +363,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function setFont(target) {
+    if (arguments.length === 1) {
+        target = arguments[0];
+    } else target = arguments;
     if (target instanceof Array) {
         for (var i in target) {
             target[i].setFontName("Microsoft YaHei UI");
@@ -375,6 +378,9 @@ function setFont(target) {
     }
 }
 function setColor(target) {
+    if (arguments.length === 1) {
+        target = arguments[0];
+    } else target = arguments;
     if (target instanceof Array) {
         for (var i in target) {
             target[i].setColor(cc.color(0, 0, 0))
