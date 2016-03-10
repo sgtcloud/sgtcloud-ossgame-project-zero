@@ -18,9 +18,18 @@ var TopPanel = cc.Node.extend({
         this.relicNum = pane.getChildByName('relic_text');
         this.goldNum = pane.getChildByName('gold_text');
         this.goldBtn = pane.getChildByName('getGold_btn');
+        this.getDiamondBtn = pane.getChildByName('getDiamond_btn');
         bindButtonCallback(this.goldBtn, function () {
             game.tabContainer.showMenuLayer("shop");
             game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
+        });
+        bindButtonCallback(this.getDiamondBtn, function () {
+            Popup.openPopup('购买钻石','你确定要购买10个钻石嘛？',function(popup){
+                NetWork.chooseWXPay('购买钻石',0.01,10,function(){
+                    tip.toggle('购买成功');
+                    popup.hiddenPopup();
+                });
+            });
         });
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());

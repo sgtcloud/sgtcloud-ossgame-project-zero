@@ -264,6 +264,7 @@ var NetWork = {
     updateLeaderBoardScore: function (stageNum, leaderId) {
         sgt.LeaderBoardService.submitLeaderBoardScore(leaderId, player.id, stageNum);
     },
+    //上传存档到服务器
     updatePlayerSave: function () {
         if (cc.isArray(PlayerData.sequence) && PlayerData.sequence.length > 0) {
             var playerExtra = new SgtApi.PlayerExtra();
@@ -420,5 +421,46 @@ var NetWork = {
         });
         createPlayer.setPosition(cc.p(140, 400));
         scene.addChild(createPlayer, 100);
+    },
+    chooseWXPay: function(body,total_fee,num,callback){
+        sgt.WxCentralService.getPayOrder(body,total_fee,player.id,function(result,order){
+            if(result){
+                var obj = {"orderId":order.did,"num":num};
+                player.orders.push(obj);
+                //微信支付
+                wx.chooseWXPay({
+                    timestamp: order.time_start, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+                    nonceStr: order.nonce_str, // 支付签名随机串，不长于 32 位
+                    package: 'prepay_id=' + order.prepay_id, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                    signType: 'MD5', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+                    paySign: order.paySign, // 支付签名
+                    success: function () {
+                        // 支付成功后的回调函数验证是否支付成功
+                        this.queryByDid(obj);
+                        return callback(true);
+                    },
+                    fail: function (res) {
+                        console.log(res);
+                        return callback(false);
+                    }
+                });
+            }else{
+                return callback(false);
+            }
+        }.bind(this));
+    },
+    //验证是否支付成功
+    queryByDid: function(obj){
+        SgtApi.DelegateDidService.queryByDid(obj.did, function (result1, data) {
+            if(result1 && cc.isNumber(data.updateTime)){
+                var resource = PlayerData.createResourceData("gem",obj.num);
+                PlayerData.updateResource(resource);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,resource);
+                player.orders.splice(player.orders.indexOf(obj),1);
+                PlayerData.updatePlayer();
+                //直接上传服务器需放到updatePlayer 之后
+                NetWork.updatePlayerSave();
+            }
+        })
     }
 }
