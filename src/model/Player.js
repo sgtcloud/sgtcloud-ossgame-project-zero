@@ -7,6 +7,7 @@ var player = {
     "into_stage_battle_timestamp": 0,
     "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
     "first_time": "",
+    "orders":[],
     // test data
     "resource": {
         "gold": 1000000,

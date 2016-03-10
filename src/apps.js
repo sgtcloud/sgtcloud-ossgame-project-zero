@@ -274,6 +274,12 @@ Date.prototype.Format = function (fmt) { //author: meizz
 function initGame() {
     PlayerData.init();
     game = new MainScene();
+    if(cc.isArray(player.orders)){
+        for(var i in player.orders){
+            NetWork.queryByDid(player.orders[i]);
+        }
+    }
+
 }
 function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
