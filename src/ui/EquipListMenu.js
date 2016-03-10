@@ -4,8 +4,8 @@
 var EquipListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.equip_layer_json);
-        this._spawnCount=5;
-        this.heroList = this.root.getChildByName('equip_list');
+        this._spawnCount = 5;
+        this.listView = this.root.getChildByName('equip_list');
         this.heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         this.equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');
         this.itemView = ccs.csLoader.createNode(res.small_item_layer_json).getChildByName('root');
@@ -22,18 +22,16 @@ var EquipListMenu = ListViewMenu.extend({
         this._basic = 3;
         this._nextValue = 0;
         this._difValue = 5;
-        this.setListView(this.heroList);
+        this.setListView(this.listView);
         var default_item = new ccui.Layout();
         default_item.setTouchEnabled(true);
         default_item.setContentSize(this.heroView.getContentSize());
-        default_item.width = this.heroList.width;
+        default_item.width = this.listView.width;
         default_item.height = this.equipView.height;
         this.itemModel = default_item;
         this.equipView.setPositionX(this.heroView.width - this.equipView.width);
         this.setItemModel(this.itemModel);
-        {
-            this._refreshView();
-        }
+        this._refreshView();
         this.scheduleUpdate();
     }, _refreshView: function () {
         for (var i = 0; i < player.heroes.length; i++) {
@@ -348,20 +346,21 @@ var EquipListMenu = ListViewMenu.extend({
                 setTimeout(function () {
                     that.pause();
                     that.buildEquipMenuIfUnlocked(_hero, first);
-                    that.updateInnerContainerSize();
+                    //that.updateInnerContainerSize();
+                    that.onEnter();
                     that.resume();
                 }, 300);
             }
         });
     }, buildEquipMenuIfUnlocked: function (heroData, isFirst) {
         var _heroView = this._buildHeroView(this._filterItem({target: heroData, type: this.HERO_ITEM, first: isFirst}));
-        if (this.heroList.getItems().length < this._spawnCount) {
+        if (this.listView.getItems().length < this._spawnCount) {
             var model = this.itemModel.clone();
             model.setPositionX(_heroView.getPositionX());
             model.height = _heroView.height;
             model.addChild(_heroView);
             model.setTag(this._totalCount);
-            this.heroList.pushBackCustomItem(model);
+            this.listView.pushBackCustomItem(model);
         }
         this._totalCount++;
         for (var j = 0; j < heroData.getEquipCount(); j++) {
@@ -372,13 +371,13 @@ var EquipListMenu = ListViewMenu.extend({
                     relation: heroData,
                     type: equipData.getType() === 0 ? this.EQUIP_NORMAL_ITEM : this.EQUIP_MAGIC_ITEM
                 }));
-                if (this.heroList.getItems().length < this._spawnCount) {
+                if (this.listView.getItems().length < this._spawnCount) {
                     var model = this.itemModel.clone();
                     model.setPositionX(_equipView.getPositionX());
                     model.height = _equipView.height;
                     model.addChild(_equipView);
                     model.setTag(this._totalCount);
-                    this.heroList.pushBackCustomItem(model);
+                    this.listView.pushBackCustomItem(model);
                 }
                 this._totalCount++;
             }
@@ -421,14 +420,16 @@ var EquipListMenu = ListViewMenu.extend({
         model.height = _equipView.height;
         model.addChild(_equipView);
         model.setTag(this._totalCount);
-        this.heroList.insertCustomItem(model, index);
-        this.heroList.removeLastItem();
+        this.listView.insertCustomItem(model, index);
         this._totalCount++;
+        if (this._spawnCount < this._totalCount) {
+            this.listView.removeLastItem();
+        }
         var items = this.listView.getItems();
-        var totalHeight = this._itemTemplateHeight * this._totalCount
+        var totalHeight = this._itemTemplateHeight * this._totalCount;
         for (var k in items) {
             var ite = items[k];
-            ite.setPositionY(totalHeight-k*ite.height);
+            ite.setPositionY(totalHeight - k * ite.height);
             this.updateItem(k, ite);
         }
         this.onEnter();

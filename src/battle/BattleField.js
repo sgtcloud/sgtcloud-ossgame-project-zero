@@ -336,7 +336,6 @@ var BattleField = cc.Class.extend({
             enemy.setPosition(startPos);
             this.addSprite(enemy, this.enemyPos[i].getTag());
             enemy.runAction(cc.sequence(cc.jumpTo(0.4, this.enemyPos[i].getPosition(), 64, 1), cc.jumpBy(0.4, cc.p(0, 0), 16, 2), cc.callFunc(function () {
-                cc.log(this.getPosition());
                 this.ready = true;
             }, enemy)));
         }

@@ -104,6 +104,7 @@ var res = {
     sign_view: 'res/SignView.json',
     maill_view_json: 'res/MaillView.json',
     maill_layer_json: 'res/MaillLayer.json',
+    pvp_layer_json:'res/PVPLayer.json'
 
     hero101skill: 'res/hero101skill01.json',
 

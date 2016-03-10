@@ -45,9 +45,10 @@ var ListViewMenu = BattleMenu.extend({
         //btn.setTitleText(this.items[itemID]);
     },
     getItemPositionYInView: function (item) {
-        var worldPos = item.getParent().convertToWorldSpaceAR(item.getPosition());
-        var viewPos = this.listView.convertToNodeSpaceAR(worldPos);
-        return viewPos.y;
+        var worldPos, viewPos;
+         worldPos = item.getParent().convertToWorldSpaceAR(item.getPosition());
+         viewPos = this.listView.convertToNodeSpaceAR(worldPos);
+         return viewPos.y;
     },
     update: function (dt) {
         this._updateTimer += dt;
@@ -90,6 +91,9 @@ var ListViewMenu = BattleMenu.extend({
         this.listView.jumpToTop();
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     },updateInnerContainerSize:function(){
+        cc.Node.prototype.onEnter.call(this);
+        //we must call foreceDoLayout in onEnter method in h5.
+        this.listView.forceDoLayout();
         var totalHeight = this._itemTemplateHeight * this._totalCount;
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;

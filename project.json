@@ -30,6 +30,7 @@
     "src/battle/EnemyUnit.js",
     "src/ui/TopPanel.js",
     "src/ui/BattlePanel.js",
+    "src/ui/ArenaPanel.js",
     "src/ui/TabContainer.js",
     "src/MainScene.js",
     "src/ui/BattleMenu.js",
