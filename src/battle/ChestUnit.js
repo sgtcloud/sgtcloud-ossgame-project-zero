@@ -44,7 +44,7 @@ var ChestUnit = CCSUnit.extend({
     _generateLoot: function () {
         //if(player.resource.hasOwnProperty(this.goods.skill_id)){
         if(this.goods.type != 1){
-            cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
+            //cc.log('获取'+CONSTS.resources_mapping[this.goods.skill_id]);
             var resValue = this.goods.level;
             if(this.goods.type === 0){
                 resValue = Math.floor(PlayerData.getStageData().getMoneyTreeRatio() * this.goods.level);
@@ -64,12 +64,12 @@ var ChestUnit = CCSUnit.extend({
             tip.toggle({'beforeShow':[cc.hide(),cc.delayTime(0.1)],'delay':2.0,'text':'恭喜获得： '+ CONSTS.resources_mapping[this.goods.skill_id] + " * " + resValue});
         } else {
             //发送释放buff事件
-            cc.log('释放buff');
+            //cc.log('释放buff');
             customEventHelper.sendEvent(EVENT.CAST_SKILL_READY, {
                 skillId: this.goods.skill_id,
                 level: this.goods.level
             });
         }
-        cc.log(this.goods.chestStyle + " , " + this.goods.skill_id + " , " + this.goods.level);
+        //cc.log(this.goods.chestStyle + " , " + this.goods.skill_id + " , " + this.goods.level);
     }
 });

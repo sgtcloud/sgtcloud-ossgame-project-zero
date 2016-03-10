@@ -4,11 +4,11 @@
 var HeroListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.hero_layer_json);
-        this.heroList = this.root.getChildByName('hero_list');
+        this.listView = this.root.getChildByName('hero_list');
         this._heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         this._skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
-        this.setListView(this.heroList);
-        this._skillTemp.setPositionX(this._heroTemp.width-this._skillTemp.width);
+        //this.setListView(this.listView);
+        this._skillTemp.setPositionX(this._heroTemp.width - this._skillTemp.width);
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
         this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn');
@@ -22,9 +22,9 @@ var HeroListMenu = ListViewMenu.extend({
         var default_item = new ccui.Layout();
         default_item.setTouchEnabled(true);
         default_item.setContentSize(this._heroTemp.getContentSize());
-        default_item.width = this.heroList.width;
+        default_item.width = this.listView.width;
         default_item.height = this._skillTemp.height;
-        this.itemModel=default_item;
+        this.itemModel = default_item;
         this.setItemModel(this._skillTemp);
 
 
@@ -54,10 +54,19 @@ var HeroListMenu = ListViewMenu.extend({
                 customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                        setTimeout(function () {
-                            that.buildHeroMenu(_hero);
-                            that.updateInnerContainerSize();
-                        }, 100);
+                        //setTimeout(function () {
+                        that.pause();
+                        that.buildHeroMenu(_hero);
+                        var items = that.listView.getItems();
+                        var totalHeight = that._itemTemplateHeight * that._totalCount;
+                        for (var k in items) {
+                            var ite = items[k];
+                            ite.setPositionY(totalHeight - k * ite.height);
+                            that.updateItem(k, ite);
+                        }
+                        that.onEnter();
+                        that.resume();
+                        //}, 100);
                     }
                 });
             }
@@ -164,7 +173,8 @@ var HeroListMenu = ListViewMenu.extend({
             }
         }
         return root;
-    }, _bindSkillMenuListener: function (elements, skill, hero) {
+    },
+    _bindSkillMenuListener: function (elements, skill, hero) {
         customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                 if (canUnlockItem(hero, skill)) {
                     if (!skill.isMaxLevel()) {
@@ -252,7 +262,7 @@ var HeroListMenu = ListViewMenu.extend({
         });
         if (first) {
             setFont([heroName_text, elements.upgrade_btn.buff_text]);
-            var temp=hero;
+            var temp = hero;
             this._bindHeroMenuListener(elements, temp);
         }
         if ((hero.getLv() > 0 && hero.getCurrentLife() > 0) || hero.getLv() == 0) {
@@ -287,16 +297,16 @@ var HeroListMenu = ListViewMenu.extend({
             }
         });
         if (typeof cb === 'function') {
-            cb(hero,root);
+            cb(hero, root);
         }
         refeshUpgradeLayer(hero, elements);
-        if(!hero.isLocked()&&hero.getCurrentLife()<=0&&hero.getLv()>0){
-            customEventHelper.sendEvent(EVENT.HERO_DIE,hero);
+        if (!hero.isLocked() && hero.getCurrentLife() <= 0 && hero.getLv() > 0) {
+            customEventHelper.sendEvent(EVENT.HERO_DIE, hero);
         }
         return root;
     },
     _bindHeroMenuListener: function (elements, target) {
-        var hero=target;
+        var hero = target;
         customEventHelper.bindListener(EVENT.HERO_REVIVE_COUNTDOWN, function (event) {
             var data = event.getUserData();
             if (data['id'] === hero.getId()) {
@@ -377,13 +387,13 @@ var HeroListMenu = ListViewMenu.extend({
             Array.prototype.push.apply(this.items, item);
         }
         var _heroView = this._buildHeroView(item[0], cb);
-        if (this.heroList.getItems().length < this._spawnCount) {
-            var model=this.itemModel.clone();
+        if (this.listView.getItems().length < this._spawnCount) {
+            var model = this.itemModel.clone();
             model.setPositionX(_heroView.getPositionX());
             model.height = _heroView.height;
             model.addChild(_heroView);
             model.setTag(this._totalCount);
-            this.heroList.pushBackCustomItem(model);
+            this.listView.pushBackCustomItem(model);
         }
         this._totalCount++;
         for (var j = 0; j < heroData.getSkillCount(); j++) {
@@ -396,13 +406,13 @@ var HeroListMenu = ListViewMenu.extend({
                 Array.prototype.push.apply(this.items, skillItem);
             }
             var _skillView = this._buildSkillView(skillItem[0]);
-            if (this.heroList.getItems().length < this._spawnCount) {
-                var model=this.itemModel.clone();
+            if (this.listView.getItems().length < this._spawnCount) {
+                var model = this.itemModel.clone();
                 model.setPositionX(_skillView.getPositionX());
                 model.height = _skillView.height;
                 model.addChild(_skillView);
                 model.setTag(this._totalCount);
-                this.heroList.pushBackCustomItem(model);
+                this.listView.pushBackCustomItem(model);
             }
             this._totalCount++;
         }
@@ -410,13 +420,13 @@ var HeroListMenu = ListViewMenu.extend({
     updateItem: function (itemId, item) {
         item.setTag(itemId);
         item.removeAllChildren(true);
-        var itemData=this.items[itemId>=this.items.length?this.items.length-1:itemId];
-        var ite=itemData['root'];
+        var itemData = this.items[itemId >= this.items.length ? this.items.length - 1 : itemId];
+        var ite = itemData['root'];
         item.height = ite.height;
         item.addChild(ite);
-        if(itemData['type']===this.HERO_ITEM){
+        if (itemData['type'] === this.HERO_ITEM) {
             this._buildHeroView(itemData);
-        }else if(itemData['type']===this.SKILL_ITEM){
+        } else if (itemData['type'] === this.SKILL_ITEM) {
             this._buildSkillView(itemData);
         }
     },
