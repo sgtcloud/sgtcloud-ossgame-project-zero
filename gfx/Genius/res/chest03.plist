@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>chest/chest03/chest03_close01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,383},{64,58}}</string>
+				<key>offset</key>
+				<string>{5,-5}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+			<key>chest/chest03/chest03_open01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,243},{64,70}}</string>
+				<key>offset</key>
+				<string>{5,-11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+			<key>chest/chest03/chest03_open02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,87},{72,78}}</string>
+				<key>offset</key>
+				<string>{5,-11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+			<key>chest/chest03/chest03_open03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{80,87}}</string>
+				<key>offset</key>
+				<string>{5,-10}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+			<key>chest/chest03/chest03_open04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,165},{72,78}}</string>
+				<key>offset</key>
+				<string>{5,-11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+			<key>chest/chest03/chest03_open05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,313},{64,70}}</string>
+				<key>offset</key>
+				<string>{5,-11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{125,116}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>chest03.png</string>
+			<key>realTextureFileName</key>
+			<string>chest03.png</string>
+			<key>size</key>
+			<string>{80,447}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>80</integer>
+			<key>height</key>
+			<integer>447</integer>
+		</dict>
+	</dict>
+</plist>

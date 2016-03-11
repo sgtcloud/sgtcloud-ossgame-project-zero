@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>gold/gold03/gold03_shine01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{69,0},{61,52}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{79,64}</string>
+			</dict>
+			<key>gold/gold03/gold03_shine02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{69,60}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{79,64}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>gold03.png</string>
+			<key>realTextureFileName</key>
+			<string>gold03.png</string>
+			<key>size</key>
+			<string>{130,60}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>130</integer>
+			<key>height</key>
+			<integer>60</integer>
+		</dict>
+	</dict>
+</plist>

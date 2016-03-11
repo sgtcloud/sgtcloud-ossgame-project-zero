@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>fairy/fairy01/fairy01_die01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,192},{63,82}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{63,82}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_die02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,274},{71,72}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{71,72}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_die03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{63,192},{61,67}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{61,67}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_die04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,569},{44,30}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{44,30}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{78,0},{64,63}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{64,63}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{78,64},{57,59}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{57,59}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,346},{50,58}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{50,58}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,462},{45,54}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{45,54}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,404},{50,58}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{50,58}</string>
+			</dict>
+			<key>fairy/fairy01/fairy01_run06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{78,123},{57,59}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{57,59}</string>
+			</dict>
+			<key>dead/dead01/dead01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,516},{43,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{43,53}</string>
+			</dict>
+			<key>guide/hand_point01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{78,105}}</string>
+				<key>offset</key>
+				<string>{-1,-2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,110}</string>
+			</dict>
+			<key>guide/hand_point02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,105},{78,87}}</string>
+				<key>offset</key>
+				<string>{-1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,90}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>other.png</string>
+			<key>realTextureFileName</key>
+			<string>other.png</string>
+			<key>size</key>
+			<string>{141,613}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>141</integer>
+			<key>height</key>
+			<integer>613</integer>
+		</dict>
+	</dict>
+</plist>

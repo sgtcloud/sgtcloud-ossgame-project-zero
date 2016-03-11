@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>enemy/enemy1002/enemy1002_atk01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{111,272},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,143},{129,115}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{129,115}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{140,143}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{140,143}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,272},{111,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{111,113}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,617},{102,107}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{102,107}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,385},{117,105}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{117,105}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_atk07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{115,143},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_die01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{140,0},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_die02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,502},{115,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{115,101}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_die03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,932},{107,76}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{107,76}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_die04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{107,932},{104,52}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{104,52}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_hit01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,724},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_hit02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,828},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_hit03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{93,724},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_hit04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{101,502},{96,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{96,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_hit05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{93,828},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_stand01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{102,606},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_stand02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{186,710},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_stand03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{105,385},{96,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{96,104}</string>
+			</dict>
+			<key>enemy/enemy1002/enemy1002_stand04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{195,606},{93,104}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,104}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>enemy1002.png</string>
+			<key>realTextureFileName</key>
+			<string>enemy1002.png</string>
+			<key>size</key>
+			<string>{288,1008}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>288</integer>
+			<key>height</key>
+			<integer>1008</integer>
+		</dict>
+	</dict>
+</plist>
