@@ -44,8 +44,11 @@
           <FilePathData Path="GuideHand.csd" />
           <FilePathData Path="SignIcon.csd" />
           <FilePathData Path="ItemLayer.csd" />
+          <FilePathData Path="Btn_Buy.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="EquipHeroView.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="ItemLayer.csd" />
+        <ActiveDocument Path="EquipHeroView.csd" />
       </Value>
     </Item>
   </Properties>
