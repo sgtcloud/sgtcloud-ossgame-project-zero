@@ -607,7 +607,7 @@
         <Project Name="PVPRecord.csd" Type="Layer" />
         <Project Name="GuideHand.csd" Type="Node" />
         <Project Name="RechargeLayer.csd" Type="Layer" />
-        <Folder Name="RechargeUI">
+        <Folder Name="rechargeUI">
           <Image Name="title.png" />
           <Image Name="title_bg.png" />
           <Image Name="crystal_1.png" />
@@ -620,7 +620,9 @@
           <Image Name="card.png" />
           <Image Name="day.png" />
           <Image Name="vip.png" />
+          <Image Name="pic.png" />
         </Folder>
+        <Project Name="RechargeIconLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

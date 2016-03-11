@@ -70,7 +70,7 @@
                 <PreSize X="0.3234" Y="0.0314" />
                 <FileData Type="MarkedSubImage" Path="rankUI/myRank_text.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="myNum_text" ActionTag="-537533334" CallBackType="Touch" Tag="283" IconVisible="False" LeftMargin="338.1150" RightMargin="244.8850" TopMargin="142.6937" BottomMargin="699.3063" LabelText="9999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="myNum_text" ActionTag="-537533334" CallBackType="Touch" Tag="283" IconVisible="False" LeftMargin="338.1150" RightMargin="244.8850" TopMargin="142.6936" BottomMargin="699.3064" LabelText="9999" ctype="TextBMFontObjectData">
                 <Size X="57.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5152" ScaleY="0.5168" />
                 <Position X="367.4814" Y="708.6088" />
@@ -90,7 +90,7 @@
                 <PreSize X="0.9531" Y="0.6512" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="change_btn" ActionTag="-831184042" Tag="371" IconVisible="False" LeftMargin="467.1385" RightMargin="32.8615" TopMargin="787.2347" BottomMargin="25.7653" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="change_btn" ActionTag="-831184042" Tag="371" IconVisible="False" LeftMargin="467.1385" RightMargin="32.8615" TopMargin="787.2347" BottomMargin="25.7653" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="47.0000" />
                 <Children>
                   <AbstractNodeData Name="change" ActionTag="-289050249" Tag="369" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="14" BottomEage="14" Scale9OriginX="14" Scale9OriginY="14" Scale9Width="4" Scale9Height="19" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -130,7 +130,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buy_btn" ActionTag="74648892" Tag="372" IconVisible="False" LeftMargin="253.0501" RightMargin="246.9499" TopMargin="787.2347" BottomMargin="25.7653" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="buy_btn" ActionTag="74648892" Tag="372" IconVisible="False" LeftMargin="253.0501" RightMargin="246.9499" TopMargin="787.2347" BottomMargin="25.7653" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="47.0000" />
                 <Children>
                   <AbstractNodeData Name="buy" ActionTag="1561859893" Tag="368" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="15" BottomEage="15" Scale9OriginX="15" Scale9OriginY="15" Scale9Width="1" Scale9Height="17" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -232,48 +232,6 @@
               </AbstractNodeData>
               <AbstractNodeData Name="opponent_box" ActionTag="-851854272" Tag="306" IconVisible="False" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="194.0000" BottomMargin="116.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="600.0000" Y="550.0000" />
-                <Children>
-                  <AbstractNodeData Name="opponent1" ActionTag="-1936536648" Tag="35" IconVisible="True" LeftMargin="5.0585" RightMargin="4.9415" TopMargin="2.4136" BottomMargin="412.5864" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="590.0000" Y="135.0000" />
-                    <AnchorPoint />
-                    <Position X="5.0585" Y="412.5864" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0084" Y="0.7502" />
-                    <PreSize X="0.9833" Y="0.2455" />
-                    <FileData Type="Normal" Path="PVPOpponentView.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="opponent2" ActionTag="1106882567" Tag="48" IconVisible="True" LeftMargin="5.0585" RightMargin="4.9415" TopMargin="139.4487" BottomMargin="275.5513" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="590.0000" Y="135.0000" />
-                    <AnchorPoint />
-                    <Position X="5.0585" Y="275.5513" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0084" Y="0.5010" />
-                    <PreSize X="0.9833" Y="0.2455" />
-                    <FileData Type="Normal" Path="PVPOpponentView.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="opponent3" ActionTag="-1467534666" Tag="61" IconVisible="True" LeftMargin="5.0585" RightMargin="4.9415" TopMargin="276.4859" BottomMargin="138.5141" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="590.0000" Y="135.0000" />
-                    <AnchorPoint />
-                    <Position X="5.0585" Y="138.5141" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0084" Y="0.2518" />
-                    <PreSize X="0.9833" Y="0.2455" />
-                    <FileData Type="Normal" Path="PVPOpponentView.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="opponent4" ActionTag="120930495" Tag="74" IconVisible="True" LeftMargin="5.0585" RightMargin="4.9415" TopMargin="413.5210" BottomMargin="1.4790" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                    <Size X="590.0000" Y="135.0000" />
-                    <AnchorPoint />
-                    <Position X="5.0585" Y="1.4790" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0084" Y="0.0027" />
-                    <PreSize X="0.9833" Y="0.2455" />
-                    <FileData Type="Normal" Path="PVPOpponentView.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
                 <Position X="20.0000" Y="116.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />

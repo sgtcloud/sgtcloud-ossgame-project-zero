@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -49,7 +51,7 @@
               "Y": 0.8333
             },
             "LeftMargin": 17.3321,
-            "RightMargin": 2.6678,
+            "RightMargin": 2.6679,
             "TopMargin": 69.1172,
             "BottomMargin": 90.8828,
             "Tag": 140,
@@ -99,7 +101,7 @@
                 "FlipX": true,
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "RechargeUI/title_bg.png",
+                  "Path": "rechargeUI/title_bg.png",
                   "Plist": ""
                 },
                 "Scale9OriginX": 10,
@@ -145,7 +147,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "RechargeUI/title_bg.png",
+                  "Path": "rechargeUI/title_bg.png",
                   "Plist": ""
                 },
                 "Scale9OriginX": 10,
@@ -191,7 +193,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "RechargeUI/title.png",
+                  "Path": "rechargeUI/title.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -368,1143 +370,6 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 114.5301,
-                  "Y": 453.1189
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1847,
-                  "Y": 0.5664
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 24.5301,
-                "RightMargin": 415.4699,
-                "TopMargin": 233.3811,
-                "BottomMargin": 339.6189,
-                "CallBackType": "Click",
-                "Tag": 177,
-                "ActionTag": 59433016,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_1",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 299.7317,
-                  "Y": 453.1189
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4834,
-                  "Y": 0.5664
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 209.7317,
-                "RightMargin": 230.2683,
-                "TopMargin": 233.3811,
-                "BottomMargin": 339.6189,
-                "CallBackType": "Click",
-                "Tag": 188,
-                "ActionTag": 1128161383,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_2",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 484.9333,
-                  "Y": 453.1189
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7822,
-                  "Y": 0.5664
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 394.9333,
-                "RightMargin": 45.0668,
-                "TopMargin": 233.3811,
-                "BottomMargin": 339.6189,
-                "CallBackType": "Click",
-                "Tag": 189,
-                "ActionTag": -1595154032,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_3",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 114.5301,
-                  "Y": 216.1437
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1847,
-                  "Y": 0.2702
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 24.5301,
-                "RightMargin": 415.4699,
-                "TopMargin": 470.3563,
-                "BottomMargin": 102.6437,
-                "CallBackType": "Click",
-                "Tag": 190,
-                "ActionTag": -2024068193,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_4",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 299.7316,
-                  "Y": 216.1432
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4834,
-                  "Y": 0.2702
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 209.7316,
-                "RightMargin": 230.2684,
-                "TopMargin": 470.3568,
-                "BottomMargin": 102.6432,
-                "CallBackType": "Click",
-                "Tag": 191,
-                "ActionTag": 1886847301,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_5",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/bg.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 154,
-                "Scale9Height": 201,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 484.9333,
-                  "Y": 216.1432
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7822,
-                  "Y": 0.2702
-                },
-                "PreSize": {
-                  "X": 0.2903,
-                  "Y": 0.2837
-                },
-                "LeftMargin": 394.9333,
-                "RightMargin": 45.0668,
-                "TopMargin": 470.3568,
-                "BottomMargin": 102.6432,
-                "CallBackType": "Click",
-                "Tag": 192,
-                "ActionTag": -1093815766,
-                "Size": {
-                  "X": 180.0,
-                  "Y": 227.0
-                },
-                "Name": "bg_6",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/card.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 118,
-                "Scale9Height": 71,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 111.8346,
-                  "Y": 473.5888
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1804,
-                  "Y": 0.592
-                },
-                "PreSize": {
-                  "X": 0.2323,
-                  "Y": 0.1213
-                },
-                "LeftMargin": 39.8346,
-                "RightMargin": 436.1654,
-                "TopMargin": 277.9112,
-                "BottomMargin": 425.0888,
-                "CallBackType": "Click",
-                "Tag": 193,
-                "ActionTag": -1560818596,
-                "Size": {
-                  "X": 144.0,
-                  "Y": 97.0
-                },
-                "Name": "pic_1",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/crystal_1.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 122,
-                "Scale9Height": 122,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 300.953,
-                  "Y": 496.6754
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4854,
-                  "Y": 0.6208
-                },
-                "PreSize": {
-                  "X": 0.2387,
-                  "Y": 0.185
-                },
-                "LeftMargin": 226.953,
-                "RightMargin": 245.047,
-                "TopMargin": 229.3246,
-                "BottomMargin": 422.6754,
-                "CallBackType": "Click",
-                "Tag": 194,
-                "ActionTag": -47978638,
-                "Size": {
-                  "X": 148.0,
-                  "Y": 148.0
-                },
-                "Name": "pic_2",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/crystal_2.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 122,
-                "Scale9Height": 122,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 483.4205,
-                  "Y": 497.6411
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7797,
-                  "Y": 0.6221
-                },
-                "PreSize": {
-                  "X": 0.2387,
-                  "Y": 0.185
-                },
-                "LeftMargin": 409.4205,
-                "RightMargin": 62.5795,
-                "TopMargin": 228.3589,
-                "BottomMargin": 423.6411,
-                "CallBackType": "Click",
-                "Tag": 195,
-                "ActionTag": 196052737,
-                "Size": {
-                  "X": 148.0,
-                  "Y": 148.0
-                },
-                "Name": "pic_3",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/crystal_3.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 122,
-                "Scale9Height": 122,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 112.4461,
-                  "Y": 255.2025
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1814,
-                  "Y": 0.319
-                },
-                "PreSize": {
-                  "X": 0.2387,
-                  "Y": 0.185
-                },
-                "LeftMargin": 38.4461,
-                "RightMargin": 433.5539,
-                "TopMargin": 470.7975,
-                "BottomMargin": 181.2025,
-                "CallBackType": "Click",
-                "Tag": 196,
-                "ActionTag": 1551886931,
-                "Size": {
-                  "X": 148.0,
-                  "Y": 148.0
-                },
-                "Name": "pic_4",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/crystal_4.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 122,
-                "Scale9Height": 122,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 299.3729,
-                  "Y": 256.7419
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4829,
-                  "Y": 0.3209
-                },
-                "PreSize": {
-                  "X": 0.2387,
-                  "Y": 0.185
-                },
-                "LeftMargin": 225.3729,
-                "RightMargin": 246.6271,
-                "TopMargin": 469.2581,
-                "BottomMargin": 182.7419,
-                "CallBackType": "Click",
-                "Tag": 197,
-                "ActionTag": -266399514,
-                "Size": {
-                  "X": 148.0,
-                  "Y": 148.0
-                },
-                "Name": "pic_5",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/crystal_5.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 122,
-                "Scale9Height": 122,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 485.5692,
-                  "Y": 251.3595
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7832,
-                  "Y": 0.3142
-                },
-                "PreSize": {
-                  "X": 0.2387,
-                  "Y": 0.185
-                },
-                "LeftMargin": 411.5692,
-                "RightMargin": 60.4308,
-                "TopMargin": 474.6404,
-                "BottomMargin": 177.3595,
-                "CallBackType": "Click",
-                "Tag": 198,
-                "ActionTag": -1265350613,
-                "Size": {
-                  "X": 148.0,
-                  "Y": 148.0
-                },
-                "Name": "pic_6",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "RechargeUI/day.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 9,
-                "Scale9Width": 20,
-                "Scale9Height": 12,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 164.7313,
-                  "Y": 406.7288
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2657,
-                  "Y": 0.5084
-                },
-                "PreSize": {
-                  "X": 0.0742,
-                  "Y": 0.0375
-                },
-                "LeftMargin": 141.7313,
-                "RightMargin": 432.2687,
-                "TopMargin": 378.2712,
-                "BottomMargin": 391.7288,
-                "CallBackType": "Click",
-                "Tag": 212,
-                "ActionTag": -1128644267,
-                "Size": {
-                  "X": 46.0,
-                  "Y": 30.0
-                },
-                "Name": "day",
-                "ctype": "ImageViewObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 81.5324,
-                  "Y": 407.5221
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1315,
-                  "Y": 0.5094
-                },
-                "PreSize": {
-                  "X": 0.0984,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 81.5324,
-                "RightMargin": 477.4676,
-                "TopMargin": 381.4779,
-                "BottomMargin": 396.5221,
-                "Tag": 199,
-                "ActionTag": -1751907917,
-                "Size": {
-                  "X": 61.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_1",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 265.4599,
-                  "Y": 408.9482
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4282,
-                  "Y": 0.5112
-                },
-                "PreSize": {
-                  "X": 0.1306,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 265.4599,
-                "RightMargin": 273.5401,
-                "TopMargin": 380.0518,
-                "BottomMargin": 397.9482,
-                "Tag": 200,
-                "ActionTag": 1462371584,
-                "Size": {
-                  "X": 81.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_2",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 456.8133,
-                  "Y": 407.6784
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7368,
-                  "Y": 0.5096
-                },
-                "PreSize": {
-                  "X": 0.1306,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 456.8133,
-                "RightMargin": 82.1866,
-                "TopMargin": 381.3216,
-                "BottomMargin": 396.6784,
-                "Tag": 201,
-                "ActionTag": -778231460,
-                "Size": {
-                  "X": 81.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_3",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 82.6479,
-                  "Y": 169.005
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1333,
-                  "Y": 0.2113
-                },
-                "PreSize": {
-                  "X": 0.1306,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 82.6479,
-                "RightMargin": 456.3521,
-                "TopMargin": 619.995,
-                "BottomMargin": 158.005,
-                "Tag": 202,
-                "ActionTag": -2000532125,
-                "Size": {
-                  "X": 81.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_4",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 268.0012,
-                  "Y": 171.5443
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4323,
-                  "Y": 0.2144
-                },
-                "PreSize": {
-                  "X": 0.1306,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 268.0012,
-                "RightMargin": 270.9988,
-                "TopMargin": 617.4557,
-                "BottomMargin": 160.5443,
-                "Tag": 203,
-                "ActionTag": -477706246,
-                "Size": {
-                  "X": 81.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_5",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "9999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 452.0853,
-                  "Y": 167.7357
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 41,
-                  "G": 203,
-                  "B": 218
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7292,
-                  "Y": 0.2097
-                },
-                "PreSize": {
-                  "X": 0.1306,
-                  "Y": 0.0275
-                },
-                "LeftMargin": 452.0853,
-                "RightMargin": 86.9147,
-                "TopMargin": 621.2643,
-                "BottomMargin": 156.7357,
-                "Tag": 204,
-                "ActionTag": -245754306,
-                "Size": {
-                  "X": 81.0,
-                  "Y": 22.0
-                },
-                "Name": "gem_text_6",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 120.1809,
-                  "Y": 366.3403
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1938,
-                  "Y": 0.4579
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 88.1809,
-                "RightMargin": 467.8191,
-                "TopMargin": 421.6597,
-                "BottomMargin": 354.3403,
-                "Tag": 206,
-                "ActionTag": -1947143336,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_1",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 306.7255,
-                  "Y": 366.3404
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4947,
-                  "Y": 0.4579
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 274.7255,
-                "RightMargin": 281.2745,
-                "TopMargin": 421.6596,
-                "BottomMargin": 354.3404,
-                "Tag": 207,
-                "ActionTag": -1087370887,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_2",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 493.27,
-                  "Y": 366.3404
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7956,
-                  "Y": 0.4579
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 461.27,
-                "RightMargin": 94.73,
-                "TopMargin": 421.6596,
-                "BottomMargin": 354.3404,
-                "Tag": 208,
-                "ActionTag": 3033818,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_3",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 122.4095,
-                  "Y": 129.8066
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1974,
-                  "Y": 0.1623
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 90.4095,
-                "RightMargin": 465.5905,
-                "TopMargin": 658.1934,
-                "BottomMargin": 117.8066,
-                "Tag": 209,
-                "ActionTag": -311987062,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_4",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 309.6666,
-                  "Y": 129.8066
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4995,
-                  "Y": 0.1623
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 277.6666,
-                "RightMargin": 278.3334,
-                "TopMargin": 658.1934,
-                "BottomMargin": 117.8066,
-                "Tag": 210,
-                "ActionTag": 361488539,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_5",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
-                "LabelText": "999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white20-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 496.9236,
-                  "Y": 129.8066
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.8015,
-                  "Y": 0.1623
-                },
-                "PreSize": {
-                  "X": 0.1032,
-                  "Y": 0.03
-                },
-                "LeftMargin": 464.9236,
-                "RightMargin": 91.0764,
-                "TopMargin": 658.1934,
-                "BottomMargin": 117.8066,
-                "Tag": 211,
-                "ActionTag": -949133241,
-                "Size": {
-                  "X": 64.0,
-                  "Y": 24.0
-                },
-                "Name": "money_text_6",
-                "ctype": "TextBMFontObjectData"
-              },
-              {
                 "FontSize": 20,
                 "LabelText": "当前VIP信息",
                 "OutlineColor": {
@@ -1552,6 +417,301 @@
                 },
                 "Name": "text",
                 "ctype": "TextObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 20.0,
+                  "Y": 96.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0323,
+                  "Y": 0.12
+                },
+                "PreSize": {
+                  "X": 0.9032,
+                  "Y": 0.6
+                },
+                "LeftMargin": 20.0,
+                "RightMargin": 40.0,
+                "TopMargin": 224.0,
+                "BottomMargin": 96.0,
+                "Tag": 177,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 8.3086,
+                      "Y": 239.4923
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0148,
+                      "Y": 0.4989
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 8.3086,
+                    "RightMargin": 371.6914,
+                    "TopMargin": 13.5077,
+                    "BottomMargin": 239.4923,
+                    "Tag": 185,
+                    "ActionTag": -636296045,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item1",
+                    "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 192.429,
+                      "Y": 239.4923
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.3436,
+                      "Y": 0.4989
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 192.429,
+                    "RightMargin": 187.571,
+                    "TopMargin": 13.5077,
+                    "BottomMargin": 239.4923,
+                    "Tag": 193,
+                    "ActionTag": 1223767564,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item2",
+                    "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 376.5495,
+                      "Y": 239.4923
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.6724,
+                      "Y": 0.4989
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 376.5495,
+                    "RightMargin": 3.4505,
+                    "TopMargin": 13.5077,
+                    "BottomMargin": 239.4923,
+                    "Tag": 201,
+                    "ActionTag": 751293512,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item3",
+                    "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 8.3086,
+                      "Y": 5.0774
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0148,
+                      "Y": 0.0106
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 8.3086,
+                    "RightMargin": 371.6914,
+                    "TopMargin": 247.9226,
+                    "BottomMargin": 5.0774,
+                    "Tag": 209,
+                    "ActionTag": 1929501667,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item4",
+                    "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 192.429,
+                      "Y": 5.0774
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.3436,
+                      "Y": 0.0106
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 192.429,
+                    "RightMargin": 187.571,
+                    "TopMargin": 247.9225,
+                    "BottomMargin": 5.0774,
+                    "Tag": 217,
+                    "ActionTag": -1124834065,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item5",
+                    "ctype": "ProjectNodeObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RechargeIconLayer.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 376.5495,
+                      "Y": 5.0774
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.6724,
+                      "Y": 0.0106
+                    },
+                    "PreSize": {
+                      "X": 0.3214,
+                      "Y": 0.4729
+                    },
+                    "LeftMargin": 376.5495,
+                    "RightMargin": 3.4506,
+                    "TopMargin": 247.9226,
+                    "BottomMargin": 5.0774,
+                    "Tag": 225,
+                    "ActionTag": 1125154198,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 227.0
+                    },
+                    "Name": "item6",
+                    "ctype": "ProjectNodeObjectData"
+                  }
+                ],
+                "ActionTag": -1348626573,
+                "Size": {
+                  "X": 560.0,
+                  "Y": 480.0
+                },
+                "Name": "box",
+                "ctype": "PanelObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -1671,7 +831,7 @@
                   {
                     "FileData": {
                       "Type": "Normal",
-                      "Path": "RechargeUI/vip.png",
+                      "Path": "rechargeUI/vip.png",
                       "Plist": ""
                     },
                     "Scale9Width": 137,
@@ -1740,24 +900,13 @@
       },
       "UsedResources": [
         "CloseBtn.json",
-        "font/white18-export.fnt",
-        "font/white18-export.png",
-        "font/white20-export.fnt",
-        "font/white20-export.png",
         "mainUI/bg_01.png",
         "mainUI/bg_03.png",
         "mainUI/bg_06.png",
-        "RechargeUI/bg.png",
-        "RechargeUI/card.png",
-        "RechargeUI/crystal_1.png",
-        "RechargeUI/crystal_2.png",
-        "RechargeUI/crystal_3.png",
-        "RechargeUI/crystal_4.png",
-        "RechargeUI/crystal_5.png",
-        "RechargeUI/day.png",
-        "RechargeUI/title.png",
-        "RechargeUI/title_bg.png",
-        "RechargeUI/vip.png"
+        "RechargeIconLayer.json",
+        "rechargeUI/title.png",
+        "rechargeUI/title_bg.png",
+        "rechargeUI/vip.png"
       ],
       "ctype": "GameFileData"
     }
