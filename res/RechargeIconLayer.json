@@ -1,0 +1,305 @@
+{
+  "ID": "a732b168-74ac-473c-8e62-663b76e74928",
+  "Version": "2.3.3.0",
+  "Name": "RechargeIconLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 444,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 473,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/bg.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Width": 180,
+                "Scale9Height": 227,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": -0.9399,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": -0.0052,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "LeftMargin": -0.9399,
+                "RightMargin": 0.9399,
+                "Tag": 503,
+                "ActionTag": -1300713239,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 227.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/card.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Width": 180,
+                "Scale9Height": 125,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 90.231,
+                  "Y": 142.1064
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5013,
+                  "Y": 0.626
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.5507
+                },
+                "LeftMargin": 0.231,
+                "RightMargin": -0.231,
+                "TopMargin": 22.3936,
+                "BottomMargin": 79.6064,
+                "CallBackType": "Click",
+                "Tag": 627,
+                "ActionTag": 94847131,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 125.0
+                },
+                "Name": "pic",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/day.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 9,
+                "Scale9Width": 20,
+                "Scale9Height": 12,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 150.3921,
+                  "Y": 67.3954
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 41,
+                  "G": 203,
+                  "B": 218
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8355,
+                  "Y": 0.2969
+                },
+                "PreSize": {
+                  "X": 0.2556,
+                  "Y": 0.1322
+                },
+                "LeftMargin": 127.3921,
+                "RightMargin": 6.6079,
+                "TopMargin": 144.6046,
+                "BottomMargin": 52.3954,
+                "CallBackType": "Click",
+                "Tag": 128,
+                "ActionTag": -1187123139,
+                "Size": {
+                  "X": 46.0,
+                  "Y": 30.0
+                },
+                "Name": "day",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white20-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 97.4095,
+                  "Y": 26.8066
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5412,
+                  "Y": 0.1181
+                },
+                "PreSize": {
+                  "X": 0.3556,
+                  "Y": 0.1057
+                },
+                "LeftMargin": 65.4095,
+                "RightMargin": 50.5905,
+                "TopMargin": 188.1934,
+                "BottomMargin": 14.8066,
+                "Tag": 152,
+                "ActionTag": -94378089,
+                "Size": {
+                  "X": 64.0,
+                  "Y": 24.0
+                },
+                "Name": "money_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "LabelText": "9999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white18-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 92.9599,
+                  "Y": 67.9482
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 41,
+                  "G": 203,
+                  "B": 218
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5164,
+                  "Y": 0.2993
+                },
+                "PreSize": {
+                  "X": 0.45,
+                  "Y": 0.0969
+                },
+                "LeftMargin": 52.4599,
+                "RightMargin": 46.5401,
+                "TopMargin": 148.0518,
+                "BottomMargin": 56.9482,
+                "Tag": 104,
+                "ActionTag": -407213588,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 22.0
+                },
+                "Name": "gem_text",
+                "ctype": "TextBMFontObjectData"
+              }
+            ],
+            "ActionTag": -1385079385,
+            "Size": {
+              "X": 180.0,
+              "Y": 227.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 180.0,
+          "Y": 227.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white18-export.fnt",
+        "font/white18-export.png",
+        "font/white20-export.fnt",
+        "font/white20-export.png",
+        "OtherUI.plist",
+        "OtherUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
