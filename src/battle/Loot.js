@@ -44,7 +44,7 @@ var Loot = CCSUnit.extend({
                 var updateRes = PlayerData.createResourceData(this.bonus.unit, this.bonus.value);
                 PlayerData.updateResource(updateRes);
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
-                cc.log(this.bonus.unit + ":" + this.bonus.value);
+                //cc.log(this.bonus.unit + ":" + this.bonus.value);
             }
         }.bind(this), this);
         var startPos = this.getPosition();

@@ -426,7 +426,7 @@ var NetWork = {
         sgt.WxCentralService.getPayOrder(body,total_fee,player.id,function(result,order){
             if(result){
                 var obj = {"orderId":order.did,"num":num};
-                player.orders.push(obj);
+                PlayerData.addPlayerNoPayOrders(obj);
                 //微信支付
                 wx.chooseWXPay({
                     timestamp: order.time_start, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
@@ -456,7 +456,7 @@ var NetWork = {
                 var resource = PlayerData.createResourceData("gem",obj.num);
                 PlayerData.updateResource(resource);
                 customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,resource);
-                player.orders.splice(player.orders.indexOf(obj),1);
+                PlayerData.delePlayerNoPayOrdersById(obj);
                 PlayerData.updatePlayer();
                 //直接上传服务器需放到updatePlayer 之后
                 NetWork.updatePlayerSave();

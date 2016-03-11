@@ -339,6 +339,16 @@ var PlayerData = {
             });
         }
     },
+    addPlayerNoPayOrders: function(order){
+      if(player.orders.indexOf(order) != -1){
+          player.orders.push(order);
+      }
+    },
+    delePlayerNoPayOrdersById: function(order){
+        if(player.orders.indexOf(order) != -1){
+            player.orders.splice(player.orders.indexOf(order),1);
+        }
+    },
     heroes: [],
     stageData: {},
     globe_life_value: 0,
