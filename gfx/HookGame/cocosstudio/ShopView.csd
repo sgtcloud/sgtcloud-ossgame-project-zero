@@ -82,7 +82,7 @@
               <AbstractNodeData Name="btn" ActionTag="1095335415" Tag="287" IconVisible="False" LeftMargin="225.0000" RightMargin="225.0000" TopMargin="512.1740" BottomMargin="27.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
-                  <AbstractNodeData Name="buy_btn" CanEdit="False" ActionTag="-502619807" CallBackType="Click" Tag="288" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="buy_btn" ActionTag="-502619807" CallBackType="Click" Tag="288" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="150.0000" Y="60.0000" />
                     <AnchorPoint />
                     <Position />
@@ -97,7 +97,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="buy_text" CanEdit="False" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="buy_text" ActionTag="-466565672" CallBackType="Touch" Tag="339" IconVisible="False" LeftMargin="41.0000" RightMargin="41.0000" TopMargin="12.0000" BottomMargin="12.0000" Scale9Width="66" Scale9Height="34" ctype="ImageViewObjectData">
                     <Size X="68.0000" Y="36.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.0000" Y="30.0000" />

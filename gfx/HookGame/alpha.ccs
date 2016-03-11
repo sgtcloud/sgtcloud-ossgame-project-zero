@@ -606,6 +606,21 @@
         </Folder>
         <Project Name="PVPRecord.csd" Type="Layer" />
         <Project Name="GuideHand.csd" Type="Node" />
+        <Project Name="RechargeLayer.csd" Type="Layer" />
+        <Folder Name="RechargeUI">
+          <Image Name="title.png" />
+          <Image Name="title_bg.png" />
+          <Image Name="crystal_1.png" />
+          <Image Name="crystal_2.png" />
+          <Image Name="crystal_3.png" />
+          <Image Name="crystal_4.png" />
+          <Image Name="crystal_5.png" />
+          <Image Name="crystal_6.png" />
+          <Image Name="bg.png" />
+          <Image Name="card.png" />
+          <Image Name="day.png" />
+          <Image Name="vip.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
