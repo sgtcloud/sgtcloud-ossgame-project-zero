@@ -435,6 +435,42 @@
           <Image Name="textBg.png" />
           <Image Name="ui_enemy_a.png" />
           <Image Name="ui_enemy_b.png" />
+          <PlistImageFolder Image="OtherUI.png" PListFile="OtherUI.plist" Name=".OtherUI_PList.Dir">
+            <PlistImageFile Name="ui_btn_1.png" Key="ui/btn_1.png" />
+            <PlistImageFile Name="ui_btn_2.png" Key="ui/btn_2.png" />
+            <PlistImageFile Name="ui_equip_btn1.png" Key="ui/equip_btn1.png" />
+            <PlistImageFile Name="ui_equip_btn2.png" Key="ui/equip_btn2.png" />
+            <PlistImageFile Name="ui_hero_btn1.png" Key="ui/hero_btn1.png" />
+            <PlistImageFile Name="ui_hero_btn2.png" Key="ui/hero_btn2.png" />
+            <PlistImageFile Name="ui_main_btn1.png" Key="ui/main_btn1.png" />
+            <PlistImageFile Name="ui_main_btn2.png" Key="ui/main_btn2.png" />
+            <PlistImageFile Name="ui_pvp_btn1.png" Key="ui/pvp_btn1.png" />
+            <PlistImageFile Name="ui_pvp_btn2.png" Key="ui/pvp_btn2.png" />
+            <PlistImageFile Name="ui_rank_btn1.png" Key="ui/rank_btn1.png" />
+            <PlistImageFile Name="ui_rank_btn2.png" Key="ui/rank_btn2.png" />
+            <PlistImageFile Name="ui_shop_btn1.png" Key="ui/shop_btn1.png" />
+            <PlistImageFile Name="ui_shop_btn2.png" Key="ui/shop_btn2.png" />
+            <PlistImageFile Name="maillUI_delete.png" Key="maillUI/delete.png" />
+            <PlistImageFile Name="maillUI_get.png" Key="maillUI/get.png" />
+            <PlistImageFile Name="maillUI_get2.png" Key="maillUI/get2.png" />
+            <PlistImageFile Name="maillUI_look.png" Key="maillUI/look.png" />
+            <PlistImageFile Name="maillUI_title.png" Key="maillUI/title.png" />
+            <PlistImageFile Name="PVPUI_buy.png" Key="PVPUI/buy.png" />
+            <PlistImageFile Name="PVPUI_change.png" Key="PVPUI/change.png" />
+            <PlistImageFile Name="PVPUI_fight.png" Key="PVPUI/fight.png" />
+            <PlistImageFile Name="PVPUI_pvp.png" Key="PVPUI/pvp.png" />
+            <PlistImageFile Name="PVPUI_Ranking.png" Key="PVPUI/Ranking.png" />
+            <PlistImageFile Name="PVPUI_record.png" Key="PVPUI/record.png" />
+            <PlistImageFile Name="PVPUI_surplus.png" Key="PVPUI/surplus.png" />
+            <PlistImageFile Name="PVPUI_title.png" Key="PVPUI/title.png" />
+            <PlistImageFile Name="rechargeUI_bg.png" Key="rechargeUI/bg.png" />
+            <PlistImageFile Name="rechargeUI_card.png" Key="rechargeUI/card.png" />
+            <PlistImageFile Name="rechargeUI_day.png" Key="rechargeUI/day.png" />
+            <PlistImageFile Name="rechargeUI_pic.png" Key="rechargeUI/pic.png" />
+            <PlistImageFile Name="rechargeUI_title.png" Key="rechargeUI/title.png" />
+            <PlistImageFile Name="rechargeUI_title_bg.png" Key="rechargeUI/title_bg.png" />
+            <PlistImageFile Name="rechargeUI_vip.png" Key="rechargeUI/vip.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="BattleLayer.csd" Type="Layer" />
         <Project Name="BattleNum.csd" Type="Layer" />
@@ -606,6 +642,18 @@
         </Folder>
         <Project Name="PVPRecord.csd" Type="Layer" />
         <Project Name="GuideHand.csd" Type="Node" />
+        <Project Name="RechargeLayer.csd" Type="Layer" />
+        <Folder Name="rechargeUI">
+          <Image Name="title.png" />
+          <Image Name="title_bg.png" />
+          <Image Name="bg.png" />
+          <Image Name="card.png" />
+          <Image Name="day.png" />
+          <Image Name="vip.png" />
+          <Image Name="pic.png" />
+        </Folder>
+        <Project Name="RechargeIconLayer.csd" Type="Layer" />
+        <PlistInfo Name="OtherUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

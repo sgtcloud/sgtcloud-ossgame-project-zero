@@ -28,28 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="PVPLayer.csd" />
-          <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="PVPOpponentView.csd" />
-          <FilePathData Path="RankView.csd" />
-          <FilePathData Path="ShopIconLayer.csd" />
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="ShopListView.csd" />
-          <FilePathData Path="PVPRecord.csd" />
-          <FilePathData Path="GuideGirl.csd" />
-          <FilePathData Path="Guide.csd" />
-          <FilePathData Path="GuideHand.csd" />
-          <FilePathData Path="SignIcon.csd" />
-          <FilePathData Path="ItemLayer.csd" />
-          <FilePathData Path="Btn_Buy.csd" />
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="EquipHeroView.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="EquipHeroView.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

@@ -34,8 +34,12 @@
           <FilePathData Path="other.csi" />
           <FilePathData Path="hand01.csd" />
           <FilePathData Path="hero101skill01.csd" />
+          <FilePathData Path="hero104.csi" />
+          <FilePathData Path="hero104.csd" />
+          <FilePathData Path="hero101.csi" />
+          <FilePathData Path="hero101.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="hero101skill01.csd" />
+        <ActiveDocument Path="hero101.csd" />
       </Value>
     </Item>
   </Properties>

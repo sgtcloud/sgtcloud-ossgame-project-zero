@@ -19,14 +19,14 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="view_bg" ActionTag="1553888994" Tag="202" IconVisible="False" LeftMargin="20.5768" RightMargin="19.4232" TopMargin="96.9268" BottomMargin="123.0733" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
-                <Size X="560.0000" Y="430.0000" />
+              <AbstractNodeData Name="view_bg" ActionTag="1553888994" Tag="202" IconVisible="False" LeftMargin="20.5768" RightMargin="19.4232" TopMargin="46.9267" BottomMargin="123.0733" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
+                <Size X="560.0000" Y="480.0000" />
                 <AnchorPoint />
                 <Position X="20.5768" Y="123.0733" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0343" Y="0.1893" />
-                <PreSize X="0.9333" Y="0.6615" />
+                <PreSize X="0.9333" Y="0.7385" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="num_bg" ActionTag="1529781592" Tag="203" IconVisible="False" LeftMargin="249.4900" RightMargin="250.5100" TopMargin="535.2957" BottomMargin="74.7043" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="12" BottomEage="11" Scale9OriginX="9" Scale9OriginY="12" Scale9Width="10" Scale9Height="13" ctype="ImageViewObjectData">
@@ -50,7 +50,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="delete_btn" ActionTag="751088081" Tag="204" IconVisible="False" LeftMargin="85.5283" RightMargin="364.4717" TopMargin="565.6407" BottomMargin="24.3592" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="delete_btn" ActionTag="751088081" Tag="204" IconVisible="False" LeftMargin="85.5283" RightMargin="364.4717" TopMargin="565.6408" BottomMargin="24.3592" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="btn" ActionTag="-1147753795" CallBackType="Click" Tag="205" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -76,7 +76,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="Normal" Path="maillUI/delete.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="maillUI/delete.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="Normal" Path="maillUI/get.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="maillUI/get.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -130,44 +130,44 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_bg" ActionTag="92619797" Tag="207" IconVisible="False" LeftMargin="102.5490" RightMargin="97.4510" TopMargin="11.2711" BottomMargin="578.7289" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
-                <Size X="400.0000" Y="60.0000" />
+              <AbstractNodeData Name="title_bg" ActionTag="92619797" Tag="207" IconVisible="False" LeftMargin="241.9828" RightMargin="235.0172" TopMargin="-29.2842" BottomMargin="637.2842" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="97" Scale9Height="16" ctype="ImageViewObjectData">
+                <Size X="123.0000" Y="42.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="302.5490" Y="608.7289" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="303.4828" Y="658.2842" />
+                <Scale ScaleX="2.6000" ScaleY="1.7000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5042" Y="0.9365" />
-                <PreSize X="0.6667" Y="0.0923" />
-                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
+                <PrePosition X="0.5058" Y="1.0127" />
+                <PreSize X="0.2050" Y="0.0646" />
+                <FileData Type="Normal" Path="mainUI/title_bg4.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title" ActionTag="856378625" CallBackType="Click" Tag="211" IconVisible="False" LeftMargin="238.0492" RightMargin="232.9508" TopMargin="11.2715" BottomMargin="580.7285" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title" ActionTag="856378625" CallBackType="Click" Tag="211" IconVisible="False" LeftMargin="237.9830" RightMargin="233.0170" TopMargin="-43.2837" BottomMargin="635.2837" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
                 <Size X="129.0000" Y="58.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="302.5492" Y="609.7285" />
+                <Position X="302.4830" Y="664.2837" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5042" Y="0.9380" />
+                <PrePosition X="0.5041" Y="1.0220" />
                 <PreSize X="0.2150" Y="0.0892" />
-                <FileData Type="Normal" Path="maillUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="maillUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="544.1362" RightMargin="-0.1362" TopMargin="0.9441" BottomMargin="591.0559" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="563.7486" RightMargin="-19.7486" TopMargin="-13.4700" BottomMargin="605.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />
                 <AnchorPoint />
-                <Position X="544.1362" Y="591.0559" />
+                <Position X="563.7486" Y="605.4700" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9069" Y="0.9093" />
+                <PrePosition X="0.9396" Y="0.9315" />
                 <PreSize X="0.0933" Y="0.0892" />
                 <FileData Type="Normal" Path="CloseBtn.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="list" ActionTag="-456966373" Tag="248" IconVisible="False" LeftMargin="34.7511" RightMargin="35.2489" TopMargin="109.0822" BottomMargin="140.9178" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-                <Size X="530.0000" Y="400.0000" />
+              <AbstractNodeData Name="list" ActionTag="-456966373" Tag="248" IconVisible="False" LeftMargin="34.7511" RightMargin="35.2489" TopMargin="59.0822" BottomMargin="140.9178" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+                <Size X="530.0000" Y="450.0000" />
                 <AnchorPoint />
                 <Position X="34.7511" Y="140.9178" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0579" Y="0.2168" />
-                <PreSize X="0.8833" Y="0.6154" />
+                <PreSize X="0.8833" Y="0.6923" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
