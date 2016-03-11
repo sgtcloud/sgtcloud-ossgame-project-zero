@@ -58,7 +58,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5002" Y="0.9465" />
                 <PreSize X="0.3266" Y="0.0674" />
-                <FileData Type="Normal" Path="PVPUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="PVPUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="my_text" ActionTag="1708421550" Tag="284" IconVisible="False" LeftMargin="219.5473" RightMargin="213.4527" TopMargin="140.3035" BottomMargin="692.6965" Scale9Width="207" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="207.0000" Y="27.0000" />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6356" Y="0.5082" />
                     <PreSize X="0.7429" Y="0.5532" />
-                    <FileData Type="Normal" Path="PVPUI/change.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="PVPUI/change.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -156,7 +156,7 @@
                     <CColor A="255" R="255" G="0" B="0" />
                     <PrePosition X="0.2007" Y="0.2423" />
                     <PreSize X="0.7429" Y="0.5319" />
-                    <FileData Type="Normal" Path="PVPUI/buy.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="PVPUI/buy.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -196,7 +196,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5784" Y="0.5082" />
                     <PreSize X="0.7429" Y="0.5532" />
-                    <FileData Type="Normal" Path="PVPUI/record.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="PVPUI/record.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -218,7 +218,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4946" Y="0.1077" />
                 <PreSize X="0.2203" Y="0.0349" />
-                <FileData Type="Normal" Path="PVPUI/surplus.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="PVPUI/surplus.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="surplus_num" ActionTag="30635809" Tag="379" IconVisible="False" LeftMargin="377.6097" RightMargin="245.3903" TopMargin="757.3575" BottomMargin="82.6425" LabelText="5" ctype="TextBMFontObjectData">
                 <Size X="17.0000" Y="20.0000" />

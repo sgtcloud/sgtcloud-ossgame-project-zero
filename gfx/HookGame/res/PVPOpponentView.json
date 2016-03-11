@@ -227,9 +227,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "PVPUI/Ranking.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 140,
                 "Scale9Height": 24,
@@ -317,9 +317,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "PVPUI/fight.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 87,
                 "Scale9Height": 28,
@@ -515,9 +515,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "PVPUI/pvp.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 56,
                     "Scale9Height": 59,
@@ -588,9 +588,8 @@
         "font/white22-export.png",
         "mainUI/bg_05.png",
         "mainUI/hero_icon.png",
-        "PVPUI/fight.png",
-        "PVPUI/pvp.png",
-        "PVPUI/Ranking.png"
+        "OtherUI.plist",
+        "OtherUI.png"
       ],
       "ctype": "GameFileData"
     }

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="-0.0052" />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="rechargeUI/bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/bg.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="pic" ActionTag="94847131" CallBackType="Click" Tag="627" IconVisible="False" LeftMargin="0.2310" RightMargin="-0.2310" TopMargin="22.3936" BottomMargin="79.6064" Scale9Width="180" Scale9Height="125" ctype="ImageViewObjectData">
                 <Size X="180.0000" Y="125.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5013" Y="0.6260" />
                 <PreSize X="1.0000" Y="0.5507" />
-                <FileData Type="Normal" Path="rechargeUI/card.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/card.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="day" ActionTag="-1187123139" CallBackType="Click" Tag="128" IconVisible="False" LeftMargin="127.3921" RightMargin="6.6079" TopMargin="144.6046" BottomMargin="52.3954" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="9" BottomEage="9" Scale9OriginX="13" Scale9OriginY="9" Scale9Width="20" Scale9Height="12" ctype="ImageViewObjectData">
                 <Size X="46.0000" Y="30.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="41" G="203" B="218" />
                 <PrePosition X="0.8355" Y="0.2969" />
                 <PreSize X="0.2556" Y="0.1322" />
-                <FileData Type="Normal" Path="rechargeUI/day.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/day.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="money_text" ActionTag="-94378089" Tag="152" IconVisible="False" LeftMargin="65.4095" RightMargin="50.5905" TopMargin="188.1934" BottomMargin="14.8066" LabelText="999" ctype="TextBMFontObjectData">
                 <Size X="64.0000" Y="24.0000" />

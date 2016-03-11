@@ -58,7 +58,7 @@
                 <CColor A="255" R="255" G="229" B="2" />
                 <PrePosition X="0.5984" Y="0.7528" />
                 <PreSize X="0.2373" Y="0.1778" />
-                <FileData Type="Normal" Path="PVPUI/Ranking.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="PVPUI/Ranking.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="rank_num" ActionTag="1839535962" Tag="335" IconVisible="False" LeftMargin="311.8658" RightMargin="223.1342" TopMargin="21.7493" BottomMargin="93.2507" LabelText="999" ctype="TextBMFontObjectData">
                 <Size X="55.0000" Y="20.0000" />
@@ -78,7 +78,7 @@
                 <CColor A="255" R="255" G="0" B="0" />
                 <PrePosition X="0.2739" Y="0.2808" />
                 <PreSize X="0.1475" Y="0.2074" />
-                <FileData Type="Normal" Path="PVPUI/fight.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="PVPUI/fight.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="fight_num" ActionTag="1425069277" Tag="338" IconVisible="False" LeftMargin="211.5521" RightMargin="239.4479" TopMargin="82.0879" BottomMargin="26.9121" LabelText="999999" ctype="TextBMFontObjectData">
                 <Size X="139.0000" Y="26.0000" />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.3113" Y="0.1293" />
                     <PreSize X="0.4000" Y="0.7375" />
-                    <FileData Type="Normal" Path="PVPUI/pvp.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="PVPUI/pvp.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

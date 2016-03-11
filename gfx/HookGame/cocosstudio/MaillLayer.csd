@@ -76,7 +76,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="Normal" Path="maillUI/delete.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="maillUI/delete.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="Normal" Path="maillUI/get.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="maillUI/get.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -148,7 +148,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5041" Y="1.0220" />
                 <PreSize X="0.2150" Y="0.0892" />
-                <FileData Type="Normal" Path="maillUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="maillUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="563.7486" RightMargin="-19.7486" TopMargin="-13.4700" BottomMargin="605.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />
