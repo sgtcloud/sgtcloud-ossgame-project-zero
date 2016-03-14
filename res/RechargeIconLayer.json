@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rechargeUI/bg.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 180,
                 "Scale9Height": 227,
@@ -92,9 +92,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rechargeUI/card.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 180,
                 "Scale9Height": 125,
@@ -136,9 +136,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "rechargeUI/day.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -295,9 +295,8 @@
         "font/white18-export.png",
         "font/white20-export.fnt",
         "font/white20-export.png",
-        "rechargeUI/bg.png",
-        "rechargeUI/card.png",
-        "rechargeUI/day.png"
+        "OtherUI.plist",
+        "OtherUI.png"
       ],
       "ctype": "GameFileData"
     }

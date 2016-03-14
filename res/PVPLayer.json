@@ -229,9 +229,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "PVPUI/title.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 209,
                 "Scale9Height": 58,
@@ -512,9 +512,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "PVPUI/change.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 104,
                     "Scale9Height": 26,
@@ -674,9 +674,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "PVPUI/buy.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 104,
                     "Scale9Height": 25,
@@ -836,9 +836,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "PVPUI/record.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 104,
                     "Scale9Height": 26,
@@ -888,9 +888,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "PVPUI/surplus.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 141,
                 "Scale9Height": 30,
@@ -1048,11 +1048,8 @@
         "mainUI/bg_10.png",
         "mainUI/bg_14.png",
         "mainUI/bg_18.png",
-        "PVPUI/buy.png",
-        "PVPUI/change.png",
-        "PVPUI/record.png",
-        "PVPUI/surplus.png",
-        "PVPUI/title.png",
+        "OtherUI.plist",
+        "OtherUI.png",
         "RankUI.plist",
         "RankUI.png"
       ],

@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5949" Y="0.9469" />
                 <PreSize X="0.1210" Y="0.0550" />
-                <FileData Type="Normal" Path="rechargeUI/title_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/title_bg.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title_bg1" ActionTag="-1130987287" CallBackType="Click" Tag="143" IconVisible="False" LeftMargin="198.9983" RightMargin="346.0017" TopMargin="20.4587" BottomMargin="735.5413" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="55" Scale9Height="24" ctype="ImageViewObjectData">
                 <Size X="75.0000" Y="44.0000" />
@@ -37,7 +37,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3814" Y="0.9469" />
                 <PreSize X="0.1210" Y="0.0550" />
-                <FileData Type="Normal" Path="rechargeUI/title_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/title_bg.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="title" ActionTag="319437016" CallBackType="Click" Tag="144" IconVisible="False" LeftMargin="236.4906" RightMargin="254.5094" TopMargin="5.8621" BottomMargin="736.1379" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="109" Scale9Height="38" ctype="ImageViewObjectData">
                 <Size X="129.0000" Y="58.0000" />
@@ -47,15 +47,15 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4855" Y="0.9564" />
                 <PreSize X="0.2081" Y="0.0725" />
-                <FileData Type="Normal" Path="rechargeUI/title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title2_bg" ActionTag="-943825671" CallBackType="Click" Tag="146" IconVisible="False" LeftMargin="11.3808" RightMargin="28.6192" TopMargin="90.1326" BottomMargin="589.8674" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="10" BottomEage="10" Scale9OriginX="9" Scale9OriginY="10" Scale9Width="10" Scale9Height="16" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title2_bg" ActionTag="-943825671" CallBackType="Click" Tag="146" IconVisible="False" LeftMargin="11.9916" RightMargin="28.0084" TopMargin="90.1327" BottomMargin="589.8673" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="10" BottomEage="10" Scale9OriginX="9" Scale9OriginY="10" Scale9Width="10" Scale9Height="16" ctype="ImageViewObjectData">
                 <Size X="580.0000" Y="120.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="301.3808" Y="649.8674" />
+                <Position X="301.9916" Y="649.8673" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4861" Y="0.8123" />
+                <PrePosition X="0.4871" Y="0.8123" />
                 <PreSize X="0.9355" Y="0.1500" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
@@ -78,6 +78,16 @@
                 <PrePosition X="0.0167" Y="0.1051" />
                 <PreSize X="0.9355" Y="0.6250" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Image_41" ActionTag="1223335582" Tag="332" IconVisible="False" LeftMargin="18.4632" RightMargin="35.5368" TopMargin="94.4749" BottomMargin="599.5251" Scale9Width="425" Scale9Height="81" ctype="ImageViewObjectData">
+                <Size X="566.0000" Y="106.0000" />
+                <AnchorPoint />
+                <Position X="18.4632" Y="599.5251" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0298" Y="0.7494" />
+                <PreSize X="0.9129" Y="0.1325" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/pic.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="-219201916" Tag="397" IconVisible="False" LeftMargin="246.3808" RightMargin="263.6192" TopMargin="140.1325" BottomMargin="639.8675" FontSize="20" LabelText="当前VIP信息" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="110.0000" Y="20.0000" />
@@ -191,7 +201,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.9133" Y="0.6500" />
-                    <FileData Type="Normal" Path="rechargeUI/vip.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="rechargeUI/vip.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

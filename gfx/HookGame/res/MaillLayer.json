@@ -346,9 +346,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "maillUI/delete.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 92,
                     "Scale9Height": 29,
@@ -510,9 +510,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "maillUI/get.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 92,
                     "Scale9Height": 29,
@@ -609,9 +609,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "maillUI/title.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 129,
                 "Scale9Height": 58,
@@ -764,13 +764,12 @@
       },
       "UsedResources": [
         "CloseBtn.json",
-        "maillUI/delete.png",
-        "maillUI/get.png",
-        "maillUI/title.png",
         "mainUI/bg_01.png",
         "mainUI/bg_03.png",
         "mainUI/bg_14.png",
-        "mainUI/title_bg4.png"
+        "mainUI/title_bg4.png",
+        "OtherUI.plist",
+        "OtherUI.png"
       ],
       "ctype": "GameFileData"
     }
