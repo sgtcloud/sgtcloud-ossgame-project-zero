@@ -39,13 +39,13 @@
                 <PreSize X="0.2556" Y="0.1322" />
                 <FileData Type="MarkedSubImage" Path="rechargeUI/day.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="money_text" ActionTag="-94378089" Tag="152" IconVisible="False" LeftMargin="65.4095" RightMargin="50.5905" TopMargin="188.1934" BottomMargin="14.8066" LabelText="999" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="money_text" ActionTag="-94378089" Tag="152" IconVisible="False" LeftMargin="69.4095" RightMargin="46.5905" TopMargin="188.1934" BottomMargin="14.8066" LabelText="999" ctype="TextBMFontObjectData">
                 <Size X="64.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="97.4095" Y="26.8066" />
+                <Position X="101.4095" Y="26.8066" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5412" Y="0.1181" />
+                <PrePosition X="0.5634" Y="0.1181" />
                 <PreSize X="0.3556" Y="0.1057" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white20-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -58,6 +58,16 @@
                 <PrePosition X="0.5164" Y="0.2993" />
                 <PreSize X="0.4500" Y="0.0969" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white18-export.fnt" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="label" ActionTag="1995789183" CallBackType="Click" Tag="337" IconVisible="False" LeftMargin="-0.7699" RightMargin="97.7699" TopMargin="0.1459" BottomMargin="145.8541" Scale9Width="83" Scale9Height="81" ctype="ImageViewObjectData">
+                <Size X="83.0000" Y="81.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="40.7301" Y="186.3541" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2263" Y="0.8209" />
+                <PreSize X="0.4611" Y="0.3568" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/label.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

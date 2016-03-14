@@ -651,9 +651,11 @@
           <Image Name="day.png" />
           <Image Name="vip.png" />
           <Image Name="pic.png" />
+          <Image Name="label.png" />
         </Folder>
         <Project Name="RechargeIconLayer.csd" Type="Layer" />
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
+        <Project Name="PackageLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
