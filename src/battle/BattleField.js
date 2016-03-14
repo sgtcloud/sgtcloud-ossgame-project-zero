@@ -93,6 +93,18 @@ var SpriteGroup = function (_sprites) {
         }
         return deadHeroNum === sprites.length;
     };
+
+    this.pause = function () {
+        for (var i in sprites) {
+            sprites[i].pause();
+        }
+    };
+
+    this.resume = function () {
+        for (var i in sprites) {
+            sprites[i].resume();
+        }
+    };
     this.findLowestHpUnit = function () {
         var lowestHpUnit = null;
         var hp = 0;
@@ -178,9 +190,29 @@ var BattleField = cc.Class.extend({
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
 
+        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, function () {
+            this.pauseAllSprites();
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, function () {
+            this.resumeAllSprites();
+        }.bind(this));
+
+
         customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
         customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
         customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
+    },
+
+    pauseAllSprites: function () {
+        this.container.pause();
+        this.heroUnits.pause();
+        this.enemyUnits.pause();
+    },
+
+    resumeAllSprites: function () {
+        this.container.resume();
+        this.heroUnits.resume();
+        this.enemyUnits.resume();
     },
 
     useItem: function (item) {

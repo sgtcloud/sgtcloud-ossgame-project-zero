@@ -432,10 +432,14 @@ sz.GuideLayer = cc.Layer.extend({
     /**
      * 初始化手型提示
      * @private
+     *
      */
     _initFinger: function () {
-        //this._finger = new cc.Sprite(this._guideConfig.fingerImage);
-        this._finger = ccs.load(this._guideConfig.fingerImage).node;
+        if (this._guideConfig.fingerImage.indexOf('.json') !== -1) {
+            this._finger = ccs.load(this._guideConfig.fingerImage).node;
+        } else {
+            this._finger = new cc.Sprite(this._guideConfig.fingerImage);
+        }
         this._finger.setPosition(this.width * 0.5, this.height * 0.5);
         this._finger.setAnchorPoint(0, 1);
         this._finger.setVisible(false);

@@ -41,7 +41,6 @@
     "src/ui/HeroDesc.js",
     "src/ui/Popup.js",
     "src/ui/Guide.js",
-    "src/ui/UILoader.js",
     "src/Chance.js",
     "src/GamePopup.js",
     "src/battle/ChestUnit.js",

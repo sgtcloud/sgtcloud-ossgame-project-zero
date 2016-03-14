@@ -75,13 +75,12 @@ var MainScene = cc.Scene.extend({
 
             w.toggleBufflayer = toggleBufflayer;
         })(window);
-
-        var guideLayer = new sz.GuideLayer(this, guideConfig);
-        //cc.director.getRunningScene().addChild(guideLayer);
-        this.addChild(guideLayer, 1000);
     },
     onEnter: function () {
         this._super();
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+
+        var guideLayer = new sz.GuideLayer(this, guideConfig);
+        this.addChild(guideLayer, 1000);
     }
 });
