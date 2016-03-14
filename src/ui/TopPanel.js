@@ -24,12 +24,7 @@ var TopPanel = cc.Node.extend({
             game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
         });
         bindButtonCallback(this.getDiamondBtn, function () {
-            Popup.openPopup('购买钻石','你确定要购买10个钻石嘛？',function(popup){
-                popup.hiddenPopup();
-                NetWork.chooseWXPay('购买钻石',1,10,function(){
-                    tip.toggle('购买成功');
-                });
-            });
+            RechargePanel.open();
         });
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());

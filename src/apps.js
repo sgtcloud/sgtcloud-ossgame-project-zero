@@ -236,6 +236,92 @@ var CONSTS = {
             },
             "w": 2
         }
+    ],
+    "chargePoints":[
+        {
+            "id": 1,
+            "type": "mCard",
+            "description": "描述",
+            "name": "月卡",
+            "money": 3000,
+            "amount": 100,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 0,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 2,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 600,
+            "amount": 60,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 180,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 3,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 5000,
+            "amount": 500,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 1500,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 4,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 9800,
+            "amount": 980,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 2940,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 5,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 25800,
+            "amount": 2580,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 7740,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 6,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 51800,
+            "amount": 5180,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 15540,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        }
     ]
 };
 
@@ -331,7 +417,7 @@ function showCover() {
         NetWork.getReadedAndUnreadedMails();
         //轮询获取最新未读取邮件
         setInterval(function(){
-            NetWork.updatePlayerMails(10  *1000);
+            NetWork.updatePlayerMails(10 * 1000);
         },10  *1000);
     });
     cc.director.runScene(scene);

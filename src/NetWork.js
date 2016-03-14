@@ -462,5 +462,16 @@ var NetWork = {
                 NetWork.updatePlayerSave();
             }
         })
+    },
+    queryByCondition: function(){
+        SgtApi.DelegateDidService.queryByCondition(player.id,function(result,data){
+            if(result && cc.isArray(data) && data.length > 0){
+                for(var i in data){
+                    if(data[i].updateTime > 0 ){
+
+                    }
+                }
+            }
+        })
     }
 }
