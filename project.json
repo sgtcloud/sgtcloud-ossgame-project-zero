@@ -48,6 +48,7 @@
     "src/ui/OfflineRewardPanel.js",
     "src/ui/CheckInPanel.js",
     "src/ui/MailPanel.js",
+    "src/ui/Recharge.js",
     "src/NetWork.js",
     "src/apps.js"
   ]
