@@ -1083,6 +1083,28 @@
           <Image Name="shine01.png" />
           <Image Name="shine02.png" />
           <Image Name="shine03.png" />
+          <Image Name="fire00.png" />
+          <Image Name="fire01.png" />
+          <Image Name="fire02.png" />
+          <Image Name="fire03.png" />
+          <Image Name="light.png" />
+        </Folder>
+        <Project Name="hero102skill01.csd" Type="Node" />
+        <Folder Name="shine">
+          <Image Name="shine01.png" />
+          <Image Name="shine02.png" />
+          <Image Name="shine03.png" />
+          <Image Name="shine04.png" />
+          <Image Name="shine05.png" />
+          <Image Name="shine06.png" />
+          <Image Name="shine07.png" />
+          <Image Name="shine08.png" />
+          <Image Name="shine09.png" />
+          <Image Name="shine10.png" />
+          <Image Name="shine11.png" />
+          <Image Name="shine12.png" />
+          <Image Name="shine13.png" />
+          <Image Name="shine00.png" />
         </Folder>
       </RootFolder>
     </Group>

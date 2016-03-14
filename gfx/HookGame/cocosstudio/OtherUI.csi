@@ -36,6 +36,7 @@
       <FilePathData Path="rechargeUI/title.png" />
       <FilePathData Path="rechargeUI/title_bg.png" />
       <FilePathData Path="rechargeUI/vip.png" />
+      <FilePathData Path="rechargeUI/label.png" />
     </ImageFiles>
     <MaxSize Width="800" Height="800" />
   </Content>

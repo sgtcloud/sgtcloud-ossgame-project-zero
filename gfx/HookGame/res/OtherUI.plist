@@ -18,7 +18,7 @@
 			<key>ui/btn_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{180,0},{100,80}}</string>
+				<string>{{177,0},{100,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -161,7 +161,7 @@
 			<key>maillUI/delete.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{230,159},{87,27}}</string>
+				<string>{{177,181},{87,27}}</string>
 				<key>offset</key>
 				<string>{-1,1}</string>
 				<key>rotated</key>
@@ -172,7 +172,7 @@
 			<key>maillUI/get.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{230,186},{87,26}}</string>
+				<string>{{264,179},{87,26}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -183,7 +183,7 @@
 			<key>maillUI/get2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{286,97},{71,23}}</string>
+				<string>{{307,97},{71,23}}</string>
 				<key>offset</key>
 				<string>{0,1}</string>
 				<key>rotated</key>
@@ -194,18 +194,18 @@
 			<key>maillUI/look.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{303,0},{39,24}}</string>
+				<string>{{316,141},{39,24}}</string>
 				<key>offset</key>
 				<string>{-1,-1}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{87,25}</string>
 			</dict>
 			<key>maillUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{180,100},{123,50}}</string>
+				<string>{{257,0},{123,50}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -216,18 +216,18 @@
 			<key>PVPUI/buy.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{260,0},{81,21}}</string>
+				<string>{{264,205},{81,21}}</string>
 				<key>offset</key>
 				<string>{-9,1}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{104,25}</string>
 			</dict>
 			<key>PVPUI/change.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{286,120},{61,21}}</string>
+				<string>{{316,120},{61,21}}</string>
 				<key>offset</key>
 				<string>{-19,1}</string>
 				<key>rotated</key>
@@ -238,7 +238,7 @@
 			<key>PVPUI/fight.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{281,0},{76,22}}</string>
+				<string>{{307,0},{76,22}}</string>
 				<key>offset</key>
 				<string>{-4,0}</string>
 				<key>rotated</key>
@@ -249,11 +249,11 @@
 			<key>PVPUI/pvp.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{230,100},{56,59}}</string>
+				<string>{{257,123},{56,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{56,59}</string>
 			</dict>
@@ -271,7 +271,7 @@
 			<key>PVPUI/record.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{281,76},{79,21}}</string>
+				<string>{{307,76},{79,21}}</string>
 				<key>offset</key>
 				<string>{-10,1}</string>
 				<key>rotated</key>
@@ -304,7 +304,7 @@
 			<key>rechargeUI/bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{180,227}}</string>
+				<string>{{0,0},{177,227}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -326,7 +326,7 @@
 			<key>rechargeUI/day.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{303,39},{32,24}}</string>
+				<string>{{329,0},{32,24}}</string>
 				<key>offset</key>
 				<string>{0,-1}</string>
 				<key>rotated</key>
@@ -377,6 +377,17 @@
 				<false />
 				<key>sourceSize</key>
 				<string>{137,39}</string>
+			</dict>
+			<key>rechargeUI/label.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{177,100},{80,81}}</string>
+				<key>offset</key>
+				<string>{2,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{83,81}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
