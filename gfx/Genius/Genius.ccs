@@ -1076,20 +1076,22 @@
           <Image Name="hand_point02.png" />
         </Folder>
         <Project Name="hand01.csd" Type="Node" />
-        <Project Name="hero101skill01.csd" Type="Node" />
         <Folder Name="hero101skill01">
           <Image Name="hero01.png" />
           <Image Name="hero02.png" />
-          <Image Name="shine01.png" />
-          <Image Name="shine02.png" />
-          <Image Name="shine03.png" />
           <Image Name="fire00.png" />
           <Image Name="fire01.png" />
           <Image Name="fire02.png" />
           <Image Name="fire03.png" />
-          <Image Name="light.png" />
+          <Image Name="round01.png" />
+          <Image Name="round02.png" />
+          <Image Name="round03.png" />
+          <Image Name="round04.png" />
+          <Image Name="round05.png" />
+          <Image Name="round06.png" />
+          <Image Name="bg.png" />
         </Folder>
-        <Project Name="hero102skill01.csd" Type="Node" />
+        <Project Name="hero101skill01.csd" Type="Node" />
         <Folder Name="shine">
           <Image Name="shine01.png" />
           <Image Name="shine02.png" />
@@ -1105,7 +1107,72 @@
           <Image Name="shine12.png" />
           <Image Name="shine13.png" />
           <Image Name="shine00.png" />
+          <Image Name="bg.png" />
         </Folder>
+        <Project Name="hero102skill01.csd" Type="Node" />
+        <Folder Name="hero102skill01">
+          <Image Name="fly01.png" />
+          <Image Name="fly02.png" />
+          <Image Name="fly03.png" />
+          <Image Name="fly04.png" />
+          <Image Name="fly05.png" />
+          <Image Name="fly06.png" />
+          <Image Name="star01.png" />
+          <Image Name="star02.png" />
+          <Image Name="star03.png" />
+          <Image Name="star04.png" />
+          <Image Name="star05.png" />
+          <Image Name="star06.png" />
+          <Image Name="star07.png" />
+          <Image Name="star08.png" />
+          <Image Name="star09.png" />
+          <Image Name="star10.png" />
+          <Image Name="star11.png" />
+          <Image Name="star12.png" />
+          <Image Name="star13.png" />
+          <Image Name="star14.png" />
+          <Image Name="star15.png" />
+          <Image Name="star16.png" />
+          <Image Name="star17.png" />
+          <Image Name="star18.png" />
+          <Image Name="star19.png" />
+          <Image Name="star20.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="word03.png" />
+          <Image Name="word04.png" />
+          <Image Name="word05.png" />
+          <Image Name="word06.png" />
+          <Image Name="word07.png" />
+          <Image Name="word08.png" />
+          <Image Name="word09.png" />
+          <Image Name="word10.png" />
+          <Image Name="word11.png" />
+          <Image Name="word12.png" />
+          <Image Name="word13.png" />
+          <Image Name="word14.png" />
+          <Image Name="word15.png" />
+          <Image Name="word16.png" />
+          <Image Name="word17.png" />
+        </Folder>
+        <Folder Name="hero101skill02">
+          <Image Name="boom01.png" />
+          <Image Name="boom02.png" />
+          <Image Name="boom03.png" />
+          <Image Name="boom04.png" />
+          <Image Name="hero01.png" />
+          <Image Name="hero02.png" />
+          <Image Name="hero03.png" />
+          <Image Name="wind01.png" />
+          <Image Name="wind02.png" />
+          <Image Name="wind03.png" />
+          <Image Name="wind04.png" />
+          <Image Name="wind05.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="boom00.png" />
+        </Folder>
+        <Project Name="hero101skill02.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
