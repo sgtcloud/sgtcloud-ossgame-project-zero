@@ -120,17 +120,17 @@
                 },
                 "PreSize": {
                   "X": 0.9333,
-                  "Y": 0.6615
+                  "Y": 0.7385
                 },
                 "LeftMargin": 20.5768,
                 "RightMargin": 19.4232,
-                "TopMargin": 96.9268,
+                "TopMargin": 46.9267,
                 "BottomMargin": 123.0733,
                 "Tag": 202,
                 "ActionTag": 1553888994,
                 "Size": {
                   "X": 560.0,
-                  "Y": 430.0
+                  "Y": 480.0
                 },
                 "Name": "view_bg",
                 "ctype": "ImageViewObjectData"
@@ -271,7 +271,7 @@
                 },
                 "LeftMargin": 85.5283,
                 "RightMargin": 364.4717,
-                "TopMargin": 565.6407,
+                "TopMargin": 565.6408,
                 "BottomMargin": 24.3592,
                 "Tag": 204,
                 "Children": [
@@ -346,9 +346,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "maillUI/delete.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 92,
                     "Scale9Height": 29,
@@ -510,9 +510,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "maillUI/get.png",
-                      "Plist": ""
+                      "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 92,
                     "Scale9Height": 29,
@@ -564,54 +564,54 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_05.png",
+                  "Path": "mainUI/title_bg4.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
                 "Scale9OriginY": 13,
-                "Scale9Width": 5,
-                "Scale9Height": 6,
+                "Scale9Width": 97,
+                "Scale9Height": 16,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 302.549,
-                  "Y": 608.7289
+                  "X": 303.4828,
+                  "Y": 658.2842
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 2.6,
+                  "ScaleY": 1.7
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5042,
-                  "Y": 0.9365
+                  "X": 0.5058,
+                  "Y": 1.0127
                 },
                 "PreSize": {
-                  "X": 0.6667,
-                  "Y": 0.0923
+                  "X": 0.205,
+                  "Y": 0.0646
                 },
-                "LeftMargin": 102.549,
-                "RightMargin": 97.451,
-                "TopMargin": 11.2711,
-                "BottomMargin": 578.7289,
+                "LeftMargin": 241.9828,
+                "RightMargin": 235.0172,
+                "TopMargin": -29.2842,
+                "BottomMargin": 637.2842,
                 "Tag": 207,
                 "ActionTag": 92619797,
                 "Size": {
-                  "X": 400.0,
-                  "Y": 60.0
+                  "X": 123.0,
+                  "Y": 42.0
                 },
                 "Name": "title_bg",
                 "ctype": "ImageViewObjectData"
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "maillUI/title.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 129,
                 "Scale9Height": 58,
@@ -620,8 +620,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 302.5492,
-                  "Y": 609.7285
+                  "X": 302.483,
+                  "Y": 664.2837
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -630,17 +630,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5042,
-                  "Y": 0.938
+                  "X": 0.5041,
+                  "Y": 1.022
                 },
                 "PreSize": {
                   "X": 0.215,
                   "Y": 0.0892
                 },
-                "LeftMargin": 238.0492,
-                "RightMargin": 232.9508,
-                "TopMargin": 11.2715,
-                "BottomMargin": 580.7285,
+                "LeftMargin": 237.983,
+                "RightMargin": 233.017,
+                "TopMargin": -43.2837,
+                "BottomMargin": 635.2837,
                 "CallBackType": "Click",
                 "Tag": 211,
                 "ActionTag": 856378625,
@@ -662,8 +662,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 544.1362,
-                  "Y": 591.0559
+                  "X": 563.7486,
+                  "Y": 605.47
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -672,17 +672,17 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.9069,
-                  "Y": 0.9093
+                  "X": 0.9396,
+                  "Y": 0.9315
                 },
                 "PreSize": {
                   "X": 0.0933,
                   "Y": 0.0892
                 },
-                "LeftMargin": 544.1362,
-                "RightMargin": -0.1362,
-                "TopMargin": 0.9441,
-                "BottomMargin": 591.0559,
+                "LeftMargin": 563.7486,
+                "RightMargin": -19.7486,
+                "TopMargin": -13.47,
+                "BottomMargin": 605.47,
                 "Tag": 213,
                 "ActionTag": 1384084568,
                 "Size": {
@@ -710,6 +710,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -728,17 +730,17 @@
                 },
                 "PreSize": {
                   "X": 0.8833,
-                  "Y": 0.6154
+                  "Y": 0.6923
                 },
                 "LeftMargin": 34.7511,
                 "RightMargin": 35.2489,
-                "TopMargin": 109.0822,
+                "TopMargin": 59.0822,
                 "BottomMargin": 140.9178,
                 "Tag": 248,
                 "ActionTag": -456966373,
                 "Size": {
                   "X": 530.0,
-                  "Y": 400.0
+                  "Y": 450.0
                 },
                 "Name": "list",
                 "ctype": "ListViewObjectData"
@@ -762,13 +764,12 @@
       },
       "UsedResources": [
         "CloseBtn.json",
-        "maillUI/delete.png",
-        "maillUI/get.png",
-        "maillUI/title.png",
         "mainUI/bg_01.png",
         "mainUI/bg_03.png",
-        "mainUI/bg_05.png",
-        "mainUI/bg_14.png"
+        "mainUI/bg_14.png",
+        "mainUI/title_bg4.png",
+        "OtherUI.plist",
+        "OtherUI.png"
       ],
       "ctype": "GameFileData"
     }

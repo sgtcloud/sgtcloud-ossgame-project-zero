@@ -1,0 +1,43 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="OtherUI" Type="Plist" ID="8f130eb0-5f7e-478d-92b2-9f7b6200face" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="ui/btn_1.png" />
+      <FilePathData Path="ui/btn_2.png" />
+      <FilePathData Path="ui/equip_btn1.png" />
+      <FilePathData Path="ui/equip_btn2.png" />
+      <FilePathData Path="ui/hero_btn1.png" />
+      <FilePathData Path="ui/hero_btn2.png" />
+      <FilePathData Path="ui/main_btn1.png" />
+      <FilePathData Path="ui/main_btn2.png" />
+      <FilePathData Path="ui/pvp_btn1.png" />
+      <FilePathData Path="ui/pvp_btn2.png" />
+      <FilePathData Path="ui/rank_btn1.png" />
+      <FilePathData Path="ui/rank_btn2.png" />
+      <FilePathData Path="ui/shop_btn1.png" />
+      <FilePathData Path="ui/shop_btn2.png" />
+      <FilePathData Path="maillUI/delete.png" />
+      <FilePathData Path="maillUI/get.png" />
+      <FilePathData Path="maillUI/get2.png" />
+      <FilePathData Path="maillUI/look.png" />
+      <FilePathData Path="maillUI/title.png" />
+      <FilePathData Path="PVPUI/buy.png" />
+      <FilePathData Path="PVPUI/change.png" />
+      <FilePathData Path="PVPUI/fight.png" />
+      <FilePathData Path="PVPUI/pvp.png" />
+      <FilePathData Path="PVPUI/Ranking.png" />
+      <FilePathData Path="PVPUI/record.png" />
+      <FilePathData Path="PVPUI/surplus.png" />
+      <FilePathData Path="PVPUI/title.png" />
+      <FilePathData Path="rechargeUI/bg.png" />
+      <FilePathData Path="rechargeUI/card.png" />
+      <FilePathData Path="rechargeUI/day.png" />
+      <FilePathData Path="rechargeUI/pic.png" />
+      <FilePathData Path="rechargeUI/title.png" />
+      <FilePathData Path="rechargeUI/title_bg.png" />
+      <FilePathData Path="rechargeUI/vip.png" />
+      <FilePathData Path="rechargeUI/label.png" />
+    </ImageFiles>
+    <MaxSize Width="800" Height="800" />
+  </Content>
+</PlistInfoProjectFile>

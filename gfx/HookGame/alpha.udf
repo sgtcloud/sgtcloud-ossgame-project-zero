@@ -31,16 +31,18 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="PVPLayer.csd" />
-          <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="PVPOpponentView.csd" />
-          <FilePathData Path="RankView.csd" />
-          <FilePathData Path="ShopIconLayer.csd" />
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="ShopListView.csd" />
+          <FilePathData Path="RechargeLayer.csd" />
+          <FilePathData Path="RechargeIconLayer.csd" />
           <FilePathData Path="PVPRecord.csd" />
+          <FilePathData Path="PVPOpponentView.csd" />
+          <FilePathData Path="PVPLayer.csd" />
+          <FilePathData Path="MenuLayer.csd" />
+          <FilePathData Path="OtherUI.csi" />
+          <FilePathData Path="PackageLayer.csd" />
+          <FilePathData Path="Prompt2Layer.csd" />
+          <FilePathData Path="PackLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="PVPRecord.csd" />
+        <ActiveDocument Path="PackLayer.csd" />
       </Value>
     </Item>
   </Properties>

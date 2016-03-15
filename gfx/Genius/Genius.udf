@@ -28,5 +28,14 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="hero102skill01.csd" />
+          <FilePathData Path="hero101skill01.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="hero102skill01.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

@@ -766,19 +766,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_1.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_1.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_1.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -840,19 +840,19 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_2.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_2.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "ui/btn_2.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
@@ -1023,8 +1023,8 @@
         "mainUI/gold.png",
         "mainUI/relic.png",
         "mainUI/slice131_@.png",
-        "ui/btn_1.png",
-        "ui/btn_2.png"
+        "OtherUI.plist",
+        "OtherUI.png"
       ],
       "ctype": "GameFileData"
     }

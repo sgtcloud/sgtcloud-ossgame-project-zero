@@ -15,7 +15,7 @@ var TabContainer = cc.Node.extend({
             {name: "main", click: "onMainClick"},
             {name: "hero", click: "onHeroClick"},
             {name: "equip", click: "onEquipClick"},
-            //{name: "pvp", click: "onPvpClick"},
+            {name: "pvp", click: "onPvpClick"},
             {name: "rank", click: "onRankClick"},
             {name: "shop", click: "onShopClick"},
         ];
@@ -30,9 +30,9 @@ var TabContainer = cc.Node.extend({
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
                 if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    if (sender.name != 'pvp') {
+                    //if (sender.name != 'pvp') {
                         self.showMenuLayer(sender.name);
-                    }
+                    //}
                 }
                 else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
                     sender.setSelected(true);
@@ -46,6 +46,7 @@ var TabContainer = cc.Node.extend({
         this.menus.equip = new EquipListMenu(battlePanel);
         this.menus.shop = new ShopLayerMenu(battlePanel);
         this.menus.rank = new RankLayerMenu(battlePanel);
+        this.menus.pvp = new ArenaPanel(this);
         for (var i in this.menus) {
             this.menus[i].setPosition(0, this.menuLayer.height);
             this.menuLayer.addChild(this.menus[i]);
@@ -58,10 +59,10 @@ var TabContainer = cc.Node.extend({
             for (var i in this.menus) {
                 this.menus[i].setVisible(false);
             }
-            if(name === 'rank')
+            if (name === 'rank')
                 this.menus[name].refeshRankLayer();
 
-            if(name === 'shop')
+            if (name === 'shop')
                 this.menus[name].refeshMoneyTreeLayer();
 
             this.menus[name].setVisible(true);
@@ -75,14 +76,14 @@ var TabContainer = cc.Node.extend({
                 var data = event.getUserData();
                 PlayerData.updateResource(data.cost);
                 PlayerData.updatePlayer();
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data.cost);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, data.cost);
             });
             customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE, function (event) {
                 var data = event.getUserData();
                 PlayerData.updateResource(data.cost);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data.cost);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, data.cost);
             });
-            customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS,function(){
+            customEventHelper.bindListener(EVENT.HERO_REFRESH_PROPS, function () {
                 customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
             });
             customEventHelper.bindListener(EVENT.GOLD_VALUE_UPDATE, function () {

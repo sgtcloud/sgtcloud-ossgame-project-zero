@@ -19,70 +19,83 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="main" ActionTag="-1674749777" Tag="168" IconVisible="False" LeftMargin="18.5003" RightMargin="526.4997" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+              <AbstractNodeData Name="main" ActionTag="-1674749777" Tag="168" IconVisible="False" LeftMargin="18.5002" RightMargin="526.4998" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="18.5003" Y="3.5000" />
+                <Position X="18.5002" Y="5.4464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0289" Y="0.0350" />
+                <PrePosition X="0.0289" Y="0.0545" />
                 <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/main_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/main_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/main_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/main_btn2.png" Plist="" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/main_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/main_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/main_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/main_btn2.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero" ActionTag="-1419990856" Tag="169" IconVisible="False" LeftMargin="145.2503" RightMargin="399.7497" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+              <AbstractNodeData Name="hero" ActionTag="-1419990856" Tag="169" IconVisible="False" LeftMargin="119.9003" RightMargin="425.0997" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="145.2503" Y="3.5000" />
+                <Position X="119.9003" Y="5.4464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2270" Y="0.0350" />
+                <PrePosition X="0.1873" Y="0.0545" />
                 <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/hero_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/hero_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/hero_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/hero_btn2.png" Plist="" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/hero_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/hero_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/hero_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/hero_btn2.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="equip" ActionTag="2073273041" Tag="170" IconVisible="False" LeftMargin="272.0004" RightMargin="272.9996" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+              <AbstractNodeData Name="equip" ActionTag="2073273041" Tag="170" IconVisible="False" LeftMargin="221.3004" RightMargin="323.6996" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="272.0004" Y="3.5000" />
+                <Position X="221.3004" Y="5.4464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4250" Y="0.0350" />
+                <PrePosition X="0.3458" Y="0.0545" />
                 <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/equip_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/equip_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/equip_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/equip_btn2.png" Plist="" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/equip_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/equip_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/equip_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/equip_btn2.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="rank" ActionTag="-1008761465" Tag="172" IconVisible="False" LeftMargin="398.7505" RightMargin="146.2495" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+              <AbstractNodeData Name="rank" ActionTag="-1008761465" Tag="172" IconVisible="False" LeftMargin="424.1003" RightMargin="120.8997" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="398.7505" Y="3.5000" />
+                <Position X="424.1003" Y="5.4464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6230" Y="0.0350" />
+                <PrePosition X="0.6627" Y="0.0545" />
                 <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/rank_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/rank_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/rank_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/rank_btn2.png" Plist="" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/rank_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/rank_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/rank_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/rank_btn2.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="shop" ActionTag="-103952926" Tag="173" IconVisible="False" LeftMargin="525.5005" RightMargin="19.4995" TopMargin="1.5000" BottomMargin="3.5000" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+              <AbstractNodeData Name="shop" ActionTag="-103952926" Tag="173" IconVisible="False" LeftMargin="525.5003" RightMargin="19.4997" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <AnchorPoint />
-                <Position X="525.5005" Y="3.5000" />
+                <Position X="525.5003" Y="5.4464" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.8211" Y="0.0350" />
+                <PrePosition X="0.8211" Y="0.0545" />
                 <PreSize X="0.1484" Y="0.9500" />
-                <NormalBackFileData Type="Normal" Path="ui/shop_btn1.png" Plist="" />
-                <PressedBackFileData Type="Normal" Path="ui/shop_btn2.png" Plist="" />
-                <DisableBackFileData Type="Normal" Path="ui/shop_btn1.png" Plist="" />
-                <NodeNormalFileData Type="Normal" Path="ui/shop_btn2.png" Plist="" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/shop_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/shop_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/shop_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/shop_btn2.png" Plist="OtherUI.plist" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="pvp" ActionTag="1097637687" Tag="286" IconVisible="False" LeftMargin="322.7003" RightMargin="222.2997" TopMargin="-0.4464" BottomMargin="5.4464" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                <Size X="95.0000" Y="95.0000" />
+                <AnchorPoint />
+                <Position X="322.7003" Y="5.4464" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5042" Y="0.0545" />
+                <PreSize X="0.1484" Y="0.9500" />
+                <NormalBackFileData Type="MarkedSubImage" Path="ui/pvp_btn1.png" Plist="OtherUI.plist" />
+                <PressedBackFileData Type="MarkedSubImage" Path="ui/pvp_btn2.png" Plist="OtherUI.plist" />
+                <DisableBackFileData Type="MarkedSubImage" Path="ui/pvp_btn1.png" Plist="OtherUI.plist" />
+                <NodeNormalFileData Type="MarkedSubImage" Path="ui/pvp_btn2.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

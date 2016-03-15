@@ -2,10 +2,10 @@
  * 竞技场面板
  * Created by maron on 2016/3/7.
  */
-var ArenaPanel=cc.Node.extend({
-    ctor:function(){
-        this._super();
-        this.panel=cc.csLoader.createNode(res.pvp_layer_json).getChildByName('root');
+var ArenaPanel=BattleMenu.extend({
+    ctor:function(tabPanel){
+        this._super(tabPanel,res.pvp_layer_json);
+        this.panel=this.root;//cc.csLoader.createNode(res.pvp_layer_json).getChildByName('root');
         this.changeLayer=this.panel.getChildByName('change_btn');
         this.changeBtn=this.changeLayer.getChildByName('change');
         this.changeText=this.changeLayer.getChildByName('change_text');
@@ -18,7 +18,7 @@ var ArenaPanel=cc.Node.extend({
         this.surplusText=this.panel.getChildByName('surplus_text');//剩余次数
         this.surplusNum=this.panel.getChildByName('surplus_num');//剩余次数
         this.opponentBox=this.panel.getChildByName('opponent_box');//挑战者列表
-        setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
-        setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
+        //setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
+        //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
     }
 });

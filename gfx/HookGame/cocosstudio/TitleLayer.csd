@@ -183,9 +183,9 @@
                 <PrePosition X="0.8312" Y="0.8500" />
                 <PreSize X="0.1563" Y="0.6667" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="ui/btn_1.png" Plist="" />
-                <PressedFileData Type="Normal" Path="ui/btn_1.png" Plist="" />
-                <NormalFileData Type="Normal" Path="ui/btn_1.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="ui/btn_1.png" Plist="OtherUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="ui/btn_1.png" Plist="OtherUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="ui/btn_1.png" Plist="OtherUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -198,9 +198,9 @@
                 <PrePosition X="0.8297" Y="0.8500" />
                 <PreSize X="0.1563" Y="0.6667" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="ui/btn_2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="ui/btn_2.png" Plist="" />
-                <NormalFileData Type="Normal" Path="ui/btn_2.png" Plist="" />
+                <DisabledFileData Type="MarkedSubImage" Path="ui/btn_2.png" Plist="OtherUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="ui/btn_2.png" Plist="OtherUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="ui/btn_2.png" Plist="OtherUI.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
