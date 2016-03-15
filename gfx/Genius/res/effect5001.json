@@ -5,90 +5,27 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 20,
-        "Speed": 0.5,
+        "Duration": 14,
+        "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": -851192098,
-            "Property": "Position",
+            "ActionTag": -2108338859,
+            "Property": "Scale",
             "Frames": [
               {
-                "X": 0.7628,
-                "Y": -27.7465,
+                "X": 0.9,
+                "Y": 0.9,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
                 },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 4.7627,
-                "Y": -25.7465,
-                "FrameIndex": 2,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.0221,
-                "Y": -23.8757,
-                "FrameIndex": 4,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.0501,
-                "Y": -25.5934,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.1701,
-                "Y": -24.9777,
-                "FrameIndex": 8,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 1.2101,
-                "Y": -23.8621,
-                "FrameIndex": 10,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 12.5902,
-                "Y": -26.7464,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 12.5902,
-                "Y": -28.1085,
-                "FrameIndex": 14,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -851192098,
+            "ActionTag": -2108338859,
             "Property": "FileData",
             "Frames": [
               {
@@ -170,36 +107,6 @@
                 "FrameIndex": 14,
                 "Tween": false,
                 "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_09.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 16,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_10.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 18,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "effect/effect5001/effect5001_11.png",
-                  "Plist": "effect5001.plist"
-                },
-                "FrameIndex": 20,
-                "Tween": false,
-                "ctype": "TextureFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -210,7 +117,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 20,
+          "EndIndex": 14,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
@@ -229,15 +136,16 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
             },
             "Position": {
-              "X": 0.7628,
-              "Y": -27.7465
+              "X": -1.9403,
+              "Y": 68.8797
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.9,
+              "ScaleY": 0.9
             },
             "CColor": {},
             "IconVisible": false,
@@ -249,17 +157,17 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -89.7372,
-            "RightMargin": -91.2628,
-            "TopMargin": -96.2535,
-            "BottomMargin": -27.7465,
-            "Tag": 6,
-            "ActionTag": -851192098,
+            "LeftMargin": -126.9403,
+            "RightMargin": -123.0597,
+            "TopMargin": -182.3797,
+            "BottomMargin": -44.6203,
+            "Tag": 8,
+            "ActionTag": -2108338859,
             "Size": {
-              "X": 181.0,
-              "Y": 124.0
+              "X": 250.0,
+              "Y": 227.0
             },
-            "Name": "effect5001",
+            "Name": "effecet5001",
             "ctype": "SpriteObjectData"
           }
         ],

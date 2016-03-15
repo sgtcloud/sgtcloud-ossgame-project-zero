@@ -10,9 +10,6 @@
       <FilePathData Path="effect/effect5001/effect5001_06.png" />
       <FilePathData Path="effect/effect5001/effect5001_07.png" />
       <FilePathData Path="effect/effect5001/effect5001_08.png" />
-      <FilePathData Path="effect/effect5001/effect5001_09.png" />
-      <FilePathData Path="effect/effect5001/effect5001_10.png" />
-      <FilePathData Path="effect/effect5001/effect5001_11.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>

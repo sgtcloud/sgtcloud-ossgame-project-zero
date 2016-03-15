@@ -12,6 +12,15 @@
       <FilePathData Path="effect/effect5005/effect5005_08.png" />
       <FilePathData Path="effect/effect5005/effect5005_09.png" />
       <FilePathData Path="effect/effect5005/effect5005_10.png" />
+      <FilePathData Path="effect/effect5005/effect5005_11.png" />
+      <FilePathData Path="effect/effect5005/effect5005_12.png" />
+      <FilePathData Path="effect/effect5005/effect5005_13.png" />
+      <FilePathData Path="effect/effect5005/effect5005_14.png" />
+      <FilePathData Path="effect/effect5005/effect5005_15.png" />
+      <FilePathData Path="effect/effect5005/effect5005_16.png" />
+      <FilePathData Path="effect/effect5005/effect5005_17.png" />
+      <FilePathData Path="effect/effect5005/effect5005_18.png" />
+      <FilePathData Path="effect/effect5005/effect5005_19.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
