@@ -26,17 +26,24 @@ var RechargePanel = cc.Node.extend({
         var day = itemRoot.getChildByName('day');
         var moneyText = itemRoot.getChildByName('money_text');
         var gemText = itemRoot.getChildByName('gem_text');
+        var label = itemRoot.getChildByName('label');
         moneyText.setString(chargePoint.money/100);
-        gemText.setString(chargePoint.amount);
-        if(i > 0){
+        label.setVisible(false);
+        if(cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
+            label.setVisible(true);
+        }
+        if(chargePoint.type == 'mCard'){
+            gemText.setString(CONSTS.monthCard_daily_bonus.value);
+        }else{
+            gemText.setString(chargePoint.amount);
             day.setVisible(false);
         }
-        bindTouchEventListener(function(touch, event){
-            var target = event.getCurrentTarget();
-            console.log(target.getChildByName('gem_text').getString()+',前往支付');
-            /*NetWork.chooseWXPay('购买钻石',1,10,function(){
-             tip.toggle('购买成功');
-             });*/
+        itemRoot.setTouchEnabled(false);
+        bindTouchEventListener(function(){
+            console.log(i+',前往支付');
+            NetWork.chooseWXPay(chargePoint,function(){
+                tip.toggle('购买成功');
+            });
         },itemRoot);
     },
     openRechargePopup: function () {

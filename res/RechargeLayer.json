@@ -33,8 +33,8 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 0,
-              "Y": 0
+              "X": 17.3321,
+              "Y": 90.8828
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -932,8 +932,8 @@
           }
         ],
         "Size": {
-          "X": 620.0,
-          "Y": 800.0
+          "X": 640.0,
+          "Y": 960.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

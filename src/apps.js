@@ -24,6 +24,8 @@ var CONSTS = {
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
+    "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
+    "monthCard_daily_bonus":{"unit":"gem","value":100},
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
@@ -244,7 +246,7 @@ var CONSTS = {
             "description": "描述",
             "name": "月卡",
             "money": 3000,
-            "amount": 100,
+            "amount": 0,
             "timesLimit": -1,
             "extraAmount": 0,
             "firstChargeRewardAmount": 0,
@@ -357,6 +359,20 @@ Date.prototype.Format = function (fmt) { //author: meizz
         if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
 }
+
+function getDays(strDateStart,strDateEnd){
+    var strSeparator = "-"; //日期分隔符
+    var oDate1;
+    var oDate2;
+    var iDays;
+    oDate1= strDateStart.split(strSeparator);
+    oDate2= strDateEnd.split(strSeparator);
+    var strDateS = new Date(oDate1[0], oDate1[1]-1, oDate1[2]);
+    var strDateE = new Date(oDate2[0], oDate2[1]-1, oDate2[2]);
+    iDays = parseInt(Math.abs(strDateS - strDateE ) / 1000 / 60 / 60 /24)//把相差的毫秒数转换为天数
+    return iDays ;
+}
+
 function initGame() {
     PlayerData.init();
     game = new MainScene();
