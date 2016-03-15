@@ -31,8 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="hero102skill01.csd" />
           <FilePathData Path="hero101skill01.csd" />
+          <FilePathData Path="hero102skill01.csd" />
+          <FilePathData Path="hero101skill02.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="hero102skill01.csd" />
       </Value>
