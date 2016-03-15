@@ -1,9 +1,9 @@
 <GameFile>
-  <PropertyGroup Name="hero101skill01" Type="Node" ID="a02394a5-bd95-4737-ab45-8b2e1b724a89" Version="2.3.3.0" />
+  <PropertyGroup Name="hero101skill01" Type="Node" ID="0312635a-f09a-4037-a53e-154ed12303c6" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="27" Speed="0.4167">
-        <Timeline ActionTag="-966258786" Property="Position">
+        <Timeline ActionTag="-1844379646" Property="Position">
           <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
             <EasingData Type="0" />
           </PointFrame>
@@ -35,7 +35,7 @@
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
-        <Timeline ActionTag="-966258786" Property="CColor">
+        <Timeline ActionTag="-1844379646" Property="CColor">
           <ColorFrame FrameIndex="0" Alpha="255">
             <EasingData Type="0" />
             <Color A="255" R="0" G="0" B="0" />
@@ -77,7 +77,7 @@
             <Color A="255" R="0" G="0" B="0" />
           </ColorFrame>
         </Timeline>
-        <Timeline ActionTag="-966258786" Property="Alpha">
+        <Timeline ActionTag="-1844379646" Property="Alpha">
           <IntFrame FrameIndex="0" Value="204">
             <EasingData Type="0" />
           </IntFrame>
@@ -109,7 +109,7 @@
             <EasingData Type="0" />
           </IntFrame>
         </Timeline>
-        <Timeline ActionTag="-966258786" Property="AnchorPoint">
+        <Timeline ActionTag="-1844379646" Property="AnchorPoint">
           <ScaleFrame FrameIndex="0" X="0.5000" Y="0.0000">
             <EasingData Type="0" />
           </ScaleFrame>
@@ -141,197 +141,39 @@
             <EasingData Type="0" />
           </ScaleFrame>
         </Timeline>
-        <Timeline ActionTag="1139884138" Property="Position">
-          <PointFrame FrameIndex="0" X="240.0000" Y="500.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="3" X="240.0000" Y="440.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="6" X="240.0000" Y="380.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="9" X="240.0000" Y="320.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="12" X="240.0000" Y="260.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="15" X="240.0000" Y="200.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="18" X="240.0000" Y="140.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="21" X="240.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="1139884138" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="3" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="6" X="0.1000" Y="0.1000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="9" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="12" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="15" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="18" X="0.1000" Y="0.1000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="21" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="24" X="0.1000" Y="10.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="27" X="0.1000" Y="10.0000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1139884138" Property="FileData">
+        <Timeline ActionTag="1293825758" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round01.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round02.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round03.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round04.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round05.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <TextureFile Type="Normal" Path="hero101skill01/round06.png" Plist="" />
           </TextureFrame>
         </Timeline>
-        <Timeline ActionTag="1139884138" Property="AnchorPoint">
-          <ScaleFrame FrameIndex="0" X="0.4991" Y="0.5330">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1342085198" Property="Position">
-          <PointFrame FrameIndex="0" X="-320.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="3" X="-240.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="6" X="-160.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="9" X="-80.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="12" X="0.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="15" X="80.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="18" X="160.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="21" X="240.0000" Y="80.0000">
-            <EasingData Type="0" />
-          </PointFrame>
-        </Timeline>
-        <Timeline ActionTag="1342085198" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="0.4000" Y="0.4000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="3" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="6" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="9" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="12" X="0.4000" Y="0.4000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="15" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="18" X="0.2000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="21" X="0.3000" Y="0.3000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="24" X="100.0000" Y="0.0500">
-            <EasingData Type="0" />
-          </ScaleFrame>
-          <ScaleFrame FrameIndex="27" X="100.0000" Y="0.2000">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="1342085198" Property="FileData">
-          <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-          </TextureFrame>
-        </Timeline>
-        <Timeline ActionTag="1342085198" Property="AnchorPoint">
-          <ScaleFrame FrameIndex="0" X="0.4720" Y="0.4945">
-            <EasingData Type="0" />
-          </ScaleFrame>
-        </Timeline>
-        <Timeline ActionTag="-1479021344" Property="Position">
+        <Timeline ActionTag="331636314" Property="Position">
           <PointFrame FrameIndex="0" X="160.0000" Y="181.9100">
             <EasingData Type="0" />
           </PointFrame>
@@ -363,7 +205,7 @@
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
-        <Timeline ActionTag="-1479021344" Property="FileData">
+        <Timeline ActionTag="331636314" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
           </TextureFrame>
@@ -395,21 +237,62 @@
             <TextureFile Type="Normal" Path="hero101skill01/hero02.png" Plist="" />
           </TextureFrame>
         </Timeline>
-        <Timeline ActionTag="-1479021344" Property="AnchorPoint">
+        <Timeline ActionTag="331636314" Property="AnchorPoint">
           <ScaleFrame FrameIndex="9" X="0.0000" Y="0.5000">
             <EasingData Type="0" />
           </ScaleFrame>
         </Timeline>
+        <Timeline ActionTag="-1256903318" Property="Position">
+          <PointFrame FrameIndex="0" X="90.0000" Y="450.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="3" X="90.0000" Y="250.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="6" X="90.0000" Y="100.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="27" X="90.0000" Y="100.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+        </Timeline>
+        <Timeline ActionTag="-1256903318" Property="FileData">
+          <TextureFrame FrameIndex="0" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="3" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="6" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="9" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="12" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire01.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="15" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="18" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="21" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire01.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="24" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+          </TextureFrame>
+          <TextureFrame FrameIndex="27" Tween="False">
+            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+          </TextureFrame>
+        </Timeline>
       </Animation>
-      <AnimationList>
-        <AnimationInfo Name="show" StartIndex="0" EndIndex="27">
-          <RenderColor A="255" R="220" G="220" B="220" />
-        </AnimationInfo>
-      </AnimationList>
-      <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
+      <ObjectData Name="Node" Tag="8" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="bg" ActionTag="-966258786" Alpha="204" Tag="15" IconVisible="False" LeftMargin="-320.0000" RightMargin="-320.0000" TopMargin="-500.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="bg" ActionTag="-1844379646" Alpha="204" Tag="9" IconVisible="False" LeftMargin="-320.0000" RightMargin="-320.0000" TopMargin="-500.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="640" Scale9Height="500" ctype="PanelObjectData">
             <Size X="640.0000" Y="500.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position />
@@ -417,42 +300,43 @@
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="shine/bg.png" Plist="" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shine01" ActionTag="1139884138" Tag="19" IconVisible="False" LeftMargin="-361.4155" RightMargin="-843.5845" TopMargin="-566.3520" BottomMargin="-89.6480" ctype="SpriteObjectData">
-            <Size X="1205.0000" Y="656.0000" />
-            <AnchorPoint ScaleX="0.4991" ScaleY="0.5330" />
-            <Position X="240.0000" Y="260.0000" />
-            <Scale ScaleX="0.3000" ScaleY="0.3000" />
+          <AbstractNodeData Name="fire" ActionTag="1293825758" Tag="7" IconVisible="False" LeftMargin="-129.5000" RightMargin="-309.5000" TopMargin="-309.0000" ctype="SpriteObjectData">
+            <Size X="5000.0000" Y="893.0000" />
+            <AnchorPoint ScaleX="0.5000" />
+            <Position X="90.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/shine03.png" Plist="" />
+            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="shine02" ActionTag="1342085198" Tag="20" IconVisible="False" LeftMargin="-673.5440" RightMargin="-753.4560" TopMargin="-420.2015" BottomMargin="-252.7985" ctype="SpriteObjectData">
-            <Size X="1427.0000" Y="673.0000" />
-            <AnchorPoint ScaleX="0.4720" ScaleY="0.4945" />
-            <Position Y="80.0000" />
-            <Scale ScaleX="0.4000" ScaleY="0.4000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/shine02.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="hero" ActionTag="-1479021344" Tag="16" IconVisible="False" LeftMargin="-300.0000" RightMargin="63.0000" TopMargin="-349.9100" BottomMargin="13.9100" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="331636314" Tag="15" IconVisible="False" LeftMargin="160.0000" RightMargin="-397.0000" TopMargin="-349.9100" BottomMargin="13.9100" ctype="SpriteObjectData">
             <Size X="237.0000" Y="336.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="-300.0000" Y="181.9100" />
+            <Position X="160.0000" Y="181.9100" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="word" ActionTag="-1256903318" Tag="19" IconVisible="False" LeftMargin="-119.5000" RightMargin="-299.5000" TopMargin="-539.0000" BottomMargin="361.0000" ctype="SpriteObjectData">
+            <Size X="419.0000" Y="178.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="90.0000" Y="450.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
