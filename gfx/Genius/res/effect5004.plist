@@ -7,101 +7,255 @@
 			<key>effect/effect5004/effect5004_01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{122,620},{122,206}}</string>
+				<string>{{127,504},{108,41}}</string>
 				<key>offset</key>
-				<string>{0,-4}</string>
+				<string>{-1,22}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{209,928},{95,202}}</string>
+				<string>{{0,974},{108,43}}</string>
 				<key>offset</key>
-				<string>{1,-2}</string>
+				<string>{-1,22}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
-				<string>{184,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,831},{122,209}}</string>
+				<string>{{368,859},{104,88}}</string>
 				<key>offset</key>
-				<string>{6,1}</string>
+				<string>{4,21}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,620},{122,211}}</string>
+				<string>{{212,545},{118,87}}</string>
 				<key>offset</key>
-				<string>{2,2}</string>
+				<string>{2,21}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{209,826},{102,209}}</string>
+				<string>{{127,687},{115,107}}</string>
 				<key>offset</key>
-				<string>{-5,-1}</string>
+				<string>{2,22}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
-				<string>{184,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,403},{136,217}}</string>
+				<string>{{87,901},{73,125}}</string>
 				<key>offset</key>
-				<string>{-3,4}</string>
+				<string>{0,22}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{168,0},{150,216}}</string>
+				<string>{{136,0},{73,121}}</string>
 				<key>offset</key>
-				<string>{-2,3}</string>
+				<string>{0,22}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_08.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{168,208}}</string>
+				<string>{{136,210},{69,111}}</string>
 				<key>offset</key>
-				<string>{-2,-1}</string>
+				<string>{0,22}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
-				<string>{184,316}</string>
+				<string>{141,183}</string>
 			</dict>
 			<key>effect/effect5004/effect5004_09.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,208},{170,195}}</string>
+				<string>{{251,783},{76,124}}</string>
 				<key>offset</key>
-				<string>{-1,-9}</string>
+				<string>{1,20}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{234,663},{83,120}}</string>
+				<key>offset</key>
+				<string>{0,20}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{183,316}</string>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_11.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{136,121},{89,89}}</string>
+				<key>offset</key>
+				<string>{0,21}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_12.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,142},{140,136}}</string>
+				<key>offset</key>
+				<string>{0,23}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_13.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,691},{129,127}}</string>
+				<key>offset</key>
+				<string>{0,24}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_14.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,416},{127,130}}</string>
+				<key>offset</key>
+				<string>{0,21}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_15.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,282},{133,134}}</string>
+				<key>offset</key>
+				<string>{1,20}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_16.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{136,142}}</string>
+				<key>offset</key>
+				<string>{3,15}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_17.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,546},{113,145}}</string>
+				<key>offset</key>
+				<string>{0,11}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_18.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{113,546},{99,141}}</string>
+				<key>offset</key>
+				<string>{0,9}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_19.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{133,282},{93,148}}</string>
+				<key>offset</key>
+				<string>{0,2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_20.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,820},{87,154}}</string>
+				<key>offset</key>
+				<string>{0,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_21.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{212,901},{85,156}}</string>
+				<key>offset</key>
+				<string>{0,-5}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_22.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{127,416},{88,158}}</string>
+				<key>offset</key>
+				<string>{-2,-6}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
+			</dict>
+			<key>effect/effect5004/effect5004_23.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{87,820},{81,164}}</string>
+				<key>offset</key>
+				<string>{-1,-10}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{141,183}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -113,14 +267,14 @@
 			<key>realTextureFileName</key>
 			<string>effect5004.png</string>
 			<key>size</key>
-			<string>{418,1023}</string>
+			<string>{456,1017}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>418</integer>
+			<integer>456</integer>
 			<key>height</key>
-			<integer>1023</integer>
+			<integer>1017</integer>
 		</dict>
 	</dict>
 </plist>

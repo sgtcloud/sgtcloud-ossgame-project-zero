@@ -41,8 +41,13 @@
           <FilePathData Path="PackageLayer.csd" />
           <FilePathData Path="Prompt2Layer.csd" />
           <FilePathData Path="PackLayer.csd" />
+          <FilePathData Path="GuideGirl.csd" />
+          <FilePathData Path="Guide.csd" />
+          <FilePathData Path="HeroDescUI.csi" />
+          <FilePathData Path="HeroDescLayer.csd" />
+          <FilePathData Path="BattleLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="PackLayer.csd" />
+        <ActiveDocument Path="BattleLayer.csd" />
       </Value>
     </Item>
   </Properties>
