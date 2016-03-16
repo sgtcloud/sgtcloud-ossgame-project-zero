@@ -5,89 +5,17 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 24,
+        "Duration": 28,
         "Speed": 0.3333,
         "Timelines": [
           {
-            "ActionTag": -1212121630,
+            "ActionTag": -304062910,
             "Property": "Position",
             "Frames": [
               {
-                "X": -0.1803,
-                "Y": 98.1509,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.2823,
-                "Y": 97.587,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 1.3846,
-                "Y": 98.0996,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 2.4365,
-                "Y": 99.0996,
-                "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 3.7183,
-                "Y": 99.7535,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 5.2567,
-                "Y": 99.9714,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 5.3081,
-                "Y": 99.4072,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 5.4357,
-                "Y": 98.7149,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 3.1281,
-                "Y": 102.0994,
-                "FrameIndex": 24,
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 23,
                 "EasingData": {
                   "Type": 0
                 },
@@ -97,7 +25,32 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1212121630,
+            "ActionTag": -304062910,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.1,
+                "Y": 1.1,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 17,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -304062910,
             "Property": "FileData",
             "Frames": [
               {
@@ -116,7 +69,7 @@
                   "Path": "effect/effect5004/effect5004_02.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 1,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -126,7 +79,7 @@
                   "Path": "effect/effect5004/effect5004_03.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 6,
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -136,7 +89,7 @@
                   "Path": "effect/effect5004/effect5004_04.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 9,
+                "FrameIndex": 3,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -146,7 +99,7 @@
                   "Path": "effect/effect5004/effect5004_05.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 12,
+                "FrameIndex": 4,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -156,7 +109,7 @@
                   "Path": "effect/effect5004/effect5004_06.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 15,
+                "FrameIndex": 5,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -166,7 +119,7 @@
                   "Path": "effect/effect5004/effect5004_07.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 18,
+                "FrameIndex": 6,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -176,7 +129,7 @@
                   "Path": "effect/effect5004/effect5004_08.png",
                   "Plist": "effect5004.plist"
                 },
-                "FrameIndex": 21,
+                "FrameIndex": 7,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -186,9 +139,179 @@
                   "Path": "effect/effect5004/effect5004_09.png",
                   "Plist": "effect5004.plist"
                 },
+                "FrameIndex": 8,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_10.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_11.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_12.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_13.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_14.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_15.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_16.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_17.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_18.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 23,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_19.png",
+                  "Plist": "effect5004.plist"
+                },
                 "FrameIndex": 24,
                 "Tween": false,
                 "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_20.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 25,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_21.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_22.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 27,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5004/effect5004_23.png",
+                  "Plist": "effect5004.plist"
+                },
+                "FrameIndex": 28,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -304062910,
+            "Property": "AnchorPoint",
+            "Frames": [
+              {
+                "X": 0.5,
+                "Y": 0.0,
+                "FrameIndex": 23,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -304062910,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -199,7 +322,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 24,
+          "EndIndex": 28,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
@@ -218,16 +341,15 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.5
             },
             "Position": {
-              "X": -0.1803,
-              "Y": 98.1509
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 1.1,
+              "ScaleY": 1.1
             },
             "CColor": {},
             "IconVisible": false,
@@ -239,15 +361,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -91.6803,
-            "RightMargin": -91.3197,
-            "TopMargin": -256.1509,
-            "BottomMargin": -59.8491,
-            "Tag": 14,
-            "ActionTag": -1212121630,
+            "LeftMargin": -70.5,
+            "RightMargin": -70.5,
+            "TopMargin": -183.0,
+            "Tag": 53,
+            "ActionTag": -304062910,
             "Size": {
-              "X": 183.0,
-              "Y": 316.0
+              "X": 141.0,
+              "Y": 183.0
             },
             "Name": "effect5004",
             "ctype": "SpriteObjectData"

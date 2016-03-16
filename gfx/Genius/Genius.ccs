@@ -269,6 +269,7 @@
               <PlistImageFile Name="enemy_enemy1005_enemy1005_stand03.png" Key="enemy/enemy1005/enemy1005_stand03.png" />
               <PlistImageFile Name="enemy_enemy1005_enemy1005_stand04.png" Key="enemy/enemy1005/enemy1005_stand04.png" />
             </PlistImageFolder>
+            <Image Name="Other (7).png" />
           </Folder>
         </Folder>
         <Folder Name="hero">
@@ -618,9 +619,6 @@
             <Image Name="effect5001_06.png" />
             <Image Name="effect5001_07.png" />
             <Image Name="effect5001_08.png" />
-            <Image Name="effect5001_09.png" />
-            <Image Name="effect5001_10.png" />
-            <Image Name="effect5001_11.png" />
             <PlistImageFolder Image="effect5001.png" PListFile="effect5001.plist" Name=".effect5001_PList.Dir">
               <PlistImageFile Name="effect_effect5001_effect5001_01.png" Key="effect/effect5001/effect5001_01.png" />
               <PlistImageFile Name="effect_effect5001_effect5001_02.png" Key="effect/effect5001/effect5001_02.png" />
@@ -630,9 +628,6 @@
               <PlistImageFile Name="effect_effect5001_effect5001_06.png" Key="effect/effect5001/effect5001_06.png" />
               <PlistImageFile Name="effect_effect5001_effect5001_07.png" Key="effect/effect5001/effect5001_07.png" />
               <PlistImageFile Name="effect_effect5001_effect5001_08.png" Key="effect/effect5001/effect5001_08.png" />
-              <PlistImageFile Name="effect_effect5001_effect5001_09.png" Key="effect/effect5001/effect5001_09.png" />
-              <PlistImageFile Name="effect_effect5001_effect5001_10.png" Key="effect/effect5001/effect5001_10.png" />
-              <PlistImageFile Name="effect_effect5001_effect5001_11.png" Key="effect/effect5001/effect5001_11.png" />
             </PlistImageFolder>
           </Folder>
           <Folder Name="effect5002">
@@ -650,17 +645,6 @@
             </PlistImageFolder>
           </Folder>
           <Folder Name="effect5003">
-            <Image Name="effect5003_01.png" />
-            <Image Name="effect5003_02.png" />
-            <Image Name="effect5003_03.png" />
-            <Image Name="effect5003_04.png" />
-            <Image Name="effect5003_05.png" />
-            <Image Name="effect5003_06.png" />
-            <Image Name="effect5003_07.png" />
-            <Image Name="effect5003_08.png" />
-            <Image Name="effect5003_09.png" />
-            <Image Name="effect5003_10.png" />
-            <Image Name="effect5003_11.png" />
             <PlistImageFolder Image="effect5003.png" PListFile="effect5003.plist" Name=".effect5003_PList.Dir">
               <PlistImageFile Name="effect_effect5003_effect5003_01.png" Key="effect/effect5003/effect5003_01.png" />
               <PlistImageFile Name="effect_effect5003_effect5003_02.png" Key="effect/effect5003/effect5003_02.png" />
@@ -673,7 +657,36 @@
               <PlistImageFile Name="effect_effect5003_effect5003_09.png" Key="effect/effect5003/effect5003_09.png" />
               <PlistImageFile Name="effect_effect5003_effect5003_10.png" Key="effect/effect5003/effect5003_10.png" />
               <PlistImageFile Name="effect_effect5003_effect5003_11.png" Key="effect/effect5003/effect5003_11.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_12.png" Key="effect/effect5003/effect5003_12.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_13.png" Key="effect/effect5003/effect5003_13.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_14.png" Key="effect/effect5003/effect5003_14.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_15.png" Key="effect/effect5003/effect5003_15.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_16.png" Key="effect/effect5003/effect5003_16.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_17.png" Key="effect/effect5003/effect5003_17.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_18.png" Key="effect/effect5003/effect5003_18.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_19.png" Key="effect/effect5003/effect5003_19.png" />
+              <PlistImageFile Name="effect_effect5003_effect5003_20.png" Key="effect/effect5003/effect5003_20.png" />
             </PlistImageFolder>
+            <Image Name="effect5003_01.png" />
+            <Image Name="effect5003_02.png" />
+            <Image Name="effect5003_03.png" />
+            <Image Name="effect5003_04.png" />
+            <Image Name="effect5003_05.png" />
+            <Image Name="effect5003_06.png" />
+            <Image Name="effect5003_07.png" />
+            <Image Name="effect5003_08.png" />
+            <Image Name="effect5003_09.png" />
+            <Image Name="effect5003_10.png" />
+            <Image Name="effect5003_11.png" />
+            <Image Name="effect5003_12.png" />
+            <Image Name="effect5003_13.png" />
+            <Image Name="effect5003_14.png" />
+            <Image Name="effect5003_15.png" />
+            <Image Name="effect5003_16.png" />
+            <Image Name="effect5003_17.png" />
+            <Image Name="effect5003_18.png" />
+            <Image Name="effect5003_19.png" />
+            <Image Name="effect5003_20.png" />
           </Folder>
           <Folder Name="effect5004">
             <Image Name="effect5004_01.png" />
@@ -695,7 +708,35 @@
               <PlistImageFile Name="effect_effect5004_effect5004_07.png" Key="effect/effect5004/effect5004_07.png" />
               <PlistImageFile Name="effect_effect5004_effect5004_08.png" Key="effect/effect5004/effect5004_08.png" />
               <PlistImageFile Name="effect_effect5004_effect5004_09.png" Key="effect/effect5004/effect5004_09.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_10.png" Key="effect/effect5004/effect5004_10.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_11.png" Key="effect/effect5004/effect5004_11.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_12.png" Key="effect/effect5004/effect5004_12.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_13.png" Key="effect/effect5004/effect5004_13.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_14.png" Key="effect/effect5004/effect5004_14.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_15.png" Key="effect/effect5004/effect5004_15.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_16.png" Key="effect/effect5004/effect5004_16.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_17.png" Key="effect/effect5004/effect5004_17.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_18.png" Key="effect/effect5004/effect5004_18.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_19.png" Key="effect/effect5004/effect5004_19.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_20.png" Key="effect/effect5004/effect5004_20.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_21.png" Key="effect/effect5004/effect5004_21.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_22.png" Key="effect/effect5004/effect5004_22.png" />
+              <PlistImageFile Name="effect_effect5004_effect5004_23.png" Key="effect/effect5004/effect5004_23.png" />
             </PlistImageFolder>
+            <Image Name="effect5004_10.png" />
+            <Image Name="effect5004_11.png" />
+            <Image Name="effect5004_12.png" />
+            <Image Name="effect5004_13.png" />
+            <Image Name="effect5004_14.png" />
+            <Image Name="effect5004_15.png" />
+            <Image Name="effect5004_16.png" />
+            <Image Name="effect5004_17.png" />
+            <Image Name="effect5004_18.png" />
+            <Image Name="effect5004_19.png" />
+            <Image Name="effect5004_20.png" />
+            <Image Name="effect5004_21.png" />
+            <Image Name="effect5004_22.png" />
+            <Image Name="effect5004_23.png" />
           </Folder>
           <Folder Name="effect5005">
             <Image Name="effect5005_01.png" />
@@ -719,7 +760,25 @@
               <PlistImageFile Name="effect_effect5005_effect5005_08.png" Key="effect/effect5005/effect5005_08.png" />
               <PlistImageFile Name="effect_effect5005_effect5005_09.png" Key="effect/effect5005/effect5005_09.png" />
               <PlistImageFile Name="effect_effect5005_effect5005_10.png" Key="effect/effect5005/effect5005_10.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_11.png" Key="effect/effect5005/effect5005_11.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_12.png" Key="effect/effect5005/effect5005_12.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_13.png" Key="effect/effect5005/effect5005_13.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_14.png" Key="effect/effect5005/effect5005_14.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_15.png" Key="effect/effect5005/effect5005_15.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_16.png" Key="effect/effect5005/effect5005_16.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_17.png" Key="effect/effect5005/effect5005_17.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_18.png" Key="effect/effect5005/effect5005_18.png" />
+              <PlistImageFile Name="effect_effect5005_effect5005_19.png" Key="effect/effect5005/effect5005_19.png" />
             </PlistImageFolder>
+            <Image Name="effect5005_11.png" />
+            <Image Name="effect5005_12.png" />
+            <Image Name="effect5005_13.png" />
+            <Image Name="effect5005_14.png" />
+            <Image Name="effect5005_15.png" />
+            <Image Name="effect5005_16.png" />
+            <Image Name="effect5005_17.png" />
+            <Image Name="effect5005_18.png" />
+            <Image Name="effect5005_19.png" />
           </Folder>
         </Folder>
         <Folder Name="gold">
@@ -1173,6 +1232,87 @@
           <Image Name="boom00.png" />
         </Folder>
         <Project Name="hero101skill02.csd" Type="Node" />
+        <Project Name="hero103skill01.csd" Type="Node" />
+        <Folder Name="hero103skill01">
+          <Image Name="book01.png" />
+          <Image Name="book02.png" />
+          <Image Name="book03.png" />
+          <Image Name="book04.png" />
+          <Image Name="book05.png" />
+          <Image Name="book06.png" />
+          <Image Name="book07.png" />
+          <Image Name="book08.png" />
+          <Image Name="book09.png" />
+          <Image Name="book10.png" />
+          <Image Name="book11.png" />
+          <Image Name="eye01.png" />
+          <Image Name="eye02.png" />
+          <Image Name="eye03.png" />
+          <Image Name="eye04.png" />
+          <Image Name="eye05.png" />
+          <Image Name="eye06.png" />
+          <Image Name="eye07.png" />
+          <Image Name="eye08.png" />
+          <Image Name="eye09.png" />
+          <Image Name="eye10.png" />
+          <Image Name="fly01.png" />
+          <Image Name="fly02.png" />
+          <Image Name="fly03.png" />
+          <Image Name="fly04.png" />
+          <Image Name="fly05.png" />
+          <Image Name="fly06.png" />
+          <Image Name="fly07.png" />
+          <Image Name="fly08.png" />
+          <Image Name="fly09.png" />
+          <Image Name="hero01.png" />
+          <Image Name="hero02.png" />
+          <Image Name="hero03.png" />
+          <Image Name="hero04.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="word03.png" />
+          <Image Name="word04.png" />
+        </Folder>
+        <Folder Name="hero104skill01">
+          <Image Name="boom01.png" />
+          <Image Name="boom02.png" />
+          <Image Name="boom03.png" />
+          <Image Name="boom04.png" />
+          <Image Name="boom05.png" />
+          <Image Name="boom06.png" />
+          <Image Name="boom07.png" />
+          <Image Name="boom08.png" />
+          <Image Name="boom09.png" />
+          <Image Name="boom10.png" />
+          <Image Name="boom11.png" />
+          <Image Name="boom12.png" />
+          <Image Name="boom13.png" />
+          <Image Name="boom14.png" />
+          <Image Name="fly01.png" />
+          <Image Name="fly02.png" />
+          <Image Name="fly03.png" />
+          <Image Name="fly04.png" />
+          <Image Name="fly05.png" />
+          <Image Name="fly06.png" />
+          <Image Name="fly07.png" />
+          <Image Name="fly08.png" />
+          <Image Name="fly09.png" />
+          <Image Name="fly10.png" />
+          <Image Name="hero01.png" />
+          <Image Name="hero02.png" />
+          <Image Name="hero03.png" />
+          <Image Name="hero04.png" />
+          <Image Name="hero05.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="word03.png" />
+          <Image Name="word04.png" />
+          <Image Name="word05.png" />
+          <Image Name="zi01.png" />
+          <Image Name="zi02.png" />
+          <Image Name="zi03.png" />
+        </Folder>
+        <Project Name="hero104skill01.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

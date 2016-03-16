@@ -387,10 +387,10 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="boom" ActionTag="-1595571430" Tag="11" IconVisible="False" LeftMargin="-2500.0000" RightMargin="-2500.0000" TopMargin="-893.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="boom" ActionTag="-1595571430" Tag="11" IconVisible="False" LeftMargin="-2500.0000" RightMargin="-2500.0000" TopMargin="-1193.0000" BottomMargin="300.0000" ctype="SpriteObjectData">
             <Size X="5000.0000" Y="893.0000" />
             <AnchorPoint ScaleX="0.5000" />
-            <Position />
+            <Position Y="300.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -398,37 +398,37 @@
             <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hero" ActionTag="-1150105529" Tag="12" IconVisible="False" LeftMargin="-320.0000" RightMargin="-35.0000" TopMargin="-388.0000" ctype="SpriteObjectData">
-            <Size X="355.0000" Y="388.0000" />
+          <AbstractNodeData Name="hero" ActionTag="-1150105529" Tag="12" IconVisible="False" LeftMargin="-298.8000" RightMargin="-4701.2002" TopMargin="-906.0500" BottomMargin="13.0500" ctype="SpriteObjectData">
+            <Size X="5000.0000" Y="893.0000" />
             <AnchorPoint />
-            <Position X="-320.0000" />
+            <Position X="-298.8000" Y="13.0500" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill02/hero03.png" Plist="" />
+            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="wind" ActionTag="-1236846660" Tag="14" IconVisible="False" LeftMargin="74.2585" RightMargin="-275.2585" TopMargin="-165.6011" BottomMargin="29.6011" ctype="SpriteObjectData">
-            <Size X="201.0000" Y="136.0000" />
+          <AbstractNodeData Name="wind" ActionTag="-1236846660" Tag="14" IconVisible="False" LeftMargin="-2295.0000" RightMargin="-2705.0000" TopMargin="-547.4963" BottomMargin="-345.5037" ctype="SpriteObjectData">
+            <Size X="5000.0000" Y="893.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="174.7585" Y="97.6011" />
+            <Position X="204.9999" Y="100.9963" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill02/wind04.png" Plist="" />
+            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="word" ActionTag="-1520161585" Tag="13" IconVisible="False" LeftMargin="-125.0000" RightMargin="-255.0000" TopMargin="-125.0000" BottomMargin="5.0000" ctype="SpriteObjectData">
-            <Size X="380.0000" Y="120.0000" />
+          <AbstractNodeData Name="word" ActionTag="-1520161585" Tag="13" IconVisible="False" LeftMargin="-2435.0000" RightMargin="-2565.0000" TopMargin="-511.5000" BottomMargin="-381.5000" ctype="SpriteObjectData">
+            <Size X="5000.0000" Y="893.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="65.0000" Y="65.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill02/word02.png" Plist="" />
+            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

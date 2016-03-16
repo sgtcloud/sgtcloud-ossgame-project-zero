@@ -7,57 +7,57 @@
 			<key>effect/effect5002/effect5002_01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{322,0},{65,51}}</string>
+				<string>{{328,0},{161,128}}</string>
 				<key>offset</key>
-				<string>{-11,-9}</string>
+				<string>{-12,14}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{100,70}</string>
+				<string>{185,156}</string>
 			</dict>
 			<key>effect/effect5002/effect5002_02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{93,63}}</string>
+				<string>{{165,0},{163,128}}</string>
 				<key>offset</key>
-				<string>{-1,-3}</string>
+				<string>{-10,14}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{100,70}</string>
+				<string>{185,156}</string>
 			</dict>
 			<key>effect/effect5002/effect5002_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{93,0},{93,63}}</string>
+				<string>{{0,0},{165,129}}</string>
 				<key>offset</key>
-				<string>{-1,-3}</string>
+				<string>{-5,14}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{100,70}</string>
+				<string>{185,156}</string>
 			</dict>
 			<key>effect/effect5002/effect5002_04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{186,0},{68,56}}</string>
+				<string>{{489,0},{157,127}}</string>
 				<key>offset</key>
-				<string>{14,2}</string>
+				<string>{-13,15}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{100,70}</string>
+				<string>{185,156}</string>
 			</dict>
 			<key>effect/effect5002/effect5002_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{254,0},{68,56}}</string>
+				<string>{{646,0},{152,104}}</string>
 				<key>offset</key>
-				<string>{14,2}</string>
+				<string>{-11,26}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{100,70}</string>
+				<string>{185,156}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -69,14 +69,14 @@
 			<key>realTextureFileName</key>
 			<string>effect5002.png</string>
 			<key>size</key>
-			<string>{387,63}</string>
+			<string>{798,129}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>387</integer>
+			<integer>798</integer>
 			<key>height</key>
-			<integer>63</integer>
+			<integer>129</integer>
 		</dict>
 	</dict>
 </plist>

@@ -94,8 +94,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 1.6164,
+              "Y": 41.1968
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -111,15 +111,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -50.0,
-            "RightMargin": -50.0,
-            "TopMargin": -35.0,
-            "BottomMargin": -35.0,
+            "LeftMargin": -90.8836,
+            "RightMargin": -94.1164,
+            "TopMargin": -119.1968,
+            "BottomMargin": -36.8032,
             "Tag": 9,
             "ActionTag": 2054838712,
             "Size": {
-              "X": 100.0,
-              "Y": 70.0
+              "X": 185.0,
+              "Y": 156.0
             },
             "Name": "effect5002",
             "ctype": "SpriteObjectData"
