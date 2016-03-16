@@ -1,6 +1,6 @@
 # 【置顶】内测用户组计划
 
-如果您已经有了切实的项目开发计划，内测用户组正在招募核心开发者，我们会提供您从游戏的开发到上线的一系列的资源支持。详情请加qq群468356255，如果不符合要求的建议加入下面提到的用户支持群。
+如果您已经有了切实的项目开发计划，内测用户组正在招募核心开发者，我们会提供您从游戏的开发到上线的一系列的资源支持。详情查看[FAQ](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%86%85%E6%B5%8B%E7%94%A8%E6%88%B7%E7%BB%84%E8%AE%A1%E5%88%92FAQ)，请加qq群468356255，如果不符合要求的建议加入下面提到的用户支持群。
 
 # 使用声明
 
@@ -82,6 +82,25 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 本项目托管在github上，安装[git](https://git-scm.com/)之后运行。[网盘分流下载](http://pan.baidu.com/s/1mhdPPBq)
 
     git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
+
+### 运行代码
+
+##### 一般方式
+
+1. 原则上所有的http服务器都能运行本项目，例如nginx,apache等，这里用python内置的服务器为例
+2. 下载python2.7，如果您已经安装过了完整版cocos，那么就已经包含了该软件
+3. 配置python.exe到你的系统变量的PATH
+4. 在项目根目录运行'python -m SimpleHTTPServer'
+5. 浏览器打开'http://localhost:8080/'
+
+[下载win单文件版python](http://pan.baidu.com/s/1kTRdh3p)
+
+*python自带的简单服务器无法自定义参数，会产生缓存的问题，建议开发中使用功能更完整的服务器软件，例如nginx
+
+##### webstorm方式
+
+1. 把项目导入webstorm
+2. 在index.html文件上右键，Run 'index.html' 即可使用内置的服务器运行项目
 
 ### 项目目录
 

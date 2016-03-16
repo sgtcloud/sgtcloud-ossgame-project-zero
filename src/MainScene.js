@@ -8,6 +8,7 @@ var MainScene = cc.Scene.extend({
         this.battlePanel = new BattlePanel(this);
         //tab container in the bottom
         this.tabContainer = new TabContainer(this.battlePanel);
+        this.tabContainer.setName('tab');
         this.tabContainer.setPosition(0, 0);
         this.addChild(this.tabContainer, 100);
 
@@ -17,6 +18,7 @@ var MainScene = cc.Scene.extend({
 
         //top panel on the top
         this.topPanel = new TopPanel(this);
+        this.topPanel.setName('top');
         this.topPanel.setPosition(0, this.tabContainer.height + this.battlePanel.height);
         this.addChild(this.topPanel);
         this.topPanel.refreshAll();

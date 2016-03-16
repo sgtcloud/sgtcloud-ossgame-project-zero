@@ -40,7 +40,7 @@ sz.Locator = {
         for (var i = 0; i < length; i++) {
             var child = arrayRootChildren[i];
             var res = this.seekNodeByName(child, name);
-            if (res != null)
+            if (res != null && res.isVisible())
                 return res;
         }
         return null;
@@ -62,7 +62,7 @@ sz.Locator = {
         for (var i = 0; i < length; i++) {
             var child = arrayRootChildren[i];
             var res = this.seekNodeByTag(child, tag);
-            if (res != null)
+            if (res != null && res.isVisible())
                 return res;
         }
         return null;
@@ -75,39 +75,50 @@ sz.Locator = {
      * @param cb
      */
     locateNode: function (root, locator, cb) {
-        var segments = this.parse(locator);
-        cc.assert(segments && segments.length);
-        cc.log('guide locateNode:' + locator);
-        var child, node = root;
+        if (!cc.isString(locator)) {
+            var locateNode = new cc.Node();
+            locateNode.setName('rect');
+            locateNode.setAnchorPoint(cc.p(0, 0));
+            locateNode.setPosition(cc.p(locator.x, locator.y));
+            locateNode.setContentSize(locator.width, locator.height);
+            root.addChild(locateNode, 1000);
+            cb(locateNode);
+            return locateNode;
+        } else {
+            var segments = this.parse(locator);
+            cc.assert(segments && segments.length);
+            cc.log('guide locateNode:' + locator);
+            var child, node = root;
 
-        for (var i = 0; i < segments.length; i++) {
-            var item = segments[i];
-            switch (item.symbol) {
-                case '/':
-                    child = node.getChildByName(item.name);
+            for (var i = 0; i < segments.length; i++) {
+                var item = segments[i];
+                switch (item.symbol) {
+                    case '/':
+                        child = node.getChildByName(item.name);
+                        break;
+                    case '.':
+                        child = node[item.name];
+                        break;
+                    case '>':
+                        child = this.seekNodeByName(node, item.name);
+                        break;
+                    case '#':
+                        child = this.seekNodeByTag(node, item.name);
+                        break;
+                }
+
+                if (!child) {
+                    node = null;
                     break;
-                case '.':
-                    child = node[item.name];
-                    break;
-                case '>':
-                    child = this.seekNodeByName(node, item.name);
-                    break;
-                case '#':
-                    child = this.seekNodeByTag(node, item.name);
-                    break;
+                }
+                node = child;
             }
 
-            if (!child) {
-                node = null;
-                break;
+            if (node) {
+                cb(node);
             }
-            node = child;
+            return node;
         }
-
-        if (node) {
-            cb(node);
-        }
-        return node;
     },
 
     mouseSimulation: function (x, y) {
@@ -300,7 +311,8 @@ sz.GuideTaskHandle = cc.Class.extend({
             //手型提示
             case sz.GuideCommand.GC_FINGER_HINT:
                 this._guideLayer.locateNode(step.locator, function (node) {
-                    cc.director.getRunningScene().pause();
+                    //cc.director.getRunningScene().pause();
+                    cc.log('locate:' + node.getName());
                     self._guideLayer.fingerToNode(node, finish, self._guideConfig.isFingerAnimation);
                     if (step.showMask) {
                         self._guideLayer.showMask(true);
@@ -323,27 +335,41 @@ sz.GuideTaskHandle = cc.Class.extend({
                 finish();
                 break;
             case sz.GuideCommand.GC_SHOW_MSG:
-                this.showMsgBox(step.string);
+                this._showMsgBox(step.string, finish);
                 break;
             default:
                 cc.log("guide command is not define");
         }
     },
 
-    showMsgBox: function (msg) {
+    _showMsgBox: function (msg, finish) {
+        var self = this;
         var msgBox = ccs.load(res.guideMsgBox).node;
+        msgBox.getChildByName('root').setTouchEnabled(false);
         var text = msgBox.getChildByName('root').getChildByName('text');
         text.setString(msg);
         msgBox.setPosition(cc.p(640, 0));
-        var moveIn = cc.moveBy(0.5, -300, 0);
-        var moveOut = moveIn.reverse();
-        msgBox.runAction(moveIn);
-        bindTouchEventListener(function () {
-            msgBox.runAction(cc.sequence(moveOut, cc.callFunc(function () {
-                msgBox.removeFromParent(true);
-            }, msgBox)));
-        }, msgBox);
+        var moveIn1 = cc.moveBy(0.5, -400, 0);
+        var moveOut1 = moveIn1.reverse();
+        msgBox.runAction(cc.sequence(moveIn1, cc.callFunc(function () {
+            self._guideLayer.fingerToNode(msgBox, function () {
+                guideGirl.runAction(cc.sequence(moveOut2, cc.callFunc(function () {
+                    guideGirl.removeFromParent(true);
+                }, guideGirl)));
+                msgBox.runAction(cc.sequence(moveOut1, cc.callFunc(function () {
+                    msgBox.removeFromParent(true);
+                }, msgBox)));
+                //保存任务完成回调函数
+                finish();
+            }, self._guideConfig.isFingerAnimation, true);
+        }, msgBox)));
+        var guideGirl = ccs.load(res.guideGirl).node;
+        guideGirl.setPosition(cc.p(-237, 0));
+        var moveIn2 = cc.moveBy(0.5, 237, 0);
+        guideGirl.runAction(moveIn2);
+        var moveOut2 = moveIn2.reverse();
         this._guideLayer.addChild(msgBox);
+        this._guideLayer.addChild(guideGirl);
     }
 });
 
@@ -360,6 +386,7 @@ sz.GuideLayer = cc.Layer.extend({
     _locateNode: null,  //定位节点
     _guideTaskHandle: null, //引导任务处理器
     _isTouchLocked: false,
+    _shouldSwallowTouch: false,
 
     ctor: function (target, guidConfig) {
         cc.assert(target || guidConfig);
@@ -407,7 +434,7 @@ sz.GuideLayer = cc.Layer.extend({
                 onTouchBegan: function (touch, event) {
                     var touchNode = event.getCurrentTarget();
                     var ret = self._onTouchBegan(touchNode, touch, event);
-                    return ret ? true : false;
+                    return ret;
                 }
             });
             cc.eventManager.addListener(touchListener, this);
@@ -443,7 +470,7 @@ sz.GuideLayer = cc.Layer.extend({
         this._finger.setPosition(this.width * 0.5, this.height * 0.5);
         this._finger.setAnchorPoint(0, 1);
         this._finger.setVisible(false);
-        this.addChild(this._finger);
+        this.addChild(this._finger, 1000);
     },
 
     /**
@@ -452,7 +479,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @param cb
      * @private
      */
-    fingerToNode: function (locateNode, callback, isAnimation) {
+    fingerToNode: function (locateNode, callback, isAnimation, shouldSwallowTouch) {
         this._setLocateNode(null);
 
         var point = locateNode.getParent().convertToWorldSpace(locateNode.getPosition());
@@ -469,6 +496,7 @@ sz.GuideLayer = cc.Layer.extend({
         this.showMask();
         //保存任务完成回调函数
         this._setpCallback = callback;
+        this._shouldSwallowTouch = shouldSwallowTouch;
     },
 
     /**
@@ -579,15 +607,18 @@ sz.GuideLayer = cc.Layer.extend({
             this._colorLayer.setPosition(point);
         }
 
-
+        var shouldSwallowTouch = this._shouldSwallowTouch;
         var isContains = cc.rectContainsPoint(this._touchRect, point);
         if (isContains) {
             if (!this._locateNode) {
                 this._setLocateNode(null);
-                this._setpCallback();
             }
+            this._setpCallback();
         }
 
+        if (isContains && shouldSwallowTouch) {
+            return true;
+        }
         return !isContains;
     },
 

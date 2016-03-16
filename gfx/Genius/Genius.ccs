@@ -1173,6 +1173,87 @@
           <Image Name="boom00.png" />
         </Folder>
         <Project Name="hero101skill02.csd" Type="Node" />
+        <Project Name="hero103skill01.csd" Type="Node" />
+        <Folder Name="hero103skill01">
+          <Image Name="book01.png" />
+          <Image Name="book02.png" />
+          <Image Name="book03.png" />
+          <Image Name="book04.png" />
+          <Image Name="book05.png" />
+          <Image Name="book06.png" />
+          <Image Name="book07.png" />
+          <Image Name="book08.png" />
+          <Image Name="book09.png" />
+          <Image Name="book10.png" />
+          <Image Name="book11.png" />
+          <Image Name="eye01.png" />
+          <Image Name="eye02.png" />
+          <Image Name="eye03.png" />
+          <Image Name="eye04.png" />
+          <Image Name="eye05.png" />
+          <Image Name="eye06.png" />
+          <Image Name="eye07.png" />
+          <Image Name="eye08.png" />
+          <Image Name="eye09.png" />
+          <Image Name="eye10.png" />
+          <Image Name="fly01.png" />
+          <Image Name="fly02.png" />
+          <Image Name="fly03.png" />
+          <Image Name="fly04.png" />
+          <Image Name="fly05.png" />
+          <Image Name="fly06.png" />
+          <Image Name="fly07.png" />
+          <Image Name="fly08.png" />
+          <Image Name="fly09.png" />
+          <Image Name="hero01.png" />
+          <Image Name="hero02.png" />
+          <Image Name="hero03.png" />
+          <Image Name="hero04.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="word03.png" />
+          <Image Name="word04.png" />
+        </Folder>
+        <Folder Name="hero104skill01">
+          <Image Name="boom01.png" />
+          <Image Name="boom02.png" />
+          <Image Name="boom03.png" />
+          <Image Name="boom04.png" />
+          <Image Name="boom05.png" />
+          <Image Name="boom06.png" />
+          <Image Name="boom07.png" />
+          <Image Name="boom08.png" />
+          <Image Name="boom09.png" />
+          <Image Name="boom10.png" />
+          <Image Name="boom11.png" />
+          <Image Name="boom12.png" />
+          <Image Name="boom13.png" />
+          <Image Name="boom14.png" />
+          <Image Name="fly01.png" />
+          <Image Name="fly02.png" />
+          <Image Name="fly03.png" />
+          <Image Name="fly04.png" />
+          <Image Name="fly05.png" />
+          <Image Name="fly06.png" />
+          <Image Name="fly07.png" />
+          <Image Name="fly08.png" />
+          <Image Name="fly09.png" />
+          <Image Name="fly10.png" />
+          <Image Name="hero01.png" />
+          <Image Name="hero02.png" />
+          <Image Name="hero03.png" />
+          <Image Name="hero04.png" />
+          <Image Name="hero05.png" />
+          <Image Name="word01.png" />
+          <Image Name="word02.png" />
+          <Image Name="word03.png" />
+          <Image Name="word04.png" />
+          <Image Name="word05.png" />
+          <Image Name="zi01.png" />
+          <Image Name="zi02.png" />
+          <Image Name="zi03.png" />
+        </Folder>
+        <Project Name="hero104skill01.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -197,7 +197,7 @@ var HeroListMenu = ListViewMenu.extend({
             root = this._heroTemp.clone();
             btnlayer = this._upgrade_btnTemp.clone();
             btnlayer.setPosition(this._upgradeBtnPosition);
-            btnlayer.setName('btnLayer');
+            btnlayer.setName(hero.getId() + '_btnUpgrade');
             upMaxLevelBtn = this._maxLevelBtnTemp.clone();//已满级
             upMaxLevelBtn.setPosition(this._maxLevelBtnPosition);
             upMaxLevelBtn.setName('upMaxLevelBtn');
@@ -210,7 +210,7 @@ var HeroListMenu = ListViewMenu.extend({
             first = true;
             item.root = root;
         } else {
-            btnlayer = root.getChildByName('btnLayer');
+            btnlayer = root.getChildByName(hero.getId() + '_btnUpgrade');
             upMaxLevelBtn = root.getChildByName('upMaxLevelBtn');
             revive_btn = root.getChildByName('revive_btn');
         }

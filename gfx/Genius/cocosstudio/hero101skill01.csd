@@ -306,7 +306,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="fire" ActionTag="1293825758" Tag="7" IconVisible="False" LeftMargin="-129.5000" RightMargin="-309.5000" TopMargin="-309.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="fire" ActionTag="1293825758" Tag="7" IconVisible="False" LeftMargin="-2410.0000" RightMargin="-2590.0000" TopMargin="-893.0000" ctype="SpriteObjectData">
             <Size X="5000.0000" Y="893.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="90.0000" />
