@@ -13,7 +13,16 @@
       <FilePathData Path="effect/effect5003/effect5003_09.png" />
       <FilePathData Path="effect/effect5003/effect5003_10.png" />
       <FilePathData Path="effect/effect5003/effect5003_11.png" />
+      <FilePathData Path="effect/effect5003/effect5003_12.png" />
+      <FilePathData Path="effect/effect5003/effect5003_13.png" />
+      <FilePathData Path="effect/effect5003/effect5003_14.png" />
+      <FilePathData Path="effect/effect5003/effect5003_15.png" />
+      <FilePathData Path="effect/effect5003/effect5003_16.png" />
+      <FilePathData Path="effect/effect5003/effect5003_17.png" />
+      <FilePathData Path="effect/effect5003/effect5003_18.png" />
+      <FilePathData Path="effect/effect5003/effect5003_19.png" />
+      <FilePathData Path="effect/effect5003/effect5003_20.png" />
     </ImageFiles>
-    <MaxSize Width="1024" Height="1024" />
+    <MaxSize Width="2048" Height="2048" />
   </Content>
 </PlistInfoProjectFile>

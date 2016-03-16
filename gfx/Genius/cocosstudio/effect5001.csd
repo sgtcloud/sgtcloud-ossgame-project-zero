@@ -2,34 +2,13 @@
   <PropertyGroup Name="effect5001" Type="Node" ID="bee138fa-e7d0-4815-a1c6-42f910cfc810" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="20" Speed="0.5000">
-        <Timeline ActionTag="-851192098" Property="Position">
-          <PointFrame FrameIndex="0" X="0.7628" Y="-27.7465">
+      <Animation Duration="14" Speed="0.3333">
+        <Timeline ActionTag="-2108338859" Property="Scale">
+          <ScaleFrame FrameIndex="0" X="0.9000" Y="0.9000">
             <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="2" X="4.7627" Y="-25.7465">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="4" X="-0.0221" Y="-23.8757">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="6" X="-0.0501" Y="-25.5934">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="8" X="-0.1701" Y="-24.9777">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="10" X="1.2101" Y="-23.8621">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="12" X="12.5902" Y="-26.7464">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="14" X="12.5902" Y="-28.1085">
-            <EasingData Type="0" />
-          </PointFrame>
+          </ScaleFrame>
         </Timeline>
-        <Timeline ActionTag="-851192098" Property="FileData">
+        <Timeline ActionTag="-2108338859" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5001/effect5001_01.png" Plist="effect5001.plist" />
           </TextureFrame>
@@ -54,30 +33,21 @@
           <TextureFrame FrameIndex="14" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5001/effect5001_08.png" Plist="effect5001.plist" />
           </TextureFrame>
-          <TextureFrame FrameIndex="16" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="effect/effect5001/effect5001_09.png" Plist="effect5001.plist" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="effect/effect5001/effect5001_10.png" Plist="effect5001.plist" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="20" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="effect/effect5001/effect5001_11.png" Plist="effect5001.plist" />
-          </TextureFrame>
         </Timeline>
       </Animation>
       <AnimationList>
-        <AnimationInfo Name="boom" StartIndex="0" EndIndex="20">
+        <AnimationInfo Name="boom" StartIndex="0" EndIndex="14">
           <RenderColor A="255" R="135" G="206" B="250" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="9" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="effect5001" ActionTag="-851192098" Tag="6" IconVisible="False" LeftMargin="-89.7372" RightMargin="-91.2628" TopMargin="-96.2535" BottomMargin="-27.7465" ctype="SpriteObjectData">
-            <Size X="181.0000" Y="124.0000" />
-            <AnchorPoint ScaleX="0.5000" />
-            <Position X="0.7628" Y="-27.7465" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+          <AbstractNodeData Name="effecet5001" ActionTag="-2108338859" Tag="8" IconVisible="False" LeftMargin="-126.9403" RightMargin="-123.0597" TopMargin="-182.3797" BottomMargin="-44.6203" ctype="SpriteObjectData">
+            <Size X="250.0000" Y="227.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="-1.9403" Y="68.8797" />
+            <Scale ScaleX="0.9000" ScaleY="0.9000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />

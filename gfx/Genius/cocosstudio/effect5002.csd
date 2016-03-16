@@ -29,10 +29,10 @@
       <ObjectData Name="Node" Tag="11" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="effect5002" ActionTag="2054838712" Tag="9" IconVisible="False" LeftMargin="-50.0000" RightMargin="-50.0000" TopMargin="-35.0000" BottomMargin="-35.0000" ctype="SpriteObjectData">
-            <Size X="100.0000" Y="70.0000" />
+          <AbstractNodeData Name="effect5002" ActionTag="2054838712" Tag="9" IconVisible="False" LeftMargin="-90.8836" RightMargin="-94.1164" TopMargin="-119.1968" BottomMargin="-36.8032" ctype="SpriteObjectData">
+            <Size X="185.0000" Y="156.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position />
+            <Position X="1.6164" Y="41.1968" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
