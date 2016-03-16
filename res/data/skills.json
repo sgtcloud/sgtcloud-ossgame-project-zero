@@ -1768,15 +1768,15 @@
   },
   "s10008": {
     "name": "能量爆裂",
-    "desc": "限定时间{duration}秒内，缩短攻击间隔{effect1_value}秒。",
-    "buffDesc": "缩短攻击间隔{effect1_value}秒",
+    "desc": "对敌方全体单位造成{effect1_value}点伤害。",
+    "buffDesc": "无",
     "icon": "s10008.png",
     "type": 1,
     "levelDatas": [
       {
         "level": 0,
         "effect1": {
-          "type": "buff_atk_period_rate",
+          "type": "fs_damage_once",
           "value": 0
         },
         "upgrade": {
@@ -1790,8 +1790,8 @@
       {
         "level": 1,
         "effect1": {
-          "type": "buff_atk_period_rate",
-          "value": 5
+          "type": "fs_damage_once",
+          "value": 100
         },
         "upgrade": {
           "unit": "gold",
@@ -1799,13 +1799,13 @@
         },
         "unlockLevel": 2,
         "duration": 10,
-        "cooldown": 150
+        "cooldown": 10
       },
       {
         "level": 2,
         "effect1": {
-          "type": "buff_atk_period_rate",
-          "value": 10
+          "type": "fs_damage_once",
+          "value": 200
         },
         "upgrade": {
           "unit": "gold",
@@ -1813,13 +1813,13 @@
         },
         "unlockLevel": 7,
         "duration": 15,
-        "cooldown": 150
+        "cooldown": 10
       },
       {
         "level": 3,
         "effect1": {
-          "type": "buff_atk_period_rate",
-          "value": 15
+          "type": "fs_damage_once",
+          "value": 500
         },
         "upgrade": {
           "unit": "gold",
@@ -1827,13 +1827,13 @@
         },
         "unlockLevel": 12,
         "duration": 20,
-        "cooldown": 150
+        "cooldown": 10
       },
       {
         "level": 4,
         "effect1": {
-          "type": "buff_atk_period_rate",
-          "value": 20
+          "type": "fs_damage_once",
+          "value": 1000
         },
         "upgrade": {
           "unit": "gold",
@@ -1841,13 +1841,13 @@
         },
         "unlockLevel": 17,
         "duration": 25,
-        "cooldown": 150
+        "cooldown": 10
       },
       {
         "level": 5,
         "effect1": {
-          "type": "buff_atk_period_rate",
-          "value": 25
+          "type": "fs_damage_once",
+          "value": 3000
         },
         "upgrade": {
           "unit": "gold",
@@ -1855,7 +1855,7 @@
         },
         "unlockLevel": 22,
         "duration": 30,
-        "cooldown": 150
+        "cooldown": 10
       }
     ]
   },
