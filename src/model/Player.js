@@ -364,13 +364,10 @@ var PlayerData = {
     countPlayerMCardReward: function () {
         //判断是否有月卡
         if (player.month_card_end_time) {
-            var date1 = new Date().setTime(player.into_stage_battle_timestamp).Format("YYYY-MM-DD");
-            var date2 = new Date().setTime(player.month_card_end_time).Format("YYYY-MM-DD");
 
             //判断月卡有效性
-            if (getDays(date1, date2) > 0) {
-                var data3 = new Date().setTime(this.serverCurrentTime).Format("YYYY-MM-DD");
-                var days = getDays(date2, data3);
+            if (getDays(player.into_stage_battle_timestamp, player.month_card_end_time) > 0) {
+                var days = getDays(player.month_card_end_time, this.serverCurrentTime);
                 //判断是否可领取
                 if (days > 0) {
                     //发送邮件

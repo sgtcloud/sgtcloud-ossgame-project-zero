@@ -360,7 +360,14 @@ Date.prototype.Format = function (fmt) { //author: meizz
     return fmt;
 }
 
-function getDays(strDateStart,strDateEnd){
+function getDays(dateStartTimeStramp,dateEndTimeStramp){
+
+    var dateStart = new Date();
+    dateStart.setTime(dateStartTimeStramp);
+    var dateEnd = new Date();
+    dateEnd.setTime(dateEndTimeStramp);
+    var strDateStart = dateStart.Format("yyyy-MM-dd");
+    var strDateEnd =  dateEnd.Format("yyyy-MM-dd");
     var strSeparator = "-"; //日期分隔符
     var oDate1;
     var oDate2;

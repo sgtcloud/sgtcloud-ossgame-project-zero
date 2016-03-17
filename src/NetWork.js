@@ -439,7 +439,7 @@ var NetWork = {
                         // 支付成功后的回调函数验证是否支付成功
                         this.queryByDid(obj);
                         return callback(true);
-                    },
+                    }.bind(this),
                     fail: function (res) {
                         console.log(res);
                         return callback(false);
@@ -452,25 +452,33 @@ var NetWork = {
     },
     //验证是否支付成功
     queryByDid: function(obj){
-        SgtApi.DelegateDidService.queryByDid(obj.did, function (result1, data) {
+        console.log(JSON.stringify(obj));
+        SgtApi.DelegateDidService.queryByDid(obj.orderId, function (result1, data) {
+            console.log(result1);
+            console.log(cc.isNumber(data.updateTime));
             if(result1 && cc.isNumber(data.updateTime)){
                 var amount = obj.chargePoint.amount;
                 //判断是否为首冲
-                if(player.vip < 2  && cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0){
-                    amount += obj.chargePoint.firstChargeRewardAmount;
-                    //再此只做标示是否充值过。
+                console.log(JSON.stringify(player));
+                if(player.vip < 2){
+                    if(cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0){
+                        amount += obj.chargePoint.firstChargeRewardAmount;
+                    }
+                    //在此只做标示是否充值过。
                     player.vip = 2;
                 }
-                if(obj.chargePoint.type == 'mCard'){
+                console.log(amount);
+                console.log(obj.chargePoint.type == 'mCard');
+                if(obj.chargePoint.type === 'mCard'){
                     //第一次购买 或者 当前没有有效月卡
                     if(!player.month_card_end_time){
-                        var date1 = new Date().setTime(PlayerData.getServerTime()).Format("YYYY-MM-DD");
-                        var date2 = new Date().setTime(player.month_card_end_time).Format("YYYY-MM-DD");
+                        //发送邮件
+                        this.sendSystemMail('月卡title','月卡内容',JSON.stringify(CONSTS.monthCard_daily_bonus),function(result,data){});
+                    }else{
                         //判断月卡有效性
-                        if (getDays(date1, date2) < 0) {
+                        if (getDays(PlayerData.getServerTime(), player.month_card_end_time) < 0) {
                             //发送邮件
-                            var attachment = JSON.stringify(CONSTS.monthCard_daily_bonus);
-                            this.sendSystemMail('月卡title','月卡内容',attachment,function(result,data){});
+                            this.sendSystemMail('月卡title','月卡内容',JSON.stringify(CONSTS.monthCard_daily_bonus),function(result,data){});
                         }
                     }
                     PlayerData.updatePlayerMCardInfo();
@@ -499,7 +507,7 @@ var NetWork = {
         })
     },
     sendSystemMail: function(title,content,attachment,callback){
-        var mail = SgtApi.Mail();
+        var mail = new SgtApi.Mail();
         mail.title = title;
         mail.type = SgtApi.Mail.TYPE_SYSTEM;
         mail.toId = player.id;
@@ -508,6 +516,6 @@ var NetWork = {
         mail.fromName = "GM";
         mail.attachment = attachment;
         mail.content = content;
-        SgtApi.MailService.sendMail(player,mail,callback);
+        SgtApi.MailService.sendMail(mail,callback);
     }
 }

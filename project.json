@@ -49,6 +49,8 @@
     "src/ui/CheckInPanel.js",
     "src/ui/MailPanel.js",
     "src/ui/Recharge.js",
+    "src/ui/ShopLayerMenu.js",
+    "src/ui/RankLayerMenu.js",
     "src/NetWork.js",
     "src/apps.js"
   ]
