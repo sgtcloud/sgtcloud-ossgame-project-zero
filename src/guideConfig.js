@@ -124,7 +124,8 @@ var guideConfig = {
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
-                string: '善用技能可以极大提升战斗力，升级技能可以提高技能威力和缩短冷却时间'
+                string: '善用技能可以极大提升战斗力，升级技能可以提高技能威力和缩短冷却时间',
+                delayTime: 1
             }
         ],
         7: [

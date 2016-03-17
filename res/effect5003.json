@@ -5,11 +5,232 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 30,
-        "Speed": 0.3333,
+        "Duration": 26,
+        "Speed": 0.25,
         "Timelines": [
           {
-            "ActionTag": -1195998427,
+            "ActionTag": -130091180,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -46.4743,
+                "Y": 55.8721,
+                "FrameIndex": 7,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -0.8674,
+                "Y": 57.8782,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -43.0849,
+                "Y": 58.1009,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 29.7608,
+                "Y": 64.5652,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -5.0102,
+                "Y": 61.8904,
+                "FrameIndex": 13,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 32.4383,
+                "Y": 61.8904,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -29.0835,
+                "Y": 51.1908,
+                "FrameIndex": 17,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 37.7893,
+                "Y": 33.8042,
+                "FrameIndex": 19,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 1.6801,
+                "Y": 35.1417,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -0.3241,
+                "Y": 48.5161,
+                "FrameIndex": 23,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -130091180,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.8,
+                "Y": 0.8,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 26,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -130091180,
             "Property": "FileData",
             "Frames": [
               {
@@ -28,7 +249,7 @@
                   "Path": "effect/effect5003/effect5003_02.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 1,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -38,7 +259,7 @@
                   "Path": "effect/effect5003/effect5003_03.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 6,
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -48,7 +269,7 @@
                   "Path": "effect/effect5003/effect5003_04.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 9,
+                "FrameIndex": 3,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -58,7 +279,7 @@
                   "Path": "effect/effect5003/effect5003_05.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 12,
+                "FrameIndex": 4,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -68,7 +289,7 @@
                   "Path": "effect/effect5003/effect5003_06.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 15,
+                "FrameIndex": 5,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -78,7 +299,7 @@
                   "Path": "effect/effect5003/effect5003_07.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 18,
+                "FrameIndex": 7,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -88,7 +309,7 @@
                   "Path": "effect/effect5003/effect5003_08.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 21,
+                "FrameIndex": 9,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -98,7 +319,17 @@
                   "Path": "effect/effect5003/effect5003_09.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 24,
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 12,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -108,7 +339,7 @@
                   "Path": "effect/effect5003/effect5003_10.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 27,
+                "FrameIndex": 13,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -118,7 +349,67 @@
                   "Path": "effect/effect5003/effect5003_11.png",
                   "Plist": "effect5003.plist"
                 },
-                "FrameIndex": 30,
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_12.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_13.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_14.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_15.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 23,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_16.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_20.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 26,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -126,39 +417,66 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1195998427,
+            "ActionTag": -130091180,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -130091180,
+            "Property": "Alpha",
+            "Frames": [
+              {
+                "Value": 255,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1377785584,
             "Property": "Position",
             "Frames": [
               {
-                "X": 1.9998,
-                "Y": 2.0,
-                "FrameIndex": 0,
+                "X": 41.1333,
+                "Y": -2.9758,
+                "FrameIndex": 5,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 5.9994,
-                "Y": -1.0,
-                "FrameIndex": 3,
+                "X": -95.6651,
+                "Y": -3.1669,
+                "FrameIndex": 7,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 1.0505,
-                "Y": 1.8204,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.9495,
-                "Y": -1.1796,
+                "X": 31.2769,
+                "Y": -2.8243,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -166,8 +484,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -1.9495,
-                "Y": -2.1796,
+                "X": 32.4962,
+                "Y": 9.1118,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -31.7615,
+                "Y": -4.3129,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -175,8 +502,17 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -0.9495,
-                "Y": 0.8203,
+                "X": 27.0897,
+                "Y": 5.0492,
+                "FrameIndex": 13,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -17.7143,
+                "Y": 5.0491,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -184,17 +520,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -0.9496,
-                "Y": 2.8203,
-                "FrameIndex": 18,
+                "X": 21.7403,
+                "Y": 5.7178,
+                "FrameIndex": 17,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": -1.9496,
-                "Y": 1.8203,
+                "X": -15.039,
+                "Y": 3.7116,
+                "FrameIndex": 19,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 20.4047,
+                "Y": -20.3623,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -202,31 +547,906 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -1.9496,
-                "Y": 1.8203,
+                "X": 49.1606,
+                "Y": -11.669,
+                "FrameIndex": 23,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1377785584,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.8,
+                "Y": 0.8,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               },
               {
-                "X": -2.9497,
-                "Y": -0.1797,
-                "FrameIndex": 27,
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 26,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1377785584,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_06.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_07.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_08.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_10.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_11.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_12.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_13.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_14.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_15.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 23,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_16.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1377785584,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1121704384,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": -68.5417,
+                "Y": -29.7243,
+                "FrameIndex": 5,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": -2.9497,
-                "Y": -0.1798,
-                "FrameIndex": 30,
+                "X": -5.3948,
+                "Y": -44.6274,
+                "FrameIndex": 7,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
+              },
+              {
+                "X": -28.2435,
+                "Y": -69.6959,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -50.873,
+                "Y": -65.339,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 39.7914,
+                "Y": -75.8663,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -8.3523,
+                "Y": -64.4983,
+                "FrameIndex": 13,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -35.7693,
+                "Y": -67.1735,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -19.7199,
+                "Y": -59.8179,
+                "FrameIndex": 17,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -3.6705,
+                "Y": -69.1803,
+                "FrameIndex": 19,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -22.394,
+                "Y": -76.5362,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 45.1516,
+                "Y": -73.862,
+                "FrameIndex": 23,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1121704384,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.8,
+                "Y": 0.8,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 26,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1121704384,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_06.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_07.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_08.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_10.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_11.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_12.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_13.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_14.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_15.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 23,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_16.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1121704384,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 178235981,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 12.3739,
+                "Y": -78.5411,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -58.2227,
+                "Y": -102.8064,
+                "FrameIndex": 7,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 31.2701,
+                "Y": -119.1811,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 48.5444,
+                "Y": -112.5954,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -23.7349,
+                "Y": -116.6589,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 17.7281,
+                "Y": -120.6713,
+                "FrameIndex": 13,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 46.4834,
+                "Y": -115.9908,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 29.0968,
+                "Y": -126.0223,
+                "FrameIndex": 17,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 57.852,
+                "Y": -130.7035,
+                "FrameIndex": 19,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 13.0492,
+                "Y": -133.3786,
+                "FrameIndex": 21,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -3.6679,
+                "Y": -135.3849,
+                "FrameIndex": 23,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": -20.0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 178235981,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.8,
+                "Y": 0.8,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 12,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.6,
+                "Y": 0.8,
+                "FrameIndex": 26,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 178235981,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_06.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_07.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_08.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_09.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_10.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_11.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_12.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_13.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 19,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_14.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_15.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 23,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "MarkedSubImage",
+                  "Path": "effect/effect5003/effect5003_16.png",
+                  "Plist": "effect5003.plist"
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 178235981,
+            "Property": "BlendFunc",
+            "Frames": [
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
+              },
+              {
+                "Src": 770,
+                "Dst": 771,
+                "FrameIndex": 26,
+                "Tween": false,
+                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -237,7 +1457,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 30,
+          "EndIndex": 29,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
@@ -256,16 +1476,15 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.5
             },
             "Position": {
-              "X": 1.9998,
-              "Y": 2.0
+              "X": 0.0,
+              "Y": -20.0
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
             },
             "CColor": {},
             "IconVisible": false,
@@ -277,17 +1496,149 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -71.0002,
-            "RightMargin": -74.9998,
-            "TopMargin": -76.5,
-            "BottomMargin": -72.5,
-            "Tag": 8,
-            "ActionTag": -1195998427,
+            "LeftMargin": -282.5,
+            "RightMargin": -282.5,
+            "TopMargin": -268.0,
+            "BottomMargin": -20.0,
+            "Tag": 6,
+            "ActionTag": -130091180,
             "Size": {
-              "X": 146.0,
-              "Y": 149.0
+              "X": 565.0,
+              "Y": 288.0
             },
-            "Name": "effect5003",
+            "Name": "effect5003_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shine/shine00.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 41.1333,
+              "Y": -2.9758
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 21.1333,
+            "RightMargin": -61.1333,
+            "TopMargin": -38.0242,
+            "BottomMargin": -2.9758,
+            "Tag": 13,
+            "ActionTag": 1377785584,
+            "Size": {
+              "X": 40.0,
+              "Y": 41.0
+            },
+            "Name": "effect5003_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shine/shine00.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": -68.5417,
+              "Y": -29.7243
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -88.5417,
+            "RightMargin": 48.5417,
+            "TopMargin": -11.2757,
+            "BottomMargin": -29.7243,
+            "Tag": 11,
+            "ActionTag": 1121704384,
+            "Size": {
+              "X": 40.0,
+              "Y": 41.0
+            },
+            "Name": "effect5003_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shine/shine00.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5
+            },
+            "Position": {
+              "X": 12.3739,
+              "Y": -78.5411
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -7.6261,
+            "RightMargin": -32.3739,
+            "TopMargin": 37.5411,
+            "BottomMargin": -78.5411,
+            "Tag": 12,
+            "ActionTag": 178235981,
+            "Size": {
+              "X": 40.0,
+              "Y": 41.0
+            },
+            "Name": "effect5003_4",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -300,7 +1651,8 @@
       },
       "UsedResources": [
         "effect5003.plist",
-        "effect5003.png"
+        "effect5003.png",
+        "shine/shine00.png"
       ],
       "ctype": "GameFileData"
     }

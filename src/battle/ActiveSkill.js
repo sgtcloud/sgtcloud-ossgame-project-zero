@@ -84,6 +84,10 @@ var ActiveSkill = cc.Class.extend({
                     this.type = this.TYPE_CONTINUOUS;
                     this.effectValue = effects[j].value;
                     this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length, "boom");
+                } else if (effects[j].type === "fs_damage_once") {
+                    this.type = this.TYPE_ONCE;
+                    this.effectValue = effects[j].value;
+                    this.loadSkillEffectRes(res.skill_big_bang, this.targets.length, "boom");
                 } else {
                     cc.log("not a active skill effect:" + effects[j].type);
                 }
@@ -131,7 +135,7 @@ var ActiveSkill = cc.Class.extend({
     },
 
     cast: function () {
-        var heroShowUnit = CCSUnit.create(res.hero101skill);
+        var heroShowUnit = CCSUnit.create(res.hero101skill01);
         heroShowUnit.setPosition(320, 0);
         //heroShowUnit.runAction(cc.speed(heroShowUnit.animation, 2));
         heroShowUnit.playAnimation('show', false, function () {
@@ -237,6 +241,6 @@ var TapSkill = ActiveSkill.extend({
         }.bind(this));
         this.hitEffects[0].setPosition(pos);
         this.battle.addSprite(this.hitEffects[0], this.TAP_ZORDER_OFFSET);
-        this.targets[0].doDamage(PlayerData.getTotalHit());
+        this.targets[0].doDamage(PlayerData.getTotalHit(true));
     }
 });

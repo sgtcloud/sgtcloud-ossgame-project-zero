@@ -85,7 +85,7 @@ var res = {
 
     skill_magma_blaster: "res/effect5001.json",
     skill_fury_crawl: "res/effect5002.json",
-    skill_saint_aura: "res/effect5003.json",
+    skill_big_bang: "res/effect5003.json",
     skill_cure_totem: "res/effect5004.json",
     skill_tornado_shock: "res/effect5005.json",
     hero_desc_json: "res/HeroDescLayer.json",
@@ -108,7 +108,11 @@ var res = {
     recharge_icon_layer_json: 'res/RechargeIconLayer.json',
     recharge_layer_json: 'res/RechargeLayer.json',
 
-    hero101skill: 'res/hero101skill01.json',
+    hero101skill01: 'res/hero101skill01.json',
+    hero101skill02: 'res/hero101skill02.json',
+    hero102skill01: 'res/hero102skill01.json',
+    hero103skill01: 'res/hero103skill01.json',
+    hero104skill01: 'res/hero104skill01.json',
 
     guideMsgBox: 'res/Guide.json',
     guideGirl: 'res/GuideGirl.json',
