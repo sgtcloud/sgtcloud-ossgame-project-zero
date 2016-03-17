@@ -422,11 +422,12 @@ var NetWork = {
         createPlayer.setPosition(cc.p(140, 400));
         scene.addChild(createPlayer, 100);
     },
-    chooseWXPay: function(body,total_fee,num,callback){
-        sgt.WxCentralService.getPayOrder(body,total_fee,player.id,function(result,order){
+    chooseWXPay: function(chargePoint,callback){
+        var desc = '购买'+chargePoint.name+" "+chargePoint.amount;
+        sgt.WxCentralService.getPayOrder(desc,chargePoint.money,player.id,function(result,order){
             if(result){
-                var obj = {"orderId":order.did,"num":num};
-                player.orders.push(obj);
+                var obj = {"orderId":order.did,"chargePoint":chargePoint};
+                PlayerData.addPlayerNoPayOrders(obj);
                 //微信支付
                 wx.chooseWXPay({
                     timestamp: order.time_start, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
@@ -438,7 +439,7 @@ var NetWork = {
                         // 支付成功后的回调函数验证是否支付成功
                         this.queryByDid(obj);
                         return callback(true);
-                    },
+                    }.bind(this),
                     fail: function (res) {
                         console.log(res);
                         return callback(false);
@@ -451,16 +452,70 @@ var NetWork = {
     },
     //验证是否支付成功
     queryByDid: function(obj){
-        SgtApi.DelegateDidService.queryByDid(obj.did, function (result1, data) {
+        console.log(JSON.stringify(obj));
+        SgtApi.DelegateDidService.queryByDid(obj.orderId, function (result1, data) {
+            console.log(result1);
+            console.log(cc.isNumber(data.updateTime));
             if(result1 && cc.isNumber(data.updateTime)){
-                var resource = PlayerData.createResourceData("gem",obj.num);
-                PlayerData.updateResource(resource);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,resource);
-                player.orders.splice(player.orders.indexOf(obj),1);
-                PlayerData.updatePlayer();
-                //直接上传服务器需放到updatePlayer 之后
-                NetWork.updatePlayerSave();
+                var amount = obj.chargePoint.amount;
+                //判断是否为首冲
+                console.log(JSON.stringify(player));
+                if(player.vip < 2){
+                    if(cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0){
+                        amount += obj.chargePoint.firstChargeRewardAmount;
+                    }
+                    //在此只做标示是否充值过。
+                    player.vip = 2;
+                }
+                console.log(amount);
+                console.log(obj.chargePoint.type == 'mCard');
+                if(obj.chargePoint.type === 'mCard'){
+                    //第一次购买 或者 当前没有有效月卡
+                    if(!player.month_card_end_time){
+                        //发送邮件
+                        this.sendSystemMail('月卡title','月卡内容',JSON.stringify(CONSTS.monthCard_daily_bonus),function(result,data){});
+                    }else{
+                        //判断月卡有效性
+                        if (getDays(PlayerData.getServerTime(), player.month_card_end_time) < 0) {
+                            //发送邮件
+                            this.sendSystemMail('月卡title','月卡内容',JSON.stringify(CONSTS.monthCard_daily_bonus),function(result,data){});
+                        }
+                    }
+                    PlayerData.updatePlayerMCardInfo();
+                }else{
+                    var resource = PlayerData.createResourceData(obj.chargePoint.type,amount);
+                    PlayerData.updateResource(resource);
+                    customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,resource);
+                    PlayerData.delePlayerNoPayOrdersById(obj);
+                    PlayerData.updatePlayer();
+                    //直接上传服务器需放到updatePlayer 之后
+                    this.updatePlayerSave();
+                }
             }
+        }.bind(this))
+    },
+    queryByCondition: function(){
+        SgtApi.DelegateDidService.queryByCondition(player.id,function(result,data){
+            if(result && cc.isArray(data) && data.length > 0){
+                for(var i in data){
+                    if(data[i].updateTime > 0 ){
+                        return true;
+                    }
+                }
+            }
+            return false;
         })
+    },
+    sendSystemMail: function(title,content,attachment,callback){
+        var mail = new SgtApi.Mail();
+        mail.title = title;
+        mail.type = SgtApi.Mail.TYPE_SYSTEM;
+        mail.toId = player.id;
+        mail.toName = player.name;
+        mail.fromId = -1;
+        mail.fromName = "GM";
+        mail.attachment = attachment;
+        mail.content = content;
+        SgtApi.MailService.sendMail(mail,callback);
     }
 }

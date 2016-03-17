@@ -464,6 +464,7 @@ var BattleField = cc.Class.extend({
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
+        PlayerData.countPlayerMCardReward();
         PlayerData.updateIntoBattleTime();
     },
 
