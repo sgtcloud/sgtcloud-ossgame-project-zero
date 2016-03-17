@@ -27,7 +27,7 @@ var Hero = function (heroData) {
         var skillId = this._data.skills[i];
         var skill = readCache(skillId);
         var skillLv = (skill && skill['level']) || 0;
-        skills.push(new Skill(skillId, skillLv, id));
+        skills.push(new Skill(skillId, skillLv, this._id));
     }
     function readCache(skillId) {
         return heroData.skills[skillId]
@@ -262,8 +262,8 @@ var Hero = function (heroData) {
         this._lv = this._lv + 1;
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
-                player.heroes[i]['lv'] = lv;
-                if(lv === 1){
+                player.heroes[i]['lv'] = this._lv;
+                if(this._lv === 1){
                     player.heroes[i].life = this.getLife();
                 }
                 break;
@@ -272,4 +272,39 @@ var Hero = function (heroData) {
     }
     this.refreshProps();
 
+};
+
+Hero.prototype.calcProp = function (propName,lvData) {
+    var val = 0;
+    var tmpVal = 0;
+    var rate = 1.0;
+    tmpVal = lvData||getLevelData(this._data, propName, this.getLv());
+    if (tmpVal) {
+        val += tmpVal;
+    }
+    tmpVal = this[propName + "_value"];
+    if (tmpVal) {
+        val += tmpVal;
+    }
+    tmpVal = PlayerData["globe_" + propName + "_value"];
+    if (tmpVal) {
+        val += tmpVal;
+    }
+    tmpVal = this[propName + "_rate"];
+    if (tmpVal) {
+        rate += tmpVal / 100;
+    }
+    tmpVal = PlayerData["globe_" + propName + "_rate"];
+    if (tmpVal) {
+        rate += tmpVal / 100;
+    }
+    tmpVal = PlayerData["tmp_" + propName + "_rate"];
+    if (tmpVal) {
+        rate += tmpVal / 100;
+    }
+    if (propName === "atk_period") {
+        return val / rate;
+    } else {
+        return val * rate;
+    }
 };
