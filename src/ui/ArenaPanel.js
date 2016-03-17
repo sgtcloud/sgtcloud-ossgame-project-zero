@@ -125,7 +125,7 @@ var ArenaPanel = BattleMenu.extend({
         }
         this._arenaService.getPlayersByIndex(items, this._arenakey, function (result, data) {
             if (result) {
-                for (var i in data) {
+                for (var i=0;i<data.length;i++) {
                     this.pushItem(data[i], i + 1);
                 }
             }
