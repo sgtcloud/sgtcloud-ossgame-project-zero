@@ -8,6 +8,7 @@
   "renderMode": 0,
   "jsList": [
     "src/resource.js",
+    "src/async.js",
     "src/Data.js",
     "src/model/Enemy.js",
     "src/model/Stage.js",
@@ -39,6 +40,7 @@
     "src/ui/EquipListMenu.js",
     "src/ui/HeroDesc.js",
     "src/ui/Popup.js",
+    "src/ui/Guide.js",
     "src/Chance.js",
     "src/GamePopup.js",
     "src/battle/ChestUnit.js",
@@ -52,6 +54,7 @@
     "src/ui/ShopLayerMenu.js",
     "src/ui/RankLayerMenu.js",
     "src/NetWork.js",
+    "src/guideConfig.js",
     "src/apps.js"
   ]
 }

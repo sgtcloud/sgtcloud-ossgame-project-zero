@@ -129,8 +129,13 @@ var EVENT = {
     /**
      * 使用道具
      */
-    USE_GAME_ITEMS: "USE_GAME_ITEMS"
+    USE_GAME_ITEMS: "USE_GAME_ITEMS",
 
+    /**
+     * 暂停和恢复战斗的动画
+     */
+    PAUSE_THE_BATTLE : 'PAUSE_THE_BATTLE',
+    RESUME_THE_BATTLE : 'RESUME_THE_BATTLE'
 
 };
 
