@@ -1,19 +1,37 @@
 [
   {
-    "icon": "gold.png",
-    "bonus": [
-      {
-        "unit": "gold",
-        "value": 110
-      }
-    ]
-  },
-  {
     "icon": "gem.png",
     "bonus": [
       {
         "unit": "gem",
-        "value": 10
+        "value": 5
+      }
+    ]
+  },
+  {
+    "icon": "gold.png",
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 10000
+      }
+    ]
+  },
+  {
+    "icon": "relic.png",
+    "bonus": [
+      {
+        "unit": "relic",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "icon": "small_blood.png",
+    "bonus": [
+      {
+        "unit": "small_blood",
+        "value": 3
       }
     ]
   },
@@ -23,22 +41,15 @@
       {
         "unit": "wood",
         "value": 10
-      },
-      {
-        "unit": "gold",
-        "value": 110
       }
     ]
   },
   {
-    "icon": "relic.png",
+    "icon": "leather.png",
     "bonus": [
       {
-        "unit": "relic",
+        "unit": "leather",
         "value": 10
-      }, {
-        "unit": "gold",
-        "value": 110
       }
     ]
   },
@@ -48,10 +59,213 @@
       {
         "unit": "stone",
         "value": 10
-      },
+      }
+    ]
+  },
+  {
+    "icon": "bronze.png",
+    "bonus": [
+      {
+        "unit": "bronze",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "middle_blood.png",
+    "bonus": [
+      {
+        "unit": "middle_blood",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "icon": "iron.png",
+    "bonus": [
+      {
+        "unit": "iron",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "crystal.png",
+    "bonus": [
+      {
+        "unit": "crystal",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "rune.png",
+    "bonus": [
+      {
+        "unit": "rune",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "essence.png",
+    "bonus": [
+      {
+        "unit": "essence",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "large_blood.png",
+    "bonus": [
+      {
+        "unit": "large_blood",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "icon": "gold.png",
+    "bonus": [
       {
         "unit": "gold",
-        "value": 110
+        "value": 10000
+      }
+    ]
+  },
+  {
+    "icon": "gem.png",
+    "bonus": [
+      {
+        "unit": "gem",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "icon": "gold.png",
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 10000
+      }
+    ]
+  },
+  {
+    "icon": "relic.png",
+    "bonus": [
+      {
+        "unit": "relic",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "icon": "small_blood.png",
+    "bonus": [
+      {
+        "unit": "small_blood",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "icon": "wood.png",
+    "bonus": [
+      {
+        "unit": "wood",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "leather.png",
+    "bonus": [
+      {
+        "unit": "leather",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "stone.png",
+    "bonus": [
+      {
+        "unit": "stone",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "bronze.png",
+    "bonus": [
+      {
+        "unit": "bronze",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "middle_blood.png",
+    "bonus": [
+      {
+        "unit": "middle_blood",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "icon": "iron.png",
+    "bonus": [
+      {
+        "unit": "iron",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "crystal.png",
+    "bonus": [
+      {
+        "unit": "crystal",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "rune.png",
+    "bonus": [
+      {
+        "unit": "rune",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "essence.png",
+    "bonus": [
+      {
+        "unit": "essence",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "icon": "large_blood.png",
+    "bonus": [
+      {
+        "unit": "large_blood",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "icon": "gold.png",
+    "bonus": [
+      {
+        "unit": "gold",
+        "value": 10000
       }
     ]
   }

@@ -1,20 +1,20 @@
 var Hero = function (heroData) {
-    var id = heroData.id;
-    var lv = heroData.lv;
+    this._id = heroData.id;
+    this._lv = heroData.lv;
     var star = heroData.star;
-    var data = dataSource.heros[id];
+    this._data = dataSource.heros[this._id];
     var equips = [];
     var skills = [];
-    var icon = data.icon;
-    for (var i in data.equips) {
-        var equipId = data.equips[i];
+    var icon = this._data.icon;
+    for (var i in this._data.equips) {
+        var equipId = this._data.equips[i];
         var equipCache = readEquipCache(equipId);
         equips.push(new Equip(equipId, equipCache));
     }
     customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
         var hero = data.getUserData();
-        if (hero.getId() === id) {
-            PlayerData.updateHeroDeadTime(id);
+        if (hero.getId() === this._id) {
+            PlayerData.updateHeroDeadTime(this._id);
         }
     }.bind(this));
     customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {
@@ -23,8 +23,8 @@ var Hero = function (heroData) {
             PlayerData.clearHeroDeadTime(this.getId());
         }
     }.bind(this));
-    for (var i in data.skills) {
-        var skillId = data.skills[i];
+    for (var i in this._data.skills) {
+        var skillId = this._data.skills[i];
         var skill = readCache(skillId);
         var skillLv = (skill && skill['level']) || 0;
         skills.push(new Skill(skillId, skillLv, id));
@@ -55,7 +55,7 @@ var Hero = function (heroData) {
         }
     }
     this.getMaxLevel = function () {
-        return data.levelDatas[data.levelDatas.length - 1]['level'];
+        return this._data.levelDatas[this._data.levelDatas.length - 1]['level'];
     }
 
     this.refreshProps = function () {
@@ -95,53 +95,52 @@ var Hero = function (heroData) {
         return false;
     }
     this.isLocked = function () {
-        var unlock = data['unlock'];
-        var locked = validateLocked(unlock);
+        var unlock = this._data['unlock'];
+        return  validateLocked(unlock);
         /*if( lv < 1){
          return true;
          };*/
         //console.log(this.getId()+" has been locked : "+locked)
-        return locked;
     };
     this.isMaxLevel = function () {
-        return lv >= this.getMaxLevel();
+        return this._lv >= this.getMaxLevel();
     }
 
     this.getUnLock = function () {
-        return data['unlock']
+        return this._data['unlock']
     }
 
     this.getNextLevelUpgrade = function () {
         var level = this.getLv();
-        var cost = getLevelData(data, 'upgrade', level + 1);
+        var cost = getLevelData(this._data, 'upgrade', level + 1);
         return cost;
     };
 
     this.getLevelData = function (level) {
-        return getSpecificLevelData(data, level || lv);
+        return getSpecificLevelData(this._data, level || this._lv);
     }
 
     this.getResurge = function () {
-        return getLevelData(data, 'resurge', this.getLv())
+        return getLevelData(this._data, 'resurge', this.getLv())
     }
 
     this.getId = function () {
-        return id;
+        return this._id;
     };
     this.getFile = function () {
-        return data.file;
+        return this._data.file;
     };
     this.getLv = function () {
-        return lv;
+        return this._lv;
     };
     this.getName = function () {
-        return data.name;
+        return this._data.name;
     };
     this.getStar = function () {
         return star;
     };
     this.getDesc = function () {
-        return data.desc;
+        return this._data.desc;
     };
 
     this.getEquipCount = function () {
@@ -195,40 +194,6 @@ var Hero = function (heroData) {
             this.calcArrayEffect(equips[i].traverseEquipEffects(), propName);
         }
     }
-    this.calcProp = function (propName) {
-        var val = 0;
-        var tmpVal = 0;
-        var rate = 1.0;
-        tmpVal = getLevelData(data, propName, lv);
-        if (tmpVal) {
-            val += tmpVal;
-        }
-        tmpVal = this[propName + "_value"];
-        if (tmpVal) {
-            val += tmpVal;
-        }
-        tmpVal = PlayerData["globe_" + propName + "_value"]
-        if (tmpVal) {
-            val += tmpVal;
-        }
-        tmpVal = this[propName + "_rate"];
-        if (tmpVal) {
-            rate += tmpVal / 100;
-        }
-        tmpVal = PlayerData["globe_" + propName + "_rate"];
-        if (tmpVal) {
-            rate += tmpVal / 100;
-        }
-        tmpVal = PlayerData["tmp_" + propName + "_rate"];
-        if (tmpVal) {
-            rate += tmpVal / 100;
-        }
-        if (propName === "atk_period") {
-            return val / rate;
-        } else {
-            return val * rate;
-        }
-    };
     this.getLife = function () {
         if (this.isLocked()) {
             return 0;
@@ -248,7 +213,7 @@ var Hero = function (heroData) {
         return this.calcProp("tap");
     };
     this.getRecover = function () {
-        var val = data.levelDatas[lv].resurge.time;
+        var val = this._data.levelDatas[this._lv].resurge.time;
         return val;
     };
     this.getCtrChance = function () {
@@ -273,7 +238,7 @@ var Hero = function (heroData) {
     };
 
     this.doUnlock = function () {
-        if (lv > 0) {
+        if (this._lv > 0) {
             return false;
         }
         return true;
@@ -281,7 +246,7 @@ var Hero = function (heroData) {
 
     this.printHeroProps = function () {
         cc.log("==================================");
-        cc.log("id=" + id);
+        cc.log("id=" + this._id);
         cc.log("atk_period=" + this.getAnimateDelay());
         cc.log("life=" + this.getLife());
         cc.log("atk=" + this.getAttack());
@@ -294,7 +259,7 @@ var Hero = function (heroData) {
      * 英雄升级
      */
     this.upgrade = function () {
-        lv = lv + 1;
+        this._lv = this._lv + 1;
         for (var i = 0; i < player.heroes.length; i++) {
             if (player.heroes[i]["id"] === this.getId()) {
                 player.heroes[i]['lv'] = lv;
