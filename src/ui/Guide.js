@@ -349,9 +349,10 @@ sz.GuideTaskHandle = cc.Class.extend({
         var text = msgBox.getChildByName('root').getChildByName('text');
         text.setString(msg);
         msgBox.setPosition(cc.p(640, 0));
-        var moveIn1 = cc.moveBy(0.5, -400, 0);
+        var moveIn1 = cc.moveBy(0.2, -400, 0);
         var moveOut1 = moveIn1.reverse();
         msgBox.runAction(cc.sequence(moveIn1, cc.callFunc(function () {
+            //self._guideLayer._touchRect = cc.rect(msgBox.getPositionX(), msgBox.getPositionY(), msgBox.getContentSize().width, msgBox.getContentSize().height)
             self._guideLayer.fingerToNode(msgBox, function () {
                 guideGirl.runAction(cc.sequence(moveOut2, cc.callFunc(function () {
                     guideGirl.removeFromParent(true);
@@ -361,11 +362,12 @@ sz.GuideTaskHandle = cc.Class.extend({
                 }, msgBox)));
                 //保存任务完成回调函数
                 finish();
-            }, self._guideConfig.isFingerAnimation, true);
+            }, self._guideConfig.isFingerAnimation, true);;
+            self._guideLayer.showMask(true);
         }, msgBox)));
         var guideGirl = ccs.load(res.guideGirl).node;
         guideGirl.setPosition(cc.p(-237, 0));
-        var moveIn2 = cc.moveBy(0.5, 237, 0);
+        var moveIn2 = cc.moveBy(0.2, 237, 0);
         guideGirl.runAction(moveIn2);
         var moveOut2 = moveIn2.reverse();
         this._guideLayer.addChild(msgBox);
@@ -703,7 +705,7 @@ sz.GuideLayer = cc.Layer.extend({
             clipper.stencil = stencil;
             this.addChild(clipper, -1);
             clipper.setInverted(true);
-            var content = new cc.LayerColor(cc.color.RED);
+            var content = new cc.LayerColor(cc.color.BLACK);
             content.setOpacity(150);
             clipper.addChild(content);
             this._clipper = clipper;

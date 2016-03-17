@@ -106,7 +106,7 @@ var res = {
     maill_layer_json: 'res/MaillLayer.json',
     pvp_layer_json: 'res/PVPLayer.json',
     recharge_icon_layer_json: 'res/RechargeIconLayer.json',
-    recharge_layer_json: 'res/RechargeLayer.json'
+    recharge_layer_json: 'res/RechargeLayer.json',
 
     hero101skill: 'res/hero101skill01.json',
 

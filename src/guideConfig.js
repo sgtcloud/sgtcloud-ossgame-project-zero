@@ -57,20 +57,20 @@ var guideConfig = {
                 command: sz.GuideCommand.GC_FINGER_HINT,
                 locator: "main>enemy",
                 textHint: '点击越快，造成的伤害越多',
-                onLocateNode: function (node) {
-                    customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
-                },
-                onExit: function (cb) {
-                    customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
-                    cb();
-                },
-                delayTime: 3
+                /*onLocateNode: function (node) {
+                 customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
+                 },
+                 onExit: function (cb) {
+                 customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                 cb();
+                 },*/
+                delayTime: 1
             },
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
                 string: '击败怪物之后，可以获得金币，钻石等资源，这些资源可以用来强化英雄的等级，技能和装备哦',
-                delayTime: 2
+                delayTime: 1
             }],
         4: [
             {
@@ -88,7 +88,7 @@ var guideConfig = {
                 command: sz.GuideCommand.GC_FINGER_HINT,
                 locator: cc.rect(480, 500, 140, 70)
             }],
-        5:[
+        5: [
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
@@ -105,7 +105,7 @@ var guideConfig = {
                 locator: cc.rect(480, 390, 140, 70)
             }
         ],
-        6:[
+        6: [
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
@@ -127,7 +127,7 @@ var guideConfig = {
                 string: '善用技能可以极大提升战斗力，升级技能可以提高技能威力和缩短冷却时间'
             }
         ],
-        7:[
+        7: [
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
@@ -149,7 +149,7 @@ var guideConfig = {
                 string: '摇摇手机即可得到金币哦'
             }
         ],
-        8:[
+        8: [
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
@@ -169,6 +169,11 @@ var guideConfig = {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
                 string: '每个英雄都有自己的专属装备哦，记得解锁英雄之后升级他的装备'
+            },
+            {
+                log: "open battle view",
+                command: sz.GuideCommand.GC_FINGER_HINT,
+                locator: "main/tab>main"
             }
         ]
 
