@@ -29,7 +29,7 @@ var StatisticsPanel = cc.Node.extend({
         var total_max_level = cumulative_number.getChildByName('statistics.total_max_level');
         setIgnoreContentAdaptWithSize([total_hero,total_hero_levels,total_gold_rate,total_tap_rate,total_life_rate,
             total_attack_rate,total_attack_value,total_tap_value,total_life_value,total_ctr_chance_rate,total_ctr_modify_rate,total_atk_period_rate,
-            total_gold,total_relic,total_fairy,total_chest_open,total_enemy_kill,total_boss_kill,total_max_level])
+            total_gold,total_relic,total_fairy,total_chest_open,total_enemy_kill,total_boss_kill,total_max_level]);
         this.convert = function(data,type){
             if(typeof type === 'undefined'){
                 if(data >= 0 && data <1000){
@@ -44,7 +44,7 @@ var StatisticsPanel = cc.Node.extend({
             }else if(type == 'rate'){
                 return data.toFixed(2)+"%";
             }
-        }
+        };
         total_hero.setString(this.convert(PlayerData.getTotalHeroNum()));
         total_hero_levels.setString(this.convert(PlayerData.getTotalHeroLevels()));
         total_gold_rate.setString(this.convert(PlayerData.globe_gold_rate+PlayerData.buff_gold_rate,"rate"));
