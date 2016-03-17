@@ -70,13 +70,29 @@ var guideConfig = {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
                 string: '击败怪物之后，可以获得金币，钻石等资源，这些资源可以用来强化英雄的等级，技能和装备哦',
-                delayTime: 1
+                delayTime: 1,
+                onEnter: function (cb) {
+                    customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
+                    cb();
+                },
+                onExit: function (cb) {
+                    customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                    cb();
+                }
             }],
         4: [
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
-                string: '点击英雄面板升级英雄，英雄升级后可以解锁高级技能和新的伙伴'
+                string: '点击英雄面板升级英雄，英雄升级后可以解锁高级技能和新的伙伴',
+                onEnter: function (cb) {
+                    customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
+                    cb();
+                },
+                onExit: function (cb) {
+                    customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                    cb();
+                }
             },
             {
                 log: "open hero view",
@@ -92,7 +108,15 @@ var guideConfig = {
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
-                string: '技能分为主动和被动技能，主动技能需要在战斗面板中释放，被动技能是一直生效的'
+                string: '技能分为主动和被动技能，主动技能需要在战斗面板中释放，被动技能是一直生效的',
+                onEnter: function (cb) {
+                    customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
+                    cb();
+                },
+                onExit: function (cb) {
+                    customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                    cb();
+                }
             },
             {
                 log: "open hero view",
@@ -109,7 +133,15 @@ var guideConfig = {
             {
                 log: "intro",
                 command: sz.GuideCommand.GC_SHOW_MSG,
-                string: '让我们看看这个技能的威力吧'
+                string: '让我们看看这个技能的威力吧',
+                onEnter: function (cb) {
+                    customEventHelper.sendEvent(EVENT.PAUSE_THE_BATTLE);
+                    cb();
+                },
+                onExit: function (cb) {
+                    customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                    cb();
+                }
             },
             {
                 log: "open battle view",

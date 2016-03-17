@@ -906,7 +906,14 @@
         ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 27,
+          "Name": "show",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 8,
         "Children": [
@@ -1002,14 +1009,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -2410.0,
-            "RightMargin": -2590.0,
-            "TopMargin": -893.0,
+            "LeftMargin": 70.0,
+            "RightMargin": -110.0,
+            "TopMargin": -41.0,
             "Tag": 7,
             "ActionTag": 1293825758,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "fire",
             "ctype": "SpriteObjectData"

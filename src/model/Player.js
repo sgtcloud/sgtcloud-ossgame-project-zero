@@ -75,7 +75,7 @@ var player = {
     "heroes": [
         {
             "id": "h101",
-            "lv": 28,
+            "lv": 1,
             "life": 200,
             "star": 0,
             "skills": {

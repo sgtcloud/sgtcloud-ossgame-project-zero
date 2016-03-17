@@ -86,6 +86,9 @@ var Skill = function (id, lv, heroId) {
     this.getBuffDesc = function () {
         return data.buffDesc;
     };
+    this.getPreShow = function(){
+        return data.preShow;
+    };
     this.getEffect = function (key) {
         return getEffectValue(data, key, lv);
     };

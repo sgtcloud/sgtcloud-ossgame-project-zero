@@ -57,6 +57,7 @@ var ActiveSkill = cc.Class.extend({
         this.firstCastTime = firstCastTime;
         if (skill && battle) {
             this.duration = skill.getLevelData().duration;
+            this.preshow = skill.getPreShow();
             var effects = skill.traverseSkillEffects();
             for (var j in effects) {
                 this.effect = effects[j].type;
@@ -87,7 +88,7 @@ var ActiveSkill = cc.Class.extend({
                 } else if (effects[j].type === "fs_damage_once") {
                     this.type = this.TYPE_ONCE;
                     this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_big_bang, this.targets.length, "boom");
+                    this.loadSkillEffectRes(res.skill_big_bang, 1, "boom");
                 } else {
                     cc.log("not a active skill effect:" + effects[j].type);
                 }
@@ -108,6 +109,7 @@ var ActiveSkill = cc.Class.extend({
     },
 
     EFFECT_ZORDER_OFFSET: 2,
+    EFFECT_FS_ZORDER_OFFSET: 2000,
 
     runSkillEffect: function (target, effect, anim) {
         if (this.type !== this.TYPE_BUFF) {
@@ -135,21 +137,41 @@ var ActiveSkill = cc.Class.extend({
     },
 
     cast: function () {
-        var heroShowUnit = CCSUnit.create(res.hero101skill01);
-        heroShowUnit.setPosition(320, 0);
-        //heroShowUnit.runAction(cc.speed(heroShowUnit.animation, 2));
-        heroShowUnit.playAnimation('show', false, function () {
-            heroShowUnit.removeFromParent(true);
-        });
-        this.battle.addSprite(heroShowUnit, 3000);
+        if (this.preshow) {
+            var heroShowUnit = CCSUnit.create('res/' + this.preshow);
+            heroShowUnit.setPosition(320, 0);
+            //heroShowUnit.runAction(cc.speed(heroShowUnit.animation, 2));
+            heroShowUnit.playAnimation('show', false, function () {
+                heroShowUnit.removeFromParent(true);
+                this._cast();
+            }.bind(this));
+            this.battle.addSprite(heroShowUnit, 3000);
+        } else {
+            this._cast();
+        }
+    },
+
+    _cast: function () {
         if (!this.firstCastTime) {
             this.firstCastTime = new Date().getTime();
         }
         if (this.targets.length !== 0) {
             this.effectAnimFinishCount = 0;
+            if (this.effect === 'fs_damage_once') {
+                this.hitEffects[0].playAnimation('boom', false, function () {
+                    // count all the effects animations are finished
+                    this.effectAnimFinishCount++;
+                    if (this.effectAnimFinishCount >= this.targets.length) {
+                        this.onCastFinish();
+                    }
+                }.bind(this));
+                this.battle.addSprite(this.hitEffects[0], this.EFFECT_FS_ZORDER_OFFSET);
+            }
             for (var i in this.targets) {
                 if (this.type !== this.TYPE_BUFF && this.targets[i]) {
-                    this.runSkillEffect(this.targets[i], this.hitEffects[i], "boom");
+                    if (this.effect !== 'fs_damage_once') {
+                        this.runSkillEffect(this.targets[i], this.hitEffects[i], "boom");
+                    }
                     this.targets[i].doDamage(this.effectValue);
                 }
             }
@@ -193,7 +215,7 @@ var ActiveSkill = cc.Class.extend({
 
     recast: function () {
         var recast = new ActiveSkill(this.skill, this.battle, this.firstCastTime);
-        recast.cast();
+        recast._cast();
         unschedule(this);
     },
 
