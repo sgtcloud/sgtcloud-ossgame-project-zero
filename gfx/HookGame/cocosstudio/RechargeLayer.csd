@@ -4,9 +4,9 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="111" ctype="GameLayerObjectData">
-        <Size X="640.0000" Y="960.0000" />
+        <Size X="620.0000" Y="800.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="1414498151" Tag="140" IconVisible="False" LeftMargin="17.3321" RightMargin="2.6679" TopMargin="69.1172" BottomMargin="90.8828" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="1414498151" Tag="140" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="620.0000" Y="800.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-818547892" Tag="141" IconVisible="False" RightMargin="20.0000" TopMargin="50.0000" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -100,7 +100,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="box" ActionTag="-1348626573" Tag="177" IconVisible="False" LeftMargin="20.0000" RightMargin="40.0000" TopMargin="224.0000" BottomMargin="96.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="box" ActionTag="-1348626573" Tag="177" IconVisible="False" LeftMargin="20.0000" RightMargin="40.0000" TopMargin="224.0000" BottomMargin="96.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="560.0000" Y="480.0000" />
                 <Children>
                   <AbstractNodeData Name="item1" ActionTag="-636296045" Tag="185" IconVisible="True" LeftMargin="8.3086" RightMargin="371.6914" TopMargin="13.5077" BottomMargin="239.4923" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
@@ -143,7 +143,7 @@
                     <PreSize X="0.3214" Y="0.4729" />
                     <FileData Type="Normal" Path="RechargeIconLayer.csd" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="item5" ActionTag="-1124834065" Tag="217" IconVisible="True" LeftMargin="192.4290" RightMargin="187.5710" TopMargin="247.9225" BottomMargin="5.0774" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                  <AbstractNodeData Name="item5" ActionTag="-1124834065" Tag="217" IconVisible="True" LeftMargin="192.4290" RightMargin="187.5710" TopMargin="247.9226" BottomMargin="5.0774" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                     <Size X="180.0000" Y="227.0000" />
                     <AnchorPoint />
                     <Position X="192.4290" Y="5.0774" />
@@ -153,7 +153,7 @@
                     <PreSize X="0.3214" Y="0.4729" />
                     <FileData Type="Normal" Path="RechargeIconLayer.csd" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="item6" ActionTag="1125154198" Tag="225" IconVisible="True" LeftMargin="376.5495" RightMargin="3.4506" TopMargin="247.9226" BottomMargin="5.0774" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                  <AbstractNodeData Name="item6" ActionTag="1125154198" Tag="225" IconVisible="True" LeftMargin="376.5495" RightMargin="3.4505" TopMargin="247.9226" BottomMargin="5.0774" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                     <Size X="180.0000" Y="227.0000" />
                     <AnchorPoint />
                     <Position X="376.5495" Y="5.0774" />
@@ -217,11 +217,11 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position X="17.3321" Y="90.8828" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0271" Y="0.0947" />
-            <PreSize X="0.9688" Y="0.8333" />
+            <PrePosition />
+            <PreSize X="1.0000" Y="1.0000" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
