@@ -188,6 +188,7 @@ var ShopLayerMenu = BattleMenu.extend({
                     Popup.openPopup("友情提示", "当前钻石不足", function (popup) {
                         popup.hiddenPopup();
                         //进入充值页面。
+                        RechargePanel.open();
                     });
                 } else if (price.unit === 'gold') {
                     Popup.openPopup("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
