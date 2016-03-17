@@ -61,13 +61,10 @@
           <PointFrame FrameIndex="54" X="-17.4447" Y="-5.5001">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="57" X="-17.2114" Y="-4.8501">
+          <PointFrame FrameIndex="57" X="-17.4447" Y="-5.5001">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="60" X="-14.8351" Y="-5.7715">
-            <EasingData Type="0" />
-          </PointFrame>
-          <PointFrame FrameIndex="63" X="-16.7089" Y="-5.0208">
+          <PointFrame FrameIndex="60" X="-15.4447" Y="-5.5001">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="64" X="0.0000" Y="0.0000">
@@ -150,9 +147,6 @@
           <TextureFrame FrameIndex="60" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="hero/hero102/hero102_stand03.png" Plist="hero102.plist" />
           </TextureFrame>
-          <TextureFrame FrameIndex="63" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="hero/hero102/hero102_stand04.png" Plist="hero102.plist" />
-          </TextureFrame>
           <TextureFrame FrameIndex="64" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="hero/hero102/hero102_dead01.png" Plist="hero102.plist" />
           </TextureFrame>
@@ -180,7 +174,7 @@
         <AnimationInfo Name="hit" StartIndex="39" EndIndex="51">
           <RenderColor A="255" R="176" G="224" B="230" />
         </AnimationInfo>
-        <AnimationInfo Name="stand" StartIndex="54" EndIndex="63">
+        <AnimationInfo Name="stand" StartIndex="54" EndIndex="60">
           <RenderColor A="255" R="244" G="164" B="96" />
         </AnimationInfo>
         <AnimationInfo Name="dead" StartIndex="64" EndIndex="65">
@@ -193,7 +187,7 @@
       <ObjectData Name="Node" Tag="3" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hero" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-56.3001" RightMargin="-26.6999" TopMargin="-108.5000" BottomMargin="-5.5000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="2020530987" Tag="7" IconVisible="False" LeftMargin="-53.8001" RightMargin="-24.1999" TopMargin="-106.5000" BottomMargin="-5.5000" ctype="SpriteObjectData">
             <Size X="83.0000" Y="114.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="-14.8001" Y="-5.5000" />

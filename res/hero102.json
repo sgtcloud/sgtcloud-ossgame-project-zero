@@ -184,8 +184,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -17.2114,
-                "Y": -4.8501,
+                "X": -17.4447,
+                "Y": -5.5001,
                 "FrameIndex": 57,
                 "EasingData": {
                   "Type": 0
@@ -193,18 +193,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -14.8351,
-                "Y": -5.7715,
+                "X": -15.4447,
+                "Y": -5.5001,
                 "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -16.7089,
-                "Y": -5.0208,
-                "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
                 },
@@ -475,16 +466,6 @@
               {
                 "TextureFile": {
                   "Type": "MarkedSubImage",
-                  "Path": "hero/hero102/hero102_stand04.png",
-                  "Plist": "hero102.plist"
-                },
-                "FrameIndex": 63,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
                   "Path": "hero/hero102/hero102_dead01.png",
                   "Plist": "hero102.plist"
                 },
@@ -559,7 +540,7 @@
         },
         {
           "StartIndex": 54,
-          "EndIndex": 63,
+          "EndIndex": 60,
           "Name": "stand",
           "ctype": "AnimationInfoData"
         },
@@ -610,9 +591,9 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -56.3001,
-            "RightMargin": -26.6999,
-            "TopMargin": -108.5,
+            "LeftMargin": -53.8001,
+            "RightMargin": -24.1999,
+            "TopMargin": -106.5,
             "BottomMargin": -5.5,
             "Tag": 7,
             "ActionTag": 2020530987,

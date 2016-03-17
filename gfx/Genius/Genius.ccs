@@ -532,8 +532,6 @@
             <Image Name="hero104_skill05.png" />
             <Image Name="hero104_stand01.png" />
             <Image Name="hero104_stand02.png" />
-            <Image Name="hero104_stand03.png" />
-            <Image Name="hero104_stand04.png" />
             <PlistImageFolder Image="hero104.png" PListFile="hero104.plist" Name=".hero104_PList.Dir">
               <PlistImageFile Name="hero_her0104_hero104_atk01.png" Key="hero/her0104/hero104_atk01.png" />
               <PlistImageFile Name="hero_her0104_hero104_atk02.png" Key="hero/her0104/hero104_atk02.png" />
