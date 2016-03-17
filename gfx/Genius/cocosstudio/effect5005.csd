@@ -83,11 +83,11 @@
             <Size X="270.0000" Y="233.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position />
-            <Scale ScaleX="0.9000" ScaleY="0.9000" />
+            <Scale ScaleX="0.8000" ScaleY="0.8000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="effect/effect5005/effect5005_01.png" Plist="effect5005.plist" />
+            <FileData Type="MarkedSubImage" Path="effect/effect5005/effect5005_18.png" Plist="effect5005.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

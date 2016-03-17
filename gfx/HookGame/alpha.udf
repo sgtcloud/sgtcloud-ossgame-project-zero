@@ -36,8 +36,11 @@
           <FilePathData Path="SettlementLayer.csd" />
           <FilePathData Path="RechargeLayer.csd" />
           <FilePathData Path="MaillLayer.csd" />
+          <FilePathData Path="RankView.csd" />
+          <FilePathData Path="RechargeIconLayer.csd" />
+          <FilePathData Path="RankLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="BattleLayer.csd" />
+        <ActiveDocument Path="RankLayer.csd" />
       </Value>
     </Item>
   </Properties>
