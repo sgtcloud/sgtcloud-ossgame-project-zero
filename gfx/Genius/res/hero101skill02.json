@@ -1195,7 +1195,14 @@
         ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 33,
+          "Name": "show",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 21,
         "Children": [
@@ -1291,15 +1298,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -2500.0,
-            "RightMargin": -2500.0,
-            "TopMargin": -1193.0,
+            "LeftMargin": -20.0,
+            "RightMargin": -20.0,
+            "TopMargin": -341.0,
             "BottomMargin": 300.0,
             "Tag": 11,
             "ActionTag": -1595571430,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "boom",
             "ctype": "SpriteObjectData"
@@ -1334,14 +1341,14 @@
               "Y": 0.0
             },
             "LeftMargin": -298.8,
-            "RightMargin": -4701.2002,
-            "TopMargin": -906.05,
+            "RightMargin": 258.8,
+            "TopMargin": -54.05,
             "BottomMargin": 13.05,
             "Tag": 12,
             "ActionTag": -1150105529,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "hero",
             "ctype": "SpriteObjectData"
@@ -1378,15 +1385,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -2295.0,
-            "RightMargin": -2705.0,
-            "TopMargin": -547.4963,
-            "BottomMargin": -345.5037,
+            "LeftMargin": 184.9999,
+            "RightMargin": -224.9999,
+            "TopMargin": -121.4963,
+            "BottomMargin": 80.4963,
             "Tag": 14,
             "ActionTag": -1236846660,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "wind",
             "ctype": "SpriteObjectData"
@@ -1423,15 +1430,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -2435.0,
-            "RightMargin": -2565.0,
-            "TopMargin": -511.5,
-            "BottomMargin": -381.5,
+            "LeftMargin": 45.0,
+            "RightMargin": -85.0,
+            "TopMargin": -85.5,
+            "BottomMargin": 44.5,
             "Tag": 13,
             "ActionTag": -1520161585,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "word",
             "ctype": "SpriteObjectData"

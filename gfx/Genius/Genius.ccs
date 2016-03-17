@@ -778,6 +778,106 @@
             <Image Name="effect5005_18.png" />
             <Image Name="effect5005_19.png" />
           </Folder>
+          <Folder Name="effect5006">
+            <Image Name="gold01.png" />
+            <Image Name="gold02.png" />
+            <Image Name="gold03.png" />
+            <Image Name="gold04.png" />
+            <Image Name="gold05.png" />
+            <Image Name="gold06.png" />
+            <Image Name="gold07.png" />
+            <Image Name="gold08.png" />
+            <Image Name="gold09.png" />
+            <Image Name="gold10.png" />
+            <Image Name="gold11.png" />
+            <Image Name="gold12.png" />
+            <Image Name="gold13.png" />
+            <Image Name="gold14.png" />
+            <Image Name="gold15.png" />
+            <Image Name="gold16.png" />
+            <Image Name="gold17.png" />
+          </Folder>
+          <Folder Name="effect5007">
+            <Image Name="atk01.png" />
+            <Image Name="atk02.png" />
+            <Image Name="atk03.png" />
+            <Image Name="atk04.png" />
+            <Image Name="atk05.png" />
+            <Image Name="atk06.png" />
+            <Image Name="atk07.png" />
+            <Image Name="atk08.png" />
+            <Image Name="atk09.png" />
+            <Image Name="atk10.png" />
+            <Image Name="atk11.png" />
+            <Image Name="atk12.png" />
+            <Image Name="atk13.png" />
+            <Image Name="atk14.png" />
+            <Image Name="atk15.png" />
+            <Image Name="atk16.png" />
+          </Folder>
+          <Folder Name="effect5008">
+            <Image Name="tap01.png" />
+            <Image Name="tap02.png" />
+            <Image Name="tap03.png" />
+            <Image Name="tap04.png" />
+            <Image Name="tap05.png" />
+            <Image Name="tap06.png" />
+            <Image Name="tap07.png" />
+            <Image Name="tap08.png" />
+            <Image Name="tap09.png" />
+            <Image Name="tap10.png" />
+            <Image Name="tap11.png" />
+            <Image Name="tap12.png" />
+            <Image Name="tap13.png" />
+            <Image Name="tap14.png" />
+            <Image Name="tap15.png" />
+            <Image Name="tap16.png" />
+            <Image Name="tap17.png" />
+            <Image Name="tap18.png" />
+          </Folder>
+          <Folder Name="effect5009">
+            <Image Name="change01.png" />
+            <Image Name="change02.png" />
+            <Image Name="change03.png" />
+            <Image Name="change04.png" />
+            <Image Name="change05.png" />
+            <Image Name="change06.png" />
+            <Image Name="change07.png" />
+            <Image Name="change08.png" />
+            <Image Name="change09.png" />
+            <Image Name="change10.png" />
+            <Image Name="change11.png" />
+            <Image Name="change12.png" />
+            <Image Name="change13.png" />
+            <Image Name="change14.png" />
+            <Image Name="change15.png" />
+            <Image Name="change16.png" />
+            <Image Name="change17.png" />
+            <Image Name="change18.png" />
+            <Image Name="change19.png" />
+            <Image Name="change20.png" />
+            <Image Name="change21.png" />
+            <Image Name="change22.png" />
+          </Folder>
+          <Folder Name="effect5010">
+            <Image Name="fire01.png" />
+            <Image Name="fire02.png" />
+            <Image Name="fire03.png" />
+            <Image Name="fire04.png" />
+            <Image Name="fire05.png" />
+            <Image Name="fire06.png" />
+            <Image Name="fire07.png" />
+            <Image Name="fire08.png" />
+            <Image Name="fire09.png" />
+            <Image Name="fire10.png" />
+            <Image Name="fire11.png" />
+            <Image Name="fire12.png" />
+            <Image Name="fire13.png" />
+            <Image Name="fire14.png" />
+            <Image Name="fire15.png" />
+            <Image Name="fire16.png" />
+            <Image Name="fire17.png" />
+          </Folder>
         </Folder>
         <Folder Name="gold">
           <Folder Name="gold01">
@@ -1166,8 +1266,8 @@
           <Image Name="shine00.png" />
           <Image Name="bg.png" />
         </Folder>
-        <Project Name="hero102skill01.csd" Type="Node" />
-        <Folder Name="hero102skill01">
+        <Project Name="hero102skill02.csd" Type="Node" />
+        <Folder Name="hero102skill02">
           <Image Name="fly01.png" />
           <Image Name="fly02.png" />
           <Image Name="fly03.png" />
@@ -1271,7 +1371,7 @@
           <Image Name="word03.png" />
           <Image Name="word04.png" />
         </Folder>
-        <Folder Name="hero104skill01">
+        <Folder Name="hero104skill02">
           <Image Name="boom01.png" />
           <Image Name="boom02.png" />
           <Image Name="boom03.png" />
@@ -1310,7 +1410,13 @@
           <Image Name="zi02.png" />
           <Image Name="zi03.png" />
         </Folder>
-        <Project Name="hero104skill01.csd" Type="Node" />
+        <Project Name="hero104skill02.csd" Type="Node" />
+        <Project Name="effect5006.csd" Type="Node" />
+        <Folder Name="111" />
+        <Project Name="effect5007.csd" Type="Node" />
+        <Project Name="effect5008.csd" Type="Node" />
+        <Project Name="effect5009.csd" Type="Node" />
+        <Project Name="effect5010.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -1,0 +1,289 @@
+{
+  "ID": "07def18c-f24b-43ca-9eb9-a8a8747912c5",
+  "Version": "2.3.3.0",
+  "Name": "effect5008",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 17,
+        "Speed": 0.3333,
+        "Timelines": [
+          {
+            "ActionTag": -1696996186,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 1,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 2,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 4,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap06.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap07.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap08.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap09.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 8,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap10.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap11.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap12.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 11,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap13.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap14.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 13,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap15.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 14,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap16.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap17.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 16,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "effect/effect5008/tap18.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 17,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 17,
+          "Name": "boom",
+          "ctype": "AnimationInfoData"
+        }
+      ],
+      "ObjectData": {
+        "Tag": 98,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "effect/effect5008/tap01.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -5.0,
+              "Y": 100.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -84.5,
+            "RightMargin": -74.5,
+            "TopMargin": -217.0,
+            "BottomMargin": -17.0,
+            "Tag": 99,
+            "ActionTag": -1696996186,
+            "Size": {
+              "X": 159.0,
+              "Y": 234.0
+            },
+            "Name": "effect5008",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "effect/effect5008/tap01.png",
+        "effect/effect5008/tap02.png",
+        "effect/effect5008/tap03.png",
+        "effect/effect5008/tap04.png",
+        "effect/effect5008/tap05.png",
+        "effect/effect5008/tap06.png",
+        "effect/effect5008/tap07.png",
+        "effect/effect5008/tap08.png",
+        "effect/effect5008/tap09.png",
+        "effect/effect5008/tap10.png",
+        "effect/effect5008/tap11.png",
+        "effect/effect5008/tap12.png",
+        "effect/effect5008/tap13.png",
+        "effect/effect5008/tap14.png",
+        "effect/effect5008/tap15.png",
+        "effect/effect5008/tap16.png",
+        "effect/effect5008/tap17.png",
+        "effect/effect5008/tap18.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

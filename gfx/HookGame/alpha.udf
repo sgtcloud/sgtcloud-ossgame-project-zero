@@ -51,8 +51,9 @@
           <FilePathData Path="EquipHeroView.csd" />
           <FilePathData Path="Equiplayer.csd" />
           <FilePathData Path="Btn_Recast.csd" />
+          <FilePathData Path="MaillLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="PVPOpponentView.csd" />
+        <ActiveDocument Path="MaillLayer.csd" />
       </Value>
     </Item>
   </Properties>

@@ -370,6 +370,11 @@
           <BlendFuncFrame FrameIndex="0" Tween="False" Src="770" Dst="771" />
         </Timeline>
       </Animation>
+      <AnimationList>
+        <AnimationInfo Name="show" StartIndex="0" EndIndex="33">
+          <RenderColor A="150" R="176" G="196" B="222" />
+        </AnimationInfo>
+      </AnimationList>
       <ObjectData Name="Node" Tag="21" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
@@ -387,8 +392,8 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="boom" ActionTag="-1595571430" Tag="11" IconVisible="False" LeftMargin="-2500.0000" RightMargin="-2500.0000" TopMargin="-1193.0000" BottomMargin="300.0000" ctype="SpriteObjectData">
-            <Size X="5000.0000" Y="893.0000" />
+          <AbstractNodeData Name="boom" ActionTag="-1595571430" Tag="11" IconVisible="False" LeftMargin="-20.0000" RightMargin="-20.0000" TopMargin="-341.0000" BottomMargin="300.0000" ctype="SpriteObjectData">
+            <Size X="40.0000" Y="41.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position Y="300.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -398,8 +403,8 @@
             <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hero" ActionTag="-1150105529" Tag="12" IconVisible="False" LeftMargin="-298.8000" RightMargin="-4701.2002" TopMargin="-906.0500" BottomMargin="13.0500" ctype="SpriteObjectData">
-            <Size X="5000.0000" Y="893.0000" />
+          <AbstractNodeData Name="hero" ActionTag="-1150105529" Tag="12" IconVisible="False" LeftMargin="-298.8000" RightMargin="258.8000" TopMargin="-54.0500" BottomMargin="13.0500" ctype="SpriteObjectData">
+            <Size X="40.0000" Y="41.0000" />
             <AnchorPoint />
             <Position X="-298.8000" Y="13.0500" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -409,8 +414,8 @@
             <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="wind" ActionTag="-1236846660" Tag="14" IconVisible="False" LeftMargin="-2295.0000" RightMargin="-2705.0000" TopMargin="-547.4963" BottomMargin="-345.5037" ctype="SpriteObjectData">
-            <Size X="5000.0000" Y="893.0000" />
+          <AbstractNodeData Name="wind" ActionTag="-1236846660" Tag="14" IconVisible="False" LeftMargin="184.9999" RightMargin="-224.9999" TopMargin="-121.4963" BottomMargin="80.4963" ctype="SpriteObjectData">
+            <Size X="40.0000" Y="41.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="204.9999" Y="100.9963" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -420,8 +425,8 @@
             <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="word" ActionTag="-1520161585" Tag="13" IconVisible="False" LeftMargin="-2435.0000" RightMargin="-2565.0000" TopMargin="-511.5000" BottomMargin="-381.5000" ctype="SpriteObjectData">
-            <Size X="5000.0000" Y="893.0000" />
+          <AbstractNodeData Name="word" ActionTag="-1520161585" Tag="13" IconVisible="False" LeftMargin="45.0000" RightMargin="-85.0000" TopMargin="-85.5000" BottomMargin="44.5000" ctype="SpriteObjectData">
+            <Size X="40.0000" Y="41.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="65.0000" Y="65.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />

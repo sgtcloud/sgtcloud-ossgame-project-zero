@@ -446,7 +446,7 @@
         </Timeline>
       </Animation>
       <AnimationList>
-        <AnimationInfo Name="boom" StartIndex="0" EndIndex="29">
+        <AnimationInfo Name="boom" StartIndex="0" EndIndex="26">
           <RenderColor A="255" R="220" G="20" B="60" />
         </AnimationInfo>
       </AnimationList>
