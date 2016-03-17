@@ -26,6 +26,8 @@ var CONSTS = {
     "flySpirit_interval_time": 180,
     "arena_challenge_times": 5,
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 5},
+    "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
+    "monthCard_daily_bonus":{"unit":"gem","value":100},
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
@@ -238,6 +240,92 @@ var CONSTS = {
             },
             "w": 2
         }
+    ],
+    "chargePoints":[
+        {
+            "id": 1,
+            "type": "mCard",
+            "description": "描述",
+            "name": "月卡",
+            "money": 1,
+            "amount": 0,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 0,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 2,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 1,
+            "amount": 60,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 180,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 3,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 1,
+            "amount": 500,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 1500,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 4,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 1,
+            "amount": 980,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 2940,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 5,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 1,
+            "amount": 2580,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 7740,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        },
+        {
+            "id": 6,
+            "type": "gem",
+            "description": "描述",
+            "name": "钻石",
+            "money": 1,
+            "amount": 5180,
+            "timesLimit": -1,
+            "extraAmount": 0,
+            "firstChargeRewardAmount": 15540,
+            "recommendation": 0,
+            "status": 1,
+            "vipScore": 0
+        }
     ]
 };
 
@@ -273,6 +361,27 @@ Date.prototype.Format = function (fmt) { //author: meizz
         if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
 }
+
+function getDays(dateStartTimeStramp,dateEndTimeStramp){
+
+    var dateStart = new Date();
+    dateStart.setTime(dateStartTimeStramp);
+    var dateEnd = new Date();
+    dateEnd.setTime(dateEndTimeStramp);
+    var strDateStart = dateStart.Format("yyyy-MM-dd");
+    var strDateEnd =  dateEnd.Format("yyyy-MM-dd");
+    var strSeparator = "-"; //日期分隔符
+    var oDate1;
+    var oDate2;
+    var iDays;
+    oDate1= strDateStart.split(strSeparator);
+    oDate2= strDateEnd.split(strSeparator);
+    var strDateS = new Date(oDate1[0], oDate1[1]-1, oDate1[2]);
+    var strDateE = new Date(oDate2[0], oDate2[1]-1, oDate2[2]);
+    iDays = parseInt(Math.abs(strDateS - strDateE ) / 1000 / 60 / 60 /24)//把相差的毫秒数转换为天数
+    return iDays ;
+}
+
 function initGame() {
     PlayerData.init();
     game = new MainScene();
@@ -332,9 +441,9 @@ function showCover() {
         //获取角色未删除邮件数据
         NetWork.getReadedAndUnreadedMails();
         //轮询获取最新未读取邮件
-        setInterval(function () {
+        setInterval(function(){
             NetWork.updatePlayerMails(10 * 1000);
-        }, 10 * 1000);
+        },10  *1000);
     });
     cc.director.runScene(scene);
 }

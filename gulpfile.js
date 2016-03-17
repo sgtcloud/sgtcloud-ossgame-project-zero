@@ -5,8 +5,6 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var image = require('gulp-image');
-/*var imagemin = require('gulp-imagemin');
- var pngquant = require('imagemin-pngquant');*/
 var cache = require('gulp-cache');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -38,12 +36,12 @@ gulp.task('compileJs', ['clean'], function () {
 
     return gulp.src(sourceCodeList)
         .pipe(debug({title: 'src:'}))
+        .pipe(sourcemaps.init())
         .pipe(concat('game.js'))
-        //.pipe(buffer())
-        //.pipe(sourcemaps.init({loadMaps: true}))
         .pipe(gulp.dest(DEST))
         .pipe(uglify())
         .pipe(rename('game.min.js'))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(DEST));
 });
 
@@ -71,20 +69,6 @@ gulp.task('copyConf', ['clean'], function () {
         }))
         .pipe(gulp.dest(DEST));
 });
-
-/*
- gulp.task('image', function () {
- return gulp.src('res/!**!/!*.png')
- .pipe(debug({title: 'img:'}))
- .pipe(cache(imagemin({
- optimizationLevel: 7,
- use: [pngquant({quality: '60-80', speed: 1})]
- })))
- .pipe(debug({title: 'img:'}))
- .pipe(gulp.dest(DEST + 'res'));
- });
- */
-
 
 gulp.task('image', ['clean'], function () {
     return gulp.src('res/**')

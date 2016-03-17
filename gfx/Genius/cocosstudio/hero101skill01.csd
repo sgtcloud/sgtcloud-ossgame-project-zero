@@ -289,6 +289,11 @@
           </TextureFrame>
         </Timeline>
       </Animation>
+      <AnimationList>
+        <AnimationInfo Name="show" StartIndex="0" EndIndex="27">
+          <RenderColor A="150" R="189" G="183" B="107" />
+        </AnimationInfo>
+      </AnimationList>
       <ObjectData Name="Node" Tag="8" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
@@ -306,8 +311,8 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="fire" ActionTag="1293825758" Tag="7" IconVisible="False" LeftMargin="-2410.0000" RightMargin="-2590.0000" TopMargin="-893.0000" ctype="SpriteObjectData">
-            <Size X="5000.0000" Y="893.0000" />
+          <AbstractNodeData Name="fire" ActionTag="1293825758" Tag="7" IconVisible="False" LeftMargin="70.0000" RightMargin="-110.0000" TopMargin="-41.0000" ctype="SpriteObjectData">
+            <Size X="40.0000" Y="41.0000" />
             <AnchorPoint ScaleX="0.5000" />
             <Position X="90.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />

@@ -90,7 +90,7 @@
                 <PreSize X="0.2356" Y="0.1926" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white22-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="-902477182" Tag="135" IconVisible="False" LeftMargin="430.4799" RightMargin="19.5201" TopMargin="26.7457" BottomMargin="28.2543" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="-902477182" Tag="135" IconVisible="False" LeftMargin="430.4799" RightMargin="19.5201" TopMargin="26.7457" BottomMargin="28.2543" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <Children>
                   <AbstractNodeData Name="btn" ActionTag="-879448600" Tag="33" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -108,13 +108,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="pvp" ActionTag="350682911" Tag="34" IconVisible="False" LeftMargin="43.5786" RightMargin="40.4214" TopMargin="10.6592" BottomMargin="10.3408" Scale9Width="56" Scale9Height="59" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="pvp" ActionTag="350682911" Tag="34" IconVisible="False" LeftMargin="45.5786" RightMargin="38.4214" TopMargin="10.6592" BottomMargin="10.3408" Scale9Width="56" Scale9Height="59" ctype="ImageViewObjectData">
                     <Size X="56.0000" Y="59.0000" />
                     <AnchorPoint />
-                    <Position X="43.5786" Y="10.3408" />
+                    <Position X="45.5786" Y="10.3408" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3113" Y="0.1293" />
+                    <PrePosition X="0.3256" Y="0.1293" />
                     <PreSize X="0.4000" Y="0.7375" />
                     <FileData Type="MarkedSubImage" Path="PVPUI/pvp.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>

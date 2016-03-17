@@ -329,6 +329,7 @@ var SkillListMenu = BattleMenu.extend({
                         skillBtn.showCooldown();
                     }
                 }
+                skillBtn.root.setName('skill_btn');
                 this.skillBtns.push(skillBtn);
             }
         }

@@ -284,6 +284,7 @@
     "buffDesc": "无",
     "icon": "s10001.png",
     "type": 1,
+    "preShow": "hero101skill01.json",
     "levelDatas": [
       {
         "level": 0,
@@ -377,6 +378,7 @@
     "buffDesc": "无",
     "icon": "s10002.png",
     "type": 1,
+    "preShow": "hero101skill02.json",
     "levelDatas": [
       {
         "level": 0,
@@ -842,6 +844,7 @@
     "buffDesc": "持续伤害{effect1_value}点",
     "icon": "s10004.png",
     "type": 1,
+    "preShow": "hero102skill01.json",
     "levelDatas": [
       {
         "level": 0,
@@ -1214,6 +1217,7 @@
     "buffDesc": "无",
     "icon": "s10005.png",
     "type": 1,
+    "preShow": "hero103skill01.json",
     "levelDatas": [
       {
         "level": 0,
@@ -1772,6 +1776,7 @@
     "buffDesc": "无",
     "icon": "s10008.png",
     "type": 1,
+    "preShow": "hero104skill01.json",
     "levelDatas": [
       {
         "level": 0,

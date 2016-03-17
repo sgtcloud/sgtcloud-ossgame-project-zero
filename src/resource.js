@@ -106,6 +106,14 @@ var res = {
     maill_layer_json: 'res/MaillLayer.json',
     pvp_layer_json:'res/PVPLayer.json',
     pvp_opponent_view_json:'res/PVPOpponentView.json'
+    recharge_icon_layer_json: 'res/RechargeIconLayer.json',
+    recharge_layer_json: 'res/RechargeLayer.json',
+
+    hero101skill: 'res/hero101skill01.json',
+
+    guideMsgBox: 'res/Guide.json',
+    guideGirl: 'res/GuideGirl.json',
+    guideHand: 'res/GuideHand.json'
 };
 
 

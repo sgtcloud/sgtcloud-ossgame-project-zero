@@ -523,7 +523,7 @@
               "X": 600.0,
               "Y": 600.0
             },
-            "Name": "moneyTree_tab",
+            "Name": "moneyTree",
             "ctype": "PanelObjectData"
           },
           {
@@ -662,7 +662,7 @@
               "X": 600.0,
               "Y": 600.0
             },
-            "Name": "shop_tab",
+            "Name": "shop",
             "ctype": "PanelObjectData"
           }
         ],

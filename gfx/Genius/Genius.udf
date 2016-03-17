@@ -28,18 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="effect5000.csd" />
-          <FilePathData Path="effect5001.csd" />
-          <FilePathData Path="effect5002.csd" />
-          <FilePathData Path="effect5003.csd" />
-          <FilePathData Path="effect5004.csd" />
-          <FilePathData Path="effect5005.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="effect5000.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

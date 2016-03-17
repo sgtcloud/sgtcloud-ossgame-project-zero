@@ -93,6 +93,18 @@ var SpriteGroup = function (_sprites) {
         }
         return deadHeroNum === sprites.length;
     };
+
+    this.pause = function () {
+        for (var i in sprites) {
+            sprites[i].pause();
+        }
+    };
+
+    this.resume = function () {
+        for (var i in sprites) {
+            sprites[i].resume();
+        }
+    };
     this.findLowestHpUnit = function () {
         var lowestHpUnit = null;
         var hp = 0;
@@ -178,9 +190,29 @@ var BattleField = cc.Class.extend({
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
 
+        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, function () {
+            this.pauseAllSprites();
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, function () {
+            this.resumeAllSprites();
+        }.bind(this));
+
+
         customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
         customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
         customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
+    },
+
+    pauseAllSprites: function () {
+        this.container.pause();
+        this.heroUnits.pause();
+        this.enemyUnits.pause();
+    },
+
+    resumeAllSprites: function () {
+        this.container.resume();
+        this.heroUnits.resume();
+        this.enemyUnits.resume();
     },
 
     useItem: function (item) {
@@ -313,8 +345,6 @@ var BattleField = cc.Class.extend({
     },
 
     initBattleEnemies: function (stage) {
-
-        this.enemyUnits.clear();
         var enemiesData;
         if (stage.isBossBattle()) {
             enemiesData = stage.getBossData();
@@ -325,12 +355,14 @@ var BattleField = cc.Class.extend({
     },
 
     addEnemyIntoBattle: function (enemiesData, bossBattle) {
+        this.enemyUnits.clear();
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             var enemy = new EnemyUnit(this, data);
             if (bossBattle) {
                 enemy.setScale(-1.5, 1.5);
             }
+            enemy.setName('enemy');
             this.enemyUnits.push(enemy);
             var startPos = cc.p(this.container.width, this.container.height * 3 / 4);
             enemy.setPosition(startPos);
@@ -372,6 +404,7 @@ var BattleField = cc.Class.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
+        PlayerData.countPlayerMCardReward();
         this.prepareBattle(stage);
     },
 
