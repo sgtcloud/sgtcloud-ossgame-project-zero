@@ -547,7 +547,25 @@
                 "ctype": "PointFrameData"
               },
               {
+                "X": 120.0,
+                "Y": 181.91,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
                 "X": 80.0,
+                "Y": 181.91,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 40.0,
                 "Y": 181.91,
                 "FrameIndex": 3,
                 "EasingData": {
@@ -558,7 +576,34 @@
               {
                 "X": 0.0,
                 "Y": 181.91,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -40.0,
+                "Y": 181.91,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -80.0,
+                "Y": 181.91,
                 "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -120.0,
+                "Y": 181.91,
+                "FrameIndex": 7,
                 "EasingData": {
                   "Type": 0
                 },
@@ -567,7 +612,34 @@
               {
                 "X": -160.0,
                 "Y": 181.91,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -200.0,
+                "Y": 181.91,
                 "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -240.0,
+                "Y": 181.91,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -280.0,
+                "Y": 181.91,
+                "FrameIndex": 11,
                 "EasingData": {
                   "Type": 0
                 },
@@ -650,7 +722,47 @@
                   "Path": "hero101skill01/hero01.png",
                   "Plist": ""
                 },
+                "FrameIndex": 1,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 2,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
                 "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 4,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 5,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -670,7 +782,47 @@
                   "Path": "hero101skill01/hero01.png",
                   "Plist": ""
                 },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 8,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
                 "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 11,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -744,7 +896,79 @@
               {
                 "X": 0.0,
                 "Y": 0.5,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 7,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
                 "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 11,
                 "EasingData": {
                   "Type": 0
                 },
@@ -1035,7 +1259,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 160.0,
+              "X": -280.0,
               "Y": 181.91
             },
             "Scale": {
@@ -1052,8 +1276,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 160.0,
-            "RightMargin": -397.0,
+            "LeftMargin": -280.0,
+            "RightMargin": 43.0,
             "TopMargin": -349.91,
             "BottomMargin": 13.91,
             "Tag": 15,
@@ -1068,7 +1292,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/fire00.png",
+              "Path": "hero101skill01/fire03.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1081,7 +1305,7 @@
             },
             "Position": {
               "X": 90.0,
-              "Y": 450.0
+              "Y": 100.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1099,8 +1323,8 @@
             },
             "LeftMargin": -119.5,
             "RightMargin": -299.5,
-            "TopMargin": -539.0,
-            "BottomMargin": 361.0,
+            "TopMargin": -189.0,
+            "BottomMargin": 11.0,
             "Tag": 19,
             "ActionTag": -1256903318,
             "Size": {

@@ -134,6 +134,20 @@
                     <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/stageTab_2.png" Plist="RankUI.plist" />
                     <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="pvp_tab" ActionTag="-1944413093" CallBackType="Touch" Tag="282" IconVisible="False" LeftMargin="308.5818" RightMargin="-148.5818" TopMargin="0.0400" BottomMargin="-0.0400" TouchEnable="True" ctype="CheckBoxObjectData">
+                    <Size X="160.0000" Y="55.0000" />
+                    <AnchorPoint />
+                    <Position X="308.5818" Y="-0.0400" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.9643" Y="-0.0007" />
+                    <PreSize X="0.5000" Y="1.0000" />
+                    <NormalBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <PressedBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <DisableBackFileData Type="MarkedSubImage" Path="rankUI/pvpTab_1.png" Plist="RankUI.plist" />
+                    <NodeNormalFileData Type="MarkedSubImage" Path="rankUI/pvpTab_2.png" Plist="RankUI.plist" />
+                    <NodeDisableFileData Type="Normal" Path="mainUI/empty.png" Plist="" />
+                  </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
                 <Position X="35.0000" Y="610.0000" />
