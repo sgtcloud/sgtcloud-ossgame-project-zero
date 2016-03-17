@@ -147,7 +147,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 setFont(itemLayer.getChildByName("item_name"));
                 var res1 = itemLayer.getChildByName("res");
 
-                var icon = res1.getChildByName("icon")
+                var icon = res1.getChildByName("icon");
                 icon.loadTexture("res/icon/resources_small/" + datas.price.unit + ".png");
                 icon.setVisible(true);
                 var resSaleText = res1.getChildByName("sale_text");
