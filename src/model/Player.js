@@ -364,10 +364,9 @@ var PlayerData = {
     countPlayerMCardReward: function () {
         //判断是否有月卡
         if (player.month_card_end_time) {
-
             //判断月卡有效性
             if (getDays(player.into_stage_battle_timestamp, player.month_card_end_time) > 0) {
-                var days = getDays(player.month_card_end_time, this.serverCurrentTime);
+                var days = getDays(player.into_stage_battle_timestamp, this.serverCurrentTime);
                 //判断是否可领取
                 if (days > 0) {
                     //发送邮件

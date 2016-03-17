@@ -93,7 +93,7 @@ var MailPanel = cc.Node.extend({
                 return "";
             }
         } else {
-            descText = CONSTS.resources_mapping[rewards[i]['unit']] + " * " + rewards[i]['value'];
+            descText = CONSTS.resources_mapping[rewards['unit']] + " * " + rewards['value'];
         }
         return descText;
     },
