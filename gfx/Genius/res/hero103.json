@@ -563,7 +563,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero103/hero103_atk01.png",
+              "Path": "hero/hero103/hero103_stand04.png",
               "Plist": "hero103.plist"
             },
             "BlendFunc": {
@@ -574,8 +574,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -26.5338,
-              "Y": -13.9781
+              "X": -25.7729,
+              "Y": -14.4201
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -591,10 +591,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -80.0338,
-            "RightMargin": -26.9662,
-            "TopMargin": -82.0219,
-            "BottomMargin": -13.9781,
+            "LeftMargin": -79.2729,
+            "RightMargin": -27.7271,
+            "TopMargin": -81.5799,
+            "BottomMargin": -14.4201,
             "Tag": 8,
             "ActionTag": 2044631140,
             "Size": {

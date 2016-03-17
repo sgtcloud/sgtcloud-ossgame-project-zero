@@ -1002,7 +1002,14 @@
         ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 30,
+          "Name": "show",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 11,
         "Children": [
@@ -1070,7 +1077,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero103skill01/fly09.png",
+              "Path": "shine/shine00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1083,7 +1090,7 @@
             },
             "Position": {
               "X": 90.0,
-              "Y": 190.0
+              "Y": 190.7386
             },
             "Scale": {
               "ScaleX": 1.2,
@@ -1099,15 +1106,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -80.5,
-            "RightMargin": -260.5,
-            "TopMargin": -300.0,
-            "BottomMargin": 80.0,
+            "LeftMargin": 70.0,
+            "RightMargin": -110.0,
+            "TopMargin": -211.2386,
+            "BottomMargin": 170.2386,
             "Tag": 20,
             "ActionTag": 360492054,
             "Size": {
-              "X": 341.0,
-              "Y": 220.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "fly",
             "ctype": "SpriteObjectData"
@@ -1115,7 +1122,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero103skill01/hero04.png",
+              "Path": "hero103skill01/hero01.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1124,8 +1131,8 @@
             },
             "AnchorPoint": {},
             "Position": {
-              "X": -23.0,
-              "Y": 3.0
+              "X": -3.0,
+              "Y": 90.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1141,14 +1148,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -23.0,
-            "RightMargin": -332.0,
-            "TopMargin": -391.0,
-            "BottomMargin": 3.0,
+            "LeftMargin": -3.0,
+            "RightMargin": -320.0,
+            "TopMargin": -478.0,
+            "BottomMargin": 90.0,
             "Tag": 19,
             "ActionTag": 603313371,
             "Size": {
-              "X": 355.0,
+              "X": 323.0,
               "Y": 388.0
             },
             "Name": "hero",
@@ -1186,15 +1193,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -2514.8928,
-            "RightMargin": -2485.1072,
-            "TopMargin": -620.8267,
-            "BottomMargin": -272.1733,
+            "LeftMargin": -34.8929,
+            "RightMargin": -5.1071,
+            "TopMargin": -194.8267,
+            "BottomMargin": 153.8267,
             "Tag": 22,
             "ActionTag": 341312081,
             "Size": {
-              "X": 5000.0,
-              "Y": 893.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "book",
             "ctype": "SpriteObjectData"
@@ -1202,7 +1209,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero103skill01/eye10.png",
+              "Path": "shine/shine00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1215,7 +1222,7 @@
             },
             "Position": {
               "X": -176.0776,
-              "Y": 153.3029
+              "Y": 240.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1231,15 +1238,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -288.5776,
-            "RightMargin": 63.5776,
-            "TopMargin": -244.3029,
-            "BottomMargin": 62.3029,
+            "LeftMargin": -196.0776,
+            "RightMargin": 156.0776,
+            "TopMargin": -260.5,
+            "BottomMargin": 219.5,
             "Tag": 23,
             "ActionTag": 1618569222,
             "Size": {
-              "X": 225.0,
-              "Y": 182.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "eye",
             "ctype": "SpriteObjectData"
@@ -1247,7 +1254,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero103skill01/word04.png",
+              "Path": "shine/shine00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1276,15 +1283,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -373.328,
-            "RightMargin": -17.672,
-            "TopMargin": -123.8135,
-            "BottomMargin": -15.1865,
+            "LeftMargin": -197.828,
+            "RightMargin": 157.828,
+            "TopMargin": -74.8135,
+            "BottomMargin": 33.8135,
             "Tag": 24,
             "ActionTag": -868887323,
             "Size": {
-              "X": 391.0,
-              "Y": 139.0
+              "X": 40.0,
+              "Y": 41.0
             },
             "Name": "word",
             "ctype": "SpriteObjectData"

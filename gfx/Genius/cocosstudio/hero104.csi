@@ -27,8 +27,6 @@
       <FilePathData Path="hero/hero104/hero104_skill05.png" />
       <FilePathData Path="hero/hero104/hero104_stand01.png" />
       <FilePathData Path="hero/hero104/hero104_stand02.png" />
-      <FilePathData Path="hero/hero104/hero104_stand03.png" />
-      <FilePathData Path="hero/hero104/hero104_stand04.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
