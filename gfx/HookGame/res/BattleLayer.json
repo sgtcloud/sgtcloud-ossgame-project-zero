@@ -90,74 +90,6 @@
                 },
                 "BottomMargin": 240.0,
                 "Tag": 54,
-                "Children": [
-                  {
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 160.0,
-                      "Y": 195.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.25,
-                      "Y": 0.39
-                    },
-                    "PreSize": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "LeftMargin": 160.0,
-                    "RightMargin": 480.0,
-                    "TopMargin": 305.0,
-                    "BottomMargin": 195.0,
-                    "Tag": 120,
-                    "ActionTag": -435100580,
-                    "Size": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Name": "hero_center",
-                    "ctype": "SingleNodeObjectData"
-                  },
-                  {
-                    "AnchorPoint": {},
-                    "Position": {
-                      "X": 470.0,
-                      "Y": 195.0
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": true,
-                    "PrePosition": {
-                      "X": 0.7344,
-                      "Y": 0.39
-                    },
-                    "PreSize": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "LeftMargin": 470.0,
-                    "RightMargin": 170.0,
-                    "TopMargin": 305.0,
-                    "BottomMargin": 195.0,
-                    "Tag": 121,
-                    "ActionTag": -1249781952,
-                    "Size": {
-                      "X": 0.0,
-                      "Y": 0.0
-                    },
-                    "Name": "enemy_center",
-                    "ctype": "SingleNodeObjectData"
-                  }
-                ],
                 "ActionTag": 1082551047,
                 "Size": {
                   "X": 640.0,
@@ -191,6 +123,72 @@
                 "BottomMargin": 240.0,
                 "Tag": 151,
                 "Children": [
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 160.0,
+                      "Y": 195.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 160.0,
+                    "RightMargin": -160.0,
+                    "TopMargin": -195.0,
+                    "BottomMargin": 195.0,
+                    "Tag": 120,
+                    "ActionTag": -435100580,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero_center",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 470.0,
+                      "Y": 195.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 470.0,
+                    "RightMargin": -470.0,
+                    "TopMargin": -195.0,
+                    "BottomMargin": 195.0,
+                    "Tag": 121,
+                    "ActionTag": -1249781952,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy_center",
+                    "ctype": "SingleNodeObjectData"
+                  },
                   {
                     "AnchorPoint": {},
                     "Position": {
@@ -856,7 +854,7 @@
                   "Y": 0.9744
                 },
                 "PreSize": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0297
                 },
                 "LeftMargin": 313.0436,

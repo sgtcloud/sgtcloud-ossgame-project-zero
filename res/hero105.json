@@ -5,7 +5,7 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 81,
+        "Duration": 82,
         "Speed": 0.4167,
         "Timelines": [
           {
@@ -229,9 +229,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -9.1358,
+                "X": -11.1358,
                 "Y": -12.3372,
-                "FrameIndex": 75,
+                "FrameIndex": 77,
                 "EasingData": {
                   "Type": 0
                 },
@@ -240,16 +240,7 @@
               {
                 "X": -9.1358,
                 "Y": -12.3372,
-                "FrameIndex": 78,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -9.1358,
-                "Y": -12.3372,
-                "FrameIndex": 81,
+                "FrameIndex": 82,
                 "EasingData": {
                   "Type": 0
                 },
@@ -518,7 +509,7 @@
                   "Path": "hero/hero105/hero105_stand02.png",
                   "Plist": "hero105.plist"
                 },
-                "FrameIndex": 75,
+                "FrameIndex": 77,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -528,17 +519,7 @@
                   "Path": "hero/hero105/hero105_stand03.png",
                   "Plist": "hero105.plist"
                 },
-                "FrameIndex": 78,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "MarkedSubImage",
-                  "Path": "hero/hero105/hero105_stand04.png",
-                  "Plist": "hero105.plist"
-                },
-                "FrameIndex": 81,
+                "FrameIndex": 82,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -581,7 +562,7 @@
         },
         {
           "StartIndex": 72,
-          "EndIndex": 81,
+          "EndIndex": 82,
           "Name": "stand",
           "ctype": "AnimationInfoData"
         }
@@ -592,7 +573,7 @@
           {
             "FileData": {
               "Type": "MarkedSubImage",
-              "Path": "hero/hero105/hero105_atk01.png",
+              "Path": "hero/hero105/hero105_stand03.png",
               "Plist": "hero105.plist"
             },
             "BlendFunc": {
@@ -603,8 +584,8 @@
               "ScaleX": 0.5
             },
             "Position": {
-              "X": -9.5075,
-              "Y": -12.4628
+              "X": -9.1358,
+              "Y": -12.3372
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -620,14 +601,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -67.0075,
-            "RightMargin": -47.9925,
-            "TopMargin": -74.5372,
-            "BottomMargin": -12.4628,
+            "LeftMargin": -68.1358,
+            "RightMargin": -49.8642,
+            "TopMargin": -74.6628,
+            "BottomMargin": -12.3372,
             "Tag": 25,
             "ActionTag": -275940080,
             "Size": {
-              "X": 115.0,
+              "X": 118.0,
               "Y": 87.0
             },
             "Name": "hero",

@@ -1457,7 +1457,7 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 29,
+          "EndIndex": 26,
           "Name": "boom",
           "ctype": "AnimationInfoData"
         }
