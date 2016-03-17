@@ -6,8 +6,10 @@ var player = {
     "stage_battle_num": 1,
     "into_stage_battle_timestamp": 0,
     "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
-    "first_time": "",
-    "orders":[],
+    "first_time": 0,
+    "orders": [],
+    "month_card_start_time": 0,
+    "month_card_end_time": 0,
     // test data
     "resource": {
         "gold": 1000000,
@@ -337,6 +339,45 @@ var PlayerData = {
                 player['time']['die'][id] = data;
                 PlayerData.updatePlayer();
             });
+        }
+    },
+    addPlayerNoPayOrders: function (order) {
+        if (player.orders.indexOf(order) != -1) {
+            player.orders.push(order);
+        }
+    },
+    delePlayerNoPayOrdersById: function (order) {
+        if (player.orders.indexOf(order) != -1) {
+            player.orders.splice(player.orders.indexOf(order), 1);
+        }
+    },
+    updatePlayerMCardInfo: function () {
+        //已存在有效月卡，累加截止日期
+        if (player.month_card_end_time > 0 && player.month_card_end_time >= this.serverCurrentTime) {
+            player.month_card_end_time += CONSTS.monthCard_validity_timestamp;
+        } else {
+            player.month_card_start_time = this.serverCurrentTime;
+            player.month_card_end_time = this.serverCurrentTime + CONSTS.monthCard_validity_timestamp;
+        }
+    },
+    //需要在更新离线时间前执行。
+    countPlayerMCardReward: function () {
+        //判断是否有月卡
+        if (player.month_card_end_time) {
+            //判断月卡有效性
+            if (getDays(player.into_stage_battle_timestamp, player.month_card_end_time) > 0) {
+                var days = getDays(player.into_stage_battle_timestamp, this.serverCurrentTime);
+                //判断是否可领取
+                if (days > 0) {
+                    //发送邮件
+                    var attachment = JSON.stringify({
+                        "unit": CONSTS.monthCard_daily_bonus.unit,
+                        "value": (CONSTS.monthCard_daily_bonus.value * days)
+                    });
+                    NetWork.sendSystemMail('月卡title', '月卡内容', attachment, function (result, data) {
+                    });
+                }
+            }
         }
     },
     heroes: [],

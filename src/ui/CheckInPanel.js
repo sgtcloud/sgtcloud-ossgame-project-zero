@@ -4,6 +4,7 @@
 var CheckInPanel = cc.Node.extend({
     ctor: function () {
         this._super();
+        this.setName('checkInPanel');
         this.signLayer = ccs.csLoader.createNode(res.sign_layer);
         this.signIcon = ccs.csLoader.createNode(res.sign_icon);
         this.signView = ccs.csLoader.createNode(res.sign_view);
@@ -49,6 +50,7 @@ var CheckInPanel = cc.Node.extend({
             }
 
             iconLayer.setPosition(signViewRoot.getChildByName("icon" + n1).getPosition());
+            iconLayer.setName('checkInItem');
             signViewRootClone.addChild(iconLayer);
             n1++;
             if (n % 5 == 0 || n == len) {

@@ -93,7 +93,7 @@ var MailPanel = cc.Node.extend({
                 return "";
             }
         } else {
-            descText = CONSTS.resources_mapping[rewards[i]['unit']] + " * " + rewards[i]['value'];
+            descText = CONSTS.resources_mapping[rewards['unit']] + " * " + rewards['value'];
         }
         return descText;
     },
@@ -109,7 +109,7 @@ var MailPanel = cc.Node.extend({
         }
     },
     openMailPopup: function () {
-        GamePopup.openPopup(this.mailLayer, cc.p(340, 680));
+        GamePopup.openPopup(this.mailLayer, cc.p(330, 680),false);
     },
     hiddenMailPopup: function () {
         GamePopup.closePopup(this.mailLayer);

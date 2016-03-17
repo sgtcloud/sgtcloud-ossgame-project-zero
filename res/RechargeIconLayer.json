@@ -197,7 +197,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 97.4095,
+                  "X": 101.4095,
                   "Y": 26.8066
                 },
                 "Scale": {
@@ -207,15 +207,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5412,
+                  "X": 0.5634,
                   "Y": 0.1181
                 },
                 "PreSize": {
                   "X": 0.3556,
                   "Y": 0.1057
                 },
-                "LeftMargin": 65.4095,
-                "RightMargin": 50.5905,
+                "LeftMargin": 69.4095,
+                "RightMargin": 46.5905,
                 "TopMargin": 188.1934,
                 "BottomMargin": 14.8066,
                 "Tag": 152,
@@ -272,6 +272,50 @@
                 },
                 "Name": "gem_text",
                 "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/label.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Width": 83,
+                "Scale9Height": 81,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 40.7301,
+                  "Y": 186.3541
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2263,
+                  "Y": 0.8209
+                },
+                "PreSize": {
+                  "X": 0.4611,
+                  "Y": 0.3568
+                },
+                "LeftMargin": -0.7699,
+                "RightMargin": 97.7699,
+                "TopMargin": 0.1459,
+                "BottomMargin": 145.8541,
+                "CallBackType": "Click",
+                "Tag": 337,
+                "ActionTag": 1995789183,
+                "Size": {
+                  "X": 83.0,
+                  "Y": 81.0
+                },
+                "Name": "label",
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": -1385079385,

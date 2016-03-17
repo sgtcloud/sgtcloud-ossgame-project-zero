@@ -1,16 +1,20 @@
+# 【置顶】内测用户组计划
+
+如果您已经有了切实的项目开发计划，内测用户组正在招募核心开发者，我们会提供您从游戏的开发到上线的一系列的资源支持。详情查看[FAQ](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%86%85%E6%B5%8B%E7%94%A8%E6%88%B7%E7%BB%84%E8%AE%A1%E5%88%92FAQ)，请加qq群468356255，如果不符合要求的建议加入下面提到的用户支持群。
+
 # 使用声明
 
 本软件已经取得软件著作权，受到相关法律条例的保护，在未获得合法授权的情况下请勿私自用于任何用途。
 
 # 如何获得授权
 
-### 个人开发者
+### 非商业使用（教育，培训，私人学习）
 
 * 联系我们，把您的产品基本信息（含产品名称，介绍，截图或者视频，上线地址，联系方式等）通过邮件或者其他方式发送给我们
 * 在产品的启动页面上加上我们的[标识素材](http://pan.baidu.com/s/1kTXefyR)
 * 无论您的产品收益如何，我们都不收取任何费用
 
-### 企业开发者
+### 商业使用（包含但不限于通过销售，联运，广告等直接或者间接获得商业利益）
 
 * 联系我们，把您的产品基本信息（含产品名称，介绍，截图或者视频，上线地址，联系方式等）通过邮件或者其他方式发送给我们
 * 提供贵公司的基本信息，并且签署一份软件授权使用协议，该协议是完全免费的
@@ -27,9 +31,21 @@ qq群：383461219
 
 [在线文档地址](https://www.gitbook.com/book/sgtcloud/project-nova-0-doc/details)
 
+### 产品内容和特色
+
+* 5个各具特色的主角
+* 40多个可升级技能，10种主动技能，含单体，群体伤害，回复和buff类
+* 10多个关卡，5种敌人，10余种掉落奖励
+* 30多种可升级装备，每种掉落奖励都可以用来升级对应的装备
+* 详尽的数据统计面板和行囊面板
+* 离线战斗收益，关掉浏览器也能打怪升级
+* 紧张的30秒Boss战，赢取丰厚的关卡掉落
+* 在线通关和金币排行榜
+* 新手引导
+
 ### 在线演示
 
-[点击打开](http://h5dev.yoedge.com/ossgame/publish/html5/index.html)
+[点击打开](http://h5.yoedge.com/ossgame/publish/html5/index.html)
 
 或者扫描二维码
 
@@ -37,16 +53,54 @@ qq群：383461219
 
 ### 开发环境和工具列表
 
-* Cocos Framework(>=3.10)+Cocos Studio [下载](http://www.cocos.com/download/#)
+* Cocos Framework(>=3.10)+Cocos Studio [下载](http://www.cocos.com/download/#) [网盘分流](http://pan.baidu.com/s/1o7wIylO)
 * [xls2json](https://github.com/sgtcloud/xlsx2json)
 * [shoebox](http://renderhjs.net/shoebox/)
 * Webstorm或者sublime text或者其他的代码编辑器
 
+### 手机浏览器兼容
+
+你可以提交你的测试结果给我们，我们会更新到这张列表中
+
+机型 | UC | 360 | QQ | 猎豹 | 百度 | 搜狗 | 原生 | 微信
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+小米 3 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+小米 Note Pro | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+魅蓝 Note | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+酷派 F1 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+IUNI U3 | Pass* | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPad Air | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 5 | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 6 Plus | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+iPhone 6S | Pass | Pass | Pass | Pass | Pass | Pass | Pass | Pass
+LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
+
+*需要刷新一次页面才能正常进入
+
 ### 获取代码
 
-本项目托管在github上，安装[git](https://git-scm.com/)之后运行
+本项目托管在github上，安装[git](https://git-scm.com/)之后运行。[网盘分流下载](http://pan.baidu.com/s/1mhdPPBq)
+
     git clone https://github.com/sgtcloud/sgtcloud-ossgame-project-zero.git
 
+### 运行代码
+
+##### 一般方式
+
+1. 原则上所有的http服务器都能运行本项目，例如nginx,apache等，这里用python内置的服务器为例
+2. 下载python2.7，如果您已经安装过了完整版cocos，那么就已经包含了该软件
+3. 配置python.exe到你的系统变量的PATH
+4. 在项目根目录运行'python -m SimpleHTTPServer'
+5. 浏览器打开'http://localhost:8080/'
+
+[下载win单文件版python](http://pan.baidu.com/s/1kTRdh3p)
+
+*python自带的简单服务器无法自定义参数，会产生缓存的问题，建议开发中使用功能更完整的服务器软件，例如nginx
+
+##### webstorm方式
+
+1. 把项目导入webstorm
+2. 在index.html文件上右键，Run 'index.html' 即可使用内置的服务器运行项目
 
 ### 项目目录
 
@@ -106,23 +160,33 @@ qq群：383461219
 
 ##### Cocos Console
 
-项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。直接使用命令行cocos compile -p web -m release即可发布，暂时不支持--advanced参数
+项目可以直接通过cocos的构建工具进行项目的构建（build）和发布（release）。
+直接使用命令行即可发布
+```
+cocos compile -p web -m release
+```
+*暂时不支持--advanced参数*
 
 ##### gulp
 
 构建的时候还考虑到了多渠道发布的需求，所以同时提供了[gulp](http://gulpjs.com/)实现的工具链。
-首先确认自己安装了[Nodejs](http://nodejs.org/)环境。
+首先确认自己安装了[Nodejs](http://nodejs.org/)环境。[网盘分流下载](http://pan.baidu.com/s/1gemN1qr)
 
 * 运行
-    npm install --save-dev gulp del gulp-cache gulp-concat gulp-debug gulp-image gulp-json-editor gulp-replace gulp-sourcemaps gulp-uglify vinyl-buffer vinyl-source-stream
-    安装需要的软件
+
+```
+    npm install --save-dev
+```
+
+安装构建需要的依赖
 
 * 运行
+
+```
     gulp
-    在public/html5下面构建出和cocos一致的发布
+```
 
-使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
-
+在public/html5下面构建出和cocos一致的发布，使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
 
 ### 项目源代码导读
 

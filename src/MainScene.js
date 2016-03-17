@@ -2,12 +2,13 @@ var MainScene = cc.Scene.extend({
 
     ctor: function () {
         this._super();
-
+        this.setName('main');
         // init the widgets and layout them
 
         this.battlePanel = new BattlePanel(this);
         //tab container in the bottom
         this.tabContainer = new TabContainer(this.battlePanel);
+        this.tabContainer.setName('tab');
         this.tabContainer.setPosition(0, 0);
         this.addChild(this.tabContainer, 100);
 
@@ -17,6 +18,7 @@ var MainScene = cc.Scene.extend({
 
         //top panel on the top
         this.topPanel = new TopPanel(this);
+        this.topPanel.setName('top');
         this.topPanel.setPosition(0, this.tabContainer.height + this.battlePanel.height);
         this.addChild(this.topPanel);
         this.topPanel.refreshAll();
@@ -31,10 +33,11 @@ var MainScene = cc.Scene.extend({
         this.battlePanel.addChild(buffListNode, 5000);
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
-        window.tip=new Tip(this);
+        window.tip = new Tip(this);
         (function (w) {
 
             var buffArr = [];
+
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {
@@ -44,6 +47,7 @@ var MainScene = cc.Scene.extend({
                     buffList.addChild(buff);
                 }
             }
+
             function toggleBufflayer(time, text, icon, cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
@@ -70,12 +74,15 @@ var MainScene = cc.Scene.extend({
                     }
                 }, 1, time, 1, buffLayer.root.__instanceId);
             }
+
             w.toggleBufflayer = toggleBufflayer;
         })(window);
-
     },
     onEnter: function () {
         this._super();
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+
+        var guideLayer = new sz.GuideLayer(this, guideConfig);
+        this.addChild(guideLayer, 1000);
     }
 });
