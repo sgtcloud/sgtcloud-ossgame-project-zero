@@ -266,19 +266,19 @@ var NetWork = {
     },
     //上传存档到服务器
     updatePlayerSave: function () {
-        if (cc.isArray(PlayerData.sequence) && PlayerData.sequence.length > 0) {
+        if (PlayerData.isUpdate) {
             var playerExtra = new SgtApi.PlayerExtra();
             playerExtra.content = JSON.stringify(player);
             playerExtra.playerId = player.id;
             sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
                 console.log('上传存档：' + result + ",内容为" + data);
             });
-            PlayerData.sequence = [];
+            PlayerData.isUpdate = false;
         }
     },
     updatePlayer: function (modelPlayer, callback) {
         localStorage.setItem("save", JSON.stringify(player));
-        PlayerData.sequence.push(player);
+        PlayerData.isUpdate = true;
         if (modelPlayer.level != player.heroes[0].lv) {
             modelPlayer.level = player.heroes[0].lv;
             sgt.PlayerService.update(modelPlayer, function (result) {
@@ -435,13 +435,20 @@ var NetWork = {
                     package: 'prepay_id=' + order.prepay_id, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
                     signType: 'MD5', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
                     paySign: order.paySign, // 支付签名
-                    success: function () {
+                    success: function (res) {
                         // 支付成功后的回调函数验证是否支付成功
+                        console.log("success:"+JSON.stringify(res));
                         this.queryByDid(obj);
                         return callback(true);
                     }.bind(this),
                     fail: function (res) {
-                        console.log(res);
+                        console.log("fail:"+JSON.stringify(res));
+                        return callback(false);
+                    },
+                    complete: function(res){
+                        console.log("complete:"+JSON.stringify(res));
+                    },cancel: function(res){
+                        console.log("cancel:"+JSON.stringify(res));
                         return callback(false);
                     }
                 });

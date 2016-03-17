@@ -2,6 +2,7 @@ var RechargePanel = cc.Node.extend({
     ctor: function () {
         this._super();
         this.rechargeLayer = ccs.csLoader.createNode(res.recharge_layer_json);
+        this.isPaying = false;
         this.initData();
     },
     initData: function () {
@@ -40,11 +41,19 @@ var RechargePanel = cc.Node.extend({
         }
         itemRoot.setTouchEnabled(false);
         bindTouchEventListener(function(){
-            console.log(i+',前往支付');
-            NetWork.chooseWXPay(chargePoint,function(){
-                tip.toggle('购买成功');
-            });
-        },itemRoot);
+            if(!this.isPaying){
+                this.isPaying = true;
+                console.log(i+',前往支付');
+                NetWork.chooseWXPay(chargePoint,function(result){
+                    if(result){
+                        tip.toggle('购买成功');
+                    }else{
+                        this.isPaying = false;
+                    }
+                }.bind(this));
+            }
+
+        }.bind(this),itemRoot);
     },
     openRechargePopup: function () {
         GamePopup.openPopup(this.rechargeLayer,cc.p(335,580),false);
