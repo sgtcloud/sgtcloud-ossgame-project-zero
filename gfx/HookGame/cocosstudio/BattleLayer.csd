@@ -360,6 +360,21 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="recharge_btn" ActionTag="577647559" Tag="136" IconVisible="False" LeftMargin="567.4968" RightMargin="-7.4968" TopMargin="54.2576" BottomMargin="605.7424" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="80.0000" Y="80.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="607.4968" Y="645.7424" />
+                <Scale ScaleX="0.6000" ScaleY="0.6000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9492" Y="0.8726" />
+                <PreSize X="0.1250" Y="0.1081" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/pack_icon.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
