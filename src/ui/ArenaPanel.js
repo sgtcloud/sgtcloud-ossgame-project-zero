@@ -18,7 +18,6 @@ var ArenaPanel = BattleMenu.extend({
         this.surplusText = this.panel.getChildByName('surplus_text');//剩余次数
         this.surplusNum = this.panel.getChildByName('surplus_num');//剩余次数
         this.myNum_text = this.panel.getChildByName('myNum_text');//剩余次数
-        this.surplusNum.setString(CONSTS.arena_challenge_times);
         this.opponentBox = this.panel.getChildByName('opponent_box');//挑战者列表
         //setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
         //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
@@ -27,28 +26,29 @@ var ArenaPanel = BattleMenu.extend({
         this.changeBtn.addClickEventListener(function (e) {
             this.refreshItems(this._index);
         }.bind(this));
-        this.buyBtn.addClickEventListener(function () {
-            Popup.openPopup("购买挑战次数", "是否花费" + CONSTS.arena_times_purchase.value + unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-                function (popup) {
-                    CONSTS.arena_challenge_times += CONSTS.arena_times_purchase.times;
-                    PlayerData.updateResource(CONSTS.arena_times_purchase);
-                    PlayerData.updatePlayer();
-                    this.refreshTimes();
-                    popup.hiddenPopup();
-                }.bind(this));
-        });
-        function unit2Text(unit) {
-            switch (unit) {
-                case "gem":
-                    return "钻石";
-                case "gold":
-                    return "金币";
-                case "relic":
-                    return "宝物";
-            }
+        if (typeof player.arena === 'undefined') {
+            player.arena = {times: CONSTS.arena_challenge_times}
         }
-
+        this.surplusNum.setString(player.arena.times);
+        this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
         this.pullData();
+    }, __unit2Text: function (unit) {
+        switch (unit) {
+            case "gem":
+                return "钻石";
+            case "gold":
+                return "金币";
+            case "relic":
+                return "宝物";
+        }
+    }, purchaseTimes: function () {
+        Popup.openPopup("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
+            function (popup) {
+                player.arena.times += CONSTS.arena_times_purchase.times;
+                PlayerData.updateResource(CONSTS.arena_times_purchase);
+                this.refreshTimes();
+                popup.hiddenPopup();
+            }.bind(this));
     }, pushItem: function (data, i) {
         var item = this._itemTemplate.clone();
         var icon = item.getChildByName("player_icon");
@@ -67,7 +67,7 @@ var ArenaPanel = BattleMenu.extend({
         item.setPositionY(this.opponentBox.height - i * item.height - i * 3);
         item.setPositionX((this.opponentBox.width - item.width) / 2);
         btn.addClickEventListener(function (e) {
-            this.fight(data, e);
+            this.challenge(data, e);
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
@@ -107,11 +107,19 @@ var ArenaPanel = BattleMenu.extend({
         }
         items.sort();
         return items;
-    }, fight: function (data, e) {
-        CONSTS.arena_challenge_times--;
+    }, challenge: function (data, e) {
+        if (player.arena.times <= 0) {
+            Popup.openPopup("友情提示", "当日挑战次数已用完，点确定前往购买次数", function (popup) {
+                popup.hiddenPopup();
+                this.purchaseTimes();
+            }.bind(this));
+            return;
+        }
+        player.arena.times--;
         this.refreshTimes();
     }, refreshTimes: function () {
-        this.surplusNum.setString(CONSTS.arena_challenge_times);
+        PlayerData.updatePlayer();
+        this.surplusNum.setString(player.arena.times);
     }, refreshItems: function (index) {
         this.opponentBox.removeAllChildrenWithCleanup(true);
         var items;
@@ -125,7 +133,7 @@ var ArenaPanel = BattleMenu.extend({
         }
         this._arenaService.getPlayersByIndex(items, this._arenakey, function (result, data) {
             if (result) {
-                for (var i=0;i<data.length;i++) {
+                for (var i = 0; i < data.length; i++) {
                     this.pushItem(data[i], i + 1);
                 }
             }
