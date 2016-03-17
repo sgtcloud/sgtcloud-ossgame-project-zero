@@ -150,13 +150,13 @@
                 <PreSize X="0.2081" Y="0.0829" />
                 <FileData Type="MarkedSubImage" Path="maillUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="563.7486" RightMargin="0.2514" TopMargin="36.5300" BottomMargin="605.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="563.7490" RightMargin="0.2510" TopMargin="30.5300" BottomMargin="611.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />
                 <AnchorPoint />
-                <Position X="563.7486" Y="605.4700" />
+                <Position X="563.7490" Y="611.4700" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9093" Y="0.8650" />
+                <PrePosition X="0.9093" Y="0.8735" />
                 <PreSize X="0.0903" Y="0.0829" />
                 <FileData Type="Normal" Path="CloseBtn.csd" Plist="" />
               </AbstractNodeData>

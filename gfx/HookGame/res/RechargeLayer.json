@@ -33,8 +33,8 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 17.3321,
-              "Y": 90.8828
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -43,17 +43,13 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0271,
-              "Y": 0.0947
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.9688,
-              "Y": 0.8333
+              "X": 1.0,
+              "Y": 1.0
             },
-            "LeftMargin": 17.3321,
-            "RightMargin": 2.6679,
-            "TopMargin": 69.1172,
-            "BottomMargin": 90.8828,
             "Tag": 140,
             "Children": [
               {
@@ -411,7 +407,7 @@
               },
               {
                 "FontSize": 20,
-                "LabelText": "当前VIP信息",
+                "LabelText": "当前的VIP信息",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -442,17 +438,17 @@
                   "Y": 0.8123
                 },
                 "PreSize": {
-                  "X": 0.1774,
+                  "X": 0.2097,
                   "Y": 0.025
                 },
-                "LeftMargin": 246.3808,
-                "RightMargin": 263.6192,
+                "LeftMargin": 236.3808,
+                "RightMargin": 253.6192,
                 "TopMargin": 140.1325,
                 "BottomMargin": 639.8675,
                 "Tag": 397,
                 "ActionTag": -219201916,
                 "Size": {
-                  "X": 110.0,
+                  "X": 130.0,
                   "Y": 20.0
                 },
                 "Name": "text",
@@ -472,6 +468,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -692,7 +690,7 @@
                     },
                     "LeftMargin": 192.429,
                     "RightMargin": 187.571,
-                    "TopMargin": 247.9225,
+                    "TopMargin": 247.9226,
                     "BottomMargin": 5.0774,
                     "Tag": 217,
                     "ActionTag": -1124834065,
@@ -732,7 +730,7 @@
                       "Y": 0.4729
                     },
                     "LeftMargin": 376.5495,
-                    "RightMargin": 3.4506,
+                    "RightMargin": 3.4505,
                     "TopMargin": 247.9226,
                     "BottomMargin": 5.0774,
                     "Tag": 225,
@@ -932,8 +930,8 @@
           }
         ],
         "Size": {
-          "X": 640.0,
-          "Y": 960.0
+          "X": 620.0,
+          "Y": 800.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
