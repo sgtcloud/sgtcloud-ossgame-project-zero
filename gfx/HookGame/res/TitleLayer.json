@@ -1,0 +1,1033 @@
+{
+  "ID": "6b818d14-1b46-40b2-a10e-878a08729a4d",
+  "Version": "2.3.3.0",
+  "Name": "TitleLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 101,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 551,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_04.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 12,
+                "Scale9Width": 7,
+                "Scale9Height": 8,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 103,
+                "ActionTag": 587429213,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 120.0
+                },
+                "Name": "title_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "EnemyList.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 140.0002,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2188,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.5938,
+                  "Y": 1.0
+                },
+                "LeftMargin": 140.0002,
+                "RightMargin": 119.9998,
+                "Tag": 128,
+                "ActionTag": 1026106168,
+                "Size": {
+                  "X": 380.0,
+                  "Y": 120.0
+                },
+                "Name": "enemyList",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 10.9998,
+                  "Y": 94.9999
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0172,
+                  "Y": 0.7917
+                },
+                "PreSize": {
+                  "X": 0.2109,
+                  "Y": 0.5
+                },
+                "LeftMargin": 10.9998,
+                "RightMargin": 494.0002,
+                "TopMargin": 25.0001,
+                "BottomMargin": 34.9999,
+                "Tag": 104,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_15.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 20,
+                    "Scale9Width": 7,
+                    "Scale9Height": 58,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -3.1974,
+                      "Y": 44.7318
+                    },
+                    "Scale": {
+                      "ScaleX": 0.7765,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0237,
+                      "Y": 0.7455
+                    },
+                    "PreSize": {
+                      "X": 1.1852,
+                      "Y": 0.5
+                    },
+                    "LeftMargin": -3.1974,
+                    "RightMargin": -21.8026,
+                    "TopMargin": -14.7318,
+                    "BottomMargin": 44.7318,
+                    "Tag": 107,
+                    "ActionTag": 169438672,
+                    "Size": {
+                      "X": 160.0,
+                      "Y": 30.0
+                    },
+                    "Name": "diamond_text_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_15.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 20,
+                    "Scale9Width": 7,
+                    "Scale9Height": 58,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -3.1974,
+                      "Y": 11.5415
+                    },
+                    "Scale": {
+                      "ScaleX": 0.7765,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0237,
+                      "Y": 0.1924
+                    },
+                    "PreSize": {
+                      "X": 1.1852,
+                      "Y": 0.5
+                    },
+                    "LeftMargin": -3.1974,
+                    "RightMargin": -21.8026,
+                    "TopMargin": 18.4585,
+                    "BottomMargin": 11.5415,
+                    "Tag": 411,
+                    "ActionTag": 972080489,
+                    "Size": {
+                      "X": 160.0,
+                      "Y": 30.0
+                    },
+                    "Name": "relic_text_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 9,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 25,
+                    "Scale9Height": 26,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 90.2563,
+                      "Y": 72.8476
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6686,
+                      "Y": 1.2141
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": 90.2563,
+                    "RightMargin": 19.7437,
+                    "TopMargin": -12.8476,
+                    "BottomMargin": 47.8476,
+                    "Tag": 141,
+                    "ActionTag": -148503213,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "getDiamond_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/diamond.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 14,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -3.4458,
+                      "Y": 50.349
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0255,
+                      "Y": 0.8392
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": -3.4458,
+                    "RightMargin": 113.4458,
+                    "TopMargin": -15.349,
+                    "BottomMargin": 50.349,
+                    "Tag": 105,
+                    "ActionTag": 181421063,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "diamond_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/relic.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 14,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": -3.4458,
+                      "Y": 44.0002
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0255,
+                      "Y": 0.7333
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": -3.4458,
+                    "RightMargin": 113.4458,
+                    "TopMargin": 15.9998,
+                    "BottomMargin": 19.0002,
+                    "Tag": 110,
+                    "ActionTag": 1567261989,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "relic_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "6666",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 28.5,
+                      "Y": 29.9999
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 205,
+                      "G": 30
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2111,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.4222,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
+                    "TopMargin": 21.0001,
+                    "BottomMargin": 20.9999,
+                    "Tag": 821,
+                    "ActionTag": 1223469565,
+                    "Size": {
+                      "X": 57.0,
+                      "Y": 18.0
+                    },
+                    "Name": "relic_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "6666",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 28.5,
+                      "Y": 63.0001
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 30,
+                      "G": 236
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2111,
+                      "Y": 1.05
+                    },
+                    "PreSize": {
+                      "X": 0.4222,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 28.5,
+                    "RightMargin": 49.5,
+                    "TopMargin": -12.0001,
+                    "BottomMargin": 54.0001,
+                    "Tag": 820,
+                    "ActionTag": -922470840,
+                    "Size": {
+                      "X": 57.0,
+                      "Y": 18.0
+                    },
+                    "Name": "diamond_text",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_15.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 20,
+                    "Scale9Width": 7,
+                    "Scale9Height": 58,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -2.786,
+                      "Y": -21.3106
+                    },
+                    "Scale": {
+                      "ScaleX": 0.7765,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0206,
+                      "Y": -0.3552
+                    },
+                    "PreSize": {
+                      "X": 1.4074,
+                      "Y": 0.5
+                    },
+                    "LeftMargin": -2.786,
+                    "RightMargin": -52.214,
+                    "TopMargin": 51.3106,
+                    "BottomMargin": -21.3106,
+                    "Tag": 120,
+                    "ActionTag": -1385240699,
+                    "Size": {
+                      "X": 190.0,
+                      "Y": 30.0
+                    },
+                    "Name": "gold_text_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/slice131_@.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 9,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 25,
+                    "Scale9Height": 26,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 114.6688,
+                      "Y": 6.806
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8494,
+                      "Y": 0.1134
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": 114.6688,
+                    "RightMargin": -4.6688,
+                    "TopMargin": 53.194,
+                    "BottomMargin": -18.194,
+                    "Tag": 121,
+                    "ActionTag": 1191769766,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "getGold_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/gold.png",
+                      "Plist": ""
+                    },
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 14,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": -3.0345,
+                      "Y": -15.6931
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.0225,
+                      "Y": -0.2616
+                    },
+                    "PreSize": {
+                      "X": 0.1852,
+                      "Y": 0.4167
+                    },
+                    "LeftMargin": -3.0345,
+                    "RightMargin": 113.0345,
+                    "TopMargin": 50.6931,
+                    "BottomMargin": -15.6931,
+                    "Tag": 122,
+                    "ActionTag": 28859119,
+                    "Size": {
+                      "X": 25.0,
+                      "Y": 25.0
+                    },
+                    "Name": "gold_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "999.3k",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 28.5001,
+                      "Y": -2.5684
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2111,
+                      "Y": -0.0428
+                    },
+                    "PreSize": {
+                      "X": 0.5111,
+                      "Y": 0.3
+                    },
+                    "LeftMargin": 28.5001,
+                    "RightMargin": 37.4999,
+                    "TopMargin": 53.5684,
+                    "BottomMargin": -11.5684,
+                    "CallBackType": "Touch",
+                    "Tag": 822,
+                    "ActionTag": 700294411,
+                    "Size": {
+                      "X": 69.0,
+                      "Y": 18.0
+                    },
+                    "Name": "gold_text",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": -897076265,
+                "Size": {
+                  "X": 135.0,
+                  "Y": 60.0
+                },
+                "Name": "box",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_15.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 20,
+                "Scale9Width": 7,
+                "Scale9Height": 58,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 511.0695,
+                  "Y": 40.5156
+                },
+                "Scale": {
+                  "ScaleX": 0.7765,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7985,
+                  "Y": 0.3376
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 0.3333
+                },
+                "LeftMargin": 511.0695,
+                "RightMargin": -31.0695,
+                "TopMargin": 39.4844,
+                "BottomMargin": 40.5156,
+                "Tag": 41,
+                "ActionTag": -76509588,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 40.0
+                },
+                "Name": "levelText_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_1.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_1.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_1.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 70,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 531.9988,
+                  "Y": 102.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8312,
+                  "Y": 0.85
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 531.9988,
+                "RightMargin": 8.0012,
+                "TopMargin": 18.0,
+                "BottomMargin": 22.0,
+                "Tag": 139,
+                "ActionTag": -492035314,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 80.0
+                },
+                "Name": "fight_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_2.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_2.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "ui/btn_2.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 70,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 530.9987,
+                  "Y": 102.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8297,
+                  "Y": 0.85
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 530.9987,
+                "RightMargin": 9.0013,
+                "TopMargin": 18.0,
+                "BottomMargin": 22.0,
+                "Tag": 140,
+                "ActionTag": 464688707,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 80.0
+                },
+                "Name": "live_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "LabelText": "12/56",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white18-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 579.4733,
+                  "Y": 64.6788
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9054,
+                  "Y": 0.539
+                },
+                "PreSize": {
+                  "X": 0.1187,
+                  "Y": 0.1833
+                },
+                "LeftMargin": 541.4733,
+                "RightMargin": 22.5267,
+                "TopMargin": 44.3212,
+                "BottomMargin": 53.6788,
+                "Tag": 819,
+                "ActionTag": 1713363107,
+                "Size": {
+                  "X": 76.0,
+                  "Y": 22.0
+                },
+                "Name": "level_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/battle_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 52,
+                "Scale9Height": 50,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 526.3123,
+                  "Y": 63.7689
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8224,
+                  "Y": 0.5314
+                },
+                "PreSize": {
+                  "X": 0.0469,
+                  "Y": 0.25
+                },
+                "LeftMargin": 511.3123,
+                "RightMargin": 98.6877,
+                "TopMargin": 41.2311,
+                "BottomMargin": 48.7689,
+                "Tag": 40,
+                "ActionTag": 850031393,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "stage_icon",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 2091443489,
+            "Size": {
+              "X": 640.0,
+              "Y": 120.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 120.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "EnemyList.json",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
+        "mainUI/battle_icon.png",
+        "mainUI/bg_04.png",
+        "mainUI/bg_15.png",
+        "mainUI/diamond.png",
+        "mainUI/gold.png",
+        "mainUI/relic.png",
+        "mainUI/slice131_@.png",
+        "OtherUI.plist",
+        "OtherUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

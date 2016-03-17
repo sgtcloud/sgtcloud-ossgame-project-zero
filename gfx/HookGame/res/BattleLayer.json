@@ -1,0 +1,1542 @@
+{
+  "ID": "ce6a2ee5-7c47-4f0c-a6ae-7e9cc6beac4b",
+  "Version": "2.3.3.0",
+  "Name": "BattleLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 174,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 264,
+            "Children": [
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 240.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.3243
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.6757
+                },
+                "BottomMargin": 240.0,
+                "Tag": 54,
+                "ActionTag": 1082551047,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 500.0
+                },
+                "Name": "battle_bg",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 240.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.3243
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "RightMargin": 640.0,
+                "TopMargin": 500.0,
+                "BottomMargin": 240.0,
+                "Tag": 151,
+                "Children": [
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 160.0,
+                      "Y": 195.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 160.0,
+                    "RightMargin": -160.0,
+                    "TopMargin": -195.0,
+                    "BottomMargin": 195.0,
+                    "Tag": 120,
+                    "ActionTag": -435100580,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero_center",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 470.0,
+                      "Y": 195.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 470.0,
+                    "RightMargin": -470.0,
+                    "TopMargin": -195.0,
+                    "BottomMargin": 195.0,
+                    "Tag": 121,
+                    "ActionTag": -1249781952,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy_center",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 211.2491,
+                      "Y": 295.4902
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 211.2491,
+                    "RightMargin": -211.2491,
+                    "TopMargin": -295.4902,
+                    "BottomMargin": 295.4902,
+                    "Tag": 101,
+                    "ActionTag": -638236086,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero2",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 262.7863,
+                      "Y": 220.0607
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 262.7863,
+                    "RightMargin": -262.7863,
+                    "TopMargin": -220.0607,
+                    "BottomMargin": 220.0607,
+                    "Tag": 102,
+                    "ActionTag": 1458200757,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero1",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 176.1981,
+                      "Y": 214.8108
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 176.1981,
+                    "RightMargin": -176.1981,
+                    "TopMargin": -214.8108,
+                    "BottomMargin": 214.8108,
+                    "Tag": 103,
+                    "ActionTag": -799579898,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero4",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 88.857,
+                      "Y": 200.9205
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 88.857,
+                    "RightMargin": -88.857,
+                    "TopMargin": -200.9205,
+                    "BottomMargin": 200.9205,
+                    "Tag": 104,
+                    "ActionTag": 75504825,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero5",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 233.5437,
+                      "Y": 143.8739
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 233.5437,
+                    "RightMargin": -233.5437,
+                    "TopMargin": -143.8739,
+                    "BottomMargin": 143.8739,
+                    "Tag": 105,
+                    "ActionTag": 1873157497,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero6",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 139.6481,
+                      "Y": 120.6276
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 139.6481,
+                    "RightMargin": -139.6481,
+                    "TopMargin": -120.6276,
+                    "BottomMargin": 120.6276,
+                    "Tag": 106,
+                    "ActionTag": 1416944089,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero3",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 53.8378,
+                      "Y": 97.7866
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 53.8378,
+                    "RightMargin": -53.8378,
+                    "TopMargin": -97.7866,
+                    "BottomMargin": 97.7866,
+                    "Tag": 107,
+                    "ActionTag": 1338998983,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "hero7",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 434.1785,
+                      "Y": 290.3143
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 434.1785,
+                    "RightMargin": -434.1785,
+                    "TopMargin": -290.3143,
+                    "BottomMargin": 290.3143,
+                    "Tag": 201,
+                    "ActionTag": -2011287307,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy2",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 570.1031,
+                      "Y": 256.6463
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 570.1031,
+                    "RightMargin": -570.1031,
+                    "TopMargin": -256.6463,
+                    "BottomMargin": 256.6463,
+                    "Tag": 202,
+                    "ActionTag": -1346244670,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy5",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 365.4531,
+                      "Y": 220.5278
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 365.4531,
+                    "RightMargin": -365.4531,
+                    "TopMargin": -220.5278,
+                    "BottomMargin": 220.5278,
+                    "Tag": 203,
+                    "ActionTag": 395042090,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy1",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 468.6891,
+                      "Y": 193.8478
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 468.6891,
+                    "RightMargin": -468.6891,
+                    "TopMargin": -193.8478,
+                    "BottomMargin": 193.8478,
+                    "Tag": 204,
+                    "ActionTag": -1727799133,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy3",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 401.0005,
+                      "Y": 141.5787
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 401.0005,
+                    "RightMargin": -401.0005,
+                    "TopMargin": -141.5787,
+                    "BottomMargin": 141.5787,
+                    "Tag": 205,
+                    "ActionTag": 2069684574,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy7",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 510.4797,
+                      "Y": 117.5937
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 510.4797,
+                    "RightMargin": -510.4797,
+                    "TopMargin": -117.5937,
+                    "BottomMargin": 117.5937,
+                    "Tag": 206,
+                    "ActionTag": -1799389802,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy6",
+                    "ctype": "SingleNodeObjectData"
+                  },
+                  {
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 577.8947,
+                      "Y": 83.3018
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 577.8947,
+                    "RightMargin": -577.8947,
+                    "TopMargin": -83.3018,
+                    "BottomMargin": 83.3018,
+                    "Tag": 207,
+                    "ActionTag": -927619036,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "enemy4",
+                    "ctype": "SingleNodeObjectData"
+                  }
+                ],
+                "ActionTag": -1993936269,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "sprites",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bar_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 501,
+                "Scale9Height": 46,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 324.1541,
+                  "Y": 709.7528
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5065,
+                  "Y": 0.9591
+                },
+                "PreSize": {
+                  "X": 0.7828,
+                  "Y": 0.0622
+                },
+                "LeftMargin": 73.6541,
+                "RightMargin": 65.3459,
+                "TopMargin": 7.2472,
+                "BottomMargin": 686.7528,
+                "Tag": 484,
+                "ActionTag": 1994818062,
+                "Size": {
+                  "X": 501.0,
+                  "Y": 46.0
+                },
+                "Name": "enemy_life_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bar1.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 336.0984,
+                  "Y": 719.7816
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5252,
+                  "Y": 0.9727
+                },
+                "PreSize": {
+                  "X": 0.7203,
+                  "Y": 0.023
+                },
+                "LeftMargin": 105.5984,
+                "RightMargin": 73.4016,
+                "TopMargin": 11.7184,
+                "BottomMargin": 711.2816,
+                "Tag": 486,
+                "ActionTag": 1687766306,
+                "Size": {
+                  "X": 461.0,
+                  "Y": 17.0
+                },
+                "Name": "enemy_life_bar",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/battle_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 52,
+                "Scale9Height": 50,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 78.0861,
+                  "Y": 692.2682
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.122,
+                  "Y": 0.9355
+                },
+                "PreSize": {
+                  "X": 0.0547,
+                  "Y": 0.0473
+                },
+                "LeftMargin": 78.0861,
+                "RightMargin": 526.9139,
+                "TopMargin": 12.7318,
+                "BottomMargin": 692.2682,
+                "Tag": 485,
+                "ActionTag": 2061033833,
+                "Size": {
+                  "X": 35.0,
+                  "Y": 35.0
+                },
+                "Name": "icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "battleUI/boss_text.png",
+                  "Plist": "BattleLayer.plist"
+                },
+                "Scale9Width": 91,
+                "Scale9Height": 19,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 269.3047,
+                  "Y": 719.1217
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4208,
+                  "Y": 0.9718
+                },
+                "PreSize": {
+                  "X": 0.1437,
+                  "Y": 0.027
+                },
+                "LeftMargin": 223.3047,
+                "RightMargin": 324.6953,
+                "TopMargin": 10.8783,
+                "BottomMargin": 709.1217,
+                "CallBackType": "Click",
+                "Tag": 166,
+                "ActionTag": 2083404384,
+                "Size": {
+                  "X": 92.0,
+                  "Y": 20.0
+                },
+                "Name": "enemy_life_text_0",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "0",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white18-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 313.0436,
+                  "Y": 721.0542
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4891,
+                  "Y": 0.9744
+                },
+                "PreSize": {
+                  "X": 0.0312,
+                  "Y": 0.0297
+                },
+                "LeftMargin": 313.0436,
+                "RightMargin": 306.9564,
+                "TopMargin": 7.9458,
+                "BottomMargin": 710.0542,
+                "CallBackType": "Click",
+                "Tag": 138,
+                "ActionTag": -366591547,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 22.0
+                },
+                "Name": "enemy_life_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "9999999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 125.2951,
+                  "Y": 230.3575
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1958,
+                  "Y": 0.3113
+                },
+                "PreSize": {
+                  "X": 0.1094,
+                  "Y": 0.027
+                },
+                "LeftMargin": 90.2951,
+                "RightMargin": 479.7049,
+                "TopMargin": 499.6425,
+                "BottomMargin": 220.3575,
+                "Tag": 110,
+                "ActionTag": 512039343,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 20.0
+                },
+                "Name": "atk_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "9999999",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 592.3304,
+                  "Y": 230.3575
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9255,
+                  "Y": 0.3113
+                },
+                "PreSize": {
+                  "X": 0.1094,
+                  "Y": 0.027
+                },
+                "LeftMargin": 557.3304,
+                "RightMargin": 12.6696,
+                "TopMargin": 499.6425,
+                "BottomMargin": 220.3575,
+                "Tag": 111,
+                "ActionTag": 1885514838,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 20.0
+                },
+                "Name": "tatk_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "英雄DPS：",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 54.5628,
+                  "Y": 231.3578
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0853,
+                  "Y": 0.3126
+                },
+                "PreSize": {
+                  "X": 0.1406,
+                  "Y": 0.027
+                },
+                "LeftMargin": 9.5628,
+                "RightMargin": 540.4372,
+                "TopMargin": 498.6422,
+                "BottomMargin": 221.3578,
+                "Tag": 112,
+                "ActionTag": 952086601,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 20.0
+                },
+                "Name": "atk",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "点击攻击力：",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 506.3264,
+                  "Y": 231.3578
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7911,
+                  "Y": 0.3126
+                },
+                "PreSize": {
+                  "X": 0.1875,
+                  "Y": 0.027
+                },
+                "LeftMargin": 446.3264,
+                "RightMargin": 73.6736,
+                "TopMargin": 498.6422,
+                "BottomMargin": 221.3578,
+                "Tag": 113,
+                "ActionTag": 487734890,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 20.0
+                },
+                "Name": "tatk",
+                "ctype": "TextObjectData"
+              },
+              {
+                "LabelText": "36",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 95.437,
+                  "Y": 710.5966
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1491,
+                  "Y": 0.9603
+                },
+                "PreSize": {
+                  "X": 0.0516,
+                  "Y": 0.027
+                },
+                "LeftMargin": 78.937,
+                "RightMargin": 528.063,
+                "TopMargin": 19.4034,
+                "BottomMargin": 700.5966,
+                "Tag": 137,
+                "ActionTag": 2022321032,
+                "Size": {
+                  "X": 33.0,
+                  "Y": 20.0
+                },
+                "Name": "time_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bar2.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 334.7112,
+                  "Y": 703.7831
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.523,
+                  "Y": 0.9511
+                },
+                "PreSize": {
+                  "X": 0.6938,
+                  "Y": 0.0081
+                },
+                "LeftMargin": 112.7112,
+                "RightMargin": 83.2888,
+                "TopMargin": 33.2169,
+                "BottomMargin": 700.7831,
+                "Tag": 487,
+                "ActionTag": -1530911348,
+                "Size": {
+                  "X": 444.0,
+                  "Y": 6.0
+                },
+                "Name": "time_bar",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 38.3339,
+                  "Y": 699.5417
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0599,
+                  "Y": 0.9453
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": -1.6661,
+                "RightMargin": 561.6661,
+                "TopMargin": 0.4583,
+                "BottomMargin": 659.5417,
+                "Tag": 40,
+                "ActionTag": 1271537567,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "statistics_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/pack_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 38.3338,
+                  "Y": 622.0462
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0599,
+                  "Y": 0.8406
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": -1.6662,
+                "RightMargin": 561.6662,
+                "TopMargin": 77.9538,
+                "BottomMargin": 582.0462,
+                "Tag": 42,
+                "ActionTag": -423831482,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "pack_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 39.719,
+                  "Y": 544.5508
+                },
+                "Scale": {
+                  "ScaleX": 0.8,
+                  "ScaleY": 0.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0621,
+                  "Y": 0.7359
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": -0.281,
+                "RightMargin": 560.281,
+                "TopMargin": 155.4492,
+                "BottomMargin": 504.5508,
+                "Tag": 41,
+                "ActionTag": -1641535427,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "reward_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 225.0,
+                  "Y": 240.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.3516,
+                  "Y": 0.3243
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 225.0,
+                "RightMargin": 415.0,
+                "TopMargin": 500.0,
+                "BottomMargin": 240.0,
+                "Tag": 51,
+                "ActionTag": 1164280231,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "buff_list",
+                "ctype": "SingleNodeObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/offline_reward.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 607.697,
+                  "Y": 707.688
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9495,
+                  "Y": 0.9563
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": 567.697,
+                "RightMargin": -7.697,
+                "TopMargin": -7.688,
+                "BottomMargin": 667.688,
+                "Tag": 285,
+                "ActionTag": -1828760999,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "maill_btn",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 2088090531,
+            "Size": {
+              "X": 640.0,
+              "Y": 740.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 740.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "BattleLayer.plist",
+        "BattleLayer.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white18-export.fnt",
+        "font/white18-export.png",
+        "mainUI/bar_bg.png",
+        "mainUI/bar1.png",
+        "mainUI/bar2.png",
+        "mainUI/battle_icon.png",
+        "mainUI/offline_reward.png",
+        "mainUI/pack_icon.png",
+        "mainUI/statistics_icon.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

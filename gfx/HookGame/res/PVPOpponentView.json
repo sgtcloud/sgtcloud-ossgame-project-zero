@@ -1,0 +1,600 @@
+{
+  "ID": "f55987d7-5b87-4244-bca2-564fd47dc629",
+  "Version": "2.3.3.0",
+  "Name": "PVPOpponentView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 313,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 314,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_05.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.7386
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0055
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "TopMargin": -0.7386,
+                "BottomMargin": 0.7386,
+                "Tag": 315,
+                "ActionTag": 411411964,
+                "Size": {
+                  "X": 590.0,
+                  "Y": 135.0
+                },
+                "Name": "opponent_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/hero_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 90,
+                "Scale9Height": 90,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 63.8321,
+                  "Y": 70.5357
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1082,
+                  "Y": 0.5225
+                },
+                "PreSize": {
+                  "X": 0.1525,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 18.8321,
+                "RightMargin": 481.1679,
+                "TopMargin": 19.4643,
+                "BottomMargin": 25.5357,
+                "Tag": 316,
+                "ActionTag": -1223027493,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "player_icon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "玩家名字六子",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 121.4415,
+                  "Y": 91.2949
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2058,
+                  "Y": 0.6763
+                },
+                "PreSize": {
+                  "X": 0.2542,
+                  "Y": 0.1481
+                },
+                "LeftMargin": 121.4415,
+                "RightMargin": 318.5585,
+                "TopMargin": 23.7051,
+                "BottomMargin": 91.2949,
+                "Tag": 317,
+                "ActionTag": -846089440,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 20.0
+                },
+                "Name": "player_name",
+                "ctype": "TextObjectData"
+              },
+              {
+                "LabelText": "Lv.999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 121.4415,
+                  "Y": 72.2159
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2058,
+                  "Y": 0.5349
+                },
+                "PreSize": {
+                  "X": 0.1576,
+                  "Y": 0.1481
+                },
+                "LeftMargin": 121.4415,
+                "RightMargin": 375.5585,
+                "TopMargin": 52.7841,
+                "BottomMargin": 62.2159,
+                "Tag": 333,
+                "ActionTag": -1464451623,
+                "Size": {
+                  "X": 93.0,
+                  "Y": 20.0
+                },
+                "Name": "level_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "PVPUI/Ranking.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Width": 140,
+                "Scale9Height": 24,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 353.084,
+                  "Y": 101.6241
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 229,
+                  "B": 2
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5984,
+                  "Y": 0.7528
+                },
+                "PreSize": {
+                  "X": 0.2373,
+                  "Y": 0.1778
+                },
+                "LeftMargin": 283.084,
+                "RightMargin": 166.916,
+                "TopMargin": 21.3759,
+                "BottomMargin": 89.6241,
+                "Tag": 336,
+                "ActionTag": -881727945,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 24.0
+                },
+                "Name": "rank",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 311.8658,
+                  "Y": 103.2507
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 229,
+                  "B": 2
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5286,
+                  "Y": 0.7648
+                },
+                "PreSize": {
+                  "X": 0.0932,
+                  "Y": 0.1481
+                },
+                "LeftMargin": 311.8658,
+                "RightMargin": 223.1342,
+                "TopMargin": 21.7493,
+                "BottomMargin": 93.2507,
+                "Tag": 335,
+                "ActionTag": 1839535962,
+                "Size": {
+                  "X": 55.0,
+                  "Y": 20.0
+                },
+                "Name": "rank_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "PVPUI/fight.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9Width": 87,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 161.5901,
+                  "Y": 37.9121
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2739,
+                  "Y": 0.2808
+                },
+                "PreSize": {
+                  "X": 0.1475,
+                  "Y": 0.2074
+                },
+                "LeftMargin": 118.0901,
+                "RightMargin": 384.9099,
+                "TopMargin": 83.0879,
+                "BottomMargin": 23.9121,
+                "Tag": 337,
+                "ActionTag": -1477277299,
+                "Size": {
+                  "X": 87.0,
+                  "Y": 28.0
+                },
+                "Name": "fight",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "999999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white22-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 211.5521,
+                  "Y": 39.9121
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3586,
+                  "Y": 0.2956
+                },
+                "PreSize": {
+                  "X": 0.2356,
+                  "Y": 0.1926
+                },
+                "LeftMargin": 211.5521,
+                "RightMargin": 239.4479,
+                "TopMargin": 82.0879,
+                "BottomMargin": 26.9121,
+                "Tag": 338,
+                "ActionTag": 1425069277,
+                "Size": {
+                  "X": 139.0,
+                  "Y": 26.0
+                },
+                "Name": "fight_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 430.4799,
+                  "Y": 28.2543
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7296,
+                  "Y": 0.2093
+                },
+                "PreSize": {
+                  "X": 0.2373,
+                  "Y": 0.5926
+                },
+                "LeftMargin": 430.4799,
+                "RightMargin": 19.5201,
+                "TopMargin": 26.7457,
+                "BottomMargin": 28.2543,
+                "Tag": 135,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "equipUI/btn2.png",
+                      "Plist": "EquipUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "equipUI/btn1.png",
+                      "Plist": "EquipUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "equipUI/btn1.png",
+                      "Plist": "EquipUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 110,
+                    "Scale9Height": 58,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 33,
+                    "ActionTag": -879448600,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 80.0
+                    },
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "PVPUI/pvp.png",
+                      "Plist": "OtherUI.plist"
+                    },
+                    "Scale9Width": 56,
+                    "Scale9Height": 59,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 45.5786,
+                      "Y": 10.3408
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3256,
+                      "Y": 0.1293
+                    },
+                    "PreSize": {
+                      "X": 0.4,
+                      "Y": 0.7375
+                    },
+                    "LeftMargin": 45.5786,
+                    "RightMargin": 38.4214,
+                    "TopMargin": 10.6592,
+                    "BottomMargin": 10.3408,
+                    "Tag": 34,
+                    "ActionTag": 350682911,
+                    "Size": {
+                      "X": 56.0,
+                      "Y": 59.0
+                    },
+                    "Name": "pvp",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -902477182,
+                "Size": {
+                  "X": 140.0,
+                  "Y": 80.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1404081035,
+            "Size": {
+              "X": 590.0,
+              "Y": 135.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 590.0,
+          "Y": 135.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "EquipUI.plist",
+        "EquipUI.png",
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "font/white22-export.fnt",
+        "font/white22-export.png",
+        "mainUI/bg_05.png",
+        "mainUI/hero_icon.png",
+        "OtherUI.plist",
+        "OtherUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
