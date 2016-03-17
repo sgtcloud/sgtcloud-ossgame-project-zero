@@ -62,7 +62,7 @@ var SkillEffectMappings = {
 }
 String.prototype.mapping = function (obj) {
     return this.replace(/{\s*\w+\s*}/gi, function (matchs) {
-        var match = matchs.replace(/{\s*|\s*}/g, "")
+        var match = matchs.replace(/{\s*|\s*}/g, "");
         var returns;
         if (match.indexOf('_') > -1) {
             var arr = match.split("_");
