@@ -407,7 +407,7 @@
               },
               {
                 "FontSize": 20,
-                "LabelText": "当前VIP信息",
+                "LabelText": "当前的VIP信息",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -438,17 +438,17 @@
                   "Y": 0.8123
                 },
                 "PreSize": {
-                  "X": 0.1774,
+                  "X": 0.2097,
                   "Y": 0.025
                 },
-                "LeftMargin": 246.3808,
-                "RightMargin": 263.6192,
+                "LeftMargin": 236.3808,
+                "RightMargin": 253.6192,
                 "TopMargin": 140.1325,
                 "BottomMargin": 639.8675,
                 "Tag": 397,
                 "ActionTag": -219201916,
                 "Size": {
-                  "X": 110.0,
+                  "X": 130.0,
                   "Y": 20.0
                 },
                 "Name": "text",

@@ -89,14 +89,14 @@
                 <PreSize X="0.9129" Y="0.1325" />
                 <FileData Type="MarkedSubImage" Path="rechargeUI/pic.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="-219201916" Tag="397" IconVisible="False" LeftMargin="246.3808" RightMargin="263.6192" TopMargin="140.1325" BottomMargin="639.8675" FontSize="20" LabelText="当前VIP信息" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="110.0000" Y="20.0000" />
+              <AbstractNodeData Name="text" ActionTag="-219201916" Tag="397" IconVisible="False" LeftMargin="236.3808" RightMargin="253.6192" TopMargin="140.1325" BottomMargin="639.8675" FontSize="20" LabelText="当前的VIP信息" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="130.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="301.3808" Y="649.8675" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4861" Y="0.8123" />
-                <PreSize X="0.1774" Y="0.0250" />
+                <PreSize X="0.2097" Y="0.0250" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

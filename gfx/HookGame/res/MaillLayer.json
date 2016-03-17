@@ -664,8 +664,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 563.7486,
-                  "Y": 605.47
+                  "X": 563.749,
+                  "Y": 611.47
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -675,16 +675,16 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.9093,
-                  "Y": 0.865
+                  "Y": 0.8735
                 },
                 "PreSize": {
                   "X": 0.0903,
                   "Y": 0.0829
                 },
-                "LeftMargin": 563.7486,
-                "RightMargin": 0.2514,
-                "TopMargin": 36.53,
-                "BottomMargin": 605.47,
+                "LeftMargin": 563.749,
+                "RightMargin": 0.251,
+                "TopMargin": 30.53,
+                "BottomMargin": 611.47,
                 "Tag": 213,
                 "ActionTag": 1384084568,
                 "Size": {
