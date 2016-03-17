@@ -24,6 +24,8 @@ var CONSTS = {
     "offline_reward_max_time": 86400,
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
+    "arena_challenge_times": 5,
+    "arena_times_purchase": {"unit": "gem", "value": 20, "times": 5},
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
@@ -274,8 +276,8 @@ Date.prototype.Format = function (fmt) { //author: meizz
 function initGame() {
     PlayerData.init();
     game = new MainScene();
-    if(cc.isArray(player.orders)){
-        for(var i in player.orders){
+    if (cc.isArray(player.orders)) {
+        for (var i in player.orders) {
             NetWork.queryByDid(player.orders[i]);
         }
     }
@@ -313,7 +315,7 @@ function is_weixin() {
 var tipTemplate;
 function showCover() {
     var scene = ccs.csLoader.createNode(res.cover_scene_json);
-    tipTemplate=ccs.csLoader.createNode(res.tips).getChildByName("root");
+    tipTemplate = ccs.csLoader.createNode(res.tips).getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
     //判断当前用户是否存在角色
@@ -330,9 +332,9 @@ function showCover() {
         //获取角色未删除邮件数据
         NetWork.getReadedAndUnreadedMails();
         //轮询获取最新未读取邮件
-        setInterval(function(){
-            NetWork.updatePlayerMails(10  *1000);
-        },10  *1000);
+        setInterval(function () {
+            NetWork.updatePlayerMails(10 * 1000);
+        }, 10 * 1000);
     });
     cc.director.runScene(scene);
 }

@@ -7,7 +7,7 @@ var player = {
     "into_stage_battle_timestamp": 0,
     "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
     "first_time": "",
-    "orders":[],
+    "orders": [],
     // test data
     "resource": {
         "gold": 1000000,
@@ -217,7 +217,8 @@ var PlayerData = {
     }
     ,
     getTotalAttack: function (dead) {
-        return this.sumHeroesProp("getAttack", dead);
+        player.statistics.total_damage = this.sumHeroesProp("getAttack", dead);
+        return player.statistics.total_damage;
     }
     ,
     getTotalLife: function (dead) {
@@ -225,7 +226,8 @@ var PlayerData = {
     }
     ,
     getTotalHit: function (dead) {
-        return this.sumHeroesProp("getHit", dead);
+        player.statistics.total_tap = this.sumHeroesProp("getHit", dead);
+        return player.statistics.total_tap;
     }
     ,
     createResourceData: function (unit, val) {
