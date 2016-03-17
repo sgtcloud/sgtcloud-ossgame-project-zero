@@ -219,7 +219,8 @@ var PlayerData = {
     }
     ,
     getTotalAttack: function (dead) {
-        return this.sumHeroesProp("getAttack", dead);
+        player.statistics.total_damage = this.sumHeroesProp("getAttack", dead);
+        return player.statistics.total_damage;
     }
     ,
     getTotalLife: function (dead) {
@@ -227,7 +228,8 @@ var PlayerData = {
     }
     ,
     getTotalHit: function (dead) {
-        return this.sumHeroesProp("getHit", dead);
+        player.statistics.total_tap = this.sumHeroesProp("getHit", dead);
+        return player.statistics.total_tap;
     }
     ,
     createResourceData: function (unit, val) {
