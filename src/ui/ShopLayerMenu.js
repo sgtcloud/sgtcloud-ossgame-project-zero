@@ -160,7 +160,7 @@ var ShopLayerMenu = BattleMenu.extend({
                 shopListViewRootClone.addChild(itemLayer);
                 if (n % 3 == 0 || n == len) {
                     n1 = 0;
-                    shopPorps.setItemsMargin(20);
+                    shopPorps.setItemsMargin(10);
                     shopPorps.pushBackCustomItem(shopListViewRootClone);
                     shopListViewRootClone = shopListViewRoot.clone();
                 }

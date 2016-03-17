@@ -372,6 +372,7 @@ var BattleField = cc.Class.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
+        PlayerData.countPlayerMCardReward();
         this.prepareBattle(stage);
     },
 
@@ -432,7 +433,6 @@ var BattleField = cc.Class.extend({
         this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
-        PlayerData.countPlayerMCardReward();
         PlayerData.updateIntoBattleTime();
     },
 
