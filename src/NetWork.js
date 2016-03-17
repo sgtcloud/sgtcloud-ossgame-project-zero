@@ -462,7 +462,6 @@ var NetWork = {
         console.log(JSON.stringify(obj));
         SgtApi.DelegateDidService.queryByDid(obj.orderId, function (result1, data) {
             console.log(result1);
-            console.log(cc.isNumber(data.updateTime));
             if(result1 && cc.isNumber(data.updateTime)){
                 var amount = obj.chargePoint.amount;
                 //判断是否为首冲
@@ -475,7 +474,6 @@ var NetWork = {
                     player.vip = 2;
                 }
                 console.log(amount);
-                console.log(obj.chargePoint.type == 'mCard');
                 if(obj.chargePoint.type === 'mCard'){
                     //第一次购买 或者 当前没有有效月卡
                     if(!player.month_card_end_time){

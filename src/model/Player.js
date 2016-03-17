@@ -342,8 +342,10 @@ var PlayerData = {
         }
     },
     addPlayerNoPayOrders: function (order) {
-        if (player.orders.indexOf(order) != -1) {
+        if (player.orders.indexOf(order) == -1) {
             player.orders.push(order);
+            this.isUpdate = true;
+            NetWork.updatePlayerSave();
         }
     },
     delePlayerNoPayOrdersById: function (order) {
