@@ -2,7 +2,7 @@
  * Created by Maron on 2016/3/4.
  */
 var ListViewMenu = BattleMenu.extend({
-    _bufferZone: 50,
+    _bufferZone: 110,
     _updateInterval: 0.1,
     _initializeListSize: false,
     items: null,
@@ -91,11 +91,7 @@ var ListViewMenu = BattleMenu.extend({
         this.listView.jumpToTop();
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     },updateInnerContainerSize:function(){
-        cc.Node.prototype.onEnter.call(this);
-        //we must call foreceDoLayout in onEnter method in h5.
-        this.listView.forceDoLayout();
         var totalHeight = this._itemTemplateHeight * this._totalCount;
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
-        this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     }
 });
