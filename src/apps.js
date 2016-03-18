@@ -440,10 +440,10 @@ function showCover() {
         NetWork.checkIn_createByValidate();
         //获取角色未删除邮件数据
         NetWork.getReadedAndUnreadedMails();
-        //轮询获取最新未读取邮件
+        //轮询获取最新未读取邮件 不建议间隔小于30s
         setInterval(function(){
-            NetWork.updatePlayerMails(10 * 1000);
-        },10  *1000);
+            NetWork.updatePlayerMails(30 * 1000);
+        },30  *1000);
     });
     cc.director.runScene(scene);
 }
