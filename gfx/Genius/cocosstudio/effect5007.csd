@@ -56,7 +56,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="boom" StartIndex="0" EndIndex="15">
-          <RenderColor A="150" R="219" G="112" B="147" />
+          <RenderColor A="255" R="219" G="112" B="147" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="89" ctype="GameNodeObjectData">
@@ -70,7 +70,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="effect/effect5007/atk02.png" Plist="" />
+            <FileData Type="Normal" Path="effect/effect5007/atk01.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

@@ -62,7 +62,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="boom" StartIndex="0" EndIndex="17">
-          <RenderColor A="150" R="218" G="112" B="214" />
+          <RenderColor A="255" R="218" G="112" B="214" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="98" ctype="GameNodeObjectData">

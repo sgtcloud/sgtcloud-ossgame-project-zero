@@ -72,6 +72,9 @@ var player = {
         "total_offline_time": 0,
         "total_play_time": 0
     },
+    "arena":{
+        "times":5
+    },
     "heroes": [
         {
             "id": "h101",
