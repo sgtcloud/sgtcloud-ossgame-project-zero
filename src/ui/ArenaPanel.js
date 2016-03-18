@@ -43,11 +43,10 @@ var ArenaPanel = BattleMenu.extend({
         }
     }, purchaseTimes: function () {
         Popup.openPopup("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-            function (popup) {
+            function () {
                 player.arena.times += CONSTS.arena_times_purchase.times;
                 PlayerData.updateResource(CONSTS.arena_times_purchase);
                 this.refreshTimes();
-                popup.hiddenPopup();
             }.bind(this));
     }, pushItem: function (data, i) {
         var item = this._itemTemplate.clone();

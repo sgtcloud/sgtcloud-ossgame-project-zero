@@ -657,6 +657,20 @@
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
         <Project Name="PackageLayer.csd" Type="Layer" />
         <Project Name="SettlementLayer.csd" Type="Layer" />
+        <Project Name="PromptIcon.csd" Type="Layer" />
+        <Folder Name="Settlement">
+          <Image Name="arrow.png" />
+          <Image Name="bg.png" />
+          <Image Name="close.png" />
+          <Image Name="lose.png" />
+          <Image Name="noChange.png" />
+          <Image Name="rank.png" />
+          <Image Name="reward.png" />
+          <Image Name="showGirl.png" />
+          <Image Name="title_1.png" />
+          <Image Name="title_2.png" />
+          <Image Name="win.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

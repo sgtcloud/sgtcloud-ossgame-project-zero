@@ -29,16 +29,11 @@ var OfflineRewardPanel = cc.Node.extend({
             offlineRewardLayerText.setString(rewards[tempKey]);
         }
         bindButtonCallback(offlineRewardLayerBtn, function () {
-            //offlineRewardLayer.removeFromParent();
             btn.visible = false;
-            //gamePopup.removeFromParent();
-            GamePopup.closePopup(offlineRewardLayer);
+            GamePopup.closePopup(this);
             PlayerData.receiveOfflineReward();
-            /*customEventHelper.sendEvent(EVENT.GOLD_VALUE_UPDATE);
-            customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
-            customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);*/
             PlayerData.updatePlayer();
-        });
+        }.bind(this));
         this.addChild(offlineRewardLayer);
     }
 });

@@ -7,7 +7,7 @@
 			<key>fairy/fairy01/fairy01_die01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{63,82}}</string>
+				<string>{{0,192},{63,82}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>fairy/fairy01/fairy01_die02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,82},{71,72}}</string>
+				<string>{{0,274},{71,72}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>fairy/fairy01/fairy01_die03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{63,0},{61,67}}</string>
+				<string>{{63,192},{61,67}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>fairy/fairy01/fairy01_die04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,559},{44,30}}</string>
+				<string>{{0,569},{44,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>fairy/fairy01/fairy01_run01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,154},{64,63}}</string>
+				<string>{{78,0},{64,63}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,7 +62,7 @@
 			<key>fairy/fairy01/fairy01_run02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,218},{57,59}}</string>
+				<string>{{78,64},{57,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -73,7 +73,7 @@
 			<key>fairy/fairy01/fairy01_run03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,336},{50,58}}</string>
+				<string>{{0,346},{50,58}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,7 +84,7 @@
 			<key>fairy/fairy01/fairy01_run04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,452},{45,54}}</string>
+				<string>{{0,462},{45,54}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -95,7 +95,7 @@
 			<key>fairy/fairy01/fairy01_run05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,394},{50,58}}</string>
+				<string>{{0,404},{50,58}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -106,7 +106,7 @@
 			<key>fairy/fairy01/fairy01_run06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,277},{57,59}}</string>
+				<string>{{78,123},{57,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -117,13 +117,35 @@
 			<key>dead/dead01/dead01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,506},{43,53}}</string>
+				<string>{{0,516},{43,53}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
 				<string>{43,53}</string>
+			</dict>
+			<key>guide/hand_point01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{78,105}}</string>
+				<key>offset</key>
+				<string>{-1,-2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,110}</string>
+			</dict>
+			<key>guide/hand_point02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,105},{78,87}}</string>
+				<key>offset</key>
+				<string>{-1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,90}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -135,14 +157,14 @@
 			<key>realTextureFileName</key>
 			<string>other.png</string>
 			<key>size</key>
-			<string>{124,603}</string>
+			<string>{141,613}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>124</integer>
+			<integer>141</integer>
 			<key>height</key>
-			<integer>603</integer>
+			<integer>613</integer>
 		</dict>
 	</dict>
 </plist>

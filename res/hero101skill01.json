@@ -1,5 +1,5 @@
 {
-  "ID": "a02394a5-bd95-4737-ab45-8b2e1b724a89",
+  "ID": "0312635a-f09a-4037-a53e-154ed12303c6",
   "Version": "2.3.3.0",
   "Name": "hero101skill01",
   "Content": {
@@ -9,7 +9,7 @@
         "Speed": 0.4167,
         "Timelines": [
           {
-            "ActionTag": -966258786,
+            "ActionTag": -1844379646,
             "Property": "Position",
             "Frames": [
               {
@@ -106,7 +106,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -966258786,
+            "ActionTag": -1844379646,
             "Property": "CColor",
             "Frames": [
               {
@@ -243,7 +243,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -966258786,
+            "ActionTag": -1844379646,
             "Property": "Alpha",
             "Frames": [
               {
@@ -330,7 +330,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -966258786,
+            "ActionTag": -1844379646,
             "Property": "AnchorPoint",
             "Frames": [
               {
@@ -427,12 +427,119 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1487049313,
+            "ActionTag": 1293825758,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "shine/shine00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 18,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round04.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round05.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/round06.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 27,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 331636314,
             "Property": "Position",
             "Frames": [
               {
-                "X": -320.0,
-                "Y": 300.0,
+                "X": 160.0,
+                "Y": 181.91,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -440,8 +547,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -240.0,
-                "Y": 300.0,
+                "X": 120.0,
+                "Y": 181.91,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 80.0,
+                "Y": 181.91,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 40.0,
+                "Y": 181.91,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -449,9 +574,18 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -160.0,
-                "Y": 300.0,
-                "FrameIndex": 6,
+                "X": 0.0,
+                "Y": 181.91,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -40.0,
+                "Y": 181.91,
+                "FrameIndex": 5,
                 "EasingData": {
                   "Type": 0
                 },
@@ -459,282 +593,35 @@
               },
               {
                 "X": -80.0,
-                "Y": 300.0,
-                "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 300.0,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 80.0,
-                "Y": 300.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 160.0,
-                "Y": 300.0,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 240.0,
-                "Y": 300.0,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 320.0,
-                "Y": 300.0,
-                "FrameIndex": 24,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 320.0,
-                "Y": 300.0,
-                "FrameIndex": 27,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1487049313,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 100.0,
-                "Y": 0.1,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.2,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.3,
+                "Y": 181.91,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
                 },
-                "ctype": "ScaleValueFrameData"
+                "ctype": "PointFrameData"
               },
               {
-                "X": 100.0,
-                "Y": 0.2,
+                "X": -120.0,
+                "Y": 181.91,
+                "FrameIndex": 7,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -160.0,
+                "Y": 181.91,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -200.0,
+                "Y": 181.91,
                 "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.1,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.2,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.3,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.2,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.1,
-                "FrameIndex": 24,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 100.0,
-                "Y": 0.1,
-                "FrameIndex": 27,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1487049313,
-            "Property": "FileData",
-            "Frames": [
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 3,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 6,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 9,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 12,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 18,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 21,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 24,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine01.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 27,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1139884138,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": -320.0,
-                "Y": 293.0,
-                "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
                 },
@@ -742,309 +629,17 @@
               },
               {
                 "X": -240.0,
-                "Y": 294.0,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -160.0,
-                "Y": 295.0,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -80.0,
-                "Y": 295.0,
-                "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 295.0,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 80.0,
-                "Y": 295.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 160.0,
-                "Y": 295.0,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 240.0,
-                "Y": 295.0,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1139884138,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 0.3,
-                "Y": 0.3,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.2,
-                "Y": 0.2,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.1,
-                "Y": 0.1,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.2,
-                "Y": 0.2,
-                "FrameIndex": 9,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.3,
-                "Y": 0.3,
-                "FrameIndex": 12,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.2,
-                "Y": 0.2,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.1,
-                "Y": 0.1,
-                "FrameIndex": 18,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.2,
-                "Y": 0.2,
-                "FrameIndex": 21,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.1,
-                "Y": 10.0,
-                "FrameIndex": 24,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.1,
-                "Y": 10.0,
-                "FrameIndex": 27,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1139884138,
-            "Property": "FileData",
-            "Frames": [
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 3,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 6,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 9,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 12,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 18,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 21,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 24,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "hero101skill01/shine03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 27,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -1479021344,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 160.0,
                 "Y": 181.91,
-                "FrameIndex": 0,
+                "FrameIndex": 10,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
               },
               {
-                "X": 80.0,
+                "X": -280.0,
                 "Y": 181.91,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 181.91,
-                "FrameIndex": 6,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -160.0,
-                "Y": 181.91,
-                "FrameIndex": 9,
+                "FrameIndex": 11,
                 "EasingData": {
                   "Type": 0
                 },
@@ -1108,7 +703,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1479021344,
+            "ActionTag": 331636314,
             "Property": "FileData",
             "Frames": [
               {
@@ -1118,6 +713,26 @@
                   "Plist": ""
                 },
                 "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 1,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 2,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -1137,6 +752,26 @@
                   "Path": "hero101skill01/hero01.png",
                   "Plist": ""
                 },
+                "FrameIndex": 4,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 5,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
                 "FrameIndex": 6,
                 "Tween": false,
                 "ctype": "TextureFrameData"
@@ -1147,7 +782,47 @@
                   "Path": "hero101skill01/hero01.png",
                   "Plist": ""
                 },
+                "FrameIndex": 7,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 8,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
                 "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 10,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/hero01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 11,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -1215,9 +890,63 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -1479021344,
+            "ActionTag": 331636314,
             "Property": "AnchorPoint",
             "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 1,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 2,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 4,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 5,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 7,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 8,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
               {
                 "X": 0.0,
                 "Y": 0.5,
@@ -1226,6 +955,174 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.5,
+                "FrameIndex": 11,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1256903318,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 90.0,
+                "Y": 450.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 90.0,
+                "Y": 250.0,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 90.0,
+                "Y": 100.0,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 90.0,
+                "Y": 100.0,
+                "FrameIndex": 27,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1256903318,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire00.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 12,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 15,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 18,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire01.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 21,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire02.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 24,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "hero101skill01/fire03.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 27,
+                "Tween": false,
+                "ctype": "TextureFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -1242,10 +1139,15 @@
         }
       ],
       "ObjectData": {
-        "Tag": 3,
+        "Tag": 8,
         "Children": [
           {
             "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shine/bg.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -1259,6 +1161,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 640,
+            "Scale9Height": 500,
             "TouchEnable": true,
             "AnchorPoint": {
               "ScaleX": 0.5
@@ -1288,8 +1192,8 @@
             "LeftMargin": -320.0,
             "RightMargin": -320.0,
             "TopMargin": -500.0,
-            "Tag": 15,
-            "ActionTag": -966258786,
+            "Tag": 9,
+            "ActionTag": -1844379646,
             "Size": {
               "X": 640.0,
               "Y": 500.0
@@ -1301,7 +1205,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/shine01.png",
+              "Path": "shine/shine00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1309,16 +1213,15 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.5
             },
             "Position": {
-              "X": -320.0,
-              "Y": 300.0
+              "X": 90.0,
+              "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 100.0,
-              "ScaleY": 0.1
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -1330,62 +1233,16 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -922.5,
-            "RightMargin": -282.5,
-            "TopMargin": -628.0,
-            "BottomMargin": -28.0,
-            "Tag": 17,
-            "ActionTag": -1487049313,
+            "LeftMargin": 70.0,
+            "RightMargin": -110.0,
+            "TopMargin": -41.0,
+            "Tag": 7,
+            "ActionTag": 1293825758,
             "Size": {
-              "X": 1205.0,
-              "Y": 656.0
+              "X": 40.0,
+              "Y": 41.0
             },
-            "Name": "shine01",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "hero101skill01/shine03.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -320.0,
-              "Y": 293.0
-            },
-            "Scale": {
-              "ScaleX": 0.3,
-              "ScaleY": 0.3
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -922.5,
-            "RightMargin": -282.5,
-            "TopMargin": -621.0,
-            "BottomMargin": -35.0,
-            "Tag": 19,
-            "ActionTag": 1139884138,
-            "Size": {
-              "X": 1205.0,
-              "Y": 656.0
-            },
-            "Name": "shine02",
+            "Name": "fire",
             "ctype": "SpriteObjectData"
           },
           {
@@ -1402,7 +1259,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 160.0,
+              "X": -280.0,
               "Y": 181.91
             },
             "Scale": {
@@ -1419,17 +1276,62 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 160.0,
-            "RightMargin": -397.0,
+            "LeftMargin": -280.0,
+            "RightMargin": 43.0,
             "TopMargin": -349.91,
             "BottomMargin": 13.91,
-            "Tag": 16,
-            "ActionTag": -1479021344,
+            "Tag": 15,
+            "ActionTag": 331636314,
             "Size": {
               "X": 237.0,
               "Y": 336.0
             },
             "Name": "hero",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "hero101skill01/fire03.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 90.0,
+              "Y": 100.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -119.5,
+            "RightMargin": -299.5,
+            "TopMargin": -189.0,
+            "BottomMargin": 11.0,
+            "Tag": 19,
+            "ActionTag": -1256903318,
+            "Size": {
+              "X": 419.0,
+              "Y": 178.0
+            },
+            "Name": "word",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -1441,10 +1343,20 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
+        "hero101skill01/fire00.png",
+        "hero101skill01/fire01.png",
+        "hero101skill01/fire02.png",
+        "hero101skill01/fire03.png",
         "hero101skill01/hero01.png",
         "hero101skill01/hero02.png",
-        "hero101skill01/shine01.png",
-        "hero101skill01/shine03.png"
+        "hero101skill01/round01.png",
+        "hero101skill01/round02.png",
+        "hero101skill01/round03.png",
+        "hero101skill01/round04.png",
+        "hero101skill01/round05.png",
+        "hero101skill01/round06.png",
+        "shine/bg.png",
+        "shine/shine00.png"
       ],
       "ctype": "GameFileData"
     }

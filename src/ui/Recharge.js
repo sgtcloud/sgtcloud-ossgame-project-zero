@@ -2,11 +2,12 @@ var RechargePanel = cc.Node.extend({
     ctor: function () {
         this._super();
         this.rechargeLayer = ccs.csLoader.createNode(res.recharge_layer_json);
+        this.isPaying = false;
         this.initData();
     },
     initData: function () {
         var root = this.rechargeLayer.getChildByName('root');
-        root.setTouchEnabled(false);
+        //root.setTouchEnabled(false);
         var vipText = root.getChildByName('text');
         this.items = root.getChildByName('box');
         //this.items.setTouchEnabled(false);
@@ -40,14 +41,23 @@ var RechargePanel = cc.Node.extend({
         }
         itemRoot.setTouchEnabled(false);
         bindTouchEventListener(function(){
-            console.log(i+',前往支付');
-            NetWork.chooseWXPay(chargePoint,function(){
-                tip.toggle('购买成功');
-            });
-        },itemRoot);
+            if(!is_weixin()){
+                tip.toggle('微信支付仅支持微信客服端中打开');
+            }else if(!this.isPaying){
+                this.isPaying = true;
+                console.log(i+',前往支付');
+                NetWork.chooseWXPay(chargePoint,function(result){
+                    if(result){
+                        tip.toggle('购买成功');
+                    }else{
+                        this.isPaying = false;
+                    }
+                }.bind(this));
+            }
+        }.bind(this),itemRoot);
     },
     openRechargePopup: function () {
-        GamePopup.openPopup(this.rechargeLayer,cc.p(335,580),false);
+        GamePopup.openPopup(this.rechargeLayer,cc.p(335,580),true);
     },
     hiddenRechargePopup: function () {
         GamePopup.closePopup(this.rechargeLayer);

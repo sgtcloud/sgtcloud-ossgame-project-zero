@@ -12,14 +12,14 @@ var Skill = function (id, lv, heroId) {
     this.getIcon = function () {
         return icon;
     }
-    this.getType = function(){
+    this.getType = function () {
         return type;
     }
     this.getUnlockLevel = function () {
         return getLevelData(data, 'unlockLevel', this.getLv());
     }
-    this.isLocked=function(){
-        return this.getLv()<this.getUnlockLevel()
+    this.isLocked = function () {
+        return this.getLv() < this.getUnlockLevel()
     }
     this.getType = function () {
         return type;
@@ -47,7 +47,7 @@ var Skill = function (id, lv, heroId) {
         return lv >= this.getMaxLevel();
     };
     this.getMaxLevel = function () {
-        return data.levelDatas[data.levelDatas.length-1]['level'];
+        return data.levelDatas[data.levelDatas.length - 1]['level'];
     }
     this.upgrade = function () {
         lv++;
@@ -86,28 +86,43 @@ var Skill = function (id, lv, heroId) {
     this.getBuffDesc = function () {
         return data.buffDesc;
     };
+    this.getPreShow = function () {
+        return data.preShow;
+    };
     this.getEffect = function (key) {
         return getEffectValue(data, key, lv);
     };
     this.isUseable = function () {
         return data.useable;
-    }
+    };
+    this.getEffectRes = function () {
+        return data.effectRes;
+    };
+    this.getEffectTarget = function () {
+        return data.effectTarget;
+    };
+    this.getEffectType = function () {
+        return data.effectType;
+    };
+    this.getAffectDelay = function () {
+        return data.affectDelay;
+    };
     /**
      * 遍历制定级别的所有技能效果,按index正序排列
      * @param lv 级别，默认为当前级别
      * @returns [{type:'技能type','value':111,'index':'排列位置'}]
      */
     this.traverseSkillEffects = function (lv) {
-        lv=lv||this.getLv();
+        lv = lv || this.getLv();
         var levelData = this.getLevelData(lv);
         var effects = [];
         for (var key in levelData) {
             //狗日的微信浏览器中没有startsWith
             if (key.indexOf("effect") == 0) {
-                var effect = $$.extend(levelData[key],{'name':key,'index':parseInt(key.replace("effect", ""))});
+                var effect = $$.extend(levelData[key], {'name': key, 'index': parseInt(key.replace("effect", ""))});
                 /*for(var i in levelData[key]){
-                    effect[i]=levelData[key][i]
-                }*/
+                 effect[i]=levelData[key][i]
+                 }*/
                 if (lv === 0) {
                     effect['value'] = 0;
                 }
