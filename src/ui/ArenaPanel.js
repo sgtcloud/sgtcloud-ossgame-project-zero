@@ -70,7 +70,8 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
-        this._arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "exchangeIndex", "checkInArena"]);
+        var methods = ["getPlayersByIndex", "addToEnd", "exchangeIndex", "checkInArena"];
+        this._arenaService = sgt.getCustomService('arena', methods);
         this._arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
             if (result) {
                 this._index = data;
@@ -97,14 +98,21 @@ var ArenaPanel = BattleMenu.extend({
         console.log('exchange index with player:[' + targetPlayerId + ']');
     }, _random: function (index, base) {
         var items = [];
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 4;) {
             var _index = index / (4 - i);
             if (i === 3) {
                 _index = index / 1.05;
             }
-            items.push(getRandomInt(_index - base, _index + base));
+            var ranNum = Math.round(getRandomInt(_index - base, _index + base));
+            if (items.indexOf(ranNum) === -1&&index!==ranNum) {
+                items.push(ranNum);
+                i++;
+            }
         }
-        items.sort();
+        items.sort(function(a,b){
+            return a-b;
+        });
+        console.log(items)
         return items;
     }, challenge: function (data, e) {
         if (player.arena.times <= 0) {
