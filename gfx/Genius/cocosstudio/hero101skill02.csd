@@ -372,7 +372,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="show" StartIndex="0" EndIndex="33">
-          <RenderColor A="150" R="176" G="196" B="222" />
+          <RenderColor A="255" R="176" G="196" B="222" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="21" ctype="GameNodeObjectData">

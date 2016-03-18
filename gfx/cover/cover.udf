@@ -32,8 +32,9 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="NewNameLayer.csd" />
+          <FilePathData Path="cover.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="NewNameLayer.csd" />
+        <ActiveDocument Path="cover.csd" />
       </Value>
     </Item>
   </Properties>

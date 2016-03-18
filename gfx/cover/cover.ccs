@@ -16,9 +16,121 @@
           <Image Name="text1.png" />
           <Image Name="bg_05.png" />
         </Folder>
-        <Project Name="cover.csd" Type="Layer" />
         <Project Name="NewNameLayer.csd" Type="Layer" />
         <PlistInfo Name="cover.csi" Type="Plist" />
+        <Folder Name="coverSprite">
+          <Folder Name="effect">
+            <Image Name="ball01.png" />
+            <Image Name="ball02.png" />
+            <Image Name="ball03.png" />
+            <Image Name="ball04.png" />
+            <Image Name="ball05.png" />
+            <Image Name="ball06.png" />
+            <Image Name="ball07.png" />
+            <Image Name="ball08.png" />
+            <Image Name="boom01.png" />
+            <Image Name="boom02.png" />
+            <Image Name="boom03.png" />
+            <Image Name="boom04.png" />
+            <Image Name="boom05.png" />
+            <Image Name="boom06.png" />
+            <Image Name="boom07.png" />
+            <Image Name="boom08.png" />
+            <Image Name="boom09.png" />
+            <Image Name="effect01_01.png" />
+            <Image Name="effect01_02.png" />
+            <Image Name="effect01_03.png" />
+            <Image Name="effect01_04.png" />
+            <Image Name="effect01_05.png" />
+            <Image Name="effect01_06.png" />
+            <Image Name="effect01_07.png" />
+            <Image Name="effect01_08.png" />
+            <Image Name="effect01_09.png" />
+            <Image Name="effect01_10.png" />
+            <Image Name="effect01_11.png" />
+            <Image Name="effect01_12.png" />
+            <Image Name="effect01_13.png" />
+            <Image Name="effect01_14.png" />
+            <Image Name="effect01_15.png" />
+            <Image Name="effect01_16.png" />
+            <Image Name="effect04_0.png" />
+            <Image Name="effect04_01.png" />
+            <Image Name="effect04_02.png" />
+            <Image Name="effect04_03.png" />
+            <Image Name="effect04_04.png" />
+            <Image Name="effect04_06.png" />
+            <Image Name="effect04_07.png" />
+            <Image Name="effect05_01.png" />
+            <Image Name="effect05_02.png" />
+            <Image Name="effect05_03.png" />
+            <Image Name="effect05_04.png" />
+            <Image Name="effect05_05.png" />
+            <Image Name="effect05_06.png" />
+            <Image Name="fly01.png" />
+            <Image Name="fly02.png" />
+            <Image Name="fly03.png" />
+            <Image Name="fly04.png" />
+            <Image Name="light01.png" />
+            <Image Name="light02.png" />
+            <Image Name="light03.png" />
+            <Image Name="light04.png" />
+            <Image Name="light05.png" />
+            <Image Name="light06.png" />
+            <Image Name="light07.png" />
+            <Image Name="light08.png" />
+            <Image Name="light09.png" />
+            <Image Name="light10.png" />
+            <Image Name="light11.png" />
+            <Image Name="light12.png" />
+            <Image Name="title01.png" />
+            <Image Name="title02.png" />
+            <Image Name="wind01.png" />
+            <Image Name="wind02.png" />
+            <Image Name="wind03.png" />
+            <Image Name="wind04.png" />
+            <Image Name="wind05.png" />
+            <Image Name="wind06.png" />
+            <Image Name="wind07.png" />
+            <Image Name="wind08.png" />
+            <Image Name="wind09.png" />
+            <Image Name="wind10.png" />
+            <Image Name="word01.png" />
+            <Image Name="word02.png" />
+            <Image Name="word05.png" />
+            <Image Name="word06.png" />
+            <Image Name="word07.png" />
+            <Image Name="word08.png" />
+            <Image Name="word3.png" />
+            <Image Name="word4.png" />
+            <Image Name="empty.png" />
+          </Folder>
+          <Folder Name="hero">
+            <Image Name="effect001.png" />
+            <Image Name="effect002.png" />
+            <Image Name="hero01_01.png" />
+            <Image Name="hero01_02.png" />
+            <Image Name="hero01_03.png" />
+            <Image Name="hero02_03.png" />
+            <Image Name="hero03_02.png" />
+            <Image Name="hero04_03.png" />
+            <Image Name="hero05.png" />
+            <Image Name="title.png" />
+          </Folder>
+          <Folder Name="other">
+            <Image Name="btn01.png" />
+            <Image Name="btn02.png" />
+            <Image Name="btn03.png" />
+            <Image Name="btn04.png" />
+            <Image Name="btn_1.png" />
+            <Image Name="btn_2.png" />
+            <Image Name="logo01.png" />
+            <Image Name="logo02.png" />
+            <Image Name="logo03.png" />
+            <Image Name="logo04.png" />
+            <Image Name="logo05.png" />
+          </Folder>
+        </Folder>
+        <Project Name="cover.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
