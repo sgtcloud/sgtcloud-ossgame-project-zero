@@ -58,52 +58,32 @@ var ActiveSkill = cc.Class.extend({
         if (skill && battle) {
             this.duration = skill.getLevelData().duration;
             this.preshow = skill.getPreShow();
+            this.type = skill.getEffectType();
+            this.targetType = skill.getEffectTarget();
+            this.affectDelay = skill.getAffectDelay();
             var effects = skill.traverseSkillEffects();
             for (var j in effects) {
+                this.effectValue = effects[j].value;
                 this.effect = effects[j].type;
-                this.updateTargets();
-                // this is an once damage skill effect
-                if (effects[j].type === "single_damage_once") {
-                    this.type = this.TYPE_ONCE;
-                    this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_magma_blaster, this.targets.length, "boom");
-                    this.shock = 2;
-                } else if (effects[j].type === "multi_damage_once") {
-                    this.type = this.TYPE_ONCE;
-                    this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_tornado_shock, this.targets.length, "boom");
-                    this.shock = 2;
-                } else if (effects[j].type === "multi_recover_once") {
-                    this.type = this.TYPE_ONCE;
-                    this.effectValue = effects[j].value * -1;
-                    this.loadSkillEffectRes(res.skill_cure_totem, this.targets.length, "boom");
-                } else if (effects[j].type.indexOf("buff") === 0) {
-                    this.type = this.TYPE_BUFF;
-                    this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes("res/icon/skills/" + skill.getIcon(), this.targets.length, "boom");
-                } else if (effects[j].type === "multi_damage_continuous") {
-                    this.type = this.TYPE_CONTINUOUS;
-                    this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_fury_crawl, this.targets.length, "boom");
-                } else if (effects[j].type === "fs_damage_once") {
-                    this.type = this.TYPE_ONCE;
-                    this.effectValue = effects[j].value;
-                    this.loadSkillEffectRes(res.skill_big_bang, 1, "boom");
-                } else {
-                    cc.log("not a active skill effect:" + effects[j].type);
-                }
             }
         }
     },
 
-    loadSkillEffectRes: function (name, num, defaultAnimName) {
-        this.hitEffects = [];
+    loadSkillEffectRes: function (filename, num, defaultAnimationName) {
+        this.skillEffects = [];
         for (var i = 0; i < num; i++) {
-            if (name.lastIndexOf("json") != -1) {
-                this.hitEffects[i] = new CCSUnit();
-                this.hitEffects[i].initSprite(name, null, defaultAnimName);
-            } else {
-                this.hitEffects[i] = new cc.Sprite(name);
+            if (filename) {
+                this.skillEffects[i] = new CCSUnit();
+                this.skillEffects[i].initSprite(filename, null, defaultAnimationName);
+            }
+        }
+    },
+
+    loadBuffIcons: function (filename, num) {
+        this.buffIcons = [];
+        for (var i = 0; i < num; i++) {
+            if (filename) {
+                this.buffIcons[i] = new cc.Sprite(filename);
             }
         }
     },
@@ -111,38 +91,43 @@ var ActiveSkill = cc.Class.extend({
     EFFECT_ZORDER_OFFSET: 2,
     EFFECT_FS_ZORDER_OFFSET: 2000,
 
-    runSkillEffect: function (target, effect, anim) {
-        if (this.type !== this.TYPE_BUFF) {
-            effect.playAnimation(anim, false, function () {
-                // count all the effects animations are finished
-                this.effectAnimFinishCount++;
-                if (this.effectAnimFinishCount >= this.targets.length) {
-                    this.onCastFinish();
-                }
-            }.bind(this));
-        }
+    playSkillEffectOnTarget: function (target, effect, anim) {
+        effect.playAnimation(anim, false, function () {
+            // count all the effects animations are finished
+            this.effectAnimFinishCount++;
+            if (this.effectAnimFinishCount >= this.targets.length) {
+                this.onCastFinish();
+            }
+        }.bind(this));
         this.battle.addSpriteRelatedNode(target, effect, this.EFFECT_ZORDER_OFFSET);
     },
 
+    ONE_ENEMY: 'ONE_ENEMY',
+    MULTI_HERO: 'MULTI_HERO',
+    ONE_HERO: 'ONE_HERO',
+    MULTI_ENEMY: 'MULTI_ENEMY',
+
     updateTargets: function () {
-        if (this.effect === "single_damage_once") {
+        if (this.targetType === this.ONE_ENEMY) {
             this.targets = [this.battle.findNextEnemy()];
-        } else if (this.effect === "multi_recover_once") {
+        } else if (this.targetType === this.MULTI_HERO) {
             this.targets = this.battle.getAllHeroes().getAllLived();
-        } else if (this.effect.indexOf("buff") === 0) {
-            this.targets = this.battle.getAllHeroes().getAllLived();
-        } else {
+        } else if (this.targetType === this.ONE_HERO) {
+            this.targets = [this.battle.findRandomHero()];
+        } else if (this.targetType === this.MULTI_ENEMY) {
             this.targets = this.battle.getAllEnemies().getAllLived();
         }
     },
 
     cast: function () {
         if (this.preshow) {
+            this.battle.pauseAllSprites();
             var heroShowUnit = CCSUnit.create('res/' + this.preshow);
             heroShowUnit.setPosition(320, 0);
             //heroShowUnit.runAction(cc.speed(heroShowUnit.animation, 2));
             heroShowUnit.playAnimation('show', false, function () {
                 heroShowUnit.removeFromParent(true);
+                this.battle.resumeAllSprites();
                 this._cast();
             }.bind(this));
             this.battle.addSprite(heroShowUnit, 3000);
@@ -151,40 +136,65 @@ var ActiveSkill = cc.Class.extend({
         }
     },
 
+    affectTargets: function () {
+        for (var i in this.targets) {
+            if (this.type !== this.TYPE_BUFF && this.targets[i]) {
+                this.targets[i].doDamage(this.effectValue);
+            }
+        }
+    },
+
+    playEffectAnimationOnTargets: function (pos, anim) {
+        this.effectAnimFinishCount = 0;
+        if (pos) {
+            for (var i in this.skillEffects) {
+                this.skillEffects[i].setPosition(pos);
+                this.skillEffects[i].playAnimation(anim, false, function () {
+                    this.onCastFinish();
+                }.bind(this));
+                this.battle.addSprite(this.skillEffects[i], this.EFFECT_FS_ZORDER_OFFSET);
+            }
+        } else {
+            for (var i in this.targets) {
+                if (this.targets[i]) {
+                    this.playSkillEffectOnTarget(this.targets[i], this.skillEffects[i], anim);
+                }
+            }
+        }
+        if (this.type === this.TYPE_BUFF) {
+            this.startBuffEffect();
+            scheduleOnce(this, function () {
+                this.onCastFinish();
+                this.clearBuffEffect();
+            }, this.duration);
+        }
+    },
+
+    initRes: function () {
+        // 'fs_enemy_once' is special , it is one effect animation but damage all enemies
+        var effectResNum = (this.effect === 'fs_enemy_once' ? 1 : this.targets.length);
+        this.loadSkillEffectRes('res/' + this.skill.getEffectRes(), effectResNum, "boom");
+        if (this.type === this.TYPE_BUFF) {
+            this.loadBuffIcons('res/icon/skills/' + this.skill.getIcon(), effectResNum);
+        }
+    },
+
     _cast: function () {
+        this.updateTargets();
         if (!this.firstCastTime) {
             this.firstCastTime = new Date().getTime();
         }
-        if (this.targets.length !== 0) {
-            this.effectAnimFinishCount = 0;
+        if (this.targets.length > 0) {
+            this.initRes();
             if (this.effect === 'fs_damage_once') {
-                this.hitEffects[0].playAnimation('boom', false, function () {
-                    // count all the effects animations are finished
-                    this.effectAnimFinishCount++;
-                    if (this.effectAnimFinishCount >= this.targets.length) {
-                        this.onCastFinish();
-                    }
-                }.bind(this));
-                this.battle.addSprite(this.hitEffects[0], this.EFFECT_FS_ZORDER_OFFSET);
+                var pos = this.battle.enemyUnits.getCenterPos();
             }
-            for (var i in this.targets) {
-                if (this.type !== this.TYPE_BUFF && this.targets[i]) {
-                    if (this.effect !== 'fs_damage_once') {
-                        this.runSkillEffect(this.targets[i], this.hitEffects[i], "boom");
-                    }
-                    this.targets[i].doDamage(this.effectValue);
-                }
-            }
-            if (this.shock) {
-                customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, this.shock);
-            }
-            if (this.type === this.TYPE_BUFF) {
-                this.startBuffEffect();
-                scheduleOnce(this, function () {
-                    this.onCastFinish();
-                    this.clearBuffEffect();
-                }, this.duration);
-            }
+            this.playEffectAnimationOnTargets(pos, "boom");
+            //this.affectDelay = 0.5;
+            //if (this.affectDelay) {
+            //    scheduleOnce(this, this.affectTargets, this.affectDelay);
+            //} else {
+            //}
         } else {
             this.waitForNextCast();
         }
@@ -199,11 +209,16 @@ var ActiveSkill = cc.Class.extend({
         }.bind(this), 0, 0.1);
     },
 
-    onCastFinish: function () {
-        for (var i in this.hitEffects) {
-            this.hitEffects[i].stopAllActions();
-            this.hitEffects[i].removeFromParent();
+    releaseEffectAnimations: function () {
+        for (var i in this.skillEffects) {
+            this.skillEffects[i].stopAllActions();
+            this.skillEffects[i].removeFromParent();
         }
+    },
+
+    onCastFinish: function () {
+        this.affectTargets();
+        this.releaseEffectAnimations();
         if (this.type === this.TYPE_CONTINUOUS) {
             var skillEndTime = new Date().getTime();
             var consumeTime = (skillEndTime - this.firstCastTime ) / 1000;
@@ -224,9 +239,9 @@ var ActiveSkill = cc.Class.extend({
             PlayerData[this.effect] += this.effectValue;
         }
         for (var i in this.targets) {
-            this.hitEffects[i].setScale(0.3);
-            this.hitEffects[i].runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.blink(1, 10)));
-            this.targets[i].addBuff(this.hitEffects[i]);
+            this.buffIcons[i].setScale(0.3);
+            this.buffIcons[i].runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.blink(1, 10)));
+            this.targets[i].addBuff(this.buffIcons[i]);
         }
     },
 
@@ -235,7 +250,7 @@ var ActiveSkill = cc.Class.extend({
             PlayerData[this.effect] -= this.effectValue;
         }
         for (var i in this.targets) {
-            this.targets[i].removeBuff(this.hitEffects[i]);
+            this.targets[i].removeBuff(this.buffIcons[i]);
         }
     }
 
@@ -245,24 +260,14 @@ var TapSkill = ActiveSkill.extend({
 
     ctor: function (battle, target) {
         this._super(null, battle);
-        this.targets = [target];
-        this.loadSkillEffectRes(res.tap_effect_json, 1);
         this.type = this.TYPE_ONCE;
+        this.targetType = this.ONE_ENEMY;
     },
 
-    TAP_ZORDER_OFFSET: 999,
-
     cast: function (pos) {
-        this.effectAnimFinishCount = 0;
-        this.hitEffects[0].playAnimation("boom" + getRandomInt(1, 4), false, function () {
-            // count all the effects animations are finished
-            this.effectAnimFinishCount++;
-            if (this.effectAnimFinishCount >= this.targets.length) {
-                this.onCastFinish();
-            }
-        }.bind(this));
-        this.hitEffects[0].setPosition(pos);
-        this.battle.addSprite(this.hitEffects[0], this.TAP_ZORDER_OFFSET);
-        this.targets[0].doDamage(PlayerData.getTotalHit(true));
+        this.updateTargets();
+        this.effectValue = PlayerData.getTotalHit(true);
+        this.loadSkillEffectRes(res.tap_effect_json, 1);
+        this.playEffectAnimationOnTargets(pos, 'boom' + getRandomInt(1, 4));
     }
 });

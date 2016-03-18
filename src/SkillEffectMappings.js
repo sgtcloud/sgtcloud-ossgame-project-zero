@@ -57,9 +57,10 @@ var SkillEffectMappings = {
     ,
     "buff_ctr_chance_rate": {"name": "提升暴击概率比例", "type": "rate", "fixed": 0}
     ,
-    "buff_ctr_modify_rate": {"name": "提升暴击倍率比例", "type": "rate", "fixed": 0},
-    "fs_damage_once": {"name": "fs_damage_once", type: "int", "fixed": 0}
-}
+    "buff_ctr_modify_rate": {"name": "提升暴击倍率比例", "type": "rate", "fixed": 0}
+    ,
+    "fs_damage_once": {"name": "全屏幕攻击", type: "int", "fixed": 0}
+};
 String.prototype.mapping = function (obj) {
     return this.replace(/{\s*\w+\s*}/gi, function (matchs) {
         var match = matchs.replace(/{\s*|\s*}/g, "");

@@ -309,7 +309,7 @@ var SkillListMenu = BattleMenu.extend({
         atk_text.ignoreContentAdaptWithSize(true);
         tatk_text.ignoreContentAdaptWithSize(true);
         customEventHelper.bindListener(EVENT.UPGRADE_HERO_ATTACK, function () {
-            var totalHit = PlayerData.getTotalHit();
+            var totalHit = PlayerData.getTotalHit(true);
             var totalAttack = PlayerData.getTotalAttack();
             tatk_text.setString(Math.floor(totalHit));
             atk_text.setString(Math.floor(totalAttack));
