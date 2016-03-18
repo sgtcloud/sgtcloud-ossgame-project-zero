@@ -657,6 +657,7 @@
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
         <Project Name="PackageLayer.csd" Type="Layer" />
         <Project Name="SettlementLayer.csd" Type="Layer" />
+        <Project Name="PromptIcon.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

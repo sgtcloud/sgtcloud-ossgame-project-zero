@@ -1,0 +1,160 @@
+{
+  "ID": "6f41b335-29b8-49ed-91d1-a03c3b5903b6",
+  "Version": "2.3.3.0",
+  "Name": "PromptIcon",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 107,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "CallBackType": "Click",
+            "Tag": 108,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/key.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 45,
+                "Scale9Height": 45,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.2143,
+                  "Y": 1.0
+                },
+                "RightMargin": 110.0,
+                "Tag": 109,
+                "ActionTag": 461777449,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "key",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "LabelText": "99999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 38.285,
+                  "Y": 16.1885
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2735,
+                  "Y": 0.5396
+                },
+                "PreSize": {
+                  "X": 0.65,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 38.285,
+                "RightMargin": 10.715,
+                "TopMargin": 3.8115,
+                "BottomMargin": 6.1885,
+                "Tag": 110,
+                "ActionTag": -437976001,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 20.0
+                },
+                "Name": "text",
+                "ctype": "TextBMFontObjectData"
+              }
+            ],
+            "ActionTag": 71445266,
+            "Size": {
+              "X": 140.0,
+              "Y": 30.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 140.0,
+          "Y": 30.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "font/white16-export.fnt",
+        "font/white16-export.png",
+        "mainUI/key.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

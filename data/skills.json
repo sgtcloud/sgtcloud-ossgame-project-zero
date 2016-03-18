@@ -1252,7 +1252,7 @@
         "level": 1,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 100
+          "value": -100
         },
         "upgrade": {
           "unit": "gold",
@@ -1266,7 +1266,7 @@
         "level": 2,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 300
+          "value": -300
         },
         "upgrade": {
           "unit": "gold",
@@ -1280,7 +1280,7 @@
         "level": 3,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 500
+          "value": -500
         },
         "upgrade": {
           "unit": "gold",
@@ -1294,7 +1294,7 @@
         "level": 4,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 1000
+          "value": -1000
         },
         "upgrade": {
           "unit": "gold",
@@ -1308,7 +1308,7 @@
         "level": 5,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 1500
+          "value": -1500
         },
         "upgrade": {
           "unit": "gold",
