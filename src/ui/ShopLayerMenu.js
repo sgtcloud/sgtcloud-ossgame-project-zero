@@ -107,8 +107,7 @@ var ShopLayerMenu = BattleMenu.extend({
             } else {
                 content = '当前钻石不足';
             }
-            Popup.openPopup("友情提示", content, function (popup) {
-                popup.hiddenPopup();
+            Popup.openPopup("友情提示", content, function () {
                 this.falg = true;
             }.bind(this));
         };
@@ -185,19 +184,17 @@ var ShopLayerMenu = BattleMenu.extend({
                 PlayerData.updatePlayer();
             } else {
                 if (price.unit === 'gem') {
-                    Popup.openPopup("友情提示", "当前钻石不足", function (popup) {
-                        popup.hiddenPopup();
+                    Popup.openPopup("友情提示", "当前钻石不足", function () {
                         //进入充值页面。
                         RechargePanel.open();
                     });
                 } else if (price.unit === 'gold') {
-                    Popup.openPopup("友情提示", "当前金币不足,点击确定进入点金页面", function (popup) {
-                        popup.hiddenPopup();
+                    Popup.openPopup("友情提示", "当前金币不足,点击确定进入点金页面", function () {
                         this.showMenuLayer("moneyTree_tab");
                     }.bind(this));
                 } else {
-                    Popup.openPopup("友情提示", "当前该资源不足", function (popup) {
-                        popup.hiddenPopup();
+                    Popup.openPopup("友情提示", "当前该资源不足", function () {
+
                     });
                 }
             }

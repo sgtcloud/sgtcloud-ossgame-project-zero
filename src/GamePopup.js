@@ -35,16 +35,21 @@ var GamePopup = cc.Layer.extend({
     //初始化对话框
     _initDialog: function()
     {
+        var winSize = cc.winSize;
         if(this.pos){
             this.target.setPosition(this.pos);
         }else{
-            var winSize = cc.winSize;
             //背景
             this.target.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
         }
-        this.addChild(this.target,0);
-        this.setVisible(true);
-        this._listener.setSwallowTouches(this.isSwallow);
+        this._colorLayer = new cc.LayerColor(cc.color.BLACK, 640, 960);
+        //this._colorLayer.setTouchEnabled(this.isSwallow);
+        this._colorLayer.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
+        this._colorLayer.setOpacity(150);
+        this.addChild(this._colorLayer,0);
+        this.addChild(this.target,1);
+        //this.setVisible(true);
+        //this._listener.setSwallowTouches(this.isSwallow);
     }
 
 });

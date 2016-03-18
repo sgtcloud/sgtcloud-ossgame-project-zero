@@ -17,10 +17,9 @@ var Popup = cc.Node.extend({
         var btn = root.getChildByName("btn").getChildByName("btn");
 
         bindButtonCallback(btn, function () {
+            this.hiddenPopup();
             if (typeof _callback === 'function') {
                 _callback(this);
-            }else{
-                this.hiddenPopup();
             }
         }.bind(this));
     },
@@ -36,4 +35,11 @@ Popup.openPopup = function(title, content, _callback){
     var popup = new Popup(title, content, _callback);
     popup.openPopup();
 }
+
+Popup.alert = function(){
+
+};
+Popup.confirm = function(){
+
+};
 

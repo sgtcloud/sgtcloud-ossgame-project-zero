@@ -57,7 +57,7 @@ var RechargePanel = cc.Node.extend({
         }.bind(this),itemRoot);
     },
     openRechargePopup: function () {
-        GamePopup.openPopup(this.rechargeLayer,cc.p(335,580),false);
+        GamePopup.openPopup(this.rechargeLayer,cc.p(335,580),true);
     },
     hiddenRechargePopup: function () {
         GamePopup.closePopup(this.rechargeLayer);

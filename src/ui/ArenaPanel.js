@@ -29,12 +29,11 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.buyBtn.addClickEventListener(function () {
             Popup.openPopup("购买挑战次数", "是否花费" + CONSTS.arena_times_purchase.value + unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-                function (popup) {
+                function () {
                     CONSTS.arena_challenge_times += CONSTS.arena_times_purchase.times;
                     PlayerData.updateResource(CONSTS.arena_times_purchase);
                     PlayerData.updatePlayer();
                     this.refreshTimes();
-                    popup.hiddenPopup();
                 }.bind(this));
         });
         function unit2Text(unit) {
