@@ -65,7 +65,7 @@ var CheckInPanel = cc.Node.extend({
     },
     addIconClickEventListener: function (icon, image2, image3, data) {
         icon.addClickEventListener(function () {
-            NetWork.checkin(icon, image2, image3, data.bonus,this.signLayer);
+            NetWork.checkin(icon, image2, image3, data.bonus,this);
         }.bind(this));
     },
 });

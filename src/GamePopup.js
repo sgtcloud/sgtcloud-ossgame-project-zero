@@ -43,22 +43,15 @@ var GamePopup = cc.Layer.extend({
             this.target.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
         }
         this._colorLayer = new cc.LayerColor(cc.color.BLACK, 640, 960);
-        //this._colorLayer.setTouchEnabled(this.isSwallow);
         this._colorLayer.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
         this._colorLayer.setOpacity(150);
         this.addChild(this._colorLayer,0);
         this.addChild(this.target,1);
-        //this.setVisible(true);
-        //this._listener.setSwallowTouches(this.isSwallow);
     }
-
 });
-var gamePopup;
 GamePopup.openPopup = function (layer,pos,isSwallow){
-    gamePopup = new GamePopup(layer,pos,isSwallow);
-    popup(gamePopup,101);
+    popup(new GamePopup(layer,pos,isSwallow),101);
 };
 GamePopup.closePopup = function (layer){
-    layer.removeFromParent();
-    gamePopup.removeFromParent();
+    layer.parent.removeFromParent();
 };
