@@ -37,7 +37,7 @@ var HeroListMenu = ListViewMenu.extend({
         var upgradeSkillLayoutTemp = this._skillTemp.getChildByName('upgrade_btn');
         this._upgradeSkillBtnTemp = upgradeSkillLayoutTemp.getChildByName('btn');
         this._upgradeSkillPosition = upgradeSkillLayoutTemp.getPosition();
-
+        //this.listView._innerContainer.setLayoutComponentEnabled(true);
         //this.views = {};
         {//填充英雄的列表 循环填充英雄+技能
             var that = this;
@@ -54,19 +54,10 @@ var HeroListMenu = ListViewMenu.extend({
                 customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                        //setTimeout(function () {
                         that.pause();
                         that.buildHeroMenu(_hero);
-                        var items = that.listView.getItems();
-                        var totalHeight = that._itemTemplateHeight * that._totalCount;
-                        for (var k in items) {
-                            var ite = items[k];
-                            ite.setPositionY(totalHeight - k * ite.height);
-                            that.updateItem(k, ite);
-                        }
-                        that.onEnter();
+                        that.updateInnerContainerSize();
                         that.resume();
-                        //}, 100);
                     }
                 });
             }
