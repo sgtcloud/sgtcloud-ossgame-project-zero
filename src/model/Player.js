@@ -130,7 +130,7 @@ var PlayerData = {
     statistics_res_values: ["gem", "relic", "gold"],
     modelPlayer: null,
     modelSave: null,
-    sequence: [],
+    isUpdate: false,
     serverCurrentTime: 0,
     mails: {
         "readedMails": [],
@@ -347,8 +347,10 @@ var PlayerData = {
         }
     },
     addPlayerNoPayOrders: function (order) {
-        if (player.orders.indexOf(order) != -1) {
+        if (player.orders.indexOf(order) == -1) {
             player.orders.push(order);
+            this.isUpdate = true;
+            NetWork.updatePlayerSave();
         }
     },
     delePlayerNoPayOrdersById: function (order) {

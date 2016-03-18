@@ -13,6 +13,908 @@
       "AnimationList": [],
       "ObjectData": {
         "Tag": 41,
+        "Children": [
+          {
+            "BackColorAlpha": 127,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 121,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Settlement/bg.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 329.5148,
+                  "Y": 484.07
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5149,
+                  "Y": 0.5042
+                },
+                "PreSize": {
+                  "X": 0.9438,
+                  "Y": 0.4896
+                },
+                "LeftMargin": 27.5148,
+                "RightMargin": 8.4852,
+                "TopMargin": 240.93,
+                "BottomMargin": 249.07,
+                "Tag": 123,
+                "ActionTag": -601662900,
+                "Size": {
+                  "X": 604.0,
+                  "Y": 470.0
+                },
+                "Name": "bg",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Settlement/showGirl.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 84.9059,
+                  "Y": 552.7479
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1327,
+                  "Y": 0.5758
+                },
+                "PreSize": {
+                  "X": 0.3844,
+                  "Y": 0.3594
+                },
+                "LeftMargin": -38.0941,
+                "RightMargin": 432.0941,
+                "TopMargin": 234.7521,
+                "BottomMargin": 380.2479,
+                "Tag": 124,
+                "ActionTag": 1959810324,
+                "Size": {
+                  "X": 246.0,
+                  "Y": 345.0
+                },
+                "Name": "showGirl",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Settlement/close.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 360.3036,
+                  "Y": 332.2953
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.563,
+                  "Y": 0.3461
+                },
+                "PreSize": {
+                  "X": 0.2406,
+                  "Y": 0.0427
+                },
+                "LeftMargin": 283.3036,
+                "RightMargin": 202.6964,
+                "TopMargin": 607.2047,
+                "BottomMargin": 311.7953,
+                "Tag": 125,
+                "ActionTag": 1647554805,
+                "Size": {
+                  "X": 154.0,
+                  "Y": 41.0
+                },
+                "Name": "close",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/hero_icon.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 269.3405,
+                  "Y": 511.1642
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4208,
+                  "Y": 0.5325
+                },
+                "PreSize": {
+                  "X": 0.1406,
+                  "Y": 0.0938
+                },
+                "LeftMargin": 224.3405,
+                "RightMargin": 325.6595,
+                "TopMargin": 403.8358,
+                "BottomMargin": 466.1642,
+                "Tag": 133,
+                "ActionTag": -1986738504,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "player_icon",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Settlement/reward.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 293.9578,
+                  "Y": 418.3765
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4593,
+                  "Y": 0.4358
+                },
+                "PreSize": {
+                  "X": 0.2406,
+                  "Y": 0.0417
+                },
+                "LeftMargin": 216.9578,
+                "RightMargin": 269.0422,
+                "TopMargin": 521.6235,
+                "BottomMargin": 398.3765,
+                "Tag": 141,
+                "ActionTag": -1346271788,
+                "Size": {
+                  "X": 154.0,
+                  "Y": 40.0
+                },
+                "Name": "reward_text",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "materialUI/gold.png",
+                  "Plist": "MaterialUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 321.9717,
+                  "Y": 417.8167
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5031,
+                  "Y": 0.4352
+                },
+                "PreSize": {
+                  "X": 0.0625,
+                  "Y": 0.0417
+                },
+                "LeftMargin": 301.9717,
+                "RightMargin": 298.0283,
+                "TopMargin": 522.1833,
+                "BottomMargin": 397.8167,
+                "Tag": 142,
+                "ActionTag": 762072328,
+                "Size": {
+                  "X": 40.0,
+                  "Y": 40.0
+                },
+                "Name": "reward_icon",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "LabelText": "9999999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white22-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 353.7297,
+                  "Y": 417.8169
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5527,
+                  "Y": 0.4352
+                },
+                "PreSize": {
+                  "X": 0.2531,
+                  "Y": 0.0271
+                },
+                "LeftMargin": 353.7297,
+                "RightMargin": 124.2703,
+                "TopMargin": 529.1831,
+                "BottomMargin": 404.8169,
+                "Tag": 143,
+                "ActionTag": -213695541,
+                "Size": {
+                  "X": 162.0,
+                  "Y": 26.0
+                },
+                "Name": "reward_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 209.5153,
+                  "Y": 382.0737
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3274,
+                  "Y": 0.398
+                },
+                "PreSize": {
+                  "X": 0.625,
+                  "Y": 0.3333
+                },
+                "LeftMargin": 209.5153,
+                "RightMargin": 30.4847,
+                "TopMargin": 257.9263,
+                "BottomMargin": 382.0737,
+                "Tag": 126,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/title_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 275,
+                    "Scale9Height": 185,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 137.3116,
+                      "Y": 241.323
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3433,
+                      "Y": 0.7541
+                    },
+                    "PreSize": {
+                      "X": 0.6875,
+                      "Y": 0.5781
+                    },
+                    "LeftMargin": -0.1884,
+                    "RightMargin": 125.1884,
+                    "TopMargin": -13.823,
+                    "BottomMargin": 148.823,
+                    "Tag": 134,
+                    "ActionTag": 1720641410,
+                    "Size": {
+                      "X": 275.0,
+                      "Y": 185.0
+                    },
+                    "Name": "title",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/arrow.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 58,
+                    "Scale9Height": 58,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5671,
+                      "ScaleY": 0.4551
+                    },
+                    "Position": {
+                      "X": 324.4612,
+                      "Y": 131.1933
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8112,
+                      "Y": 0.41
+                    },
+                    "PreSize": {
+                      "X": 0.145,
+                      "Y": 0.1813
+                    },
+                    "LeftMargin": 291.5684,
+                    "RightMargin": 50.4316,
+                    "TopMargin": 157.2031,
+                    "BottomMargin": 104.7969,
+                    "Tag": 128,
+                    "ActionTag": -100191732,
+                    "Size": {
+                      "X": 58.0,
+                      "Y": 58.0
+                    },
+                    "Name": "arrow",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/rank.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 154,
+                    "Scale9Height": 41,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 183.7646,
+                      "Y": 153.1704
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4594,
+                      "Y": 0.4787
+                    },
+                    "PreSize": {
+                      "X": 0.385,
+                      "Y": 0.1281
+                    },
+                    "LeftMargin": 106.7646,
+                    "RightMargin": 139.2354,
+                    "TopMargin": 146.3296,
+                    "BottomMargin": 132.6704,
+                    "Tag": 131,
+                    "ActionTag": 1992141269,
+                    "Size": {
+                      "X": 154.0,
+                      "Y": 41.0
+                    },
+                    "Name": "now_rank",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/rank.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 154,
+                    "Scale9Height": 41,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 183.7646,
+                      "Y": 100.1594
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4594,
+                      "Y": 0.313
+                    },
+                    "PreSize": {
+                      "X": 0.385,
+                      "Y": 0.1281
+                    },
+                    "LeftMargin": 106.7646,
+                    "RightMargin": 139.2354,
+                    "TopMargin": 199.3406,
+                    "BottomMargin": 79.6594,
+                    "Tag": 132,
+                    "ActionTag": -174245675,
+                    "Size": {
+                      "X": 154.0,
+                      "Y": 41.0
+                    },
+                    "Name": "before_rank",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "9999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white22-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 182.0839,
+                      "Y": 155.1705
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 88,
+                      "G": 246,
+                      "B": 24
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4552,
+                      "Y": 0.4849
+                    },
+                    "PreSize": {
+                      "X": 0.2325,
+                      "Y": 0.0812
+                    },
+                    "LeftMargin": 182.0839,
+                    "RightMargin": 124.9161,
+                    "TopMargin": 151.8295,
+                    "BottomMargin": 142.1705,
+                    "Tag": 136,
+                    "ActionTag": -28818850,
+                    "Size": {
+                      "X": 93.0,
+                      "Y": 26.0
+                    },
+                    "Name": "now_num",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "9999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white22-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 182.0839,
+                      "Y": 102.1594
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4552,
+                      "Y": 0.3192
+                    },
+                    "PreSize": {
+                      "X": 0.2325,
+                      "Y": 0.0812
+                    },
+                    "LeftMargin": 182.0839,
+                    "RightMargin": 124.9161,
+                    "TopMargin": 204.8406,
+                    "BottomMargin": 89.1594,
+                    "Tag": 135,
+                    "ActionTag": -60788434,
+                    "Size": {
+                      "X": 93.0,
+                      "Y": 26.0
+                    },
+                    "Name": "before_num",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 2013815598,
+                "Size": {
+                  "X": 400.0,
+                  "Y": 320.0
+                },
+                "Name": "win",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 209.5153,
+                  "Y": 382.0737
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3274,
+                  "Y": 0.398
+                },
+                "PreSize": {
+                  "X": 0.625,
+                  "Y": 0.3333
+                },
+                "LeftMargin": 209.5153,
+                "RightMargin": 30.4847,
+                "TopMargin": 257.9263,
+                "BottomMargin": 382.0737,
+                "Tag": 127,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/title_2.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 770,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 135.5376,
+                      "Y": 259.9672
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.3388,
+                      "Y": 0.8124
+                    },
+                    "PreSize": {
+                      "X": 0.6875,
+                      "Y": 0.5781
+                    },
+                    "LeftMargin": -1.9624,
+                    "RightMargin": 126.9624,
+                    "TopMargin": -32.4672,
+                    "BottomMargin": 167.4672,
+                    "Tag": 137,
+                    "ActionTag": -4938815,
+                    "Size": {
+                      "X": 275.0,
+                      "Y": 185.0
+                    },
+                    "Name": "title",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/rank.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 770,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 183.3207,
+                      "Y": 153.2141
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4583,
+                      "Y": 0.4788
+                    },
+                    "PreSize": {
+                      "X": 0.385,
+                      "Y": 0.1281
+                    },
+                    "LeftMargin": 106.3207,
+                    "RightMargin": 139.6793,
+                    "TopMargin": 146.2859,
+                    "BottomMargin": 132.7141,
+                    "Tag": 138,
+                    "ActionTag": 702427497,
+                    "Size": {
+                      "X": 154.0,
+                      "Y": 41.0
+                    },
+                    "Name": "before_rank",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "LabelText": "9999",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white22-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 182.3522,
+                      "Y": 155.3774
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4559,
+                      "Y": 0.4856
+                    },
+                    "PreSize": {
+                      "X": 0.2325,
+                      "Y": 0.0812
+                    },
+                    "LeftMargin": 182.3522,
+                    "RightMargin": 124.6478,
+                    "TopMargin": 151.6226,
+                    "BottomMargin": 142.3774,
+                    "Tag": 139,
+                    "ActionTag": -469789969,
+                    "Size": {
+                      "X": 93.0,
+                      "Y": 26.0
+                    },
+                    "Name": "before_num",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Settlement/noChange.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 770,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 260.3713,
+                      "Y": 101.6476
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6509,
+                      "Y": 0.3176
+                    },
+                    "PreSize": {
+                      "X": 0.385,
+                      "Y": 0.1281
+                    },
+                    "LeftMargin": 183.3713,
+                    "RightMargin": 62.6287,
+                    "TopMargin": 197.8524,
+                    "BottomMargin": 81.1476,
+                    "Tag": 140,
+                    "ActionTag": -583890975,
+                    "Size": {
+                      "X": 154.0,
+                      "Y": 41.0
+                    },
+                    "Name": "text",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -1949292126,
+                "Size": {
+                  "X": 400.0,
+                  "Y": 320.0
+                },
+                "Name": "lose",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1173906109,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
         "Size": {
           "X": 640.0,
           "Y": 960.0
@@ -20,7 +922,22 @@
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
-      "UsedResources": [],
+      "UsedResources": [
+        "font/white22-export.fnt",
+        "font/white22-export.png",
+        "mainUI/hero_icon.png",
+        "MaterialUI.plist",
+        "MaterialUI.png",
+        "Settlement/arrow.png",
+        "Settlement/bg.png",
+        "Settlement/close.png",
+        "Settlement/noChange.png",
+        "Settlement/rank.png",
+        "Settlement/reward.png",
+        "Settlement/showGirl.png",
+        "Settlement/title_1.png",
+        "Settlement/title_2.png"
+      ],
       "ctype": "GameFileData"
     }
   },
