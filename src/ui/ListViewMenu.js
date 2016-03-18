@@ -94,7 +94,6 @@ var ListViewMenu = BattleMenu.extend({
         var y=this.listView.getInnerContainer().getPositionY();
         var topY=this.listView.getContentSize().height-this.listView.getInnerContainer().getContentSize().height;
         var diff=y-topY;
-        console.log("diff:"+diff);
         var totalHeight = this._itemTemplateHeight * this._totalCount;
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this.listView._jumpToDestination(this.listView.getInnerContainer().getPositionX(),this.listView.getContentSize().height-totalHeight+diff);
