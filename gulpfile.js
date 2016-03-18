@@ -18,7 +18,7 @@ var config = require('./project.json');
 
 var DEST = 'publish/html5/';
 
-var VERSION = "0.0.4";
+var VERSION = "0.0.4.1";
 
 var sourceCodeList = [];
 
@@ -48,7 +48,7 @@ gulp.task('compileJs', ['clean'], function () {
 gulp.task('copyIndex', ['clean'], function () {
     return gulp.src('index.html')
         .pipe(replace('指尖骑士挂机版', '指尖骑士挂机版' + VERSION))
-        .pipe(replace('lib/cocos2d-js-v3.10.js', 'game.min.js'))
+        .pipe(replace('frameworks/cocos2d-html5/CCBoot.js', 'game.min.js'))
         .pipe(replace('<script cocos src="main.js"></script>', ''))
         .pipe(gulp.dest(DEST));
 });
@@ -65,6 +65,8 @@ gulp.task('copyConf', ['clean'], function () {
             json.jsList = [];
             json.showFPS = true;
             json.noCache = false;
+            json.modules = undefined;
+            json.engineDir = undefined;
             return json; // must return JSON object.
         }))
         .pipe(gulp.dest(DEST));
