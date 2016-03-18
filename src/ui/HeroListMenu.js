@@ -54,12 +54,10 @@ var HeroListMenu = ListViewMenu.extend({
                 customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                        //setTimeout(function () {
-                        //that.pause();
+                        that.pause();
                         that.buildHeroMenu(_hero);
                         that.updateInnerContainerSize();
-                        //that.resume();
-                        //}, 100);
+                        that.resume();
                     }
                 });
             }
