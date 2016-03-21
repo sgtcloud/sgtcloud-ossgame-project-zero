@@ -430,13 +430,14 @@ function getUrlParam(name) {
 
 var tipTemplate;
 function showCover() {
-    var scene = ccs.load(res.cover_scene_json).node;
+    var scene = ccs.load(res.cover_scene_json).node.getChildByName('root');
     var animation = ccs.load(res.cover_scene_json).action;
+    scene.setAnchorPoint(cc.p(0, 0));
     scene.runAction(animation);
     animation.play('show', false);
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
-    var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
+    var loginBtn = scene.getChildByName("cover_login_btn");
     //判断当前用户是否存在角色
     if (!PlayerData.modelPlayer) {
         loginBtn.setVisible(false);
