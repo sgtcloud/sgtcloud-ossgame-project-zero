@@ -70,9 +70,7 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
-        var methods = ["getPlayersByIndex", "addToEnd", "exchangeIndex", "checkInArena"];
-        this._arenaService = sgt.getCustomService('arena', methods);
-        this._arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
+        NetWork.arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
             if (result) {
                 this._index = data;
                 this.refreshItems(this._index);
