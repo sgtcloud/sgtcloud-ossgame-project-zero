@@ -59,7 +59,7 @@
     "src/ui/Recharge.js",
     "src/ui/ShopLayerMenu.js",
     "src/ui/RankLayerMenu.js",
-    "src/NetWork.js",
+    "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"
   ]

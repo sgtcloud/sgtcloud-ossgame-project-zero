@@ -53,6 +53,10 @@ var BattlePanel = cc.Node.extend({
         bindButtonCallback(this.maill_btn, function () {
             MailPanel.open();
         }.bind(this));
+        this.rechargeBtn = root.getChildByName('recharge_btn');
+        bindButtonCallback(this.rechargeBtn, function () {
+            RechargePanel.open();
+        }.bind(this));
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {

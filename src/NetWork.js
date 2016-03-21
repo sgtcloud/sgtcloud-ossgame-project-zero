@@ -1,4 +1,4 @@
-var NetWork = {
+var Network = {
     loginSuccess: true,
     getSgtApi: function () {
         return SgtApi || sgt;
@@ -73,14 +73,32 @@ var NetWork = {
         if (SgtApi) {
             SgtApi.init({appId: 'h5game', async: true});
             if (typeof wx != "undefined" && is_weixin()) {
-                SgtApi.WxCentralService.getSignature(function (result, data) {
-                    if (result)
-                        this.autoWxLoginService(data);
-                    else {
-                        console.error("获取签名失败");
-                        this.loginSuccess = false;
-                    }
-                }.bind(this));
+                if (getUrlParam('code')) {
+                    SgtApi.WxCentralService.getUserAccessToken(getUrlParam('code'), function (result, data) {
+                        SgtApi.context.openid = data.openid;
+                        SgtApi.context.access_token = data.access_token;
+                        localStorage.setItem('sgt-' + SgtApi.context.appId + '-access_token', SgtApi.context.access_token);
+                        localStorage.setItem('sgt-' + SgtApi.context.appId + '-openid', SgtApi.context.openid);
+                        SgtApi.WxCentralService.getSignature(function (result, data) {
+                            if (result)
+                                this.autoWxLoginService(data);
+                            else {
+                                console.error("获取签名失败");
+                                this.loginSuccess = false;
+                            }
+                        }.bind(this));
+                    }.bind(this));
+                }else{
+                    SgtApi.WxCentralService.getSignature(function (result, data) {
+                        if (result)
+                            this.autoWxLoginService(data);
+                        else {
+                            console.error("获取签名失败");
+                            this.loginSuccess = false;
+                        }
+                    }.bind(this));
+
+                }
             } else {
                 this.autoLoginService();
             }
@@ -393,12 +411,14 @@ var NetWork = {
             if (cc.isString(playName)) {
                 sgt.PlayerService.getByName(playName, 1, 1, function (result, data) {
                     if (cc.isArray(data) && data.length > 0) {
-                        Popup.openPopup("友情提醒", '角色名"' + playName + '"已存在');
+                        BasicPopup.alert("友情提醒", '角色名"' + playName + '"已存在');
                     } else {
-                        tip2.toggle({'delay': 10, 'text': '正在创建角色并初始化游戏。。。。。。'});
+                        tip2.toggle({'delay': 30, 'text': '正在创建角色并初始化游戏。。。。。。'});
                         this._addPlayer(playName, function () {
                             createPlayer.removeFromParent(true);
                             initGame();
+                            PlayerData.isUpdate= true;
+                            Network.updatePlayerSave();
                             tip2.stopAllActions();
                             tip2.setVisible(false);
                             scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
@@ -406,7 +426,7 @@ var NetWork = {
                     }
                 }.bind(this));
             } else {
-                Popup.openPopup("友情提醒", "角色名字格式不正确");
+                BasicPopup.alert("友情提醒", "角色名字格式不正确");
             }
         }.bind(this));
         bindButtonCallback(dice, function () {

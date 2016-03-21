@@ -138,7 +138,7 @@ var PlayerData = {
     },
     init: function () {
         var localSave = localStorage.getItem("save");
-        if (NetWork.isLoginSuccess()) {
+        if (Network.isLoginSuccess()) {
             if (cc.isObject(this.modelSave)) {
                 localSave = this.modelSave.content;
             } else {
@@ -176,11 +176,11 @@ var PlayerData = {
         this.refreshGlobeProps();
         this.countOfflineReward();
         setInterval(function () {
-            NetWork.updatePlayerSave();
+            Network.updatePlayerSave();
         }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
-        NetWork.updatePlayer(this.modelPlayer);
+        Network.updatePlayer(this.modelPlayer);
     }
     ,
     getHeroes: function () {
@@ -350,7 +350,7 @@ var PlayerData = {
         if (player.orders.indexOf(order) == -1) {
             player.orders.push(order);
             this.isUpdate = true;
-            NetWork.updatePlayerSave();
+            Network.updatePlayerSave();
         }
     },
     delePlayerNoPayOrdersById: function (order) {
@@ -381,7 +381,7 @@ var PlayerData = {
                         "unit": CONSTS.monthCard_daily_bonus.unit,
                         "value": (CONSTS.monthCard_daily_bonus.value * days)
                     });
-                    NetWork.sendSystemMail('月卡title', '月卡内容', attachment, function (result, data) {
+                    Network.sendSystemMail('月卡title', '月卡内容', attachment, function (result, data) {
                     });
                 }
             }
