@@ -313,6 +313,49 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/pvp_rank.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 247,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 461.01,
+                  "Y": 52.14
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7684,
+                  "Y": 0.5214
+                },
+                "PreSize": {
+                  "X": 0.4117,
+                  "Y": 0.31
+                },
+                "LeftMargin": 337.51,
+                "RightMargin": 15.49,
+                "TopMargin": 32.36,
+                "BottomMargin": 36.64,
+                "Tag": 93,
+                "ActionTag": -2017836028,
+                "Size": {
+                  "X": 247.0,
+                  "Y": 31.0
+                },
+                "Name": "PVP_rank",
+                "ctype": "ImageViewObjectData"
+              },
+              {
                 "LabelText": "Lv.999",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
@@ -493,8 +536,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 156.1087,
-                  "Y": 21.4471
+                  "X": 155.8026,
+                  "Y": 21.2976
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -503,17 +546,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2602,
-                  "Y": 0.2145
+                  "X": 0.2597,
+                  "Y": 0.213
                 },
                 "PreSize": {
                   "X": 0.135,
                   "Y": 0.29
                 },
-                "LeftMargin": 115.6087,
-                "RightMargin": 403.3913,
-                "TopMargin": 64.0529,
-                "BottomMargin": 6.9471,
+                "LeftMargin": 115.3026,
+                "RightMargin": 403.6974,
+                "TopMargin": 64.2024,
+                "BottomMargin": 6.7976,
                 "Tag": 132,
                 "ActionTag": -15783237,
                 "Size": {
@@ -536,8 +579,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 156.1087,
-                  "Y": 21.4471
+                  "X": 155.8026,
+                  "Y": 21.2976
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -546,17 +589,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2602,
-                  "Y": 0.2145
+                  "X": 0.2597,
+                  "Y": 0.213
                 },
                 "PreSize": {
                   "X": 0.135,
                   "Y": 0.29
                 },
-                "LeftMargin": 115.6087,
-                "RightMargin": 403.3913,
-                "TopMargin": 64.0529,
-                "BottomMargin": 6.9471,
+                "LeftMargin": 115.3026,
+                "RightMargin": 403.6974,
+                "TopMargin": 64.2024,
+                "BottomMargin": 6.7976,
                 "Tag": 133,
                 "ActionTag": -1753439383,
                 "Size": {
@@ -564,6 +607,49 @@
                   "Y": 29.0
                 },
                 "Name": "Max_gold",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rankUI/fight.png",
+                  "Plist": "RankUI.plist"
+                },
+                "Scale9Width": 81,
+                "Scale9Height": 29,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 155.8026,
+                  "Y": 21.2976
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2597,
+                  "Y": 0.213
+                },
+                "PreSize": {
+                  "X": 0.135,
+                  "Y": 0.29
+                },
+                "LeftMargin": 115.3026,
+                "RightMargin": 403.6974,
+                "TopMargin": 64.2024,
+                "BottomMargin": 6.7976,
+                "Tag": 92,
+                "ActionTag": -303457822,
+                "Size": {
+                  "X": 81.0,
+                  "Y": 29.0
+                },
+                "Name": "Fight",
                 "ctype": "ImageViewObjectData"
               },
               {

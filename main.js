@@ -53,7 +53,7 @@ cc.game.onStart = function () {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-    NetWork.initAndAutoLogin();
+    Network.initAndAutoLogin();
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(/*cc.sys.os === cc.sys.OS_IOS ? true : false*/false);
     // Adjust viewport meta
@@ -65,7 +65,7 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        if(NetWork.isLoginSuccess()){
+        if(Network.isLoginSuccess()){
             initDatas();
             showCover();
         }

@@ -70,7 +70,8 @@ var res = {
     tap_effect_json: "res/effect5000.json",
 
     prompt1_layer_json: "res/Prompt1Layer.json",
-
+    prompt2_layer_json: "res/Prompt2Layer.json",
+    prompt_icon_json: "res/PromptIcon.json",
     offline_reward_layer: "res/OfflineRewardLayer.json",
     shop_view: "res/ShopView.json",
     shop_layer: "res/ShopLayer.json",
