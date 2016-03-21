@@ -95,7 +95,7 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 
 [下载win单文件版python](http://pan.baidu.com/s/1kTRdh3p)
 
-*python自带的简单服务器无法自定义参数，会产生缓存的问题，建议开发中使用功能更完整的服务器软件，例如nginx
+*python自带的简单服务器无法自定义参数，会产生缓存的问题，建议开发中使用功能更完整的服务器软件，例如[nginx](http://nginx.org/en/download.html)
 
 ##### webstorm方式
 
