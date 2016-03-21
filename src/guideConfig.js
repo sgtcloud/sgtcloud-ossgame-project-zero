@@ -217,6 +217,6 @@ var guideConfig = {
     eventType: 2,
     isShowMask: false,  //默认为不打开
     isAutoGuide: false,  //自动引导
-    isShowTouchPoint: true,
+    isShowTouchPoint: false,
     isFingerAnimation: true
 };
