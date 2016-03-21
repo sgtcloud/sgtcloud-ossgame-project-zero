@@ -120,12 +120,12 @@ var ComplexPopup = Popup.extend({
 
 });
 
-ComplexPopup.alert = function(title, content, _callback){
-    var popup = new ComplexPopup(title, content,Popup.ALERT_TYPE, _callback);
+ComplexPopup.alert = function(title, content,resources, _callback){
+    var popup = new ComplexPopup(title, content,Popup.ALERT_TYPE,resources, _callback);
     popup.openPopup();
 };
-ComplexPopup.confirm = function(title, content, _callback){
-    var popup = new ComplexPopup(title, content,Popup.CONFIRM_TYPE, _callback);
+ComplexPopup.confirm = function(title, content,resources, _callback){
+    var popup = new ComplexPopup(title, content,Popup.CONFIRM_TYPE,resources, _callback);
     popup.openPopup();
 };
 /*Popup.openPopup = function(title, content, _callback){
