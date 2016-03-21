@@ -52,7 +52,7 @@ var StatisticsPanel = cc.Node.extend({
         total_life_rate.setString(this.convert(PlayerData.globe_life_rate,"rate"));
         total_attack_rate.setString(this.convert(PlayerData.globe_attack_rate+PlayerData.buff_attack_rate,"rate"));
         total_attack_value.setString(this.convert(PlayerData.getTotalAttack()));
-        total_tap_value.setString(this.convert(PlayerData.getTotalHit()));
+        total_tap_value.setString(this.convert(PlayerData.getTotalHit(true)));
         total_life_value.setString(this.convert(PlayerData.getTotalLife()));
         total_ctr_chance_rate.setString(this.convert(PlayerData.globe_ctr_chance_rate+PlayerData.buff_ctr_chance_rate,"rate"));
         total_ctr_modify_rate.setString(this.convert(PlayerData.globe_ctr_modify_rate+PlayerData.buff_ctr_modify_rate,"rate"));

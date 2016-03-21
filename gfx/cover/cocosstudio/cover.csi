@@ -7,12 +7,63 @@
       <FilePathData Path="coverUI/bg_14.png" />
       <FilePathData Path="coverUI/btn1.png" />
       <FilePathData Path="coverUI/btn2.png" />
-      <FilePathData Path="coverUI/logo.png" />
       <FilePathData Path="coverUI/text.png" />
       <FilePathData Path="coverUI/text1.png" />
-      <FilePathData Path="coverUI/yellow_btn_a.png" />
-      <FilePathData Path="coverUI/yellow_btn_b.png" />
+      <FilePathData Path="coverSprite/effect/ball01.png" />
+      <FilePathData Path="coverSprite/effect/ball02.png" />
+      <FilePathData Path="coverSprite/effect/ball03.png" />
+      <FilePathData Path="coverSprite/effect/ball04.png" />
+      <FilePathData Path="coverSprite/effect/ball05.png" />
+      <FilePathData Path="coverSprite/effect/ball06.png" />
+      <FilePathData Path="coverSprite/effect/ball07.png" />
+      <FilePathData Path="coverSprite/effect/ball08.png" />
+      <FilePathData Path="coverSprite/effect/boom01.png" />
+      <FilePathData Path="coverSprite/effect/boom02.png" />
+      <FilePathData Path="coverSprite/effect/boom03.png" />
+      <FilePathData Path="coverSprite/effect/boom04.png" />
+      <FilePathData Path="coverSprite/effect/boom05.png" />
+      <FilePathData Path="coverSprite/effect/boom06.png" />
+      <FilePathData Path="coverSprite/effect/boom07.png" />
+      <FilePathData Path="coverSprite/effect/boom08.png" />
+      <FilePathData Path="coverSprite/effect/boom09.png" />
+      <FilePathData Path="coverSprite/effect/effect04_0.png" />
+      <FilePathData Path="coverSprite/effect/effect04_01.png" />
+      <FilePathData Path="coverSprite/effect/effect04_02.png" />
+      <FilePathData Path="coverSprite/effect/effect04_03.png" />
+      <FilePathData Path="coverSprite/effect/effect04_04.png" />
+      <FilePathData Path="coverSprite/effect/effect04_06.png" />
+      <FilePathData Path="coverSprite/effect/effect04_07.png" />
+      <FilePathData Path="coverSprite/effect/effect05_01.png" />
+      <FilePathData Path="coverSprite/effect/effect05_02.png" />
+      <FilePathData Path="coverSprite/effect/effect05_03.png" />
+      <FilePathData Path="coverSprite/effect/effect05_04.png" />
+      <FilePathData Path="coverSprite/effect/effect05_05.png" />
+      <FilePathData Path="coverSprite/effect/effect05_06.png" />
+      <FilePathData Path="coverSprite/effect/empty.png" />
+      <FilePathData Path="coverSprite/effect/title01.png" />
+      <FilePathData Path="coverSprite/effect/title02.png" />
+      <FilePathData Path="coverSprite/hero/effect001.png" />
+      <FilePathData Path="coverSprite/hero/effect002.png" />
+      <FilePathData Path="coverSprite/hero/hero01_01.png" />
+      <FilePathData Path="coverSprite/hero/hero01_02.png" />
+      <FilePathData Path="coverSprite/hero/hero01_03.png" />
+      <FilePathData Path="coverSprite/hero/hero02_03.png" />
+      <FilePathData Path="coverSprite/hero/hero03_02.png" />
+      <FilePathData Path="coverSprite/hero/hero04_03.png" />
+      <FilePathData Path="coverSprite/hero/hero05.png" />
+      <FilePathData Path="coverSprite/hero/title.png" />
+      <FilePathData Path="coverSprite/other/btn_1.png" />
+      <FilePathData Path="coverSprite/other/btn_2.png" />
+      <FilePathData Path="coverSprite/other/btn01.png" />
+      <FilePathData Path="coverSprite/other/btn02.png" />
+      <FilePathData Path="coverSprite/other/btn03.png" />
+      <FilePathData Path="coverSprite/other/btn04.png" />
+      <FilePathData Path="coverSprite/other/logo01.png" />
+      <FilePathData Path="coverSprite/other/logo02.png" />
+      <FilePathData Path="coverSprite/other/logo03.png" />
+      <FilePathData Path="coverSprite/other/logo04.png" />
+      <FilePathData Path="coverSprite/other/logo05.png" />
     </ImageFiles>
-    <MaxSize Width="1024" Height="1024" />
+    <MaxSize Width="2000" Height="2000" />
   </Content>
 </PlistInfoProjectFile>

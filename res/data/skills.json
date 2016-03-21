@@ -284,6 +284,10 @@
     "buffDesc": "无",
     "icon": "s10001.png",
     "type": 1,
+    "preShow": "hero101skill01.json",
+    "effectRes": "effect5001.json",
+    "effectType": "TYPE_ONCE",
+    "effectTarget": "ONE_ENEMY",
     "levelDatas": [
       {
         "level": 0,
@@ -377,6 +381,10 @@
     "buffDesc": "无",
     "icon": "s10002.png",
     "type": 1,
+    "preShow": "hero101skill02.json",
+    "effectRes": "effect5005.json",
+    "effectType": "TYPE_ONCE",
+    "effectTarget": "MULTI_ENEMY",
     "levelDatas": [
       {
         "level": 0,
@@ -749,6 +757,9 @@
     "buffDesc": "提升金币获得{effect1_value}",
     "icon": "s10003.png",
     "type": 1,
+    "effectRes": "effect5006.json",
+    "effectType": "TYPE_BUFF",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,
@@ -842,6 +853,10 @@
     "buffDesc": "持续伤害{effect1_value}点",
     "icon": "s10004.png",
     "type": 1,
+    "preShow": "hero102skill02.json",
+    "effectRes": "effect5002.json",
+    "effectType": "TYPE_CONTINUOUS",
+    "effectTarget": "MULTI_ENEMY",
     "levelDatas": [
       {
         "level": 0,
@@ -1214,6 +1229,10 @@
     "buffDesc": "无",
     "icon": "s10005.png",
     "type": 1,
+    "preShow": "hero103skill01.json",
+    "effectRes": "effect5004.json",
+    "effectType": "TYPE_ONCE",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,
@@ -1233,7 +1252,7 @@
         "level": 1,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 100
+          "value": -100
         },
         "upgrade": {
           "unit": "gold",
@@ -1247,7 +1266,7 @@
         "level": 2,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 300
+          "value": -300
         },
         "upgrade": {
           "unit": "gold",
@@ -1261,7 +1280,7 @@
         "level": 3,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 500
+          "value": -500
         },
         "upgrade": {
           "unit": "gold",
@@ -1275,7 +1294,7 @@
         "level": 4,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 1000
+          "value": -1000
         },
         "upgrade": {
           "unit": "gold",
@@ -1289,7 +1308,7 @@
         "level": 5,
         "effect1": {
           "type": "multi_recover_once",
-          "value": 1500
+          "value": -1500
         },
         "upgrade": {
           "unit": "gold",
@@ -1307,6 +1326,9 @@
     "buffDesc": "提升点击伤害{effect1_value}",
     "icon": "s10006.png",
     "type": 1,
+    "effectRes": "effect5007.json",
+    "effectType": "TYPE_BUFF",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,
@@ -1679,6 +1701,9 @@
     "buffDesc": "提升攻击伤害{effect1_value}",
     "icon": "s10007.png",
     "type": 1,
+    "effectRes": "effect5008.json",
+    "effectType": "TYPE_BUFF",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,
@@ -1772,6 +1797,10 @@
     "buffDesc": "无",
     "icon": "s10008.png",
     "type": 1,
+    "preShow": "hero104skill02.json",
+    "effectRes": "effect5003.json",
+    "effectType": "TYPE_ONCE",
+    "effectTarget": "MULTI_ENEMY",
     "levelDatas": [
       {
         "level": 0,
@@ -1798,7 +1827,7 @@
           "value": 240
         },
         "unlockLevel": 2,
-        "duration": 10,
+        "duration": 0,
         "cooldown": 10
       },
       {
@@ -1812,7 +1841,7 @@
           "value": 556
         },
         "unlockLevel": 7,
-        "duration": 15,
+        "duration": 0,
         "cooldown": 10
       },
       {
@@ -1826,7 +1855,7 @@
           "value": 1318
         },
         "unlockLevel": 12,
-        "duration": 20,
+        "duration": 0,
         "cooldown": 10
       },
       {
@@ -1840,7 +1869,7 @@
           "value": 3205
         },
         "unlockLevel": 17,
-        "duration": 25,
+        "duration": 0,
         "cooldown": 10
       },
       {
@@ -1854,7 +1883,7 @@
           "value": 8004
         },
         "unlockLevel": 22,
-        "duration": 30,
+        "duration": 0,
         "cooldown": 10
       }
     ]
@@ -2144,6 +2173,9 @@
     "buffDesc": "提升暴击概率{effect1_value}",
     "icon": "s10009.png",
     "type": 1,
+    "effectRes": "effect5009.json",
+    "effectType": "TYPE_BUFF",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,
@@ -2237,6 +2269,9 @@
     "buffDesc": "提升暴击倍率{effect1_value}",
     "icon": "s10010.png",
     "type": 1,
+    "effectRes": "effect5010.json",
+    "effectType": "TYPE_BUFF",
+    "effectTarget": "MULTI_HERO",
     "levelDatas": [
       {
         "level": 0,

@@ -105,6 +105,13 @@ var SpriteGroup = function (_sprites) {
             sprites[i].resume();
         }
     };
+
+    this.getCenterPos = function () {
+        return this._centerPos;
+    };
+    this.setCenterPos = function (pos) {
+        this._centerPos = pos;
+    };
     this.findLowestHpUnit = function () {
         var lowestHpUnit = null;
         var hp = 0;
@@ -250,12 +257,14 @@ var BattleField = cc.Class.extend({
         for (i = 1; i < MAX_POS; i++) {
             this.heroPos[i - 1] = spritesLayer.getChildByName('hero' + i);
         }
+        this.heroUnits.setCenterPos(spritesLayer.getChildByName('hero_center').getPosition());
 
         //initBattle enemies sprites positions
         this.enemyPos = [];
         for (i = 1; i < MAX_POS; i++) {
             this.enemyPos[i - 1] = spritesLayer.getChildByName('enemy' + i);
         }
+        this.enemyUnits.setCenterPos(spritesLayer.getChildByName('enemy_center').getPosition());
     },
 
     loadStageBackground: function (stage) {

@@ -4,7 +4,8 @@
 var EquipListMenu = ListViewMenu.extend({
     ctor: function (battle) {
         this._super(battle, res.equip_layer_json);
-        this._spawnCount = 5;
+        this._spawnCount = 6;
+        this._bufferZone=50;
         this.listView = this.root.getChildByName('equip_list');
         this.heroView = ccs.csLoader.createNode(res.equip_hero_view_json).getChildByName('root');
         this.equipView = ccs.csLoader.createNode(res.equip_view_json).getChildByName('root');

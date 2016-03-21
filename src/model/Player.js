@@ -214,7 +214,7 @@ var PlayerData = {
         var val = 0;
         for (var i in this.heroes) {
             var hero = this.heroes[i];
-            if (hero.getLv() > 0 && !hero.isDead()) {
+            if (hero.getLv() > 0 && (!hero.isDead() || dead)) {
                 val += hero[prop]();
             }
         }
