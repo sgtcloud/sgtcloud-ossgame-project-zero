@@ -308,7 +308,11 @@ var Network = {
     },
     getCurrentRanksByType: function (leaderId, callback) {
         if (cc.isObject(PlayerData.modelPlayer)) {
-            SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+            if(leaderId === 'pvp_rank'){
+                SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+            }else{
+                SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+            }
         } else {
             return callback(false);
         }
