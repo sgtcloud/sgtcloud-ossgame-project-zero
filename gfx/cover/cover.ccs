@@ -129,6 +129,69 @@
             <Image Name="logo04.png" />
             <Image Name="logo05.png" />
           </Folder>
+          <PlistImageFolder Image="cover.png" PListFile="cover.plist" Name=".cover_PList.Dir">
+            <PlistImageFile Name="coverUI_bg_03.png" Key="coverUI/bg_03.png" />
+            <PlistImageFile Name="coverUI_bg_05.png" Key="coverUI/bg_05.png" />
+            <PlistImageFile Name="coverUI_bg_14.png" Key="coverUI/bg_14.png" />
+            <PlistImageFile Name="coverUI_btn1.png" Key="coverUI/btn1.png" />
+            <PlistImageFile Name="coverUI_btn2.png" Key="coverUI/btn2.png" />
+            <PlistImageFile Name="coverUI_text.png" Key="coverUI/text.png" />
+            <PlistImageFile Name="coverUI_text1.png" Key="coverUI/text1.png" />
+            <PlistImageFile Name="coverSprite_effect_ball01.png" Key="coverSprite/effect/ball01.png" />
+            <PlistImageFile Name="coverSprite_effect_ball02.png" Key="coverSprite/effect/ball02.png" />
+            <PlistImageFile Name="coverSprite_effect_ball03.png" Key="coverSprite/effect/ball03.png" />
+            <PlistImageFile Name="coverSprite_effect_ball04.png" Key="coverSprite/effect/ball04.png" />
+            <PlistImageFile Name="coverSprite_effect_ball05.png" Key="coverSprite/effect/ball05.png" />
+            <PlistImageFile Name="coverSprite_effect_ball06.png" Key="coverSprite/effect/ball06.png" />
+            <PlistImageFile Name="coverSprite_effect_ball07.png" Key="coverSprite/effect/ball07.png" />
+            <PlistImageFile Name="coverSprite_effect_ball08.png" Key="coverSprite/effect/ball08.png" />
+            <PlistImageFile Name="coverSprite_effect_boom01.png" Key="coverSprite/effect/boom01.png" />
+            <PlistImageFile Name="coverSprite_effect_boom02.png" Key="coverSprite/effect/boom02.png" />
+            <PlistImageFile Name="coverSprite_effect_boom03.png" Key="coverSprite/effect/boom03.png" />
+            <PlistImageFile Name="coverSprite_effect_boom04.png" Key="coverSprite/effect/boom04.png" />
+            <PlistImageFile Name="coverSprite_effect_boom05.png" Key="coverSprite/effect/boom05.png" />
+            <PlistImageFile Name="coverSprite_effect_boom06.png" Key="coverSprite/effect/boom06.png" />
+            <PlistImageFile Name="coverSprite_effect_boom07.png" Key="coverSprite/effect/boom07.png" />
+            <PlistImageFile Name="coverSprite_effect_boom08.png" Key="coverSprite/effect/boom08.png" />
+            <PlistImageFile Name="coverSprite_effect_boom09.png" Key="coverSprite/effect/boom09.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_0.png" Key="coverSprite/effect/effect04_0.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_01.png" Key="coverSprite/effect/effect04_01.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_02.png" Key="coverSprite/effect/effect04_02.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_03.png" Key="coverSprite/effect/effect04_03.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_04.png" Key="coverSprite/effect/effect04_04.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_06.png" Key="coverSprite/effect/effect04_06.png" />
+            <PlistImageFile Name="coverSprite_effect_effect04_07.png" Key="coverSprite/effect/effect04_07.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_01.png" Key="coverSprite/effect/effect05_01.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_02.png" Key="coverSprite/effect/effect05_02.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_03.png" Key="coverSprite/effect/effect05_03.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_04.png" Key="coverSprite/effect/effect05_04.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_05.png" Key="coverSprite/effect/effect05_05.png" />
+            <PlistImageFile Name="coverSprite_effect_effect05_06.png" Key="coverSprite/effect/effect05_06.png" />
+            <PlistImageFile Name="coverSprite_effect_empty.png" Key="coverSprite/effect/empty.png" />
+            <PlistImageFile Name="coverSprite_effect_title01.png" Key="coverSprite/effect/title01.png" />
+            <PlistImageFile Name="coverSprite_effect_title02.png" Key="coverSprite/effect/title02.png" />
+            <PlistImageFile Name="coverSprite_hero_effect001.png" Key="coverSprite/hero/effect001.png" />
+            <PlistImageFile Name="coverSprite_hero_effect002.png" Key="coverSprite/hero/effect002.png" />
+            <PlistImageFile Name="coverSprite_hero_hero01_01.png" Key="coverSprite/hero/hero01_01.png" />
+            <PlistImageFile Name="coverSprite_hero_hero01_02.png" Key="coverSprite/hero/hero01_02.png" />
+            <PlistImageFile Name="coverSprite_hero_hero01_03.png" Key="coverSprite/hero/hero01_03.png" />
+            <PlistImageFile Name="coverSprite_hero_hero02_03.png" Key="coverSprite/hero/hero02_03.png" />
+            <PlistImageFile Name="coverSprite_hero_hero03_02.png" Key="coverSprite/hero/hero03_02.png" />
+            <PlistImageFile Name="coverSprite_hero_hero04_03.png" Key="coverSprite/hero/hero04_03.png" />
+            <PlistImageFile Name="coverSprite_hero_hero05.png" Key="coverSprite/hero/hero05.png" />
+            <PlistImageFile Name="coverSprite_hero_title.png" Key="coverSprite/hero/title.png" />
+            <PlistImageFile Name="coverSprite_other_btn_1.png" Key="coverSprite/other/btn_1.png" />
+            <PlistImageFile Name="coverSprite_other_btn_2.png" Key="coverSprite/other/btn_2.png" />
+            <PlistImageFile Name="coverSprite_other_btn01.png" Key="coverSprite/other/btn01.png" />
+            <PlistImageFile Name="coverSprite_other_btn02.png" Key="coverSprite/other/btn02.png" />
+            <PlistImageFile Name="coverSprite_other_btn03.png" Key="coverSprite/other/btn03.png" />
+            <PlistImageFile Name="coverSprite_other_btn04.png" Key="coverSprite/other/btn04.png" />
+            <PlistImageFile Name="coverSprite_other_logo01.png" Key="coverSprite/other/logo01.png" />
+            <PlistImageFile Name="coverSprite_other_logo02.png" Key="coverSprite/other/logo02.png" />
+            <PlistImageFile Name="coverSprite_other_logo03.png" Key="coverSprite/other/logo03.png" />
+            <PlistImageFile Name="coverSprite_other_logo04.png" Key="coverSprite/other/logo04.png" />
+            <PlistImageFile Name="coverSprite_other_logo05.png" Key="coverSprite/other/logo05.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="cover.csd" Type="Node" />
       </RootFolder>
