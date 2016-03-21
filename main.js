@@ -55,7 +55,7 @@ cc.game.onStart = function () {
     }
     Network.initAndAutoLogin();
     // Pass true to enable retina display, disabled by default to improve performance
-    cc.view.enableRetina(/*cc.sys.os === cc.sys.OS_IOS ? true : false*/false);
+    cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? true : false);
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size
@@ -65,7 +65,7 @@ cc.game.onStart = function () {
     //load resources
     LoaderScene.preload(g_resources, function () {
         // cc.director.runScene(new HelloWorldScene());
-        if(Network.isLoginSuccess()){
+        if (Network.isLoginSuccess()) {
             initDatas();
             showCover();
         }
