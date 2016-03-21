@@ -134,8 +134,20 @@ var EVENT = {
     /**
      * 暂停和恢复战斗的动画
      */
-    PAUSE_THE_BATTLE : 'PAUSE_THE_BATTLE',
-    RESUME_THE_BATTLE : 'RESUME_THE_BATTLE'
+    PAUSE_THE_BATTLE: 'PAUSE_THE_BATTLE',
+    RESUME_THE_BATTLE: 'RESUME_THE_BATTLE',
+    /**
+     * 挑战竞技场
+     */
+    "FIGHT_ARENA_BATTLE": "FIGHT_ARENA_BATTLE",
+    /**
+     * 挑战竞技场胜利
+     */
+    "WIN_ARENA_BATTLE":"WIN_ARENA_BATTLE",
+    /**
+     * 挑战竞技场失败
+     */
+    "LOSE_ARENA_BATTLE":"LOSE_ARENA_BATTLE"
 
 };
 
