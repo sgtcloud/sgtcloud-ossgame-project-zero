@@ -43,7 +43,7 @@ var ArenaPanel = BattleMenu.extend({
                 return "宝物";
         }
     }, purchaseTimes: function () {
-        BasicPopup.openPopup("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
+        BasicPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
             function () {
                 player.arena.times += CONSTS.arena_times_purchase.times;
                 PlayerData.updateResource(CONSTS.arena_times_purchase);
@@ -114,7 +114,7 @@ var ArenaPanel = BattleMenu.extend({
         return items;
     }, challenge: function (data, e) {
         if (player.arena.times <= 0) {
-            BasicPopup.openPopup("友情提示", "当日挑战次数已用完，点确定前往购买次数", function () {
+            BasicPopup.confirm("友情提示", "当日挑战次数已用完，点确定前往购买次数", function () {
                 //popup.hiddenPopup();
                 this.purchaseTimes();
             }.bind(this));
