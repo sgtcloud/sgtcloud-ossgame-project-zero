@@ -531,4 +531,4 @@
         }
     };
     window.NetWork = new NetWorkClass();
-})()
+})();
