@@ -194,7 +194,6 @@
           </PlistImageFolder>
         </Folder>
         <Project Name="cover.csd" Type="Node" />
-        <Project Name="Scene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
