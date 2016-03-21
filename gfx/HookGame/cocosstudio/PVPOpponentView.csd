@@ -62,11 +62,11 @@
               </AbstractNodeData>
               <AbstractNodeData Name="rank_num" ActionTag="1839535962" Tag="335" IconVisible="False" LeftMargin="311.8658" RightMargin="223.1342" TopMargin="21.7493" BottomMargin="93.2507" LabelText="999" ctype="TextBMFontObjectData">
                 <Size X="55.0000" Y="20.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="311.8658" Y="103.2507" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="339.3658" Y="103.2507" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="229" B="2" />
-                <PrePosition X="0.5286" Y="0.7648" />
+                <PrePosition X="0.5752" Y="0.7648" />
                 <PreSize X="0.0932" Y="0.1481" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>

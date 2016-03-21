@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5149" Y="0.5042" />
                 <PreSize X="0.9438" Y="0.4896" />
-                <FileData Type="Normal" Path="Settlement/bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="settlement/bg.png" Plist="SettlementUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="showGirl" ActionTag="1959810324" Tag="124" IconVisible="False" LeftMargin="-38.0941" RightMargin="432.0941" TopMargin="234.7521" BottomMargin="380.2479" ctype="SpriteObjectData">
@@ -28,7 +28,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1327" Y="0.5758" />
                 <PreSize X="0.3844" Y="0.3594" />
-                <FileData Type="Normal" Path="Settlement/showGirl.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="settlement/showGirl.png" Plist="SettlementUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="close" ActionTag="1647554805" Tag="125" IconVisible="False" LeftMargin="283.3036" RightMargin="202.6964" TopMargin="607.2047" BottomMargin="311.7953" ctype="SpriteObjectData">
@@ -39,7 +39,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5630" Y="0.3461" />
                 <PreSize X="0.2406" Y="0.0427" />
-                <FileData Type="Normal" Path="Settlement/close.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="settlement/close.png" Plist="SettlementUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="player_icon" ActionTag="-1986738504" Tag="133" IconVisible="False" LeftMargin="224.3405" RightMargin="325.6595" TopMargin="403.8358" BottomMargin="466.1642" ctype="SpriteObjectData">
@@ -61,7 +61,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4593" Y="0.4358" />
                 <PreSize X="0.2406" Y="0.0417" />
-                <FileData Type="Normal" Path="Settlement/reward.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="settlement/reward.png" Plist="SettlementUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="reward_icon" ActionTag="762072328" Tag="142" IconVisible="False" LeftMargin="301.9717" RightMargin="298.0283" TopMargin="522.1833" BottomMargin="397.8167" ctype="SpriteObjectData">
@@ -96,7 +96,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.3433" Y="0.7541" />
                     <PreSize X="0.6875" Y="0.5781" />
-                    <FileData Type="Normal" Path="Settlement/title_1.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/title_1.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="arrow" ActionTag="-100191732" Tag="128" IconVisible="False" LeftMargin="291.5684" RightMargin="50.4316" TopMargin="157.2031" BottomMargin="104.7969" Scale9Width="58" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="58.0000" Y="58.0000" />
@@ -106,7 +106,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.8112" Y="0.4100" />
                     <PreSize X="0.1450" Y="0.1813" />
-                    <FileData Type="Normal" Path="Settlement/arrow.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/arrow.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="now_rank" ActionTag="1992141269" Tag="131" IconVisible="False" LeftMargin="106.7646" RightMargin="139.2354" TopMargin="146.3296" BottomMargin="132.6704" Scale9Width="154" Scale9Height="41" ctype="ImageViewObjectData">
                     <Size X="154.0000" Y="41.0000" />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4594" Y="0.4787" />
                     <PreSize X="0.3850" Y="0.1281" />
-                    <FileData Type="Normal" Path="Settlement/rank.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/rank.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="before_rank" ActionTag="-174245675" Tag="132" IconVisible="False" LeftMargin="106.7646" RightMargin="139.2354" TopMargin="199.3406" BottomMargin="79.6594" Scale9Width="154" Scale9Height="41" ctype="ImageViewObjectData">
                     <Size X="154.0000" Y="41.0000" />
@@ -126,7 +126,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4594" Y="0.3130" />
                     <PreSize X="0.3850" Y="0.1281" />
-                    <FileData Type="Normal" Path="Settlement/rank.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/rank.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="now_num" ActionTag="-28818850" Tag="136" IconVisible="False" LeftMargin="182.0839" RightMargin="124.9161" TopMargin="151.8295" BottomMargin="142.1705" LabelText="9999" ctype="TextBMFontObjectData">
                     <Size X="93.0000" Y="26.0000" />
@@ -171,7 +171,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.3388" Y="0.8124" />
                     <PreSize X="0.6875" Y="0.5781" />
-                    <FileData Type="Normal" Path="Settlement/title_2.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/title_2.png" Plist="SettlementUI.plist" />
                     <BlendFunc Src="770" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="before_rank" ActionTag="702427497" Tag="138" IconVisible="False" LeftMargin="106.3207" RightMargin="139.6793" TopMargin="146.2859" BottomMargin="132.7141" ctype="SpriteObjectData">
@@ -182,7 +182,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4583" Y="0.4788" />
                     <PreSize X="0.3850" Y="0.1281" />
-                    <FileData Type="Normal" Path="Settlement/rank.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/rank.png" Plist="SettlementUI.plist" />
                     <BlendFunc Src="770" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="before_num" ActionTag="-469789969" Tag="139" IconVisible="False" LeftMargin="182.3522" RightMargin="124.6478" TopMargin="151.6226" BottomMargin="142.3774" LabelText="9999" ctype="TextBMFontObjectData">
@@ -203,7 +203,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.6509" Y="0.3176" />
                     <PreSize X="0.3850" Y="0.1281" />
-                    <FileData Type="Normal" Path="Settlement/noChange.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="settlement/noChange.png" Plist="SettlementUI.plist" />
                     <BlendFunc Src="770" Dst="771" />
                   </AbstractNodeData>
                 </Children>

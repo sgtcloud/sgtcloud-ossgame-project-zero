@@ -1,0 +1,19 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="SettlementUI" Type="Plist" ID="99b29c37-a875-41b8-998a-dc02b83b051a" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="settlement/arrow.png" />
+      <FilePathData Path="settlement/bg.png" />
+      <FilePathData Path="settlement/close.png" />
+      <FilePathData Path="settlement/lose.png" />
+      <FilePathData Path="settlement/noChange.png" />
+      <FilePathData Path="settlement/rank.png" />
+      <FilePathData Path="settlement/reward.png" />
+      <FilePathData Path="settlement/showGirl.png" />
+      <FilePathData Path="settlement/title_1.png" />
+      <FilePathData Path="settlement/title_2.png" />
+      <FilePathData Path="settlement/win.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
