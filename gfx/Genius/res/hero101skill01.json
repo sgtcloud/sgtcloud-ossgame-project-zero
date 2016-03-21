@@ -1259,7 +1259,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": -280.0,
+              "X": 160.0,
               "Y": 181.91
             },
             "Scale": {
@@ -1276,8 +1276,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -280.0,
-            "RightMargin": 43.0,
+            "LeftMargin": 160.0,
+            "RightMargin": -397.0,
             "TopMargin": -349.91,
             "BottomMargin": 13.91,
             "Tag": 15,
@@ -1292,7 +1292,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hero101skill01/fire03.png",
+              "Path": "hero101skill01/fire00.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -1305,7 +1305,7 @@
             },
             "Position": {
               "X": 90.0,
-              "Y": 100.0
+              "Y": 450.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1323,8 +1323,8 @@
             },
             "LeftMargin": -119.5,
             "RightMargin": -299.5,
-            "TopMargin": -189.0,
-            "BottomMargin": 11.0,
+            "TopMargin": -539.0,
+            "BottomMargin": 361.0,
             "Tag": 19,
             "ActionTag": -1256903318,
             "Size": {

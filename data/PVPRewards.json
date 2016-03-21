@@ -1,0 +1,74 @@
+[
+  {
+    "min": 1,
+    "max": 1,
+    "rewards": {
+      "gold": 10000,
+      "gem": 10
+    }
+  },
+  {
+    "min": 2,
+    "max": 2,
+    "rewards": {
+      "gold": 8000,
+      "gem": 8
+    }
+  },
+  {
+    "min": 3,
+    "max": 3,
+    "rewards": {
+      "gold": 6000,
+      "gem": 6
+    }
+  },
+  {
+    "min": 4,
+    "max": 4,
+    "rewards": {
+      "gold": 5000,
+      "gem": 5
+    }
+  },
+  {
+    "min": 5,
+    "max": 10,
+    "rewards": {
+      "gold": 4000,
+      "gem": 4
+    }
+  },
+  {
+    "min": 11,
+    "max": 20,
+    "rewards": {
+      "gold": 3000,
+      "gem": 3
+    }
+  },
+  {
+    "min": 21,
+    "max": 50,
+    "rewards": {
+      "gold": 2000,
+      "gem": 2
+    }
+  },
+  {
+    "min": 51,
+    "max": 100,
+    "rewards": {
+      "gold": 1000,
+      "gem": 1
+    }
+  },
+  {
+    "min": 101,
+    "max": 0,
+    "rewards": {
+      "gold": 500,
+      "gem": 1
+    }
+  }
+]
