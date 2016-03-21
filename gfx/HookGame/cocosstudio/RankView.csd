@@ -50,7 +50,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="stage_rank" Visible="False" ActionTag="1684059057" Tag="389" IconVisible="False" LeftMargin="337.5117" RightMargin="15.4883" TopMargin="32.3624" BottomMargin="36.6376" Scale9Width="247" Scale9Height="31" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="stage_rank" ActionTag="1684059057" Tag="389" IconVisible="False" LeftMargin="337.5117" RightMargin="15.4883" TopMargin="32.3624" BottomMargin="36.6376" Scale9Width="247" Scale9Height="31" ctype="ImageViewObjectData">
                 <Size X="247.0000" Y="31.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="461.0117" Y="52.1376" />
@@ -69,6 +69,16 @@
                 <PrePosition X="0.7684" Y="0.5214" />
                 <PreSize X="0.4117" Y="0.3100" />
                 <FileData Type="MarkedSubImage" Path="rankUI/gold_rank.png" Plist="RankUI.plist" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="PVP_rank" ActionTag="-2017836028" Tag="93" IconVisible="False" LeftMargin="337.5100" RightMargin="15.4900" TopMargin="32.3600" BottomMargin="36.6400" Scale9Width="247" Scale9Height="31" ctype="ImageViewObjectData">
+                <Size X="247.0000" Y="31.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="461.0100" Y="52.1400" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7684" Y="0.5214" />
+                <PreSize X="0.4117" Y="0.3100" />
+                <FileData Type="MarkedSubImage" Path="rankUI/pvp_rank.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="level_text" ActionTag="-731661308" Tag="605" IconVisible="False" LeftMargin="120.1807" RightMargin="386.8193" TopMargin="38.9785" BottomMargin="41.0215" LabelText="Lv.999" ctype="TextBMFontObjectData">
                 <Size X="93.0000" Y="20.0000" />
@@ -110,25 +120,35 @@
                 <PreSize X="0.0783" Y="0.2600" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white22-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Max_stage" ActionTag="-15783237" Tag="132" IconVisible="False" LeftMargin="115.6087" RightMargin="403.3913" TopMargin="64.0529" BottomMargin="6.9471" Scale9Width="81" Scale9Height="29" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Max_stage" ActionTag="-15783237" Tag="132" IconVisible="False" LeftMargin="115.3026" RightMargin="403.6974" TopMargin="64.2024" BottomMargin="6.7976" Scale9Width="81" Scale9Height="29" ctype="ImageViewObjectData">
                 <Size X="81.0000" Y="29.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="156.1087" Y="21.4471" />
+                <Position X="155.8026" Y="21.2976" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2602" Y="0.2145" />
+                <PrePosition X="0.2597" Y="0.2130" />
                 <PreSize X="0.1350" Y="0.2900" />
                 <FileData Type="MarkedSubImage" Path="rankUI/Max_stage.png" Plist="RankUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Max_gold" ActionTag="-1753439383" Tag="133" IconVisible="False" LeftMargin="115.6087" RightMargin="403.3913" TopMargin="64.0529" BottomMargin="6.9471" Scale9Width="81" Scale9Height="29" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Max_gold" ActionTag="-1753439383" Tag="133" IconVisible="False" LeftMargin="115.3026" RightMargin="403.6974" TopMargin="64.2024" BottomMargin="6.7976" Scale9Width="81" Scale9Height="29" ctype="ImageViewObjectData">
                 <Size X="81.0000" Y="29.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="156.1087" Y="21.4471" />
+                <Position X="155.8026" Y="21.2976" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2602" Y="0.2145" />
+                <PrePosition X="0.2597" Y="0.2130" />
                 <PreSize X="0.1350" Y="0.2900" />
                 <FileData Type="MarkedSubImage" Path="rankUI/Max_gold.png" Plist="RankUI.plist" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Fight" ActionTag="-303457822" Tag="92" IconVisible="False" LeftMargin="115.3026" RightMargin="403.6974" TopMargin="64.2024" BottomMargin="6.7976" Scale9Width="81" Scale9Height="29" ctype="ImageViewObjectData">
+                <Size X="81.0000" Y="29.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="155.8026" Y="21.2976" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2597" Y="0.2130" />
+                <PreSize X="0.1350" Y="0.2900" />
+                <FileData Type="MarkedSubImage" Path="rankUI/fight.png" Plist="RankUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="1328050466" Tag="134" IconVisible="False" LeftMargin="204.4388" RightMargin="313.5612" TopMargin="67.6577" BottomMargin="14.3423" LabelText="Lv.999" ctype="TextBMFontObjectData">
                 <Size X="82.0000" Y="18.0000" />
