@@ -112,7 +112,6 @@ var ArenaPanel = BattleMenu.extend({
         items.sort(function(a,b){
             return a-b;
         });
-        console.log(items)
         return items;
     }, challenge: function (data, e) {
         if (player.arena.times <= 0) {
