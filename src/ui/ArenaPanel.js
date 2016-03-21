@@ -29,6 +29,7 @@ var ArenaPanel = BattleMenu.extend({
         if (typeof player.arena === 'undefined') {
             player.arena = {times: CONSTS.arena_challenge_times}
         }
+        this._arenaService=Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
         this.pullData();
@@ -70,7 +71,7 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
-        NetWork.arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
+        this._arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
             if (result) {
                 this._index = data;
                 this.refreshItems(this._index);
