@@ -7,7 +7,8 @@ var RankLayerMenu = BattleMenu.extend({
         var rankViewRoot = ccs.csLoader.createNode(res.rank_view_json).getChildByName('root');
         var tabParams = [
             {name: "gold_tab"},
-            {name: "stage_tab"}
+            {name: "stage_tab"},
+            {name: "pvp_tab"}
         ];
         this.buttons = {};
         var self = this;
@@ -51,14 +52,14 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
-            NetWork.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
+            Network.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
                 myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
                         listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
-                    NetWork.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
+                    Network.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
                         if (result && cc.isObject(data))
                             myNumText.setString(data.index + 1);
                     });
@@ -91,17 +92,28 @@ var RankLayerMenu = BattleMenu.extend({
                 myBg.setVisible(false);
             }
             text.setString(data.score);
-            if (type == 'gold_tab') {
+            if (type === 'gold_tab') {
                 root.getChildByName('gold_rank').setVisible(true);
+                root.getChildByName('Max_gold').setVisible(true);
                 root.getChildByName('stage_rank').setVisible(false);
                 root.getChildByName('Max_stage').setVisible(false);
-                root.getChildByName('Max_gold').setVisible(true);
+                root.getChildByName('Fight').setVisible(false);
+                root.getChildByName('PVP_rank').setVisible(false);
                 text.setColor(TIPS_COLOR.YELLOW);
-            } else {
+            } else if(type === 'stage_tab') {
                 root.getChildByName('stage_rank').setVisible(true);
-                root.getChildByName('gold_rank').setVisible(false);
                 root.getChildByName('Max_stage').setVisible(true);
+                root.getChildByName('gold_rank').setVisible(false);
                 root.getChildByName('Max_gold').setVisible(false);
+                root.getChildByName('Fight').setVisible(false);
+                root.getChildByName('PVP_rank').setVisible(false);
+            }else{
+                root.getChildByName('stage_rank').setVisible(false);
+                root.getChildByName('gold_rank').setVisible(false);
+                root.getChildByName('Max_stage').setVisible(false);
+                root.getChildByName('Max_gold').setVisible(false);
+                root.getChildByName('Fight').setVisible(true);
+                root.getChildByName('PVP_rank').setVisible(true);
             }
             return root;
         };

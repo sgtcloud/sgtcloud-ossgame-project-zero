@@ -18,7 +18,7 @@
 			<key>rankUI/level.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{514,132},{36,15}}</string>
+				<string>{{514,149},{36,15}}</string>
 				<key>offset</key>
 				<string>{0,1}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>rankUI/myRank_text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{160,180},{199,25}}</string>
+				<string>{{159,235},{199,25}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>rankUI/pvp_rank.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{160,153},{239,27}}</string>
+				<string>{{240,260},{239,27}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,7 +62,7 @@
 			<key>rankUI/pvpTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,205},{159,55}}</string>
+				<string>{{160,153},{159,55}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -106,7 +106,7 @@
 			<key>rankUI/stageTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{159,205},{159,55}}</string>
+				<string>{{0,205},{159,55}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -117,7 +117,7 @@
 			<key>rankUI/transformation.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{359,180},{161,20}}</string>
+				<string>{{358,235},{161,20}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -139,7 +139,7 @@
 			<key>rankUI/goldTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{318,205},{159,55}}</string>
+				<string>{{319,153},{159,55}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -150,7 +150,7 @@
 			<key>rankUI/gold_rank.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{240,260},{240,27}}</string>
+				<string>{{159,208},{240,27}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -175,6 +175,17 @@
 				<string>{{514,98},{72,17}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{81,29}</string>
+			</dict>
+			<key>rankUI/fight.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{514,132},{56,17}}</string>
+				<key>offset</key>
+				<string>{-8,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>

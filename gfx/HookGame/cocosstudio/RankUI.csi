@@ -18,6 +18,7 @@
       <FilePathData Path="rankUI/gold_rank.png" />
       <FilePathData Path="rankUI/Max_gold.png" />
       <FilePathData Path="rankUI/Max_stage.png" />
+      <FilePathData Path="rankUI/fight.png" />
     </ImageFiles>
     <MaxSize Width="600" Height="300" />
   </Content>

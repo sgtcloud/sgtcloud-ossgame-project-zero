@@ -46,7 +46,7 @@ var RechargePanel = cc.Node.extend({
             }else if(!this.isPaying){
                 this.isPaying = true;
                 console.log(i+',前往支付');
-                NetWork.chooseWXPay(chargePoint,function(result){
+                Network.chooseWXPay(chargePoint,function(result){
                     if(result){
                         tip.toggle('购买成功');
                     }else{

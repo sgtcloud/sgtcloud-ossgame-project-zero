@@ -1416,6 +1416,13 @@
         <Project Name="effect5008.csd" Type="Node" />
         <Project Name="effect5009.csd" Type="Node" />
         <Project Name="effect5010.csd" Type="Node" />
+        <Project Name="countdown.csd" Type="Node" />
+        <Folder Name="countdown">
+          <Image Name="1.png" />
+          <Image Name="2.png" />
+          <Image Name="3.png" />
+          <Image Name="ready.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

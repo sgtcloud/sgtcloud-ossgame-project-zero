@@ -13,8 +13,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 490.0,
+                "X": 320.0,
+                "Y": 970.0,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 40.0,
-                "Y": 490.0,
+                "X": 360.0,
+                "Y": 970.0,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 80.0,
-                "Y": 490.0,
+                "X": 400.0,
+                "Y": 970.0,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -40,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 120.0,
-                "Y": 490.0,
+                "X": 440.0,
+                "Y": 970.0,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -49,8 +49,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 160.0,
-                "Y": 490.0,
+                "X": 480.0,
+                "Y": 970.0,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -58,8 +58,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 200.0,
-                "Y": 490.0,
+                "X": 520.0,
+                "Y": 970.0,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -67,8 +67,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 240.0,
-                "Y": 490.0,
+                "X": 560.0,
+                "Y": 970.0,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -76,8 +76,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 280.0,
-                "Y": 490.0,
+                "X": 600.0,
+                "Y": 970.0,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -85,8 +85,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -94,8 +94,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
@@ -103,8 +103,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
@@ -112,8 +112,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 33,
                 "EasingData": {
                   "Type": 0
@@ -121,8 +121,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -130,8 +130,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -139,8 +139,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -148,8 +148,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -157,8 +157,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -166,8 +166,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 51,
                 "EasingData": {
                   "Type": 0
@@ -175,8 +175,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 54,
                 "EasingData": {
                   "Type": 0
@@ -184,8 +184,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 57,
                 "EasingData": {
                   "Type": 0
@@ -193,8 +193,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
@@ -202,8 +202,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
@@ -211,8 +211,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 66,
                 "EasingData": {
                   "Type": 0
@@ -220,8 +220,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 69,
                 "EasingData": {
                   "Type": 0
@@ -229,8 +229,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 72,
                 "EasingData": {
                   "Type": 0
@@ -238,8 +238,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 75,
                 "EasingData": {
                   "Type": 0
@@ -247,8 +247,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -256,8 +256,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 81,
                 "EasingData": {
                   "Type": 0
@@ -265,8 +265,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 84,
                 "EasingData": {
                   "Type": 0
@@ -274,8 +274,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 87,
                 "EasingData": {
                   "Type": 0
@@ -283,8 +283,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
@@ -292,8 +292,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -301,8 +301,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 96,
                 "EasingData": {
                   "Type": 0
@@ -310,8 +310,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 99,
                 "EasingData": {
                   "Type": 0
@@ -319,8 +319,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 102,
                 "EasingData": {
                   "Type": 0
@@ -328,8 +328,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 105,
                 "EasingData": {
                   "Type": 0
@@ -337,8 +337,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 108,
                 "EasingData": {
                   "Type": 0
@@ -346,8 +346,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 111,
                 "EasingData": {
                   "Type": 0
@@ -355,8 +355,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 114,
                 "EasingData": {
                   "Type": 0
@@ -364,8 +364,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 117,
                 "EasingData": {
                   "Type": 0
@@ -373,8 +373,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 120,
                 "EasingData": {
                   "Type": 0
@@ -382,8 +382,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 490.0,
+                "X": 640.0,
+                "Y": 970.0,
                 "FrameIndex": 123,
                 "EasingData": {
                   "Type": 0
@@ -1021,8 +1021,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": -490.0,
+                "X": 320.0,
+                "Y": -10.0,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -1030,8 +1030,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -40.0,
-                "Y": -490.0,
+                "X": 280.0,
+                "Y": -10.0,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -1039,8 +1039,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -80.0,
-                "Y": -490.0,
+                "X": 240.0,
+                "Y": -10.0,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -1048,8 +1048,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -120.0,
-                "Y": -490.0,
+                "X": 200.0,
+                "Y": -10.0,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -1057,8 +1057,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -160.0,
-                "Y": -490.0,
+                "X": 160.0,
+                "Y": -10.0,
                 "FrameIndex": 12,
                 "EasingData": {
                   "Type": 0
@@ -1066,8 +1066,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -200.0,
-                "Y": -490.0,
+                "X": 120.0,
+                "Y": -10.0,
                 "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
@@ -1075,8 +1075,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -240.0,
-                "Y": -490.0,
+                "X": 80.0,
+                "Y": -10.0,
                 "FrameIndex": 18,
                 "EasingData": {
                   "Type": 0
@@ -1084,8 +1084,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -280.0,
-                "Y": -490.0,
+                "X": 40.0,
+                "Y": -10.0,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -1093,8 +1093,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 24,
                 "EasingData": {
                   "Type": 0
@@ -1102,8 +1102,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
@@ -1111,8 +1111,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
@@ -1120,8 +1120,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 33,
                 "EasingData": {
                   "Type": 0
@@ -1129,8 +1129,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 36,
                 "EasingData": {
                   "Type": 0
@@ -1138,8 +1138,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 39,
                 "EasingData": {
                   "Type": 0
@@ -1147,8 +1147,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 42,
                 "EasingData": {
                   "Type": 0
@@ -1156,8 +1156,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 45,
                 "EasingData": {
                   "Type": 0
@@ -1165,8 +1165,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 48,
                 "EasingData": {
                   "Type": 0
@@ -1174,8 +1174,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 51,
                 "EasingData": {
                   "Type": 0
@@ -1183,8 +1183,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 54,
                 "EasingData": {
                   "Type": 0
@@ -1192,8 +1192,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 57,
                 "EasingData": {
                   "Type": 0
@@ -1201,8 +1201,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
@@ -1210,8 +1210,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
@@ -1219,8 +1219,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 66,
                 "EasingData": {
                   "Type": 0
@@ -1228,8 +1228,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 69,
                 "EasingData": {
                   "Type": 0
@@ -1237,8 +1237,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 72,
                 "EasingData": {
                   "Type": 0
@@ -1246,8 +1246,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 75,
                 "EasingData": {
                   "Type": 0
@@ -1255,8 +1255,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -1264,8 +1264,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 81,
                 "EasingData": {
                   "Type": 0
@@ -1273,8 +1273,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 84,
                 "EasingData": {
                   "Type": 0
@@ -1282,8 +1282,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 87,
                 "EasingData": {
                   "Type": 0
@@ -1291,8 +1291,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
@@ -1300,8 +1300,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -1309,8 +1309,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 96,
                 "EasingData": {
                   "Type": 0
@@ -1318,8 +1318,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 99,
                 "EasingData": {
                   "Type": 0
@@ -1327,8 +1327,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 102,
                 "EasingData": {
                   "Type": 0
@@ -1336,8 +1336,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 105,
                 "EasingData": {
                   "Type": 0
@@ -1345,8 +1345,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 108,
                 "EasingData": {
                   "Type": 0
@@ -1354,8 +1354,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 111,
                 "EasingData": {
                   "Type": 0
@@ -1363,8 +1363,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 114,
                 "EasingData": {
                   "Type": 0
@@ -1372,8 +1372,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 117,
                 "EasingData": {
                   "Type": 0
@@ -1381,8 +1381,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 120,
                 "EasingData": {
                   "Type": 0
@@ -1390,8 +1390,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -320.0,
-                "Y": -490.0,
+                "X": 0.0,
+                "Y": -10.0,
                 "FrameIndex": 123,
                 "EasingData": {
                   "Type": 0
@@ -2029,8 +2029,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 40.5503,
-                "Y": -200.6372,
+                "X": 360.3637,
+                "Y": 280.1163,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -2038,8 +2038,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -33.2857,
-                "Y": -245.7048,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 11,
                 "EasingData": {
                   "Type": 0
@@ -2047,8 +2047,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 40.5503,
-                "Y": -200.6372,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 16,
                 "EasingData": {
                   "Type": 0
@@ -2056,8 +2056,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 40.5503,
-                "Y": -200.6372,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 21,
                 "EasingData": {
                   "Type": 0
@@ -2065,8 +2065,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 40.5503,
-                "Y": -200.6372,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 26,
                 "EasingData": {
                   "Type": 0
@@ -2074,8 +2074,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 65.0,
-                "Y": -100.0,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 31,
                 "EasingData": {
                   "Type": 0
@@ -2083,8 +2083,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 65.0,
-                "Y": -100.0,
+                "X": 400.0,
+                "Y": 400.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -2296,8 +2296,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 46.9766,
-                "Y": -225.3418,
+                "X": 300.0,
+                "Y": 480.0,
                 "FrameIndex": 27,
                 "EasingData": {
                   "Type": 0
@@ -2305,8 +2305,35 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -35.0,
-                "Y": 0.0,
+                "X": 300.0,
+                "Y": 480.0,
+                "FrameIndex": 32,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 300.0,
+                "Y": 480.0,
+                "FrameIndex": 37,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 300.0,
+                "Y": 480.0,
+                "FrameIndex": 42,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 300.0,
+                "Y": 480.0,
                 "FrameIndex": 47,
                 "EasingData": {
                   "Type": 0
@@ -2314,8 +2341,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -35.0,
-                "Y": 0.0,
+                "X": 300.0,
+                "Y": 480.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -2527,8 +2554,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -46.9938,
-                "Y": -235.8848,
+                "X": 160.0,
+                "Y": 370.0,
                 "FrameIndex": 43,
                 "EasingData": {
                   "Type": 0
@@ -2536,8 +2563,35 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -200.0,
-                "Y": -130.0,
+                "X": 160.0,
+                "Y": 370.0,
+                "FrameIndex": 48,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 160.0,
+                "Y": 370.0,
+                "FrameIndex": 53,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 160.0,
+                "Y": 370.0,
+                "FrameIndex": 58,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 160.0,
+                "Y": 370.0,
                 "FrameIndex": 63,
                 "EasingData": {
                   "Type": 0
@@ -2545,8 +2599,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -200.0,
-                "Y": -130.0,
+                "X": 160.0,
+                "Y": 370.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -2741,8 +2795,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -57.5375,
-                "Y": -326.9586,
+                "X": 460.0,
+                "Y": 240.0,
                 "FrameIndex": 59,
                 "EasingData": {
                   "Type": 0
@@ -2750,8 +2804,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -18.4633,
-                "Y": -253.3647,
+                "X": 460.0,
+                "Y": 240.0,
                 "FrameIndex": 64,
                 "EasingData": {
                   "Type": 0
@@ -2759,8 +2813,26 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 165.0,
-                "Y": -240.0,
+                "X": 460.0,
+                "Y": 240.0,
+                "FrameIndex": 69,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 460.0,
+                "Y": 240.0,
+                "FrameIndex": 74,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 460.0,
+                "Y": 240.0,
                 "FrameIndex": 79,
                 "EasingData": {
                   "Type": 0
@@ -2768,8 +2840,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 165.0,
-                "Y": -240.0,
+                "X": 460.0,
+                "Y": 240.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -2992,8 +3064,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 300.0,
-                "Y": 0.0,
+                "X": 640.0,
+                "Y": 480.0,
                 "FrameIndex": 92,
                 "EasingData": {
                   "Type": 0
@@ -3001,8 +3073,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 250.0,
-                "Y": -50.0,
+                "X": 570.0,
+                "Y": 425.0,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -3010,8 +3082,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 200.0,
-                "Y": -100.0,
+                "X": 515.0,
+                "Y": 375.0,
                 "FrameIndex": 94,
                 "EasingData": {
                   "Type": 0
@@ -3019,8 +3091,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -150.0,
+                "X": 460.0,
+                "Y": 325.0,
                 "FrameIndex": 95,
                 "EasingData": {
                   "Type": 0
@@ -3028,8 +3100,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 100.0,
-                "Y": -200.0,
+                "X": 415.0,
+                "Y": 275.0,
                 "FrameIndex": 96,
                 "EasingData": {
                   "Type": 0
@@ -3037,8 +3109,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 50.0,
-                "Y": -250.0,
+                "X": 360.0,
+                "Y": 225.0,
                 "FrameIndex": 97,
                 "EasingData": {
                   "Type": 0
@@ -3046,8 +3118,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -15.0,
-                "Y": -300.0,
+                "X": 305.0,
+                "Y": 175.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -3282,8 +3354,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 100.0,
-                "Y": -185.0,
+                "X": 425.0,
+                "Y": 290.0,
                 "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
@@ -3291,8 +3363,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 100.0,
-                "Y": -185.0,
+                "X": 425.0,
+                "Y": 290.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -3418,8 +3490,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -5.0,
-                "Y": -220.0,
+                "X": 320.0,
+                "Y": 325.0,
                 "FrameIndex": 76,
                 "EasingData": {
                   "Type": 0
@@ -3427,8 +3499,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -199.9996,
+                "X": 320.0,
+                "Y": 335.0,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -3436,8 +3508,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -180.0,
+                "X": 320.0,
+                "Y": 345.0,
                 "FrameIndex": 80,
                 "EasingData": {
                   "Type": 0
@@ -3445,8 +3517,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -160.0,
+                "X": 320.0,
+                "Y": 355.0,
                 "FrameIndex": 82,
                 "EasingData": {
                   "Type": 0
@@ -3454,8 +3526,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -140.0,
+                "X": 320.0,
+                "Y": 365.0,
                 "FrameIndex": 84,
                 "EasingData": {
                   "Type": 0
@@ -3463,8 +3535,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -120.0,
+                "X": 320.0,
+                "Y": 375.0,
                 "FrameIndex": 86,
                 "EasingData": {
                   "Type": 0
@@ -3472,8 +3544,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -100.0,
+                "X": 320.0,
+                "Y": 385.0,
                 "FrameIndex": 88,
                 "EasingData": {
                   "Type": 0
@@ -3481,8 +3553,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -80.0,
+                "X": 320.0,
+                "Y": 395.0,
                 "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
@@ -3490,8 +3562,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -5.0,
-                "Y": -80.0,
+                "X": 320.0,
+                "Y": 395.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -3560,8 +3632,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.6,
-                "Y": 1.6,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 76,
                 "EasingData": {
                   "Type": 0
@@ -3569,8 +3641,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.2,
-                "Y": 1.2,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -3578,8 +3650,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.0,
-                "Y": 1.0,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 80,
                 "EasingData": {
                   "Type": 0
@@ -3587,8 +3659,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.8,
-                "Y": 0.8,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 82,
                 "EasingData": {
                   "Type": 0
@@ -3596,8 +3668,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.6,
-                "Y": 0.6,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 84,
                 "EasingData": {
                   "Type": 0
@@ -3605,8 +3677,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.4,
-                "Y": 0.4,
+                "X": 0.3,
+                "Y": 0.3,
                 "FrameIndex": 86,
                 "EasingData": {
                   "Type": 0
@@ -3964,7 +4036,7 @@
                 "ctype": "IntFrameData"
               },
               {
-                "Value": 204,
+                "Value": 178,
                 "FrameIndex": 76,
                 "EasingData": {
                   "Type": 0
@@ -3972,7 +4044,7 @@
                 "ctype": "IntFrameData"
               },
               {
-                "Value": 204,
+                "Value": 191,
                 "FrameIndex": 78,
                 "EasingData": {
                   "Type": 0
@@ -4027,8 +4099,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": 319.8131,
+                "Y": 480.7421,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -4036,8 +4108,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -160.0,
-                "Y": -360.0,
+                "X": 200.0,
+                "Y": 115.0,
                 "FrameIndex": 92,
                 "EasingData": {
                   "Type": 0
@@ -4045,8 +4117,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -100.0,
-                "Y": -360.0,
+                "X": 260.0,
+                "Y": 115.0,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -4054,8 +4126,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -40.0,
-                "Y": -360.0,
+                "X": 320.0,
+                "Y": 115.0,
                 "FrameIndex": 94,
                 "EasingData": {
                   "Type": 0
@@ -4063,8 +4135,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 60.0,
-                "Y": -360.0,
+                "X": 380.0,
+                "Y": 115.0,
                 "FrameIndex": 95,
                 "EasingData": {
                   "Type": 0
@@ -4072,8 +4144,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 120.0,
-                "Y": -360.0,
+                "X": 440.0,
+                "Y": 115.0,
                 "FrameIndex": 96,
                 "EasingData": {
                   "Type": 0
@@ -4081,8 +4153,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 180.0,
-                "Y": -360.0,
+                "X": 500.0,
+                "Y": 115.0,
                 "FrameIndex": 97,
                 "EasingData": {
                   "Type": 0
@@ -4090,8 +4162,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 240.0,
-                "Y": -360.0,
+                "X": 560.0,
+                "Y": 115.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -4277,8 +4349,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": -260.0,
+                "X": 319.8161,
+                "Y": 220.7548,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -4286,8 +4358,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": -324.0,
+                "X": 320.0,
+                "Y": 110.0,
                 "FrameIndex": 91,
                 "EasingData": {
                   "Type": 0
@@ -4295,8 +4367,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": -324.0,
+                "X": 320.0,
+                "Y": 110.0,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -4304,8 +4376,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": -324.0,
+                "X": 320.0,
+                "Y": 110.0,
                 "FrameIndex": 95,
                 "EasingData": {
                   "Type": 0
@@ -4313,8 +4385,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": -324.0,
+                "X": 320.0,
+                "Y": 110.0,
                 "FrameIndex": 97,
                 "EasingData": {
                   "Type": 0
@@ -4322,8 +4394,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": -324.0,
+                "X": 320.8512,
+                "Y": 150.9507,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -4415,8 +4487,35 @@
               },
               {
                 "X": 0.5,
-                "Y": 1.0,
+                "Y": 0.5,
                 "FrameIndex": 91,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.5,
+                "FrameIndex": 93,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.5,
+                "FrameIndex": 95,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.5,
+                "FrameIndex": 97,
                 "EasingData": {
                   "Type": 0
                 },
@@ -4447,56 +4546,12 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 868730888,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": -297.1155,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": -360.0,
-                "FrameIndex": 98,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 868730888,
-            "Property": "VisibleForFrame",
-            "Frames": [
-              {
-                "Value": false,
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "BoolFrameData"
-              },
-              {
-                "Value": true,
-                "FrameIndex": 98,
-                "Tween": false,
-                "ctype": "BoolFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
             "ActionTag": -1877329558,
             "Property": "Position",
             "Frames": [
               {
-                "X": -4.0,
-                "Y": 306.0002,
+                "X": 320.0,
+                "Y": 790.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -4599,8 +4654,71 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -7.6051,
-                "Y": 398.5476,
+                "X": 314.0,
+                "Y": 780.0,
+                "FrameIndex": 82,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 800.0,
+                "FrameIndex": 83,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 820.0,
+                "FrameIndex": 84,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 840.0,
+                "FrameIndex": 85,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 860.0,
+                "FrameIndex": 86,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 882.0,
+                "FrameIndex": 87,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 882.0,
+                "FrameIndex": 88,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 314.0,
+                "Y": 882.0,
                 "FrameIndex": 89,
                 "EasingData": {
                   "Type": 0
@@ -4608,8 +4726,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 63.4343,
-                "Y": 340.5826,
+                "X": 388.4099,
+                "Y": 826.8871,
                 "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
@@ -4617,8 +4735,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -92.8541,
-                "Y": 338.3093,
+                "X": 224.4171,
+                "Y": 821.4904,
                 "FrameIndex": 91,
                 "EasingData": {
                   "Type": 0
@@ -4626,8 +4744,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 139.0259,
-                "Y": 295.1192,
+                "X": 460.0248,
+                "Y": 781.9644,
                 "FrameIndex": 92,
                 "EasingData": {
                   "Type": 0
@@ -4635,8 +4753,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -126.3624,
-                "Y": 286.5938,
+                "X": 190.7801,
+                "Y": 776.6516,
                 "FrameIndex": 93,
                 "EasingData": {
                   "Type": 0
@@ -4644,8 +4762,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 54.9213,
-                "Y": 252.4954,
+                "X": 378.0319,
+                "Y": 742.9696,
                 "FrameIndex": 94,
                 "EasingData": {
                   "Type": 0
@@ -4653,8 +4771,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -113.2897,
-                "Y": 249.0848,
+                "X": 215.6903,
+                "Y": 735.5195,
                 "FrameIndex": 95,
                 "EasingData": {
                   "Type": 0
@@ -4662,8 +4780,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -7.0173,
-                "Y": 216.6914,
+                "X": 315.822,
+                "Y": 700.0186,
                 "FrameIndex": 96,
                 "EasingData": {
                   "Type": 0
@@ -4671,8 +4789,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -7.0173,
-                "Y": 216.6914,
+                "X": 318.8986,
+                "Y": 699.6255,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -4964,9 +5082,18 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 159.5363,
-                "Y": -105.2611,
+                "X": 524.234,
+                "Y": 483.7928,
                 "FrameIndex": 26,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 480.3794,
+                "Y": 369.6888,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5098,9 +5225,18 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -101.7161,
-                "Y": -90.776,
+                "X": 201.7032,
+                "Y": 559.5668,
                 "FrameIndex": 42,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 219.1361,
+                "Y": 384.1732,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5232,9 +5368,18 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -182.3065,
-                "Y": -156.5634,
+                "X": 137.9163,
+                "Y": 366.2709,
                 "FrameIndex": 58,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 138.5461,
+                "Y": 318.385,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5366,9 +5511,18 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 171.3041,
-                "Y": -158.2086,
+                "X": 505.3647,
+                "Y": 318.1733,
                 "FrameIndex": 74,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 492.1466,
+                "Y": 316.7401,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5500,8 +5654,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -162.8201,
-                "Y": -314.1366,
+                "X": 157.0004,
+                "Y": 166.6209,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -5509,8 +5663,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -150.0,
-                "Y": -400.0,
+                "X": 200.0,
+                "Y": 80.0,
                 "FrameIndex": 79,
                 "EasingData": {
                   "Type": 0
@@ -5518,8 +5672,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -150.0,
-                "Y": -400.0,
+                "X": 200.0,
+                "Y": 80.0,
                 "FrameIndex": 82,
                 "EasingData": {
                   "Type": 0
@@ -5527,8 +5681,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -150.0,
-                "Y": -400.0,
+                "X": 200.0,
+                "Y": 80.0,
                 "FrameIndex": 85,
                 "EasingData": {
                   "Type": 0
@@ -5536,8 +5690,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -150.0,
-                "Y": -400.0,
+                "X": 200.0,
+                "Y": 80.0,
                 "FrameIndex": 88,
                 "EasingData": {
                   "Type": 0
@@ -5545,9 +5699,18 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -150.0,
-                "Y": -400.0,
+                "X": 200.0,
+                "Y": 80.0,
                 "FrameIndex": 91,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 190.0,
+                "Y": 80.0,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5674,8 +5837,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -162.8201,
-                "Y": -314.1366,
+                "X": 157.0004,
+                "Y": 166.6209,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -5683,8 +5846,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -300.0,
+                "X": 460.0,
+                "Y": 180.0,
                 "FrameIndex": 79,
                 "EasingData": {
                   "Type": 0
@@ -5692,8 +5855,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -300.0,
+                "X": 460.0,
+                "Y": 180.0,
                 "FrameIndex": 82,
                 "EasingData": {
                   "Type": 0
@@ -5701,8 +5864,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -300.0,
+                "X": 460.0,
+                "Y": 180.0,
                 "FrameIndex": 85,
                 "EasingData": {
                   "Type": 0
@@ -5710,8 +5873,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -300.0,
+                "X": 460.0,
+                "Y": 180.0,
                 "FrameIndex": 88,
                 "EasingData": {
                   "Type": 0
@@ -5719,9 +5882,18 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 150.0,
-                "Y": -300.0,
+                "X": 460.0,
+                "Y": 180.0,
                 "FrameIndex": 91,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 460.0,
+                "Y": 180.0,
+                "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
                 },
@@ -5842,11 +6014,62 @@
               }
             ],
             "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 868730888,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 320.0,
+                "Y": 160.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 110.0,
+                "FrameIndex": 98,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 868730888,
+            "Property": "VisibleForFrame",
+            "Frames": [
+              {
+                "Value": false,
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "BoolFrameData"
+              },
+              {
+                "Value": true,
+                "FrameIndex": 98,
+                "Tween": false,
+                "ctype": "BoolFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
           }
         ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 123,
+          "Name": "show",
+          "ctype": "AnimationInfoData"
+        }
+      ],
       "ObjectData": {
         "Tag": 16,
         "Children": [
@@ -5899,6 +6122,930 @@
             "TopMargin": -480.0,
             "BottomMargin": -480.0,
             "Tag": 25,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/title01.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 640.0,
+                  "Y": 970.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 1.0,
+                  "Y": 1.0104
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.0542
+                },
+                "TopMargin": -10.0,
+                "BottomMargin": 918.0,
+                "Tag": 33,
+                "ActionTag": -1089969228,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 52.0
+                },
+                "Name": "up",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/title02.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": -10.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": -0.0104
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.0542
+                },
+                "TopMargin": 918.0,
+                "BottomMargin": -10.0,
+                "Tag": 34,
+                "ActionTag": 761409427,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 52.0
+                },
+                "Name": "down",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/hero/hero05.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 400.0,
+                  "Y": 400.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.625,
+                  "Y": 0.4167
+                },
+                "PreSize": {
+                  "X": 0.6594,
+                  "Y": 0.4292
+                },
+                "LeftMargin": 189.0,
+                "RightMargin": 29.0,
+                "TopMargin": 354.0,
+                "BottomMargin": 194.0,
+                "Tag": 28,
+                "ActionTag": 1508278506,
+                "Size": {
+                  "X": 422.0,
+                  "Y": 412.0
+                },
+                "Name": "hero02",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/hero/hero04_03.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 300.0,
+                  "Y": 480.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4688,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.85,
+                  "Y": 0.4219
+                },
+                "LeftMargin": 28.0,
+                "RightMargin": 68.0,
+                "TopMargin": 277.5,
+                "BottomMargin": 277.5,
+                "Tag": 29,
+                "ActionTag": 394338606,
+                "Size": {
+                  "X": 544.0,
+                  "Y": 405.0
+                },
+                "Name": "hero03",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/hero/hero02_03.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 160.0,
+                  "Y": 370.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.25,
+                  "Y": 0.3854
+                },
+                "PreSize": {
+                  "X": 0.4469,
+                  "Y": 0.3417
+                },
+                "LeftMargin": 17.0,
+                "RightMargin": 337.0,
+                "TopMargin": 426.0,
+                "BottomMargin": 206.0,
+                "Tag": 31,
+                "ActionTag": -2085320943,
+                "Size": {
+                  "X": 286.0,
+                  "Y": 328.0
+                },
+                "Name": "hero04",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/hero/hero03_02.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 460.0,
+                  "Y": 240.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7188,
+                  "Y": 0.25
+                },
+                "PreSize": {
+                  "X": 0.6141,
+                  "Y": 0.4115
+                },
+                "LeftMargin": 263.5,
+                "RightMargin": -16.5,
+                "TopMargin": 522.5,
+                "BottomMargin": 42.5,
+                "Tag": 32,
+                "ActionTag": 2025016316,
+                "Size": {
+                  "X": 393.0,
+                  "Y": 395.0
+                },
+                "Name": "hero05",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 640.0,
+                  "Y": 480.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 1.0,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.3969,
+                  "Y": 0.351
+                },
+                "LeftMargin": 640.0,
+                "RightMargin": -48.0,
+                "TopMargin": 434.0,
+                "BottomMargin": 480.0,
+                "Tag": 39,
+                "ActionTag": -2056729174,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "effect_4",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/hero/hero01_01.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 425.0,
+                  "Y": 290.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6641,
+                  "Y": 0.3021
+                },
+                "PreSize": {
+                  "X": 1.1562,
+                  "Y": 0.4479
+                },
+                "LeftMargin": 55.0,
+                "RightMargin": -155.0,
+                "TopMargin": 455.0,
+                "BottomMargin": 75.0,
+                "Tag": 39,
+                "ActionTag": 283832658,
+                "Size": {
+                  "X": 740.0,
+                  "Y": 430.0
+                },
+                "Alpha": 229,
+                "Name": "hero01",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/effect05_06.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 340.0
+                },
+                "Scale": {
+                  "ScaleX": 0.3,
+                  "ScaleY": 0.3
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.3542
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 241.5,
+                "RightMargin": 241.5,
+                "TopMargin": 525.0,
+                "BottomMargin": 245.0,
+                "Tag": 30,
+                "ActionTag": -334576738,
+                "Size": {
+                  "X": 157.0,
+                  "Y": 190.0
+                },
+                "Alpha": 197,
+                "Name": "ball_effect",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 216.9301,
+                  "Y": 166.681
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.339,
+                  "Y": 0.1736
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 168.9301,
+                "RightMargin": 423.0699,
+                "TopMargin": 770.319,
+                "BottomMargin": 143.681,
+                "Tag": 37,
+                "ActionTag": -1985736199,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "effect_3",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5659
+                },
+                "Position": {
+                  "X": 319.9757,
+                  "Y": 124.605
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.1298
+                },
+                "PreSize": {
+                  "X": 0.2875,
+                  "Y": 0.0771
+                },
+                "LeftMargin": 295.9757,
+                "RightMargin": 296.0243,
+                "TopMargin": 815.428,
+                "BottomMargin": 98.5721,
+                "Tag": 41,
+                "ActionTag": 688341066,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "btn_effect",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 790.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8229
+                },
+                "PreSize": {
+                  "X": 0.4688,
+                  "Y": 0.1875
+                },
+                "LeftMargin": 296.0,
+                "RightMargin": 296.0,
+                "TopMargin": 147.0,
+                "BottomMargin": 767.0,
+                "Tag": 44,
+                "ActionTag": -1877329558,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "logo",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 314.0,
+                  "Y": 780.0
+                },
+                "Scale": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4906,
+                  "Y": 0.8125
+                },
+                "PreSize": {
+                  "X": 0.3375,
+                  "Y": 0.1042
+                },
+                "LeftMargin": 290.0,
+                "RightMargin": 302.0,
+                "TopMargin": 157.0,
+                "BottomMargin": 757.0,
+                "Tag": 28,
+                "ActionTag": -1924878366,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "star",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 491.9521,
+                  "Y": 399.7996
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7687,
+                  "Y": 0.4165
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 467.9521,
+                "RightMargin": 124.0479,
+                "TopMargin": 537.2004,
+                "BottomMargin": 376.7996,
+                "Tag": 31,
+                "ActionTag": -1830837010,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "hero02_star",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 213.2214,
+                  "Y": 443.6818
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3332,
+                  "Y": 0.4622
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 189.2214,
+                "RightMargin": 402.7786,
+                "TopMargin": 493.3182,
+                "BottomMargin": 420.6818,
+                "Tag": 32,
+                "ActionTag": -143154413,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "hero03_star",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 138.2469,
+                  "Y": 341.1308
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.216,
+                  "Y": 0.3553
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 114.2469,
+                "RightMargin": 477.7531,
+                "TopMargin": 595.8692,
+                "BottomMargin": 318.1308,
+                "Tag": 33,
+                "ActionTag": 534389820,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "hero04_star",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/empty.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 502.6109,
+                  "Y": 317.8747
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7853,
+                  "Y": 0.3311
+                },
+                "PreSize": {
+                  "X": 0.075,
+                  "Y": 0.0479
+                },
+                "LeftMargin": 478.6109,
+                "RightMargin": 113.389,
+                "TopMargin": 619.1253,
+                "BottomMargin": 294.8747,
+                "Tag": 34,
+                "ActionTag": -480335770,
+                "Size": {
+                  "X": 48.0,
+                  "Y": 46.0
+                },
+                "Name": "hero05_star",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/effect04_01.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 200.0,
+                  "Y": 80.0
+                },
+                "Scale": {
+                  "ScaleX": 2.0,
+                  "ScaleY": 2.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3125,
+                  "Y": 0.0833
+                },
+                "PreSize": {
+                  "X": 0.1453,
+                  "Y": 0.1344
+                },
+                "LeftMargin": 153.5,
+                "RightMargin": 393.5,
+                "TopMargin": 751.0,
+                "BottomMargin": 80.0,
+                "Tag": 35,
+                "ActionTag": -1754892431,
+                "Size": {
+                  "X": 93.0,
+                  "Y": 129.0
+                },
+                "Name": "effect_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FlipX": true,
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/effect/effect04_01.png",
+                  "Plist": "cover.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5
+                },
+                "Position": {
+                  "X": 460.0,
+                  "Y": 180.0
+                },
+                "Scale": {
+                  "ScaleX": 2.0,
+                  "ScaleY": 2.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7188,
+                  "Y": 0.1875
+                },
+                "PreSize": {
+                  "X": 0.1453,
+                  "Y": 0.1344
+                },
+                "LeftMargin": 413.5,
+                "RightMargin": 133.5,
+                "TopMargin": 651.0,
+                "BottomMargin": 180.0,
+                "Tag": 36,
+                "ActionTag": 1541577785,
+                "Size": {
+                  "X": 93.0,
+                  "Y": 129.0
+                },
+                "Name": "effect_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/other/btn_2.png",
+                  "Plist": "cover.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/other/btn_2.png",
+                  "Plist": "cover.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverSprite/other/btn_1.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 236,
+                "Scale9Height": 151,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 119.6939
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.1247
+                },
+                "PreSize": {
+                  "X": 0.4156,
+                  "Y": 0.1802
+                },
+                "LeftMargin": 187.0,
+                "RightMargin": 187.0,
+                "TopMargin": 753.8062,
+                "BottomMargin": 33.1939,
+                "Tag": 43,
+                "ActionTag": 868730888,
+                "Size": {
+                  "X": 266.0,
+                  "Y": 173.0
+                },
+                "VisibleForFrame": false,
+                "Name": "cover_login_btn",
+                "ctype": "ButtonObjectData"
+              }
+            ],
             "ActionTag": 1280592755,
             "Size": {
               "X": 640.0,
@@ -5906,929 +7053,6 @@
             },
             "Name": "root",
             "ctype": "PanelObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/title01.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "Position": {
-              "X": 320.0,
-              "Y": 490.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -320.0,
-            "RightMargin": -320.0,
-            "TopMargin": -490.0,
-            "BottomMargin": 438.0,
-            "Tag": 33,
-            "ActionTag": -1089969228,
-            "Size": {
-              "X": 640.0,
-              "Y": 52.0
-            },
-            "Name": "up",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/title02.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {},
-            "Position": {
-              "X": -320.0,
-              "Y": -490.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -320.0,
-            "RightMargin": -320.0,
-            "TopMargin": 438.0,
-            "BottomMargin": -490.0,
-            "Tag": 34,
-            "ActionTag": 761409427,
-            "Size": {
-              "X": 640.0,
-              "Y": 52.0
-            },
-            "Name": "down",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/hero05.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 65.0,
-              "Y": -100.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -146.0,
-            "RightMargin": -276.0,
-            "TopMargin": -106.0,
-            "BottomMargin": -306.0,
-            "Tag": 28,
-            "ActionTag": 1508278506,
-            "Size": {
-              "X": 422.0,
-              "Y": 412.0
-            },
-            "Name": "hero02",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/hero04_03.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -35.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -307.0,
-            "RightMargin": -237.0,
-            "TopMargin": -202.5,
-            "BottomMargin": -202.5,
-            "Tag": 29,
-            "ActionTag": 394338606,
-            "Size": {
-              "X": 544.0,
-              "Y": 405.0
-            },
-            "Name": "hero03",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/hero02_03.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -200.0,
-              "Y": -130.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -343.0,
-            "RightMargin": 57.0,
-            "TopMargin": -34.0,
-            "BottomMargin": -294.0,
-            "Tag": 31,
-            "ActionTag": -2085320943,
-            "Size": {
-              "X": 286.0,
-              "Y": 328.0
-            },
-            "Name": "hero04",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/hero03_02.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 165.0,
-              "Y": -240.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -31.5,
-            "RightMargin": -361.5,
-            "TopMargin": 42.5,
-            "BottomMargin": -437.5,
-            "Tag": 32,
-            "ActionTag": 2025016316,
-            "Size": {
-              "X": 393.0,
-              "Y": 395.0
-            },
-            "Name": "hero05",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/effect001.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {},
-            "Position": {
-              "X": 300.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 300.0,
-            "RightMargin": -554.0,
-            "TopMargin": -337.0,
-            "Tag": 39,
-            "ActionTag": -2056729174,
-            "Size": {
-              "X": 254.0,
-              "Y": 337.0
-            },
-            "Name": "effect_4",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/hero01_03.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 100.0,
-              "Y": -185.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -270.0,
-            "RightMargin": -470.0,
-            "TopMargin": -30.0,
-            "BottomMargin": -400.0,
-            "Tag": 39,
-            "ActionTag": 283832658,
-            "Size": {
-              "X": 740.0,
-              "Y": 430.0
-            },
-            "Name": "hero01",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/empty.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -5.0,
-              "Y": -80.0
-            },
-            "Scale": {
-              "ScaleX": 0.2,
-              "ScaleY": 0.2
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -29.0,
-            "RightMargin": -19.0,
-            "TopMargin": 57.0,
-            "BottomMargin": -103.0,
-            "Tag": 30,
-            "ActionTag": -334576738,
-            "Size": {
-              "X": 48.0,
-              "Y": 46.0
-            },
-            "Name": "ball_effect",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/hero/effect002.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 1.0,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -160.0,
-              "Y": -360.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -731.0,
-            "RightMargin": 160.0,
-            "TopMargin": 303.5,
-            "BottomMargin": -416.5,
-            "Tag": 37,
-            "ActionTag": -1985736199,
-            "Size": {
-              "X": 571.0,
-              "Y": 113.0
-            },
-            "Name": "effect_3",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/other/btn01.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 1.0
-            },
-            "Position": {
-              "X": 0.0,
-              "Y": -324.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -92.0,
-            "RightMargin": -92.0,
-            "TopMargin": 324.0,
-            "BottomMargin": -398.0,
-            "Tag": 41,
-            "ActionTag": 688341066,
-            "Size": {
-              "X": 184.0,
-              "Y": 74.0
-            },
-            "Name": "btn_effect",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FontSize": 14,
-            "ButtonText": "",
-            "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
-            "DisabledFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/other/btn_2.png",
-              "Plist": "cover.plist"
-            },
-            "PressedFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/other/btn_2.png",
-              "Plist": "cover.plist"
-            },
-            "NormalFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/other/btn_1.png",
-              "Plist": "cover.plist"
-            },
-            "Scale9Enable": true,
-            "Scale9OriginX": 15,
-            "Scale9OriginY": 11,
-            "Scale9Width": 236,
-            "Scale9Height": 151,
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 0.0,
-              "Y": -356.1499
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -133.0,
-            "RightMargin": -133.0,
-            "TopMargin": 269.6499,
-            "BottomMargin": -442.6499,
-            "Tag": 43,
-            "ActionTag": 868730888,
-            "Size": {
-              "X": 266.0,
-              "Y": 173.0
-            },
-            "VisibleForFrame": false,
-            "Name": "cover_login_btn",
-            "ctype": "ButtonObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/other/logo02.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -4.0,
-              "Y": 306.0002
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -154.0,
-            "RightMargin": -146.0,
-            "TopMargin": -396.0002,
-            "BottomMargin": 216.0002,
-            "Tag": 44,
-            "ActionTag": -1877329558,
-            "Size": {
-              "X": 300.0,
-              "Y": 180.0
-            },
-            "Name": "logo",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/ball07.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 139.0259,
-              "Y": 295.1192
-            },
-            "Scale": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 31.0259,
-            "RightMargin": -247.0259,
-            "TopMargin": -345.1192,
-            "BottomMargin": 245.1192,
-            "Tag": 28,
-            "ActionTag": -1924878366,
-            "Size": {
-              "X": 216.0,
-              "Y": 100.0
-            },
-            "Name": "star",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/empty.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 159.5363,
-              "Y": -105.2611
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 135.5363,
-            "RightMargin": -183.5363,
-            "TopMargin": 82.2611,
-            "BottomMargin": -128.2611,
-            "Tag": 31,
-            "ActionTag": -1830837010,
-            "Size": {
-              "X": 48.0,
-              "Y": 46.0
-            },
-            "Name": "hero02_star",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/empty.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -101.7161,
-              "Y": -90.776
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -125.7161,
-            "RightMargin": 77.7161,
-            "TopMargin": 67.776,
-            "BottomMargin": -113.776,
-            "Tag": 32,
-            "ActionTag": -143154413,
-            "Size": {
-              "X": 48.0,
-              "Y": 46.0
-            },
-            "Name": "hero03_star",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/empty.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -182.3065,
-              "Y": -156.5634
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -206.3065,
-            "RightMargin": 158.3065,
-            "TopMargin": 133.5634,
-            "BottomMargin": -179.5634,
-            "Tag": 33,
-            "ActionTag": 534389820,
-            "Size": {
-              "X": 48.0,
-              "Y": 46.0
-            },
-            "Name": "hero04_star",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/empty.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 171.3041,
-              "Y": -158.2086
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 147.3041,
-            "RightMargin": -195.3041,
-            "TopMargin": 135.2086,
-            "BottomMargin": -181.2086,
-            "Tag": 34,
-            "ActionTag": -480335770,
-            "Size": {
-              "X": 48.0,
-              "Y": 46.0
-            },
-            "Name": "hero05_star",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/effect04_06.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5
-            },
-            "Position": {
-              "X": -150.0,
-              "Y": -400.0
-            },
-            "Scale": {
-              "ScaleX": 2.0,
-              "ScaleY": 2.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -196.5,
-            "RightMargin": 103.5,
-            "TopMargin": 271.0,
-            "BottomMargin": -400.0,
-            "Tag": 35,
-            "ActionTag": -1754892431,
-            "Size": {
-              "X": 93.0,
-              "Y": 129.0
-            },
-            "Name": "effect_1",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FlipX": true,
-            "FileData": {
-              "Type": "MarkedSubImage",
-              "Path": "coverSprite/effect/effect04_06.png",
-              "Plist": "cover.plist"
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5
-            },
-            "Position": {
-              "X": 150.0,
-              "Y": -300.0
-            },
-            "Scale": {
-              "ScaleX": 2.0,
-              "ScaleY": 2.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 103.5,
-            "RightMargin": -196.5,
-            "TopMargin": 171.0,
-            "BottomMargin": -300.0,
-            "Tag": 36,
-            "ActionTag": 1541577785,
-            "Size": {
-              "X": 93.0,
-              "Y": 129.0
-            },
-            "Name": "effect_2",
-            "ctype": "SpriteObjectData"
           }
         ],
         "Size": {

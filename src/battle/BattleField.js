@@ -436,7 +436,7 @@ var BattleField = cc.Class.extend({
                 //customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
             player.statistics.total_max_level += 1;
             //更新通关数据
-            NetWork.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");
+            Network.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");
             this.loadStageBackground(stageData);
         } else {
             player.stage_battle_num += 1;
@@ -455,7 +455,7 @@ var BattleField = cc.Class.extend({
         scheduleOnce(this, function () {
             this.prepareBattle(stageData);
         }.bind(this), 1);
-        NetWork.updateLeaderBoardScore(player.statistics.total_gold, "gold_rank");
+        Network.updateLeaderBoardScore(player.statistics.total_gold, "gold_rank");
         PlayerData.updatePlayer();
     },
 

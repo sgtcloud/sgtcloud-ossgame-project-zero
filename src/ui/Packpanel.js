@@ -52,11 +52,14 @@ var PackUnit = cc.Node.extend({
                 if (chest <= 0) {
                     errorContent += "箱子不足,";
                 }
-                Popup.openPopup("友情提示", errorContent + "前往商城购买", function (popup) {
-                    popup.hiddenPopup();
-                    this.removeFromParent();
-                    game.tabContainer.showMenuLayer('shop');
-                    game.tabContainer.menus.shop.showMenuLayer('shop_tab');
+                BasicPopup.confirm("友情提示", errorContent + "是否前往商城购买？", function (result) {
+                    if(result){
+                        GamePopup.closePopup(this);
+                        game.tabContainer.showMenuLayer('shop');
+                        game.tabContainer.menus.shop.showMenuLayer('shop_tab');
+                    }else{
+                        console.log('点击取消');
+                    }
                 }.bind(this));
             }
         };

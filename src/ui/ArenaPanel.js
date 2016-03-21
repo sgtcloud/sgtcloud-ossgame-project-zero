@@ -21,7 +21,7 @@ var ArenaPanel = BattleMenu.extend({
         this.opponentBox = this.panel.getChildByName('opponent_box');//挑战者列表
         //setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
         //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
-        this._arenakey = 'test-arena';
+        this._arenakey = 'pvp_rank';
         this._itemTemplate = ccs.csLoader.createNode(res.pvp_opponent_view_json).getChildByName('root');
         this.changeBtn.addClickEventListener(function (e) {
             this.refreshItems(this._index);
@@ -29,6 +29,7 @@ var ArenaPanel = BattleMenu.extend({
         if (typeof player.arena === 'undefined') {
             player.arena = {times: CONSTS.arena_challenge_times}
         }
+        this._arenaService=Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
         this.pullData();
@@ -42,7 +43,7 @@ var ArenaPanel = BattleMenu.extend({
                 return "宝物";
         }
     }, purchaseTimes: function () {
-        Popup.openPopup("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
+        BasicPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
             function () {
                 player.arena.times += CONSTS.arena_times_purchase.times;
                 PlayerData.updateResource(CONSTS.arena_times_purchase);
@@ -70,8 +71,6 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
-        var methods = ["getPlayersByIndex", "addToEnd", "exchangeIndex", "checkInArena"];
-        this._arenaService = sgt.getCustomService('arena', methods);
         this._arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
             if (result) {
                 this._index = data;
@@ -112,12 +111,11 @@ var ArenaPanel = BattleMenu.extend({
         items.sort(function(a,b){
             return a-b;
         });
-        console.log(items)
         return items;
     }, challenge: function (data, e) {
         if (player.arena.times <= 0) {
-            Popup.openPopup("友情提示", "当日挑战次数已用完，点确定前往购买次数", function (popup) {
-                popup.hiddenPopup();
+            BasicPopup.confirm("友情提示", "当日挑战次数已用完，点确定前往购买次数", function () {
+                //popup.hiddenPopup();
                 this.purchaseTimes();
             }.bind(this));
             return;

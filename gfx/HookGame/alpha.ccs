@@ -355,6 +355,7 @@
           <Image Name="gold_rank.png" />
           <Image Name="Max_gold.png" />
           <Image Name="Max_stage.png" />
+          <Image Name="fight.png" />
         </Folder>
         <Folder Name="shopUI">
           <Image Name="moneyTree_bg.png" />
