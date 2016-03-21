@@ -27,7 +27,7 @@ var MailPanel = cc.Node.extend({
         this.setNum();
         bindButtonCallback(deleteBtn, function () {
             //this.deleteAllMails();
-            NetWork.deleteAllMails(this);
+            Network.deleteAllMails(this);
         }.bind(this));
         bindButtonCallback(getBtn, function () {
             this.attachAllNoPick();
@@ -72,7 +72,7 @@ var MailPanel = cc.Node.extend({
     },
     addBtnClickEventListener: function (btn,btnText, mail, rewards, descText) {
         btn.addClickEventListener(function () {
-            NetWork.pickAttachment(btn,btnText, mail, rewards, descText,this);
+            Network.pickAttachment(btn,btnText, mail, rewards, descText,this);
         }.bind(this));
     },
     setNum: function () {
@@ -103,7 +103,7 @@ var MailPanel = cc.Node.extend({
             for (var i in PlayerData.mails.readedMails) {
                 var mail = PlayerData.mails.readedMails[i];
                 if (cc.isString(mail.attachment) && mail.attachment.length > 0 && mail.attachStatus == 0) {
-                    NetWork.readAndPickAttachment(mail,this);
+                    Network.readAndPickAttachment(mail,this);
                 }
             }
         }
@@ -116,7 +116,7 @@ var MailPanel = cc.Node.extend({
     }
 });
 MailPanel.open = function () {
-    NetWork.updateunReadMailStatus(function (result) {
+    Network.updateunReadMailStatus(function (result) {
         if (result) {
             var mailUnit = new MailPanel();
             mailUnit.openMailPopup();

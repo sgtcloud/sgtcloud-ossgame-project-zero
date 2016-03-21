@@ -51,14 +51,14 @@ var RankLayerMenu = BattleMenu.extend({
 
         this.showRankList = function (type) {
             listView.removeAllChildren();
-            NetWork.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
+            Network.getCurrentRanksByType(type.replace('tab', "rank"), function (result, data) {
                 myNumText.setString('--');
                 if (result) {
                     for (var i in data) {
                         listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
-                    NetWork.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
+                    Network.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
                         if (result && cc.isObject(data))
                             myNumText.setString(data.index + 1);
                     });

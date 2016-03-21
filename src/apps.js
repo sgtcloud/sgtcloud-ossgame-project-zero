@@ -387,7 +387,7 @@ function initGame() {
     game = new MainScene();
     if (cc.isArray(player.orders)) {
         for (var i in player.orders) {
-            NetWork.queryByDid(player.orders[i]);
+            Network.queryByDid(player.orders[i]);
         }
     }
 
@@ -440,19 +440,19 @@ function showCover() {
     //判断当前用户是否存在角色
     if (!PlayerData.modelPlayer) {
         loginBtn.setVisible(false);
-        NetWork.openNewNameLayer(scene);
+        Network.openNewNameLayer(scene);
     } else {
         initGame();
     }
     bindButtonCallback(loginBtn, function () {
         showGame();
         //验证角色签到数据，未签到则直接打开签到面板
-        NetWork.checkIn_createByValidate();
+        Network.checkIn_createByValidate();
         //获取角色未删除邮件数据
-        NetWork.getReadedAndUnreadedMails();
+        Network.getReadedAndUnreadedMails();
         //轮询获取最新未读取邮件
         setInterval(function () {
-            NetWork.updatePlayerMails(10 * 1000);
+            Network.updatePlayerMails(10 * 1000);
         }, 10 * 1000);
     });
     cc.director.runScene(scene);

@@ -1,4 +1,4 @@
-var NetWork = {
+var Network = {
     loginSuccess: true,
     getSgtApi: function () {
         return SgtApi || sgt;
@@ -418,7 +418,7 @@ var NetWork = {
                             createPlayer.removeFromParent(true);
                             initGame();
                             PlayerData.isUpdate= true;
-                            NetWork.updatePlayerSave();
+                            Network.updatePlayerSave();
                             tip2.stopAllActions();
                             tip2.setVisible(false);
                             scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
