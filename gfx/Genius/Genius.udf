@@ -28,28 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="effect5006.csd" />
-          <FilePathData Path="effect5005.csd" />
-          <FilePathData Path="effect5007.csd" />
-          <FilePathData Path="effect5008.csd" />
-          <FilePathData Path="effect5009.csd" />
-          <FilePathData Path="effect5010.csd" />
-          <FilePathData Path="hero101skill01.csd" />
-          <FilePathData Path="effect5000.csd" />
-          <FilePathData Path="effect5001.csd" />
-          <FilePathData Path="effect5002.csd" />
-          <FilePathData Path="effect5003.csd" />
-          <FilePathData Path="effect5004.csd" />
-          <FilePathData Path="hero101skill02.csd" />
-          <FilePathData Path="hero102skill02.csd" />
-          <FilePathData Path="hero103skill01.csd" />
-          <FilePathData Path="hero104skill02.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="hero104skill02.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

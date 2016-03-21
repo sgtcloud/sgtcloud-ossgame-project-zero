@@ -1416,6 +1416,7 @@
         <Project Name="effect5008.csd" Type="Node" />
         <Project Name="effect5009.csd" Type="Node" />
         <Project Name="effect5010.csd" Type="Node" />
+        <Project Name="countdown.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
