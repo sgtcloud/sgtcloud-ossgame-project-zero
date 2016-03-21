@@ -21,7 +21,7 @@ var ArenaPanel = BattleMenu.extend({
         this.opponentBox = this.panel.getChildByName('opponent_box');//挑战者列表
         //setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
         //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
-        this._arenakey = 'test-arena';
+        this._arenakey = 'pvp_rank';
         this._itemTemplate = ccs.csLoader.createNode(res.pvp_opponent_view_json).getChildByName('root');
         this.changeBtn.addClickEventListener(function (e) {
             this.refreshItems(this._index);
