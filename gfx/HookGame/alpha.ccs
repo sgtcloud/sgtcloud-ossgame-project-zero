@@ -659,7 +659,7 @@
         <Project Name="PackageLayer.csd" Type="Layer" />
         <Project Name="SettlementLayer.csd" Type="Layer" />
         <Project Name="PromptIcon.csd" Type="Layer" />
-        <Folder Name="Settlement">
+        <Folder Name="settlement">
           <Image Name="arrow.png" />
           <Image Name="bg.png" />
           <Image Name="close.png" />
@@ -671,7 +671,22 @@
           <Image Name="title_1.png" />
           <Image Name="title_2.png" />
           <Image Name="win.png" />
+          <PlistImageFolder Image="SettlementUI.png" PListFile="SettlementUI.plist" Name=".SettlementUI_PList.Dir">
+            <PlistImageFile Name="settlement_arrow.png" Key="settlement/arrow.png" />
+            <PlistImageFile Name="settlement_bg.png" Key="settlement/bg.png" />
+            <PlistImageFile Name="settlement_close.png" Key="settlement/close.png" />
+            <PlistImageFile Name="settlement_lose.png" Key="settlement/lose.png" />
+            <PlistImageFile Name="settlement_noChange.png" Key="settlement/noChange.png" />
+            <PlistImageFile Name="settlement_rank.png" Key="settlement/rank.png" />
+            <PlistImageFile Name="settlement_reward.png" Key="settlement/reward.png" />
+            <PlistImageFile Name="settlement_showGirl.png" Key="settlement/showGirl.png" />
+            <PlistImageFile Name="settlement_title_1.png" Key="settlement/title_1.png" />
+            <PlistImageFile Name="settlement_title_2.png" Key="settlement/title_2.png" />
+            <PlistImageFile Name="settlement_win.png" Key="settlement/win.png" />
+          </PlistImageFolder>
         </Folder>
+        <PlistInfo Name="SettlementUI.csi" Type="Plist" />
+        <Project Name="PVPRecordView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

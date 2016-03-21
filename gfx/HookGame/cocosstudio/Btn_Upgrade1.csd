@@ -4,9 +4,89 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="75" ctype="GameLayerObjectData">
-        <Size X="140.0000" Y="80.0000" />
+        <Size X="260.0000" Y="80.0000" />
         <Children>
-          <AbstractNodeData Name="btn" ActionTag="-920099854" Tag="226" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn100" ActionTag="-1849437105" Tag="188" IconVisible="False" RightMargin="120.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+            <Size X="140.0000" Y="80.0000" />
+            <Children>
+              <AbstractNodeData Name="btn" ActionTag="1500229950" Tag="189" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="140.0000" Y="80.0000" />
+                <AnchorPoint />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="1.0000" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="text_yellow" ActionTag="685027553" Tag="190" IconVisible="False" LeftMargin="12.9494" RightMargin="76.0506" TopMargin="29.2320" BottomMargin="32.7680" LabelText="*100" ctype="TextBMFontObjectData">
+                <Size X="51.0000" Y="18.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="12.9494" Y="41.7680" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="0" />
+                <PrePosition X="0.0925" Y="0.5221" />
+                <PreSize X="0.3643" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="0.5385" Y="1.0000" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="btn10" ActionTag="1597558356" Tag="179" IconVisible="False" LeftMargin="65.0000" RightMargin="55.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+            <Size X="140.0000" Y="80.0000" />
+            <Children>
+              <AbstractNodeData Name="btn" ActionTag="-1649356931" Tag="182" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="140.0000" Y="80.0000" />
+                <AnchorPoint />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="1.0000" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="MarkedSubImage" Path="heroUI/btn2.png" Plist="HeroUI.plist" />
+                <PressedFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <NormalFileData Type="MarkedSubImage" Path="heroUI/btn1.png" Plist="HeroUI.plist" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="text_yellow" ActionTag="-2081486382" Tag="184" IconVisible="False" LeftMargin="12.9494" RightMargin="92.0506" TopMargin="29.2320" BottomMargin="32.7680" LabelText="*10" ctype="TextBMFontObjectData">
+                <Size X="35.0000" Y="18.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="12.9494" Y="41.7680" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="0" />
+                <PrePosition X="0.0925" Y="0.5221" />
+                <PreSize X="0.2500" Y="0.2250" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white14-export.fnt" Plist="" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint />
+            <Position X="65.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2500" />
+            <PreSize X="0.5385" Y="1.0000" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="btn1" ActionTag="-920099854" Tag="226" IconVisible="False" LeftMargin="115.0000" RightMargin="5.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="140.0000" Y="80.0000" />
             <Children>
               <AbstractNodeData Name="btn" ActionTag="745304776" Tag="227" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="110" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -24,13 +104,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="buff_text" ActionTag="1603274551" Tag="229" IconVisible="False" LeftMargin="22.0484" RightMargin="17.9516" TopMargin="30.0000" BottomMargin="32.0000" IsCustomSize="True" FontSize="12" LabelText="生命值" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="buff_text" ActionTag="1603274551" Tag="229" IconVisible="False" LeftMargin="22.0484" RightMargin="17.9516" TopMargin="29.2320" BottomMargin="32.7680" IsCustomSize="True" FontSize="12" LabelText="生命值" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="100.0000" Y="18.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="72.0484" Y="41.0000" />
+                <Position X="72.0484" Y="41.7680" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="33" G="233" B="21" />
-                <PrePosition X="0.5146" Y="0.5125" />
+                <PrePosition X="0.5146" Y="0.5221" />
                 <PreSize X="0.7143" Y="0.2250" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -67,11 +147,11 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position />
+            <Position X="115.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="1.0000" Y="1.0000" />
+            <PrePosition X="0.4423" />
+            <PreSize X="0.5385" Y="1.0000" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
