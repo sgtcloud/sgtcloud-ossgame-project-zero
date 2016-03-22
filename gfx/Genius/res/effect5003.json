@@ -616,9 +616,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -746,9 +746,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 26,
                 "Tween": false,
@@ -949,9 +949,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -1079,9 +1079,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 26,
                 "Tween": false,
@@ -1282,9 +1282,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -1412,9 +1412,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 26,
                 "Tween": false,
@@ -1511,9 +1511,9 @@
           },
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "shine/shine00.png",
-              "Plist": ""
+              "Plist": "other.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -1555,9 +1555,9 @@
           },
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "shine/shine00.png",
-              "Plist": ""
+              "Plist": "other.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -1599,9 +1599,9 @@
           },
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "shine/shine00.png",
-              "Plist": ""
+              "Plist": "other.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -1652,7 +1652,8 @@
       "UsedResources": [
         "effect5003.plist",
         "effect5003.png",
-        "shine/shine00.png"
+        "other.plist",
+        "other.png"
       ],
       "ctype": "GameFileData"
     }

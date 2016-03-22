@@ -79,7 +79,7 @@
                 <PreSize X="0.9355" Y="0.6250" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_41" ActionTag="1223335582" Tag="332" IconVisible="False" LeftMargin="18.4632" RightMargin="35.5368" TopMargin="94.4749" BottomMargin="599.5251" Scale9Width="425" Scale9Height="81" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_41" ActionTag="1223335582" Tag="332" IconVisible="False" LeftMargin="18.4632" RightMargin="35.5368" TopMargin="94.4749" BottomMargin="599.5251" Scale9Width="640" Scale9Height="195" ctype="ImageViewObjectData">
                 <Size X="566.0000" Y="106.0000" />
                 <AnchorPoint />
                 <Position X="18.4632" Y="599.5251" />

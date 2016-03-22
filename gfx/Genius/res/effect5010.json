@@ -14,9 +14,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire01.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -24,9 +24,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire02.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 1,
                 "Tween": false,
@@ -34,9 +34,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire03.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -44,9 +44,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire04.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -54,9 +54,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire05.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -64,9 +64,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire06.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 5,
                 "Tween": false,
@@ -74,9 +74,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire07.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -84,9 +84,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire08.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 7,
                 "Tween": false,
@@ -94,9 +94,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire09.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -104,9 +104,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire10.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -114,9 +114,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire11.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -124,9 +124,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire12.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 11,
                 "Tween": false,
@@ -134,9 +134,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire13.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -144,9 +144,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire14.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 13,
                 "Tween": false,
@@ -154,9 +154,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire15.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 14,
                 "Tween": false,
@@ -164,9 +164,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire16.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -174,9 +174,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5010/fire17.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 16,
                 "Tween": false,
@@ -201,9 +201,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "effect/effect5010/fire01.png",
-              "Plist": ""
+              "Plist": "effect.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -253,23 +253,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5010/fire01.png",
-        "effect/effect5010/fire02.png",
-        "effect/effect5010/fire03.png",
-        "effect/effect5010/fire04.png",
-        "effect/effect5010/fire05.png",
-        "effect/effect5010/fire06.png",
-        "effect/effect5010/fire07.png",
-        "effect/effect5010/fire08.png",
-        "effect/effect5010/fire09.png",
-        "effect/effect5010/fire10.png",
-        "effect/effect5010/fire11.png",
-        "effect/effect5010/fire12.png",
-        "effect/effect5010/fire13.png",
-        "effect/effect5010/fire14.png",
-        "effect/effect5010/fire15.png",
-        "effect/effect5010/fire16.png",
-        "effect/effect5010/fire17.png"
+        "effect.plist",
+        "effect.png"
       ],
       "ctype": "GameFileData"
     }

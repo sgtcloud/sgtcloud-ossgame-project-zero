@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>hero101skill02/boom00.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,714},{248,339}}</string>
+				<key>offset</key>
+				<string>{19,-32}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{299,403}</string>
+			</dict>
+			<key>hero101skill02/boom01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1392},{206,402}}</string>
+				<key>offset</key>
+				<string>{3,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{299,403}</string>
+			</dict>
+			<key>hero101skill02/boom02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1053},{248,339}}</string>
+				<key>offset</key>
+				<string>{19,-32}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{299,403}</string>
+			</dict>
+			<key>hero101skill02/boom03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{206,1392},{266,215}}</string>
+				<key>offset</key>
+				<string>{17,-93}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{299,403}</string>
+			</dict>
+			<key>hero101skill02/boom04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{336,1768},{291,149}}</string>
+				<key>offset</key>
+				<string>{-4,-122}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{299,403}</string>
+			</dict>
+			<key>hero101skill02/hero01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1794},{224,336}}</string>
+				<key>offset</key>
+				<string>{-49,-26}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{323,388}</string>
+			</dict>
+			<key>hero101skill02/hero02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{307,343}}</string>
+				<key>offset</key>
+				<string>{0,-22}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{307,388}</string>
+			</dict>
+			<key>hero101skill02/hero03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,343},{268,371}}</string>
+				<key>offset</key>
+				<string>{-43,-8}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{355,388}</string>
+			</dict>
+			<key>hero101skill02/wind01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{307,184},{184,132}}</string>
+				<key>offset</key>
+				<string>{4,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{201,136}</string>
+			</dict>
+			<key>hero101skill02/wind02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{268,528},{184,135}}</string>
+				<key>offset</key>
+				<string>{9,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,136}</string>
+			</dict>
+			<key>hero101skill02/wind03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{248,714},{185,136}}</string>
+				<key>offset</key>
+				<string>{-4,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,136}</string>
+			</dict>
+			<key>hero101skill02/wind04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{268,343},{185,136}}</string>
+				<key>offset</key>
+				<string>{-4,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,136}</string>
+			</dict>
+			<key>hero101skill02/wind05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{307,0},{184,135}}</string>
+				<key>offset</key>
+				<string>{9,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,136}</string>
+			</dict>
+			<key>hero101skill02/word01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{206,1658},{342,110}}</string>
+				<key>offset</key>
+				<string>{10,-3}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{380,120}</string>
+			</dict>
+			<key>hero101skill02/word02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{336,1917},{342,110}}</string>
+				<key>offset</key>
+				<string>{10,-5}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{380,120}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>hero101skill02.png</string>
+			<key>realTextureFileName</key>
+			<string>hero101skill02.png</string>
+			<key>size</key>
+			<string>{678,2027}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>678</integer>
+			<key>height</key>
+			<integer>2027</integer>
+		</dict>
+	</dict>
+</plist>

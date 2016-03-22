@@ -5,55 +5,55 @@
       <Animation Duration="16" Speed="0.3333">
         <Timeline ActionTag="732283153" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold01.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="1" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold02.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="2" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold03.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold04.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="4" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold05.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold05.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="5" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold06.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold06.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold07.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold07.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="7" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold08.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold08.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="8" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold09.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold09.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold10.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold10.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="10" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold11.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold11.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="11" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold12.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold12.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold13.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold13.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="13" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold14.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold14.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="14" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold15.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold15.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold16.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold16.png" Plist="effect.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="16" Tween="False">
-            <TextureFile Type="Normal" Path="effect/effect5006/gold17.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="effect/effect5006/gold17.png" Plist="effect.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="732283153" Property="Position">
@@ -125,7 +125,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="effect/effect5006/gold01.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="effect/effect5006/gold01.png" Plist="effect.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

@@ -31,31 +31,31 @@
         </Timeline>
         <Timeline ActionTag="-113851416" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="2" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="4" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="8" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="10" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="14" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/3.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/3.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="16" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="-113851416" Property="BlendFunc">
@@ -126,34 +126,34 @@
         </Timeline>
         <Timeline ActionTag="-223109960" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="14" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="16" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="20" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="22" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="26" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="28" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/2.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/2.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="30" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="-223109960" Property="BlendFunc">
@@ -228,34 +228,34 @@
         </Timeline>
         <Timeline ActionTag="565593975" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="28" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="30" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="32" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="34" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="36" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="38" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="40" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="42" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/1.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/1.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="44" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="565593975" Property="BlendFunc">
@@ -332,34 +332,34 @@
         </Timeline>
         <Timeline ActionTag="2102768581" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="42" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="44" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="46" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="48" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="50" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="52" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="54" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="56" Tween="False">
-            <TextureFile Type="Normal" Path="countdown/ready.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="countdown/ready.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="58" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="2102768581" Property="BlendFunc">
@@ -429,7 +429,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.7188" />
                 <PreSize X="0.0641" Y="0.0594" />
-                <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="2" ActionTag="-223109960" Alpha="102" Tag="14" IconVisible="False" LeftMargin="300.0000" RightMargin="300.0000" TopMargin="249.5000" BottomMargin="669.5000" ctype="SpriteObjectData">
@@ -440,7 +440,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.7188" />
                 <PreSize X="0.0656" Y="0.0594" />
-                <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="1" ActionTag="565593975" Alpha="102" Tag="15" IconVisible="False" LeftMargin="300.0000" RightMargin="300.0000" TopMargin="249.5000" BottomMargin="669.5000" ctype="SpriteObjectData">
@@ -451,7 +451,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.7188" />
                 <PreSize X="0.0625" Y="0.0427" />
-                <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="ready" ActionTag="2102768581" Alpha="102" Tag="16" IconVisible="False" LeftMargin="300.0000" RightMargin="300.0000" TopMargin="249.5000" BottomMargin="669.5000" ctype="SpriteObjectData">
@@ -462,7 +462,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.7188" />
                 <PreSize X="0.0625" Y="0.0427" />
-                <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
             </Children>

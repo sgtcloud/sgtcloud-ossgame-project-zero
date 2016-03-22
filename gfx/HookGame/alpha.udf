@@ -31,23 +31,14 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="SettlementLayer.csd" />
-          <FilePathData Path="RankLayer.csd" />
-          <FilePathData Path="PVPRecord.csd" />
-          <FilePathData Path="PVPOpponentView.csd" />
-          <FilePathData Path="Btn_MaxLevel.csd" />
-          <FilePathData Path="Btn_Recast.csd" />
-          <FilePathData Path="Btn_Revive.csd" />
-          <FilePathData Path="Btn_Upgrade1.csd" />
-          <FilePathData Path="Btn_Upgrade2.csd" />
-          <FilePathData Path="EquipHeroView.csd" />
-          <FilePathData Path="Equiplayer.csd" />
-          <FilePathData Path="HeroView.csd" />
-          <FilePathData Path="PVPLayer.csd" />
-          <FilePathData Path="MaillLayer.csd" />
-          <FilePathData Path="PVPRecordView.csd" />
+          <FilePathData Path="FirstRechargeLayer.csd" />
+          <FilePathData Path="RechargeLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="FirstRechargeUI.csi" />
+          <FilePathData Path="ButtonUI.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="PVPRecord.csd" />
+        <ActiveDocument Path="ButtonUI.csi" />
       </Value>
     </Item>
   </Properties>
