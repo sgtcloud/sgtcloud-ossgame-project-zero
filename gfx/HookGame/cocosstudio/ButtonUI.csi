@@ -22,7 +22,9 @@
       <FilePathData Path="buttonUI/revive.png" />
       <FilePathData Path="buttonUI/sure.png" />
       <FilePathData Path="buttonUI/upLevel.png" />
+      <FilePathData Path="buttonUI/get.png" />
+      <FilePathData Path="buttonUI/now.png" />
     </ImageFiles>
-    <MaxSize Width="330" Height="100" />
+    <MaxSize Width="512" Height="512" />
   </Content>
 </PlistInfoProjectFile>

@@ -7,9 +7,9 @@
 			<key>hero101skill02/boom00.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,714},{248,339}}</string>
+				<string>{{0,776},{299,403}}</string>
 				<key>offset</key>
-				<string>{19,-32}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -18,9 +18,9 @@
 			<key>hero101skill02/boom01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1392},{206,402}}</string>
+				<string>{{0,1179},{299,403}}</string>
 				<key>offset</key>
-				<string>{3,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -29,9 +29,9 @@
 			<key>hero101skill02/boom02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1053},{248,339}}</string>
+				<string>{{0,1582},{299,403}}</string>
 				<key>offset</key>
-				<string>{19,-32}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -40,42 +40,42 @@
 			<key>hero101skill02/boom03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{206,1392},{266,215}}</string>
+				<string>{{299,776},{299,403}}</string>
 				<key>offset</key>
-				<string>{17,-93}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{299,403}</string>
 			</dict>
 			<key>hero101skill02/boom04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{336,1768},{291,149}}</string>
+				<string>{{323,388},{299,403}}</string>
 				<key>offset</key>
-				<string>{-4,-122}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{299,403}</string>
 			</dict>
 			<key>hero101skill02/hero01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1794},{224,336}}</string>
+				<string>{{0,388},{323,388}}</string>
 				<key>offset</key>
-				<string>{-49,-26}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{323,388}</string>
 			</dict>
 			<key>hero101skill02/hero02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{307,343}}</string>
+				<string>{{355,0},{307,388}}</string>
 				<key>offset</key>
-				<string>{0,-22}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -84,9 +84,9 @@
 			<key>hero101skill02/hero03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,343},{268,371}}</string>
+				<string>{{0,0},{355,388}}</string>
 				<key>offset</key>
-				<string>{-43,-8}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -95,20 +95,20 @@
 			<key>hero101skill02/wind01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{307,184},{184,132}}</string>
+				<string>{{299,1559},{201,136}}</string>
 				<key>offset</key>
-				<string>{4,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{201,136}</string>
 			</dict>
 			<key>hero101skill02/wind02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{268,528},{184,135}}</string>
+				<string>{{299,1760},{201,136}}</string>
 				<key>offset</key>
-				<string>{9,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -117,9 +117,9 @@
 			<key>hero101skill02/wind03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{248,714},{185,136}}</string>
+				<string>{{419,1179},{201,136}}</string>
 				<key>offset</key>
-				<string>{-4,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -128,20 +128,20 @@
 			<key>hero101skill02/wind04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{268,343},{185,136}}</string>
+				<string>{{419,1380},{201,136}}</string>
 				<key>offset</key>
-				<string>{-4,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{201,136}</string>
 			</dict>
 			<key>hero101skill02/wind05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{307,0},{184,135}}</string>
+				<string>{{555,1179},{201,136}}</string>
 				<key>offset</key>
-				<string>{9,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -150,22 +150,22 @@
 			<key>hero101skill02/word01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{206,1658},{342,110}}</string>
+				<string>{{662,0},{380,120}}</string>
 				<key>offset</key>
-				<string>{10,-3}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{380,120}</string>
 			</dict>
 			<key>hero101skill02/word02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{336,1917},{342,110}}</string>
+				<string>{{299,1179},{380,120}}</string>
 				<key>offset</key>
-				<string>{10,-5}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{380,120}</string>
 			</dict>
@@ -179,14 +179,14 @@
 			<key>realTextureFileName</key>
 			<string>hero101skill02.png</string>
 			<key>size</key>
-			<string>{678,2027}</string>
+			<string>{1024,2048}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>678</integer>
+			<integer>1024</integer>
 			<key>height</key>
-			<integer>2027</integer>
+			<integer>2048</integer>
 		</dict>
 	</dict>
 </plist>

@@ -1,15 +1,7 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="hero103skill01" Type="Plist" ID="84d54e46-b07d-47aa-af46-39f5da4c620c" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <PropertyGroup Name="hero103skill01" Type="Plist" ID="e9b8713f-8727-4930-98d5-798b865db5bc" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
     <ImageFiles>
-      <FilePathData Path="hero103skill01/book01.png" />
-      <FilePathData Path="hero103skill01/book02.png" />
-      <FilePathData Path="hero103skill01/book03.png" />
-      <FilePathData Path="hero103skill01/book04.png" />
-      <FilePathData Path="hero103skill01/book05.png" />
-      <FilePathData Path="hero103skill01/book06.png" />
-      <FilePathData Path="hero103skill01/book07.png" />
-      <FilePathData Path="hero103skill01/book08.png" />
       <FilePathData Path="hero103skill01/book09.png" />
       <FilePathData Path="hero103skill01/book10.png" />
       <FilePathData Path="hero103skill01/book11.png" />
@@ -40,6 +32,14 @@
       <FilePathData Path="hero103skill01/word02.png" />
       <FilePathData Path="hero103skill01/word03.png" />
       <FilePathData Path="hero103skill01/word04.png" />
+      <FilePathData Path="hero103skill01/book01.png" />
+      <FilePathData Path="hero103skill01/book02.png" />
+      <FilePathData Path="hero103skill01/book03.png" />
+      <FilePathData Path="hero103skill01/book04.png" />
+      <FilePathData Path="hero103skill01/book05.png" />
+      <FilePathData Path="hero103skill01/book06.png" />
+      <FilePathData Path="hero103skill01/book07.png" />
+      <FilePathData Path="hero103skill01/book08.png" />
     </ImageFiles>
     <MaxSize Width="2048" Height="2048" />
   </Content>
