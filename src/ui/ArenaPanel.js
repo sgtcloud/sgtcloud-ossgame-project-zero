@@ -29,7 +29,7 @@ var ArenaPanel = BattleMenu.extend({
         if (typeof player.arena === 'undefined') {
             player.arena = {times: CONSTS.arena_challenge_times}
         }
-        this._arenaService=Network.arenaService;
+        this._arenaService = Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
         this.pullData();
@@ -43,11 +43,13 @@ var ArenaPanel = BattleMenu.extend({
                 return "宝物";
         }
     }, purchaseTimes: function () {
-        BasicPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-            function () {
-                player.arena.times += CONSTS.arena_times_purchase.times;
-                PlayerData.updateResource(CONSTS.arena_times_purchase);
-                this.refreshTimes();
+        ComplexPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
+            [CONSTS.arena_times_purchase], function (result) {
+                if (result) {
+                    player.arena.times += CONSTS.arena_times_purchase.times;
+                    PlayerData.updateResource(CONSTS.arena_times_purchase);
+                    this.refreshTimes();
+                }
             }.bind(this));
     }, pushItem: function (data, i) {
         var item = this._itemTemplate.clone();
@@ -103,20 +105,20 @@ var ArenaPanel = BattleMenu.extend({
                 _index = index / 1.05;
             }
             var ranNum = Math.round(getRandomInt(_index - base, _index + base));
-            if (items.indexOf(ranNum) === -1&&index!==ranNum) {
+            if (items.indexOf(ranNum) === -1 && index !== ranNum) {
                 items.push(ranNum);
                 i++;
             }
         }
-        items.sort(function(a,b){
-            return a-b;
+        items.sort(function (a, b) {
+            return a - b;
         });
         return items;
     }, challenge: function (data, e) {
         if (player.arena.times <= 0) {
-            BasicPopup.confirm("友情提示", "当日挑战次数已用完，点确定前往购买次数", function () {
-                //popup.hiddenPopup();
-                this.purchaseTimes();
+            BasicPopup.confirm("友情提示", "当日挑战次数已用完，点确定前往购买次数", function (result) {
+                if (result)
+                    this.purchaseTimes();
             }.bind(this));
             return;
         }
