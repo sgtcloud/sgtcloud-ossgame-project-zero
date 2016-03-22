@@ -110,6 +110,7 @@ var res = {
     hero102skill02: 'res/hero102skill02.json',
     hero103skill01: 'res/hero103skill01.json',
     hero104skill02: 'res/hero104skill02.json',
+
     effect5001: "res/effect5001.json",
     effect5002: "res/effect5002.json",
     effect5003: "res/effect5003.json",

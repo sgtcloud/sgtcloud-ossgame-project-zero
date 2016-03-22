@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "Settlement/bg.png",
-                  "Plist": ""
+                  "Type": "MarkedSubImage",
+                  "Path": "settlement/bg.png",
+                  "Plist": "SettlementUI.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -99,9 +99,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "Settlement/showGirl.png",
-                  "Plist": ""
+                  "Type": "MarkedSubImage",
+                  "Path": "settlement/showGirl.png",
+                  "Plist": "SettlementUI.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -144,9 +144,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "Settlement/close.png",
-                  "Plist": ""
+                  "Type": "MarkedSubImage",
+                  "Path": "settlement/close.png",
+                  "Plist": "SettlementUI.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -234,9 +234,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "Settlement/reward.png",
-                  "Plist": ""
+                  "Type": "MarkedSubImage",
+                  "Path": "settlement/reward.png",
+                  "Plist": "SettlementUI.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -407,9 +407,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/title_1.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/title_1.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "Scale9Width": 275,
                     "Scale9Height": 185,
@@ -450,9 +450,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/arrow.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/arrow.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "Scale9Width": 58,
                     "Scale9Height": 58,
@@ -493,9 +493,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/rank.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/rank.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "Scale9Width": 154,
                     "Scale9Height": 41,
@@ -536,9 +536,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/rank.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/rank.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "Scale9Width": 154,
                     "Scale9Height": 41,
@@ -719,9 +719,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/title_2.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/title_2.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "BlendFunc": {
                       "Src": 770,
@@ -764,9 +764,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/rank.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/rank.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "BlendFunc": {
                       "Src": 770,
@@ -853,9 +853,9 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "Settlement/noChange.png",
-                      "Plist": ""
+                      "Type": "MarkedSubImage",
+                      "Path": "settlement/noChange.png",
+                      "Plist": "SettlementUI.plist"
                     },
                     "BlendFunc": {
                       "Src": 770,
@@ -928,15 +928,8 @@
         "mainUI/hero_icon.png",
         "MaterialUI.plist",
         "MaterialUI.png",
-        "Settlement/arrow.png",
-        "Settlement/bg.png",
-        "Settlement/close.png",
-        "Settlement/noChange.png",
-        "Settlement/rank.png",
-        "Settlement/reward.png",
-        "Settlement/showGirl.png",
-        "Settlement/title_1.png",
-        "Settlement/title_2.png"
+        "SettlementUI.plist",
+        "SettlementUI.png"
       ],
       "ctype": "GameFileData"
     }
