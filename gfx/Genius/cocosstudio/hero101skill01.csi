@@ -1,0 +1,21 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="hero101skill01" Type="Plist" ID="b1443672-b758-49be-9c6e-c39b6bd90c55" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="hero101skill01/bg.png" />
+      <FilePathData Path="hero101skill01/fire00.png" />
+      <FilePathData Path="hero101skill01/fire01.png" />
+      <FilePathData Path="hero101skill01/fire02.png" />
+      <FilePathData Path="hero101skill01/fire03.png" />
+      <FilePathData Path="hero101skill01/hero01.png" />
+      <FilePathData Path="hero101skill01/hero02.png" />
+      <FilePathData Path="hero101skill01/round01.png" />
+      <FilePathData Path="hero101skill01/round02.png" />
+      <FilePathData Path="hero101skill01/round03.png" />
+      <FilePathData Path="hero101skill01/round04.png" />
+      <FilePathData Path="hero101skill01/round05.png" />
+      <FilePathData Path="hero101skill01/round06.png" />
+    </ImageFiles>
+    <MaxSize Width="2048" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

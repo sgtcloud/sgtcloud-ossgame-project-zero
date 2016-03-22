@@ -878,6 +878,98 @@
             <Image Name="fire16.png" />
             <Image Name="fire17.png" />
           </Folder>
+          <PlistImageFolder Image="effect.png" PListFile="effect.plist" Name=".effect_PList.Dir">
+            <PlistImageFile Name="effect_effect5006_gold01.png" Key="effect/effect5006/gold01.png" />
+            <PlistImageFile Name="effect_effect5006_gold02.png" Key="effect/effect5006/gold02.png" />
+            <PlistImageFile Name="effect_effect5006_gold03.png" Key="effect/effect5006/gold03.png" />
+            <PlistImageFile Name="effect_effect5006_gold04.png" Key="effect/effect5006/gold04.png" />
+            <PlistImageFile Name="effect_effect5006_gold05.png" Key="effect/effect5006/gold05.png" />
+            <PlistImageFile Name="effect_effect5006_gold06.png" Key="effect/effect5006/gold06.png" />
+            <PlistImageFile Name="effect_effect5006_gold07.png" Key="effect/effect5006/gold07.png" />
+            <PlistImageFile Name="effect_effect5006_gold08.png" Key="effect/effect5006/gold08.png" />
+            <PlistImageFile Name="effect_effect5006_gold09.png" Key="effect/effect5006/gold09.png" />
+            <PlistImageFile Name="effect_effect5006_gold10.png" Key="effect/effect5006/gold10.png" />
+            <PlistImageFile Name="effect_effect5006_gold11.png" Key="effect/effect5006/gold11.png" />
+            <PlistImageFile Name="effect_effect5006_gold12.png" Key="effect/effect5006/gold12.png" />
+            <PlistImageFile Name="effect_effect5006_gold13.png" Key="effect/effect5006/gold13.png" />
+            <PlistImageFile Name="effect_effect5006_gold14.png" Key="effect/effect5006/gold14.png" />
+            <PlistImageFile Name="effect_effect5006_gold15.png" Key="effect/effect5006/gold15.png" />
+            <PlistImageFile Name="effect_effect5006_gold16.png" Key="effect/effect5006/gold16.png" />
+            <PlistImageFile Name="effect_effect5006_gold17.png" Key="effect/effect5006/gold17.png" />
+            <PlistImageFile Name="effect_effect5007_atk01.png" Key="effect/effect5007/atk01.png" />
+            <PlistImageFile Name="effect_effect5007_atk02.png" Key="effect/effect5007/atk02.png" />
+            <PlistImageFile Name="effect_effect5007_atk03.png" Key="effect/effect5007/atk03.png" />
+            <PlistImageFile Name="effect_effect5007_atk04.png" Key="effect/effect5007/atk04.png" />
+            <PlistImageFile Name="effect_effect5007_atk05.png" Key="effect/effect5007/atk05.png" />
+            <PlistImageFile Name="effect_effect5007_atk06.png" Key="effect/effect5007/atk06.png" />
+            <PlistImageFile Name="effect_effect5007_atk07.png" Key="effect/effect5007/atk07.png" />
+            <PlistImageFile Name="effect_effect5007_atk08.png" Key="effect/effect5007/atk08.png" />
+            <PlistImageFile Name="effect_effect5007_atk09.png" Key="effect/effect5007/atk09.png" />
+            <PlistImageFile Name="effect_effect5007_atk10.png" Key="effect/effect5007/atk10.png" />
+            <PlistImageFile Name="effect_effect5007_atk11.png" Key="effect/effect5007/atk11.png" />
+            <PlistImageFile Name="effect_effect5007_atk12.png" Key="effect/effect5007/atk12.png" />
+            <PlistImageFile Name="effect_effect5007_atk13.png" Key="effect/effect5007/atk13.png" />
+            <PlistImageFile Name="effect_effect5007_atk14.png" Key="effect/effect5007/atk14.png" />
+            <PlistImageFile Name="effect_effect5007_atk15.png" Key="effect/effect5007/atk15.png" />
+            <PlistImageFile Name="effect_effect5007_atk16.png" Key="effect/effect5007/atk16.png" />
+            <PlistImageFile Name="effect_effect5008_tap01.png" Key="effect/effect5008/tap01.png" />
+            <PlistImageFile Name="effect_effect5008_tap02.png" Key="effect/effect5008/tap02.png" />
+            <PlistImageFile Name="effect_effect5008_tap03.png" Key="effect/effect5008/tap03.png" />
+            <PlistImageFile Name="effect_effect5008_tap04.png" Key="effect/effect5008/tap04.png" />
+            <PlistImageFile Name="effect_effect5008_tap05.png" Key="effect/effect5008/tap05.png" />
+            <PlistImageFile Name="effect_effect5008_tap06.png" Key="effect/effect5008/tap06.png" />
+            <PlistImageFile Name="effect_effect5008_tap07.png" Key="effect/effect5008/tap07.png" />
+            <PlistImageFile Name="effect_effect5008_tap08.png" Key="effect/effect5008/tap08.png" />
+            <PlistImageFile Name="effect_effect5008_tap09.png" Key="effect/effect5008/tap09.png" />
+            <PlistImageFile Name="effect_effect5008_tap10.png" Key="effect/effect5008/tap10.png" />
+            <PlistImageFile Name="effect_effect5008_tap11.png" Key="effect/effect5008/tap11.png" />
+            <PlistImageFile Name="effect_effect5008_tap12.png" Key="effect/effect5008/tap12.png" />
+            <PlistImageFile Name="effect_effect5008_tap13.png" Key="effect/effect5008/tap13.png" />
+            <PlistImageFile Name="effect_effect5008_tap14.png" Key="effect/effect5008/tap14.png" />
+            <PlistImageFile Name="effect_effect5008_tap15.png" Key="effect/effect5008/tap15.png" />
+            <PlistImageFile Name="effect_effect5008_tap16.png" Key="effect/effect5008/tap16.png" />
+            <PlistImageFile Name="effect_effect5008_tap17.png" Key="effect/effect5008/tap17.png" />
+            <PlistImageFile Name="effect_effect5008_tap18.png" Key="effect/effect5008/tap18.png" />
+            <PlistImageFile Name="effect_effect5009_change01.png" Key="effect/effect5009/change01.png" />
+            <PlistImageFile Name="effect_effect5009_change02.png" Key="effect/effect5009/change02.png" />
+            <PlistImageFile Name="effect_effect5009_change03.png" Key="effect/effect5009/change03.png" />
+            <PlistImageFile Name="effect_effect5009_change04.png" Key="effect/effect5009/change04.png" />
+            <PlistImageFile Name="effect_effect5009_change05.png" Key="effect/effect5009/change05.png" />
+            <PlistImageFile Name="effect_effect5009_change06.png" Key="effect/effect5009/change06.png" />
+            <PlistImageFile Name="effect_effect5009_change07.png" Key="effect/effect5009/change07.png" />
+            <PlistImageFile Name="effect_effect5009_change08.png" Key="effect/effect5009/change08.png" />
+            <PlistImageFile Name="effect_effect5009_change09.png" Key="effect/effect5009/change09.png" />
+            <PlistImageFile Name="effect_effect5009_change10.png" Key="effect/effect5009/change10.png" />
+            <PlistImageFile Name="effect_effect5009_change11.png" Key="effect/effect5009/change11.png" />
+            <PlistImageFile Name="effect_effect5009_change12.png" Key="effect/effect5009/change12.png" />
+            <PlistImageFile Name="effect_effect5009_change13.png" Key="effect/effect5009/change13.png" />
+            <PlistImageFile Name="effect_effect5009_change14.png" Key="effect/effect5009/change14.png" />
+            <PlistImageFile Name="effect_effect5009_change15.png" Key="effect/effect5009/change15.png" />
+            <PlistImageFile Name="effect_effect5009_change16.png" Key="effect/effect5009/change16.png" />
+            <PlistImageFile Name="effect_effect5009_change17.png" Key="effect/effect5009/change17.png" />
+            <PlistImageFile Name="effect_effect5009_change18.png" Key="effect/effect5009/change18.png" />
+            <PlistImageFile Name="effect_effect5009_change19.png" Key="effect/effect5009/change19.png" />
+            <PlistImageFile Name="effect_effect5009_change20.png" Key="effect/effect5009/change20.png" />
+            <PlistImageFile Name="effect_effect5009_change21.png" Key="effect/effect5009/change21.png" />
+            <PlistImageFile Name="effect_effect5009_change22.png" Key="effect/effect5009/change22.png" />
+            <PlistImageFile Name="effect_effect5010_fire01.png" Key="effect/effect5010/fire01.png" />
+            <PlistImageFile Name="effect_effect5010_fire02.png" Key="effect/effect5010/fire02.png" />
+            <PlistImageFile Name="effect_effect5010_fire03.png" Key="effect/effect5010/fire03.png" />
+            <PlistImageFile Name="effect_effect5010_fire04.png" Key="effect/effect5010/fire04.png" />
+            <PlistImageFile Name="effect_effect5010_fire05.png" Key="effect/effect5010/fire05.png" />
+            <PlistImageFile Name="effect_effect5010_fire06.png" Key="effect/effect5010/fire06.png" />
+            <PlistImageFile Name="effect_effect5010_fire07.png" Key="effect/effect5010/fire07.png" />
+            <PlistImageFile Name="effect_effect5010_fire08.png" Key="effect/effect5010/fire08.png" />
+            <PlistImageFile Name="effect_effect5010_fire09.png" Key="effect/effect5010/fire09.png" />
+            <PlistImageFile Name="effect_effect5010_fire10.png" Key="effect/effect5010/fire10.png" />
+            <PlistImageFile Name="effect_effect5010_fire11.png" Key="effect/effect5010/fire11.png" />
+            <PlistImageFile Name="effect_effect5010_fire12.png" Key="effect/effect5010/fire12.png" />
+            <PlistImageFile Name="effect_effect5010_fire13.png" Key="effect/effect5010/fire13.png" />
+            <PlistImageFile Name="effect_effect5010_fire14.png" Key="effect/effect5010/fire14.png" />
+            <PlistImageFile Name="effect_effect5010_fire15.png" Key="effect/effect5010/fire15.png" />
+            <PlistImageFile Name="effect_effect5010_fire16.png" Key="effect/effect5010/fire16.png" />
+            <PlistImageFile Name="effect_effect5010_fire17.png" Key="effect/effect5010/fire17.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="gold">
           <Folder Name="gold01">
@@ -1247,6 +1339,21 @@
           <Image Name="round05.png" />
           <Image Name="round06.png" />
           <Image Name="bg.png" />
+          <PlistImageFolder Image="hero101skill01.png" PListFile="hero101skill01.plist" Name=".hero101skill01_PList.Dir">
+            <PlistImageFile Name="hero101skill01_bg.png" Key="hero101skill01/bg.png" />
+            <PlistImageFile Name="hero101skill01_fire00.png" Key="hero101skill01/fire00.png" />
+            <PlistImageFile Name="hero101skill01_fire01.png" Key="hero101skill01/fire01.png" />
+            <PlistImageFile Name="hero101skill01_fire02.png" Key="hero101skill01/fire02.png" />
+            <PlistImageFile Name="hero101skill01_fire03.png" Key="hero101skill01/fire03.png" />
+            <PlistImageFile Name="hero101skill01_hero01.png" Key="hero101skill01/hero01.png" />
+            <PlistImageFile Name="hero101skill01_hero02.png" Key="hero101skill01/hero02.png" />
+            <PlistImageFile Name="hero101skill01_round01.png" Key="hero101skill01/round01.png" />
+            <PlistImageFile Name="hero101skill01_round02.png" Key="hero101skill01/round02.png" />
+            <PlistImageFile Name="hero101skill01_round03.png" Key="hero101skill01/round03.png" />
+            <PlistImageFile Name="hero101skill01_round04.png" Key="hero101skill01/round04.png" />
+            <PlistImageFile Name="hero101skill01_round05.png" Key="hero101skill01/round05.png" />
+            <PlistImageFile Name="hero101skill01_round06.png" Key="hero101skill01/round06.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="hero101skill01.csd" Type="Node" />
         <Folder Name="shine">
@@ -1311,6 +1418,51 @@
           <Image Name="word15.png" />
           <Image Name="word16.png" />
           <Image Name="word17.png" />
+          <PlistImageFolder Image="hero102skill02.png" PListFile="hero102skill02.plist" Name=".hero102skill02_PList.Dir">
+            <PlistImageFile Name="hero102skill02_fly01.png" Key="hero102skill02/fly01.png" />
+            <PlistImageFile Name="hero102skill02_fly02.png" Key="hero102skill02/fly02.png" />
+            <PlistImageFile Name="hero102skill02_fly03.png" Key="hero102skill02/fly03.png" />
+            <PlistImageFile Name="hero102skill02_fly04.png" Key="hero102skill02/fly04.png" />
+            <PlistImageFile Name="hero102skill02_fly05.png" Key="hero102skill02/fly05.png" />
+            <PlistImageFile Name="hero102skill02_fly06.png" Key="hero102skill02/fly06.png" />
+            <PlistImageFile Name="hero102skill02_star01.png" Key="hero102skill02/star01.png" />
+            <PlistImageFile Name="hero102skill02_star02.png" Key="hero102skill02/star02.png" />
+            <PlistImageFile Name="hero102skill02_star03.png" Key="hero102skill02/star03.png" />
+            <PlistImageFile Name="hero102skill02_star04.png" Key="hero102skill02/star04.png" />
+            <PlistImageFile Name="hero102skill02_star05.png" Key="hero102skill02/star05.png" />
+            <PlistImageFile Name="hero102skill02_star06.png" Key="hero102skill02/star06.png" />
+            <PlistImageFile Name="hero102skill02_star07.png" Key="hero102skill02/star07.png" />
+            <PlistImageFile Name="hero102skill02_star08.png" Key="hero102skill02/star08.png" />
+            <PlistImageFile Name="hero102skill02_star09.png" Key="hero102skill02/star09.png" />
+            <PlistImageFile Name="hero102skill02_star10.png" Key="hero102skill02/star10.png" />
+            <PlistImageFile Name="hero102skill02_star11.png" Key="hero102skill02/star11.png" />
+            <PlistImageFile Name="hero102skill02_star12.png" Key="hero102skill02/star12.png" />
+            <PlistImageFile Name="hero102skill02_star13.png" Key="hero102skill02/star13.png" />
+            <PlistImageFile Name="hero102skill02_star14.png" Key="hero102skill02/star14.png" />
+            <PlistImageFile Name="hero102skill02_star15.png" Key="hero102skill02/star15.png" />
+            <PlistImageFile Name="hero102skill02_star16.png" Key="hero102skill02/star16.png" />
+            <PlistImageFile Name="hero102skill02_star17.png" Key="hero102skill02/star17.png" />
+            <PlistImageFile Name="hero102skill02_star18.png" Key="hero102skill02/star18.png" />
+            <PlistImageFile Name="hero102skill02_star19.png" Key="hero102skill02/star19.png" />
+            <PlistImageFile Name="hero102skill02_star20.png" Key="hero102skill02/star20.png" />
+            <PlistImageFile Name="hero102skill02_word01.png" Key="hero102skill02/word01.png" />
+            <PlistImageFile Name="hero102skill02_word02.png" Key="hero102skill02/word02.png" />
+            <PlistImageFile Name="hero102skill02_word03.png" Key="hero102skill02/word03.png" />
+            <PlistImageFile Name="hero102skill02_word04.png" Key="hero102skill02/word04.png" />
+            <PlistImageFile Name="hero102skill02_word05.png" Key="hero102skill02/word05.png" />
+            <PlistImageFile Name="hero102skill02_word06.png" Key="hero102skill02/word06.png" />
+            <PlistImageFile Name="hero102skill02_word07.png" Key="hero102skill02/word07.png" />
+            <PlistImageFile Name="hero102skill02_word08.png" Key="hero102skill02/word08.png" />
+            <PlistImageFile Name="hero102skill02_word09.png" Key="hero102skill02/word09.png" />
+            <PlistImageFile Name="hero102skill02_word10.png" Key="hero102skill02/word10.png" />
+            <PlistImageFile Name="hero102skill02_word11.png" Key="hero102skill02/word11.png" />
+            <PlistImageFile Name="hero102skill02_word12.png" Key="hero102skill02/word12.png" />
+            <PlistImageFile Name="hero102skill02_word13.png" Key="hero102skill02/word13.png" />
+            <PlistImageFile Name="hero102skill02_word14.png" Key="hero102skill02/word14.png" />
+            <PlistImageFile Name="hero102skill02_word15.png" Key="hero102skill02/word15.png" />
+            <PlistImageFile Name="hero102skill02_word16.png" Key="hero102skill02/word16.png" />
+            <PlistImageFile Name="hero102skill02_word17.png" Key="hero102skill02/word17.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="hero101skill02">
           <Image Name="boom01.png" />
@@ -1328,6 +1480,23 @@
           <Image Name="word01.png" />
           <Image Name="word02.png" />
           <Image Name="boom00.png" />
+          <PlistImageFolder Image="hero101skill02.png" PListFile="hero101skill02.plist" Name=".hero101skill02_PList.Dir">
+            <PlistImageFile Name="hero101skill02_boom00.png" Key="hero101skill02/boom00.png" />
+            <PlistImageFile Name="hero101skill02_boom01.png" Key="hero101skill02/boom01.png" />
+            <PlistImageFile Name="hero101skill02_boom02.png" Key="hero101skill02/boom02.png" />
+            <PlistImageFile Name="hero101skill02_boom03.png" Key="hero101skill02/boom03.png" />
+            <PlistImageFile Name="hero101skill02_boom04.png" Key="hero101skill02/boom04.png" />
+            <PlistImageFile Name="hero101skill02_hero01.png" Key="hero101skill02/hero01.png" />
+            <PlistImageFile Name="hero101skill02_hero02.png" Key="hero101skill02/hero02.png" />
+            <PlistImageFile Name="hero101skill02_hero03.png" Key="hero101skill02/hero03.png" />
+            <PlistImageFile Name="hero101skill02_wind01.png" Key="hero101skill02/wind01.png" />
+            <PlistImageFile Name="hero101skill02_wind02.png" Key="hero101skill02/wind02.png" />
+            <PlistImageFile Name="hero101skill02_wind03.png" Key="hero101skill02/wind03.png" />
+            <PlistImageFile Name="hero101skill02_wind04.png" Key="hero101skill02/wind04.png" />
+            <PlistImageFile Name="hero101skill02_wind05.png" Key="hero101skill02/wind05.png" />
+            <PlistImageFile Name="hero101skill02_word01.png" Key="hero101skill02/word01.png" />
+            <PlistImageFile Name="hero101skill02_word02.png" Key="hero101skill02/word02.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="hero101skill02.csd" Type="Node" />
         <Project Name="hero103skill01.csd" Type="Node" />
@@ -1370,6 +1539,46 @@
           <Image Name="word02.png" />
           <Image Name="word03.png" />
           <Image Name="word04.png" />
+          <PlistImageFolder Image="hero103skill01.png" PListFile="hero103skill01.plist" Name=".hero103skill01_PList.Dir">
+            <PlistImageFile Name="hero103skill01_book01.png" Key="hero103skill01/book01.png" />
+            <PlistImageFile Name="hero103skill01_book02.png" Key="hero103skill01/book02.png" />
+            <PlistImageFile Name="hero103skill01_book03.png" Key="hero103skill01/book03.png" />
+            <PlistImageFile Name="hero103skill01_book04.png" Key="hero103skill01/book04.png" />
+            <PlistImageFile Name="hero103skill01_book05.png" Key="hero103skill01/book05.png" />
+            <PlistImageFile Name="hero103skill01_book06.png" Key="hero103skill01/book06.png" />
+            <PlistImageFile Name="hero103skill01_book07.png" Key="hero103skill01/book07.png" />
+            <PlistImageFile Name="hero103skill01_book08.png" Key="hero103skill01/book08.png" />
+            <PlistImageFile Name="hero103skill01_book09.png" Key="hero103skill01/book09.png" />
+            <PlistImageFile Name="hero103skill01_book10.png" Key="hero103skill01/book10.png" />
+            <PlistImageFile Name="hero103skill01_book11.png" Key="hero103skill01/book11.png" />
+            <PlistImageFile Name="hero103skill01_eye01.png" Key="hero103skill01/eye01.png" />
+            <PlistImageFile Name="hero103skill01_eye02.png" Key="hero103skill01/eye02.png" />
+            <PlistImageFile Name="hero103skill01_eye03.png" Key="hero103skill01/eye03.png" />
+            <PlistImageFile Name="hero103skill01_eye04.png" Key="hero103skill01/eye04.png" />
+            <PlistImageFile Name="hero103skill01_eye05.png" Key="hero103skill01/eye05.png" />
+            <PlistImageFile Name="hero103skill01_eye06.png" Key="hero103skill01/eye06.png" />
+            <PlistImageFile Name="hero103skill01_eye07.png" Key="hero103skill01/eye07.png" />
+            <PlistImageFile Name="hero103skill01_eye08.png" Key="hero103skill01/eye08.png" />
+            <PlistImageFile Name="hero103skill01_eye09.png" Key="hero103skill01/eye09.png" />
+            <PlistImageFile Name="hero103skill01_eye10.png" Key="hero103skill01/eye10.png" />
+            <PlistImageFile Name="hero103skill01_fly01.png" Key="hero103skill01/fly01.png" />
+            <PlistImageFile Name="hero103skill01_fly02.png" Key="hero103skill01/fly02.png" />
+            <PlistImageFile Name="hero103skill01_fly03.png" Key="hero103skill01/fly03.png" />
+            <PlistImageFile Name="hero103skill01_fly04.png" Key="hero103skill01/fly04.png" />
+            <PlistImageFile Name="hero103skill01_fly05.png" Key="hero103skill01/fly05.png" />
+            <PlistImageFile Name="hero103skill01_fly06.png" Key="hero103skill01/fly06.png" />
+            <PlistImageFile Name="hero103skill01_fly07.png" Key="hero103skill01/fly07.png" />
+            <PlistImageFile Name="hero103skill01_fly08.png" Key="hero103skill01/fly08.png" />
+            <PlistImageFile Name="hero103skill01_fly09.png" Key="hero103skill01/fly09.png" />
+            <PlistImageFile Name="hero103skill01_hero01.png" Key="hero103skill01/hero01.png" />
+            <PlistImageFile Name="hero103skill01_hero02.png" Key="hero103skill01/hero02.png" />
+            <PlistImageFile Name="hero103skill01_hero03.png" Key="hero103skill01/hero03.png" />
+            <PlistImageFile Name="hero103skill01_hero04.png" Key="hero103skill01/hero04.png" />
+            <PlistImageFile Name="hero103skill01_word01.png" Key="hero103skill01/word01.png" />
+            <PlistImageFile Name="hero103skill01_word02.png" Key="hero103skill01/word02.png" />
+            <PlistImageFile Name="hero103skill01_word03.png" Key="hero103skill01/word03.png" />
+            <PlistImageFile Name="hero103skill01_word04.png" Key="hero103skill01/word04.png" />
+          </PlistImageFolder>
         </Folder>
         <Folder Name="hero104skill02">
           <Image Name="boom01.png" />
@@ -1409,6 +1618,45 @@
           <Image Name="zi01.png" />
           <Image Name="zi02.png" />
           <Image Name="zi03.png" />
+          <PlistImageFolder Image="hero104skill02.png" PListFile="hero104skill02.plist" Name=".hero104skill02_PList.Dir">
+            <PlistImageFile Name="hero104skill02_boom01.png" Key="hero104skill02/boom01.png" />
+            <PlistImageFile Name="hero104skill02_boom02.png" Key="hero104skill02/boom02.png" />
+            <PlistImageFile Name="hero104skill02_boom03.png" Key="hero104skill02/boom03.png" />
+            <PlistImageFile Name="hero104skill02_boom04.png" Key="hero104skill02/boom04.png" />
+            <PlistImageFile Name="hero104skill02_boom05.png" Key="hero104skill02/boom05.png" />
+            <PlistImageFile Name="hero104skill02_boom06.png" Key="hero104skill02/boom06.png" />
+            <PlistImageFile Name="hero104skill02_boom07.png" Key="hero104skill02/boom07.png" />
+            <PlistImageFile Name="hero104skill02_boom08.png" Key="hero104skill02/boom08.png" />
+            <PlistImageFile Name="hero104skill02_boom09.png" Key="hero104skill02/boom09.png" />
+            <PlistImageFile Name="hero104skill02_boom10.png" Key="hero104skill02/boom10.png" />
+            <PlistImageFile Name="hero104skill02_boom11.png" Key="hero104skill02/boom11.png" />
+            <PlistImageFile Name="hero104skill02_boom12.png" Key="hero104skill02/boom12.png" />
+            <PlistImageFile Name="hero104skill02_boom13.png" Key="hero104skill02/boom13.png" />
+            <PlistImageFile Name="hero104skill02_boom14.png" Key="hero104skill02/boom14.png" />
+            <PlistImageFile Name="hero104skill02_fly01.png" Key="hero104skill02/fly01.png" />
+            <PlistImageFile Name="hero104skill02_fly02.png" Key="hero104skill02/fly02.png" />
+            <PlistImageFile Name="hero104skill02_fly03.png" Key="hero104skill02/fly03.png" />
+            <PlistImageFile Name="hero104skill02_fly04.png" Key="hero104skill02/fly04.png" />
+            <PlistImageFile Name="hero104skill02_fly05.png" Key="hero104skill02/fly05.png" />
+            <PlistImageFile Name="hero104skill02_fly06.png" Key="hero104skill02/fly06.png" />
+            <PlistImageFile Name="hero104skill02_fly07.png" Key="hero104skill02/fly07.png" />
+            <PlistImageFile Name="hero104skill02_fly08.png" Key="hero104skill02/fly08.png" />
+            <PlistImageFile Name="hero104skill02_fly09.png" Key="hero104skill02/fly09.png" />
+            <PlistImageFile Name="hero104skill02_fly10.png" Key="hero104skill02/fly10.png" />
+            <PlistImageFile Name="hero104skill02_hero01.png" Key="hero104skill02/hero01.png" />
+            <PlistImageFile Name="hero104skill02_hero02.png" Key="hero104skill02/hero02.png" />
+            <PlistImageFile Name="hero104skill02_hero03.png" Key="hero104skill02/hero03.png" />
+            <PlistImageFile Name="hero104skill02_hero04.png" Key="hero104skill02/hero04.png" />
+            <PlistImageFile Name="hero104skill02_hero05.png" Key="hero104skill02/hero05.png" />
+            <PlistImageFile Name="hero104skill02_word01.png" Key="hero104skill02/word01.png" />
+            <PlistImageFile Name="hero104skill02_word02.png" Key="hero104skill02/word02.png" />
+            <PlistImageFile Name="hero104skill02_word03.png" Key="hero104skill02/word03.png" />
+            <PlistImageFile Name="hero104skill02_word04.png" Key="hero104skill02/word04.png" />
+            <PlistImageFile Name="hero104skill02_word05.png" Key="hero104skill02/word05.png" />
+            <PlistImageFile Name="hero104skill02_zi01.png" Key="hero104skill02/zi01.png" />
+            <PlistImageFile Name="hero104skill02_zi02.png" Key="hero104skill02/zi02.png" />
+            <PlistImageFile Name="hero104skill02_zi03.png" Key="hero104skill02/zi03.png" />
+          </PlistImageFolder>
         </Folder>
         <Project Name="hero104skill02.csd" Type="Node" />
         <Project Name="effect5006.csd" Type="Node" />
@@ -1423,6 +1671,12 @@
           <Image Name="3.png" />
           <Image Name="ready.png" />
         </Folder>
+        <PlistInfo Name="effect.csi" Type="Plist" />
+        <PlistInfo Name="hero101skill01.csi" Type="Plist" />
+        <PlistInfo Name="hero101skill02.csi" Type="Plist" />
+        <PlistInfo Name="hero102skill02.csi" Type="Plist" />
+        <PlistInfo Name="hero103skill01.csi" Type="Plist" />
+        <PlistInfo Name="hero104skill02.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
