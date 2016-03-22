@@ -30,7 +30,7 @@ var RechargePanel = cc.Node.extend({
         var label = itemRoot.getChildByName('label');
         moneyText.setString(chargePoint.money/100);
         label.setVisible(false);
-        if(cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
+        if(isNaN(player.completed_order_total[chargePoint.id]) && cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
             label.setVisible(true);
         }
         if(chargePoint.type == 'mCard'){
@@ -47,11 +47,7 @@ var RechargePanel = cc.Node.extend({
                 this.isPaying = true;
                 console.log(i+',前往支付');
                 Network.chooseWXPay(chargePoint,function(result){
-                    if(result){
-                        tip.toggle('购买成功');
-                    }else{
-                        this.isPaying = false;
-                    }
+                    this.isPaying = false;
                 }.bind(this));
             }
         }.bind(this),itemRoot);
