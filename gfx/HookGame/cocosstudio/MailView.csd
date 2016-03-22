@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="MaillView" Type="Layer" ID="98b5ce80-f449-4c37-87f5-ea601140577c" Version="2.3.3.0" />
+  <PropertyGroup Name="MailView" Type="Layer" ID="98b5ce80-f449-4c37-87f5-ea601140577c" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -67,7 +67,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.4750" />
                     <PreSize X="0.9667" Y="0.6000" />
-                    <FileData Type="MarkedSubImage" Path="maillUI/get2.png" Plist="OtherUI.plist" />
+                    <FileData Type="MarkedSubImage" Path="mailUI/get2.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="look" ActionTag="-1085761314" CallBackType="Click" Tag="244" IconVisible="False" LeftMargin="1.2811" RightMargin="1.7189" TopMargin="7.3761" BottomMargin="7.6239" Scale9Width="87" Scale9Height="25" ctype="ImageViewObjectData">
                     <Size X="87.0000" Y="25.0000" />
@@ -77,7 +77,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.4976" Y="0.5031" />
                     <PreSize X="0.9667" Y="0.6250" />
-                    <FileData Type="MarkedSubImage" Path="maillUI/look.png" Plist="OtherUI.plist" />
+                    <FileData Type="MarkedSubImage" Path="mailUI/look.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

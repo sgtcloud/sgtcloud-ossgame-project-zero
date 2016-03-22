@@ -16,11 +16,11 @@
       <FilePathData Path="ui/rank_btn2.png" />
       <FilePathData Path="ui/shop_btn1.png" />
       <FilePathData Path="ui/shop_btn2.png" />
-      <FilePathData Path="maillUI/delete.png" />
-      <FilePathData Path="maillUI/get.png" />
-      <FilePathData Path="maillUI/get2.png" />
-      <FilePathData Path="maillUI/look.png" />
-      <FilePathData Path="maillUI/title.png" />
+      <FilePathData Path="mailUI/delete.png" />
+      <FilePathData Path="mailUI/get.png" />
+      <FilePathData Path="mailUI/get2.png" />
+      <FilePathData Path="mailUI/look.png" />
+      <FilePathData Path="mailUI/title.png" />
       <FilePathData Path="PVPUI/buy.png" />
       <FilePathData Path="PVPUI/change.png" />
       <FilePathData Path="PVPUI/fight.png" />
