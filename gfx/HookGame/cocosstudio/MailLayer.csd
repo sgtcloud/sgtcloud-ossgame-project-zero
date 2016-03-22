@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="MaillLayer" Type="Layer" ID="97a7786d-6f61-463a-bffc-60f921c751ab" Version="2.3.3.0" />
+  <PropertyGroup Name="MailLayer" Type="Layer" ID="97a7786d-6f61-463a-bffc-60f921c751ab" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -76,7 +76,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="MarkedSubImage" Path="maillUI/delete.png" Plist="OtherUI.plist" />
+                    <FileData Type="MarkedSubImage" Path="mailUI/delete.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -116,7 +116,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.6133" Y="0.4833" />
-                    <FileData Type="MarkedSubImage" Path="maillUI/get.png" Plist="OtherUI.plist" />
+                    <FileData Type="MarkedSubImage" Path="mailUI/get.png" Plist="OtherUI.plist" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
@@ -148,7 +148,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4879" Y="0.9490" />
                 <PreSize X="0.2081" Y="0.0829" />
-                <FileData Type="MarkedSubImage" Path="maillUI/title.png" Plist="OtherUI.plist" />
+                <FileData Type="MarkedSubImage" Path="mailUI/title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="close_btn" ActionTag="1384084568" Tag="213" IconVisible="True" LeftMargin="563.7490" RightMargin="0.2510" TopMargin="30.5300" BottomMargin="611.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />

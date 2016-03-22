@@ -623,9 +623,9 @@
         <Project Name="SignView.csd" Type="Layer" />
         <Project Name="SignIcon.csd" Type="Layer" />
         <Project Name="PVPLayer.csd" Type="Layer" />
-        <Project Name="MaillLayer.csd" Type="Layer" />
-        <Project Name="MaillView.csd" Type="Layer" />
-        <Folder Name="maillUI">
+        <Project Name="MailLayer.csd" Type="Layer" />
+        <Project Name="MailView.csd" Type="Layer" />
+        <Folder Name="mailUI">
           <Image Name="title.png" />
           <Image Name="delete.png" />
           <Image Name="get.png" />

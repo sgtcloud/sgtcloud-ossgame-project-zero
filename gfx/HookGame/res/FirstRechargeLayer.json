@@ -212,7 +212,7 @@
                   "Y": 0.0091
                 },
                 "PreSize": {
-                  "X": 0.4062,
+                  "X": 0.4063,
                   "Y": 1.0523
                 },
                 "RightMargin": 380.0,
@@ -909,7 +909,7 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "buttonUI/now.png",
                       "Plist": "ButtonUI.plist"
                     },
@@ -953,7 +953,7 @@
                   },
                   {
                     "FileData": {
-                      "Type": "MarkedSubImage",
+                      "Type": "Normal",
                       "Path": "buttonUI/get.png",
                       "Plist": "ButtonUI.plist"
                     },
@@ -1022,8 +1022,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "ButtonUI.plist",
-        "ButtonUI.png",
+        "buttonUI/get.png",
+        "buttonUI/now.png",
         "CloseBtn.json",
         "FirstRechargeUI.plist",
         "FirstRechargeUI.png",
