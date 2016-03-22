@@ -15,6 +15,12 @@
       <FilePathData Path="dead/dead01/dead01.png" />
       <FilePathData Path="guide/hand_point01.png" />
       <FilePathData Path="guide/hand_point02.png" />
+      <FilePathData Path="countdown/1.png" />
+      <FilePathData Path="countdown/2.png" />
+      <FilePathData Path="countdown/3.png" />
+      <FilePathData Path="countdown/ready.png" />
+      <FilePathData Path="shine/bg.png" />
+      <FilePathData Path="shine/shine00.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>

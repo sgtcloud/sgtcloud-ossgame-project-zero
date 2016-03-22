@@ -548,7 +548,7 @@
             SgtApi.MailService.sendMail(mail, callback);
         },
         buildCustomService: function () {
-            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "exchangeIndex", "checkInArena"]);
+            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena"]);
         }
     };
     window.Network = new NetworkResolve();

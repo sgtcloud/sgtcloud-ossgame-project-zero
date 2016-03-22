@@ -195,7 +195,7 @@
         </Timeline>
         <Timeline ActionTag="1377785584" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="5" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_06.png" Plist="effect5003.plist" />
@@ -234,7 +234,7 @@
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_16.png" Plist="effect5003.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="26" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="1377785584" Property="BlendFunc">
@@ -296,7 +296,7 @@
         </Timeline>
         <Timeline ActionTag="1121704384" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="5" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_06.png" Plist="effect5003.plist" />
@@ -335,7 +335,7 @@
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_16.png" Plist="effect5003.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="26" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="1121704384" Property="BlendFunc">
@@ -397,7 +397,7 @@
         </Timeline>
         <Timeline ActionTag="178235981" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="5" Tween="False">
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_06.png" Plist="effect5003.plist" />
@@ -436,7 +436,7 @@
             <TextureFile Type="MarkedSubImage" Path="effect/effect5003/effect5003_16.png" Plist="effect5003.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="26" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="178235981" Property="BlendFunc">
@@ -472,7 +472,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="effect5003_3" ActionTag="1121704384" Tag="11" IconVisible="False" LeftMargin="-88.5417" RightMargin="48.5417" TopMargin="-11.2757" BottomMargin="-29.7243" ctype="SpriteObjectData">
@@ -483,7 +483,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="effect5003_4" ActionTag="178235981" Tag="12" IconVisible="False" LeftMargin="-7.6261" RightMargin="-32.3739" TopMargin="37.5411" BottomMargin="-78.5411" ctype="SpriteObjectData">
@@ -494,7 +494,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>

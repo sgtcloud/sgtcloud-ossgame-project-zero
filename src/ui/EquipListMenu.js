@@ -433,6 +433,9 @@ var EquipListMenu = ListViewMenu.extend({
             ite.setPositionY(totalHeight - k * ite.height);
             this.updateItem(k, ite);
         }
+        if(!totalHeight<this.listView.height){
+            this.listView.setTouchEnabled(true);
+        }
         this.onEnter();
         this.resume();
     }, updateItem: function (itemId, item) {

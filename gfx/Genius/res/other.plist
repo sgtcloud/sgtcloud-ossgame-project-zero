@@ -7,40 +7,40 @@
 			<key>fairy/fairy01/fairy01_die01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,192},{63,82}}</string>
+				<string>{{789,78},{63,82}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{63,82}</string>
 			</dict>
 			<key>fairy/fairy01/fairy01_die02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,274},{71,72}}</string>
+				<string>{{871,78},{71,72}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{71,72}</string>
 			</dict>
 			<key>fairy/fairy01/fairy01_die03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{63,192},{61,67}}</string>
+				<string>{{789,141},{61,67}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{61,67}</string>
 			</dict>
 			<key>fairy/fairy01/fairy01_die04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,569},{44,30}}</string>
+				<string>{{943,135},{44,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,29 +51,29 @@
 			<key>fairy/fairy01/fairy01_run01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{78,0},{64,63}}</string>
+				<string>{{856,149},{64,63}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{64,63}</string>
 			</dict>
 			<key>fairy/fairy01/fairy01_run02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{78,64},{57,59}}</string>
+				<string>{{789,202},{57,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{57,59}</string>
 			</dict>
 			<key>fairy/fairy01/fairy01_run03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,346},{50,58}}</string>
+				<string>{{973,168},{50,58}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,7 +84,7 @@
 			<key>fairy/fairy01/fairy01_run04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,462},{45,54}}</string>
+				<string>{{976,114},{45,54}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -95,7 +95,7 @@
 			<key>fairy/fairy01/fairy01_run05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,404},{50,58}}</string>
+				<string>{{920,179},{50,58}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -106,46 +106,112 @@
 			<key>fairy/fairy01/fairy01_run06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{78,123},{57,59}}</string>
+				<string>{{848,212},{57,59}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{57,59}</string>
 			</dict>
 			<key>dead/dead01/dead01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,516},{43,53}}</string>
+				<string>{{970,226},{43,53}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{43,53}</string>
 			</dict>
 			<key>guide/hand_point01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{78,105}}</string>
+				<string>{{789,0},{78,105}}</string>
 				<key>offset</key>
 				<string>{-1,-2}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{80,110}</string>
 			</dict>
 			<key>guide/hand_point02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,105},{78,87}}</string>
+				<string>{{894,0},{78,87}}</string>
 				<key>offset</key>
 				<string>{-1,-1}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{80,90}</string>
+			</dict>
+			<key>countdown/1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{943,78},{33,57}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{33,57}</string>
+			</dict>
+			<key>countdown/2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{981,0},{42,57}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{42,57}</string>
+			</dict>
+			<key>countdown/3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{981,57},{41,57}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{41,57}</string>
+			</dict>
+			<key>countdown/ready.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{640,0},{504,149}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{504,149}</string>
+			</dict>
+			<key>shine/bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{640,500}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,500}</string>
+			</dict>
+			<key>shine/shine00.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1023,0},{1,1}}</string>
+				<key>offset</key>
+				<string>{19,-20}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{40,41}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -157,14 +223,14 @@
 			<key>realTextureFileName</key>
 			<string>other.png</string>
 			<key>size</key>
-			<string>{141,613}</string>
+			<string>{1024,504}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>141</integer>
+			<integer>1024</integer>
 			<key>height</key>
-			<integer>613</integer>
+			<integer>504</integer>
 		</dict>
 	</dict>
 </plist>

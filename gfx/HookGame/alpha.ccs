@@ -60,6 +60,8 @@
             <PlistImageFile Name="buttonUI_sure.png" Key="buttonUI/sure.png" />
             <PlistImageFile Name="buttonUI_upLevel.png" Key="buttonUI/upLevel.png" />
           </PlistImageFolder>
+          <Image Name="get.png" />
+          <Image Name="now.png" />
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -687,6 +689,26 @@
         </Folder>
         <PlistInfo Name="SettlementUI.csi" Type="Plist" />
         <Project Name="PVPRecordView.csd" Type="Layer" />
+        <Project Name="FirstRechargeLayer.csd" Type="Layer" />
+        <Folder Name="firstRechargeUI">
+          <Image Name="88.png" />
+          <Image Name="any.png" />
+          <Image Name="chong.png" />
+          <Image Name="girl.png" />
+          <Image Name="popo.png" />
+          <Image Name="song.png" />
+          <Image Name="title.png" />
+          <PlistImageFolder Image="FirstRechargeUI.png" PListFile="FirstRechargeUI.plist" Name=".FirstRechargeUI_PList.Dir">
+            <PlistImageFile Name="firstRechargeUI_88.png" Key="firstRechargeUI/88.png" />
+            <PlistImageFile Name="firstRechargeUI_any.png" Key="firstRechargeUI/any.png" />
+            <PlistImageFile Name="firstRechargeUI_chong.png" Key="firstRechargeUI/chong.png" />
+            <PlistImageFile Name="firstRechargeUI_girl.png" Key="firstRechargeUI/girl.png" />
+            <PlistImageFile Name="firstRechargeUI_popo.png" Key="firstRechargeUI/popo.png" />
+            <PlistImageFile Name="firstRechargeUI_song.png" Key="firstRechargeUI/song.png" />
+            <PlistImageFile Name="firstRechargeUI_title.png" Key="firstRechargeUI/title.png" />
+          </PlistImageFolder>
+        </Folder>
+        <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

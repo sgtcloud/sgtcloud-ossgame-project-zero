@@ -93,9 +93,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -103,9 +103,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -113,9 +113,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -123,9 +123,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -133,9 +133,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -143,9 +143,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -153,9 +153,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -163,9 +163,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/3.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 14,
                 "Tween": false,
@@ -173,9 +173,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 16,
                 "Tween": false,
@@ -387,9 +387,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -397,9 +397,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 14,
                 "Tween": false,
@@ -407,9 +407,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 16,
                 "Tween": false,
@@ -417,9 +417,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -427,9 +427,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 20,
                 "Tween": false,
@@ -437,9 +437,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 22,
                 "Tween": false,
@@ -447,9 +447,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -457,9 +457,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 26,
                 "Tween": false,
@@ -467,9 +467,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/2.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 28,
                 "Tween": false,
@@ -477,9 +477,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -706,9 +706,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -716,9 +716,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 28,
                 "Tween": false,
@@ -726,9 +726,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 30,
                 "Tween": false,
@@ -736,9 +736,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 32,
                 "Tween": false,
@@ -746,9 +746,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 34,
                 "Tween": false,
@@ -756,9 +756,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 36,
                 "Tween": false,
@@ -766,9 +766,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 38,
                 "Tween": false,
@@ -776,9 +776,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 40,
                 "Tween": false,
@@ -786,9 +786,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/1.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 42,
                 "Tween": false,
@@ -796,9 +796,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 44,
                 "Tween": false,
@@ -1065,9 +1065,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -1075,9 +1075,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 42,
                 "Tween": false,
@@ -1085,9 +1085,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 44,
                 "Tween": false,
@@ -1095,9 +1095,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 46,
                 "Tween": false,
@@ -1105,9 +1105,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 48,
                 "Tween": false,
@@ -1115,9 +1115,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 50,
                 "Tween": false,
@@ -1125,9 +1125,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 52,
                 "Tween": false,
@@ -1135,9 +1135,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 54,
                 "Tween": false,
@@ -1145,9 +1145,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "countdown/ready.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 56,
                 "Tween": false,
@@ -1155,9 +1155,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "FrameIndex": 58,
                 "Tween": false,
@@ -1393,9 +1393,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -1439,9 +1439,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -1485,9 +1485,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -1531,9 +1531,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "shine/shine00.png",
-                  "Plist": ""
+                  "Plist": "other.plist"
                 },
                 "BlendFunc": {
                   "Src": 770,
@@ -1593,11 +1593,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "countdown/1.png",
-        "countdown/2.png",
-        "countdown/3.png",
-        "countdown/ready.png",
-        "shine/shine00.png"
+        "other.plist",
+        "other.png"
       ],
       "ctype": "GameFileData"
     }

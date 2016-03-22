@@ -143,34 +143,34 @@
         </Timeline>
         <Timeline ActionTag="1293825758" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="shine/shine00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round03.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round04.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round04.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round05.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round05.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/round06.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/round06.png" Plist="heroSkill.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="331636314" Property="Position">
@@ -231,58 +231,58 @@
         </Timeline>
         <Timeline ActionTag="331636314" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="1" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="2" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="4" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="5" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="7" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="8" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="10" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="11" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/hero02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/hero02.png" Plist="heroSkill.plist" />
           </TextureFrame>
         </Timeline>
         <Timeline ActionTag="331636314" Property="AnchorPoint">
@@ -330,34 +330,34 @@
         </Timeline>
         <Timeline ActionTag="-1256903318" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire00.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="3" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire00.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="6" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="9" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire03.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="12" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="18" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire03.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="21" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire01.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire01.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="24" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire02.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire02.png" Plist="heroSkill.plist" />
           </TextureFrame>
           <TextureFrame FrameIndex="27" Tween="False">
-            <TextureFile Type="Normal" Path="hero101skill01/fire03.png" Plist="" />
+            <TextureFile Type="MarkedSubImage" Path="hero101skill01/fire03.png" Plist="heroSkill.plist" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -377,7 +377,7 @@
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="shine/bg.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="shine/bg.png" Plist="other.plist" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
@@ -391,7 +391,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="shine/shine00.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="hero" ActionTag="331636314" Tag="15" IconVisible="False" LeftMargin="160.0000" RightMargin="-397.0000" TopMargin="-349.9100" BottomMargin="13.9100" ctype="SpriteObjectData">
@@ -402,7 +402,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/hero01.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="heroSkill.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="word" ActionTag="-1256903318" Tag="19" IconVisible="False" LeftMargin="-119.5000" RightMargin="-299.5000" TopMargin="-539.0000" BottomMargin="361.0000" ctype="SpriteObjectData">
@@ -413,7 +413,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="hero101skill01/fire00.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="hero101skill01/fire00.png" Plist="heroSkill.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
