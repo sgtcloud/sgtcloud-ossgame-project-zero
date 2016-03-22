@@ -45,20 +45,6 @@ var LoaderScene = cc.LoaderScene.extend({
         star.setPosition(newStarPos);
     },
 
-    /**
-     * initBattle with resources
-     * @param {Array} resources
-     * @param {Function|String} cb
-     * @param {Object} target
-     */
-    initWithResources: function (resources, cb, target) {
-        if (cc.isString(resources))
-            resources = [resources];
-        this.resources = resources || [];
-        this.cb = cb;
-        this.target = target;
-    },
-
     _startLoading: function () {
         this.unschedule(this._startLoading);
         var res = this.resources;

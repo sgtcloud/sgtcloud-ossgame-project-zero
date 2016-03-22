@@ -385,16 +385,9 @@ function getDays(dateStartTimeStramp, dateEndTimeStramp) {
 function initGame(cb) {
     PlayerData.init();
     game = new MainScene();
-    if (cc.isArray(player.orders)) {
-        for (var i in player.orders) {
-            Network.queryByDid(player.orders[i]);
-        }
+    if (cb) {
+        cb();
     }
-    cb();
-}
-function validateAmountNotEnough(upgradeLevelData) {
-    var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
-    return amount < upgradeLevelData['value'];
 }
 function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
     var flag = validateAmountNotEnough(nextlevelData)
@@ -408,6 +401,10 @@ function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
         text.setColor(cc.color(255, 255, 255));
     }
     return flag;
+}
+function validateAmountNotEnough(upgradeLevelData) {
+    var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
+    return amount < upgradeLevelData['value'];
 }
 
 
@@ -438,30 +435,34 @@ function showCover() {
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
-
-    animation.setLastFrameCallFunc(function () {
-    });
+    if (PlayerData.modelPlayer) {
+        initGame();
+    }
     bindButtonCallback(loginBtn, function () {
         //判断当前用户是否存在角色
         if (!PlayerData.modelPlayer) {
             loginBtn.setVisible(false);
             Network.openNewNameLayer(scene, createPlayerComplete);
         } else {
-            initGame(createPlayerComplete);
+            createPlayerComplete();
         }
     });
     cc.director.runScene(scene);
 }
 
 function createPlayerComplete() {
-    //验证角色签到数据，未签到则直接打开签到面板
-    Network.checkIn_createByValidate();
     //获取角色未删除邮件数据
     Network.getReadedAndUnreadedMails();
     //轮询获取最新未读取邮件
     setInterval(function () {
         Network.updatePlayerMails(10 * 1000);
     }, 10 * 1000);
+    // 同步未完成的交易结果
+    if (cc.isArray(player.orders)) {
+        for (var i in player.orders) {
+            Network.queryByDid(player.orders[i]);
+        }
+    }
     cc.director.runScene(game);
 }
 
