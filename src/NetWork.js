@@ -311,7 +311,11 @@
         },
         getCurrentRanksByType: function (leaderId, callback) {
             if (cc.isObject(PlayerData.modelPlayer)) {
-                SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+                if(leaderId === 'pvp_rank'){
+                    this.arenaService.getPlayersByIndex([0,1,2,3,4,5,6,7,8,9],'pvp_rank',callback);
+                }else{
+                    SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+                }
             } else {
                 return callback(false);
             }
