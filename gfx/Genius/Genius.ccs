@@ -1672,11 +1672,11 @@
           <Image Name="ready.png" />
         </Folder>
         <PlistInfo Name="effect.csi" Type="Plist" />
-        <PlistInfo Name="hero101skill01.csi" Type="Plist" />
         <PlistInfo Name="hero101skill02.csi" Type="Plist" />
         <PlistInfo Name="hero102skill02.csi" Type="Plist" />
         <PlistInfo Name="hero103skill01.csi" Type="Plist" />
         <PlistInfo Name="hero104skill02.csi" Type="Plist" />
+        <PlistInfo Name="hero101skill01.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>
