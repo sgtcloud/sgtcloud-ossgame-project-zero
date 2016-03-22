@@ -28,5 +28,21 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="countdown.csd" />
+          <FilePathData Path="other.csi" />
+          <FilePathData Path="effect.csi" />
+          <FilePathData Path="hero101skill02.csi" />
+          <FilePathData Path="hero102skill02.csi" />
+          <FilePathData Path="hero103skill01.csi" />
+          <FilePathData Path="hero104skill02.csi" />
+          <FilePathData Path="hero101skill01.csd" />
+          <FilePathData Path="hero101skill01.csi" />
+        </OpenedDocuments>
+        <ActiveDocument Path="hero101skill01.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

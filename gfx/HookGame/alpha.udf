@@ -28,18 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="FirstRechargeLayer.csd" />
-          <FilePathData Path="RechargeLayer.csd" />
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="ShopView.csd" />
-          <FilePathData Path="FirstRechargeUI.csi" />
-          <FilePathData Path="ButtonUI.csi" />
-        </OpenedDocuments>
-        <ActiveDocument Path="ButtonUI.csi" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
