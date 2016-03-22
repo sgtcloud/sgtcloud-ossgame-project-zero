@@ -7,7 +7,7 @@
 			<key>coverUI/bg_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,47},{28,36}}</string>
+				<string>{{1251,912},{28,36}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>coverUI/bg_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,83},{31,32}}</string>
+				<string>{{1235,958},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>coverUI/bg_14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{400,0},{32,47}}</string>
+				<string>{{1203,958},{32,47}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>coverUI/btn1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{300,0},{100,100}}</string>
+				<string>{{1244,1265},{100,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>coverUI/btn2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{300,100},{100,100}}</string>
+				<string>{{1344,1265},{100,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -59,21 +59,10 @@
 				<key>sourceSize</key>
 				<string>{100,100}</string>
 			</dict>
-			<key>coverUI/logo.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{0,0},{300,180}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{300,180}</string>
-			</dict>
 			<key>coverUI/text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{184,180},{84,47}}</string>
+				<string>{{393,2140},{84,47}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,7 +73,7 @@
 			<key>coverUI/text1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,301},{277,41}}</string>
+				<string>{{640,912},{277,41}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -92,10 +81,505 @@
 				<key>sourceSize</key>
 				<string>{277,41}</string>
 			</dict>
-			<key>coverUI/yellow_btn_a.png</key>
+			<key>coverSprite/effect/ball01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,180},{184,74}}</string>
+				<string>{{703,1713},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{860,1577},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{393,2040},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{571,2140},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{609,2040},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{640,2240},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{787,2140},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/ball08.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{856,2240},{216,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,100}</string>
+			</dict>
+			<key>coverSprite/effect/boom01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{422,1390},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{422,1610},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{723,1813},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1004,1751},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1372,2151},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1451,1265},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1285,1729},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom08.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1560,1485},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/boom09.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1732,1265},{281,220}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{281,220}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1151,1240},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1009,1971},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1102,1971},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1832,1705},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1841,1485},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1810,2068},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect04_07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1810,2197},{93,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{93,129}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{740,953},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{740,1143},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{740,1333},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{703,1523},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1653,2122},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/effect05_06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1761,1878},{157,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{157,190}</string>
+			</dict>
+			<key>coverSprite/effect/empty.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,912},{48,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{48,46}</string>
+			</dict>
+			<key>coverSprite/effect/title01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{640,860},{640,52}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,52}</string>
+			</dict>
+			<key>coverSprite/effect/title02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,2310},{640,52}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,52}</string>
+			</dict>
+			<key>coverSprite/hero/effect001.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{897,1240},{254,337}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,337}</string>
+			</dict>
+			<key>coverSprite/hero/effect002.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,2197},{571,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{571,113}</string>
+			</dict>
+			<key>coverSprite/hero/hero01_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,960},{740,430}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{740,430}</string>
+			</dict>
+			<key>coverSprite/hero/hero01_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{640,0},{740,430}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{740,430}</string>
+			</dict>
+			<key>coverSprite/hero/hero01_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{640,430},{740,430}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{740,430}</string>
+			</dict>
+			<key>coverSprite/hero/hero02_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{917,912},{286,328}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{286,328}</string>
+			</dict>
+			<key>coverSprite/hero/hero03_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1802},{393,395}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{393,395}</string>
+			</dict>
+			<key>coverSprite/hero/hero04_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1280,860},{544,405}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{544,405}</string>
+			</dict>
+			<key>coverSprite/hero/hero05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1390},{422,412}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{422,412}</string>
+			</dict>
+			<key>coverSprite/hero/title.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{640,960}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{640,960}</string>
+			</dict>
+			<key>coverSprite/other/btn_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1495,1949},{266,173}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{266,173}</string>
+			</dict>
+			<key>coverSprite/other/btn_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1566,1705},{266,173}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{266,173}</string>
+			</dict>
+			<key>coverSprite/other/btn01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{825,2033},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -103,16 +587,93 @@
 				<key>sourceSize</key>
 				<string>{184,74}</string>
 			</dict>
-			<key>coverUI/yellow_btn_b.png</key>
+			<key>coverSprite/other/btn02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{184,227},{184,74}}</string>
+				<string>{{1003,2107},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
 				<string>{184,74}</string>
+			</dict>
+			<key>coverSprite/other/btn03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{919,1677},{184,74}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{184,74}</string>
+			</dict>
+			<key>coverSprite/other/btn04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1076,1577},{184,74}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{184,74}</string>
+			</dict>
+			<key>coverSprite/other/logo01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1151,1369},{300,180}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{300,180}</string>
+			</dict>
+			<key>coverSprite/other/logo02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1072,2181},{300,180}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{300,180}</string>
+			</dict>
+			<key>coverSprite/other/logo03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1260,1549},{300,180}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{300,180}</string>
+			</dict>
+			<key>coverSprite/other/logo04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1195,1971},{300,180}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{300,180}</string>
+			</dict>
+			<key>coverSprite/other/logo05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{393,1830},{330,210}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{330,210}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -124,14 +685,14 @@
 			<key>realTextureFileName</key>
 			<string>cover.png</string>
 			<key>size</key>
-			<string>{512,512}</string>
+			<string>{2013,2371}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>512</integer>
+			<integer>2013</integer>
 			<key>height</key>
-			<integer>512</integer>
+			<integer>2371</integer>
 		</dict>
 	</dict>
 </plist>

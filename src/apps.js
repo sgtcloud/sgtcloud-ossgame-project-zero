@@ -382,7 +382,7 @@ function getDays(dateStartTimeStramp, dateEndTimeStramp) {
     return iDays;
 }
 
-function initGame() {
+function initGame(cb) {
     PlayerData.init();
     game = new MainScene();
     if (cc.isArray(player.orders)) {
@@ -390,7 +390,7 @@ function initGame() {
             Network.queryByDid(player.orders[i]);
         }
     }
-
+    cb();
 }
 function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
@@ -430,36 +430,41 @@ function getUrlParam(name) {
 
 var tipTemplate;
 function showCover() {
-    var scene = ccs.load(res.cover_scene_json).node;
+    var scene = ccs.load(res.cover_scene_json).node.getChildByName('root');
     var animation = ccs.load(res.cover_scene_json).action;
+    scene.setAnchorPoint(cc.p(0, 0));
     scene.runAction(animation);
     animation.play('show', false);
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
-    var loginBtn = scene.getChildByName("root").getChildByName("cover_login_btn");
-    //判断当前用户是否存在角色
-    if (!PlayerData.modelPlayer) {
-        loginBtn.setVisible(false);
-        Network.openNewNameLayer(scene);
-    } else {
-        initGame();
-    }
+    var loginBtn = scene.getChildByName("cover_login_btn");
+
+    animation.setLastFrameCallFunc(function () {
+    });
     bindButtonCallback(loginBtn, function () {
-        showGame();
-        //验证角色签到数据，未签到则直接打开签到面板
-        Network.checkIn_createByValidate();
-        //获取角色未删除邮件数据
-        Network.getReadedAndUnreadedMails();
-        //轮询获取最新未读取邮件
-        setInterval(function () {
-            Network.updatePlayerMails(10 * 1000);
-        }, 10 * 1000);
+        //判断当前用户是否存在角色
+        if (!PlayerData.modelPlayer) {
+            loginBtn.setVisible(false);
+            Network.openNewNameLayer(scene, createPlayerComplete);
+        } else {
+            initGame(createPlayerComplete);
+        }
     });
     cc.director.runScene(scene);
 }
-function showGame() {
+
+function createPlayerComplete() {
+    //验证角色签到数据，未签到则直接打开签到面板
+    Network.checkIn_createByValidate();
+    //获取角色未删除邮件数据
+    Network.getReadedAndUnreadedMails();
+    //轮询获取最新未读取邮件
+    setInterval(function () {
+        Network.updatePlayerMails(10 * 1000);
+    }, 10 * 1000);
     cc.director.runScene(game);
 }
+
 function bindButtonCallback(button, callback) {
     button.addTouchEventListener(function (sender, type) {
         switch (type) {

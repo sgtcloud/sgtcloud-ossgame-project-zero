@@ -1940,18 +1940,18 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero03_02.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="effect_4" CanEdit="False" ActionTag="-2056729174" Tag="39" IconVisible="False" LeftMargin="640.0000" RightMargin="-48.0000" TopMargin="434.0000" BottomMargin="480.0000" ctype="SpriteObjectData">
-                <Size X="48.0000" Y="46.0000" />
+              <AbstractNodeData Name="effect_4" CanEdit="False" ActionTag="-2056729174" Tag="39" IconVisible="False" LeftMargin="305.0000" RightMargin="81.0000" TopMargin="448.0000" BottomMargin="175.0000" ctype="SpriteObjectData">
+                <Size X="254.0000" Y="337.0000" />
                 <AnchorPoint />
-                <Position X="640.0000" Y="480.0000" />
+                <Position X="305.0000" Y="175.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="1.0000" Y="0.5000" />
+                <PrePosition X="0.4766" Y="0.1823" />
                 <PreSize X="0.3969" Y="0.3510" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/hero/effect001.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero01" CanEdit="False" ActionTag="283832658" Alpha="229" Tag="39" IconVisible="False" LeftMargin="55.0000" RightMargin="-155.0000" TopMargin="455.0000" BottomMargin="75.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero01" CanEdit="False" ActionTag="283832658" Tag="39" IconVisible="False" LeftMargin="55.0000" RightMargin="-155.0000" TopMargin="455.0000" BottomMargin="75.0000" ctype="SpriteObjectData">
                 <Size X="740.0000" Y="430.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="425.0000" Y="290.0000" />
@@ -1959,117 +1959,117 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6641" Y="0.3021" />
                 <PreSize X="1.1563" Y="0.4479" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero01_01.png" Plist="cover.plist" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero01_03.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ball_effect" CanEdit="False" ActionTag="-334576738" Alpha="197" Tag="30" IconVisible="False" LeftMargin="241.5000" RightMargin="241.5000" TopMargin="525.0000" BottomMargin="245.0000" ctype="SpriteObjectData">
-                <Size X="157.0000" Y="190.0000" />
+              <AbstractNodeData Name="ball_effect" CanEdit="False" ActionTag="-334576738" Tag="30" IconVisible="False" LeftMargin="296.0000" RightMargin="296.0000" TopMargin="542.0000" BottomMargin="372.0000" ctype="SpriteObjectData">
+                <Size X="48.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="320.0000" Y="340.0000" />
-                <Scale ScaleX="0.3000" ScaleY="0.3000" />
+                <Position X="320.0000" Y="395.0000" />
+                <Scale ScaleX="0.2000" ScaleY="0.2000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.3542" />
+                <PrePosition X="0.5000" Y="0.4115" />
                 <PreSize X="0.0750" Y="0.0479" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/effect05_06.png" Plist="cover.plist" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="effect_3" CanEdit="False" ActionTag="-1985736199" Tag="37" IconVisible="False" LeftMargin="168.9301" RightMargin="423.0699" TopMargin="770.3190" BottomMargin="143.6810" ctype="SpriteObjectData">
-                <Size X="48.0000" Y="46.0000" />
+              <AbstractNodeData Name="effect_3" CanEdit="False" ActionTag="-1985736199" Tag="37" IconVisible="False" LeftMargin="-11.0000" RightMargin="80.0000" TopMargin="788.5000" BottomMargin="58.5000" ctype="SpriteObjectData">
+                <Size X="571.0000" Y="113.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
-                <Position X="216.9301" Y="166.6810" />
+                <Position X="560.0000" Y="115.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3390" Y="0.1736" />
+                <PrePosition X="0.8750" Y="0.1198" />
+                <PreSize X="0.8922" Y="0.1177" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/hero/effect002.png" Plist="cover.plist" />
+                <BlendFunc Src="770" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="btn_effect" CanEdit="False" ActionTag="688341066" Tag="41" IconVisible="False" LeftMargin="296.8512" RightMargin="295.1488" TopMargin="786.0493" BottomMargin="127.9507" ctype="SpriteObjectData">
+                <Size X="48.0000" Y="46.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="320.8512" Y="150.9507" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5013" Y="0.1572" />
                 <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_effect" CanEdit="False" ActionTag="688341066" Tag="41" IconVisible="False" LeftMargin="295.9757" RightMargin="296.0243" TopMargin="815.4280" BottomMargin="98.5721" ctype="SpriteObjectData">
-                <Size X="48.0000" Y="46.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5659" />
-                <Position X="319.9757" Y="124.6050" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.1298" />
-                <PreSize X="0.2875" Y="0.0771" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="logo" CanEdit="False" ActionTag="-1877329558" Tag="44" IconVisible="False" LeftMargin="296.0000" RightMargin="296.0000" TopMargin="147.0000" BottomMargin="767.0000" ctype="SpriteObjectData">
-                <Size X="48.0000" Y="46.0000" />
+              <AbstractNodeData Name="logo" CanEdit="False" ActionTag="-1877329558" Tag="44" IconVisible="False" LeftMargin="155.0000" RightMargin="155.0000" TopMargin="65.0000" BottomMargin="685.0000" ctype="SpriteObjectData">
+                <Size X="330.0000" Y="210.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="320.0000" Y="790.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8229" />
-                <PreSize X="0.4688" Y="0.1875" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
+                <PreSize X="0.5156" Y="0.2188" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/other/logo05.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="star" CanEdit="False" ActionTag="-1924878366" Tag="28" IconVisible="False" LeftMargin="290.0000" RightMargin="302.0000" TopMargin="157.0000" BottomMargin="757.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="star" CanEdit="False" ActionTag="-1924878366" Tag="28" IconVisible="False" LeftMargin="294.8986" RightMargin="297.1014" TopMargin="237.3745" BottomMargin="676.6255" ctype="SpriteObjectData">
                 <Size X="48.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="314.0000" Y="780.0000" />
+                <Position X="318.8986" Y="699.6255" />
                 <Scale ScaleX="0.5000" ScaleY="0.5000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4906" Y="0.8125" />
-                <PreSize X="0.3375" Y="0.1042" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="hero02_star" ActionTag="-1830837010" Tag="31" IconVisible="False" LeftMargin="467.9521" RightMargin="124.0479" TopMargin="537.2004" BottomMargin="376.7996" ctype="SpriteObjectData">
-                <Size X="48.0000" Y="46.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="491.9521" Y="399.7996" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7687" Y="0.4165" />
+                <PrePosition X="0.4983" Y="0.7288" />
                 <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero03_star" ActionTag="-143154413" Tag="32" IconVisible="False" LeftMargin="189.2214" RightMargin="402.7786" TopMargin="493.3182" BottomMargin="420.6818" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero02_star" ActionTag="-1830837010" Tag="31" IconVisible="False" LeftMargin="456.3794" RightMargin="135.6206" TopMargin="567.3112" BottomMargin="346.6888" ctype="SpriteObjectData">
                 <Size X="48.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="213.2214" Y="443.6818" />
+                <Position X="480.3794" Y="369.6888" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3332" Y="0.4622" />
+                <PrePosition X="0.7506" Y="0.3851" />
                 <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero04_star" ActionTag="534389820" Tag="33" IconVisible="False" LeftMargin="114.2469" RightMargin="477.7531" TopMargin="595.8692" BottomMargin="318.1308" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero03_star" ActionTag="-143154413" Tag="32" IconVisible="False" LeftMargin="195.1361" RightMargin="396.8639" TopMargin="552.8268" BottomMargin="361.1732" ctype="SpriteObjectData">
                 <Size X="48.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="138.2469" Y="341.1308" />
+                <Position X="219.1361" Y="384.1732" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2160" Y="0.3553" />
+                <PrePosition X="0.3424" Y="0.4002" />
                 <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero05_star" ActionTag="-480335770" Tag="34" IconVisible="False" LeftMargin="478.6109" RightMargin="113.3890" TopMargin="619.1253" BottomMargin="294.8747" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero04_star" ActionTag="534389820" Tag="33" IconVisible="False" LeftMargin="114.5461" RightMargin="477.4539" TopMargin="618.6150" BottomMargin="295.3850" ctype="SpriteObjectData">
                 <Size X="48.0000" Y="46.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="502.6109" Y="317.8747" />
+                <Position X="138.5461" Y="318.3850" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7853" Y="0.3311" />
+                <PrePosition X="0.2165" Y="0.3317" />
                 <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="effect_1" ActionTag="-1754892431" Tag="35" IconVisible="False" LeftMargin="153.5000" RightMargin="393.5000" TopMargin="751.0000" BottomMargin="80.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero05_star" ActionTag="-480335770" Tag="34" IconVisible="False" LeftMargin="468.1466" RightMargin="123.8534" TopMargin="620.2599" BottomMargin="293.7401" ctype="SpriteObjectData">
+                <Size X="48.0000" Y="46.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="492.1466" Y="316.7401" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7690" Y="0.3299" />
+                <PreSize X="0.0750" Y="0.0479" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
+                <BlendFunc Src="770" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="effect_1" ActionTag="-1754892431" Tag="35" IconVisible="False" LeftMargin="143.5000" RightMargin="403.5000" TopMargin="751.0000" BottomMargin="80.0000" ctype="SpriteObjectData">
                 <Size X="93.0000" Y="129.0000" />
                 <AnchorPoint ScaleX="0.5000" />
-                <Position X="200.0000" Y="80.0000" />
+                <Position X="190.0000" Y="80.0000" />
                 <Scale ScaleX="2.0000" ScaleY="2.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3125" Y="0.0833" />
+                <PrePosition X="0.2969" Y="0.0833" />
                 <PreSize X="0.1453" Y="0.1344" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/effect04_01.png" Plist="cover.plist" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/effect/effect04_06.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="effect_2" ActionTag="1541577785" Tag="36" IconVisible="False" LeftMargin="413.5000" RightMargin="133.5000" TopMargin="651.0000" BottomMargin="180.0000" FlipX="True" ctype="SpriteObjectData">
@@ -2080,16 +2080,16 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7188" Y="0.1875" />
                 <PreSize X="0.1453" Y="0.1344" />
-                <FileData Type="MarkedSubImage" Path="coverSprite/effect/effect04_01.png" Plist="cover.plist" />
+                <FileData Type="MarkedSubImage" Path="coverSprite/effect/effect04_06.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="cover_login_btn" ActionTag="868730888" VisibleForFrame="False" Tag="43" IconVisible="False" LeftMargin="187.0000" RightMargin="187.0000" TopMargin="753.8062" BottomMargin="33.1939" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="151" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="cover_login_btn" ActionTag="868730888" Tag="43" IconVisible="False" LeftMargin="187.0000" RightMargin="187.0000" TopMargin="763.5000" BottomMargin="23.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="151" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="266.0000" Y="173.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="320.0000" Y="119.6939" />
+                <Position X="320.0000" Y="110.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.1247" />
+                <PrePosition X="0.5000" Y="0.1146" />
                 <PreSize X="0.4156" Y="0.1802" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="MarkedSubImage" Path="coverSprite/other/btn_2.png" Plist="cover.plist" />

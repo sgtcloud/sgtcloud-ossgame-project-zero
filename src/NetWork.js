@@ -407,7 +407,7 @@
                 }
             });
         },
-        openNewNameLayer: function (scene) {
+        openNewNameLayer: function (scene,cb) {
             var createPlayer = ccs.csLoader.createNode(res.createPlayer);
             var root = createPlayer.getChildByName('root');
             var dice = root.getChildByName('dice');
@@ -423,12 +423,11 @@
                             tip2.toggle({'delay': 30, 'text': '正在创建角色并初始化游戏。。。。。。'});
                             this._addPlayer(playName, function () {
                                 createPlayer.removeFromParent(true);
-                                initGame();
                                 PlayerData.isUpdate = true;
                                 Network.updatePlayerSave();
                                 tip2.stopAllActions();
                                 tip2.setVisible(false);
-                                scene.getChildByName("root").getChildByName("cover_login_btn").setVisible(true);
+                                initGame(cb);
                             })
                         }
                     }.bind(this));
