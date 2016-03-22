@@ -86,9 +86,14 @@ var ListViewMenu = BattleMenu.extend({
         cc.Node.prototype.onEnter.call(this);
         //we must call foreceDoLayout in onEnter method in h5.
         this.listView.forceDoLayout();
+        //var listHeight=this.listView.height;
+        //this.listView.height=listHeight;
         var totalHeight = this._itemTemplateHeight * this._totalCount /*+ (this._totalCount - 1) * 4*/;
         this.listView.getInnerContainer().setContentSize(cc.size(this.listView.getInnerContainerSize().width, totalHeight));
         this.listView.jumpToTop();
+        if(totalHeight<this.listView.height){
+            this.listView.setTouchEnabled(false);
+        }
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     },updateInnerContainerSize:function(){
         var y=this.listView.getInnerContainer().getPositionY();
