@@ -158,7 +158,7 @@
 				<key>sourceSize</key>
 				<string>{95,95}</string>
 			</dict>
-			<key>maillUI/delete.png</key>
+			<key>mailUI/delete.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{177,181},{87,27}}</string>
@@ -169,7 +169,7 @@
 				<key>sourceSize</key>
 				<string>{92,29}</string>
 			</dict>
-			<key>maillUI/get.png</key>
+			<key>mailUI/get.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{264,179},{87,26}}</string>
@@ -180,7 +180,7 @@
 				<key>sourceSize</key>
 				<string>{92,29}</string>
 			</dict>
-			<key>maillUI/get2.png</key>
+			<key>mailUI/get2.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{307,97},{71,23}}</string>
@@ -191,7 +191,7 @@
 				<key>sourceSize</key>
 				<string>{87,24}</string>
 			</dict>
-			<key>maillUI/look.png</key>
+			<key>mailUI/look.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{316,141},{39,24}}</string>
@@ -202,7 +202,7 @@
 				<key>sourceSize</key>
 				<string>{87,25}</string>
 			</dict>
-			<key>maillUI/title.png</key>
+			<key>mailUI/title.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{257,0},{123,50}}</string>

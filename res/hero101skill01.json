@@ -474,7 +474,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -484,7 +484,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -494,7 +494,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round03.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -504,7 +504,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round04.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -514,7 +514,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round05.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -524,7 +524,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/round06.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -710,7 +710,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -720,7 +720,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 1,
                 "Tween": false,
@@ -730,7 +730,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -740,7 +740,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -750,7 +750,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -760,7 +760,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 5,
                 "Tween": false,
@@ -770,7 +770,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -780,7 +780,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 7,
                 "Tween": false,
@@ -790,7 +790,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -800,7 +800,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -810,7 +810,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -820,7 +820,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 11,
                 "Tween": false,
@@ -830,7 +830,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -840,7 +840,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -850,7 +850,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -860,7 +860,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -870,7 +870,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -880,7 +880,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/hero02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -1028,7 +1028,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire00.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -1038,7 +1038,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire00.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -1048,7 +1048,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -1058,7 +1058,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire03.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -1068,7 +1068,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -1078,7 +1078,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -1088,7 +1088,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire03.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 18,
                 "Tween": false,
@@ -1098,7 +1098,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire01.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 21,
                 "Tween": false,
@@ -1108,7 +1108,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire02.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 24,
                 "Tween": false,
@@ -1118,7 +1118,7 @@
                 "TextureFile": {
                   "Type": "MarkedSubImage",
                   "Path": "hero101skill01/fire03.png",
-                  "Plist": "heroSkill.plist"
+                  "Plist": "hero101skill01.plist"
                 },
                 "FrameIndex": 27,
                 "Tween": false,
@@ -1249,7 +1249,7 @@
             "FileData": {
               "Type": "MarkedSubImage",
               "Path": "hero101skill01/hero01.png",
-              "Plist": "heroSkill.plist"
+              "Plist": "hero101skill01.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -1259,7 +1259,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 160.0,
+              "X": 0.0,
               "Y": 181.91
             },
             "Scale": {
@@ -1276,8 +1276,7 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 160.0,
-            "RightMargin": -397.0,
+            "RightMargin": -237.0,
             "TopMargin": -349.91,
             "BottomMargin": 13.91,
             "Tag": 15,
@@ -1293,7 +1292,7 @@
             "FileData": {
               "Type": "MarkedSubImage",
               "Path": "hero101skill01/fire00.png",
-              "Plist": "heroSkill.plist"
+              "Plist": "hero101skill01.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -1305,7 +1304,7 @@
             },
             "Position": {
               "X": 90.0,
-              "Y": 450.0
+              "Y": 200.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1323,8 +1322,8 @@
             },
             "LeftMargin": -119.5,
             "RightMargin": -299.5,
-            "TopMargin": -539.0,
-            "BottomMargin": 361.0,
+            "TopMargin": -289.0,
+            "BottomMargin": 111.0,
             "Tag": 19,
             "ActionTag": -1256903318,
             "Size": {
@@ -1343,8 +1342,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "heroSkill.plist",
-        "heroSkill.png",
+        "hero101skill01.plist",
+        "hero101skill01.png",
         "other.plist",
         "other.png"
       ],
