@@ -1,7 +1,7 @@
 {
   "ID": "98b5ce80-f449-4c37-87f5-ea601140577c",
   "Version": "2.3.3.0",
-  "Name": "MaillView",
+  "Name": "MailView",
   "Content": {
     "Content": {
       "Animation": {
@@ -302,7 +302,7 @@
                   {
                     "FileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "maillUI/get2.png",
+                      "Path": "mailUI/get2.png",
                       "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 87,
@@ -346,7 +346,7 @@
                   {
                     "FileData": {
                       "Type": "MarkedSubImage",
-                      "Path": "maillUI/look.png",
+                      "Path": "mailUI/look.png",
                       "Plist": "OtherUI.plist"
                     },
                     "Scale9Width": 87,

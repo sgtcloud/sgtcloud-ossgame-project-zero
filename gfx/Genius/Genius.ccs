@@ -1540,14 +1540,6 @@
           <Image Name="word03.png" />
           <Image Name="word04.png" />
           <PlistImageFolder Image="hero103skill01.png" PListFile="hero103skill01.plist" Name=".hero103skill01_PList.Dir">
-            <PlistImageFile Name="hero103skill01_book01.png" Key="hero103skill01/book01.png" />
-            <PlistImageFile Name="hero103skill01_book02.png" Key="hero103skill01/book02.png" />
-            <PlistImageFile Name="hero103skill01_book03.png" Key="hero103skill01/book03.png" />
-            <PlistImageFile Name="hero103skill01_book04.png" Key="hero103skill01/book04.png" />
-            <PlistImageFile Name="hero103skill01_book05.png" Key="hero103skill01/book05.png" />
-            <PlistImageFile Name="hero103skill01_book06.png" Key="hero103skill01/book06.png" />
-            <PlistImageFile Name="hero103skill01_book07.png" Key="hero103skill01/book07.png" />
-            <PlistImageFile Name="hero103skill01_book08.png" Key="hero103skill01/book08.png" />
             <PlistImageFile Name="hero103skill01_book09.png" Key="hero103skill01/book09.png" />
             <PlistImageFile Name="hero103skill01_book10.png" Key="hero103skill01/book10.png" />
             <PlistImageFile Name="hero103skill01_book11.png" Key="hero103skill01/book11.png" />
@@ -1578,6 +1570,14 @@
             <PlistImageFile Name="hero103skill01_word02.png" Key="hero103skill01/word02.png" />
             <PlistImageFile Name="hero103skill01_word03.png" Key="hero103skill01/word03.png" />
             <PlistImageFile Name="hero103skill01_word04.png" Key="hero103skill01/word04.png" />
+            <PlistImageFile Name="hero103skill01_book01.png" Key="hero103skill01/book01.png" />
+            <PlistImageFile Name="hero103skill01_book02.png" Key="hero103skill01/book02.png" />
+            <PlistImageFile Name="hero103skill01_book03.png" Key="hero103skill01/book03.png" />
+            <PlistImageFile Name="hero103skill01_book04.png" Key="hero103skill01/book04.png" />
+            <PlistImageFile Name="hero103skill01_book05.png" Key="hero103skill01/book05.png" />
+            <PlistImageFile Name="hero103skill01_book06.png" Key="hero103skill01/book06.png" />
+            <PlistImageFile Name="hero103skill01_book07.png" Key="hero103skill01/book07.png" />
+            <PlistImageFile Name="hero103skill01_book08.png" Key="hero103skill01/book08.png" />
           </PlistImageFolder>
         </Folder>
         <Folder Name="hero104skill02">

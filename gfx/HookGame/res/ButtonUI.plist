@@ -7,7 +7,7 @@
 			<key>buttonUI/add.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{120,87},{20,19}}</string>
+				<string>{{145,383},{20,19}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,18 +18,18 @@
 			<key>buttonUI/back.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{61,0},{72,39}}</string>
+				<string>{{0,300},{72,39}}</string>
 				<key>offset</key>
 				<string>{1,1}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{105,44}</string>
 			</dict>
 			<key>buttonUI/buy.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{188,0},{48,25}}</string>
+				<string>{{25,427},{48,25}}</string>
 				<key>offset</key>
 				<string>{0,1}</string>
 				<key>rotated</key>
@@ -40,18 +40,18 @@
 			<key>buttonUI/buy2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{216,76},{32,17}}</string>
+				<string>{{25,452},{32,17}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{45,21}</string>
 			</dict>
 			<key>buttonUI/buy3.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{188,25},{48,25}}</string>
+				<string>{{73,427},{48,25}}</string>
 				<key>offset</key>
 				<string>{1,1}</string>
 				<key>rotated</key>
@@ -62,18 +62,18 @@
 			<key>buttonUI/cut.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{251,0},{12,4}}</string>
+				<string>{{0,507},{12,4}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{16,12}</string>
 			</dict>
 			<key>buttonUI/font15_green.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{61,50},{120,11}}</string>
+				<string>{{25,383},{120,11}}</string>
 				<key>offset</key>
 				<string>{0,-1}</string>
 				<key>rotated</key>
@@ -84,7 +84,7 @@
 			<key>buttonUI/font16_green.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{61,39},{127,11}}</string>
+				<string>{{25,372},{127,11}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -95,7 +95,7 @@
 			<key>buttonUI/font16_green_a.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,237},{120,11}}</string>
+				<string>{{25,394},{120,11}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -106,7 +106,7 @@
 			<key>buttonUI/font16_white.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,101},{120,11}}</string>
+				<string>{{25,405},{120,11}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -117,7 +117,7 @@
 			<key>buttonUI/font16_yellow.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{96,76},{120,11}}</string>
+				<string>{{25,416},{120,11}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -128,11 +128,11 @@
 			<key>buttonUI/font16_yellow_b.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{238,0},{140,13}}</string>
+				<string>{{0,494},{140,13}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{140,13}</string>
 			</dict>
@@ -143,7 +143,7 @@
 				<key>offset</key>
 				<string>{0,-1}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{240,15}</string>
 			</dict>
@@ -161,7 +161,7 @@
 			<key>buttonUI/notSure.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{133,0},{48,25}}</string>
+				<string>{{96,452},{48,25}}</string>
 				<key>offset</key>
 				<string>{1,-1}</string>
 				<key>rotated</key>
@@ -172,18 +172,18 @@
 			<key>buttonUI/percentage.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{181,50},{15,11}}</string>
+				<string>{{57,452},{15,11}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{17,15}</string>
 			</dict>
 			<key>buttonUI/recast.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{120,108},{47,25}}</string>
+				<string>{{144,452},{47,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -194,7 +194,7 @@
 			<key>buttonUI/revive.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,112},{48,25}}</string>
+				<string>{{121,427},{48,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -205,7 +205,7 @@
 			<key>buttonUI/sure.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{167,87},{47,25}}</string>
+				<string>{{188,477},{47,25}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -216,18 +216,18 @@
 			<key>buttonUI/upLevel.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{120,140},{48,25}}</string>
+				<string>{{140,477},{48,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{66,34}</string>
 			</dict>
 			<key>buttonUI/get.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,140},{97,25}}</string>
+				<string>{{0,372},{97,25}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -238,7 +238,7 @@
 			<key>buttonUI/now.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,76},{96,25}}</string>
+				<string>{{0,469},{96,25}}</string>
 				<key>offset</key>
 				<string>{1,1}</string>
 				<key>rotated</key>
@@ -256,14 +256,14 @@
 			<key>realTextureFileName</key>
 			<string>ButtonUI.png</string>
 			<key>size</key>
-			<string>{255,248}</string>
+			<string>{235,511}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>255</integer>
+			<integer>235</integer>
 			<key>height</key>
-			<integer>248</integer>
+			<integer>511</integer>
 		</dict>
 	</dict>
 </plist>

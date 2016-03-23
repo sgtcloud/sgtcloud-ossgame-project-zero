@@ -7,53 +7,53 @@
 			<key>hero102skill02/fly01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{352,1592},{155,155}}</string>
+				<string>{{1148,1239},{185,156}}</string>
 				<key>offset</key>
-				<string>{-10,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{185,156}</string>
 			</dict>
 			<key>hero102skill02/fly02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{405,1747},{161,128}}</string>
+				<string>{{1166,1424},{185,156}}</string>
 				<key>offset</key>
-				<string>{-12,14}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{185,156}</string>
 			</dict>
 			<key>hero102skill02/fly03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{319,1905},{163,128}}</string>
+				<string>{{1304,1239},{185,156}}</string>
 				<key>offset</key>
-				<string>{-10,14}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{185,156}</string>
 			</dict>
 			<key>hero102skill02/fly04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{154,1905},{165,129}}</string>
+				<string>{{1356,724},{185,156}}</string>
 				<key>offset</key>
-				<string>{-5,14}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{185,156}</string>
 			</dict>
 			<key>hero102skill02/fly05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{482,1875},{157,127}}</string>
+				<string>{{1467,418},{185,156}}</string>
 				<key>offset</key>
-				<string>{-13,15}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -62,31 +62,31 @@
 			<key>hero102skill02/fly06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{473,996},{152,104}}</string>
+				<string>{{1483,209},{185,156}}</string>
 				<key>offset</key>
-				<string>{-11,26}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{185,156}</string>
 			</dict>
 			<key>hero102skill02/star01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{307,616},{134,132}}</string>
+				<string>{{196,1164},{248,306}}</string>
 				<key>offset</key>
-				<string>{-1,-17}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{625,996},{92,92}}</string>
+				<string>{{307,776},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,2}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -95,9 +95,9 @@
 			<key>hero102skill02/star03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{337,1019},{57,58}}</string>
+				<string>{{323,388},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,8}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -106,9 +106,9 @@
 			<key>hero102skill02/star04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{279,1019},{58,58}}</string>
+				<string>{{355,0},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,19}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -117,9 +117,9 @@
 			<key>hero102skill02/star05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{577,540},{191,191}}</string>
+				<string>{{196,1470},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,29}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -128,20 +128,20 @@
 			<key>hero102skill02/star06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{149,1351},{240,241}}</string>
+				<string>{{196,1776},{248,306}}</string>
 				<key>offset</key>
-				<string>{1,29}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1103},{248,248}}</string>
+				<string>{{444,1082},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,29}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -150,9 +150,9 @@
 			<key>hero102skill02/star08.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{529,346},{194,194}}</string>
+				<string>{{555,694},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,29}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -161,9 +161,9 @@
 			<key>hero102skill02/star09.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{603,1294},{197,227}}</string>
+				<string>{{571,306},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,14}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -172,20 +172,20 @@
 			<key>hero102skill02/star10.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{517,1100},{194,240}}</string>
+				<string>{{603,0},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,6}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star11.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{473,742},{194,254}}</string>
+				<string>{{444,1388},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,-1}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -194,9 +194,9 @@
 			<key>hero102skill02/star12.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{279,752},{194,267}}</string>
+				<string>{{502,1694},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,-7}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -205,20 +205,20 @@
 			<key>hero102skill02/star13.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{609,1847},{197,280}}</string>
+				<string>{{692,1000},{248,306}}</string>
 				<key>offset</key>
-				<string>{0,-13}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{389,1314},{214,259}}</string>
+				<string>{{803,612},{248,306}}</string>
 				<key>offset</key>
-				<string>{-5,7}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -227,42 +227,42 @@
 			<key>hero102skill02/star15.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{248,1103},{211,269}}</string>
+				<string>{{819,306},{248,306}}</string>
 				<key>offset</key>
-				<string>{-4,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star16.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{324,0},{213,208}}</string>
+				<string>{{851,0},{248,306}}</string>
 				<key>offset</key>
-				<string>{-3,29}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star17.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{307,388},{228,222}}</string>
+				<string>{{692,1306},{248,306}}</string>
 				<key>offset</key>
-				<string>{-5,21}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{248,306}</string>
 			</dict>
 			<key>hero102skill02/star18.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,752},{279,351}}</string>
+				<string>{{0,388},{323,388}}</string>
 				<key>offset</key>
-				<string>{-22,-18}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -271,9 +271,9 @@
 			<key>hero102skill02/star19.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,388},{307,364}}</string>
+				<string>{{0,776},{307,388}}</string>
 				<key>offset</key>
-				<string>{0,-12}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -282,9 +282,9 @@
 			<key>hero102skill02/star20.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{324,388}}</string>
+				<string>{{0,0},{355,388}}</string>
 				<key>offset</key>
-				<string>{-15,0}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -293,53 +293,53 @@
 			<key>hero102skill02/word01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{798,192},{113,105}}</string>
+				<string>{{750,1612},{208,209}}</string>
 				<key>offset</key>
-				<string>{28,35}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{208,209}</string>
 			</dict>
 			<key>hero102skill02/word02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{723,332},{125,106}}</string>
+				<string>{{750,1821},{208,209}}</string>
 				<key>offset</key>
-				<string>{24,35}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{208,209}</string>
 			</dict>
 			<key>hero102skill02/word03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{324,213},{140,119}}</string>
+				<string>{{940,918},{208,209}}</string>
 				<key>offset</key>
-				<string>{34,45}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{208,209}</string>
 			</dict>
 			<key>hero102skill02/word04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{566,1710},{137,131}}</string>
+				<string>{{1051,612},{208,209}}</string>
 				<key>offset</key>
-				<string>{33,38}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{208,209}</string>
 			</dict>
 			<key>hero102skill02/word05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{507,1573},{134,137}}</string>
+				<string>{{1067,306},{208,209}}</string>
 				<key>offset</key>
-				<string>{33,35}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -348,9 +348,9 @@
 			<key>hero102skill02/word06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{149,1592},{203,145}}</string>
+				<string>{{1099,0},{208,209}}</string>
 				<key>offset</key>
-				<string>{-3,30}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -359,9 +359,9 @@
 			<key>hero102skill02/word07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{728,0},{191,192}}</string>
+				<string>{{940,1127},{208,209}}</string>
 				<key>offset</key>
-				<string>{0,6}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -370,9 +370,9 @@
 			<key>hero102skill02/word08.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{532,0},{196,201}}</string>
+				<string>{{940,1336},{208,209}}</string>
 				<key>offset</key>
-				<string>{-3,-4}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -381,9 +381,9 @@
 			<key>hero102skill02/word09.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{641,1521},{176,187}}</string>
+				<string>{{958,1545},{208,209}}</string>
 				<key>offset</key>
-				<string>{-5,-3}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -392,9 +392,9 @@
 			<key>hero102skill02/word10.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1905},{154,142}}</string>
+				<string>{{958,1754},{208,209}}</string>
 				<key>offset</key>
-				<string>{1,-13}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -403,9 +403,9 @@
 			<key>hero102skill02/word11.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{697,1708},{124,139}}</string>
+				<string>{{1148,821},{208,209}}</string>
 				<key>offset</key>
-				<string>{-17,-16}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -414,20 +414,20 @@
 			<key>hero102skill02/word12.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{439,616},{126,138}}</string>
+				<string>{{1259,515},{208,209}}</string>
 				<key>offset</key>
-				<string>{-23,-24}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{208,209}</string>
 			</dict>
 			<key>hero102skill02/word13.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{443,213},{122,133}}</string>
+				<string>{{1275,209},{208,209}}</string>
 				<key>offset</key>
-				<string>{-29,-31}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -436,9 +436,9 @@
 			<key>hero102skill02/word14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{565,201},{120,133}}</string>
+				<string>{{1307,0},{208,209}}</string>
 				<key>offset</key>
-				<string>{-29,-32}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -447,9 +447,9 @@
 			<key>hero102skill02/word15.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{685,201},{113,131}}</string>
+				<string>{{1148,1030},{208,209}}</string>
 				<key>offset</key>
-				<string>{-29,-31}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
@@ -458,9 +458,9 @@
 			<key>hero102skill02/word16.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1351},{405,149}}</string>
+				<string>{{0,1164},{423,196}}</string>
 				<key>offset</key>
-				<string>{-4,3}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
@@ -469,11 +469,11 @@
 			<key>hero102skill02/word17.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,1756},{405,149}}</string>
+				<string>{{0,1587},{423,196}}</string>
 				<key>offset</key>
-				<string>{-4,3}</string>
+				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{423,196}</string>
 			</dict>
@@ -487,14 +487,14 @@
 			<key>realTextureFileName</key>
 			<string>hero102skill02.png</string>
 			<key>size</key>
-			<string>{919,2047}</string>
+			<string>{2048,2048}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>919</integer>
+			<integer>2048</integer>
 			<key>height</key>
-			<integer>2047</integer>
+			<integer>2048</integer>
 		</dict>
 	</dict>
 </plist>

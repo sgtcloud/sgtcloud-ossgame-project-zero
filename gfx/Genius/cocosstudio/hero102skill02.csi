@@ -1,6 +1,6 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="hero102skill02" Type="Plist" ID="607b8c50-2116-49f4-854e-6242ba112d4c" Version="2.3.3.0" />
-  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+  <PropertyGroup Name="hero102skill02" Type="Plist" ID="a228b8d0-1334-4067-aa98-cf98c287f538" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="hero102skill02/fly01.png" />
       <FilePathData Path="hero102skill02/fly02.png" />
