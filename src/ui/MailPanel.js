@@ -4,8 +4,8 @@
 var MailPanel = cc.Node.extend({
     ctor: function () {
         this._super();
-        this.mailLayer = ccs.csLoader.createNode(res.maill_layer_json);
-        this.mailView = ccs.csLoader.createNode(res.maill_view_json);
+        this.mailLayer = ccs.csLoader.createNode(res.mail_layer_json);
+        this.mailView = ccs.csLoader.createNode(res.mail_view_json);
         this.mailViewRoot = this.mailView.getChildByName('root');
         this.initData();
     },
