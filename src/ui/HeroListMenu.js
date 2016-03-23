@@ -11,7 +11,11 @@ var HeroListMenu = ListViewMenu.extend({
         this._skillTemp.setPositionX(this._heroTemp.width - this._skillTemp.width);
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
-        this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn');
+        this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn1');
+        var difPose=this._upgrade_btnTemp.getPositionX();
+        this._upgradeBtnPosition.x+=difPose;
+        this._upgrade_btn100Temp = upgrade_btn_layoutTemp.getChildByName('btn100');
+        this._upgrade_btn10Temp = upgrade_btn_layoutTemp.getChildByName('btn10');
         var maxLevelBtn_layoutTemp = this._heroTemp.getChildByName('MaxLevel');
         this._maxLevelBtnTemp = maxLevelBtn_layoutTemp.getChildByName('btn');
         this._maxLevelBtnPosition = maxLevelBtn_layoutTemp.getPosition();
@@ -35,8 +39,11 @@ var HeroListMenu = ListViewMenu.extend({
         this._skillMaxLevelBtnTemplate = skillMaxLevelBtnLayoutTemplate.getChildByName('btn');
         this._skillMaxLevelBtnPosition = skillMaxLevelBtnLayoutTemplate.getPosition();
         var upgradeSkillLayoutTemp = this._skillTemp.getChildByName('upgrade_btn');
-        this._upgradeSkillBtnTemp = upgradeSkillLayoutTemp.getChildByName('btn');
+        this._upgradeSkillBtnTemp = upgradeSkillLayoutTemp.getChildByName('btn1');
+        this._upgradeSkillBtn10Temp = upgradeSkillLayoutTemp.getChildByName('btn10');
+        this._upgradeSkillBtn100Temp = upgradeSkillLayoutTemp.getChildByName('btn100');
         this._upgradeSkillPosition = upgradeSkillLayoutTemp.getPosition();
+        //this._upgradeSkillPosition.x+=this._upgradeSkillBtnTemp.getPositionX();
         //this.listView._innerContainer.setLayoutComponentEnabled(true);
         //this.views = {};
         {//填充英雄的列表 循环填充英雄+技能
