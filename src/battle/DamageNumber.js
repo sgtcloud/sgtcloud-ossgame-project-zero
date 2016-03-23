@@ -1,7 +1,8 @@
 /**
+ * 伤害数字vm类
+ *
  * Created by highkay on 2015/12/29.
  */
-//伤害数字类
 var DamageNumber = cc.Node.extend({
 
     ctor: function (val, ctr) {
@@ -55,7 +56,13 @@ var DamageNumber = cc.Node.extend({
 
 });
 
-// 重用对象
+/**
+ * 池化对象创建方法
+ *
+ * @param val
+ * @param ctr
+ * @returns {*}
+ */
 DamageNumber.create = function (val, ctr) {
     var pool = cc.pool;
     if (pool.hasObject(DamageNumber)) {

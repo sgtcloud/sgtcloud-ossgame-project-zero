@@ -1,8 +1,8 @@
 /**
+ * 英雄单位vm类
+ *
  * Created by highkay on 2015/12/29.
  */
-
-//英雄扩展类
 var HeroUnit = BattleUnit.extend({
 
     getAnimateDelay: function () {
@@ -147,13 +147,12 @@ var HeroUnit = BattleUnit.extend({
         if (this.hero.getCurrentLife() <= 0) {
             var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
             var currentTime = PlayerData.getServerTime();
-            var recoverTime = this.hero.getRecover()-(currentTime - dieTime )/ 1000;
-            // todo make the current time to be a certain server time
-            console.log(this.hero.getId()+' dieTime : '+dieTime +',recoverTime:'+recoverTime )
+            var recoverTime = this.hero.getRecover() - (currentTime - dieTime ) / 1000;
+            console.log(this.hero.getId() + ' dieTime : ' + dieTime + ',recoverTime:' + recoverTime)
             if (recoverTime > 0) {
                 // convert millisecond to second
-                this.onDead(recoverTime );
-            }else {
+                this.onDead(recoverTime);
+            } else {
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
             }
