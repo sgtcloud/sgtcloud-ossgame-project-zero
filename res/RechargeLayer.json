@@ -371,8 +371,8 @@
                   "Path": "rechargeUI/pic.png",
                   "Plist": "OtherUI.plist"
                 },
-                "Scale9Width": 425,
-                "Scale9Height": 81,
+                "Scale9Width": 640,
+                "Scale9Height": 195,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 18.4632,

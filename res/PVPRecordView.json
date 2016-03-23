@@ -1,7 +1,7 @@
 {
-  "ID": "fa0a51ab-4981-474a-b2d6-7bae8f06eeee",
+  "ID": "3d5e3879-a1db-4538-9c0b-ffbb9648f050",
   "Version": "2.3.3.0",
-  "Name": "PVPRecord",
+  "Name": "PVPRecordView",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,7 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 380,
+        "Tag": 336,
         "Children": [
           {
             "BackColorAlpha": 102,
@@ -28,8 +28,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -50,19 +48,19 @@
               "X": 1.0,
               "Y": 1.0
             },
-            "Tag": 381,
+            "Tag": 337,
             "Children": [
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_01.png",
+                  "Path": "mainUI/bg_05.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 25,
-                "Scale9OriginY": 25,
-                "Scale9Width": 28,
-                "Scale9Height": 28,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -82,34 +80,36 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 382,
-                "ActionTag": 1987873668,
+                "Tag": 338,
+                "ActionTag": 686247959,
                 "Size": {
-                  "X": 300.0,
-                  "Y": 420.0
+                  "X": 288.0,
+                  "Y": 68.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 200
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "Text Label",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
                 },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 200
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
                 },
-                "EndColor": {},
-                "ColorVector": {
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
                   "ScaleY": 1.0
                 },
-                "TouchEnable": true,
-                "AnchorPoint": {},
                 "Position": {
-                  "X": 6.2383,
-                  "Y": 5.5716
+                  "X": 14.0006,
+                  "Y": 60.7797
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -118,45 +118,45 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0208,
-                  "Y": 0.0133
+                  "X": 0.0486,
+                  "Y": 0.8938
                 },
                 "PreSize": {
-                  "X": 0.96,
-                  "Y": 0.9714
+                  "X": 0.9028,
+                  "Y": 0.7353
                 },
-                "LeftMargin": 6.2383,
-                "RightMargin": 5.7617,
-                "TopMargin": 6.4284,
-                "BottomMargin": 5.5716,
-                "Tag": 341,
-                "ActionTag": 785253769,
+                "LeftMargin": 14.0006,
+                "RightMargin": 13.9994,
+                "TopMargin": 7.2203,
+                "BottomMargin": 10.7797,
+                "Tag": 340,
+                "ActionTag": -59253797,
                 "Size": {
-                  "X": 288.0,
-                  "Y": 408.0
+                  "X": 260.0,
+                  "Y": 50.0
                 },
-                "Name": "box",
-                "ctype": "PanelObjectData"
+                "Name": "text",
+                "ctype": "TextObjectData"
               }
             ],
-            "ActionTag": 902370607,
+            "ActionTag": 518845777,
             "Size": {
-              "X": 300.0,
-              "Y": 420.0
+              "X": 288.0,
+              "Y": 68.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 300.0,
-          "Y": 420.0
+          "X": 288.0,
+          "Y": 68.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/bg_01.png"
+        "mainUI/bg_05.png"
       ],
       "ctype": "GameFileData"
     }

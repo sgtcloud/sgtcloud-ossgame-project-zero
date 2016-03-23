@@ -279,10 +279,11 @@
                   "Plist": ""
                 },
                 "AnchorPoint": {
+                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 311.8658,
+                  "X": 339.3658,
                   "Y": 103.2507
                 },
                 "Scale": {
@@ -295,7 +296,7 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5286,
+                  "X": 0.5752,
                   "Y": 0.7648
                 },
                 "PreSize": {
