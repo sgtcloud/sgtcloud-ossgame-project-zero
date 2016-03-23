@@ -42,7 +42,7 @@ var RechargePanel = cc.Node.extend({
         itemRoot.setTouchEnabled(false);
         bindTouchEventListener(function(){
             if(!is_weixin()){
-                tip.toggle('微信支付仅支持微信客服端中打开');
+                tip.toggle('微信支付仅支持微信客户端中打开');
             }else if(!this.isPaying){
                 this.isPaying = true;
                 console.log(i+',前往支付');
