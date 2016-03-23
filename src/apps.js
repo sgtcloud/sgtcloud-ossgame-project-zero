@@ -436,16 +436,13 @@ function showCover() {
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
-    if (PlayerData.modelPlayer) {
-        initGame();
-    }
     bindButtonCallback(loginBtn, function () {
         //判断当前用户是否存在角色
         if (!PlayerData.modelPlayer) {
             loginBtn.setVisible(false);
             Network.openNewNameLayer(scene, createPlayerComplete);
         } else {
-            createPlayerComplete();
+            initGame(createPlayerComplete);
         }
     });
     cc.director.runScene(scene);
