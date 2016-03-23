@@ -14,9 +14,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap01.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -24,9 +24,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap02.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 1,
                 "Tween": false,
@@ -34,9 +34,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap03.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 2,
                 "Tween": false,
@@ -44,9 +44,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap04.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 3,
                 "Tween": false,
@@ -54,9 +54,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap05.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 4,
                 "Tween": false,
@@ -64,9 +64,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap06.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 5,
                 "Tween": false,
@@ -74,9 +74,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap07.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 6,
                 "Tween": false,
@@ -84,9 +84,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap08.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 7,
                 "Tween": false,
@@ -94,9 +94,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap09.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 8,
                 "Tween": false,
@@ -104,9 +104,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap10.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 9,
                 "Tween": false,
@@ -114,9 +114,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap11.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -124,9 +124,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap12.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 11,
                 "Tween": false,
@@ -134,9 +134,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap13.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 12,
                 "Tween": false,
@@ -144,9 +144,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap14.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 13,
                 "Tween": false,
@@ -154,9 +154,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap15.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 14,
                 "Tween": false,
@@ -164,9 +164,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap16.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 15,
                 "Tween": false,
@@ -174,9 +174,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap17.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 16,
                 "Tween": false,
@@ -184,9 +184,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "effect/effect5008/tap18.png",
-                  "Plist": ""
+                  "Plist": "effect.plist"
                 },
                 "FrameIndex": 17,
                 "Tween": false,
@@ -211,9 +211,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "effect/effect5008/tap01.png",
-              "Plist": ""
+              "Plist": "effect.plist"
             },
             "BlendFunc": {
               "Src": 770,
@@ -263,24 +263,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "effect/effect5008/tap01.png",
-        "effect/effect5008/tap02.png",
-        "effect/effect5008/tap03.png",
-        "effect/effect5008/tap04.png",
-        "effect/effect5008/tap05.png",
-        "effect/effect5008/tap06.png",
-        "effect/effect5008/tap07.png",
-        "effect/effect5008/tap08.png",
-        "effect/effect5008/tap09.png",
-        "effect/effect5008/tap10.png",
-        "effect/effect5008/tap11.png",
-        "effect/effect5008/tap12.png",
-        "effect/effect5008/tap13.png",
-        "effect/effect5008/tap14.png",
-        "effect/effect5008/tap15.png",
-        "effect/effect5008/tap16.png",
-        "effect/effect5008/tap17.png",
-        "effect/effect5008/tap18.png"
+        "effect.plist",
+        "effect.png"
       ],
       "ctype": "GameFileData"
     }

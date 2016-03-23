@@ -98,8 +98,8 @@ var res = {
     sign_icon: 'res/SignIcon.json',
     sign_layer: 'res/SignLayer.json',
     sign_view: 'res/SignView.json',
-    maill_view_json: 'res/MaillView.json',
-    maill_layer_json: 'res/MaillLayer.json',
+    mail_view_json: 'res/MailView.json',
+    mail_layer_json: 'res/MailLayer.json',
     pvp_layer_json: 'res/PVPLayer.json',
     pvp_opponent_view_json: 'res/PVPOpponentView.json',
     recharge_icon_layer_json: 'res/RechargeIconLayer.json',
@@ -110,6 +110,7 @@ var res = {
     hero102skill02: 'res/hero102skill02.json',
     hero103skill01: 'res/hero103skill01.json',
     hero104skill02: 'res/hero104skill02.json',
+
     effect5001: "res/effect5001.json",
     effect5002: "res/effect5002.json",
     effect5003: "res/effect5003.json",

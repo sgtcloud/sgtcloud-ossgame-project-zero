@@ -423,7 +423,7 @@
                                 Network.updatePlayerSave();
                                 tip2.stopAllActions();
                                 tip2.setVisible(false);
-                                initGame(cb);
+                                initGame();
                             })
                         }
                     }.bind(this));
