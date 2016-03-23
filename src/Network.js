@@ -311,7 +311,11 @@
         },
         getCurrentRanksByType: function (leaderId, callback) {
             if (cc.isObject(PlayerData.modelPlayer)) {
-                SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+                if(leaderId === 'pvp_rank'){
+                    this.arenaService.getPlayersByIndex([0,1,2,3,4,5,6,7,8,9],'pvp_rank',callback);
+                }else{
+                    SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
+                }
             } else {
                 return callback(false);
             }
@@ -394,11 +398,8 @@
                 if (result) {
                     //初始化角色存档
                     PlayerData.modelPlayer = data;
-
-                    console.log("创建角色result:" + result + ",data:" + data);
                     return callback(true);
                 } else {
-                    console.error('创建角色失败！');
                     return callback(false);
                 }
             });
@@ -434,12 +435,10 @@
             bindButtonCallback(dice, function () {
                 sgt.RandomNameGroupService.defaultRandomName(function (result, data) {
                     name_text.setString(data);
-                    console.log("result:" + result + "data:" + data);
                 });
             });
             sgt.RandomNameGroupService.defaultRandomName(function (result, data) {
                 name_text.setString(data);
-                console.log("result:" + result + "data:" + data);
             });
             createPlayer.setPosition(cc.p(140, 400));
             scene.addChild(createPlayer, 100);
@@ -457,20 +456,17 @@
                         package: 'prepay_id=' + order.prepay_id, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
                         signType: 'MD5', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
                         paySign: order.paySign, // 支付签名
-                        success: function (res) {
-                            // 支付成功后的回调函数验证是否支付成功
-                            console.log("success:" + JSON.stringify(res));
+                        success: function () {
+                            // 支付成功后的回调函数验证是否支付成功 暂为异步。
                             this.queryByDid(obj);
+                            tip.toggle('购买成功');
                             return callback(true);
                         }.bind(this),
-                        fail: function (res) {
-                            console.log("fail:" + JSON.stringify(res));
+                        fail: function () {
+                            tip.toggle('购买失败');
                             return callback(false);
-                        },
-                        complete: function (res) {
-                            console.log("complete:" + JSON.stringify(res));
-                        }, cancel: function (res) {
-                            console.log("cancel:" + JSON.stringify(res));
+                        }, cancel: function () {
+                            tip.toggle('购买取消');
                             return callback(false);
                         }
                     });
@@ -481,21 +477,26 @@
         },
         //验证是否支付成功
         queryByDid: function (obj) {
-            console.log(JSON.stringify(obj));
             SgtApi.DelegateDidService.queryByDid(obj.orderId, function (result1, data) {
-                console.log(result1);
                 if (result1 && cc.isNumber(data.updateTime)) {
+
                     var amount = obj.chargePoint.amount;
-                    //判断是否为首冲
-                    console.log(JSON.stringify(player));
-                    if (player.vip < 2) {
+                    //判断当前充值项是否为首冲
+                    /*if (player.vip < 2) {
                         if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
                             amount += obj.chargePoint.firstChargeRewardAmount;
                         }
                         //在此只做标示是否充值过。
                         player.vip = 2;
+                    }*/
+                    if(isNaN(player.completed_order_total[obj.chargePoint.id])){
+                        if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
+                            amount += obj.chargePoint.firstChargeRewardAmount;
+                        }
+                        player.completed_order_total[obj.chargePoint.id] = 1;
+                    }else{
+                        player.completed_order_total[obj.chargePoint.id] += 1;
                     }
-                    console.log(amount);
                     if (obj.chargePoint.type === 'mCard') {
                         //第一次购买 或者 当前没有有效月卡
                         if (!player.month_card_end_time) {

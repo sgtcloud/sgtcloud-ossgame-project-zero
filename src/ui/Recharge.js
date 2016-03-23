@@ -30,7 +30,7 @@ var RechargePanel = cc.Node.extend({
         var label = itemRoot.getChildByName('label');
         moneyText.setString(chargePoint.money/100);
         label.setVisible(false);
-        if(cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
+        if(player.completed_order_total.hasOwnProperty(chargePoint.id) && cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
             label.setVisible(true);
         }
         if(chargePoint.type == 'mCard'){
@@ -42,16 +42,12 @@ var RechargePanel = cc.Node.extend({
         itemRoot.setTouchEnabled(false);
         bindTouchEventListener(function(){
             if(!is_weixin()){
-                tip.toggle('微信支付仅支持微信客服端中打开');
+                tip.toggle('微信支付仅支持微信客户端中打开');
             }else if(!this.isPaying){
                 this.isPaying = true;
                 console.log(i+',前往支付');
                 Network.chooseWXPay(chargePoint,function(result){
-                    if(result){
-                        tip.toggle('购买成功');
-                    }else{
-                        this.isPaying = false;
-                    }
+                    this.isPaying = false;
                 }.bind(this));
             }
         }.bind(this),itemRoot);

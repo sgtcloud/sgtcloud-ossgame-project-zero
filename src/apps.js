@@ -28,6 +28,7 @@ var CONSTS = {
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 1},
     "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
     "monthCard_daily_bonus": {"unit": "gem", "value": 100},
+    "first_recharge_bonus": [{"unit": "gold", "value": 50000},{"unit": "gem", "value": 10},{"unit": "relic", "value": 20}],
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',

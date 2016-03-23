@@ -1,9 +1,8 @@
 var GamePopup = cc.Layer.extend({
     _listener: null,
     ctor: function(layer,pos,isSwallow) {
-        this._super(cc.color.RED);
+        this._super();
         this.ignoreAnchorPointForPosition(false);   //忽略锚点设置为false，默认为true，锚点(0, 0)
-        this.setOpacity(128);       //透明度
         if(typeof isSwallow === 'undefined'){
             this.isSwallow = true;
         }else{
