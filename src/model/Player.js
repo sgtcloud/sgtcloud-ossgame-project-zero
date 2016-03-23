@@ -7,7 +7,9 @@ var player = {
     "into_stage_battle_timestamp": 0,
     "not_get_reward": null,//{"iron_key": 0,"silver_key": 0,"golden_key": 0, "gem": 0, "gold": 0},
     "first_time": 0,
-    "orders": [],
+    "recovery_orders": [],
+    "completed_order_total": {},
+    "first_recharge_status": 0,
     "month_card_start_time": 0,
     "month_card_end_time": 0,
     // test data
@@ -72,8 +74,8 @@ var player = {
         "total_offline_time": 0,
         "total_play_time": 0
     },
-    "arena":{
-        "times":5
+    "arena": {
+        "times": 5
     },
     "heroes": [
         {
@@ -347,15 +349,15 @@ var PlayerData = {
         }
     },
     addPlayerNoPayOrders: function (order) {
-        if (player.orders.indexOf(order) == -1) {
-            player.orders.push(order);
+        if (player.recovery_orders.indexOf(order) == -1) {
+            player.recovery_orders.push(order);
             this.isUpdate = true;
             Network.updatePlayerSave();
         }
     },
     delePlayerNoPayOrdersById: function (order) {
-        if (player.orders.indexOf(order) != -1) {
-            player.orders.splice(player.orders.indexOf(order), 1);
+        if (player.recovery_orders.indexOf(order) != -1) {
+            player.recovery_orders.splice(player.recovery_orders.indexOf(order), 1);
         }
     },
     updatePlayerMCardInfo: function () {

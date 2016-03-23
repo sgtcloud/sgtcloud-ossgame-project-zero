@@ -854,7 +854,7 @@
                   "Y": 0.9744
                 },
                 "PreSize": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0297
                 },
                 "LeftMargin": 313.0436,
@@ -1576,6 +1576,81 @@
                   "Y": 80.0
                 },
                 "Name": "recharge_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/statistics_icon.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 50,
+                "Scale9Height": 58,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 607.5,
+                  "Y": 583.0896
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9492,
+                  "Y": 0.788
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.1081
+                },
+                "LeftMargin": 567.5,
+                "RightMargin": -7.5,
+                "TopMargin": 116.9104,
+                "BottomMargin": 543.0896,
+                "Tag": 70,
+                "ActionTag": -382374137,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 80.0
+                },
+                "Name": "firstRecharge_btn",
                 "ctype": "ButtonObjectData"
               }
             ],

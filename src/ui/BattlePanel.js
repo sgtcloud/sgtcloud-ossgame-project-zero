@@ -57,6 +57,16 @@ var BattlePanel = cc.Node.extend({
         bindButtonCallback(this.rechargeBtn, function () {
             RechargePanel.open();
         }.bind(this));
+
+        this.firstRechargeBtn = root.getChildByName('firstRecharge_btn');
+        if(cc.isNumber(player.vip) || player.vip < 2 || player.first_recharge_status == 0){
+            bindButtonCallback(this.firstRechargeBtn, function () {
+                FirstRechargePanel.open(this.firstRechargeBtn);
+            }.bind(this));
+        }else{
+            this.firstRechargeBtn.setVisible(false);
+        }
+
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
