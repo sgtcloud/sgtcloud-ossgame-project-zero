@@ -79,7 +79,7 @@ var BattlePanel = cc.Node.extend({
         var container = root.getChildByName('battle_bg');
         container.setTouchEnabled(false);
         this.battleField = new BattleField(container);
-        this.battleField.initSpritesPositions(root.getChildByName('sprites'));
+        this.battleField.initUnitPositions(root.getChildByName('sprites'));
         this.disableBossBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 

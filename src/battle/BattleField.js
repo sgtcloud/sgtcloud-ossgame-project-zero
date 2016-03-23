@@ -1,7 +1,10 @@
 /**
- * Created by highkay on 2016/2/2.
+ * BattleUnitGroup是英雄和敌人的容器类，包装精灵数组的系列逻辑
+ *
+ * @param _sprites
+ * @constructor
  */
-var SpriteGroup = function (_sprites) {
+var BattleUnitGroup = function (_sprites) {
     var sprites = _sprites || [];
 
     this.get = function (i) {
@@ -129,13 +132,28 @@ var SpriteGroup = function (_sprites) {
         return lowestHpUnit;
     };
 };
-
+/**
+ * 战斗的核心类，战场，是所有战斗内对象的逻辑父容器
+ *
+ * @type {Function}
+ */
 var BattleField = cc.Class.extend({
 
     ctor: function (node) {
+        /**
+         * view容器
+         */
         this.container = node;
-        this.heroUnits = new SpriteGroup();
-        this.enemyUnits = new SpriteGroup();
+        /**
+         * 英雄容器
+         * @type {BattleUnitGroup}
+         */
+        this.heroUnits = new BattleUnitGroup();
+        /**
+         * 敌人容器/竞技场对手容器
+         * @type {BattleUnitGroup}
+         */
+        this.enemyUnits = new BattleUnitGroup();
         this.background = new cc.Sprite();
         this.background.setAnchorPoint(cc.p(0, 0));
 
@@ -197,31 +215,36 @@ var BattleField = cc.Class.extend({
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, function () {
-            this.pauseAllSprites();
-        }.bind(this));
-        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, function () {
-            this.resumeAllSprites();
-        }.bind(this));
-
+        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, this.pauseAllSprites);
+        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, this.resumeAllSprites);
 
         customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
         customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
         customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
     },
 
+    /**
+     * 暂停战斗中的所有表现和逻辑
+     */
     pauseAllSprites: function () {
         this.container.pause();
         this.heroUnits.pause();
         this.enemyUnits.pause();
     },
 
+    /**
+     * 恢复战斗中的所有表现和逻辑
+     */
     resumeAllSprites: function () {
         this.container.resume();
         this.heroUnits.resume();
         this.enemyUnits.resume();
     },
 
+    /**
+     * 使用道具
+     * @param item
+     */
     useItem: function (item) {
         if (item.id === ITEM.small_hp_potion) {
             this.healTargets(this.findItemTargets(item), 100);
@@ -232,12 +255,24 @@ var BattleField = cc.Class.extend({
         }
     },
 
+    /**
+     * 治愈多个单位（英雄或者敌人）
+     *
+     * @param targets
+     * @param val
+     */
     healTargets: function (targets, val) {
         for (var i in targets) {
             targets[i].doDamage(-val);
         }
     },
 
+    /**
+     * 根据道具类型寻找作用目标单位
+     *
+     * @param item
+     * @returns {Array}
+     */
     findItemTargets: function (item) {
         var targets = [];
         if (item.id === ITEM.small_hp_potion || item.id === ITEM.medium_hp_potion || item.id === ITEM.large_hp_potion) {
@@ -249,7 +284,12 @@ var BattleField = cc.Class.extend({
         return targets;
     },
 
-    initSpritesPositions: function (spritesLayer) {
+    /**
+     * 读取ccs文件中name为sprites层中包含的精灵信息初始化英雄和敌人的位置，具体请查看gfx/HookGame/alpha.ccs中BattleLayer
+     *
+     * @param spritesLayer
+     */
+    initUnitPositions: function (spritesLayer) {
         //initBattle heroes sprites positions
         this.heroPos = [];
         var MAX_POS = 8;
@@ -265,18 +305,23 @@ var BattleField = cc.Class.extend({
             this.enemyPos[i - 1] = spritesLayer.getChildByName('enemy' + i);
         }
         this.enemyUnits.setCenterPos(spritesLayer.getChildByName('enemy_center').getPosition());
+        spritesLayer.removeFromParent();
     },
 
+    /**
+     * 异步加载战斗场景的背景图
+     * @param stage
+     */
     loadStageBackground: function (stage) {
         var bg_image_url = stage.getBg();
         this.background.setTexture("res/stages/" + bg_image_url);
-        //cc.textureCache.addImageAsync("res/stages/" + bg_image_url, function (textureBg) {
-        //    if (textureBg) {
-        //        this.background.setTexture(textureBg);
-        //    }
-        //}.bind(this), this.container);
     },
 
+    /**
+     * 点击战斗场景触发一个特殊的主动技能，即点击伤害
+     *
+     * @param pos
+     */
     onPlayerTap: function (pos) {
         var target = this.findNextEnemy();
         if (target) {
@@ -284,14 +329,20 @@ var BattleField = cc.Class.extend({
             tapSkill.cast(pos);
             player.statistics.total_tap++;
         }
-    }
-    ,
+    },
+
+    /**
+     * 更新敌人的总血量
+     */
     updateEnemyLife: function () {
         var max = this.enemyUnits.getMaxLife();
         var life = Math.floor(this.enemyUnits.getLife());
         customEventHelper.sendEvent(EVENT.UPDATE_ENEMY_LIFE, {max: max, life: life});
     },
 
+    /**
+     * 从存档数据初始化战斗中的英雄，仅调用一次。如果通过解锁英雄加入战斗，需自行调用addHeroIntoBattle
+     */
     initBattleHeroes: function () {
         var heroes = PlayerData.getHeroes();
         for (var i in heroes) {
@@ -307,6 +358,12 @@ var BattleField = cc.Class.extend({
 
     totalSprites: 0,
 
+    /**
+     * 把精灵单位添加到战斗中
+     *
+     * @param sprite
+     * @param zorder
+     */
     addSprite: function (sprite, zorder) {
         var order = 0;
         if (zorder) {
@@ -318,12 +375,24 @@ var BattleField = cc.Class.extend({
         this.container.addChild(sprite, order * CONSTS.MAX_ATTACHMENTS_ON_SPRITE);
     },
 
+    /**
+     * 添加多个精灵单位到战斗中
+     *
+     * @param sprites
+     * @param zorder
+     */
     addSprites: function (sprites, zorder) {
         for (var i in sprites) {
             this.addSprite(sprites[i], zorder);
         }
     },
 
+    /**
+     * 根据存在的精灵单位为参照添加新精灵单位到战斗中，例如伤害数字，血条，buff图标，掉落等
+     * @param sprite
+     * @param node
+     * @param offset
+     */
     addSpriteRelatedNode: function (sprite, node, offset) {
         var pos = sprite.getPosition();
         var pos_offset = node.getPosition();
@@ -342,6 +411,11 @@ var BattleField = cc.Class.extend({
      */
     standHeroPosNum: 0,
 
+    /**
+     * 根据英雄的id来查找英雄模型添加到战斗中
+     *
+     * @param id
+     */
     addHeroIntoBattle: function (id) {
         var data = PlayerData.getHeroById(id);
         var hero = new HeroUnit(this, data);
@@ -353,6 +427,10 @@ var BattleField = cc.Class.extend({
         this.standHeroPosNum++;
     },
 
+    /**
+     * 根据关卡模型数据初始化敌人单位
+     * @param stage
+     */
     initBattleEnemies: function (stage) {
         var enemiesData;
         if (stage.isBossBattle()) {
@@ -363,6 +441,12 @@ var BattleField = cc.Class.extend({
         this.addEnemyIntoBattle(enemiesData, stage.isBossBattle());
     },
 
+    /**
+     * 添加敌人精灵单位到战斗中
+     *
+     * @param enemiesData
+     * @param bossBattle
+     */
     addEnemyIntoBattle: function (enemiesData, bossBattle) {
         this.enemyUnits.clear();
         for (var i = 0; i < enemiesData.length; i++) {
@@ -410,6 +494,10 @@ var BattleField = cc.Class.extend({
         this.heroUnits.foreach(callback);
     },
 
+    /**
+     * 根据关卡数据初始化战斗，仅调用一次
+     * @param stage
+     */
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
@@ -417,10 +505,16 @@ var BattleField = cc.Class.extend({
         this.prepareBattle(stage);
     },
 
+    /**
+     * 提醒顶部面板更新关卡的状态，例如Boss战和关卡序号
+     */
     notifyUpdateTopPanelStageState: function () {
         customEventHelper.sendEvent(EVENT.BATTLE_START);
     },
 
+    /**
+     * 结算战斗胜利的逻辑
+     */
     onBattleWin: function () {
         var stageData = PlayerData.getStageData();
         if (stageData.isBossBattle()) {
@@ -461,14 +555,24 @@ var BattleField = cc.Class.extend({
 
     STAGE_LOOTS_ZORDER_OFFSET: 1000,
 
+    /**
+     * 生成关卡掉落
+     *
+     * @param bonus
+     */
     generateStageLoots: function (bonus) {
-        var pos = cc.p(this.container.getContentSize().width * 3 / 5, this.container.getContentSize().height / 2);
+        var pos = this.enemyUnits.getCenterPos();
         for (var i in bonus) {
             this.addSprites(Loot.generateLoots(bonus[i], pos), this.STAGE_LOOTS_ZORDER_OFFSET);
         }
         customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 3);
     },
 
+    /**
+     * 准备战斗数据，每次战斗调用一次
+     *
+     * @param stage
+     */
     prepareBattle: function (stage) {
         unschedule(this);
         this.initBattleEnemies(stage);

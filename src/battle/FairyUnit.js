@@ -1,4 +1,6 @@
 /**
+ * 小精灵vm类
+ *
  * Created by highkay on 2015/12/29.
  */
 var FairyUnit = CCSUnit.extend({

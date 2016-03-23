@@ -1,7 +1,8 @@
 /**
+ * 敌人单位vm类
+ *
  * Created by highkay on 2015/12/29.
  */
-
 var EnemyUnit = BattleUnit.extend({
 
     getAnimateDelay: function () {

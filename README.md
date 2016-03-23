@@ -188,10 +188,34 @@ cocos compile -p web -m release
 
 在public/html5下面构建出和cocos一致的发布，使用gulp的构建脚本可以非常容易的定制自己的发布，我们已经加入了发布参数的预处理和资源的压缩（详见根目录的gulpfile.js），我们建议您使用这种方式。
 
+### 定制游戏向导
+
+在开始您的定制之旅前，我建议开发者先花一些时间熟悉Cocos Studio（简称ccs）这款软件，毕竟本项目的所有精灵，动画和UI界面都是通过这个工具来编辑的，磨刀不误砍柴工:）
+
+* [cocos studio官方中文文档](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter0/cocosstudio/zh.md)
+* 推荐，内容更新更全面[cocos studio官方英文文档](http://www.cocos2d-x.org/docs/editors_and_tools/studio/)
+* [Cocos Studio教程](http://www.cocos.com/doc/tutorial/lists?id=39)
+* [Cocos Studio入门教程](http://www.cocos.com/doc/tutorial/lists?id=32)
+* [Cocos Studio原创教程实例](http://www.cocos.com/doc/tutorial/lists?id=100)
+
+##### 定制界面注意事项和流程
+
+1. 原则上两条，不要修改控件的层级，基本上保持原始结构，有一个名称为“root”的根节点；不要修改导出的文件名。
+2. 把发布之后的res目录复制到根目录的res即可完成定制
+3. 复杂的界面建议做一下合图处理，减少图片资源的体积
+
+##### 具体界面注意事项
+
+* [定制Loading界面](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6Loading%E7%95%8C%E9%9D%A2)
+* [定制cover封面](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6cover%E5%B0%81%E9%9D%A2)
+* [定制战斗场景](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E6%88%98%E6%96%97%E5%9C%BA%E6%99%AF)
+* [定制英雄单位](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E8%8B%B1%E9%9B%84%E5%8D%95%E4%BD%8D)
+
+
 ### 项目源代码导读
 
 * 本游戏主要采用了cocos studio作为界面设计工具，加载导出的json文件来完成绝大部分的UI界面工作，例如CCSUnit
-* 本游戏参考了mvvm的软件架构模式，分离了model和view model两级模型，例如，Hero和HeroUnit
+* 本游戏参考了mvvm的软件架构模式，分离了model和view model两级模型，一个model一般对应一个view model。例如，Hero和HeroUnit，model都位于model文件夹内，view model则都位于battle文件夹内
 * 本游戏采用了事件驱动的方式来解耦各个程序逻辑模块，例如Event
 * 本游戏通过sgtcloud提供的baas服务来实现联网逻辑，详见[sgtcloud](http://www.sgtcloud.cn)
 
@@ -205,17 +229,16 @@ cocos compile -p web -m release
 * LoaderScene.js 首屏加载类，重写了加载逻辑，支持ccs导出的动画和控件作为内容
 * Event.js 自定义事件类和工具方法
 * Data.js 数据读取工具方法类
+* NetWork.js 联网逻辑工具类
+* guideConfig.js 引导脚本数据类
 
 ##### 数据模型
 
 model目录中的大部分类都是通过加载data目录下的只读数据文件（*.json）和部分存档数据（Player.js中的player）构造出来的逻辑实体
 
-##### 核心战斗模块
+##### 代码导读
 
-battle目录中包含了组成核心战斗场景的各个view model
-
-* 精灵层级和继承关系（从右向左）
-![关系图](http://h5.yoedge.com/BattleField.png)
+[battle模块代码导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/battle%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E5%AF%BC%E8%AF%BB)
 
 ##### 联网功能依赖
 
@@ -223,13 +246,12 @@ battle目录中包含了组成核心战斗场景的各个view model
 
 ### 项目路线图
 
-下一个发布版本为[0.0.5](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.5)
+* 下一个发布版本为[0.0.5](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.5)
+* 后续版本[0.0.6](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.6)
 
 ##### 其他待完成开发任务
 
-* 实现首次加载资源的优化
 * 实现基于cocos studio导出控件的事件绑定
-* 剥离界面和逻辑的耦合，提升代码的抽象级别
 
 欢迎开发者给我们提出你们开发中遇到的问题，有问必答，有求必应：）
 
