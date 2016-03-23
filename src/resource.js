@@ -123,7 +123,8 @@ var res = {
 
     guideMsgBox: 'res/Guide.json',
     guideGirl: 'res/GuideGirl.json',
-    guideHand: 'res/GuideHand.json'
+    guideHand: 'res/GuideHand.json',
+    first_recharge_layer_json: 'res/FirstRechargeLayer.json'
 };
 
 

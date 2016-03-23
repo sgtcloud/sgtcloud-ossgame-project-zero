@@ -30,7 +30,7 @@ var RechargePanel = cc.Node.extend({
         var label = itemRoot.getChildByName('label');
         moneyText.setString(chargePoint.money/100);
         label.setVisible(false);
-        if(isNaN(player.completed_order_total[chargePoint.id]) && cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
+        if(player.completed_order_total.hasOwnProperty(chargePoint.id) && cc.isNumber(chargePoint.firstChargeRewardAmount) &&　chargePoint.firstChargeRewardAmount　> 0){
             label.setVisible(true);
         }
         if(chargePoint.type == 'mCard'){

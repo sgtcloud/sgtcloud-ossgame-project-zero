@@ -9,6 +9,7 @@ var player = {
     "first_time": 0,
     "recovery_orders": [],
     "completed_order_total": {},
+    "first_recharge_status": 0,
     "month_card_start_time": 0,
     "month_card_end_time": 0,
     // test data

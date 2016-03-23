@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>firstRechargeUI/88.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{260,0},{315,86}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{315,86}</string>
+			</dict>
+			<key>firstRechargeUI/any.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{388,256},{210,76}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{210,76}</string>
+			</dict>
+			<key>firstRechargeUI/chong.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{346,183},{73,69}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{73,69}</string>
+			</dict>
+			<key>firstRechargeUI/girl.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{260,463}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{260,463}</string>
+			</dict>
+			<key>firstRechargeUI/popo.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{260,315},{137,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{137,128}</string>
+			</dict>
+			<key>firstRechargeUI/song.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{415,183},{72,69}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{72,69}</string>
+			</dict>
+			<key>firstRechargeUI/title.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{346,0},{183,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{183,89}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>FirstRechargeUI.png</string>
+			<key>realTextureFileName</key>
+			<string>FirstRechargeUI.png</string>
+			<key>size</key>
+			<string>{484,466}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>484</integer>
+			<key>height</key>
+			<integer>466</integer>
+		</dict>
+	</dict>
+</plist>

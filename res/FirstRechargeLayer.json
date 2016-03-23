@@ -1,0 +1,1044 @@
+{
+  "ID": "6893317f-f45b-4a67-b063-53abef4183fe",
+  "Version": "2.3.3.0",
+  "Name": "FirstRechargeLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 123,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 196,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_10.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 24,
+                "Scale9OriginY": 24,
+                "Scale9Width": 26,
+                "Scale9Height": 26,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 40.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0625,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.875,
+                  "Y": 0.8333
+                },
+                "LeftMargin": 40.0,
+                "RightMargin": 40.0,
+                "TopMargin": 80.0,
+                "Tag": 200,
+                "ActionTag": -582141892,
+                "Size": {
+                  "X": 560.0,
+                  "Y": 400.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/title_bg.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 55,
+                "Scale9Height": 24,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 298.9759,
+                  "Y": 407.9849
+                },
+                "Scale": {
+                  "ScaleX": 1.8,
+                  "ScaleY": 1.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4671,
+                  "Y": 0.85
+                },
+                "PreSize": {
+                  "X": 0.1172,
+                  "Y": 0.0917
+                },
+                "LeftMargin": 261.4759,
+                "RightMargin": 303.5241,
+                "TopMargin": 50.0151,
+                "BottomMargin": 385.9849,
+                "CallBackType": "Click",
+                "Tag": 198,
+                "ActionTag": 1476412977,
+                "Size": {
+                  "X": 75.0,
+                  "Y": 44.0
+                },
+                "Name": "title_bg1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FlipX": true,
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/title_bg.png",
+                  "Plist": "OtherUI.plist"
+                },
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 55,
+                "Scale9Height": 24,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 431.329,
+                  "Y": 407.9849
+                },
+                "Scale": {
+                  "ScaleX": 1.8,
+                  "ScaleY": 1.8
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.674,
+                  "Y": 0.85
+                },
+                "PreSize": {
+                  "X": 0.1172,
+                  "Y": 0.0917
+                },
+                "LeftMargin": 393.829,
+                "RightMargin": 171.171,
+                "TopMargin": 50.0151,
+                "BottomMargin": 385.9849,
+                "CallBackType": "Click",
+                "Tag": 199,
+                "ActionTag": 1902186916,
+                "Size": {
+                  "X": 75.0,
+                  "Y": 44.0
+                },
+                "Name": "title_bg2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/girl.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 4.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0083
+                },
+                "PreSize": {
+                  "X": 0.4062,
+                  "Y": 0.9646
+                },
+                "RightMargin": 380.0,
+                "TopMargin": 13.0,
+                "BottomMargin": 4.0,
+                "Tag": 201,
+                "ActionTag": 1368394543,
+                "Size": {
+                  "X": 260.0,
+                  "Y": 463.0
+                },
+                "Name": "girl",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/popo.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 1.0
+                },
+                "Position": {
+                  "X": 640.0,
+                  "Y": 4.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 1.0,
+                  "Y": 0.0083
+                },
+                "PreSize": {
+                  "X": 0.2141,
+                  "Y": 0.2667
+                },
+                "LeftMargin": 503.0,
+                "TopMargin": 348.0,
+                "BottomMargin": 4.0,
+                "Tag": 202,
+                "ActionTag": -478082829,
+                "Size": {
+                  "X": 137.0,
+                  "Y": 128.0
+                },
+                "Name": "popo",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/88.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 444.1584,
+                  "Y": 257.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.694,
+                  "Y": 0.5359
+                },
+                "PreSize": {
+                  "X": 0.4922,
+                  "Y": 0.1792
+                },
+                "LeftMargin": 286.6584,
+                "RightMargin": 38.3416,
+                "TopMargin": 179.7476,
+                "BottomMargin": 214.2524,
+                "Tag": 204,
+                "ActionTag": 1374260382,
+                "Size": {
+                  "X": 315.0,
+                  "Y": 86.0
+                },
+                "Name": "88",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/any.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": -1.2049,
+                  "ScaleY": 0.1667
+                },
+                "Position": {
+                  "X": 23.1586,
+                  "Y": 300.2515
+                },
+                "Scale": {
+                  "ScaleX": 1.2,
+                  "ScaleY": 1.2
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0362,
+                  "Y": 0.6255
+                },
+                "PreSize": {
+                  "X": 0.3281,
+                  "Y": 0.1583
+                },
+                "LeftMargin": 276.1876,
+                "RightMargin": 153.8124,
+                "TopMargin": 116.4177,
+                "BottomMargin": 287.5823,
+                "Tag": 205,
+                "ActionTag": -1620283741,
+                "Size": {
+                  "X": 210.0,
+                  "Y": 76.0
+                },
+                "Name": "any",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/chong.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 303.1584,
+                  "Y": 326.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4737,
+                  "Y": 0.6797
+                },
+                "PreSize": {
+                  "X": 0.1141,
+                  "Y": 0.1437
+                },
+                "LeftMargin": 266.6584,
+                "RightMargin": 300.3416,
+                "TopMargin": 119.2476,
+                "BottomMargin": 291.7524,
+                "Tag": 206,
+                "ActionTag": 26742540,
+                "Size": {
+                  "X": 73.0,
+                  "Y": 69.0
+                },
+                "Name": "chong",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/song.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5417,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 258.1584,
+                  "Y": 257.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4034,
+                  "Y": 0.5359
+                },
+                "PreSize": {
+                  "X": 0.1125,
+                  "Y": 0.1437
+                },
+                "LeftMargin": 219.156,
+                "RightMargin": 348.844,
+                "TopMargin": 188.2476,
+                "BottomMargin": 222.7524,
+                "Tag": 207,
+                "ActionTag": -1841886575,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 69.0
+                },
+                "Name": "song",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "materialUI/gold.png",
+                  "Plist": "MaterialUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.55
+                },
+                "Position": {
+                  "X": 323.1584,
+                  "Y": 187.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5049,
+                  "Y": 0.3901
+                },
+                "PreSize": {
+                  "X": 0.0625,
+                  "Y": 0.0833
+                },
+                "LeftMargin": 299.1584,
+                "RightMargin": 300.8416,
+                "TopMargin": 274.7476,
+                "BottomMargin": 165.2524,
+                "Tag": 209,
+                "ActionTag": -1895719199,
+                "Size": {
+                  "X": 40.0,
+                  "Y": 40.0
+                },
+                "Name": "gold",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "firstRechargeUI/title.png",
+                  "Plist": "FirstRechargeUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 362.1584,
+                  "Y": 418.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5659,
+                  "Y": 0.8714
+                },
+                "PreSize": {
+                  "X": 0.2859,
+                  "Y": 0.1854
+                },
+                "LeftMargin": 270.6584,
+                "RightMargin": 186.3416,
+                "TopMargin": 17.2476,
+                "BottomMargin": 373.7524,
+                "Tag": 208,
+                "ActionTag": 1419263083,
+                "Size": {
+                  "X": 183.0,
+                  "Y": 89.0
+                },
+                "Name": "title",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "materialUI/diamond.png",
+                  "Plist": "MaterialUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 272.1584,
+                  "Y": 140.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4252,
+                  "Y": 0.2922
+                },
+                "PreSize": {
+                  "X": 0.0625,
+                  "Y": 0.0833
+                },
+                "LeftMargin": 252.1584,
+                "RightMargin": 347.8416,
+                "TopMargin": 319.7476,
+                "BottomMargin": 120.2524,
+                "Tag": 211,
+                "ActionTag": 654704368,
+                "Size": {
+                  "X": 40.0,
+                  "Y": 40.0
+                },
+                "Name": "gem",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "materialUI/relic.png",
+                  "Plist": "MaterialUI.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 413.1584,
+                  "Y": 140.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6456,
+                  "Y": 0.2922
+                },
+                "PreSize": {
+                  "X": 0.0625,
+                  "Y": 0.0833
+                },
+                "LeftMargin": 393.1584,
+                "RightMargin": 206.8416,
+                "TopMargin": 319.7476,
+                "BottomMargin": 120.2524,
+                "Tag": 213,
+                "ActionTag": 1216803926,
+                "Size": {
+                  "X": 40.0,
+                  "Y": 40.0
+                },
+                "Name": "relic",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "LabelText": "*20",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white20-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 475.1584,
+                  "Y": 138.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7424,
+                  "Y": 0.288
+                },
+                "PreSize": {
+                  "X": 0.0844,
+                  "Y": 0.05
+                },
+                "LeftMargin": 448.1584,
+                "RightMargin": 137.8416,
+                "TopMargin": 329.7476,
+                "BottomMargin": 126.2524,
+                "Tag": 214,
+                "ActionTag": -1764557796,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 24.0
+                },
+                "Name": "relic_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "LabelText": "*10",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white20-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.4583
+                },
+                "Position": {
+                  "X": 305.1584,
+                  "Y": 137.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4768,
+                  "Y": 0.2859
+                },
+                "PreSize": {
+                  "X": 0.0719,
+                  "Y": 0.05
+                },
+                "LeftMargin": 305.1584,
+                "RightMargin": 288.8416,
+                "TopMargin": 329.7468,
+                "BottomMargin": 126.2532,
+                "Tag": 212,
+                "ActionTag": 1564928804,
+                "Size": {
+                  "X": 46.0,
+                  "Y": 24.0
+                },
+                "Name": "gem_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "LabelText": "*50000",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white20-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 410.1584,
+                  "Y": 186.2524
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6409,
+                  "Y": 0.388
+                },
+                "PreSize": {
+                  "X": 0.1844,
+                  "Y": 0.05
+                },
+                "LeftMargin": 351.1584,
+                "RightMargin": 170.8416,
+                "TopMargin": 281.7476,
+                "BottomMargin": 174.2524,
+                "Tag": 210,
+                "ActionTag": -1178865221,
+                "Size": {
+                  "X": 118.0,
+                  "Y": 24.0
+                },
+                "Name": "gold_num",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "CloseBtn.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 568.6846,
+                  "Y": 368.4812
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.8886,
+                  "Y": 0.7677
+                },
+                "PreSize": {
+                  "X": 0.0875,
+                  "Y": 0.1208
+                },
+                "LeftMargin": 568.6846,
+                "RightMargin": 15.3154,
+                "TopMargin": 53.5188,
+                "BottomMargin": 368.4812,
+                "Tag": 325,
+                "ActionTag": 2095254542,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 58.0
+                },
+                "Name": "close",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 288.0,
+                  "Y": 25.826
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.45,
+                  "Y": 0.0538
+                },
+                "PreSize": {
+                  "X": 0.2344,
+                  "Y": 0.125
+                },
+                "LeftMargin": 288.0,
+                "RightMargin": 202.0,
+                "TopMargin": 394.174,
+                "BottomMargin": 25.826,
+                "Tag": 321,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 6,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "CallBackType": "Click",
+                    "Tag": 322,
+                    "ActionTag": -1097677973,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 60.0
+                    },
+                    "Name": "buy_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "buttonUI/now.png",
+                      "Plist": "ButtonUI.plist"
+                    },
+                    "Scale9Width": 105,
+                    "Scale9Height": 44,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 75.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.7,
+                      "Y": 0.7333
+                    },
+                    "LeftMargin": 22.5,
+                    "RightMargin": 22.5,
+                    "TopMargin": 8.0,
+                    "BottomMargin": 8.0,
+                    "CallBackType": "Touch",
+                    "Tag": 323,
+                    "ActionTag": 818631571,
+                    "Size": {
+                      "X": 105.0,
+                      "Y": 44.0
+                    },
+                    "Name": "buy_go",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "buttonUI/get.png",
+                      "Plist": "ButtonUI.plist"
+                    },
+                    "Scale9Width": 105,
+                    "Scale9Height": 44,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 74.9998,
+                      "Y": 30.9996
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5167
+                    },
+                    "PreSize": {
+                      "X": 0.7,
+                      "Y": 0.7333
+                    },
+                    "LeftMargin": 22.4998,
+                    "RightMargin": 22.5002,
+                    "TopMargin": 7.0004,
+                    "BottomMargin": 8.9996,
+                    "CallBackType": "Touch",
+                    "Tag": 324,
+                    "ActionTag": -402843360,
+                    "Size": {
+                      "X": 105.0,
+                      "Y": 44.0
+                    },
+                    "Name": "buy_get",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1110472813,
+                "Size": {
+                  "X": 150.0,
+                  "Y": 60.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -2113982897,
+            "Size": {
+              "X": 640.0,
+              "Y": 480.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 480.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ButtonUI.plist",
+        "ButtonUI.png",
+        "CloseBtn.json",
+        "FirstRechargeUI.plist",
+        "FirstRechargeUI.png",
+        "font/white20-export.fnt",
+        "font/white20-export.png",
+        "mainUI/bg_10.png",
+        "mainUI/bg_14.png",
+        "MaterialUI.plist",
+        "MaterialUI.png",
+        "OtherUI.plist",
+        "OtherUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

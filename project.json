@@ -59,6 +59,7 @@
     "src/ui/Recharge.js",
     "src/ui/ShopLayerMenu.js",
     "src/ui/RankLayerMenu.js",
+    "src/ui/FirstRechargePanel.js",
     "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"
