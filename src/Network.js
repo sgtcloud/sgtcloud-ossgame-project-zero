@@ -323,7 +323,17 @@
         ,
         getMyRankByType: function (leaderId, callback) {
             if (cc.isObject(PlayerData.modelPlayer)) {
-                SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, callback);
+                if(leaderId === 'pvp_rank'){
+                    this.arenaService.addToEnd('pvp_rank',player.id,callback);
+                }else {
+                    SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, function(result,data){
+                        if(result){
+                            return callback(true,data.index);
+                        }else{
+                            return callback(false);
+                        }
+                    });
+                }
             } else {
                 return callback(false);
             }
@@ -550,6 +560,18 @@
         },
         buildCustomService: function () {
             this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena"]);
+        },
+        initArenaBattle: function(battle,id){
+            sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
+                if (result) {
+                    if (cc.isObject(data) && data.content) {
+                        battle.initArenaBattle(JSON.parse(data.content));
+                    } else {
+                        //没有存档
+                        console.log("当前用户没有存档");
+                    }
+                }
+            });
         }
     };
     window.Network = new NetworkResolve();

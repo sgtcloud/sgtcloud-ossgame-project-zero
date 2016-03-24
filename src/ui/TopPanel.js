@@ -51,10 +51,16 @@ var TopPanel = cc.Node.extend({
         this.next_stage_num = stageListRoot.getChildByName("level_text3");
         this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
         // register battle custom event
-        customEventHelper.bindListener(EVENT.BATTLE_START, function () {
-            self.refreshStageState();
-            self.refreshStageList();
-        });
+        customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
+            var data = event.getUserData();
+            if(data){
+                this.state  = BATTLE_STATE.STATE_ARENA_BATTLE;
+                this.refreshStageState();
+            }else{
+                this.refreshStageList();
+                this.refreshStageState();
+            }
+        }.bind(this));
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
@@ -73,8 +79,12 @@ var TopPanel = cc.Node.extend({
             customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
         });
         bindButtonCallback(this.leaveBossBtn, function () {
-            customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-        });
+            if(this.state == BATTLE_STATE.STATE_ARENA_BATTLE){
+                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE);
+            }else {
+                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+            }
+        }.bind(this));
 
         this.sendEventByUnit = function (resources) {
             switch (resources.unit) {
@@ -114,7 +124,6 @@ var TopPanel = cc.Node.extend({
         };
         this.refreshStageState = function () {
 
-
             var stage = PlayerData.getStageData();
             var cur = player.stage_battle_num;
             var max = stage.getRandomBattleCount();
@@ -150,6 +159,14 @@ var TopPanel = cc.Node.extend({
                 this.battleNumText.setVisible(false);
                 this.stageNumText_bg.setVisible(false);
                 this.stage_icon.setVisible(false);
+            }else{
+                this.leaveBossBtn.setVisible(false);
+                this.fightBossBtn.setVisible(false);
+                this.battleNumText.setVisible(false);
+                this.stageNumText_bg.setVisible(false);
+                this.stage_icon.setVisible(false);
+                //终止按钮显示  暂时有离开按钮代替
+                this.fightBossBtn.setVisible(true);
             }
         };
         this.refreshStageList = function () {

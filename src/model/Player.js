@@ -177,6 +177,7 @@ var PlayerData = {
         this.stageData = new Stage(player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
+        this.countPlayerMCardReward();
         setInterval(function () {
             Network.updatePlayerSave();
         }.bind(this), 10 * 1000);

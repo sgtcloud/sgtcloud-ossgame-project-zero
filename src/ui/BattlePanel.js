@@ -1,7 +1,8 @@
 var BATTLE_STATE = {
     STATE_NORMAL_BATTLE: 0,
     STATE_BOSS_BATTLE: 1,
-    STATE_BOSS_READY: 2
+    STATE_BOSS_READY: 2,
+    STATE_ARENA_BATTLE: 3
 };
 
 
@@ -49,8 +50,8 @@ var BattlePanel = cc.Node.extend({
             GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
         }.bind(this));
 
-        this.maill_btn = root.getChildByName('maill_btn');
-        bindButtonCallback(this.maill_btn, function () {
+        this.mail_btn = root.getChildByName('maill_btn');
+        bindButtonCallback(this.mail_btn, function () {
             MailPanel.open();
         }.bind(this));
         this.rechargeBtn = root.getChildByName('recharge_btn');
