@@ -140,6 +140,7 @@ var BattleUnitGroup = function (_sprites) {
 var BattleField = cc.Class.extend({
 
     ctor: function (node) {
+        //this._super();
         /**
          * view容器
          */
@@ -215,12 +216,12 @@ var BattleField = cc.Class.extend({
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, this.pauseAllSprites);
-        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, this.resumeAllSprites);
+        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, this.pauseAllSprites.bind(this));
+        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, this.resumeAllSprites.bind(this));
 
-        customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
-        customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
-        customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
+        customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover.bind(this));
+        customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead.bind(this));
+        customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill.bind(this));
     },
 
     /**
