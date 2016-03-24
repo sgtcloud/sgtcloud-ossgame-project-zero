@@ -58,12 +58,12 @@ var LoaderScene = cc.LoaderScene.extend({
                     this.cb.call(this.target);
             }.bind(this));
     }
-})
+});
 
 var loaderScene;
 var res_loading = {
     loading_scene_json: "res/loadingLayer.json"
-}
+};
 
 LoaderScene.preload = function (resources, cb, target) {
 

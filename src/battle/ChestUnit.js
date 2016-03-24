@@ -1,7 +1,8 @@
 /**
+ * 掉落宝箱vm类
+ *
  * Created by highkay on 2015/12/29.
  */
-
 var ChestUnit = CCSUnit.extend({
 
     ctor: function (battle, ccsRes, goods, chestName) {

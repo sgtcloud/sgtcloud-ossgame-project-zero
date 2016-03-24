@@ -1,8 +1,8 @@
 /**
+ * 掉落vm类
+ *
  * Created by highkay on 2015/12/30.
  */
-
-//掉落物品
 var Loot = CCSUnit.extend({
 
     ctor: function (unit, size, bonus) {
@@ -35,15 +35,12 @@ var Loot = CCSUnit.extend({
         var jumpPos = cc.p(Math.random() * 108 - 54, Math.random() * 32 - 16);
         this.appear = cc.jumpBy(0.2, jumpPos, 24, 1);
         this.shine = cc.delayTime(1.0);
-        //this.disapper = cc.fadeOut(1.0);
-        var self = this;
         this.count = cc.callFunc(function () {
-            //cc.pool.putInPool(this);
             this.removeFromParent(true);
             if (this.bonus) {
                 var updateRes = PlayerData.createResourceData(this.bonus.unit, this.bonus.value);
                 PlayerData.updateResource(updateRes);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,updateRes);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, updateRes);
                 //cc.log(this.bonus.unit + ":" + this.bonus.value);
             }
         }.bind(this), this);
@@ -51,22 +48,7 @@ var Loot = CCSUnit.extend({
 
         var endPosition = this.getPackPosition();
 
-        // use pack icon to replace all the end position
-        //if (this.unit === "gold") {
-        //    var endPosition = this.getGoldPosition() || cc.p(320, 280);
-        //} else if (this.unit === "gem") {
-        //    var endPosition = this.getDiamondPosition() || cc.p(320, 280);
-        //} else if (this.unit === "relic") {
-        //    var endPosition = this.getRelicPosition() || cc.p(320, 280);
-        //} else if (this.unit === "key") {
-        //    var endPosition = this.getGoldPosition() || cc.p(320, 280);
-        //} else {
-        //    var endPosition = this.getPackPosition() || cc.p(320, 280);
-        //}
-
         var curveValue = cc.p(300 + Math.random() * 40, 100 + Math.random() * 80);
-        //var curveValue =  cc.p(320, 280);
-        //var endPosition = cc.p(320, 280);
         var movePath = [startPos,
             curveValue,
             endPosition];
@@ -76,6 +58,13 @@ var Loot = CCSUnit.extend({
     }
 });
 
+/**
+ * 根据掉落内容和位置快速添加掉落工具方法
+ *
+ * @param bonusSrc
+ * @param pos
+ * @returns {Array}
+ */
 Loot.generateLoots = function (bonusSrc, pos) {
     var lootSprites = [];
     var bonus = {unit: bonusSrc.unit, value: bonusSrc.value};
@@ -115,7 +104,6 @@ Loot.generateLoots = function (bonusSrc, pos) {
     }
     if (pos) {
         for (var i in lootSprites) {
-            // 跨panel的移动逻辑需要添加到scene中
             lootSprites[i].setPosition(pos);
         }
     }

@@ -207,7 +207,7 @@ var ActiveSkill = cc.Class.extend({
     waitForNextCast: function () {
         schedule(this, function () {
             this.updateTargets();
-            if (this.targets.length !== 0) {
+            if (this.targets.length > 0) {
                 this.recast();
             }
         }.bind(this), 0, 0.1);
