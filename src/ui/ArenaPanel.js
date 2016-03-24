@@ -32,6 +32,14 @@ var ArenaPanel = BattleMenu.extend({
         this._arenaService = Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
+        this.init();
+    },init:function(){
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE,function(e){
+            var data=e.getUserData();
+        });
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE,function(e){
+            var data=e.getUserData();
+        });
         this.pullData();
     }, __unit2Text: function (unit) {
         switch (unit) {
@@ -121,6 +129,8 @@ var ArenaPanel = BattleMenu.extend({
                     this.purchaseTimes();
             }.bind(this));
             return;
+        }else {
+            customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE,data.player.id);
         }
         player.arena.times--;
         this.refreshTimes();

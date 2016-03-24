@@ -93,6 +93,8 @@ var ListViewMenu = BattleMenu.extend({
         this.listView.jumpToTop();
         if(totalHeight<this.listView.height){
             this.listView.setTouchEnabled(false);
+        }else {
+            this.listView.setTouchEnabled(true);
         }
         this._lastContentPosY = this.listView.getInnerContainer().getPosition().y;
     },updateInnerContainerSize:function(){
