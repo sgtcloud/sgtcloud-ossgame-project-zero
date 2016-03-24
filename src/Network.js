@@ -424,7 +424,7 @@
                                 Network.updatePlayerSave();
                                 tip2.stopAllActions();
                                 tip2.setVisible(false);
-                                initGame();
+                                initGame(cb);
                             })
                         }
                     }.bind(this));
