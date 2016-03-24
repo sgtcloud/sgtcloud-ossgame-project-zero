@@ -50,18 +50,19 @@ var ActiveSkill = cc.Class.extend({
     TYPE_BUFF: "TYPE_BUFF",
     TYPE_CONTINUOUS: "TYPE_CONTINUOUS",
 
-    ctor: function (skill, battle, firstCastTime) {
+    ctor: function (playerId , skill, battle, firstCastTime) {
         //this.reuse(unit, val);
         this.skill = skill;
         this.battle = battle;
+        this.playerId = playerId;
         this.firstCastTime = firstCastTime;
-        if (skill && battle) {
-            this.duration = skill.getLevelData().duration;
-            this.preshow = skill.getPreShow();
-            this.type = skill.getEffectType();
-            this.targetType = skill.getEffectTarget();
-            this.affectDelay = skill.getAffectDelay();
-            var effects = skill.traverseSkillEffects();
+        if (this.skill && this.battle) {
+            this.duration = this.skill.getLevelData().duration;
+            this.preshow = this.skill.getPreShow();
+            this.type = this.skill.getEffectType();
+            this.targetType = this.skill.getEffectTarget();
+            this.affectDelay = this.skill.getAffectDelay();
+            var effects = this.skill.traverseSkillEffects();
             for (var j in effects) {
                 this.effectValue = effects[j].value;
                 this.effect = effects[j].type;
@@ -108,7 +109,10 @@ var ActiveSkill = cc.Class.extend({
     MULTI_ENEMY: 'MULTI_ENEMY',
 
     updateTargets: function () {
-        if (this.targetType === this.ONE_ENEMY) {
+        //由于当前竞技双方各一人，只需随机找到对方一个英雄即可
+        if(this.battle.arenaBattle){
+            this.targets = [this.battle.findRandomHero(this.playerId)];
+        }else if (this.targetType === this.ONE_ENEMY) {
             this.targets = [this.battle.findNextEnemy()];
         } else if (this.targetType === this.MULTI_HERO) {
             this.targets = this.battle.getAllHeroes().getAllLived();
@@ -259,7 +263,7 @@ var ActiveSkill = cc.Class.extend({
 var TapSkill = ActiveSkill.extend({
 
     ctor: function (battle, target) {
-        this._super(null, battle);
+        this._super(null,null, battle);
         this.type = this.TYPE_ONCE;
         this.targetType = this.ONE_ENEMY;
     },

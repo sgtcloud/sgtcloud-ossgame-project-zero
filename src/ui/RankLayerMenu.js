@@ -59,9 +59,9 @@ var RankLayerMenu = BattleMenu.extend({
                         listView.pushBackCustomItem(this.setRankView(data[i], type));
                         //rankView);
                     }
-                    Network.getMyRankByType(type.replace('tab', "rank"), function (result, data) {
-                        if (result && cc.isObject(data))
-                            myNumText.setString(data.index + 1);
+                    Network.getMyRankByType(type.replace('tab', "rank"), function (result, index) {
+                        if (result && cc.isNumber(index))
+                            myNumText.setString(index + 1);
                     });
                 }
                 myNumText.ignoreContentAdaptWithSize(true);
@@ -74,9 +74,7 @@ var RankLayerMenu = BattleMenu.extend({
             root.getChildByName('player_icon').loadTexture("res/icon/heroes/" + data.player.avatarUrl);
             var playerName = root.getChildByName('player_name');
             var levelText = root.getChildByName('level_text');
-            /*var playerPrestige =*/
             root.getChildByName('player_prestige').setVisible(false);
-            /*var prestigeText =*/
             root.getChildByName('prestige_text').setVisible(false);
             var myBg = root.getChildByName('my_bg');
             var num = root.getChildByName('num');

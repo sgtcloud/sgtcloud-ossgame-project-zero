@@ -456,9 +456,9 @@ function createPlayerComplete() {
         Network.updatePlayerMails(10 * 1000);
     }, 10 * 1000);
     // 同步未完成的交易结果
-    if (cc.isArray(player.orders)) {
-        for (var i in player.orders) {
-            Network.queryByDid(player.orders[i]);
+    if (cc.isArray(player.recovery_orders)) {
+        for (var i in player.recovery_orders) {
+            Network.queryByDid(player.recovery_orders[i]);
         }
     }
     cc.director.runScene(game);
