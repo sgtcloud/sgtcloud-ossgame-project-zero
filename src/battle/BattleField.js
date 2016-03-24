@@ -140,6 +140,7 @@ var BattleUnitGroup = function (_sprites) {
 var BattleField = cc.Class.extend({
 
     ctor: function (node) {
+        //this._super();
         /**
          * view容器
          */
@@ -156,7 +157,7 @@ var BattleField = cc.Class.extend({
         this.enemyUnits = new BattleUnitGroup();
         this.background = new cc.Sprite();
         this.background.setAnchorPoint(cc.p(0, 0));
-
+        this.arenaBattle = false;
         // add the background layer
         this.container.addChild(this.background);
 
@@ -192,11 +193,17 @@ var BattleField = cc.Class.extend({
             var heroId = event.getUserData().heroId;
             var hero = PlayerData.getHeroById(heroId);
             if (hero.getLv() == 1) {
-                this.addHeroIntoBattle(heroId);
+                this.addHeroIntoBattle(hero);
             }
         }.bind(this));
         customEventHelper.bindListener(EVENT.CAST_SKILL, function (event) {
-            var activeSkill = new ActiveSkill(event.getUserData(), this);
+            var activeSkill;
+            var data = event.getUserData();
+            if(this.arenaBattle){
+                activeSkill = new ActiveSkill(data.id,data.skill, this);
+            }else{
+                activeSkill = new ActiveSkill(player,data, this);
+            }
             activeSkill.cast(this.container);
         }.bind(this));
         customEventHelper.bindListener(EVENT.USE_GAME_ITEMS, function (event) {
@@ -215,12 +222,16 @@ var BattleField = cc.Class.extend({
             this.prepareBattle(PlayerData.getStageData());
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, this.pauseAllSprites);
-        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, this.resumeAllSprites);
+        customEventHelper.bindListener(EVENT.PAUSE_THE_BATTLE, this.pauseAllSprites.bind(this));
+        customEventHelper.bindListener(EVENT.RESUME_THE_BATTLE, this.resumeAllSprites.bind(this));
 
-        customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover);
-        customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead);
-        customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill);
+        customEventHelper.bindListener(EVENT.HERO_REVIVE, this.onHeroRecover.bind(this));
+        customEventHelper.bindListener(EVENT.HERO_DIE, this.onHeroDead.bind(this));
+        customEventHelper.bindListener(EVENT.CAST_SKILL, this.onCastSkill.bind(this));
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function(event){
+            this.arenaBattle = true;
+            Network.initArenaBattle(this,event.getUserData());
+        }.bind(this));
     },
 
     /**
@@ -345,9 +356,15 @@ var BattleField = cc.Class.extend({
      */
     initBattleHeroes: function () {
         var heroes = PlayerData.getHeroes();
-        for (var i in heroes) {
-            if (heroes[i].getLv() > 0) {
-                this.addHeroIntoBattle(heroes[i].getId());
+        //暂定竞技battle 只加载第一个英雄
+        if(this.arenaBattle){
+            this.heroUnits.clear();
+            this.addHeroIntoBattle(new Hero(heroes[0]));
+        }else{
+            for (var i in heroes) {
+                if (heroes[i].getLv() > 0) {
+                    this.addHeroIntoBattle(PlayerData.getHeroById(heroes[i].getId()));
+                }
             }
         }
     },
@@ -410,16 +427,22 @@ var BattleField = cc.Class.extend({
      * 已经占据了位置的英雄数量
      */
     standHeroPosNum: 0,
-
     /**
      * 根据英雄的id来查找英雄模型添加到战斗中
      *
      * @param id
      */
-    addHeroIntoBattle: function (id) {
-        var data = PlayerData.getHeroById(id);
-        var hero = new HeroUnit(this, data);
-        this.heroUnits.push(hero);
+    addHeroIntoBattle: function (data) {
+        //var data = PlayerData.getHeroById(id);
+        var hero ;
+        if(this.arenaBattle){
+            hero = new ArenaHeroUnit(this, player);
+            this.heroUnits.push(hero);
+        }else{
+            hero = new HeroUnit(this, data);
+            this.heroUnits.push(hero);
+        }
+
         hero.setPosition(this.heroPos[this.standHeroPosNum].getPosition());
         // 每个精灵node位置的tag当成zorder使用
         this.addSprite(hero, this.heroPos[this.standHeroPosNum].getTag());
@@ -451,9 +474,13 @@ var BattleField = cc.Class.extend({
         this.enemyUnits.clear();
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
-            var enemy = new EnemyUnit(this, data);
-            if (bossBattle) {
-                enemy.setScale(-1.5, 1.5);
+            if(this.arenaBattle){
+                var enemy = new ArenaHeroUnit(this, data);
+            }else{
+                var enemy = new EnemyUnit(this, data);
+                if (bossBattle) {
+                    enemy.setScale(-1.5, 1.5);
+                }
             }
             enemy.setName('enemy');
             this.enemyUnits.push(enemy);
@@ -478,7 +505,12 @@ var BattleField = cc.Class.extend({
         return this.heroUnits;
     },
 
-    findRandomHero: function () {
+    findRandomHero: function (playerId) {
+        if(this.arenaBattle){
+            if(player.id != playerId){
+                return this.enemyUnits.findRandomAlive();
+            }
+        }
         return this.heroUnits.findRandomAlive();
     },
 
@@ -501,15 +533,24 @@ var BattleField = cc.Class.extend({
     initBattle: function (stage) {
         this.loadStageBackground(stage);
         this.initBattleHeroes();
-        PlayerData.countPlayerMCardReward();
         this.prepareBattle(stage);
     },
-
     /**
      * 提醒顶部面板更新关卡的状态，例如Boss战和关卡序号
      */
+    initArenaBattle: function(challengedPlayer){
+        this.initBattleHeroes();
+        this.initBattleArenaChallenged(challengedPlayer);
+        this.updateEnemyLife();
+        this.notifyUpdateTopPanelStageState();
+        PlayerData.updateIntoBattleTime();
+    },
+    initBattleArenaChallenged: function(challengedPlayer){
+        //暂定竞技battle 只加载第一个英雄
+        this.addEnemyIntoBattle([challengedPlayer]);
+    },
     notifyUpdateTopPanelStageState: function () {
-        customEventHelper.sendEvent(EVENT.BATTLE_START);
+        customEventHelper.sendEvent(EVENT.BATTLE_START,this.arenaBattle);
     },
 
     /**
@@ -524,10 +565,6 @@ var BattleField = cc.Class.extend({
             player.stage_battle_num = 1;
             stageData.goToNextStage();
             player.stage = stageData.getId();
-            /**
-             * 刷新摇钱树购买金币值（根据不同关卡设定的值）
-             */
-                //customEventHelper.sendEvent(EVENT.GOTO_NEXT_STAGE);
             player.statistics.total_max_level += 1;
             //更新通关数据
             Network.updateLeaderBoardScore(player.statistics.total_max_level, "stage_rank");

@@ -44,4 +44,4 @@ var FirstRechargePanel = cc.Node.extend({
 FirstRechargePanel.open = function(btn){
     var firstRechargePanel = new FirstRechargePanel(btn);
     firstRechargePanel.openFirstRechargePanel();
-}
+};
