@@ -482,3 +482,39 @@ var PlayerData = {
 };
 
 var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];
+
+var ArenaHeroData = {
+    refreshGlobeProps: function () {
+        /**
+         * resum the globe prop from every heroes
+         */
+        this.globe_life_value = 0;
+        this.globe_life_rate = 0;
+        this.globe_attack_value = 0;
+        this.globe_attack_rate = 0;
+        this.globe_tap_value = 0;
+        this.globe_tap_rate = 0;
+        this.globe_gold_rate = 0;
+        this.globe_atk_period_rate = 0;
+        this.globe_ctr_chance_rate = 0;
+        this.globe_ctr_modify_rate = 0;
+        for (var i in this.heroes) {
+            this.globe_life_value += this.heroes[i]["globe_life_value"];
+            this.globe_life_rate += this.heroes[i]["globe_life_rate"];
+            this.globe_attack_value += this.heroes[i]["globe_attack_value"];
+            this.globe_attack_rate += this.heroes[i]["globe_attack_rate"];
+            this.globe_tap_value += this.heroes[i]["globe_tap_value"];
+            this.globe_tap_rate += this.heroes[i]["globe_tap_rate"];
+            this.globe_gold_rate += this.heroes[i]["globe_gold_rate"];
+            this.globe_atk_period_rate += this.heroes[i]["globe_atk_period_rate"];
+            this.globe_ctr_chance_rate += this.heroes[i]["globe_ctr_chance_rate"];
+            this.globe_ctr_modify_rate += this.heroes[i]["globe_ctr_modify_rate"];
+        }
+    }
+    ,
+    refreshAllHerosProps: function () {
+        for (var i in this.heroes) {
+            this.heroes[i].refreshProps();
+        }
+    }
+}

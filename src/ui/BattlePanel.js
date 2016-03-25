@@ -31,7 +31,8 @@ var BattlePanel = cc.Node.extend({
 
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
-            GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
+            customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE);
+            //GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
         }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 

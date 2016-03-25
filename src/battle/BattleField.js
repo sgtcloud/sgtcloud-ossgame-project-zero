@@ -233,7 +233,7 @@ var BattleField = cc.Class.extend({
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function (event) {
             tip.toggle('开始竞技');
             this.arenaBattle = true;
-            this.initArenaBattle(event.getUserData()/*"8a20a23279996"*/);
+            this.initArenaBattle(/*event.getUserData()*/"8a20a23279996");
         }.bind(this));
 
     },
