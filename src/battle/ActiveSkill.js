@@ -233,7 +233,7 @@ var ActiveSkill = cc.Class.extend({
     },
 
     recast: function () {
-        var recast = new ActiveSkill(this.skill, this.battle, this.firstCastTime);
+        var recast = new ActiveSkill(this.playerId,this.skill, this.battle, this.firstCastTime);
         recast._cast();
         unschedule(this);
     },
