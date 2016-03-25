@@ -93,6 +93,18 @@ var SkillIcon = cc.Class.extend({
                 that.setCoolTime(Math.round(data['recover']));
             }
         });
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            this.root.setVisible(false);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
+            this.root.setVisible(true);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
+            this.root.setVisible(true);
+        }.bind(this));
+
     }, setVisible: function (visit) {
         root.setVisible(visit);
     }, showDead: function () {
@@ -270,28 +282,38 @@ var BloodBox = cc.Class.extend({
             updateNum(that.middleText, player.resource.middle_blood || (player.resource.middle_blood = 100), that.middleBtn);
             updateNum(that.largeText, player.resource.large_blood || (player.resource.large_blood = 100), that.largeBtn);
         }
+        function setBtnEnabled(enabled){
+            that.smallBtn.setEnabled(enabled);
+            that.smallBtn.setBright(enabled);
+            that.middleBtn.setEnabled(enabled);
+            that.middleBtn.setBright(enabled);
+            that.largeBtn.setEnabled(enabled);
+            that.largeBtn.setBright(enabled);
+        }
         customEventHelper.bindListener(EVENT.HERO_DIE,function(){
             if(battlePanel.battleField.isAllHeroesDead()){
-                this.smallBtn.setEnabled(false);
-                this.smallBtn.setBright(false);
-                this.middleBtn.setEnabled(false);
-                this.middleBtn.setBright(false);
-                this.largeBtn.setEnabled(false);
-                this.largeBtn.setBright(false);
+                setBtnEnabled(false);
             }
         }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_REVIVE,function(){
-            this.smallBtn.setEnabled(true);
-            this.smallBtn.setBright(true);
-            this.middleBtn.setEnabled(true);
-            this.middleBtn.setBright(true);
-            this.largeBtn.setEnabled(true);
-            this.largeBtn.setBright(true);
+            setBtnEnabled(true);
         }.bind(this));
         refreshNum();
         initBtn(this.smallBtn, this.smallText, {id: ITEM.small_hp_potion, name: 'small_btn', num: 1});
         initBtn(this.middleBtn, this.middleText, {id: ITEM.medium_hp_potion, name: 'middle_btn', num: 1});
         initBtn(this.largeBtn, this.largeText, {id: ITEM.large_hp_potion, name: 'large_btn', num: 1});
+
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            setBtnEnabled(false);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
+            setBtnEnabled(true);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
+            setBtnEnabled(true);
+        }.bind(this));
     }
 });
 var SkillListMenu = BattleMenu.extend({

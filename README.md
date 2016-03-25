@@ -208,6 +208,7 @@ cocos compile -p web -m release
 
 * [定制Loading界面](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6Loading%E7%95%8C%E9%9D%A2)
 * [定制cover封面](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6cover%E5%B0%81%E9%9D%A2)
+* [定制战斗场景顶部面板](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E6%88%98%E6%96%97%E5%9C%BA%E6%99%AF%E7%9A%84%E9%A1%B6%E9%83%A8%E9%9D%A2%E6%9D%BF)
 * [定制战斗场景](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E6%88%98%E6%96%97%E5%9C%BA%E6%99%AF)
 * [定制英雄单位](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E8%8B%B1%E9%9B%84%E5%8D%95%E4%BD%8D)
 

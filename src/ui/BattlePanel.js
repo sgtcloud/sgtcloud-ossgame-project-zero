@@ -126,6 +126,18 @@ var BattlePanel = cc.Node.extend({
             this.reset();
         }.bind(this));
 
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],false);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],true);
+        }.bind(this));
+
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],true);
+        }.bind(this));
+
         DamageNumber.initPool();
 
         this.update = function (dt) {
@@ -134,8 +146,10 @@ var BattlePanel = cc.Node.extend({
                 if (this.intervalState) {
                     this.intervalTime += dt;
                     if (this.intervalTime > CONSTS.flySpirit_interval_time) {
-                        this.battleField.showFairy();
-                        this.intervalState = false;
+                        if(!this.battleField.arenaBattle){
+                            this.battleField.showFairy();
+                            this.intervalState = false;
+                        }
                     }
                 }
                 var stage = PlayerData.getStageData();

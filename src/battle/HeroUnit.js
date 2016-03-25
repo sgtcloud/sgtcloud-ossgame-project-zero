@@ -112,7 +112,10 @@ var HeroUnit = BattleUnit.extend({
     isActive: function () {
         return !this.hero.isLocked();
     },
-
+    onClear: function () {
+        this._super();
+        this.tombstone.removeFromParent(this);
+    },
     ctor: function (battle, hero) {
         this._super(battle);
         this.hero = hero;
