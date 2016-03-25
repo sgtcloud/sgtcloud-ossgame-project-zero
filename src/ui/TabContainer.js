@@ -29,13 +29,19 @@ var TabContainer = cc.Node.extend({
             this.buttons[name] = root.getChildByName(name);
             this.buttons[name].setSelected(false);
             this.buttons[name].addEventListener(function (sender, type) {
-                if (type === ccui.CheckBox.EVENT_SELECTED) {
-                    //if (sender.name != 'pvp') {
+                if (!battlePanel.battleField.arenaBattle) {
+                    if (type === ccui.CheckBox.EVENT_SELECTED) {
                         self.showMenuLayer(sender.name);
-                    //}
-                }
-                else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
-                    sender.setSelected(true);
+                    }
+                    else if (type === ccui.CheckBox.EVENT_UNSELECTED) {
+                        sender.setSelected(true);
+                    }
+                }else{
+                    if(sender.name != 'main')
+                        this.buttons[sender.name].setSelected(false);
+                    else{
+                        this.buttons[sender.name].setSelected(true);
+                    }
                 }
             }, this);
         }

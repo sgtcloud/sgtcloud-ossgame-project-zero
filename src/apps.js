@@ -531,6 +531,17 @@ function setIgnoreContentAdaptWithSize(target) {
         target.ignoreContentAdaptWithSize(true);
     }
 }
+
+function setVisibles(target,visible){
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setVisible(visible);
+        }
+    }
+    else {
+        target.setVisible(visible);
+    }
+}
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
 }
