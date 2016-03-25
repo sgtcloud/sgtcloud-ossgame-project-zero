@@ -20,12 +20,16 @@ var TopPanel = cc.Node.extend({
         this.goldBtn = pane.getChildByName('getGold_btn');
         this.getDiamondBtn = pane.getChildByName('getDiamond_btn');
         bindButtonCallback(this.goldBtn, function () {
-            game.tabContainer.showMenuLayer("shop");
-            game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
-        });
+            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE){
+                game.tabContainer.showMenuLayer("shop");
+                game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
+            }
+        }.bind(this));
         bindButtonCallback(this.getDiamondBtn, function () {
-            RechargePanel.open();
-        });
+            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
+                RechargePanel.open();
+            }
+        }.bind(this));
         Loot.prototype.getGoldPosition = function () {
             return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());
         }.bind(this);
@@ -103,7 +107,7 @@ var TopPanel = cc.Node.extend({
                 default:
                     customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
             }
-        }
+        };
         this.refreshPlayerGemText = function () {
             var num = PlayerData.getAmountByUnit("gem");
             this.diamondNum.setString(num);
@@ -128,13 +132,15 @@ var TopPanel = cc.Node.extend({
             var cur = player.stage_battle_num;
             var max = stage.getRandomBattleCount();
             // 根据当前stage的battle状态设置gui状态
-            if (stage.isBossBattle()) {
-                this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
-            } else {
-                if (cur > max) {
-                    this.state = BATTLE_STATE.STATE_BOSS_READY;
+            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE){
+                if (stage.isBossBattle()) {
+                    this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
                 } else {
-                    this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
+                    if (cur > max) {
+                        this.state = BATTLE_STATE.STATE_BOSS_READY;
+                    } else {
+                        this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
+                    }
                 }
             }
 
@@ -165,8 +171,7 @@ var TopPanel = cc.Node.extend({
                 this.battleNumText.setVisible(false);
                 this.stageNumText_bg.setVisible(false);
                 this.stage_icon.setVisible(false);
-                //终止按钮显示  暂时有离开按钮代替
-                this.fightBossBtn.setVisible(true);
+                //终止按钮显示
             }
         };
         this.refreshStageList = function () {

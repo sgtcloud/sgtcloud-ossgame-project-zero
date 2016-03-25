@@ -20,15 +20,27 @@ var ArenaHeroUnit = BattleUnit.extend({
         return this.arenaHero.getCurrentLife() <= 0;
     },
     getArenaHeroRandomSkill: function(){
-        var len = this.arenaHero.getSkills().length;
+        var skills = this.arenaHero.getSkills();
+        var result = [];
+        for(var i in skills){
+            if (skills[i].getType() === 1 && skills[i].getLv() > 0) {
+                result.push(skills[i]);
+            }
+        }
+
+        var len = result.length;
         if(len > 0){
-            return this.arenaHero.getSkills()[getRandomInt(0,len-1)];
+            return result[getRandomInt(0,len-1)];
         }
         return undefined;
     },
+    onClear: function(){
+        this._super();
+        this.tombstone.removeFromParent(this);
+    },
 
     onMove: function () {
-        var target = this.battle.findRandomHero(this.arenaHero);
+        var target = this.battle.findRandomHero(this.playerId);
         if (target) {
             this.playAnimation('atk', false, function () {
                 this.playAnimation("stand", true);
@@ -42,12 +54,12 @@ var ArenaHeroUnit = BattleUnit.extend({
             } else {
                 target.doDamage(this.arenaHero.getAttack());
             }
-            //当前英雄血量低于总血量2/3时随机触发一个主动技能
-            if(this.isCastSkill && this.arenaHero.getCurrentLife()/this.arenaHero.getMaxLife() * 3  > 1){
+            //当前英雄血量低于总血量3/5时随机触发一个主动技能
+            if(this.isCastSkill && this.arenaHero.getCurrentLife()/this.arenaHero.getLife() * 5  < 3){
                 this.isCastSkill = false;
                 var randomSkill = this.getArenaHeroRandomSkill();
                 if(randomSkill){
-                    customEventHelper.sendEvent(EVENT.CAST_SKILL,{"id":this.player.id,"skill":randomSkill});
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL,{"id":this.playerId,"skill":randomSkill});
                 }
             }
         }
@@ -57,6 +69,9 @@ var ArenaHeroUnit = BattleUnit.extend({
     },
     onDamaged: function (dmg) {
         this._super(dmg);
+        if(player.id != this.playerId){
+            this.battle.updateEnemyLife();
+        }
         this.refreshLifeBar();
     },
 
@@ -79,13 +94,7 @@ var ArenaHeroUnit = BattleUnit.extend({
         this.playAnimation("die", false, function () {
             this.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(function () {
                 this.setVisible(false);
-                this.arenaBattle = false;
-                //如果是当前登陆角色的英雄dead 则挑战失败
-                if(this.arenaHero.getId() == player.heroes[0].getId()){
-                    customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE);
-                }else{
-                    customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE);
-                }
+                this.battle.onEnemyDead();
             }.bind(this), this)));
         }.bind(this));
 
@@ -99,13 +108,16 @@ var ArenaHeroUnit = BattleUnit.extend({
         return !this.arenaHero.isLocked();
     },
 
-    ctor: function (battle, player) {
+    ctor: function (battle, arenaHero,playerId) {
         this._super(battle);
-        this.player = player;
-        this.arenaHero = new Hero(this.player.heroes[0]);
+        this.playerId = playerId;
+        this.arenaHero = arenaHero;
+        this.arenaHero.life = this.arenaHero.getLife();
         this.isCastSkill = true;
-        this.initSprite(res[this.arenaHero.getFile()], 'arenaHero', "stand");
-
+        this.initSprite(res[this.arenaHero.getFile()], 'hero', "stand");
+        if(this.playerId != player.id){
+            this.setScale(-1, 1);
+        }
         this.tombstone = CCSUnit.create(res.tombstone_json);
         this.tombstone.setVisible(false);
         this.refreshLifeBar();

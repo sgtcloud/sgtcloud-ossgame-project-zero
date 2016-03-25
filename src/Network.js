@@ -327,7 +327,7 @@
                     this.arenaService.addToEnd('pvp_rank',player.id,callback);
                 }else {
                     SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, function(result,data){
-                        if(result){
+                        if(result && cc.isObject(data)){
                             return callback(true,data.index);
                         }else{
                             return callback(false);
@@ -561,14 +561,15 @@
         buildCustomService: function () {
             this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena"]);
         },
-        initArenaBattle: function(battle,id){
+        initArenaBattle: function(id,callback){
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
                 if (result) {
                     if (cc.isObject(data) && data.content) {
-                        battle.initArenaBattle(JSON.parse(data.content));
+                        return callback(true,JSON.parse(data.content));
                     } else {
                         //没有存档
                         console.log("当前用户没有存档");
+                        return callback(false);
                     }
                 }
             });
