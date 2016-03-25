@@ -10,13 +10,13 @@ $$.extend = function (a, b) {
     }
     return b;
 }
-Number.prototype.toFixed = function (num) {
+/*Number.prototype.toFixed = function (num) {
     if (num > 0) {
         var fixed = Math.pow(100, num);
         return Math.round(this * fixed) / fixed
     }
     return this;
-}
+}*/
 var CONSTS = {
     "FAIRY_SPECIFIC_ZORDER": 2000,
     "MAX_ATTACHMENTS_ON_SPRITE": 10,
