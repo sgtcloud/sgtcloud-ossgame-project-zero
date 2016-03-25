@@ -202,7 +202,7 @@ var BattleField = cc.Class.extend({
             if(this.arenaBattle){
                 activeSkill = new ActiveSkill(data.id,data.skill, this);
             }else{
-                activeSkill = new ActiveSkill(player,data, this);
+                activeSkill = new ActiveSkill(player.id,data, this);
             }
             activeSkill.cast(this.container);
         }.bind(this));
