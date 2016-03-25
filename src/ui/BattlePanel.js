@@ -60,7 +60,7 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         this.firstRechargeBtn = root.getChildByName('firstRecharge_btn');
-        if(cc.isNumber(player.vip) || player.vip < 2 || player.first_recharge_status == 0){
+        if(cc.isNumber(player.vip) || player.vip < 2 || player.first_recharge_status != 2){
             bindButtonCallback(this.firstRechargeBtn, function () {
                 FirstRechargePanel.open(this.firstRechargeBtn);
             }.bind(this));

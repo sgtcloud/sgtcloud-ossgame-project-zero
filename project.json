@@ -60,6 +60,7 @@
     "src/ui/ShopLayerMenu.js",
     "src/ui/RankLayerMenu.js",
     "src/ui/FirstRechargePanel.js",
+    "src/battle/ArenaHeroUnit.js",
     "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"
