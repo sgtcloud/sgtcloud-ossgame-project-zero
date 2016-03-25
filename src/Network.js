@@ -492,13 +492,13 @@
 
                     var amount = obj.chargePoint.amount;
                     //判断当前充值项是否为首冲
-                    /*if (player.vip < 2) {
-                        if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
+                    if (player.vip < 2) {
+                        /*if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
                             amount += obj.chargePoint.firstChargeRewardAmount;
-                        }
+                        }*/
                         //在此只做标示是否充值过。
                         player.vip = 2;
-                    }*/
+                    }
                     if(isNaN(player.completed_order_total[obj.chargePoint.id])){
                         if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
                             amount += obj.chargePoint.firstChargeRewardAmount;
