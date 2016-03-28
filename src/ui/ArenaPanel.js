@@ -52,7 +52,7 @@ var ArenaPanel = BattleMenu.extend({
         }
     }, purchaseTimes: function () {
         ComplexPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-            [CONSTS.arena_times_purchase], function (result) {
+            CONSTS.arena_times_purchase, function (result) {
                 if (result) {
                     player.arena.times += CONSTS.arena_times_purchase.times;
                     PlayerData.updateResource(CONSTS.arena_times_purchase);
@@ -130,6 +130,7 @@ var ArenaPanel = BattleMenu.extend({
             }.bind(this));
             return;
         }else {
+            game.tabContainer.buttons['main']._selectedEvent();
             customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE,data.player.id);
         }
         player.arena.times--;

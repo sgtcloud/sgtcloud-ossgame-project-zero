@@ -559,7 +559,7 @@
             SgtApi.MailService.sendMail(mail, callback);
         },
         buildCustomService: function () {
-            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena"]);
+            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena","createArenaChallenge","updateChallenge","getTopChallenges"]);
         },
         initArenaBattle: function(id,callback){
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
