@@ -236,6 +236,14 @@ var BattleField = cc.Class.extend({
             this.initArenaBattle(/*event.getUserData()*/"8a20a23279996");
         }.bind(this));
 
+        /*PlayerData.prototype.getArenaPlayerData = function(playerId){
+            if(this.arenaBattle){
+
+            }else{
+                return NormalPlayerData;
+            }
+        }.bind(this);*/
+
     },
 
     /**
@@ -358,14 +366,11 @@ var BattleField = cc.Class.extend({
     /**
      * 从存档数据初始化战斗中的英雄，仅调用一次。如果通过解锁英雄加入战斗，需自行调用addHeroIntoBattle
      */
-    initBattleHeroes: function () {
-        var heroes = PlayerData.getHeroes();
+    initBattleHeroes: function (heroes) {
+        //var heroes = PlayerData.getHeroes();
         for (var i in heroes) {
             if (heroes[i].getLv() > 0) {
                 var hero = heroes[i];
-                if (this.arenaBattle) {
-                    hero = new ArenaHero(player.heroes[i]);
-                }
                 this.addHeroIntoBattle(hero);
             }
         }
@@ -477,8 +482,8 @@ var BattleField = cc.Class.extend({
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             if (this.arenaBattle) {
-                var arenaHero = new ArenaHero(data);
-                var enemy = new ArenaHeroUnit(this, arenaHero, this.challengedPlayer.id);
+                //var arenaHero = new ArenaHero(data);
+                var enemy = new ArenaHeroUnit(this, data);
             } else {
                 var enemy = new EnemyUnit(this, data);
                 if (bossBattle) {
@@ -543,7 +548,7 @@ var BattleField = cc.Class.extend({
     initBattle: function (stage) {
         if (!this.arenaBattle)
             this.loadStageBackground(stage);
-        this.initBattleHeroes();
+        this.initBattleHeroes(PlayerData.getHeroes());
         this.prepareBattle(stage);
     },
     /**
@@ -557,13 +562,21 @@ var BattleField = cc.Class.extend({
         this.countdown.setPosition(320, 100);
         this.addSprite(this.countdown, 1000);
         this.countdown.playAnimation("3", false, function () {
+
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
-                    this.challengedPlayer = data;
+                    var arenaHeroPlayerData = new ArenaPlayerData();
+                    arenaHeroPlayerData.init(PlayerData.getPlayer());
+                    var arenaEnemyPlayerData = new ArenaPlayerData();
+                    arenaEnemyPlayerData.init(data);
+                    //this.challengedPlayer = data;
                     this.countdown.playAnimation("2", false, function () {
                         //开始战斗
-                        this.initBattleHeroes();
-                        this.prepareBattle();
+                        this.initBattleHeroes(arenaHeroPlayerData);
+                        this.initBattleArenaEnemys(arenaEnemyPlayerData);
+                        this.updateEnemyLife();
+                        this.notifyUpdateTopPanelStageState();
+                        PlayerData.updateIntoBattleTime();
                         this.countdown.playAnimation("1", false, function () {
                             this.countdown.playAnimation('ready', false, function () {
                             });
@@ -576,9 +589,8 @@ var BattleField = cc.Class.extend({
             }.bind(this));
         }.bind(this));
     },
-    initBattleArenaChallenged: function () {
-        //暂定竞技battle 只加载第一个英雄
-        this.addEnemyIntoBattle(this.challengedPlayer.heroes);
+    initBattleArenaEnemys: function (arenaEnemyPlayerData) {
+        this.addEnemyIntoBattle(arenaEnemyPlayerData.getHeroes());
     },
     notifyUpdateTopPanelStageState: function () {
         customEventHelper.sendEvent(EVENT.BATTLE_START, this.arenaBattle);
@@ -635,11 +647,7 @@ var BattleField = cc.Class.extend({
      */
     prepareBattle: function (stage) {
         unschedule(this);
-        if (this.arenaBattle) {
-            this.initBattleArenaChallenged();
-        } else {
-            this.initBattleEnemies(stage);
-        }
+        this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
         PlayerData.updateIntoBattleTime();

@@ -384,7 +384,7 @@ function getDays(dateStartTimeStramp, dateEndTimeStramp) {
 }
 
 function initGame(cb) {
-    PlayerData.init();
+    //PlayerData.init();
     game = new MainScene();
     if (cb) {
         cb();

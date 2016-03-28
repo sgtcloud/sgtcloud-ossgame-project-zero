@@ -36,18 +36,21 @@ var HeroUnit = BattleUnit.extend({
     onMove: function () {
         var target = this.battle.findNextEnemy();
         if (target) {
-            this.playAnimation('atk', false, function () {
-                this.playAnimation("stand", true);
-            }.bind(this));
-            var rand = Math.random();
-            var ctr_chance = this.hero.getCtrChance();
-            //cc.log("ctr:" + rand + "/" + ctr_chance);
-            if (rand < ctr_chance) {
-                customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
-                target.doDamage(this.hero.getAttack(), this.hero.getCtrModify());
-            } else {
-                target.doDamage(this.hero.getAttack());
-            }
+            this.moveHandle(target);
+        }
+    },
+    moveHandle: function (target) {
+        this.playAnimation('atk', false, function () {
+            this.playAnimation("stand", true);
+        }.bind(this));
+        var rand = Math.random();
+        var ctr_chance = this.hero.getCtrChance();
+        //cc.log("ctr:" + rand + "/" + ctr_chance);
+        if (rand < ctr_chance) {
+            customEventHelper.sendEvent(EVENT.SHOCK_BATTLE_FIELD, 2);
+            target.doDamage(this.hero.getAttack(), this.hero.getCtrModify());
+        } else {
+            target.doDamage(this.hero.getAttack());
         }
     },
     changeLife: function (val) {
@@ -63,6 +66,15 @@ var HeroUnit = BattleUnit.extend({
     onDead: function (recover) {
         this.recover = recover || this.hero.getRecover();
         customEventHelper.sendEvent(EVENT.HERO_DIE, this.hero);
+        this.deadHandle();
+
+        //battle.onHeroDead(this);
+        //var lost = battle.checkPlayerLost();
+        //if(lost){
+        //  battle.resetBattle();
+        //}
+    },
+    deadHandle: function () {
         this.hideBuffIcons();
         this.refreshLifeBar();
         this.stopAllActions();
@@ -78,13 +90,8 @@ var HeroUnit = BattleUnit.extend({
                 this.setVisible(false);
             }.bind(this), this)));
         }.bind(this));
-
-        //battle.onHeroDead(this);
-        //var lost = battle.checkPlayerLost();
-        //if(lost){
-        //  battle.resetBattle();
-        //}
     },
+
 //复活时被调用的
     onRevive: function () {
         this.setVisible(true);
@@ -118,8 +125,8 @@ var HeroUnit = BattleUnit.extend({
     },
     ctor: function (battle, hero) {
         this._super(battle);
-        this.hero = hero;
-        this.initSprite(res[this.hero.getFile()], 'hero', "stand");
+
+        this.initHero(hero);
 
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
             // 暂时不需要改
@@ -140,9 +147,17 @@ var HeroUnit = BattleUnit.extend({
             }
         }.bind(this));
 
+        this.initTombstone();
+    },
+    initHero: function (hero) {
+        this.hero = hero;
+        this.initSprite(res[this.hero.getFile()], 'hero', "stand");
+        this.refreshLifeBar();
+    },
+    initTombstone: function () {
         this.tombstone = CCSUnit.create(res.tombstone_json);
         this.tombstone.setVisible(false);
-        this.refreshLifeBar();
+
     },
 
     onEnter: function () {
