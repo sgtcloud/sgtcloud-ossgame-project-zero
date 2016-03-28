@@ -73,6 +73,9 @@ var ComplexPopup = Popup.extend({
         if (!resources) {
             return;
         }
+        if(!resources instanceof  Array){
+            resources=[resources];
+        }
         var arrs = this._countPosition(this.promptIconRoot.width, this.promptIconRoot.height, this.box.width, this.box.height, resources.length);
         for (var i = 0; i < resources.length; i++) {
             var rootClone = this.promptIconRoot.clone();

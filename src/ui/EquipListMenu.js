@@ -347,7 +347,6 @@ var EquipListMenu = ListViewMenu.extend({
                 setTimeout(function () {
                     that.pause();
                     that.buildEquipMenuIfUnlocked(_hero, first);
-                    //that.updateInnerContainerSize();
                     that.onEnter();
                     that.resume();
                 }, 300);

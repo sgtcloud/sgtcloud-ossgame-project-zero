@@ -32,6 +32,14 @@ var ArenaPanel = BattleMenu.extend({
         this._arenaService = Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
+        this.init();
+    },init:function(){
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE,function(e){
+            var data=e.getUserData();
+        });
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE,function(e){
+            var data=e.getUserData();
+        });
         this.pullData();
     }, __unit2Text: function (unit) {
         switch (unit) {
@@ -44,7 +52,7 @@ var ArenaPanel = BattleMenu.extend({
         }
     }, purchaseTimes: function () {
         ComplexPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-            [CONSTS.arena_times_purchase], function (result) {
+            CONSTS.arena_times_purchase, function (result) {
                 if (result) {
                     player.arena.times += CONSTS.arena_times_purchase.times;
                     PlayerData.updateResource(CONSTS.arena_times_purchase);
@@ -121,6 +129,9 @@ var ArenaPanel = BattleMenu.extend({
                     this.purchaseTimes();
             }.bind(this));
             return;
+        }else {
+            game.tabContainer.buttons['main']._selectedEvent();
+            customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE,data.player.id);
         }
         player.arena.times--;
         this.refreshTimes();

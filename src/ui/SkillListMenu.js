@@ -32,6 +32,28 @@ var SkillIcon = cc.Class.extend({
         this._bindListeners();
     }, _bindListeners: function () {
         var that = this;
+        this.skill_icon.addClickEventListener(function () {
+            var levelData = that.skill.getLevelData();
+            if (!(that.heroDead || that.isCoolDowning) && that.randomBuff) {
+                tip.toggle('已使用相同效果的技能！');
+            } else {
+                if (!(that.isCoolDowning || that.heroDead)) {
+                    that.showCooldown(levelData['cooldown']);
+                    if (levelData['duration'] > 0) {
+                        that.randomBuff = true;
+                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(that.skill), that.skill.getIcon(), function () {
+                            that.randomBuff = false;
+                        });
+                    }
+                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
+                } else if (that.isCoolDowning && !that.heroDead) {
+                    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
+                } else if (that.heroDead) {
+                    tip.toggle('英雄已死亡...');
+                }
+            }
+        });
+
         customEventHelper.bindListener(EVENT.UNLOCK_ACTIVITY_SKILL, function (event) {
             var skillId = event.getUserData();
             if (!that.root.isVisible() && that.skill.getId() === skillId) {
@@ -98,11 +120,11 @@ var SkillIcon = cc.Class.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
-            this.root.setVisible(true);
+            this.refresh();
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
-            this.root.setVisible(true);
+            this.refresh();
         }.bind(this));
 
     }, setVisible: function (visit) {
@@ -113,7 +135,7 @@ var SkillIcon = cc.Class.extend({
         this.cooldownText.setVisible(false);
     }, _doSchedule: function (time, target, cb) {
         var remaining = time;
-        var that=this;
+        var that = this;
         target.schedule(function () {
                 if (!that.heroDead) {
                     this.setString(remaining);
@@ -147,46 +169,25 @@ var SkillIcon = cc.Class.extend({
             delete  player['time']['cd'][this.skill.getId()];
             PlayerData.updatePlayer();
         }.bind(this));
-    } ,
+    },
     refresh: function () {
-    },
-    isActive: function () {
-        return !this.skill.isLocked();
-    },
-    init: function () {
-        var that = this;
-        this.skill_icon.loadTexture("res/icon/skills/" + this.skill.getIcon());
         if (this.skill.getLv() > 0) {
             this.root.setVisible(true);
         } else {
             this.root.isVisible() && this.root.setVisible(false);
         }
-        this.skill_icon.addClickEventListener(function () {
-            var levelData = that.skill.getLevelData();
-            if (!(that.heroDead || that.isCoolDowning) && that.randomBuff) {
-                tip.toggle('已使用相同效果的技能！');
-            } else {
-                if (!(that.isCoolDowning || that.heroDead)) {
-                    that.showCooldown(levelData['cooldown']);
-                    if (levelData['duration'] > 0) {
-                        that.randomBuff = true;
-                        toggleBufflayer(levelData['duration'], buildSkillBuffDesc(that.skill), that.skill.getIcon(), function () {
-                            that.randomBuff = false;
-                        });
-                    }
-                    customEventHelper.sendEvent(EVENT.CAST_SKILL, that.skill);
-                } else if (that.isCoolDowning && !that.heroDead) {
-                    console.log('技能【' + that.skill.getId() + "】冷却中，请稍候再点！");
-                } else if (that.heroDead) {
-                    tip.toggle('英雄已死亡...');
-                }
-            }
-        });
-    } ,
+    },
+    isActive: function () {
+        return !this.skill.isLocked();
+    },
+    init: function () {
+        this.skill_icon.loadTexture("res/icon/skills/" + this.skill.getIcon());
+       this.refresh();
+    },
     isCoolDown: function () {
         var cdStartTime = player['time']['cd'][this.skill.getId()];
         return typeof cdStartTime !== 'undefined';
-    } ,
+    },
     showCooldown: function (cd) {
         if (typeof cd === 'undefined') {
             var cdtime = player['time']['cd'][this.skill.getId()];
@@ -208,12 +209,12 @@ var SkillIcon = cc.Class.extend({
             }.bind(this));
             this._doCoolDown(cd);
         }
-    } ,
+    },
     showActive: function () {
         this.reviveText.setVisible(false);
         this.time.setVisible(false);
         this.cooldownText.setVisible(false);
-    } ,
+    },
     setDeadTime: function (time) {
         this.time.setString(time);
     },
@@ -233,7 +234,7 @@ function getHeroActivtySkillls(hero) {
 }
 
 var BloodBox = cc.Class.extend({
-    ctor: function (root,battlePanel) {
+    ctor: function (root, battlePanel) {
         this.root = root.getChildByName('blood_box');
         this.init(battlePanel);
     },
@@ -282,7 +283,8 @@ var BloodBox = cc.Class.extend({
             updateNum(that.middleText, player.resource.middle_blood || (player.resource.middle_blood = 100), that.middleBtn);
             updateNum(that.largeText, player.resource.large_blood || (player.resource.large_blood = 100), that.largeBtn);
         }
-        function setBtnEnabled(enabled){
+
+        function setBtnEnabled(enabled) {
             that.smallBtn.setEnabled(enabled);
             that.smallBtn.setBright(enabled);
             that.middleBtn.setEnabled(enabled);
@@ -290,12 +292,13 @@ var BloodBox = cc.Class.extend({
             that.largeBtn.setEnabled(enabled);
             that.largeBtn.setBright(enabled);
         }
-        customEventHelper.bindListener(EVENT.HERO_DIE,function(){
-            if(battlePanel.battleField.isAllHeroesDead()){
+
+        customEventHelper.bindListener(EVENT.HERO_DIE, function () {
+            if (battlePanel.battleField.isAllHeroesDead()) {
                 setBtnEnabled(false);
             }
         }.bind(this));
-        customEventHelper.bindListener(EVENT.HERO_REVIVE,function(){
+        customEventHelper.bindListener(EVENT.HERO_REVIVE, function () {
             setBtnEnabled(true);
         }.bind(this));
         refreshNum();
@@ -308,11 +311,17 @@ var BloodBox = cc.Class.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
-            setBtnEnabled(true);
+            if (battlePanel.battleField.isAllHeroesDead()) {
+                setBtnEnabled(false);
+            } else
+                setBtnEnabled(true);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
-            setBtnEnabled(true);
+            if (battlePanel.battleField.isAllHeroesDead()) {
+                setBtnEnabled(false);
+            } else
+                setBtnEnabled(true);
         }.bind(this));
     }
 });
@@ -323,7 +332,7 @@ var SkillListMenu = BattleMenu.extend({
         /**
          * 初始化药品菜单
          */
-        new BloodBox(this.root,battlePanel);
+        new BloodBox(this.root, battlePanel);
         this.skillBtns = [];
         var skillsBox = this.root.getChildByName('skill_box')
         var atk_text = this.root.getChildByName('atk_text');
