@@ -1,64 +1,66 @@
 var Equip = function (id, equipCache) {
-    var id = id;
-    var lv = 0;
-    var data = dataSource.equips[id];
+    this._id = id;
+    this._lv = 0;
+    this._data = dataSource.equips[this._id];
     var equipLv = equipCache && equipCache['level'];
-    if(equipLv){
-        lv=equipLv;
-    }else {
-        if(data['type']>0){
-            lv=0;
-        }else {
-            lv=1;
+    if (equipLv) {
+        this._lv = equipLv;
+    } else {
+        if (this._data['type'] > 0) {
+            this._lv = 0;
+        } else {
+            this._lv = 1;
         }
     }
-    this.getType=function(){
-        return data['type'];
-    }
-    this.getId = function () {
-        return id;
-    };
-    this.getLv = function () {
-        return lv;
-    };
+};
+Equip.prototype = {
+    getType: function () {
+        return this._data['type'];
+    },
+    getId: function () {
+        return this._id;
+    },
+    getLv: function () {
+        return this._lv;
+    },
 
-    this.getMaxLevel = function () {
-        return data.levelDatas[data.levelDatas.length-1]['level'];
-    };
-    this.getName = function () {
-        return data.name;
-    };
-    this.getIcon = function () {
-        return data.icon;
+    getMaxLevel: function () {
+        return this._data.levelDatas[this._data.levelDatas.length - 1]['level'];
+    },
+    getName: function () {
+        return this._data.name;
+    },
+    getIcon: function () {
+        return this._data.icon;
+    },
+    getDesc: function () {
+        return this._data.desc;
+    },
+    getLife: function () {
+        return this._data.life_base + this._data.life_grow * (this._lv - 1);
     }
-    this.getDesc = function () {
-        return data.desc;
-    };
-    this.getLife = function () {
-        return data.life_base + data.life_grow * (lv - 1);
-    };
-    this.getAttack = function () {
-        return data.attack_base + data.attack_grow * (lv - 1);
-    };
-    this.getHit = function () {
-        return data.hit_base + data.hit_grow * (lv - 1);
-    };
-    this.getPrice = function () {
+    , getAttack: function () {
+        return this._data.attack_base + this._data.attack_grow * (this._lv - 1);
+    }
+    , getHit: function () {
+        return this._data.hit_base + this._data.hit_grow * (this._lv - 1)
+    }
+    , getPrice: function () {
         return this.getLevelData()['upgrade'];
-    };
-    this.getEffect = function (key) {
-        return getEffectValue(data, key, lv);
-    };
-    this.upgrade = function (hero,price) {
-        price =price|| this.getNextLevelUpgrade();
+    }
+    , getEffect: function (key) {
+        return getEffectValue(this._data, key, this._lv);
+    }
+    , upgrade: function (hero, price) {
+        price = price || this.getNextLevelUpgrade();
         var unit = price['unit'];
         if (!validateAmountNotEnough(price)) {
-            lv += 1;
+            this._lv += 1;
             var cost = {value: -price.value, unit: unit};
             PlayerData.updateResource(cost);
             //game.onEquipUpdate(hero, this);
             //game.onHeroUpdate(hero);
-            customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
+            customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, cost);
             for (var i in player.heroes) {
                 var cacheHero = player.heroes[i];
                 if (cacheHero.id === hero.getId()) {
@@ -67,29 +69,29 @@ var Equip = function (id, equipCache) {
                         cacheHero['equips'] = {};
                     }
                     cacheHero['equips'][this.getId()] = cacheHero['equips'][this.getId()] || {};
-                    cacheHero['equips'][this.getId()]['level'] = lv;
+                    cacheHero['equips'][this.getId()]['level'] = this._lv;
                     break;
                 }
             }
             PlayerData.updatePlayer();
         }
-    };
-    this.isMaxLevel = function () {
-        return this.getLv() >= this.getMaxLevel();
-    };
-
-    this.getLevelData = function (level) {
-        return getSpecificLevelData(data, level || lv);
-    };
-    this.getNextLevelUpgrade = function () {
-        var level = this.getLv();
-        var cost = getLevelData(data, 'upgrade', level + 1);
-        return cost;
-    };
-    this.getUnlockLevel = function () {
-        return getLevelData(data, 'unlockLevel', this.getLv());
     }
-    this.traverseEquipEffects = function (lv) {
+    , isMaxLevel: function () {
+        return this.getLv() >= this.getMaxLevel();
+    }
+
+    , getLevelData: function (level) {
+        return getSpecificLevelData(this._data, level || this._lv);
+    }
+    , getNextLevelUpgrade: function () {
+        var level = this.getLv();
+        var cost = getLevelData(this._data, 'upgrade', level + 1);
+        return cost;
+    }
+    , getUnlockLevel: function () {
+        return getLevelData(this._data, 'unlockLevel', this.getLv());
+    }
+    , traverseEquipEffects: function (lv) {
         var equip = this.getLevelData(lv);
         var effects = [];
         for (var key in equip) {
