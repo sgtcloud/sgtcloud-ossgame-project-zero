@@ -122,12 +122,25 @@ var HeroUnit = BattleUnit.extend({
     onClear: function () {
         this._super();
         this.tombstone.removeFromParent(this);
+        this.hideBuffIcons();
     },
     ctor: function (battle, hero) {
         this._super(battle);
 
         this.initHero(hero);
-
+        this.bindListeners();
+        this.initTombstone();
+    },
+    initHero: function (hero) {
+        this.hero = hero;
+        this.initSprite(res[this.hero.getFile()], 'hero', "stand");
+        this.refreshLifeBar();
+    },
+    initTombstone: function () {
+        this.tombstone = CCSUnit.create(res.tombstone_json);
+        this.tombstone.setVisible(false);
+    },
+    bindListeners: function(){
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
             // 暂时不需要改
         }.bind(this));
@@ -146,20 +159,7 @@ var HeroUnit = BattleUnit.extend({
                 this.onRevive();
             }
         }.bind(this));
-
-        this.initTombstone();
     },
-    initHero: function (hero) {
-        this.hero = hero;
-        this.initSprite(res[this.hero.getFile()], 'hero', "stand");
-        this.refreshLifeBar();
-    },
-    initTombstone: function () {
-        this.tombstone = CCSUnit.create(res.tombstone_json);
-        this.tombstone.setVisible(false);
-
-    },
-
     onEnter: function () {
         this._super();
         if (this.hero.getCurrentLife() <= 0) {

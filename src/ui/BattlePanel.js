@@ -31,8 +31,8 @@ var BattlePanel = cc.Node.extend({
 
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
-            customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE);
-            //GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
+            //customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE);
+            GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
         }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 
@@ -129,6 +129,7 @@ var BattlePanel = cc.Node.extend({
 
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
             setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],false);
+            this.disableBossBattleTimeCounter();
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {

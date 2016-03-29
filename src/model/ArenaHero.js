@@ -1,11 +1,27 @@
 var ArenaHero = Hero.extend({
     ctor: function (heroData, playerData) {
-        this._super(heroData);
+        this.init(heroData);
         this._playerData = playerData;
         this.initLife();
+        this.refreshProps();
     },
     initLife: function () {
         this._heroData.life = this.getLife();
+    }, isDead: function () {
+        return  !this.getCurrentLife() > 0;
+    },
+    _validateLocked: function (unlock) {
+        if (unlock) {
+            var unit = unlock['unit'];
+            var value = unlock['value'];
+            switch (unit) {
+                case 'hero':
+                    var hero = this._playerData.getHeroById(value);
+                    return hero.getLv() < 1;
+                default:
+            }
+        }
+        return false;
     },
     calcProp: function (propName, lvData) {
         var val = 0;

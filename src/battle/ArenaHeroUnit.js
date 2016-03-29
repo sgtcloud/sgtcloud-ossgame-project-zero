@@ -22,7 +22,13 @@ var ArenaHeroUnit = HeroUnit.extend({
     },
 
     onMove: function () {
-        var target = this.battle.findRandomHero(this.playerId);
+        var target ;
+        if (this.playerId === player.id) {
+            target = this.battle.findRandomEnemy();
+        }else {
+            target = this.battle.findRandomHero();
+        }
+
         if (target) {
             this.moveHandle(target);
             //当前英雄血量低于总血量3/5时随机触发一个主动技能
@@ -48,18 +54,18 @@ var ArenaHeroUnit = HeroUnit.extend({
     },
 
     ctor: function (battle, arenaHero) {
-        this._super(battle);
+        this._super(battle,arenaHero);
         this.isCastSkill = true;
-        this.playerId = arenaHero._PlayerData.getPlayer().id;
-        this.initHero(arenaHero);
+        this.playerId = arenaHero._playerData.getPlayer().id;
 
         if(this.playerId != player.id){
             this.setScale(-1, 1);
         }
 
-        this.initTombstone();
     },
-
+    bindListeners: function(){
+        //竞技场不需要英雄绑定事件
+    },
     onEnter: function () {
         this._super();
     }

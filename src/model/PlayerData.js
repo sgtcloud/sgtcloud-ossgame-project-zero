@@ -12,20 +12,17 @@ var PlayerDataClass = cc.Class.extend({
     ctor: function(){
        //this.init();
     },
-    init: function (_player) {
-        if(_player){
-            this._player= _player;
+    init: function () {
+        if (cc.isObject(this.modelSave)) {
+            this._player= JSON.parse(this.modelSave.content);
         } else {
-            if (cc.isObject(this.modelSave)) {
-                this._player= JSON.parse(this.modelSave.content);
-            } else {
-                this._player= player;
-                this._player.id = this.modelPlayer.id;
-                this._player.name = this.modelPlayer.name;
-                this._player.vip = this.modelPlayer.vip || 1;
-                this._player.first_time = this.modelPlayer.createTime;
-            }
+            this._player= player;
+            this._player.id = this.modelPlayer.id;
+            this._player.name = this.modelPlayer.name;
+            this._player.vip = this.modelPlayer.vip || 1;
+            this._player.first_time = this.modelPlayer.createTime;
         }
+        player = this._player;
         this.initPlayerData();
     },
     //获取当前角色存档对象 new hero前的player
@@ -43,13 +40,11 @@ var PlayerDataClass = cc.Class.extend({
         }
         return null;
     },
-    initHeroes: function(){
-        for (var i in this._player.heroes) {
-            this.heroes.push(new Hero(this._player.heroes[i],this));
-        }
-    },
     initPlayerData: function () {
-        this.initHeroes();
+        this.heroes = [];
+        for (var i in this._player.heroes) {
+            this.heroes.push(new Hero(this._player.heroes[i]));
+        }
         if (!this._player.first_time) {
             this._player.first_time = this.getServerTime();
         }
@@ -225,7 +220,7 @@ var PlayerDataClass = cc.Class.extend({
             sgt.RouterService.getCurrentTimestamp(function (result, data) {
                 this._player['time']['die'][id] = data;
                 this.updatePlayer();
-            });
+            }.bind(this));
         }
     },
     addPlayerNoPayOrders: function (order) {
@@ -269,7 +264,7 @@ var PlayerDataClass = cc.Class.extend({
             }
         }
     },
-    heroes: [],
+    heroes: null,
     stageData: {},
     globe_life_value: 0,
     globe_life_rate: 0,

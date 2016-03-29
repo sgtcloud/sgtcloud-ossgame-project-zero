@@ -61,6 +61,7 @@ var TopPanel = cc.Node.extend({
                 this.state  = BATTLE_STATE.STATE_ARENA_BATTLE;
                 this.refreshStageState();
             }else{
+                this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
                 this.refreshStageList();
                 this.refreshStageState();
             }

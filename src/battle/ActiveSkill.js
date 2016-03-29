@@ -109,11 +109,23 @@ var ActiveSkill = cc.Class.extend({
     MULTI_ENEMY: 'MULTI_ENEMY',
 
     updateTargets: function () {
-        //由于当前竞技双方各一人，只需随机找到对方一个英雄即可
+
         if(this.battle.arenaBattle){
-            this.targets = [this.battle.findRandomHero(this.playerId)];
-        }else if (this.targetType === this.ONE_ENEMY) {
-            this.targets = [this.battle.findNextEnemy()];
+            var isCurrentPlayerHero = false;
+            if(this.playerId === player.id){
+                isCurrentPlayerHero = true;
+            }
+            if (this.targetType === this.ONE_ENEMY) {
+                this.targets = isCurrentPlayerHero ? [this.battle.findRandomEnemy()] : [this.battle.findRandomHero()];
+            } else if (this.targetType === this.MULTI_HERO) {
+                this.targets = isCurrentPlayerHero ? this.battle.getAllHeroes().getAllLived():this.battle.getAllEnemies().getAllLived();
+            } else if (this.targetType === this.ONE_HERO) {
+                this.targets = isCurrentPlayerHero ? [this.battle.findRandomHero()] : [this.battle.findRandomEnemy()];
+            } else if (this.targetType === this.MULTI_ENEMY) {
+                this.targets = isCurrentPlayerHero ? this.battle.getAllEnemies().getAllLived():this.battle.getAllHeroes().getAllLived();
+            }
+        }else  if (this.targetType === this.ONE_ENEMY) {
+            this.targets = [this.battle.findNextEnemy()]
         } else if (this.targetType === this.MULTI_HERO) {
             this.targets = this.battle.getAllHeroes().getAllLived();
         } else if (this.targetType === this.ONE_HERO) {
@@ -192,6 +204,11 @@ var ActiveSkill = cc.Class.extend({
             this.initRes();
             if (this.effect === 'fs_damage_once') {
                 var pos = this.battle.enemyUnits.getCenterPos();
+                if(this.battle.arenaBattle) {
+                    if (this.playerId !== player.id) {
+                        pos = this.battle.heroUnits.getCenterPos();
+                    }
+                }
             }
             this.playEffectAnimationOnTargets(pos, "boom");
             //this.affectDelay = 0.5;

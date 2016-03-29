@@ -402,7 +402,6 @@
                 if (result) {
                     //初始化角色存档
                     PlayerData.modelPlayer = data;
-                    PlayerData.init();
                     return callback(true);
                 } else {
                     return callback(false);
