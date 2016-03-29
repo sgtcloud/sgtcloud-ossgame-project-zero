@@ -14,22 +14,26 @@ var PlayerDataClass = cc.Class.extend({
     },
     init: function (_player) {
         if(_player){
-            this._player = _player;
+            this._player= _player;
         } else {
-            this._player =  player;
-            this._player .id = this.modelPlayer.id;
-            this._player .name = this.modelPlayer.name;
-            this._player .vip = this.modelPlayer.vip || 1;
-            this._player .first_time = this.modelPlayer.createTime;
+            if (cc.isObject(this.modelSave)) {
+                this._player= JSON.parse(this.modelSave.content);
+            } else {
+                this._player= player;
+                this._player.id = this.modelPlayer.id;
+                this._player.name = this.modelPlayer.name;
+                this._player.vip = this.modelPlayer.vip || 1;
+                this._player.first_time = this.modelPlayer.createTime;
+            }
         }
         this.initPlayerData();
     },
     //获取当前角色存档对象 new hero前的player
     getPlayer: function(){
-       return this._player ;
+       return this._player;
     },
     getPlayerId: function(){
-       return this._player .id;
+       return this._player.id;
     },
     getHeroById: function (id) {
         for (var i in this.heroes) {
@@ -40,16 +44,16 @@ var PlayerDataClass = cc.Class.extend({
         return null;
     },
     initHeroes: function(){
-        for (var i in this._player .heroes) {
-            this.heroes.push(new Hero(this._player .heroes[i],this));
+        for (var i in this._player.heroes) {
+            this.heroes.push(new Hero(this._player.heroes[i],this));
         }
     },
     initPlayerData: function () {
         this.initHeroes();
-        if (!this._player .first_time) {
-            this._player .first_time = this.getServerTime();
+        if (!this._player.first_time) {
+            this._player.first_time = this.getServerTime();
         }
-        this.stageData = new Stage(this._player .stage);
+        this.stageData = new Stage(this._player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();
         this.countPlayerMCardReward();
@@ -100,8 +104,8 @@ var PlayerDataClass = cc.Class.extend({
     }
     ,
     getTotalAttack: function (dead) {
-        this._player .statistics.total_damage = this.sumHeroesProp("getAttack", dead);
-        return this._player .statistics.total_damage;
+        this._player.statistics.total_damage = this.sumHeroesProp("getAttack", dead);
+        return this._player.statistics.total_damage;
     }
     ,
     getTotalLife: function (dead) {
@@ -109,8 +113,8 @@ var PlayerDataClass = cc.Class.extend({
     }
     ,
     getTotalHit: function (dead) {
-        this._player .statistics.total_tap = this.sumHeroesProp("getHit", dead);
-        return this._player .statistics.total_tap;
+        this._player.statistics.total_tap = this.sumHeroesProp("getHit", dead);
+        return this._player.statistics.total_tap;
     }
     ,
     createResourceData: function (unit, val) {
@@ -131,12 +135,12 @@ var PlayerDataClass = cc.Class.extend({
     }
     ,
     updateSingleResource: function (resource) {
-        if (cc.isNumber(this._player .resource[resource.unit]) && (this._player .resource[resource.unit] >= 0)) {
-            this._player .resource[resource.unit] += resource.value;
+        if (cc.isNumber(this._player.resource[resource.unit]) && (this._player.resource[resource.unit] >= 0)) {
+            this._player.resource[resource.unit] += resource.value;
             if (resource.value > 0) {
                 for (var i in this.statistics_res_values) {
                     if (resource.unit === this.statistics_res_values[i]) {
-                        this._player .statistics["total_" + resource.unit] += resource.value;
+                        this._player.statistics["total_" + resource.unit] += resource.value;
                     }
                 }
             }
@@ -146,11 +150,11 @@ var PlayerDataClass = cc.Class.extend({
     }
     ,
     updateIntoBattleTime: function () {
-        this._player .into_stage_battle_timestamp = this.getServerTime();
+        this._player.into_stage_battle_timestamp = this.getServerTime();
     }
     ,
     getIntoBattleTime: function () {
-        return this._player .into_stage_battle_timestamp;
+        return this._player.into_stage_battle_timestamp;
     }
     ,
     countOfflineTime: function () {
@@ -162,7 +166,7 @@ var PlayerDataClass = cc.Class.extend({
                 if (offlineTime > CONSTS.offline_reward_max_time) {
                     offlineTime = CONSTS.offline_reward_max_time;
                 }
-                this._player .statistics.total_offline_time += offlineTime;
+                this._player.statistics.total_offline_time += offlineTime;
                 return offlineTime / 60;
             }
         }
@@ -174,15 +178,15 @@ var PlayerDataClass = cc.Class.extend({
         if (offlineTime == 0) {
             return;
         }
-        if (!cc.isObject(this._player .not_get_reward)) {
-            this._player .not_get_reward = {};
+        if (!cc.isObject(this._player.not_get_reward)) {
+            this._player.not_get_reward = {};
         }
         for (var i = 0; i < datas.length; i++) {
             if (datas[i].value) {
-                if (typeof this._player .not_get_reward[datas[i].unit] === 'undefined') {
-                    this._player .not_get_reward[datas[i].unit] = Math.floor(datas[i].value * offlineTime);
+                if (typeof this._player.not_get_reward[datas[i].unit] === 'undefined') {
+                    this._player.not_get_reward[datas[i].unit] = Math.floor(datas[i].value * offlineTime);
                 } else {
-                    this._player .not_get_reward[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
+                    this._player.not_get_reward[datas[i].unit] += Math.floor(datas[i].value * offlineTime);
                 }
             }
         }
@@ -190,68 +194,68 @@ var PlayerDataClass = cc.Class.extend({
     }
     ,
     receiveOfflineReward: function () {
-        var rewards = this._player .not_get_reward;
+        var rewards = this._player.not_get_reward;
         var arrays = new Array();
         for (var key in rewards) {
             arrays.push(this.createResourceData(key, rewards[key]));
         }
         this.updateResource(arrays);
         customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, arrays);
-        this._player .not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};
+        this._player.not_get_reward = null;//{"key": 0, "gem": 0, "gold": 0};
     }
     ,
     getAmountByUnit: function (unit) {
-        return this._player .resource[unit];
+        return this._player.resource[unit];
     },
     getServerTime: function () {
         return this.serverCurrentTime;
     },
 
     getHeroDeadTime: function (id) {
-        return this._player ['time']['die'][id];
+        return this._player['time']['die'][id];
     },
 
     clearHeroDeadTime: function (id) {
-        delete this._player ['time']['die'][id];
+        delete this._player['time']['die'][id];
         this.updatePlayer();
     },
 
     updateHeroDeadTime: function (id) {
-        if (!this._player ['time']['die'][id]) {
+        if (!this._player['time']['die'][id]) {
             sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                this._player ['time']['die'][id] = data;
+                this._player['time']['die'][id] = data;
                 this.updatePlayer();
             });
         }
     },
     addPlayerNoPayOrders: function (order) {
-        if (this._player .recovery_orders.indexOf(order) == -1) {
-            this._player .recovery_orders.push(order);
+        if (this._player.recovery_orders.indexOf(order) == -1) {
+            this._player.recovery_orders.push(order);
             this.isUpdate = true;
             Network.updatePlayerSave();
         }
     },
     delePlayerNoPayOrdersById: function (order) {
-        if (this._player .recovery_orders.indexOf(order) != -1) {
-            this._player .recovery_orders.splice(this._player .recovery_orders.indexOf(order), 1);
+        if (this._player.recovery_orders.indexOf(order) != -1) {
+            this._player.recovery_orders.splice(this._player.recovery_orders.indexOf(order), 1);
         }
     },
     updatePlayerMCardInfo: function () {
         //已存在有效月卡，累加截止日期
-        if (this._player .month_card_end_time > 0 && this._player .month_card_end_time >= this.serverCurrentTime) {
-            this._player .month_card_end_time += CONSTS.monthCard_validity_timestamp;
+        if (this._player.month_card_end_time > 0 && this._player.month_card_end_time >= this.serverCurrentTime) {
+            this._player.month_card_end_time += CONSTS.monthCard_validity_timestamp;
         } else {
-            this._player .month_card_start_time = this.serverCurrentTime;
-            this._player .month_card_end_time = this.serverCurrentTime + CONSTS.monthCard_validity_timestamp;
+            this._player.month_card_start_time = this.serverCurrentTime;
+            this._player.month_card_end_time = this.serverCurrentTime + CONSTS.monthCard_validity_timestamp;
         }
     },
     //需要在更新离线时间前执行。
     countPlayerMCardReward: function () {
         //判断是否有月卡
-        if (this._player .month_card_end_time) {
+        if (this._player.month_card_end_time) {
             //判断月卡有效性
-            if (getDays(this._player .into_stage_battle_timestamp, this._player .month_card_end_time) > 0) {
-                var days = getDays(this._player .into_stage_battle_timestamp, this.serverCurrentTime);
+            if (getDays(this._player.into_stage_battle_timestamp, this._player.month_card_end_time) > 0) {
+                var days = getDays(this._player.into_stage_battle_timestamp, this.serverCurrentTime);
                 //判断是否可领取
                 if (days > 0) {
                     //发送邮件

@@ -538,7 +538,7 @@ var BattleField = cc.Class.extend({
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
         this.arenaBattle = false;
-        delete this.challengedPlayer;
+        //delete this.challengedPlayer;
         this.initBattle(data);
     },
     /**

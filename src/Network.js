@@ -140,12 +140,12 @@
                         sgt.PlayerExtraService.getPlayerExtraById(playerData.id, function (result, data) {
                             if (result) {
                                 if (cc.isObject(data) && data.content) {
-                                    //PlayerData.modelSave = data;
-                                    PlayerData.init(JSON.parse(data.content));
+                                    PlayerData.modelSave = data;
+                                    //PlayerData.init(JSON.parse(data.content));
                                     //localStorage.setItem("save", data.content);
                                 } else {
                                     //没有存档
-                                    PlayerData.init();
+                                    //PlayerData.init();
                                     console.log("当前用户没有存档");
                                 }
                             }

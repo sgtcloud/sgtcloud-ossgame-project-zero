@@ -127,4 +127,6 @@ var player = {
         }
     ]
 };
+var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];
+
 var PlayerData = new PlayerDataClass();
