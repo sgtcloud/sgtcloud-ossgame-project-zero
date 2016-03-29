@@ -18,6 +18,9 @@ var ChestUnit = CCSUnit.extend({
             }
             return false;
         }.bind(this), this);
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            this.removeFromParent(true);
+        }.bind(this));
     },
 
     onEnter: function () {

@@ -1,5 +1,22 @@
 var Hero = cc.Class.extend({
         ctor: function (heroData) {
+            this.init(heroData);
+            customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
+                var hero = data.getUserData();
+                if (hero.getId() === this._id) {
+                    PlayerData.updateHeroDeadTime(this._id);
+                }
+            }.bind(this));
+            customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {
+                var hero = data.getUserData();
+                if (hero.getId() === this.getId()) {
+                    PlayerData.clearHeroDeadTime(this.getId());
+                }
+            }.bind(this));
+            this.refreshProps();
+
+        },
+        init: function (heroData) {
             this._id = heroData.id;
             this._lv = heroData.lv;
             this._star = heroData.star;
@@ -13,26 +30,13 @@ var Hero = cc.Class.extend({
                 var equipCache = this._readEquipCache(equipId);
                 this._equips.push(new Equip(equipId, equipCache));
             }
-            customEventHelper.bindListener(EVENT.HERO_DIE, function (data) {
-                var hero = data.getUserData();
-                if (hero.getId() === this._id) {
-                    PlayerData.updateHeroDeadTime(this._id);
-                }
-            }.bind(this));
-            customEventHelper.bindListener(EVENT.HERO_REVIVE, function (data) {
-                var hero = data.getUserData();
-                if (hero.getId() === this.getId()) {
-                    PlayerData.clearHeroDeadTime(this.getId());
-                }
-            }.bind(this));
+
             for (var i in this._data.skills) {
                 var skillId = this._data.skills[i];
                 var skill = this._readCache(skillId);
                 var skillLv = (skill && skill['level']) || 0;
                 this._skills.push(new Skill(skillId, skillLv, this._id));
             }
-            this.refreshProps();
-
         },
         calcProp: function (propName, lvData) {
             var val = 0;

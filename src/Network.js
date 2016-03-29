@@ -141,9 +141,11 @@
                             if (result) {
                                 if (cc.isObject(data) && data.content) {
                                     PlayerData.modelSave = data;
-                                    localStorage.setItem("save", data.content);
+                                    //PlayerData.init(JSON.parse(data.content));
+                                    //localStorage.setItem("save", data.content);
                                 } else {
                                     //没有存档
+                                    //PlayerData.init();
                                     console.log("当前用户没有存档");
                                 }
                             }
@@ -298,10 +300,10 @@
             }
         },
         updatePlayer: function (modelPlayer, callback) {
-            localStorage.setItem("save", JSON.stringify(player));
+            //localStorage.setItem("save", JSON.stringify(player));
             PlayerData.isUpdate = true;
-            if (modelPlayer.level != player.heroes[0].lv) {
-                modelPlayer.level = player.heroes[0].lv;
+            if (modelPlayer.level != PlayerData.heroes[0].getLv()) {
+                modelPlayer.level = PlayerData.heroes[0].getLv();
                 sgt.PlayerService.update(modelPlayer, function (result) {
                     if (callback) {
                         return callback(result);
@@ -310,32 +312,24 @@
             }
         },
         getCurrentRanksByType: function (leaderId, callback) {
-            if (cc.isObject(PlayerData.modelPlayer)) {
-                if(leaderId === 'pvp_rank'){
-                    this.arenaService.getPlayersByIndex([0,1,2,3,4,5,6,7,8,9],'pvp_rank',callback);
-                }else{
-                    SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
-                }
-            } else {
-                return callback(false);
+            if(leaderId === 'pvp_rank'){
+                this.arenaService.getPlayersByIndex([0,1,2,3,4,5,6,7,8,9],'pvp_rank',callback);
+            }else{
+                SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
             }
         }
         ,
         getMyRankByType: function (leaderId, callback) {
-            if (cc.isObject(PlayerData.modelPlayer)) {
-                if(leaderId === 'pvp_rank'){
-                    this.arenaService.addToEnd('pvp_rank',player.id,callback);
-                }else {
-                    SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, PlayerData.modelPlayer.id, function(result,data){
-                        if(result && cc.isObject(data)){
-                            return callback(true,data.index);
-                        }else{
-                            return callback(false);
-                        }
-                    });
-                }
-            } else {
-                return callback(false);
+            if(leaderId === 'pvp_rank'){
+                this.arenaService.addToEnd('pvp_rank',player.id,callback);
+            }else {
+                SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, player.id, function(result,data){
+                    if(result && cc.isObject(data)){
+                        return callback(true,data.index);
+                    }else{
+                        return callback(false);
+                    }
+                });
             }
         },
         checkIn_createByValidate: function () {

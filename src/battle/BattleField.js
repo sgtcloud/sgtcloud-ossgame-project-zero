@@ -233,8 +233,17 @@ var BattleField = cc.Class.extend({
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function (event) {
             tip.toggle('开始竞技');
             this.arenaBattle = true;
-            this.initArenaBattle(event.getUserData()/*"8a20a23279996"*/);
+            this.challengedId = event.getUserData().challengeId;
+            this.initArenaBattle(/*event.getUserData()*//*"8a20a23279996"*/event.getUserData().playerId);
         }.bind(this));
+
+        /*PlayerData.prototype.getArenaPlayerData = function(playerId){
+            if(this.arenaBattle){
+
+            }else{
+                return NormalPlayerData;
+            }
+        }.bind(this);*/
 
     },
 
@@ -358,14 +367,11 @@ var BattleField = cc.Class.extend({
     /**
      * 从存档数据初始化战斗中的英雄，仅调用一次。如果通过解锁英雄加入战斗，需自行调用addHeroIntoBattle
      */
-    initBattleHeroes: function () {
-        var heroes = PlayerData.getHeroes();
+    initBattleHeroes: function (heroes) {
+        //var heroes = PlayerData.getHeroes();
         for (var i in heroes) {
             if (heroes[i].getLv() > 0) {
                 var hero = heroes[i];
-                if (this.arenaBattle) {
-                    hero = new ArenaHero(player.heroes[i]);
-                }
                 this.addHeroIntoBattle(hero);
             }
         }
@@ -477,8 +483,8 @@ var BattleField = cc.Class.extend({
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
             if (this.arenaBattle) {
-                var arenaHero = new ArenaHero(data);
-                var enemy = new ArenaHeroUnit(this, arenaHero, this.challengedPlayer.id);
+                //var arenaHero = new ArenaHero(data);
+                var enemy = new ArenaHeroUnit(this, data);
             } else {
                 var enemy = new EnemyUnit(this, data);
                 if (bossBattle) {
@@ -508,13 +514,16 @@ var BattleField = cc.Class.extend({
         return this.heroUnits;
     },
 
-    findRandomHero: function (playerId) {
-        if (this.arenaBattle) {
+    findRandomHero: function (/*playerId*/) {
+        /*if (this.arenaBattle) {
             if (player.id == playerId) {
                 return this.enemyUnits.findRandomAlive();
             }
-        }
+        }*/
         return this.heroUnits.findRandomAlive();
+    },
+    findRandomEnemy: function () {
+        return this.enemyUnits.findRandomAlive();
     },
 
     checkBattleWin: function () {
@@ -533,7 +542,7 @@ var BattleField = cc.Class.extend({
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
         this.arenaBattle = false;
-        delete this.challengedPlayer;
+        delete this.challengedId;
         this.initBattle(data);
     },
     /**
@@ -543,7 +552,7 @@ var BattleField = cc.Class.extend({
     initBattle: function (stage) {
         if (!this.arenaBattle)
             this.loadStageBackground(stage);
-        this.initBattleHeroes();
+        this.initBattleHeroes(PlayerData.getHeroes());
         this.prepareBattle(stage);
     },
     /**
@@ -557,13 +566,21 @@ var BattleField = cc.Class.extend({
         this.countdown.setPosition(320, 100);
         this.addSprite(this.countdown, 1000);
         this.countdown.playAnimation("3", false, function () {
+
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
-                    this.challengedPlayer = data;
+                    var arenaHeroPlayerData = new ArenaPlayerData();
+                    arenaHeroPlayerData.init(player);
+                    var arenaEnemyPlayerData = new ArenaPlayerData();
+                    arenaEnemyPlayerData.init(data);
+                    //this.challengedPlayer = data;
                     this.countdown.playAnimation("2", false, function () {
                         //开始战斗
-                        this.initBattleHeroes();
-                        this.prepareBattle();
+                        this.initBattleHeroes(arenaHeroPlayerData.getHeroes());
+                        this.initBattleArenaEnemys(arenaEnemyPlayerData);
+                        this.updateEnemyLife();
+                        this.notifyUpdateTopPanelStageState();
+                        PlayerData.updateIntoBattleTime();
                         this.countdown.playAnimation("1", false, function () {
                             this.countdown.playAnimation('ready', false, function () {
                             });
@@ -576,9 +593,16 @@ var BattleField = cc.Class.extend({
             }.bind(this));
         }.bind(this));
     },
-    initBattleArenaChallenged: function () {
-        //暂定竞技battle 只加载第一个英雄
-        this.addEnemyIntoBattle(this.challengedPlayer.heroes);
+    initBattleArenaEnemys: function (arenaEnemyPlayerData) {
+        var arenaEnemys = arenaEnemyPlayerData.getHeroes();
+        var aliveArenaEnemys = [];
+        for (var i in arenaEnemys) {
+            if (arenaEnemys[i].getLv() > 0) {
+                var hero = arenaEnemys[i];
+                aliveArenaEnemys.push(hero);
+            }
+        }
+        this.addEnemyIntoBattle(aliveArenaEnemys);
     },
     notifyUpdateTopPanelStageState: function () {
         customEventHelper.sendEvent(EVENT.BATTLE_START, this.arenaBattle);
@@ -635,11 +659,7 @@ var BattleField = cc.Class.extend({
      */
     prepareBattle: function (stage) {
         unschedule(this);
-        if (this.arenaBattle) {
-            this.initBattleArenaChallenged();
-        } else {
-            this.initBattleEnemies(stage);
-        }
+        this.initBattleEnemies(stage);
         this.updateEnemyLife();
         this.notifyUpdateTopPanelStageState();
         PlayerData.updateIntoBattleTime();
@@ -666,13 +686,13 @@ var BattleField = cc.Class.extend({
         if (this.arenaBattle) {
             //如果是当前登陆角色的英雄dead 则挑战失败
             if (this.checkPlayerLost()) {
-                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,this.challengedPlayer.id);
                 console.log('挑战失败');
                 this.reset(PlayerData.getStageData());
+                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,this.challengedId);
             } else if (this.checkBattleWin()) {
-                customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,this.challengedPlayer.id);
                 console.log('挑战胜利');
                 this.reset(PlayerData.getStageData());
+                customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,this.challengedId);
             }
         } else {
             if (PlayerData.getStageData().isBossBattle()) {

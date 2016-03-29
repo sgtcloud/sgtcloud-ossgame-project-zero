@@ -24,6 +24,11 @@ var FairyUnit = CCSUnit.extend({
             }
             return false;
         }.bind(this), this, true);
+
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            this.removeFromParent(true);
+        }.bind(this));
+
     },
 
     initRoute: function (type) {
