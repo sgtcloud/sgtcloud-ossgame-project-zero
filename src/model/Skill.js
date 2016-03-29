@@ -1,15 +1,16 @@
 /**
  * Created by highkay on 2015/12/29.
  */
-var Skill = function (id, lv, heroId) {
-    this._id = id;
-    this._lv = lv;
-    this._data = dataSource.skills[id];
-    this._icon = this._data.icon;
-    this._type = this._data.type;
-    this._heroId = heroId;
-};
-Skill.prototype = {
+var Skill = cc.Class.extend({
+    ctor: function (id, lv, heroId) {
+        this._id = id;
+        this._lv = lv;
+        this._data = dataSource.skills[id];
+        this._icon = this._data.icon;
+        this._type = this._data.type;
+        this._heroId = heroId;
+    }
+    ,
     getIcon: function () {
         return this._icon;
     },
@@ -123,4 +124,4 @@ Skill.prototype = {
             return a.index - b.index;
         });
     }
-};
+});

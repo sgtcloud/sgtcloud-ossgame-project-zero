@@ -32,13 +32,21 @@ var ArenaPanel = BattleMenu.extend({
         this._arenaService = Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
+        this.challengeStatus={
+            STATUS_WIN:"victory",
+            STATUS_FIGHTING:"fighting",
+            STATUS_LOSE:"defeat"
+        }
         this.init();
-    },init:function(){
-        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE,function(e){
-            var data=e.getUserData();
-        });
-        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE,function(e){
-            var data=e.getUserData();
+    }, init: function () {
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function (e) {
+            var data = e.getUserData();
+            this._arenaService.updateChallenge(data,this.challengeStatus.STATUS_WIN,'',function(){
+
+            })
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
+            var data = e.getUserData();
         });
         this.pullData();
     }, __unit2Text: function (unit) {
@@ -128,13 +136,17 @@ var ArenaPanel = BattleMenu.extend({
                 if (result)
                     this.purchaseTimes();
             }.bind(this));
-            return;
-        }else {
+        } else {
             game.tabContainer.buttons['main']._selectedEvent();
-            customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE,data.player.id);
+
+
+            this._arenaService.createArenaChallenge(player.id, data.player.id, function (result, id) {
+                console.log('创建挑战成功，ID:' + id);
+                customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId:data.player.id,challengeId:id});
+                player.arena.times--;
+                this.refreshTimes();
+            }.bind(this));
         }
-        player.arena.times--;
-        this.refreshTimes();
     }, refreshTimes: function () {
         PlayerData.updatePlayer();
         this.surplusNum.setString(player.arena.times);
