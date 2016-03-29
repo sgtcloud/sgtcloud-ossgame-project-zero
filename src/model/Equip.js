@@ -1,19 +1,19 @@
-var Equip = function (id, equipCache) {
-    this._id = id;
-    this._lv = 0;
-    this._data = dataSource.equips[this._id];
-    var equipLv = equipCache && equipCache['level'];
-    if (equipLv) {
-        this._lv = equipLv;
-    } else {
-        if (this._data['type'] > 0) {
-            this._lv = 0;
+var Equip = cc.Class.extend({
+    ctor: function (id, equipCache) {
+        this._id = id;
+        this._lv = 0;
+        this._data = dataSource.equips[this._id];
+        var equipLv = equipCache && equipCache['level'];
+        if (equipLv) {
+            this._lv = equipLv;
         } else {
-            this._lv = 1;
+            if (this._data['type'] > 0) {
+                this._lv = 0;
+            } else {
+                this._lv = 1;
+            }
         }
-    }
-};
-Equip.prototype = {
+    },
     getType: function () {
         return this._data['type'];
     },
@@ -107,5 +107,5 @@ Equip.prototype = {
             return a.index - b.index;
         });
     }
-};
+});
 
