@@ -687,12 +687,12 @@ var BattleField = cc.Class.extend({
             //如果是当前登陆角色的英雄dead 则挑战失败
             if (this.checkPlayerLost()) {
                 console.log('挑战失败');
-                this.reset(PlayerData.getStageData());
                 customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,this.challengedId);
+                this.reset(PlayerData.getStageData());
             } else if (this.checkBattleWin()) {
                 console.log('挑战胜利');
-                this.reset(PlayerData.getStageData());
                 customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,this.challengedId);
+                this.reset(PlayerData.getStageData());
             }
         } else {
             if (PlayerData.getStageData().isBossBattle()) {
