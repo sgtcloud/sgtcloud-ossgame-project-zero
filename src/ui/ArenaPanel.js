@@ -8,16 +8,17 @@ var ArenaPanel = BattleMenu.extend({
         this.panel = this.root;//cc.csLoader.createNode(res.pvp_layer_json).getChildByName('root');
         this.changeLayer = this.panel.getChildByName('change_btn');
         this.changeBtn = this.changeLayer.getChildByName('change');
-        this.changeText = this.changeLayer.getChildByName('change_text');
         this.buyLayer = this.panel.getChildByName('buy_btn');
         this.buyBtn = this.buyLayer.getChildByName('buy');
-        this.buyText = this.buyLayer.getChildByName('buy_text');
-        this.recordLayer = this.panel.getChildByName('record_btn');
-        this.recordBtn = this.buyLayer.getChildByName('record');
-        this.recordText = this.buyLayer.getChildByName('record_text');
-        this.surplusText = this.panel.getChildByName('surplus_text');//剩余次数
         this.surplusNum = this.panel.getChildByName('surplus_num');//剩余次数
         this.myNum_text = this.panel.getChildByName('myNum_text');//剩余次数
+        /*this.buyText = this.buyLayer.getChildByName('buy_text');
+         this.changeText = this.changeLayer.getChildByName('change_text');
+         this.recordLayer = this.panel.getChildByName('record_btn');
+         this.recordText = this.buyLayer.getChildByName('record_text');
+         this.surplusText = this.panel.getChildByName('surplus_text');//剩余次数文本
+         */
+        this.recordBtn = this.panel.getChildByName('record_btn').getChildByName('record');
         this.opponentBox = this.panel.getChildByName('opponent_box');//挑战者列表
         //setFont(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
         //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
@@ -32,22 +33,54 @@ var ArenaPanel = BattleMenu.extend({
         this._arenaService = Network.arenaService;
         this.surplusNum.setString(player.arena.times);
         this.buyBtn.addClickEventListener(this.purchaseTimes.bind(this));
-        this.challengeStatus={
-            STATUS_WIN:"victory",
-            STATUS_FIGHTING:"fighting",
-            STATUS_LOSE:"defeat"
+        this._recordPanel = ccs.csLoader.createNode(res.pvp_record);
+        var winSize = cc.winSize;
+        var w = this._recordPanel.width;
+        var h = this._recordPanel.height;
+        var _recordRoot = this._recordPanel.getChildByName('root');
+        _recordRoot.setPosition(cc.p((winSize.width - w) / 2, (winSize.height - h) / 2));
+        this._recordBox=_recordRoot.getChildByName('box');
+        this.recordItemTemplate = ccs.csLoader.createNode(res.pvp_record_view).getChildByName('root');
+        this.challengeStatus = {
+            STATUS_WIN: {value:"victory",text:'战胜'},
+            STATUS_FIGHTING: {value:"fighting",text:'战斗中...'},
+            STATUS_LOSE: {value:"defeat",text:'战败'}
+        };
+        this.challengeStatusTextMapping={};
+        for(var k in this.challengeStatus){
+            this.challengeStatusTextMapping[this.challengeStatus[k]['value']]=this.challengeStatus[k]['text'];
         }
+        this.recordBtn.addClickEventListener(this._openRecord.bind(this));
         this.init();
+    }, _openRecord: function () {
+        //this._recordPanel.setVisible(true);
+        this._recordBox.removeAllChildrenWithCleanup(true);
+        GamePopup.openPopup(this._recordPanel, null, false);
+        this._arenaService.getTopChallenges(player.id, 5, function (result, data) {
+            if (data) {
+                for (var i = 0, j = data.length; i < j; i++) {
+                    var item = this.recordItemTemplate.clone();
+                    var text = item.getChildByName('text');
+                    item.setPosition((this._recordBox.width - item.width) / 2, this._recordBox.height - (i+1) * item.height - i * 2);
+                    var status = data[i].status;
+                    var statusText=this.challengeStatusTextMapping[status];
+                    var challengeTime=new Date(data[i].createTime).Format('yyyy-MM-dd hh:mm:ss')
+                    text.setString(challengeTime);
+                    this._recordBox.addChild(item);
+                }
+            }
+        }.bind(this));
+    }, _hideRecord: function () {
+        this._recordPanel.setVisible(false);
     }, init: function () {
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data,this.challengeStatus.STATUS_WIN,'',function(){
-
-            })
+            this._arenaService.updateChallenge(data, this.challengeStatus.STATUS_WIN.value, '')
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-        });
+            this._arenaService.updateChallenge(data, this.challengeStatus.STATUS_LOSE.value, '');
+        }.bind(this));
         this.pullData();
     }, __unit2Text: function (unit) {
         switch (unit) {
@@ -142,7 +175,7 @@ var ArenaPanel = BattleMenu.extend({
 
             this._arenaService.createArenaChallenge(player.id, data.player.id, function (result, id) {
                 console.log('创建挑战成功，ID:' + id);
-                customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId:data.player.id,challengeId:id});
+                customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
                 player.arena.times--;
                 this.refreshTimes();
             }.bind(this));

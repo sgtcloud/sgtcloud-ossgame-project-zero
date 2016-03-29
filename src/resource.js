@@ -102,6 +102,8 @@ var res = {
     mail_layer_json: 'res/MailLayer.json',
     pvp_layer_json: 'res/PVPLayer.json',
     pvp_opponent_view_json: 'res/PVPOpponentView.json',
+    pvp_record: 'res/PVPRecord.json',
+    pvp_record_view:'res/PVPRecordView.json',
     recharge_icon_layer_json: 'res/RechargeIconLayer.json',
     recharge_layer_json: 'res/RechargeLayer.json',
 
