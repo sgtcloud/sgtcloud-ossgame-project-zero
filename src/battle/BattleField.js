@@ -583,7 +583,8 @@ var BattleField = cc.Class.extend({
                         PlayerData.updateIntoBattleTime();
                         this.countdown.playAnimation("1", false, function () {
                             this.countdown.playAnimation('ready', false, function () {
-                            });
+                                this.countdown.removeFromParent();
+                            }.bind(this));
                         }.bind(this));
                     }.bind(this));
                 } else {
