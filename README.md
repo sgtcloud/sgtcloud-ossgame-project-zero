@@ -126,21 +126,10 @@ LG Fx0 | N/A | N/A | N/A | N/A | N/A | N/A | Pass | N/A
 包含所有设计文档所述的原始图片素材，例如psd/png/jpg/tga等，和cocos studio制作的ui和精灵工程文件，例如ccs/cbs等。详细的介绍请看目录下的README.md。
 
 ```
-├── stage/          #战斗场景
-├── character/      #角色精灵
-├── enemy/          #敌人精灵
-├── effect/         #游戏特效
-├── icon/           #图标文件
-├── title/          #标题界面
+├── Genius/         #角色精灵
+├── HookGame/       #所有UI界面和控件
+├── cover/          #标题界面
 ├── loading/        #加载界面
-├── ui/             #ui资源
-|   ├──charactUI/   #角色界面
-|   ├──itemUI/      #物品界面
-|   ├──skillUI/     #技能界面
-|   ├──arenaUI/     #竞技场界面
-|   ├──rankUI/      #排行界面
-|   ├──shopUI/      #商店界面
-|   ├──...          #其他界面
 ├── README.md       #图片资源使用说明
 ```
 
