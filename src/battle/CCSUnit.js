@@ -17,17 +17,17 @@ var CCSUnit = cc.Node.extend({
      */
     initSprite: function (file, nodeName, defaultAnimName) {
         var json = ccs.load(file);
-        this.node = nodeName ? json.node.getChildByName(nodeName) : json.node;
-        this.node.removeFromParent();
+        node = nodeName ? json.node.getChildByName(nodeName) : json.node;
+        node.removeFromParent();
         this.animation = json.action;
         {
             //去除CCS导出文件位移会自带缓动效果的问题
             var timelines = this.animation.getTimelines();
             removeCCSAnimationDefaultTween(timelines);
         }
-        this.node.runAction(this.animation);
-        this.setContentSize(this.node.getContentSize());
-        this.addChild(this.node);
+        node.runAction(this.animation);
+        this.setContentSize(node.getContentSize());
+        this.addChild(node);
         if (this.debug) {
             var debugRect = new cc.DrawNode();
             this.addChild(debugRect);
