@@ -46,7 +46,7 @@ var MailPanel = cc.Node.extend({
         titleText.setString(mail.title || mail.fromName);
         setFont(titleText);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
-            var rewards = JSON.parse(mail.attachment);
+            var rewards = eval(mail.attachment);
             var descText = this.formatAttachment(rewards);
             desc_text.setString(descText);
             desc_text.setColor(TIPS_COLOR.YELLOW);
@@ -86,14 +86,24 @@ var MailPanel = cc.Node.extend({
         if (rewards instanceof Array) {
             if (rewards.length > 0) {
                 for (var i = 0; i < rewards.length; i++) {
-                    descText += CONSTS.resources_mapping[rewards[i]['unit']] + " * " + rewards[i]['value'] + ",";
+                    descText += this._processReward(rewards);
                 }
                 descText = descText.substr(0, descText.length - 1);
             } else {
                 return "";
             }
         } else {
-            descText = CONSTS.resources_mapping[rewards['unit']] + " * " + rewards['value'];
+            descText= this._processReward(rewards);
+        }
+        return descText;
+    },_processReward:function(rewards){
+        var descText='';
+        if(rewards.hasOwnProperty('unit')){
+            descText += CONSTS.resources_mapping[rewards[i]['unit']] + " * " + rewards[i]['value'] + ",";
+        }else {
+            for(var key in rewards[i]){
+                descText += CONSTS.resources_mapping[key] + " * " + rewards[i][key] + ",";
+            }
         }
         return descText;
     },
