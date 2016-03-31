@@ -660,10 +660,12 @@ var BattleField = cc.Class.extend({
      */
     prepareBattle: function (stage) {
         unschedule(this);
-        this.initBattleEnemies(stage);
-        this.updateEnemyLife();
-        this.notifyUpdateTopPanelStageState();
-        PlayerData.updateIntoBattleTime();
+        if(!this.arenaBattle){
+            this.initBattleEnemies(stage);
+            this.updateEnemyLife();
+            this.notifyUpdateTopPanelStageState();
+            PlayerData.updateIntoBattleTime();
+        }
     },
 
     showFairy: function () {
