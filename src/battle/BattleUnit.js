@@ -195,6 +195,7 @@ var BattleUnit = CCSUnit.extend({
                 this.buffIcons.splice(i, 1);
             }
         }
+        buffEffect.stopAllActions();
         buffEffect.removeFromParent(true);
         this.refreshBuffIcons();
     },
@@ -214,6 +215,7 @@ var BattleUnit = CCSUnit.extend({
     showBuffIcons: function () {
         for (var i in this.buffIcons) {
             this.buffIcons[i].setVisible(true);
+            this.buffIcons[i].resume();
         }
     },
 
@@ -223,6 +225,7 @@ var BattleUnit = CCSUnit.extend({
     hideBuffIcons: function () {
         for (var i in this.buffIcons) {
             this.buffIcons[i].setVisible(false);
+            this.buffIcons[i].pause();
         }
     },
 

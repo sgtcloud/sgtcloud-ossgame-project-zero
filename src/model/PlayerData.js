@@ -266,40 +266,6 @@ var PlayerDataClass = cc.Class.extend({
     },
     heroes: null,
     stageData: {},
-    globe_life_value: 0,
-    globe_life_rate: 0,
-    globe_attack_value: 0,
-    globe_attack_rate: 0,
-    /**
-     * attack rate buff
-     */
-    buff_attack_rate: 0,
-    globe_tap_value: 0,
-    globe_tap_rate: 0,
-    /**
-     * tap rate buff
-     */
-    buff_tap_rate: 0,
-    globe_gold_rate: 0,
-    /**
-     * gold rate buff
-     */
-    buff_gold_rate: 0,
-    globe_atk_period_rate: 0,
-    /**
-     * attack_period rate buff
-     */
-    buff_atk_period_rate: 0,
-    globe_ctr_chance_rate: 0,
-    /**
-     * ctr_chance rate buff
-     */
-    buff_ctr_chance_rate: 0,
-    globe_ctr_modify_rate: 0,
-    /**
-     * ctr_modify rate buff
-     */
-    buff_ctr_modify_rate: 0,
     refreshGlobeProps: function () {
         /**
          * resum the globe prop from every heroes
@@ -314,6 +280,30 @@ var PlayerDataClass = cc.Class.extend({
         this.globe_atk_period_rate = 0;
         this.globe_ctr_chance_rate = 0;
         this.globe_ctr_modify_rate = 0;
+        /**
+         * attack rate buff
+         */
+        this.buff_attack_rate = 0;
+        /**
+         * tap rate buff
+         */
+        this.buff_tap_rate = 0;
+        /**
+         * gold rate buff
+         */
+        this.buff_gold_rate = 0;
+        /**
+         * attack_period rate buff
+         */
+        this.buff_atk_period_rate = 0;
+        /**
+         * ctr_chance rate buff
+         */
+        this.buff_ctr_chance_rate = 0;
+        /**
+         * ctr_modify rate buff
+         */
+        this.buff_ctr_modify_rate = 0;
         for (var i in this.heroes) {
             this.globe_life_value += this.heroes[i]["globe_life_value"];
             this.globe_life_rate += this.heroes[i]["globe_life_rate"];

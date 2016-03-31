@@ -35,6 +35,7 @@ var ArenaHeroUnit = HeroUnit.extend({
             if(this.isCastSkill && this.getLife()/this.getMaxLife() * 5  < 3){
                 this.isCastSkill = false;
                 var randomSkill = this.getArenaHeroRandomSkill();
+                //console.log("randomSkill==============================="+JSON.stringify(randomSkill));
                 if(randomSkill){
                     customEventHelper.sendEvent(EVENT.CAST_SKILL,{"id":this.playerId,"skill":randomSkill});
                 }
@@ -47,6 +48,13 @@ var ArenaHeroUnit = HeroUnit.extend({
             this.battle.updateEnemyLife();
         }
     },
+    onClear: function () {
+        this._super();
+        this.tombstone.removeFromParent(this);
+        for(var i in this.buffIcons){
+            this.removeBuff(this.buffIcons[i]);
+        }
+    },
 
     onDead: function () {
         this.deadHandle();
@@ -56,7 +64,7 @@ var ArenaHeroUnit = HeroUnit.extend({
     ctor: function (battle, arenaHero) {
         this._super(battle,arenaHero);
         this.isCastSkill = true;
-        this.playerId = arenaHero._playerData.getPlayer().id;
+        this.playerId = arenaHero._playerId;
 
         if(this.playerId != player.id){
             this.setScale(-1, 1);
