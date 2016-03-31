@@ -39,16 +39,16 @@ var ArenaPanel = BattleMenu.extend({
         var h = this._recordPanel.height;
         var _recordRoot = this._recordPanel.getChildByName('root');
         _recordRoot.setPosition(cc.p((winSize.width - w) / 2, (winSize.height - h) / 2));
-        this._recordBox=_recordRoot.getChildByName('box');
+        this._recordBox = _recordRoot.getChildByName('box');
         this.recordItemTemplate = ccs.csLoader.createNode(res.pvp_record_view).getChildByName('root');
         this.challengeStatus = {
-            STATUS_WIN: {value:"victory",text:'战胜'},
-            STATUS_FIGHTING: {value:"fighting",text:'战斗中...'},
-            STATUS_LOSE: {value:"defeat",text:'战败'}
+            STATUS_WIN: {value: "victory", text: '战胜'},
+            STATUS_FIGHTING: {value: "fighting", text: '战斗中...'},
+            STATUS_LOSE: {value: "defeat", text: '战败'}
         };
-        this.challengeStatusTextMapping={};
-        for(var k in this.challengeStatus){
-            this.challengeStatusTextMapping[this.challengeStatus[k]['value']]=this.challengeStatus[k]['text'];
+        this.challengeStatusTextMapping = {};
+        for (var k in this.challengeStatus) {
+            this.challengeStatusTextMapping[this.challengeStatus[k]['value']] = this.challengeStatus[k]['text'];
         }
         this.recordBtn.addClickEventListener(this._openRecord.bind(this));
         this.init();
@@ -61,10 +61,10 @@ var ArenaPanel = BattleMenu.extend({
                 for (var i = 0, j = data.length; i < j; i++) {
                     var item = this.recordItemTemplate.clone();
                     var text = item.getChildByName('text');
-                    item.setPosition((this._recordBox.width - item.width) / 2, this._recordBox.height - (i+1) * item.height - i * 2);
+                    item.setPosition((this._recordBox.width - item.width) / 2, this._recordBox.height - (i + 1) * item.height - i * 2);
                     var status = data[i].status;
-                    var statusText=this.challengeStatusTextMapping[status];
-                    var challengeTime=new Date(data[i].createTime).Format('yyyy-MM-dd hh:mm:ss')
+                    var statusText = this.challengeStatusTextMapping[status];
+                    var challengeTime = new Date(data[i].createTime).Format('yyyy-MM-dd hh:mm:ss')
                     text.setString(challengeTime);
                     this._recordBox.addChild(item);
                 }
@@ -75,11 +75,15 @@ var ArenaPanel = BattleMenu.extend({
     }, init: function () {
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data, this.challengeStatus.STATUS_WIN.value, '')
+            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_WIN.value, '',function(){
+                console.log('挑战成功')
+            });
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data, this.challengeStatus.STATUS_LOSE.value, '');
+            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_LOSE.value, '',function(){
+                console.log('挑战失败')
+            });
         }.bind(this));
         this.pullData();
     }, __unit2Text: function (unit) {
@@ -171,13 +175,17 @@ var ArenaPanel = BattleMenu.extend({
             }.bind(this));
         } else {
             game.tabContainer.buttons['main']._selectedEvent();
-
-
             this._arenaService.createArenaChallenge(player.id, data.player.id, function (result, id) {
-                console.log('创建挑战成功，ID:' + id);
-                customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
-                player.arena.times--;
-                this.refreshTimes();
+                if (result) {
+                    if (id === this.challengeStatus.STATUS_FIGHTING.value){
+                        tip.toggle('正在接受挑战，请稍后再试');
+                        return ;
+                    }
+                    console.log('创建挑战成功，ID:' + id);
+                    customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
+                    player.arena.times--;
+                    this.refreshTimes();
+                }
             }.bind(this));
         }
     }, refreshTimes: function () {
