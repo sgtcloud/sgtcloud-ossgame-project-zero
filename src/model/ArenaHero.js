@@ -1,7 +1,7 @@
 var ArenaHero = Hero.extend({
-    ctor: function (heroData, playerData) {
+    ctor: function (heroData, playerId) {
         this.init(heroData);
-        this._playerData = playerData;
+        this._playerId = playerId;
         this.initLife();
         this.refreshProps();
     },
@@ -16,7 +16,7 @@ var ArenaHero = Hero.extend({
             var value = unlock['value'];
             switch (unit) {
                 case 'hero':
-                    var hero = this._playerData.getHeroById(value);
+                    var hero = PlayerData.create(this._playerId).getHeroById(value);
                     return hero.getLv() < 1;
                 default:
             }
@@ -35,7 +35,7 @@ var ArenaHero = Hero.extend({
         if (tmpVal) {
             val += tmpVal;
         }
-        tmpVal = this._playerData["globe_" + propName + "_value"];
+        tmpVal = PlayerData.create(this._playerId)["globe_" + propName + "_value"];
         if (tmpVal) {
             val += tmpVal;
         }
@@ -43,11 +43,11 @@ var ArenaHero = Hero.extend({
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        tmpVal = this._playerData["globe_" + propName + "_rate"];
+        tmpVal = PlayerData.create(this._playerId)["globe_" + propName + "_rate"];
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        tmpVal = this._playerData["tmp_" + propName + "_rate"];
+        tmpVal = PlayerData.create(this._playerId)["tmp_" + propName + "_rate"];
         if (tmpVal) {
             rate += tmpVal / 100;
         }

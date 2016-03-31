@@ -174,6 +174,9 @@ var HeroUnit = BattleUnit.extend({
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
             }
+        }else{
+            this.showBuffIcons();
+            this.refreshBuffIcons();
         }
     }
 });

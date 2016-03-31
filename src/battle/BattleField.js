@@ -170,6 +170,10 @@ var BattleField = cc.Class.extend({
             return true;
         }.bind(this), this.container);
 
+        PlayerDataClass.prototype.getArenaBattleStatus = function(){
+            return this.arenaBattle;
+        };
+
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
             var duration = event.getUserData();
             var shockActions = [];
@@ -482,11 +486,12 @@ var BattleField = cc.Class.extend({
         this.enemyUnits.clear();
         for (var i = 0; i < enemiesData.length; i++) {
             var data = enemiesData[i];
+            var enemy;
             if (this.arenaBattle) {
                 //var arenaHero = new ArenaHero(data);
-                var enemy = new ArenaHeroUnit(this, data);
+                enemy = new ArenaHeroUnit(this, data);
             } else {
-                var enemy = new EnemyUnit(this, data);
+                enemy = new EnemyUnit(this, data);
                 if (bossBattle) {
                     enemy.setScale(-1.5, 1.5);
                 }
@@ -542,6 +547,8 @@ var BattleField = cc.Class.extend({
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
         this.arenaBattle = false;
+        arenaHeroPlayerData = null;
+        arenaEnemyPlayerData = null;
         delete this.challengedId;
         this.initBattle(data);
     },
@@ -569,9 +576,9 @@ var BattleField = cc.Class.extend({
 
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
-                    var arenaHeroPlayerData = new ArenaPlayerData();
+                    arenaHeroPlayerData = new ArenaPlayerData();
                     arenaHeroPlayerData.init(player);
-                    var arenaEnemyPlayerData = new ArenaPlayerData();
+                    arenaEnemyPlayerData = new ArenaPlayerData();
                     arenaEnemyPlayerData.init(data);
                     //this.challengedPlayer = data;
                     this.countdown.playAnimation("2", false, function () {

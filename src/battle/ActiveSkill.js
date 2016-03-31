@@ -68,6 +68,18 @@ var ActiveSkill = cc.Class.extend({
                 this.effect = effects[j].type;
             }
         }
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            if (this.type !== this.TYPE_BUFF)
+                this.releaseEffectAnimations();
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
+            if (this.type !== this.TYPE_BUFF)
+                this.releaseEffectAnimations();
+        }.bind(this));
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
+            if (this.type !== this.TYPE_BUFF)
+                this.releaseEffectAnimations();
+        }.bind(this));
     },
 
     loadSkillEffectRes: function (filename, num, defaultAnimationName) {
@@ -116,20 +128,24 @@ var ActiveSkill = cc.Class.extend({
                 isCurrentPlayerHero = true;
             }
             if (this.targetType === this.ONE_ENEMY) {
-                this.targets = isCurrentPlayerHero ? [this.battle.findRandomEnemy()] : [this.battle.findRandomHero()];
+                var obj = isCurrentPlayerHero ? this.battle.findRandomEnemy() : this.battle.findRandomHero();
+                this.targets = cc.isObject(obj) ? [obj] : [];
             } else if (this.targetType === this.MULTI_HERO) {
                 this.targets = isCurrentPlayerHero ? this.battle.getAllHeroes().getAllLived():this.battle.getAllEnemies().getAllLived();
             } else if (this.targetType === this.ONE_HERO) {
-                this.targets = isCurrentPlayerHero ? [this.battle.findRandomHero()] : [this.battle.findRandomEnemy()];
+                var obj = isCurrentPlayerHero ? this.battle.findRandomHero() : this.battle.findRandomEnemy();
+                this.targets = cc.isObject(obj) ? [obj] : [obj];
             } else if (this.targetType === this.MULTI_ENEMY) {
                 this.targets = isCurrentPlayerHero ? this.battle.getAllEnemies().getAllLived():this.battle.getAllHeroes().getAllLived();
             }
         }else  if (this.targetType === this.ONE_ENEMY) {
-            this.targets = [this.battle.findNextEnemy()]
+            var enemy =  this.battle.findNextEnemy();
+            this.targets =cc.isObject(enemy) ? [enemy] : [];
         } else if (this.targetType === this.MULTI_HERO) {
             this.targets = this.battle.getAllHeroes().getAllLived();
         } else if (this.targetType === this.ONE_HERO) {
-            this.targets = [this.battle.findRandomHero()];
+            var hero =  this.battle.findRandomHero();
+            this.targets =cc.isObject(hero) ? [hero] : [];
         } else if (this.targetType === this.MULTI_ENEMY) {
             this.targets = this.battle.getAllEnemies().getAllLived();
         }
@@ -256,8 +272,8 @@ var ActiveSkill = cc.Class.extend({
     },
 
     startBuffEffect: function () {
-        if (PlayerData[this.effect]) {
-            PlayerData[this.effect] += this.effectValue;
+        if (PlayerData.create(this.playerId)[this.effect]) {
+            PlayerData.create(this.playerId)[this.effect] += this.effectValue;
         }
         for (var i in this.targets) {
             this.buffIcons[i].setScale(0.3);
@@ -267,8 +283,8 @@ var ActiveSkill = cc.Class.extend({
     },
 
     clearBuffEffect: function () {
-        if (PlayerData[this.effect]) {
-            PlayerData[this.effect] -= this.effectValue;
+        if (PlayerData.create(this.playerId)[this.effect]) {
+            PlayerData.create(this.playerId)[this.effect] -= this.effectValue;
         }
         for (var i in this.targets) {
             this.targets[i].removeBuff(this.buffIcons[i]);
