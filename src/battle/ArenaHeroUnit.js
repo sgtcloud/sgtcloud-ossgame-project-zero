@@ -74,7 +74,10 @@ var ArenaHeroUnit = HeroUnit.extend({
     bindListeners: function(){
         //竞技场不需要英雄绑定事件
     },
-    onEnter: function () {
-        this._super();
+    onEnterHandle: function(){
+
+    },
+    onReviveCountTime: function(){
+
     }
 });

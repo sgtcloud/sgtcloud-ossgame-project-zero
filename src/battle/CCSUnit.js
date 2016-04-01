@@ -48,6 +48,9 @@ var CCSUnit = cc.Node.extend({
      * @param callback 动画播放完毕回调
      */
     playAnimation: function (name, loop, callback) {
+        if(name === 'hit' && this.isMove){
+            return ;
+        }
         if (callback) {
             var done = false;
             this.animation.setLastFrameCallFunc(function () {
