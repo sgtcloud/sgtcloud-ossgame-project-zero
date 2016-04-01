@@ -40,8 +40,10 @@ var HeroUnit = BattleUnit.extend({
         }
     },
     moveHandle: function (target) {
+        this.isMove = true;
         this.playAnimation('atk', false, function () {
             this.playAnimation("stand", true);
+            this.isMove = false;
         }.bind(this));
         var rand = Math.random();
         var ctr_chance = this.hero.getCtrChance();

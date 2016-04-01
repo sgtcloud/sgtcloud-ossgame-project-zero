@@ -596,7 +596,7 @@ var BattleField = cc.Class.extend({
                     }.bind(this));
                 } else {
                     tip.toggle('挑战异常');
-                    this.reset(PlayerData.getStageData());
+                    //this.reset(PlayerData.getStageData());
                 }
             }.bind(this));
         }.bind(this));
