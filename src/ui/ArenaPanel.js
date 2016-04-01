@@ -75,15 +75,24 @@ var ArenaPanel = BattleMenu.extend({
     }, init: function () {
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_WIN.value, '',function(){
+            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_WIN.value, '',function(flag,resultData){
                 console.log('挑战成功')
-            });
+                if(flag){
+                    console.log(resultData)
+                    console.log(typeof resultData)
+                    game.arentResultTip.toggleWin(resultData);
+                }
+            }.bind(this));
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_LOSE.value, '',function(){
+            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_LOSE.value, '',function(flag,resultData){
                 console.log('挑战失败')
-            });
+                if(flag){
+                    resultData['rank']=this.rank;
+                    game.arentResultTip.toggleLose(resultData);
+                }
+            }.bind(this));
         }.bind(this));
         this.pullData();
     }, __unit2Text: function (unit) {
@@ -194,7 +203,8 @@ var ArenaPanel = BattleMenu.extend({
     }, refreshItems: function (index) {
         this.opponentBox.removeAllChildrenWithCleanup(true);
         var items;
-        this.myNum_text.setString(index + 1);
+        this.rank=index+1;
+        this.myNum_text.setString(this.rank);
         if (index < 5) {
             items = this._indexInner5(index);
         } else if (index <= 30) {

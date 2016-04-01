@@ -229,6 +229,7 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 ##### 代码导读
 
 [battle模块代码导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/battle%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E5%AF%BC%E8%AF%BB)
+[数据模型导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B)
 
 ##### 联网功能依赖
 

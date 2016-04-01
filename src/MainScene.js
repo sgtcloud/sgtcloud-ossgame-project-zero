@@ -34,6 +34,7 @@ var MainScene = cc.Scene.extend({
         var buffList = buffListNode.getChildByName('buff_list');
         buffList.setTouchEnabled(false);
         window.tip = new Tip(this);
+        this.arentResultTip=new ArenaResultTip(this);
         (function (w) {
 
             var buffArr = [];
