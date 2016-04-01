@@ -71,6 +71,16 @@
                 }
             }.bind(this));
         },
+        getSignature: function(){
+            SgtApi.WxCentralService.getSignature(function (result, data) {
+                if (result)
+                    this.autoWxLoginService(data);
+                else {
+                    console.error("获取签名失败");
+                    this.loginSuccess = false;
+                }
+            }.bind(this));
+        },
         //初始化业务+自动登录
         initAndAutoLogin: function () {
             if (SgtApi) {
@@ -82,24 +92,10 @@
                             SgtApi.context.access_token = data.access_token;
                             localStorage.setItem('sgt-' + SgtApi.context.appId + '-access_token', SgtApi.context.access_token);
                             localStorage.setItem('sgt-' + SgtApi.context.appId + '-openid', SgtApi.context.openid);
-                            SgtApi.WxCentralService.getSignature(function (result, data) {
-                                if (result)
-                                    this.autoWxLoginService(data);
-                                else {
-                                    console.error("获取签名失败");
-                                    this.loginSuccess = false;
-                                }
-                            }.bind(this));
+                            this.getSignature();
                         }.bind(this));
                     } else {
-                        SgtApi.WxCentralService.getSignature(function (result, data) {
-                            if (result)
-                                this.autoWxLoginService(data);
-                            else {
-                                console.error("获取签名失败");
-                                this.loginSuccess = false;
-                            }
-                        }.bind(this));
+                        this.getSignature();
                     }
                 } else {
                     this.autoLoginService();
