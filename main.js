@@ -85,7 +85,7 @@ cc.game.onStart = function () {
             console.log('All items have been processed successfully');
         }
     });*/
-
+    //localStorage
     async.parallel([function(cb){
         LoaderScene.preload(g_resources,cb,this);
     } ,function(cb){
