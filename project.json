@@ -40,6 +40,7 @@
     "src/ui/TabContainer.js",
     "src/MainScene.js",
     "src/ui/BattleMenu.js",
+    "src/ui/ArenaResultTip.js",
     "src/ui/ArenaPanel.js",
     "src/ui/ListViewMenu.js",
     "src/ui/SkillListMenu.js",
