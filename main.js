@@ -53,7 +53,6 @@ cc.game.onStart = function () {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-    //Network.initAndAutoLogin();
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? true : false);
     // Adjust viewport meta
@@ -62,52 +61,21 @@ cc.game.onStart = function () {
     cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.SHOW_ALL);
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
-    //var items = ["1", "2"];
-// 1.我们用setTimeout来模拟异步
-// 2.同时为了说明“并行迭代存在异步的情况下，每个元素的迭代完成的时间将无法保证”
-// 我们让第一个元素延时300ms执行，第二个延时200ms，第三个延时100ms
-    /*async.each(items, function (item, callback) {
-        if(item == '1'){
-            LoaderScene.preload(g_resources,function(){
-                callback();
-            },this);
-        }else{
-            Network.initAndAutoLogin();
-            callback();
-        }
-    }, function (err) {
-        // err是由迭代器的回调函数传入
-        if (err) {
-            // 在迭代某个元素是传入了err.
-            // 官网的注释说是传入错误的话，后面的迭代将会终止，而事实并未终止，"1 is processed!"依旧被输出了.
-            console.log('Failed to process : ' + err);
-        } else {
-            console.log('All items have been processed successfully');
-        }
-    });*/
     //localStorage
     async.parallel([function(cb){
-        LoaderScene.preload(g_resources,cb,this);
+        loadRes(cb,this);
     } ,function(cb){
-        Network.initAndAutoLogin();
-         cb(null,'initAndAutoLogin');
+        Network.initAndAutoLogin(cb);
+         // cb(null,'initAndAutoLogin');
     }],function(err){
         if(err){
-            console.log('出错了');
+            console.log('出错了'+JSON.stringify(err));
         }else{
             console.log('成功了');
-        }
-    });
-    //load resources
-    /*async.map(null, [Network.initAndAutoLogin(), LoaderScene.preload(g_resources)], function (result) {
-        console.log(result);
-        //console.log(err);
-        //console.log(args);
-        if (Network.isLoginSuccess()) {
             initDatas();
             showCover();
         }
-    }.bind(this));*/
+    });
     /* LoaderScene.preload(g_resources, function () {
      // cc.director.runScene(new HelloWorldScene());
      if (Network.isLoginSuccess()) {

@@ -11,7 +11,7 @@
             return this.loginSuccess;
         },
         //微信自动登录业务
-        autoWxLoginService: function (wxInfo) {
+        autoWxLoginService: function (wxInfo,cb) {
             wx.config({
                 debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
                 appId: wxInfo.result.wxAppId, // 必填，公众号的唯一标识
@@ -33,10 +33,12 @@
                                     if (result) {
                                         console.log(data);
                                         //登陆成功 获取用户存档
-                                        this.getPlayerSave(data.userid);
+                                        // this.getPlayerSave();
+                                        cb();
                                     } else {
-                                        console.error("注册失败");
-                                        this.loginSuccess = false;
+                                        // console.error("注册失败");
+                                        cb("注册失败");
+                                        // this.loginSuccess = false;
                                         //注册失败
                                     }
                                 }.bind(this));
@@ -48,7 +50,7 @@
                     } else {
                         console.log(data);
                         //登陆成功 获取用户存档
-                        this.getPlayerSave();
+                        this.getPlayerSave(cb);
                     }
                 }.bind(this));
             } else {
@@ -57,32 +59,34 @@
             }
         },
         //一般自动登录业务
-        autoLoginService: function () {
+        autoLoginService: function (cb) {
             SgtApi.UserService.quickLogin(function (result, user) {
                 if (result) {
                     if (user !== null) {
-                        console.log("自动注册成功" + user);
+                        // console.log("自动注册成功" + user);
                         //登陆成功 获取用户存档
-                        this.getPlayerSave();
+                        this.getPlayerSave(cb);
                     }
                 } else {
-                    console.error('快速注册失败。');
-                    this.loginSuccess = false;
+                    // console.error('快速注册失败。');
+                    cb('快速注册失败。');
+                    // this.loginSuccess = false;
                 }
             }.bind(this));
         },
-        getSignature: function(){
+        getSignature: function(cb){
             SgtApi.WxCentralService.getSignature(function (result, data) {
                 if (result)
-                    this.autoWxLoginService(data);
+                    this.autoWxLoginService(data,cb);
                 else {
-                    console.error("获取签名失败");
-                    this.loginSuccess = false;
+                    // console.error("获取签名失败");
+                    cb("获取签名失败");
+                    // this.loginSuccess = false;
                 }
             }.bind(this));
         },
         //初始化业务+自动登录
-        initAndAutoLogin: function () {
+        initAndAutoLogin: function (cb) {
             if (SgtApi) {
                 SgtApi.init({appId: 'h5game', async: true});
                 if (typeof wx != "undefined" && is_weixin()) {
@@ -92,13 +96,13 @@
                             SgtApi.context.access_token = data.access_token;
                             localStorage.setItem('sgt-' + SgtApi.context.appId + '-access_token', SgtApi.context.access_token);
                             localStorage.setItem('sgt-' + SgtApi.context.appId + '-openid', SgtApi.context.openid);
-                            this.getSignature();
+                            this.getSignature(cb);
                         }.bind(this));
                     } else {
-                        this.getSignature();
+                        this.getSignature(cb);
                     }
                 } else {
-                    this.autoLoginService();
+                    this.autoLoginService(cb);
                 }
                 //同步服务器时间
                 this.syncServerTime();
@@ -107,6 +111,8 @@
                 }, 100);
                 //同步服务器时间 10分钟校正服务器本地时间
                 //setInterval(syncTime,600*1000);
+            }else{
+                return cb('上下文中没有引入sgt-sdk');
             }
         },
 
@@ -124,12 +130,12 @@
             });
         },
         //获取角色信息+存档信息（扩展信息）
-        getPlayerSave: function () {
+        getPlayerSave: function (cb) {
             sgt.PlayerService.getByUserId(sgt.context.user.userid, function (result, data) {
-                console.log("getByUserId" + result);
+                // console.log("getByUserId" + result);
                 this.buildCustomService();
                 if (result) {
-                    console.log("成功获取用户角色" + data);
+                    // console.log("成功获取用户角色" + data);
                     if (cc.isArray(data) && data.length > 0) {
                         var playerData = data[0];
                         PlayerData.modelPlayer = playerData;
@@ -142,17 +148,22 @@
                                 } else {
                                     //没有存档
                                     //PlayerData.init();
-                                    console.log("当前用户没有存档");
+                                    // console.log("当前用户没有存档");
                                 }
+                                cb();
+                            }else{
+                                cb('获取存档出错');
                             }
                         });
                     } else {
                         //未创建用户
-                        console.log("未创建角色");
+                        // console.log("未创建角色");
+                        cb();
                     }
                 } else {
-                    console.error("失败获取用户角色" + data);
-                    this.loginSuccess = false;
+                    // console.error("失败获取用户角色" + data);
+                    cb("失败获取用户角色" + data);
+                    // this.loginSuccess = false;
                 }
             }.bind(this))
         },
