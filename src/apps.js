@@ -633,13 +633,3 @@ function buildDesc(effects, desc, extend) {
     var desc = desc.mapping(effectsObj)
     return desc;
 }
-
-function loadRes(cb,target){
-    var mark = localStorage.getItem('mark-sgt-html5-game');
-    if(mark){
-        getFirstResources(false);
-    }else{
-        localStorage.setItem('mark-sgt-html5-game',1);
-    }
-    LoaderScene.preload(g_resources,cb,target);
-}

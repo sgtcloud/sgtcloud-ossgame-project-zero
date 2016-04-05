@@ -6,7 +6,6 @@ function initDatas() {
     dataSource.equips = cc.loader.getRes(res_datas.equips_json);
     dataSource.skills = cc.loader.getRes(res_datas.skills_json);
     dataSource.goods = cc.loader.getRes(res_datas.goods_json);
-    dataSource.players = cc.loader.getRes(res_datas.players_json);
     dataSource.bonus = cc.loader.getRes(res_datas.bonus_json);
 }
 

@@ -62,20 +62,54 @@ cc.game.onStart = function () {
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
     //localStorage
-    async.parallel([function(cb){
-        loadRes(cb,this);
-    } ,function(cb){
-        Network.initAndAutoLogin(cb);
-         // cb(null,'initAndAutoLogin');
-    }],function(err){
-        if(err){
-            console.log('出错了'+JSON.stringify(err));
-        }else{
-            console.log('成功了');
-            initDatas();
-            showCover();
+    var mark = localStorage.getItem('mark-sgt-html5-game');
+    async.parallel([function (cb) {
+        if (mark) {
+            getFirstResources(false);
+            LoaderScene.preload(full_resouces, cb, this);
+        } else {
+            localStorage.setItem('mark-sgt-html5-game', 1);
+           cb();
         }
+    }, function (cb) {
+        Network.initAndAutoLogin(cb);
+        // cb(null,'initAndAutoLogin');
+    }], function (err) {
+        if (err) {
+            console.log('出错了' + JSON.stringify(err));
+        } else {
+            if (!mark) {
+                console.log('成功了');
+                if (PlayerData.modelPlayer) {
+                    getFirstResources(true, false);
+                } else {
+                    getFirstResources(true, true);
+                }
+                async.series({
+                        "flag1": function (callback) {
+                            LoaderScene.preload(first_resources, function () {
+                                initDatas();
+                                showCover();
+                                callback(null,"flag1");
+                            }, this);
+                        }, "flag2": function (callback) {
+                        //异步加载全部资源
+                        cc.loader.load(full_resouces, function () {
+                             callback(null,"flag2");
+                        });
+                    }
+                }, function (callback) {
+                    console.log(callback);
+                });
+            } else {
+                initDatas();
+                showCover();
+            }
+        }
+
     });
+    getFirstResources(true, false);
+
     /* LoaderScene.preload(g_resources, function () {
      // cc.director.runScene(new HelloWorldScene());
      if (Network.isLoginSuccess()) {
