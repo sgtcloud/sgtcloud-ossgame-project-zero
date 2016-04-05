@@ -172,7 +172,7 @@ var BattleField = cc.Class.extend({
 
         PlayerDataClass.prototype.getArenaBattleStatus = function(){
             return this.arenaBattle;
-        };
+        }.bind(this);
 
         customEventHelper.bindListener(EVENT.SHOCK_BATTLE_FIELD, function (event) {
             var duration = event.getUserData();
@@ -207,7 +207,7 @@ var BattleField = cc.Class.extend({
             var data = event.getUserData();
             if (this.arenaBattle) {
                 activeSkill = new ActiveSkill(data.id, data.skill, this);
-            } else {
+            } else{
                 activeSkill = new ActiveSkill(player.id, data, this);
             }
             activeSkill.cast(this.container);
@@ -543,10 +543,10 @@ var BattleField = cc.Class.extend({
         this.heroUnits.foreach(callback);
     },
     reset: function (data) {
+        this.arenaBattle = false;
         this.heroUnits.clear();
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
-        this.arenaBattle = false;
         arenaHeroPlayerData = null;
         arenaEnemyPlayerData = null;
         delete this.challengedId;
@@ -557,8 +557,7 @@ var BattleField = cc.Class.extend({
      * @param stage
      */
     initBattle: function (stage) {
-        if (!this.arenaBattle)
-            this.loadStageBackground(stage);
+        this.loadStageBackground(stage);
         this.initBattleHeroes(PlayerData.getHeroes());
         this.prepareBattle(stage);
     },
@@ -697,12 +696,15 @@ var BattleField = cc.Class.extend({
             //如果是当前登陆角色的英雄dead 则挑战失败
             if (this.checkPlayerLost()) {
                 console.log('挑战失败');
-                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,this.challengedId);
+                var challengedId = this.challengedId;
                 this.reset(PlayerData.getStageData());
+                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,challengedId);
+
             } else if (this.checkBattleWin()) {
                 console.log('挑战胜利');
-                customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,this.challengedId);
+                var challengedId = this.challengedId;
                 this.reset(PlayerData.getStageData());
+                customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,challengedId);
             }
         } else {
             if (PlayerData.getStageData().isBossBattle()) {
