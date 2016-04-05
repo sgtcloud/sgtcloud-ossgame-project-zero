@@ -46,7 +46,7 @@ var MailPanel = cc.Node.extend({
         titleText.setString(mail.title || mail.fromName);
         setFont(titleText);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
-            var rewards = eval(mail.attachment);
+            var rewards = eval('('+mail.attachment+')');
             var descText = this.formatAttachment(rewards);
             desc_text.setString(descText);
             desc_text.setColor(TIPS_COLOR.YELLOW);
