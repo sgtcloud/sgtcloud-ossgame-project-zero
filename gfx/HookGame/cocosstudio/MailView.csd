@@ -19,18 +19,18 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="-1895572027" Tag="223" IconVisible="False" LeftMargin="22.7596" RightMargin="419.2404" TopMargin="7.8588" BottomMargin="70.1412" FontSize="22" LabelText="奖励标题" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="88.0000" Y="22.0000" />
+              <AbstractNodeData Name="text" ActionTag="-1895572027" Tag="223" IconVisible="False" LeftMargin="22.7596" RightMargin="347.2404" TopMargin="7.8588" BottomMargin="70.1412" IsCustomSize="True" FontSize="22" LabelText="奖励标题" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="160.0000" Y="22.0000" />
                 <AnchorPoint />
                 <Position X="22.7596" Y="70.1412" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.0429" Y="0.7014" />
-                <PreSize X="0.1660" Y="0.2200" />
+                <PreSize X="0.3019" Y="0.2200" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="324877039" Tag="224" IconVisible="False" LeftMargin="22.7596" RightMargin="157.2404" TopMargin="34.8973" BottomMargin="15.1027" IsCustomSize="True" FontSize="18" LabelText="金币1000000，钻石1000000" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="desc_text" ActionTag="324877039" Tag="224" IconVisible="False" LeftMargin="22.7596" RightMargin="157.2404" TopMargin="34.8973" BottomMargin="15.1027" IsCustomSize="True" FontSize="18" LabelText="金币1000000，钻石1000000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="350.0000" Y="50.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="22.7596" Y="65.1027" />
