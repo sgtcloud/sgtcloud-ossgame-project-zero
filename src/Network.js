@@ -332,7 +332,7 @@
         ,
         getMyRankByType: function (leaderId, callback) {
             if(leaderId === 'pvp_rank'){
-                this.arenaService.addToEnd('pvp_rank',player.id,callback);
+                this.arenaService.getIndexFromLeaderBoard('pvp_rank',player.id,callback);
             }else {
                 SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, player.id, function(result,data){
                     if(result && cc.isObject(data)){
@@ -564,7 +564,7 @@
             SgtApi.MailService.sendMail(mail, callback);
         },
         buildCustomService: function () {
-            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "addToEnd", "fightResult", "checkInArena","createArenaChallenge","updateChallenge","getTopChallenges"]);
+            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard","pushAndInitTimesIfNecessity", "fightResult", "checkInArena","createArenaChallenge","updateChallenge","getTopChallenges"]);
         },
         initArenaBattle: function(id,callback){
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {

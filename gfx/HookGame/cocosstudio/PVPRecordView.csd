@@ -9,13 +9,13 @@
           <AbstractNodeData Name="root" ActionTag="518845777" Tag="337" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="400.0000" Y="80.0000" />
             <Children>
-              <AbstractNodeData Name="bg" ActionTag="686247959" Tag="338" IconVisible="False" LeftMargin="0.0000" RightMargin="0.0000" TopMargin="0.5208" BottomMargin="-0.5208" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="bg" ActionTag="686247959" Tag="338" IconVisible="False" TopMargin="0.5208" BottomMargin="-0.5208" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="400.0000" Y="80.0000" />
                 <AnchorPoint />
-                <Position X="0.0000" Y="-0.5208" />
+                <Position Y="-0.5208" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0000" Y="-0.0065" />
+                <PrePosition Y="-0.0065" />
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>

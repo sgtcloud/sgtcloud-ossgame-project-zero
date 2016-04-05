@@ -85,7 +85,7 @@
                 "Tag": 382,
                 "ActionTag": 1987873668,
                 "Size": {
-                  "X": 300.0,
+                  "X": 400.0,
                   "Y": 420.0
                 },
                 "Name": "bg",
@@ -105,6 +105,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -118,11 +120,11 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0208,
+                  "X": 0.0156,
                   "Y": 0.0133
                 },
                 "PreSize": {
-                  "X": 0.96,
+                  "X": 0.97,
                   "Y": 0.9714
                 },
                 "LeftMargin": 6.2383,
@@ -132,7 +134,7 @@
                 "Tag": 341,
                 "ActionTag": 785253769,
                 "Size": {
-                  "X": 288.0,
+                  "X": 388.0,
                   "Y": 408.0
                 },
                 "Name": "box",
@@ -141,7 +143,7 @@
             ],
             "ActionTag": 902370607,
             "Size": {
-              "X": 300.0,
+              "X": 400.0,
               "Y": 420.0
             },
             "Name": "root",
@@ -149,7 +151,7 @@
           }
         ],
         "Size": {
-          "X": 300.0,
+          "X": 400.0,
           "Y": 420.0
         },
         "Name": "Layer",
