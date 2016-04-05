@@ -72,7 +72,6 @@ var HeroUnit = BattleUnit.extend({
         this.recover = recover || this.hero.getRecover();
         customEventHelper.sendEvent(EVENT.HERO_DIE, this.hero);
         this.deadHandle();
-
         //battle.onHeroDead(this);
         //var lost = battle.checkPlayerLost();
         //if(lost){
