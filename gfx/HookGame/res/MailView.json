@@ -16,7 +16,6 @@
         "Children": [
           {
             "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
               "G": 200
@@ -87,14 +86,14 @@
                 "ActionTag": 2032535789,
                 "Size": {
                   "X": 530.0,
-                  "Y": 100.0
+                  "Y": 120.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 22,
+                "FontSize": 20,
                 "LabelText": "奖励标题",
                 "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
@@ -110,8 +109,8 @@
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 22.7596,
-                  "Y": 70.1412
+                  "X": 19.76,
+                  "Y": 90.1414
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -120,17 +119,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0429,
-                  "Y": 0.7014
+                  "X": 0.0373,
+                  "Y": 0.7512
                 },
                 "PreSize": {
                   "X": 0.3019,
-                  "Y": 0.22
+                  "Y": 0.1833
                 },
-                "LeftMargin": 22.7596,
-                "RightMargin": 347.2404,
-                "TopMargin": 7.8588,
-                "BottomMargin": 70.1412,
+                "LeftMargin": 19.76,
+                "RightMargin": 350.24,
+                "TopMargin": 7.8586,
+                "BottomMargin": 90.1414,
                 "Tag": 223,
                 "ActionTag": -1895572027,
                 "Size": {
@@ -142,7 +141,7 @@
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 18,
+                "FontSize": 16,
                 "LabelText": "金币1000000，钻石1000000",
                 "OutlineColor": {
                   "G": 0,
@@ -159,8 +158,8 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 22.7596,
-                  "Y": 65.1027
+                  "X": 20.7599,
+                  "Y": 89.1028
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -169,22 +168,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0429,
-                  "Y": 0.651
+                  "X": 0.0392,
+                  "Y": 0.7425
                 },
                 "PreSize": {
                   "X": 0.6604,
-                  "Y": 0.5
+                  "Y": 0.6667
                 },
-                "LeftMargin": 22.7596,
-                "RightMargin": 157.2404,
-                "TopMargin": 34.8973,
-                "BottomMargin": 15.1027,
+                "LeftMargin": 20.7599,
+                "RightMargin": 159.2401,
+                "TopMargin": 30.8972,
+                "BottomMargin": 9.1028,
                 "Tag": 224,
                 "ActionTag": 324877039,
                 "Size": {
                   "X": 350.0,
-                  "Y": 50.0
+                  "Y": 80.0
                 },
                 "Name": "desc_text",
                 "ctype": "TextObjectData"
@@ -208,8 +207,8 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 415.94,
-                  "Y": 32.338
+                  "X": 416.4518,
+                  "Y": 42.9147
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -218,17 +217,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7848,
-                  "Y": 0.3234
+                  "X": 0.7858,
+                  "Y": 0.3576
                 },
                 "PreSize": {
                   "X": 0.1698,
-                  "Y": 0.4
+                  "Y": 0.3333
                 },
-                "LeftMargin": 415.94,
-                "RightMargin": 24.06,
-                "TopMargin": 27.662,
-                "BottomMargin": 32.338,
+                "LeftMargin": 416.4518,
+                "RightMargin": 23.5482,
+                "TopMargin": 37.0853,
+                "BottomMargin": 42.9147,
                 "Tag": 241,
                 "Children": [
                   {
@@ -400,7 +399,7 @@
             "ActionTag": 41990754,
             "Size": {
               "X": 530.0,
-              "Y": 100.0
+              "Y": 120.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -408,7 +407,7 @@
         ],
         "Size": {
           "X": 530.0,
-          "Y": 100.0
+          "Y": 120.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

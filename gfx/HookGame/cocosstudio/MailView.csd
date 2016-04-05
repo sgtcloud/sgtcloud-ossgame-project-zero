@@ -4,13 +4,13 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="116" ctype="GameLayerObjectData">
-        <Size X="530.0000" Y="100.0000" />
+        <Size X="530.0000" Y="120.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="41990754" Tag="220" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="530.0000" Y="100.0000" />
+          <AbstractNodeData Name="root" ActionTag="41990754" Tag="220" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+            <Size X="530.0000" Y="120.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="2032535789" Tag="222" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
-                <Size X="530.0000" Y="100.0000" />
+                <Size X="530.0000" Y="120.0000" />
                 <AnchorPoint />
                 <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -19,29 +19,29 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="-1895572027" Tag="223" IconVisible="False" LeftMargin="22.7596" RightMargin="347.2404" TopMargin="7.8588" BottomMargin="70.1412" IsCustomSize="True" FontSize="22" LabelText="奖励标题" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="text" ActionTag="-1895572027" Tag="223" IconVisible="False" LeftMargin="19.7600" RightMargin="350.2400" TopMargin="7.8586" BottomMargin="90.1414" IsCustomSize="True" FontSize="20" LabelText="奖励标题" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="160.0000" Y="22.0000" />
                 <AnchorPoint />
-                <Position X="22.7596" Y="70.1412" />
+                <Position X="19.7600" Y="90.1414" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0429" Y="0.7014" />
-                <PreSize X="0.3019" Y="0.2200" />
+                <PrePosition X="0.0373" Y="0.7512" />
+                <PreSize X="0.3019" Y="0.1833" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="324877039" Tag="224" IconVisible="False" LeftMargin="22.7596" RightMargin="157.2404" TopMargin="34.8973" BottomMargin="15.1027" IsCustomSize="True" FontSize="18" LabelText="金币1000000，钻石1000000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="350.0000" Y="50.0000" />
+              <AbstractNodeData Name="desc_text" ActionTag="324877039" Tag="224" IconVisible="False" LeftMargin="20.7599" RightMargin="159.2401" TopMargin="30.8972" BottomMargin="9.1028" IsCustomSize="True" FontSize="16" LabelText="金币1000000，钻石1000000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="350.0000" Y="80.0000" />
                 <AnchorPoint ScaleY="1.0000" />
-                <Position X="22.7596" Y="65.1027" />
+                <Position X="20.7599" Y="89.1028" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0429" Y="0.6510" />
-                <PreSize X="0.6604" Y="0.5000" />
+                <PrePosition X="0.0392" Y="0.7425" />
+                <PreSize X="0.6604" Y="0.6667" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1652178287" Tag="241" IconVisible="False" LeftMargin="415.9400" RightMargin="24.0600" TopMargin="27.6620" BottomMargin="32.3380" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1652178287" Tag="241" IconVisible="False" LeftMargin="416.4518" RightMargin="23.5482" TopMargin="37.0853" BottomMargin="42.9147" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="90.0000" Y="40.0000" />
                 <Children>
                   <AbstractNodeData Name="btn" ActionTag="-1787313740" Tag="242" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -81,11 +81,11 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="415.9400" Y="32.3380" />
+                <Position X="416.4518" Y="42.9147" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7848" Y="0.3234" />
-                <PreSize X="0.1698" Y="0.4000" />
+                <PrePosition X="0.7858" Y="0.3576" />
+                <PreSize X="0.1698" Y="0.3333" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
