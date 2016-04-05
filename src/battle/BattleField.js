@@ -542,7 +542,7 @@ var BattleField = cc.Class.extend({
     foreachHeroSprite: function (callback) {
         this.heroUnits.foreach(callback);
     },
-    reset: function (data) {
+    reset: function () {
         this.heroUnits.clear();
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
@@ -550,7 +550,7 @@ var BattleField = cc.Class.extend({
         arenaEnemyPlayerData = null;
         delete this.challengedId;
         setTimeout(function(){
-            this.initBattle(data);
+            this.initBattle(PlayerData.getStageData());
         }.bind(this),2000);
     },
     /**
@@ -700,7 +700,7 @@ var BattleField = cc.Class.extend({
                 this.arenaBattle = false;
                 var challengedId = this.challengedId;
                 setTimeout(function(){
-                    this.reset(PlayerData.getStageData());
+                    this.reset();
                     customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,challengedId);
                 }.bind(this),1000);
             } else if (this.checkBattleWin()) {
@@ -708,7 +708,7 @@ var BattleField = cc.Class.extend({
                 this.arenaBattle = false;
                 var challengedId = this.challengedId;
                 setTimeout(function(){
-                    this.reset(PlayerData.getStageData());
+                    this.reset();
                     customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,challengedId);
                 }.bind(this),1000);
             }

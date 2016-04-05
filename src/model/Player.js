@@ -128,19 +128,18 @@ var player = {
     ]
 };
 var effect_props = ["life", "attack", "tap", "atk_period", "ctr_chance", "ctr_modify", "gold"];
-var PlayerData = {};
-PlayerData = new PlayerDataClass();
+var PlayerData = new PlayerDataClass();
 
-var arenaHeroPlayerData ;
+var arenaHeroPlayerData;
 
-var arenaEnemyPlayerData ;
+var arenaEnemyPlayerData;
 
-PlayerData.create = function(playerId){
-    if(playerId){
-        if(PlayerDataClass.prototype.getArenaBattleStatus()){
-            if(playerId === player.id){
+PlayerDataClass.create = function (playerId) {
+    if (playerId) {
+        if (PlayerDataClass.prototype.getArenaBattleStatus()) {
+            if (playerId === player.id) {
                 return arenaHeroPlayerData;
-            }else{
+            } else {
                 return arenaEnemyPlayerData;
             }
         }

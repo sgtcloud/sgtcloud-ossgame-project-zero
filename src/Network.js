@@ -302,8 +302,8 @@
         updatePlayerSave: function () {
             if (PlayerData.isUpdate) {
                 var playerExtra = new SgtApi.PlayerExtra();
-                playerExtra.content = JSON.stringify(player);
                 playerExtra.playerId = player.id;
+                playerExtra.content = JSON.stringify(player);
                 sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
                     console.log('上传存档：' + result + ",内容为" + data);
                 });

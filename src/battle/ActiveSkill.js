@@ -277,8 +277,8 @@ var ActiveSkill = cc.Class.extend({
     },
 
     startBuffEffect: function () {
-        if (PlayerData.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
-            PlayerData.create(this.battle.arenaBattle?null:this.playerId)[this.effect] += this.effectValue;
+        if (PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
+            PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect] += this.effectValue;
         }
         for (var i in this.targets) {
             this.buffIcons[i].setScale(0.3);
@@ -288,8 +288,8 @@ var ActiveSkill = cc.Class.extend({
     },
 
     clearBuffEffect: function () {
-        if (PlayerData.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
-            PlayerData.create(this.battle.arenaBattle?null:this.playerId)[this.effect] -= this.effectValue;
+        if (PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
+            PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect] -= this.effectValue;
         }
         for (var i in this.targets) {
             this.targets[i].removeBuff(this.buffIcons[i]);
