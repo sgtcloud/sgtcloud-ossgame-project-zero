@@ -47,10 +47,9 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 0.5385,
+              "X": 1.0,
               "Y": 1.0
             },
-            "RightMargin": 120.0,
             "Tag": 188,
             "Children": [
               {
@@ -192,7 +191,7 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 65.0,
+              "X": 0.0,
               "Y": 0.0
             },
             "Scale": {
@@ -202,15 +201,13 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.25,
+              "X": 0.0,
               "Y": 0.0
             },
             "PreSize": {
-              "X": 0.5385,
+              "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": 65.0,
-            "RightMargin": 55.0,
             "Tag": 179,
             "Children": [
               {
@@ -352,7 +349,7 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 115.0,
+              "X": 0.0,
               "Y": 0.0
             },
             "Scale": {
@@ -362,15 +359,13 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4423,
+              "X": 0.0,
               "Y": 0.0
             },
             "PreSize": {
-              "X": 0.5385,
+              "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": 115.0,
-            "RightMargin": 5.0,
             "Tag": 226,
             "Children": [
               {
@@ -638,7 +633,7 @@
           }
         ],
         "Size": {
-          "X": 260.0,
+          "X": 140.0,
           "Y": 80.0
         },
         "Name": "Layer",
