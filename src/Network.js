@@ -200,15 +200,26 @@
                 return callback(true);
             }
         },
-        _setAttachments: function (rewards, obj) {
-            if (obj.attachments.hasOwnProperty(rewards['unit'])) {
-                obj.attachments[rewards['unit']] += rewards['value'];
+        _setAttachments: function (reward, obj) {
+            var unit ;
+            var value ;
+            if(reward.hasOwnProperty('unit')){
+                unit = reward["unit"];
+                value = reward["value"];
+            }else{
+                for(var key in reward){
+                    unit = key;
+                    value = reward[key];
+                }
+            }
+            if (obj.attachments.hasOwnProperty(unit)) {
+                obj.attachments[unit] += value;
             } else {
-                obj.attachments[rewards['unit']] = rewards['value'];
+                obj.attachments[unit] = value;
             }
         },
         readAndPickAttachment: function (mail, obj, callback) {
-            var rewards = JSON.parse(mail.attachment);
+            var rewards = /*JSON.parse*/eval("("+mail.attachment+")");
             if (rewards instanceof Array) {
                 for (var i in rewards) {
                     this._setAttachments(rewards[i], obj);
