@@ -28,6 +28,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -64,7 +66,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": -0.5208
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -74,25 +76,27 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": -0.0065
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 1.0
                 },
+                "TopMargin": 0.5208,
+                "BottomMargin": -0.5208,
                 "Tag": 338,
                 "ActionTag": 686247959,
                 "Size": {
-                  "X": 288.0,
-                  "Y": 68.0
+                  "X": 400.0,
+                  "Y": 80.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 20,
-                "LabelText": "Text Label",
+                "FontSize": 16,
+                "LabelText": "XXXX-XX-XX XX:XX",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -108,8 +112,8 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 14.0006,
-                  "Y": 60.7797
+                  "X": 15.0004,
+                  "Y": 71.7795
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -118,22 +122,71 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0486,
-                  "Y": 0.8938
+                  "X": 0.0375,
+                  "Y": 0.8972
                 },
                 "PreSize": {
-                  "X": 0.9028,
-                  "Y": 0.7353
+                  "X": 0.65,
+                  "Y": 0.25
                 },
-                "LeftMargin": 14.0006,
-                "RightMargin": 13.9994,
-                "TopMargin": 7.2203,
-                "BottomMargin": 10.7797,
+                "LeftMargin": 15.0004,
+                "RightMargin": 124.9996,
+                "TopMargin": 8.2205,
+                "BottomMargin": 51.7795,
                 "Tag": 340,
                 "ActionTag": -59253797,
                 "Size": {
                   "X": 260.0,
-                  "Y": 50.0
+                  "Y": 20.0
+                },
+                "Name": "time",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 18,
+                "LabelText": "你挑战玩家【玩家名称】获胜，排名由XX升至XX",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 14.0004,
+                  "Y": 50.4458
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.035,
+                  "Y": 0.6306
+                },
+                "PreSize": {
+                  "X": 0.925,
+                  "Y": 0.5
+                },
+                "LeftMargin": 14.0004,
+                "RightMargin": 15.9996,
+                "TopMargin": 29.5542,
+                "BottomMargin": 10.4458,
+                "Tag": 85,
+                "ActionTag": -1407971952,
+                "Size": {
+                  "X": 370.0,
+                  "Y": 40.0
                 },
                 "Name": "text",
                 "ctype": "TextObjectData"
@@ -141,16 +194,16 @@
             ],
             "ActionTag": 518845777,
             "Size": {
-              "X": 288.0,
-              "Y": 68.0
+              "X": 400.0,
+              "Y": 80.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 288.0,
-          "Y": 68.0
+          "X": 400.0,
+          "Y": 80.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

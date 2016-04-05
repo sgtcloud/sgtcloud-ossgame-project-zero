@@ -93,6 +93,7 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 22,
                 "LabelText": "奖励标题",
                 "VerticalAlignmentType": "VT_Center",
@@ -123,17 +124,17 @@
                   "Y": 0.7014
                 },
                 "PreSize": {
-                  "X": 0.166,
+                  "X": 0.3019,
                   "Y": 0.22
                 },
                 "LeftMargin": 22.7596,
-                "RightMargin": 419.2404,
+                "RightMargin": 347.2404,
                 "TopMargin": 7.8588,
                 "BottomMargin": 70.1412,
                 "Tag": 223,
                 "ActionTag": -1895572027,
                 "Size": {
-                  "X": 88.0,
+                  "X": 160.0,
                   "Y": 22.0
                 },
                 "Name": "text",
@@ -143,7 +144,6 @@
                 "IsCustomSize": true,
                 "FontSize": 18,
                 "LabelText": "金币1000000，钻石1000000",
-                "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0

@@ -24,6 +24,7 @@ var ArenaPanel = BattleMenu.extend({
         //setColor(this.changeText,this.buyText,this.recordText,this.surplusNum,this.surplusText);
         this._arenakey = 'pvp_rank';
         this._itemTemplate = ccs.csLoader.createNode(res.pvp_opponent_view_json).getChildByName('root');
+        //this._itemTemplate.getChildByName('');
         this.changeBtn.addClickEventListener(function (e) {
             this.refreshItems(this._index);
         }.bind(this));
@@ -108,9 +109,8 @@ var ArenaPanel = BattleMenu.extend({
         ComplexPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
             CONSTS.arena_times_purchase, function (result) {
                 if (result) {
-                    player.arena.times += CONSTS.arena_times_purchase.times;
                     PlayerData.updateResource(CONSTS.arena_times_purchase);
-                    this.refreshTimes();
+                    this.refreshTimes(player.arena.times + CONSTS.arena_times_purchase.times);
                 }
             }.bind(this));
     }, pushItem: function (data, i) {
@@ -135,9 +135,12 @@ var ArenaPanel = BattleMenu.extend({
         }.bind(this));
         this.opponentBox.addChild(item);
     }, pullData: function () {
-        this._arenaService.addToEnd(this._arenakey, player.id, function (result, data) {
+        this._arenaService.pushAndInitTimesIfNecessity(this._arenakey, player.id, function (result, data) {
             if (result) {
-                this._index = data;
+                this._index = data['index'];
+                if(data['init']){
+                    this.refreshTimes(CONSTS.arena_challenge_times);
+                }
                 this.refreshItems(this._index);
             }
         }.bind(this));
@@ -192,12 +195,12 @@ var ArenaPanel = BattleMenu.extend({
                     }
                     console.log('创建挑战成功，ID:' + id);
                     customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
-                    player.arena.times--;
-                    this.refreshTimes();
+                    this.refreshTimes(player.arena.times--);
                 }
             }.bind(this));
         }
-    }, refreshTimes: function () {
+    }, refreshTimes: function (times) {
+        player.arena.times = times;
         PlayerData.updatePlayer();
         this.surplusNum.setString(player.arena.times);
     }, refreshItems: function (index) {

@@ -15,6 +15,4 @@ var ArenaPlayerData = PlayerDataClass.extend({
         }
         this.refreshGlobeProps();
     }
-
-
 });
