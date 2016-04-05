@@ -81,7 +81,7 @@
                 },
                 "PreSize": {
                   "X": 0.9677,
-                  "Y": 0.9286
+                  "Y": 0.9375
                 },
                 "RightMargin": 20.0,
                 "TopMargin": 50.0,
@@ -89,7 +89,7 @@
                 "ActionTag": -1975951940,
                 "Size": {
                   "X": 600.0,
-                  "Y": 650.0
+                  "Y": 750.0
                 },
                 "Name": "bg",
                 "ctype": "ImageViewObjectData"
@@ -118,11 +118,11 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0332,
-                  "Y": 0.1758
+                  "Y": 0.1538
                 },
                 "PreSize": {
                   "X": 0.9032,
-                  "Y": 0.6857
+                  "Y": 0.725
                 },
                 "LeftMargin": 20.5768,
                 "RightMargin": 39.4232,
@@ -132,7 +132,7 @@
                 "ActionTag": 1553888994,
                 "Size": {
                   "X": 560.0,
-                  "Y": 480.0
+                  "Y": 580.0
                 },
                 "Name": "view_bg",
                 "ctype": "ImageViewObjectData"
@@ -164,15 +164,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.483,
-                  "Y": 0.1353
+                  "Y": 0.1184
                 },
                 "PreSize": {
                   "X": 0.1613,
-                  "Y": 0.0571
+                  "Y": 0.05
                 },
                 "LeftMargin": 249.49,
                 "RightMargin": 270.51,
-                "TopMargin": 585.2957,
+                "TopMargin": 685.2957,
                 "BottomMargin": 74.7043,
                 "Tag": 203,
                 "ActionTag": 1529781592,
@@ -182,6 +182,59 @@
                 },
                 "Name": "num_bg",
                 "ctype": "ImageViewObjectData"
+              },
+              {
+                "DirectionType": "Vertical",
+                "IsBounceEnabled": true,
+                "ScrollDirectionType": 0,
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 34.7511,
+                  "Y": 140.9178
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0561,
+                  "Y": 0.1761
+                },
+                "PreSize": {
+                  "X": 0.8548,
+                  "Y": 0.6875
+                },
+                "LeftMargin": 34.7511,
+                "RightMargin": 55.2489,
+                "TopMargin": 109.0822,
+                "BottomMargin": 140.9178,
+                "Tag": 248,
+                "ActionTag": -456966373,
+                "Size": {
+                  "X": 530.0,
+                  "Y": 550.0
+                },
+                "Name": "list",
+                "ctype": "ListViewObjectData"
               },
               {
                 "IsCustomSize": true,
@@ -216,15 +269,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.483,
-                  "Y": 0.1367
+                  "Y": 0.1196
                 },
                 "PreSize": {
                   "X": 0.129,
-                  "Y": 0.0286
+                  "Y": 0.025
                 },
                 "LeftMargin": 259.49,
                 "RightMargin": 280.51,
-                "TopMargin": 594.2962,
+                "TopMargin": 694.2962,
                 "BottomMargin": 85.7038,
                 "Tag": 212,
                 "ActionTag": -1384916783,
@@ -265,15 +318,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.1379,
-                  "Y": 0.0348
+                  "Y": 0.0304
                 },
                 "PreSize": {
                   "X": 0.2419,
-                  "Y": 0.0857
+                  "Y": 0.075
                 },
                 "LeftMargin": 85.5283,
                 "RightMargin": 384.4717,
-                "TopMargin": 615.6408,
+                "TopMargin": 715.6408,
                 "BottomMargin": 24.3592,
                 "Tag": 204,
                 "Children": [
@@ -429,15 +482,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6023,
-                  "Y": 0.0351
+                  "Y": 0.0307
                 },
                 "PreSize": {
                   "X": 0.2419,
-                  "Y": 0.0857
+                  "Y": 0.075
                 },
                 "LeftMargin": 373.4464,
                 "RightMargin": 96.5536,
-                "TopMargin": 615.4396,
+                "TopMargin": 715.4396,
                 "BottomMargin": 24.5604,
                 "Tag": 208,
                 "Children": [
@@ -580,7 +633,7 @@
                 },
                 "Position": {
                   "X": 303.4828,
-                  "Y": 658.2842
+                  "Y": 757.2839
                 },
                 "Scale": {
                   "ScaleX": 2.6,
@@ -590,16 +643,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4895,
-                  "Y": 0.9404
+                  "Y": 0.9466
                 },
                 "PreSize": {
                   "X": 0.1984,
-                  "Y": 0.06
+                  "Y": 0.0525
                 },
                 "LeftMargin": 241.9828,
                 "RightMargin": 255.0172,
-                "TopMargin": 20.7158,
-                "BottomMargin": 637.2842,
+                "TopMargin": 21.7161,
+                "BottomMargin": 736.2839,
                 "Tag": 207,
                 "ActionTag": 92619797,
                 "Size": {
@@ -623,7 +676,7 @@
                 },
                 "Position": {
                   "X": 302.483,
-                  "Y": 664.2837
+                  "Y": 763.284
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -633,16 +686,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4879,
-                  "Y": 0.949
+                  "Y": 0.9541
                 },
                 "PreSize": {
                   "X": 0.2081,
-                  "Y": 0.0829
+                  "Y": 0.0725
                 },
                 "LeftMargin": 237.983,
                 "RightMargin": 253.017,
-                "TopMargin": 6.7163,
-                "BottomMargin": 635.2837,
+                "TopMargin": 7.716,
+                "BottomMargin": 734.284,
                 "CallBackType": "Click",
                 "Tag": 211,
                 "ActionTag": 856378625,
@@ -664,8 +717,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 563.749,
-                  "Y": 611.47
+                  "X": 563.7488,
+                  "Y": 716.4701
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -675,16 +728,16 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.9093,
-                  "Y": 0.8735
+                  "Y": 0.8956
                 },
                 "PreSize": {
                   "X": 0.0903,
-                  "Y": 0.0829
+                  "Y": 0.0725
                 },
-                "LeftMargin": 563.749,
-                "RightMargin": 0.251,
-                "TopMargin": 30.53,
-                "BottomMargin": 611.47,
+                "LeftMargin": 563.7488,
+                "RightMargin": 0.2512,
+                "TopMargin": 25.5299,
+                "BottomMargin": 716.4701,
                 "Tag": 213,
                 "ActionTag": 1384084568,
                 "Size": {
@@ -693,65 +746,12 @@
                 },
                 "Name": "close_btn",
                 "ctype": "ProjectNodeObjectData"
-              },
-              {
-                "DirectionType": "Vertical",
-                "IsBounceEnabled": true,
-                "ScrollDirectionType": 0,
-                "ClipAble": true,
-                "BackColorAlpha": 102,
-                "SingleColor": {
-                  "R": 150,
-                  "G": 150
-                },
-                "FirstColor": {
-                  "R": 150,
-                  "G": 150
-                },
-                "EndColor": {},
-                "ColorVector": {
-                  "ScaleY": 1.0
-                },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
-                "TouchEnable": true,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 34.7511,
-                  "Y": 140.9178
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0561,
-                  "Y": 0.2013
-                },
-                "PreSize": {
-                  "X": 0.8548,
-                  "Y": 0.6429
-                },
-                "LeftMargin": 34.7511,
-                "RightMargin": 55.2489,
-                "TopMargin": 109.0822,
-                "BottomMargin": 140.9178,
-                "Tag": 248,
-                "ActionTag": -456966373,
-                "Size": {
-                  "X": 530.0,
-                  "Y": 450.0
-                },
-                "Name": "list",
-                "ctype": "ListViewObjectData"
               }
             ],
             "ActionTag": 1459412196,
             "Size": {
               "X": 620.0,
-              "Y": 700.0
+              "Y": 800.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -759,7 +759,7 @@
         ],
         "Size": {
           "X": 620.0,
-          "Y": 700.0
+          "Y": 800.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
