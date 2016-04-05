@@ -37,9 +37,10 @@ var TabContainer = cc.Node.extend({
                         sender.setSelected(true);
                     }
                 }else{
-                    if(sender.name != 'main')
+                    if(sender.name != 'main'){
+                        tip.toggle('当前只处于竞技战斗中，不能切换菜单');
                         this.buttons[sender.name].setSelected(false);
-                    else{
+                    } else{
                         this.buttons[sender.name].setSelected(true);
                     }
                 }

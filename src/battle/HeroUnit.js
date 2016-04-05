@@ -11,7 +11,10 @@ var HeroUnit = BattleUnit.extend({
 
     update: function (dt) {
         this._super(dt);
+        this.onReviveCountTime(dt);
 
+    },
+    onReviveCountTime: function(dt){
         //复活倒计时逻辑
         if (this.isDead()) {
             this.recover = Math.max(0, this.recover - dt);
@@ -40,8 +43,10 @@ var HeroUnit = BattleUnit.extend({
         }
     },
     moveHandle: function (target) {
+        this.isMove = true;
         this.playAnimation('atk', false, function () {
             this.playAnimation("stand", true);
+            this.isMove = false;
         }.bind(this));
         var rand = Math.random();
         var ctr_chance = this.hero.getCtrChance();
@@ -162,6 +167,9 @@ var HeroUnit = BattleUnit.extend({
     },
     onEnter: function () {
         this._super();
+        this.onEnterHandle();
+    },
+    onEnterHandle: function(){
         if (this.hero.getCurrentLife() <= 0) {
             var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
             var currentTime = PlayerData.getServerTime();
@@ -174,9 +182,9 @@ var HeroUnit = BattleUnit.extend({
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
             }
-        }else{
+        }/*else{
             this.showBuffIcons();
             this.refreshBuffIcons();
-        }
+        }*/
     }
 });

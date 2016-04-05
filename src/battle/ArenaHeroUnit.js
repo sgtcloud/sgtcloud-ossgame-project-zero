@@ -36,7 +36,8 @@ var ArenaHeroUnit = HeroUnit.extend({
                 this.isCastSkill = false;
                 var randomSkill = this.getArenaHeroRandomSkill();
                 //console.log("randomSkill==============================="+JSON.stringify(randomSkill));
-                if(randomSkill){
+                if(this.battle.arenaBattle && randomSkill){
+                    //console.log("arenaBattle:"+this.battle.arenaBattle+","+JSON.stringify(randomSkill));
                     customEventHelper.sendEvent(EVENT.CAST_SKILL,{"id":this.playerId,"skill":randomSkill});
                 }
             }
@@ -74,7 +75,9 @@ var ArenaHeroUnit = HeroUnit.extend({
     bindListeners: function(){
         //竞技场不需要英雄绑定事件
     },
-    onEnter: function () {
-        this._super();
+    onEnterHandle: function(){
+    },
+    onReviveCountTime: function(){
+
     }
 });

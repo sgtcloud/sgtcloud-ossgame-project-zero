@@ -854,7 +854,7 @@
                   "Y": 0.9744
                 },
                 "PreSize": {
-                  "X": 0.0312,
+                  "X": 0.0313,
                   "Y": 0.0297
                 },
                 "LeftMargin": 313.0436,
@@ -1588,17 +1588,17 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/pack_icon.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
@@ -1623,8 +1623,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 607.5,
-                  "Y": 583.0896
+                  "X": 607.5861,
+                  "Y": 591.3192
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1633,19 +1633,19 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9492,
-                  "Y": 0.788
+                  "X": 0.9494,
+                  "Y": 0.7991
                 },
                 "PreSize": {
                   "X": 0.125,
                   "Y": 0.1081
                 },
-                "LeftMargin": 567.5,
-                "RightMargin": -7.5,
-                "TopMargin": 116.9104,
-                "BottomMargin": 543.0896,
-                "Tag": 70,
-                "ActionTag": -382374137,
+                "LeftMargin": 567.5861,
+                "RightMargin": -7.5861,
+                "TopMargin": 108.6808,
+                "BottomMargin": 551.3192,
+                "Tag": 151,
+                "ActionTag": -961389801,
                 "Size": {
                   "X": 80.0,
                   "Y": 80.0

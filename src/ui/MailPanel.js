@@ -46,9 +46,9 @@ var MailPanel = cc.Node.extend({
         titleText.setString(mail.title || mail.fromName);
         setFont(titleText);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
-            var rewards = eval(mail.attachment);
+            var rewards = eval('('+mail.attachment+')');
             var descText = this.formatAttachment(rewards);
-            desc_text.setString(descText);
+            desc_text.setString(mail.content+"\n"+descText);
             desc_text.setColor(TIPS_COLOR.YELLOW);
             var btnText = btn.getChildByName('get');
             var getRewardBtn = btn.getChildByName('btn');
@@ -66,7 +66,8 @@ var MailPanel = cc.Node.extend({
         } else {
             this.attachPicks.push(mail.id);
             btn.setVisible(false);
-            desc_text.setVisible(false);
+            //desc_text.setVisible(false);
+            desc_text.setString(mail.content);
         }
         this.listView.pushBackCustomItem(mailViewRootClone);
     },
@@ -86,7 +87,7 @@ var MailPanel = cc.Node.extend({
         if (rewards instanceof Array) {
             if (rewards.length > 0) {
                 for (var i = 0; i < rewards.length; i++) {
-                    descText += this._processReward(rewards);
+                    descText += this._processReward(rewards[i]);
                 }
                 descText = descText.substr(0, descText.length - 1);
             } else {
@@ -96,13 +97,13 @@ var MailPanel = cc.Node.extend({
             descText= this._processReward(rewards);
         }
         return descText;
-    },_processReward:function(rewards){
+    },_processReward:function(reward){
         var descText='';
-        if(rewards.hasOwnProperty('unit')){
-            descText += CONSTS.resources_mapping[rewards[i]['unit']] + " * " + rewards[i]['value'] + ",";
+        if(reward.hasOwnProperty('unit')){
+            descText += CONSTS.resources_mapping[reward['unit']] + " * " + reward['value'] + ",";
         }else {
-            for(var key in rewards[i]){
-                descText += CONSTS.resources_mapping[key] + " * " + rewards[i][key] + ",";
+            for(var key in reward){
+                descText += CONSTS.resources_mapping[key] + " * " + reward[key] + ",";
             }
         }
         return descText;
