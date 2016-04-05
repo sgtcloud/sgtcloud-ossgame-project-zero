@@ -54,7 +54,6 @@ var ArenaPanel = BattleMenu.extend({
         this.recordBtn.addClickEventListener(this._openRecord.bind(this));
         this.init();
     }, _openRecord: function () {
-        //this._recordPanel.setVisible(true);
         this._recordBox.removeAllChildrenWithCleanup(true);
         GamePopup.openPopup(this._recordPanel, null, false);
         this._arenaService.getTopChallenges(player.id, 5, function (result, data) {
@@ -79,9 +78,8 @@ var ArenaPanel = BattleMenu.extend({
             this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_WIN.value, '',function(flag,resultData){
                 console.log('挑战成功')
                 if(flag){
-                    console.log(resultData)
-                    console.log(typeof resultData)
                     game.arentResultTip.toggleWin(resultData);
+                    this.pullData();
                 }
             }.bind(this));
         }.bind(this));
@@ -92,6 +90,7 @@ var ArenaPanel = BattleMenu.extend({
                 if(flag){
                     resultData['rank']=this.rank;
                     game.arentResultTip.toggleLose(resultData);
+                    //this.pullData();
                 }
             }.bind(this));
         }.bind(this));
@@ -195,7 +194,7 @@ var ArenaPanel = BattleMenu.extend({
                     console.log('创建挑战成功，ID:' + id);
                     game.tabContainer.buttons['main']._selectedEvent();
                     customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
-                    this.refreshTimes(player.arena.times--);
+                    this.refreshTimes(--player.arena.times);
                 }
             }.bind(this));
         }
