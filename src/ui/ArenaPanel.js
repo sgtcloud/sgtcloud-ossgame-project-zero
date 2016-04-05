@@ -186,7 +186,6 @@ var ArenaPanel = BattleMenu.extend({
                     this.purchaseTimes();
             }.bind(this));
         } else {
-            game.tabContainer.buttons['main']._selectedEvent();
             this._arenaService.createArenaChallenge(player.id, data.player.id, function (result, id) {
                 if (result) {
                     if (id === this.challengeStatus.STATUS_FIGHTING.value){
@@ -194,6 +193,7 @@ var ArenaPanel = BattleMenu.extend({
                         return ;
                     }
                     console.log('创建挑战成功，ID:' + id);
+                    game.tabContainer.buttons['main']._selectedEvent();
                     customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
                     this.refreshTimes(player.arena.times--);
                 }
