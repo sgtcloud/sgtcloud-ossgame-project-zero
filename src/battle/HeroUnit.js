@@ -11,10 +11,10 @@ var HeroUnit = BattleUnit.extend({
 
     update: function (dt) {
         this._super(dt);
-        this.onReviveCountTime();
+        this.onReviveCountTime(dt);
 
     },
-    onReviveCountTime: function(){
+    onReviveCountTime: function(dt){
         //复活倒计时逻辑
         if (this.isDead()) {
             this.recover = Math.max(0, this.recover - dt);
@@ -182,9 +182,9 @@ var HeroUnit = BattleUnit.extend({
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
             }
-        }else{
+        }/*else{
             this.showBuffIcons();
             this.refreshBuffIcons();
-        }
+        }*/
     }
 });
