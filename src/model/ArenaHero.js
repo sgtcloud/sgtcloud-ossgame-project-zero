@@ -3,7 +3,7 @@ var ArenaHero = Hero.extend({
         this.init(heroData);
         this._playerId = playerId;
         this.refreshProps();
-        this.initLife();
+        //this.initLife();
     },
     initLife: function () {
         this._heroData.life = this.getLife();
