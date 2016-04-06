@@ -125,7 +125,7 @@ var HeroUnit = BattleUnit.extend({
     },
     onClear: function () {
         this._super();
-        this.tombstone.removeFromParent(this);
+        this.tombstone.removeFromParent(true);
         this.hideBuffIcons();
     },
     ctor: function (battle, hero) {
