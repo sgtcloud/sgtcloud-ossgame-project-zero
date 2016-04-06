@@ -660,7 +660,6 @@
         </Folder>
         <Project Name="RechargeIconLayer.csd" Type="Layer" />
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
-        <Project Name="PackageLayer.csd" Type="Layer" />
         <Project Name="SettlementLayer.csd" Type="Layer" />
         <Project Name="PromptIcon.csd" Type="Layer" />
         <Folder Name="settlement">
