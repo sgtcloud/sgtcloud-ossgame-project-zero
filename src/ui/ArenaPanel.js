@@ -194,7 +194,8 @@ var ArenaPanel = BattleMenu.extend({
             }
             var min=_index-base;
             var max=i<3?_index+base:_index;
-            var ranNum = Math.round(getRandomInt(min,max));
+            var random=getRandomInt(min,max);
+            var ranNum = Math.round(random);
             if (items.indexOf(ranNum) === -1 && index !== ranNum) {
                 items.push(ranNum);
                 i++;
