@@ -577,7 +577,7 @@ var BattleField = cc.Class.extend({
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
                     arenaHeroPlayerData = new ArenaPlayerData();
-                    arenaHeroPlayerData.init(player);
+                    arenaHeroPlayerData.init(JSON.parse(JSON.stringify(player)));
                     arenaEnemyPlayerData = new ArenaPlayerData();
                     arenaEnemyPlayerData.init(data);
                     //this.challengedPlayer = data;

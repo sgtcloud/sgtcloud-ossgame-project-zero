@@ -50,7 +50,7 @@ var ArenaHeroUnit = HeroUnit.extend({
         }
     },
     onClear: function () {
-        this._super();
+        this.removeFromParent(true);
         this.tombstone.removeFromParent(this);
         for(var i in this.buffIcons){
             this.removeBuff(this.buffIcons[i]);

@@ -216,10 +216,10 @@ var PlayerDataClass = cc.Class.extend({
 
     updateHeroDeadTime: function (id) {
         if (!this._player['time']['die'][id]) {
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                this._player['time']['die'][id] = data;
+            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                this._player['time']['die'][id] = this.getServerTime();
                 this.updatePlayer();
-            }.bind(this));
+            //}.bind(this));
         }
     },
     addPlayerNoPayOrders: function (order) {
