@@ -37,7 +37,7 @@ var ArenaResultTip = cc.Class.extend({
         this._toggle();
     }, toggleLose: function (data, flag) {
         var _reward = this._processReward(data);
-        if (!flag) {
+        if (typeof flag==='undefined'||flag) {
             PlayerData.updateResource(_reward);
         }
         this.rewardNum.setString(_reward['value']);
