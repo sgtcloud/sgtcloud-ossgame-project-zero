@@ -2,6 +2,7 @@ var ArenaHero = Hero.extend({
     ctor: function (heroData, playerId) {
         this.init(heroData);
         this._playerId = playerId;
+        this.refreshProps();
         this.initLife();
     },
     initLife: function () {
