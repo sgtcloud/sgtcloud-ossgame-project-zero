@@ -2,7 +2,8 @@ var ArenaHero = Hero.extend({
     ctor: function (heroData, playerId) {
         this.init(heroData);
         this._playerId = playerId;
-        this.initLife();
+        this.refreshProps();
+        //this.initLife();
     },
     initLife: function () {
         this._heroData.life = this.getLife();
@@ -15,7 +16,7 @@ var ArenaHero = Hero.extend({
             var value = unlock['value'];
             switch (unit) {
                 case 'hero':
-                    var hero = PlayerData.create(this._playerId).getHeroById(value);
+                    var hero = PlayerDataClass.create(this._playerId).getHeroById(value);
                     return hero.getLv() < 1;
                 default:
             }
@@ -34,7 +35,7 @@ var ArenaHero = Hero.extend({
         if (tmpVal) {
             val += tmpVal;
         }
-        tmpVal = PlayerData.create(this._playerId)["globe_" + propName + "_value"];
+        tmpVal = PlayerDataClass.create(this._playerId)["globe_" + propName + "_value"];
         if (tmpVal) {
             val += tmpVal;
         }
@@ -42,11 +43,11 @@ var ArenaHero = Hero.extend({
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        tmpVal = PlayerData.create(this._playerId)["globe_" + propName + "_rate"];
+        tmpVal = PlayerDataClass.create(this._playerId)["globe_" + propName + "_rate"];
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        tmpVal = PlayerData.create(this._playerId)["tmp_" + propName + "_rate"];
+        tmpVal = PlayerDataClass.create(this._playerId)["tmp_" + propName + "_rate"];
         if (tmpVal) {
             rate += tmpVal / 100;
         }

@@ -189,24 +189,25 @@ var SkillIcon = cc.Class.extend({
         return typeof cdStartTime !== 'undefined';
     },
     showCooldown: function (cd) {
+        var serverTime = PlayerData.getServerTime();
         if (typeof cd === 'undefined') {
             var cdtime = player['time']['cd'][this.skill.getId()];
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                cd = this.skill.getLevelData()['cooldown']
-                cd = cd - Math.round(data / 1000 - cdtime / 1000);
-                if (cd > 0) {
-                    this._doCoolDown(cd);
-                    console.log('%c ' + this.skill.getId() + ' init cooldown ' + Math.round(data / 1000 - cdtime / 1000), 'color:red')
-                } else {
-                    delete player['time']['cd'][this.skill.getId()];
-                    console.log('%c ' + this.skill.getId() + ' delete cooldown ' + Math.round(data / 1000 - cdtime / 1000), 'color:red')
-                }
-            }.bind(this));
+            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            cd = this.skill.getLevelData()['cooldown'];
+            cd = cd - Math.round(serverTime / 1000 - cdtime / 1000);
+            if (cd > 0) {
+                this._doCoolDown(cd);
+                console.log('%c ' + this.skill.getId() + ' init cooldown ' + Math.round(serverTime / 1000 - cdtime / 1000), 'color:red')
+            } else {
+                delete player['time']['cd'][this.skill.getId()];
+                console.log('%c ' + this.skill.getId() + ' delete cooldown ' + Math.round(serverTime / 1000 - cdtime / 1000), 'color:red')
+            }
+            //}.bind(this));
         } else if (cd > 0) {
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                player['time']['cd'][this.skill.getId()] = data;
-                PlayerData.updatePlayer();
-            }.bind(this));
+            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+            player['time']['cd'][this.skill.getId()] = serverTime;
+            PlayerData.updatePlayer();
+            //}.bind(this));
             this._doCoolDown(cd);
         }
     },

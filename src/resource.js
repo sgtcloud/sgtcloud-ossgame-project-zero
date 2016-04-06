@@ -129,7 +129,8 @@ var res = {
     guideHand: 'res/GuideHand.json',
     first_recharge_layer_json: 'res/FirstRechargeLayer.json',
     countdown_json: 'res/countdown.json',
-    arena_result_tip:'res/SettlementLayer.json'
+    arena_result_tip: 'res/SettlementLayer.json',
+    guide_skip_json: 'res/GuideSkip.json'
 };
 
 
