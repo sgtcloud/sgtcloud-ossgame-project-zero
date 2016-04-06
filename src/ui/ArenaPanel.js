@@ -71,15 +71,15 @@ var ArenaPanel = BattleMenu.extend({
                     var str = '';
                     if (data[i]['status'] === this.challengeStatus.STATUS_WIN.value) {
                         if (data[i]['challenger'] === player.id) {
-                            str = '挑战获胜，排名由' + data[i]['lowLevel'] + '升至' + data[i]['highLevel'];
+                            str = '你挑战【'+data[i]['targetName']+'】获胜，排名由' + data[i]['lowLevel'] + '升至' + data[i]['highLevel'];
                         } else {
-                            str = '被挑战失败，你的排名由' + (data[i]['highLevel']) + '降至' + (data[i]['lowLevel']);
+                            str = '【'+data[i]['targetName']+'】挑战你获胜，你的排名由' + (data[i]['highLevel']) + '降至' + (data[i]['lowLevel']);
                         }
                     } else if (data[i]['status'] === this.challengeStatus.STATUS_LOSE.value) {
                         if (data[i]['challenger'] === player.id) {
-                            str = '挑战失败，排名不变';
+                            str = '你挑战玩家【'+data[i]['targetName']+'】失败，排名不变';
                         } else {
-                            str = '被挑战获胜，排名不变';
+                            str = '【'+data[i]['targetName']+'】挑战你失败，排名不变';
                         }
                     }
                     text.setString(str);
