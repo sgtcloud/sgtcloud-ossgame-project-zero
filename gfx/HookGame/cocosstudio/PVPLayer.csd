@@ -39,7 +39,7 @@
                 <PreSize X="0.9531" Y="0.1919" />
                 <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="desc_text" ActionTag="-2075967408" Tag="286" IconVisible="False" LeftMargin="45.1059" RightMargin="44.8941" TopMargin="78.8746" BottomMargin="721.1254" IsCustomSize="True" FontSize="18" LabelText="1.挑战获得则获得对手排位&#xA;2.每日21：00结算竞技场奖励&#xA;3.奖励按照竞技场排名发放 " HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="desc_text" ActionTag="-2075967408" Tag="286" IconVisible="False" LeftMargin="45.1059" RightMargin="44.8941" TopMargin="78.8746" BottomMargin="721.1254" IsCustomSize="True" FontSize="17" LabelText="1.挑战获得则获得对手排位&#xA;2.每日21：00结算竞技场奖励&#xA;3.奖励按照竞技场排名发放 " HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="550.0000" Y="60.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="45.1059" Y="781.1254" />
