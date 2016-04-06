@@ -12,8 +12,8 @@ var HeroListMenu = ListViewMenu.extend({
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
         this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn1');
-        var difPose=this._upgrade_btnTemp.getPositionX();
-        this._upgradeBtnPosition.x+=difPose;
+        var difPose = this._upgrade_btnTemp.getPositionX();
+        this._upgradeBtnPosition.x += difPose;
         this._upgrade_btn100Temp = upgrade_btn_layoutTemp.getChildByName('btn100');
         this._upgrade_btn10Temp = upgrade_btn_layoutTemp.getChildByName('btn10');
         var maxLevelBtn_layoutTemp = this._heroTemp.getChildByName('MaxLevel');
@@ -253,7 +253,7 @@ var HeroListMenu = ListViewMenu.extend({
                 var resurge = hero.getResurge();
                 var cost = {unit: resurge['cost'], value: -resurge['value']}
                 PlayerData.updateResource([cost]);
-                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, cost);
                 customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                 PlayerData.updatePlayer();
             }
@@ -421,6 +421,10 @@ var HeroListMenu = ListViewMenu.extend({
         var itemData = this.items[itemId >= this.items.length ? this.items.length - 1 : itemId];
         var ite = itemData['root'];
         item.height = ite.height;
+        var pare = ite.getParent();
+        if (pare) {
+            ite.removeFromParent();
+        }
         item.addChild(ite);
         if (itemData['type'] === this.HERO_ITEM) {
             this._buildHeroView(itemData);
