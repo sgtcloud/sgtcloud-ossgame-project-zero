@@ -7,6 +7,8 @@ var ArenaPanel = BattleMenu.extend({
         this._super(tabPanel, res.pvp_layer_json);
         this.panel = this.root;//cc.csLoader.createNode(res.pvp_layer_json).getChildByName('root');
         this.changeLayer = this.panel.getChildByName('change_btn');
+        this.desc_text = this.panel.getChildByName('desc_text');
+        setFont(this.desc_text);
         this.changeBtn = this.changeLayer.getChildByName('change');
         this.buyLayer = this.panel.getChildByName('buy_btn');
         this.buyBtn = this.buyLayer.getChildByName('buy');
@@ -54,7 +56,6 @@ var ArenaPanel = BattleMenu.extend({
         this.recordBtn.addClickEventListener(this._openRecord.bind(this));
         this.init();
     }, _openRecord: function () {
-        //this._recordPanel.setVisible(true);
         this._recordBox.removeAllChildrenWithCleanup(true);
         GamePopup.openPopup(this._recordPanel, null, false);
         this._arenaService.getTopChallenges(player.id, 5, function (result, data) {
@@ -62,11 +63,28 @@ var ArenaPanel = BattleMenu.extend({
                 for (var i = 0, j = data.length; i < j; i++) {
                     var item = this.recordItemTemplate.clone();
                     var text = item.getChildByName('text');
-                    item.setPosition((this._recordBox.width - item.width) / 2, this._recordBox.height - (i + 1) * item.height - i * 2);
+                    var time = item.getChildByName('time');
+                    item.setPosition((this._recordBox.width - item.width) / 2, this._recordBox.height - (i + 1) * item.height - i * 1);
                     var status = data[i].status;
                     var statusText = this.challengeStatusTextMapping[status];
-                    var challengeTime = new Date(data[i].createTime).Format('yyyy-MM-dd hh:mm:ss')
-                    text.setString(challengeTime);
+                    var challengeTime = new Date(data[i].createTime).Format('yyyy-MM-dd hh:mm:ss');
+                    var str = '';
+                    if (data[i]['status'] === this.challengeStatus.STATUS_WIN.value) {
+                        if (data[i]['challenger'] === player.id) {
+                            str = '挑战获胜，排名由' + data[i]['lowLevel'] + '升至' + data[i]['highLevel'];
+                        } else {
+                            str = '被挑战失败，你的排名由' + (data[i]['highLevel']) + '降至' + (data[i]['lowLevel']);
+                        }
+                    } else if (data[i]['status'] === this.challengeStatus.STATUS_LOSE.value) {
+                        if (data[i]['challenger'] === player.id) {
+                            str = '挑战失败，排名不变';
+                        } else {
+                            str = '被挑战获胜，排名不变';
+                        }
+                    }
+                    text.setString(str);
+                    time.setString(challengeTime);
+                    setFont([text, time]);
                     this._recordBox.addChild(item);
                 }
             }
@@ -76,22 +94,22 @@ var ArenaPanel = BattleMenu.extend({
     }, init: function () {
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_WIN.value, '',function(flag,resultData){
+            this._arenaService.updateChallenge(data, this._arenakey, this.challengeStatus.STATUS_WIN.value, '', function (flag, resultData) {
                 console.log('挑战成功')
-                if(flag){
-                    console.log(resultData)
-                    console.log(typeof resultData)
+                if (flag) {
                     game.arentResultTip.toggleWin(resultData);
+                    this.pullData();
                 }
             }.bind(this));
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
-            this._arenaService.updateChallenge(data,this._arenakey, this.challengeStatus.STATUS_LOSE.value, '',function(flag,resultData){
+            this._arenaService.updateChallenge(data, this._arenakey, this.challengeStatus.STATUS_LOSE.value, '', function (flag, resultData) {
                 console.log('挑战失败')
-                if(flag){
-                    resultData['rank']=this.rank;
+                if (flag) {
+                    resultData['rank'] = this.rank;
                     game.arentResultTip.toggleLose(resultData);
+                    //this.pullData();
                 }
             }.bind(this));
         }.bind(this));
@@ -133,12 +151,13 @@ var ArenaPanel = BattleMenu.extend({
         btn.addClickEventListener(function (e) {
             this.challenge(data, e);
         }.bind(this));
+        setFont(player_name);
         this.opponentBox.addChild(item);
     }, pullData: function () {
         this._arenaService.pushAndInitTimesIfNecessity(this._arenakey, player.id, function (result, data) {
             if (result) {
                 this._index = data['index'];
-                if(data['init']){
+                if (data['init']) {
                     this.refreshTimes(CONSTS.arena_challenge_times);
                 }
                 this.refreshItems(this._index);
@@ -186,16 +205,16 @@ var ArenaPanel = BattleMenu.extend({
                     this.purchaseTimes();
             }.bind(this));
         } else {
-            game.tabContainer.buttons['main']._selectedEvent();
             this._arenaService.createArenaChallenge(player.id, data.player.id, function (result, id) {
                 if (result) {
-                    if (id === this.challengeStatus.STATUS_FIGHTING.value){
+                    if (id === this.challengeStatus.STATUS_FIGHTING.value) {
                         tip.toggle('正在接受挑战，请稍后再试');
-                        return ;
+                        return;
                     }
                     console.log('创建挑战成功，ID:' + id);
+                    game.tabContainer.buttons['main']._selectedEvent();
                     customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
-                    this.refreshTimes(player.arena.times--);
+                    this.refreshTimes(--player.arena.times);
                 }
             }.bind(this));
         }
@@ -206,7 +225,7 @@ var ArenaPanel = BattleMenu.extend({
     }, refreshItems: function (index) {
         this.opponentBox.removeAllChildrenWithCleanup(true);
         var items;
-        this.rank=index+1;
+        this.rank = index + 1;
         this.myNum_text.setString(this.rank);
         if (index < 5) {
             items = this._indexInner5(index);

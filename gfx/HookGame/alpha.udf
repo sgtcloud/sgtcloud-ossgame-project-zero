@@ -28,5 +28,31 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="FirstRechargeLayer.csd" />
+          <FilePathData Path="RechargeLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="FirstRechargeUI.csi" />
+          <FilePathData Path="ButtonUI.csi" />
+          <FilePathData Path="PVPRecordView.csd" />
+          <FilePathData Path="RankLayer.csd" />
+          <FilePathData Path="PVPRecord.csd" />
+          <FilePathData Path="PVPLayer.csd" />
+          <FilePathData Path="PVPOpponentView.csd" />
+          <FilePathData Path="MailLayer.csd" />
+          <FilePathData Path="MailView.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="GuideGirl.csd" />
+          <FilePathData Path="GuideHand.csd" />
+          <FilePathData Path="Guide.csd" />
+          <FilePathData Path="Btn_Upgrade1.csd" />
+          <FilePathData Path="GuideSkip.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="PVPLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
