@@ -87,5 +87,8 @@ var MainScene = cc.Scene.extend({
 
         var guideLayer = new sz.GuideLayer(this, guideConfig);
         this.addChild(guideLayer, 1000);
+        /*var guideSkip = CCSUnit.create(res.guide_skip_json);
+        guideSkip.setPosition(cc.p(550,900));
+        this.addChild(guideSkip,1000);*/
     }
 });

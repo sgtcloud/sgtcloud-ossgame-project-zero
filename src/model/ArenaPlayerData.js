@@ -14,7 +14,8 @@ var ArenaPlayerData = PlayerDataClass.extend({
             this.heroes.push(new ArenaHero(this._player.heroes[i],id));
         }
         this.refreshGlobeProps();
+        for(var i in this.heroes){
+            this.heroes[i].initLife();
+        }
     }
-
-
 });

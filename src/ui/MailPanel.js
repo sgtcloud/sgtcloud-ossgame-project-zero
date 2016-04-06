@@ -40,16 +40,18 @@ var MailPanel = cc.Node.extend({
         var mailViewRootClone = this.mailViewRoot.clone();
         var titleText = mailViewRootClone.getChildByName('text');
         var desc_text = mailViewRootClone.getChildByName('desc_text');
+        var time = mailViewRootClone.getChildByName('time');
+        var reward_text = mailViewRootClone.getChildByName('reward_text');
         var btn = mailViewRootClone.getChildByName('btn');
         btn.getChildByName('look').setVisible(false);
-
+        desc_text.setString(mail.content);
         titleText.setString(mail.title || mail.fromName);
-        setFont(titleText);
+        time.setString(this.formatTime(mail.sendTime));
+        setFont([titleText,desc_text]);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
             var rewards = eval('('+mail.attachment+')');
-            var descText = this.formatAttachment(rewards);
-            desc_text.setString(mail.content+"\n"+descText);
-            desc_text.setColor(TIPS_COLOR.YELLOW);
+            var rewardText = this.formatAttachment(rewards);
+            reward_text.setString(rewardText);
             var btnText = btn.getChildByName('get');
             var getRewardBtn = btn.getChildByName('btn');
             if (mail.attachStatus == 1) {
@@ -61,15 +63,32 @@ var MailPanel = cc.Node.extend({
             } else {
                 this.attachNoPickNum++;
                 //this.attachNoPicks.push(mail.id);
-                this.addBtnClickEventListener(getRewardBtn,btnText, mail, rewards, descText);
+                this.addBtnClickEventListener(getRewardBtn,btnText, mail, rewards, rewardText);
             }
         } else {
             this.attachPicks.push(mail.id);
             btn.setVisible(false);
-            //desc_text.setVisible(false);
-            desc_text.setString(mail.content);
+            reward_text.setVisible(false);
         }
         this.listView.pushBackCustomItem(mailViewRootClone);
+    },
+    formatTime: function(time){
+        if(!time){
+            return "未知";
+        }else{
+            var tempTime = (PlayerData.getServerTime() - time)/1000;
+            if(tempTime < 10){
+                return "刚刚";
+            }else if(tempTime < 60){
+                return Math.ceil(tempTime)+"秒前";
+            }else if(tempTime < 60 * 60){
+                return Math.ceil(tempTime/60)+"分钟前";
+            }else {
+                var date = new Date();
+                date.setTime(time);
+                return date.Format("yyyy-MM-dd hh:mm:ss");
+            }
+        }
     },
     addBtnClickEventListener: function (btn,btnText, mail, rewards, descText) {
         btn.addClickEventListener(function () {
@@ -120,7 +139,7 @@ var MailPanel = cc.Node.extend({
         }
     },
     openMailPopup: function () {
-        GamePopup.openPopup(this.mailLayer, cc.p(330, 680),false);
+        GamePopup.openPopup(this.mailLayer, cc.p(335, 585),false);
     },
     hiddenMailPopup: function () {
         GamePopup.closePopup(this.mailLayer);

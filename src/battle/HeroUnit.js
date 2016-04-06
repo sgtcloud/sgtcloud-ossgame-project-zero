@@ -72,7 +72,6 @@ var HeroUnit = BattleUnit.extend({
         this.recover = recover || this.hero.getRecover();
         customEventHelper.sendEvent(EVENT.HERO_DIE, this.hero);
         this.deadHandle();
-
         //battle.onHeroDead(this);
         //var lost = battle.checkPlayerLost();
         //if(lost){
@@ -126,7 +125,7 @@ var HeroUnit = BattleUnit.extend({
     },
     onClear: function () {
         this._super();
-        this.tombstone.removeFromParent(this);
+        this.tombstone.removeFromParent(true);
         this.hideBuffIcons();
     },
     ctor: function (battle, hero) {

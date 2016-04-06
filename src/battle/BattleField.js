@@ -542,15 +542,16 @@ var BattleField = cc.Class.extend({
     foreachHeroSprite: function (callback) {
         this.heroUnits.foreach(callback);
     },
-    reset: function (data) {
-        this.arenaBattle = false;
+    reset: function () {
         this.heroUnits.clear();
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
         arenaHeroPlayerData = null;
         arenaEnemyPlayerData = null;
         delete this.challengedId;
-        this.initBattle(data);
+        setTimeout(function(){
+            this.initBattle(PlayerData.getStageData());
+        }.bind(this),2000);
     },
     /**
      * 根据关卡数据初始化战斗，仅调用一次
@@ -576,7 +577,7 @@ var BattleField = cc.Class.extend({
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
                     arenaHeroPlayerData = new ArenaPlayerData();
-                    arenaHeroPlayerData.init(player);
+                    arenaHeroPlayerData.init(JSON.parse(JSON.stringify(player)));
                     arenaEnemyPlayerData = new ArenaPlayerData();
                     arenaEnemyPlayerData.init(data);
                     //this.challengedPlayer = data;
@@ -696,15 +697,20 @@ var BattleField = cc.Class.extend({
             //如果是当前登陆角色的英雄dead 则挑战失败
             if (this.checkPlayerLost()) {
                 console.log('挑战失败');
+                this.arenaBattle = false;
                 var challengedId = this.challengedId;
-                this.reset(PlayerData.getStageData());
-                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,challengedId);
-
+                setTimeout(function(){
+                    this.reset();
+                    customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE,challengedId);
+                }.bind(this),1000);
             } else if (this.checkBattleWin()) {
                 console.log('挑战胜利');
+                this.arenaBattle = false;
                 var challengedId = this.challengedId;
-                this.reset(PlayerData.getStageData());
-                customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,challengedId);
+                setTimeout(function(){
+                    this.reset();
+                    customEventHelper.sendEvent(EVENT.WIN_ARENA_BATTLE,challengedId);
+                }.bind(this),1000);
             }
         } else {
             if (PlayerData.getStageData().isBossBattle()) {

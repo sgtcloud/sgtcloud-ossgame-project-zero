@@ -628,7 +628,7 @@
       {
         "level": 1,
         "life": 96,
-        "attack": 0,
+        "attack": 2,
         "tap": 0,
         "atk_period": 1.55,
         "ctr_chance": 2,

@@ -18,22 +18,28 @@ var ArenaResultTip = cc.Class.extend({
         var height = size.height;
         var width = size.width;
         this.root.setPosition((width - tipWidth) / 2, (height - tipHeight) / 2);
-        this.close=this.root.getChildByName('close');
+        this.close = this.root.getChildByName('close');
         this.tip.setVisible(false);
-        bindTouchEventListener(function(){
+        bindTouchEventListener(function () {
             this.tip.setVisible(false);
-        }.bind(this),this.close);
+        }.bind(this), this.close);
         scene.addChild(this.tip, 110);
-    }, toggleWin: function (data) {
+    }, toggleWin: function (data, flag) {
         this.preWinNum.setString(data['lowLevel']);
         this.afterWinNum.setString(data['highLevel']);
         var _reward = this._processReward(data);
+        if (!flag) {
+            PlayerData.updateResource(_reward);
+        }
         this.rewardNum.setString(_reward['value']);
         this.lose.setVisible(false);
         this.win.setVisible(true);
         this._toggle();
-    }, toggleLose: function (data) {
+    }, toggleLose: function (data, flag) {
         var _reward = this._processReward(data);
+        if (typeof flag==='undefined'||flag) {
+            PlayerData.updateResource(_reward);
+        }
         this.rewardNum.setString(_reward['value']);
         this.preLoseNum.setString(data['rank']);
         this.lose.setVisible(true);
@@ -42,7 +48,7 @@ var ArenaResultTip = cc.Class.extend({
     }, _toggle: function () {
         this.tip.setVisible(true)
     }, _processReward: function (data) {
-        var reward = data['attachment'];
+        var reward = data['reward'];
         if (typeof reward === 'string') {
             reward = eval('(' + reward + ')')
         }

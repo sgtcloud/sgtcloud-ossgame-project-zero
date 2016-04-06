@@ -178,8 +178,8 @@
               },
               {
                 "IsCustomSize": true,
-                "FontSize": 20,
-                "LabelText": "1.挑战获得则获得对手排位\n2.每日21：00结算竞技场奖励\n3.奖励按照排名 ",
+                "FontSize": 17,
+                "LabelText": "1.挑战获得则获得对手排位\n2.每日21：00结算竞技场奖励\n3.奖励按照竞技场排名发放 ",
                 "HorizontalAlignmentType": "HT_Center",
                 "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {

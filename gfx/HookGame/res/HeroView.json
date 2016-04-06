@@ -1096,7 +1096,7 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 358.5704,
+                  "X": 464.9999,
                   "Y": 14.9808
                 },
                 "Scale": {
@@ -1106,21 +1106,21 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.5746,
+                  "X": 0.7452,
                   "Y": 0.1362
                 },
                 "PreSize": {
-                  "X": 0.4167,
+                  "X": 0.2244,
                   "Y": 0.7273
                 },
-                "LeftMargin": 358.5704,
-                "RightMargin": 5.4296,
+                "LeftMargin": 464.9999,
+                "RightMargin": 19.0001,
                 "TopMargin": 15.0192,
                 "BottomMargin": 14.9808,
                 "Tag": 581,
                 "ActionTag": 319679370,
                 "Size": {
-                  "X": 260.0,
+                  "X": 140.0,
                   "Y": 80.0
                 },
                 "Name": "upgrade_btn",

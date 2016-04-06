@@ -260,6 +260,8 @@
           <Image Name="sign_sure1.png" />
           <Image Name="sign.png" />
           <Image Name="hand.png" />
+          <Image Name="skip.png" />
+          <Image Name="skipbg.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -658,7 +660,6 @@
         </Folder>
         <Project Name="RechargeIconLayer.csd" Type="Layer" />
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
-        <Project Name="PackageLayer.csd" Type="Layer" />
         <Project Name="SettlementLayer.csd" Type="Layer" />
         <Project Name="PromptIcon.csd" Type="Layer" />
         <Folder Name="settlement">
@@ -709,6 +710,7 @@
           </PlistImageFolder>
         </Folder>
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
+        <Project Name="GuideSkip.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
