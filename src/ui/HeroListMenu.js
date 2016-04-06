@@ -253,7 +253,7 @@ var HeroListMenu = ListViewMenu.extend({
                 var resurge = hero.getResurge();
                 var cost = {unit: resurge['cost'], value: -resurge['value']}
                 PlayerData.updateResource([cost]);
-                customEventHelper.sendEvent(EVENT.GEM_VALUE_UPDATE);
+                customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,cost);
                 customEventHelper.sendEvent(EVENT.HERO_BUY_REVIVE, hero);
                 PlayerData.updatePlayer();
             }

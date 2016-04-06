@@ -71,15 +71,15 @@ var ArenaPanel = BattleMenu.extend({
                     var str = '';
                     if (data[i]['status'] === this.challengeStatus.STATUS_WIN.value) {
                         if (data[i]['challenger'] === player.id) {
-                            str = '挑战获胜，排名由' + data[i]['lowLevel'] + '升至' + data[i]['highLevel'];
+                            str = '你挑战【'+data[i]['targetName']+'】获胜，排名由' + data[i]['lowLevel'] + '升至' + data[i]['highLevel'];
                         } else {
-                            str = '被挑战失败，你的排名由' + (data[i]['highLevel']) + '降至' + (data[i]['lowLevel']);
+                            str = '【'+data[i]['targetName']+'】挑战你获胜，你的排名由' + (data[i]['highLevel']) + '降至' + (data[i]['lowLevel']);
                         }
                     } else if (data[i]['status'] === this.challengeStatus.STATUS_LOSE.value) {
                         if (data[i]['challenger'] === player.id) {
-                            str = '挑战失败，排名不变';
+                            str = '你挑战玩家【'+data[i]['targetName']+'】失败，排名不变';
                         } else {
-                            str = '被挑战获胜，排名不变';
+                            str = '【'+data[i]['targetName']+'】挑战你失败，排名不变';
                         }
                     }
                     text.setString(str);
@@ -109,7 +109,6 @@ var ArenaPanel = BattleMenu.extend({
                 if (flag) {
                     resultData['rank'] = this.rank;
                     game.arentResultTip.toggleLose(resultData);
-                    //this.pullData();
                 }
             }.bind(this));
         }.bind(this));
@@ -124,11 +123,13 @@ var ArenaPanel = BattleMenu.extend({
                 return "宝物";
         }
     }, purchaseTimes: function () {
-        ComplexPopup.confirm("友情提示", "是否花费" + CONSTS.arena_times_purchase.value + this.__unit2Text(CONSTS.arena_times_purchase.unit) + "购买" + CONSTS.arena_times_purchase.times + "场挑战次数",
-            CONSTS.arena_times_purchase, function (result) {
+        BasicPopup.confirm("友情提示", "是否花费" + this.__unit2Text(CONSTS.arena_times_purchase.unit)+'*'+ CONSTS.arena_times_purchase.value  + "购买" + CONSTS.arena_times_purchase.times + "次挑战次数？",
+             function (result) {
                 if (result) {
-                    PlayerData.updateResource(CONSTS.arena_times_purchase);
+                    var resource={unit:CONSTS.arena_times_purchase.unit,value:-CONSTS.arena_times_purchase.value};
+                    PlayerData.updateResource(resource);
                     this.refreshTimes(player.arena.times + CONSTS.arena_times_purchase.times);
+                    customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,resource);
                 }
             }.bind(this));
     }, pushItem: function (data, i) {
@@ -184,11 +185,16 @@ var ArenaPanel = BattleMenu.extend({
     }, _random: function (index, base) {
         var items = [];
         for (var i = 0; i < 4;) {
-            var _index = index / (4 - i);
-            if (i === 3) {
-                _index = index / 1.05;
+            var _index = 0;
+            switch (i){
+                case 0:_index=index/4;break;
+                case 1:
+                case 2:_index=index/3; break;
+                case 3:_index=index/1.05;break;
             }
-            var ranNum = Math.round(getRandomInt(_index - base, _index + base));
+            var min=_index-base;
+            var max=i<3?_index+base:_index;
+            var ranNum = Math.round(getRandomInt(min,max));
             if (items.indexOf(ranNum) === -1 && index !== ranNum) {
                 items.push(ranNum);
                 i++;

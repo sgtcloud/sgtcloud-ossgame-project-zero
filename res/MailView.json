@@ -110,30 +110,34 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 19.76,
-                  "Y": 90.1414
+                  "Y": 92.2839
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0373,
-                  "Y": 0.7512
+                  "Y": 0.769
                 },
                 "PreSize": {
-                  "X": 0.3019,
+                  "X": 0.3774,
                   "Y": 0.1833
                 },
                 "LeftMargin": 19.76,
-                "RightMargin": 350.24,
-                "TopMargin": 7.8586,
-                "BottomMargin": 90.1414,
+                "RightMargin": 310.24,
+                "TopMargin": 5.7161,
+                "BottomMargin": 92.2839,
                 "Tag": 223,
                 "ActionTag": -1895572027,
                 "Size": {
-                  "X": 160.0,
+                  "X": 200.0,
                   "Y": 22.0
                 },
                 "Name": "text",
@@ -142,7 +146,7 @@
               {
                 "IsCustomSize": true,
                 "FontSize": 16,
-                "LabelText": "金币1000000，钻石1000000",
+                "LabelText": "内容\n",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -173,19 +177,122 @@
                 },
                 "PreSize": {
                   "X": 0.6604,
-                  "Y": 0.6667
+                  "Y": 0.3333
                 },
                 "LeftMargin": 20.7599,
                 "RightMargin": 159.2401,
                 "TopMargin": 30.8972,
-                "BottomMargin": 9.1028,
+                "BottomMargin": 49.1028,
                 "Tag": 224,
                 "ActionTag": 324877039,
                 "Size": {
                   "X": 350.0,
-                  "Y": 80.0
+                  "Y": 40.0
                 },
                 "Name": "desc_text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 16,
+                "LabelText": "0000-00-00 00:00",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 243.5658,
+                  "Y": 92.2839
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 19,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4596,
+                  "Y": 0.769
+                },
+                "PreSize": {
+                  "X": 0.3019,
+                  "Y": 0.15
+                },
+                "LeftMargin": 243.5658,
+                "RightMargin": 126.4342,
+                "TopMargin": 9.7161,
+                "BottomMargin": 92.2839,
+                "Tag": 726,
+                "ActionTag": -427528507,
+                "Size": {
+                  "X": 160.0,
+                  "Y": 18.0
+                },
+                "Name": "time",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 16,
+                "LabelText": "金币1000000，钻石1000000",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 20.6426,
+                  "Y": 49.3053
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0389,
+                  "Y": 0.4109
+                },
+                "PreSize": {
+                  "X": 0.6604,
+                  "Y": 0.3333
+                },
+                "LeftMargin": 20.6426,
+                "RightMargin": 159.3574,
+                "TopMargin": 70.6947,
+                "BottomMargin": 9.3053,
+                "Tag": 727,
+                "ActionTag": -1119022710,
+                "Size": {
+                  "X": 350.0,
+                  "Y": 40.0
+                },
+                "Name": "reward_text",
                 "ctype": "TextObjectData"
               },
               {
