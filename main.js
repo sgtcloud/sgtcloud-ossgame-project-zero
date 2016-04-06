@@ -82,9 +82,9 @@ cc.game.onStart = function () {
                 console.log('成功了');
                 if (PlayerData.modelPlayer) {
                     getFirstResources(true, false);
-                } else {
+                } /*else {
                     getFirstResources(true, true);
-                }
+                }*/
                 async.series({
                         "flag1": function (callback) {
                             LoaderScene.preload(first_resources, function () {
