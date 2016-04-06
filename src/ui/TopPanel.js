@@ -147,7 +147,7 @@ var TopPanel = cc.Node.extend({
 
             // 根据gui状态控制各个控件的可见性
             if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
-                cc.log("stage:" + cur + '/' + max);
+                //cc.log("stage:" + cur + '/' + max);
                 this.battleNumText.setString(cur + '/' + max);
                 this.leaveBossBtn.setVisible(false);
                 this.fightBossBtn.setVisible(false);
@@ -181,20 +181,20 @@ var TopPanel = cc.Node.extend({
                 var preStage = new Stage(preStageId);
                 this.loadStageIcon(preStage, this.prev_stage_icon);
                 this.prev_stage_num.setString(preStage.getStageNum());
-                cc.log("preStage:" + preStage.getStageNum());
+                //cc.log("preStage:" + preStage.getStageNum());
                 this.prev_stage_arrow.setVisible(true);
             } else {
                 this.prev_stage_arrow.setVisible(false);
             }
             this.loadStageIcon(PlayerData.getStageData(), this.current_stage_icon);
             this.current_stage_num.setString(PlayerData.getStageData().getStageNum());
-            cc.log("curStage:" + PlayerData.getStageData().getStageNum());
+            //cc.log("curStage:" + PlayerData.getStageData().getStageNum());
             var nextStageId = PlayerData.getStageData().getNextStageId();
             if (nextStageId) {
                 var nextStage = new Stage(nextStageId);
                 this.loadStageIcon(nextStage, this.next_stage_icon);
                 this.next_stage_num.setString(nextStage.getStageNum());
-                cc.log("nextStage:" + nextStage.getStageNum());
+                //cc.log("nextStage:" + nextStage.getStageNum());
             }
         };
         this.loadStageIcon = function (stage, stageIconWidget) {

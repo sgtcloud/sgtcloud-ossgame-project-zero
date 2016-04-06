@@ -286,13 +286,13 @@
                 <PrePosition X="0.1923" Y="0.1455" />
                 <PreSize X="0.0000" Y="0.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="upgrade_btn" ActionTag="319679370" Tag="581" IconVisible="True" LeftMargin="460.0000" RightMargin="24.0000" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+              <AbstractNodeData Name="upgrade_btn" ActionTag="319679370" Tag="581" IconVisible="True" LeftMargin="464.9999" RightMargin="19.0001" TopMargin="15.0192" BottomMargin="14.9808" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="140.0000" Y="80.0000" />
                 <AnchorPoint />
-                <Position X="460.0000" Y="14.9808" />
+                <Position X="464.9999" Y="14.9808" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7372" Y="0.1362" />
+                <PrePosition X="0.7452" Y="0.1362" />
                 <PreSize X="0.2244" Y="0.7273" />
                 <FileData Type="Normal" Path="Btn_Upgrade1.csd" Plist="" />
               </AbstractNodeData>

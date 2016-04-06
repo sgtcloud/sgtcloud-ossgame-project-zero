@@ -110,7 +110,7 @@
                     PlayerData.serverCurrentTime += 100;
                 }, 100);
                 //同步服务器时间 10分钟校正服务器本地时间
-                //setInterval(syncTime,600*1000);
+                //setInterval(this.syncServerTime,600*1000);
             }
         },
 
@@ -302,8 +302,8 @@
         updatePlayerSave: function () {
             if (PlayerData.isUpdate) {
                 var playerExtra = new SgtApi.PlayerExtra();
-                playerExtra.content = JSON.stringify(player);
                 playerExtra.playerId = player.id;
+                playerExtra.content = JSON.stringify(player);
                 sgt.PlayerExtraService.updatePlayerExtraMap(playerExtra, function (result, data) {
                     console.log('上传存档：' + result + ",内容为" + data);
                 });

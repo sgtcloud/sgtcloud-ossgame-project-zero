@@ -14,15 +14,14 @@ var PlayerDataClass = cc.Class.extend({
     },
     init: function () {
         if (cc.isObject(this.modelSave)) {
-            this._player= JSON.parse(this.modelSave.content);
+            player= JSON.parse(this.modelSave.content);
         } else {
-            this._player= player;
-            this._player.id = this.modelPlayer.id;
-            this._player.name = this.modelPlayer.name;
-            this._player.vip = this.modelPlayer.vip || 1;
-            this._player.first_time = this.modelPlayer.createTime;
+            player.id = this.modelPlayer.id;
+            player.name = this.modelPlayer.name;
+            player.vip = this.modelPlayer.vip || 1;
+            player.first_time = this.modelPlayer.createTime;
         }
-        player = this._player;
+        this._player = player;
         this.initPlayerData();
     },
     //获取当前角色存档对象 new hero前的player
@@ -217,10 +216,10 @@ var PlayerDataClass = cc.Class.extend({
 
     updateHeroDeadTime: function (id) {
         if (!this._player['time']['die'][id]) {
-            sgt.RouterService.getCurrentTimestamp(function (result, data) {
-                this._player['time']['die'][id] = data;
+            //sgt.RouterService.getCurrentTimestamp(function (result, data) {
+                this._player['time']['die'][id] = this.getServerTime();
                 this.updatePlayer();
-            }.bind(this));
+            //}.bind(this));
         }
     },
     addPlayerNoPayOrders: function (order) {
