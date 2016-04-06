@@ -360,18 +360,24 @@ sz.GuideTaskHandle = cc.Class.extend({
                 msgBox.runAction(cc.sequence(moveOut1, cc.callFunc(function () {
                     msgBox.removeFromParent(true);
                 }, msgBox)));
+                guideSkip.removeFromParent(true);
+                elf._guideLayer.guideSkip = null;
                 //保存任务完成回调函数
                 finish();
-            }, self._guideConfig.isFingerAnimation, true);;
+            }, self._guideConfig.isFingerAnimation, true);
             self._guideLayer.showMask(true);
         }, msgBox)));
         var guideGirl = ccs.load(res.guideGirl).node;
+        var guideSkip = ccs.load(res.guide_skip_json).node;
         guideGirl.setPosition(cc.p(-237, 0));
+        guideSkip.setPosition(cc.p(550,900));
         var moveIn2 = cc.moveBy(0.2, 237, 0);
         guideGirl.runAction(moveIn2);
         var moveOut2 = moveIn2.reverse();
         this._guideLayer.addChild(msgBox);
         this._guideLayer.addChild(guideGirl);
+        this._guideLayer.addChild(guideSkip);
+        self._guideLayer.guideSkip = guideSkip.getChildByName("bg");
     }
 });
 
@@ -590,7 +596,7 @@ sz.GuideLayer = cc.Layer.extend({
      * @returns {boolean}
      */
     _onTouchBegan: function (sender, touch) {
-        //可触摸矩形区不存在退出
+        //可触摸矩形区不存在退出、增加skip可触摸矩形区
         if (!this._touchRect) {
             cc.log("this._touchRect = null");
             return this._isTouchLocked;
@@ -609,6 +615,18 @@ sz.GuideLayer = cc.Layer.extend({
             this._colorLayer.setPosition(point);
         }
 
+        if(this.guideSkip){
+            var locationInNode = this.guideSkip.parent.convertToNodeSpace(point);
+            var s = this.guideSkip.getContentSize();
+            var rect = cc.rect(-s.width/2, -s.height/2, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                console.log('老夫进来了');
+                localStorage.setItem(sz.GuideIndexName,8);
+                this.removeFromParent(true);
+                customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
+                return true;
+            }
+        }
         var shouldSwallowTouch = this._shouldSwallowTouch;
         var isContains = cc.rectContainsPoint(this._touchRect, point);
         if (isContains) {
