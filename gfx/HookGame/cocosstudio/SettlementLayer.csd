@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="41" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="-1173906109" Tag="121" IconVisible="False" TouchEnable="True" BackColorAlpha="127" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="-1173906109" Tag="121" IconVisible="False" TouchEnable="True" BackColorAlpha="127" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="-601662900" Tag="123" IconVisible="False" LeftMargin="27.5148" RightMargin="8.4852" TopMargin="240.9300" BottomMargin="249.0700" ctype="SpriteObjectData">
@@ -85,7 +85,7 @@
                 <PreSize X="0.2531" Y="0.0271" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white22-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="win" Visible="False" ActionTag="2013815598" Tag="126" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="win" ActionTag="2013815598" Tag="126" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="400.0000" Y="320.0000" />
                 <Children>
                   <AbstractNodeData Name="title" ActionTag="1720641410" Tag="134" IconVisible="False" LeftMargin="-0.1884" RightMargin="125.1884" TopMargin="-13.8230" BottomMargin="148.8230" Scale9Width="275" Scale9Height="185" ctype="ImageViewObjectData">
@@ -98,13 +98,13 @@
                     <PreSize X="0.6875" Y="0.5781" />
                     <FileData Type="MarkedSubImage" Path="settlement/title_1.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="arrow" ActionTag="-100191732" Tag="128" IconVisible="False" LeftMargin="291.5684" RightMargin="50.4316" TopMargin="157.2031" BottomMargin="104.7969" Scale9Width="58" Scale9Height="58" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="arrow" ActionTag="-100191732" Tag="128" IconVisible="False" LeftMargin="256.5688" RightMargin="85.4312" TopMargin="158.2023" BottomMargin="103.7977" Scale9Width="58" Scale9Height="58" ctype="ImageViewObjectData">
                     <Size X="58.0000" Y="58.0000" />
                     <AnchorPoint ScaleX="0.5671" ScaleY="0.4551" />
-                    <Position X="324.4612" Y="131.1933" />
+                    <Position X="289.4606" Y="130.1935" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8112" Y="0.4100" />
+                    <PrePosition X="0.7237" Y="0.4069" />
                     <PreSize X="0.1450" Y="0.1813" />
                     <FileData Type="MarkedSubImage" Path="settlement/arrow.png" Plist="SettlementUI.plist" />
                   </AbstractNodeData>
@@ -160,7 +160,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="lose" ActionTag="-1949292126" Tag="127" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="lose" Visible="False" ActionTag="-1949292126" Tag="127" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="400.0000" Y="320.0000" />
                 <Children>
                   <AbstractNodeData Name="title" ActionTag="-4938815" Tag="137" IconVisible="False" LeftMargin="-1.9624" RightMargin="126.9624" TopMargin="-32.4672" BottomMargin="167.4672" ctype="SpriteObjectData">
