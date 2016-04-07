@@ -262,6 +262,7 @@
           <Image Name="hand.png" />
           <Image Name="skip.png" />
           <Image Name="skipbg.png" />
+          <Image Name="bg_22.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -711,6 +712,8 @@
         </Folder>
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
         <Project Name="GuideSkip.csd" Type="Node" />
+        <Project Name="NoticeLayer.csd" Type="Layer" />
+        <Project Name="NoticeView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
