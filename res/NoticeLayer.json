@@ -47,14 +47,53 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 0.9688,
-              "Y": 0.8333
+              "X": 1.0,
+              "Y": 1.0
             },
-            "RightMargin": 20.0,
-            "TopMargin": 160.0,
             "CallBackType": "Click",
             "Tag": 35,
             "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_22.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 86,
+                "Scale9OriginY": 200,
+                "Scale9Width": 4,
+                "Scale9Height": 113,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.9516,
+                  "Y": 0.9333
+                },
+                "RightMargin": 30.0,
+                "TopMargin": 50.0,
+                "Tag": 53,
+                "ActionTag": 155091911,
+                "Size": {
+                  "X": 590.0,
+                  "Y": 700.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
               {
                 "DirectionType": "Vertical",
                 "IsBounceEnabled": true,
@@ -89,15 +128,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0516,
-                  "Y": 0.0694
+                  "Y": 0.074
                 },
                 "PreSize": {
                   "X": 0.8387,
-                  "Y": 0.6875
+                  "Y": 0.7333
                 },
                 "LeftMargin": 32.0046,
                 "RightMargin": 67.9954,
-                "TopMargin": 194.5166,
+                "TopMargin": 144.5166,
                 "BottomMargin": 55.4834,
                 "Tag": 39,
                 "ActionTag": 1178956180,
@@ -107,47 +146,6 @@
                 },
                 "Name": "list",
                 "ctype": "ListViewObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_22.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 86,
-                "Scale9OriginY": 200,
-                "Scale9Width": 4,
-                "Scale9Height": 113,
-                "AnchorPoint": {},
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "PreSize": {
-                  "X": 0.9516,
-                  "Y": 0.875
-                },
-                "RightMargin": 30.0,
-                "TopMargin": 100.0,
-                "Tag": 53,
-                "ActionTag": 155091911,
-                "Size": {
-                  "X": 590.0,
-                  "Y": 700.0
-                },
-                "Name": "bg",
-                "ctype": "ImageViewObjectData"
               },
               {
                 "FileData": {
@@ -176,15 +174,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4895,
-                  "Y": 0.8591
+                  "Y": 0.9164
                 },
                 "PreSize": {
                   "X": 0.1984,
-                  "Y": 0.0525
+                  "Y": 0.056
                 },
                 "LeftMargin": 241.9828,
                 "RightMargin": 255.0172,
-                "TopMargin": 91.7162,
+                "TopMargin": 41.7162,
                 "BottomMargin": 666.2838,
                 "Tag": 47,
                 "ActionTag": 1245611047,
@@ -219,15 +217,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4879,
-                  "Y": 0.8666
+                  "Y": 0.9244
                 },
                 "PreSize": {
                   "X": 0.2081,
-                  "Y": 0.0725
+                  "Y": 0.0773
                 },
                 "LeftMargin": 237.983,
                 "RightMargin": 253.017,
-                "TopMargin": 77.716,
+                "TopMargin": 27.716,
                 "BottomMargin": 664.284,
                 "CallBackType": "Click",
                 "Tag": 48,
@@ -261,15 +259,15 @@
                 "IconVisible": true,
                 "PrePosition": {
                   "X": 0.9093,
-                  "Y": 0.8081
+                  "Y": 0.862
                 },
                 "PreSize": {
                   "X": 0.0903,
-                  "Y": 0.0725
+                  "Y": 0.0773
                 },
                 "LeftMargin": 563.7488,
                 "RightMargin": 0.2512,
-                "TopMargin": 95.53,
+                "TopMargin": 45.53,
                 "BottomMargin": 646.47,
                 "Tag": 49,
                 "ActionTag": -1541307886,
@@ -284,15 +282,15 @@
             "ActionTag": -56301496,
             "Size": {
               "X": 620.0,
-              "Y": 800.0
+              "Y": 750.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 640.0,
-          "Y": 960.0
+          "X": 620.0,
+          "Y": 750.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
