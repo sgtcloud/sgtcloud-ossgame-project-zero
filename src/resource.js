@@ -147,12 +147,13 @@ function getFirstResources(isNotMark,isNotPlayer){
     for (var i in res) {
         if(isNotMark){
             if(isNotPlayer){
-                if(res1.indexOf(res[i]) === -1){
+                if(res1.indexOf(res[i]) === -1 && res2.indexOf(res[i]) === -1){
                     first_resources.push(res[i]);
                 }
-            }
-            if(res2.indexOf(res[i]) === -1){
-                first_resources.push(res[i]);
+            }else{
+                if(res2.indexOf(res[i]) === -1){
+                    first_resources.push(res[i]);
+                }
             }
         }
         full_resouces.push(res[i]);

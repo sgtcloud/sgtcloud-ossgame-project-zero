@@ -73,7 +73,6 @@ cc.game.onStart = function () {
         }
     }, function (cb) {
         Network.initAndAutoLogin(cb);
-        // cb(null,'initAndAutoLogin');
     }], function (err) {
         if (err) {
             console.log('出错了' + JSON.stringify(err));
@@ -82,19 +81,21 @@ cc.game.onStart = function () {
                 console.log('成功了');
                 if (PlayerData.modelPlayer) {
                     getFirstResources(true, false);
-                } /*else {
+                } else {
                     getFirstResources(true, true);
-                }*/
+                }
                 async.series({
                         "flag1": function (callback) {
                             LoaderScene.preload(first_resources, function () {
                                 initDatas();
                                 showCover();
+                                console.log("flag1执行好了");
                                 callback(null,"flag1");
                             }, this);
                         }, "flag2": function (callback) {
                         //异步加载全部资源
                         cc.loader.load(full_resouces, function () {
+                             console.log("flag2正在执行好了");
                              callback(null,"flag2");
                         });
                     }
@@ -106,16 +107,6 @@ cc.game.onStart = function () {
                 showCover();
             }
         }
-
     });
-    getFirstResources(true, false);
-
-    /* LoaderScene.preload(g_resources, function () {
-     // cc.director.runScene(new HelloWorldScene());
-     if (Network.isLoginSuccess()) {
-     initDatas();
-     showCover();
-     }
-     }, this);*/
 };
 cc.game.run();
