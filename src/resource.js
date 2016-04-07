@@ -5,7 +5,6 @@ var res_datas = {
     equips_json: "res/data/equips.json",
     skills_json: "res/data/skills.json",
     goods_json: "res/data/goods.json",
-    players_json: "res/data/players.json",
     bonus_json: "res/data/bonus.json"
 };
 var res = {
@@ -132,13 +131,31 @@ var res = {
     arena_result_tip: 'res/SettlementLayer.json',
     guide_skip_json: 'res/GuideSkip.json'
 };
+var full_resouces = [];
+var first_resources = [];
 
-
-var g_resources = [];
 for (var i in res_datas) {
-    g_resources.push(res_datas[i]);
+    first_resources.push(res_datas[i]);
+    full_resouces.push(res_datas[i]);
 }
-for (var i in res) {
-    g_resources.push(res[i]);
+
+function getFirstResources(isNotMark,isNotPlayer){
+    var res1 = [res.hero_102_json,res.hero_103_json,res.hero_104_json,res.hero_105_json,res.hero101skill02,res.hero102skill02,res.hero103skill01,res.hero104skill02,
+        res.effect5003,res.effect5004,res.effect5005,res.effect5006,res.effect5007,res.effect5008,res.effect5009,res.effect5010,res.enemy_1003_json,res.enemy_1004_json,res.enemy_1005_json];
+    var res2 = [res.mail_view_json ,res.mail_layer_json,res.first_recharge_layer_json,res.recharge_layer_json,res.recharge_icon_layer_json,res.hero_desc_json,res.prompt1_layer_json,res.prompt2_layer_json
+        ,res.prompt_icon_json,res.offline_reward_layer,res.skill_desc_json,res.pack_layer_json,res.statistics_layer];
+    for (var i in res) {
+        if(isNotMark){
+            if(isNotPlayer){
+                if(res1.indexOf(res[i]) === -1){
+                    first_resources.push(res[i]);
+                }
+            }
+            if(res2.indexOf(res[i]) === -1){
+                first_resources.push(res[i]);
+            }
+        }
+        full_resouces.push(res[i]);
+    }
 }
 
