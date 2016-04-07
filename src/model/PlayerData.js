@@ -341,5 +341,18 @@ var PlayerDataClass = cc.Class.extend({
         }
         return levels;
     }
+    ,
+    updateGuideIndex: function(index){
+        this._player.guide_index = index;
+        this.isUpdate = true;
+        Network.updatePlayerSave();
+    }
+    ,
+    getGuideIndex: function(){
+        if(!this._player.guide_index){
+            return 0;
+        }
+        return this._player.guide_index;
+    }
 
 });
