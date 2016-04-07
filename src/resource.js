@@ -129,7 +129,9 @@ var res = {
     first_recharge_layer_json: 'res/FirstRechargeLayer.json',
     countdown_json: 'res/countdown.json',
     arena_result_tip: 'res/SettlementLayer.json',
-    guide_skip_json: 'res/GuideSkip.json'
+    guide_skip_json: 'res/GuideSkip.json',
+    notice_view_json: 'res/NoticeView.json',
+    notice_layer_json: 'res/NoticeLayer.json'
 };
 var full_resouces = [];
 var first_resources = [];

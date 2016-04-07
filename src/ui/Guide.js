@@ -370,10 +370,10 @@ sz.GuideTaskHandle = cc.Class.extend({
         var guideGirl = ccs.load(res.guideGirl).node;
         /*var guideSkip = ccs.load(res.guide_skip_json).node*/;
         var guideSkip = new CCSUnit();
-        guideSkip.initSprite(res.guide_skip_json,"text","show");
-        guideSkip.initSprite(res.guide_skip_json,"bg","show");
+        guideSkip.initSprite(res.guide_skip_json,null,"show");
+        //guideSkip.initSprite(res.guide_skip_json,"bg","show");
         guideGirl.setPosition(cc.p(-237, 0));
-        guideSkip.setPosition(cc.p(550,900));
+        guideSkip.setPosition(cc.p(580,895));
         var moveIn2 = cc.moveBy(0.2, 237, 0);
         guideGirl.runAction(moveIn2);
         var moveOut2 = moveIn2.reverse();
@@ -621,7 +621,7 @@ sz.GuideLayer = cc.Layer.extend({
 
         if(this.guideSkip){
             var locationInNode = this.guideSkip.convertToNodeSpace(point);
-            var s = this.guideSkip.getContentSize();
+            var s = this.guideSkip.getChildren()[0].getChildByName("text").getContentSize();
             var rect = cc.rect(-s.width/2, -s.height/2, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
                 PlayerData.updateGuideIndex(8);

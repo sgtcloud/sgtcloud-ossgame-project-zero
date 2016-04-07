@@ -428,14 +428,24 @@ function getUrlParam(name) {
 
 var tipTemplate;
 function showCover() {
-    var scene = ccs.load(res.cover_scene_json).node.getChildByName('root');
-    var animation = ccs.load(res.cover_scene_json).action;
+    var json = ccs.load(res.cover_scene_json);
+    var scene = json.node.getChildByName('root');
     scene.setAnchorPoint(cc.p(0, 0));
-    scene.runAction(animation);
-    animation.play('show', false);
+    scene.runAction(json.action);
+    var done = false;
+    json.action.setLastFrameCallFunc(function () {
+        if(!done){
+            done = true;
+            NoticePanel.open();
+        }
+    });
+    json.action.play('show', false);
+
+    //var sceneUnit = sceneUnit.getChildren()[0].getChildByName('root');
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
+    //var noticePanel = new NoticePanel([{"title":"公告1标题","text":"公告1内容"},{"title":"公告2标题","text":"公告内容2"}]);
     bindButtonCallback(loginBtn, function () {
         //判断当前用户是否存在角色
         if (!PlayerData.modelPlayer) {

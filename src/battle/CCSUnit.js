@@ -17,7 +17,7 @@ var CCSUnit = cc.Node.extend({
      */
     initSprite: function (file, nodeName, defaultAnimName) {
         var json = ccs.load(file);
-        node = nodeName ? json.node.getChildByName(nodeName) : json.node;
+        var node = nodeName ? json.node.getChildByName(nodeName) : json.node;
         node.removeFromParent();
         this.animation = json.action;
         {
