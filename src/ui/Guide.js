@@ -361,7 +361,7 @@ sz.GuideTaskHandle = cc.Class.extend({
                     msgBox.removeFromParent(true);
                 }, msgBox)));
                 guideSkip.removeFromParent(true);
-                elf._guideLayer.guideSkip = null;
+                self._guideLayer.guideSkip = null;
                 //保存任务完成回调函数
                 finish();
             }, self._guideConfig.isFingerAnimation, true);
@@ -377,7 +377,7 @@ sz.GuideTaskHandle = cc.Class.extend({
         this._guideLayer.addChild(msgBox);
         this._guideLayer.addChild(guideGirl);
         this._guideLayer.addChild(guideSkip);
-        self._guideLayer.guideSkip = guideSkip.getChildByName("bg");
+        this._guideLayer.guideSkip = guideSkip.getChildByName("bg");
     }
 });
 
@@ -450,18 +450,19 @@ sz.GuideLayer = cc.Layer.extend({
     },
 
     saveProgress: function (isForward, cb) {
-        var localStorage = localStorage || cc.sys.localStorage;
+        /*var localStorage = localStorage || cc.sys.localStorage;
 
-        localStorage.setItem(sz.GuideIndexName, isForward ? ++this._index : this._index + 1);
-
+        localStorage.setItem(sz.GuideIndexName, isForward ? ++this._index : this._index + 1);*/
+        PlayerData.updateGuideIndex(isForward ? ++this._index : this._index + 1);
         if (cb) {
             cb();
         }
     },
 
     loadProgress: function () {
-        var localStorage = localStorage || cc.sys.localStorage;
-        this._index = parseInt(localStorage.getItem(sz.GuideIndexName)) || 0;
+        /*var localStorage = localStorage || cc.sys.localStorage;
+        this._index = parseInt(localStorage.getItem(sz.GuideIndexName)) || 0;*/
+        this._index = parseInt(PlayerData.getGuideIndex());
     },
 
     /**
@@ -620,8 +621,7 @@ sz.GuideLayer = cc.Layer.extend({
             var s = this.guideSkip.getContentSize();
             var rect = cc.rect(-s.width/2, -s.height/2, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
-                console.log('老夫进来了');
-                localStorage.setItem(sz.GuideIndexName,8);
+                PlayerData.updateGuideIndex(8);
                 this.removeFromParent(true);
                 customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
                 return true;
