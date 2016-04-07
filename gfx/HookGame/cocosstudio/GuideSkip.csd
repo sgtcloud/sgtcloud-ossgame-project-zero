@@ -216,28 +216,28 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="show" StartIndex="0" EndIndex="22">
-          <RenderColor A="150" R="255" G="255" B="0" />
+          <RenderColor A="255" R="255" G="255" B="0" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="94" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="bg" ActionTag="-1929871346" Tag="95" RotationSkewX="165.0000" RotationSkewY="165.0000" IconVisible="False" LeftMargin="-64.5001" RightMargin="-62.4999" TopMargin="-65.0001" BottomMargin="-60.9999" ctype="SpriteObjectData">
+          <AbstractNodeData Name="bg" ActionTag="-1929871346" Tag="95" RotationSkewX="7.5000" RotationSkewY="7.5000" IconVisible="False" LeftMargin="-63.5000" RightMargin="-63.5000" TopMargin="-61.5000" BottomMargin="-64.4999" ctype="SpriteObjectData">
             <Size X="127.0000" Y="126.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="-1.0001" Y="2.0001" />
-            <Scale ScaleX="0.9000" ScaleY="0.9000" />
+            <Position X="0.0000" Y="-1.4999" />
+            <Scale ScaleX="0.9500" ScaleY="0.9500" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="mainUI/skipbg.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="text" ActionTag="1504173214" Tag="96" IconVisible="False" LeftMargin="-23.0000" RightMargin="-23.0000" TopMargin="-23.0000" BottomMargin="-23.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="text" ActionTag="1504173214" Tag="96" IconVisible="False" LeftMargin="-63.5000" RightMargin="-63.5000" TopMargin="-63.0000" BottomMargin="-63.0000" ctype="SpriteObjectData">
             <Size X="127.0000" Y="126.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
-            <Scale ScaleX="0.9000" ScaleY="0.9000" />
+            <Scale ScaleX="0.9500" ScaleY="0.9500" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
