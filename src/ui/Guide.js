@@ -368,7 +368,10 @@ sz.GuideTaskHandle = cc.Class.extend({
             self._guideLayer.showMask(true);
         }, msgBox)));
         var guideGirl = ccs.load(res.guideGirl).node;
-        var guideSkip = ccs.load(res.guide_skip_json).node;
+        /*var guideSkip = ccs.load(res.guide_skip_json).node*/;
+        var guideSkip = new CCSUnit();
+        guideSkip.initSprite(res.guide_skip_json,"text","show");
+        guideSkip.initSprite(res.guide_skip_json,"bg","show");
         guideGirl.setPosition(cc.p(-237, 0));
         guideSkip.setPosition(cc.p(550,900));
         var moveIn2 = cc.moveBy(0.2, 237, 0);
@@ -377,7 +380,7 @@ sz.GuideTaskHandle = cc.Class.extend({
         this._guideLayer.addChild(msgBox);
         this._guideLayer.addChild(guideGirl);
         this._guideLayer.addChild(guideSkip);
-        this._guideLayer.guideSkip = guideSkip.getChildByName("bg");
+        this._guideLayer.guideSkip = guideSkip;
     }
 });
 
@@ -617,7 +620,7 @@ sz.GuideLayer = cc.Layer.extend({
         }
 
         if(this.guideSkip){
-            var locationInNode = this.guideSkip.parent.convertToNodeSpace(point);
+            var locationInNode = this.guideSkip.convertToNodeSpace(point);
             var s = this.guideSkip.getContentSize();
             var rect = cc.rect(-s.width/2, -s.height/2, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
