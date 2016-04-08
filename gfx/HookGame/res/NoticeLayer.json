@@ -195,12 +195,12 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mailUI/title.png",
-                  "Plist": "OtherUI.plist"
+                  "Type": "Normal",
+                  "Path": "other/notice_title.png",
+                  "Plist": ""
                 },
-                "Scale9Width": 129,
-                "Scale9Height": 58,
+                "Scale9Width": 173,
+                "Scale9Height": 61,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -220,19 +220,19 @@
                   "Y": 0.9244
                 },
                 "PreSize": {
-                  "X": 0.2081,
-                  "Y": 0.0773
+                  "X": 0.279,
+                  "Y": 0.0813
                 },
-                "LeftMargin": 237.983,
-                "RightMargin": 253.017,
-                "TopMargin": 27.716,
-                "BottomMargin": 664.284,
+                "LeftMargin": 215.983,
+                "RightMargin": 231.017,
+                "TopMargin": 26.216,
+                "BottomMargin": 662.784,
                 "CallBackType": "Click",
                 "Tag": 48,
                 "ActionTag": 1076721264,
                 "Size": {
-                  "X": 129.0,
-                  "Y": 58.0
+                  "X": 173.0,
+                  "Y": 61.0
                 },
                 "Name": "title",
                 "ctype": "ImageViewObjectData"
@@ -299,8 +299,7 @@
         "CloseBtn.json",
         "mainUI/bg_22.png",
         "mainUI/title_bg4.png",
-        "OtherUI.plist",
-        "OtherUI.png"
+        "other/notice_title.png"
       ],
       "ctype": "GameFileData"
     }
