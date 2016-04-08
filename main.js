@@ -73,9 +73,9 @@ cc.game.onStart = function () {
         }
     }, function (cb) {
         Network.initAndAutoLogin(cb);
-    }], function (err) {
+    }], function (err,data) {
         if (err) {
-            console.log('出错了' + JSON.stringify(err));
+            console.log('出错了' + JSON.stringify(err)+"====="+JSON.stringify(data));
         } else {
             if (!mark) {
                 console.log('成功了');

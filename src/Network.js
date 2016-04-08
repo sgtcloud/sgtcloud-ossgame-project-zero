@@ -585,7 +585,40 @@
                     }
                 }
             });
-        }
+        },
+        getAnnounceByType: function(type,i,cb){
+            console.log(i+"===================="+type);
+            sgt.AnnouncementService.getAnnounceByType(type,function(result,data){
+                if(result && cc.isObject(data)){
+                    //if(cc.isObject(PlayerData.announces) && [types[i]])
+                    PlayerData.updateAnnounces(i,data);
+                    cb();
+                }else if(!result){
+                    cb('获取公告出错了',data);
+                }else{
+                    cb();
+                }
+            });
+        },
+        getAnnounces: function(){
+            var types = [SgtApi.Announcement.ACTIVITY,SgtApi.Announcement.MAINTAIN,SgtApi.Announcement.BULLETIN  ];
+            var tasks = [];
+            var self = this;
+            /*for(var i in types){
+                var type = types[i];
+                tasks.push(function(cb){
+                    self.getAnnounceByType(type,i,cb);
+                });
+            }*/
+            tasks.push(function(cb){
+                self.getAnnounceByType(types[0],0,cb);
+            },function(cb){
+                self.getAnnounceByType(types[1],1,cb);
+            },function(cb){
+                self.getAnnounceByType(types[2],2,cb);
+            });
+            return tasks;
+        },
     };
     window.Network = new NetworkResolve();
 })();

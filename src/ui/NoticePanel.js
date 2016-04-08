@@ -15,7 +15,7 @@ var NoticePanel = cc.Node.extend({
         this.listView = root.getChildByName('list');
         var closeBtn = root.getChildByName('close_btn').getChildByName('root').getChildByName('close');
         this.listView.removeAllChildren();
-        for (var i = notices.length - 1; i >= 0; i--) {
+        for (var i in notices) {
             this.setElement(notices[i]);
         }
         bindButtonCallback(closeBtn, function () {
@@ -27,9 +27,9 @@ var NoticePanel = cc.Node.extend({
         var title = root.getChildByName("title");
         var text = root.getChildByName("text");
         setFont([title,text]);
-        var textLen = notice.text.length * text.fontSize;
+        var textLen = notice.content.length * text.fontSize;
         if(textLen > this.listView.width){
-            var height = text.height * Math.ceil(textLen/this.listView.width);
+            var height = (text.height+2) * Math.ceil(textLen/this.listView.width);
             root.height = height + title.height;
             title.y = height;
             text.setTextAreaSize(cc.size(this.listView.width,height));
@@ -41,7 +41,7 @@ var NoticePanel = cc.Node.extend({
             // title.y = height;
             title.setTextAreaSize(cc.size(this.listView.width,height));
         }
-        text.setString(notice.text);
+        text.setString(notice.content);
         title.setString(notice.title);
         this.listView.setItemsMargin(10);
         this.listView.pushBackCustomItem(root);
@@ -54,10 +54,9 @@ var NoticePanel = cc.Node.extend({
     }
 });
 NoticePanel.open = function () {
-    //Network.updateunReadMailStatus(function (result) {
-    //    if (result) {
-            var noticePanel = new NoticePanel([{"title":"公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题公告1标题","text":"公告1内容公告1内容公告1内容公告1内容公告1内容公告1内容"},{"title":"公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题公告2标题","text":"公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2公告内容2"}]);
-            noticePanel.openNoticePopup();
-    //    }
-    //})
+    var announces = PlayerData.getAnnounces();
+    if(cc.isArray(announces) && announces.length > 0){
+        var noticePanel = new NoticePanel(announces);
+        noticePanel.openNoticePopup();
+    }
 };

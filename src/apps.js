@@ -11,12 +11,12 @@ $$.extend = function (a, b) {
     return b;
 }
 /*Number.prototype.toFixed = function (num) {
-    if (num > 0) {
-        var fixed = Math.pow(100, num);
-        return Math.round(this * fixed) / fixed
-    }
-    return this;
-}*/
+ if (num > 0) {
+ var fixed = Math.pow(100, num);
+ return Math.round(this * fixed) / fixed
+ }
+ return this;
+ }*/
 var CONSTS = {
     "FAIRY_SPECIFIC_ZORDER": 2000,
     "MAX_ATTACHMENTS_ON_SPRITE": 10,
@@ -28,7 +28,10 @@ var CONSTS = {
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 1},
     "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
     "monthCard_daily_bonus": {"unit": "gem", "value": 100},
-    "first_recharge_bonus": [{"unit": "gold", "value": 50000},{"unit": "gem", "value": 10},{"unit": "relic", "value": 20}],
+    "first_recharge_bonus": [{"unit": "gold", "value": 50000}, {"unit": "gem", "value": 10}, {
+        "unit": "relic",
+        "value": 20
+    }],
     "resources_mapping": {
         "gold": '金币',
         "gem": '钻石',
@@ -432,27 +435,39 @@ function showCover() {
     var scene = json.node.getChildByName('root');
     scene.setAnchorPoint(cc.p(0, 0));
     scene.runAction(json.action);
-    var done = false;
-    json.action.setLastFrameCallFunc(function () {
-        if(!done){
-            done = true;
+    var tasks = Network.getAnnounces();
+    tasks.push(function (cb) {
+        var done = false;
+        json.action.setLastFrameCallFunc(function () {
+            if (!done) {
+                done = true;
+                cb();
+            }
+        });
+        json.action.play('show', false);
+    });
+    async.parallel(tasks, function (err) {
+        if (err) {
+            console.log(err);
+        } else {
             NoticePanel.open();
+            loginBtn.setEnabled(true);
+            loginBtn.setBright(true);
         }
     });
-    json.action.play('show', false);
-
-    //var sceneUnit = sceneUnit.getChildren()[0].getChildByName('root');
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
-    //var noticePanel = new NoticePanel([{"title":"公告1标题","text":"公告1内容"},{"title":"公告2标题","text":"公告内容2"}]);
+    loginBtn.setEnabled(false);
+    loginBtn.setBright(false);
+    if (PlayerData.modelPlayer) {
+        initGame(createPlayerComplete);
+    }
     bindButtonCallback(loginBtn, function () {
         //判断当前用户是否存在角色
         if (!PlayerData.modelPlayer) {
             loginBtn.setVisible(false);
             Network.openNewNameLayer(scene, createPlayerComplete);
-        } else {
-            initGame(createPlayerComplete);
         }
     });
     cc.director.runScene(scene);
@@ -504,9 +519,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function setFont(target) {
-   /* if (arguments.length === 1) {
-        target = arguments[0];
-    } else target = arguments;*/
+    /* if (arguments.length === 1) {
+     target = arguments[0];
+     } else target = arguments;*/
     if (target instanceof Array) {
         for (var i in target) {
             target[i].setColor(cc.color(0, 0, 0))
@@ -519,9 +534,9 @@ function setFont(target) {
     }
 }
 function setColor(target) {
-   /* if (arguments.length === 1) {
-        target = arguments[0];
-    } else target = Array.prototype.slice(arguments);*/
+    /* if (arguments.length === 1) {
+     target = arguments[0];
+     } else target = Array.prototype.slice(arguments);*/
     if (target instanceof Array) {
         for (var i in target) {
             target[i].setColor(cc.color(0, 0, 0))
@@ -542,7 +557,7 @@ function setIgnoreContentAdaptWithSize(target) {
     }
 }
 
-function setVisibles(target,visible){
+function setVisibles(target, visible) {
     if (target instanceof Array) {
         for (var i in target) {
             target[i].setVisible(visible);
