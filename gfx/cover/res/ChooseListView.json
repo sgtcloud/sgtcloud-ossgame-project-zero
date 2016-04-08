@@ -1,0 +1,337 @@
+{
+  "ID": "fc1354ff-758f-4313-aa9b-f319c605bc74",
+  "Version": "2.3.3.0",
+  "Name": "ChooseListView",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 86,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 87,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coverUI/list_view_bg.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 69,
+                "Scale9OriginY": 28,
+                "Scale9Width": 73,
+                "Scale9Height": 29,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 88,
+                "ActionTag": 121280839,
+                "Size": {
+                  "X": 300.0,
+                  "Y": 60.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coverUI/current.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 70,
+                "Scale9OriginY": 26,
+                "Scale9Width": 74,
+                "Scale9Height": 27,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 94,
+                "ActionTag": -41318776,
+                "Size": {
+                  "X": 300.0,
+                  "Y": 60.0
+                },
+                "Name": "current_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "指尖骑士999区",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 57.5932,
+                  "Y": 10.0458
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.192,
+                  "Y": 0.1674
+                },
+                "PreSize": {
+                  "X": 0.6,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 57.5932,
+                "RightMargin": 62.4068,
+                "TopMargin": 9.9542,
+                "BottomMargin": 10.0458,
+                "Tag": 91,
+                "ActionTag": -1934137043,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 40.0
+                },
+                "Name": "text",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coverUI/new.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 42,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 32.6814,
+                  "Y": 31.6835
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1089,
+                  "Y": 0.5281
+                },
+                "PreSize": {
+                  "X": 0.14,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 11.6814,
+                "RightMargin": 246.3186,
+                "TopMargin": 8.3165,
+                "BottomMargin": 11.6835,
+                "Tag": 90,
+                "ActionTag": 830408796,
+                "Size": {
+                  "X": 42.0,
+                  "Y": 40.0
+                },
+                "Name": "state_new",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coverUI/full.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 42,
+                "Scale9Height": 40,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 32.4994,
+                  "Y": 30.4108
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1083,
+                  "Y": 0.5068
+                },
+                "PreSize": {
+                  "X": 0.14,
+                  "Y": 0.6667
+                },
+                "LeftMargin": 11.4994,
+                "RightMargin": 246.5006,
+                "TopMargin": 9.5892,
+                "BottomMargin": 10.4108,
+                "Tag": 95,
+                "ActionTag": 417872429,
+                "Size": {
+                  "X": 42.0,
+                  "Y": 40.0
+                },
+                "Name": "state_full",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coverUI/player.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 44,
+                "Scale9Height": 44,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 265.532,
+                  "Y": 29.4714
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8851,
+                  "Y": 0.4912
+                },
+                "PreSize": {
+                  "X": 0.1467,
+                  "Y": 0.7333
+                },
+                "LeftMargin": 243.532,
+                "RightMargin": 12.468,
+                "TopMargin": 8.5286,
+                "BottomMargin": 7.4714,
+                "Tag": 92,
+                "ActionTag": 705347582,
+                "Size": {
+                  "X": 44.0,
+                  "Y": 44.0
+                },
+                "Name": "player",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1692270400,
+            "Size": {
+              "X": 300.0,
+              "Y": 60.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 300.0,
+          "Y": 60.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "coverUI/current.png",
+        "coverUI/full.png",
+        "coverUI/list_view_bg.png",
+        "coverUI/new.png",
+        "coverUI/player.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
