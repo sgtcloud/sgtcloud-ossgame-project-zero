@@ -15,6 +15,14 @@
           <Image Name="text.png" />
           <Image Name="text1.png" />
           <Image Name="bg_05.png" />
+          <Image Name="list_btn_1.png" />
+          <Image Name="list_btn_2.png" />
+          <Image Name="full.png" />
+          <Image Name="new.png" />
+          <Image Name="current.png" />
+          <Image Name="list_bg.png" />
+          <Image Name="list_view_bg.png" />
+          <Image Name="player.png" />
         </Folder>
         <Project Name="NewNameLayer.csd" Type="Layer" />
         <PlistInfo Name="cover.csi" Type="Plist" />
@@ -194,6 +202,8 @@
           </PlistImageFolder>
         </Folder>
         <Project Name="cover.csd" Type="Node" />
+        <Project Name="ChooseListLayer.csd" Type="Layer" />
+        <Project Name="ChooseListView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
