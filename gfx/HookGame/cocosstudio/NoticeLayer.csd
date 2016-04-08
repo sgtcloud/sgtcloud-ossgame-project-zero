@@ -42,15 +42,15 @@
                 <PreSize X="0.1984" Y="0.0560" />
                 <FileData Type="Normal" Path="mainUI/title_bg4.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title" ActionTag="1076721264" CallBackType="Click" Tag="48" IconVisible="False" LeftMargin="237.9830" RightMargin="253.0170" TopMargin="27.7160" BottomMargin="664.2840" Scale9Width="129" Scale9Height="58" ctype="ImageViewObjectData">
-                <Size X="129.0000" Y="58.0000" />
+              <AbstractNodeData Name="title" ActionTag="1076721264" CallBackType="Click" Tag="48" IconVisible="False" LeftMargin="215.9830" RightMargin="231.0170" TopMargin="26.2160" BottomMargin="662.7840" Scale9Width="173" Scale9Height="61" ctype="ImageViewObjectData">
+                <Size X="173.0000" Y="61.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="302.4830" Y="693.2840" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4879" Y="0.9244" />
-                <PreSize X="0.2081" Y="0.0773" />
-                <FileData Type="MarkedSubImage" Path="mailUI/title.png" Plist="OtherUI.plist" />
+                <PreSize X="0.2790" Y="0.0813" />
+                <FileData Type="Normal" Path="other/notice_title.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="close_btn" ActionTag="-1541307886" Tag="49" IconVisible="True" LeftMargin="563.7488" RightMargin="0.2512" TopMargin="45.5300" BottomMargin="646.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />

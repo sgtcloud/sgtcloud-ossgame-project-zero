@@ -718,6 +718,13 @@
         <Project Name="GuideSkip.csd" Type="Node" />
         <Project Name="NoticeLayer.csd" Type="Layer" />
         <Project Name="NoticeView.csd" Type="Layer" />
+        <Project Name="GiftCodeLayer.csd" Type="Layer" />
+        <Folder Name="other">
+          <Image Name="code_title.png" />
+          <Image Name="notice_title.png" />
+          <Image Name="code_girl.png" />
+          <Image Name="text.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>
