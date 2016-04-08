@@ -18,7 +18,7 @@ var config = require('./project.json');
 
 var DEST = 'publish/html5/';
 
-var VERSION = "0.0.4.1";
+var VERSION = "0.0.5.1";
 
 var sourceCodeList = [];
 

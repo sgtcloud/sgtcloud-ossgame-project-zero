@@ -394,10 +394,10 @@
             <FileData Type="MarkedSubImage" Path="shine/shine00.png" Plist="other.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hero" ActionTag="331636314" Tag="15" IconVisible="False" RightMargin="-237.0000" TopMargin="-349.9100" BottomMargin="13.9100" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hero" ActionTag="331636314" Tag="15" IconVisible="False" LeftMargin="160.0000" RightMargin="-397.0000" TopMargin="-349.9100" BottomMargin="13.9100" ctype="SpriteObjectData">
             <Size X="237.0000" Y="336.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position Y="181.9100" />
+            <Position X="160.0000" Y="181.9100" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -405,10 +405,10 @@
             <FileData Type="MarkedSubImage" Path="hero101skill01/hero01.png" Plist="hero101skill01.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="word" ActionTag="-1256903318" Tag="19" IconVisible="False" LeftMargin="-119.5000" RightMargin="-299.5000" TopMargin="-289.0000" BottomMargin="111.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="word" ActionTag="-1256903318" Tag="19" IconVisible="False" LeftMargin="-119.5000" RightMargin="-299.5000" TopMargin="-539.0000" BottomMargin="361.0000" ctype="SpriteObjectData">
             <Size X="419.0000" Y="178.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="90.0000" Y="200.0000" />
+            <Position X="90.0000" Y="450.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
