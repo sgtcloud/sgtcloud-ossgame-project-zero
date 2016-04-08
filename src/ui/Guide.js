@@ -624,7 +624,13 @@ sz.GuideLayer = cc.Layer.extend({
             var s = this.guideSkip.getChildren()[0].getChildByName("text").getContentSize();
             var rect = cc.rect(-s.width/2, -s.height/2, s.width, s.height);
             if (cc.rectContainsPoint(rect, locationInNode)) {
-                PlayerData.updateGuideIndex(8);
+                var n = 0;
+                for (var key in this._guideConfig.tasks) {
+                    if (this._guideConfig.tasks.hasOwnProperty(key)) {
+                        n++;
+                    }
+                }
+                PlayerData.updateGuideIndex(n);
                 this.removeFromParent(true);
                 customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
                 return true;
