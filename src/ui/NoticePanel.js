@@ -53,8 +53,8 @@ var NoticePanel = cc.Node.extend({
         GamePopup.closePopup(this.noticeLayer);
     }
 });
-NoticePanel.open = function () {
-    var announces = PlayerData.getAnnounces();
+NoticePanel.open = function (ignoreVersion) {
+    var announces = PlayerData.getAnnounces(ignoreVersion);
     if(cc.isArray(announces) && announces.length > 0){
         var noticePanel = new NoticePanel(announces);
         noticePanel.openNoticePopup();

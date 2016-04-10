@@ -358,21 +358,24 @@ var PlayerDataClass = cc.Class.extend({
 
         if(!this.announces){
             this.isAnnounceUpdata = false;
+            this._player.announces_version = [];
             this.announces = [];
         }
         if(this.announces.length > index){
-            if(parseInt(this.announces[index].version) < parseInt(announce.version)){
+            if(parseInt(this._player.announces_version[index]/*this.announces[index].version*/) < parseInt(announce.version)){
                 this.isAnnounceUpdata = true;
-                this.announces[index] = announce;
+                this._player.announces_version[index] = announce.version;
             }
+            this.announces[index] = announce;
         }else{
             this.isAnnounceUpdata = true;
+            this._player.announces_version[index] = announce.version;
             this.announces.push(announce);
         }
 
     },
-    getAnnounces : function(){
-        if(!this.isAnnounceUpdata){
+    getAnnounces : function(ignoreVersion){
+        if(!ignoreVersion && !this.isAnnounceUpdata){
             return [];
         }
         return this.announces;
