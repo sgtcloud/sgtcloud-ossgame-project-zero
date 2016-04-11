@@ -47,7 +47,7 @@ var NoticePanel = cc.Node.extend({
         this.listView.pushBackCustomItem(root);
     },
     openNoticePopup: function () {
-        GamePopup.openPopup(this.noticeLayer,cc.p(330,620),false);
+        GamePopup.openPopup(this.noticeLayer,cc.p(340,620),false);
     },
     hiddenNoticePopup: function () {
         GamePopup.closePopup(this.noticeLayer);

@@ -355,24 +355,20 @@ var PlayerDataClass = cc.Class.extend({
         return this._player.guide_index;
     },
     updateAnnounces: function(index,announce){
-
+        var versions = localStorage.getItem("sgt-html5-game-announce-versions") || [];
+        if(!(versions instanceof Array)){
+            versions = versions.split(",");
+        }
         if(!this.announces){
             this.isAnnounceUpdata = false;
-            this._player.announces_version = [];
             this.announces = [];
         }
-        if(this.announces.length > index){
-            if(parseInt(this._player.announces_version[index]/*this.announces[index].version*/) < parseInt(announce.version)){
-                this.isAnnounceUpdata = true;
-                this._player.announces_version[index] = announce.version;
-            }
-            this.announces[index] = announce;
-        }else{
+        if(!versions[index] || parseInt(versions[index]) < parseInt(announce.version)){
             this.isAnnounceUpdata = true;
-            this._player.announces_version[index] = announce.version;
-            this.announces.push(announce);
+            versions[index] = announce.version;
         }
-
+        this.announces[index] = announce;
+        localStorage.setItem("sgt-html5-game-announce-versions",versions);
     },
     getAnnounces : function(ignoreVersion){
         if(!ignoreVersion && !this.isAnnounceUpdata){
