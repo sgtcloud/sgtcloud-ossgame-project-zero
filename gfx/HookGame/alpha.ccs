@@ -267,6 +267,7 @@
           <Image Name="recharge_btn.png" />
           <Image Name="reward_btn.png" />
           <Image Name="statistics_btn.png" />
+          <Image Name="giftCode_btn.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
