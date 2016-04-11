@@ -241,12 +241,10 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 * [最新发布版本](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/releases)
 * [需求入口](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/issues/new)
 
-##### 其他待完成开发任务
-
-* 实现基于cocos studio导出控件的事件绑定
-
 欢迎开发者给我们提出你们开发中遇到的问题，有问必答，有求必应：）
 
 # 鸣谢
 
 * [cocos](http://cocos.com/)商标和产品相关权利归触控所有，感谢触控为我们带来免费开源的游戏引擎，也感谢开发团队对我们的无私支持
+* 感谢@ShawnZhang贡献的[新手引导框架](https://github.com/ShawnZhang2015/Guide)
+* 感谢@koalaylj贡献的(https://github.com/koalaylj/xlsx2json)
