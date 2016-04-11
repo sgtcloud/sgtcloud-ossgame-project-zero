@@ -247,4 +247,4 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 
 * [cocos](http://cocos.com/)商标和产品相关权利归触控所有，感谢触控为我们带来免费开源的游戏引擎，也感谢开发团队对我们的无私支持
 * 感谢@ShawnZhang贡献的[新手引导框架](https://github.com/ShawnZhang2015/Guide)
-* 感谢@koalaylj贡献的(https://github.com/koalaylj/xlsx2json)
+* 感谢@koalaylj贡献的[xlsx2json](https://github.com/koalaylj/xlsx2json)
