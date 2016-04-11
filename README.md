@@ -237,8 +237,9 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 
 ### 项目路线图
 
-* 下一个发布版本为[0.0.5](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.5)
-* 后续版本[0.0.6](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones/0.0.6)
+* [开发计划](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/milestones)
+* [最新发布版本](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/releases)
+* [需求入口](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/issues/new)
 
 ##### 其他待完成开发任务
 
