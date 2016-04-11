@@ -50,7 +50,7 @@ var MailPanel = cc.Node.extend({
         setFont([titleText,desc_text]);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
             var rewards = eval('('+mail.attachment+')');
-            var rewardText = this.formatAttachment(rewards);
+            var rewardText = /*this.formatAttachment*/formatResourceToString(rewards);
             reward_text.setString(rewardText);
             var btnText = btn.getChildByName('get');
             var getRewardBtn = btn.getChildByName('btn');
@@ -98,7 +98,7 @@ var MailPanel = cc.Node.extend({
     setNum: function () {
         this.num.setString(this.attachNoPickNum + "/" + PlayerData.mails.readedMails.length);
     },
-    formatAttachment: function (rewards) {
+    /*formatAttachment: function (rewards) {
         if (!rewards) {
             return '';
         }
@@ -126,7 +126,7 @@ var MailPanel = cc.Node.extend({
             }
         }
         return descText;
-    },
+    },*/
     attachAllNoPick: function () {
         if (this.attachNoPickNum > 0) {
             this.attachments = {};

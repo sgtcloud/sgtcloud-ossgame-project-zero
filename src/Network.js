@@ -619,6 +619,24 @@
             });
             return tasks;
         },
+        redeemAndGetReward: function(giftCode){
+            SgtApi.GiftCodeService.redeem(player.id,giftCode,function(result,data){
+                if(result){
+                    if(cc.isString(data)){
+                        tip.toggle(formatResourceToString(data));
+                        PlayerData.updateResource(data);
+                        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data);
+                        PlayerData.isUpdate = true;
+                        this.updatePlayerSave();
+                    }else{
+                        //没有礼包
+                    }
+                }else{
+                    tip.toggle(data);
+                }
+            }.bind(this));
+        },
+
     };
     window.Network = new NetworkResolve();
 })();
