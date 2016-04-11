@@ -73,6 +73,11 @@ var BattlePanel = cc.Node.extend({
             NoticePanel.open(true);
         }.bind(this));
 
+        this.giftCodeBtn = root.getChildByName('giftCode_btn');
+        bindButtonCallback(this.giftCodeBtn, function () {
+            GiftCodePanel.open();
+        }.bind(this));
+
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
