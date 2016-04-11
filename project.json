@@ -65,6 +65,7 @@
     "src/battle/ArenaHeroUnit.js",
     "src/model/ArenaHero.js",
     "src/model/ArenaPlayerData.js",
+    "src/ui/NoticePanel.js",
     "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"

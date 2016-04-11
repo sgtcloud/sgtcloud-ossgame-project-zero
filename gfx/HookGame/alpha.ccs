@@ -226,7 +226,6 @@
           <Image Name="lable_bg.png" />
           <Image Name="lock.png" />
           <Image Name="login_reward.png" />
-          <Image Name="offline_reward.png" />
           <Image Name="relic.png" />
           <Image Name="skill_icon.png" />
           <Image Name="slice131_@.png" />
@@ -246,8 +245,6 @@
           <Image Name="title_bg4.png" />
           <Image Name="font22_yellow_kmb.png" />
           <Image Name="font22_yellow_kmbb.png" />
-          <Image Name="pack_icon.png" />
-          <Image Name="statistics_icon.png" />
           <Image Name="blood1_1.png" />
           <Image Name="blood1_2.png" />
           <Image Name="blood2_1.png" />
@@ -262,6 +259,14 @@
           <Image Name="hand.png" />
           <Image Name="skip.png" />
           <Image Name="skipbg.png" />
+          <Image Name="bg_22.png" />
+          <Image Name="firstRecharge_btn.png" />
+          <Image Name="maill_btn.png" />
+          <Image Name="notice_btn.png" />
+          <Image Name="pack_btn.png" />
+          <Image Name="recharge_btn.png" />
+          <Image Name="reward_btn.png" />
+          <Image Name="statistics_btn.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -711,6 +716,15 @@
         </Folder>
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
         <Project Name="GuideSkip.csd" Type="Node" />
+        <Project Name="NoticeLayer.csd" Type="Layer" />
+        <Project Name="NoticeView.csd" Type="Layer" />
+        <Project Name="GiftCodeLayer.csd" Type="Layer" />
+        <Folder Name="other">
+          <Image Name="code_title.png" />
+          <Image Name="notice_title.png" />
+          <Image Name="code_girl.png" />
+          <Image Name="text.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

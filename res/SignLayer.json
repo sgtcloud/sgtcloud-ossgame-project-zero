@@ -80,9 +80,9 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.9375
+                  "Y": 0.8824
                 },
-                "TopMargin": 30.0,
+                "TopMargin": 60.0,
                 "Tag": 216,
                 "ActionTag": 716561836,
                 "Size": {
@@ -127,15 +127,15 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0167,
-                  "Y": 0.0208
+                  "Y": 0.0196
                 },
                 "PreSize": {
                   "X": 0.9667,
-                  "Y": 0.8333
+                  "Y": 0.7843
                 },
                 "LeftMargin": 10.0,
                 "RightMargin": 10.0,
-                "TopMargin": 70.0,
+                "TopMargin": 100.0,
                 "BottomMargin": 10.0,
                 "Tag": 217,
                 "ActionTag": 1967656574,
@@ -145,6 +145,49 @@
                 },
                 "Name": "list",
                 "ctype": "ListViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/title_bg4.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 123,
+                "Scale9Height": 42,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 301.6118,
+                  "Y": 459.4908
+                },
+                "Scale": {
+                  "ScaleX": 4.0,
+                  "ScaleY": 2.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5027,
+                  "Y": 0.901
+                },
+                "PreSize": {
+                  "X": 0.205,
+                  "Y": 0.0824
+                },
+                "LeftMargin": 240.1118,
+                "RightMargin": 236.8882,
+                "TopMargin": 29.5092,
+                "BottomMargin": 438.4908,
+                "Tag": 218,
+                "ActionTag": 720927826,
+                "Size": {
+                  "X": 123.0,
+                  "Y": 42.0
+                },
+                "Name": "title_bg",
+                "ctype": "ImageViewObjectData"
               },
               {
                 "FileData": {
@@ -159,8 +202,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 300.5407,
-                  "Y": 446.7715
+                  "X": 295.5226,
+                  "Y": 468.7962
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -169,19 +212,19 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5009,
-                  "Y": 0.9308
+                  "X": 0.4925,
+                  "Y": 0.9192
                 },
                 "PreSize": {
                   "X": 0.4583,
-                  "Y": 0.1229
+                  "Y": 0.1157
                 },
-                "LeftMargin": 163.0407,
-                "RightMargin": 161.9593,
-                "TopMargin": 3.7285,
-                "BottomMargin": 417.2715,
-                "Tag": 218,
-                "ActionTag": 720927826,
+                "LeftMargin": 158.0226,
+                "RightMargin": 166.9774,
+                "TopMargin": 11.7038,
+                "BottomMargin": 439.2962,
+                "Tag": 353,
+                "ActionTag": -998850319,
                 "Size": {
                   "X": 275.0,
                   "Y": 59.0
@@ -193,7 +236,7 @@
             "ActionTag": -2027105698,
             "Size": {
               "X": 600.0,
-              "Y": 480.0
+              "Y": 510.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -201,14 +244,15 @@
         ],
         "Size": {
           "X": 600.0,
-          "Y": 480.0
+          "Y": 510.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
         "mainUI/bg_01.png",
-        "mainUI/sign.png"
+        "mainUI/sign.png",
+        "mainUI/title_bg4.png"
       ],
       "ctype": "GameFileData"
     }

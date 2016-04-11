@@ -31,19 +31,10 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="MailView.csd" />
-          <FilePathData Path="PVPRecordView.csd" />
-          <FilePathData Path="SignIcon.csd" />
-          <FilePathData Path="SignLayer.csd" />
-          <FilePathData Path="SignView.csd" />
-          <FilePathData Path="SkillDescView.csd" />
-          <FilePathData Path="Skillicon.csd" />
-          <FilePathData Path="PVPLayer.csd" />
-          <FilePathData Path="EquipView.csd" />
-          <FilePathData Path="HeroDescView.csd" />
-          <FilePathData Path="HeroView.csd" />
+          <FilePathData Path="GiftCodeLayer.csd" />
+          <FilePathData Path="Tips.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="EquipView.csd" />
+        <ActiveDocument Path="GiftCodeLayer.csd" />
       </Value>
     </Item>
   </Properties>

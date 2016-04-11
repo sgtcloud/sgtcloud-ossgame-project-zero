@@ -53,7 +53,6 @@ cc.game.onStart = function () {
         spinner.stop();
         document.body.removeChild(document.getElementById("cocosLoading"));
     }
-    Network.initAndAutoLogin();
     // Pass true to enable retina display, disabled by default to improve performance
     cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? true : false);
     // Adjust viewport meta
@@ -62,13 +61,52 @@ cc.game.onStart = function () {
     cc.view.setDesignResolutionSize(640, 960, cc.ResolutionPolicy.SHOW_ALL);
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
-    //load resources
-    LoaderScene.preload(g_resources, function () {
-        // cc.director.runScene(new HelloWorldScene());
-        if (Network.isLoginSuccess()) {
-            initDatas();
-            showCover();
+    //localStorage
+    var mark = localStorage.getItem('mark-sgt-html5-game');
+    async.parallel([function (cb) {
+        if (mark) {
+            getFirstResources(false);
+            LoaderScene.preload(full_resouces, cb, this);
+        } else {
+            localStorage.setItem('mark-sgt-html5-game', 1);
+           cb();
         }
-    }, this);
+    }, function (cb) {
+        Network.initAndAutoLogin(cb);
+    }], function (err,data) {
+        if (err) {
+            console.log('出错了' + JSON.stringify(err)+"====="+JSON.stringify(data));
+        } else {
+            if (!mark) {
+                console.log('成功了');
+                if (PlayerData.modelPlayer) {
+                    getFirstResources(true, false);
+                } else {
+                    getFirstResources(true, true);
+                }
+                async.series({
+                        "flag1": function (callback) {
+                            LoaderScene.preload(first_resources, function () {
+                                initDatas();
+                                showCover();
+                                console.log("flag1执行好了");
+                                callback(null,"flag1");
+                            }, this);
+                        }, "flag2": function (callback) {
+                        //异步加载全部资源
+                        cc.loader.load(full_resouces, function () {
+                             console.log("flag2正在执行好了");
+                             callback(null,"flag2");
+                        });
+                    }
+                }, function (callback) {
+                    console.log(callback);
+                });
+            } else {
+                initDatas();
+                showCover();
+            }
+        }
+    });
 };
 cc.game.run();

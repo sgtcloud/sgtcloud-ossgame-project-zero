@@ -31,11 +31,13 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="NewNameLayer.csd" />
+          <FilePathData Path="ChooseListLayer.csd" />
           <FilePathData Path="cover.csd" />
+          <FilePathData Path="NewNameLayer.csd" />
           <FilePathData Path="cover.csi" />
+          <FilePathData Path="ChooseListView.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="cover.csi" />
+        <ActiveDocument Path="ChooseListLayer.csd" />
       </Value>
     </Item>
   </Properties>

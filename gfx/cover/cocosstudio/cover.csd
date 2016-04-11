@@ -1896,7 +1896,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/title02.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero02" CanEdit="False" ActionTag="1508278506" Tag="28" IconVisible="False" LeftMargin="189.0000" RightMargin="29.0000" TopMargin="354.0000" BottomMargin="194.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero02" CanEdit="False" ActionTag="1508278506" Tag="28" IconVisible="False" LeftMargin="376.0000" RightMargin="216.0000" TopMargin="537.0000" BottomMargin="377.0000" ctype="SpriteObjectData">
                 <Size X="422.0000" Y="412.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="400.0000" Y="400.0000" />
@@ -1907,7 +1907,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero05.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero03" CanEdit="False" ActionTag="394338606" Tag="29" IconVisible="False" LeftMargin="28.0000" RightMargin="68.0000" TopMargin="277.5000" BottomMargin="277.5000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero03" CanEdit="False" ActionTag="394338606" Tag="29" IconVisible="False" LeftMargin="276.0000" RightMargin="316.0000" TopMargin="457.0000" BottomMargin="457.0000" ctype="SpriteObjectData">
                 <Size X="544.0000" Y="405.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="300.0000" Y="480.0000" />
@@ -1918,7 +1918,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero04_03.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero04" CanEdit="False" ActionTag="-2085320943" Tag="31" IconVisible="False" LeftMargin="17.0000" RightMargin="337.0000" TopMargin="426.0000" BottomMargin="206.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero04" CanEdit="False" ActionTag="-2085320943" Tag="31" IconVisible="False" LeftMargin="136.0000" RightMargin="456.0000" TopMargin="567.0000" BottomMargin="347.0000" ctype="SpriteObjectData">
                 <Size X="286.0000" Y="328.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="160.0000" Y="370.0000" />
@@ -1929,7 +1929,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/hero/hero02_03.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero05" CanEdit="False" ActionTag="2025016316" Tag="32" IconVisible="False" LeftMargin="263.5000" RightMargin="-16.5000" TopMargin="522.5000" BottomMargin="42.5000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero05" CanEdit="False" ActionTag="2025016316" Tag="32" IconVisible="False" LeftMargin="436.0000" RightMargin="156.0000" TopMargin="697.0000" BottomMargin="217.0000" ctype="SpriteObjectData">
                 <Size X="393.0000" Y="395.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="460.0000" Y="240.0000" />
@@ -1951,7 +1951,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/hero/effect001.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="hero01" CanEdit="False" ActionTag="283832658" Tag="39" IconVisible="False" LeftMargin="55.0000" RightMargin="-155.0000" TopMargin="455.0000" BottomMargin="75.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="hero01" CanEdit="False" ActionTag="283832658" Tag="39" IconVisible="False" LeftMargin="401.0000" RightMargin="191.0000" TopMargin="647.0000" BottomMargin="267.0000" ctype="SpriteObjectData">
                 <Size X="740.0000" Y="430.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="425.0000" Y="290.0000" />
@@ -1995,7 +1995,7 @@
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="logo" CanEdit="False" ActionTag="-1877329558" Tag="44" IconVisible="False" LeftMargin="155.0000" RightMargin="155.0000" TopMargin="65.0000" BottomMargin="685.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="logo" CanEdit="False" ActionTag="-1877329558" Tag="44" IconVisible="False" LeftMargin="296.0000" RightMargin="296.0000" TopMargin="147.0000" BottomMargin="767.0000" ctype="SpriteObjectData">
                 <Size X="330.0000" Y="210.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="320.0000" Y="790.0000" />
@@ -2097,6 +2097,67 @@
                 <NormalFileData Type="MarkedSubImage" Path="coverSprite/other/btn_1.png" Plist="cover.plist" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="choose" ActionTag="63974019" Tag="73" IconVisible="False" LeftMargin="173.0507" RightMargin="166.9493" TopMargin="725.0162" BottomMargin="174.9838" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+                <Size X="300.0000" Y="60.0000" />
+                <Children>
+                  <AbstractNodeData Name="text_bg" ActionTag="2097061582" Tag="76" IconVisible="False" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
+                    <Size X="300.0000" Y="60.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <FileData Type="MarkedSubImage" Path="coverUI/bg_03.png" Plist="cover.plist" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="text" ActionTag="-368106550" Tag="77" IconVisible="False" LeftMargin="57.5933" RightMargin="62.4067" TopMargin="7.9542" BottomMargin="12.0458" IsCustomSize="True" FontSize="24" LabelText="指尖骑士999区" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="180.0000" Y="40.0000" />
+                    <AnchorPoint />
+                    <Position X="57.5933" Y="12.0458" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.1920" Y="0.2008" />
+                    <PreSize X="0.6000" Y="0.6667" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="state" ActionTag="-1283818861" Tag="79" IconVisible="False" LeftMargin="11.6814" RightMargin="246.3186" TopMargin="7.3165" BottomMargin="12.6835" Scale9Width="42" Scale9Height="40" ctype="ImageViewObjectData">
+                    <Size X="42.0000" Y="40.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="32.6814" Y="32.6835" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.1089" Y="0.5447" />
+                    <PreSize X="0.1400" Y="0.6667" />
+                    <FileData Type="Normal" Path="coverUI/new.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="list_btn" ActionTag="996310564" Tag="80" IconVisible="False" LeftMargin="243.6274" RightMargin="7.3726" TopMargin="4.3977" BottomMargin="7.6023" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="19" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="49.0000" Y="48.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="268.1274" Y="31.6023" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8938" Y="0.5267" />
+                    <PreSize X="0.1633" Y="0.8000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Normal" Path="coverUI/list_btn_1.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="coverUI/list_btn_2.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="coverUI/list_btn_1.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="173.0507" Y="174.9838" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2704" Y="0.1823" />
+                <PreSize X="0.4688" Y="0.0625" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

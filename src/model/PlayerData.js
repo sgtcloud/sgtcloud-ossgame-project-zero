@@ -341,5 +341,41 @@ var PlayerDataClass = cc.Class.extend({
         }
         return levels;
     }
+    ,
+    updateGuideIndex: function(index){
+        this._player.guide_index = index;
+        this.isUpdate = true;
+        Network.updatePlayerSave();
+    }
+    ,
+    getGuideIndex: function(){
+        if(!this._player.guide_index){
+            return 0;
+        }
+        return this._player.guide_index;
+    },
+    updateAnnounces: function(index,announce){
+
+        if(!this.announces){
+            this.isAnnounceUpdata = false;
+            this.announces = [];
+        }
+        if(this.announces.length > index){
+            if(parseInt(this.announces[index].version) < parseInt(announce.version)){
+                this.isAnnounceUpdata = true;
+                this.announces[index] = announce;
+            }
+        }else{
+            this.isAnnounceUpdata = true;
+            this.announces.push(announce);
+        }
+
+    },
+    getAnnounces : function(){
+        if(!this.isAnnounceUpdata){
+            return [];
+        }
+        return this.announces;
+    }
 
 });

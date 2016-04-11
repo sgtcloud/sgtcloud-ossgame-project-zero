@@ -1180,24 +1180,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/statistics_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/statistics_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/statistics_icon.png",
+                  "Path": "mainUI/statistics_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 60,
+                "Scale9Height": 68,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1215,32 +1215,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 38.3339,
-                  "Y": 699.5417
+                  "X": 32.7747,
+                  "Y": 708.0425
                 },
                 "Scale": {
-                  "ScaleX": 0.8,
-                  "ScaleY": 0.8
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0599,
-                  "Y": 0.9453
+                  "X": 0.0512,
+                  "Y": 0.9568
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1406,
+                  "Y": 0.1216
                 },
-                "LeftMargin": -1.6661,
-                "RightMargin": 561.6661,
-                "TopMargin": 0.4583,
-                "BottomMargin": 659.5417,
+                "LeftMargin": -12.2253,
+                "RightMargin": 562.2252,
+                "TopMargin": -13.0425,
+                "BottomMargin": 663.0425,
                 "Tag": 40,
                 "ActionTag": 1271537567,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "statistics_btn",
                 "ctype": "ButtonObjectData"
@@ -1255,24 +1255,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/pack_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/pack_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/pack_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 60,
+                "Scale9Height": 68,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1290,32 +1290,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 38.3338,
-                  "Y": 622.0462
+                  "X": 32.7747,
+                  "Y": 651.9518
                 },
                 "Scale": {
-                  "ScaleX": 0.8,
-                  "ScaleY": 0.8
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0599,
-                  "Y": 0.8406
+                  "X": 0.0512,
+                  "Y": 0.881
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1406,
+                  "Y": 0.1216
                 },
-                "LeftMargin": -1.6662,
-                "RightMargin": 561.6662,
-                "TopMargin": 77.9538,
-                "BottomMargin": 582.0462,
+                "LeftMargin": -12.2253,
+                "RightMargin": 562.2252,
+                "TopMargin": 43.0482,
+                "BottomMargin": 606.9518,
                 "Tag": 42,
                 "ActionTag": -423831482,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "pack_btn",
                 "ctype": "ButtonObjectData"
@@ -1330,24 +1330,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/reward_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/reward_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/reward_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 80,
+                "Scale9Height": 92,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1365,32 +1365,32 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 39.719,
-                  "Y": 544.5508
+                  "X": 609.2626,
+                  "Y": 575.7186
                 },
                 "Scale": {
-                  "ScaleX": 0.8,
-                  "ScaleY": 0.8
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0621,
-                  "Y": 0.7359
+                  "X": 0.952,
+                  "Y": 0.778
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1719,
+                  "Y": 0.1541
                 },
-                "LeftMargin": -0.281,
-                "RightMargin": 560.281,
-                "TopMargin": 155.4492,
-                "BottomMargin": 504.5508,
+                "LeftMargin": 554.2626,
+                "RightMargin": -24.2626,
+                "TopMargin": 107.2814,
+                "BottomMargin": 518.7186,
                 "Tag": 41,
                 "ActionTag": -1641535427,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 110.0,
+                  "Y": 114.0
                 },
                 "Name": "reward_btn",
                 "ctype": "ButtonObjectData"
@@ -1438,24 +1438,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/maill_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/maill_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/offline_reward.png",
+                  "Path": "mainUI/maill_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 60,
+                "Scale9Height": 68,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1473,8 +1473,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 607.697,
-                  "Y": 707.688
+                  "X": 32.7747,
+                  "Y": 595.8612
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1483,22 +1483,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9495,
-                  "Y": 0.9563
+                  "X": 0.0512,
+                  "Y": 0.8052
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1406,
+                  "Y": 0.1216
                 },
-                "LeftMargin": 567.697,
-                "RightMargin": -7.697,
-                "TopMargin": -7.688,
-                "BottomMargin": 667.688,
+                "LeftMargin": -12.2253,
+                "RightMargin": 562.2252,
+                "TopMargin": 99.1388,
+                "BottomMargin": 550.8612,
                 "Tag": 285,
                 "ActionTag": -1828760999,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 90.0,
+                  "Y": 90.0
                 },
                 "Name": "maill_btn",
                 "ctype": "ButtonObjectData"
@@ -1513,24 +1513,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/recharge_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/recharge_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/recharge_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 56,
+                "Scale9Height": 72,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1548,8 +1548,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 607.4968,
-                  "Y": 645.7424
+                  "X": 609.2626,
+                  "Y": 702.0884
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1558,22 +1558,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9492,
-                  "Y": 0.8726
+                  "X": 0.952,
+                  "Y": 0.9488
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1344,
+                  "Y": 0.127
                 },
-                "LeftMargin": 567.4968,
-                "RightMargin": -7.4968,
-                "TopMargin": 54.2576,
-                "BottomMargin": 605.7424,
+                "LeftMargin": 566.2626,
+                "RightMargin": -12.2626,
+                "TopMargin": -9.0884,
+                "BottomMargin": 655.0884,
                 "Tag": 136,
                 "ActionTag": 577647559,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 86.0,
+                  "Y": 94.0
                 },
                 "Name": "recharge_btn",
                 "ctype": "ButtonObjectData"
@@ -1588,24 +1588,24 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/firstRecharge_btn.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/firstRecharge_btn.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/pack_icon.png",
+                  "Path": "mainUI/firstRecharge_btn.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 50,
-                "Scale9Height": 58,
+                "Scale9Width": 56,
+                "Scale9Height": 72,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1623,8 +1623,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 607.5861,
-                  "Y": 591.3192
+                  "X": 609.2626,
+                  "Y": 641.9034
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1633,24 +1633,99 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9494,
-                  "Y": 0.7991
+                  "X": 0.952,
+                  "Y": 0.8674
                 },
                 "PreSize": {
-                  "X": 0.125,
-                  "Y": 0.1081
+                  "X": 0.1344,
+                  "Y": 0.127
                 },
-                "LeftMargin": 567.5861,
-                "RightMargin": -7.5861,
-                "TopMargin": 108.6808,
-                "BottomMargin": 551.3192,
+                "LeftMargin": 566.2626,
+                "RightMargin": -12.2626,
+                "TopMargin": 51.0966,
+                "BottomMargin": 594.9034,
                 "Tag": 151,
                 "ActionTag": -961389801,
                 "Size": {
-                  "X": 80.0,
-                  "Y": 80.0
+                  "X": 86.0,
+                  "Y": 94.0
                 },
                 "Name": "firstRecharge_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/notice_btn.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/notice_btn.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/notice_btn.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 60,
+                "Scale9Height": 68,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 32.7747,
+                  "Y": 539.7705
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0512,
+                  "Y": 0.7294
+                },
+                "PreSize": {
+                  "X": 0.1406,
+                  "Y": 0.1216
+                },
+                "LeftMargin": -12.2253,
+                "RightMargin": 562.2252,
+                "TopMargin": 155.2295,
+                "BottomMargin": 494.7705,
+                "Tag": 103,
+                "ActionTag": 1128445837,
+                "Size": {
+                  "X": 90.0,
+                  "Y": 90.0
+                },
+                "Name": "notice_btn",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -1681,9 +1756,13 @@
         "mainUI/bar1.png",
         "mainUI/bar2.png",
         "mainUI/battle_icon.png",
-        "mainUI/offline_reward.png",
-        "mainUI/pack_icon.png",
-        "mainUI/statistics_icon.png"
+        "mainUI/firstRecharge_btn.png",
+        "mainUI/maill_btn.png",
+        "mainUI/notice_btn.png",
+        "mainUI/pack_btn.png",
+        "mainUI/recharge_btn.png",
+        "mainUI/reward_btn.png",
+        "mainUI/statistics_btn.png"
       ],
       "ctype": "GameFileData"
     }
