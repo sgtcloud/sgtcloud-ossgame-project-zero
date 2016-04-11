@@ -68,6 +68,10 @@ var BattlePanel = cc.Node.extend({
         }else{
             this.firstRechargeBtn.setVisible(false);
         }
+        this.noticeBtn = root.getChildByName('notice_btn');
+        bindButtonCallback(this.noticeBtn, function () {
+            NoticePanel.open(true);
+        }.bind(this));
 
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
@@ -77,13 +81,15 @@ var BattlePanel = cc.Node.extend({
             if (resources instanceof Array) {
                 for (var i = 0; i < resources.length; i++) {
                     if(cc.isNumber(resources[i].value) && resources[i].value > 0 ){
-                        this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+                        var scale = this.pack_btn.scale;
+                        this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
                         break;
                     }
                 }
             } else {
                 if(cc.isNumber(resources.value) && resources.value > 0 ){
-                    this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 0.8)));
+                    var scale = this.pack_btn.scale;
+                    this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
                 }
             }
         }.bind(this));

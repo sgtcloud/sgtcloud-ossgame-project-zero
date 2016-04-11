@@ -47,14 +47,14 @@ var NoticePanel = cc.Node.extend({
         this.listView.pushBackCustomItem(root);
     },
     openNoticePopup: function () {
-        GamePopup.openPopup(this.noticeLayer,cc.p(330,620),false);
+        GamePopup.openPopup(this.noticeLayer,cc.p(340,620),false);
     },
     hiddenNoticePopup: function () {
         GamePopup.closePopup(this.noticeLayer);
     }
 });
-NoticePanel.open = function () {
-    var announces = PlayerData.getAnnounces();
+NoticePanel.open = function (ignoreVersion) {
+    var announces = PlayerData.getAnnounces(ignoreVersion);
     if(cc.isArray(announces) && announces.length > 0){
         var noticePanel = new NoticePanel(announces);
         noticePanel.openNoticePopup();

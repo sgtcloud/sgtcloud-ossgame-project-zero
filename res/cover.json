@@ -6238,10 +6238,10 @@
                   "X": 0.6594,
                   "Y": 0.4292
                 },
-                "LeftMargin": 189.0,
-                "RightMargin": 29.0,
-                "TopMargin": 354.0,
-                "BottomMargin": 194.0,
+                "LeftMargin": 376.0,
+                "RightMargin": 216.0,
+                "TopMargin": 537.0,
+                "BottomMargin": 377.0,
                 "Tag": 28,
                 "ActionTag": 1508278506,
                 "Size": {
@@ -6283,10 +6283,10 @@
                   "X": 0.85,
                   "Y": 0.4219
                 },
-                "LeftMargin": 28.0,
-                "RightMargin": 68.0,
-                "TopMargin": 277.5,
-                "BottomMargin": 277.5,
+                "LeftMargin": 276.0,
+                "RightMargin": 316.0,
+                "TopMargin": 457.0,
+                "BottomMargin": 457.0,
                 "Tag": 29,
                 "ActionTag": 394338606,
                 "Size": {
@@ -6328,10 +6328,10 @@
                   "X": 0.4469,
                   "Y": 0.3417
                 },
-                "LeftMargin": 17.0,
-                "RightMargin": 337.0,
-                "TopMargin": 426.0,
-                "BottomMargin": 206.0,
+                "LeftMargin": 136.0,
+                "RightMargin": 456.0,
+                "TopMargin": 567.0,
+                "BottomMargin": 347.0,
                 "Tag": 31,
                 "ActionTag": -2085320943,
                 "Size": {
@@ -6373,10 +6373,10 @@
                   "X": 0.6141,
                   "Y": 0.4115
                 },
-                "LeftMargin": 263.5,
-                "RightMargin": -16.5,
-                "TopMargin": 522.5,
-                "BottomMargin": 42.5,
+                "LeftMargin": 436.0,
+                "RightMargin": 156.0,
+                "TopMargin": 697.0,
+                "BottomMargin": 217.0,
                 "Tag": 32,
                 "ActionTag": 2025016316,
                 "Size": {
@@ -6457,13 +6457,13 @@
                   "Y": 0.3021
                 },
                 "PreSize": {
-                  "X": 1.1562,
+                  "X": 1.1563,
                   "Y": 0.4479
                 },
-                "LeftMargin": 55.0,
-                "RightMargin": -155.0,
-                "TopMargin": 455.0,
-                "BottomMargin": 75.0,
+                "LeftMargin": 401.0,
+                "RightMargin": 191.0,
+                "TopMargin": 647.0,
+                "BottomMargin": 267.0,
                 "Tag": 39,
                 "ActionTag": 283832658,
                 "Size": {
@@ -6640,10 +6640,10 @@
                   "X": 0.5156,
                   "Y": 0.2188
                 },
-                "LeftMargin": 155.0,
-                "RightMargin": 155.0,
-                "TopMargin": 65.0,
-                "BottomMargin": 685.0,
+                "LeftMargin": 296.0,
+                "RightMargin": 296.0,
+                "TopMargin": 147.0,
+                "BottomMargin": 767.0,
                 "Tag": 44,
                 "ActionTag": -1877329558,
                 "Size": {
@@ -7041,6 +7041,261 @@
                 },
                 "Name": "cover_login_btn",
                 "ctype": "ButtonObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 173.0507,
+                  "Y": 174.9838
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2704,
+                  "Y": 0.1823
+                },
+                "PreSize": {
+                  "X": 0.4688,
+                  "Y": 0.0625
+                },
+                "LeftMargin": 173.0507,
+                "RightMargin": 166.9493,
+                "TopMargin": 725.0162,
+                "BottomMargin": 174.9838,
+                "Tag": 73,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverUI/bg_03.png",
+                      "Plist": "cover.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 9,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 10,
+                    "Scale9Height": 14,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "Tag": 76,
+                    "ActionTag": 2097061582,
+                    "Size": {
+                      "X": 300.0,
+                      "Y": 60.0
+                    },
+                    "Name": "text_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 24,
+                    "LabelText": "指尖骑士999区",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 57.5933,
+                      "Y": 12.0458
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.192,
+                      "Y": 0.2008
+                    },
+                    "PreSize": {
+                      "X": 0.6,
+                      "Y": 0.6667
+                    },
+                    "LeftMargin": 57.5933,
+                    "RightMargin": 62.4067,
+                    "TopMargin": 7.9542,
+                    "BottomMargin": 12.0458,
+                    "Tag": 77,
+                    "ActionTag": -368106550,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 40.0
+                    },
+                    "Name": "text",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "coverUI/new.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 42,
+                    "Scale9Height": 40,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 32.6814,
+                      "Y": 32.6835
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1089,
+                      "Y": 0.5447
+                    },
+                    "PreSize": {
+                      "X": 0.14,
+                      "Y": 0.6667
+                    },
+                    "LeftMargin": 11.6814,
+                    "RightMargin": 246.3186,
+                    "TopMargin": 7.3165,
+                    "BottomMargin": 12.6835,
+                    "Tag": 79,
+                    "ActionTag": -1283818861,
+                    "Size": {
+                      "X": 42.0,
+                      "Y": 40.0
+                    },
+                    "Name": "state",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "coverUI/list_btn_1.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "coverUI/list_btn_2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "coverUI/list_btn_1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 19,
+                    "Scale9Height": 26,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 268.1274,
+                      "Y": 31.6023
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8938,
+                      "Y": 0.5267
+                    },
+                    "PreSize": {
+                      "X": 0.1633,
+                      "Y": 0.8
+                    },
+                    "LeftMargin": 243.6274,
+                    "RightMargin": 7.3726,
+                    "TopMargin": 4.3977,
+                    "BottomMargin": 7.6023,
+                    "Tag": 80,
+                    "ActionTag": 996310564,
+                    "Size": {
+                      "X": 49.0,
+                      "Y": 48.0
+                    },
+                    "Name": "list_btn",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 63974019,
+                "Size": {
+                  "X": 300.0,
+                  "Y": 60.0
+                },
+                "Name": "choose",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 1280592755,
@@ -7061,7 +7316,10 @@
       },
       "UsedResources": [
         "cover.plist",
-        "cover.png"
+        "cover.png",
+        "coverUI/list_btn_1.png",
+        "coverUI/list_btn_2.png",
+        "coverUI/new.png"
       ],
       "ctype": "GameFileData"
     }

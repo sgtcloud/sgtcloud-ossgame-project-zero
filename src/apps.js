@@ -453,21 +453,26 @@ function showCover() {
             NoticePanel.open();
             loginBtn.setEnabled(true);
             loginBtn.setBright(true);
+            chooseBtn.setVisible(true);
         }
     });
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
+    var chooseBtn = scene.getChildByName('choose');
+    chooseBtn.setVisible(false);
     loginBtn.setEnabled(false);
     loginBtn.setBright(false);
     if (PlayerData.modelPlayer) {
-        initGame(createPlayerComplete);
+        initGame();
     }
     bindButtonCallback(loginBtn, function () {
         //判断当前用户是否存在角色
         if (!PlayerData.modelPlayer) {
             loginBtn.setVisible(false);
             Network.openNewNameLayer(scene, createPlayerComplete);
+        }else{
+            createPlayerComplete();
         }
     });
     cc.director.runScene(scene);
