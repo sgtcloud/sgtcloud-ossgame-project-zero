@@ -131,7 +131,8 @@ var res = {
     arena_result_tip: 'res/SettlementLayer.json',
     guide_skip_json: 'res/GuideSkip.json',
     notice_view_json: 'res/NoticeView.json',
-    notice_layer_json: 'res/NoticeLayer.json'
+    notice_layer_json: 'res/NoticeLayer.json',
+    gift_code_layer_json: 'res/GiftCodeLayer.json'
 };
 var full_resouces = [];
 var first_resources = [];

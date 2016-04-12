@@ -396,102 +396,28 @@
                 },
                 "Name": "text",
                 "ctype": "TextFieldObjectData"
-              }
-            ],
-            "ActionTag": -369432179,
-            "Size": {
-              "X": 600.0,
-              "Y": 350.0
-            },
-            "Name": "root",
-            "ctype": "PanelObjectData"
-          },
-          {
-            "BackColorAlpha": 102,
-            "SingleColor": {
-              "R": 150,
-              "G": 200
-            },
-            "FirstColor": {
-              "R": 150,
-              "G": 200
-            },
-            "EndColor": {},
-            "ColorVector": {
-              "ScaleY": 1.0
-            },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
-            "TouchEnable": true,
-            "AnchorPoint": {},
-            "Position": {
-              "X": 386.3168,
-              "Y": 25.778
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.6439,
-              "Y": 0.0737
-            },
-            "PreSize": {
-              "X": 0.25,
-              "Y": 0.1714
-            },
-            "LeftMargin": 386.3168,
-            "RightMargin": 63.6832,
-            "TopMargin": 264.222,
-            "BottomMargin": 25.778,
-            "Tag": 529,
-            "Children": [
+              },
               {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
                 },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/bg_14.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 13,
-                "Scale9OriginY": 13,
-                "Scale9Width": 6,
-                "Scale9Height": 21,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 386.3168,
+                  "Y": 25.778
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -500,74 +426,148 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.6439,
+                  "Y": 0.0737
                 },
                 "PreSize": {
-                  "X": 1.0,
-                  "Y": 1.0
+                  "X": 0.25,
+                  "Y": 0.1714
                 },
-                "CallBackType": "Click",
-                "Tag": 530,
-                "ActionTag": -900925514,
+                "LeftMargin": 386.3168,
+                "RightMargin": 63.6832,
+                "TopMargin": 264.222,
+                "BottomMargin": 25.778,
+                "Tag": 529,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "mainUI/bg_14.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 13,
+                    "Scale9OriginY": 13,
+                    "Scale9Width": 6,
+                    "Scale9Height": 21,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "CallBackType": "Click",
+                    "Tag": 530,
+                    "ActionTag": -900925514,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 60.0
+                    },
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "mailUI/get.png",
+                      "Plist": "OtherUI.plist"
+                    },
+                    "Scale9Width": 92,
+                    "Scale9Height": 29,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 75.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.6133,
+                      "Y": 0.4833
+                    },
+                    "LeftMargin": 29.0,
+                    "RightMargin": 29.0,
+                    "TopMargin": 15.5,
+                    "BottomMargin": 15.5,
+                    "CallBackType": "Touch",
+                    "Tag": 531,
+                    "ActionTag": -1485794553,
+                    "Size": {
+                      "X": 92.0,
+                      "Y": 29.0
+                    },
+                    "Name": "get",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": 1146031866,
                 "Size": {
                   "X": 150.0,
                   "Y": 60.0
                 },
-                "Name": "btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "mailUI/get.png",
-                  "Plist": "OtherUI.plist"
-                },
-                "Scale9Width": 92,
-                "Scale9Height": 29,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 75.0,
-                  "Y": 30.0
-                },
-                "Scale": {
-                  "ScaleX": 1.2,
-                  "ScaleY": 1.2
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.5
-                },
-                "PreSize": {
-                  "X": 0.6133,
-                  "Y": 0.4833
-                },
-                "LeftMargin": 29.0,
-                "RightMargin": 29.0,
-                "TopMargin": 15.5,
-                "BottomMargin": 15.5,
-                "CallBackType": "Touch",
-                "Tag": 531,
-                "ActionTag": -1485794553,
-                "Size": {
-                  "X": 92.0,
-                  "Y": 29.0
-                },
-                "Name": "get",
-                "ctype": "ImageViewObjectData"
+                "Name": "get_btn",
+                "ctype": "PanelObjectData"
               }
             ],
-            "ActionTag": 1146031866,
+            "ActionTag": -369432179,
             "Size": {
-              "X": 150.0,
-              "Y": 60.0
+              "X": 600.0,
+              "Y": 350.0
             },
-            "Name": "get_btn",
+            "Name": "root",
             "ctype": "PanelObjectData"
           }
         ],

@@ -588,7 +588,7 @@
         },
         getAnnounceByType: function(type,i,cb){
             console.log(i+"===================="+type);
-            sgt.AnnouncementService.getAnnounceByType(type,function(result,data){
+            sgt.AnnouncementService.getAnnounceByType(1,type,function(result,data){
                 if(result && cc.isObject(data)){
                     //if(cc.isObject(PlayerData.announces) && [types[i]])
                     PlayerData.updateAnnounces(i,data);
@@ -619,6 +619,25 @@
             });
             return tasks;
         },
+        redeemAndGetReward: function(giftCode){
+            SgtApi.GiftCodeService.redeem(player.id,giftCode,function(result,data){
+                if(result){
+                    if(cc.isString(data)){
+                        data = JSON.parse(data);
+                        tip.toggle(formatResourceToString(data));
+                        PlayerData.updateResource(data);
+                        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data);
+                        PlayerData.isUpdate = true;
+                        this.updatePlayerSave();
+                    }else{
+                        //没有礼包
+                    }
+                }else{
+                    tip.toggle(data);
+                }
+            }.bind(this));
+        },
+
     };
     window.Network = new NetworkResolve();
 })();
