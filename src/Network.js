@@ -623,6 +623,7 @@
             SgtApi.GiftCodeService.redeem(player.id,giftCode,function(result,data){
                 if(result){
                     if(cc.isString(data)){
+                        data = JSON.parse(data);
                         tip.toggle(formatResourceToString(data));
                         PlayerData.updateResource(data);
                         customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data);
