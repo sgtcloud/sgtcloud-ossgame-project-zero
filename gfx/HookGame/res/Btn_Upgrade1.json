@@ -47,9 +47,10 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 1.0,
+              "X": 0.6429,
               "Y": 1.0
             },
+            "RightMargin": 50.0,
             "Tag": 188,
             "Children": [
               {
@@ -62,24 +63,23 @@
                 },
                 "DisabledFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn2.png",
+                  "Path": "heroUI/btn1_02.png",
                   "Plist": "HeroUI.plist"
                 },
                 "PressedFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn1.png",
+                  "Path": "heroUI/btn1_01.png",
                   "Plist": "HeroUI.plist"
                 },
                 "NormalFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn1.png",
+                  "Path": "heroUI/btn1_01.png",
                   "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 110,
-                "Scale9Height": 58,
+                "Scale9OriginX": 30,
+                "Scale9Width": 1,
+                "Scale9Height": 80,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -114,7 +114,7 @@
                 "Tag": 189,
                 "ActionTag": 1500229950,
                 "Size": {
-                  "X": 140.0,
+                  "X": 90.0,
                   "Y": 80.0
                 },
                 "Name": "btn",
@@ -131,8 +131,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 12.9494,
-                  "Y": 41.768
+                  "X": 11.9494,
+                  "Y": 40.768
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -143,17 +143,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0925,
-                  "Y": 0.5221
+                  "X": 0.1328,
+                  "Y": 0.5096
                 },
                 "PreSize": {
-                  "X": 0.3643,
+                  "X": 0.5667,
                   "Y": 0.225
                 },
-                "LeftMargin": 12.9494,
-                "RightMargin": 76.0506,
-                "TopMargin": 29.232,
-                "BottomMargin": 32.768,
+                "LeftMargin": 11.9494,
+                "RightMargin": 27.0506,
+                "TopMargin": 30.232,
+                "BottomMargin": 31.768,
                 "Tag": 190,
                 "ActionTag": 685027553,
                 "Size": {
@@ -166,7 +166,7 @@
             ],
             "ActionTag": -1849437105,
             "Size": {
-              "X": 140.0,
+              "X": 90.0,
               "Y": 80.0
             },
             "Name": "btn100",
@@ -205,9 +205,10 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 1.0,
+              "X": 0.5357,
               "Y": 1.0
             },
+            "RightMargin": 65.0,
             "Tag": 179,
             "Children": [
               {
@@ -220,24 +221,23 @@
                 },
                 "DisabledFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn2.png",
+                  "Path": "heroUI/btn1_02.png",
                   "Plist": "HeroUI.plist"
                 },
                 "PressedFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn1.png",
+                  "Path": "heroUI/btn1_01.png",
                   "Plist": "HeroUI.plist"
                 },
                 "NormalFileData": {
                   "Type": "MarkedSubImage",
-                  "Path": "heroUI/btn1.png",
+                  "Path": "heroUI/btn1_01.png",
                   "Plist": "HeroUI.plist"
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 110,
-                "Scale9Height": 58,
+                "Scale9OriginX": 30,
+                "Scale9Width": 1,
+                "Scale9Height": 80,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -272,7 +272,7 @@
                 "Tag": 182,
                 "ActionTag": -1649356931,
                 "Size": {
-                  "X": 140.0,
+                  "X": 75.0,
                   "Y": 80.0
                 },
                 "Name": "btn",
@@ -289,8 +289,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 12.9494,
-                  "Y": 41.768
+                  "X": 11.9494,
+                  "Y": 40.768
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -301,17 +301,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0925,
-                  "Y": 0.5221
+                  "X": 0.1593,
+                  "Y": 0.5096
                 },
                 "PreSize": {
-                  "X": 0.25,
+                  "X": 0.4667,
                   "Y": 0.225
                 },
-                "LeftMargin": 12.9494,
-                "RightMargin": 92.0506,
-                "TopMargin": 29.232,
-                "BottomMargin": 32.768,
+                "LeftMargin": 11.9494,
+                "RightMargin": 28.0506,
+                "TopMargin": 30.232,
+                "BottomMargin": 31.768,
                 "Tag": 184,
                 "ActionTag": -2081486382,
                 "Size": {
@@ -324,7 +324,7 @@
             ],
             "ActionTag": 1597558356,
             "Size": {
-              "X": 140.0,
+              "X": 75.0,
               "Y": 80.0
             },
             "Name": "btn10",
