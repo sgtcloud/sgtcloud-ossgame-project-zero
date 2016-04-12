@@ -588,7 +588,7 @@
         },
         getAnnounceByType: function(type,i,cb){
             console.log(i+"===================="+type);
-            sgt.AnnouncementService.getAnnounceByType(type,function(result,data){
+            sgt.AnnouncementService.getAnnounceByType(1,type,function(result,data){
                 if(result && cc.isObject(data)){
                     //if(cc.isObject(PlayerData.announces) && [types[i]])
                     PlayerData.updateAnnounces(i,data);
