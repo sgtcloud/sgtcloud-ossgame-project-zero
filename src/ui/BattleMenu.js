@@ -18,9 +18,9 @@ var BattleMenu = cc.Node.extend({
 
 
 
-function canUnlockItem(hero, target) {
+function canUnlockItem(hero, target,lv) {
     var heroLv = hero.getLv();
-    var unlockLevel = target.getUnlockLevel();
+    var unlockLevel = target.getUnlockLevel(lv);
     return !(heroLv < unlockLevel);
 }
 function lockItem(hero, target, elements) {

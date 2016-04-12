@@ -394,7 +394,7 @@ function initGame(cb) {
     }
 }
 function validateResourceNotEnough(nextlevelData, upgrade_btn, text) {
-    var flag = validateAmountNotEnough(nextlevelData)
+    var flag = validateAmountNotEnough(nextlevelData);
     if (flag) {
         upgrade_btn.setEnabled(false);
         upgrade_btn.setBright(false);
@@ -468,7 +468,7 @@ function showCover() {
         if (!PlayerData.modelPlayer) {
             loginBtn.setVisible(false);
             Network.openNewNameLayer(scene, createPlayerComplete);
-        }
+        }else createPlayerComplete();
     });
     cc.director.runScene(scene);
 }
@@ -496,6 +496,7 @@ function bindButtonCallback(button, callback) {
                 callback.call(sender);
                 break;
         }
+        return true;
     }, button);
 }
 function removeCCSAnimationDefaultTween(timelines) {
@@ -581,6 +582,32 @@ function bindTouchEventListener(listener, target, popup) {
     var touchDownEventListener = cc.EventListener.create({
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
         swallowTouches: false,
+        onTouchBegan: function (touch, event) {
+            var target = event.getCurrentTarget();
+            var locationInNode = target.convertToNodeSpace(touch.getLocation());
+            var s = target.getContentSize();
+            var rect = cc.rect(0, 0, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                return listener(touch, event);
+            }
+            return false;
+        },
+        onTouchMoved: function () {
+            return false;
+        },
+        onTouchCancelled: function () {
+            return false;
+        },
+        onTouchEnd: function (touch, event) {
+            return false;
+        }
+    });
+    cc.eventManager.addListener(touchDownEventListener, target);
+}
+function bindTouchEventListener2(listener, target, popup) {
+    var touchDownEventListener = cc.EventListener.create({
+        event: cc.EventListener.TOUCH_ONE_BY_ONE,
+        swallowTouches: true,
         onTouchBegan: function (touch, event) {
             var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());

@@ -7,13 +7,10 @@ var HeroListMenu = ListViewMenu.extend({
         this.listView = this.root.getChildByName('hero_list');
         this._heroTemp = ccs.csLoader.createNode(res.hero_view_json).getChildByName('root');
         this._skillTemp = ccs.csLoader.createNode(res.skill_view_json).getChildByName('root');
-        //this.setListView(this.listView);
         this._skillTemp.setPositionX(this._heroTemp.width - this._skillTemp.width);
         var upgrade_btn_layoutTemp = this._heroTemp.getChildByName('upgrade_btn');
         this._upgradeBtnPosition = upgrade_btn_layoutTemp.getPosition();
         this._upgrade_btnTemp = upgrade_btn_layoutTemp.getChildByName('btn1');
-        //var difPose = this._upgrade_btnTemp.getPositionX();
-        //this._upgradeBtnPosition.x += difPose;
         this._upgrade_btn100Temp = upgrade_btn_layoutTemp.getChildByName('btn100');
         this._upgrade_btn10Temp = upgrade_btn_layoutTemp.getChildByName('btn10');
         var maxLevelBtn_layoutTemp = this._heroTemp.getChildByName('MaxLevel');
@@ -24,7 +21,7 @@ var HeroListMenu = ListViewMenu.extend({
         this._revive_btnPosition = revive_btnBtn_layoutTemp.getPosition();
 
         var default_item = new ccui.Layout();
-        default_item.setTouchEnabled(true);
+        //default_item.setTouchEnabled(true);
         default_item.setContentSize(this._heroTemp.getContentSize());
         default_item.width = this.listView.width;
         default_item.height = this._skillTemp.height;
@@ -47,11 +44,10 @@ var HeroListMenu = ListViewMenu.extend({
         //this.listView._innerContainer.setLayoutComponentEnabled(true);
         //this.views = {};
         {//填充英雄的列表 循环填充英雄+技能
-            var that = this;
             for (var i = 0; i < player.heroes.length; i++) {
                 var heroData = PlayerData.getHeroesData(i);
                 if (heroData.isLocked()) {
-                    lockHero(heroData);
+                    lockHero.call(this, heroData);
                 } else {
                     this.buildHeroMenu(heroData);
                 }
@@ -61,21 +57,39 @@ var HeroListMenu = ListViewMenu.extend({
                 customEventHelper.bindListener(EVENT.UNLOCK_HERO, function (event) {
                     var hero = event.getUserData();
                     if (hero.getId() === _hero.getUnLock()['value'] && !_hero.isLocked()) {
-                        that.pause();
-                        that.buildHeroMenu(_hero);
-                        that.updateInnerContainerSize();
-                        that.resume();
+                        this.pause();
+                        this.buildHeroMenu(_hero);
+                        this.updateInnerContainerSize();
+                        this.resume();
                     }
-                });
+                }.bind(this));
             }
         }
         customEventHelper.sendEvent(EVENT.HERO_UPGRADE_BTN);
         customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE_BTN);
+        //this.releaseResource();
         this.scheduleUpdate();
+    }, releaseResource: function () {
+        delete this._lockBtnPosition;
+        delete this._heroTemp;
+        delete this._upgrade_btn10Temp;
+        delete this._upgrade_btn100Temp;
+        delete this._upgrade_btnTemp;
+        delete this._maxLevelBtnPosition;
+        delete this._maxLevelBtnTemp;
+        delete this._revive_btnBtnTemp;
+        delete this._revive_btnPosition;
+        delete this._skillMaxLevelBtnPosition;
+        delete this._skillMaxLevelBtnTemplate;
+        delete this._skillTemp;
+        delete this._upgradeSkillBtn10Temp;
+        delete this._upgradeSkillBtn100Temp;
+        delete this._upgradeSkillBtnTemp;
+        delete this._upgradeSkillPosition;
     },
     _buildSkillView: function (item) {
         var lock_btn, maxLevel, upgradeSkill;
-        var skill = item.target, hero = item.relation, root = item.root, first = false;
+        var skill = item.target, hero = item.relation, root = item.root, first = false, up10, up100;
         if (typeof  root === 'undefined') {
             root = this._skillTemp.clone();
             lock_btn = this._lockBtnTemplate.clone();
@@ -87,18 +101,42 @@ var HeroListMenu = ListViewMenu.extend({
             upgradeSkill = this._upgradeSkillBtnTemp.clone();
             upgradeSkill.setPosition(this._upgradeSkillPosition);
             upgradeSkill.setName('upgradeSkillLayer');
+
+            up10 = this._upgradeSkillBtn10Temp.clone();
+            up10.setPosition(this._upgradeSkillPosition);
+            up10.setName('up10');
+            up10.setVisible(false);
+            up100 = this._upgradeSkillBtn100Temp.clone();
+            up100.setPosition(this._upgradeSkillPosition);
+            up100.setName('up100');
+            up100.setVisible(false);
             root.addChild(lock_btn);
             root.addChild(maxLevel);
-            root.addChild(upgradeSkill);
+            root.addChild(upgradeSkill, 30);
+            upgradeSkill.setLocalZOrder(30);
+            root.addChild(up10, 20);
+            up10.setLocalZOrder(20);
+            root.addChild(up100, 1);
+            up100.setLocalZOrder(1);
             item.root = root;
             first = true;
         } else {
             lock_btn = root.getChildByName('lockBtnLayer');
             maxLevel = root.getChildByName('maxLevelLayer');
             upgradeSkill = root.getChildByName('upgradeSkillLayer');
+            up10 = root.getChildByName('up10');
+            up100 = root.getChildByName('up100');
         }
         var elements = {};
-        buildUpgradeBtn(elements, upgradeSkill, skill);
+        buildUpgradeBtn.call(this, elements, upgradeSkill, skill, up10, up100);
+        if (up100) {
+            elements.upgrade_btn.up10.getChildByName('btn').addTouchEventListener(function () {
+                this._skillUpgradeEventListener(elements, skill, 10, hero);
+            }.bind(this));
+            elements.upgrade_btn.up100.getChildByName('btn').addClickEventListener(function () {
+                this._skillUpgradeEventListener(elements, skill, 100, hero);
+            }.bind(this));
+        }
         buildMaxLevelBtn(elements, maxLevel);
         var icon = root.getChildByName('skill_icon');
         var name = root.getChildByName('skillName_text');
@@ -127,42 +165,9 @@ var HeroListMenu = ListViewMenu.extend({
             setFont([name, desc, elements.upgrade_btn.buff_text]);
             this._bindSkillMenuListener(elements, skill, hero);
         }
-        initView(elements, skill, function (event, otherBtn) {
-            var eventData = {};
-            var cost = skill.getNextLevelUpgrade();
-            cost['value'] = -cost['value'];
-            eventData.cost = cost;
-            eventData.skillId = skill.getId();
-            var levelData = skill.getLevelData();
-            skill.upgrade();
-            desc.setString(buildDesc(skill.traverseSkillEffects(), skill.getDesc(), {"duration": skill.getLevelData()['duration']}));
-            lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
-            customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
-            hero.refreshProps();
-            customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
-            customEventHelper.sendEvent(EVENT.UNLOCK_ACTIVITY_SKILL, skill.getId());
-            if (skill.isMaxLevel()) {
-                elements.maxLevel_btn.layer.setVisible(true);
-                elements.upgrade_btn.layer.setVisible(false);
-            } else {
-                var effects = skill.traverseSkillEffects();
-                var nextlevelData = skill.getLevelData(skill.getLv() + 1);
-                var nextAmount = nextlevelData['upgrade']['value'];
-                var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
-                elements.upgrade_btn.text_yellow.setString(nextAmount);
-                var showEffect = (nextEffects[0].value - effects[0].value).toFixed(SkillEffectMappings[nextEffects[0]['type']]['fixed']);
-                if (showEffect > 0) {
-                    showEffect = '+' + showEffect;
-                }
-                elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
-                if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
-                    showEffect += '%'
-                } else {
-                }
-                elements.upgrade_btn.buffNum_text.setString(showEffect);
-                lockItemIfNecessary(hero, skill, elements);
-            }
-        });
+        initView(elements, skill, function () {
+            this._skillUpgradeEventListener(elements, skill, 1, hero);
+        }.bind(this));
         if (!skill.isMaxLevel()) {
             if (!canUnlockItem(hero, skill)) {
                 lockItem(hero, skill, elements);
@@ -172,6 +177,79 @@ var HeroListMenu = ListViewMenu.extend({
         }
         return root;
     },
+    _skillUpgradeEventListener: function (elements, skill, num, hero) {
+        var eventData = {};
+        var cost = this._upgradeCost(skill, num);
+        cost['value'] = -cost['value'];
+        eventData.cost = cost;
+        eventData.skillId = skill.getId();
+        skill.upgrade(num);
+        elements.desc.setString(buildDesc(skill.traverseSkillEffects(), skill.getDesc(), {"duration": skill.getLevelData()['duration']}));
+        elements.lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
+        customEventHelper.sendEvent(EVENT.HERO_SKILL_UPGRADE, eventData);
+        hero.refreshProps();
+        customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
+        customEventHelper.sendEvent(EVENT.UNLOCK_ACTIVITY_SKILL, skill.getId());
+        if (skill.isMaxLevel()) {
+            elements.maxLevel_btn.layer.setVisible(true);
+            elements.upgrade_btn.layer.setVisible(false);
+            elements.upgrade_btn.up10.setVisible(false);
+            elements.upgrade_btn.up100.setVisible(false);
+        } else {
+            var effects = skill.traverseSkillEffects();
+            var nextlevelData = skill.getLevelData(skill.getLv() + 1);
+            var nextAmount = nextlevelData['upgrade']['value'];
+            var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
+            elements.upgrade_btn.text_yellow.setString(nextAmount);
+            var showEffect = (nextEffects[0].value - effects[0].value).toFixed(SkillEffectMappings[nextEffects[0]['type']]['fixed']);
+            if (showEffect > 0) {
+                showEffect = '+' + showEffect;
+            }
+            elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
+            if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
+                showEffect += '%'
+            }
+            elements.upgrade_btn.buffNum_text.setString(showEffect);
+            lockItemIfNecessary(hero, skill, elements);
+            this.continuousUpgrade(elements, skill);
+        }
+    },
+    continuousUpgrade: function (elements, target) {
+        var args = [];
+        var maxLevel = target.getMaxLevel();
+        var lv = target.getLv();
+        var difLv = maxLevel - lv;
+        elements.upgrade_btn.up10.stopAllActions();
+        elements.upgrade_btn.up100.stopAllActions();
+        var up10= elements.upgrade_btn.up10;
+        var up100= elements.upgrade_btn.up100;
+        if (difLv >= 100) {
+            if (!elements.upgrade_btn.upBtnMove.btn100) {
+                args.push({'node': up100, 'pos': cc.p(-115, 0)});
+                elements.upgrade_btn.upBtnMove.btn100 = true;
+            }
+        }/* else if (elements.upgrade_btn.upBtnMove.btn100) {
+            //args.push({'node': up100, 'pos': cc.p(115, 0)});
+            elements.upgrade_btn.upBtnMove.btn100 = false;
+        }*/
+        if (difLv >= 10) {
+            if (!elements.upgrade_btn.upBtnMove.btn10) {
+                args.push({
+                    'node': up10,
+                    'pos': cc.p(-50, 0)
+                });
+                elements.upgrade_btn.upBtnMove.btn10 = true;
+            }
+        } /*else if (elements.upgrade_btn.upBtnMove.btn10) {
+            //args.push({
+            //    'node':up10,
+            //    'pos': cc.p(50, 0)
+            //});
+            elements.upgrade_btn.upBtnMove.btn10 = false;
+        }*/
+        this._runAction();
+        this._runAction(args);
+    },
     _bindSkillMenuListener: function (elements, skill, hero) {
         customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                 if (canUnlockItem(hero, skill)) {
@@ -180,7 +258,9 @@ var HeroListMenu = ListViewMenu.extend({
                         validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
                     }
                 }
-            }
+            validateContinouseUpgradeResourceNotEnough.call(this, hero,skill,100, elements.upgrade_btn.up100, elements.upgrade_btn.upBtnMove.btn100,{'node': elements.upgrade_btn.up100, 'pos': cc.p(115, 0)});
+            validateContinouseUpgradeResourceNotEnough.call(this, hero,skill,10, elements.upgrade_btn.up10, elements.upgrade_btn.upBtnMove.btn10,  {'node': elements.upgrade_btn.up10, 'pos': cc.p(50, 0)});
+            }.bind(this)
         );
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
             if (canUnlockItem(hero, skill) && elements.lock_btn.layer.isVisible()) {
@@ -190,7 +270,7 @@ var HeroListMenu = ListViewMenu.extend({
     },
     _buildHeroView: function (item, cb) {
         var hero = item.target, root = item.root;
-        var btnlayer, revive_btn, upMaxLevelBtn, first = false;
+        var btnlayer, revive_btn, upMaxLevelBtn, first = false, up10, up100;
         if (typeof  root === 'undefined') {
             root = this._heroTemp.clone();
             btnlayer = this._upgrade_btnTemp.clone();
@@ -202,8 +282,21 @@ var HeroListMenu = ListViewMenu.extend({
             revive_btn = this._revive_btnBtnTemp.clone();//.getChildByName('revive_btn');
             revive_btn.setPosition(this._revive_btnPosition);
             revive_btn.setName('revive_btn');
+            up10 = this._upgrade_btn10Temp.clone();
+            up10.setPosition(this._upgradeBtnPosition);
+            up10.setName('up10');
+            up10.setVisible(false);
+            up100 = this._upgrade_btn100Temp.clone();
+            up100.setPosition(this._upgradeBtnPosition);
+            up100.setName('up100');
+            up100.setVisible(false);
             root.addChild(revive_btn);
-            root.addChild(btnlayer);
+            root.addChild(up10, 20);
+            up10.setLocalZOrder(20);
+            root.addChild(up100, 10);
+            up100.setLocalZOrder(10);
+            root.addChild(btnlayer, 30);
+            btnlayer.setLocalZOrder(30);
             root.addChild(upMaxLevelBtn);
             first = true;
             item.root = root;
@@ -211,9 +304,29 @@ var HeroListMenu = ListViewMenu.extend({
             btnlayer = root.getChildByName(hero.getId() + '_btnUpgrade');
             upMaxLevelBtn = root.getChildByName('upMaxLevelBtn');
             revive_btn = root.getChildByName('revive_btn');
+            up10 = root.getChildByName('up10');
+            up100 = root.getChildByName('up100');
         }
         var elements = {};
-        buildUpgradeBtn(elements, btnlayer, hero);
+        buildUpgradeBtn.call(this, elements, btnlayer, hero, up10, up100);
+        if (up100) {
+            bindTouchEventListener2(function (e) {
+                this._heroUpgradeEventListener(elements, hero, 100);
+                return true;
+            }.bind(this),elements.upgrade_btn.up100);
+            //elements.upgrade_btn.up100.getChildByName('btn').addClickEventListener(function (e) {
+            //    this._heroUpgradeEventListener(elements, hero, 100);
+            //    return true;
+            //}.bind(this));
+            bindTouchEventListener2(function (e) {
+                this._heroUpgradeEventListener(elements, hero, 10);
+                return true;
+            }.bind(this),elements.upgrade_btn.up10);
+            //elements.upgrade_btn.up10.getChildByName('btn').addClickEventListener(function () {
+            //    this._heroUpgradeEventListener(elements, hero, 10);
+            //    return true;
+            //}.bind(this));
+        }
         buildMaxLevelBtn(elements, upMaxLevelBtn)
         var icon = root.getChildByName('hero_icon');
         var lv = root.getChildByName('level_text');
@@ -268,32 +381,7 @@ var HeroListMenu = ListViewMenu.extend({
             elements.die_time_text.setVisible(false);
             elements.revive_btn.layer.setVisible(false);
         }
-        initView(elements, hero, function (event, otherBtn) {
-            var eventData = {};
-            eventData.heroId = hero.getId();
-            var cost = hero.getNextLevelUpgrade();
-            cost['value'] = 0 - cost['value'];
-            eventData.cost = cost;
-            hero.upgrade();
-            elements.lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
-            customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
-            customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
-            if (hero.isMaxLevel()) {
-                elements.maxLevel_btn.layer.setVisible(true);
-                elements.upgrade_btn.layer.setVisible(false);
-            } else {
-                var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-                var nextLevelAmount = nextlevelData['upgrade']['value'];
-                var nextLevelLife = nextlevelData['life'];
-                elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
-                var levelLife = hero.getLevelData()['life'];
-                var effect = nextLevelLife - levelLife;
-                elements.upgrade_btn.buffNum_text.setString(toFixed2(effect, 0));
-            }
-            if (hero.getLv() == 1) {
-                customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
-            }
-        });
+        initView(elements, hero, this._heroUpgradeEventListener.bind(this));
         if (typeof cb === 'function') {
             cb(hero, root);
         }
@@ -302,6 +390,66 @@ var HeroListMenu = ListViewMenu.extend({
             customEventHelper.sendEvent(EVENT.HERO_DIE, hero);
         }
         return root;
+    },
+    _runAction: function (args, cb,time) {
+        //args = Array.prototype.slice.call(arguments);
+        for (var i = 0, j = args.length; i < j; i++) {
+            var seq = [];
+            var move = cc.moveBy(time||0.2, args[i]['pos']);
+            seq.push(move);
+            args[i]['node'].stopAllActions();
+            args[i]['node'].setVisible(true);
+            if (args[i]['hide']) {
+                seq.push(cc.hide());
+            }/*else {
+                var move2 = cc.moveBy(0.2, cc.p(-args[i]['pos'].x,args[i]['pos'].y));
+                var seq2 = [];
+                seq2.push(move2);
+            }*/
+            if (typeof  cb === 'function') {
+                seq.push(cc.callFunc(cb.bind(this)));
+            }
+            var sequence = cc.sequence(seq);
+            args[i]['node'].runAction(sequence);
+        }
+    },
+    _upgradeCost: function (target, num) {
+        var costs = [];
+        for (var i = 0; i < num; i++) {
+            var cost = target.getLevelUpgrade(target.getLv() + 1 + i);
+            cost['value'] = 0 - cost['value'];
+            costs.push(cost);
+        }
+        return costs;
+    },
+    _heroUpgradeEventListener: function (elements, hero, num) {
+        var eventData = {};
+        var cost = this._upgradeCost(hero, num);
+        eventData.cost = cost;
+        eventData.heroId = hero.getId();
+        hero.upgrade(num);
+        elements.lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
+        customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
+        customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
+        if (hero.isMaxLevel()) {
+            elements.maxLevel_btn.layer.setVisible(true);
+            elements.upgrade_btn.layer.setVisible(false);
+            elements.upgrade_btn.up10.setVisible(false);
+            elements.upgrade_btn.up100.setVisible(false);
+        } else {
+            var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+            var nextLevelAmount = nextlevelData['upgrade']['value'];
+            var nextLevelLife = nextlevelData['life'];
+            elements.upgrade_btn.text_yellow.setString(nextLevelAmount);
+            var levelLife = hero.getLevelData()['life'];
+            var effect = nextLevelLife - levelLife;
+            elements.upgrade_btn.buffNum_text.setString(toFixed2(effect, 0));
+            this.continuousUpgrade(elements, hero);
+        }
+        if (hero.getLv() == 1) {
+            customEventHelper.sendEvent(EVENT.UNLOCK_HERO, hero);
+        }
+        return true;
     },
     _bindHeroMenuListener: function (elements, target) {
         var hero = target;
@@ -331,6 +479,8 @@ var HeroListMenu = ListViewMenu.extend({
                 elements.die_time_text.setVisible(true);
                 elements.revive_btn.layer.setVisible(true);
                 elements.upgrade_btn.layer.setVisible(false);
+                elements.upgrade_btn.up10.setVisible(false);
+                elements.upgrade_btn.up100.setVisible(false);
                 elements.maxLevel_btn.layer.setVisible(false);
                 elements.icon.setColor(cc.color(90, 90, 90));
                 var resurge = hero.getResurge();
@@ -456,8 +606,31 @@ var HeroListMenu = ListViewMenu.extend({
         }
         buffNum_text.setString(_effect);
     }
+    , _upgradeEvent: function (elements) {
+        this._runAction([{
+            'node': elements.upgrade_btn.up10,
+            'pos': cc.p(50, 0),
+            'hide': true
+        }, {'node': elements.upgrade_btn.up100, 'pos': cc.p(115, 0), 'hide': true}], function () {
+            elements.upgrade_btn.upBtnMove = true;
+        });
+    }
 });
+function validateContinouseUpgradeResourceNotEnough(hero,skill,lv, btn, move, args) {
+    if (skill.getLv()+lv<skill.getMaxLevel()&&canUnlockItem(hero,skill,skill.getLv()+lv)) {
+        if (!skill.isMaxLevel()) {
+            var levelData=skill.getLevelData(skill.getLv() + lv);
+            var flag = validateAmountNotEnough(levelData);
+            if (flag) {
+                btn.setVisible(false);
+                if (move) {
+                    this._runAction(args);
+                }
+            }
+        }
+    }
 
+}
 function initView(elements, target, listener) {
     if (target.isMaxLevel()) {
         elements.upgrade_btn.layer.setVisible(false);
@@ -479,12 +652,13 @@ function initView(elements, target, listener) {
             elements.upgrade_btn.buffNum_text.setString(toFixed2(nextLevelLife - levelLife, 0));
         }
         elements.upgrade_btn.btn.addClickEventListener(function (event) {
-            listener(event, elements);
+            listener(elements, target, 1);
+            return true;
         });
     }
 }
 
-function buildUpgradeBtn(elements, btnlayer, target) {
+function buildUpgradeBtn(elements, btnlayer, target, up10, up100) {
     var buff_text = btnlayer.getChildByName('buff_text');//buff文字
     var buffNum_text = btnlayer.getChildByName('buffNum_text');//buff数
     var icon = btnlayer.getChildByName('icon');
@@ -493,6 +667,8 @@ function buildUpgradeBtn(elements, btnlayer, target) {
     var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
     elements.upgrade_btn = {};
     elements.upgrade_btn.icon = icon;
+    elements.upgrade_btn.up10 = up10;
+    elements.upgrade_btn.up100 = up100;
     elements.upgrade_btn.layer = btnlayer;
     elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
     elements.upgrade_btn.text_yellow = text_yellow;
@@ -502,6 +678,9 @@ function buildUpgradeBtn(elements, btnlayer, target) {
     elements.upgrade_btn.lock = lock;
     elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
     elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
+    elements.upgrade_btn.upBtnMove = {};
+    elements.upgrade_btn.upBtnMove.btn10 = false;
+    elements.upgrade_btn.upBtnMove.btn100 = false;
     var cost = target.getNextLevelUpgrade()
     icon.loadTexture('res/icon/resources_small/' + cost.unit + '.png');
 }
