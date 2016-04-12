@@ -18,7 +18,9 @@
       <FilePathData Path="heroUI/star1.png" />
       <FilePathData Path="heroUI/star2.png" />
       <FilePathData Path="heroUI/text_bg.png" />
+      <FilePathData Path="heroUI/btn1_01.png" />
+      <FilePathData Path="heroUI/btn1_02.png" />
     </ImageFiles>
-    <MaxSize Width="225" Height="300" />
+    <MaxSize Width="400" Height="300" />
   </Content>
 </PlistInfoProjectFile>
