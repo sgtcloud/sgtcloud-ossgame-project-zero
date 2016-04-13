@@ -678,10 +678,6 @@ function loadDynamicTexture(url, listenr, target) {
     }, target);
 }
 
-function getPlayerSave() {
-
-}
-
 /**
  * 从模板中解析描述文案
  *

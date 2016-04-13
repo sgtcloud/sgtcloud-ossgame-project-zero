@@ -33,6 +33,8 @@ var NoticePanel = cc.Node.extend({
             root.height = height + title.height;
             title.y = height;
             text.setTextAreaSize(cc.size(this.listView.width,height));
+        }else{
+            text.setTextAreaSize(cc.size(textLen,text.height));
         }
         var titleLen = notice.title.length * title.fontSize;
         if(titleLen > this.listView.width){
@@ -40,6 +42,8 @@ var NoticePanel = cc.Node.extend({
             root.height = height + text.height;
             // title.y = height;
             title.setTextAreaSize(cc.size(this.listView.width,height));
+        }else{
+            title.setTextAreaSize(cc.size(titleLen,title.height));
         }
         text.setString(notice.content);
         title.setString(notice.title);
