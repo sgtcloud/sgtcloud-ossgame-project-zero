@@ -132,7 +132,9 @@ var res = {
     guide_skip_json: 'res/GuideSkip.json',
     notice_view_json: 'res/NoticeView.json',
     notice_layer_json: 'res/NoticeLayer.json',
-    gift_code_layer_json: 'res/GiftCodeLayer.json'
+    gift_code_layer_json: 'res/GiftCodeLayer.json',
+    choose_list_view_json:'res/ChooseListView.json',
+    choose_list_layer_json:'res/ChooseListLayer.json'
 };
 var full_resouces = [];
 var first_resources = [];

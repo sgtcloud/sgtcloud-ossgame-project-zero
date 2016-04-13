@@ -375,6 +375,35 @@ var PlayerDataClass = cc.Class.extend({
             return [];
         }
         return this.announces;
+    },
+
+    updateLocalServerList: function(server){
+        var servers = this.getLocalServerList();
+        var i = servers.indexOf(server);
+        if(i != -1){
+            servers.splice(i,1);
+        }
+        servers.push(server);
+        localStorage.setItem("sgt-html5-game-announce-servers",servers);
+    },
+    getLocalServerList: function(){
+        return localStorage.getItem("sgt-html5-game-announce-servers") || [];
     }
+    ,
+    getAllServer: function(){
+        if(typeof(PlayerData.servers) === 'undefined'){
+            Network.getServerList(false,function(result){
+                if(result){
+                    return [];
+                }else{
+                    return PlayerData.servers;
+                }
+            });
+        }else{
+            return PlayerData.servers;
+        }
+    }
+
+
 
 });

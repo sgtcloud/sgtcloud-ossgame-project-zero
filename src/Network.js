@@ -631,11 +631,33 @@
                     }else{
                         //没有礼包
                     }
+                    return true;
                 }else{
                     tip.toggle(data);
+                    return false;
                 }
             }.bind(this));
         },
+        getServerList: function(isAuto,cb){
+            if(isAuto){
+                var servers = PlayerData.getLocalServerList();
+                if(cc.isArray(servers) && servers.length > 0){
+                    return cb();
+                    //return servers[servers.length-1];
+                }
+            }
+
+            SgtApi.RouterService.getServerList(function(result,data){
+                if(result){
+                    if(cc.isArray(data)){
+                        PlayerData.servers = data;
+                    }
+                    cb();
+                }else{
+                    cb('获取服务器列表出错');
+                }
+            })
+        }
 
     };
     window.Network = new NetworkResolve();

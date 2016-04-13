@@ -445,6 +445,8 @@ function showCover() {
             }
         });
         json.action.play('show', false);
+    },function(cb){
+        Network.getServerList(true,cb);
     });
     async.parallel(tasks, function (err) {
         if (err) {
@@ -454,13 +456,34 @@ function showCover() {
             loginBtn.setEnabled(true);
             loginBtn.setBright(true);
             chooseBtn.setVisible(true);
+            chooseBtn.setTouchEnabled(false);
+            if(PlayerData.servers){
+                var server = PlayerData.servers[PlayerData.servers.length-1];
+                text.setString(server.name);
+                state.setVisible(true);
+            }else{
+                var servers = PlayerData.getLocalServerList();
+                var server = servers[servers.length-1];
+                text.setString(server.name);
+                state.setVisible(false);
+            }
         }
     });
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
     var chooseBtn = scene.getChildByName('choose');
+    var text = chooseBtn.getChildByName('text');
+    var state = chooseBtn.getChildByName('state');
+    var list_btn = chooseBtn.getChildByName('list_btn');
     chooseBtn.setVisible(false);
+    bindTouchEventListener(function(){
+        ChooseServerPanel.open();
+        return true;
+    },chooseBtn);
+    bindButtonCallback(list_btn,function(){
+        ChooseServerPanel.open();
+    });
     loginBtn.setEnabled(false);
     loginBtn.setBright(false);
     if (PlayerData.modelPlayer) {
