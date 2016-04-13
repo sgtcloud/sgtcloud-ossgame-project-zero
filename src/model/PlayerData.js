@@ -56,7 +56,7 @@ var PlayerDataClass = cc.Class.extend({
         }.bind(this), 10 * 1000);
     },
     updatePlayer: function () {
-        //Network.updatePlayer(this.modelPlayer);
+        Network.updatePlayer(this.modelPlayer);
     }
     ,
     getHeroes: function () {
