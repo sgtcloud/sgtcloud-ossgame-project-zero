@@ -270,6 +270,7 @@
           <Image Name="reward_btn.png" />
           <Image Name="statistics_btn.png" />
           <Image Name="giftCode_btn.png" />
+          <Image Name="bg_14_2.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -728,6 +729,41 @@
           <Image Name="code_girl.png" />
           <Image Name="text.png" />
         </Folder>
+        <Project Name="TaskLayer.csd" Type="Layer" />
+        <Project Name="TaskView.csd" Type="Layer" />
+        <Folder Name="taskUI">
+          <Image Name="bar02_bg.png" />
+          <Image Name="bar02_blue.png" />
+          <Image Name="get.png" />
+          <Image Name="bar02_title.png" />
+          <Image Name="bar02_purple.png" />
+          <Image Name="bar02_yellow.png" />
+          <Image Name="box1.png" />
+          <Image Name="box2.png" />
+          <Image Name="box_0.png" />
+          <Image Name="text.png" />
+          <Image Name="achievementTab_1.png" />
+          <Image Name="achievementTab_2.png" />
+          <Image Name="everyDayTab_1.png" />
+          <Image Name="everyDayTab_2.png" />
+          <PlistImageFolder Image="TaskUI.png" PListFile="TaskUI.plist" Name=".TaskUI_PList.Dir">
+            <PlistImageFile Name="taskUI_achievementTab_1.png" Key="taskUI/achievementTab_1.png" />
+            <PlistImageFile Name="taskUI_achievementTab_2.png" Key="taskUI/achievementTab_2.png" />
+            <PlistImageFile Name="taskUI_bar02_bg.png" Key="taskUI/bar02_bg.png" />
+            <PlistImageFile Name="taskUI_bar02_blue.png" Key="taskUI/bar02_blue.png" />
+            <PlistImageFile Name="taskUI_bar02_purple.png" Key="taskUI/bar02_purple.png" />
+            <PlistImageFile Name="taskUI_bar02_title.png" Key="taskUI/bar02_title.png" />
+            <PlistImageFile Name="taskUI_bar02_yellow.png" Key="taskUI/bar02_yellow.png" />
+            <PlistImageFile Name="taskUI_box_0.png" Key="taskUI/box_0.png" />
+            <PlistImageFile Name="taskUI_box1.png" Key="taskUI/box1.png" />
+            <PlistImageFile Name="taskUI_box2.png" Key="taskUI/box2.png" />
+            <PlistImageFile Name="taskUI_everyDayTab_1.png" Key="taskUI/everyDayTab_1.png" />
+            <PlistImageFile Name="taskUI_everyDayTab_2.png" Key="taskUI/everyDayTab_2.png" />
+            <PlistImageFile Name="taskUI_get.png" Key="taskUI/get.png" />
+            <PlistImageFile Name="taskUI_text.png" Key="taskUI/text.png" />
+          </PlistImageFolder>
+        </Folder>
+        <PlistInfo Name="TaskUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

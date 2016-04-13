@@ -47,7 +47,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5197" Y="0.8504" />
                 <PreSize X="0.2883" Y="0.1714" />
-                <FileData Type="Normal" Path="other/code_title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="other/code_title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="code_girl" ActionTag="-7616069" CallBackType="Click" Tag="98" IconVisible="False" LeftMargin="-17.9134" RightMargin="255.9134" TopMargin="174.0168" BottomMargin="0.9832" Scale9Width="362" Scale9Height="175" ctype="ImageViewObjectData">
                 <Size X="362.0000" Y="175.0000" />
@@ -57,7 +57,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2718" Y="0.2528" />
                 <PreSize X="0.6033" Y="0.5000" />
-                <FileData Type="Normal" Path="other/code_girl.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="other/code_girl.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text_bg" ActionTag="1689741142" CallBackType="Click" Tag="99" IconVisible="False" LeftMargin="254.0426" RightMargin="65.9574" TopMargin="181.7975" BottomMargin="108.2025" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="280.0000" Y="60.0000" />
@@ -77,7 +77,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5191" Y="0.6165" />
                 <PreSize X="0.4400" Y="0.0743" />
-                <FileData Type="Normal" Path="other/text.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="other/text.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="65777262" Tag="532" IconVisible="False" LeftMargin="267.8482" RightMargin="82.1518" TopMargin="196.4897" BottomMargin="117.5103" TouchEnable="True" FontSize="26" IsCustomSize="True" LabelText="" PlaceHolderText="请输入兑换码..." MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="250.0000" Y="36.0000" />
