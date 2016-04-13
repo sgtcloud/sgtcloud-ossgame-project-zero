@@ -706,3 +706,33 @@ function buildDesc(effects, desc, extend) {
     var desc = desc.mapping(effectsObj)
     return desc;
 }
+function formatResourceToString(rewards) {
+    if (!rewards) {
+        return '';
+    }
+    var descText = "";
+    if (rewards instanceof Array) {
+        if (rewards.length > 0) {
+            for (var i = 0; i < rewards.length; i++) {
+                descText += _processReward(rewards[i]);
+            }
+            descText = descText.substr(0, descText.length - 1);
+        } else {
+            return "";
+        }
+    } else {
+        descText= _processReward(rewards);
+    }
+    return descText;
+}
+function _processReward(reward){
+    var descText='';
+    if(reward.hasOwnProperty('unit')){
+        descText += CONSTS.resources_mapping[reward['unit']] + " * " + reward['value'] + ",";
+    }else {
+        for(var key in reward){
+            descText += CONSTS.resources_mapping[key] + " * " + reward[key] + ",";
+        }
+    }
+    return descText;
+}
