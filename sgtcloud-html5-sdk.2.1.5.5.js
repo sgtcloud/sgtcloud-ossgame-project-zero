@@ -977,6 +977,22 @@ jsonRPC = new Object({
     SgtApi.Announcement.MAINTAIN = 3;
 
     /**
+     * 公告服务器类型 全服
+     * @type {number}
+     * @static
+     * @constant
+     * @memberof SgtApi.Announcement
+     */
+    SgtApi.Announcement.ALLSERVER = 1;
+    /**
+     * 公告服务器类型 当前服务器
+     * @type {number}
+     * @static
+     * @constant
+     * @memberof SgtApi.Announcement
+     */
+    SgtApi.Announcement.SINGLESERVER = 2;
+    /**
      * 黑名单
      * @constructor
      */
@@ -3882,7 +3898,7 @@ jsonRPC = new Object({
                 var data = [user];
                 var that = this;
                 SgtApi.doRPC(name, data, _url, function (result, data) {
-                    if (resilt) {
+                    if (result) {
                         that.saveLocalStorage(user.userName, user.password);
                         callback(true, data);
                     } else {
@@ -4498,7 +4514,33 @@ jsonRPC = new Object({
         var _url = SgtApi.context.server.address + '/' + SgtApi.context.appId + '/announcement.do';
         return {
             /**
-             * 通过公告类型获取最新公告 （获取版本号最大的）
+             * 通过serverType 判断是获取全服公告还是当前服务器公告
+             * @param {int} serverType 1.全服2.当前服务器
+             * @returns {string}
+             */
+            getRequestUrlByServerType: function(serverType){
+
+                if(typeof(serverType) != 'undefined' && serverType === SgtApi.Announcement.ALLSERVER){
+                    _url = SgtApi.context.appGateway  + '/announcement';
+                }else{
+                    _url = SgtApi.context.server.address + '/' + SgtApi.context.appId + '/announcement.do';
+                }
+                return _url;
+            },
+            /**
+             * 通过公告类型获取最新全服公告 （获取版本号最大的）
+             * @param {int}type 公告类型
+             * @param {Function}callback 回调函数
+             * @return Announcement
+             */
+            getAllServerAnnounceByType: function (type, callback) {
+                var name = 'getAnnounceByType';
+                var data = [type , SgtApi.context.appId];
+                _url = this.getRequestUrlByServerType(SgtApi.Announcement.ALLSERVER);
+                SgtApi.doRPC(name, data, _url, callback);
+            },
+            /**
+             * 通过公告类型获取当前服务器最新公告 （获取版本号最大的）
              * @param {int}type 公告类型
              * @param {Function}callback 回调函数
              * @return Announcement
@@ -4506,6 +4548,7 @@ jsonRPC = new Object({
             getAnnounceByType: function (type, callback) {
                 var name = 'getAnnounceByType';
                 var data = [type];
+                _url = this.getRequestUrlByServerType(SgtApi.Announcement.SINGLESERVER);
                 SgtApi.doRPC(name, data, _url, callback);
             }
         };
@@ -6208,6 +6251,19 @@ jsonRPC = new Object({
             redeem: function (playerId,  code, callback) {
                 var name = 'redeem';
                 var data = [playerId,  code];
+                SgtApi.doRPC(name, data, _url, callback);
+            },
+            /**
+             * 兑换并返回奖品
+             * @param  {string}   playerId 角色ID
+             * @param  {String}   giftId   礼包ID
+             * @param  {string}   code     兑换码
+             * @param  {Function} callback 回调函数
+             * @return {string}            奖品
+             */
+            redeemByGiftId: function (playerId, giftId, code, callback) {
+                var name = 'redeem';
+                var data = [playerId, giftId,code];
                 SgtApi.doRPC(name, data, _url, callback);
             },
 
