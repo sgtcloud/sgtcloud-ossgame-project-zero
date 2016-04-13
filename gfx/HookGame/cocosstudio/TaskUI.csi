@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="TaskUI" Type="Plist" ID="58a09388-bbef-4fe0-afd0-cded1b5b9bae" Version="2.3.3.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="taskUI/achievementTab_1.png" />
+      <FilePathData Path="taskUI/achievementTab_2.png" />
+      <FilePathData Path="taskUI/bar02_bg.png" />
+      <FilePathData Path="taskUI/bar02_blue.png" />
+      <FilePathData Path="taskUI/bar02_purple.png" />
+      <FilePathData Path="taskUI/bar02_title.png" />
+      <FilePathData Path="taskUI/bar02_yellow.png" />
+      <FilePathData Path="taskUI/box_0.png" />
+      <FilePathData Path="taskUI/box1.png" />
+      <FilePathData Path="taskUI/box2.png" />
+      <FilePathData Path="taskUI/everyDayTab_1.png" />
+      <FilePathData Path="taskUI/everyDayTab_2.png" />
+      <FilePathData Path="taskUI/get.png" />
+      <FilePathData Path="taskUI/text.png" />
+    </ImageFiles>
+    <MaxSize Width="600" Height="600" />
+  </Content>
+</PlistInfoProjectFile>

@@ -28,5 +28,17 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="TaskView.csd" />
+          <FilePathData Path="TaskLayer.csd" />
+          <FilePathData Path="TaskUI.csi" />
+          <FilePathData Path="OtherUI.csi" />
+          <FilePathData Path="GuideHand.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="GuideHand.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
