@@ -101,7 +101,6 @@ var HeroListMenu = ListViewMenu.extend({
             upgradeSkill = this._upgradeSkillBtnTemp.clone();
             upgradeSkill.setPosition(this._upgradeSkillPosition);
             upgradeSkill.setName('upgradeSkillLayer');
-
             up10 = this._upgradeSkillBtn10Temp.clone();
             up10.setPosition(this._upgradeSkillPosition);
             up10.setName('up10');
@@ -110,14 +109,11 @@ var HeroListMenu = ListViewMenu.extend({
             up100.setPosition(this._upgradeSkillPosition);
             up100.setName('up100');
             up100.setVisible(false);
-            root.addChild(lock_btn);
+            root.addChild(lock_btn, 4);
             root.addChild(maxLevel);
-            root.addChild(upgradeSkill, 30);
-            upgradeSkill.setLocalZOrder(30);
-            root.addChild(up10, 20);
-            up10.setLocalZOrder(20);
+            root.addChild(upgradeSkill, 3);
+            root.addChild(up10, 2);
             root.addChild(up100, 1);
-            up100.setLocalZOrder(1);
             item.root = root;
             first = true;
         } else {
@@ -130,10 +126,10 @@ var HeroListMenu = ListViewMenu.extend({
         var elements = {};
         buildUpgradeBtn.call(this, elements, upgradeSkill, skill, up10, up100);
         if (up100) {
-            elements.upgrade_btn.up10.getChildByName('btn').addTouchEventListener(function () {
+            elements.upgrade_btn.up10.layer.getChildByName('btn').addClickEventListener(function () {
                 this._skillUpgradeEventListener(elements, skill, 10, hero);
             }.bind(this));
-            elements.upgrade_btn.up100.getChildByName('btn').addClickEventListener(function () {
+            elements.upgrade_btn.up100.layer.getChildByName('btn').addClickEventListener(function () {
                 this._skillUpgradeEventListener(elements, skill, 100, hero);
             }.bind(this));
         }
@@ -168,12 +164,8 @@ var HeroListMenu = ListViewMenu.extend({
         initView(elements, skill, function () {
             this._skillUpgradeEventListener(elements, skill, 1, hero);
         }.bind(this));
-        if (!skill.isMaxLevel()) {
-            if (!canUnlockItem(hero, skill)) {
-                lockItem(hero, skill, elements);
-            } else {
-                this._unlockAndInitSkill(skill, elements);
-            }
+        if (!skill.isMaxLevel() && lockItemIfNecessary(hero, skill, elements)) {
+            this._unlockAndInitSkill(skill, elements);
         }
         return root;
     },
@@ -193,8 +185,8 @@ var HeroListMenu = ListViewMenu.extend({
         if (skill.isMaxLevel()) {
             elements.maxLevel_btn.layer.setVisible(true);
             elements.upgrade_btn.layer.setVisible(false);
-            elements.upgrade_btn.up10.setVisible(false);
-            elements.upgrade_btn.up100.setVisible(false);
+            elements.upgrade_btn.up10.layer.setVisible(false);
+            elements.upgrade_btn.up100.layer.setVisible(false);
         } else {
             var effects = skill.traverseSkillEffects();
             var nextlevelData = skill.getLevelData(skill.getLv() + 1);
@@ -211,45 +203,100 @@ var HeroListMenu = ListViewMenu.extend({
             }
             elements.upgrade_btn.buffNum_text.setString(showEffect);
             lockItemIfNecessary(hero, skill, elements);
-            this.continuousUpgrade(elements, skill);
+            if (this._canLockSkillContinouse(hero, skill, 10)) {
+                elements.upgrade_btn.up10.layer.setVisible(false);
+            } else {
+                this.continuousUpgrade2(skill, elements.upgrade_btn.up10);
+            }
+            if (this._canLockSkillContinouse(hero, skill, 100)) {
+                elements.upgrade_btn.up100.layer.setVisible(false);
+            } else {
+                this.continuousUpgrade2(skill, elements.upgrade_btn.up100);
+            }
         }
-    },
-    continuousUpgrade: function (elements, target) {
-        var args = [];
+    }, continuousUpgrade2: function (target, upObj) {
         var maxLevel = target.getMaxLevel();
         var lv = target.getLv();
         var difLv = maxLevel - lv;
-        elements.upgrade_btn.up10.stopAllActions();
-        elements.upgrade_btn.up100.stopAllActions();
-        var up10= elements.upgrade_btn.up10;
-        var up100= elements.upgrade_btn.up100;
-        if (difLv >= 100) {
-            if (!elements.upgrade_btn.upBtnMove.btn100) {
-                args.push({'node': up100, 'pos': cc.p(-115, 0)});
-                elements.upgrade_btn.upBtnMove.btn100 = true;
+        if (difLv >= upObj.lv && !validateAmountNotEnough2(target, upObj.lv)) {
+            upObj.layer.setVisible(true);
+            upObj.layer.stopAllActions();
+            if (!upObj.move) {
+                this._runAction({'node': upObj.layer, 'pos': upObj.slideOut});
+                upObj.move = true;
             }
-        }/* else if (elements.upgrade_btn.upBtnMove.btn100) {
-            //args.push({'node': up100, 'pos': cc.p(115, 0)});
-            elements.upgrade_btn.upBtnMove.btn100 = false;
-        }*/
-        if (difLv >= 10) {
-            if (!elements.upgrade_btn.upBtnMove.btn10) {
-                args.push({
-                    'node': up10,
-                    'pos': cc.p(-50, 0)
-                });
-                elements.upgrade_btn.upBtnMove.btn10 = true;
-            }
-        } /*else if (elements.upgrade_btn.upBtnMove.btn10) {
-            //args.push({
-            //    'node':up10,
-            //    'pos': cc.p(50, 0)
-            //});
-            elements.upgrade_btn.upBtnMove.btn10 = false;
-        }*/
-        this._runAction();
-        this._runAction(args);
+        }
+        this._continuUpIn2(upObj);
+    }, _continuUpIn2: function (upObj) {
+        if (upObj.move) {
+            this._runAction({
+                'node': upObj.layer, 'pos': upObj.slideIn, 'time': 5.0, 'cb': function () {
+                    upObj.move = false;
+                }
+            });
+        }
     },
+    continuousUpgrade: function (elements, target) {
+        /* var args = [];
+         var maxLevel = target.getMaxLevel();
+         var lv = target.getLv();
+         var difLv = maxLevel - lv;*/
+        var up10 = elements.upgrade_btn.up10;
+        var up100 = elements.upgrade_btn.up100;
+        this.continuousUpgrade2(target, up10);
+        this.continuousUpgrade2(target, up100);
+        /*var validate10 = validateAmountNotEnough2(target, up10.lv);
+         if (!validate10) {
+         up10.layer.setVisible(true);
+         up10.layer.stopAllActions();
+         if (difLv >= up10.lv) {
+         if (!elements.upgrade_btn.up10.move) {
+         args.push({
+         'node': up10.layer,
+         'pos': up10.slideOut
+         });
+         elements.upgrade_btn.up10.move = true;
+         }
+         }
+         }
+         var validata100 = validateAmountNotEnough2(target, up100.lv);
+         if (!validata100) {
+         up100.layer.setVisible(true);
+         up100.layer.stopAllActions();
+         if (difLv >=  up100.lv) {
+         if (!elements.upgrade_btn.up100.move) {
+         args.push({'node': up100.layer, 'pos': up100.slideOut});
+         elements.upgrade_btn.up100.move = true;
+         }
+         }
+         }
+         if (args.length > 0) {
+         this._runAction(args);
+         }
+         this._continuUpIn(elements);*/
+    }/*, _continuUpIn: function (elements) {
+     var args = [];
+     var up10 = elements.upgrade_btn.up10;
+     var up100 = elements.upgrade_btn.up100;
+     if (elements.upgrade_btn.up10.move) {
+     args.push({
+     'node': up10.layer,
+     'pos': up10.slideIn, 'time': 5.0, cb: function () {
+     elements.upgrade_btn.up10.move = false;
+     }
+     });
+     }
+     if (elements.upgrade_btn.up100.move) {
+     args.push({
+     'node': up100.layer, 'pos': up100.slideIn, 'time': 5.0, 'cb': function () {
+     elements.upgrade_btn.up100.move = false;
+     }
+     });
+     }
+     if (args.length > 0) {
+     this._runAction(args);
+     }
+     }*/,
     _bindSkillMenuListener: function (elements, skill, hero) {
         customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                 if (canUnlockItem(hero, skill)) {
@@ -258,8 +305,12 @@ var HeroListMenu = ListViewMenu.extend({
                         validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
                     }
                 }
-            validateContinouseUpgradeResourceNotEnough.call(this, hero,skill,100, elements.upgrade_btn.up100, elements.upgrade_btn.upBtnMove.btn100,{'node': elements.upgrade_btn.up100, 'pos': cc.p(115, 0)});
-            validateContinouseUpgradeResourceNotEnough.call(this, hero,skill,10, elements.upgrade_btn.up10, elements.upgrade_btn.upBtnMove.btn10,  {'node': elements.upgrade_btn.up10, 'pos': cc.p(50, 0)});
+                if (elements.upgrade_btn.up10.move) {
+                    this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, skill, 10)
+                }
+                if (elements.upgrade_btn.up100.move) {
+                    this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, skill, 100)
+                }
             }.bind(this)
         );
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function () {
@@ -310,22 +361,14 @@ var HeroListMenu = ListViewMenu.extend({
         var elements = {};
         buildUpgradeBtn.call(this, elements, btnlayer, hero, up10, up100);
         if (up100) {
-            bindTouchEventListener2(function (e) {
+            elements.upgrade_btn.up100.layer.getChildByName('btn').addClickEventListener(function (e) {
                 this._heroUpgradeEventListener(elements, hero, 100);
                 return true;
-            }.bind(this),elements.upgrade_btn.up100);
-            //elements.upgrade_btn.up100.getChildByName('btn').addClickEventListener(function (e) {
-            //    this._heroUpgradeEventListener(elements, hero, 100);
-            //    return true;
-            //}.bind(this));
-            bindTouchEventListener2(function (e) {
+            }.bind(this));
+            elements.upgrade_btn.up10.layer.getChildByName('btn').addClickEventListener(function () {
                 this._heroUpgradeEventListener(elements, hero, 10);
                 return true;
-            }.bind(this),elements.upgrade_btn.up10);
-            //elements.upgrade_btn.up10.getChildByName('btn').addClickEventListener(function () {
-            //    this._heroUpgradeEventListener(elements, hero, 10);
-            //    return true;
-            //}.bind(this));
+            }.bind(this));
         }
         buildMaxLevelBtn(elements, upMaxLevelBtn)
         var icon = root.getChildByName('hero_icon');
@@ -354,7 +397,6 @@ var HeroListMenu = ListViewMenu.extend({
         icon.loadTexture("res/icon/heroes/" + hero.getIcon());
         icon.setTouchEnabled(true);
         icon.addClickEventListener(function () {
-            //openDesc(hero);
             var heroDesc = new HeroDesc();
             heroDesc.initData(hero);
         });
@@ -385,28 +427,29 @@ var HeroListMenu = ListViewMenu.extend({
         if (typeof cb === 'function') {
             cb(hero, root);
         }
-        refeshUpgradeLayer(hero, elements);
+        this.refeshUpgradeLayer(hero, elements);
         if (!hero.isLocked() && hero.getCurrentLife() <= 0 && hero.getLv() > 0) {
             customEventHelper.sendEvent(EVENT.HERO_DIE, hero);
         }
         return root;
     },
-    _runAction: function (args, cb,time) {
-        //args = Array.prototype.slice.call(arguments);
+    _runAction: function (args) {
+        if (!Array.isArray(args)) {
+            args = Array.prototype.slice.call(arguments);
+        }
         for (var i = 0, j = args.length; i < j; i++) {
             var seq = [];
-            var move = cc.moveBy(time||0.2, args[i]['pos']);
+            var move = cc.moveBy(0.2, args[i]['pos']);
+            var time = args[i]['time'];
+            if (time) {
+                seq.push(cc.delayTime(time));
+            }
             seq.push(move);
-            args[i]['node'].stopAllActions();
-            args[i]['node'].setVisible(true);
             if (args[i]['hide']) {
                 seq.push(cc.hide());
-            }/*else {
-                var move2 = cc.moveBy(0.2, cc.p(-args[i]['pos'].x,args[i]['pos'].y));
-                var seq2 = [];
-                seq2.push(move2);
-            }*/
-            if (typeof  cb === 'function') {
+            }
+            var cb = args[i]['cb'];
+            if (cb) {
                 seq.push(cc.callFunc(cb.bind(this)));
             }
             var sequence = cc.sequence(seq);
@@ -415,11 +458,17 @@ var HeroListMenu = ListViewMenu.extend({
     },
     _upgradeCost: function (target, num) {
         var costs = [];
+        var obj = {};
         for (var i = 0; i < num; i++) {
             var cost = target.getLevelUpgrade(target.getLv() + 1 + i);
-            cost['value'] = 0 - cost['value'];
-            costs.push(cost);
+            var unit = cost['unit'];
+            obj[unit] = obj[unit] || 0;
+            obj[unit] = obj[unit] + (-cost['value']);
         }
+        for (var k in obj) {
+            costs.push({'unit': k, 'value': obj[k]});
+        }
+        delete obj;
         return costs;
     },
     _heroUpgradeEventListener: function (elements, hero, num) {
@@ -469,8 +518,8 @@ var HeroListMenu = ListViewMenu.extend({
             customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
         });
         customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
-            refeshUpgradeLayer(hero, elements);
-        });
+            this.refeshUpgradeLayer(hero, elements);
+        }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
             var dieHero = event.getUserData();
             var heroId = dieHero.getId();
@@ -479,8 +528,8 @@ var HeroListMenu = ListViewMenu.extend({
                 elements.die_time_text.setVisible(true);
                 elements.revive_btn.layer.setVisible(true);
                 elements.upgrade_btn.layer.setVisible(false);
-                elements.upgrade_btn.up10.setVisible(false);
-                elements.upgrade_btn.up100.setVisible(false);
+                elements.upgrade_btn.up10.layer.setVisible(false);
+                elements.upgrade_btn.up100.layer.setVisible(false);
                 elements.maxLevel_btn.layer.setVisible(false);
                 elements.icon.setColor(cc.color(90, 90, 90));
                 var resurge = hero.getResurge();
@@ -608,29 +657,54 @@ var HeroListMenu = ListViewMenu.extend({
     }
     , _upgradeEvent: function (elements) {
         this._runAction([{
-            'node': elements.upgrade_btn.up10,
+            'node': elements.upgrade_btn.up10.layer,
             'pos': cc.p(50, 0),
             'hide': true
-        }, {'node': elements.upgrade_btn.up100, 'pos': cc.p(115, 0), 'hide': true}], function () {
-            elements.upgrade_btn.upBtnMove = true;
+        }, {'node': elements.upgrade_btn.up100.layer, 'pos': cc.p(115, 0), 'hide': true}], function () {
+            elements.upgrade_btn.up100.move = true;
         });
-    }
-});
-function validateContinouseUpgradeResourceNotEnough(hero,skill,lv, btn, move, args) {
-    if (skill.getLv()+lv<skill.getMaxLevel()&&canUnlockItem(hero,skill,skill.getLv()+lv)) {
-        if (!skill.isMaxLevel()) {
-            var levelData=skill.getLevelData(skill.getLv() + lv);
-            var flag = validateAmountNotEnough(levelData);
+    }, _validateResourceNotEnough: function (upgrade_btn, target, lv) {
+        var flag = validateAmountNotEnough2(target, lv);
+        if (lv === 1) {
             if (flag) {
-                btn.setVisible(false);
-                if (move) {
-                    this._runAction(args);
-                }
+                upgrade_btn.setEnabled(false);
+                upgrade_btn.setBright(false);
+                text.setColor(cc.color(255, 0, 0));
+            } else {
+                upgrade_btn.setEnabled(true);
+                upgrade_btn.setBright(true);
+                text.setColor(cc.color(255, 255, 255));
+            }
+        } else if (flag) {
+            upgrade_btn.setVisible(false);
+            //this._continuUpIn(elements);
+        }
+        return flag;
+    }, refeshUpgradeLayer: function (hero, elements) {
+        if (!hero.isMaxLevel()) {
+            var nextlevelData = hero.getLevelData(hero.getLv() + 1);
+            validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
+            if (elements.upgrade_btn.up10.move) {
+                this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, hero, 10)
+            }
+            if (elements.upgrade_btn.up100.move) {
+                this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, hero, 100)
             }
         }
+    }, _canLockSkillContinouse: function (hero, skill, lv) {
+        lv = skill.getLv() + lv;
+        return lv <= skill.getMaxLevel() && !canUnlockItem(hero, skill, lv);
     }
-
+});
+function lockContinouseBtnIfNecessary(hero, skill, lv, btn) {
+    lv = skill.getLv() + lv;
+    var flag = lv <= skill.getMaxLevel() && canUnlockItem(hero, skill, lv);
+    if (flag) {
+        btn.setVisible(false);
+    }
+    return flag;
 }
+
 function initView(elements, target, listener) {
     if (target.isMaxLevel()) {
         elements.upgrade_btn.layer.setVisible(false);
@@ -641,7 +715,6 @@ function initView(elements, target, listener) {
         var nextlevelData = target.getLevelData(target.getLv() + 1);
         var nextLevelLife = nextlevelData['life'];
         var unit = nextlevelData['upgrade']['unit'];
-        var amount = PlayerData.getAmountByUnit(unit);
         var nextGoldValue = nextlevelData['upgrade']['value'];
         var levelData = target.getLevelData();
         var levelLife = levelData['life'];
@@ -667,8 +740,20 @@ function buildUpgradeBtn(elements, btnlayer, target, up10, up100) {
     var diamond = btnlayer.getChildByName('diamond_icon');//钻石图标
     elements.upgrade_btn = {};
     elements.upgrade_btn.icon = icon;
-    elements.upgrade_btn.up10 = up10;
-    elements.upgrade_btn.up100 = up100;
+    elements.upgrade_btn.up10 = {};
+    elements.upgrade_btn.up10.layer = up10;
+    up10.setVisible(false);
+    up100.setVisible(false);
+    elements.upgrade_btn.up10.slideOut = cc.p(-50, 0);
+    elements.upgrade_btn.up10.lv = 10;
+    elements.upgrade_btn.up10.slideIn = cc.p(50, 0);
+    elements.upgrade_btn.up10.move = false;
+    elements.upgrade_btn.up100 = {};
+    elements.upgrade_btn.up100.layer = up100;
+    elements.upgrade_btn.up100.lv = 100;
+    elements.upgrade_btn.up100.slideOut = cc.p(-115, 0);
+    elements.upgrade_btn.up100.slideIn = cc.p(115, 0);
+    elements.upgrade_btn.up100.move = false;
     elements.upgrade_btn.layer = btnlayer;
     elements.upgrade_btn.btn = btnlayer.getChildByName('btn');
     elements.upgrade_btn.text_yellow = text_yellow;
@@ -678,9 +763,6 @@ function buildUpgradeBtn(elements, btnlayer, target, up10, up100) {
     elements.upgrade_btn.lock = lock;
     elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
     elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
-    elements.upgrade_btn.upBtnMove = {};
-    elements.upgrade_btn.upBtnMove.btn10 = false;
-    elements.upgrade_btn.upBtnMove.btn100 = false;
     var cost = target.getNextLevelUpgrade()
     icon.loadTexture('res/icon/resources_small/' + cost.unit + '.png');
 }
@@ -695,12 +777,7 @@ function buildMaxLevelBtn(elements, maxLevel) {
     elements.maxLevel_btn.layer.setVisible(false);
 }
 
-function refeshUpgradeLayer(hero, elements) {
-    if (!hero.isMaxLevel()) {
-        var nextlevelData = hero.getLevelData(hero.getLv() + 1);
-        validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
-    }
-}
+
 function toFixed2(num, fixed) {
     var _effect = 0;
     var absEffect = Math.abs(num);

@@ -410,6 +410,22 @@ function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
     return amount < upgradeLevelData['value'];
 }
+function validateAmountNotEnough2(target, lv) {
+    var res = {};
+    for (var i = 0; i < lv; i++) {
+        var levelData = target.getLevelData(target.getLv() + i + 1);
+        var unit = levelData['upgrade']['unit'];
+        res[unit] = res[unit] || 0;
+        res[unit] += levelData['upgrade']['value'];
+    }
+    for (var k in res) {
+        var amount = PlayerData.getAmountByUnit(k);
+        if (amount < res[k]) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 //识别 MicroMessenger 这个关键字来确定是否微信内置的浏览器
