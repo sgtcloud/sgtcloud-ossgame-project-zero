@@ -685,10 +685,10 @@ var HeroListMenu = ListViewMenu.extend({
             var nextlevelData = hero.getLevelData(hero.getLv() + 1);
             validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
             if (elements.upgrade_btn.up10.move) {
-                this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, hero, 10)
+                this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, hero, elements.upgrade_btn.up10.lv)
             }
             if (elements.upgrade_btn.up100.move) {
-                this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, hero, 100)
+                this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, hero, elements.upgrade_btn.up100.lv)
             }
         }
     }, _canLockSkillContinouse: function (hero, skill, lv) {
