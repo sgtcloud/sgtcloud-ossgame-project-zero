@@ -171,6 +171,8 @@
             <PlistImageFile Name="heroDescUI_text_bg.png" Key="heroDescUI/text_bg.png" />
             <PlistImageFile Name="heroDescUI_text_bg2.png" Key="heroDescUI/text_bg2.png" />
           </PlistImageFolder>
+          <Image Name="btn1_01.png" />
+          <Image Name="btn1_02.png" />
         </Folder>
         <Folder Name="images">
           <Image Name="battle_1.png" />
@@ -267,6 +269,7 @@
           <Image Name="recharge_btn.png" />
           <Image Name="reward_btn.png" />
           <Image Name="statistics_btn.png" />
+          <Image Name="giftCode_btn.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />

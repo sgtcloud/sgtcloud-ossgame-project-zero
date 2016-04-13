@@ -88,6 +88,46 @@
                 <PrePosition X="0.4464" Y="0.3357" />
                 <PreSize X="0.4167" Y="0.1029" />
               </AbstractNodeData>
+              <AbstractNodeData Name="get_btn" ActionTag="1146031866" Tag="529" IconVisible="False" LeftMargin="386.3168" RightMargin="63.6832" TopMargin="264.2220" BottomMargin="25.7780" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="150.0000" Y="60.0000" />
+                <Children>
+                  <AbstractNodeData Name="btn" ActionTag="-900925514" CallBackType="Click" Tag="530" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="150.0000" Y="60.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="get" ActionTag="-1485794553" CallBackType="Touch" Tag="531" IconVisible="False" LeftMargin="29.0000" RightMargin="29.0000" TopMargin="15.5000" BottomMargin="15.5000" Scale9Width="92" Scale9Height="29" ctype="ImageViewObjectData">
+                    <Size X="92.0000" Y="29.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="75.0000" Y="30.0000" />
+                    <Scale ScaleX="1.2000" ScaleY="1.2000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5000" Y="0.5000" />
+                    <PreSize X="0.6133" Y="0.4833" />
+                    <FileData Type="MarkedSubImage" Path="mailUI/get.png" Plist="OtherUI.plist" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="386.3168" Y="25.7780" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6439" Y="0.0737" />
+                <PreSize X="0.2500" Y="0.1714" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />
@@ -95,46 +135,6 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
-            <SingleColor A="255" R="150" G="200" B="255" />
-            <FirstColor A="255" R="150" G="200" B="255" />
-            <EndColor A="255" R="255" G="255" B="255" />
-            <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="get_btn" ActionTag="1146031866" Tag="529" IconVisible="False" LeftMargin="386.3168" RightMargin="63.6832" TopMargin="264.2220" BottomMargin="25.7780" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-            <Size X="150.0000" Y="60.0000" />
-            <Children>
-              <AbstractNodeData Name="btn" ActionTag="-900925514" CallBackType="Click" Tag="530" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="150.0000" Y="60.0000" />
-                <AnchorPoint />
-                <Position />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="1.0000" Y="1.0000" />
-                <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
-                <PressedFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
-                <NormalFileData Type="Normal" Path="mainUI/bg_14.png" Plist="" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="get" ActionTag="-1485794553" CallBackType="Touch" Tag="531" IconVisible="False" LeftMargin="29.0000" RightMargin="29.0000" TopMargin="15.5000" BottomMargin="15.5000" Scale9Width="92" Scale9Height="29" ctype="ImageViewObjectData">
-                <Size X="92.0000" Y="29.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="75.0000" Y="30.0000" />
-                <Scale ScaleX="1.2000" ScaleY="1.2000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.5000" />
-                <PreSize X="0.6133" Y="0.4833" />
-                <FileData Type="MarkedSubImage" Path="mailUI/get.png" Plist="OtherUI.plist" />
-              </AbstractNodeData>
-            </Children>
-            <AnchorPoint />
-            <Position X="386.3168" Y="25.7780" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6439" Y="0.0737" />
-            <PreSize X="0.2500" Y="0.1714" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
