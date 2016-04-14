@@ -54,10 +54,10 @@
       <ObjectData Name="Node" Tag="88" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hand" ActionTag="125515874" Tag="89" IconVisible="False" LeftMargin="6.7712" RightMargin="-117.7712" TopMargin="5.3113" BottomMargin="-106.3113" ctype="SpriteObjectData">
+          <AbstractNodeData Name="hand" ActionTag="125515874" Tag="89" IconVisible="False" LeftMargin="-4.5135" RightMargin="-106.4865" TopMargin="-4.8444" BottomMargin="-96.1556" ctype="SpriteObjectData">
             <Size X="111.0000" Y="101.0000" />
             <AnchorPoint ScaleY="1.0000" />
-            <Position X="6.7712" Y="-5.3113" />
+            <Position X="-4.5135" Y="4.8444" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />

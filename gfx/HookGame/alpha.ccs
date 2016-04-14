@@ -271,6 +271,7 @@
           <Image Name="statistics_btn.png" />
           <Image Name="giftCode_btn.png" />
           <Image Name="bg_14_2.png" />
+          <Image Name="bg_23.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
