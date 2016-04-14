@@ -40,7 +40,7 @@
 			<key>heroUI/diamond.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{238,0},{40,40}}</string>
+				<string>{{170,0},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>heroUI/gold.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{238,40},{40,40}}</string>
+				<string>{{170,40},{40,40}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,7 +62,7 @@
 			<key>heroUI/hero_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{267,262},{31,32}}</string>
+				<string>{{218,262},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -106,13 +106,13 @@
 			<key>heroUI/lock.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{184,262},{36,49}}</string>
+				<string>{{238,0},{42,42}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
-				<string>{36,49}</string>
+				<string>{42,42}</string>
 			</dict>
 			<key>heroUI/reviveTime.png</key>
 			<dict>
@@ -128,11 +128,11 @@
 			<key>heroUI/skill_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{365,0},{31,32}}</string>
+				<string>{{249,262},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{31,32}</string>
 			</dict>
@@ -150,29 +150,29 @@
 			<key>heroUI/star1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{365,31},{32,30}}</string>
+				<string>{{280,262},{32,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{32,30}</string>
 			</dict>
 			<key>heroUI/star2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{170,0},{32,30}}</string>
+				<string>{{280,0},{32,30}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{32,30}</string>
 			</dict>
 			<key>heroUI/text_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{233,262},{34,36}}</string>
+				<string>{{184,262},{34,36}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -194,7 +194,7 @@
 			<key>heroUI/btn1_02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{285,0},{61,80}}</string>
+				<string>{{310,0},{61,80}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -212,12 +212,12 @@
 			<key>realTextureFileName</key>
 			<string>HeroUI.png</string>
 			<key>size</key>
-			<string>{397,298}</string>
+			<string>{390,298}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>397</integer>
+			<integer>390</integer>
 			<key>height</key>
 			<integer>298</integer>
 		</dict>
