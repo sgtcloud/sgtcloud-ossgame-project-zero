@@ -37,6 +37,10 @@
       <FilePathData Path="rechargeUI/title_bg.png" />
       <FilePathData Path="rechargeUI/vip.png" />
       <FilePathData Path="rechargeUI/label.png" />
+      <FilePathData Path="other/code_girl.png" />
+      <FilePathData Path="other/code_title.png" />
+      <FilePathData Path="other/notice_title.png" />
+      <FilePathData Path="other/text.png" />
     </ImageFiles>
     <MaxSize Width="800" Height="800" />
   </Content>
