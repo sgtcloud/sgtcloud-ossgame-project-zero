@@ -16,7 +16,9 @@ var GiftCodePanel = cc.Node.extend({
         bindButtonCallback(getBtn, function () {
             var text = root.getChildByName('text').getString();
             if(text){
-                Network.redeemAndGetReward(text);
+                if(Network.redeemAndGetReward(text)){
+                    text.setString('');
+                }
             }else{
                 BasicPopup.alert('提示','请正确输入兑换码');
             }

@@ -461,6 +461,8 @@ function showCover() {
             }
         });
         json.action.play('show', false);
+    },function(cb){
+        Network.getServerList(true,cb);
     });
     async.parallel(tasks, function (err) {
         if (err) {
@@ -470,26 +472,79 @@ function showCover() {
             loginBtn.setEnabled(true);
             loginBtn.setBright(true);
             chooseBtn.setVisible(true);
+            chooseBtn.setTouchEnabled(false);
+            var server ;
+            if(PlayerData.servers){
+                server = PlayerData.servers[PlayerData.servers.length-1];
+                state.setVisible(true);
+            }else{
+                var servers = PlayerData.getLocalServerList();
+                server = servers[servers.length-1];
+                state.setVisible(false);
+            }
+            Network.setServerInfo(server);
+            text.setString(server.name);
         }
     });
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
     window.tip2 = new Tip(scene);
     var loginBtn = scene.getChildByName("cover_login_btn");
     var chooseBtn = scene.getChildByName('choose');
+    var text = chooseBtn.getChildByName('text');
+    var state = chooseBtn.getChildByName('state');
+    var list_btn = chooseBtn.getChildByName('list_btn');
     chooseBtn.setVisible(false);
+    bindTouchEventListener(function(){
+        ChooseServerPanel.open();
+        return true;
+    },chooseBtn);
+    bindButtonCallback(list_btn,function(){
+        ChooseServerPanel.open();
+    });
     loginBtn.setEnabled(false);
     loginBtn.setBright(false);
-    if (PlayerData.modelPlayer) {
-        initGame();
-    }
     bindButtonCallback(loginBtn, function () {
-        //判断当前用户是否存在角色
-        if (!PlayerData.modelPlayer) {
-            loginBtn.setVisible(false);
-            Network.openNewNameLayer(scene, createPlayerComplete);
-        }else{
-            createPlayerComplete();
-        }
+        Network.updateLocalServerList();
+        Network.getPlayerSave(function(result){
+            if(result){
+                console.log(JSON.stringify(result));
+                return false;
+            }
+            //判断当前用户是否存在角色
+            if (!PlayerData.modelPlayer) {
+                loginBtn.setVisible(false);
+                chooseBtn.setVisible(false);
+                Network.openNewNameLayer(scene, createPlayerComplete);
+            }else{
+                var mark = localStorage.getItem('mark-sgt-html5-game');
+                if(mark){
+                    initGame(createPlayerComplete);
+                }else{
+                    async.series({
+                        "flag1": function (callback) {
+                            tip2.toggle({'delay': 30, 'text': '正在加载角色数据并初始化游戏。。。。。。'});
+                            cc.loader.load(getSecondResource(), function () {
+                                initGame(createPlayerComplete);
+                                tip2.stopAllActions();
+                                tip2.setVisible(false);
+                                callback(null,"flag1");
+                            });
+                        }, "flag2": function (callback) {
+                            //异步加载全部资源
+                            cc.loader.load(full_resouces, function () {
+                                localStorage.setItem('mark-sgt-html5-game', 1);
+                                console.log("flag2正在执行好了");
+                                callback(null,"flag2");
+                            });
+                        }
+                    }, function (callback) {
+                        console.log(callback);
+                    });
+                }
+
+            }
+        });
+
     });
     cc.director.runScene(scene);
 }

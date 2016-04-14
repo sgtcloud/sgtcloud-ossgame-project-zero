@@ -67,6 +67,7 @@
     "src/model/ArenaPlayerData.js",
     "src/ui/NoticePanel.js",
     "src/ui/GiftCodePanel.js",
+    "src/ui/ChooseServerPanel.js",
     "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"
