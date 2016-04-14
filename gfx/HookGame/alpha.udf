@@ -28,24 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="TaskView.csd" />
-          <FilePathData Path="TaskLayer.csd" />
-          <FilePathData Path="TaskUI.csi" />
-          <FilePathData Path="OtherUI.csi" />
-          <FilePathData Path="GuideHand.csd" />
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="BattleNum.csd" />
-          <FilePathData Path="Blood.csd" />
-          <FilePathData Path="Btn_Buy.csd" />
-          <FilePathData Path="Btn_Lock.csd" />
-          <FilePathData Path="SkillUI.csi" />
-          <FilePathData Path="SkillLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="Btn_Lock.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

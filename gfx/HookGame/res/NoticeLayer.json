@@ -195,7 +195,7 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
+                  "Type": "Normal",
                   "Path": "other/notice_title.png",
                   "Plist": "OtherUI.plist"
                 },
@@ -298,9 +298,7 @@
       "UsedResources": [
         "CloseBtn.json",
         "mainUI/bg_22.png",
-        "mainUI/title_bg4.png",
-        "OtherUI.plist",
-        "OtherUI.png"
+        "mainUI/title_bg4.png"
       ],
       "ctype": "GameFileData"
     }
