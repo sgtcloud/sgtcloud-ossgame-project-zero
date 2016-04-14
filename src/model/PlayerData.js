@@ -355,7 +355,7 @@ var PlayerDataClass = cc.Class.extend({
         return this._player.guide_index;
     },
     updateAnnounces: function(index,announce){
-        var versions = localStorage.getItem("sgt-html5-game-announce-versions") || [];
+        var versions = JSON.parse(localStorage.getItem("sgt-html5-game-announce-versions")) || [];
         if(!(versions instanceof Array)){
             versions = versions.split(",");
         }
@@ -368,7 +368,7 @@ var PlayerDataClass = cc.Class.extend({
             versions[index] = announce.version;
         }
         this.announces[index] = announce;
-        localStorage.setItem("sgt-html5-game-announce-versions",versions);
+        localStorage.setItem("sgt-html5-game-announce-versions",JSON.stringify(versions));
     },
     getAnnounces : function(ignoreVersion){
         if(!ignoreVersion && !this.isAnnounceUpdata){
@@ -378,7 +378,7 @@ var PlayerDataClass = cc.Class.extend({
     },
 
     getLocalServerList: function(){
-        return localStorage.getItem("sgt-html5-game-announce-servers") || [];
+        return JSON.parse(localStorage.getItem("sgt-html5-game-announce-servers")) || [];
     }
     ,
     getAllServer: function(){

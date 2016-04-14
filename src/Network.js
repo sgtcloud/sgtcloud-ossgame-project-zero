@@ -674,7 +674,7 @@
                 servers.splice(i,1);
             }
             servers.push(SgtApi.context.server);
-            localStorage.setItem("sgt-html5-game-announce-servers",servers);
+            localStorage.setItem("sgt-html5-game-announce-servers",JSON.stringify(servers));
         },
 
     };
