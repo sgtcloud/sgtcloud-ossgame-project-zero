@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="240.0000" />
             <Children>
-              <AbstractNodeData Name="skillLayer_bg" ActionTag="1030660432" Tag="261" IconVisible="False" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="7" Scale9Height="8" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="skillLayer_bg" ActionTag="175827818" Alpha="153" Tag="92" IconVisible="False" Scale9Enable="True" LeftEage="30" RightEage="30" TopEage="30" BottomEage="30" Scale9OriginX="30" Scale9OriginY="30" Scale9Width="32" Scale9Height="32" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="240.0000" />
                 <AnchorPoint />
                 <Position />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_04.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/bg_23.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk" ActionTag="-966206276" CallBackType="Click" Tag="170" IconVisible="False" LeftMargin="9.7591" RightMargin="499.2409" TopMargin="10.0951" BottomMargin="202.9049" Scale9Width="131" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="131.0000" Y="27.0000" />
@@ -75,13 +75,13 @@
               <AbstractNodeData Name="blood_box" ActionTag="1783567765" Tag="64" IconVisible="False" LeftMargin="393.3454" RightMargin="6.6546" TopMargin="8.1439" BottomMargin="171.8561" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="240.0000" Y="60.0000" />
                 <Children>
-                  <AbstractNodeData Name="small_btn" ActionTag="805314261" Tag="65" IconVisible="False" LeftMargin="149.9989" RightMargin="30.0011" TopMargin="0.0000" BottomMargin="0.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="small_btn" ActionTag="805314261" Tag="65" IconVisible="False" LeftMargin="149.9989" RightMargin="30.0011" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="30" Scale9Height="38" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="60.0000" Y="60.0000" />
                     <AnchorPoint />
-                    <Position X="149.9989" Y="0.0000" />
+                    <Position X="149.9989" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6250" Y="0.0000" />
+                    <PrePosition X="0.6250" />
                     <PreSize X="0.2500" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="mainUI/blood1_2.png" Plist="" />
