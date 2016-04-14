@@ -83,13 +83,16 @@ var Equip = cc.Class.extend({
     , getLevelData: function (level) {
         return getSpecificLevelData(this._data, level || this._lv);
     }
+    ,getLevelUpgrade: function (lv) {
+        return getLevelData(this._data, 'upgrade', lv);
+    }
     , getNextLevelUpgrade: function () {
         var level = this.getLv();
         var cost = getLevelData(this._data, 'upgrade', level + 1);
         return cost;
     }
-    , getUnlockLevel: function () {
-        return getLevelData(this._data, 'unlockLevel', this.getLv());
+    , getUnlockLevel: function (lv) {
+        return getLevelData(this._data, 'unlockLevel', lv||this.getLv());
     }
     , traverseEquipEffects: function (lv) {
         var equip = this.getLevelData(lv);

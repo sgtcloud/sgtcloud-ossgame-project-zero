@@ -410,6 +410,22 @@ function validateAmountNotEnough(upgradeLevelData) {
     var amount = PlayerData.getAmountByUnit(upgradeLevelData['unit']);
     return amount < upgradeLevelData['value'];
 }
+function validateAmountNotEnough2(target, lv) {
+    var res = {};
+    for (var i = 0; i < lv; i++) {
+        var levelData = target.getLevelData(target.getLv() + i + 1);
+        var unit = levelData['upgrade']['unit'];
+        res[unit] = res[unit] || 0;
+        res[unit] += levelData['upgrade']['value'];
+    }
+    for (var k in res) {
+        var amount = PlayerData.getAmountByUnit(k);
+        if (amount < res[k]) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 //识别 MicroMessenger 这个关键字来确定是否微信内置的浏览器
@@ -556,6 +572,7 @@ function bindButtonCallback(button, callback) {
                 callback.call(sender);
                 break;
         }
+        return true;
     }, button);
 }
 function removeCCSAnimationDefaultTween(timelines) {
@@ -641,6 +658,32 @@ function bindTouchEventListener(listener, target, popup) {
     var touchDownEventListener = cc.EventListener.create({
         event: cc.EventListener.TOUCH_ONE_BY_ONE,
         swallowTouches: false,
+        onTouchBegan: function (touch, event) {
+            var target = event.getCurrentTarget();
+            var locationInNode = target.convertToNodeSpace(touch.getLocation());
+            var s = target.getContentSize();
+            var rect = cc.rect(0, 0, s.width, s.height);
+            if (cc.rectContainsPoint(rect, locationInNode)) {
+                return listener(touch, event);
+            }
+            return false;
+        },
+        onTouchMoved: function () {
+            return false;
+        },
+        onTouchCancelled: function () {
+            return false;
+        },
+        onTouchEnd: function (touch, event) {
+            return false;
+        }
+    });
+    cc.eventManager.addListener(touchDownEventListener, target);
+}
+function bindTouchEventListener2(listener, target, popup) {
+    var touchDownEventListener = cc.EventListener.create({
+        event: cc.EventListener.TOUCH_ONE_BY_ONE,
+        swallowTouches: true,
         onTouchBegan: function (touch, event) {
             var target = event.getCurrentTarget();
             var locationInNode = target.convertToNodeSpace(touch.getLocation());

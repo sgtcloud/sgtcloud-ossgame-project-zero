@@ -13,8 +13,17 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 15.0,
+                "X": -4.5135,
+                "Y": 4.8444,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 9.0286,
+                "Y": -6.4385,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -22,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 30.0,
+                "X": 19.1842,
+                "Y": -16.2632,
                 "FrameIndex": 6,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +40,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 15.0,
+                "X": 6.7712,
+                "Y": -5.3113,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -48,7 +57,7 @@
             "Frames": [
               {
                 "X": 1.0,
-                "Y": 0.8,
+                "Y": 1.0,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -57,7 +66,7 @@
               },
               {
                 "X": 1.0,
-                "Y": 0.9,
+                "Y": 1.0,
                 "FrameIndex": 3,
                 "EasingData": {
                   "Type": 0
@@ -75,7 +84,7 @@
               },
               {
                 "X": 1.0,
-                "Y": 0.9,
+                "Y": 1.0,
                 "FrameIndex": 9,
                 "EasingData": {
                   "Type": 0
@@ -157,15 +166,15 @@
               "Dst": 771
             },
             "AnchorPoint": {
-              "ScaleX": 0.5
+              "ScaleY": 1.0
             },
             "Position": {
-              "X": 0.0,
-              "Y": 15.0
+              "X": 6.7712,
+              "Y": -5.3113
             },
             "Scale": {
               "ScaleX": 1.0,
-              "ScaleY": 0.9
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -177,15 +186,15 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -39.0,
-            "RightMargin": -39.0,
-            "TopMargin": -128.0,
-            "BottomMargin": 15.0,
+            "LeftMargin": 6.7712,
+            "RightMargin": -117.7712,
+            "TopMargin": 5.3113,
+            "BottomMargin": -106.3113,
             "Tag": 89,
             "ActionTag": 125515874,
             "Size": {
-              "X": 78.0,
-              "Y": 113.0
+              "X": 111.0,
+              "Y": 101.0
             },
             "Name": "hand",
             "ctype": "SpriteObjectData"

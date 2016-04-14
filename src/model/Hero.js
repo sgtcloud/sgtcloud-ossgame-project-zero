@@ -140,6 +140,9 @@ var Hero = cc.Class.extend({
             var level = this.getLv();
             var cost = getLevelData(this._data, 'upgrade', level + 1);
             return cost;
+        },
+        getLevelUpgrade: function (lv) {
+            return getLevelData(this._data, 'upgrade', lv);
         }
         ,
         getLevelData: function (level) {
@@ -296,8 +299,9 @@ var Hero = cc.Class.extend({
         /**
          * 英雄升级
          */
-        upgrade: function () {
-            this._lv = this._lv + 1;
+        upgrade: function (num) {
+            num = num || 1;
+            this._lv = this._lv + num;
             for (var i = 0; i < player.heroes.length; i++) {
                 if (player.heroes[i]["id"] === this.getId()) {
                     player.heroes[i]['lv'] = this.getLv();

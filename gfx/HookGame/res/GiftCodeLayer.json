@@ -181,9 +181,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "other/code_title.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 173,
                 "Scale9Height": 60,
@@ -225,9 +225,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "other/code_girl.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 362,
                 "Scale9Height": 175,
@@ -316,9 +316,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "other/text.png",
-                  "Plist": ""
+                  "Plist": "OtherUI.plist"
                 },
                 "Scale9Width": 264,
                 "Scale9Height": 26,
@@ -584,9 +584,6 @@
         "mainUI/bg_03.png",
         "mainUI/bg_14.png",
         "mainUI/title_bg4.png",
-        "other/code_girl.png",
-        "other/code_title.png",
-        "other/text.png",
         "OtherUI.plist",
         "OtherUI.png"
       ],

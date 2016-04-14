@@ -50,7 +50,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4879" Y="0.9244" />
                 <PreSize X="0.2790" Y="0.0813" />
-                <FileData Type="Normal" Path="other/notice_title.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="other/notice_title.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="close_btn" ActionTag="-1541307886" Tag="49" IconVisible="True" LeftMargin="563.7488" RightMargin="0.2512" TopMargin="45.5300" BottomMargin="646.4700" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
                 <Size X="56.0000" Y="58.0000" />

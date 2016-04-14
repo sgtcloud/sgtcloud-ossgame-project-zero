@@ -4,27 +4,30 @@
     <Content>
       <Animation Duration="9" Speed="0.3333">
         <Timeline ActionTag="125515874" Property="Position">
-          <PointFrame FrameIndex="3" X="0.0000" Y="15.0000">
+          <PointFrame FrameIndex="0" X="-4.5135" Y="4.8444">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="6" X="0.0000" Y="30.0000">
+          <PointFrame FrameIndex="3" X="9.0286" Y="-6.4385">
             <EasingData Type="0" />
           </PointFrame>
-          <PointFrame FrameIndex="9" X="0.0000" Y="15.0000">
+          <PointFrame FrameIndex="6" X="19.1842" Y="-16.2632">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="9" X="6.7712" Y="-5.3113">
             <EasingData Type="0" />
           </PointFrame>
         </Timeline>
         <Timeline ActionTag="125515874" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="1.0000" Y="0.8000">
+          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
           </ScaleFrame>
-          <ScaleFrame FrameIndex="3" X="1.0000" Y="0.9000">
+          <ScaleFrame FrameIndex="3" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="6" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
           </ScaleFrame>
-          <ScaleFrame FrameIndex="9" X="1.0000" Y="0.9000">
+          <ScaleFrame FrameIndex="9" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
           </ScaleFrame>
         </Timeline>
@@ -45,17 +48,17 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="point" StartIndex="0" EndIndex="9">
-          <RenderColor A="150" R="135" G="206" B="235" />
+          <RenderColor A="255" R="135" G="206" B="235" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Node" Tag="88" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="hand" ActionTag="125515874" Tag="89" IconVisible="False" LeftMargin="-39.0000" RightMargin="-39.0000" TopMargin="-128.0000" BottomMargin="15.0000" ctype="SpriteObjectData">
-            <Size X="78.0000" Y="113.0000" />
-            <AnchorPoint ScaleX="0.5000" />
-            <Position Y="15.0000" />
-            <Scale ScaleX="1.0000" ScaleY="0.9000" />
+          <AbstractNodeData Name="hand" ActionTag="125515874" Tag="89" IconVisible="False" LeftMargin="6.7712" RightMargin="-117.7712" TopMargin="5.3113" BottomMargin="-106.3113" ctype="SpriteObjectData">
+            <Size X="111.0000" Y="101.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position X="6.7712" Y="-5.3113" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />

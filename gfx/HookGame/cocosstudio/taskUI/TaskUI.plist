@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>taskUI/achievementTab_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,493},{160,55}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>taskUI/achievementTab_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{160,493},{159,55}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>taskUI/bar02_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{410,47}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{410,47}</string>
+			</dict>
+			<key>taskUI/bar02_blue.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,548},{430,17}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{430,17}</string>
+			</dict>
+			<key>taskUI/bar02_purple.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,565},{430,17}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{430,17}</string>
+			</dict>
+			<key>taskUI/bar02_title.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{319,298},{123,62}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{123,62}</string>
+			</dict>
+			<key>taskUI/bar02_yellow.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{410,0},{493,23}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{493,23}</string>
+			</dict>
+			<key>taskUI/box_0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{77,206},{74,74}}</string>
+				<key>offset</key>
+				<string>{-3,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{114,90}</string>
+			</dict>
+			<key>taskUI/box1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{151,206},{74,74}}</string>
+				<key>offset</key>
+				<string>{-3,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{114,90}</string>
+			</dict>
+			<key>taskUI/box2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{319,421},{80,80}}</string>
+				<key>offset</key>
+				<string>{-4,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{114,90}</string>
+			</dict>
+			<key>taskUI/everyDayTab_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{430,493},{160,55}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>taskUI/everyDayTab_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{319,47},{159,55}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{160,55}</string>
+			</dict>
+			<key>taskUI/get.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,206},{78,77}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{78,77}</string>
+			</dict>
+			<key>taskUI/text.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{374,47},{251,26}}</string>
+				<key>offset</key>
+				<string>{-6,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{264,26}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>TaskUI.png</string>
+			<key>realTextureFileName</key>
+			<string>TaskUI.png</string>
+			<key>size</key>
+			<string>{590,582}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>590</integer>
+			<key>height</key>
+			<integer>582</integer>
+		</dict>
+	</dict>
+</plist>

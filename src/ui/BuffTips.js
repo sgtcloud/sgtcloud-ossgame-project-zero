@@ -30,7 +30,7 @@ var Tip = cc.Layer.extend({
      * @param {Object||String} config   {beforeShow:Function,afterShow:Function,afterHide:Function,delay:3.0,color:cc.color('#cccccc')}
      */
     toggle: function (config) {
-        //this.stopAllActions();
+        this.stopAllActions();
         var fadein = cc.show()/*cc.fadeIn(0.0)*/;
         var fadeout = cc.hide()/* cc.fadeOut(0.0)*/;
         var beforeShow, afterHide, afterShow, delay = 3.0, beforeHide, text;
