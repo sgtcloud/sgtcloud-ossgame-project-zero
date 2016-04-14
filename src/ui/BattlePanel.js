@@ -139,16 +139,16 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],false);
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],false);
             this.disableBossBattleTimeCounter();
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],true);
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn],true);
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
         }.bind(this));
 
         DamageNumber.initPool();

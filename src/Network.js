@@ -21,7 +21,7 @@
                 jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
             });
             if (SgtApi.context.openid) {
-                SgtApi.UserService.login3rd(SgtApi.User.WECHAT_MP, function (result, data) {
+                SgtApi.UserService.login3rd_manual(SgtApi.User.WECHAT_MP, function (result, data) {
                     if (!result) {
                         sgt.WxCentralService.getUserInfo(function (result, data) {
                             if (result) {
@@ -29,7 +29,7 @@
                                 user.userName = data.openid;
                                 user.nickName = data.nickname;
                                 user.registryType = SgtApi.User.WECHAT_MP;//注册类型
-                                SgtApi.UserService.regist(user, function (result, data) {
+                                SgtApi.UserService.regist_manual(user, function (result, data) {
                                     if (result) {
                                         console.log(data);
                                         //登陆成功 获取用户存档
@@ -50,7 +50,8 @@
                     } else {
                         console.log(data);
                         //登陆成功 获取用户存档
-                        this.getPlayerSave(cb);
+                        //this.getPlayerSave(cb);
+                        cb();
                     }
                 }.bind(this));
             } else {
@@ -60,12 +61,15 @@
         },
         //一般自动登录业务
         autoLoginService: function (cb) {
-            SgtApi.UserService.quickLogin(function (result, user) {
+            SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
                     if (user !== null) {
                         // console.log("自动注册成功" + user);
                         //登陆成功 获取用户存档
-                        this.getPlayerSave(cb);
+                        //this.getPlayerSave(cb);
+                        cb();
+                    }else{
+                        cb('用户信息异常');
                     }
                 } else {
                     // console.error('快速注册失败。');
@@ -109,8 +113,6 @@
                 setInterval(function () {
                     PlayerData.serverCurrentTime += 100;
                 }, 100);
-                //同步服务器时间 10分钟校正服务器本地时间
-                //setInterval(this.syncServerTime,600*1000);
             }else{
                 cb('上下文中没有引入sgt-sdk');
             }
@@ -447,7 +449,7 @@
                                 tip2.stopAllActions();
                                 tip2.setVisible(false);
                                 initGame(cb);
-                            })
+                            });
                         }
                     }.bind(this));
                 } else {
@@ -461,9 +463,10 @@
             });
             sgt.RandomNameGroupService.defaultRandomName(function (result, data) {
                 name_text.setString(data);
+                createPlayer.setPosition(cc.p(140, 400));
+                scene.addChild(createPlayer, 100);
             });
-            createPlayer.setPosition(cc.p(140, 400));
-            scene.addChild(createPlayer, 100);
+
         },
         chooseWXPay: function (chargePoint, callback) {
             var desc = '购买' + chargePoint.name + " " + chargePoint.amount;
@@ -657,7 +660,22 @@
                     cb('获取服务器列表出错');
                 }
             })
-        }
+        },
+        setServerInfo: function(server){
+            console.log(JSON.stringify(server));
+            SgtApi.context.server = server;
+            SgtApi.CreateServices();
+        },
+        updateLocalServerList: function(){
+            var servers = PlayerData.getLocalServerList();
+            var i = servers.indexOf(SgtApi.context.server);
+            //更新排序
+            if(i != -1){
+                servers.splice(i,1);
+            }
+            servers.push(SgtApi.context.server);
+            localStorage.setItem("sgt-html5-game-announce-servers",servers);
+        },
 
     };
     window.Network = new NetworkResolve();

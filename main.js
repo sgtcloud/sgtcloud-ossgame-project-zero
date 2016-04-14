@@ -65,11 +65,9 @@ cc.game.onStart = function () {
     var mark = localStorage.getItem('mark-sgt-html5-game');
     async.parallel([function (cb) {
         if (mark) {
-            getFirstResources(false);
             LoaderScene.preload(full_resouces, cb, this);
-        } else {
-            localStorage.setItem('mark-sgt-html5-game', 1);
-           cb();
+        }else{
+            cb();
         }
     }, function (cb) {
         Network.initAndAutoLogin(cb);
@@ -77,34 +75,34 @@ cc.game.onStart = function () {
         if (err) {
             console.log('出错了' + JSON.stringify(err)+"====="+JSON.stringify(data));
         } else {
-            if (!mark) {
-                console.log('成功了');
-                if (PlayerData.modelPlayer) {
-                    getFirstResources(true, false);
-                } else {
-                    getFirstResources(true, true);
-                }
-                async.series({
-                        "flag1": function (callback) {
-                            LoaderScene.preload(first_resources, function () {
-                                initDatas();
-                                showCover();
-                                console.log("flag1执行好了");
-                                callback(null,"flag1");
-                            }, this);
-                        }, "flag2": function (callback) {
-                        //异步加载全部资源
-                        cc.loader.load(full_resouces, function () {
-                             console.log("flag2正在执行好了");
-                             callback(null,"flag2");
-                        });
-                    }
-                }, function (callback) {
-                    console.log(callback);
-                });
-            } else {
+            if (mark) {
                 initDatas();
                 showCover();
+            } else {
+                console.log('成功了');
+                LoaderScene.preload(getFirstResources(), function () {
+                    initDatas();
+                    showCover();
+                }, this);
+                /*async.series({
+                 "flag1": function (callback) {
+                 LoaderScene.preload(getFirstResources(), function () {
+                 initDatas();
+                 showCover();
+                 console.log("flag1执行好了");
+                 callback(null,"flag1");
+                 }, this);
+                 }, "flag2": function (callback) {
+                 //异步加载全部资源
+                 cc.loader.load(full_resouces, function () {
+                 console.log("flag2正在执行好了");
+                 callback(null,"flag2");
+                 });
+                 }
+                 }, function (callback) {
+                 localStorage.setItem('mark-sgt-html5-game', 1);
+                 console.log(callback);
+                 });*/
             }
         }
     });

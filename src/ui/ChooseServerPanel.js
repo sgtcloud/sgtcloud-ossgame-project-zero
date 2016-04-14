@@ -36,6 +36,7 @@ var ChooseServerPanel = cc.Node.extend({
         var state_full = root.getChildByName("state_full");
         var _player = root.getChildByName("player");
         var text = root.getChildByName("text");
+        text.setString(server.name);
         setFont([text]);
         if(_new){
             state_new.setVisible(true);
@@ -49,6 +50,11 @@ var ChooseServerPanel = cc.Node.extend({
         }else{
             _player.setVisible(false);
         }
+        bindTouchEventListener(function(){
+            Network.setServerInfo(server);
+            this.hiddenServerListPopup();
+            return true;
+        }.bind(this),root);
         this.listView.setItemsMargin(10);
         this.listView.pushBackCustomItem(root);
     },
