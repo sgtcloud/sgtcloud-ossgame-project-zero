@@ -17,8 +17,8 @@ var Skill = cc.Class.extend({
     getType: function () {
         return this._type;
     },
-    getUnlockLevel: function () {
-        return getLevelData(this._data, 'unlockLevel', this.getLv());
+    getUnlockLevel: function (lv) {
+        return getLevelData(this._data, 'unlockLevel', lv||this.getLv());
     },
     isLocked: function () {
         return this.getLv() < this.getUnlockLevel()
@@ -35,6 +35,10 @@ var Skill = cc.Class.extend({
         var cost = getLevelData(this._data, 'upgrade', level + 1);
         return cost;
     },
+    getLevelUpgrade: function (lv) {
+        return getLevelData(this._data, 'upgrade', lv);
+    }
+    ,
     getLevelData: function (level) {
         return getSpecificLevelData(this._data, level || this.getLv());
     },
@@ -48,8 +52,9 @@ var Skill = cc.Class.extend({
     getMaxLevel: function () {
         return this._data.levelDatas[this._data.levelDatas.length - 1]['level'];
     },
-    upgrade: function () {
-        this._lv++;
+    upgrade: function (num) {
+        num=num||1;
+        this._lv=num+this._lv;
         for (var i in player.heroes) {
             var cacheHero = player.heroes[i];
             if (cacheHero.id === this._heroId) {
