@@ -28,5 +28,16 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="Equiplayer.csd" />
+          <FilePathData Path="FirstRechargeUI.csi" />
+          <FilePathData Path="FirstRechargeLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="FirstRechargeLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

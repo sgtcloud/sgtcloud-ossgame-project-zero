@@ -272,6 +272,8 @@
           <Image Name="giftCode_btn.png" />
           <Image Name="bg_14_2.png" />
           <Image Name="bg_23.png" />
+          <Image Name="bg_24.png" />
+          <Image Name="touch.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -667,6 +669,7 @@
           <Image Name="vip.png" />
           <Image Name="pic.png" />
           <Image Name="label.png" />
+          <Image Name="pic_text.png" />
         </Folder>
         <Project Name="RechargeIconLayer.csd" Type="Layer" />
         <PlistInfo Name="OtherUI.csi" Type="Plist" />
@@ -729,6 +732,7 @@
           <Image Name="notice_title.png" />
           <Image Name="code_girl.png" />
           <Image Name="text.png" />
+          <Image Name="small.png" />
         </Folder>
         <Project Name="TaskLayer.csd" Type="Layer" />
         <Project Name="TaskView.csd" Type="Layer" />

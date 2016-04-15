@@ -4,8 +4,6 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Folder Name="coverUI">
-          <Image Name="yellow_btn_a.png" />
-          <Image Name="yellow_btn_b.png" />
           <Image Name="cover_bg.jpg" />
           <Image Name="logo.png" />
           <Image Name="bg_03.png" />

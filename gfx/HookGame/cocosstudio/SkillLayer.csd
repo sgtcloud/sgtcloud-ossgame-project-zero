@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="240.0000" />
             <Children>
-              <AbstractNodeData Name="skillLayer_bg" ActionTag="175827818" Alpha="153" Tag="92" IconVisible="False" Scale9Enable="True" LeftEage="30" RightEage="30" TopEage="30" BottomEage="30" Scale9OriginX="30" Scale9OriginY="30" Scale9Width="32" Scale9Height="32" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="skillLayer_bg" ActionTag="1930903192" Tag="27" IconVisible="False" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="5" Scale9Height="6" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="240.0000" />
                 <AnchorPoint />
                 <Position />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_23.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/bg_05.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk" ActionTag="-966206276" CallBackType="Click" Tag="170" IconVisible="False" LeftMargin="9.7591" RightMargin="499.2409" TopMargin="10.0951" BottomMargin="202.9049" Scale9Width="131" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="131.0000" Y="27.0000" />
@@ -49,6 +49,16 @@
                 <PreSize X="0.2047" Y="0.1083" />
                 <FileData Type="MarkedSubImage" Path="skillUI/tap.png" Plist="SkillUI.plist" />
               </AbstractNodeData>
+              <AbstractNodeData Name="tatk_text" ActionTag="61502921" Tag="1051" IconVisible="False" LeftMargin="136.3308" RightMargin="394.6692" TopMargin="41.5294" BottomMargin="178.4706" LabelText="999999" ctype="TextBMFontObjectData">
+                <Size X="109.0000" Y="20.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="136.3308" Y="188.4706" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2130" Y="0.7853" />
+                <PreSize X="0.1703" Y="0.0833" />
+                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
+              </AbstractNodeData>
               <AbstractNodeData Name="skill_box" ActionTag="-1738334830" Tag="161" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="79.0000" BottomMargin="12.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="610.0000" Y="149.0000" />
                 <AnchorPoint ScaleY="1.0000" />
@@ -61,16 +71,6 @@
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="tatk_text" ActionTag="61502921" Tag="1051" IconVisible="False" LeftMargin="136.3308" RightMargin="394.6692" TopMargin="41.5294" BottomMargin="178.4706" LabelText="999999" ctype="TextBMFontObjectData">
-                <Size X="109.0000" Y="20.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="136.3308" Y="188.4706" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2130" Y="0.7853" />
-                <PreSize X="0.1703" Y="0.0833" />
-                <LabelBMFontFile_CNB Type="Normal" Path="font/white16-export.fnt" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="blood_box" ActionTag="1783567765" Tag="64" IconVisible="False" LeftMargin="393.3454" RightMargin="6.6546" TopMargin="8.1439" BottomMargin="171.8561" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="240.0000" Y="60.0000" />

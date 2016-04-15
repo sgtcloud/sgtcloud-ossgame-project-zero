@@ -19,163 +19,173 @@
                 <PreSize X="0.8750" Y="0.8333" />
                 <FileData Type="Normal" Path="mainUI/bg_10.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_bg1" ActionTag="1476412977" CallBackType="Click" Tag="198" IconVisible="False" LeftMargin="261.4759" RightMargin="303.5241" TopMargin="50.0151" BottomMargin="385.9849" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="55" Scale9Height="24" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title_bg1" ActionTag="1476412977" CallBackType="Click" Tag="198" IconVisible="False" LeftMargin="217.4763" RightMargin="347.5237" TopMargin="50.0151" BottomMargin="385.9849" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="55" Scale9Height="24" ctype="ImageViewObjectData">
                 <Size X="75.0000" Y="44.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="298.9759" Y="407.9849" />
+                <Position X="254.9763" Y="407.9849" />
                 <Scale ScaleX="1.8000" ScaleY="1.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4671" Y="0.8500" />
+                <PrePosition X="0.3984" Y="0.8500" />
                 <PreSize X="0.1172" Y="0.0917" />
                 <FileData Type="MarkedSubImage" Path="rechargeUI/title_bg.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_bg2" ActionTag="1902186916" CallBackType="Click" Tag="199" IconVisible="False" LeftMargin="393.8290" RightMargin="171.1710" TopMargin="50.0151" BottomMargin="385.9849" FlipX="True" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="55" Scale9Height="24" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title_bg2" ActionTag="1902186916" CallBackType="Click" Tag="199" IconVisible="False" LeftMargin="349.8295" RightMargin="215.1705" TopMargin="50.0151" BottomMargin="385.9849" FlipX="True" LeftEage="10" RightEage="10" TopEage="10" BottomEage="10" Scale9OriginX="10" Scale9OriginY="10" Scale9Width="55" Scale9Height="24" ctype="ImageViewObjectData">
                 <Size X="75.0000" Y="44.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="431.3290" Y="407.9849" />
+                <Position X="387.3295" Y="407.9849" />
                 <Scale ScaleX="1.8000" ScaleY="1.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6740" Y="0.8500" />
+                <PrePosition X="0.6052" Y="0.8500" />
                 <PreSize X="0.1172" Y="0.0917" />
                 <FileData Type="MarkedSubImage" Path="rechargeUI/title_bg.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="girl" ActionTag="1368394543" Tag="201" IconVisible="False" RightMargin="380.0000" TopMargin="13.0000" BottomMargin="4.0000" ctype="SpriteObjectData">
-                <Size X="260.0000" Y="463.0000" />
+              <AbstractNodeData Name="girl" ActionTag="1368394543" Tag="201" IconVisible="False" LeftMargin="3.2089" RightMargin="244.7911" TopMargin="10.0696" BottomMargin="0.9304" ctype="SpriteObjectData">
+                <Size X="392.0000" Y="469.0000" />
                 <AnchorPoint />
-                <Position Y="4.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="3.2089" Y="0.9304" />
+                <Scale ScaleX="0.8000" ScaleY="0.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0083" />
-                <PreSize X="0.4063" Y="0.9646" />
+                <PrePosition X="0.0050" Y="0.0019" />
+                <PreSize X="0.6125" Y="0.9771" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/girl.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="popo" ActionTag="-478082829" Tag="202" IconVisible="False" LeftMargin="503.0000" TopMargin="348.0000" BottomMargin="4.0000" ctype="SpriteObjectData">
-                <Size X="137.0000" Y="128.0000" />
-                <AnchorPoint ScaleX="1.0000" />
-                <Position X="640.0000" Y="4.0000" />
+              <AbstractNodeData Name="small" ActionTag="-2047995685" Tag="78" IconVisible="False" LeftMargin="509.0674" RightMargin="58.9326" TopMargin="133.6679" BottomMargin="278.3321" Scale9Width="72" Scale9Height="68" ctype="ImageViewObjectData">
+                <Size X="72.0000" Y="68.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="545.0674" Y="312.3321" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="1.0000" Y="0.0083" />
+                <PrePosition X="0.8517" Y="0.6507" />
+                <PreSize X="0.1125" Y="0.1417" />
+                <FileData Type="MarkedSubImage" Path="other/small.png" Plist="OtherUI.plist" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="popo" ActionTag="-478082829" Tag="202" IconVisible="False" LeftMargin="480.5376" RightMargin="22.4624" TopMargin="344.7911" BottomMargin="7.2089" ctype="SpriteObjectData">
+                <Size X="137.0000" Y="128.0000" />
+                <AnchorPoint ScaleX="1.0000" />
+                <Position X="617.5376" Y="7.2089" />
+                <Scale ScaleX="0.8000" ScaleY="0.8000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9649" Y="0.0150" />
                 <PreSize X="0.2141" Y="0.2667" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/popo.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="88" ActionTag="1374260382" Tag="204" IconVisible="False" LeftMargin="286.6584" RightMargin="38.3416" TopMargin="179.7476" BottomMargin="214.2524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="88" ActionTag="1374260382" Tag="204" IconVisible="False" LeftMargin="286.6591" RightMargin="38.3409" TopMargin="198.7472" BottomMargin="195.2528" ctype="SpriteObjectData">
                 <Size X="315.0000" Y="86.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="444.1584" Y="257.2524" />
+                <Position X="444.1591" Y="238.2528" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6940" Y="0.5359" />
+                <PrePosition X="0.6940" Y="0.4964" />
                 <PreSize X="0.4922" Y="0.1792" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/88.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="any" ActionTag="-1620283741" Tag="205" IconVisible="False" LeftMargin="276.1876" RightMargin="153.8124" TopMargin="116.4177" BottomMargin="287.5823" ctype="SpriteObjectData">
+              <AbstractNodeData Name="any" ActionTag="-1620283741" Tag="205" IconVisible="False" LeftMargin="200.1878" RightMargin="229.8122" TopMargin="138.4138" BottomMargin="265.5862" ctype="SpriteObjectData">
                 <Size X="210.0000" Y="76.0000" />
                 <AnchorPoint ScaleX="-1.2049" ScaleY="0.1667" />
-                <Position X="23.1586" Y="300.2515" />
+                <Position X="-52.8412" Y="278.2554" />
                 <Scale ScaleX="1.2000" ScaleY="1.2000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0362" Y="0.6255" />
+                <PrePosition X="-0.0826" Y="0.5797" />
                 <PreSize X="0.3281" Y="0.1583" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/any.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chong" ActionTag="26742540" Tag="206" IconVisible="False" LeftMargin="266.6584" RightMargin="300.3416" TopMargin="119.2476" BottomMargin="291.7524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="chong" ActionTag="26742540" Tag="206" IconVisible="False" LeftMargin="190.6593" RightMargin="376.3407" TopMargin="141.2473" BottomMargin="269.7527" ctype="SpriteObjectData">
                 <Size X="73.0000" Y="69.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="303.1584" Y="326.2524" />
+                <Position X="227.1593" Y="304.2527" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4737" Y="0.6797" />
+                <PrePosition X="0.3549" Y="0.6339" />
                 <PreSize X="0.1141" Y="0.1437" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/chong.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="song" ActionTag="-1841886575" Tag="207" IconVisible="False" LeftMargin="219.1560" RightMargin="348.8440" TopMargin="188.2476" BottomMargin="222.7524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="song" ActionTag="-1841886575" Tag="207" IconVisible="False" LeftMargin="219.1565" RightMargin="348.8435" TopMargin="207.2472" BottomMargin="203.7528" ctype="SpriteObjectData">
                 <Size X="72.0000" Y="69.0000" />
                 <AnchorPoint ScaleX="0.5417" ScaleY="0.5000" />
-                <Position X="258.1584" Y="257.2524" />
+                <Position X="258.1589" Y="238.2528" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4034" Y="0.5359" />
+                <PrePosition X="0.4034" Y="0.4964" />
                 <PreSize X="0.1125" Y="0.1437" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/song.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold" ActionTag="-1895719199" Tag="209" IconVisible="False" LeftMargin="299.1584" RightMargin="300.8416" TopMargin="274.7476" BottomMargin="165.2524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="gold" ActionTag="-1895719199" Tag="209" IconVisible="False" LeftMargin="308.1589" RightMargin="291.8411" TopMargin="285.7473" BottomMargin="154.2527" ctype="SpriteObjectData">
                 <Size X="40.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.6000" ScaleY="0.5500" />
-                <Position X="323.1584" Y="187.2524" />
+                <Position X="332.1589" Y="176.2527" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5049" Y="0.3901" />
+                <PrePosition X="0.5190" Y="0.3672" />
                 <PreSize X="0.0625" Y="0.0833" />
                 <FileData Type="MarkedSubImage" Path="materialUI/gold.png" Plist="MaterialUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title" ActionTag="1419263083" Tag="208" IconVisible="False" LeftMargin="270.6584" RightMargin="186.3416" TopMargin="17.2476" BottomMargin="373.7524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="title" ActionTag="1419263083" Tag="208" IconVisible="False" LeftMargin="226.6586" RightMargin="230.3414" TopMargin="17.2476" BottomMargin="373.7524" ctype="SpriteObjectData">
                 <Size X="183.0000" Y="89.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="362.1584" Y="418.2524" />
+                <Position X="318.1586" Y="418.2524" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5659" Y="0.8714" />
+                <PrePosition X="0.4971" Y="0.8714" />
                 <PreSize X="0.2859" Y="0.1854" />
                 <FileData Type="MarkedSubImage" Path="firstRechargeUI/title.png" Plist="FirstRechargeUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gem" ActionTag="654704368" Tag="211" IconVisible="False" LeftMargin="252.1584" RightMargin="347.8416" TopMargin="319.7476" BottomMargin="120.2524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="gem" ActionTag="654704368" Tag="211" IconVisible="False" LeftMargin="286.1594" RightMargin="313.8406" TopMargin="335.7474" BottomMargin="104.2526" ctype="SpriteObjectData">
                 <Size X="40.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="272.1584" Y="140.2524" />
+                <Position X="306.1594" Y="124.2526" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4252" Y="0.2922" />
+                <PrePosition X="0.4784" Y="0.2589" />
                 <PreSize X="0.0625" Y="0.0833" />
                 <FileData Type="MarkedSubImage" Path="materialUI/diamond.png" Plist="MaterialUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic" ActionTag="1216803926" Tag="213" IconVisible="False" LeftMargin="393.1584" RightMargin="206.8416" TopMargin="319.7476" BottomMargin="120.2524" ctype="SpriteObjectData">
+              <AbstractNodeData Name="relic" ActionTag="1216803926" Tag="213" IconVisible="False" LeftMargin="393.1585" RightMargin="206.8415" TopMargin="335.7474" BottomMargin="104.2526" ctype="SpriteObjectData">
                 <Size X="40.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="413.1584" Y="140.2524" />
+                <Position X="413.1585" Y="124.2526" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6456" Y="0.2922" />
+                <PrePosition X="0.6456" Y="0.2589" />
                 <PreSize X="0.0625" Y="0.0833" />
                 <FileData Type="MarkedSubImage" Path="materialUI/relic.png" Plist="MaterialUI.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="relic_num" ActionTag="-1764557796" Tag="214" IconVisible="False" LeftMargin="448.1584" RightMargin="137.8416" TopMargin="329.7476" BottomMargin="126.2524" LabelText="*20" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="relic_num" ActionTag="-1764557796" Tag="214" IconVisible="False" LeftMargin="448.1586" RightMargin="137.8414" TopMargin="345.7474" BottomMargin="110.2526" LabelText="*20" ctype="TextBMFontObjectData">
                 <Size X="54.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="475.1584" Y="138.2524" />
+                <Position X="475.1586" Y="122.2526" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7424" Y="0.2880" />
+                <PrePosition X="0.7424" Y="0.2547" />
                 <PreSize X="0.0844" Y="0.0500" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white20-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gem_num" ActionTag="1564928804" Tag="212" IconVisible="False" LeftMargin="305.1584" RightMargin="288.8416" TopMargin="329.7468" BottomMargin="126.2532" LabelText="*10" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="gem_num" ActionTag="1564928804" Tag="212" IconVisible="False" LeftMargin="339.1590" RightMargin="254.8410" TopMargin="345.7465" BottomMargin="110.2535" LabelText="*10" ctype="TextBMFontObjectData">
                 <Size X="46.0000" Y="24.0000" />
                 <AnchorPoint ScaleY="0.4583" />
-                <Position X="305.1584" Y="137.2524" />
+                <Position X="339.1590" Y="121.2527" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4768" Y="0.2859" />
+                <PrePosition X="0.5299" Y="0.2526" />
                 <PreSize X="0.0719" Y="0.0500" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white20-export.fnt" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="gold_num" ActionTag="-1178865221" Tag="210" IconVisible="False" LeftMargin="351.1584" RightMargin="170.8416" TopMargin="281.7476" BottomMargin="174.2524" LabelText="*50000" ctype="TextBMFontObjectData">
+              <AbstractNodeData Name="gold_num" ActionTag="-1178865221" Tag="210" IconVisible="False" LeftMargin="360.1592" RightMargin="161.8408" TopMargin="292.7475" BottomMargin="163.2525" LabelText="*50000" ctype="TextBMFontObjectData">
                 <Size X="118.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="410.1584" Y="186.2524" />
+                <Position X="419.1592" Y="175.2525" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.6409" Y="0.3880" />
+                <PrePosition X="0.6549" Y="0.3651" />
                 <PreSize X="0.1844" Y="0.0500" />
                 <LabelBMFontFile_CNB Type="Normal" Path="font/white20-export.fnt" Plist="" />
               </AbstractNodeData>
@@ -189,7 +199,7 @@
                 <PreSize X="0.0875" Y="0.1208" />
                 <FileData Type="Normal" Path="CloseBtn.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="1110472813" Tag="321" IconVisible="False" LeftMargin="288.0000" RightMargin="202.0000" TopMargin="394.1740" BottomMargin="25.8260" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="1110472813" Tag="321" IconVisible="False" LeftMargin="323.2975" RightMargin="166.7025" TopMargin="396.3132" BottomMargin="23.6868" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="buy_btn" ActionTag="-1097677973" CallBackType="Click" Tag="322" IconVisible="False" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="13" BottomEage="13" Scale9OriginX="13" Scale9OriginY="13" Scale9Width="6" Scale9Height="21" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -229,10 +239,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position X="288.0000" Y="25.8260" />
+                <Position X="323.2975" Y="23.6868" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4500" Y="0.0538" />
+                <PrePosition X="0.5052" Y="0.0493" />
                 <PreSize X="0.2344" Y="0.1250" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

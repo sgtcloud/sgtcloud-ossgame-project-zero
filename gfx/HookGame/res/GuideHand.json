@@ -140,6 +140,96 @@
               }
             ],
             "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -2010624981,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 73.1453,
+                "Y": -0.6308,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 84.4956,
+                "Y": -16.3952,
+                "FrameIndex": 3,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 94.5847,
+                "Y": -23.9622,
+                "FrameIndex": 6,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 80.7118,
+                "Y": -15.1341,
+                "FrameIndex": 9,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -2010624981,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "mainUI/touch.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 0,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "mainUI/touch.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 3,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "mainUI/touch.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 6,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              },
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "mainUI/touch.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 9,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
           }
         ],
         "ctype": "TimelineActionData"
@@ -169,8 +259,8 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": -4.5135,
-              "Y": 4.8444
+              "X": 6.7712,
+              "Y": -5.3113
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -186,10 +276,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -4.5135,
-            "RightMargin": -106.4865,
-            "TopMargin": -4.8444,
-            "BottomMargin": -96.1556,
+            "LeftMargin": 6.7712,
+            "RightMargin": -117.7712,
+            "TopMargin": 5.3113,
+            "BottomMargin": -106.3113,
             "Tag": 89,
             "ActionTag": 125515874,
             "Size": {
@@ -197,6 +287,51 @@
               "Y": 101.0
             },
             "Name": "hand",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "mainUI/touch.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 80.7118,
+              "Y": -15.1341
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 50.2118,
+            "RightMargin": -111.2118,
+            "TopMargin": -0.3659,
+            "BottomMargin": -30.6341,
+            "Tag": 544,
+            "ActionTag": -2010624981,
+            "Size": {
+              "X": 61.0,
+              "Y": 31.0
+            },
+            "Name": "touch",
             "ctype": "SpriteObjectData"
           }
         ],
@@ -208,7 +343,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "mainUI/hand.png"
+        "mainUI/hand.png",
+        "mainUI/touch.png"
       ],
       "ctype": "GameFileData"
     }

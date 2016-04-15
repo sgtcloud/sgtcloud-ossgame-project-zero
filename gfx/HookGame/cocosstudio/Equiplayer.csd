@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="-593797273" Tag="267" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="500.0000" />
             <Children>
-              <AbstractNodeData Name="equip_bg" ActionTag="872754748" Tag="203" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="equip_bg" ActionTag="312345072" Tag="51" IconVisible="False" Scale9Enable="True" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="500.0000" />
                 <AnchorPoint />
                 <Position />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="MarkedSubImage" Path="equipUI/bg.png" Plist="EquipUI.plist" />
+                <FileData Type="Normal" Path="mainUI/bg_01.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="equip_list" ActionTag="825082945" Tag="204" IconVisible="False" LeftMargin="8.0000" RightMargin="8.0000" TopMargin="120.0000" BottomMargin="8.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_Right" ctype="ListViewObjectData">
                 <Size X="624.0000" Y="372.0000" />

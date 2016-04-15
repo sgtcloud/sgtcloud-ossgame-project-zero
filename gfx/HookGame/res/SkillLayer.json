@@ -55,14 +55,14 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_23.png",
+                  "Path": "mainUI/bg_05.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 30,
-                "Scale9OriginY": 30,
-                "Scale9Width": 32,
-                "Scale9Height": 32,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -82,13 +82,12 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 92,
-                "ActionTag": 175827818,
+                "Tag": 27,
+                "ActionTag": 1930903192,
                 "Size": {
                   "X": 640.0,
                   "Y": 240.0
                 },
-                "Alpha": 153,
                 "Name": "skillLayer_bg",
                 "ctype": "ImageViewObjectData"
               },
@@ -215,6 +214,47 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "LabelText": "999999",
+                "LabelBMFontFile_CNB": {
+                  "Type": "Normal",
+                  "Path": "font/white16-export.fnt",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 136.3308,
+                  "Y": 188.4706
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.213,
+                  "Y": 0.7853
+                },
+                "PreSize": {
+                  "X": 0.1703,
+                  "Y": 0.0833
+                },
+                "LeftMargin": 136.3308,
+                "RightMargin": 394.6692,
+                "TopMargin": 41.5294,
+                "BottomMargin": 178.4706,
+                "Tag": 1051,
+                "ActionTag": 61502921,
+                "Size": {
+                  "X": 109.0,
+                  "Y": 20.0
+                },
+                "Name": "tatk_text",
+                "ctype": "TextBMFontObjectData"
+              },
+              {
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,
@@ -264,47 +304,6 @@
                 },
                 "Name": "skill_box",
                 "ctype": "PanelObjectData"
-              },
-              {
-                "LabelText": "999999",
-                "LabelBMFontFile_CNB": {
-                  "Type": "Normal",
-                  "Path": "font/white16-export.fnt",
-                  "Plist": ""
-                },
-                "AnchorPoint": {
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 136.3308,
-                  "Y": 188.4706
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.213,
-                  "Y": 0.7853
-                },
-                "PreSize": {
-                  "X": 0.1703,
-                  "Y": 0.0833
-                },
-                "LeftMargin": 136.3308,
-                "RightMargin": 394.6692,
-                "TopMargin": 41.5294,
-                "BottomMargin": 178.4706,
-                "Tag": 1051,
-                "ActionTag": 61502921,
-                "Size": {
-                  "X": 109.0,
-                  "Y": 20.0
-                },
-                "Name": "tatk_text",
-                "ctype": "TextBMFontObjectData"
               },
               {
                 "BackColorAlpha": 102,
@@ -716,7 +715,7 @@
         "font/white10-export.png",
         "font/white16-export.fnt",
         "font/white16-export.png",
-        "mainUI/bg_23.png",
+        "mainUI/bg_05.png",
         "mainUI/blood1_1.png",
         "mainUI/blood1_2.png",
         "mainUI/blood2_1.png",

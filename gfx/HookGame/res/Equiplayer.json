@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "equipUI/bg.png",
-                  "Plist": "EquipUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_01.png",
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 25,
@@ -82,8 +82,8 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 203,
-                "ActionTag": 872754748,
+                "Tag": 51,
+                "ActionTag": 312345072,
                 "Size": {
                   "X": 640.0,
                   "Y": 500.0
@@ -476,7 +476,8 @@
         "EquipUI.plist",
         "EquipUI.png",
         "HeroUI.plist",
-        "HeroUI.png"
+        "HeroUI.png",
+        "mainUI/bg_01.png"
       ],
       "ctype": "GameFileData"
     }
