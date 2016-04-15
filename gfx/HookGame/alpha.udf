@@ -31,12 +31,12 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="OtherUI.csi" />
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="TitleLayer.csd" />
+          <FilePathData Path="HeroLayer.csd" />
+          <FilePathData Path="Equiplayer.csd" />
           <FilePathData Path="FirstRechargeUI.csi" />
+          <FilePathData Path="FirstRechargeLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="FirstRechargeUI.csi" />
+        <ActiveDocument Path="FirstRechargeLayer.csd" />
       </Value>
     </Item>
   </Properties>
