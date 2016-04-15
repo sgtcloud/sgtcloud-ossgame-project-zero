@@ -475,11 +475,13 @@ function showCover() {
             var server ;
             if(PlayerData.servers){
                 server = PlayerData.servers[0];
+                full.setVisible(false);
                 state.setVisible(true);
             }else{
                 var servers = PlayerData.getLocalServerList();
                 server = servers[servers.length-1];
                 state.setVisible(false);
+                full.setVisible(true);
             }
             Network.setServerInfo(server);
             text.setString(server.name);
@@ -498,6 +500,8 @@ function showCover() {
     var text = chooseBtn.getChildByName('text');
     var state = chooseBtn.getChildByName('state');
     var list_btn = chooseBtn.getChildByName('list_btn');
+    var full = chooseBtn.getChildByName('full');
+
     chooseBtn.setVisible(false);
     /*bindButtonCallback(list_btn,function(){
         ChooseServerPanel.open();
