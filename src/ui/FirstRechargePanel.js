@@ -6,7 +6,7 @@ var FirstRechargePanel = cc.Node.extend({
         this._super();
         this.firstRechargeLayer = ccs.csLoader.createNode(res.first_recharge_layer_json);
         var root = this.firstRechargeLayer.getChildByName('root');
-        root.setPosition(cc.p(0,360));
+        //root.setPosition(null/*cc.p(0,360)*/);
         var close = root.getChildByName('close').getChildByName('root').getChildByName('close');
         var btn = root.getChildByName('btn');
         var buy_btn = btn.getChildByName('buy_btn');

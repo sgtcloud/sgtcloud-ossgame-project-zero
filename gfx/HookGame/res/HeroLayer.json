@@ -55,14 +55,14 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_24.png",
+                  "Path": "mainUI/bg_01.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 27,
-                "Scale9OriginY": 27,
-                "Scale9Width": 28,
-                "Scale9Height": 28,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 58,
+                "Scale9Height": 58,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -163,7 +163,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "mainUI/bg_24.png"
+        "mainUI/bg_01.png"
       ],
       "ctype": "GameFileData"
     }

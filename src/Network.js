@@ -11,7 +11,7 @@
             return this.loginSuccess;
         },
         //微信自动登录业务
-        autoWxLoginService: function (wxInfo,cb) {
+        autoWxLoginService: function (wxInfo, cb) {
             wx.config({
                 debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
                 appId: wxInfo.result.wxAppId, // 必填，公众号的唯一标识
@@ -68,7 +68,7 @@
                         //登陆成功 获取用户存档
                         //this.getPlayerSave(cb);
                         cb();
-                    }else{
+                    } else {
                         cb('用户信息异常');
                     }
                 } else {
@@ -78,10 +78,10 @@
                 }
             }.bind(this));
         },
-        getSignature: function(cb){
+        getSignature: function (cb) {
             SgtApi.WxCentralService.getSignature(function (result, data) {
                 if (result)
-                    this.autoWxLoginService(data,cb);
+                    this.autoWxLoginService(data, cb);
                 else {
                     // console.error("获取签名失败");
                     cb("获取签名失败");
@@ -113,7 +113,7 @@
                 setInterval(function () {
                     PlayerData.serverCurrentTime += 100;
                 }, 100);
-            }else{
+            } else {
                 cb('上下文中没有引入sgt-sdk');
             }
         },
@@ -153,7 +153,7 @@
                                     // console.log("当前用户没有存档");
                                 }
                                 cb();
-                            }else{
+                            } else {
                                 cb('获取存档出错');
                             }
                         });
@@ -210,13 +210,13 @@
             }
         },
         _setAttachments: function (reward, obj) {
-            var unit ;
-            var value ;
-            if(reward.hasOwnProperty('unit')){
+            var unit;
+            var value;
+            if (reward.hasOwnProperty('unit')) {
                 unit = reward["unit"];
                 value = reward["value"];
-            }else{
-                for(var key in reward){
+            } else {
+                for (var key in reward) {
                     unit = key;
                     value = reward[key];
                 }
@@ -228,7 +228,7 @@
             }
         },
         readAndPickAttachment: function (mail, obj, callback) {
-            var rewards = /*JSON.parse*/eval("("+mail.attachment+")");
+            var rewards = /*JSON.parse*/eval("(" + mail.attachment + ")");
             if (rewards instanceof Array) {
                 for (var i in rewards) {
                     this._setAttachments(rewards[i], obj);
@@ -332,21 +332,21 @@
             }
         },
         getCurrentRanksByType: function (leaderId, callback) {
-            if(leaderId === 'pvp_rank'){
-                this.arenaService.getPlayersByIndex([0,1,2,3,4,5,6,7,8,9],'pvp_rank',callback);
-            }else{
+            if (leaderId === 'pvp_rank') {
+                this.arenaService.getPlayersByIndex([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'pvp_rank', callback);
+            } else {
                 SgtApi.LeaderBoardService.getTopLeaderBoardScoreByLeaderId(leaderId, 0, 9, callback);
             }
         }
         ,
         getMyRankByType: function (leaderId, callback) {
-            if(leaderId === 'pvp_rank'){
-                this.arenaService.getIndexFromLeaderBoard('pvp_rank',player.id,callback);
-            }else {
-                SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, player.id, function(result,data){
-                    if(result && cc.isObject(data)){
-                        return callback(true,data.index);
-                    }else{
+            if (leaderId === 'pvp_rank') {
+                this.arenaService.getIndexFromLeaderBoard('pvp_rank', player.id, callback);
+            } else {
+                SgtApi.LeaderBoardService.getLeaderBoardScoreByLeaderIdAndPlayerId(leaderId, player.id, function (result, data) {
+                    if (result && cc.isObject(data)) {
+                        return callback(true, data.index);
+                    } else {
                         return callback(false);
                     }
                 });
@@ -361,9 +361,7 @@
                         if (result2) {
                             sgt.CheckinBoardService.getRewardByCheckinBoardId('h5game', function (result3, data3) {
                                 if (result3) {
-                                    var checkInUnit = new CheckInPanel();
-                                    checkInUnit.initDate(data3, data2);
-                                    GamePopup.openPopup(checkInUnit);
+                                    CheckInPanel.open(data3, data2);
                                 } else {
                                     console.error('sgt.CheckinBoardService.getRewardByCheckinBoardId:' + data3);
                                 }
@@ -421,14 +419,18 @@
             sgt.PlayerService.create(sgtPlayer, function (result, data) {
                 if (result) {
                     //初始化角色存档
-                    PlayerData.modelPlayer = data;
-                    return callback(true);
+                    //异步加载全部资源
+                    cc.loader.load(full_resouces, function () {
+                        localStorage.setItem('mark-sgt-html5-game', 1);
+                        PlayerData.modelPlayer = data;
+                        return callback(true);
+                    });
                 } else {
                     return callback(false);
                 }
             });
         },
-        openNewNameLayer: function (scene,cb) {
+        openNewNameLayer: function (scene, cb) {
             var createPlayer = ccs.csLoader.createNode(res.createPlayer);
             var root = createPlayer.getChildByName('root');
             var dice = root.getChildByName('dice');
@@ -509,17 +511,17 @@
                     //判断当前充值项是否为首冲
                     if (player.vip < 2) {
                         /*if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
-                            amount += obj.chargePoint.firstChargeRewardAmount;
-                        }*/
+                         amount += obj.chargePoint.firstChargeRewardAmount;
+                         }*/
                         //在此只做标示是否充值过。
                         player.vip = 2;
                     }
-                    if(isNaN(player.completed_order_total[obj.chargePoint.id])){
+                    if (isNaN(player.completed_order_total[obj.chargePoint.id])) {
                         if (cc.isNumber(obj.chargePoint.firstChargeRewardAmount) && obj.chargePoint.firstChargeRewardAmount > 0) {
                             amount += obj.chargePoint.firstChargeRewardAmount;
                         }
                         player.completed_order_total[obj.chargePoint.id] = 1;
-                    }else{
+                    } else {
                         player.completed_order_total[obj.chargePoint.id] += 1;
                     }
                     if (obj.chargePoint.type === 'mCard') {
@@ -574,13 +576,13 @@
             SgtApi.MailService.sendMail(mail, callback);
         },
         buildCustomService: function () {
-            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard","pushAndInitTimesIfNecessity", "fightResult", "checkInArena","createArenaChallenge","updateChallenge","getTopChallenges"]);
+            this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard", "pushAndInitTimesIfNecessity", "fightResult", "checkInArena", "createArenaChallenge", "updateChallenge", "getTopChallenges"]);
         },
-        initArenaBattle: function(id,callback){
+        initArenaBattle: function (id, callback) {
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
                 if (result) {
                     if (cc.isObject(data) && data.content) {
-                        return callback(true,JSON.parse(data.content));
+                        return callback(true, JSON.parse(data.content));
                     } else {
                         //没有存档
                         console.log("当前用户没有存档");
@@ -589,93 +591,106 @@
                 }
             });
         },
-        getAnnounceByType: function(type,i,cb){
-            sgt.AnnouncementService.getAllServerAnnounceByType(type,function(result,data){
-                if(result && cc.isObject(data)){
+        getAnnounceByType: function (type, i, cb) {
+            sgt.AnnouncementService.getAllServerAnnounceByType(type, function (result, data) {
+                if (result && cc.isObject(data)) {
                     //if(cc.isObject(PlayerData.announces) && [types[i]])
-                    PlayerData.updateAnnounces(i,data);
+                    PlayerData.updateAnnounces(i, data);
                     cb();
-                }else if(!result){
-                    cb('获取公告出错了',data);
-                }else{
+                } else if (!result) {
+                    cb('获取公告出错了', data);
+                } else {
                     cb();
                 }
             });
         },
-        getAnnounces: function(){
-            var types = [SgtApi.Announcement.ACTIVITY,SgtApi.Announcement.MAINTAIN,SgtApi.Announcement.BULLETIN  ];
+        getAnnounces: function () {
+            var types = [SgtApi.Announcement.ACTIVITY, SgtApi.Announcement.MAINTAIN, SgtApi.Announcement.BULLETIN];
             var tasks = [];
             var self = this;
             /*for(var i in types){
-                var type = types[i];
-                tasks.push(function(cb){
-                    self.getAnnounceByType(type,i,cb);
-                });
-            }*/
-            tasks.push(function(cb){
-                self.getAnnounceByType(types[0],0,cb);
-            },function(cb){
-                self.getAnnounceByType(types[1],1,cb);
-            },function(cb){
-                self.getAnnounceByType(types[2],2,cb);
+             var type = types[i];
+             tasks.push(function(cb){
+             self.getAnnounceByType(type,i,cb);
+             });
+             }*/
+            tasks.push(function (cb) {
+                self.getAnnounceByType(types[0], 0, cb);
+            }, function (cb) {
+                self.getAnnounceByType(types[1], 1, cb);
+            }, function (cb) {
+                self.getAnnounceByType(types[2], 2, cb);
             });
             return tasks;
         },
-        redeemAndGetReward: function(giftCode){
-            SgtApi.GiftCodeService.redeem(player.id,giftCode,function(result,data){
-                if(result){
-                    if(cc.isString(data)){
+        redeemAndGetReward: function (giftCode) {
+            SgtApi.GiftCodeService.redeem(player.id, giftCode, function (result, data) {
+                if (result) {
+                    if (cc.isString(data)) {
                         data = JSON.parse(data);
                         tip.toggle(formatResourceToString(data));
                         PlayerData.updateResource(data);
-                        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE,data);
+                        customEventHelper.sendEvent(EVENT.UPDATE_RESOURCE, data);
                         PlayerData.isUpdate = true;
                         this.updatePlayerSave();
-                    }else{
+                    } else {
                         //没有礼包
                     }
                     return true;
-                }else{
+                } else {
                     tip.toggle(data);
                     return false;
                 }
             }.bind(this));
         },
-        getServerList: function(isAuto,cb){
-            if(isAuto){
+        getServerList: function (isAuto, cb) {
+            if (isAuto) {
                 var servers = PlayerData.getLocalServerList();
-                if(cc.isArray(servers) && servers.length > 0){
+                if (cc.isArray(servers) && servers.length > 0) {
                     return cb();
                     //return servers[servers.length-1];
                 }
             }
 
-            SgtApi.RouterService.getServerList(function(result,data){
-                if(result){
-                    if(cc.isArray(data)){
+            SgtApi.RouterService.getServerList(function (result, data) {
+                if (result) {
+                    if (cc.isArray(data)) {
                         PlayerData.servers = data;
                     }
                     cb();
-                }else{
+                } else {
                     cb('获取服务器列表出错');
                 }
             })
         },
-        setServerInfo: function(server){
+        setServerInfo: function (server) {
             console.log(JSON.stringify(server));
             SgtApi.context.server = server;
-            SgtApi.CreateServices();
         },
-        updateLocalServerList: function(){
+        updateLocalServerList: function () {
             var servers = PlayerData.getLocalServerList();
             var i = servers.indexOf(SgtApi.context.server);
             //更新排序
-            if(i != -1){
-                servers.splice(i,1);
+            if (i != -1) {
+                servers.splice(i, 1);
             }
             servers.push(SgtApi.context.server);
-            localStorage.setItem("sgt-html5-game-announce-servers",JSON.stringify(servers));
+            localStorage.setItem("sgt-html5-game-announce-servers", JSON.stringify(servers));
         },
+        //手动获取所有服务器数据
+        getAllServer: function (cb) {
+            if (typeof(PlayerData.servers) === 'undefined') {
+                Network.getServerList(false, function (result) {
+                    if (result) {
+                        cb('当前应用没有服务器');
+                    } else {
+                        cb();
+                    }
+                });
+            } else {
+                cb();
+            }
+        }
 
     };
     window.Network = new NetworkResolve();

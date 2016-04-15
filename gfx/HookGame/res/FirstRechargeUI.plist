@@ -18,18 +18,18 @@
 			<key>firstRechargeUI/any.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{529,86},{210,76}}</string>
+				<string>{{392,86},{210,76}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{210,76}</string>
 			</dict>
 			<key>firstRechargeUI/chong.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{392,214},{73,69}}</string>
+				<string>{{602,86},{73,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,18 +51,18 @@
 			<key>firstRechargeUI/popo.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{392,86},{137,128}}</string>
+				<string>{{392,183},{137,128}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{137,128}</string>
 			</dict>
 			<key>firstRechargeUI/song.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{392,283},{72,69}}</string>
+				<string>{{602,155},{72,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>

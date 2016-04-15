@@ -472,18 +472,25 @@ function showCover() {
             loginBtn.setEnabled(true);
             loginBtn.setBright(true);
             chooseBtn.setVisible(true);
-            chooseBtn.setTouchEnabled(false);
             var server ;
             if(PlayerData.servers){
-                server = PlayerData.servers[PlayerData.servers.length-1];
+                server = PlayerData.servers[0];
+                full.setVisible(false);
                 state.setVisible(true);
             }else{
                 var servers = PlayerData.getLocalServerList();
                 server = servers[servers.length-1];
                 state.setVisible(false);
+                full.setVisible(true);
             }
             Network.setServerInfo(server);
             text.setString(server.name);
+            chooseBtn.setTouchEnabled(false);
+            list_btn.setTouchEnabled(false);
+            bindTouchEventListener(function(){
+                ChooseServerPanel.open(chooseBtn);
+                return true;
+            },chooseBtn);
         }
     });
     tipTemplate = ccs.load(res.tips).node.getChildByName("root");
@@ -493,17 +500,16 @@ function showCover() {
     var text = chooseBtn.getChildByName('text');
     var state = chooseBtn.getChildByName('state');
     var list_btn = chooseBtn.getChildByName('list_btn');
+    var full = chooseBtn.getChildByName('full');
+
     chooseBtn.setVisible(false);
-    bindTouchEventListener(function(){
+    /*bindButtonCallback(list_btn,function(){
         ChooseServerPanel.open();
-        return true;
-    },chooseBtn);
-    bindButtonCallback(list_btn,function(){
-        ChooseServerPanel.open();
-    });
+    });*/
     loginBtn.setEnabled(false);
     loginBtn.setBright(false);
     bindButtonCallback(loginBtn, function () {
+        SgtApi.CreateServices();
         Network.updateLocalServerList();
         Network.getPlayerSave(function(result){
             if(result){
