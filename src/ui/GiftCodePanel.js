@@ -6,7 +6,7 @@ var GiftCodePanel = cc.Node.extend({
         this._super();
         this.giftCodeLayer = ccs.csLoader.createNode(res.gift_code_layer_json);
         var root = this.giftCodeLayer.getChildByName('root');
-        root.setPosition(cc.p(0,360));
+        //root.setPosition(cc.p(0,360));
         var close = root.getChildByName('close_btn').getChildByName('root').getChildByName('close');
         var getBtn = root.getChildByName('get_btn').getChildByName('btn');
 

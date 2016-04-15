@@ -371,8 +371,8 @@
                   "Path": "rechargeUI/pic.png",
                   "Plist": "OtherUI.plist"
                 },
-                "Scale9Width": 640,
-                "Scale9Height": 195,
+                "Scale9Width": 425,
+                "Scale9Height": 81,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 18.4632,
@@ -406,26 +406,20 @@
                 "ctype": "ImageViewObjectData"
               },
               {
-                "FontSize": 20,
-                "LabelText": "当前的VIP信息",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "rechargeUI/pic_text.png",
+                  "Plist": "OtherUI.plist"
                 },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 272,
+                "Scale9Height": 68,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 301.3808,
-                  "Y": 649.8675
+                  "X": 404.6448,
+                  "Y": 652.061
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -434,25 +428,26 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4861,
-                  "Y": 0.8123
+                  "X": 0.6527,
+                  "Y": 0.8151
                 },
                 "PreSize": {
-                  "X": 0.2097,
-                  "Y": 0.025
+                  "X": 0.4387,
+                  "Y": 0.085
                 },
-                "LeftMargin": 236.3808,
-                "RightMargin": 253.6192,
-                "TopMargin": 140.1325,
-                "BottomMargin": 639.8675,
-                "Tag": 397,
-                "ActionTag": -219201916,
+                "LeftMargin": 268.6448,
+                "RightMargin": 79.3552,
+                "TopMargin": 113.939,
+                "BottomMargin": 618.061,
+                "CallBackType": "Click",
+                "Tag": 597,
+                "ActionTag": 152425185,
                 "Size": {
-                  "X": 130.0,
-                  "Y": 20.0
+                  "X": 272.0,
+                  "Y": 68.0
                 },
                 "Name": "text",
-                "ctype": "TextObjectData"
+                "ctype": "ImageViewObjectData"
               },
               {
                 "BackColorAlpha": 102,

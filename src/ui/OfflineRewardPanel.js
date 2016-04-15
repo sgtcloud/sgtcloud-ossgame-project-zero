@@ -4,9 +4,9 @@
 var OfflineRewardPanel = cc.Node.extend({
     ctor: function (btn) {
         this._super();
-        var offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
+        this.offlineRewardLayer = ccs.csLoader.createNode(res.offline_reward_layer);
 
-        var offlineRewardLayerRoot = offlineRewardLayer.getChildByName('root');
+        var offlineRewardLayerRoot = this.offlineRewardLayer.getChildByName('root');
         var offlineRewardLayerBtn = offlineRewardLayerRoot.getChildByName('btn').getChildByName('offline_btn');
 
         var offlineRewardLayerBox = offlineRewardLayerRoot.getChildByName('box');
@@ -30,10 +30,17 @@ var OfflineRewardPanel = cc.Node.extend({
         }
         bindButtonCallback(offlineRewardLayerBtn, function () {
             btn.visible = false;
-            GamePopup.closePopup(this);
+            GamePopup.closePopup(this.offlineRewardLayer);
             PlayerData.receiveOfflineReward();
             PlayerData.updatePlayer();
         }.bind(this));
-        this.addChild(offlineRewardLayer);
+        //this.addChild(this.offlineRewardLayer);
+    },
+    openOfflineRewardPopup: function(){
+        GamePopup.openPopup(this.offlineRewardLayer);
     }
 });
+OfflineRewardPanel.open = function(rewardBtn){
+    var offline = new OfflineRewardPanel(rewardBtn);
+    offline.openOfflineRewardPopup();
+};

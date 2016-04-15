@@ -32,13 +32,15 @@ var BattlePanel = cc.Node.extend({
         this.statistics_btn = root.getChildByName("statistics_btn");
         bindButtonCallback(this.statistics_btn, function () {
             //customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE);
-            GamePopup.openPopup(new StatisticsPanel(), cc.p(320, 580), false);
+            //GamePopup.openPopup(new StatisticsPanel(), /*cc.p(320, 580)*/null, false);
+            StatisticsPanel.open();
         }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
 
         bindButtonCallback(this.rewardBtn, function () {
             //open offlineReward popup
-            GamePopup.openPopup(new OfflineRewardPanel(this.rewardBtn));
+            /*GamePopup.openPopup(new OfflineRewardPanel(this.rewardBtn));*/
+            OfflineRewardPanel.open(this.rewardBtn);
         }.bind(this));
         this.loadRewardBtn();
 
@@ -48,7 +50,8 @@ var BattlePanel = cc.Node.extend({
 
         this.pack_btn = root.getChildByName('pack_btn');
         bindButtonCallback(this.pack_btn, function () {
-            GamePopup.openPopup(new PackUnit(), cc.p(320, 580), false);
+            //GamePopup.openPopup(new PackUnit(), null/*cc.p(320, 580)*/, false);
+            PackUnit.open();
         }.bind(this));
 
         this.mail_btn = root.getChildByName('maill_btn');
@@ -77,7 +80,7 @@ var BattlePanel = cc.Node.extend({
         bindButtonCallback(this.giftCodeBtn, function () {
             GiftCodePanel.open();
         }.bind(this));
-
+        var scale = this.pack_btn.scale;
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
@@ -86,14 +89,12 @@ var BattlePanel = cc.Node.extend({
             if (resources instanceof Array) {
                 for (var i = 0; i < resources.length; i++) {
                     if(cc.isNumber(resources[i].value) && resources[i].value > 0 ){
-                        var scale = this.pack_btn.scale;
                         this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
                         break;
                     }
                 }
             } else {
                 if(cc.isNumber(resources.value) && resources.value > 0 ){
-                    var scale = this.pack_btn.scale;
                     this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
                 }
             }

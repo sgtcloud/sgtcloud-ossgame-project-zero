@@ -380,21 +380,5 @@ var PlayerDataClass = cc.Class.extend({
     getLocalServerList: function(){
         return JSON.parse(localStorage.getItem("sgt-html5-game-announce-servers")) || [];
     }
-    ,
-    getAllServer: function(){
-        if(typeof(PlayerData.servers) === 'undefined'){
-            Network.getServerList(false,function(result){
-                if(result){
-                    return [];
-                }else{
-                    return PlayerData.servers;
-                }
-            });
-        }else{
-            return PlayerData.servers;
-        }
-    }
-
-
 
 });

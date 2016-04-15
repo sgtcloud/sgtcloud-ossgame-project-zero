@@ -2,7 +2,7 @@ var GamePopup = cc.Layer.extend({
     _listener: null,
     ctor: function(layer,pos,isSwallow) {
         this._super();
-        this.ignoreAnchorPointForPosition(false);   //忽略锚点设置为false，默认为true，锚点(0, 0)
+        this.setAnchorPoint(cc.p(0,0));
         if(typeof isSwallow === 'undefined'){
             this.isSwallow = true;
         }else{
@@ -15,19 +15,21 @@ var GamePopup = cc.Layer.extend({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
             swallowTouches: true,
             onTouchBegan: function (touch, event) {
-                var locationInNode = self.target.convertToNodeSpace(touch.getLocation());
+                var locationInNode = self/*.target*/.convertToNodeSpace(touch.getLocation());
                 var s = self.target.getContentSize();
-                var rect = cc.rect(0, 0, s.width, s.height);
+                var rect = cc.rect(self.target.x, self.target.y, s.width, s.height);
                 if (!self.isSwallow && !cc.rectContainsPoint(rect, locationInNode)) {
-                    self.target.removeFromParent();
-                    self.removeFromParent();
-                    return false;
+                    scheduleOnce(this,function(){
+                        self.target.removeFromParent();
+                        self.removeFromParent();
+                    },0.1);
+                    return true;
                 }
                 return true;
             }
         });
         //添加触摸监听
-        cc.eventManager.addListener(this._listener, this.target);
+        cc.eventManager.addListener(this._listener, this);
         //初始化对话框
         this._initDialog();
     },
@@ -39,11 +41,13 @@ var GamePopup = cc.Layer.extend({
             this.target.setPosition(this.pos);
         }else{
             //背景
-            this.target.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
+            this.target.setPosition(cc.p((this.width-this.target.width) / 2, (this.height-this.target.height) / 2));
         }
         this._colorLayer = new cc.LayerColor(cc.color.BLACK, 640, 960);
-        this._colorLayer.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
+        this._colorLayer.setPosition(cc.p(0,0));
+        this.setAnchorPoint(cc.p(0,0));
         this._colorLayer.setOpacity(150);
+        //this._listener.setSwallowTouches(true);
         this.addChild(this._colorLayer,0);
         this.addChild(this.target,1);
     }
