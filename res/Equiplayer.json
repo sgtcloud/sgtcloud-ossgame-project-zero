@@ -55,12 +55,12 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_24.png",
+                  "Path": "mainUI/bg_01.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 27,
-                "Scale9OriginY": 27,
+                "Scale9OriginX": 25,
+                "Scale9OriginY": 25,
                 "Scale9Width": 28,
                 "Scale9Height": 28,
                 "AnchorPoint": {},
@@ -477,7 +477,7 @@
         "EquipUI.png",
         "HeroUI.plist",
         "HeroUI.png",
-        "mainUI/bg_24.png"
+        "mainUI/bg_01.png"
       ],
       "ctype": "GameFileData"
     }
