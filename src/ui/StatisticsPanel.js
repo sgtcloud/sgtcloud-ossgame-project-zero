@@ -65,6 +65,12 @@ var StatisticsPanel = cc.Node.extend({
         total_boss_kill.setString(this.convert(player.statistics.total_boss_kill));
         total_max_level.setString(this.convert(player.statistics.total_max_level));
         //this.setPosition(cc.p(0,100));
-        this.addChild(this.statisticsLayer);
+    },
+    openStatisticsPopup: function(){
+        GamePopup.openPopup(this.statisticsLayer,null,false);
     }
 });
+StatisticsPanel.open = function(){
+    var statistics = new StatisticsPanel();
+    statistics.openStatisticsPopup();
+}

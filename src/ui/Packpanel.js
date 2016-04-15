@@ -92,6 +92,14 @@ var PackUnit = cc.Node.extend({
             this.refreshAll();
         }.bind(this));
         this.refreshAll();
-        this.addChild(this.packLayer);
+    },
+    openPackPanalPopup: function(){
+        GamePopup.openPopup(this.packLayer,null,false);
     }
+
+
 });
+PackUnit.open = function(){
+    var pack = new PackUnit();
+    pack.openPackPanalPopup();
+}

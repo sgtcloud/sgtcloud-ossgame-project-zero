@@ -4,10 +4,10 @@
 var CheckInPanel = cc.Node.extend({
     ctor: function () {
         this._super();
-        this.setName('checkInPanel');
         this.signLayer = ccs.csLoader.createNode(res.sign_layer);
         this.signIcon = ccs.csLoader.createNode(res.sign_icon);
         this.signView = ccs.csLoader.createNode(res.sign_view);
+        this.signLayer.setName('checkInPanel');
     },
     initDate: function (rewards, accumulateCount) {
         if (!rewards) {
@@ -60,12 +60,20 @@ var CheckInPanel = cc.Node.extend({
                 signViewRootClone = signViewRoot.clone();
             }
         }
-        this.signLayer.setPosition(cc.p(20, 240));
-        this.addChild(this.signLayer);
+        //this.signLayer.setPosition(cc.p(20, 240));
+        //this.addChild(this.signLayer);
     },
     addIconClickEventListener: function (icon, image2, image3, data) {
         icon.addClickEventListener(function () {
-            Network.checkin(icon, image2, image3, data.bonus,this);
+            Network.checkin(icon, image2, image3, data.bonus,this.signLayer);
         }.bind(this));
     },
+    openCheckInPopup: function(){
+        GamePopup.openPopup(this.signLayer);
+    }
 });
+CheckInPanel.open = function(data3, data2){
+    var checkInUnit = new CheckInPanel();
+    checkInUnit.initDate(data3, data2);
+    checkInUnit.openCheckInPopup();
+}

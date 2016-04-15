@@ -139,7 +139,7 @@ var MailPanel = cc.Node.extend({
         }
     },
     openMailPopup: function () {
-        GamePopup.openPopup(this.mailLayer, cc.p(335, 585),false);
+        GamePopup.openPopup(this.mailLayer, null/*cc.p(335, 585)*/,false);
     },
     hiddenMailPopup: function () {
         GamePopup.closePopup(this.mailLayer);

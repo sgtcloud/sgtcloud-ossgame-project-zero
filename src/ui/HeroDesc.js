@@ -33,7 +33,7 @@ var HeroDesc = cc.Node.extend({
         var ctrChanceText = heroProperty.getChildByName('ctr_chance_text');
         var ctrModifyText = heroProperty.getChildByName('ctr_modify_text');
 
-        setIgnoreContentAdaptWithSize([atkText,tapText,lifeText,atkPeriodText,ctrChanceText,ctrModifyText])
+        setIgnoreContentAdaptWithSize([atkText,tapText,lifeText,atkPeriodText,ctrChanceText,ctrModifyText]);
         icon.loadTexture("res/icon/heroes/" + hero.getIcon());
         heroName_text.setString(hero.getName());
         lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
