@@ -220,7 +220,7 @@ var HeroListMenu = ListViewMenu.extend({
         var difLv = maxLevel - lv;
         if (difLv >= upObj.lv && !validateAmountNotEnough2(target, upObj.lv)) {
             upObj.layer.setVisible(true);
-            upObj.layer.stopAllActions();
+            upObj.layer.stopActionByTag(upObj.layer.getTag());
             if (!upObj.move) {
                 this._runAction({'node': upObj.layer, 'pos': upObj.slideOut});
                 upObj.move = true;
@@ -230,7 +230,7 @@ var HeroListMenu = ListViewMenu.extend({
     }, _continuUpIn2: function (upObj) {
         if (upObj.move) {
             this._runAction({
-                'node': upObj.layer, 'pos': upObj.slideIn, 'time': 5.0, 'cb': function () {
+                'node': upObj.layer, 'pos': upObj.slideIn, 'time': 5.0,tag:upObj.layer.getTag(), 'cb': function () {
                     upObj.move = false;
                 }
             });
@@ -453,6 +453,9 @@ var HeroListMenu = ListViewMenu.extend({
                 seq.push(cc.callFunc(cb.bind(this)));
             }
             var sequence = cc.sequence(seq);
+            if(args[i]['tag']){
+                sequence.setTag(args[i]['tag']);
+            }
             args[i]['node'].runAction(sequence);
         }
     },
