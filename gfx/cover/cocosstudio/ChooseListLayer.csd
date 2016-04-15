@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="coverUI/list_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/list_bg.png" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="list" ActionTag="-2115972802" Tag="4" IconVisible="False" LeftMargin="30.0000" RightMargin="30.0000" TopMargin="30.0000" BottomMargin="30.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
                 <Size X="300.0000" Y="480.0000" />

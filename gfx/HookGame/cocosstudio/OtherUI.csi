@@ -41,6 +41,8 @@
       <FilePathData Path="other/code_title.png" />
       <FilePathData Path="other/notice_title.png" />
       <FilePathData Path="other/text.png" />
+      <FilePathData Path="rechargeUI/pic_text.png" />
+      <FilePathData Path="other/small.png" />
     </ImageFiles>
     <MaxSize Width="800" Height="800" />
   </Content>

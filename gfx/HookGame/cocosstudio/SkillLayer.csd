@@ -9,7 +9,7 @@
           <AbstractNodeData Name="root" ActionTag="-1011955371" Tag="508" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="240.0000" />
             <Children>
-              <AbstractNodeData Name="skillLayer_bg" ActionTag="175827818" Alpha="153" Tag="92" IconVisible="False" Scale9Enable="True" LeftEage="30" RightEage="30" TopEage="30" BottomEage="30" Scale9OriginX="30" Scale9OriginY="30" Scale9Width="32" Scale9Height="32" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="skillLayer_bg" ActionTag="1930903192" Tag="27" IconVisible="False" Scale9Enable="True" LeftEage="27" RightEage="27" TopEage="27" BottomEage="27" Scale9OriginX="27" Scale9OriginY="27" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="240.0000" />
                 <AnchorPoint />
                 <Position />
@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="mainUI/bg_23.png" Plist="" />
+                <FileData Type="Normal" Path="mainUI/bg_24.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="atk" ActionTag="-966206276" CallBackType="Click" Tag="170" IconVisible="False" LeftMargin="9.7591" RightMargin="499.2409" TopMargin="10.0951" BottomMargin="202.9049" Scale9Width="131" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="131.0000" Y="27.0000" />

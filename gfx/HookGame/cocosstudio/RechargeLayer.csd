@@ -79,7 +79,7 @@
                 <PreSize X="0.9355" Y="0.6250" />
                 <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_41" ActionTag="1223335582" Tag="332" IconVisible="False" LeftMargin="18.4632" RightMargin="35.5368" TopMargin="94.4749" BottomMargin="599.5251" Scale9Width="640" Scale9Height="195" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_41" ActionTag="1223335582" Tag="332" IconVisible="False" LeftMargin="18.4632" RightMargin="35.5368" TopMargin="94.4749" BottomMargin="599.5251" Scale9Width="425" Scale9Height="81" ctype="ImageViewObjectData">
                 <Size X="566.0000" Y="106.0000" />
                 <AnchorPoint />
                 <Position X="18.4632" Y="599.5251" />
@@ -89,16 +89,15 @@
                 <PreSize X="0.9129" Y="0.1325" />
                 <FileData Type="MarkedSubImage" Path="rechargeUI/pic.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="text" ActionTag="-219201916" Tag="397" IconVisible="False" LeftMargin="236.3808" RightMargin="253.6192" TopMargin="140.1325" BottomMargin="639.8675" FontSize="20" LabelText="当前的VIP信息" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="130.0000" Y="20.0000" />
+              <AbstractNodeData Name="text" ActionTag="152425185" CallBackType="Click" Tag="597" IconVisible="False" LeftMargin="268.6448" RightMargin="79.3552" TopMargin="113.9390" BottomMargin="618.0610" Scale9Width="272" Scale9Height="68" ctype="ImageViewObjectData">
+                <Size X="272.0000" Y="68.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="301.3808" Y="649.8675" />
+                <Position X="404.6448" Y="652.0610" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4861" Y="0.8123" />
-                <PreSize X="0.2097" Y="0.0250" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.6527" Y="0.8151" />
+                <PreSize X="0.4387" Y="0.0850" />
+                <FileData Type="MarkedSubImage" Path="rechargeUI/pic_text.png" Plist="OtherUI.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="box" ActionTag="-1348626573" Tag="177" IconVisible="False" LeftMargin="20.0000" RightMargin="40.0000" TopMargin="224.0000" BottomMargin="96.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="560.0000" Y="480.0000" />

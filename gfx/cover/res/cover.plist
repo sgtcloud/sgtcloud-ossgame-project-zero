@@ -7,7 +7,7 @@
 			<key>coverUI/bg_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1251,912},{28,36}}</string>
+				<string>{{1252,912},{28,36}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>coverUI/bg_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1235,958},{31,32}}</string>
+				<string>{{1245,1101},{31,32}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>coverUI/bg_14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1203,958},{32,47}}</string>
+				<string>{{1247,1054},{32,47}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>coverUI/btn1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1244,1265},{100,100}}</string>
+				<string>{{1103,1651},{100,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>coverUI/btn2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1344,1265},{100,100}}</string>
+				<string>{{1203,1651},{100,100}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -216,7 +216,7 @@
 			<key>coverSprite/effect/boom05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1372,2151},{281,220}}</string>
+				<string>{{1222,1971},{281,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -227,7 +227,7 @@
 			<key>coverSprite/effect/boom06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1451,1265},{281,220}}</string>
+				<string>{{1285,1751},{281,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -238,7 +238,7 @@
 			<key>coverSprite/effect/boom07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1285,1729},{281,220}}</string>
+				<string>{{1503,1971},{281,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -249,7 +249,7 @@
 			<key>coverSprite/effect/boom08.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1560,1485},{281,220}}</string>
+				<string>{{1566,1722},{281,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -260,7 +260,7 @@
 			<key>coverSprite/effect/boom09.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1732,1265},{281,220}}</string>
+				<string>{{1784,1942},{281,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -282,7 +282,7 @@
 			<key>coverSprite/effect/effect04_01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1009,1971},{93,129}}</string>
+				<string>{{1036,1971},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -293,7 +293,7 @@
 			<key>coverSprite/effect/effect04_02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1102,1971},{93,129}}</string>
+				<string>{{1129,1971},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -304,7 +304,7 @@
 			<key>coverSprite/effect/effect04_03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1832,1705},{93,129}}</string>
+				<string>{{1618,1529},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -315,7 +315,7 @@
 			<key>coverSprite/effect/effect04_04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1841,1485},{93,129}}</string>
+				<string>{{1711,1529},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -326,7 +326,7 @@
 			<key>coverSprite/effect/effect04_06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1810,2068},{93,129}}</string>
+				<string>{{1765,1265},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -337,7 +337,7 @@
 			<key>coverSprite/effect/effect04_07.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1810,2197},{93,129}}</string>
+				<string>{{1765,1394},{93,129}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -392,7 +392,7 @@
 			<key>coverSprite/effect/effect05_05.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1653,2122},{157,190}}</string>
+				<string>{{1451,1339},{157,190}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -403,7 +403,7 @@
 			<key>coverSprite/effect/effect05_06.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1761,1878},{157,190}}</string>
+				<string>{{1608,1339},{157,190}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -414,7 +414,7 @@
 			<key>coverSprite/effect/empty.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1203,912},{48,46}}</string>
+				<string>{{1203,1008},{48,46}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -557,7 +557,7 @@
 			<key>coverSprite/other/btn_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1495,1949},{266,173}}</string>
+				<string>{{1352,1549},{266,173}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -568,7 +568,7 @@
 			<key>coverSprite/other/btn_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1566,1705},{266,173}}</string>
+				<string>{{1972,2162},{266,173}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -579,7 +579,7 @@
 			<key>coverSprite/other/btn01.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{825,2033},{184,74}}</string>
+				<string>{{919,1677},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -590,7 +590,7 @@
 			<key>coverSprite/other/btn02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1003,2107},{184,74}}</string>
+				<string>{{1076,1577},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -601,7 +601,7 @@
 			<key>coverSprite/other/btn03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{919,1677},{184,74}}</string>
+				<string>{{1244,1265},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -612,7 +612,7 @@
 			<key>coverSprite/other/btn04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1076,1577},{184,74}}</string>
+				<string>{{1428,1265},{184,74}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -634,7 +634,7 @@
 			<key>coverSprite/other/logo02.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1072,2181},{300,180}}</string>
+				<string>{{1072,2197},{300,180}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -645,7 +645,7 @@
 			<key>coverSprite/other/logo03.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1260,1549},{300,180}}</string>
+				<string>{{1372,2191},{300,180}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -656,7 +656,7 @@
 			<key>coverSprite/other/logo04.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1195,1971},{300,180}}</string>
+				<string>{{1672,2191},{300,180}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -675,6 +675,94 @@
 				<key>sourceSize</key>
 				<string>{330,210}</string>
 			</dict>
+			<key>coverUI/current.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1003,2118},{214,79}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{214,79}</string>
+			</dict>
+			<key>coverUI/full.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,1098},{42,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{42,40}</string>
+			</dict>
+			<key>coverUI/list_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1260,1549},{92,92}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{92,92}</string>
+			</dict>
+			<key>coverUI/list_btn_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,912},{49,48}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{49,48}</string>
+			</dict>
+			<key>coverUI/list_btn_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,960},{49,48}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{49,48}</string>
+			</dict>
+			<key>coverUI/list_view_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{825,2033},{211,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{211,85}</string>
+			</dict>
+			<key>coverUI/new.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,1138},{42,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{42,40}</string>
+			</dict>
+			<key>coverUI/player.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1203,1054},{44,44}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{44,44}</string>
+			</dict>
 		</dict>
 		<key>metadata</key>
 		<dict>
@@ -685,14 +773,14 @@
 			<key>realTextureFileName</key>
 			<string>cover.png</string>
 			<key>size</key>
-			<string>{2013,2371}</string>
+			<string>{2238,2377}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>2013</integer>
+			<integer>2238</integer>
 			<key>height</key>
-			<integer>2371</integer>
+			<integer>2377</integer>
 		</dict>
 	</dict>
 </plist>

@@ -63,6 +63,14 @@
       <FilePathData Path="coverSprite/other/logo03.png" />
       <FilePathData Path="coverSprite/other/logo04.png" />
       <FilePathData Path="coverSprite/other/logo05.png" />
+      <FilePathData Path="coverUI/current.png" />
+      <FilePathData Path="coverUI/full.png" />
+      <FilePathData Path="coverUI/list_bg.png" />
+      <FilePathData Path="coverUI/list_btn_1.png" />
+      <FilePathData Path="coverUI/list_btn_2.png" />
+      <FilePathData Path="coverUI/list_view_bg.png" />
+      <FilePathData Path="coverUI/new.png" />
+      <FilePathData Path="coverUI/player.png" />
     </ImageFiles>
     <MaxSize Width="2400" Height="2400" />
   </Content>

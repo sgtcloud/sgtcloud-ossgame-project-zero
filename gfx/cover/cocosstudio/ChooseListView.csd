@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="coverUI/list_view_bg.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/list_view_bg.png" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="current_bg" ActionTag="-41318776" Tag="94" IconVisible="False" Scale9Enable="True" LeftEage="70" RightEage="70" TopEage="26" BottomEage="26" Scale9OriginX="70" Scale9OriginY="26" Scale9Width="74" Scale9Height="27" ctype="ImageViewObjectData">
                 <Size X="300.0000" Y="60.0000" />
@@ -27,7 +27,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="coverUI/current.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/current.png" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="text" ActionTag="-1934137043" Tag="91" IconVisible="False" LeftMargin="57.5932" RightMargin="62.4068" TopMargin="9.9542" BottomMargin="10.0458" IsCustomSize="True" FontSize="24" LabelText="指尖骑士999区" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="180.0000" Y="40.0000" />
@@ -48,7 +48,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1089" Y="0.5281" />
                 <PreSize X="0.1400" Y="0.6667" />
-                <FileData Type="Normal" Path="coverUI/new.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/new.png" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="state_full" ActionTag="417872429" Tag="95" IconVisible="False" LeftMargin="11.4994" RightMargin="246.5006" TopMargin="9.5892" BottomMargin="10.4108" Scale9Width="42" Scale9Height="40" ctype="ImageViewObjectData">
                 <Size X="42.0000" Y="40.0000" />
@@ -58,7 +58,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1083" Y="0.5068" />
                 <PreSize X="0.1400" Y="0.6667" />
-                <FileData Type="Normal" Path="coverUI/full.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/full.png" Plist="cover.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="player" ActionTag="705347582" Tag="92" IconVisible="False" LeftMargin="243.5320" RightMargin="12.4680" TopMargin="8.5286" BottomMargin="7.4714" Scale9Width="44" Scale9Height="44" ctype="ImageViewObjectData">
                 <Size X="44.0000" Y="44.0000" />
@@ -68,7 +68,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.8851" Y="0.4912" />
                 <PreSize X="0.1467" Y="0.7333" />
-                <FileData Type="Normal" Path="coverUI/player.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="coverUI/player.png" Plist="cover.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
