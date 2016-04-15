@@ -10,7 +10,7 @@
     <meta name="screen-orientation" content="portrait"/>
     <meta name="x5-fullscreen" content="true"/>
     <meta name="360-fullscreen" content="true"/>
-    <style>
+    <style type="text/css">
         body, canvas, div {
             -moz-user-select: none;
             -webkit-user-select: none;
@@ -20,30 +20,17 @@
         }
     </style>
 </head>
-<body style="padding:0; margin: 0; background: #000;">
+<body style="padding:0; margin: 0; background: #000000;">
+<div class="cocosLoading" id="cocosLoading"
+     style="background-color: #f6f6f6;position: absolute;top: 0;bottom: 0;left: 0;right: 0;text-align: center;">
+    <img src="res/logo.png"
+         style="width: 50%;top:40%;left: 50%;margin-right: -50%;transform: translate(-50%,-50%);position: absolute;"/>
+</div>
 <canvas id="gameCanvas" width="640" height="960"></canvas>
 </body>
 </html>
-<!--<script src="res/loading.js"></script>-->
-<script>
-    (function () {
-        var nav = window.navigator;
-        var ua = nav.userAgent.toLowerCase();
-        var uaResult = /android (\d+(?:\.\d+)+)/i.exec(ua) || /android (\d+(?:\.\d+)+)/i.exec(nav.platform);
-        if (uaResult) {
-            var osVersion = parseInt(uaResult[1]) || 0;
-            var browserCheck = ua.match(/(qzone|micromessenger|qqbrowser)/i);
-            if (browserCheck) {
-                var gameCanvas = document.getElementById("gameCanvas");
-                var ctx = gameCanvas.getContext('2d');
-                ctx.fillStyle = '#000000';
-                ctx.fillRect(0, 0, 1, 1);
-            }
-        }
-    })();
-</script>
-<script src="//cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
-<script>
+<script src="http://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+<script type="text/javascript">
     var opts = {
         lines: 13 // The number of lines to draw
         , length: 28 // The length of each line
@@ -66,18 +53,37 @@
         , hwaccel: true // Whether to use hardware acceleration
         , position: 'absolute' // Element positioning
     }
-    var div = document.createElement("div");
-    div.className = "cocosLoading";
-    div.id = "cocosLoading";
-    div.style = "background-color: #f6f6f6;position: absolute;top: 0;bottom: 0;left: 0;right: 0;text-align: center;";
-    var loadingIcon = document.createElement("img");
-    loadingIcon.src = "res/logo.png";
-    loadingIcon.style = "width: 50%;top:40%;left: 50%;margin-right: -50%;transform: translate(-50%,-50%);position: absolute;";
-    div.appendChild(loadingIcon);
-    document.body.appendChild(div);
+    //    var div = document.createElement("div");
+    //    div.className = "cocosLoading";
+    //    div.id = "cocosLoading";
+    //    div.style = "background-color: #f6f6f6;position: absolute;top: 0;bottom: 0;left: 0;right: 0;text-align: center;";
+    //    var loadingIcon = document.createElement("img");
+    //    loadingIcon.src = "res/logo.png";
+    //    loadingIcon.style = "width: 50%;top:40%;left: 50%;margin-right: -50%;transform: translate(-50%,-50%);position: absolute;";
+    //    div.appendChild(loadingIcon);
+    //    document.body.appendChild(div);
+    var div = document.getElementById("cocosLoading");
     var spinner = new Spinner(opts).spin(div);
 </script>
-<script  type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script  type="text/javascript" src="https://www.sgtcloud.cn/dist/sgtcloud-html5-sdk.2.1.5.9.min.js"></script>
+<!--<script src="res/loading.js"></script>-->
+<script>
+    (function () {
+        var nav = window.navigator;
+        var ua = nav.userAgent.toLowerCase();
+        var uaResult = /android (\d+(?:\.\d+)+)/i.exec(ua) || /android (\d+(?:\.\d+)+)/i.exec(nav.platform);
+        if (uaResult) {
+            var osVersion = parseInt(uaResult[1]) || 0;
+            var browserCheck = ua.match(/(qzone|micromessenger|qqbrowser)/i);
+            if (browserCheck) {
+                var gameCanvas = document.getElementById("gameCanvas");
+                var ctx = gameCanvas.getContext('2d');
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, 1, 1);
+            }
+        }
+    })();
+</script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="https://www.sgtcloud.cn/dist/sgtcloud-html5-sdk.2.1.5.9.min.js"></script>
 <script src="frameworks/cocos2d-html5/CCBoot.js"></script>
 <script cocos src="main.js"></script>

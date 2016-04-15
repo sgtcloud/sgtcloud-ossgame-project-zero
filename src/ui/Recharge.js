@@ -12,7 +12,7 @@ var RechargePanel = cc.Node.extend({
         this.items = root.getChildByName('box');
         //this.items.setTouchEnabled(false);
         var closeBtn = root.getChildByName('close_btn').getChildByName('root').getChildByName('close');
-        vipText.setString('敬请期待');
+        //vipText.setString('敬请期待');
         for (var i = 0; i <CONSTS.chargePoints.length; i++) {
             this.setElement(CONSTS.chargePoints[i],i);
         }

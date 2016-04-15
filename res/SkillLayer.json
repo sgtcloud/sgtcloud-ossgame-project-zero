@@ -55,14 +55,14 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bg_23.png",
+                  "Path": "mainUI/bg_24.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 30,
-                "Scale9OriginY": 30,
-                "Scale9Width": 32,
-                "Scale9Height": 32,
+                "Scale9OriginX": 27,
+                "Scale9OriginY": 27,
+                "Scale9Width": 28,
+                "Scale9Height": 28,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -82,13 +82,12 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 92,
-                "ActionTag": 175827818,
+                "Tag": 27,
+                "ActionTag": 1930903192,
                 "Size": {
                   "X": 640.0,
                   "Y": 240.0
                 },
-                "Alpha": 153,
                 "Name": "skillLayer_bg",
                 "ctype": "ImageViewObjectData"
               },
@@ -716,7 +715,7 @@
         "font/white10-export.png",
         "font/white16-export.fnt",
         "font/white16-export.png",
-        "mainUI/bg_23.png",
+        "mainUI/bg_24.png",
         "mainUI/blood1_1.png",
         "mainUI/blood1_2.png",
         "mainUI/blood2_1.png",

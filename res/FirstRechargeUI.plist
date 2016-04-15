@@ -7,18 +7,18 @@
 			<key>firstRechargeUI/88.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{260,0},{315,86}}</string>
+				<string>{{392,0},{315,86}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{315,86}</string>
 			</dict>
 			<key>firstRechargeUI/any.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{388,256},{210,76}}</string>
+				<string>{{529,86},{210,76}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,51 +29,51 @@
 			<key>firstRechargeUI/chong.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{346,183},{73,69}}</string>
+				<string>{{392,214},{73,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{73,69}</string>
 			</dict>
 			<key>firstRechargeUI/girl.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{260,463}}</string>
+				<string>{{0,0},{392,469}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{260,463}</string>
+				<string>{392,469}</string>
 			</dict>
 			<key>firstRechargeUI/popo.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{260,315},{137,128}}</string>
+				<string>{{392,86},{137,128}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{137,128}</string>
 			</dict>
 			<key>firstRechargeUI/song.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{415,183},{72,69}}</string>
+				<string>{{392,283},{72,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{72,69}</string>
 			</dict>
 			<key>firstRechargeUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{346,0},{183,89}}</string>
+				<string>{{707,0},{183,89}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -91,14 +91,14 @@
 			<key>realTextureFileName</key>
 			<string>FirstRechargeUI.png</string>
 			<key>size</key>
-			<string>{484,466}</string>
+			<string>{796,469}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>484</integer>
+			<integer>796</integer>
 			<key>height</key>
-			<integer>466</integer>
+			<integer>469</integer>
 		</dict>
 	</dict>
 </plist>

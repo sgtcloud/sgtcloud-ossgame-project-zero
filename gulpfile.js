@@ -16,7 +16,7 @@ var debug = require('gulp-debug');
 var del = require('del');
 var config = require('./project.json');
 
-var DEST = 'publish/html5/';
+var DEST = 'publish/html5-test/';
 
 var VERSION = "0.0.5.1";
 
