@@ -38,6 +38,7 @@ var ChooseServerPanel = cc.Node.extend({
         var text = root.getChildByName("text");
         var text2 = chooseBtn.getChildByName('text');
         var state = chooseBtn.getChildByName('state');
+        var full = chooseBtn.getChildByName('full');
         text.setString(server.name);
         setFont([text]);
         state_new.setVisible(_new);
@@ -49,6 +50,7 @@ var ChooseServerPanel = cc.Node.extend({
         }
         bindTouchEventListener(function(){
             Network.setServerInfo(server);
+            full.setVisible(!_new);
             state.setVisible(_new);
             text2.setString(server.name);
             this.hiddenServerListPopup();

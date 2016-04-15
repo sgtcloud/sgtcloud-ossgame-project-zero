@@ -54,15 +54,15 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "heroUI/bg.png",
-                  "Plist": "HeroUI.plist"
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_01.png",
+                  "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 25,
-                "Scale9OriginY": 25,
-                "Scale9Width": 28,
-                "Scale9Height": 28,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 58,
+                "Scale9Height": 58,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
@@ -82,8 +82,8 @@
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "Tag": 209,
-                "ActionTag": -1197973863,
+                "Tag": 32,
+                "ActionTag": 412294767,
                 "Size": {
                   "X": 640.0,
                   "Y": 500.0
@@ -163,8 +163,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "HeroUI.plist",
-        "HeroUI.png"
+        "mainUI/bg_01.png"
       ],
       "ctype": "GameFileData"
     }

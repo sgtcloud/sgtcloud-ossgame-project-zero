@@ -54,9 +54,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/list_bg.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 30,
@@ -161,7 +161,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "coverUI/list_bg.png"
+        "cover.plist",
+        "cover.png"
       ],
       "ctype": "GameFileData"
     }

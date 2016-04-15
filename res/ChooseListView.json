@@ -52,9 +52,9 @@
             "Children": [
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/list_view_bg.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 69,
@@ -91,9 +91,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/current.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 70,
@@ -179,9 +179,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/new.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 42,
                 "Scale9Height": 40,
@@ -222,9 +222,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/full.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 42,
                 "Scale9Height": 40,
@@ -265,9 +265,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "coverUI/player.png",
-                  "Plist": ""
+                  "Plist": "cover.plist"
                 },
                 "Scale9Width": 44,
                 "Scale9Height": 44,
@@ -324,11 +324,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "coverUI/current.png",
-        "coverUI/full.png",
-        "coverUI/list_view_bg.png",
-        "coverUI/new.png",
-        "coverUI/player.png"
+        "cover.plist",
+        "cover.png"
       ],
       "ctype": "GameFileData"
     }
