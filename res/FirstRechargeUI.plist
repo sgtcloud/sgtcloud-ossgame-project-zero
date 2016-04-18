@@ -11,31 +11,9 @@
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{315,86}</string>
-			</dict>
-			<key>firstRechargeUI/any.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{392,86},{210,76}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{210,76}</string>
-			</dict>
-			<key>firstRechargeUI/chong.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{602,86},{73,69}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{73,69}</string>
 			</dict>
 			<key>firstRechargeUI/girl.png</key>
 			<dict>
@@ -48,32 +26,10 @@
 				<key>sourceSize</key>
 				<string>{392,469}</string>
 			</dict>
-			<key>firstRechargeUI/popo.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{392,183},{137,128}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<true />
-				<key>sourceSize</key>
-				<string>{137,128}</string>
-			</dict>
-			<key>firstRechargeUI/song.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{602,155},{72,69}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{72,69}</string>
-			</dict>
 			<key>firstRechargeUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{707,0},{183,89}}</string>
+				<string>{{392,315},{183,89}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -91,14 +47,14 @@
 			<key>realTextureFileName</key>
 			<string>FirstRechargeUI.png</string>
 			<key>size</key>
-			<string>{796,469}</string>
+			<string>{481,498}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>796</integer>
+			<integer>481</integer>
 			<key>height</key>
-			<integer>469</integer>
+			<integer>498</integer>
 		</dict>
 	</dict>
 </plist>
