@@ -41,7 +41,7 @@ var ArenaPanel = BattleMenu.extend({
         var w = this._recordPanel.width;
         var h = this._recordPanel.height;
         var _recordRoot = this._recordPanel.getChildByName('root');
-        _recordRoot.setPosition(cc.p((winSize.width - w) / 2, (winSize.height - h) / 2));
+        //_recordRoot.setPosition(cc.p((winSize.width - w) / 2, (winSize.height - h) / 2));
         this._recordBox = _recordRoot.getChildByName('box');
         this.recordItemTemplate = ccs.csLoader.createNode(res.pvp_record_view).getChildByName('root');
         this.challengeStatus = {
@@ -101,6 +101,7 @@ var ArenaPanel = BattleMenu.extend({
                     this.pullData();
                 }
             }.bind(this));
+            window.showBufferList();
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function (e) {
             var data = e.getUserData();
@@ -111,6 +112,7 @@ var ArenaPanel = BattleMenu.extend({
                     game.arentResultTip.toggleLose(resultData);
                 }
             }.bind(this));
+            window.showBufferList();
         }.bind(this));
         this.pullData();
     }, __unit2Text: function (unit) {

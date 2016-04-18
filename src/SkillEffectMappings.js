@@ -47,7 +47,7 @@ var SkillEffectMappings = {
     ,
     "multi_damage_continuous": {"name": "持续群体伤害", "type": "int", "fixed": 0}
     ,
-    "multi_recover_once": {"name": "全体治疗", "type": "int", "fixed": 0}
+    "multi_recover_once": {"name": "全体治疗", "type": "int", "fixed": 0,onShow:function(text){return Math.abs(text);}}
     ,
     "buff_tap_rate": {"name": "提升点击伤害比例", "type": "rate", "fixed": 0}
     ,

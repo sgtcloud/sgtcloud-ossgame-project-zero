@@ -36,9 +36,13 @@ var MainScene = cc.Scene.extend({
         window.tip = new Tip(this);
         this.arentResultTip=new ArenaResultTip(this);
         (function (w) {
-
             var buffArr = [];
-
+            customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+                buffList.setVisible(false);
+            });
+            w.showBufferList=function(){
+                buffList.setVisible(true);
+            };
             function refeshBuffLayer() {
                 buffList.removeAllChildren(false);
                 for (var i = 0; i < buffArr.length; i++) {
@@ -48,7 +52,6 @@ var MainScene = cc.Scene.extend({
                     buffList.addChild(buff);
                 }
             }
-
             function toggleBufflayer(time, text, icon, cb) {
                 var buffLayer = new BuffLayer();
                 buffLayer.setIcon(icon);
