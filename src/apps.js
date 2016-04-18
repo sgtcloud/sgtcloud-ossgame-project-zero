@@ -756,6 +756,9 @@ function buildDesc(effects, desc, extend) {
         effectsObj[effects[i]['name']] = {}
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
+        if(typeof map['onShow']==='function'){
+            effectsObj[effects[i]['name']]['value']= map['onShow'](effectsObj[effects[i]['name']]['value']);
+        }
     }
     if (extend) {
         effectsObj = $$.extend(effectsObj, extend);
