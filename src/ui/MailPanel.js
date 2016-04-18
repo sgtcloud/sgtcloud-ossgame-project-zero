@@ -47,7 +47,8 @@ var MailPanel = cc.Node.extend({
         desc_text.setString(mail.content);
         titleText.setString(mail.title || mail.fromName);
         time.setString(this.formatTime(mail.sendTime));
-        setFont([titleText,desc_text]);
+        setFont([titleText,desc_text,time]);
+        time.setColor(TIPS_COLOR.GREEN);
         if (cc.isString(mail.attachment) && mail.attachment.length > 0) {
             var rewards = eval('('+mail.attachment+')');
             var rewardText = /*this.formatAttachment*/formatResourceToString(rewards);

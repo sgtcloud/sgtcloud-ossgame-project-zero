@@ -25,6 +25,8 @@ var CONSTS = {
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
     "arena_challenge_times": 5,
+    "arena_challenged_interval_timestamp": 2 * 1000,
+    "arena_challenge_Max_time": 60,
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 1},
     "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
     "monthCard_daily_bonus": {"unit": "gem", "value": 100},
