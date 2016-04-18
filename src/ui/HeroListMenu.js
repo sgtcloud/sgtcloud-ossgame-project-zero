@@ -122,6 +122,8 @@ var HeroListMenu = ListViewMenu.extend({
             upgradeSkill = root.getChildByName('upgradeSkillLayer');
             up10 = root.getChildByName('up10');
             up100 = root.getChildByName('up100');
+            up100.setPosition(this._upgradeSkillPosition);
+            up10.setPosition(this._upgradeSkillPosition);
         }
         var elements = {};
         buildUpgradeBtn.call(this, elements, upgradeSkill, skill, up10, up100);
@@ -194,6 +196,9 @@ var HeroListMenu = ListViewMenu.extend({
             var nextEffects = skill.traverseSkillEffects(skill.getLv() + 1);
             elements.upgrade_btn.text_yellow.setString(nextAmount);
             var showEffect = (nextEffects[0].value - effects[0].value).toFixed(SkillEffectMappings[nextEffects[0]['type']]['fixed']);
+            if (typeof SkillEffectMappings[nextEffects[0]['type']]['onShow'] === 'function') {
+                showEffect =SkillEffectMappings[nextEffects[0]['type']]['onShow'](showEffect);
+            }
             if (showEffect > 0) {
                 showEffect = '+' + showEffect;
             }
@@ -214,11 +219,20 @@ var HeroListMenu = ListViewMenu.extend({
                 this.continuousUpgrade2(skill, elements.upgrade_btn.up100);
             }
         }
+    },_hideLayer:function(layer){
+        //layer.stopAllActions();
+        layer.setVisible(false);
+        //layer.runAction(cc.moveTo(this._upgradeBtnPosition));
     }, continuousUpgrade2: function (target, upObj) {
         var maxLevel = target.getMaxLevel();
         var lv = target.getLv();
         var difLv = maxLevel - lv;
-        if (difLv >= upObj.lv && !validateAmountNotEnough2(target, upObj.lv)) {
+        if(difLv<upObj.lv){
+            //upObj.layer.setVisible(false);
+            this._hideLayer(upObj.layer);
+            return;
+        }
+        if (!validateAmountNotEnough2(target, upObj.lv)) {
             upObj.layer.setVisible(true);
             upObj.layer.stopActionByTag(upObj.layer.getTag());
             if (!upObj.move) {
@@ -245,58 +259,7 @@ var HeroListMenu = ListViewMenu.extend({
         var up100 = elements.upgrade_btn.up100;
         this.continuousUpgrade2(target, up10);
         this.continuousUpgrade2(target, up100);
-        /*var validate10 = validateAmountNotEnough2(target, up10.lv);
-         if (!validate10) {
-         up10.layer.setVisible(true);
-         up10.layer.stopAllActions();
-         if (difLv >= up10.lv) {
-         if (!elements.upgrade_btn.up10.move) {
-         args.push({
-         'node': up10.layer,
-         'pos': up10.slideOut
-         });
-         elements.upgrade_btn.up10.move = true;
-         }
-         }
-         }
-         var validata100 = validateAmountNotEnough2(target, up100.lv);
-         if (!validata100) {
-         up100.layer.setVisible(true);
-         up100.layer.stopAllActions();
-         if (difLv >=  up100.lv) {
-         if (!elements.upgrade_btn.up100.move) {
-         args.push({'node': up100.layer, 'pos': up100.slideOut});
-         elements.upgrade_btn.up100.move = true;
-         }
-         }
-         }
-         if (args.length > 0) {
-         this._runAction(args);
-         }
-         this._continuUpIn(elements);*/
-    }/*, _continuUpIn: function (elements) {
-     var args = [];
-     var up10 = elements.upgrade_btn.up10;
-     var up100 = elements.upgrade_btn.up100;
-     if (elements.upgrade_btn.up10.move) {
-     args.push({
-     'node': up10.layer,
-     'pos': up10.slideIn, 'time': 5.0, cb: function () {
-     elements.upgrade_btn.up10.move = false;
-     }
-     });
-     }
-     if (elements.upgrade_btn.up100.move) {
-     args.push({
-     'node': up100.layer, 'pos': up100.slideIn, 'time': 5.0, 'cb': function () {
-     elements.upgrade_btn.up100.move = false;
-     }
-     });
-     }
-     if (args.length > 0) {
-     this._runAction(args);
-     }
-     }*/,
+    },
     _bindSkillMenuListener: function (elements, skill, hero) {
         customEventHelper.bindListener(EVENT.HERO_SKILL_UPGRADE_BTN, function (event) {
                 if (canUnlockItem(hero, skill)) {
@@ -349,6 +312,8 @@ var HeroListMenu = ListViewMenu.extend({
             root.addChild(btnlayer, 30);
             btnlayer.setLocalZOrder(30);
             root.addChild(upMaxLevelBtn);
+            up100.setTag(up100.getTag()+root.getTag());
+            up10.setTag(up10.getTag()+root.getTag());
             first = true;
             item.root = root;
         } else {
@@ -357,6 +322,8 @@ var HeroListMenu = ListViewMenu.extend({
             revive_btn = root.getChildByName('revive_btn');
             up10 = root.getChildByName('up10');
             up100 = root.getChildByName('up100');
+            up100.setPosition(this._upgradeBtnPosition);
+            up10.setPosition(this._upgradeBtnPosition);
         }
         var elements = {};
         buildUpgradeBtn.call(this, elements, btnlayer, hero, up10, up100);
@@ -486,8 +453,8 @@ var HeroListMenu = ListViewMenu.extend({
         if (hero.isMaxLevel()) {
             elements.maxLevel_btn.layer.setVisible(true);
             elements.upgrade_btn.layer.setVisible(false);
-            elements.upgrade_btn.up10.setVisible(false);
-            elements.upgrade_btn.up100.setVisible(false);
+            elements.upgrade_btn.up10.layer.setVisible(false);
+            elements.upgrade_btn.up100.layer.setVisible(false);
         } else {
             var nextlevelData = hero.getLevelData(hero.getLv() + 1);
             var nextLevelAmount = nextlevelData['upgrade']['value'];
@@ -652,6 +619,9 @@ var HeroListMenu = ListViewMenu.extend({
         gold_text.setString(nextAmount);
         buffNum_text.ignoreContentAdaptWithSize(true);
         elements.upgrade_btn.buff_text.setString(SkillEffectMappings[nextEffects[0]['type']]['name']);
+        if (typeof SkillEffectMappings[nextEffects[0]['type']]['onShow'] === 'function') {
+            showEffect =SkillEffectMappings[nextEffects[0]['type']]['onShow'](showEffect);
+        }
         var _effect = toFixed2(showEffect, SkillEffectMappings[nextEffects[0]['type']]['fixed']);
         if (SkillEffectMappings[nextEffects[0]['type']]['type'] === 'rate') {
             _effect += "%"
@@ -679,18 +649,18 @@ var HeroListMenu = ListViewMenu.extend({
                 text.setColor(cc.color(255, 255, 255));
             }
         } else if (flag) {
-            upgrade_btn.setVisible(false);
-            //this._continuUpIn(elements);
+            //upgrade_btn.setVisible(false);
+            this._hideLayer(upgrade_btn);
         }
         return flag;
     }, refeshUpgradeLayer: function (hero, elements) {
         if (!hero.isMaxLevel()) {
             var nextlevelData = hero.getLevelData(hero.getLv() + 1);
             validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
-            if (elements.upgrade_btn.up10.move) {
+            if (hero.getMaxLevel()-hero.getLv()>elements.upgrade_btn.up10.lv&&elements.upgrade_btn.up10.move) {
                 this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, hero, elements.upgrade_btn.up10.lv)
             }
-            if (elements.upgrade_btn.up100.move) {
+            if (hero.getMaxLevel()-hero.getLv()>elements.upgrade_btn.up100.lv&&elements.upgrade_btn.up100.move) {
                 this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, hero, elements.upgrade_btn.up100.lv)
             }
         }
@@ -766,7 +736,7 @@ function buildUpgradeBtn(elements, btnlayer, target, up10, up100) {
     elements.upgrade_btn.lock = lock;
     elements.upgrade_btn.buffNum_text.ignoreContentAdaptWithSize(true);
     elements.upgrade_btn.text_yellow.ignoreContentAdaptWithSize(true);
-    var cost = target.getNextLevelUpgrade()
+    var cost = target.getNextLevelUpgrade();
     icon.loadTexture('res/icon/resources_small/' + cost.unit + '.png');
 }
 
