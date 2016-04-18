@@ -157,7 +157,7 @@ var HeroListMenu = ListViewMenu.extend({
         name.setString(skill.getName());
         desc.setString(buildDesc(skill.traverseSkillEffects(), skill.getDesc(), {"duration": skill.getLevelData()['duration']}));
         lv.setString('Lv.' + skill.getLv() + "/" + skill.getMaxLevel());
-        elements.lock_btn.level_text.setString("Lv." + skill.getUnlockLevel())
+        elements.lock_btn.level_text.setString("Lv." + skill.getUnlockLevel());
         elements.lock_btn.level_text.setColor(cc.color(255, 0, 0));
         if (first) {
             setFont([name, desc, elements.upgrade_btn.buff_text]);
@@ -251,10 +251,6 @@ var HeroListMenu = ListViewMenu.extend({
         }
     },
     continuousUpgrade: function (elements, target) {
-        /* var args = [];
-         var maxLevel = target.getMaxLevel();
-         var lv = target.getLv();
-         var difLv = maxLevel - lv;*/
         var up10 = elements.upgrade_btn.up10;
         var up100 = elements.upgrade_btn.up100;
         this.continuousUpgrade2(target, up10);
@@ -269,10 +265,10 @@ var HeroListMenu = ListViewMenu.extend({
                     }
                 }
                 if (elements.upgrade_btn.up10.move) {
-                    this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, skill, 10)
+                    this._validateResourceNotEnough(elements.upgrade_btn.up10, skill)
                 }
                 if (elements.upgrade_btn.up100.move) {
-                    this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, skill, 100)
+                    this._validateResourceNotEnough(elements.upgrade_btn.up100, skill)
                 }
             }.bind(this)
         );
@@ -337,13 +333,13 @@ var HeroListMenu = ListViewMenu.extend({
                 return true;
             }.bind(this));
         }
-        buildMaxLevelBtn(elements, upMaxLevelBtn)
+        buildMaxLevelBtn(elements, upMaxLevelBtn);
         var icon = root.getChildByName('hero_icon');
         var lv = root.getChildByName('level_text');
         var dps_text = root.getChildByName('dps_text');
         var dps = root.getChildByName('dps');
-        var die_text = root.getChildByName('die_text')
-        var die_time_text = root.getChildByName('die_time_text')
+        var die_text = root.getChildByName('die_text');
+        var die_time_text = root.getChildByName('die_time_text');
         var heroName_text = root.getChildByName("heroName_text");
         var diamond_text = revive_btn.getChildByName('diamond_text');
         die_time_text.setColor(cc.color(255, 0, 0));
@@ -394,7 +390,7 @@ var HeroListMenu = ListViewMenu.extend({
         if (typeof cb === 'function') {
             cb(hero, root);
         }
-        this.refeshUpgradeLayer(hero, elements);
+        this.refreshUpgradeLayer(hero, elements);
         if (!hero.isLocked() && hero.getCurrentLife() <= 0 && hero.getLv() > 0) {
             customEventHelper.sendEvent(EVENT.HERO_DIE, hero);
         }
@@ -488,7 +484,7 @@ var HeroListMenu = ListViewMenu.extend({
             customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
         });
         customEventHelper.bindListener(EVENT.HERO_UPGRADE_BTN, function (event) {
-            this.refeshUpgradeLayer(hero, elements);
+            this.refreshUpgradeLayer(hero, elements);
         }.bind(this));
         customEventHelper.bindListener(EVENT.HERO_DIE, function (event) {
             var dieHero = event.getUserData();
@@ -636,32 +632,35 @@ var HeroListMenu = ListViewMenu.extend({
         }, {'node': elements.upgrade_btn.up100.layer, 'pos': cc.p(115, 0), 'hide': true}], function () {
             elements.upgrade_btn.up100.move = true;
         });
-    }, _validateResourceNotEnough: function (upgrade_btn, target, lv) {
-        var flag = validateAmountNotEnough2(target, lv);
-        if (lv === 1) {
+    }, _validateResourceNotEnough: function (btnObj, target) {
+        var flag = validateAmountNotEnough2(target, btnObj.lv);
+        if (btnObj.lv === 1) {
             if (flag) {
-                upgrade_btn.setEnabled(false);
-                upgrade_btn.setBright(false);
+                btnObj.layer.setEnabled(false);
+                btnObj.layer.setBright(false);
                 text.setColor(cc.color(255, 0, 0));
             } else {
-                upgrade_btn.setEnabled(true);
-                upgrade_btn.setBright(true);
+                btnObj.layer.setEnabled(true);
+                btnObj.layer.setBright(true);
                 text.setColor(cc.color(255, 255, 255));
             }
         } else if (flag) {
-            //upgrade_btn.setVisible(false);
-            this._hideLayer(upgrade_btn);
+            this._hideLayer(btnObj.layer);
         }
         return flag;
-    }, refeshUpgradeLayer: function (hero, elements) {
+    }, refreshUpgradeLayer: function (hero, elements) {
         if (!hero.isMaxLevel()) {
             var nextlevelData = hero.getLevelData(hero.getLv() + 1);
             validateResourceNotEnough(nextlevelData['upgrade'], elements.upgrade_btn.btn, elements.upgrade_btn.text_yellow);
-            if (hero.getMaxLevel()-hero.getLv()>elements.upgrade_btn.up10.lv&&elements.upgrade_btn.up10.move) {
-                this._validateResourceNotEnough(elements.upgrade_btn.up10.layer, hero, elements.upgrade_btn.up10.lv)
+            if (hero.getMaxLevel()-hero.getLv()>=elements.upgrade_btn.up10.lv&&elements.upgrade_btn.up10.move) {
+                this._validateResourceNotEnough(elements.upgrade_btn.up10, hero);
+            }else {
+                this._hideLayer(elements.upgrade_btn.up10.layer);
             }
-            if (hero.getMaxLevel()-hero.getLv()>elements.upgrade_btn.up100.lv&&elements.upgrade_btn.up100.move) {
-                this._validateResourceNotEnough(elements.upgrade_btn.up100.layer, hero, elements.upgrade_btn.up100.lv)
+            if (hero.getMaxLevel()-hero.getLv()>=elements.upgrade_btn.up100.lv&&elements.upgrade_btn.up100.move) {
+                this._validateResourceNotEnough(elements.upgrade_btn.up100, hero);
+            }else {
+                this._hideLayer(elements.upgrade_btn.up100.layer);
             }
         }
     }, _canLockSkillContinouse: function (hero, skill, lv) {
