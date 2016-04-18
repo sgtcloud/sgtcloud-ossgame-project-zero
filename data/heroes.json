@@ -581,6 +581,8790 @@
           "unit": "gold",
           "value": 4219
         }
+      },
+      {
+        "level": 31,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 32,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 33,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 34,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 35,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 36,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 37,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 38,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 39,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 40,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 41,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 42,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 43,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 44,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 45,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 46,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 47,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 48,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 49,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 50,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 51,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 52,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 53,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 54,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 55,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 56,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 57,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 58,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 59,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 60,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 61,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 62,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 63,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 64,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 65,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 66,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 67,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 68,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 69,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 70,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 71,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 72,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 73,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 74,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 75,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 76,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 77,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 78,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 79,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 80,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 81,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 82,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 83,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 84,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 85,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 86,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 87,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 88,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 89,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 90,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 91,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 92,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 93,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 94,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 95,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 96,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 97,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 98,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 99,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 100,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 101,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 102,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 103,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 104,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 105,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 106,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 107,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 108,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 109,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 110,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 111,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 112,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 113,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 114,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 115,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 116,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 117,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 118,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 119,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 120,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 121,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 122,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 123,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 124,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 125,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 126,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 127,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 128,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 129,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 130,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 131,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 132,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 133,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 134,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 135,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 136,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 137,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 138,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 139,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 140,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 141,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 142,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 143,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 144,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 145,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 146,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 147,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 148,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 149,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 150,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 151,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 152,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 153,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 154,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 155,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 156,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 157,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 158,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 159,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 160,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 161,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 162,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 163,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 164,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 165,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 166,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 167,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 168,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 169,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 170,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 171,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 172,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 173,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 174,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 175,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 176,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 177,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 178,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 179,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 180,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 181,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 182,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 183,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 184,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 185,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 186,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 187,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 188,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 189,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 190,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 191,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 192,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 193,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 194,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 195,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 196,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 197,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 198,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 199,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 200,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 201,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 202,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 203,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 204,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 205,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 206,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 207,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 208,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 209,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 210,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 211,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 212,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 213,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 214,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 215,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 216,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 217,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 218,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 219,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 220,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 221,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 222,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 223,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 224,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 225,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 226,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 227,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 228,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 229,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 230,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 231,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 232,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 233,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 234,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 235,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 236,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 237,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 238,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 239,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 240,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 241,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 242,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 243,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 244,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 245,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 246,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 247,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 248,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 249,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 250,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 251,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 252,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 253,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 254,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 255,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 256,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 257,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 258,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 259,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 260,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 261,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 262,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 263,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 264,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 265,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 266,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 267,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 268,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 269,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 270,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 271,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 272,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 273,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 274,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 275,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 276,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 277,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 278,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 279,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 280,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 281,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 282,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 283,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 284,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 285,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 286,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 287,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 288,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 289,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 290,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 291,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 292,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 293,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 294,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 295,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 296,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 297,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 298,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 299,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 300,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 301,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 302,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 303,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 304,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 305,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 306,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 307,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 308,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 309,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 310,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 311,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 312,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 313,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 314,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 315,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 316,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 317,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 318,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 319,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 320,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 321,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 322,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 323,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 324,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 325,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 326,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 327,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 328,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 329,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 330,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 331,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 332,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 333,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 334,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 335,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 336,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 337,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 338,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 339,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 340,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 341,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 342,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 343,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 344,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 345,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 346,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 347,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 348,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 349,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 350,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 351,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 352,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 353,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 354,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 355,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 356,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 357,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 358,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 359,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 360,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 361,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 362,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 363,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 364,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 365,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 366,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 367,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 368,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 369,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 370,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 371,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 372,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 373,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 374,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 375,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 376,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 377,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 378,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 379,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 380,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 381,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 382,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 383,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 384,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 385,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 386,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 387,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 388,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 389,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 390,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 391,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 392,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 393,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 394,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 395,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 396,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 397,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 398,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 399,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 400,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 401,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 402,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 403,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 404,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 405,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 406,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 407,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 408,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 409,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 410,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 411,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 412,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 413,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 414,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 415,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 416,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 417,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 418,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 419,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 420,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 421,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 422,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 423,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 424,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 425,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 426,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 427,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 428,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 429,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 430,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 431,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 432,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 433,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 434,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 435,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 436,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 437,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 438,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 439,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 440,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 441,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 442,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 443,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 444,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 445,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 446,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 447,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 448,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 449,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 450,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 451,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 452,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 453,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 454,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 455,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 456,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 457,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 458,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 459,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 460,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 461,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 462,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 463,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 464,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 465,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 466,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 467,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 468,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 469,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 470,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 471,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 472,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 473,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 474,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 475,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 476,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 477,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 478,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 479,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 480,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 481,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 482,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 483,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 484,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 485,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 486,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 487,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 488,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 489,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 490,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 491,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 492,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 493,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 494,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 495,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 496,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 497,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 498,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 499,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 500,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 501,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 502,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 503,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 504,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 505,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 506,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 507,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 508,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 509,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 510,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 511,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 512,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 513,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 514,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 515,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 516,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 517,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
+      },
+      {
+        "level": 518,
+        "life": 12750,
+        "attack": 1560,
+        "tap": 208,
+        "atk_period": 1.5,
+        "ctr_chance": 15,
+        "ctr_modify": 150,
+        "resurge": {
+          "cost": "gem",
+          "value": 2,
+          "time": 45
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 4219
+        }
       }
     ]
   },

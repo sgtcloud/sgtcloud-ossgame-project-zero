@@ -372,6 +372,6936 @@
         "unlockLevel": 21,
         "duration": 0,
         "cooldown": 90
+      },
+      {
+        "level": 6,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 251
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 22,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 7,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 252
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 23,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 8,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 253
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 24,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 9,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 254
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 25,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 10,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 255
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 26,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 11,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 256
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 27,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 12,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 257
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 28,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 13,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 258
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 29,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 14,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 259
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 30,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 15,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 260
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 31,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 16,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 261
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 32,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 17,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 262
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 33,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 18,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 263
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 34,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 19,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 264
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 35,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 20,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 265
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 36,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 21,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 266
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 37,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 22,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 267
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 38,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 23,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 268
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 39,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 24,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 269
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 40,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 25,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 270
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 41,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 26,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 271
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 42,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 27,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 272
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 43,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 28,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 273
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 44,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 29,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 274
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 45,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 30,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 275
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 46,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 31,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 276
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 47,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 32,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 277
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 48,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 33,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 278
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 49,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 34,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 279
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 50,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 35,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 280
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 51,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 36,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 281
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 52,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 37,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 282
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 53,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 38,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 283
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 54,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 39,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 284
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 55,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 40,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 285
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 56,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 41,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 286
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 57,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 42,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 287
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 58,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 43,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 288
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 59,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 44,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 289
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 60,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 45,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 290
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 61,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 46,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 291
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 62,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 47,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 292
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 63,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 48,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 293
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 64,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 49,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 294
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 65,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 50,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 295
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 66,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 51,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 296
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 67,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 52,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 297
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 68,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 53,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 298
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 69,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 54,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 299
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 70,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 55,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 300
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 71,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 56,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 301
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 72,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 57,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 302
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 73,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 58,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 303
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 74,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 59,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 304
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 75,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 60,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 305
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 76,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 61,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 306
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 77,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 62,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 307
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 78,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 63,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 308
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 79,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 64,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 309
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 80,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 65,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 310
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 81,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 66,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 311
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 82,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 67,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 312
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 83,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 68,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 313
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 84,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 69,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 314
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 85,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 70,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 315
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 86,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 71,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 316
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 87,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 72,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 317
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 88,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 73,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 318
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 89,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 74,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 319
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 90,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 75,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 320
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 91,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 76,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 321
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 92,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 77,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 322
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 93,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 78,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 323
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 94,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 79,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 324
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 95,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 80,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 325
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 96,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 81,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 326
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 97,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 82,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 327
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 98,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 83,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 328
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 99,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 84,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 329
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 100,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 85,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 330
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 101,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 86,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 331
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 102,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 87,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 332
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 103,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 88,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 333
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 104,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 89,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 334
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 105,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 90,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 335
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 106,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 91,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 336
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 107,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 92,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 337
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 108,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 93,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 338
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 109,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 94,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 339
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 110,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 95,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 340
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 111,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 96,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 341
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 112,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 97,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 342
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 113,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 98,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 343
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 114,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 99,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 344
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 115,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 100,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 345
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 116,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 101,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 346
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 117,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 102,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 347
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 118,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 103,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 348
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 119,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 104,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 349
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 120,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 105,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 350
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 121,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 106,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 351
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 122,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 107,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 352
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 123,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 108,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 353
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 124,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 109,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 354
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 125,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 110,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 355
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 126,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 111,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 356
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 127,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 112,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 357
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 128,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 113,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 358
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 129,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 114,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 359
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 130,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 115,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 360
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 131,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 116,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 361
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 132,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 117,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 362
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 133,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 118,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 363
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 134,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 119,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 364
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 135,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 120,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 365
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 136,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 121,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 366
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 137,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 122,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 367
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 138,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 123,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 368
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 139,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 124,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 369
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 140,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 125,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 370
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 141,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 126,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 371
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 142,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 127,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 372
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 143,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 128,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 373
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 144,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 129,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 374
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 145,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 130,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 375
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 146,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 131,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 376
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 147,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 132,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 377
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 148,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 133,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 378
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 149,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 134,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 379
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 150,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 135,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 380
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 151,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 136,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 381
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 152,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 137,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 382
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 153,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 138,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 383
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 154,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 139,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 384
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 155,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 140,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 385
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 156,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 141,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 386
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 157,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 142,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 387
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 158,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 143,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 388
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 159,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 144,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 389
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 160,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 145,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 390
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 161,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 146,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 391
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 162,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 147,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 392
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 163,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 148,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 393
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 164,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 149,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 394
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 165,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 150,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 395
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 166,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 151,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 396
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 167,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 152,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 397
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 168,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 153,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 398
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 169,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 154,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 399
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 170,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 155,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 400
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 171,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 156,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 401
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 172,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 157,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 402
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 173,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 158,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 403
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 174,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 159,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 404
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 175,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 160,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 405
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 176,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 161,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 406
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 177,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 162,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 407
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 178,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 163,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 408
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 179,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 164,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 409
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 180,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 165,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 410
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 181,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 166,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 411
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 182,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 167,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 412
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 183,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 168,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 413
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 184,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 169,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 414
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 185,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 170,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 415
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 186,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 171,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 416
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 187,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 172,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 417
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 188,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 173,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 418
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 189,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 174,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 419
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 190,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 175,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 420
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 191,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 176,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 421
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 192,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 177,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 422
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 193,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 178,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 423
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 194,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 179,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 424
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 195,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 180,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 425
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 196,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 181,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 426
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 197,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 182,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 427
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 198,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 183,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 428
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 199,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 184,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 429
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 200,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 185,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 430
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 201,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 186,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 431
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 202,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 187,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 432
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 203,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 188,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 433
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 204,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 189,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 434
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 205,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 190,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 435
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 206,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 191,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 436
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 207,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 192,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 437
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 208,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 193,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 438
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 209,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 194,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 439
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 210,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 195,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 440
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 211,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 196,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 441
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 212,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 197,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 442
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 213,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 198,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 443
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 214,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 199,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 444
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 215,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 200,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 445
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 216,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 201,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 446
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 217,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 202,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 447
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 218,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 203,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 448
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 219,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 204,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 449
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 220,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 205,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 450
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 221,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 206,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 451
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 222,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 207,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 452
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 223,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 208,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 453
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 224,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 209,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 454
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 225,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 210,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 455
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 226,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 211,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 456
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 227,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 212,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 457
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 228,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 213,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 458
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 229,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 214,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 459
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 230,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 215,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 460
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 231,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 216,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 461
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 232,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 217,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 462
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 233,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 218,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 463
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 234,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 219,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 464
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 235,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 220,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 465
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 236,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 221,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 466
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 237,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 222,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 467
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 238,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 223,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 468
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 239,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 224,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 469
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 240,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 225,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 470
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 241,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 226,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 471
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 242,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 227,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 472
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 243,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 228,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 473
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 244,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 229,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 474
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 245,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 230,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 475
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 246,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 231,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 476
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 247,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 232,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 477
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 248,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 233,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 478
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 249,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 234,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 479
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 250,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 235,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 480
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 251,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 236,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 481
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 252,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 237,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 482
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 253,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 238,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 483
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 254,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 239,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 484
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 255,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 240,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 485
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 256,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 241,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 486
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 257,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 242,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 487
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 258,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 243,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 488
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 259,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 244,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 489
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 260,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 245,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 490
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 261,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 246,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 491
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 262,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 247,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 492
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 263,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 248,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 493
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 264,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 249,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 494
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 265,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 250,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 495
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 266,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 251,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 496
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 267,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 252,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 497
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 268,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 253,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 498
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 269,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 254,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 499
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 270,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 255,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 500
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 271,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 256,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 501
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 272,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 257,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 502
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 273,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 258,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 503
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 274,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 259,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 504
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 275,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 260,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 505
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 276,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 261,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 506
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 277,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 262,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 507
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 278,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 263,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 508
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 279,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 264,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 509
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 280,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 265,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 510
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 281,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 266,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 511
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 282,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 267,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 512
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 283,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 268,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 513
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 284,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 269,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 514
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 285,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 270,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 515
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 286,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 271,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 516
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 287,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 272,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 517
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 288,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 273,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 518
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 289,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 274,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 519
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 290,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 275,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 520
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 291,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 276,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 521
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 292,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 277,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 522
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 293,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 278,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 523
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 294,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 279,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 524
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 295,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 280,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 525
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 296,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 281,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 526
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 297,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 282,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 527
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 298,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 283,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 528
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 299,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 284,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 529
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 300,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 285,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 530
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 301,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 286,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 531
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 302,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 287,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 532
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 303,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 288,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 533
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 304,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 289,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 534
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 305,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 290,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 535
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 306,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 291,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 536
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 307,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 292,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 537
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 308,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 293,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 538
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 309,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 294,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 539
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 310,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 295,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 540
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 311,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 296,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 541
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 312,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 297,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 542
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 313,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 298,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 543
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 314,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 299,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 544
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 315,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 300,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 545
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 316,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 301,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 546
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 317,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 302,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 547
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 318,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 303,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 548
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 319,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 304,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 549
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 320,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 305,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 550
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 321,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 306,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 551
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 322,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 307,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 552
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 323,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 308,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 553
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 324,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 309,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 554
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 325,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 310,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 555
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 326,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 311,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 556
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 327,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 312,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 557
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 328,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 313,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 558
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 329,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 314,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 559
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 330,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 315,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 560
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 331,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 316,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 561
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 332,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 317,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 562
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 333,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 318,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 563
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 334,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 319,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 564
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 335,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 320,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 565
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 336,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 321,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 566
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 337,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 322,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 567
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 338,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 323,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 568
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 339,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 324,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 569
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 340,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 325,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 570
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 341,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 326,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 571
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 342,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 327,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 572
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 343,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 328,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 573
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 344,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 329,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 574
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 345,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 330,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 575
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 346,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 331,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 576
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 347,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 332,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 577
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 348,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 333,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 578
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 349,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 334,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 579
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 350,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 335,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 580
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 351,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 336,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 581
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 352,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 337,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 582
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 353,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 338,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 583
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 354,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 339,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 584
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 355,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 340,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 585
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 356,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 341,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 586
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 357,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 342,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 587
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 358,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 343,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 588
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 359,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 344,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 589
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 360,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 345,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 590
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 361,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 346,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 591
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 362,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 347,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 592
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 363,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 348,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 593
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 364,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 349,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 594
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 365,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 350,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 595
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 366,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 351,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 596
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 367,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 352,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 597
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 368,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 353,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 598
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 369,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 354,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 599
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 370,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 355,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 600
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 371,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 356,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 601
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 372,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 357,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 602
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 373,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 358,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 603
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 374,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 359,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 604
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 375,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 360,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 605
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 376,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 361,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 606
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 377,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 362,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 607
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 378,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 363,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 608
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 379,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 364,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 609
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 380,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 365,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 610
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 381,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 366,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 611
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 382,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 367,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 612
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 383,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 368,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 613
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 384,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 369,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 614
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 385,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 370,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 615
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 386,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 371,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 616
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 387,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 372,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 617
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 388,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 373,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 618
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 389,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 374,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 619
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 390,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 375,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 620
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 391,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 376,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 621
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 392,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 377,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 622
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 393,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 378,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 623
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 394,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 379,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 624
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 395,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 380,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 625
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 396,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 381,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 626
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 397,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 382,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 627
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 398,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 383,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 628
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 399,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 384,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 629
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 400,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 385,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 630
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 401,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 386,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 631
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 402,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 387,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 632
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 403,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 388,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 633
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 404,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 389,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 634
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 405,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 390,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 635
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 406,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 391,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 636
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 407,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 392,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 637
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 408,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 393,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 638
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 409,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 394,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 639
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 410,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 395,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 640
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 411,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 396,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 641
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 412,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 397,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 642
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 413,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 398,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 643
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 414,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 399,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 644
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 415,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 400,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 645
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 416,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 401,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 646
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 417,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 402,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 647
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 418,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 403,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 648
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 419,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 404,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 649
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 420,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 405,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 650
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 421,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 406,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 651
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 422,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 407,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 652
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 423,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 408,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 653
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 424,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 409,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 654
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 425,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 410,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 655
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 426,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 411,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 656
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 427,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 412,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 657
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 428,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 413,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 658
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 429,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 414,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 659
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 430,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 415,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 660
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 431,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 416,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 661
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 432,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 417,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 662
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 433,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 418,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 663
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 434,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 419,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 664
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 435,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 420,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 665
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 436,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 421,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 666
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 437,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 422,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 667
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 438,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 423,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 668
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 439,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 424,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 669
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 440,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 425,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 670
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 441,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 426,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 671
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 442,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 427,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 672
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 443,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 428,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 673
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 444,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 429,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 674
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 445,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 430,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 675
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 446,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 431,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 676
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 447,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 432,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 677
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 448,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 433,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 678
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 449,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 434,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 679
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 450,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 435,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 680
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 451,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 436,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 681
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 452,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 437,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 682
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 453,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 438,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 683
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 454,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 439,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 684
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 455,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 440,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 685
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 456,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 441,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 686
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 457,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 442,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 687
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 458,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 443,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 688
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 459,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 444,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 689
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 460,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 445,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 690
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 461,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 446,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 691
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 462,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 447,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 692
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 463,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 448,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 693
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 464,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 449,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 694
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 465,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 450,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 695
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 466,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 451,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 696
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 467,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 452,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 697
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 468,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 453,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 698
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 469,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 454,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 699
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 470,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 455,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 700
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 471,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 456,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 701
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 472,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 457,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 702
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 473,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 458,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 703
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 474,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 459,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 704
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 475,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 460,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 705
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 476,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 461,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 706
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 477,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 462,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 707
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 478,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 463,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 708
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 479,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 464,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 709
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 480,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 465,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 710
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 481,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 466,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 711
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 482,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 467,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 712
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 483,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 468,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 713
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 484,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 469,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 714
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 485,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 470,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 715
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 486,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 471,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 716
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 487,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 472,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 717
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 488,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 473,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 718
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 489,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 474,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 719
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 490,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 475,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 720
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 491,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 476,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 721
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 492,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 477,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 722
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 493,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 478,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 723
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 494,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 479,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 724
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 495,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 480,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 725
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 496,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 481,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 726
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 497,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 482,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 727
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 498,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 483,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 728
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 499,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 484,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 729
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 500,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 485,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 730
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 501,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 486,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 731
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 502,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 487,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 732
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 503,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 488,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 733
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 504,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 489,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 734
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 505,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 490,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 735
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 506,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 491,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 736
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 507,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 492,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 737
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 508,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 493,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 738
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 509,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 494,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 739
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 510,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 495,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 740
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 511,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 496,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 741
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 512,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 497,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 742
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 513,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 498,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 743
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 514,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 499,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 744
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 515,
+        "duration": 0,
+        "cooldown": 5
+      },
+      {
+        "level": 500,
+        "effect1": {
+          "type": "single_damage_once",
+          "value": 745
+        },
+        "upgrade": {
+          "unit": "gold",
+          "value": 10
+        },
+        "unlockLevel": 516,
+        "duration": 0,
+        "cooldown": 5
       }
     ]
   },
