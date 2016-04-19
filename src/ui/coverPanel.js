@@ -48,7 +48,7 @@ var CoverPanel = function () {
         var server;
         if (PlayerData.servers) {
             server = PlayerData.servers[0];
-            //full.setVisible(false);
+            full.setVisible(false);
             state.setVisible(true);
         } else {
             var servers = PlayerData.getLocalServerList();

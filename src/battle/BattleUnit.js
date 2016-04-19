@@ -214,7 +214,7 @@ var BattleUnit = CCSUnit.extend({
      */
     showBuffIcons: function () {
         for (var i in this.buffIcons) {
-            this.buffIcons[i].resume();
+            //this.buffIcons[i].resume();
             this.buffIcons[i].setVisible(true);
         }
     },
@@ -224,7 +224,7 @@ var BattleUnit = CCSUnit.extend({
      */
     hideBuffIcons: function () {
         for (var i in this.buffIcons) {
-            this.buffIcons[i].pause();
+            //this.buffIcons[i].pause();
             this.buffIcons[i].setVisible(false);
         }
     },
