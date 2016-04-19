@@ -111,6 +111,18 @@ var PlayerDataClass = cc.Class.extend({
         return this._player.statistics.total_tap;
     }
     ,
+    getTotalAtkPeriod: function (dead) {
+        return this.sumHeroesProp("getAnimateDelay", dead);
+    }
+    ,
+    getTotalCtrModify: function (dead) {
+        return this.sumHeroesProp("getCtrModify", dead);
+    }
+    ,
+    getTotalCtrChance: function (dead) {
+        return this.sumHeroesProp("getCtrChance", dead);
+    }
+    ,
     createResourceData: function (unit, val) {
         return {unit: unit, value: val};
     }

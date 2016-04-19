@@ -282,14 +282,17 @@ var ActiveSkill = cc.Class.extend({
     },
 
     startBuffEffect: function () {
-        if (PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect]) {
+        if (cc.isNumber(PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect])) {
             PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect] += this.effectValue;
+        }else{
+            PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect] = this.effectValue;
         }
         for (var i in this.targets) {
             this.buffIcons[i].setScale(0.3);
             this.buffIconRunAction(this.buffIcons[i]);
             this.targets[i].addBuff(this.buffIcons[i]);
         }
+        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
     },
     buffIconRunAction: function(buffIcon){
         buffIcon.runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.callFunc(function(){
@@ -306,6 +309,7 @@ var ActiveSkill = cc.Class.extend({
         for (var i in this.targets) {
             this.targets[i].removeBuff(this.buffIcons[i]);
         }
+        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
     }
 
 });

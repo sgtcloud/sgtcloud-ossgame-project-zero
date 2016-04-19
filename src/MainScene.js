@@ -62,7 +62,7 @@ var MainScene = cc.Scene.extend({
                 //buffList.jumpToBottom();
                 refeshBuffLayer();
                 var remaining = time - 1;
-                customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+                //customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                 buffLayer.root.schedule(function () {
                     if (remaining > 0) {
                         buffLayer.setTime(remaining);
@@ -72,7 +72,7 @@ var MainScene = cc.Scene.extend({
                         buffArr.splice(index, 1);
                         refeshBuffLayer();
                         this.unschedule(this.__instanceId);
-                        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+                        //customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
                         if (typeof cb === 'function')cb();
                         this.cleanup();
                     }
