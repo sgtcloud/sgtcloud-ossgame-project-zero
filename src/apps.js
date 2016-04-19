@@ -693,3 +693,19 @@ function _processReward(reward){
     }
     return descText;
 }
+
+function formatNumber(data,type){
+    if(typeof type === 'undefined'){
+        if(data >= 0 && data <1000){
+            return Math.floor(data);
+        }else if(data >= 1000 && data < 1000000){
+            return (data/1000.0).toFixed(2)+"k";
+        }else if(data >= 1000000 && data < 1000000000){
+            return (data/1000000.0).toFixed(2)+"m";
+        }else {
+            return (data/1000000000.0).toFixed(2)+"b";
+        }
+    }else if(type == 'rate'){
+        return data.toFixed(2)+"%";
+    }
+}

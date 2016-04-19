@@ -30,40 +30,26 @@ var StatisticsPanel = cc.Node.extend({
         setIgnoreContentAdaptWithSize([total_hero,total_hero_levels,total_gold_rate,total_tap_rate,total_life_rate,
             total_attack_rate,total_attack_value,total_tap_value,total_life_value,total_ctr_chance_rate,total_ctr_modify_rate,total_atk_period_rate,
             total_gold,total_relic,total_fairy,total_chest_open,total_enemy_kill,total_boss_kill,total_max_level]);
-        this.convert = function(data,type){
-            if(typeof type === 'undefined'){
-                if(data >= 0 && data <1000){
-                    return data.toFixed(0);
-                }else if(data >= 1000 && data < 1000000){
-                    return (data/1000.0).toFixed(2)+"k";
-                }else if(data >= 1000000 && data < 1000000000){
-                    return (data/1000000.0).toFixed(2)+"m";
-                }else {
-                    return (data/1000000000.0).toFixed(2)+"b";
-                }
-            }else if(type == 'rate'){
-                return data.toFixed(2)+"%";
-            }
-        };
-        total_hero.setString(this.convert(PlayerData.getTotalHeroNum()));
-        total_hero_levels.setString(this.convert(PlayerData.getTotalHeroLevels()));
-        total_gold_rate.setString(this.convert(PlayerData.globe_gold_rate+PlayerData.buff_gold_rate,"rate"));
-        total_tap_rate.setString(this.convert(PlayerData.globe_tap_rate+PlayerData.buff_tap_rate,"rate"));
-        total_life_rate.setString(this.convert(PlayerData.globe_life_rate,"rate"));
-        total_attack_rate.setString(this.convert(PlayerData.globe_attack_rate+PlayerData.buff_attack_rate,"rate"));
-        total_attack_value.setString(this.convert(PlayerData.getTotalAttack()));
-        total_tap_value.setString(this.convert(PlayerData.getTotalHit(true)));
-        total_life_value.setString(this.convert(PlayerData.getTotalLife()));
-        total_ctr_chance_rate.setString(this.convert(PlayerData.globe_ctr_chance_rate+PlayerData.buff_ctr_chance_rate,"rate"));
-        total_ctr_modify_rate.setString(this.convert(PlayerData.globe_ctr_modify_rate+PlayerData.buff_ctr_modify_rate,"rate"));
-        total_atk_period_rate.setString(this.convert(PlayerData.globe_atk_period_rate+PlayerData.buff_atk_period_rate,"rate"));
-        total_gold.setString(this.convert(player.statistics.total_gold));
-        total_relic.setString(this.convert(player.statistics.total_relic));
-        total_fairy.setString(this.convert(player.statistics.total_fairy));
-        total_chest_open.setString(this.convert(player.statistics.total_chest_open));
-        total_enemy_kill.setString(this.convert(player.statistics.total_enemy_kill));
-        total_boss_kill.setString(this.convert(player.statistics.total_boss_kill));
-        total_max_level.setString(this.convert(player.statistics.total_max_level));
+
+        total_hero.setString(formatNumber(PlayerData.getTotalHeroNum()));
+        total_hero_levels.setString(formatNumber(PlayerData.getTotalHeroLevels()));
+        total_gold_rate.setString(formatNumber(PlayerData.globe_gold_rate+PlayerData.buff_gold_rate,"rate"));
+        total_tap_rate.setString(formatNumber(PlayerData.globe_tap_rate+PlayerData.buff_tap_rate,"rate"));
+        total_life_rate.setString(formatNumber(PlayerData.globe_life_rate,"rate"));
+        total_attack_rate.setString(formatNumber(PlayerData.globe_attack_rate+PlayerData.buff_attack_rate,"rate"));
+        total_attack_value.setString(formatNumber(PlayerData.getTotalAttack()));
+        total_tap_value.setString(formatNumber(PlayerData.getTotalHit(true)));
+        total_life_value.setString(formatNumber(PlayerData.getTotalLife()));
+        total_ctr_chance_rate.setString(formatNumber(PlayerData.getTotalCtrChance()*100,"rate"));
+        total_ctr_modify_rate.setString(formatNumber(PlayerData.getTotalCtrModify()*100,"rate"));
+        total_atk_period_rate.setString(formatNumber(PlayerData.getTotalAtkPeriod()));
+        total_gold.setString(formatNumber(player.statistics.total_gold));
+        total_relic.setString(formatNumber(player.statistics.total_relic));
+        total_fairy.setString(formatNumber(player.statistics.total_fairy));
+        total_chest_open.setString(formatNumber(player.statistics.total_chest_open));
+        total_enemy_kill.setString(formatNumber(player.statistics.total_enemy_kill));
+        total_boss_kill.setString(formatNumber(player.statistics.total_boss_kill));
+        total_max_level.setString(formatNumber(player.statistics.total_max_level));
         //this.setPosition(cc.p(0,100));
     },
     openStatisticsPopup: function(){

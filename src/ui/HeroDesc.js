@@ -39,13 +39,13 @@ var HeroDesc = cc.Node.extend({
         lv.setString('Lv.' + hero.getLv() + "/" + hero.getMaxLevel());
         heroDescText.setString(hero.getDesc());
         setFont([heroName_text,/*lv,*/heroDescText]);
-        atkText.setString(hero.getAttack());
-        tapText.setString(hero.getHit());
-        lifeText.setString(parseInt(hero.getLife()));
-        ctrChanceText.setString(hero.getCtrChance()*100+"%");
-        ctrModifyText.setString(hero.getCtrModify()*100+"%");
-        atkPeriodText.setString(hero.getAnimateDelay());
-        cc.log(hero.getAttack() +","+hero.getHit()+","+hero.getLife()+","+hero.getCtrChance()+","+hero.getCtrModify()+","+hero.getAnimateDelay());
+        atkText.setString(formatNumber(hero.getAttack()));
+        tapText.setString(formatNumber(hero.getHit()));
+        lifeText.setString(formatNumber(hero.getLife()));
+        ctrChanceText.setString(formatNumber(hero.getCtrChance()*100,"rate"));
+        ctrModifyText.setString(formatNumber(hero.getCtrModify()*100,"rate"));
+        atkPeriodText.setString(formatNumber(hero.getAnimateDelay()));
+        //cc.log(hero.getAttack() +","+hero.getHit()+","+hero.getLife()+","+hero.getCtrChance()+","+hero.getCtrModify()+","+hero.getAnimateDelay());
         skillList.removeAllChildren();
         for (var i = 0; i < hero.getSkillCount(); i++) {
             var skillData = hero.getSkillData(i);
