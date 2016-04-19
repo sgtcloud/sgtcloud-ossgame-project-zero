@@ -655,7 +655,7 @@
             SgtApi.RouterService.getServerList(function (result, data) {
                 if (result) {
                     if (cc.isArray(data)) {
-                        PlayerData.servers = data;
+                        PlayerData.servers = data.reverse();
                     }
                     cb();
                 } else {

@@ -14,7 +14,7 @@ var HeroUnit = BattleUnit.extend({
         this.onReviveCountTime(dt);
 
     },
-    onReviveCountTime: function(dt){
+    onReviveCountTime: function (dt) {
         //复活倒计时逻辑
         if (this.isDead()) {
             this.recover = Math.max(0, this.recover - dt);
@@ -124,7 +124,9 @@ var HeroUnit = BattleUnit.extend({
         return !this.hero.isLocked();
     },
     onClear: function () {
-        this._super();
+        //this._super();
+        //this.removeFromParent(true);
+        this.setVisible(false);
         this.tombstone.removeFromParent(true);
         this.hideBuffIcons();
     },
@@ -144,7 +146,7 @@ var HeroUnit = BattleUnit.extend({
         this.tombstone = CCSUnit.create(res.tombstone_json);
         this.tombstone.setVisible(false);
     },
-    bindListeners: function(){
+    bindListeners: function () {
         customEventHelper.bindListener(EVENT.HERO_UPGRADE, function (event) {
             // 暂时不需要改
         }.bind(this));
@@ -168,12 +170,12 @@ var HeroUnit = BattleUnit.extend({
         this._super();
         this.onEnterHandle();
     },
-    onEnterHandle: function(){
+    onEnterHandle: function () {
         if (this.hero.getCurrentLife() <= 0) {
             var dieTime = PlayerData.getHeroDeadTime(this.hero.getId());
             var currentTime = PlayerData.getServerTime();
             var recoverTime = this.hero.getRecover() - (currentTime - dieTime ) / 1000;
-            console.log(this.hero.getId() + ' dieTime : ' + dieTime + ',recoverTime:' + recoverTime)
+            console.log(this.hero.getId() + ' dieTime : ' + dieTime + ',recoverTime:' + recoverTime);
             if (recoverTime > 0) {
                 // convert millisecond to second
                 this.onDead(recoverTime);
@@ -181,9 +183,11 @@ var HeroUnit = BattleUnit.extend({
                 PlayerData.clearHeroDeadTime(this.hero.getId());
                 this.onRevive();
             }
-        }/*else{
-            this.showBuffIcons();
-            this.refreshBuffIcons();
-        }*/
+        }
+    },
+    revert: function () {
+        this.setVisible(true);
+        this.showBuffIcons();
+        this.refreshBuffIcons();
     }
 });

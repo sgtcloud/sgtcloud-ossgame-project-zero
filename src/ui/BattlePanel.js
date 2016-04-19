@@ -104,7 +104,7 @@ var BattlePanel = cc.Node.extend({
         container.setTouchEnabled(false);
         this.battleField = new BattleField(container);
         this.battleField.initUnitPositions(root.getChildByName('sprites'));
-        this.disableBossBattleTimeCounter();
+        this.disableSpecialBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 
         Loot.prototype.getPackPosition = function () {
@@ -114,15 +114,16 @@ var BattlePanel = cc.Node.extend({
 
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
-            this.enableBossBattleTimeCounter(PlayerData.getStageData());
+            this.enableSpecialBattleTimeCounter(PlayerData.getStageData(),true);
         }.bind(this));
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.BOSS_BATTLE_FAIL, "color": TIPS_COLOR.YELLOW});
-            this.disableBossBattleTimeCounter();
+            console.log('离开boss战');
+            this.disableSpecialBattleTimeCounter();
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.BOSS_BATTLE_VICTORY, "color": TIPS_COLOR.YELLOW});
-            this.disableBossBattleTimeCounter();
+            this.disableSpecialBattleTimeCounter();
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.UPDATE_ENEMY_LIFE, function (event) {
@@ -141,15 +142,31 @@ var BattlePanel = cc.Node.extend({
 
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
             setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],false);
-            this.disableBossBattleTimeCounter();
+            this.enableSpecialBattleTimeCounter(null,false);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
             setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
+            var stage = PlayerData.getStageData();
+            if(stage.isBossBattle()){
+                scheduleOnce(this,function(){
+                    this.enableSpecialBattleTimeCounter(stage,true);
+                },CONSTS.arena_challenged_interval_timestamp);
+            }else{
+                this.disableSpecialBattleTimeCounter();
+            }
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
             setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
+            var stage = PlayerData.getStageData();
+            if(stage.isBossBattle()){
+                scheduleOnce(this,function(){
+                    this.enableSpecialBattleTimeCounter(stage,true);
+                },CONSTS.arena_challenged_interval_timestamp);
+            }else{
+                this.disableSpecialBattleTimeCounter();
+            }
         }.bind(this));
 
         DamageNumber.initPool();
@@ -166,9 +183,12 @@ var BattlePanel = cc.Node.extend({
                         }
                     }
                 }
-                var stage = PlayerData.getStageData();
-                if (stage.isBossBattle()) {
-                    this.updateBossBattleTime(dt, stage);
+                if (this.startBossTime && !this.battleField.arenaBattle) {
+                    this.updateBossBattleTime(dt);
+                }
+
+                if(this.startarenaTime){
+                    this.updateArenaBattleTime(dt);
                 }
             }
         };
@@ -186,28 +206,45 @@ var BattlePanel = cc.Node.extend({
         this.rewardBtn.visible = cc.isObject(player.not_get_reward);
     }
     ,
-    disableBossBattleTimeCounter: function () {
+    disableSpecialBattleTimeCounter: function () {
         this.timeText.visible = false;
         this.timeBar.visible = false;
         this.icon.visible = true;
     }
     ,
-    enableBossBattleTimeCounter: function (stage) {
+    enableSpecialBattleTimeCounter: function (stage,bossBattle) {
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
-        this.bossTimeMax = stage.getBossTimeMax();
+        if(bossBattle){
+            this.bossTimeMax = stage.getBossTimeMax();
+            this.startBossTime = true;
+        }else{
+            this.startarenaTime = true;
+            this.arenaTimeMax = CONSTS.arena_challenge_Max_time;
+        }
         //var self = this;
         this.timeText.ignoreContentAdaptWithSize(true);
     }
     ,
-    updateBossBattleTime: function (dt, stage) {
+    updateBossBattleTime: function (dt) {
         if (Math.floor(this.bossTimeMax) < 0) {
+            this.startBossTime = false;
             customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
         } else {
             this.bossTimeMax = this.bossTimeMax - dt;
             this.timeText.setString(Math.floor(this.bossTimeMax));
-            this.timeBar.setPercent(Math.floor(this.bossTimeMax) / stage.getBossTimeMax() * 100);
+            this.timeBar.setPercent(Math.floor(this.bossTimeMax) / PlayerData.getStageData().getBossTimeMax() * 100);
+        }
+    },
+    updateArenaBattleTime: function (dt) {
+        if (Math.floor(this.arenaTimeMax) < 0) {
+            this.startarenaTime = false;
+            customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE);
+        } else {
+            this.arenaTimeMax = this.arenaTimeMax - dt;
+            this.timeText.setString(Math.floor(this.arenaTimeMax));
+            this.timeBar.setPercent(Math.floor(this.arenaTimeMax) / CONSTS.arena_challenge_Max_time * 100);
         }
     }
 
