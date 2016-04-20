@@ -700,12 +700,23 @@
         openLoginPopup: function(user_text){
             var login = new LoginPanel(null/*sgt.context.user*/,user_text);
             login.openLoginPopup();
-        },register: function(username,pwd,callback){
-            var user = new SgtApi.User();
-            user.userName = username;
-            user.password = pwd;
-            SgtApi.UserService.regist_manual(user,callback);
-        },login: function(username,pwd,callback){
+        },
+        register: function(username,pwd,type,callback){
+            if(type === 1){
+                SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid,username,pwd,function(result,data){
+                    if(result){
+                        sgt.UserService.saveLocalStorage(username,pwd);
+                    }
+                    callback(result,data);
+                });
+            }else{
+                var user = new SgtApi.User();
+                user.userName = username;
+                user.password = pwd;
+                SgtApi.UserService.regist_manual(user,callback);
+            }
+        },
+        login: function(username,pwd,callback){
             SgtApi.UserService.login_manual(username,pwd,callback);
         },
         showCover: function(){

@@ -2,12 +2,12 @@
  * Created by peisy on 2016/04/20.
  */
 var RegisterPanel = cc.Node.extend({
-    ctor: function () {
+    ctor: function (type) {
         this._super();
         this.registerLayer = ccs.csLoader.createNode(res.new_user_layer_json);
-        this.initData();
+        this.initData(type);
     },
-    initData: function () {
+    initData: function (type) {
 
         var root = this.registerLayer.getChildByName('root');
         var userName = root.getChildByName('user');
@@ -19,7 +19,7 @@ var RegisterPanel = cc.Node.extend({
             if(!cc.isString(userName.getString())){
                 BasicPopup.alert('提示',"用户名不能为空或格式不正确");
             }else if(this.passwordValidate(psw.getString(),psw2.getString())){
-                Network.register(userName.getString(),psw.getString(),function(result,data){
+                Network.register(userName.getString(),psw.getString(),type,function(result,data){
                     if(result){
                         this.hiddenRegisterPopup();
                     }else{
@@ -53,7 +53,7 @@ var RegisterPanel = cc.Node.extend({
         GamePopup.closePopup(this.registerLayer);
     }
 });
-RegisterPanel.open = function(){
-    var register = new RegisterPanel();
+RegisterPanel.open = function(type){
+    var register = new RegisterPanel(type);
     register.openRegisterPopup();
 }

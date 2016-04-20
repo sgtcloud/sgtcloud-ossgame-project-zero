@@ -80,6 +80,11 @@ var BattlePanel = cc.Node.extend({
         bindButtonCallback(this.giftCodeBtn, function () {
             GiftCodePanel.open();
         }.bind(this));
+
+        this.userBtn = root.getChildByName('user_btn');
+        bindButtonCallback(this.userBtn, function () {
+            RegisterPanel.open(1);
+        }.bind(this));
         var scale = this.pack_btn.scale;
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
