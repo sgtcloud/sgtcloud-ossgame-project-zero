@@ -16,7 +16,6 @@
         "Children": [
           {
             "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
               "G": 200

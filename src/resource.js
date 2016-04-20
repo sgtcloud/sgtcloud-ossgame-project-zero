@@ -134,7 +134,9 @@ var res = {
     notice_layer_json: 'res/NoticeLayer.json',
     gift_code_layer_json: 'res/GiftCodeLayer.json',
     choose_list_view_json:'res/ChooseListView.json',
-    choose_list_layer_json:'res/ChooseListLayer.json'
+    choose_list_layer_json:'res/ChooseListLayer.json',
+    task_layer_json:'res/TaskLayer.json',
+    task_view_json:'res/TaskView.json'
 };
 var full_resouces = [];
 for (var i in res_datas) {

@@ -1,4 +1,4 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -7,33 +7,33 @@
 			<key>firstRechargeUI/88.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,469},{315,86}}</string>
+				<string>{{392,0},{315,86}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{315,86}</string>
 			</dict>
 			<key>firstRechargeUI/any.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{175,606},{210,76}}</string>
+				<string>{{529,86},{210,76}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{210,76}</string>
 			</dict>
 			<key>firstRechargeUI/chong.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{175,682},{73,69}}</string>
+				<string>{{392,214},{73,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{73,69}</string>
 			</dict>
@@ -51,29 +51,29 @@
 			<key>firstRechargeUI/popo.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{86,469},{137,128}}</string>
+				<string>{{392,86},{137,128}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{137,128}</string>
 			</dict>
 			<key>firstRechargeUI/song.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{244,682},{72,69}}</string>
+				<string>{{392,283},{72,69}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{72,69}</string>
 			</dict>
 			<key>firstRechargeUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{86,606},{183,89}}</string>
+				<string>{{707,0},{183,89}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -91,14 +91,14 @@
 			<key>realTextureFileName</key>
 			<string>FirstRechargeUI.png</string>
 			<key>size</key>
-			<string>{392,789}</string>
+			<string>{796,469}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>392</integer>
+			<integer>796</integer>
 			<key>height</key>
-			<integer>789</integer>
+			<integer>469</integer>
 		</dict>
 	</dict>
 </plist>
