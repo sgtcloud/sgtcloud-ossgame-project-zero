@@ -321,13 +321,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="reward_btn" ActionTag="-1641535427" Tag="41" IconVisible="False" LeftMargin="550.9161" RightMargin="-20.9161" TopMargin="175.6742" BottomMargin="450.3258" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="92" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="reward_btn" ActionTag="-1641535427" Tag="41" IconVisible="False" LeftMargin="551.5896" RightMargin="-21.5896" TopMargin="294.9059" BottomMargin="331.0941" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="92" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="110.0000" Y="114.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="605.9161" Y="507.3258" />
+                <Position X="606.5896" Y="388.0941" />
                 <Scale ScaleX="0.6000" ScaleY="0.6000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9467" Y="0.6856" />
+                <PrePosition X="0.9478" Y="0.5245" />
                 <PreSize X="0.1719" Y="0.1541" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Normal" Path="mainUI/reward_btn.png" Plist="" />
@@ -417,6 +417,36 @@
                 <DisabledFileData Type="Normal" Path="mainUI/giftCode_btn.png" Plist="" />
                 <PressedFileData Type="Normal" Path="mainUI/giftCode_btn.png" Plist="" />
                 <NormalFileData Type="Normal" Path="mainUI/giftCode_btn.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="task_btn" ActionTag="1532233121" Tag="61" IconVisible="False" LeftMargin="565.8146" RightMargin="-4.8146" TopMargin="180.2034" BottomMargin="468.7966" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="49" Scale9Height="69" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="79.0000" Y="91.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="605.3146" Y="514.2966" />
+                <Scale ScaleX="0.6000" ScaleY="0.6000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9458" Y="0.6950" />
+                <PreSize X="0.1234" Y="0.1230" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/user.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/user.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/user.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="user_btn" ActionTag="-290925161" Tag="62" IconVisible="False" LeftMargin="566.2725" RightMargin="-5.2725" TopMargin="243.2220" BottomMargin="405.7780" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="49" Scale9Height="69" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="79.0000" Y="91.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="605.7725" Y="451.2780" />
+                <Scale ScaleX="0.6000" ScaleY="0.6000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9465" Y="0.6098" />
+                <PreSize X="0.1234" Y="0.1230" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/task.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/task.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/task.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

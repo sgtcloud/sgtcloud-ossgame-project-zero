@@ -38,8 +38,17 @@
           <FilePathData Path="RankUI.csi" />
           <FilePathData Path="SettlementUI.csi" />
           <FilePathData Path="CloseBtn.csd" />
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="TaskLayer.csd" />
+          <FilePathData Path="BindLayer.csd" />
+          <FilePathData Path="ShopLayer.csd" />
+          <FilePathData Path="ShopTab.csd" />
+          <FilePathData Path="ShopView.csd" />
+          <FilePathData Path="ShopIconLayer.csd" />
+          <FilePathData Path="NoticeLayer.csd" />
+          <FilePathData Path="ButtonUI.csi" />
         </OpenedDocuments>
-        <ActiveDocument Path="CloseBtn.csd" />
+        <ActiveDocument Path="ButtonUI.csi" />
       </Value>
     </Item>
   </Properties>

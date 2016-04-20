@@ -77,7 +77,7 @@
                 <PreSize X="0.3833" Y="0.1750" />
                 <FileData Type="MarkedSubImage" Path="coverUI/login.png" Plist="cover.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="new" ActionTag="-1934315654" Tag="61" IconVisible="False" LeftMargin="246.6301" RightMargin="13.3699" TopMargin="181.0401" BottomMargin="38.9599" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="new" ActionTag="-1934315654" Tag="61" IconVisible="False" LeftMargin="246.6301" RightMargin="13.3699" TopMargin="181.0401" BottomMargin="38.9599" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="100.0000" Y="20.0000" />
                 <Children>
                   <AbstractNodeData Name="new" ActionTag="777940271" Tag="62" IconVisible="False" RightMargin="20.0000" TopMargin="4.0000" FontSize="16" LabelText="注册新用户" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -103,7 +103,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn" ActionTag="-210994256" Tag="60" IconVisible="False" LeftMargin="131.6931" RightMargin="132.3069" TopMargin="179.1022" BottomMargin="20.8978" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn" ActionTag="-210994256" Tag="60" IconVisible="False" LeftMargin="131.6931" RightMargin="132.3069" TopMargin="179.1022" BottomMargin="20.8978" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="96.0000" Y="40.0000" />
                 <Children>
                   <AbstractNodeData Name="btn" ActionTag="-514684744" Tag="55" IconVisible="False" RightMargin="-24.0000" TopMargin="-10.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="15" BottomEage="15" Scale9OriginX="15" Scale9OriginY="15" Scale9Width="2" Scale9Height="17" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
