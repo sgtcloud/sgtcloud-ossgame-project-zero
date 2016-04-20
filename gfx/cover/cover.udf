@@ -28,5 +28,19 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="ChooseListLayer.csd" />
+          <FilePathData Path="cover.csd" />
+          <FilePathData Path="NewNameLayer.csd" />
+          <FilePathData Path="cover.csi" />
+          <FilePathData Path="ChooseListView.csd" />
+          <FilePathData Path="UserLayer.csd" />
+          <FilePathData Path="NewUserLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="UserLayer.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

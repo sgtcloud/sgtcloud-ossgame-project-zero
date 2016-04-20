@@ -54,6 +54,7 @@ var ActiveSkill = cc.Class.extend({
         //this.reuse(unit, val);
         this.skill = skill;
         this.battle = battle;
+        this.isArenaBattleActiveSkill = this.battle.arenaBattle;
         this.playerId = playerId;
         this.firstCastTime = firstCastTime;
         if (this.skill && this.battle) {
@@ -74,13 +75,17 @@ var ActiveSkill = cc.Class.extend({
             }
         }.bind(this));
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
-            unschedule(this);
+            if(this.isArenaBattleActiveSkill){
+                unschedule(this);
+            }
             if (this.type !== this.TYPE_BUFF){
                 this.releaseEffectAnimations();
             }
         }.bind(this));
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
-            unschedule(this);
+            if(this.isArenaBattleActiveSkill){
+                unschedule(this);
+            }
             if (this.type !== this.TYPE_BUFF){
                 this.releaseEffectAnimations();
             }
@@ -127,7 +132,7 @@ var ActiveSkill = cc.Class.extend({
 
     updateTargets: function () {
 
-        if(this.battle.arenaBattle){
+        if(this.isArenaBattleActiveSkill){
             var isCurrentPlayerHero = false;
             if(this.playerId === player.id){
                 isCurrentPlayerHero = true;
@@ -225,7 +230,7 @@ var ActiveSkill = cc.Class.extend({
             this.initRes();
             if (this.effect === 'fs_damage_once') {
                 var pos = this.battle.enemyUnits.getCenterPos();
-                if(this.battle.arenaBattle) {
+                if(this.isArenaBattleActiveSkill) {
                     if (this.playerId !== player.id) {
                         pos = this.battle.heroUnits.getCenterPos();
                     }
@@ -277,23 +282,34 @@ var ActiveSkill = cc.Class.extend({
     },
 
     startBuffEffect: function () {
-        if (PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
-            PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect] += this.effectValue;
+        if (cc.isNumber(PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect])) {
+            PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect] += this.effectValue;
+        }else{
+            PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect] = this.effectValue;
         }
         for (var i in this.targets) {
             this.buffIcons[i].setScale(0.3);
-            this.buffIcons[i].runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.blink(1, 10)));
+            this.buffIconRunAction(this.buffIcons[i]);
             this.targets[i].addBuff(this.buffIcons[i]);
         }
+        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
+    },
+    buffIconRunAction: function(buffIcon){
+        buffIcon.runAction(cc.sequence(cc.fadeIn(0.3), cc.delayTime(this.duration - 0.3 - 1), cc.callFunc(function(){
+            if(!buffIcon.visible){
+                buffIcon.stopAllActions();
+            }
+        },this),cc.blink(1, 10)));
     },
 
     clearBuffEffect: function () {
-        if (PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect]) {
-            PlayerDataClass.create(this.battle.arenaBattle?null:this.playerId)[this.effect] -= this.effectValue;
+        if (PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect]) {
+            PlayerDataClass.create(this.isArenaBattleActiveSkill?this.playerId:null)[this.effect] -= this.effectValue;
         }
         for (var i in this.targets) {
             this.targets[i].removeBuff(this.buffIcons[i]);
         }
+        customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
     }
 
 });

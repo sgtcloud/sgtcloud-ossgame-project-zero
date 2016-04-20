@@ -62,7 +62,7 @@ var Hero = cc.Class.extend({
             if (tmpVal) {
                 rate += tmpVal / 100;
             }
-            tmpVal = PlayerData["tmp_" + propName + "_rate"];
+            tmpVal = PlayerData["buff_" + propName + "_rate"];
             if (tmpVal) {
                 rate += tmpVal / 100;
             }
@@ -100,7 +100,7 @@ var Hero = cc.Class.extend({
                 this.calcSkillEffect(effect_props[i]);
                 this.calcEquipEffect(effect_props[i]);
             }
-            //this.printHeroProps();
+            this.printHeroProps();
         }, isDead: function () {
             var dieTime = PlayerData.getHeroDeadTime(this.getId());
             return typeof dieTime !== 'undefined' || !this.getCurrentLife() > 0;

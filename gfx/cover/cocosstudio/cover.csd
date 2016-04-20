@@ -1903,7 +1903,7 @@
                 <Scale ScaleX="1.1000" ScaleY="1.1000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5631" Y="0.2918" />
-                <PreSize X="0.6594" Y="0.4292" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1914,7 +1914,7 @@
                 <Scale ScaleX="1.1000" ScaleY="1.1000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4688" Y="0.5000" />
-                <PreSize X="0.8500" Y="0.4219" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1925,7 +1925,7 @@
                 <Scale ScaleX="1.1000" ScaleY="1.1000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2500" Y="0.3854" />
-                <PreSize X="0.4469" Y="0.3417" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1936,7 +1936,7 @@
                 <Scale ScaleX="1.1000" ScaleY="1.1000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7188" Y="0.2500" />
-                <PreSize X="0.6141" Y="0.4115" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1947,7 +1947,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="1.0000" Y="0.5000" />
-                <PreSize X="0.3969" Y="0.3510" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1958,7 +1958,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.6641" Y="0.3021" />
-                <PreSize X="1.1563" Y="0.4479" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -1980,7 +1980,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4997" Y="0.5008" />
-                <PreSize X="0.8922" Y="0.1177" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -2002,7 +2002,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8229" />
-                <PreSize X="0.5156" Y="0.2188" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -2068,7 +2068,7 @@
                 <Scale ScaleX="2.0000" ScaleY="2.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2453" Y="0.1736" />
-                <PreSize X="0.1453" Y="0.1344" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -2079,7 +2079,7 @@
                 <Scale ScaleX="2.0000" ScaleY="2.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2453" Y="0.1736" />
-                <PreSize X="0.1453" Y="0.1344" />
+                <PreSize X="0.0750" Y="0.0479" />
                 <FileData Type="MarkedSubImage" Path="coverSprite/effect/empty.png" Plist="cover.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
@@ -2178,6 +2178,42 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2704" Y="0.2031" />
+                <PreSize X="0.4688" Y="0.0625" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="user" ActionTag="468493158" Tag="34" IconVisible="False" LeftMargin="174.0507" RightMargin="165.9493" TopMargin="634.0000" BottomMargin="266.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="300.0000" Y="60.0000" />
+                <Children>
+                  <AbstractNodeData Name="text_bg" ActionTag="1527463316" Tag="35" IconVisible="False" Scale9Enable="True" LeftEage="9" RightEage="9" TopEage="11" BottomEage="11" Scale9OriginX="9" Scale9OriginY="11" Scale9Width="10" Scale9Height="14" ctype="ImageViewObjectData">
+                    <Size X="300.0000" Y="60.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="1.0000" />
+                    <FileData Type="MarkedSubImage" Path="coverUI/bg_03.png" Plist="cover.plist" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="text" ActionTag="-1118873881" Tag="36" IconVisible="False" LeftMargin="15.5933" RightMargin="14.4067" TopMargin="6.9542" BottomMargin="13.0458" IsCustomSize="True" FontSize="24" LabelText="指尖骑士999区" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="270.0000" Y="40.0000" />
+                    <AnchorPoint />
+                    <Position X="15.5933" Y="13.0458" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.0520" Y="0.2174" />
+                    <PreSize X="0.9000" Y="0.6667" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="174.0507" Y="266.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2720" Y="0.2771" />
                 <PreSize X="0.4688" Y="0.0625" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

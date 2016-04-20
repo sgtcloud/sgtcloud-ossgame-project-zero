@@ -71,6 +71,16 @@
       <FilePathData Path="coverUI/list_view_bg.png" />
       <FilePathData Path="coverUI/new.png" />
       <FilePathData Path="coverUI/player.png" />
+      <FilePathData Path="coverUI/close_icon.png" />
+      <FilePathData Path="coverUI/cover_bg.jpg" />
+      <FilePathData Path="coverUI/login.png" />
+      <FilePathData Path="coverUI/login2.png" />
+      <FilePathData Path="coverUI/logo.png" />
+      <FilePathData Path="coverUI/new1.png" />
+      <FilePathData Path="coverUI/new3.png" />
+      <FilePathData Path="coverUI/psw.png" />
+      <FilePathData Path="coverUI/title_bg.png" />
+      <FilePathData Path="coverUI/user.png" />
     </ImageFiles>
     <MaxSize Width="2400" Height="2400" />
   </Content>

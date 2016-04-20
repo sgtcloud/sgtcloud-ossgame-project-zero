@@ -461,6 +461,19 @@ var BattleField = cc.Class.extend({
         hero.ready = true;
         this.standHeroPosNum++;
     },
+    revertHerosIntoBattle: function(){
+        for(var i in this.tempHeroUnits){
+            var hero = this.tempHeroUnits[i];
+            //hero.setPosition(this.heroPos[this.standHeroPosNum].getPosition());
+            // 每个精灵node位置的tag当成zorder使用
+            //this.addSprite(hero, this.heroPos[this.standHeroPosNum].getTag());
+            hero.ready = true;
+            //this.standHeroPosNum++;
+            this.heroUnits.push(hero);
+            hero.revert();
+        }
+    },
+
 
     /**
      * 根据关卡模型数据初始化敌人单位
@@ -551,7 +564,7 @@ var BattleField = cc.Class.extend({
         delete this.challengedId;
         setTimeout(function(){
             this.initBattle(PlayerData.getStageData());
-        }.bind(this),2000);
+        }.bind(this),CONSTS.arena_challenged_interval_timestamp);
     },
     /**
      * 根据关卡数据初始化战斗，仅调用一次
@@ -559,13 +572,23 @@ var BattleField = cc.Class.extend({
      */
     initBattle: function (stage) {
         this.loadStageBackground(stage);
-        this.initBattleHeroes(PlayerData.getHeroes());
+        if(cc.isArray(this.tempHeroUnits) && this.tempHeroUnits.length > 0){
+            this.revertHerosIntoBattle();
+            this.tempHeroUnits = [];
+        }else{
+            this.initBattleHeroes(PlayerData.getHeroes());
+        }
         this.prepareBattle(stage);
     },
     /**
      * 提醒顶部面板更新关卡的状态，例如Boss战和关卡序号
      */
     initArenaBattle: function (playerId) {
+        this.tempHeroUnits = [];
+        this.heroUnits.foreach(function(hero,i){
+            this.tempHeroUnits[i] = hero;
+        },this);
+        console.log(this.tempHeroUnits);
         this.heroUnits.clear();
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;

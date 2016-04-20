@@ -25,6 +25,8 @@ var CONSTS = {
     "money_tree_one_price": 5,
     "flySpirit_interval_time": 180,
     "arena_challenge_times": 5,
+    "arena_challenged_interval_timestamp": 2 * 1000,
+    "arena_challenge_Max_time": 60,
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 1},
     "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
     "monthCard_daily_bonus": {"unit": "gem", "value": 100},
@@ -447,112 +449,7 @@ function getUrlParam(name) {
 
 var tipTemplate;
 function showCover() {
-    var json = ccs.load(res.cover_scene_json);
-    var scene = json.node.getChildByName('root');
-    scene.setAnchorPoint(cc.p(0, 0));
-    scene.runAction(json.action);
-    var tasks = Network.getAnnounces();
-    tasks.push(function (cb) {
-        var done = false;
-        json.action.setLastFrameCallFunc(function () {
-            if (!done) {
-                done = true;
-                cb();
-            }
-        });
-        json.action.play('show', false);
-    },function(cb){
-        Network.getServerList(true,cb);
-    });
-    async.parallel(tasks, function (err) {
-        if (err) {
-            console.log(err);
-        } else {
-            NoticePanel.open();
-            loginBtn.setEnabled(true);
-            loginBtn.setBright(true);
-            chooseBtn.setVisible(true);
-            var server ;
-            if(PlayerData.servers){
-                server = PlayerData.servers[0];
-                full.setVisible(false);
-                state.setVisible(true);
-            }else{
-                var servers = PlayerData.getLocalServerList();
-                server = servers[servers.length-1];
-                state.setVisible(false);
-                full.setVisible(true);
-            }
-            Network.setServerInfo(server);
-            text.setString(server.name);
-            chooseBtn.setTouchEnabled(false);
-            list_btn.setTouchEnabled(false);
-            bindTouchEventListener(function(){
-                ChooseServerPanel.open(chooseBtn);
-                return true;
-            },chooseBtn);
-        }
-    });
-    tipTemplate = ccs.load(res.tips).node.getChildByName("root");
-    window.tip2 = new Tip(scene);
-    var loginBtn = scene.getChildByName("cover_login_btn");
-    var chooseBtn = scene.getChildByName('choose');
-    var text = chooseBtn.getChildByName('text');
-    var state = chooseBtn.getChildByName('state');
-    var list_btn = chooseBtn.getChildByName('list_btn');
-    var full = chooseBtn.getChildByName('full');
-
-    chooseBtn.setVisible(false);
-    /*bindButtonCallback(list_btn,function(){
-        ChooseServerPanel.open();
-    });*/
-    loginBtn.setEnabled(false);
-    loginBtn.setBright(false);
-    bindButtonCallback(loginBtn, function () {
-        SgtApi.CreateServices();
-        Network.updateLocalServerList();
-        Network.getPlayerSave(function(result){
-            if(result){
-                console.log(JSON.stringify(result));
-                return false;
-            }
-            //判断当前用户是否存在角色
-            if (!PlayerData.modelPlayer) {
-                loginBtn.setVisible(false);
-                chooseBtn.setVisible(false);
-                Network.openNewNameLayer(scene, createPlayerComplete);
-            }else{
-                var mark = localStorage.getItem('mark-sgt-html5-game');
-                if(mark){
-                    initGame(createPlayerComplete);
-                }else{
-                    async.series({
-                        "flag1": function (callback) {
-                            tip2.toggle({'delay': 30, 'text': '正在加载角色数据并初始化游戏。。。。。。'});
-                            cc.loader.load(getSecondResource(), function () {
-                                initGame(createPlayerComplete);
-                                tip2.stopAllActions();
-                                tip2.setVisible(false);
-                                callback(null,"flag1");
-                            });
-                        }, "flag2": function (callback) {
-                            //异步加载全部资源
-                            cc.loader.load(full_resouces, function () {
-                                localStorage.setItem('mark-sgt-html5-game', 1);
-                                console.log("flag2正在执行好了");
-                                callback(null,"flag2");
-                            });
-                        }
-                    }, function (callback) {
-                        console.log(callback);
-                    });
-                }
-
-            }
-        });
-
-    });
-    cc.director.runScene(scene);
+    CoverPanel();
 }
 
 function createPlayerComplete() {
@@ -795,4 +692,20 @@ function _processReward(reward){
         }
     }
     return descText;
+}
+
+function formatNumber(data,type){
+    if(typeof type === 'undefined'){
+        if(data >= 0 && data <1000){
+            return Math.floor(data);
+        }else if(data >= 1000 && data < 1000000){
+            return (data/1000.0).toFixed(2)+"k";
+        }else if(data >= 1000000 && data < 1000000000){
+            return (data/1000000.0).toFixed(2)+"m";
+        }else {
+            return (data/1000000000.0).toFixed(2)+"b";
+        }
+    }else if(type == 'rate'){
+        return data.toFixed(2)+"%";
+    }
 }

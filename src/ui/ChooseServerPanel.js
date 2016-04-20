@@ -56,11 +56,11 @@ var ChooseServerPanel = cc.Node.extend({
             this.hiddenServerListPopup();
             return true;
         }.bind(this),root);
-        this.listView.setItemsMargin(10);
+        //this.listView.setItemsMargin(5);
         this.listView.pushBackCustomItem(root);
     },
     openServerListPopup: function () {
-        GamePopup.openPopup(this.chooseListLayer,/*cc.p(140,210)*/null,false);
+        GamePopup.openPopup(this.chooseListLayer,cc.p(140,255)/*null*/,false);
     },
     hiddenServerListPopup: function () {
         GamePopup.closePopup(this.chooseListLayer);

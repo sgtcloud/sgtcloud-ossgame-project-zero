@@ -47,7 +47,7 @@ var ArenaHero = Hero.extend({
         if (tmpVal) {
             rate += tmpVal / 100;
         }
-        tmpVal = PlayerDataClass.create(this._playerId)["tmp_" + propName + "_rate"];
+        tmpVal = PlayerDataClass.create(this._playerId)["buff_" + propName + "_rate"];
         if (tmpVal) {
             rate += tmpVal / 100;
         }

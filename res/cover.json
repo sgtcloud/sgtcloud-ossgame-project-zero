@@ -6029,8 +6029,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 320.0,
-                "Y": 110.0,
+                "X": 91.0,
+                "Y": 34.0,
                 "FrameIndex": 98,
                 "EasingData": {
                   "Type": 0
@@ -6239,8 +6239,8 @@
                   "Y": 0.2918
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.6594,
+                  "Y": 0.4292
                 },
                 "LeftMargin": 336.3637,
                 "RightMargin": 255.6363,
@@ -6285,8 +6285,8 @@
                   "Y": 0.5
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.85,
+                  "Y": 0.4219
                 },
                 "LeftMargin": 276.0,
                 "RightMargin": 316.0,
@@ -6331,8 +6331,8 @@
                   "Y": 0.3854
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.4469,
+                  "Y": 0.3417
                 },
                 "LeftMargin": 136.0,
                 "RightMargin": 456.0,
@@ -6377,8 +6377,8 @@
                   "Y": 0.25
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.6141,
+                  "Y": 0.4115
                 },
                 "LeftMargin": 436.0,
                 "RightMargin": 156.0,
@@ -6420,8 +6420,8 @@
                   "Y": 0.5
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.3969,
+                  "Y": 0.351
                 },
                 "LeftMargin": 640.0,
                 "RightMargin": -48.0,
@@ -6465,8 +6465,8 @@
                   "Y": 0.3021
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 1.1562,
+                  "Y": 0.4479
                 },
                 "LeftMargin": 401.0,
                 "RightMargin": 191.0,
@@ -6556,8 +6556,8 @@
                   "Y": 0.5008
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.8922,
+                  "Y": 0.1177
                 },
                 "LeftMargin": 271.8131,
                 "RightMargin": 320.1869,
@@ -6646,8 +6646,8 @@
                   "Y": 0.8229
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.5156,
+                  "Y": 0.2188
                 },
                 "LeftMargin": 296.0,
                 "RightMargin": 296.0,
@@ -6915,8 +6915,8 @@
                   "Y": 0.1736
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.1453,
+                  "Y": 0.1344
                 },
                 "LeftMargin": 133.0004,
                 "RightMargin": 458.9996,
@@ -6960,8 +6960,8 @@
                   "Y": 0.1736
                 },
                 "PreSize": {
-                  "X": 0.075,
-                  "Y": 0.0479
+                  "X": 0.1453,
+                  "Y": 0.1344
                 },
                 "LeftMargin": 133.0004,
                 "RightMargin": 458.9996,
@@ -6977,52 +6977,26 @@
                 "ctype": "SpriteObjectData"
               },
               {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "DisabledFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "coverSprite/other/btn_2.png",
-                  "Plist": "cover.plist"
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
                 },
-                "PressedFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "coverSprite/other/btn_2.png",
-                  "Plist": "cover.plist"
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
                 },
-                "NormalFileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "coverSprite/other/btn_1.png",
-                  "Plist": "cover.plist"
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 236,
-                "Scale9Height": 151,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
+                "AnchorPoint": {},
                 "Position": {
-                  "X": 320.0,
-                  "Y": 160.0
+                  "X": 229.0,
+                  "Y": 77.5
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -7031,26 +7005,103 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.1667
+                  "X": 0.3578,
+                  "Y": 0.0807
                 },
                 "PreSize": {
-                  "X": 0.4156,
-                  "Y": 0.1802
+                  "X": 0.2812,
+                  "Y": 0.0729
                 },
-                "LeftMargin": 187.0,
-                "RightMargin": 187.0,
-                "TopMargin": 713.5,
-                "BottomMargin": 73.5,
-                "Tag": 43,
-                "ActionTag": 868730888,
+                "LeftMargin": 229.0,
+                "RightMargin": 231.0,
+                "TopMargin": 812.5,
+                "BottomMargin": 77.5,
+                "Tag": 42,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverSprite/other/btn_2.png",
+                      "Plist": "cover.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverSprite/other/btn_2.png",
+                      "Plist": "cover.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverSprite/other/btn_1.png",
+                      "Plist": "cover.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 236,
+                    "Scale9Height": 151,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 320.0,
+                      "Y": 160.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.7778,
+                      "Y": 2.2857
+                    },
+                    "PreSize": {
+                      "X": 1.4778,
+                      "Y": 2.4714
+                    },
+                    "LeftMargin": 187.0,
+                    "RightMargin": -273.0,
+                    "TopMargin": -176.5,
+                    "BottomMargin": 73.5,
+                    "Tag": 43,
+                    "ActionTag": 868730888,
+                    "Size": {
+                      "X": 266.0,
+                      "Y": 173.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 1734158599,
                 "Size": {
-                  "X": 266.0,
-                  "Y": 173.0
+                  "X": 180.0,
+                  "Y": 70.0
                 },
-                "VisibleForFrame": false,
                 "Name": "cover_login_btn",
-                "ctype": "ButtonObjectData"
+                "ctype": "PanelObjectData"
               },
               {
                 "BackColorAlpha": 102,
