@@ -7,13 +7,35 @@
 			<key>firstRechargeUI/88.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{392,0},{315,86}}</string>
+				<string>{{0,469},{315,86}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<true />
 				<key>sourceSize</key>
 				<string>{315,86}</string>
+			</dict>
+			<key>firstRechargeUI/any.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{175,606},{210,76}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{210,76}</string>
+			</dict>
+			<key>firstRechargeUI/chong.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{175,682},{73,69}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{73,69}</string>
 			</dict>
 			<key>firstRechargeUI/girl.png</key>
 			<dict>
@@ -26,10 +48,32 @@
 				<key>sourceSize</key>
 				<string>{392,469}</string>
 			</dict>
+			<key>firstRechargeUI/popo.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{86,469},{137,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{137,128}</string>
+			</dict>
+			<key>firstRechargeUI/song.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{244,682},{72,69}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{72,69}</string>
+			</dict>
 			<key>firstRechargeUI/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{392,315},{183,89}}</string>
+				<string>{{86,606},{183,89}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -47,14 +91,14 @@
 			<key>realTextureFileName</key>
 			<string>FirstRechargeUI.png</string>
 			<key>size</key>
-			<string>{481,498}</string>
+			<string>{392,789}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>481</integer>
+			<integer>392</integer>
 			<key>height</key>
-			<integer>498</integer>
+			<integer>789</integer>
 		</dict>
 	</dict>
 </plist>
