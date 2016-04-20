@@ -102,7 +102,7 @@ var res = {
     pvp_layer_json: 'res/PVPLayer.json',
     pvp_opponent_view_json: 'res/PVPOpponentView.json',
     pvp_record: 'res/PVPRecord.json',
-    pvp_record_view:'res/PVPRecordView.json',
+    pvp_record_view: 'res/PVPRecordView.json',
     recharge_icon_layer_json: 'res/RechargeIconLayer.json',
     recharge_layer_json: 'res/RechargeLayer.json',
 
@@ -133,8 +133,10 @@ var res = {
     notice_view_json: 'res/NoticeView.json',
     notice_layer_json: 'res/NoticeLayer.json',
     gift_code_layer_json: 'res/GiftCodeLayer.json',
-    choose_list_view_json:'res/ChooseListView.json',
-    choose_list_layer_json:'res/ChooseListLayer.json'
+    choose_list_view_json: 'res/ChooseListView.json',
+    choose_list_layer_json: 'res/ChooseListLayer.json',
+    new_user_layer_json: 'res/NewUserLayer.json',
+    user_layer_json: 'res/UserLayer.json'
 };
 var full_resouces = [];
 for (var i in res_datas) {
@@ -143,26 +145,26 @@ for (var i in res_datas) {
 for (var i in res) {
     full_resouces.push(res[i]);
 }
-function getFirstResources(){
+function getFirstResources() {
     var first_resources = [];
-    var res1 = [res.hero_102_json,res.hero_103_json,res.hero_104_json,res.hero_105_json,res.hero101skill02,res.hero102skill02,res.hero103skill01,res.hero104skill02,
-        res.effect5003,res.effect5004,res.effect5005,res.effect5006,res.effect5007,res.effect5008,res.effect5009,res.effect5010,res.enemy_1003_json,res.enemy_1004_json,res.enemy_1005_json];
-    var res2 = [res.mail_view_json ,res.mail_layer_json,res.first_recharge_layer_json,res.recharge_layer_json,res.recharge_icon_layer_json,res.hero_desc_json,res.prompt1_layer_json,res.prompt2_layer_json
-        ,res.prompt_icon_json,res.offline_reward_layer,res.skill_desc_json,res.pack_layer_json,res.statistics_layer];
+    var res1 = [res.hero_102_json, res.hero_103_json, res.hero_104_json, res.hero_105_json, res.hero101skill02, res.hero102skill02, res.hero103skill01, res.hero104skill02,
+        res.effect5003, res.effect5004, res.effect5005, res.effect5006, res.effect5007, res.effect5008, res.effect5009, res.effect5010, res.enemy_1003_json, res.enemy_1004_json, res.enemy_1005_json];
+    var res2 = [res.mail_view_json, res.mail_layer_json, res.first_recharge_layer_json, res.recharge_layer_json, res.recharge_icon_layer_json, res.hero_desc_json, res.prompt1_layer_json, res.prompt2_layer_json
+        , res.prompt_icon_json, res.offline_reward_layer, res.skill_desc_json, res.pack_layer_json, res.statistics_layer];
     for (var i in res_datas) {
         first_resources.push(res_datas[i]);
     }
     for (var i in res) {
-        if(res2.indexOf(res[i]) === -1 && res1.indexOf(res[i]) === -1){
+        if (res2.indexOf(res[i]) === -1 && res1.indexOf(res[i]) === -1) {
             first_resources.push(res[i]);
         }
     }
     return first_resources;
 }
 
-function getSecondResource(){
-    var second_resource = [res.hero_102_json,res.hero_103_json,res.hero_104_json,res.hero_105_json,res.hero101skill02,res.hero102skill02,res.hero103skill01,res.hero104skill02,
-        res.effect5003,res.effect5004,res.effect5005,res.effect5006,res.effect5007,res.effect5008,res.effect5009,res.effect5010,res.enemy_1003_json,res.enemy_1004_json,res.enemy_1005_json];
+function getSecondResource() {
+    var second_resource = [res.hero_102_json, res.hero_103_json, res.hero_104_json, res.hero_105_json, res.hero101skill02, res.hero102skill02, res.hero103skill01, res.hero104skill02,
+        res.effect5003, res.effect5004, res.effect5005, res.effect5006, res.effect5007, res.effect5008, res.effect5009, res.effect5010, res.enemy_1003_json, res.enemy_1004_json, res.enemy_1005_json];
     return second_resource;
 }
 

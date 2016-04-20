@@ -449,7 +449,7 @@ function getUrlParam(name) {
 
 var tipTemplate;
 function showCover() {
-    CoverPanel();
+    Network.showCover();
 }
 
 function createPlayerComplete() {

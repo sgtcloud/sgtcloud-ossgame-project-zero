@@ -69,6 +69,8 @@
     "src/ui/GiftCodePanel.js",
     "src/ui/ChooseServerPanel.js",
     "src/ui/CoverPanel.js",
+    "src/ui/LoginPanel.js",
+    "src/ui/RegisterPanel.js",
     "src/Network.js",
     "src/guideConfig.js",
     "src/apps.js"
