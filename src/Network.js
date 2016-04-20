@@ -2,13 +2,13 @@
     var NetworkResolve = function () {
     };
     NetworkResolve.prototype = {
-        loginSuccess: true,
+        isVisitor: false,
         getSgtApi: function () {
             return SgtApi || sgt;
         },
-        //是否登陆
-        isLoginSuccess: function () {
-            return this.loginSuccess;
+        //是否是游客
+        isVisitor: function () {
+            return this.isVisitor;
         },
         //微信自动登录业务
         autoWxLoginService: function (wxInfo, cb) {
@@ -61,12 +61,18 @@
         },
         //一般自动登录业务
         autoLoginService: function (cb) {
+            var username = localStorage.getItem("sgt-" + SgtApi.context.appId + "-username");
+            var password = localStorage.getItem("sgt-" + SgtApi.context.appId + "-password");
+            if (!username || !password) {
+                this.isVisitor = true;
+            }
             SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
                     if (user !== null) {
                         // console.log("自动注册成功" + user);
                         //登陆成功 获取用户存档
                         //this.getPlayerSave(cb);
+                        SgtApi.context.user = user;
                         cb();
                     } else {
                         cb('用户信息异常');
@@ -690,6 +696,153 @@
             } else {
                 cb();
             }
+        },
+        openLoginPopup: function(user_text){
+            var login = new LoginPanel(null/*sgt.context.user*/,user_text);
+            login.openLoginPopup();
+        },register: function(username,pwd,callback){
+            var user = new SgtApi.User();
+            user.userName = username;
+            user.password = pwd;
+            SgtApi.UserService.regist_manual(user,callback);
+        },login: function(username,pwd,callback){
+            SgtApi.UserService.login_manual(username,pwd,callback);
+        },
+        showCover: function(){
+            var json = ccs.load(res.cover_scene_json);
+            var scene = json.node.getChildByName('root');
+            scene.setAnchorPoint(cc.p(0, 0));
+            scene.runAction(json.action);
+            var loginBtn = scene.getChildByName("cover_login_btn");
+            var btn = loginBtn.getChildByName('btn');
+            var chooseBtn = scene.getChildByName('choose');
+            var text = chooseBtn.getChildByName('text');
+            var state = chooseBtn.getChildByName('state');
+            var list_btn = chooseBtn.getChildByName('list_btn');
+            var full = chooseBtn.getChildByName('full');
+            var user_layout = scene.getChildByName("user");
+            var user_text = user_layout.getChildByName("text");
+            tipTemplate = ccs.load(res.tips).node.getChildByName("root");
+            window.tip2 = new Tip(scene);
+            chooseBtn.setVisible(false);
+            user_layout.setVisible(false);
+            btn.setEnabled(false);
+            btn.setBright(false);
+            this.initData = function () {
+                var tasks = Network.getAnnounces();
+                tasks.push(function (cb) {
+                    var done = false;
+                    json.action.setLastFrameCallFunc(function () {
+                        if (!done) {
+                            done = true;
+                            cb();
+                        }
+                    });
+                    json.action.play('show', false);
+                }, function (cb) {
+                    Network.getServerList(true, cb);
+                });
+                async.parallel(tasks, function (err) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        this.RefreshStatus();
+                    }
+                }.bind(this));
+            };
+            this.RefreshStatus = function () {
+                NoticePanel.open(true);
+                btn.setEnabled(true);
+                btn.setBright(true);
+                chooseBtn.setVisible(true);
+                user_layout.setVisible(true);
+                var server;
+                if (PlayerData.servers) {
+                    server = PlayerData.servers[0];
+                    full.setVisible(false);
+                    state.setVisible(true);
+                } else {
+                    var servers = PlayerData.getLocalServerList();
+                    server = servers[servers.length - 1];
+                    state.setVisible(false);
+                    full.setVisible(false);
+                }
+                if(Network.isVisitor){
+                    user_text.setString('游客账号');
+                }else{
+                    user_text.setString(sgt.context.user.userName);
+                }
+                //Network.setServerInfo(server);
+                SgtApi.context.server = server;
+                text.setString(server.name);
+                chooseBtn.setTouchEnabled(false);
+                loginBtn.setTouchEnabled(false);
+                user_layout.setTouchEnabled(false);
+                btn.setTouchEnabled(false);
+                bindTouchEventListener(function () {
+                    ChooseServerPanel.open(chooseBtn);
+                    return true;
+                }, chooseBtn);
+                bindButtonCallback(list_btn, function () {
+                    ChooseServerPanel.open(chooseBtn);
+                });
+                bindTouchEventListener(function(){
+                    this.EnterGame();
+                    return true;
+                }.bind(this), loginBtn);
+                bindTouchEventListener(function () {
+                    Network.openLoginPopup(user_text);
+                    return true;
+                }, user_layout);
+            };
+            this.EnterGame = function () {
+                SgtApi.CreateServices();
+                Network.updateLocalServerList();
+                Network.getPlayerSave(function (result) {
+                    if (result) {
+                        console.log(JSON.stringify(result));
+                        return false;
+                    }
+                    //判断当前用户是否存在角色
+                    if (!PlayerData.modelPlayer) {
+                        loginBtn.setVisible(false);
+                        chooseBtn.setVisible(false);
+                        Network.openNewNameLayer(scene, createPlayerComplete);
+                    } else {
+                        var mark = localStorage.getItem('mark-sgt-html5-game');
+                        if (mark) {
+                            tip2.toggle({'delay': 30, 'text': '正在加载角色数据并初始化游戏。。。。。。'});
+                            initGame(createPlayerComplete);
+                            tip2.stopAllActions();
+                            tip2.setVisible(false);
+                        } else {
+                            async.series({
+                                "flag1": function (callback) {
+                                    tip2.toggle({'delay': 30, 'text': '正在加载角色数据并初始化游戏。。。。。。'});
+                                    cc.loader.load(getSecondResource(), function () {
+                                        initGame(createPlayerComplete);
+                                        tip2.stopAllActions();
+                                        tip2.setVisible(false);
+                                        callback(null, "flag1");
+                                    });
+                                }, "flag2": function (callback) {
+                                    //异步加载全部资源
+                                    cc.loader.load(full_resouces, function () {
+                                        localStorage.setItem('mark-sgt-html5-game', 1);
+                                        console.log("flag2正在执行好了");
+                                        callback(null, "flag2");
+                                    });
+                                }
+                            }, function (callback) {
+                                console.log(callback);
+                            });
+                        }
+                    }
+                    return true;
+                });
+            };
+            this.initData();
+            cc.director.runScene(scene);
         }
 
     };

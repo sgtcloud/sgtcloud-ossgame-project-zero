@@ -100,7 +100,7 @@ var Hero = cc.Class.extend({
                 this.calcSkillEffect(effect_props[i]);
                 this.calcEquipEffect(effect_props[i]);
             }
-            this.printHeroProps();
+            //this.printHeroProps();
         }, isDead: function () {
             var dieTime = PlayerData.getHeroDeadTime(this.getId());
             return typeof dieTime !== 'undefined' || !this.getCurrentLife() > 0;

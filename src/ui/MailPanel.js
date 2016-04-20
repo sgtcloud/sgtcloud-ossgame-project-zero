@@ -1,5 +1,5 @@
 /**
- * Created by highkay on 2015/12/29.
+ * Created by peisy on 2016/03/07.
  */
 var MailPanel = cc.Node.extend({
     ctor: function () {
