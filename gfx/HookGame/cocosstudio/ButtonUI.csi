@@ -24,6 +24,8 @@
       <FilePathData Path="buttonUI/upLevel.png" />
       <FilePathData Path="buttonUI/get.png" />
       <FilePathData Path="buttonUI/now.png" />
+      <FilePathData Path="buttonUI/bind.png" />
+      <FilePathData Path="buttonUI/bind_text.png" />
     </ImageFiles>
     <MaxSize Width="512" Height="512" />
   </Content>

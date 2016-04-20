@@ -854,7 +854,7 @@
                   "Y": 0.9744
                 },
                 "PreSize": {
-                  "X": 0.0313,
+                  "X": 0.0312,
                   "Y": 0.0297
                 },
                 "LeftMargin": 313.0436,
@@ -1365,8 +1365,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 605.9161,
-                  "Y": 507.3258
+                  "X": 606.5896,
+                  "Y": 388.0941
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1375,17 +1375,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9467,
-                  "Y": 0.6856
+                  "X": 0.9478,
+                  "Y": 0.5245
                 },
                 "PreSize": {
                   "X": 0.1719,
                   "Y": 0.1541
                 },
-                "LeftMargin": 550.9161,
-                "RightMargin": -20.9161,
-                "TopMargin": 175.6742,
-                "BottomMargin": 450.3258,
+                "LeftMargin": 551.5896,
+                "RightMargin": -21.5896,
+                "TopMargin": 294.9059,
+                "BottomMargin": 331.0941,
                 "Tag": 41,
                 "ActionTag": -1641535427,
                 "Size": {
@@ -1802,6 +1802,156 @@
                 },
                 "Name": "giftCode_btn",
                 "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/user.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/user.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/user.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 49,
+                "Scale9Height": 69,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 605.3146,
+                  "Y": 514.2966
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9458,
+                  "Y": 0.695
+                },
+                "PreSize": {
+                  "X": 0.1234,
+                  "Y": 0.123
+                },
+                "LeftMargin": 565.8146,
+                "RightMargin": -4.8146,
+                "TopMargin": 180.2034,
+                "BottomMargin": 468.7966,
+                "Tag": 61,
+                "ActionTag": 1532233121,
+                "Size": {
+                  "X": 79.0,
+                  "Y": 91.0
+                },
+                "Name": "task_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/task.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/task.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/task.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 49,
+                "Scale9Height": 69,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 605.7725,
+                  "Y": 451.278
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9465,
+                  "Y": 0.6098
+                },
+                "PreSize": {
+                  "X": 0.1234,
+                  "Y": 0.123
+                },
+                "LeftMargin": 566.2725,
+                "RightMargin": -5.2725,
+                "TopMargin": 243.222,
+                "BottomMargin": 405.778,
+                "Tag": 62,
+                "ActionTag": -290925161,
+                "Size": {
+                  "X": 79.0,
+                  "Y": 91.0
+                },
+                "Name": "user_btn",
+                "ctype": "ButtonObjectData"
               }
             ],
             "ActionTag": 2088090531,
@@ -1838,7 +1988,9 @@
         "mainUI/pack_btn.png",
         "mainUI/recharge_btn.png",
         "mainUI/reward_btn.png",
-        "mainUI/statistics_btn.png"
+        "mainUI/statistics_btn.png",
+        "mainUI/task.png",
+        "mainUI/user.png"
       ],
       "ctype": "GameFileData"
     }

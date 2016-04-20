@@ -62,6 +62,8 @@
           </PlistImageFolder>
           <Image Name="get.png" />
           <Image Name="now.png" />
+          <Image Name="bind.png" />
+          <Image Name="bind_text.png" />
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -274,6 +276,10 @@
           <Image Name="bg_23.png" />
           <Image Name="bg_24.png" />
           <Image Name="touch.png" />
+          <Image Name="task.png" />
+          <Image Name="user.png" />
+          <Image Name="psw.png" />
+          <Image Name="user1.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -769,6 +775,7 @@
         </Folder>
         <PlistInfo Name="TaskUI.csi" Type="Plist" />
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
+        <Project Name="BindLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
