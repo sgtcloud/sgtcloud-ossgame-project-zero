@@ -1,5 +1,5 @@
 <PlistInfoProjectFile>
-  <PropertyGroup Name="FirstRechargeUI" Type="Plist" ID="c38c85a9-16dd-44ce-97b2-a6d9bccf044a" Version="2.3.3.0" />
+  <PropertyGroup Name="FirstRechargeUI" Type="Plist" ID="ca4ba9ce-0392-48cd-9e2b-bc9aea092567" Version="2.3.3.0" />
   <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
     <ImageFiles>
       <FilePathData Path="firstRechargeUI/88.png" />
@@ -10,6 +10,6 @@
       <FilePathData Path="firstRechargeUI/song.png" />
       <FilePathData Path="firstRechargeUI/title.png" />
     </ImageFiles>
-    <MaxSize Width="512" Height="512" />
+    <MaxSize Width="800" Height="512" />
   </Content>
 </PlistInfoProjectFile>

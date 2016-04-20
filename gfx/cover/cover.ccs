@@ -21,6 +21,14 @@
           <Image Name="list_bg.png" />
           <Image Name="list_view_bg.png" />
           <Image Name="player.png" />
+          <Image Name="title_bg.png" />
+          <Image Name="login.png" />
+          <Image Name="psw.png" />
+          <Image Name="user.png" />
+          <Image Name="new1.png" />
+          <Image Name="login2.png" />
+          <Image Name="new3.png" />
+          <Image Name="close_icon.png" />
         </Folder>
         <Project Name="NewNameLayer.csd" Type="Layer" />
         <PlistInfo Name="cover.csi" Type="Plist" />
@@ -202,6 +210,8 @@
         <Project Name="cover.csd" Type="Node" />
         <Project Name="ChooseListLayer.csd" Type="Layer" />
         <Project Name="ChooseListView.csd" Type="Layer" />
+        <Project Name="UserLayer.csd" Type="Layer" />
+        <Project Name="NewUserLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

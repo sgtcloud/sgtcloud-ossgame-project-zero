@@ -28,5 +28,19 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="FirstRechargeUI.csi" />
+          <FilePathData Path="EquipUI.csi" />
+          <FilePathData Path="OfflineRewardUI.csi" />
+          <FilePathData Path="OtherUI.csi" />
+          <FilePathData Path="RankUI.csi" />
+          <FilePathData Path="SettlementUI.csi" />
+          <FilePathData Path="CloseBtn.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="CloseBtn.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

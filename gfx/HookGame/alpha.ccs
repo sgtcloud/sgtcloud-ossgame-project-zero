@@ -722,7 +722,6 @@
             <PlistImageFile Name="firstRechargeUI_title.png" Key="firstRechargeUI/title.png" />
           </PlistImageFolder>
         </Folder>
-        <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
         <Project Name="GuideSkip.csd" Type="Node" />
         <Project Name="NoticeLayer.csd" Type="Layer" />
         <Project Name="NoticeView.csd" Type="Layer" />
@@ -769,6 +768,7 @@
           </PlistImageFolder>
         </Folder>
         <PlistInfo Name="TaskUI.csi" Type="Plist" />
+        <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

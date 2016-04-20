@@ -36,8 +36,10 @@
           <FilePathData Path="NewNameLayer.csd" />
           <FilePathData Path="cover.csi" />
           <FilePathData Path="ChooseListView.csd" />
+          <FilePathData Path="UserLayer.csd" />
+          <FilePathData Path="NewUserLayer.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="cover.csd" />
+        <ActiveDocument Path="cover.csi" />
       </Value>
     </Item>
   </Properties>
