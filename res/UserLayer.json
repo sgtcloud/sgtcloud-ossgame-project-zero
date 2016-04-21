@@ -1,0 +1,794 @@
+{
+  "ID": "d722a05e-64d9-4725-9e56-d4c2ee76066a",
+  "Version": "2.3.3.0",
+  "Name": "UserLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 40,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "CallBackType": "Click",
+            "Tag": 50,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/bg_05.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 13,
+                "Scale9OriginY": 13,
+                "Scale9Width": 5,
+                "Scale9Height": 6,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 51,
+                "ActionTag": -1023338171,
+                "Size": {
+                  "X": 360.0,
+                  "Y": 240.0
+                },
+                "Name": "bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/bg_03.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 11,
+                "Scale9Width": 10,
+                "Scale9Height": 14,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 109.9029,
+                  "Y": 123.0288
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3053,
+                  "Y": 0.5126
+                },
+                "PreSize": {
+                  "X": 0.6111,
+                  "Y": 0.2083
+                },
+                "LeftMargin": 109.9029,
+                "RightMargin": 30.0971,
+                "TopMargin": 66.9712,
+                "BottomMargin": 123.0288,
+                "Tag": 52,
+                "ActionTag": -527490394,
+                "Size": {
+                  "X": 220.0,
+                  "Y": 50.0
+                },
+                "Name": "user_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 22,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "请输入账号....",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 118.783,
+                  "Y": 146.517
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.33,
+                  "Y": 0.6105
+                },
+                "PreSize": {
+                  "X": 0.5556,
+                  "Y": 0.1167
+                },
+                "LeftMargin": 118.783,
+                "RightMargin": 41.217,
+                "TopMargin": 79.483,
+                "BottomMargin": 132.517,
+                "Tag": 57,
+                "ActionTag": -1133554525,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 28.0
+                },
+                "Name": "user",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/bg_03.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 11,
+                "Scale9Width": 10,
+                "Scale9Height": 14,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 109.9029,
+                  "Y": 71.0289
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3053,
+                  "Y": 0.296
+                },
+                "PreSize": {
+                  "X": 0.6111,
+                  "Y": 0.2083
+                },
+                "LeftMargin": 109.9029,
+                "RightMargin": 30.0971,
+                "TopMargin": 118.9711,
+                "BottomMargin": 71.0289,
+                "Tag": 58,
+                "ActionTag": -1987870699,
+                "Size": {
+                  "X": 220.0,
+                  "Y": 50.0
+                },
+                "Name": "psw_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 22,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "请输入密码....",
+                "MaxLengthText": 10,
+                "PasswordEnable": true,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 118.783,
+                  "Y": 95.517
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.33,
+                  "Y": 0.398
+                },
+                "PreSize": {
+                  "X": 0.5556,
+                  "Y": 0.1167
+                },
+                "LeftMargin": 118.783,
+                "RightMargin": 41.217,
+                "TopMargin": 130.483,
+                "BottomMargin": 81.517,
+                "Tag": 59,
+                "ActionTag": 424509787,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 28.0
+                },
+                "Name": "psw",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/title_bg.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Width": 123,
+                "Scale9Height": 42,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 181.0,
+                  "Y": 210.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5028,
+                  "Y": 0.875
+                },
+                "PreSize": {
+                  "X": 0.5556,
+                  "Y": 0.2083
+                },
+                "LeftMargin": 81.0,
+                "RightMargin": 79.0,
+                "TopMargin": 5.0,
+                "BottomMargin": 185.0,
+                "Tag": 64,
+                "ActionTag": -911814993,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 50.0
+                },
+                "Name": "title_bg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/login.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Width": 138,
+                "Scale9Height": 42,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 180.0,
+                  "Y": 215.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8958
+                },
+                "PreSize": {
+                  "X": 0.3833,
+                  "Y": 0.175
+                },
+                "LeftMargin": 111.0,
+                "RightMargin": 111.0,
+                "TopMargin": 4.0,
+                "BottomMargin": 194.0,
+                "Tag": 65,
+                "ActionTag": 1782765658,
+                "Size": {
+                  "X": 138.0,
+                  "Y": 42.0
+                },
+                "Name": "title_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 246.6301,
+                  "Y": 38.9599
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6851,
+                  "Y": 0.1623
+                },
+                "PreSize": {
+                  "X": 0.2778,
+                  "Y": 0.0833
+                },
+                "LeftMargin": 246.6301,
+                "RightMargin": 13.3699,
+                "TopMargin": 181.0401,
+                "BottomMargin": 38.9599,
+                "Tag": 61,
+                "Children": [
+                  {
+                    "FontSize": 16,
+                    "LabelText": "注册新用户",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 32,
+                      "G": 244,
+                      "B": 6
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.8,
+                      "Y": 0.8
+                    },
+                    "RightMargin": 20.0,
+                    "TopMargin": 4.0,
+                    "Tag": 62,
+                    "ActionTag": 777940271,
+                    "Size": {
+                      "X": 80.0,
+                      "Y": 16.0
+                    },
+                    "Name": "new",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": -1934315654,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 20.0
+                },
+                "Name": "new",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 131.6931,
+                  "Y": 20.8978
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3658,
+                  "Y": 0.0871
+                },
+                "PreSize": {
+                  "X": 0.2667,
+                  "Y": 0.1667
+                },
+                "LeftMargin": 131.6931,
+                "RightMargin": 132.3069,
+                "TopMargin": 179.1022,
+                "BottomMargin": 20.8978,
+                "Tag": 60,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverUI/bg_14.png",
+                      "Plist": "cover.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverUI/bg_14.png",
+                      "Plist": "cover.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverUI/bg_14.png",
+                      "Plist": "cover.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 15,
+                    "Scale9Width": 2,
+                    "Scale9Height": 17,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 0.8,
+                      "ScaleY": 0.8
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.25,
+                      "Y": 1.25
+                    },
+                    "RightMargin": -24.0,
+                    "TopMargin": -10.0,
+                    "Tag": 55,
+                    "ActionTag": -514684744,
+                    "Size": {
+                      "X": 120.0,
+                      "Y": 50.0
+                    },
+                    "Name": "btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "coverUI/login2.png",
+                      "Plist": "cover.plist"
+                    },
+                    "Scale9Width": 66,
+                    "Scale9Height": 34,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.3123,
+                      "Y": 19.796
+                    },
+                    "Scale": {
+                      "ScaleX": 0.9,
+                      "ScaleY": 0.9
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5033,
+                      "Y": 0.4949
+                    },
+                    "PreSize": {
+                      "X": 0.6875,
+                      "Y": 0.85
+                    },
+                    "LeftMargin": 15.3123,
+                    "RightMargin": 14.6877,
+                    "TopMargin": 3.204,
+                    "BottomMargin": 2.796,
+                    "Tag": 56,
+                    "ActionTag": 1852358128,
+                    "Size": {
+                      "X": 66.0,
+                      "Y": 34.0
+                    },
+                    "Name": "btn_text",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -210994256,
+                "Size": {
+                  "X": 96.0,
+                  "Y": 40.0
+                },
+                "Name": "btn",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/psw.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Width": 70,
+                "Scale9Height": 37,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 61.0001,
+                  "Y": 99.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1694,
+                  "Y": 0.4125
+                },
+                "PreSize": {
+                  "X": 0.1944,
+                  "Y": 0.1542
+                },
+                "LeftMargin": 26.0001,
+                "RightMargin": 263.9999,
+                "TopMargin": 122.4999,
+                "BottomMargin": 80.5001,
+                "Tag": 66,
+                "ActionTag": 1772522392,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 37.0
+                },
+                "Name": "psw_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/user.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9Width": 70,
+                "Scale9Height": 37,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 61.0001,
+                  "Y": 149.0001
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1694,
+                  "Y": 0.6208
+                },
+                "PreSize": {
+                  "X": 0.1944,
+                  "Y": 0.1542
+                },
+                "LeftMargin": 26.0001,
+                "RightMargin": 263.9999,
+                "TopMargin": 72.4999,
+                "BottomMargin": 130.5001,
+                "Tag": 67,
+                "ActionTag": -80524979,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 37.0
+                },
+                "Name": "user_text",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/close_icon.png",
+                  "Plist": "cover.plist"
+                },
+                "PressedFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/close_icon.png",
+                  "Plist": "cover.plist"
+                },
+                "NormalFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "coverUI/close_icon.png",
+                  "Plist": "cover.plist"
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 26,
+                "Scale9Height": 36,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 351.6931,
+                  "Y": 233.0228
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9769,
+                  "Y": 0.9709
+                },
+                "PreSize": {
+                  "X": 0.1556,
+                  "Y": 0.2417
+                },
+                "LeftMargin": 323.6931,
+                "RightMargin": -19.6931,
+                "TopMargin": -22.0228,
+                "BottomMargin": 204.0228,
+                "Tag": 68,
+                "ActionTag": -733798301,
+                "Size": {
+                  "X": 56.0,
+                  "Y": 58.0
+                },
+                "Name": "close_btn",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -1949301643,
+            "Size": {
+              "X": 360.0,
+              "Y": 240.0
+            },
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 360.0,
+          "Y": 240.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "cover.plist",
+        "cover.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

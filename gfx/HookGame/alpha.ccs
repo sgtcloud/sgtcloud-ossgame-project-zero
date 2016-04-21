@@ -776,6 +776,11 @@
         <PlistInfo Name="TaskUI.csi" Type="Plist" />
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
         <Project Name="BindLayer.csd" Type="Layer" />
+        <Folder Name="TitleUI">
+          <Image Name="desc.png" />
+          <Image Name="new_bg.png" />
+          <Image Name="player.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

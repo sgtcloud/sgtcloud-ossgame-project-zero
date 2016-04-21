@@ -28,28 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="FirstRechargeUI.csi" />
-          <FilePathData Path="EquipUI.csi" />
-          <FilePathData Path="OfflineRewardUI.csi" />
-          <FilePathData Path="OtherUI.csi" />
-          <FilePathData Path="RankUI.csi" />
-          <FilePathData Path="SettlementUI.csi" />
-          <FilePathData Path="CloseBtn.csd" />
-          <FilePathData Path="BattleLayer.csd" />
-          <FilePathData Path="TaskLayer.csd" />
-          <FilePathData Path="BindLayer.csd" />
-          <FilePathData Path="ShopLayer.csd" />
-          <FilePathData Path="ShopTab.csd" />
-          <FilePathData Path="ShopView.csd" />
-          <FilePathData Path="ShopIconLayer.csd" />
-          <FilePathData Path="NoticeLayer.csd" />
-          <FilePathData Path="ButtonUI.csi" />
-        </OpenedDocuments>
-        <ActiveDocument Path="ButtonUI.csi" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
