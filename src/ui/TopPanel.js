@@ -38,15 +38,24 @@ var TopPanel = cc.Node.extend({
             }
         }.bind(this));
         bindButtonCallback(statisticsBtn, function () {
-            StatisticsPanel.open();
+            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
+                StatisticsPanel.open();
+            }
         }.bind(this));
         bindButtonCallback(functionListBtn, function () {
-            if(isBtnListShow){
-                btnList.hide();
-                isBtnListShow = false;
+            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
+                if (isBtnListShow) {
+                    btnList.hide();
+                    isBtnListShow = false;
+                } else {
+                    btnList.show();
+                    isBtnListShow = true;
+                }
             }else{
-                btnList.show();
-                isBtnListShow = true;
+                if (isBtnListShow) {
+                    btnList.hide();
+                    isBtnListShow = false;
+                }
             }
         }.bind(this));
 
