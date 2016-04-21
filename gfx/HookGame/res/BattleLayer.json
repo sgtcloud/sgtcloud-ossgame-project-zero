@@ -663,18 +663,18 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bar_bg.png",
+                  "Path": "TitleUI/blood_bg.png",
                   "Plist": ""
                 },
-                "Scale9Width": 501,
-                "Scale9Height": 46,
+                "Scale9Width": 540,
+                "Scale9Height": 90,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 324.1541,
-                  "Y": 709.7528
+                  "X": 271.7296,
+                  "Y": 703.7207
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -683,22 +683,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5065,
-                  "Y": 0.9591
+                  "X": 0.4246,
+                  "Y": 0.951
                 },
                 "PreSize": {
-                  "X": 0.7828,
-                  "Y": 0.0622
+                  "X": 0.8438,
+                  "Y": 0.1216
                 },
-                "LeftMargin": 73.6541,
-                "RightMargin": 65.3459,
-                "TopMargin": 7.2472,
-                "BottomMargin": 686.7528,
+                "LeftMargin": 1.7296,
+                "RightMargin": 98.2704,
+                "TopMargin": -8.7207,
+                "BottomMargin": 658.7207,
                 "Tag": 484,
                 "ActionTag": 1994818062,
                 "Size": {
-                  "X": 501.0,
-                  "Y": 46.0
+                  "X": 540.0,
+                  "Y": 90.0
                 },
                 "Name": "enemy_life_bg",
                 "ctype": "ImageViewObjectData"
@@ -707,7 +707,7 @@
                 "ProgressInfo": 100,
                 "ImageFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bar1.png",
+                  "Path": "TitleUI/blood_bar.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -715,8 +715,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 336.0984,
-                  "Y": 719.7816
+                  "X": 280.1138,
+                  "Y": 707.9713
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -725,22 +725,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5252,
-                  "Y": 0.9727
+                  "X": 0.4377,
+                  "Y": 0.9567
                 },
                 "PreSize": {
-                  "X": 0.7203,
-                  "Y": 0.023
+                  "X": 0.6422,
+                  "Y": 0.0176
                 },
-                "LeftMargin": 105.5984,
-                "RightMargin": 73.4016,
-                "TopMargin": 11.7184,
-                "BottomMargin": 711.2816,
+                "LeftMargin": 74.6138,
+                "RightMargin": 154.3862,
+                "TopMargin": 25.5287,
+                "BottomMargin": 701.4713,
                 "Tag": 486,
                 "ActionTag": 1687766306,
                 "Size": {
-                  "X": 461.0,
-                  "Y": 17.0
+                  "X": 411.0,
+                  "Y": 13.0
                 },
                 "Name": "enemy_life_bar",
                 "ctype": "LoadingBarObjectData"
@@ -755,8 +755,8 @@
                 "Scale9Height": 50,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 78.0861,
-                  "Y": 692.2682
+                  "X": 34.5505,
+                  "Y": 691.5647
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -765,17 +765,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.122,
-                  "Y": 0.9355
+                  "X": 0.054,
+                  "Y": 0.9345
                 },
                 "PreSize": {
                   "X": 0.0547,
                   "Y": 0.0473
                 },
-                "LeftMargin": 78.0861,
-                "RightMargin": 526.9139,
-                "TopMargin": 12.7318,
-                "BottomMargin": 692.2682,
+                "LeftMargin": 34.5505,
+                "RightMargin": 570.4495,
+                "TopMargin": 13.4353,
+                "BottomMargin": 691.5647,
                 "Tag": 485,
                 "ActionTag": 2061033833,
                 "Size": {
@@ -787,19 +787,19 @@
               },
               {
                 "FileData": {
-                  "Type": "MarkedSubImage",
-                  "Path": "battleUI/boss_text.png",
-                  "Plist": "BattleLayer.plist"
+                  "Type": "Normal",
+                  "Path": "TitleUI/less.png",
+                  "Plist": ""
                 },
-                "Scale9Width": 91,
-                "Scale9Height": 19,
+                "Scale9Width": 65,
+                "Scale9Height": 27,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 269.3047,
-                  "Y": 719.1217
+                  "X": 120.4519,
+                  "Y": 708.4249
                 },
                 "Scale": {
                   "ScaleX": 0.8,
@@ -808,23 +808,23 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4208,
-                  "Y": 0.9718
+                  "X": 0.1882,
+                  "Y": 0.9573
                 },
                 "PreSize": {
-                  "X": 0.1437,
-                  "Y": 0.027
+                  "X": 0.1016,
+                  "Y": 0.0365
                 },
-                "LeftMargin": 223.3047,
-                "RightMargin": 324.6953,
-                "TopMargin": 10.8783,
-                "BottomMargin": 709.1217,
+                "LeftMargin": 87.9519,
+                "RightMargin": 487.0481,
+                "TopMargin": 18.0751,
+                "BottomMargin": 694.9249,
                 "CallBackType": "Click",
                 "Tag": 166,
                 "ActionTag": 2083404384,
                 "Size": {
-                  "X": 92.0,
-                  "Y": 20.0
+                  "X": 65.0,
+                  "Y": 27.0
                 },
                 "Name": "enemy_life_text_0",
                 "ctype": "ImageViewObjectData"
@@ -833,15 +833,16 @@
                 "LabelText": "0",
                 "LabelBMFontFile_CNB": {
                   "Type": "Normal",
-                  "Path": "font/white18-export.fnt",
+                  "Path": "font/white10-export.fnt",
                   "Plist": ""
                 },
                 "AnchorPoint": {
+                  "ScaleX": 1.0,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 313.0436,
-                  "Y": 721.0542
+                  "X": 463.2284,
+                  "Y": 709.9065
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -850,238 +851,26 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4891,
-                  "Y": 0.9744
+                  "X": 0.7238,
+                  "Y": 0.9593
                 },
                 "PreSize": {
-                  "X": 0.0313,
-                  "Y": 0.0297
+                  "X": 0.0234,
+                  "Y": 0.0243
                 },
-                "LeftMargin": 313.0436,
-                "RightMargin": 306.9564,
-                "TopMargin": 7.9458,
-                "BottomMargin": 710.0542,
+                "LeftMargin": 448.2284,
+                "RightMargin": 176.7716,
+                "TopMargin": 21.0935,
+                "BottomMargin": 700.9065,
                 "CallBackType": "Click",
                 "Tag": 138,
                 "ActionTag": -366591547,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 22.0
+                  "X": 15.0,
+                  "Y": 18.0
                 },
                 "Name": "enemy_life_text",
                 "ctype": "TextBMFontObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 125.2951,
-                  "Y": 230.3575
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1958,
-                  "Y": 0.3113
-                },
-                "PreSize": {
-                  "X": 0.1094,
-                  "Y": 0.027
-                },
-                "LeftMargin": 90.2951,
-                "RightMargin": 479.7049,
-                "TopMargin": 499.6425,
-                "BottomMargin": 220.3575,
-                "Tag": 110,
-                "ActionTag": 512039343,
-                "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
-                },
-                "Name": "atk_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "9999999",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 592.3304,
-                  "Y": 230.3575
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.9255,
-                  "Y": 0.3113
-                },
-                "PreSize": {
-                  "X": 0.1094,
-                  "Y": 0.027
-                },
-                "LeftMargin": 557.3304,
-                "RightMargin": 12.6696,
-                "TopMargin": 499.6425,
-                "BottomMargin": 220.3575,
-                "Tag": 111,
-                "ActionTag": 1885514838,
-                "Size": {
-                  "X": 70.0,
-                  "Y": 20.0
-                },
-                "Name": "tatk_text",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "英雄DPS：",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 54.5628,
-                  "Y": 231.3578
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0853,
-                  "Y": 0.3126
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.027
-                },
-                "LeftMargin": 9.5628,
-                "RightMargin": 540.4372,
-                "TopMargin": 498.6422,
-                "BottomMargin": 221.3578,
-                "Tag": 112,
-                "ActionTag": 952086601,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 20.0
-                },
-                "Name": "atk",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "点击攻击力：",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 506.3264,
-                  "Y": 231.3578
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.7911,
-                  "Y": 0.3126
-                },
-                "PreSize": {
-                  "X": 0.1875,
-                  "Y": 0.027
-                },
-                "LeftMargin": 446.3264,
-                "RightMargin": 73.6736,
-                "TopMargin": 498.6422,
-                "BottomMargin": 221.3578,
-                "Tag": 113,
-                "ActionTag": 487734890,
-                "Size": {
-                  "X": 120.0,
-                  "Y": 20.0
-                },
-                "Name": "tatk",
-                "ctype": "TextObjectData"
               },
               {
                 "LabelText": "36",
@@ -1095,8 +884,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 95.437,
-                  "Y": 710.5966
+                  "X": 51.9015,
+                  "Y": 709.8937
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1108,17 +897,17 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1491,
-                  "Y": 0.9603
+                  "X": 0.0811,
+                  "Y": 0.9593
                 },
                 "PreSize": {
                   "X": 0.0516,
                   "Y": 0.027
                 },
-                "LeftMargin": 78.937,
-                "RightMargin": 528.063,
-                "TopMargin": 19.4034,
-                "BottomMargin": 700.5966,
+                "LeftMargin": 35.4015,
+                "RightMargin": 571.5985,
+                "TopMargin": 20.1063,
+                "BottomMargin": 699.8937,
                 "Tag": 137,
                 "ActionTag": 2022321032,
                 "Size": {
@@ -1132,7 +921,7 @@
                 "ProgressInfo": 100,
                 "ImageFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/bar2.png",
+                  "Path": "TitleUI/time_bar.png",
                   "Plist": ""
                 },
                 "AnchorPoint": {
@@ -1140,8 +929,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 334.7112,
-                  "Y": 703.7831
+                  "X": 282.4073,
+                  "Y": 717.8534
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1150,175 +939,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.523,
-                  "Y": 0.9511
+                  "X": 0.4413,
+                  "Y": 0.9701
                 },
                 "PreSize": {
-                  "X": 0.6938,
-                  "Y": 0.0081
+                  "X": 0.4922,
+                  "Y": 0.0041
                 },
-                "LeftMargin": 112.7112,
-                "RightMargin": 83.2888,
-                "TopMargin": 33.2169,
-                "BottomMargin": 700.7831,
+                "LeftMargin": 124.9073,
+                "RightMargin": 200.0927,
+                "TopMargin": 20.6466,
+                "BottomMargin": 716.3534,
                 "Tag": 487,
                 "ActionTag": -1530911348,
                 "Size": {
-                  "X": 444.0,
-                  "Y": 6.0
+                  "X": 315.0,
+                  "Y": 3.0
                 },
                 "Name": "time_bar",
                 "ctype": "LoadingBarObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/statistics_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/statistics_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/statistics_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 60,
-                "Scale9Height": 68,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 30.2691,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0473,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.1216
-                },
-                "LeftMargin": -14.7309,
-                "RightMargin": 564.7308,
-                "TopMargin": 421.4198,
-                "BottomMargin": 228.5802,
-                "Tag": 40,
-                "ActionTag": 1271537567,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "statistics_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/pack_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 60,
-                "Scale9Height": 68,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 94.2119,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.1472,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.1216
-                },
-                "LeftMargin": 49.2119,
-                "RightMargin": 500.7881,
-                "TopMargin": 421.4198,
-                "BottomMargin": 228.5802,
-                "Tag": 42,
-                "ActionTag": -423831482,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "pack_btn",
-                "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 14,
@@ -1365,8 +1004,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 605.7539,
-                  "Y": 273.5802
+                  "X": 51.6688,
+                  "Y": 582.3612
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1375,17 +1014,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9465,
-                  "Y": 0.3697
+                  "X": 0.0807,
+                  "Y": 0.787
                 },
                 "PreSize": {
                   "X": 0.1719,
                   "Y": 0.1541
                 },
-                "LeftMargin": 550.7539,
-                "RightMargin": -20.7539,
-                "TopMargin": 409.4198,
-                "BottomMargin": 216.5802,
+                "LeftMargin": -3.3312,
+                "RightMargin": 533.3312,
+                "TopMargin": 100.6388,
+                "BottomMargin": 525.3612,
                 "Tag": 41,
                 "ActionTag": -1641535427,
                 "Size": {
@@ -1438,81 +1077,6 @@
                 },
                 "DisabledFileData": {
                   "Type": "Normal",
-                  "Path": "mainUI/maill_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/maill_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/maill_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 60,
-                "Scale9Height": 68,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 158.1547,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2471,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.1216
-                },
-                "LeftMargin": 113.1547,
-                "RightMargin": 436.8453,
-                "TopMargin": 421.4198,
-                "BottomMargin": 228.5802,
-                "Tag": 285,
-                "ActionTag": -1828760999,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "maill_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
                   "Path": "mainUI/recharge_btn.png",
                   "Plist": ""
                 },
@@ -1548,8 +1112,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 284.8402,
-                  "Y": 273.5802
+                  "X": 114.9039,
+                  "Y": 275.8776
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1558,17 +1122,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4451,
-                  "Y": 0.3697
+                  "X": 0.1795,
+                  "Y": 0.3728
                 },
                 "PreSize": {
                   "X": 0.1344,
                   "Y": 0.127
                 },
-                "LeftMargin": 241.8402,
-                "RightMargin": 312.1598,
-                "TopMargin": 419.4198,
-                "BottomMargin": 226.5802,
+                "LeftMargin": 71.9039,
+                "RightMargin": 482.0961,
+                "TopMargin": 417.1224,
+                "BottomMargin": 228.8776,
                 "Tag": 136,
                 "ActionTag": 577647559,
                 "Size": {
@@ -1576,231 +1140,6 @@
                   "Y": 94.0
                 },
                 "Name": "recharge_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/firstRecharge_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/firstRecharge_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/firstRecharge_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 56,
-                "Scale9Height": 72,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 347.383,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5428,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1344,
-                  "Y": 0.127
-                },
-                "LeftMargin": 304.383,
-                "RightMargin": 249.617,
-                "TopMargin": 419.4198,
-                "BottomMargin": 226.5802,
-                "Tag": 151,
-                "ActionTag": -961389801,
-                "Size": {
-                  "X": 86.0,
-                  "Y": 94.0
-                },
-                "Name": "firstRecharge_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/notice_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/notice_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/notice_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 60,
-                "Scale9Height": 68,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 222.0974,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.347,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.1216
-                },
-                "LeftMargin": 177.0974,
-                "RightMargin": 372.9026,
-                "TopMargin": 421.4198,
-                "BottomMargin": 228.5802,
-                "Tag": 103,
-                "ActionTag": 1128445837,
-                "Size": {
-                  "X": 90.0,
-                  "Y": 90.0
-                },
-                "Name": "notice_btn",
-                "ctype": "ButtonObjectData"
-              },
-              {
-                "FontSize": 14,
-                "ButtonText": "",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/giftCode_btn.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/giftCode_btn.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Normal",
-                  "Path": "mainUI/giftCode_btn.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 80,
-                "Scale9Height": 92,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 415.1257,
-                  "Y": 273.5802
-                },
-                "Scale": {
-                  "ScaleX": 0.6,
-                  "ScaleY": 0.6
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.6486,
-                  "Y": 0.3697
-                },
-                "PreSize": {
-                  "X": 0.1719,
-                  "Y": 0.1541
-                },
-                "LeftMargin": 360.1257,
-                "RightMargin": 169.8743,
-                "TopMargin": 409.4198,
-                "BottomMargin": 216.5802,
-                "Tag": 59,
-                "ActionTag": -1630422395,
-                "Size": {
-                  "X": 110.0,
-                  "Y": 114.0
-                },
-                "Name": "giftCode_btn",
                 "ctype": "ButtonObjectData"
               },
               {
@@ -1848,8 +1187,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 481.7683,
-                  "Y": 273.5802
+                  "X": 37.4261,
+                  "Y": 275.8776
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1858,17 +1197,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7528,
-                  "Y": 0.3697
+                  "X": 0.0585,
+                  "Y": 0.3728
                 },
                 "PreSize": {
                   "X": 0.1234,
                   "Y": 0.123
                 },
-                "LeftMargin": 442.2683,
-                "RightMargin": 118.7317,
-                "TopMargin": 420.9198,
-                "BottomMargin": 228.0802,
+                "LeftMargin": -2.0739,
+                "RightMargin": 563.0739,
+                "TopMargin": 418.6224,
+                "BottomMargin": 230.3776,
                 "Tag": 61,
                 "ActionTag": 1532233121,
                 "Size": {
@@ -1923,8 +1262,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 539.1111,
-                  "Y": 273.5802
+                  "X": 51.6688,
+                  "Y": 652.9514
                 },
                 "Scale": {
                   "ScaleX": 0.6,
@@ -1933,17 +1272,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8424,
-                  "Y": 0.3697
+                  "X": 0.0807,
+                  "Y": 0.8824
                 },
                 "PreSize": {
                   "X": 0.1234,
                   "Y": 0.123
                 },
-                "LeftMargin": 499.6111,
-                "RightMargin": 61.3889,
-                "TopMargin": 420.9198,
-                "BottomMargin": 228.0802,
+                "LeftMargin": 12.1688,
+                "RightMargin": 548.8312,
+                "TopMargin": 41.5486,
+                "BottomMargin": 607.4514,
                 "Tag": 62,
                 "ActionTag": -290925161,
                 "Size": {
@@ -1952,6 +1291,436 @@
                 },
                 "Name": "user_btn",
                 "ctype": "ButtonObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 515.8562,
+                  "Y": 656.7328
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.806,
+                  "Y": 0.8875
+                },
+                "PreSize": {
+                  "X": 0.1953,
+                  "Y": 0.1149
+                },
+                "LeftMargin": 515.8562,
+                "RightMargin": -0.8562,
+                "TopMargin": -1.7328,
+                "BottomMargin": 656.7328,
+                "Tag": 116,
+                "Children": [
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "TitleUI/bossBtn_close.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "TitleUI/bossBtn_open.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 51,
+                    "Scale9Height": 59,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 65.6478,
+                      "Y": 43.7649
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5252,
+                      "Y": 0.5149
+                    },
+                    "PreSize": {
+                      "X": 0.648,
+                      "Y": 0.9529
+                    },
+                    "LeftMargin": 25.1478,
+                    "RightMargin": 18.8522,
+                    "TopMargin": 0.7351,
+                    "BottomMargin": 3.2649,
+                    "Tag": 117,
+                    "ActionTag": -989421811,
+                    "Size": {
+                      "X": 81.0,
+                      "Y": 81.0
+                    },
+                    "Name": "boss_btn",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "TitleUI/enemy_bg.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 121,
+                    "Scale9Height": 36,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 63.476,
+                      "Y": 52.549
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5078,
+                      "Y": 0.6182
+                    },
+                    "PreSize": {
+                      "X": 0.96,
+                      "Y": 0.4235
+                    },
+                    "LeftMargin": 3.476,
+                    "RightMargin": 1.524,
+                    "TopMargin": 14.451,
+                    "BottomMargin": 34.549,
+                    "Tag": 118,
+                    "ActionTag": -2067428368,
+                    "Size": {
+                      "X": 120.0,
+                      "Y": 36.0
+                    },
+                    "Name": "enemy_bg",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "TitleUI/enemy_icon.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 34,
+                    "Scale9Height": 27,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 21.8787,
+                      "Y": 53.5941
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.175,
+                      "Y": 0.6305
+                    },
+                    "PreSize": {
+                      "X": 0.272,
+                      "Y": 0.3176
+                    },
+                    "LeftMargin": 4.8787,
+                    "RightMargin": 86.1213,
+                    "TopMargin": 17.9059,
+                    "BottomMargin": 40.0941,
+                    "Tag": 119,
+                    "ActionTag": 1918754467,
+                    "Size": {
+                      "X": 34.0,
+                      "Y": 27.0
+                    },
+                    "Name": "enemy_icon",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "LabelText": "99/99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white14-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 74.7051,
+                      "Y": 53.925
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5976,
+                      "Y": 0.6344
+                    },
+                    "PreSize": {
+                      "X": 0.584,
+                      "Y": 0.2118
+                    },
+                    "LeftMargin": 38.2051,
+                    "RightMargin": 13.7949,
+                    "TopMargin": 22.075,
+                    "BottomMargin": 44.925,
+                    "Tag": 120,
+                    "ActionTag": 788520433,
+                    "Size": {
+                      "X": 73.0,
+                      "Y": 18.0
+                    },
+                    "Name": "enemy_num",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": -1766155566,
+                "Size": {
+                  "X": 125.0,
+                  "Y": 85.0
+                },
+                "Name": "boss_stage",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 186.9776,
+                  "Y": 667.4404
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2922,
+                  "Y": 0.9019
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0676
+                },
+                "LeftMargin": 186.9776,
+                "RightMargin": 253.0224,
+                "TopMargin": 22.5596,
+                "BottomMargin": 667.4404,
+                "Tag": 135,
+                "Children": [
+                  {
+                    "LabelText": "",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 38.6295,
+                      "Y": 22.8834
+                    },
+                    "Scale": {
+                      "ScaleX": 0.8,
+                      "ScaleY": 0.8
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.1931,
+                      "Y": 0.4577
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": 38.6295,
+                    "RightMargin": 161.3705,
+                    "TopMargin": 27.1166,
+                    "BottomMargin": 22.8834,
+                    "Tag": 134,
+                    "ActionTag": -662421553,
+                    "Size": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Name": "level_text1",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white14-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 18,
+                      "G": 245,
+                      "B": 75
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.42
+                    },
+                    "PreSize": {
+                      "X": 0.165,
+                      "Y": 0.36
+                    },
+                    "LeftMargin": 83.5,
+                    "RightMargin": 83.5,
+                    "TopMargin": 20.0,
+                    "BottomMargin": 12.0,
+                    "CallBackType": "Click",
+                    "Tag": 133,
+                    "ActionTag": 1509806586,
+                    "Size": {
+                      "X": 33.0,
+                      "Y": 18.0
+                    },
+                    "Name": "level_text2",
+                    "ctype": "TextBMFontObjectData"
+                  },
+                  {
+                    "LabelText": "99",
+                    "LabelBMFontFile_CNB": {
+                      "Type": "Normal",
+                      "Path": "font/white10-export.fnt",
+                      "Plist": ""
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 160.4521,
+                      "Y": 22.8835
+                    },
+                    "Scale": {
+                      "ScaleX": 0.8,
+                      "ScaleY": 0.8
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8023,
+                      "Y": 0.4577
+                    },
+                    "PreSize": {
+                      "X": 0.145,
+                      "Y": 0.36
+                    },
+                    "LeftMargin": 145.9521,
+                    "RightMargin": 25.0479,
+                    "TopMargin": 18.1165,
+                    "BottomMargin": 13.8835,
+                    "Tag": 132,
+                    "ActionTag": 2048074771,
+                    "Size": {
+                      "X": 29.0,
+                      "Y": 18.0
+                    },
+                    "Name": "level_text3",
+                    "ctype": "TextBMFontObjectData"
+                  }
+                ],
+                "ActionTag": 466256072,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 50.0
+                },
+                "Name": "enemy_list",
+                "ctype": "PanelObjectData"
               }
             ],
             "ActionTag": 2088090531,
@@ -1971,26 +1740,25 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "BattleLayer.plist",
-        "BattleLayer.png",
+        "font/white10-export.fnt",
+        "font/white10-export.png",
+        "font/white14-export.fnt",
+        "font/white14-export.png",
         "font/white16-export.fnt",
         "font/white16-export.png",
-        "font/white18-export.fnt",
-        "font/white18-export.png",
-        "mainUI/bar_bg.png",
-        "mainUI/bar1.png",
-        "mainUI/bar2.png",
         "mainUI/battle_icon.png",
-        "mainUI/firstRecharge_btn.png",
-        "mainUI/giftCode_btn.png",
-        "mainUI/maill_btn.png",
-        "mainUI/notice_btn.png",
-        "mainUI/pack_btn.png",
         "mainUI/recharge_btn.png",
         "mainUI/reward_btn.png",
-        "mainUI/statistics_btn.png",
         "mainUI/task.png",
-        "mainUI/user.png"
+        "mainUI/user.png",
+        "TitleUI/blood_bar.png",
+        "TitleUI/blood_bg.png",
+        "TitleUI/bossBtn_close.png",
+        "TitleUI/bossBtn_open.png",
+        "TitleUI/enemy_bg.png",
+        "TitleUI/enemy_icon.png",
+        "TitleUI/less.png",
+        "TitleUI/time_bar.png"
       ],
       "ctype": "GameFileData"
     }
