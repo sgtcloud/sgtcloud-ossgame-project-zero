@@ -2,13 +2,13 @@
     var NetworkResolve = function () {
     };
     NetworkResolve.prototype = {
-        isVisitor: false,
+        visitor: false,
         getSgtApi: function () {
             return SgtApi || sgt;
         },
         //是否是游客
         isVisitor: function () {
-            return this.isVisitor;
+            return this.visitor;
         },
         //微信自动登录业务
         autoWxLoginService: function (wxInfo, cb) {
@@ -64,7 +64,7 @@
             var username = localStorage.getItem("sgt-" + SgtApi.context.appId + "-username");
             var password = localStorage.getItem("sgt-" + SgtApi.context.appId + "-password");
             if (!username || !password) {
-                this.isVisitor = true;
+                this.visitor = true;
             }
             SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
@@ -778,7 +778,7 @@
                     state.setVisible(false);
                     full.setVisible(false);
                 }
-                if(Network.isVisitor){
+                if(Network.isVisitor()){
                     user_text.setString('游客账号');
                 }else{
                     user_text.setString(sgt.context.user.userName);
