@@ -780,7 +780,10 @@
           <Image Name="desc.png" />
           <Image Name="new_bg.png" />
           <Image Name="player.png" />
+          <Image Name="btn_close.png" />
+          <Image Name="btn_open.png" />
         </Folder>
+        <Project Name="FunctionListLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
