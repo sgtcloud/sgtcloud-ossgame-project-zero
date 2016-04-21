@@ -64,6 +64,7 @@
           <Image Name="now.png" />
           <Image Name="bind.png" />
           <Image Name="bind_text.png" />
+          <Image Name="btn_test.png" />
         </Folder>
         <Folder Name="equipUI">
           <Image Name="bg.png" />
@@ -782,6 +783,16 @@
           <Image Name="player.png" />
           <Image Name="btn_close.png" />
           <Image Name="btn_open.png" />
+          <Image Name="list_bg.png" />
+          <Image Name="blood_bar.png" />
+          <Image Name="blood_bg.png" />
+          <Image Name="bossBtn_close.png" />
+          <Image Name="bossBtn_open.png" />
+          <Image Name="bossStage.png" />
+          <Image Name="enemy_bg.png" />
+          <Image Name="enemy_icon.png" />
+          <Image Name="less.png" />
+          <Image Name="time_bar.png" />
         </Folder>
         <Project Name="FunctionListLayer.csd" Type="Layer" />
       </RootFolder>
