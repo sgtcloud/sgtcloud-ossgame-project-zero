@@ -12,7 +12,6 @@ var TaskPanel=cc.Class.extend({
             {name: "everyDay_tab"},
             {name: "achievement_tab"}
         ];
-
         var bar=root.getChildByName('bar');
         this.achevementBox=bar.getChildByName('achievementBox');
         this.everyDayBox=bar.getChildByName('everyDayBox');
@@ -42,6 +41,8 @@ var TaskPanel=cc.Class.extend({
             }.bind(this), this);
         }
 
+
+
         var n = 0;
         this.showMenuLayer = function (name) {
             for (var i in this.buttons) {
@@ -49,7 +50,7 @@ var TaskPanel=cc.Class.extend({
             }
             this.showTask(name);
             this.buttons[name].setSelected(true);
-            this.loadingBar.setPercent(10);
+            this.loadingBar.setPercent(20);
         };
 
         this.showTask=function(name){
@@ -57,11 +58,50 @@ var TaskPanel=cc.Class.extend({
                 tabObj[k]['box'].setVisible(false);
             }
             tabObj[name]['box'].setVisible(true);
-
-        }
-
+            this.list.removeAllChildren(true);
+            this.refreshItems(name);
+        };
+        this.showMenuLayer('everyDay_tab');
     },openPopup: function(){
         GamePopup.openPopup(this.layer,null,false);
+    },refreshItems:function(tab){
+        if('everyDay_tab'===tab){
+            var service= sgt.DailyTaskService;
+            service.getDailyTasks(player.id,function(result,data){
+                if(result&&data){
+                    for(var i= 0,j=data.length;i<j;i++){
+                        this.pushTaskItem(data(i));
+                    }
+                }
+            }.bind(this));
+        }else
+        if('achievement_tab'===tab){
+            var service= sgt.AchievementService;
+            service.getAllAchievements(function(result,data){
+                if(result&&data){
+                    for(var i= 0,j=data.length;i<j;i++){
+                        this.pushTaskItem(data(i));
+                    }
+                }
+            }.bind(this));
+        }
+    },pushTaskItem:function(task){
+        var taskItem=this.taskview.clone();
+        var desc=taskItem.getChildByName('text');
+        desc.setString(task.description);
+        var bar=taskItem.getChildByName('bar');
+        var num=bar.getChildByName('num');
+        num.setString(task.currentProgress);
+        var bar_purple=bar.getChildByName('bar_purple');
+        var bar_blue=bar.getChildByName('bar_blue');
+        bar_blue.setVisible(false);
+        var btn=taskItem.getChildByName('btn');
+        var rewardBtn=btn.getChildByName('buy_btn');
+        rewardBtn.addClickEventListener(function(){
+            console.log('get reward')
+        });
+        bar_purple.setPercent(Math.floor(task.currentProgress/task.goal*100));
+        this.list.pushBackCustomItem(taskItem);
     }
 });
 TaskPanel.open=function(){
