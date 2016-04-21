@@ -2,13 +2,8 @@
     var NetworkResolve = function () {
     };
     NetworkResolve.prototype = {
-        visitor: false,
         getSgtApi: function () {
             return SgtApi || sgt;
-        },
-        //是否是游客
-        isVisitor: function () {
-            return this.visitor;
         },
         //微信自动登录业务
         autoWxLoginService: function (wxInfo, cb) {
@@ -61,10 +56,9 @@
         },
         //一般自动登录业务
         autoLoginService: function (cb) {
-            var username = localStorage.getItem("sgt-" + SgtApi.context.appId + "-username");
-            var password = localStorage.getItem("sgt-" + SgtApi.context.appId + "-password");
-            if (!username || !password) {
-                this.visitor = true;
+            var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
+            if(!isVisitor){
+                localStorage.setItem('is-sgt-html5-game-visitor',1);
             }
             SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
@@ -706,6 +700,7 @@
                 SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid,username,pwd,function(result,data){
                     if(result){
                         sgt.UserService.saveLocalStorage(username,pwd);
+                        localStorage.setItem('is-sgt-html5-game-visitor',2);
                     }
                     callback(result,data);
                 });
@@ -717,7 +712,13 @@
             }
         },
         login: function(username,pwd,callback){
-            SgtApi.UserService.login_manual(username,pwd,callback);
+            SgtApi.UserService.login_manual(username,pwd,function(result,data){
+                if(result){
+                    localStorage.setItem('is-sgt-html5-game-visitor',2);
+                    sgt.UserService.saveLocalStorage(username,pwd);
+                }
+                callback(result,data);
+            });
         },
         showCover: function(){
             var json = ccs.load(res.cover_scene_json);
@@ -778,7 +779,8 @@
                     state.setVisible(false);
                     full.setVisible(false);
                 }
-                if(Network.isVisitor()){
+                var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
+                if(!isVisitor || parseInt(isVisitor) === 1){
                     user_text.setString('游客账号');
                 }else{
                     user_text.setString(sgt.context.user.userName);

@@ -136,7 +136,9 @@ var res = {
     choose_list_view_json: 'res/ChooseListView.json',
     choose_list_layer_json: 'res/ChooseListLayer.json',
     new_user_layer_json: 'res/NewUserLayer.json',
-    user_layer_json: 'res/UserLayer.json'
+    user_layer_json: 'res/UserLayer.json',
+    function_list_layer:'res/FunctionListLayer.json'
+
 };
 var full_resouces = [];
 for (var i in res_datas) {
