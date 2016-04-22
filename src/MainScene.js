@@ -88,7 +88,7 @@ var MainScene = cc.Scene.extend({
         Network.checkIn_createByValidate(function (result, data) {
             //true 可以签到 false 不能签到
             if (result && data) {
-                this.openCheckInPanel(true);
+                Network.openCheckInPanel(true);
             } else {
                 console.log('已签到');
             }

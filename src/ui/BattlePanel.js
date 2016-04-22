@@ -156,13 +156,10 @@ var BattlePanel = cc.Node.extend({
             }
         }.bind(this));
         bindButtonCallback(this.boss_btn, function () {
-            if (this.boss_btn.isHighlighted()) {
-                /*if (this.state == BATTLE_STATE.STATE_ARENA_BATTLE) {
-                 customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE);
-                 } else {*/
+            var stage = PlayerData.getStageData();
+            if (stage.isBossBattle()) {
                 customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-                //}
-            } else {
+            }else{
                 customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
             }
         }.bind(this));

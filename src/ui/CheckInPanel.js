@@ -39,7 +39,7 @@ var CheckInPanel = cc.Node.extend({
             if (accumulateCount < n) {
                 image3.setVisible(false);
             }
-            if (!isCheckIn && accumulateCount + 1 == n) {
+            if (isCheckIn && accumulateCount + 1 == n) {
                 image2.setVisible(true);
                 icon.setTouchEnabled(true);
                 this.addIconClickEventListener(icon, image2, image3, data);

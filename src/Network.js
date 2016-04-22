@@ -696,7 +696,7 @@
             }
         },
         openLoginPopup: function(user_text){
-            var login = new LoginPanel(null/*sgt.context.user*/,user_text);
+            var login = new LoginPanel(/*null*//*sgt.context.user,*/user_text);
             login.openLoginPopup();
         },
         register: function(username,pwd,type,callback){
@@ -825,6 +825,7 @@
                     if (!PlayerData.modelPlayer) {
                         loginBtn.setVisible(false);
                         chooseBtn.setVisible(false);
+                        user_layout.setVisible(false);
                         Network.openNewNameLayer(scene, createPlayerComplete);
                     } else {
                         var mark = localStorage.getItem('mark-sgt-html5-game');
