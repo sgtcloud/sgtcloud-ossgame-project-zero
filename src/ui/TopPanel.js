@@ -39,9 +39,11 @@ var TopPanel = cc.Node.extend({
         });
         bindButtonCallback(functionListBtn, function () {
             if (isBtnListShow) {
+                functionListBtn.setHighlighted(false);
                 btnList.hide();
                 isBtnListShow = false;
             } else {
+                functionListBtn.setHighlighted(true);
                 btnList.show();
                 isBtnListShow = true;
             }

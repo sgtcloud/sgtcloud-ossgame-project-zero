@@ -60,8 +60,13 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         this.userBtn = root.getChildByName('user_btn');
+        this.userBtn.setVisible(false);
+        var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
+        if(!isVisitor || parseInt(isVisitor) === 1){
+            this.userBtn.setVisible(true);
+        }
         bindButtonCallback(this.userBtn, function () {
-            RegisterPanel.open(1);
+            RegisterPanel.open(1,this.userBtn);
         }.bind(this));
         /*var scale = this.pack_btn.scale;
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
