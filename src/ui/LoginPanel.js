@@ -34,7 +34,7 @@ var LoginPanel = cc.Node.extend({
                     }
                 }.bind(this))
             }else{
-                BasicPopup.alert('提示',"密码不能为空或格式不正确");
+                BasicPopup.alert('提示',"密码位数不能小于6位");
             }
         }.bind(this));
         bindButtonCallback(closeBtn, function () {

@@ -791,6 +791,20 @@
           <Image Name="time_bar.png" />
         </Folder>
         <Project Name="FunctionListLayer.csd" Type="Layer" />
+        <Folder Name="stage">
+          <Image Name="s100001.png" />
+          <Image Name="s1000010.png" />
+          <Image Name="s100002.png" />
+          <Image Name="s100003.png" />
+          <Image Name="s100004.png" />
+          <Image Name="s100005.png" />
+          <Image Name="s100006.png" />
+          <Image Name="s100007.png" />
+          <Image Name="s100008.png" />
+          <Image Name="s100009.png" />
+          <Image Name="s100010.png" />
+          <Image Name="s100011.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

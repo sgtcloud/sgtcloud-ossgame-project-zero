@@ -353,16 +353,15 @@
             }
         },
         checkIn_createByValidate: function (callback) {
-            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', callback/*function (result1, data1) {
+            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result, data) {
                 //true 可以签到 false 不能签到
-                if (result1 && data1) {
+                if (result) {
                     //this.openCheckInPanel()
-                    return true;
+                    callback(data);
                 } else {
-                    console.log('已签到');
-                    return false;
+                    console.log('签到异常');
                 }
-            }.bind(this)*/);
+            }.bind(this));
         },openCheckInPanel: function(isCheckIn){
             //获取累计签到次数
             sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result, data) {
@@ -700,12 +699,13 @@
             var login = new LoginPanel(/*null*//*sgt.context.user,*/user_text);
             login.openLoginPopup();
         },
-        register: function (username, pwd, type, callback) {
-            if (type === 1) {
-                SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid, username, pwd, function (result, data) {
-                    if (result) {
-                        sgt.UserService.saveLocalStorage(username, pwd);
-                        localStorage.setItem('is-sgt-html5-game-visitor', 2);
+        register: function(username,pwd,type,userBtn,callback){
+            if(type === 1){
+                SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid,username,pwd,function(result,data){
+                    if(result){
+                        userBtn.setVisible(false);
+                        sgt.UserService.saveLocalStorage(username,pwd);
+                        localStorage.setItem('is-sgt-html5-game-visitor',2);
                     }
                     callback(result, data);
                 });
@@ -805,7 +805,7 @@
                 bindButtonCallback(list_btn, function () {
                     ChooseServerPanel.open(chooseBtn);
                 });
-                bindTouchEventListener(function () {
+                bindTouchEventListener(function(){
                     this.EnterGame();
                     return true;
                 }.bind(this), loginBtn);
