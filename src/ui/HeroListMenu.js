@@ -446,6 +446,7 @@ var HeroListMenu = ListViewMenu.extend({
         elements.lv.setString('Lv.' + hero.getLv() + '/' + hero.getMaxLevel());
         customEventHelper.sendEvent(EVENT.HERO_UPGRADE, eventData);
         customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
+        customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS,{type:'total_hero_upgrade',value:num});
         if (hero.isMaxLevel()) {
             elements.maxLevel_btn.layer.setVisible(true);
             elements.upgrade_btn.layer.setVisible(false);

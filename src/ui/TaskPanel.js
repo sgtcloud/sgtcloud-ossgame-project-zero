@@ -21,9 +21,11 @@ var TaskPanel = cc.Class.extend({
                 'loadingBar': this._dailyTaskLiveness,
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
-                    this.dailyTaskService.getReward(player.id, taskid, function (result, data) {
-                        if (result && data) {
-
+                    this.dailyTaskService.getReward( taskid,player.id, function (result, data) {
+                        console.log(data)
+                        if (result ) {
+                        }else {
+                            tip.toggle(data);
                         }
                     });
                 }.bind(this)
@@ -33,9 +35,13 @@ var TaskPanel = cc.Class.extend({
                 'loadingBar': this._achevementLiveness,
                 'refreshData': this._refreshAchievement,
                 'gerReward': function (achievementId) {
-                    this.achievementService.complete(player.id, achievementId, function (result, data) {
-                        if (result && data) {
+                    this.achievementService.complete( player.id,achievementId, function (result, data) {
+                        if (result) {
+                            if(data.unit==='liveness'){
 
+                            }
+                        }else {
+                            tip.toggle(data);
                         }
                     });
                 }.bind(this)
@@ -44,12 +50,30 @@ var TaskPanel = cc.Class.extend({
         this.LIVENESS_UNIT = 'liveness';
         var achievementTyps = ['total_enemy_kill', 'total_total_kill', 'total_fairy', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_artifact_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
         var taskTyps = ['total_fairy', 'total_enemy_kill', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
+        customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
+            var data = e.getUserData();
+            if (achievementTyps.indexOf(data['type']) > -1) {
+                this.achievementService.customAchievementsByType(data['type'],player.id,data['value']||1,  function (result, d) {
+                    if(result){
+
+                    }
+                });
+            }
+            if (taskTyps.indexOf(data['type']) > -1) {
+                this.dailyTaskService.addExecuteTasksByType(data['type'],player.id,data['value']||1, function (result, d) {
+                    if(result){
+
+                    }
+                });
+            }
+        }.bind(this));
         this.TYPE_OF_TASK = {"TYPES": taskTyps, "LIVENESS": "daily_leveness"};
         this.TYPE_OF_ACHIEVEMENT = {"TYPES": achievementTyps, "LIVENESS": "achievement_leveness"};
         this.loadingBar = bar.getChildByName('bar_yellow');
         this.loadingNum = bar.getChildByName('num');
         this.list = root.getChildByName('list');
-        this.list.pushBackCustomItem(this.taskview.clone());
+        //this.list.pushBackCustomItem(this.taskview.clone());
+        this.list.setClippingEnabled(true);
         this.buttons = {};
         this.dailyTaskService = sgt.DailyTaskService;
         this.achievementService = sgt.AchievementService;
@@ -71,7 +95,6 @@ var TaskPanel = cc.Class.extend({
                 }
             }.bind(this), this);
         }
-        this.showMenuLayer('everyDay_tab');
     }, showMenuLayer: function (name) {
         for (var i in this.buttons) {
             this.buttons[i].setSelected(false);
@@ -86,6 +109,7 @@ var TaskPanel = cc.Class.extend({
         this._tabObj[name]['loadingBar'].call(this);
         this.refreshItems(name);
     }, openPopup: function () {
+        this.showMenuLayer('everyDay_tab');
         GamePopup.openPopup(this.layer, null, false);
     }, _dailyTaskLiveness: function () {
         this.dailyTaskService.getDailyTasksByType(player.id, this.TYPE_OF_TASK.LIVENESS, function (result, data) {
@@ -108,11 +132,11 @@ var TaskPanel = cc.Class.extend({
         this._tabObj[tab]['refreshData'].call(this);
     }, _refreshTask: function () {
         //this.dailyTaskService.getDailyTasksByType
-        var func=this.dailyTaskService.getDailyTasksByType;
-        if(this.TYPE_OF_ACHIEVEMENT.TYPES instanceof  Array){
-            func=this.taskServiceExt.getDailyTaskByTypes;
+        var func = this.dailyTaskService.getDailyTasksByType;
+        if (this.TYPE_OF_ACHIEVEMENT.TYPES instanceof Array) {
+            func = this.taskServiceExt.getDailyTaskByTypes;
         }
-        func.call(this,player.id, this.TYPE_OF_TASK.TYPES, function (result, data) {
+        func.call(this, player.id, this.TYPE_OF_TASK.TYPES, function (result, data) {
             if (result && data) {
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'everyDay_tab');
@@ -120,11 +144,11 @@ var TaskPanel = cc.Class.extend({
             }
         }.bind(this));
     }, _refreshAchievement: function () {
-        var func=this.achievementService.getAchievementsByType;
-        if(this.TYPE_OF_ACHIEVEMENT.TYPES instanceof  Array){
-            func=this.taskServiceExt.getAchievementTaskByTypes;
+        var func = this.achievementService.getAchievementsByType;
+        if (this.TYPE_OF_ACHIEVEMENT.TYPES instanceof Array) {
+            func = this.taskServiceExt.getAchievementTaskByTypes;
         }
-        func.call(this,player.id, this.TYPE_OF_ACHIEVEMENT.TYPES, function (result, data) {
+        func.call(this, player.id, this.TYPE_OF_ACHIEVEMENT.TYPES, function (result, data) {
             if (result && data) {
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'achievement_tab');
@@ -135,6 +159,7 @@ var TaskPanel = cc.Class.extend({
         var taskItem = this.taskview.clone();
         var desc = taskItem.getChildByName('text');
         desc.setString(task.description);
+        setFont(desc);
         var bar = taskItem.getChildByName('bar');
         var num = bar.getChildByName('num');
         num.setString(task.currentProgress);
@@ -144,6 +169,8 @@ var TaskPanel = cc.Class.extend({
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
         rewardBtn.setTag(task.id);
+        rewardBtn.setEnabled(true);
+        rewardBtn.setBright(true);
         rewardBtn.addClickEventListener(function () {
             console.log('get reward');
             var id = rewardBtn.getTag();
@@ -154,5 +181,5 @@ var TaskPanel = cc.Class.extend({
     }
 });
 TaskPanel.open = function () {
-    new TaskPanel().openPopup();
+    taskPanel.openPopup();
 };

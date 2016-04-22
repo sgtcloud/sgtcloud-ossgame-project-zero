@@ -36,6 +36,7 @@ var MainScene = cc.Scene.extend({
         window.tip = new Tip(this);
         this.arentResultTip=new ArenaResultTip(this);
         (function (w) {
+            w.taskPanel=new TaskPanel();
             var buffArr = [];
             customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
                 buffList.setVisible(false);

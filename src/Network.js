@@ -581,7 +581,7 @@
         },
         buildCustomService: function () {
             this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard", "pushAndInitTimesIfNecessity", "fightResult", "checkInArena", "createArenaChallenge", "updateChallenge", "getTopChallenges"]);
-            this.taskServiceExt = sgt.getCustomService('taskAchieve', ["getDailyTaskByTypes", "getAchievementTaskByTypes"]);
+            this.taskServiceExt = sgt.getCustomService('taskachieve', ["getDailyTaskByTypes", "getAchievementTaskByTypes"]);
         },
         initArenaBattle: function (id, callback) {
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
