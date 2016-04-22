@@ -353,7 +353,7 @@
             }
         },
         checkIn_createByValidate: function (callback) {
-            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result, data) {
+            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game',callback/*, function (result, data) {
                 //true 可以签到 false 不能签到
                 if (result) {
                     //this.openCheckInPanel()
@@ -361,7 +361,7 @@
                 } else {
                     console.log('签到异常');
                 }
-            }.bind(this));
+            }.bind(this)*/);
         },openCheckInPanel: function(isCheckIn){
             //获取累计签到次数
             sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result, data) {
