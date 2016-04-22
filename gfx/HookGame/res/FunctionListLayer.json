@@ -67,14 +67,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -137,14 +137,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -207,14 +207,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -277,14 +277,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -347,14 +347,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -417,14 +417,14 @@
                   "B": 70
                 },
                 "PressedFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Normal",
+                  "Type": "MarkedSubImage",
                   "Path": "buttonUI/btn_test.png",
-                  "Plist": ""
+                  "Plist": "ButtonUI.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 13,
@@ -496,7 +496,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "buttonUI/btn_test.png",
+        "ButtonUI.plist",
+        "ButtonUI.png",
         "TitleUI/list_bg.png"
       ],
       "ctype": "GameFileData"

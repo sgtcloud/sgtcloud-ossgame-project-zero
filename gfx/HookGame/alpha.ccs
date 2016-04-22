@@ -99,10 +99,6 @@
           </PlistImageFolder>
           <Image Name="equipAll.png" />
         </Folder>
-        <Folder Name="Genius">
-          <Image Name="enemy1001_atk01.png" />
-          <Image Name="hero103_atk01.png" />
-        </Folder>
         <Folder Name="heroDescUI">
           <Image Name="atk.png" />
           <Image Name="atk_lable.png" />
