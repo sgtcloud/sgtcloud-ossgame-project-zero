@@ -352,29 +352,33 @@
                 });
             }
         },
-        checkIn_createByValidate: function () {
-            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result1, data1) {
+        checkIn_createByValidate: function (callback) {
+            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', callback/*function (result1, data1) {
                 //true 可以签到 false 不能签到
                 if (result1 && data1) {
-                    //获取累计签到次数
-                    sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result2, data2) {
-                        if (result2) {
-                            sgt.CheckinBoardService.getRewardByCheckinBoardId('h5game', function (result3, data3) {
-                                if (result3) {
-                                    CheckInPanel.open(data3, data2);
-                                } else {
-                                    console.error('sgt.CheckinBoardService.getRewardByCheckinBoardId:' + data3);
-                                }
-                            });
-                        } else {
-                            console.error('sgt.CheckinBoardService.accumulateCount:' + data2);
-                        }
-                    })
+                    //this.openCheckInPanel()
+                    return true;
                 } else {
                     console.log('已签到');
+                    return false;
                 }
-            });
-        }, _getBonus: function (icon, image2, image3, bonus) {
+            }.bind(this)*/);
+        },openCheckInPanel: function(isCheckIn){
+            //获取累计签到次数
+            sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result, data) {
+                if (result) {
+                    sgt.CheckinBoardService.getRewardByCheckinBoardId('h5game', function (result2, data2) {
+                        if (result2) {
+                            CheckInPanel.open(data2, data,isCheckIn);
+                        } else {
+                            console.error('sgt.CheckinBoardService.getRewardByCheckinBoardId:' + data2);
+                        }
+                    });
+                } else {
+                    console.error('sgt.CheckinBoardService.accumulateCount:' + data);
+                }
+            })
+        },_getBonus: function (icon, image2, image3, bonus) {
             icon.setTouchEnabled(false);
             icon.setColor(cc.color(90, 90, 90));
             image3.setVisible(true);
@@ -692,8 +696,8 @@
                 cb();
             }
         },
-        openLoginPopup: function (user_text) {
-            var login = new LoginPanel(null/*sgt.context.user*/, user_text);
+        openLoginPopup: function(user_text){
+            var login = new LoginPanel(/*null*//*sgt.context.user,*/user_text);
             login.openLoginPopup();
         },
         register: function (username, pwd, type, callback) {
@@ -793,6 +797,7 @@
                 loginBtn.setTouchEnabled(false);
                 user_layout.setTouchEnabled(false);
                 btn.setTouchEnabled(false);
+                list_btn.setBrightStyle(ccui.Widget.BRIGHT_STYLE_HIGH_LIGHT);
                 bindTouchEventListener(function () {
                     ChooseServerPanel.open(chooseBtn);
                     return true;
@@ -821,6 +826,7 @@
                     if (!PlayerData.modelPlayer) {
                         loginBtn.setVisible(false);
                         chooseBtn.setVisible(false);
+                        user_layout.setVisible(false);
                         Network.openNewNameLayer(scene, createPlayerComplete);
                     } else {
                         var mark = localStorage.getItem('mark-sgt-html5-game');

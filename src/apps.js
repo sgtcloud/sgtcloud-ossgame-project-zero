@@ -18,6 +18,7 @@ $$.extend = function (a, b) {
  return this;
  }*/
 var CONSTS = {
+    "APP_ID": "h5game",
     "FAIRY_SPECIFIC_ZORDER": 2000,
     "MAX_ATTACHMENTS_ON_SPRITE": 10,
     "offline_reward_min_time": 60,
@@ -547,6 +548,18 @@ function setVisibles(target, visible) {
         target.setVisible(visible);
     }
 }
+function setEnableds(target, enable) {
+    if (target instanceof Array) {
+        for (var i in target) {
+            target[i].setEnabled(enable);
+            target[i].setBright(enable);
+        }
+    }
+    else {
+        target.setEnabled(enable);
+        target.setBright(enable);
+    }
+}
 function scheduleOnce(target, callback, delay) {
     cc.director.getScheduler().schedule(callback, target, 0, 0, delay, false, target.__instanceId);
 }
@@ -653,8 +666,8 @@ function buildDesc(effects, desc, extend) {
         effectsObj[effects[i]['name']] = {}
         effectsObj[effects[i]['name']]['name'] = alas;
         effectsObj[effects[i]['name']]['value'] = map['type'] === 'rate' ? (value + '%') : value;
-        if(typeof map['onShow']==='function'){
-            effectsObj[effects[i]['name']]['value']= map['onShow'](effectsObj[effects[i]['name']]['value']);
+        if (typeof map['onShow'] === 'function') {
+            effectsObj[effects[i]['name']]['value'] = map['onShow'](effectsObj[effects[i]['name']]['value']);
         }
     }
     if (extend) {
@@ -678,34 +691,34 @@ function formatResourceToString(rewards) {
             return "";
         }
     } else {
-        descText= _processReward(rewards);
+        descText = _processReward(rewards);
     }
     return descText;
 }
-function _processReward(reward){
-    var descText='';
-    if(reward.hasOwnProperty('unit')){
+function _processReward(reward) {
+    var descText = '';
+    if (reward.hasOwnProperty('unit')) {
         descText += CONSTS.resources_mapping[reward['unit']] + " * " + reward['value'] + ",";
-    }else {
-        for(var key in reward){
+    } else {
+        for (var key in reward) {
             descText += CONSTS.resources_mapping[key] + " * " + reward[key] + ",";
         }
     }
     return descText;
 }
 
-function formatNumber(data,type){
-    if(typeof type === 'undefined'){
-        if(data >= 0 && data <1000){
+function formatNumber(data, type) {
+    if (typeof type === 'undefined') {
+        if (data >= 0 && data < 1000) {
             return Math.floor(data);
-        }else if(data >= 1000 && data < 1000000){
-            return (data/1000.0).toFixed(2)+"k";
-        }else if(data >= 1000000 && data < 1000000000){
-            return (data/1000000.0).toFixed(2)+"m";
-        }else {
-            return (data/1000000000.0).toFixed(2)+"b";
+        } else if (data >= 1000 && data < 1000000) {
+            return (data / 1000.0).toFixed(2) + "k";
+        } else if (data >= 1000000 && data < 1000000000) {
+            return (data / 1000000.0).toFixed(2) + "m";
+        } else {
+            return (data / 1000000000.0).toFixed(2) + "b";
         }
-    }else if(type == 'rate'){
-        return data.toFixed(2)+"%";
+    } else if (type == 'rate') {
+        return data.toFixed(2) + "%";
     }
 }

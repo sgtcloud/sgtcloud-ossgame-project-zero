@@ -9,7 +9,7 @@ var CheckInPanel = cc.Node.extend({
         this.signView = ccs.csLoader.createNode(res.sign_view);
         this.signLayer.setName('checkInPanel');
     },
-    initDate: function (rewards, accumulateCount) {
+    initDate: function (rewards, accumulateCount ,isCheckIn) {
         if (!rewards) {
             return;
         }
@@ -38,9 +38,8 @@ var CheckInPanel = cc.Node.extend({
             num.setString((cc.isArray(data.bonus) && data.bonus.length > 1) ? 1 : data.bonus[0]['value']);
             if (accumulateCount < n) {
                 image3.setVisible(false);
-
             }
-            if (accumulateCount + 1 == n) {
+            if (isCheckIn && accumulateCount + 1 == n) {
                 image2.setVisible(true);
                 icon.setTouchEnabled(true);
                 this.addIconClickEventListener(icon, image2, image3, data);
@@ -69,11 +68,11 @@ var CheckInPanel = cc.Node.extend({
         }.bind(this));
     },
     openCheckInPopup: function(){
-        GamePopup.openPopup(this.signLayer);
+        GamePopup.openPopup(this.signLayer,null,false);
     }
 });
-CheckInPanel.open = function(data3, data2){
+CheckInPanel.open = function(data3, data2,isCheckIn){
     var checkInUnit = new CheckInPanel();
-    checkInUnit.initDate(data3, data2);
+    checkInUnit.initDate(data3, data2,isCheckIn);
     checkInUnit.openCheckInPopup();
-}
+};
