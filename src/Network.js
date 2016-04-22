@@ -57,8 +57,8 @@
         //一般自动登录业务
         autoLoginService: function (cb) {
             var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
-            if(!isVisitor){
-                localStorage.setItem('is-sgt-html5-game-visitor',1);
+            if (!isVisitor) {
+                localStorage.setItem('is-sgt-html5-game-visitor', 1);
             }
             SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
@@ -353,7 +353,7 @@
             }
         },
         checkIn_createByValidate: function (callback) {
-            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result, data) {
+            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game',callback/*, function (result, data) {
                 //true 可以签到 false 不能签到
                 if (result) {
                     //this.openCheckInPanel()
@@ -361,7 +361,7 @@
                 } else {
                     console.log('签到异常');
                 }
-            }.bind(this));
+            }.bind(this)*/);
         },openCheckInPanel: function(isCheckIn){
             //获取累计签到次数
             sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result, data) {
@@ -580,6 +580,7 @@
         },
         buildCustomService: function () {
             this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard", "pushAndInitTimesIfNecessity", "fightResult", "checkInArena", "createArenaChallenge", "updateChallenge", "getTopChallenges"]);
+            this.taskServiceExt = sgt.getCustomService('taskachieve', ["getDailyTaskByTypes", "getAchievementTaskByTypes"]);
         },
         initArenaBattle: function (id, callback) {
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
@@ -706,25 +707,25 @@
                         sgt.UserService.saveLocalStorage(username,pwd);
                         localStorage.setItem('is-sgt-html5-game-visitor',2);
                     }
-                    callback(result,data);
+                    callback(result, data);
                 });
-            }else{
+            } else {
                 var user = new SgtApi.User();
                 user.userName = username;
                 user.password = pwd;
-                SgtApi.UserService.regist_manual(user,callback);
+                SgtApi.UserService.regist_manual(user, callback);
             }
         },
-        login: function(username,pwd,callback){
-            SgtApi.UserService.login_manual(username,pwd,function(result,data){
-                if(result){
-                    localStorage.setItem('is-sgt-html5-game-visitor',2);
-                    sgt.UserService.saveLocalStorage(username,pwd);
+        login: function (username, pwd, callback) {
+            SgtApi.UserService.login_manual(username, pwd, function (result, data) {
+                if (result) {
+                    localStorage.setItem('is-sgt-html5-game-visitor', 2);
+                    sgt.UserService.saveLocalStorage(username, pwd);
                 }
-                callback(result,data);
+                callback(result, data);
             });
         },
-        showCover: function(){
+        showCover: function () {
             var json = ccs.load(res.cover_scene_json);
             var scene = json.node.getChildByName('root');
             scene.setAnchorPoint(cc.p(0, 0));
@@ -784,9 +785,9 @@
                     full.setVisible(false);
                 }
                 var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
-                if(!isVisitor || parseInt(isVisitor) === 1){
+                if (!isVisitor || parseInt(isVisitor) === 1) {
                     user_text.setString('游客账号');
-                }else{
+                } else {
                     user_text.setString(sgt.context.user.userName);
                 }
                 //Network.setServerInfo(server);

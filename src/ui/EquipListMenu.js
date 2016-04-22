@@ -112,8 +112,8 @@ var EquipListMenu = ListViewMenu.extend({
     },
     buildMagicalEquips: function (hero) {
         var title = this.magicEquipRoot.getChildByName('title');
-        var buy_btn = this.magicEquipRoot.getChildByName('buy_btn')
-        var buy_btn_layer = buy_btn.getChildByName('btn')
+        var buy_btn = this.magicEquipRoot.getChildByName('buy_btn');
+        var buy_btn_layer = buy_btn.getChildByName('btn');
         var btn = buy_btn_layer.getChildByName('btn');
         var text_yellow = buy_btn_layer.getChildByName('text_yellow');
         var relic_icon = buy_btn_layer.getChildByName('relic_icon');
