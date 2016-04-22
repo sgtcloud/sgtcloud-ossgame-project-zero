@@ -57,8 +57,8 @@
         //一般自动登录业务
         autoLoginService: function (cb) {
             var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
-            if(!isVisitor){
-                localStorage.setItem('is-sgt-html5-game-visitor',1);
+            if (!isVisitor) {
+                localStorage.setItem('is-sgt-html5-game-visitor', 1);
             }
             SgtApi.UserService.quickLogin_manual(function (result, user) {
                 if (result) {
@@ -577,6 +577,7 @@
         },
         buildCustomService: function () {
             this.arenaService = sgt.getCustomService('arena', ["getPlayersByIndex", "getIndexFromLeaderBoard", "pushAndInitTimesIfNecessity", "fightResult", "checkInArena", "createArenaChallenge", "updateChallenge", "getTopChallenges"]);
+            this.taskServiceExt = sgt.getCustomService('taskAchieve', ["getDailyTaskByTypes", "getAchievementTaskByTypes"]);
         },
         initArenaBattle: function (id, callback) {
             sgt.PlayerExtraService.getPlayerExtraById(id, function (result, data) {
@@ -691,36 +692,36 @@
                 cb();
             }
         },
-        openLoginPopup: function(user_text){
-            var login = new LoginPanel(null/*sgt.context.user*/,user_text);
+        openLoginPopup: function (user_text) {
+            var login = new LoginPanel(null/*sgt.context.user*/, user_text);
             login.openLoginPopup();
         },
-        register: function(username,pwd,type,callback){
-            if(type === 1){
-                SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid,username,pwd,function(result,data){
-                    if(result){
-                        sgt.UserService.saveLocalStorage(username,pwd);
-                        localStorage.setItem('is-sgt-html5-game-visitor',2);
+        register: function (username, pwd, type, callback) {
+            if (type === 1) {
+                SgtApi.UserService.updateUserNameAndPassword(SgtApi.context.user.userid, username, pwd, function (result, data) {
+                    if (result) {
+                        sgt.UserService.saveLocalStorage(username, pwd);
+                        localStorage.setItem('is-sgt-html5-game-visitor', 2);
                     }
-                    callback(result,data);
+                    callback(result, data);
                 });
-            }else{
+            } else {
                 var user = new SgtApi.User();
                 user.userName = username;
                 user.password = pwd;
-                SgtApi.UserService.regist_manual(user,callback);
+                SgtApi.UserService.regist_manual(user, callback);
             }
         },
-        login: function(username,pwd,callback){
-            SgtApi.UserService.login_manual(username,pwd,function(result,data){
-                if(result){
-                    localStorage.setItem('is-sgt-html5-game-visitor',2);
-                    sgt.UserService.saveLocalStorage(username,pwd);
+        login: function (username, pwd, callback) {
+            SgtApi.UserService.login_manual(username, pwd, function (result, data) {
+                if (result) {
+                    localStorage.setItem('is-sgt-html5-game-visitor', 2);
+                    sgt.UserService.saveLocalStorage(username, pwd);
                 }
-                callback(result,data);
+                callback(result, data);
             });
         },
-        showCover: function(){
+        showCover: function () {
             var json = ccs.load(res.cover_scene_json);
             var scene = json.node.getChildByName('root');
             scene.setAnchorPoint(cc.p(0, 0));
@@ -780,9 +781,9 @@
                     full.setVisible(false);
                 }
                 var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
-                if(!isVisitor || parseInt(isVisitor) === 1){
+                if (!isVisitor || parseInt(isVisitor) === 1) {
                     user_text.setString('游客账号');
-                }else{
+                } else {
                     user_text.setString(sgt.context.user.userName);
                 }
                 //Network.setServerInfo(server);
@@ -799,7 +800,7 @@
                 bindButtonCallback(list_btn, function () {
                     ChooseServerPanel.open(chooseBtn);
                 });
-                bindTouchEventListener(function(){
+                bindTouchEventListener(function () {
                     this.EnterGame();
                     return true;
                 }.bind(this), loginBtn);

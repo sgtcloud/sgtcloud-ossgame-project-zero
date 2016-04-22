@@ -43,9 +43,9 @@ var TaskPanel = cc.Class.extend({
         };
         this.LIVENESS_UNIT = 'liveness';
         var achievementTyps = ['total_enemy_kill', 'total_total_kill', 'total_fairy', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_artifact_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
-        var achievementTyps = ['total_fairy','total_enemy_kill','total_hero_upgrade','total_skill_upgrade','total_equip_upgrade','total_arena_challenge','total_dungeon','total_moneytree'];
-        this.TYPE_OF_TASK = {"NORMARL": "daily_test", "LIVENESS": "daily_leveness"};
-        this.TYPE_OF_ACHIEVEMENT = {"NORMARL": "achievement_test", "LIVENESS": "achievement_leveness"};
+        var taskTyps = ['total_fairy', 'total_enemy_kill', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
+        this.TYPE_OF_TASK = {"TYPES": taskTyps, "LIVENESS": "daily_leveness"};
+        this.TYPE_OF_ACHIEVEMENT = {"TYPES": achievementTyps, "LIVENESS": "achievement_leveness"};
         this.loadingBar = bar.getChildByName('bar_yellow');
         this.loadingNum = bar.getChildByName('num');
         this.list = root.getChildByName('list');
@@ -53,6 +53,7 @@ var TaskPanel = cc.Class.extend({
         this.buttons = {};
         this.dailyTaskService = sgt.DailyTaskService;
         this.achievementService = sgt.AchievementService;
+        this.taskServiceExt = Network.taskServiceExt;
         for (var i in tabParams) {
             var param = tabParams[i];
             var name = param.name;
@@ -106,7 +107,12 @@ var TaskPanel = cc.Class.extend({
         this.list.removeAllChildren(true);
         this._tabObj[tab]['refreshData'].call(this);
     }, _refreshTask: function () {
-        this.dailyTaskService.getDailyTasksByType(player.id, this.TYPE_OF_TASK.NORMARL, function (result, data) {
+        //this.dailyTaskService.getDailyTasksByType
+        var func=this.dailyTaskService.getDailyTasksByType;
+        if(this.TYPE_OF_ACHIEVEMENT.TYPES instanceof  Array){
+            func=this.taskServiceExt.getDailyTaskByTypes;
+        }
+        func.call(this,player.id, this.TYPE_OF_TASK.TYPES, function (result, data) {
             if (result && data) {
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'everyDay_tab');
@@ -114,7 +120,11 @@ var TaskPanel = cc.Class.extend({
             }
         }.bind(this));
     }, _refreshAchievement: function () {
-        this.achievementService.getAchievementsByType(player.id, this.TYPE_OF_ACHIEVEMENT.NORMARL, function (result, data) {
+        var func=this.achievementService.getAchievementsByType;
+        if(this.TYPE_OF_ACHIEVEMENT.TYPES instanceof  Array){
+            func=this.taskServiceExt.getAchievementTaskByTypes;
+        }
+        func.call(this,player.id, this.TYPE_OF_ACHIEVEMENT.TYPES, function (result, data) {
             if (result && data) {
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'achievement_tab');

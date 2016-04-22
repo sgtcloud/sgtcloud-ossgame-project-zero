@@ -147,7 +147,11 @@ var EVENT = {
     /**
      * 挑战竞技场失败
      */
-    "LOSE_ARENA_BATTLE":"LOSE_ARENA_BATTLE"
+    "LOSE_ARENA_BATTLE":"LOSE_ARENA_BATTLE",
+    /**
+     * 实时更新统计参数
+     */
+    "UPDATE_STATISTICS":"UPDATE_STATISTICS"
 
 };
 
