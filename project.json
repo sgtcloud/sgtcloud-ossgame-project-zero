@@ -35,6 +35,7 @@
     "src/battle/BattleUnit.js",
     "src/battle/HeroUnit.js",
     "src/battle/EnemyUnit.js",
+    "src/ui/TaskPanel.js",
     "src/ui/TopPanel.js",
     "src/ui/BattlePanel.js",
     "src/ui/TabContainer.js",

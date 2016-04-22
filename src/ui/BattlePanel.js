@@ -10,7 +10,6 @@ var BattlePanel = cc.Node.extend({
 
     ctor: function () {
         this._super();
-
         var battleLayer = ccs.csLoader.createNode(res.battle_layer_json);
         this.height = battleLayer.height;
         this.width = battleLayer.width;
@@ -36,6 +35,11 @@ var BattlePanel = cc.Node.extend({
         this.current_stage_num = this.enemyList.getChildByName("level_text2");
         this.next_stage_num = this.enemyList.getChildByName("level_text3");
         //this.buffList.setLocalZOrder(9000);
+
+        this.taskBtn=root.getChildByName('task_btn');
+        bindButtonCallback(this.taskBtn, function () {
+            TaskPanel.open();
+        }.bind(this));
 
         this.timeText.setVisible(false);
 

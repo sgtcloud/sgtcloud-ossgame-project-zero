@@ -137,6 +137,8 @@ var res = {
     choose_list_layer_json: 'res/ChooseListLayer.json',
     new_user_layer_json: 'res/NewUserLayer.json',
     user_layer_json: 'res/UserLayer.json',
+    task_layer_json:'res/TaskLayer.json',
+    task_view_json:'res/TaskView.json',
     function_list_layer:'res/FunctionListLayer.json'
 
 };
