@@ -743,8 +743,8 @@ function buildMaxLevelBtn(elements, maxLevel) {
     elements.maxLevel_btn = {};
     elements.maxLevel_btn.layer = maxLevel;
     elements.maxLevel_btn.btn = maxLevel.getChildByName('btn');
-    elements.maxLevel_btn.btn.setEnabled(false)
-    elements.maxLevel_btn.btn.setBright(false)
+    elements.maxLevel_btn.btn.setEnabled(false);
+    elements.maxLevel_btn.btn.setBright(false);
     elements.maxLevel_btn.upMax_text = maxLevel.getChildByName('upMax_text');
     elements.maxLevel_btn.layer.setVisible(false);
 }
@@ -763,4 +763,3 @@ function toFixed2(num, fixed) {
     }
     return _effect;
 }
-
