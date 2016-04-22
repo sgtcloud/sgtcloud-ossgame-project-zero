@@ -15,86 +15,62 @@ var TopPanel = cc.Node.extend({
         var statisticsBtn = root.getChildByName("statistics_btn");
         //var airingText = root.getChildByName("airing_text");
         var functionListBtn = root.getChildByName("functionList_btn");
+        root.getChildByName("list").setVisible(false);
         playerIcon.loadTexture("res/icon/heroes/"+PlayerData.getHeroes()[0].getIcon(), ccui.Widget.LOCAL_TEXTURE);
         var btnList = new BtnListPanel(root);
         var isBtnListShow = false;
         var pane = root.getChildByName('box');
         var self = this;
 
-        this.diamondNum = pane.getChildByName('diamond_text');
-        this.relicNum = pane.getChildByName('relic_text');
-        this.goldNum = pane.getChildByName('gold_text');
-        this.goldBtn = pane.getChildByName('getGold_btn');
-        this.getDiamondBtn = pane.getChildByName('getDiamond_btn');
-        bindButtonCallback(this.goldBtn, function () {
-            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE){
-                game.tabContainer.showMenuLayer("shop");
-                game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
-            }
-        }.bind(this));
-        bindButtonCallback(this.getDiamondBtn, function () {
-            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
-                RechargePanel.open();
-            }
-        }.bind(this));
+        var diamondNum = pane.getChildByName('diamond_text');
+        var relicNum = pane.getChildByName('relic_text');
+        var goldNum = pane.getChildByName('gold_text');
+        var goldBtn = pane.getChildByName('getGold_btn');
+        var getDiamondBtn = pane.getChildByName('getDiamond_btn');
+        bindButtonCallback(goldBtn, function () {
+            game.tabContainer.showMenuLayer("shop");
+            game.tabContainer.menus.shop.showMenuLayer('moneyTree_tab');
+        });
+        bindButtonCallback(getDiamondBtn, function () {
+            RechargePanel.open();
+        });
         bindButtonCallback(statisticsBtn, function () {
-            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
-                StatisticsPanel.open();
-            }
-        }.bind(this));
+            StatisticsPanel.open();
+        });
         bindButtonCallback(functionListBtn, function () {
-            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
-                if (isBtnListShow) {
-                    btnList.hide();
-                    isBtnListShow = false;
-                } else {
-                    btnList.show();
-                    isBtnListShow = true;
-                }
-            }else{
-                if (isBtnListShow) {
-                    btnList.hide();
-                    isBtnListShow = false;
-                }
+            if (isBtnListShow) {
+                btnList.hide();
+                isBtnListShow = false;
+            } else {
+                btnList.show();
+                isBtnListShow = true;
             }
         }.bind(this));
 
         Loot.prototype.getGoldPosition = function () {
-            return this.goldNum.convertToWorldSpace(this.goldNum.getPosition());
-        }.bind(this);
+            return goldNum.convertToWorldSpace(goldNum.getPosition());
+        };
         Loot.prototype.getDiamondPosition = function () {
-            return this.diamondNum.convertToWorldSpace(this.diamondNum.getPosition());
-        }.bind(this);
+            return diamondNum.convertToWorldSpace(diamondNum.getPosition());
+        };
         Loot.prototype.getRelicPosition = function () {
-            return this.relicNum.convertToWorldSpace(this.relicNum.getPosition());
-        }.bind(this);
+            return relicNum.convertToWorldSpace(relicNum.getPosition());
+        };
 
-        /*this.battleNumText = root.getChildByName('level_text');
-        this.fightBossBtn = root.getChildByName('fight_btn');
-        this.leaveBossBtn = root.getChildByName('live_btn');
-        this.stageNumText_bg = root.getChildByName('levelText_bg');
-        this.stage_icon = root.getChildByName('stage_icon');
-        var stageListRoot = root.getChildByName('enemyList').getChildByName('root');
-        this.prev_stage_icon = stageListRoot.getChildByName("enemy_icon1");
-        this.prev_stage_arrow = stageListRoot.getChildByName("star1");
-        this.current_stage_icon = stageListRoot.getChildByName("enemy_icon2");
-        this.next_stage_icon = stageListRoot.getChildByName("enemy_icon3");
-        this.prev_stage_num = stageListRoot.getChildByName("level_text1");
-        this.current_stage_num = stageListRoot.getChildByName("level_text2");
-        this.next_stage_num = stageListRoot.getChildByName("level_text3");*/
-        this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
-        // register battle custom event
-        customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
-            var data = event.getUserData();
-            if(data){
-                this.state  = BATTLE_STATE.STATE_ARENA_BATTLE;
-                this.refreshStageState();
-            }else{
-                this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
-                this.refreshStageList();
-                this.refreshStageState();
+        customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
+            setEnableds([functionListBtn,statisticsBtn,getDiamondBtn,goldBtn], false);
+            if (isBtnListShow) {
+                btnList.hide();
+                isBtnListShow = false;
             }
-        }.bind(this));
+        });
+
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function(){
+            setEnableds([functionListBtn,statisticsBtn,getDiamondBtn,goldBtn], true);
+        });
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function(){
+            setEnableds([functionListBtn,statisticsBtn,getDiamondBtn,goldBtn], true);
+        });
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
@@ -109,16 +85,6 @@ var TopPanel = cc.Node.extend({
             }
         }.bind(this));
 
-       /* bindButtonCallback(this.fightBossBtn, function () {
-            customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
-        });
-        bindButtonCallback(this.leaveBossBtn, function () {
-            if(this.state == BATTLE_STATE.STATE_ARENA_BATTLE){
-                customEventHelper.sendEvent(EVENT.LOSE_ARENA_BATTLE);
-            }else {
-                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
-            }
-        }.bind(this));*/
 
         this.sendEventByUnit = function (resources) {
             switch (resources.unit) {
@@ -138,106 +104,33 @@ var TopPanel = cc.Node.extend({
                     customEventHelper.sendEvent(EVENT.PACK_VALUE_UPDATE);
             }
         };
+        var scale1 = diamondNum.scale;
         this.refreshPlayerGemText = function () {
             var num = PlayerData.getAmountByUnit("gem");
-            this.diamondNum.setString(num);
-            this.diamondNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
+            diamondNum.setString(num);
+            diamondNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2*scale1), cc.scaleTo(0.1, scale1)));
         };
+        var scale2 = relicNum.scale;
         this.refreshPlayerRelicText = function () {
             var num = PlayerData.getAmountByUnit("relic");
-            this.relicNum.setString(num);
-            this.relicNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
+            relicNum.setString(num);
+            relicNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2*scale2), cc.scaleTo(0.1, scale2)));
         };
+        var scale3 = goldNum.scale;
         this.refreshPlayerGoldText = function () {
             var num = PlayerData.getAmountByUnit("gold");
-            this.goldNum.setString(num);
-            this.goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2), cc.scaleTo(0.1, 1.0)));
+            goldNum.setString(num);
+            goldNum.runAction(cc.sequence(cc.scaleTo(0.1, 1.2*scale3), cc.scaleTo(0.1, scale3)));
         };
         this.refreshPlayerKeyText = function () {
             //player.key
         };
-        this.refreshStageState = function () {
-
-            var stage = PlayerData.getStageData();
-            var cur = player.stage_battle_num;
-            var max = stage.getRandomBattleCount();
-            // 根据当前stage的battle状态设置gui状态
-            if(this.state !== BATTLE_STATE.STATE_ARENA_BATTLE){
-                if (stage.isBossBattle()) {
-                    this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
-                } else {
-                    if (cur > max) {
-                        this.state = BATTLE_STATE.STATE_BOSS_READY;
-                    } else {
-                        this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
-                    }
-                }
-            }
-
-            // 根据gui状态控制各个控件的可见性
-            /*if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
-                //cc.log("stage:" + cur + '/' + max);
-                this.battleNumText.setString(cur + '/' + max);
-                this.leaveBossBtn.setVisible(false);
-                this.fightBossBtn.setVisible(false);
-                this.battleNumText.setVisible(true);
-                this.stageNumText_bg.setVisible(true);
-                this.stage_icon.setVisible(true);
-            } else if (this.state === BATTLE_STATE.STATE_BOSS_BATTLE) {
-                this.leaveBossBtn.setVisible(true);
-                this.fightBossBtn.setVisible(false);
-                this.battleNumText.setVisible(false);
-                this.stageNumText_bg.setVisible(false);
-                this.stage_icon.setVisible(false);
-            } else if (this.state === BATTLE_STATE.STATE_BOSS_READY) {
-                this.leaveBossBtn.setVisible(false);
-                this.fightBossBtn.setVisible(true);
-                this.battleNumText.setVisible(false);
-                this.stageNumText_bg.setVisible(false);
-                this.stage_icon.setVisible(false);
-            }else{
-                this.leaveBossBtn.setVisible(false);
-                this.fightBossBtn.setVisible(false);
-                this.battleNumText.setVisible(false);
-                this.stageNumText_bg.setVisible(false);
-                this.stage_icon.setVisible(false);
-                //终止按钮显示
-            }*/
-        };
-        this.refreshStageList = function () {
-            /*var preStageId = PlayerData.getStageData().getPrevStageId();
-            if (preStageId) {
-                var preStage = new Stage(preStageId);
-                this.loadStageIcon(preStage, this.prev_stage_icon);
-                this.prev_stage_num.setString(preStage.getStageNum());
-                //cc.log("preStage:" + preStage.getStageNum());
-                this.prev_stage_arrow.setVisible(true);
-            } else {
-                this.prev_stage_arrow.setVisible(false);
-            }
-            this.loadStageIcon(PlayerData.getStageData(), this.current_stage_icon);
-            this.current_stage_num.setString(PlayerData.getStageData().getStageNum());
-            //cc.log("curStage:" + PlayerData.getStageData().getStageNum());
-            var nextStageId = PlayerData.getStageData().getNextStageId();
-            if (nextStageId) {
-                var nextStage = new Stage(nextStageId);
-                this.loadStageIcon(nextStage, this.next_stage_icon);
-                this.next_stage_num.setString(nextStage.getStageNum());
-                //cc.log("nextStage:" + nextStage.getStageNum());
-            }*/
-        };
-        /*this.loadStageIcon = function (stage, stageIconWidget) {
-            var icon_image_url = "res/stages/" + stage.getIcon();
-            stageIconWidget.loadTexture(icon_image_url, ccui.Widget.LOCAL_TEXTURE);
-        };*/
 
         this.refreshAll = function () {
             this.refreshPlayerGemText();
             this.refreshPlayerRelicText();
             this.refreshPlayerGoldText();
             this.refreshPlayerKeyText();
-            this.refreshStageState();
-            this.refreshStageList();
         };
     }
 });

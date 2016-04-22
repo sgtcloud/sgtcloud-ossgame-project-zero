@@ -588,7 +588,6 @@ var BattleField = cc.Class.extend({
         this.heroUnits.foreach(function(hero,i){
             this.tempHeroUnits[i] = hero;
         },this);
-        console.log(this.tempHeroUnits);
         this.heroUnits.clear();
         this.enemyUnits.clear();
         this.standHeroPosNum = 0;
@@ -605,7 +604,6 @@ var BattleField = cc.Class.extend({
                 if (result) {
                     arenaEnemyPlayerData = new ArenaPlayerData();
                     arenaEnemyPlayerData.init(data);
-                    //this.challengedPlayer = data;
                     this.countdown.playAnimation("2", false, function () {
                         this.initBattleArenaEnemys(arenaEnemyPlayerData);
                         this.updateEnemyLife();

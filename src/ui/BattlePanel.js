@@ -24,6 +24,18 @@ var BattlePanel = cc.Node.extend({
 
         this.buffList = root.getChildByName('buff_list');
 
+        this.boss_stage = root.getChildByName("boss_stage");
+
+        this.boss_btn = this.boss_stage.getChildByName('boss_btn');
+        this.stage_icon = this.boss_stage.getChildByName('enemy_icon');
+        this.battle_num = this.boss_stage.getChildByName('enemy_num');
+        this.battleNum_bg = this.boss_stage.getChildByName('enemy_bg');
+        this.enemyList = root.getChildByName('enemy_list');
+        this.prev_stage_num = this.enemyList.getChildByName("level_text1");
+        this.current_stage_num = this.enemyList.getChildByName("level_text2");
+        this.next_stage_num = this.enemyList.getChildByName("level_text3");
+        //this.buffList.setLocalZOrder(9000);
+
         this.taskBtn=root.getChildByName('task_btn');
         bindButtonCallback(this.taskBtn, function () {
             TaskPanel.open();
@@ -31,63 +43,27 @@ var BattlePanel = cc.Node.extend({
 
         this.timeText.setVisible(false);
 
-        this.statistics_btn = root.getChildByName("statistics_btn");
-        bindButtonCallback(this.statistics_btn, function () {
-            //customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE);
-            //GamePopup.openPopup(new StatisticsPanel(), /*cc.p(320, 580)*/null, false);
-            StatisticsPanel.open();
-        }.bind(this));
         this.rewardBtn = root.getChildByName('reward_btn');
-
         bindButtonCallback(this.rewardBtn, function () {
             //open offlineReward popup
-            /*GamePopup.openPopup(new OfflineRewardPanel(this.rewardBtn));*/
             OfflineRewardPanel.open(this.rewardBtn);
         }.bind(this));
         this.loadRewardBtn();
 
         Loot.prototype.getPackPosition = function () {
-            return this.pack_btn.convertToWorldSpace(this.pack_btn.getPosition());
+            return this.rechargeBtn.convertToWorldSpace(this.rechargeBtn.getPosition());
         }.bind(this);
 
-        this.pack_btn = root.getChildByName('pack_btn');
-        bindButtonCallback(this.pack_btn, function () {
-            //GamePopup.openPopup(new PackUnit(), null/*cc.p(320, 580)*/, false);
-            PackUnit.open();
-        }.bind(this));
-
-        this.mail_btn = root.getChildByName('maill_btn');
-        bindButtonCallback(this.mail_btn, function () {
-            MailPanel.open();
-        }.bind(this));
         this.rechargeBtn = root.getChildByName('recharge_btn');
         bindButtonCallback(this.rechargeBtn, function () {
             RechargePanel.open();
-        }.bind(this));
-
-        this.firstRechargeBtn = root.getChildByName('firstRecharge_btn');
-        if(cc.isNumber(player.vip) || player.vip < 2 || player.first_recharge_status != 2){
-            bindButtonCallback(this.firstRechargeBtn, function () {
-                FirstRechargePanel.open(this.firstRechargeBtn);
-            }.bind(this));
-        }else{
-            this.firstRechargeBtn.setVisible(false);
-        }
-        this.noticeBtn = root.getChildByName('notice_btn');
-        bindButtonCallback(this.noticeBtn, function () {
-            NoticePanel.open(true);
-        }.bind(this));
-
-        this.giftCodeBtn = root.getChildByName('giftCode_btn');
-        bindButtonCallback(this.giftCodeBtn, function () {
-            GiftCodePanel.open();
         }.bind(this));
 
         this.userBtn = root.getChildByName('user_btn');
         bindButtonCallback(this.userBtn, function () {
             RegisterPanel.open(1);
         }.bind(this));
-        var scale = this.pack_btn.scale;
+        /*var scale = this.pack_btn.scale;
         customEventHelper.bindListener(EVENT.UPDATE_RESOURCE, function (data) {
             var resources = data.getUserData();
             if (!resources) {
@@ -95,17 +71,17 @@ var BattlePanel = cc.Node.extend({
             }
             if (resources instanceof Array) {
                 for (var i = 0; i < resources.length; i++) {
-                    if(cc.isNumber(resources[i].value) && resources[i].value > 0 ){
-                        this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
+                    if (cc.isNumber(resources[i].value) && resources[i].value > 0) {
+                        this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5 * scale), cc.scaleTo(0.1, scale)));
                         break;
                     }
                 }
             } else {
-                if(cc.isNumber(resources.value) && resources.value > 0 ){
-                    this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5*scale), cc.scaleTo(0.1, scale)));
+                if (cc.isNumber(resources.value) && resources.value > 0) {
+                    this.pack_btn.runAction(cc.sequence(cc.scaleTo(0.1, 1.5 * scale), cc.scaleTo(0.1, scale)));
                 }
             }
-        }.bind(this));
+        }.bind(this));*/
 
         var container = root.getChildByName('battle_bg');
         container.setTouchEnabled(false);
@@ -114,26 +90,26 @@ var BattlePanel = cc.Node.extend({
         this.disableSpecialBattleTimeCounter();
         this.battleField.initBattle(PlayerData.getStageData());
 
-        Loot.prototype.getPackPosition = function () {
+        /*Loot.prototype.getPackPosition = function () {
             var world_position = root.convertToWorldSpace(this.pack_btn.getPosition());
             return container.convertToNodeSpace(world_position);
-        }.bind(this);
+        }.bind(this);*/
 
-        this.arenaBattledHandle = function(){
+        this.arenaBattledHandle = function () {
             this.loadRewardBtn();
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn,this.userBtn],true);
+            setVisibles([this.rechargeBtn, this.userBtn], true);
             var stage = PlayerData.getStageData();
-            if(stage.isBossBattle()){
-                scheduleOnce(this,function(){
-                    this.enableSpecialBattleTimeCounter(stage,true);
-                },CONSTS.arena_challenged_interval_timestamp);
-            }else{
+            if (stage.isBossBattle()) {
+                scheduleOnce(this, function () {
+                    this.enableSpecialBattleTimeCounter(stage, true);
+                }, CONSTS.arena_challenged_interval_timestamp);
+            } else {
                 this.disableSpecialBattleTimeCounter();
             }
         };
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
-            this.enableSpecialBattleTimeCounter(PlayerData.getStageData(),true);
+            this.enableSpecialBattleTimeCounter(PlayerData.getStageData(), true);
         }.bind(this));
         customEventHelper.bindListener(EVENT.LEAVE_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.BOSS_BATTLE_FAIL, "color": TIPS_COLOR.YELLOW});
@@ -160,14 +136,36 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn,this.userBtn],false);
-            this.enableSpecialBattleTimeCounter(null,false);
+            setVisibles([this.rechargeBtn,this.rewardBtn, this.userBtn], false);
+            this.enableSpecialBattleTimeCounter(null, false);
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, this.arenaBattledHandle.bind(this));
         customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, this.arenaBattledHandle.bind(this));
+        this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
+        // register battle custom event
+        customEventHelper.bindListener(EVENT.BATTLE_START, function (event) {
+            var data = event.getUserData();
+            if (data) {
+                this.state = BATTLE_STATE.STATE_ARENA_BATTLE;
+                this.refreshStageState();
+            } else {
+                this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
+                this.refreshStageList();
+                this.refreshStageState();
+            }
+        }.bind(this));
+        bindButtonCallback(this.boss_btn, function () {
+            var stage = PlayerData.getStageData();
+            if (stage.isBossBattle()) {
+                customEventHelper.sendEvent(EVENT.LEAVE_BOSS_BATTLE);
+            }else{
+                customEventHelper.sendEvent(EVENT.FIGHT_BOSS_BATTLE);
+            }
+        }.bind(this));
 
-
+        this.refreshStageList();
+        this.refreshStageState();
         DamageNumber.initPool();
 
         this.update = function (dt) {
@@ -176,7 +174,7 @@ var BattlePanel = cc.Node.extend({
                 if (this.intervalState) {
                     this.intervalTime += dt;
                     if (this.intervalTime > CONSTS.flySpirit_interval_time) {
-                        if(!this.battleField.arenaBattle){
+                        if (!this.battleField.arenaBattle) {
                             this.battleField.showFairy();
                             this.intervalState = false;
                         }
@@ -186,7 +184,7 @@ var BattlePanel = cc.Node.extend({
                     this.updateBossBattleTime(dt);
                 }
 
-                if(this.startarenaTime){
+                if (this.startarenaTime) {
                     this.updateArenaBattleTime(dt);
                 }
             }
@@ -211,14 +209,14 @@ var BattlePanel = cc.Node.extend({
         this.icon.visible = true;
     }
     ,
-    enableSpecialBattleTimeCounter: function (stage,bossBattle) {
+    enableSpecialBattleTimeCounter: function (stage, bossBattle) {
         this.timeText.visible = true;
         this.timeBar.visible = true;
         this.icon.visible = false;
-        if(bossBattle){
+        if (bossBattle) {
             this.bossTimeMax = stage.getBossTimeMax();
             this.startBossTime = true;
-        }else{
+        } else {
             this.startarenaTime = true;
             this.arenaTimeMax = CONSTS.arena_challenge_Max_time;
         }
@@ -245,6 +243,74 @@ var BattlePanel = cc.Node.extend({
             this.timeText.setString(Math.floor(this.arenaTimeMax));
             this.timeBar.setPercent(Math.floor(this.arenaTimeMax) / CONSTS.arena_challenge_Max_time * 100);
         }
+    },
+    refreshStageState: function () {
+
+        var stage = PlayerData.getStageData();
+        var cur = player.stage_battle_num;
+        var max = stage.getRandomBattleCount();
+        // 根据当前stage的battle状态设置gui状态
+        if (this.state !== BATTLE_STATE.STATE_ARENA_BATTLE) {
+            if (stage.isBossBattle()) {
+                this.state = BATTLE_STATE.STATE_BOSS_BATTLE;
+            } else {
+                if (cur > max) {
+                    this.state = BATTLE_STATE.STATE_BOSS_READY;
+                } else {
+                    this.state = BATTLE_STATE.STATE_NORMAL_BATTLE;
+                }
+            }
+        }
+        // 根据gui状态控制各个控件的可见性
+        this.boss_stage.setVisible(true);
+        if (this.state === BATTLE_STATE.STATE_NORMAL_BATTLE) {
+            //cc.log("stage:" + cur + '/' + max);
+            this.battle_num.setString(cur + '/' + max);
+            this.boss_btn.setVisible(false);
+            this.battle_num.setVisible(true);
+            this.battleNum_bg.setVisible(true);
+            this.stage_icon.setVisible(true);
+        } else if (this.state === BATTLE_STATE.STATE_BOSS_BATTLE) {
+            this.battle_num.setVisible(false);
+            this.boss_btn.setVisible(true);
+            this.boss_btn.setHighlighted(true);
+            this.battleNum_bg.setVisible(false);
+            this.stage_icon.setVisible(false);
+        } else if (this.state === BATTLE_STATE.STATE_BOSS_READY) {
+            this.boss_btn.setVisible(true);
+            this.boss_btn.setHighlighted(false);
+            this.battle_num.setVisible(false);
+            this.battleNum_bg.setVisible(false);
+            this.stage_icon.setVisible(false);
+        } else {
+            this.boss_stage.setVisible(false);
+        }
+    },
+    refreshStageList: function () {
+        var preStageId = PlayerData.getStageData().getPrevStageId();
+        if (preStageId) {
+            var preStage = new Stage(preStageId);
+            //this.loadStageIcon(preStage, this.prev_stage_icon);
+            this.prev_stage_num.setString(preStage.getStageNum());
+            //cc.log("preStage:" + preStage.getStageNum());
+            //this.prev_stage_arrow.setVisible(true);
+        } else {
+            //this.prev_stage_arrow.setVisible(false);
+        }
+        //this.loadStageIcon(PlayerData.getStageData(), this.current_stage_icon);
+        this.current_stage_num.setString(PlayerData.getStageData().getStageNum());
+        //cc.log("curStage:" + PlayerData.getStageData().getStageNum());
+        var nextStageId = PlayerData.getStageData().getNextStageId();
+        if (nextStageId) {
+            var nextStage = new Stage(nextStageId);
+            //this.loadStageIcon(nextStage, this.next_stage_icon);
+            this.next_stage_num.setString(nextStage.getStageNum());
+            //cc.log("nextStage:" + nextStage.getStageNum());
+        }
+    },
+    loadStageIcon: function (stage, stageIconWidget) {
+        var icon_image_url = "res/stages/" + stage.getIcon();
+        stageIconWidget.loadTexture(icon_image_url, ccui.Widget.LOCAL_TEXTURE);
     }
 
 });

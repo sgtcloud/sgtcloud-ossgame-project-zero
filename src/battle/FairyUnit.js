@@ -33,9 +33,9 @@ var FairyUnit = CCSUnit.extend({
 
     initRoute: function (type) {
 
-        var move1 = cc.moveTo(4, cc.p(0, 100));
+        var move1 = cc.moveTo(4, cc.p(0, 70));
 
-        var move2 = cc.moveTo(4, cc.p(640, 100));
+        var move2 = cc.moveTo(4, cc.p(640, 70));
 
         var reversal = cc.scaleTo(0, -1, 1);
         var normal = cc.scaleTo(0, 1, 1);
@@ -46,11 +46,11 @@ var FairyUnit = CCSUnit.extend({
         var dropMove;
         if (type == 1) {
             this.setPosition(cc.p(640, 180));
-            dropMove = cc.jumpTo(0.2, cc.p(640, 100), 0, 1);
+            dropMove = cc.jumpTo(0.2, cc.p(640, 70), 0, 1);
             this.sequence = cc.sequence(reversal, dropMove, move1, normal, move2, reversal, move1, removeNode);
         } else {
             this.setPosition(cc.p(0, 180));
-            dropMove = cc.jumpTo(0.2, cc.p(0, 100), 0, 1);
+            dropMove = cc.jumpTo(0.2, cc.p(0, 70), 0, 1);
             this.sequence = cc.sequence(normal, dropMove, move2, reversal, move1, normal, move2, removeNode);
         }
         this.runAction(this.sequence);

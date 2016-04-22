@@ -260,6 +260,47 @@
                 "ctype": "TextObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "FunctionListLayer.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 137.1786,
+                  "Y": 8.9502
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.2143,
+                  "Y": 0.0973
+                },
+                "PreSize": {
+                  "X": 0.7813,
+                  "Y": 0.4674
+                },
+                "LeftMargin": 137.1786,
+                "RightMargin": 2.8214,
+                "TopMargin": 40.0498,
+                "BottomMargin": 8.9502,
+                "Tag": 90,
+                "ActionTag": -1898477837,
+                "Size": {
+                  "X": 500.0,
+                  "Y": 43.0
+                },
+                "Name": "list",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
                 "FontSize": 14,
                 "ButtonText": "",
                 "TextColor": {
@@ -813,6 +854,7 @@
       "UsedResources": [
         "font/white10-export.fnt",
         "font/white10-export.png",
+        "FunctionListLayer.json",
         "mainUI/diamond.png",
         "mainUI/gold.png",
         "mainUI/relic.png",
