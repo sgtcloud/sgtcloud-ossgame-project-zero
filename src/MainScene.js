@@ -96,7 +96,7 @@ var MainScene = cc.Scene.extend({
         }.bind(this));
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
 
-        var guideLayer = new sz.GuideLayer(this, guideConfig);
-        this.addChild(guideLayer, 1000);
+        //var guideLayer = new sz.GuideLayer(this, guideConfig);
+        //this.addChild(guideLayer, 1000);
     }
 });
