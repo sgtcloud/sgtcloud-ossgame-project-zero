@@ -595,18 +595,18 @@ var BattleField = cc.Class.extend({
         this.countdown = CCSUnit.create(res.countdown_json);
         this.countdown.setPosition(320, 100);
         this.addSprite(this.countdown, 1000);
+        this.background.setTexture("res/stages/s1000010.png");
         this.countdown.playAnimation("3", false, function () {
-
+            arenaHeroPlayerData = new ArenaPlayerData();
+            arenaHeroPlayerData.init(JSON.parse(JSON.stringify(player)));
+            //开始战斗
+            this.initBattleHeroes(arenaHeroPlayerData.getHeroes());
             Network.initArenaBattle(playerId, function (result, data) {
                 if (result) {
-                    arenaHeroPlayerData = new ArenaPlayerData();
-                    arenaHeroPlayerData.init(JSON.parse(JSON.stringify(player)));
                     arenaEnemyPlayerData = new ArenaPlayerData();
                     arenaEnemyPlayerData.init(data);
                     //this.challengedPlayer = data;
                     this.countdown.playAnimation("2", false, function () {
-                        //开始战斗
-                        this.initBattleHeroes(arenaHeroPlayerData.getHeroes());
                         this.initBattleArenaEnemys(arenaEnemyPlayerData);
                         this.updateEnemyLife();
                         this.notifyUpdateTopPanelStageState();

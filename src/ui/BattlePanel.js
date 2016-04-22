@@ -119,6 +119,18 @@ var BattlePanel = cc.Node.extend({
             return container.convertToNodeSpace(world_position);
         }.bind(this);
 
+        this.arenaBattledHandle = function(){
+            this.loadRewardBtn();
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn,this.userBtn],true);
+            var stage = PlayerData.getStageData();
+            if(stage.isBossBattle()){
+                scheduleOnce(this,function(){
+                    this.enableSpecialBattleTimeCounter(stage,true);
+                },CONSTS.arena_challenged_interval_timestamp);
+            }else{
+                this.disableSpecialBattleTimeCounter();
+            }
+        };
         customEventHelper.bindListener(EVENT.FIGHT_BOSS_BATTLE, function () {
             tip.toggle({"text": BATTLE_TIPS.START_BOSS_BATTLE, "color": TIPS_COLOR.YELLOW});
             this.enableSpecialBattleTimeCounter(PlayerData.getStageData(),true);
@@ -148,33 +160,13 @@ var BattlePanel = cc.Node.extend({
         }.bind(this));
 
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],false);
+            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn,this.userBtn],false);
             this.enableSpecialBattleTimeCounter(null,false);
         }.bind(this));
 
-        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
-            var stage = PlayerData.getStageData();
-            if(stage.isBossBattle()){
-                scheduleOnce(this,function(){
-                    this.enableSpecialBattleTimeCounter(stage,true);
-                },CONSTS.arena_challenged_interval_timestamp);
-            }else{
-                this.disableSpecialBattleTimeCounter();
-            }
-        }.bind(this));
+        customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, this.arenaBattledHandle.bind(this));
+        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, this.arenaBattledHandle.bind(this));
 
-        customEventHelper.bindListener(EVENT.WIN_ARENA_BATTLE, function () {
-            setVisibles([this.rechargeBtn,this.firstRechargeBtn,this.mail_btn ,this.pack_btn ,this.rewardBtn ,this.statistics_btn,this.noticeBtn,this.giftCodeBtn],true);
-            var stage = PlayerData.getStageData();
-            if(stage.isBossBattle()){
-                scheduleOnce(this,function(){
-                    this.enableSpecialBattleTimeCounter(stage,true);
-                },CONSTS.arena_challenged_interval_timestamp);
-            }else{
-                this.disableSpecialBattleTimeCounter();
-            }
-        }.bind(this));
 
         DamageNumber.initPool();
 

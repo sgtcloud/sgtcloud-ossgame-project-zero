@@ -3889,7 +3889,7 @@ jsonRPC = new Object({
                 var data = [user];
                 SgtApi.doRPC(name, data, _url, function (result, data) {
                     if (result) {
-                        SgtApi.context.user = data;
+                        //SgtApi.context.user = data;
                         callback(true, data);
                     } else {
                         callback(false, data);
@@ -4072,7 +4072,7 @@ jsonRPC = new Object({
                 var username = localStorage.getItem("sgt-" + _appId + "-username");
                 var password = localStorage.getItem("sgt-" + _appId + "-password");
                 if (username && password) {
-                    this.login(username, password, callback);
+                    this.login_manual(username, password, callback);
                 } else {
                     var num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
                     var chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',

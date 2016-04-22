@@ -19,17 +19,17 @@
                 <PreSize X="0.1250" Y="0.8696" />
                 <FileData Type="Normal" Path="TitleUI/player.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="title_bg" ActionTag="587429213" Tag="103" IconVisible="False" LeftMargin="0.0000" BottomMargin="-15.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="616" Scale9Height="83" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="title_bg" ActionTag="587429213" Tag="103" IconVisible="False" BottomMargin="-15.0000" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="12" BottomEage="12" Scale9OriginX="12" Scale9OriginY="12" Scale9Width="616" Scale9Height="83" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="107.0000" />
                 <AnchorPoint />
-                <Position X="0.0000" Y="-15.0000" />
+                <Position Y="-15.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0000" Y="-0.1630" />
+                <PrePosition Y="-0.1630" />
                 <PreSize X="1.0000" Y="1.1630" />
                 <FileData Type="Normal" Path="TitleUI/new_bg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="user_btn" ActionTag="325522046" Tag="129" IconVisible="False" LeftMargin="596.6157" RightMargin="-0.6157" TopMargin="-1.2727" BottomMargin="49.2727" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="11" BottomEage="11" Scale9OriginX="14" Scale9OriginY="11" Scale9Width="16" Scale9Height="22" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="statistics_btn" ActionTag="325522046" Tag="129" IconVisible="False" LeftMargin="596.6157" RightMargin="-0.6157" TopMargin="-1.2727" BottomMargin="49.2727" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="11" BottomEage="11" Scale9OriginX="14" Scale9OriginY="11" Scale9Width="16" Scale9Height="22" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="44.0000" Y="44.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="618.6157" Y="71.2727" />
@@ -41,6 +41,42 @@
                 <DisabledFileData Type="Normal" Path="TitleUI/desc.png" Plist="" />
                 <PressedFileData Type="Normal" Path="TitleUI/desc.png" Plist="" />
                 <NormalFileData Type="Normal" Path="TitleUI/desc.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="airing_text" ActionTag="-1078560000" Tag="16" IconVisible="False" LeftMargin="141.7067" RightMargin="68.2933" TopMargin="53.8703" BottomMargin="18.1297" IsCustomSize="True" FontSize="20" LabelText="滚动广播、敬请期待" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="430.0000" Y="20.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="141.7067" Y="28.1297" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2214" Y="0.3058" />
+                <PreSize X="0.6719" Y="0.2174" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="list" ActionTag="-1898477837" Tag="90" IconVisible="True" LeftMargin="137.1786" RightMargin="2.8214" TopMargin="40.0498" BottomMargin="8.9502" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+                <Size X="500.0000" Y="43.0000" />
+                <AnchorPoint />
+                <Position X="137.1786" Y="8.9502" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2143" Y="0.0973" />
+                <PreSize X="0.7813" Y="0.4674" />
+                <FileData Type="Normal" Path="FunctionListLayer.csd" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="functionList_btn" ActionTag="-2110985567" Tag="18" IconVisible="False" LeftMargin="595.0694" RightMargin="-0.0694" TopMargin="42.3136" BottomMargin="9.6864" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="11" BottomEage="11" Scale9OriginX="14" Scale9OriginY="11" Scale9Width="17" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="45.0000" Y="40.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="617.5694" Y="29.6864" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.9650" Y="0.3227" />
+                <PreSize X="0.0703" Y="0.4348" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="TitleUI/btn_open.png" Plist="" />
+                <PressedFileData Type="Normal" Path="TitleUI/btn_close.png" Plist="" />
+                <NormalFileData Type="Normal" Path="TitleUI/btn_open.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
