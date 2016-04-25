@@ -39,15 +39,26 @@ var TopPanel = cc.Node.extend({
         });
         bindButtonCallback(functionListBtn, function () {
             if (isBtnListShow) {
-                functionListBtn.setHighlighted(false);
-                btnList.hide();
-                isBtnListShow = false;
+                if(this.timeOut){
+                    clearTimeout(this.timeOut);
+                }
+                this.hideBtnList();
             } else {
-                functionListBtn.setHighlighted(true);
-                btnList.show();
-                isBtnListShow = true;
+                this.showBtnList();
+                this.timeOut = setTimeout(this.hideBtnList.bind(this),5*1000);
             }
         }.bind(this));
+        this.showBtnList = function(){
+            functionListBtn.setHighlighted(true);
+            btnList.show();
+            isBtnListShow = true;
+
+        };
+        this.hideBtnList = function(){
+            functionListBtn.setHighlighted(false);
+            btnList.hide();
+            isBtnListShow = false;
+        };
 
         Loot.prototype.getGoldPosition = function () {
             return goldNum.convertToWorldSpace(goldNum.getPosition());
@@ -62,10 +73,9 @@ var TopPanel = cc.Node.extend({
         customEventHelper.bindListener(EVENT.FIGHT_ARENA_BATTLE, function () {
             setEnableds([functionListBtn,statisticsBtn,getDiamondBtn,goldBtn], false);
             if (isBtnListShow) {
-                btnList.hide();
-                isBtnListShow = false;
+                this.hideBtnList();
             }
-        });
+        }.bind(this));
 
         customEventHelper.bindListener(EVENT.LOSE_ARENA_BATTLE, function(){
             setEnableds([functionListBtn,statisticsBtn,getDiamondBtn,goldBtn], true);

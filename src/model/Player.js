@@ -13,7 +13,7 @@ var player = {
     "month_card_start_time": 0,
     "month_card_end_time": 0,
     // test data
-    "resource": {
+    /*"resource": {
         "gold": 1000000,
         "gem": 10000,
         "relic": 10000,
@@ -33,34 +33,53 @@ var player = {
         "golden_key": 100,
         "small_blood": 100,
         "middle_blood": 100,
-        "large_blood": 100,
-    },
+        "large_blood": 100
+    },*/
     'time': {
         "die": {},
         "cd": {}
     },
     //"cd":{"herosDie":{"":}},
     // release data
-    //"resource": {
-    //    "gold": 10,
-    //    "gem": 10,
-    //    "relic": 10,
-    //    "wood": 0,
-    //    "leather": 0,
-    //    "stone": 0,
-    //    "bronze": 0,
-    //    "iron": 0,
-    //    "crystal": 0,
-    //    "rune": 0,
-    //    "essence": 0,
-    //    "iron_chest": 0,
-    //    "iron_key": 0,
-    //    "silver_chest": 0,
-    //    "silver_key": 0,
-    //    "golden_chest": 0,
-    //    "golden_key": 0,
-    //},
+    "resource": {
+        "gold": 10,
+        "gem": 10,
+        "relic": 10,
+        "wood": 0,
+        "leather": 0,
+        "stone": 0,
+        "bronze": 0,
+        "iron": 0,
+        "crystal": 0,
+        "rune": 0,
+        "essence": 0,
+        "iron_chest": 0,
+        "iron_key": 0,
+        "silver_chest": 0,
+        "silver_key": 0,
+        "golden_chest": 0,
+        "golden_key": 0,
+        "small_blood": 0,
+        "middle_blood": 0,
+        "large_blood": 0
+    },
+    // release data
     "statistics": {
+        "total_fairy": 0,
+        "total_gem": 10,
+        "total_relic": 10,
+        "total_gold": 10,
+        "total_tap": 0,
+        "total_damage": 0,
+        "total_enemy_kill": 0,
+        "total_boss_kill": 0,
+        "total_chest_open": 0,
+        "total_max_level": 0,
+        "total_offline_time": 0,
+        "total_play_time": 0
+    },
+    // test data
+    /*"statistics": {
         "total_fairy": 0,
         "total_gem": 10000,
         "total_relic": 10000,
@@ -73,7 +92,7 @@ var player = {
         "total_max_level": 0,
         "total_offline_time": 0,
         "total_play_time": 0
-    },
+    },*/
     "arena": {
         "times": 5
     },
