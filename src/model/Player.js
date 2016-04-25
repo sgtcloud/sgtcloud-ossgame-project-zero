@@ -42,7 +42,7 @@ var player = {
     //"cd":{"herosDie":{"":}},
     // release data
     "resource": {
-        "gold": 10,
+        "gold": 1000,
         "gem": 10,
         "relic": 10,
         "wood": 0,
@@ -68,7 +68,7 @@ var player = {
         "total_fairy": 0,
         "total_gem": 10,
         "total_relic": 10,
-        "total_gold": 10,
+        "total_gold": 1000,
         "total_tap": 0,
         "total_damage": 0,
         "total_enemy_kill": 0,

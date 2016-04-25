@@ -354,12 +354,16 @@
                 });
             }
         },
-        checkIn_createByValidate: function (callback) {
+        checkIn_createByValidate: function (isIgnoreCheckIn) {
             sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result, data) {
-                //true 可以签到 false 不能签到
                 if (result) {
-                    //this.openCheckInPanel()
-                    callback(data);
+                    //data 为 true 可以签到 false 不能签到
+                    //isIgnoreCheckIn 为 true,已签到状态也打开面板;false,只有未签到才打开面板
+                    if(isIgnoreCheckIn){
+                        this.openCheckInPanel(data);
+                    }else if(data){
+                        this.openCheckInPanel(true);
+                    }
                 } else {
                     console.log('签到异常');
                 }
@@ -675,10 +679,12 @@
         },
         updateLocalServerList: function () {
             var servers = PlayerData.getLocalServerList();
-            var i = servers.indexOf(SgtApi.context.server);
-            //更新排序
-            if (i != -1) {
-                servers.splice(i, 1);
+            for(var i in servers){
+                //更新排序
+                if(servers[i].id === SgtApi.context.server.id){
+                    servers.splice(i, 1);
+                    break;
+                }
             }
             servers.push(SgtApi.context.server);
             localStorage.setItem("sgt-html5-game-announce-servers", JSON.stringify(servers));

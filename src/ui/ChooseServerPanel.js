@@ -22,13 +22,14 @@ var ChooseServerPanel = cc.Node.extend({
             }
         }
     },
-    validatePlayerExists: function(server){
+    _validatePlayerExists: function(server){
         var localServers = PlayerData.getLocalServerList();
-        if(localServers.indexOf(server) != -1){
-            return true;
+        for(var i in localServers){
+            if(localServers[i].id === server.id){
+                return true;
+            }
         }
         return false;
-
     },
     setElement: function (server,chooseBtn,_new) {
         var root = this.chooseListViewRoot.clone();
@@ -43,7 +44,7 @@ var ChooseServerPanel = cc.Node.extend({
         setFont([text]);
         state_new.setVisible(_new);
         state_full.setVisible(!_new);
-        if(this.validatePlayerExists(server)){
+        if(this._validatePlayerExists(server)){
             _player.setVisible(true);
         }else{
             _player.setVisible(false);
