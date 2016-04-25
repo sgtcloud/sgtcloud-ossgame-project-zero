@@ -21,10 +21,11 @@ var TaskPanel = cc.Class.extend({
                 'loadingBar': this._dailyTaskLiveness,
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
-                    this.dailyTaskService.getReward( taskid,player.id, function (result, data) {
-                        console.log(data)
-                        if (result ) {
-                        }else {
+                    this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
+                        console.log(data);
+                        if (result) {
+
+                        } else {
                             tip.toggle(data);
                         }
                     });
@@ -35,12 +36,12 @@ var TaskPanel = cc.Class.extend({
                 'loadingBar': this._achevementLiveness,
                 'refreshData': this._refreshAchievement,
                 'gerReward': function (achievementId) {
-                    this.achievementService.complete( player.id,achievementId, function (result, data) {
+                    this.achievementService.complete(player.id, achievementId, function (result, data) {
                         if (result) {
-                            if(data.unit==='liveness'){
+                            if (data.unit === 'liveness') {
 
                             }
-                        }else {
+                        } else {
                             tip.toggle(data);
                         }
                     });
@@ -53,15 +54,15 @@ var TaskPanel = cc.Class.extend({
         customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
             var data = e.getUserData();
             if (achievementTyps.indexOf(data['type']) > -1) {
-                this.achievementService.customAchievementsByType(data['type'],player.id,data['value']||1,  function (result, d) {
-                    if(result){
+                this.achievementService.customAchievementsByType(data['type'], player.id, data['value'] || 1, function (result, d) {
+                    if (result) {
 
                     }
                 });
             }
             if (taskTyps.indexOf(data['type']) > -1) {
-                this.dailyTaskService.addExecuteTasksByType(data['type'],player.id,data['value']||1, function (result, d) {
-                    if(result){
+                this.dailyTaskService.addExecuteTasksByType(data['type'], player.id, data['value'] || 1, function (result, d) {
+                    if (result) {
 
                     }
                 });
@@ -95,13 +96,15 @@ var TaskPanel = cc.Class.extend({
                 }
             }.bind(this), this);
         }
-    }, showMenuLayer: function (name) {
+    },
+    showMenuLayer: function (name) {
         for (var i in this.buttons) {
             this.buttons[i].setSelected(false);
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
-    }, _showTab: function (name) {
+    },
+    _showTab: function (name) {
         for (var k in this._tabObj) {
             this._tabObj[k]['box'].setVisible(false);
         }
@@ -168,14 +171,22 @@ var TaskPanel = cc.Class.extend({
         bar_blue.setVisible(false);
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
-        rewardBtn.setTag(task.id);
-        rewardBtn.setEnabled(true);
-        rewardBtn.setBright(true);
-        rewardBtn.addClickEventListener(function () {
-            console.log('get reward');
-            var id = rewardBtn.getTag();
-            this._tabObj[tab]['gerReward'].call(this, id);
-        }.bind(this));
+        var get=taskItem.getChildByName('get');
+        if (task.status === sgt.DailyTask.STATUS_PROGRESS_GOT_REWARD) {
+            get.setVisible(true);
+            btn.setVisible(false);
+        } else /*if (task.status === sgt.DailyTask.STATUS_PROGRESS_UNFINISHED)*/{
+            get.setVisible(false);
+            btn.setVisible(true);
+            rewardBtn.setTag(task.id);
+            rewardBtn.setEnabled(true);
+            rewardBtn.setBright(true);
+            rewardBtn.addClickEventListener(function () {
+                console.log('get reward');
+                var id = rewardBtn.getTag();
+                this._tabObj[tab]['gerReward'].call(this, id);
+            }.bind(this));
+        }
         bar_purple.setPercent(Math.round(task.currentProgress / task.goal * 100));
         this.list.pushBackCustomItem(taskItem);
     }
