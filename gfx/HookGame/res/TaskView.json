@@ -122,6 +122,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -217,8 +219,8 @@
                       "X": 0.8958,
                       "Y": 0.34
                     },
-                    "LeftMargin": 24.8586,
-                    "RightMargin": 25.1414,
+                    "LeftMargin": 24.8799,
+                    "RightMargin": 25.1201,
                     "TopMargin": 27.8402,
                     "BottomMargin": 5.1598,
                     "CallBackType": "Click",
@@ -260,8 +262,8 @@
                       "X": 0.8958,
                       "Y": 0.34
                     },
-                    "LeftMargin": 24.8628,
-                    "RightMargin": 25.1372,
+                    "LeftMargin": 24.884,
+                    "RightMargin": 25.116,
                     "TopMargin": 27.8376,
                     "BottomMargin": 5.1624,
                     "CallBackType": "Click",
@@ -543,17 +545,15 @@
                   "Path": "taskUI/get.png",
                   "Plist": "TaskUI.plist"
                 },
-                "BlendFunc": {
-                  "Src": 770,
-                  "Dst": 771
-                },
+                "Scale9Width": 78,
+                "Scale9Height": 77,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 523.1097,
-                  "Y": 51.6936
+                  "X": 524.2794,
+                  "Y": 49.177
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -562,25 +562,25 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9177,
-                  "Y": 0.5169
+                  "X": 0.9198,
+                  "Y": 0.4918
                 },
                 "PreSize": {
                   "X": 0.1368,
                   "Y": 0.77
                 },
-                "LeftMargin": 484.1097,
-                "RightMargin": 7.8903,
-                "TopMargin": 9.8064,
-                "BottomMargin": 13.1936,
-                "Tag": 335,
-                "ActionTag": -1519562434,
+                "LeftMargin": 485.2794,
+                "RightMargin": 6.7206,
+                "TopMargin": 12.323,
+                "BottomMargin": 10.677,
+                "Tag": 95,
+                "ActionTag": 1353013482,
                 "Size": {
                   "X": 78.0,
                   "Y": 77.0
                 },
                 "Name": "get",
-                "ctype": "SpriteObjectData"
+                "ctype": "ImageViewObjectData"
               }
             ],
             "ActionTag": 1643279602,

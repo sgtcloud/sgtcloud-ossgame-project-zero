@@ -73,13 +73,13 @@
                     <PreSize X="0.9310" Y="0.2632" />
                     <FileData Type="Normal" Path="mainUI/bg_03.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="heroDesc_text" ActionTag="1032002903" Tag="88" IconVisible="False" LeftMargin="39.5397" RightMargin="40.4603" TopMargin="285.2285" BottomMargin="24.7715" IsCustomSize="True" FontSize="20" LabelText="英雄描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="heroDesc_text" ActionTag="1032002903" Tag="88" IconVisible="False" LeftMargin="39.5397" RightMargin="40.4603" TopMargin="283.2285" BottomMargin="26.7715" IsCustomSize="True" FontSize="20" LabelText="英雄描述" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="500.0000" Y="70.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="289.5397" Y="59.7715" />
+                    <Position X="289.5397" Y="61.7715" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.4992" Y="0.1573" />
+                    <CColor A="255" R="255" G="255" B="0" />
+                    <PrePosition X="0.4992" Y="0.1626" />
                     <PreSize X="0.8621" Y="0.1842" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
