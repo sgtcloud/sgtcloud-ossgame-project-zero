@@ -805,6 +805,7 @@
           <Image Name="s100010.png" />
           <Image Name="s100011.png" />
         </Folder>
+        <Project Name="TipsReward.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

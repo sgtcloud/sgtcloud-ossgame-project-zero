@@ -1,0 +1,73 @@
+{
+  "ID": "41f79d8c-3830-4a61-b6ec-33ea525fd2c4",
+  "Version": "2.3.3.0",
+  "Name": "TipsReward",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 97,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ItemLayer.json",
+              "Plist": ""
+            },
+            "StretchWidthEnable": false,
+            "StretchHeightEnable": false,
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 156.6994,
+              "Y": 488.4365
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.2448,
+              "Y": 0.5088
+            },
+            "PreSize": {
+              "X": 0.1562,
+              "Y": 0.1042
+            },
+            "LeftMargin": 156.6994,
+            "RightMargin": 383.3006,
+            "TopMargin": 371.5635,
+            "BottomMargin": 488.4365,
+            "Tag": 144,
+            "ActionTag": 1799480699,
+            "Size": {
+              "X": 100.0,
+              "Y": 100.0
+            },
+            "Name": "FileNode_1",
+            "ctype": "ProjectNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "ItemLayer.json"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
