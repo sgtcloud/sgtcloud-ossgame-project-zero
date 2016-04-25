@@ -93,6 +93,8 @@
         initAndAutoLogin: function (cb) {
             if (SgtApi) {
                 SgtApi.init({appId: 'h5game', async: true});
+                //自定义异常提示
+                SgtApi.customException(CONSTS.exceptions);
                 if (typeof wx != "undefined" && is_weixin()) {
                     if (getUrlParam('code')) {
                         SgtApi.WxCentralService.getUserAccessToken(getUrlParam('code'), function (result, data) {
@@ -176,14 +178,14 @@
                 }
             })
         },
-        updatePlayerMails: function (timestramp) {
+        updatePlayerMails: function (timestamp) {
             this.syncServerTime(function () {
-                timestramp = PlayerData.serverCurrentTime - timestramp;
-                sgt.MailService.receiveUnread(timestramp, player.id, function (result, data) {
+                timestamp = PlayerData.serverCurrentTime - timestamp;
+                sgt.MailService.receiveUnread(timestamp, player.id, function (result, data) {
                     if (result && cc.isArray(data) && data.length > 0) {
                         PlayerData.mails.unreadMails = PlayerData.mails.unreadMails.concat(data);
                     }
-                })
+                });
             });
         },
         updateunReadMailStatus: function (callback) {
