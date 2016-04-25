@@ -22,8 +22,9 @@ var TaskPanel = cc.Class.extend({
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
-                        console.log(data)
+                        console.log(data);
                         if (result) {
+
                         } else {
                             tip.toggle(data);
                         }
@@ -172,11 +173,11 @@ var TaskPanel = cc.Class.extend({
         var rewardBtn = btn.getChildByName('buy_btn');
         var get=taskItem.getChildByName('get');
         if (task.status === sgt.DailyTask.STATUS_PROGRESS_GOT_REWARD) {
-            //get.setVisible(true);
-            rewardBtn.setVisible(false);
+            get.setVisible(true);
+            btn.setVisible(false);
         } else /*if (task.status === sgt.DailyTask.STATUS_PROGRESS_UNFINISHED)*/{
-            //get.setVisible(false);
-            rewardBtn.setVisible(true);
+            get.setVisible(false);
+            btn.setVisible(true);
             rewardBtn.setTag(task.id);
             rewardBtn.setEnabled(true);
             rewardBtn.setBright(true);
