@@ -20,7 +20,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="bar" ActionTag="1767600319" Tag="417" IconVisible="False" LeftMargin="35.6429" RightMargin="54.3571" TopMargin="3.5377" BottomMargin="46.4623" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="bar" ActionTag="1767600319" Tag="417" IconVisible="False" LeftMargin="35.6429" RightMargin="54.3571" TopMargin="3.5377" BottomMargin="46.4623" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="480.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="bg" ActionTag="-292391856" Tag="413" IconVisible="False" RightMargin="-320.0000" TopMargin="3.0000" Scale9Enable="True" LeftEage="135" RightEage="135" Scale9OriginX="135" Scale9Width="140" Scale9Height="47" ctype="ImageViewObjectData">
@@ -33,7 +33,7 @@
                     <PreSize X="1.6667" Y="0.9400" />
                     <FileData Type="MarkedSubImage" Path="taskUI/bar02_bg.png" Plist="TaskUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="bar_blue" ActionTag="655791857" CallBackType="Click" Tag="416" IconVisible="False" LeftMargin="24.8586" RightMargin="25.1414" TopMargin="27.8402" BottomMargin="5.1598" ProgressInfo="100" ctype="LoadingBarObjectData">
+                  <AbstractNodeData Name="bar_blue" ActionTag="655791857" CallBackType="Click" Tag="416" IconVisible="False" LeftMargin="24.8799" RightMargin="25.1201" TopMargin="27.8402" BottomMargin="5.1598" ProgressInfo="100" ctype="LoadingBarObjectData">
                     <Size X="430.0000" Y="17.0000" />
                     <AnchorPoint ScaleX="0.5142" ScaleY="0.5128" />
                     <Position X="245.9859" Y="13.8774" />
@@ -43,7 +43,7 @@
                     <PreSize X="0.8958" Y="0.3400" />
                     <ImageFileData Type="MarkedSubImage" Path="taskUI/bar02_blue.png" Plist="TaskUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="bar_purple" Visible="False" ActionTag="-758565160" CallBackType="Click" Tag="418" IconVisible="False" LeftMargin="24.8628" RightMargin="25.1372" TopMargin="27.8376" BottomMargin="5.1624" ProgressInfo="60" ctype="LoadingBarObjectData">
+                  <AbstractNodeData Name="bar_purple" Visible="False" ActionTag="-758565160" CallBackType="Click" Tag="418" IconVisible="False" LeftMargin="24.8840" RightMargin="25.1160" TopMargin="27.8376" BottomMargin="5.1624" ProgressInfo="60" ctype="LoadingBarObjectData">
                     <Size X="430.0000" Y="17.0000" />
                     <AnchorPoint ScaleX="0.5142" ScaleY="0.5128" />
                     <Position X="245.9900" Y="13.8800" />
@@ -125,16 +125,15 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="get" Visible="False" ActionTag="-1519562434" Tag="335" IconVisible="False" LeftMargin="484.1097" RightMargin="7.8903" TopMargin="9.8064" BottomMargin="13.1936" ctype="SpriteObjectData">
+              <AbstractNodeData Name="get" ActionTag="1353013482" Tag="95" IconVisible="False" LeftMargin="485.2794" RightMargin="6.7206" TopMargin="12.3230" BottomMargin="10.6770" Scale9Width="78" Scale9Height="77" ctype="ImageViewObjectData">
                 <Size X="78.0000" Y="77.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="523.1097" Y="51.6936" />
+                <Position X="524.2794" Y="49.1770" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9177" Y="0.5169" />
+                <PrePosition X="0.9198" Y="0.4918" />
                 <PreSize X="0.1368" Y="0.7700" />
                 <FileData Type="MarkedSubImage" Path="taskUI/get.png" Plist="TaskUI.plist" />
-                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
