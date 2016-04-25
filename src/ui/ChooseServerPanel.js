@@ -15,11 +15,10 @@ var ChooseServerPanel = cc.Node.extend({
         this.listView = root.getChildByName('list');
         this.listView.removeAllChildren();
         for (var i in servers) {
-            if(servers.length-1 == i){
-                this.setElement(servers[i],chooseBtn,false);
-            }else{
-                this.setElement(servers[i],chooseBtn,true);
+            if(i == 0){
+                servers[i].isNew = true;
             }
+            this.setElement(servers[i],chooseBtn);
         }
     },
     _validatePlayerExists: function(server){
@@ -31,7 +30,7 @@ var ChooseServerPanel = cc.Node.extend({
         }
         return false;
     },
-    setElement: function (server,chooseBtn,_new) {
+    setElement: function (server,chooseBtn) {
         var root = this.chooseListViewRoot.clone();
         var state_new = root.getChildByName("state_new");
         var state_full = root.getChildByName("state_full");
@@ -42,8 +41,8 @@ var ChooseServerPanel = cc.Node.extend({
         var full = chooseBtn.getChildByName('full');
         text.setString(server.name);
         setFont([text]);
-        state_new.setVisible(_new);
-        state_full.setVisible(!_new);
+        state_new.setVisible(server.isNew);
+        state_full.setVisible(!server.isNew);
         if(this._validatePlayerExists(server)){
             _player.setVisible(true);
         }else{
@@ -51,8 +50,8 @@ var ChooseServerPanel = cc.Node.extend({
         }
         bindTouchEventListener(function(){
             Network.setServerInfo(server);
-            full.setVisible(!_new);
-            state.setVisible(_new);
+            full.setVisible(!server.isNew);
+            state.setVisible(server.isNew);
             text2.setString(server.name);
             this.hiddenServerListPopup();
             return true;

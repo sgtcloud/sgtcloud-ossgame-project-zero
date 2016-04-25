@@ -784,14 +784,13 @@
                 var server;
                 if (PlayerData.servers) {
                     server = PlayerData.servers[0];
-                    full.setVisible(false);
-                    state.setVisible(true);
+                    server.isNew = true;
                 } else {
                     var servers = PlayerData.getLocalServerList();
                     server = servers[servers.length - 1];
-                    state.setVisible(false);
-                    full.setVisible(false);
                 }
+                state.setVisible(server.isNew);
+                full.setVisible(!server.isNew);
                 var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
                 if (!isVisitor || parseInt(isVisitor) === 1) {
                     user_text.setString('游客账号');
