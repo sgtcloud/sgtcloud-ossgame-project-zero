@@ -100,35 +100,6 @@ var MailPanel = cc.Node.extend({
     setNum: function () {
         this.num.setString(this.attachNoPickNum + "/" + PlayerData.mails.readedMails.length);
     },
-    /*formatAttachment: function (rewards) {
-        if (!rewards) {
-            return '';
-        }
-        var descText = "";
-        if (rewards instanceof Array) {
-            if (rewards.length > 0) {
-                for (var i = 0; i < rewards.length; i++) {
-                    descText += this._processReward(rewards[i]);
-                }
-                descText = descText.substr(0, descText.length - 1);
-            } else {
-                return "";
-            }
-        } else {
-            descText= this._processReward(rewards);
-        }
-        return descText;
-    },_processReward:function(reward){
-        var descText='';
-        if(reward.hasOwnProperty('unit')){
-            descText += CONSTS.resources_mapping[reward['unit']] + " * " + reward['value'] + ",";
-        }else {
-            for(var key in reward){
-                descText += CONSTS.resources_mapping[key] + " * " + reward[key] + ",";
-            }
-        }
-        return descText;
-    },*/
     attachAllNoPick: function () {
         if (this.attachNoPickNum > 0) {
             this.attachments = {};

@@ -56,5 +56,7 @@ GamePopup.openPopup = function (layer,pos,isSwallow){
     popup(new GamePopup(layer,pos,isSwallow),101);
 };
 GamePopup.closePopup = function (layer){
-    layer.parent.removeFromParent();
+    if(layer.parent){
+        layer.parent.removeFromParent();
+    }
 };

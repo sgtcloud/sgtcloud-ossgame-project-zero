@@ -86,14 +86,11 @@ var MainScene = cc.Scene.extend({
     onEnter: function () {
         this._super();
         //验证角色签到数据，未签到则直接打开签到面板
-        Network.checkIn_createByValidate(function (result, data) {
-            //true 可以签到 false 不能签到
-            if (result && data) {
+        Network.checkIn_createByValidate(false/*function (result) {
+            if(result){
                 Network.openCheckInPanel(true);
-            } else {
-                console.log('已签到');
             }
-        }.bind(this));
+        }.bind(this)*/);
         customEventHelper.sendEvent(EVENT.UPGRADE_HERO_ATTACK);
 
         var guideLayer = new sz.GuideLayer(this, guideConfig);

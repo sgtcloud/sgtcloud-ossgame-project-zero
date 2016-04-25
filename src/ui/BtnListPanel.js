@@ -37,10 +37,10 @@ var BtnListPanel = cc.Class.extend({
         this.sign_btn = this.root.getChildByName('sign_btn');
         bindButtonCallback(this.sign_btn, function () {
             //验证角色签到数据，未签到则直接打开签到面板
-            Network.checkIn_createByValidate(function (result) {
+            Network.checkIn_createByValidate(true/*function (result) {
                 //true 可以签到 false 不能签到
                 Network.openCheckInPanel(result);
-            });
+            }*/);
         }.bind(this));
         topPanel.addChild(this.btnListLayer);
     },
