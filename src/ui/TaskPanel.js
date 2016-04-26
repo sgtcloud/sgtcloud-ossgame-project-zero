@@ -22,9 +22,8 @@ var TaskPanel = cc.Class.extend({
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
-                        console.log(data);
                         if (result) {
-                            ArenaResultTip.prototype._processReward.call(this, data);
+                            this.__processReward(d, 'everyDay_tab');
                         } else {
                             tip.toggle(data);
                         }
@@ -38,9 +37,7 @@ var TaskPanel = cc.Class.extend({
                 'gerReward': function (achievementId) {
                     this.achievementService.complete(player.id, achievementId, function (result, data) {
                         if (result) {
-                            if (data.unit === 'liveness') {
-
-                            }
+                            this.__processReward(d, 'achievement_tab');
                         } else {
                             tip.toggle(data);
                         }
@@ -72,14 +69,14 @@ var TaskPanel = cc.Class.extend({
             if (achievementTyps.indexOf(data['type']) > -1) {
                 this.achievementService.customAchievementsByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-                        this.__processReward(d, 'achievement_tab');
+                        //this.__processReward(d, 'achievement_tab');
                     }
                 }.bind(this));
             }
             if (taskTyps.indexOf(data['type']) > -1) {
                 this.dailyTaskService.addExecuteTasksByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-                        this.__processReward(d, 'everyDay_tab');
+                        //this.__processReward(d, 'everyDay_tab');
                     }
                 });
             }
@@ -121,12 +118,12 @@ var TaskPanel = cc.Class.extend({
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
-    }, __processReward: function (d, tab) {
+    }, _convertReards:function(data){
         var rewards;
-        if (typeof d === 'string') {
+        if (typeof data === 'string') {
             rewards = eval('(' + d + ')');
         } else
-            rewards = d;
+            rewards = data;
         var resources = [];
         var livenesscount = 0;
         if (rewards instanceof Array) {
@@ -152,8 +149,11 @@ var TaskPanel = cc.Class.extend({
                 resources.push(obj);
             }
         }
-        PlayerData.updateResource(resources);
-        this._submitLivenewss(tab, livenesscount);
+        return {resources:resources,livenewss:livenesscount};
+    },__processReward: function (d, tab) {
+       var resources=this._convertReards(d);
+        PlayerData.updateResource(resources.resources);
+        this._submitLivenewss(tab, resources.livenewss);
     },
     _showTab: function (name) {
         for (var k in this._tabObj) {
@@ -171,7 +171,7 @@ var TaskPanel = cc.Class.extend({
                 if (result && data && data.length > 0) {
                     var task = data[0];
                     this.loadingNum.setString(task.currentProgress);
-                    this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                    this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
                 }
             }.bind(this));
         }
@@ -180,8 +180,7 @@ var TaskPanel = cc.Class.extend({
                 if (result && data && data.length > 0) {
                     var task = data[0];
                     this.loadingNum.setString(task.currentProgress);
-                    this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
-                    console.log(Math.round(task.currentProgress / task.goal * 100));
+                    this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
                 }
             }.bind(this));
         }
@@ -190,7 +189,7 @@ var TaskPanel = cc.Class.extend({
             if (result && data && data.length > 0) {
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
-                this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
             } else {
 
             }
@@ -200,7 +199,7 @@ var TaskPanel = cc.Class.extend({
             if (result && data && data.length > 0) {
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
-                this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
             }
         }.bind(this));
     }, refreshItems: function (tab) {
@@ -240,8 +239,8 @@ var TaskPanel = cc.Class.extend({
         var num = bar.getChildByName('num');
         num.setString(task.currentProgress);
         var bar_purple = bar.getChildByName('bar_purple');
-        var bar_blue = bar.getChildByName('bar_blue');
-        bar_blue.setVisible(false);
+        var bar_green = bar.getChildByName('bar_green');
+        bar_green.setVisible(false);
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
         var get = taskItem.getChildByName('get');
@@ -255,12 +254,11 @@ var TaskPanel = cc.Class.extend({
             rewardBtn.setEnabled(true);
             rewardBtn.setBright(true);
             rewardBtn.addClickEventListener(function () {
-                console.log('get reward');
                 var id = rewardBtn.getTag();
                 this._tabObj[tab]['gerReward'].call(this, id);
             }.bind(this));
         }
-        bar_purple.setPercent(Math.round(task.currentProgress / task.goal * 100));
+        bar_purple.setPercent(Math.floor(task.currentProgress / task.goal * 100));
         this.list.pushBackCustomItem(taskItem);
     }
 });
