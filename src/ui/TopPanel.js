@@ -15,7 +15,7 @@ var TopPanel = cc.Node.extend({
         var statisticsBtn = root.getChildByName("statistics_btn");
         //var airingText = root.getChildByName("airing_text");
         var functionListBtn = root.getChildByName("functionList_btn");
-        root.getChildByName("list").setVisible(false);
+        //root.getChildByName("list").setVisible(false);
         playerIcon.loadTexture("res/icon/heroes/"+PlayerData.getHeroes()[0].getIcon(), ccui.Widget.LOCAL_TEXTURE);
         var btnList = new BtnListPanel(root);
         var isBtnListShow = false;

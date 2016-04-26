@@ -121,7 +121,7 @@ var TaskPanel = cc.Class.extend({
     }, _convertReards:function(data){
         var rewards;
         if (typeof data === 'string') {
-            rewards = eval('(' + d + ')');
+            rewards = eval('(' + data + ')');
         } else
             rewards = data;
         var resources = [];
@@ -233,6 +233,19 @@ var TaskPanel = cc.Class.extend({
     }, pushTaskItem: function (task, tab) {
         var taskItem = this.taskview.clone();
         var desc = taskItem.getChildByName('text');
+        var reward_box=taskItem.getChildByName('reward_box');
+        var resources=this._convertReards(task.reward);
+        var rewards=resources.resources;
+        var p=reward_box.getPosition();
+        for(var k in rewards){
+            var ttf=new cc.LabelTTF();
+            var img=new ccui.ImageView('res/icon/resources_small/' + rewards[k]['unit']+'.png');
+            ttf.setString(rewards[k]['value']);
+            img.setPosition(p);
+            ttf.setPosition(p);
+            reward_box.addChild(img);
+            reward_box.addChild(ttf);
+        }
         desc.setString(task.description);
         setFont(desc);
         var bar = taskItem.getChildByName('bar');
