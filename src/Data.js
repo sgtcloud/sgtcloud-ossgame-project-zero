@@ -7,6 +7,7 @@ function initDatas() {
     dataSource.skills = cc.loader.getRes(res_datas.skills_json);
     dataSource.goods = cc.loader.getRes(res_datas.goods_json);
     dataSource.bonus = cc.loader.getRes(res_datas.bonus_json);
+    //dataSource.exceptions = cc.loader.getRes(res_datas.exception_config_json);
 }
 
 

@@ -75,32 +75,6 @@
                     <PreSize X="1.0271" Y="0.4600" />
                     <ImageFileData Type="MarkedSubImage" Path="taskUI/bar02_yellow.png" Plist="TaskUI.plist" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="achievementBox" Visible="False" ActionTag="-1349291718" Tag="492" IconVisible="False" LeftMargin="489.6846" RightMargin="-123.6846" TopMargin="-32.8642" BottomMargin="-7.1358" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
-                    <Size X="114.0000" Y="90.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="546.6846" Y="37.8642" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="1.1389" Y="0.7573" />
-                    <PreSize X="0.2375" Y="1.8000" />
-                    <NormalBackFileData Type="MarkedSubImage" Path="taskUI/box1.png" Plist="TaskUI.plist" />
-                    <PressedBackFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
-                    <DisableBackFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
-                    <NodeNormalFileData Type="MarkedSubImage" Path="taskUI/box1.png" Plist="TaskUI.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="everyDayBox" ActionTag="254432280" Tag="493" IconVisible="False" LeftMargin="489.6846" RightMargin="-123.6846" TopMargin="-32.8642" BottomMargin="-7.1358" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
-                    <Size X="114.0000" Y="90.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="546.6846" Y="37.8642" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="1.1389" Y="0.7573" />
-                    <PreSize X="0.2375" Y="1.8000" />
-                    <NormalBackFileData Type="MarkedSubImage" Path="taskUI/box2.png" Plist="TaskUI.plist" />
-                    <PressedBackFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
-                    <DisableBackFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
-                    <NodeNormalFileData Type="MarkedSubImage" Path="taskUI/box2.png" Plist="TaskUI.plist" />
-                  </AbstractNodeData>
                   <AbstractNodeData Name="title" ActionTag="-1435333827" CallBackType="Click" Tag="494" IconVisible="False" LeftMargin="45.9407" RightMargin="311.0593" TopMargin="-23.7010" BottomMargin="11.7010" Scale9Width="123" Scale9Height="62" ctype="ImageViewObjectData">
                     <Size X="123.0000" Y="62.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -130,6 +104,36 @@
                     <PrePosition X="0.6605" Y="1.0982" />
                     <PreSize X="0.5500" Y="0.5200" />
                     <FileData Type="MarkedSubImage" Path="taskUI/text.png" Plist="TaskUI.plist" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="achievementBox" ActionTag="445899182" CallBackType="Click" Tag="169" IconVisible="False" LeftMargin="493.9454" RightMargin="-127.9454" TopMargin="-25.0070" BottomMargin="-14.9930" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="84" Scale9Height="68" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="114.0000" Y="90.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="550.9454" Y="30.0070" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="1.1478" Y="0.6001" />
+                    <PreSize X="0.2375" Y="1.8000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="taskUI/box1.png" Plist="TaskUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="taskUI/box1.png" Plist="TaskUI.plist" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="everyDayBox" ActionTag="-788548135" CallBackType="Click" Tag="170" IconVisible="False" LeftMargin="493.9454" RightMargin="-127.9454" TopMargin="-25.0070" BottomMargin="-14.9930" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="84" Scale9Height="68" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="114.0000" Y="90.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="550.9454" Y="30.0070" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="1.1478" Y="0.6001" />
+                    <PreSize X="0.2375" Y="1.8000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="MarkedSubImage" Path="taskUI/box_0.png" Plist="TaskUI.plist" />
+                    <PressedFileData Type="MarkedSubImage" Path="taskUI/box2.png" Plist="TaskUI.plist" />
+                    <NormalFileData Type="MarkedSubImage" Path="taskUI/box2.png" Plist="TaskUI.plist" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />

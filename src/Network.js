@@ -93,6 +93,8 @@
         initAndAutoLogin: function (cb) {
             if (SgtApi) {
                 SgtApi.init({appId: 'h5game', async: true});
+                //自定义异常提示
+                SgtApi.customException(CONSTS.exceptions);
                 if (typeof wx != "undefined" && is_weixin()) {
                     if (getUrlParam('code')) {
                         SgtApi.WxCentralService.getUserAccessToken(getUrlParam('code'), function (result, data) {
@@ -176,14 +178,14 @@
                 }
             })
         },
-        updatePlayerMails: function (timestramp) {
+        updatePlayerMails: function (timestamp) {
             this.syncServerTime(function () {
-                timestramp = PlayerData.serverCurrentTime - timestramp;
-                sgt.MailService.receiveUnread(timestramp, player.id, function (result, data) {
+                timestamp = PlayerData.serverCurrentTime - timestamp;
+                sgt.MailService.receiveUnread(timestamp, player.id, function (result, data) {
                     if (result && cc.isArray(data) && data.length > 0) {
                         PlayerData.mails.unreadMails = PlayerData.mails.unreadMails.concat(data);
                     }
-                })
+                });
             });
         },
         updateunReadMailStatus: function (callback) {
@@ -352,16 +354,20 @@
                 });
             }
         },
-        checkIn_createByValidate: function (callback) {
-            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game',callback/*, function (result, data) {
-                //true 可以签到 false 不能签到
+        checkIn_createByValidate: function (isIgnoreCheckIn) {
+            sgt.CheckinBoardService.validateCheckin(player.id, 'h5game', function (result, data) {
                 if (result) {
-                    //this.openCheckInPanel()
-                    callback(data);
+                    //data 为 true 可以签到 false 不能签到
+                    //isIgnoreCheckIn 为 true,已签到状态也打开面板;false,只有未签到才打开面板
+                    if(isIgnoreCheckIn){
+                        this.openCheckInPanel(data);
+                    }else if(data){
+                        this.openCheckInPanel(true);
+                    }
                 } else {
                     console.log('签到异常');
                 }
-            }.bind(this)*/);
+            }.bind(this));
         },openCheckInPanel: function(isCheckIn){
             //获取累计签到次数
             sgt.CheckinBoardService.accumulateCount(player.id, 'h5game', function (result, data) {
@@ -673,10 +679,12 @@
         },
         updateLocalServerList: function () {
             var servers = PlayerData.getLocalServerList();
-            var i = servers.indexOf(SgtApi.context.server);
-            //更新排序
-            if (i != -1) {
-                servers.splice(i, 1);
+            for(var i in servers){
+                //更新排序
+                if(servers[i].id === SgtApi.context.server.id){
+                    servers.splice(i, 1);
+                    break;
+                }
             }
             servers.push(SgtApi.context.server);
             localStorage.setItem("sgt-html5-game-announce-servers", JSON.stringify(servers));
@@ -776,14 +784,13 @@
                 var server;
                 if (PlayerData.servers) {
                     server = PlayerData.servers[0];
-                    full.setVisible(false);
-                    state.setVisible(true);
+                    server.isNew = true;
                 } else {
                     var servers = PlayerData.getLocalServerList();
                     server = servers[servers.length - 1];
-                    state.setVisible(false);
-                    full.setVisible(false);
                 }
+                state.setVisible(server.isNew);
+                full.setVisible(!server.isNew);
                 var isVisitor = localStorage.getItem('is-sgt-html5-game-visitor');
                 if (!isVisitor || parseInt(isVisitor) === 1) {
                     user_text.setString('游客账号');

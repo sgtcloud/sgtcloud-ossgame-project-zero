@@ -3548,7 +3548,7 @@ jsonRPC = new Object({
             },
             error: function (data) {
                 if (callback) {
-                    return callback(false, SgtApi.errorMessage(data) + '.\nat: ' + name + '()');
+                    return callback(false, SgtApi.errorMessage(data) /*+ '.\nat: ' + name + '()'*/);
                 }
             }
         });
@@ -3556,29 +3556,26 @@ jsonRPC = new Object({
 
     //错误信息
     SgtApi.errorMessage = function (data) {
-
         if (data.error.data) {
             //开发者自定义
-            var defException = SgtApi.customException();
+            var defException = customExceptions;//SgtApi.customException();
             for (var i in defException) {
                 if (i === data.error.data.exceptionTypeName) {
                     return defException[i];
                 }
             }
             //服务器默认
-            var _message = data.error.data.message;
-            return _message;
+            return data.error.data.message;
         }
         return data.error.message || '发生了错误,但服务器未返回错误信息';
     };
-
     //自定义异常
+    var customExceptions = {};
     SgtApi.customException = function (exceptionConfig) {
-        var custome = {};
         for (var i in exceptionConfig) {
-            custome.i = exceptionConfig[i];
+            customExceptions[i] = exceptionConfig[i];
         }
-        return custome;
+        return customExceptions;
     };
 
     /**
