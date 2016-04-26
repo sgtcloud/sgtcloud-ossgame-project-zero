@@ -31,6 +31,8 @@ var CONSTS = {
     "arena_times_purchase": {"unit": "gem", "value": 20, "times": 1},
     "monthCard_validity_timestamp": (30 * 24 * 60 * 60 * 1000),
     "monthCard_daily_bonus": {"unit": "gem", "value": 100},
+    "min_stage_id":"s100001",
+    "max_stage_id":"s100012",
     "first_recharge_bonus": [{"unit": "gold", "value": 50000}, {"unit": "gem", "value": 10}, {
         "unit": "relic",
         "value": 20

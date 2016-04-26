@@ -307,7 +307,12 @@ var BattlePanel = cc.Node.extend({
         //cc.log("curStage:" + PlayerData.getStageData().getStageNum());
         var nextStageId = PlayerData.getStageData().getNextStageId();
         if (nextStageId) {
+            //打到最后一关调回第一关继续
+            if(nextStageId === CONSTS.max_stage_id){
+                nextStageId = CONSTS.min_stage_id;
+            }
             var nextStage = new Stage(nextStageId);
+
             //this.loadStageIcon(nextStage, this.next_stage_icon);
             this.next_stage_num.setString(nextStage.getStageNum());
             //cc.log("nextStage:" + nextStage.getStageNum());
