@@ -45,11 +45,11 @@ var BtnListPanel = cc.Class.extend({
         topPanel.addChild(this.btnListLayer);
     },
     show: function(){
-        var moveTo = cc.moveTo(0.1,cc.p(this.root.getPositionX()-this.root.width-50,this.root.getPositionY()));
+        var moveTo = cc.moveTo(0.1,cc.p(this.root.getPositionX()-this.root.width,this.root.getPositionY()));
         this.play(moveTo);
     },
     hide: function(){
-        var moveTo = cc.moveTo(0.1,cc.p(this.root.getPositionX()+this.root.width+50,this.root.getPositionY()));
+        var moveTo = cc.moveTo(0.1,cc.p(this.root.getPositionX()+this.root.width,this.root.getPositionY()));
         this.play(moveTo);
     },
     play: function(moveTo){

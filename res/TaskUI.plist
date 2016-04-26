@@ -7,62 +7,62 @@
 			<key>taskUI/achievementTab_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,493},{160,55}}</string>
+				<string>{{0,410},{160,55}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{160,55}</string>
 			</dict>
 			<key>taskUI/achievementTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{160,493},{159,55}}</string>
+				<string>{{0,210},{159,55}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{160,55}</string>
 			</dict>
 			<key>taskUI/bar02_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{410,47}}</string>
+				<string>{{413,0},{410,47}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{410,47}</string>
 			</dict>
-			<key>taskUI/bar02_blue.png</key>
+			<key>taskUI/bar02_green.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,548},{430,17}}</string>
+				<string>{{55,349},{327,17}}</string>
 				<key>offset</key>
-				<string>{0,0}</string>
+				<string>{-1,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{430,17}</string>
+				<string>{329,17}</string>
 			</dict>
 			<key>taskUI/bar02_purple.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,565},{430,17}}</string>
+				<string>{{55,332},{328,17}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{430,17}</string>
+				<string>{329,17}</string>
 			</dict>
 			<key>taskUI/bar02_title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{319,298},{123,62}}</string>
+				<string>{{55,209},{123,62}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -73,7 +73,7 @@
 			<key>taskUI/bar02_yellow.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{410,0},{493,23}}</string>
+				<string>{{460,0},{493,23}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,7 +84,7 @@
 			<key>taskUI/box_0.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{77,206},{74,74}}</string>
+				<string>{{117,208},{74,74}}</string>
 				<key>offset</key>
 				<string>{-3,-1}</string>
 				<key>rotated</key>
@@ -95,7 +95,7 @@
 			<key>taskUI/box1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{151,206},{74,74}}</string>
+				<string>{{187,130},{74,74}}</string>
 				<key>offset</key>
 				<string>{-3,-1}</string>
 				<key>rotated</key>
@@ -106,7 +106,7 @@
 			<key>taskUI/box2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{319,421},{80,80}}</string>
+				<string>{{110,50},{80,80}}</string>
 				<key>offset</key>
 				<string>{-4,-1}</string>
 				<key>rotated</key>
@@ -117,18 +117,18 @@
 			<key>taskUI/everyDayTab_1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{430,493},{160,55}}</string>
+				<string>{{0,50},{160,55}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
 				<string>{160,55}</string>
 			</dict>
 			<key>taskUI/everyDayTab_2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{319,47},{159,55}}</string>
+				<string>{{55,50},{159,55}}</string>
 				<key>offset</key>
 				<string>{-1,0}</string>
 				<key>rotated</key>
@@ -139,7 +139,7 @@
 			<key>taskUI/get.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,206},{78,77}}</string>
+				<string>{{110,130},{78,77}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -150,13 +150,24 @@
 			<key>taskUI/text.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{374,47},{251,26}}</string>
+				<string>{{0,369},{251,26}}</string>
 				<key>offset</key>
 				<string>{-6,0}</string>
 				<key>rotated</key>
-				<true />
+				<false />
 				<key>sourceSize</key>
 				<string>{264,26}</string>
+			</dict>
+			<key>taskUI/bar_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{413,50}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{419,50}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -168,14 +179,14 @@
 			<key>realTextureFileName</key>
 			<string>TaskUI.png</string>
 			<key>size</key>
-			<string>{590,582}</string>
+			<string>{483,570}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>590</integer>
+			<integer>483</integer>
 			<key>height</key>
-			<integer>582</integer>
+			<integer>570</integer>
 		</dict>
 	</dict>
 </plist>
