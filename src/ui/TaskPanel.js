@@ -47,24 +47,6 @@ var TaskPanel = cc.Class.extend({
             }
         };
         this.LIVENESS_UNIT = 'liveness';
-        var achievementTyps = ['total_enemy_kill',
-            'total_boss_kill',
-            'total_fairy',
-            'total_hero_upgrade',
-            'total_skill_upgrade',
-            'total_equip_upgrade',
-            /*神器*/'total_artifact_upgrade',
-            'total_arena_challenge',
-            /*副本*/'total_dungeon',
-            'total_moneytree'];
-        var taskTyps = ['total_fairy',
-            'total_enemy_kill',
-            'total_hero_upgrade',
-            'total_skill_upgrade',
-            'total_equip_upgrade',
-            'total_arena_challenge',
-            /*副本*/'total_dungeon',
-            'total_moneytree'];
         customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
             var data = e.getUserData();
             if (achievementTyps.indexOf(data['type']) > -1) {

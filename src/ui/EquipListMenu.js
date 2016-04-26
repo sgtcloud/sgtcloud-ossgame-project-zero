@@ -145,6 +145,7 @@ var EquipListMenu = ListViewMenu.extend({
             customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
             this.pushMagicalEquips(equipObject.equip, hero);
             this.refeshMagicalEquips(hero, elements);
+            customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS,{type:'total_artifact_upgrade',value:num});
         }.bind(this));
     },
     _buildHeroView: function (rootItem) {
@@ -327,9 +328,11 @@ var EquipListMenu = ListViewMenu.extend({
                     PlayerData.refreshAllHerosProps();
                     PlayerData.refreshGlobeProps();
                     customEventHelper.sendEvent(EVENT.ALL_HERO_REFRESH_PROPS, hero);
+                    customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS,{type:'total_artifact_upgrade',value:num});
                 } else {
                     hero.refreshProps();
                     customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
+                    customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS,{type:'total_equip_upgrade',value:num});
                 }
                 this.refeshItemIcon(!lockItemIfNecessary(hero, equip, elements), equip.getId());
             }.bind(this));

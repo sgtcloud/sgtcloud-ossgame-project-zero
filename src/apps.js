@@ -17,6 +17,44 @@ $$.extend = function (a, b) {
  }
  return this;
  }*/
+var achievementTyps = ['total_enemy_kill',
+    'total_boss_kill',
+    'total_fairy',
+    'total_hero_upgrade',
+    'total_skill_upgrade',
+    'total_equip_upgrade',
+    /*神器*/'total_artifact_upgrade',
+    'total_arena_challenge',
+    /*副本*/'total_dungeon',
+    'total_moneytree'];
+var taskTyps = ['total_fairy',
+    'total_enemy_kill',
+    'total_hero_upgrade',
+    'total_skill_upgrade',
+    'total_equip_upgrade',
+    'total_arena_challenge',
+    /*副本*/'total_dungeon',
+    'total_moneytree'];
+
+
+/*var ACHIEVEMENT_TYPS = {'total_enemy_kill':'total_enemy_kill',
+    'total_boss_kill':'total_boss_kill',
+    'total_fairy':'total_fairy',
+    'total_hero_upgrade':'total_hero_upgrade',
+    'total_skill_upgrade':'total_skill_upgrade',
+    'total_equip_upgrade':'total_equip_upgrade',
+    /!*神器*!/'total_artifact_upgrade':'total_artifact_upgrade',
+    'total_arena_challenge':'total_arena_challenge',
+    /!*副本*!/'total_dungeon':'total_dungeon',
+    'total_moneytree':'total_moneytree'};
+var DAILYTASK_TYPS = {'total_fairy':'total_fairy',
+    'total_enemy_kill':'total_enemy_kill',
+    'total_hero_upgrade':'total_hero_upgrade',
+    'total_skill_upgrade':'total_skill_upgrade',
+    'total_equip_upgrade':'total_equip_upgrade',
+    'total_arena_challenge':'total_arena_challenge',
+    /!*副本*!/'total_dungeon':'total_dungeon',
+    'total_moneytree':'total_moneytree'};*/
 var CONSTS = {
     "APP_ID": "h5game",
     "FAIRY_SPECIFIC_ZORDER": 2000,
