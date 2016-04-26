@@ -152,9 +152,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
+                      "Type": "MarkedSubImage",
                       "Path": "taskUI/bar_bg.png",
-                      "Plist": ""
+                      "Plist": "TaskUI.plist"
                     },
                     "Scale9Width": 419,
                     "Scale9Height": 50,
@@ -612,8 +612,7 @@
         "OtherUI.plist",
         "OtherUI.png",
         "TaskUI.plist",
-        "TaskUI.png",
-        "taskUI/bar_bg.png"
+        "TaskUI.png"
       ],
       "ctype": "GameFileData"
     }
