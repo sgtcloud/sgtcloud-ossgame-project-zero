@@ -808,6 +808,7 @@
         </Folder>
         <Project Name="TipsReward.csd" Type="Layer" />
         <Project Name="TaskRewardView.csd" Type="Layer" />
+        <Project Name="WorldBossLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

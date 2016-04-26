@@ -31,7 +31,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.3681" Y="0.5799" />
                     <PreSize X="0.8729" Y="1.0000" />
-                    <FileData Type="Normal" Path="taskUI/bar_bg.png" Plist="" />
+                    <FileData Type="MarkedSubImage" Path="taskUI/bar_bg.png" Plist="TaskUI.plist" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="num" ActionTag="226149240" Tag="123" IconVisible="False" LeftMargin="-22.8279" RightMargin="469.8279" TopMargin="9.9400" BottomMargin="22.0600" LabelText="99" ctype="TextBMFontObjectData">
                     <Size X="33.0000" Y="18.0000" />

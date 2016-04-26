@@ -16,7 +16,8 @@
       <FilePathData Path="taskUI/everyDayTab_2.png" />
       <FilePathData Path="taskUI/get.png" />
       <FilePathData Path="taskUI/text.png" />
+      <FilePathData Path="taskUI/bar_bg.png" />
     </ImageFiles>
-    <MaxSize Width="600" Height="600" />
+    <MaxSize Width="800" Height="800" />
   </Content>
 </PlistInfoProjectFile>

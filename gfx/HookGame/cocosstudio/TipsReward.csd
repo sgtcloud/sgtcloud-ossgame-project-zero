@@ -6,15 +6,30 @@
       <ObjectData Name="Layer" Tag="97" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="FileNode_1" ActionTag="1799480699" Tag="144" IconVisible="True" LeftMargin="156.6994" RightMargin="383.3006" TopMargin="371.5635" BottomMargin="488.4365" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-            <Size X="100.0000" Y="100.0000" />
+          <AbstractNodeData Name="root" ActionTag="443695693" Tag="73" IconVisible="False" RightMargin="590.0000" TopMargin="910.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="50.0000" Y="50.0000" />
+            <Children>
+              <AbstractNodeData Name="Image_6" ActionTag="1824737513" Tag="78" IconVisible="False" LeftMargin="-23.0000" RightMargin="27.0000" TopMargin="27.0000" BottomMargin="-23.0000" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
+                <Size X="46.0000" Y="46.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.9200" Y="0.9200" />
+                <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
+              </AbstractNodeData>
+            </Children>
             <AnchorPoint />
-            <Position X="156.6994" Y="488.4365" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2448" Y="0.5088" />
-            <PreSize X="0.1563" Y="0.1042" />
-            <FileData Type="Normal" Path="ItemLayer.csd" Plist="" />
+            <PrePosition />
+            <PreSize X="0.0781" Y="0.0521" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

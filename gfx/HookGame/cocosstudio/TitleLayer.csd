@@ -55,16 +55,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="list" ActionTag="-1898477837" Tag="90" IconVisible="True" LeftMargin="137.1786" RightMargin="2.8214" TopMargin="40.0498" BottomMargin="8.9502" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
-                <Size X="500.0000" Y="43.0000" />
-                <AnchorPoint />
-                <Position X="137.1786" Y="8.9502" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2143" Y="0.0973" />
-                <PreSize X="0.7813" Y="0.4674" />
-                <FileData Type="Normal" Path="FunctionListLayer.csd" Plist="" />
-              </AbstractNodeData>
               <AbstractNodeData Name="functionList_btn" ActionTag="-2110985567" Tag="18" IconVisible="False" LeftMargin="595.0694" RightMargin="-0.0694" TopMargin="42.3136" BottomMargin="9.6864" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="11" BottomEage="11" Scale9OriginX="14" Scale9OriginY="11" Scale9Width="17" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="45.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

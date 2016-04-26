@@ -1,7 +1,7 @@
 {
-  "ID": "41f79d8c-3830-4a61-b6ec-33ea525fd2c4",
+  "ID": "8d0b323c-d865-4ed7-8918-5431a2e60389",
   "Version": "2.3.3.0",
-  "Name": "TipsReward",
+  "Name": "WorldBossLayer",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,10 +12,15 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 97,
+        "Tag": 121,
         "Children": [
           {
             "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "mainUI/bg_04.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -29,11 +34,16 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Enable": true,
+            "Scale9OriginX": 13,
+            "Scale9OriginY": 13,
+            "Scale9Width": 5,
+            "Scale9Height": 6,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 15.5211,
+              "Y": 62.4534
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -42,32 +52,37 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.0243,
+              "Y": 0.0651
             },
             "PreSize": {
-              "X": 0.0781,
-              "Y": 0.0521
+              "X": 0.9375,
+              "Y": 0.625
             },
-            "RightMargin": 590.0,
-            "TopMargin": 910.0,
-            "Tag": 73,
+            "LeftMargin": 15.5211,
+            "RightMargin": 24.4789,
+            "TopMargin": 297.5466,
+            "BottomMargin": 62.4534,
+            "Tag": 122,
             "Children": [
               {
                 "FileData": {
-                  "Type": "Default",
-                  "Path": "Default/ImageFile.png",
+                  "Type": "Normal",
+                  "Path": "mainUI/bg_03.png",
                   "Plist": ""
                 },
-                "Scale9Width": 46,
-                "Scale9Height": 46,
+                "Scale9Enable": true,
+                "Scale9OriginX": 9,
+                "Scale9OriginY": 11,
+                "Scale9Width": 10,
+                "Scale9Height": 14,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 294.0,
+                  "Y": 473.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -76,31 +91,31 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.49,
+                  "Y": 0.7883
                 },
                 "PreSize": {
-                  "X": 0.92,
-                  "Y": 0.92
+                  "X": 0.8333,
+                  "Y": 0.25
                 },
-                "LeftMargin": -23.0,
-                "RightMargin": 27.0,
-                "TopMargin": 27.0,
-                "BottomMargin": -23.0,
-                "Tag": 78,
-                "ActionTag": 1824737513,
+                "LeftMargin": 44.0,
+                "RightMargin": 56.0,
+                "TopMargin": 52.0,
+                "BottomMargin": 398.0,
+                "Tag": 150,
+                "ActionTag": 2117502016,
                 "Size": {
-                  "X": 46.0,
-                  "Y": 46.0
+                  "X": 500.0,
+                  "Y": 150.0
                 },
-                "Name": "Image_6",
+                "Name": "Image_1",
                 "ctype": "ImageViewObjectData"
               }
             ],
-            "ActionTag": 443695693,
+            "ActionTag": -468367094,
             "Size": {
-              "X": 50.0,
-              "Y": 50.0
+              "X": 600.0,
+              "Y": 600.0
             },
             "Name": "root",
             "ctype": "PanelObjectData"
@@ -114,7 +129,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "Default/ImageFile.png"
+        "mainUI/bg_03.png",
+        "mainUI/bg_04.png"
       ],
       "ctype": "GameFileData"
     }
