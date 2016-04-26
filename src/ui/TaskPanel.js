@@ -18,13 +18,13 @@ var TaskPanel = cc.Class.extend({
         this._tabObj = {
             'everyDay_tab': {
                 'box': this.everyDayBox,
-                'loadingBar': this._dailyTaskLiveness,
+                'loadingBar': this._refreshDailyTaskLiveness,
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
                         console.log(data);
                         if (result) {
-
+                            ArenaResultTip.prototype._processReward.call(this, data);
                         } else {
                             tip.toggle(data);
                         }
@@ -33,7 +33,7 @@ var TaskPanel = cc.Class.extend({
             },
             'achievement_tab': {
                 'box': this.achevementBox,
-                'loadingBar': this._achevementLiveness,
+                'loadingBar': this._refreshAchevementLiveness,
                 'refreshData': this._refreshAchievement,
                 'gerReward': function (achievementId) {
                     this.achievementService.complete(player.id, achievementId, function (result, data) {
@@ -56,14 +56,14 @@ var TaskPanel = cc.Class.extend({
             if (achievementTyps.indexOf(data['type']) > -1) {
                 this.achievementService.customAchievementsByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-
+                        this.__processReward(d,'everyDay_tab');
                     }
-                });
+                }.bind(this));
             }
             if (taskTyps.indexOf(data['type']) > -1) {
                 this.dailyTaskService.addExecuteTasksByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-
+                        this.__processReward(d,'achievement_tab');
                     }
                 });
             }
@@ -72,6 +72,8 @@ var TaskPanel = cc.Class.extend({
         this.TYPE_OF_ACHIEVEMENT = {"TYPES": achievementTyps, "LIVENESS": "achievement_leveness"};
         this.loadingBar = bar.getChildByName('bar_yellow');
         this.loadingNum = bar.getChildByName('num');
+        this.loadingNum.setString(0);
+        this.loadingBar.setPercent(0);
         this.list = root.getChildByName('list');
         //this.list.pushBackCustomItem(this.taskview.clone());
         this.list.setClippingEnabled(true);
@@ -103,6 +105,39 @@ var TaskPanel = cc.Class.extend({
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
+    }, __processReward: function (d,tab) {
+        var rewards;
+        if (typeof d === 'string') {
+            rewards = eval('(' + d + ')');
+        } else
+            rewards = d;
+        var resources = [];
+        var livenesscount = 0;
+        if (rewards instanceof Array) {
+            for (var i in rewards) {
+                var unit = rewards[i]['unit'];
+                var value = rewards[i]['value'];
+                if (unit === this.LIVENESS_UNIT) {
+                    livenesscount += parseInt(value);
+                    continue;
+                }
+                resources.push(rewards[i]);
+            }
+        } else {
+            for (var k in rewards) {
+                var value = rewards[k];
+                if (k === this.LIVENESS_UNIT) {
+                    livenesscount += parseInt(value);
+                    continue;
+                }
+                var obj = {};
+                obj['unit'] = k;
+                obj['value'] = value;
+                resources.push(obj);
+            }
+        }
+        PlayerData.updateResource(resources);
+        this._submitLivenewss(tab,livenesscount);
     },
     _showTab: function (name) {
         for (var k in this._tabObj) {
@@ -114,15 +149,37 @@ var TaskPanel = cc.Class.extend({
     }, openPopup: function () {
         this.showMenuLayer('everyDay_tab');
         GamePopup.openPopup(this.layer, null, false);
-    }, _dailyTaskLiveness: function () {
+    }, _submitLivenewss: function (tab, value) {
+        if (tab === 'everyDay_tab' && value) {
+            this.dailyTaskService.addExecuteTasksByType(this.TYPE_OF_TASK.LIVENESS, player.id, value, function (result,data) {
+                if (result && data && data.length > 0) {
+                    var task = data[0];
+                    this.loadingNum.setString(task.currentProgress);
+                    this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                }
+            }.bind(this));
+        }
+        if (tab === 'achievement_tab' && value) {
+            this.achievementService.customAchievementsByType(this.TYPE_OF_ACHIEVEMENT.LIVENESS, player.id, value, function (result,data) {
+                if (result && data && data.length > 0) {
+                    var task = data[0];
+                    this.loadingNum.setString(task.currentProgress);
+                    this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                    console.log(Math.round(task.currentProgress / task.goal * 100));
+                }
+            }.bind(this));
+        }
+    }, _refreshDailyTaskLiveness: function () {
         this.dailyTaskService.getDailyTasksByType(player.id, this.TYPE_OF_TASK.LIVENESS, function (result, data) {
             if (result && data && data.length > 0) {
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
                 this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+            }else {
+
             }
         }.bind(this));
-    }, _achevementLiveness: function () {
+    }, _refreshAchevementLiveness: function () {
         this.achievementService.getAchievementsByType(player.id, this.TYPE_OF_ACHIEVEMENT.LIVENESS, function (result, data) {
             if (result && data && data.length > 0) {
                 var task = data[0];
@@ -171,7 +228,7 @@ var TaskPanel = cc.Class.extend({
         bar_blue.setVisible(false);
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
-        var get=taskItem.getChildByName('get');
+        var get = taskItem.getChildByName('get');
         if (task.status === sgt.DailyTask.STATUS_PROGRESS_GOT_REWARD) {
             get.setVisible(true);
             btn.setVisible(false);
