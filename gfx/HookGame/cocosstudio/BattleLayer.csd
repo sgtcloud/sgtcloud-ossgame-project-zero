@@ -316,6 +316,21 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="action_btn" ActionTag="-380861516" Tag="120" IconVisible="False" LeftMargin="145.7697" RightMargin="408.2303" TopMargin="444.4760" BottomMargin="229.5240" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="56" Scale9Height="72" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="86.0000" Y="94.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="188.7697" Y="276.5240" />
+                <Scale ScaleX="0.6000" ScaleY="0.6000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2950" Y="0.3601" />
+                <PreSize X="0.1344" Y="0.1224" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Normal" Path="mainUI/recharge_btn.png" Plist="" />
+                <PressedFileData Type="Normal" Path="mainUI/recharge_btn.png" Plist="" />
+                <NormalFileData Type="Normal" Path="mainUI/recharge_btn.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
               <AbstractNodeData Name="boss_stage" ActionTag="-1766155566" Tag="116" IconVisible="False" LeftMargin="514.8454" RightMargin="0.1546" TopMargin="6.0484" BottomMargin="676.9516" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="125.0000" Y="85.0000" />
                 <Children>
