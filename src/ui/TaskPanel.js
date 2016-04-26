@@ -6,6 +6,7 @@ var TaskPanel = cc.Class.extend({
     ctor: function () {
         this.layer = ccs.csLoader.createNode(res.task_layer_json);
         this.taskview = ccs.csLoader.createNode(res.task_view_json).getChildByName('root');
+        this.rewardTip = ccs.csLoader.createNode(res.reward_tip_json).getChildByName('root');
         var root = this.layer.getChildByName('root');
         var tab = root.getChildByName('tab');
         var tabParams = [
@@ -54,7 +55,7 @@ var TaskPanel = cc.Class.extend({
             'total_equip_upgrade',
             'total_artifact_upgrade',
             'total_arena_challenge',
-            'total_dungeon',
+            /*副本*/'total_dungeon',
             'total_moneytree'];
         var taskTyps = ['total_fairy',
             'total_enemy_kill',
@@ -62,7 +63,7 @@ var TaskPanel = cc.Class.extend({
             'total_skill_upgrade',
             'total_equip_upgrade',
             'total_arena_challenge',
-            'total_dungeon',
+            /*副本*/'total_dungeon',
             'total_moneytree'];
         customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
             var data = e.getUserData();
@@ -118,7 +119,8 @@ var TaskPanel = cc.Class.extend({
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
-    }, _convertReards:function(data){
+    }, _convertReards: function (data, split) {
+        if (typeof  split === 'undefined') split = true;
         var rewards;
         if (typeof data === 'string') {
             rewards = eval('(' + data + ')');
@@ -130,7 +132,7 @@ var TaskPanel = cc.Class.extend({
             for (var i in rewards) {
                 var unit = rewards[i]['unit'];
                 var value = rewards[i]['value'];
-                if (unit === this.LIVENESS_UNIT) {
+                if (split && unit === this.LIVENESS_UNIT) {
                     livenesscount += parseInt(value);
                     continue;
                 }
@@ -139,7 +141,7 @@ var TaskPanel = cc.Class.extend({
         } else {
             for (var k in rewards) {
                 var value = rewards[k];
-                if (k === this.LIVENESS_UNIT) {
+                if (split && k === this.LIVENESS_UNIT) {
                     livenesscount += parseInt(value);
                     continue;
                 }
@@ -149,9 +151,9 @@ var TaskPanel = cc.Class.extend({
                 resources.push(obj);
             }
         }
-        return {resources:resources,livenewss:livenesscount};
-    },__processReward: function (d, tab) {
-       var resources=this._convertReards(d);
+        return {resources: resources, livenewss: livenesscount};
+    }, __processReward: function (d, tab) {
+        var resources = this._convertReards(d);
         PlayerData.updateResource(resources.resources);
         this._submitLivenewss(tab, resources.livenewss);
     },
@@ -233,18 +235,22 @@ var TaskPanel = cc.Class.extend({
     }, pushTaskItem: function (task, tab) {
         var taskItem = this.taskview.clone();
         var desc = taskItem.getChildByName('text');
-        var reward_box=taskItem.getChildByName('reward_box');
-        var resources=this._convertReards(task.reward);
-        var rewards=resources.resources;
-        var p=reward_box.getPosition();
-        for(var k in rewards){
-            var ttf=new cc.LabelTTF();
-            var img=new ccui.ImageView('res/icon/resources_small/' + rewards[k]['unit']+'.png');
-            ttf.setString(rewards[k]['value']);
-            img.setPosition(p);
-            ttf.setPosition(p);
-            reward_box.addChild(img);
-            reward_box.addChild(ttf);
+        var reward_box = taskItem.getChildByName('reward_box');
+        var resources = this._convertReards(task.reward, false);
+        var rewards = resources.resources;
+        for (var k in rewards) {
+            var children = reward_box.getChildren();
+            var rewardTip = this.rewardTip.clone();
+            var icon = rewardTip.getChildByName('icon');
+            icon.loadTexture('res/icon/resources_small/' + rewards[k]['unit'] + '.png');
+            var rnum = rewardTip.getChildByName('num');
+            rnum.setString(rewards[k]['value']);
+            var x = 0;
+            children.forEach(function (a, b, c) {
+                x += a.getChildByName('icon').width + a.getChildByName('num').width;
+            });
+            rewardTip.setPositionX(x);
+            reward_box.addChild(rewardTip);
         }
         desc.setString(task.description);
         setFont(desc);

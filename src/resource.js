@@ -140,6 +140,7 @@ var res = {
     user_layer_json: 'res/UserLayer.json',
     task_layer_json:'res/TaskLayer.json',
     task_view_json:'res/TaskView.json',
+    reward_tip_json:'res/TaskRewardView.json',
     function_list_layer:'res/FunctionListLayer.json'
 
 };
