@@ -17,6 +17,48 @@ $$.extend = function (a, b) {
  }
  return this;
  }*/
+var achievementTyps = [/*击杀普通怪物数量*/	'total_enemy_kill',
+    /*击杀Boss怪物数量*/	          'total_boss_kill',
+    /*击杀小精灵数量*/	              'total_fairy',
+    /*升级英雄次数	 */               'total_hero_upgrade',
+    /*升级技能次数*/	              'total_skill_upgrade',
+    /*升级装备次数*/	              'total_equip_upgrade',
+    /*获得神器个数*/	              'total_artifact_upgrade',
+    /*竞技场挑战*/	                  'total_arena_challenge',
+    /*参加在线副本（需先完成该系统）*/'total_dungeon',
+    /*抽卡次数（需先完成该系统）*/	  'total_gachabox',
+    /*累计消费钻石*/	              'accumulate_gem_consume',
+    /*摇钱树点金次数*/	              'total_moneytree',
+    /*累计充值钻石*/	              'accumulate_gem_recharge'
+];
+var taskTyps = ['total_fairy',
+    'total_enemy_kill',
+    'total_hero_upgrade',
+    'total_skill_upgrade',
+    'total_equip_upgrade',
+    'total_arena_challenge',
+    /*副本*/'total_dungeon',
+    'total_moneytree'];
+
+
+/*var ACHIEVEMENT_TYPS = {'total_enemy_kill':'total_enemy_kill',
+    'total_boss_kill':'total_boss_kill',
+    'total_fairy':'total_fairy',
+    'total_hero_upgrade':'total_hero_upgrade',
+    'total_skill_upgrade':'total_skill_upgrade',
+    'total_equip_upgrade':'total_equip_upgrade',
+    /!*神器*!/'total_artifact_upgrade':'total_artifact_upgrade',
+    'total_arena_challenge':'total_arena_challenge',
+    /!*副本*!/'total_dungeon':'total_dungeon',
+    'total_moneytree':'total_moneytree'};
+var DAILYTASK_TYPS = {'total_fairy':'total_fairy',
+    'total_enemy_kill':'total_enemy_kill',
+    'total_hero_upgrade':'total_hero_upgrade',
+    'total_skill_upgrade':'total_skill_upgrade',
+    'total_equip_upgrade':'total_equip_upgrade',
+    'total_arena_challenge':'total_arena_challenge',
+    /!*副本*!/'total_dungeon':'total_dungeon',
+    'total_moneytree':'total_moneytree'};*/
 var CONSTS = {
     "APP_ID": "h5game",
     "FAIRY_SPECIFIC_ZORDER": 2000,

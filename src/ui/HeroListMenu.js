@@ -184,6 +184,7 @@ var HeroListMenu = ListViewMenu.extend({
         hero.refreshProps();
         customEventHelper.sendEvent(EVENT.HERO_REFRESH_PROPS, hero);
         customEventHelper.sendEvent(EVENT.UNLOCK_ACTIVITY_SKILL, skill.getId());
+        customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS,{type:'total_skill_upgrade',value:num});
         if (skill.isMaxLevel()) {
             elements.maxLevel_btn.layer.setVisible(true);
             elements.upgrade_btn.layer.setVisible(false);
