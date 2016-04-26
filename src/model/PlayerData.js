@@ -47,6 +47,10 @@ var PlayerDataClass = cc.Class.extend({
         if (!this._player.first_time) {
             this._player.first_time = this.getServerTime();
         }
+        //打到最后一关调回第一关继续
+        if(this._player.stage === CONSTS.max_stage_id){
+            this._player.stage = CONSTS.min_stage_id;
+        }
         this.stageData = new Stage(this._player.stage);
         this.refreshGlobeProps();
         this.countOfflineReward();

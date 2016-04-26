@@ -5,6 +5,10 @@ var Stage = function (id) {
     this.goToNextStage = function () {
         if (data.next) {
             id = data.next;
+            //打到最后一关调回第一关继续
+            if(id === CONSTS.max_stage_id){
+                id = CONSTS.min_stage_id;
+            }
             data = dataSource.stages[id];
             return true;
         }
