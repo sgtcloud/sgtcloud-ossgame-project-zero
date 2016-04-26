@@ -277,6 +277,7 @@
           <Image Name="user.png" />
           <Image Name="psw.png" />
           <Image Name="user1.png" />
+          <Image Name="tips_bg.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />

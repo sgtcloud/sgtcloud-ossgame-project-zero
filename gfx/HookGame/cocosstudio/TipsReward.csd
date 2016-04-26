@@ -4,28 +4,17 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="97" ctype="GameLayerObjectData">
-        <Size X="640.0000" Y="960.0000" />
+        <Size X="50.0000" Y="50.0000" />
         <Children>
-          <AbstractNodeData Name="root" ActionTag="443695693" Tag="73" IconVisible="False" RightMargin="590.0000" TopMargin="910.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="root" ActionTag="443695693" CallBackType="Click" Tag="73" IconVisible="False" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="49" RightEage="49" TopEage="49" BottomEage="49" Scale9OriginX="49" Scale9OriginY="49" Scale9Width="52" Scale9Height="52" ctype="PanelObjectData">
             <Size X="50.0000" Y="50.0000" />
-            <Children>
-              <AbstractNodeData Name="Image_6" ActionTag="1824737513" Tag="78" IconVisible="False" LeftMargin="-23.0000" RightMargin="27.0000" TopMargin="27.0000" BottomMargin="-23.0000" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
-                <Size X="46.0000" Y="46.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.9200" Y="0.9200" />
-                <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
-              </AbstractNodeData>
-            </Children>
             <AnchorPoint />
             <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="0.0781" Y="0.0521" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="mainUI/tips_bg.png" Plist="" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
