@@ -49,21 +49,37 @@ var TaskPanel = cc.Class.extend({
             }
         };
         this.LIVENESS_UNIT = 'liveness';
-        var achievementTyps = ['total_enemy_kill', 'total_total_kill', 'total_fairy', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_artifact_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
-        var taskTyps = ['total_fairy', 'total_enemy_kill', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
+        var achievementTyps = ['total_enemy_kill',
+            'total_total_kill',
+            'total_fairy',
+            'total_hero_upgrade',
+            'total_skill_upgrade',
+            'total_equip_upgrade',
+            'total_artifact_upgrade',
+            'total_arena_challenge',
+            'total_dungeon',
+            'total_moneytree'];
+        var taskTyps = ['total_fairy',
+            'total_enemy_kill',
+            'total_hero_upgrade',
+            'total_skill_upgrade',
+            'total_equip_upgrade',
+            'total_arena_challenge',
+            'total_dungeon',
+            'total_moneytree'];
         customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
             var data = e.getUserData();
             if (achievementTyps.indexOf(data['type']) > -1) {
                 this.achievementService.customAchievementsByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-                        this.__processReward(d,'everyDay_tab');
+                        this.__processReward(d, 'achievement_tab');
                     }
                 }.bind(this));
             }
             if (taskTyps.indexOf(data['type']) > -1) {
                 this.dailyTaskService.addExecuteTasksByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-                        this.__processReward(d,'achievement_tab');
+                        this.__processReward(d, 'everyDay_tab');
                     }
                 });
             }
@@ -105,7 +121,7 @@ var TaskPanel = cc.Class.extend({
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
-    }, __processReward: function (d,tab) {
+    }, __processReward: function (d, tab) {
         var rewards;
         if (typeof d === 'string') {
             rewards = eval('(' + d + ')');
@@ -137,7 +153,7 @@ var TaskPanel = cc.Class.extend({
             }
         }
         PlayerData.updateResource(resources);
-        this._submitLivenewss(tab,livenesscount);
+        this._submitLivenewss(tab, livenesscount);
     },
     _showTab: function (name) {
         for (var k in this._tabObj) {
@@ -151,7 +167,7 @@ var TaskPanel = cc.Class.extend({
         GamePopup.openPopup(this.layer, null, false);
     }, _submitLivenewss: function (tab, value) {
         if (tab === 'everyDay_tab' && value) {
-            this.dailyTaskService.addExecuteTasksByType(this.TYPE_OF_TASK.LIVENESS, player.id, value, function (result,data) {
+            this.dailyTaskService.addExecuteTasksByType(this.TYPE_OF_TASK.LIVENESS, player.id, value, function (result, data) {
                 if (result && data && data.length > 0) {
                     var task = data[0];
                     this.loadingNum.setString(task.currentProgress);
@@ -160,7 +176,7 @@ var TaskPanel = cc.Class.extend({
             }.bind(this));
         }
         if (tab === 'achievement_tab' && value) {
-            this.achievementService.customAchievementsByType(this.TYPE_OF_ACHIEVEMENT.LIVENESS, player.id, value, function (result,data) {
+            this.achievementService.customAchievementsByType(this.TYPE_OF_ACHIEVEMENT.LIVENESS, player.id, value, function (result, data) {
                 if (result && data && data.length > 0) {
                     var task = data[0];
                     this.loadingNum.setString(task.currentProgress);
@@ -175,7 +191,7 @@ var TaskPanel = cc.Class.extend({
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
                 this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
-            }else {
+            } else {
 
             }
         }.bind(this));

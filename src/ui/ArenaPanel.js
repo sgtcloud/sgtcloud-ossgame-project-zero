@@ -223,6 +223,7 @@ var ArenaPanel = BattleMenu.extend({
                     console.log('创建挑战成功，ID:' + id);
                     game.tabContainer.buttons['main']._selectedEvent();
                     customEventHelper.sendEvent(EVENT.FIGHT_ARENA_BATTLE, {playerId: data.player.id, challengeId: id});
+                    customEventHelper.sendEvent(EVENT.UPDATE_STATISTICS, {'type':'total_arena_challenge', value: 1});
                     this.refreshTimes(--player.arena.times);
                 }
             }.bind(this));
