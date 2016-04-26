@@ -1294,6 +1294,81 @@
                 "ctype": "ButtonObjectData"
               },
               {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/recharge_btn.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/recharge_btn.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "mainUI/recharge_btn.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 56,
+                "Scale9Height": 72,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 188.7697,
+                  "Y": 276.524
+                },
+                "Scale": {
+                  "ScaleX": 0.6,
+                  "ScaleY": 0.6
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.295,
+                  "Y": 0.3601
+                },
+                "PreSize": {
+                  "X": 0.1344,
+                  "Y": 0.1224
+                },
+                "LeftMargin": 145.7697,
+                "RightMargin": 408.2303,
+                "TopMargin": 444.476,
+                "BottomMargin": 229.524,
+                "Tag": 120,
+                "ActionTag": -380861516,
+                "Size": {
+                  "X": 86.0,
+                  "Y": 94.0
+                },
+                "Name": "action_btn",
+                "ctype": "ButtonObjectData"
+              },
+              {
                 "BackColorAlpha": 102,
                 "SingleColor": {
                   "R": 150,

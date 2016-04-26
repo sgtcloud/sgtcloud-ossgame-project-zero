@@ -631,7 +631,10 @@ sz.GuideLayer = cc.Layer.extend({
                     }
                 }
                 PlayerData.updateGuideIndex(n);
-                this.removeFromParent(true);
+                scheduleOnce(this,function(){
+                    this.removeFromParent(true);
+                }.bind(this),0.1);
+
                 customEventHelper.sendEvent(EVENT.RESUME_THE_BATTLE);
                 return true;
             }
