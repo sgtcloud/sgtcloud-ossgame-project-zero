@@ -1,0 +1,7 @@
+{
+  "me.gall.sgp.datacenter.opensocial.rpc.exception.UsernameExistsException": "已存在此用户名，请选择其他用户名注册",
+  "me.gall.sgp.datacenter.opensocial.rpc.exception.IllegalUsernameFormatException": "用户名不合法",
+  "me.gall.sgp.datacenter.opensocial.rpc.exception.IllegalPasswordException": "密码位数不能小于6位",
+  "me.gall.sgp.datacenter.opensocial.exception.UserNotExistsException": "用户名或密码错误，请重新输入",
+  "me.gall.sgp.datacenter.opensocial.exception.PasswordNotMatchException": "用户名或密码错误，请重新输入"
+}

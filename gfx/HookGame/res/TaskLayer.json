@@ -354,122 +354,6 @@
                     "ctype": "LoadingBarObjectData"
                   },
                   {
-                    "CheckedState": true,
-                    "NormalBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box1.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "PressedBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box_0.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "DisableBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box_0.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "NodeNormalFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box1.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "TouchEnable": true,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 546.6846,
-                      "Y": 37.8642
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 1.1389,
-                      "Y": 0.7573
-                    },
-                    "PreSize": {
-                      "X": 0.2375,
-                      "Y": 1.8
-                    },
-                    "LeftMargin": 489.6846,
-                    "RightMargin": -123.6846,
-                    "TopMargin": -32.8642,
-                    "BottomMargin": -7.1358,
-                    "Tag": 492,
-                    "ActionTag": -1349291718,
-                    "Size": {
-                      "X": 114.0,
-                      "Y": 90.0
-                    },
-                    "Name": "achievementBox",
-                    "ctype": "CheckBoxObjectData"
-                  },
-                  {
-                    "CheckedState": true,
-                    "NormalBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box2.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "PressedBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box_0.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "DisableBackFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box_0.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "NodeNormalFileData": {
-                      "Type": "MarkedSubImage",
-                      "Path": "taskUI/box2.png",
-                      "Plist": "TaskUI.plist"
-                    },
-                    "TouchEnable": true,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 546.6846,
-                      "Y": 37.8642
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {},
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 1.1389,
-                      "Y": 0.7573
-                    },
-                    "PreSize": {
-                      "X": 0.2375,
-                      "Y": 1.8
-                    },
-                    "LeftMargin": 489.6846,
-                    "RightMargin": -123.6846,
-                    "TopMargin": -32.8642,
-                    "BottomMargin": -7.1358,
-                    "Tag": 493,
-                    "ActionTag": 254432280,
-                    "Size": {
-                      "X": 114.0,
-                      "Y": 90.0
-                    },
-                    "Name": "everyDayBox",
-                    "ctype": "CheckBoxObjectData"
-                  },
-                  {
                     "FileData": {
                       "Type": "MarkedSubImage",
                       "Path": "taskUI/bar02_title.png",
@@ -601,6 +485,158 @@
                     },
                     "Name": "text",
                     "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box_0.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box1.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box1.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 84,
+                    "Scale9Height": 68,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 550.9454,
+                      "Y": 30.007
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.1478,
+                      "Y": 0.6001
+                    },
+                    "PreSize": {
+                      "X": 0.2375,
+                      "Y": 1.8
+                    },
+                    "LeftMargin": 493.9454,
+                    "RightMargin": -127.9454,
+                    "TopMargin": -25.007,
+                    "BottomMargin": -14.993,
+                    "CallBackType": "Click",
+                    "Tag": 169,
+                    "ActionTag": 445899182,
+                    "Size": {
+                      "X": 114.0,
+                      "Y": 90.0
+                    },
+                    "Name": "achievementBox",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box_0.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "PressedFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box2.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "NormalFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "taskUI/box2.png",
+                      "Plist": "TaskUI.plist"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 84,
+                    "Scale9Height": 68,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 550.9454,
+                      "Y": 30.007
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.1478,
+                      "Y": 0.6001
+                    },
+                    "PreSize": {
+                      "X": 0.2375,
+                      "Y": 1.8
+                    },
+                    "LeftMargin": 493.9454,
+                    "RightMargin": -127.9454,
+                    "TopMargin": -25.007,
+                    "BottomMargin": -14.993,
+                    "CallBackType": "Click",
+                    "Tag": 170,
+                    "ActionTag": -788548135,
+                    "Size": {
+                      "X": 114.0,
+                      "Y": 90.0
+                    },
+                    "Name": "everyDayBox",
+                    "ctype": "ButtonObjectData"
                   }
                 ],
                 "ActionTag": -1333053527,

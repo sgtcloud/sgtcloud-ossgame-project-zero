@@ -740,7 +740,7 @@
         <Project Name="TaskView.csd" Type="Layer" />
         <Folder Name="taskUI">
           <Image Name="bar02_bg.png" />
-          <Image Name="bar02_blue.png" />
+          <Image Name="bar02_green.png" />
           <Image Name="get.png" />
           <Image Name="bar02_title.png" />
           <Image Name="bar02_purple.png" />
@@ -769,6 +769,7 @@
             <PlistImageFile Name="taskUI_get.png" Key="taskUI/get.png" />
             <PlistImageFile Name="taskUI_text.png" Key="taskUI/text.png" />
           </PlistImageFolder>
+          <Image Name="bar_bg.png" />
         </Folder>
         <PlistInfo Name="TaskUI.csi" Type="Plist" />
         <PlistInfo Name="FirstRechargeUI.csi" Type="Plist" />
@@ -805,6 +806,8 @@
           <Image Name="s100010.png" />
           <Image Name="s100011.png" />
         </Folder>
+        <Project Name="TipsReward.csd" Type="Layer" />
+        <Project Name="TaskRewardView.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
