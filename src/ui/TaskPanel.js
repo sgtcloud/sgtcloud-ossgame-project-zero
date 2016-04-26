@@ -20,6 +20,13 @@ var TaskPanel = cc.Class.extend({
             'everyDay_tab': {
                 'box': this.everyDayBox,
                 'loadingBar': this._refreshDailyTaskLiveness,
+                'itemLoadingBar':function(item){
+                    var bar_purple = item.getChildByName('bar_purple');
+                    var bar_green = item.getChildByName('bar_green');
+                    bar_purple.setVisible(false);
+                    bar_green.setVisible(true);
+                    return bar_green;
+                },
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
@@ -34,6 +41,13 @@ var TaskPanel = cc.Class.extend({
             'achievement_tab': {
                 'box': this.achevementBox,
                 'loadingBar': this._refreshAchevementLiveness,
+                'itemLoadingBar':function(item){
+                    var bar_purple = item.getChildByName('bar_purple');
+                    var bar_green = item.getChildByName('bar_green');
+                    bar_purple.setVisible(true);
+                    bar_green.setVisible(false);
+                    return bar_purple;
+                },
                 'refreshData': this._refreshAchievement,
                 'gerReward': function (achievementId) {
                     this.achievementService.complete(player.id, achievementId, function (result, data) {
@@ -239,9 +253,9 @@ var TaskPanel = cc.Class.extend({
         var bar = taskItem.getChildByName('bar');
         var num = bar.getChildByName('num');
         num.setString(task.currentProgress);
-        var bar_purple = bar.getChildByName('bar_purple');
-        var bar_green = bar.getChildByName('bar_green');
-        bar_green.setVisible(false);
+        var loading = this._tabObj[tab]['itemLoadingBar'].call(this,bar);
+        //var bar_green = bar.getChildByName('bar_green');
+        //bar_green.setVisible(false);
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
         var get = taskItem.getChildByName('get');
@@ -259,7 +273,7 @@ var TaskPanel = cc.Class.extend({
                 this._tabObj[tab]['gerReward'].call(this, id);
             }.bind(this));
         }
-        bar_purple.setPercent(Math.floor(task.currentProgress / task.goal * 100));
+        loading.setPercent(Math.floor(task.currentProgress / task.goal * 100));
         this.list.pushBackCustomItem(taskItem);
     }
 });
