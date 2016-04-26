@@ -27,7 +27,7 @@ var ArenaResultTip = cc.Class.extend({
     }, toggleWin: function (data, flag) {
         this.preWinNum.setString(data['lowLevel']);
         this.afterWinNum.setString(data['highLevel']);
-        var _reward = this._processReward(data);
+        var _reward = this._processReward( data['reward']);
         if (!flag) {
             PlayerData.updateResource(_reward);
         }
@@ -36,7 +36,7 @@ var ArenaResultTip = cc.Class.extend({
         this.win.setVisible(true);
         this._toggle();
     }, toggleLose: function (data, flag) {
-        var _reward = this._processReward(data);
+        var _reward = this._processReward( data['reward']);
         if (typeof flag==='undefined'||flag) {
             PlayerData.updateResource(_reward);
         }
@@ -46,9 +46,9 @@ var ArenaResultTip = cc.Class.extend({
         this.win.setVisible(false);
         this._toggle();
     }, _toggle: function () {
-        this.tip.setVisible(true)
+        this.tip.setVisible(true);
     }, _processReward: function (data) {
-        var reward = data['reward'];
+        var reward = data;//['reward'];
         if (typeof reward === 'string') {
             reward = eval('(' + reward + ')')
         }

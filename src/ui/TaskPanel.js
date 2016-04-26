@@ -6,6 +6,7 @@ var TaskPanel = cc.Class.extend({
     ctor: function () {
         this.layer = ccs.csLoader.createNode(res.task_layer_json);
         this.taskview = ccs.csLoader.createNode(res.task_view_json).getChildByName('root');
+        this.rewardTip = ccs.csLoader.createNode(res.reward_tip_json).getChildByName('root');
         var root = this.layer.getChildByName('root');
         var tab = root.getChildByName('tab');
         var tabParams = [
@@ -18,13 +19,12 @@ var TaskPanel = cc.Class.extend({
         this._tabObj = {
             'everyDay_tab': {
                 'box': this.everyDayBox,
-                'loadingBar': this._dailyTaskLiveness,
+                'loadingBar': this._refreshDailyTaskLiveness,
                 'refreshData': this._refreshTask,
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
-                        console.log(data);
                         if (result) {
-
+                            this.__processReward(d, 'everyDay_tab');
                         } else {
                             tip.toggle(data);
                         }
@@ -33,14 +33,12 @@ var TaskPanel = cc.Class.extend({
             },
             'achievement_tab': {
                 'box': this.achevementBox,
-                'loadingBar': this._achevementLiveness,
+                'loadingBar': this._refreshAchevementLiveness,
                 'refreshData': this._refreshAchievement,
                 'gerReward': function (achievementId) {
                     this.achievementService.complete(player.id, achievementId, function (result, data) {
                         if (result) {
-                            if (data.unit === 'liveness') {
-
-                            }
+                            this.__processReward(d, 'achievement_tab');
                         } else {
                             tip.toggle(data);
                         }
@@ -49,21 +47,37 @@ var TaskPanel = cc.Class.extend({
             }
         };
         this.LIVENESS_UNIT = 'liveness';
-        var achievementTyps = ['total_enemy_kill', 'total_total_kill', 'total_fairy', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_artifact_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
-        var taskTyps = ['total_fairy', 'total_enemy_kill', 'total_hero_upgrade', 'total_skill_upgrade', 'total_equip_upgrade', 'total_arena_challenge', 'total_dungeon', 'total_moneytree'];
+        var achievementTyps = ['total_enemy_kill',
+            'total_boss_kill',
+            'total_fairy',
+            'total_hero_upgrade',
+            'total_skill_upgrade',
+            'total_equip_upgrade',
+            /*神器*/'total_artifact_upgrade',
+            'total_arena_challenge',
+            /*副本*/'total_dungeon',
+            'total_moneytree'];
+        var taskTyps = ['total_fairy',
+            'total_enemy_kill',
+            'total_hero_upgrade',
+            'total_skill_upgrade',
+            'total_equip_upgrade',
+            'total_arena_challenge',
+            /*副本*/'total_dungeon',
+            'total_moneytree'];
         customEventHelper.bindListener(EVENT.UPDATE_STATISTICS, function (e) {
             var data = e.getUserData();
             if (achievementTyps.indexOf(data['type']) > -1) {
                 this.achievementService.customAchievementsByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-
+                        //this.__processReward(d, 'achievement_tab');
                     }
-                });
+                }.bind(this));
             }
             if (taskTyps.indexOf(data['type']) > -1) {
                 this.dailyTaskService.addExecuteTasksByType(data['type'], player.id, data['value'] || 1, function (result, d) {
                     if (result) {
-
+                        //this.__processReward(d, 'everyDay_tab');
                     }
                 });
             }
@@ -72,6 +86,8 @@ var TaskPanel = cc.Class.extend({
         this.TYPE_OF_ACHIEVEMENT = {"TYPES": achievementTyps, "LIVENESS": "achievement_leveness"};
         this.loadingBar = bar.getChildByName('bar_yellow');
         this.loadingNum = bar.getChildByName('num');
+        this.loadingNum.setString(0);
+        this.loadingBar.setPercent(0);
         this.list = root.getChildByName('list');
         //this.list.pushBackCustomItem(this.taskview.clone());
         this.list.setClippingEnabled(true);
@@ -103,6 +119,43 @@ var TaskPanel = cc.Class.extend({
         }
         this._showTab(name);
         this.buttons[name].setSelected(true);
+    }, _convertReards: function (data, split) {
+        if (typeof  split === 'undefined') split = true;
+        var rewards;
+        if (typeof data === 'string') {
+            rewards = eval('(' + data + ')');
+        } else
+            rewards = data;
+        var resources = [];
+        var livenesscount = 0;
+        if (rewards instanceof Array) {
+            for (var i in rewards) {
+                var unit = rewards[i]['unit'];
+                var value = rewards[i]['value'];
+                if (split && unit === this.LIVENESS_UNIT) {
+                    livenesscount += parseInt(value);
+                    continue;
+                }
+                resources.push(rewards[i]);
+            }
+        } else {
+            for (var k in rewards) {
+                var value = rewards[k];
+                if (split && k === this.LIVENESS_UNIT) {
+                    livenesscount += parseInt(value);
+                    continue;
+                }
+                var obj = {};
+                obj['unit'] = k;
+                obj['value'] = value;
+                resources.push(obj);
+            }
+        }
+        return {resources: resources, livenewss: livenesscount};
+    }, __processReward: function (d, tab) {
+        var resources = this._convertReards(d);
+        PlayerData.updateResource(resources.resources);
+        this._submitLivenewss(tab, resources.livenewss);
     },
     _showTab: function (name) {
         for (var k in this._tabObj) {
@@ -114,20 +167,41 @@ var TaskPanel = cc.Class.extend({
     }, openPopup: function () {
         this.showMenuLayer('everyDay_tab');
         GamePopup.openPopup(this.layer, null, false);
-    }, _dailyTaskLiveness: function () {
+    }, _submitLivenewss: function (tab, value) {
+        if (tab === 'everyDay_tab' && value) {
+            this.dailyTaskService.addExecuteTasksByType(this.TYPE_OF_TASK.LIVENESS, player.id, value, function (result, data) {
+                if (result && data && data.length > 0) {
+                    var task = data[0];
+                    this.loadingNum.setString(task.currentProgress);
+                    this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
+                }
+            }.bind(this));
+        }
+        if (tab === 'achievement_tab' && value) {
+            this.achievementService.customAchievementsByType(this.TYPE_OF_ACHIEVEMENT.LIVENESS, player.id, value, function (result, data) {
+                if (result && data && data.length > 0) {
+                    var task = data[0];
+                    this.loadingNum.setString(task.currentProgress);
+                    this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
+                }
+            }.bind(this));
+        }
+    }, _refreshDailyTaskLiveness: function () {
         this.dailyTaskService.getDailyTasksByType(player.id, this.TYPE_OF_TASK.LIVENESS, function (result, data) {
             if (result && data && data.length > 0) {
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
-                this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
+            } else {
+
             }
         }.bind(this));
-    }, _achevementLiveness: function () {
+    }, _refreshAchevementLiveness: function () {
         this.achievementService.getAchievementsByType(player.id, this.TYPE_OF_ACHIEVEMENT.LIVENESS, function (result, data) {
             if (result && data && data.length > 0) {
                 var task = data[0];
                 this.loadingNum.setString(task.currentProgress);
-                this.loadingBar.setPercent(Math.round(task.currentProgress / task.goal * 100));
+                this.loadingBar.setPercent(Math.floor(task.currentProgress / task.goal * 100));
             }
         }.bind(this));
     }, refreshItems: function (tab) {
@@ -161,17 +235,34 @@ var TaskPanel = cc.Class.extend({
     }, pushTaskItem: function (task, tab) {
         var taskItem = this.taskview.clone();
         var desc = taskItem.getChildByName('text');
+        var reward_box = taskItem.getChildByName('reward_box');
+        var resources = this._convertReards(task.reward, false);
+        var rewards = resources.resources;
+        for (var k in rewards) {
+            var children = reward_box.getChildren();
+            var rewardTip = this.rewardTip.clone();
+            var icon = rewardTip.getChildByName('icon');
+            icon.loadTexture('res/icon/resources_small/' + rewards[k]['unit'] + '.png');
+            var rnum = rewardTip.getChildByName('num');
+            rnum.setString(rewards[k]['value']);
+            var x = 0;
+            children.forEach(function (a, b, c) {
+                x += a.getChildByName('icon').width + a.getChildByName('num').width;
+            });
+            rewardTip.setPositionX(x);
+            reward_box.addChild(rewardTip);
+        }
         desc.setString(task.description);
         setFont(desc);
         var bar = taskItem.getChildByName('bar');
         var num = bar.getChildByName('num');
         num.setString(task.currentProgress);
         var bar_purple = bar.getChildByName('bar_purple');
-        var bar_blue = bar.getChildByName('bar_blue');
-        bar_blue.setVisible(false);
+        var bar_green = bar.getChildByName('bar_green');
+        bar_green.setVisible(false);
         var btn = taskItem.getChildByName('btn');
         var rewardBtn = btn.getChildByName('buy_btn');
-        var get=taskItem.getChildByName('get');
+        var get = taskItem.getChildByName('get');
         if (task.status === sgt.DailyTask.STATUS_PROGRESS_GOT_REWARD) {
             get.setVisible(true);
             btn.setVisible(false);
@@ -182,12 +273,11 @@ var TaskPanel = cc.Class.extend({
             rewardBtn.setEnabled(true);
             rewardBtn.setBright(true);
             rewardBtn.addClickEventListener(function () {
-                console.log('get reward');
                 var id = rewardBtn.getTag();
                 this._tabObj[tab]['gerReward'].call(this, id);
             }.bind(this));
         }
-        bar_purple.setPercent(Math.round(task.currentProgress / task.goal * 100));
+        bar_purple.setPercent(Math.floor(task.currentProgress / task.goal * 100));
         this.list.pushBackCustomItem(taskItem);
     }
 });
