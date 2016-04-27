@@ -28,5 +28,25 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="BattleLayer.csd" />
+          <FilePathData Path="WorldBossLayer.csd" />
+          <FilePathData Path="TipsReward.csd" />
+          <FilePathData Path="TaskRewardView.csd" />
+          <FilePathData Path="TaskLayer.csd" />
+          <FilePathData Path="WorldBossBattle.csd" />
+          <FilePathData Path="PVPRecordView.csd" />
+          <FilePathData Path="PVPRecord.csd" />
+          <FilePathData Path="PVPOpponentView.csd" />
+          <FilePathData Path="PVPLayer.csd" />
+          <FilePathData Path="SettlementLayer.csd" />
+          <FilePathData Path="ItemLayer.csd" />
+          <FilePathData Path="Tips.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Tips.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
