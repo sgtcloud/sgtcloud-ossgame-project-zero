@@ -31,7 +31,7 @@ var TaskPanel = cc.Class.extend({
                 'gerReward': function (taskid) {
                     this.dailyTaskService.getReward(taskid, player.id, function (result, data) {
                         if (result) {
-                            this.__processReward(d, 'everyDay_tab');
+                            this.__processReward(data, 'everyDay_tab');
                         } else {
                             tip.toggle(data);
                         }
