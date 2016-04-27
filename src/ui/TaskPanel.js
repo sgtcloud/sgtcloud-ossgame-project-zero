@@ -20,7 +20,7 @@ var TaskPanel = cc.Class.extend({
             'everyDay_tab': {
                 'box': this.everyDayBox,
                 'loadingBar': this._refreshDailyTaskLiveness,
-                'itemLoadingBar':function(item){
+                'itemLoadingBar': function (item) {
                     var bar_purple = item.getChildByName('bar_purple');
                     var bar_green = item.getChildByName('bar_green');
                     bar_purple.setVisible(false);
@@ -41,7 +41,7 @@ var TaskPanel = cc.Class.extend({
             'achievement_tab': {
                 'box': this.achevementBox,
                 'loadingBar': this._refreshAchevementLiveness,
-                'itemLoadingBar':function(item){
+                'itemLoadingBar': function (item) {
                     var bar_purple = item.getChildByName('bar_purple');
                     var bar_green = item.getChildByName('bar_green');
                     bar_purple.setVisible(true);
@@ -204,13 +204,19 @@ var TaskPanel = cc.Class.extend({
         this.list.removeAllChildren(true);
         this._tabObj[tab]['refreshData'].call(this);
     }, _refreshTask: function () {
-        //this.dailyTaskService.getDailyTasksByType
         var func = this.dailyTaskService.getDailyTasksByType;
         if (this.TYPE_OF_ACHIEVEMENT.TYPES instanceof Array) {
             func = this.taskServiceExt.getDailyTaskByTypes;
         }
         func.call(this, player.id, this.TYPE_OF_TASK.TYPES, function (result, data) {
             if (result && data) {
+                data.sort(function (a, b) {
+                    if (a.status === sgt.Achievement.PROGRESS_GOT_REWARD)
+                        return 1;
+                    if (b.status === sgt.Achievement.PROGRESS_GOT_REWARD)
+                        return -1;
+                    return Math.round(b.currentProgress / b.goal * 100) - Math.round(a.currentProgress / a.goal * 100);
+                });
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'everyDay_tab');
                 }
@@ -223,6 +229,13 @@ var TaskPanel = cc.Class.extend({
         }
         func.call(this, player.id, this.TYPE_OF_ACHIEVEMENT.TYPES, function (result, data) {
             if (result && data) {
+                data.sort(function (a, b) {
+                    if (a.status === sgt.Achievement.PROGRESS_GOT_REWARD)
+                        return 1;
+                    if (b.status === sgt.Achievement.PROGRESS_GOT_REWARD)
+                        return -1;
+                    return Math.round(b.currentProgress / b.goal * 100) - Math.round(a.currentProgress / a.goal * 100);
+                });
                 for (var i = 0, j = data.length; i < j; i++) {
                     this.pushTaskItem(data[i], 'achievement_tab');
                 }
@@ -253,7 +266,7 @@ var TaskPanel = cc.Class.extend({
         var bar = taskItem.getChildByName('bar');
         var num = bar.getChildByName('num');
         num.setString(task.currentProgress);
-        var loading = this._tabObj[tab]['itemLoadingBar'].call(this,bar);
+        var loading = this._tabObj[tab]['itemLoadingBar'].call(this, bar);
         //var bar_green = bar.getChildByName('bar_green');
         //bar_green.setVisible(false);
         var btn = taskItem.getChildByName('btn');
