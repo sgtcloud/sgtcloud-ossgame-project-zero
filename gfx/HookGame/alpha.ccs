@@ -277,6 +277,7 @@
           <Image Name="user.png" />
           <Image Name="psw.png" />
           <Image Name="user1.png" />
+          <Image Name="tips_bg.png" />
         </Folder>
         <Folder Name="materialUI">
           <Image Name="bronze.png" />
@@ -809,6 +810,23 @@
         <Project Name="TipsReward.csd" Type="Layer" />
         <Project Name="TaskRewardView.csd" Type="Layer" />
         <Project Name="WorldBossLayer.csd" Type="Layer" />
+        <Folder Name="worldBossUI">
+          <Image Name="btn_1.png" />
+          <Image Name="btn_2.png" />
+          <Image Name="hp_bar.png" />
+          <Image Name="hp_bg.png" />
+          <Image Name="pic.png" />
+          <Image Name="time_bar.png" />
+          <Image Name="time_bg.png" />
+          <Image Name="cd.png" />
+          <Image Name="dekaron.png" />
+          <Image Name="inspire.png" />
+          <Image Name="now.png" />
+          <Image Name="s.png" />
+          <Image Name="reward_btn.png" />
+          <Image Name="title.png" />
+        </Folder>
+        <Project Name="WorldBossBattle.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

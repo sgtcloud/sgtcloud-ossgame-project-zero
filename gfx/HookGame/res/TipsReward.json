@@ -16,6 +16,11 @@
         "Children": [
           {
             "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "mainUI/tips_bg.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -29,6 +34,11 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Enable": true,
+            "Scale9OriginX": 49,
+            "Scale9OriginY": 49,
+            "Scale9Width": 52,
+            "Scale9Height": 52,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -46,57 +56,11 @@
               "Y": 0.0
             },
             "PreSize": {
-              "X": 0.0781,
-              "Y": 0.0521
+              "X": 1.0,
+              "Y": 1.0
             },
-            "RightMargin": 590.0,
-            "TopMargin": 910.0,
+            "CallBackType": "Click",
             "Tag": 73,
-            "Children": [
-              {
-                "FileData": {
-                  "Type": "Default",
-                  "Path": "Default/ImageFile.png",
-                  "Plist": ""
-                },
-                "Scale9Width": 46,
-                "Scale9Height": 46,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "PreSize": {
-                  "X": 0.92,
-                  "Y": 0.92
-                },
-                "LeftMargin": -23.0,
-                "RightMargin": 27.0,
-                "TopMargin": 27.0,
-                "BottomMargin": -23.0,
-                "Tag": 78,
-                "ActionTag": 1824737513,
-                "Size": {
-                  "X": 46.0,
-                  "Y": 46.0
-                },
-                "Name": "Image_6",
-                "ctype": "ImageViewObjectData"
-              }
-            ],
             "ActionTag": 443695693,
             "Size": {
               "X": 50.0,
@@ -107,14 +71,14 @@
           }
         ],
         "Size": {
-          "X": 640.0,
-          "Y": 960.0
+          "X": 50.0,
+          "Y": 50.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "Default/ImageFile.png"
+        "mainUI/tips_bg.png"
       ],
       "ctype": "GameFileData"
     }

@@ -160,7 +160,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="lose" Visible="False" ActionTag="-1949292126" Tag="127" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="lose" ActionTag="-1949292126" Tag="127" IconVisible="False" LeftMargin="209.5153" RightMargin="30.4847" TopMargin="257.9263" BottomMargin="382.0737" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="400.0000" Y="320.0000" />
                 <Children>
                   <AbstractNodeData Name="title" ActionTag="-4938815" Tag="137" IconVisible="False" LeftMargin="-1.9624" RightMargin="126.9624" TopMargin="-32.4672" BottomMargin="167.4672" ctype="SpriteObjectData">
