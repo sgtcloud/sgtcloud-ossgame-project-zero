@@ -200,7 +200,8 @@ cocos compile -p web -m release
 * [定制战斗场景顶部面板](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E6%88%98%E6%96%97%E5%9C%BA%E6%99%AF%E7%9A%84%E9%A1%B6%E9%83%A8%E9%9D%A2%E6%9D%BF)
 * [定制战斗场景](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E6%88%98%E6%96%97%E5%9C%BA%E6%99%AF)
 * [定制英雄单位](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%AE%9A%E5%88%B6%E8%8B%B1%E9%9B%84%E5%8D%95%E4%BD%8D)
-
+* [竞技场功能](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E7%AB%9E%E6%8A%80%E5%9C%BA%E5%8A%9F%E8%83%BD)
+* [关于游戏资源加载顺序和联网功能处理](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F%E5%92%8C%E8%81%94%E7%BD%91%E5%8A%9F%E8%83%BD%E5%A4%84%E7%90%86)
 
 ### 项目源代码导读
 
