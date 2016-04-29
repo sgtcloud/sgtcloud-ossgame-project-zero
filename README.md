@@ -241,6 +241,10 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 * [最新发布版本](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/releases)
 * [需求入口](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/issues/new)
 
+### 项目完成度
+* [传送门](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E6%8C%87%E5%B0%96%E9%AA%91%E5%A3%AB%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF )
+
+
 欢迎开发者给我们提出你们开发中遇到的问题，有问必答，有求必应：）
 
 # 鸣谢
