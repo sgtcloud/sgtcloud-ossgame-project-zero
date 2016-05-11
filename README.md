@@ -228,10 +228,12 @@ model目录中的大部分类都是通过加载data目录下的只读数据文�
 
 ##### 代码导读
 
-[battle模块代码导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/battle%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E5%AF%BC%E8%AF%BB)
-[数据模型导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B)
-[竞技场功能](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E7%AB%9E%E6%8A%80%E5%9C%BA%E5%8A%9F%E8%83%BD)
-[关于游戏资源加载顺序和联网功能处理](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F%E5%92%8C%E8%81%94%E7%BD%91%E5%8A%9F%E8%83%BD%E5%A4%84%E7%90%86)
+* [battle模块代码导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/battle%E6%A8%A1%E5%9D%97%E4%BB%A3%E7%A0%81%E5%AF%BC%E8%AF%BB)
+* [数据模型导读](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B)
+* [竞技场功能](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E7%AB%9E%E6%8A%80%E5%9C%BA%E5%8A%9F%E8%83%BD)
+* [关于游戏资源加载顺序和联网功能处理](https://github.com/sgtcloud/sgtcloud-ossgame-project-zero/wiki/%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F%E5%92%8C%E8%81%94%E7%BD%91%E5%8A%9F%E8%83%BD%E5%A4%84%E7%90%86)
+
+
 ##### 联网功能依赖
 
 游戏的联网相关功能，包含不限于在线存档，服务器时间校准，签到，排行榜等等功能，都是由[sgtcloud](http://www.sgtcloud.cn/)提供的[sgtcloud-html5-sdk](https://github.com/sgtcloud/sgtcloud-html5-sdk)，自行调试和进行二次开发的时候请务必申请自己的appid参数。
